@@ -1,644 +1,644 @@
 {
- "tasks": [
-  {
-   "id": "math-11-124",
-   "case_id": "MATH 11.124",
-   "title": "Exam-style tasks — 1",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A retail card quotes a nominal annual rate of $18\\%$ compounded monthly. The corresponding effective annual rate is strictly less than $19.5\\%$.",
-    "An account starts with $\\$8{,}000$ and earns interest continuously at $4\\%$ per year. After $5$ years the balance exceeds $\\$9{,}800$.",
-    "The present value of a single payment of $\\$12{,}000$ due in $4$ years at a nominal $6\\%$ compounded quarterly is greater than $\\$9{,}500$.",
-    "Deposits of $\\$1{,}000$ are made at the end of each year for $5$ years into an account earning $5\\%$ effective annual interest. The accumulated value immediately after the fifth deposit equals $\\$5{,}525.63$ (to the nearest cent).",
-    "An ordinary annuity pays $\\$250$ at the end of each month for $2$ years. At a monthly rate of $0.75\\%$, its present value exceeds $\\$5{,}600$."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nThe effective annual rate is\n\n$$R = \\left(1 + \\dfrac{0.18}{12}\\right)^{12} - 1 = (1.015)^{12} - 1$$\n\n$$(1.015)^{12} \\approx 1.1956$$\n\nso $R \\approx 19.56\\%$, which is not strictly less than $19.5\\%$, so the statement is False.",
-    "**B.** → False\n\nContinuous compounding gives\n\n$$S(5) = 8000 \\, e^{0.04 \\cdot 5} = 8000 \\, e^{0.2}$$\n\n$$e^{0.2} \\approx 1.22140$$\n\n$$S(5) \\approx 9771.22$$\n\nwhich does not exceed $\\$9{,}800$, so the statement is False.",
-    "**C.** → False\n\nQuarterly rate $i = 0.06/4 = 0.015$, over $16$ quarters:\n\n$$PV = \\dfrac{12000}{(1.015)^{16}}$$\n\n$$(1.015)^{16} \\approx 1.2690$$\n\n$$PV \\approx 9456$$\n\nwhich is less than $\\$9{,}500$, so the statement is False.",
-    "**D.** → True\n\nThis is an ordinary annuity future value:\n\n$$FV = 1000 \\cdot \\dfrac{(1.05)^{5} - 1}{0.05}$$\n\n$$(1.05)^{5} = 1.2762815625$$\n\n$$FV = 1000 \\cdot \\dfrac{0.2762815625}{0.05} = 5525.63125 \\approx 5525.63$$\n\nso the statement is True.",
-    "**E.** → False\n\n$$i = 0.0075$, $n = 24$,\n\n$$PV = 250 \\cdot \\dfrac{1 - (1.0075)^{-24}}{0.0075}$$\n\n$$(1.0075)^{24} \\approx 1.19641$$\n\n$$PV \\approx 250 \\cdot 21.889 \\approx 5472$$\n\nwhich does not exceed $\\$5{,}600$, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 124,
-   "solution_overview": "Five independent finance checks: a monthly EAR claim, continuous compounding growth, a present-value discount, a geometric deposit future value, and an ordinary-annuity present value.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-125",
-   "case_id": "MATH 11.125",
-   "title": "Exam-style tasks — 2",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "If a nominal annual rate of $12\\%$ is compounded monthly, the effective annual rate exceeds $12.7\\%$.",
-    "A continuously compounded annual rate of $5\\%$ is equivalent to an effective annual rate of exactly $5\\%$.",
-    "Investing $\\$10{,}000$ at a nominal $8\\%$ compounded quarterly grows to more than $\\$12{,}800$ after $3$ years.",
-    "A perpetuity pays $\\$800$ at the end of each year. At an effective annual rate of $4\\%$, its present value is $\\$20{,}000$.",
-    "A $30$-year mortgage of $\\$200{,}000$ at a monthly rate of $0.5\\%$ has a monthly payment strictly less than $\\$1{,}190$."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$R = \\left(1 + \\dfrac{0.12}{12}\\right)^{12} - 1 = (1.01)^{12} - 1$$\n\n$$(1.01)^{12} \\approx 1.126825$$\n\nso $R \\approx 12.68\\%$, which does not exceed $12.7\\%$, so the statement is False.",
-    "**B.** → False\n\nThe effective annual rate under continuous compounding is\n\n$$R = e^{0.05} - 1 \\approx 1.05127 - 1 = 0.05127 = 5.127\\%$$\n\nnot exactly $5\\%$, so the statement is False.",
-    "**C.** → False\n\n$$S = 10000\\left(1 + \\dfrac{0.08}{4}\\right)^{12} = 10000(1.02)^{12}$$\n\n$$(1.02)^{12} \\approx 1.26824$$\n\n$$S \\approx 12682.42$$\n\nwhich does not exceed $\\$12{,}800$, so the statement is False.",
-    "**D.** → True\n\n$$PV = \\dfrac{800}{0.04} = 20000$$\n\nso the statement is True.",
-    "**E.** → False\n\n$$PMT = 200000 \\cdot \\dfrac{0.005(1.005)^{360}}{(1.005)^{360} - 1}$$\n\n$$(1.005)^{360} \\approx 6.022575$$\n\n$$PMT \\approx 1199.10$$\n\nwhich is not strictly less than $\\$1{,}190$, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 125,
-   "solution_overview": "Five separate stems: nominal versus EAR ordering, continuous equivalent rate, future value of a lump sum, perpetuity valuation, and a mortgage payment size check.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-126",
-   "case_id": "MATH 11.126",
-   "title": "Exam-style tasks — 3",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A nominal $9\\%$ compounded daily ($365$ days) has a higher effective annual rate than the same nominal $9\\%$ compounded monthly.",
-    "Under continuous compounding at $6\\%$ per year, a principal doubles in fewer than $11$ years.",
-    "A project costs $\\$5{,}000$ today and returns $\\$3{,}000$ in one year and $\\$3{,}000$ in two years. At an effective annual discount rate of $10\\%$, the NPV exceeds $\\$300$.",
-    "An annuity-due of $10$ annual payments of $\\$1{,}000$ at $5\\%$ effective has present value exactly $5\\%$ larger than the corresponding ordinary annuity of $10$ payments.",
-    "On a $30$-year $\\$200{,}000$ mortgage at $0.5\\%$ per month with level payments, the outstanding balance immediately after $60$ payments is less than $\\$180{,}000$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nMore frequent compounding raises the EAR toward $e^{0.09}-1$. Explicitly\n\n$$R_{12} = (1.0075)^{12} - 1 \\approx 0.09381$$\n\n$$R_{365} = \\left(1 + \\dfrac{0.09}{365}\\right)^{365} - 1 \\approx 0.09416$$\n\nso daily beats monthly, so the statement is True.",
-    "**B.** → False\n\nSolve $e^{0.06 t} = 2$:\n\n$$t = \\dfrac{\\ln 2}{0.06} \\approx \\dfrac{0.693147}{0.06} \\approx 11.552$$\n\nyears, which is not fewer than $11$, so the statement is False.",
-    "**C.** → False\n\n$$NPV = -5000 + \\dfrac{3000}{1.1} + \\dfrac{3000}{1.1^{2}}$$\n\n$$= -5000 + 2727.27 + 2479.34 = 206.61$$\n\nwhich does not exceed $\\$300$, so the statement is False.",
-    "**D.** → True\n\nAn annuity-due is the ordinary annuity shifted one period earlier, so\n\n$$PV_{\\mathrm{due}} = PV_{\\mathrm{ordinary}} \\cdot (1 + i) = PV_{\\mathrm{ordinary}} \\cdot 1.05$$\n\nwhich is exactly $5\\%$ larger, so the statement is True.",
-    "**E.** → False\n\nWith $PMT \\approx 1199.10$,\n\n$$B_{60} = 200000(1.005)^{60} - 1199.10 \\cdot \\dfrac{(1.005)^{60} - 1}{0.005}$$\n\n$$(1.005)^{60} \\approx 1.34885$$\n\n$$B_{60} \\approx 186109$$\n\nwhich is not less than $\\$180{,}000$, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 126,
-   "solution_overview": "Five harder checks: EAR comparison across compounding frequencies, continuous doubling time, NPV of a two-payment stream, annuity-due versus ordinary annuity, and outstanding mortgage balance.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-127",
-   "case_id": "MATH 11.127",
-   "title": "Exam-style tasks — 4",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Interest is charged at $1.5\\%$ per month. The nominal annual rate quoted as $12$ times the monthly rate is $18\\%$, while the effective annual rate exceeds $19.5\\%$.",
-    "A principal of $\\$5{,}000$ grows continuously at $7\\%$ for $3$ years to a balance strictly above $\\$6{,}150$.",
-    "The present value of $\\$20{,}000$ due in $6$ years at $5\\%$ effective annual interest is greater than $\\$15{,}000$.",
-    "Saving $\\$400$ at the end of each quarter for $3$ years at a quarterly rate of $1\\%$ accumulates to more than $\\$5{,}100$ just after the last deposit.",
-    "A project pays $-\\$1{,}000$ at $t=0$ and $+\\$1{,}210$ at $t=2$ years (no other cash flows). Its IRR, as an effective annual rate, equals $12\\%$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nNominal: $12 \\times 1.5\\% = 18\\%$. Effective:\n\n$$R = (1.015)^{12} - 1 \\approx 0.1956 = 19.56\\% > 19.5\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\n$$S = 5000 e^{0.21} \\approx 5000 \\times 1.233678 = 6168.39 > 6150$$\n\nso the statement is True.",
-    "**C.** → False\n\n$$PV = \\dfrac{20000}{(1.05)^{6}}$$\n\n$$(1.05)^{6} \\approx 1.3401$$\n\n$$PV \\approx 14924$$\n\nwhich is not greater than $\\$15{,}000$, so the statement is False.",
-    "**D.** → False\n\n$n=12$ deposits,\n\n$$FV = 400 \\cdot \\dfrac{(1.01)^{12} - 1}{0.01}$$\n\n$$(1.01)^{12} \\approx 1.126825$$\n\n$$FV \\approx 400 \\times 12.6825 = 5073$$\n\nwhich does not exceed $\\$5{,}100$, so the statement is False.",
-    "**E.** → False\n\nSolve $-1000 + 1210/(1+r)^{2} = 0$:\n\n$$(1+r)^{2} = 1.21$$\n\n$$1+r = 1.1$$\n\n$$r = 0.10$$\n\nnot $12\\%$, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 127,
-   "solution_overview": "Five mini-stems: converting a monthly rate to nominal and EAR, continuous accumulation, discounting a deferred lump sum, geometric series of deposits with a trap, and IRR sign for a simple project.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-128",
-   "case_id": "MATH 11.128",
-   "title": "Exam-style tasks — 5",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A nominal annual rate of $10\\%$ compounded semiannually has effective annual rate exactly $10.5\\%$.",
-    "If the force of interest is constant at $\\delta = 0.04$, then $\\$1{,}000$ grows to $\\$1{,}040$ in one year.",
-    "The present value of an ordinary annuity of $\\$500$ per year for $8$ years at $6\\%$ effective exceeds $\\$3{,}200$.",
-    "A perpetuity-immediate of $\\$100$ per year at $5\\%$ effective is worth $\\$2{,}000$, while the corresponding perpetuity-due is worth $\\$2{,}100$.",
-    "Project A: $-\\$1000$ now, $+\\$800$ in one year, $+\\$500$ in two years. Project B: $-\\$1000$ now, $+\\$300$ in one year, $+\\$900$ in two years. At $8\\%$ effective, project A has the higher NPV."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$R = \\left(1 + \\dfrac{0.10}{2}\\right)^{2} - 1 = (1.05)^{2} - 1 = 0.1025 = 10.25\\%$$\n\nnot $10.5\\%$, so the statement is False.",
-    "**B.** → False\n\nUnder constant force, $S = 1000 e^{0.04} \\approx 1040.81$, not exactly $1040$ (which would be simple/discrete $4\\%$ without continuous compounding). The claim of exactly $\\$1{,}040$ is false, so the statement is False.",
-    "**C.** → False\n\n$$PV = 500 \\cdot \\dfrac{1 - (1.06)^{-8}}{0.06}$$\n\n$$(1.06)^{8} \\approx 1.59385$$\n\n$$PV \\approx 3104.90$$\n\nwhich does not exceed $\\$3{,}200$, so the statement is False.",
-    "**D.** → True\n\nImmediate: $100/0.05 = 2000$. Due: one extra payment at time $0$, or multiply by $1.05$:\n\n$$2000 \\times 1.05 = 2100$$\n\nso the statement is True.",
-    "**E.** → True\n\n$$NPV_A = -1000 + 800/1.08 + 500/1.08^{2} \\approx -1000 + 740.74 + 428.67 = 169.41$$\n\n$$NPV_B = -1000 + 300/1.08 + 900/1.08^{2} \\approx -1000 + 277.78 + 771.60 = 49.38$$\n\nso $A$ is higher, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 128,
-   "solution_overview": "Five independent problems: EAR from semiannual compounding, force of interest accumulation, PV of an annuity, perpetuity-due style trap, and comparing NPVs of two projects.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-129",
-   "case_id": "MATH 11.129",
-   "title": "Exam-style tasks — 6",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A savings account offers $0.4\\%$ per month. Over a year the effective annual yield is less than $5\\%$.",
-    "The present value of $\\$9{,}000$ due in $2$ years under continuous discounting at $5\\%$ is greater than $\\$8{,}100$.",
-    "At $6\\%$ effective annual interest, $\\$4{,}000$ grows to $\\$5{,}000$ in fewer than $3$ years.",
-    "Twelve end-of-month deposits of $\\$200$ at $1\\%$ per month accumulate to more than $\\$2{,}500$ just after the twelfth deposit.",
-    "On a standard amortising mortgage with level payments, the interest portion of each payment is constant over the life of the loan."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = (1.004)^{12} - 1 \\approx 0.04907 = 4.907\\% < 5\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\n$$PV = 9000 e^{-0.10} \\approx 9000 \\times 0.904837 = 8143.54 > 8100$$\n\nso the statement is True.",
-    "**C.** → False\n\nSolve $4000(1.06)^{t} = 5000$:\n\n$$(1.06)^{t} = 1.25$$\n\n$$t = \\dfrac{\\ln 1.25}{\\ln 1.06} \\approx \\dfrac{0.22314}{0.05827} \\approx 3.83$$\n\nyears, not fewer than $3$, so the statement is False.",
-    "**D.** → True\n\n$$FV = 200 \\cdot \\dfrac{(1.01)^{12} - 1}{0.01} \\approx 200 \\times 12.6825 = 2536.50 > 2500$$\n\nso the statement is True.",
-    "**E.** → False\n\nEarly payments are interest-heavy; as the outstanding balance falls, the interest portion declines and the principal portion rises. The interest portion is not constant, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 129,
-   "solution_overview": "Five checks: monthly EAR, continuous PV, compound growth equation for time, ordinary annuity FV, and a level-loan interest portion intuition.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-130",
-   "case_id": "MATH 11.130",
-   "title": "Exam-style tasks — 7",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "There exists a nominal annual rate $r$ compounded monthly such that the EAR equals $8\\%$, and that $r$ is strictly less than $8\\%$.",
-    "For the same principal and the same annual rate $r = 0.06$, three years of continuous compounding produces a strictly larger future value than monthly compounding.",
-    "An ordinary annuity of $5$ annual payments of $\\$2{,}000$ begins at the end of year $3$ (first payment at $t=3$). At $5\\%$ effective, its present value at $t=0$ exceeds $\\$8{,}000$.",
-    "A loan of $\\$50{,}000$ at $1\\%$ per month is repaid by $24$ equal monthly payments. Immediately after the $12$th payment the outstanding balance is greater than $\\$26{,}000$.",
-    "A conventional investment with exactly one sign change in the cash-flow stream (negative initial outlay, then only nonnegative inflows) has at most one positive IRR."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nSolve $(1 + r/12)^{12} = 1.08$:\n\n$$1 + r/12 = 1.08^{1/12}$$\n\n$$r = 12(1.08^{1/12} - 1) \\approx 12(0.006434) = 0.07721 = 7.721\\% < 8\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\nContinuous uses $e^{0.18}$ while monthly uses $(1.005)^{36}$. Since $e^{r} > (1 + r/n)^{n}$ for finite $n$, continuous wins for any horizon, so the statement is True.",
-    "**C.** → False\n\nValue at $t=2$ of the five-payment annuity (as an ordinary annuity valued one period before the first payment) is\n\n$$PV_{2} = 2000 \\cdot \\dfrac{1 - (1.05)^{-5}}{0.05} \\approx 8658.95$$\n\nDiscount two years:\n\n$$PV_{0} = 8658.95 / (1.05)^{2} \\approx 7853.5$$\n\nwhich does not exceed $\\$8{,}000$, so the statement is False.",
-    "**D.** → True\n\n$$PMT = 50000 \\cdot \\dfrac{0.01(1.01)^{24}}{(1.01)^{24}-1} \\approx 2353.67$$\n\n$$B_{12} = 50000(1.01)^{12} - 2353.67 \\cdot \\dfrac{(1.01)^{12}-1}{0.01} \\approx 26646$$\n\nwhich exceeds $\\$26{,}000$, so the statement is True.",
-    "**E.** → True\n\nDescartes' rule / Norstrom's criterion for a single sign change guarantees at most one positive real root of the NPV polynomial, so the statement is True."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 130,
-   "solution_overview": "Five demanding stems: matching nominal rates for equal EARs, continuous versus discrete FV race, deferred annuity PV, balloon mortgage balance, and IRR uniqueness for a conventional project.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-131",
-   "case_id": "MATH 11.131",
-   "title": "Exam-style tasks — 8",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "For nominal $15\\%$ compounded monthly, the EAR exceeds the nominal rate by more than $1$ percentage point.",
-    "Under continuous compounding at $8\\%$, the one-year discount factor $e^{-0.08}$ is greater than $0.925$.",
-    "Deposits grow: $\\$100$ at end of year $1$, $\\$200$ at end of year $2$, $\\$300$ at end of year $3$, into an account at $4\\%$ effective. The accumulated value at the end of year $3$ exceeds $\\$620$.",
-    "To accumulate $\\$10{,}000$ in $5$ years with end-of-year deposits at $5\\%$ effective, each deposit must be less than $\\$1{,}800$.",
-    "For the cash flows $-1000$, $+600$, $+600$ at times $0,1,2$, the NPV at $10\\%$ is positive while the NPV at $20\\%$ is negative."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = (1.0125)^{12} - 1 \\approx 0.16075 = 16.075\\%$$\n\n$$R - 0.15 \\approx 0.01075 > 0.01$$\n\nso the statement is True.",
-    "**B.** → False\n\n$$e^{-0.08} \\approx 0.923116 < 0.925$$\n\nso the statement is False.",
-    "**C.** → False\n\n$$FV = 100(1.04)^{2} + 200(1.04) + 300 = 108.16 + 208 + 300 = 616.16$$\n\nwhich does not exceed $\\$620$, so the statement is False.",
-    "**D.** → False\n\n$$10000 = A \\cdot \\dfrac{(1.05)^{5}-1}{0.05}$$\n\n$$A = 10000 \\cdot \\dfrac{0.05}{(1.05)^{5}-1} \\approx 10000 / 5.52563 \\approx 1809.75$$\n\nwhich is not less than $\\$1{,}800$, so the statement is False.",
-    "**E.** → True\n\n$$NPV(0.10) = -1000 + 600/1.1 + 600/1.21 \\approx -1000 + 545.45 + 495.87 = 41.32 > 0$$\n\n$$NPV(0.20) = -1000 + 600/1.2 + 600/1.44 = -1000 + 500 + 416.67 = -83.33 < 0$$\n\nso the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 131,
-   "solution_overview": "Five independent claims: EAR gap over nominal, continuous discount factor, geometric sum of growing deposits, annuity payment solve, and NPV ranking at two rates.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-132",
-   "case_id": "MATH 11.132",
-   "title": "Exam-style tasks — 9",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $6\\%$ compounded quarterly has EAR less than $6.15\\%$.",
-    "At a continuous rate of $5\\%$, $\\$2{,}000$ reaches $\\$3{,}000$ in less than $8$ years.",
-    "Cash flows $\\$1{,}000$, $\\$1{,}000$, $\\$1{,}000$ at the ends of years $1$, $2$, and $3$ have present value greater than $\\$2{,}700$ at $6\\%$ effective.",
-    "An annuity-due of $12$ monthly payments of $\\$100$ at $1\\%$ per month has present value equal to $100 + 100 \\cdot \\dfrac{1-(1.01)^{-11}}{0.01}$.",
-    "For the $\\$200{,}000$ / $360$-month / $0.5\\%$ mortgage with $PMT \\approx 1199.10$, total payments over the life of the loan exceed $\\$430{,}000$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = (1.015)^{4} - 1 = 1.06136355 - 1 = 0.06136 = 6.136\\% < 6.15\\%$$\n\nso the statement is True.",
-    "**B.** → False\n\n$$e^{0.05 t} = 1.5$$\n\n$$t = \\dfrac{\\ln 1.5}{0.05} \\approx 8.109$$\n\nyears, which is not less than $8$, so the statement is False.",
-    "**C.** → False\n\n$$PV = 1000\\left(\\dfrac{1}{1.06} + \\dfrac{1}{1.06^{2}} + \\dfrac{1}{1.06^{3}}\\right) \\approx 1000 \\times 2.67301 = 2673$$\n\nwhich is not greater than $\\$2{,}700$, so the statement is False.",
-    "**D.** → True\n\nA due annuity is a payment now plus an ordinary annuity of $11$ remaining payments:\n\n$$PV = 100 + 100 \\cdot \\dfrac{1-(1.01)^{-11}}{0.01}$$\n\nso the statement is True.",
-    "**E.** → True\n\n$$360 \\times 1199.10 = 431676 > 430000$$\n\nso the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 132,
-   "solution_overview": "Five stems: quarterly EAR, continuous time to target, PV of a three-payment stream, ordinary versus due payment timing, and mortgage total interest overpayment claim.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-133",
-   "case_id": "MATH 11.133",
-   "title": "Exam-style tasks — 10",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "The nominal annual rate compounded continuously that yields an EAR of $10\\%$ is $\\ln(1.10) \\approx 9.53\\%$.",
-    "The difference between continuous EAR at force $0.06$ and monthly EAR at nominal $6\\%$ is greater than $0.05$ percentage points.",
-    "To repay a $\\$12{,}000$ debt due in $4$ years by equal end-of-year deposits into a sinking fund earning $5\\%$, each deposit must exceed $\\$2{,}700$.",
-    "A $5$-year loan of $\\$10{,}000$ at $1\\%$ per month with level monthly payments has outstanding balance after $24$ months less than $\\$6{,}000$.",
-    "If project A's NPV exceeds project B's NPV at a $0\\%$ discount rate, then A's NPV exceeds B's at every positive discount rate."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nSolve $e^{r} - 1 = 0.10$:\n\n$$r = \\ln(1.10) \\approx 0.09531 = 9.531\\%$$\n\nso the statement is True.",
-    "**B.** → False\n\nContinuous: $e^{0.06}-1 \\approx 0.061837$. Monthly: $(1.005)^{12}-1 \\approx 0.061678$. Gap $\\approx 0.000159$, i.e. about $0.016$ points, not more than $0.05$, so the statement is False.",
-    "**C.** → True\n\n$$A \\cdot \\dfrac{(1.05)^{4}-1}{0.05} = 12000$$\n\n$$A = 12000 \\cdot \\dfrac{0.05}{(1.05)^{4}-1} \\approx 12000 / 4.310125 = 2784.2 > 2700$$\n\nso the statement is True.",
-    "**D.** → False\n\n$n=60$,\n\n$$PMT = 10000 \\cdot \\dfrac{0.01(1.01)^{60}}{(1.01)^{60}-1} \\approx 222.44$$\n\n$$B_{24} = 10000(1.01)^{24} - 222.44 \\cdot \\dfrac{(1.01)^{24}-1}{0.01} \\approx 6765$$\n\nwhich is not less than $\\$6{,}000$, so the statement is False.",
-    "**E.** → False\n\nNPV rankings can reverse as the discount rate changes (Fisher cross-overs) when cash-flow timing differs. A higher undiscounted total does not lock in dominance at every rate, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 133,
-   "solution_overview": "Five hard problems: finding an equivalent nominal rate, continuous vs EAR numerical gap, sinking-fund style deposits, outstanding balance after partial amortisation, and cross-over rate intuition for NPV.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-134",
-   "case_id": "MATH 11.134",
-   "title": "Exam-style tasks — 11",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $4\\%$ compounded semiannually has EAR equal to $4.04\\%$.",
-    "Over $10$ years at continuous $3\\%$, a unit deposit grows by a factor strictly between $1.34$ and $1.36$.",
-    "At $7\\%$ effective, $\\$6{,}000$ grows to more than $\\$8{,}000$ in $4$ years.",
-    "If a perpetuity of $\\$500$ per year is worth $\\$10{,}000$, the implied effective annual rate is $5\\%$. Halving the rate to $2.5\\%$ would double the value to $\\$20{,}000$.",
-    "On a $\\$200{,}000$ mortgage at $0.5\\%$ per month, the interest due in the first month is $\\$1{,}000$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = (1.02)^{2} - 1 = 0.0404$$\n\nso the statement is True.",
-    "**B.** → True\n\n$$e^{0.3} \\approx 1.34986$$\n\nwhich lies in $(1.34, 1.36)$, so the statement is True.",
-    "**C.** → False\n\n$$6000(1.07)^{4} = 6000 \\times 1.31079601 = 7864.78 < 8000$$\n\nso the statement is False.",
-    "**D.** → True\n\n$500/r = 10000$ gives $r=0.05$. At $2.5\\%$, $500/0.025=20000$, so the statement is True.",
-    "**E.** → True\n\nInterest on the initial balance: $200000 \\times 0.005 = 1000$, so the statement is True."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 134,
-   "solution_overview": "Five mid-level stems: simple EAR arithmetic, continuous growth factor, single-sum FV, perpetuity at a changed rate, and a first-month mortgage interest figure.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-135",
-   "case_id": "MATH 11.135",
-   "title": "Exam-style tasks — 12",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $12\\%$ compounded daily ($365$) has EAR greater than $12.7\\%$.",
-    "The continuous rate equivalent to an effective annual $12\\%$ is greater than $11.4\\%$.",
-    "A perpetuity of $\\$100$ per year beginning at the end of year $5$ (first payment at $t=5$) is worth more than $\\$1{,}650$ today at $5\\%$ effective.",
-    "The annual end-of-year payment that has present value $\\$50{,}000$ over $20$ years at $4\\%$ effective is less than $\\$3{,}700$.",
-    "A project with cash flows $-\\$2{,}000$ at $t=0$ and $+\\$2{,}300$ at $t=1$ has IRR equal to $15\\%$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = \\left(1 + \\dfrac{0.12}{365}\\right)^{365} - 1 \\approx 0.127475 > 0.127$$\n\nso the statement is True.",
-    "**B.** → False\n\n$$r = \\ln(1.12) \\approx 0.11333 = 11.333\\% < 11.4\\%$$\n\nso the statement is False.",
-    "**C.** → False\n\nValue at $t=4$ of that perpetuity-immediate is $100/0.05=2000$. Discount four years:\n\n$$PV = \\dfrac{2000}{(1.05)^{4}} \\approx 1645.40$$\n\nwhich does not exceed $\\$1{,}650$, so the statement is False.",
-    "**D.** → True\n\n$$PMT = 50000 \\cdot \\dfrac{0.04}{1-(1.04)^{-20}} \\approx 50000 / 13.5903 \\approx 3679.1 < 3700$$\n\nso the statement is True.",
-    "**E.** → True\n\n$$-2000 + 2300/(1+r) = 0$$\n\n$$1+r = 2300/2000 = 1.15$$\n\n$$r = 0.15$$\n\nso the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 135,
-   "solution_overview": "Five independent calculations: daily compounding EAR, continuous equivalent of a discrete rate, PV of a deferred perpetuity, annuity payment for a target PV, and IRR of a one-period project.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-136",
-   "case_id": "MATH 11.136",
-   "title": "Exam-style tasks — 13",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Among nominal $10\\%$ compounded annually, quarterly, and continuously, the continuous option has the largest EAR.",
-    "At continuous $8\\%$, the time for money to grow by $50\\%$ is less than $5$ years.",
-    "Cash flows $-\\$4{,}000$, $+\\$1{,}500$, $+\\$1{,}500$, $+\\$1{,}500$ at $t=0,1,2,3$. At $6\\%$ effective the NPV is negative.",
-    "The future value at the time of the last payment of an annuity-due of $8$ annual payments of $\\$500$ at $4\\%$ exceeds the ordinary-annuity FV of the same payments by exactly one interest factor of $4\\%$ on the ordinary FV.",
-    "A loan balance of $\\$8{,}000$ bears $1\\%$ interest per month. Level payments of $\\$400$ per month will amortise the loan in fewer than $22$ months."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nAnnual EAR is $10\\%$. Quarterly: $(1.025)^{4}-1 \\approx 10.38\\%$. Continuous: $e^{0.10}-1 \\approx 10.52\\%$. Continuous is largest, so the statement is True.",
-    "**B.** → False\n\n$$e^{0.08 t} = 1.5$$\n\n$$t = \\ln(1.5)/0.08 \\approx 5.068$$\n\nyears, not less than $5$, so the statement is False.",
-    "**C.** → False\n\n$$NPV = -4000 + 1500\\cdot\\dfrac{1-(1.06)^{-3}}{0.06} \\approx -4000 + 1500\\times 2.67301 = -4000 + 4009.52 = 9.52 > 0$$\n\nso the NPV is not negative, so the statement is False.",
-    "**D.** → True\n\nStandard identity: $FV_{\\mathrm{due}} = FV_{\\mathrm{ordinary}}\\cdot(1+i)$, i.e. the ordinary future value accumulated one extra period, so the statement is True.",
-    "**E.** → False\n\nSolve $8000 = 400 \\cdot \\dfrac{1-(1.01)^{-n}}{0.01}$:\n\n$$20 = \\dfrac{1-(1.01)^{-n}}{0.01}$$\n\n$$(1.01)^{-n} = 0.8$$\n\n$$n = -\\ln(0.8)/\\ln(1.01) \\approx 22.4$$\n\nso fewer than $22$ months is false, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 136,
-   "solution_overview": "Five tough finance stems: EAR ordering for same nominal, continuous half-life style target, NPV with mid-year style annual model, annuity-due FV, and remaining term from balance.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-137",
-   "case_id": "MATH 11.137",
-   "title": "Exam-style tasks — 14",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "If the EAR is $9\\%$, the equivalent nominal rate compounded monthly is greater than $8.6\\%$.",
-    "Discounting $\\$5{,}000$ continuously for $4$ years at $6\\%$ yields a present value above $\\$3{,}900$.",
-    "Eight quarterly deposits of $\\$750$ at $2\\%$ per quarter accumulate to less than $\\$6{,}400$ just after the eighth deposit.",
-    "Halving the monthly interest rate on a long mortgage roughly halves the monthly payment.",
-    "For cash flows $-1000$, $+700$, $+700$ at $t=0,1,2$, NPV at $5\\%$ exceeds NPV at $15\\%$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$r = 12\\bigl(1.09^{1/12} - 1\\bigr) \\approx 12(0.007207) = 0.08649 = 8.649\\% > 8.6\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\n$$PV = 5000 e^{-0.24} \\approx 5000 \\times 0.786627 = 3933.14 > 3900$$\n\nso the statement is True.",
-    "**C.** → False\n\n$$FV = 750 \\cdot \\dfrac{(1.02)^{8}-1}{0.02} \\approx 750 \\times 8.58297 = 6437.23$$\n\nwhich is not less than $\\$6{,}400$, so the statement is False.",
-    "**D.** → False\n\nPayment formulas are nonlinear in $i$. Halving $i$ reduces the payment, but by much less than half for long $n$, because principal repayment still dominates. The rough claim is false, so the statement is False.",
-    "**E.** → True\n\nHigher discount rates reduce the value of future inflows for a conventional project, so $NPV(0.05) > NPV(0.15)$. Explicitly both are computable and ordered that way, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 137,
-   "solution_overview": "Five varied claims: converting EAR to nominal monthly, continuous PV of a stream approximation via single sum, geometric deposit FV, mortgage payment sensitivity, and a two-rate NPV comparison.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-138",
-   "case_id": "MATH 11.138",
-   "title": "Exam-style tasks — 15",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $5\\%$ compounded weekly ($52$) has EAR less than $5.13\\%$.",
-    "The constant force of interest equivalent to a monthly rate of $1\\%$ is $\\delta = 12\\ln(1.01)$.",
-    "An ordinary annuity of $\\$1{,}200$ per year for $15$ years at $3\\%$ effective has present value that, rounded to the nearest dollar, equals $\\$14{,}304$.",
-    "A perpetuity of $\\$250$ per year at $2\\%$ is worth less than a perpetuity of $\\$400$ per year at $4\\%$.",
-    "For cash flows $-500$, $+300$, $+300$ at $t=0,1,2$, the IRR lies strictly between $10\\%$ and $20\\%$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = \\left(1 + \\dfrac{0.05}{52}\\right)^{52} - 1 \\approx 0.05125 = 5.125\\% < 5.13\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\nOne month multiplies by $1.01$, so over a year $(1.01)^{12} = e^{\\delta}$, hence $\\delta = 12\\ln(1.01)$, so the statement is True.",
-    "**C.** → False\n\n$$PV = 1200 \\cdot \\dfrac{1-(1.03)^{-15}}{0.03} \\approx 1200 \\times 11.937935 = 14325.52$$\n\nwhich rounds to $14326$, not $14304$, so the statement is False.",
-    "**D.** → False\n\n$$250/0.02 = 12500$$\n\n$$400/0.04 = 10000$$\n\nso the $250$ perpetuity is worth more, not less, so the statement is False.",
-    "**E.** → True\n\n$$NPV(0.10) = -500 + 300/1.1 + 300/1.21 \\approx -500 + 272.73 + 247.93 = 20.66 > 0$$\n\n$$NPV(0.20) = -500 + 300/1.2 + 300/1.44 = -500 + 250 + 208.33 = -41.67 < 0$$\n\nso the root lies in $(0.10, 0.20)$, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 138,
-   "solution_overview": "Five exam-style finance tasks: EAR from weekly compounding, continuous force matching a discrete rate, PV annuity integer rounding trap, perpetuity comparison, and IRR bracket.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-139",
-   "case_id": "MATH 11.139",
-   "title": "Exam-style tasks — 16",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A bank quotes nominal $6\\%$ convertible monthly. Another quotes nominal $6.1\\%$ convertible annually. The annually compounded account has the higher EAR.",
-    "A fund starts at $\\$10{,}000$, earns continuous $5\\%$ for $2$ years, then a $\\$3{,}000$ withdrawal is made, and the remainder earns continuous $5\\%$ for $3$ more years. The final balance exceeds $\\$9{,}500$.",
-    "The sum $100 + 100\\cdot 1.03 + 100\\cdot 1.03^{2} + \\cdots + 100\\cdot 1.03^{9}$ equals $100 \\cdot \\dfrac{1.03^{10} - 1}{0.03}$.",
-    "In any period of a standard amortising loan, interest due plus principal repaid equals the contractual payment (ignoring rounding).",
-    "When two mutually exclusive projects have a single Fisher cross-over rate, the project with the higher IRR is always the NPV-maximising choice at every discount rate."
-   ],
-   "answer_key": [
-    false,
-    false,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nMonthly EAR: $(1.005)^{12}-1 \\approx 6.1678\\%$. The annual account's EAR is $6.1\\%$. Monthly is higher, so the statement is False.",
-    "**B.** → False\n\nAfter $2$ years: $10000 e^{0.10} \\approx 11051.71$. After withdrawal: $8051.71$. After $3$ more years:\n\n$$8051.71 \\, e^{0.15} \\approx 9345.5$$\n\nwhich does not exceed $\\$9{,}500$, so the statement is False.",
-    "**C.** → True\n\nThis is a $10$-term geometric series with first term $100$ and ratio $1.03$, whose sum is $100(1.03^{10}-1)/0.03$, so the statement is True.",
-    "**D.** → True\n\nBy construction of the schedule, the level payment splits into interest on the prior balance and the residual principal reduction, so the statement is True.",
-    "**E.** → False\n\nOn one side of the cross-over the higher-IRR project wins on NPV; on the other side the lower-IRR project can have higher NPV. IRR ranking does not dominate for all rates, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 139,
-   "solution_overview": "Five advanced stems: matching EARs across bases, continuous accumulation with a withdrawal, geometric series closed form, amortisation schedule identity, and mutually exclusive IRR vs NPV conflict.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-140",
-   "case_id": "MATH 11.140",
-   "title": "Exam-style tasks — 17",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $20\\%$ compounded monthly produces an EAR above $22\\%$.",
-    "At continuous $9\\%$, money grows by more than $9.4\\%$ in one year.",
-    "At $3\\%$ effective, $\\$15{,}000$ grows to more than $\\$17{,}400$ in $5$ years.",
-    "The PV of $\\$100$ per month for $36$ months at $0.5\\%$ per month is greater than $\\$3{,}200$.",
-    "For a loan amount $L$, monthly rate $i$, and $n$ months, the level payment is $L \\cdot \\dfrac{i(1+i)^{n}}{(1+i)^{n}+1}$."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$R = \\left(1 + \\dfrac{0.20}{12}\\right)^{12} - 1 \\approx 0.21939 = 21.939\\%$$\n\nwhich is not above $22\\%$, so the statement is False.",
-    "**B.** → True\n\n$$e^{0.09} - 1 \\approx 0.09417 = 9.417\\% > 9.4\\%$$\n\nso the statement is True.",
-    "**C.** → False\n\n$$15000(1.03)^{5} = 15000 \\times 1.159274074 = 17389.11$$\n\nwhich does not exceed $\\$17{,}400$, so the statement is False.",
-    "**D.** → True\n\n$$PV = 100 \\cdot \\dfrac{1-(1.005)^{-36}}{0.005} \\approx 100 \\times 32.871 = 3287.1 > 3200$$\n\nso the statement is True.",
-    "**E.** → False\n\nThe correct amortisation formula is\n\n$$PMT = L \\cdot \\dfrac{i(1+i)^{n}}{(1+i)^{n}-1}$$\n\nwith a minus sign in the denominator, not a plus, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 140,
-   "solution_overview": "Five straightforward but multi-step checks: EAR percent points, continuous one-year growth, FV of principal, annuity PV bound, and loan payment formula recognition.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-141",
-   "case_id": "MATH 11.141",
-   "title": "Exam-style tasks — 18",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Compounding $8\\%$ nominal weekly beats compounding the same nominal monthly, in the sense of a larger EAR.",
-    "Under continuous $7\\%$, doubling takes more than $10$ years.",
-    "The accumulated value of deposits $50$ at $t=1$, $50$ at $t=2$, $\\ldots$, $50$ at $t=10$ at rate $2\\%$ per period equals $50 \\cdot \\dfrac{(1.02)^{10}-1}{0.02}$ evaluated at $t=10$.",
-    "An annuity-due of $20$ annual payments of $\\$1{,}000$ at $6\\%$ has present value greater than $\\$12{,}500$.",
-    "If a borrower pays only the interest each month on a $\\$40{,}000$ loan at $0.75\\%$ per month, the outstanding principal after $12$ months is still $\\$40{,}000$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nHigher compounding frequency increases EAR for a fixed nominal rate, so weekly beats monthly, so the statement is True.",
-    "**B.** → False\n\n$$t = \\ln 2 / 0.07 \\approx 9.902$$\n\nyears, which is not more than $10$, so the statement is False.",
-    "**C.** → True\n\nOrdinary annuity future-value formula with $A=50$, $i=0.02$, $n=10$, so the statement is True.",
-    "**D.** → False\n\nOrdinary annuity PV:\n\n$$1000 \\cdot \\dfrac{1-(1.06)^{-20}}{0.06} \\approx 11469.92$$\n\nAnnuity-due PV:\n\n$$11469.92 \\times 1.06 \\approx 12158$$\n\nwhich does not exceed $\\$12{,}500$, so the statement is False.",
-    "**E.** → True\n\nInterest-only payments leave principal unchanged, so the balance remains $\\$40{,}000$, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 141,
-   "solution_overview": "Five independent mini-problems: EAR comparison, continuous doubling, deposit geometric sum, annuity due PV numerical, and outstanding interest-only trap.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-142",
-   "case_id": "MATH 11.142",
-   "title": "Exam-style tasks — 19",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "If EAR $= 5\\%$ under monthly compounding, the implied nominal annual rate is greater than $4.9\\%$.",
-    "A machine costs $\\$25{,}000$ and scrap value after $8$ years is $\\$5{,}000$. Modelling only those two cash flows at continuous $4\\%$, the PV of benefits (scrap only) is less than $\\$4{,}000$.",
-    "Payments of $\\$800$ at $t=4,5,6,7$ (four payments) at $5\\%$ effective have time-$0$ present value greater than $\\$2{,}500$.",
-    "On the $\\$200{,}000$ mortgage at $0.5\\%$ monthly with payment $\\approx 1199.10$, the principal repaid in the first month is less than $\\$200$.",
-    "NPV is additive across portfolios: the NPV of the sum of two cash-flow streams equals the sum of their NPVs at the same discount rate."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$r = 12\\bigl(1.05^{1/12} - 1\\bigr) \\approx 12 \\times 0.004074 = 0.04889 = 4.889\\%$$\n\nwhich is not greater than $4.9\\%$, so the statement is False.",
-    "**B.** → True\n\n$$PV = 5000 e^{-0.32} \\approx 5000 \\times 0.72615 = 3630.7 < 4000$$\n\nso the statement is True.",
-    "**C.** → False\n\nValue at $t=3$ as an ordinary $4$-payment annuity:\n\n$$800 \\cdot \\dfrac{1-(1.05)^{-4}}{0.05} \\approx 2836.73$$\n\nDiscount three years:\n\n$$PV_{0} = \\dfrac{2836.73}{(1.05)^{3}} \\approx 2450$$\n\nwhich does not exceed $\\$2{,}500$, so the statement is False.",
-    "**D.** → True\n\nInterest $=1000$, so principal $=1199.10-1000=199.10 < 200$, so the statement is True.",
-    "**E.** → True\n\nDiscounting is a linear operator on cash flows, so NPV adds, so the statement is True."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 142,
-   "solution_overview": "Five hard closing stems before the last set: implied nominal from EAR, continuous cash-and-carry growth, deferred annuity numerical, mortgage principal in early payment, and NPV additivity.",
-   "placeholder": false
-  },
-  {
-   "id": "math-11-143",
-   "case_id": "MATH 11.143",
-   "title": "Exam-style tasks — 20",
-   "subsection": "3.8",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Nominal $9\\%$ compounded every two months ($n=6$) has EAR greater than $9.3\\%$.",
-    "The continuous EAR at $r=0.03$ differs from the simple rate $3\\%$ by less than $0.05$ percentage points.",
-    "Equal end-of-year deposits for $6$ years at $4\\%$ that accumulate to $\\$30{,}000$ must each be less than $\\$4{,}500$.",
-    "A $10$-year loan of $\\$80{,}000$ at $0.6\\%$ per month has monthly payment less than $\\$900$.",
-    "Project X: $-100$ now and $+150$ in two years. Project Y: $-100$ now and $+140$ in one year. Project Y has the higher IRR."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$R = \\left(1 + \\dfrac{0.09}{6}\\right)^{6} - 1 = (1.015)^{6} - 1 \\approx 0.09344 = 9.344\\% > 9.3\\%$$\n\nso the statement is True.",
-    "**B.** → True\n\n$$e^{0.03}-1 \\approx 0.03045$$\n\ngap $0.045$ points $< 0.05$, so the statement is True.",
-    "**C.** → False\n\n$$A = 30000 \\cdot \\dfrac{0.04}{(1.04)^{6}-1} \\approx 30000 / 6.6330 = 4522.8$$\n\nwhich is not less than $\\$4{,}500$, so the statement is False.",
-    "**D.** → False\n\n$n=120$,\n\n$$PMT = 80000 \\cdot \\dfrac{0.006(1.006)^{120}}{(1.006)^{120}-1} \\approx 919.4$$\n\nwhich is not less than $\\$900$, so the statement is False.",
-    "**E.** → True\n\nIRR of X: $(1+r)^{2}=1.5$ gives $r=\\sqrt{1.5}-1\\approx 22.47\\%$. IRR of Y: $r=0.40=40\\%$. Y is higher, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 143,
-   "solution_overview": "Five final independent checks: EAR from bimonthly compounding, continuous rate gap, sinking-fund deposit, full amortisation payment bound, and a simple IRR comparison between two one-inflow projects.",
-   "placeholder": false
-  }
- ]
+  "tasks": [
+    {
+      "id": "math-11-124",
+      "case_id": "MATH 11.124",
+      "title": "Exam-style tasks - 1",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A nominal annual rate of $7.2\\%$ compounded $4$ times per year has an effective annual rate of $7.40\\%$ to the nearest $0.01$ percentage point.",
+        "An account starts at $\\$7{,}000$ and grows continuously at $3.5\\%$ for $4$ years. Its balance is $\\$8{,}111.92$ to the nearest cent.",
+        "A single payment of $\\$12{,}000$ is due in $4$ years. At an effective annual discount rate of $5.0\\%$, its present value is $\\$9{,}872.43$ to the nearest cent.",
+        "A grant pays $\\$900$ in its first year and each annual payment is $4.0\\%$ larger than the previous one. The total of the first $6$ payments is $\\$6{,}034.68$ to the nearest cent.",
+        "An ordinary annuity pays $\\$300$ at each month-end for $24$ months. At a monthly rate of $0.60\\%$, its present value is $\\$6{,}686.98$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe effective annual rate compounds the periodic nominal rate over every period in the year.\n\n$$R=\\left(1+\\frac{0.072}{4}\\right)^{4}-1$$\n\n$$R\\approx 0.074000$$\n\n$$100R\\approx 7.40\\%$$\n\nThe rounded effective rate is $7.40\\%$, so the statement is True.",
+        "**B.** → False\n\nContinuous compounding applies the exponential accumulation factor.\n\n$$FV=Pe^{rt}$$\n\n$$FV=7000e^{0.035(4)}$$\n\n$$FV\\approx 8051.92$$\n\nThe continuous balance is $\\$8{,}051.92$, not $\\$8{,}111.92$, so the statement is False.",
+        "**C.** → True\n\nPresent value divides the future payment by its full accumulation factor.\n\n$$PV=\\frac{12000}{(1+0.050)^{4}}$$\n\n$$(1+0.050)^{4}\\approx 1.215506$$\n\n$$PV\\approx 9872.43$$\n\nThe discounted value is $\\$9{,}872.43$, so the statement is True.",
+        "**D.** → False\n\nA fixed percentage increase creates a finite geometric series.\n\n$$S_{6}=a\\frac{r^{6}-1}{r-1}$$\n\n$$S_{6}=900\\frac{1.04^{6}-1}{1.04-1}$$\n\n$$S_{6}\\approx 5969.68$$\n\nThe finite payment total is $\\$5{,}969.68$, not $\\$6{,}034.68$, so the statement is False.",
+        "**E.** → True\n\nAn ordinary-annuity present value discounts a level payment made at each period-end.\n\n$$PV=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PV=300\\frac{1-(1+0.0060)^{-24}}{0.0060}$$\n\n$$PV\\approx 6686.98$$\n\nThe annuity present value is $\\$6{,}686.98$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 124,
+      "solution_overview": "Topics: 3.1, 3.2, 3.3, 3.4, 3.5. A checks nominal-to-effective rate conversion; B checks continuous future value; C checks single-payment present value; D checks finite growing geometric series; E checks ordinary-annuity present value.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-125",
+      "case_id": "MATH 11.125",
+      "title": "Exam-style tasks - 2",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At a continuously compounded annual rate of $4.5\\%$, the doubling time is $15.90$ years to the nearest $0.01$ year.",
+        "A debt of $\\$18{,}000$ is due in $30$ months. At a nominal annual rate of $6.0\\%$ compounded monthly, its present value is $\\$15{,}498.54$ to the nearest cent.",
+        "A maintenance plan pays $\\$1{,}600$ now, then each later annual payment is $72\\%$ of the preceding payment forever. The undiscounted sum of all payments is $\\$5{,}789.29$ to the nearest cent.",
+        "At an effective annual rate of $4.5\\%$, an annuity-due of $8$ level annual payments has a present value exactly $4.5\\%$ larger than the corresponding ordinary annuity.",
+        "A mortgage of $\\$180{,}000$ is repaid by $300$ equal month-end payments at a monthly rate of $0.450\\%$. The required payment is $\\$1{,}109.63$ to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nContinuous doubling time is found by solving the exponential growth equation for time.\n\n$$2=e^{rt}$$\n\n$$\\ln 2=rt$$\n\n$$t=\\frac{\\ln 2}{0.045}\\approx 15.40$$\n\nThe doubling time is $15.40$ years, not $15.90$ years, so the statement is False.",
+        "**B.** → True\n\nMonthly discounting matches the nominal rate conversion to the number of months.\n\n$$i_m=\\frac{0.060}{12}=0.005000$$\n\n$$PV=\\frac{18000}{(1+0.005000)^{30}}$$\n\n$$PV\\approx 15498.54$$\n\nThe monthly-discounted value is $\\$15{,}498.54$, so the statement is True.",
+        "**C.** → False\n\nAn infinite geometric series converges when the common ratio has absolute value below one.\n\n$$S_\\infty=\\frac{a}{1-r}$$\n\n$$S_\\infty=\\frac{1600}{1-0.72}$$\n\n$$S_\\infty\\approx 5714.29$$\n\nThe convergent total is $\\$5{,}714.29$, not $\\$5{,}789.29$, so the statement is False.",
+        "**D.** → True\n\nMoving every annuity payment one period earlier multiplies present value by one plus the periodic rate.\n\n$$PV_{\\mathrm{due}}=(1+i)PV_{\\mathrm{ordinary}}$$\n\n$$PV_{\\mathrm{ordinary}}=1000\\frac{1-(1+0.045)^{-8}}{0.045}\\approx 6595.89$$\n\n$$PV_{\\mathrm{due}}=(1+0.045)(6595.89)\\approx 6892.70$$\n\n$$\\frac{PV_{\\mathrm{due}}-PV_{\\mathrm{ordinary}}}{PV_{\\mathrm{ordinary}}}=0.045$$\n\nThe annuity-due premium is exactly $4.5\\%$, so the statement is True.",
+        "**E.** → False\n\nA level-payment mortgage sets the loan principal equal to an ordinary-annuity present value.\n\n$$PMT=P\\frac{i}{1-(1+i)^{-n}}$$\n\n$$PMT=180000\\frac{0.004500}{1-(1+0.004500)^{-300}}$$\n\n$$PMT\\approx 1094.63$$\n\nThe required payment is $\\$1{,}094.63$, not $\\$1{,}109.63$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 125,
+      "solution_overview": "Topics: 3.2, 3.3, 3.4, 3.5, 3.6. A checks continuous doubling time; B checks monthly present-value discounting; C checks infinite decreasing geometric series; D checks annuity-due timing; E checks mortgage payment calculation.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-126",
+      "case_id": "MATH 11.126",
+      "title": "Exam-style tasks - 3",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A cash-flow stream pays $\\$3{,}000$ in one year, $\\$4{,}500$ in two years, and $\\$5{,}500$ in three years. At $7.0\\%$ effective annual interest, its present value is $\\$11{,}223.85$ to the nearest cent.",
+        "A saver deposits $\\$500$ at the end of year $1$ and increases each later annual deposit by $8\\%$. The account earns $5.0\\%$ effective annually. Immediately after the year $5$ deposit, the balance is $\\$3{,}272.44$ to the nearest cent.",
+        "A perpetuity pays $\\$750$ at each year-end, with the first payment one year from now. At $4.0\\%$ effective annual interest, its present value is $\\$18{,}750.00$.",
+        "A $\\$180{,}000$ mortgage has $300$ monthly payments at $0.450\\%$ per month. Immediately after payment $48$, the outstanding balance is $\\$165{,}787.83$ to the nearest cent.",
+        "A project costs $\\$9{,}000$ now and pays $\\$3{,}800$, $\\$4{,}200$, and $\\$4{,}600$ at the ends of years $1$, $2$, and $3$. At a discount rate of $8.0\\%$, its NPV is $\\$1{,}770.97$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA cash-flow stream is valued by discounting each dated payment separately and then adding.\n\n$$PV_1=\\frac{3000}{1+0.070}\\approx 2803.74$$\n\n$$PV_2=\\frac{4500}{(1+0.070)^2}\\approx 3930.47$$\n\n$$PV_3=\\frac{5500}{(1+0.070)^3}\\approx 4489.64$$\n\n$$PV=PV_1+PV_2+PV_3\\approx 11223.85$$\n\nThe stream is worth $\\$11{,}223.85$ today, so the statement is True.",
+        "**B.** → False\n\nAt the valuation date, growing deposits form a geometric series after each receives its remaining interest.\n\n$$FV=500(1.050)^{4}\\sum_{k=0}^{4}\\left(\\frac{1.08}{1.050}\\right)^k$$\n\n$$FV=500(1.050)^{4}\\frac{1-(1.028571)^{5}}{1-1.028571}$$\n\n$$FV\\approx 3217.44$$\n\nThe accumulated balance is $\\$3{,}217.44$, not $\\$3{,}272.44$, so the statement is False.",
+        "**C.** → True\n\nA level perpetuity with its first payment one period ahead has value equal to payment divided by rate.\n\n$$PV=\\frac{C}{i}$$\n\n$$PV=\\frac{750}{0.040}$$\n\n$$PV=18750.00$$\n\nThe perpetuity value is $\\$18{,}750.00$, so the statement is True.",
+        "**D.** → False\n\nImmediately after a payment, the mortgage balance is the present value of all remaining payments.\n\n$$PMT=180000\\frac{0.004500}{1-(1+0.004500)^{-300}}\\approx 1094.63$$\n\n$$n_{\\mathrm{remaining}}=300-48=252$$\n\n$$B_{48}=1094.63\\frac{1-(1+0.004500)^{-252}}{0.004500}$$\n\n$$B_{48}\\approx 164787.83$$\n\nThe outstanding balance is $\\$164{,}787.83$, not $\\$165{,}787.83$, so the statement is False.",
+        "**E.** → True\n\nNet present value adds discounted inflows to the signed initial cash flow.\n\n$$NPV=-9000+\\frac{3800}{1+0.080}+\\frac{4200}{(1+0.080)^2}+\\frac{4600}{(1+0.080)^3}$$\n\n$$NPV\\approx-9000+3518.52+3600.82+3651.63$$\n\n$$NPV\\approx 1770.97$$\n\nThe project NPV is $\\$1{,}770.97$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 126,
+      "solution_overview": "Topics: 3.3, 3.4, 3.5, 3.6, 3.7. A checks present value of dated cash flows; B checks geometrically growing deposits; C checks level perpetuity valuation; D checks outstanding mortgage balance; E checks multi-period NPV.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-127",
+      "case_id": "MATH 11.127",
+      "title": "Exam-style tasks - 4",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A lease charges $\\$1{,}200$ in year $1$ and raises the charge by $6.0\\%$ each year. Over $7$ years, the total charge is $\\$10{,}167.61$ to the nearest cent.",
+        "A growing perpetuity pays $\\$900$ one year from now, and later payments grow by $2.5\\%$ annually. At a discount rate of $7.5\\%$, its present value is $\\$18{,}000.00$.",
+        "A $\\$180{,}000$ mortgage uses $300$ level monthly payments at $0.450\\%$ per month. In the first payment, $\\$304.63$ reduces principal.",
+        "A project costs $\\$5{,}000$ now and has one inflow of $\\$6{,}050.00$ at the end of year $2$. Its effective annual IRR is $10.00\\%$.",
+        "At the same nominal annual rate of $8.4\\%$, monthly compounding produces a lower effective annual rate than quarterly compounding."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nRepeated proportional escalation makes the lease charges consecutive terms of one geometric progression.\n\n$$a_{7}=1200(1.06)^{6}\\approx 1702.22$$\n\n$$S_{7}=1200\\frac{1.06^{7}-1}{1.06-1}$$\n\n$$S_{7}\\approx 10072.61$$\n\nThe lease total is $\\$10{,}072.61$, not $\\$10{,}167.61$, so the statement is False.",
+        "**B.** → True\n\nA growing perpetuity uses the first next-period payment divided by the discount-growth spread.\n\n$$PV=\\frac{C_1}{i-g}$$\n\n$$PV=\\frac{900}{0.075-0.025}$$\n\n$$PV=18000.00$$\n\nThe growing-perpetuity value is $\\$18{,}000.00$, so the statement is True.",
+        "**C.** → False\n\nEach mortgage payment first covers current interest, with the remainder reducing principal.\n\n$$PMT=180000\\frac{0.004500}{1-(1+0.004500)^{-300}}\\approx 1094.63$$\n\n$$I_1=180000(0.004500)=810.00$$\n\n$$PR_1=1094.63-810.00=284.63$$\n\nThe first principal reduction is $\\$284.63$, not $\\$304.63$, so the statement is False.",
+        "**D.** → True\n\nFor one initial outflow and one terminal inflow, the IRR equates the terminal value to compounded cost.\n\n$$5000(1+r)^{2}=6050.00$$\n\n$$1+r=\\left(\\frac{6050.00}{5000}\\right)^{1/2}$$\n\n$$100r=10.00\\%$$\n\nThe effective annual IRR is $10.00\\%$, so the statement is True.",
+        "**E.** → False\n\nFor a fixed positive nominal rate, more frequent compounding produces a larger effective rate.\n\n$$R_{12}=\\left(1+\\frac{0.084}{12}\\right)^{12}-1\\approx 0.087311$$\n\n$$R_4=\\left(1+\\frac{0.084}{4}\\right)^4-1\\approx 0.086683$$\n\n$$0.087311>0.086683$$\n\nMonthly compounding is not the lower-rate option, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 127,
+      "solution_overview": "Topics: 3.4, 3.5, 3.6, 3.7, 3.1. A checks escalating-payment series; B checks growing perpetuity valuation; C checks mortgage interest and principal split; D checks single-inflow IRR; E checks compounding-frequency comparison.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-128",
+      "case_id": "MATH 11.128",
+      "title": "Exam-style tasks - 5",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An ordinary annuity pays $\\$325$ at each month-end for $30$ months. At a monthly rate of $0.65\\%$, its present value is $\\$8{,}832.30$ to the nearest cent.",
+        "A $\\$180{,}000$ mortgage is amortized over $300$ months at $0.450\\%$ per month with level payments. Total interest over the full schedule is $\\$150{,}890.16$ to the nearest cent.",
+        "A project costs $\\$10{,}000$ and pays $\\$4{,}200$, $\\$4{,}300$, and $\\$4{,}400$ after one, two, and three years. Under the NPV rule at $9.0\\%$, the project should be accepted.",
+        "An effective annual rate of $7.5\\%$ is equivalent to a monthly rate of $0.624\\%$ to the nearest $0.001$ percentage point.",
+        "A force of interest of $4.0\\%$ per year corresponds to an effective annual rate of $4.08\\%$ to the nearest $0.01$ percentage point."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAn ordinary-annuity present value discounts a level payment made at each period-end.\n\n$$PV=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PV=325\\frac{1-(1+0.0065)^{-30}}{0.0065}$$\n\n$$PV\\approx 8832.30$$\n\nThe annuity present value is $\\$8{,}832.30$, so the statement is True.",
+        "**B.** → False\n\nTotal mortgage interest equals all scheduled payments minus the original principal.\n\n$$PMT=180000\\frac{0.004500}{1-(1+0.004500)^{-300}}\\approx 1094.63$$\n\n$$\\sum PMT=300(1094.63385133)\\approx 328390.16$$\n\n$$I=328390.16-180000=148390.16$$\n\nThe full-schedule interest is $\\$148{,}390.16$, not $\\$150{,}890.16$, so the statement is False.",
+        "**C.** → True\n\nThe NPV decision rule accepts a standalone project exactly when discounted value is positive.\n\n$$NPV=-10000+\\frac{4200}{1+0.090}+\\frac{4300}{(1+0.090)^2}+\\frac{4400}{(1+0.090)^3}$$\n\n$$NPV\\approx 870.04$$\n\n$$NPV >0$$\n\nThe NPV rule gives acceptance, so the statement is True.",
+        "**D.** → False\n\nEquivalent rates have the same annual accumulation factor.\n\n$$(1+i_m)^{12}=1+0.075$$\n\n$$i_m=(1+0.075)^{1/12}-1$$\n\n$$100i_m\\approx 0.604\\%$$\n\nThe equivalent monthly rate is $0.604\\%$, not $0.624\\%$, so the statement is False.",
+        "**E.** → True\n\nA one-year continuously compounded rate converts through the exponential growth factor.\n\n$$1+R=e^{0.040}$$\n\n$$R=e^{0.040}-1\\approx 0.040811$$\n\n$$100R\\approx 4.08\\%$$\n\nThe effective annual rate is $4.08\\%$, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 128,
+      "solution_overview": "Topics: 3.5, 3.6, 3.7, 3.1, 3.2. A checks ordinary-annuity present value; B checks total mortgage interest; C checks NPV accept-or-reject decision; D checks effective-to-periodic rate conversion; E checks continuous effective rate.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-129",
+      "case_id": "MATH 11.129",
+      "title": "Exam-style tasks - 6",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A mortgage of $\\$190{,}000$ is repaid by $312$ equal month-end payments at a monthly rate of $0.475\\%$. The required payment is $\\$1{,}184.01$ to the nearest cent.",
+        "A project costs $\\$8{,}000$ now, pays $\\$3{,}000$ in one year, and $\\$6{,}675.20$ in two years. An effective annual rate of $12.0\\%$ is its IRR.",
+        "An investment of $\\$6{,}000$ at a nominal $6.0\\%$ compounded quarterly for $3$ years grows to $\\$7{,}248.71$ to the nearest cent.",
+        "A payment of $\\$14{,}000$ due in $5$ years is discounted continuously at $3.8\\%$. Its present value is $\\$11{,}577.43$ to the nearest cent.",
+        "A contract pays $\\$2{,}500$ at the ends of years $1$, $3$, and $5$. At $5.5\\%$ effective annual interest, the contract is worth $\\$6{,}496.54$ today to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nA level-payment mortgage sets the loan principal equal to an ordinary-annuity present value.\n\n$$PMT=P\\frac{i}{1-(1+i)^{-n}}$$\n\n$$PMT=190000\\frac{0.004750}{1-(1+0.004750)^{-312}}$$\n\n$$PMT\\approx 1169.01$$\n\nThe required payment is $\\$1{,}169.01$, not $\\$1{,}184.01$, so the statement is False.",
+        "**B.** → True\n\nA candidate IRR is correct only when discounting every project cash flow at that rate gives zero NPV.\n\n$$NPV(0.120)=-8000+\\frac{3000}{1+0.120}+\\frac{6675.20}{(1+0.120)^2}$$\n\n$$NPV(0.120)\\approx 0.00$$\n\nThe candidate rate makes NPV zero, so the statement is True.",
+        "**C.** → False\n\nPeriodic compounding uses the quarterly rate and the total number of quarters.\n\n$$i=\\frac{0.060}{4},\\quad n=4(3)=12$$\n\n$$FV=6000\\left(1+\\frac{0.060}{4}\\right)^{12}$$\n\n$$FV\\approx 7173.71$$\n\nThe accumulated value is $\\$7{,}173.71$, not $\\$7{,}248.71$, so the statement is False.",
+        "**D.** → True\n\nContinuous present value reverses exponential accumulation with a negative exponent.\n\n$$PV=Fe^{-rt}$$\n\n$$PV=14000e^{-0.038(5)}$$\n\n$$PV\\approx 11577.43$$\n\nThe present value is $\\$11{,}577.43$, so the statement is True.",
+        "**E.** → False\n\nIrregularly timed payments must each use the discount exponent matching their own date.\n\n$$PV=\\frac{2500}{1+0.055}+\\frac{2500}{(1+0.055)^3}+\\frac{2500}{(1+0.055)^5}$$\n\n$$PV\\approx 2369.67+2129.03+1912.84$$\n\n$$PV\\approx 6411.54$$\n\nThe contract value is $\\$6{,}411.54$, not $\\$6{,}496.54$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 129,
+      "solution_overview": "Topics: 3.6, 3.7, 3.1, 3.2, 3.3. A checks mortgage payment calculation; B checks IRR zero-NPV test; C checks period count in compound growth; D checks continuous present value; E checks irregular cash-flow present value.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-130",
+      "case_id": "MATH 11.130",
+      "title": "Exam-style tasks - 7",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A project costs $\\$9{,}750$ now and pays $\\$4{,}000$, $\\$4{,}450$, and $\\$4{,}900$ at the ends of years $1$, $2$, and $3$. At a discount rate of $8.5\\%$, its NPV is $\\$1{,}552.96$ to the nearest cent.",
+        "A nominal annual rate of $7.8\\%$ compounded $12$ times per year has an effective annual rate of $8.18\\%$ to the nearest $0.01$ percentage point.",
+        "An account starts at $\\$7{,}750$ and grows continuously at $4.0\\%$ for $5$ years. Its balance is $\\$9{,}465.87$ to the nearest cent.",
+        "A single payment of $\\$13{,}500$ is due in $5$ years. At an effective annual discount rate of $5.5\\%$, its present value is $\\$10{,}399.31$ to the nearest cent.",
+        "A grant pays $\\$1{,}000$ in its first year and each annual payment is $5.0\\%$ larger than the previous one. The total of the first $7$ payments is $\\$8{,}142.01$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nNet present value adds discounted inflows to the signed initial cash flow.\n\n$$NPV=-9750+\\frac{4000}{1+0.085}+\\frac{4450}{(1+0.085)^2}+\\frac{4900}{(1+0.085)^3}$$\n\n$$NPV\\approx-9750+3686.64+3780.08+3836.25$$\n\n$$NPV\\approx 1552.96$$\n\nThe project NPV is $\\$1{,}552.96$, so the statement is True.",
+        "**B.** → False\n\nThe effective annual rate compounds the periodic nominal rate over every period in the year.\n\n$$R=\\left(1+\\frac{0.078}{12}\\right)^{12}-1$$\n\n$$R\\approx 0.080800$$\n\n$$100R\\approx 8.08\\%$$\n\nThe rounded effective rate is $8.08\\%$, not $8.18\\%$, so the statement is False.",
+        "**C.** → True\n\nContinuous compounding applies the exponential accumulation factor.\n\n$$FV=Pe^{rt}$$\n\n$$FV=7750e^{0.040(5)}$$\n\n$$FV\\approx 9465.87$$\n\nThe continuous balance is $\\$9{,}465.87$, so the statement is True.",
+        "**D.** → False\n\nPresent value divides the future payment by its full accumulation factor.\n\n$$PV=\\frac{13500}{(1+0.055)^{5}}$$\n\n$$(1+0.055)^{5}\\approx 1.306960$$\n\n$$PV\\approx 10329.31$$\n\nThe discounted value is $\\$10{,}329.31$, not $\\$10{,}399.31$, so the statement is False.",
+        "**E.** → True\n\nA fixed percentage increase creates a finite geometric series.\n\n$$S_{7}=a\\frac{r^{7}-1}{r-1}$$\n\n$$S_{7}=1000\\frac{1.05^{7}-1}{1.05-1}$$\n\n$$S_{7}\\approx 8142.01$$\n\nThe finite payment total is $\\$8{,}142.01$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 130,
+      "solution_overview": "Topics: 3.7, 3.1, 3.2, 3.3, 3.4. A checks multi-period NPV; B checks nominal-to-effective rate conversion; C checks continuous future value; D checks single-payment present value; E checks finite growing geometric series.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-131",
+      "case_id": "MATH 11.131",
+      "title": "Exam-style tasks - 8",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the same nominal annual rate of $8.8\\%$, monthly compounding produces a lower effective annual rate than quarterly compounding.",
+        "At a continuously compounded annual rate of $5.0\\%$, the doubling time is $13.86$ years to the nearest $0.01$ year.",
+        "A debt of $\\$19{,}000$ is due in $36$ months. At a nominal annual rate of $6.4\\%$ compounded monthly, its present value is $\\$15{,}778.83$ to the nearest cent.",
+        "A maintenance plan pays $\\$1{,}750$ now, then each later annual payment is $75\\%$ of the preceding payment forever. The undiscounted sum of all payments is $\\$7{,}000.00$ to the nearest cent.",
+        "At an effective annual rate of $5.0\\%$, an annuity-due of $9$ level annual payments has a present value exactly $6.0\\%$ larger than the corresponding ordinary annuity."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nFor a fixed positive nominal rate, more frequent compounding produces a larger effective rate.\n\n$$R_{12}=\\left(1+\\frac{0.088}{12}\\right)^{12}-1\\approx 0.091638$$\n\n$$R_4=\\left(1+\\frac{0.088}{4}\\right)^4-1\\approx 0.090947$$\n\n$$0.091638>0.090947$$\n\nMonthly compounding is not the lower-rate option, so the statement is False.",
+        "**B.** → True\n\nContinuous doubling time is found by solving the exponential growth equation for time.\n\n$$2=e^{rt}$$\n\n$$\\ln 2=rt$$\n\n$$t=\\frac{\\ln 2}{0.050}\\approx 13.86$$\n\nThe doubling time is $13.86$ years, so the statement is True.",
+        "**C.** → False\n\nMonthly discounting matches the nominal rate conversion to the number of months.\n\n$$i_m=\\frac{0.064}{12}=0.005333$$\n\n$$PV=\\frac{19000}{(1+0.005333)^{36}}$$\n\n$$PV\\approx 15688.83$$\n\nThe monthly-discounted value is $\\$15{,}688.83$, not $\\$15{,}778.83$, so the statement is False.",
+        "**D.** → True\n\nAn infinite geometric series converges when the common ratio has absolute value below one.\n\n$$S_\\infty=\\frac{a}{1-r}$$\n\n$$S_\\infty=\\frac{1750}{1-0.75}$$\n\n$$S_\\infty\\approx 7000.00$$\n\nThe convergent total is $\\$7{,}000.00$, so the statement is True.",
+        "**E.** → False\n\nMoving every annuity payment one period earlier multiplies present value by one plus the periodic rate.\n\n$$PV_{\\mathrm{due}}=(1+i)PV_{\\mathrm{ordinary}}$$\n\n$$PV_{\\mathrm{ordinary}}=1100\\frac{1-(1+0.050)^{-9}}{0.050}\\approx 7818.60$$\n\n$$PV_{\\mathrm{due}}=(1+0.050)(7818.60)\\approx 8209.53$$\n\n$$\\frac{PV_{\\mathrm{due}}-PV_{\\mathrm{ordinary}}}{PV_{\\mathrm{ordinary}}}=0.050$$\n\nThe annuity-due premium is exactly $5.0\\%$, not $6.0\\%$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 131,
+      "solution_overview": "Topics: 3.1, 3.2, 3.3, 3.4, 3.5. A checks compounding-frequency comparison; B checks continuous doubling time; C checks monthly present-value discounting; D checks infinite decreasing geometric series; E checks annuity-due timing.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-132",
+      "case_id": "MATH 11.132",
+      "title": "Exam-style tasks - 9",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A force of interest of $4.4\\%$ per year corresponds to an effective annual rate of $4.50\\%$ to the nearest $0.01$ percentage point.",
+        "A cash-flow stream pays $\\$3{,}250$ in one year, $\\$4{,}800$ in two years, and $\\$5{,}850$ in three years. At $7.5\\%$ effective annual interest, its present value is $\\$11{,}985.87$ to the nearest cent.",
+        "A saver deposits $\\$550$ at the end of year $1$ and increases each later annual deposit by $8\\%$. The account earns $5.5\\%$ effective annually. Immediately after the year $6$ deposit, the balance is $\\$4{,}576.69$ to the nearest cent.",
+        "A perpetuity pays $\\$800$ at each year-end, with the first payment one year from now. At $4.5\\%$ effective annual interest, its present value is $\\$18{,}277.78$.",
+        "A $\\$190{,}000$ mortgage has $312$ monthly payments at $0.475\\%$ per month. Immediately after payment $60$, the outstanding balance is $\\$171{,}548.02$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA one-year continuously compounded rate converts through the exponential growth factor.\n\n$$1+R=e^{0.044}$$\n\n$$R=e^{0.044}-1\\approx 0.044982$$\n\n$$100R\\approx 4.50\\%$$\n\nThe effective annual rate is $4.50\\%$, so the statement is True.",
+        "**B.** → False\n\nA cash-flow stream is valued by discounting each dated payment separately and then adding.\n\n$$PV_1=\\frac{3250}{1+0.075}\\approx 3023.26$$\n\n$$PV_2=\\frac{4800}{(1+0.075)^2}\\approx 4153.60$$\n\n$$PV_3=\\frac{5850}{(1+0.075)^3}\\approx 4709.02$$\n\n$$PV=PV_1+PV_2+PV_3\\approx 11885.87$$\n\nThe stream is worth $\\$11{,}885.87$ today, not $\\$11{,}985.87$, so the statement is False.",
+        "**C.** → True\n\nAt the valuation date, growing deposits form a geometric series after each receives its remaining interest.\n\n$$FV=550(1.055)^{5}\\sum_{k=0}^{5}\\left(\\frac{1.08}{1.055}\\right)^k$$\n\n$$FV=550(1.055)^{5}\\frac{1-(1.023697)^{6}}{1-1.023697}$$\n\n$$FV\\approx 4576.69$$\n\nThe accumulated balance is $\\$4{,}576.69$, so the statement is True.",
+        "**D.** → False\n\nA level perpetuity with its first payment one period ahead has value equal to payment divided by rate.\n\n$$PV=\\frac{C}{i}$$\n\n$$PV=\\frac{800}{0.045}$$\n\n$$PV=17777.78$$\n\nThe perpetuity value is $\\$17{,}777.78$, not $\\$18{,}277.78$, so the statement is False.",
+        "**E.** → True\n\nImmediately after a payment, the mortgage balance is the present value of all remaining payments.\n\n$$PMT=190000\\frac{0.004750}{1-(1+0.004750)^{-312}}\\approx 1169.01$$\n\n$$n_{\\mathrm{remaining}}=312-60=252$$\n\n$$B_{60}=1169.01\\frac{1-(1+0.004750)^{-252}}{0.004750}$$\n\n$$B_{60}\\approx 171548.02$$\n\nThe outstanding balance is $\\$171{,}548.02$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 132,
+      "solution_overview": "Topics: 3.2, 3.3, 3.4, 3.5, 3.6. A checks continuous effective rate; B checks present value of dated cash flows; C checks geometrically growing deposits; D checks level perpetuity valuation; E checks outstanding mortgage balance.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-133",
+      "case_id": "MATH 11.133",
+      "title": "Exam-style tasks - 10",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A contract pays $\\$2{,}700$ at the ends of years $1$, $3$, and $5$. At $6.0\\%$ effective annual interest, the contract is worth $\\$6{,}916.74$ today to the nearest cent.",
+        "A lease charges $\\$1{,}300$ in year $1$ and raises the charge by $7.0\\%$ each year. Over $8$ years, the total charge is $\\$13{,}337.74$ to the nearest cent.",
+        "A growing perpetuity pays $\\$975$ one year from now, and later payments grow by $2.7\\%$ annually. At a discount rate of $8.0\\%$, its present value is $\\$18{,}996.23$.",
+        "A $\\$190{,}000$ mortgage uses $312$ level monthly payments at $0.475\\%$ per month. In the first payment, $\\$266.51$ reduces principal.",
+        "A project costs $\\$5{,}500$ now and has one inflow of $\\$7{,}521.97$ at the end of year $3$. Its effective annual IRR is $12.00\\%$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nIrregularly timed payments must each use the discount exponent matching their own date.\n\n$$PV=\\frac{2700}{1+0.060}+\\frac{2700}{(1+0.060)^3}+\\frac{2700}{(1+0.060)^5}$$\n\n$$PV\\approx 2547.17+2266.97+2017.60$$\n\n$$PV\\approx 6831.74$$\n\nThe contract value is $\\$6{,}831.74$, not $\\$6{,}916.74$, so the statement is False.",
+        "**B.** → True\n\nRepeated proportional escalation makes the lease charges consecutive terms of one geometric progression.\n\n$$a_{8}=1300(1.07)^{7}\\approx 2087.52$$\n\n$$S_{8}=1300\\frac{1.07^{8}-1}{1.07-1}$$\n\n$$S_{8}\\approx 13337.74$$\n\nThe lease total is $\\$13{,}337.74$, so the statement is True.",
+        "**C.** → False\n\nA growing perpetuity uses the first next-period payment divided by the discount-growth spread.\n\n$$PV=\\frac{C_1}{i-g}$$\n\n$$PV=\\frac{975}{0.080-0.027}$$\n\n$$PV=18396.23$$\n\nThe growing-perpetuity value is $\\$18{,}396.23$, not $\\$18{,}996.23$, so the statement is False.",
+        "**D.** → True\n\nEach mortgage payment first covers current interest, with the remainder reducing principal.\n\n$$PMT=190000\\frac{0.004750}{1-(1+0.004750)^{-312}}\\approx 1169.01$$\n\n$$I_1=190000(0.004750)=902.50$$\n\n$$PR_1=1169.01-902.50=266.51$$\n\nThe first principal reduction is $\\$266.51$, so the statement is True.",
+        "**E.** → False\n\nFor one initial outflow and one terminal inflow, the IRR equates the terminal value to compounded cost.\n\n$$5500(1+r)^{3}=7521.97$$\n\n$$1+r=\\left(\\frac{7521.97}{5500}\\right)^{1/3}$$\n\n$$100r=11.00\\%$$\n\nThe effective annual IRR is $11.00\\%$, not $12.00\\%$, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 133,
+      "solution_overview": "Topics: 3.3, 3.4, 3.5, 3.6, 3.7. A checks irregular cash-flow present value; B checks escalating-payment series; C checks growing perpetuity valuation; D checks mortgage interest and principal split; E checks single-inflow IRR.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-134",
+      "case_id": "MATH 11.134",
+      "title": "Exam-style tasks - 11",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A grant pays $\\$1{,}100$ in its first year and each annual payment is $6.0\\%$ larger than the previous one. The total of the first $8$ payments is $\\$10{,}887.21$ to the nearest cent.",
+        "An ordinary annuity pays $\\$350$ at each month-end for $36$ months. At a monthly rate of $0.70\\%$, its present value is $\\$11{,}173.63$ to the nearest cent.",
+        "A $\\$190{,}000$ mortgage is amortized over $312$ months at $0.475\\%$ per month with level payments. Total interest over the full schedule is $\\$174{,}732.13$ to the nearest cent.",
+        "A project costs $\\$10{,}500$ and pays $\\$4{,}400$, $\\$4{,}500$, and $\\$4{,}600$ after one, two, and three years. Under the NPV rule at $9.5\\%$, the project should be rejected.",
+        "An effective annual rate of $8.0\\%$ is equivalent to a monthly rate of $0.643\\%$ to the nearest $0.001$ percentage point."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA fixed percentage increase creates a finite geometric series.\n\n$$S_{8}=a\\frac{r^{8}-1}{r-1}$$\n\n$$S_{8}=1100\\frac{1.06^{8}-1}{1.06-1}$$\n\n$$S_{8}\\approx 10887.21$$\n\nThe finite payment total is $\\$10{,}887.21$, so the statement is True.",
+        "**B.** → False\n\nAn ordinary-annuity present value discounts a level payment made at each period-end.\n\n$$PV=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PV=350\\frac{1-(1+0.0070)^{-36}}{0.0070}$$\n\n$$PV\\approx 11103.63$$\n\nThe annuity present value is $\\$11{,}103.63$, not $\\$11{,}173.63$, so the statement is False.",
+        "**C.** → True\n\nTotal mortgage interest equals all scheduled payments minus the original principal.\n\n$$PMT=190000\\frac{0.004750}{1-(1+0.004750)^{-312}}\\approx 1169.01$$\n\n$$\\sum PMT=312(1169.01324262)\\approx 364732.13$$\n\n$$I=364732.13-190000=174732.13$$\n\nThe full-schedule interest is $\\$174{,}732.13$, so the statement is True.",
+        "**D.** → False\n\nThe NPV decision rule accepts a standalone project exactly when discounted value is positive.\n\n$$NPV=-10500+\\frac{4400}{1+0.095}+\\frac{4500}{(1+0.095)^2}+\\frac{4600}{(1+0.095)^3}$$\n\n$$NPV\\approx 774.92$$\n\n$$NPV >0$$\n\nThe NPV rule gives acceptance, not the claimed decision, so the statement is False.",
+        "**E.** → True\n\nEquivalent rates have the same annual accumulation factor.\n\n$$(1+i_m)^{12}=1+0.080$$\n\n$$i_m=(1+0.080)^{1/12}-1$$\n\n$$100i_m\\approx 0.643\\%$$\n\nThe equivalent monthly rate is $0.643\\%$, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 134,
+      "solution_overview": "Topics: 3.4, 3.5, 3.6, 3.7, 3.1. A checks finite growing geometric series; B checks ordinary-annuity present value; C checks total mortgage interest; D checks NPV accept-or-reject decision; E checks effective-to-periodic rate conversion.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-135",
+      "case_id": "MATH 11.135",
+      "title": "Exam-style tasks - 12",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At an effective annual rate of $5.5\\%$, an annuity-due of $10$ level annual payments has a present value exactly $6.5\\%$ larger than the corresponding ordinary annuity.",
+        "A mortgage of $\\$200{,}000$ is repaid by $324$ equal month-end payments at a monthly rate of $0.500\\%$. The required payment is $\\$1{,}247.97$ to the nearest cent.",
+        "A project costs $\\$8{,}600$ now, pays $\\$3{,}200$ in one year, and $\\$6{,}800.00$ in two years. An effective annual rate of $13.0\\%$ is its IRR.",
+        "An investment of $\\$7{,}000$ at a nominal $6.5\\%$ compounded quarterly for $4$ years grows to $\\$9{,}059.56$ to the nearest cent.",
+        "A payment of $\\$15{,}000$ due in $6$ years is discounted continuously at $4.2\\%$. Its present value is $\\$11{,}738.67$ to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nMoving every annuity payment one period earlier multiplies present value by one plus the periodic rate.\n\n$$PV_{\\mathrm{due}}=(1+i)PV_{\\mathrm{ordinary}}$$\n\n$$PV_{\\mathrm{ordinary}}=1200\\frac{1-(1+0.055)^{-10}}{0.055}\\approx 9045.15$$\n\n$$PV_{\\mathrm{due}}=(1+0.055)(9045.15)\\approx 9542.63$$\n\n$$\\frac{PV_{\\mathrm{due}}-PV_{\\mathrm{ordinary}}}{PV_{\\mathrm{ordinary}}}=0.055$$\n\nThe annuity-due premium is exactly $5.5\\%$, not $6.5\\%$, so the statement is False.",
+        "**B.** → True\n\nA level-payment mortgage sets the loan principal equal to an ordinary-annuity present value.\n\n$$PMT=P\\frac{i}{1-(1+i)^{-n}}$$\n\n$$PMT=200000\\frac{0.005000}{1-(1+0.005000)^{-324}}$$\n\n$$PMT\\approx 1247.97$$\n\nThe required payment is $\\$1{,}247.97$, so the statement is True.",
+        "**C.** → False\n\nA candidate IRR is correct only when discounting every project cash flow at that rate gives zero NPV.\n\n$$NPV(0.130)=-8600+\\frac{3200}{1+0.130}+\\frac{6800.00}{(1+0.130)^2}$$\n\n$$NPV(0.130)\\approx -442.74$$\n\nThe candidate rate does not make NPV zero, so the statement is False.",
+        "**D.** → True\n\nPeriodic compounding uses the quarterly rate and the total number of quarters.\n\n$$i=\\frac{0.065}{4},\\quad n=4(4)=16$$\n\n$$FV=7000\\left(1+\\frac{0.065}{4}\\right)^{16}$$\n\n$$FV\\approx 9059.56$$\n\nThe accumulated value is $\\$9{,}059.56$, so the statement is True.",
+        "**E.** → False\n\nContinuous present value reverses exponential accumulation with a negative exponent.\n\n$$PV=Fe^{-rt}$$\n\n$$PV=15000e^{-0.042(6)}$$\n\n$$PV\\approx 11658.67$$\n\nThe present value is $\\$11{,}658.67$, not $\\$11{,}738.67$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 135,
+      "solution_overview": "Topics: 3.5, 3.6, 3.7, 3.1, 3.2. A checks annuity-due timing; B checks mortgage payment calculation; C checks IRR zero-NPV test; D checks period count in compound growth; E checks continuous present value.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-136",
+      "case_id": "MATH 11.136",
+      "title": "Exam-style tasks - 13",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A $\\$200{,}000$ mortgage has $324$ monthly payments at $0.500\\%$ per month. Immediately after payment $72$, the outstanding balance is $\\$178{,}573.13$ to the nearest cent.",
+        "A project costs $\\$10{,}500$ now and pays $\\$4{,}200$, $\\$4{,}700$, and $\\$5{,}200$ at the ends of years $1$, $2$, and $3$. At a discount rate of $9.0\\%$, its NPV is $\\$1{,}444.46$ to the nearest cent.",
+        "A nominal annual rate of $8.4\\%$ compounded $2$ times per year has an effective annual rate of $8.58\\%$ to the nearest $0.01$ percentage point.",
+        "An account starts at $\\$8{,}500$ and grows continuously at $4.5\\%$ for $6$ years. Its balance is $\\$11{,}194.70$ to the nearest cent.",
+        "A single payment of $\\$15{,}000$ is due in $6$ years. At an effective annual discount rate of $6.0\\%$, its present value is $\\$10{,}574.41$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nImmediately after a payment, the mortgage balance is the present value of all remaining payments.\n\n$$PMT=200000\\frac{0.005000}{1-(1+0.005000)^{-324}}\\approx 1247.97$$\n\n$$n_{\\mathrm{remaining}}=324-72=252$$\n\n$$B_{72}=1247.97\\frac{1-(1+0.005000)^{-252}}{0.005000}$$\n\n$$B_{72}\\approx 178573.13$$\n\nThe outstanding balance is $\\$178{,}573.13$, so the statement is True.",
+        "**B.** → False\n\nNet present value adds discounted inflows to the signed initial cash flow.\n\n$$NPV=-10500+\\frac{4200}{1+0.090}+\\frac{4700}{(1+0.090)^2}+\\frac{5200}{(1+0.090)^3}$$\n\n$$NPV\\approx-10500+3853.21+3955.90+4015.35$$\n\n$$NPV\\approx 1324.46$$\n\nThe project NPV is $\\$1{,}324.46$, not $\\$1{,}444.46$, so the statement is False.",
+        "**C.** → True\n\nThe effective annual rate compounds the periodic nominal rate over every period in the year.\n\n$$R=\\left(1+\\frac{0.084}{2}\\right)^{2}-1$$\n\n$$R\\approx 0.085800$$\n\n$$100R\\approx 8.58\\%$$\n\nThe rounded effective rate is $8.58\\%$, so the statement is True.",
+        "**D.** → False\n\nContinuous compounding applies the exponential accumulation factor.\n\n$$FV=Pe^{rt}$$\n\n$$FV=8500e^{0.045(6)}$$\n\n$$FV\\approx 11134.70$$\n\nThe continuous balance is $\\$11{,}134.70$, not $\\$11{,}194.70$, so the statement is False.",
+        "**E.** → True\n\nPresent value divides the future payment by its full accumulation factor.\n\n$$PV=\\frac{15000}{(1+0.060)^{6}}$$\n\n$$(1+0.060)^{6}\\approx 1.418519$$\n\n$$PV\\approx 10574.41$$\n\nThe discounted value is $\\$10{,}574.41$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 136,
+      "solution_overview": "Topics: 3.6, 3.7, 3.1, 3.2, 3.3. A checks outstanding mortgage balance; B checks multi-period NPV; C checks nominal-to-effective rate conversion; D checks continuous future value; E checks single-payment present value.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-137",
+      "case_id": "MATH 11.137",
+      "title": "Exam-style tasks - 14",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A project costs $\\$6{,}000$ now and has one inflow of $\\$9{,}441.12$ at the end of year $4$. Its effective annual IRR is $13.00\\%$.",
+        "At the same nominal annual rate of $9.2\\%$, monthly compounding produces a higher effective annual rate than quarterly compounding.",
+        "At a continuously compounded annual rate of $5.5\\%$, the doubling time is $13.10$ years to the nearest $0.01$ year.",
+        "A debt of $\\$20{,}000$ is due in $42$ months. At a nominal annual rate of $6.8\\%$ compounded monthly, its present value is $\\$15{,}774.65$ to the nearest cent.",
+        "A maintenance plan pays $\\$1{,}900$ now, then each later annual payment is $78\\%$ of the preceding payment forever. The undiscounted sum of all payments is $\\$8{,}711.36$ to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nFor one initial outflow and one terminal inflow, the IRR equates the terminal value to compounded cost.\n\n$$6000(1+r)^{4}=9441.12$$\n\n$$1+r=\\left(\\frac{9441.12}{6000}\\right)^{1/4}$$\n\n$$100r=12.00\\%$$\n\nThe effective annual IRR is $12.00\\%$, not $13.00\\%$, so the statement is False.",
+        "**B.** → True\n\nFor a fixed positive nominal rate, more frequent compounding produces a larger effective rate.\n\n$$R_{12}=\\left(1+\\frac{0.092}{12}\\right)^{12}-1\\approx 0.095980$$\n\n$$R_4=\\left(1+\\frac{0.092}{4}\\right)^4-1\\approx 0.095223$$\n\n$$0.095980>0.095223$$\n\nMonthly compounding has the higher effective rate, so the statement is True.",
+        "**C.** → False\n\nContinuous doubling time is found by solving the exponential growth equation for time.\n\n$$2=e^{rt}$$\n\n$$\\ln 2=rt$$\n\n$$t=\\frac{\\ln 2}{0.055}\\approx 12.60$$\n\nThe doubling time is $12.60$ years, not $13.10$ years, so the statement is False.",
+        "**D.** → True\n\nMonthly discounting matches the nominal rate conversion to the number of months.\n\n$$i_m=\\frac{0.068}{12}=0.005667$$\n\n$$PV=\\frac{20000}{(1+0.005667)^{42}}$$\n\n$$PV\\approx 15774.65$$\n\nThe monthly-discounted value is $\\$15{,}774.65$, so the statement is True.",
+        "**E.** → False\n\nAn infinite geometric series converges when the common ratio has absolute value below one.\n\n$$S_\\infty=\\frac{a}{1-r}$$\n\n$$S_\\infty=\\frac{1900}{1-0.78}$$\n\n$$S_\\infty\\approx 8636.36$$\n\nThe convergent total is $\\$8{,}636.36$, not $\\$8{,}711.36$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 137,
+      "solution_overview": "Topics: 3.7, 3.1, 3.2, 3.3, 3.4. A checks single-inflow IRR; B checks compounding-frequency comparison; C checks continuous doubling time; D checks monthly present-value discounting; E checks infinite decreasing geometric series.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-138",
+      "case_id": "MATH 11.138",
+      "title": "Exam-style tasks - 15",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An effective annual rate of $8.5\\%$ is equivalent to a monthly rate of $0.682\\%$ to the nearest $0.001$ percentage point.",
+        "A force of interest of $4.8\\%$ per year corresponds to an effective annual rate of $5.04\\%$ to the nearest $0.01$ percentage point.",
+        "A cash-flow stream pays $\\$3{,}500$ in one year, $\\$5{,}100$ in two years, and $\\$6{,}200$ in three years. At $8.0\\%$ effective annual interest, its present value is $\\$12{,}534.93$ to the nearest cent.",
+        "A saver deposits $\\$600$ at the end of year $1$ and increases each later annual deposit by $8\\%$. The account earns $6.0\\%$ effective annually. Immediately after the year $7$ deposit, the balance is $\\$6{,}360.82$ to the nearest cent.",
+        "A perpetuity pays $\\$850$ at each year-end, with the first payment one year from now. At $5.0\\%$ effective annual interest, its present value is $\\$17{,}000.00$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nEquivalent rates have the same annual accumulation factor.\n\n$$(1+i_m)^{12}=1+0.085$$\n\n$$i_m=(1+0.085)^{1/12}-1$$\n\n$$100i_m\\approx 0.682\\%$$\n\nThe equivalent monthly rate is $0.682\\%$, so the statement is True.",
+        "**B.** → False\n\nA one-year continuously compounded rate converts through the exponential growth factor.\n\n$$1+R=e^{0.048}$$\n\n$$R=e^{0.048}-1\\approx 0.049171$$\n\n$$100R\\approx 4.92\\%$$\n\nThe effective annual rate is $4.92\\%$, not $5.04\\%$, so the statement is False.",
+        "**C.** → True\n\nA cash-flow stream is valued by discounting each dated payment separately and then adding.\n\n$$PV_1=\\frac{3500}{1+0.080}\\approx 3240.74$$\n\n$$PV_2=\\frac{5100}{(1+0.080)^2}\\approx 4372.43$$\n\n$$PV_3=\\frac{6200}{(1+0.080)^3}\\approx 4921.76$$\n\n$$PV=PV_1+PV_2+PV_3\\approx 12534.93$$\n\nThe stream is worth $\\$12{,}534.93$ today, so the statement is True.",
+        "**D.** → False\n\nAt the valuation date, growing deposits form a geometric series after each receives its remaining interest.\n\n$$FV=600(1.060)^{6}\\sum_{k=0}^{6}\\left(\\frac{1.08}{1.060}\\right)^k$$\n\n$$FV=600(1.060)^{6}\\frac{1-(1.018868)^{7}}{1-1.018868}$$\n\n$$FV\\approx 6305.82$$\n\nThe accumulated balance is $\\$6{,}305.82$, not $\\$6{,}360.82$, so the statement is False.",
+        "**E.** → True\n\nA level perpetuity with its first payment one period ahead has value equal to payment divided by rate.\n\n$$PV=\\frac{C}{i}$$\n\n$$PV=\\frac{850}{0.050}$$\n\n$$PV=17000.00$$\n\nThe perpetuity value is $\\$17{,}000.00$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 138,
+      "solution_overview": "Topics: 3.1, 3.2, 3.3, 3.4, 3.5. A checks effective-to-periodic rate conversion; B checks continuous effective rate; C checks present value of dated cash flows; D checks geometrically growing deposits; E checks level perpetuity valuation.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-139",
+      "case_id": "MATH 11.139",
+      "title": "Exam-style tasks - 16",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A payment of $\\$16{,}000$ due in $7$ years is discounted continuously at $4.6\\%$. Its present value is $\\$11{,}675.17$ to the nearest cent.",
+        "A contract pays $\\$2{,}900$ at the ends of years $1$, $3$, and $5$. At $6.5\\%$ effective annual interest, the contract is worth $\\$7{,}240.42$ today to the nearest cent.",
+        "A lease charges $\\$1{,}400$ in year $1$ and raises the charge by $8.0\\%$ each year. Over $9$ years, the total charge is $\\$17{,}577.58$ to the nearest cent.",
+        "A growing perpetuity pays $\\$1{,}050$ one year from now, and later payments grow by $2.9\\%$ annually. At a discount rate of $8.5\\%$, its present value is $\\$18{,}750.00$.",
+        "A $\\$200{,}000$ mortgage uses $324$ level monthly payments at $0.500\\%$ per month. In the first payment, $\\$267.97$ reduces principal."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nContinuous present value reverses exponential accumulation with a negative exponent.\n\n$$PV=Fe^{-rt}$$\n\n$$PV=16000e^{-0.046(7)}$$\n\n$$PV\\approx 11595.17$$\n\nThe present value is $\\$11{,}595.17$, not $\\$11{,}675.17$, so the statement is False.",
+        "**B.** → True\n\nIrregularly timed payments must each use the discount exponent matching their own date.\n\n$$PV=\\frac{2900}{1+0.065}+\\frac{2900}{(1+0.065)^3}+\\frac{2900}{(1+0.065)^5}$$\n\n$$PV\\approx 2723.00+2400.76+2116.65$$\n\n$$PV\\approx 7240.42$$\n\nThe contract value is $\\$7{,}240.42$, so the statement is True.",
+        "**C.** → False\n\nRepeated proportional escalation makes the lease charges consecutive terms of one geometric progression.\n\n$$a_{9}=1400(1.08)^{8}\\approx 2591.30$$\n\n$$S_{9}=1400\\frac{1.08^{9}-1}{1.08-1}$$\n\n$$S_{9}\\approx 17482.58$$\n\nThe lease total is $\\$17{,}482.58$, not $\\$17{,}577.58$, so the statement is False.",
+        "**D.** → True\n\nA growing perpetuity uses the first next-period payment divided by the discount-growth spread.\n\n$$PV=\\frac{C_1}{i-g}$$\n\n$$PV=\\frac{1050}{0.085-0.029}$$\n\n$$PV=18750.00$$\n\nThe growing-perpetuity value is $\\$18{,}750.00$, so the statement is True.",
+        "**E.** → False\n\nEach mortgage payment first covers current interest, with the remainder reducing principal.\n\n$$PMT=200000\\frac{0.005000}{1-(1+0.005000)^{-324}}\\approx 1247.97$$\n\n$$I_1=200000(0.005000)=1000.00$$\n\n$$PR_1=1247.97-1000.00=247.97$$\n\nThe first principal reduction is $\\$247.97$, not $\\$267.97$, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 139,
+      "solution_overview": "Topics: 3.2, 3.3, 3.4, 3.5, 3.6. A checks continuous present value; B checks irregular cash-flow present value; C checks escalating-payment series; D checks growing perpetuity valuation; E checks mortgage interest and principal split.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-140",
+      "case_id": "MATH 11.140",
+      "title": "Exam-style tasks - 17",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A single payment of $\\$16{,}500$ is due in $7$ years. At an effective annual discount rate of $6.5\\%$, its present value is $\\$10{,}617.85$ to the nearest cent.",
+        "A grant pays $\\$1{,}200$ in its first year and each annual payment is $7.0\\%$ larger than the previous one. The total of the first $9$ payments is $\\$14{,}438.59$ to the nearest cent.",
+        "An ordinary annuity pays $\\$375$ at each month-end for $42$ months. At a monthly rate of $0.75\\%$, its present value is $\\$13{,}467.64$ to the nearest cent.",
+        "A $\\$200{,}000$ mortgage is amortized over $324$ months at $0.500\\%$ per month with level payments. Total interest over the full schedule is $\\$206{,}842.51$ to the nearest cent.",
+        "A project costs $\\$11{,}000$ and pays $\\$4{,}600$, $\\$4{,}700$, and $\\$4{,}800$ after one, two, and three years. Under the NPV rule at $10.0\\%$, the project should be accepted."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPresent value divides the future payment by its full accumulation factor.\n\n$$PV=\\frac{16500}{(1+0.065)^{7}}$$\n\n$$(1+0.065)^{7}\\approx 1.553987$$\n\n$$PV\\approx 10617.85$$\n\nThe discounted value is $\\$10{,}617.85$, so the statement is True.",
+        "**B.** → False\n\nA fixed percentage increase creates a finite geometric series.\n\n$$S_{9}=a\\frac{r^{9}-1}{r-1}$$\n\n$$S_{9}=1200\\frac{1.07^{9}-1}{1.07-1}$$\n\n$$S_{9}\\approx 14373.59$$\n\nThe finite payment total is $\\$14{,}373.59$, not $\\$14{,}438.59$, so the statement is False.",
+        "**C.** → True\n\nAn ordinary-annuity present value discounts a level payment made at each period-end.\n\n$$PV=PMT\\frac{1-(1+i)^{-n}}{i}$$\n\n$$PV=375\\frac{1-(1+0.0075)^{-42}}{0.0075}$$\n\n$$PV\\approx 13467.64$$\n\nThe annuity present value is $\\$13{,}467.64$, so the statement is True.",
+        "**D.** → False\n\nTotal mortgage interest equals all scheduled payments minus the original principal.\n\n$$PMT=200000\\frac{0.005000}{1-(1+0.005000)^{-324}}\\approx 1247.97$$\n\n$$\\sum PMT=324(1247.97070851)\\approx 404342.51$$\n\n$$I=404342.51-200000=204342.51$$\n\nThe full-schedule interest is $\\$204{,}342.51$, not $\\$206{,}842.51$, so the statement is False.",
+        "**E.** → True\n\nThe NPV decision rule accepts a standalone project exactly when discounted value is positive.\n\n$$NPV=-11000+\\frac{4600}{1+0.100}+\\frac{4700}{(1+0.100)^2}+\\frac{4800}{(1+0.100)^3}$$\n\n$$NPV\\approx 672.43$$\n\n$$NPV >0$$\n\nThe NPV rule gives acceptance, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 140,
+      "solution_overview": "Topics: 3.3, 3.4, 3.5, 3.6, 3.7. A checks single-payment present value; B checks finite growing geometric series; C checks ordinary-annuity present value; D checks total mortgage interest; E checks NPV accept-or-reject decision.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-141",
+      "case_id": "MATH 11.141",
+      "title": "Exam-style tasks - 18",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A maintenance plan pays $\\$2{,}050$ now, then each later annual payment is $81\\%$ of the preceding payment forever. The undiscounted sum of all payments is $\\$10{,}864.47$ to the nearest cent.",
+        "At an effective annual rate of $6.0\\%$, an annuity-due of $11$ level annual payments has a present value exactly $6.0\\%$ larger than the corresponding ordinary annuity.",
+        "A mortgage of $\\$210{,}000$ is repaid by $336$ equal month-end payments at a monthly rate of $0.525\\%$. The required payment is $\\$1{,}346.76$ to the nearest cent.",
+        "A project costs $\\$9{,}200$ now, pays $\\$3{,}400$ in one year, and $\\$8{,}080.32$ in two years. An effective annual rate of $14.0\\%$ is its IRR.",
+        "An investment of $\\$8{,}000$ at a nominal $7.0\\%$ compounded quarterly for $5$ years grows to $\\$11{,}393.23$ to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nAn infinite geometric series converges when the common ratio has absolute value below one.\n\n$$S_\\infty=\\frac{a}{1-r}$$\n\n$$S_\\infty=\\frac{2050}{1-0.81}$$\n\n$$S_\\infty\\approx 10789.47$$\n\nThe convergent total is $\\$10{,}789.47$, not $\\$10{,}864.47$, so the statement is False.",
+        "**B.** → True\n\nMoving every annuity payment one period earlier multiplies present value by one plus the periodic rate.\n\n$$PV_{\\mathrm{due}}=(1+i)PV_{\\mathrm{ordinary}}$$\n\n$$PV_{\\mathrm{ordinary}}=1300\\frac{1-(1+0.060)^{-11}}{0.060}\\approx 10252.94$$\n\n$$PV_{\\mathrm{due}}=(1+0.060)(10252.94)\\approx 10868.11$$\n\n$$\\frac{PV_{\\mathrm{due}}-PV_{\\mathrm{ordinary}}}{PV_{\\mathrm{ordinary}}}=0.060$$\n\nThe annuity-due premium is exactly $6.0\\%$, so the statement is True.",
+        "**C.** → False\n\nA level-payment mortgage sets the loan principal equal to an ordinary-annuity present value.\n\n$$PMT=P\\frac{i}{1-(1+i)^{-n}}$$\n\n$$PMT=210000\\frac{0.005250}{1-(1+0.005250)^{-336}}$$\n\n$$PMT\\approx 1331.76$$\n\nThe required payment is $\\$1{,}331.76$, not $\\$1{,}346.76$, so the statement is False.",
+        "**D.** → True\n\nA candidate IRR is correct only when discounting every project cash flow at that rate gives zero NPV.\n\n$$NPV(0.140)=-9200+\\frac{3400}{1+0.140}+\\frac{8080.32}{(1+0.140)^2}$$\n\n$$NPV(0.140)\\approx 0.00$$\n\nThe candidate rate makes NPV zero, so the statement is True.",
+        "**E.** → False\n\nPeriodic compounding uses the quarterly rate and the total number of quarters.\n\n$$i=\\frac{0.070}{4},\\quad n=4(5)=20$$\n\n$$FV=8000\\left(1+\\frac{0.070}{4}\\right)^{20}$$\n\n$$FV\\approx 11318.23$$\n\nThe accumulated value is $\\$11{,}318.23$, not $\\$11{,}393.23$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 141,
+      "solution_overview": "Topics: 3.4, 3.5, 3.6, 3.7, 3.1. A checks infinite decreasing geometric series; B checks annuity-due timing; C checks mortgage payment calculation; D checks IRR zero-NPV test; E checks period count in compound growth.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-142",
+      "case_id": "MATH 11.142",
+      "title": "Exam-style tasks - 19",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A perpetuity pays $\\$900$ at each year-end, with the first payment one year from now. At $5.5\\%$ effective annual interest, its present value is $\\$16{,}363.64$.",
+        "A $\\$210{,}000$ mortgage has $336$ monthly payments at $0.525\\%$ per month. Immediately after payment $84$, the outstanding balance is $\\$186{,}874.06$ to the nearest cent.",
+        "A project costs $\\$11{,}250$ now and pays $\\$4{,}400$, $\\$4{,}950$, and $\\$5{,}500$ at the ends of years $1$, $2$, and $3$. At a discount rate of $9.5\\%$, its NPV is $\\$1{,}085.72$ to the nearest cent.",
+        "A nominal annual rate of $9.0\\%$ compounded $365$ times per year has an effective annual rate of $9.52\\%$ to the nearest $0.01$ percentage point.",
+        "An account starts at $\\$9{,}250$ and grows continuously at $5.0\\%$ for $7$ years. Its balance is $\\$13{,}126.37$ to the nearest cent."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA level perpetuity with its first payment one period ahead has value equal to payment divided by rate.\n\n$$PV=\\frac{C}{i}$$\n\n$$PV=\\frac{900}{0.055}$$\n\n$$PV=16363.64$$\n\nThe perpetuity value is $\\$16{,}363.64$, so the statement is True.",
+        "**B.** → False\n\nImmediately after a payment, the mortgage balance is the present value of all remaining payments.\n\n$$PMT=210000\\frac{0.005250}{1-(1+0.005250)^{-336}}\\approx 1331.76$$\n\n$$n_{\\mathrm{remaining}}=336-84=252$$\n\n$$B_{84}=1331.76\\frac{1-(1+0.005250)^{-252}}{0.005250}$$\n\n$$B_{84}\\approx 185874.06$$\n\nThe outstanding balance is $\\$185{,}874.06$, not $\\$186{,}874.06$, so the statement is False.",
+        "**C.** → True\n\nNet present value adds discounted inflows to the signed initial cash flow.\n\n$$NPV=-11250+\\frac{4400}{1+0.095}+\\frac{4950}{(1+0.095)^2}+\\frac{5500}{(1+0.095)^3}$$\n\n$$NPV\\approx-11250+4018.26+4128.35+4189.10$$\n\n$$NPV\\approx 1085.72$$\n\nThe project NPV is $\\$1{,}085.72$, so the statement is True.",
+        "**D.** → False\n\nThe effective annual rate compounds the periodic nominal rate over every period in the year.\n\n$$R=\\left(1+\\frac{0.090}{365}\\right)^{365}-1$$\n\n$$R\\approx 0.094200$$\n\n$$100R\\approx 9.42\\%$$\n\nThe rounded effective rate is $9.42\\%$, not $9.52\\%$, so the statement is False.",
+        "**E.** → True\n\nContinuous compounding applies the exponential accumulation factor.\n\n$$FV=Pe^{rt}$$\n\n$$FV=9250e^{0.050(7)}$$\n\n$$FV\\approx 13126.37$$\n\nThe continuous balance is $\\$13{,}126.37$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 142,
+      "solution_overview": "Topics: 3.5, 3.6, 3.7, 3.1, 3.2. A checks level perpetuity valuation; B checks outstanding mortgage balance; C checks multi-period NPV; D checks nominal-to-effective rate conversion; E checks continuous future value.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-143",
+      "case_id": "MATH 11.143",
+      "title": "Exam-style tasks - 20",
+      "subsection": "3.8",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A $\\$210{,}000$ mortgage uses $336$ level monthly payments at $0.525\\%$ per month. In the first payment, $\\$249.26$ reduces principal.",
+        "A project costs $\\$6{,}500$ now and has one inflow of $\\$11{,}975.83$ at the end of year $5$. Its effective annual IRR is $13.00\\%$.",
+        "At the same nominal annual rate of $9.6\\%$, monthly compounding produces a lower effective annual rate than quarterly compounding.",
+        "At a continuously compounded annual rate of $6.0\\%$, the doubling time is $11.55$ years to the nearest $0.01$ year.",
+        "A debt of $\\$21{,}000$ is due in $48$ months. At a nominal annual rate of $7.2\\%$ compounded monthly, its present value is $\\$15{,}848.55$ to the nearest cent."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nEach mortgage payment first covers current interest, with the remainder reducing principal.\n\n$$PMT=210000\\frac{0.005250}{1-(1+0.005250)^{-336}}\\approx 1331.76$$\n\n$$I_1=210000(0.005250)=1102.50$$\n\n$$PR_1=1331.76-1102.50=229.26$$\n\nThe first principal reduction is $\\$229.26$, not $\\$249.26$, so the statement is False.",
+        "**B.** → True\n\nFor one initial outflow and one terminal inflow, the IRR equates the terminal value to compounded cost.\n\n$$6500(1+r)^{5}=11975.83$$\n\n$$1+r=\\left(\\frac{11975.83}{6500}\\right)^{1/5}$$\n\n$$100r=13.00\\%$$\n\nThe effective annual IRR is $13.00\\%$, so the statement is True.",
+        "**C.** → False\n\nFor a fixed positive nominal rate, more frequent compounding produces a larger effective rate.\n\n$$R_{12}=\\left(1+\\frac{0.096}{12}\\right)^{12}-1\\approx 0.100339$$\n\n$$R_4=\\left(1+\\frac{0.096}{4}\\right)^4-1\\approx 0.099512$$\n\n$$0.100339>0.099512$$\n\nMonthly compounding is not the lower-rate option, so the statement is False.",
+        "**D.** → True\n\nContinuous doubling time is found by solving the exponential growth equation for time.\n\n$$2=e^{rt}$$\n\n$$\\ln 2=rt$$\n\n$$t=\\frac{\\ln 2}{0.060}\\approx 11.55$$\n\nThe doubling time is $11.55$ years, so the statement is True.",
+        "**E.** → False\n\nMonthly discounting matches the nominal rate conversion to the number of months.\n\n$$i_m=\\frac{0.072}{12}=0.006000$$\n\n$$PV=\\frac{21000}{(1+0.006000)^{48}}$$\n\n$$PV\\approx 15758.55$$\n\nThe monthly-discounted value is $\\$15{,}758.55$, not $\\$15{,}848.55$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 143,
+      "solution_overview": "Topics: 3.6, 3.7, 3.1, 3.2, 3.3. A checks mortgage interest and principal split; B checks single-inflow IRR; C checks compounding-frequency comparison; D checks continuous doubling time; E checks monthly present-value discounting.",
+      "placeholder": false
+    }
+  ]
 }
