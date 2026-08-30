@@ -96,9 +96,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   const task: SimTask = pool[Math.min(taskIdx, pool.length - 1)];
 
+  // Pick ONE random task per subject on mount and keep it for the whole loop.
   useEffect(() => {
     setTaskIdx(Math.floor(Math.random() * pool.length));
   }, [pool]);
+
 
   // Timed Mode countdown (economics demo only).
   useEffect(() => {
