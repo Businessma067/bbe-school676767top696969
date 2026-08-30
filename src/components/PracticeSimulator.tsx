@@ -377,10 +377,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
             <ol
               className={cn(
-                "mt-6 origin-top divide-y divide-border overflow-hidden rounded-xl border bg-background transition-all duration-[1200ms] ease-out",
-                focusTask
-                  ? "scale-[1.02] border-primary/40 shadow-lg shadow-primary/10"
-                  : "scale-100 border-border shadow-none",
+                "mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background",
               )}
             >
               <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -400,8 +397,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
                       </span>
                       <p
                         className={cn(
-                          "flex-1 leading-relaxed text-foreground transition-all duration-[1200ms] ease-out",
-                          focusTask ? "text-[15px]" : "text-sm",
+                          "flex-1 text-sm leading-relaxed text-foreground",
                         )}
                       >
                         <Inline text={stmt} subject={subject} />
