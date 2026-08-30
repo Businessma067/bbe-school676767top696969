@@ -203,9 +203,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
     };
   }, [pool, taskIdx]);
 
-  const solutionBody = task.explanations
-    .map((expl, i) => `**${LETTERS[i]}.** → ${task.answerKey[i] ? "True" : "False"}\n\n${expl}`)
-    .join("\n\n");
+  const solutionBlocks = task.explanations.map((expl, i) => ({
+    letter: LETTERS[i],
+    verdict: task.answerKey[i] ? "True" : "False",
+    body: expl.replace(/\*\*/g, "").trim(),
+  }));
 
   return (
     <div
