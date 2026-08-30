@@ -125,25 +125,21 @@ async def smooth_scroll(page, dy, ms=1400, selector=None):
     )
 
 
-async def pick_panel(page):
-    """Returns True if a big inner scrollable panel exists (explanation drawer)."""
-    return await page.evaluate(
-        """() => {
-            const cands = [...document.querySelectorAll('div,section,aside')]
-              .filter(e => e.scrollHeight - e.clientHeight > 120 && e.clientHeight > 240
-                        && getComputedStyle(e).overflowY !== 'visible');
-            return cands.length > 0;
-        }"""
-    )
-
-
 async def smooth_scroll_panel(page, dy, ms=1600):
-    """Smoothly scrolls the largest inner scrollable panel, else the page."""
+    """Smoothly scrolls the visible explanation/content panel, else the page."""
     await page.evaluate(
         """([dy, ms]) => new Promise(res => {
-            const cands = [...document.querySelectorAll('div,section,aside')]
-              .filter(e => e.scrollHeight - e.clientHeight > 120 && e.clientHeight > 240
-                        && getComputedStyle(e).overflowY !== 'visible');
+            const vis = e => {
+              const r = e.getBoundingClientRect();
+              return r.width > 200 && r.height > 200 && r.right > 0 && r.left < innerWidth;
+            };
+            let cands = [...document.querySelectorAll('.practice-scroll')]
+              .filter(e => vis(e) && e.scrollHeight - e.clientHeight > 60);
+            if (!cands.length) {
+              cands = [...document.querySelectorAll('div,section,aside')]
+                .filter(e => vis(e) && e.scrollHeight - e.clientHeight > 120
+                          && ['auto','scroll'].includes(getComputedStyle(e).overflowY));
+            }
             const target = cands.sort((a,b)=> (b.scrollHeight-b.clientHeight)-(a.scrollHeight-a.clientHeight))[0]
                         || document.scrollingElement;
             const start = target.scrollTop, t0 = performance.now();
@@ -267,10 +263,9 @@ async def show_features(page):
     import re as _re
 
     timed = page.locator("button").filter(has_text=_re.compile(r"Timed", _re.I)).first
-    if await maybe(page, timed, 1400):
-        for lvl in ["Hard", "Standard"]:
-            await maybe(page, page.locator("button").filter(has_text=lvl).first, 1100)
-        await page.wait_for_timeout(1600)
+    if await maybe(page, timed, 1100):
+        await maybe(page, page.locator("button").filter(has_text="Hard").first, 900)
+        await page.wait_for_timeout(700)
 
     calc = page.locator("button").filter(has_text=_re.compile(r"Calculator", _re.I)).first
     if await maybe(page, calc, 1300):
@@ -283,14 +278,14 @@ async def show_features(page):
                     await soft_click(page, key, 420)
             except Exception:
                 pass
-        await page.wait_for_timeout(1200)
-        await maybe(page, page.locator("button").filter(has_text="Close").first, 900)
+        await page.wait_for_timeout(700)
+        await maybe(page, page.locator("button").filter(has_text="Close").first, 800)
 
 
 async def show_explanation(page, total=2000):
     await maybe(page, page.locator("button").filter(has_text="Check Answers").first, 1800)
     await maybe(page, page.locator("button").filter(has_text="Explanation").first, 1600)
-    await read_scroll(page, total=total, chunk=170, ms=1500, pause=800)
+    await read_scroll(page, total=total, chunk=200, ms=1400, pause=600)
 
 
 # ---------------------------------------------------------------- flows
