@@ -366,7 +366,7 @@ async def demo_economics(page):
     await show_explanation(page, total=1800)
     # AI double-panel explanation
     await maybe(page, page.locator("button").filter(has_text="AI").first, 2200)
-    await read_scroll(page, total=900, chunk=180, ms=1500, pause=800)
+    await read_scroll(page, total=900, chunks=3)
     await page.wait_for_timeout(1400)
 
 
@@ -390,7 +390,7 @@ async def demo_english(page):
             await page.mouse.up()
             await page.wait_for_timeout(1200)
 
-    await read_scroll(page, total=620, chunk=160, ms=1500, pause=750)
+    await read_scroll(page, total=620, chunks=3)
     await show_features(page)
     await answer_statements(page, [0, 2, 4])
     await show_explanation(page, total=2000)
