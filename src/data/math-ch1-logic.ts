@@ -2325,35 +2325,47 @@ An exact-pair region is the pairwise total minus the triple. The triple group si
     tactical_explanations: [
       `**A.** → False
 
-Conjunction needs both halves true. The overview recovered $P$ true and $Q$ false, so
+Conjunction is true only when both inputs are true. The overview recovered $P$ true and $Q$ false, so
 
-$$P\\land Q$$
+$$P\\land Q=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-is false. The claim is that $7$ is both prime and even, so the statement is False.`,
+The claim says this conjunction is true, but its value is false, so the statement is False.`,
       `**B.** → True
 
-Inclusive or needs only one true side. The overview recovered $P$ true, so
+Inclusive or is true when at least one input is true. The overview recovered $P$ true and $Q$ false, so
 
-$$P\\lor Q$$
+$$P\\lor Q=\\mathrm{T}\\lor\\mathrm{F}=\\mathrm{T}$$
 
-is true even though $Q$ is false. The claim is that $7$ is prime or even, so the statement is True.`,
+The claim says this disjunction is true, and its value is true, so the statement is True.`,
       `**C.** → True
 
-The inner conjunction $P\\land Q$ is already false, and negation flips it:
+Negation reverses the truth value of the complete conjunction. First evaluate the conjunction:
 
-$$\\neg(P\\land Q)$$
+$$P\\land Q=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-is true. It is not the case that $7$ is both prime and even, so the statement is True.`,
+Then negate that result:
+
+$$\\neg(P\\land Q)=\\neg\\mathrm{F}=\\mathrm{T}$$
+
+The claim says the conjunction is not true, and the negated expression is true, so the statement is True.`,
       `**D.** → False
 
-"Neither prime nor even" is $\\neg P\\land\\neg Q$. The overview recovered $P$ true, so $\\neg P$ is false and the conjunction of negations is false. Seven is prime, so the statement is False.`,
+"Neither prime nor even" means that both propositions are false. The overview recovered $P$ true and $Q$ false, so
+
+$$\\neg P\\land\\neg Q=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+The claim says this expression is true, but its value is false, so the statement is False.`,
       `**E.** → False
 
-The overview recovered $P\\lor Q$ true, so its negation is false:
+Negation reverses the truth value of the complete disjunction. First evaluate the disjunction:
 
-$$\\neg(P\\lor Q)$$
+$$P\\lor Q=\\mathrm{T}\\lor\\mathrm{F}=\\mathrm{T}$$
 
-fails. De Morgan identifies this with $\\neg P\\land\\neg Q$, which already fails because $7$ is prime, so the statement is False.`,
+Then negate that result:
+
+$$\\neg(P\\lor Q)=\\neg\\mathrm{T}=\\mathrm{F}$$
+
+The claim says the negated disjunction is true, but its value is false, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -2522,16 +2534,40 @@ Intersection keeps numbers in both lists. Difference $P\\setminus E$ keeps membe
 The overview recovered $P\\Rightarrow Q$: a number past $10$ cannot fail to be past $5$. That is what "$P$ is sufficient for $Q$" means, so the statement is True.`,
       `**B.** → False
 
-Necessary would require $Q\\Rightarrow P$: every $x>5$ would have to satisfy $x>10$. Test $x=7$: $7>5$ holds and $7>10$ fails. The whole interval $(5,10]$ supplies further counterexamples, so the statement is False.`,
+Necessity of $x>10$ for $x>5$ would require $Q\\Rightarrow P$. Test $x=7$ in the hypothesis:
+
+$$7>5$$
+
+Now test the required conclusion:
+
+$$7\\not>10$$
+
+This witness makes $Q$ true and $P$ false, so $Q\\Rightarrow P$ fails and the statement is False.`,
       `**C.** → True
 
 "$Q$ is necessary for $P$" is the same recovered arrow $P\\Rightarrow Q$ read from the other end: $x>10$ cannot hold unless $x>5$ also holds. The necessary condition is the one the arrow points at, so the statement is True.`,
       `**D.** → False
 
-Equivalence needs both arrows. The overview recovered $P\\Rightarrow Q$, but $Q\\Rightarrow P$ fails at $x=7$ and on the whole interval $(5,10]$. The two inequalities are not interchangeable, so the statement is False.`,
+Equivalence requires both implications to hold:
+
+$$P\\Leftrightarrow Q\\quad\\Longleftrightarrow\\quad(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
+
+The overview recovered $P\\Rightarrow Q$. For the reverse direction, use $x=7$:
+
+$$7>5,\\qquad 7\\not>10$$
+
+Thus $Q\\Rightarrow P$ fails, so the two conditions are not equivalent and the statement is False.`,
       `**E.** → True
 
-A counterexample to $Q\\Rightarrow P$ must make $x>5$ true and $x>10$ false. Check $x=7$: $7>5$ holds and $7>10$ fails. The named witness sits in $(5,10]$, so the statement is True.`,
+A counterexample to $Q\\Rightarrow P$ must satisfy $Q\\land\\neg P$. For $x=7$,
+
+$$7>5$$
+
+but
+
+$$7\\not>10$$
+
+The named value makes the hypothesis true and the conclusion false, so it is a counterexample and the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -2558,16 +2594,50 @@ If $x>10$, then $x>5$ automatically because $10>5$, so $P\\Rightarrow Q$ holds.`
     tactical_explanations: [
       `**A.** → True
 
-Applicant P has score $750\\ge 700$ and ratio $35\\%<40\\%$. Both halves of $R$ hold, so P satisfies both required conditions. The claim is that file check, so the statement is True.`,
+Conjunction requires both bank tests to hold. Applicant P satisfies the score test and the ratio test:
+
+$$750\\ge 700$$
+
+$$35\\%<40\\%$$
+
+Therefore
+
+$$R(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+The claim says P satisfies both required conditions, so the statement is True.`,
       `**B.** → False
 
 The recovered rule is $L\\Rightarrow R$. Meeting $R$ is necessary, not sufficient. P has $R$ true, but that does not force $L$. The reverse arrow $R\\Rightarrow L$ is not in the rule, so the statement is False.`,
       `**C.** → True
 
-Applicant Q clears the score test $720\\ge 700$ but fails the ratio: $45\\%$ is not below $40\\%$. One false conjunct makes $R$ false. Q does not satisfy both required conditions, so the statement is True.`,
+Conjunction fails when either required test fails. Applicant Q clears the score test:
+
+$$720\\ge 700$$
+
+The ratio test fails:
+
+$$45\\%\\not<40\\%$$
+
+Thus
+
+$$R(Q)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+The claim says Q does not satisfy both required conditions, so the statement is True.`,
       `**D.** → True
 
-The contrapositive of $L\\Rightarrow R$ is $\\neg R\\Rightarrow\\neg L$. Q fails the ratio test, so $R$ is false, and the loan is not approved. Failing a necessary condition forces refusal, so the statement is True.`,
+The contrapositive gives a valid inference from a failed necessary condition:
+
+$$L\\Rightarrow R\\quad\\Longleftrightarrow\\quad\\neg R\\Rightarrow\\neg L$$
+
+Applicant Q fails the ratio test, so the full requirement is false:
+
+$$R(Q)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+Applying the contrapositive gives
+
+$$\\neg R(Q)\\Rightarrow\\neg L(Q)$$
+
+Q's loan is therefore not approved, so the statement is True.`,
       `**E.** → False
 
 A ratio below $40\\%$ is only one conjunct of $R$. An applicant with ratio $30\\%$ and score $650$ already fails the score test, so $R$ is false and approval is blocked. Even a full $R$ would still be only necessary, not sufficient, so the statement is False.`,
@@ -2654,16 +2724,40 @@ Squares of reals are never negative. Quantifier order matters: whichever variabl
     tactical_explanations: [
       `**A.** → False
 
-The criterion is $D\\Rightarrow S$, and $S$ demands both symptoms. Patient R holds the diagnosis, so both symptoms must be present. A diagnosis on A alone would be $D$ with $\\neg B$, which breaks the necessary condition, so the statement is False.`,
+The criterion makes both symptoms necessary for a diagnosis:
+
+$$D\\Rightarrow(A\\land B)$$
+
+Patient R has $D$ true, so modus ponens gives
+
+$$A(R)\\land B(R)=\\mathrm{T}$$
+
+The claim allows R to have symptom A without symptom B, which contradicts the required conjunction, so the statement is False.`,
       `**B.** → False
 
-Patient S has A but not B, so the conjunction $S$ is false. The contrapositive $\\neg S\\Rightarrow\\neg D$ then blocks the diagnosis. Missing either half of an "and" is enough, so the statement is False.`,
+The contrapositive blocks diagnosis when the required symptom conjunction fails. Patient S has A but not B, so
+
+$$A(S)\\land B(S)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+From the criterion,
+
+$$\\neg(A\\land B)\\Rightarrow\\neg D$$
+
+Patient S therefore cannot be diagnosed with condition X, so the statement is False.`,
       `**C.** → False
 
 Sufficient would be $S\\Rightarrow D$. The doctor states the opposite: both symptoms do not guarantee the diagnosis, because other conditions must still be ruled out. $S$ is necessary and not sufficient, so the statement is False.`,
       `**D.** → True
 
-Missing symptom A makes the conjunction $S$ false, regardless of B. Then $\\neg S\\Rightarrow\\neg D$ blocks the diagnosis. An "and" is destroyed by either half, so no A means no diagnosis with X, so the statement is True.`,
+The contrapositive blocks diagnosis whenever the required conjunction is false. If symptom A is absent, then for either truth value of B,
+
+$$A\\land B=\\mathrm{F}\\land B=\\mathrm{F}$$
+
+Therefore
+
+$$\\neg(A\\land B)\\Rightarrow\\neg D$$
+
+No other symptom can repair the missing A requirement, so the statement is True.`,
       `**E.** → False
 
 The doctor explicitly allows both symptoms while other conditions are still being excluded: $S$ without $D$. That open gap is what separates a necessary condition from a sufficient one. Claiming the gap is impossible is claiming sufficiency, so the statement is False.`,
@@ -2693,13 +2787,29 @@ Patient R holds the diagnosis. Patient S has A but not B.`,
     tactical_explanations: [
       `**A.** → True
 
-Divisible by $3$ and by $5$ means divisible by $15$, and $15$ sits inside $\\{1,\\ldots,20\\}$. One witness is all an existential needs, so the statement is True.`,
+An existential claim is proved by one witness in the stated universe. Choose $x=15$, which lies in $\\{1,\\ldots,20\\}$:
+
+$$15=3\\cdot5$$
+
+Thus $3\\mid15$ and $5\\mid15$. The required witness exists, so the statement is True.`,
       `**B.** → True
 
-A counterexample would have to be a multiple of $4$ in the range that is not even. Every multiple of $4$ can be written $4k=2(2k)$, so it is even. The list in this universe is $\\{4,8,12,16,20\\}$, each even. There is no odd multiple of four, so the statement is True.`,
+A universal implication is proved by starting with an arbitrary value that satisfies its hypothesis. If $4\\mid x$, then $x=4k$ for some integer $k$, so
+
+$$x=4k=2(2k)$$
+
+Hence $2\\mid x$. This argument covers every multiple of $4$ in the universe, so the statement is True.`,
       `**C.** → False
 
-The flipped implication breaks at $x=2$: divisible by $2$, not by $4$. One counterexample inside the range kills a universal, so the statement is False.`,
+A universal implication is disproved by one value with a true hypothesis and false conclusion. Choose $x=2$, which lies in the universe:
+
+$$2=2\\cdot1$$
+
+but
+
+$$\\nexists k\\in\\mathbb{Z}:2=4k$$
+
+Thus $2\\mid2$ while $4\\nmid2$, so the statement is False.`,
       `**D.** → True
 
 An implication fails only where the "if" holds and the "then" fails, so the negation of $\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$ is
@@ -2709,7 +2819,11 @@ $$\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$$
 still restricted to $\\{1,\\ldots,20\\}$. The quoted sentence is that negation, so the statement is True.`,
       `**E.** → True
 
-The negation asks for an even prime in the range, and $2$ is one: divisors $1$ and $2$ only, and even. One witness settles the existential, so the statement is True.`,
+The existential negation needs one number in the universe that is both prime and even. Choose $x=2$:
+
+$$2\\in\\{1,\\ldots,20\\},\\qquad \\mathrm{Prime}(2)\\land\\mathrm{Even}(2)$$
+
+The number $2$ has only the positive divisors $1$ and $2$, and it is divisible by $2$. This witness makes the negated statement true, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -2811,13 +2925,37 @@ A contradiction proof of an implication assumes the unique failure case $P\\land
 The overview recovered that $P\\Rightarrow Q$ fails only as $P\\land\\neg Q$: rain and an uncancelled picnic. The quoted negation is that unique failure case, so the statement is True.`,
       `**B.** → False
 
-The converse $Q\\Rightarrow P$ reads the rule backwards. On the overview's dry venue-conflict day, $P$ is false and $Q$ is true: the original holds, while the converse fails. The organizer never promised that rain is the only cancelling cause, so the statement is False.`,
+The converse $Q\\Rightarrow P$ fails when cancellation occurs without rain. On the overview's dry venue-conflict day,
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+The original rule is still true on that day because its hypothesis is false:
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+The two implications have different truth values there, so the converse is not guaranteed and the statement is False.`,
       `**C.** → False
 
-The inverse is $\\neg P\\Rightarrow\\neg Q$. On that same dry cancelled day, $\\neg P$ is true and $\\neg Q$ is false, so the inverse fails while the original still holds. Inverse pairs with converse, not with the original, so the statement is False.`,
+The inverse $\\neg P\\Rightarrow\\neg Q$ fails on a dry day when the picnic is cancelled for another reason. For the venue-conflict day,
+
+$$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+The original remains true:
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+Since one situation separates their truth values, the inverse is not equivalent to the original and the statement is False.`,
       `**D.** → True
 
-On the venue-conflict day, rain is false and cancelled is true. The inverse demanded "no rain, so no cancellation," and the cancellation happened, so the inverse is broken. The original $P\\Rightarrow Q$ is true whenever $P$ is false, so a dry cancellation never tests the organizer's promise, so the statement is True.`,
+An implication is false only when its hypothesis is true and its conclusion is false. On the venue-conflict day, $P$ is false and $Q$ is true, so
+
+$$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+while
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+The day contradicts the inverse but not the organizer's rule, so the statement is True.`,
       `**E.** → True
 
 Swap and negate: $\\neg Q\\Rightarrow\\neg P$, "if the picnic was not cancelled, then it did not rain." That is the contrapositive, which always shares the original's truth value. Once the organizer's rule is granted, this rewriting comes with it, so the statement is True.`,
@@ -2898,16 +3036,48 @@ X-only is $|X|-|X\\cap Y|$. Y-only is $|Y|-|X\\cap Y|$.`,
     tactical_explanations: [
       `**A.** → False
 
-Student K cleared attendance ($85\\%\\ge 80\\%$) but scored $48<50$, so $F$ is false and $A\\land F$ collapses. One false conjunct makes the whole pass condition false. Near-misses do not count: $48$ is not $50$, so the statement is False.`,
+Passing requires both thresholds, so evaluate Student K's two tests separately:
+
+$$85\\%\\ge80\\%$$
+
+$$48<50$$
+
+Therefore
+
+$$A(K)\\land F(K)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+K fails the conjunction despite clearing attendance, so the statement is False.`,
       `**B.** → False
 
-Student L's $90$ clears the exam, but $75\\%<80\\%$ fails attendance. The conjunction never lets the strong half rescue the weak half, so L does not pass, so the statement is False.`,
+Passing requires both thresholds, so evaluate Student L's two tests separately:
+
+$$75\\%<80\\%$$
+
+$$90\\ge50$$
+
+Therefore
+
+$$A(L)\\land F(L)=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+L fails the conjunction despite the high exam score, so the statement is False.`,
       `**C.** → False
 
-Compensation would let a high exam score repair low attendance. Student L is the test file: $90$ on the exam with $75\\%$ attendance still yields $A$ false, so $A\\land F$ is false. Exam points cannot repair attendance, so the statement is False.`,
+Conjunction does not allow one true condition to compensate for a false one. Student L supplies a direct test:
+
+$$A(L)\\land F(L)=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+The $90$ exam score makes $F$ true, but $75\\%$ attendance leaves $A$ false. The combined pass condition remains false, so the statement is False.`,
       `**D.** → True
 
-A score below $50$ makes $F$ false, whether the score is $49$ or $10$. For K, $48<50$ already falsifies $F$, so $A\\land F$ is false even though attendance cleared. A threshold recognises no near-misses, so the statement is True.`,
+The exam threshold is a conjunct, so any score below $50$ makes the complete pass condition false. If attendance clears but the score does not, then
+
+$$A\\land F=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+For Student K,
+
+$$48<50$$
+
+The distance from the cutoff does not change the truth value, so the statement is True.`,
       `**E.** → True
 
 Compare $(80\\%,50)$ with $(79\\%,100)$. The first clears both tests and passes; the second fails on attendance, yet looks far stronger on an average. Because the rule checks two thresholds instead of one average, reversals like this can happen, so the statement is True.`,
@@ -2935,19 +3105,39 @@ The words "if and only if" mean the list is complete. Conjunction $\\land$ is un
     tactical_explanations: [
       `**A.** → False
 
-The filter is $\\neg S\\land\\neg O$. Item M is on sale, so $\\neg S$ is already false, and a false conjunct hides M. Being in stock does not rescue an on-sale item, so the statement is False.`,
+The filter displays an item only when both negated conditions are true. Item M is on sale and in stock, so $S$ is true and $O$ is false:
+
+$$\\neg S\\land\\neg O=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+The filter condition is false for M, so the statement is False.`,
       `**B.** → False
 
-Item N is out of stock, so $\\neg O$ fails. The same conjunction fails on the other half, so N is hidden too. Not being on sale is not enough, so the statement is False.`,
+The filter displays an item only when both negated conditions are true. Item N is not on sale and is out of stock, so $S$ is false and $O$ is true:
+
+$$\\neg S\\land\\neg O=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+The filter condition is false for N, so the statement is False.`,
       `**C.** → False
 
-The overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$, not $\\neg S\\lor\\neg O$. On item M, the wrong OR form would display M (in stock), while the real AND hides M. Two formulas that disagree on one item are not equivalent, so the statement is False.`,
+Logical equivalence requires the two formulas to agree on every truth assignment. For item M, $S$ is true and $O$ is false. The proposed formula gives
+
+$$\\neg S\\lor\\neg O=\\mathrm{F}\\lor\\mathrm{T}=\\mathrm{T}$$
+
+The actual filter gives
+
+$$\\neg(S\\lor O)=\\neg(\\mathrm{T}\\lor\\mathrm{F})=\\mathrm{F}$$
+
+The formulas disagree on M, so they are not equivalent and the statement is False.`,
       `**D.** → True
 
 The overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$. In English that is "not on sale and not out of stock," i.e. neither on sale nor out of stock. The claim is that rewrite, so the statement is True.`,
       `**E.** → True
 
-Item K is not on sale and is in stock, so both $\\neg S$ and $\\neg O$ hold. The filter displays K, so the statement is True.`,
+The filter displays an item when both negated conditions are true. Item K is not on sale and is in stock, so $S$ and $O$ are both false:
+
+$$\\neg S\\land\\neg O=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+The filter condition is true for K, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 15,
@@ -3019,13 +3209,33 @@ The overview recovered that $Q$ is true from $P\\Leftrightarrow Q$ and $P$ true.
 The overview recovered that $R$ is true from $Q\\Leftrightarrow R$ and $Q$ true. The claim is that same fact, so the statement is True.`,
       `**C.** → True
 
-If $P$ agrees with $Q$ and $Q$ agrees with $R$, then $P$ agrees with $R$. In symbols, $P\\Leftrightarrow Q$ and $Q\\Leftrightarrow R$ yield $P\\Leftrightarrow R$. The first and third must share a truth value, so the statement is True.`,
+Biconditional agreement is transitive: matching through the same middle truth value makes the endpoints match. Thus
+
+$$(P\\Leftrightarrow Q)\\land(Q\\Leftrightarrow R)\\Rightarrow(P\\Leftrightarrow R)$$
+
+The premises provide both links, so the first and third propositions must have the same truth value and the statement is True.`,
       `**D.** → True
 
-Biconditionals work in both directions, so the chain can be walked from either end. If $R$ were false, $Q\\Leftrightarrow R$ would force $Q$ false, and $P\\Leftrightarrow Q$ would force $P$ false, so the statement is True.`,
+Biconditionals force equal truth values in either direction. If $R$ were false, the second link gives
+
+$$Q\\Leftrightarrow R,\\quad R=\\mathrm{F}\\quad\\Longrightarrow\\quad Q=\\mathrm{F}$$
+
+The first link then gives
+
+$$P\\Leftrightarrow Q,\\quad Q=\\mathrm{F}\\quad\\Longrightarrow\\quad P=\\mathrm{F}$$
+
+Thus a false third proposition would force the first false, so the statement is True.`,
       `**E.** → False
 
-$P\\Leftrightarrow R$ alone does not mention $Q$. The assignment $P$ true, $R$ true, $Q$ false satisfies $P\\Leftrightarrow R$ while breaking $P\\Leftrightarrow Q$. Knowing only the end link leaves the middle free, so the statement is False.`,
+A claim of sufficiency is disproved by one assignment that satisfies the known condition and fails the conclusion. Choose
+
+$$P=\\mathrm{T},\\qquad Q=\\mathrm{F},\\qquad R=\\mathrm{T}$$
+
+Then
+
+$$P\\Leftrightarrow R=\\mathrm{T}$$
+
+but $Q$ does not match either endpoint. Knowing only that $P$ and $R$ match leaves $Q$ free, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 17,
@@ -3290,13 +3500,33 @@ The overview recovered $C$ from $D$ and $D \\Rightarrow C$. Flight 305 is cancel
 The overview recovered $O$ from $C$ and $C \\Rightarrow O$. The ground crew works overtime today, so the statement is True.`,
       `**C.** → True
 
-Statements (1) and (3) mention only $D$ and $C$. Without (2) the chain stops at the cancellation and never names overtime, so $O$ cannot be concluded, so the statement is True.`,
+An inference can reach a conclusion only through premises that connect to it. From statements (1) and (3), modus ponens gives
+
+$$D,\\quad D\\Rightarrow C\\quad\\Longrightarrow\\quad C$$
+
+Those premises contain no link from $C$ to $O$:
+
+$$\\{D,D\\Rightarrow C\\}\\nvdash O$$
+
+Statement (2), $C\\Rightarrow O$, is therefore essential to the overtime conclusion, so the statement is True.`,
       `**D.** → False
 
-If Flight 202 is not delayed, the antecedent of $D \\Rightarrow C$ is false, so (1) is silent. It does not assert $\\neg C$. Flight 305 can still be cancelled for another reason, so the statement is False.`,
+An implication with a false antecedent does not force its conclusion to be false. Consider a day when Flight 202 is not delayed but Flight 305 is cancelled for another reason:
+
+$$D\\Rightarrow C=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+Statement (1) still holds on that day, although $\\neg C$ is false. Thus $\\neg D$ does not guarantee $\\neg C$, so the statement is False.`,
       `**E.** → False
 
-The overview’s chain forces $O$ from (1), (2), and (3). There is no model of those three facts in which the crew does not work overtime, so the statement is False.`,
+Successive modus ponens carries the recorded delay through both rules. First,
+
+$$D,\\quad D\\Rightarrow C\\quad\\Longrightarrow\\quad C$$
+
+Then,
+
+$$C,\\quad C\\Rightarrow O\\quad\\Longrightarrow\\quad O$$
+
+Every scenario satisfying (1), (2), and (3) therefore has overtime. The claimed no-overtime scenario cannot exist, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 22,
@@ -3326,16 +3556,48 @@ Modus ponens says that $X \\Rightarrow Y$ together with $X$ yields $Y$. From $D$
 The overview’s negation is $P \\land \\neg Q$: a student who studied at least $10$ hours and did not pass. That is the claimed sentence, so the statement is True.`,
       `**B.** → False
 
-The converse is $Q \\Rightarrow P$. It is equivalent to the inverse, not to $P \\Rightarrow Q$. A student can pass without the $10$ hours, so the converse need not hold, so the statement is False.`,
+The converse $Q\\Rightarrow P$ would require every passing student to have studied at least $10$ hours. A student who already knows the material can have
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+For that student,
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+while the original $P\\Rightarrow Q$ remains true because $P$ is false. The converse is not guaranteed, so the statement is False.`,
       `**C.** → True
 
-Anna has $\\neg P$ and $Q$. The original $P \\Rightarrow Q$ is silent when $P$ is false, so she is not a counterexample to it. The converse $Q \\Rightarrow P$ has a true antecedent and a false consequent, so she refutes the converse, so the statement is True.`,
+An implication is refuted only by a true antecedent and a false conclusion. Anna has $P$ false and $Q$ true, so the original evaluates to
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+The converse evaluates to
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Anna refutes the converse but not the professor's rule, so the statement is True.`,
       `**D.** → False
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. The contrapositive is $\\neg Q \\Rightarrow \\neg P$. Those two are converses of each other, not equivalents. The inverse matches the converse, not the contrapositive, so the statement is False.`,
+The inverse negates both parts without swapping them:
+
+$$\\neg P\\Rightarrow\\neg Q$$
+
+The contrapositive swaps the parts and negates them:
+
+$$\\neg Q\\Rightarrow\\neg P$$
+
+These arrows point in opposite directions. The inverse is equivalent to the converse, not to the contrapositive, so the statement is False.`,
       `**E.** → True
 
-The contrapositive is $\\neg Q \\Rightarrow \\neg P$. From a failure ($\\neg Q$) it concludes that the student studied less than $10$ hours. That inference is licensed by the original claim, so the statement is True.`,
+The contrapositive of the professor's rule is equivalent to the original:
+
+$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+
+If a student did not pass, then $\\neg Q$ holds. Modus ponens on the contrapositive gives
+
+$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
+
+Thus the student studied less than $10$ hours, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 23,
@@ -3514,7 +3776,15 @@ Inside the bracket the two reasons are alternatives. Outside it, $T$ is required
 The overview’s negation is $P \\land \\neg Q$: a citizen who is not eligible to vote. That is the claimed sentence, so the statement is True.`,
       `**B.** → True
 
-The contrapositive is $\\neg Q \\Rightarrow \\neg P$. John is not eligible, so $\\neg Q$ holds, and we may conclude that John is not a citizen. That is modus ponens on the contrapositive, so the statement is True.`,
+The contrapositive is equivalent to the citizenship rule:
+
+$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+
+John is not eligible, so $\\neg Q$ holds. Apply modus ponens:
+
+$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
+
+John is therefore not a citizen, so the statement is True.`,
       `**C.** → False
 
 Maria is a citizen who chooses not to register. Eligibility $Q$ is the right, not the act of voting, so $Q$ remains true. The pair $P$ true and $Q$ true satisfies $P \\Rightarrow Q$ and is not a counterexample, so the statement is False.`,
@@ -3550,19 +3820,55 @@ Here $Q$ is the right to vote, not the act of casting a ballot. The negation of 
     tactical_explanations: [
       `**A.** → False
 
-The memo concludes $P$ from $P \\Rightarrow Q$ and $Q$. That is affirming the consequent, which is invalid. Sales can rise for another reason, so the statement is False.`,
+Validity requires that no assignment make all premises true and the conclusion false. Let sales rise because a competitor left while the marketing budget stayed unchanged:
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+Then the conditional premise is true:
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+The second premise $Q$ is true, but the conclusion $P$ is false. This countermodel shows that affirming the consequent is invalid, so the statement is False.`,
       `**B.** → False
 
-The restatement argues from $P \\Rightarrow Q$ and $\\neg P$ to $\\neg Q$. That is denying the antecedent, the inverse inference. The same competitor example has $\\neg P$ and $Q$, so $\\neg Q$ need not follow, so the statement is False.`,
+The restatement uses the invalid form called denying the antecedent:
+
+$$P\\Rightarrow Q,\\quad\\neg P\\quad\\therefore\\quad\\neg Q$$
+
+Use the same competitor example, with $P$ false and $Q$ true. Then $P\\Rightarrow Q$ and $\\neg P$ are both true, but $\\neg Q$ is false. The premises can hold while the conclusion fails, so the statement is False.`,
       `**C.** → True
 
-The restatement argues from $P \\Rightarrow Q$ and $\\neg Q$ to $\\neg P$. That is modus tollens: it runs the contrapositive $\\neg Q \\Rightarrow \\neg P$ forward. The inference is valid, so the statement is True.`,
+Modus tollens applies the contrapositive of the conditional. From
+
+$$P\\Rightarrow Q$$
+
+we have
+
+$$\\neg Q\\Rightarrow\\neg P$$
+
+Together with the premise $\\neg Q$, modus ponens yields
+
+$$\\neg P$$
+
+The restated conclusion follows from the premises, so the statement is True.`,
       `**D.** → True
 
-The missing direction is $Q \\Rightarrow P$. A biconditional $P \\Leftrightarrow Q$ supplies both arrows, and then $Q$ really does yield $P$. That is the strengthening the original conclusion needs, so the statement is True.`,
+A biconditional supplies both directions:
+
+$$P\\Leftrightarrow Q\\quad\\Longleftrightarrow\\quad(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
+
+The observed sales increase gives $Q$, and the added direction gives
+
+$$Q,\\quad Q\\Rightarrow P\\quad\\Longrightarrow\\quad P$$
+
+This strengthened premise validates the memo's conclusion, so the statement is True.`,
       `**E.** → True
 
-“If it rains, the ground gets wet” with “the ground is wet” concluding “it is raining” is the same form: $P \\Rightarrow Q$ and $Q$, therefore $P$. Both arguments affirm the consequent, so the statement is True.`,
+Argument types are determined by form, not subject matter. The rain argument has the form
+
+$$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
+
+The marketing memo has exactly the same form. Both infer the antecedent from the consequent, so both affirm the consequent and the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -3630,19 +3936,47 @@ The stem’s claim “the sum of two irrationals is always irrational” is univ
     tactical_explanations: [
       `**A.** → True
 
-“This dolphin lives in water, so it must be a fish” argues from $Q$ to $P$. That is the converse. A dolphin is a counterexample to the converse, so the argument is invalid, so the statement is True.`,
+The converse $Q\\Rightarrow P$ is tested by an animal that lives in water but is not a fish. For a dolphin,
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+The inference from living in water to being a fish therefore uses a false converse and is invalid, so the statement is True.`,
       `**B.** → True
 
-“This lizard does not live in water, so it is not a fish” argues from $\\neg Q$ to $\\neg P$. That is the contrapositive, which is equivalent to the rule, so the argument is valid, so the statement is True.`,
+The contrapositive is equivalent to the fish rule:
+
+$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+
+The lizard supplies $\\neg Q$. Modus ponens on the contrapositive gives
+
+$$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
+
+The inference is valid, so the statement is True.`,
       `**C.** → False
 
-“This snake is not a fish, so it does not live in water” argues from $\\neg P$ to $\\neg Q$, the inverse. Inverse reasoning is not equivalent to $P \\Rightarrow Q$. Water snakes exist, so the pattern is not guaranteed, so the statement is False.`,
+The inverse $\\neg P\\Rightarrow\\neg Q$ is not equivalent to the original rule. A water snake has
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+so its inverse evaluation is
+
+$$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+This counterexample shows that inverse-based reasoning is not guaranteed, so the statement is False.`,
       `**D.** → True
 
 The overview’s negation of $\\forall x\\,(P(x) \\Rightarrow Q(x))$ is $\\exists x\\,(P(x) \\land \\neg Q(x))$: a fish that does not live in water. That is the claimed sentence, so the statement is True.`,
       `**E.** → False
 
-A counterexample to “all fish live in water” must be a fish that does not live in water. A dolphin has $\\neg P$ and $Q$, the opposite shape, so it does not refute the rule, so the statement is False.`,
+A counterexample to $P\\Rightarrow Q$ must make $P$ true and $Q$ false. A dolphin has
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+Thus the original rule evaluates to
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+A dolphin satisfies the rule vacuously instead of refuting it, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 30,
@@ -3669,7 +4003,15 @@ The converse is $Q(x) \\Rightarrow P(x)$, the inverse is $\\neg P(x) \\Rightarro
     tactical_explanations: [
       `**A.** → False
 
-“A customer paid within $30$ days and received the discount” is $P \\land Q$, which is the policy being honoured. The negation is $P \\land \\neg Q$, so the statement is False.`,
+The negation of an implication is its unique failure case:
+
+$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
+
+The offered sentence is instead
+
+$$P\\land Q$$
+
+which describes a punctual customer who did receive the discount. It is not the negation, so the statement is False.`,
       `**B.** → False
 
 The converse is $Q \\Rightarrow P$. A holiday promotion can give the discount to a late payer: $Q$ true and $P$ false. That keeps the policy true while the converse fails, so the statement is False.`,
@@ -3678,10 +4020,22 @@ The converse is $Q \\Rightarrow P$. A holiday promotion can give the discount to
 Alex paid on day $45$ and received no discount, so $P$ is false and $Q$ is false. The policy $P \\Rightarrow Q$ is silent when $P$ is false, so Alex is consistent with it and is not a counterexample, so the statement is True.`,
       `**D.** → False
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. It is equivalent to the converse, not to the policy. A late payer who still receives a promotional discount refutes the inverse while the original stands, so the statement is False.`,
+The inverse $\\neg P\\Rightarrow\\neg Q$ can fail while the original remains true. For a late payer who receives a promotional discount,
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+Then
+
+$$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+but $P\\Rightarrow Q$ is true because $P$ is false. The inverse is not guaranteed, so the statement is False.`,
       `**E.** → False
 
-The contrapositive $\\neg Q \\Rightarrow \\neg P$ is equivalent to $P \\Rightarrow Q$, so it is guaranteed whenever the policy is. The claim that only the original carries any guarantee is wrong, so the statement is False.`,
+The contrapositive is logically equivalent to the original:
+
+$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+
+Equivalent formulas have the same truth value on every assignment. Therefore the contrapositive is guaranteed whenever the policy is, so the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 31,
@@ -3708,7 +4062,15 @@ Its negation is $P \\land \\neg Q$, a punctual payer who got no discount. The co
     tactical_explanations: [
       `**A.** → False
 
-“If revenue exceeds \\$1 million, then the company does not file” is $P \\Rightarrow \\neg Q$, a rival rule for every large company. The negation is $P \\land \\neg Q$, one offender, so the statement is False.`,
+The negation of an implication is one violating company:
+
+$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
+
+The offered sentence is the different implication
+
+$$P\\Rightarrow\\neg Q$$
+
+It makes a claim about every company above the threshold instead of asserting one counterexample, so the statement is False.`,
       `**B.** → False
 
 The converse is $Q \\Rightarrow P$. A company with revenue \\$300,000 that files voluntarily has $Q$ true and $P$ false, which refutes the converse while the regulation stands, so the statement is False.`,
@@ -3717,10 +4079,22 @@ The converse is $Q \\Rightarrow P$. A company with revenue \\$300,000 that files
 The inverse is $\\neg P \\Rightarrow \\neg Q$. It matches the converse, not $P \\Rightarrow Q$. Voluntary filing by a small company has $\\neg P$ and $Q$, so the inverse fails, so the statement is False.`,
       `**D.** → True
 
-The contrapositive of $P \\Rightarrow Q$ is $\\neg Q \\Rightarrow \\neg P$: if a company does not file an audit, then its revenue does not exceed \\$1 million. That form is equivalent to the regulation, so the statement is True.`,
+The contrapositive swaps and negates both parts:
+
+$$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
+
+Here $\\neg Q$ means no audit filing and $\\neg P$ means revenue does not exceed \\$1 million. That is the quoted rule, so the statement is True.`,
       `**E.** → True
 
-Company X has revenue \\$2 million and filed no audit, so $P$ is true and $Q$ is false. That is exactly $P \\land \\neg Q$, which refutes $P \\Rightarrow Q$, so the statement is True.`,
+An implication is disproved by a case with a true hypothesis and false conclusion. Company X has
+
+$$P=\\mathrm{T},\\qquad Q=\\mathrm{F}$$
+
+Therefore
+
+$$P\\Rightarrow Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Company X is a valid counterexample to the regulation, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 32,
@@ -3845,19 +4219,47 @@ Inside the bracket, score and co-signer are alternatives. Outside it, $D$ is req
     tactical_explanations: [
       `**A.** → True
 
-The converse is $Q \\Rightarrow P$. Sam has $Q$ true and $P$ false, which is exactly the counterexample the converse needs, so the statement is True.`,
+The converse $Q\\Rightarrow P$ is false when a diner receives a point without ordering dessert. Sam has
+
+$$Q=\\mathrm{T},\\qquad P=\\mathrm{F}$$
+
+so
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Sam is exactly the counterexample needed to disprove the converse, so the statement is True.`,
       `**B.** → True
 
 “Not every point-earning diner ordered dessert” is the negation of the converse $Q \\Rightarrow P$. A proof by contradiction assumes that converse, then produces Sam, who has $Q$ and $\\neg P$, and the assumption fails, so the statement is True.`,
       `**C.** → False
 
-The original policy fails only on $P \\land \\neg Q$: dessert with no point. Sam has $\\neg P$ and $Q$, the opposite shape, so he is consistent with $P \\Rightarrow Q$, so the statement is False.`,
+The original policy fails only when dessert is ordered and no point is awarded. Sam instead has
+
+$$P=\\mathrm{F},\\qquad Q=\\mathrm{T}$$
+
+Thus
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+Sam satisfies the original policy vacuously and does not disprove it, so the statement is False.`,
       `**D.** → True
 
-The negation of $P \\Rightarrow Q$ is $P \\land \\neg Q$: a diner who ordered dessert and did not receive a point. That is not Sam’s birthday case, so the statement is True.`,
+The negation of an implication keeps the hypothesis and negates the conclusion:
+
+$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
+
+This requires a diner who ordered dessert and did not receive a point. Sam has $\\neg P\\land Q$, so his birthday case has the opposite truth values. The claimed negation is correct, so the statement is True.`,
       `**E.** → True
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. Sam has $\\neg P$ and $Q$, so the inverse has a true antecedent and a false consequent. Sam refutes it, so the statement is True.`,
+The inverse is $\\neg P\\Rightarrow\\neg Q$. Sam did not order dessert but did receive a point, so
+
+$$\\neg P=\\mathrm{T},\\qquad\\neg Q=\\mathrm{F}$$
+
+Therefore
+
+$$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Sam directly contradicts the inverse, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 35,
@@ -4070,19 +4472,63 @@ In Statement 1 one student must clear every exam. In Statement 2 a different stu
     tactical_explanations: [
       `**A.** → True
 
-The given votes produce $Y = 2$. Gate 1 needs $Y \\ge 3$, and $2 \\ge 3$ fails. Gate 2 needs $Y = 2$ with R1 among the yes-votes, and both hold, so gate 2 opens. The candidate is approved, so the statement is True.`,
+Approval is the inclusive or of the two gates. The given votes produce $Y=2$, so gate 1 gives
+
+$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
+
+R1 is one of the two yes-votes, so both parts of gate 2 are true:
+
+$$\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+At least one gate is true, so the candidate is approved and the statement is True.`,
       `**B.** → False
 
-Yes-votes from R2 and R3 still give $Y = 2$, so gate 1 stays shut. R1 voted no, so gate 2 stays shut. Both gates are closed, so the candidate is not approved, so the statement is False.`,
+Approval requires at least one gate to be true. With only R2 and R3 voting yes, gate 1 gives
+
+$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
+
+R1 is not among the two yes-votes, so the second part of gate 2 is false:
+
+$$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+Both gates are false, so the candidate is not approved and the statement is False.`,
       `**C.** → True
 
-Any three yes-votes give $Y = 3$. Gate 1 is $Y \\ge 3$ and ignores names, so gate 1 opens no matter which three reviewers they are. The candidate is then approved, so the statement is True.`,
+Gate 1 depends only on the number of yes-votes. With any three reviewers voting yes,
+
+$$Y=3$$
+
+and
+
+$$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
+
+Gate 1 opens without consulting the reviewers' names, so the candidate is approved and the statement is True.`,
       `**D.** → False
 
-Yes-votes from R2, R3, and R4 give $Y = 3$ with R1 voting no. Gate 1 opens on the count alone, so approval occurs without R1. R1's yes-vote is not necessary in every scenario, so the statement is False.`,
+A necessary condition is disproved by one approved case in which it is absent. Let R2, R3, and R4 vote yes while R1 votes no:
+
+$$Y=3$$
+
+Gate 1 still opens:
+
+$$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
+
+This is an approval without R1's yes-vote, so R1 is not always necessary and the statement is False.`,
       `**E.** → True
 
-Yes-votes from R2 and R3 only give $Y = 2$ with R1 outside. Gate 1 stays shut because $2 < 3$, and gate 2 stays shut because R1 is missing. That is one two-vote scenario with no approval, so the statement is True.`,
+An existential claim needs one two-vote scenario in which both approval gates fail. Let only R2 and R3 vote yes:
+
+$$Y=2$$
+
+Then gate 1 is false:
+
+$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
+
+R1 votes no, so gate 2 is also false:
+
+$$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+This witness has exactly two yes-votes and no approval, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -4111,16 +4557,40 @@ The given votes are R1 yes, R2 yes, R3 no, R4 no.`,
     tactical_explanations: [
       `**A.** → True
 
-Company Z uses the product commercially, so $C$ is true. The rescue needs $W \\land S$. Z has $W$ true and $S$ false, so the conjunction fails and the rescue never opens. Commercial use with a failed rescue voids the warranty, so the statement is True.`,
+The commercial-use exception opens only when approval and annual servicing both hold. Company Z has written approval but no servicing, so
+
+$$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+Because $C$ is true and the exception is false, the commercial-use clause voids Z's warranty, so the statement is True.`,
       `**B.** → False
 
-The rescue is $W \\land S$, so written approval is only one half. Company Z has $W$ true and $S$ false, and the warranty is void. Approval alone is not sufficient, so the statement is False.`,
+Sufficiency of written approval would require $W$ alone to make the exception true. Company Z supplies a counterexample:
+
+$$W=\\mathrm{T},\\qquad S=\\mathrm{F}$$
+
+Therefore
+
+$$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+The exception stays closed despite approval, so approval alone is not sufficient and the statement is False.`,
       `**C.** → True
 
-The exception is $W \\land S$. Approval without servicing leaves the conjunction false, and servicing without approval does the same. Both halves are required, so the statement is True.`,
+The exception is a conjunction, so each condition is necessary. Approval without servicing gives
+
+$$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
+
+Servicing without approval gives
+
+$$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+Satisfying only one condition never opens the exception, so the statement is True.`,
       `**D.** → False
 
-Without written approval, $W$ is false, so $W \\land S$ is false even if $S$ is true. Servicing is not an independent escape from commercial use, so the statement is False.`,
+The exception requires both written approval and servicing. If approval is absent but annual servicing occurs, then
+
+$$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+The exception remains closed, so commercial use still voids the warranty and the statement is False.`,
       `**E.** → False
 
 Annual servicing sits inside the exception to the commercial-use clause. If Z never used the product commercially, $C$ is false and that clause never fires. Nothing in the quoted warranty then asks for annual servicing, so the statement is False.`,
@@ -4195,10 +4665,30 @@ An existential $\\exists x\\, P(x)$ is settled by one witness. A universal $\\fo
     tactical_explanations: [
       `**A.** → True
 
-Premise 2 gives a person $a$ who is an economist and a game theorist. Premise 1 says every economist studies human behavior, so $H(a)$ follows. Then $G(a) \\land H(a)$, which is the conclusion. The same three steps work for any witness supplied by Premise 2, so the argument is valid, so the statement is True.`,
+Existential instantiation lets us name the witness supplied by Premise 2. For some person $a$,
+
+$$E(a)\\land G(a)$$
+
+Hence $E(a)$ and $G(a)$. Premise 1 applies to that same person:
+
+$$E(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad H(a)$$
+
+Combining the two established properties gives
+
+$$G(a)\\land H(a)$$
+
+Thus the conclusion has a witness whenever the premises are true, so the statement is True.`,
       `**B.** → False
 
-Replace Premise 2 by "no economists specialize in game theory." Picture a world where every economist studies human behavior and nobody specializes in game theory. Both modified premises hold, yet the conclusion $\\exists x\\,(G(x) \\land H(x))$ fails because there is no game theorist. Premises true and conclusion false means the modified argument is invalid, so the statement is False.`,
+Invalidity is shown by one model with true premises and a false conclusion. Take a world with one person $a$ and set
+
+$$E(a)=\\mathrm{T},\\qquad H(a)=\\mathrm{T},\\qquad G(a)=\\mathrm{F}$$
+
+Then every economist studies human behavior, and no economist specializes in game theory. But
+
+$$\\exists x\\,(G(x)\\land H(x))$$
+
+is false because the only person has $G(a)$ false. The modified premises can be true while the conclusion is false, so the statement is False.`,
       `**C.** → True
 
 The overview recovered that validity asks only whether the conclusion must be true whenever the premises are true, and does not inspect the real world. Soundness is the stricter label that also requires the premises to be true in fact. The claim is that same distinction, so the statement is True.`,
@@ -4207,7 +4697,15 @@ The overview recovered that validity asks only whether the conclusion must be tr
 Validity is about the derivation from the premises. It never inspects whether Premise 1 is true in the real world. If Premise 1 happened to be false, the argument would remain valid and lose soundness, because soundness needs valid form and true premises, so the statement is True.`,
       `**E.** → False
 
-Affirming the consequent is $P \\Rightarrow Q$, $Q$, therefore $P$. The given premises are a universal about economists and an existential about game theory, with no bare consequent used to recover an antecedent. The form is "all $E$ are $H$, some $E$ are $G$, therefore some $G$ are $H$," which is not that invalid pattern, so the statement is False.`,
+Affirming the consequent has the invalid form
+
+$$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
+
+The given argument instead instantiates one economist-game-theorist and applies the universal premise to that same witness:
+
+$$E(a)\\land G(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad G(a)\\land H(a)$$
+
+No consequent is used to recover an antecedent, so this is not affirming the consequent and the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -4238,13 +4736,29 @@ Validity asks whether the conclusion must be true whenever the premises are true
     tactical_explanations: [
       `**A.** → True
 
-Player X scored $35$, so $P$ is true, and the team lost $90$-$95$, so $Q$ is false. That is the one combination an implication forbids. One such game disproves the fan's universal rule, so the statement is True.`,
+An implication is false exactly when its antecedent is true and its conclusion is false. In the reported game,
+
+$$P=\\mathrm{T},\\qquad Q=\\mathrm{F}$$
+
+Therefore
+
+$$P\\Rightarrow Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+One game with this evaluation disproves the fan's universal rule, so the statement is True.`,
       `**B.** → True
 
 The existential asks for one game in which some player scored over $30$ and the team did not win. The reported game has a $35$-point scorer and a $90$-$95$ loss, which is that pair of facts. One witness settles an existential, so the statement is True.`,
       `**C.** → True
 
-The contrapositive always agrees with the original, so it dies with the original. The same game shows it directly: the team did not win, yet a player scored $35$, which $\\neg Q \\Rightarrow \\neg P$ forbids, so the statement is True.`,
+The contrapositive has the same truth value as the original implication. In the reported game, the team did not win but Player X scored over $30$, so
+
+$$\\neg Q=\\mathrm{T},\\qquad\\neg P=\\mathrm{F}$$
+
+Thus
+
+$$\\neg Q\\Rightarrow\\neg P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+The same game refutes both equivalent forms, so the statement is True.`,
       `**D.** → False
 
 The converse $Q \\Rightarrow P$ sits in the other pair. The reported game is a defeat, so $Q$ is false and the converse is idle. Falsity of $P \\Rightarrow Q$ does not force falsity of $Q \\Rightarrow P$, so the statement is False.`,
@@ -4344,10 +4858,30 @@ $$\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1$$
 Pair 2 is not coprime, so the statement is False.`,
       `**C.** → True
 
-Coprime means: for every prime $p$, $p$ does not divide both $m$ and $n$. Negating a universal produces an existential: there exists a prime $p$ such that $p$ divides $m$ and $p$ divides $n$. That is the quoted negation, so the statement is True.`,
+Coprime means that every prime fails to divide at least one of the two numbers:
+
+$$\\forall p\\,\\bigl(\\mathrm{Prime}(p)\\Rightarrow(p\\nmid m\\lor p\\nmid n)\\bigr)$$
+
+Negating the universal flips the quantifier and both failures:
+
+$$\\exists p\\,\\bigl(\\mathrm{Prime}(p)\\land p\\mid m\\land p\\mid n\\bigr)$$
+
+That is exactly the quoted negation, so the statement is True.`,
       `**D.** → True
 
-Given $\\mathrm{gcd}(m,n)=1$ with both greater than $1$, suppose both were even. Then $2$ would divide each of them, forcing $\\mathrm{gcd}(m,n) \\ge 2$ and contradicting $\\mathrm{gcd}=1$. A coprime pair is never two even numbers, so the statement is True.`,
+Proof by contradiction starts by assuming the forbidden combination. If both numbers were even, then
+
+$$2\\mid m$$
+
+and
+
+$$2\\mid n$$
+
+so they would share the prime factor $2$:
+
+$$\\mathrm{gcd}(m,n)\\ge2$$
+
+This contradicts $\\mathrm{gcd}(m,n)=1$, so a coprime pair cannot contain two even numbers and the statement is True.`,
       `**E.** → False
 
 Coprime means no shared prime factor, not that at least one of $m$ or $n$ is prime. Pair 1 is a counterexample: $15 = 3 \\times 5$ and $28 = 2^{2} \\times 7$ are both composite, yet $\\mathrm{gcd}(15,28)=1$, so the statement is False.`,
@@ -4519,7 +5053,15 @@ In words: at least one chip fails. The quoted sentence "all chips fail" is $\\fo
 Batch $13$ was cancelled before production, so it contains zero chips. To falsify "all chips in Batch $13$ pass" you would have to point at a chip in Batch $13$ that failed. There is no such chip. A universal over an empty domain is vacuously true, so the statement is True.`,
       `**D.** → False
 
-"For every failed chip there exists a defect code" is $\\forall f\\, \\exists c$. "There exists a single defect code that explains every failure" is $\\exists c\\, \\forall f$. The first lets the code depend on the chip. The second freezes one code for the whole batch. Ten failures with ten different codes make the first true and the second false, so the statements are not the same, so the statement is False.`,
+Quantifier order determines whether the defect code may depend on the failed chip. The first sentence is
+
+$$\\forall f\\,\\exists c\\,E(c,f)$$
+
+The second sentence is
+
+$$\\exists c\\,\\forall f\\,E(c,f)$$
+
+With two failures $f_1,f_2$, code $c_1$ may explain only $f_1$ and code $c_2$ only $f_2$. Then the first formula is true, but no single code serves both failures, so the second is false. The sentences are not equivalent, so the statement is False.`,
       `**E.** → True
 
 "Some chip in Batch $12$ failed" is $\\exists x\\, \\neg A(x)$. An existential is proved by one witness. Chip #$317$ is in Batch $12$ and failed the stress test, which is that witness. Nothing else about the batch is required, so the statement is True.`,
