@@ -47,7 +47,13 @@ export default function MockBuilderSimulator() {
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [fade, setFade] = useState(false);
   const [cursor, setCursor] = useState({ x: 40, y: 40 });
+  const cursorRef = useRef({ x: 40, y: 40 });
   const [clicking, setClicking] = useState(false);
+
+  // keep the ref in sync so glideCursor can read the current position
+  useEffect(() => {
+    cursorRef.current = cursor;
+  }, [cursor]);
 
   const stageRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
