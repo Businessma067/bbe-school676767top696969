@@ -214,6 +214,10 @@ function looksLikeMathInner(inner: string): boolean {
     return false;
   }
 
+  // Bare sign-chart / comparison glyphs: `$+$`, `$-$`, `$<$`, `$>$`, `$=$`.
+  // Without this, Ch6 interval-method tables show literal `$+$` / `$-$`.
+  if (/^[+\-<>≠≤≥=×·]+$/.test(t)) return true;
+
   // Equations / comparisons / algebra (escaped currency `\$` is fine inside).
   // Unspaced pipes are cardinality / absolute value (`|A|`); spaced ones were
   // rejected above as answer lines. A colon between numbers is a ratio (`3:2`).
