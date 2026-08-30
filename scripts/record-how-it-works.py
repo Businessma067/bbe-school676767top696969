@@ -155,14 +155,36 @@ async def smooth_scroll_panel(page, dy, ms=1600):
     )
 
 
-async def read_scroll(page, total=1600, chunk=170, ms=1500, pause=850):
-    """Slow reading pass: many short eased scrolls with pauses in between."""
-    done = 0
-    while done < total:
-        step = min(chunk, total - done)
-        await smooth_scroll_panel(page, step, ms)
+async def panel_point(page):
+    """Center point of the open explanation/solution panel, if any."""
+    return await page.evaluate(
+        """() => {
+            const vis = e => { const r = e.getBoundingClientRect();
+              return r.width > 260 && r.height > 260 && r.right > 0 && r.left < innerWidth; };
+            const cands = [...document.querySelectorAll('.practice-scroll,div,section,aside')]
+              .filter(e => vis(e) && e.scrollHeight - e.clientHeight > 80
+                        && ['auto','scroll'].includes(getComputedStyle(e).overflowY));
+            const t = cands.sort((a,b)=>(b.scrollHeight-b.clientHeight)-(a.scrollHeight-a.clientHeight))[0];
+            if (!t) return null;
+            const r = t.getBoundingClientRect();
+            return [Math.round(r.left + r.width/2), Math.round(r.top + Math.min(r.height/2, 380))];
+        }"""
+    )
+
+
+async def read_scroll(page, total=1600, step=34, delay=26, pause=700, chunks=4):
+    """Slow, wheel-driven reading pass over the panel under the cursor."""
+    pt = await panel_point(page)
+    if pt:
+        await glide(page, pt[0], pt[1], steps=60)
+    per = max(1, total // chunks)
+    for _ in range(chunks):
+        moved = 0
+        while moved < per:
+            await page.mouse.wheel(0, step)
+            await page.wait_for_timeout(delay)
+            moved += step
         await page.wait_for_timeout(pause)
-        done += step
 
 
 async def glide(page, x, y, steps=90):
@@ -285,7 +307,7 @@ async def show_features(page):
 async def show_explanation(page, total=2000):
     await maybe(page, page.locator("button").filter(has_text="Check Answers").first, 1800)
     await maybe(page, page.locator("button").filter(has_text="Explanation").first, 1600)
-    await read_scroll(page, total=total, chunk=200, ms=1400, pause=600)
+    await read_scroll(page, total=total)
 
 
 # ---------------------------------------------------------------- flows
