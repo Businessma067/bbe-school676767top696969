@@ -7,9 +7,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
-import FiveStatementSimulator from "@/components/FiveStatementSimulator";
-import MathParabolaSimulator from "@/components/MathParabolaSimulator";
-import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
+import PracticeSimulator from "@/components/PracticeSimulator";
 
 export const Route = createFileRoute("/")({
   component: Index,
