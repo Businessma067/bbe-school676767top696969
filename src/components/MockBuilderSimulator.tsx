@@ -442,7 +442,7 @@ export default function MockBuilderSimulator() {
 
       {/* Animated cursor */}
       <div
-        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-300 ease-out"
+        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-100 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
         <div className={cn("transition-transform duration-75", clicking ? "scale-90" : "scale-100")}>
