@@ -324,6 +324,7 @@ The denominator is the conditioning group, not the full audit."""
     if mode == 1:
         independent = both * total == premium * late
         claimed_independent = independent if truth else not independent
+        assert (claimed_independent == independent) is truth
         relation = "independent" if claimed_independent else "not independent"
         statement = (
             f"A streaming survey of ${total}$ households finds ${premium}$ premium "
@@ -450,6 +451,7 @@ $$\\operatorname{{SD}}(X)=\\sqrt{{{tex(variance)}}}\\approx {decimal(sd, 4)}$$""
 
     if mode == 2:
         threshold = Fraction(math.ceil(sd * 10) + (1 if truth else -1), 10)
+        assert (sd < float(threshold)) is truth
         relation = "less than"
         statement = (
             f"A game costs ${cost}$ euros and has gross payouts ${gross[0]}$, "
@@ -671,6 +673,7 @@ $$\\operatorname{{SD}}(X)=\\sqrt{{np(1-p)}}
 
     if mode == 1:
         threshold = Fraction(math.ceil(sd * 10) + (1 if truth else -1), 10)
+        assert (sd < float(threshold)) is truth
         statement = (
             f"A bottling line independently rejects each of ${n}$ bottles with "
             f"probability ${tex(p)}$. The standard deviation of the rejection count is "
@@ -682,8 +685,9 @@ $$\\operatorname{{SD}}(X)=\\sqrt{{np(1-p)}}
     if mode == 2:
         correct_ratio = 1 - p
         claim_ratio = correct_ratio if truth else p
-        if claim_ratio == correct_ratio:
+        if not truth and claim_ratio == correct_ratio:
             claim_ratio = wrong_fraction(correct_ratio)
+        assert (claim_ratio == correct_ratio) is truth
         statement = (
             f"A seed company tests ${n}$ independent seeds, each germinating with "
             f"probability ${tex(p)}$. For the germination count, the ratio of variance "
@@ -734,9 +738,11 @@ def ch13_compare(i: int, truth: bool) -> Item:
     k = 2 + ((i + 1) % (min(n_a, n_b) - 3))
     prob_a = binomial_pmf(n_a, k, p_a)
     prob_b = binomial_pmf(n_b, k, p_b)
+    assert prob_a != prob_b
     actual_relation = "greater than" if prob_a > prob_b else "less than"
     opposite_relation = "less than" if actual_relation == "greater than" else "greater than"
     claimed_relation = actual_relation if truth else opposite_relation
+    assert (claimed_relation == actual_relation) is truth
     ratio = prob_a / prob_b
     statement = (
         f"Production line A independently passes each of ${n_a}$ items with probability "
@@ -796,6 +802,7 @@ def ch13_complement(i: int, truth: bool) -> Item:
     actual_relation = "greater than" if at_least_a > at_least_b else "less than"
     opposite_relation = "less than" if actual_relation == "greater than" else "greater than"
     claimed_relation = actual_relation if truth else opposite_relation
+    assert (claimed_relation == actual_relation) is truth
     statement = (
         f"Backup system A makes ${n_a}$ independent activation attempts with success "
         f"probability ${tex(p_a)}$ per attempt. System B makes ${n_b}$ independent "
