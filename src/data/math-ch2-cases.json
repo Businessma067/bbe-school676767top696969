@@ -4356,641 +4356,641 @@
   {
    "id": "math-2-137",
    "case_id": "MATH 2.137",
-   "title": "Exam-style tasks — 1",
+   "title": "Hard mixed exam: 1",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For all real $x$, $y$, $z$, it holds that $x^2+y^2+z^2-xy-yz-zx=\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]$.",
-    "For every real $t$ with $t\\neq0$, $t\\neq-1$ and $t\\neq-\\tfrac12$, it holds that $\\dfrac{1}{1+\\dfrac{1}{1+\\frac1t}}=\\dfrac{t+1}{2t+1}$.",
-    "For $u>0$ and $v>0$ with $u\\neq v$, it holds that $\\dfrac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\dfrac{u-2\\sqrt{uv}+v}{u-v}$.",
-    "For every real pair $(x,y)$, the product identity $|xy|=|x|\\,|y|$ remains valid even when one factor is negative.",
-    "If $p>q$, then $p^2>q^2$."
+    "For every real pair $(a,b)$, subtracting $(a+b)^2-(a-b)^2$ from $(a+2b)^2-(a-2b)^2$ gives $4ab$.",
+    "For $a,b\\ne0$ and $x\\ne\\pm 2$, the stacked quotient $\\dfrac{\\dfrac{4a^2b}{2(x^2-4)}}{\\dfrac{ab}{x+2}}=\\dfrac{2a}{x+2}$.",
+    "For $a>0$, $\\dfrac{a^{3/4}\\sqrt[3]{a\\sqrt{a}}}{\\sqrt[6]{a^5}\\sqrt{a}}=a^{-1/12}$.",
+    "The solution set of $\\bigl||x-1|-3\\bigr|\\le 1$ is $(-3,-1)\\cup(3,5)$.",
+    "For every real pair $(p,q)$, subtracting $(p+q)^2-(p-q)^2$ from $(p+3q)^2-(p-3q)^2$ gives $12pq$."
    ],
    "answer_key": [
     true,
+    false,
     true,
-    true,
-    true,
+    false,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nExpanding the three squares on the right counts every square twice and every mixed product once with a minus sign.\n\nExpand the bracket:\n\n$$(x-y)^2+(y-z)^2+(z-x)^2=2x^2+2y^2+2z^2-2xy-2yz-2zx$$\n\nHalving that result gives\n\n$$\\tfrac12\\left[(x-y)^2+(y-z)^2+(z-x)^2\\right]=x^2+y^2+z^2-xy-yz-zx$$\n\nwhich is the left-hand side. As a by-product the form is never negative. So the statement is True.",
-    "**B.** → True\n\nA continued fraction is simplified from the innermost level outwards.\n\nClear the innermost sum:\n\n$$1+\\frac1t=\\frac{t+1}{t}$$\n\nIts reciprocal enters the middle level:\n\n$$1+\\frac{1}{\\frac{t+1}{t}}=1+\\frac{t}{t+1}=\\frac{2t+1}{t+1}$$\n\nTaking the outer reciprocal turns that single fraction upside down and gives $\\dfrac{t+1}{2t+1}$. The three excluded values are exactly the ones that would make a level vanish. So the statement is True.",
-    "**C.** → True\n\nMultiplying numerator and denominator by the conjugate of the denominator clears the roots from below.\n\nMultiply by the conjugate:\n\n$$\\frac{\\sqrt u-\\sqrt v}{\\sqrt u+\\sqrt v}=\\frac{\\left(\\sqrt u-\\sqrt v\\right)^2}{\\left(\\sqrt u+\\sqrt v\\right)\\left(\\sqrt u-\\sqrt v\\right)}$$\n\nThe new denominator is a difference of squares, namely $u-v$, and the new numerator is\n\n$$\\left(\\sqrt u-\\sqrt v\\right)^2=u-2\\sqrt{uv}+v$$\n\nThe restriction $u\\neq v$ keeps the denominator nonzero. So the statement is True.",
-    "**D.** → True\n\nSquaring both nonnegative sides gives the same quantity.\n\n$$|xy|^2=x^2y^2$$\n\n$$\\bigl(|x|\\,|y|\\bigr)^2=x^2y^2$$\n\n$$|xy|=|x|\\,|y|$$\n\nNonnegativity selects the same principal square root on both sides. Therefore the statement is True.",
-    "**E.** → False\n\nSquaring compares distances from the origin, which need not respect the original order.\n\nFactor the difference:\n\n$$p^2-q^2=(p-q)(p+q)$$\n\nThe first factor is positive because $p>q$, but the sign of the second is unrestricted. Whenever $p+q<0$, the difference is negative and $p^2<q^2$, so the whole region of pairs with $p>q$ and $p+q<0$ contradicts the claim. So the statement is False."
+    "**A.** → True\n\nEach difference of squares conceals a cross term. Expand both differences before subtracting.\n\nThe larger difference is:\n\n$$(a+2b)^2-(a-2b)^2=4\\cdot 2ab$$\n\nThe smaller difference is:\n\n$$(a+b)^2-(a-b)^2=4ab$$\n\nTheir difference is:\n\n$$4\\cdot 2ab-4ab=4ab$$\n\nThe final coefficient is $4$, exactly as printed, so the statement is True.",
+    "**B.** → False\n\nFactor the quadratic denominator before turning division by a fraction into multiplication.\n\nFactor the difference of squares:\n\n$$x^2-4=(x-2)(x+2)$$\n\nFlip the lower fraction:\n\n$$\\frac{22a^2b}{2(x-2)(x+2)}\\cdot\\frac{x+2}{ab}$$\n\nCancel only common factors:\n\n$$\\frac{2a}{x-2}$$\n\nThe printed denominator is the factor that cancels; $x-2$ survives, so the statement is False.",
+    "**C.** → True\n\nConvert every radical to a power before combining exponents. The numerator and denominator must be reduced separately.\n\nThe cube-root factor is:\n\n$$\\sqrt[3]{a\\sqrt{a}}=(a^{3/2})^{1/3}=a^{1/2}$$\n\nThe numerator becomes:\n\n$$a^{3/4}a^{1/2}=a^{5/4}$$\n\nThe denominator becomes:\n\n$$a^{5/6}a^{1/2}=a^{4/3}$$\n\nSubtract the final exponents:\n\n$$a^{5/4-4/3}=a^{-1/12}$$\n\nThe remaining exponent is the printed negative twelfth, so the statement is True.",
+    "**D.** → False\n\nSolve the outer absolute value first, then unfold the resulting band for the inner distance.\n\nRemove the outer bars:\n\n$$-1\\le|x-1|-3\\le 1$$\n\nIsolate the inner distance:\n\n$$2\\le|x-1|\\le 4$$\n\nUnfold both distance bands:\n\n$$[-3,-1]\\cup[3,5]$$\n\nAll four boundary values produce equality and must be included, so the open intervals make the statement False.",
+    "**E.** → False\n\nEach difference of squares conceals a cross term. Expand both differences before subtracting.\n\nThe larger difference is:\n\n$$(p+3q)^2-(p-3q)^2=4\\cdot 3pq$$\n\nThe smaller difference is:\n\n$$(p+q)^2-(p-q)^2=4pq$$\n\nTheir difference is:\n\n$$4\\cdot 3pq-4pq=8pq$$\n\nThe final coefficient is $8$, not $12$, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 137,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests absolute value of a product; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. A tests tangled squared differences; B tests stacked rational cancellation; C tests nested fractional powers; D tests nested absolute-value band; E tests tangled squared differences. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-138",
    "case_id": "MATH 2.138",
-   "title": "Exam-style tasks — 2",
+   "title": "Hard mixed exam: 2",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "The equation $\\dfrac{1}{z-1}=\\dfrac1z$ has no real solution.",
-    "The equation $\\sqrt{z+3}=z+1$ has exactly one real solution.",
-    "The equation $|z|=z^2$ has exactly three real solutions.",
-    "The polynomial $y^3-2y+1$ is divisible by $y-1$.",
-    "If $0<p<1$, then $\\dfrac1p<1$."
+    "For $p,q\\ne0$ and $t\\ne\\pm 3$, the stacked quotient $\\dfrac{\\dfrac{6p^2q}{3(t^2-9)}}{\\dfrac{pq}{t+3}}=\\dfrac{2p}{t-3}$.",
+    "For $p>0$, $\\dfrac{p^{3/4}\\sqrt[3]{p\\sqrt{p}}}{\\sqrt[6]{p^5}\\sqrt{p}}=p^{1/12}$.",
+    "The solution set of $\\bigl||t-2|-4\\bigr|\\le 2$ is $[-4,0]\\cup[4,8]$.",
+    "For every real pair $(u,v)$, subtracting $(u+v)^2-(u-v)^2$ from $(u+4v)^2-(u-4v)^2$ gives $12uv$.",
+    "For $u,v\\ne0$ and $z\\ne\\pm 4$, the stacked quotient $\\dfrac{\\dfrac{8u^2v}{4(z^2-16)}}{\\dfrac{uv}{z+4}}=\\dfrac{2u}{z+4}$."
    ],
    "answer_key": [
     true,
-    true,
+    false,
     true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nEqual fractions with equal numerators force equal denominators, provided neither denominator vanishes.\n\nCross-multiply for $z\\neq0$ and $z\\neq1$:\n\n$$z=z-1$$\n\nSubtracting $z$ leaves $0=-1$, a contradiction, so no admissible $z$ works. The two excluded values are not solutions either, since there one side is undefined. So the statement is True.",
-    "**B.** → True\n\nSquaring the equation is only an implication, so each candidate has to be checked against the sign condition $z+1\\ge0$.\n\nSquare both sides:\n\n$$z+3=(z+1)^2=z^2+2z+1$$\n\nCollect and factor:\n\n$$z^2+z-2=0\\quad\\Longleftrightarrow\\quad(z+2)(z-1)=0$$\n\nFor $z=-2$ the right-hand side of the original equation is $-1<0$, which no square root can equal, so this candidate is extraneous. For $z=1$ both sides equal $2$. Exactly one solution survives. So the statement is True.",
-    "**C.** → True\n\nThe absolute value is resolved by splitting the real line at the origin.\n\nTreat the nonnegative branch, where $|z|=z$:\n\n$$z=z^2\\quad\\Longleftrightarrow\\quad z(z-1)=0$$\n\nThis gives $z=0$ and $z=1$. On the negative branch $|z|=-z$, so\n\n$$-z=z^2\\quad\\Longleftrightarrow\\quad z(z+1)=0$$\n\nwhich contributes $z=-1$, the value $z=0$ already being counted. The solution set is $\\{-1,0,1\\}$, of size three. So the statement is True.",
-    "**D.** → True\n\nA linear factor $y-1$ divides a polynomial exactly when the polynomial vanishes at the corresponding zero of that factor.\n\nEvaluate the polynomial at the zero of $y-1$:\n\n$$1^3-2\\cdot1+1=0$$\n\nThe remainder is $0$, so the division is exact. Carrying it out confirms the factorisation:\n\n$$y^3-2y+1=(y-1)\\left(y^2+y-1\\right)$$\n\nSo the statement is True.",
-    "**E.** → False\n\nTaking reciprocals of positive numbers reverses the comparison with $1$.\n\nSubtract $1$ from the reciprocal:\n\n$$\\frac1p-1=\\frac{1-p}{p}$$\n\nFor $0<p<1$ both the numerator $1-p$ and the denominator $p$ are positive, so the difference is positive and $\\dfrac1p>1$ on the whole interval. The claim states the reverse. So the statement is False."
+    "**A.** → True\n\nFactor the quadratic denominator before turning division by a fraction into multiplication.\n\nFactor the difference of squares:\n\n$$t^2-9=(t-3)(t+3)$$\n\nFlip the lower fraction:\n\n$$\\frac{23p^2q}{3(t-3)(t+3)}\\cdot\\frac{t+3}{pq}$$\n\nCancel only common factors:\n\n$$\\frac{2p}{t-3}$$\n\nThe factor $t+3$ cancels and $t-3$ survives, so the statement is True.",
+    "**B.** → False\n\nConvert every radical to a power before combining exponents. The numerator and denominator must be reduced separately.\n\nThe cube-root factor is:\n\n$$\\sqrt[3]{p\\sqrt{p}}=(p^{3/2})^{1/3}=p^{1/2}$$\n\nThe numerator becomes:\n\n$$p^{3/4}p^{1/2}=p^{5/4}$$\n\nThe denominator becomes:\n\n$$p^{5/6}p^{1/2}=p^{4/3}$$\n\nSubtract the final exponents:\n\n$$p^{5/4-4/3}=p^{-1/12}$$\n\nThe denominator exponent is larger, so the result has exponent $-1/12$, not $1/12$, and the statement is False.",
+    "**C.** → True\n\nSolve the outer absolute value first, then unfold the resulting band for the inner distance.\n\nRemove the outer bars:\n\n$$-2\\le|t-2|-4\\le 2$$\n\nIsolate the inner distance:\n\n$$2\\le|t-2|\\le 6$$\n\nUnfold both distance bands:\n\n$$[-4,0]\\cup[4,8]$$\n\nBoth inequalities are non-strict, so all four endpoints belong and the statement is True.",
+    "**D.** → True\n\nEach difference of squares conceals a cross term. Expand both differences before subtracting.\n\nThe larger difference is:\n\n$$(u+4v)^2-(u-4v)^2=4\\cdot 4uv$$\n\nThe smaller difference is:\n\n$$(u+v)^2-(u-v)^2=4uv$$\n\nTheir difference is:\n\n$$4\\cdot 4uv-4uv=12uv$$\n\nThe final coefficient is $12$, exactly as printed, so the statement is True.",
+    "**E.** → False\n\nFactor the quadratic denominator before turning division by a fraction into multiplication.\n\nFactor the difference of squares:\n\n$$z^2-16=(z-4)(z+4)$$\n\nFlip the lower fraction:\n\n$$\\frac{24u^2v}{4(z-4)(z+4)}\\cdot\\frac{z+4}{uv}$$\n\nCancel only common factors:\n\n$$\\frac{2u}{z-4}$$\n\nThe printed denominator is the factor that cancels; $z-4$ survives, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 138,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests absolute value or a piecewise algebraic rewrite; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. A tests stacked rational cancellation; B tests nested fractional powers; C tests nested absolute-value band; D tests tangled squared differences; E tests stacked rational cancellation. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-139",
    "case_id": "MATH 2.139",
-   "title": "Exam-style tasks — 3",
+   "title": "Hard mixed exam: 3",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "It holds that $\\sqrt{7+4\\sqrt3}=2+\\sqrt3$.",
-    "The solution set of the inequality $|z-2|\\le1$ is the interval $[1,3]$.",
-    "The equation $q^2=q$ has exactly one real solution.",
-    "If $u$, $v$, $w$ are nonzero with $u+v+w=0$, then $\\dfrac{u+v}{w}+\\dfrac{v+w}{u}+\\dfrac{w+u}{v}=-3$.",
-    "For $t\\ge0$, the equation $\\sqrt t=t$ holds precisely when $t=0$ or $t=1$."
+    "For $u>0$, $\\dfrac{u^{3/4}\\sqrt[3]{u\\sqrt{u}}}{\\sqrt[6]{u^5}\\sqrt{u}}=u^{-1/12}$.",
+    "The solution set of $\\bigl||u-3|-5\\bigr|\\le 1$ is $(-3,-1)\\cup(7,9)$.",
+    "For every real pair $(m,n)$, subtracting $(m+n)^2-(m-n)^2$ from $(m+5n)^2-(m-5n)^2$ gives $20mn$.",
+    "For $m,n\\ne0$ and $y\\ne\\pm 5$, the stacked quotient $\\dfrac{\\dfrac{10m^2n}{5(y^2-25)}}{\\dfrac{mn}{y+5}}=\\dfrac{2m}{y-5}$.",
+    "For $m>0$, $\\dfrac{m^{3/4}\\sqrt[3]{m\\sqrt{m}}}{\\sqrt[6]{m^5}\\sqrt{m}}=m^{1/12}$."
    ],
    "answer_key": [
     true,
-    true,
+    false,
     false,
     true,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA nested radical of this shape is checked by squaring the proposed value.\n\nSquare the right-hand side:\n\n$$\\left(2+\\sqrt3\\right)^2=4+2\\cdot2\\cdot\\sqrt3+3=7+4\\sqrt3$$\n\nThe candidate $2+\\sqrt3$ is positive and its square is the radicand, so it is the square root of $7+4\\sqrt3$. So the statement is True.",
-    "**B.** → True\n\nAn absolute value bounded by a number is equivalent to a two-sided bound on the argument.\n\nUnfold the absolute value:\n\n$$|z-2|\\le1\\quad\\Longleftrightarrow\\quad-1\\le z-2\\le1$$\n\nAdding $2$ throughout shifts both bounds:\n\n$$1\\le z\\le3$$\n\nBoth endpoints belong to the set, since there $|z-2|=1$, so the solution set is the closed interval $[1,3]$. So the statement is True.",
-    "**C.** → False\n\nDividing by $q$ would lose a solution, so the equation is solved by factoring instead.\n\nCollect and factor:\n\n$$q^2-q=0\\quad\\Longleftrightarrow\\quad q(q-1)=0$$\n\nThe product vanishes for $q=0$ and for $q=1$, and both values satisfy the original equation. There are two real solutions, not one. So the statement is False.",
-    "**D.** → True\n\nThe condition turns every two-term numerator into the negative of the matching denominator.\n\nRewrite the three numerators:\n\n$$u+v=-w,\\qquad v+w=-u,\\qquad w+u=-v$$\n\nEach fraction therefore collapses to $-1$:\n\n$$\\frac{-w}{w}+\\frac{-u}{u}+\\frac{-v}{v}=-1-1-1=-3$$\n\nAll three denominators are nonzero by assumption, so every step is defined. So the statement is True.",
-    "**E.** → True\n\nSquaring is safe here because both sides are already nonnegative on the stated domain.\n\nSquare and collect:\n\n$$t=t^2\\quad\\Longleftrightarrow\\quad t(t-1)=0$$\n\nThe candidates are $t=0$ and $t=1$, and both satisfy the original equation since $\\sqrt0=0$ and $\\sqrt1=1$. No further solution exists, because the quadratic has no other root. So the statement is True."
+    "**A.** → True\n\nConvert every radical to a power before combining exponents. The numerator and denominator must be reduced separately.\n\nThe cube-root factor is:\n\n$$\\sqrt[3]{u\\sqrt{u}}=(u^{3/2})^{1/3}=u^{1/2}$$\n\nThe numerator becomes:\n\n$$u^{3/4}u^{1/2}=u^{5/4}$$\n\nThe denominator becomes:\n\n$$u^{5/6}u^{1/2}=u^{4/3}$$\n\nSubtract the final exponents:\n\n$$u^{5/4-4/3}=u^{-1/12}$$\n\nThe remaining exponent is the printed negative twelfth, so the statement is True.",
+    "**B.** → False\n\nSolve the outer absolute value first, then unfold the resulting band for the inner distance.\n\nRemove the outer bars:\n\n$$-1\\le|u-3|-5\\le 1$$\n\nIsolate the inner distance:\n\n$$4\\le|u-3|\\le 6$$\n\nUnfold both distance bands:\n\n$$[-3,-1]\\cup[7,9]$$\n\nAll four boundary values produce equality and must be included, so the open intervals make the statement False.",
+    "**C.** → False\n\nEach difference of squares conceals a cross term. Expand both differences before subtracting.\n\nThe larger difference is:\n\n$$(m+5n)^2-(m-5n)^2=4\\cdot 5mn$$\n\nThe smaller difference is:\n\n$$(m+n)^2-(m-n)^2=4mn$$\n\nTheir difference is:\n\n$$4\\cdot 5mn-4mn=16mn$$\n\nThe final coefficient is $16$, not $20$, so the statement is False.",
+    "**D.** → True\n\nFactor the quadratic denominator before turning division by a fraction into multiplication.\n\nFactor the difference of squares:\n\n$$y^2-25=(y-5)(y+5)$$\n\nFlip the lower fraction:\n\n$$\\frac{25m^2n}{5(y-5)(y+5)}\\cdot\\frac{y+5}{mn}$$\n\nCancel only common factors:\n\n$$\\frac{2m}{y-5}$$\n\nThe factor $y+5$ cancels and $y-5$ survives, so the statement is True.",
+    "**E.** → False\n\nConvert every radical to a power before combining exponents. The numerator and denominator must be reduced separately.\n\nThe cube-root factor is:\n\n$$\\sqrt[3]{m\\sqrt{m}}=(m^{3/2})^{1/3}=m^{1/2}$$\n\nThe numerator becomes:\n\n$$m^{3/4}m^{1/2}=m^{5/4}$$\n\nThe denominator becomes:\n\n$$m^{5/6}m^{1/2}=m^{4/3}$$\n\nSubtract the final exponents:\n\n$$m^{5/4-4/3}=m^{-1/12}$$\n\nThe denominator exponent is larger, so the result has exponent $-1/12$, not $1/12$, and the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 139,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests absolute value or a piecewise algebraic rewrite; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. A tests nested fractional powers; B tests nested absolute-value band; C tests tangled squared differences; D tests stacked rational cancellation; E tests nested fractional powers. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-140",
    "case_id": "MATH 2.140",
-   "title": "Exam-style tasks — 4",
+   "title": "Hard mixed exam: 4",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For $u>0$ and $v>0$, it holds that $|u-v|=u-v$.",
-    "If $a+b=s$ and $ab=p$ for real numbers $s$ and $p$, then $a^3+b^3=s^3-3ps$.",
-    "If $x\\neq0$ and $x+\\dfrac1x=k$ for some real $k$, then $x^2+\\dfrac1{x^2}=k^2-2$.",
-    "For every real $z$ with $z\\neq0$, it holds that $z^{-1}+z^{-2}=\\dfrac{1}{z+z^2}$.",
-    "On the stated domain $x\\ge5$, the principal-root expression $\\sqrt{(x-5)^2}$ simplifies to $x-5$."
+    "The solution set of $\\bigl||y-4|-3\\bigr|\\le 2$ is $[-1,3]\\cup[5,9]$.",
+    "For every real pair $(r,s)$, subtracting $(r+s)^2-(r-s)^2$ from $(r+6s)^2-(r-6s)^2$ gives $20rs$.",
+    "For $r,s\\ne0$ and $w\\ne\\pm 6$, the stacked quotient $\\dfrac{\\dfrac{12r^2s}{6(w^2-36)}}{\\dfrac{rs}{w+6}}=\\dfrac{2r}{w+6}$.",
+    "For $r>0$, $\\dfrac{r^{3/4}\\sqrt[3]{r\\sqrt{r}}}{\\sqrt[6]{r^5}\\sqrt{r}}=r^{-1/12}$.",
+    "The solution set of $\\bigl||z-5|-4\\bigr|\\le 1$ is $(0,2)\\cup(8,10)$."
    ],
    "answer_key": [
-    false,
     true,
     true,
     false,
-    true
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nPositivity of $u$ and $v$ says nothing about the sign of their difference.\n\nCorrect rule:\n\n$$|u-v|=\\begin{cases}u-v,&u\\ge v\\\\ v-u,&u<v\\end{cases}$$\n\nWhenever $v>u$ the left-hand side is positive while $u-v$ is negative, so the claimed identity fails on that whole region. So the statement is False.",
-    "**B.** → True\n\nCubing the sum produces the wanted cubes together with a multiple of the product.\n\nCube the first condition:\n\n$$s^3=(a+b)^3=a^3+3a^2b+3ab^2+b^3=a^3+b^3+3ab(a+b)$$\n\nThe correction term contains both given quantities, since $ab=p$ and $a+b=s$:\n\n$$s^3=a^3+b^3+3ps$$\n\nSolving for the cubes gives $a^3+b^3=s^3-3ps$. So the statement is True.",
-    "**C.** → True\n\nSquaring the given sum produces the wanted expression plus a constant cross term.\n\nSquare both sides of $x+\\dfrac1x=k$:\n\n$$\\left(x+\\frac1x\\right)^2=x^2+2\\cdot x\\cdot\\frac1x+\\frac1{x^2}=x^2+2+\\frac1{x^2}$$\n\nThe cross term is the constant $2$ because $x\\cdot\\dfrac1x=1$. Hence\n\n$$x^2+\\frac1{x^2}=k^2-2$$\n\nThe argument uses only $x\\neq0$, so it holds for every admissible $k$. So the statement is True.",
-    "**D.** → False\n\nNegative powers are added over the common denominator $z^2$; they do not combine into a single reciprocal of a sum.\n\nCombine over $z^2$:\n\n$$z^{-1}+z^{-2}=\\frac{z}{z^2}+\\frac{1}{z^2}=\\frac{z+1}{z^2}$$\n\nThe claim offers $\\dfrac{1}{z(z+1)}$. Equating the two and clearing denominators gives\n\n$$(z+1)^2z=z^2\\quad\\Longleftrightarrow\\quad z\\left(z^2+z+1\\right)=0$$\n\nThe quadratic factor has discriminant $1-4=-3<0$, so the only root is $z=0$, which is excluded. The two sides therefore never agree. So the statement is False.",
-    "**E.** → True\n\nThe principal square root of a square is an absolute value, and the domain fixes its sign.\n\n$$\\sqrt{(x-5)^2}=|x-5|$$\n\n$$x\\ge5\\implies |x-5|=x-5$$\n\nNo sign branch is lost under the stated restriction. Therefore the statement is True."
+    "**A.** → True\n\nSolve the outer absolute value first, then unfold the resulting band for the inner distance.\n\nRemove the outer bars:\n\n$$-2\\le|y-4|-3\\le 2$$\n\nIsolate the inner distance:\n\n$$1\\le|y-4|\\le 5$$\n\nUnfold both distance bands:\n\n$$[-1,3]\\cup[5,9]$$\n\nBoth inequalities are non-strict, so all four endpoints belong and the statement is True.",
+    "**B.** → True\n\nEach difference of squares conceals a cross term. Expand both differences before subtracting.\n\nThe larger difference is:\n\n$$(r+6s)^2-(r-6s)^2=4\\cdot 6rs$$\n\nThe smaller difference is:\n\n$$(r+s)^2-(r-s)^2=4rs$$\n\nTheir difference is:\n\n$$4\\cdot 6rs-4rs=20rs$$\n\nThe final coefficient is $20$, exactly as printed, so the statement is True.",
+    "**C.** → False\n\nFactor the quadratic denominator before turning division by a fraction into multiplication.\n\nFactor the difference of squares:\n\n$$w^2-36=(w-6)(w+6)$$\n\nFlip the lower fraction:\n\n$$\\frac{26r^2s}{6(w-6)(w+6)}\\cdot\\frac{w+6}{rs}$$\n\nCancel only common factors:\n\n$$\\frac{2r}{w-6}$$\n\nThe printed denominator is the factor that cancels; $w-6$ survives, so the statement is False.",
+    "**D.** → True\n\nConvert every radical to a power before combining exponents. The numerator and denominator must be reduced separately.\n\nThe cube-root factor is:\n\n$$\\sqrt[3]{r\\sqrt{r}}=(r^{3/2})^{1/3}=r^{1/2}$$\n\nThe numerator becomes:\n\n$$r^{3/4}r^{1/2}=r^{5/4}$$\n\nThe denominator becomes:\n\n$$r^{5/6}r^{1/2}=r^{4/3}$$\n\nSubtract the final exponents:\n\n$$r^{5/4-4/3}=r^{-1/12}$$\n\nThe remaining exponent is the printed negative twelfth, so the statement is True.",
+    "**E.** → False\n\nSolve the outer absolute value first, then unfold the resulting band for the inner distance.\n\nRemove the outer bars:\n\n$$-1\\le|z-5|-4\\le 1$$\n\nIsolate the inner distance:\n\n$$3\\le|z-5|\\le 5$$\n\nUnfold both distance bands:\n\n$$[0,2]\\cup[8,10]$$\n\nAll four boundary values produce equality and must be included, so the open intervals make the statement False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 140,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests principal root with sign restriction. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. A tests nested absolute-value band; B tests tangled squared differences; C tests stacked rational cancellation; D tests nested fractional powers; E tests nested absolute-value band. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-141",
    "case_id": "MATH 2.141",
-   "title": "Exam-style tasks — 5",
+   "title": "Hard mixed exam: 5",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "If $a+b+c=0$, then $a^2+b^2+c^2=-2(ab+bc+ca)$.",
-    "The solution set of the equation $\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$ is $\\{3\\}$.",
-    "For $p>0$ and every positive integer $n$, it holds that $\\left(p^{1/n}\\right)^n=p$.",
-    "For every real $x$, the absolute value has the piecewise form $|x-3|=3-x$ for $x<3$ and $|x-3|=x-3$ for $x\\ge3$.",
-    "For every real $b$, it holds that $b^3\\ge b^2$."
+    "For all real $a$ and $b$, $(a+b)^3+(a-b)^3=2a(a^2+1b^2)$.",
+    "For $x\\ne0,-\\dfrac1{3},-\\dfrac1{4}$, $\\dfrac1{1+\\dfrac1{3+\\dfrac1x}}=\\dfrac{3x+1}{4x+1}$.",
+    "For every real $a$, $\\sqrt{a^2+2a\\sqrt{a^2}+a^2}=2a$.",
+    "The inequality $|x-1|+|x-8|\\le 11$ has solution set $[-1,10]$.",
+    "For all real $p$ and $q$, $(p+q)^3+(p-q)^3=2p(p^2+3q^2)$."
    ],
    "answer_key": [
+    false,
     true,
+    false,
     true,
-    true,
-    true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSquaring the condition produces exactly the two symmetric sums that the claim relates.\n\nSquare the condition:\n\n$$0=(a+b+c)^2=a^2+b^2+c^2+2(ab+bc+ca)$$\n\nMoving the mixed part to the other side gives\n\n$$a^2+b^2+c^2=-2(ab+bc+ca)$$\n\nSo the statement is True.",
-    "**B.** → True\n\nA proportion with nonzero denominators may be cleared by cross-multiplication.\n\nCross-multiply for $x\\neq1$ and $x\\neq-1$:\n\n$$x+1=2(x-1)$$\n\nExpanding and collecting gives $x+1=2x-2$, hence $x=3$. That value violates neither restriction, and substituting it returns $\\tfrac12=\\tfrac12$. So the solution set is exactly $\\{3\\}$ and the statement is True.",
-    "**C.** → True\n\nThe $n$-th root of a positive number is defined as the positive solution of $t^n=p$.\n\nMultiply the exponents:\n\n$$\\left(p^{1/n}\\right)^n=p^{\\frac1n\\cdot n}=p^{1}=p$$\n\nThe exponent product is $1$ for every positive integer $n$, so the two operations undo each other. So the statement is True.",
-    "**D.** → True\n\nThe sign of the inside determines whether the bars preserve or reverse it.\n\n$$x<3\\implies x-3<0\\implies |x-3|=-(x-3)=3-x$$\n\n$$x\\ge3\\implies x-3\\ge0\\implies |x-3|=x-3$$\n\nThe two formulas agree at the breakpoint through the second branch. Therefore the statement is True.",
-    "**E.** → False\n\nComparing the two powers means inspecting the sign of their difference.\n\nFactor the difference:\n\n$$b^3-b^2=b^2(b-1)$$\n\nThe factor $b^2$ is nonnegative, so the sign is decided by $b-1$. For every $b<1$ with $b\\neq0$ the difference is negative, hence $b^3<b^2$ on the whole half-line $b<1$ apart from the single point $b=0$. So the statement is False."
+    "**A.** → False\n\nThe odd mixed terms do not all cancel when the two cubes are added. Keep both cube expansions visible.\n\nExpand the first cube:\n\n$$(a+b)^3=a^3+3a^2b+3ab^2+b^3$$\n\nExpand the second cube:\n\n$$(a-b)^3=a^3-3a^2b+3ab^2-b^3$$\n\nAdd and factor:\n\n$$2a^3+6ab^2=2a(a^2+3b^2)$$\n\nThe surviving quadratic term has coefficient $3$, not $1$, so the identity is False.",
+    "**B.** → True\n\nWork from the innermost denominator outwards. Each forbidden value belongs to a different level.\n\nClear the inner sum:\n\n$$3+\\frac1x=\\frac{3x+1}{x}$$\n\nBuild the next denominator:\n\n$$1+\\frac{x}{3x+1}=\\frac{4x+1}{3x+1}$$\n\nTake the outer reciprocal:\n\n$$\\dfrac{3x+1}{4x+1}$$\n\nThe fully inverted fraction matches the claim, so the statement is True.",
+    "**C.** → False\n\nThe principal square root of a square is an absolute value. Resolve that point before simplifying the outer radical.\n\nOpen the inner square root:\n\n$$\\sqrt{a^2}=|a|$$\n\nRewrite the radicand:\n\n$$2a^2+2a|a|$$\n\nTake the principal outer root:\n\n$$a\\ge0:\\ 2a,\\qquad a<0:\\ 0$$\n\nFor $a<0$ the left side is $0$ while $2a<0$, and for $a>0$ they agree; the universal statement is False.",
+    "**D.** → True\n\nThe sum is constant between the two marked points and grows twice as fast outside them.\n\nBetween the marks:\n\n$$1\\le x\\le 8:\\quad |x-1|+|x-8|=7$$\n\nTo the left:\n\n$$x<1:\\quad 9-2x\\le 11\\iff x\\ge -1$$\n\nTo the right:\n\n$$x>8:\\quad 2x-7\\le 11\\iff x\\le 10$$\n\nJoin the three pieces:\n\n$$[-1,10]$$\n\nThe outer allowance extends the segment by the stated amount at both ends, so the statement is True.",
+    "**E.** → True\n\nThe odd mixed terms do not all cancel when the two cubes are added. Keep both cube expansions visible.\n\nExpand the first cube:\n\n$$(p+q)^3=p^3+3p^2q+3pq^2+q^3$$\n\nExpand the second cube:\n\n$$(p-q)^3=p^3-3p^2q+3pq^2-q^3$$\n\nAdd and factor:\n\n$$2p^3+6pq^2=2p(p^2+3q^2)$$\n\nThe surviving quadratic term has coefficient $3$, so the identity is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 141,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests piecewise definition of a shifted modulus; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. A tests paired cubes; B tests continued fraction; C tests principal-root sign trap; D tests sum of two distances; E tests paired cubes. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-142",
    "case_id": "MATH 2.142",
-   "title": "Exam-style tasks — 6",
+   "title": "Hard mixed exam: 6",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "If $abc\\neq0$ and $ab+bc+ca=0$, then $\\dfrac1a+\\dfrac1b+\\dfrac1c=0$.",
-    "For $s>0$, it holds that $\\sqrt{s+\\dfrac1s-2}=\\sqrt s+\\dfrac{1}{\\sqrt s}$.",
-    "For every real $v$, the inequality $|v-1|<2$ holds precisely when $-1<v<3$.",
-    "If $s+t=u$, then $s^3+t^3+3stu=u^3$.",
-    "For $z>1$, it holds that $\\dfrac{z+1}{z-1}>1$."
+    "For $t\\ne0,-\\dfrac1{4},-\\dfrac1{5}$, $\\dfrac1{1+\\dfrac1{4+\\dfrac1t}}=\\dfrac{4t+1}{5t-1}$.",
+    "For every real $p$, $\\sqrt{p^2+2|p|\\sqrt{p^2}+p^2}=2|p|$.",
+    "The inequality $|t-2|+|t-7|\\le 7$ has solution set $[3,6]$.",
+    "For all real $u$ and $v$, $(u+v)^3+(u-v)^3=2u(u^2+1v^2)$.",
+    "For $z\\ne0,-\\dfrac1{5},-\\dfrac1{6}$, $\\dfrac1{1+\\dfrac1{5+\\dfrac1z}}=\\dfrac{5z+1}{6z+1}$."
    ],
    "answer_key": [
-    true,
     false,
     true,
-    true,
+    false,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe three reciprocals share the denominator $abc$, which is nonzero by assumption.\n\nCombine over $abc$:\n\n$$\\frac1a+\\frac1b+\\frac1c=\\frac{bc+ca+ab}{abc}$$\n\nThe numerator is exactly the given combination $ab+bc+ca=0$, and the denominator stays nonzero, so the quotient is $0$. So the statement is True.",
-    "**B.** → False\n\nThe radicand is a completed square, but the square that produces it carries a minus sign.\n\nIdentify the square:\n\n$$\\left(\\sqrt s-\\frac{1}{\\sqrt s}\\right)^2=s-2+\\frac1s$$\n\nHence the correct value of the root is the absolute value of that difference:\n\n$$\\sqrt{s+\\frac1s-2}=\\left|\\sqrt s-\\frac{1}{\\sqrt s}\\right|$$\n\nThe claimed right-hand side is the corresponding sum, whose square is $s+2+\\dfrac1s$. The two differ by $4$ under the root, so they never agree for $s>0$. So the statement is False.",
-    "**C.** → True\n\nAn absolute-value bound below a positive number is equivalent to a two-sided bound.\n\nUnfold the absolute value:\n\n$$|v-1|<2\\quad\\Longleftrightarrow\\quad-2<v-1<2$$\n\nAdding $1$ throughout shifts the interval:\n\n$$-1<v<3$$\n\nBoth steps are equivalences, so the two descriptions define the same set. So the statement is True.",
-    "**D.** → True\n\nCubing the hypothesis produces the mixed term in a form that the condition can absorb.\n\nCube both sides of $s+t=u$:\n\n$$u^3=(s+t)^3=s^3+3s^2t+3st^2+t^3=s^3+t^3+3st(s+t)$$\n\nThe bracket $s+t$ is the given $u$, so the mixed term becomes $3stu$:\n\n$$u^3=s^3+t^3+3stu$$\n\nSo the statement is True.",
-    "**E.** → True\n\nComparing a fraction with $1$ is done by subtracting $1$ and inspecting the sign.\n\nSubtract $1$:\n\n$$\\frac{z+1}{z-1}-1=\\frac{(z+1)-(z-1)}{z-1}=\\frac{2}{z-1}$$\n\nFor $z>1$ the denominator $z-1$ is positive, so the difference $\\dfrac{2}{z-1}$ is positive and the fraction exceeds $1$. So the statement is True."
+    "**A.** → False\n\nWork from the innermost denominator outwards. Each forbidden value belongs to a different level.\n\nClear the inner sum:\n\n$$4+\\frac1t=\\frac{4t+1}{t}$$\n\nBuild the next denominator:\n\n$$1+\\frac{t}{4t+1}=\\frac{5t+1}{4t+1}$$\n\nTake the outer reciprocal:\n\n$$\\dfrac{4t+1}{5t+1}$$\n\nThe constant in the final denominator remains positive; the printed minus sign makes the statement False.",
+    "**B.** → True\n\nThe principal square root of a square is an absolute value. Resolve that point before simplifying the outer radical.\n\nOpen the inner square root:\n\n$$\\sqrt{p^2}=|p|$$\n\nRewrite the radicand:\n\n$$2p^2+2|p|^2=4p^2$$\n\nTake the principal outer root:\n\n$$\\sqrt{4p^2}=2|p|$$\n\nBoth principal-root steps preserve the absolute value, so the statement is True.",
+    "**C.** → False\n\nThe sum is constant between the two marked points and grows twice as fast outside them.\n\nBetween the marks:\n\n$$2\\le t\\le 7:\\quad |t-2|+|t-7|=5$$\n\nTo the left:\n\n$$t<2:\\quad 9-2t\\le 7\\iff t\\ge 1$$\n\nTo the right:\n\n$$t>7:\\quad 2t-5\\le 7\\iff t\\le 8$$\n\nJoin the three pieces:\n\n$$[1,8]$$\n\nThe inequality expands the central segment; it does not shrink it, so the statement is False.",
+    "**D.** → False\n\nThe odd mixed terms do not all cancel when the two cubes are added. Keep both cube expansions visible.\n\nExpand the first cube:\n\n$$(u+v)^3=u^3+3u^2v+3uv^2+v^3$$\n\nExpand the second cube:\n\n$$(u-v)^3=u^3-3u^2v+3uv^2-v^3$$\n\nAdd and factor:\n\n$$2u^3+6uv^2=2u(u^2+3v^2)$$\n\nThe surviving quadratic term has coefficient $3$, not $1$, so the identity is False.",
+    "**E.** → True\n\nWork from the innermost denominator outwards. Each forbidden value belongs to a different level.\n\nClear the inner sum:\n\n$$5+\\frac1z=\\frac{5z+1}{z}$$\n\nBuild the next denominator:\n\n$$1+\\frac{z}{5z+1}=\\frac{6z+1}{5z+1}$$\n\nTake the outer reciprocal:\n\n$$\\dfrac{5z+1}{6z+1}$$\n\nThe fully inverted fraction matches the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 142,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests absolute value or a piecewise algebraic rewrite; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. A tests continued fraction; B tests principal-root sign trap; C tests sum of two distances; D tests paired cubes; E tests continued fraction. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-143",
    "case_id": "MATH 2.143",
-   "title": "Exam-style tasks — 7",
+   "title": "Hard mixed exam: 7",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For nonzero $a$ and $b$ with $a+b\\neq0$, it holds that $\\dfrac{a^{-1}-b^{-1}}{a^{-1}+b^{-1}}=\\dfrac{b-a}{b+a}$.",
-    "For every real $x$, the bounded expression $\\dfrac{|x|}{1+|x|}$ is strictly less than $1$.",
-    "If $u+v+w=0$, then $u^3+v^3+w^3=0$.",
-    "The identity $\\dfrac{x^2-1}{x-1}=x+1$ holds for every real $x$.",
-    "For $a>0$ and $b>0$, it holds that $\\sqrt{a+b}<\\sqrt a+\\sqrt b$."
+    "For every real $u$, $\\sqrt{u^2+2u\\sqrt{u^2}+u^2}=2u$.",
+    "The inequality $|u-3|+|u-9|\\le 10$ has solution set $[1,11]$.",
+    "For all real $m$ and $n$, $(m+n)^3+(m-n)^3=2m(m^2+3n^2)$.",
+    "For $y\\ne0,-\\dfrac1{2},-\\dfrac1{3}$, $\\dfrac1{1+\\dfrac1{2+\\dfrac1y}}=\\dfrac{2y+1}{3y-1}$.",
+    "For every real $m$, $\\sqrt{m^2+2|m|\\sqrt{m^2}+m^2}=2|m|$."
    ],
    "answer_key": [
-    true,
-    true,
     false,
+    true,
+    true,
     false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nNumerator and denominator are combined over $ab$, which then cancels.\n\nCombine both levels over $ab$:\n\n$$a^{-1}-b^{-1}=\\frac{b-a}{ab},\\qquad a^{-1}+b^{-1}=\\frac{b+a}{ab}$$\n\nDividing the two multiplies by the reciprocal of the second, and the factor $ab$ drops out:\n\n$$\\frac{\\frac{b-a}{ab}}{\\frac{b+a}{ab}}=\\frac{b-a}{ab}\\cdot\\frac{ab}{b+a}=\\frac{b-a}{b+a}$$\n\nSo the statement is True.",
-    "**B.** → True\n\nThe denominator is positive, so comparison with $1$ may be made without reversing the inequality.\n\n$$1+|x|>0$$\n\n$$\\frac{|x|}{1+|x|}<1\\iff |x|<1+|x|$$\n\n$$0<1$$\n\nThe final inequality is always strict, including at $x=0$. Therefore the statement is True.",
-    "**C.** → False\n\nUnder a vanishing sum the three cubes do collapse, but to a product rather than to zero.\n\nEliminate $w$ by writing $w=-(u+v)$:\n\n$$u^3+v^3+w^3=u^3+v^3-(u+v)^3=-3uv(u+v)$$\n\nSince $-(u+v)=w$, the value is $3uvw$:\n\n$$u^3+v^3+w^3=3uvw$$\n\nThat vanishes only when at least one of the letters is $0$, so any triple with $uvw\\neq0$ and $u+v+w=0$ refutes the claim. So the statement is False.",
-    "**D.** → False\n\nThe algebra is correct, but the claim is made on a domain that the left-hand side does not cover.\n\nFactor and cancel for $x\\neq1$:\n\n$$\\frac{x^2-1}{x-1}=\\frac{(x-1)(x+1)}{x-1}=x+1$$\n\nAt $x=1$ the denominator is $0$, so the left-hand side is undefined while the right-hand side equals $2$. An identity claimed for every real $x$ must hold at $x=1$ as well. So the statement is False.",
-    "**E.** → True\n\nBoth sides are positive, so squaring is an equivalent comparison.\n\nSquare the right-hand side:\n\n$$\\left(\\sqrt a+\\sqrt b\\right)^2=a+2\\sqrt{ab}+b$$\n\nAgainst the square $a+b$ of the left-hand side this is larger by $2\\sqrt{ab}$, which is strictly positive because $a>0$ and $b>0$. A larger square with positive bases means a larger value. So the statement is True."
+    "**A.** → False\n\nThe principal square root of a square is an absolute value. Resolve that point before simplifying the outer radical.\n\nOpen the inner square root:\n\n$$\\sqrt{u^2}=|u|$$\n\nRewrite the radicand:\n\n$$2u^2+2u|u|$$\n\nTake the principal outer root:\n\n$$u\\ge0:\\ 2u,\\qquad u<0:\\ 0$$\n\nFor $u<0$ the left side is $0$ while $2u<0$, and for $u>0$ they agree; the universal statement is False.",
+    "**B.** → True\n\nThe sum is constant between the two marked points and grows twice as fast outside them.\n\nBetween the marks:\n\n$$3\\le u\\le 9:\\quad |u-3|+|u-9|=6$$\n\nTo the left:\n\n$$u<3:\\quad 12-2u\\le 10\\iff u\\ge 1$$\n\nTo the right:\n\n$$u>9:\\quad 2u-6\\le 10\\iff u\\le 11$$\n\nJoin the three pieces:\n\n$$[1,11]$$\n\nThe outer allowance extends the segment by the stated amount at both ends, so the statement is True.",
+    "**C.** → True\n\nThe odd mixed terms do not all cancel when the two cubes are added. Keep both cube expansions visible.\n\nExpand the first cube:\n\n$$(m+n)^3=m^3+3m^2n+3mn^2+n^3$$\n\nExpand the second cube:\n\n$$(m-n)^3=m^3-3m^2n+3mn^2-n^3$$\n\nAdd and factor:\n\n$$2m^3+6mn^2=2m(m^2+3n^2)$$\n\nThe surviving quadratic term has coefficient $3$, so the identity is True.",
+    "**D.** → False\n\nWork from the innermost denominator outwards. Each forbidden value belongs to a different level.\n\nClear the inner sum:\n\n$$2+\\frac1y=\\frac{2y+1}{y}$$\n\nBuild the next denominator:\n\n$$1+\\frac{y}{2y+1}=\\frac{3y+1}{2y+1}$$\n\nTake the outer reciprocal:\n\n$$\\dfrac{2y+1}{3y+1}$$\n\nThe constant in the final denominator remains positive; the printed minus sign makes the statement False.",
+    "**E.** → True\n\nThe principal square root of a square is an absolute value. Resolve that point before simplifying the outer radical.\n\nOpen the inner square root:\n\n$$\\sqrt{m^2}=|m|$$\n\nRewrite the radicand:\n\n$$2m^2+2|m|^2=4m^2$$\n\nTake the principal outer root:\n\n$$\\sqrt{4m^2}=2|m|$$\n\nBoth principal-root steps preserve the absolute value, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 143,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests bounded modulus quotient; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. A tests principal-root sign trap; B tests sum of two distances; C tests paired cubes; D tests continued fraction; E tests principal-root sign trap. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-144",
    "case_id": "MATH 2.144",
-   "title": "Exam-style tasks — 8",
+   "title": "Hard mixed exam: 8",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For real numbers $a$ and $b$, the identity $|a+b|=|a|+|b|$ holds if and only if $ab\\ge0$.",
-    "If the equation $ax^2+bx+c=0$ with $a\\neq0$ has no real solution, then $b^2>4ac$.",
-    "If $x$, $y$, and $z$ are nonzero and $\\dfrac xy=\\dfrac yz$, then $y^2=xz$.",
-    "For $p>0$ with $p\\neq1$, it holds that $\\dfrac{1}{\\sqrt p-1}=\\dfrac{\\sqrt p+1}{p-1}$.",
-    "For all real $x$, the difference $|x+1|-|x-1|$ remains between $-2$ and $2$, inclusive."
+    "The inequality $|y-4|+|y-11|\\le 9$ has solution set $[5,10]$.",
+    "For all real $r$ and $s$, $(r+s)^3+(r-s)^3=2r(r^2+1s^2)$.",
+    "For $w\\ne0,-\\dfrac1{3},-\\dfrac1{4}$, $\\dfrac1{1+\\dfrac1{3+\\dfrac1w}}=\\dfrac{3w+1}{4w+1}$.",
+    "For every real $r$, $\\sqrt{r^2+2r\\sqrt{r^2}+r^2}=2r$.",
+    "The inequality $|z-5|+|z-10|\\le 9$ has solution set $[3,12]$."
    ],
    "answer_key": [
-    true,
+    false,
     false,
     true,
-    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nEquality in the triangle inequality occurs precisely when the two real summands have compatible signs.\n\n$$|a+b|\\le |a|+|b|$$\n\n$$|a+b|=|a|+|b|\\iff ab\\ge0$$\n\nA zero summand is included because then $ab=0$ and equality still holds. Therefore the statement is True.",
-    "**B.** → False\n\nThe number of real roots is decided by the sign of the discriminant $b^2-4ac$.\n\nComplete the square:\n\n$$ax^2+bx+c=a\\left(x+\\frac{b}{2a}\\right)^2+\\frac{4ac-b^2}{4a}$$\n\nA real solution requires $\\left(x+\\frac{b}{2a}\\right)^2=\\frac{b^2-4ac}{4a^2}$, which is solvable exactly when $b^2-4ac\\ge0$. Absence of real solutions therefore means $b^2-4ac<0$, that is $b^2<4ac$. The claim states the opposite inequality. So the statement is False.",
-    "**C.** → True\n\nA proportion may be cleared by multiplying both sides by the two denominators.\n\nMultiply the equation by $yz$:\n\n$$\\frac xy\\cdot yz=\\frac yz\\cdot yz$$\n\nThe left-hand side becomes $xz$ and the right-hand side becomes $y^2$, so $y^2=xz$. The step is legitimate because $y$ and $z$ are nonzero. So the statement is True.",
-    "**D.** → True\n\nMultiplying numerator and denominator by the conjugate of the denominator removes the root from below.\n\nExpand the conjugate product in the denominator:\n\n$$\\left(\\sqrt p-1\\right)\\left(\\sqrt p+1\\right)=p-1$$\n\nHence\n\n$$\\frac{1}{\\sqrt p-1}=\\frac{\\sqrt p+1}{\\left(\\sqrt p-1\\right)\\left(\\sqrt p+1\\right)}=\\frac{\\sqrt p+1}{p-1}$$\n\nThe restriction $p\\neq1$ keeps $p-1\\neq0$, and $p>0$ makes the root defined. So the statement is True.",
-    "**E.** → True\n\nThe reverse triangle inequality bounds the change in distance caused by shifting the reference point.\n\n$$\\bigl||x+1|-|x-1|\\bigr|\\le |(x+1)-(x-1)|$$\n\n$$\\bigl||x+1|-|x-1|\\bigr|\\le2$$\n\n$$-2\\le |x+1|-|x-1|\\le2$$\n\nThe endpoints are attained on the outer rays, so the closed bound is sharp. Therefore the statement is True."
+    "**A.** → False\n\nThe sum is constant between the two marked points and grows twice as fast outside them.\n\nBetween the marks:\n\n$$4\\le y\\le 11:\\quad |y-4|+|y-11|=7$$\n\nTo the left:\n\n$$y<4:\\quad 15-2y\\le 9\\iff y\\ge 3$$\n\nTo the right:\n\n$$y>11:\\quad 2y-7\\le 9\\iff y\\le 12$$\n\nJoin the three pieces:\n\n$$[3,12]$$\n\nThe inequality expands the central segment; it does not shrink it, so the statement is False.",
+    "**B.** → False\n\nThe odd mixed terms do not all cancel when the two cubes are added. Keep both cube expansions visible.\n\nExpand the first cube:\n\n$$(r+s)^3=r^3+3r^2s+3rs^2+s^3$$\n\nExpand the second cube:\n\n$$(r-s)^3=r^3-3r^2s+3rs^2-s^3$$\n\nAdd and factor:\n\n$$2r^3+6rs^2=2r(r^2+3s^2)$$\n\nThe surviving quadratic term has coefficient $3$, not $1$, so the identity is False.",
+    "**C.** → True\n\nWork from the innermost denominator outwards. Each forbidden value belongs to a different level.\n\nClear the inner sum:\n\n$$3+\\frac1w=\\frac{3w+1}{w}$$\n\nBuild the next denominator:\n\n$$1+\\frac{w}{3w+1}=\\frac{4w+1}{3w+1}$$\n\nTake the outer reciprocal:\n\n$$\\dfrac{3w+1}{4w+1}$$\n\nThe fully inverted fraction matches the claim, so the statement is True.",
+    "**D.** → False\n\nThe principal square root of a square is an absolute value. Resolve that point before simplifying the outer radical.\n\nOpen the inner square root:\n\n$$\\sqrt{r^2}=|r|$$\n\nRewrite the radicand:\n\n$$2r^2+2r|r|$$\n\nTake the principal outer root:\n\n$$r\\ge0:\\ 2r,\\qquad r<0:\\ 0$$\n\nFor $r<0$ the left side is $0$ while $2r<0$, and for $r>0$ they agree; the universal statement is False.",
+    "**E.** → True\n\nThe sum is constant between the two marked points and grows twice as fast outside them.\n\nBetween the marks:\n\n$$5\\le z\\le 10:\\quad |z-5|+|z-10|=5$$\n\nTo the left:\n\n$$z<5:\\quad 15-2z\\le 9\\iff z\\ge 3$$\n\nTo the right:\n\n$$z>10:\\quad 2z-5\\le 9\\iff z\\le 12$$\n\nJoin the three pieces:\n\n$$[3,12]$$\n\nThe outer allowance extends the segment by the stated amount at both ends, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 144,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests triangle-inequality equality case; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests reverse-triangle-inequality bound. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. A tests sum of two distances; B tests paired cubes; C tests continued fraction; D tests principal-root sign trap; E tests sum of two distances. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-145",
    "case_id": "MATH 2.145",
-   "title": "Exam-style tasks — 9",
+   "title": "Hard mixed exam: 9",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For $u>0$ and $v>0$, it holds that $\\left(u^2v\\right)^3=u^6v^3$.",
-    "If $a+b+c=0$ and $abc\\neq0$, then $\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=0$.",
-    "For $x\\ge0$, it holds that $\\sqrt x+\\sqrt{x+2\\sqrt x+1}=2\\sqrt x+1$.",
-    "For real $x$, the inequality $|2x-1|<3$ is equivalent to the open interval $-1<x<2$.",
-    "For every positive integer $n$, the polynomial $u^n-1$ is divisible by $u-1$."
+    "If $S=a+b$ and $P=ab$ for real $a,b$, then $a^4+b^4=(S^2-2P)^2-2P^2$.",
+    "For $x\\ne\\pm 2,\\pm 5$, $\\dfrac{x^2-4}{x^2-25}\\cdot\\dfrac{x-5}{x-2}=\\dfrac{x-2}{x-5}$.",
+    "If $a,b\\ne0$ and $a^{-2}b^3=4$, then $a^4b^{-6}+2a^{-6}b^9=\\dfrac{2049}{16}$.",
+    "The equality $|x^2-6x+5|=(x-1)(x-5)$ holds exactly for $(-\\infty,1)\\cup(5,\\infty)$.",
+    "If $S=p+q$ and $P=pq$ for real $p,q$, then $p^4+q^4=(S^2-2P)^2+2P^2$."
    ],
    "answer_key": [
     true,
+    false,
     true,
-    true,
-    true,
-    true
+    false,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nEach factor inside the bracket is raised to the outer exponent.\n\nDistribute the exponent $3$:\n\n$$\\left(u^2v\\right)^3=\\left(u^2\\right)^3v^3=u^{2\\cdot3}v^3=u^6v^3$$\n\nSo the statement is True.",
-    "**B.** → True\n\nAll three denominators divide $abc$, which is nonzero by assumption.\n\nCombine over $abc$:\n\n$$\\frac{1}{ab}+\\frac{1}{bc}+\\frac{1}{ca}=\\frac{c}{abc}+\\frac{a}{abc}+\\frac{b}{abc}=\\frac{a+b+c}{abc}$$\n\nThe numerator is the given sum $a+b+c=0$ while the denominator stays nonzero, so the quotient is $0$. So the statement is True.",
-    "**C.** → True\n\nThe second radicand is a completed square in $\\sqrt x$.\n\nIdentify the square:\n\n$$x+2\\sqrt x+1=\\left(\\sqrt x\\right)^2+2\\sqrt x+1=\\left(\\sqrt x+1\\right)^2$$\n\nSince $\\sqrt x+1\\ge1>0$, the root returns the bracket itself:\n\n$$\\sqrt{x+2\\sqrt x+1}=\\sqrt x+1$$\n\nAdding the first term gives $\\sqrt x+\\left(\\sqrt x+1\\right)=2\\sqrt x+1$. So the statement is True.",
-    "**D.** → True\n\nA strict absolute-value bound unfolds into a strict double inequality.\n\n$$|2x-1|<3\\iff -3<2x-1<3$$\n\n$$-2<2x<4$$\n\n$$-1<x<2$$\n\nStrictness excludes both endpoints. Therefore the statement is True.",
-    "**E.** → True\n\nDivisibility by a linear factor is decided by the value of the polynomial at the zero of that factor.\n\nEvaluate at the zero of $u-1$:\n\n$$1^n-1=0$$\n\nThe remainder vanishes for every positive integer $n$, so the division is exact. The quotient is the geometric sum:\n\n$$u^n-1=(u-1)\\left(u^{n-1}+u^{n-2}+\\cdots+u+1\\right)$$\n\nSo the statement is True."
+    "**A.** → True\n\nThe given symmetric quantities must first recover the sum of the squares. The last sign is the trap.\n\nRecover the square sum:\n\n$$S^2-2P=(a+b)^2-2ab=a^2+b^2$$\n\nSquare that result:\n\n$$(S^2-2P)^2=a^4+2a^2b^2+b^4$$\n\nRemove the mixed term:\n\n$$(S^2-2P)^2-2P^2=a^4+b^4$$\n\nThe subtraction removes exactly the duplicated mixed term, so the statement is True.",
+    "**B.** → False\n\nAll four linear factors must be exposed before cancellation. The original holes remain even after factors disappear.\n\nFactor both quadratics:\n\n$$\\frac{(x-2)(x+2)}{(x-5)(x+5)}\\cdot\\frac{x-5}{x-2}$$\n\nCancel the permitted factors:\n\n$$\\dfrac{x+2}{x+5}$$\n\nRetain the original domain:\n\n$$x\\notin\\{-5,-2,2,5\\}$$\n\nThe minus factors are precisely the cancelled ones; the surviving quotient has plus signs, so the statement is False.",
+    "**C.** → True\n\nUse the given monomial as one unit. Substituting individual values for the letters is unnecessary and can hide the reciprocal term.\n\nSet the given unit:\n\n$$R=a^{-2}b^3=4$$\n\nRewrite both summands:\n\n$$a^4b^{-6}=R^{-2},\\qquad 2a^{-6}b^9=2R^3$$\n\nSubstitute only after rewriting:\n\n$$R^{-2}+2R^3=4^{-2}+2\\cdot4^3$$\n\nFinish the sum:\n\n$$\\frac1{16}+128=\\frac{2049}{16}$$\n\nThe reciprocal contribution is included in the printed value, so the statement is True.",
+    "**D.** → False\n\nThe polynomial factorization is valid everywhere, but dropping the outer bars requires the product to be nonnegative.\n\nFactor inside the bars:\n\n$$x^2-6x+5=(x-1)(x-5)$$\n\nTranslate equality with its magnitude:\n\n$$|(x-1)(x-5)|=(x-1)(x-5)$$\n\nRequire a nonnegative product:\n\n$$(x-1)(x-5)\\ge0$$\n\nSolve the sign condition:\n\n$$(-\\infty,1]\\cup[5,\\infty)$$\n\nAt both roots the two sides equal zero, so excluding the endpoints makes the statement False.",
+    "**E.** → False\n\nThe given symmetric quantities must first recover the sum of the squares. The last sign is the trap.\n\nRecover the square sum:\n\n$$S^2-2P=(p+q)^2-2pq=p^2+q^2$$\n\nSquare that result:\n\n$$(S^2-2P)^2=p^4+2p^2q^2+q^4$$\n\nRemove the mixed term:\n\n$$(S^2-2P)^2-2P^2=p^4+q^4$$\n\nA plus sign doubles rather than removes the mixed contribution, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 145,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests strict absolute-value interval; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. A tests symmetric fourth powers; B tests factor-chain rational identity; C tests given monomial substitution; D tests absolute value of a factored quadratic; E tests symmetric fourth powers. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-146",
    "case_id": "MATH 2.146",
-   "title": "Exam-style tasks — 10",
+   "title": "Hard mixed exam: 10",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For nonzero $x$ and $y$, it holds that $\\dfrac yx+\\dfrac xy=\\dfrac{x^2+y^2}{xy}$.",
-    "For every real $v$, it holds that $\\sqrt{(v-2)^2}=v-2$.",
-    "For every real $q$, it holds that $|q|-|q-2|=2$.",
-    "If $a^2=ac$ and $a\\neq0$, then $a=c$.",
-    "If $a+b=s$ and $ab=p$ with $p\\neq0$ and $s\\neq0$, then $\\dfrac1a+\\dfrac1b=\\dfrac ps$."
+    "For $t\\ne\\pm 3,\\pm 6$, $\\dfrac{t^2-9}{t^2-36}\\cdot\\dfrac{t-6}{t-3}=\\dfrac{t+3}{t+6}$.",
+    "If $p,q\\ne0$ and $p^{-2}q^3=4$, then $p^4q^{-6}+2p^{-6}q^9=128$.",
+    "The equality $|t^2-9t+14|=(t-2)(t-7)$ holds exactly for $(-\\infty,2]\\cup[7,\\infty)$.",
+    "If $S=u+v$ and $P=uv$ for real $u,v$, then $u^4+v^4=(S^2-2P)^2-2P^2$.",
+    "For $z\\ne\\pm 4,\\pm 7$, $\\dfrac{z^2-16}{z^2-49}\\cdot\\dfrac{z-7}{z-4}=\\dfrac{z-4}{z-7}$."
    ],
    "answer_key": [
     true,
     false,
-    false,
+    true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe common denominator of the two fractions is the product $xy$.\n\nExpand each fraction to the denominator $xy$:\n\n$$\\frac yx+\\frac xy=\\frac{y\\cdot y}{xy}+\\frac{x\\cdot x}{xy}=\\frac{y^2+x^2}{xy}$$\n\nBoth letters are nonzero, so $xy\\neq0$ and the combination is legitimate. So the statement is True.",
-    "**B.** → False\n\nA square root of a square returns the absolute value of the bracket.\n\nCorrect rule:\n\n$$\\sqrt{(v-2)^2}=|v-2|$$\n\nFor $v<2$ the left-hand side is positive while $v-2$ is negative, so the claimed identity fails on the whole half-line $v<2$. So the statement is False.",
-    "**C.** → False\n\nA difference of two absolute values changes with the position of $q$ relative to both reference points.\n\nEvaluate on the left region, where $q<0$:\n\n$$|q|-|q-2|=(-q)-(2-q)=-2$$\n\nThere the value is $-2$, not $2$. The claimed value $2$ appears only for $q\\ge2$, so the identity is far from universal. So the statement is False.",
-    "**D.** → True\n\nWith the factor known to be nonzero, cancellation is legitimate.\n\nCollect and factor:\n\n$$a^2-ac=0\\quad\\Longleftrightarrow\\quad a(a-c)=0$$\n\nThe hypothesis $a\\neq0$ rules out the first factor, so the second must vanish, that is $a-c=0$. So the statement is True.",
-    "**E.** → False\n\nAdding the two reciprocals produces the sum on top and the product below, not the other way round.\n\nCombine over $ab$:\n\n$$\\frac1a+\\frac1b=\\frac{b+a}{ab}=\\frac sp$$\n\nThe correct value is $\\dfrac sp$, while the claim offers the reciprocal $\\dfrac ps$. Equality would force $s^2=p^2$, so the claim fails for every pair whose sum and product differ in absolute value. So the statement is False."
+    "**A.** → True\n\nAll four linear factors must be exposed before cancellation. The original holes remain even after factors disappear.\n\nFactor both quadratics:\n\n$$\\frac{(t-3)(t+3)}{(t-6)(t+6)}\\cdot\\frac{t-6}{t-3}$$\n\nCancel the permitted factors:\n\n$$\\dfrac{t+3}{t+6}$$\n\nRetain the original domain:\n\n$$t\\notin\\{-6,-3,3,6\\}$$\n\nThe uncancelled plus factors give the printed quotient on the stated domain, so the statement is True.",
+    "**B.** → False\n\nUse the given monomial as one unit. Substituting individual values for the letters is unnecessary and can hide the reciprocal term.\n\nSet the given unit:\n\n$$R=p^{-2}q^3=4$$\n\nRewrite both summands:\n\n$$p^4q^{-6}=R^{-2},\\qquad 2p^{-6}q^9=2R^3$$\n\nSubstitute only after rewriting:\n\n$$R^{-2}+2R^3=4^{-2}+2\\cdot4^3$$\n\nFinish the sum:\n\n$$\\frac1{16}+128=\\frac{2049}{16}$$\n\nThe value $128$ drops the nonzero term $1/16$, so the statement is False.",
+    "**C.** → True\n\nThe polynomial factorization is valid everywhere, but dropping the outer bars requires the product to be nonnegative.\n\nFactor inside the bars:\n\n$$t^2-9t+14=(t-2)(t-7)$$\n\nTranslate equality with its magnitude:\n\n$$|(t-2)(t-7)|=(t-2)(t-7)$$\n\nRequire a nonnegative product:\n\n$$(t-2)(t-7)\\ge0$$\n\nSolve the sign condition:\n\n$$(-\\infty,2]\\cup[7,\\infty)$$\n\nThe roots give zero on both sides and are included, so the stated set is exact.",
+    "**D.** → True\n\nThe given symmetric quantities must first recover the sum of the squares. The last sign is the trap.\n\nRecover the square sum:\n\n$$S^2-2P=(u+v)^2-2uv=u^2+v^2$$\n\nSquare that result:\n\n$$(S^2-2P)^2=u^4+2u^2v^2+v^4$$\n\nRemove the mixed term:\n\n$$(S^2-2P)^2-2P^2=u^4+v^4$$\n\nThe subtraction removes exactly the duplicated mixed term, so the statement is True.",
+    "**E.** → False\n\nAll four linear factors must be exposed before cancellation. The original holes remain even after factors disappear.\n\nFactor both quadratics:\n\n$$\\frac{(z-4)(z+4)}{(z-7)(z+7)}\\cdot\\frac{z-7}{z-4}$$\n\nCancel the permitted factors:\n\n$$\\dfrac{z+4}{z+7}$$\n\nRetain the original domain:\n\n$$z\\notin\\{-7,-4,4,7\\}$$\n\nThe minus factors are precisely the cancelled ones; the surviving quotient has plus signs, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 146,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests absolute value or a piecewise algebraic rewrite; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. A tests factor-chain rational identity; B tests given monomial substitution; C tests absolute value of a factored quadratic; D tests symmetric fourth powers; E tests factor-chain rational identity. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-147",
    "case_id": "MATH 2.147",
-   "title": "Exam-style tasks — 11",
+   "title": "Hard mixed exam: 11",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For $y>0$, it holds that $\\left(\\dfrac1y\\right)^{-1/2}=\\dfrac{1}{\\sqrt y}$.",
-    "For every real $x$, the distance sum $|x-2|+|x+2|$ equals $4$ exactly when $-2\\le x\\le2$.",
-    "If $x^2=xy$, then $x=y$.",
-    "For all real $q$ and $r$ with $r\\neq0$, it holds that $\\dfrac{r+q}{r}=1+q$.",
-    "For $q\\ge0$, it holds that $\\dfrac{q-1}{\\sqrt q+1}=\\sqrt q-1$."
+    "If $u,v\\ne0$ and $u^{-2}v^3=4$, then $u^4v^{-6}+2u^{-6}v^9=\\dfrac{2049}{16}$.",
+    "The equality $|u^2-9u+18|=(u-3)(u-6)$ holds exactly for $(-\\infty,3)\\cup(6,\\infty)$.",
+    "If $S=m+n$ and $P=mn$ for real $m,n$, then $m^4+n^4=(S^2-2P)^2+2P^2$.",
+    "For $y\\ne\\pm 5,\\pm 8$, $\\dfrac{y^2-25}{y^2-64}\\cdot\\dfrac{y-8}{y-5}=\\dfrac{y+5}{y+8}$.",
+    "If $m,n\\ne0$ and $m^{-2}n^3=4$, then $m^4n^{-6}+2m^{-6}n^9=128$."
    ],
    "answer_key": [
-    false,
     true,
     false,
     false,
-    true
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA negative exponent applied to a reciprocal turns the base back the right way up.\n\nRewrite the base and multiply the exponents:\n\n$$\\left(\\frac1y\\right)^{-1/2}=\\left(y^{-1}\\right)^{-1/2}=y^{1/2}=\\sqrt y$$\n\nThe correct value is $\\sqrt y$, whereas the claim gives its reciprocal. The two agree only at $y=1$. So the statement is False.",
-    "**B.** → True\n\nSplit at the two points whose distances are being added.\n\n$$|x-2|+|x+2|=\\begin{cases}-2x,&x<-2,\\\\4,&-2\\le x\\le2,\\\\2x,&x>2.\\end{cases}$$\n\n$$|x-2|+|x+2|=4\\iff -2\\le x\\le2$$\n\nOutside the segment the sum grows strictly beyond $4$. Therefore the statement is True.",
-    "**C.** → False\n\nCancelling a variable factor is only allowed once that factor is known to be nonzero.\n\nMove everything to one side and factor:\n\n$$x^2-xy=0\\quad\\Longleftrightarrow\\quad x(x-y)=0$$\n\nThe product vanishes if $x=0$ or if $x=y$. The first branch is a genuine alternative: every pair with $x=0$ and $y\\neq0$ satisfies the hypothesis while contradicting the conclusion. So the statement is False.",
-    "**D.** → False\n\nSplitting a fraction divides every term of the numerator by the denominator.\n\nSplit correctly:\n\n$$\\frac{r+q}{r}=\\frac rr+\\frac qr=1+\\frac qr$$\n\nThe claim leaves $q$ undivided, so the two sides differ by $q-\\dfrac qr$, which is nonzero whenever $q\\neq0$ and $r\\neq1$. So the statement is False.",
-    "**E.** → True\n\nThe numerator factors as a product of conjugates once $q$ is written as $\\left(\\sqrt q\\right)^2$.\n\nFactor the numerator:\n\n$$q-1=\\left(\\sqrt q\\right)^2-1^2=\\left(\\sqrt q-1\\right)\\left(\\sqrt q+1\\right)$$\n\nThe denominator cancels one factor, and it is never zero because $\\sqrt q\\ge0$ gives $\\sqrt q+1\\ge1$:\n\n$$\\frac{q-1}{\\sqrt q+1}=\\sqrt q-1$$\n\nSo the statement is True."
+    "**A.** → True\n\nUse the given monomial as one unit. Substituting individual values for the letters is unnecessary and can hide the reciprocal term.\n\nSet the given unit:\n\n$$R=u^{-2}v^3=4$$\n\nRewrite both summands:\n\n$$u^4v^{-6}=R^{-2},\\qquad 2u^{-6}v^9=2R^3$$\n\nSubstitute only after rewriting:\n\n$$R^{-2}+2R^3=4^{-2}+2\\cdot4^3$$\n\nFinish the sum:\n\n$$\\frac1{16}+128=\\frac{2049}{16}$$\n\nThe reciprocal contribution is included in the printed value, so the statement is True.",
+    "**B.** → False\n\nThe polynomial factorization is valid everywhere, but dropping the outer bars requires the product to be nonnegative.\n\nFactor inside the bars:\n\n$$u^2-9u+18=(u-3)(u-6)$$\n\nTranslate equality with its magnitude:\n\n$$|(u-3)(u-6)|=(u-3)(u-6)$$\n\nRequire a nonnegative product:\n\n$$(u-3)(u-6)\\ge0$$\n\nSolve the sign condition:\n\n$$(-\\infty,3]\\cup[6,\\infty)$$\n\nAt both roots the two sides equal zero, so excluding the endpoints makes the statement False.",
+    "**C.** → False\n\nThe given symmetric quantities must first recover the sum of the squares. The last sign is the trap.\n\nRecover the square sum:\n\n$$S^2-2P=(m+n)^2-2mn=m^2+n^2$$\n\nSquare that result:\n\n$$(S^2-2P)^2=m^4+2m^2n^2+n^4$$\n\nRemove the mixed term:\n\n$$(S^2-2P)^2-2P^2=m^4+n^4$$\n\nA plus sign doubles rather than removes the mixed contribution, so the statement is False.",
+    "**D.** → True\n\nAll four linear factors must be exposed before cancellation. The original holes remain even after factors disappear.\n\nFactor both quadratics:\n\n$$\\frac{(y-5)(y+5)}{(y-8)(y+8)}\\cdot\\frac{y-8}{y-5}$$\n\nCancel the permitted factors:\n\n$$\\dfrac{y+5}{y+8}$$\n\nRetain the original domain:\n\n$$y\\notin\\{-8,-5,5,8\\}$$\n\nThe uncancelled plus factors give the printed quotient on the stated domain, so the statement is True.",
+    "**E.** → False\n\nUse the given monomial as one unit. Substituting individual values for the letters is unnecessary and can hide the reciprocal term.\n\nSet the given unit:\n\n$$R=m^{-2}n^3=4$$\n\nRewrite both summands:\n\n$$m^4n^{-6}=R^{-2},\\qquad 2m^{-6}n^9=2R^3$$\n\nSubstitute only after rewriting:\n\n$$R^{-2}+2R^3=4^{-2}+2\\cdot4^3$$\n\nFinish the sum:\n\n$$\\frac1{16}+128=\\frac{2049}{16}$$\n\nThe value $128$ drops the nonzero term $1/16$, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 147,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests distance sum on a segment; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. A tests given monomial substitution; B tests absolute value of a factored quadratic; C tests symmetric fourth powers; D tests factor-chain rational identity; E tests given monomial substitution. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-148",
    "case_id": "MATH 2.148",
-   "title": "Exam-style tasks — 12",
+   "title": "Hard mixed exam: 12",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For all real $a$ and $b$, it holds that $|a-b|=|a|-|b|$.",
-    "For all real $a$ and $b$, it holds that $a^2+b^2+1\\ge ab+a+b$.",
-    "For every real $c$, it holds that $\\dfrac{c^2+5}{c^2+2}=1+\\dfrac{5}{c^2+2}$.",
-    "For nonzero $u$ and $v$ with $u+v\\neq0$, it holds that $\\dfrac{u^{-1}+v^{-1}}{(uv)^{-1}}=\\dfrac{1}{u+v}$.",
-    "For all real $p$ and $q$, it holds that $|p+q|\\ge|p|+|q|$."
+    "The equality $|y^2-12y+32|=(y-4)(y-8)$ holds exactly for $(-\\infty,4]\\cup[8,\\infty)$.",
+    "If $S=r+s$ and $P=rs$ for real $r,s$, then $r^4+s^4=(S^2-2P)^2-2P^2$.",
+    "For $w\\ne\\pm 6,\\pm 9$, $\\dfrac{w^2-36}{w^2-81}\\cdot\\dfrac{w-9}{w-6}=\\dfrac{w-6}{w-9}$.",
+    "If $r,s\\ne0$ and $r^{-2}s^3=4$, then $r^4s^{-6}+2r^{-6}s^9=\\dfrac{2049}{16}$.",
+    "The equality $|z^2-15z+50|=(z-5)(z-10)$ holds exactly for $(-\\infty,5)\\cup(10,\\infty)$."
    ],
    "answer_key": [
-    false,
+    true,
     true,
     false,
-    false,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe right-hand side can be negative, while the left-hand side never is.\n\nCorrect general bound:\n\n$$|a|-|b|\\le|a-b|$$\n\nEquality is special: it needs $|b|\\le|a|$ together with $a$ and $b$ of the same sign. As soon as $|b|>|a|$ the right-hand side is negative and cannot equal an absolute value. So the statement is False.",
-    "**B.** → True\n\nDoubling the difference of the two sides makes three complete squares appear.\n\nDouble and regroup:\n\n$$2\\left(a^2+b^2+1-ab-a-b\\right)=(a-b)^2+(a-1)^2+(b-1)^2$$\n\nEach bracket on the right is a square, so the sum is nonnegative, and therefore\n\n$$a^2+b^2+1-ab-a-b\\ge0$$\n\nEquality needs $a=b$, $a=1$ and $b=1$ at once, that is $a=b=1$. So the statement is True.",
-    "**C.** → False\n\nSplitting off the integer part means writing the numerator as the denominator plus a remainder.\n\nRewrite the numerator against $c^2+2$:\n\n$$\\frac{c^2+5}{c^2+2}=\\frac{\\left(c^2+2\\right)+3}{c^2+2}=1+\\frac{3}{c^2+2}$$\n\nThe remainder is $3$, not $5$, so the claimed right-hand side is too large by $\\dfrac{2}{c^2+2}$. Since $c^2+2\\ge2$, that gap never closes for any real $c$. So the statement is False.",
-    "**D.** → False\n\nDividing by $(uv)^{-1}$ means multiplying by $uv$, which clears the whole numerator.\n\nCombine the numerator first:\n\n$$u^{-1}+v^{-1}=\\frac{v+u}{uv}$$\n\nDividing by $(uv)^{-1}=\\dfrac{1}{uv}$ multiplies by $uv$:\n\n$$\\frac{\\frac{u+v}{uv}}{\\frac{1}{uv}}=\\frac{u+v}{uv}\\cdot uv=u+v$$\n\nThe correct value is $u+v$, whereas the claim offers its reciprocal. Equality would force $(u+v)^2=1$, so the identity fails for all other admissible pairs. So the statement is False.",
-    "**E.** → False\n\nThe triangle inequality runs in the opposite direction.\n\nCorrect bound:\n\n$$|p+q|\\le|p|+|q|$$\n\nWhenever $p$ and $q$ have opposite signs the two contributions partly cancel on the left while the right-hand side keeps both magnitudes, so the left-hand side is strictly smaller there. The claimed inequality can therefore hold only in the equality case $pq\\ge0$, never as a general law. So the statement is False."
+    "**A.** → True\n\nThe polynomial factorization is valid everywhere, but dropping the outer bars requires the product to be nonnegative.\n\nFactor inside the bars:\n\n$$y^2-12y+32=(y-4)(y-8)$$\n\nTranslate equality with its magnitude:\n\n$$|(y-4)(y-8)|=(y-4)(y-8)$$\n\nRequire a nonnegative product:\n\n$$(y-4)(y-8)\\ge0$$\n\nSolve the sign condition:\n\n$$(-\\infty,4]\\cup[8,\\infty)$$\n\nThe roots give zero on both sides and are included, so the stated set is exact.",
+    "**B.** → True\n\nThe given symmetric quantities must first recover the sum of the squares. The last sign is the trap.\n\nRecover the square sum:\n\n$$S^2-2P=(r+s)^2-2rs=r^2+s^2$$\n\nSquare that result:\n\n$$(S^2-2P)^2=r^4+2r^2s^2+s^4$$\n\nRemove the mixed term:\n\n$$(S^2-2P)^2-2P^2=r^4+s^4$$\n\nThe subtraction removes exactly the duplicated mixed term, so the statement is True.",
+    "**C.** → False\n\nAll four linear factors must be exposed before cancellation. The original holes remain even after factors disappear.\n\nFactor both quadratics:\n\n$$\\frac{(w-6)(w+6)}{(w-9)(w+9)}\\cdot\\frac{w-9}{w-6}$$\n\nCancel the permitted factors:\n\n$$\\dfrac{w+6}{w+9}$$\n\nRetain the original domain:\n\n$$w\\notin\\{-9,-6,6,9\\}$$\n\nThe minus factors are precisely the cancelled ones; the surviving quotient has plus signs, so the statement is False.",
+    "**D.** → True\n\nUse the given monomial as one unit. Substituting individual values for the letters is unnecessary and can hide the reciprocal term.\n\nSet the given unit:\n\n$$R=r^{-2}s^3=4$$\n\nRewrite both summands:\n\n$$r^4s^{-6}=R^{-2},\\qquad 2r^{-6}s^9=2R^3$$\n\nSubstitute only after rewriting:\n\n$$R^{-2}+2R^3=4^{-2}+2\\cdot4^3$$\n\nFinish the sum:\n\n$$\\frac1{16}+128=\\frac{2049}{16}$$\n\nThe reciprocal contribution is included in the printed value, so the statement is True.",
+    "**E.** → False\n\nThe polynomial factorization is valid everywhere, but dropping the outer bars requires the product to be nonnegative.\n\nFactor inside the bars:\n\n$$z^2-15z+50=(z-5)(z-10)$$\n\nTranslate equality with its magnitude:\n\n$$|(z-5)(z-10)|=(z-5)(z-10)$$\n\nRequire a nonnegative product:\n\n$$(z-5)(z-10)\\ge0$$\n\nSolve the sign condition:\n\n$$(-\\infty,5]\\cup[10,\\infty)$$\n\nAt both roots the two sides equal zero, so excluding the endpoints makes the statement False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 148,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. A tests absolute value of a factored quadratic; B tests symmetric fourth powers; C tests factor-chain rational identity; D tests given monomial substitution; E tests absolute value of a factored quadratic. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-149",
    "case_id": "MATH 2.149",
-   "title": "Exam-style tasks — 13",
+   "title": "Hard mixed exam: 13",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "If $p+q+r=0$, then $(p+q)(q+r)(r+p)=-pqr$.",
-    "For nonzero $u$ and $v$ with $u\\neq v$, it holds that $\\dfrac{\\frac{1}{u^2}-\\frac{1}{v^2}}{\\frac1u-\\frac1v}=\\dfrac1u+\\dfrac1v$.",
-    "For $u>0$ and $v>0$, it holds that $\\sqrt u\\cdot\\sqrt v=\\sqrt{uv}$.",
-    "For every real $a$, it holds that $|a-1|=|a|-1$.",
-    "If $p<q$ and $r<0$, then $pr<qr$."
+    "For every real quadruple $(a,b,h,k)$, $(a^2+b^2)(h^2+k^2)-(ah-bk)^2=(ak-bh)^2$.",
+    "For $x\\ne\\pm 2$, $\\dfrac1{x-2}-\\dfrac1{x+2}+\\dfrac{4}{x^2-4}=\\dfrac{8}{x^2-4}$.",
+    "For $a\\ge0$, $\\dfrac1{\\sqrt{a+3}-\\sqrt{a}}-\\dfrac1{\\sqrt{a+3}+\\sqrt{a}}=\\dfrac{2\\sqrt{a+3}}{3}$.",
+    "For $x\\ne 7$, $\\left|\\dfrac{x-1}{x-7}\\right|\\le1$ if and only if $x\\le 4$.",
+    "For every real quadruple $(p,q,c,d)$, $(p^2+q^2)(c^2+d^2)-(pc-qd)^2=(pd+qc)^2$."
    ],
    "answer_key": [
-    true,
-    true,
+    false,
     true,
     false,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe condition lets each two-term bracket be replaced by a single letter.\n\nRewrite the three brackets:\n\n$$p+q=-r,\\qquad q+r=-p,\\qquad r+p=-q$$\n\nMultiplying the three replacements collects three minus signs:\n\n$$(p+q)(q+r)(r+p)=(-r)(-p)(-q)=-pqr$$\n\nSo the statement is True.",
-    "**B.** → True\n\nThe numerator is a difference of squares in the two reciprocals, and one of its factors is the denominator.\n\nFactor the numerator:\n\n$$\\frac{1}{u^2}-\\frac{1}{v^2}=\\left(\\frac1u-\\frac1v\\right)\\left(\\frac1u+\\frac1v\\right)$$\n\nThe condition $u\\neq v$ makes $\\dfrac1u-\\dfrac1v$ nonzero, so it cancels:\n\n$$\\frac{\\left(\\frac1u-\\frac1v\\right)\\left(\\frac1u+\\frac1v\\right)}{\\frac1u-\\frac1v}=\\frac1u+\\frac1v$$\n\nSo the statement is True.",
-    "**C.** → True\n\nFor nonnegative bases the square root is multiplicative.\n\nSquare the left-hand side:\n\n$$\\left(\\sqrt u\\cdot\\sqrt v\\right)^2=\\left(\\sqrt u\\right)^2\\left(\\sqrt v\\right)^2=uv$$\n\nThe left-hand side is positive and squares to $uv$, so it equals $\\sqrt{uv}$. So the statement is True.",
-    "**D.** → False\n\nAn absolute value is never negative, while the proposed right-hand side can be.\n\nCompare the two sides on the interval $0\\le a<1$:\n\n$$|a-1|=1-a>0,\\qquad |a|-1=a-1<0$$\n\nA positive number cannot equal a negative one, so the claim already fails on that whole interval. So the statement is False.",
-    "**E.** → False\n\nMultiplication by a negative number reverses the direction of an inequality.\n\nSubtract the two sides of the claim:\n\n$$qr-pr=r(q-p)$$\n\nHere $q-p>0$ because $p<q$, and $r<0$, so the product $r(q-p)$ is negative. That means $qr<pr$, the opposite of the claim, and it happens for every admissible pair. So the statement is False."
+    "**A.** → False\n\nThis is a four-letter cancellation. Expand the product and the subtracted square before collecting cross terms.\n\nExpand the product:\n\n$$(a^2+b^2)(h^2+k^2)=a^2h^2+a^2k^2+b^2h^2+b^2k^2$$\n\nExpand the removed square:\n\n$$(ah-bk)^2=a^2h^2-2abhk+b^2k^2$$\n\nSubtract and refactor:\n\n$$a^2k^2+2abhk+b^2h^2=(ak+bh)^2$$\n\nThe surviving cross term is positive, whereas the printed minus square has a negative cross term, so the statement is False.",
+    "**B.** → True\n\nThe first two fractions already create the same denominator as the third. Combine all three numerators.\n\nCombine the reciprocal difference:\n\n$$\\frac1{x-2}-\\frac1{x+2}=\\frac{2\\cdot 2}{x^2-4}$$\n\nAdd the remaining fraction:\n\n$$\\frac{4}{x^2-4}+\\frac{4}{x^2-4}$$\n\nCollect the numerator:\n\n$$\\frac{8}{x^2-4}$$\n\nBoth contributions are present in the printed numerator, so the statement is True.",
+    "**C.** → False\n\nRationalize the two reciprocals separately. Their numerators then differ by exactly twice one radical.\n\nRationalize the first reciprocal:\n\n$$\\frac1{\\sqrt{a+3}-\\sqrt{a}}=\\frac{\\sqrt{a+3}+\\sqrt{a}}{3}$$\n\nRationalize the second reciprocal:\n\n$$\\frac1{\\sqrt{a+3}+\\sqrt{a}}=\\frac{\\sqrt{a+3}-\\sqrt{a}}{3}$$\n\nSubtract:\n\n$$\\frac{2\\sqrt{a}}{3}$$\n\nThe $\\sqrt{a+3}$ terms cancel; the result contains $\\sqrt{a}$, so the statement is False.",
+    "**D.** → True\n\nBoth sides of the magnitude comparison are nonnegative, so squaring is reversible. The excluded denominator point is checked after solving.\n\nRemove the quotient magnitude:\n\n$$|x-1|\\le|x-7|$$\n\nSquare and subtract:\n\n$$(x-1)^2\\le(x-7)^2$$\n\nFactor the difference:\n\n$$2(6)(x-4)\\le0$$\n\nUse the positive spacing:\n\n$$x\\le 4$$\n\nThe midpoint $4$ gives equality and $7>4$ is outside the solution anyway, so the statement is True.",
+    "**E.** → True\n\nThis is a four-letter cancellation. Expand the product and the subtracted square before collecting cross terms.\n\nExpand the product:\n\n$$(p^2+q^2)(c^2+d^2)=p^2c^2+p^2d^2+q^2c^2+q^2d^2$$\n\nExpand the removed square:\n\n$$(pc-qd)^2=p^2c^2-2pqcd+q^2d^2$$\n\nSubtract and refactor:\n\n$$p^2d^2+2pqcd+q^2c^2=(pd+qc)^2$$\n\nThe surviving cross term is positive and matches the printed square, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 149,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests absolute value or a piecewise algebraic rewrite; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. A tests four-letter identity; B tests three-term reciprocal combination; C tests paired conjugate reciprocals; D tests ratio of absolute distances; E tests four-letter identity. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-150",
    "case_id": "MATH 2.150",
-   "title": "Exam-style tasks — 14",
+   "title": "Hard mixed exam: 14",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "If $x>y>0$, then $\\dfrac{x}{x+1}<\\dfrac{y}{y+1}$.",
-    "For every real $a$ with $a\\neq0$, it holds that $\\left(a^{-3}\\right)^{-2}=a^{-6}$.",
-    "The equation $\\bigl||x|-3\\bigr|=1$ has exactly the four real solutions $x=\\pm2,\\pm4$.",
-    "For all real $u$ and $v$, it holds that $u^5-v^5=(u-v)\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)$.",
-    "If $a>0$ and $b>0$, then $\\dfrac ab+\\dfrac ba\\ge2$."
+    "For $t\\ne\\pm 3$, $\\dfrac1{t-3}-\\dfrac1{t+3}+\\dfrac{6}{t^2-9}=\\dfrac{6}{t^2-9}$.",
+    "For $p\\ge0$, $\\dfrac1{\\sqrt{p+4}-\\sqrt{p}}-\\dfrac1{\\sqrt{p+4}+\\sqrt{p}}=\\dfrac{2\\sqrt{p}}{4}$.",
+    "For $t\\ne 10$, $\\left|\\dfrac{t-2}{t-10}\\right|\\le1$ if and only if $t<6$.",
+    "For every real quadruple $(u,v,h,k)$, $(u^2+v^2)(h^2+k^2)-(uh-vk)^2=(uk-vh)^2$.",
+    "For $z\\ne\\pm 4$, $\\dfrac1{z-4}-\\dfrac1{z+4}+\\dfrac{8}{z^2-16}=\\dfrac{16}{z^2-16}$."
    ],
    "answer_key": [
     false,
+    true,
     false,
-    true,
-    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSubtracting the two fractions shows which one is larger.\n\nSubtract over the common denominator:\n\n$$\\frac{x}{x+1}-\\frac{y}{y+1}=\\frac{x(y+1)-y(x+1)}{(x+1)(y+1)}=\\frac{x-y}{(x+1)(y+1)}$$\n\nFor $x>y>0$ the numerator $x-y$ is positive and both factors of the denominator are positive, so the difference is positive and $\\dfrac{x}{x+1}>\\dfrac{y}{y+1}$. The claim has the inequality the wrong way round. So the statement is False.",
-    "**B.** → False\n\nTwo negative exponents multiply to a positive exponent.\n\nMultiply the exponents:\n\n$$\\left(a^{-3}\\right)^{-2}=a^{(-3)\\cdot(-2)}=a^{6}$$\n\nThe claim keeps the sign negative. Since $a^6=a^{-6}$ would force $a^{12}=1$, that is $a=\\pm1$, the identity fails for every other nonzero $a$. So the statement is False.",
-    "**C.** → True\n\nResolve the outer absolute value first and then the inner one.\n\n$$\\bigl||x|-3\\bigr|=1\\iff |x|-3=\\pm1$$\n\n$$|x|=2\\quad\\text{or}\\quad |x|=4$$\n\n$$x\\in\\{-4,-2,2,4\\}$$\n\nThe four displayed values are distinct and exhaust both branches. Therefore the statement is True.",
-    "**D.** → True\n\nA difference of equal powers always carries the factor $u-v$, with a full symmetric sum beside it.\n\nMultiply out the right-hand side:\n\n$$u\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)=u^5+u^4v+u^3v^2+u^2v^3+uv^4$$\n\n$$v\\left(u^4+u^3v+u^2v^2+uv^3+v^4\\right)=u^4v+u^3v^2+u^2v^3+uv^4+v^5$$\n\nSubtracting the second line from the first cancels every mixed term and leaves $u^5-v^5$. So the statement is True.",
-    "**E.** → True\n\nPutting the two fractions over the common denominator $ab$ exposes a square.\n\nCombine and subtract $2$:\n\n$$\\frac ab+\\frac ba-2=\\frac{a^2+b^2-2ab}{ab}=\\frac{(a-b)^2}{ab}$$\n\nThe numerator is a square, hence nonnegative, and the denominator $ab$ is positive because $a>0$ and $b>0$. The quotient is therefore nonnegative, which is the claimed bound, with equality exactly for $a=b$. So the statement is True."
+    "**A.** → False\n\nThe first two fractions already create the same denominator as the third. Combine all three numerators.\n\nCombine the reciprocal difference:\n\n$$\\frac1{t-3}-\\frac1{t+3}=\\frac{2\\cdot 3}{t^2-9}$$\n\nAdd the remaining fraction:\n\n$$\\frac{6}{t^2-9}+\\frac{6}{t^2-9}$$\n\nCollect the numerator:\n\n$$\\frac{12}{t^2-9}$$\n\nThe printed numerator counts only one of the two equal contributions, so the statement is False.",
+    "**B.** → True\n\nRationalize the two reciprocals separately. Their numerators then differ by exactly twice one radical.\n\nRationalize the first reciprocal:\n\n$$\\frac1{\\sqrt{p+4}-\\sqrt{p}}=\\frac{\\sqrt{p+4}+\\sqrt{p}}{4}$$\n\nRationalize the second reciprocal:\n\n$$\\frac1{\\sqrt{p+4}+\\sqrt{p}}=\\frac{\\sqrt{p+4}-\\sqrt{p}}{4}$$\n\nSubtract:\n\n$$\\frac{2\\sqrt{p}}{4}$$\n\nThe larger radicals cancel and the printed smaller radical remains, so the statement is True.",
+    "**C.** → False\n\nBoth sides of the magnitude comparison are nonnegative, so squaring is reversible. The excluded denominator point is checked after solving.\n\nRemove the quotient magnitude:\n\n$$|t-2|\\le|t-10|$$\n\nSquare and subtract:\n\n$$(t-2)^2\\le(t-10)^2$$\n\nFactor the difference:\n\n$$2(8)(t-6)\\le0$$\n\nUse the positive spacing:\n\n$$t\\le 6$$\n\nThe midpoint $6$ gives equality and must be included, so the strict endpoint makes the statement False.",
+    "**D.** → False\n\nThis is a four-letter cancellation. Expand the product and the subtracted square before collecting cross terms.\n\nExpand the product:\n\n$$(u^2+v^2)(h^2+k^2)=u^2h^2+u^2k^2+v^2h^2+v^2k^2$$\n\nExpand the removed square:\n\n$$(uh-vk)^2=u^2h^2-2uvhk+v^2k^2$$\n\nSubtract and refactor:\n\n$$u^2k^2+2uvhk+v^2h^2=(uk+vh)^2$$\n\nThe surviving cross term is positive, whereas the printed minus square has a negative cross term, so the statement is False.",
+    "**E.** → True\n\nThe first two fractions already create the same denominator as the third. Combine all three numerators.\n\nCombine the reciprocal difference:\n\n$$\\frac1{z-4}-\\frac1{z+4}=\\frac{2\\cdot 4}{z^2-16}$$\n\nAdd the remaining fraction:\n\n$$\\frac{8}{z^2-16}+\\frac{8}{z^2-16}$$\n\nCollect the numerator:\n\n$$\\frac{16}{z^2-16}$$\n\nBoth contributions are present in the printed numerator, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 150,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests nested absolute-value equation; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. A tests three-term reciprocal combination; B tests paired conjugate reciprocals; C tests ratio of absolute distances; D tests four-letter identity; E tests three-term reciprocal combination. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-151",
    "case_id": "MATH 2.151",
-   "title": "Exam-style tasks — 15",
+   "title": "Hard mixed exam: 15",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For $r>0$, it holds that $r^{\\sqrt2}\\cdot r^{\\sqrt2}=r^{2}$.",
-    "The equation $|x+4|=2|x-1|$ has exactly two real solutions.",
-    "If $x+y+z=0$, then $x^2+y^2+z^2=2(xy+yz+zx)$.",
-    "For every real $p$ with $p\\neq0$, it holds that $\\left(p+\\dfrac1p\\right)\\left(p-\\dfrac1p\\right)=p^2-\\dfrac{1}{p^2}$.",
-    "For $a>0$, it holds that $\\sqrt a\\cdot\\sqrt[4]a=a^{3/4}$."
+    "For $u\\ge0$, $\\dfrac1{\\sqrt{u+5}-\\sqrt{u}}-\\dfrac1{\\sqrt{u+5}+\\sqrt{u}}=\\dfrac{2\\sqrt{u+5}}{5}$.",
+    "For $u\\ne 13$, $\\left|\\dfrac{u-3}{u-13}\\right|\\le1$ if and only if $u\\le 8$.",
+    "For every real quadruple $(m,n,c,d)$, $(m^2+n^2)(c^2+d^2)-(mc-nd)^2=(md+nc)^2$.",
+    "For $y\\ne\\pm 5$, $\\dfrac1{y-5}-\\dfrac1{y+5}+\\dfrac{10}{y^2-25}=\\dfrac{10}{y^2-25}$.",
+    "For $m\\ge0$, $\\dfrac1{\\sqrt{m+6}-\\sqrt{m}}-\\dfrac1{\\sqrt{m+6}+\\sqrt{m}}=\\dfrac{2\\sqrt{m}}{6}$."
    ],
    "answer_key": [
     false,
     true,
-    false,
     true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nMultiplying two powers of one base adds the exponents; it does not multiply them.\n\nAdd the exponents:\n\n$$r^{\\sqrt2}\\cdot r^{\\sqrt2}=r^{\\sqrt2+\\sqrt2}=r^{2\\sqrt2}$$\n\nThe claimed exponent $2$ comes from computing $\\sqrt2\\cdot\\sqrt2$ instead. Since $2\\sqrt2\\neq2$, the two sides agree only at $r=1$. So the statement is False.",
-    "**B.** → True\n\nBoth sides are nonnegative, so squaring is reversible.\n\n$$(x+4)^2=4(x-1)^2$$\n\n$$x^2+8x+16=4x^2-8x+4$$\n\n$$3x^2-16x-12=0$$\n\n$$(3x+2)(x-6)=0$$\n\nThe solutions $x=-\frac23$ and $x=6$ both satisfy the original equation. Therefore the statement is True.",
-    "**C.** → False\n\nSquaring the condition links the sum of squares to the sum of products, but with the opposite sign.\n\nSquare the condition:\n\n$$0=(x+y+z)^2=x^2+y^2+z^2+2(xy+yz+zx)$$\n\nSolving for the sum of squares gives\n\n$$x^2+y^2+z^2=-2(xy+yz+zx)$$\n\nThe claim drops the minus sign. Both versions can agree only when $xy+yz+zx=0$, which under the condition forces $x=y=z=0$. So the statement is False.",
-    "**D.** → True\n\nThe two brackets are conjugates, so their product is a difference of squares.\n\nApply the identity with the bases $p$ and $\\dfrac1p$:\n\n$$\\left(p+\\frac1p\\right)\\left(p-\\frac1p\\right)=p^2-\\left(\\frac1p\\right)^2=p^2-\\frac{1}{p^2}$$\n\nSo the statement is True.",
-    "**E.** → True\n\nBoth roots are written as fractional powers, after which the exponents add.\n\nConvert and add:\n\n$$\\sqrt a\\cdot\\sqrt[4]a=a^{1/2}\\cdot a^{1/4}=a^{\\frac12+\\frac14}=a^{3/4}$$\n\nSo the statement is True."
+    "**A.** → False\n\nRationalize the two reciprocals separately. Their numerators then differ by exactly twice one radical.\n\nRationalize the first reciprocal:\n\n$$\\frac1{\\sqrt{u+5}-\\sqrt{u}}=\\frac{\\sqrt{u+5}+\\sqrt{u}}{5}$$\n\nRationalize the second reciprocal:\n\n$$\\frac1{\\sqrt{u+5}+\\sqrt{u}}=\\frac{\\sqrt{u+5}-\\sqrt{u}}{5}$$\n\nSubtract:\n\n$$\\frac{2\\sqrt{u}}{5}$$\n\nThe $\\sqrt{u+5}$ terms cancel; the result contains $\\sqrt{u}$, so the statement is False.",
+    "**B.** → True\n\nBoth sides of the magnitude comparison are nonnegative, so squaring is reversible. The excluded denominator point is checked after solving.\n\nRemove the quotient magnitude:\n\n$$|u-3|\\le|u-13|$$\n\nSquare and subtract:\n\n$$(u-3)^2\\le(u-13)^2$$\n\nFactor the difference:\n\n$$2(10)(u-8)\\le0$$\n\nUse the positive spacing:\n\n$$u\\le 8$$\n\nThe midpoint $8$ gives equality and $13>8$ is outside the solution anyway, so the statement is True.",
+    "**C.** → True\n\nThis is a four-letter cancellation. Expand the product and the subtracted square before collecting cross terms.\n\nExpand the product:\n\n$$(m^2+n^2)(c^2+d^2)=m^2c^2+m^2d^2+n^2c^2+n^2d^2$$\n\nExpand the removed square:\n\n$$(mc-nd)^2=m^2c^2-2mncd+n^2d^2$$\n\nSubtract and refactor:\n\n$$m^2d^2+2mncd+n^2c^2=(md+nc)^2$$\n\nThe surviving cross term is positive and matches the printed square, so the statement is True.",
+    "**D.** → False\n\nThe first two fractions already create the same denominator as the third. Combine all three numerators.\n\nCombine the reciprocal difference:\n\n$$\\frac1{y-5}-\\frac1{y+5}=\\frac{2\\cdot 5}{y^2-25}$$\n\nAdd the remaining fraction:\n\n$$\\frac{10}{y^2-25}+\\frac{10}{y^2-25}$$\n\nCollect the numerator:\n\n$$\\frac{20}{y^2-25}$$\n\nThe printed numerator counts only one of the two equal contributions, so the statement is False.",
+    "**E.** → True\n\nRationalize the two reciprocals separately. Their numerators then differ by exactly twice one radical.\n\nRationalize the first reciprocal:\n\n$$\\frac1{\\sqrt{m+6}-\\sqrt{m}}=\\frac{\\sqrt{m+6}+\\sqrt{m}}{6}$$\n\nRationalize the second reciprocal:\n\n$$\\frac1{\\sqrt{m+6}+\\sqrt{m}}=\\frac{\\sqrt{m+6}-\\sqrt{m}}{6}$$\n\nSubtract:\n\n$$\\frac{2\\sqrt{m}}{6}$$\n\nThe larger radicals cancel and the printed smaller radical remains, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 151,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests scaled absolute-value equation; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. A tests paired conjugate reciprocals; B tests ratio of absolute distances; C tests four-letter identity; D tests three-term reciprocal combination; E tests paired conjugate reciprocals. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-152",
    "case_id": "MATH 2.152",
-   "title": "Exam-style tasks — 16",
+   "title": "Hard mixed exam: 16",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For every real $x$, it holds that $|x|^3=\\left|x^3\\right|$.",
-    "For all real $p$ and $q$, it holds that $p^2-q^2+p-q=(p-q)(p+q+1)$.",
-    "For every real $y$ with $y\\neq0$ and $y\\neq1$, it holds that $\\dfrac{y}{y-1}-\\dfrac1y=\\dfrac{y^2+y-1}{y(y-1)}$.",
-    "For $w>0$, it holds that $\\left(w^{1/2}\\right)^{1/3}=w^{2/3}$.",
-    "For every real $z$, it holds that $|z-3|=3-z$."
+    "For $y\\ne 10$, $\\left|\\dfrac{y-4}{y-10}\\right|\\le1$ if and only if $y<7$.",
+    "For every real quadruple $(r,s,h,k)$, $(r^2+s^2)(h^2+k^2)-(rh-sk)^2=(rk-sh)^2$.",
+    "For $w\\ne\\pm 6$, $\\dfrac1{w-6}-\\dfrac1{w+6}+\\dfrac{12}{w^2-36}=\\dfrac{24}{w^2-36}$.",
+    "For $r\\ge0$, $\\dfrac1{\\sqrt{r+7}-\\sqrt{r}}-\\dfrac1{\\sqrt{r+7}+\\sqrt{r}}=\\dfrac{2\\sqrt{r+7}}{7}$.",
+    "For $z\\ne 13$, $\\left|\\dfrac{z-5}{z-13}\\right|\\le1$ if and only if $z\\le 9$."
    ],
    "answer_key": [
-    true,
-    true,
     false,
     false,
-    false
+    true,
+    false,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe absolute value is multiplicative, so it passes through any power.\n\nWrite the cube as a product and split it:\n\n$$\\left|x^3\\right|=|x\\cdot x\\cdot x|=|x|\\,|x|\\,|x|=|x|^3$$\n\nBoth sides are nonnegative and agree for positive and negative $x$ alike, since an odd power of a negative number has its sign removed on both sides. So the statement is True.",
-    "**B.** → True\n\nBoth halves of the left-hand side contain the factor $p-q$, one after factoring a difference of squares.\n\nGroup the four terms in pairs:\n\n$$p^2-q^2+p-q=(p-q)(p+q)+(p-q)$$\n\nPulling out the common factor gives\n\n$$(p-q)(p+q)+(p-q)=(p-q)(p+q+1)$$\n\nSo the statement is True.",
-    "**C.** → False\n\nThe two fractions are combined over $y(y-1)$, and the sign of the second numerator has to be carried along.\n\nCombine over $y(y-1)$:\n\n$$\\frac{y}{y-1}-\\frac1y=\\frac{y\\cdot y-(y-1)}{y(y-1)}=\\frac{y^2-y+1}{y(y-1)}$$\n\nThe correct numerator is $y^2-y+1$, while the claim offers $y^2+y-1$. The two differ by $2y-2$, which vanishes only at $y=1$, an excluded value. So the statement is False.",
-    "**D.** → False\n\nIterated exponents are multiplied, and the product of two proper fractions is smaller than either.\n\nMultiply the exponents:\n\n$$\\left(w^{1/2}\\right)^{1/3}=w^{\\frac12\\cdot\\frac13}=w^{1/6}$$\n\nThe claim reads $w^{2/3}$, which is what one gets by adding a wrong pair of fractions. For $w>0$ the equality $w^{1/6}=w^{2/3}$ holds only at $w=1$. So the statement is False.",
-    "**E.** → False\n\nAn absolute value equals the negated argument only where that argument is nonpositive.\n\nCase description:\n\n$$|z-3|=\\begin{cases}z-3,&z\\ge3\\\\ 3-z,&z<3\\end{cases}$$\n\nThe claimed formula is the second branch, so it is correct only for $z\\le3$. For $z>3$ the left-hand side is positive while $3-z$ is negative. So the statement is False."
+    "**A.** → False\n\nBoth sides of the magnitude comparison are nonnegative, so squaring is reversible. The excluded denominator point is checked after solving.\n\nRemove the quotient magnitude:\n\n$$|y-4|\\le|y-10|$$\n\nSquare and subtract:\n\n$$(y-4)^2\\le(y-10)^2$$\n\nFactor the difference:\n\n$$2(6)(y-7)\\le0$$\n\nUse the positive spacing:\n\n$$y\\le 7$$\n\nThe midpoint $7$ gives equality and must be included, so the strict endpoint makes the statement False.",
+    "**B.** → False\n\nThis is a four-letter cancellation. Expand the product and the subtracted square before collecting cross terms.\n\nExpand the product:\n\n$$(r^2+s^2)(h^2+k^2)=r^2h^2+r^2k^2+s^2h^2+s^2k^2$$\n\nExpand the removed square:\n\n$$(rh-sk)^2=r^2h^2-2rshk+s^2k^2$$\n\nSubtract and refactor:\n\n$$r^2k^2+2rshk+s^2h^2=(rk+sh)^2$$\n\nThe surviving cross term is positive, whereas the printed minus square has a negative cross term, so the statement is False.",
+    "**C.** → True\n\nThe first two fractions already create the same denominator as the third. Combine all three numerators.\n\nCombine the reciprocal difference:\n\n$$\\frac1{w-6}-\\frac1{w+6}=\\frac{2\\cdot 6}{w^2-36}$$\n\nAdd the remaining fraction:\n\n$$\\frac{12}{w^2-36}+\\frac{12}{w^2-36}$$\n\nCollect the numerator:\n\n$$\\frac{24}{w^2-36}$$\n\nBoth contributions are present in the printed numerator, so the statement is True.",
+    "**D.** → False\n\nRationalize the two reciprocals separately. Their numerators then differ by exactly twice one radical.\n\nRationalize the first reciprocal:\n\n$$\\frac1{\\sqrt{r+7}-\\sqrt{r}}=\\frac{\\sqrt{r+7}+\\sqrt{r}}{7}$$\n\nRationalize the second reciprocal:\n\n$$\\frac1{\\sqrt{r+7}+\\sqrt{r}}=\\frac{\\sqrt{r+7}-\\sqrt{r}}{7}$$\n\nSubtract:\n\n$$\\frac{2\\sqrt{r}}{7}$$\n\nThe $\\sqrt{r+7}$ terms cancel; the result contains $\\sqrt{r}$, so the statement is False.",
+    "**E.** → True\n\nBoth sides of the magnitude comparison are nonnegative, so squaring is reversible. The excluded denominator point is checked after solving.\n\nRemove the quotient magnitude:\n\n$$|z-5|\\le|z-13|$$\n\nSquare and subtract:\n\n$$(z-5)^2\\le(z-13)^2$$\n\nFactor the difference:\n\n$$2(8)(z-9)\\le0$$\n\nUse the positive spacing:\n\n$$z\\le 9$$\n\nThe midpoint $9$ gives equality and $13>9$ is outside the solution anyway, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 152,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. A tests ratio of absolute distances; B tests four-letter identity; C tests three-term reciprocal combination; D tests paired conjugate reciprocals; E tests ratio of absolute distances. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-153",
    "case_id": "MATH 2.153",
-   "title": "Exam-style tasks — 17",
+   "title": "Hard mixed exam: 17",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For all real $x$ and $y$, it holds that $x^2+2xy+y^2-1=(x+y-1)(x+y+1)$.",
-    "For every real $u$ with $u\\neq0$ and $u\\neq-1$, it holds that $\\dfrac{u^2+u}{u^2}\\cdot\\dfrac{u}{u+1}=1$.",
-    "For $b>0$, it holds that $\\dfrac{1}{b^{-2/3}}=b^{-3/2}$.",
-    "For all real $x$ and $y$, it holds that $|x+y|=|x|+|y|$.",
-    "For all real $a$ and $b$, the polynomial $a^3+b^3$ is divisible by $a+b$."
+    "For every real quadruple $(a,b,c,d)$, $(a^2+b^2)(c^2+d^2)\\ge(ac+bd)^2$.",
+    "For nonzero $a,b$ with $a\\ne\\pm b$, $\\dfrac{\\frac1a-\\frac1b}{\\frac1a+\\frac1b}\\cdot\\dfrac{a+b}{a-b}=1$.",
+    "For all real $a,b$, $\\sqrt[4]{(a-b)^4}\\sqrt[6]{(a+b)^6}=|a^2-b^2|$.",
+    "The equation $|x-1|+|x-11|+|2x-12|=10$ has the unique real solution $x=7$.",
+    "For every real quadruple with all four entries nonzero $(p,q,h,k)$, $(p^2+q^2)(h^2+k^2)>(ph+qk)^2$."
    ],
    "answer_key": [
     true,
+    false,
     true,
     false,
-    false,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe first three terms form a complete square, which turns the whole expression into a difference of squares.\n\nCollect the square:\n\n$$x^2+2xy+y^2-1=(x+y)^2-1$$\n\nNow factor with the bases $x+y$ and $1$:\n\n$$(x+y)^2-1^2=(x+y-1)(x+y+1)$$\n\nSo the statement is True.",
-    "**B.** → True\n\nFactoring the first numerator exposes the factors that the second fraction removes.\n\nFactor and multiply:\n\n$$\\frac{u(u+1)}{u^2}\\cdot\\frac{u}{u+1}=\\frac{u^2(u+1)}{u^2(u+1)}$$\n\nBoth $u$ and $u+1$ are nonzero under the stated restrictions, so the quotient reduces to $1$. So the statement is True.",
-    "**C.** → False\n\nDividing by a negative power changes the sign of the exponent; it does not invert the fraction in the exponent.\n\nMove the power into the numerator:\n\n$$\\frac{1}{b^{-2/3}}=b^{2/3}$$\n\nThe claim replaces $\\tfrac23$ by $-\\tfrac32$, which mixes a sign change with an inversion. For $b>0$ the equality $b^{2/3}=b^{-3/2}$ forces $\\tfrac23=-\\tfrac32$ unless $b=1$. So the statement is False.",
-    "**D.** → False\n\nThe triangle inequality gives only one direction, and equality is a special case.\n\nGeneral bound:\n\n$$|x+y|\\le|x|+|y|$$\n\nEquality requires $x$ and $y$ to have the same sign, that is $xy\\ge0$. For any pair of opposite signs the left-hand side is strictly smaller, since the two contributions partly cancel. So the statement is False.",
-    "**E.** → True\n\nRead as a polynomial in $a$, the expression vanishes at the zero of $a+b$.\n\nSubstitute $a=-b$:\n\n$$(-b)^3+b^3=-b^3+b^3=0$$\n\nThe remainder is $0$, so $a+b$ is a factor, and the explicit quotient is the standard one:\n\n$$a^3+b^3=(a+b)\\left(a^2-ab+b^2\\right)$$\n\nSo the statement is True."
+    "**A.** → True\n\nSubtract the claimed right side. The entire comparison collapses to one square, but equality must still be checked.\n\nForm the difference:\n\n$$(a^2+b^2)(c^2+d^2)-(ac+bd)^2$$\n\nCollect the surviving terms:\n\n$$a^2d^2-2abcd+b^2c^2=(ad-bc)^2$$\n\nRead the sharp bound:\n\n$$(ad-bc)^2\\ge0$$\n\nThe difference is always nonnegative, so the non-strict inequality is True.",
+    "**B.** → False\n\nThe complex fraction reverses the order in its numerator. Simplify it before multiplying by the second ratio.\n\nClear the inner denominators:\n\n$$\\frac{\\frac{b-a}{ab}}{\\frac{a+b}{ab}}=\\frac{b-a}{a+b}$$\n\nMultiply the ratios:\n\n$$\\frac{b-a}{a+b}\\cdot\\frac{a+b}{a-b}$$\n\nUse the reversed factor:\n\n$$\\frac{b-a}{a-b}=-1$$\n\nThe factors differ by a minus sign, so the product is $-1$, not $1$, and the statement is False.",
+    "**C.** → True\n\nEven-indexed principal roots return magnitudes, not the original signed bases. Keep both absolute values through the product.\n\nTake the fourth root:\n\n$$\\sqrt[4]{(a-b)^4}=|a-b|$$\n\nTake the sixth root:\n\n$$\\sqrt[6]{(a+b)^6}=|a+b|$$\n\nMultiply the magnitudes:\n\n$$|a-b|\\,|a+b|=|(a-b)(a+b)|$$\n\nFactor inside the bars:\n\n$$|(a-b)(a+b)|=|a^2-b^2|$$\n\nThe final absolute value is present in the claim, so the statement is True.",
+    "**D.** → False\n\nThe first two terms already have the segment length as their global minimum. Equality leaves no room for the third magnitude.\n\nUse the distance lower bound:\n\n$$|x-1|+|x-11|\\ge 10$$\n\nForce equality in the added term:\n\n$$|2x-12|=0$$\n\nSolve the remaining equation:\n\n$$2x=12\\iff x=6$$\n\nCheck the segment condition:\n\n$$1\\le 6\\le 11$$\n\nThe lower-bound argument forces $x=6$, not $7$, so the statement is False.",
+    "**E.** → False\n\nSubtract the claimed right side. The entire comparison collapses to one square, but equality must still be checked.\n\nForm the difference:\n\n$$(p^2+q^2)(h^2+k^2)-(ph+qk)^2$$\n\nCollect the surviving terms:\n\n$$p^2k^2-2pqhk+q^2h^2=(pk-qh)^2$$\n\nRead the sharp bound:\n\n$$(pk-qh)^2\\ge0$$\n\nNonzero entries do not force strictness: $p=q=1$ and $h=k=2$ make the square zero, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 153,
-   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. Map: A tests expanding, factoring, or an algebraic identity; B tests a rational expression with its domain restrictions; C tests powers, roots, or negative exponents; D tests absolute value or a piecewise algebraic rewrite; E tests expanding, factoring, or an algebraic identity. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.1, 2.2, 2.3, 2.4, 2.1. A tests sharp sum-of-squares bound; B tests nested reciprocal sign; C tests even-root absolute value; D tests sharp three-distance equation; E tests sharp sum-of-squares bound. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-154",
    "case_id": "MATH 2.154",
-   "title": "Exam-style tasks — 18",
+   "title": "Hard mixed exam: 18",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For every real $q$ with $q\\neq0$, it holds that $\\dfrac1q-\\dfrac{1}{q^2}=\\dfrac{1}{q-q^2}$.",
-    "For $z>0$, it holds that $\\left(z^{1/3}\\right)^{6}=z^{3}$.",
-    "For every real $u$, it holds that $\\left|u^2-4\\right|=|u-2|\\,|u+2|$.",
-    "For every real $a$, it holds that $a^4+a^2+1=\\left(a^2+a+1\\right)\\left(a^2-a+1\\right)$.",
-    "If $s>t$, then $\\dfrac1s<\\dfrac1t$."
+    "For nonzero $p,q$ with $p\\ne\\pm q$, $\\dfrac{\\frac1p-\\frac1q}{\\frac1p+\\frac1q}\\cdot\\dfrac{p+q}{p-q}=-1$.",
+    "For all real $p,q$, $\\sqrt[4]{(p-q)^4}\\sqrt[6]{(p+q)^6}=p^2-q^2$.",
+    "The equation $|t-2|+|t-8|+|2t-10|=6$ has the unique real solution $t=5$.",
+    "For every real quadruple $(u,v,c,d)$, $(u^2+v^2)(c^2+d^2)\\ge(uc+vd)^2$.",
+    "For nonzero $u,v$ with $u\\ne\\pm v$, $\\dfrac{\\frac1u-\\frac1v}{\\frac1u+\\frac1v}\\cdot\\dfrac{u+v}{u-v}=1$."
    ],
    "answer_key": [
-    false,
+    true,
     false,
     true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe left-hand side is combined over $q^2$, and the outcome is then compared with the proposed fraction.\n\nCombine over $q^2$:\n\n$$\\frac1q-\\frac{1}{q^2}=\\frac{q-1}{q^2}$$\n\nThe proposed right-hand side is $\\dfrac{1}{q(1-q)}$. Equating the two and clearing denominators gives\n\n$$q(q-1)(1-q)=q^2\\quad\\Longleftrightarrow\\quad q^2-q+1=0$$\n\nafter dividing by the nonzero factor $-q$. The last quadratic has discriminant $1-4=-3<0$, so no real $q$ satisfies it and the two sides never agree. So the statement is False.",
-    "**B.** → False\n\nA power of a power multiplies the two exponents.\n\nMultiply the exponents:\n\n$$\\left(z^{1/3}\\right)^{6}=z^{\\frac13\\cdot 6}=z^{2}$$\n\nThe claim reads $z^3$, which would require $\\tfrac13\\cdot 6=3$. For $z>0$ the equation $z^2=z^3$ holds only at $z=1$, so the claimed identity fails for every other positive $z$. So the statement is False.",
-    "**C.** → True\n\nThe absolute value of a product is the product of the absolute values, so the radicand may be factored first.\n\nFactor inside the bars:\n\n$$u^2-4=(u-2)(u+2)$$\n\nNow apply multiplicativity:\n\n$$\\left|u^2-4\\right|=|(u-2)(u+2)|=|u-2|\\,|u+2|$$\n\nNo sign assumption on $u$ is needed, since the rule holds for arbitrary real factors. So the statement is True.",
-    "**D.** → True\n\nAdding and subtracting $a^2$ turns the quartic into a difference of two squares.\n\nComplete the square in $a^2$:\n\n$$a^4+a^2+1=\\left(a^4+2a^2+1\\right)-a^2=\\left(a^2+1\\right)^2-a^2$$\n\nNow factor the difference of squares:\n\n$$\\left(a^2+1\\right)^2-a^2=\\left(a^2+1-a\\right)\\left(a^2+1+a\\right)$$\n\nReordering the terms inside each bracket gives exactly $\\left(a^2+a+1\\right)\\left(a^2-a+1\\right)$. So the statement is True.",
-    "**E.** → False\n\nPassing to reciprocals reverses an inequality only when both sides carry the same sign.\n\nSubtract the two reciprocals:\n\n$$\\frac1s-\\frac1t=\\frac{t-s}{st}$$\n\nThe numerator $t-s$ is negative because $s>t$, so the sign of the whole expression is decided by $st$. Whenever $s$ and $t$ have opposite signs, $st<0$ and the difference is positive, so $\\dfrac1s>\\dfrac1t$. So the statement is False."
+    "**A.** → True\n\nThe complex fraction reverses the order in its numerator. Simplify it before multiplying by the second ratio.\n\nClear the inner denominators:\n\n$$\\frac{\\frac{q-p}{pq}}{\\frac{p+q}{pq}}=\\frac{q-p}{p+q}$$\n\nMultiply the ratios:\n\n$$\\frac{q-p}{p+q}\\cdot\\frac{p+q}{p-q}$$\n\nUse the reversed factor:\n\n$$\\frac{q-p}{p-q}=-1$$\n\nThe reversed numerator contributes the printed minus sign, so the statement is True.",
+    "**B.** → False\n\nEven-indexed principal roots return magnitudes, not the original signed bases. Keep both absolute values through the product.\n\nTake the fourth root:\n\n$$\\sqrt[4]{(p-q)^4}=|p-q|$$\n\nTake the sixth root:\n\n$$\\sqrt[6]{(p+q)^6}=|p+q|$$\n\nMultiply the magnitudes:\n\n$$|p-q|\\,|p+q|=|(p-q)(p+q)|$$\n\nFactor inside the bars:\n\n$$|(p-q)(p+q)|=|p^2-q^2|$$\n\nThe unbarred difference can be negative when $|q|>|p|$, while the radical product cannot, so the statement is False.",
+    "**C.** → True\n\nThe first two terms already have the segment length as their global minimum. Equality leaves no room for the third magnitude.\n\nUse the distance lower bound:\n\n$$|t-2|+|t-8|\\ge 6$$\n\nForce equality in the added term:\n\n$$|2t-10|=0$$\n\nSolve the remaining equation:\n\n$$2t=10\\iff t=5$$\n\nCheck the segment condition:\n\n$$2\\le 5\\le 8$$\n\nAt the midpoint the first two distances total the segment length and the last term vanishes, so the statement is True.",
+    "**D.** → True\n\nSubtract the claimed right side. The entire comparison collapses to one square, but equality must still be checked.\n\nForm the difference:\n\n$$(u^2+v^2)(c^2+d^2)-(uc+vd)^2$$\n\nCollect the surviving terms:\n\n$$u^2d^2-2uvcd+v^2c^2=(ud-vc)^2$$\n\nRead the sharp bound:\n\n$$(ud-vc)^2\\ge0$$\n\nThe difference is always nonnegative, so the non-strict inequality is True.",
+    "**E.** → False\n\nThe complex fraction reverses the order in its numerator. Simplify it before multiplying by the second ratio.\n\nClear the inner denominators:\n\n$$\\frac{\\frac{v-u}{uv}}{\\frac{u+v}{uv}}=\\frac{v-u}{u+v}$$\n\nMultiply the ratios:\n\n$$\\frac{v-u}{u+v}\\cdot\\frac{u+v}{u-v}$$\n\nUse the reversed factor:\n\n$$\\frac{v-u}{u-v}=-1$$\n\nThe factors differ by a minus sign, so the product is $-1$, not $1$, and the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 154,
-   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. Map: A tests a rational expression with its domain restrictions; B tests powers, roots, or negative exponents; C tests absolute value or a piecewise algebraic rewrite; D tests expanding, factoring, or an algebraic identity; E tests a rational expression with its domain restrictions. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.2, 2.3, 2.4, 2.1, 2.2. A tests nested reciprocal sign; B tests even-root absolute value; C tests sharp three-distance equation; D tests sharp sum-of-squares bound; E tests nested reciprocal sign. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-155",
    "case_id": "MATH 2.155",
-   "title": "Exam-style tasks — 19",
+   "title": "Hard mixed exam: 19",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For every real $b$, it holds that $\\sqrt{b^2-2b+1}=b-1$.",
-    "For every real $y$, it holds that $|y-3|+|3-y|=2|y-3|$.",
-    "For all real $y$ and $z$, it holds that $(y+z)^2-(y-z)^2=2yz$.",
-    "For every real $c$ with $c\\neq0$ and $c\\neq-1$, it holds that $\\dfrac1c+\\dfrac{1}{c+1}=\\dfrac{1}{c(c+1)}$.",
-    "For every real $z$, it holds that $\\sqrt[4]{z^4}=z$."
+    "For all real $u,v$, $\\sqrt[4]{(u-v)^4}\\sqrt[6]{(u+v)^6}=|u^2-v^2|$.",
+    "The equation $|u-3|+|u-11|+|2u-14|=8$ has the unique real solution $u=8$.",
+    "For every real quadruple with all four entries nonzero $(m,n,h,k)$, $(m^2+n^2)(h^2+k^2)>(mh+nk)^2$.",
+    "For nonzero $m,n$ with $m\\ne\\pm n$, $\\dfrac{\\frac1m-\\frac1n}{\\frac1m+\\frac1n}\\cdot\\dfrac{m+n}{m-n}=-1$.",
+    "For all real $m,n$, $\\sqrt[4]{(m-n)^4}\\sqrt[6]{(m+n)^6}=m^2-n^2$."
    ],
    "answer_key": [
-    false,
     true,
     false,
     false,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe radicand is a completed square, and the square root of a square is an absolute value.\n\nRewrite the radicand:\n\n$$b^2-2b+1=(b-1)^2$$\n\nHence\n\n$$\\sqrt{b^2-2b+1}=\\sqrt{(b-1)^2}=|b-1|$$\n\nFor $b<1$ the value $|b-1|=1-b$ is positive while $b-1$ is negative, so the claimed equality fails on the whole half-line $b<1$. So the statement is False.",
-    "**B.** → True\n\nAn absolute value is unchanged when the sign of its argument is flipped.\n\nUse the symmetry:\n\n$$|3-y|=|-(y-3)|=|y-3|$$\n\nThe left-hand side is therefore a sum of two equal terms:\n\n$$|y-3|+|3-y|=|y-3|+|y-3|=2|y-3|$$\n\nSo the statement is True.",
-    "**C.** → False\n\nThe squares of the sum and of the difference differ only in the sign of the mixed term, so subtracting them keeps two copies of it.\n\nExpand both squares:\n\n$$(y+z)^2=y^2+2yz+z^2,\\qquad (y-z)^2=y^2-2yz+z^2$$\n\nSubtracting removes the pure squares and doubles the mixed term:\n\n$$(y+z)^2-(y-z)^2=4yz$$\n\nThe claim gives half of the correct value, so the two agree only when $yz=0$. So the statement is False.",
-    "**D.** → False\n\nAdding the two fractions over their product keeps a linear numerator.\n\nCombine over $c(c+1)$:\n\n$$\\frac1c+\\frac{1}{c+1}=\\frac{(c+1)+c}{c(c+1)}=\\frac{2c+1}{c(c+1)}$$\n\nThe numerator is $2c+1$, not $1$. The numerator $1$ belongs to the difference of the same two fractions, so the claim replaces a subtraction by an addition. Equality would need $2c+1=1$, that is $c=0$, which is excluded. So the statement is False.",
-    "**E.** → False\n\nAn even root is nonnegative by definition, so it cannot reproduce a negative base.\n\nCorrect rule:\n\n$$\\sqrt[4]{z^4}=|z|$$\n\nFor $z<0$ the left-hand side is positive while the right-hand side of the claim is negative, so the identity fails on the whole negative half-line. So the statement is False."
+    "**A.** → True\n\nEven-indexed principal roots return magnitudes, not the original signed bases. Keep both absolute values through the product.\n\nTake the fourth root:\n\n$$\\sqrt[4]{(u-v)^4}=|u-v|$$\n\nTake the sixth root:\n\n$$\\sqrt[6]{(u+v)^6}=|u+v|$$\n\nMultiply the magnitudes:\n\n$$|u-v|\\,|u+v|=|(u-v)(u+v)|$$\n\nFactor inside the bars:\n\n$$|(u-v)(u+v)|=|u^2-v^2|$$\n\nThe final absolute value is present in the claim, so the statement is True.",
+    "**B.** → False\n\nThe first two terms already have the segment length as their global minimum. Equality leaves no room for the third magnitude.\n\nUse the distance lower bound:\n\n$$|u-3|+|u-11|\\ge 8$$\n\nForce equality in the added term:\n\n$$|2u-14|=0$$\n\nSolve the remaining equation:\n\n$$2u=14\\iff u=7$$\n\nCheck the segment condition:\n\n$$3\\le 7\\le 11$$\n\nThe lower-bound argument forces $u=7$, not $8$, so the statement is False.",
+    "**C.** → False\n\nSubtract the claimed right side. The entire comparison collapses to one square, but equality must still be checked.\n\nForm the difference:\n\n$$(m^2+n^2)(h^2+k^2)-(mh+nk)^2$$\n\nCollect the surviving terms:\n\n$$m^2k^2-2mnhk+n^2h^2=(mk-nh)^2$$\n\nRead the sharp bound:\n\n$$(mk-nh)^2\\ge0$$\n\nNonzero entries do not force strictness: $m=n=1$ and $h=k=2$ make the square zero, so the statement is False.",
+    "**D.** → True\n\nThe complex fraction reverses the order in its numerator. Simplify it before multiplying by the second ratio.\n\nClear the inner denominators:\n\n$$\\frac{\\frac{n-m}{mn}}{\\frac{m+n}{mn}}=\\frac{n-m}{m+n}$$\n\nMultiply the ratios:\n\n$$\\frac{n-m}{m+n}\\cdot\\frac{m+n}{m-n}$$\n\nUse the reversed factor:\n\n$$\\frac{n-m}{m-n}=-1$$\n\nThe reversed numerator contributes the printed minus sign, so the statement is True.",
+    "**E.** → False\n\nEven-indexed principal roots return magnitudes, not the original signed bases. Keep both absolute values through the product.\n\nTake the fourth root:\n\n$$\\sqrt[4]{(m-n)^4}=|m-n|$$\n\nTake the sixth root:\n\n$$\\sqrt[6]{(m+n)^6}=|m+n|$$\n\nMultiply the magnitudes:\n\n$$|m-n|\\,|m+n|=|(m-n)(m+n)|$$\n\nFactor inside the bars:\n\n$$|(m-n)(m+n)|=|m^2-n^2|$$\n\nThe unbarred difference can be negative when $|n|>|m|$, while the radical product cannot, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 155,
-   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. Map: A tests powers, roots, or negative exponents; B tests absolute value or a piecewise algebraic rewrite; C tests expanding, factoring, or an algebraic identity; D tests a rational expression with its domain restrictions; E tests powers, roots, or negative exponents. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.3, 2.4, 2.1, 2.2, 2.3. A tests even-root absolute value; B tests sharp three-distance equation; C tests sharp sum-of-squares bound; D tests nested reciprocal sign; E tests even-root absolute value. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   },
   {
    "id": "math-2-156",
    "case_id": "MATH 2.156",
-   "title": "Exam-style tasks — 20",
+   "title": "Hard mixed exam: 20",
    "subsection": "2.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
    "statements": [
-    "For every real $s$, the inequality $|s|>1$ holds precisely when $s>1$.",
-    "For every real $s$, it holds that $s^3-8=(s-2)\\left(s^2+2s+4\\right)$.",
-    "For all real $a$, $b$, $c$ with $b\\neq0$, it holds that $\\dfrac ab+\\dfrac cb=\\dfrac{a+c}{b}$.",
-    "For $y>0$, it holds that $\\dfrac{1}{\\sqrt{y+1}+\\sqrt y}=\\sqrt{y+1}-\\sqrt y$.",
-    "For every real $y$, it holds that $|y-1|+|y-4|\\ge3$."
+    "The equation $|y-4|+|y-14|+|2y-18|=10$ has the unique real solution $y=9$.",
+    "For every real quadruple $(r,s,c,d)$, $(r^2+s^2)(c^2+d^2)\\ge(rc+sd)^2$.",
+    "For nonzero $r,s$ with $r\\ne\\pm s$, $\\dfrac{\\frac1r-\\frac1s}{\\frac1r+\\frac1s}\\cdot\\dfrac{r+s}{r-s}=1$.",
+    "For all real $r,s$, $\\sqrt[4]{(r-s)^4}\\sqrt[6]{(r+s)^6}=|r^2-s^2|$.",
+    "The equation $|z-5|+|z-11|+|2z-16|=6$ has the unique real solution $z=9$."
    ],
    "answer_key": [
+    true,
+    true,
     false,
     true,
-    true,
-    true,
-    true
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nAn absolute value measures distance from the origin in both directions.\n\nSolve the inequality:\n\n$$|s|>1\\quad\\Longleftrightarrow\\quad s\\in(-\\infty,-1)\\cup(1,\\infty)$$\n\nThe claim keeps only the right branch and loses the whole half-line $s<-1$, where $|s|>1$ also holds. So the statement is False.",
-    "**B.** → True\n\nHere $8=2^3$, so the expression is a difference of cubes.\n\nApply the identity with the second base equal to $2$:\n\n$$s^3-2^3=(s-2)\\left(s^2+2s+2^2\\right)$$\n\nA direct expansion confirms it, since\n\n$$(s-2)\\left(s^2+2s+4\\right)=s^3+2s^2+4s-2s^2-4s-8=s^3-8$$\n\nSo the statement is True.",
-    "**C.** → True\n\nTwo fractions with the same denominator are added by adding numerators.\n\nAdd over the common denominator $b$:\n\n$$\\frac ab+\\frac cb=\\frac{a+c}{b}$$\n\nThe denominator is unchanged, and $b\\neq0$ keeps both sides defined. So the statement is True.",
-    "**D.** → True\n\nMultiplying by the conjugate turns the two-term radical denominator into a difference of squares.\n\nExpand the conjugate product:\n\n$$\\left(\\sqrt{y+1}+\\sqrt y\\right)\\left(\\sqrt{y+1}-\\sqrt y\\right)=(y+1)-y=1$$\n\nThe two factors multiply to $1$, so each is the reciprocal of the other:\n\n$$\\frac{1}{\\sqrt{y+1}+\\sqrt y}=\\sqrt{y+1}-\\sqrt y$$\n\nSo the statement is True.",
-    "**E.** → True\n\nThe two arguments are chosen so that their difference is constant, which is exactly what the triangle inequality needs.\n\nReverse the second term and add:\n\n$$|y-1|+|y-4|=|y-1|+|4-y|\\ge|(y-1)+(4-y)|=3$$\n\nThe inner sum is the constant $3$, independent of $y$, so the bound holds everywhere. Equality is attained on the interval $1\\le y\\le4$. So the statement is True."
+    "**A.** → True\n\nThe first two terms already have the segment length as their global minimum. Equality leaves no room for the third magnitude.\n\nUse the distance lower bound:\n\n$$|y-4|+|y-14|\\ge 10$$\n\nForce equality in the added term:\n\n$$|2y-18|=0$$\n\nSolve the remaining equation:\n\n$$2y=18\\iff y=9$$\n\nCheck the segment condition:\n\n$$4\\le 9\\le 14$$\n\nAt the midpoint the first two distances total the segment length and the last term vanishes, so the statement is True.",
+    "**B.** → True\n\nSubtract the claimed right side. The entire comparison collapses to one square, but equality must still be checked.\n\nForm the difference:\n\n$$(r^2+s^2)(c^2+d^2)-(rc+sd)^2$$\n\nCollect the surviving terms:\n\n$$r^2d^2-2rscd+s^2c^2=(rd-sc)^2$$\n\nRead the sharp bound:\n\n$$(rd-sc)^2\\ge0$$\n\nThe difference is always nonnegative, so the non-strict inequality is True.",
+    "**C.** → False\n\nThe complex fraction reverses the order in its numerator. Simplify it before multiplying by the second ratio.\n\nClear the inner denominators:\n\n$$\\frac{\\frac{s-r}{rs}}{\\frac{r+s}{rs}}=\\frac{s-r}{r+s}$$\n\nMultiply the ratios:\n\n$$\\frac{s-r}{r+s}\\cdot\\frac{r+s}{r-s}$$\n\nUse the reversed factor:\n\n$$\\frac{s-r}{r-s}=-1$$\n\nThe factors differ by a minus sign, so the product is $-1$, not $1$, and the statement is False.",
+    "**D.** → True\n\nEven-indexed principal roots return magnitudes, not the original signed bases. Keep both absolute values through the product.\n\nTake the fourth root:\n\n$$\\sqrt[4]{(r-s)^4}=|r-s|$$\n\nTake the sixth root:\n\n$$\\sqrt[6]{(r+s)^6}=|r+s|$$\n\nMultiply the magnitudes:\n\n$$|r-s|\\,|r+s|=|(r-s)(r+s)|$$\n\nFactor inside the bars:\n\n$$|(r-s)(r+s)|=|r^2-s^2|$$\n\nThe final absolute value is present in the claim, so the statement is True.",
+    "**E.** → False\n\nThe first two terms already have the segment length as their global minimum. Equality leaves no room for the third magnitude.\n\nUse the distance lower bound:\n\n$$|z-5|+|z-11|\\ge 6$$\n\nForce equality in the added term:\n\n$$|2z-16|=0$$\n\nSolve the remaining equation:\n\n$$2z=16\\iff z=8$$\n\nCheck the segment condition:\n\n$$5\\le 8\\le 11$$\n\nThe lower-bound argument forces $z=8$, not $9$, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 156,
-   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. Map: A tests absolute value or a piecewise algebraic rewrite; B tests expanding, factoring, or an algebraic identity; C tests a rational expression with its domain restrictions; D tests powers, roots, or negative exponents; E tests absolute value or a piecewise algebraic rewrite. Each letter is solved independently; no result is shared across statements.",
+   "solution_overview": "Topics: 2.4, 2.1, 2.2, 2.3, 2.4. A tests sharp three-distance equation; B tests sharp sum-of-squares bound; C tests nested reciprocal sign; D tests even-root absolute value; E tests sharp three-distance equation. Each letter is independent; no value or conclusion carries into another statement.",
    "placeholder": false
   }
  ]
