@@ -5861,19 +5861,71 @@ The unique assignment is $\\{P,S,T\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that every Victor-out roster has size at most $3$, which breaks rule (8). Victor therefore competes in every valid roster, so the statement is True.`,
+To decide whether Victor is forced in, try the opposite: assume Victor is out and see whether any roster can still meet all eight rules.
+
+Assume $\\neg V$. Rule (1) is the biconditional $U\\Leftrightarrow V$, so Uma is out as well:
+
+$$\\neg V \\implies \\neg U$$
+
+Rule (7) is $B\\Rightarrow U$. Its contrapose is $\\neg U\\Rightarrow\\neg B$, so Bianca is out too:
+
+$$\\neg U \\implies \\neg B$$
+
+Only Wendy, Xavier, Yara, and Zane remain as possible competitors. Rule (3) says exactly one of Wendy or Xavier competes, so there are two cases.
+
+**Case Wendy in, Xavier out.** Then the only people who can still enter are Wendy, Yara, and Zane — at most three competitors. Rule (8) needs at least four, so this case dies.
+
+**Case Xavier in, Wendy out.** Rule (4) is $X\\Rightarrow\\neg Y$, so Yara is out. Rule (5) needs $Y\\lor Z$, and with Yara gone Zane must enter. The roster is then only Xavier and Zane — size $2$, again below four.
+
+Both Victor-out branches break rule (8). Therefore every valid roster has Victor in, so the statement is True.`,
       `**B.** → False
 
-The overview recovered that Victor always competes, so Wendy always competes by (2). Rule (3) then keeps Xavier out of every roster, so the statement is False.`,
+From letter A (and the overview solve), Victor competes in every valid roster. Feed that fact forward through the later rules.
+
+Rule (2) is $V\\Rightarrow W$. With Victor in, Wendy must compete:
+
+$$V \\implies W$$
+
+Rule (3) says exactly one of Wendy or Xavier competes. Wendy is already in, so Xavier cannot be:
+
+$$W \\implies \\neg X$$
+
+Xavier is therefore out of every valid roster. The claim says some valid roster includes Xavier, which never happens, so the statement is False.`,
       `**C.** → True
 
-The contrapose of rule (6) is $B\\Rightarrow\\neg Z$. That is the claimed implication, so the statement is True.`,
+Rule (6) says "Zane competes only if Bianca does not," which is the implication
+
+$$Z \\Rightarrow \\neg B$$
+
+The contrapose of $P\\Rightarrow Q$ is $\\neg Q\\Rightarrow\\neg P$. Here $P=Z$ and $Q=\\neg B$, so
+
+$$\\neg(\\neg B) \\Rightarrow \\neg Z$$
+
+$$B \\Rightarrow \\neg Z$$
+
+That is exactly "If Bianca competes, then Zane does not compete." The claim restates a forced consequence of rule (6), so the statement is True.`,
       `**D.** → False
 
-The overview recovered four legal extras on top of the forced core. Four rosters is already more than one, so the statement is False.`,
+After Victor is forced in, the chain $V\\Rightarrow W$ and rule (3) also force Uma in, Wendy in, and Xavier out. The forced core is therefore
+
+$$\\{U,V,W\\}\\qquad\\text{with }X\\text{ out}$$
+
+The free variables are only $Y,Z,B$, subject to (5) $Y\\lor Z$ and (6) $Z\\Rightarrow\\neg B$ (Zane and Bianca cannot both enter). Listing the legal extras:
+
+$$\\{Y\\},\\quad \\{Z\\},\\quad \\{Y,B\\},\\quad \\{Y,Z\\}$$
+
+(The triple $\\{Y,Z,B\\}$ is illegal by (6); $\\{B\\}$ alone fails (5); $\\{Z,B\\}$ fails (6).)
+
+Each legal extra produces a different full roster on the same core, so there are four valid rosters, not one. The claim of uniqueness fails, so the statement is False.`,
       `**E.** → False
 
-A size-$6$ roster would need the extra $\\{Y,Z,B\\}$. Rule (6) forbids Zane with Bianca, so that extra is illegal. The recovered extras have size $1$ or $2$ on a core of $3$, hence totals $4$ or $5$, so the statement is False.`,
+A roster of size exactly six would need six of the seven finalists. With the forced core $\\{U,V,W\\}$ already in and Xavier forced out, the only way to reach size six is to add all three of Yara, Zane, and Bianca:
+
+$$\\{U,V,W,Y,Z,B\\}$$
+
+But rule (6) is $Z\\Rightarrow\\neg B$, so Zane and Bianca cannot both compete. The extra $\\{Y,Z,B\\}$ is illegal.
+
+The legal extras recovered above have size $1$ or $2$, so total roster sizes are only $4$ or $5$. Size six never appears, so the statement is False.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 30,
@@ -5889,15 +5941,10 @@ and (8) at least four of the seven compete.
 
 "$P$ only if $Q$" is $P\\Rightarrow Q$. An implication whose hypothesis is false is idle.
 
-**Part 2: Solve.**
+**Part 2: Shared forcing (used by every letter).**
 
-If $\\neg V$ holds, then $\\neg U$ by (1) and $\\neg B$ by the contrapose of (7). Rule (3) then splits:
+Try $\\neg V$: then $\\neg U$ by (1) and $\\neg B$ by the contrapose of (7). Rule (3) splits into $W\\land\\neg X$ (at most $\\{W,Y,Z\\}$, size $\\le 3$) or $X\\land\\neg W$ (then $\\neg Y$ by (4) and $Z$ by (5), size $2$). Both break (8), so Victor is forced in. Then $U$ by (1), $W$ by (2), and $\\neg X$ by (3).
 
-- $W$ and $\\neg X$ leave at most $W,Y,Z$, hence size at most $3$.
-- $X$ and $\\neg W$ drop $Y$ by (4) and force $Z$ by (5), hence size $2$.
-
-Both sit under four, so Victor must compete. Then $U$ holds by (1), $W$ holds by (2), and $\\neg X$ holds by (3).
-
-The forced core is $U,V,W$ in and $X$ out. Among $Y,Z,B$, rule (5) needs $Y\\lor Z$ and rule (6) forbids $Z$ with $B$. The legal extras are $\\{Y\\}$, $\\{Z\\}$, $\\{Y,B\\}$, and $\\{Y,Z\\}$.`,
+Forced core: $\\{U,V,W\\}$ in, $X$ out. Among $Y,Z,B$, rules (5)–(6) allow only the extras $\\{Y\\}$, $\\{Z\\}$, $\\{Y,B\\}$, $\\{Y,Z\\}$.`,
   },
 ];
