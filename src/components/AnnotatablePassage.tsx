@@ -5,16 +5,33 @@ import { cn } from "@/lib/utils";
 /** Matches `lg:top-20` on the Texts reading column. */
 const PRACTICE_STICKY_TOP_PX = 80;
 
-/** True once the reading box is fully on-screen (or pinned under the sticky top). */
+function pageScrollMax(): number {
+  return Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+}
+
+function pageCanScroll(deltaY: number): boolean {
+  const y = window.scrollY;
+  const max = pageScrollMax();
+  if (deltaY > 0) return y < max - 1;
+  if (deltaY < 0) return y > 1;
+  return false;
+}
+
+/**
+ * True once the reading box is fully on-screen (including after sticky
+ * unpins at the bottom of its column), or pinned under the sticky top.
+ */
 function isReadingBoxFullyVisible(box: HTMLElement): boolean {
   const rect = box.getBoundingClientRect();
   const vh = window.innerHeight;
-  const eps = 4;
-  const avail = vh - PRACTICE_STICKY_TOP_PX;
-  if (rect.height <= avail + eps) {
-    return rect.top >= PRACTICE_STICKY_TOP_PX - eps && rect.bottom <= vh + eps;
+  const eps = 8;
+
+  // Entire box fits in the viewport (top may be above the sticky pin after unstick).
+  if (rect.height <= vh + eps) {
+    return rect.top >= -eps && rect.bottom <= vh + eps;
   }
-  // Taller than the viewport: ready when pinned under the sticky offset.
+
+  // Taller than the viewport: ready once top has reached the sticky pin.
   return rect.top <= PRACTICE_STICKY_TOP_PX + eps;
 }
 
@@ -102,7 +119,10 @@ export function AnnotatablePassage({
 
     const update = () => {
       const box = pageScrollUntilVisibleRef.current;
-      setInnerScrollEnabled(!box || isReadingBoxFullyVisible(box));
+      const visible = !box || isReadingBoxFullyVisible(box);
+      // If the page is already at the bottom, unlock passage scroll immediately.
+      const atPageEnd = window.scrollY >= pageScrollMax() - 1;
+      setInnerScrollEnabled(visible || atPageEnd);
     };
 
     update();
@@ -118,7 +138,8 @@ export function AnnotatablePassage({
     };
   }, [pageScrollUntilVisibleRef]);
 
-  // Keep wheel on the page until the box is ready; at passage edges, chain back to the page.
+  // Prefer page scroll until the box is ready; if the page can't move, scroll the passage.
+  // At passage edges, chain back to the page only when the page can still scroll.
   useEffect(() => {
     if (!pageScrollUntilVisibleRef) return;
     const el = containerRef.current;
@@ -126,13 +147,22 @@ export function AnnotatablePassage({
 
     const onWheel = (e: WheelEvent) => {
       if (!innerScrollEnabled) {
+        if (pageCanScroll(e.deltaY)) {
+          e.preventDefault();
+          window.scrollBy({ top: e.deltaY });
+          return;
+        }
+        // Page is already at the end in this direction — scroll the text.
         e.preventDefault();
-        window.scrollBy({ top: e.deltaY });
+        el.scrollTop += e.deltaY;
         return;
       }
       const atTop = el.scrollTop <= 0;
       const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
-      if ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) {
+      if (
+        ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) &&
+        pageCanScroll(e.deltaY)
+      ) {
         e.preventDefault();
         window.scrollBy({ top: e.deltaY });
       }
