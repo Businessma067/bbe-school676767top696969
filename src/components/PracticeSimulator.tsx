@@ -304,14 +304,10 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   return (
     <div ref={stageRef} className="relative">
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-stretch">
+      <div className="relative flex flex-col gap-4 lg:flex-row lg:items-stretch">
         {/* ---------------- Task panel ---------------- */}
-        <div
-          className={cn(
-            "min-w-0 transition-all duration-[900ms] ease-in-out",
-            showSolution ? "lg:w-[52%]" : "lg:w-full",
-          )}
-        >
+        <div className="min-w-0 lg:w-full">
+
           <div
             ref={scrollRef}
             className={cn(
