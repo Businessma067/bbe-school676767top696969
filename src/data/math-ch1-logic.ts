@@ -2392,10 +2392,28 @@ De Morgan identifies $\\neg(P\\land Q)$ with $\\neg P\\lor\\neg Q$, and $\\neg(P
     tactical_explanations: [
       `**A.** → True
 
-The overview showed that every prime $p>2$ is odd: the only even prime is $2$, which the domain excludes. The claim is that same statement, so the statement is True.`,
+Take any prime $p>2$. If $p$ were even, then $p=2k$ for some integer $k>1$, so $p$ would have the non-trivial divisor $2$:
+
+$$p=2k,\\quad k>1\\quad\\Longrightarrow\\quad 1<2<p$$
+
+That contradicts primality. Hence every prime in the stated domain is odd:
+
+$$\\forall p\\,((\\mathrm{Prime}(p)\\land p>2)\\Rightarrow\\mathrm{Odd}(p))$$
+
+The universal claim is therefore True.`,
       `**B.** → False
 
-A counterexample must live in the domain and fail the conclusion. The test $2>2$ is false, so $2$ never enters the quantified range. It is an even prime, but the statement never claimed anything about $2$, so the statement is False.`,
+A counterexample must satisfy the domain conditions and fail the conclusion. Although $2$ is prime and not odd, it fails the strict domain test:
+
+$$2>2=\\mathrm{F}$$
+
+Thus the complete counterexample test gives
+
+$$\\mathrm{Prime}(2)\\land(2>2)\\land\\neg\\mathrm{Odd}(2)
+=\\mathrm{T}\\land\\mathrm{F}\\land\\mathrm{T}
+=\\mathrm{F}$$
+
+The number $2$ is outside the quantified range, so it is not a counterexample and the statement is False.`,
       `**C.** → True
 
 Negating $\\forall p>2\\,(\\mathrm{Prime}(p)\\Rightarrow\\mathrm{Odd}(p))$ produces an existential with the conclusion flipped, still restricted to $p>2$:
@@ -2412,7 +2430,15 @@ $$9>2,\\qquad 9=3\\cdot 3$$
 The number $9$ is odd and composite. One counterexample kills the converse, so the statement is False.`,
       `**E.** → True
 
-Euclid supplies infinitely many primes. Dropping the single prime $2$ leaves $3,5,7,\\ldots$, still infinite, all greater than $2$. Removing one element from an infinite set leaves an infinite set, so the statement is True.`,
+Euclid's theorem says that the set $\\mathbb P$ of all primes is infinite. The primes greater than $2$ are exactly
+
+$$\\{p\\in\\mathbb P:p>2\\}=\\mathbb P\\setminus\\{2\\}$$
+
+If this remaining set were finite, adding the one omitted prime would make
+
+$$\\mathbb P=(\\mathbb P\\setminus\\{2\\})\\cup\\{2\\}$$
+
+finite, contradicting Euclid's theorem. Therefore infinitely many primes are greater than $2$, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -2445,19 +2471,65 @@ Maria is currently enrolled in Advanced Macroeconomics.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that Maria has passed Intermediate Macroeconomics. The claim is that same fact, so the statement is True.`,
+Let $A$ mean that Maria is enrolled in Advanced and $I$ mean that she passed Intermediate. “Advanced only if Intermediate” gives
+
+$$A\\Rightarrow I$$
+
+Maria's enrolment makes $A=\\mathrm{T}$. Modus ponens evaluates the required consequence:
+
+$$A=\\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I=\\mathrm{T}$$
+
+Maria has passed Intermediate, so the statement is True.`,
       `**B.** → True
 
-The overview recovered that Maria has passed Principles of Economics. The claim is that same fact, so the statement is True.`,
+Let $P$ mean that Maria passed Principles. The two prerequisite rules form
+
+$$A\\Rightarrow I,\\qquad I\\Rightarrow P$$
+
+Since Maria has $A=\\mathrm{T}$, apply the implications in order:
+
+$$A=\\mathrm{T}\\Longrightarrow I=\\mathrm{T}\\Longrightarrow P=\\mathrm{T}$$
+
+The second rule therefore forces Maria to have passed Principles, so the statement is True.`,
       `**C.** → True
 
-Composing the two arrows gives $A\\Rightarrow P$: Advanced cannot occur without Principles. That is what "Principles is necessary for Advanced" means, so the statement is True.`,
+Compose the prerequisite implications:
+
+$$A\\Rightarrow I,\quad I\\Rightarrow P
+\\quad\\Longrightarrow\\quad
+A\\Rightarrow P$$
+
+The resulting arrow says that whenever Advanced enrolment is true, passing Principles must also be true:
+
+$$A=\\mathrm{T}\\quad\\Longrightarrow\\quad P=\\mathrm{T}$$
+
+That makes Principles a necessary condition for Advanced enrolment, so the statement is True.`,
       `**D.** → False
 
-Sufficient would require $P\\Rightarrow A$. A student may pass Principles, skip Intermediate, and never reach Advanced. The recovered chain runs $A\\Rightarrow I\\Rightarrow P$, not the reverse, so the statement is False.`,
+Calling Principles sufficient for Advanced would reverse the established chain and require
+
+$$P\\Rightarrow A$$
+
+Consider a student who passed Principles but never passed Intermediate and is not enrolled in Advanced:
+
+$$P=\\mathrm{T},\qquad I=\\mathrm{F},\qquad A=\\mathrm{F}$$
+
+Both original rules hold vacuously because their antecedents are false, but the proposed reverse implication evaluates as
+
+$$P\\Rightarrow A=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Passing Principles alone is not sufficient for Advanced enrolment, so the statement is False.`,
       `**E.** → False
 
-The two rules mention only "passed" and "enrolled." No grade, mark, or "perfect" appears. From Maria's enrolment we recover two pass/fail facts, not a score, so the statement is False.`,
+The rules permit only the pass/fail chain
+
+$$A(M)=\\mathrm{T}\\Longrightarrow I(M)=\\mathrm{T}\\Longrightarrow P(M)=\\mathrm{T}$$
+
+Here $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not encode any numerical grade:
+
+$$P(M)=\\mathrm{T}\\centernot\\Longrightarrow \\mathrm{Grade}(M)=100\\%$$
+
+Maria could have earned any passing mark. A perfect grade cannot be inferred, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -2500,13 +2572,48 @@ $$P\\setminus E=\\{3,5,7,11,13\\}$$
 The claim is that roster, so the statement is True.`,
       `**C.** → False
 
-A universal on $P$ fails at one interior point. The member $x=2$ sits in $P$ and is even, so "every member of $P$ is odd" is false. One counterexample is enough, so the statement is False.`,
+A universal claim over $P$ must work for every listed prime. Test the member $x=2$:
+
+$$2\\in P,\qquad \\mathrm{Odd}(2)=\\mathrm{F}$$
+
+Equivalently, its universal implication has the false row
+
+$$2\\in P\\Rightarrow\\mathrm{Odd}(2)
+=\\mathrm{T}\\Rightarrow\\mathrm{F}
+=\\mathrm{F}$$
+
+This one counterexample disproves “every $x\\in P$ is odd,” so the statement is False.`,
       `**D.** → True
 
-The extra hypothesis $x\\ne 2$ removes the even prime. What remains is $\\{3,5,7,11,13\\}$, all odd, so the implication has no false row. Restricting the domain repairs the unrestricted universal, so the statement is True.`,
+The antecedent restricts attention to members of $P$ other than $2$:
+
+$$\\{x\\in P:x\\ne2\\}=\\{3,5,7,11,13\\}$$
+
+Every number in that set has the form $2k+1$, so each makes the conclusion “$x$ is odd” true. At $x=2$, the extra condition is false:
+
+$$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2)
+=\\mathrm{F}\\Rightarrow\\mathrm{F}
+=\\mathrm{T}$$
+
+Thus no $x$ gives a true antecedent and false conclusion. The universal implication is True.`,
       `**E.** → False
 
-Subsethood needs every member of $P$ to sit in $E$. Already $3\\in P$ and $3\\notin E$. One miss kills the inclusion, so the statement is False.`,
+The subset claim means
+
+$$P\\subseteq E\\quad\\Longleftrightarrow\\quad
+\\forall x\\,(x\\in P\\Rightarrow x\\in E)$$
+
+Choose $x=3$. The membership values are
+
+$$3\\in P=\\mathrm{T},\qquad 3\\in E=\\mathrm{F}$$
+
+so the required implication evaluates as
+
+$$3\\in P\\Rightarrow3\\in E
+=\\mathrm{T}\\Rightarrow\\mathrm{F}
+=\\mathrm{F}$$
+
+One member of $P$ outside $E$ disproves the subset claim, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -2531,7 +2638,15 @@ Intersection keeps numbers in both lists. Difference $P\\setminus E$ keeps membe
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $P\\Rightarrow Q$: a number past $10$ cannot fail to be past $5$. That is what "$P$ is sufficient for $Q$" means, so the statement is True.`,
+Let $P$ be $x>10$ and $Q$ be $x>5$. If $P$ is true, then subtracting $5$ from $x>10$ gives
+
+$$x>10\\quad\\Longrightarrow\\quad x-5>5>0\\quad\\Longrightarrow\\quad x>5$$
+
+Thus
+
+$$P\\Rightarrow Q$$
+
+holds for every real $x$. Since a sufficient condition is the antecedent of a guaranteed implication, $x>10$ is sufficient for $x>5$, so the statement is True.`,
       `**B.** → False
 
 Necessity of $x>10$ for $x>5$ would require $Q\\Rightarrow P$. Test $x=7$ in the hypothesis:
@@ -2545,7 +2660,15 @@ $$7\\not>10$$
 This witness makes $Q$ true and $P$ false. The implication $Q\\Rightarrow P$ fails, so the statement is False.`,
       `**C.** → True
 
-"$Q$ is necessary for $P$" is the same recovered arrow $P\\Rightarrow Q$ read from the other end: $x>10$ cannot hold unless $x>5$ also holds. The necessary condition is the one the arrow points at, so the statement is True.`,
+“$x>5$ is necessary for $x>10$” means that whenever $x>10$ holds, $x>5$ must hold:
+
+$$x>10\\Rightarrow x>5$$
+
+There is no real number with the forbidden truth pattern
+
+$$x>10=\\mathrm{T},\qquad x>5=\\mathrm{F}$$
+
+because every number above $10$ is automatically above $5$. Therefore $x>5$ is a necessary condition for $x>10$, so the statement is True.`,
       `**D.** → False
 
 Equivalence requires both implications to hold:
@@ -2607,7 +2730,21 @@ $$R(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 The claim says P satisfies both required conditions, so the statement is True.`,
       `**B.** → False
 
-The recovered rule is $L\\Rightarrow R$. Meeting $R$ is necessary, not sufficient. P has $R$ true, but that does not force $L$. The reverse arrow $R\\Rightarrow L$ is not in the rule, so the statement is False.`,
+Let $L$ mean “the loan is approved” and $R$ mean “both required tests hold.” The bank gives only
+
+$$L\\Rightarrow R$$
+
+Applicant P has $R(P)=\\mathrm{T}$, but that truth value does not determine $L(P)$. Both rows
+
+$$L(P)=\\mathrm{T},\ R(P)=\\mathrm{T}
+\qquad\\text{and}\\qquad
+L(P)=\\mathrm{F},\ R(P)=\\mathrm{T}$$
+
+satisfy $L\\Rightarrow R$. Concluding approval would use the unsupported converse
+
+$$R\\Rightarrow L$$
+
+so P's approval cannot be concluded and the statement is False.`,
       `**C.** → True
 
 Conjunction fails when either required test fails. Applicant Q clears the score test:
@@ -2640,7 +2777,15 @@ $$\\neg R(Q)\\Rightarrow\\neg L(Q)$$
 Q's loan is therefore not approved, so the statement is True.`,
       `**E.** → False
 
-A ratio below $40\\%$ is only one conjunct of $R$. An applicant with ratio $30\\%$ and score $650$ already fails the score test, so $R$ is false and approval is blocked. Even a full $R$ would still be only necessary, not sufficient, so the statement is False.`,
+A ratio below $40\\%$ is only one part of the required conjunction. Consider an applicant with score $650$ and ratio $30\\%$:
+
+$$650\\ge700=\\mathrm{F},\qquad 30\\%<40\\%=\\mathrm{T}$$
+
+The full requirement evaluates to
+
+$$R=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+The contrapositive of $L\\Rightarrow R$ then gives $\\neg R\\Rightarrow\\neg L$, so this applicant cannot be approved. A low ratio does not guarantee approval, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 6,
@@ -2674,7 +2819,19 @@ $$\\neg\\forall x\\,(x^{2}\\ge 0)\\equiv\\exists x\\,(x^{2}<0)$$
 The quoted sentence is that negation, so the statement is True.`,
       `**B.** → False
 
-Squares of reals land in $[0,\\infty)$. No real $x$ satisfies $x^{2}=-1$. The existence claim would succeed over $\\mathbb C$, but the universe here is $\\mathbb R$, so the statement is False.`,
+For every real number, squaring produces a nonnegative result:
+
+$$\\forall x\\in\\mathbb R,\qquad x^{2}\\ge0$$
+
+But the proposed witness would have to satisfy
+
+$$x^{2}=-1<0$$
+
+which contradicts that fact. Hence the real solution set is empty:
+
+$$\\{x\\in\\mathbb R:x^{2}=-1\\}=\\varnothing$$
+
+The existential statement has no real witness, so it is False.`,
       `**C.** → True
 
 Negating an existential produces a universal of the negated predicate. The inequality $>$ flips to $\\le$, including the boundary $100$:
@@ -2746,7 +2903,19 @@ $$\\neg(A\\land B)\\Rightarrow\\neg D$$
 Patient S therefore cannot be diagnosed with condition X, so the statement is False.`,
       `**C.** → False
 
-Sufficient would be $S\\Rightarrow D$. The doctor states the opposite: both symptoms do not guarantee the diagnosis, because other conditions must still be ruled out. $S$ is necessary and not sufficient, so the statement is False.`,
+Let $S=A\\land B$ mean that both symptoms are present. Calling $S$ sufficient would require the reverse implication
+
+$$S\\Rightarrow D$$
+
+The doctor explicitly allows a patient whose two symptoms are present but whose diagnosis is withheld while other conditions are checked:
+
+$$S=\\mathrm{T},\qquad D=\\mathrm{F}$$
+
+For that allowed case,
+
+$$S\\Rightarrow D=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Both symptoms are necessary but not sufficient for diagnosis, so the statement is False.`,
       `**D.** → True
 
 The contrapositive blocks diagnosis whenever the required conjunction is false. If symptom A is absent, then for either truth value of B,
@@ -2760,7 +2929,17 @@ $$\\neg(A\\land B)\\Rightarrow\\neg D$$
 No other symptom can repair the missing A requirement, so the statement is True.`,
       `**E.** → False
 
-The doctor explicitly allows both symptoms while other conditions are still being excluded: $S$ without $D$. That open gap is what separates a necessary condition from a sufficient one. Claiming the gap is impossible is claiming sufficiency, so the statement is False.`,
+The criterion gives $D\\Rightarrow(A\\land B)$, but it explicitly denies the converse. A patient may have both symptoms while another condition prevents diagnosis:
+
+$$A\\land B=\\mathrm{T},\qquad D=\\mathrm{F}$$
+
+This possibility satisfies the doctor's one-way rule because
+
+$$D\\Rightarrow(A\\land B)
+=\\mathrm{F}\\Rightarrow\\mathrm{T}
+=\\mathrm{T}$$
+
+yet it directly refutes the claim that such a patient is impossible. Therefore the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 8,
@@ -2848,19 +3027,65 @@ An existential sentence needs one working example. A universal sentence is destr
     tactical_explanations: [
       `**A.** → True
 
-Banned means $v\\ge 3$. Person T has $v=2$, so $2\\ge 3$ fails and T is not banned. The biconditional "member iff not banned" then forces membership, so the statement is True.`,
+Write $B(v)$ for “the person is banned” and $M(v)$ for “the person is a member.” The rules say
+
+$$B(v)\\Leftrightarrow(v\\ge3),\qquad M(v)\\Leftrightarrow\\neg B(v)$$
+
+For Person T, $v=2$, so
+
+$$B(2)=(2\\ge3)=\\mathrm{F}$$
+
+and therefore
+
+$$M(2)=\\neg B(2)=\\neg\\mathrm{F}=\\mathrm{T}$$
+
+Person T is a member, so the statement is True.`,
       `**B.** → False
 
-Person U has $v=4$, and $4\\ge 3$, so U is banned. The same biconditional makes banned the exact opposite of member, so U is not a member, so the statement is False.`,
+Person U has four violations. Evaluate the banned-list test first:
+
+$$B(4)=(4\\ge3)=\\mathrm{T}$$
+
+Membership is exactly the negation of banned status, so
+
+$$M(4)=\\neg B(4)=\\neg\\mathrm{T}=\\mathrm{F}$$
+
+U is not a member. The claim that U is a member is therefore False.`,
       `**C.** → True
 
-"Member iff not banned" means the two lists never overlap and never leave a gap: every person is in exactly one of them. That is the definition of complementary sets, so the statement is True.`,
+The biconditional gives, for every person $x$,
+
+$$M(x)\\Leftrightarrow\\neg B(x)$$
+
+If $B(x)=\\mathrm{T}$, then $M(x)=\\mathrm{F}$; if $B(x)=\\mathrm{F}$, then $M(x)=\\mathrm{T}$. Thus
+
+$$M\\cap B=\\varnothing,\qquad M\\cup B=U$$
+
+where $U$ is the set of all people under the rule. Those two equations say the membership and banned lists are complementary, so the statement is True.`,
       `**D.** → False
 
-"Three or more" includes $v=3$. Check $3\\ge 3$: true, so a person with exactly $3$ violations is banned, hence not a member. The count $v=3$ is not discretionary, so the statement is False.`,
+At the boundary value $v=3$, “three or more” is already satisfied:
+
+$$B(3)=(3\\ge3)=\\mathrm{T}$$
+
+The membership biconditional then gives
+
+$$M(3)=\\neg B(3)=\\neg\\mathrm{T}=\\mathrm{F}$$
+
+There is no second allowed outcome depending on unstated factors: exactly three violations forces banned status. The statement is False.`,
       `**E.** → False
 
-For each integer $v$, the test $v\\ge 3$ returns a definite yes or no. Counts $0,1,2$ are members; counts $3,4,5,\\ldots$ are banned. No $v$ is left undecided, so the statement is False.`,
+Every possible integer violation count lies on exactly one side of the cutoff:
+
+$$v<3\\quad\\text{or}\\quad v\\ge3$$
+
+The resulting classifications are
+
+$$v<3\\Rightarrow B(v)=\\mathrm{F},\ M(v)=\\mathrm{T}$$
+
+$$v\\ge3\\Rightarrow B(v)=\\mathrm{T},\ M(v)=\\mathrm{F}$$
+
+No count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -2885,19 +3110,63 @@ Because the two conditions are exact opposites, the two lists never overlap and 
     tactical_explanations: [
       `**A.** → True
 
-A universal $\\forall x\\,P(x)$ is false as soon as one $x$ has $\\neg P(x)$. That one counterexample is a complete disproof. Nothing further is required, so the statement is True.`,
+The negation of a universal statement is an existential counterexample:
+
+$$\\neg\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x)$$
+
+For “all primes are odd,” a counterexample must satisfy
+
+$$\\mathrm{Prime}(x)\\land\\neg\\mathrm{Odd}(x)$$
+
+Exhibiting one such $x$ makes the existential negation true and the original universal false. Therefore one counterexample is sufficient, so the statement is True.`,
       `**B.** → True
 
-A counterexample to "all primes are odd" must be prime and fail to be odd. The number $2$ has divisors $1$ and $2$ only, so it is prime, and it is even. Both halves succeed, so the statement is True.`,
+The number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to
+
+$$\\mathrm{Prime}(2)\\land\\neg\\mathrm{Odd}(2)
+=\\mathrm{T}\\land\\mathrm{T}
+=\\mathrm{T}$$
+
+Equivalently, the universal implication fails at $2$:
+
+$$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2)
+=\\mathrm{T}\\Rightarrow\\mathrm{F}
+=\\mathrm{F}$$
+
+Thus $2$ is a valid counterexample, so the statement is True.`,
       `**C.** → True
 
-$P\\Rightarrow Q$ fails only in the case $P\\land\\neg Q$. A contradiction proof assumes that unique failure case and derives an impossibility, showing the failure cannot occur. The description in the statement is that method, so the statement is True.`,
+To prove an implication by contradiction, negate the implication:
+
+$$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
+
+Thus the proof assumes both
+
+$$P=\\mathrm{T},\qquad Q=\\mathrm{F}$$
+
+and derives a contradiction. That shows the only truth assignment that could make $P\\Rightarrow Q$ false is impossible, so the implication must hold. The described method is correct, making the statement True.`,
       `**D.** → False
 
-To prove "$\\sqrt{2}$ is irrational" by contradiction, assume the negation: $\\sqrt{2}$ is rational, so $\\sqrt{2}=\\frac{a}{b}$ in lowest terms. Assuming irrationality at the start would assume the conclusion rather than its opposite, so the statement is False.`,
+Let $R$ be the target “$\\sqrt2$ is irrational.” A contradiction proof starts from its negation:
+
+$$\\neg R:\\quad \\sqrt2\\in\\mathbb Q$$
+
+That means assuming integers $a,b$ with $b\\ne0$ and
+
+$$\\sqrt2=\\frac ab$$
+
+usually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong and the statement is False.`,
       `**E.** → False
 
-One confirming example never proves a universal claim. The odd prime $3$ fits "all primes are odd" and still leaves $2$ untested. Checking finitely many favourable cases never rules out a later counterexample, so the statement is False.`,
+One favourable example proves only an existential statement:
+
+$$P(a)=\\mathrm{T}\\quad\\Longrightarrow\\quad\\exists x\,P(x)$$
+
+It does not establish the universal
+
+$$\\forall x\,P(x)$$
+
+For example, $3$ is prime and odd, but that successful check leaves $2$ untested, and $2$ is prime but not odd. A single confirming case cannot rule out a counterexample elsewhere, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -2922,7 +3191,17 @@ A contradiction proof of an implication assumes the unique failure case $P\\land
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that $P\\Rightarrow Q$ fails only as $P\\land\\neg Q$: rain and an uncancelled picnic. The quoted negation is that unique failure case, so the statement is True.`,
+Write $P$ for “it rains” and $Q$ for “the picnic is cancelled.” The organizer's rule is $P\\Rightarrow Q$. Negating it gives
+
+$$\\neg(P\\Rightarrow Q)
+\\equiv\\neg(\\neg P\\lor Q)
+\\equiv P\\land\\neg Q$$
+
+This formula is true exactly when it rains and the picnic is not cancelled:
+
+$$P\\land\\neg Q=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+The quoted sentence is precisely the negation, so the statement is True.`,
       `**B.** → False
 
 The converse $Q\\Rightarrow P$ fails when cancellation occurs without rain. On the overview's dry venue-conflict day,
@@ -2958,7 +3237,24 @@ $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 The day contradicts the inverse but not the organizer's rule, so the statement is True.`,
       `**E.** → True
 
-Swap and negate: $\\neg Q\\Rightarrow\\neg P$, "if the picnic was not cancelled, then it did not rain." That is the contrapositive, which always shares the original's truth value. Once the organizer's rule is granted, this rewriting comes with it, so the statement is True.`,
+Form the contrapositive by swapping the two propositions and negating both:
+
+$$P\\Rightarrow Q
+\\quad\\Longleftrightarrow\\quad
+\\neg Q\\Rightarrow\\neg P$$
+
+Here this becomes
+
+$$\\text{picnic not cancelled}\\Rightarrow\\text{no rain}$$
+
+The equivalence can also be checked algebraically:
+
+$$\\neg Q\\Rightarrow\\neg P
+\\equiv Q\\lor\\neg P
+\\equiv\\neg P\\lor Q
+\\equiv P\\Rightarrow Q$$
+
+The quoted contrapositive is guaranteed whenever the original rule holds, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 12,
@@ -2989,7 +3285,15 @@ On a dry venue-conflict day, $P$ is false and $Q$ is true. The original holds be
     tactical_explanations: [
       `**A.** → True
 
-Inclusive "or" means at least one of $X,Y$. The $15$ both-buyers have both true, so they satisfy "at least one" and stay inside the count. Exclusive or would drop those $15$; mathematical or does not, so the statement is True.`,
+Inclusive “or” is true when at least one proposition is true, including the row where both are true. For a consumer who bought both products,
+
+$$X=\\mathrm{T},\qquad Y=\\mathrm{T}$$
+
+so
+
+$$X\\lor Y=\\mathrm{T}\\lor\\mathrm{T}=\\mathrm{T}$$
+
+All $15$ both-buyers therefore satisfy “bought X or Y.” Mathematical inclusive or includes them, so the statement is True.`,
       `**B.** → True
 
 Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
@@ -3006,10 +3310,34 @@ $$25+20=45$$
 The claim is $45$, so the statement is True.`,
       `**D.** → True
 
-The four truth rows of $P\\Leftrightarrow Q$ are TT true, FF true, TF false, FT false. The two true rows are exactly the rows where $P$ and $Q$ agree. "Always the same truth value" is that description, so the statement is True.`,
+A biconditional requires both implications:
+
+$$P\\Leftrightarrow Q\\equiv(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
+
+Evaluate its four input rows:
+
+$$\\mathrm{T}\\Leftrightarrow\\mathrm{T}=\\mathrm{T},\qquad
+\\mathrm{F}\\Leftrightarrow\\mathrm{F}=\\mathrm{T}$$
+
+$$\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F},\qquad
+\\mathrm{F}\\Leftrightarrow\\mathrm{T}=\\mathrm{F}$$
+
+It is true exactly when the two components have the same truth value, so the statement is True.`,
       `**E.** → False
 
-"At least one true" is the truth condition for $P\\lor Q$, not for $P\\Leftrightarrow Q$. The mixed row $P$ true, $Q$ false has at least one true part, yet the biconditional is false there, so the statement is False.`,
+“At least one component is true” describes disjunction, not a biconditional. Take the mixed assignment
+
+$$P=\\mathrm{T},\qquad Q=\\mathrm{F}$$
+
+At least one proposition is true, and indeed
+
+$$P\\lor Q=\\mathrm{T}\\lor\\mathrm{F}=\\mathrm{T}$$
+
+but the biconditional evaluates differently:
+
+$$P\\Leftrightarrow Q=\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F}$$
+
+This counterexample disproves the claim, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 13,
@@ -3080,7 +3408,19 @@ $$48<50$$
 The distance from the cutoff does not change the truth value, so the statement is True.`,
       `**E.** → True
 
-Compare $(80\\%,50)$ with $(79\\%,100)$. The first clears both tests and passes; the second fails on attendance, yet looks far stronger on an average. Because the rule checks two thresholds instead of one average, reversals like this can happen, so the statement is True.`,
+Compare Student X with attendance $80\\%$ and exam score $50$ to Student Y with attendance $79\\%$ and exam score $100$. Their threshold evaluations are
+
+$$\\mathrm{Pass}(X)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
+
+$$\\mathrm{Pass}(Y)=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
+
+Yet a simple combined average of the two reported numbers ranks Y higher:
+
+$$\\frac{80+50}{2}=65
+\\quad<\\quad
+\\frac{79+100}{2}=89.5$$
+
+The rule checks each cutoff separately rather than that average, so the described reversal is possible and the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 14,
@@ -3130,7 +3470,23 @@ $$\\neg(S\\lor O)=\\neg(\\mathrm{T}\\lor\\mathrm{F})=\\mathrm{F}$$
 The formulas disagree on M. They are not equivalent, so the statement is False.`,
       `**D.** → True
 
-The overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$. In English that is "not on sale and not out of stock," i.e. neither on sale nor out of stock. The claim is that rewrite, so the statement is True.`,
+Move the outer negation through the parentheses using De Morgan's law:
+
+$$\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$$
+
+The connective changes from OR to AND. For example, on the only displayed-item assignment $S=\\mathrm{F}$ and $O=\\mathrm{F}$,
+
+$$\\neg(S\\lor O)
+=\\neg(\\mathrm{F}\\lor\\mathrm{F})
+=\\mathrm{T}$$
+
+and
+
+$$\\neg S\\land\\neg O
+=\\mathrm{T}\\land\\mathrm{T}
+=\\mathrm{T}$$
+
+Thus “not on sale and not out of stock” is the correct equivalent condition, so the statement is True.`,
       `**E.** → True
 
 The filter displays an item when both negated conditions are true. Item K is not on sale and is in stock, so $S$ and $O$ are both false:
@@ -3166,19 +3522,77 @@ The connective flips as the NOT moves in. Keeping the OR would be the wrong rewr
     tactical_explanations: [
       `**A.** → True
 
-From $P\\Rightarrow Q$, the contrapositive is $\\neg Q\\Rightarrow\\neg P$: no rate rise, therefore inflation does not exceed $10\\%$, i.e. at most $10\\%$. That is the quoted sentence. "Not above $10$" and "at most $10$" are the same cutoff, so the statement is True.`,
+Let $P$ mean “inflation exceeds $10\\%$” and $Q$ mean “the bank raises rates.” Form the contrapositive by swapping and negating:
+
+$$P\\Rightarrow Q
+\\quad\\Longleftrightarrow\\quad
+\\neg Q\\Rightarrow\\neg P$$
+
+The negation of the strict inequality is
+
+$$\\neg(\mathrm{inflation}>10\\%)\\equiv
+\mathrm{inflation}\\le10\\%$$
+
+Therefore the contrapositive says “if rates are not raised, inflation is at most $10\\%$,” exactly as claimed. The statement is True.`,
       `**B.** → False
 
-The converse $Q\\Rightarrow P$ would say every rate rise comes from inflation above $10\\%$. A currency-defence rise at $4\\%$ inflation has $Q$ true and $P$ false: the original is untouched because $P$ is false, while the converse fails. Equivalence would need both arrows, so the statement is False.`,
+The converse reverses the arrow:
+
+$$Q\\Rightarrow P$$
+
+Consider a currency-defence rate rise while inflation is $4\\%$. Then $Q=\\mathrm{T}$ and $P=\\mathrm{F}$. The original rule evaluates to
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
+
+but the converse evaluates to
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+Because one assignment gives different truth values, the converse is not logically equivalent to the original. The statement is False.`,
       `**C.** → True
 
-"$P$ is sufficient for $Q$" means $P\\Rightarrow Q$. The given rule is exactly that arrow: inflation above $10\\%$ forces a rate rise. $P$ alone guarantees $Q$, so the statement is True.`,
+“$P$ is sufficient for $Q$” means that every time $P$ is true, $Q$ must be true:
+
+$$P\\Rightarrow Q$$
+
+The given rule is exactly
+
+$$\mathrm{inflation}>10\\%
+\\quad\\Longrightarrow\\quad
+\text{bank raises rates}$$
+
+Thus the truth pattern $P=\\mathrm{T},Q=\\mathrm{F}$ is ruled out by the premise. Inflation above $10\\%$ is sufficient for a rate rise, so the statement is True.`,
       `**D.** → False
 
-"$P$ is necessary for $Q$" would be $Q\\Rightarrow P$, the converse. The given arrow points the other way: $Q$ is necessary for $P$, not $P$ for $Q$. The rule does not force high inflation whenever rates rise, so the statement is False.`,
+Calling high inflation necessary for a rate rise would require
+
+$$Q\\Rightarrow P$$
+
+That is the converse of the given rule. A rate rise for currency defence at $4\\%$ inflation has
+
+$$Q=\\mathrm{T},\qquad P=\\mathrm{F}$$
+
+so the proposed necessity evaluates as
+
+$$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
+
+The original $P\\Rightarrow Q$ remains true on this row because $P$ is false. High inflation is not established as necessary, so the statement is False.`,
       `**E.** → False
 
-Observing a rate rise ($Q$ true) and inferring inflation above $10\\%$ ($P$ true) is affirming the consequent. The premises give $P\\Rightarrow Q$, never $Q\\Rightarrow P$. A $4\\%$ defence rise is a case where $Q$ holds and $P$ fails, so the statement is False.`,
+The attempted inference has the form
+
+$$P\\Rightarrow Q,\qquad Q,\qquad\\therefore P$$
+
+which affirms the consequent. Use a possible currency-defence rise at $4\\%$ inflation:
+
+$$P=\\mathrm{F},\qquad Q=\\mathrm{T}$$
+
+Then both premises are true,
+
+$$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T},
+\qquad Q=\\mathrm{T},$$
+
+while the conclusion $P$ is false. The conclusion does not follow, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 16,
@@ -3203,10 +3617,32 @@ High inflation forces a rate rise. The contrapositive $\\neg Q\\Rightarrow\\neg 
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that $Q$ is true from $P\\Leftrightarrow Q$ and $P$ true. The claim is that same fact, so the statement is True.`,
+The first link says that $P$ and $Q$ have equal truth values:
+
+$$P\\Leftrightarrow Q$$
+
+Since $P=\\mathrm{T}$, the biconditional can be true only on its TT row:
+
+$$P\\Leftrightarrow Q
+=\\mathrm{T}\\Leftrightarrow Q
+=\\mathrm{T}
+\\quad\\Longrightarrow\\quad
+Q=\\mathrm{T}$$
+
+The second proposition is therefore true, so the statement is True.`,
       `**B.** → True
 
-The overview recovered that $R$ is true from $Q\\Leftrightarrow R$ and $Q$ true. The claim is that same fact, so the statement is True.`,
+Letter A gives $Q=\\mathrm{T}$. The second biconditional forces $R$ to match $Q$:
+
+$$Q\\Leftrightarrow R
+=\\mathrm{T}\\Leftrightarrow R
+=\\mathrm{T}$$
+
+The only matching value is
+
+$$R=\\mathrm{T}$$
+
+Thus the truth of the first proposition travels through both links to the third proposition, so the statement is True.`,
       `**C.** → True
 
 Biconditional agreement is transitive: matching through the same middle truth value makes the endpoints match. Thus
@@ -4300,17 +4736,33 @@ $$n = \\frac{100}{3}$$
 which is not an integer. The equation has only that one solution, so no positive integer $n$ works, so the statement is False.`,
       `**C.** → False
 
-A “for every $m$” claim fails as soon as one $m$ has no partner. For $m=3$ there is no positive integer $n$ with $3n=100$, so the overall statement is false, so the statement is False.`,
+A universal claim is disproved by one counterexample. Choose the positive integer $m=3$. The equation would force
+
+$$3n=100\\quad\\Longrightarrow\\quad n=\\frac{100}{3}\\notin\\mathbb Z_{>0}$$
+
+Thus this $m$ has no permitted positive-integer witness $n$. Therefore $\\forall m\\,\\exists n\\,(mn=100)$ fails at $m=3$, so the statement is False.`,
       `**D.** → True
 
-Negating $\\forall m\\, \\exists n : mn=100$ flips both quantifiers and the matrix:
+Use quantifier negation one layer at a time: $\\neg\\forall$ becomes $\\exists\\neg$, and $\\neg\\exists$ becomes $\\forall\\neg$. Hence
 
-$$\\exists m\\, \\forall n : mn \\neq 100$$
+$$\\neg\\bigl(\\forall m\\,\\exists n\\,(mn=100)\\bigr)
+\\equiv
+\\exists m\\,\\forall n\\,(mn\\ne100)$$
 
-That is the claimed sentence, so the statement is True.`,
+The positive integer $m=3$ illustrates the required witness: if $3n=100$, then $n=100/3$, which is not a positive integer. Thus every permitted $n$ satisfies $3n\\ne100$. This is exactly the stated negation, so the statement is True.`,
       `**E.** → True
 
-The reversed claim is $\\exists n\\, \\forall m : mn=100$: one fixed $n$ serving every $m$. Then $m=1$ would need $n=100$ while $m=2$ would need $n=50$, so no such $n$ exists. The reversed statement is false, so the statement is True.`,
+The reversed quantifiers demand one fixed positive integer $n$ that works for every positive integer $m$:
+
+$$\\exists n\\,\\forall m\\,(mn=100)$$
+
+Apply that supposed witness first to $m=1$ and then to $m=2$:
+
+$$1\\cdot n=100\\Rightarrow n=100,
+\\qquad
+2\\cdot n=100\\Rightarrow n=50$$
+
+One number cannot equal both $100$ and $50$, so no common witness $n$ exists. The reversed statement is false, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -4345,19 +4797,46 @@ and that $n$ is legal only when $m$ divides $100$. Negation flips each quantifie
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $D$ from clue (3). Dan is guilty, so the statement is True.`,
+This is direct use of a premise, not a derived guess. With $D$ meaning “Dan is guilty,” clue (3) is simply
+
+$$D$$
+
+Therefore every assignment satisfying the clues has $D=\\mathrm{T}$. Dan is guilty, so the statement is True.`,
       `**B.** → False
 
-Exactly one suspect is guilty, and that place is already held by Dan. Ann is therefore innocent, so the statement is False.`,
+Use the exactly-one constraint together with clue (3). Since Dan occupies the unique guilty position,
+
+$$D=\\mathrm{T}
+\\quad\\Longrightarrow\\quad
+A=B=C=\\mathrm{F}$$
+
+In particular $A=\\mathrm{F}$, so Ann is innocent rather than guilty, so the statement is False.`,
       `**C.** → False
 
-Cara’s innocence already follows from clue (3) together with uniqueness: Dan is guilty, so Cara is not. Clue (2) is not needed for that conclusion, so the statement is False.`,
+Test whether clue (2) is essential by omitting it. Clue (3) still gives $D=\\mathrm{T}$, and the exactly-one condition then forces
+
+$$D=\\mathrm{T}
+\\quad\\Longrightarrow\\quad
+\\neg A\\land\\neg B\\land\\neg C$$
+
+Thus $\\neg C$ is available without using $\\neg B\\Rightarrow\\neg C$. Clue (2) is not essential for Cara’s innocence, so the statement is False.`,
       `**D.** → True
 
-Clue (1) is $A \\Rightarrow \\neg D$. Ann is innocent, so the antecedent $A$ is false and the implication is automatically true. It does not constrain the completed roster any further, so the statement is True.`,
+Clue (3) and uniqueness give $A=\\mathrm{F}$ and $D=\\mathrm{T}$. Evaluate clue (1), $A\\Rightarrow\\neg D$, on that assignment:
+
+$$A\\Rightarrow\\neg D
+=
+\\mathrm{F}\\Rightarrow\\mathrm{F}
+=\\mathrm{T}$$
+
+The implication is vacuously true because its antecedent is false, so it eliminates no additional roster. Clue (1) provides no new information here, so the statement is True.`,
       `**E.** → True
 
-Clue (3) is the atomic sentence $D$. Uniqueness is not required to read it: (3) alone already says that Dan is guilty, so the statement is True.`,
+Clue (3) is already the atomic assertion
+
+$$D=\\mathrm{T}$$
+
+No implication, contraposition, or exactly-one constraint is needed to infer its own content. The uniqueness condition is needed only to eliminate Ann, Ben, and Cara after $D$ is known. Clue (3) alone establishes Dan’s guilt, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -4384,19 +4863,48 @@ Clue (3) is a plain assertion that Dan is guilty. Combined with uniqueness, Ann,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that X is a truth-teller. The claim is that same type, so the statement is True.`,
+Use contradiction elimination. Suppose X were a liar, so X’s claim “Y lies” would be false; then Y would be a truth-teller:
+
+$$\\neg x\\quad\\Longrightarrow\\quad y$$
+
+A truthful Y would make “X and I are both liars” true, forcing $\\neg x\\land\\neg y$. That gives both $y$ and $\\neg y$, an impossibility. Hence $\\neg x$ is ruled out and $x$ is true, so the statement is True.`,
       `**B.** → False
 
-The overview recovered that Y is a liar. The claim is that Y is a truth-teller, so the statement is False.`,
+From the contradiction in the X-liar branch, X must be a truth-teller. A truth-teller’s sentence is true, and X says that Y lies:
+
+$$x=\\mathrm{T}
+\\quad\\Longrightarrow\\quad
+\\neg y=\\mathrm{T}$$
+
+Therefore $y=\\mathrm{F}$: Y is a liar, not a truth-teller, so the statement is False.`,
       `**C.** → True
 
-The overview recovered that Y is a liar, so Y's sentence is false. Y claimed that X and Y are both liars. That conjunction is therefore false, so the statement is True.`,
+The surviving types are $x=\\mathrm{T}$ and $y=\\mathrm{F}$. Evaluate Y’s sentence “X and I are both liars,” whose formula is $\\neg x\\land\\neg y$:
+
+$$\\neg x\\land\\neg y
+=
+\\mathrm{F}\\land\\mathrm{T}
+=\\mathrm{F}$$
+
+That false sentence is exactly what a liar may say. Y’s statement is false, so the statement is True.`,
       `**D.** → False
 
-The overview recovered one surviving assignment: X a truth-teller and Y a liar. The liar-X case collapsed. One consistent picture is not two, so the statement is False.`,
+There are only two branches for X. The liar branch forces $y$ true from X’s false accusation, then forces $y$ false from truthful Y’s conjunction:
+
+$$\\neg x\\quad\\Longrightarrow\\quad y\\land\\neg y$$
+
+So that branch is inconsistent. The remaining branch gives $x=\\mathrm{T}$ and, from X’s truthful accusation, $y=\\mathrm{F}$. Exactly one assignment survives, not two, so the statement is False.`,
       `**E.** → True
 
-The overview recovered that a lying X forces Y to be both a truth-teller and a liar. Those two demands cannot hold together, so the liar-X hypothesis is a contradiction, so the statement is True.`,
+Assume X is a liar. X’s sentence “Y lies” must then be false, so Y is truthful. Truthful Y’s sentence “X and I are both liars” must be true, so Y must also be a liar:
+
+$$\\neg x
+\\quad\\Longrightarrow\\quad
+y
+\\quad\\Longrightarrow\\quad
+\\neg x\\land\\neg y$$
+
+In particular this gives $y\\land\\neg y$. The X-liar hypothesis forces a contradiction, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -4427,19 +4935,67 @@ The surviving assignment is $x$ true and $y$ false: X is a truth-teller and Y is
     tactical_explanations: [
       `**A.** → True
 
-If Statement 1 holds, some student $s_0$ satisfies $G(s_0,e)$ for every exam $e$. That same $s_0$ may be handed to each exam in turn, which is Statement 2. Statement 1 therefore implies Statement 2, so the statement is True.`,
+Statement 1 supplies an existential witness $s_0$ before any exam is chosen:
+
+$$\\exists s\\,\\forall e\\,G(s,e)
+\\quad\\Longrightarrow\\quad
+\\forall e\\,G(s_0,e)$$
+
+For each exam $e$, choose that same $s_0$ as the witness to $\\exists s\\,G(s,e)$. Therefore
+
+$$\\exists s\\,\\forall e\\,G(s,e)
+\\quad\\Longrightarrow\\quad
+\\forall e\\,\\exists s\\,G(s,e)$$
+
+Statement 1 implies Statement 2, so the statement is True.`,
       `**B.** → False
 
-Take two exams and two students: X tops Exam 1 only, Y tops Exam 2 only. Each exam has a high scorer, so Statement 2 holds, yet nobody clears both exams, so Statement 1 fails. The reverse implication does not hold, so the statement is False.`,
+Disprove the implication with a quantifier countermodel. Use students $X,Y$ and exams $e_1,e_2$, with
+
+$$G(X,e_1)=\\mathrm{T},\\quad G(X,e_2)=\\mathrm{F},$$
+
+$$G(Y,e_1)=\\mathrm{F},\\quad G(Y,e_2)=\\mathrm{T}$$
+
+Every exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model, so the statement is False.`,
       `**C.** → False
 
-Equivalence needs both directions. Statement 1 implies Statement 2, but a two-student class with a different top scorer on each exam makes Statement 2 true and Statement 1 false. The reverse arrow is missing, so the statements are not equivalent, so the statement is False.`,
+Logical equivalence requires both implications. The forward direction holds by reusing Statement 1’s witness:
+
+$$\\exists s\\,\\forall e\\,G(s,e)
+\\quad\\Longrightarrow\\quad
+\\forall e\\,\\exists s\\,G(s,e)$$
+
+For the reverse direction, let $X$ clear only $e_1$ and $Y$ clear only $e_2$. Then
+
+$$\\forall e\\,\\exists s\\,G(s,e)=\\mathrm{T},
+\\qquad
+\\exists s\\,\\forall e\\,G(s,e)=\\mathrm{F}$$
+
+One direction fails in this concrete model, so the formulas are not equivalent, so the statement is False.`,
       `**D.** → True
 
-If each exam has a high scorer, but the high scorer keeps changing, then Statement 2 can hold while Statement 1 fails. One class with a rotating top scorer is a witness, so the statement is True.`,
+This is an existence claim, so one class is enough. Take two exams and two students: $X$ scores above $90$ only on $e_1$, while $Y$ scores above $90$ only on $e_2$. Then
+
+$$\\underbrace{G(X,e_1)}_{X\\text{ witnesses }e_1},
+\\qquad
+\\underbrace{G(Y,e_2)}_{Y\\text{ witnesses }e_2}$$
+
+Thus every exam has some high scorer. But $X$ fails $e_2$ and $Y$ fails $e_1$, so no single student is a witness for every exam. This class realizes Statement 2 without Statement 1, so the statement is True.`,
       `**E.** → True
 
-Restrict the exam domain to a singleton $\\{e_1\\}$. Then $\\forall e\\, G(s,e)$ collapses to $G(s,e_1)$, and Statement 2 likewise collapses to $\\exists s\\, G(s,e_1)$. Both statements become the same sentence, so the statement is True.`,
+Let the exam domain be the singleton $\\{e_1\\}$. A universal over that one value has only one case, so Statement 1 becomes
+
+$$\\exists s\\,\\forall e\\in\\{e_1\\}\\,G(s,e)
+\\equiv
+\\exists s\\,G(s,e_1)$$
+
+Statement 2 becomes
+
+$$\\forall e\\in\\{e_1\\}\\,\\exists s\\,G(s,e)
+\\equiv
+\\exists s\\,G(s,e_1)$$
+
+Both quantifier orders reduce to the same formula, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -4593,7 +5149,13 @@ $$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 The exception remains closed, and commercial use still voids the warranty, so the statement is False.`,
       `**E.** → False
 
-Annual servicing sits inside the exception to the commercial-use clause. If Z never used the product commercially, $C$ is false and that clause never fires. Nothing in the quoted warranty then asks for annual servicing, so the statement is False.`,
+This is a scope question. Annual servicing is required inside the exception that rescues commercial use; it is not a global warranty condition. If Company Z never used the product commercially, then
+
+$$C=\\mathrm{F}
+\\quad\\Longrightarrow\\quad
+\\text{the commercial-use voiding branch is inactive}$$
+
+Because that branch is never entered, neither its written-approval test nor its annual-servicing test is consulted. The quoted clause does not impose servicing on noncommercial use, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 6,
@@ -4640,7 +5202,17 @@ $$\\forall x\\, \\exists d\\, \\neg L(x,d)$$
 Every employee has at least one on-time day. "All employees are never late" is $\\forall x\\, \\forall d\\, \\neg L(x,d)$, a stronger ban, so the statement is False.`,
       `**E.** → True
 
-The overview recovered the two standards: one witness settles an existential, and a universal needs an argument that runs for an arbitrary $x$. The claim is that same split, so the statement is True.`,
+The logical idea is the difference between an existential witness and universal generalization. For an existential, one verified value $a$ is enough:
+
+$$P(a)\\quad\\Longrightarrow\\quad\\exists x\\,P(x)$$
+
+For a universal, checking selected values is insufficient; one must begin with an arbitrary $a$ and prove $P(a)$ without using any special feature of that choice:
+
+$$a\\text{ arbitrary},\\ P(a)
+\\quad\\Longrightarrow\\quad
+\\forall x\\,P(x)$$
+
+The two proof standards in the claim are therefore correct, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 7,
@@ -4691,10 +5263,25 @@ $$\\exists x\\,(G(x)\\land H(x))$$
 is false because the only person has $G(a)$ false. The modified premises can be true while the conclusion is false, so the statement is False.`,
       `**C.** → True
 
-The overview recovered that validity asks only whether the conclusion must be true whenever the premises are true, and does not inspect the real world. Soundness is the stricter label that also requires the premises to be true in fact. The claim is that same distinction, so the statement is True.`,
+Validity is a model-by-model conditional: there may be no assignment on which all premises are true and the conclusion is false. Symbolically,
+
+$$\\mathrm{Valid}
+\\quad\\Longleftrightarrow\\quad
+(P_1\\land P_2)\\Rightarrow C
+\\text{ is true in every model}$$
+
+This test does not ask whether $P_1$ or $P_2$ describes the actual world. Requiring both valid form and actually true premises is soundness, not validity. The claim states the validity standard correctly, so the statement is True.`,
       `**D.** → True
 
-Validity is about the derivation from the premises. It never inspects whether Premise 1 is true in the real world. If Premise 1 happened to be false, the argument would remain valid and lose soundness, because soundness needs valid form and true premises, so the statement is True.`,
+The witness derivation remains valid as a piece of logic: whenever both premises hold, Premise 2 supplies an economist-game-theorist $a$, and Premise 1 gives $H(a)$. Real-world falsity of Premise 1 changes only the soundness test:
+
+$$\\mathrm{Sound}
+=
+\\mathrm{Valid}
+\\land
+\\mathrm{ActuallyTruePremises}$$
+
+If Premise 1 is actually false, the second conjunct fails while the implication from premises to conclusion remains valid. The argument could therefore be valid but unsound, so the statement is True.`,
       `**E.** → False
 
 Affirming the consequent has the invalid form
@@ -4747,7 +5334,13 @@ $$P\\Rightarrow Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 One game with this evaluation disproves the fan's universal rule, so the statement is True.`,
       `**B.** → True
 
-The existential asks for one game in which some player scored over $30$ and the team did not win. The reported game has a $35$-point scorer and a $90$-$95$ loss, which is that pair of facts. One witness settles an existential, so the statement is True.`,
+An existential claim needs one explicit witness. Let $g_0$ be the reported game, and write $P(g)$ for “some player scores over $30$” and $Q(g)$ for “the team wins.” Then
+
+$$P(g_0)=\\mathrm{T}\\quad(35>30),
+\\qquad
+Q(g_0)=\\mathrm{F}\\quad(90<95)$$
+
+Hence $P(g_0)\\land\\neg Q(g_0)$ is true, so $g_0$ witnesses $\\exists g\\,(P(g)\\land\\neg Q(g))$, so the statement is True.`,
       `**C.** → True
 
 The contrapositive has the same truth value as the original implication. In the reported game, the team did not win but Player X scored over $30$, so
@@ -4761,7 +5354,21 @@ $$\\neg Q\\Rightarrow\\neg P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 The same game refutes both equivalent forms, so the statement is True.`,
       `**D.** → False
 
-The converse $Q \\Rightarrow P$ sits in the other pair. The reported game is a defeat, so $Q$ is false and the converse is idle. Falsity of $P \\Rightarrow Q$ does not force falsity of $Q \\Rightarrow P$, so the statement is False.`,
+The inference about the converse is invalid. The reported game itself gives a concrete truth assignment:
+
+$$P=\\mathrm{T},\\qquad Q=\\mathrm{F}$$
+
+On that assignment, compare the two directions:
+
+$$P\\Rightarrow Q
+=\\mathrm{T}\\Rightarrow\\mathrm{F}
+=\\mathrm{F},$$
+
+$$Q\\Rightarrow P
+=\\mathrm{F}\\Rightarrow\\mathrm{T}
+=\\mathrm{T}$$
+
+Thus the original can be false while its converse is true. Falsity does not transfer from an implication to its converse, so the statement is False.`,
       `**E.** → True
 
 The inverse $\\neg P \\Rightarrow \\neg Q$ pairs with the converse, not with the original. It is tested by games with no $30$-point scorer. The reported game has a $35$-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan's false rule, so the statement is True.`,
@@ -4884,7 +5491,17 @@ $$\\mathrm{gcd}(m,n)\\ge2$$
 This contradicts $\\mathrm{gcd}(m,n)=1$. A coprime pair cannot contain two even numbers, so the statement is True.`,
       `**E.** → False
 
-Coprime means no shared prime factor, not that at least one of $m$ or $n$ is prime. Pair 1 is a counterexample: $15 = 3 \\times 5$ and $28 = 2^{2} \\times 7$ are both composite, yet $\\mathrm{gcd}(15,28)=1$, so the statement is False.`,
+Disprove the universal claim with one counterexample. Pair 1 has two composite numbers:
+
+$$15=3\\times5,
+\\qquad
+28=2^{2}\\times7$$
+
+Their prime-factor sets are disjoint, so
+
+$$\\mathrm{gcd}(15,28)=1$$
+
+Thus a coprime pair greater than $1$ can contain no prime number at all. This pair refutes “every coprime pair includes a prime,” so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -4909,7 +5526,16 @@ The negation of "coprime" is that some prime divides both. Two even numbers alwa
     tactical_explanations: [
       `**A.** → True
 
-K cancelled $2$ days before renewal. The early branch needs $d \\ge 3$, and $2 < 3$, so K is in the late branch. Late cancellation renews the subscription (and a charge applies). Usage is consulted only for the later refund test, so the statement is True.`,
+Apply the policy by cases on cancellation timing. K has $d=2$, so the early-cancellation test fails:
+
+$$d=2<3$$
+
+Therefore K enters the late branch, whose first consequence is
+
+$$d<3\\quad\\Longrightarrow\\quad
+\\text{renewal and charge}$$
+
+The $15\\%$ usage affects only whether a refund follows; it does not undo renewal. K’s subscription renews, so the statement is True.`,
       `**B.** → False
 
 K cancelled $2$ days out, so the late branch applies. A partial refund is issued if and only if $u < 10\\%$. K used $15\\%$, and
@@ -4926,10 +5552,28 @@ $$5 < 10$$
 holds, so the refund side of the biconditional opens, so the statement is True.`,
       `**D.** → True
 
-Change only the timing to $4$ days. Then $4 \\ge 3$, so K moves into the early branch: no renewal and no charge. The $15\\%$ usage figure is never read, because the refund biconditional sits only in the late branch, so the statement is True.`,
+This counterfactual changes the branch selector to $d=4$. Since
+
+$$4\\ge3,$$
+
+the early-cancellation rule applies directly:
+
+$$d\\ge3
+\\quad\\Longrightarrow\\quad
+\\text{no renewal and no charge}$$
+
+The usage test $u<10\\%$ belongs only to the late branch $d<3$, so $u=15\\%$ is not consulted here. The stated counterfactual outcome follows, so the statement is True.`,
       `**E.** → False
 
-The $10\\%$ usage test is written only in the late-cancellation paragraph $d < 3$. If a subscriber cancels $3$ or more days ahead, the early branch settles everything by timing: no renewal, no charge, and no refund question. The usage test is not global, so the statement is False.`,
+Refute “regardless of timing” with one branch counterexample. Let a subscriber cancel $4$ days before renewal and use $15\\%$ of the service. Then
+
+$$d=4\\ge3$$
+
+so the early branch settles the case as no renewal and no charge. The refund biconditional
+
+$$\\text{refund}\\Leftrightarrow u<10\\%$$
+
+is nested only under $d<3$ and is never evaluated for this subscriber. The usage condition is not timing-independent, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 12,
@@ -4958,7 +5602,21 @@ Subscriber K cancelled $2$ days before renewal and used $15\\%$.`,
     tactical_explanations: [
       `**A.** → True
 
-The unique failure of $P \\Rightarrow Q$ is $P \\land \\neg Q$: fever strictly above $38^{\\circ}\\mathrm{C}$ and no antibiotics. That is the quoted sentence. Observing one such patient would show the guideline was violated, so the statement is True.`,
+Treat the guideline as universal over patients. Negating the implication produces an existential counterexample:
+
+$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))
+\\equiv
+\\exists x\\,(P(x)\\land\\neg Q(x))$$
+
+For example, a patient $a$ with temperature $39^{\\circ}\\mathrm{C}$ and no antibiotic prescription would satisfy
+
+$$39>38,
+\\qquad
+P(a)=\\mathrm{T},
+\\qquad
+Q(a)=\\mathrm{F}$$
+
+Such a patient would witness exactly the quoted negation and violate the guideline, so the statement is True.`,
       `**B.** → False
 
 A counterexample needs $P$ true and $Q$ false. Compare $38.0$ with the recovered threshold:
@@ -5001,7 +5659,20 @@ An implication fails only on $P \\land \\neg Q$. The inverse is $\\neg P \\Right
     tactical_explanations: [
       `**A.** → True
 
-Count the letters: twelve identical a's, so length $12$ and $P$ is true. The system does not classify it as strong, so $Q$ is false. That is the unique failure row of $P \\Rightarrow Q$. One such password shows the policy is false as an absolute rule, so the statement is True.`,
+Invalidity of a universal implication is shown by one input with true antecedent and false consequent. For the given password $w=$ “aaaaaaaaaaaa,”
+
+$$|w|=12
+\\quad\\Longrightarrow\\quad
+P(w)=\\mathrm{T}$$
+
+but the system rejects it for low complexity, so $Q(w)=\\mathrm{F}$. Therefore
+
+$$P(w)\\Rightarrow Q(w)
+=
+\\mathrm{T}\\Rightarrow\\mathrm{F}
+=\\mathrm{F}$$
+
+This concrete password is a counterexample to the absolute policy, so the statement is True.`,
       `**B.** → True
 
 The converse is $Q \\Rightarrow P$: if a password is classified as strong, then it is at least $12$ characters. That sentence lives with the inverse, not with the original. The twelve-a string has $Q$ false, so it never enters the converse's hypothesis. Collapse of $P \\Rightarrow Q$ does not settle $Q \\Rightarrow P$, so the statement is True.`,
@@ -5040,7 +5711,17 @@ The password "aaaaaaaaaaaa" has length $12$ and is not classified as strong.`,
     tactical_explanations: [
       `**A.** → True
 
-The manager claims every one of the $500$ chips in Batch $12$ passes. Inspection found chip #$317$ in Batch $12$ failed. A universal fails as soon as one member of the domain fails it. The other $499$ chips have no bearing on that verdict, so the statement is True.`,
+The manager’s claim is universal, so one counterexample is decisive. Let $A(x)$ mean that chip $x$ passes. Inspection gives the explicit value
+
+$$x=317,
+\\qquad
+A(317)=\\mathrm{F}$$
+
+Because chip #$317$ belongs to Batch $12$,
+
+$$\\exists x\\in\\text{Batch 12}\\,\\neg A(x)$$
+
+is true, which falsifies $\\forall x\\in\\text{Batch 12}\\,A(x)$. The other $499$ chips cannot repair a failed universal, so the statement is True.`,
       `**B.** → False
 
 The manager's claim is $\\forall x\\, A(x)$ on Batch $12$. Negating a universal produces an existential:
@@ -5050,7 +5731,15 @@ $$\\neg \\forall x\\, A(x) \\equiv \\exists x\\, \\neg A(x)$$
 In words: at least one chip fails. The quoted sentence "all chips fail" is $\\forall x\\, \\neg A(x)$, which needs all $500$ failures. Chip #$317$ already witnesses the existential without a clean sweep, so the statement is False.`,
       `**C.** → True
 
-Batch $13$ was cancelled before production, so it contains zero chips. To falsify "all chips in Batch $13$ pass" you would have to point at a chip in Batch $13$ that failed. There is no such chip. A universal over an empty domain is vacuously true, so the statement is True.`,
+Use vacuous truth. The universal can fail only if there is a counterexample chip in Batch $13$:
+
+$$\\neg\\forall x\\,
+\\bigl(B_{13}(x)\\Rightarrow A(x)\\bigr)
+\\equiv
+\\exists x\\,
+\\bigl(B_{13}(x)\\land\\neg A(x)\\bigr)$$
+
+But Batch $13$ contains zero chips, so there is no value $x$ with $B_{13}(x)=\\mathrm{T}$. No counterexample witness exists, and the universal is therefore vacuously true, so the statement is True.`,
       `**D.** → False
 
 Quantifier order determines whether the defect code may depend on the failed chip. The first sentence is
@@ -5064,7 +5753,17 @@ $$\\exists c\\,\\forall f\\,E(c,f)$$
 With two failures $f_1,f_2$, code $c_1$ may explain only $f_1$ and code $c_2$ only $f_2$. Then the first formula is true, but no single code serves both failures, so the second is false. The sentences are not equivalent, so the statement is False.`,
       `**E.** → True
 
-"Some chip in Batch $12$ failed" is $\\exists x\\, \\neg A(x)$. An existential is proved by one witness. Chip #$317$ is in Batch $12$ and failed the stress test, which is that witness. Nothing else about the batch is required, so the statement is True.`,
+An existential claim is established by one witness. Choose the reported chip:
+
+$$x=317$$
+
+It has both required properties:
+
+$$B_{12}(317)=\\mathrm{T},
+\\qquad
+\\neg A(317)=\\mathrm{T}$$
+
+Hence $317$ witnesses $\\exists x\\,(B_{12}(x)\\land\\neg A(x))$. No information about the remaining chips is needed, so the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 15,
@@ -5091,7 +5790,15 @@ $\\forall f\\, \\exists c$ lets a defect code depend on the chip. $\\exists c\\,
     tactical_explanations: [
       `**A.** → False
 
-If $6$ divides $n$, then $n = 6k = 3(2k)$, so $3$ divides $n$ automatically. The pair "$6 \\mid n$ and $3 \\nmid n$" is empty. An empty situation does not occur for infinitely many integers, so the statement is False.`,
+The proposed negation would need a witness with $6\\mid n$ and $3\\nmid n$. For an arbitrary integer satisfying the first condition,
+
+$$6\\mid n
+\\quad\\Longrightarrow\\quad
+n=6k=3(2k)
+\\quad\\Longrightarrow\\quad
+3\\mid n$$
+
+Thus $6\\mid n$ always forces the opposite of $3\\nmid n$. There is not even one witness to $6\\mid n\\land3\\nmid n$, much less infinitely many, so the statement is False.`,
       `**B.** → True
 
 The converse is $3 \\mid n \\Rightarrow 6 \\mid n$. Test $n = 9$:
@@ -5108,7 +5815,15 @@ so $6$ does not divide $9$. Hypothesis true and conclusion false: $9$ is a count
 The inverse is $6 \\nmid n \\Rightarrow 3 \\nmid n$. Inverse and converse share a truth value. Test $n = 9$ against the inverse: $6 \\nmid 9$ holds by the remainder $3$, while $3 \\nmid 9$ fails because $9 = 3 \\times 3$. True hypothesis and false conclusion: the inverse fails at $9$ with the converse, so the statement is True.`,
       `**D.** → False
 
-The original $6 \\mid n \\Rightarrow 3 \\mid n$ holds for every integer by the factorization $n = 6k = 3(2k)$. Its contrapositive $3 \\nmid n \\Rightarrow 6 \\nmid n$ is the same implication in other clothes. A statement true for every integer cannot fail for some $n$, so the statement is False.`,
+Prove the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,
+
+$$n=6k=3(2k),$$
+
+which would give $3\\mid n$, contradicting the assumption. Therefore
+
+$$3\\nmid n\\quad\\Longrightarrow\\quad6\\nmid n$$
+
+for every integer $n$. No counterexample value exists, so the claim that the contrapositive is false for some integer is wrong, so the statement is False.`,
       `**E.** → False
 
 The original $6 \\mid n \\Rightarrow 3 \\mid n$ holds for every integer. The converse $3 \\mid n \\Rightarrow 6 \\mid n$ is a different implication, already refuted by $n = 9$. At $n = 9$ the original has a false hypothesis, so it holds vacuously, while the converse fails. Falsity of the converse does not leak into the original, so the statement is False.`,
@@ -5147,7 +5862,17 @@ $$1234 = 2 \\times 617$$
 Hypothesis true and conclusion true. The rule applies in the stated direction, so the statement is True.`,
       `**B.** → False
 
-The rule is $n^{2}$ even $\\Rightarrow$ $n$ even. Contraposition starts from the denial of the conclusion: assume $n$ is odd, derive that $n^{2}$ is odd. The claimed plan assumes $n$ even and derives that $n^{2}$ is even. That proves the converse $C$, not $R$, so the statement is False.`,
+Write $E(k)$ for “$k$ is even.” The rule and its contrapositive are
+
+$$E(n^{2})\\Rightarrow E(n),
+\\qquad
+\\neg E(n)\\Rightarrow\\neg E(n^{2})$$
+
+Thus a contraposition proof assumes $n$ is odd and derives that $n^{2}$ is odd. The proposed plan instead proves
+
+$$E(n)\\Rightarrow E(n^{2}),$$
+
+which reverses the original arrow and is its converse. It is not a proof by contraposition of the stated rule, so the statement is False.`,
       `**C.** → True
 
 The given square $4321^{2} = 18{,}671{,}041$ is odd. An odd square forces an odd ID. Direct check:
@@ -5157,7 +5882,19 @@ $$4321 = 2 \\times 2160 + 1$$
 so $4321$ is odd. Hypothesis true and conclusion true, so the statement is True.`,
       `**D.** → False
 
-Rule $R$ is $n^{2}$ even $\\Rightarrow$ $n$ even. Its converse $C$ is $n$ even $\\Rightarrow$ $n^{2}$ even. They point opposite ways. Both happen to be true for integers, but two true statements with two proofs are still two statements, not logically the same formula, so the statement is False.`,
+Let $P$ mean “$n^{2}$ is even” and $Q$ mean “$n$ is even.” The two formulas reverse the arrow:
+
+$$R:P\\Rightarrow Q,
+\\qquad
+C:Q\\Rightarrow P$$
+
+Implication and converse are not logically equivalent forms; for the truth assignment $P=\\mathrm{F}$ and $Q=\\mathrm{T}$,
+
+$$P\\Rightarrow Q=\\mathrm{T},
+\\qquad
+Q\\Rightarrow P=\\mathrm{F}$$
+
+For integer parity, separate arithmetic proofs happen to make both directions true, but that does not make the formulas logically identical, so the statement is False.`,
       `**E.** → True
 
 An implication $R$ fails only on $n^{2}$ even and $n$ odd. A contradiction proof of $R$ therefore assumes exactly that pair, then derives an impossibility. From $n = 2k+1$,
@@ -5191,19 +5928,61 @@ Given: $1234^{2} = 1{,}522{,}756$ (even) and $4321^{2} = 18{,}671{,}041$ (odd).`
     tactical_explanations: [
       `**A.** → True
 
-Negating a universal implication $\\forall t\\,(P(t) \\Rightarrow Q(t))$ yields $\\exists t\\,(P(t) \\land \\neg Q(t))$: there exists such a triangle without a right angle. The quoted sentence is that existential. Correct formation is about shape, so the statement is True.`,
+Apply quantifier and implication negation:
+
+$$\\neg\\forall t\\,(P(t)\\Rightarrow Q(t))
+\\equiv
+\\exists t\\,\\neg(P(t)\\Rightarrow Q(t))
+\\equiv
+\\exists t\\,(P(t)\\land\\neg Q(t))$$
+
+A hypothetical witness $t_0$ would have to be inscribed with a diameter as one side, $P(t_0)=\\mathrm{T}$, while lacking a right angle, $Q(t_0)=\\mathrm{F}$. That is exactly “there exists such a triangle without a right angle,” so the statement is True.`,
       `**B.** → True
 
-Thales' theorem establishes the original universal. A statement and its negation cannot both hold, so the existential "there exists such a triangle without a right angle" is false. A proved statement always leaves its negation false, so the statement is True.`,
+Thales’ theorem proves the universal statement
+
+$$\\forall t\\,(P(t)\\Rightarrow Q(t))=\\mathrm{T}$$
+
+Its negation is the counterexample claim
+
+$$\\exists t\\,(P(t)\\land\\neg Q(t))$$
+
+If that existential had a witness, the witness would falsify the proved universal. Since no such witness can coexist with the theorem, the negation is false. The claim correctly reports that truth value, so the statement is True.`,
       `**C.** → True
 
 Start with an arbitrary right triangle, hypotenuse $AB$, right angle at $C$. Let $M$ be the midpoint of $AB$. Then $MA = MB$ by construction, and $MC = MA$ as well. The circle centred at $M$ with radius $MA$ passes through $A$, $B$, and $C$, and $AB$ is a diameter. Every right triangle can be inscribed that way, so the converse holds, so the statement is True.`,
       `**D.** → True
 
-Thales' theorem gives $P \\Rightarrow Q$. The midpoint construction gives $Q \\Rightarrow P$. Both directions hold, so here $P \\Leftrightarrow Q$. Most converses fail; this pair is a biconditional earned twice, once in each direction, so the statement is True.`,
+Thales’ theorem proves the forward implication, while the circumcircle construction for a right triangle proves the converse:
+
+$$P\\Rightarrow Q,
+\\qquad
+Q\\Rightarrow P$$
+
+A biconditional is exactly the conjunction of those two directions:
+
+$$P\\Leftrightarrow Q
+\\equiv
+(P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
+
+Both arrows have independent geometric proofs here. Therefore this particular relationship is a biconditional, so the statement is True.`,
       `**E.** → False
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. That sentence is equivalent to the converse, never to the original. The original pairs with the contrapositive. Truth of Thales' theorem does not hand over the inverse by logical equivalence with the original, so the statement is False.`,
+The original and inverse are
+
+$$P\\Rightarrow Q,
+\\qquad
+\\neg P\\Rightarrow\\neg Q$$
+
+They are not logically equivalent. A concrete truth assignment demonstrates the mismatch:
+
+$$P=\\mathrm{F},\\quad Q=\\mathrm{T}
+\\quad\\Longrightarrow\\quad
+P\\Rightarrow Q=\\mathrm{T},
+\\quad
+\\neg P\\Rightarrow\\neg Q=\\mathrm{F}$$
+
+The original is equivalent to $\\neg Q\\Rightarrow\\neg P$, its contrapositive; the inverse is equivalent to the converse. The stated reason for transferring truth is invalid, so the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 18,
@@ -5230,7 +6009,13 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
     tactical_explanations: [
       `**A.** → True
 
-The theorem is $S \\Rightarrow O$. Negating an implication keeps the hypothesis and rejects the conclusion: $S \\land \\neg O$, a perfect square with an even divisor count. That is the quoted sentence. Correct formation is about shape, so the statement is True.`,
+Treat the theorem as universal over positive integers. Negate the quantifier and implication:
+
+$$\\neg\\forall n\\,(S(n)\\Rightarrow O(n))
+\\equiv
+\\exists n\\,(S(n)\\land\\neg O(n))$$
+
+Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form, so the statement is True.`,
       `**B.** → True
 
 $36$ is $6^{2}$, so the hypothesis holds. The listed divisors are
@@ -5281,13 +6066,25 @@ Sample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $2
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered that Emma is the doctor. The claim is that same job, so the statement is True.`,
+Use the biconditionals as equal-truth constraints. Clue (3) gives $\\neg G$. From clue (2), $F\\Leftrightarrow G$, so
+
+$$\\neg G\\quad\\Longrightarrow\\quad\\neg F$$
+
+Clue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,
+
+$$\\neg F\\quad\\Longrightarrow\\quad E$$
+
+Therefore Emma is the doctor, so the statement is True.`,
       `**B.** → False
 
 Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails, so the statement is False.`,
       `**C.** → True
 
-The overview recovered that Grace is the engineer. The claim is that same job, so the statement is True.`,
+First, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
+
+$$\\{\\text{Engineer},\\text{Teacher}\\}$$
+
+But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace, so the statement is True.`,
       `**D.** → True
 
 Drop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant, so the statement is True.`,
@@ -5328,13 +6125,31 @@ From (3), $G$ is false, so (2) forces $F$ false. Then (1) forces $E$ true: Emma 
     tactical_explanations: [
       `**A.** → True
 
-The negation of the theorem would be a sequence that converges and is not bounded. The theorem holds for every sequence, so that combination never occurs. The description picks out an empty collection, so the statement is True.`,
+Write $C(s)$ for convergence and $B(s)$ for boundedness. Negating the universal theorem gives
+
+$$\\neg\\forall s\\,(C(s)\\Rightarrow B(s))
+\\equiv
+\\exists s\\,(C(s)\\land\\neg B(s))$$
+
+A witness would have to be one sequence that both converges and is unbounded. The theorem $C(s)\\Rightarrow B(s)$ rules out that combination for every sequence, so the described witness set is empty. The negation describes an impossible situation, so the statement is True.`,
       `**B.** → True
 
 The converse claims: bounded, therefore convergent. For $a_{n} = (-1)^{n}$ the terms are only $-1$ and $1$, so every term lies in $[-1,1]$ and the sequence is bounded. Odd terms stay at $-1$ and even terms stay at $1$, so no single limit exists. Bounded with no limit: the converse fails, so the statement is True.`,
       `**C.** → True
 
-The inverse is "does not converge, therefore not bounded," equivalent to the converse. The same sequence $(-1)^{n}$ diverges and stays inside $[-1,1]$. Hypothesis of the inverse true, conclusion false. Inverse and converse share a truth value, so the statement is True.`,
+The inverse is $\\neg C\\Rightarrow\\neg B$, which is the contrapositive of the converse $B\\Rightarrow C$ and therefore shares its truth value. Use the explicit sequence
+
+$$a_n=(-1)^n,
+\\qquad
+|a_n|=1\\le1$$
+
+so it is bounded. Its even and odd subsequences have different constant values:
+
+$$a_{2k}=1,
+\\qquad
+a_{2k+1}=-1$$
+
+Thus it does not converge, making $\\neg C$ true and $\\neg B$ false. This sequence refutes the inverse as well as the converse, so the statement is True.`,
       `**D.** → True
 
 The contrapositive is "not bounded, therefore does not converge," equivalent to the proved theorem, hence true. For the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate, and the contrapositive then yields divergence. Both halves of the claim hold, so the statement is True.`,
