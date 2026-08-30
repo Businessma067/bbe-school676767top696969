@@ -47,7 +47,13 @@ export default function MockBuilderSimulator() {
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [fade, setFade] = useState(false);
   const [cursor, setCursor] = useState({ x: 40, y: 40 });
+  const cursorRef = useRef({ x: 40, y: 40 });
   const [clicking, setClicking] = useState(false);
+
+  // keep the ref in sync so glideCursor can read the current position
+  useEffect(() => {
+    cursorRef.current = cursor;
+  }, [cursor]);
 
   const stageRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -66,7 +72,7 @@ export default function MockBuilderSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 300;
+    const MOVE = 420;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -88,6 +94,24 @@ export default function MockBuilderSimulator() {
       });
     };
 
+    // Animate the cursor over several frames instead of snapping in one tick,
+    // so movement reads as smooth glide rather than a hard jump.
+    const glideCursor = async (target: { x: number; y: number }, frames: number, frameMs: number) => {
+      const stage = stageRef.current;
+      if (!stage) return;
+      const start = { ...cursorRef.current };
+      for (let i = 1; i <= frames; i++) {
+        if (cancelled) return;
+        const t = i / frames;
+        const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+        setCursor({
+          x: start.x + (target.x - start.x) * eased,
+          y: start.y + (target.y - start.y) * eased,
+        });
+        await wait(frameMs);
+      }
+    };
+
     const moveTo = async (selector: string) => {
       const stage = stageRef.current;
       const box = scrollRef.current;
@@ -99,7 +123,7 @@ export default function MockBuilderSimulator() {
         const eb0 = el.getBoundingClientRect();
         const desired = box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
         const clamped = Math.max(0, Math.min(desired, box.scrollHeight - box.clientHeight));
-        await smoothScroll(box, clamped, 480);
+        await smoothScroll(box, clamped, 640);
       }
       if (cancelled) return;
       await new Promise<void>((r) => requestAnimationFrame(() => r()));
@@ -107,10 +131,14 @@ export default function MockBuilderSimulator() {
       if (!el) return;
       const s = stage.getBoundingClientRect();
       const eb = el.getBoundingClientRect();
-      setCursor({
-        x: eb.left - s.left + eb.width / 2 - 5,
-        y: eb.top - s.top + eb.height / 2 - 3,
-      });
+      await glideCursor(
+        {
+          x: eb.left - s.left + eb.width / 2 - 5,
+          y: eb.top - s.top + eb.height / 2 - 3,
+        },
+        18,
+        16,
+      );
       await wait(MOVE);
     };
 
