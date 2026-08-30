@@ -31,3 +31,6 @@ data/admin-store/
 *.njsproj
 *.sln
 *.sw?
+
+# Local demo video capture output
+tmp-demo-recordings/

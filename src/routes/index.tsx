@@ -7,9 +7,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
-import FiveStatementSimulator from "@/components/FiveStatementSimulator";
-import EnglishReadingSimulator from "@/components/EnglishReadingSimulator";
-import MathParabolaSimulator from "@/components/MathParabolaSimulator";
+import { HowItWorksVideo } from "@/components/HowItWorksVideo";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -164,8 +162,8 @@ function Index() {
               How it works
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
-              Watch the exact loop a prepared BBE candidate runs during the exam — TRUE/FALSE
-              decisions on the left, instant proof on the right.
+              Watch the live practice UI — answer statements, use the calculator and passage tools,
+              then open explanations on the real product.
             </p>
           </div>
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
@@ -198,10 +196,8 @@ function Index() {
               );
             })}
           </div>
-          <div className="relative mx-auto mt-6 w-full max-w-6xl">
-            {demoSubject === "economics" && <FiveStatementSimulator />}
-            {demoSubject === "english" && <EnglishReadingSimulator />}
-            {demoSubject === "math" && <MathParabolaSimulator />}
+          <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
+            <HowItWorksVideo subject={demoSubject} />
           </div>
         </section>
 
