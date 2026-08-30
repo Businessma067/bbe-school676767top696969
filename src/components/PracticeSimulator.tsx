@@ -50,6 +50,25 @@ function clock(total: number) {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
+function cleanExplanation(text: string) {
+  const withoutVerdictLead = text
+    .replace(/^(?:TRUE|FALSE)\s*[—-]\s*/i, "")
+    .replace(/\*\*/g, "")
+    .trim();
+  const seen = new Set<string>();
+  return withoutVerdictLead
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter((paragraph) => {
+      if (!paragraph) return false;
+      const key = paragraph.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .join("\n\n");
+}
+
 /**
  * Pure DOM animation of the real practice card, using verbatim tasks from the
  * live banks. Explanations open inline below the statements exactly like the
@@ -91,7 +110,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 340;
+    const MOVE = 170;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -120,7 +139,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
       let el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
 
-      // 1) bring the target into view first, then measure where it landed
+       // Bring the target into view first, then measure its final painted position.
       if (box && box.contains(el)) {
         const lb = box.getBoundingClientRect();
         const eb0 = el.getBoundingClientRect();
@@ -130,31 +149,33 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           0,
           Math.min(desired, box.scrollHeight - box.clientHeight),
         );
-        await smoothScroll(box, clamped, MOVE);
+         await smoothScroll(box, clamped, MOVE);
       }
       if (cancelled) return;
+       await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
       const s = stage.getBoundingClientRect();
       const eb = el.getBoundingClientRect();
       setCursor({
-        x: eb.left - s.left + eb.width / 2,
-        y: eb.top - s.top + eb.height / 2,
+         // The SVG pointer hotspot is at (5, 3), not at its centre.
+         x: eb.left - s.left + eb.width / 2 - 5,
+         y: eb.top - s.top + eb.height / 2 - 3,
       });
       await wait(MOVE);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(70);
+      await wait(45);
       setClicking(false);
-      await wait(70);
+      await wait(45);
     };
 
     const run = async () => {
       while (!cancelled) {
         setFade(true);
-        await wait(200);
+        await wait(100);
         setAnswers({});
         setChecked(false);
         setShowSolution(false);
@@ -163,27 +184,27 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
         setSecondsLeft(90);
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
-        await wait(300);
+        await wait(120);
 
         // Feature demo: Timed Mode (economics) / Calculator (math)
         if (subject === "economics") {
           await moveTo("[data-sim-timed]");
           await click();
           setTimed(true);
-          await wait(700);
+          await wait(300);
         } else if (subject === "math") {
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(true);
-          await wait(1300);
+          await wait(550);
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(false);
-          await wait(300);
+          await wait(120);
         }
 
-        if (scrollRef.current) await smoothScroll(scrollRef.current, 80, 600);
-        await wait(250);
+        if (scrollRef.current) await smoothScroll(scrollRef.current, 80, 240);
+        await wait(80);
 
         const current = pool[Math.min(taskIdx, pool.length - 1)];
         const trap = current.answerKey.findIndex((v) => !v);
@@ -195,30 +216,30 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(110);
+          await wait(45);
         }
 
         await moveTo("[data-sim-submit]");
         await click();
         setChecked(true);
-        await wait(650);
+        await wait(240);
 
         await moveTo("[data-sim-explain]");
         await click();
         setShowSolution(true);
-        await wait(550);
+        await wait(220);
 
         const box = scrollRef.current;
         if (box) {
           const max = box.scrollHeight - box.clientHeight;
-          const steps = Math.max(6, Math.min(14, Math.round(max / 320)));
+          const steps = 4;
           for (let s = 1; s <= steps; s++) {
             if (cancelled) return;
-            await smoothScroll(box, (max * s) / steps, 1000);
-            await wait(650);
+            await smoothScroll(box, (max * s) / steps, 430);
+            await wait(110);
           }
         }
-        await wait(800);
+        await wait(300);
 
         setTaskIdx((i) => {
           if (pool.length < 2) return i;
@@ -409,19 +430,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
                     {LETTERS[i]}. → {task.answerKey[i] ? "True" : "False"}
                   </p>
                   {subject === "math" ? (
-                    <div className="space-y-3 text-[13px] leading-relaxed text-foreground/90">
-                      {expl
-                        .replace(/\*\*/g, "")
-                        .trim()
-                        .split(/\n\n+/)
-                        .map((p, k) => (
-                          <p key={k}>
-                            <FlashcardMath text={p} displayPrefer />
-                          </p>
-                        ))}
+                    <div className="text-[13px] leading-relaxed text-foreground/90">
+                      <FlashcardMath text={cleanExplanation(expl)} />
                     </div>
                   ) : (
-                    <ExplanationProse text={expl.replace(/\*\*/g, "").trim()} />
+                    <ExplanationProse text={cleanExplanation(expl)} />
                   )}
                 </div>
               ))}
@@ -432,12 +445,12 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
       {/* Animated cursor */}
       <div
-        className="pointer-events-none absolute z-20 transition-transform duration-300 ease-out"
+        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-150 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
         <div
           className={cn(
-            "-ml-1 -mt-1 transition-transform duration-100",
+            "transition-transform duration-75",
             clicking ? "scale-90" : "scale-100",
           )}
         >
