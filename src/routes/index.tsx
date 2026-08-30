@@ -7,7 +7,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
-import { HowItWorksVideo } from "@/components/HowItWorksVideo";
+import { HowItWorksVideo, FeatureDemoVideo } from "@/components/HowItWorksVideo";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -15,6 +15,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
+  const [featureDemo, setFeatureDemo] = useState<"mock-builder">("mock-builder");
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
@@ -224,6 +225,58 @@ function Index() {
               One 2-hour exam stands between your family and a world-class degree at almost zero
               cost.
             </p>
+          </div>
+        </section>
+
+        {/* THE FEATURES — unique product tools */}
+        <section className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse at top, color-mix(in oklab, var(--color-caramel-deep) 14%, transparent), transparent 55%)",
+            }}
+          />
+          <div className="relative mx-auto max-w-6xl text-center">
+            <div className="text-[10px] font-semibold uppercase tracking-[0.3em] text-caramel-deep">
+              Only on BBE School
+            </div>
+            <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              The Features
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-base">
+              Unusual tools you will not find on other prep sites — starting with the Custom Mock
+              Builder that mixes topics the way your weak spots demand.
+            </p>
+          </div>
+          <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {(
+              [{ key: "mock-builder" as const, label: "Mock Builder", enabled: true }] as const
+            ).map((s) => {
+              const active = featureDemo === s.key;
+              return (
+                <button
+                  key={s.key}
+                  type="button"
+                  onClick={() => s.enabled && setFeatureDemo(s.key)}
+                  disabled={!s.enabled}
+                  className={cn(
+                    "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
+                    active
+                      ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
+                      : s.enabled
+                        ? "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white"
+                        : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
+                  )}
+                >
+                  {s.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
+            <FeatureDemoVideo feature={featureDemo} />
           </div>
         </section>
 
