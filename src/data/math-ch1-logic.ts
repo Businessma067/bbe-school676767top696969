@@ -1,5 +1,5 @@
 /**
- * Chapter 1 — Logic (subsections 1.1-1.4).
+ * Chapter 1 — Logic (subsections 1.1-1.5).
  * Every task is sourced from LOGIC.pdf, except a small proportional set of new
  * fillers (same abstract set-theory / logic style) added where the source
  * material was thin (mostly 1.1 and 1.2). Explanations follow the Ch11 tutorial
@@ -8,6 +8,7 @@
  */
 
 import type { MathTask } from "@/data/math-chapters";
+import ch1Exam from "@/data/math-ch1-exam.json";
 
 export const MATH_CH1_SUBSECTIONS = [
   {
@@ -26,9 +27,13 @@ export const MATH_CH1_SUBSECTIONS = [
     id: "1.4",
     title: "Quantifiers, Validity & Deduction",
   },
+  {
+    id: "1.5",
+    title: "Exam-style tasks",
+  },
 ] as const;
 
-export const MATH_CH1_LOGIC: MathTask[] = [
+const MATH_CH1_CORE: MathTask[] = [
   {
     id: `math-1-1`,
     case_id: `MATH 1.01`,
@@ -7575,4 +7580,9 @@ Try $\\neg V$: then $\\neg U$ by (1) and $\\neg B$ by the contrapose of (7). Rul
 
 Forced core: $\\{U,V,W\\}$ in, $X$ out. Among $Y,Z,B$, rules (5)–(6) allow only the extras $\\{Y\\}$, $\\{Z\\}$, $\\{Y,B\\}$, $\\{Y,Z\\}$.`,
   },
+];
+
+export const MATH_CH1_LOGIC: MathTask[] = [
+  ...MATH_CH1_CORE,
+  ...(ch1Exam.tasks as MathTask[]),
 ];

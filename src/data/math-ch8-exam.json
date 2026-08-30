@@ -1,0 +1,644 @@
+{
+  "tasks": [
+    {
+      "id": "math-8-98",
+      "case_id": "MATH 8.98",
+      "title": "Exam-style tasks - 1",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A cube-shaped resin block has mass $M(s)=5s^{3}$ grams when its side length is $s>0$ cm. Increasing the side from $2$ cm to $3$ cm adds exactly $95$ grams of mass.",
+        "A factory models daily output by $Q(L)=20L^{1/2}$ units for $L>0$ labour-hours. Raising labour from $16$ to $64$ hours makes output more than three times as large.",
+        "A clinic uses $T(m)=18m^{-1/4}$ hours to model clearance time for a patient of mass $m>0$ kg. Moving from $m=16$ to $m=81$ reduces the predicted time by exactly one third.",
+        "A road engineer models stopping distance by $d(v)=0.08v^{2}$ metres at speed $v>0$ m/s. Raising speed from $15$ to $18$ m/s increases stopping distance by exactly $40\\%$.",
+        "A manufacturer estimates a spherical tank's coating cost by $C(r)=12r^{2}$ dollars for radius $r>0$. Doubling the tank's diameter multiplies the coating cost by exactly $4$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\nM(2)&=5(2)^3=40,\\quad M(3)=5(3)^3=135 \\\\ M(3)-M(2)&=135-40=95\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\nQ(16)&=20(4)=80,\\quad Q(64)=20(8)=160 \\\\ \\frac{Q(64)}{Q(16)}&=2<3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\nT(16)&=18(16)^{-1/4}=9,\\quad T(81)=18(81)^{-1/4}=6 \\\\ \\frac{9-6}{9}&=\\frac13\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n\\frac{d(18)}{d(15)}&=\\left(\\frac{18}{15}\\right)^2=1.44 \\\\ (1.44-1)100\\%&=44\\%\\ne40\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\n\\frac{C(2r)}{C(r)}&=\\frac{12(2r)^2}{12r^2}=2^2=4\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 98,
+      "solution_overview": "Applied evaluation and exact changes in power-law models.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-99",
+      "case_id": "MATH 8.99",
+      "title": "Exam-style tasks - 2",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A workshop follows $Q(L)=9L^{2/3}$ for $L>0$ labour-hours. Increasing labour from $8$ to $27$ hours raises output by exactly $150\\%$.",
+        "A lamp produces illuminance $I(d)=720d^{-2}$ lux at distance $d>0$ metres. Moving a sensor from $6$ metres to $12$ metres lowers its reading by exactly $75\\%$.",
+        "A technician's learning curve is $H(n)=48n^{-1/3}$ hours for unit number $n>0$. Moving from the $8$th to the $64$th unit reduces completion time by exactly $75\\%$.",
+        "A biologist models an animal's load-bearing strength as proportional to $L^{2}$ and mass as proportional to $L^{3}$. Scaling every length by $1.5$ multiplies strength per unit mass by exactly $2/3$.",
+        "A computing team models processing time by $T(N)=3N^{3/2}$ seconds for $N>0$ records. Expanding a job from $100$ to $400$ records multiplies processing time by exactly $6$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\nQ(8)&=9(4)=36,\\quad Q(27)=9(9)=81 \\\\ \\frac{81-36}{36}100\\%&=125\\%\\ne150\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\nI(6)&=20,\\quad I(12)=5 \\\\ \\frac{20-5}{20}100\\%&=75\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nH(8)&=48(8)^{-1/3}=24,\\quad H(64)=12 \\\\ \\frac{24-12}{24}100\\%&=50\\%\\ne75\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{\\text{strength}}{\\text{mass}}&\\propto\\frac{L^2}{L^3}=L^{-1} \\\\ (1.5)^{-1}&=\\frac23\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n\\frac{T(400)}{T(100)}&=\\left(\\frac{400}{100}\\right)^{3/2}=4^{3/2}=8\\ne6\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 99,
+      "solution_overview": "Scale factors for production, illumination, learning, strength, and computation.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-100",
+      "case_id": "MATH 8.100",
+      "title": "Exam-style tasks - 3",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A tank holds $V(h)=2h^{3/2}$ litres when the fluid depth is $h\\ge0$ metres. A measured volume of $54$ litres corresponds to a depth of exactly $9$ metres.",
+        "A sensor calibration uses $C(x)=96x^{-2}$ for a positive setting $x$. When the display reads $C=6$, the technician claims that the setting must be $x=2$.",
+        "A pendulum model gives period $P(L)=0.5L^{1/2}$ seconds for length $L\\ge0$ cm. A period of $3$ seconds requires a length of exactly $36$ cm.",
+        "A pressure gauge is calibrated by the real equation $y^{4}=81$. The laboratory report states that the equation has exactly one real calibration, namely $y=3$.",
+        "A growth model has the form $G(t)=At^{r}$ for $t>0$, with $A>0$. Measurements $G(1)=6$ and $G(4)=48$ determine $A=6$ and $r=3/2$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n2h^{3/2}&=54\\Rightarrow h^{3/2}=27 \\\\ h&=27^{2/3}=9\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n96x^{-2}&=6\\Rightarrow x^{-2}=\\frac1{16} \\\\ x^2&=16,\\quad x=4\\ne2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n0.5\\sqrt L&=3\\Rightarrow\\sqrt L=6 \\\\ L&=36\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\ny^4&=81=3^4 \\\\ y&=3\\ \\text{or}\\ y=-3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\nA&=G(1)=6 \\\\ 6(4)^r&=48\\Rightarrow4^r=8=4^{3/2}\\Rightarrow r=\\frac32\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 100,
+      "solution_overview": "Solving applied power equations and recovering model parameters.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-101",
+      "case_id": "MATH 8.101",
+      "title": "Exam-style tasks - 4",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A courier assigns package weight $w(n)=3n$ kg for $n$ crates and cost $C(w)=2w^{2}$ dollars. For $4$ crates, the composed model $C(w(4))$ gives exactly $96$ dollars.",
+        "A circular stain has radius $r(t)=\\sqrt{t+1}$ cm after $t\\ge0$ minutes and area $A(r)=\\pi r^{2}$. After $8$ minutes, the composed area model gives exactly $9\\pi$ square centimetres.",
+        "A staffing model first predicts cases $c(d)=5d^{3}$ on day $d>0$, then workload $W(c)=2\\sqrt c$. On day $4$, the composed workload is exactly $40$ units.",
+        "A machine's chamber volume is $v(t)=2t$ litres at setting $t>0$, while pressure is $p(v)=4v^{-1}$ bar. At setting $t=3$, the composed pressure is exactly $2/3$ bar.",
+        "A route model gives signed displacement $d(t)=t^{2}$ and a reporting rule $R(d)=\\sqrt d$. At time $t=-3$, the composition $R(d(t))$ returns the signed value $-3$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\nw(4)&=3(4)=12 \\\\ C(w(4))&=2(12)^2=288\\ne96\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\nr(8)&=\\sqrt9=3 \\\\ A(r(8))&=\\pi(3)^2=9\\pi\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nc(4)&=5(4)^3=320 \\\\ W(c(4))&=2\\sqrt{320}=16\\sqrt5\\ne40\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\nv(3)&=6 \\\\ p(v(3))&=4(6)^{-1}=\\frac23\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\nR(d(-3))&=\\sqrt{(-3)^2}=\\sqrt9=3 \\\\ 3&\\ne-3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 101,
+      "solution_overview": "Composition of power-based models with domain and sign traps.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-102",
+      "case_id": "MATH 8.102",
+      "title": "Exam-style tasks - 5",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An architect models the height of a semicircular arch by $h(x)=\\sqrt{25-x^{2}}$ metres. The real horizontal positions accepted by the model are exactly $-5\\le x\\le5$.",
+        "A signed dose adjustment is recorded as $D(t)=t^{2/3}$ using real cube roots. A consultant claims that the formula has no real value when the adjustment $t$ is negative.",
+        "A concentration model is $C(v)=10v^{-1/2}$ for a sample volume $v$. Its exact real domain is $v>0$, so a zero-volume input must be rejected.",
+        "A signal processor uses $S(t)=(-t)^{1/2}$ with real outputs. Its manual claims that every nonnegative time $t\\ge0$ is an allowed input.",
+        "An economist defines utility by $U(q)=q^{5/4}$ using the conventional real fourth root. The quantity input must satisfy $q\\ge0$ for the utility to be real."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n25-x^2&\\ge0\\Rightarrow x^2\\le25 \\\\ -5&\\le x\\le5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\nD(t)&=(\\sqrt[3]{t})^2 \\\\ D(-8)&=(-2)^2=4\\in\\mathbb R\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\nC(v)&=\\frac{10}{\\sqrt v} \\\\ \\sqrt v&\\ \\text{must be real and nonzero}\\Rightarrow v>0\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n-t&\\ge0\\Rightarrow t\\le0 \\\\ t>0&\\ \\text{is not in the real domain}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\nq^{5/4}&=(\\sqrt[4]{q})^5 \\\\ \\sqrt[4]{q}\\in\\mathbb R&\\Rightarrow q\\ge0\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 102,
+      "solution_overview": "Real domains of fractional and negative power models.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-103",
+      "case_id": "MATH 8.103",
+      "title": "Exam-style tasks - 6",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Two algorithms require $A(n)=4n^{1.4}$ and $B(n)=100n^{1.2}$ operations for $n>0$. An engineer claims that $B$ still requires more operations when $n=10^{10}$.",
+        "Two liquid doses have normalized strengths $x^{1/2}$ and $x^{3}$ for $0<x<1$. Throughout this interval, the square-root dose is strictly stronger than the cubic dose.",
+        "Competing contamination models are $A(t)=3t^{-2}$ and $B(t)=2t^{-1}$ for $t>0$. A report claims that $A(t)$ remains larger than $B(t)$ for all sufficiently large $t$.",
+        "A file-processing model is $T(n)=n^{5/4}$ seconds for $n>0$. Doubling the file size multiplies processing time by more than $2$ but less than $2.5$.",
+        "A filter's concentration response is $R(c)=c^{-1/3}$ for $c>0$. Raising concentration from $8$ to $64$ makes the response exactly one quarter as large."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\n\\frac{A(10^{10})}{B(10^{10})}&=\\frac4{100}(10^{10})^{0.2} \\\\ &=0.04(100)=4>1\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n0<x<1,\\quad \\frac12&<3 \\\\ x^{1/2}&>x^3\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\n\\frac{A(t)}{B(t)}&=\\frac{3t^{-2}}{2t^{-1}}=\\frac{3}{2t} \\\\ \\frac{3}{2t}&\\to0\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{T(2n)}{T(n)}&=2^{5/4}=2\\sqrt[4]2 \\\\ 2&<2^{5/4}\\approx2.378<2.5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n\\frac{R(64)}{R(8)}&=\\left(\\frac{64}{8}\\right)^{-1/3}=8^{-1/3}=\\frac12\\ne\\frac14\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 103,
+      "solution_overview": "Comparing power-law growth and decay across scales.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-104",
+      "case_id": "MATH 8.104",
+      "title": "Exam-style tasks - 7",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A circular panel has area model $A(r)=7r^{2}$ for radius $r>0$. Increasing the radius by $12\\%$ increases the modeled area by exactly $25.44\\%$.",
+        "A retailer models demand by $q(p)=500p^{-3/2}$ for price $p>0$. Raising price by $10\\%$ reduces demand by exactly $15\\%$, not merely approximately.",
+        "A farm uses $Q(L)=40L^{0.6}$ with all other inputs fixed. For a small $5\\%$ labour increase, the first-order elasticity estimate predicts an output increase of about $3\\%$.",
+        "A spherical balloon has volume proportional to $r^{3}$. Reducing its radius by $20\\%$ reduces its volume by exactly $60\\%$.",
+        "A detector follows the inverse-square model $I(d)=kd^{-2}$ for $d>0$. Increasing distance by $25\\%$ reduces the detected intensity by exactly $36\\%$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{A(1.12r)}{A(r)}&=(1.12)^2=1.2544 \\\\ (1.2544-1)100\\%&=25.44\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n\\frac{q(1.1p)}{q(p)}&=1.1^{-3/2}\\approx0.86678 \\\\ \\text{decrease}&\\approx13.32\\%\\ne15\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n\\frac{dQ}{Q}&\\approx0.6\\frac{dL}{L} \\\\ 0.6(5\\%)&=3\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n\\frac{V(0.8r)}{V(r)}&=(0.8)^3=0.512 \\\\ \\text{decrease}&=(1-0.512)100\\%=48.8\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\n\\frac{I(1.25d)}{I(d)}&=(1.25)^{-2}=0.64 \\\\ \\text{decrease}&=(1-0.64)100\\%=36\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 104,
+      "solution_overview": "Exact and approximate percentage changes in power laws.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-105",
+      "case_id": "MATH 8.105",
+      "title": "Exam-style tasks - 8",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A position sensor uses $y=3x^{2}$ for every real $x$. Its software claims that $x=\\sqrt{y/3}$ recovers every real position that could have produced a positive reading.",
+        "A calibration curve is $y=4x^{5}$ for real $x$. Because the fifth power is one-to-one, its inverse is $x=(y/4)^{1/5}$ for every real reading $y$.",
+        "A positive production run $q$ has unit cost $C=12/q$. A manager rearranges the model and claims that the inverse rule is $q=12C$.",
+        "A vessel's volume-depth relation is $V=\\tfrac12h^{3/2}$ for $h\\ge0$. Solving for depth gives the inverse formula $h=(2V)^{2/3}$ for $V\\ge0$.",
+        "A braking model is $d=5v^{2}$ with signed velocity $v\\in\\mathbb R$. An analyst says $v=\\sqrt{d/5}$ is an inverse that recovers every possible signed velocity."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\n3x^2&=y\\Rightarrow x=\\pm\\sqrt{\\frac y3} \\\\ \\sqrt{\\frac y3}&\\ \\text{recovers only the nonnegative preimage}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\ny&=4x^5\\Rightarrow x^5=\\frac y4 \\\\ x&=\\left(\\frac y4\\right)^{1/5}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nC&=\\frac{12}{q}\\Rightarrow Cq=12 \\\\ q&=\\frac{12}{C}\\ne12C\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\nV&=\\frac12h^{3/2}\\Rightarrow h^{3/2}=2V \\\\ h&=(2V)^{2/3}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n5v^2&=d\\Rightarrow v=\\pm\\sqrt{\\frac d5} \\\\ \\sqrt{\\frac d5}&\\ \\text{omits negative velocities}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 105,
+      "solution_overview": "Inverse functions and the role of restricted domains.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-106",
+      "case_id": "MATH 8.106",
+      "title": "Exam-style tasks - 9",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A firm uses $Q(L,K)=12L^{0.4}K^{0.6}$ for positive labour and capital. Increasing both inputs by $50\\%$ increases output by exactly $50\\%$.",
+        "A plant uses $Q(L,K)=10L^{0.7}K^{0.5}$. A supervisor claims that doubling both positive inputs makes output less than twice as large.",
+        "A farm follows $Q(L,K)=30L^{1/2}K^{1/4}$. Multiplying labour by $4$ and capital by $16$ multiplies output by exactly $4$.",
+        "A workshop has output $Q(L)=8L^{3/4}$ for $L>0$. To reach output $Q=64$, a planner claims that exactly $L=8$ units of labour are required.",
+        "A firm's total cost is $C(q)=200q^{0.8}$ for output $q>0$. Its average cost $C(q)/q$ falls by the factor $2^{-0.2}$ whenever output doubles."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{Q(1.5L,1.5K)}{Q(L,K)}&=(1.5)^{0.4+0.6}=1.5 \\\\ \\text{increase}&=50\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n\\frac{Q(2L,2K)}{Q(L,K)}&=2^{0.7+0.5}=2^{1.2} \\\\ 2^{1.2}&>2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n\\frac{Q(4L,16K)}{Q(L,K)}&=4^{1/2}16^{1/4} \\\\ &=2\\cdot2=4\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n8L^{3/4}&=64\\Rightarrow L^{3/4}=8 \\\\ L&=8^{4/3}=16\\ne8\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\n\\operatorname{AC}(q)&=\\frac{200q^{0.8}}q=200q^{-0.2} \\\\ \\frac{\\operatorname{AC}(2q)}{\\operatorname{AC}(q)}&=2^{-0.2}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 106,
+      "solution_overview": "Returns to scale and input changes in production models.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-107",
+      "case_id": "MATH 8.107",
+      "title": "Exam-style tasks - 10",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A designer enlarges every linear dimension of a model cylinder by a factor of $3$. She claims that both its surface area and its volume become exactly $9$ times as large.",
+        "A family of similar aquariums has water mass proportional to the cube of linear size. Enlarging every length by $2.5$ multiplies the water mass by exactly $15.625$.",
+        "A cable obeys $R=\\rho L/A$. A redesign multiplies both its length and diameter by $4$, and an engineer claims that its electrical resistance is unchanged.",
+        "An animal model gives body mass proportional to $L^{3}$ and limb strength proportional to $L^{2}$. Doubling size halves the strength-to-mass ratio.",
+        "For a sphere, surface-to-volume ratio equals $3/r$. A lab report claims that tripling the radius reduces this ratio to one ninth of its original value."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\n\\frac{S_{\\text{new}}}{S_{\\text{old}}}&=3^2=9 \\\\ \\frac{V_{\\text{new}}}{V_{\\text{old}}}&=3^3=27\\ne9\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{m_{\\text{new}}}{m_{\\text{old}}}&=(2.5)^3=15.625\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\n\\frac{L_{\\text{new}}}{L}&=4,\\quad\\frac{A_{\\text{new}}}{A}=4^2=16 \\\\ \\frac{R_{\\text{new}}}{R}&=\\frac4{16}=\\frac14\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{\\text{strength}}{\\text{mass}}&\\propto L^{-1} \\\\ \\frac{(2L)^{-1}}{L^{-1}}&=\\frac12\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n\\frac{(S/V)_{\\text{new}}}{(S/V)_{\\text{old}}}&=\\frac{3/(3r)}{3/r}=\\frac13\\ne\\frac19\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 107,
+      "solution_overview": "Geometric similarity and physical power-law scaling.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-108",
+      "case_id": "MATH 8.108",
+      "title": "Exam-style tasks - 11",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A kinetic model assigns energy $E(m)=2m^{5/2}$ joules to a positive mass index $m$. At $m=9$, the model returns exactly $486$ joules.",
+        "A concentration setting $x>0$ satisfies $7x^{-3}=56$. A technician solves the equation and records the setting as $x=2$.",
+        "A model uses $R(t)=(-t)^{4/3}$ with real cube roots. At the signed input $t=-8$, the reported value is exactly $16$.",
+        "A lab fits $P(x)=Ax^{r}$ from readings $P(2)=12$ and $P(8)=96$, with $A>0$. The report concludes that $r=3/2$ and $A=3$.",
+        "A two-stage rule first computes $g(x)=8x^{6}$ and then $f(u)=u^{1/3}$ using real cube roots. The composition satisfies $f(g(x))=2x^{2}$ for every real $x$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\nE(9)&=2(9)^{5/2}=2(\\sqrt9)^5 \\\\ &=2(3^5)=486\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n7x^{-3}&=56\\Rightarrow x^{-3}=8 \\\\ x^3&=\\frac18\\Rightarrow x=\\frac12\\ne2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\nR(-8)&=(8)^{4/3}=(\\sqrt[3]8)^4 \\\\ &=2^4=16\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n\\frac{96}{12}&=\\left(\\frac82\\right)^r\\Rightarrow8=4^r\\Rightarrow r=\\frac32 \\\\ A&=\\frac{12}{2^{3/2}}=3\\sqrt2\\ne3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\nf(g(x))&=(8x^6)^{1/3}=2(x^6)^{1/3} \\\\ &=2x^2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 108,
+      "solution_overview": "Mixed evaluation, equation solving, parameter fitting, and composition.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-109",
+      "case_id": "MATH 8.109",
+      "title": "Exam-style tasks - 12",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A light meter follows $I(d)=1600d^{-2}$ lux. Moving it from $20$ metres to $40$ metres lowers the reading by exactly $2$ lux.",
+        "An orbital model gives period $T(a)=3a^{3/2}$ days for radius index $a>0$. Raising $a$ from $4$ to $16$ multiplies the period by exactly $8$.",
+        "At fixed temperature, a gas model is $P(V)=600V^{-1}$ kPa. Increasing volume from $20$ to $25$ litres decreases pressure by exactly $25\\%$.",
+        "A vehicle's kinetic energy is proportional to $v^{2}$. Raising speed by $30\\%$ increases kinetic energy by exactly $69\\%$ when mass is fixed.",
+        "A dosing rule is $c(w)=40w^{-1/2}$ for weight $w>0$. Multiplying patient weight by $4$ reduces the recommended concentration to one quarter."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\nI(20)&=4,\\quad I(40)=1 \\\\ I(20)-I(40)&=3\\ne2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{T(16)}{T(4)}&=\\left(\\frac{16}{4}\\right)^{3/2}=4^{3/2}=8\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nP(20)&=30,\\quad P(25)=24 \\\\ \\frac{30-24}{30}100\\%&=20\\%\\ne25\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{K(1.3v)}{K(v)}&=(1.3)^2=1.69 \\\\ \\text{increase}&=69\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n\\frac{c(4w)}{c(w)}&=4^{-1/2}=\\frac12\\ne\\frac14\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 109,
+      "solution_overview": "Inverse and direct power laws in applied science.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-110",
+      "case_id": "MATH 8.110",
+      "title": "Exam-style tasks - 13",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A tidal-force model is $F(d)=18d^{-3}$ for distance $d>0$. Moving from distance $2$ to distance $6$ reduces the modeled force to exactly $1/27$ of its previous value.",
+        "An email campaign follows $N(t)=100\\cdot2^{t}$ subscribers after $t$ weeks. A report classifies this as a power function $At^{r}$ of time because its output doubles regularly.",
+        "A parking garage charges $C(x)=5x^{0}$ dollars for every positive parking duration $x$. The graph on $x>0$ is the horizontal line $C=5$.",
+        "A machine calibration requires $(3x)^{4}=1296$ for a real control $x$. The technician claims that the equation has only the solution $x=2$.",
+        "A risk score is $R(x)=x^{-4/3}$ using real cube roots. Its real domain includes every negative $x$ but excludes $x=0$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{F(6)}{F(2)}&=\\left(\\frac62\\right)^{-3}=3^{-3}=\\frac1{27}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\nN(t)&=100\\cdot2^t \\\\ \\frac{N(2t)}{N(t)}&=2^t\\ \\text{is not a constant }2^r\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\nx^0&=1\\quad(x>0) \\\\ C(x)&=5(1)=5\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n(3x)^4&=1296=6^4 \\\\ 3x&=\\pm6\\Rightarrow x=\\pm2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\nR(x)&=\\frac1{(\\sqrt[3]x)^4} \\\\ \\sqrt[3]x&\\ \\text{exists for all real }x,\\quad x\\ne0\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 110,
+      "solution_overview": "Recognizing power functions and handling fractional-power equations.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-111",
+      "case_id": "MATH 8.111",
+      "title": "Exam-style tasks - 14",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A manufacturer models batch cost by $C(q)=80q^{3/4}$ for $q>0$. Increasing batch size from $16$ to $81$ makes total cost exactly three times as large.",
+        "A pollutant index is $D(c)=12c^{-2}$ for concentration control $c>0$. Reducing the control by $25\\%$ multiplies the index by exactly $16/9$.",
+        "A growth curve is $f(x)=x^{7/2}$ for $x>0$. An analyst claims that its slope decreases as $x$ increases because the exponent is fractional.",
+        "A material test produces the real equation $x^{2/5}=9$. The test has exactly two real inputs, $x=-243$ and $x=243$.",
+        "A seller faces demand $q(p)=100p^{-2}$, so revenue is $R(p)=pq(p)$. Raising price by $25\\%$ lowers revenue by exactly $25\\%$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\n\\frac{C(81)}{C(16)}&=\\left(\\frac{81}{16}\\right)^{3/4} \\\\ &=\\left(\\frac32\\right)^3=\\frac{27}{8}\\ne3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{D(0.75c)}{D(c)}&=(0.75)^{-2}=\\left(\\frac43\\right)^2=\\frac{16}{9}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nf'(x)&=\\frac72x^{5/2} \\\\ f''(x)&=\\frac{35}{4}x^{3/2}>0\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n(\\sqrt[5]x)^2&=9\\Rightarrow\\sqrt[5]x=\\pm3 \\\\ x&=(\\pm3)^5=\\pm243\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\nR(p)&=100p^{-1} \\\\ \\frac{R(1.25p)}{R(p)}&=(1.25)^{-1}=0.8\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 111,
+      "solution_overview": "Cost, elasticity, monotonicity, equations, and revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-112",
+      "case_id": "MATH 8.112",
+      "title": "Exam-style tasks - 15",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A firm uses $Q(L,K)=100L^{0.3}K^{0.7}$ with positive inputs. Raising both labour and capital by $20\\%$ raises output by exactly $20\\%$.",
+        "A workshop uses $Q(L,K)=L^{0.4}K^{0.4}$. Because both exponents are positive, a manager claims that doubling both inputs exactly doubles output.",
+        "A production process is $Q(L,K)=6L^{1/3}K^{2/3}$. With capital fixed, multiplying labour by $8$ multiplies output by exactly $2$.",
+        "A single-input plant follows $Q(L)=5L^{2/3}$ for $L>0$. A planner claims that output $Q=45$ requires exactly $L=81$ units of labour.",
+        "A balanced process has $Q(L,K)=20L^{1/2}K^{1/2}$. Multiplying labour by $4$ while dividing capital by $4$ leaves output unchanged."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{Q(1.2L,1.2K)}{Q(L,K)}&=1.2^{0.3+0.7}=1.2 \\\\ \\text{increase}&=20\\%\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n\\frac{Q(2L,2K)}{Q(L,K)}&=2^{0.4+0.4}=2^{0.8} \\\\ 2^{0.8}&\\ne2\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n\\frac{Q(8L,K)}{Q(L,K)}&=8^{1/3}=2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n5L^{2/3}&=45\\Rightarrow L^{2/3}=9 \\\\ L&=9^{3/2}=27\\ne81\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\n\\frac{Q(4L,K/4)}{Q(L,K)}&=4^{1/2}\\left(\\frac14\\right)^{1/2} \\\\ &=2\\cdot\\frac12=1\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 112,
+      "solution_overview": "Cobb-Douglas returns, thresholds, and offsetting input changes.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-113",
+      "case_id": "MATH 8.113",
+      "title": "Exam-style tasks - 16",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A coding rule maps $x$ to $y=x^{3}/27$ for real $x$. A programmer claims that its inverse is $x=9y^{1/3}$.",
+        "A wire obeys $R=\\rho L/A$. A similar redesign triples both length and diameter, so the new resistance is exactly one third of the old resistance.",
+        "For similar thermal stores, heat loss capacity scales with surface area $L^{2}$ while stored heat scales with volume $L^{3}$. Enlarging size by $4$ cuts their ratio to one sixteenth.",
+        "A cleanup model gives pollutant level $c(t)=5t^{-2/3}$ for $t>0$. Multiplying cleanup time by $8$ reduces the level to exactly one quarter.",
+        "A symmetric material response is $f(x)=|x|^{5}$. A report claims that this response equals the ordinary power $x^{5}$ for every real input."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\ny&=\\frac{x^3}{27}\\Rightarrow x^3=27y \\\\ x&=3y^{1/3}\\ne9y^{1/3}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{L_{\\text{new}}}{L}&=3,\\quad\\frac{A_{\\text{new}}}{A}=3^2=9 \\\\ \\frac{R_{\\text{new}}}{R}&=\\frac39=\\frac13\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\n\\frac{\\text{loss}}{\\text{stored heat}}&\\propto L^{-1} \\\\ \\frac{(4L)^{-1}}{L^{-1}}&=\\frac14\\ne\\frac1{16}\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n\\frac{c(8t)}{c(t)}&=8^{-2/3}=(\\sqrt[3]8)^{-2} \\\\ &=2^{-2}=\\frac14\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\nx<0&\\Rightarrow |x|^5>0 \\\\ x<0&\\Rightarrow x^5<0\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 113,
+      "solution_overview": "Inverse cubes, resistance, similarity, decay, and absolute values.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-114",
+      "case_id": "MATH 8.114",
+      "title": "Exam-style tasks - 17",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Two sensors use $f(x)=2x^{2}$ and $g(x)=9x^{2}$ for $x>0$. Doubling the input produces the same factor of increase in both sensor readings.",
+        "A field study fits $P(t)=At^{r}$ from $P(2)=40$ and $P(8)=320$. The researcher concludes that the power exponent is $r=3$.",
+        "A free-fall model is $s(t)=4.9t^{2}$ metres. The distance fallen by $5$ seconds is exactly $6.25$ times the distance fallen by $2$ seconds.",
+        "A real calibration equation is $x^{4/3}=16$, interpreted through real cube roots. A technician claims that its complete solution set is only $\\{8\\}$.",
+        "Two positive doses satisfy $0<a<b$, and response is modeled by $R(x)=x^{-2}$. The smaller dose $a$ produces the larger modeled response."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{f(2x)}{f(x)}&=2^2=4 \\\\ \\frac{g(2x)}{g(x)}&=2^2=4\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n\\frac{320}{40}&=\\left(\\frac82\\right)^r \\\\ 8&=4^r\\Rightarrow r=\\frac32\\ne3\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n\\frac{s(5)}{s(2)}&=\\left(\\frac52\\right)^2=\\frac{25}{4}=6.25\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n(\\sqrt[3]x)^4&=16\\Rightarrow\\sqrt[3]x=\\pm2 \\\\ x&=\\pm8\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\n0<a<b&\\Rightarrow a^2<b^2 \\\\ \\frac1{a^2}&>\\frac1{b^2}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 114,
+      "solution_overview": "Scale ratios, fitted exponents, free fall, and negative exponents.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-115",
+      "case_id": "MATH 8.115",
+      "title": "Exam-style tasks - 18",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A learning model is $H(n)=60n^{-1/4}$ hours. Moving from unit $n=16$ to unit $n=256$ reduces the modeled completion time to exactly one quarter.",
+        "An online market has demand $q(p)=800p^{-1.2}$ for price $p>0$. Its constant price elasticity of demand is exactly $-1.2$.",
+        "A scientific response is $f(x)=x^{\\pi}$ for $x>0$. A reviewer claims that it is not a power function because its exponent is irrational.",
+        "A calculator implements $f(x)=7x^{0}$ under standard real-arithmetic conventions. It must reject $x=0$, while returning $7$ for every nonzero input.",
+        "A sphere's volume is proportional to $r^{3}$. Increasing its radius by $2\\%$ increases volume by exactly $6\\%$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\n\\frac{H(256)}{H(16)}&=\\left(\\frac{256}{16}\\right)^{-1/4} \\\\ &=16^{-1/4}=\\frac12\\ne\\frac14\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{d\\ln q}{d\\ln p}&=\\frac{p}{q}\\frac{dq}{dp}=-1.2\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\nf(x)&=Ax^r \\\\ A&=1,\\quad r=\\pi\\in\\mathbb R\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\nx^0&=1\\quad(x\\ne0) \\\\ 0^0&\\ \\text{is undefined in this convention}\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\n\\frac{V(1.02r)}{V(r)}&=(1.02)^3=1.061208 \\\\ \\text{increase}&=6.1208\\%\\ne6\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 115,
+      "solution_overview": "Learning curves, demand elasticity, irrational powers, and sensitivity.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-116",
+      "case_id": "MATH 8.116",
+      "title": "Exam-style tasks - 19",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A transport cost model is $C(x)=2x^{3}+5$. Because of the fixed charge, it cannot be represented by one pure power $Ax^{r}$ for all positive $x$.",
+        "A geometry program simplifies $f(x)=\\sqrt{12x^{2}}$. It reports $f(x)=2\\sqrt3\\,x$ for every real input $x$, including negative inputs.",
+        "A calibration requires $5x^{-2}=45$ for a nonzero real setting $x$. The complete real solution set is $\\{-1/3,1/3\\}$.",
+        "An engineering model has strength proportional to $L^{2}$ and mass proportional to $L^{3}$. Increasing size by $20\\%$ reduces strength per unit mass by exactly $20\\%$.",
+        "A positive concentration map is $f(x)=x^{-1}$ on $(0,\\infty)$. Applying the same map twice returns the original concentration, so the map is its own inverse."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$\n\\begin{aligned}\n\\frac{C(2x)}{C(x)}&=\\frac{16x^3+5}{2x^3+5} \\\\ &\\text{depends on }x,\\ \\text{unlike the constant }2^r\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**B.** → False\n\n$$\n\\begin{aligned}\n\\sqrt{12x^2}&=2\\sqrt3\\,|x| \\\\ x<0&\\Rightarrow |x|=-x\\ne x\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**C.** → True\n\n$$\n\\begin{aligned}\n5x^{-2}&=45\\Rightarrow x^{-2}=9 \\\\ x^2&=\\frac19\\Rightarrow x=\\pm\\frac13\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**D.** → False\n\n$$\n\\begin{aligned}\n\\frac{\\text{new ratio}}{\\text{old ratio}}&=(1.2)^{-1}=\\frac56 \\\\ \\text{decrease}&=1-\\frac56=\\frac16\\approx16.67\\%\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**E.** → True\n\n$$\n\\begin{aligned}\nf(f(x))&=f\\left(\\frac1x\\right) \\\\ &=\\left(\\frac1x\\right)^{-1}=x\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 116,
+      "solution_overview": "Identifying pure powers, radicals, negative powers, and self-inverse models.",
+      "placeholder": false
+    },
+    {
+      "id": "math-8-117",
+      "case_id": "MATH 8.117",
+      "title": "Exam-style tasks - 20",
+      "subsection": "8.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A material response is $R(x)=7x^{4/5}$ for $x>0$. A scientist claims its graph is convex upward near $x=1$ because the exponent is positive.",
+        "A cubic resource model is proportional to $x^{3}$. Cutting the input by $60\\%$ leaves less than one tenth of the original modeled resource.",
+        "A factory uses $Q(L)=20\\sqrt L$ for $L\\ge0$. A planner claims that every labour level $L\\ge35$ guarantees output of at least $140$ units.",
+        "A researcher compares the readings $x^{2}$ and $x^{4}$ at the normalized input $x=0.6$. The fourth-power reading is strictly smaller than the square reading.",
+        "A reciprocal-square sensor uses $f(x)=3x^{-2}$ for $x>0$. At input $x=0.5$, a technician claims that the reading is exactly $6$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$\n\\begin{aligned}\nR''(x)&=7\\left(\\frac45\\right)\\left(-\\frac15\\right)x^{-6/5} \\\\ R''(1)&=-\\frac{28}{25}<0\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**B.** → True\n\n$$\n\\begin{aligned}\n\\frac{R(0.4x)}{R(x)}&=(0.4)^3=0.064 \\\\ 0.064&<0.1\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**C.** → False\n\n$$\n\\begin{aligned}\n20\\sqrt L&\\ge140\\Rightarrow\\sqrt L\\ge7 \\\\ L&\\ge49,\\ \\text{not }L\\ge35\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False.",
+        "**D.** → True\n\n$$\n\\begin{aligned}\n(0.6)^2&=0.36 \\\\ (0.6)^4&=0.1296<0.36\n\\end{aligned}\n$$\n\nThe calculation verifies the claim, so the statement is True.",
+        "**E.** → False\n\n$$\n\\begin{aligned}\nf(0.5)&=3(0.5)^{-2}=3(4) \\\\ &=12\\ne6\n\\end{aligned}\n$$\n\nThe calculation contradicts the claim, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 117,
+      "solution_overview": "Concavity, large percentage cuts, thresholds, ordering, and evaluation.",
+      "placeholder": false
+    }
+  ]
+}

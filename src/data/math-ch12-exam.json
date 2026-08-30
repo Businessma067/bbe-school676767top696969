@@ -1,0 +1,644 @@
+{
+ "tasks": [
+  {
+   "id": "math-12-199",
+   "case_id": "MATH 12.199",
+   "title": "Exam-style tasks — 1",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Three cards are drawn at random without replacement from a standard 52-card deck. The probability of obtaining exactly two aces is greater than $\\dfrac{1}{50}$.",
+    "Events $A$ and $B$ satisfy $P(A)=0.40$, $P(B)=0.35$, and $P(A \\cup B)=0.60$. Then $P(A \\cap B)=0.15$.",
+    "Events $A$ and $B$ satisfy $P(A)=0.50$, $P(B)=0.40$, and $P(A \\cap B)=0.25$. Then $A$ and $B$ are independent.",
+    "A discrete random variable $X$ takes values $0$, $1$, and $2$ with probabilities $\\dfrac{1}{4}$, $\\dfrac{1}{2}$, and $\\dfrac{1}{4}$ respectively. Then $\\mathrm{Var}(X)=\\dfrac{1}{2}$.",
+    "Factory line A makes $60\\%$ of items with defect rate $2\\%$; line B makes $40\\%$ with defect rate $5\\%$. Given that a randomly chosen item is defective, the probability it came from line A is greater than $40\\%$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\nA standard deck has $4$ aces and $48$ non-aces. Drawing $3$ cards without replacement,\n\n$$P(\\text{exactly 2 aces}) = \\dfrac{\\binom{4}{2}\\binom{48}{1}}{\\binom{52}{3}}$$\n\n$$\\binom{4}{2}=6,\\quad \\binom{48}{1}=48,\\quad \\binom{52}{3}=22100$$\n\n$$P = \\dfrac{288}{22100} = \\dfrac{72}{5525} \\approx 0.01303$$\n\nwhile $\\dfrac{1}{50}=0.02$. Since $0.01303 < 0.02$, the probability is not greater than $\\dfrac{1}{50}$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nInclusion-exclusion gives\n\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n\n$$0.60 = 0.40 + 0.35 - P(A \\cap B)$$\n\n$$P(A \\cap B) = 0.15$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\nIndependence requires $P(A \\cap B) = P(A)P(B)$.\n\n$$P(A)P(B) = 0.50 \\cdot 0.40 = 0.20 \\ne 0.25$$\n\nEquivalently, $P(A \\mid B) = \\dfrac{0.25}{0.40} = 0.625 \\ne 0.50$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E(X) = 0 \\cdot \\dfrac{1}{4} + 1 \\cdot \\dfrac{1}{2} + 2 \\cdot \\dfrac{1}{4} = 1$$\n\n$$E(X^{2}) = 0 + 1 \\cdot \\dfrac{1}{2} + 4 \\cdot \\dfrac{1}{4} = \\dfrac{3}{2}$$\n\n$$\\mathrm{Var}(X) = \\dfrac{3}{2} - 1^{2} = \\dfrac{1}{2}$$\n\n(The SD would be $\\sqrt{1/2}$, which is different from the variance.)\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$P(D) = 0.60 \\cdot 0.02 + 0.40 \\cdot 0.05 = 0.032$$\n\n$$P(A \\mid D) = \\dfrac{0.012}{0.032} = \\dfrac{3}{8} = 0.375$$\n\nThat is $37.5\\%$, which is not greater than $40\\%$.\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 199,
+   "solution_overview": "Mixed exam claims: a three-card ace draw without replacement, inclusion-exclusion, an independence test, variance of a three-point law, and two-cause Bayes for a defective item.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-200",
+   "case_id": "MATH 12.200",
+   "title": "Exam-style tasks — 2",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "An urn holds $5$ red and $7$ blue balls. Two balls are drawn without replacement. The probability both are red equals $\\dfrac{25}{144}$.",
+    "Events $A$, $B$, and $C$ satisfy $P(A)=0.30$, $P(B)=0.40$, $P(C)=0.20$, every pairwise intersection has probability $0.10$, and $P(A \\cap B \\cap C)=0.05$. Then $P(A \\cup B \\cup C)=0.65$.",
+    "Given $P(A \\mid B)=0.60$, $P(B)=0.50$, and $P(A)=0.40$, it follows that $P(B \\mid A)=0.75$.",
+    "A fair four-sided die yields $X \\in \\{1,2,3,4\\}$ each with probability $\\dfrac{1}{4}$. Then the standard deviation of $X$ equals $\\sqrt{\\dfrac{5}{4}}$.",
+    "A disease has prior probability $1\\%$. A test detects it with sensitivity $99\\%$ and has a $2\\%$ false-positive rate among healthy people. Given a positive test, the probability the person has the disease is greater than $90\\%$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\nWithout replacement,\n\n$$P(\\text{both red}) = \\dfrac{\\binom{5}{2}}{\\binom{12}{2}} = \\dfrac{10}{66} = \\dfrac{5}{33}$$\n\nThe claimed $\\dfrac{25}{144}=(5/12)^{2}$ is the with-replacement value.\n\n$$\\dfrac{5}{33} \\approx 0.15152 \\ne \\dfrac{25}{144} \\approx 0.17361$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\n$$P(A \\cup B \\cup C) = 0.30+0.40+0.20 - 0.10-0.10-0.10 + 0.05 = 0.65$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$P(A \\cap B) = 0.60 \\cdot 0.50 = 0.30$$\n\n$$P(B \\mid A) = \\dfrac{0.30}{0.40} = 0.75$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E(X)=\\dfrac{10}{4}=\\dfrac{5}{2},\\quad E(X^{2})=\\dfrac{30}{4}=\\dfrac{15}{2}$$\n\n$$\\mathrm{Var}(X)=\\dfrac{15}{2}-\\dfrac{25}{4}=\\dfrac{5}{4}$$\n\n$$\\mathrm{SD}(X)=\\sqrt{\\dfrac{5}{4}}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$P(+) = 0.99\\cdot 0.01 + 0.02\\cdot 0.99 = 0.0297$$\n\n$$P(D \\mid +) = \\dfrac{0.0099}{0.0297} = \\dfrac{1}{3} \\approx 0.333$$\n\nAbout $33.3\\%$, far below $90\\%$.\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 200,
+   "solution_overview": "Mixed exam claims: an urn draw without replacement versus a with-replacement trap, three-event inclusion-exclusion, reversing a conditional, SD of a fair d4, and Bayes on a rare-disease test.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-201",
+   "case_id": "MATH 12.201",
+   "title": "Exam-style tasks — 3",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A committee of $4$ is chosen at random from $6$ men and $5$ women. The probability the committee contains exactly $2$ women is $\\dfrac{5}{11}$.",
+    "If $P(A)=0.30$, $P(B)=0.50$, and $P(A \\cap B)=0.10$, then $P(A \\cup B)=0.80$.",
+    "One card is drawn from a standard 52-card deck and it is a king; it is not replaced. The probability that the next card drawn is also a king equals $\\dfrac{1}{13}$.",
+    "A game pays $+10$ euros with probability $0.30$ and $-4$ euros with probability $0.70$. The expected payoff of one play is $0.20$ euros.",
+    "Three machines produce $50\\%$, $30\\%$, and $20\\%$ of output with defect rates $1\\%$, $3\\%$, and $4\\%$ respectively. Given a defective item, the probability it came from the third machine equals $\\dfrac{4}{11}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$\\binom{11}{4}=330,\\quad \\binom{5}{2}\\binom{6}{2}=150$$\n\n$$P=\\dfrac{150}{330}=\\dfrac{5}{11}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(A \\cup B)=0.30+0.50-0.10=0.70 \\ne 0.80$$\n\nThe claim ignores the intersection (as if the events were disjoint).\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\nAfter one king is removed, $3$ kings remain among $51$ cards:\n\n$$P=\\dfrac{3}{51}=\\dfrac{1}{17} \\ne \\dfrac{1}{13}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E=10\\cdot 0.30+(-4)\\cdot 0.70=0.2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(D)=0.005+0.009+0.008=0.022$$\n\n$$P(M_{3}\\mid D)=\\dfrac{0.008}{0.022}=\\dfrac{4}{11}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 201,
+   "solution_overview": "Mixed exam claims: a mixed-gender committee, a disjoint-union trap, sequential kings without replacement, an expected payoff, and three-cause Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-202",
+   "case_id": "MATH 12.202",
+   "title": "Exam-style tasks — 4",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Five distinct people are seated uniformly at random in a row of five chairs. The probability that two particular people sit next to each other equals $\\dfrac{2}{5}$.",
+    "If $P(A)=0.70$, $P(B)=0.50$, and $P(A \\cup B)=0.90$, then $P(A \\cap B) \\le 0.20$.",
+    "Two fair coins are flipped independently. The probability both land heads equals $\\dfrac{1}{2}$.",
+    "A random variable $X$ takes values $-1$, $0$, and $1$ with probabilities $0.20$, $0.50$, and $0.30$ respectively. Then $\\mathrm{Var}(X)=0.49$.",
+    "Emails are spam with probability $20\\%$. A filter flags $95\\%$ of spam and $5\\%$ of ham. Given that a message is flagged, the probability it is spam exceeds $80\\%$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nGlue the two people into a block ($2$ internal orders) and permute $4$ entities:\n\n$$P=\\dfrac{2\\cdot 4!}{5!}=\\dfrac{48}{120}=\\dfrac{2}{5}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(A \\cap B)=0.70+0.50-0.90=0.30$$\n\nwhich is not $\\le 0.20$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\n$$P(\\text{HH})=\\dfrac{1}{2}\\cdot\\dfrac{1}{2}=\\dfrac{1}{4} \\ne \\dfrac{1}{2}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E(X)=0.10,\\quad E(X^{2})=0.50,\\quad \\mathrm{Var}(X)=0.49$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(+)=0.19+0.04=0.23$$\n\n$$P(\\text{spam}\\mid +)=\\dfrac{0.19}{0.23}=\\dfrac{19}{23}\\approx 0.826>0.80$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 202,
+   "solution_overview": "Mixed exam claims: adjacent seating, recovering an intersection, two-coin independence, variance of a signed law, and spam-filter Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-203",
+   "case_id": "MATH 12.203",
+   "title": "Exam-style tasks — 5",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Five cards are dealt from a standard 52-card deck. The probability that all five are of the same suit is less than $0.002$.",
+    "In a survey, $40\\%$ of respondents like tea, $50\\%$ like coffee, and $70\\%$ like at least one of the two. Then exactly $20\\%$ like both tea and coffee.",
+    "Suppose $P(A)=0.30$ and $P(A \\mid B)=0.20$. Then the occurrence of $B$ makes $A$ more likely than it was unconditionally.",
+    "If a discrete random variable $X$ has $\\mathrm{Var}(X)=9$, then its standard deviation equals $9$.",
+    "Suppliers provide $50\\%$, $30\\%$, and $20\\%$ of parts with good-item rates $98\\%$, $95\\%$, and $90\\%$. Given a good part, the probability it came from the second supplier is approximately $30\\%$ (within one percentage point)."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{4\\binom{13}{5}}{\\binom{52}{5}}=\\dfrac{5148}{2598960}\\approx 0.001981 < 0.002$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$0.70=0.40+0.50-P(T\\cap C)\\Rightarrow P(T\\cap C)=0.20$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$P(A\\mid B)=0.20<0.30=P(A)$$\n\nso $B$ makes $A$ less likely, not more.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → False\n\n$$\\mathrm{SD}(X)=\\sqrt{9}=3 \\ne 9$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\n$$P(G)=0.955$$\n\n$$P(S_{2}\\mid G)=\\dfrac{0.285}{0.955}\\approx 0.2984$$\n\nabout $29.84\\%$, within one point of $30\\%$.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 203,
+   "solution_overview": "Mixed exam claims: a five-card same-suit probability, tea/coffee inclusion-exclusion, a decreasing conditional, Var versus SD, and three-supplier Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-204",
+   "case_id": "MATH 12.204",
+   "title": "Exam-style tasks — 6",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "From a deck of $52$ cards, $2$ cards are drawn without replacement. The probability both are hearts equals $\\dfrac{13 \\times 12}{52 \\times 51}$.",
+    "If $P(A)=0.45$, $P(B)=0.55$, and $A$ and $B$ are mutually exclusive, then $P(A \\cup B)=0.90$.",
+    "A fair die is rolled once. Let $A$ be \"even\" and $B$ be \"at least $4$\". Then $P(A \\mid B) = \\dfrac{2}{3}$.",
+    "Let $X$ be the number of heads in two independent fair coin tosses. Then $E(X)=1$ and $\\mathrm{Var}(X)=\\dfrac{1}{2}$.",
+    "Box 1 has $2$ gold and $1$ silver coins; Box 2 has $1$ gold and $2$ silver. A box is chosen at random, then a coin at random is gold. The probability the box was Box 1 equals $\\dfrac{2}{3}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{13}{52}\\cdot\\dfrac{12}{51}=\\dfrac{13\\times 12}{52\\times 51}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\nMutually exclusive events satisfy $P(A \\cup B)=P(A)+P(B)=0.45+0.55=1$, not $0.90$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$B=\\{4,5,6\\}$; even members $\\{4,6\\}$.\n\n$$P(A\\mid B)=\\dfrac{2}{3}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E(X)=1,\\quad E(X^{2})=\\dfrac{3}{2},\\quad \\mathrm{Var}(X)=\\dfrac{1}{2}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(G)=\\tfrac{1}{2}\\cdot\\tfrac{2}{3}+\\tfrac{1}{2}\\cdot\\tfrac{1}{3}=\\tfrac{1}{2}$$\n\n$$P(B_{1}\\mid G)=\\dfrac{2}{3}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 204,
+   "solution_overview": "Mixed exam claims: two hearts without replacement, mutually exclusive events, a die conditional, two-coin mean/variance, and Bayes on coin boxes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-205",
+   "case_id": "MATH 12.205",
+   "title": "Exam-style tasks — 7",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A club has $8$ juniors and $6$ seniors. A team of $3$ is chosen at random. The probability the team has no seniors equals $\\dfrac{\\binom{8}{3}}{\\binom{14}{3}}$.",
+    "If $P(A \\cup B)=0.80$ and $P(A \\cap B)=0.20$, then $P(A)+P(B)=0.60$.",
+    "Events with $P(A)=0.40$ and $P(B)=0.50$ must satisfy $P(A \\cap B) \\ge 0.10$.",
+    "For a random variable with $E(X)=4$ and $E(X^{2})=20$, the standard deviation equals $2$.",
+    "Prior probabilities of causes $C_{1},C_{2},C_{3}$ are $0.5$, $0.3$, $0.2$ with $P(E \\mid C_{i})$ equal to $0.1$, $0.4$, $0.5$. Given $E$, the most probable cause is $C_{1}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nNo seniors means all $3$ from $8$ juniors:\n\n$$P=\\dfrac{\\binom{8}{3}}{\\binom{14}{3}}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(A)+P(B)=P(A\\cup B)+P(A\\cap B)=1.00 \\ne 0.60$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\n$$P(A\\cap B)\\ge \\max(0,P(A)+P(B)-1)=0$$\n\nso the intersection need not be at least $0.10$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$\\mathrm{Var}(X)=20-16=4,\\quad \\mathrm{SD}(X)=2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\nUnnormalized posteriors: $0.05$, $0.12$, $0.10$. The MAP is $C_{2}$, not $C_{1}$.\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 205,
+   "solution_overview": "Mixed exam claims: an all-junior team, rearranging inclusion-exclusion, a Fréchet lower-bound trap, recovering SD, and three-cause MAP Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-206",
+   "case_id": "MATH 12.206",
+   "title": "Exam-style tasks — 8",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "An urn has $10$ white and $10$ black balls. Three are drawn without replacement. The probability all three are white equals $\\dfrac{\\binom{10}{3}}{\\binom{20}{3}}$.",
+    "If $P(A)=0.25$, $P(B)=0.40$, and $P(A \\cap B)=0.10$, then $P(A \\cup B)=0.55$.",
+    "Two events with $P(A \\mid B)=P(A)$ are independent (assuming $P(B)>0$).",
+    "A lottery ticket costs $2$ euros and pays $50$ euros with probability $0.01$ (otherwise nothing). The expected net gain is $-1.00$ euros.",
+    "Sensors fail with priors $0.1$, $0.2$, $0.7$ and alarm rates $0.9$, $0.6$, $0.1$. Given an alarm under this one-fault model, $P(\\text{sensor 3 failed})=0.25<0.4$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{\\binom{10}{3}}{\\binom{20}{3}}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(A\\cup B)=0.25+0.40-0.10=0.55$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$P(A\\mid B)=P(A)$ rearranges to $P(A\\cap B)=P(A)P(B)$.\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → False\n\n$$E(\\text{net})=-2+50\\cdot 0.01=-1.5$$\n\nThe claim $-1.00$ understates the expected loss.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\n$$P(\\text{alarm})=0.28$$\n\n$$P(S_{3}\\mid\\text{alarm})=\\dfrac{0.07}{0.28}=0.25<0.4$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 206,
+   "solution_overview": "Mixed exam claims: three white balls, two-event union, conditional independence characterization, lottery expectation, and three-sensor Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-207",
+   "case_id": "MATH 12.207",
+   "title": "Exam-style tasks — 9",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "From $52$ cards, the number of $5$-card hands that contain exactly $2$ aces is $\\binom{4}{2}\\binom{48}{3}$.",
+    "For any events $A$ and $B$, $P(A \\cup B) \\le P(A)+P(B)$.",
+    "If $P(B \\mid A)=0.80$, $P(A)=0.25$, and $P(B)=0.50$, then $P(A \\mid B)=0.40$.",
+    "If $\\mathrm{Var}(X)=16$, then $\\mathrm{Var}(2X)=32$.",
+    "A test for a condition with prevalence $5\\%$ has sensitivity $100\\%$ and specificity $90\\%$. Given a positive result, $P(\\text{condition} \\mid +)$ equals $\\dfrac{1}{2.8}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nChoose $2$ of $4$ aces and $3$ of $48$ non-aces.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nSubadditivity always holds, with equality iff $P(A\\cap B)=0$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$P(A\\cap B)=0.20$$\n\n$$P(A\\mid B)=\\dfrac{0.20}{0.50}=0.40$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → False\n\n$$\\mathrm{Var}(2X)=4\\cdot 16=64 \\ne 32$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → False\n\n$$P(+)=0.05+0.10\\cdot 0.95=0.145$$\n\n$$P(C\\mid +)=\\dfrac{0.05}{0.145}=\\dfrac{10}{29}\\ne\\dfrac{1}{2.8}$$\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 207,
+   "solution_overview": "Mixed exam claims: counting two-ace hands, union subadditivity, reversing a conditional, quadratic variance scaling, and a screening posterior trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-208",
+   "case_id": "MATH 12.208",
+   "title": "Exam-style tasks — 10",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Four books are arranged at random on a shelf. The probability they appear in a specific predetermined order equals $\\dfrac{1}{24}$.",
+    "If $P(A)=0.60$ and $P(A \\cap B)=0.20$, then $P(B \\mid A)=\\dfrac{1}{3}$.",
+    "Rolling two fair dice, the probability the sum is $7$ equals the probability the sum is $6$.",
+    "For $X$ with distribution $P(X=0)=0.2$, $P(X=5)=0.8$, one has $E(X)=4$ and $\\mathrm{SD}(X)=2$.",
+    "Machines A and B make $70\\%$ and $30\\%$ of bolts; defect rates $2\\%$ and $8\\%$. Given a defective bolt, $P(\\text{from A}) < P(\\text{from B})$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{1}{4!}=\\dfrac{1}{24}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(B\\mid A)=\\dfrac{0.20}{0.60}=\\dfrac{1}{3}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$P(\\text{sum }=7)=\\dfrac{6}{36}\\ne\\dfrac{5}{36}=P(\\text{sum }=6)$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E=4,\\quad E(X^{2})=20,\\quad \\mathrm{Var}=4,\\quad \\mathrm{SD}=2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(A\\mid D)=\\dfrac{0.014}{0.038}=\\dfrac{7}{19}<\\dfrac{12}{19}=P(B\\mid D)$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 208,
+   "solution_overview": "Mixed exam claims: bookshelf order, a definitional conditional, unequal dice sums, a two-point SD, and Bayes comparing machine posteriors.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-209",
+   "case_id": "MATH 12.209",
+   "title": "Exam-style tasks — 11",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A password uses $3$ distinct digits chosen from $0$ to $9$ and arranged in order. The number of such passwords is $\\binom{10}{3}=120$.",
+    "If $P(A \\cap B)=0$ and $P(A)=0.3$, $P(B)=0.4$, then $P(A \\cup B)=0.7$.",
+    "For independent events with $P(A)=0.2$ and $P(B)=0.5$, one has $P(A \\cup B)=0.6$.",
+    "If $E(X)=5$ and $\\mathrm{Var}(X)=9$, then $E(X^{2})=34$.",
+    "Prior $P(D)=0.02$. Test: $P(+ \\mid D)=0.95$, $P(+ \\mid D^{c})=0.05$. Then $P(D \\mid +)=\\dfrac{0.019}{0.068}$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\nOrder matters, so the count is the permutation $P(10,3)=10\\times 9\\times 8=720$, not the combination $\\binom{10}{3}=120$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nDisjoint: $P(A\\cup B)=0.7$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$P(A\\cup B)=0.2+0.5-0.1=0.6$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E(X^{2})=9+25=34$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(+)=0.019+0.049=0.068$$\n\n$$P(D\\mid +)=\\dfrac{0.019}{0.068}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 209,
+   "solution_overview": "Mixed exam claims: ordered digit passwords, disjoint unions, independent unions, recovering E(X^2), and an explicit Bayes ratio.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-210",
+   "case_id": "MATH 12.210",
+   "title": "Exam-style tasks — 12",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "From $12$ jurors of whom $5$ are women, a subcommittee of $4$ is chosen. The probability of exactly $3$ women is $\\dfrac{\\binom{5}{3}\\binom{7}{1}}{\\binom{12}{4}}$.",
+    "If $P(A)=0.9$ and $P(B)=0.9$, then it is possible that $P(A \\cap B)=0.85$.",
+    "A card is drawn from a $52$-card deck. Let $A$ be \"ace\" and $B$ be \"heart\". Then $A$ and $B$ are independent.",
+    "A random variable with outcomes $10$ and $20$ each with probability $\\tfrac{1}{2}$ has variance $25$.",
+    "Two factories share production $40\\%$-$60\\%$ with defect rates $3\\%$ and $1\\%$. Given a good item, the probability it is from the second factory exceeds $0.60$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nHypergeometric probability of exactly $3$ women in $4$ draws.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nFeasible range is $[0.8,0.9]$; $0.85$ lies inside.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$P(A)P(B)=\\dfrac{1}{13}\\cdot\\dfrac{1}{4}=\\dfrac{1}{52}=P(A\\cap B)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E=15,\\quad E(X^{2})=250,\\quad \\mathrm{Var}=25$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(F_{2}\\mid G)=\\dfrac{0.594}{0.982}\\approx 0.6049 > 0.60$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 210,
+   "solution_overview": "Mixed exam claims: a hypergeometric subcommittee, a Fréchet-feasible intersection, ace/heart independence, two-point variance, and Bayes for a good item.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-211",
+   "case_id": "MATH 12.211",
+   "title": "Exam-style tasks — 13",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Choosing a president and a treasurer from $10$ people (roles distinct, one person cannot hold both) can be done in $10 \\times 9$ ways.",
+    "If $P(A \\cup B)=0.75$, $P(A)=0.50$, $P(B)=0.45$, then $P(A \\cap B)=0.20$.",
+    "Given $P(A)=0.30$, $P(B)=0.40$, $P(A \\cap B)=0.12$, the events $A$ and $B$ are independent.",
+    "For $X$ with $P(X=k)=\\dfrac{1}{5}$ for $k=1,\\dots,5$, one has $E(X)=3$ and $\\mathrm{Var}(X)=\\dfrac{5}{2}$.",
+    "Spam prior $10\\%$; $P(\\text{flag}\\mid\\text{spam})=0.90$, $P(\\text{flag}\\mid\\text{ham})=0.20$. Then $P(\\text{spam}\\mid\\text{flag})=\\dfrac{1}{3}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$10\\times 9=90$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(A\\cap B)=0.50+0.45-0.75=0.20$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$P(A)P(B)=0.12=P(A\\cap B)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → False\n\n$$E(X)=3$$\n\n$$E(X^{2})=11$$\n\n$$\\mathrm{Var}(X)=11-9=2 \\ne \\dfrac{5}{2}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\n$$P(F)=0.27$$\n\n$$P(S\\mid F)=\\dfrac{0.09}{0.27}=\\dfrac{1}{3}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 211,
+   "solution_overview": "Mixed exam claims: ordered officers, recovering an intersection, product-rule independence, discrete uniform moments, and spam Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-212",
+   "case_id": "MATH 12.212",
+   "title": "Exam-style tasks — 14",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "An urn contains $4$ red and $6$ green balls. Drawing $2$ with replacement, $P(\\text{both red})=\\left(\\dfrac{4}{10}\\right)^{2}=\\dfrac{4}{25}$.",
+    "If $P(A)=0.35$ and $P(B)=0.25$ are mutually exclusive, then $P(A \\cup B)=0.60$.",
+    "A fair coin is flipped until the first head. The probability the first head occurs on toss $3$ equals $\\left(\\dfrac{1}{2}\\right)^{3}=\\dfrac{1}{8}$.",
+    "If $\\mathrm{SD}(X)=5$, then $\\mathrm{Var}(X)=25$.",
+    "Causes $H_{1},H_{2}$ have priors $0.6,0.4$ and $P(D\\mid H_{i})=0.3,0.8$. Then $P(H_{2}\\mid D)=\\dfrac{16}{25}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nWith replacement: $(4/10)^{2}=4/25$.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(A\\cup B)=0.35+0.25=0.60$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\nTwo tails then a head: $(1/2)^{3}=1/8$.\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$\\mathrm{Var}(X)=5^{2}=25$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(D)=0.50$$\n\n$$P(H_{2}\\mid D)=\\dfrac{0.32}{0.50}=\\dfrac{16}{25}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 212,
+   "solution_overview": "Mixed exam claims: with-replacement draws, mutually exclusive union, geometric first-head, SD to Var, and two-cause Bayes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-213",
+   "case_id": "MATH 12.213",
+   "title": "Exam-style tasks — 15",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Without replacement from $5$ red and $5$ blue, $P(\\text{first red, second blue})=\\dfrac{5}{10}\\cdot\\dfrac{5}{9}=\\dfrac{1}{4}$.",
+    "If $P(A \\cup B \\cup C)=0.90$ and the three events are pairwise disjoint with equal probabilities, then each has probability $0.30$.",
+    "If $P(A\\mid B)=0.5$ and $P(B\\mid A)=0.5$ with $P(A)=0.4$, then $P(B)=0.4$.",
+    "A game: gain $3$ with probability $\\dfrac{1}{3}$, lose $1$ with probability $\\dfrac{2}{3}$. Then $E(X)=\\dfrac{1}{3}$ and $\\mathrm{Var}(X)=\\dfrac{32}{9}$.",
+    "Three labs share samples $0.2,0.3,0.5$ with false-negative rates $0.05,0.02,0.01$. The overall false-negative probability equals $0.021$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\n$$P=\\dfrac{5}{10}\\cdot\\dfrac{5}{9}=\\dfrac{5}{18}\\ne\\dfrac{1}{4}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nEqual disjoint shares of $0.90$ give $0.30$ each.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$0.5\\,P(B)=0.5\\cdot 0.4\\Rightarrow P(B)=0.4$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E=\\dfrac{1}{3},\\quad E(X^{2})=\\dfrac{11}{3},\\quad \\mathrm{Var}=\\dfrac{32}{9}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(FN)=0.010+0.006+0.005=0.021$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 213,
+   "solution_overview": "Mixed exam claims: a sequential product arithmetic trap, equal disjoint events, matching reverse conditionals, game mean/variance, and a mixture false-negative rate.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-214",
+   "case_id": "MATH 12.214",
+   "title": "Exam-style tasks — 16",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "The number of ways to choose a $3$-person committee from $9$ people is $\\binom{9}{3}=84$.",
+    "If $P(A)=0.4$, $P(B)=0.5$, $P(A\\cap B)=0.3$, then $P(A\\cup B)=0.9$.",
+    "Tossing a fair die, $P(\\text{prime}\\mid\\text{odd})=\\dfrac{2}{3}$ because the odd faces are $\\{1,3,5\\}$ and the primes among them are $\\{3,5\\}$.",
+    "If $E(X)=0$ and $E(X^{2})=9$, then $\\mathrm{SD}(X)=3$.",
+    "Prior probabilities $0.1,0.3,0.6$ with likelihoods $0.8,0.5,0.1$ for evidence $E$. Then the MAP cause given $E$ is the second cause."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$\\binom{9}{3}=84$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(A\\cup B)=0.4+0.5-0.3=0.6 \\ne 0.9$$\n\nThe claim adds without subtracting the intersection.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\nOdd faces $1,3,5$; primes among them $3,5$ (since $1$ is not prime).\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$\\mathrm{Var}=9,\\quad \\mathrm{SD}=3$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nUnnormalized posteriors $0.08$, $0.15$, $0.06$; the second is largest.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 214,
+   "solution_overview": "Mixed exam claims: a committee count, inclusion-exclusion, a die conditional, SD from a centered second moment, and MAP among three causes.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-215",
+   "case_id": "MATH 12.215",
+   "title": "Exam-style tasks — 17",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "Drawing $2$ cards without replacement from $52$, $P(\\text{both aces})=\\dfrac{\\binom{4}{2}}{\\binom{52}{2}}=\\dfrac{1}{221}$.",
+    "For any $A$, $P(A)+P(A^{c})=1$.",
+    "If $A \\subset B$, then $P(A)\\le P(B)$ and $P(A\\mid B)=\\dfrac{P(A)}{P(B)}$ whenever $P(B)>0$.",
+    "A discrete $X$ with $E(X)=2$ and $\\mathrm{Var}(X)=3$ must satisfy $E(X^{2})=7$.",
+    "A blood test: prevalence $0.5\\%$, sensitivity $99\\%$, false positive rate $1\\%$. Given positive, $P(\\text{disease})\\approx 0.332$ (to three decimals)."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{6}{1326}=\\dfrac{1}{221}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nComplement rule on a partition.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\nMonotonicity plus $A\\cap B=A$ when $A\\subset B$.\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E(X^{2})=3+4=7$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(D\\mid +)=\\dfrac{0.00495}{0.0149}\\approx 0.332$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 215,
+   "solution_overview": "Mixed exam claims: both aces, the complement rule, conditionals under inclusion, recovering E(X^2), and a rare-disease posterior.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-216",
+   "case_id": "MATH 12.216",
+   "title": "Exam-style tasks — 18",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "In a race of $6$ distinct runners, the number of possible podium (1st-2nd-3rd) outcomes is $P(6,3)=120$.",
+    "If $P(A\\cup B)=0.85$ and $P(A\\cap B)=0.15$ with $P(A)=0.50$, then $P(B)=0.50$.",
+    "A fair coin tossed twice: $P(\\text{second is H}\\mid\\text{first is H})=\\dfrac{1}{2}$ by independence.",
+    "If $\\mathrm{Var}(X)=4$ and $\\mathrm{Var}(Y)=9$ for independent $X,Y$, then $\\mathrm{Var}(X+Y)=5$.",
+    "Two urns: Urn A has $3$ white / $2$ black; Urn B has $1$ white / $4$ black. Pick an urn at random, then a white ball. $P(\\text{Urn A}\\mid\\text{white})=\\dfrac{3}{4}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(6,3)=6\\times 5\\times 4=120$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(B)=0.85+0.15-0.50=0.50$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\nIndependent tosses leave $P(\\text{second H})=\\tfrac{1}{2}$.\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → False\n\nIndependence gives $\\mathrm{Var}(X+Y)=4+9=13$, not the difference $5$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\n$$P(A\\mid W)=\\dfrac{3}{4}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 216,
+   "solution_overview": "Mixed exam claims: podium permutations, recovering P(B), independent coins, variance additivity, and Bayes on two urns.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-217",
+   "case_id": "MATH 12.217",
+   "title": "Exam-style tasks — 19",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "A standard deck: probability a single random card is a face card (J, Q, K) equals $\\dfrac{12}{52}=\\dfrac{3}{13}$.",
+    "If $P(A)=0.55$ and $P(B)=0.65$, then $P(A\\cap B)$ cannot exceed $0.55$.",
+    "Events $A,B$ with $P(A\\cap B)=P(A)P(B)$ are independent, even if $P(A)=0$.",
+    "Let $X$ be Bernoulli with parameter $p=0.3$. Then $E(X)=0.3$ and $\\mathrm{Var}(X)=0.21$.",
+    "Factory mix $25\\%$, $75\\%$ with defect rates $4\\%$, $2\\%$. Given a defective item, the probability it came from the smaller ($25\\%$) factory equals $25\\%$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{12}{52}=\\dfrac{3}{13}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(A\\cap B)\\le\\min(0.55,0.65)=0.55$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\nThe product definition is exactly independence.\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$E=p=0.3,\\quad \\mathrm{Var}=p(1-p)=0.21$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$P(\\text{small}\\mid D)=\\dfrac{0.010}{0.025}=0.40 \\ne 0.25$$\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 217,
+   "solution_overview": "Mixed exam claims: face cards, an upper Fréchet bound, product-rule independence, Bernoulli moments, and a Bayes prior-versus-posterior trap.",
+   "placeholder": false
+  },
+  {
+   "id": "math-12-218",
+   "case_id": "MATH 12.218",
+   "title": "Exam-style tasks — 20",
+   "subsection": "12.6",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "From $7$ men and $5$ women, the probability a random $2$-person pair is mixed gender equals $\\dfrac{7\\cdot 5}{\\binom{12}{2}}=\\dfrac{35}{66}$.",
+    "If $P(A\\cup B)=P(A)+P(B)$, then $A$ and $B$ are mutually exclusive (up to a null event).",
+    "Drawing without replacement from $10$ cards labeled $1$-$10$, $P(\\text{second even}\\mid\\text{first is }7)=\\dfrac{5}{9}$.",
+    "If $E(X)=3$ and $\\mathrm{Var}(X)=4$, then $E\\bigl((X-3)^{2}\\bigr)=4$.",
+    "Prior $P(C_{1})=P(C_{2})=P(C_{3})=\\tfrac{1}{3}$ with $P(E\\mid C_{i})=0.9,0.5,0.2$. Then $P(C_{1}\\mid E)=\\dfrac{9}{16}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\dfrac{35}{66}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nInclusion-exclusion forces $P(A\\cap B)=0$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\nAfter removing $7$, five even labels remain among nine cards.\n\n$$P=\\dfrac{5}{9}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nBy definition $\\mathrm{Var}(X)=E((X-E(X))^{2})$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(C_{1}\\mid E)=\\dfrac{0.9}{1.6}=\\dfrac{9}{16}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 218,
+   "solution_overview": "Mixed exam claims: mixed-gender pairs, mutual exclusivity, a without-replacement conditional, variance as mean squared deviation, and equal-prior three-cause Bayes.",
+   "placeholder": false
+  }
+ ]
+}

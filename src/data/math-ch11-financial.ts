@@ -1,9 +1,10 @@
 /**
- * Chapter 3  -  Financial mathematics (subsections 3.1–3.7; formerly course ch. 11).
+ * Chapter 3  -  Financial mathematics (subsections 3.1–3.8; formerly course ch. 11).
  * Generated from textbook/output/ch11_raw.json  -  do not hand-edit bulk content.
  */
 
 import type { MathTask } from "@/data/math-chapters";
+import ch3Exam from "@/data/math-ch3-exam.json";
 
 export const MATH_CH11_SUBSECTIONS = [
   { id: "3.1", title: "Interest Periods and Effective Rates" },
@@ -13,9 +14,10 @@ export const MATH_CH11_SUBSECTIONS = [
   { id: "3.5", title: "Annuities, Annuities Due & Perpetuities" },
   { id: "3.6", title: "Mortgage Repayments" },
   { id: "3.7", title: "Internal Rate of Return" },
+  { id: "3.8", title: "Exam-style tasks" },
 ] as const;
 
-export const MATH_CH11_FINANCIAL: MathTask[] = [
+const MATH_CH11_CORE: MathTask[] = [
   {
     id: `math-11-1`,
     case_id: `MATH 11.01`,
@@ -8937,4 +8939,9 @@ Design B:
 
 $$r_B = \\frac{81{,}200}{70{,}000} - 1 = 0.16 = 16\\%$$`,
   },
+];
+
+export const MATH_CH11_FINANCIAL: MathTask[] = [
+  ...MATH_CH11_CORE,
+  ...(ch3Exam.tasks as MathTask[]),
 ];
