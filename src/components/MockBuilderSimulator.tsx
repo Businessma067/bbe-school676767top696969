@@ -23,6 +23,8 @@ const FIRST_QUESTION = {
     "The supply curve shifts to the left and the new equilibrium price is higher.",
     "The equilibrium quantity traded falls compared with the previous equilibrium.",
     "Because demand is inelastic, total revenue of wheat farmers falls after the shock.",
+    "The demand curve itself shifts to the left as soon as the market price rises.",
+    "Consumer surplus in the wheat market is smaller at the new equilibrium.",
   ],
 };
 
