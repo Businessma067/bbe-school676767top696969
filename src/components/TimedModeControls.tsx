@@ -16,7 +16,14 @@ import {
 const LEVELS: TimedDifficulty[] = ["easy", "standard", "hard"];
 
 /** Always-visible Timed Mode control strip for the practice screen. */
-export function TimedModeBar({ session }: { session: TimedSession }) {
+export function TimedModeBar({
+  session,
+  showCalculator = false,
+}: {
+  session: TimedSession;
+  /** Math practice can show the TI-30; English/Economics omit it. */
+  showCalculator?: boolean;
+}) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const entry = session.get(session.activeId);
 
@@ -37,7 +44,7 @@ export function TimedModeBar({ session }: { session: TimedSession }) {
           <Timer className="h-4 w-4" /> Timed Mode {session.enabled ? "ON" : "OFF"}
         </button>
 
-        <PracticeCalculatorInline />
+        {showCalculator && <PracticeCalculatorInline />}
 
         {session.enabled && (
           <>

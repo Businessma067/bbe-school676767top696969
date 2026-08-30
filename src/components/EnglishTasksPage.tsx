@@ -5,9 +5,11 @@ import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
-import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
 import {
   practiceExplanationToggleClass,
@@ -99,6 +101,7 @@ export function EnglishTasksPage({ tier }: Props) {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [explanation, setExplanation] = useState<ExplanationState | null>(null);
   const [showExplanations, setShowExplanations] = useState(false);
+  const timed = useTimedSession();
   const authGate = useAuthGate();
   const requireAuthForAnswers =
     tier === "demo" ? authGate.requireAuth : () => true;
@@ -172,6 +175,14 @@ export function EnglishTasksPage({ tier }: Props) {
     if (isTextsCase) setSidebarCollapsed(true);
     else setSidebarCollapsed(false);
   }, [isTextsCase, activeCase?.id]);
+
+  useEffect(() => {
+    if (!timed.enabled) return;
+    timed.openQuestion(activeCase && !isLocked(tier, activeIdx) ? activeCase.id : null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timed.enabled, activeCase?.id, activeIdx, tier]);
+
+  const activeTimer = timed.get(activeCase?.id);
 
   useEffect(() => {
     if (activeCase && !isLocked(tier, activeIdx)) {
@@ -480,6 +491,9 @@ export function EnglishTasksPage({ tier }: Props) {
                                                     Task {localI + 1}
                                                     {locked && " · Locked"}
                                                   </span>
+                                                  {!locked && (
+                                                    <TimerStatusDot entry={timed.state[c.id]} />
+                                                  )}
                                                   {!locked && c.difficulty_level !== "—" && (
                                                     <DifficultyBars
                                                       level={c.difficulty_level}
@@ -551,6 +565,9 @@ export function EnglishTasksPage({ tier }: Props) {
                                           Task {i + 1}
                                           {locked && " · Locked"}
                                         </span>
+                                        {!locked && (
+                                          <TimerStatusDot entry={timed.state[c.id]} />
+                                        )}
                                       </button>
                                     </li>
                                   );
@@ -629,7 +646,6 @@ export function EnglishTasksPage({ tier }: Props) {
                     {chapterTitle}
                   </h1>
                 </div>
-                <PracticeCalculatorInline />
               </div>
             )}
 
@@ -639,6 +655,10 @@ export function EnglishTasksPage({ tier }: Props) {
                   ? "Nothing to revise — all attempted tasks are clean. Keep going."
                   : "No tasks here yet. Content will be added soon."}
               </div>
+            )}
+
+            {activeCase && !isLocked(tier, activeIdx) && (
+              <TimedModeBar session={timed} />
             )}
 
             {activeCase && isLocked(tier, activeIdx) ? (
@@ -682,8 +702,15 @@ export function EnglishTasksPage({ tier }: Props) {
                 onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
                 requireAuth={requireAuthForAnswers}
+                reviewOnly={!!activeTimer?.reviewOnly}
+                timerNote={
+                  activeTimer?.timedOut && activeTimer.status !== "submitted"
+                    ? "Failed on time"
+                    : null
+                }
                 onGraded={(ok, correctCount) => {
                   recordResult(activeCase.id, ok);
+                  if (timed.enabled) timed.markSubmitted(activeCase.id);
                   const chLabel =
                     activeChapter && activeChapter !== "revision"
                       ? chapters.find((c) => c.key === activeChapter)?.title ?? activeChapter
@@ -756,8 +783,15 @@ export function EnglishTasksPage({ tier }: Props) {
                   }
                   onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                   requireAuth={requireAuthForAnswers}
+                  reviewOnly={!!activeTimer?.reviewOnly}
+                  timerNote={
+                    activeTimer?.timedOut && activeTimer.status !== "submitted"
+                      ? "Failed on time"
+                      : null
+                  }
                   onGraded={(ok, correctCount) => {
                     recordResult(activeCase.id, ok);
+                    if (timed.enabled) timed.markSubmitted(activeCase.id);
                     const chLabel =
                       activeChapter && activeChapter !== "revision"
                         ? chapters.find((c) => c.key === activeChapter)?.title ?? activeChapter
@@ -830,6 +864,13 @@ export function EnglishTasksPage({ tier }: Props) {
 
       {tier === "demo" && (
         <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+      )}
+
+      {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
+        <TimeoutModal
+          onOvertime={() => timed.chooseOvertime(activeCase.id)}
+          onReview={() => timed.chooseReview(activeCase.id)}
+        />
       )}
     </PracticeCalcProvider>
   );
@@ -968,6 +1009,8 @@ function CaseCard({
   isTexts = false,
   activeExplanationIndex = null,
   onRequestExplanation,
+  reviewOnly = false,
+  timerNote = null,
 }: {
   data: EnglishTask;
   index: number;
@@ -982,6 +1025,8 @@ function CaseCard({
   isTexts?: boolean;
   activeExplanationIndex?: number | null;
   onRequestExplanation?: (i: number) => void;
+  reviewOnly?: boolean;
+  timerNote?: string | null;
 }) {
   const n = data.statements.length;
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -993,6 +1038,13 @@ function CaseCard({
     setAnswers(data.statements.map(() => null));
     setChecked(false);
   }, [data.id, data.statements]);
+
+  useEffect(() => {
+    if (!reviewOnly) return;
+    setChecked(true);
+    onShowExplanations();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reviewOnly, data.id]);
 
   const setAt = (i: number, v: boolean) => {
     if (requireAuth && !requireAuth()) return;
@@ -1052,6 +1104,11 @@ function CaseCard({
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
+          </span>
+        )}
+        {timerNote && (
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+            {timerNote}
           </span>
         )}
         {inRevision && (
@@ -1138,7 +1195,11 @@ function CaseCard({
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-2">
-          {!checked ? (
+          {reviewOnly ? (
+            <span className="text-xs font-semibold text-muted-foreground">
+              Review only — the countdown ran out on this task.
+            </span>
+          ) : !checked ? (
             <button
               type="button"
               onClick={handleSubmit}
@@ -1169,7 +1230,7 @@ function CaseCard({
             </button>
           )}
         </div>
-        {checked && (
+        {checked && !reviewOnly && (
           <span className="text-sm font-semibold text-muted-foreground">
             {correctCount}/{n} correct
           </span>
@@ -1435,7 +1496,7 @@ function ReadingPanel({
             Reading Text
           </span>
         </div>
-        <div className="min-h-0 flex-1 overflow-hidden px-5 pb-4 pt-3 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+        <div className="min-h-0 flex-1 overflow-hidden px-5 pb-4 pt-3 font-serif text-[16px] leading-relaxed text-[#3a2e1f] sm:text-[17px] sm:leading-[1.7]">
           <AnnotatablePassage
             passage={passage}
             storageKey={storageKey}
