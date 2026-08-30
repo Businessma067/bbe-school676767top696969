@@ -327,7 +327,7 @@
       "subsection": "13.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A fair coin is tossed $6$ times. The probability of exactly $3$ heads is below $1/3$.",
+        "A game uses $6$ independent tosses of a fair coin and awards a prize for exactly $3$ heads. The probability of winning the prize is below $1/3$.",
         "A machine runs $4$ independent tests with pass probability $0.25$. An engineer calculates $P(X\\ge3)$ as only $\\binom43(0.25)^3(0.75)$.",
         "A network checks $30$ independent links, each failing with probability $0.1$. The failure count has expected value $3$ and variance $2.7$.",
         "Two teams each attempt $7$ independent tasks, with success probabilities $0.4$ and $0.6$. A manager claims their expected total number of successes is $14$.",
@@ -393,7 +393,7 @@
       "statements": [
         "A student guesses on $7$ independent true/false items. The probability of getting no answers correct is exactly $1/128$.",
         "A salesperson makes $6$ independent calls with close probability $0.4$. A report computes the probability of more than $5$ closes by adding both the $5$-close and $6$-close probabilities.",
-        "A fair coin is tossed $40$ times independently. The head count has mean $20$ and variance $10$.",
+        "A simulation independently tosses a fair coin $40$ times and records the total number of heads. This recorded head count has mean $20$ and variance $10$.",
         "A lab counts positives in $9$ trials as $X$, then sets $Y=X$ rather than running new trials. It claims that $X+Y$ is binomial with $18$ trials and the same success probability $0.3$.",
         "A student records the number of successes in a fixed set of trials and also the waiting time to the first success. Even with the same $p$, the first variable is binomial and the second is geometric, not binomial."
       ],
@@ -489,7 +489,7 @@
       "statements": [
         "A machine passes each of $4$ independent tests with probability $0.6$. A technician claims the chance of exactly $2$ passes is $0.36$.",
         "A student guesses on $12$ independent true/false questions. The probability of at least $7$ correct answers equals the probability of at most $5$ correct answers.",
-        "A fair coin is tossed $9$ times. A report claims that the head count's mean equals its variance.",
+        "A simulation independently tosses a fair coin $9$ times and records the number of heads. A report claims that this head count's mean equals its variance.",
         "Two inspection plans use $20$ and $40$ independent items with the same defect probability $0.25$. Doubling the item count doubles both the mean and variance of the defect count.",
         "A campaign makes $8$ independent contacts with conversion probability $0.25$. A manager claims the chance of at least one conversion exceeds $0.90$."
       ],
@@ -521,7 +521,7 @@
       "statements": [
         "A student guesses on $11$ independent true/false questions. The probabilities of exactly $5$ and exactly $6$ correct are equal, and each is $\\binom{11}{5}/2^{11}$.",
         "A call centre handles $6$ independent calls, each closing with probability $0.3$. A supervisor claims that the chance of at most one close is simply $(0.7)^6$.",
-        "A fair coin is tossed $14$ times. The variance of the number of heads is exactly $3.5$.",
+        "A board game independently tosses a fair coin $14$ times and uses the total number of heads as a score. The variance of this score is exactly $3.5$.",
         "A student claims that the number of heads in $10$ fixed tosses and the number of tosses until the first head have the same distribution because both use $p=0.5$.",
         "A monitoring system performs $n>0$ independent checks. Replacing alert probability $p=0.2$ by $0.8$ changes the probability of at least one alert."
       ],
@@ -616,7 +616,7 @@
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "A clinic gives $6$ independent treatments, each effective with probability $0.25$. A researcher claims that the probability of exactly one effective treatment is below $0.35$.",
-        "A fair coin is tossed $9$ times. The probability of at least $5$ heads is exactly $1/2$.",
+        "A contest independently tosses a fair coin $9$ times and wins whenever at least $5$ heads appear. The probability of winning is exactly $1/2$.",
         "A network tests $7$ independent links, each failing with probability $0.2$. A report claims the standard deviation of the failure count is exactly $1.12$.",
         "Two students answer $10$ independent items with success probabilities $0.4$ and $0.6$. The ratio of their expected scores is exactly $2/3$.",
         "A salesperson makes $5$ independent calls, each closing with probability $0.2$. A manager claims that the chance of at least one close exceeds $0.70$."
