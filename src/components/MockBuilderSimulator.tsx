@@ -77,40 +77,64 @@ export default function MockBuilderSimulator() {
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
-    const smoothScroll = (el: HTMLElement, to: number, duration: number) => {
-      const start = el.scrollTop;
-      const change = to - start;
-      if (Math.abs(change) < 1) return Promise.resolve();
-      return new Promise<void>((resolve) => {
+    // Generic rAF tween — every animated value in this simulator goes through
+    // this so nothing is driven by setTimeout stepping (which causes jitter).
+    const easeInOut = (t: number) =>
+      t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+    const tween = (duration: number, onFrame: (eased: number) => void) =>
+      new Promise<void>((resolve) => {
+        if (duration <= 0) {
+          onFrame(1);
+          return resolve();
+        }
         const t0 = performance.now();
         const step = (now: number) => {
           if (cancelled) return resolve();
           const t = Math.min(1, (now - t0) / duration);
-          const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-          el.scrollTop = start + change * eased;
+          onFrame(easeInOut(t));
           if (t < 1) requestAnimationFrame(step);
           else resolve();
         };
         requestAnimationFrame(step);
       });
+
+    const smoothScroll = (el: HTMLElement, to: number, duration: number) => {
+      const start = el.scrollTop;
+      const change = to - start;
+      if (Math.abs(change) < 1) return Promise.resolve();
+      return tween(duration, (eased) => {
+        el.scrollTop = start + change * eased;
+      });
     };
 
-    // Animate the cursor over several frames instead of snapping in one tick,
-    // so movement reads as smooth glide rather than a hard jump.
-    const glideCursor = async (target: { x: number; y: number }, frames: number, frameMs: number) => {
-      const stage = stageRef.current;
-      if (!stage) return;
+    const glideCursor = (target: { x: number; y: number }, duration = 620) => {
       const start = { ...cursorRef.current };
-      for (let i = 1; i <= frames; i++) {
-        if (cancelled) return;
-        const t = i / frames;
-        const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-        setCursor({
+      const dist = Math.hypot(target.x - start.x, target.y - start.y);
+      if (dist < 1) return Promise.resolve();
+      // scale duration a bit with distance so short hops don't feel sluggish
+      const d = Math.max(320, Math.min(duration, 240 + dist * 1.6));
+      return tween(d, (eased) => {
+        const next = {
           x: start.x + (target.x - start.x) * eased,
           y: start.y + (target.y - start.y) * eased,
-        });
-        await wait(frameMs);
-      }
+        };
+        cursorRef.current = next;
+        setCursor(next);
+      });
+    };
+
+    const pointOf = (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage) return null;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return null;
+      const s = stage.getBoundingClientRect();
+      const eb = el.getBoundingClientRect();
+      return {
+        x: eb.left - s.left + eb.width / 2 - 5,
+        y: eb.top - s.top + eb.height / 2 - 3,
+      };
     };
 
     const moveTo = async (selector: string) => {
@@ -124,37 +148,27 @@ export default function MockBuilderSimulator() {
         const eb0 = el.getBoundingClientRect();
         const desired = box.scrollTop + (eb0.top - lb.top) - lb.height / 2 + eb0.height / 2;
         const clamped = Math.max(0, Math.min(desired, box.scrollHeight - box.clientHeight));
-        await smoothScroll(box, clamped, 640);
+        // glide the cursor while the list scrolls, so both move together
+        const before = pointOf(selector);
+        const scrolling = smoothScroll(box, clamped, 700);
+        if (before) void glideCursor(before, 520);
+        await scrolling;
       }
       if (cancelled) return;
       await new Promise<void>((r) => requestAnimationFrame(() => r()));
-      el = stage.querySelector<HTMLElement>(selector);
-      if (!el) return;
-      const s = stage.getBoundingClientRect();
-      const eb = el.getBoundingClientRect();
-      await glideCursor(
-        {
-          x: eb.left - s.left + eb.width / 2 - 5,
-          y: eb.top - s.top + eb.height / 2 - 3,
-        },
-        18,
-        16,
-      );
+      const target = pointOf(selector);
+      if (!target) return;
+      await glideCursor(target);
       await wait(MOVE);
     };
 
     const snapCursor = (selector: string) => {
-      const stage = stageRef.current;
-      if (!stage) return;
-      const el = stage.querySelector<HTMLElement>(selector);
-      if (!el) return;
-      const s = stage.getBoundingClientRect();
-      const eb = el.getBoundingClientRect();
-      setCursor({
-        x: eb.left - s.left + eb.width / 2 - 5,
-        y: eb.top - s.top + eb.height / 2 - 3,
-      });
+      const p = pointOf(selector);
+      if (!p) return;
+      cursorRef.current = p;
+      setCursor(p);
     };
+
 
     const click = async () => {
       setClicking(true);
@@ -224,23 +238,20 @@ export default function MockBuilderSimulator() {
         let from: Vec2 = balancedPoint();
         for (const p of path) {
           if (cancelled) return;
-          const STEPS = 10;
-          for (let i = 1; i <= STEPS; i++) {
-            if (cancelled) return;
-            const t = i / STEPS;
-            const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+          const dist = Math.hypot(p.x - from.x, p.y - from.y);
+          const start = from;
+          await tween(700 + dist * 900, (eased) => {
             setWeightPoint({
-              x: from.x + (p.x - from.x) * eased,
-              y: from.y + (p.y - from.y) * eased,
+              x: start.x + (p.x - start.x) * eased,
+              y: start.y + (p.y - start.y) * eased,
             });
-            await new Promise<void>((r) => requestAnimationFrame(() => r()));
             snapCursor("[data-sim-weight] [data-weight-handle]");
-            await wait(45);
-          }
+          });
           from = p;
-          await wait(260);
+          await wait(320);
         }
         await wait(600);
+
 
         // ---- 5. build ----
         await moveTo("[data-sim-build]");
@@ -471,10 +482,11 @@ export default function MockBuilderSimulator() {
 
       {/* Animated cursor */}
       <div
-        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-100 ease-out"
+        className="pointer-events-none absolute left-0 top-0 z-20 will-change-transform"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
-        <div className={cn("transition-transform duration-75", clicking ? "scale-90" : "scale-100")}>
+        <div className={cn("transition-transform duration-150 ease-out", clicking ? "scale-90" : "scale-100")}>
+
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
             <path
               d="M5 3l14 8.5-6.2 1.3L9.6 20 5 3z"
