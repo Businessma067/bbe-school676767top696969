@@ -95,7 +95,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
   const [checked, setChecked] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
   const [activeExpl, setActiveExpl] = useState(-1);
-  const [focusTask, setFocusTask] = useState(false);
+  const [, setFocusTask] = useState(false);
   const [calcOpen, setCalcOpen] = useState(false);
   const [timed, setTimed] = useState(false);
   const [secondsLeft, setSecondsLeft] = useState(90);
