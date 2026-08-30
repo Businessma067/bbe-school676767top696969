@@ -96,9 +96,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   const task: SimTask = pool[Math.min(taskIdx, pool.length - 1)];
 
+  // Pick ONE random task per subject on mount and keep it for the whole loop.
   useEffect(() => {
     setTaskIdx(Math.floor(Math.random() * pool.length));
   }, [pool]);
+
 
   // Timed Mode countdown (economics demo only).
   useEffect(() => {
@@ -114,7 +116,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 170;
+    const MOVE = 220;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -171,10 +173,11 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
     const click = async () => {
       setClicking(true);
-      await wait(45);
+      await wait(70);
       setClicking(false);
-      await wait(45);
+      await wait(70);
     };
+
 
     const run = async () => {
       while (!cancelled) {
@@ -220,39 +223,33 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(45);
+          await wait(90);
         }
 
         await moveTo("[data-sim-submit]");
         await click();
         setChecked(true);
-        await wait(240);
+        await wait(320);
 
         await moveTo("[data-sim-explain]");
         await click();
         setShowSolution(true);
-        await wait(220);
+        await wait(300);
 
         const box = scrollRef.current;
         if (box) {
           const max = box.scrollHeight - box.clientHeight;
-          const steps = 4;
+          const steps = 3;
           for (let s = 1; s <= steps; s++) {
             if (cancelled) return;
-            await smoothScroll(box, (max * s) / steps, 430);
-            await wait(110);
+            await smoothScroll(box, (max * s) / steps, 620);
+            await wait(160);
           }
         }
-        await wait(300);
-
-        setTaskIdx((i) => {
-          if (pool.length < 2) return i;
-          let n = i;
-          while (n === i) n = Math.floor(Math.random() * pool.length);
-          return n;
-        });
+        await wait(700);
       }
     };
+
 
     void run();
     return () => {
