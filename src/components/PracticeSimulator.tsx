@@ -74,9 +74,10 @@ function cleanExplanation(text: string) {
 }
 
 /**
- * Pure DOM animation of the real practice card, using verbatim tasks from the
- * live banks. Explanations open inline below the statements exactly like the
- * practice pages; economics shows Timed Mode, math shows the calculator.
+ * Pure DOM animation of the real practice screen: task panel on the left,
+ * explanation panel on the right (exactly like the live practice pages).
+ * Phase 1 focuses on the statements (they gently scale up while the cursor
+ * answers them); phase 2 opens the right panel and walks the explanations.
  */
 export default function PracticeSimulator({ subject }: { subject: SimSubject }) {
   // Economics: skip cases whose context embeds tables/charts (they render badly here).
@@ -93,6 +94,8 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [checked, setChecked] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
+  const [activeExpl, setActiveExpl] = useState(-1);
+  const [focusTask, setFocusTask] = useState(false);
   const [calcOpen, setCalcOpen] = useState(false);
   const [timed, setTimed] = useState(false);
   const [secondsLeft, setSecondsLeft] = useState(90);
@@ -102,6 +105,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   const stageRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const explRef = useRef<HTMLDivElement | null>(null);
 
   const task: SimTask = pool[Math.min(taskIdx, pool.length - 1)];
 
@@ -109,7 +113,6 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
   useEffect(() => {
     setTaskIdx(Math.floor(Math.random() * pool.length));
   }, [pool]);
-
 
   // Timed Mode countdown (economics demo only).
   useEffect(() => {
@@ -125,14 +128,12 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    // Per-subject pacing: economics ~17s, english slower, math the longest.
-    const PACE = subject === "math" ? 3.2 : subject === "english" ? 2.2 : 1.7;
-    const READ_STEPS = subject === "math" ? 10 : subject === "english" ? 7 : 6;
-    const MOVE = Math.round(200 * Math.min(PACE, 1.7));
+    // Per-subject pacing: economics steady, english calmer, math the slowest.
+    const PACE = subject === "math" ? 2.4 : subject === "english" ? 1.9 : 1.5;
+    const MOVE = 260;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
     const pause = (ms: number) => wait(Math.round(ms * PACE));
-
 
     const smoothScroll = (el: HTMLElement, to: number, duration: number) => {
       const start = el.scrollTop;
@@ -159,7 +160,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
       let el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
 
-       // Bring the target into view first, then measure its final painted position.
+      // Bring the target into view first, then measure its final painted position.
       if (box && box.contains(el)) {
         const lb = box.getBoundingClientRect();
         const eb0 = el.getBoundingClientRect();
@@ -169,63 +170,68 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           0,
           Math.min(desired, box.scrollHeight - box.clientHeight),
         );
-         await smoothScroll(box, clamped, MOVE);
+        await smoothScroll(box, clamped, 420);
       }
       if (cancelled) return;
-       await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+      await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       el = stage.querySelector<HTMLElement>(selector);
       if (!el) return;
       const s = stage.getBoundingClientRect();
       const eb = el.getBoundingClientRect();
       setCursor({
-         // The SVG pointer hotspot is at (5, 3), not at its centre.
-         x: eb.left - s.left + eb.width / 2 - 5,
-         y: eb.top - s.top + eb.height / 2 - 3,
+        // The SVG pointer hotspot is at (5, 3), not at its centre.
+        x: eb.left - s.left + eb.width / 2 - 5,
+        y: eb.top - s.top + eb.height / 2 - 3,
       });
       await wait(MOVE);
     };
 
     const click = async () => {
       setClicking(true);
-      await wait(70);
+      await wait(110);
       setClicking(false);
-      await wait(70);
+      await wait(110);
     };
-
 
     const run = async () => {
       while (!cancelled) {
+        // ---- reset ----
         setFade(true);
-        await wait(100);
+        await wait(220);
         setAnswers({});
         setChecked(false);
         setShowSolution(false);
+        setActiveExpl(-1);
+        setFocusTask(false);
         setCalcOpen(false);
         setTimed(false);
         setSecondsLeft(90);
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
+        if (explRef.current) explRef.current.scrollTop = 0;
         setFade(false);
-        await wait(120);
+        await wait(320);
 
-        // Feature demo: Timed Mode (economics) / Calculator (math)
+        // ---- feature demo ----
         if (subject === "economics") {
           await moveTo("[data-sim-timed]");
           await click();
           setTimed(true);
-          await wait(300);
+          await pause(420);
         } else if (subject === "math") {
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(true);
-          await wait(550);
+          await pause(900);
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(false);
-          await wait(120);
+          await pause(200);
         }
 
-        if (scrollRef.current) await smoothScroll(scrollRef.current, 80, 240);
-        await wait(80);
+        // ---- phase 1: read the case, statements gently grow ----
+        if (scrollRef.current) await smoothScroll(scrollRef.current, 90, 900);
+        setFocusTask(true);
+        await pause(700);
 
         const current = pool[Math.min(taskIdx, pool.length - 1)];
         const trap = current.answerKey.findIndex((v) => !v);
@@ -237,33 +243,58 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           await moveTo(`[data-sim-check="${i}"]`);
           await click();
           setAnswers((a) => ({ ...a, [i]: true }));
-          await wait(90);
+          await pause(280);
         }
 
+        await pause(260);
         await moveTo("[data-sim-submit]");
         await click();
         setChecked(true);
-        await wait(320);
+        await pause(650);
 
+        // ---- phase 2: open the explanation panel and study it ----
         await moveTo("[data-sim-explain]");
         await click();
+        setFocusTask(false);
         setShowSolution(true);
-        await wait(300);
+        await pause(700);
 
-        const box = scrollRef.current;
-        if (box) {
-          const max = box.scrollHeight - box.clientHeight;
-          const steps = 3;
-          for (let s = 1; s <= steps; s++) {
-            if (cancelled) return;
-            await smoothScroll(box, (max * s) / steps, 620);
-            await wait(160);
+        const box = explRef.current;
+        for (let i = 0; i < current.explanations.length; i++) {
+          if (cancelled) return;
+          setActiveExpl(i);
+          await new Promise<void>((r) => requestAnimationFrame(() => r()));
+          const panel = explRef.current;
+          const item = panel?.querySelector<HTMLElement>(`[data-sim-expl="${i}"]`);
+          if (panel && item) {
+            const pb = panel.getBoundingClientRect();
+            const ib = item.getBoundingClientRect();
+            const target = Math.max(
+              0,
+              Math.min(
+                panel.scrollTop + (ib.top - pb.top) - 24,
+                panel.scrollHeight - panel.clientHeight,
+              ),
+            );
+            await smoothScroll(panel, target, 900);
+            // Long explanation: creep down through it so it stays readable.
+            const overflow = ib.height - (panel.clientHeight - 60);
+            if (overflow > 40) {
+              const steps = Math.min(4, Math.ceil(overflow / 220));
+              for (let s = 1; s <= steps; s++) {
+                if (cancelled) return;
+                await pause(500);
+                await smoothScroll(panel, target + (overflow * s) / steps, 900);
+              }
+            }
           }
+          await pause(750);
         }
-        await wait(700);
+        setActiveExpl(-1);
+        if (box) await smoothScroll(box, 0, 900);
+        await pause(900);
       }
     };
-
 
     void run();
     return () => {
@@ -273,140 +304,177 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   return (
     <div ref={stageRef} className="relative">
-      <div
-        ref={scrollRef}
-        className={cn(
-          "practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm transition-opacity duration-300 sm:h-[560px] sm:p-6 lg:h-[640px]",
-          fade ? "opacity-0" : "opacity-100",
-        )}
-      >
-        <div className="mb-4 flex flex-wrap items-center gap-2">
-          <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-            Task {taskIdx + 1}
-          </span>
-          <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-            {task.caseId}
-          </span>
-          <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-            {task.chapter}
-          </span>
-
-          <div className="ml-auto flex items-center gap-2">
-            {subject === "economics" ? (
-              <span
-                data-sim-timed
-                className={cn(
-                  "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",
-                  timed
-                    ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
-                    : "border-border bg-background text-foreground",
-                )}
-              >
-                <Timer className="h-4 w-4" />
-                {timed ? `Timed Mode · ${clock(secondsLeft)}` : "Timed Mode"}
-              </span>
-            ) : null}
-            {subject === "math" ? (
-              <span
-                data-sim-calc
-                className={cn(
-                  "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",
-                  calcOpen
-                    ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
-                    : "border-border bg-background text-foreground",
-                )}
-              >
-                <Calculator className="h-4 w-4" /> Calculator
-              </span>
-            ) : null}
-          </div>
-        </div>
-
-        {calcOpen ? (
-          <div className="mb-5 rounded-xl border border-border bg-background p-2">
-            <Ti30MathPrint compact className="w-full" />
-          </div>
-        ) : null}
-
-        <h2 className="font-display text-lg font-bold tracking-tight">
-          <Inline text={task.title} subject={subject} />
-        </h2>
-
-        <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
-          <Prose text={task.context} subject={subject} className="text-sm" />
-        </div>
-
-        <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-          <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-            <span className="w-6 text-center">#</span>
-            <span className="flex-1">Statement</span>
-            <span className="w-14 text-center">True</span>
-            {checked && <span className="w-6" aria-hidden />}
-          </li>
-          {task.statements.map((stmt, i) => {
-            const isChecked = answers[i] === true;
-            const isCorrect = checked && isChecked === task.answerKey[i];
-            return (
-              <li key={i} className="px-4 py-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-6 text-center text-xs font-bold text-muted-foreground">
-                    {LETTERS[i]}.
-                  </span>
-                  <p className="flex-1 text-sm leading-relaxed text-foreground">
-                    <Inline text={stmt} subject={subject} />
-                  </p>
-                  <div className="flex w-14 justify-center">
-                    <span
-                      data-sim-check={i}
-                      className={cn(
-                        "grid h-6 w-6 place-items-center rounded border-2 transition-all",
-                        isChecked
-                          ? "border-primary bg-primary text-primary-foreground"
-                          : "border-border bg-background",
-                      )}
-                    >
-                      {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
-                    </span>
-                  </div>
-                  {checked && (
-                    <span
-                      className={cn(
-                        "grid h-6 w-6 place-items-center rounded-full",
-                        isCorrect
-                          ? "bg-emerald-500 text-white"
-                          : "bg-destructive text-destructive-foreground",
-                      )}
-                    >
-                      {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
-                    </span>
-                  )}
-                </div>
-              </li>
-            );
-          })}
-        </ol>
-
-        <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2">
-            {!checked ? (
-              <span data-sim-submit className={practiceSubmitButtonClass}>
-                Check Answers / Submit
-              </span>
-            ) : (
-              <span data-sim-explain className={practiceExplanationToggleClass(showSolution)}>
-                {showSolution ? "Hide Explanation" : "Explanation"}
-              </span>
-            )}
-          </div>
-          {checked && (
-            <span className="text-sm font-semibold text-muted-foreground">
-              {correctCount}/{task.answerKey.length} correct
-            </span>
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-stretch">
+        {/* ---------------- Task panel ---------------- */}
+        <div
+          className={cn(
+            "min-w-0 transition-all duration-[900ms] ease-in-out",
+            showSolution ? "lg:w-[52%]" : "lg:w-full",
           )}
+        >
+          <div
+            ref={scrollRef}
+            className={cn(
+              "practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-500 sm:h-[560px] sm:p-6 lg:h-[640px]",
+              fade ? "opacity-0" : "opacity-100",
+            )}
+          >
+            <div className="mb-4 flex flex-wrap items-center gap-2">
+              <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
+                Task {taskIdx + 1}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
+                {task.caseId}
+              </span>
+              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
+                {task.chapter}
+              </span>
+
+              <div className="ml-auto flex items-center gap-2">
+                {subject === "economics" ? (
+                  <span
+                    data-sim-timed
+                    className={cn(
+                      "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",
+                      timed
+                        ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
+                        : "border-border bg-background text-foreground",
+                    )}
+                  >
+                    <Timer className="h-4 w-4" />
+                    {timed ? `Timed Mode · ${clock(secondsLeft)}` : "Timed Mode"}
+                  </span>
+                ) : null}
+                {subject === "math" ? (
+                  <span
+                    data-sim-calc
+                    className={cn(
+                      "inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-xs font-bold transition-colors",
+                      calcOpen
+                        ? "border-caramel-deep bg-caramel-deep text-primary-foreground"
+                        : "border-border bg-background text-foreground",
+                    )}
+                  >
+                    <Calculator className="h-4 w-4" /> Calculator
+                  </span>
+                ) : null}
+              </div>
+            </div>
+
+            {calcOpen ? (
+              <div className="mb-5 rounded-xl border border-border bg-background p-2">
+                <Ti30MathPrint compact className="w-full" />
+              </div>
+            ) : null}
+
+            <h2 className="font-display text-lg font-bold tracking-tight">
+              <Inline text={task.title} subject={subject} />
+            </h2>
+
+            <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
+              <Prose text={task.context} subject={subject} className="text-sm" />
+            </div>
+
+            <ol
+              className={cn(
+                "mt-6 origin-top divide-y divide-border overflow-hidden rounded-xl border bg-background transition-all duration-[1200ms] ease-out",
+                focusTask
+                  ? "scale-[1.02] border-primary/40 shadow-lg shadow-primary/10"
+                  : "scale-100 border-border shadow-none",
+              )}
+            >
+              <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                <span className="w-6 text-center">#</span>
+                <span className="flex-1">Statement</span>
+                <span className="w-14 text-center">True</span>
+                {checked && <span className="w-6" aria-hidden />}
+              </li>
+              {task.statements.map((stmt, i) => {
+                const isChecked = answers[i] === true;
+                const isCorrect = checked && isChecked === task.answerKey[i];
+                return (
+                  <li key={i} className="px-4 py-3">
+                    <div className="flex items-center gap-3">
+                      <span className="w-6 text-center text-xs font-bold text-muted-foreground">
+                        {LETTERS[i]}.
+                      </span>
+                      <p
+                        className={cn(
+                          "flex-1 leading-relaxed text-foreground transition-all duration-[1200ms] ease-out",
+                          focusTask ? "text-[15px]" : "text-sm",
+                        )}
+                      >
+                        <Inline text={stmt} subject={subject} />
+                      </p>
+                      <div className="flex w-14 justify-center">
+                        <span
+                          data-sim-check={i}
+                          className={cn(
+                            "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                            isChecked
+                              ? "border-primary bg-primary text-primary-foreground"
+                              : "border-border bg-background",
+                          )}
+                        >
+                          {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
+                        </span>
+                      </div>
+                      {checked && (
+                        <span
+                          className={cn(
+                            "grid h-6 w-6 place-items-center rounded-full",
+                            isCorrect
+                              ? "bg-emerald-500 text-white"
+                              : "bg-destructive text-destructive-foreground",
+                          )}
+                        >
+                          {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
+                        </span>
+                      )}
+                    </div>
+                  </li>
+                );
+              })}
+            </ol>
+
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center gap-2">
+                {!checked ? (
+                  <span data-sim-submit className={practiceSubmitButtonClass}>
+                    Check Answers / Submit
+                  </span>
+                ) : (
+                  <span data-sim-explain className={practiceExplanationToggleClass(showSolution)}>
+                    {showSolution ? "Hide Explanation" : "Explanation"}
+                  </span>
+                )}
+              </div>
+              {checked && (
+                <span className="text-sm font-semibold text-muted-foreground">
+                  {correctCount}/{task.answerKey.length} correct
+                </span>
+              )}
+            </div>
+          </div>
         </div>
 
-        {showSolution ? (
-          <div className="mt-6 border-t border-border pt-6">
+        {/* ---------------- Explanation panel ---------------- */}
+        <div
+          className={cn(
+            "min-w-0 overflow-hidden transition-all duration-[900ms] ease-in-out",
+            showSolution
+              ? "max-h-[700px] opacity-100 lg:w-[48%]"
+              : "max-h-0 opacity-0 lg:w-0",
+          )}
+        >
+          <div
+            ref={explRef}
+            className="practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm sm:h-[560px] sm:p-6 lg:h-[640px]"
+          >
+            <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
+              Explanation
+            </p>
+
             <section className="mb-8 overflow-x-auto border-b border-border/60 pb-7">
               <p className="mb-2 text-[12px] font-bold uppercase tracking-widest text-foreground">
                 Answer key
@@ -438,9 +506,19 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
                 </tbody>
               </table>
             </section>
-            <div className="space-y-7">
+
+            <div className="space-y-6">
               {task.explanations.map((expl, i) => (
-                <div key={i}>
+                <div
+                  key={i}
+                  data-sim-expl={i}
+                  className={cn(
+                    "rounded-xl border p-4 transition-all duration-700 ease-out",
+                    activeExpl === i
+                      ? "border-primary/40 bg-primary/5 opacity-100 shadow-sm"
+                      : "border-transparent bg-transparent opacity-45",
+                  )}
+                >
                   <p className="mb-2 font-display text-sm font-bold text-foreground">
                     {LETTERS[i]}. → {task.answerKey[i] ? "True" : "False"}
                   </p>
@@ -455,13 +533,13 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
               ))}
             </div>
           </div>
-        ) : null}
+        </div>
       </div>
 
       {/* Animated cursor */}
       <div
         data-sim-cursor
-        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-150 ease-out"
+        className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-300 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
         <div
