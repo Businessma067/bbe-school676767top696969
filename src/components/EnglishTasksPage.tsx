@@ -167,6 +167,12 @@ export function EnglishTasksPage({ tier }: Props) {
       !!activePassage);
   const setPracticeCase = useSetPracticeCase();
 
+  // Texts tasks need room for the passage — collapse chapters; restore when leaving Texts.
+  useEffect(() => {
+    if (isTextsCase) setSidebarCollapsed(true);
+    else setSidebarCollapsed(false);
+  }, [isTextsCase, activeCase?.id]);
+
   useEffect(() => {
     if (activeCase && !isLocked(tier, activeIdx)) {
       const chapterTitle =
@@ -737,18 +743,7 @@ export function EnglishTasksPage({ tier }: Props) {
                 : undefined
             }
           >
-            {showExplanations && activeCase && !isLocked(tier, activeIdx) ? (
-              <AllExplanationsPanel
-                task={activeCase}
-                index={activeIdx}
-                isTexts={isTextsCase}
-                activeExplanationIndex={
-                  explanation?.caseId === activeCase.id ? explanation.statementIndex : null
-                }
-                onRequestShowInText={(i) => requestExplanation(activeCase, i)}
-                onClose={() => setShowExplanations(false)}
-              />
-            ) : isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
+            {isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
               <div className="practice-scroll flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
                 <CaseCard
                   key={activeCase.id}
@@ -756,9 +751,14 @@ export function EnglishTasksPage({ tier }: Props) {
                   index={activeIdx}
                   inRevision={progress.revision.includes(activeCase.id)}
                   alreadyPassed={progress.passed.includes(activeCase.id)}
+                  isTexts
                   explanationsOpen={showExplanations}
                   onShowExplanations={() => setShowExplanations(true)}
                   onToggleExplanations={() => setShowExplanations((v) => !v)}
+                  activeExplanationIndex={
+                    explanation?.caseId === activeCase.id ? explanation.statementIndex : null
+                  }
+                  onRequestExplanation={(i) => requestExplanation(activeCase, i)}
                   requireAuth={requireAuthForAnswers}
                   onGraded={(ok, correctCount) => {
                     recordResult(activeCase.id, ok);
@@ -810,6 +810,15 @@ export function EnglishTasksPage({ tier }: Props) {
                   </button>
                 </div>
               </div>
+            ) : showExplanations && activeCase && !isLocked(tier, activeIdx) ? (
+              <AllExplanationsPanel
+                task={activeCase}
+                index={activeIdx}
+                isTexts={false}
+                activeExplanationIndex={null}
+                onRequestShowInText={() => {}}
+                onClose={() => setShowExplanations(false)}
+              />
             ) : (
               <div className="flex h-full items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
                 Submit answers to open the{" "}
@@ -942,6 +951,9 @@ function CaseCard({
   onShowExplanations,
   onToggleExplanations,
   requireAuth,
+  isTexts = false,
+  activeExplanationIndex = null,
+  onRequestExplanation,
 }: {
   data: EnglishTask;
   index: number;
@@ -953,6 +965,9 @@ function CaseCard({
   onShowExplanations: () => void;
   onToggleExplanations: () => void;
   requireAuth?: () => boolean;
+  isTexts?: boolean;
+  activeExplanationIndex?: number | null;
+  onRequestExplanation?: (i: number) => void;
 }) {
   const n = data.statements.length;
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
@@ -979,18 +994,40 @@ function CaseCard({
     if (requireAuth && !requireAuth()) return;
     setChecked(true);
     onGraded(correctCount === data.answer_key.length, correctCount);
-    onShowExplanations();
+    // Texts: keep questions visible and let the user open the explanation below.
+    if (!isTexts) onShowExplanations();
   };
 
   const handleReset = () => {
     setChecked(false);
     setAnswers(data.statements.map(() => null));
+    if (isTexts && explanationsOpen) onToggleExplanations();
   };
 
   const handleFullReset = () => {
     handleReset();
     onResetProgress();
   };
+
+  const letters = "ABCDEF";
+  const explanationBody = [
+    data.solution_overview?.trim() ?? "",
+    "",
+    ...data.statements.flatMap((_, i) => {
+      const letter = letters[i] ?? String(i + 1);
+      const verdict = data.answer_key[i] ? "True" : "False";
+      let expl = (data.tactical_explanations[i] ?? "").trim();
+      if (expl) {
+        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+        expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
+        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
+      }
+      return [`**${letter}.** → ${verdict}\n\n${data.statements[i]}`, ""];
+    }),
+  ]
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 
   return (
     <article className="practice-panel-enter rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
@@ -1118,7 +1155,11 @@ function CaseCard({
               onClick={onToggleExplanations}
               className={practiceExplanationToggleClass(explanationsOpen)}
             >
-              {explanationsOpen ? "Hide Explanation" : "Explanation"}
+              {explanationsOpen
+                ? "Hide Explanation"
+                : isTexts
+                  ? "Show Explanation"
+                  : "Explanation"}
             </button>
           )}
         </div>
@@ -1128,6 +1169,31 @@ function CaseCard({
           </span>
         )}
       </div>
+
+      {isTexts && checked && explanationsOpen && (
+        <div className="mt-6 border-t border-border pt-6">
+          <p className="mb-4 text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Full solution · Task {index + 1}
+          </p>
+          <AnswerKeyTable answerKey={data.answer_key} />
+          {onRequestExplanation && (
+            <div className="mb-6 flex flex-wrap gap-2">
+              {data.statements.map((_, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => onRequestExplanation(i)}
+                  className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
+                >
+                  {letters[i] ?? i + 1}
+                  {activeExplanationIndex === i ? " · located" : " · locate"}
+                </button>
+              ))}
+            </div>
+          )}
+          <ExplanationProse text={explanationBody} />
+        </div>
+      )}
     </article>
   );
 }
