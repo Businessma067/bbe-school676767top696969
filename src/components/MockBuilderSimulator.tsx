@@ -114,6 +114,19 @@ export default function MockBuilderSimulator() {
       await wait(MOVE);
     };
 
+    const snapCursor = (selector: string) => {
+      const stage = stageRef.current;
+      if (!stage) return;
+      const el = stage.querySelector<HTMLElement>(selector);
+      if (!el) return;
+      const s = stage.getBoundingClientRect();
+      const eb = el.getBoundingClientRect();
+      setCursor({
+        x: eb.left - s.left + eb.width / 2 - 5,
+        y: eb.top - s.top + eb.height / 2 - 3,
+      });
+    };
+
     const click = async () => {
       setClicking(true);
       await wait(120);
