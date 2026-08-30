@@ -1273,7 +1273,7 @@
     "**A.** → False\n\nLeast common denominator of $r$ and $s$ is their product, not their sum $r+s$.\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → True\n\nLeast common denominator of $x$ and $x$ is the product $xx$. Adding numerators over added denominators is not an identity.\n\nSo the statement is True.",
     "**C.** → False\n\nNumerator $(x+2)(x+3)$, so the quotient is $x+2$ for $x\\neq -3$, not $x+1$. So the statement is False.",
-    "**D.** → True\n\nFactor the numerator as a difference of squares:\\n\\n$$x^{2}-16=(x-4)(x+4)$$\\n\\nCancelling $x-4$ for $x\\neq 4$ leaves $x+4$. So the statement is True.",
+    "**D.** → True\n\nFactor the numerator as a difference of squares:\n\n$$x^{2}-16=(x-4)(x+4)$$\n\nCancelling $x-4$ for $x\\neq 4$ leaves $x+4$. So the statement is True.",
     "**E.** → True\n\nLeast common denominator of $3h$ and $6h$ is the product $3h6h$:\n\n$$\\frac{\\cdots}{3h}+\\frac{\\cdots}{6h}=\\frac{\\cdots}{3h6h}$$\n\nAdding numerators over added denominators is not an identity, so the statement is True."
    ],
    "solution_overview": "Common denominators are products of the distinct denominator factors. Adding numerators over added denominators, or using a sum of coefficients as an LCD, both fail; equal denominators really do add in the numerators.",
@@ -1434,7 +1434,7 @@
     "**B.** → False\n\nThe left side is $\\dfrac{p+q}{pq}$, which equals $\\dfrac{1}{p+q}$ only in special cases, not identically. So the statement is False.",
     "**C.** → False\n\nPartial fractions yield $\\dfrac{1/2}{x-1}-\\dfrac{1/2}{x+1}$, so a factor $\\tfrac12$ is missing on the right-hand side. So the statement is False.",
     "**D.** → True\n\nLCD $x^{2}-1$: $\\dfrac{2(x+1)+3(x-1)}{x^{2}-1}=\\dfrac{5x-1}{x^{2}-1}$. So the statement is True.",
-    "**E.** → False\n\nPolynomial division (or splitting) gives $\\dfrac{x^{3}-8}{x}=x^{2}-\\dfrac{8}{x}$.\\n\\nThe printed right-hand side inserts an extra linear term $2x$ and flips the sign of the remainder, so it does not match. So the statement is False."
+    "**E.** → False\n\nPolynomial division (or splitting) gives $\\dfrac{x^{3}-8}{x}=x^{2}-\\dfrac{8}{x}$.\n\nThe printed right-hand side inserts an extra linear term $2x$ and flips the sign of the remainder, so it does not match. So the statement is False."
    ],
    "solution_overview": "Twice the reciprocal of a sum of unit fractions is $2hk/(h+k)$, which is not the arithmetic mean $(h+k)/2$. Striking a letter from only one term of a numerator still fails.",
    "sort_order": 45,
@@ -2713,8 +2713,8 @@
    "tactical_explanations": [
     "**A.** → True\n\nCombine numerator factors, then subtract the denominator exponent:\n\nNumerator:\n\n$$p^{3}p^{-1}=p^{2}$$\n\nQuotient:\n\n$$\\frac{p^{2}}{p^{-2}}=p^{4}$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nThe product rule for square roots lets two nonnegative radicands combine under one root:\n\n$$\\sqrt{x}\\cdot\\sqrt{y}=\\sqrt{xy}$$\n\nSquaring both sides confirms it: $\\left(\\sqrt{x}\\sqrt{y}\\right)^2=xy=\\left(\\sqrt{xy}\\right)^2$, and both original expressions are nonnegative, so the square roots themselves agree.\n\nSo the statement is True.",
-    "**C.** → True\n\nInside the radical one has a perfect square:\\n\\n$$x^{2}+2x+1=(x+1)^{2}$$\\n\\nFor $x>0$ one has $x+1>0$, so $\\sqrt{(x+1)^{2}}=x+1$. So the statement is True.",
-    "**D.** → False\n\nSubtract exponents carefully:\\n\\n$$\\dfrac{x^{-2}}{x^{3}}=x^{-2-3}=x^{-5}$$\\n\\nThe claimed power $x^{1}$ is wrong. So the statement is False.",
+    "**C.** → True\n\nInside the radical one has a perfect square:\n\n$$x^{2}+2x+1=(x+1)^{2}$$\n\nFor $x>0$ one has $x+1>0$, so $\\sqrt{(x+1)^{2}}=x+1$. So the statement is True.",
+    "**D.** → False\n\nSubtract exponents carefully:\n\n$$\\dfrac{x^{-2}}{x^{3}}=x^{-2-3}=x^{-5}$$\n\nThe claimed power $x^{1}$ is wrong. So the statement is False.",
     "**E.** → True\n\nThe identity $\\dfrac{\\sqrt{a}}{\\sqrt{b}}=\\sqrt{\\dfrac{a}{b}}$ holds for positive $a,b$, which is exactly the printed power form. So the statement is True."
    ],
    "solution_overview": "Five independent given-power rewrites. A new base is written as a power of the given base, then the given value is raised to that integer. No logarithm is taken.",

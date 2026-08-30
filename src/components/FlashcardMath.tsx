@@ -128,8 +128,8 @@ function sanitizeMathSource(src: string): { kind: "math" | "text"; value: string
 }
 
 function hasProseWords(s: string): boolean {
-  // Two consecutive English words (≥3 letters) → almost certainly not pure math.
-  return /[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(s);
+  // Ignore LaTeX command names and `\text{…}` labels — those are valid math.
+  return /[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(stripLatexForProseCheck(s));
 }
 
 type Part =
@@ -137,8 +137,29 @@ type Part =
   | { type: "inline"; value: string }
   | { type: "display"; value: string };
 
+/** `$12,000` or `$12\,000` currency / plain amounts (thin space = thousands). */
 const CURRENCY_RE =
-  /\$\d+(?:,\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
+  /\$\d+(?:(?:\\,|,)\d{3})*(?:\.\d+)?(?:\/[A-Za-z%]+)?(?!\.\d)(?!,\d)(?!\\,\d)(?![0-9A-Za-z+\-*=<>≠≤≥(\\{^_$])/y;
+
+/**
+ * Strip LaTeX so prose heuristics do not fire on command names (`\mid` → "mid")
+ * or on intentional `\text{…}` labels inside real math.
+ */
+function stripLatexForProseCheck(t: string): string {
+  let s = t;
+  // Peel simple one-level text macros first (their English is intentional math labels).
+  for (let n = 0; n < 4; n++) {
+    const next = s.replace(
+      /\\(?:text|mathrm|operatorname|textit|textbf|mbox|mathsf|mathbf)\s*\{[^{}]*\}/g,
+      " ",
+    );
+    if (next === s) break;
+    s = next;
+  }
+  s = s.replace(/\\[a-zA-Z]+/g, " ");
+  s = s.replace(/\\[,;:!]/g, " ");
+  return s;
+}
 
 /**
  * Decide whether `$…$` contents are real KaTeX vs accidental pairing of two
@@ -148,16 +169,24 @@ function looksLikeMathInner(inner: string): boolean {
   const t = inner.trim();
   if (!t) return false;
 
-  // Two consecutive English words → narrative prose
-  if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(t)) return false;
+  const forProse = stripLatexForProseCheck(t);
+  const hasLatexCmd = /\\[a-zA-Z]+/.test(t);
+
+  // Two consecutive English words in non-LaTeX residue → narrative prose
+  // (must run on stripped text so `\mid OOC` is not read as "mid OOC").
+  if (/[A-Za-z]{3,}\s+[A-Za-z]{3,}/.test(forProse)) return false;
+
+  // Real LaTeX (`\mid`, `\frac`, `\le`, `\text`, …) → math, even when a short
+  // connective like "or"/"and" appears: `$(x \le 1 or x \ge 3)$`.
+  if (hasLatexCmd) return true;
+
+  // Thin-space-only chunks like `12\,000` (no letter commands) are math numbers.
+  if (/^\d{1,3}(?:\\,\d{3})+(?:\.\d+)?$/.test(t)) return true;
 
   // Glue words mean currency `$8,000 < 0 and $a_1$` must NOT become one math span.
-  // Strip LaTeX commands first so `\exists` / `\forall` are not mistaken for English
-  // "exists" / "for".
-  const withoutCmds = t.replace(/\\[a-zA-Z]+/g, " ");
   if (
     /\b(?:and|or|the|for|with|from|that|which|this|into|onto|than|then|when|where|while|also|but|not|is|are|was|be|if|amount|invested|returned|matching|statement|condition|satisfied|exists)\b/i.test(
-      withoutCmds,
+      forProse,
     )
   ) {
     return false;
@@ -169,9 +198,8 @@ function looksLikeMathInner(inner: string): boolean {
   // Stem-style words with no equation mark → currency mid-sentence
   if (
     !/[=<>≠≤≥]/.test(t) &&
-    !/\\[a-zA-Z]+/.test(t) &&
     /\b(?:Shipment|Invoice|Account|Week|Batch|Season|Client|Fund|Route|Day|Point|Job|Branch|cost|total|mixed|price|rate|fee|balance|units?|kg|litres?|miles?)\b/i.test(
-      t,
+      forProse,
     )
   ) {
     return false;
@@ -181,8 +209,8 @@ function looksLikeMathInner(inner: string): boolean {
   // so a bare letter token can only come from real math.
   if (/^[A-Za-z]{2,5}$/.test(t)) return true;
 
-  // Any 4+ letter English token without eq/compare (and not a LaTeX command) is prose
-  if (/[A-Za-z]{4,}/.test(t) && !/[=<>≠≤≥]/.test(t) && !/\\[a-zA-Z]+/.test(t)) {
+  // Any 4+ letter English token without eq/compare is prose
+  if (/[A-Za-z]{4,}/.test(forProse) && !/[=<>≠≤≥]/.test(t)) {
     return false;
   }
 
@@ -219,12 +247,43 @@ function looksLikeMathInner(inner: string): boolean {
  * Currency amounts like `$2,943.20` stay text; real `$x+y=1$` stays math.
  * Never let two currency signs swallow the prose between them as KaTeX.
  */
+/**
+ * Normalize broken authoring so users never see raw KaTeX control sequences:
+ * - `$12\,000 subject…` (thin-space thousands that never close before English)
+ *   → `$12,000 subject…`
+ * - `\$P(A \mid B)\$` (escaped dollars around real math) → `$P(A \mid B)$`
+ * Do not touch legitimate display math `$$40\,000 e^{…}$$`.
+ */
+function normalizeBrokenMathMarkup(input: string): string {
+  let s = input;
+
+  // `\$…\$` used as math delimiters (common in some generated explanations).
+  s = s.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
+    const t = inner.trim();
+    if (!t) return _m;
+    if (/\\[a-zA-Z]/.test(t) || /[=<>≠≤≥^_{}+*/\\]/.test(t) || /[A-Za-z]\s*\(/.test(t)) {
+      return `$${inner}$`;
+    }
+    return _m;
+  });
+
+  // `$12\,000 subject` → `$12,000 subject` (not `$$40\,000 e`)
+  s = s.replace(
+    /(?<!\$)\$(\d{1,3}(?:\\,\d{3})+)(?=\s+[A-Za-z])/g,
+    (_, nums: string) => `$${nums.replace(/\\,/g, ",")}`,
+  );
+
+  return s;
+}
+
 function splitMath(input: string): Part[] {
-  const text = input
-    .replace(/\\\(/g, "$")
-    .replace(/\\\)/g, "$")
-    .replace(/\\\[/g, "$$")
-    .replace(/\\\]/g, "$$");
+  const text = normalizeBrokenMathMarkup(
+    input
+      .replace(/\\\(/g, "$")
+      .replace(/\\\)/g, "$")
+      .replace(/\\\[/g, "$$")
+      .replace(/\\\]/g, "$$"),
+  );
 
   const parts: Part[] = [];
   let i = 0;
@@ -263,7 +322,8 @@ function splitMath(input: string): Part[] {
         const afterMath = indexOfUnescapedDollar(text, i + cur[0].length);
         const between = afterMath === -1 ? "" : text.slice(i + 1, afterMath);
         if (!(afterMath !== -1 && looksLikeMathInner(between))) {
-          buf += cur[0];
+          // Show thin-space currency as a normal comma amount in prose.
+          buf += cur[0].replace(/\\,/g, ",");
           i += cur[0].length;
           continue;
         }

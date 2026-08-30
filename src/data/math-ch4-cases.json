@@ -6369,7 +6369,7 @@
    "subsection": "4.5",
    "context": "A corporate treasury department evaluates several liquidity management instruments, including cash reserves, bond pricing, and rate models. Mark each statement TRUE or FALSE.",
    "statements": [
-    "If an uninvested cash reserve of $12\\,000 subject to quarterly withdrawals of $600 and a constant annual custody fee $f$ is completely depleted after exactly 4 years, then the annual fee $f$ strictly exceeds the quarterly withdrawal amount.",
+    "If an uninvested cash reserve of $12,000 subject to quarterly withdrawals of $600 and a constant annual custody fee $f$ is completely depleted after exactly 4 years, then the annual fee $f$ strictly exceeds the quarterly withdrawal amount.",
     "For a 2-year bond with an annual coupon of \\$20 and a face value of \\$120 purchased at a price of \\$100, the growth factor $x = 1+r$ satisfies a quadratic equation with exactly one positive real root, and this root implies an annual yield $r$ strictly greater than 15%.",
     "A treasury model for spread balancing yields the rational equation $\\frac{x}{x-2} + \\frac{2}{x-3} = \\frac{2}{x^2-5x+6}$; clearing denominators produces two algebraic roots, but exactly one of them is an admissible solution in the domain of the equation.",
     "An interest-rate benchmark model involves the exponential equation $4^t - 3 \\cdot 2^t - 4 = 0$; applying the substitution $u = 2^t$ yields two real roots for $u$, which correspond to two distinct real solutions for $t$.",
