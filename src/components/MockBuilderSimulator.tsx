@@ -14,19 +14,20 @@ const ACCENT = "#E85D3A";
 const LETTERS = "ABCDEF";
 
 const FIRST_QUESTION = {
-  caseId: "ECON-2.14",
-  chapter: "Chapter 2 · Demand, supply and market equilibrium",
-  title: "Market equilibrium after a supply shock",
+  caseId: "ECON-3.07",
+  chapter: "Chapter 3 · Focus on different types of businesses",
+  title: "Factors of production and business sectors",
   context:
-    "A poor harvest reduces the quantity of wheat that farmers can bring to the market at every price level. Demand for wheat is unchanged and relatively price-inelastic.",
+    "A family-run bakery buys flour from local farms, bakes bread in its own rented workshop and sells it in two small shops in the city. The owner works in the bakery every day and employs four staff members.",
   statements: [
-    "The supply curve shifts to the left and the new equilibrium price is higher.",
-    "The equilibrium quantity traded falls compared with the previous equilibrium.",
-    "Because demand is inelastic, total revenue of wheat farmers falls after the shock.",
-    "The demand curve itself shifts to the left as soon as the market price rises.",
-    "Consumer surplus in the wheat market is smaller at the new equilibrium.",
+    "The rented workshop and the ovens are capital used in the production process.",
+    "Buying flour from local farms means the bakery itself operates in the primary sector.",
+    "Baking the bread is a secondary-sector activity, while running the two shops is tertiary.",
+    "The work of the owner is entrepreneurship, since the owner also organises the other factors of production and bears the risk.",
+    "Because the bakery is small and family-run, it cannot be described as profit-oriented.",
   ],
 };
+
 
 /**
  * Looping, cursor-driven animation of the real Custom Mock Builder:
