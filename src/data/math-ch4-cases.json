@@ -6213,13 +6213,13 @@
    "case_id": "MATH 4.195",
    "title": "Logistics Pricing and Operational Fleet Equations",
    "subsection": "4.5",
-   "context": "A logistics company operates two delivery tariffs, Tariff A (Regional Cargo) and Tariff B (Express Freight), across an urban delivery network. The billing rates, operational cost structures, tracking metrics, and vehicle efficiency depend on shipment weight $x$ (in hundreds of kilograms, with $x > 0$), fleet operating speed $v$ (in tens of km/h, with $v > 0$), operating duration $t$ (in months, with $t > 0$), and cargo load $w$ (in tons, with $w > 0$). Management relies on five governing equations across these operations:\n1. Under Tariff A, customer billing is $C_A(x) = 75 + 18x$, while Tariff B with an adjustable margin parameter $m > 0$ bills $C_B(x) = 135 + (3m)x$.\n2. The trip handling cost under fleet speed $v$ is modeled by $K(v) = 3v^2 - 27v + 84$, subject to a target budget of $K(v) = 24$.\n3. The unit administrative overhead under congested weight $x$ satisfies $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$.\n4. Customer satisfaction index $S(t)$ over time $t$ obeys the logarithmic relation $\\log_2(t + 6) + \\log_2(t - 1) = 3$.\n5. Fleet fuel-load efficiency under cargo weight $w$ follows the radical balance $\\sqrt{4w + 9} - \\sqrt{w} = 3$.",
+   "context": "A logistics company checks five separate calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "For the margin parameter value $m = 6$, the pricing schedules $C_A(x)$ and $C_B(x)$ yield an identical total billing charge for exactly one positive shipment weight $x$.",
-    "The budget equation $K(v) = 24$ possesses two distinct admissible operating speeds in tens of km/h, and their sum is strictly greater than 8.",
-    "The rational overhead equation $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$ admits exactly one valid solution in the domain of the expression, because the algebraic candidate $x = 3$ is extraneous.",
-    "The tracking equation $\\log_2(t + 6) + \\log_2(t - 1) = 3$ produces two real algebraic roots whose product is $-14$, but only the single root $t = 2$ lies in the admissible domain.",
-    "The radical efficiency equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has no solution in the set of strictly positive cargo weights $w > 0$ because squaring introduces an extraneous root."
+    "Tariff A bills a customer $C_A(x) = 75 + 18x$ and Tariff B bills $C_B(x) = 135 + 3mx$, where $x > 0$ is the shipment weight. For the margin value $m = 6$ the two tariffs give the same total charge for exactly one positive weight $x$.",
+    "The trip handling cost at speed $v > 0$ is $K(v) = 3v^{2} - 27v + 84$. The budget equation $K(v) = 24$ has two different admissible speeds, and their sum is greater than $8$.",
+    "The overhead equation $\\frac{2x^2 - 18}{x - 3} = 14 + \\frac{x^2 - 9}{x - 3}$ has exactly one valid solution, because the candidate $x = 3$ is extraneous.",
+    "The tracking equation $\\log_2(t + 6) + \\log_2(t - 1) = 3$ gives two algebraic roots whose product is $-14$, but only the root $t = 2$ lies in the domain.",
+    "The efficiency equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has no solution with $w > 0$, because squaring introduces an extraneous root."
    ],
    "answer_key": [
     false,
@@ -6437,13 +6437,13 @@
    "case_id": "MATH 4.202",
    "title": "Enterprise Software Churn and Scaling Dynamics",
    "subsection": "4.5",
-   "context": "A software-as-a-service enterprise analyzes its quarterly growth, pricing structure, infrastructure expenditures, and customer attrition. The financial planning department models quarterly operational parameters using four distinct structural equations. The baseline quarterly marketing budget $m$ in thousands of euros satisfies a linear resource constraint $4m - 18 = m + 27$. The enterprise tier subscription fee $p$ in hundreds of euros determines quarterly gross profit via the quadratic model $\\Pi(p) = -2p^2 + 28p - 48$. The server optimization factor $x > 0$ balances average load balancing costs according to the rational relation $\\frac{6}{x - 2} - \\frac{x + 1}{x - 2} = \\frac{1}{2}$. Finally, the retention half-life parameter $k$ governing customer retention over quarters satisfies the exponential relation $e^{2k} - 6e^k + 8 = 0$, while user growth feedback is modeled by the logarithmic equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ on the domain $y > 1$.",
+   "context": "A software company checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The linear marketing budget equation yields a unique equilibrium expenditure $m$ that is an odd integer strictly greater than 12 thousand euros.",
-    "Under the gross profit equation $\\Pi(p) = 42$, there exist two distinct positive price levels whose sum equals 14 hundred euros.",
-    "The rational server optimization equation has exactly two distinct real solutions in its algebraic formulation, but exactly one admissible solution within the operational domain $x > 2$.",
-    "The logarithmic feedback equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ possesses an extraneous negative algebraic root, yielding exactly one valid solution $y$ that is strictly less than 4.",
-    "The exponential retention equation $e^{2k} - 6e^k + 8 = 0$ admits two real values for $k$, and the sum of these two values is equal to $\\ln(8)$."
+    "The marketing budget $m$ (in thousands of euros) satisfies $4m - 18 = m + 27$. The unique solution is an odd integer greater than $12$.",
+    "The quarterly profit at price $p$ (in hundreds of euros) is $\\Pi(p) = -2p^2 + 28p - 48$. The equation $\\Pi(p) = 42$ has two different positive prices whose sum is $14$.",
+    "The server equation $\\frac{6}{x - 2} - \\frac{x + 1}{x - 2} = \\frac{1}{2}$ has two algebraic solutions, but only one of them lies in the domain $x > 2$.",
+    "The growth equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ has one extraneous negative root, so exactly one valid solution remains, and it is smaller than $4$.",
+    "The retention equation $e^{2k} - 6e^{k} + 8 = 0$ has two real solutions $k$, and their sum equals $\\ln(8)$."
    ],
    "answer_key": [
     true,
@@ -6469,13 +6469,13 @@
    "case_id": "MATH 4.203",
    "title": "Museum Group Ticketing and Capacity Equations",
    "subsection": "4.5",
-   "context": "The management of a metropolitan art museum deploys mathematical models to coordinate group admissions, corporate event pricing, queue throughput, and promotional adoption. For guided educational groups of size $x$, the museum compares a standard package with total cost $C_1(x) = 150 + 12x$ against an all-inclusive package with total cost $C_2(x) = 30 + 20x$. For corporate evening events of size $n$, the per-person ticket price is discounted to $p(n) = 140 - 2n$ with fixed setup costs of \\$600, yielding net revenue $N(n) = n(140 - 2n) - 600$. Operational throughput in the express queue satisfies the radical relation $\\sqrt{5y + 24} - y = 2$ for throughput index $y$. Digital reservation adoption follows the logarithmic relation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ across planning weeks $t$, while a per-visitor subsidy reallocation model is governed by the rational equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$.",
+   "context": "A museum checks five separate calculations. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "If an educational institution compares the cost structures of the standard and all-inclusive guided tour packages, the group size for which both packages have identical total cost is strictly greater than 16 attendees.",
-    "For the corporate evening event model to yield a target net revenue of \\$1400, there exist exactly two distinct feasible group sizes, and the sum of these two group sizes equals 70 attendees.",
-    "When solving the queue throughput radical equation $\\sqrt{5y + 24} - y = 2$, algebraic squaring produces two candidate real roots, but exactly one of these candidates is an extraneous solution that violates the original equation.",
-    "The logarithmic calibration equation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ possesses a unique positive real solution for the operational timeline parameter $t$.",
-    "The positive solution to the rational budget equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$ is strictly greater than the break-even group size obtained from the educational package cost parity equation."
+    "A guided group of $x$ people pays $C_1(x) = 150 + 12x$ for the standard package and $C_2(x) = 30 + 20x$ for the all-inclusive package. The group size at which both packages cost the same is greater than $16$.",
+    "An evening event with $n$ guests brings the net revenue $N(n) = n(140 - 2n) - 600$ in dollars. The target $N(n) = 1400$ is reached for exactly two group sizes, and their sum is $70$.",
+    "Squaring the queue equation $\\sqrt{5y + 24} - y = 2$ gives two candidates, but exactly one of them is extraneous.",
+    "The booking equation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ has exactly one positive solution $t$.",
+    "The positive solution of the subsidy equation $\\frac{120}{x} - \\frac{120}{x + 4} = 1$ is greater than the group size at which the two ticket packages cost the same."
    ],
    "answer_key": [
     false,
@@ -6597,13 +6597,13 @@
    "case_id": "MATH 4.207",
    "title": "Metropolitan Bus Network Planning",
    "subsection": "4.5",
-   "context": "A municipal transport authority manages a transit network divided into an inner core (Zone 1) and an outer belt (Zone 2). To evaluate pricing reforms, operational corridor speeds, fleet synchronization, maintenance limits, and digital adoption, the authority analyzes five operational equations across its system: (1) a monthly travel budget model where an upfront administrative fee of \\$12 is charged, single Zone 1 tickets cost \\$2.50, Zone 2 tickets cost \\$4.00, and a commuter who has a \\$120 budget takes twice as many Zone 1 trips as Zone 2 trips; (2) an express corridor speed model $v^2 - 45v - 900 = 0$, where $v > 0$ represents average operating speed in km/h; (3) a cross-zone transfer buffer model governed by the rational equation $\\frac{2t}{t-4} - \\frac{3}{t+2} = \\frac{36}{t^2-2t-8}$ for headway adjustment parameter $t$; (4) a maintenance tolerance model $|2s - 9| = s + 3$ for route mileage variance $s > 0$; and (5) a mobile ticketing adoption rate $P(m) = \\frac{1}{1 + 8e^{-0.25m}}$, where $m \\ge 0$ is the number of elapsed months.",
+   "context": "A city transport authority checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "Under the fare revenue balance model, the total number of monthly trips combining Zone 1 and Zone 2 that exhausts the commuter's budget is an odd integer strictly greater than 35.",
-    "The quadratic equation for the corridor speed admits exactly one physically meaningful real solution, and this operating speed exceeds 55 km/h.",
-    "The rational equation governing the buffer parameter $t$ possesses exactly two distinct real solutions in its algebraic domain, and the sum of these solutions is strictly negative.",
-    "The absolute value equation for the maintenance tolerance admits two positive solutions whose product is strictly less than 20.",
-    "To reach an adoption target of 80% ($P(m) = 0.80$), the required elapsed time expressed in exact logarithmic form is $m = 20\\ln(2)$ months, which corresponds to a duration of less than 14 months."
+    "A commuter pays a fee of \\$12 per month, \\$2.50 for a Zone 1 ticket and \\$4.00 for a Zone 2 ticket, makes twice as many Zone 1 trips as Zone 2 trips and spends exactly \\$120. The total number of trips is an odd integer greater than $35$.",
+    "The corridor speed $v > 0$ in km/h satisfies $v^{2} - 45v - 900 = 0$. The equation has exactly one physically meaningful solution, and this speed is above $55$ km/h.",
+    "The buffer equation $\\frac{2t}{t-4} - \\frac{3}{t+2} = \\frac{36}{t^2-2t-8}$ has exactly two solutions in its domain, and their sum is negative.",
+    "The tolerance equation $|2s - 9| = s + 3$ has two positive solutions, and their product is smaller than $20$.",
+    "Mobile ticket use after $m$ months is $P(m) = \\frac{1}{1 + 8e^{-0.25m}}$. The target $P(m) = 0.80$ is reached at $m = 20\\ln(2)$ months, which is less than $14$ months."
    ],
    "answer_key": [
     false,
@@ -6693,13 +6693,13 @@
    "case_id": "MATH 4.210",
    "title": "Fleet Leasing and Depreciation Models",
    "subsection": "4.5",
-   "context": "A commercial car dealership uses several mathematical models to structure corporate vehicle leases, calculate residual values, and set maintenance budgets. First, the market resale value of an electric sedan after $t$ years decays according to $S(t) = 40\\,000 \\cdot e^{-0.15 t}$, while a corporate client's buyout threshold is modeled by $B(t) = 10\\,000 \\cdot e^{0.05 t}$ (both in euros). Second, the annual servicing cost $M(n)$ (in thousands of euros) for a fleet of $n$ commercial delivery vans is given by $M(n) = n^2 - 18n + 120$, subject to an agreed annual budget cap of $40$ thousand euros ($M(n) = 40$). Third, an excess wear penalty index $x$ (in tens of thousands of kilometers) is governed by the radical equation $\\sqrt{3x + 16} - x = 2$. Fourth, the administrative overhead rate per contract $q$ (in hundreds of euros) must satisfy the rational equilibrium equation $\\frac{2q}{q - 2} - \\frac{q + 6}{q + 2} = \\frac{16}{q^2 - 4}$. Fifth, an end-of-year promotional rebate $y$ under a negotiated policy parameter $p$ satisfies the linear relation $(p - 5)y + 3 = 2y + p - 1$.",
+   "context": "A car dealership checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "The time $t$ at which the market resale value $S(t)$ equals the buyout threshold $B(t)$ is uniquely determined and equals an integer multiple of $\\ln(2)$.",
-    "The quadratic equation for the fleet size $n$ under the capped maintenance budget has two distinct real solutions whose sum is $18$ and whose product is $80$.",
-    "Squaring both sides of the wear-and-tear radical equation produces two real algebraic roots, both of which are valid solutions to the original equation.",
-    "The rational administrative overhead equation possesses exactly two distinct real solutions in its domain of definition.",
-    "If the discount parameter is set to $p = 7$, the promotional rebate linear equation possesses infinitely many solutions for $y$."
+    "After $t$ years the resale value is $S(t) = 40\\,000 e^{-0.15t}$ euros and the buyout threshold is $B(t) = 10\\,000 e^{0.05t}$ euros. The time at which $S(t) = B(t)$ is unique and equals an integer multiple of $\\ln(2)$.",
+    "The servicing cost of $n$ vans is $M(n) = n^{2} - 18n + 120$ in thousands of euros. The equation $M(n) = 40$ has two different real solutions whose sum is $18$ and whose product is $80$.",
+    "Squaring the wear equation $\\sqrt{3x + 16} - x = 2$ gives two algebraic roots, and both of them solve the original equation.",
+    "The overhead equation $\\frac{2q}{q - 2} - \\frac{q + 6}{q + 2} = \\frac{16}{q^2 - 4}$ has exactly two solutions in its domain.",
+    "The rebate $y$ under the policy parameter $p$ satisfies $(p - 5)y + 3 = 2y + p - 1$. For $p = 7$ this equation has infinitely many solutions."
    ],
    "answer_key": [
     true,
@@ -6725,13 +6725,13 @@
    "case_id": "MATH 4.211",
    "title": "Backhaus Wien Franchise Royalty and Performance Equations",
    "subsection": "4.5",
-   "context": "A Viennese artisanal bakery franchise, Backhaus Wien, evaluates its partner outlets using four distinct mathematical models covering contract royalties, performance bonuses, maintenance surcharges, and brand growth. Under the standard royalty contract, an outlet generating a monthly revenue of $x$ (in thousands of euros) pays a royalty of $R_1(x) = 0.06x + 3.6$, whereas a dynamic revenue-sharing agreement charges $R_2(x) = 0.10x + 1.2$. Monthly performance bonuses $B(q)$ (in hundreds of euros) depend on the volume $q$ of artisanal loaves baked (in thousands of units) via $B(q) = -q^2 + 14q - 40$. In addition, the technical maintenance surcharge depends on an efficiency rating $s \\ge 0$ satisfying $\\sqrt{3s + 16} - s = 2$, the store overhead coefficient $w$ satisfies $\\frac{w}{w-2} + \\frac{2}{w+2} = \\frac{8}{w^2-4}$, and long-term brand valuation after $t$ operating years follows the relation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$.",
+   "context": "A Viennese bakery franchise checks five separate models. Each claim below carries its own equation. Evaluate each statement. Mark it TRUE or FALSE.",
    "statements": [
-    "If the dynamic royalty contract introduces a promotional marketing discount of $k$ thousand euros such that $R_2(x) = 0.10x + 1.2 - k$, the breakeven monthly revenue at which both royalty schedules are equal increases by exactly $25$ thousand euros for every one-unit increase in $k$.",
-    "The monthly performance bonus $B(q)$ is strictly positive for all monthly production quantities between $3$ and $11$ thousand loaves.",
-    "Squaring both sides of the radical maintenance efficiency equation yields two real algebraic roots, but exactly one of these roots is an admissible solution because the other is extraneous.",
-    "The logarithmic brand valuation equation yields a unique operating duration $t$ in the natural domain of the logarithmic expressions, and this duration is strictly less than $3$ years.",
-    "The rational equation governing the store overhead coefficient $w$ possesses two distinct real solutions in its algebraic domain."
+    "An outlet with monthly revenue $x$ (in thousands of euros) pays $R_1(x) = 0.06x + 3.6$ under the standard contract and $R_2(x) = 0.10x + 1.2 - k$ under the dynamic contract with a discount $k$. The revenue at which both contracts charge the same amount rises by exactly $25$ thousand euros for every increase of $k$ by one unit.",
+    "The monthly bonus for $q$ thousand loaves is $B(q) = -q^{2} + 14q - 40$. This bonus is strictly positive for every production volume between $3$ and $11$ thousand loaves.",
+    "Squaring the maintenance equation $\\sqrt{3s + 16} - s = 2$ gives two algebraic roots, but exactly one of them is admissible.",
+    "The valuation equation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$ has exactly one solution in its domain, and this duration is shorter than $3$ years.",
+    "The overhead equation $\\frac{w}{w-2} + \\frac{2}{w+2} = \\frac{8}{w^2-4}$ has two different solutions in its algebraic domain."
    ],
    "answer_key": [
     true,
