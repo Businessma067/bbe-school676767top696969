@@ -375,7 +375,26 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
                   </tbody>
                 </table>
               </section>
-              <Prose text={solutionBody} subject={subject} />
+              <div className="space-y-7">
+                {solutionBlocks.map((b) => (
+                  <div key={b.letter}>
+                    <p className="mb-2 font-display text-sm font-bold text-foreground">
+                      {b.letter}. → {b.verdict}
+                    </p>
+                    {subject === "math" ? (
+                      <div className="space-y-3 text-[13px] leading-relaxed text-foreground/90">
+                        {b.body.split(/\n\n+/).map((p, k) => (
+                          <p key={k}>
+                            <FlashcardMath text={p} displayPrefer />
+                          </p>
+                        ))}
+                      </div>
+                    ) : (
+                      <Prose text={b.body} subject={subject} />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
