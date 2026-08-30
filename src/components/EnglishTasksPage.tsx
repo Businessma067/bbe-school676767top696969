@@ -1429,6 +1429,7 @@ function ReadingPanel({
 }) {
   const [reveal, setReveal] = useState(false);
   const highlightRef = useRef<HTMLSpanElement | null>(null);
+  const panelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setReveal(false);
@@ -1455,7 +1456,7 @@ function ReadingPanel({
   }
 
   return (
-    <div className="flex h-full flex-col gap-3">
+    <div ref={panelRef} className="flex h-full flex-col gap-3">
       <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
         <span className={practicePanelSectionLabelClass}>
           {explanation
@@ -1503,6 +1504,7 @@ function ReadingPanel({
             aiHighlight={explanation?.highlight ?? ""}
             reveal={reveal && !!explanation}
             aiHighlightRef={highlightRef}
+            pageScrollUntilVisibleRef={panelRef}
             className="h-full"
           />
         </div>

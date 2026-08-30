@@ -1,6 +1,22 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type RefObject } from "react";
 import { Highlighter, Underline, StickyNote, Trash2, X, Eraser } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+/** Matches `lg:top-20` on the Texts reading column. */
+const PRACTICE_STICKY_TOP_PX = 80;
+
+/** True once the reading box is fully on-screen (or pinned under the sticky top). */
+function isReadingBoxFullyVisible(box: HTMLElement): boolean {
+  const rect = box.getBoundingClientRect();
+  const vh = window.innerHeight;
+  const eps = 4;
+  const avail = vh - PRACTICE_STICKY_TOP_PX;
+  if (rect.height <= avail + eps) {
+    return rect.top >= PRACTICE_STICKY_TOP_PX - eps && rect.bottom <= vh + eps;
+  }
+  // Taller than the viewport: ready when pinned under the sticky offset.
+  return rect.top <= PRACTICE_STICKY_TOP_PX + eps;
+}
 
 export type Annotation = {
   id: string;
@@ -48,6 +64,11 @@ export function AnnotatablePassage({
   reveal = false,
   aiHighlightRef,
   className,
+  /**
+   * When set, wheel/trackpad over the passage first scrolls the page until this
+   * box is fully visible, then scrolls the passage text itself.
+   */
+  pageScrollUntilVisibleRef,
 }: {
   passage: string;
   storageKey: string;
@@ -55,6 +76,7 @@ export function AnnotatablePassage({
   reveal?: boolean;
   aiHighlightRef?: React.MutableRefObject<HTMLSpanElement | null>;
   className?: string;
+  pageScrollUntilVisibleRef?: RefObject<HTMLElement | null>;
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
@@ -64,12 +86,61 @@ export function AnnotatablePassage({
   const [noteDraft, setNoteDraft] = useState<{ target: Annotation; value: string } | null>(null);
   const [color, setColor] = useState<Annotation["color"]>("yellow");
   const [mode, setMode] = useState<"highlight" | "underline" | "note" | "erase" | null>(null);
-
+  const [innerScrollEnabled, setInnerScrollEnabled] = useState(!pageScrollUntilVisibleRef);
 
   useEffect(() => {
     setAnnotations(loadAnnotations(storageKey));
     setHydrated(true);
   }, [storageKey]);
+
+  // Page scroll first, then passage scroll once the reading box is fully visible.
+  useEffect(() => {
+    if (!pageScrollUntilVisibleRef) {
+      setInnerScrollEnabled(true);
+      return;
+    }
+
+    const update = () => {
+      const box = pageScrollUntilVisibleRef.current;
+      setInnerScrollEnabled(!box || isReadingBoxFullyVisible(box));
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true, capture: true });
+    window.addEventListener("resize", update);
+    const box = pageScrollUntilVisibleRef.current;
+    const ro = box ? new ResizeObserver(update) : null;
+    if (box) ro?.observe(box);
+    return () => {
+      window.removeEventListener("scroll", update, true);
+      window.removeEventListener("resize", update);
+      ro?.disconnect();
+    };
+  }, [pageScrollUntilVisibleRef]);
+
+  // Keep wheel on the page until the box is ready; at passage edges, chain back to the page.
+  useEffect(() => {
+    if (!pageScrollUntilVisibleRef) return;
+    const el = containerRef.current;
+    if (!el) return;
+
+    const onWheel = (e: WheelEvent) => {
+      if (!innerScrollEnabled) {
+        e.preventDefault();
+        window.scrollBy({ top: e.deltaY });
+        return;
+      }
+      const atTop = el.scrollTop <= 0;
+      const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
+      if ((e.deltaY < 0 && atTop) || (e.deltaY > 0 && atBottom)) {
+        e.preventDefault();
+        window.scrollBy({ top: e.deltaY });
+      }
+    };
+
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, [innerScrollEnabled, pageScrollUntilVisibleRef]);
 
   useEffect(() => {
     if (!hydrated || typeof window === "undefined") return;
@@ -277,7 +348,10 @@ export function AnnotatablePassage({
 
       <div
         ref={containerRef}
-        className="practice-scroll relative min-h-0 flex-1 overflow-y-auto overscroll-contain"
+        className={cn(
+          "practice-scroll relative min-h-0 flex-1",
+          innerScrollEnabled ? "overflow-y-auto overscroll-contain" : "overflow-hidden",
+        )}
         onMouseUp={onMouseUp}
       >
         {paragraphs.map((p) => (
