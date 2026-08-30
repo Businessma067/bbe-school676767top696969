@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
 import PracticeSimulator from "@/components/PracticeSimulator";
+import MockBuilderSimulator from "@/components/MockBuilderSimulator";
 
 export const Route = createFileRoute("/")({
   component: Index,
