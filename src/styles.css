@@ -190,6 +190,24 @@
   transform-origin: center;
 }
 
+/* Soft blue AI highlight for English reading passages (solid, not gold sweep). */
+@keyframes passage-ai-fade {
+  0% { background-color: transparent; border-color: transparent; }
+  100% { background-color: #dbeafe; border-color: #93c5fd; }
+}
+.passage-ai-highlight {
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+  border-radius: 3px;
+  padding: 0 2px;
+  color: inherit;
+  animation: passage-ai-fade 0.45s ease-out forwards;
+}
+.passage-ai-highlight.done {
+  background-color: #dbeafe;
+  border-color: #93c5fd;
+}
+
 /* Neon highlighter sweep for the AI textbook canvas. */
 @keyframes neon-sweep {
   0% { background-size: 0% 100%; }

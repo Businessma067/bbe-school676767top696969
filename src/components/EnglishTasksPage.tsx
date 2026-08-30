@@ -1,10 +1,10 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AnnotatablePassage } from "@/components/AnnotatablePassage";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExplanationProse } from "@/components/ExplanationProse";
-import { PracticeCalcProvider } from "@/components/calculator/PracticeCalcContext";
+import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -736,14 +736,10 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
           </main>
 
-          <PracticeRightSlot
-            className={
-              isTextsCase
-                ? "lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]"
-                : undefined
-            }
-          >
-            {isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
+          {isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
+            <PracticeRightSlot
+              className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]"
+            >
               <div className="practice-scroll flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
                 <CaseCard
                   key={activeCase.id}
@@ -810,23 +806,25 @@ export function EnglishTasksPage({ tier }: Props) {
                   </button>
                 </div>
               </div>
-            ) : showExplanations && activeCase && !isLocked(tier, activeIdx) ? (
-              <AllExplanationsPanel
-                task={activeCase}
-                index={activeIdx}
-                isTexts={false}
-                activeExplanationIndex={null}
-                onRequestShowInText={() => {}}
-                onClose={() => setShowExplanations(false)}
-              />
-            ) : (
-              <div className="flex h-full items-center justify-center rounded-2xl border border-dashed border-border bg-card p-6 text-center text-xs text-muted-foreground">
-                Submit answers to open the{" "}
-                <span className="mx-1 font-semibold text-foreground">Full solution</span>
-                with the answer key and a walkthrough of every statement.
-              </div>
-            )}
-          </PracticeRightSlot>
+            </PracticeRightSlot>
+          ) : (
+            <EnglishPracticeAside
+              showExplanations={
+                showExplanations && !!activeCase && !isLocked(tier, activeIdx)
+              }
+            >
+              {showExplanations && activeCase && !isLocked(tier, activeIdx) ? (
+                <AllExplanationsPanel
+                  task={activeCase}
+                  index={activeIdx}
+                  isTexts={false}
+                  activeExplanationIndex={null}
+                  onRequestShowInText={() => {}}
+                  onClose={() => setShowExplanations(false)}
+                />
+              ) : null}
+            </EnglishPracticeAside>
+          )}
         </div>
       </div>
 
@@ -834,6 +832,22 @@ export function EnglishTasksPage({ tier }: Props) {
         <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
       )}
     </PracticeCalcProvider>
+  );
+}
+
+function EnglishPracticeAside({
+  showExplanations,
+  children,
+}: {
+  showExplanations: boolean;
+  children: ReactNode;
+}) {
+  const calc = usePracticeCalcOptional();
+  if (!showExplanations && !calc?.open) return null;
+  return (
+    <PracticeRightSlot className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+      {children}
+    </PracticeRightSlot>
   );
 }
 
@@ -1010,24 +1024,16 @@ function CaseCard({
   };
 
   const letters = "ABCDEF";
-  const explanationBody = [
-    data.solution_overview?.trim() ?? "",
-    "",
-    ...data.statements.flatMap((_, i) => {
-      const letter = letters[i] ?? String(i + 1);
-      const verdict = data.answer_key[i] ? "True" : "False";
-      let expl = (data.tactical_explanations[i] ?? "").trim();
-      if (expl) {
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
-        expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
-        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
-      }
-      return [`**${letter}.** → ${verdict}\n\n${data.statements[i]}`, ""];
-    }),
-  ]
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
+
+  const statementExpl = (i: number) => {
+    let expl = (data.tactical_explanations[i] ?? "").trim();
+    if (expl) {
+      expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+      expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
+      return expl;
+    }
+    return data.statements[i] ?? "";
+  };
 
   return (
     <article className="practice-panel-enter rounded-2xl border border-border bg-card p-5 shadow-sm sm:p-6">
@@ -1176,22 +1182,43 @@ function CaseCard({
             Full solution · Task {index + 1}
           </p>
           <AnswerKeyTable answerKey={data.answer_key} />
-          {onRequestExplanation && (
-            <div className="mb-6 flex flex-wrap gap-2">
-              {data.statements.map((_, i) => (
-                <button
-                  key={i}
-                  type="button"
-                  onClick={() => onRequestExplanation(i)}
-                  className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
-                >
-                  {letters[i] ?? i + 1}
-                  {activeExplanationIndex === i ? " · located" : " · locate"}
-                </button>
-              ))}
+          {data.solution_overview?.trim() && (
+            <div className="mb-8 border-b border-border/60 pb-6">
+              <ExplanationProse text={data.solution_overview} />
             </div>
           )}
-          <ExplanationProse text={explanationBody} />
+          <div className="space-y-8">
+            {data.statements.map((_, i) => {
+              const letter = letters[i] ?? String(i + 1);
+              return (
+                <section
+                  key={i}
+                  className="border-b border-border/60 pb-6 last:border-b-0 last:pb-0"
+                >
+                  <div className="mb-3 flex flex-wrap items-center gap-2">
+                    <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                      {letter}
+                    </span>
+                    <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+                      {data.answer_key[i] ? "TRUE" : "FALSE"}
+                    </span>
+                    {onRequestExplanation && (
+                      <button
+                        type="button"
+                        onClick={() => onRequestExplanation(i)}
+                        className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
+                      >
+                        {activeExplanationIndex === i
+                          ? "Located in text"
+                          : "Show solution in the text"}
+                      </button>
+                    )}
+                  </div>
+                  <ExplanationProse text={statementExpl(i)} />
+                </section>
+              );
+            })}
+          </div>
         </div>
       )}
     </article>
@@ -1215,24 +1242,16 @@ function AllExplanationsPanel({
   onClose: () => void;
 }) {
   const letters = "ABCDEF";
-  const body = [
-    task.solution_overview?.trim() ?? "",
-    "",
-    ...task.statements.flatMap((_, i) => {
-      const letter = letters[i] ?? String(i + 1);
-      const verdict = task.answer_key[i] ? "True" : "False";
-      let expl = (task.tactical_explanations[i] ?? "").trim();
-      if (expl) {
-        expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
-        expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
-        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
-      }
-      return [`**${letter}.** → ${verdict}\n\n${task.statements[i]}`, ""];
-    }),
-  ]
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
+
+  const statementExpl = (i: number) => {
+    let expl = (task.tactical_explanations[i] ?? "").trim();
+    if (expl) {
+      expl = expl.replace(/^\*\*[A-F]\.\*\*\s*→\s*(?:True|False)\s*/i, "").trim();
+      expl = expl.replace(/^\*\*[A-E]\)[\s\S]*?\*\*\s*/i, "").trim();
+      return expl;
+    }
+    return task.statements[i] ?? "";
+  };
 
   return (
     <div
@@ -1256,22 +1275,43 @@ function AllExplanationsPanel({
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <AnswerKeyTable answerKey={task.answer_key} />
-        {isTexts && (
-          <div className="mb-6 flex flex-wrap gap-2">
-            {task.statements.map((_, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => onRequestShowInText(i)}
-                className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
-              >
-                {letters[i] ?? i + 1}
-                {activeExplanationIndex === i ? " · located" : " · locate"}
-              </button>
-            ))}
+        {task.solution_overview?.trim() && (
+          <div className="mb-8 border-b border-border/60 pb-6">
+            <ExplanationProse text={task.solution_overview} />
           </div>
         )}
-        <ExplanationProse text={body} />
+        <div className="space-y-8">
+          {task.statements.map((_, i) => {
+            const letter = letters[i] ?? String(i + 1);
+            return (
+              <section
+                key={i}
+                className="border-b border-border/60 pb-6 last:border-b-0 last:pb-0"
+              >
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                    {letter}
+                  </span>
+                  <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+                    {task.answer_key[i] ? "TRUE" : "FALSE"}
+                  </span>
+                  {isTexts && (
+                    <button
+                      type="button"
+                      onClick={() => onRequestShowInText(i)}
+                      className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
+                    >
+                      {activeExplanationIndex === i
+                        ? "Located in text"
+                        : "Show solution in the text"}
+                    </button>
+                  )}
+                </div>
+                <ExplanationProse text={statementExpl(i)} />
+              </section>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -1389,19 +1429,20 @@ function ReadingPanel({
         </div>
       )}
 
-      <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
-        <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
+        <div className="flex shrink-0 items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
           <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
             Reading Text
           </span>
         </div>
-        <div className="practice-scroll h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
+        <div className="min-h-0 flex-1 overflow-hidden px-5 pb-4 pt-3 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
           <AnnotatablePassage
             passage={passage}
             storageKey={storageKey}
             aiHighlight={explanation?.highlight ?? ""}
             reveal={reveal && !!explanation}
             aiHighlightRef={highlightRef}
+            className="h-full"
           />
         </div>
       </div>
@@ -1505,7 +1546,7 @@ function SentenceWithHighlight({
     <>
       {before}
       <span
-        className={reveal ? "neon-highlight" : undefined}
+        className={reveal ? "passage-ai-highlight" : undefined}
         style={reveal ? undefined : { padding: "0 2px" }}
       >
         {match}

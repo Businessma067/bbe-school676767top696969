@@ -38,6 +38,8 @@ type Segment = { start: number; end: number; text: string; anns: Annotation[]; a
  * Reading passage with a text-annotation layer: select text to highlight,
  * underline, or attach a hover note. Annotations persist per passage in
  * localStorage. The AI highlight overlay is rendered on top of it.
+ *
+ * Toolbar stays fixed above the scrollable text so it does not cover content.
  */
 export function AnnotatablePassage({
   passage,
@@ -227,13 +229,14 @@ export function AnnotatablePassage({
   ];
 
   return (
-    <div ref={containerRef} className={cn("relative", className)} onMouseUp={onMouseUp}>
-      {/* Persistent tool bar — pick a tool first, then select text */}
-      <div className="sticky top-0 z-20 -mx-1 mb-3 flex flex-wrap items-center gap-1.5 rounded-xl border border-border bg-card/95 px-2 py-1.5 font-sans shadow-sm backdrop-blur">
+    <div className={cn("flex min-h-0 flex-col", className)}>
+      {/* Fixed above the scrollable passage — does not move with the text */}
+      <div className="z-20 mb-3 flex shrink-0 flex-wrap items-center gap-1.5 rounded-xl border border-border bg-card px-2 py-1.5 font-sans shadow-sm">
         <div className="flex items-center gap-1">
           {COLORS.map((c) => (
             <button
               key={c.key}
+              type="button"
               onClick={() => setColor(c.key)}
               aria-label={c.label}
               className={cn(
@@ -251,6 +254,7 @@ export function AnnotatablePassage({
           return (
             <button
               key={t.key}
+              type="button"
               onClick={() => setMode(on ? null : t.key)}
               aria-pressed={on}
               className={cn(
@@ -271,170 +275,185 @@ export function AnnotatablePassage({
         </span>
       </div>
 
-      {paragraphs.map((p) => (
-        <p key={p.start} className="mb-3 whitespace-pre-line">
-          {segmentsFor(p.start, p.text).map((seg) => {
-            const hl = seg.anns.find((a) => a.type === "highlight");
-            const ul = seg.anns.find((a) => a.type === "underline");
-            const noted = seg.anns.find((a) => a.note);
-            const style: React.CSSProperties = {};
-            if (hl) style.backgroundColor = colorOf(hl.color).bg;
-            if (ul) {
-              style.textDecoration = "underline";
-              style.textDecorationColor = colorOf(ul.color).line;
-              style.textDecorationThickness = "2px";
-              style.textUnderlineOffset = "3px";
-            }
-            if (noted) style.borderBottom = `2px dotted ${colorOf(noted.color).line}`;
-            const primary = noted ?? hl ?? ul;
-            const isAi = seg.ai && reveal;
-            const content = (
-              <span
-                data-start={seg.start}
-                className={cn(
-                  isAi && "neon-highlight",
-                  primary && "cursor-pointer rounded-[2px]",
-                )}
-                style={{ ...style, ...(seg.ai && !reveal ? { padding: "0 2px" } : {}) }}
-                ref={seg.ai && aiHighlightRef && seg.start === aiRange?.start ? aiHighlightRef : undefined}
-                onClick={(e) => {
-                  if (!primary) return;
-                  const root = containerRef.current;
-                  if (!root) return;
-                  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-                  const rootRect = root.getBoundingClientRect();
-                  setSelection(null);
-                  setActiveAnn({
-                    ann: primary,
-                    x: rect.left - rootRect.left + rect.width / 2 + root.scrollLeft,
-                    y: rect.top - rootRect.top + root.scrollTop,
-                  });
-                }}
-                title={primary?.note || undefined}
-              >
-                {seg.text}
-              </span>
-            );
-            return <span key={seg.start}>{content}</span>;
-          })}
-        </p>
-      ))}
+      <div
+        ref={containerRef}
+        className="practice-scroll relative min-h-0 flex-1 overflow-y-auto overscroll-contain"
+        onMouseUp={onMouseUp}
+      >
+        {paragraphs.map((p) => (
+          <p key={p.start} className="mb-3 whitespace-pre-line">
+            {segmentsFor(p.start, p.text).map((seg) => {
+              const hl = seg.anns.find((a) => a.type === "highlight");
+              const ul = seg.anns.find((a) => a.type === "underline");
+              const noted = seg.anns.find((a) => a.note);
+              const style: React.CSSProperties = {};
+              if (hl) style.backgroundColor = colorOf(hl.color).bg;
+              if (ul) {
+                style.textDecoration = "underline";
+                style.textDecorationColor = colorOf(ul.color).line;
+                style.textDecorationThickness = "2px";
+                style.textUnderlineOffset = "3px";
+              }
+              if (noted) style.borderBottom = `2px dotted ${colorOf(noted.color).line}`;
+              const primary = noted ?? hl ?? ul;
+              const isAi = seg.ai && reveal;
+              const content = (
+                <span
+                  data-start={seg.start}
+                  className={cn(
+                    isAi && "passage-ai-highlight",
+                    primary && "cursor-pointer rounded-[2px]",
+                  )}
+                  style={{ ...style, ...(seg.ai && !reveal ? { padding: "0 2px" } : {}) }}
+                  ref={seg.ai && aiHighlightRef && seg.start === aiRange?.start ? aiHighlightRef : undefined}
+                  onClick={(e) => {
+                    if (!primary) return;
+                    const root = containerRef.current;
+                    if (!root) return;
+                    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+                    const rootRect = root.getBoundingClientRect();
+                    setSelection(null);
+                    setActiveAnn({
+                      ann: primary,
+                      x: rect.left - rootRect.left + rect.width / 2 + root.scrollLeft,
+                      y: rect.top - rootRect.top + root.scrollTop,
+                    });
+                  }}
+                  title={primary?.note || undefined}
+                >
+                  {seg.text}
+                </span>
+              );
+              return <span key={seg.start}>{content}</span>;
+            })}
+          </p>
+        ))}
 
-      {/* Selection toolbar */}
-      {selection && (
-        <div
-          className="absolute z-30 -translate-x-1/2 -translate-y-full rounded-xl border border-border bg-card p-1.5 shadow-lg"
-          style={{ left: selection.x, top: Math.max(selection.y - 6, 0) }}
-          onMouseUp={(e) => e.stopPropagation()}
-        >
-          <div className="flex items-center gap-1">
-            {COLORS.map((c) => (
+        {/* Selection toolbar */}
+        {selection && (
+          <div
+            className="absolute z-30 -translate-x-1/2 -translate-y-full rounded-xl border border-border bg-card p-1.5 shadow-lg"
+            style={{ left: selection.x, top: Math.max(selection.y - 6, 0) }}
+            onMouseUp={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center gap-1">
+              {COLORS.map((c) => (
+                <button
+                  key={c.key}
+                  type="button"
+                  onClick={() => setColor(c.key)}
+                  aria-label={c.label}
+                  className={cn(
+                    "h-4 w-4 rounded-full border transition",
+                    color === c.key ? "ring-2 ring-foreground ring-offset-1" : "border-border",
+                  )}
+                  style={{ backgroundColor: c.swatch }}
+                />
+              ))}
+              <span className="mx-1 h-5 w-px bg-border" />
               <button
-                key={c.key}
-                onClick={() => setColor(c.key)}
-                aria-label={c.label}
-                className={cn(
-                  "h-4 w-4 rounded-full border transition",
-                  color === c.key ? "ring-2 ring-foreground ring-offset-1" : "border-border",
-                )}
-                style={{ backgroundColor: c.swatch }}
-              />
-            ))}
-            <span className="mx-1 h-5 w-px bg-border" />
-            <button
-              onClick={() => addAnnotation("highlight")}
-              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
-            >
-              <Highlighter className="h-3.5 w-3.5" /> Highlight
-            </button>
-            <button
-              onClick={() => addAnnotation("underline")}
-              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
-            >
-              <Underline className="h-3.5 w-3.5" /> Underline
-            </button>
-            <button
-              onClick={startNote}
-              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
-            >
-              <StickyNote className="h-3.5 w-3.5" /> Note
-            </button>
+                type="button"
+                onClick={() => addAnnotation("highlight")}
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+              >
+                <Highlighter className="h-3.5 w-3.5" /> Highlight
+              </button>
+              <button
+                type="button"
+                onClick={() => addAnnotation("underline")}
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+              >
+                <Underline className="h-3.5 w-3.5" /> Underline
+              </button>
+              <button
+                type="button"
+                onClick={startNote}
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+              >
+                <StickyNote className="h-3.5 w-3.5" /> Note
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Existing annotation actions */}
-      {activeAnn && !noteDraft && (
-        <div
-          className="absolute z-30 w-56 -translate-x-1/2 -translate-y-full rounded-xl border border-border bg-card p-2 shadow-lg"
-          style={{ left: activeAnn.x, top: Math.max(activeAnn.y - 6, 0) }}
-          onMouseUp={(e) => e.stopPropagation()}
-        >
-          {activeAnn.ann.note ? (
-            <p className="mb-2 whitespace-pre-line rounded-md bg-secondary/70 p-2 text-[11px] leading-relaxed text-foreground">
-              {activeAnn.ann.note}
-            </p>
-          ) : null}
-          <div className="flex items-center justify-between gap-1">
-            <button
-              onClick={() => setNoteDraft({ target: activeAnn.ann, value: activeAnn.ann.note ?? "" })}
-              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
-            >
-              <StickyNote className="h-3.5 w-3.5" /> {activeAnn.ann.note ? "Edit" : "Add note"}
-            </button>
-            <button
-              onClick={() => removeAnnotation(activeAnn.ann.id)}
-              className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-destructive hover:bg-destructive/10"
-            >
-              <Trash2 className="h-3.5 w-3.5" /> Remove
-            </button>
-            <button
-              onClick={() => setActiveAnn(null)}
-              aria-label="Close"
-              className="rounded-md p-1 text-muted-foreground hover:bg-secondary"
-            >
-              <X className="h-3.5 w-3.5" />
-            </button>
+        {/* Existing annotation actions */}
+        {activeAnn && !noteDraft && (
+          <div
+            className="absolute z-30 w-56 -translate-x-1/2 -translate-y-full rounded-xl border border-border bg-card p-2 shadow-lg"
+            style={{ left: activeAnn.x, top: Math.max(activeAnn.y - 6, 0) }}
+            onMouseUp={(e) => e.stopPropagation()}
+          >
+            {activeAnn.ann.note ? (
+              <p className="mb-2 whitespace-pre-line rounded-md bg-secondary/70 p-2 text-[11px] leading-relaxed text-foreground">
+                {activeAnn.ann.note}
+              </p>
+            ) : null}
+            <div className="flex items-center justify-between gap-1">
+              <button
+                type="button"
+                onClick={() => setNoteDraft({ target: activeAnn.ann, value: activeAnn.ann.note ?? "" })}
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+              >
+                <StickyNote className="h-3.5 w-3.5" /> {activeAnn.ann.note ? "Edit" : "Add note"}
+              </button>
+              <button
+                type="button"
+                onClick={() => removeAnnotation(activeAnn.ann.id)}
+                className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold text-destructive hover:bg-destructive/10"
+              >
+                <Trash2 className="h-3.5 w-3.5" /> Remove
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveAnn(null)}
+                aria-label="Close"
+                className="rounded-md p-1 text-muted-foreground hover:bg-secondary"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {/* Note editor */}
-      {noteDraft && (
-        <div
-          className="absolute z-40 w-64 -translate-x-1/2 rounded-xl border border-border bg-card p-2 shadow-xl"
-          style={{
-            left: activeAnn?.x ?? selection?.x ?? 120,
-            top: (activeAnn?.y ?? selection?.y ?? 0) + 22,
-          }}
-          onMouseUp={(e) => e.stopPropagation()}
-        >
-          <textarea
-            autoFocus
-            value={noteDraft.value}
-            onChange={(e) => setNoteDraft({ ...noteDraft, value: e.target.value })}
-            placeholder="Your note…"
-            className="h-20 w-full resize-none rounded-md border border-border bg-background p-2 font-sans text-[11px] text-foreground outline-none focus:border-primary"
-          />
-          <div className="mt-1.5 flex items-center justify-end gap-1.5">
-            <button
-              onClick={() => {
-                if (!noteDraft.target.note) removeAnnotation(noteDraft.target.id);
-                setNoteDraft(null);
-              }}
-              className="rounded-md px-2 py-1 text-[11px] font-semibold text-muted-foreground hover:bg-secondary"
-            >
-              Cancel
-            </button>
-            <button
-              onClick={saveNote}
-              className="rounded-md bg-primary px-2.5 py-1 text-[11px] font-semibold text-primary-foreground hover:bg-primary/90"
-            >
-              Save
-            </button>
+        {/* Note editor */}
+        {noteDraft && (
+          <div
+            className="absolute z-40 w-64 -translate-x-1/2 rounded-xl border border-border bg-card p-2 shadow-xl"
+            style={{
+              left: activeAnn?.x ?? selection?.x ?? 120,
+              top: (activeAnn?.y ?? selection?.y ?? 0) + 22,
+            }}
+            onMouseUp={(e) => e.stopPropagation()}
+          >
+            <textarea
+              autoFocus
+              value={noteDraft.value}
+              onChange={(e) => setNoteDraft({ ...noteDraft, value: e.target.value })}
+              placeholder="Your note…"
+              className="h-20 w-full resize-none rounded-md border border-border bg-background p-2 font-sans text-[11px] text-foreground outline-none focus:border-primary"
+            />
+            <div className="mt-1.5 flex items-center justify-end gap-1.5">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!noteDraft.target.note) removeAnnotation(noteDraft.target.id);
+                  setNoteDraft(null);
+                }}
+                className="rounded-md px-2 py-1 text-[11px] font-semibold text-muted-foreground hover:bg-secondary"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={saveNote}
+                className="rounded-md bg-primary px-2.5 py-1 text-[11px] font-semibold text-primary-foreground hover:bg-primary/90"
+              >
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
@@ -444,7 +463,7 @@ export function AnnotationsToolbarInfo({ onClear, count }: { onClear: () => void
     <div className="flex items-center gap-2 text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
       <span>{count} notes</span>
       {count > 0 && (
-        <button onClick={onClear} className="rounded px-1 py-0.5 text-destructive hover:bg-destructive/10">
+        <button type="button" onClick={onClear} className="rounded px-1 py-0.5 text-destructive hover:bg-destructive/10">
           Clear
         </button>
       )}
