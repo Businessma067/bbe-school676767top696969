@@ -116,7 +116,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 170;
+    const MOVE = 220;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
