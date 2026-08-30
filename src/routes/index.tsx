@@ -199,13 +199,7 @@ function Index() {
             })}
           </div>
           <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
-            {demoSubject === "economics" ? (
-              <FiveStatementSimulator />
-            ) : demoSubject === "math" ? (
-              <MathParabolaSimulator />
-            ) : (
-              <EnglishReadingSimulator />
-            )}
+            <PracticeSimulator key={demoSubject} subject={demoSubject} />
           </div>
         </section>
 
