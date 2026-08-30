@@ -2542,7 +2542,7 @@ Now test the required conclusion:
 
 $$7\\not>10$$
 
-This witness makes $Q$ true and $P$ false, so $Q\\Rightarrow P$ fails and the statement is False.`,
+This witness makes $Q$ true and $P$ false. The implication $Q\\Rightarrow P$ fails, so the statement is False.`,
       `**C.** → True
 
 "$Q$ is necessary for $P$" is the same recovered arrow $P\\Rightarrow Q$ read from the other end: $x>10$ cannot hold unless $x>5$ also holds. The necessary condition is the one the arrow points at, so the statement is True.`,
@@ -2556,7 +2556,7 @@ The overview recovered $P\\Rightarrow Q$. For the reverse direction, use $x=7$:
 
 $$7>5,\\qquad 7\\not>10$$
 
-Thus $Q\\Rightarrow P$ fails, so the two conditions are not equivalent and the statement is False.`,
+Thus $Q\\Rightarrow P$ fails. The two conditions are not equivalent, so the statement is False.`,
       `**E.** → True
 
 A counterexample to $Q\\Rightarrow P$ must satisfy $Q\\land\\neg P$. For $x=7$,
@@ -2567,7 +2567,7 @@ but
 
 $$7\\not>10$$
 
-The named value makes the hypothesis true and the conclusion false, so it is a counterexample and the statement is True.`,
+The named value makes the hypothesis true and the conclusion false. It is a counterexample, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -2933,7 +2933,7 @@ The original rule is still true on that day because its hypothesis is false:
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-The two implications have different truth values there, so the converse is not guaranteed and the statement is False.`,
+The two implications have different truth values there. The converse is not guaranteed, so the statement is False.`,
       `**C.** → False
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ fails on a dry day when the picnic is cancelled for another reason. For the venue-conflict day,
@@ -2944,7 +2944,7 @@ The original remains true:
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-Since one situation separates their truth values, the inverse is not equivalent to the original and the statement is False.`,
+One situation separates their truth values. The inverse is not equivalent to the original, so the statement is False.`,
       `**D.** → True
 
 An implication is false only when its hypothesis is true and its conclusion is false. On the venue-conflict day, $P$ is false and $Q$ is true, so
@@ -3127,7 +3127,7 @@ The actual filter gives
 
 $$\\neg(S\\lor O)=\\neg(\\mathrm{T}\\lor\\mathrm{F})=\\mathrm{F}$$
 
-The formulas disagree on M, so they are not equivalent and the statement is False.`,
+The formulas disagree on M. They are not equivalent, so the statement is False.`,
       `**D.** → True
 
 The overview recovered $\\neg(S\\lor O)\\equiv\\neg S\\land\\neg O$. In English that is "not on sale and not out of stock," i.e. neither on sale nor out of stock. The claim is that rewrite, so the statement is True.`,
@@ -3213,7 +3213,7 @@ Biconditional agreement is transitive: matching through the same middle truth va
 
 $$(P\\Leftrightarrow Q)\\land(Q\\Leftrightarrow R)\\Rightarrow(P\\Leftrightarrow R)$$
 
-The premises provide both links, so the first and third propositions must have the same truth value and the statement is True.`,
+The premises provide both links. The first and third propositions must have the same truth value, so the statement is True.`,
       `**D.** → True
 
 Biconditionals force equal truth values in either direction. If $R$ were false, the second link gives
@@ -3868,7 +3868,7 @@ Argument types are determined by form, not subject matter. The rain argument has
 
 $$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
 
-The marketing memo has exactly the same form. Both infer the antecedent from the consequent, so both affirm the consequent and the statement is True.`,
+The marketing memo has exactly the same form. Both infer the antecedent from the consequent and affirm it, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -4480,7 +4480,7 @@ R1 is one of the two yes-votes, so both parts of gate 2 are true:
 
 $$\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 
-At least one gate is true, so the candidate is approved and the statement is True.`,
+At least one gate is true. The candidate is approved, so the statement is True.`,
       `**B.** → False
 
 Approval requires at least one gate to be true. With only R2 and R3 voting yes, gate 1 gives
@@ -4491,7 +4491,7 @@ R1 is not among the two yes-votes, so the second part of gate 2 is false:
 
 $$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-Both gates are false, so the candidate is not approved and the statement is False.`,
+Both gates are false. The candidate is not approved, so the statement is False.`,
       `**C.** → True
 
 Gate 1 depends only on the number of yes-votes. With any three reviewers voting yes,
@@ -4502,7 +4502,7 @@ and
 
 $$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
 
-Gate 1 opens without consulting the reviewers' names, so the candidate is approved and the statement is True.`,
+Gate 1 opens without consulting the reviewers' names. The candidate is approved, so the statement is True.`,
       `**D.** → False
 
 A necessary condition is disproved by one approved case in which it is absent. Let R2, R3, and R4 vote yes while R1 votes no:
@@ -4513,7 +4513,7 @@ Gate 1 still opens:
 
 $$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
 
-This is an approval without R1's yes-vote, so R1 is not always necessary and the statement is False.`,
+This is an approval without R1's yes-vote. R1 is not always necessary, so the statement is False.`,
       `**E.** → True
 
 An existential claim needs one two-vote scenario in which both approval gates fail. Let only R2 and R3 vote yes:
@@ -4572,7 +4572,7 @@ Therefore
 
 $$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-The exception stays closed despite approval, so approval alone is not sufficient and the statement is False.`,
+The exception stays closed despite approval. Approval alone is not sufficient, so the statement is False.`,
       `**C.** → True
 
 The exception is a conjunction, so each condition is necessary. Approval without servicing gives
@@ -4590,7 +4590,7 @@ The exception requires both written approval and servicing. If approval is absen
 
 $$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The exception remains closed, so commercial use still voids the warranty and the statement is False.`,
+The exception remains closed, and commercial use still voids the warranty, so the statement is False.`,
       `**E.** → False
 
 Annual servicing sits inside the exception to the commercial-use clause. If Z never used the product commercially, $C$ is false and that clause never fires. Nothing in the quoted warranty then asks for annual servicing, so the statement is False.`,
@@ -4705,7 +4705,7 @@ The given argument instead instantiates one economist-game-theorist and applies 
 
 $$E(a)\\land G(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad G(a)\\land H(a)$$
 
-No consequent is used to recover an antecedent, so this is not affirming the consequent and the statement is False.`,
+No consequent is used to recover an antecedent. This is not affirming the consequent, so the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -4881,7 +4881,7 @@ so they would share the prime factor $2$:
 
 $$\\mathrm{gcd}(m,n)\\ge2$$
 
-This contradicts $\\mathrm{gcd}(m,n)=1$, so a coprime pair cannot contain two even numbers and the statement is True.`,
+This contradicts $\\mathrm{gcd}(m,n)=1$. A coprime pair cannot contain two even numbers, so the statement is True.`,
       `**E.** → False
 
 Coprime means no shared prime factor, not that at least one of $m$ or $n$ is prime. Pair 1 is a counterexample: $15 = 3 \\times 5$ and $28 = 2^{2} \\times 7$ are both composite, yet $\\mathrm{gcd}(15,28)=1$, so the statement is False.`,
