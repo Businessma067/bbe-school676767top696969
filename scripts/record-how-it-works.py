@@ -132,20 +132,23 @@ async def answer_statements(page, indices):
 
 
 async def open_task(page, chapter_text, task_text=None):
-    """Click the chapter (and optionally a task) until the task panel renders."""
+    """Opens a chapter (and task) and waits until the task panel renders."""
+    import re as _re
+
     submit = page.locator("button").filter(has_text="Check Answers").first
-    for attempt in range(6):
+    task = (
+        page.locator("button").filter(has_text=_re.compile(rf"^{task_text}$")).first
+        if task_text
+        else None
+    )
+    chapter = page.locator("button").filter(has_text=chapter_text).first
+    for _ in range(6):
         if await submit.count() and await submit.is_visible():
             break
-        await maybe(page, page.locator("button").filter(has_text=chapter_text).first, 900)
-        if task_text:
-            import re as _re
-
-            await maybe(
-                page,
-                page.locator("button").filter(has_text=_re.compile(rf"^{task_text}$")).first,
-                900,
-            )
+        if task is not None and await task.count() and await task.is_visible():
+            await soft_click(page, task, 1000)
+        elif await chapter.count() and await chapter.is_visible():
+            await soft_click(page, chapter, 1000)
         await page.wait_for_timeout(900)
     await wait_task(page)
 
