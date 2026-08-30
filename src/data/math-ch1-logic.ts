@@ -6198,7 +6198,7 @@ An islander's type must match the truth value of the sentence spoken. K therefor
 
 The claim says L is a truth-teller. The shared forcing has J as a liar and K as a truth-teller. Try making L a liar as well:
 
-$$J=\\text{false},\qquad K=\\text{true},\qquad L=\\text{false}$$
+$$J=\\text{false},\\qquad K=\\text{true},\\qquad L=\\text{false}$$
 
 Then K would be the only truth-teller. That makes J's sentence, "Exactly one of us is a truth-teller," true. But J is already forced to be a liar, so this case is impossible.
 
@@ -6207,7 +6207,7 @@ The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "
 
 The claim requires the final assignment to contain exactly one truth-teller. J is forced to be a liar, and K's true accusation then forces K to be a truth-teller. If L were a liar, K alone would be the one truth-teller:
 
-$$J=0,\qquad K=1,\qquad L=0$$
+$$J=0,\\qquad K=1,\\qquad L=0$$
 
 That would make J's "exactly one" sentence true, contradicting J's liar type. Thus L must also be a truth-teller. The actual count is
 
@@ -6220,7 +6220,7 @@ The claim needs a second assignment, so split first on J's type. If J is truthfu
 
 If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now split on L. If L is a liar, K is the unique truth-teller, which makes J's sentence true and breaks J's liar type. Hence L must be truthful:
 
-$$J=\\text{liar},\qquad K=L=\\text{truth-teller}$$
+$$J=\\text{liar},\\qquad K=L=\\text{truth-teller}$$
 
 In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment, so the statement is False.`,
     ],
@@ -6267,7 +6267,7 @@ The unique assignment is $J$ false, $K$ true, $L$ true: J a liar, K and L truth-
 
 The claim says Dmitri attends. Rule (4) states this directly:
 
-$$(4)\qquad D$$
+$$(4)\\qquad D$$
 
 The other rules can restrict Ana, Boris, and Ceci, but none can cancel an explicit fact. For example, $\\{A,C,D\\}$ obeys (1) and (2), and Ana's presence activates the exception in (3), so rule (4) is consistent with the system. Dmitri is in every solution, so the statement is True.`,
       `**B.** → False
@@ -6289,7 +6289,7 @@ $$A\\Rightarrow\\neg B\\Rightarrow C$$
 
 Rule (4) puts Dmitri in. Rule (3) normally acts when $C\\land\\neg A$ holds, but here $A$ is true, so its "unless Ana attends" exception leaves Dmitri unrestricted. The roster is
 
-$$\\{A,C,D\\},\qquad |\\{A,C,D\\}|=3.$$
+$$\\{A,C,D\\},\\qquad |\\{A,C,D\\}|=3.$$
 
 This is a legal witness for the existence claim, so the statement is True.`,
       `**D.** → False
@@ -6300,7 +6300,7 @@ $$\\neg A\\land\\neg B.$$
 
 Rule (2) turns $\\neg B$ into $C$. Since Ana is absent, the exception in rule (3) is unavailable, so $C\\land\\neg A$ forces Dmitri out:
 
-$$\\neg B\\overset{(2)}{\\Rightarrow}C,\qquad
+$$\\neg B\\overset{(2)}{\\Rightarrow}C,\\qquad
 C\\land\\neg A\\overset{(3)}{\\Rightarrow}\\neg D.$$
 
 But rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D$, so Ana and Boris cannot both be absent, so the statement is False.`,
@@ -6308,11 +6308,11 @@ But rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D
 
 The claim says replacing rule (3) by the stricter implication would destroy every solution:
 
-$$(3')\qquad C\\Rightarrow\\neg D.$$
+$$(3')\\qquad C\\Rightarrow\\neg D.$$
 
 Rule (4) still gives $D$, so the contrapose of (3') forces $\\neg C$. The contrapose of rule (2), $\\neg C\\Rightarrow B$, then puts Boris in. Choose Ana out:
 
-$$\\neg A,\qquad B,\qquad\\neg C,\qquad D.$$
+$$\\neg A,\\qquad B,\\qquad\\neg C,\\qquad D.$$
 
 This is the roster $\\{B,D\\}$. Rule (1) is idle because Ana is out, rule (2) is idle because Boris is in, (3') is idle because Ceci is out, and (4) holds. At least one solution survives the stricter rule, so the statement is False.`,
     ],
@@ -6367,7 +6367,7 @@ Both cases survive.`,
 
 The claim asks what follows if Noah joins. Rule (4) says that Zoe joining forces Noah out:
 
-$$(4)\qquad Z\\Rightarrow\\neg N.$$
+$$(4)\\qquad Z\\Rightarrow\\neg N.$$
 
 Take its contrapositive by negating and reversing both sides:
 
@@ -6382,7 +6382,7 @@ Thus any roster with Noah must omit Zoe, exactly as claimed, so the statement is
 
 The claim requires a valid roster containing both Leo and Noah. Assume $L\\land N$. Rule (2), "Leo joins only if Zoe joins," means
 
-$$(2)\qquad L\\Rightarrow Z.$$
+$$(2)\\qquad L\\Rightarrow Z.$$
 
 Rule (4) then sends Zoe's attendance to Noah's absence:
 
@@ -6394,7 +6394,7 @@ This contradicts the assumed $N$. Rules (2) and (4) therefore forbid Leo and Noa
 
 The claim needs one solution with Maria in and Leo out. Try the roster with Maria alone:
 
-$$N=0,\qquad M=1,\qquad L=0,\qquad Z=0.$$
+$$N=0,\\qquad M=1,\\qquad L=0,\\qquad Z=0.$$
 
 Rule (1) is satisfied because its hypothesis $N$ is false. Rule (2) is satisfied because Leo is out. Rule (3), $M\\lor L$, holds through Maria. Rule (4) is satisfied because Zoe is out.
 
@@ -6403,7 +6403,7 @@ Thus $\\{M\\}$ is a legal roster with Maria joining and Leo not joining, so the 
 
 The claim asks whether Maria's absence forces Noah's absence. Rule (1) is
 
-$$(1)\qquad N\\Rightarrow M.$$
+$$(1)\\qquad N\\Rightarrow M.$$
 
 Its contrapositive reverses the implication and negates both parts:
 
@@ -6416,7 +6416,7 @@ The claim says every legal roster includes Zoe. To disprove a "must" claim, it i
 
 Let Maria join alone:
 
-$$\\{M\\},\qquad N=L=Z=0.$$
+$$\\{M\\},\\qquad N=L=Z=0.$$
 
 With Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe, so the statement is False.`,
     ],
@@ -6488,14 +6488,14 @@ The attempted roster contains $D$ and also forces $\\neg D$. Ella's status canno
 
 The claim needs one valid roster in which Ella is the only player. Assign
 
-$$B=0,\qquad C=0,\qquad D=0,\qquad E=1.$$
+$$B=0,\\qquad C=0,\\qquad D=0,\\qquad E=1.$$
 
 Rules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster, so the statement is True.`,
       `**D.** → True
 
 The claim asks whether Dan playing forces Carla out. Rule (3) says
 
-$$(3)\qquad C\\Rightarrow\\neg D.$$
+$$(3)\\qquad C\\Rightarrow\\neg D.$$
 
 Its contrapositive negates and reverses the two parts:
 
@@ -6510,7 +6510,7 @@ Thus any roster containing Dan must omit Carla, exactly as claimed, so the state
 
 The claim says Carla appears in every legal roster. Test Carla's absence by letting Ella play alone:
 
-$$\\{E\\},\qquad B=C=D=0.$$
+$$\\{E\\},\\qquad B=C=D=0.$$
 
 Ben's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out, so the statement is False.`,
     ],
@@ -6563,7 +6563,7 @@ Five rosters survive in all.`,
 
 The claim asks what follows if Owen cooks. Rule (4), "Quinn cooks only if Owen does not," translates as
 
-$$(4)\qquad Q\\Rightarrow\\neg O.$$
+$$(4)\\qquad Q\\Rightarrow\\neg O.$$
 
 Taking the contrapositive gives
 
@@ -6578,7 +6578,7 @@ Therefore an evening with Owen cooking cannot also have Quinn cooking, so the st
 
 The claim requires a legal evening with Owen and Priya both cooking. Assume $O\\land P$. Rule (1) applies as soon as Owen cooks:
 
-$$(1)\qquad O\\Rightarrow\\neg P.$$
+$$(1)\\qquad O\\Rightarrow\\neg P.$$
 
 The assumption $O$ therefore forces $\\neg P$, directly contradicting the assumed $P$. Quinn's status does not affect rule (1), so no assignment can contain both Owen and Priya, so the statement is False.`,
       `**C.** → False
@@ -6589,14 +6589,14 @@ $$\\neg O\\land\\neg P\\land Q.$$
 
 Rule (2) requires at least one of Owen or Priya:
 
-$$(2)\qquad O\\lor P.$$
+$$(2)\\qquad O\\lor P.$$
 
 Under the proposed assignment both disjuncts are false. Although Quinn with Owen absent satisfies rule (4), satisfying one rule cannot repair the failure of rule (2). Quinn cannot cook alone under all four rules, so the statement is False.`,
       `**D.** → True
 
 The claim says Priya's participation guarantees Quinn's. Rule (3) is exactly the forward implication
 
-$$(3)\qquad P\\Rightarrow Q.$$
+$$(3)\\qquad P\\Rightarrow Q.$$
 
 Starting with $P$, rule (3) immediately forces $Q$. Rule (4) then forces $\\neg O$, which is compatible with rule (2) because Priya already satisfies $O\\lor P$. There is no exception to rule (3), so Priya cooking always brings Quinn in, so the statement is True.`,
       `**E.** → False
@@ -6672,7 +6672,7 @@ Diego's attendance has forced both $F$ and $\\neg F$. Thus no valid roster conta
 
 The claim asks whether Fatima going forces Hugo out. Rule (6), "Hugo goes only if Fatima does not," means
 
-$$(6)\qquad H\\Rightarrow\\neg F.$$
+$$(6)\\qquad H\\Rightarrow\\neg F.$$
 
 Take the contrapositive:
 
@@ -6691,7 +6691,7 @@ $$\\neg D.$$
 
 Rule (4) requires at least one of Diego or Hugo, so
 
-$$(4)\qquad D\\lor H.$$
+$$(4)\\qquad D\\lor H.$$
 
 With the Diego disjunct false, the Hugo disjunct must be true:
 
@@ -6702,7 +6702,7 @@ Every valid roster therefore contains Hugo, so the statement is True.`,
 
 The claim needs one legal roster containing both Grace and Iris. Try
 
-$$\\{G,H,I\\},\qquad D=F=0.$$
+$$\\{G,H,I\\},\\qquad D=F=0.$$
 
 Rule (1) is idle because Diego is out. Rule (2), $G\\lor H$, holds. Rule (3) is idle because Fatima is out. Hugo satisfies rule (4), Iris satisfies rule (5) because Diego is out, and Hugo satisfies rule (6) because Fatima is out.
 
@@ -6711,7 +6711,7 @@ All six rules hold while Grace and Iris both attend, so the statement is True.`,
 
 The claim is the implication $I\\Rightarrow F$. To refute it, look for a legal roster with Iris in and Fatima out. Use
 
-$$\\{G,H,I\\},\qquad I=1,\qquad F=0.$$
+$$\\{G,H,I\\},\\qquad I=1,\\qquad F=0.$$
 
 As rule (5) requires, Iris has Diego out. Hugo then satisfies rule (4), and rule (6) agrees with Fatima being out. Grace satisfies rule (2), while rules (1) and (3) are idle because Diego and Fatima are absent.
 
@@ -6768,7 +6768,7 @@ The legal rosters are $\\{H\\}$, $\\{H,G\\}$, $\\{H,I\\}$, and $\\{H,G,I\\}$.`,
 
 The claim says Aiden is absent from every valid roster. Test the opposite by assuming $A$. Rule (1) forces both Bella and Caleb, and rule (4) sends Caleb to Ethan:
 
-$$A\\overset{(1)}{\\Rightarrow}(B\\land C),\qquad
+$$A\\overset{(1)}{\\Rightarrow}(B\\land C),\\qquad
 C\\overset{(4)}{\\Rightarrow}E.$$
 
 Rule (6), $E\\Rightarrow\\neg B$, then forces Bella out:
@@ -6780,7 +6780,7 @@ But rule (1) already forced $B$. Since $A$ leads to both $B$ and $\\neg B$, Aide
 
 The claim needs one valid scenario with Bella presenting. Assume $B$. Rule (3) forces Daisy out. Rule (6) says $E\\Rightarrow\\neg B$; its contrapositive forces Ethan out when Bella is in:
 
-$$B\\overset{(3)}{\\Rightarrow}\\neg D,\qquad
+$$B\\overset{(3)}{\\Rightarrow}\\neg D,\\qquad
 B\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg E.$$
 
 Rule (2) requires $D\\lor E$, but both choices have now been forced false:
@@ -6792,7 +6792,7 @@ No valid scenario can contain Bella, so the statement is False.`,
 
 The claim asks what must happen if Caleb presents. Rule (4), "Caleb presents only if Ethan presents," translates in the only-if direction as
 
-$$(4)\qquad C\\Rightarrow E.$$
+$$(4)\\qquad C\\Rightarrow E.$$
 
 Starting from $C$, rule (4) immediately forces $E$. The reverse $E\\Rightarrow C$ is not promised, but the claim uses the correct forward direction. Therefore every roster with Caleb also has Ethan, so the statement is True.`,
       `**D.** → False
@@ -6875,14 +6875,14 @@ $$\\neg P\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg S.$$
 
 Rule (4) requires at least one of Petra or Sana:
 
-$$(4)\qquad P\\lor S.$$
+$$(4)\\qquad P\\lor S.$$
 
 Under the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review, so the statement is True.`,
       `**B.** → True
 
 The claim asks what follows if Quinn reviews. Rule (1) says
 
-$$(1)\qquad P\\Rightarrow\\neg Q.$$
+$$(1)\\qquad P\\Rightarrow\\neg Q.$$
 
 Taking the contrapositive reverses and negates both sides:
 
@@ -6914,7 +6914,7 @@ $$P\\overset{(1)}{\\Rightarrow}\\neg Q
 
 Rule (5) forces Ravi out. Rule (2) requires $R\\lor S$, so Ravi's absence forces Sana in:
 
-$$T\\overset{(5)}{\\Rightarrow}\\neg R,\qquad
+$$T\\overset{(5)}{\\Rightarrow}\\neg R,\\qquad
 \\neg R\\land(R\\lor S)\\overset{(2)}{\\Rightarrow}S.$$
 
 The forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana, so the statement is True.`,
@@ -6928,7 +6928,7 @@ $$P\\Rightarrow\\neg Q\\Rightarrow T\\Rightarrow\\neg R\\Rightarrow S.$$
 
 So every valid assignment has exactly
 
-$$P=S=T=1,\qquad Q=R=0.$$
+$$P=S=T=1,\\qquad Q=R=0.$$
 
 This assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment, so the statement is False.`,
     ],
