@@ -125,9 +125,14 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE = 220;
+    // Per-subject pacing: economics ~17s, english slower, math the longest.
+    const PACE = subject === "math" ? 3.2 : subject === "english" ? 2.2 : 1.7;
+    const READ_STEPS = subject === "math" ? 10 : subject === "english" ? 7 : 6;
+    const MOVE = Math.round(200 * Math.min(PACE, 1.7));
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
+    const pause = (ms: number) => wait(Math.round(ms * PACE));
+
 
     const smoothScroll = (el: HTMLElement, to: number, duration: number) => {
       const start = el.scrollTop;
