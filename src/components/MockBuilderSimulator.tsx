@@ -70,7 +70,13 @@ export default function MockBuilderSimulator() {
   const [building, setBuilding] = useState(false);
   const [dialog, setDialog] = useState(false);
   const [exam, setExam] = useState(false);
-  const [answers, setAnswers] = useState<Record<number, boolean>>({});
+  const [examIndex, setExamIndex] = useState(0);
+  const [visited, setVisited] = useState<number[]>([]);
+  const [calcOpen, setCalcOpen] = useState(false);
+  const [secondsLeft, setSecondsLeft] = useState(0);
+  // answers per question index -> statement index -> true
+  const [answers, setAnswers] = useState<Record<number, Record<number, boolean>>>({});
+
   const [fade, setFade] = useState(false);
   const [cursor, setCursor] = useState({ x: 40, y: 40 });
   const cursorRef = useRef({ x: 40, y: 40 });
