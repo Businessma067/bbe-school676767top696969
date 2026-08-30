@@ -139,7 +139,13 @@ async def open_task(page, chapter_text, task_text=None):
             break
         await maybe(page, page.locator("button").filter(has_text=chapter_text).first, 900)
         if task_text:
-            await maybe(page, page.locator("aside button").filter(has_text=task_text).first, 800)
+            import re as _re
+
+            await maybe(
+                page,
+                page.locator("button").filter(has_text=_re.compile(rf"^{task_text}$")).first,
+                900,
+            )
         await page.wait_for_timeout(900)
     await wait_task(page)
 
