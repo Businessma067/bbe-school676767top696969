@@ -209,7 +209,7 @@ export function AnswerSheetPreview({ embedded = false }: { embedded?: boolean })
     <div
       className={cn(
         "relative w-full overflow-hidden bg-white",
-        embedded ? "w-[448px]" : "max-w-md rounded-2xl shadow-2xl",
+        embedded ? "mx-auto w-full max-w-[448px]" : "max-w-md rounded-2xl shadow-2xl",
       )}
       style={
         embedded

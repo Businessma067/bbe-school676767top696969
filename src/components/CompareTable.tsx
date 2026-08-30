@@ -154,7 +154,7 @@ export function CompareTable({
         {/* Mobile unified table */}
         <div className="overflow-hidden rounded-2xl border border-border bg-background sm:hidden">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[320px] border-collapse text-[10px]">
+            <table className="w-full min-w-0 w-full border-collapse text-[10px]">
               <thead>
                 <tr className="border-b border-border bg-muted/50">
                   <th className="sticky left-0 z-10 w-[120px] bg-muted px-2 py-1.5 text-left font-display text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">

@@ -22,7 +22,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
         <button
           type="button"
           aria-label="Open menu"
-          className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-card text-foreground transition-all hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+          className="touch-target inline-flex h-11 w-11 items-center justify-center rounded-md border border-border bg-card text-foreground transition-all hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
         >
           <Menu className="h-5 w-5" />
         </button>
@@ -37,21 +37,21 @@ export function MobileNav({ items }: { items: NavItem[] }) {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close menu"
-              className="inline-flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              className="touch-target inline-flex h-11 w-11 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             >
               <X className="h-5 w-5" />
             </button>
           </div>
           <SheetDescription className="sr-only">Navigation menu</SheetDescription>
 
-          <nav className="overflow-y-auto px-6 py-4">
+          <nav className="overflow-y-auto px-4 py-4 sm:px-6">
             <ul className="flex flex-col gap-1">
               {items.map((item) => (
                 <li key={item.label}>
                   <NavItemLink
                     item={item}
                     onNavigate={() => setOpen(false)}
-                    className="block w-full rounded-lg px-3 py-2.5 text-left font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
+                    className="block w-full rounded-lg px-3 py-3.5 text-left font-display text-base font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
                   />
                 </li>
               ))}

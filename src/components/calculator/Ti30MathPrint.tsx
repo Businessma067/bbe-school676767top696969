@@ -273,7 +273,7 @@ function Key({
       type="button"
       onClick={onClick}
       className={cn(
-        "relative flex min-h-9 flex-col items-center justify-center rounded-lg border px-0.5 py-1 text-center transition active:scale-[0.97]",
+        "relative flex min-h-11 flex-col items-center justify-center rounded-lg border px-0.5 py-1.5 text-center transition active:scale-[0.97] sm:min-h-9 sm:py-1",
         wide && "col-span-2",
         accent && "border-caramel-deep/50 bg-caramel-deep text-primary-foreground shadow-sm",
         danger && "border-destructive/40 bg-destructive/10 text-destructive",
@@ -284,11 +284,11 @@ function Key({
       )}
     >
       {sub ? (
-        <span className="pointer-events-none absolute left-1 top-0.5 text-[7px] font-semibold uppercase leading-none tracking-wide text-taupe/55">
+        <span className="pointer-events-none absolute left-1 top-0.5 text-[7px] font-semibold uppercase leading-none tracking-wide text-taupe/55 sm:text-[7px]">
           {sub}
         </span>
       ) : null}
-      <span className="text-[11px] font-bold leading-tight sm:text-xs">{label}</span>
+      <span className="text-xs font-bold leading-tight sm:text-xs">{label}</span>
     </button>
   );
 }
@@ -595,7 +595,7 @@ export function Ti30MathPrint({
 
       <div className="p-3">
         {tab === "home" && (
-          <div className="grid grid-cols-5 gap-1.5">
+          <div className="grid grid-cols-5 gap-1.5 sm:gap-1.5">
             <Key label="2nd" accent={second} onClick={() => setSecond((s) => !s)} />
             <Key label="Mode" onClick={() => setTab("mode")} />
             <Key

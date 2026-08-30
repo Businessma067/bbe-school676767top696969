@@ -522,7 +522,7 @@ function TakeExamPage() {
         )}
       </header>
 
-      <div className={PRACTICE_BODY}>
+      <div className={cn(PRACTICE_BODY, "pb-24 lg:pb-4")}>
         <aside className="hidden w-[200px] shrink-0 space-y-4 xl:block xl:w-[240px] 2xl:w-[260px]">
           <div className="rounded-2xl border border-border bg-card p-4 shadow-sm">
             <div className="text-[10px] font-semibold uppercase tracking-widest text-taupe">
@@ -635,7 +635,7 @@ function TakeExamPage() {
                     <>
                       <span className="w-6">#</span>
                       <span className="flex-1">Statement</span>
-                      <span className="w-14 text-center">True</span>
+                      <span className="w-11 text-center sm:w-14">True</span>
                     </>
                   )}
                 </div>
@@ -645,8 +645,8 @@ function TakeExamPage() {
                     <div
                       key={s.id}
                       className={cn(
-                        "border-b border-border px-4 py-4 last:border-b-0 sm:px-5",
-                        !usesAnswerSheet && "flex items-center gap-3",
+                        "border-b border-border px-3 py-4 last:border-b-0 sm:px-5",
+                        !usesAnswerSheet && "flex items-start gap-2 sm:items-center sm:gap-3",
                       )}
                     >
                       {usesAnswerSheet ? (
@@ -658,13 +658,13 @@ function TakeExamPage() {
                         </p>
                       ) : (
                         <>
-                          <span className="w-6 shrink-0 text-center text-xs font-bold text-muted-foreground">
+                          <span className="mt-2 w-6 shrink-0 text-center text-xs font-bold text-muted-foreground sm:mt-0">
                             {String.fromCharCode(65 + i)}.
                           </span>
                           <p className="min-w-0 flex-1 text-sm leading-relaxed sm:text-[15px] lg:text-base">
                             <ExamStatementText q={q} text={s.text} />
                           </p>
-                          <div className="flex w-14 shrink-0 justify-center">
+                          <div className="flex w-11 shrink-0 justify-center sm:w-14">
                             <button
                               type="button"
                               role="checkbox"
@@ -672,7 +672,7 @@ function TakeExamPage() {
                               aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
                               onClick={() => toggleMark(q.index, i)}
                               className={cn(
-                                "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                                "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all",
                                 marked
                                   ? "border-primary bg-primary text-primary-foreground"
                                   : "border-border bg-background hover:border-primary/60",
@@ -740,7 +740,7 @@ function TakeExamPage() {
           </nav>
         </main>
 
-        <aside className="sticky top-[4.5rem] flex h-fit w-14 shrink-0 flex-col gap-2 sm:w-16">
+        <aside className="fixed inset-x-0 bottom-0 z-30 flex flex-row items-stretch justify-around gap-1 border-t border-border bg-background/95 px-2 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur sm:gap-2 lg:sticky lg:top-[4.5rem] lg:inset-auto lg:bottom-auto lg:h-fit lg:w-16 lg:shrink-0 lg:flex-col lg:border-0 lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
           {usesAnswerSheet && (
             <ToolRailButton
               label="Answer Sheet"
@@ -875,7 +875,7 @@ function ToolRailButton({
       aria-pressed={active}
       onClick={onClick}
       className={cn(
-        "relative flex flex-col items-center gap-1 rounded-xl border px-1.5 py-2.5 text-[10px] font-semibold transition-colors",
+        "relative flex min-h-11 flex-1 flex-col items-center justify-center gap-1 rounded-xl border px-2 py-2 text-[10px] font-semibold transition-colors lg:min-h-0 lg:flex-none lg:px-1.5 lg:py-2.5",
         active
           ? "border-caramel-deep bg-caramel-deep text-white shadow-sm"
           : "border-border bg-card text-foreground hover:bg-secondary",

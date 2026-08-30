@@ -461,7 +461,7 @@ function FlashcardSubjectPage() {
         }
       />
 
-      <main className="overflow-x-clip px-6 py-10 lg:px-8">
+      <main className="overflow-x-clip px-3 py-6 sm:px-6 sm:py-10 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
             <div>
@@ -531,7 +531,7 @@ function FlashcardSubjectPage() {
                 <select
                   value={sectionId}
                   onChange={(e) => setSectionId(e.target.value)}
-                  className="min-w-[220px] flex-1 rounded-md border border-border bg-card px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30"
+                  className="min-w-0 w-full flex-1 rounded-md border border-border bg-card px-3 py-2.5 text-sm font-medium outline-none focus:ring-2 focus:ring-primary/30 sm:min-w-[220px]"
                 >
                   {sectionOptions.map((o) => (
                     <option key={o.id} value={o.id}>

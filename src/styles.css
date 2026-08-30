@@ -433,6 +433,21 @@ body.flashcard-swiping {
   opacity: 1;
 }
 
+/* Phone / PWA: keep fixed chrome clear of notches and home indicator. */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-area-pad {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Prefer 44px+ taps sitewide for icon buttons marked interactive. */
+.touch-target {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .practice-panel-enter,
   .practice-fade-in {
