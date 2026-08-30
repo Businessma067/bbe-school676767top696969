@@ -170,6 +170,29 @@ function Index() {
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
             {(
               [
+                { key: "practice", label: "Задания" },
+                { key: "mock", label: "Mock Builder" },
+              ] as const
+            ).map((m) => (
+              <button
+                key={m.key}
+                type="button"
+                onClick={() => setDemoMode(m.key)}
+                className={cn(
+                  "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
+                  demoMode === m.key
+                    ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
+                    : "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white",
+                )}
+              >
+                {m.label}
+              </button>
+            ))}
+          </div>
+          {demoMode === "practice" && (
+          <div className="relative mx-auto mt-4 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {(
+              [
                 { key: "economics", label: "Economics", enabled: true },
                 { key: "math", label: "Math", enabled: true },
                 { key: "english", label: "English", enabled: true },
