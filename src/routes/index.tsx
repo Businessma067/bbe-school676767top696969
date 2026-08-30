@@ -220,8 +220,13 @@ function Index() {
               );
             })}
           </div>
+          )}
           <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
-            <PracticeSimulator key={demoSubject} subject={demoSubject} />
+            {demoMode === "practice" ? (
+              <PracticeSimulator key={demoSubject} subject={demoSubject} />
+            ) : (
+              <MockBuilderSimulator />
+            )}
           </div>
         </section>
 
