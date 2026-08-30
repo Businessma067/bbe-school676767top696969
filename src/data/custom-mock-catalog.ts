@@ -143,13 +143,17 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
         { id: "12.3", title: "Conditional Probability" },
         { id: "12.4", title: "Expected Value, Variance & SD" },
         { id: "12.5", title: "Bayes' Theorem" },
+        { id: "12.6", title: "Exam-style tasks" },
       ]),
     ),
     toChapterToc(
       12,
       "Binomial distribution",
       "Chapter 12",
-      subs(12, [{ id: "12", title: "Binomial distribution" }]),
+      subs(12, [
+        { id: "13", title: "Binomial distribution" },
+        { id: "13.5", title: "Exam-style tasks" },
+      ]),
     ),
   ];
 }

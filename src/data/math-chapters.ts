@@ -14,7 +14,7 @@ import { MATH_CH8_POWER_FUNCTIONS } from "@/data/math-ch8-power-functions";
 import { MATH_CH6_INEQUALITIES, MATH_CH6_SUBSECTIONS } from "@/data/math-ch6-inequalities";
 import { MATH_CH11_FINANCIAL, MATH_CH11_SUBSECTIONS } from "@/data/math-ch11-financial";
 import { MATH_CH12_PROBABILITY, MATH_CH12_SUBSECTIONS } from "@/data/math-ch12-probability";
-import ch13Binomial from "@/data/math-cases-ch13-binomial.json";
+import { MATH_CH13_BINOMIAL, MATH_CH13_SUBSECTIONS } from "@/data/math-ch13-binomial";
 
 export type MathTask = {
   id: string;
@@ -176,10 +176,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   6: MATH_CH6_INEQUALITIES,
   8: MATH_CH8_POWER_FUNCTIONS,
   11: MATH_CH12_PROBABILITY,
-  12: (ch13Binomial.tasks as MathTask[]).map((t) => ({
-    ...t,
-    placeholder: false,
-  })),
+  12: MATH_CH13_BINOMIAL,
 };
 
 const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
@@ -189,6 +186,7 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
   4: MATH_CH4_SUBSECTIONS,
   6: MATH_CH6_SUBSECTIONS,
   11: MATH_CH12_SUBSECTIONS,
+  12: MATH_CH13_SUBSECTIONS,
 };
 
 /** Syllabus chapters with structure ready but no practice content yet. */

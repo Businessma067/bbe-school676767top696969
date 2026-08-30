@@ -1,0 +1,644 @@
+{
+ "tasks": [
+  {
+   "id": "math-13-56",
+   "case_id": "MATH 13.56",
+   "title": "Exam-style tasks — 1",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(n=5,\\, p=\\tfrac{1}{2}\\bigr)$, then $P(X=3)=\\dfrac{5}{16}$.",
+    "If $Y \\sim \\mathrm{Bin}(n=10,\\, p=0.2)$, then $P(Y \\ge 1) > 0.9$.",
+    "If $Z \\sim \\mathrm{Bin}(n=8,\\, p=0.25)$, then $E(Z) > \\mathrm{SD}(Z)$.",
+    "For $X \\sim \\mathrm{Bin}(20,0.5)$ and $W \\sim \\mathrm{Bin}(20,0.4)$, one has $\\mathrm{Var}(X) > \\mathrm{Var}(W)$.",
+    "If each of $4$ independent switches works with probability $\\tfrac{1}{2}$, then the probability that at least one works equals $\\dfrac{15}{16}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=3)=\\binom{5}{3}\\left(\\dfrac{1}{2}\\right)^{5}=\\dfrac{10}{32}=\\dfrac{5}{16}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(Y\\ge 1)=1-(0.8)^{10}\\approx 0.89263 < 0.9$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E(Z)=2,\\quad \\mathrm{Var}(Z)=1.5,\\quad \\mathrm{SD}(Z)=\\sqrt{1.5}<2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$\\mathrm{Var}(X)=5 > 4.8=\\mathrm{Var}(W)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P=1-\\left(\\dfrac{1}{2}\\right)^{4}=\\dfrac{15}{16}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 56,
+   "solution_overview": "Mixed binomial claims: an exact PMF, a P(Y≥1) threshold, mean versus SD, comparing variances, and an at-least-one complement.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-57",
+   "case_id": "MATH 13.57",
+   "title": "Exam-style tasks — 2",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(6,\\, \\tfrac{1}{3}\\bigr)$, then $P(X=2)=\\dfrac{80}{243}$.",
+    "If $X \\sim \\mathrm{Bin}(5,0.4)$, then $P(X \\ge 4)$ equals $0.4^{5}$.",
+    "For $X \\sim \\mathrm{Bin}(12,0.5)$, the mean equals the variance.",
+    "If $X \\sim \\mathrm{Bin}(10,0.3)$ and $Y \\sim \\mathrm{Bin}(10,0.7)$, then $E(X)=E(10-Y)$ and $\\mathrm{Var}(X)=\\mathrm{Var}(Y)$.",
+    "With success probability $p=0.2$, the probability of at least one success for $n=10$ is exactly twice that probability for $n=5$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    false,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=2)=15\\cdot\\dfrac{1}{9}\\cdot\\dfrac{16}{81}=\\dfrac{240}{729}=\\dfrac{80}{243}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$P(X\\ge 4)=P(X=4)+P(X=5)$ includes an extra positive $P(X=4)$ beyond $(0.4)^{5}=P(X=5)$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\n$$E=6,\\quad \\mathrm{Var}=3 \\ne 6$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$10-Y\\sim\\mathrm{Bin}(10,0.3)$ matches $X$; also $\\mathrm{Var}=np(1-p)$ is symmetric in $p\\leftrightarrow 1-p$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$1-(0.8)^{5}\\approx 0.67232,\\quad 1-(0.8)^{10}\\approx 0.89263 \\ne 2\\cdot 0.67232$$\n\nThe complement $1-(1-p)^{n}$ is not linear in $n$.\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 57,
+   "solution_overview": "Mixed binomial claims: an exact PMF with p=1/3, a tail versus a single PMF term, mean versus variance, complementary p, and nonlinearity of at-least-one in n.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-58",
+   "case_id": "MATH 13.58",
+   "title": "Exam-style tasks — 3",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(4,0.5)$, then $P(X=0)=\\dfrac{1}{8}$ and $P(X=4)=\\dfrac{1}{8}$.",
+    "If $X \\sim \\mathrm{Bin}(8,0.25)$, then $P(X \\le 1)$ is strictly less than $P(X=0)+8\\cdot(0.25)\\cdot(0.75)^{7}$.",
+    "For $X \\sim \\mathrm{Bin}\\bigl(9,\\tfrac{1}{3}\\bigr)$, $E(X)=3$ and $\\mathrm{Var}(X)=2$.",
+    "Among $X \\sim \\mathrm{Bin}(100,0.1)$ and $Y \\sim \\mathrm{Bin}(100,0.5)$, $\\mathrm{Var}(Y)$ is larger than $\\mathrm{Var}(X)$.",
+    "The probability of at least one success in $n$ independent trials with success probability $p$ is $1-(1-p)^{n}$, not $np$."
+   ],
+   "answer_key": [
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\n$$P(X=0)=P(X=4)=\\left(\\dfrac{1}{2}\\right)^{4}=\\dfrac{1}{16} \\ne \\dfrac{1}{8}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → False\n\n$P(X=1)$ equals exactly $8\\cdot(0.25)\\cdot(0.75)^{7}$, so $P(X\\le 1)$ equals that sum, not strictly less.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E=3,\\quad \\mathrm{Var}=2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$\\mathrm{Var}(Y)=25>9=\\mathrm{Var}(X)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nIndependence gives $P(\\text{none})=(1-p)^{n}$, hence the complement formula; $np$ is the mean.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 58,
+   "solution_overview": "Mixed binomial claims: symmetric endpoints, a false strict inequality on a lower tail, moments at p=1/3, variance near p=1/2, and at-least-one versus np.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-59",
+   "case_id": "MATH 13.59",
+   "title": "Exam-style tasks — 4",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(7,0.5)$, then $P(X=3)=P(X=4)=\\dfrac{35}{128}$.",
+    "If $X \\sim \\mathrm{Bin}(6,0.5)$, then $P(X \\ge 4)=P(X \\le 2)$ by symmetry.",
+    "Doubling $p$ from $0.2$ to $0.4$ with $n=10$ doubles the variance.",
+    "If $X \\sim \\mathrm{Bin}(5,0.2)$ and $Y \\sim \\mathrm{Bin}(5,0.8)$, then $P(X=1)=P(Y=4)$.",
+    "For $n=3$ and $p=0.1$, $1-(1-p)^{n} = 1-(0.9)^{3} = 0.271$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$\\binom{7}{3}=\\binom{7}{4}=35$$\n\n$$P=35/128$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nSymmetry $k\\leftrightarrow n-k$ at $p=1/2$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\nVariances $1.6$ and $2.4$; $2.4\\ne 3.2$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$\\binom{5}{1}=\\binom{5}{4}$ and the powers of $0.2$ and $0.8$ match after swapping.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-0.729=0.271$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 59,
+   "solution_overview": "Mixed binomial claims: symmetric PMF values, symmetric tails, nonlinear variance in p, complementary PMF identity, and a numerical at-least-one.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-60",
+   "case_id": "MATH 13.60",
+   "title": "Exam-style tasks — 5",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(3,\\tfrac{2}{5}\\bigr)$, then $P(X=1)=\\dfrac{54}{125}$.",
+    "If $X \\sim \\mathrm{Bin}(10,0.5)$, then $P(X \\ge 6) > \\tfrac{1}{2}$.",
+    "For $X \\sim \\mathrm{Bin}(20,0.25)$, $E(X)=5$ and $\\mathrm{SD}(X)=\\sqrt{3.75}$.",
+    "The ratio $\\dfrac{P(X=k+1)}{P(X=k)}$ for $X\\sim\\mathrm{Bin}(n,p)$ equals $\\dfrac{n-k}{k+1}\\cdot\\dfrac{p}{1-p}$.",
+    "Changing $n$ from $4$ to $5$ with $p=0.5$ multiplies $P(X=0)$ by $\\tfrac{1}{2}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=3\\cdot\\tfrac{2}{5}\\cdot\\tfrac{9}{25}=\\dfrac{54}{125}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\nBy symmetry $P(X\\ge 6)=P(X\\le 4)<\\tfrac{1}{2}$ because $P(X=5)>0$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E=5,\\quad \\mathrm{Var}=3.75,\\quad \\mathrm{SD}=\\sqrt{3.75}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nThis is the standard consecutive binomial PMF ratio.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$(1/2)^{5}=\\tfrac{1}{2}\\cdot(1/2)^{4}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 60,
+   "solution_overview": "Mixed binomial claims: a three-trial PMF, a majority-tail trap, mean and SD, the consecutive PMF ratio, and scaling of P(X=0).",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-61",
+   "case_id": "MATH 13.61",
+   "title": "Exam-style tasks — 6",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(5,0.6)$, then $P(X=5)=(0.6)^{5}=0.07776$.",
+    "If $X \\sim \\mathrm{Bin}(4,0.3)$, then $P(X \\ge 1)=1-(0.7)^{4}$.",
+    "For $X \\sim \\mathrm{Bin}(16,0.25)$, one has $\\mathrm{Var}(X)=E(X)$.",
+    "If $X \\sim \\mathrm{Bin}(8,0.5)$ and $Y \\sim \\mathrm{Bin}(8,0.25)$, then $\\dfrac{E(X)}{E(Y)}=2$.",
+    "The chance of at least one six in $4$ independent fair die rolls equals $1-\\left(\\dfrac{5}{6}\\right)^{4}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=5)=(0.6)^{5}=0.07776$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(X\\ge 1)=1-P(X=0)=1-(0.7)^{4}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$E=4,\\quad \\mathrm{Var}=3 \\ne 4$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E(X)=4,\\quad E(Y)=2,\\quad \\text{ratio }=2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nBinomial trials with $p=1/6$ give the complement formula.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 61,
+   "solution_overview": "Mixed binomial claims: P(X=n), an at-least-one complement, mean versus variance, a ratio of means, and at least one six.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-62",
+   "case_id": "MATH 13.62",
+   "title": "Exam-style tasks — 7",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(9,0.5)$, then $P(X=5)=\\dfrac{63}{256}$.",
+    "If $X \\sim \\mathrm{Bin}(7,0.2)$, then $P(X \\ge 2)=1-P(X=0)-P(X=1)$.",
+    "For $X \\sim \\mathrm{Bin}(50,0.02)$, $E(X)=1$ and $\\mathrm{Var}(X)=1$.",
+    "If $X \\sim \\mathrm{Bin}(12,0.4)$ and $Y \\sim \\mathrm{Bin}(12,0.6)$, then $\\mathrm{SD}(X)=\\mathrm{SD}(Y)$.",
+    "For fixed $p \\in (0,1)$, the map $n \\mapsto 1-(1-p)^{n}$ is strictly increasing in the positive integer $n$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\binom{9}{5}/512=126/512=63/256$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nComplement of $\\{0,1\\}$ on $\\{0,\\dots,7\\}$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$E(X)=1$$\n\n$$\\mathrm{Var}(X)=50\\cdot 0.02\\cdot 0.98=0.98 \\ne 1$$\n\n(Poisson intuition approximates the variance by the mean, but the exact binomial variance is $np(1-p)$.)\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\nBoth variances equal $12\\cdot 0.4\\cdot 0.6=2.88$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nSince $0<1-p<1$, raising $n$ decreases $(1-p)^{n}$.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 62,
+   "solution_overview": "Mixed binomial claims: a fair-coin PMF, a two-term complement, rare-event moments, SD symmetry in p, and monotonicity of at-least-one.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-63",
+   "case_id": "MATH 13.63",
+   "title": "Exam-style tasks — 8",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(4,\\tfrac{1}{4}\\bigr)$, then $P(X=2)=\\dfrac{27}{128}$.",
+    "If $X \\sim \\mathrm{Bin}(5,0.5)$, then $P(X \\ge 3)=P(X \\le 2)$.",
+    "For $X \\sim \\mathrm{Bin}(10,0.9)$, $\\mathrm{SD}(X)=0.9$.",
+    "Comparing $X\\sim\\mathrm{Bin}(5,0.5)$ and $Y\\sim\\mathrm{Bin}(10,0.5)$, one has $E(Y)=2E(X)$ and $\\mathrm{Var}(Y)=2\\mathrm{Var}(X)$.",
+    "The probability of no successes in $n=6$ trials with $p=\\tfrac{1}{3}$ equals $\\left(\\tfrac{2}{3}\\right)^{6}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=6\\cdot\\dfrac{1}{16}\\cdot\\dfrac{9}{16}=\\dfrac{54}{256}=\\dfrac{27}{128}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nSymmetry pairs $\\{0,1,2\\}$ with $\\{5,4,3\\}$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$\\mathrm{Var}=0.9,\\quad \\mathrm{SD}=\\sqrt{0.9}\\ne 0.9$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$$E: 2.5\\to 5,\\quad \\mathrm{Var}: 1.25\\to 2.5$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$P(X=0)=(2/3)^{6}$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 63,
+   "solution_overview": "Mixed binomial claims: a p=1/4 PMF, a symmetric half-split, Var versus SD, linear scaling in n, and P(X=0).",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-64",
+   "case_id": "MATH 13.64",
+   "title": "Exam-style tasks — 9",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(8,0.5)$, then $P(X=4)=\\dfrac{35}{128}$.",
+    "If $X \\sim \\mathrm{Bin}(3,0.8)$, then $P(X \\ge 2)=3(0.8)^{2}(0.2)+(0.8)^{3}$.",
+    "For $X \\sim \\mathrm{Bin}(25,0.2)$, $E(X)=5$ and $\\mathrm{Var}(X)=5$.",
+    "If $X \\sim \\mathrm{Bin}(6,0.5)$ and $Y \\sim \\mathrm{Bin}(6,0.5)$ are independent, then $X+Y \\sim \\mathrm{Bin}(12,0.5)$.",
+    "At least one success with $n=2$, $p=0.4$ equals $0.64$, which is less than $2\\cdot 0.4=0.8$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P=\\binom{8}{4}/256=70/256=35/128$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(X\\ge 2)=P(X=2)+P(X=3)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$E(X)=5$$\n\n$$\\mathrm{Var}(X)=25\\cdot 0.2\\cdot 0.8=4 \\ne 5$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\nIndependent common-$p$ binomials add their $n$ parameters.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-0.36=0.64<0.8$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 64,
+   "solution_overview": "Mixed binomial claims: central PMF, an upper-tail sum, moments, adding independent binomials, and at-least-one versus np.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-65",
+   "case_id": "MATH 13.65",
+   "title": "Exam-style tasks — 10",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(5,\\tfrac{1}{5}\\bigr)$, then $P(X=0)=\\left(\\tfrac{4}{5}\\right)^{5}$.",
+    "If $X \\sim \\mathrm{Bin}(9,0.5)$, then $P(X \\le 3) < P(X \\ge 6)$.",
+    "For $X \\sim \\mathrm{Bin}\\bigl(18,\\tfrac{1}{3}\\bigr)$, $E(X)=6$ and $\\mathrm{SD}(X)=2$.",
+    "The binomial variance $np(1-p)$ as a function of $p\\in[0,1]$ for fixed $n$ is maximized at $p=\\tfrac{1}{2}$.",
+    "If each of $n=10$ alarms triggers independently with probability $0.05$, then $P(\\text{at least one trigger})=1-(0.95)^{10}$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=0)=(4/5)^{5}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\nSymmetry forces $P(X\\le 3)=P(X\\ge 6)$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E=6,\\quad \\mathrm{Var}=4,\\quad \\mathrm{SD}=2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nThe quadratic $p(1-p)$ peaks at $p=1/2$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nComplement of zero triggers.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 65,
+   "solution_overview": "Mixed binomial claims: P(X=0), a false asymmetric-tail claim, mean and SD, variance maximized at p=1/2, and an at-least-one alarm probability.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-66",
+   "case_id": "MATH 13.66",
+   "title": "Exam-style tasks — 11",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(6,0.5)$, then $P(X=3)=\\dfrac{1}{2}$.",
+    "If $X \\sim \\mathrm{Bin}(4,0.25)$, then $P(X \\ge 3)=\\binom{4}{3}(0.25)^{3}(0.75)+(0.25)^{4}$.",
+    "For $X \\sim \\mathrm{Bin}(30,0.1)$, $E(X)=3$ and $\\mathrm{Var}(X)=2.7$.",
+    "If $X \\sim \\mathrm{Bin}(7,0.4)$ and $Y \\sim \\mathrm{Bin}(7,0.6)$, then $E(X)+E(Y)=7$.",
+    "With $p=0.5$ and $n=3$, $1-(1-p)^{n}=\\dfrac{7}{8}$."
+   ],
+   "answer_key": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → False\n\n$$P(X=3)=\\dfrac{\\binom{6}{3}}{2^{6}}=\\dfrac{20}{64}=\\dfrac{5}{16} \\ne \\dfrac{1}{2}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\n$$P(X\\ge 3)=P(X=3)+P(X=4)$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$E=3,\\quad \\mathrm{Var}=2.7$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$2.8+4.2=7$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-(1/2)^{3}=7/8$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 66,
+   "solution_overview": "Mixed binomial claims: central PMF, a three-or-more tail, rare-event moments, complementary means summing to n, and at-least-one at p=1/2.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-67",
+   "case_id": "MATH 13.67",
+   "title": "Exam-style tasks — 12",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(10,0.2)$, then $P(X=2)=\\binom{10}{2}(0.2)^{2}(0.8)^{8}$.",
+    "If $X \\sim \\mathrm{Bin}(5,0.5)$, then $P(X \\ge 1)=\\dfrac{31}{32}$.",
+    "For $X \\sim \\mathrm{Bin}(12,0.25)$, $\\mathrm{SD}(X)=\\dfrac{3}{2}$.",
+    "The ratio $\\dfrac{\\mathrm{Var}(X)}{E(X)}$ for $X\\sim\\mathrm{Bin}(n,p)$ with $p\\in(0,1)$ equals $1-p$.",
+    "Increasing $p$ from $0.1$ to $0.2$ with $n=5$ more than doubles $1-(1-p)^{5}$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nThis is the binomial PMF at $k=2$.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$1-(1/2)^{5}=31/32$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$\\mathrm{Var}=9/4,\\quad \\mathrm{SD}=3/2$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$\\dfrac{np(1-p)}{np}=1-p$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$1-(0.9)^{5}\\approx 0.40951,\\quad 1-(0.8)^{5}\\approx 0.67232$$\n\nand the second is less than twice the first.\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 67,
+   "solution_overview": "Mixed binomial claims: a PMF template, at-least-one for fair bits, an exact SD, the Var/mean ratio, and a false doubling claim when p increases.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-68",
+   "case_id": "MATH 13.68",
+   "title": "Exam-style tasks — 13",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(7,\\tfrac{1}{2}\\bigr)$, then $P(X=0)=\\dfrac{1}{128}$.",
+    "If $X \\sim \\mathrm{Bin}(6,0.4)$, then $P(X > 5)=P(X=6)=(0.4)^{6}$.",
+    "For $X \\sim \\mathrm{Bin}(40,0.5)$, $E(X)=20$ and $\\mathrm{Var}(X)=10$.",
+    "If $X \\sim \\mathrm{Bin}(9,0.3)$ and $Y \\sim \\mathrm{Bin}(9,0.3)$, then it is not generally true that $X+Y \\sim \\mathrm{Bin}(18,0.3)$ unless $X,Y$ are independent.",
+    "Geometric waiting time until first success is not a binomial count, even though both use a success probability $p$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=0)=(1/2)^{7}=1/128$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nOn $\\{0,\\dots,6\\}$, $X>5$ means only $X=6$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$E=20,\\quad \\mathrm{Var}=10$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nIndependence is required for the sum of binomials with common $p$ to remain binomial.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nBinomial fixes $n$; geometric counts trials until the first success.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 68,
+   "solution_overview": "Mixed binomial claims: P(X=0), a singleton upper tail, moments at p=1/2, independence to add binomials, and binomial versus geometric.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-69",
+   "case_id": "MATH 13.69",
+   "title": "Exam-style tasks — 14",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(5,0.4)$, then $P(X=3)=0.2304$.",
+    "If $X \\sim \\mathrm{Bin}(8,0.5)$, then $P(X \\le 2)=P(X \\ge 6)$.",
+    "For $X \\sim \\mathrm{Bin}(15,0.2)$, $E(X)=3 > \\mathrm{SD}(X)=\\sqrt{2.4}$.",
+    "Among binomials with $n=20$, the variance at $p=0.3$ exceeds the variance at $p=0.1$.",
+    "At least one defective in a sample of $n=20$ with $p=0.01$ equals $1-(0.99)^{20}$, which is less than $0.2$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$10\\cdot(0.4)^{3}\\cdot(0.6)^{2}=0.2304$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nSymmetry $k\\leftrightarrow 8-k$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$E=3>\\sqrt{2.4}\\approx 1.55$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$4.2>1.8$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-(0.99)^{20}\\approx 0.18209 < 0.2$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 69,
+   "solution_overview": "Mixed binomial claims: a decimal PMF, symmetric tails, mean above SD, variance comparison in p, and a small at-least-one probability.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-70",
+   "case_id": "MATH 13.70",
+   "title": "Exam-style tasks — 15",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(3,0.5)$, the distribution of $X$ is $\\bigl(\\tfrac{1}{8},\\tfrac{3}{8},\\tfrac{3}{8},\\tfrac{1}{8}\\bigr)$ on $0,1,2,3$.",
+    "If $X \\sim \\mathrm{Bin}(10,0.4)$, then $P(X \\ge 10)=P(X=10)=(0.4)^{10}$.",
+    "For $X \\sim \\mathrm{Bin}\\bigl(24,\\tfrac{1}{6}\\bigr)$, $E(X)=4$ and $\\mathrm{Var}(X)=4$.",
+    "If $X \\sim \\mathrm{Bin}(n,p)$ then $\\mathrm{Var}(n-X)=\\mathrm{Var}(X)$.",
+    "The identity $1-(1-p)^{n}=\\sum_{k=1}^{n}\\binom{n}{k}p^{k}(1-p)^{n-k}$ holds for binomial probabilities."
+   ],
+   "answer_key": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\nCoefficients $1,3,3,1$ over $8$.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nOnly $k=10$ is in the event when $n=10$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → False\n\n$$E(X)=4$$\n\n$$\\mathrm{Var}(X)=24\\cdot\\tfrac{1}{6}\\cdot\\tfrac{5}{6}=\\tfrac{10}{3} \\ne 4$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\n$n-X\\sim\\mathrm{Bin}(n,1-p)$ shares variance $np(1-p)$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\nBoth sides equal $P(X\\ge 1)$.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 70,
+   "solution_overview": "Mixed binomial claims: the full three-trial fair law, a singleton top tail, die-style moments, variance under complement counting, and the expansion of at-least-one.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-71",
+   "case_id": "MATH 13.71",
+   "title": "Exam-style tasks — 16",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(4,0.6)$, then $P(X=2)=0.3456$.",
+    "If $X \\sim \\mathrm{Bin}(12,0.5)$, then $P(X \\ge 7) = P(X \\le 5)$.",
+    "For $X \\sim \\mathrm{Bin}(9,0.5)$, mean and variance satisfy $E(X)=2\\,\\mathrm{Var}(X)$.",
+    "If $X \\sim \\mathrm{Bin}(20,0.25)$ and $Y \\sim \\mathrm{Bin}(40,0.25)$, then $\\dfrac{E(Y)}{E(X)}=2$ and $\\dfrac{\\mathrm{Var}(Y)}{\\mathrm{Var}(X)}=2$.",
+    "For $n=8$ and $p=0.25$, $1-(0.75)^{8} > 0.9$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$6\\cdot(0.6)^{2}\\cdot(0.4)^{2}=0.3456$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nSymmetry about $6$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$E=4.5=2\\cdot 2.25$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nMeans $5$ and $10$; variances $3.75$ and $7.5$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → False\n\n$$1-(0.75)^{8}\\approx 0.89989 < 0.9$$\n\nThe solved result does not agree with the claim, so the statement is False."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 71,
+   "solution_overview": "Mixed binomial claims: a decimal PMF, symmetric tails, E=2Var at p=1/2, linear scaling in n, and a failed 0.9 threshold.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-72",
+   "case_id": "MATH 13.72",
+   "title": "Exam-style tasks — 17",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(11,0.5)$, then $P(X=5)=P(X=6)=\\dfrac{\\binom{11}{5}}{2048}$.",
+    "If $X \\sim \\mathrm{Bin}(6,0.3)$, then $P(X \\le 0)=(0.7)^{6}$.",
+    "For $X \\sim \\mathrm{Bin}(14,0.5)$, $\\mathrm{Var}(X)=3.5$.",
+    "A claim that $X\\sim\\mathrm{Bin}(10,0.5)$ has the same distribution as a geometric number of trials until the first head is false.",
+    "If $p$ is replaced by $1-p$ with $n$ fixed, then $P(X\\ge 1)$ generally changes (unless $p=\\tfrac{1}{2})$."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$\\binom{11}{5}=\\binom{11}{6}$; divide by $2^{11}$.\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\n$$P(X\\le 0)=P(X=0)=(0.7)^{6}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$\\mathrm{Var}=14\\cdot 0.25=3.5$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nDifferent supports and meanings of the random index.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$1-(1-p)^{n}$ versus $1-p^{n}$ differ when $p\\ne 1/2$.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 72,
+   "solution_overview": "Mixed binomial claims: twin central probabilities, P(X=0) as a lower tail, variance at p=1/2, binomial≠geometric, and at-least-one under p↔1−p.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-73",
+   "case_id": "MATH 13.73",
+   "title": "Exam-style tasks — 18",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(2,0.3)$, then $P(X=1)=0.42$.",
+    "If $X \\sim \\mathrm{Bin}(15,0.5)$, then $P(X \\ge 8)=P(X \\le 7)$.",
+    "For $X \\sim \\mathrm{Bin}(8,0.75)$, $E(X)=6$ and $\\mathrm{Var}(X)=1.5$.",
+    "If $X \\sim \\mathrm{Bin}(5,0.2)$ and $Y \\sim \\mathrm{Bin}(20,0.2)$, then $\\dfrac{P(Y=0)}{P(X=0)}=(0.8)^{15}$.",
+    "The probability of at least two successes is not equal to $1-(1-p)^{n}$ in general."
+   ],
+   "answer_key": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=1)=2\\cdot 0.3\\cdot 0.7=0.42$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → True\n\nPair $k$ with $15-k$.\n\nMatching these figures to the claim, the statement is True.",
+    "**C.** → True\n\n$$E=6,\\quad \\mathrm{Var}=1.5$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$(0.8)^{20}/(0.8)^{5}=(0.8)^{15}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$1-(1-p)^{n}=P(X\\ge 1)$ includes $X=1$.\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 73,
+   "solution_overview": "Mixed binomial claims: a two-trial PMF, a symmetric half-split, moments at p=3/4, a P(X=0) ratio, and at-least-two versus at-least-one.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-74",
+   "case_id": "MATH 13.74",
+   "title": "Exam-style tasks — 19",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}\\bigl(8,\\tfrac{1}{3}\\bigr)$, then $P(X=0)=\\left(\\tfrac{2}{3}\\right)^{8}$.",
+    "If $X \\sim \\mathrm{Bin}(4,0.5)$, then $P(X \\ge 2)=\\dfrac{3}{4}$.",
+    "For $X \\sim \\mathrm{Bin}(100,0.05)$, $E(X)=5$ and $\\mathrm{SD}(X)=\\sqrt{4.75}$.",
+    "Two binomial laws with the same mean $np$ need not have the same variance.",
+    "For $n=1$, the at-least-one probability $1-(1-p)^{1}$ equals $p$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=0)=(2/3)^{8}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\n$$P(X\\ge 2)=1-P(0)-P(1)=1-\\dfrac{1}{16}-\\dfrac{4}{16}=\\dfrac{11}{16} \\ne \\dfrac{3}{4}$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E=5,\\quad \\mathrm{Var}=4.75,\\quad \\mathrm{SD}=\\sqrt{4.75}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\nExample: $\\mathrm{Bin}(10,0.5)$ and $\\mathrm{Bin}(20,0.25)$ both have mean $5$ but variances $2.5$ and $3.75$.\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-(1-p)=p$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 74,
+   "solution_overview": "Mixed binomial claims: P(X=0), a computed upper half, rare-event SD, equal means with unequal variances, and the n=1 edge case.",
+   "placeholder": false
+  },
+  {
+   "id": "math-13-75",
+   "case_id": "MATH 13.75",
+   "title": "Exam-style tasks — 20",
+   "subsection": "13.5",
+   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "statements": [
+    "If $X \\sim \\mathrm{Bin}(6,0.25)$, then $P(X=1)=6\\cdot(0.25)\\cdot(0.75)^{5}$.",
+    "If $X \\sim \\mathrm{Bin}(9,0.5)$, then $P(X \\ge 5) > \\dfrac{1}{2}$.",
+    "For $X \\sim \\mathrm{Bin}(7,0.2)$, $E(X)=1.4$ and $\\mathrm{Var}(X)=1.12$.",
+    "If $X \\sim \\mathrm{Bin}(10,0.4)$ and $Y \\sim \\mathrm{Bin}(10,0.6)$, then $\\dfrac{E(X)}{E(Y)}=\\dfrac{2}{3}$.",
+    "With $n=5$ and $p=0.2$, $1-(0.8)^{5}$ exceeds $0.65$."
+   ],
+   "answer_key": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "tactical_explanations": [
+    "**A.** → True\n\n$$P(X=1)=\\binom{6}{1}(0.25)(0.75)^{5}$$\n\nMatching these figures to the claim, the statement is True.",
+    "**B.** → False\n\nSymmetry gives $P(X\\ge 5)=P(X\\le 4)=\\tfrac{1}{2}$, not strictly greater.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\n$$E=1.4,\\quad \\mathrm{Var}=1.12$$\n\nMatching these figures to the claim, the statement is True.",
+    "**D.** → True\n\n$$4/6=2/3$$\n\nMatching these figures to the claim, the statement is True.",
+    "**E.** → True\n\n$$1-(0.8)^{5}\\approx 0.67232 > 0.65$$\n\nMatching these figures to the claim, the statement is True."
+   ],
+   "difficulty_level": "4/5",
+   "sort_order": 75,
+   "solution_overview": "Mixed binomial claims: a one-success PMF, a strict half-tail trap, mean and variance, a mean ratio for complementary p, and a numerical at-least-one bound.",
+   "placeholder": false
+  }
+ ]
+}
