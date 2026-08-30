@@ -56,11 +56,15 @@ function cleanExplanation(text: string) {
     .replace(/\*\*/g, "")
     .trim();
   const seen = new Set<string>();
+  let verdictSeen = false;
   return withoutVerdictLead
     .split(/\n\s*\n/)
     .map((paragraph) => paragraph.trim())
     .filter((paragraph) => {
       if (!paragraph) return false;
+      const isVerdict = /^the statement is (?:true|false)\b/i.test(paragraph);
+      if (isVerdict && verdictSeen) return false;
+      if (isVerdict) verdictSeen = true;
       const key = paragraph.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
       if (seen.has(key)) return false;
       seen.add(key);
@@ -445,6 +449,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
       {/* Animated cursor */}
       <div
+        data-sim-cursor
         className="pointer-events-none absolute left-0 top-0 z-20 transition-transform duration-150 ease-out"
         style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
       >
