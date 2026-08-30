@@ -2527,7 +2527,7 @@ $$A(M)=\\mathrm{T}\\Longrightarrow I(M)=\\mathrm{T}\\Longrightarrow P(M)=\\mathr
 
 Here $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not encode any numerical grade:
 
-$$P(M)=\\mathrm{T}\\centernot\\Longrightarrow \\mathrm{Grade}(M)=100\\%$$
+$$P(M)=\\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M)=100\\%$$
 
 Maria could have earned any passing mark. A perfect grade cannot be inferred, so the statement is False.`,
     ],
