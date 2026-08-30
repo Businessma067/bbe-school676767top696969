@@ -15,6 +15,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
+  const [demoMode, setDemoMode] = useState<"practice" | "mock">("practice");
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
