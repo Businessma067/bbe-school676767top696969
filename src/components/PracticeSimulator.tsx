@@ -79,8 +79,17 @@ function cleanExplanation(text: string) {
  * practice pages; economics shows Timed Mode, math shows the calculator.
  */
 export default function PracticeSimulator({ subject }: { subject: SimSubject }) {
-  const pool = SIM_TASKS[subject];
+  // Economics: skip cases whose context embeds tables/charts (they render badly here).
+  const pool = useMemo(() => {
+    const all = SIM_TASKS[subject];
+    if (subject !== "economics") return all;
+    const clean = all.filter(
+      (t) => !t.context.includes("[[CHART") && !t.context.includes("|"),
+    );
+    return clean.length ? clean : all;
+  }, [subject]);
   const [taskIdx, setTaskIdx] = useState(0);
+
   const [answers, setAnswers] = useState<Record<number, boolean>>({});
   const [checked, setChecked] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
