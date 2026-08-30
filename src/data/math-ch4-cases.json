@@ -6179,79 +6179,79 @@
   {
    "id": "math-4-194",
    "case_id": "MATH 4.194",
-   "title": "Hard mixed exam: 1",
+   "title": "Exam-style tasks — 1",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A cross-dock balance uses $(k+1)x=2k-8$, where $x$ is a signed pallet adjustment. It has a nonnegative solution exactly when $k\\in(-\\infty,-1)\\cup[4,\\infty)$; at $k=-1$ it has no solution.",
-    "A capacity model is $((k+2)-1)x^2-2((k+2)+1)x+2(k+2)-1=0$. It is genuinely quadratic with a repeated real root exactly when $k\\in\\{-1,3\\}$.",
-    "The sensor equation $\\sqrt{3x-2}=x-2$ yields squared-equation candidates $x=1$ and $x=6$; $x=1$ is extraneous because the right side $x-2$ is negative, leaving $x=6$ as the only solution.",
-    "The equation $\\log_{2}\\left((x-1)^2+4\\right)=3$ has no real root because a logarithm cannot have a quadratic argument; its argument is positive for every real $x$.",
-    "A cross-dock balance uses $(k+1)x=2k-10$, where $x$ is a signed pallet adjustment. It has a nonnegative solution exactly when $k\\in(-\\infty,-1]\\cup(5,\\infty)$; at $k=-1$ it has no solution."
+    "Under the baseline condition that monthly demand exceeds 10 MWh, the break-even consumption level at which Tariff Plan I (fixed fee of €120 plus €8 per MWh) and Tariff Plan II (fixed fee of €300 plus €5 per MWh, less a flat €30 high-volume rebate) yield identical total monthly billing is strictly greater than 45 MWh and represents an integer quantity.",
+    "If the retailer targets a monthly net operating profit of 98 hundred euros from an energy storage asset with profit function $\\Pi(x) = -2x^2 + 52x - 240$, the resulting quadratic equation has a discriminant of zero, yielding exactly one unique operating volume in the open interval $(10, 15)$.",
+    "When two concrete pump trucks operate simultaneously to pour the slab volume in $6$ hours, modeled by the rational equation $\\frac{1}{w} + \\frac{1}{w + 5} = \\frac{1}{6}$, the equation yields two distinct real algebraic solutions, neither of which is an excluded value of the rational domain, and the sum of these two solutions is equal to $7$.",
+    "In the particulate filter tuning equation $\\log_3(x + 5) + \\log_3(x - 3) = 2$, applying logarithm rules transforms the problem into a quadratic equation with two real roots, but the original equation has only one admissible real solution because $x = -6$ violates the argument domain.",
+    "For the parameter equation $(k-2)x=3k+1$, choosing $k=2$ produces no real solution, while every $k\\ne2$ produces exactly one real solution."
    ],
    "answer_key": [
     true,
-    false,
     true,
-    false,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe coefficient can vanish, so classify that parameter before dividing. Then solve a rational sign condition.\n\nAt the singular parameter:\n\n$$k=-1:\\quad 0\\cdot x=-10$$\n\nFor every other parameter:\n\n$$x=\\frac{2k-8}{k+1}=2\\frac{k-4}{k+1}$$\n\nUse the zero and pole:\n\n$$k=4\\ \\text{is a zero},\\qquad k=-1\\ \\text{is a pole}$$\n\nRead the nonnegative regions:\n\n$$k\\in(-\\infty,-1)\\cup[4,\\infty)$$\n\nThe zero is included, the singular parameter is excluded, and the printed classification is True.",
-    "**B.** → False\n\nThe leading coefficient and discriminant must both be checked. A zero discriminant is not enough if the equation has degenerated.\n\nUse the shifted parameter:\n\n$$q=k+2$$\n\nCompute the discriminant:\n\n$$\\Delta=4(q+1)^2-4(q-1)(2q-1)=4q(5-q)$$\n\nSet it to zero:\n\n$$4q(5-q)=0\\iff q\\in\\{0,5\\}$$\n\nCheck the leading coefficient:\n\n$$q-1\\ne0\\ \\text{at}\\ q=0,5$$\n\nTranslate back:\n\n$$k\\in\\{-2,3\\}$$\n\nThe first printed parameter corresponds to $q=1$, where the equation is linear rather than repeated-root quadratic, so the statement is False.",
-    "**C.** → True\n\nSquaring preserves candidates but not the sign condition imposed by a principal square root.\n\nRecord the precondition:\n\n$$x-2\\ge0\\iff x\\ge 2$$\n\nSquare and collect:\n\n$$3x-2=(x-2)^2$$\n\nFactor the resulting quadratic:\n\n$$(x-1)(x-6)=0$$\n\nCheck the radical domain:\n\n$$3(1)-2=1\\ge0,\\qquad 3(6)-2=16\\ge0$$\n\nCheck the original right side:\n\n$$1-2=-1,\\qquad 6-2=4$$\n\nThe rejected candidate is inside the radical domain but violates the nonnegative-right-side condition, so the statement is True.",
-    "**D.** → False\n\nConvert to exponential form and then enforce the logarithm domain. Completing the square keeps both tasks visible.\n\nUse exponential form:\n\n$$(x-1)^2+4=2^3=8$$\n\nIsolate the square:\n\n$$(x-1)^2=4$$\n\nTake both branches:\n\n$$x=1\\pm 2$$\n\nList the candidates:\n\n$$x\\in\\{-1,3\\}$$\n\nCheck the argument at a solution:\n\n$$(x-1)^2+4=8>0$$\n\nA positive quadratic value can be a logarithm argument, and the equation has the two displayed roots, so the statement is False.",
-    "**E.** → False\n\nThe coefficient can vanish, so classify that parameter before dividing. Then solve a rational sign condition.\n\nAt the singular parameter:\n\n$$k=-1:\\quad 0\\cdot x=-12$$\n\nFor every other parameter:\n\n$$x=\\frac{2k-10}{k+1}=2\\frac{k-5}{k+1}$$\n\nUse the zero and pole:\n\n$$k=5\\ \\text{is a zero},\\qquad k=-1\\ \\text{is a pole}$$\n\nRead the nonnegative regions:\n\n$$k\\in(-\\infty,-1)\\cup[5,\\infty)$$\n\nThe printed set includes the inconsistent parameter and excludes the zero solution, so the statement is False."
+    "**A.** → True\n\nTo find the break-even volume where both billing plans yield identical costs for $x > 10$, we formulate and solve a linear equation in one unknown.\n\nSetting the total monthly cost of Tariff Plan I equal to that of Tariff Plan II:\n\n$$120 + 8x = 300 + 5x - 30$$\n\n$$120 + 8x = 270 + 5x$$\n\nSubtracting $5x$ and $120$ from both sides gives:\n\n$$3x = 150$$\n\n$$x = 50$$\n\nThe solution $x = 50$ satisfies the domain condition $x > 10$, is strictly greater than $45$, and is an integer, so the statement is True.",
+    "**B.** → True\n\nSetting the profit function equal to the target value of $98$ hundred euros gives a quadratic equation:\n\n$$-2x^2 + 52x - 240 = 98$$\n\n$$-2x^2 + 52x - 338 = 0$$\n\nDividing the entire equation by $-2$ yields:\n\n$$x^2 - 26x + 169 = 0$$\n\nThe discriminant of this quadratic equation is:\n\n$$\\Delta = (-26)^2 - 4(1)(169) = 676 - 676 = 0$$\n\nBecause the discriminant is zero, the equation factors as $(x - 13)^2 = 0$, giving the single unique solution $x = 13$, which lies inside the open interval $(10, 15)$, so the statement is True.",
+    "**C.** → True\n\nThe rational equation is defined on the domain of all real numbers except where a denominator vanishes, which means $w \\neq 0$ and $w \\neq -5$.\n\nWe clear denominators by multiplying the entire equation by $6w(w + 5)$:\n\n$$6(w + 5) + 6w = w(w + 5)$$\n\n$$12w + 30 = w^2 + 5w$$\n\nRearranging into standard quadratic form:\n\n$$w^2 - 7w - 30 = 0$$\n\nFactoring gives:\n\n$$(w - 10)(w + 3) = 0$$\n\nThe algebraic solutions are $w_1 = 10$ and $w_2 = -3$. Neither candidate equals $0$ or $-5$, so neither is an excluded value of the rational expression. The sum of these two solutions is:\n\n$$10 + (-3) = 7$$\n\nBoth conditions stated in the claim are satisfied, so the statement is True.",
+    "**D.** → True\n\nFor the logarithmic equation $\\log_3(x + 5) + \\log_3(x - 3) = 2$, the real domain requires both arguments to be strictly positive: $x + 5 > 0 \\implies x > -5$ and $x - 3 > 0 \\implies x > 3$. The admissible domain is the intersection $x \\in (3, \\infty)$.\n\nApplying the product rule for logarithms transforms the sum into a single logarithm:\n\n$$\\log_3((x + 5)(x - 3)) = 2$$\n\n$$(x + 5)(x - 3) = 3^2$$\n\n$$x^2 + 2x - 15 = 9$$\n\n$$x^2 + 2x - 24 = 0$$\n\n$$(x + 6)(x - 4) = 0$$\n\nThe algebraic quadratic equation has roots $x = 4$ and $x = -6$. Evaluating $x = -6$ yields negative arguments in the original logarithms, making it extraneous. Only $x = 4$ lies in $(3, \\infty)$ and solves the original equation, so the statement is True.",
+    "**E.** → True\n\nClassify the linear equation by whether its coefficient vanishes.\n\n$$k=2:\\quad 0\\cdot x=7$$\n\n$$k\\ne2:\\quad x=\\frac{3k+1}{k-2}$$\n\nThe first equation is inconsistent and the second has a nonzero coefficient. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 194,
-   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. A tests parametric loading balance; B tests shifted discriminant family; C tests radical extraneous sign; D tests logarithm of a quadratic; E tests parametric loading balance. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. Map: A tests a linear equation or parameter condition; B tests a quadratic equation and the nature of its roots; C tests a rational, radical, or absolute-value equation; D tests an exponential or logarithmic equation with its domain; E tests parameter classification of a linear equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-195",
    "case_id": "MATH 4.195",
-   "title": "Hard mixed exam: 2",
+   "title": "Exam-style tasks — 2",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A capacity model is $((k+1)-1)x^2-2((k+1)+1)x+2(k+1)-1=0$. It is genuinely quadratic with a repeated real root exactly when $k\\in\\{-1,4\\}$.",
-    "The sensor equation $\\sqrt{3x-5}=x-3$ yields squared-equation candidates $x=2$ and $x=7$; $x=2$ is extraneous because it lies outside the radical domain, leaving $x=7$ as the only solution.",
-    "The equation $\\log_{3}\\left((x-2)^2+0\\right)=2$ has two roots, $x=-1$ and $x=5$, whose sum is $4$; its argument is also required to be positive.",
-    "A cross-dock balance uses $(k+1)x=2k-12$, where $x$ is a signed pallet adjustment. It has a nonnegative solution exactly when $k\\in(-\\infty,-1)\\cup[6,\\infty)$; at $k=-1$ it has no solution.",
-    "A capacity model is $((k)-1)x^2-2((k)+1)x+2(k)-1=0$. It is genuinely quadratic with a repeated real root exactly when $k\\in\\{1,5\\}$."
+    "Under the inverse demand price $p(x) = 18 - x$ and the printing cost $C(x) = 16 + 2x$, the total profit equation $x \\cdot p(x) - C(x) = 0$ yields exactly two distinct positive break-even production levels whose sum equals $16$ thousand copies.",
+    "Solving the amenity utilization equilibrium equation $\\sqrt{5t - 9} = t - 3$ yields two algebraic candidate values, but exactly one candidate is extraneous because it violates the non-negativity requirement of the principal square root.",
+    "The unique valid solution of $\\ln(2t + 4) - \\ln(t - 1) = \\ln 4$ is strictly smaller than the time $t$ at which the store count $N(t) = 15 \\cdot 2^{0.5t}$ reaches $120$ partner stores.",
+    "If an administrative surcharge of $k$ dollars per month (where $k > 0$) is added equally to Option 1 (joining fee of \\$60 and monthly fee of \\$45) and Option 2 (joining fee of \\$180 and monthly fee of \\$30), the duration in months at which the total cumulative costs of the two options coincide is strictly independent of $k$ and equals exactly 8 months.",
+    "A theater models ticket revenue by $R(q)=q(18-q)$ thousand euros and fixed event cost by $32$ thousand euros. The break-even equation $R(q)=32$ has two positive roots whose sum is $18$."
    ],
    "answer_key": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe leading coefficient and discriminant must both be checked. A zero discriminant is not enough if the equation has degenerated.\n\nUse the shifted parameter:\n\n$$q=k+1$$\n\nCompute the discriminant:\n\n$$\\Delta=4(q+1)^2-4(q-1)(2q-1)=4q(5-q)$$\n\nSet it to zero:\n\n$$4q(5-q)=0\\iff q\\in\\{0,5\\}$$\n\nCheck the leading coefficient:\n\n$$q-1\\ne0\\ \\text{at}\\ q=0,5$$\n\nTranslate back:\n\n$$k\\in\\{-1,4\\}$$\n\nBoth translated values remain quadratic and have a double root, so the statement is True.",
-    "**B.** → False\n\nSquaring preserves candidates but not the sign condition imposed by a principal square root.\n\nRecord the precondition:\n\n$$x-3\\ge0\\iff x\\ge 3$$\n\nSquare and collect:\n\n$$3x-5=(x-3)^2$$\n\nFactor the resulting quadratic:\n\n$$(x-2)(x-7)=0$$\n\nCheck the radical domain:\n\n$$3(2)-5=1\\ge0,\\qquad 3(7)-5=16\\ge0$$\n\nCheck the original right side:\n\n$$2-3=-1,\\qquad 7-3=4$$\n\nThe candidate $x=2$ is inside the radical domain; it fails for a sign reason, so the stated explanation makes the statement False.",
-    "**C.** → True\n\nConvert to exponential form and then enforce the logarithm domain. Completing the square keeps both tasks visible.\n\nUse exponential form:\n\n$$(x-2)^2+0=3^2=9$$\n\nIsolate the square:\n\n$$(x-2)^2=9$$\n\nTake both branches:\n\n$$x=2\\pm 3$$\n\nList the candidates:\n\n$$x\\in\\{-1,5\\}$$\n\nCheck the argument at a solution:\n\n$$(x-2)^2+0=9>0$$\n\nThe two admissible roots add to $4$, so the statement is True.",
-    "**D.** → True\n\nThe coefficient can vanish, so classify that parameter before dividing. Then solve a rational sign condition.\n\nAt the singular parameter:\n\n$$k=-1:\\quad 0\\cdot x=-14$$\n\nFor every other parameter:\n\n$$x=\\frac{2k-12}{k+1}=2\\frac{k-6}{k+1}$$\n\nUse the zero and pole:\n\n$$k=6\\ \\text{is a zero},\\qquad k=-1\\ \\text{is a pole}$$\n\nRead the nonnegative regions:\n\n$$k\\in(-\\infty,-1)\\cup[6,\\infty)$$\n\nThe zero is included, the singular parameter is excluded, and the printed classification is True.",
-    "**E.** → False\n\nThe leading coefficient and discriminant must both be checked. A zero discriminant is not enough if the equation has degenerated.\n\nUse the shifted parameter:\n\n$$q=k$$\n\nCompute the discriminant:\n\n$$\\Delta=4(q+1)^2-4(q-1)(2q-1)=4q(5-q)$$\n\nSet it to zero:\n\n$$4q(5-q)=0\\iff q\\in\\{0,5\\}$$\n\nCheck the leading coefficient:\n\n$$q-1\\ne0\\ \\text{at}\\ q=0,5$$\n\nTranslate back:\n\n$$k\\in\\{0,5\\}$$\n\nThe first printed parameter corresponds to $q=1$, where the equation is linear rather than repeated-root quadratic, so the statement is False."
+    "**A.** → True\n\nTotal profit is total revenue minus total cost, where revenue is output times price. We substitute both models into the profit equation:\n\n$$x(18 - x) - (16 + 2x) = 0$$\n\nExpanding the product and removing the parentheses gives:\n\n$$18x - x^2 - 16 - 2x = 0$$\n\n$$-x^2 + 16x - 16 = 0$$\n\nMultiplying by $-1$ puts the equation into standard monic form:\n\n$$x^2 - 16x + 16 = 0$$\n\nFor a quadratic equation $a x^2 + b x + c = 0$, the discriminant is given by:\n\n$$\\Delta = b^2 - 4ac$$\n\n$$\\Delta = (-16)^2 - 4(1)(16) = 256 - 64 = 192$$\n\nSince $\\Delta > 0$, there are two distinct real solutions. By Vieta's formulas, the sum and product of the roots are:\n\n$$x_1 + x_2 = -\\frac{b}{a} = 16$$\n\n$$x_1 \\cdot x_2 = \\frac{c}{a} = 16$$\n\nBecause the product is positive and the sum is positive, both roots have the same sign and are strictly positive. Explicitly, the roots are $x = 8 \\pm 4\\sqrt{3}$, where $8 - 4\\sqrt{3} > 0$. Thus, there are two distinct positive break-even levels whose sum is $16$ thousand copies, so the statement is True.",
+    "**B.** → True\n\nThe amenity utilization equation is $\\sqrt{5t - 9} = t - 3$. The principal square root is non-negative by definition, requiring $t - 3 \\ge 0$, which means $t \\ge 3$, alongside the radicand condition $5t - 9 \\ge 0$.\n\nSquaring both sides produces a quadratic equation:\n\n$$5t - 9 = (t - 3)^2$$\n\n$$5t - 9 = t^2 - 6t + 9$$\n\n$$t^2 - 11t + 18 = 0$$\n\nFactoring gives:\n\n$$(t - 2)(t - 9) = 0$$\n\nThis yields candidate values $t = 2$ and $t = 9$. Testing $t = 2$ in the original equation gives $\\sqrt{5(2) - 9} = \\sqrt{1} = 1$, whereas the right side equals $2 - 3 = -1$. Because $1 \\neq -1$, candidate $t = 2$ is an extraneous root arising from the squaring step. Testing $t = 9$ gives $\\sqrt{5(9) - 9} = \\sqrt{36} = 6$ and $9 - 3 = 6$, which is valid. Exactly one candidate is extraneous, so the statement is True.",
+    "**C.** → True\n\nLogarithmic and exponential equations are solved using the properties $\\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right)$ and $b^u = b^v \\iff u = v$.\n\nFor the logarithmic amortization model, the domain requires $t > 1$. Combining the logarithms yields:\n\n$$\\ln\\left(\\frac{2t + 4}{t - 1}\\right) = \\ln 4$$\n\n$$\\frac{2t + 4}{t - 1} = 4$$\n\n$$2t + 4 = 4(t - 1)$$\n\n$$2t + 4 = 4t - 4$$\n\n$$2t = 8$$\n\n$$t = 4$$\n\nFor the store expansion model, we set $N(t) = 120$:\n\n$$15 \\cdot 2^{0.5 t} = 120$$\n\n$$2^{0.5 t} = 8$$\n\n$$2^{0.5 t} = 2^3$$\n\n$$0.5 t = 3$$\n\n$$t = 6$$\n\nComparing the two values, $t = 4$ is strictly smaller than $t = 6$, so the statement is True.",
+    "**D.** → True\n\nTo find the break-even duration, we set the total cost of Option 1 equal to the total cost of Option 2:\n\n$$60 + (45 + k)t = 180 + (30 + k)t$$\n\nExpanding both sides gives:\n\n$$60 + 45t + kt = 180 + 30t + kt$$\n\nSubtracting $kt$ from both sides eliminates the parameter entirely:\n\n$$60 + 45t = 180 + 30t$$\n\nSubtracting $30t$ and $60$ from both sides yields:\n\n$$15t = 120$$\n\n$$t = 8$$\n\nThe duration is completely independent of the surcharge $k$ and equals exactly 8 months, so the statement is True.",
+    "**E.** → True\n\nBreak-even means revenue equals cost; Vieta's formulas then read the root sum.\n\n$$q(18-q)=32$$\n\n$$q^2-18q+32=0$$\n\n$$(q-2)(q-16)=0$$\n\n$$q_1+q_2=2+16=18$$\n\nBoth roots are positive production levels. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 195,
-   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. A tests shifted discriminant family; B tests radical extraneous sign; C tests logarithm of a quadratic; D tests parametric loading balance; E tests shifted discriminant family. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. Map: A tests a quadratic equation and the nature of its roots; B tests a rational, radical, or absolute-value equation; C tests an exponential or logarithmic equation with its domain; D tests a linear equation or parameter condition; E tests contextual break-even roots. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-196",
    "case_id": "MATH 4.196",
-   "title": "Hard mixed exam: 3",
+   "title": "Exam-style tasks — 3",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The sensor equation $\\sqrt{3x-8}=x-4$ yields squared-equation candidates $x=3$ and $x=8$; $x=3$ is extraneous because the right side $x-4$ is negative, leaving $x=8$ as the only solution.",
-    "The equation $\\log_{5}\\left((x-3)^2+9\\right)=2$ has no real root because a logarithm cannot have a quadratic argument; its argument is positive for every real $x$.",
-    "A cross-dock balance uses $(k+1)x=2k-14$, where $x$ is a signed pallet adjustment. It has a nonnegative solution exactly when $k\\in(-\\infty,-1]\\cup(7,\\infty)$; at $k=-1$ it has no solution.",
-    "A capacity model is $((k-1)-1)x^2-2((k-1)+1)x+2(k-1)-1=0$. It is genuinely quadratic with a repeated real root exactly when $k\\in\\{1,6\\}$.",
-    "The sensor equation $\\sqrt{3x-11}=x-5$ yields squared-equation candidates $x=4$ and $x=9$; $x=4$ is extraneous because it lies outside the radical domain, leaving $x=9$ as the only solution."
+    "A treasury model for spread balancing yields the rational equation $\\frac{x}{x-2} + \\frac{2}{x-3} = \\frac{2}{x^2-5x+6}$; clearing denominators produces two algebraic roots, but exactly one of them is an admissible solution in the domain of the equation.",
+    "An interest-rate benchmark model involves the exponential equation $4^t - 3 \\cdot 2^t - 4 = 0$; applying the substitution $u = 2^t$ yields two real roots for $u$, which correspond to two distinct real solutions for $t$.",
+    "A client comparing the standard plan of $40$ euros plus $2$ euros per gigabyte with a flexible plan of $15$ euros plus $3.5$ euros per gigabyte finds that the break-even data consumption is strictly greater than $18$ gigabytes.",
+    "A stabilization stage requires the operating time parameter $t$ (in hours) to satisfy the quadratic relation $2t^2 - 14t + 20 = 0$; the sum of all valid stabilization times equals $7$ hours, and both roots are strictly positive integers.",
+    "When setting the river transit equation $\\frac{120}{v+3} + \\frac{120}{v-3} = 9$ for vessel speed $v > 3$, clearing denominators produces an algebraic quadratic equation with two positive real solutions, both of which satisfy the physical speed constraint $v > 3$."
    ],
    "answer_key": [
     true,
@@ -6261,559 +6261,559 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSquaring preserves candidates but not the sign condition imposed by a principal square root.\n\nRecord the precondition:\n\n$$x-4\\ge0\\iff x\\ge 4$$\n\nSquare and collect:\n\n$$3x-8=(x-4)^2$$\n\nFactor the resulting quadratic:\n\n$$(x-3)(x-8)=0$$\n\nCheck the radical domain:\n\n$$3(3)-8=1\\ge0,\\qquad 3(8)-8=16\\ge0$$\n\nCheck the original right side:\n\n$$3-4=-1,\\qquad 8-4=4$$\n\nThe rejected candidate is inside the radical domain but violates the nonnegative-right-side condition, so the statement is True.",
-    "**B.** → False\n\nConvert to exponential form and then enforce the logarithm domain. Completing the square keeps both tasks visible.\n\nUse exponential form:\n\n$$(x-3)^2+9=5^2=25$$\n\nIsolate the square:\n\n$$(x-3)^2=16$$\n\nTake both branches:\n\n$$x=3\\pm 4$$\n\nList the candidates:\n\n$$x\\in\\{-1,7\\}$$\n\nCheck the argument at a solution:\n\n$$(x-3)^2+9=25>0$$\n\nA positive quadratic value can be a logarithm argument, and the equation has the two displayed roots, so the statement is False.",
-    "**C.** → False\n\nThe coefficient can vanish, so classify that parameter before dividing. Then solve a rational sign condition.\n\nAt the singular parameter:\n\n$$k=-1:\\quad 0\\cdot x=-16$$\n\nFor every other parameter:\n\n$$x=\\frac{2k-14}{k+1}=2\\frac{k-7}{k+1}$$\n\nUse the zero and pole:\n\n$$k=7\\ \\text{is a zero},\\qquad k=-1\\ \\text{is a pole}$$\n\nRead the nonnegative regions:\n\n$$k\\in(-\\infty,-1)\\cup[7,\\infty)$$\n\nThe printed set includes the inconsistent parameter and excludes the zero solution, so the statement is False.",
-    "**D.** → True\n\nThe leading coefficient and discriminant must both be checked. A zero discriminant is not enough if the equation has degenerated.\n\nUse the shifted parameter:\n\n$$q=k-1$$\n\nCompute the discriminant:\n\n$$\\Delta=4(q+1)^2-4(q-1)(2q-1)=4q(5-q)$$\n\nSet it to zero:\n\n$$4q(5-q)=0\\iff q\\in\\{0,5\\}$$\n\nCheck the leading coefficient:\n\n$$q-1\\ne0\\ \\text{at}\\ q=0,5$$\n\nTranslate back:\n\n$$k\\in\\{1,6\\}$$\n\nBoth translated values remain quadratic and have a double root, so the statement is True.",
-    "**E.** → False\n\nSquaring preserves candidates but not the sign condition imposed by a principal square root.\n\nRecord the precondition:\n\n$$x-5\\ge0\\iff x\\ge 5$$\n\nSquare and collect:\n\n$$3x-11=(x-5)^2$$\n\nFactor the resulting quadratic:\n\n$$(x-4)(x-9)=0$$\n\nCheck the radical domain:\n\n$$3(4)-11=1\\ge0,\\qquad 3(9)-11=16\\ge0$$\n\nCheck the original right side:\n\n$$4-5=-1,\\qquad 9-5=4$$\n\nThe candidate $x=4$ is inside the radical domain; it fails for a sign reason, so the stated explanation makes the statement False."
+    "**A.** → True\n\nThe rational equation is:\n\n$$\\frac{x}{x-2} + \\frac{2}{x-3} = \\frac{2}{x^2-5x+6}$$\n\nThe denominator factors as $x^2 - 5x + 6 = (x-2)(x-3)$, so the domain of the equation requires $x \\neq 2$ and $x \\neq 3$. Multiplying through by $(x-2)(x-3)$ clears the denominators:\n\n$$x(x-3) + 2(x-2) = 2$$\n\n$$x^2 - 3x + 2x - 4 = 2$$\n\n$$x^2 - x - 6 = 0$$\n\n$$(x - 3)(x + 2) = 0$$\n\nThe algebraic roots are $x = 3$ and $x = -2$. However, $x = 3$ violates the domain condition because it causes division by zero, making it an extraneous root. Thus, $x = -2$ is the only admissible solution in the domain, so the statement is True.",
+    "**B.** → False\n\nThe exponential equation is:\n\n$$4^t - 3 \\cdot 2^t - 4 = 0$$\n\nUsing $4^t = (2^t)^2$ and substituting $u = 2^t$ produces the quadratic equation:\n\n$$u^2 - 3u - 4 = 0$$\n\n$$(u - 4)(u + 1) = 0$$\n\nThis yields two real values for the auxiliary variable: $u = 4$ and $u = -1$. Returning to the definition $u = 2^t$:\n\n$$2^t = 4 \\implies t = 2$$\n\n$$2^t = -1$$\n\nBecause the exponential function $2^t > 0$ for all real numbers $t$, the equation $2^t = -1$ has no real solution. Consequently, there is only one real solution for $t$, so the statement is False.",
+    "**C.** → False\n\nTo find the break-even data consumption, we set the total cost of the standard plan equal to the flexible plan:\n\n$$40 + 2x = 15 + 3.5x$$\n\nSubtracting $2x$ and $15$ from both sides gives:\n\n$$25 = 1.5x$$\n\nSolving for $x$ yields:\n\n$$x = \\frac{25}{1.5} = \\frac{50}{3} = 16.\\bar{6}$$\n\nThe break-even consumption is approximately $16.67$ gigabytes, which is not strictly greater than $18$ gigabytes, so the statement is False.",
+    "**D.** → True\n\nThe quadratic equation is simplified by dividing by the common factor $2$ and factoring:\n\n$$2t^2 - 14t + 20 = 0$$\n\n$$t^2 - 7t + 10 = 0$$\n\n$$(t - 2)(t - 5) = 0$$\n\nThe solutions are $t = 2$ and $t = 5$. Both are strictly positive integers, and their sum is $2 + 5 = 7$, so the statement is True.",
+    "**E.** → False\n\nSetting $T(v) = 9$ gives the rational equation $\\frac{120}{v+3} + \\frac{120}{v-3} = 9$ with domain $v > 3$. Multiplying both sides by $(v+3)(v-3) = v^2 - 9$ clears denominators:\n\n$$120(v - 3) + 120(v + 3) = 9(v^2 - 9)$$\n\n$$240v = 9v^2 - 81$$\n\n$$9v^2 - 240v - 81 = 0$$\n\nDividing by $3$ simplifies the quadratic equation:\n\n$$3v^2 - 80v - 27 = 0$$\n\n$$(3v + 1)(v - 27) = 0$$\n\nThe two algebraic solutions are $v = 27$ and $v = -\\frac{1}{3}$. The second root is negative rather than positive, and it fails the physical requirement $v > 3$. Therefore, the quadratic equation does not yield two positive real solutions satisfying $v > 3$, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 196,
-   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. A tests radical extraneous sign; B tests logarithm of a quadratic; C tests parametric loading balance; D tests shifted discriminant family; E tests radical extraneous sign. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. Map: A tests a rational, radical, or absolute-value equation; B tests an exponential or logarithmic equation with its domain; C tests a linear equation or parameter condition; D tests a quadratic equation and the nature of its roots; E tests a rational, radical, or absolute-value equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-197",
    "case_id": "MATH 4.197",
-   "title": "Hard mixed exam: 4",
+   "title": "Exam-style tasks — 4",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The equation $\\log_{2}\\left((x-4)^2-17\\right)=3$ has two roots, $x=-1$ and $x=9$, whose sum is $8$; its argument is also required to be positive.",
-    "A cross-dock balance uses $(k+1)x=2k-16$, where $x$ is a signed pallet adjustment. It has a nonnegative solution exactly when $k\\in(-\\infty,-1)\\cup[8,\\infty)$; at $k=-1$ it has no solution.",
-    "A capacity model is $((k-2)-1)x^2-2((k-2)+1)x+2(k-2)-1=0$. It is genuinely quadratic with a repeated real root exactly when $k\\in\\{3,7\\}$.",
-    "The sensor equation $\\sqrt{3x-14}=x-6$ yields squared-equation candidates $x=5$ and $x=10$; $x=5$ is extraneous because the right side $x-6$ is negative, leaving $x=10$ as the only solution.",
-    "The equation $\\log_{3}\\left((x-5)^2-27\\right)=2$ has no real root because a logarithm cannot have a quadratic argument; its argument is also required to be positive."
+    "An unstable active agent degrades such that its remaining mass in grams after $t$ hours is modeled by $M(t) = 160 \\cdot 4^{-t/6}$; the elapsed time required for the mass to decrease to $5$ grams is an even integer.",
+    "If an uninvested cash reserve of $12,000 subject to quarterly withdrawals of $600 and a constant annual custody fee $f$ is completely depleted after exactly 4 years, then the annual fee $f$ strictly exceeds the quarterly withdrawal amount.",
+    "For the corporate group package where the monthly fee per employee is $P(n) = 90 - 2n$ dollars for a group of $n$ employees, the studio's total monthly revenue from a single company can reach \\$1050 for two distinct group sizes, and the sum of these two group sizes equals 45.",
+    "The soil acidity balance condition $|2x - 7| = 3x - 8$ yields exactly one valid real solution because the algebraic candidate $x = 1$ is extraneous.",
+    "The booking equation $\\ln(4t + 12) - \\ln(t + 1) = \\ln 3$ has exactly one positive solution $t$."
    ],
    "answer_key": [
-    true,
-    true,
+    false,
+    false,
     false,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nConvert to exponential form and then enforce the logarithm domain. Completing the square keeps both tasks visible.\n\nUse exponential form:\n\n$$(x-4)^2-17=2^3=8$$\n\nIsolate the square:\n\n$$(x-4)^2=25$$\n\nTake both branches:\n\n$$x=4\\pm 5$$\n\nList the candidates:\n\n$$x\\in\\{-1,9\\}$$\n\nCheck the argument at a solution:\n\n$$(x-4)^2-17=8>0$$\n\nThe two admissible roots add to $8$, so the statement is True.",
-    "**B.** → True\n\nThe coefficient can vanish, so classify that parameter before dividing. Then solve a rational sign condition.\n\nAt the singular parameter:\n\n$$k=-1:\\quad 0\\cdot x=-18$$\n\nFor every other parameter:\n\n$$x=\\frac{2k-16}{k+1}=2\\frac{k-8}{k+1}$$\n\nUse the zero and pole:\n\n$$k=8\\ \\text{is a zero},\\qquad k=-1\\ \\text{is a pole}$$\n\nRead the nonnegative regions:\n\n$$k\\in(-\\infty,-1)\\cup[8,\\infty)$$\n\nThe zero is included, the singular parameter is excluded, and the printed classification is True.",
-    "**C.** → False\n\nThe leading coefficient and discriminant must both be checked. A zero discriminant is not enough if the equation has degenerated.\n\nUse the shifted parameter:\n\n$$q=k-2$$\n\nCompute the discriminant:\n\n$$\\Delta=4(q+1)^2-4(q-1)(2q-1)=4q(5-q)$$\n\nSet it to zero:\n\n$$4q(5-q)=0\\iff q\\in\\{0,5\\}$$\n\nCheck the leading coefficient:\n\n$$q-1\\ne0\\ \\text{at}\\ q=0,5$$\n\nTranslate back:\n\n$$k\\in\\{2,7\\}$$\n\nThe first printed parameter corresponds to $q=1$, where the equation is linear rather than repeated-root quadratic, so the statement is False.",
-    "**D.** → True\n\nSquaring preserves candidates but not the sign condition imposed by a principal square root.\n\nRecord the precondition:\n\n$$x-6\\ge0\\iff x\\ge 6$$\n\nSquare and collect:\n\n$$3x-14=(x-6)^2$$\n\nFactor the resulting quadratic:\n\n$$(x-5)(x-10)=0$$\n\nCheck the radical domain:\n\n$$3(5)-14=1\\ge0,\\qquad 3(10)-14=16\\ge0$$\n\nCheck the original right side:\n\n$$5-6=-1,\\qquad 10-6=4$$\n\nThe rejected candidate is inside the radical domain but violates the nonnegative-right-side condition, so the statement is True.",
-    "**E.** → False\n\nConvert to exponential form and then enforce the logarithm domain. Completing the square keeps both tasks visible.\n\nUse exponential form:\n\n$$(x-5)^2-27=3^2=9$$\n\nIsolate the square:\n\n$$(x-5)^2=36$$\n\nTake both branches:\n\n$$x=5\\pm 6$$\n\nList the candidates:\n\n$$x\\in\\{-1,11\\}$$\n\nCheck the argument at a solution:\n\n$$(x-5)^2-27=9>0$$\n\nA positive quadratic value can be a logarithm argument, and the equation has the two displayed roots, so the statement is False."
+    "**A.** → False\n\nSetting the mass equal to $5$ grams yields an exponential equation that can be solved by converting both sides to base $2$:\n\n$$160 \\cdot 4^{-t/6} = 5$$\n\n$$4^{-t/6} = \\frac{5}{160}$$\n\n$$4^{-t/6} = \\frac{1}{32}$$\n\n$$(2^2)^{-t/6} = 2^{-5}$$\n\n$$2^{-t/3} = 2^{-5}$$\n\n$$-\\frac{t}{3} = -5$$\n\n$$t = 15$$\n\nThe time required is $15$ hours, which is an odd integer, so the statement is False.",
+    "**B.** → False\n\nThe uninvested reserve balance after $t$ years with an annual fee $f$ and four quarterly withdrawals of \\$600 per year is given by the linear equation:\n\n$$R(t) = 12\\,000 - f \\cdot t - 4(600)t$$\n\n$$R(t) = 12\\,000 - (f + 2400)t$$\n\nSetting the balance to zero at $t = 4$ years gives:\n\n$$12\\,000 - 4(f + 2400) = 0$$\n\n$$12\\,000 - 4f - 9600 = 0$$\n\n$$2400 - 4f = 0$$\n\n$$4f = 2400$$\n\n$$f = 600$$\n\nThe annual fee is \\$600, which is equal to the quarterly withdrawal of \\$600, not strictly greater than it, so the statement is False.",
+    "**C.** → False\n\nThe total monthly revenue from a group of $n$ employees is given by the product of the number of employees and the fee per employee:\n\n$$R(n) = n(90 - 2n) = 90n - 2n^2$$\n\nSetting $R(n) = 1050$ gives the quadratic equation:\n\n$$-2n^2 + 90n = 1050$$\n\nRearranging into standard form and dividing by 2 yields:\n\n$$n^2 - 45n + 525 = 0$$\n\nTo determine if real solutions exist, we calculate the discriminant:\n\n$$D = (-45)^2 - 4(1)(525)$$\n\n$$D = 2025 - 2100 = -75$$\n\nSince the discriminant is strictly negative, there are no real solutions, meaning a monthly revenue of \\$1050 is never achievable for any group size, so the statement is False.",
+    "**D.** → True\n\nAn absolute-value equation $|A| = B$ requires $B \\ge 0$ and splits into $A = B$ or $A = -B$.\n\nFor the first branch $2x - 7 = 3x - 8$:\n\n$$-x = -1 \\implies x = 1$$\n\nTesting $x = 1$ in the original equation gives $|2(1) - 7| = |-5| = 5$, whereas the right-hand side is $3(1) - 8 = -5$. Since $5 \\neq -5$, the candidate $x = 1$ is extraneous.\n\nFor the second branch $-(2x - 7) = 3x - 8$:\n\n$$-2x + 7 = 3x - 8$$\n\n$$-5x = -15 \\implies x = 3$$\n\nTesting $x = 3$ gives $|2(3) - 7| = | -1 | = 1$ and $3(3) - 8 = 1$, which is valid.\n\nTherefore, the equation possesses exactly one valid real solution and $x = 1$ is indeed extraneous, so the statement is True.",
+    "**E.** → False\n\nUsing the logarithmic quotient rule $\\ln(a) - \\ln(b) = \\ln\\left(\\frac{a}{b}\\right)$, we combine the left-hand side:\n\n$$\\ln\\left(\\frac{4t + 12}{t + 1}\\right) = \\ln 3$$\n\nApplying the exponential function to both sides gives the algebraic equation:\n\n$$\\frac{4t + 12}{t + 1} = 3$$\n\nMultiplying by $t + 1$ (for $t \\neq -1$) yields:\n\n$$4t + 12 = 3(t + 1)$$\n\n$$4t + 12 = 3t + 3$$\n\n$$t = -9$$\n\nWe must check the domain of the original logarithmic expressions, which requires $4t + 12 > 0 \\implies t > -3$ and $t + 1 > 0 \\implies t > -1$. Since $t = -9$ violates both conditions (producing negative arguments inside the logarithms), the equation has no real solutions at all, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 197,
-   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. A tests logarithm of a quadratic; B tests parametric loading balance; C tests shifted discriminant family; D tests radical extraneous sign; E tests logarithm of a quadratic. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. Map: A tests an exponential or logarithmic equation with its domain; B tests a linear equation or parameter condition; C tests a quadratic equation and the nature of its roots; D tests a rational, radical, or absolute-value equation; E tests an exponential or logarithmic equation with its domain. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-198",
    "case_id": "MATH 4.198",
-   "title": "Hard mixed exam: 5",
+   "title": "Exam-style tasks — 5",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A refrigerated carrier quotes Plan A as $180+(k+2)x$ euros and Plan B as $240+(2k-1)x$ euros for $x>0$ pallets. A positive break-even load no larger than $60$ pallets exists exactly when $k<2$.",
-    "The demand equation $x^2-(k+2)x+2(k-2)=0$ has two distinct real roots of opposite signs exactly when $k<2$.",
-    "The calibration equation $\\sqrt{x+5}-\\sqrt{x-4}=1$, on $x\\ge 4$, has the unique real solution $x=19$.",
-    "The loading equation $\\log_{2}(x-0)+\\log_{2}(x-3)=\\log_{2}(10)$ has the algebraic roots $x=-2$ and $x=5$, but only $x=5$ is admissible.",
-    "A refrigerated carrier quotes Plan A as $180+(k+2)x$ euros and Plan B as $255+(2k-1)x$ euros for $x>0$ pallets. A positive break-even load no larger than $75$ pallets exists exactly when $k\\le2$."
+    "A commuter pays a fee of \\$12 per month, \\$2.50 for a Zone 1 ticket and \\$4.00 for a Zone 2 ticket, makes twice as many Zone 1 trips as Zone 2 trips and spends exactly \\$120. The total number of trips is an odd integer greater than $35$.",
+    "When vine crowding limits output, total grape yield meets a target threshold whenever $x^2 - 14x + 40 = 0$; both solutions to this quadratic model represent strictly positive, distinct admissible land allocations.",
+    "Setting the average printing cost $\\bar{C}(x) = \\frac{16 + 2x}{x}$ equal to half the unit market price $p(x) = 18 - x$, that is $\\bar{C}(x) = \\frac{1}{2}p(x)$, leads to a rational equation that simplifies to a quadratic equation with a negative discriminant and thus no real solutions.",
+    "An aroma concentration balance requires $\\ln(x + 10) + \\ln(x - 10) = \\ln(300)$; because the associated quadratic equation has roots $x = 20$ and $x = -20$, both values represent valid physical blend amounts within the domain of the logarithmic model.",
+    "In the linear blending model, mixing Blend Alpha at $12\\%$ nitrogen with Blend Beta at $32\\%$ nitrogen to achieve an overall nitrogen concentration of $27\\%$ in a total batch of $200$ litres requires Blend Alpha to constitute strictly less than $30\\%$ of the total mixture volume."
    ],
    "answer_key": [
     false,
     true,
     false,
-    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nEquate the complete tariffs first. The parameter controls both existence and the size of the positive break-even load.\n\nSet the plans equal:\n\n$$180+(k+2)x=240+(2k-1)x$$\n\nCollect the load terms:\n\n$$(3-k)x=60$$\n\nRequire a positive load:\n\n$$x=\\frac{60}{3-k}>0\\iff k<3$$\n\nImpose the upper limit:\n\n$$\\frac{60}{3-k}\\le 60\\iff 3-k\\ge1\\iff k\\le2$$\n\nAt $k=2$ the admissible load equals $60$, so omitting that endpoint makes the statement False.",
-    "**B.** → True\n\nRoot existence and root signs are separate questions. The discriminant is always positive, then Vieta controls the sign pattern.\n\nCompute the discriminant:\n\n$$\\Delta=(k+2)^2-42(k-2)=(k-2)^2+4\\cdot 4$$\n\nConclude distinct reality:\n\n$$\\Delta>0\\quad\\text{for every real }k$$\n\nUse the root product:\n\n$$x_1x_2=2(k-2)$$\n\nRequire opposite signs:\n\n$$x_1x_2<0\\iff k<2$$\n\nThe strict parameter inequality is exactly the negative-product condition, so the statement is True.",
-    "**C.** → False\n\nUse the conjugate relation before squaring. The difference of the radicands is fixed, so the sum of the radicals is forced.\n\nMultiply difference by sum:\n\n$$(\\sqrt{x+5}-\\sqrt{x-4})(\\sqrt{x+5}+\\sqrt{x-4})=9$$\n\nUse the given difference:\n\n$$\\sqrt{x+5}+\\sqrt{x-4}=9$$\n\nSolve the two-equation system:\n\n$$2\\sqrt{x+5}=10$$\n\nSquare once:\n\n$$x+5=\\left(\\frac{10}2\\right)^2$$\n\nRecover the candidate:\n\n$$x=20$$\n\nThe forced value is $x=20$, not $x=19$, so the statement is False.",
-    "**D.** → True\n\nThe product rule is valid only on the intersection of the two logarithm domains. Solve the quadratic, then return to that intersection.\n\nIntersect the domains:\n\n$$x-0>0,\\ x-3>0\\iff x>3$$\n\nCombine the logarithms:\n\n$$\\log_{2}((x-0)(x-3))=\\log_{2}(10)$$\n\nUse injectivity:\n\n$$(x-0)(x-3)=10$$\n\nFactor the quadratic:\n\n$$(x+2)(x-5)=0$$\n\nApply the domain:\n\n$$-2<3< 5$$\n\nOnly $x=5$ lies in the original domain, so the statement is True.",
-    "**E.** → True\n\nEquate the complete tariffs first. The parameter controls both existence and the size of the positive break-even load.\n\nSet the plans equal:\n\n$$180+(k+2)x=255+(2k-1)x$$\n\nCollect the load terms:\n\n$$(3-k)x=75$$\n\nRequire a positive load:\n\n$$x=\\frac{75}{3-k}>0\\iff k<3$$\n\nImpose the upper limit:\n\n$$\\frac{75}{3-k}\\le 75\\iff 3-k\\ge1\\iff k\\le2$$\n\nAt $k=2$ the break-even load is exactly $75$, so the closed endpoint makes the statement True."
+    "**A.** → False\n\nTo find the number of trips, we set up a linear equation in one unknown for the monthly travel budget. Let $x$ represent the number of single trips taken in Zone 2. Because the commuter makes twice as many trips in Zone 1 as in Zone 2, the number of Zone 1 trips is $2x$.\n\nThe total monthly expenditure is the sum of the administration fee and the ticket costs:\n\n$$12 + 2.50(2x) + 4.00x = 120$$\n\n$$12 + 5x + 4x = 120$$\n\n$$9x = 108$$\n\n$$x = 12$$\n\nThe commuter therefore takes $x = 12$ trips in Zone 2 and $2x = 24$ trips in Zone 1, giving a total of $12 + 24 = 36$ trips. The value 36 is an even number, so the statement is False.",
+    "**B.** → True\n\nThe quadratic model relating yield target to land allocation is:\n\n$$x^2 - 14x + 40 = 0$$\n\nWe solve this quadratic equation by factoring the trinomial into linear factors:\n\n$$(x - 4)(x - 10) = 0$$\n\nSetting each factor to zero provides the two real roots:\n\n$$x_1 = 4, \\quad x_2 = 10$$\n\nBoth roots are strictly positive real numbers and satisfy the contextual requirement $x > 0$, so the statement is True.",
+    "**C.** → False\n\nThe condition sets average cost equal to half the market price:\n\n$$\\frac{16 + 2x}{x} = \\frac{18 - x}{2}$$\n\nCross-multiplying for $x > 0$ yields:\n\n$$2(16 + 2x) = x(18 - x)$$\n\n$$32 + 4x = 18x - x^2$$\n\n$$x^2 - 14x + 32 = 0$$\n\nTo determine whether this equation has real solutions, evaluate its discriminant:\n\n$$\\Delta = (-14)^2 - 4(1)(32)$$\n\n$$\\Delta = 196 - 128 = 68$$\n\nSince $\\Delta = 68 > 0$, the quadratic equation has two distinct real solutions rather than a negative discriminant, so the statement is False.",
+    "**D.** → False\n\nApplying logarithm laws to $\\ln(x + 10) + \\ln(x - 10) = \\ln(300)$ gives:\n\n$$\\ln((x + 10)(x - 10)) = \\ln(300)$$\n\n$$x^2 - 100 = 300$$\n\n$$x^2 = 400$$\n\n$$x = \\pm 20$$\n\nThe natural logarithm requires strictly positive arguments, which defines the domain as $x > 10$. Consequently, $x = -20$ makes both $\\ln(x + 10)$ and $\\ln(x - 10)$ undefined over real numbers, meaning only $x = 20$ is valid, so the statement is False.",
+    "**E.** → True\n\nThe required volume of Blend Alpha is obtained from the linear nitrogen conservation equation $0.12x + 0.32(200 - x) = 0.27 \\cdot 200$.\n\nSolving this equation gives:\n\n$$-0.20x = 54 - 64$$\n\n$$x = 50$$\n\nWe express the volume of Blend Alpha as a percentage of the total 200-litre batch:\n\n$$\\frac{50}{200} = 0.25 = 25\\%$$\n\nSince $25\\% < 30\\%$, Blend Alpha constitutes strictly less than 30% of the total volume, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 198,
-   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. A tests parameterized freight tariffs; B tests Vieta sign classification; C tests difference of two radicals; D tests sum of logarithms and domain; E tests parameterized freight tariffs. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. Map: A tests a linear equation or parameter condition; B tests a quadratic equation and the nature of its roots; C tests a rational, radical, or absolute-value equation; D tests an exponential or logarithmic equation with its domain; E tests a linear equation or parameter condition. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-199",
    "case_id": "MATH 4.199",
-   "title": "Hard mixed exam: 6",
+   "title": "Exam-style tasks — 6",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The demand equation $x^2-(k+3)x+3(k-3)=0$ has two distinct real roots of opposite signs exactly when $k\\le 3$.",
-    "The calibration equation $\\sqrt{x+7}-\\sqrt{x-2}=1$, on $x\\ge 2$, has the unique real solution $x=18$.",
-    "The loading equation $\\log_{3}(x-1)+\\log_{3}(x-4)=\\log_{3}(10)$ has two admissible roots, $x=-1$ and $x=6$.",
-    "A refrigerated carrier quotes Plan A as $180+(k+2)x$ euros and Plan B as $270+(2k-1)x$ euros for $x>0$ pallets. A positive break-even load no larger than $90$ pallets exists exactly when $k<2$.",
-    "The demand equation $x^2-(k+4)x+4(k-4)=0$ has two distinct real roots of opposite signs exactly when $k<4$."
+    "The net daily operating profit (in hundreds of euros) across both shifts is $\\Pi(x) = -x^2 + 22x - 40$. There exists a unique output level $x$ at which this profit reaches $81$ hundred euros, and this output is an odd integer.",
+    "Under an irrigation pipe-flow model governed by the radical equation $\\sqrt{2x + 13} = x - 1$, squaring both sides produces two distinct real candidate values, but exactly one candidate is extraneous and fails the original radical equation.",
+    "Mobile ticket use after $m$ months is $P(m) = \\frac{1}{1 + 8e^{-0.25m}}$. The target $P(m) = 0.80$ is reached at $m = 20\\ln(2)$ months, which is less than $14$ months.",
+    "If printing costs are $C(x) = 16 + 2x$ thousand euros for $x$ thousand copies and a wholesale distributor buys the entire print run at a fixed rate of $6$ thousand euros per thousand books, the unique break-even batch size $x$ satisfying $6x = C(x)$ is an integer strictly less than $5$ thousand copies.",
+    "For the parameter family $x^2-2(k+1)x+k^2+1=0$, a repeated real root occurs exactly when $k=0$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nRoot existence and root signs are separate questions. The discriminant is always positive, then Vieta controls the sign pattern.\n\nCompute the discriminant:\n\n$$\\Delta=(k+3)^2-43(k-3)=(k-3)^2+4\\cdot 9$$\n\nConclude distinct reality:\n\n$$\\Delta>0\\quad\\text{for every real }k$$\n\nUse the root product:\n\n$$x_1x_2=3(k-3)$$\n\nRequire opposite signs:\n\n$$x_1x_2<0\\iff k<3$$\n\nAt $k=3$ one root is zero, so the roots are not of opposite signs and the closed endpoint makes the statement False.",
-    "**B.** → True\n\nUse the conjugate relation before squaring. The difference of the radicands is fixed, so the sum of the radicals is forced.\n\nMultiply difference by sum:\n\n$$(\\sqrt{x+7}-\\sqrt{x-2})(\\sqrt{x+7}+\\sqrt{x-2})=9$$\n\nUse the given difference:\n\n$$\\sqrt{x+7}+\\sqrt{x-2}=9$$\n\nSolve the two-equation system:\n\n$$2\\sqrt{x+7}=10$$\n\nSquare once:\n\n$$x+7=\\left(\\frac{10}2\\right)^2$$\n\nRecover the candidate:\n\n$$x=18$$\n\nThe candidate lies in the domain and direct substitution gives difference $1$, so the statement is True.",
-    "**C.** → False\n\nThe product rule is valid only on the intersection of the two logarithm domains. Solve the quadratic, then return to that intersection.\n\nIntersect the domains:\n\n$$x-1>0,\\ x-4>0\\iff x>4$$\n\nCombine the logarithms:\n\n$$\\log_{3}((x-1)(x-4))=\\log_{3}(10)$$\n\nUse injectivity:\n\n$$(x-1)(x-4)=10$$\n\nFactor the quadratic:\n\n$$(x+1)(x-6)=0$$\n\nApply the domain:\n\n$$-1<4< 6$$\n\nThe candidate $x=-1$ violates both-arguments-positive condition, so the statement is False.",
-    "**D.** → False\n\nEquate the complete tariffs first. The parameter controls both existence and the size of the positive break-even load.\n\nSet the plans equal:\n\n$$180+(k+2)x=270+(2k-1)x$$\n\nCollect the load terms:\n\n$$(3-k)x=90$$\n\nRequire a positive load:\n\n$$x=\\frac{90}{3-k}>0\\iff k<3$$\n\nImpose the upper limit:\n\n$$\\frac{90}{3-k}\\le 90\\iff 3-k\\ge1\\iff k\\le2$$\n\nAt $k=2$ the admissible load equals $90$, so omitting that endpoint makes the statement False.",
-    "**E.** → True\n\nRoot existence and root signs are separate questions. The discriminant is always positive, then Vieta controls the sign pattern.\n\nCompute the discriminant:\n\n$$\\Delta=(k+4)^2-44(k-4)=(k-4)^2+4\\cdot 16$$\n\nConclude distinct reality:\n\n$$\\Delta>0\\quad\\text{for every real }k$$\n\nUse the root product:\n\n$$x_1x_2=4(k-4)$$\n\nRequire opposite signs:\n\n$$x_1x_2<0\\iff k<4$$\n\nThe strict parameter inequality is exactly the negative-product condition, so the statement is True."
+    "**A.** → True\n\nTo evaluate when net operating profit equals $81$ hundred euros, set $\\Pi(x) = 81$:\n\n$$-x^2 + 22x - 40 = 81$$\n\nRearrange into standard quadratic form:\n\n$$x^2 - 22x + 121 = 0$$\n\nCompute the discriminant:\n\n$$\\Delta = (-22)^2 - 4(1)(121)$$\n\n$$\\Delta = 484 - 484 = 0$$\n\nBecause the discriminant is zero, the equation factors as a perfect square:\n\n$$(x - 11)^2 = 0$$\n\n$$x = 11$$\n\nThere is a single unique output level, $x = 11$, which is an odd integer, so the statement is True.",
+    "**B.** → True\n\nThe radical equation governing the irrigation requirement is:\n\n$$\\sqrt{2x + 13} = x - 1$$\n\nSquaring both sides of the equation eliminates the radical:\n\n$$2x + 13 = (x - 1)^2$$\n\n$$2x + 13 = x^2 - 2x + 1$$\n\nRearranging all terms to one side yields a standard quadratic equation:\n\n$$x^2 - 4x - 12 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 6)(x + 2) = 0$$\n\nThis produces two distinct candidate roots, $x = 6$ and $x = -2$. Substituting $x = 6$ into the original equation gives $\\sqrt{25} = 5$, which is true. Substituting $x = -2$ into the original equation gives $\\sqrt{9} = -3$, which is false because the principal square root is non-negative. Therefore, exactly one candidate is extraneous, so the statement is True.",
+    "**C.** → True\n\nTo find the time $m$ required for digital adoption to reach $80\\%$, we set $P(m) = 0.80 = \\frac{4}{5}$ and solve the exponential equation:\n\n$$\\frac{1}{1 + 8e^{-0.25m}} = \\frac{4}{5}$$\n\nInverting both sides yields:\n\n$$1 + 8e^{-0.25m} = \\frac{5}{4}$$\n\n$$8e^{-0.25m} = \\frac{1}{4}$$\n\n$$e^{-0.25m} = \\frac{1}{32} = 2^{-5}$$\n\nTaking the natural logarithm of both sides gives:\n\n$$-0.25m = \\ln(2^{-5}) = -5\\ln(2)$$\n\n$$-\\frac{1}{4}m = -5\\ln(2)$$\n\n$$m = 20\\ln(2)$$\n\nUsing the approximation $\\ln(2) \\approx 0.69315$, we compute the duration:\n\n$$m = 20 \\cdot 0.69315 = 13.863$$\n\nSince $13.863 < 14$, the required time is strictly less than 14 months, so the statement is True.",
+    "**D.** → True\n\nThe distributor pays a constant price of $6$ thousand euros per thousand books, giving total revenue $R(x) = 6x$. Setting total revenue equal to total printing cost yields a linear equation in one unknown:\n\n$$6x = 16 + 2x$$\n\n$$4x = 16$$\n\n$$x = 4$$\n\nThe unique solution is $x = 4$, which is an integer and satisfies $4 < 5$, so the statement is True.",
+    "**E.** → True\n\nA quadratic has a repeated real root exactly when its discriminant is zero.\n\n$$\\Delta=[-2(k+1)]^2-4(k^2+1)$$\n\n$$\\Delta=4(k^2+2k+1-k^2-1)=8k$$\n\n$$\\Delta=0\\iff k=0$$\n\nAt $k=0$ the equation is $(x-1)^2=0$. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 199,
-   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. A tests Vieta sign classification; B tests difference of two radicals; C tests sum of logarithms and domain; D tests parameterized freight tariffs; E tests Vieta sign classification. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. Map: A tests a quadratic equation and the nature of its roots; B tests a rational, radical, or absolute-value equation; C tests an exponential or logarithmic equation with its domain; D tests a linear equation or parameter condition; E tests parameter for a double root. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-200",
    "case_id": "MATH 4.200",
-   "title": "Hard mixed exam: 7",
+   "title": "Exam-style tasks — 7",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The calibration equation $\\sqrt{x+8}-\\sqrt{x-1}=1$, on $x\\ge 1$, has the unique real solution $x=16$.",
-    "The loading equation $\\log_{4}(x-2)+\\log_{4}(x-5)=\\log_{4}(10)$ has the algebraic roots $x=0$ and $x=7$, but only $x=7$ is admissible.",
-    "A refrigerated carrier quotes Plan A as $180+(k+2)x$ euros and Plan B as $285+(2k-1)x$ euros for $x>0$ pallets. A positive break-even load no larger than $105$ pallets exists exactly when $k\\le2$.",
-    "The demand equation $x^2-(k+5)x+5(k-5)=0$ has two distinct real roots of opposite signs exactly when $k\\le 5$.",
-    "The calibration equation $\\sqrt{x+10}-\\sqrt{x-3}=1$, on $x\\ge 3$, has the unique real solution $x=39$."
+    "When solving the network line-load equation $\\sqrt{3x + 1} - \\sqrt{x - 1} = 2$ over the domain $x \\ge 1$, algebraic squaring generates an extraneous root that must be discarded, leaving only one valid solution.",
+    "An econometric model for the studio's monthly attendance volatility index $v$ yields the logarithmic equation $\\ln(v^2 - 5) = \\ln(4v)$, which has two distinct valid real solutions because its underlying quadratic equation has two distinct real roots.",
+    "A repair shop's billing calibration leads to the linear equation $4(2h-3)-5(h+1)=23$. The resulting hourly parameter is $h=\\dfrac{40}{3}$.",
+    "Under the quadratic crop yield model $Y(n) = -\\frac{1}{20}n^2 + 6n + 20$, the sum of all nitrogen application levels $n$ that produce a target yield of 160 metric tonnes per hectare equals 120 kg/ha, and both feasible targets represent strictly positive nitrogen amounts.",
+    "An SLA monitoring system triggers an audit whenever the bandwidth deviation parameter $y$ satisfies $|3y - 24| = y + 8$, and this equation admits exactly one integer solution."
    ],
    "answer_key": [
     false,
-    true,
-    true,
     false,
-    true
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nUse the conjugate relation before squaring. The difference of the radicands is fixed, so the sum of the radicals is forced.\n\nMultiply difference by sum:\n\n$$(\\sqrt{x+8}-\\sqrt{x-1})(\\sqrt{x+8}+\\sqrt{x-1})=9$$\n\nUse the given difference:\n\n$$\\sqrt{x+8}+\\sqrt{x-1}=9$$\n\nSolve the two-equation system:\n\n$$2\\sqrt{x+8}=10$$\n\nSquare once:\n\n$$x+8=\\left(\\frac{10}2\\right)^2$$\n\nRecover the candidate:\n\n$$x=17$$\n\nThe forced value is $x=17$, not $x=16$, so the statement is False.",
-    "**B.** → True\n\nThe product rule is valid only on the intersection of the two logarithm domains. Solve the quadratic, then return to that intersection.\n\nIntersect the domains:\n\n$$x-2>0,\\ x-5>0\\iff x>5$$\n\nCombine the logarithms:\n\n$$\\log_{4}((x-2)(x-5))=\\log_{4}(10)$$\n\nUse injectivity:\n\n$$(x-2)(x-5)=10$$\n\nFactor the quadratic:\n\n$$(x-0)(x-7)=0$$\n\nApply the domain:\n\n$$0<5< 7$$\n\nOnly $x=7$ lies in the original domain, so the statement is True.",
-    "**C.** → True\n\nEquate the complete tariffs first. The parameter controls both existence and the size of the positive break-even load.\n\nSet the plans equal:\n\n$$180+(k+2)x=285+(2k-1)x$$\n\nCollect the load terms:\n\n$$(3-k)x=105$$\n\nRequire a positive load:\n\n$$x=\\frac{105}{3-k}>0\\iff k<3$$\n\nImpose the upper limit:\n\n$$\\frac{105}{3-k}\\le 105\\iff 3-k\\ge1\\iff k\\le2$$\n\nAt $k=2$ the break-even load is exactly $105$, so the closed endpoint makes the statement True.",
-    "**D.** → False\n\nRoot existence and root signs are separate questions. The discriminant is always positive, then Vieta controls the sign pattern.\n\nCompute the discriminant:\n\n$$\\Delta=(k+5)^2-45(k-5)=(k-5)^2+4\\cdot 25$$\n\nConclude distinct reality:\n\n$$\\Delta>0\\quad\\text{for every real }k$$\n\nUse the root product:\n\n$$x_1x_2=5(k-5)$$\n\nRequire opposite signs:\n\n$$x_1x_2<0\\iff k<5$$\n\nAt $k=5$ one root is zero, so the roots are not of opposite signs and the closed endpoint makes the statement False.",
-    "**E.** → True\n\nUse the conjugate relation before squaring. The difference of the radicands is fixed, so the sum of the radicals is forced.\n\nMultiply difference by sum:\n\n$$(\\sqrt{x+10}-\\sqrt{x-3})(\\sqrt{x+10}+\\sqrt{x-3})=13$$\n\nUse the given difference:\n\n$$\\sqrt{x+10}+\\sqrt{x-3}=13$$\n\nSolve the two-equation system:\n\n$$2\\sqrt{x+10}=14$$\n\nSquare once:\n\n$$x+10=\\left(\\frac{14}2\\right)^2$$\n\nRecover the candidate:\n\n$$x=39$$\n\nThe candidate lies in the domain and direct substitution gives difference $1$, so the statement is True."
+    "**A.** → False\n\nTo solve the radical equation over the domain $x \\ge 1$, we isolate one radical term and square both sides:\n\n$$\\sqrt{3x + 1} = 2 + \\sqrt{x - 1}$$\n\n$$(\\sqrt{3x + 1})^2 = (2 + \\sqrt{x - 1})^2$$\n\n$$3x + 1 = 4 + 4\\sqrt{x - 1} + (x - 1)$$\n\n$$3x + 1 = x + 3 + 4\\sqrt{x - 1}$$\n\n$$2x - 2 = 4\\sqrt{x - 1}$$\n\n$$x - 1 = 2\\sqrt{x - 1}$$\n\nSquaring both sides again yields:\n\n$$(x - 1)^2 = 4(x - 1)$$\n\n$$(x - 1)^2 - 4(x - 1) = 0$$\n\n$$(x - 1)(x - 5) = 0$$\n\nThis gives candidate roots $x = 1$ and $x = 5$. We test both in the original equation:\n\n$$\\sqrt{3(1) + 1} - \\sqrt{1 - 1} = \\sqrt{4} - 0 = 2$$\n\n$$\\sqrt{3(5) + 1} - \\sqrt{5 - 1} = \\sqrt{16} - \\sqrt{4} = 4 - 2 = 2$$\n\nBoth candidates satisfy the original radical equation; neither is extraneous, meaning there are two valid solutions rather than a single valid solution, so the statement is False.",
+    "**B.** → False\n\nFor the logarithmic terms to be defined, their arguments must be strictly positive, requiring $4v > 0 \\implies v > 0$ and $v^2 - 5 > 0$.\n\nApplying the exponential function to both sides of $\\ln(v^2 - 5) = \\ln(4v)$ equates the arguments:\n\n$$v^2 - 5 = 4v$$\n\n$$v^2 - 4v - 5 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(v - 5)(v + 1) = 0$$\n\nThis gives candidate roots $v = 5$ and $v = -1$. Evaluating the domain condition shows that $v = -1$ produces $\\ln(-4)$, which is undefined in the real numbers, leaving $v = 5$ as the single valid solution, so the statement is False.",
+    "**C.** → True\n\nExpand both brackets and collect the single unknown.\n\n$$4(2h-3)-5(h+1)=23$$\n\n$$8h-12-5h-5=23$$\n\n$$3h=40$$\n\n$$h=\\frac{40}{3}$$\n\nThe linear coefficient is nonzero, so this solution is unique. Therefore the statement is True.",
+    "**D.** → True\n\nBreak-even style target conditions on a quadratic model are solved by setting the model equal to the target value and reducing to standard form. We set the yield function equal to the target of $160$ metric tonnes per hectare:\n\n$$-\\frac{1}{20}n^2 + 6n + 20 = 160$$\n\nMultiplying both sides by $-20$ clears the fraction and normalises the leading coefficient:\n\n$$n^2 - 120n - 400 = -3200$$\n\n$$n^2 - 120n + 2800 = 0$$\n\nBy Vieta's formulas, the sum of the roots of a quadratic equation $a n^2 + b n + c = 0$ is given by:\n\n$$n_1 + n_2 = -\\frac{b}{a} = -\\frac{-120}{1} = 120$$\n\nExplicitly solving by factoring yields:\n\n$$(n - 40)(n - 80) = 0$$\n\nso the two solutions are $n_1 = 40$ and $n_2 = 80$ kg/ha. Their sum is exactly $120$ kg/ha, and both values are strictly positive nitrogen amounts, so the statement is True.",
+    "**E.** → False\n\nWe solve the absolute-value equation by splitting it into two linear cases based on the sign of $3y - 24$.\n\nIn the first case, where $3y - 24 \\ge 0$ (meaning $y \\ge 8$):\n\n$$3y - 24 = y + 8$$\n\n$$2y = 32$$\n\n$$y = 16$$\n\nSince $16 \\ge 8$, this is an integer solution.\n\nIn the second case, where $3y - 24 < 0$ (meaning $y < 8$):\n\n$$-(3y - 24) = y + 8$$\n\n$$-3y + 24 = y + 8$$\n\n$$16 = 4y$$\n\n$$y = 4$$\n\nSince $4 < 8$, this is also a valid integer solution. Therefore, the equation admits two distinct integer solutions ($y = 4$ and $y = 16$), so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 200,
-   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. A tests difference of two radicals; B tests sum of logarithms and domain; C tests parameterized freight tariffs; D tests Vieta sign classification; E tests difference of two radicals. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. Map: A tests a rational, radical, or absolute-value equation; B tests an exponential or logarithmic equation with its domain; C tests multi-bracket linear invoice; D tests a quadratic equation and the nature of its roots; E tests a rational, radical, or absolute-value equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-201",
    "case_id": "MATH 4.201",
-   "title": "Hard mixed exam: 8",
+   "title": "Exam-style tasks — 8",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The loading equation $\\log_{2}(x-3)+\\log_{2}(x-6)=\\log_{2}(10)$ has two admissible roots, $x=1$ and $x=8$.",
-    "A refrigerated carrier quotes Plan A as $180+(k+2)x$ euros and Plan B as $300+(2k-1)x$ euros for $x>0$ pallets. A positive break-even load no larger than $120$ pallets exists exactly when $k<2$.",
-    "The demand equation $x^2-(k+6)x+6(k-6)=0$ has two distinct real roots of opposite signs exactly when $k<6$.",
-    "The calibration equation $\\sqrt{x+11}-\\sqrt{x-2}=1$, on $x\\ge 2$, has the unique real solution $x=37$.",
-    "The loading equation $\\log_{3}(x-4)+\\log_{3}(x-7)=\\log_{3}(10)$ has the algebraic roots $x=2$ and $x=9$, but only $x=9$ is admissible."
+    "If the decaying daily processing capacity follows $C(t) = 800 \\cdot 2^{-0.25t}$ metric tons, the operating duration required for throughput to fall to 100 metric tons per day is strictly less than 10 months.",
+    "Blending $V$ liters of a $25\\%$ active ingredient solution with $10$ liters of a $10\\%$ solution yields an overall concentration of $20\\%$ if and only if the added stock volume $V$ is strictly greater than $25$ liters.",
+    "If the base surface area of the slab is constrained to be $108\\text{ m}^2$, modeled by $w(w + 3) = 108$, then the resulting quadratic equation has two real roots with opposite signs, and the unique physically admissible width $w > 0$ is an even integer.",
+    "The server equation $\\frac{6}{x - 2} - \\frac{x + 1}{x - 2} = \\frac{1}{2}$ has two algebraic solutions, but only one of them lies in the domain $x > 2$.",
+    "In the multi-cycle organic matter accumulation model governed by $3^{2t} - 10 \\cdot 3^t + 9 = 0$, the equation possesses two distinct non-negative real solutions whose product is strictly positive."
    ],
    "answer_key": [
     false,
     false,
-    true,
     false,
-    true
+    false,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe product rule is valid only on the intersection of the two logarithm domains. Solve the quadratic, then return to that intersection.\n\nIntersect the domains:\n\n$$x-3>0,\\ x-6>0\\iff x>6$$\n\nCombine the logarithms:\n\n$$\\log_{2}((x-3)(x-6))=\\log_{2}(10)$$\n\nUse injectivity:\n\n$$(x-3)(x-6)=10$$\n\nFactor the quadratic:\n\n$$(x-1)(x-8)=0$$\n\nApply the domain:\n\n$$1<6< 8$$\n\nThe candidate $x=1$ violates both-arguments-positive condition, so the statement is False.",
-    "**B.** → False\n\nEquate the complete tariffs first. The parameter controls both existence and the size of the positive break-even load.\n\nSet the plans equal:\n\n$$180+(k+2)x=300+(2k-1)x$$\n\nCollect the load terms:\n\n$$(3-k)x=120$$\n\nRequire a positive load:\n\n$$x=\\frac{120}{3-k}>0\\iff k<3$$\n\nImpose the upper limit:\n\n$$\\frac{120}{3-k}\\le 120\\iff 3-k\\ge1\\iff k\\le2$$\n\nAt $k=2$ the admissible load equals $120$, so omitting that endpoint makes the statement False.",
-    "**C.** → True\n\nRoot existence and root signs are separate questions. The discriminant is always positive, then Vieta controls the sign pattern.\n\nCompute the discriminant:\n\n$$\\Delta=(k+6)^2-46(k-6)=(k-6)^2+4\\cdot 36$$\n\nConclude distinct reality:\n\n$$\\Delta>0\\quad\\text{for every real }k$$\n\nUse the root product:\n\n$$x_1x_2=6(k-6)$$\n\nRequire opposite signs:\n\n$$x_1x_2<0\\iff k<6$$\n\nThe strict parameter inequality is exactly the negative-product condition, so the statement is True.",
-    "**D.** → False\n\nUse the conjugate relation before squaring. The difference of the radicands is fixed, so the sum of the radicals is forced.\n\nMultiply difference by sum:\n\n$$(\\sqrt{x+11}-\\sqrt{x-2})(\\sqrt{x+11}+\\sqrt{x-2})=13$$\n\nUse the given difference:\n\n$$\\sqrt{x+11}+\\sqrt{x-2}=13$$\n\nSolve the two-equation system:\n\n$$2\\sqrt{x+11}=14$$\n\nSquare once:\n\n$$x+11=\\left(\\frac{14}2\\right)^2$$\n\nRecover the candidate:\n\n$$x=38$$\n\nThe forced value is $x=38$, not $x=37$, so the statement is False.",
-    "**E.** → True\n\nThe product rule is valid only on the intersection of the two logarithm domains. Solve the quadratic, then return to that intersection.\n\nIntersect the domains:\n\n$$x-4>0,\\ x-7>0\\iff x>7$$\n\nCombine the logarithms:\n\n$$\\log_{3}((x-4)(x-7))=\\log_{3}(10)$$\n\nUse injectivity:\n\n$$(x-4)(x-7)=10$$\n\nFactor the quadratic:\n\n$$(x-2)(x-9)=0$$\n\nApply the domain:\n\n$$2<7< 9$$\n\nOnly $x=9$ lies in the original domain, so the statement is True."
+    "**A.** → False\n\nWe set the capacity function equal to the target throughput of 100 metric tons:\n\n$$800 \\cdot 2^{-0.25t} = 100$$\n\nDividing both sides by 800 gives:\n\n$$2^{-0.25t} = \\frac{100}{800}$$\n\n$$2^{-0.25t} = \\frac{1}{8}$$\n\nExpressing the right-hand side as a power of 2:\n\n$$2^{-0.25t} = 2^{-3}$$\n\nEquating exponents yields:\n\n$$-0.25t = -3$$\n\n$$-\\frac{1}{4}t = -3$$\n\n$$t = 12$$\n\nThe required operational duration is 12 months, which is not strictly less than 10 months, so the statement is False.",
+    "**B.** → False\n\nThe balance of solute mass before and after mixing gives a linear equation in one unknown:\n\n$$0.25V + 0.10 \\cdot 10 = 0.20(V + 10)$$\n\n$$0.25V + 1 = 0.20V + 2$$\n\n$$0.05V = 1$$\n\n$$V = 20$$\n\nThe required volume is $20$ liters, which is not strictly greater than $25$ liters, so the statement is False.",
+    "**C.** → False\n\nThe area requirement produces a quadratic equation in standard form $w^2 + bw + c = 0$.\n\nExpanding the equation gives:\n\n$$w(w + 3) = 108$$\n\n$$w^2 + 3w - 108 = 0$$\n\nFactoring the quadratic expression:\n\n$$(w + 12)(w - 9) = 0$$\n\nThe two real algebraic roots are $w_1 = -12$ and $w_2 = 9$. Their product is $(-12)(9) = -108 < 0$, confirming that the roots have opposite signs. Because width must be positive ($w > 0$), the only physically admissible solution is $w = 9$. Since $9$ is an odd integer, the admissible width is not an even integer, so the statement is False.",
+    "**D.** → False\n\nTo solve the rational equation, we first state the domain restriction $x \\neq 2$. We combine the fractions on the left-hand side over their common denominator:\n\n$$\\frac{6 - (x + 1)}{x - 2} = \\frac{1}{2}$$\n\n$$\\frac{5 - x}{x - 2} = \\frac{1}{2}$$\n\nMultiplying both sides by $2(x - 2)$ produces a linear equation in $x$:\n\n$$2(5 - x) = x - 2$$\n\n$$10 - 2x = x - 2$$\n\n$$3x = 12$$\n\n$$x = 4$$\n\nThe algebraic formulation yields exactly one linear root, $x = 4$, which lies in the domain $x > 2$. It does not possess two algebraic solutions, so the statement is False.",
+    "**E.** → False\n\nThe equation $3^{2t} - 10 \\cdot 3^t + 9 = 0$ is an exponential equation reducible to quadratic form via the substitution $u = 3^t$ with $u > 0$:\n\n$$u^2 - 10u + 9 = 0$$\n\nFactoring gives:\n\n$$(u - 1)(u - 9) = 0$$\n\nThis yields two positive values for $u$, namely $u_1 = 1$ and $u_2 = 9$.\n\nReversing the substitution gives the solutions for $t$:\n\n$$3^t = 1 \\implies t_1 = 0$$\n\n$$3^t = 9 \\implies t_2 = 2$$\n\nBoth solutions are non-negative ($0 \\ge 0$ and $2 \\ge 0$). However, their product is:\n\n$$t_1 \\cdot t_2 = 0 \\cdot 2 = 0$$\n\nZero is not strictly positive, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 201,
-   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. A tests sum of logarithms and domain; B tests parameterized freight tariffs; C tests Vieta sign classification; D tests difference of two radicals; E tests sum of logarithms and domain. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. Map: A tests an exponential or logarithmic equation with its domain; B tests a linear equation or parameter condition; C tests a quadratic equation and the nature of its roots; D tests a rational, radical, or absolute-value equation; E tests an exponential or logarithmic equation with its domain. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-202",
    "case_id": "MATH 4.202",
-   "title": "Hard mixed exam: 9",
+   "title": "Exam-style tasks — 9",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A blending line mixes $x$ litres of a $70\\%$ concentrate with $200-x$ litres of a $k\\%$ stock to obtain $200$ litres at $40\\%$. A physical solution $0\\le x\\le 200$ exists exactly for $k\\le40$.",
-    "After substituting $x=y^2$ into $(0-1)x^2-2(0+1)x+2(0)-1=0$, the resulting equation has exactly $2$ distinct real solutions for $y$.",
-    "The rational equation $\\dfrac{x^2-5x+4}{x-1}=2$ has two cleared candidates, $x=1$ and $x=6$, but only $x=6$ belongs to the original domain.",
-    "The inventory equation $\\ln(x+5)-\\ln(x-1)=\\ln(2)$ has the unique solution $x=6$.",
-    "A blending line mixes $x$ litres of a $70\\%$ concentrate with $220-x$ litres of a $k\\%$ stock to obtain $220$ litres at $40\\%$. A physical solution $0\\le x\\le 220$ exists exactly for $k<40$."
+    "For the grain procurement balance $(k - 180)x + 4500 = 1500 + 120x$ in metric tons $x$, there is no real parameter value $k$ for which the equation admits infinitely many solutions.",
+    "The corridor speed $v > 0$ in km/h satisfies $v^{2} - 45v - 900 = 0$. The equation has exactly one physically meaningful solution, and this speed is above $55$ km/h.",
+    "A sensor calibration model governed by the radical equation $\\sqrt{3t + 4} = t - 2$ admits exactly two distinct real solutions for the elapsed calibration time $t$.",
+    "After $t$ years the resale value is $S(t) = 40\\,000 e^{-0.15t}$ euros and the buyout threshold is $B(t) = 10\\,000 e^{0.05t}$ euros. The time at which $S(t) = B(t)$ is unique and equals an integer multiple of $\\ln(2)$.",
+    "Tariff A bills a customer $C_A(x) = 75 + 18x$ and Tariff B bills $C_B(x) = 135 + 3mx$, where $x > 0$ is the shipment weight. For the margin value $m = 6$ the two tariffs give the same total charge for exactly one positive weight $x$."
    ],
    "answer_key": [
     true,
-    false,
     true,
     false,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTranslate the concentration balance and keep the physical interval. The parameter value that makes the denominator vanish needs separate treatment.\n\nWrite active-ingredient balance:\n\n$$70x+k(200-x)=40\\cdot 200$$\n\nCollect the unknown volume:\n\n$$(70-k)x=(40-k)200$$\n\nFor $k\\ne70$:\n\n$$x=200\\frac{40-k}{70-k}$$\n\nClassify physical values:\n\n$$0\\le x\\le 200\\iff k\\le40$$\n\nCheck the singular value:\n\n$$k=70:\\quad 0\\cdot x=-30\\cdot 200$$\n\nThe endpoint $k=40$ gives $x=0$, which is physical, so the stated classification is True.",
-    "**B.** → False\n\nFirst classify the roots in $x$. Only positive roots produce two real square-root preimages; a zero root produces one and a negative root produces none.\n\nThe equation in $x$ is:\n\n$$-x^2-2x-1=0$$\n\nIts discriminant is:\n\n$$\\Delta=4\\cdot 0(5-0)$$\n\nApply $x=y^2\\ge0$:\n\n$$x=-1\\quad\\Longrightarrow\\quad y^2=-1$$\n\nCount distinct real preimages:\n\n$$N_y=0$$\n\nThus the only $x$-root is $-1$, which cannot equal $y^2$; the actual count is $0$, so the statement is False.",
-    "**C.** → True\n\nThe numerator factors with the denominator, but the cancelled value remains a hole in the original equation.\n\nState the original domain:\n\n$$x\\ne 1$$\n\nClear the denominator:\n\n$$(x-1)(x-4)=2(x-1)$$\n\nFactor the cleared equation:\n\n$$(x-1)(x-6)=0$$\n\nApply the original domain:\n\n$$x=1\\ \\text{is excluded},\\qquad x=6\\ \\text{is admissible}$$\n\nExactly one of the two cleared candidates survives, so the statement is True.",
-    "**D.** → False\n\nA logarithm difference becomes a quotient only after recording the common domain.\n\nSet the domain:\n\n$$x+5>0,\\ x-1>0\\iff x>1$$\n\nCombine the logarithms:\n\n$$\\ln\\left(\\frac{x+5}{x-1}\\right)=\\ln(2)$$\n\nUse injectivity:\n\n$$\\frac{x+5}{x-1}=2$$\n\nSolve the linear equation:\n\n$$x+5=2x-2\\iff x=7$$\n\nCheck the domain:\n\n$$7>1$$\n\nThe logarithmic quotient gives $x=7$, not $x=6$, so the statement is False.",
-    "**E.** → False\n\nTranslate the concentration balance and keep the physical interval. The parameter value that makes the denominator vanish needs separate treatment.\n\nWrite active-ingredient balance:\n\n$$70x+k(220-x)=40\\cdot 220$$\n\nCollect the unknown volume:\n\n$$(70-k)x=(40-k)220$$\n\nFor $k\\ne70$:\n\n$$x=220\\frac{40-k}{70-k}$$\n\nClassify physical values:\n\n$$0\\le x\\le 220\\iff k\\le40$$\n\nCheck the singular value:\n\n$$k=70:\\quad 0\\cdot x=-30\\cdot 220$$\n\nThe endpoint $k=40$ gives the admissible solution $x=0$, so the strict classification is False."
+    "**A.** → True\n\nA linear equation in the standard form $A x = B$ has infinitely many solutions if and only if both $A = 0$ and $B = 0$.\n\nWe simplify the given procurement equation by grouping like terms:\n\n$$(k - 180) x + 4500 = 1500 + 120 x$$\n\n$$(k - 300) x = -3000$$\n\nFor this equation to have infinitely many solutions, the coefficient of $x$ and the constant term on the right-hand side must both be zero. Setting the coefficient of $x$ to zero requires $k = 300$, which reduces the equation to $0 \\cdot x = -3000$. This statement is a contradiction with no solutions, and the constant $-3000$ cannot be altered by $k$. Therefore, no value of $k$ produces infinitely many solutions, so the statement is True.",
+    "**B.** → True\n\nTo determine the operating corridor speed, we solve the quadratic equation $v^2 - 45v - 900 = 0$ using factoring.\n\nFactoring the quadratic expression yields:\n\n$$(v - 60)(v + 15) = 0$$\n\nSetting each factor to zero gives two mathematical solutions:\n\n$$v_1 = 60, \\quad v_2 = -15$$\n\nBecause physical vehicle speed must be strictly positive, the negative root $v_2 = -15$ is discarded, leaving $v = 60\\text{ km/h}$ as the unique meaningful solution. Since $60 > 55$, the operating speed exceeds 55 km/h, so the statement is True.",
+    "**C.** → False\n\nTo solve the radical equation, we isolate the radical and square both sides:\n\n$$\\sqrt{3t + 4} = t - 2$$\n\n$$3t + 4 = (t - 2)^2$$\n\n$$3t + 4 = t^2 - 4t + 4$$\n\n$$t^2 - 7t = 0$$\n\n$$t(t - 7) = 0$$\n\nThe algebraic candidates are $t = 0$ and $t = 7$. Testing $t = 0$ in the original equation gives $\\sqrt{4} = 2$ on the left and $0 - 2 = -2$ on the right, which makes $t = 0$ an extraneous root. Testing $t = 7$ gives $\\sqrt{25} = 5$ on the left and $7 - 2 = 5$ on the right. Since only $t = 7$ is a valid solution, the equation admits only one real solution, so the statement is False.",
+    "**D.** → True\n\nTo find when the market resale value equals the buyout threshold, we set $S(t) = B(t)$ and solve the exponential equation for $t$.\n\n$$40\\,000 \\cdot e^{-0.15 t} = 10\\,000 \\cdot e^{0.05 t}$$\n\nDividing both sides by $10\\,000$ and multiplying by $e^{0.15 t}$ simplifies the relation:\n\n$$4 = e^{0.20 t}$$\n\nTaking the natural logarithm on both sides yields:\n\n$$\\ln(4) = 0.20 t$$\n\nUsing the logarithm power rule $\\ln(4) = \\ln(2^2) = 2\\ln(2)$ and dividing by $0.20 = \\frac{1}{5}$ gives:\n\n$$t = 5 \\cdot 2\\ln(2) = 10\\ln(2)$$\n\nSince $10$ is an integer, the buyout duration is an integer multiple of $\\ln(2)$, so the statement is True.",
+    "**E.** → False\n\nTo find the shipment weight where both tariffs charge the same amount, equate $C_A(x)$ and $C_B(x)$:\n\n$$75 + 18x = 135 + 3mx$$\n\nSubtract $75 + 3mx$ from both sides:\n\n$$(18 - 3m)x = 60$$\n\nSubstitute the parameter value $m = 6$:\n\n$$(18 - 3(6))x = 60$$\n\n$$0 \\cdot x = 60$$\n\nSince $0 = 60$ is a contradiction, the linear equation has no solution. Therefore, no shipment weight makes the two tariffs equal when $m = 6$, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 202,
-   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. A tests parametric concentration blend; B tests quadratic under square substitution; C tests rational equation with a hole; D tests logarithmic quotient equation; E tests parametric concentration blend. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. Map: A tests a linear equation or parameter condition; B tests a quadratic equation and the nature of its roots; C tests a rational, radical, or absolute-value equation; D tests an exponential or logarithmic equation with its domain; E tests a linear equation or parameter condition. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-203",
    "case_id": "MATH 4.203",
-   "title": "Hard mixed exam: 10",
+   "title": "Exam-style tasks — 10",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "After substituting $x=y^2$ into $(2-1)x^2-2(2+1)x+2(2)-1=0$, the resulting equation has exactly $4$ distinct real solutions for $y$.",
-    "The rational equation $\\dfrac{x^2-7x+10}{x-2}=3$ has two valid solutions, $x=2$ and $x=8$.",
-    "The inventory equation $\\ln(x+6)-\\ln(x-2)=\\ln(3)$ has the unique solution $x=6$.",
-    "A blending line mixes $x$ litres of a $70\\%$ concentrate with $240-x$ litres of a $k\\%$ stock to obtain $240$ litres at $40\\%$. A physical solution $0\\le x\\le 240$ exists exactly for $k\\le40$.",
-    "After substituting $x=y^2$ into $(3-1)x^2-2(3+1)x+2(3)-1=0$, the resulting equation has exactly $2$ distinct real solutions for $y$."
+    "A break-even analysis requires solving the quadratic equation $-2v^2 + 48v - 216 = 0$. The two distinct real break-even cruising speeds have a product equal to $108$ and an average speed strictly greater than $11$ knots.",
+    "The latency equation $\\sqrt{4 - 3z} = z + 2$ admits at least one strictly negative valid real solution.",
+    "The tracking equation $\\log_2(t + 6) + \\log_2(t - 1) = 3$ gives two algebraic roots whose product is $-14$, but only the root $t = 2$ lies in the domain.",
+    "A machine setting obeys $3(x-2)-2(2x+1)=7$. Its unique setting is the negative multiple of five $x=-15$.",
+    "A control equation $2x^2+4x+5=0$ is reported to have no real setting $x$. The report is correct."
    ],
    "answer_key": [
     true,
     false,
     true,
     true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFirst classify the roots in $x$. Only positive roots produce two real square-root preimages; a zero root produces one and a negative root produces none.\n\nThe equation in $x$ is:\n\n$$1x^2-6x+3=0$$\n\nIts discriminant is:\n\n$$\\Delta=4\\cdot 2(5-2)$$\n\nApply $x=y^2\\ge0$:\n\n$$x_1+x_2=\\frac{6}{1}>0,\\quad x_1x_2=\\frac{3}{1}>0$$\n\nCount distinct real preimages:\n\n$$N_y=4$$\n\nThus two distinct positive $x$-roots each produce two signs of $y$, and the printed count is True.",
-    "**B.** → False\n\nThe numerator factors with the denominator, but the cancelled value remains a hole in the original equation.\n\nState the original domain:\n\n$$x\\ne 2$$\n\nClear the denominator:\n\n$$(x-2)(x-5)=3(x-2)$$\n\nFactor the cleared equation:\n\n$$(x-2)(x-8)=0$$\n\nApply the original domain:\n\n$$x=2\\ \\text{is excluded},\\qquad x=8\\ \\text{is admissible}$$\n\nThe value $x=2$ makes the original denominator zero, so it is not a valid solution and the statement is False.",
-    "**C.** → True\n\nA logarithm difference becomes a quotient only after recording the common domain.\n\nSet the domain:\n\n$$x+6>0,\\ x-2>0\\iff x>2$$\n\nCombine the logarithms:\n\n$$\\ln\\left(\\frac{x+6}{x-2}\\right)=\\ln(3)$$\n\nUse injectivity:\n\n$$\\frac{x+6}{x-2}=3$$\n\nSolve the linear equation:\n\n$$x+6=3x-6\\iff x=6$$\n\nCheck the domain:\n\n$$6>2$$\n\nThe quotient equation gives the printed admissible value, so the statement is True.",
-    "**D.** → True\n\nTranslate the concentration balance and keep the physical interval. The parameter value that makes the denominator vanish needs separate treatment.\n\nWrite active-ingredient balance:\n\n$$70x+k(240-x)=40\\cdot 240$$\n\nCollect the unknown volume:\n\n$$(70-k)x=(40-k)240$$\n\nFor $k\\ne70$:\n\n$$x=240\\frac{40-k}{70-k}$$\n\nClassify physical values:\n\n$$0\\le x\\le 240\\iff k\\le40$$\n\nCheck the singular value:\n\n$$k=70:\\quad 0\\cdot x=-30\\cdot 240$$\n\nThe endpoint $k=40$ gives $x=0$, which is physical, so the stated classification is True.",
-    "**E.** → False\n\nFirst classify the roots in $x$. Only positive roots produce two real square-root preimages; a zero root produces one and a negative root produces none.\n\nThe equation in $x$ is:\n\n$$2x^2-8x+5=0$$\n\nIts discriminant is:\n\n$$\\Delta=4\\cdot 3(5-3)$$\n\nApply $x=y^2\\ge0$:\n\n$$x_1+x_2=\\frac{8}{2}>0,\\quad x_1x_2=\\frac{5}{2}>0$$\n\nCount distinct real preimages:\n\n$$N_y=4$$\n\nThus two distinct positive $x$-roots each produce two signs of $y$; the actual count is $4$, so the statement is False."
+    "**A.** → True\n\nThe break-even condition requires $-2v^2 + 48v - 216 = 0$. Dividing the entire equation by $-2$ yields the equivalent quadratic equation:\n\n$$v^2 - 24v + 108 = 0$$\n\nWe determine the nature and values of the roots using the quadratic formula with discriminant $\\Delta = (-24)^2 - 4(1)(108) = 576 - 432 = 144 = 12^2$:\n\n$$v = \\frac{24 \\pm 12}{2}$$\n\n$$v_1 = 6, \\quad v_2 = 18$$\n\nBoth roots are positive and distinct. By Vieta's formulas, their product is $\\frac{c}{a} = 108$, or directly $6 \\cdot 18 = 108$. Their average is $\\frac{6 + 18}{2} = 12$, which is strictly greater than $11$, so the statement is True.",
+    "**B.** → False\n\nTo solve the radical equation $\\sqrt{4 - 3z} = z + 2$, we first observe that the right-hand side must be non-negative, requiring $z + 2 \\ge 0$, or $z \\ge -2$, alongside the radicand condition $4 - 3z \\ge 0$.\n\nSquaring both sides produces:\n\n$$4 - 3z = (z + 2)^2$$\n\n$$4 - 3z = z^2 + 4z + 4$$\n\n$$z^2 + 7z = 0$$\n\n$$z(z + 7) = 0$$\n\nThe algebraic solutions to the squared equation are $z = 0$ and $z = -7$.\n\nTesting $z = -7$ in the original equation gives $\\sqrt{4 - 3(-7)} = \\sqrt{25} = 5$, whereas $-7 + 2 = -5$, so $z = -7$ is an extraneous root.\n\nTesting $z = 0$ gives $\\sqrt{4} = 2 = 0 + 2$, which is valid. The only valid solution is $z = 0$, which is not strictly negative, so the statement is False.",
+    "**C.** → True\n\nDetermine the domain of the logarithmic equation by requiring strictly positive arguments:\n\n$$t + 6 > 0 \\implies t > -6$$\n\n$$t - 1 > 0 \\implies t > 1$$\n\nThe common domain is $t > 1$. Apply the logarithm product rule:\n\n$$\\log_2((t + 6)(t - 1)) = 3$$\n\nConvert to exponential form:\n\n$$(t + 6)(t - 1) = 2^3$$\n\nExpand the product and simplify:\n\n$$t^2 + 5t - 6 = 8$$\n\nSubtract $8$ from both sides:\n\n$$t^2 + 5t - 14 = 0$$\n\nFactor the quadratic equation:\n\n$$(t + 7)(t - 2) = 0$$\n\nThe algebraic roots are $t_1 = 2$ and $t_2 = -7$, whose product is $(2)(-7) = -14$. Since $t = -7$ is outside the domain $t > 1$, it is extraneous, leaving $t = 2$ as the unique valid solution, so the statement is True.",
+    "**D.** → True\n\nDistribute both outer factors before collecting the unknown.\n\n$$3x-6-4x-2=7$$\n\n$$-x-8=7$$\n\n$$-x=15$$\n\n$$x=-15$$\n\nThe nonzero coefficient makes the solution unique. Therefore the statement is True.",
+    "**E.** → True\n\nThe discriminant determines whether a real quadratic crosses zero.\n\n$$\\Delta=4^2-4\\cdot2\\cdot5$$\n\n$$\\Delta=16-40=-24<0$$\n\nA negative discriminant gives no real roots. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 203,
-   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. A tests quadratic under square substitution; B tests rational equation with a hole; C tests logarithmic quotient equation; D tests parametric concentration blend; E tests quadratic under square substitution. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. Map: A tests a quadratic equation and the nature of its roots; B tests a rational, radical, or absolute-value equation; C tests an exponential or logarithmic equation with its domain; D tests linear equation with competing brackets; E tests negative-discriminant control equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-204",
    "case_id": "MATH 4.204",
-   "title": "Hard mixed exam: 11",
+   "title": "Exam-style tasks — 11",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The rational equation $\\dfrac{x^2-9x+18}{x-3}=4$ has two cleared candidates, $x=3$ and $x=10$, but only $x=10$ belongs to the original domain.",
-    "The inventory equation $\\ln(x+7)-\\ln(x-3)=\\ln(4)$ has the unique solution $x=10$.",
-    "A blending line mixes $x$ litres of a $70\\%$ concentrate with $260-x$ litres of a $k\\%$ stock to obtain $260$ litres at $40\\%$. A physical solution $0\\le x\\le 260$ exists exactly for $k<40$.",
-    "After substituting $x=y^2$ into $(4-1)x^2-2(4+1)x+2(4)-1=0$, the resulting equation has exactly $4$ distinct real solutions for $y$.",
-    "The rational equation $\\dfrac{x^2-11x+28}{x-4}=5$ has two valid solutions, $x=4$ and $x=12$."
+    "Squaring both sides to solve the maintenance response equation $\\sqrt{2n + 15} = n - 6$ yields two real algebraic roots, but exactly one is an extraneous root that violates the original radical equation.",
+    "The logarithmic tariff indexing equation $\\ln(2x + 10) - \\ln(x - 1) = \\ln(4)$ has a unique real solution on the domain $x > 1$, and this solution is a prime number strictly less than 10.",
+    "A guided group of $x$ people pays $C_1(x) = 150 + 12x$ for the standard package and $C_2(x) = 30 + 20x$ for the all-inclusive package. The group size at which both packages cost the same is greater than $16$.",
+    "The monthly bonus for $q$ thousand loaves is $B(q) = -q^{2} + 14q - 40$. This bonus is strictly positive for every production volume between $3$ and $11$ thousand loaves.",
+    "The efficiency equation $\\sqrt{4w + 9} - \\sqrt{w} = 3$ has no solution with $w > 0$, because squaring introduces an extraneous root."
    ],
    "answer_key": [
     true,
-    false,
-    false,
     true,
+    false,
+    false,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe numerator factors with the denominator, but the cancelled value remains a hole in the original equation.\n\nState the original domain:\n\n$$x\\ne 3$$\n\nClear the denominator:\n\n$$(x-3)(x-6)=4(x-3)$$\n\nFactor the cleared equation:\n\n$$(x-3)(x-10)=0$$\n\nApply the original domain:\n\n$$x=3\\ \\text{is excluded},\\qquad x=10\\ \\text{is admissible}$$\n\nExactly one of the two cleared candidates survives, so the statement is True.",
-    "**B.** → False\n\nA logarithm difference becomes a quotient only after recording the common domain.\n\nSet the domain:\n\n$$x+7>0,\\ x-3>0\\iff x>3$$\n\nCombine the logarithms:\n\n$$\\ln\\left(\\frac{x+7}{x-3}\\right)=\\ln(4)$$\n\nUse injectivity:\n\n$$\\frac{x+7}{x-3}=4$$\n\nSolve the linear equation:\n\n$$x+7=4x-12\\iff x=\\dfrac{19}{3}$$\n\nCheck the domain:\n\n$$\\dfrac{19}{3}>3$$\n\nThe logarithmic quotient gives $x=\\dfrac{19}{3}$, not $x=10$, so the statement is False.",
-    "**C.** → False\n\nTranslate the concentration balance and keep the physical interval. The parameter value that makes the denominator vanish needs separate treatment.\n\nWrite active-ingredient balance:\n\n$$70x+k(260-x)=40\\cdot 260$$\n\nCollect the unknown volume:\n\n$$(70-k)x=(40-k)260$$\n\nFor $k\\ne70$:\n\n$$x=260\\frac{40-k}{70-k}$$\n\nClassify physical values:\n\n$$0\\le x\\le 260\\iff k\\le40$$\n\nCheck the singular value:\n\n$$k=70:\\quad 0\\cdot x=-30\\cdot 260$$\n\nThe endpoint $k=40$ gives the admissible solution $x=0$, so the strict classification is False.",
-    "**D.** → True\n\nFirst classify the roots in $x$. Only positive roots produce two real square-root preimages; a zero root produces one and a negative root produces none.\n\nThe equation in $x$ is:\n\n$$3x^2-10x+7=0$$\n\nIts discriminant is:\n\n$$\\Delta=4\\cdot 4(5-4)$$\n\nApply $x=y^2\\ge0$:\n\n$$x_1+x_2=\\frac{10}{3}>0,\\quad x_1x_2=\\frac{7}{3}>0$$\n\nCount distinct real preimages:\n\n$$N_y=4$$\n\nThus two distinct positive $x$-roots each produce two signs of $y$, and the printed count is True.",
-    "**E.** → False\n\nThe numerator factors with the denominator, but the cancelled value remains a hole in the original equation.\n\nState the original domain:\n\n$$x\\ne 4$$\n\nClear the denominator:\n\n$$(x-4)(x-7)=5(x-4)$$\n\nFactor the cleared equation:\n\n$$(x-4)(x-12)=0$$\n\nApply the original domain:\n\n$$x=4\\ \\text{is excluded},\\qquad x=12\\ \\text{is admissible}$$\n\nThe value $x=4$ makes the original denominator zero, so it is not a valid solution and the statement is False."
+    "**A.** → True\n\nIsolating the square root gives $\\sqrt{2n + 15} = n - 6$. Squaring both sides yields:\n\n$$2n + 15 = n^2 - 12n + 36$$\n\n$$n^2 - 14n + 21 = 0$$\n\nThe roots of this quadratic polynomial are obtained via the quadratic formula:\n\n$$n = \\frac{14 \\pm \\sqrt{196 - 84}}{2} = 7 \\pm \\sqrt{28}$$\n\nSince $5 < \\sqrt{28} < 6$, the candidate root $n_1 = 7 - \\sqrt{28}$ lies in the interval $(1, 2)$. Substituting $n_1$ into the right-hand side $n - 6$ produces a strictly negative value ($n_1 - 6 < 0$), whereas the principal square root on the left-hand side must be non-negative. Thus, $n_1$ is extraneous, while $n_2 = 7 + \\sqrt{28} > 12$ satisfies the original equation, meaning exactly one algebraic root is extraneous, so the statement is True.",
+    "**B.** → True\n\nUsing the quotient property of logarithms, $\\ln(a) - \\ln(b) = \\ln\\left(\\frac{a}{b}\\right)$, the equation simplifies on the domain $x > 1$:\n\n$$\\ln\\left(\\frac{2x + 10}{x - 1}\\right) = \\ln(4)$$\n\nSince the natural logarithm is strictly monotonic, we equate the arguments:\n\n$$\\frac{2x + 10}{x - 1} = 4$$\n\n$$2x + 10 = 4(x - 1)$$\n\n$$2x + 10 = 4x - 4$$\n\n$$2x = 14$$\n\n$$x = 7$$\n\nThe value $x = 7$ is in the domain $x > 1$, is a prime number, and is strictly less than $10$, so the statement is True.",
+    "**C.** → False\n\nTo find the group size where both tour packages incur identical total costs, we set the linear cost functions equal to each other:\n\n$$C_1(x) = C_2(x)$$\n\n$$150 + 12x = 30 + 20x$$\n\nSubtracting $12x$ and $30$ from both sides gives:\n\n$$8x = 120$$\n\nDividing by $8$ yields:\n\n$$x = 15$$\n\nThe parity group size is exactly $15$ attendees, which is not strictly greater than $16$, so the statement is False.",
+    "**D.** → False\n\nA positive performance bonus requires $B(q) > 0$. We first find the roots of the quadratic equation $-q^2 + 14q - 40 = 0$.\n\nMultiplying by $-1$ gives:\n\n$$q^2 - 14q + 40 = 0$$\n\nFactoring the quadratic expression yields:\n\n$$(q - 4)(q - 10) = 0$$\n\nThe roots are $q_1 = 4$ and $q_2 = 10$. Because the leading coefficient of $-q^2 + 14q - 40$ is negative, the parabola opens downward, meaning $B(q) > 0$ strictly on the open interval $(4, 10)$. Evaluating the bonus at $q = 3$ yields:\n\n$$B(3) = -(3)^2 + 14(3) - 40 = -9 + 42 - 40 = -7 < 0$$\n\nThus, the bonus is negative at $q = 3$, so the statement is False.",
+    "**E.** → False\n\nIsolate the first radical term in the equation:\n\n$$\\sqrt{4w + 9} = 3 + \\sqrt{w}$$\n\nSquare both sides:\n\n$$4w + 9 = (3 + \\sqrt{w})^2$$\n\nExpand the binomial on the right side:\n\n$$4w + 9 = 9 + 6\\sqrt{w} + w$$\n\nSubtract $w + 9$ from both sides:\n\n$$3w = 6\\sqrt{w}$$\n\nDivide both sides by $3$:\n\n$$w = 2\\sqrt{w}$$\n\nSince $w > 0$, divide both sides by $\\sqrt{w}$:\n\n$$\\sqrt{w} = 2$$\n\nSquare both sides:\n\n$$w = 4$$\n\nSubstitute $w = 4$ back into the original equation to test for validity:\n\n$$\\sqrt{4(4) + 9} - \\sqrt{4} = \\sqrt{25} - \\sqrt{4} = 5 - 2 = 3$$\n\nThe solution $w = 4$ satisfies the original equation and is strictly positive, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 204,
-   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. A tests rational equation with a hole; B tests logarithmic quotient equation; C tests parametric concentration blend; D tests quadratic under square substitution; E tests rational equation with a hole. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. Map: A tests a rational, radical, or absolute-value equation; B tests an exponential or logarithmic equation with its domain; C tests a linear equation or parameter condition; D tests a quadratic equation and the nature of its roots; E tests a rational, radical, or absolute-value equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-205",
    "case_id": "MATH 4.205",
-   "title": "Hard mixed exam: 12",
+   "title": "Exam-style tasks — 12",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inventory equation $\\ln(x+8)-\\ln(x-4)=\\ln(2)$ has the unique solution $x=16$.",
-    "A blending line mixes $x$ litres of a $70\\%$ concentrate with $280-x$ litres of a $k\\%$ stock to obtain $280$ litres at $40\\%$. A physical solution $0\\le x\\le 280$ exists exactly for $k\\le40$.",
-    "After substituting $x=y^2$ into $(5-1)x^2-2(5+1)x+2(5)-1=0$, the resulting equation has exactly $4$ distinct real solutions for $y$.",
-    "The rational equation $\\dfrac{x^2-13x+40}{x-5}=6$ has two cleared candidates, $x=5$ and $x=14$, but only $x=14$ belongs to the original domain.",
-    "The inventory equation $\\ln(x+9)-\\ln(x-5)=\\ln(3)$ has the unique solution $x=14$."
+    "The logarithmic equation $\\ln(t + 3) + \\ln(t - 2) = \\ln(14)$, used to determine the concrete strength maturity milestone $t$ (in days), has two distinct real solutions in the real numbers.",
+    "Under the linear demand model $q = 140 - p$, achieving a target occupancy of exactly $90$ booked rooms requires setting a nightly room price strictly greater than $55$ euros.",
+    "An evening event with $n$ guests brings the net revenue $N(n) = n(140 - 2n) - 600$ in dollars. The target $N(n) = 1400$ is reached for exactly two group sizes, and their sum is $70$.",
+    "The rational equation $\\frac{480}{x - 4} - \\frac{480}{x} = 10$, which models the difference in unit maintenance allocations across two feeder lines for $x > 4$, admits two distinct real algebraic roots whose product is strictly positive.",
+    "If the wine aging intensity over time $t$ satisfies the exponential equation $4^t - 5 \\cdot 2^t + 4 = 0$, there exists exactly one strictly positive aging time $t$ satisfying the model."
    ],
    "answer_key": [
-    true,
-    true,
+    false,
     false,
     true,
-    false
+    false,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA logarithm difference becomes a quotient only after recording the common domain.\n\nSet the domain:\n\n$$x+8>0,\\ x-4>0\\iff x>4$$\n\nCombine the logarithms:\n\n$$\\ln\\left(\\frac{x+8}{x-4}\\right)=\\ln(2)$$\n\nUse injectivity:\n\n$$\\frac{x+8}{x-4}=2$$\n\nSolve the linear equation:\n\n$$x+8=2x-8\\iff x=16$$\n\nCheck the domain:\n\n$$16>4$$\n\nThe quotient equation gives the printed admissible value, so the statement is True.",
-    "**B.** → True\n\nTranslate the concentration balance and keep the physical interval. The parameter value that makes the denominator vanish needs separate treatment.\n\nWrite active-ingredient balance:\n\n$$70x+k(280-x)=40\\cdot 280$$\n\nCollect the unknown volume:\n\n$$(70-k)x=(40-k)280$$\n\nFor $k\\ne70$:\n\n$$x=280\\frac{40-k}{70-k}$$\n\nClassify physical values:\n\n$$0\\le x\\le 280\\iff k\\le40$$\n\nCheck the singular value:\n\n$$k=70:\\quad 0\\cdot x=-30\\cdot 280$$\n\nThe endpoint $k=40$ gives $x=0$, which is physical, so the stated classification is True.",
-    "**C.** → False\n\nFirst classify the roots in $x$. Only positive roots produce two real square-root preimages; a zero root produces one and a negative root produces none.\n\nThe equation in $x$ is:\n\n$$4x^2-12x+9=0$$\n\nIts discriminant is:\n\n$$\\Delta=4\\cdot 5(5-5)$$\n\nApply $x=y^2\\ge0$:\n\n$$x=\\frac32\\quad\\Longrightarrow\\quad y=\\pm\\sqrt{\\frac32}$$\n\nCount distinct real preimages:\n\n$$N_y=2$$\n\nThus the repeated positive $x$-root produces the two signs of $y$; the actual count is $2$, so the statement is False.",
-    "**D.** → True\n\nThe numerator factors with the denominator, but the cancelled value remains a hole in the original equation.\n\nState the original domain:\n\n$$x\\ne 5$$\n\nClear the denominator:\n\n$$(x-5)(x-8)=6(x-5)$$\n\nFactor the cleared equation:\n\n$$(x-5)(x-14)=0$$\n\nApply the original domain:\n\n$$x=5\\ \\text{is excluded},\\qquad x=14\\ \\text{is admissible}$$\n\nExactly one of the two cleared candidates survives, so the statement is True.",
-    "**E.** → False\n\nA logarithm difference becomes a quotient only after recording the common domain.\n\nSet the domain:\n\n$$x+9>0,\\ x-5>0\\iff x>5$$\n\nCombine the logarithms:\n\n$$\\ln\\left(\\frac{x+9}{x-5}\\right)=\\ln(3)$$\n\nUse injectivity:\n\n$$\\frac{x+9}{x-5}=3$$\n\nSolve the linear equation:\n\n$$x+9=3x-15\\iff x=12$$\n\nCheck the domain:\n\n$$12>5$$\n\nThe logarithmic quotient gives $x=12$, not $x=14$, so the statement is False."
+    "**A.** → False\n\nThe real domain of a logarithmic expression $\\ln(u)$ requires strictly positive arguments ($u > 0$).\n\nFor the equation $\\ln(t + 3) + \\ln(t - 2) = \\ln(14)$, the domain requires:\n\n$$t + 3 > 0 \\implies t > -3$$\n\n$$t - 2 > 0 \\implies t > 2$$\n\nThe intersection of these conditions is the domain $t \\in (2, \\infty)$. Applying the logarithmic product rule on this domain:\n\n$$\\ln((t + 3)(t - 2)) = \\ln(14)$$\n\n$$(t + 3)(t - 2) = 14$$\n\n$$t^2 + t - 6 = 14$$\n\n$$t^2 + t - 20 = 0$$\n\nFactoring gives:\n\n$$(t + 5)(t - 4) = 0$$\n\nThe quadratic roots are $t = 4$ and $t = -5$. Evaluating domain admissibility:\n\n$$4 \\in (2, \\infty)$$\n\n$$-5 \\notin (2, \\infty)$$\n\nBecause $\\ln(-5 - 2) = \\ln(-7)$ is undefined in the real numbers, $t = -5$ is extraneous. The equation possesses only one real solution ($t = 4$), not two, so the statement is False.",
+    "**B.** → False\n\nThe linear demand equation relates booked rooms $q$ to nightly price $p$ via $q = 140 - p$.\n\nSetting the target occupancy to $q = 90$ gives:\n\n$$90 = 140 - p$$\n\nSolving for $p$ by isolating the unknown yields:\n\n$$p = 140 - 90 = 50$$\n\nThe required price is $50$ euros, which is not strictly greater than $55$ euros, so the statement is False.",
+    "**C.** → True\n\nThe target net revenue condition requires solving the quadratic equation:\n\n$$N(n) = 1400$$\n\n$$140n - 2n^2 - 600 = 1400$$\n\nRearranging all terms to one side gives:\n\n$$-2n^2 + 140n - 2000 = 0$$\n\nDividing the entire equation by $-2$ yields:\n\n$$n^2 - 70n + 1000 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(n - 20)(n - 50) = 0$$\n\nThis produces two distinct positive solutions, $n_1 = 20$ and $n_2 = 50$. Both group sizes yield positive individual prices ($p(20) = 100 > 0$ and $p(50) = 40 > 0$), and their sum is:\n\n$$n_1 + n_2 = 20 + 50 = 70$$\n\nThis sum also matches Vieta's formula $-\\frac{-70}{1} = 70$, so the statement is True.",
+    "**D.** → False\n\nTo solve the rational equation on the domain $x > 4$, we eliminate fractions by multiplying through by the common denominator $x(x - 4)$:\n\n$$\\frac{480}{x - 4} - \\frac{480}{x} = 10$$\n\nDividing by $10$ simplifies the expression:\n\n$$\\frac{48}{x - 4} - \\frac{48}{x} = 1$$\n\n$$48x - 48(x - 4) = x(x - 4)$$\n\n$$192 = x^2 - 4x$$\n\n$$x^2 - 4x - 192 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 16)(x + 12) = 0$$\n\nThe two real algebraic roots are $x_1 = 16$ and $x_2 = -12$. The product of these roots is $(16)(-12) = -192$, which is strictly negative rather than strictly positive, so the statement is False.",
+    "**E.** → True\n\nThe wine aging profile is governed by the exponential equation:\n\n$$4^t - 5 \\cdot 2^t + 4 = 0$$\n\nRecognizing that $4^t = (2^t)^2$, we introduce the substitution $u = 2^t$ with $u > 0$:\n\n$$u^2 - 5u + 4 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(u - 1)(u - 4) = 0$$\n\nThis gives $u_1 = 1$ and $u_2 = 4$. Transforming back to the variable $t$ produces two equations:\n\n$$2^t = 1 \\implies t = 0$$\n\n$$2^t = 4 \\implies t = 2$$\n\nThe problem statement defines the domain of maturation time as $t > 0$. Thus, $t = 0$ is excluded, leaving $t = 2$ as the single strictly positive solution, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 205,
-   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. A tests logarithmic quotient equation; B tests parametric concentration blend; C tests quadratic under square substitution; D tests rational equation with a hole; E tests logarithmic quotient equation. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. Map: A tests an exponential or logarithmic equation with its domain; B tests a linear equation or parameter condition; C tests a quadratic equation and the nature of its roots; D tests a rational, radical, or absolute-value equation; E tests an exponential or logarithmic equation with its domain. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-206",
    "case_id": "MATH 4.206",
-   "title": "Hard mixed exam: 13",
+   "title": "Exam-style tasks — 13",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A routing calibration uses $\\dfrac{(k+2)x-6}{k+2+1}+2=\\dfrac{3x-(k+2)}{k+2+1}$, with $k\\ne -3$. It yields a nonnegative route adjustment exactly when $k\\in(\\dfrac{-2}3,1]$.",
-    "A cold-storage profit index is $P(x)=-2(x-8)^2+120$ for $x>0$. The target $P(x)=112$ gives two positive operating levels, $6$ and $10$, whose sum is $16$.",
-    "The actuator equation $\\left|(x-3)^2-4\\right|=4$ has exactly $4$ distinct real solutions.",
-    "The growth equation $2^{2t}-10\\cdot 2^t+16=0$ has exactly two real times, $t=1$ and $t=3$.",
-    "A routing calibration uses $\\dfrac{(k+1)x-6}{k+1+1}+2=\\dfrac{3x-(k+1)}{k+1+1}$, with $k\\ne -2$. It yields a nonnegative route adjustment exactly when $k\\in[\\dfrac{1}3,2)$."
+    "The daily direct labor cost (in hundreds of euros) for an output of $x$ production units is $C(x) = 4x + 18$. If management caps this cost at $50$ hundred euros, the maximum attainable production output is strictly greater than $8$ units.",
+    "A sensory scoring model dictates that the flavor synergy score $S(x) = -x^2 + 100x - 900$ must equal $1200$; this condition produces exactly two distinct admissible batch compositions within the physical domain $0 \\le x \\le 100$, and the sum of these two solutions equals $100\\text{ kg}$.",
+    "The rational calibration equation $\\frac{10}{y-1} - \\frac{10}{y+4} = 1$ admits two real solutions whose sum is negative, but only one solution is physically admissible as a positive cycle time.",
+    "If the number of corporate 5G subscriptions $t$ months after rollout is given by $N(t) = 250 \\cdot e^{0.08 t}$, the time required for the subscriber base to reach $1000$ accounts is strictly less than $16$ months.",
+    "If the baseline operating balance between maintenance overhead and seasonal picking wages is modeled by the linear equation $3(2x + 5) - 4(x - 2) = 35$, the required expansion acreage $x$ is strictly greater than $5$ hectares."
    ],
    "answer_key": [
     false,
     true,
-    false,
     true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nClear the common denominator, but do not lose the parameter at which the coefficient of the unknown vanishes.\n\nSet the shifted parameter:\n\n$$q=k+2,\\qquad q\\ne-1$$\n\nClear and collect:\n\n$$(q-3)x=4-3q$$\n\nSolve away from $q=3$:\n\n$$x=\\frac{3q-4}{3-q}$$\n\nMake the sign chart:\n\n$$x\\ge0\\iff q\\in\\left[\\frac43,3\\right)$$\n\nReturn to $k$:\n\n$$k\\in[\\dfrac{-2}3,1)$$\n\nThe proposed interval reverses both endpoint decisions, so the statement is False.",
-    "**B.** → True\n\nKeep the vertex form instead of expanding. The target sits a known vertical distance below the maximum.\n\nSet the target:\n\n$$-2(x-8)^2+120=112$$\n\nIsolate the square:\n\n$$(x-8)^2=4$$\n\nTake both square-root branches:\n\n$$x=8\\pm 2$$\n\nList and check the roots:\n\n$$x\\in\\{6,10\\},\\qquad 6>0$$\n\nThe two roots are positive and add to $16$, so the statement is True.",
-    "**C.** → False\n\nSplit the absolute-value equation into both signed branches. One branch contributes a repeated central solution.\n\nPositive branch:\n\n$$(x-3)^2-4=4\\iff (x-3)^2=8$$\n\nIts two roots:\n\n$$x=3\\pm 2\\sqrt{2}$$\n\nNegative branch:\n\n$$(x-3)^2-4=-4\\iff (x-3)^2=0$$\n\nIts single root:\n\n$$x=3$$\n\nCount distinct values:\n\n$$2+1=3$$\n\nThe central equation has one distinct root, not two signed roots, so the total is three and the statement is False.",
-    "**D.** → True\n\nThe quadratic substitution is constrained to positive values, and each positive substitution root maps to one real exponent.\n\nSet the exponential variable:\n\n$$u=2^t>0$$\n\nTransform the equation:\n\n$$u^2-10u+16=0$$\n\nFactor:\n\n$$(u-2)(u-8)=0$$\n\nInvert each power:\n\n$$2^t=2\\Rightarrow t=1,\\qquad 2^t=8\\Rightarrow t=3$$\n\nCount distinct times:\n\n$$N_t=2$$\n\nEach positive $u$-root gives one exponent, so the two printed times are the complete solution.",
-    "**E.** → True\n\nClear the common denominator, but do not lose the parameter at which the coefficient of the unknown vanishes.\n\nSet the shifted parameter:\n\n$$q=k+1,\\qquad q\\ne-1$$\n\nClear and collect:\n\n$$(q-3)x=4-3q$$\n\nSolve away from $q=3$:\n\n$$x=\\frac{3q-4}{3-q}$$\n\nMake the sign chart:\n\n$$x\\ge0\\iff q\\in\\left[\\frac43,3\\right)$$\n\nReturn to $k$:\n\n$$k\\in[\\dfrac{1}3,2)$$\n\nThe numerator zero belongs, while the no-solution value at the right endpoint does not, so the statement is True."
+    "**A.** → False\n\nTo find the maximum output attainable under a budget cap of $50$ hundred euros, set the linear cost function equal to the budget limit:\n\n$$4x + 18 = 50$$\n\nSubtract $18$ from both sides:\n\n$$4x = 32$$\n\nDivide by $4$:\n\n$$x = 8$$\n\nThe maximum output is exactly $8$ units, which is not strictly greater than $8$, so the statement is False.",
+    "**B.** → True\n\nSetting the flavor synergy function equal to $1200$ yields a quadratic equation:\n\n$$-x^2 + 100x - 900 = 1200$$\n\n$$x^2 - 100x + 2100 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(x - 30)(x - 70) = 0$$\n\nThe two solutions are $x_1 = 30$ and $x_2 = 70$. Both values lie within the physical domain $[0, 100]$, and their sum is:\n\n$$x_1 + x_2 = 30 + 70 = 100$$\n\nThus there are exactly two admissible compositions summing to $100\\text{ kg}$, so the statement is True.",
+    "**C.** → True\n\nThe rational equation is defined for all real numbers except $y = 1$ and $y = -4$. Multiply both sides by $(y - 1)(y + 4)$:\n\n$$10(y + 4) - 10(y - 1) = (y - 1)(y + 4)$$\n\nExpand both sides:\n\n$$10y + 40 - 10y + 10 = y^2 + 3y - 4$$\n\n$$50 = y^2 + 3y - 4$$\n\nRearrange into standard form:\n\n$$y^2 + 3y - 54 = 0$$\n\nFactor the quadratic expression:\n\n$$(y + 9)(y - 6) = 0$$\n\nThe algebraic solutions are $y_1 = 6$ and $y_2 = -9$. Their sum is $6 + (-9) = -3$, which is negative. Because cycle time must be strictly positive, only $y = 6$ is physically admissible, so the statement is True.",
+    "**D.** → False\n\nTo find the time when the subscriber base reaches $1000$, we set $N(t) = 1000$:\n\n$$250 \\cdot e^{0.08 t} = 1000$$\n\nDividing both sides by $250$ gives:\n\n$$e^{0.08 t} = 4$$\n\nTaking the natural logarithm of both sides yields:\n\n$$0.08 t = \\ln(4)$$\n\n$$t = \\frac{\\ln(4)}{0.08} = \\frac{2 \\ln(2)}{0.08} = 25 \\ln(2)$$\n\nUsing the standard value $\\ln(2) \\approx 0.69315$, we compute $t$:\n\n$$t = 25 \\cdot 0.69315 = 17.32875$$\n\nThe time required is approximately $17.33$ months, which is strictly greater than $16$ months, so the statement is False.",
+    "**E.** → True\n\nThe operating balance is given by a linear equation in one unknown:\n\n$$3(2x + 5) - 4(x - 2) = 35$$\n\nExpanding the terms by distributing the constants across the parentheses gives:\n\n$$6x + 15 - 4x + 8 = 35$$\n\nCombining like terms on the left-hand side yields:\n\n$$2x + 23 = 35$$\n\nSubtracting $23$ from both sides and dividing by $2$ gives:\n\n$$2x = 12$$\n\n$$x = 6$$\n\nThe solution is $x = 6$, which is strictly greater than $5$, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 206,
-   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. A tests shifted parametric equilibrium; B tests quadratic target profit; C tests absolute quadratic equation; D tests quadratic exponential substitution; E tests shifted parametric equilibrium. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. Map: A tests a linear equation or parameter condition; B tests a quadratic equation and the nature of its roots; C tests a rational, radical, or absolute-value equation; D tests an exponential or logarithmic equation with its domain; E tests a linear equation or parameter condition. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-207",
    "case_id": "MATH 4.207",
-   "title": "Hard mixed exam: 14",
+   "title": "Exam-style tasks — 14",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A cold-storage profit index is $P(x)=-2(x-9)^2+130$ for $x>0$. The target $P(x)=112$ gives a repeated operating level at $x=9$.",
-    "The actuator equation $\\left|(x-4)^2-9\\right|=9$ has exactly $3$ distinct real solutions.",
-    "The growth equation $3^{2t}-10\\cdot 3^t+9=0$ has four real times because the quadratic substitution has two roots.",
-    "A routing calibration uses $\\dfrac{(k)x-6}{k+1}+2=\\dfrac{3x-(k)}{k+1}$, with $k\\ne -1$. It yields a nonnegative route adjustment exactly when $k\\in(\\dfrac{4}3,3]$.",
-    "A cold-storage profit index is $P(x)=-2(x-10)^2+140$ for $x>0$. The target $P(x)=108$ gives two positive operating levels, $6$ and $14$, whose sum is $20$."
+    "With monthly revenue $R(x) = 18x - x^2$ and operating cost $C(x) = 3x + 36$ (both in thousands, $x$ in thousands of subscribers), the difference between the two break-even subscriber volumes is strictly greater than $8$ thousand.",
+    "For the linear fleet scheduling model $\\frac{2t - 5}{3} - \\frac{t + 1}{4} = \\frac{5t - 17}{12} + m$, there exists no value of the scheduling parameter $m$ for which the equation has a unique real solution $t$.",
+    "The acquisition milestone equation $\\log_2(t + 1) + \\log_2(t - 2) = 2$ is satisfied by a unique time $t$ that is strictly greater than $2.5$ months.",
+    "The marketing budget $m$ (in thousands of euros) satisfies $4m - 18 = m + 27$. The unique solution is an odd integer greater than $12$.",
+    "For a 2-year bond with an annual coupon of \\$20 and a face value of \\$120 purchased at a price of \\$100, the growth factor $x = 1+r$ satisfies a quadratic equation with exactly one positive real root, and this root implies an annual yield $r$ strictly greater than 15%."
    ],
    "answer_key": [
-    false,
     true,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nKeep the vertex form instead of expanding. The target sits a known vertical distance below the maximum.\n\nSet the target:\n\n$$-2(x-9)^2+130=112$$\n\nIsolate the square:\n\n$$(x-9)^2=9$$\n\nTake both square-root branches:\n\n$$x=9\\pm 3$$\n\nList and check the roots:\n\n$$x\\in\\{6,12\\},\\qquad 6>0$$\n\nThe target is below the vertex value, so two distinct levels occur rather than a repeated root, and the statement is False.",
-    "**B.** → True\n\nSplit the absolute-value equation into both signed branches. One branch contributes a repeated central solution.\n\nPositive branch:\n\n$$(x-4)^2-9=9\\iff (x-4)^2=18$$\n\nIts two roots:\n\n$$x=4\\pm 3\\sqrt{2}$$\n\nNegative branch:\n\n$$(x-4)^2-9=-9\\iff (x-4)^2=0$$\n\nIts single root:\n\n$$x=4$$\n\nCount distinct values:\n\n$$2+1=3$$\n\nThe repeated central branch adds one distinct value, giving the printed count of three.",
-    "**C.** → False\n\nThe quadratic substitution is constrained to positive values, and each positive substitution root maps to one real exponent.\n\nSet the exponential variable:\n\n$$u=3^t>0$$\n\nTransform the equation:\n\n$$u^2-10u+9=0$$\n\nFactor:\n\n$$(u-1)(u-9)=0$$\n\nInvert each power:\n\n$$3^t=1\\Rightarrow t=0,\\qquad 3^t=9\\Rightarrow t=2$$\n\nCount distinct times:\n\n$$N_t=2$$\n\nThe signs $\\pm$ do not appear when inverting a positive exponential; there are two times, not four, so the statement is False.",
-    "**D.** → False\n\nClear the common denominator, but do not lose the parameter at which the coefficient of the unknown vanishes.\n\nSet the shifted parameter:\n\n$$q=k,\\qquad q\\ne-1$$\n\nClear and collect:\n\n$$(q-3)x=4-3q$$\n\nSolve away from $q=3$:\n\n$$x=\\frac{3q-4}{3-q}$$\n\nMake the sign chart:\n\n$$x\\ge0\\iff q\\in\\left[\\frac43,3\\right)$$\n\nReturn to $k$:\n\n$$k\\in[\\dfrac{4}3,3)$$\n\nThe proposed interval reverses both endpoint decisions, so the statement is False.",
-    "**E.** → True\n\nKeep the vertex form instead of expanding. The target sits a known vertical distance below the maximum.\n\nSet the target:\n\n$$-2(x-10)^2+140=108$$\n\nIsolate the square:\n\n$$(x-10)^2=16$$\n\nTake both square-root branches:\n\n$$x=10\\pm 4$$\n\nList and check the roots:\n\n$$x\\in\\{6,14\\},\\qquad 6>0$$\n\nThe two roots are positive and add to $20$, so the statement is True."
+    "**A.** → True\n\nTo find the break-even subscription volumes, we equate revenue $R(x)$ and cost $C(x)$:\n\n$$18x - x^2 = 3x + 36$$\n\n$$x^2 - 15x + 36 = 0$$\n\nFactoring the quadratic expression gives:\n\n$$(x - 3)(x - 12) = 0$$\n\nThe two solutions are $x_1 = 3$ and $x_2 = 12$ thousand subscribers.\n\nThe difference between the larger and smaller break-even volume is:\n\n$$12 - 3 = 9$$\n\nSince $9 > 8$, the difference is strictly greater than 8 thousand subscribers, so the statement is True.",
+    "**B.** → True\n\nTo analyze the linear equation, we first clear denominators by multiplying every term on both sides by the common denominator $12$.\n\n$$12 \\cdot \\left(\\frac{2t - 5}{3}\\right) - 12 \\cdot \\left(\\frac{t + 1}{4}\\right) = 12 \\cdot \\left(\\frac{5t - 17}{12}\\right) + 12m$$\n\n$$4(2t - 5) - 3(t + 1) = 5t - 17 + 12m$$\n\n$$8t - 20 - 3t - 3 = 5t - 17 + 12m$$\n\n$$5t - 23 = 5t - 17 + 12m$$\n\nSubtracting $5t$ from both sides collects the variable terms:\n\n$$0 \\cdot t = 12m + 6$$\n\nThe coefficient of $t$ is $0$. If $12m + 6 = 0$, which occurs when $m = -\\frac{1}{2}$, the equation reduces to $0 = 0$ and possesses infinitely many solutions. If $m \\neq -\\frac{1}{2}$, the equation reduces to $0 = 12m + 6 \\neq 0$, which possesses no solution. Because no choice of $m$ produces a non-zero coefficient for $t$, a unique solution never exists, so the statement is True.",
+    "**C.** → True\n\nFor the logarithmic terms to be defined, the arguments must be strictly positive, requiring $t + 1 > 0$ and $t - 2 > 0$, which restricts the domain to $t > 2$.\n\nApplying the product rule for logarithms gives:\n\n$$\\log_2((t + 1)(t - 2)) = 2$$\n\nConverting to exponential form yields:\n\n$$(t + 1)(t - 2) = 2^2$$\n\n$$t^2 - t - 2 = 4$$\n\n$$t^2 - t - 6 = 0$$\n\nFactoring the quadratic equation gives:\n\n$$(t - 3)(t + 2) = 0$$\n\nThis yields candidate values $t = 3$ and $t = -2$.\n\nSince $t = -2$ lies outside the domain $t > 2$, the only valid solution is $t = 3$.\n\nBecause $3 > 2.5$, the milestone is reached at a unique time value strictly greater than 2.5 months, so the statement is True.",
+    "**D.** → True\n\nTo determine the baseline marketing budget, we solve the linear equation in one unknown:\n\n$$4m - 18 = m + 27$$\n\nSubtracting $m$ from both sides gives:\n\n$$3m - 18 = 27$$\n\nAdding 18 to both sides yields:\n\n$$3m = 45$$\n\nDividing by 3 gives the unique solution:\n\n$$m = 15$$\n\nThe value 15 is an odd integer and is strictly greater than 12, so the statement is True.",
+    "**E.** → True\n\nThe price of the 2-year bond is the sum of the discounted cash flows with annual factor $x = 1+r$:\n\n$$100 = \\frac{20}{x} + \\frac{120}{x^2}$$\n\nMultiplying both sides by $x^2$ gives a quadratic equation:\n\n$$100x^2 = 20x + 120$$\n\n$$100x^2 - 20x - 120 = 0$$\n\nDividing through by 20 simplifies the equation:\n\n$$5x^2 - x - 6 = 0$$\n\n$$(5x - 6)(x + 1) = 0$$\n\nThe roots are $x_1 = \\frac{6}{5} = 1.2$ and $x_2 = -1$. Because the growth factor must be positive, $x = 1.2$ is the unique positive root. This yields an annual rate:\n\n$$r = x - 1 = 0.20 = 20\\%$$\n\n$20\\% > 15\\%$, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 207,
-   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. A tests quadratic target profit; B tests absolute quadratic equation; C tests quadratic exponential substitution; D tests shifted parametric equilibrium; E tests quadratic target profit. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. Map: A tests a quadratic equation and the nature of its roots; B tests a rational, radical, or absolute-value equation; C tests an exponential or logarithmic equation with its domain; D tests a linear equation or parameter condition; E tests a quadratic equation and the nature of its roots. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-208",
    "case_id": "MATH 4.208",
-   "title": "Hard mixed exam: 15",
+   "title": "Exam-style tasks — 15",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The actuator equation $\\left|(x-5)^2-16\\right|=16$ has exactly $4$ distinct real solutions.",
-    "The growth equation $2^{2t}-20\\cdot 2^t+64=0$ has exactly two real times, $t=2$ and $t=4$.",
-    "A routing calibration uses $\\dfrac{(k-1)x-6}{k-1+1}+2=\\dfrac{3x-(k-1)}{k-1+1}$, with $k\\ne 0$. It yields a nonnegative route adjustment exactly when $k\\in[\\dfrac{7}3,4)$.",
-    "A cold-storage profit index is $P(x)=-2(x-11)^2+150$ for $x>0$. The target $P(x)=142$ gives a repeated operating level at $x=11$.",
-    "The actuator equation $\\left|(x-6)^2-4\\right|=4$ has exactly $3$ distinct real solutions."
+    "Under the studio's multi-tier fee adjustment formula, the operational parameter $m$ satisfies the rational equation $\\frac{m^2 - 9}{m - 3} = 3m - 3$, which admits exactly one valid real solution.",
+    "Under the blade wear law $W(t) = 120 \\cdot 2^{-0.5t} + 15$, the operating time $t$ required for the wear index to decline to the threshold value of $45$ is an integer strictly greater than $5$ years.",
+    "The baseline dispatch equation $3(2p - 15) - 4(p - 5) = 25$ has a unique solution for the output $p$, and this required output strictly exceeds $22\\text{ MW}$.",
+    "Under the demand model $q = 140 - p$, targeting a total nightly room revenue of $R(p) = p(140 - p) = 4800$ euros generates exactly two distinct admissible price levels whose sum equals $140$ euros.",
+    "The buffer equation $\\frac{2t}{t-4} - \\frac{3}{t+2} = \\frac{36}{t^2-2t-8}$ has exactly two solutions in its domain, and their sum is negative."
    ],
    "answer_key": [
     false,
-    true,
-    true,
     false,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSplit the absolute-value equation into both signed branches. One branch contributes a repeated central solution.\n\nPositive branch:\n\n$$(x-5)^2-16=16\\iff (x-5)^2=32$$\n\nIts two roots:\n\n$$x=5\\pm 4\\sqrt{2}$$\n\nNegative branch:\n\n$$(x-5)^2-16=-16\\iff (x-5)^2=0$$\n\nIts single root:\n\n$$x=5$$\n\nCount distinct values:\n\n$$2+1=3$$\n\nThe central equation has one distinct root, not two signed roots, so the total is three and the statement is False.",
-    "**B.** → True\n\nThe quadratic substitution is constrained to positive values, and each positive substitution root maps to one real exponent.\n\nSet the exponential variable:\n\n$$u=2^t>0$$\n\nTransform the equation:\n\n$$u^2-20u+64=0$$\n\nFactor:\n\n$$(u-4)(u-16)=0$$\n\nInvert each power:\n\n$$2^t=4\\Rightarrow t=2,\\qquad 2^t=16\\Rightarrow t=4$$\n\nCount distinct times:\n\n$$N_t=2$$\n\nEach positive $u$-root gives one exponent, so the two printed times are the complete solution.",
-    "**C.** → True\n\nClear the common denominator, but do not lose the parameter at which the coefficient of the unknown vanishes.\n\nSet the shifted parameter:\n\n$$q=k-1,\\qquad q\\ne-1$$\n\nClear and collect:\n\n$$(q-3)x=4-3q$$\n\nSolve away from $q=3$:\n\n$$x=\\frac{3q-4}{3-q}$$\n\nMake the sign chart:\n\n$$x\\ge0\\iff q\\in\\left[\\frac43,3\\right)$$\n\nReturn to $k$:\n\n$$k\\in[\\dfrac{7}3,4)$$\n\nThe numerator zero belongs, while the no-solution value at the right endpoint does not, so the statement is True.",
-    "**D.** → False\n\nKeep the vertex form instead of expanding. The target sits a known vertical distance below the maximum.\n\nSet the target:\n\n$$-2(x-11)^2+150=142$$\n\nIsolate the square:\n\n$$(x-11)^2=4$$\n\nTake both square-root branches:\n\n$$x=11\\pm 2$$\n\nList and check the roots:\n\n$$x\\in\\{9,13\\},\\qquad 9>0$$\n\nThe target is below the vertex value, so two distinct levels occur rather than a repeated root, and the statement is False.",
-    "**E.** → True\n\nSplit the absolute-value equation into both signed branches. One branch contributes a repeated central solution.\n\nPositive branch:\n\n$$(x-6)^2-4=4\\iff (x-6)^2=8$$\n\nIts two roots:\n\n$$x=6\\pm 2\\sqrt{2}$$\n\nNegative branch:\n\n$$(x-6)^2-4=-4\\iff (x-6)^2=0$$\n\nIts single root:\n\n$$x=6$$\n\nCount distinct values:\n\n$$2+1=3$$\n\nThe repeated central branch adds one distinct value, giving the printed count of three."
+    "**A.** → False\n\nFor the rational equation to be defined, the denominator cannot be zero, which establishes the domain condition $m \\neq 3$.\n\nFactoring the numerator on the left-hand side:\n\n$$\\frac{(m - 3)(m + 3)}{m - 3} = 3m - 3$$\n\nFor all $m \\neq 3$, the common factor $(m - 3)$ cancels:\n\n$$m + 3 = 3m - 3$$\n\nSubtracting $m$ from both sides and adding 3 gives:\n\n$$2m = 6$$\n\n$$m = 3$$\n\nSince $m = 3$ is excluded from the domain of the original equation, it is an extraneous root and the equation has no valid solutions, so the statement is False.",
+    "**B.** → False\n\nWe solve the exponential equation for $t$ by isolating the power term:\n\n$$120 \\cdot 2^{-0.5t} + 15 = 45$$\n\n$$120 \\cdot 2^{-0.5t} = 30$$\n\n$$2^{-0.5t} = \\frac{30}{120} = \\frac{1}{4} = 2^{-2}$$\n\nEquating exponents gives:\n\n$$-0.5t = -2$$\n\n$$t = \\frac{-2}{-0.5} = 4$$\n\nThe operating time is $t = 4$ years, which is not strictly greater than $5$, so the statement is False.",
+    "**C.** → True\n\nThe linear equation is solved by expanding parentheses and combining like terms:\n\n$$6p - 45 - 4p + 20 = 25$$\n\n$$2p - 25 = 25$$\n\n$$2p = 50$$\n\n$$p = 25$$\n\nThe solution is unique and $25 > 22$, so the statement is True.",
+    "**D.** → True\n\nNightly room revenue is given by $R(p) = p(140 - p) = 140p - p^2$. Setting $R(p) = 4800$ and rearranging into standard quadratic form gives:\n\n$$p^2 - 140p + 4800 = 0$$\n\nFactoring the quadratic expression yields:\n\n$$(p - 60)(p - 80) = 0$$\n\nThe two solutions are $p_1 = 60$ and $p_2 = 80$. Both prices produce non-negative demand values within the $100$-room capacity ($q = 80$ and $q = 60$ respectively), making both admissible. According to Vieta's formulas, their sum is:\n\n$$p_1 + p_2 = 60 + 80 = 140$$\n\nBoth conditions stated in the claim hold, so the statement is True.",
+    "**E.** → True\n\nTo find the buffer parameter $t$, we solve the rational equation on its algebraic domain. We first identify values that make any denominator zero by factoring the quadratic denominator:\n\n$$t^2 - 2t - 8 = (t - 4)(t + 2)$$\n\nThe algebraic domain excludes $t = 4$ and $t = -2$. Multiplying the entire equation by $(t - 4)(t + 2)$ clears the denominators:\n\n$$2t(t + 2) - 3(t - 4) = 36$$\n\n$$2t^2 + 4t - 3t + 12 = 36$$\n\n$$2t^2 + t - 24 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(2t - 7)(t + 4) = 0$$\n\nThis produces two solutions:\n\n$$t_1 = \\frac{7}{2} = 3.5, \\quad t_2 = -4$$\n\nNeither solution equals 4 or $-2$, so both belong to the domain. The sum of the two solutions is:\n\n$$3.5 + (-4) = -0.5$$\n\nSince $-0.5 < 0$, the sum is strictly negative, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 208,
-   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. A tests absolute quadratic equation; B tests quadratic exponential substitution; C tests shifted parametric equilibrium; D tests quadratic target profit; E tests absolute quadratic equation. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. Map: A tests a rational, radical, or absolute-value equation; B tests an exponential or logarithmic equation with its domain; C tests a linear equation or parameter condition; D tests a quadratic equation and the nature of its roots; E tests a rational, radical, or absolute-value equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-209",
    "case_id": "MATH 4.209",
-   "title": "Hard mixed exam: 16",
+   "title": "Exam-style tasks — 16",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The growth equation $5^{2t}-26\\cdot 5^t+25=0$ has four real times because the quadratic substitution has two roots.",
-    "A routing calibration uses $\\dfrac{(k-2)x-6}{k-2+1}+2=\\dfrac{3x-(k-2)}{k-2+1}$, with $k\\ne 1$. It yields a nonnegative route adjustment exactly when $k\\in(\\dfrac{10}3,5]$.",
-    "A cold-storage profit index is $P(x)=-2(x-12)^2+160$ for $x>0$. The target $P(x)=142$ gives two positive operating levels, $9$ and $15$, whose sum is $24$.",
-    "The actuator equation $\\left|(x-7)^2-9\\right|=9$ has exactly $4$ distinct real solutions.",
-    "The growth equation $3^{2t}-30\\cdot 3^t+81=0$ has exactly two real times, $t=1$ and $t=3$."
+    "The growth equation $\\ln(y + 2) + \\ln(y - 1) = \\ln(10)$ has one extraneous negative root, so exactly one valid solution remains, and it is smaller than $4$.",
+    "In the shredding line, equating the throughput expressions $4x + 12$ and $7x - 24$ yields an equilibrium parameter $x$ that is an even integer strictly greater than 10.",
+    "Under the bulk enterprise data plan where profit in hundreds of euros is modeled by $\\Pi(q) = -2q^2 + 52q - 120$ for quantity $q$ in terabytes, there are two distinct positive break-even quantities whose sum is equal to $26$.",
+    "Solving the optical sensor calibration equation $\\sqrt{5v + 6} = v$ over the real numbers yields exactly one valid operational solution, and the algebraic squaring step produces an extraneous candidate that is strictly negative.",
+    "A shelf-life kinetic model expresses the degradation rate factor $k$ through the exponential equation $e^{2k} - 6e^k + 8 = 0$; this equation has no real solutions because an exponential function cannot equal an integer."
    ],
    "answer_key": [
-    false,
-    false,
     true,
-    false,
-    true
+    true,
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe quadratic substitution is constrained to positive values, and each positive substitution root maps to one real exponent.\n\nSet the exponential variable:\n\n$$u=5^t>0$$\n\nTransform the equation:\n\n$$u^2-26u+25=0$$\n\nFactor:\n\n$$(u-1)(u-25)=0$$\n\nInvert each power:\n\n$$5^t=1\\Rightarrow t=0,\\qquad 5^t=25\\Rightarrow t=2$$\n\nCount distinct times:\n\n$$N_t=2$$\n\nThe signs $\\pm$ do not appear when inverting a positive exponential; there are two times, not four, so the statement is False.",
-    "**B.** → False\n\nClear the common denominator, but do not lose the parameter at which the coefficient of the unknown vanishes.\n\nSet the shifted parameter:\n\n$$q=k-2,\\qquad q\\ne-1$$\n\nClear and collect:\n\n$$(q-3)x=4-3q$$\n\nSolve away from $q=3$:\n\n$$x=\\frac{3q-4}{3-q}$$\n\nMake the sign chart:\n\n$$x\\ge0\\iff q\\in\\left[\\frac43,3\\right)$$\n\nReturn to $k$:\n\n$$k\\in[\\dfrac{10}3,5)$$\n\nThe proposed interval reverses both endpoint decisions, so the statement is False.",
-    "**C.** → True\n\nKeep the vertex form instead of expanding. The target sits a known vertical distance below the maximum.\n\nSet the target:\n\n$$-2(x-12)^2+160=142$$\n\nIsolate the square:\n\n$$(x-12)^2=9$$\n\nTake both square-root branches:\n\n$$x=12\\pm 3$$\n\nList and check the roots:\n\n$$x\\in\\{9,15\\},\\qquad 9>0$$\n\nThe two roots are positive and add to $24$, so the statement is True.",
-    "**D.** → False\n\nSplit the absolute-value equation into both signed branches. One branch contributes a repeated central solution.\n\nPositive branch:\n\n$$(x-7)^2-9=9\\iff (x-7)^2=18$$\n\nIts two roots:\n\n$$x=7\\pm 3\\sqrt{2}$$\n\nNegative branch:\n\n$$(x-7)^2-9=-9\\iff (x-7)^2=0$$\n\nIts single root:\n\n$$x=7$$\n\nCount distinct values:\n\n$$2+1=3$$\n\nThe central equation has one distinct root, not two signed roots, so the total is three and the statement is False.",
-    "**E.** → True\n\nThe quadratic substitution is constrained to positive values, and each positive substitution root maps to one real exponent.\n\nSet the exponential variable:\n\n$$u=3^t>0$$\n\nTransform the equation:\n\n$$u^2-30u+81=0$$\n\nFactor:\n\n$$(u-3)(u-27)=0$$\n\nInvert each power:\n\n$$3^t=3\\Rightarrow t=1,\\qquad 3^t=27\\Rightarrow t=3$$\n\nCount distinct times:\n\n$$N_t=2$$\n\nEach positive $u$-root gives one exponent, so the two printed times are the complete solution."
+    "**A.** → True\n\nTo solve the logarithmic equation, we note that the natural logarithm is defined only for positive arguments, requiring $y + 2 > 0$ and $y - 1 > 0$, which gives the domain $y > 1$. Applying the product rule for logarithms yields:\n\n$$\\ln((y + 2)(y - 1)) = \\ln(10)$$\n\nExponentiating both sides gives the algebraic quadratic equation:\n\n$$(y + 2)(y - 1) = 10$$\n\n$$y^2 + y - 2 = 10$$\n\n$$y^2 + y - 12 = 0$$\n\nFactoring this quadratic equation gives:\n\n$$(y + 4)(y - 3) = 0$$\n\nThis produces algebraic roots $y = -4$ and $y = 3$. The root $y = -4$ is extraneous because it is outside the domain $y > 1$. The only valid solution is $y = 3$, which is strictly less than 4, so the statement is True.",
+    "**B.** → True\n\nTo find the equilibrium parameter $x$, we equate the two linear throughput expressions and solve for the unknown.\n\n$$4x + 12 = 7x - 24$$\n\nSubtracting $4x$ from both sides gives:\n\n$$12 = 3x - 24$$\n\nAdding 24 to both sides gives:\n\n$$36 = 3x$$\n\nDividing by 3 yields:\n\n$$x = 12$$\n\nThe solution $x = 12$ is an even integer and satisfies $12 > 10$, so the statement is True.",
+    "**C.** → True\n\nThe break-even quantities occur where the profit equals zero:\n\n$$-2q^2 + 52q - 120 = 0$$\n\nDividing the entire equation by $-2$ yields:\n\n$$q^2 - 26q + 60 = 0$$\n\nBy Vieta's formulas for a monic quadratic equation $q^2 - b q + c = 0$, the sum of the roots is given by the negative of the linear coefficient:\n\n$$q_1 + q_2 = 26$$\n\nThe discriminant of this quadratic is:\n\n$$\\Delta = (-26)^2 - 4(1)(60) = 676 - 240 = 436 > 0$$\n\nSince $\\Delta > 0$ and the product of the roots is $60 > 0$ with a positive sum of $26$, both roots are positive real numbers whose sum is exactly $26$, so the statement is True.",
+    "**D.** → True\n\nTo solve the radical equation, we isolate the square root and square both sides:\n\n$$\\sqrt{5v + 6} = v$$\n\n$$5v + 6 = v^2$$\n\nRearranging into standard quadratic form gives:\n\n$$v^2 - 5v - 6 = 0$$\n\nFactoring yields:\n\n$$(v - 6)(v + 1) = 0$$\n\nThis generates two algebraic candidates, $v = 6$ and $v = -1$. We test each candidate in the original radical equation:\n\nFor $v = 6$:\n\n$$\\sqrt{5(6) + 6} = \\sqrt{36} = 6$$\n\nThis matches the right-hand side, so $v = 6$ is a valid solution.\n\nFor $v = -1$:\n\n$$\\sqrt{5(-1) + 6} = \\sqrt{1} = 1 \\neq -1$$\n\nThus $v = -1$ is an extraneous solution created by the squaring step, and it is strictly negative, so the statement is True.",
+    "**E.** → False\n\nUsing the substitution $u = e^k$, the exponential equation transforms into a quadratic equation:\n\n$$u^2 - 6u + 8 = 0$$\n\n$$(u - 2)(u - 4) = 0$$\n\nThis yields two positive real values for $u$, namely $u = 2$ and $u = 4$. Reversing the substitution gives:\n\n$$e^k = 2 \\implies k = \\ln(2)$$\n\n$$e^k = 4 \\implies k = \\ln(4)$$\n\nBoth values are valid real solutions, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 209,
-   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. A tests quadratic exponential substitution; B tests shifted parametric equilibrium; C tests quadratic target profit; D tests absolute quadratic equation; E tests quadratic exponential substitution. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. Map: A tests an exponential or logarithmic equation with its domain; B tests a linear equation or parameter condition; C tests a quadratic equation and the nature of its roots; D tests a rational, radical, or absolute-value equation; E tests an exponential or logarithmic equation with its domain. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-210",
    "case_id": "MATH 4.210",
-   "title": "Hard mixed exam: 17",
+   "title": "Exam-style tasks — 17",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A warehouse reconciliation is $(k-4)x=3k-12$. The model has at least one nonnegative solution for every real $k$, with infinitely many only when $k=4$.",
-    "A rectangular depot measuring $20$ m by $30$ m receives a uniform border $w>0$. If the border area is $216\\text{ m}^2$, the quadratic model has two physically admissible positive widths.",
-    "The process equation $x+4-5\\sqrt{x+4}+4=0$ on $x\\ge -4$ has exactly $2$ real solutions.",
-    "A sensor family uses $\\log_{k-1}\\left((x-0)^2+1\\right)=2$. The logarithmic model is defined as a real-base equation exactly when $k\\ge1,\\ k\\ne2$.",
-    "A warehouse reconciliation is $(k-5)x=3k-15$. The model has a unique nonnegative solution for every real $k$."
+    "If the site manager balances the framing budget via the linear parameter equation $k(2w + 3) - 12w = 3(k - 4) + 6$, then there exists a unique real value of the parameter $k$ for which the equation possesses infinitely many solutions for $w$, and that parameter value is strictly positive.",
+    "The net revenue function $R(w) = -2w^2 + 44w - 160$ admits two break-even wind speeds whose product is equal to $80$.",
+    "The rational equation governing the marketing channel allocation, $\\frac{x}{x - 4} - \\frac{2}{x + 1} = \\frac{10}{x^2 - 3x - 4}$, has no real solutions because every candidate value produced by clearing denominators falls outside the equation's domain.",
+    "The logarithmic equation $\\ln(2t - 3) + \\ln(t + 1) = \\ln(25)$ admits two distinct real solutions because the corresponding quadratic equation $(2t - 3)(t + 1) = 25$ has two real roots.",
+    "An outlet with monthly revenue $x$ (in thousands of euros) pays $R_1(x) = 0.06x + 3.6$ under the standard contract and $R_2(x) = 0.10x + 1.2 - k$ under the dynamic contract with a discount $k$. The revenue at which both contracts charge the same amount rises by exactly $25$ thousand euros for every increase of $k$ by one unit."
    ],
    "answer_key": [
-    true,
     false,
     true,
     false,
-    false
+    false,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe two sides share a parameter factor, but cancelling it before checking when it is zero would erase the exceptional case.\n\nFactor the right side:\n\n$$(k-4)x=3(k-4)$$\n\nFor the regular parameters:\n\n$$k\\ne 4:\\quad x=3$$\n\nFor the exceptional parameter:\n\n$$k=4:\\quad 0\\cdot x=0$$\n\nClassify the solution set:\n\n$$k\\ne 4:\\ \\{3\\},\\qquad k=4:\\ \\mathbb R$$\n\nEvery parameter has a nonnegative solution, and only the exceptional value has infinitely many, so the statement is True.",
-    "**B.** → False\n\nThe outer dimensions grow on both sides. Expanding the area equation produces a quadratic whose negative root is algebraically valid but physically impossible.\n\nWrite the border area:\n\n$$(20+2w)(30+2w)-600=216$$\n\nExpand and simplify:\n\n$$4w^2+100w-216=0$$\n\nUse the known positive factor:\n\n$$(w-2)\\left(4w+108\\right)=0$$\n\nRead both algebraic roots:\n\n$$w=2\\quad\\text{or}\\quad w=-\\frac{54}2$$\n\nThe second algebraic root is negative and cannot be a border width, so the statement is False.",
-    "**C.** → True\n\nA nonnegative square-root substitution turns the equation into a quadratic, but the substitution restriction still has to be applied.\n\nSet the principal-root variable:\n\n$$u=\\sqrt{x+4}\\ge0,\\qquad x=u^2-4$$\n\nTransform the equation:\n\n$$u^2-5u+4=0$$\n\nFactor:\n\n$$(u-1)(u-4)=0$$\n\nReturn to the original variable:\n\n$$u=1\\Rightarrow x=-3,\\qquad u=4\\Rightarrow x=12$$\n\nCheck the domain:\n\n$$-3\\ge -4,\\qquad 12\\ge -4$$\n\nBoth nonnegative substitution roots produce distinct admissible values, so the statement is True.",
-    "**D.** → False\n\nThe base of a real logarithm must be positive and different from one. The argument condition is independent and already satisfied.\n\nCheck the quadratic argument:\n\n$$(x-0)^2+1\\ge1>0$$\n\nRequire a positive base:\n\n$$k-1>0\\iff k>1$$\n\nExclude base one:\n\n$$k-1\\ne1\\iff k\\ne2$$\n\nCombine the base restrictions:\n\n$$k>1,\\qquad k\\ne2$$\n\nThe endpoint $k=1$ gives base zero, which is not a logarithm base, so the statement is False.",
-    "**E.** → False\n\nThe two sides share a parameter factor, but cancelling it before checking when it is zero would erase the exceptional case.\n\nFactor the right side:\n\n$$(k-5)x=3(k-5)$$\n\nFor the regular parameters:\n\n$$k\\ne 5:\\quad x=3$$\n\nFor the exceptional parameter:\n\n$$k=5:\\quad 0\\cdot x=0$$\n\nClassify the solution set:\n\n$$k\\ne 5:\\ \\{3\\},\\qquad k=5:\\ \\mathbb R$$\n\nAt $k=5$ every real number solves the equation, so uniqueness fails and the statement is False."
+    "**A.** → False\n\nA linear equation in one unknown $w$ has infinitely many solutions if and only if it simplifies to the identity $0 \\cdot w = 0$.\n\nWe expand and group the terms in $w$ on the left-hand side:\n\n$$k(2w + 3) - 12w = 3(k - 4) + 6$$\n\n$$2kw + 3k - 12w = 3k - 12 + 6$$\n\n$$(2k - 12)w + 3k = 3k - 6$$\n\nSubtracting $3k$ from both sides gives:\n\n$$(2k - 12)w = -6$$\n\nFor the coefficient of $w$ to vanish, we require $2k - 12 = 0$, which yields $k = 6$. Substituting $k = 6$ produces:\n\n$$0 \\cdot w = -6$$\n\nThis statement is false for every real number $w$, meaning the equation has no solution when $k = 6$. For any $k \\neq 6$, the equation has exactly one unique solution, namely $w = \\frac{-6}{2k - 12}$. Consequently, there is no real value of $k$ that produces infinitely many solutions, so the statement is False.",
+    "**B.** → True\n\nBreak-even wind speeds are the solutions to $R(w) = 0$. Dividing the equation $-2w^2 + 44w - 160 = 0$ by $-2$ yields:\n\n$$w^2 - 22w + 80 = 0$$\n\nThe discriminant is:\n\n$$\\Delta = (-22)^2 - 4(1)(80) = 484 - 320 = 164 > 0$$\n\nBecause the discriminant is strictly positive, there are two distinct real break-even speeds. According to Vieta's formulas, the product of the roots of a monic quadratic equation $w^2 + bw + c = 0$ is given by the constant term $c$:\n\n$$w_1 \\cdot w_2 = 80$$\n\nThis matches the claim, so the statement is True.",
+    "**C.** → False\n\nThe rational equation is $\\frac{x}{x - 4} - \\frac{2}{x + 1} = \\frac{10}{x^2 - 3x - 4}$.\n\nFactoring the quadratic denominator gives $x^2 - 3x - 4 = (x - 4)(x + 1)$. The domain of the equation requires $x \\neq 4$ and $x \\neq -1$.\n\nMultiplying both sides by the common denominator $(x - 4)(x + 1)$ clears all fractions:\n\n$$x(x + 1) - 2(x - 4) = 10$$\n\n$$x^2 + x - 2x + 8 = 10$$\n\n$$x^2 - x - 2 = 0$$\n\nFactoring this quadratic equation yields:\n\n$$(x - 2)(x + 1) = 0$$\n\nThe algebraic candidate roots are $x = 2$ and $x = -1$. While $x = -1$ is excluded from the domain because it causes division by zero, the candidate $x = 2$ is fully admissible and satisfies the equation. Therefore, the equation has exactly one valid real solution rather than none, so the statement is False.",
+    "**D.** → False\n\nThe logarithmic equation requires each argument to be strictly positive. The domain is determined by the system of inequalities $2t - 3 > 0$ and $t + 1 > 0$, which yields $t > \\frac{3}{2}$.\n\nApply the logarithm product rule:\n\n$$\\ln((2t - 3)(t + 1)) = \\ln(25)$$\n\n$$(2t - 3)(t + 1) = 25$$\n\nExpand the product:\n\n$$2t^2 - t - 3 = 25$$\n\n$$2t^2 - t - 28 = 0$$\n\nFactor the quadratic equation:\n\n$$(2t + 7)(t - 4) = 0$$\n\nThis yields $t = 4$ and $t = -\\frac{7}{2} = -3.5$. While the quadratic equation has two real roots, the value $t = -3.5$ lies outside the domain of the natural logarithm because $\\ln(2(-3.5) - 3) = \\ln(-10)$ is undefined in the real numbers. Therefore, the logarithmic equation has only one real solution, so the statement is False.",
+    "**E.** → True\n\nTo find the revenue level where both royalty schedules are identical, we set $R_1(x) = R_2(x)$ and solve the linear equation for $x$.\n\n$$0.06x + 3.6 = 0.10x + 1.2 - k$$\n\nSubtracting $0.06x$ and $1.2 - k$ from both sides gives:\n\n$$0.04x = 2.4 + k$$\n\nDividing both sides by $0.04 = \\frac{1}{25}$ yields:\n\n$$x = \\frac{2.4}{0.04} + \\frac{k}{0.04}$$\n\n$$x = 60 + 25k$$\n\nThe rate of change of the breakeven revenue with respect to $k$ is $\\frac{\\mathrm{d}x}{\\mathrm{d}k} = 25$, which means that every unit increase in $k$ increases the breakeven revenue by exactly $25$ thousand euros, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 210,
-   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. A tests cancellation identity parameter; B tests geometric quadratic admissibility; C tests square-root substitution; D tests parameterized logarithm base; E tests cancellation identity parameter. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.1, 4.2, 4.3, 4.4, 4.1. Map: A tests a linear equation or parameter condition; B tests a quadratic equation and the nature of its roots; C tests a rational, radical, or absolute-value equation; D tests an exponential or logarithmic equation with its domain; E tests a linear equation or parameter condition. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-211",
    "case_id": "MATH 4.211",
-   "title": "Hard mixed exam: 18",
+   "title": "Exam-style tasks — 18",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A rectangular depot measuring $22$ m by $32$ m receives a uniform border $w>0$. If the border area is $232\\text{ m}^2$, the quadratic model has one admissible width, $w=2$, although the algebraic companion root is negative.",
-    "The process equation $x+5-5\\sqrt{x+5}+4=0$ on $x\\ge -5$ has exactly $1$ real solutions.",
-    "A sensor family uses $\\log_{k-1}\\left((x-1)^2+1\\right)=3$. The logarithmic model is defined as a real-base equation exactly when $k>1,\\ k\\ne2$.",
-    "A warehouse reconciliation is $(k-6)x=3k-18$. The model has at least one nonnegative solution for every real $k$, with infinitely many only when $k=6$.",
-    "A rectangular depot measuring $24$ m by $34$ m receives a uniform border $w>0$. If the border area is $248\\text{ m}^2$, the quadratic model has two physically admissible positive widths."
+    "The biquadratic equation $x^4-5x^2+4=0$ has exactly four distinct real solutions.",
+    "Squaring the queue equation $\\sqrt{5y + 24} - y = 2$ gives two candidates, but exactly one of them is extraneous.",
+    "In the loyalty program tier equation $\\ln(y + 3) + \\ln(y - 1) = \\ln(5y + 1)$, there is exactly one valid real solution for the tier index $y$, and this solution satisfies $y \\ge 4$.",
+    "If the budget parameter is set to $a = -3$, the linear equation $(a^2 - 9)w = a - 3$ possesses infinitely many solutions for $w$.",
+    "The trip handling cost at speed $v > 0$ is $K(v) = 3v^{2} - 27v + 84$. The budget equation $K(v) = 24$ has two different admissible speeds, and their sum is greater than $8$."
    ],
    "answer_key": [
     true,
+    true,
+    true,
     false,
-    true,
-    true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe outer dimensions grow on both sides. Expanding the area equation produces a quadratic whose negative root is algebraically valid but physically impossible.\n\nWrite the border area:\n\n$$(22+2w)(32+2w)-704=232$$\n\nExpand and simplify:\n\n$$4w^2+108w-232=0$$\n\nUse the known positive factor:\n\n$$(w-2)\\left(4w+116\\right)=0$$\n\nRead both algebraic roots:\n\n$$w=2\\quad\\text{or}\\quad w=-\\frac{58}2$$\n\nOnly the positive root satisfies the geometric domain, so the statement is True.",
-    "**B.** → False\n\nA nonnegative square-root substitution turns the equation into a quadratic, but the substitution restriction still has to be applied.\n\nSet the principal-root variable:\n\n$$u=\\sqrt{x+5}\\ge0,\\qquad x=u^2-5$$\n\nTransform the equation:\n\n$$u^2-5u+4=0$$\n\nFactor:\n\n$$(u-1)(u-4)=0$$\n\nReturn to the original variable:\n\n$$u=1\\Rightarrow x=-4,\\qquad u=4\\Rightarrow x=11$$\n\nCheck the domain:\n\n$$-4\\ge -5,\\qquad 11\\ge -5$$\n\nBoth substitution roots are nonnegative and yield distinct domain values, so the one-solution claim is False.",
-    "**C.** → True\n\nThe base of a real logarithm must be positive and different from one. The argument condition is independent and already satisfied.\n\nCheck the quadratic argument:\n\n$$(x-1)^2+1\\ge1>0$$\n\nRequire a positive base:\n\n$$k-1>0\\iff k>1$$\n\nExclude base one:\n\n$$k-1\\ne1\\iff k\\ne2$$\n\nCombine the base restrictions:\n\n$$k>1,\\qquad k\\ne2$$\n\nThese are exactly the printed parameter restrictions, so the statement is True.",
-    "**D.** → True\n\nThe two sides share a parameter factor, but cancelling it before checking when it is zero would erase the exceptional case.\n\nFactor the right side:\n\n$$(k-6)x=3(k-6)$$\n\nFor the regular parameters:\n\n$$k\\ne 6:\\quad x=3$$\n\nFor the exceptional parameter:\n\n$$k=6:\\quad 0\\cdot x=0$$\n\nClassify the solution set:\n\n$$k\\ne 6:\\ \\{3\\},\\qquad k=6:\\ \\mathbb R$$\n\nEvery parameter has a nonnegative solution, and only the exceptional value has infinitely many, so the statement is True.",
-    "**E.** → False\n\nThe outer dimensions grow on both sides. Expanding the area equation produces a quadratic whose negative root is algebraically valid but physically impossible.\n\nWrite the border area:\n\n$$(24+2w)(34+2w)-816=248$$\n\nExpand and simplify:\n\n$$4w^2+116w-248=0$$\n\nUse the known positive factor:\n\n$$(w-2)\\left(4w+124\\right)=0$$\n\nRead both algebraic roots:\n\n$$w=2\\quad\\text{or}\\quad w=-\\frac{62}2$$\n\nThe second algebraic root is negative and cannot be a border width, so the statement is False."
+    "**A.** → True\n\nTreat the equation as a quadratic in $u=x^2$.\n\n$$u^2-5u+4=0$$\n\n$$(u-1)(u-4)=0$$\n\n$$x^2=1\\quad\\text{or}\\quad x^2=4$$\n\n$$x\\in\\{-2,-1,1,2\\}$$\n\nAll four candidates are real and distinct. Therefore the statement is True.",
+    "**B.** → True\n\nTo solve the radical equation, we isolate the square root on one side:\n\n$$\\sqrt{5y + 24} = y + 2$$\n\nSquaring both sides of the equation yields:\n\n$$5y + 24 = (y + 2)^2$$\n\n$$5y + 24 = y^2 + 4y + 4$$\n\nRearranging into standard quadratic form gives:\n\n$$y^2 - y - 20 = 0$$\n\nFactoring the quadratic polynomial results in:\n\n$$(y - 5)(y + 4) = 0$$\n\nThis gives two candidate real roots, $y = 5$ and $y = -4$. We test each candidate in the original radical equation:\n\n$$\\sqrt{5(5) + 24} - 5 = \\sqrt{49} - 5 = 7 - 5 = 2$$\n\n$$\\sqrt{5(-4) + 24} - (-4) = \\sqrt{4} + 4 = 2 + 4 = 6 \\neq 2$$\n\nThe candidate $y = -4$ is an extraneous root introduced by squaring, meaning exactly one candidate is extraneous, so the statement is True.",
+    "**C.** → True\n\nThe logarithmic model is $\\ln(y + 3) + \\ln(y - 1) = \\ln(5y + 1)$. The real natural logarithm requires strictly positive arguments, establishing the domain constraints $y + 3 > 0$, $y - 1 > 0$, and $5y + 1 > 0$, which together require $y > 1$.\n\nApplying the product rule for logarithms transforms the left side:\n\n$$\\ln((y + 3)(y - 1)) = \\ln(5y + 1)$$\n\nBecause the natural logarithm function is one-to-one, we equate the arguments:\n\n$$(y + 3)(y - 1) = 5y + 1$$\n\n$$y^2 + 2y - 3 = 5y + 1$$\n\n$$y^2 - 3y - 4 = 0$$\n\nFactoring yields:\n\n$$(y - 4)(y + 1) = 0$$\n\nThe candidate solutions are $y = 4$ and $y = -1$. The candidate $y = -1$ is extraneous because it violates the domain condition $y > 1$. Thus, $y = 4$ is the unique valid real solution, and it satisfies $y \\ge 4$, so the statement is True.",
+    "**D.** → False\n\nA linear equation in the form $k \\cdot w = b$ has infinitely many solutions if and only if both $k = 0$ and $b = 0$, and has no solution if $k = 0$ and $b \\neq 0$.\n\nSubstituting $a = -3$ into the equation $(a^2 - 9)w = a - 3$ gives:\n\n$$((-3)^2 - 9)w = -3 - 3$$\n\n$$(9 - 9)w = -6$$\n\n$$0 \\cdot w = -6$$\n\nBecause $0 \\cdot w = 0$ for all real numbers $w$, no value of $w$ can satisfy $0 = -6$.\n\nTherefore, the equation has no solution when $a = -3$, so the statement is False.",
+    "**E.** → True\n\nThe budget requirement is given by the quadratic equation:\n\n$$3v^2 - 27v + 84 = 24$$\n\nSubtract $24$ from both sides:\n\n$$3v^2 - 27v + 60 = 0$$\n\nDivide the entire equation by $3$:\n\n$$v^2 - 9v + 20 = 0$$\n\nFactor the quadratic polynomial:\n\n$$(v - 4)(v - 5) = 0$$\n\nThis yields two real solutions:\n\n$$v_1 = 4, \\quad v_2 = 5$$\n\nBoth speeds are strictly positive and therefore physically admissible. Their sum is:\n\n$$4 + 5 = 9$$\n\nSince $9 > 8$, the equation has two distinct admissible solutions whose sum exceeds $8$, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 211,
-   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. A tests geometric quadratic admissibility; B tests square-root substitution; C tests parameterized logarithm base; D tests cancellation identity parameter; E tests geometric quadratic admissibility. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.2, 4.3, 4.4, 4.1, 4.2. Map: A tests biquadratic substitution; B tests a rational, radical, or absolute-value equation; C tests an exponential or logarithmic equation with its domain; D tests a linear equation or parameter condition; E tests a quadratic equation and the nature of its roots. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-212",
    "case_id": "MATH 4.212",
-   "title": "Hard mixed exam: 19",
+   "title": "Exam-style tasks — 19",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The process equation $x+6-5\\sqrt{x+6}+4=0$ on $x\\ge -6$ has exactly $2$ real solutions.",
-    "A sensor family uses $\\log_{k-1}\\left((x-2)^2+1\\right)=2$. The logarithmic model is defined as a real-base equation exactly when $k\\ge1,\\ k\\ne2$.",
-    "A warehouse reconciliation is $(k-7)x=3k-21$. The model has a unique nonnegative solution for every real $k$.",
-    "A rectangular depot measuring $26$ m by $36$ m receives a uniform border $w>0$. If the border area is $264\\text{ m}^2$, the quadratic model has one admissible width, $w=2$, although the algebraic companion root is negative.",
-    "The process equation $x+7-5\\sqrt{x+7}+4=0$ on $x\\ge -7$ has exactly $1$ real solutions."
+    "The delivery equation $\\frac{60}{v - 10} + \\frac{60}{v + 10} = \\frac{5}{2}$ admits two real algebraic solutions, but only one satisfies the physical requirement $v > 10$, and that admissible base velocity is strictly less than $45\\text{ km/h}$.",
+    "If a specialized promotional cohort decays according to $N(t) = N_0 \\cdot 2^{-\\frac{t}{6}}$, the time $t$ in months required for the active cohort size to drop to 12.5% of its initial size $N_0$ is strictly greater than 16 months and is an integer multiple of 6.",
+    "The rebate $y$ under the policy parameter $p$ satisfies $(p - 5)y + 3 = 2y + p - 1$. For $p = 7$ this equation has infinitely many solutions.",
+    "If daily operating profit in thousands of euros is modeled by $\\Pi(q) = -q^2 + 14q - 40$, the sum of the two break-even output levels is strictly greater than 15.",
+    "When solving the rational irrigation spreader equation $\\frac{300}{r} + \\frac{300}{r+10} = 25$ for the base discharge rate $r$, the underlying algebraic equation has two distinct real solutions, and the physically admissible flow rate is strictly greater than 25 litres per minute."
    ],
    "answer_key": [
+    false,
     true,
     false,
     false,
-    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA nonnegative square-root substitution turns the equation into a quadratic, but the substitution restriction still has to be applied.\n\nSet the principal-root variable:\n\n$$u=\\sqrt{x+6}\\ge0,\\qquad x=u^2-6$$\n\nTransform the equation:\n\n$$u^2-5u+4=0$$\n\nFactor:\n\n$$(u-1)(u-4)=0$$\n\nReturn to the original variable:\n\n$$u=1\\Rightarrow x=-5,\\qquad u=4\\Rightarrow x=10$$\n\nCheck the domain:\n\n$$-5\\ge -6,\\qquad 10\\ge -6$$\n\nBoth nonnegative substitution roots produce distinct admissible values, so the statement is True.",
-    "**B.** → False\n\nThe base of a real logarithm must be positive and different from one. The argument condition is independent and already satisfied.\n\nCheck the quadratic argument:\n\n$$(x-2)^2+1\\ge1>0$$\n\nRequire a positive base:\n\n$$k-1>0\\iff k>1$$\n\nExclude base one:\n\n$$k-1\\ne1\\iff k\\ne2$$\n\nCombine the base restrictions:\n\n$$k>1,\\qquad k\\ne2$$\n\nThe endpoint $k=1$ gives base zero, which is not a logarithm base, so the statement is False.",
-    "**C.** → False\n\nThe two sides share a parameter factor, but cancelling it before checking when it is zero would erase the exceptional case.\n\nFactor the right side:\n\n$$(k-7)x=3(k-7)$$\n\nFor the regular parameters:\n\n$$k\\ne 7:\\quad x=3$$\n\nFor the exceptional parameter:\n\n$$k=7:\\quad 0\\cdot x=0$$\n\nClassify the solution set:\n\n$$k\\ne 7:\\ \\{3\\},\\qquad k=7:\\ \\mathbb R$$\n\nAt $k=7$ every real number solves the equation, so uniqueness fails and the statement is False.",
-    "**D.** → True\n\nThe outer dimensions grow on both sides. Expanding the area equation produces a quadratic whose negative root is algebraically valid but physically impossible.\n\nWrite the border area:\n\n$$(26+2w)(36+2w)-936=264$$\n\nExpand and simplify:\n\n$$4w^2+124w-264=0$$\n\nUse the known positive factor:\n\n$$(w-2)\\left(4w+132\\right)=0$$\n\nRead both algebraic roots:\n\n$$w=2\\quad\\text{or}\\quad w=-\\frac{66}2$$\n\nOnly the positive root satisfies the geometric domain, so the statement is True.",
-    "**E.** → False\n\nA nonnegative square-root substitution turns the equation into a quadratic, but the substitution restriction still has to be applied.\n\nSet the principal-root variable:\n\n$$u=\\sqrt{x+7}\\ge0,\\qquad x=u^2-7$$\n\nTransform the equation:\n\n$$u^2-5u+4=0$$\n\nFactor:\n\n$$(u-1)(u-4)=0$$\n\nReturn to the original variable:\n\n$$u=1\\Rightarrow x=-6,\\qquad u=4\\Rightarrow x=9$$\n\nCheck the domain:\n\n$$-6\\ge -7,\\qquad 9\\ge -7$$\n\nBoth substitution roots are nonnegative and yield distinct domain values, so the one-solution claim is False."
+    "**A.** → False\n\nA rational equation is solved by multiplying through by the common denominator, subject to the domain restriction that no denominator is zero.\n\nFor the delivery equation, the domain requires $v \\neq 10$ and $v \\neq -10$, with the physical constraint $v > 10$. Multiplying by the common denominator $2(v - 10)(v + 10)$ gives:\n\n$$60 \\cdot 2(v + 10) + 60 \\cdot 2(v - 10) = 5(v^2 - 100)$$\n\n$$120v + 1200 + 120v - 1200 = 5v^2 - 500$$\n\n$$240v = 5v^2 - 500$$\n\n$$5v^2 - 240v - 500 = 0$$\n\nDividing by $5$ yields:\n\n$$v^2 - 48v - 100 = 0$$\n\n$$(v - 50)(v + 2) = 0$$\n\nThe algebraic roots are $v = 50$ and $v = -2$. Under the physical requirement $v > 10$, the only admissible solution is $v = 50\\text{ km/h}$. Since $50$ is greater than $45$, the admissible speed is not strictly less than $45\\text{ km/h}$, so the statement is False.",
+    "**B.** → True\n\nWe set the remaining cohort size $N(t)$ equal to $0.125 N_0$:\n\n$$N_0 \\cdot 2^{-\\frac{t}{6}} = 0.125 N_0$$\n\nDividing both sides by $N_0$ and expressing $0.125$ as a power of 2:\n\n$$2^{-\\frac{t}{6}} = \\frac{1}{8} = 2^{-3}$$\n\nEquating the exponents:\n\n$$-\\frac{t}{6} = -3$$\n\n$$t = 18$$\n\nThe value $18$ is strictly greater than 16 and is an exact integer multiple of 6 ($18 = 3 \\cdot 6$), so the statement is True.",
+    "**C.** → False\n\nWe rearrange the linear equation into standard linear form $A y = B$:\n\n$$(p - 5)y + 3 = 2y + p - 1$$\n\nSubtracting $2y$ and $3$ from both sides gives:\n\n$$(p - 5 - 2)y = p - 1 - 3$$\n\n$$(p - 7)y = p - 4$$\n\nSubstituting the parameter value $p = 7$ into this linear form results in:\n\n$$(7 - 7)y = 7 - 4$$\n\n$$0 \\cdot y = 3$$\n\nNo real number $y$ satisfies $0 = 3$. Therefore, for $p = 7$, the equation is inconsistent and has zero solutions rather than infinitely many solutions, so the statement is False.",
+    "**D.** → False\n\nBreak-even output levels occur where the profit function equals zero.\n\n$$-q^2 + 14q - 40 = 0$$\n\nMultiplying the entire equation by $-1$ gives:\n\n$$q^2 - 14q + 40 = 0$$\n\nFactoring the quadratic equation yields:\n\n$$(q - 4)(q - 10) = 0$$\n\nThe two break-even production levels are $q_1 = 4$ and $q_2 = 10$. Their sum is:\n\n$$q_1 + q_2 = 4 + 10 = 14$$\n\n14 is not strictly greater than 15, so the statement is False.",
+    "**E.** → False\n\nTo solve the rational equation $\\frac{300}{r} + \\frac{300}{r+10} = 25$, we first divide every term by 25:\n\n$$\\frac{12}{r} + \\frac{12}{r+10} = 1$$\n\nMultiplying by the common denominator $r(r + 10)$ for $r \\neq 0$ and $r \\neq -10$ gives:\n\n$$12(r + 10) + 12r = r(r + 10)$$\n\n$$24r + 120 = r^2 + 10r$$\n\n$$r^2 - 14r - 120 = 0$$\n\nFactoring the resulting quadratic equation yields:\n\n$$(r - 20)(r + 6) = 0$$\n\nThis gives two algebraic roots: $r = 20$ and $r = -6$. The physical constraint that discharge rates must be positive eliminates $r = -6$, leaving $r = 20$ litres per minute as the sole admissible solution. Since $20 \\le 25$, the admissible rate is not strictly greater than 25 litres per minute, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 212,
-   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. A tests square-root substitution; B tests parameterized logarithm base; C tests cancellation identity parameter; D tests geometric quadratic admissibility; E tests square-root substitution. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.3, 4.4, 4.1, 4.2, 4.3. Map: A tests a rational, radical, or absolute-value equation; B tests an exponential or logarithmic equation with its domain; C tests a linear equation or parameter condition; D tests a quadratic equation and the nature of its roots; E tests a rational, radical, or absolute-value equation. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-4-213",
    "case_id": "MATH 4.213",
-   "title": "Hard mixed exam: 20",
+   "title": "Exam-style tasks — 20",
    "subsection": "4.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A sensor family uses $\\log_{k-1}\\left((x-3)^2+1\\right)=3$. The logarithmic model is defined as a real-base equation exactly when $k>1,\\ k\\ne2$.",
-    "A warehouse reconciliation is $(k-8)x=3k-24$. The model has at least one nonnegative solution for every real $k$, with infinitely many only when $k=8$.",
-    "A rectangular depot measuring $28$ m by $38$ m receives a uniform border $w>0$. If the border area is $280\\text{ m}^2$, the quadratic model has two physically admissible positive widths.",
-    "The process equation $x+8-5\\sqrt{x+8}+4=0$ on $x\\ge -8$ has exactly $2$ real solutions.",
-    "A sensor family uses $\\log_{k-1}\\left((x-4)^2+1\\right)=2$. The logarithmic model is defined as a real-base equation exactly when $k\\ge1,\\ k\\ne2$."
+    "The valuation equation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$ has exactly one solution in its domain, and this duration is shorter than $3$ years.",
+    "To dilute a $6$-liter mixture containing $1.8$ kg of dissolved active compound to a concentration of $15\\%$ by adding a solvent with a $5\\%$ compound concentration, the required solvent volume $x$ is an integer strictly less than $10$ liters.",
+    "The servicing cost of $n$ vans is $M(n) = n^{2} - 18n + 120$ in thousands of euros. The equation $M(n) = 40$ has two different real solutions whose sum is $18$ and whose product is $80$.",
+    "When calibrating the moisture extraction curve modeled by the radical equation $\\sqrt{x + 20} = x - 10$, the algebraic squaring step introduces an extraneous root, leaving exactly one valid physical solution for $x$, which is an even integer.",
+    "Under the monthly demand decay model $D(t) = 400 \\cdot e^{-0.1t}$, the time $t$ required for monthly sales to decline to exactly $100$ copies is strictly less than $14$ months."
    ],
    "answer_key": [
-    true,
-    true,
     false,
     true,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe base of a real logarithm must be positive and different from one. The argument condition is independent and already satisfied.\n\nCheck the quadratic argument:\n\n$$(x-3)^2+1\\ge1>0$$\n\nRequire a positive base:\n\n$$k-1>0\\iff k>1$$\n\nExclude base one:\n\n$$k-1\\ne1\\iff k\\ne2$$\n\nCombine the base restrictions:\n\n$$k>1,\\qquad k\\ne2$$\n\nThese are exactly the printed parameter restrictions, so the statement is True.",
-    "**B.** → True\n\nThe two sides share a parameter factor, but cancelling it before checking when it is zero would erase the exceptional case.\n\nFactor the right side:\n\n$$(k-8)x=3(k-8)$$\n\nFor the regular parameters:\n\n$$k\\ne 8:\\quad x=3$$\n\nFor the exceptional parameter:\n\n$$k=8:\\quad 0\\cdot x=0$$\n\nClassify the solution set:\n\n$$k\\ne 8:\\ \\{3\\},\\qquad k=8:\\ \\mathbb R$$\n\nEvery parameter has a nonnegative solution, and only the exceptional value has infinitely many, so the statement is True.",
-    "**C.** → False\n\nThe outer dimensions grow on both sides. Expanding the area equation produces a quadratic whose negative root is algebraically valid but physically impossible.\n\nWrite the border area:\n\n$$(28+2w)(38+2w)-1064=280$$\n\nExpand and simplify:\n\n$$4w^2+132w-280=0$$\n\nUse the known positive factor:\n\n$$(w-2)\\left(4w+140\\right)=0$$\n\nRead both algebraic roots:\n\n$$w=2\\quad\\text{or}\\quad w=-\\frac{70}2$$\n\nThe second algebraic root is negative and cannot be a border width, so the statement is False.",
-    "**D.** → True\n\nA nonnegative square-root substitution turns the equation into a quadratic, but the substitution restriction still has to be applied.\n\nSet the principal-root variable:\n\n$$u=\\sqrt{x+8}\\ge0,\\qquad x=u^2-8$$\n\nTransform the equation:\n\n$$u^2-5u+4=0$$\n\nFactor:\n\n$$(u-1)(u-4)=0$$\n\nReturn to the original variable:\n\n$$u=1\\Rightarrow x=-7,\\qquad u=4\\Rightarrow x=8$$\n\nCheck the domain:\n\n$$-7\\ge -8,\\qquad 8\\ge -8$$\n\nBoth nonnegative substitution roots produce distinct admissible values, so the statement is True.",
-    "**E.** → False\n\nThe base of a real logarithm must be positive and different from one. The argument condition is independent and already satisfied.\n\nCheck the quadratic argument:\n\n$$(x-4)^2+1\\ge1>0$$\n\nRequire a positive base:\n\n$$k-1>0\\iff k>1$$\n\nExclude base one:\n\n$$k-1\\ne1\\iff k\\ne2$$\n\nCombine the base restrictions:\n\n$$k>1,\\qquad k\\ne2$$\n\nThe endpoint $k=1$ gives base zero, which is not a logarithm base, so the statement is False."
+    "**A.** → False\n\nThe logarithmic equation $\\ln(4t - 3) - \\ln(t + 2) = \\ln(2)$ requires $4t - 3 > 0$ and $t + 2 > 0$, defining the domain $t > \\frac{3}{4}$. Applying the quotient rule for logarithms yields:\n\n$$\\ln\\left(\\frac{4t - 3}{t + 2}\\right) = \\ln(2)$$\n\nExponentiating both sides gives:\n\n$$\\frac{4t - 3}{t + 2} = 2$$\n\nMultiplying by $t + 2$ produces:\n\n$$4t - 3 = 2t + 4$$\n\n$$2t = 7$$\n\n$$t = 3.5$$\n\nThe unique solution is $t = 3.5$ years, which is in the natural domain but is strictly greater than $3$ years, so the statement is False.",
+    "**B.** → True\n\nThe concentration after adding $x$ liters of the $5\\%$ solution is modeled by a rational equation:\n\n$$\\frac{1.8 + 0.05x}{6 + x} = 0.15$$\n\n$$1.8 + 0.05x = 0.15(6 + x)$$\n\n$$1.8 + 0.05x = 0.90 + 0.15x$$\n\n$$0.90 = 0.10x$$\n\n$$x = 9$$\n\nThe solution is $x = 9$ liters, which is an integer strictly less than $10$, so the statement is True.",
+    "**C.** → True\n\nSetting the quadratic maintenance cost function equal to the budget cap of $40$ yields the quadratic equation in standard form:\n\n$$n^2 - 18n + 80 = 0$$\n\nWe calculate the discriminant to verify the nature and count of the roots:\n\n$$\\Delta = (-18)^2 - 4(1)(80) = 324 - 320 = 4$$\n\nBecause $\\Delta > 0$, there are two distinct real solutions. Factoring the quadratic expression gives:\n\n$$(n - 8)(n - 10) = 0$$\n\nThe two solutions are $n_1 = 8$ and $n_2 = 10$. By Vieta's formulas, their sum is $n_1 + n_2 = -\\frac{-18}{1} = 18$ and their product is $n_1 \\cdot n_2 = \\frac{80}{1} = 80$, so the statement is True.",
+    "**D.** → True\n\nSolving the radical equation requires isolating the radical and squaring both sides:\n\n$$\\sqrt{x + 20} = x - 10$$\n\n$$x + 20 = (x - 10)^2$$\n\n$$x + 20 = x^2 - 20x + 100$$\n\n$$x^2 - 21x + 80 = 0$$\n\nFactoring yields:\n\n$$(x - 16)(x - 5) = 0$$\n\nTesting $x = 5$ in the original equation gives $\\sqrt{25} = 5$ on the left-hand side and $5 - 10 = -5$ on the right-hand side, so $x = 5$ is an extraneous root. Testing $x = 16$ gives $\\sqrt{36} = 6$ and $16 - 10 = 6$, which is valid. The only valid solution is $x = 16$, which is an even integer, so the statement is True.",
+    "**E.** → True\n\nSetting monthly demand equal to $100$ gives an exponential equation:\n\n$$400 \\cdot e^{-0.1t} = 100$$\n\n$$e^{-0.1t} = \\frac{100}{400} = \\frac{1}{4}$$\n\nTaking the natural logarithm of both sides:\n\n$$-0.1t = \\ln\\left(\\frac{1}{4}\\right)$$\n\n$$-0.1t = -\\ln(4) = -2\\ln(2)$$\n\n$$t = \\frac{2\\ln(2)}{0.1} = 20\\ln(2)$$\n\nUsing the standard value $\\ln(2) \\approx 0.69315$, we evaluate the product:\n\n$$t = 20 \\cdot 0.69315 = 13.863$$\n\nSince $13.863 < 14$, the required time is strictly less than $14$ months, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 213,
-   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. A tests parameterized logarithm base; B tests cancellation identity parameter; C tests geometric quadratic admissibility; D tests square-root substitution; E tests parameterized logarithm base. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 4.4, 4.1, 4.2, 4.3, 4.4. Map: A tests an exponential or logarithmic equation with its domain; B tests a linear equation or parameter condition; C tests a quadratic equation and the nature of its roots; D tests a rational, radical, or absolute-value equation; E tests an exponential or logarithmic equation with its domain. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   }
  ]

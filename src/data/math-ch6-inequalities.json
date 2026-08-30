@@ -2789,641 +2789,641 @@
   {
    "id": "math-6-89",
    "case_id": "MATH 6.89",
-   "title": "Hard mixed exam: 1",
+   "title": "Exam-style tasks — 1",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The solution set of $\\dfrac{(x-6)(x-3)}{(x-3)(x-1)}\\le0$ is $(1,3)\\cup(3,6]$.",
-    "For the parameter inequality $x^2-2kx+k^2-4\\le0$, every solution is strictly positive exactly when $k\\ge 2$.",
-    "The compound inequality $4\\le(x-1)^2<16$ has solution set $(-3,-1]\\cup[3,5)$.",
-    "An online equipment shop discounts a listed price $p$ by $15\\%$, adds $8\\%$ tax to the discounted amount, and then subtracts a €7 coupon. To keep the final bill at or below €90, the greatest allowable whole-euro list price is €106.",
-    "The solution set of $\\dfrac{(x-7)(x-4)}{(x-4)(x-2)}\\le0$ is $(2,7]$."
+    "The strict inequality $\\dfrac{(x-2)(x-3)}{(x-1)(x+1)}>0$ holds on $(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$.",
+    "A rectangular display has sides $x$ and $12-x$, with $0<x<12$. Its area is at least $27$ exactly when $3\\le x\\le9$.",
+    "The nested inequality $\\bigl||x-1|-2\\bigr|\\ge1$ has solution set $(-\\infty,-2]\\cup[0,2]\\cup[4,\\infty)$.",
+    "To produce one unit of a certain product, three raw materials — A, B, and C — are required. Specifically, 3 units of A, 2 units of B, and 4 units of C are used. The raw materials cost 40 EUR, 50 EUR, and 25 EUR per unit, respectively, and the production of one unit of the product costs 12 EUR. The producer has a total budget of 21,400 EUR and storage capacity for at most 475 units of all raw materials combined. Then, the maximum number of products that can be produced is less than 50.",
+    "For a fixed parameter $a>0$, $\\dfrac{x-a}{x+a}>0$ exactly when $x<-a$ or $x>a$."
    ],
    "answer_key": [
     true,
-    false,
+    true,
     true,
     false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nCancel the shared factor for sign analysis, but retain every zero of the original denominator as a hole.\n\nState the original exclusions:\n\n$$x\\ne 3,\\qquad x\\ne 1$$\n\nSimplify away from the holes:\n\n$$\\frac{(x-6)(x-3)}{(x-3)(x-1)}=\\frac{x-6}{x-1}$$\n\nSolve the reduced inequality:\n\n$$\\frac{x-6}{x-1}\\le0\\iff x\\in(1,6]$$\n\nRemove the cancelled hole:\n\n$$(1,3)\\cup(3,6]$$\n\nThe pole $x=1$ and cancelled hole $x=3$ are both excluded, while the numerator zero $x=6$ is included, so the statement is True.",
-    "**B.** → False\n\nComplete the square to recover the full solution interval. The phrase every solution is strictly positive is controlled by its left endpoint.\n\nComplete the square:\n\n$$(x-k)^2\\le 4$$\n\nTake the distance interval:\n\n$$k-2\\le x\\le k+2$$\n\nRequire the whole interval above zero:\n\n$$k-2>0$$\n\nSolve for the parameter:\n\n$$k>2$$\n\nAt $k=2$ the interval contains $x=0$, so not every solution is strictly positive and the statement is False.",
-    "**C.** → True\n\nThe lower and upper square bounds have different strictness. Convert them to a magnitude band before unfolding the two branches.\n\nTake square-root bounds:\n\n$$2\\le|x-1|<4$$\n\nUse the negative branch:\n\n$$-4<x-1\\le-2$$\n\nUse the positive branch:\n\n$$2\\le x-1<4$$\n\nShift both branches:\n\n$$(-3,-1]\\cup[3,5)$$\n\nThe inner endpoints are closed and the outer endpoints are open exactly as printed, so the statement is True.",
-    "**D.** → False\n\nPercentage changes act multiplicatively in sequence, while the coupon is subtracted after both multipliers.\n\nBuild the final-price model:\n\n$$F(p)=\\frac{85}{100}\\cdot\\frac{108}{100}p-7$$\n\nImpose the spending cap:\n\n$$\\frac{459}{500}p-7\\le 90$$\n\nIsolate the list price:\n\n$$p\\le\\frac{97\\cdot 500}{459}=\\frac{48500}{459}$$\n\nApply the whole-euro condition:\n\n$$p_{\\max}=\\left\\lfloor\\frac{48500}{459}\\right\\rfloor=105$$\n\nThe proposed €106 exceeds the exact bound; the maximum is €105, so the statement is False.",
-    "**E.** → False\n\nCancel the shared factor for sign analysis, but retain every zero of the original denominator as a hole.\n\nState the original exclusions:\n\n$$x\\ne 4,\\qquad x\\ne 2$$\n\nSimplify away from the holes:\n\n$$\\frac{(x-7)(x-4)}{(x-4)(x-2)}=\\frac{x-7}{x-2}$$\n\nSolve the reduced inequality:\n\n$$\\frac{x-7}{x-2}\\le0\\iff x\\in(2,7]$$\n\nRemove the cancelled hole:\n\n$$(2,4)\\cup(4,7]$$\n\nThe interval still contains the original hole $x=4$, so the statement is False."
+    "**A.** → True\n\nAll four factors have simple critical points, so the sign alternates at each one.\n\n$$-1,\\ 1,\\ 2,\\ 3$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$$\n\nStrictness excludes zeros as well as poles. Therefore the statement is True.",
+    "**B.** → True\n\nTranslate the area requirement into a quadratic inequality.\n\n$$x(12-x)\\ge27$$\n\n$$x^2-12x+27\\le0$$\n\n$$(x-3)(x-9)\\le0$$\n\n$$3\\le x\\le9$$\n\nThe resulting interval lies inside the physical side-length domain. Therefore the statement is True.",
+    "**C.** → True\n\nSet $u=|x-1|\\ge0$ and solve the outer inequality first.\n\n$$|u-2|\\ge1\\iff u\\le1\\quad\\text{or}\\quad u\\ge3$$\n\n$$|x-1|\\le1\\iff 0\\le x\\le2$$\n\n$$|x-1|\\ge3\\iff x\\le-2\\quad\\text{or}\\quad x\\ge4$$\n\nThe three closed pieces form the stated union. Therefore the statement is True.",
+    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be the number of products.\n\n$$9n \\le 475$$\n\n$$n \\le 52$$\n\nCost per product:\n\n$$3 \\cdot 40 + 2 \\cdot 50 + 4 \\cdot 25 + 12 = 332$$\n\n$$332n \\le 21400$$\n\n$$n \\le 64$$\n\nStorage gives the tighter cap:\n\n$$n \\le 52$$\n\nThe maximum is 52, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nThe zero $a$ and pole $-a$ split the line into three sign intervals.\n\n$$x=-a\\ (\\text{pole}),\\qquad x=a\\ (\\text{zero})$$\n\n$$\\frac{x-a}{x+a}>0\\iff x\\in(-\\infty,-a)\\cup(a,\\infty)$$\n\nStrictness excludes both critical points. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 89,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. A tests rational inequality with cancelled hole; B tests parameterized quadratic interval; C tests compound square band; D tests chained discount tax coupon; E tests rational inequality with cancelled hole. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests interlaced zeros and poles; B tests fixed-perimeter area threshold; C tests nested exterior absolute-value condition; D tests a contextual inequality with all practical constraints; E tests parameterized rational inequality. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-90",
    "case_id": "MATH 6.90",
-   "title": "Hard mixed exam: 2",
+   "title": "Exam-style tasks — 2",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "For the parameter inequality $x^2-2kx+k^2-9\\le0$, every solution is strictly positive exactly when $k>3$.",
-    "The compound inequality $9\\le(x-2)^2<25$ has solution set $[-3,-1)\\cup(5,7]$.",
-    "An online equipment shop discounts a listed price $p$ by $20\\%$, adds $7\\%$ tax to the discounted amount, and then subtracts a €9 coupon. To keep the final bill at or below €110, the greatest allowable whole-euro list price is €139.",
-    "The solution set of $\\dfrac{(x-8)(x-5)}{(x-5)(x-3)}\\le0$ is $(3,5)\\cup(5,8]$.",
-    "For the parameter inequality $x^2-2kx+k^2-16\\le0$, every solution is strictly positive exactly when $k\\ge 4$."
+    "The biquadratic inequality $x^4-10x^2+9<0$ has solution set $(-3,-1)\\cup(1,3)$.",
+    "The condition $\\max\\{x-1,\\,3-x\\}<2$ is equivalent to the open interval $1<x<3$.",
+    "A painter mixes 2 litres of white paint (3 EUR per litre) with 1 litre of colour concentrate (9 EUR per litre) to make 3 litres of blend. They claim that any amount of this same 2:1 mix whose total volume is at most 12 litres will cost at most 50 EUR in materials. That claim is true.",
+    "The comparison $\\dfrac{2x+1}{x-4}\\le1$ is equivalent to $-5\\le x<4$.",
+    "A quality score is $q(x)=-2(x-5)^2+18$. The requirement $q(x)\\ge10$ is met exactly for $3\\le x\\le7$."
    ],
    "answer_key": [
     true,
+    true,
     false,
     true,
-    true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nComplete the square to recover the full solution interval. The phrase every solution is strictly positive is controlled by its left endpoint.\n\nComplete the square:\n\n$$(x-k)^2\\le 9$$\n\nTake the distance interval:\n\n$$k-3\\le x\\le k+3$$\n\nRequire the whole interval above zero:\n\n$$k-3>0$$\n\nSolve for the parameter:\n\n$$k>3$$\n\nThe left endpoint must be strictly positive, giving the printed strict parameter range.",
-    "**B.** → False\n\nThe lower and upper square bounds have different strictness. Convert them to a magnitude band before unfolding the two branches.\n\nTake square-root bounds:\n\n$$3\\le|x-2|<5$$\n\nUse the negative branch:\n\n$$-5<x-2\\le-3$$\n\nUse the positive branch:\n\n$$3\\le x-2<5$$\n\nShift both branches:\n\n$$(-3,-1]\\cup[5,7)$$\n\nThe proposed brackets attach strictness to the wrong boundaries, so the statement is False.",
-    "**C.** → True\n\nPercentage changes act multiplicatively in sequence, while the coupon is subtracted after both multipliers.\n\nBuild the final-price model:\n\n$$F(p)=\\frac{80}{100}\\cdot\\frac{107}{100}p-9$$\n\nImpose the spending cap:\n\n$$\\frac{107}{125}p-9\\le 110$$\n\nIsolate the list price:\n\n$$p\\le\\frac{119\\cdot 125}{107}=\\frac{14875}{107}$$\n\nApply the whole-euro condition:\n\n$$p_{\\max}=\\left\\lfloor\\frac{14875}{107}\\right\\rfloor=139$$\n\nThe floor is the printed whole-euro maximum, so the statement is True.",
-    "**D.** → True\n\nCancel the shared factor for sign analysis, but retain every zero of the original denominator as a hole.\n\nState the original exclusions:\n\n$$x\\ne 5,\\qquad x\\ne 3$$\n\nSimplify away from the holes:\n\n$$\\frac{(x-8)(x-5)}{(x-5)(x-3)}=\\frac{x-8}{x-3}$$\n\nSolve the reduced inequality:\n\n$$\\frac{x-8}{x-3}\\le0\\iff x\\in(3,8]$$\n\nRemove the cancelled hole:\n\n$$(3,5)\\cup(5,8]$$\n\nThe pole $x=3$ and cancelled hole $x=5$ are both excluded, while the numerator zero $x=8$ is included, so the statement is True.",
-    "**E.** → False\n\nComplete the square to recover the full solution interval. The phrase every solution is strictly positive is controlled by its left endpoint.\n\nComplete the square:\n\n$$(x-k)^2\\le 16$$\n\nTake the distance interval:\n\n$$k-4\\le x\\le k+4$$\n\nRequire the whole interval above zero:\n\n$$k-4>0$$\n\nSolve for the parameter:\n\n$$k>4$$\n\nAt $k=4$ the interval contains $x=0$, so not every solution is strictly positive and the statement is False."
+    "**A.** → True\n\nUse $u=x^2$ and then translate the positive interval for $u$ back to $x$.\n\n$$u^2-10u+9<0$$\n\n$$(u-1)(u-9)<0\\iff 1<u<9$$\n\n$$1<x^2<9$$\n\n$$x\\in(-3,-1)\\cup(1,3)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
+    "**B.** → True\n\nA maximum is below a threshold exactly when each entry is below it.\n\n$$x-1<2\\quad\\text{and}\\quad 3-x<2$$\n\n$$x<3\\quad\\text{and}\\quad x>1$$\n\n$$1<x<3$$\n\nBoth inequalities are strict, so both endpoints are excluded. Therefore the statement is True.",
+    "**C.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $V$ be the total volume of blend in litres ($V > 0$).\n\nCost:\n\n$$\\dfrac{2}{3}V \\cdot 3 + \\dfrac{1}{3}V \\cdot 9 = 2V + 3V = 5V$$\n\n“At most 50 EUR” means $5V \\le 50$, so $V \\le 10$.\n\nBatches up to 12 litres include $V = 12$, which costs $5 \\cdot 12 = 60 > 50$ EUR.\n\nOnly volumes up to 10 litres stay within 50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\nMove the constant to the left over a common denominator.\n\n$$\\frac{2x+1}{x-4}-1=\\frac{x+5}{x-4}$$\n\n$$\\frac{x+5}{x-4}\\le0$$\n\n$$x\\in[-5,4)$$\n\nThe zero $-5$ is included and the pole $4$ is excluded. Therefore the statement is True.",
+    "**E.** → True\n\nWork from vertex form and divide by the negative coefficient carefully.\n\n$$-2(x-5)^2+18\\ge10$$\n\n$$(x-5)^2\\le4$$\n\n$$|x-5|\\le2$$\n\n$$3\\le x\\le7$$\n\nThe endpoints give the threshold value exactly. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 90,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. A tests parameterized quadratic interval; B tests compound square band; C tests chained discount tax coupon; D tests rational inequality with cancelled hole; E tests parameterized quadratic interval. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests biquadratic interval substitution; B tests maximum of two affine expressions; C tests a contextual inequality with all practical constraints; D tests rational expression compared with a constant; E tests vertex-form quality window. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-91",
    "case_id": "MATH 6.91",
-   "title": "Hard mixed exam: 3",
+   "title": "Exam-style tasks — 3",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The compound inequality $16\\le(x-3)^2<36$ has solution set $(-3,-1]\\cup[7,9)$.",
-    "An online equipment shop discounts a listed price $p$ by $25\\%$, adds $12\\%$ tax to the discounted amount, and then subtracts a €12 coupon. To keep the final bill at or below €125, the greatest allowable whole-euro list price is €164.",
-    "The solution set of $\\dfrac{(x-9)(x-6)}{(x-6)(x-4)}\\le0$ is $(4,9]$.",
-    "For the parameter inequality $x^2-2kx+k^2-25\\le0$, every solution is strictly positive exactly when $k>5$.",
-    "The compound inequality $25\\le(x-4)^2<49$ has solution set $[-3,-1)\\cup(9,11]$."
+    "The inequality $|x^2-1|>0$ is true for every real $x$ except $x=-1$ and $x=1$.",
+    "A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 $m^{2}$. Every shorter-side length from 8 m to 16 m inclusive is possible.",
+    "The solution set of $\\dfrac{x^2-1}{x-1}>0$ is the uninterrupted interval $(-1,\\infty)$.",
+    "The non-strict inequality $(x-3)^2\\ge0$ is true for every real $x$, with equality only at $x=3$.",
+    "The combined conditions “$x<-2$ or $x\\ge1$” and “$x<4$” give $(-\\infty,-2)\\cup[1,4)$."
    ],
    "answer_key": [
     true,
     false,
     false,
     true,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe lower and upper square bounds have different strictness. Convert them to a magnitude band before unfolding the two branches.\n\nTake square-root bounds:\n\n$$4\\le|x-3|<6$$\n\nUse the negative branch:\n\n$$-6<x-3\\le-4$$\n\nUse the positive branch:\n\n$$4\\le x-3<6$$\n\nShift both branches:\n\n$$(-3,-1]\\cup[7,9)$$\n\nThe inner endpoints are closed and the outer endpoints are open exactly as printed, so the statement is True.",
-    "**B.** → False\n\nPercentage changes act multiplicatively in sequence, while the coupon is subtracted after both multipliers.\n\nBuild the final-price model:\n\n$$F(p)=\\frac{75}{100}\\cdot\\frac{112}{100}p-12$$\n\nImpose the spending cap:\n\n$$\\frac{21}{25}p-12\\le 125$$\n\nIsolate the list price:\n\n$$p\\le\\frac{137\\cdot 25}{21}=\\frac{3425}{21}$$\n\nApply the whole-euro condition:\n\n$$p_{\\max}=\\left\\lfloor\\frac{3425}{21}\\right\\rfloor=163$$\n\nThe proposed €164 exceeds the exact bound; the maximum is €163, so the statement is False.",
-    "**C.** → False\n\nCancel the shared factor for sign analysis, but retain every zero of the original denominator as a hole.\n\nState the original exclusions:\n\n$$x\\ne 6,\\qquad x\\ne 4$$\n\nSimplify away from the holes:\n\n$$\\frac{(x-9)(x-6)}{(x-6)(x-4)}=\\frac{x-9}{x-4}$$\n\nSolve the reduced inequality:\n\n$$\\frac{x-9}{x-4}\\le0\\iff x\\in(4,9]$$\n\nRemove the cancelled hole:\n\n$$(4,6)\\cup(6,9]$$\n\nThe interval still contains the original hole $x=6$, so the statement is False.",
-    "**D.** → True\n\nComplete the square to recover the full solution interval. The phrase every solution is strictly positive is controlled by its left endpoint.\n\nComplete the square:\n\n$$(x-k)^2\\le 25$$\n\nTake the distance interval:\n\n$$k-5\\le x\\le k+5$$\n\nRequire the whole interval above zero:\n\n$$k-5>0$$\n\nSolve for the parameter:\n\n$$k>5$$\n\nThe left endpoint must be strictly positive, giving the printed strict parameter range.",
-    "**E.** → False\n\nThe lower and upper square bounds have different strictness. Convert them to a magnitude band before unfolding the two branches.\n\nTake square-root bounds:\n\n$$5\\le|x-4|<7$$\n\nUse the negative branch:\n\n$$-7<x-4\\le-5$$\n\nUse the positive branch:\n\n$$5\\le x-4<7$$\n\nShift both branches:\n\n$$(-3,-1]\\cup[9,11)$$\n\nThe proposed brackets attach strictness to the wrong boundaries, so the statement is False."
+    "**A.** → True\n\nAn absolute value is positive exactly when its inside is nonzero.\n\n$$|x^2-1|>0\\iff x^2-1\\ne0$$\n\n$$(x-1)(x+1)\\ne0$$\n\n$$x\\ne-1,\\quad x\\ne1$$\n\nNo sign chart beyond the two zeros is needed. Therefore the statement is True.",
+    "**B.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w > 0$ be the shorter side; longer side $2w$.\n\nFencing:\n\n$$2(2w + w) \\le 100$$\n\nArea:\n\n$$2w^{2} \\ge 200$$\n\n$$6w \\le 100$$\n\n$$w \\le \\dfrac{50}{3} \\approx 16.67$$\n\n$$w^{2} \\ge 100$$\n\n$$w \\ge 10$$\n\nTrue range:\n\n$$10 \\le w \\le \\dfrac{50}{3}$$\n\n$$w = 8$$\n\nThis fails the area requirement even though fencing would allow it.\n\nThe lower end must be 10 m, not 8 m.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\nThe common factor may cancel algebraically, but the original hole remains.\n\n$$x\\ne1,\\qquad \\frac{x^2-1}{x-1}=x+1$$\n\n$$x+1>0\\iff x>-1$$\n\n$$x\\in(-1,1)\\cup(1,\\infty)$$\n\nThe claim incorrectly restores the undefined point $x=1$. Therefore the statement is False.",
+    "**D.** → True\n\nEvery real square is nonnegative.\n\n$$(x-3)^2\\ge0\\quad\\text{for all }x\\in\\mathbb R$$\n\n$$(x-3)^2=0\\iff x=3$$\n\nThe equality description is exact. Therefore the statement is True.",
+    "**E.** → True\n\nIntersect the union from the first condition with the final half-line.\n\n$$\\bigl((-\\infty,-2)\\cup[1,\\infty)\\bigr)\\cap(-\\infty,4)$$\n\n$$(-\\infty,-2)\\cup[1,4)$$\n\nThe mixed open and closed endpoints are preserved. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 91,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. A tests compound square band; B tests chained discount tax coupon; C tests rational inequality with cancelled hole; D tests parameterized quadratic interval; E tests compound square band. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests positive modulus with two excluded zeros; B tests a contextual inequality with all practical constraints; C tests strict inequality with a removable hole; D tests universal square inequality; E tests logical union intersected with a bound. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-92",
    "case_id": "MATH 6.92",
-   "title": "Hard mixed exam: 4",
+   "title": "Exam-style tasks — 4",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "An online equipment shop discounts a listed price $p$ by $30\\%$, adds $5\\%$ tax to the discounted amount, and then subtracts a €15 coupon. To keep the final bill at or below €140, the greatest allowable whole-euro list price is €210.",
-    "The solution set of $\\dfrac{(x-10)(x-7)}{(x-7)(x-5)}\\le0$ is $(5,7)\\cup(7,10]$.",
-    "For the parameter inequality $x^2-2kx+k^2-36\\le0$, every solution is strictly positive exactly when $k\\ge 6$.",
-    "The compound inequality $36\\le(x-5)^2<64$ has solution set $(-3,-1]\\cup[11,13)$.",
-    "An online equipment shop discounts a listed price $p$ by $10\\%$, adds $9\\%$ tax to the discounted amount, and then subtracts a €6 coupon. To keep the final bill at or below €80, the greatest allowable whole-euro list price is €88."
+    "A bridge limit is 12 tonnes. Each fully loaded truck weighs 4.3 tonnes. Three fully loaded trucks can be on the bridge at once.",
+    "The rational expression $\\dfrac{(x-2)^2}{(x+4)(x-1)}$ is negative exactly on $(-4,1)$.",
+    "The inequality $2x^2+8x+3<0$ is equivalent to $|x+2|<\\sqrt{\\dfrac52}$.",
+    "The simultaneous conditions $x+1\\le|x-1|<4$ hold exactly for $-3<x\\le0$.",
+    "Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. A user claims that Plan A is strictly cheaper than Plan B whenever they use fewer than 200 call-minutes in a month. That claim is true."
    ],
    "answer_key": [
-    true,
-    true,
     false,
     true,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nPercentage changes act multiplicatively in sequence, while the coupon is subtracted after both multipliers.\n\nBuild the final-price model:\n\n$$F(p)=\\frac{70}{100}\\cdot\\frac{105}{100}p-15$$\n\nImpose the spending cap:\n\n$$\\frac{147}{200}p-15\\le 140$$\n\nIsolate the list price:\n\n$$p\\le\\frac{155\\cdot 200}{147}=\\frac{31000}{147}$$\n\nApply the whole-euro condition:\n\n$$p_{\\max}=\\left\\lfloor\\frac{31000}{147}\\right\\rfloor=210$$\n\nThe floor is the printed whole-euro maximum, so the statement is True.",
-    "**B.** → True\n\nCancel the shared factor for sign analysis, but retain every zero of the original denominator as a hole.\n\nState the original exclusions:\n\n$$x\\ne 7,\\qquad x\\ne 5$$\n\nSimplify away from the holes:\n\n$$\\frac{(x-10)(x-7)}{(x-7)(x-5)}=\\frac{x-10}{x-5}$$\n\nSolve the reduced inequality:\n\n$$\\frac{x-10}{x-5}\\le0\\iff x\\in(5,10]$$\n\nRemove the cancelled hole:\n\n$$(5,7)\\cup(7,10]$$\n\nThe pole $x=5$ and cancelled hole $x=7$ are both excluded, while the numerator zero $x=10$ is included, so the statement is True.",
-    "**C.** → False\n\nComplete the square to recover the full solution interval. The phrase every solution is strictly positive is controlled by its left endpoint.\n\nComplete the square:\n\n$$(x-k)^2\\le 36$$\n\nTake the distance interval:\n\n$$k-6\\le x\\le k+6$$\n\nRequire the whole interval above zero:\n\n$$k-6>0$$\n\nSolve for the parameter:\n\n$$k>6$$\n\nAt $k=6$ the interval contains $x=0$, so not every solution is strictly positive and the statement is False.",
-    "**D.** → True\n\nThe lower and upper square bounds have different strictness. Convert them to a magnitude band before unfolding the two branches.\n\nTake square-root bounds:\n\n$$6\\le|x-5|<8$$\n\nUse the negative branch:\n\n$$-8<x-5\\le-6$$\n\nUse the positive branch:\n\n$$6\\le x-5<8$$\n\nShift both branches:\n\n$$(-3,-1]\\cup[11,13)$$\n\nThe inner endpoints are closed and the outer endpoints are open exactly as printed, so the statement is True.",
-    "**E.** → False\n\nPercentage changes act multiplicatively in sequence, while the coupon is subtracted after both multipliers.\n\nBuild the final-price model:\n\n$$F(p)=\\frac{90}{100}\\cdot\\frac{109}{100}p-6$$\n\nImpose the spending cap:\n\n$$\\frac{981}{1000}p-6\\le 80$$\n\nIsolate the list price:\n\n$$p\\le\\frac{86\\cdot 1000}{981}=\\frac{86000}{981}$$\n\nApply the whole-euro condition:\n\n$$p_{\\max}=\\left\\lfloor\\frac{86000}{981}\\right\\rfloor=87$$\n\nThe proposed €88 exceeds the exact bound; the maximum is €87, so the statement is False."
+    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be trucks.\n\n$$4.3n\\le 12$$\n\n$$n\\le 2.79$$\n\nMax $n=2$; three weigh 12.9 tonnes.\n\nNot allowed.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nThe numerator is positive except at $x=2$, which lies outside the candidate negative interval.\n\n$$(x-2)^2\\ge0$$\n\n$$(x+4)(x-1)<0\\iff -4<x<1$$\n\n$$\\frac{(x-2)^2}{(x+4)(x-1)}<0\\iff -4<x<1$$\n\nBoth denominator zeros are excluded automatically by the open interval. Therefore the statement is True.",
+    "**C.** → True\n\nComplete the square and divide by the positive coefficient.\n\n$$2x^2+8x+3=2(x+2)^2-5$$\n\n$$2(x+2)^2-5<0$$\n\n$$(x+2)^2<\\frac52$$\n\n$$|x+2|<\\sqrt{\\frac52}$$\n\nEvery transformation is reversible. Therefore the statement is True.",
+    "**D.** → True\n\nSolve each condition independently and intersect the results.\n\n$$x+1\\le|x-1|\\iff x\\le0$$\n\n$$|x-1|<4\\iff -3<x<5$$\n\n$$(-\\infty,0]\\cap(-3,5)=(-3,0]$$\n\nThe left endpoint is strict while $x=0$ satisfies both conditions. Therefore the statement is True.",
+    "**E.** → True\n\nCompare the two linear cost rules at the same usage.\n\nLet $x$ be call-minutes in a month ($x \\ge 0$).\n\nPlan A:\n\n$$10 + 0.10x$$\n\nPlan B:\n\n$$20 + 0.05x$$\n\n“A strictly cheaper than B” means\n\n$$10 + 0.10x < 20 + 0.05x$$\n\n$$0.10x - 0.05x < 20 - 10$$\n\n$$0.05x < 10$$\n\n$$x < 200$$\n\nPlan A is strictly cheaper exactly when $x < 200$. At $x = 200$ the plans cost the same; for $x > 200$, Plan B is cheaper.\n\nThe solved result agrees with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 92,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. A tests chained discount tax coupon; B tests rational inequality with cancelled hole; C tests parameterized quadratic interval; D tests compound square band; E tests chained discount tax coupon. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests squared numerator over a quadratic denominator; C tests irrational-radius vertex interval; D tests intersection of a modulus comparison and band; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-93",
    "case_id": "MATH 6.93",
-   "title": "Hard mixed exam: 5",
+   "title": "Exam-style tasks — 5",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $\\dfrac{(x-3)^2(x-8)}{(x-1)(x-5)^2}\\le0$ has solution set $[1,5)\\cup(5,8]$.",
-    "The quartic inequality $(x^2-1)(x^2-16)\\le0$ has solution set $[-4,-1]\\cup[1,4]$.",
-    "The nested inequality $\\bigl||x-1|-4\\bigr|\\ge 2$ has solution set $(-\\infty,-5)\\cup(-1,3)\\cup(7,\\infty)$.",
-    "A workshop pays a fixed €900 setup charge and €120 in materials per finished unit. Each unit occupies $7$ pallet spaces. With a €6000 budget and $279$ available pallet spaces, the greatest whole number of units it can complete is $39$.",
-    "The inequality $\\dfrac{(x-4)^2(x-9)}{(x-2)(x-6)^2}\\le0$ has solution set $(2,6)\\cup(6,9]$."
+    "On its domain, $\\dfrac{x^2-9}{x-3}<5$ holds exactly when $x<2$.",
+    "The strict inequality $x^2-7x+10<0$ contains exactly the two integer solutions $x=3$ and $x=4$.",
+    "The inequality $|x|-|x-2|>0$ holds exactly when $x>1$.",
+    "Leo earns 14 EUR per hour and gets a 50 EUR bonus if he works more than 25 hours in a week. He claims that working 28 hours this week will bring him at least 450 EUR in total pay. That claim is true.",
+    "The inequality $\\dfrac{x}{x^2+4}<\\dfrac14$ holds for every real $x$ except $x=2$."
    ],
    "answer_key": [
-    false,
+    true,
+    true,
     true,
     false,
-    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nDouble factors create zeros or holes without changing sign. The two simple factors determine the negative region.\n\nList critical points with multiplicity:\n\n$$1\\ (\\text{simple pole}),\\ 3\\ (\\text{double zero}),\\ 5\\ (\\text{double pole}),\\ 8\\ (\\text{simple zero})$$\n\nReduce the sign away from critical points:\n\n$$\\operatorname{sgn}\\!\\left(\\frac{(x-3)^2(x-8)}{(x-1)(x-5)^2}\\right)=\\operatorname{sgn}\\!\\left(\\frac{x-8}{x-1}\\right)$$\n\nLocate nonpositive signs:\n\n$$x\\in(1,8]$$\n\nDelete both denominator zeros:\n\n$$(1,5)\\cup(5,8]$$\n\nThe value $x=1$ is a denominator zero and cannot be included, so the statement is False.",
-    "**B.** → True\n\nTreat $x^2$ as one nonnegative variable, then pull the resulting square band back to both sides of the number line.\n\nSet the quadratic variable:\n\n$$u=x^2\\ge0$$\n\nSolve the factored quadratic sign:\n\n$$(u-1)(u-16)\\le0\\iff 1\\le u\\le 16$$\n\nReturn to magnitudes:\n\n$$1\\le|x|\\le 4$$\n\nUnfold both branches:\n\n$$[-4,-1]\\cup[1,4]$$\n\nThe non-strict inequality includes all four roots, so the statement is True.",
-    "**C.** → False\n\nSet the inner distance as a nonnegative variable, split the outer inequality, then unfold each distance condition.\n\nSet the inner magnitude:\n\n$$u=|x-1|\\ge0$$\n\nSolve the outer inequality:\n\n$$|u-4|\\ge 2\\iff u\\le 2\\ \\text{or}\\ u\\ge 6$$\n\nUnfold the inner condition:\n\n$$|x-1|\\le 2\\iff -1\\le x\\le 3$$\n\nUnfold the outer condition:\n\n$$|x-1|\\ge 6\\iff x\\le -5\\ \\text{or}\\ x\\ge 7$$\n\nCombine:\n\n$$(-\\infty,-5]\\cup[-1,3]\\cup[7,\\infty)$$\n\nEvery boundary makes the outer absolute value exactly equal to the cutoff, so the all-open set is False.",
-    "**D.** → True\n\nThe production count must satisfy the budget and storage inequalities simultaneously, and the integer condition requires floors.\n\nBudget restriction:\n\n$$900+120n\\le 6000\\iff n\\le\\frac{5100}{120}$$\n\nTake the budget floor:\n\n$$n\\le 42$$\n\nStorage restriction:\n\n$$7n\\le 279\\iff n\\le\\frac{279}{7}$$\n\nTake the storage floor:\n\n$$n\\le 39$$\n\nIntersect both caps:\n\n$$n_{\\max}=\\min\\{42,39\\}=39$$\n\nThe storage constraint fixes the printed integer maximum, so the statement is True.",
-    "**E.** → True\n\nDouble factors create zeros or holes without changing sign. The two simple factors determine the negative region.\n\nList critical points with multiplicity:\n\n$$2\\ (\\text{simple pole}),\\ 4\\ (\\text{double zero}),\\ 6\\ (\\text{double pole}),\\ 9\\ (\\text{simple zero})$$\n\nReduce the sign away from critical points:\n\n$$\\operatorname{sgn}\\!\\left(\\frac{(x-4)^2(x-9)}{(x-2)(x-6)^2}\\right)=\\operatorname{sgn}\\!\\left(\\frac{x-9}{x-2}\\right)$$\n\nLocate nonpositive signs:\n\n$$x\\in(2,9]$$\n\nDelete both denominator zeros:\n\n$$(2,6)\\cup(6,9]$$\n\nThe simple pole is open, the double pole splits the interval, and the numerator zero is closed, so the statement is True."
+    "**A.** → True\n\nFactor first, retaining the original domain restriction.\n\n$$x\\ne3,\\qquad \\frac{x^2-9}{x-3}=x+3$$\n\n$$x+3<5\\iff x<2$$\n\nThe removed point $x=3$ lies outside the resulting interval, so no extra hole appears. Therefore the statement is True.",
+    "**B.** → True\n\nFactor and inspect the integers in the open interval.\n\n$$(x-2)(x-5)<0$$\n\n$$2<x<5$$\n\n$$x\\in\\mathbb Z\\implies x\\in\\{3,4\\}$$\n\nThe roots themselves are excluded. Therefore the statement is True.",
+    "**C.** → True\n\nThe inequality says that $x$ is farther from $0$ than from $2$.\n\n$$|x|>|x-2|$$\n\n$$x^2>(x-2)^2$$\n\n$$4x>4$$\n\n$$x>1$$\n\nSquaring is reversible because both sides are nonnegative. Therefore the statement is True.",
+    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h$ be hours worked. Here $h = 28 > 25$, so pay $= 14h + 50$.\n\n“At least 450” with the bonus means\n\n$$14h + 50 \\ge 450$$\n\n$$14h \\ge 400$$\n\n$$h \\ge \\dfrac{400}{14} \\approx 28.57$$\n\nEven with the bonus, he needs more than 28 hours.\n\nAt 28 hours:\n\n$$14 \\cdot 28 + 50 = 442$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nThe denominator is positive, so clear it and complete the square.\n\n$$4x<x^2+4$$\n\n$$x^2-4x+4>0$$\n\n$$(x-2)^2>0$$\n\n$$x\\ne2$$\n\nEquality occurs only at $x=2$. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 93,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. A tests repeated-factor rational sign; B tests biquadratic sign pullback; C tests nested absolute inequality; D tests integer production constraints; E tests repeated-factor rational sign. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests cancellation with an irrelevant hole; B tests integer solutions in an open quadratic interval; C tests difference of two distances; D tests a contextual inequality with all practical constraints; E tests bounded rational function versus its maximum. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-94",
    "case_id": "MATH 6.94",
-   "title": "Hard mixed exam: 6",
+   "title": "Exam-style tasks — 6",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The quartic inequality $(x^2-4)(x^2-25)\\le0$ has solution set $(-5,-2)\\cup(2,5)$.",
-    "The nested inequality $\\bigl||x-2|-5\\bigr|\\ge 2$ has solution set $(-\\infty,-5]\\cup[-1,5]\\cup[9,\\infty)$.",
-    "A workshop pays a fixed €1000 setup charge and €135 in materials per finished unit. Each unit occupies $8$ pallet spaces. With a €7007 budget and $343$ available pallet spaces, the greatest whole number of units it can complete is $43$.",
-    "The inequality $\\dfrac{(x-5)^2(x-10)}{(x-3)(x-7)^2}\\le0$ has solution set $[3,7)\\cup(7,10]$.",
-    "The quartic inequality $(x^2-9)(x^2-36)\\le0$ has solution set $[-6,-3]\\cup[3,6]$."
+    "For every real parameter $a$, the strict inequality $x^2-2ax+a^2<0$ has no real solution.",
+    "The equation $|x-1|=|2x+3|$ has exactly the two real solutions $x=-4$ and $x=-\\dfrac23$.",
+    "A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.",
+    "The inequality $\\dfrac{(x-1)^2}{x+2}\\ge0$ is satisfied exactly for $x>-2$.",
+    "The inequality $x^2+2x\\le3x+4$ holds for $\\dfrac{1-\\sqrt{17}}2\\le x\\le\\dfrac{1+\\sqrt{17}}2$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTreat $x^2$ as one nonnegative variable, then pull the resulting square band back to both sides of the number line.\n\nSet the quadratic variable:\n\n$$u=x^2\\ge0$$\n\nSolve the factored quadratic sign:\n\n$$(u-4)(u-25)\\le0\\iff 4\\le u\\le 25$$\n\nReturn to magnitudes:\n\n$$2\\le|x|\\le 5$$\n\nUnfold both branches:\n\n$$[-5,-2]\\cup[2,5]$$\n\nEvery root makes the product zero and must be included, so the open intervals make the statement False.",
-    "**B.** → True\n\nSet the inner distance as a nonnegative variable, split the outer inequality, then unfold each distance condition.\n\nSet the inner magnitude:\n\n$$u=|x-2|\\ge0$$\n\nSolve the outer inequality:\n\n$$|u-5|\\ge 2\\iff u\\le 3\\ \\text{or}\\ u\\ge 7$$\n\nUnfold the inner condition:\n\n$$|x-2|\\le 3\\iff -1\\le x\\le 5$$\n\nUnfold the outer condition:\n\n$$|x-2|\\ge 7\\iff x\\le -5\\ \\text{or}\\ x\\ge 9$$\n\nCombine:\n\n$$(-\\infty,-5]\\cup[-1,5]\\cup[9,\\infty)$$\n\nEquality is allowed in both outer branches, so all six displayed boundary decisions are correct.",
-    "**C.** → False\n\nThe production count must satisfy the budget and storage inequalities simultaneously, and the integer condition requires floors.\n\nBudget restriction:\n\n$$1000+135n\\le 7007\\iff n\\le\\frac{6007}{135}$$\n\nTake the budget floor:\n\n$$n\\le 44$$\n\nStorage restriction:\n\n$$8n\\le 343\\iff n\\le\\frac{343}{8}$$\n\nTake the storage floor:\n\n$$n\\le 42$$\n\nIntersect both caps:\n\n$$n_{\\max}=\\min\\{44,42\\}=42$$\n\nAt $43$ units at least one constraint fails; the simultaneous maximum is $42$, so the statement is False.",
-    "**D.** → False\n\nDouble factors create zeros or holes without changing sign. The two simple factors determine the negative region.\n\nList critical points with multiplicity:\n\n$$3\\ (\\text{simple pole}),\\ 5\\ (\\text{double zero}),\\ 7\\ (\\text{double pole}),\\ 10\\ (\\text{simple zero})$$\n\nReduce the sign away from critical points:\n\n$$\\operatorname{sgn}\\!\\left(\\frac{(x-5)^2(x-10)}{(x-3)(x-7)^2}\\right)=\\operatorname{sgn}\\!\\left(\\frac{x-10}{x-3}\\right)$$\n\nLocate nonpositive signs:\n\n$$x\\in(3,10]$$\n\nDelete both denominator zeros:\n\n$$(3,7)\\cup(7,10]$$\n\nThe value $x=3$ is a denominator zero and cannot be included, so the statement is False.",
-    "**E.** → True\n\nTreat $x^2$ as one nonnegative variable, then pull the resulting square band back to both sides of the number line.\n\nSet the quadratic variable:\n\n$$u=x^2\\ge0$$\n\nSolve the factored quadratic sign:\n\n$$(u-9)(u-36)\\le0\\iff 9\\le u\\le 36$$\n\nReturn to magnitudes:\n\n$$3\\le|x|\\le 6$$\n\nUnfold both branches:\n\n$$[-6,-3]\\cup[3,6]$$\n\nThe non-strict inequality includes all four roots, so the statement is True."
+    "**A.** → True\n\nRecognize the parameterized perfect square.\n\n$$x^2-2ax+a^2=(x-a)^2$$\n\n$$(x-a)^2\\ge0$$\n\nA real square cannot be strictly negative. Therefore the statement is True.",
+    "**B.** → True\n\nEqual absolute values split into equal and opposite linear branches.\n\n$$x-1=2x+3\\quad\\text{or}\\quad x-1=-(2x+3)$$\n\n$$x=-4\\quad\\text{or}\\quad 3x=-2$$\n\n$$x\\in\\left\\{-4,-\\frac23\\right\\}$$\n\nBoth branch solutions satisfy the original equation. Therefore the statement is True.",
+    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be payments.\n\n$$150n\\ge 1200$$\n\n$$n\\ge 8$$\n\nExactly 8 payments clear the debt.\n\n8 is necessary and sufficient.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe squared numerator is nonnegative, while the denominator controls the nonzero sign.\n\n$$(x-1)^2\\ge0,\\qquad x\\ne-2$$\n\n$$x>-2\\implies \\frac{(x-1)^2}{x+2}\\ge0$$\n\n$$x<-2\\implies \\frac{(x-1)^2}{x+2}<0$$\n\nThe zero at $x=1$ is already contained in the interval. Therefore the statement is True.",
+    "**E.** → True\n\nBring the two models to one side and use the quadratic formula.\n\n$$x^2-x-4\\le0$$\n\n$$x=\\frac{1\\pm\\sqrt{1+16}}2=\\frac{1\\pm\\sqrt{17}}2$$\n\n$$\\frac{1-\\sqrt{17}}2\\le x\\le\\frac{1+\\sqrt{17}}2$$\n\nThe upward-opening quadratic is nonpositive between its roots. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 94,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. A tests biquadratic sign pullback; B tests nested absolute inequality; C tests integer production constraints; D tests repeated-factor rational sign; E tests biquadratic sign pullback. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests parameterized impossible square; B tests equality of two affine moduli; C tests a contextual inequality with all practical constraints; D tests squared numerator over a linear pole; E tests comparison of a quadratic and a line. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-95",
    "case_id": "MATH 6.95",
-   "title": "Hard mixed exam: 7",
+   "title": "Exam-style tasks — 7",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The nested inequality $\\bigl||x-3|-6\\bigr|\\ge 2$ has solution set $(-\\infty,-5)\\cup(-1,7)\\cup(11,\\infty)$.",
-    "A workshop pays a fixed €1100 setup charge and €150 in materials per finished unit. Each unit occupies $9$ pallet spaces. With a €8075 budget and $413$ available pallet spaces, the greatest whole number of units it can complete is $45$.",
-    "The inequality $\\dfrac{(x-6)^2(x-11)}{(x-4)(x-8)^2}\\le0$ has solution set $(4,8)\\cup(8,11]$.",
-    "The quartic inequality $(x^2-16)(x^2-49)\\le0$ has solution set $(-7,-4)\\cup(4,7)$.",
-    "The nested inequality $\\bigl||x-4|-7\\bigr|\\ge 2$ has solution set $(-\\infty,-5]\\cup[-1,9]\\cup[13,\\infty)$."
+    "The inequality $|x-1|\\,|x+1|\\le0$ is satisfied only at $x=-1$ and $x=1$.",
+    "Shipper A charges 12 EUR plus 0.80 EUR per kg; shipper B charges 20 EUR plus 0.40 EUR per kg. For a 25 kg parcel, A is strictly cheaper than B.",
+    "The reciprocal inequality $\\dfrac1{x^2-4}>0$ has solution set $(-\\infty,-2)\\cup(2,\\infty)$.",
+    "The inequality $x^2-6x+k<0$ has at least one real solution exactly when $k\\le9$.",
+    "The simultaneous inequalities $|x-2|<3$ and $|x+1|\\ge2$ have solution set $[1,5)$."
    ],
    "answer_key": [
-    false,
     true,
+    false,
     true,
     false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSet the inner distance as a nonnegative variable, split the outer inequality, then unfold each distance condition.\n\nSet the inner magnitude:\n\n$$u=|x-3|\\ge0$$\n\nSolve the outer inequality:\n\n$$|u-6|\\ge 2\\iff u\\le 4\\ \\text{or}\\ u\\ge 8$$\n\nUnfold the inner condition:\n\n$$|x-3|\\le 4\\iff -1\\le x\\le 7$$\n\nUnfold the outer condition:\n\n$$|x-3|\\ge 8\\iff x\\le -5\\ \\text{or}\\ x\\ge 11$$\n\nCombine:\n\n$$(-\\infty,-5]\\cup[-1,7]\\cup[11,\\infty)$$\n\nEvery boundary makes the outer absolute value exactly equal to the cutoff, so the all-open set is False.",
-    "**B.** → True\n\nThe production count must satisfy the budget and storage inequalities simultaneously, and the integer condition requires floors.\n\nBudget restriction:\n\n$$1100+150n\\le 8075\\iff n\\le\\frac{6975}{150}$$\n\nTake the budget floor:\n\n$$n\\le 46$$\n\nStorage restriction:\n\n$$9n\\le 413\\iff n\\le\\frac{413}{9}$$\n\nTake the storage floor:\n\n$$n\\le 45$$\n\nIntersect both caps:\n\n$$n_{\\max}=\\min\\{46,45\\}=45$$\n\nThe storage constraint fixes the printed integer maximum, so the statement is True.",
-    "**C.** → True\n\nDouble factors create zeros or holes without changing sign. The two simple factors determine the negative region.\n\nList critical points with multiplicity:\n\n$$4\\ (\\text{simple pole}),\\ 6\\ (\\text{double zero}),\\ 8\\ (\\text{double pole}),\\ 11\\ (\\text{simple zero})$$\n\nReduce the sign away from critical points:\n\n$$\\operatorname{sgn}\\!\\left(\\frac{(x-6)^2(x-11)}{(x-4)(x-8)^2}\\right)=\\operatorname{sgn}\\!\\left(\\frac{x-11}{x-4}\\right)$$\n\nLocate nonpositive signs:\n\n$$x\\in(4,11]$$\n\nDelete both denominator zeros:\n\n$$(4,8)\\cup(8,11]$$\n\nThe simple pole is open, the double pole splits the interval, and the numerator zero is closed, so the statement is True.",
-    "**D.** → False\n\nTreat $x^2$ as one nonnegative variable, then pull the resulting square band back to both sides of the number line.\n\nSet the quadratic variable:\n\n$$u=x^2\\ge0$$\n\nSolve the factored quadratic sign:\n\n$$(u-16)(u-49)\\le0\\iff 16\\le u\\le 49$$\n\nReturn to magnitudes:\n\n$$4\\le|x|\\le 7$$\n\nUnfold both branches:\n\n$$[-7,-4]\\cup[4,7]$$\n\nEvery root makes the product zero and must be included, so the open intervals make the statement False.",
-    "**E.** → True\n\nSet the inner distance as a nonnegative variable, split the outer inequality, then unfold each distance condition.\n\nSet the inner magnitude:\n\n$$u=|x-4|\\ge0$$\n\nSolve the outer inequality:\n\n$$|u-7|\\ge 2\\iff u\\le 5\\ \\text{or}\\ u\\ge 9$$\n\nUnfold the inner condition:\n\n$$|x-4|\\le 5\\iff -1\\le x\\le 9$$\n\nUnfold the outer condition:\n\n$$|x-4|\\ge 9\\iff x\\le -5\\ \\text{or}\\ x\\ge 13$$\n\nCombine:\n\n$$(-\\infty,-5]\\cup[-1,9]\\cup[13,\\infty)$$\n\nEquality is allowed in both outer branches, so all six displayed boundary decisions are correct."
+    "**A.** → True\n\nA product of two absolute values is always nonnegative.\n\n$$|x-1|\\,|x+1|\\ge0$$\n\n$$|x-1|\\,|x+1|\\le0\\iff |x-1|\\,|x+1|=0$$\n\n$$x=-1\\quad\\text{or}\\quad x=1$$\n\nNo interval can satisfy the inequality away from the two zeros. Therefore the statement is True.",
+    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $w = 25$ be the parcel mass in kilograms.\n\nA $= 12 + 0.80w$. B $= 20 + 0.40w$.\n\nA $= 12 + 20 = 32$.\n\nB $= 20 + 10 = 30$.\n\n$$32 > 30$$\n\nB is cheaper at 25 kg. Crossing point:\n\n$$12 + 0.80w = 20 + 0.40w$$\n\n$$w = 20$$\n\nA is cheaper only when $w < 20$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\nA reciprocal is positive exactly when its nonzero denominator is positive.\n\n$$x^2-4>0$$\n\n$$(x-2)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>2$$\n\nBoth poles are excluded. Therefore the statement is True.",
+    "**D.** → False\n\nComplete the square to identify the minimum value.\n\n$$x^2-6x+k=(x-3)^2+k-9$$\n\n$$\\min_x\\bigl(x^2-6x+k\\bigr)=k-9$$\n\n$$\\exists x:\\ x^2-6x+k<0\\iff k<9$$\n\nAt $k=9$ the minimum is zero, so the strict inequality has no solution. Therefore the statement is False.",
+    "**E.** → True\n\nSolve the two distance conditions and intersect them.\n\n$$|x-2|<3\\iff -1<x<5$$\n\n$$|x+1|\\ge2\\iff x\\le-3\\quad\\text{or}\\quad x\\ge1$$\n\n$$(-1,5)\\cap\\bigl((-\\infty,-3]\\cup[1,\\infty)\\bigr)=[1,5)$$\n\nThe left endpoint comes from a non-strict condition; the right remains strict. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 95,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. A tests nested absolute inequality; B tests integer production constraints; C tests repeated-factor rational sign; D tests biquadratic sign pullback; E tests nested absolute inequality. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests nonpositive product of moduli; B tests a contextual inequality with all practical constraints; C tests reciprocal of a difference of squares; D tests parameter threshold for a strict quadratic; E tests intersection of interior and exterior distance sets. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-96",
    "case_id": "MATH 6.96",
-   "title": "Hard mixed exam: 8",
+   "title": "Exam-style tasks — 8",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A workshop pays a fixed €1200 setup charge and €165 in materials per finished unit. Each unit occupies $10$ pallet spaces. With a €9202 budget and $489$ available pallet spaces, the greatest whole number of units it can complete is $49$.",
-    "The inequality $\\dfrac{(x-7)^2(x-12)}{(x-5)(x-9)^2}\\le0$ has solution set $[5,9)\\cup(9,12]$.",
-    "The quartic inequality $(x^2-25)(x^2-64)\\le0$ has solution set $[-8,-5]\\cup[5,8]$.",
-    "The nested inequality $\\bigl||x-5|-8\\bigr|\\ge 2$ has solution set $(-\\infty,-5)\\cup(-1,11)\\cup(15,\\infty)$.",
-    "A workshop pays a fixed €1300 setup charge and €180 in materials per finished unit. Each unit occupies $11$ pallet spaces. With a €10390 budget and $571$ available pallet spaces, the greatest whole number of units it can complete is $50$."
+    "An empty ${480 L}$ tank fills at ${12 L/min}$. After 30 minutes of filling from empty, the tank is still not more than half full.",
+    "The inequality $\\dfrac1{(x-2)^2}\\le1$ is equivalent to $x\\le1$ or $x\\ge3$.",
+    "The parabola inequality $-x^2+4x+5>x+3$ holds exactly between $\\dfrac{3-\\sqrt{17}}2$ and $\\dfrac{3+\\sqrt{17}}2$.",
+    "The condition $\\min\\{x+2,\\,4-x\\}\\ge1$ is equivalent to $-1\\le x\\le3$.",
+    "A courier may accept a parcel only when both conditions hold at once: mass $m$ at most 20 kg, and girth-plus-length $g$ at most 300 cm. A parcel with $m = 18$ kg and $g = 310$ cm is accepted under that rule."
    ],
    "answer_key": [
     false,
-    false,
     true,
-    false,
-    true
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe production count must satisfy the budget and storage inequalities simultaneously, and the integer condition requires floors.\n\nBudget restriction:\n\n$$1200+165n\\le 9202\\iff n\\le\\frac{8002}{165}$$\n\nTake the budget floor:\n\n$$n\\le 48$$\n\nStorage restriction:\n\n$$10n\\le 489\\iff n\\le\\frac{489}{10}$$\n\nTake the storage floor:\n\n$$n\\le 48$$\n\nIntersect both caps:\n\n$$n_{\\max}=\\min\\{48,48\\}=48$$\n\nAt $49$ units at least one constraint fails; the simultaneous maximum is $48$, so the statement is False.",
-    "**B.** → False\n\nDouble factors create zeros or holes without changing sign. The two simple factors determine the negative region.\n\nList critical points with multiplicity:\n\n$$5\\ (\\text{simple pole}),\\ 7\\ (\\text{double zero}),\\ 9\\ (\\text{double pole}),\\ 12\\ (\\text{simple zero})$$\n\nReduce the sign away from critical points:\n\n$$\\operatorname{sgn}\\!\\left(\\frac{(x-7)^2(x-12)}{(x-5)(x-9)^2}\\right)=\\operatorname{sgn}\\!\\left(\\frac{x-12}{x-5}\\right)$$\n\nLocate nonpositive signs:\n\n$$x\\in(5,12]$$\n\nDelete both denominator zeros:\n\n$$(5,9)\\cup(9,12]$$\n\nThe value $x=5$ is a denominator zero and cannot be included, so the statement is False.",
-    "**C.** → True\n\nTreat $x^2$ as one nonnegative variable, then pull the resulting square band back to both sides of the number line.\n\nSet the quadratic variable:\n\n$$u=x^2\\ge0$$\n\nSolve the factored quadratic sign:\n\n$$(u-25)(u-64)\\le0\\iff 25\\le u\\le 64$$\n\nReturn to magnitudes:\n\n$$5\\le|x|\\le 8$$\n\nUnfold both branches:\n\n$$[-8,-5]\\cup[5,8]$$\n\nThe non-strict inequality includes all four roots, so the statement is True.",
-    "**D.** → False\n\nSet the inner distance as a nonnegative variable, split the outer inequality, then unfold each distance condition.\n\nSet the inner magnitude:\n\n$$u=|x-5|\\ge0$$\n\nSolve the outer inequality:\n\n$$|u-8|\\ge 2\\iff u\\le 6\\ \\text{or}\\ u\\ge 10$$\n\nUnfold the inner condition:\n\n$$|x-5|\\le 6\\iff -1\\le x\\le 11$$\n\nUnfold the outer condition:\n\n$$|x-5|\\ge 10\\iff x\\le -5\\ \\text{or}\\ x\\ge 15$$\n\nCombine:\n\n$$(-\\infty,-5]\\cup[-1,11]\\cup[15,\\infty)$$\n\nEvery boundary makes the outer absolute value exactly equal to the cutoff, so the all-open set is False.",
-    "**E.** → True\n\nThe production count must satisfy the budget and storage inequalities simultaneously, and the integer condition requires floors.\n\nBudget restriction:\n\n$$1300+180n\\le 10390\\iff n\\le\\frac{9090}{180}$$\n\nTake the budget floor:\n\n$$n\\le 50$$\n\nStorage restriction:\n\n$$11n\\le 571\\iff n\\le\\frac{571}{11}$$\n\nTake the storage floor:\n\n$$n\\le 51$$\n\nIntersect both caps:\n\n$$n_{\\max}=\\min\\{50,51\\}=50$$\n\nThe budget constraint fixes the printed integer maximum, so the statement is True."
+    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $t=30$.\n\n$$12\\cdot 30=360>240$$\n\nTank is three-quarters full.\n\nClaim is wrong.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nThe squared denominator is positive on the domain, so cross-multiplication is safe.\n\n$$x\\ne2,\\qquad 1\\le(x-2)^2$$\n\n$$|x-2|\\ge1$$\n\n$$x\\le1\\quad\\text{or}\\quad x\\ge3$$\n\nThe forbidden point $2$ lies in the rejected central interval. Therefore the statement is True.",
+    "**C.** → True\n\nSubtract the line and solve the resulting quadratic sign condition.\n\n$$-x^2+3x+2>0$$\n\n$$x^2-3x-2<0$$\n\n$$x=\\frac{3\\pm\\sqrt{9+8}}2=\\frac{3\\pm\\sqrt{17}}2$$\n\nThe interval is open because the comparison is strict. Therefore the statement is True.",
+    "**D.** → True\n\nA minimum is at least a threshold exactly when both entries are.\n\n$$x+2\\ge1\\quad\\text{and}\\quad4-x\\ge1$$\n\n$$x\\ge-1\\quad\\text{and}\\quad x\\le3$$\n\n$$-1\\le x\\le3$$\n\nBoth endpoints meet the non-strict threshold. Therefore the statement is True.",
+    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $m$ be mass in kilograms and $g$ be girth-plus-length in centimetres.\n\nGiven values:\n\n$$m = 18$$\n\n$g = 310$.\n\nBoth must hold:\n\n$$m \\le 20$$\n\nAlso, $g \\le 300$.\n\nMass:\n\n$$18 \\le 20$$\n\nSatisfied.\n\nGirth-plus-length:\n\n$$310 \\le 300$$\n\nFailed.\n\nThe compound condition is false because one conjunct fails.\n\nA light parcel can still be rejected if it is too long/girthy. Both inequalities are required.\n\nThe parcel is not acceptable, so the statement is false.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 96,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. A tests integer production constraints; B tests repeated-factor rational sign; C tests biquadratic sign pullback; D tests nested absolute inequality; E tests integer production constraints. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests reciprocal-square threshold; C tests strict comparison of parabola and line; D tests minimum of two affine expressions; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-97",
    "case_id": "MATH 6.97",
-   "title": "Hard mixed exam: 9",
+   "title": "Exam-style tasks — 9",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The solution set of $\\dfrac{x(x-3)}{x(x+3)}\\le0$ is $(-3,0)\\cup(0,3]$.",
-    "The inequality $(x-1)^4-10(x-1)^2+9<0$ has solution set $[-2,0]\\cup[2,4]$.",
-    "The inequality $\\left|(x-1)^2-9\\right|>9$ holds exactly when $x<1-3\\sqrt{2}\\ \\text{or}\\ x>1+3\\sqrt{2}$.",
-    "A courier charges €35 plus €6 per parcel for the first $20$ parcels and €4 per additional parcel. It then adds a $10\\%$ fuel surcharge and subtracts a €12 account coupon. Under a €195.90 invoice limit, the largest integer shipment is $29$ parcels.",
-    "The solution set of $\\dfrac{x(x-4)}{x(x+4)}\\le0$ is $[-4,0)\\cup(0,4]$."
+    "The inequality $\\dfrac1x\\ge\\dfrac1{x+2}$ holds for $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
+    "The strict inequality $(x^2-4)(x^2-16)>0$ holds exactly for $x<-4$, $-2<x<2$, or $x>4$.",
+    "The compound inequality $-2<\\dfrac{x-1}{3}\\le4$ has solution set $-5<x\\le13$.",
+    "An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter.",
+    "The strict inequality $\\dfrac{x-3}{(x+1)^2}>0$ holds exactly when $x>3$."
    ],
    "answer_key": [
     true,
-    false,
+    true,
     true,
     false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe shared factor creates a removable hole at zero. It can disappear algebraically but not from the original domain.\n\nRecord denominator restrictions:\n\n$$x\\ne0,\\qquad x\\ne-3$$\n\nCancel only for sign work:\n\n$$\\frac{x(x-3)}{x(x+3)}=\\frac{x-3}{x+3}$$\n\nSolve the reduced sign inequality:\n\n$$\\frac{x-3}{x+3}\\le0\\iff x\\in(-3,3]$$\n\nRestore the hole:\n\n$$(-3,0)\\cup(0,3]$$\n\nBoth denominator zeros are removed and the numerator endpoint remains, so the statement is True.",
-    "**B.** → False\n\nThe shifted square is the correct substitution. Strict negativity occurs between the two positive roots in that new variable.\n\nSet the square variable:\n\n$$u=(x-1)^2\\ge0$$\n\nFactor the quadratic in $u$:\n\n$$u^2-10u+9=(u-1)(u-9)$$\n\nSolve for $u$:\n\n$$1<u<9$$\n\nReturn to a magnitude band:\n\n$$1<|x-1|<3$$\n\nUnfold both branches:\n\n$$(-2,0)\\cup(2,4)$$\n\nThe original inequality is strict, so points where either factor vanishes cannot be included and the statement is False.",
-    "**C.** → True\n\nSplit the absolute inequality into two branches. One branch is impossible because a square cannot be negative.\n\nPositive branch:\n\n$$(x-1)^2-9>9\\iff (x-1)^2>18$$\n\nNegative branch:\n\n$$(x-1)^2-9<-9\\iff (x-1)^2<0$$\n\nDiscard the impossible branch:\n\n$$(x-1)^2<0\\quad\\text{has no real solution}$$\n\nUnfold the surviving square:\n\n$$|x-1|>3\\sqrt{2}$$\n\nWrite the two rays:\n\n$$x<1-3\\sqrt{2}\\ \\text{or}\\ x>1+3\\sqrt{2}$$\n\nOnly the two strict exterior rays survive, so the statement is True.",
-    "**D.** → False\n\nFirst verify that the cap reaches the second tier, then solve the correct piece of the invoice rule.\n\nCost through the first tier:\n\n$$C(20)=1.10(35+6\\cdot 20)-12$$\n\nUse the second-tier model:\n\n$$C(n)=1.10\\left(35+6\\cdot 20+4(n-20)\\right)-12$$\n\nTest the designed upper integer:\n\n$$C(28)=1.10(187)-12$$\n\nTest the next integer:\n\n$$C(29)=1.10(191)-12$$\n\nCompare with the cap:\n\n$$C(28)\\le 195.90<C(29)$$\n\nThe shipment of $29$ parcels is already over the cap; the maximum is $28$, so the statement is False.",
-    "**E.** → False\n\nThe shared factor creates a removable hole at zero. It can disappear algebraically but not from the original domain.\n\nRecord denominator restrictions:\n\n$$x\\ne0,\\qquad x\\ne-4$$\n\nCancel only for sign work:\n\n$$\\frac{x(x-4)}{x(x+4)}=\\frac{x-4}{x+4}$$\n\nSolve the reduced sign inequality:\n\n$$\\frac{x-4}{x+4}\\le0\\iff x\\in(-4,4]$$\n\nRestore the hole:\n\n$$(-4,0)\\cup(0,4]$$\n\nThe printed set includes the pole $x=-4$, so the statement is False."
+    "**A.** → True\n\nSubtract the two sides and retain both domain exclusions.\n\n$$\\frac1x-\\frac1{x+2}=\\frac{2}{x(x+2)}$$\n\n$$\\frac{2}{x(x+2)}\\ge0\\iff x(x+2)>0$$\n\n$$x\\in(-\\infty,-2)\\cup(0,\\infty)$$\n\nThe numerator never vanishes, so equality never occurs. Therefore the statement is True.",
+    "**B.** → True\n\nOrder the four simple roots and keep the positive sign intervals.\n\n$$(x-2)(x+2)(x-4)(x+4)>0$$\n\n$$-4,\\ -2,\\ 2,\\ 4$$\n\n$$x\\in(-\\infty,-4)\\cup(-2,2)\\cup(4,\\infty)$$\n\nEvery root is excluded by strictness. Therefore the statement is True.",
+    "**C.** → True\n\nMultiply all three parts by the positive denominator and then translate.\n\n$$-6<x-1\\le12$$\n\n$$-5<x\\le13$$\n\nMultiplication by $3$ does not reverse either sign. Therefore the statement is True.",
+    "**D.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $c$ be children.\n\n$$245+35c\\le 600$$\n\n$$c\\le 10.14$$\n\nMax $c=10$.\n\n8 is allowed, but the maximum is 10.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nAway from its pole, the squared denominator is positive.\n\n$$(x+1)^2>0\\quad(x\\ne-1)$$\n\n$$\\frac{x-3}{(x+1)^2}>0\\iff x-3>0$$\n\n$$x>3$$\n\nNeither the pole nor the numerator zero lies in the strict solution set. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 97,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. A tests hidden zero-over-zero hole; B tests shifted biquadratic interval; C tests absolute quadratic inequality; D tests tiered courier invoice; E tests hidden zero-over-zero hole. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests comparison of shifted reciprocals; B tests product of two quadratic factors; C tests three-part affine inequality; D tests a contextual inequality with all practical constraints; E tests positive squared denominator. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-98",
    "case_id": "MATH 6.98",
-   "title": "Hard mixed exam: 10",
+   "title": "Exam-style tasks — 10",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $(x-2)^4-20(x-2)^2+64<0$ has solution set $(-2,0)\\cup(4,6)$.",
-    "The inequality $\\left|(x-2)^2-16\\right|>16$ holds exactly when $2-4\\sqrt{2}<x<2+4\\sqrt{2}$.",
-    "A courier charges €40 plus €7 per parcel for the first $25$ parcels and €5 per additional parcel. It then adds a $10\\%$ fuel surcharge and subtracts a €13 account coupon. Under a €275.75 invoice limit, the largest integer shipment is $34$ parcels.",
-    "The solution set of $\\dfrac{x(x-5)}{x(x+5)}\\le0$ is $(-5,0)\\cup(0,5]$.",
-    "The inequality $(x-3)^4-34(x-3)^2+225<0$ has solution set $[-2,0]\\cup[6,8]$."
+    "The inequality $x^2+kx+4\\ge0$ holds for every real $x$ exactly when $|k|\\le4$.",
+    "The radical inequality $\\sqrt{x+2}\\ge x$ has solution set $[-2,2]$.",
+    "A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents for exactly 3 days and has a total budget of 200 EUR for the rental. They claim that they can drive up to 300 km without exceeding the budget. That tourist claim is wrong.",
+    "The inequality $\\dfrac{x^2-4x+3}{x-1}\\le0$ has solution set $(-\\infty,1)\\cup(1,3]$.",
+    "The inequality $(x-2)^2(x+1)<0$ is satisfied exactly for $x<-1$."
    ],
    "answer_key": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe shifted square is the correct substitution. Strict negativity occurs between the two positive roots in that new variable.\n\nSet the square variable:\n\n$$u=(x-2)^2\\ge0$$\n\nFactor the quadratic in $u$:\n\n$$u^2-20u+64=(u-4)(u-16)$$\n\nSolve for $u$:\n\n$$4<u<16$$\n\nReturn to a magnitude band:\n\n$$2<|x-2|<4$$\n\nUnfold both branches:\n\n$$(-2,0)\\cup(4,6)$$\n\nStrictness removes all four boundary values, so the open union is correct.",
-    "**B.** → False\n\nSplit the absolute inequality into two branches. One branch is impossible because a square cannot be negative.\n\nPositive branch:\n\n$$(x-2)^2-16>16\\iff (x-2)^2>32$$\n\nNegative branch:\n\n$$(x-2)^2-16<-16\\iff (x-2)^2<0$$\n\nDiscard the impossible branch:\n\n$$(x-2)^2<0\\quad\\text{has no real solution}$$\n\nUnfold the surviving square:\n\n$$|x-2|>4\\sqrt{2}$$\n\nWrite the two rays:\n\n$$x<2-4\\sqrt{2}\\ \\text{or}\\ x>2+4\\sqrt{2}$$\n\nThe central interval corresponds to small absolute values, while the inequality demands a value larger than the cutoff, so the statement is False.",
-    "**C.** → True\n\nFirst verify that the cap reaches the second tier, then solve the correct piece of the invoice rule.\n\nCost through the first tier:\n\n$$C(25)=1.10(40+7\\cdot 25)-13$$\n\nUse the second-tier model:\n\n$$C(n)=1.10\\left(40+7\\cdot 25+5(n-25)\\right)-13$$\n\nTest the designed upper integer:\n\n$$C(34)=1.10(260)-13$$\n\nTest the next integer:\n\n$$C(35)=1.10(265)-13$$\n\nCompare with the cap:\n\n$$C(34)\\le 275.75<C(35)$$\n\nThe stated integer is the last shipment under the cap, so the statement is True.",
-    "**D.** → True\n\nThe shared factor creates a removable hole at zero. It can disappear algebraically but not from the original domain.\n\nRecord denominator restrictions:\n\n$$x\\ne0,\\qquad x\\ne-5$$\n\nCancel only for sign work:\n\n$$\\frac{x(x-5)}{x(x+5)}=\\frac{x-5}{x+5}$$\n\nSolve the reduced sign inequality:\n\n$$\\frac{x-5}{x+5}\\le0\\iff x\\in(-5,5]$$\n\nRestore the hole:\n\n$$(-5,0)\\cup(0,5]$$\n\nBoth denominator zeros are removed and the numerator endpoint remains, so the statement is True.",
-    "**E.** → False\n\nThe shifted square is the correct substitution. Strict negativity occurs between the two positive roots in that new variable.\n\nSet the square variable:\n\n$$u=(x-3)^2\\ge0$$\n\nFactor the quadratic in $u$:\n\n$$u^2-34u+225=(u-9)(u-25)$$\n\nSolve for $u$:\n\n$$9<u<25$$\n\nReturn to a magnitude band:\n\n$$3<|x-3|<5$$\n\nUnfold both branches:\n\n$$(-2,0)\\cup(6,8)$$\n\nThe original inequality is strict, so points where either factor vanishes cannot be included and the statement is False."
+    "**A.** → True\n\nAn upward-opening quadratic is nonnegative everywhere exactly when its discriminant is nonpositive.\n\n$$\\Delta=k^2-16$$\n\n$$\\Delta\\le0\\iff k^2\\le16$$\n\n$$|k|\\le4$$\n\nAt the two boundary parameters the quadratic has a double zero. Therefore the statement is True.",
+    "**B.** → True\n\nRespect the radical domain and separate the branch where the right side is nonpositive.\n\n$$x\\ge-2$$\n\n$$-2\\le x\\le0\\implies \\sqrt{x+2}\\ge0\\ge x$$\n\n$$x>0:\\quad x+2\\ge x^2\\iff (x-2)(x+1)\\le0$$\n\n$$x\\in[-2,2]$$\n\nSquaring is used only where both sides are nonnegative. Therefore the statement is True.",
+    "**C.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be the number of kilometres driven ($k \\ge 0$).\n\nCost:\n\n$$135 + 0.25k$$\n\nWithin budget:\n\n$$135 + 0.25k \\le 200$$\n\n$$0.25k \\le 65$$\n\n$$k \\le \\dfrac{65}{0.25} = 260$$\n\nThey may drive at most 260 km. Three hundred kilometres would overshoot the budget.\n\nAt $k = 300$, cost is $135 + 75 = 210 > 200$. So the tourist claim is indeed wrong.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nFactor and cancel while preserving the original excluded point.\n\n$$x\\ne1,\\qquad \\frac{(x-1)(x-3)}{x-1}=x-3$$\n\n$$x-3\\le0\\iff x\\le3$$\n\n$$x\\in(-\\infty,1)\\cup(1,3]$$\n\nThe hole at $x=1$ splits the otherwise closed half-line. Therefore the statement is True.",
+    "**E.** → True\n\nThe even-multiplicity factor never changes sign.\n\n$$(x-2)^2\\ge0$$\n\n$$(x-2)^2(x+1)<0\\iff x+1<0$$\n\n$$x<-1$$\n\nThe double zero $x=2$ is not admitted by a strict inequality. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 98,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. A tests shifted biquadratic interval; B tests absolute quadratic inequality; C tests tiered courier invoice; D tests hidden zero-over-zero hole; E tests shifted biquadratic interval. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests parameter range for global nonnegativity; B tests radical inequality with a sign branch; C tests a contextual inequality with all practical constraints; D tests non-strict cancellation with an interior hole; E tests odd factor with a repeated root. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-99",
    "case_id": "MATH 6.99",
-   "title": "Hard mixed exam: 11",
+   "title": "Exam-style tasks — 11",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $\\left|(x-3)^2-25\\right|>25$ holds exactly when $x<3-5\\sqrt{2}\\ \\text{or}\\ x>3+5\\sqrt{2}$.",
-    "A courier charges €45 plus €8 per parcel for the first $30$ parcels and €6 per additional parcel. It then adds a $10\\%$ fuel surcharge and subtracts a €14 account coupon. Under a €368.80 invoice limit, the largest integer shipment is $41$ parcels.",
-    "The solution set of $\\dfrac{x(x-6)}{x(x+6)}\\le0$ is $[-6,0)\\cup(0,6]$.",
-    "The inequality $(x-4)^4-52(x-4)^2+576<0$ has solution set $(-2,0)\\cup(8,10)$.",
-    "The inequality $\\left|(x-4)^2-36\\right|>36$ holds exactly when $4-6\\sqrt{2}<x<4+6\\sqrt{2}$."
+    "The inequality $|x|+|x-4|>6$ has solution set $(-\\infty,-1)\\cup(5,\\infty)$.",
+    "Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR and claims that they can buy tickets for at most 5 people without going over budget. That claim is true.",
+    "The rational inequality $\\dfrac{x^2-2x-3}{x^2+2x+5}<0$ has solution set $(-1,3)$.",
+    "The inequality $x^2+4x+5\\le0$ has no real solution.",
+    "The inequality $|x-3|\\le2|x+1|$ holds exactly for $x\\le-5$ or $x\\ge\\dfrac13$."
    ],
    "answer_key": [
     true,
-    false,
-    false,
     true,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSplit the absolute inequality into two branches. One branch is impossible because a square cannot be negative.\n\nPositive branch:\n\n$$(x-3)^2-25>25\\iff (x-3)^2>50$$\n\nNegative branch:\n\n$$(x-3)^2-25<-25\\iff (x-3)^2<0$$\n\nDiscard the impossible branch:\n\n$$(x-3)^2<0\\quad\\text{has no real solution}$$\n\nUnfold the surviving square:\n\n$$|x-3|>5\\sqrt{2}$$\n\nWrite the two rays:\n\n$$x<3-5\\sqrt{2}\\ \\text{or}\\ x>3+5\\sqrt{2}$$\n\nOnly the two strict exterior rays survive, so the statement is True.",
-    "**B.** → False\n\nFirst verify that the cap reaches the second tier, then solve the correct piece of the invoice rule.\n\nCost through the first tier:\n\n$$C(30)=1.10(45+8\\cdot 30)-14$$\n\nUse the second-tier model:\n\n$$C(n)=1.10\\left(45+8\\cdot 30+6(n-30)\\right)-14$$\n\nTest the designed upper integer:\n\n$$C(40)=1.10(345)-14$$\n\nTest the next integer:\n\n$$C(41)=1.10(351)-14$$\n\nCompare with the cap:\n\n$$C(40)\\le 368.80<C(41)$$\n\nThe shipment of $41$ parcels is already over the cap; the maximum is $40$, so the statement is False.",
-    "**C.** → False\n\nThe shared factor creates a removable hole at zero. It can disappear algebraically but not from the original domain.\n\nRecord denominator restrictions:\n\n$$x\\ne0,\\qquad x\\ne-6$$\n\nCancel only for sign work:\n\n$$\\frac{x(x-6)}{x(x+6)}=\\frac{x-6}{x+6}$$\n\nSolve the reduced sign inequality:\n\n$$\\frac{x-6}{x+6}\\le0\\iff x\\in(-6,6]$$\n\nRestore the hole:\n\n$$(-6,0)\\cup(0,6]$$\n\nThe printed set includes the pole $x=-6$, so the statement is False.",
-    "**D.** → True\n\nThe shifted square is the correct substitution. Strict negativity occurs between the two positive roots in that new variable.\n\nSet the square variable:\n\n$$u=(x-4)^2\\ge0$$\n\nFactor the quadratic in $u$:\n\n$$u^2-52u+576=(u-16)(u-36)$$\n\nSolve for $u$:\n\n$$16<u<36$$\n\nReturn to a magnitude band:\n\n$$4<|x-4|<6$$\n\nUnfold both branches:\n\n$$(-2,0)\\cup(8,10)$$\n\nStrictness removes all four boundary values, so the open union is correct.",
-    "**E.** → False\n\nSplit the absolute inequality into two branches. One branch is impossible because a square cannot be negative.\n\nPositive branch:\n\n$$(x-4)^2-36>36\\iff (x-4)^2>72$$\n\nNegative branch:\n\n$$(x-4)^2-36<-36\\iff (x-4)^2<0$$\n\nDiscard the impossible branch:\n\n$$(x-4)^2<0\\quad\\text{has no real solution}$$\n\nUnfold the surviving square:\n\n$$|x-4|>6\\sqrt{2}$$\n\nWrite the two rays:\n\n$$x<4-6\\sqrt{2}\\ \\text{or}\\ x>4+6\\sqrt{2}$$\n\nThe central interval corresponds to small absolute values, while the inequality demands a value larger than the cutoff, so the statement is False."
+    "**A.** → True\n\nSplit at the two reference points.\n\n$$x<0:\\quad |x|+|x-4|=4-2x>6\\iff x<-1$$\n\n$$0\\le x\\le4:\\quad |x|+|x-4|=4$$\n\n$$x>4:\\quad |x|+|x-4|=2x-4>6\\iff x>5$$\n\nThe central segment contributes no solutions. Therefore the statement is True.",
+    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of people (tickets), a whole number $n \\ge 1$.\n\nCost:\n\n$$28n + 12$$\n\nWithin budget:\n\n$$28n + 12 \\le 160$$\n\n$$28n \\le 148$$\n\n$$n \\le \\dfrac{148}{28} \\approx 5.286$$\n\nSo the largest whole $n$ is 5.\n\nFive tickets cost $140 + 12 = 152 \\le 160$. Six tickets would cost $168 + 12 = 180 > 160$.\n\n“At most 5 people” matches the solution, so\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → True\n\nThe denominator is always positive, leaving only the factored numerator to test.\n\n$$x^2+2x+5=(x+1)^2+4>0$$\n\n$$x^2-2x-3=(x+1)(x-3)$$\n\n$$(x+1)(x-3)<0\\iff -1<x<3$$\n\nStrictness excludes both numerator zeros. Therefore the statement is True.",
+    "**D.** → True\n\nComplete the square to identify the global minimum.\n\n$$x^2+4x+5=(x+2)^2+1$$\n\n$$(x+2)^2+1\\ge1>0$$\n\nThe expression cannot be nonpositive. Therefore the statement is True.",
+    "**E.** → True\n\nBoth sides are nonnegative, so square and factor the difference.\n\n$$(x-3)^2\\le4(x+1)^2$$\n\n$$4(x+1)^2-(x-3)^2\\ge0$$\n\n$$(x+5)(3x-1)\\ge0$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge\\frac13$$\n\nEquality includes both boundary points. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 99,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. A tests absolute quadratic inequality; B tests tiered courier invoice; C tests hidden zero-over-zero hole; D tests shifted biquadratic interval; E tests absolute quadratic inequality. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests sum of distances above a threshold; B tests a contextual inequality with all practical constraints; C tests factorable numerator over an irreducible denominator; D tests empty quadratic sublevel set; E tests scaled comparison of two distances. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-100",
    "case_id": "MATH 6.100",
-   "title": "Hard mixed exam: 12",
+   "title": "Exam-style tasks — 12",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A courier charges €50 plus €9 per parcel for the first $35$ parcels and €7 per additional parcel. It then adds a $10\\%$ fuel surcharge and subtracts a €15 account coupon. Under a €475.05 invoice limit, the largest integer shipment is $46$ parcels.",
-    "The solution set of $\\dfrac{x(x-7)}{x(x+7)}\\le0$ is $(-7,0)\\cup(0,7]$.",
-    "The inequality $(x-5)^4-74(x-5)^2+1225<0$ has solution set $[-2,0]\\cup[10,12]$.",
-    "The inequality $\\left|(x-5)^2-49\\right|>49$ holds exactly when $x<5-7\\sqrt{2}\\ \\text{or}\\ x>5+7\\sqrt{2}$.",
-    "A courier charges €55 plus €10 per parcel for the first $40$ parcels and €8 per additional parcel. It then adds a $10\\%$ fuel surcharge and subtracts a €16 account coupon. Under a €594.50 invoice limit, the largest integer shipment is $53$ parcels."
+    "A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.",
+    "The solution set of $\\dfrac{x^2-4}{x-2}\\ge0$ is the single interval $[-2,\\infty)$.",
+    "The closed quadratic inequality $(x-4)(x+3)\\le0$ contains exactly eight integer solutions.",
+    "The mixed inequality $|2x-3|<x+1$ has solution set $\\left(\\dfrac23,4\\right)$.",
+    "A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR."
    ],
    "answer_key": [
-    true,
-    true,
     false,
+    false,
+    true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFirst verify that the cap reaches the second tier, then solve the correct piece of the invoice rule.\n\nCost through the first tier:\n\n$$C(35)=1.10(50+9\\cdot 35)-15$$\n\nUse the second-tier model:\n\n$$C(n)=1.10\\left(50+9\\cdot 35+7(n-35)\\right)-15$$\n\nTest the designed upper integer:\n\n$$C(46)=1.10(442)-15$$\n\nTest the next integer:\n\n$$C(47)=1.10(449)-15$$\n\nCompare with the cap:\n\n$$C(46)\\le 475.05<C(47)$$\n\nThe stated integer is the last shipment under the cap, so the statement is True.",
-    "**B.** → True\n\nThe shared factor creates a removable hole at zero. It can disappear algebraically but not from the original domain.\n\nRecord denominator restrictions:\n\n$$x\\ne0,\\qquad x\\ne-7$$\n\nCancel only for sign work:\n\n$$\\frac{x(x-7)}{x(x+7)}=\\frac{x-7}{x+7}$$\n\nSolve the reduced sign inequality:\n\n$$\\frac{x-7}{x+7}\\le0\\iff x\\in(-7,7]$$\n\nRestore the hole:\n\n$$(-7,0)\\cup(0,7]$$\n\nBoth denominator zeros are removed and the numerator endpoint remains, so the statement is True.",
-    "**C.** → False\n\nThe shifted square is the correct substitution. Strict negativity occurs between the two positive roots in that new variable.\n\nSet the square variable:\n\n$$u=(x-5)^2\\ge0$$\n\nFactor the quadratic in $u$:\n\n$$u^2-74u+1225=(u-25)(u-49)$$\n\nSolve for $u$:\n\n$$25<u<49$$\n\nReturn to a magnitude band:\n\n$$5<|x-5|<7$$\n\nUnfold both branches:\n\n$$(-2,0)\\cup(10,12)$$\n\nThe original inequality is strict, so points where either factor vanishes cannot be included and the statement is False.",
-    "**D.** → True\n\nSplit the absolute inequality into two branches. One branch is impossible because a square cannot be negative.\n\nPositive branch:\n\n$$(x-5)^2-49>49\\iff (x-5)^2>98$$\n\nNegative branch:\n\n$$(x-5)^2-49<-49\\iff (x-5)^2<0$$\n\nDiscard the impossible branch:\n\n$$(x-5)^2<0\\quad\\text{has no real solution}$$\n\nUnfold the surviving square:\n\n$$|x-5|>7\\sqrt{2}$$\n\nWrite the two rays:\n\n$$x<5-7\\sqrt{2}\\ \\text{or}\\ x>5+7\\sqrt{2}$$\n\nOnly the two strict exterior rays survive, so the statement is True.",
-    "**E.** → False\n\nFirst verify that the cap reaches the second tier, then solve the correct piece of the invoice rule.\n\nCost through the first tier:\n\n$$C(40)=1.10(55+10\\cdot 40)-16$$\n\nUse the second-tier model:\n\n$$C(n)=1.10\\left(55+10\\cdot 40+8(n-40)\\right)-16$$\n\nTest the designed upper integer:\n\n$$C(52)=1.10(551)-16$$\n\nTest the next integer:\n\n$$C(53)=1.10(559)-16$$\n\nCompare with the cap:\n\n$$C(52)\\le 594.50<C(53)$$\n\nThe shipment of $53$ parcels is already over the cap; the maximum is $52$, so the statement is False."
+    "**A.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$7n \\le 400$$\n\n$$n \\le 57$$\n\n$$60 + 60 + 40 + 5 = 165$$\n\n$$165n \\le 12000$$\n\n$$n \\le 72$$\n\nMaximum 57, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → False\n\nCancellation simplifies the sign test but does not restore an excluded denominator zero.\n\n$$x\\ne2,\\qquad \\frac{x^2-4}{x-2}=x+2$$\n\n$$x+2\\ge0\\iff x\\ge-2$$\n\n$$x\\in[-2,2)\\cup(2,\\infty)$$\n\nThe claimed interval wrongly includes the undefined point $x=2$. Therefore the statement is False.",
+    "**C.** → True\n\nAn upward-opening factored quadratic is nonpositive between its roots.\n\n$$(x-4)(x+3)\\le0\\iff -3\\le x\\le4$$\n\n$$x\\in\\{-3,-2,-1,0,1,2,3,4\\}$$\n\n$$\\#=8$$\n\nBoth integer endpoints count. Therefore the statement is True.",
+    "**D.** → True\n\nThe right side must be positive, and the modulus then unfolds into two simultaneous bounds.\n\n$$-(x+1)<2x-3<x+1$$\n\n$$x>\\frac23,\\qquad x<4$$\n\n$$x\\in\\left(\\frac23,4\\right)$$\n\nThe resulting interval already satisfies $x+1>0$. Therefore the statement is True.",
+    "**E.** → False\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be marked price.\n\n$$0.8p\\le 48$$\n\n$$p\\le 60$$\n\nShe can afford up to 60 EUR marked.\n\n55 understates the true ceiling.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 100,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. A tests tiered courier invoice; B tests hidden zero-over-zero hole; C tests shifted biquadratic interval; D tests absolute quadratic inequality; E tests tiered courier invoice. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests cancellation hole inside the answer; C tests integer count in a quadratic interval; D tests absolute value bounded by a linear function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-101",
    "case_id": "MATH 6.101",
-   "title": "Hard mixed exam: 13",
+   "title": "Exam-style tasks — 13",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $\\dfrac1{x-0}-\\dfrac1{x-4}\\le0$ holds exactly on $(0,4)$.",
-    "The output comparison $(x-2)^2-9\\ge2(x-2)$ holds exactly when $x\\le 3-\\sqrt{10}\\ \\text{or}\\ x\\ge 3+\\sqrt{10}$.",
-    "The inequality $\\sqrt{2(x-1)+3}<\\sqrt{5(x-1)+4}-1$ has solution set $x>\\dfrac{13-2\\sqrt{31}}{9}$.",
-    "A delivery van covers $240$ km at a constant whole-number speed $v$ km/h and spends $1/2$ hours at stops. It must finish within $5$ hours. Fuel costs $\\left(0.03+\\dfrac{v}{10000}\\right)$ euros per kilometre and the fuel budget is €9.36. Exactly $37$ integer speeds satisfy both limits.",
-    "The inequality $\\dfrac1{x-1}-\\dfrac1{x-5}\\le0$ holds exactly on $(-\\infty,1)\\cup(5,\\infty)$."
+    "The rational expression $\\dfrac{x^2+1}{x-2}$ is negative exactly when $x<2$.",
+    "The inequality $(x-1)^2-4>0$ has solution set $(-\\infty,-1)\\cup(3,\\infty)$.",
+    "The distance inequality $|x-2|+|x+2|\\le6$ has solution set $[-3,3]$.",
+    "A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.",
+    "The inequality $\\dfrac{x^2+4x+5}{x^2-1}\\le0$ is satisfied exactly for $-1<x<1$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
+    true,
+    true,
     true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nCombining the fractions produces a negative constant numerator. That sign reverses the usual denominator test.\n\nCombine over one denominator:\n\n$$\\frac1{x-0}-\\frac1{x-4}=\\frac{-4}{(x-0)(x-4)}$$\n\nUse the negative numerator:\n\n$$-4<0$$\n\nRequire a nonnegative denominator:\n\n$$(x-0)(x-4)>0$$\n\nExclude the two poles:\n\n$$(-\\infty,0)\\cup(4,\\infty)$$\n\nBetween the poles the denominator is negative, making the whole fraction positive, so the statement is False.",
-    "**B.** → True\n\nMove both models to one side and solve the resulting upward-opening quadratic. The exterior, not the interior, carries the nonnegative sign.\n\nUse the shifted variable:\n\n$$y=x-2$$\n\nCollect the inequality:\n\n$$y^2-2y-9\\ge0$$\n\nFind the roots:\n\n$$y=1\\pm\\sqrt{1+9}=1\\pm\\sqrt{10}$$\n\nKeep the exterior rays:\n\n$$y\\le1-\\sqrt{10}\\ \\text{or}\\ y\\ge1+\\sqrt{10}$$\n\nReturn to $x$:\n\n$$x\\le 3-\\sqrt{10}\\ \\text{or}\\ x\\ge 3+\\sqrt{10}$$\n\nThe parabola opens upward and equality is allowed, so the exterior closed rays make the statement True.",
-    "**C.** → False\n\nThe first squaring is safe only after domain restrictions; the second requires the newly isolated left side to be nonnegative.\n\nShift the variable:\n\n$$y=x-1$$\n\nUse the radical domain:\n\n$$y\\ge-\\frac45$$\n\nSquare the rearranged inequality:\n\n$$\\sqrt{5y+4}>1+\\sqrt{2y+3}\\ \\Longrightarrow\\ 3y>2\\sqrt{2y+3}$$\n\nRecord the new sign condition:\n\n$$y>0$$\n\nSquare again:\n\n$$9y^2-8y-12>0$$\n\nSolve and intersect with $y>0$:\n\n$$y>\\frac{4+2\\sqrt{31}}9$$\n\nReturn to $x$:\n\n$$x>\\dfrac{13+2\\sqrt{31}}{9}$$\n\nThe smaller quadratic root is negative and violates the sign condition created before the second squaring, so the statement is False.",
-    "**D.** → True\n\nThe deadline creates a lower speed bound, while the speed-sensitive fuel model creates an upper bound. Integer speeds lie in their intersection.\n\nTime requirement:\n\n$$\\frac{240}v+\\frac{1}2\\le 5$$\n\nSolve the lower bound:\n\n$$v\\ge\\frac{240}{5-1/2}=\\frac{160}{3}$$\n\nApply whole-number speed:\n\n$$v\\ge 54$$\n\nFuel requirement:\n\n$$240\\left(0.03+\\frac v{10000}\\right)\\le 9.36$$\n\nSolve the upper bound:\n\n$$v\\le 90$$\n\nCount the integers:\n\n$$90-54+1=37$$\n\nThe intersection contains exactly the printed number of integer speeds, so the statement is True.",
-    "**E.** → True\n\nCombining the fractions produces a negative constant numerator. That sign reverses the usual denominator test.\n\nCombine over one denominator:\n\n$$\\frac1{x-1}-\\frac1{x-5}=\\frac{-4}{(x-1)(x-5)}$$\n\nUse the negative numerator:\n\n$$-4<0$$\n\nRequire a nonnegative denominator:\n\n$$(x-1)(x-5)>0$$\n\nExclude the two poles:\n\n$$(-\\infty,1)\\cup(5,\\infty)$$\n\nThe reciprocal difference is negative on the two exterior intervals, so the statement is True."
+    "**A.** → True\n\nThe numerator is positive everywhere, so only the denominator sign matters.\n\n$$x^2+1>0$$\n\n$$\\frac{x^2+1}{x-2}<0\\iff x-2<0$$\n\n$$x<2$$\n\nThe pole $x=2$ is excluded by the strict half-line. Therefore the statement is True.",
+    "**B.** → True\n\nCompare the shifted square with $4$.\n\n$$(x-1)^2>4$$\n\n$$|x-1|>2$$\n\n$$x<-1\\quad\\text{or}\\quad x>3$$\n\nStrictness excludes the two boundary roots. Therefore the statement is True.",
+    "**C.** → True\n\nSplit the line at the two absolute-value breakpoints.\n\n$$|x-2|+|x+2|=\\begin{cases}-2x,&x<-2,\\\\4,&-2\\le x\\le2,\\\\2x,&x>2,\\end{cases}$$\n\n$$|x-2|+|x+2|\\le6\\iff -3\\le x\\le3$$\n\nThe whole central segment works, with one additional unit on each side. Therefore the statement is True.",
+    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be loaves.\n\n$$0.4n\\le 25$$\n\n$$n\\le 62.5$$\n\n60 $\\le$ 62.5, so allowed.\n\n60 loaves use 24 kg.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**E.** → True\n\nThe numerator has a positive completed-square form.\n\n$$x^2+4x+5=(x+2)^2+1>0$$\n\n$$\\frac{x^2+4x+5}{x^2-1}\\le0\\iff x^2-1<0$$\n\n$$-1<x<1$$\n\nEquality cannot occur because the numerator never vanishes. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 101,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. A tests difference of reciprocals inequality; B tests comparison of quadratic models; C tests twice-squared radical inequality; D tests deadline and fuel speed window; E tests difference of reciprocals inequality. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests positive quadratic numerator over a pole; B tests quadratic exterior from a shifted square; C tests sum of distances bounded above; D tests a contextual inequality with all practical constraints; E tests positive numerator over a difference of squares. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-102",
    "case_id": "MATH 6.102",
-   "title": "Hard mixed exam: 14",
+   "title": "Exam-style tasks — 14",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The output comparison $(x-3)^2-16\\ge2(x-3)$ holds exactly when $4-\\sqrt{17}\\le x\\le 4+\\sqrt{17}$.",
-    "The inequality $\\sqrt{2(x-2)+3}<\\sqrt{5(x-2)+4}-1$ has solution set $x>\\dfrac{22+2\\sqrt{31}}{9}$.",
-    "A delivery van covers $270$ km at a constant whole-number speed $v$ km/h and spends $2/2$ hours at stops. It must finish within $6$ hours. Fuel costs $\\left(0.03+\\dfrac{v}{10000}\\right)$ euros per kilometre and the fuel budget is €10.67. Exactly $43$ integer speeds satisfy both limits.",
-    "The inequality $\\dfrac1{x-2}-\\dfrac1{x-6}\\le0$ holds exactly on $(2,6)$.",
-    "The output comparison $(x-4)^2-25\\ge2(x-4)$ holds exactly when $x\\le 5-\\sqrt{26}\\ \\text{or}\\ x\\ge 5+\\sqrt{26}$."
+    "The inequality $3x^2-12x+13>0$ holds for every real $x$.",
+    "The inequality $|x+1|\\ge4$ has solution set $(-\\infty,-5]\\cup[3,\\infty)$.",
+    "A parking garage has a clearance of 2.10 m. A car is 1.70 m tall and a roof box adds 0.35 m. The driver claims the car with the roof box can enter the garage. That claim is true.",
+    "The inequality $\\dfrac{x+2}{(x-1)^2}\\le0$ has solution set $(-\\infty,-2]$.",
+    "The quartic sign inequality $(x^2-1)(x^2-9)\\le0$ has solution set $[-3,-1]\\cup[1,3]$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nMove both models to one side and solve the resulting upward-opening quadratic. The exterior, not the interior, carries the nonnegative sign.\n\nUse the shifted variable:\n\n$$y=x-3$$\n\nCollect the inequality:\n\n$$y^2-2y-16\\ge0$$\n\nFind the roots:\n\n$$y=1\\pm\\sqrt{1+16}=1\\pm\\sqrt{17}$$\n\nKeep the exterior rays:\n\n$$y\\le1-\\sqrt{17}\\ \\text{or}\\ y\\ge1+\\sqrt{17}$$\n\nReturn to $x$:\n\n$$x\\le 4-\\sqrt{17}\\ \\text{or}\\ x\\ge 4+\\sqrt{17}$$\n\nThe printed interval is where the quadratic is nonpositive, the opposite sign, so the statement is False.",
-    "**B.** → True\n\nThe first squaring is safe only after domain restrictions; the second requires the newly isolated left side to be nonnegative.\n\nShift the variable:\n\n$$y=x-2$$\n\nUse the radical domain:\n\n$$y\\ge-\\frac45$$\n\nSquare the rearranged inequality:\n\n$$\\sqrt{5y+4}>1+\\sqrt{2y+3}\\ \\Longrightarrow\\ 3y>2\\sqrt{2y+3}$$\n\nRecord the new sign condition:\n\n$$y>0$$\n\nSquare again:\n\n$$9y^2-8y-12>0$$\n\nSolve and intersect with $y>0$:\n\n$$y>\\frac{4+2\\sqrt{31}}9$$\n\nReturn to $x$:\n\n$$x>\\dfrac{22+2\\sqrt{31}}{9}$$\n\nThe positive-root branch is the only one compatible with the intermediate sign condition, so the statement is True.",
-    "**C.** → False\n\nThe deadline creates a lower speed bound, while the speed-sensitive fuel model creates an upper bound. Integer speeds lie in their intersection.\n\nTime requirement:\n\n$$\\frac{270}v+\\frac{2}2\\le 6$$\n\nSolve the lower bound:\n\n$$v\\ge\\frac{270}{6-2/2}=\\frac{54}{1}$$\n\nApply whole-number speed:\n\n$$v\\ge 54$$\n\nFuel requirement:\n\n$$270\\left(0.03+\\frac v{10000}\\right)\\le 10.67$$\n\nSolve the upper bound:\n\n$$v\\le 95$$\n\nCount the integers:\n\n$$95-54+1=42$$\n\nThe inclusive integer count is $42$, not $43$, so the statement is False.",
-    "**D.** → False\n\nCombining the fractions produces a negative constant numerator. That sign reverses the usual denominator test.\n\nCombine over one denominator:\n\n$$\\frac1{x-2}-\\frac1{x-6}=\\frac{-4}{(x-2)(x-6)}$$\n\nUse the negative numerator:\n\n$$-4<0$$\n\nRequire a nonnegative denominator:\n\n$$(x-2)(x-6)>0$$\n\nExclude the two poles:\n\n$$(-\\infty,2)\\cup(6,\\infty)$$\n\nBetween the poles the denominator is negative, making the whole fraction positive, so the statement is False.",
-    "**E.** → True\n\nMove both models to one side and solve the resulting upward-opening quadratic. The exterior, not the interior, carries the nonnegative sign.\n\nUse the shifted variable:\n\n$$y=x-4$$\n\nCollect the inequality:\n\n$$y^2-2y-25\\ge0$$\n\nFind the roots:\n\n$$y=1\\pm\\sqrt{1+25}=1\\pm\\sqrt{26}$$\n\nKeep the exterior rays:\n\n$$y\\le1-\\sqrt{26}\\ \\text{or}\\ y\\ge1+\\sqrt{26}$$\n\nReturn to $x$:\n\n$$x\\le 5-\\sqrt{26}\\ \\text{or}\\ x\\ge 5+\\sqrt{26}$$\n\nThe parabola opens upward and equality is allowed, so the exterior closed rays make the statement True."
+    "**A.** → True\n\nComplete the square to expose a positive minimum.\n\n$$3x^2-12x+13=3(x-2)^2+1$$\n\n$$3(x-2)^2+1\\ge1>0$$\n\nThe expression never reaches zero. Therefore the statement is True.",
+    "**B.** → True\n\nA lower bound on distance gives two outer rays.\n\n$$|x+1|\\ge4$$\n\n$$x+1\\le-4\\quad\\text{or}\\quad x+1\\ge4$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge3$$\n\nEquality includes both boundary points. Therefore the statement is True.",
+    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $h$ be total height:\n\n$$h = 1.70 + 0.35$$\n\nEntry is allowed when:\n\n$$h \\le 2.10$$\n\n$$1.70 + 0.35 = 2.05 \\le 2.10$$\n\nThere are 0.05 m (5 cm) to spare.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe squared denominator is positive wherever the fraction is defined.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+2}{(x-1)^2}\\le0\\iff x+2\\le0$$\n\n$$x\\le-2$$\n\nThe excluded value $1$ is not in the resulting half-line. Therefore the statement is True.",
+    "**E.** → True\n\nFactor into four linear terms and alternate signs across the simple roots.\n\n$$(x-1)(x+1)(x-3)(x+3)\\le0$$\n\n$$-3,\\ -1,\\ 1,\\ 3$$\n\n$$x\\in[-3,-1]\\cup[1,3]$$\n\nAll four roots are included because the inequality is non-strict. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 102,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. A tests comparison of quadratic models; B tests twice-squared radical inequality; C tests deadline and fuel speed window; D tests difference of reciprocals inequality; E tests comparison of quadratic models. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests globally positive quadratic; B tests exterior absolute-value rays; C tests a contextual inequality with all practical constraints; D tests nonpositive numerator over a square; E tests symmetric quartic sign pattern. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-103",
    "case_id": "MATH 6.103",
-   "title": "Hard mixed exam: 15",
+   "title": "Exam-style tasks — 15",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $\\sqrt{2(x-3)+3}<\\sqrt{5(x-3)+4}-1$ has solution set $x>\\dfrac{31-2\\sqrt{31}}{9}$.",
-    "A delivery van covers $300$ km at a constant whole-number speed $v$ km/h and spends $3/2$ hours at stops. It must finish within $7$ hours. Fuel costs $\\left(0.03+\\dfrac{v}{10000}\\right)$ euros per kilometre and the fuel budget is €12.00. Exactly $46$ integer speeds satisfy both limits.",
-    "The inequality $\\dfrac1{x-3}-\\dfrac1{x-7}\\le0$ holds exactly on $(-\\infty,3)\\cup(7,\\infty)$.",
-    "The output comparison $(x-5)^2-36\\ge2(x-5)$ holds exactly when $6-\\sqrt{37}\\le x\\le 6+\\sqrt{37}$.",
-    "The inequality $\\sqrt{2(x-4)+3}<\\sqrt{5(x-4)+4}-1$ has solution set $x>\\dfrac{40+2\\sqrt{31}}{9}$."
+    "The inequality $|x|+x<2$ has solution set $(-\\infty,1)$.",
+    "A gym membership is 40 EUR per month and each guest pass costs 6 EUR. With 70 EUR this month, at most 5 guest passes can be bought.",
+    "The inequality $\\dfrac1{x-1}+\\dfrac1{x+1}>0$ has solution set $(-1,0)\\cup(1,\\infty)$.",
+    "The strict inequality $4x^2-12x+9<0$ has no real solution.",
+    "The inequality $|x|-x\\ge2$ has solution set $(-\\infty,-1]$."
    ],
    "answer_key": [
-    false,
     true,
     true,
-    false,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe first squaring is safe only after domain restrictions; the second requires the newly isolated left side to be nonnegative.\n\nShift the variable:\n\n$$y=x-3$$\n\nUse the radical domain:\n\n$$y\\ge-\\frac45$$\n\nSquare the rearranged inequality:\n\n$$\\sqrt{5y+4}>1+\\sqrt{2y+3}\\ \\Longrightarrow\\ 3y>2\\sqrt{2y+3}$$\n\nRecord the new sign condition:\n\n$$y>0$$\n\nSquare again:\n\n$$9y^2-8y-12>0$$\n\nSolve and intersect with $y>0$:\n\n$$y>\\frac{4+2\\sqrt{31}}9$$\n\nReturn to $x$:\n\n$$x>\\dfrac{31+2\\sqrt{31}}{9}$$\n\nThe smaller quadratic root is negative and violates the sign condition created before the second squaring, so the statement is False.",
-    "**B.** → True\n\nThe deadline creates a lower speed bound, while the speed-sensitive fuel model creates an upper bound. Integer speeds lie in their intersection.\n\nTime requirement:\n\n$$\\frac{300}v+\\frac{3}2\\le 7$$\n\nSolve the lower bound:\n\n$$v\\ge\\frac{300}{7-3/2}=\\frac{600}{11}$$\n\nApply whole-number speed:\n\n$$v\\ge 55$$\n\nFuel requirement:\n\n$$300\\left(0.03+\\frac v{10000}\\right)\\le 12.00$$\n\nSolve the upper bound:\n\n$$v\\le 100$$\n\nCount the integers:\n\n$$100-55+1=46$$\n\nThe intersection contains exactly the printed number of integer speeds, so the statement is True.",
-    "**C.** → True\n\nCombining the fractions produces a negative constant numerator. That sign reverses the usual denominator test.\n\nCombine over one denominator:\n\n$$\\frac1{x-3}-\\frac1{x-7}=\\frac{-4}{(x-3)(x-7)}$$\n\nUse the negative numerator:\n\n$$-4<0$$\n\nRequire a nonnegative denominator:\n\n$$(x-3)(x-7)>0$$\n\nExclude the two poles:\n\n$$(-\\infty,3)\\cup(7,\\infty)$$\n\nThe reciprocal difference is negative on the two exterior intervals, so the statement is True.",
-    "**D.** → False\n\nMove both models to one side and solve the resulting upward-opening quadratic. The exterior, not the interior, carries the nonnegative sign.\n\nUse the shifted variable:\n\n$$y=x-5$$\n\nCollect the inequality:\n\n$$y^2-2y-36\\ge0$$\n\nFind the roots:\n\n$$y=1\\pm\\sqrt{1+36}=1\\pm\\sqrt{37}$$\n\nKeep the exterior rays:\n\n$$y\\le1-\\sqrt{37}\\ \\text{or}\\ y\\ge1+\\sqrt{37}$$\n\nReturn to $x$:\n\n$$x\\le 6-\\sqrt{37}\\ \\text{or}\\ x\\ge 6+\\sqrt{37}$$\n\nThe printed interval is where the quadratic is nonpositive, the opposite sign, so the statement is False.",
-    "**E.** → True\n\nThe first squaring is safe only after domain restrictions; the second requires the newly isolated left side to be nonnegative.\n\nShift the variable:\n\n$$y=x-4$$\n\nUse the radical domain:\n\n$$y\\ge-\\frac45$$\n\nSquare the rearranged inequality:\n\n$$\\sqrt{5y+4}>1+\\sqrt{2y+3}\\ \\Longrightarrow\\ 3y>2\\sqrt{2y+3}$$\n\nRecord the new sign condition:\n\n$$y>0$$\n\nSquare again:\n\n$$9y^2-8y-12>0$$\n\nSolve and intersect with $y>0$:\n\n$$y>\\frac{4+2\\sqrt{31}}9$$\n\nReturn to $x$:\n\n$$x>\\dfrac{40+2\\sqrt{31}}{9}$$\n\nThe positive-root branch is the only one compatible with the intermediate sign condition, so the statement is True."
+    "**A.** → True\n\nResolve the expression on the negative and nonnegative half-lines.\n\n$$x<0:\\quad |x|+x=-x+x=0<2$$\n\n$$x\\ge0:\\quad |x|+x=2x<2\\iff x<1$$\n\n$$x<1$$\n\nThe two branches join without a gap at zero. Therefore the statement is True.",
+    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $g$ be the number of guest passes.\n\n$$40 + 6g \\le 70$$\n\n$$6g \\le 30$$\n\n$$g \\le 5$$\n\nThe greatest whole number of guest passes is 5.\n\nThe claim matches the solution.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → True\n\nCombine the fractions before making a sign chart.\n\n$$\\frac1{x-1}+\\frac1{x+1}=\\frac{2x}{x^2-1}$$\n\n$$-1,\\ 0,\\ 1\\ \\text{are the critical points}$$\n\n$$\\frac{2x}{x^2-1}>0\\iff x\\in(-1,0)\\cup(1,\\infty)$$\n\nStrictness excludes the numerator zero, and both poles are excluded. Therefore the statement is True.",
+    "**D.** → True\n\nThe trinomial is a perfect square.\n\n$$4x^2-12x+9=(2x-3)^2$$\n\n$$(2x-3)^2\\ge0$$\n\nThe expression reaches zero but never becomes negative. Therefore the statement is True.",
+    "**E.** → True\n\nSplit according to the sign of $x$.\n\n$$x\\ge0:\\quad |x|-x=0$$\n\n$$x<0:\\quad |x|-x=-2x\\ge2\\iff x\\le-1$$\n\n$$x\\in(-\\infty,-1]$$\n\nOnly the negative branch contributes. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 103,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. A tests twice-squared radical inequality; B tests deadline and fuel speed window; C tests difference of reciprocals inequality; D tests comparison of quadratic models; E tests twice-squared radical inequality. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests one-sided cancellation in a modulus sum; B tests a contextual inequality with all practical constraints; C tests sum of two reciprocals; D tests strict inequality for a double-root quadratic; E tests one-sided modulus difference. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-104",
    "case_id": "MATH 6.104",
-   "title": "Hard mixed exam: 16",
+   "title": "Exam-style tasks — 16",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A delivery van covers $330$ km at a constant whole-number speed $v$ km/h and spends $4/2$ hours at stops. It must finish within $8$ hours. Fuel costs $\\left(0.03+\\dfrac{v}{10000}\\right)$ euros per kilometre and the fuel budget is €13.37. Exactly $52$ integer speeds satisfy both limits.",
-    "The inequality $\\dfrac1{x-4}-\\dfrac1{x-8}\\le0$ holds exactly on $(4,8)$.",
-    "The output comparison $(x-6)^2-49\\ge2(x-6)$ holds exactly when $x\\le 7-\\sqrt{50}\\ \\text{or}\\ x\\ge 7+\\sqrt{50}$.",
-    "The inequality $\\sqrt{2(x-5)+3}<\\sqrt{5(x-5)+4}-1$ has solution set $x>\\dfrac{49-2\\sqrt{31}}{9}$.",
-    "A delivery van covers $360$ km at a constant whole-number speed $v$ km/h and spends $5/2$ hours at stops. It must finish within $9$ hours. Fuel costs $\\left(0.03+\\dfrac{v}{10000}\\right)$ euros per kilometre and the fuel budget is €14.76. Exactly $55$ integer speeds satisfy both limits."
+    "A backpack may carry at most 4 kg and at most 20 litres. Each book weighs 0.5 kg and takes 3 litres. The greatest number of books that satisfy both limits is 8.",
+    "The inequality $\\left(\\dfrac{x-1}{x+1}\\right)^2<1$ has solution set $(0,\\infty)$.",
+    "The inequality $-x^2+x+6<0$ has solution set $(-\\infty,-2)\\cup(3,\\infty)$.",
+    "The radical inequality $\\sqrt{x+1}<3$ has solution set $[-1,8)$.",
+    "Ferry tickets cost 18 EUR for adults and 9 EUR for children. A family has 72 EUR and buys 2 adult tickets. They can still buy 5 child tickets without exceeding the budget."
    ],
    "answer_key": [
     false,
-    false,
     true,
-    false,
-    true
+    true,
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe deadline creates a lower speed bound, while the speed-sensitive fuel model creates an upper bound. Integer speeds lie in their intersection.\n\nTime requirement:\n\n$$\\frac{330}v+\\frac{4}2\\le 8$$\n\nSolve the lower bound:\n\n$$v\\ge\\frac{330}{8-4/2}=\\frac{55}{1}$$\n\nApply whole-number speed:\n\n$$v\\ge 55$$\n\nFuel requirement:\n\n$$330\\left(0.03+\\frac v{10000}\\right)\\le 13.37$$\n\nSolve the upper bound:\n\n$$v\\le 105$$\n\nCount the integers:\n\n$$105-55+1=51$$\n\nThe inclusive integer count is $51$, not $52$, so the statement is False.",
-    "**B.** → False\n\nCombining the fractions produces a negative constant numerator. That sign reverses the usual denominator test.\n\nCombine over one denominator:\n\n$$\\frac1{x-4}-\\frac1{x-8}=\\frac{-4}{(x-4)(x-8)}$$\n\nUse the negative numerator:\n\n$$-4<0$$\n\nRequire a nonnegative denominator:\n\n$$(x-4)(x-8)>0$$\n\nExclude the two poles:\n\n$$(-\\infty,4)\\cup(8,\\infty)$$\n\nBetween the poles the denominator is negative, making the whole fraction positive, so the statement is False.",
-    "**C.** → True\n\nMove both models to one side and solve the resulting upward-opening quadratic. The exterior, not the interior, carries the nonnegative sign.\n\nUse the shifted variable:\n\n$$y=x-6$$\n\nCollect the inequality:\n\n$$y^2-2y-49\\ge0$$\n\nFind the roots:\n\n$$y=1\\pm\\sqrt{1+49}=1\\pm\\sqrt{50}$$\n\nKeep the exterior rays:\n\n$$y\\le1-\\sqrt{50}\\ \\text{or}\\ y\\ge1+\\sqrt{50}$$\n\nReturn to $x$:\n\n$$x\\le 7-\\sqrt{50}\\ \\text{or}\\ x\\ge 7+\\sqrt{50}$$\n\nThe parabola opens upward and equality is allowed, so the exterior closed rays make the statement True.",
-    "**D.** → False\n\nThe first squaring is safe only after domain restrictions; the second requires the newly isolated left side to be nonnegative.\n\nShift the variable:\n\n$$y=x-5$$\n\nUse the radical domain:\n\n$$y\\ge-\\frac45$$\n\nSquare the rearranged inequality:\n\n$$\\sqrt{5y+4}>1+\\sqrt{2y+3}\\ \\Longrightarrow\\ 3y>2\\sqrt{2y+3}$$\n\nRecord the new sign condition:\n\n$$y>0$$\n\nSquare again:\n\n$$9y^2-8y-12>0$$\n\nSolve and intersect with $y>0$:\n\n$$y>\\frac{4+2\\sqrt{31}}9$$\n\nReturn to $x$:\n\n$$x>\\dfrac{49+2\\sqrt{31}}{9}$$\n\nThe smaller quadratic root is negative and violates the sign condition created before the second squaring, so the statement is False.",
-    "**E.** → True\n\nThe deadline creates a lower speed bound, while the speed-sensitive fuel model creates an upper bound. Integer speeds lie in their intersection.\n\nTime requirement:\n\n$$\\frac{360}v+\\frac{5}2\\le 9$$\n\nSolve the lower bound:\n\n$$v\\ge\\frac{360}{9-5/2}=\\frac{720}{13}$$\n\nApply whole-number speed:\n\n$$v\\ge 56$$\n\nFuel requirement:\n\n$$360\\left(0.03+\\frac v{10000}\\right)\\le 14.76$$\n\nSolve the upper bound:\n\n$$v\\le 110$$\n\nCount the integers:\n\n$$110-56+1=55$$\n\nThe intersection contains exactly the printed number of integer speeds, so the statement is True."
+    "**A.** → False\n\nThe number of books must satisfy both the mass and volume limits.\n\nLet $n$ be the number of books.\n\n$$0.5n \\le 4$$\n\nAlso, $3n \\le 20$.\n\nWeight:\n\n$$n \\le 8$$\n\nVolume:\n\n$$n \\le \\dfrac{20}{3} \\approx 6.67$$\n\nBinding limit:\n\n$$n \\le 6$$\n\nVolume binds first, so the maximum is 6, not 8.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nCompare the absolute values after taking the square root of two nonnegative quantities.\n\n$$\\left|\\frac{x-1}{x+1}\\right|<1$$\n\n$$|x-1|<|x+1|$$\n\n$$(x-1)^2<(x+1)^2$$\n\n$$x>0$$\n\nThe pole $x=-1$ is already outside the solution half-line. Therefore the statement is True.",
+    "**C.** → True\n\nFactor after reversing the sign of the inequality.\n\n$$-x^2+x+6<0\\iff x^2-x-6>0$$\n\n$$(x-3)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>3$$\n\nStrictness leaves both roots open. Therefore the statement is True.",
+    "**D.** → True\n\nCombine the radical domain with the squared upper bound.\n\n$$x+1\\ge0\\iff x\\ge-1$$\n\n$$\\sqrt{x+1}<3\\iff x+1<9\\iff x<8$$\n\n$$x\\in[-1,8)$$\n\nThe domain endpoint is included, while the threshold endpoint is not. Therefore the statement is True.",
+    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $c$ be the number of child tickets.\n\n$$2 \\cdot 18 + 9c \\le 72$$\n\n$$36 + 9c \\le 72$$\n\n$$9c \\le 36$$\n\n$$c \\le 4$$\n\nAt most 4 child tickets remain affordable.\n\n5 children would make the total 81 EUR.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 104,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. A tests deadline and fuel speed window; B tests difference of reciprocals inequality; C tests comparison of quadratic models; D tests twice-squared radical inequality; E tests deadline and fuel speed window. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests square of a Möbius expression; C tests downward quadratic negative outside; D tests bounded principal square root; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-105",
    "case_id": "MATH 6.105",
-   "title": "Hard mixed exam: 17",
+   "title": "Exam-style tasks — 17",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The solution set of $\\dfrac{(x-1)(x-5)}{(x-3)(x-7)}\\le0$ is $[1,3)\\cup[5,7)$.",
-    "A rectangular panel has side lengths $x$ and $18-x$ metres. Both sides must be at least $5$ m and the area must be at least $65\\text{ m}^2$. These requirements hold exactly when $5<x<13$.",
-    "The condition $\\max\\{(x-1)^2-25,\\ 4-(x-1)^2\\}\\le0$ is equivalent to $[-4,-1]\\cup[3,6]$.",
-    "An event technician receives a €180 call-out fee, €24 per hour for the first $6$ hours, and €36 per hour thereafter. The organizer has €486 and requires at least $8$ hours on site. The greatest whole number of hours the technician can work without exceeding the budget is $11$.",
-    "The solution set of $\\dfrac{(x-2)(x-6)}{(x-4)(x-8)}\\le0$ is $(2,4]\\cup(6,8]$."
+    "The rational inequality $\\dfrac{(x-4)(x+1)}{(x-2)(x+3)}\\le0$ has solution set $(-3,-1]\\cup(2,4]$.",
+    "The inequality $-2x^2+8x-6\\ge0$ has solution set $[1,3]$.",
+    "The inequality $\\left|\\dfrac1{x-1}\\right|>1$ has solution set $(0,1)\\cup(1,2)$.",
+    "A courier has 75 minutes including a fixed 10-minute warehouse stop and drives at 2 minutes per kilometre. Every delivery of at most 35 km can be finished on time.",
+    "The inequality $\\dfrac{x^2-4}{x^2-9}\\ge0$ has solution set $(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$."
    ],
    "answer_key": [
     true,
-    false,
+    true,
     true,
     false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFour interlaced simple critical points force a sign change at every zero and pole. Endpoint type depends on whether the factor is upstairs or downstairs.\n\nOrder the critical points:\n\n$$1<3<5<7$$\n\nRead alternating signs:\n\n$$+,\\ -,\\ +,\\ -,\\ +$$\n\nSelect nonpositive intervals:\n\n$$[1,3)\\cup[5,7)$$\n\nCheck endpoint roles:\n\n$$1,5\\ \\text{are zeros};\\quad 3,7\\ \\text{are poles}$$\n\nZeros are included and poles are excluded exactly as printed, so the statement is True.",
-    "**B.** → False\n\nThe physical side constraints and the quadratic area constraint must be intersected. Here they meet at the same two boundary values.\n\nTranslate minimum side lengths:\n\n$$x\\ge 5,\\qquad 18-x\\ge 5$$\n\nSolve the physical band:\n\n$$5\\le x\\le 13$$\n\nTranslate the area threshold:\n\n$$x(18-x)\\ge 65$$\n\nFactor the quadratic:\n\n$$(x-5)(x-13)\\le0$$\n\nIntersect both conditions:\n\n$$5\\le x\\le 13$$\n\nThe requirements use non-strict inequalities, so both endpoint panels are valid and the open interval is False.",
-    "**C.** → True\n\nA maximum is nonpositive only when both entries are nonpositive. Their intersection creates a band in the magnitude of the shifted variable.\n\nRequire the first entry:\n\n$$(x-1)^2-25\\le0\\iff |x-1|\\le 5$$\n\nRequire the second entry:\n\n$$4-(x-1)^2\\le0\\iff |x-1|\\ge 2$$\n\nIntersect the magnitude conditions:\n\n$$2\\le|x-1|\\le 5$$\n\nUnfold both sides:\n\n$$[-4,-1]\\cup[3,6]$$\n\nBoth closed magnitude branches appear in the proposed union, so the statement is True.",
-    "**D.** → False\n\nThe minimum service already enters the overtime tier, so the upper bound must use the piecewise overtime formula.\n\nCost at the tier boundary:\n\n$$C(6)=180+24\\cdot 6$$\n\nUse the overtime branch:\n\n$$C(h)=180+24\\cdot 6+36(h-6)$$\n\nImpose the budget:\n\n$$324+36(h-6)\\le 486$$\n\nSolve and floor:\n\n$$h\\le 6+\\frac{162}{36}<11$$\n\nCheck the service minimum:\n\n$$10\\ge 8$$\n\nThe extra hour costs another €36 and exceeds the available budget; the maximum is $10$, so the statement is False.",
-    "**E.** → False\n\nFour interlaced simple critical points force a sign change at every zero and pole. Endpoint type depends on whether the factor is upstairs or downstairs.\n\nOrder the critical points:\n\n$$2<4<6<8$$\n\nRead alternating signs:\n\n$$+,\\ -,\\ +,\\ -,\\ +$$\n\nSelect nonpositive intervals:\n\n$$[2,4)\\cup[6,8)$$\n\nCheck endpoint roles:\n\n$$2,6\\ \\text{are zeros};\\quad 4,8\\ \\text{are poles}$$\n\nThe proposed brackets include both poles and exclude both permitted zeros, so the statement is False."
+    "**A.** → True\n\nZeros and poles partition the line; poles are never included.\n\n$$-3\\ (\\text{pole}),\\ -1\\ (\\text{zero}),\\ 2\\ (\\text{pole}),\\ 4\\ (\\text{zero})$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-3,-1]\\cup(2,4]$$\n\nThe nonpositive intervals include numerator zeros and exclude denominator zeros. Therefore the statement is True.",
+    "**B.** → True\n\nFactor after dividing by a negative number and reverse the sign.\n\n$$-2x^2+8x-6\\ge0$$\n\n$$x^2-4x+3\\le0$$\n\n$$(x-1)(x-3)\\le0$$\n\n$$1\\le x\\le3$$\n\nBoth roots are included. Therefore the statement is True.",
+    "**C.** → True\n\nRewrite the reciprocal modulus as a positive distance condition.\n\n$$x\\ne1,\\qquad \\frac1{|x-1|}>1$$\n\n$$0<|x-1|<1$$\n\n$$x\\in(0,1)\\cup(1,2)$$\n\nThe center is excluded because the reciprocal is undefined. Therefore the statement is True.",
+    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be delivery distance in kilometres.\n\n$$10 + 2d \\le 75$$\n\n$$2d \\le 65$$\n\n$$d \\le 32.5$$\n\nDistances above 32.5 km miss the deadline, so 35 km is not always feasible.\n\n35 km needs 80 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nFactor both quadratics and order all four critical points.\n\n$$\\frac{(x-2)(x+2)}{(x-3)(x+3)}\\ge0$$\n\n$$-3,\\ -2,\\ 2,\\ 3$$\n\n$$x\\in(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$$\n\nNumerator zeros are included; denominator zeros are not. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 105,
-   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. A tests interlaced rational sign chart; B tests constrained rectangular area; C tests maximum of two quadratic constraints; D tests piecewise overtime budget; E tests interlaced rational sign chart. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests four-critical-point rational sign chart; B tests closed interval under a downward parabola; C tests reciprocal absolute-value neighborhood; D tests a contextual inequality with all practical constraints; E tests even quadratic over even quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-106",
    "case_id": "MATH 6.106",
-   "title": "Hard mixed exam: 18",
+   "title": "Exam-style tasks — 18",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A rectangular panel has side lengths $x$ and $20-x$ metres. Both sides must be at least $6$ m and the area must be at least $84\\text{ m}^2$. These requirements hold exactly when $6\\le x\\le 14$.",
-    "The condition $\\max\\{(x-2)^2-36,\\ 9-(x-2)^2\\}\\le0$ is equivalent to $[-1,5]$.",
-    "An event technician receives a €200 call-out fee, €26 per hour for the first $7$ hours, and €39 per hour thereafter. The organizer has €596 and requires at least $9$ hours on site. The greatest whole number of hours the technician can work without exceeding the budget is $12$.",
-    "The solution set of $\\dfrac{(x-3)(x-7)}{(x-5)(x-9)}\\le0$ is $[3,5)\\cup[7,9)$.",
-    "A rectangular panel has side lengths $x$ and $22-x$ metres. Both sides must be at least $7$ m and the area must be at least $105\\text{ m}^2$. These requirements hold exactly when $7<x<15$."
+    "The inequality $x(x-1)>2$ has solution set $(-\\infty,-1)\\cup(2,\\infty)$.",
+    "The inequality $|3x-2|\\le|x+4|$ has solution set $\\left[-\\dfrac12,3\\right]$.",
+    "A café mixes beans that cost 8 EUR/kg with beans that cost 14 EUR/kg. They use equal masses of each type. They claim that any batch of at least 6 kg of the blend (half and half) will have a total ingredient cost of at most 60 EUR. That claim is false.",
+    "The inequality $\\dfrac{x+1}{x^2+1}\\ge0$ has solution set $[-1,\\infty)$.",
+    "The inequality $-x^2+2x-5<0$ holds for every real $x$."
    ],
    "answer_key": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe physical side constraints and the quadratic area constraint must be intersected. Here they meet at the same two boundary values.\n\nTranslate minimum side lengths:\n\n$$x\\ge 6,\\qquad 20-x\\ge 6$$\n\nSolve the physical band:\n\n$$6\\le x\\le 14$$\n\nTranslate the area threshold:\n\n$$x(20-x)\\ge 84$$\n\nFactor the quadratic:\n\n$$(x-6)(x-14)\\le0$$\n\nIntersect both conditions:\n\n$$6\\le x\\le 14$$\n\nAt either endpoint the area equals the threshold and both sides remain admissible, so the statement is True.",
-    "**B.** → False\n\nA maximum is nonpositive only when both entries are nonpositive. Their intersection creates a band in the magnitude of the shifted variable.\n\nRequire the first entry:\n\n$$(x-2)^2-36\\le0\\iff |x-2|\\le 6$$\n\nRequire the second entry:\n\n$$9-(x-2)^2\\le0\\iff |x-2|\\ge 3$$\n\nIntersect the magnitude conditions:\n\n$$3\\le|x-2|\\le 6$$\n\nUnfold both sides:\n\n$$[-4,-1]\\cup[5,8]$$\n\nThe middle interval has magnitude below the required lower bound, so the statement is False.",
-    "**C.** → True\n\nThe minimum service already enters the overtime tier, so the upper bound must use the piecewise overtime formula.\n\nCost at the tier boundary:\n\n$$C(7)=200+26\\cdot 7$$\n\nUse the overtime branch:\n\n$$C(h)=200+26\\cdot 7+39(h-7)$$\n\nImpose the budget:\n\n$$382+39(h-7)\\le 596$$\n\nSolve and floor:\n\n$$h\\le 7+\\frac{214}{39}<13$$\n\nCheck the service minimum:\n\n$$12\\ge 9$$\n\nThe printed whole-hour value is feasible and the next hour exceeds the budget, so the statement is True.",
-    "**D.** → True\n\nFour interlaced simple critical points force a sign change at every zero and pole. Endpoint type depends on whether the factor is upstairs or downstairs.\n\nOrder the critical points:\n\n$$3<5<7<9$$\n\nRead alternating signs:\n\n$$+,\\ -,\\ +,\\ -,\\ +$$\n\nSelect nonpositive intervals:\n\n$$[3,5)\\cup[7,9)$$\n\nCheck endpoint roles:\n\n$$3,7\\ \\text{are zeros};\\quad 5,9\\ \\text{are poles}$$\n\nZeros are included and poles are excluded exactly as printed, so the statement is True.",
-    "**E.** → False\n\nThe physical side constraints and the quadratic area constraint must be intersected. Here they meet at the same two boundary values.\n\nTranslate minimum side lengths:\n\n$$x\\ge 7,\\qquad 22-x\\ge 7$$\n\nSolve the physical band:\n\n$$7\\le x\\le 15$$\n\nTranslate the area threshold:\n\n$$x(22-x)\\ge 105$$\n\nFactor the quadratic:\n\n$$(x-7)(x-15)\\le0$$\n\nIntersect both conditions:\n\n$$7\\le x\\le 15$$\n\nThe requirements use non-strict inequalities, so both endpoint panels are valid and the open interval is False."
+    "**A.** → True\n\nMove the threshold into the quadratic and factor.\n\n$$x^2-x-2>0$$\n\n$$(x+1)(x-2)>0$$\n\n$$x<-1\\quad\\text{or}\\quad x>2$$\n\nAn upward-opening quadratic is positive outside its roots. Therefore the statement is True.",
+    "**B.** → True\n\nBoth sides are nonnegative, so compare their squares.\n\n$$(3x-2)^2\\le(x+4)^2$$\n\n$$2x^2-5x-3\\le0$$\n\n$$(2x+1)(x-3)\\le0$$\n\n$$-\\frac12\\le x\\le3$$\n\nBoth equality points are included. Therefore the statement is True.",
+    "**C.** → True\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $M$ be the total mass of the blend in kilograms ($M > 0$).\n\nCost:\n\n$$\\dfrac{M}{2}\\cdot 8 + \\dfrac{M}{2}\\cdot 14 = 4M + 7M = 11M$$\n\n“At most 60 EUR” means $11M \\le 60$, so $M \\le \\dfrac{60}{11} \\approx 5.45$.\n\nBatches of at least 6 kg have $M \\ge 6 > 5.45$, so their cost is at least $11 \\cdot 6 = 66 > 60$ EUR.\n\nLarger batches cost more, not less. The café’s claim reverses the inequality direction.\n\nThe café claim is wrong, so our statement is true.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe quadratic denominator is strictly positive for every real input.\n\n$$x^2+1>0$$\n\n$$\\frac{x+1}{x^2+1}\\ge0\\iff x+1\\ge0$$\n\n$$x\\ge-1$$\n\nThe numerator zero is included. Therefore the statement is True.",
+    "**E.** → True\n\nComplete the square in a form that is visibly negative.\n\n$$-x^2+2x-5=-(x-1)^2-4$$\n\n$$-(x-1)^2-4\\le-4<0$$\n\nThe expression never reaches zero. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 106,
-   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. A tests constrained rectangular area; B tests maximum of two quadratic constraints; C tests piecewise overtime budget; D tests interlaced rational sign chart; E tests constrained rectangular area. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests quadratic produced by a product threshold; B tests comparison of two absolute distances; C tests a contextual inequality with all practical constraints; D tests linear numerator over an always-positive quadratic; E tests globally negative quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-107",
    "case_id": "MATH 6.107",
-   "title": "Hard mixed exam: 19",
+   "title": "Exam-style tasks — 19",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The condition $\\max\\{(x-3)^2-49,\\ 16-(x-3)^2\\}\\le0$ is equivalent to $[-4,-1]\\cup[7,10]$.",
-    "An event technician receives a €220 call-out fee, €28 per hour for the first $8$ hours, and €42 per hour thereafter. The organizer has €717 and requires at least $10$ hours on site. The greatest whole number of hours the technician can work without exceeding the budget is $15$.",
-    "The solution set of $\\dfrac{(x-4)(x-8)}{(x-6)(x-10)}\\le0$ is $(4,6]\\cup(8,10]$.",
-    "A rectangular panel has side lengths $x$ and $24-x$ metres. Both sides must be at least $8$ m and the area must be at least $128\\text{ m}^2$. These requirements hold exactly when $8\\le x\\le 16$.",
-    "The condition $\\max\\{(x-4)^2-64,\\ 25-(x-4)^2\\}\\le0$ is equivalent to $[-1,9]$."
+    "The nested inequality $\\bigl||x|-3\\bigr|<1$ has solution set $(-4,-2)\\cup(2,4)$.",
+    "Ana has already burned 900 kcal and burns 8 kcal per minute of jogging. Three hours of jogging are enough to reach a weekly total of at least 2500 kcal.",
+    "The inequality $\\dfrac{x+3}{(x-1)^2(x-4)}\\ge0$ has solution set $(-\\infty,-3]\\cup(4,\\infty)$.",
+    "The inequality $(2x-1)(x+3)\\le0$ has solution set $\\left[-3,\\dfrac12\\right]$.",
+    "The inequality $|x^2-4|\\le3$ has solution set $[-\\sqrt7,-1]\\cup[1,\\sqrt7]$."
    ],
    "answer_key": [
     true,
     false,
-    false,
     true,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA maximum is nonpositive only when both entries are nonpositive. Their intersection creates a band in the magnitude of the shifted variable.\n\nRequire the first entry:\n\n$$(x-3)^2-49\\le0\\iff |x-3|\\le 7$$\n\nRequire the second entry:\n\n$$16-(x-3)^2\\le0\\iff |x-3|\\ge 4$$\n\nIntersect the magnitude conditions:\n\n$$4\\le|x-3|\\le 7$$\n\nUnfold both sides:\n\n$$[-4,-1]\\cup[7,10]$$\n\nBoth closed magnitude branches appear in the proposed union, so the statement is True.",
-    "**B.** → False\n\nThe minimum service already enters the overtime tier, so the upper bound must use the piecewise overtime formula.\n\nCost at the tier boundary:\n\n$$C(8)=220+28\\cdot 8$$\n\nUse the overtime branch:\n\n$$C(h)=220+28\\cdot 8+42(h-8)$$\n\nImpose the budget:\n\n$$444+42(h-8)\\le 717$$\n\nSolve and floor:\n\n$$h\\le 8+\\frac{273}{42}<15$$\n\nCheck the service minimum:\n\n$$14\\ge 10$$\n\nThe extra hour costs another €42 and exceeds the available budget; the maximum is $14$, so the statement is False.",
-    "**C.** → False\n\nFour interlaced simple critical points force a sign change at every zero and pole. Endpoint type depends on whether the factor is upstairs or downstairs.\n\nOrder the critical points:\n\n$$4<6<8<10$$\n\nRead alternating signs:\n\n$$+,\\ -,\\ +,\\ -,\\ +$$\n\nSelect nonpositive intervals:\n\n$$[4,6)\\cup[8,10)$$\n\nCheck endpoint roles:\n\n$$4,8\\ \\text{are zeros};\\quad 6,10\\ \\text{are poles}$$\n\nThe proposed brackets include both poles and exclude both permitted zeros, so the statement is False.",
-    "**D.** → True\n\nThe physical side constraints and the quadratic area constraint must be intersected. Here they meet at the same two boundary values.\n\nTranslate minimum side lengths:\n\n$$x\\ge 8,\\qquad 24-x\\ge 8$$\n\nSolve the physical band:\n\n$$8\\le x\\le 16$$\n\nTranslate the area threshold:\n\n$$x(24-x)\\ge 128$$\n\nFactor the quadratic:\n\n$$(x-8)(x-16)\\le0$$\n\nIntersect both conditions:\n\n$$8\\le x\\le 16$$\n\nAt either endpoint the area equals the threshold and both sides remain admissible, so the statement is True.",
-    "**E.** → False\n\nA maximum is nonpositive only when both entries are nonpositive. Their intersection creates a band in the magnitude of the shifted variable.\n\nRequire the first entry:\n\n$$(x-4)^2-64\\le0\\iff |x-4|\\le 8$$\n\nRequire the second entry:\n\n$$25-(x-4)^2\\le0\\iff |x-4|\\ge 5$$\n\nIntersect the magnitude conditions:\n\n$$5\\le|x-4|\\le 8$$\n\nUnfold both sides:\n\n$$[-4,-1]\\cup[9,12]$$\n\nThe middle interval has magnitude below the required lower bound, so the statement is False."
+    "**A.** → True\n\nUnfold the outer modulus before resolving the inner one.\n\n$$\\bigl||x|-3\\bigr|<1\\iff -1<|x|-3<1$$\n\n$$2<|x|<4$$\n\n$$x\\in(-4,-2)\\cup(2,4)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
+    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be jogging minutes.\n\n$$900+8m\\ge 2500$$\n\n$$m\\ge 200$$\n\nAt $m=180$: total 2340 < 2500.\n\nNeed 200 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\nThe repeated pole at $x=1$ does not change sign; the remaining linear factors control the chart.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+3}{x-4}\\ge0$$\n\n$$x\\in(-\\infty,-3]\\cup(4,\\infty)$$\n\nThe repeated pole lies in a rejected interval, while $x=4$ is always excluded. Therefore the statement is True.",
+    "**D.** → True\n\nThe two simple roots bound the nonpositive region.\n\n$$x=-3,\\qquad x=\\frac12$$\n\n$$(2x-1)(x+3)\\le0\\iff -3\\le x\\le\\frac12$$\n\nNon-strictness includes both roots. Therefore the statement is True.",
+    "**E.** → True\n\nUnfold the absolute value into a double inequality in $x^2$.\n\n$$-3\\le x^2-4\\le3$$\n\n$$1\\le x^2\\le7$$\n\n$$1\\le|x|\\le\\sqrt7$$\n\n$$x\\in[-\\sqrt7,-1]\\cup[1,\\sqrt7]$$\n\nAll four boundaries are included. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 107,
-   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. A tests maximum of two quadratic constraints; B tests piecewise overtime budget; C tests interlaced rational sign chart; D tests constrained rectangular area; E tests maximum of two quadratic constraints. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests nested absolute-value band; B tests a contextual inequality with all practical constraints; C tests rational inequality with a repeated pole; D tests unequal linear factors; E tests absolute value of a quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-108",
    "case_id": "MATH 6.108",
-   "title": "Hard mixed exam: 20",
+   "title": "Exam-style tasks — 20",
    "subsection": "6.5",
-   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained multi-step problem.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "An event technician receives a €240 call-out fee, €30 per hour for the first $9$ hours, and €45 per hour thereafter. The organizer has €847 and requires at least $11$ hours on site. The greatest whole number of hours the technician can work without exceeding the budget is $16$.",
-    "The solution set of $\\dfrac{(x-5)(x-9)}{(x-7)(x-11)}\\le0$ is $[5,7)\\cup[9,11)$.",
-    "A rectangular panel has side lengths $x$ and $26-x$ metres. Both sides must be at least $9$ m and the area must be at least $153\\text{ m}^2$. These requirements hold exactly when $9<x<17$.",
-    "The condition $\\max\\{(x-5)^2-81,\\ 36-(x-5)^2\\}\\le0$ is equivalent to $[-4,-1]\\cup[11,14]$.",
-    "An event technician receives a €260 call-out fee, €32 per hour for the first $10$ hours, and €48 per hour thereafter. The organizer has €988 and requires at least $12$ hours on site. The greatest whole number of hours the technician can work without exceeding the budget is $19$."
+    "Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR.",
+    "The inequality $\\dfrac{x^3-x}{x^2-1}\\ge0$ has solution set $[0,1)\\cup(1,\\infty)$.",
+    "The inequality $x^2+6x+8\\ge0$ has solution set $(-\\infty,-4]\\cup[-2,\\infty)$.",
+    "The inequality $|x+2|\\le x+4$ has solution set $[-3,\\infty)$.",
+    "A 180 km train trip must finish in at most 2.5 hours. Any constant average speed of at least 70 km/h is fast enough."
    ],
    "answer_key": [
     true,
     true,
-    false,
+    true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe minimum service already enters the overtime tier, so the upper bound must use the piecewise overtime formula.\n\nCost at the tier boundary:\n\n$$C(9)=240+30\\cdot 9$$\n\nUse the overtime branch:\n\n$$C(h)=240+30\\cdot 9+45(h-9)$$\n\nImpose the budget:\n\n$$510+45(h-9)\\le 847$$\n\nSolve and floor:\n\n$$h\\le 9+\\frac{337}{45}<17$$\n\nCheck the service minimum:\n\n$$16\\ge 11$$\n\nThe printed whole-hour value is feasible and the next hour exceeds the budget, so the statement is True.",
-    "**B.** → True\n\nFour interlaced simple critical points force a sign change at every zero and pole. Endpoint type depends on whether the factor is upstairs or downstairs.\n\nOrder the critical points:\n\n$$5<7<9<11$$\n\nRead alternating signs:\n\n$$+,\\ -,\\ +,\\ -,\\ +$$\n\nSelect nonpositive intervals:\n\n$$[5,7)\\cup[9,11)$$\n\nCheck endpoint roles:\n\n$$5,9\\ \\text{are zeros};\\quad 7,11\\ \\text{are poles}$$\n\nZeros are included and poles are excluded exactly as printed, so the statement is True.",
-    "**C.** → False\n\nThe physical side constraints and the quadratic area constraint must be intersected. Here they meet at the same two boundary values.\n\nTranslate minimum side lengths:\n\n$$x\\ge 9,\\qquad 26-x\\ge 9$$\n\nSolve the physical band:\n\n$$9\\le x\\le 17$$\n\nTranslate the area threshold:\n\n$$x(26-x)\\ge 153$$\n\nFactor the quadratic:\n\n$$(x-9)(x-17)\\le0$$\n\nIntersect both conditions:\n\n$$9\\le x\\le 17$$\n\nThe requirements use non-strict inequalities, so both endpoint panels are valid and the open interval is False.",
-    "**D.** → True\n\nA maximum is nonpositive only when both entries are nonpositive. Their intersection creates a band in the magnitude of the shifted variable.\n\nRequire the first entry:\n\n$$(x-5)^2-81\\le0\\iff |x-5|\\le 9$$\n\nRequire the second entry:\n\n$$36-(x-5)^2\\le0\\iff |x-5|\\ge 6$$\n\nIntersect the magnitude conditions:\n\n$$6\\le|x-5|\\le 9$$\n\nUnfold both sides:\n\n$$[-4,-1]\\cup[11,14]$$\n\nBoth closed magnitude branches appear in the proposed union, so the statement is True.",
-    "**E.** → False\n\nThe minimum service already enters the overtime tier, so the upper bound must use the piecewise overtime formula.\n\nCost at the tier boundary:\n\n$$C(10)=260+32\\cdot 10$$\n\nUse the overtime branch:\n\n$$C(h)=260+32\\cdot 10+48(h-10)$$\n\nImpose the budget:\n\n$$580+48(h-10)\\le 988$$\n\nSolve and floor:\n\n$$h\\le 10+\\frac{408}{48}<19$$\n\nCheck the service minimum:\n\n$$18\\ge 12$$\n\nThe extra hour costs another €48 and exceeds the available budget; the maximum is $18$, so the statement is False."
+    "**A.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $F$ be meter fare.\n\n$$\\dfrac{F+4}{4}\\le 9$$\n\n$$F\\le 32$$\n\nEquivalent inequality.\n\nImplication holds.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**B.** → True\n\nCancel the common quadratic factor but retain both original holes.\n\n$$x\\ne\\pm1,\\qquad \\frac{x(x-1)(x+1)}{(x-1)(x+1)}=x$$\n\n$$x\\ge0$$\n\n$$x\\in[0,1)\\cup(1,\\infty)$$\n\nThe negative hole is outside the half-line; the positive hole splits it. Therefore the statement is True.",
+    "**C.** → True\n\nFactor the upward-opening quadratic and keep the outer regions.\n\n$$x^2+6x+8=(x+4)(x+2)$$\n\n$$(x+4)(x+2)\\ge0$$\n\n$$x\\le-4\\quad\\text{or}\\quad x\\ge-2$$\n\nBoth roots are included. Therefore the statement is True.",
+    "**D.** → True\n\nThe right side must be nonnegative before the two sides may be squared.\n\n$$x+4\\ge0$$\n\n$$(x+2)^2\\le(x+4)^2$$\n\n$$4x+12\\ge0$$\n\n$$x\\ge-3$$\n\nThis final half-line automatically satisfies the sign requirement. Therefore the statement is True.",
+    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $v>0$ be km/h.\n\n$$\\dfrac{180}{v}\\le 2.5$$\n\n$$v\\ge 72$$\n\nAt $v=70$, time ≈ $2.57 h > 2.5$.\n\nNeed at least 72 km/h.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 108,
-   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. A tests piecewise overtime budget; B tests interlaced rational sign chart; C tests constrained rectangular area; D tests maximum of two quadratic constraints; E tests piecewise overtime budget. Each letter is independent; no value or conclusion carries into another statement.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests two removable holes after cubic cancellation; C tests nonnegative quadratic outside two negative roots; D tests modulus bounded by an affine function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   }
  ]
