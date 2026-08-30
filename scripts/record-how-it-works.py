@@ -277,6 +277,21 @@ async def record_with_screencast(subject, flows, browser):
         f"try{{localStorage.setItem({json.dumps(SUPA_KEY)}, {json.dumps(json.dumps(FAKE_SESSION))});"
         f"sessionStorage.setItem('bbe-intro-seen','1');localStorage.setItem('bbe-intro-seen','1');}}catch(e){{}}"
     )
+    ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtudHBzZGdnZ29sa3FueXd4ZWRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM1ODkzNjIsImV4cCI6MjA5OTE2NTM2Mn0.awDJV4ZL742sHzjBVHn_PnKVX6cdP81ipkns0xVPYKw'
+
+    async def _use_anon_key(route):
+        headers = {
+            **route.request.headers,
+            "authorization": f"Bearer {ANON_KEY}",
+            "apikey": ANON_KEY,
+        }
+        await route.continue_(headers=headers)
+
+    # The demo session is synthetic: let data reads fall back to the public key.
+    await ctx.route("**/*.supabase.co/rest/v1/**", _use_anon_key)
+    await ctx.route("**/*.supabase.co/auth/v1/**", lambda r: r.abort())
+    await ctx.route("**/_serverFn/**", lambda r: r.abort())
+
     page = await ctx.new_page()
     page.set_default_timeout(45000)
     await prep_fn(page)
