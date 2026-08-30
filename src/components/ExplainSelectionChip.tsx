@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { Sparkles } from "lucide-react";
 import { usePracticeCaseActions } from "@/lib/practice-case-context";
 
 type ChipState = {
@@ -75,7 +74,7 @@ export function ExplainSelectionChip() {
       type="button"
       data-explain-chip
       style={{ left: chip.x, top: chip.y, transform: "translate(-50%, -100%)" }}
-      className="fixed z-[60] inline-flex items-center gap-1.5 rounded-full border border-border bg-foreground px-3 py-1.5 text-xs font-semibold text-background shadow-lg transition-opacity hover:opacity-90"
+      className="fixed z-[60] inline-flex items-center justify-center rounded-full border border-border bg-foreground px-3 py-1.5 text-xs font-semibold text-background shadow-lg transition-opacity hover:opacity-90"
       onMouseDown={(e) => {
         // Keep selection until we read it in onClick.
         e.preventDefault();
@@ -86,7 +85,6 @@ export function ExplainSelectionChip() {
         window.getSelection()?.removeAllRanges();
       }}
     >
-      <Sparkles className="h-3.5 w-3.5" />
       Explain
     </button>
   );
