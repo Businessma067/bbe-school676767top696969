@@ -6,6 +6,7 @@ import {
   trackEventLocal,
   trackPresenceLocal,
 } from "@/lib/admin-track.functions";
+import { supabase } from "@/integrations/supabase/client";
 
 export type ActivityEventType =
   | "page_view"
@@ -29,9 +30,25 @@ function fire(promise: Promise<unknown>): void {
   void promise.catch((err) => console.error("[activity-tracker]", err));
 }
 
+/** Server tracking fns require auth; skip them entirely for signed-out visitors. */
+async function isSignedIn(): Promise<boolean> {
+  if (typeof window === "undefined") return false;
+  try {
+    const { data } = await supabase.auth.getSession();
+    return Boolean(data.session);
+  } catch {
+    return false;
+  }
+}
+
+async function fireIfSignedIn(run: () => Promise<unknown>): Promise<void> {
+  if (!(await isSignedIn())) return;
+  fire(run());
+}
+
 export async function trackPresence(path: string): Promise<void> {
   if (typeof window === "undefined") return;
-  fire(
+  await fireIfSignedIn(() =>
     trackPresenceLocal({
       data: { path, userAgent: navigator.userAgent.slice(0, 500) },
     }),
@@ -46,7 +63,7 @@ export async function trackEvent(input: {
   metadata?: Record<string, unknown>;
   durationMs?: number;
 }): Promise<void> {
-  fire(trackEventLocal({ data: input }));
+  await fireIfSignedIn(() => trackEventLocal({ data: input }));
 }
 
 export async function trackPageView(path: string): Promise<void> {
@@ -64,7 +81,7 @@ export async function upsertFlashcardProgress(
   cardId: string,
   knowledge: "known" | "unknown",
 ): Promise<void> {
-  fire(mirrorFlashcardLocal({ data: { subjectId, cardId, knowledge } }));
+  await fireIfSignedIn(() => mirrorFlashcardLocal({ data: { subjectId, cardId, knowledge } }));
   void trackEvent({
     eventType: "flashcard_rate",
     subject: subjectId,
@@ -82,7 +99,7 @@ export async function upsertTheoryProgress(input: {
   scrollPct: number;
   completed?: boolean;
 }): Promise<void> {
-  fire(mirrorTheoryLocal({ data: input }));
+  await fireIfSignedIn(() => mirrorTheoryLocal({ data: input }));
 }
 
 export function startActivityHeartbeat(getPath: () => string): () => void {
@@ -105,6 +122,7 @@ export function startActivityHeartbeat(getPath: () => string): () => void {
 
 export async function runOnceOnLogin(userId?: string): Promise<void> {
   if (typeof window === "undefined") return;
+  if (!(await isSignedIn())) return;
 
   const key = `bbe.activity.sync.v2:${userId ?? "anon"}`;
   if (syncDone && sessionStorage.getItem(key)) return;
@@ -131,7 +149,7 @@ export async function mirrorTaskAttempt(input: {
   statementResults?: { statement_index: number; correct: boolean }[] | null;
   source?: string;
 }): Promise<void> {
-  fire(
+  await fireIfSignedIn(() =>
     mirrorTaskAttemptLocal({
       data: {
         ...input,
