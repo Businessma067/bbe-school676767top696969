@@ -201,8 +201,8 @@ async def demo_math(page):
         await maybe(page, page.locator("button").filter(has_text="Close").first, 700)
 
     await answer_statements(page, [0, 1, 3])
-    await show_explanation(page, scrolls=(340, 320, 300, 300))
-    await page.wait_for_timeout(1400)
+    await show_explanation(page, scrolls=(320, 320, 320, 320, 320))
+    await page.wait_for_timeout(1800)
 
 
 async def prep_economics(page):
@@ -244,8 +244,8 @@ async def demo_english(page):
 
     await smooth_scroll(page, 220, 950)
     await answer_statements(page, [0, 2, 4])
-    await show_explanation(page, scrolls=(340, 320, 300, 300))
-    await page.wait_for_timeout(1400)
+    await show_explanation(page, scrolls=(320, 320, 320, 320, 320))
+    await page.wait_for_timeout(1800)
 
 
 FLOWS = {
