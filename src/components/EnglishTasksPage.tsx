@@ -270,9 +270,16 @@ export function EnglishTasksPage({ tier }: Props) {
       ? "Fix what tripped you up"
       : chapters.find((c) => c.key === activeChapter)?.title;
 
+  const textsWorkspace = isTextsCase && !!activeCase && !isLocked(tier, activeIdx);
+
   return (
     <PracticeCalcProvider>
-      <div className={PRACTICE_PAGE}>
+      <div
+        className={cn(
+          PRACTICE_PAGE,
+          textsWorkspace && "lg:flex lg:h-dvh lg:flex-col lg:overflow-hidden",
+        )}
+      >
         <SiteHeader maxWidthClassName="max-w-none" compact />
 
         <div
@@ -280,6 +287,7 @@ export function EnglishTasksPage({ tier }: Props) {
             PRACTICE_BODY_STACK,
             "lg:flex lg:items-start lg:transition-[gap] lg:duration-300 lg:[transition-timing-function:cubic-bezier(0.22,1,0.36,1)]",
             sidebarCollapsed ? "lg:gap-0" : "lg:gap-6",
+            textsWorkspace && "lg:min-h-0 lg:flex-1 lg:items-stretch lg:overflow-hidden lg:py-3",
           )}
         >
           <aside
@@ -610,8 +618,11 @@ export function EnglishTasksPage({ tier }: Props) {
               </div>
             </aside>
 
-          <main className="min-w-0 flex-1" data-practice-surface>
-            {sidebarCollapsed && (
+          <main
+            className={cn("min-w-0 flex-1", textsWorkspace && "lg:flex lg:min-h-0 lg:flex-col")}
+            data-practice-surface
+          >
+            {sidebarCollapsed && !textsWorkspace && (
               <button
                 type="button"
                 onClick={() => setSidebarCollapsed(false)}
@@ -635,16 +646,44 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
 
             {activeChapter !== null && (
-              <div className="mb-5 flex flex-wrap items-start justify-between gap-3">
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
-                    {activeChapter === "revision"
-                      ? "Revision folder"
-                      : `Chapter ${chapters.find((c) => c.key === activeChapter)?.num}`}
-                  </span>
-                  <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                    {chapterTitle}
-                  </h1>
+              <div
+                className={cn(
+                  "flex flex-wrap items-center justify-between gap-2",
+                  textsWorkspace ? "mb-2 shrink-0" : "mb-5 items-start gap-3",
+                )}
+              >
+                <div className="flex min-w-0 flex-wrap items-center gap-2 sm:gap-3">
+                  {sidebarCollapsed && textsWorkspace && (
+                    <button
+                      type="button"
+                      onClick={() => setSidebarCollapsed(false)}
+                      className="hidden items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-1.5 text-[11px] font-semibold text-foreground hover:bg-secondary lg:inline-flex"
+                    >
+                      <PanelLeftOpen className="h-3.5 w-3.5" /> Chapters
+                    </button>
+                  )}
+                  <div className="min-w-0">
+                    <span
+                      className={cn(
+                        "font-bold uppercase tracking-widest text-taupe",
+                        textsWorkspace ? "text-[9px]" : "text-[10px]",
+                      )}
+                    >
+                      {activeChapter === "revision"
+                        ? "Revision folder"
+                        : `Chapter ${chapters.find((c) => c.key === activeChapter)?.num}`}
+                    </span>
+                    <h1
+                      className={cn(
+                        "font-display font-bold tracking-tight",
+                        textsWorkspace
+                          ? "text-lg leading-tight sm:text-xl"
+                          : "text-2xl sm:text-3xl",
+                      )}
+                    >
+                      {chapterTitle}
+                    </h1>
+                  </div>
                 </div>
               </div>
             )}
@@ -658,7 +697,10 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
 
             {activeCase && !isLocked(tier, activeIdx) && (
-              <TimedModeBar session={timed} />
+              <TimedModeBar
+                session={timed}
+                className={textsWorkspace ? "mb-2 shrink-0 p-2" : undefined}
+              />
             )}
 
             {activeCase && isLocked(tier, activeIdx) ? (
@@ -679,17 +721,99 @@ export function EnglishTasksPage({ tier }: Props) {
                   <ChevronLeft className="h-4 w-4" /> Back to Task {freeLimitOf(tier)}
                 </button>
               </div>
-            ) : isTextsCase && activeCase ? (
+            ) : textsWorkspace && activeCase ? (
               <div
                 key={activeCase.id}
-                className="practice-fade-in lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)]"
+                className="practice-fade-in flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:gap-6"
               >
-                <ReadingPanel
-                  passage={activePassage}
-                  storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
-                  explanation={explanation}
-                  onClose={() => setExplanation(null)}
-                />
+                <div className="min-h-[20rem] min-w-0 flex-1 lg:min-h-0">
+                  <ReadingPanel
+                    passage={activePassage}
+                    storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
+                    explanation={explanation}
+                    onClose={() => setExplanation(null)}
+                  />
+                </div>
+                <div className="flex min-h-0 w-full flex-col lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]">
+                  <div className="practice-scroll flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain pr-1">
+                    <CaseCard
+                      key={activeCase.id}
+                      data={activeCase}
+                      index={activeIdx}
+                      inRevision={progress.revision.includes(activeCase.id)}
+                      alreadyPassed={progress.passed.includes(activeCase.id)}
+                      isTexts
+                      explanationsOpen={showExplanations}
+                      onShowExplanations={() => setShowExplanations(true)}
+                      onToggleExplanations={() => setShowExplanations((v) => !v)}
+                      activeExplanationIndex={
+                        explanation?.caseId === activeCase.id
+                          ? explanation.statementIndex
+                          : null
+                      }
+                      onRequestExplanation={(i) => requestExplanation(activeCase, i)}
+                      requireAuth={requireAuthForAnswers}
+                      reviewOnly={!!activeTimer?.reviewOnly}
+                      timerNote={
+                        activeTimer?.timedOut && activeTimer.status !== "submitted"
+                          ? "Failed on time"
+                          : null
+                      }
+                      onGraded={(ok, correctCount) => {
+                        recordResult(activeCase.id, ok);
+                        if (timed.enabled) timed.markSubmitted(activeCase.id);
+                        const chLabel =
+                          activeChapter && activeChapter !== "revision"
+                            ? chapters.find((c) => c.key === activeChapter)?.title ??
+                              activeChapter
+                            : "Revision";
+                        void recordTaskAttempt({
+                          subject: "english",
+                          chapter: chLabel,
+                          taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
+                          taskTitle: activeCase.title,
+                          correctCount,
+                          statementCount:
+                            activeCase.answer_key.length || activeCase.statements.length,
+                        });
+                      }}
+                      onResetProgress={() => resetCaseIds([activeCase.id])}
+                    />
+                    <div className="flex shrink-0 items-center justify-between pb-1">
+                      <button
+                        type="button"
+                        onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
+                        disabled={activeIdx === 0}
+                        className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
+                      >
+                        <ChevronLeft className="h-4 w-4" /> Prev
+                      </button>
+                      <span className="text-xs text-muted-foreground">
+                        {activeIdx + 1} / {activeList.length}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))
+                        }
+                        disabled={
+                          activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1)
+                        }
+                        className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
+                      >
+                        {isLocked(tier, activeIdx + 1) ? (
+                          <>
+                            <Lock className="h-3.5 w-3.5" /> Locked
+                          </>
+                        ) : (
+                          <>
+                            Next <ChevronRight className="h-4 w-4" />
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : activeCase ? (
               <CaseCard
@@ -763,85 +887,7 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
           </main>
 
-          {isTextsCase && activeCase && !isLocked(tier, activeIdx) ? (
-            <PracticeRightSlot
-              className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]"
-            >
-              <div className="practice-scroll flex h-full flex-col gap-4 overflow-y-auto overscroll-contain pr-1">
-                <CaseCard
-                  key={activeCase.id}
-                  data={activeCase}
-                  index={activeIdx}
-                  inRevision={progress.revision.includes(activeCase.id)}
-                  alreadyPassed={progress.passed.includes(activeCase.id)}
-                  isTexts
-                  explanationsOpen={showExplanations}
-                  onShowExplanations={() => setShowExplanations(true)}
-                  onToggleExplanations={() => setShowExplanations((v) => !v)}
-                  activeExplanationIndex={
-                    explanation?.caseId === activeCase.id ? explanation.statementIndex : null
-                  }
-                  onRequestExplanation={(i) => requestExplanation(activeCase, i)}
-                  requireAuth={requireAuthForAnswers}
-                  reviewOnly={!!activeTimer?.reviewOnly}
-                  timerNote={
-                    activeTimer?.timedOut && activeTimer.status !== "submitted"
-                      ? "Failed on time"
-                      : null
-                  }
-                  onGraded={(ok, correctCount) => {
-                    recordResult(activeCase.id, ok);
-                    if (timed.enabled) timed.markSubmitted(activeCase.id);
-                    const chLabel =
-                      activeChapter && activeChapter !== "revision"
-                        ? chapters.find((c) => c.key === activeChapter)?.title ?? activeChapter
-                        : "Revision";
-                    void recordTaskAttempt({
-                      subject: "english",
-                      chapter: chLabel,
-                      taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
-                      taskTitle: activeCase.title,
-                      correctCount,
-                      statementCount:
-                        activeCase.answer_key.length || activeCase.statements.length,
-                    });
-                  }}
-                  onResetProgress={() => resetCaseIds([activeCase.id])}
-                />
-                <div className="flex items-center justify-between pb-2">
-                  <button
-                    type="button"
-                    onClick={() => setActiveIdx((i) => Math.max(0, i - 1))}
-                    disabled={activeIdx === 0}
-                    className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
-                  >
-                    <ChevronLeft className="h-4 w-4" /> Prev
-                  </button>
-                  <span className="text-xs text-muted-foreground">
-                    {activeIdx + 1} / {activeList.length}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => setActiveIdx((i) => Math.min(activeList.length - 1, i + 1))}
-                    disabled={
-                      activeIdx >= activeList.length - 1 || isLocked(tier, activeIdx + 1)
-                    }
-                    className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-3 py-2 text-xs font-semibold text-foreground transition disabled:opacity-40"
-                  >
-                    {isLocked(tier, activeIdx + 1) ? (
-                      <>
-                        <Lock className="h-3.5 w-3.5" /> Locked
-                      </>
-                    ) : (
-                      <>
-                        Next <ChevronRight className="h-4 w-4" />
-                      </>
-                    )}
-                  </button>
-                </div>
-              </div>
-            </PracticeRightSlot>
-          ) : (
+          {!textsWorkspace && (
             <EnglishPracticeAside
               showExplanations={
                 showExplanations && !!activeCase && !isLocked(tier, activeIdx)
@@ -1456,43 +1502,41 @@ function ReadingPanel({
   }
 
   return (
-    <div ref={panelRef} className="flex h-full flex-col gap-3">
-      <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
-        <span className={practicePanelSectionLabelClass}>
-          {explanation
-            ? `Passage locator · Statement ${explanation.statementIndex + 1}`
-            : "Reading Passage"}
-        </span>
-        {explanation && (
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label="Clear passage locator"
-            className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
-          >
-            <X className="h-4 w-4" />
-          </button>
-        )}
-      </div>
-
+    <div ref={panelRef} className="flex h-full flex-col gap-2">
       {explanation && (
-        <div className="rounded-2xl border border-border bg-card p-3 shadow-sm">
-          <div className="mb-1.5 flex items-center gap-2">
-            <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-              Statement {explanation.statementIndex + 1}
+        <>
+          <div className="flex shrink-0 items-center justify-between rounded-xl border border-primary/30 bg-primary/5 px-3 py-1.5">
+            <span className={practicePanelSectionLabelClass}>
+              Passage locator · Statement {explanation.statementIndex + 1}
             </span>
-            <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
-              {explanation.correctAnswer ? "TRUE" : "FALSE"}
-            </span>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Clear passage locator"
+              className="rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground"
+            >
+              <X className="h-4 w-4" />
+            </button>
           </div>
-          <p className="text-[11px] italic text-muted-foreground">
-            &ldquo;{explanation.statementText}&rdquo;
-          </p>
-        </div>
+
+          <div className="shrink-0 rounded-xl border border-border bg-card p-2.5 shadow-sm">
+            <div className="mb-1 flex items-center gap-2">
+              <span className="rounded-md bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+                Statement {explanation.statementIndex + 1}
+              </span>
+              <span className="rounded-md border border-border bg-secondary px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-foreground">
+                {explanation.correctAnswer ? "TRUE" : "FALSE"}
+              </span>
+            </div>
+            <p className="text-[11px] italic text-muted-foreground">
+              &ldquo;{explanation.statementText}&rdquo;
+            </p>
+          </div>
+        </>
       )}
 
       <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
-        <div className="flex shrink-0 items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
+        <div className="flex shrink-0 items-center justify-between border-b border-border/60 bg-white/60 px-4 py-1.5">
           <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
             Reading Text
           </span>

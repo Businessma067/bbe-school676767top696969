@@ -19,16 +19,18 @@ const LEVELS: TimedDifficulty[] = ["easy", "standard", "hard"];
 export function TimedModeBar({
   session,
   showCalculator = false,
+  className,
 }: {
   session: TimedSession;
   /** Math practice can show the TI-30; English/Economics omit it. */
   showCalculator?: boolean;
+  className?: string;
 }) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const entry = session.get(session.activeId);
 
   return (
-    <div className="mb-5 rounded-2xl border border-border bg-card p-3 shadow-sm">
+    <div className={cn("mb-5 rounded-2xl border border-border bg-card p-3 shadow-sm", className)}>
       <div className="flex flex-wrap items-center gap-2">
         <button
           type="button"
