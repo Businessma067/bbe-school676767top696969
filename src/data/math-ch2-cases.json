@@ -3287,7 +3287,7 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nOn the half-line where $x<0$, the bars flip the sign: $|x|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**A.** → True\n\nBy definition, absolute value is a distance from zero, and a distance cannot be negative.\n\nDefinition:\n\n$$|x|=\\begin{cases}x,&x\\ge0,\\\\-x,&x<0,\\end{cases}$$\n\nSign conclusion:\n\n$$|x|\\ge0$$\n\nThis is exactly the claimed inequality, so the statement is True.",
     "**B.** → True\n\nOn the stated half-line the inside $-t$ has fixed sign:\n\nRewrite:\n\n$$|-t|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
     "**C.** → True\n\nOn the half-line where $a<0$, the bars flip the sign:\n\n$$|a|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → False\n\nOn the half-line where $x<0$, the bars flip the sign:\n\n$$|x|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False.",
@@ -3321,7 +3321,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the stated half-line the inside $ab$ has fixed sign:\n\nRewrite:\n\n$$|ab|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nOn the stated half-line the inside $2x$ has fixed sign:\n\nRewrite:\n\n$$|2x|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → True\n\nOn the half-line where $pq<0$, the bars flip the sign: $|pq|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**C.** → True\n\nUse multiplicativity of absolute value; it can also be checked by squaring the nonnegative sides.\n\nSquare both sides:\n\n$$|pq|^2=p^2q^2=|p|^2|q|^2$$\n\nTake nonnegative square roots:\n\n$$|pq|=|p|\\,|q|$$\n\nThe identity holds for every real pair, so the statement is True.",
     "**D.** → False\n\nThe negative of a product splits into signs on each factor:\n\n$$|-3t| = |-3|\\,|t|$$\n\n$$= 3|t|$$\n\nThis equals $3t$ only when $t\\ge 0$. At $t=-1$ the left side is $3$ while the right side is $-3$, so the universal claim fails.\n\nSo the statement is False.",
     "**E.** → True\n\nOn the half-line where $m^2<0$, the bars flip the sign:\n\n$$|m^2|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is True."
    ],
@@ -3351,11 +3351,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nOn the half-line where $t<0$, the bars flip the sign: $|t|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
-    "**C.** → True\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is False.",
-    "**E.** → True\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is True."
+    "**A.** → True\n\nOn $1\\le x\\le5$, both expressions inside the bars have known nonnegative signs.\n\nOpen the bars:\n\n$$|x-1|=x-1,\\qquad |5-x|=5-x$$\n\nAdd:\n\n$$|x-1|+|5-x|=(x-1)+(5-x)=4$$\n\nThe sum equals the claimed segment length, so the statement is True.",
+    "**B.** → True\n\nOn $0\\le t\\le7$, both distances can be written without sign ambiguity.\n\nOpen the bars:\n\n$$|t|=t,\\qquad |7-t|=7-t$$\n\nAdd:\n\n$$|t|+|7-t|=t+(7-t)=7$$\n\nThe variable cancels and leaves the claimed constant, so the statement is True.",
+    "**C.** → True\n\nBetween the endpoints $2$ and $8$, both distances have fixed signs.\n\nOpen the bars:\n\n$$|k-2|=k-2,\\qquad |8-k|=8-k$$\n\nAdd:\n\n$$|k-2|+|8-k|=6$$\n\nThe sum is the claimed distance between the endpoints, so the statement is True.",
+    "**D.** → False\n\nOpen the absolute values using the stated interval.\n\nRewrite:\n\n$$|x-1|+|5-x|=(x-1)+(5-x)$$\n\nSimplify:\n\n$$=4\\ne5$$\n\nThe interval gives $4$, not the claimed $5$, so the statement is False.",
+    "**E.** → True\n\nFor $3\\le p\\le9$, the point lies between the two endpoints.\n\nOpen the bars:\n\n$$|p-3|=p-3,\\qquad |9-p|=9-p$$\n\nAdd:\n\n$$|p-3|+|9-p|=6$$\n\nThe two distances add to the claimed endpoint gap, so the statement is True."
    ],
    "solution_overview": "Five segment-length identities written with an explicit variable on the interval.",
    "sort_order": 105,
@@ -3384,9 +3384,9 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nOn the stated half-line the inside $x^2-4$ has fixed sign:\n\nRewrite:\n\n$$|x^2-4|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nOn the half-line where $t^2-9<0$, the bars flip the sign: $|t^2-9|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**B.** → True\n\nFactor first, then apply $|ab|=|a||b|$.\n\nFactor:\n\n$$t^2-9=(t-3)(t+3)$$\n\nTake absolute values:\n\n$$|t^2-9|=|(t-3)(t+3)|=|t-3|\\,|t+3|$$\n\nThe factorisation gives exactly the claim, so the statement is True.",
     "**C.** → True\n\nA difference of squares is not a square of a difference:\n\n$$x^2-2=(x-1.4142135623730951)(x+1.4142135623730951)$$\n\n$$(x-1.4142135623730951)^2=x^2-2.8284271247461903x+1.4142135623730951^2$$\n\nAt the test point $x=0$ the two polynomials already disagree, so the statement is True.",
-    "**D.** → False\n\nDropping the bars requires $x^2-4\\ge 0$; one negative test point refutes a claimed identity.\n\nThe claim’s comparison is incorrect, so the statement is False.",
+    "**D.** → False\n\nFactoring is valid, but dropping the absolute values is not valid when the product is negative.\n\nCorrect factor form:\n\n$$|x^2-4|=|(x-2)(x+2)|$$\n\nCounterexample:\n\n$$x=0\\implies |x^2-4|=4,\\quad (x-2)(x+2)=-4$$\n\nThe unbarred product can have the wrong sign, so the statement is False.",
     "**E.** → True\n\nAn equation $|2x-5|=7$ splits into two linear cases:\n\n$$2x-5=7\\quad\\text{or}\\quad 2x-5=-7$$\n\n$$x=6\\quad\\text{or}\\quad x=-1$$\n\nBoth branches are needed and both give valid solutions, matching the printed pair exactly.\n\nSo the statement is True."
    ],
    "solution_overview": "Five factorisations under absolute value, including one missing bars on the right.",
@@ -3415,11 +3415,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSplitting into cases, $2x-5=7$ gives $x=6$, but $2x-5=-7$ also gives a valid solution, $x=-1$, since $|2(-1)-5|=|-7|=7$. The printed claim drops this second branch, so it misses a genuine solution.\n\nSo the statement is False.",
-    "**B.** → False\n\nDropping the bars requires $2u+1\\ge 0$; one negative test point refutes a claimed identity.\n\nMatching these figures to the claim, the statement is False.",
+    "**A.** → False\n\nAn absolute-value equation splits into positive and negative branches.\n\nSplit:\n\n$$|2x-5|=7\\iff 2x-5=7\\ \\text{or}\\ 2x-5=-7$$\n\nSolve:\n\n$$x=6\\ \\text{or}\\ x=-1$$\n\nThe claim lists only one of the two solutions, so the statement is False.",
+    "**B.** → False\n\nThe identity $|v|=v$ is valid only when $v\\ge0$.\n\nChoose a negative inside value:\n\n$$u=-1\\implies 2u+1=-1$$\n\nCompare:\n\n$$|2u+1|=1\\ne-1=2u+1$$\n\nDropping the bars fails on a real input, so the statement is False.",
     "**C.** → True\n\nAn inequality of the form $|x-3|<5$ says $x$ is within distance $5$ of $3$, which unfolds into a double inequality:\n\n$$-5<x-3<5$$\n\n$$-2<x<8$$\n\nAdding $3$ across all three parts gives exactly the printed interval, and every step is reversible, so the biconditional holds.\n\nSo the statement is True.",
     "**D.** → True\n\nThe claim is about distances on the segment $[1,7]$. On that closed interval each absolute value opens without a minus sign.\n\nRemove the bars inside the segment:\n\n$$|x-1|+|x-7|=(x-1)+(7-x)=6$$\n\nThe $x$ terms cancel, leaving the constant segment length $6$.\n\nThe sum equals the length $6$ throughout $[1,7]$, so the statement is True.",
-    "**E.** → True\n\nBetween the marks the two distances add to the length of the segment: $|k-1|+|k-6|=6-1=5$.\n\nSo the statement is True."
+    "**E.** → True\n\nBetween $1$ and $6$, the two absolute values are distances to the endpoints.\n\nOpen the bars:\n\n$$|k-1|=k-1,\\qquad |k-6|=6-k$$\n\nAdd:\n\n$$|k-1|+|k-6|=5$$\n\nThe sum is the constant endpoint distance, so the statement is True."
    ],
    "solution_overview": "Five independent rewritings: a flipped linear piece plus the letter, an illegal drop of bars, a principal root on $z>0$, a piecewise $\\pm 1$ quotient, and a constant sum of distances.",
    "sort_order": 107,
@@ -3447,10 +3447,10 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe principal square root is the unique nonnegative number whose square is $n^2$: $\\sqrt{n^2}=|n|$.\n\nSo the statement is True.",
+    "**A.** → True\n\nThe principal square root is nonnegative, so squaring and then rooting returns magnitude.\n\nPrincipal-root rule:\n\n$$\\sqrt{n^2}=|n|$$\n\nSign check:\n\n$$|n|\\ge0$$\n\nThe recorded identity is correct on the whole real line, so the statement is True.",
     "**B.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $5$ before accepting a constant equal to the segment length.\n\nFor $x>5$:\n\n$$|x-0|+|x-5| = (x-0)+(x-5)$$\n\n$$= 2x-(0+5)$$\n\nThe result still depends on $x$, not on the fixed length $5$ alone.\n\nA point outside $[0,5]$ already disproves the universal constant claim, so the statement is False.",
     "**C.** → False\n\nThe principal square root is the unique nonnegative number whose square is $n^2$:\n\n$$\\sqrt{n^2}=|n|$$\n\nMatching these figures to the claim, the statement is False.",
-    "**D.** → False\n\nUnfolding $|x-3|<5$ gives $-5<x-3<5$, and adding $3$ throughout gives $-2<x<8$, not $-8<x<2$. Taking $x=5$: $|5-3|=2<5$ is true, but $5$ does not lie in $(-8,2)$, so the printed interval is wrong.\n\nSo the statement is False.",
+    "**D.** → False\n\nSolve the absolute-value inequality by converting it to a double inequality.\n\nUnfold:\n\n$$|x-3|<5\\iff -5<x-3<5$$\n\nAdd $3$:\n\n$$-2<x<8$$\n\nThe correct interval is $(-2,8)$, not $(-8,2)$, so the statement is False.",
     "**E.** → False\n\nOn the half-line where $x+2<0$, the bars flip the sign:\n\n$$|x+2|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False."
    ],
    "solution_overview": "The identity is $\\sqrt{A^2}=|A|$, not $A$. Replacing the root by the inside needs a nonnegative inside; a negative substitute cannot be a principal root.",
@@ -3479,9 +3479,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nIf $n>0$ then $|n|=n$, hence $\\frac{|n|}{n}=1$.\n\nSo the statement is True.",
+    "**A.** → True\n\nOn the positive half-line, absolute value leaves the input unchanged.\n\nUse $n>0$:\n\n$$|n|=n$$\n\nDivide:\n\n$$\\frac{|n|}{n}=\\frac nn=1$$\n\nThe quotient is the claimed value, so the statement is True.",
     "**B.** → False\n\nThe polynomial factorisation $x^2-8x+7=(x-1)(x-7)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|x^2-8x+7|=|x-1|\\,|x-7|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $x=\\min(1,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False.",
-    "**C.** → False\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root.\n\nMatching these figures to the claim, the statement is False.",
+    "**C.** → False\n\nUse $|1-x|=|x-1|$ to simplify the sum.\n\nRewrite:\n\n$$|x-1|+|1-x|=2|x-1|$$\n\nTest the asserted universal failure:\n\n$$x=0\\implies 2|x-1|=2$$\n\nThe equation does hold at some real values, so it is not false for every $x$, so the statement is False.",
     "**D.** → True\n\nOn the half-line where $k<0$, the bars flip the sign:\n\n$$|k|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nComparing this value with the claim shows the statement is True.",
     "**E.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.\n\nFor $x>7$:\n\n$$|x-2|+|x-7|=(x-2)+(x-7)=2x-(2+7)$$\n\nThe result still depends on $x$, not on the fixed length $5$ alone.\n\nA point outside $[2,7]$ already disproves the universal constant claim, so the statement is False."
    ],
@@ -3514,7 +3514,7 @@
     "**A.** → True\n\nOn the half-line where $p^2-1<0$, the bars flip the sign:\n\n$$|p^2-1|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nOn the stated half-line the inside $n+k$ has fixed sign:\n\nRewrite:\n\n$$|n+k|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**C.** → False\n\nThe polynomial factorisation $x^2-7x+10=(x-2)(x-5)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|x^2-7x+10|=|x-2|\\,|x-5|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $x=\\min(2,5)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False.",
-    "**D.** → False\n\nOn the half-line where $-4u<0$, the bars flip the sign: $|-4u|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nAbsolute value is homogeneous with a nonnegative scale factor: $|cu|=|c||u|$.\n\nApply the rule:\n\n$$|-4u|=|-4|\\,|u|$$\n\nSimplify:\n\n$$=4|u|$$\n\nThe result cannot be the nonpositive expression $-4|u|$ in general, so the statement is False.",
     "**E.** → True\n\nOn the stated half-line the inside $x^2-7x+12$ has fixed sign:\n\nRewrite:\n\n$$|x^2-7x+12|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nSo the statement is True."
    ],
    "solution_overview": "A constant factor comes out as its absolute value. Adding a constant is a translation, and $|A|+|B|$ is not identically $|A+B|$.",
@@ -3546,7 +3546,7 @@
     "**A.** → True\n\nThe absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.\n\nFactor the trinomial:\n\n$$x^2-8x+7=(x-1)(x-7)$$\n\nThe roots $p$ and $q$ come from the printed middle term and constant.\n\nApply $|UV|=|U||V|$:\n\n$$|x^2-8x+7|=|x-1|\\,|x-7|$$\n\nEach linear factor keeps its own absolute value on the right.\n\nThe identity holds for every real $x$ once the bars are placed correctly, so the statement is True.",
     "**B.** → True\n\nA difference of squares is not a square of a difference:\n\n$$x^2-4=(x-2)(x+2),\\qquad (x-2)^2=x^2-4x+2^2$$\n\nAt the test point $x=0$ the two polynomials already disagree.\n\nMatching these figures to the claim, the statement is True.",
     "**C.** → True\n\nThe claim is about distances on the segment $[3,9]$. On that closed interval each absolute value opens without a minus sign.\n\nRemove the bars inside the segment:\n\n$$|x-3|+|x-9|=(x-3)+(9-x)=6$$\n\nThe $x$ terms cancel, leaving the constant segment length $6$.\n\nThe sum equals the length $6$ throughout $[3,9]$.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → True\n\nOn the half-line where $z-4<0$, the bars flip the sign: $|z-4|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**D.** → True\n\nAbsolute value is unchanged when its input is multiplied by $-1$.\n\nReverse the difference:\n\n$$z-4=-(4-z)$$\n\nTake absolute values:\n\n$$|z-4|=|-1|\\,|4-z|=|4-z|$$\n\nThe swap preserves the value as claimed, so the statement is True.",
     "**E.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains, so the statement is False."
    ],
    "solution_overview": "Extra bars around an already nonnegative quantity are idle. A minus inside bars is not a minus outside bars, and nested bars never recover a signed inside.",
@@ -3576,10 +3576,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nOn the half-line where $x^2-7x+10<0$, the bars flip the sign:\n\n$$|x^2-7x+10|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nOn the half-line where $u<0$, the bars flip the sign: $|u|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**B.** → True\n\nOn $u<0$, the negative branch of the absolute-value definition applies.\n\nOpen the bar:\n\n$$|u|=-u$$\n\nAdd:\n\n$$|u|+u=-u+u=0$$\n\nThe expression equals the claimed constant, so the statement is True.",
     "**C.** → False\n\nOn the half-line where $z<0$, the bars flip the sign:\n\n$$|z|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**D.** → True\n\nThe claim is about distances on the segment $[2,7]$. On that closed interval each absolute value opens without a minus sign.\n\nRemove the bars inside the segment:\n\n$$|x-2|+|x-7| = (x-2)+(7-x)$$\n\n$$= 5$$\n\nThe $x$ terms cancel, leaving the constant segment length $5$.\n\nThe sum equals the length $5$ throughout $[2,7]$, so the statement is True.",
-    "**E.** → False\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is False."
+    "**E.** → False\n\nThe rewrite $|k|=-k$ requires $k\\le0$ and cannot be used on the whole line.\n\nUse a positive input:\n\n$$k=1\\implies |k|+k=1+1$$\n\nEvaluate:\n\n$$=2\\ne0$$\n\nA positive input disproves the universal conclusion, so the statement is False."
    ],
    "solution_overview": "After a piecewise rewrite, $|A|-A$ vanishes on $A\\ge 0$ and $|A|+A$ vanishes on $A\\le 0$. Neither difference is identically zero, and the wrong piece produces a nonzero leftover.",
    "sort_order": 112,
@@ -3609,7 +3609,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.\n\nFor $x>7$:\n\n$$|x-1|+|x-7|=(x-1)+(x-7)=2x-(1+7)$$\n\nThe result still depends on $x$, not on the fixed length $6$ alone.\n\nA point outside $[1,7]$ already disproves the universal constant claim.\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → True\n\nOn the half-line where $z-6<0$, the bars flip the sign: $|z-6|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**C.** → True\n\nThe hypothesis $z\\ge6$ makes $z-6$ nonnegative.\n\nOpen the bar:\n\n$$|z-6|=z-6$$\n\nSubtract:\n\n$$|z-6|-(z-6)=0$$\n\nThe result is the claimed zero, so the statement is True.",
     "**D.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $10$ before accepting a constant equal to the segment length.\n\nFor $x>10$:\n\n$$|x-4|+|x-10| = (x-4)+(x-10)$$\n\n$$= 2x-(4+10)$$\n\nThe result still depends on $x$, not on the fixed length $6$ alone.\n\nA point outside $[4,10]$ already disproves the universal constant claim, so the statement is False.",
     "**E.** → True\n\nOn the half-line where $2x-6<0$, the bars flip the sign:\n\n$$|2x-6|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is True."
    ],
@@ -3641,7 +3641,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the stated half-line the inside $wu$ has fixed sign:\n\nRewrite:\n\n$$|wu|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → False\n\nOn the half-line where $k+n<0$, the bars flip the sign: $|k+n|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**C.** → False\n\nAbsolute value is subadditive, not additive for arbitrary signs.\n\nEvaluate the printed numbers:\n\n$$|8+(-4)|=|4|=4$$\n\nCompare:\n\n$$|8|+|-4|=8+4=12$$\n\nThe proposed equality gives $12$ where the left side is $4$, so the statement is False.",
     "**D.** → False\n\nOn the half-line where $n/k<0$, the bars flip the sign:\n\n$$|n/k|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False.",
     "**E.** → True\n\nThe claim is about distances on the segment $[2,8]$. On that closed interval each absolute value opens without a minus sign.\n\nRemove the bars inside the segment:\n\n$$|x-2|+|x-8| = (x-2)+(8-x)$$\n\n$$= 6$$\n\nThe $x$ terms cancel, leaving the constant segment length $6$.\n\nThe sum equals the length $6$ throughout $[2,8]$, so the statement is True."
    ],
@@ -3673,7 +3673,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nSimplify inside the bars first, cancelling one factor of $x$:\n\n$$\\dfrac{-x^3}{x}=-x^2$$\n\nSince $x^2\\ge 0$ for every real $x$, its negative has absolute value $x^2$ itself:\n\n$$\\left|-x^2\\right|=x^2$$\n\nmatching the printed right side.\n\nSo the statement is True.",
-    "**C.** → False\n\nSimplifying inside the bars gives $\\dfrac{-x^3}{x}=-x^2$, and $\\left|-x^2\\right|=x^2$, since an absolute value can never be negative. The printed right side, $-x^2$, is negative for every $x\\neq 0$, so it cannot equal the left side.\n\nSo the statement is False.",
+    "**C.** → False\n\nSimplify the quotient inside the bars first, then use nonnegativity.\n\nCancel:\n\n$$\\frac{-x^3}{x}=-x^2\\qquad(x\\ne0)$$\n\nTake absolute value:\n\n$$|-x^2|=x^2$$\n\nThe left side is positive $x^2$, not negative $-x^2$, so the statement is False.",
     "**D.** → True\n\nOn the stated half-line the inside $h-7$ has fixed sign:\n\nRewrite:\n\n$$|h-7|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nSo the statement is True.",
     "**E.** → False\n\nThe polynomial factorisation $x^2-10x+16=(x-2)(x-8)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|x^2-10x+16|=|x-2|\\,|x-8|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $x=\\min(2,8)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False."
    ],
@@ -3706,7 +3706,7 @@
     "**A.** → True\n\nBy definition, $|x|=x$ when $x\\ge 0$ and $|x|=-x$ when $x<0$. Squaring either branch removes the sign:\n\n$$x\\ge 0:\\ |x|^2=x^2\\qquad x<0:\\ |x|^2=(-x)^2=x^2$$\n\nBoth cases give $x^2$, so the identity holds for every real $x$.\n\nSo the statement is True.",
     "**B.** → False\n\nOn the half-line where $u-1<0$, the bars flip the sign:\n\n$$|u-1|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is False.",
     "**C.** → True\n\nOn the half-line where $2x-6<0$, the bars flip the sign:\n\n$$|2x-6|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nBetween the marks the two distances add to the length of the segment: $|k-1|+|k-6|=6-1=5$.\n\nSo the statement is False.",
+    "**D.** → False\n\nWhen $h<1$, both $h-1$ and $h-8$ are negative.\n\nOpen the bars:\n\n$$|h-1|=1-h,\\qquad |h-8|=8-h$$\n\nAdd:\n\n$$|h-1|+|h-8|=9-2h$$\n\nThe result varies with $h$ and is not the constant $7$, so the statement is False.",
     "**E.** → True\n\nOn the stated half-line the inside $k-4$ has fixed sign:\n\nRewrite:\n\n$$|k-4|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nSo the statement is True."
    ],
    "solution_overview": "On the segment joining two marks, the sum of distances equals the gap between them. Extending that constant off the segment, or doubling it at the midpoint, is illegal.",
@@ -3736,10 +3736,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nThe absolute value of a factored quadratic must be read through $|UV|=|U||V|$. Factor first, then split the bars across the linear factors.\n\nFactor the trinomial:\n\n$$x^2-7x+6=(x-1)(x-6)$$\n\nThe roots $p$ and $q$ come from the printed middle term and constant.\n\nApply $|UV|=|U||V|$:\n\n$$|x^2-7x+6|=|x-1|\\,|x-6|$$\n\nEach linear factor keeps its own absolute value on the right.\n\nThe identity holds for every real $x$ once the bars are placed correctly, so the statement is True.",
-    "**B.** → True\n\nThe principal square root gives $\\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.\n\nMatching these figures to the claim, the statement is True.",
-    "**C.** → False\n\nSince $|x|\\ge 0$ for every real $x$, its square $|x|^2$ is nonnegative, while $-x^2$ is nonpositive (and strictly negative whenever $x\\neq 0$). The two sides can only agree at $x=0$, not for every real value, so the claim fails.\n\nSo the statement is False.",
+    "**B.** → True\n\nApply the principal-square-root identity to the entire inner expression.\n\nSet the inner quantity:\n\n$$v=u-1$$\n\nUse $\\sqrt{v^2}=|v|$:\n\n$$\\sqrt{(u-1)^2}=|u-1|$$\n\nThe recorded equality is correct, so the statement is True.",
+    "**C.** → False\n\nSquaring an absolute value removes its sign but does not introduce a minus.\n\nSquare:\n\n$$|x|^2=x^2$$\n\nCounterexample:\n\n$$x=1\\implies |x|^2=1\\ne-1=-x^2$$\n\nThe two sides disagree away from zero, so the statement is False.",
     "**D.** → True\n\nApply the triangle inequality and then the two given bounds:\n\n$$|x+y|\\le |x|+|y|$$\n\n$$\\le 3+5=8$$\n\nChaining the two inequalities gives the printed bound.\n\nSo the statement is True.",
-    "**E.** → False\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is False."
+    "**E.** → False\n\nReverse differences have equal absolute values.\n\nRewrite:\n\n$$|1-x|=|x-1|$$\n\nAdd:\n\n$$|x-1|+|1-x|=2|x-1|$$\n\nCounterexample:\n\n$$x=1\\implies 2|x-1|=0\\ne2$$\n\nThe sum is not the constant $2$, so the statement is False."
    ],
    "solution_overview": "$\\sqrt{(A)^2}=|A|$. Replacing the root by the linear inside requires a nonnegative inside; a negative substitute is not a principal root. Positive scaling factors out.",
    "sort_order": 117,
@@ -3769,9 +3769,9 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the half-line where $r^2-36<0$, the bars flip the sign:\n\n$$|r^2-36|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $6$ before accepting a constant equal to the segment length.\n\nFor $x>6$:\n\n$$|x-1|+|x-6| = (x-1)+(x-6)$$\n\n$$= 2x-(1+6)$$\n\nThe result still depends on $x$, not on the fixed length $5$ alone.\n\nA point outside $[1,6]$ already disproves the universal constant claim, so the statement is False.",
-    "**C.** → True\n\nThe principal square root is the unique nonnegative number whose square is $n^2$: $\\sqrt{n^2}=|n|$.\n\nSo the statement is True.",
-    "**D.** → False\n\nTaking $x=3,y=5$, both within the given bounds: $|x+y|=|8|=8$, which exceeds $2$. The triangle inequality only guarantees $|x+y|\\le |x|+|y|\\le 8$, so $2$ is far too small a bound.\n\nSo the statement is False.",
-    "**E.** → False\n\nThe principal square root gives $\\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative, so the statement is False."
+    "**C.** → True\n\nUse the principal-root rule and then the positive-domain condition.\n\nRoot the square:\n\n$$\\sqrt{u^2}=|u|$$\n\nUse $u>0$ and add:\n\n$$\\sqrt{u^2}+u=u+u=2u$$\n\nThe sum matches the claim, so the statement is True.",
+    "**D.** → False\n\nThe triangle inequality supplies an upper bound of $8$, not $2$.\n\nGeneral bound:\n\n$$|x+y|\\le|x|+|y|\\le3+5=8$$\n\nAdmissible counterexample:\n\n$$x=3,\\ y=5\\implies |x+y|=8>2$$\n\nThe stated bounds allow the claim to fail, so the statement is False.",
+    "**E.** → False\n\nFor negative $h$, the principal root of $h^2$ is $-h$.\n\nUse the sign:\n\n$$\\sqrt{h^2}=|h|=-h$$\n\nSubtract:\n\n$$\\sqrt{h^2}-h=-h-h=-2h$$\n\nSince $h<0$, this is positive rather than zero, so the statement is False."
    ],
    "solution_overview": "$\\sqrt{A^2}+A=|A|+A$ equals $0$ for $A\\le 0$ and equals $2A$ for $A\\ge 0$. The companion $|A|-A$ vanishes on the opposite ray. Neither formula is an unrestricted identity.",
    "sort_order": 118,
@@ -3799,7 +3799,7 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nOn the half-line where $a<0$, the bars flip the sign: $|a|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**A.** → False\n\nThe formula $|a|=a$ applies only on the nonnegative half-line.\n\nNegative test:\n\n$$a=-1\\implies |a|=1$$\n\nCompare:\n\n$$1\\ne-1=a$$\n\nA negative input disproves the universal identity, so the statement is False.",
     "**B.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.\n\nFor $x>8$:\n\n$$|x-2|+|x-8| = (x-2)+(x-8)$$\n\n$$= 2x-(2+8)$$\n\nThe result still depends on $x$, not on the fixed length $6$ alone.\n\nA point outside $[2,8]$ already disproves the universal constant claim, so the statement is False.",
     "**C.** → True\n\nBy the triangle inequality applied to $(x+1)$ and $(1-x)$:\n\n$$|x+1|+|x-1|=|x+1|+|1-x|\\ge |(x+1)+(1-x)|=2$$\n\nso the sum of distances from $x$ to $-1$ and to $1$ is never less than the distance between $-1$ and $1$ itself, which is $2$.\n\nSo the statement is True.",
     "**D.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nComparing this value with the claim shows the statement is True.",
@@ -3834,7 +3834,7 @@
     "**A.** → True\n\nOn the half-line where $r^2-16<0$, the bars flip the sign:\n\n$$|r^2-16|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nOn the stated half-line the inside $4u-4$ has fixed sign:\n\nRewrite:\n\n$$|4u-4|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $9$ before accepting a constant equal to the segment length.\n\nFor $x>9$:\n\n$$|x-3|+|x-9| = (x-3)+(x-9)$$\n\n$$= 2x-(3+9)$$\n\nThe result still depends on $x$, not on the fixed length $6$ alone.\n\nA point outside $[3,9]$ already disproves the universal constant claim, so the statement is False.",
-    "**D.** → False\n\nOn the half-line where $h<0$, the bars flip the sign: $|h|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nAbsolute value equals its input only when that input is nonnegative.\n\nChoose a negative value:\n\n$$h=-2\\implies |h|=2$$\n\nCompare:\n\n$$2\\ne-2=h$$\n\nThe equality does not hold for every real $h$, so the statement is False.",
     "**E.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains, so the statement is True."
    ],
    "solution_overview": "$|cA|$ splits into two opposite linear pieces about the root of $A$. Dropping bars on the whole line, or omitting bars after factoring a positive scale, is illegal. The two pieces are not the same function.",
@@ -3863,11 +3863,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nAt $x=0$: $|0+1|+|0-1|=1+1=2$, which is less than $3$. The sharp lower bound for $|x+1|+|x-1|$ is $2$, the distance between $-1$ and $1$, not $3$.\n\nSo the statement is False.",
+    "**A.** → False\n\nThe sum of distances to $-1$ and $1$ has minimum equal to the endpoint gap $2$.\n\nEvaluate at the midpoint:\n\n$$x=0\\implies |x+1|+|x-1|=1+1$$\n\nSimplify:\n\n$$=2<3$$\n\nThis real input violates the claimed lower bound, so the statement is False.",
     "**B.** → False\n\nOn the half-line where $u^2-2u+1<0$, the bars flip the sign:\n\n$$|u^2-2u+1|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is False.",
     "**C.** → True\n\nThe claim adds two simple fractions in $h$ and $k$. The least common denominator is the product $hk$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{6}{h}+\\frac{1}{k}=\\frac{6k+h}{hk}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction.\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → False\n\nOn the half-line where $h^2-14h+49<0$, the bars flip the sign:\n\n$$|h^2-14h+49|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False.",
-    "**E.** → True\n\nOn the half-line where $4x-7<0$, the bars flip the sign: $|4x-7|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True."
+    "**E.** → True\n\nThe condition $x\\ge7/4$ fixes the signs of both $x$ and $4x-7$.\n\nOpen the bars:\n\n$$|4x-7|=4x-7,\\qquad |x|=x$$\n\nCompare:\n\n$$4|x|-7=4x-7$$\n\nBoth sides reduce to the same expression on the stated half-line, so the statement is True."
    ],
    "solution_overview": "A quadratic that is a square, or that completes to a square plus a positive constant, may drop its bars. Absolute value of a square is not the linear factor, and is not identically zero.",
    "sort_order": 121,
@@ -3897,8 +3897,8 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → False\n\nOn the stated half-line the inside $w^3$ has fixed sign:\n\nRewrite:\n\n$$|w^3|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**C.** → True\n\nOn the half-line where $u^3<0$, the bars flip the sign: $|u^3|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
-    "**D.** → False\n\nTaking $x=1,y=-1$: the left side is $\\bigl||1|-|-1|\\bigr|=0$, while the right side is $|1-(-1)|=2$, so $0\\ge 2$ fails. The correct reverse-triangle inequality points the other way, $\\bigl||x|-|y|\\bigr|\\le|x-y|$.\n\nSo the statement is False.",
+    "**C.** → True\n\nIf $u<0$, then the odd power $u^3$ is also negative.\n\nUse the negative branch:\n\n$$|u^3|=-u^3$$\n\nThe proposed rewrite is valid under the hypothesis, so the statement is True.",
+    "**D.** → False\n\nThe reverse triangle inequality points in the opposite direction.\n\nCorrect rule:\n\n$$\\bigl||x|-|y|\\bigr|\\le|x-y|$$\n\nCounterexample to the claim:\n\n$$x=1,\\ y=-1\\implies 0\\not\\ge2$$\n\nThe printed inequality fails for this real pair, so the statement is False.",
     "**E.** → False\n\nOn the half-line where $h^2<0$, the bars flip the sign:\n\n$$|h^2|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False."
    ],
    "solution_overview": "Odd powers: $|A^3|=|A|^3$ always, but $|A^3|=A^3$ only for $A\\ge 0$. Replacing $|A^2|$ by $A$ confuses a nonnegative square with the original letter.",
@@ -3929,7 +3929,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nSquaring both nonnegative sides of $|x+y|=|x|+|y|$ turns the equality into a statement about the cross term:\n\n$$(x+y)^2=(|x|+|y|)^2$$\n\n$$x^2+2xy+y^2=x^2+2|x||y|+y^2$$\n\nwhich reduces to $xy=|x||y|$, and that holds exactly when $x$ and $y$ share a sign or one of them is $0$, i.e. exactly when $xy\\ge 0$.\n\nSo the statement is True.",
     "**B.** → True\n\nThe claim adds two simple fractions in $a$ and $b$. The least common denominator is the product $ab$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{1}{a}+\\frac{1}{b}=\\frac{b+a}{ab}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction.\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → False\n\nOn the half-line where $6-z<0$, the bars flip the sign: $|6-z|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**C.** → False\n\nThe bars may be dropped as $6-z$ only when $z\\le6$.\n\nChoose the other side:\n\n$$z=7\\implies |6-z|=|-1|=1$$\n\nCompare:\n\n$$1\\ne-1=6-z$$\n\nWithout a domain restriction the identity fails, so the statement is False.",
     "**D.** → False\n\nThe polynomial factorisation $a^2-7a+12=(a-3)(a-4)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|a^2-7a+12|=|a-3|\\,|a-4|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $a=\\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False.",
     "**E.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains, so the statement is False."
    ],
@@ -3959,10 +3959,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTaking $x=y=1$: $xy=1>0$, yet $|x+y|=2=|x|+|y|$, so equality holds even though $xy\\le 0$ fails. The correct equality condition is $xy\\ge 0$, not $xy\\le 0$.\n\nSo the statement is False.",
+    "**A.** → False\n\nEquality in the triangle inequality occurs when the two real numbers have the same sign, meaning $xy\\ge0$.\n\nUse same-sign values:\n\n$$x=y=1\\implies |x+y|=2=|x|+|y|$$\n\nCheck the claimed condition:\n\n$$xy=1\\not\\le0$$\n\nEquality can hold while the proposed condition is false, so the statement is False.",
     "**B.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**C.** → False\n\nOn the half-line where $-6z<0$, the bars flip the sign:\n\n$$|-6z|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant, so the statement is False.",
-    "**D.** → False\n\nOn the half-line where $4h<0$, the bars flip the sign: $|4h|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nUse homogeneity of absolute value.\n\nCorrect scaling:\n\n$$|4h|=4|h|$$\n\nCounterexample:\n\n$$h=0\\implies |4h|=0\\ne4=|h|+4$$\n\nScaling is multiplication, not addition, so the statement is False.",
     "**E.** → True\n\nAn equation $|2t-5|=7$ splits into two linear cases:\n\n$$2t-5=7\\quad\\text{or}\\quad 2t-5=-7$$\n\n$$t=6\\quad\\text{or}\\quad t=-1$$\n\nBoth branches are needed and both give valid solutions, matching the printed pair exactly.\n\nSo the statement is True."
    ],
    "solution_overview": "A constant factor comes out as its absolute value: $|cA|=|c||A|$. Pulling a negative scalar out with its sign, replacing a product by a sum, or dropping bars on the whole line, all fail.",
@@ -3991,10 +3991,10 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe principal square root gives $\\sqrt{n^2}=|n|$, not the inside $n$ when $n$ may be negative.\n\nMatching these figures to the claim, the statement is False.",
-    "**B.** → False\n\nSplitting into cases, $2t-5=7$ gives $t=6$, but $2t-5=-7$ also gives a valid solution, $t=-1$, since $|2(-1)-5|=|-7|=7$. The printed claim drops this second branch, so it misses a genuine solution.\n\nSo the statement is False.",
+    "**A.** → False\n\nA principal square root of a square returns absolute value of the entire base.\n\nApply the rule:\n\n$$\\sqrt{(w+u)^2}=|w+u|$$\n\nNegative-base test:\n\n$$w=1,\\ u=-2\\implies |w+u|=1\\ne-1=w+u$$\n\nThe bars cannot be dropped for every real pair, so the statement is False.",
+    "**B.** → False\n\nSplit the absolute-value equation into its two sign branches.\n\nSplit:\n\n$$|2t-5|=7\\iff 2t-5=7\\ \\text{or}\\ 2t-5=-7$$\n\nSolve:\n\n$$t=6\\ \\text{or}\\ t=-1$$\n\nThe claim omits the valid solution $t=-1$, so the statement is False.",
     "**C.** → True\n\nAn inequality of the form $|t-3|<5$ says $t$ is within distance $5$ of $3$, which unfolds into a double inequality:\n\n$$-5<t-3<5$$\n\n$$-2<t<8$$\n\nAdding $3$ across all three parts gives exactly the printed interval, and every step is reversible, so the biconditional holds.\n\nSo the statement is True.",
-    "**D.** → False\n\nOn the half-line where $m<0$, the bars flip the sign: $|m|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nThe identity $|m|=m$ is restricted to $m\\ge0$.\n\nNegative test:\n\n$$m=-1\\implies |m|=1$$\n\nCompare:\n\n$$1\\ne-1=m$$\n\nThe proposed whole-line identity fails, so the statement is False.",
     "**E.** → True\n\nSimplify inside the bars first, cancelling one factor of $t$:\n\n$$\\dfrac{-t^3}{t}=-t^2$$\n\nSince $t^2\\ge 0$ for every real $t$, its negative has absolute value $t^2$ itself:\n\n$$\\left|-t^2\\right|=t^2$$\n\nmatching the printed right side.\n\nSo the statement is True."
    ],
    "solution_overview": "$\\sqrt{(A)^2}=|A|$. Replacing the root by a binomial needs the binomial nonnegative. A negative numerical substitute is the inside, not the principal root.",
@@ -4023,11 +4023,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nUnfolding $|t-3|<5$ gives $-5<t-3<5$, and adding $3$ throughout gives $-2<t<8$, not $-8<t<2$. Taking $t=5$: $|5-3|=2<5$ is true, but $5$ does not lie in $(-8,2)$, so the printed interval is wrong.\n\nSo the statement is False.",
-    "**B.** → False\n\nSimplifying inside the bars gives $\\dfrac{-t^3}{t}=-t^2$, and $\\left|-t^2\\right|=t^2$, since an absolute value can never be negative. The printed right side, $-t^2$, is negative for every $t\\neq 0$, so it cannot equal the left side.\n\nSo the statement is False.",
+    "**A.** → False\n\nTranslate the absolute-value inequality into a double inequality.\n\nUnfold:\n\n$$|t-3|<5\\iff -5<t-3<5$$\n\nAdd $3$:\n\n$$-2<t<8$$\n\nThe correct interval differs from the claimed $(-8,2)$, so the statement is False.",
+    "**B.** → False\n\nCancel inside the bars and then evaluate the absolute value of a nonpositive square.\n\nCancel:\n\n$$\\frac{-t^3}{t}=-t^2$$\n\nTake absolute value:\n\n$$|-t^2|=t^2$$\n\nThe left side is $t^2$, not $-t^2$, so the statement is False.",
     "**C.** → True\n\nBy definition, $|t|=t$ when $t\\ge 0$ and $|t|=-t$ when $t<0$. Squaring either branch removes the sign:\n\n$$t\\ge 0:\\ |t|^2=t^2\\qquad t<0:\\ |t|^2=(-t)^2=t^2$$\n\nBoth cases give $t^2$, so the identity holds for every real $t$.\n\nSo the statement is True.",
-    "**D.** → False\n\nOn the half-line where $h-4<0$, the bars flip the sign: $|h-4|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
-    "**E.** → True\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is True."
+    "**D.** → False\n\nFor $h<4$, both differences inside the absolute values are negative.\n\nOpen the bars:\n\n$$|h-4|=4-h,\\qquad |h-6|=6-h$$\n\nAdd:\n\n$$|h-4|+|h-6|=10-2h$$\n\nThe sum varies with $h$ and is not constantly $2$, so the statement is False.",
+    "**E.** → True\n\nOn $1\\le k\\le4$, the two terms are distances from $k$ to the endpoints.\n\nOpen the bars:\n\n$$|k-1|=k-1,\\qquad |k-4|=4-k$$\n\nAdd:\n\n$$|k-1|+|k-4|=3$$\n\nThe distances add to the claimed endpoint gap, so the statement is True."
    ],
    "solution_overview": "The sum of distances to two fixed points is the gap between them on the joining segment and is larger off that segment. Midpoint checks recover that gap, not a larger number.",
    "sort_order": 126,
@@ -4056,9 +4056,9 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.\n\nFor $a>7$:\n\n$$|a-1|+|a-7| = (a-1)+(a-7)$$\n\n$$= 2a-(1+7)$$\n\nThe result still depends on $a$, not on the fixed length $6$ alone.\n\nA point outside $[1,7]$ already disproves the universal constant claim, so the statement is False.",
-    "**B.** → False\n\nOn the half-line where $p<0$, the bars flip the sign: $|p|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**B.** → False\n\nAbsolute value keeps $p$ only on the nonnegative half-line.\n\nNegative test:\n\n$$p=-3\\implies |p|=3$$\n\nCompare:\n\n$$3\\ne-3=p$$\n\nThe universal equality is false, so the statement is False.",
     "**C.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nMatching these figures to the claim, the statement is True.",
-    "**D.** → False\n\nSince $|t|\\ge 0$ for every real $t$, its square $|t|^2$ is nonnegative, while $-t^2$ is nonpositive (and strictly negative whenever $t\\neq 0$). The two sides can only agree at $t=0$, not for every real value, so the claim fails.\n\nSo the statement is False.",
+    "**D.** → False\n\nSquaring absolute value yields the ordinary square.\n\nSquare:\n\n$$|t|^2=t^2$$\n\nTest:\n\n$$t=1\\implies |t|^2=1\\ne-1=-t^2$$\n\nThe asserted negative square has the wrong sign, so the statement is False.",
     "**E.** → True\n\nHalf of $-16$ is $-8$, and $(-8)^2=64$. Add and subtract $64$:\n\n$$k^2-16k+65=(k^2-16k+64)+1=(k-8)^2+1$$\n\nThe leftover constant is $+1$, not zero, so the statement is True."
    ],
    "solution_overview": "If completing the square leaves a positive constant, bars around the quadratic may be dropped. A $-1$ leftover forbids that shortcut: absolute value of a dip is not the completed expression itself.",
@@ -4091,7 +4091,7 @@
     "**B.** → True\n\nApply the triangle inequality and then the two given bounds:\n\n$$|a+b|\\le |a|+|b|$$\n\n$$\\le 3+5=8$$\n\nChaining the two inequalities gives the printed bound.\n\nSo the statement is True.",
     "**C.** → True\n\nOn the half-line where $k+0<0$, the bars flip the sign:\n\n$$|k+0|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nComparing this value with the claim shows the statement is True.",
     "**D.** → True\n\nBy the triangle inequality applied to $(t+1)$ and $(1-t)$:\n\n$$|t+1|+|t-1|=|t+1|+|1-t|\\ge |(t+1)+(1-t)|=2$$\n\nso the sum of distances from $t$ to $-1$ and to $1$ is never less than the distance between $-1$ and $1$ itself, which is $2$.\n\nSo the statement is True.",
-    "**E.** → False\n\nOn the half-line where $t<0$, the bars flip the sign: $|t|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False."
+    "**E.** → False\n\nThe formula $|t|=t$ requires $t\\ge0$.\n\nNegative test:\n\n$$t=-1\\implies |t|=1$$\n\nCompare:\n\n$$1\\ne-1=t$$\n\nA negative value refutes the whole-line claim, so the statement is False."
    ],
    "solution_overview": "Equality $|A+B|=|A|+|B|$ holds exactly when $A$ and $B$ are not of opposite sign, including when one of them is $0$. It is not the reverse comparison $\\bigl||A|-|B|\\bigr|$.",
    "sort_order": 128,
@@ -4119,9 +4119,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA difference of squares factors as $(w-2.8284271247461903)(w+2.8284271247461903)$, not as a square of a difference $(w-2.8284271247461903)^2$.\n\nMatching these figures to the claim, the statement is True.",
+    "**A.** → True\n\nComplete the square by adding and subtracting $16$.\n\nComplete:\n\n$$w^2-8w+15=w^2-8w+16-1$$\n\nFactor:\n\n$$=(w-4)^2-1$$\n\nThe recorded rewrite is exact, so the statement is True.",
     "**B.** → True\n\nThe claim adds two simple fractions in $a$ and $b$. The least common denominator is the product $ab$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{1}{a}+\\frac{1}{b}=\\frac{b+a}{ab}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction.\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → True\n\nOn the half-line where $2u-5<0$, the bars flip the sign: $|2u-5|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is True.",
+    "**C.** → True\n\nThe condition $u\\ge5/2$ makes both $u$ and $2u-5$ nonnegative.\n\nOpen the bars:\n\n$$|2u-5|=2u-5,\\qquad |u|=u$$\n\nCompare:\n\n$$2|u|-5=2u-5$$\n\nBoth sides agree on the stated half-line, so the statement is True.",
     "**D.** → False\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains, so the statement is False.",
     "**E.** → False\n\nThe numerator of the claimed sum has the right cross-multiply form, but the denominator is $m+n$ instead of $mn$. Clear with the product denominator first.\n\nCorrect combination:\n\n$$\\frac{5}{m}+\\frac{2}{n}=\\frac{5n+2m}{mn}$$\n\nOnly $mn$ is the common denominator for unrelated linear factors.\n\nThe printed denominator $m+n$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.\n\nSo the statement is False."
    ],
@@ -4151,11 +4151,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTaking $a=3,b=5$, both within the given bounds: $|a+b|=|8|=8$, which exceeds $2$. The triangle inequality only guarantees $|a+b|\\le |a|+|b|\\le 8$, so $2$ is far too small a bound.\n\nSo the statement is False.",
-    "**B.** → False\n\nOn the half-line where $c<0$, the bars flip the sign: $|c|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**A.** → False\n\nThe triangle inequality gives an upper bound of $3+5=8$, and that bound can be attained.\n\nChoose admissible values:\n\n$$a=3,\\ b=5$$\n\nEvaluate:\n\n$$|a+b|=|8|=8>2$$\n\nThe proposed bound is too small, so the statement is False.",
+    "**B.** → False\n\nAbsolute value equals the input only on the nonnegative half-line.\n\nNegative test:\n\n$$c=-1\\implies |c|=1$$\n\nCompare:\n\n$$1\\ne-1=c$$\n\nThe universal claim fails, so the statement is False.",
     "**C.** → True\n\nThe claim adds two simple fractions in $h$ and $k$. The least common denominator is the product $hk$, not their sum.\n\nClear to one fraction:\n\n$$\\frac{6}{h}+\\frac{1}{k}=\\frac{6k+h}{hk}$$\n\nCross-multiply each term before comparing numerator and denominator.\n\nBoth parts of the claimed single fraction match this reduction, so the statement is True.",
     "**D.** → False\n\nOn the half-line where $h<0$, the bars flip the sign:\n\n$$|h|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nThe claim’s comparison is incorrect, so the statement is False.",
-    "**E.** → False\n\nAt $t=0$: $|0+1|+|0-1|=1+1=2$, which is less than $3$. The sharp lower bound for $|t+1|+|t-1|$ is $2$, the distance between $-1$ and $1$, not $3$.\n\nSo the statement is False."
+    "**E.** → False\n\nAt points between $-1$ and $1$, the distance sum is the endpoint gap $2$.\n\nEvaluate the midpoint:\n\n$$t=0\\implies |t+1|+|t-1|=1+1$$\n\nSimplify:\n\n$$=2<3$$\n\nThe claimed lower bound is violated, so the statement is False."
    ],
    "solution_overview": "The reverse triangle inequality bounds the gap of sizes by $|A-B|$. Equality is not automatic, dropping the outer bars can produce a negative, and opposite-sign pairs make $|A-B|$ the sum of sizes.",
    "sort_order": 130,
@@ -4186,7 +4186,7 @@
     "**A.** → True\n\nWrite $a=b+(a-b)$ and apply the ordinary triangle inequality:\n\n$$|a|=|b+(a-b)|\\le |b|+|a-b|$$\n\n$$|a|-|b|\\le |a-b|$$\n\nSwapping the roles of $a$ and $b$ gives $|b|-|a|\\le|b-a|=|a-b|$ as well, and combining the two bounds gives exactly the printed reverse-triangle inequality.\n\nSo the statement is True.",
     "**B.** → False\n\nOn the stated half-line the inside $u$ has fixed sign:\n\nRewrite:\n\n$$|u|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nThe claim’s comparison is incorrect, so the statement is False.",
     "**C.** → False\n\nThe polynomial factorisation $a^2-8a+7=(a-1)(a-7)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|a^2-8a+7|=|a-1|\\,|a-7|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $a=\\min(1,7)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False.",
-    "**D.** → False\n\nOn the half-line where $h-7<0$, the bars flip the sign: $|h-7|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nA nested absolute value leaves the inner absolute value unchanged, not the unbarred expression.\n\nRemove the outer bars:\n\n$$\\bigl||h-7|\\bigr|=|h-7|$$\n\nCounterexample:\n\n$$h=0\\implies |h-7|=7\\ne-7=h-7$$\n\nThe asserted whole-line identity fails, so the statement is False.",
     "**E.** → True\n\nUse $(u-v)^2=(u+v)^2-4uv$ before taking the square root, so the statement is True."
    ],
    "solution_overview": "Extra bars around $|A|$ collapse. Stripping outer bars from $\\bigl||A|-c\\bigr|$ needs $|A|\\ge c$; nested bars never recover a signed translation $A-c$.",
@@ -4215,11 +4215,11 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTaking $a=1,b=-1$: the left side is $\\bigl||1|-|-1|\\bigr|=0$, while the right side is $|1-(-1)|=2$, so $0\\ge 2$ fails. The correct reverse-triangle inequality points the other way, $\\bigl||a|-|b|\\bigr|\\le|a-b|$.\n\nSo the statement is False.",
+    "**A.** → False\n\nUse the reverse triangle inequality with its correct direction.\n\nCorrect rule:\n\n$$\\bigl||a|-|b|\\bigr|\\le|a-b|$$\n\nCounterexample:\n\n$$a=1,\\ b=-1\\implies 0\\not\\ge2$$\n\nThe claim reverses the inequality, so the statement is False.",
     "**B.** → True\n\nOn the stated half-line the inside $u-1$ has fixed sign:\n\nRewrite:\n\n$$|u-1|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → False\n\nDifference of squares (or another factorisation) clears the denominator:\n\n$$\\frac{t^2-9}{t-3}$$\n\nThe surviving expression is the true remainder on the stated domain, so the statement is False.",
     "**D.** → False\n\nThe polynomial factorisation $a^2-7a+12=(a-3)(a-4)$ is correct, but absolute value is not the same as dropping the bars on a signed product.\n\nCorrect bar placement:\n\n$$|a^2-7a+12|=|a-3|\\,|a-4|$$\n\nEach linear factor keeps its own absolute value.\n\nDropping the bars on the right changes the sign on half-lines. For $a=\\min(3,4)-1$ the two sides already disagree — the trap is invisible until a point outside both roots is tested, so the statement is False.",
-    "**E.** → False\n\nOn the half-line where $k-8<0$, the bars flip the sign: $|k-8|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False."
+    "**E.** → False\n\nOpen the numerator separately on the two sides of $k=8$.\n\nFor $k<8$:\n\n$$\\frac{|k-8|}{8-k}=\\frac{8-k}{8-k}=1$$\n\nFor $k>8$:\n\n$$\\frac{|k-8|}{8-k}=\\frac{k-8}{-(k-8)}=-1$$\n\nThe quotient is not identically $-1$ on both intervals, so the statement is False."
    ],
    "solution_overview": "Each opposite linear pair is a piecewise constant $\\pm 1$ after a piecewise rewrite of the numerator. A single constant on the whole punctured line is the wrong slogan, and $|A|/A$ is the sign of $A$, not identically $1$.",
    "sort_order": 132,
@@ -4249,9 +4249,9 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the stated half-line the inside $a^2-7x+6$ has fixed sign:\n\nRewrite:\n\n$$|a^2-7x+6|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nSquaring both nonnegative sides of $|a+b|=|a|+|b|$ turns the equality into a statement about the cross term:\n\n$$(a+b)^2=(|a|+|b|)^2$$\n\n$$a^2+2ab+b^2=a^2+2|a||b|+b^2$$\n\nwhich reduces to $ab=|a||b|$, and that holds exactly when $a$ and $b$ share a sign or one of them is $0$, i.e. exactly when $ab\\ge 0$.\n\nSo the statement is True.",
-    "**C.** → False\n\nA difference of squares factors as $(z-3.4641016151377544)(z+3.4641016151377544)$, not as a square of a difference $(z-3.4641016151377544)^2$.\n\nThe claim’s comparison is incorrect, so the statement is False.",
+    "**C.** → False\n\nThe quadratic does complete to the printed expression, but the outer absolute value cannot be discarded when that expression is negative.\n\nComplete the square:\n\n$$z^2-12z+35=(z-6)^2-1$$\n\nTest the sign-changing region:\n\n$$z=6\\implies |z^2-12z+35|=|-1|=1$$\n\nCompare:\n\n$$(z-6)^2-1=-1$$\n\nThe two sides disagree at $z=6$, so the statement is False.",
     "**D.** → True\n\nThe claim is about distances on the segment $[2,7]$. On that closed interval each absolute value opens without a minus sign.\n\nRemove the bars inside the segment:\n\n$$|a-2|+|a-7|=(a-2)+(7-a)=5$$\n\nThe $a$ terms cancel, leaving the constant segment length $5$.\n\nThe sum equals the length $5$ throughout $[2,7]$, so the statement is True.",
-    "**E.** → False\n\nOn the half-line where $x<0$, the bars flip the sign: $|x|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False."
+    "**E.** → False\n\nThe equality $|x|=x$ is conditional on $x\\ge0$.\n\nNegative test:\n\n$$x=-1\\implies |x|=1$$\n\nCompare:\n\n$$1\\ne-1=x$$\n\nIt is not a whole-line identity, so the statement is False."
    ],
    "solution_overview": "A quadratic that is a square may drop its bars. A neighbouring polynomial that completes to $(A)^2-1$ changes sign, so bars stay essential and the value at the vertex is $1$, not $0$.",
    "sort_order": 133,
@@ -4281,8 +4281,8 @@
    "tactical_explanations": [
     "**A.** → True\n\nOn the stated half-line the inside $4r-3$ has fixed sign:\n\nRewrite:\n\n$$|4r-3|$$\n\nCombine:\n\n$$(4-w)+w=4$$\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nOn the half-line where $a^2-6x+5<0$, the bars flip the sign:\n\n$$|a^2-6x+5|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nComparing this value with the claim shows the statement is True.",
-    "**C.** → False\n\nTaking $a=b=1$: $ab=1>0$, yet $|a+b|=2=|a|+|b|$, so equality holds even though $ab\\le 0$ fails. The correct equality condition is $ab\\ge 0$, not $ab\\le 0$.\n\nSo the statement is False.",
-    "**D.** → False\n\nOn the half-line where $h<0$, the bars flip the sign: $|h|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**C.** → False\n\nEquality in $|a+b|\\le|a|+|b|$ occurs for same-sign real numbers, so the correct condition is $ab\\ge0$.\n\nSame-sign example:\n\n$$a=b=1\\implies |a+b|=2=|a|+|b|$$\n\nCompare conditions:\n\n$$ab=1\\not\\le0$$\n\nThe proposed biconditional uses the opposite sign condition, so the statement is False.",
+    "**D.** → False\n\nAbsolute value leaves $h$ unchanged only if $h$ is nonnegative.\n\nNegative test:\n\n$$h=-2\\implies |h|=2$$\n\nCompare:\n\n$$2\\ne-2=h$$\n\nThe universal claim fails, so the statement is False.",
     "**E.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $8$ before accepting a constant equal to the segment length.\n\nFor $a>8$:\n\n$$|a-2|+|a-8| = (a-2)+(a-8)$$\n\n$$= 2a-(2+8)$$\n\nThe result still depends on $a$, not on the fixed length $6$ alone.\n\nA point outside $[2,8]$ already disproves the universal constant claim, so the statement is False."
    ],
    "solution_overview": "After choosing the correct linear piece, adding or subtracting the letter leaves a constant. Using the opposite piece, or quoting the length of a different segment, produces a false leftover.",
@@ -4314,7 +4314,7 @@
     "**A.** → True\n\nA difference of squares is not a square of a difference:\n\n$$w^2-8=(w-2.8284271247461903)(w+2.8284271247461903)$$\n\n$$(w-2.8284271247461903)^2=w^2-5.656854249492381w+2.8284271247461903^2$$\n\nAt the test point $w=0$ the two polynomials already disagree.\n\nMatching these figures to the claim, the statement is True.",
     "**B.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nComparing this value with the claim shows the statement is True.",
     "**C.** → True\n\nAn equation $|2u-5|=7$ splits into two linear cases:\n\n$$2u-5=7\\quad\\text{or}\\quad 2u-5=-7$$\n\n$$u=6\\quad\\text{or}\\quad u=-1$$\n\nBoth branches are needed and both give valid solutions, matching the printed pair exactly.\n\nSo the statement is True.",
-    "**D.** → False\n\nSplitting into cases, $2u-5=7$ gives $u=6$, but $2u-5=-7$ also gives a valid solution, $u=-1$, since $|2(-1)-5|=|-7|=7$. The printed claim drops this second branch, so it misses a genuine solution.\n\nSo the statement is False.",
+    "**D.** → False\n\nSolve both branches of the absolute-value equation.\n\nSplit:\n\n$$|2u-5|=7\\iff 2u-5=7\\ \\text{or}\\ 2u-5=-7$$\n\nSolve:\n\n$$u=6\\ \\text{or}\\ u=-1$$\n\nThe claimed biconditional omits one valid solution, so the statement is False.",
     "**E.** → False\n\nThe numerator of the claimed sum has the right cross-multiply form, but the denominator is $m+n$ instead of $mn$. Clear with the product denominator first.\n\nCorrect combination:\n\n$$\\frac{5}{m}+\\frac{2}{n}=\\frac{5n+2m}{mn}$$\n\nOnly $mn$ is the common denominator for unrelated linear factors.\n\nThe printed denominator $m+n$ makes the two sides agree only on a thin curve, not as an identity — the numerator looks right, so the error appears only at the end.\n\nSo the statement is False."
    ],
    "solution_overview": "Completing a square and then taking a principal root produces a modulus. Dropping that modulus needs a nonnegative inside; a positive leftover after completing the square licenses $\\sqrt{A^2}=A$.",
@@ -4346,7 +4346,7 @@
     "**A.** → False\n\nThe wording drops the interval restriction. Test a point to the right of $7$ before accepting a constant equal to the segment length.\n\nFor $a>7$:\n\n$$|a-1|+|a-7| = (a-1)+(a-7)$$\n\n$$= 2a-(1+7)$$\n\nThe result still depends on $a$, not on the fixed length $6$ alone.\n\nA point outside $[1,7]$ already disproves the universal constant claim, so the statement is False.",
     "**B.** → False\n\nOn the half-line where $z+h<0$, the bars flip the sign:\n\n$$|z+h|=4-w$$\n\nAdding the letter then cancels it, leaving the claimed constant.\n\nMatching these figures to the claim, the statement is False.",
     "**C.** → True\n\nOn the half-line $w<4$ the inside $w-4$ is negative, so the bars flip the sign:\n\nRewrite:\n\n$$|w-4|=4-w$$\n\nAdd:\n\n$$(4-w)+w=4$$\n\nThe letter cancels and the constant $4$ remains.\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → False\n\nOn the half-line where $4n<0$, the bars flip the sign: $|4n|=4-w$. Adding the letter then cancels it, leaving the claimed constant.\n\nSo the statement is False.",
+    "**D.** → False\n\nUse the scaling rule $|cn|=|c||n|$.\n\nScale:\n\n$$|4n|=|4|\\,|n|=4|n|$$\n\nCounterexample:\n\n$$n=0\\implies |4n|=0\\ne4=|n|+4$$\n\nAbsolute-value scaling is not addition, so the statement is False.",
     "**E.** → True\n\nAn inequality of the form $|u-3|<5$ says $u$ is within distance $5$ of $3$, which unfolds into a double inequality:\n\n$$-5<u-3<5$$\n\n$$-2<u<8$$\n\nAdding $3$ across all three parts gives exactly the printed interval, and every step is reversible, so the biconditional holds.\n\nSo the statement is True."
    ],
    "solution_overview": "The product rule and nested bars around a product are identities. The companion slogans $|A+B|=|A|+|B|$ and $|cA|=|A|+|c|$ are not; opposite-sign numerical pairs make the failure visible.",
