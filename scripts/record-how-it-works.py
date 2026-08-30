@@ -304,9 +304,32 @@ async def show_features(page):
         await maybe(page, page.locator("button").filter(has_text="Close").first, 800)
 
 
-async def show_explanation(page, total=2000):
-    await maybe(page, page.locator("button").filter(has_text="Check Answers").first, 1800)
-    await maybe(page, page.locator("button").filter(has_text="Explanation").first, 1600)
+async def open_explanation(page):
+    """Clicks the Explanation toggle and verifies the solution panel opened."""
+    import re as _re
+
+    pat = _re.compile(r"^(Explanation|Show Explanation)$", _re.I)
+    for _ in range(3):
+        btn = page.locator("button").filter(has_text=pat).first
+        try:
+            if await btn.count() and await btn.is_visible():
+                await soft_click(page, btn, 1600)
+        except Exception:
+            pass
+        try:
+            panel = page.get_by_text("FULL SOLUTION", exact=False).first
+            if await panel.count() and await panel.is_visible():
+                return True
+        except Exception:
+            pass
+        await page.wait_for_timeout(700)
+    return False
+
+
+async def show_explanation(page, total=1600):
+    await maybe(page, page.locator("button").filter(has_text="Check Answers").first, 1600)
+    await open_explanation(page)
+    await page.wait_for_timeout(700)
     await read_scroll(page, total=total)
 
 
