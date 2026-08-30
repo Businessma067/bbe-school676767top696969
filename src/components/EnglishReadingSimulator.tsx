@@ -58,10 +58,10 @@ export default function EnglishReadingSimulator() {
 
   useEffect(() => {
     let cancelled = false;
-    const MOVE_DURATION = 840;
+    const MOVE_DURATION = 620;
     const CLICK_PRESS = 90;
     const CLICK_SETTLE = 90;
-    const STEP_SETTLE = 208;
+    const STEP_SETTLE = 150;
     const wait = (ms: number) =>
       new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
 
@@ -176,7 +176,7 @@ export default function EnglishReadingSimulator() {
   const activeHighlight = activeIdx !== null ? CASE.highlights[activeIdx] : "";
 
   return (
-    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[520px] lg:h-[560px]">
+    <div className="relative h-[480px] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:h-[540px] lg:h-[600px]">
       <div
         ref={stageRef}
         className={cn(
@@ -184,44 +184,7 @@ export default function EnglishReadingSimulator() {
           dim ? "opacity-40" : "opacity-100",
         )}
       >
-        <div className="flex items-center gap-2 border-b border-border bg-secondary/60 px-4 py-2.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-          <div className="ml-3 flex-1">
-            <div className="mx-auto max-w-md rounded-md border border-border bg-background px-3 py-1 text-center text-[11px] text-muted-foreground">
-              bbe-school.app / demo-practice / english / reading / task-1
-            </div>
-          </div>
-          <div className="hidden text-[10px] font-semibold tracking-widest text-primary sm:block">
-            LIVE DEMO
-          </div>
-        </div>
-
-        <div className="grid min-h-0 flex-1 gap-4 overflow-hidden p-3 sm:p-5 lg:grid-cols-[1.1fr_1fr] lg:gap-5">
-          {/* LEFT */}
-          <article
-            ref={leftRef}
-            className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-6"
-          >
-            <div className="mb-4 flex flex-wrap items-center gap-2">
-              <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-                {CASE.case_id}
-              </span>
-              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-                Difficulty {CASE.difficulty}
-              </span>
-              <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-muted-foreground">
-                Reading
-              </span>
-              <span className="flex-1" />
-              {checked && (
-                <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2 py-1 text-[10px] font-semibold text-muted-foreground">
-                  <RotateCcw className="h-3 w-3" /> Reset task
-                </span>
-              )}
-            </div>
-
+        
             <p className="mt-2 whitespace-pre-line text-[13px] leading-relaxed text-muted-foreground">
               {CASE.context}
             </p>
