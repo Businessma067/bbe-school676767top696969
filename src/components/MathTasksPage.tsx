@@ -8,6 +8,11 @@ import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
+import {
+  practiceExplanationToggleClass,
+  practiceSubmitButtonClass,
+  practiceTryAgainButtonClass,
+} from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { trackEvent } from "@/lib/activity-tracker";
@@ -34,7 +39,6 @@ import {
   Lock,
   PanelLeftClose,
   PanelLeftOpen,
-  Sparkles,
 } from "lucide-react";
 
 export type MathTasksTier = "demo" | "lite" | "full";
@@ -1915,7 +1919,7 @@ function MathTaskCard({
             <button
               type="button"
               onClick={handleSubmit}
-              className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+              className={practiceSubmitButtonClass}
             >
               Check Answers / Submit
             </button>
@@ -1923,23 +1927,17 @@ function MathTaskCard({
             <button
               type="button"
               onClick={handleReset}
-              className="inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-secondary"
+              className={practiceTryAgainButtonClass}
             >
-              <RotateCcw className="h-4 w-4" /> Try again
+              Try again
             </button>
           )}
           {checked && (
             <button
               type="button"
               onClick={onToggleExplanations}
-              className={cn(
-                "inline-flex items-center gap-1.5 rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
-                explanationsOpen
-                  ? "border-primary/40 bg-primary/10 text-primary"
-                  : "border-border bg-background text-foreground hover:bg-secondary",
-              )}
+              className={practiceExplanationToggleClass(explanationsOpen)}
             >
-              <Sparkles className="h-4 w-4" />
               {explanationsOpen ? "Hide Explanation" : "Explanation"}
             </button>
           )}

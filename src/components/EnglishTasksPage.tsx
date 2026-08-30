@@ -9,6 +9,13 @@ import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calcul
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { cn } from "@/lib/utils";
+import {
+  practiceExplanationToggleClass,
+  practiceInlineLocateButtonClass,
+  practicePanelSectionLabelClass,
+  practiceSubmitButtonClass,
+  practiceTryAgainButtonClass,
+} from "@/lib/practice-button-styles";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { Collapse } from "@/components/Collapse";
 import {
@@ -29,7 +36,6 @@ import {
   BookOpen,
   AlertTriangle,
   Lock,
-  Highlighter,
   PanelLeftClose,
   PanelLeftOpen,
 } from "lucide-react";
@@ -1109,14 +1115,8 @@ function CaseCard({
                           <button
                             type="button"
                             onClick={() => onRequestExplanation(i)}
-                            className={cn(
-                              "inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-[11px] font-semibold transition-colors",
-                              activeExplanationIndex === i
-                                ? "border-foreground/30 bg-foreground text-background"
-                                : "border-border bg-background text-foreground hover:bg-secondary",
-                            )}
+                            className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
                           >
-                            <Highlighter className="h-3 w-3" />
                             {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                           </button>
                         )}
@@ -1128,14 +1128,8 @@ function CaseCard({
                     <button
                       type="button"
                       onClick={() => onRequestExplanation(i)}
-                      className={cn(
-                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                        activeExplanationIndex === i
-                          ? "border-foreground/30 bg-foreground text-background"
-                          : "border-border bg-background text-foreground hover:bg-secondary",
-                      )}
+                      className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
                     >
-                      <Highlighter className="h-3 w-3" />
                       {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                     </button>
                   )}
@@ -1152,7 +1146,7 @@ function CaseCard({
             <button
               type="button"
               onClick={handleSubmit}
-              className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+              className={practiceSubmitButtonClass}
             >
               Check Answers / Submit
             </button>
@@ -1160,23 +1154,17 @@ function CaseCard({
             <button
               type="button"
               onClick={handleReset}
-              className="inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-secondary"
+              className={practiceTryAgainButtonClass}
             >
-              <RotateCcw className="h-4 w-4" /> Try again
+              Try again
             </button>
           )}
           {checked && (
             <button
               type="button"
               onClick={onToggleExplanations}
-              className={cn(
-                "inline-flex items-center gap-1.5 rounded-md border px-4 py-2.5 text-sm font-semibold transition-all",
-                explanationsOpen
-                  ? "border-foreground/30 bg-secondary text-foreground"
-                  : "border-border bg-background text-foreground hover:bg-secondary",
-              )}
+              className={practiceExplanationToggleClass(explanationsOpen)}
             >
-              <BookOpen className="h-4 w-4" />
               {explanationsOpen ? "Hide solutions" : "View solutions"}
             </button>
           )}
@@ -1257,14 +1245,8 @@ function AllExplanationsPanel({
                     <button
                       type="button"
                       onClick={() => onRequestShowInText(i)}
-                      className={cn(
-                        "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                        activeExplanationIndex === i
-                          ? "border-foreground/30 bg-foreground text-background"
-                          : "border-border bg-background text-foreground hover:bg-secondary",
-                      )}
+                      className={practiceInlineLocateButtonClass(activeExplanationIndex === i)}
                     >
-                      <Highlighter className="h-3 w-3" />
                       {activeExplanationIndex === i ? "Located in passage" : "Locate in passage"}
                     </button>
                   )}
@@ -1358,14 +1340,11 @@ function ReadingPanel({
   return (
     <div className="flex h-full flex-col gap-3">
       <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
-        <div className="flex items-center gap-2">
-          <BookOpen className="h-4 w-4 text-primary" />
-          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-            {explanation
-              ? `Passage locator · Statement ${explanation.statementIndex + 1}`
-              : "Reading Passage"}
-          </span>
-        </div>
+        <span className={practicePanelSectionLabelClass}>
+          {explanation
+            ? `Passage locator · Statement ${explanation.statementIndex + 1}`
+            : "Reading Passage"}
+        </span>
         {explanation && (
           <button
             type="button"
@@ -1396,8 +1375,8 @@ function ReadingPanel({
 
       <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
         <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
-          <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
-            <BookOpen className="h-3.5 w-3.5" /> Reading Text
+          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Reading Text
           </span>
         </div>
         <div className="practice-scroll h-[calc(100%-2.25rem)] overflow-y-auto px-5 py-4 font-serif text-[13px] leading-relaxed text-[#3a2e1f]">
@@ -1434,14 +1413,11 @@ function GrammarExplanationPanel({
   return (
     <div className="flex h-full flex-col gap-3">
       <div className="flex items-center justify-between rounded-2xl border border-primary/30 bg-primary/5 px-4 py-2.5">
-        <div className="flex items-center gap-2">
-          <BookOpen className="h-4 w-4 text-primary" />
-          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-            {explanation
-              ? `Solution note · Statement ${explanation.statementIndex + 1}`
-              : "Solution notes"}
-          </span>
-        </div>
+        <span className={practicePanelSectionLabelClass}>
+          {explanation
+            ? `Solution note · Statement ${explanation.statementIndex + 1}`
+            : "Solution notes"}
+        </span>
         {explanation && (
           <button
             type="button"

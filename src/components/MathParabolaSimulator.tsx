@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Check, ChevronDown, RotateCcw, Sparkles, X, LineChart } from "lucide-react";
+import { Check, ChevronDown, RotateCcw, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  practiceInlineAiButtonClass,
+  practiceInlineExplanationButtonClass,
+} from "@/lib/practice-button-styles";
 
 const CASE = {
   case_id: "TASK 1",
@@ -260,7 +264,7 @@ export default function MathParabolaSimulator() {
 
                     {checked && (
                       <div className="mt-3 flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground">
+                        <span className={practiceInlineExplanationButtonClass}>
                           Explanation
                           <ChevronDown
                             className={cn(
@@ -271,14 +275,8 @@ export default function MathParabolaSimulator() {
                         </span>
                         <span
                           data-sim-ai={i}
-                          className={cn(
-                            "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                            activeIdx === i
-                              ? "border-primary bg-primary text-primary-foreground"
-                              : "border-primary/60 bg-primary/10 text-primary",
-                          )}
+                          className={practiceInlineAiButtonClass(activeIdx === i)}
                         >
-                          <Sparkles className="h-3 w-3" />
                           {activeIdx === i ? "Plotted on graph →" : "Show AI graph explanation"}
                         </span>
                         {openExpl[i] && (
@@ -322,8 +320,7 @@ export default function MathParabolaSimulator() {
           {/* RIGHT: AI plot canvas */}
           <aside className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-[#0b0d12] p-4 shadow-sm sm:p-5">
             <div className="mb-3 flex items-center justify-between">
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
-                <LineChart className="h-3.5 w-3.5" />
+              <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                 {activeIdx === null
                   ? "AI Graph Canvas"
                   : `AI Plot · Statement ${activeIdx + 1}`}

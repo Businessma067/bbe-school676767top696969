@@ -5,7 +5,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import { explainCase } from "@/lib/explain-case.functions";
-import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, Sparkles, PanelLeftClose, PanelLeftOpen } from "lucide-react";
+import { Check, X, ChevronLeft, ChevronRight, ChevronDown, Loader2, RotateCcw, BookOpen, AlertTriangle, NotebookPen, Settings2, Lock, PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { TheoryReader } from "@/components/TheoryReader";
 import { CaseContextRich } from "@/components/CaseContextRich";
 import { ExplanationText } from "@/components/ExplanationText";
@@ -15,6 +15,13 @@ import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedMo
 import { SiteHeader } from "@/components/SiteHeader";
 import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import {
+  practiceInlineAiButtonClass,
+  practiceInlineExplanationButtonClass,
+  practicePanelSectionLabelClass,
+  practiceSubmitButtonClass,
+  practiceTryAgainButtonClass,
+} from "@/lib/practice-button-styles";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { useSetPracticeCase } from "@/lib/practice-case-context";
@@ -942,7 +949,7 @@ function CaseCard({
                 <div className="mt-3 flex flex-wrap items-center gap-2">
                   <button
                     onClick={() => setOpenExpl((s) => ({ ...s, [i]: !s[i] }))}
-                    className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground hover:bg-secondary"
+                    className={practiceInlineExplanationButtonClass}
                     aria-expanded={!!openExpl[i]}
                   >
                     Explanation
@@ -950,14 +957,8 @@ function CaseCard({
                   </button>
                   <button
                     onClick={() => onRequestExplanation(i)}
-                    className={cn(
-                      "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                      activeExplanationIndex === i
-                        ? "border-primary bg-primary text-primary-foreground"
-                        : "border-primary/60 bg-primary/10 text-primary hover:bg-primary/20",
-                    )}
+                    className={practiceInlineAiButtonClass(activeExplanationIndex === i)}
                   >
-                    <Sparkles className="h-3 w-3" />
                     {activeExplanationIndex === i ? "AI textbook shown →" : "Show AI textbook explanation"}
                   </button>
                   {openExpl[i] && (
@@ -982,17 +983,16 @@ function CaseCard({
         {!checked ? (
           <button
             onClick={handleSubmit}
-            
-            className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 disabled:opacity-50"
+            className={practiceSubmitButtonClass}
           >
             Check Answers / Submit
           </button>
         ) : (
           <button
             onClick={handleReset}
-            className="inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:bg-secondary"
+            className={practiceTryAgainButtonClass}
           >
-            <RotateCcw className="h-4 w-4" /> Try again
+            Try again
           </button>
         )}
 
@@ -1163,12 +1163,9 @@ function ExplanationPanels({
     <div className="flex h-full flex-col gap-3" data-practice-surface>
       {/* Header */}
       <div className="flex items-center justify-between rounded-2xl border border-primary/40 bg-primary/5 px-4 py-2.5">
-        <div className="flex items-center gap-2">
-          <Sparkles className="h-4 w-4 text-primary" />
-          <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-            AI Explanation · Statement {state.statementIndex + 1}
-          </span>
-        </div>
+        <span className={practicePanelSectionLabelClass}>
+          AI Explanation · Statement {state.statementIndex + 1}
+        </span>
         <button
           onClick={onClose}
           aria-label="Close explanation"
@@ -1211,8 +1208,8 @@ function ExplanationPanels({
       {/* Panel C: Textbook Canvas */}
       <div className="min-h-0 flex-1 overflow-hidden rounded-2xl border border-border bg-[#fdf9f0] shadow-sm">
         <div className="flex items-center justify-between border-b border-border/60 bg-white/60 px-4 py-2">
-          <span className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-taupe">
-            <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
+          <span className="text-[10px] font-bold uppercase tracking-widest text-taupe">
+            Textbook Canvas
           </span>
           <span className="text-[9px] font-semibold uppercase tracking-widest text-muted-foreground">
             BBE School Textbook

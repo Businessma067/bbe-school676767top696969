@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Check, ChevronDown, RotateCcw, Sparkles, X, BookOpen } from "lucide-react";
+import { Check, ChevronDown, RotateCcw, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  practiceInlineAiButtonClass,
+  practiceInlineExplanationButtonClass,
+} from "@/lib/practice-button-styles";
 
 // Real case pulled verbatim from economics_cases (CASE 2.01)
 const CASE = {
@@ -292,7 +296,7 @@ export default function FiveStatementSimulator() {
 
                     {checked && (
                       <div className="mt-3 flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground">
+                        <span className={practiceInlineExplanationButtonClass}>
                           Explanation
                           <ChevronDown
                             className={cn(
@@ -303,14 +307,8 @@ export default function FiveStatementSimulator() {
                         </span>
                         <span
                           data-sim-ai={i}
-                          className={cn(
-                            "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                            activeExplIdx === i
-                              ? "border-primary bg-primary text-primary-foreground"
-                              : "border-primary/60 bg-primary/10 text-primary",
-                          )}
+                          className={practiceInlineAiButtonClass(activeExplIdx === i)}
                         >
-                          <Sparkles className="h-3 w-3" />
                           {activeExplIdx === i ? "AI textbook shown →" : "Show AI textbook explanation"}
                         </span>
                         {openExpl[i] && (
@@ -404,8 +402,8 @@ export default function FiveStatementSimulator() {
                 {/* Textbook Canvas */}
                 <div className="rounded-xl border border-border bg-background p-3 sm:p-4">
                   <div className="mb-2 flex items-center justify-between">
-                    <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-                      <BookOpen className="h-3.5 w-3.5" /> Textbook Canvas
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                      Textbook Canvas
                     </div>
                     <span className="text-[10px] text-muted-foreground">
                       Ch. {activeExplIdx + 2} · p. {110 + activeExplIdx * 6}

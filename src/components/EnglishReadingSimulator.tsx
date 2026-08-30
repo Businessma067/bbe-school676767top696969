@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Check, ChevronDown, RotateCcw, Sparkles, X, BookOpen } from "lucide-react";
+import { Check, ChevronDown, RotateCcw, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  practiceInlineAiButtonClass,
+  practiceInlineExplanationButtonClass,
+} from "@/lib/practice-button-styles";
 
 // Excerpt of the demo Reading passage (paragraphs 1–3), matching demo-practice/english TASK 1.
 const PASSAGE = `(1) For much of the late nineteenth and early twentieth centuries, the majority of the world's major economies operated under a monetary arrangement known as the classical gold standard, in which a country's currency was directly convertible into a fixed quantity of gold at a legally defined rate. Britain formally adopted the system in 1821, fixing the pound sterling at a rate of approximately 3.89 pounds per fine ounce of gold, a rate that would remain essentially unchanged for over a century. Other major powers followed at varying intervals: Germany adopted gold convertibility in 1871 following its unification and the receipt of French war reparations, while the United States, despite earlier bimetallic experiments, did not formally commit to a gold standard in law until the Gold Standard Act of 1900.
@@ -274,7 +278,7 @@ export default function EnglishReadingSimulator() {
 
                     {checked && (
                       <div className="mt-3 flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center gap-1 rounded-md border border-border bg-background px-2.5 py-1 text-[11px] font-semibold text-foreground">
+                        <span className={practiceInlineExplanationButtonClass}>
                           Explanation
                           <ChevronDown
                             className={cn(
@@ -285,14 +289,8 @@ export default function EnglishReadingSimulator() {
                         </span>
                         <span
                           data-sim-ai={i}
-                          className={cn(
-                            "inline-flex items-center gap-1 rounded-md border px-2.5 py-1 text-[11px] font-semibold transition-colors",
-                            activeIdx === i
-                              ? "border-primary bg-primary text-primary-foreground"
-                              : "border-primary/60 bg-primary/10 text-primary",
-                          )}
+                          className={practiceInlineAiButtonClass(activeIdx === i)}
                         >
-                          <Sparkles className="h-3 w-3" />
                           {activeIdx === i ? "Highlighted in passage →" : "Show AI text explanation"}
                         </span>
                         {openExpl[i] && (
@@ -339,8 +337,7 @@ export default function EnglishReadingSimulator() {
             className="min-h-0 overflow-y-auto rounded-2xl border border-border bg-card p-4 shadow-sm sm:p-5"
           >
             <div className="mb-3 flex items-center justify-between">
-              <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
-                <BookOpen className="h-3.5 w-3.5" />
+              <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
                 {activeIdx === null
                   ? "Reading Passage"
                   : `AI Highlight · Statement ${activeIdx + 1}`}
