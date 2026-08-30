@@ -13,7 +13,15 @@ import { cn } from "@/lib/utils";
 const ACCENT = "#E85D3A";
 const LETTERS = "ABCDEF";
 
-const FIRST_QUESTION = {
+type SimQuestion = {
+  caseId: string;
+  chapter: string;
+  title: string;
+  context: string;
+  statements: string[];
+};
+
+const FIRST_QUESTION: SimQuestion = {
   caseId: "ECON-3.07",
   chapter: "Chapter 3 · Focus on different types of businesses",
   title: "Factors of production and business sectors",
@@ -27,6 +35,23 @@ const FIRST_QUESTION = {
     "Because the bakery is small and family-run, it cannot be described as profit-oriented.",
   ],
 };
+
+const SECOND_QUESTION: SimQuestion = {
+  caseId: "ECON-3.12",
+  chapter: "Chapter 3 · Focus on different types of businesses",
+  title: "Stakeholders of a growing company",
+  context:
+    "A regional logistics company plans to open a new depot. Local residents complain about noise, employees ask for more shifts, and the bank that financed the fleet asks for updated figures.",
+  statements: [
+    "Employees are internal stakeholders, while local residents are external stakeholders.",
+    "The bank is a stakeholder because the repayment of its loan depends on the company's performance.",
+    "Only shareholders can be described as stakeholders of the company.",
+    "Conflicting stakeholder interests can force management to compromise between growth and local acceptance.",
+  ],
+};
+
+const SIM_QUESTIONS: SimQuestion[] = [FIRST_QUESTION, SECOND_QUESTION];
+
 
 
 /**
