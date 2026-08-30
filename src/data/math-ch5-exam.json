@@ -1,644 +1,644 @@
 {
- "tasks": [
-  {
-   "id": "math-5-61",
-   "case_id": "MATH 5.61",
-   "title": "Exam-style tasks - 1",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A theater sold adult tickets at \\$12 and student tickets at \\$7. One evening it sold 240 tickets for a total of \\$2,310. Then exactly 126 adult tickets were sold.",
-    "A chemist mixes a 20% acid solution with a 50% acid solution to obtain 30 liters of a 32% acid solution. Then exactly 12 liters of the 50% solution are required.",
-    "The sum of two numbers is 47 and their difference is 15. The larger number is 31.",
-    "Adult tickets cost \\$18 and child tickets cost \\$11. Selling 85 tickets brought in \\$1,240. Then the number of adult tickets sold must have been 45.",
-    "A boat travels 24 km upstream in 3 hours and the same 24 km downstream in 2 hours. Then the still-water speed of the boat is exactly 10 km/h."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nLet $a$ be adult tickets and $s$ student tickets.\n\n$$a + s = 240$$\n\n$$12a + 7s = 2310$$\n\nSubstitute $s = 240 - a$:\n\n$$12a + 7(240 - a) = 2310$$\n\n$$12a + 1680 - 7a = 2310$$\n\n$$5a = 630$$\n\n$$a = 126$$\n\nThe claim matches the unique solution, so the statement is True.",
-    "**B.** → True\n\nLet $x$ be liters of the 20% solution and $y$ liters of the 50% solution.\n\n$$x + y = 30$$\n\n$$0.20x + 0.50y = 0.32 \\cdot 30 = 9.6$$\n\nWith $x = 30 - y$:\n\n$$0.20(30 - y) + 0.50y = 9.6$$\n\n$$6 - 0.20y + 0.50y = 9.6$$\n\n$$0.30y = 3.6$$\n\n$$y = 12$$\n\nExactly 12 liters of the 50% solution are required, so the statement is True.",
-    "**C.** → True\n\nLet $L$ be the larger number and $S$ the smaller.\n\n$$L + S = 47$$\n\n$$L - S = 15$$\n\nAdding gives\n\n$$2L = 62$$\n\n$$L = 31$$\n\nThe larger number is 31, so the statement is True.",
-    "**D.** → False\n\nLet $a$ be adult tickets and $c$ child tickets.\n\n$$a + c = 85$$\n\n$$18a + 11c = 1240$$\n\n$$c = 85 - a$$\n\n$$18a + 11(85 - a) = 1240$$\n\n$$18a + 935 - 11a = 1240$$\n\n$$7a = 305$$\n\n$$a = \\dfrac{305}{7} \\approx 43.57$$\n\nThat is not an integer ticket count. Checking $a = 45$:\n\n$$18(45) + 11(40) = 810 + 440 = 1250 \\ne 1240$$\n\nThe claim fails, so the statement is False.",
-    "**E.** → True\n\nLet $b$ be still-water speed and $c$ current speed in km/h.\n\n$$b - c = \\dfrac{24}{3} = 8$$\n\n$$b + c = \\dfrac{24}{2} = 12$$\n\nAdding:\n\n$$2b = 20$$\n\n$$b = 10$$\n\nThe still-water speed is exactly 10 km/h, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 61,
-   "solution_overview": "Ticket counts, acid mixture, sum-difference, non-integer ticket trap, and upstream/downstream speeds.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-62",
-   "case_id": "MATH 5.62",
-   "title": "Exam-style tasks - 2",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Anna is twice as old as Ben. In 6 years, Anna will be 1.5 times as old as Ben will be then. Anna is now 24 years old.",
-    "A jar holds nickels (\\$0.05) and dimes (\\$0.10). There are 40 coins worth \\$2.75 in total. Then there are exactly 25 nickels.",
-    "Two printers together produce 180 pages in 1 hour. Alone, printer A needs 3 hours for those 180 pages and printer B needs 2 hours. This pair of rate statements is consistent with the joint output.",
-    "A rectangle has perimeter 56 cm and the length is 4 cm more than the width. Then the area is exactly 192 $cm^{2}$.",
-    "Coffee A costs \\$8/kg and coffee B costs \\$12/kg. Mixing 5 kg of A with $y$ kg of B yields a blend costing exactly \\$9.50/kg. Then $y = 3$."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nLet Anna's age be $a$ and Ben's age $b$.\n\n$$a = 2b$$\n\n$$a + 6 = 1.5(b + 6)$$\n\n$$2b + 6 = 1.5b + 9$$\n\n$$0.5b = 3$$\n\n$$b = 6$$\n\n$$a = 12$$\n\nAnna is 12, not 24, so the statement is False.",
-    "**B.** → True\n\nLet $n$ be nickels and $d$ dimes.\n\n$$n + d = 40$$\n\n$$5n + 10d = 275$$\n\n(working in cents). Divide by 5:\n\n$$n + 2d = 55$$\n\nSubtract $n + d = 40$:\n\n$$d = 15$$\n\n$$n = 25$$\n\nThere are exactly 25 nickels, so the statement is True.",
-    "**C.** → False\n\nAlone, A produces $\\dfrac{180}{3} = 60$ pages/h and B produces $\\dfrac{180}{2} = 90$ pages/h. Together:\n\n$$60 + 90 = 150 \\ne 180$$\n\nThe joint claim contradicts the individual rates, so the statement is False.",
-    "**D.** → True\n\n$$2(\\ell + w) = 56$$\n\n$$\\ell + w = 28$$\n\n$$\\ell = w + 4$$\n\n$$2w + 4 = 28$$\n\n$$w = 12$$\n\n$$\\ell = 16$$\n\n$$\\ell w = 192$$\n\nThe area is 192 $cm^{2}$, so the statement is True.",
-    "**E.** → True\n\n$$\\dfrac{40 + 12y}{5 + y} = 9.5$$\n\n$$40 + 12y = 47.5 + 9.5y$$\n\n$$2.5y = 7.5$$\n\n$$y = 3$$\n\nExactly 3 kg of B are used, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 62,
-   "solution_overview": "Ages, coin values, inconsistent printer rates, rectangle area, and coffee blend cost.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-63",
-   "case_id": "MATH 5.63",
-   "title": "Exam-style tasks - 3",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A two-digit number equals 4 times the sum of its digits, and its units digit is twice its tens digit. If the tens digit is 2, then the number is 24.",
-    "Pens cost \\$p each and notebooks cost \\$n each. Two pens and three notebooks cost \\$21, while four pens and one notebook cost \\$17. Then $p = 3$ and $n = 5$ is the unique price pair.",
-    "An \\$8,000 investment is split between account A at 4% and account B at 6% simple annual interest, yielding \\$400 interest in one year. Then exactly \\$5,000 was placed in A.",
-    "A 40% antifreeze mix is combined with a 10% mix to make 20 liters of 25% antifreeze. Then exactly 10 liters of the 40% mix are used.",
-    "The linear system $2x + 3y = 12$ and $4x + 6y = 24$ has exactly one solution $(x, y)$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$10t + u = 4(t + u)$$\n\n$$6t = 3u$$\n\n$$u = 2t$$\n\nWith $t = 2$: $u = 4$, so the number is 24. The claim holds, so the statement is True.",
-    "**B.** → True\n\n$$2p + 3n = 21$$\n\n$$4p + n = 17$$\n\n$$n = 17 - 4p$$\n\n$$2p + 3(17 - 4p) = 21$$\n\n$$51 - 10p = 21$$\n\n$$p = 3$$\n\n$$n = 5$$\n\nThe determinant $2\\cdot 1 - 4\\cdot 3 = -10 \\ne 0$, so the solution is unique. so the statement is True.",
-    "**C.** → False\n\n$$A + B = 8000$$\n\n$$0.04A + 0.06B = 400$$\n\n$$0.04A + 0.06(8000 - A) = 400$$\n\n$$480 - 0.02A = 400$$\n\n$$A = 4000$$\n\nExactly \\$4,000 was placed in A, not \\$5,000, so the statement is False.",
-    "**D.** → True\n\n$$x + y = 20$$\n\n$$0.40x + 0.10y = 5$$\n\n$$0.40x + 0.10(20 - x) = 5$$\n\n$$2 + 0.30x = 5$$\n\n$$x = 10$$\n\nExactly 10 liters of the 40% mix are used, so the statement is True.",
-    "**E.** → False\n\nThe second equation is twice the first, so the equations describe the same line. There are infinitely many solutions, not exactly one. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 63,
-   "solution_overview": "Digit constraint, unique prices, interest split trap, antifreeze mix, dependent equations.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-64",
-   "case_id": "MATH 5.64",
-   "title": "Exam-style tasks - 4",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Three adult tickets and two child tickets cost \\$46. One adult ticket and four child tickets cost \\$32. Then an adult ticket costs exactly \\$12.",
-    "A two-digit number has digit sum 11, and the number exceeds its digit reversal by 27. The number is 74.",
-    "The system $2x + 3y = 50$ and $4x + 6y = 100$ has a unique solution.",
-    "Milk with 3% fat is mixed with milk with 5% fat to obtain 40 liters of 4.5% milk. Then exactly 10 liters of the 3% milk are used.",
-    "Worker A alone finishes a job in 6 hours and worker B alone finishes it in 12 hours. Working together they finish the job in under 3 hours."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$3a + 2c = 46$$\n\n$$a + 4c = 32$$\n\n$$a = 32 - 4c$$\n\n$$3(32 - 4c) + 2c = 46$$\n\n$$96 - 10c = 46$$\n\n$$c = 5$$\n\n$$a = 12$$\n\nAn adult ticket costs \\$12, so the statement is True.",
-    "**B.** → True\n\n$$t + u = 11$$\n\n$$9t - 9u = 27$$\n\n$$t - u = 3$$\n\n$$2t = 14$$\n\n$$t = 7$$\n\n$$u = 4$$\n\nThe number is 74, so the statement is True.",
-    "**C.** → False\n\nThe second equation is twice the first, so the equations are dependent. There is not a unique solution, so the statement is False.",
-    "**D.** → True\n\n$$x + y = 40$$\n\n$$0.03x + 0.05y = 1.8$$\n\n$$0.03x + 0.05(40 - x) = 1.8$$\n\n$$2 - 0.02x = 1.8$$\n\n$$x = 10$$\n\nExactly 10 liters of the 3% milk are used, so the statement is True.",
-    "**E.** → False\n\n$$\\dfrac{1}{6} + \\dfrac{1}{12} = \\dfrac{1}{4}$$\n\nTogether they need exactly 4 hours, which is not under 3. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 64,
-   "solution_overview": "Ticket prices, digit reversal, dependent system, milk-fat mixture, work-rate time.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-65",
-   "case_id": "MATH 5.65",
-   "title": "Exam-style tasks - 5",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Two single rooms and one double room cost \\$280. One single and three doubles cost \\$440. Then a single room costs \\$80.",
-    "A mother is three times as old as her daughter. In 12 years the mother will be twice as old as the daughter will be then. The mother is now 36.",
-    "The system $x + y = 10$ and $2x + 2y = 25$ has at least one real solution.",
-    "Two pens and three notebooks cost \\$22. One pen and two notebooks cost \\$13. Then a pen costs \\$5.",
-    "A warehouse holds $x$ crates of type A and $y$ crates of type B with $3x + 5y = 100$ and $x + 2y = 35$. Then $x = 25$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$2s + d = 280$$\n\n$$s + 3d = 440$$\n\n$$d = 280 - 2s$$\n\n$$s + 3(280 - 2s) = 440$$\n\n$$840 - 5s = 440$$\n\n$$s = 80$$\n\nA single room costs \\$80, so the statement is True.",
-    "**B.** → True\n\n$$m = 3d$$\n\n$$m + 12 = 2(d + 12)$$\n\n$$3d + 12 = 2d + 24$$\n\n$$d = 12$$\n\n$$m = 36$$\n\nThe mother is now 36, so the statement is True.",
-    "**C.** → False\n\nTwice the first equation is $2x + 2y = 20 \\ne 25$. The system is inconsistent, so the statement is False.",
-    "**D.** → True\n\n$$2p + 3n = 22$$\n\n$$p + 2n = 13$$\n\n$$p = 13 - 2n$$\n\n$$2(13 - 2n) + 3n = 22$$\n\n$$26 - n = 22$$\n\n$$n = 4$$\n\n$$p = 5$$\n\nA pen costs \\$5, so the statement is True.",
-    "**E.** → True\n\n$$x = 35 - 2y$$\n\n$$3(35 - 2y) + 5y = 100$$\n\n$$105 - y = 100$$\n\n$$y = 5$$\n\n$$x = 25$$\n\nThus $x = 25$, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 65,
-   "solution_overview": "Hotel rates, mother/daughter ages, inconsistent system, pen prices, warehouse inventory.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-66",
-   "case_id": "MATH 5.66",
-   "title": "Exam-style tasks - 6",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A vendor sells apples at \\$2/kg and oranges at \\$3/kg. Selling 15 kg of fruit brings \\$36. Then exactly 9 kg of apples were sold.",
-    "Plane speed in still air is $p$ km/h and wind speed is $w$ km/h. A 900 km trip takes 3 hours with the wind and 5 hours against the wind. Then $p = 240$.",
-    "The lines $3x - y = 7$ and $6x - 2y = 10$ intersect at exactly one point.",
-    "A 70% alcohol solution is diluted with pure water (0%) to make 14 liters of 40% alcohol. Then 8 liters of the 70% solution are used.",
-    "Break-even for products A and B: contribution margins \\$5 and \\$8, fixed cost \\$200, and total units sold $x + y = 30$ with $5x + 8y = 200$. Then exactly 10 units of A are sold at break-even."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$a + o = 15$$\n\n$$2a + 3o = 36$$\n\n$$2a + 3(15 - a) = 36$$\n\n$$45 - a = 36$$\n\n$$a = 9$$\n\nExactly 9 kg of apples were sold, so the statement is True.",
-    "**B.** → True\n\n$$p + w = 300$$\n\n$$p - w = 180$$\n\n$$2p = 480$$\n\n$$p = 240$$\n\nStill-air speed is 240 km/h, so the statement is True.",
-    "**C.** → False\n\nTwice the first equation is $6x - 2y = 14 \\ne 10$. The lines are parallel and distinct, so they do not intersect. so the statement is False.",
-    "**D.** → True\n\n$$0.70x = 0.40 \\cdot 14 = 5.6$$\n\n$$x = 8$$\n\nExactly 8 liters of the 70% solution are used, so the statement is True.",
-    "**E.** → False\n\n$$5x + 8(30 - x) = 200$$\n\n$$240 - 3x = 200$$\n\n$$x = \\dfrac{40}{3} \\approx 13.33 \\ne 10$$\n\nChecking $x = 10$: $50 + 160 = 210 \\ne 200$. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 66,
-   "solution_overview": "Fruit mix, wind-assisted flight, parallel lines, alcohol dilution, non-integer break-even.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-67",
-   "case_id": "MATH 5.67",
-   "title": "Exam-style tasks - 7",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A collection of 50-cent and 20-cent stamps has 18 stamps worth \\$6.60 in total. Then there are exactly 10 of the 50-cent stamps.",
-    "The system $x + 2y = 14$ and $3x - y = 7$ has solution $x = 4$, $y = 5$.",
-    "A canoeist rows 12 km upstream in 4 hours and 12 km downstream in 1.5 hours. The current speed is 2.5 km/h.",
-    "Two adult and three student tickets cost \\$31; four adult and one student ticket cost \\$27. An adult ticket costs \\$5.",
-    "The system $x - y = 4$ and $2x - 2y = 8$ has infinitely many solutions."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$f + t = 18$$\n\n$$50f + 20t = 660$$\n\n$$5f + 2(18 - f) = 66$$\n\n$$3f + 36 = 66$$\n\n$$f = 10$$\n\nExactly 10 of the 50-cent stamps, so the statement is True.",
-    "**B.** → True\n\n$$y = 3x - 7$$\n\n$$x + 2(3x - 7) = 14$$\n\n$$7x - 14 = 14$$\n\n$$x = 4$$\n\n$$y = 5$$\n\nThe solution is $(4, 5)$, so the statement is True.",
-    "**C.** → True\n\n$$b - c = 3$$\n\n$$b + c = 8$$\n\n$$2c = 5$$\n\n$$c = 2.5$$\n\nThe current is 2.5 km/h, so the statement is True.",
-    "**D.** → True\n\n$$2a + 3s = 31$$\n\n$$4a + s = 27$$\n\n$$s = 27 - 4a$$\n\n$$2a + 3(27 - 4a) = 31$$\n\n$$81 - 10a = 31$$\n\n$$a = 5$$\n\nAn adult ticket costs \\$5, so the statement is True.",
-    "**E.** → True\n\nThe second equation is twice the first, so they describe the same line. There are infinitely many solutions, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 67,
-   "solution_overview": "Stamps, linear solve, canoe current, ticket prices, dependent equations.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-68",
-   "case_id": "MATH 5.68",
-   "title": "Exam-style tasks - 8",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A factory makes desks costing \\$40 to produce and chairs costing \\$25. Producing 12 desks and some chairs costs \\$730 in total. Then exactly 10 chairs were produced.",
-    "Kai is 5 years older than Lia. Five years ago, Kai was twice as old as Lia was then. Kai is now 15.",
-    "Mixing 2 kg of nuts at \\$9/kg with $m$ kg of dried fruit at \\$6/kg yields a mix worth \\$7.50/kg. Then $m = 2$.",
-    "The system $5x + 2y = 19$ and $3x - 2y = 5$ has solution $x = 3$, $y = 2$.",
-    "The inventory equation $4x + 6y = 48$ forces a unique pair $(x, y)$ of whole-number stock units."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$480 + 25c = 730$$\n\n$$c = 10$$\n\nExactly 10 chairs, so the statement is True.",
-    "**B.** → True\n\n$$k = \\ell + 5$$\n\n$$k - 5 = 2(\\ell - 5)$$\n\n$$\\ell = 2\\ell - 10$$\n\n$$\\ell = 10$$\n\n$$k = 15$$\n\nKai is now 15, so the statement is True.",
-    "**C.** → True\n\n$$\\dfrac{18 + 6m}{2 + m} = 7.5$$\n\n$$18 + 6m = 15 + 7.5m$$\n\n$$m = 2$$\n\nThus $m = 2$, so the statement is True.",
-    "**D.** → True\n\nAdding the equations: $8x = 24$, so $x = 3$ and $y = 2$. so the statement is True.",
-    "**E.** → False\n\n$$2x + 3y = 24$$ is one constraint on two variables. Whole-number solutions include $(0,8)$, $(3,6)$, $(6,4)$, $(9,2)$, $(12,0)$. Not unique, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 68,
-   "solution_overview": "Production cost, ages, nut-fruit blend, elimination solve, underdetermined inventory.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-69",
-   "case_id": "MATH 5.69",
-   "title": "Exam-style tasks - 9",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A taxi charges flag drop \\$F$ plus \\$r$ per km. An 8 km ride costs \\$18 and a 15 km ride costs \\$29. Then $F = 6$ and $r = 1.5$.",
-    "Two investments totaling \\$12,000 earn 5% and 8%. Total annual interest is \\$750. Then \\$7,000 is in the 5% account.",
-    "A rectangle's length is thrice its width and its perimeter is 64 m. The area is 192 $m^{2}$.",
-    "Solution A is 15% acid and B is 45% acid. Mixing them to get 24 L of 25% acid uses more than 15 L of A.",
-    "The equations $x + y = 9$ and $2x + 2y = 18$ describe the same line, so every pair with $x + y = 9$ is a solution."
-   ],
-   "answer_key": [
-    false,
-    true,
-    true,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$F + 8r = 18$$\n\n$$F + 15r = 29$$\n\n$$7r = 11$$\n\n$$r = \\dfrac{11}{7}$$\n\n$$F = \\dfrac{38}{7}$$\n\nThe pair $(6, 1.5)$ fails the second ride ($28.5 \\ne 29$), so the statement is False.",
-    "**B.** → True\n\n$$0.05x + 0.08(12000 - x) = 750$$\n\n$$960 - 0.03x = 750$$\n\n$$x = 7000$$\n\nExactly \\$7,000 is in the 5% account, so the statement is True.",
-    "**C.** → True\n\n$$2(3w + w) = 64$$\n\n$$w = 8$$\n\n$$\\ell = 24$$\n\nArea $192$, so the statement is True.",
-    "**D.** → True\n\n$$0.15a + 0.45(24 - a) = 6$$\n\n$$10.8 - 0.30a = 6$$\n\n$$a = 16 > 15$$\n\nMore than 15 L of A are used, so the statement is True.",
-    "**E.** → True\n\nThe second equation is twice the first, so every pair with $x + y = 9$ works. so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 69,
-   "solution_overview": "Taxi fare trap, interest allocation, 3:1 rectangle, acid mix threshold, dependent equations.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-70",
-   "case_id": "MATH 5.70",
-   "title": "Exam-style tasks - 10",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A boat travels at still-water speed 15 km/h. Going 30 km upstream takes 3 hours. Then the current is 5 km/h, and returning the same 30 km downstream takes exactly 1.5 hours under that current.",
-    "Two sandwiches and one drink cost \\$11; one sandwich and two drinks cost \\$13. A sandwich costs \\$3.",
-    "The system $3x + y = 10$ and $6x + 2y = 15$ has infinitely many solutions.",
-    "A 40-question exam awards 4 points per correct answer and subtracts 1 point per wrong answer (every question answered). A score of 95 means exactly 27 answers were correct.",
-    "Four short 3 m rods and two long 5 m rods use 22 m of stock in total. Then one short and five long rods use more than 28 m of stock."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$15 - c = 10 \\Rightarrow c = 5$$\n\nDownstream: $\\dfrac{30}{20} = 1.5$ hours. Both parts hold, so the statement is True.",
-    "**B.** → True\n\n$$2s + d = 11$$\n\n$$s + 2d = 13$$\n\n$$4s + 2d = 22$$\n\n$$3s = 9$$\n\n$$s = 3$$\n\nA sandwich costs \\$3, so the statement is True.",
-    "**C.** → False\n\nTwice the first would be $6x + 2y = 20 \\ne 15$. Parallel distinct lines: no solutions, not infinitely many. so the statement is False.",
-    "**D.** → True\n\n$$4c - (40 - c) = 95$$\n\n$$5c = 135$$\n\n$$c = 27$$\n\nExactly 27 correct, so the statement is True.",
-    "**E.** → False\n\n$$3 + 25 = 28$$\n\nmeters, which is not more than 28. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 70,
-   "solution_overview": "Upstream current check, lunch prices, parallel inconsistent system, exam scoring, rod-length comparison.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-71",
-   "case_id": "MATH 5.71",
-   "title": "Exam-style tasks - 11",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A merchant mixes tea worth \\$4/kg with tea worth \\$7/kg to get 30 kg worth \\$5.20/kg. Then 18 kg of the cheaper tea are used.",
-    "Two numbers sum to 100. Twice the first plus three times the second equals 250. The first number is 50.",
-    "Car A travels 20 km/h faster than car B. Together they cover 300 km in the same 3 hours heading in opposite directions from one point. Then car B's speed is 40 km/h.",
-    "The system $x = 2y + 1$ and $3x - 6y = 4$ has a unique real solution.",
-    "Printer ink: 2 black + 1 color cartridge cost \\$45; 1 black + 3 color cost \\$55. A color cartridge costs \\$15."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$4c + 7(30 - c) = 156$$\n\n$$210 - 3c = 156$$\n\n$$c = 18$$\n\nExactly 18 kg of the cheaper tea, so the statement is True.",
-    "**B.** → True\n\n$$2x + 3(100 - x) = 250$$\n\n$$300 - x = 250$$\n\n$$x = 50$$\n\nThe first number is 50, so the statement is True.",
-    "**C.** → True\n\n$$3b + 3(b + 20) = 300$$\n\n$$6b = 240$$\n\n$$b = 40$$\n\nCar B's speed is 40 km/h, so the statement is True.",
-    "**D.** → False\n\n$$3(2y + 1) - 6y = 4$$\n\n$$3 = 4$$\n\nContradiction: no solution exists. so the statement is False.",
-    "**E.** → False\n\n$$2(55 - 3c) + c = 45$$\n\n$$110 - 5c = 45$$\n\n$$c = 13 \\ne 15$$\n\nso the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 71,
-   "solution_overview": "Tea blend, linear number pair, opposite cars, inconsistent system, ink cartridge prices.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-72",
-   "case_id": "MATH 5.72",
-   "title": "Exam-style tasks - 12",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A theater sold 120 tickets. Adult tickets are \\$15 and child tickets \\$9, totaling \\$1,500. Then 75 adult tickets were sold.",
-    "Two kg of alloy A and three kg of alloy B cost \\$28; four kg of A and one kg of B cost \\$26. Then alloy A costs \\$5 per kg.",
-    "A 12 km trip walking takes 2 hours more than cycling the same distance. Cycling speed is three times walking speed. Then walking speed is 4 km/h.",
-    "The pair $(x, y) = (2, 5)$ solves both $3x + 2y = 16$ and $x - y = -3$.",
-    "The system $2x - y = 5$ and $4x - 2y = 11$ has a real solution."
-   ],
-   "answer_key": [
-    false,
-    true,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$15a + 9(120 - a) = 1500$$\n\n$$6a = 420$$\n\n$$a = 70 \\ne 75$$\n\nso the statement is False.",
-    "**B.** → True\n\n$$B = 26 - 4A$$\n\n$$2A + 3(26 - 4A) = 28$$\n\n$$78 - 10A = 28$$\n\n$$A = 5$$\n\nAlloy A costs \\$5/kg, so the statement is True.",
-    "**C.** → True\n\n$$\\dfrac{12}{w} - \\dfrac{12}{3w} = 2$$\n\n$$\\dfrac{8}{w} = 2$$\n\n$$w = 4$$\n\nWalking speed is 4 km/h, so the statement is True.",
-    "**D.** → True\n\n$$3(2) + 2(5) = 16$$\n\n$$2 - 5 = -3$$\n\nBoth hold, so the statement is True.",
-    "**E.** → False\n\nTwice the first gives $4x - 2y = 10 \\ne 11$. No solution. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 72,
-   "solution_overview": "Ticket overcount trap, alloy prices, walk vs cycle, point verification, inconsistent parallel system.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-73",
-   "case_id": "MATH 5.73",
-   "title": "Exam-style tasks - 13",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A piggy bank has \\$1 and \\$5 coins. Thirty coins total \\$78. Then there are exactly 12 of the \\$5 coins.",
-    "Supply and demand curves $p = 40 - 2q$ and $p = 10 + q$ meet at equilibrium quantity $q = 10$.",
-    "Three tulip packs and two daffodil packs cost \\$26; one tulip and four daffodil packs cost \\$22. A tulip pack costs \\$6.",
-    "The only real solution of $x + y = 7$ and $2x + 3y = 18$ is $(x, y) = (3, 4)$.",
-    "Mixing 40% and 70% acid to get 50 L of 52% acid uses 30 L of the 40% acid."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$30 - f + 5f = 78$$\n\n$$4f = 48$$\n\n$$f = 12$$\n\nExactly 12 of the \\$5 coins, so the statement is True.",
-    "**B.** → True\n\n$$40 - 2q = 10 + q$$\n\n$$q = 10$$\n\nEquilibrium quantity is 10, so the statement is True.",
-    "**C.** → True\n\n$$t = 22 - 4d$$\n\n$$3(22 - 4d) + 2d = 26$$\n\n$$66 - 10d = 26$$\n\n$$d = 4$$\n\n$$t = 6$$\n\nA tulip pack costs \\$6, so the statement is True.",
-    "**D.** → True\n\n$$2x + 3(7 - x) = 18$$\n\n$$21 - x = 18$$\n\n$$x = 3$$\n\n$$y = 4$$\n\nThe unique solution is $(3, 4)$, so the statement is True.",
-    "**E.** → True\n\n$$0.4x + 0.7(50 - x) = 26$$\n\n$$35 - 0.3x = 26$$\n\n$$x = 30$$\n\nExactly 30 L of the 40% acid, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 73,
-   "solution_overview": "Coins, market equilibrium, garden packs, unique linear solution, acid blend.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-74",
-   "case_id": "MATH 5.74",
-   "title": "Exam-style tasks - 14",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A ferry crosses 20 km with the current in 1 hour and against the current in 2.5 hours. Still-water speed is 14 km/h.",
-    "Laptop price $L$ and tablet price $T$ satisfy $2L + T = 2800$ and $L + 3T = 2400$. Then $L = 1200$.",
-    "Nonnegative integers $x, y$ satisfy $x + 2y = 11$ and $3x + y = 18$. Then $(x, y) = (5, 3)$ is the unique solution in nonnegative integers.",
-    "A 25% saline solution and an 80% saline solution make 10 kg of 40% saline. More than 7 kg of the 25% solution are needed.",
-    "The lines $y = 2x + 1$ and $y = 2x - 4$ intersect in the first quadrant."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$b + c = 20$$\n\n$$b - c = 8$$\n\n$$b = 14$$\n\nStill-water speed is 14 km/h, so the statement is True.",
-    "**B.** → True\n\n$$T = 2800 - 2L$$\n\n$$L + 3(2800 - 2L) = 2400$$\n\n$$8400 - 5L = 2400$$\n\n$$L = 1200$$\n\nThus $L = 1200$, so the statement is True.",
-    "**C.** → True\n\n$$x = 11 - 2y$$\n\n$$3(11 - 2y) + y = 18$$\n\n$$33 - 5y = 18$$\n\n$$y = 3$$\n\n$$x = 5$$\n\nUnique nonnegative integer solution $(5, 3)$, so the statement is True.",
-    "**D.** → True\n\n$$0.25x + 0.80(10 - x) = 4$$\n\n$$8 - 0.55x = 4$$\n\n$$x = \\dfrac{80}{11} \\approx 7.27 > 7$$\n\nMore than 7 kg of the 25% solution are needed, so the statement is True.",
-    "**E.** → False\n\n$2x + 1 = 2x - 4$ is impossible. Parallel lines never intersect. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 74,
-   "solution_overview": "Ferry current, device prices, integer system, saline mix threshold, parallel lines.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-75",
-   "case_id": "MATH 5.75",
-   "title": "Exam-style tasks - 15",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A bakery sells muffins at \\$2 and cookies at \\$1.50. Selling 40 items brings \\$70. Then exactly 20 muffins were sold.",
-    "Two passenger cars and one freight car weigh 85 tons; one passenger and three freight cars weigh 105 tons. A passenger car weighs 30 tons.",
-    "Two ages sum to 50 and differ by 8. The older age is 29.",
-    "The equations $3x + 5y = 60$ and $6x + 10y = 120$ admit infinitely many real solutions.",
-    "A chemist needs 8 L of 30% acid using 20% and 50% stock. Then 5 L of the 20% stock and 3 L of the 50% stock work."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$2m + 1.5(40 - m) = 70$$\n\n$$60 + 0.5m = 70$$\n\n$$m = 20$$\n\nExactly 20 muffins, so the statement is True.",
-    "**B.** → True\n\n$$p = 105 - 3f$$\n\n$$2(105 - 3f) + f = 85$$\n\n$$210 - 5f = 85$$\n\n$$f = 25$$\n\n$$p = 30$$\n\nA passenger car weighs 30 tons, so the statement is True.",
-    "**C.** → True\n\n$$L + S = 50$$\n\n$$L - S = 8$$\n\n$$L = 29$$\n\nThe older age is 29, so the statement is True.",
-    "**D.** → True\n\nThe second equation is twice the first, so they describe one line. Infinitely many solutions exist, so the statement is True.",
-    "**E.** → False\n\n$$0.2\\cdot 5 + 0.5\\cdot 3 = 2.5 \\ne 0.3\\cdot 8 = 2.4$$\n\nSolving: $0.2x + 0.5(8 - x) = 2.4$ gives $x = \\dfrac{16}{3} \\approx 5.33$, not 5. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 75,
-   "solution_overview": "Bakery mix, railcar weights, age sum-difference, dependent revenue line, acid volume trap.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-76",
-   "case_id": "MATH 5.76",
-   "title": "Exam-style tasks - 16",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Five cars and three motorcycles pay \\$39 in parking; two cars and six motorcycles pay \\$30. Then a car's fee is \\$6.",
-    "A phone plan has monthly fee $F$ plus rate $r$ per minute. Forty minutes cost \\$18 and one hundred minutes cost \\$30. Then $r = 0.20$.",
-    "An isosceles triangle has equal sides $s$, base $b$, perimeter 50, and $s = 2b$. Then $s = 20$.",
-    "The system $x + 2y = 7$ and $2x + 4y = 10$ has no real solution.",
-    "Apples cost \\$2.50/kg and pears \\$3.50/kg. Buying 6 kg total for \\$18 means exactly 4 kg of apples were bought."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$c + 3m = 15$$\n\n$$5(15 - 3m) + 3m = 39$$\n\n$$75 - 12m = 39$$\n\n$$m = 3$$\n\n$$c = 6$$\n\nA car's fee is \\$6, so the statement is True.",
-    "**B.** → True\n\n$$60r = 12$$\n\n$$r = 0.20$$\n\nThe per-minute rate is \\$0.20, so the statement is True.",
-    "**C.** → True\n\n$$2(2b) + b = 50$$\n\n$$b = 10$$\n\n$$s = 20$$\n\nThus $s = 20$, so the statement is True.",
-    "**D.** → True\n\nTwice the first is $2x + 4y = 14 \\ne 10$. No real solution, so the statement is True.",
-    "**E.** → False\n\n$$2.5a + 3.5(6 - a) = 18$$\n\n$$a = 3 \\ne 4$$\n\nso the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 76,
-   "solution_overview": "Parking fees, phone plan rate, isosceles perimeter, inconsistent system, fruit purchase trap.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-77",
-   "case_id": "MATH 5.77",
-   "title": "Exam-style tasks - 17",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A lab mixes protein powder at 80% protein with filler at 10% protein to make 14 kg of 50% protein mix. Then 8 kg of the 80% powder are used.",
-    "Two machines print $x$ and $y$ pages/min with $x + y = 25$ and $3x - y = 35$. Then $x = 15$.",
-    "Twelve bills of \\$5 and \\$10 total \\$95. Then there are seven \\$10 bills.",
-    "Selling $x$ of product A (contribution \\$5) and $y$ of B (contribution \\$6) with fixed cost \\$150 and $x + y = 40$ reaches break-even when $5x + 6y = 150$. Then $x = 30$ at break-even under that unit total.",
-    "The lines $x + y = 4$ and $2x + 2y = 9$ have infinitely many intersection points."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$0.8p + 0.1(14 - p) = 7$$\n\n$$1.4 + 0.7p = 7$$\n\n$$p = 8$$\n\nExactly 8 kg of the 80% powder, so the statement is True.",
-    "**B.** → True\n\nAdding $x + y = 25$ and $3x - y = 35$ gives $4x = 60$, so $x = 15$. so the statement is True.",
-    "**C.** → True\n\n$$5(12 - t) + 10t = 95$$\n\n$$60 + 5t = 95$$\n\n$$t = 7$$\n\nThere are seven \\$10 bills, so the statement is True.",
-    "**D.** → False\n\n$$5x + 6(40 - x) = 150$$\n\n$$240 - x = 150$$\n\n$$x = 90$$\n\nWhich contradicts $x + y = 40$ with $y \\ge 0$. Break-even is impossible under that unit total, so $x = 30$ fails. so the statement is False.",
-    "**E.** → False\n\nTwice $x + y = 4$ is $2x + 2y = 8 \\ne 9$. No intersection. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 77,
-   "solution_overview": "Protein blend, machine speeds, bill counts, break-even impossibility, parallel lines.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-78",
-   "case_id": "MATH 5.78",
-   "title": "Exam-style tasks - 18",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A river cruise goes 36 km downstream in 2 hours and returns upstream in 3 hours. Still-water speed is 15 km/h.",
-    "Adult tickets cost \\$12 and student tickets \\$8. Revenue \\$1,040 from 100 tickets means 65 adult tickets were sold.",
-    "The system $5x - 2y = 4$ and $x + 2y = 8$ has solution $(x, y) = (2, 3)$.",
-    "A 10% sugar syrup and a 25% sugar syrup make 15 L of 18% syrup. Then 7 L of the 10% syrup are used.",
-    "Every pair of the form $(t,\\, 5 - 2t)$ solves both $2x + y = 5$ and $4x + 2y = 10$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$b + c = 18$$\n\n$$b - c = 12$$\n\n$$b = 15$$\n\nStill-water speed is 15 km/h, so the statement is True.",
-    "**B.** → False\n\n$$12a + 8(100 - a) = 1040$$\n\n$$4a = 240$$\n\n$$a = 60 \\ne 65$$\n\nso the statement is False.",
-    "**C.** → True\n\nAdding gives $6x = 12$, so $x = 2$ and $y = 3$. so the statement is True.",
-    "**D.** → True\n\n$$0.10x + 0.25(15 - x) = 2.7$$\n\n$$3.75 - 0.15x = 2.7$$\n\n$$x = 7$$\n\nExactly 7 L of the 10% syrup, so the statement is True.",
-    "**E.** → True\n\nFor $x = t$, $y = 5 - 2t$, both equations hold identically for every real $t$. so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 78,
-   "solution_overview": "River cruise, fundraiser ticket trap, elimination solve, sugar syrup, parametric dependent solutions.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-79",
-   "case_id": "MATH 5.79",
-   "title": "Exam-style tasks - 19",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A workshop uses $x$ hours of machine A and $y$ hours of machine B with $2x + 3y = 30$ and $x + y = 12$. Then $x = 6$.",
-    "A two-digit number has tens digit 3 more than its units digit, and the number equals 7 times the sum of its digits. The number is 63.",
-    "Four burritos and two drinks cost \\$22; one burrito and three drinks cost \\$13. A burrito costs \\$4.",
-    "Combining some positive amounts of a 20% acid solution and a 30% acid solution can produce a 40% acid solution.",
-    "Pump A fills a tank in 4 hours and pump B fills it in 6 hours. Working together they fill the tank in under 2.5 hours."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$2x + 3(12 - x) = 30$$\n\n$$36 - x = 30$$\n\n$$x = 6$$\n\nThus $x = 6$, so the statement is True.",
-    "**B.** → True\n\n$$t = u + 3$$\n\n$$10(u + 3) + u = 7(2u + 3)$$\n\n$$11u + 30 = 14u + 21$$\n\n$$u = 3$$\n\n$$t = 6$$\n\nThe number is 63, so the statement is True.",
-    "**C.** → True\n\n$$2b + d = 11$$\n\n$$b + 3(11 - 2b) = 13$$\n\n$$33 - 5b = 13$$\n\n$$b = 4$$\n\nA burrito costs \\$4, so the statement is True.",
-    "**D.** → False\n\nAny mixture of 20% and 30% acid has concentration between 20% and 30%. Reaching 40% is impossible. so the statement is False.",
-    "**E.** → True\n\n$$\\dfrac{1}{4} + \\dfrac{1}{6} = \\dfrac{5}{12}$$\n\n$$T = 2.4 < 2.5$$\n\nTogether they finish in under 2.5 hours, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 79,
-   "solution_overview": "Machine hours, digit number, burrito prices, impossible mixture concentration, pump rates.",
-   "placeholder": false
-  },
-  {
-   "id": "math-5-80",
-   "case_id": "MATH 5.80",
-   "title": "Exam-style tasks - 20",
-   "subsection": "5.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A bookstore sells hardcovers at \\$28 and paperbacks at \\$12. Forty books bring \\$720. Then 15 hardcovers were sold.",
-    "An aircraft flies 500 km with the wind in 2 hours and 500 km against the wind in 2.5 hours. The wind speed is 25 km/h.",
-    "The system $x - 3y = -1$ and $2x + y = 12$ has solution $(x, y) = (5, 2)$.",
-    "Shelf weights satisfy $3A + 5B = 47$ and $4A + 2B = 34$. Then type A weighs 5 units.",
-    "If $3x + 4y = 18$ and $6x + 8y = 36$, then the solution set is empty."
-   ],
-   "answer_key": [
-    true,
-    true,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$28h + 12(40 - h) = 720$$\n\n$$16h + 480 = 720$$\n\n$$h = 15$$\n\nExactly 15 hardcovers, so the statement is True.",
-    "**B.** → True\n\n$$p + w = 250$$\n\n$$p - w = 200$$\n\n$$w = 25$$\n\nWind speed is 25 km/h, so the statement is True.",
-    "**C.** → True\n\n$$y = 12 - 2x$$\n\n$$x - 3(12 - 2x) = -1$$\n\n$$7x = 35$$\n\n$$x = 5$$\n\n$$y = 2$$\n\nThe solution is $(5, 2)$, so the statement is True.",
-    "**D.** → False\n\n$$B = 17 - 2A$$\n\n$$3A + 5(17 - 2A) = 47$$\n\n$$85 - 7A = 47$$\n\n$$A = \\dfrac{38}{7} \\approx 5.43 \\ne 5$$\n\nso the statement is False.",
-    "**E.** → False\n\nThe second equation is twice the first, so the solution set is infinite, not empty. so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 80,
-   "solution_overview": "Bookstore mix, wind speed, linear solution check, shelf-weight trap, dependent system misread as empty.",
-   "placeholder": false
-  }
- ]
+  "tasks": [
+    {
+      "id": "math-5-61",
+      "case_id": "MATH 5.61",
+      "title": "Exam-style tasks - 1",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An observatory sold 140 admissions, charging \\$18 for adults and \\$10 for children, and collected \\$2{,}048. If the two admission counts are unknown, the receipt implies $85$ adult admissions.",
+        "A greenhouse combines an unknown mass of $8\\%$ nitrogen soil with an unknown mass of $20\\%$ soil. The $60$ kg blend tests at $13\\%$, and the manager claims $25$ kg came from the $20\\%$ stock.",
+        "A violin teacher and a student have a combined age of $66$ years, and the teacher is $24$ years older. Solving the two present ages makes the teacher $48$ years old.",
+        "A survey drone flies with a tailwind at $78$ km/h and into the same wind at $54$ km/h. Treating still-air speed and wind speed as unknowns, its still-air speed is $66$ km/h.",
+        "A bakery makes muffin trays and tart trays. One plan has $x+y=46$ trays and uses $2x+5y=158$ kilograms of mix. These two resource limits give $28$ muffin trays."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent adult admissions and $y$ represent child admissions. Translate both independent conditions before testing the claim.\n\n$$1x+1y=140$$\n\n$$18x+10y=2048$$\n\n$$\\Delta=1(10)-1(18)=-8$$\n\n$$x=\\frac{140(10)-1(2048)}{-8}=81$$\n\n$$y=\\frac{1(2048)-140(18)}{-8}=59$$\n\nThe system gives $81$ for adult admissions, not $85$, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent kilograms of high-nitrogen soil and $y$ represent kilograms of low-nitrogen soil. Translate both independent conditions before testing the claim.\n\n$$1x+1y=60$$\n\n$$20x+8y=780$$\n\n$$\\Delta=1(8)-1(20)=-12$$\n\n$$x=\\frac{60(8)-1(780)}{-12}=25$$\n\n$$y=\\frac{1(780)-60(20)}{-12}=35$$\n\nThe system gives $25$ kg for kilograms of high-nitrogen soil, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent teacher's age and $y$ represent student's age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=66$$\n\n$$1x-1y=24$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{66(-1)-1(24)}{-2}=45$$\n\n$$y=\\frac{1(24)-66(1)}{-2}=21$$\n\nThe system gives $45$ years for teacher's age, not $48$ years, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent still-air drone speed and $y$ represent wind speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=78$$\n\n$$1x-1y=54$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{78(-1)-1(54)}{-2}=66$$\n\n$$y=\\frac{1(54)-78(1)}{-2}=12$$\n\nThe system gives $66$ km/h for still-air drone speed, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent muffin trays and $y$ represent tart trays. Translate both independent conditions before testing the claim.\n\n$$1x+1y=46$$\n\n$$2x+5y=158$$\n\n$$\\Delta=1(5)-1(2)=3$$\n\n$$x=\\frac{46(5)-1(158)}{3}=24$$\n\n$$y=\\frac{1(158)-46(2)}{3}=22$$\n\nThe system gives $24$ for muffin trays, not $28$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 61,
+      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. solve an observatory's two-price admission record.\nB. blend greenhouse soils to a target nitrogen level.\nC. solve ages from a sum and a difference.\nD. recover drone and wind speeds.\nE. solve a bakery production system.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-62",
+      "case_id": "MATH 5.62",
+      "title": "Exam-style tasks - 2",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A cooling system needs $50$ liters made only from $30\\%$ and $70\\%$ antifreeze. To finish at $46\\%$, the mechanic must pour $20$ liters of the stronger fluid.",
+        "Eight years ago, an architect was three times an intern's age then; today their ages total $72$. These conditions put the architect's current age at $46$ years.",
+        "Two label printers together produce $92$ labels per minute; the newer one produces $18$ more than the older one each minute. The newer printer's rate is $55$ labels/min.",
+        "A foundry schedules bronze and steel batches. Furnace time gives $3x+2y=94$, while labor gives $x+4y=88$. The schedule contains $15$ bronze batches.",
+        "At a lantern festival, 96 weekend passes were either VIP at \\$45 or regular at \\$27. Revenue reached \\$3{,}312, so the organizer says $40$ were VIP passes."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent liters of 70 percent antifreeze and $y$ represent liters of 30 percent antifreeze. Translate both independent conditions before testing the claim.\n\n$$1x+1y=50$$\n\n$$70x+30y=2300$$\n\n$$\\Delta=1(30)-1(70)=-40$$\n\n$$x=\\frac{50(30)-1(2300)}{-40}=20$$\n\n$$y=\\frac{1(2300)-50(70)}{-40}=30$$\n\nThe system gives $20$ liters for liters of 70 percent antifreeze, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent architect's current age and $y$ represent intern's current age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=72$$\n\n$$1x-3y=-16$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{72(-3)-1(-16)}{-4}=50$$\n\n$$y=\\frac{1(-16)-72(1)}{-4}=22$$\n\nThe system gives $50$ years for architect's current age, not $46$ years, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent new printer rate and $y$ represent old printer rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=92$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{92(-1)-1(18)}{-2}=55$$\n\n$$y=\\frac{1(18)-92(1)}{-2}=37$$\n\nThe system gives $55$ labels/min for new printer rate, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent bronze batches and $y$ represent steel batches. Translate both independent conditions before testing the claim.\n\n$$3x+2y=94$$\n\n$$1x+4y=88$$\n\n$$\\Delta=3(4)-2(1)=10$$\n\n$$x=\\frac{94(4)-2(88)}{10}=20$$\n\n$$y=\\frac{3(88)-94(1)}{10}=17$$\n\nThe system gives $20$ for bronze batches, not $15$, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent VIP passes and $y$ represent regular passes. Translate both independent conditions before testing the claim.\n\n$$1x+1y=96$$\n\n$$45x+27y=3312$$\n\n$$\\Delta=1(27)-1(45)=-18$$\n\n$$x=\\frac{96(27)-1(3312)}{-18}=40$$\n\n$$y=\\frac{1(3312)-96(45)}{-18}=56$$\n\nThe system gives $40$ for VIP passes, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 62,
+      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. mix two antifreeze strengths.\nB. translate a past age ratio and current sum.\nC. split a combined printing rate.\nD. balance foundry batches across two resources.\nE. recover a festival's VIP pass count.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-63",
+      "case_id": "MATH 5.63",
+      "title": "Exam-style tasks - 3",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A grandmother is now four times her granddaughter's age. In $12$ years she will be twice as old as the granddaughter then. The grandmother is currently $30$ years.",
+        "Two cyclists ride in opposite directions for three hours and separate by $330$ km. One rides $14$ km/h faster than the other. The slower speed is $48$ km/h.",
+        "A textile supervisor writes $2x+6y=48$ and $x+3y=24$ for shirt and jacket runs. The two records describe a system with no solution.",
+        "A ferry carried 85 paid vehicles: cars cost \\$24 and motorcycles cost \\$14. The \\$1{,}770 manifest would require $58$ car fares when the two vehicle counts are solved together.",
+        "A roaster builds a $40$ kg blend from beans costing \\$12 and \\$21 per kilogram. The desired average cost is \\$15.60, so $21$ kg must be the premium beans."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent grandmother's present age and $y$ represent granddaughter's present age. Translate both independent conditions before testing the claim.\n\n$$1x-4y=0$$\n\n$$1x-2y=12$$\n\n$$\\Delta=1(-2)--4(1)=2$$\n\n$$x=\\frac{0(-2)--4(12)}{2}=24$$\n\n$$y=\\frac{1(12)-0(1)}{2}=6$$\n\nThe system gives $24$ years for grandmother's present age, not $30$ years, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent faster cyclist speed and $y$ represent slower cyclist speed. Translate both independent conditions before testing the claim.\n\n$$3x+3y=330$$\n\n$$1x-1y=14$$\n\n$$\\Delta=3(-1)-3(1)=-6$$\n\n$$x=\\frac{330(-1)-3(14)}{-6}=62$$\n\n$$y=\\frac{3(14)-330(1)}{-6}=48$$\n\nThe system gives $48$ km/h for slower cyclist speed, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$2x+6y=48$$\n\n$$1x+3y=24$$\n\n$$\\Delta=2(3)-6(1)=0$$\n\n$$(1,3,24)=0.5(2,6,48)$$\n\n$$L_2=L_1$$\n\nThe algebra gives infinitely many solutions, not no solution, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent car fares and $y$ represent motorcycle fares. Translate both independent conditions before testing the claim.\n\n$$1x+1y=85$$\n\n$$24x+14y=1770$$\n\n$$\\Delta=1(14)-1(24)=-10$$\n\n$$x=\\frac{85(14)-1(1770)}{-10}=58$$\n\n$$y=\\frac{1(1770)-85(24)}{-10}=27$$\n\nThe system gives $58$ for car fares, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent kilograms of premium beans and $y$ represent kilograms of standard beans. Translate both independent conditions before testing the claim.\n\n$$1x+1y=40$$\n\n$$21x+12y=624$$\n\n$$\\Delta=1(12)-1(21)=-9$$\n\n$$x=\\frac{40(12)-1(624)}{-9}=16$$\n\n$$y=\\frac{1(624)-40(21)}{-9}=24$$\n\nThe system gives $16$ kg for kilograms of premium beans, not $21$ kg, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 63,
+      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. combine present and future age ratios.\nB. solve opposite-direction cycling speeds.\nC. classify duplicate textile constraints.\nD. audit a ferry's mixed vehicle fares.\nE. balance coffee weights against an average cost.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-64",
+      "case_id": "MATH 5.64",
+      "title": "Exam-style tasks - 4",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A river ferry covers $84$ km downstream in three hours and $48$ km upstream in three hours. If boat speed and current speed are the two unknowns, the current runs at $6$ km/h.",
+        "An ecology team packs river and forest sample kits. Weight requires $4x+3y=87$ and bottle count requires $2x+5y=89$. The river-kit count is $15$.",
+        "An archive printed 230 pages for one client. Color pages cost \\$0.65, black-and-white pages cost \\$0.15, and the invoice was \\$69.50. The color-page count was $70$.",
+        "An ore shipment is assembled from $18\\%$ and $42\\%$ copper ore. A $75$-ton shipment assaying $26\\%$ contains $19$ tons of the richer ore.",
+        "A curator was $30$ when an assistant was $12$. Their current ages add to $74$, and their age difference has not changed. The curator is now $46$ years."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent still-water ferry speed and $y$ represent current speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=28$$\n\n$$1x-1y=16$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{28(-1)-1(16)}{-2}=22$$\n\n$$y=\\frac{1(16)-28(1)}{-2}=6$$\n\nThe system gives $6$ km/h for current speed, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent river sample kits and $y$ represent forest sample kits. Translate both independent conditions before testing the claim.\n\n$$4x+3y=87$$\n\n$$2x+5y=89$$\n\n$$\\Delta=4(5)-3(2)=14$$\n\n$$x=\\frac{87(5)-3(89)}{14}=12$$\n\n$$y=\\frac{4(89)-87(2)}{14}=13$$\n\nThe system gives $12$ for river sample kits, not $15$, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent color pages and $y$ represent black-and-white pages. Translate both independent conditions before testing the claim.\n\n$$1x+1y=230$$\n\n$$0.65x+0.15y=69.5$$\n\n$$\\Delta=1(0.15)-1(0.65)=-0.5$$\n\n$$x=\\frac{230(0.15)-1(69.5)}{-0.5}=70$$\n\n$$y=\\frac{1(69.5)-230(0.65)}{-0.5}=160$$\n\nThe system gives $70$ for color pages, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent tons of rich ore and $y$ represent tons of lean ore. Translate both independent conditions before testing the claim.\n\n$$1x+1y=75$$\n\n$$42x+18y=1950$$\n\n$$\\Delta=1(18)-1(42)=-24$$\n\n$$x=\\frac{75(18)-1(1950)}{-24}=25$$\n\n$$y=\\frac{1(1950)-75(42)}{-24}=50$$\n\nThe system gives $25$ tons for tons of rich ore, not $19$ tons, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent curator's current age and $y$ represent assistant's current age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=74$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{74(-1)-1(18)}{-2}=46$$\n\n$$y=\\frac{1(18)-74(1)}{-2}=28$$\n\nThe system gives $46$ years for curator's current age, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 64,
+      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. separate ferry and current speeds.\nB. solve two ecology kit constraints.\nC. separate color and monochrome pages on an invoice.\nD. construct a copper-ore shipment.\nE. use an invariant age gap with a current total.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-65",
+      "case_id": "MATH 5.65",
+      "title": "Exam-style tasks - 5",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A shipping manifest says $3x+9y=75$ container units, but a scaled inspection record says $x+3y=28$. The resulting container-count system has infinitely many solutions.",
+        "A ski lodge rented 72 equipment sets. Full-day sets brought \\$58 each and half-day sets \\$34 each, for total receipts of \\$3{,}312. This forces $36$ full-day rentals.",
+        "A clinic dilutes $12\\%$ saline with $3\\%$ saline, using only those two stocks. For $30$ liters at $6\\%$, the $12\\%$ portion is $13$ liters.",
+        "Five years from now, a pilot will be $11$ years older than twice a cadet's future age. Their ages today sum to $55$. The pilot's present age is $42$ years.",
+        "Two installation crews complete $46$ panels per day together, and crew A completes $8$ more than crew B. Crew A's daily rate is $31$ panels/day."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$3x+9y=75$$\n\n$$1x+3y=28$$\n\n$$\\Delta=3(3)-9(1)=0$$\n\n$$(1,3)=0.333333(3,9)$$\n\n$$28\\ne 0.333333(75)=25$$\n\nThe algebra gives no solution, not infinitely many solutions, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent full-day rentals and $y$ represent half-day rentals. Translate both independent conditions before testing the claim.\n\n$$1x+1y=72$$\n\n$$58x+34y=3312$$\n\n$$\\Delta=1(34)-1(58)=-24$$\n\n$$x=\\frac{72(34)-1(3312)}{-24}=36$$\n\n$$y=\\frac{1(3312)-72(58)}{-24}=36$$\n\nThe system gives $36$ for full-day rentals, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent liters of concentrated saline and $y$ represent liters of dilute saline. Translate both independent conditions before testing the claim.\n\n$$1x+1y=30$$\n\n$$12x+3y=180$$\n\n$$\\Delta=1(3)-1(12)=-9$$\n\n$$x=\\frac{30(3)-1(180)}{-9}=10$$\n\n$$y=\\frac{1(180)-30(12)}{-9}=20$$\n\nThe system gives $10$ liters for liters of concentrated saline, not $13$ liters, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent pilot's present age and $y$ represent cadet's present age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=55$$\n\n$$1x-2y=16$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{55(-2)-1(16)}{-3}=42$$\n\n$$y=\\frac{1(16)-55(1)}{-3}=13$$\n\nThe system gives $42$ years for pilot's present age, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent crew A rate and $y$ represent crew B rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=46$$\n\n$$1x-1y=8$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{46(-1)-1(8)}{-2}=27$$\n\n$$y=\\frac{1(8)-46(1)}{-2}=19$$\n\nThe system gives $27$ panels/day for crew A rate, not $31$ panels/day, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 65,
+      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. detect inconsistent shipping records.\nB. solve a ski lodge's rental mix.\nC. dilute saline to a clinical concentration.\nD. translate a future affine age relation.\nE. determine two installation crew rates.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-66",
+      "case_id": "MATH 5.66",
+      "title": "Exam-style tasks - 6",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A night market prepared 150 produce baskets, large ones priced at \\$22 and small ones at \\$13. Selling all baskets yielded \\$2{,}535. The sales mix contains $65$ large baskets.",
+        "A muralist mixes $25\\%$ pigment paint and $55\\%$ pigment paint into $24$ liters whose pigment share is $37.5\\%$. The stronger paint contributes $8$ liters.",
+        "A producer is six years younger than three times a performer's age, while together they are $62$ years old. The performer's age is $17$ years.",
+        "A cargo plane's ground speed is $610$ km/h with a tailwind and $530$ km/h against it. The plane's speed in still air is $560$ km/h.",
+        "A school assembles chemistry and physics kits. The count is $x+y=70$, and component use is $7x+4y=370$. Therefore $30$ chemistry kits are assembled."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent large baskets and $y$ represent small baskets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=150$$\n\n$$22x+13y=2535$$\n\n$$\\Delta=1(13)-1(22)=-9$$\n\n$$x=\\frac{150(13)-1(2535)}{-9}=65$$\n\n$$y=\\frac{1(2535)-150(22)}{-9}=85$$\n\nThe system gives $65$ for large baskets, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent liters of stronger paint and $y$ represent liters of lighter paint. Translate both independent conditions before testing the claim.\n\n$$1x+1y=24$$\n\n$$55x+25y=900$$\n\n$$\\Delta=1(25)-1(55)=-30$$\n\n$$x=\\frac{24(25)-1(900)}{-30}=10$$\n\n$$y=\\frac{1(900)-24(55)}{-30}=14$$\n\nThe system gives $10$ liters for liters of stronger paint, not $8$ liters, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent producer's age and $y$ represent performer's age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=62$$\n\n$$1x-3y=-6$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{62(-3)-1(-6)}{-4}=45$$\n\n$$y=\\frac{1(-6)-62(1)}{-4}=17$$\n\nThe system gives $17$ years for performer's age, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent still-air plane speed and $y$ represent wind speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=610$$\n\n$$1x-1y=530$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{610(-1)-1(530)}{-2}=570$$\n\n$$y=\\frac{1(530)-610(1)}{-2}=40$$\n\nThe system gives $570$ km/h for still-air plane speed, not $560$ km/h, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent chemistry kits and $y$ represent physics kits. Translate both independent conditions before testing the claim.\n\n$$1x+1y=70$$\n\n$$7x+4y=370$$\n\n$$\\Delta=1(4)-1(7)=-3$$\n\n$$x=\\frac{70(4)-1(370)}{-3}=30$$\n\n$$y=\\frac{1(370)-70(7)}{-3}=40$$\n\nThe system gives $30$ for chemistry kits, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 66,
+      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. infer basket sizes from a market's revenue.\nB. mix mural paints by pigment percentage.\nC. solve an age relation with an offset.\nD. infer still-air aircraft speed.\nE. determine a school lab-kit mix.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-67",
+      "case_id": "MATH 5.67",
+      "title": "Exam-style tasks - 7",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A refinery combines B10 and B50 biodiesel. If $80$ thousand liters must be B25 overall, then $35$ liters should be drawn from B50.",
+        "Ten years ago, a scientist's age was twice a technician's age; ten years from now their ages will sum to $94$. The scientist is now $46$ years.",
+        "Two pumps fill $150$ liters per minute in parallel. The main pump moves twice the backup rate plus $6$ liters per minute. The backup pump's rate is $51$ liters/min.",
+        "An orchard plants apple and pear rows. Land constraints read $5x+3y=144$ and irrigation constraints $2x+4y=108$. The apple-row solution is $18$.",
+        "A science museum issued 110 wristbands, some including VR for \\$31 and the rest exhibit-only for \\$19. The desk took \\$2{,}606, which means $50$ VR wristbands were issued."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent thousand liters of B50 and $y$ represent thousand liters of B10. Translate both independent conditions before testing the claim.\n\n$$1x+1y=80$$\n\n$$50x+10y=2000$$\n\n$$\\Delta=1(10)-1(50)=-40$$\n\n$$x=\\frac{80(10)-1(2000)}{-40}=30$$\n\n$$y=\\frac{1(2000)-80(50)}{-40}=50$$\n\nThe system gives $30$ liters for thousand liters of B50, not $35$ liters, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent scientist's current age and $y$ represent technician's current age. Translate both independent conditions before testing the claim.\n\n$$1x-2y=-10$$\n\n$$1x+1y=74$$\n\n$$\\Delta=1(1)--2(1)=3$$\n\n$$x=\\frac{-10(1)--2(74)}{3}=46$$\n\n$$y=\\frac{1(74)--10(1)}{3}=28$$\n\nThe system gives $46$ years for scientist's current age, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent main pump rate and $y$ represent backup pump rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=150$$\n\n$$1x-2y=6$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{150(-2)-1(6)}{-3}=102$$\n\n$$y=\\frac{1(6)-150(1)}{-3}=48$$\n\nThe system gives $48$ liters/min for backup pump rate, not $51$ liters/min, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent apple rows and $y$ represent pear rows. Translate both independent conditions before testing the claim.\n\n$$5x+3y=144$$\n\n$$2x+4y=108$$\n\n$$\\Delta=5(4)-3(2)=14$$\n\n$$x=\\frac{144(4)-3(108)}{14}=18$$\n\n$$y=\\frac{5(108)-144(2)}{14}=18$$\n\nThe system gives $18$ for apple rows, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent VR wristbands and $y$ represent exhibit-only wristbands. Translate both independent conditions before testing the claim.\n\n$$1x+1y=110$$\n\n$$31x+19y=2606$$\n\n$$\\Delta=1(19)-1(31)=-12$$\n\n$$x=\\frac{110(19)-1(2606)}{-12}=43$$\n\n$$y=\\frac{1(2606)-110(31)}{-12}=67$$\n\nThe system gives $43$ for VR wristbands, not $50$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 67,
+      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend two biodiesel grades.\nB. combine a past ratio with a future total.\nC. split flow between unequal pumps.\nD. solve orchard land and irrigation constraints.\nE. reconstruct a museum wristband ledger.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-68",
+      "case_id": "MATH 5.68",
+      "title": "Exam-style tasks - 8",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A parent is $27$ years older than a child. After nine years, the parent's age will be $\\frac52$ times the child's age then. The child's current age is $9$ years.",
+        "Two couriers start $24$ km apart and ride toward each other, meeting after $0.2$ hour. The faster courier travels $20$ km/h faster, so the slower courier rides at $45$ km/h.",
+        "A hospital staffs registered nurses and aides on one shift. Headcount gives $x+y=52$ and credential units give $3x+y=100$. The shift uses $24$ registered nurses.",
+        "A sleeper train booked 64 berths at \\$120 and coach seats at \\$68, collecting \\$5{,}704 from those 64 travelers. Solving the two booking counts gives $22$ sleeper berths.",
+        "A feed mill uses $16\\%$ and $28\\%$ protein meals to make $90$ tons at $22\\%$ protein. The high-protein meal must supply $45$ tons."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent parent's present age and $y$ represent child's present age. Translate both independent conditions before testing the claim.\n\n$$1x-1y=27$$\n\n$$2x-5y=27$$\n\n$$\\Delta=1(-5)--1(2)=-3$$\n\n$$x=\\frac{27(-5)--1(27)}{-3}=36$$\n\n$$y=\\frac{1(27)-27(2)}{-3}=9$$\n\nThe system gives $9$ years for child's present age, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent faster courier speed and $y$ represent slower courier speed. Translate both independent conditions before testing the claim.\n\n$$0.2x+0.2y=24$$\n\n$$1x-1y=20$$\n\n$$\\Delta=0.2(-1)-0.2(1)=-0.4$$\n\n$$x=\\frac{24(-1)-0.2(20)}{-0.4}=70$$\n\n$$y=\\frac{0.2(20)-24(1)}{-0.4}=50$$\n\nThe system gives $50$ km/h for slower courier speed, not $45$ km/h, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent registered nurses and $y$ represent aides. Translate both independent conditions before testing the claim.\n\n$$1x+1y=52$$\n\n$$3x+1y=100$$\n\n$$\\Delta=1(1)-1(3)=-2$$\n\n$$x=\\frac{52(1)-1(100)}{-2}=24$$\n\n$$y=\\frac{1(100)-52(3)}{-2}=28$$\n\nThe system gives $24$ for registered nurses, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent sleeper berths and $y$ represent coach seats. Translate both independent conditions before testing the claim.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$\\Delta=1(68)-1(120)=-52$$\n\n$$x=\\frac{64(68)-1(5704)}{-52}=26$$\n\n$$y=\\frac{1(5704)-64(120)}{-52}=38$$\n\nThe system gives $26$ for sleeper berths, not $22$, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent tons of high-protein meal and $y$ represent tons of low-protein meal. Translate both independent conditions before testing the claim.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$\\Delta=1(16)-1(28)=-12$$\n\n$$x=\\frac{90(16)-1(1980)}{-12}=45$$\n\n$$y=\\frac{1(1980)-90(28)}{-12}=45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 68,
+      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-69",
+      "case_id": "MATH 5.69",
+      "title": "Exam-style tasks - 9",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A pair of harvesters processes $84$ rows per hour. The larger harvester's rate is exactly twice the smaller's. The larger machine handles $63$ rows/hour.",
+        "For stage platforms and lighting towers, an event plan records $4x+2y=60$ and $6x+3y=90$. Those two constraints yield infinitely many solutions.",
+        "A charity printed 200 raffle tickets, gold at \\$25 and silver at \\$8. The sold-out draw raised \\$2{,}450. Exactly $55$ of the tickets must have been gold.",
+        "A jeweler melts $40$ grams of $30\\%$ gold alloy with a richer $75\\%$ alloy, using no pure gold. A $48\\%$ final alloy requires $16$ grams of the richer material.",
+        "Two siblings' ages differ by $7$ years. Four years ago, the older sibling was $\\frac32$ times the younger sibling's age then. The older sibling is now $28$ years."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent large harvester rate and $y$ represent small harvester rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=84$$\n\n$$1x-2y=0$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{84(-2)-1(0)}{-3}=56$$\n\n$$y=\\frac{1(0)-84(1)}{-3}=28$$\n\nThe system gives $56$ rows/hour for large harvester rate, not $63$ rows/hour, so the statement is False.",
+        "**B.** → True\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$4x+2y=60$$\n\n$$6x+3y=90$$\n\n$$\\Delta=4(3)-2(6)=0$$\n\n$$(6,3,90)=1.5(4,2,60)$$\n\n$$L_2=L_1$$\n\nThe algebra classifies the system as having infinitely many solutions, matching the claim, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent gold raffle tickets and $y$ represent silver raffle tickets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=200$$\n\n$$25x+8y=2450$$\n\n$$\\Delta=1(8)-1(25)=-17$$\n\n$$x=\\frac{200(8)-1(2450)}{-17}=50$$\n\n$$y=\\frac{1(2450)-200(25)}{-17}=150$$\n\nThe system gives $50$ for gold raffle tickets, not $55$, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent grams of rich gold alloy and $y$ represent grams of base gold alloy. Translate both independent conditions before testing the claim.\n\n$$1x+1y=40$$\n\n$$75x+30y=1920$$\n\n$$\\Delta=1(30)-1(75)=-45$$\n\n$$x=\\frac{40(30)-1(1920)}{-45}=16$$\n\n$$y=\\frac{1(1920)-40(75)}{-45}=24$$\n\nThe system gives $16$ grams for grams of rich gold alloy, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent older sibling's age and $y$ represent younger sibling's age. Translate both independent conditions before testing the claim.\n\n$$1x-1y=7$$\n\n$$2x-3y=-4$$\n\n$$\\Delta=1(-3)--1(2)=-1$$\n\n$$x=\\frac{7(-3)--1(-4)}{-1}=25$$\n\n$$y=\\frac{1(-4)-7(2)}{-1}=18$$\n\nThe system gives $25$ years for older sibling's age, not $28$ years, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 69,
+      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. divide work rates in a fixed ratio.\nB. classify proportional event-staging constraints.\nC. solve a charity raffle's ticket composition.\nD. combine jewelry alloys to a specified fineness.\nE. use an age gap and a past fractional ratio.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-70",
+      "case_id": "MATH 5.70",
+      "title": "Exam-style tasks - 10",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A telecom order combines fiber and wireless nodes. Budget units satisfy $6x+5y=137$, and technician hours satisfy $2x+3y=63$. The fiber-node count is $12$.",
+        "A marina logged 90 slip rentals, overnight at \\$75 and daytime at \\$35. The register showed \\$4{,}350, so the unknown overnight count is $27$.",
+        "A sanitation crew has $20\\%$ and $80\\%$ alcohol solutions. Its $45$-liter disinfectant batch must be $60\\%$ alcohol, which assigns $30$ liters to the $80\\%$ solution.",
+        "A director's age plus twice an actor's age is $96$, while twice the director's age minus the actor's age is $57$. The director is $36$ years old.",
+        "Two trains approach one another at a combined $170$ km/h; the eastbound train is $30$ km/h faster. The westbound train moves at $70$ km/h."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent fiber nodes and $y$ represent wireless nodes. Translate both independent conditions before testing the claim.\n\n$$6x+5y=137$$\n\n$$2x+3y=63$$\n\n$$\\Delta=6(3)-5(2)=8$$\n\n$$x=\\frac{137(3)-5(63)}{8}=12$$\n\n$$y=\\frac{6(63)-137(2)}{8}=13$$\n\nThe system gives $12$ for fiber nodes, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent overnight slip rentals and $y$ represent daytime slip rentals. Translate both independent conditions before testing the claim.\n\n$$1x+1y=90$$\n\n$$75x+35y=4350$$\n\n$$\\Delta=1(35)-1(75)=-40$$\n\n$$x=\\frac{90(35)-1(4350)}{-40}=30$$\n\n$$y=\\frac{1(4350)-90(75)}{-40}=60$$\n\nThe system gives $30$ for overnight slip rentals, not $27$, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent liters of 80 percent alcohol and $y$ represent liters of 20 percent alcohol. Translate both independent conditions before testing the claim.\n\n$$1x+1y=45$$\n\n$$80x+20y=2700$$\n\n$$\\Delta=1(20)-1(80)=-60$$\n\n$$x=\\frac{45(20)-1(2700)}{-60}=30$$\n\n$$y=\\frac{1(2700)-45(80)}{-60}=15$$\n\nThe system gives $30$ liters for liters of 80 percent alcohol, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent director's age and $y$ represent actor's age. Translate both independent conditions before testing the claim.\n\n$$1x+2y=96$$\n\n$$2x-1y=57$$\n\n$$\\Delta=1(-1)-2(2)=-5$$\n\n$$x=\\frac{96(-1)-2(57)}{-5}=42$$\n\n$$y=\\frac{1(57)-96(2)}{-5}=27$$\n\nThe system gives $42$ years for director's age, not $36$ years, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent eastbound train speed and $y$ represent westbound train speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=170$$\n\n$$1x-1y=30$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{170(-1)-1(30)}{-2}=100$$\n\n$$y=\\frac{1(30)-170(1)}{-2}=70$$\n\nThe system gives $70$ km/h for westbound train speed, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 70,
+      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. solve telecom node allocations.\nB. derive overnight marina rentals from receipts.\nC. prepare disinfectant from two alcohol strengths.\nD. solve a general two-age linear system.\nE. find train speeds from closing speed.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-71",
+      "case_id": "MATH 5.71",
+      "title": "Exam-style tasks - 11",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "One cinema screening admitted 180 patrons. A 3D ticket cost \\$16 and a standard ticket \\$11; box-office revenue was \\$2{,}430. The data determine $99$ 3D tickets.",
+        "A fertilizer order mixes material at $6\\%$ phosphorus with material at $18\\%$. The $120$ kg order averages $11\\%$, so the richer material weighs $50$ kg.",
+        "A two-digit locker code has digits totaling $11$, and the original code exceeds its reversal by $27$. The original code is $83$.",
+        "Two transcribers type $126$ words per minute together. One exceeds the other's rate by $22$ words per minute. The faster rate is $74$ words/min.",
+        "A brewery schedules pale and dark batches. Tank capacity gives $4x+7y=151$ and grain deliveries give $5x+2y=128$. The dark-batch count is $5$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent 3D tickets and $y$ represent standard tickets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=180$$\n\n$$16x+11y=2430$$\n\n$$\\Delta=1(11)-1(16)=-5$$\n\n$$x=\\frac{180(11)-1(2430)}{-5}=90$$\n\n$$y=\\frac{1(2430)-180(16)}{-5}=90$$\n\nThe system gives $90$ for 3D tickets, not $99$, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent kilograms of rich fertilizer and $y$ represent kilograms of lean fertilizer. Translate both independent conditions before testing the claim.\n\n$$1x+1y=120$$\n\n$$18x+6y=1320$$\n\n$$\\Delta=1(6)-1(18)=-12$$\n\n$$x=\\frac{120(6)-1(1320)}{-12}=50$$\n\n$$y=\\frac{1(1320)-120(18)}{-12}=70$$\n\nThe system gives $50$ kg for kilograms of rich fertilizer, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$1x+1y=11$$\n\n$$9x-9y=27$$\n\n$$\\Delta=1(-9)-1(9)=-18$$\n\n$$x=\\frac{11(-9)-1(27)}{-18}=7$$\n\n$$y=\\frac{1(27)-11(9)}{-18}=4$$\n\nThe system gives $74$ for the original two-digit number, not $83$, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent faster transcription rate and $y$ represent slower transcription rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=126$$\n\n$$1x-1y=22$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{126(-1)-1(22)}{-2}=74$$\n\n$$y=\\frac{1(22)-126(1)}{-2}=52$$\n\nThe system gives $74$ words/min for faster transcription rate, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent pale batches and $y$ represent dark batches. Translate both independent conditions before testing the claim.\n\n$$4x+7y=151$$\n\n$$5x+2y=128$$\n\n$$\\Delta=4(2)-7(5)=-27$$\n\n$$x=\\frac{151(2)-7(128)}{-27}=22$$\n\n$$y=\\frac{4(128)-151(5)}{-27}=9$$\n\nThe system gives $9$ for dark batches, not $5$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 71,
+      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. analyze a cinema's mixed-format ticket sales.\nB. balance fertilizer grades.\nC. recover a locker code from digit sum and reversal.\nD. separate transcription rates.\nE. balance brewery tank and grain limits.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-72",
+      "case_id": "MATH 5.72",
+      "title": "Exam-style tasks - 12",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A juice bar can use only $10\\%$ and $35\\%$ mango drinks. Producing $70$ liters at $25\\%$ fruit calls for $42$ liters of the $35\\%$ drink.",
+        "The tens digit of a page number is two more than its units digit, and the number itself is $45$ greater than the sum of its digits. The page number is $42$.",
+        "On a moving walkway, a traveler advances at $7$ km/h with the belt and $3$ km/h against it. The walking speed on a stationary floor is $5$ km/h.",
+        "A solar planner models roof and ground arrays by $5x+10y=100$, yet a second supposedly equivalent report states $x+2y=23$. The planning system has a unique solution.",
+        "A webinar enrolled 125 people, charging professionals \\$80 and students \\$35. Fees totaled \\$7{,}390. Thus $67$ professional registrations appear in the two-variable solution."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent liters of stronger mango drink and $y$ represent liters of weaker mango drink. Translate both independent conditions before testing the claim.\n\n$$1x+1y=70$$\n\n$$35x+10y=1750$$\n\n$$\\Delta=1(10)-1(35)=-25$$\n\n$$x=\\frac{70(10)-1(1750)}{-25}=42$$\n\n$$y=\\frac{1(1750)-70(35)}{-25}=28$$\n\nThe system gives $42$ liters for liters of stronger mango drink, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$1x-1y=2$$\n\n$$9x+0y=45$$\n\n$$\\Delta=1(0)--1(9)=9$$\n\n$$x=\\frac{2(0)--1(45)}{9}=5$$\n\n$$y=\\frac{1(45)-2(9)}{9}=3$$\n\nThe system gives $53$ for the original two-digit number, not $42$, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent traveler's walking speed and $y$ represent walkway speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=7$$\n\n$$1x-1y=3$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{7(-1)-1(3)}{-2}=5$$\n\n$$y=\\frac{1(3)-7(1)}{-2}=2$$\n\nThe system gives $5$ km/h for traveler's walking speed, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$5x+10y=100$$\n\n$$1x+2y=23$$\n\n$$\\Delta=5(2)-10(1)=0$$\n\n$$(1,2)=0.2(5,10)$$\n\n$$23\\ne 0.2(100)=20$$\n\nThe algebra gives no solution, not a unique solution, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent professional registrations and $y$ represent student registrations. Translate both independent conditions before testing the claim.\n\n$$1x+1y=125$$\n\n$$80x+35y=7390$$\n\n$$\\Delta=1(35)-1(80)=-45$$\n\n$$x=\\frac{125(35)-1(7390)}{-45}=67$$\n\n$$y=\\frac{1(7390)-125(80)}{-45}=58$$\n\nThe system gives $67$ for professional registrations, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 72,
+      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend fruit drinks to a label percentage.\nB. solve a page number from digit and value conditions.\nC. recover walking and walkway speeds.\nD. identify conflicting solar array constraints.\nE. solve professional and student webinar enrollment.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-73",
+      "case_id": "MATH 5.73",
+      "title": "Exam-style tasks - 13",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A hotel room code and its reversed code add to $121$; the first digit exceeds the second by $3$. The unreversed code equals $85$.",
+        "A canoe takes two hours to travel $32$ km downstream and three hours to return $36$ km upstream. The canoe's still-water speed is $14$ km/h.",
+        "A furniture shop builds desks and cabinets. Carpentry hours give $3x+8y=126$, finishing hours give $5x+4y=98$, and the desk count is $15$.",
+        "A campground filled 50 sites: cabin sites cost \\$96 and tent pads \\$42 for the night. The \\$3{,}180 total corresponds to $20$ cabin sites.",
+        "An investment committee splits \\$200{,}000 between funds returning $4\\%$ and $9\\%$. To target $6\\%$ for one year, it places $90$ thousand dollars in the $9\\%$ fund."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$11x+11y=121$$\n\n$$1x-1y=3$$\n\n$$\\Delta=11(-1)-11(1)=-22$$\n\n$$x=\\frac{121(-1)-11(3)}{-22}=7$$\n\n$$y=\\frac{11(3)-121(1)}{-22}=4$$\n\nThe system gives $74$ for the original two-digit number, not $85$, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent still-water canoe speed and $y$ represent river current speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=16$$\n\n$$1x-1y=12$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{16(-1)-1(12)}{-2}=14$$\n\n$$y=\\frac{1(12)-16(1)}{-2}=2$$\n\nThe system gives $14$ km/h for still-water canoe speed, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent desks and $y$ represent cabinets. Translate both independent conditions before testing the claim.\n\n$$3x+8y=126$$\n\n$$5x+4y=98$$\n\n$$\\Delta=3(4)-8(5)=-28$$\n\n$$x=\\frac{126(4)-8(98)}{-28}=10$$\n\n$$y=\\frac{3(98)-126(5)}{-28}=12$$\n\nThe system gives $10$ for desks, not $15$, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent cabin sites and $y$ represent tent pads. Translate both independent conditions before testing the claim.\n\n$$1x+1y=50$$\n\n$$96x+42y=3180$$\n\n$$\\Delta=1(42)-1(96)=-54$$\n\n$$x=\\frac{50(42)-1(3180)}{-54}=20$$\n\n$$y=\\frac{1(3180)-50(96)}{-54}=30$$\n\nThe system gives $20$ for cabin sites, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent thousand dollars in the 9 percent fund and $y$ represent thousand dollars in the 4 percent fund. Translate both independent conditions before testing the claim.\n\n$$1x+1y=200$$\n\n$$9x+4y=1200$$\n\n$$\\Delta=1(4)-1(9)=-5$$\n\n$$x=\\frac{200(4)-1(1200)}{-5}=80$$\n\n$$y=\\frac{1(1200)-200(9)}{-5}=120$$\n\nThe system gives $80$ thousand dollars for thousand dollars in the 9 percent fund, not $90$ thousand dollars, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 73,
+      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. determine a room code from a reversal sum.\nB. derive canoe speed from unequal trip times.\nC. solve furniture output from two labor pools.\nD. recover a campground's occupied-site mix.\nE. allocate capital between two expected returns.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-74",
+      "case_id": "MATH 5.74",
+      "title": "Exam-style tasks - 14",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Two assembly robots finish $108$ housings per hour. Robot X makes $12$ more housings per hour than robot Y. Robot Y's rate is $48$ housings/hour.",
+        "A ceramics studio fires bowls and vases. Shelf use follows $2x+3y=72$, while glazing time follows $4x+y=74$. The vase total is $11$.",
+        "A stadium reported 220 spectators in club seats at \\$44 or terrace seats at \\$26. The gate collected \\$7{,}520. The club-seat count is therefore $100$.",
+        "A concrete plant uses aggregate containing $5\\%$ recycled glass and aggregate containing $35\\%$. A $100$-ton pour at $14\\%$ recycled content takes $22$ tons of the greener aggregate.",
+        "For a two-digit shipment tag, three times the tens digit plus the units digit is $25$, while the digit sum is $9$. The tag reads $81$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent robot X rate and $y$ represent robot Y rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=108$$\n\n$$1x-1y=12$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{108(-1)-1(12)}{-2}=60$$\n\n$$y=\\frac{1(12)-108(1)}{-2}=48$$\n\nThe system gives $48$ housings/hour for robot Y rate, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent bowls and $y$ represent vases. Translate both independent conditions before testing the claim.\n\n$$2x+3y=72$$\n\n$$4x+1y=74$$\n\n$$\\Delta=2(1)-3(4)=-10$$\n\n$$x=\\frac{72(1)-3(74)}{-10}=15$$\n\n$$y=\\frac{2(74)-72(4)}{-10}=14$$\n\nThe system gives $14$ for vases, not $11$, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent club seats and $y$ represent terrace seats. Translate both independent conditions before testing the claim.\n\n$$1x+1y=220$$\n\n$$44x+26y=7520$$\n\n$$\\Delta=1(26)-1(44)=-18$$\n\n$$x=\\frac{220(26)-1(7520)}{-18}=100$$\n\n$$y=\\frac{1(7520)-220(44)}{-18}=120$$\n\nThe system gives $100$ for club seats, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent tons of high-recycled aggregate and $y$ represent tons of low-recycled aggregate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=100$$\n\n$$35x+5y=1400$$\n\n$$\\Delta=1(5)-1(35)=-30$$\n\n$$x=\\frac{100(5)-1(1400)}{-30}=30$$\n\n$$y=\\frac{1(1400)-100(35)}{-30}=70$$\n\nThe system gives $30$ tons for tons of high-recycled aggregate, not $22$ tons, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$3x+1y=25$$\n\n$$1x+1y=9$$\n\n$$\\Delta=3(1)-1(1)=2$$\n\n$$x=\\frac{25(1)-1(9)}{2}=8$$\n\n$$y=\\frac{3(9)-25(1)}{2}=1$$\n\nThe system gives $81$ for the original two-digit number, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 74,
+      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. solve paired assembly robot rates.\nB. determine ceramic pieces from kiln constraints.\nC. audit club and terrace gate receipts.\nD. meet a recycled-content concrete specification.\nE. solve weighted digit constraints on a shipment tag.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-75",
+      "case_id": "MATH 5.75",
+      "title": "Exam-style tasks - 15",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A newspaper's small and large advertisements are modeled by $2x+5y=40$ and $6x+15y=120$. The ad system is said to have no solution.",
+        "A bookstore sold 75 vouchers, hardbound-book vouchers for \\$32 and digital vouchers for \\$18. Revenue of \\$1{,}882 means $38$ were hardbound vouchers.",
+        "A syrup maker combines batches testing $58\\%$ and $74\\%$ sugar. For $32$ liters at $65\\%$, the sweeter batch contributes $17$ liters.",
+        "A vault code's reversal is $45$ larger than the code, and its two digits total $9$. The original vault code is $27$.",
+        "Two snowplows clear $74$ lane-kilometers per shift in total. The wider plow clears $16$ more than the narrow plow. The wider plow clears $50$ lane-km/shift."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$2x+5y=40$$\n\n$$6x+15y=120$$\n\n$$\\Delta=2(15)-5(6)=0$$\n\n$$(6,15,120)=3(2,5,40)$$\n\n$$L_2=L_1$$\n\nThe algebra gives infinitely many solutions, not no solution, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent hardbound vouchers and $y$ represent digital vouchers. Translate both independent conditions before testing the claim.\n\n$$1x+1y=75$$\n\n$$32x+18y=1882$$\n\n$$\\Delta=1(18)-1(32)=-14$$\n\n$$x=\\frac{75(18)-1(1882)}{-14}=38$$\n\n$$y=\\frac{1(1882)-75(32)}{-14}=37$$\n\nThe system gives $38$ for hardbound vouchers, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent liters of sweeter syrup and $y$ represent liters of lighter syrup. Translate both independent conditions before testing the claim.\n\n$$1x+1y=32$$\n\n$$74x+58y=2080$$\n\n$$\\Delta=1(58)-1(74)=-16$$\n\n$$x=\\frac{32(58)-1(2080)}{-16}=14$$\n\n$$y=\\frac{1(2080)-32(74)}{-16}=18$$\n\nThe system gives $14$ liters for liters of sweeter syrup, not $17$ liters, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$1x+1y=9$$\n\n$$-9x+9y=45$$\n\n$$\\Delta=1(9)-1(-9)=18$$\n\n$$x=\\frac{9(9)-1(45)}{18}=2$$\n\n$$y=\\frac{1(45)-9(-9)}{18}=7$$\n\nThe system gives $27$ for the original two-digit number, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent wide plow rate and $y$ represent narrow plow rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=74$$\n\n$$1x-1y=16$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{74(-1)-1(16)}{-2}=45$$\n\n$$y=\\frac{1(16)-74(1)}{-2}=29$$\n\nThe system gives $45$ lane-km/shift for wide plow rate, not $50$ lane-km/shift, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 75,
+      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. classify repeated newspaper ad constraints.\nB. split bookstore voucher sales by type.\nC. standardize maple syrup sugar content.\nD. find a vault code when the reversal is larger.\nE. allocate snow-clearing capacity.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-76",
+      "case_id": "MATH 5.76",
+      "title": "Exam-style tasks - 16",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "An airport kiosk issued 160 transit passes, express at \\$21 and local at \\$12. Its shift total was \\$2{,}460. Solving both counts yields $60$ express passes.",
+        "A battery shop has electrolyte at $20\\%$ acid and at $50\\%$ acid. A $36$-liter fill at $32.5\\%$ acid contains $11$ liters of the concentrated stock.",
+        "A bus route number has a tens digit one less than twice its units digit. The route number plus its reversal is $88$. The route number is $53$.",
+        "Parallel conveyor belts move $210$ packages per minute. Belt A carries $30$ fewer packages per minute than belt B. Belt B carries $112$ packages/min.",
+        "A rescue depot packs water and medical bundles. Vehicle space gives $3x+2y=96$ and weight gives $5x+6y=208$. The water-bundle count is $20$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent express passes and $y$ represent local passes. Translate both independent conditions before testing the claim.\n\n$$1x+1y=160$$\n\n$$21x+12y=2460$$\n\n$$\\Delta=1(12)-1(21)=-9$$\n\n$$x=\\frac{160(12)-1(2460)}{-9}=60$$\n\n$$y=\\frac{1(2460)-160(21)}{-9}=100$$\n\nThe system gives $60$ for express passes, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent liters of concentrated electrolyte and $y$ represent liters of dilute electrolyte. Translate both independent conditions before testing the claim.\n\n$$1x+1y=36$$\n\n$$50x+20y=1170$$\n\n$$\\Delta=1(20)-1(50)=-30$$\n\n$$x=\\frac{36(20)-1(1170)}{-30}=15$$\n\n$$y=\\frac{1(1170)-36(50)}{-30}=21$$\n\nThe system gives $15$ liters for liters of concentrated electrolyte, not $11$ liters, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$1x-2y=-1$$\n\n$$11x+11y=88$$\n\n$$\\Delta=1(11)--2(11)=33$$\n\n$$x=\\frac{-1(11)--2(88)}{33}=5$$\n\n$$y=\\frac{1(88)--1(11)}{33}=3$$\n\nThe system gives $53$ for the original two-digit number, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent belt A rate and $y$ represent belt B rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=210$$\n\n$$-1x+1y=30$$\n\n$$\\Delta=1(1)-1(-1)=2$$\n\n$$x=\\frac{210(1)-1(30)}{2}=90$$\n\n$$y=\\frac{1(30)-210(-1)}{2}=120$$\n\nThe system gives $120$ packages/min for belt B rate, not $112$ packages/min, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent water bundles and $y$ represent medical bundles. Translate both independent conditions before testing the claim.\n\n$$3x+2y=96$$\n\n$$5x+6y=208$$\n\n$$\\Delta=3(6)-2(5)=8$$\n\n$$x=\\frac{96(6)-2(208)}{8}=20$$\n\n$$y=\\frac{3(208)-96(5)}{8}=18$$\n\nThe system gives $20$ for water bundles, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 76,
+      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. reconcile an airport transit-pass shift.\nB. prepare battery electrolyte at a target strength.\nC. derive a route number from a digit relation.\nD. separate conveyor capacities.\nE. solve rescue bundle loading constraints.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-77",
+      "case_id": "MATH 5.77",
+      "title": "Exam-style tasks - 17",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A tea merchant combines leaves costing \\$18 and \\$30 per kilogram. To sell a $50$ kg blend whose ingredient cost averages \\$22.80, $26$ kg must be the dearer tea.",
+        "The digits on a two-digit inventory bin multiply is irrelevant to the clerk; the recorded linear facts are that their sum is $13$ and the number exceeds the reversal by $45$. Those facts make the bin number $94$.",
+        "A runner has a $6$ km head start over a cyclist. After half an hour the cyclist catches the runner, and their speeds sum to $30$ km/h. The cyclist travels at $24$ km/h.",
+        "A robotics lab orders vision and touch sensors. The pieces satisfy $x+y=84$, while interface ports satisfy $4x+2y=236$. The order includes $34$ vision sensors.",
+        "A gallery shipped 48 purchases, charging \\$150 for framed works and \\$90 for unframed works. The \\$5{,}520 invoice total requires $23$ framed pieces."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent kilograms of premium tea and $y$ represent kilograms of everyday tea. Translate both independent conditions before testing the claim.\n\n$$1x+1y=50$$\n\n$$30x+18y=1140$$\n\n$$\\Delta=1(18)-1(30)=-12$$\n\n$$x=\\frac{50(18)-1(1140)}{-12}=20$$\n\n$$y=\\frac{1(1140)-50(30)}{-12}=30$$\n\nThe system gives $20$ kg for kilograms of premium tea, not $26$ kg, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$1x+1y=13$$\n\n$$9x-9y=45$$\n\n$$\\Delta=1(-9)-1(9)=-18$$\n\n$$x=\\frac{13(-9)-1(45)}{-18}=9$$\n\n$$y=\\frac{1(45)-13(9)}{-18}=4$$\n\nThe system gives $94$ for the original two-digit number, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent cyclist speed and $y$ represent runner speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=30$$\n\n$$0.5x-0.5y=6$$\n\n$$\\Delta=1(-0.5)-1(0.5)=-1$$\n\n$$x=\\frac{30(-0.5)-1(6)}{-1}=21$$\n\n$$y=\\frac{1(6)-30(0.5)}{-1}=9$$\n\nThe system gives $21$ km/h for cyclist speed, not $24$ km/h, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent vision sensors and $y$ represent touch sensors. Translate both independent conditions before testing the claim.\n\n$$1x+1y=84$$\n\n$$4x+2y=236$$\n\n$$\\Delta=1(2)-1(4)=-2$$\n\n$$x=\\frac{84(2)-1(236)}{-2}=34$$\n\n$$y=\\frac{1(236)-84(4)}{-2}=50$$\n\nThe system gives $34$ for vision sensors, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent framed pieces and $y$ represent unframed pieces. Translate both independent conditions before testing the claim.\n\n$$1x+1y=48$$\n\n$$150x+90y=5520$$\n\n$$\\Delta=1(90)-1(150)=-60$$\n\n$$x=\\frac{48(90)-1(5520)}{-60}=20$$\n\n$$y=\\frac{1(5520)-48(150)}{-60}=28$$\n\nThe system gives $20$ for framed pieces, not $23$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 77,
+      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend teas to an average ingredient cost.\nB. solve an inventory bin's two linear digit facts.\nC. solve a catch-up system with a head start.\nD. infer a robotics sensor order.\nE. solve a gallery's framed and unframed shipments.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-78",
+      "case_id": "MATH 5.78",
+      "title": "Exam-style tasks - 18",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A contestant's badge number is two-digit. Four times its tens digit minus its units digit is $29$, and twice the tens digit plus the units digit is $19$. The badge is $83$.",
+        "Two parcel sorters jointly scan $162$ boxes per hour. The first scanner works at $\\frac54$ of the second scanner's rate. The first rate is $84$ boxes/hour.",
+        "A theater builds flats and stair units under $3x+4y=52$, but another crew sheet gives $9x+12y=150$. Together these sheets have no solution.",
+        "A farm stand sold 130 fruit crates. Premium crates were \\$28, standard crates \\$16, and all sales came to \\$2{,}668. There were $45$ premium crates.",
+        "An aviation supplier adds a $2\\%$ stabilizer fuel to a $14\\%$ additive fuel. A $150$-liter test batch at $8\\%$ additive uses $75$ liters of the stronger fuel."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$4x-1y=29$$\n\n$$2x+1y=19$$\n\n$$\\Delta=4(1)--1(2)=6$$\n\n$$x=\\frac{29(1)--1(19)}{6}=8$$\n\n$$y=\\frac{4(19)-29(2)}{6}=3$$\n\nThe system gives $83$ for the original two-digit number, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent first sorter rate and $y$ represent second sorter rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=162$$\n\n$$4x-5y=0$$\n\n$$\\Delta=1(-5)-1(4)=-9$$\n\n$$x=\\frac{162(-5)-1(0)}{-9}=90$$\n\n$$y=\\frac{1(0)-162(4)}{-9}=72$$\n\nThe system gives $90$ boxes/hour for first sorter rate, not $84$ boxes/hour, so the statement is False.",
+        "**C.** → True\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$3x+4y=52$$\n\n$$9x+12y=150$$\n\n$$\\Delta=3(12)-4(9)=0$$\n\n$$(9,12)=3(3,4)$$\n\n$$150\\ne 3(52)=156$$\n\nThe algebra classifies the system as having no solution, matching the claim, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent premium crates and $y$ represent standard crates. Translate both independent conditions before testing the claim.\n\n$$1x+1y=130$$\n\n$$28x+16y=2668$$\n\n$$\\Delta=1(16)-1(28)=-12$$\n\n$$x=\\frac{130(16)-1(2668)}{-12}=49$$\n\n$$y=\\frac{1(2668)-130(28)}{-12}=81$$\n\nThe system gives $49$ for premium crates, not $45$, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent liters of high-additive fuel and $y$ represent liters of low-additive fuel. Translate both independent conditions before testing the claim.\n\n$$1x+1y=150$$\n\n$$14x+2y=1200$$\n\n$$\\Delta=1(2)-1(14)=-12$$\n\n$$x=\\frac{150(2)-1(1200)}{-12}=75$$\n\n$$y=\\frac{1(1200)-150(14)}{-12}=75$$\n\nThe system gives $75$ liters for liters of high-additive fuel, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 78,
+      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. decode a badge from two weighted digit equations.\nB. split scanner rates using a fractional relation.\nC. detect incompatible theater construction sheets.\nD. infer premium harvest crates from total sales.\nE. mix aviation fuels by additive concentration.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-79",
+      "case_id": "MATH 5.79",
+      "title": "Exam-style tasks - 19",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A fishing boat travels at $25$ knots with a tidal current and $17$ knots against it. The tide's speed is $6$ knots.",
+        "A warehouse stacks red and blue pallets. Floor positions impose $x+y=95$, and handling points impose $2x+5y=334$. The red-pallet count is $47$.",
+        "A software company activated 300 seats, pro licenses at \\$14 monthly and basic licenses at \\$6. The first invoice was \\$2{,}880. The unknown pro-seat count equals $145$.",
+        "A plastics line feeds resin with $10\\%$ recycled polymer and resin with $70\\%$. For $240$ kg at $35\\%$ recycled content, the second feed contributes $100$ kg.",
+        "A two-digit catalog suffix becomes $18$ smaller when reversed. The sum of its digits is $12$, so the suffix before reversal is $84$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nLet $x$ represent still-water fishing-boat speed and $y$ represent tidal current speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=25$$\n\n$$1x-1y=17$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{25(-1)-1(17)}{-2}=21$$\n\n$$y=\\frac{1(17)-25(1)}{-2}=4$$\n\nThe system gives $4$ knots for tidal current speed, not $6$ knots, so the statement is False.",
+        "**B.** → True\n\nLet $x$ represent red pallets and $y$ represent blue pallets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=95$$\n\n$$2x+5y=334$$\n\n$$\\Delta=1(5)-1(2)=3$$\n\n$$x=\\frac{95(5)-1(334)}{3}=47$$\n\n$$y=\\frac{1(334)-95(2)}{3}=48$$\n\nThe system gives $47$ for red pallets, exactly as claimed, so the statement is True.",
+        "**C.** → False\n\nLet $x$ represent pro license seats and $y$ represent basic license seats. Translate both independent conditions before testing the claim.\n\n$$1x+1y=300$$\n\n$$14x+6y=2880$$\n\n$$\\Delta=1(6)-1(14)=-8$$\n\n$$x=\\frac{300(6)-1(2880)}{-8}=135$$\n\n$$y=\\frac{1(2880)-300(14)}{-8}=165$$\n\nThe system gives $135$ for pro license seats, not $145$, so the statement is False.",
+        "**D.** → True\n\nLet $x$ represent kilograms of high-recycled resin and $y$ represent kilograms of virgin-heavy resin. Translate both independent conditions before testing the claim.\n\n$$1x+1y=240$$\n\n$$70x+10y=8400$$\n\n$$\\Delta=1(10)-1(70)=-60$$\n\n$$x=\\frac{240(10)-1(8400)}{-60}=100$$\n\n$$y=\\frac{1(8400)-240(70)}{-60}=140$$\n\nThe system gives $100$ kg for kilograms of high-recycled resin, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$9x-9y=18$$\n\n$$1x+1y=12$$\n\n$$\\Delta=9(1)--9(1)=18$$\n\n$$x=\\frac{18(1)--9(12)}{18}=7$$\n\n$$y=\\frac{9(12)-18(1)}{18}=5$$\n\nThe system gives $75$ for the original two-digit number, not $84$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 79,
+      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. separate fishing-boat and tide speeds.\nB. solve a warehouse pallet composition.\nC. separate pro and basic software seats.\nD. set recycled polymer content in a resin feed.\nE. identify a catalog suffix using reversal change.",
+      "placeholder": false
+    },
+    {
+      "id": "math-5-80",
+      "case_id": "MATH 5.80",
+      "title": "Exam-style tasks - 20",
+      "subsection": "5.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A fishery packs cod and salmon baskets. Ice usage gives $4x+3y=123$, while packing time gives $2x+5y=121$. The salmon-basket solution is $17$.",
+        "An aquarium hosted 105 visitors, with guided entries at \\$29 and self-led entries at \\$17. Receipts of \\$2{,}325 imply $40$ guided entries.",
+        "A bakery blends $9\\%$ and $15\\%$ protein flours. A $60$ kg dough mix averaging $12.5\\%$ protein includes $35$ kg of the stronger flour.",
+        "A railway platform code has twice its tens digit plus three times its units digit equal to $24$; interchanging the weights gives $21$. The displayed code is $26.6667$.",
+        "Warehouse crews A and B load $132$ pallets in a shift together. Crew B loads $12$ fewer than crew A. Crew A's shift rate is $72$ pallets/shift."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLet $x$ represent cod baskets and $y$ represent salmon baskets. Translate both independent conditions before testing the claim.\n\n$$4x+3y=123$$\n\n$$2x+5y=121$$\n\n$$\\Delta=4(5)-3(2)=14$$\n\n$$x=\\frac{123(5)-3(121)}{14}=18$$\n\n$$y=\\frac{4(121)-123(2)}{14}=17$$\n\nThe system gives $17$ for salmon baskets, exactly as claimed, so the statement is True.",
+        "**B.** → False\n\nLet $x$ represent guided entries and $y$ represent self-led entries. Translate both independent conditions before testing the claim.\n\n$$1x+1y=105$$\n\n$$29x+17y=2325$$\n\n$$\\Delta=1(17)-1(29)=-12$$\n\n$$x=\\frac{105(17)-1(2325)}{-12}=45$$\n\n$$y=\\frac{1(2325)-105(29)}{-12}=60$$\n\nThe system gives $45$ for guided entries, not $40$, so the statement is False.",
+        "**C.** → True\n\nLet $x$ represent kilograms of high-protein flour and $y$ represent kilograms of low-protein flour. Translate both independent conditions before testing the claim.\n\n$$1x+1y=60$$\n\n$$15x+9y=750$$\n\n$$\\Delta=1(9)-1(15)=-6$$\n\n$$x=\\frac{60(9)-1(750)}{-6}=35$$\n\n$$y=\\frac{1(750)-60(15)}{-6}=25$$\n\nThe system gives $35$ kg for kilograms of high-protein flour, exactly as claimed, so the statement is True.",
+        "**D.** → False\n\nLet $x$ represent tens digit and $y$ represent units digit. Translate both independent conditions before testing the claim.\n\n$$2x+3y=24$$\n\n$$3x+2y=21$$\n\n$$\\Delta=2(2)-3(3)=-5$$\n\n$$x=\\frac{24(2)-3(21)}{-5}=3$$\n\n$$y=\\frac{2(21)-24(3)}{-5}=6$$\n\nThe system gives $36$ for the original two-digit number, not $26.6667$, so the statement is False.",
+        "**E.** → True\n\nLet $x$ represent crew A shift rate and $y$ represent crew B shift rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=132$$\n\n$$1x-1y=12$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{132(-1)-1(12)}{-2}=72$$\n\n$$y=\\frac{1(12)-132(1)}{-2}=60$$\n\nThe system gives $72$ pallets/shift for crew A shift rate, exactly as claimed, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 80,
+      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. balance fishery baskets across two constraints.\nB. determine guided aquarium admissions.\nC. blend flours to a protein specification.\nD. solve a platform code from swapped digit weights.\nE. recover warehouse crew output rates.",
+      "placeholder": false
+    }
+  ]
 }

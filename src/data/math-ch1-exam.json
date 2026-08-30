@@ -1,644 +1,524 @@
 {
- "tasks": [
-  {
-   "id": "math-1-109",
-   "case_id": "MATH 1.109",
-   "title": "Exam-style tasks — 1",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6\\}$, $B = \\{2,4,6,8,10\\}$, and $C = \\{1,2,3,8,9\\}$. Writing $A \\triangle B$ for the symmetric difference $(A \\setminus B) \\cup (B \\setminus A)$, the claim $|(A \\triangle B) \\cup C| = 9$ is correct.",
-    "Let $X = \\{1,2,3,4\\}$. The number of subsets of $X$ that contain the element $1$ and have even cardinality is exactly $4$.",
-    "Let $U = \\{1,2,\\ldots,12\\}$, let $A$ be the set of even elements of $U$, and let $B$ be the set of multiples of $3$ in $U$. Then $|A^{c} \\cap B^{c}| = 5$.",
-    "In a survey of $100$ students, $55$ study mathematics, $40$ study physics, $35$ study chemistry, $20$ study both mathematics and physics, $15$ study both mathematics and chemistry, $10$ study both physics and chemistry, and $5$ study all three subjects. Exactly $95$ students study at least one of the three subjects.",
-    "For propositions $p$, $q$, and $r$, the formula $(p \\wedge q) \\rightarrow r$ is logically equivalent to $p \\rightarrow (q \\rightarrow r)$."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nSymmetric difference keeps elements in exactly one of $A$ or $B$.\n\n$$A \\setminus B = \\{1,3,5\\}$$\n\n$$B \\setminus A = \\{8,10\\}$$\n\n$$A \\triangle B = \\{1,3,5,8,10\\}$$\n\nUnion with $C$ adds $2$ and $9$:\n\n$$(A \\triangle B) \\cup C = \\{1,2,3,5,8,9,10\\}$$\n\nThat roster has $7$ elements, not $9$, so the statement is False.",
-    "**B.** → True\n\nFix $1 \\in S$ and choose the rest from $\\{2,3,4\\}$. Then $|S| = 1 + k$ is even precisely when $k$ is odd.\n\nThe odd-sized subsets of a $3$-element set number\n\n$$\\binom{3}{1} + \\binom{3}{3} = 3 + 1 = 4$$\n\nso exactly $4$ such subsets exist, so the statement is True.",
-    "**C.** → False\n\nBy De Morgan, $A^{c} \\cap B^{c} = (A \\cup B)^{c}$.\n\n$$A \\cup B = \\{2,3,4,6,8,9,10,12\\}$$\n\nso\n\n$$(A \\cup B)^{c} = \\{1,5,7,11\\}$$\n\nhas $4$ elements, not $5$, so the statement is False.",
-    "**D.** → False\n\nInclusion-exclusion for three sets gives\n\n$$|A \\cup B \\cup C| = |A| + |B| + |C| - |A \\cap B| - |A \\cap C| - |B \\cap C| + |A \\cap B \\cap C|$$\n\n$$= 55 + 40 + 35 - 20 - 15 - 10 + 5 = 90$$\n\nnot $95$, so the statement is False.",
-    "**E.** → True\n\nExportation rewrites a conjunction in the hypothesis as a nested implication.\n\nA truth-table check (or the chain $p \\wedge q \\Rightarrow r$ iff $p \\Rightarrow (q \\Rightarrow r)$) confirms the two formulas agree on every assignment, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 109,
-   "solution_overview": "Five independent checks: a three-set difference count, even-cardinality subsets containing a fixed element, a De Morgan complement size, a three-set inclusion-exclusion census, and an exportation equivalence.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-110",
-   "case_id": "MATH 1.110",
-   "title": "Exam-style tasks — 2",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{a,b,c,d\\}$, $B = \\{b,d,e\\}$, and $C = \\{a,e,f\\}$. Then $(A \\cap B) \\cup (B \\cap C) = \\{b,d\\}$.",
-    "If $S$ has exactly $5$ elements, then the power set $\\mathcal{P}(S)$ has exactly $31$ elements.",
-    "Let $U = \\{1,2,3,4,5,6,7,8\\}$, $A = \\{1,2,3,4\\}$, and $B = \\{3,4,5,6\\}$. Then $(A \\cap B)^{c} = \\{1,2,5,6,7,8\\}$.",
-    "A club has $60$ members. Exactly $28$ play tennis, exactly $35$ play chess, and exactly $12$ play both. Then exactly $15$ members play neither tennis nor chess.",
-    "The propositional formula $(p \\vee \\neg p) \\wedge (q \\wedge \\neg q)$ is a contradiction."
-   ],
-   "answer_key": [
-    false,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nFirst form the two intersections:\n\n$$A \\cap B = \\{b,d\\}$$\n\n$$B \\cap C = \\{e\\}$$\n\nTheir union is $\\{b,d,e\\}$, not $\\{b,d\\}$, so the statement is False.",
-    "**B.** → False\n\nA set with $n$ elements has $2^{n}$ subsets:\n\n$$|\\mathcal{P}(S)| = 2^{5} = 32$$\n\nThe claim $31$ drops the empty set (or one nonempty subset), so the statement is False.",
-    "**C.** → True\n\nFirst\n\n$$A \\cap B = \\{3,4\\}$$\n\nComplement relative to $U$:\n\n$$(A \\cap B)^{c} = U \\setminus \\{3,4\\} = \\{1,2,5,6,7,8\\}$$\n\nso the statement is True.",
-    "**D.** → False\n\nUnion size by inclusion-exclusion:\n\n$$|T \\cup C| = 28 + 35 - 12 = 51$$\n\nMembers outside both:\n\n$$60 - 51 = 9$$\n\nnot $15$, so the statement is False.",
-    "**E.** → True\n\n$p \\vee \\neg p$ is always true, while $q \\wedge \\neg q$ is always false. A conjunction with a false conjunct is always false, so the formula is a contradiction, so the statement is True."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 110,
-   "solution_overview": "Five separate mini-problems: a nested set-operation roster, a power-set cardinality trap, a complement of an intersection, a two-set Venn count with a double-count trap, and a claimed contradiction.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-111",
-   "case_id": "MATH 1.111",
-   "title": "Exam-style tasks — 3",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6,7\\}$, $B = \\{2,3,5,7,11\\}$, and $C = \\{1,5,7,9\\}$. Then $|(A \\setminus B) \\setminus C| = 2$.",
-    "Let $S = \\{w,x,y,z\\}$. The number of proper subsets of $S$ is $16$.",
-    "Let $U = \\{0,1,2,\\ldots,9\\}$, $A = \\{0,2,4,6,8\\}$, and $B = \\{0,1,2,3,4\\}$. Then $|A^{c} \\cup B^{c}| = 6$.",
-    "Among $80$ employees, $45$ speak German, $38$ speak French, $30$ speak Spanish, $20$ speak German and French, $15$ speak German and Spanish, $12$ speak French and Spanish, and $8$ speak all three. Exactly $18$ employees speak only German (German but neither French nor Spanish).",
-    "Over the domain $\\{1,2,3\\}$, the statement $\\forall x \\, \\exists y \\, (x + y = 4)$ is true, and therefore $\\exists y \\, \\forall x \\, (x + y = 4)$ is also true on the same domain."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nRemove $B$ from $A$:\n\n$$A \\setminus B = \\{1,4,6\\}$$\n\nRemove $C$:\n\n$$(A \\setminus B) \\setminus C = \\{4,6\\}$$\n\nhas $2$ elements, so the statement is True.",
-    "**B.** → False\n\nAll subsets number $2^{4} = 16$. Proper subsets exclude $S$ itself, leaving $15$, not $16$, so the statement is False.",
-    "**C.** → False\n\nDe Morgan: $A^{c} \\cup B^{c} = (A \\cap B)^{c}$.\n\n$$A \\cap B = \\{0,2,4\\}$$\n\n$$(A \\cap B)^{c} = U \\setminus \\{0,2,4\\}$$\n\nhas $10 - 3 = 7$ elements, not $6$, so the statement is False.",
-    "**D.** → True\n\nOnly German is\n\n$$|G| - |G \\cap F| - |G \\cap S| + |G \\cap F \\cap S|$$\n\nbecause the triple intersection was subtracted twice among the pairwise terms:\n\n$$45 - 20 - 15 + 8 = 18$$\n\nso the statement is True.",
-    "**E.** → False\n\nFor each fixed $x \\in \\{1,2,3\\}$ one can choose $y = 4 - x \\in \\{1,2,3\\}$, so the $\\forall x \\, \\exists y$ claim holds.\n\nThe swapped order $\\exists y \\, \\forall x \\, (x + y = 4)$ would need one $y$ working for every $x$, which forces $1+y = 2+y = 3+y = 4$, impossible. Quantifier order matters, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 111,
-   "solution_overview": "Five harder checks: a chained set difference, counting proper subsets of a four-element set, complement arithmetic in a ten-element universe, a three-circle only-one region, and a quantifier swap countermodel.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-112",
-   "case_id": "MATH 1.112",
-   "title": "Exam-style tasks — 4",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "For finite sets $A$ and $B$, the identity $|A \\cup B| + |A \\cap B| = |A| + |B|$ always holds. In particular, if $|A| = 17$, $|B| = 11$, and $|A \\cap B| = 4$, then $|A \\cup B| = 24$.",
-    "Let $A = \\{1,2\\}$. Then $\\mathcal{P}(A)$ has exactly three subsets that are nonempty, and $\\{\\{1\\},\\{2\\}\\} \\subseteq \\mathcal{P}(A)$.",
-    "Let $U = \\{a,b,c,d,e,f\\}$, $X = \\{a,b,c,d\\}$, and $Y = \\{c,d,e\\}$. Then $|X^{c} \\setminus Y| = 2$.",
-    "In a town of $200$ adults, $120$ own a car, $95$ own a bicycle, and $40$ own both. Exactly $30$ adults own neither a car nor a bicycle.",
-    "The biconditional $p \\leftrightarrow q$ is logically equivalent to $(p \\rightarrow q) \\wedge (q \\rightarrow p)$, and also equivalent to $(p \\wedge q) \\vee (\\neg p \\wedge \\neg q)$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nRearrangement of inclusion-exclusion gives\n\n$$|A \\cup B| = |A| + |B| - |A \\cap B| = 17 + 11 - 4 = 24$$\n\nand equivalently $|A \\cup B| + |A \\cap B| = |A| + |B|$. Both parts agree, so the statement is True.",
-    "**B.** → True\n\n$\\mathcal{P}(A) = \\{\\emptyset, \\{1\\}, \\{2\\}, \\{1,2\\}\\}$ has three nonempty members. Also $\\{1\\},\\{2\\} \\in \\mathcal{P}(A)$, so $\\{\\{1\\},\\{2\\}\\} \\subseteq \\mathcal{P}(A)$. Both claims hold, so the statement is True.",
-    "**C.** → False\n\n$X^{c} = \\{e,f\\}$. Removing elements of $Y$:\n\n$$X^{c} \\setminus Y = \\{f\\}$$\n\nhas size $1$, not $2$, so the statement is False.",
-    "**D.** → False\n\n$$|C \\cup B| = 120 + 95 - 40 = 175$$\n\n$$200 - 175 = 25$$\n\nown neither, not $30$, so the statement is False.",
-    "**E.** → True\n\nBy definition $p \\leftrightarrow q$ means each implies the other. Expanding the truth table, $p \\leftrightarrow q$ holds exactly on the two rows where both are true or both are false, which is $(p \\wedge q) \\vee (\\neg p \\wedge \\neg q)$. Both equivalences hold, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 112,
-   "solution_overview": "Five independent logic/set claims: a union-minus-intersection identity check, subsets of a power set, a relative complement size, a survey overlap trap, and a biconditional rewrite.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-113",
-   "case_id": "MATH 1.113",
-   "title": "Exam-style tasks — 5",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,3,5,7\\}$ and $B = \\{1,2,3,4\\}$ inside $U = \\{1,2,3,4,5,6,7,8\\}$. Then $(A \\cup B)^{c} = \\{6,8\\}$ and $|(A \\cup B)^{cc}| = 5$.",
-    "The number of $3$-element subsets of a $7$-element set is $35$, and therefore the number of subsets with at most $2$ elements is also $35$.",
-    "Let $U = \\mathbb{N} = \\{1,2,3,\\ldots\\}$ and $A = \\{n \\in \\mathbb{N} : n \\text{ is even}\\}$. Then $A^{c}$ is exactly the set of odd natural numbers, and $A \\cup A^{c} = U$.",
-    "A festival reports $70$ guests like tea, $55$ like coffee, $40$ like both, and $10$ like neither. If $100$ guests were surveyed, these four figures are mutually consistent.",
-    "The formula $((p \\rightarrow q) \\wedge p) \\rightarrow q$ is a tautology (modus ponens in propositional form)."
-   ],
-   "answer_key": [
-    false,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$$A \\cup B = \\{1,2,3,4,5,7\\}$$\n\n$$(A \\cup B)^{c} = \\{6,8\\}$$\n\nDouble complement restores $A \\cup B$, which has $6$ elements, not $5$, so the statement is False.",
-    "**B.** → False\n\n$\\binom{7}{3} = 35$ is correct, but subsets of size at most $2$ number\n\n$$\\binom{7}{0} + \\binom{7}{1} + \\binom{7}{2} = 1 + 7 + 21 = 29$$\n\nnot $35$, so the statement is False.",
-    "**C.** → True\n\nEvery natural number is either even or odd, never both. So $A^{c}$ is the odds and $A \\cup A^{c} = U$, so the statement is True.",
-    "**D.** → False\n\nFrom tea/coffee data,\n\n$$|T \\cup C| = 70 + 55 - 40 = 85$$\n\nAdding the $10$ who like neither gives $95$ guests, not $100$. The figures are inconsistent, so the statement is False.",
-    "**E.** → True\n\nWhenever the hypothesis $(p \\rightarrow q) \\wedge p$ is true, both $p$ and $p \\rightarrow q$ hold, forcing $q$. The implication to $q$ is therefore true on every row, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 113,
-   "solution_overview": "Five varied stems: a double complement with union, counting $k$-subsets, an open-universe complement trap, inclusion-exclusion with a missing triple, and a tautology claim.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-114",
-   "case_id": "MATH 1.114",
-   "title": "Exam-style tasks — 6",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{0,1,2,3,4,5\\}$ and $B = \\{4,5,6,7\\}$. Then $|A \\setminus B| = 4$ and $|B \\setminus A| = 2$.",
-    "Let $S = \\{1,2,3\\}$. Then $\\{1,2\\} \\in \\mathcal{P}(S)$ and $\\{\\{1\\},\\{2\\}\\} \\in \\mathcal{P}(S)$.",
-    "Let $U = \\{1,2,3,4,5\\}$, $A = \\{1,2\\}$, $B = \\{2,3\\}$. Then $(A \\cup B)^{c} = A^{c} \\cap B^{c} = \\{4,5\\}$.",
-    "Of $50$ applicants, $30$ know Python, $25$ know R, and $10$ know both. Exactly $10$ applicants know neither language.",
-    "The formulas $p \\vee q$ and $p \\rightarrow q$ are logically equivalent."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$A \\setminus B = \\{0,1,2,3\\}$$\n\nhas $4$ elements, and\n\n$$B \\setminus A = \\{6,7\\}$$\n\nhas $2$ elements, so the statement is True.",
-    "**B.** → False\n\n$\\{1,2\\} \\subseteq S$, so $\\{1,2\\} \\in \\mathcal{P}(S)$ is correct. But $\\{\\{1\\},\\{2\\}\\}$ is a set of subsets, not a subset of $S$; its elements $\\{1\\}$ and $\\{2\\}$ are not elements of $S$. Hence $\\{\\{1\\},\\{2\\}\\} \\notin \\mathcal{P}(S)$, so the statement is False.",
-    "**C.** → True\n\n$A \\cup B = \\{1,2,3\\}$, so the complement is $\\{4,5\\}$. De Morgan gives the same set as $A^{c} \\cap B^{c}$, so the statement is True.",
-    "**D.** → False\n\n$$|P \\cup R| = 30 + 25 - 10 = 45$$\n\n$$50 - 45 = 5$$\n\nknow neither, not $10$, so the statement is False.",
-    "**E.** → False\n\nOn the assignment $p = \\mathrm{F}$, $q = \\mathrm{F}$, one has $p \\vee q = \\mathrm{F}$ while $p \\rightarrow q = \\mathrm{T}$. The formulas disagree, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 114,
-   "solution_overview": "Five independent checks: set-difference cardinality, power-set membership vs subset, complement of a union, a two-attribute census, and a false equivalence between $\\vee$ and $\\rightarrow$.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-115",
-   "case_id": "MATH 1.115",
-   "title": "Exam-style tasks — 7",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6,7,8\\}$, $B = \\{2,4,6,8,10\\}$, and $C = \\{1,2,3,10\\}$. Then $|A \\cap (B \\cup C)| = 5$.",
-    "Let $S = \\{1,2,3,4,5\\}$. The number of subsets of $S$ whose elements sum to an even number is $16$.",
-    "Let $U$ have $40$ elements, $|A| = 18$, $|B| = 22$, and $|A \\cap B| = 7$. Then $|A^{c} \\cap B^{c}| = 8$.",
-    "Using the employee data: $45$ German, $38$ French, $30$ Spanish, pairwise overlaps $20$, $15$, $12$, and triple overlap $8$, the number who speak exactly two of the three languages is $23$.",
-    "From the premises (i) $p \\rightarrow q$ and (ii) $\\neg p$, one may validly conclude $\\neg q$."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nFirst form the union:\n\n$$B \\cup C = \\{1,2,3,4,6,8,10\\}$$\n\nIntersect with $A$:\n\n$$A \\cap (B \\cup C) = \\{1,2,3,4,6,8\\}$$\n\nhas $6$ elements, not $5$, so the statement is False.",
-    "**B.** → True\n\nFor a nonempty finite set of integers, exactly half of all subsets have even element-sum when at least one odd element is present. Here $2^{5} = 32$ subsets split evenly into $16$ even-sum and $16$ odd-sum subsets (including $\\emptyset$ on the even side), so the statement is True.",
-    "**C.** → False\n\n$$|A \\cup B| = 18 + 22 - 7 = 33$$\n\n$$|A^{c} \\cap B^{c}| = |U| - |A \\cup B| = 40 - 33 = 7$$\n\nnot $8$, so the statement is False.",
-    "**D.** → True\n\nExactly-two counts:\n\n$$(20-8) + (15-8) + (12-8) = 12 + 7 + 4 = 23$$\n\nso the statement is True.",
-    "**E.** → False\n\nDenying the antecedent is invalid. Countermodel: $p = \\mathrm{F}$, $q = \\mathrm{T}$ makes both premises true while $\\neg q$ is false. The inference is not valid, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 115,
-   "solution_overview": "Five demanding stems: a three-layer set expression, counting subsets closed under a parity rule, complement sizes with overlap, a full three-set only-two region, and a deduction with a hidden countermodel.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-116",
-   "case_id": "MATH 1.116",
-   "title": "Exam-style tasks — 8",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4\\}$ and $B = \\{3,4,5,6,7\\}$. Then $|A \\triangle B| = |A| + |B| - 2|A \\cap B| = 5$.",
-    "Let $X = \\{a,b,c,d,e\\}$. The number of subsets of $X$ that contain both $a$ and $b$ is $16$.",
-    "For any subsets $A,B$ of a universe $U$, the equality $(A \\setminus B)^{c} = A^{c} \\cup B$ holds.",
-    "If $|A| = 25$, $|B| = 30$, $|C| = 20$, $|A \\cap B| = 10$, $|A \\cap C| = 8$, $|B \\cap C| = 6$, and $|A \\cap B \\cap C| = 4$, then $|A \\cup B \\cup C| = 51$.",
-    "The formula $(p \\rightarrow q) \\vee (q \\rightarrow p)$ is a tautology."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$$|A \\cap B| = 2$$\n\n$$|A \\triangle B| = 4 + 5 - 2 \\cdot 2 = 5$$\n\nRoster check: $\\{1,2,5,6,7\\}$ has size $5$, so the statement is True.",
-    "**B.** → False\n\nFix $a,b \\in S$ and choose freely from the remaining $3$ elements:\n\n$$2^{3} = 8$$\n\nnot $16$, so the statement is False.",
-    "**C.** → True\n\n$A \\setminus B = A \\cap B^{c}$. Complement and De Morgan give\n\n$$(A \\cap B^{c})^{c} = A^{c} \\cup (B^{c})^{c} = A^{c} \\cup B$$\n\nso the statement is True.",
-    "**D.** → False\n\nInclusion-exclusion yields\n\n$$25 + 30 + 20 - 10 - 8 - 6 + 4 = 55$$\n\nThe claimed $51$ undercounts by $4$ (as if the triple term were dropped), so the statement is False.",
-    "**E.** → True\n\nIf $p$ is false then $p \\rightarrow q$ is true; if $p$ is true then either $q$ is true (so $p \\rightarrow q$ holds) or $q$ is false (so $q \\rightarrow p$ holds). In every case the disjunction is true, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 116,
-   "solution_overview": "Five mini-exams: symmetric-difference size, number of subsets containing two fixed elements, complement identity, inclusion-exclusion off-by-one, and a truth-table contingency claim.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-117",
-   "case_id": "MATH 1.117",
-   "title": "Exam-style tasks — 9",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{2,4,6,8,10\\}$, $B = \\{1,2,3,4,5\\}$, and $C = \\{4,5,6,7\\}$. Then $A \\cap B \\cap C = \\{4\\}$.",
-    "If $|S| = 3$, then $|\\mathcal{P}(\\mathcal{P}(S))| = 128$.",
-    "Let $U = \\{1,\\ldots,20\\}$ and $A = \\{1,2,\\ldots,12\\}$. Then $|A^{c}| = 8$.",
-    "In a class of $40$, $22$ passed the midterm, $18$ passed the final, and $10$ passed both. Exactly $12$ students failed both exams.",
-    "The negation of $p \\rightarrow q$ is logically equivalent to $p \\wedge \\neg q$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nElements common to all three: only $4$ lies in $A$, $B$, and $C$ simultaneously, so the statement is True.",
-    "**B.** → False\n\n$|\\mathcal{P}(S)| = 8$, hence\n\n$$|\\mathcal{P}(\\mathcal{P}(S))| = 2^{8} = 256$$\n\nnot $128$, so the statement is False.",
-    "**C.** → True\n\n$A^{c} = \\{13,\\ldots,20\\}$ has $8$ elements, so the statement is True.",
-    "**D.** → False\n\n$$|M \\cup F| = 22 + 18 - 10 = 30$$\n\n$$40 - 30 = 10$$\n\nfailed both, not $12$, so the statement is False.",
-    "**E.** → True\n\n$p \\rightarrow q$ fails only when $p$ is true and $q$ is false. That is exactly $p \\wedge \\neg q$, so the statement is True."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 117,
-   "solution_overview": "Five separate claims: nested intersections, power-set chain, complement cardinality, a simple Venn remainder, and negation of an implication.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-118",
-   "case_id": "MATH 1.118",
-   "title": "Exam-style tasks — 10",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3\\}$, $B = \\{2,3,4\\}$, and $C = \\{3,4,5\\}$. Then $A \\cap (B \\cup C) = (A \\cap B) \\cup (A \\cap C) = \\{2,3\\}$.",
-    "Let $X = \\{1,2,3,4,5,6\\}$. The number of subsets of $X$ that contain neither $1$ nor $2$ is $15$.",
-    "Let $U = \\{a,b,c,d,e,f,g\\}$, $A = \\{a,b,c\\}$, $B = \\{c,d,e\\}$. Then $|(A \\cup B)^{c}| = |(A^{c} \\cap B^{c})| = 3$.",
-    "Among $120$ customers, $70$ bought product $X$, $60$ bought product $Y$, $50$ bought product $Z$, $30$ bought $X$ and $Y$, $25$ bought $X$ and $Z$, $20$ bought $Y$ and $Z$, and $10$ bought all three. Exactly $15$ customers bought none of the three products.",
-    "Over integers, the negation of $\\forall n \\, (n^{2} \\ge 0)$ is $\\exists n \\, (n^{2} < 0)$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$B \\cup C = \\{2,3,4,5\\}$, so $A \\cap (B \\cup C) = \\{2,3\\}$.\n\nAlso $A \\cap B = \\{2,3\\}$ and $A \\cap C = \\{3\\}$, whose union is $\\{2,3\\}$. Distributivity holds with that roster, so the statement is True.",
-    "**B.** → False\n\nSuch subsets are exactly the subsets of $\\{3,4,5,6\\}$:\n\n$$2^{4} = 16$$\n\nnot $15$, so the statement is False.",
-    "**C.** → False\n\n$A \\cup B = \\{a,b,c,d,e\\}$, so the complement is $\\{f,g\\}$ with size $2$, not $3$, so the statement is False.",
-    "**D.** → False\n\n$$|X \\cup Y \\cup Z| = 70 + 60 + 50 - 30 - 25 - 20 + 10 = 115$$\n\n$$120 - 115 = 5$$\n\ncustomers bought none, not $15$, so the statement is False.",
-    "**E.** → True\n\nNegating $\\forall n \\, P(n)$ yields $\\exists n \\, \\neg P(n)$. Here $\\neg(n^{2} \\ge 0)$ is $n^{2} < 0$, so the statement is True."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 118,
-   "solution_overview": "Five hard independent problems: a distributive-law roster, subsets with forbidden elements, De Morgan size in a coded universe, a three-set neither count, and a $\\forall$/$\\exists$ negation.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-119",
-   "case_id": "MATH 1.119",
-   "title": "Exam-style tasks — 11",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5\\}$ and $B = \\{3,4,5,6,7\\}$. Then $(A \\cup B) \\setminus (A \\cap B) = \\{1,2,6,7\\}$.",
-    "A $4$-element set has exactly $24$ ordered listings of all its elements without repetition, and exactly $16$ nonempty unordered subsets.",
-    "Let $U = \\{1,2,3,4,5,6\\}$, $A = \\{1,2,3\\}$, $B = \\{2,3,4\\}$. Then $A^{c} \\setminus B^{c} = \\{4\\}$.",
-    "In a sample of $90$ people, $48$ like apples, $40$ like bananas, and nobody likes both. Then everybody in the sample likes at least one of the two fruits.",
-    "From premises $p \\rightarrow q$ and $\\neg q$, the conclusion $\\neg p$ follows validly (modus tollens)."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cup B = \\{1,2,3,4,5,6,7\\}$ and $A \\cap B = \\{3,4,5\\}$, so the difference is $\\{1,2,6,7\\}$, so the statement is True.",
-    "**B.** → False\n\nPermutations: $4! = 24$ is correct. Nonempty subsets: $2^{4} - 1 = 15$, not $16$, so the statement is False.",
-    "**C.** → True\n\n$A^{c} = \\{4,5,6\\}$ and $B^{c} = \\{1,5,6\\}$, so\n\n$$A^{c} \\setminus B^{c} = \\{4\\}$$, so the statement is True.",
-    "**D.** → False\n\nWith empty intersection,\n\n$$|A \\cup B| = 48 + 40 = 88$$\n\nso $2$ people like neither fruit. The universal claim fails, so the statement is False.",
-    "**E.** → True\n\nModus tollens is the valid pattern: if $p$ implied $q$ and $q$ fails, then $p$ fails. Equivalently, use the contrapositive $\\neg q \\rightarrow \\neg p$, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 119,
-   "solution_overview": "Five checks: set algebra simplification, counting injective listings as subsets, relative complements, a pairwise-only survey, and modus tollens validity.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-120",
-   "case_id": "MATH 1.120",
-   "title": "Exam-style tasks — 12",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{0,1,2\\}$ and $B = \\{1,2,3\\}$. Then $|A \\cup B| = 4$ and $|A \\cap B| = 2$.",
-    "The number of subsets of an $n$-element set is $2^{n}$. For $n = 6$ this is $64$, which equals the number of proper subsets.",
-    "Let $U = \\{1,2,3,4,5\\}$, $A = \\{1,2,3,4\\}$, $B = \\{3,4\\}$. Then $(A \\setminus B)^{c} = \\{3,4,5\\}$.",
-    "A school has $150$ students. Exactly $80$ take biology, $70$ take chemistry, $60$ take physics, $30$ take biology and chemistry, $25$ take biology and physics, $20$ take chemistry and physics, and $10$ take all three. Then $115$ students take at least one of the three sciences.",
-    "The formula $(p \\wedge q) \\rightarrow (p \\vee q)$ is a tautology."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cup B = \\{0,1,2,3\\}$ has size $4$ and $A \\cap B = \\{1,2\\}$ has size $2$, so the statement is True.",
-    "**B.** → False\n\nProper subsets number $2^{n} - 1 = 63$, which is strictly smaller than $64$, so the statement is False.",
-    "**C.** → True\n\n$A \\setminus B = \\{1,2\\}$, so the complement in $U$ is $\\{3,4,5\\}$, so the statement is True.",
-    "**D.** → False\n\n$$80 + 70 + 60 - 30 - 25 - 20 + 10 = 145$$\n\nnot $115$, so the statement is False.",
-    "**E.** → True\n\nWhenever $p \\wedge q$ is true, both $p$ and $q$ are true, so $p \\vee q$ is true. The implication never fails, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 120,
-   "solution_overview": "Five independent stems: a Cartesian-product style roster via pairs-as-sets caution replaced by plain ops, subset lattice count, complement of difference, inclusion-exclusion with integers, and a contingency vs tautology call.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-121",
-   "case_id": "MATH 1.121",
-   "title": "Exam-style tasks — 13",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6\\}$, $B = \\{4,5,6,7,8\\}$, $C = \\{1,6,7,9\\}$. Then $|(A \\cap B) \\setminus C| = 2$.",
-    "If $S = \\{\\emptyset, \\{1\\}\\}$, then $\\mathcal{P}(S) = \\{\\emptyset, \\{\\emptyset\\}, \\{\\{1\\}\\}, \\{\\emptyset,\\{1\\}\\}\\}$ and therefore $|\\mathcal{P}(S)| = 4$.",
-    "Let $U = \\{1,2,\\ldots,15\\}$, $E$ the evens in $U$, and $M$ the multiples of $5$ in $U$. Then $|E^{c} \\cup M| = 10$.",
-    "With $|A|=40$, $|B|=35$, $|C|=30$, $|A\\cap B|=12$, $|A\\cap C|=10$, $|B\\cap C|=8$, $|A\\cap B\\cap C|=5$, the number of elements in exactly one of the three sets is $58$.",
-    "From the true sentence $P(3)$ about the domain $\\{1,2,3,4\\}$, one may validly conclude $\\forall x \\, P(x)$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cap B = \\{4,5,6\\}$. Removing $C$ drops $6$:\n\n$$(A \\cap B) \\setminus C = \\{4,5\\}$$\n\nhas size $2$, so the statement is True.",
-    "**B.** → True\n\n$S$ itself has two elements, so $|\\mathcal{P}(S)| = 4$, and the displayed roster is exactly those four subsets, so the statement is True.",
-    "**C.** → False\n\nOdds in $U$: $1,3,5,7,9,11,13,15$ ($8$ elements). Multiples of $5$: $5,10,15$. Union:\n\n$$\\{1,3,5,7,9,10,11,13,15\\}$$\n\nhas $9$ elements, not $10$, so the statement is False.",
-    "**D.** → False\n\nOnly-$A$: $40-12-10+5=23$. Only-$B$: $35-12-8+5=20$. Only-$C$: $30-10-8+5=17$. Sum $60$, not $58$, so the statement is False.",
-    "**E.** → False\n\nA single instance does not prove a universal claim. A countermodel is any property true at $3$ but false at $1$ (for example $x = 3$). The inference is invalid, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 121,
-   "solution_overview": "Five tough claims: a multi-step set identity numerical check, power set of a two-element set listed wrongly, coded complement, overlapping triple census, and an invalid existential generalization.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-122",
-   "case_id": "MATH 1.122",
-   "title": "Exam-style tasks — 14",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{a,b,c\\}$ and $B = \\{c,d\\}$. Then $|A \\cup B| = 4$.",
-    "Let $A = \\{1,2\\}$. Then $1 \\subseteq A$ is a true statement of set theory.",
-    "For every set $A$ in a universe $U$, $(A^{c})^{c} = A$.",
-    "Of $75$ readers, $40$ read newspaper $X$, $35$ read newspaper $Y$, and $20$ read both. Exactly $25$ readers read neither newspaper.",
-    "Whenever $p \\rightarrow q$ is true, the biconditional $p \\leftrightarrow q$ must also be true."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cup B = \\{a,b,c,d\\}$ has four elements, so the statement is True.",
-    "**B.** → False\n\nThe numeral $1$ is an element, not a set of the form needed for $\\subseteq$ in this context; the correct membership claim is $1 \\in A$. Writing $1 \\subseteq A$ is not the intended true claim here, so the statement is False.",
-    "**C.** → True\n\nComplementing twice returns the original set by definition of complement relative to $U$, so the statement is True.",
-    "**D.** → False\n\n$$|X \\cup Y| = 40 + 35 - 20 = 55$$\n\n$$75 - 55 = 20$$\n\nread neither, not $25$, so the statement is False.",
-    "**E.** → False\n\nCounterexample: $p = \\mathrm{F}$, $q = \\mathrm{T}$ makes $p \\rightarrow q$ true while $p \\leftrightarrow q$ is false, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 122,
-   "solution_overview": "Five mid-hardness stems: union cardinality, subset vs element confusion, complement double negation, a neither-count, and $\\leftrightarrow$ versus $\\rightarrow$.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-123",
-   "case_id": "MATH 1.123",
-   "title": "Exam-style tasks — 15",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4\\}$, $B = \\{3,4,5\\}$, $C = \\{5,6,7\\}$. Then $|(A \\cup B) \\setminus C| = 4$.",
-    "A set with $6$ elements has exactly $31$ subsets of even cardinality.",
-    "Let $U = \\{1,\\ldots,10\\}$, $A = \\{1,2,3,4,5\\}$, $B = \\{4,5,6,7\\}$. Then $|A^{c} \\cap B^{c}| = 3$.",
-    "With $|A|=50$, $|B|=40$, $|A\\cap B|=15$, one concludes $|A\\cup B|=85$.",
-    "On the domain $\\{0,1,2\\}$, the sentence $\\exists x \\, \\forall y \\, (x \\le y)$ is true."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cup B = \\{1,2,3,4,5\\}$. Removing $C$ drops $5$:\n\n$$(A \\cup B) \\setminus C = \\{1,2,3,4\\}$$\n\nhas size $4$, so the statement is True.",
-    "**B.** → False\n\nHalf of $2^{6} = 64$ subsets have even size:\n\n$$2^{5} = 32$$\n\nnot $31$, so the statement is False.",
-    "**C.** → True\n\n$A \\cup B = \\{1,2,3,4,5,6,7\\}$, so $(A \\cup B)^{c} = \\{8,9,10\\}$ has size $3$, matching $A^{c} \\cap B^{c}$, so the statement is True.",
-    "**D.** → False\n\nInclusion-exclusion gives\n\n$$|A \\cup B| = 50 + 40 - 15 = 75$$\n\nnot $85$ (which would ignore the intersection subtraction), so the statement is False.",
-    "**E.** → True\n\nTake $x = 0$. Then $0 \\le y$ holds for every $y \\in \\{0,1,2\\}$. The existential claim succeeds, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 123,
-   "solution_overview": "Five exam-style checks: a difference-of-unions count, even-sized subsets, De Morgan numerical test, a full inclusion-exclusion, and a quantified arithmetic claim on a tiny domain.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-124",
-   "case_id": "MATH 1.124",
-   "title": "Exam-style tasks — 16",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6,7\\}$, $B = \\{1,3,5,7,9\\}$, $C = \\{1,2,3\\}$. Then $|(A \\cap B) \\cup C| = 5$.",
-    "Let $X = \\{1,2,3,4,5\\}$. The number of nonempty subsets that contain at most one of the elements $1$ or $2$ is $24$.",
-    "Let $U = \\{1,2,3,4,5,6\\}$, $A = \\{1,2,3\\}$, $B = \\{3,4,5\\}$. Then $|(A \\triangle B)^{c}| = 2$.",
-    "Using $|A|=32$, $|B|=28$, $|C|=25$, pairwise intersections $14$, $12$, $10$, and triple intersection $6$, one finds $|A\\cup B\\cup C|=61$.",
-    "From premises (i) $p \\vee q$ and (ii) $\\neg p \\vee r$, the conclusion $q \\vee r$ follows validly in classical propositional logic."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\cap B = \\{1,3,5,7\\}$. Union with $C$ adds $2$:\n\n$$\\{1,2,3,5,7\\}$$\n\nhas size $5$, so the statement is True.",
-    "**B.** → False\n\nSubsets of $\\{3,4,5\\}$ freely ($8$ of them), plus those with $1$ but not $2$ ($8$), plus those with $2$ but not $1$ ($8$), total $24$ including empty. Nonempty: $24 - 1 = 23$, not $24$, so the statement is False.",
-    "**C.** → True\n\n$A \\triangle B = \\{1,2,4,5\\}$, so the complement is $\\{3,6\\}$ with size $2$, so the statement is True.",
-    "**D.** → False\n\n$$32 + 28 + 25 - 14 - 12 - 10 + 6 = 55$$\n\nnot $61$, so the statement is False.",
-    "**E.** → True\n\nThis is the resolution rule (or proof by cases on $p$). If $p$ holds then premise (ii) forces $r$; if $\\neg p$ holds then premise (i) forces $q$. Either way $q \\vee r$ holds, so the statement is True."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 124,
-   "solution_overview": "Five advanced stems: chained intersections and unions, subsets avoiding a pair, complement of a symmetric difference, a three-set region sum, and a deduction tableau with a countermodel.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-125",
-   "case_id": "MATH 1.125",
-   "title": "Exam-style tasks — 17",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{2,3,5,7\\}$, $B = \\{1,2,3,4\\}$, $C = \\{3,4,5,6\\}$. Then $A \\cap B \\cap C = \\emptyset$.",
-    "If a set has $n$ elements, then it has $2^{n}-1$ nonempty subsets and $2^{n}-2$ proper nonempty subsets. For $n=4$ those figures are $15$ and $14$.",
-    "Let $|U|=50$, $|A|=20$, $|B|=18$, $|A\\cap B|=6$. Then $|A^{c}|=30$ and $|A^{c} \\cap B|=12$.",
-    "With $55$ math, $40$ physics, $20$ both, in a class of $80$, the number who take only mathematics is $40$.",
-    "The formula $(p \\vee q) \\wedge \\neg p$ is a contradiction."
-   ],
-   "answer_key": [
-    false,
-    true,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nThe element $3$ lies in all three sets, so $A \\cap B \\cap C = \\{3\\} \\ne \\emptyset$, so the statement is False.",
-    "**B.** → True\n\n$2^{4}-1=15$ nonempty subsets; excluding the full set as well leaves $14$ proper nonempty subsets, so the statement is True.",
-    "**C.** → True\n\n$|A^{c}|=50-20=30$. Elements of $B$ outside $A$: $|B|-|A\\cap B|=18-6=12$, so the statement is True.",
-    "**D.** → False\n\nOnly math: $55-20=35$, not $40$, so the statement is False.",
-    "**E.** → False\n\nOn $p=\\mathrm{F}$, $q=\\mathrm{T}$ the formula evaluates to true. It is satisfiable (a contingency), not a contradiction, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 125,
-   "solution_overview": "Five varied problems: explicit roster algebra, power-set cardinality ladder, complement percentages, a Venn only-A region, and a false claim that a contingency is a contradiction.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-126",
-   "case_id": "MATH 1.126",
-   "title": "Exam-style tasks — 18",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3\\}$ and $B = \\{3,4,5,6\\}$. Then $|A \\cup B| = 7$.",
-    "If $S = \\{a\\}$, then $\\mathcal{P}(S) = \\{\\emptyset, \\{a\\}\\}$ and every element of $\\mathcal{P}(S)$ is a subset of $S$.",
-    "For sets $A,B \\subseteq U$, $(A \\cap B)^{c} = A^{c} \\cup B^{c}$ always holds.",
-    "In a group of $100$, $60$ have attribute $P$, $55$ have attribute $Q$, and $40$ have both. Exactly $20$ have neither attribute.",
-    "The implication $p \\rightarrow q$ is logically equivalent to its converse $q \\rightarrow p$."
-   ],
-   "answer_key": [
-    false,
-    true,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\n$A \\cup B = \\{1,2,3,4,5,6\\}$ has $6$ elements (the shared $3$ is not double-counted), so the statement is False.",
-    "**B.** → True\n\nBoth displayed sets are subsets of $S$ by construction of the power set, so the statement is True.",
-    "**C.** → True\n\nThis is one of De Morgan's laws for sets, so the statement is True.",
-    "**D.** → False\n\n$$|P\\cup Q|=60+55-40=75$$\n\n$$100-75=25$$\n\nhave neither, not $20$, so the statement is False.",
-    "**E.** → False\n\nCounterexample: $p=\\mathrm{T}$, $q=\\mathrm{F}$ makes $p\\rightarrow q$ false and $q\\rightarrow p$ true. They are not equivalent, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 126,
-   "solution_overview": "Five independent claims: a basic union trap, subset count of a singleton, De Morgan wording, a two-set neither trap, and implication vs converse.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-127",
-   "case_id": "MATH 1.127",
-   "title": "Exam-style tasks — 19",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5\\}$, $B = \\{2,4,6\\}$, $C = \\{4,5,6,7\\}$. Then $|A \\cup (B \\cap C)| = 6$.",
-    "Let $Y = \\{0,1,2,3,4,5,6,7\\}$. The number of $4$-element subsets of $Y$ is $56$.",
-    "Let $U = \\{1,\\ldots,12\\}$, $A=\\{1,2,3,4,5,6\\}$, $B=\\{4,5,6,7,8,9\\}$, $C=\\{6,7,8,9,10,11\\}$. Then $|(A\\cap B\\cap C)^{c}| = 11$.",
-    "With the customer data $70,60,50$ and overlaps $30,25,20$ and triple $10$ in a population of $120$, the number who bought at least two products is $45$.",
-    "Over the domain $D = \\{1,2\\}$, the negation of $\\exists x \\, \\forall y \\, (x \\cdot y = y)$ is $\\forall x \\, \\exists y \\, (x \\cdot y \\ne y)$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    true,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$B \\cap C = \\{4,6\\}$. Union with $A$:\n\n$$\\{1,2,3,4,5,6\\}$$\n\nhas size $6$, so the statement is True.",
-    "**B.** → False\n\n$$\\binom{8}{4} = 70$$\n\nnot $56$, so the statement is False.",
-    "**C.** → True\n\n$A\\cap B\\cap C = \\{6\\}$, so the complement has $12-1=11$ elements, so the statement is True.",
-    "**D.** → False\n\nAt least two = exactly two + exactly three:\n\n$$(30-10)+(25-10)+(20-10)+10 = 20+15+10+10 = 55$$\n\nnot $45$, so the statement is False.",
-    "**E.** → True\n\nNegating $\\exists x \\, \\forall y \\, P(x,y)$ yields $\\forall x \\, \\exists y \\, \\neg P(x,y)$. With $P$ as $x\\cdot y = y$, the displayed negation is correct, so the statement is True."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 127,
-   "solution_overview": "Five hard mini-stems: a distribute-and-count expression, restricted power counting, complement of an intersection of three sets, a precise three-set neither, and a quantifier negation over a product domain.",
-   "placeholder": false
-  },
-  {
-   "id": "math-1-128",
-   "case_id": "MATH 1.128",
-   "title": "Exam-style tasks — 20",
-   "subsection": "1.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Let $A = \\{1,2,3,4,5,6,7,8\\}$, $B = \\{1,2,3\\}$, $C = \\{3,4,5\\}$. Then $|(A \\setminus B) \\setminus C| = 3$.",
-    "If $A \\subsetneq B \\subsetneq C$ are finite and $|A|=3$, $|C|=7$, then necessarily $|B|=5$.",
-    "Let $|U|=100$, $|A|=45$, $|B|=40$, $|A\\cap B|=15$. Then $|A^{c} \\cup B^{c}| = 75$.",
-    "A poll of $200$ voters finds $110$ favour policy $X$, $95$ favour policy $Y$, and $60$ favour both. These figures are consistent with the sample size.",
-    "From premises (i) all $A$ are $B$ and (ii) all $B$ are $C$, one may validly conclude that all $A$ are $C$."
-   ],
-   "answer_key": [
-    true,
-    false,
-    false,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\n$A \\setminus B = \\{4,5,6,7,8\\}$. Removing $C$ drops $4$ and $5$:\n\n$$\\{6,7,8\\}$$\n\nhas size $3$, so the statement is True.",
-    "**B.** → False\n\n$B$ may be any cardinality strictly between $3$ and $7$, for example $|B|=4$ or $|B|=6$. The value $5$ is possible but not forced, so the statement is False.",
-    "**C.** → False\n\nBy De Morgan, $A^{c}\\cup B^{c}=(A\\cap B)^{c}$, so\n\n$$|A^{c}\\cup B^{c}| = |U| - |A\\cap B| = 100 - 15 = 85$$\n\nnot $75$, so the statement is False.",
-    "**D.** → True\n\n$$|X\\cup Y|=110+95-60=145 \\le 200$$\n\nso the data fit inside the sample, so the statement is True.",
-    "**E.** → True\n\nUniversal affirmative syllogism (Barbara): $A \\subseteq B$ and $B \\subseteq C$ imply $A \\subseteq C$. The deduction is valid, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 128,
-   "solution_overview": "Five closing independent checks: a triple-difference size, a subset-superset chain, complement arithmetic, a survey consistency test, and a valid syllogistic pattern.",
-   "placeholder": false
-  }
- ]
+  "tasks": [
+    {
+      "id": "math-1-109",
+      "case_id": "MATH 1.109",
+      "title": "Exam-style tasks - 1",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Let $R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$. Both $\\{0\\}\\in R$ and $\\{\\{0\\}\\}\\subseteq R$ hold.",
+        "Given $A=\\{1,2,4,7\\}$, $B=\\{2,3,4,8\\}$, and $C=\\{4,5,8\\}$, the set $(A\\cap B)\\cup C$ is $\\{2,4,5,8\\}$.",
+        "For propositions $p,q,r$, the formulas $p\\rightarrow(q\\rightarrow r)$ and $(p\\wedge q)\\rightarrow r$ are logically equivalent.",
+        "On $D=\\{1,2,3,4,5\\}$, every $x$ has some $y$ in $D$ such that $x+y=6$.",
+        "A museum catalog uses a set $C$ of five distinct codes. Its power set has $31$ members."
+      ],
+      "answer_key": [true, true, true, true, false],
+      "tactical_explanations": [
+        "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied, so the statement is True.",
+        "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim, so the statement is True.",
+        "**C.** → True\n\nEliminate each implication until both formulas have the same disjunctive form.\n\n$$p\\rightarrow(q\\rightarrow r)\\equiv\\neg p\\vee(\\neg q\\vee r)$$\n\n$$(p\\wedge q)\\rightarrow r\\equiv\\neg(p\\wedge q)\\vee r$$\n\n$$\\neg(p\\wedge q)\\vee r\\equiv\\neg p\\vee\\neg q\\vee r$$\n\nBoth formulas reduce to $\\neg p\\vee\\neg q\\vee r$, so the statement is True.",
+        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$, so the statement is True.",
+        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 109,
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nested membership and subset.\nB: intersection followed by union.\nC: exporting a conjunction.\nD: finite-domain partner.\nE: power-set size.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-110",
+      "case_id": "MATH 1.110",
+      "title": "Exam-style tasks - 2",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At a conference of $90$ people, $52$ attended the language panel, $41$ attended the data panel, and $18$ attended both. Exactly $17$ attended neither panel.",
+        "A rule written $p\\rightarrow q$ is always logically equivalent to its converse $q\\rightarrow p$.",
+        "The sentence $\\exists y\\in\\{1,2,3\\}\\ \\forall x\\in\\{1,2,3\\}\\ (x+y=4)$ is true.",
+        "Eight delegates form a set $D$. A committee must include Ava and omit Ben and Chen; exactly $32$ committees meet those rules.",
+        "For subsets $A$ and $B$ of a fixed universe, $(A\\cup B)^c=A^c\\cap B^c$."
+      ],
+      "answer_key": [false, false, false, true, true],
+      "tactical_explanations": [
+        "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D|=52+41-18=75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel, so the statement is False.",
+        "**B.** → False\n\nOne truth assignment is enough to disprove a proposed logical equivalence.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q=F\\rightarrow T=T$$\n\n$$q\\rightarrow p=T\\rightarrow F=F$$\n\nThe original implication and its converse disagree, so the statement is False.",
+        "**C.** → False\n\nThe existential witness must stay fixed while the universal variable changes.\n\n$$x=1\\Longrightarrow y=3$$\n\n$$x=2\\Longrightarrow y=2$$\n\n$$3\\ne2$$\n\nNo single $y$ satisfies both required equations, so the statement is False.",
+        "**D.** → True\n\nFixing required and forbidden delegates leaves a free include-or-omit choice for everyone else.\n\n$$8-1-2=5$$\n\n$$\\#\\{\\text{admissible committees}\\}=2^5$$\n\n$$2^5=32$$\n\nExactly $32$ committees are possible, so the statement is True.",
+        "**E.** → True\n\nAn element outside a union must be outside each set separately.\n\n$$x\\in(A\\cup B)^c\\Longleftrightarrow x\\notin A\\cup B$$\n\n$$x\\notin A\\cup B\\Longleftrightarrow(x\\notin A)\\wedge(x\\notin B)$$\n\n$$(x\\notin A)\\wedge(x\\notin B)\\Longleftrightarrow x\\in A^c\\cap B^c$$\n\nBoth sides have the same elements, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 110,
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: two-panel survey.\nB: converse of an implication.\nC: one witness for all inputs.\nD: required and forbidden members.\nE: De Morgan union law.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-111",
+      "case_id": "MATH 1.111",
+      "title": "Exam-style tasks - 3",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The negation of $p\\wedge q$ is logically equivalent to $\\neg p\\vee\\neg q$.",
+        "Over the integers, $\\forall n\\ \\exists m\\ (m>n)$ is true.",
+        "The roster $\\{\\alpha,\\beta,\\alpha\\}$ contains three elements and equals $\\{\\beta,\\alpha\\}$.",
+        "Finite sets with $|A|=18$, $|B|=14$, and $|A\\cap B|=5$ have a symmetric difference of size $23$.",
+        "The formula $((p\\rightarrow q)\\wedge p)\\rightarrow q$ is a tautology."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law, so the statement is True.",
+        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness, so the statement is True.",
+        "**C.** → False\n\nRepeated roster entries do not create new elements of a set.\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2\\ne3$$\n\nThe equality is correct but the claimed cardinality is not, so the statement is False.",
+        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B|=18-5=13$$\n\n$$|B\\setminus A|=14-5=9$$\n\n$$|A\\triangle B|=13+9=22\\ne23$$\n\nThe symmetric difference has size $22$, so the statement is False.",
+        "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p=T\\Longrightarrow p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 111,
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: propositional De Morgan law.\nB: integer successor witness.\nC: duplicate roster entries.\nD: symmetric-difference size.\nE: modus ponens as a formula.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-112",
+      "case_id": "MATH 1.112",
+      "title": "Exam-style tasks - 4",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exists an integer $g$ such that every integer $n$ satisfies $n\\le g$.",
+        "If a set $X$ has three elements, then $\\mathcal P(\\mathcal P(X))$ has $256$ elements.",
+        "A campus has $46$ members in art club, $39$ in debate, and $31$ in music; pairwise overlaps are $17$, $12$, and $10$, while $4$ join all three. Exactly $81$ students join at least one club.",
+        "No valuation can make at least one of $p,q$ true while also making both $p$ and $q$ false.",
+        "The negation of $\\forall x\\ \\exists y\\ R(x,y)$ is $\\exists x\\ \\forall y\\ \\neg R(x,y)$."
+      ],
+      "answer_key": [false, true, true, true, true],
+      "tactical_explanations": [
+        "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness, so the statement is False.",
+        "**B.** → True\n\nApply the power-set cardinality rule once at each level.\n\n$$|X|=3$$\n\n$$|\\mathcal P(X)|=2^3=8$$\n\n$$|\\mathcal P(\\mathcal P(X))|=2^8=256$$\n\nThe second power set has the claimed size, so the statement is True.",
+        "**C.** → True\n\nThree-set inclusion-exclusion removes pairwise double counts and restores the triple overlap.\n\n$$|A\\cup D\\cup M|=46+39+31-17-12-10+4$$\n\n$$|A\\cup D\\cup M|=116-39+4$$\n\n$$|A\\cup D\\cup M|=81$$\n\nThe at-least-one count is $81$, so the statement is True.",
+        "**D.** → True\n\nThe last two conjuncts force values that make the first conjunct false.\n\n$$\\neg p\\wedge\\neg q=T\\Longrightarrow(p,q)=(F,F)$$\n\n$$(p,q)=(F,F)\\Longrightarrow p\\vee q=F$$\n\n$$(p\\vee q)\\wedge\\neg p\\wedge\\neg q=F$$\n\nThe formula is false on every assignment, so the statement is True.",
+        "**E.** → True\n\nMove the negation inward by switching each quantifier in order.\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\neg[\\exists y\\ R(x,y)]$$\n\n$$\\neg[\\exists y\\ R(x,y)]\\equiv\\forall y\\ \\neg R(x,y)$$\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\forall y\\ \\neg R(x,y)$$\n\nThe displayed sentence is the correct negation, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 112,
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: greatest integer.\nB: iterated power set.\nC: three-club union.\nD: contradictory requirements.\nE: negating alternating quantifiers.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-113",
+      "case_id": "MATH 1.113",
+      "title": "Exam-style tasks - 5",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "From a six-symbol alphabet containing $x$ and $y$, there are five two-element subsets that include $x$ but exclude $y$.",
+        "A greenhouse has $30$ red plants, $22$ fragrant plants, and $9$ that are both. There are $19$ plants that are red but not fragrant.",
+        "Exactly two of the four truth assignments for $p,q$ satisfy $(p\\vee q)\\wedge\\neg(p\\wedge q)$.",
+        "Every novelist is observant, and no observant person is careless. It follows validly that no novelist is careless.",
+        "For $E=\\{\\emptyset,\\{\\emptyset\\}\\}$, the empty set is both an element of $E$ and a subset of $E$."
+      ],
+      "answer_key": [false, false, true, true, true],
+      "tactical_explanations": [
+        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions, so the statement is False.",
+        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants, so the statement is False.",
+        "**C.** → True\n\nThe formula requires at least one true proposition but forbids both from being true.\n\n$$(p,q)=(T,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)=(F,T)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(T,T),(F,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=F$$\n\nExactly the two mixed rows satisfy the formula, so the statement is True.",
+        "**D.** → True\n\nFollowing one arbitrary novelist through the two premises forces the negated property.\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nThe universal conclusion follows, so the statement is True.",
+        "**E.** → True\n\nThe empty set can be listed as an element and is also a subset of every set.\n\n$$\\emptyset\\in\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\n$$\\forall z\\,(z\\in\\emptyset\\Longrightarrow z\\in E)$$\n\n$$\\emptyset\\subseteq E$$\n\nBoth uses of the empty set are valid, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 113,
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: restricted two-element subsets.\nB: one exclusive Venn region.\nC: exclusive-or truth count.\nD: categorical chain.\nE: empty-set roles.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-114",
+      "case_id": "MATH 1.114",
+      "title": "Exam-style tasks - 6",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "In $U=\\{1,2,\\ldots,15\\}$, let $A$ be the multiples of $3$ and $B=\\{1,2,3,4\\}$. Then $(A\\cup B)^c=\\{5,7,8,10,11,13,14\\}$.",
+        "The biconditional $p\\leftrightarrow q$ is equivalent to $(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$.",
+        "Every violinist is a musician, and Lee is a musician. Therefore Lee must be a violinist.",
+        "Whenever finite sets satisfy $A\\subsetneq B\\subsetneq C$, $|A|=2$, and $|C|=5$, the middle set must have four elements.",
+        "In three overlapping mailing lists, the pairwise intersection sizes are $15$, $13$, and $11$, and the triple intersection has size $5$. Exactly $24$ names occur in exactly two lists."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct, so the statement is True.",
+        "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q)=(T,T)\\Longrightarrow p\\wedge q=T$$\n\n$$(p,q)=(F,F)\\Longrightarrow\\neg p\\wedge\\neg q=T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows, so the statement is True.",
+        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$V(\\mathrm{Lee})=F,\\quad M(\\mathrm{Lee})=T$$\n\nThe last line is a countermodel to the conclusion, so the statement is False.",
+        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible, so the statement is False.",
+        "**E.** → True\n\nSubtract the triple intersection from each pairwise count before adding the disjoint regions.\n\n$$|A\\cap B\\text{ only}|=15-5=10$$\n\n$$|A\\cap C\\text{ only}|=13-5=8,\\qquad|B\\cap C\\text{ only}|=11-5=6$$\n\n$$10+8+6=24$$\n\nThe exactly-two total is $24$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 114,
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: complement of a coded union.\nB: biconditional agreement form.\nC: affirming a class inclusion.\nD: strict subset chain.\nE: exactly two of three sets.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-115",
+      "case_id": "MATH 1.115",
+      "title": "Exam-style tasks - 7",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Replacing both propositions in a conditional by their negations, without exchanging their positions, always preserves the conditional's truth value.",
+        "Over the real numbers, $\\forall x\\ \\exists y\\ (y^2=x)$ holds.",
+        "A five-element set has exactly $15$ subsets of even cardinality.",
+        "For $A=\\{1\\}$, $B=\\{2\\}$, and $C=\\{3\\}$, the equality $A\\cup(B\\cap C)=(A\\cup B)\\cap C$ holds.",
+        "The expression $p\\vee(q\\wedge r)$ is logically equivalent to $(p\\vee q)\\wedge r$."
+      ],
+      "answer_key": [false, false, false, false, false],
+      "tactical_explanations": [
+        "**A.** → False\n\nCompare the formulas on an assignment where the antecedent holds and the consequent fails.\n\n$$(p,q)=(T,F)$$\n\n$$p\\rightarrow q=T\\rightarrow F=F$$\n\n$$\\neg p\\rightarrow\\neg q=F\\rightarrow T=T$$\n\nThe inverse can differ from the original implication, so the statement is False.",
+        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$, so the statement is False.",
+        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$|\\mathcal P(S)|=2^5=32$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets, so the statement is False.",
+        "**D.** → False\n\nEvaluating both sides reveals that the proposed placement of the intersection is not distributive.\n\n$$B\\cap C=\\emptyset\\Longrightarrow A\\cup(B\\cap C)=\\{1\\}$$\n\n$$A\\cup B=\\{1,2\\}$$\n\n$$(A\\cup B)\\cap C=\\emptyset\\ne\\{1\\}$$\n\nThe two sides are different, so the statement is False.",
+        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 115,
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: inverse of an implication.\nB: universal real square root.\nC: even-cardinality subsets.\nD: failed distribution pattern.\nE: misplaced distributive factor.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-116",
+      "case_id": "MATH 1.116",
+      "title": "Exam-style tasks - 8",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "In the integer domain, there is an $x$ satisfying $x+y=y$ for every integer $y$.",
+        "Define $A=\\{n\\in\\mathbb Z:n^2=16\\}$. Then $|A|=2$ and $\\{4\\}\\in A$.",
+        "A survey of $100$ residents can have $70$ in group $A$, $50$ in group $B$, and only $10$ in both groups.",
+        "Among the eight assignments for $p,q,r$, exactly one falsifies $p\\rightarrow(q\\vee r)$.",
+        "For arbitrary predicates, $\\forall x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\forall x\\,P(x))\\vee(\\forall x\\,Q(x))$."
+      ],
+      "answer_key": [true, false, false, true, false],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence, so the statement is True.",
+        "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked.\n\n$$n^2=16\\Longleftrightarrow n\\in\\{-4,4\\}$$\n\n$$A=\\{-4,4\\}$$\n\n$$4\\in A\\quad\\text{but}\\quad\\{4\\}\\notin A$$\n\nThe singleton $\\{4\\}$ is not one of the integer elements, so the statement is False.",
+        "**C.** → False\n\nA union cannot contain more people than the survey population.\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=70+50-10=110$$\n\n$$110>|U|=100$$\n\nThe three reported figures are inconsistent, so the statement is False.",
+        "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r)=F\\Longleftrightarrow p=T\\ \\text{and}\\ q\\vee r=F$$\n\n$$q\\vee r=F\\Longleftrightarrow(q,r)=(F,F)$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment, so the statement is True.",
+        "**E.** → False\n\nDifferent domain elements may satisfy different sides of the disjunction.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$\\forall x\\in D\\,(P(x)\\vee Q(x))=T$$\n\n$$(\\forall x\\in D\\,P(x))\\vee(\\forall x\\in D\\,Q(x))=F\\vee F=F$$\n\nThe countermodel separates the two formulas, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 116,
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: additive identity witness.\nB: set-builder roots.\nC: feasibility of survey counts.\nD: unique falsifying row.\nE: universal quantifier over disjunction.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-117",
+      "case_id": "MATH 1.117",
+      "title": "Exam-style tasks - 9",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "After excluding both $\\emptyset$ and the full set, a four-element set has $14$ subsets left.",
+        "For any $A,B\\subseteq U$, the complement of $A\\setminus B$ is $A^c\\cup B$.",
+        "The logical negation of $p\\rightarrow q$ is $\\neg p\\wedge q$.",
+        "The formula $\\exists x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$.",
+        "For a four-element ground set $G$, there are $81$ ordered pairs $(A,B)$ with $A\\subseteq B\\subseteq G$."
+      ],
+      "answer_key": [true, true, false, true, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$, so the statement is True.",
+        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$$\n\nThe proposed identity follows, so the statement is True.",
+        "**C.** → False\n\nRewrite the implication as a disjunction before applying negation.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg(p\\rightarrow q)\\equiv\\neg(\\neg p\\vee q)$$\n\n$$\\neg(\\neg p\\vee q)\\equiv p\\wedge\\neg q$$\n\nThe claimed formula reverses both required truth values, so the statement is False.",
+        "**D.** → True\n\nA witness for the disjunction witnesses at least one side, and either side supplies a witness for the disjunction.\n\n$$\\exists x\\,(P(x)\\vee Q(x))\\Longrightarrow(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$$\n\n$$\\exists x\\,P(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\n$$\\exists x\\,Q(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\nBoth directions of the equivalence hold, so the statement is True.",
+        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B,\\qquad g\\in B\\setminus A,\\qquad g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 117,
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nonempty proper subsets.\nB: complement of a difference.\nC: negating an implication.\nD: existential quantifier over disjunction.\nE: nested subset pairs.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-118",
+      "case_id": "MATH 1.118",
+      "title": "Exam-style tasks - 10",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The complement of $A\\triangle B$ consists exactly of elements that belong to both $A$ and $B$ or to neither one.",
+        "The contrapositive $\\neg q\\rightarrow\\neg p$ always has the same truth value as $p\\rightarrow q$.",
+        "Every medic is licensed, and at least one medic exists. Hence at least one licensed person exists.",
+        "Take $S=\\{r,s\\}$. Both $\\{r\\}\\in\\mathcal P(S)$ and $r\\in\\mathcal P(S)$ are true.",
+        "At an animal shelter, $28$ animals like dogs, $24$ like cats, and $11$ like both. Exactly $35$ like just one of the two."
+      ],
+      "answer_key": [true, true, true, false, false],
+      "tactical_explanations": [
+        "**A.** → True\n\nSymmetric difference records unequal membership, so its complement records equal membership.\n\n$$A\\triangle B=(A\\cap B^c)\\cup(A^c\\cap B)$$\n\n$$x\\notin A\\triangle B\\Longleftrightarrow[x\\in A\\Longleftrightarrow x\\in B]$$\n\n$$(A\\triangle B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$$\n\nThe description matches the complement, so the statement is True.",
+        "**B.** → True\n\nImplication elimination puts the original and contrapositive into the same disjunction.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg q\\rightarrow\\neg p\\equiv\\neg(\\neg q)\\vee\\neg p$$\n\n$$q\\vee\\neg p\\equiv\\neg p\\vee q$$\n\nThe two formulas are logically equivalent, so the statement is True.",
+        "**C.** → True\n\nApply the universal implication to the witness supplied by the existential premise.\n\n$$\\forall x\\,(M(x)\\rightarrow L(x))$$\n\n$$\\exists x\\,M(x)\\Longrightarrow M(a)$$\n\n$$M(a)\\rightarrow L(a)\\Longrightarrow\\exists x\\,L(x)$$\n\nA licensed witness is forced, so the statement is True.",
+        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails, so the statement is False.",
+        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$|D\\setminus C|=28-11=17$$\n\n$$|C\\setminus D|=24-11=13$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 118,
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: complement of symmetric difference.\nB: contrapositive equivalence.\nC: existence through implication.\nD: power-set membership.\nE: exactly one of two groups.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-119",
+      "case_id": "MATH 1.119",
+      "title": "Exam-style tasks - 11",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Under every valuation, at least one direction between $p$ implies $q$ and $q$ implies $p$ is true.",
+        "No reptile is warm-blooded, and every snake is a reptile. Therefore no snake is warm-blooded.",
+        "If $K\\subseteq L$ and $L\\subseteq M$, then every element of $K$ belongs to $M$.",
+        "If $A$ and $B$ lie in a $15$-element universe with $|A|=12$ and $|B|=9$, then $A\\cap B$ has at least six elements.",
+        "The formula $(p\\leftrightarrow q)\\leftrightarrow(\\neg p\\leftrightarrow\\neg q)$ is a tautology."
+      ],
+      "answer_key": [true, true, true, true, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nExpanding the implications exposes a proposition and its negation inside the disjunction.\n\n$$(p\\rightarrow q)\\vee(q\\rightarrow p)\\equiv(\\neg p\\vee q)\\vee(\\neg q\\vee p)$$\n\n$$\\equiv(\\neg p\\vee p)\\vee(q\\vee\\neg q)$$\n\n$$\\equiv T\\vee T\\equiv T$$\n\nThe disjunction is true on every row, so the statement is True.",
+        "**B.** → True\n\nAn arbitrary snake inherits reptile status and then the stated exclusion.\n\n$$\\forall x\\,(S(x)\\rightarrow R(x))$$\n\n$$\\forall x\\,(R(x)\\rightarrow\\neg W(x))$$\n\n$$S(a)\\Longrightarrow R(a)\\Longrightarrow\\neg W(a)$$\n\nThe conclusion holds for every snake, so the statement is True.",
+        "**C.** → True\n\nFollow an arbitrary element through the two given inclusions.\n\n$$x\\in K\\Longrightarrow x\\in L$$\n\n$$x\\in L\\Longrightarrow x\\in M$$\n\n$$x\\in K\\Longrightarrow x\\in M$$\n\nThe element test proves $K\\subseteq M$, so the statement is True.",
+        "**D.** → True\n\nThe universe size bounds the union and therefore forces an overlap.\n\n$$|A\\cup B|\\le15$$\n\n$$|A|+|B|-|A\\cap B|\\le15$$\n\n$$12+9-|A\\cap B|\\le15\\Longrightarrow|A\\cap B|\\ge6$$\n\nAt least six elements must be shared, so the statement is True.",
+        "**E.** → True\n\nNegating both propositions preserves whether their truth values agree.\n\n$$p=q\\Longrightarrow\\neg p=\\neg q$$\n\n$$p\\ne q\\Longrightarrow\\neg p\\ne\\neg q$$\n\n$$(p\\leftrightarrow q)\\equiv(\\neg p\\leftrightarrow\\neg q)$$\n\nThe outer biconditional is always true, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 119,
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: comparable implications.\nB: negative categorical deduction.\nC: subset transitivity.\nD: forced minimum overlap.\nE: negating both sides of a biconditional.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-120",
+      "case_id": "MATH 1.120",
+      "title": "Exam-style tasks - 12",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Some artist is a baker, and every baker is creative. Therefore every artist is creative.",
+        "Let $T$ have five elements and let $\\mathcal F=\\{\\{t\\}:t\\in T\\}$. Then $|\\mathcal F|=5$ and $\\mathcal F\\in\\mathcal P(\\mathcal P(T))$.",
+        "Among $140$ patients, set sizes are $80$, $65$, and $50$; pairwise overlaps are $30$, $22$, and $18$, with $9$ in all three. Exactly $11$ patients are in none of the sets.",
+        "The conjunction $p\\wedge(p\\rightarrow q)\\wedge\\neg q$ is satisfiable.",
+        "Over $D=\\{1,2,3\\}$, the statement $\\forall x\\,(x=1\\vee x>1)$ is false."
+      ],
+      "answer_key": [false, true, false, false, false],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe premises control one artist witness but say nothing about all other artists.\n\n$$A(a)\\wedge B(a)$$\n\n$$\\forall x\\,(B(x)\\rightarrow C(x))\\Longrightarrow C(a)$$\n\n$$A(b)\\wedge\\neg B(b)\\wedge\\neg C(b)$$\n\nThe object $b$ gives a countermodel to the universal conclusion, so the statement is False.",
+        "**B.** → True\n\nDistinct elements produce distinct singleton subsets, all living inside the first power set.\n\n$$|\\mathcal F|=|T|=5$$\n\n$$t\\in T\\Longrightarrow\\{t\\}\\in\\mathcal P(T)$$\n\n$$\\mathcal F\\subseteq\\mathcal P(T)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(T))$$\n\nBoth the size and the iterated membership are correct, so the statement is True.",
+        "**C.** → False\n\nFirst count the three-set union, then subtract it from the patient total.\n\n$$|A\\cup B\\cup C|=80+65+50-30-22-18+9$$\n\n$$|A\\cup B\\cup C|=195-70+9=134$$\n\n$$140-134=6\\ne11$$\n\nExactly six patients are in none of the sets, so the statement is False.",
+        "**D.** → False\n\nThe first two conjuncts force the truth of the proposition denied by the third.\n\n$$p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$q\\wedge\\neg q=F$$\n\nNo assignment satisfies all three conjuncts, so the statement is False.",
+        "**E.** → False\n\nCheck the alternatives directly for each member of the small domain.\n\n$$x=1\\Longrightarrow x=1$$\n\n$$x=2\\Longrightarrow x>1$$\n\n$$x=3\\Longrightarrow x>1$$\n\nEvery domain element satisfies the disjunction, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 120,
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: existential premise versus universal conclusion.\nB: family of singletons.\nC: none of three groups.\nD: inconsistent implication premises.\nE: finite-domain disjunction.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-121",
+      "case_id": "MATH 1.121",
+      "title": "Exam-style tasks - 13",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Two sets with identical power sets must themselves be equal.",
+        "The set identity $A\\cap(A\\cup B)=A$ holds for every pair of sets.",
+        "The formula $(p\\vee q)\\rightarrow r$ is false on four of the eight assignments for $p,q,r$.",
+        "Every pilot is trained, and Dana is trained. These facts validly imply that Dana is a pilot.",
+        "The set encoded by $\\{1,1,2,2,3,3\\}$ has six elements."
+      ],
+      "answer_key": [true, true, false, false, false],
+      "tactical_explanations": [
+        "**A.** → True\n\nSingleton membership in a power set recovers membership in the original set.\n\n$$x\\in A\\Longleftrightarrow\\{x\\}\\in\\mathcal P(A)$$\n\n$$\\mathcal P(A)=\\mathcal P(B)\\Longrightarrow\\{x\\}\\in\\mathcal P(A)\\Longleftrightarrow\\{x\\}\\in\\mathcal P(B)$$\n\n$$x\\in A\\Longleftrightarrow x\\in B$$\n\nThe two sets have exactly the same elements, so the statement is True.",
+        "**B.** → True\n\nMembership in $A$ already guarantees membership in the larger union.\n\n$$x\\in A\\cap(A\\cup B)\\Longrightarrow x\\in A$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cup B$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cap(A\\cup B)$$\n\nThe two inclusions establish equality, so the statement is True.",
+        "**C.** → False\n\nA false implication fixes the consequent as false while requiring a true antecedent.\n\n$$(p\\vee q)\\rightarrow r=F\\Longleftrightarrow p\\vee q=T\\ \\text{and}\\ r=F$$\n\n$$\\#\\{(p,q):p\\vee q=T\\}=3$$\n\n$$3\\cdot1=3\\ne4$$\n\nExactly three assignments falsify the formula, so the statement is False.",
+        "**D.** → False\n\nThe premise points from pilots to trained people and does not supply the converse.\n\n$$\\forall x\\,(P(x)\\rightarrow T(x))$$\n\n$$T(\\mathrm{Dana})=T$$\n\n$$P(\\mathrm{Dana})=F,\\quad T(\\mathrm{Dana})=T$$\n\nA trained nonpilot is a countermodel, so the statement is False.",
+        "**E.** → False\n\nA set records whether an object appears, not how many times it is written.\n\n$$\\{1,1,2,2,3,3\\}=\\{1,2,3\\}$$\n\n$$|\\{1,2,3\\}|=3$$\n\n$$3\\ne6$$\n\nThe encoded set has only three elements, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 121,
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: recovering a set from its power set.\nB: absorption law.\nC: counting false implication rows.\nD: converse predicate inference.\nE: cardinality after deduplication.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-122",
+      "case_id": "MATH 1.122",
+      "title": "Exam-style tasks - 14",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A Venn diagram has $12$ objects only in $A$, $9$ only in $B$, $7$ in both, and $4$ in neither. The diagram represents a universe of $33$ objects.",
+        "The formula $p\\rightarrow(q\\wedge r)$ is equivalent to $(p\\rightarrow q)\\wedge(p\\rightarrow r)$.",
+        "From $\\forall x\\,(P(x)\\rightarrow Q(x))$ and $\\exists x\\,P(x)$, one may validly infer $\\exists x\\,Q(x)$.",
+        "Among the subsets of a five-element set, exactly $16$ contain at least three elements.",
+        "Let $U=\\{a,b,c,d,e,f,g,h\\}$, $A=\\{a,e\\}$, and $B=\\{a,b,c,d\\}$. Then $A^c\\cap B=\\{b,c,d\\}$."
+      ],
+      "answer_key": [false, true, true, true, true],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe four displayed Venn regions are disjoint and exhaust the universe.\n\n$$|U|=|A\\setminus B|+|B\\setminus A|+|A\\cap B|+|(A\\cup B)^c|$$\n\n$$|U|=12+9+7+4$$\n\n$$|U|=32\\ne33$$\n\nThe diagram contains $32$ objects, so the statement is False.",
+        "**B.** → True\n\nExpand both implications and distribute the shared disjunct.\n\n$$p\\rightarrow(q\\wedge r)\\equiv\\neg p\\vee(q\\wedge r)$$\n\n$$\\neg p\\vee(q\\wedge r)\\equiv(\\neg p\\vee q)\\wedge(\\neg p\\vee r)$$\n\n$$(\\neg p\\vee q)\\wedge(\\neg p\\vee r)\\equiv(p\\rightarrow q)\\wedge(p\\rightarrow r)$$\n\nBoth sides have the same logical form, so the statement is True.",
+        "**C.** → True\n\nUse the existential witness as the input to the universal rule.\n\n$$\\exists x\\,P(x)\\Longrightarrow P(a)$$\n\n$$\\forall x\\,(P(x)\\rightarrow Q(x))\\Longrightarrow P(a)\\rightarrow Q(a)$$\n\n$$P(a)\\wedge(P(a)\\rightarrow Q(a))\\Longrightarrow\\exists x\\,Q(x)$$\n\nThe argument preserves the witness, so the statement is True.",
+        "**D.** → True\n\nCount the allowable subset sizes with binomial coefficients.\n\n$$\\#=\\binom{5}{3}+\\binom{5}{4}+\\binom{5}{5}$$\n\n$$\\#=10+5+1$$\n\n$$\\#=16$$\n\nExactly $16$ subsets have size at least three, so the statement is True.",
+        "**E.** → True\n\nRemove the elements of $A$ from the universe before intersecting with $B$.\n\n$$A^c=\\{b,c,d,f,g,h\\}$$\n\n$$A^c\\cap B=\\{b,c,d,f,g,h\\}\\cap\\{a,b,c,d\\}$$\n\n$$A^c\\cap B=\\{b,c,d\\}$$\n\nThe resulting roster agrees with the claim, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 122,
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: reconstructing a Venn universe.\nB: implication into a conjunction.\nC: universal rule with a witness.\nD: large subsets.\nE: complement intersected with a roster.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-123",
+      "case_id": "MATH 1.123",
+      "title": "Exam-style tasks - 15",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Agreement is transitive: whenever $p$ matches $q$ and $q$ matches $r$, the truth values of $p$ and $r$ also match.",
+        "From the facts that someone has property $P$ and someone has property $Q$, it always follows that one person has both properties.",
+        "Set $A=\\{1,2\\}$ and $B=\\{\\{1,2\\}\\}$. Since $A\\in B$, it also follows that $A\\subseteq B$.",
+        "An element belongs to $A\\triangle B\\triangle C$ exactly when it belongs to an odd number of the three sets.",
+        "The exclusive-or formula $(p\\vee q)\\wedge\\neg(p\\wedge q)$ is equivalent to $\\neg(p\\leftrightarrow q)$."
+      ],
+      "answer_key": [true, false, false, true, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nIf the antecedent holds, all three propositions share one truth value.\n\n$$p\\leftrightarrow q=T\\Longrightarrow p=q$$\n\n$$q\\leftrightarrow r=T\\Longrightarrow q=r$$\n\n$$p=q=r\\Longrightarrow p\\leftrightarrow r=T$$\n\nA true antecedent always forces a true consequent, so the statement is True.",
+        "**B.** → False\n\nSeparate witnesses for the two predicates need not be one common witness.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$(\\exists x\\,P(x))\\wedge(\\exists x\\,Q(x))=T\\wedge T=T$$\n\n$$\\exists x\\,(P(x)\\wedge Q(x))=F$$\n\nThe right side can hold without the left side, so the statement is False.",
+        "**C.** → False\n\nBeing the single listed object of $B$ does not place the members of $A$ directly into $B$.\n\n$$A=\\{1,2\\}\\in B$$\n\n$$B=\\{A\\}=\\{\\{1,2\\}\\}$$\n\n$$1\\notin B\\Longrightarrow A\\nsubseteq B$$\n\nMembership of $A$ in $B$ does not imply $A\\subseteq B$, so the statement is False.",
+        "**D.** → True\n\nEach symmetric-difference operation toggles membership once for each containing set.\n\n$$0\\text{ containing sets}\\Longrightarrow0\\text{ toggles}\\Longrightarrow x\\notin A\\triangle B\\triangle C$$\n\n$$1\\text{ or }3\\text{ containing sets}\\Longrightarrow\\text{odd toggles}\\Longrightarrow x\\in A\\triangle B\\triangle C$$\n\n$$2\\text{ containing sets}\\Longrightarrow\\text{even toggles}\\Longrightarrow x\\notin A\\triangle B\\triangle C$$\n\nOdd membership is exactly the inclusion rule, so the statement is True.",
+        "**E.** → True\n\nExclusive or selects disagreement rows, which are exactly the rows rejected by a biconditional.\n\n$$(p,q)\\in\\{(T,F),(F,T)\\}\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)\\in\\{(T,T),(F,F)\\}\\Longrightarrow p\\leftrightarrow q=T$$\n\n$$(p\\vee q)\\wedge\\neg(p\\wedge q)\\equiv\\neg(p\\leftrightarrow q)$$\n\nThe two formulas select the same rows, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 123,
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: transitivity of agreement.\nB: existential quantifier over conjunction.\nC: element versus subset.\nD: three-set symmetric difference.\nE: exclusive or versus biconditional.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-124",
+      "case_id": "MATH 1.124",
+      "title": "Exam-style tasks - 16",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The negation of $\\exists x\\ \\forall y\\ R(x,y)$ is $\\forall x\\ \\exists y\\ \\neg R(x,y)$.",
+        "The second iterated power set of the empty set is $\\mathcal P(\\mathcal P(\\emptyset))=\\{\\emptyset,\\{\\emptyset\\}\\}$.",
+        "Knowing $|A|=20$, $|B|=18$, $|C|=16$, and pairwise intersections $5$, $6$, and $7$ uniquely determines $|A\\cup B\\cup C|$ as $42$.",
+        "Moving the parentheses in the conditional chain from $p\\rightarrow(q\\rightarrow r)$ to $(p\\rightarrow q)\\rightarrow r$ never changes its value.",
+        "On $D=\\{0,1,2\\}$, the sentence $\\exists x\\ \\forall y\\ (x\\le y)$ is true."
+      ],
+      "answer_key": [true, true, false, false, true],
+      "tactical_explanations": [
+        "**A.** → True\n\nPush the negation through the existential and then through the universal quantifier.\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\neg[\\forall y\\ R(x,y)]$$\n\n$$\\neg[\\forall y\\ R(x,y)]\\equiv\\exists y\\ \\neg R(x,y)$$\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\exists y\\ \\neg R(x,y)$$\n\nThe proposed quantifier pattern is correct, so the statement is True.",
+        "**B.** → True\n\nBuild the two power sets one level at a time.\n\n$$\\mathcal P(\\emptyset)=\\{\\emptyset\\}$$\n\n$$\\mathcal P(\\mathcal P(\\emptyset))=\\mathcal P(\\{\\emptyset\\})$$\n\n$$\\mathcal P(\\{\\emptyset\\})=\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\nThe displayed roster is complete, so the statement is True.",
+        "**C.** → False\n\nThree-set inclusion-exclusion still contains the unspecified triple overlap.\n\n$$|A\\cup B\\cup C|=20+18+16-5-6-7+|A\\cap B\\cap C|$$\n\n$$|A\\cup B\\cup C|=36+|A\\cap B\\cap C|$$\n\n$$|A\\cap B\\cap C|\\text{ is not given}$$\n\nThe union size is not uniquely determined, so the statement is False.",
+        "**D.** → False\n\nAn assignment with a false first proposition separates the two association patterns.\n\n$$(p,q,r)=(F,T,F)$$\n\n$$p\\rightarrow(q\\rightarrow r)=F\\rightarrow(T\\rightarrow F)=T$$\n\n$$(p\\rightarrow q)\\rightarrow r=(F\\rightarrow T)\\rightarrow F=T\\rightarrow F=F$$\n\nThe association of the implications changes the formula, so the statement is False.",
+        "**E.** → True\n\nThe least domain element supplies one witness below every possible $y$.\n\n$$x=0\\in D$$\n\n$$y\\in D\\Longrightarrow y\\in\\{0,1,2\\}$$\n\n$$0\\le0,\\qquad0\\le1,\\qquad0\\le2$$\n\nThe witness $x=0$ satisfies the universal condition, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 124,
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: negating exists-for-all.\nB: power sets of the empty set.\nC: missing triple intersection.\nD: different implication associations.\nE: least-element witness.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-125",
+      "case_id": "MATH 1.125",
+      "title": "Exam-style tasks - 17",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For $S=\\{a,b,c\\}$, the proper subset $S\\setminus\\{a\\}$ contains every proper subset of $S$.",
+        "If $A\\subsetneq B$, then $A\\cup B=B$, $A\\cap B=A$, and $B\\setminus A$ is nonempty.",
+        "The formula $p\\vee(q\\wedge\\neg q)$ is a contradiction.",
+        "Inside the ordered domain $D=\\{0,1,2\\}$, choosing the maximum input never obstructs the demand for a strictly larger domain member.",
+        "A fixed two-element subset of a seven-element set has exactly $30$ supersets inside that set."
+      ],
+      "answer_key": [false, true, false, false, false],
+      "tactical_explanations": [
+        "**A.** → False\n\nOne proper subset can contain an element omitted by another candidate.\n\n$$S\\setminus\\{a\\}=\\{b,c\\}$$\n\n$$\\{a,b\\}\\subsetneq S$$\n\n$$a\\in\\{a,b\\}\\quad\\text{and}\\quad a\\notin\\{b,c\\}$$\n\nThe proper subset $\\{a,b\\}$ is not contained in $S\\setminus\\{a\\}$, so the statement is False.",
+        "**B.** → True\n\nProper inclusion determines both basic operations and guarantees a leftover element.\n\n$$A\\subseteq B\\Longrightarrow A\\cup B=B$$\n\n$$A\\subseteq B\\Longrightarrow A\\cap B=A$$\n\n$$A\\ne B\\Longrightarrow B\\setminus A\\ne\\emptyset$$\n\nAll three consequences follow from $A\\subsetneq B$, so the statement is True.",
+        "**C.** → False\n\nThe contradiction inside the parentheses disappears under disjunction with $p$.\n\n$$q\\wedge\\neg q\\equiv F$$\n\n$$p\\vee(q\\wedge\\neg q)\\equiv p\\vee F$$\n\n$$p\\vee F\\equiv p$$\n\nThe formula is true whenever $p$ is true, so the statement is False.",
+        "**D.** → False\n\nThe largest domain element cannot have a larger witness inside the same domain.\n\n$$x=2$$\n\n$$y\\in D\\Longrightarrow y\\le2$$\n\n$$\\nexists y\\in D\\;(2<y)$$\n\nThe value $x=2$ is a counterexample, so the statement is False.",
+        "**E.** → False\n\nA superset already contains the fixed pair and freely chooses among the remaining elements.\n\n$$7-2=5$$\n\n$$\\#\\{\\text{supersets}\\}=2^5$$\n\n$$2^5=32\\ne30$$\n\nThere are $32$ such supersets, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 125,
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: largest proper subset.\nB: operations on nested sets.\nC: simplifying an impossible conjunct.\nD: maximum-element counterexample.\nE: counting supersets.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-126",
+      "case_id": "MATH 1.126",
+      "title": "Exam-style tasks - 18",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Finite sets satisfy $|A|=27$, $|B|=19$, and $|A\\cap B|=8$. The region $A\\setminus B$ has $17$ elements.",
+        "Exactly three assignments for $p,q,r$ satisfy $(p\\wedge q)\\vee(p\\wedge r)\\vee(q\\wedge r)$.",
+        "Every real number $x$ has exactly two real numbers $y$ satisfying $y^3=x$.",
+        "When $|S|=4$, exactly $14$ sets $A$ make the strict chain $\\emptyset\\subsetneq A\\subsetneq S$.",
+        "In a $60$-element universe, $|A|=35$, $|B|=28$, and $|A\\cap B|=15$. Then $|A^c\\cup B|=43$."
+      ],
+      "answer_key": [false, false, false, true, false],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe part of $A$ outside $B$ is what remains after the intersection is removed.\n\n$$A=(A\\setminus B)\\mathbin{\\dot\\cup}(A\\cap B)$$\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=27-8=19\\ne17$$\n\nThe region $A\\setminus B$ has $19$ elements, so the statement is False.",
+        "**B.** → False\n\nThe formula is true whenever at least two of the three propositions are true.\n\n$$\\#\\{\\text{exactly two true}\\}=\\binom{3}{2}=3$$\n\n$$\\#\\{\\text{all three true}\\}=\\binom{3}{3}=1$$\n\n$$3+1=4\\ne3$$\n\nFour assignments satisfy the majority formula, so the statement is False.",
+        "**C.** → False\n\nThe real cube function is strictly increasing and therefore has one inverse value.\n\n$$y_1<y_2\\Longrightarrow y_1^3<y_2^3$$\n\n$$y^3=x\\Longrightarrow y=\\sqrt[3]{x}$$\n\n$$\\#\\{y\\in\\mathbb R:y^3=x\\}=1\\ne2$$\n\nEach real number has one real cube root, so the statement is False.",
+        "**D.** → True\n\nThe middle set may be any nonempty proper subset.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$A\\ne\\emptyset\\quad\\text{and}\\quad A\\ne S$$\n\n$$16-2=14$$\n\nThere are $14$ admissible middle sets, so the statement is True.",
+        "**E.** → False\n\nComplement the expression by identifying exactly which elements it omits.\n\n$$(A^c\\cup B)^c=A\\cap B^c=A\\setminus B$$\n\n$$|A\\setminus B|=35-15=20$$\n\n$$|A^c\\cup B|=60-20=40\\ne43$$\n\nThe union has $40$ elements, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 126,
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: subtracting an overlap.\nB: majority formula truth count.\nC: uniqueness of a real cube root.\nD: strict chains through one subset.\nE: union with a complement.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-127",
+      "case_id": "MATH 1.127",
+      "title": "Exam-style tasks - 19",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A truth-table report describes the rows where $p$ and $q$ disagree by $(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$. The report is correct.",
+        "In the rational-number domain, $\\exists x\\ (x^2=2)$ is true.",
+        "The two-element subsets of $\\{a,b,c,d\\}$ form a five-member family in which no member contains another.",
+        "A poll reports $50$ people in $A$, $45$ in $B$, and $20$ in both. Exactly $50$ respondents belong to one of the groups but not both.",
+        "From premises $p\\vee q$ and $\\neg p\\vee r$, the conclusion $q\\wedge r$ follows validly."
+      ],
+      "answer_key": [false, false, false, false, false],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe displayed right side describes agreement, while the negation of a biconditional describes disagreement.\n\n$$(p,q)=(T,T)$$\n\n$$\\neg(p\\leftrightarrow q)=\\neg T=F$$\n\n$$(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)=T\\vee F=T$$\n\nThe two formulas already disagree on the all-true row, so the statement is False.",
+        "**B.** → False\n\nA lowest-terms parity argument rules out a rational witness.\n\n$$x=\\frac{a}{b},\\quad\\gcd(a,b)=1,\\quad x^2=2\\Longrightarrow a^2=2b^2$$\n\n$$a^2\\text{ even}\\Longrightarrow a=2k\\Longrightarrow b^2=2k^2$$\n\n$$a\\text{ even and }b\\text{ even}\\Longrightarrow\\gcd(a,b)\\ne1$$\n\nNo rational witness can square to $2$, so the statement is False.",
+        "**C.** → False\n\nEqual-sized distinct subsets cannot contain one another, but the family size still must be counted correctly.\n\n$$\\#\\{A\\subseteq S:|A|=2\\}=\\binom{4}{2}$$\n\n$$\\binom{4}{2}=6$$\n\n$$6\\ne5$$\n\nThe antichain property holds but the five-member count does not, so the statement is False.",
+        "**D.** → False\n\nRemove the shared respondents from each group before combining the exclusive pieces.\n\n$$|A\\setminus B|=50-20=30$$\n\n$$|B\\setminus A|=45-20=25$$\n\n$$|A\\triangle B|=30+25=55\\ne50$$\n\nExactly $55$ respondents belong to one group only, so the statement is False.",
+        "**E.** → False\n\nA countermodel can satisfy both disjunctive premises while making one conclusion conjunct false.\n\n$$(p,q,r)=(T,F,T)$$\n\n$$p\\vee q=T,\\qquad\\neg p\\vee r=T$$\n\n$$q\\wedge r=F\\wedge T=F$$\n\nThe premises can be true while the conclusion is false, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 127,
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: negated biconditional.\nB: rational square root.\nC: uniform subsets as an antichain.\nD: exclusive-or poll count.\nE: overstated resolution conclusion.",
+      "placeholder": false
+    },
+    {
+      "id": "math-1-128",
+      "case_id": "MATH 1.128",
+      "title": "Exam-style tasks - 20",
+      "subsection": "1.5",
+      "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Premises $\\forall x(A(x)\\rightarrow B(x))$, $\\forall x(B(x)\\rightarrow C(x))$, and $\\exists x\\,A(x)$ entail $\\exists x\\,C(x)$.",
+        "If $\\mathcal A\\subseteq\\mathcal P(S)$, then every member of $\\mathcal A$ is a subset of $S$, and $\\bigcup\\mathcal A\\subseteq S$.",
+        "If $|A\\cup B|=70$, $|A|=42$, and $|B|=36$, then $|A\\cap B|=6$.",
+        "An implication $p\\rightarrow q$ is true on exactly two of the four assignments for $p,q$.",
+        "On every nonempty domain, $\\forall x\\ \\exists y\\ R(x,y)$ entails $\\exists y\\ \\forall x\\ R(x,y)$."
+      ],
+      "answer_key": [true, true, false, false, false],
+      "tactical_explanations": [
+        "**A.** → True\n\nCarry the witness from the first class through both universal implications.\n\n$$\\exists x\\,A(x)\\Longrightarrow A(a)$$\n\n$$A(a)\\rightarrow B(a)$$\n\n$$B(a)\\rightarrow C(a)\\Longrightarrow\\exists x\\,C(x)$$\n\nThe chained deduction produces a $C$ witness, so the statement is True.",
+        "**B.** → True\n\nUnpack the outer subset relation and then follow elements of the union.\n\n$$A\\in\\mathcal A\\Longrightarrow A\\in\\mathcal P(S)\\Longrightarrow A\\subseteq S$$\n\n$$x\\in\\bigcup\\mathcal A\\Longrightarrow\\exists A\\in\\mathcal A\\;(x\\in A)$$\n\n$$x\\in A\\subseteq S\\Longrightarrow x\\in S$$\n\nEvery element collected by the union lies in $S$, so the statement is True.",
+        "**C.** → False\n\nRearrange the two-set inclusion-exclusion equation to isolate the overlap.\n\n$$|A\\cap B|=|A|+|B|-|A\\cup B|$$\n\n$$|A\\cap B|=42+36-70$$\n\n$$|A\\cap B|=8\\ne6$$\n\nThe intersection has eight elements, so the statement is False.",
+        "**D.** → False\n\nOnly the true-antecedent and false-consequent row falsifies an implication.\n\n$$p\\rightarrow q=F\\Longleftrightarrow(p,q)=(T,F)$$\n\n$$\\#\\{\\text{false rows}\\}=1$$\n\n$$\\#\\{\\text{true rows}\\}=4-1=3\\ne2$$\n\nThe implication is true on three assignments, so the statement is False.",
+        "**E.** → False\n\nA relation can provide a different witness for each input without providing one shared witness.\n\n$$D=\\{1,2\\},\\quad R(x,y)\\Longleftrightarrow x=y$$\n\n$$\\forall x\\in D\\ \\exists y\\in D\\;(x=y)=T$$\n\n$$\\exists y\\in D\\ \\forall x\\in D\\;(x=y)=F$$\n\nEquality on a two-element domain is a countermodel, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 128,
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: chained rules with existence.\nB: family contained in a power set.\nC: recovering an intersection.\nD: truth count for implication.\nE: swapping dependent witnesses.",
+      "placeholder": false
+    }
+  ]
 }

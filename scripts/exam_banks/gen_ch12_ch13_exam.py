@@ -2449,17 +2449,15 @@ def validate(tasks: list[dict], prefix: str, start: int, end: int, subsection: s
 
 
 def main():
-    ch12 = scrub_em_dashes(build_ch12())
-    ch13 = scrub_em_dashes(build_ch13())
-    validate(ch12, "12", 199, 218, "12.6")
-    validate(ch13, "13", 56, 75, "13.5")
+    # Preserve this historical entry point while using the validated mixed-bank
+    # implementation. This prevents the old fixed A-through-E topic order from
+    # being regenerated accidentally.
+    try:
+        from .rebuild_ch12_ch13_mixed import main as rebuild_main
+    except ImportError:
+        from rebuild_ch12_ch13_mixed import main as rebuild_main
 
-    p12 = OUT_DIR / "math-ch12-exam.json"
-    p13 = OUT_DIR / "math-ch13-exam.json"
-    p12.write_text(json.dumps({"tasks": ch12}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    p13.write_text(json.dumps({"tasks": ch13}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {p12} ({len(ch12)} tasks)")
-    print(f"Wrote {p13} ({len(ch13)} tasks)")
+    rebuild_main()
 
 
 if __name__ == "__main__":

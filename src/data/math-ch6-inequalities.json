@@ -2791,31 +2791,31 @@
    "case_id": "MATH 6.89",
    "title": "Exam-style tasks — 1",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A farmer is planning a new rectangular field. He has 80 meters of fencing available. If he wants the field area to be at least 48 $m^{2}$ and to maintain the ratio 3:1 between the longer and shorter side of the field, then the shorter side can be between 4 and 20 meters long (both values included).",
-    "If the position of an object above ground in meters after x seconds is described by the function $f(x) = -5x^{2} + 70x + 3$, then the object is more than 123 meters above ground between 2 and 12 seconds.",
-    "If the costs of producing x units of a product are ${150 + 0.2x}$ EUR, at least 83 units must be produced for the average costs per unit to be below 2 EUR (note that only whole numbers of units can be produced).",
+    "The strict inequality $\\dfrac{(x-2)(x-3)}{(x-1)(x+1)}>0$ holds on $(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$.",
+    "A rectangular display has sides $x$ and $12-x$, with $0<x<12$. Its area is at least $27$ exactly when $3\\le x\\le9$.",
+    "The nested inequality $\\bigl||x-1|-2\\bigr|\\ge1$ has solution set $(-\\infty,-2]\\cup[0,2]\\cup[4,\\infty)$.",
     "To produce one unit of a certain product, three raw materials — A, B, and C — are required. Specifically, 3 units of A, 2 units of B, and 4 units of C are used. The raw materials cost 40 EUR, 50 EUR, and 25 EUR per unit, respectively, and the production of one unit of the product costs 12 EUR. The producer has a total budget of 21,400 EUR and storage capacity for at most 475 units of all raw materials combined. Then, the maximum number of products that can be produced is less than 50.",
-    "The inequality system $\\dfrac{4}{x} < x < |2 - 3x|$ is satisfied if and only if $|x| > 2$."
+    "For a fixed parameter $a>0$, $\\dfrac{x-a}{x+a}>0$ exactly when $x<-a$ or $x>a$."
    ],
    "answer_key": [
-    false,
+    true,
+    true,
     true,
     false,
-    false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet the shorter side be $w$ meters and the longer side $3w$ meters.\n\nAt most 80 m is available:\n\n$$2(3w + w) \\le 80$$\n\n$$8w \\le 80$$\n\n$$w \\le 10$$\n\n$$3w \\cdot w \\ge 48$$\n\n$$w^{2} \\ge 16$$\n\n$$w \\ge 4$$\n\n(using $w > 0$).\n\n$$4 \\le w \\le 10$$\n\nThe claimed interval $[4, 20]$ overshoots the fencing limit:\n\n$$w = 20$$\n\nThis would need 160 m of fence. The true range is $[4, 10]$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-5x^{2} + 70x + 3 > 123$$\n\n$$-5x^{2} + 70x - 120 > 0$$\n\nDivide by $-5$ and reverse the inequality:\n\n$$x^{2} - 14x + 24 < 0$$\n\n$$(x - 2)(x - 12) < 0$$\n\n$$2 < x < 12$$\n\n“More than 123 m” excludes the endpoints, where $f(2) = f(12) = 123$. The object is above 123 m on the open interval $(2, 12)$.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{150 + 0.2x}{x} < 2$$\n\n$x > 0$.\n\n$$\\dfrac{150}{x} < 1.8$$\n\n$$x > \\dfrac{150}{1.8} = 83.\\overline{3}$$\n\nThe smallest whole $x$ is 84, not 83.\n\nAt $x = 83$, average cost is $\\dfrac{166.6}{83} \\approx 2.007$ EUR, still above 2 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**A.** → True\n\nAll four factors have simple critical points, so the sign alternates at each one.\n\n$$-1,\\ 1,\\ 2,\\ 3$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-\\infty,-1)\\cup(1,2)\\cup(3,\\infty)$$\n\nStrictness excludes zeros as well as poles. Therefore the statement is True.",
+    "**B.** → True\n\nTranslate the area requirement into a quadratic inequality.\n\n$$x(12-x)\\ge27$$\n\n$$x^2-12x+27\\le0$$\n\n$$(x-3)(x-9)\\le0$$\n\n$$3\\le x\\le9$$\n\nThe resulting interval lies inside the physical side-length domain. Therefore the statement is True.",
+    "**C.** → True\n\nSet $u=|x-1|\\ge0$ and solve the outer inequality first.\n\n$$|u-2|\\ge1\\iff u\\le1\\quad\\text{or}\\quad u\\ge3$$\n\n$$|x-1|\\le1\\iff 0\\le x\\le2$$\n\n$$|x-1|\\ge3\\iff x\\le-2\\quad\\text{or}\\quad x\\ge4$$\n\nThe three closed pieces form the stated union. Therefore the statement is True.",
     "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be the number of products.\n\n$$9n \\le 475$$\n\n$$n \\le 52$$\n\nCost per product:\n\n$$3 \\cdot 40 + 2 \\cdot 50 + 4 \\cdot 25 + 12 = 332$$\n\n$$332n \\le 21400$$\n\n$$n \\le 64$$\n\nStorage gives the tighter cap:\n\n$$n \\le 52$$\n\nThe maximum is 52, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nSolve both inequalities on their valid domains, then intersect their solution sets.\n\nThe rational expression requires $x \\ne 0$. First solve\n\n$$\\frac{4}{x}<x$$\n\nFor $x>0$, multiplication by $x$ keeps the inequality direction:\n\n$$4<x^{2}$$\n\n$$x>2$$\n\nFor $x<0$, multiplication by $x$ reverses the direction:\n\n$$4>x^{2}$$\n\n$$-2<x<0$$\n\nThus the left inequality gives\n\n$$(-2,0)\\cup(2,\\infty)$$\n\nFor the right inequality, split where $2-3x$ changes sign:\n\n$$x<|2-3x|$$\n\n$$x<\\frac{1}{2}\\qquad x>1$$\n\nIntersecting the two solution sets gives\n\n$$(-2,0)\\cup(2,\\infty)$$\n\nThe claim $|x|>2$ describes $(-\\infty,-2)\\cup(2,\\infty)$, so it omits $(-2,0)$ and wrongly includes $(-\\infty,-2)$.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**E.** → True\n\nThe zero $a$ and pole $-a$ split the line into three sign intervals.\n\n$$x=-a\\ (\\text{pole}),\\qquad x=a\\ (\\text{zero})$$\n\n$$\\frac{x-a}{x+a}>0\\iff x\\in(-\\infty,-a)\\cup(a,\\infty)$$\n\nStrictness excludes both critical points. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 89,
-   "solution_overview": "Mixed exam claims: a fenced rectangle with a 3:1 ratio, a quadratic height model, average production cost, a storage-and-budget factory, and a rational/absolute-value system. Solve every constraint, including integer rounding and case splits.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests interlaced zeros and poles; B tests fixed-perimeter area threshold; C tests nested exterior absolute-value condition; D tests a contextual inequality with all practical constraints; E tests parameterized rational inequality. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
@@ -2823,31 +2823,31 @@
    "case_id": "MATH 6.90",
    "title": "Exam-style tasks — 2",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A gardener has 80 meters of fencing for a rectangular plot and wants the longer side to stay in a 4:1 ratio with the shorter side. If the area must be at least 64 $m^{2}$, then the shorter side can be any length from 4 m to 20 m, inclusive.",
-    "If the height in meters after t seconds is $h(t) = -5t^{2} + 40t + 8$, then the object is more than 83 meters above the ground between 3 and 5 seconds.",
-    "If producing x units costs ${200 + 0.5x}$ EUR, then at least 45 whole units must be made for the average cost per unit to fall below 5 EUR.",
-    "Each product uses 2 units of A, 3 units of B, and 1 unit of C. The materials cost 30 EUR, 20 EUR, and 40 EUR per unit, and finishing one product costs 8 EUR. With a 10,000 EUR budget and storage for at most 200 raw-material units in total, the maximum number of products is less than 30.",
-    "The inequality $x^{2} - 9x + 14 \\le 0$ has solution set $[2, 7]$."
+    "The biquadratic inequality $x^4-10x^2+9<0$ has solution set $(-3,-1)\\cup(1,3)$.",
+    "The condition $\\max\\{x-1,\\,3-x\\}<2$ is equivalent to the open interval $1<x<3$.",
+    "A painter mixes 2 litres of white paint (3 EUR per litre) with 1 litre of colour concentrate (9 EUR per litre) to make 3 litres of blend. They claim that any amount of this same 2:1 mix whose total volume is at most 12 litres will cost at most 50 EUR in materials. That claim is true.",
+    "The comparison $\\dfrac{2x+1}{x-4}\\le1$ is equivalent to $-5\\le x<4$.",
+    "A quality score is $q(x)=-2(x-5)^2+18$. The requirement $q(x)\\ge10$ is met exactly for $3\\le x\\le7$."
    ],
    "answer_key": [
-    false,
     true,
     true,
     false,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nShorter side $w$, longer side $4w$.\n\n$$2(4w + w) \\le 80$$\n\n$$w \\le 8$$\n\n$$4w^{2} \\ge 64$$\n\n$$w \\ge 4$$\n\n$$4 \\le w \\le 8$$\n\nNot $[4, 20]$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-5t^{2} + 40t + 8 > 83$$\n\n$$-5t^{2} + 40t - 75 > 0$$\n\n$$t^{2} - 8t + 15 < 0$$\n\n$$(t - 3)(t - 5) < 0$$\n\n$$3 < t < 5$$\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{200 + 0.5x}{x} < 5$$\n\n$$x > \\dfrac{200}{4.5} \\approx 44.44$$\n\nSo the first whole number is 45.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$6n \\le 200$$\n\n$$n \\le 33$$\n\n$$168n \\le 10000$$\n\n$$n \\le 59$$\n\nMaximum is 33, which is not less than 30.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nFactor the expression and use the signs on the intervals determined by its zeros.\n\n$$(x - 2)(x - 7) \\le 0$$\n\nKeep the closed interval between the roots:\n\n$$[2, 7]$$\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nUse $u=x^2$ and then translate the positive interval for $u$ back to $x$.\n\n$$u^2-10u+9<0$$\n\n$$(u-1)(u-9)<0\\iff 1<u<9$$\n\n$$1<x^2<9$$\n\n$$x\\in(-3,-1)\\cup(1,3)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
+    "**B.** → True\n\nA maximum is below a threshold exactly when each entry is below it.\n\n$$x-1<2\\quad\\text{and}\\quad 3-x<2$$\n\n$$x<3\\quad\\text{and}\\quad x>1$$\n\n$$1<x<3$$\n\nBoth inequalities are strict, so both endpoints are excluded. Therefore the statement is True.",
+    "**C.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $V$ be the total volume of blend in litres ($V > 0$).\n\nCost:\n\n$$\\dfrac{2}{3}V \\cdot 3 + \\dfrac{1}{3}V \\cdot 9 = 2V + 3V = 5V$$\n\n“At most 50 EUR” means $5V \\le 50$, so $V \\le 10$.\n\nBatches up to 12 litres include $V = 12$, which costs $5 \\cdot 12 = 60 > 50$ EUR.\n\nOnly volumes up to 10 litres stay within 50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**D.** → True\n\nMove the constant to the left over a common denominator.\n\n$$\\frac{2x+1}{x-4}-1=\\frac{x+5}{x-4}$$\n\n$$\\frac{x+5}{x-4}\\le0$$\n\n$$x\\in[-5,4)$$\n\nThe zero $-5$ is included and the pole $4$ is excluded. Therefore the statement is True.",
+    "**E.** → True\n\nWork from vertex form and divide by the negative coefficient carefully.\n\n$$-2(x-5)^2+18\\ge10$$\n\n$$(x-5)^2\\le4$$\n\n$$|x-5|\\le2$$\n\n$$3\\le x\\le7$$\n\nThe endpoints give the threshold value exactly. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 90,
-   "solution_overview": "A 4:1 fenced plot, a quadratic height window, a unit-cost cutoff, a two-constraint factory, and a factored quadratic inequality.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests biquadratic interval substitution; B tests maximum of two affine expressions; C tests a contextual inequality with all practical constraints; D tests rational expression compared with a constant; E tests vertex-form quality window. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
@@ -2855,13 +2855,13 @@
    "case_id": "MATH 6.91",
    "title": "Exam-style tasks — 3",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 ratio of length to width, and must have area at least 160 $m^{2}$. Then every shorter-side length from 8 m to 12 m inclusive is feasible.",
-    "If $p(x) = -2x^{2} + 24x - 10$, then the solution set of $p(x) > 50$ is exactly the closed interval $[4, 8]$.",
-    "If producing x units costs ${80 + 0.4x}$ EUR, then at least 40 whole units are needed for the average cost to fall below 3 EUR.",
-    "Each product uses 5 units of A, 1 unit of B, and 2 units of C, costing 10 EUR, 80 EUR, and 15 EUR per unit of material, plus 20 EUR to finish. Budget 8,000 EUR, storage at most 240 raw-material units. Then the maximum number of products is less than 50.",
-    "The inequality $|x - 3| \\le 5$ has solution set $[-2, 8]$."
+    "The inequality $|x^2-1|>0$ is true for every real $x$ except $x=-1$ and $x=1$.",
+    "A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 $m^{2}$. Every shorter-side length from 8 m to 16 m inclusive is possible.",
+    "The solution set of $\\dfrac{x^2-1}{x-1}>0$ is the uninterrupted interval $(-1,\\infty)$.",
+    "The non-strict inequality $(x-3)^2\\ge0$ is true for every real $x$, with equality only at $x=3$.",
+    "The combined conditions “$x<-2$ or $x\\ge1$” and “$x<4$” give $(-\\infty,-2)\\cup[1,4)$."
    ],
    "answer_key": [
     true,
@@ -2871,15 +2871,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nWidth $w$, length $\\dfrac{5w}{2}$.\n\n$$7w \\le 96$$\n\n$$w \\le \\dfrac{96}{7} \\approx 13.71$$\n\n$$\\dfrac{5}{2} w^{2} \\ge 160$$\n\n$$w \\ge 8$$\n\n$$8 \\le w \\le 13.71$$\n\nThe closed interval $[8, 12]$ lies inside this, so every such width works.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-2x^{2} + 24x - 10 > 50$$\n\n$$x^{2} - 12x + 30 < 0$$\n\nRoots $6 \\pm \\sqrt{6}$. Since $\\sqrt{6} \\approx 2.45$, the solution is the open interval\n\n$$(6 - \\sqrt{6},\\, 6 + \\sqrt{6}) \\approx (3.55, 8.45)$$\n\nThe true set is open, not closed, and its endpoints are $6 \\pm \\sqrt{6}$, not 4 and 8.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{80 + 0.4x}{x} < 3$$\n\n$$x > \\dfrac{80}{2.6} \\approx 30.77$$\n\nThe cutoff is $x \\ge 31$, not 40. Forty units work, but 31 through 39 already work too.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$8n \\le 240$$\n\n$$n \\le 30$$\n\nCost per product:\n\n$$50 + 80 + 30 + 20 = 180$$\n\n$$180n \\le 8000$$\n\n$$n \\le 44$$\n\nMaximum $n = 30$, which is less than 50.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\n$$-5 \\le x - 3 \\le 5$$\n\n$$-2 \\le x \\le 8$$\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nAn absolute value is positive exactly when its inside is nonzero.\n\n$$|x^2-1|>0\\iff x^2-1\\ne0$$\n\n$$(x-1)(x+1)\\ne0$$\n\n$$x\\ne-1,\\quad x\\ne1$$\n\nNo sign chart beyond the two zeros is needed. Therefore the statement is True.",
+    "**B.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w > 0$ be the shorter side; longer side $2w$.\n\nFencing:\n\n$$2(2w + w) \\le 100$$\n\nArea:\n\n$$2w^{2} \\ge 200$$\n\n$$6w \\le 100$$\n\n$$w \\le \\dfrac{50}{3} \\approx 16.67$$\n\n$$w^{2} \\ge 100$$\n\n$$w \\ge 10$$\n\nTrue range:\n\n$$10 \\le w \\le \\dfrac{50}{3}$$\n\n$$w = 8$$\n\nThis fails the area requirement even though fencing would allow it.\n\nThe lower end must be 10 m, not 8 m.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → False\n\nThe common factor may cancel algebraically, but the original hole remains.\n\n$$x\\ne1,\\qquad \\frac{x^2-1}{x-1}=x+1$$\n\n$$x+1>0\\iff x>-1$$\n\n$$x\\in(-1,1)\\cup(1,\\infty)$$\n\nThe claim incorrectly restores the undefined point $x=1$. Therefore the statement is False.",
+    "**D.** → True\n\nEvery real square is nonnegative.\n\n$$(x-3)^2\\ge0\\quad\\text{for all }x\\in\\mathbb R$$\n\n$$(x-3)^2=0\\iff x=3$$\n\nThe equality description is exact. Therefore the statement is True.",
+    "**E.** → True\n\nIntersect the union from the first condition with the final half-line.\n\n$$\\bigl((-\\infty,-2)\\cup[1,\\infty)\\bigr)\\cap(-\\infty,4)$$\n\n$$(-\\infty,-2)\\cup[1,4)$$\n\nThe mixed open and closed endpoints are preserved. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 91,
-   "solution_overview": "A 5:2 courtyard, a quadratic profit window claimed as an exact closed interval, average-cost rounding, a factory with a storage bind, and an absolute-value inequality.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests positive modulus with two excluded zeros; B tests a contextual inequality with all practical constraints; C tests strict inequality with a removable hole; D tests universal square inequality; E tests logical union intersected with a bound. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
@@ -2887,31 +2887,31 @@
    "case_id": "MATH 6.92",
    "title": "Exam-style tasks — 4",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A rectangular pen uses at most 60 m of fencing, has sides in the ratio 2:1, and needs area at least 72 $m^{2}$. Then the shorter side can be any length from 6 m to 15 m inclusive.",
-    "If $s(t) = -4t^{2} + 32t + 5$ is height in meters, then $s(t) \\ge 53$ for all t in $[2, 6]$.",
-    "If costs are ${120 + 0.25x}$ EUR, then 80 whole units are enough to bring average cost strictly below 1.70 EUR.",
-    "Each finished good uses 4 units of A and 3 units of B. A costs 25 EUR and B costs 40 EUR; finishing costs 10 EUR. Budget 9,000 EUR and at most 180 stored raw-material units. Then the maximum output is less than 25.",
-    "The solution set of $\\sqrt{x + 3} \\ge 2$ is $x \\ge 1$."
+    "A bridge limit is 12 tonnes. Each fully loaded truck weighs 4.3 tonnes. Three fully loaded trucks can be on the bridge at once.",
+    "The rational expression $\\dfrac{(x-2)^2}{(x+4)(x-1)}$ is negative exactly on $(-4,1)$.",
+    "The inequality $2x^2+8x+3<0$ is equivalent to $|x+2|<\\sqrt{\\dfrac52}$.",
+    "The simultaneous conditions $x+1\\le|x-1|<4$ hold exactly for $-3<x\\le0$.",
+    "Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. A user claims that Plan A is strictly cheaper than Plan B whenever they use fewer than 200 call-minutes in a month. That claim is true."
    ],
    "answer_key": [
     false,
     true,
-    false,
-    false,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nSides $w$ and $2w$.\n\n$$6w \\le 60$$\n\n$$w \\le 10$$\n\n$$2w^{2} \\ge 72$$\n\n$$w \\ge 6$$\n\n$$6 \\le w \\le 10$$\n\nThe claimed 15 m upper bound exceeds the 10 m fencing cap.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-4t^{2} + 32t + 5 \\ge 53$$\n\n$$t^{2} - 8t + 12 \\le 0$$\n\n$$(t - 2)(t - 6) \\le 0$$\n\n$$2 \\le t \\le 6$$\n\nThe closed interval $[2, 6]$ is exactly the solution, so the height is at least 53 m throughout that interval.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{120 + 0.25x}{x} < 1.70$$\n\n$$\\dfrac{120}{x} < 1.45$$\n\n$$x > \\dfrac{120}{1.45} \\approx 82.76$$\n\nNeed:\n\n$$x \\ge 83$$\n\nEighty units give:\n\n$$\\dfrac{120 + 20}{80} = 1.75$$\n\n, which is still above 1.70 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$7n \\le 180$$\n\n$$n \\le 25$$\n\n(since $7 \\cdot 25 = 175$, $7 \\cdot 26 = 182$).\n\n$$100n + 120n + 10n = 230n \\le 9000$$\n\n$$n \\le 39$$\n\nMaximum is 25, which is not less than 25. The claim says less than 25, so it is false.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nA square-root inequality must first respect its domain, and then it may be squared on non-negative sides.\n\n$$x + 3 \\ge 0$$\n\nSo $x \\ge -3$.\n\n**Case 1**; right side negative: 2 is positive, so this case does not apply.\n\n**Case 2**; both sides non-negative: square:\n\n$$x + 3 \\ge 4$$\n\n$$x \\ge 1$$\n\nCombined with the domain $x \\ge -3$, the tighter bound is $x \\ge 1$.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be trucks.\n\n$$4.3n\\le 12$$\n\n$$n\\le 2.79$$\n\nMax $n=2$; three weigh 12.9 tonnes.\n\nNot allowed.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nThe numerator is positive except at $x=2$, which lies outside the candidate negative interval.\n\n$$(x-2)^2\\ge0$$\n\n$$(x+4)(x-1)<0\\iff -4<x<1$$\n\n$$\\frac{(x-2)^2}{(x+4)(x-1)}<0\\iff -4<x<1$$\n\nBoth denominator zeros are excluded automatically by the open interval. Therefore the statement is True.",
+    "**C.** → True\n\nComplete the square and divide by the positive coefficient.\n\n$$2x^2+8x+3=2(x+2)^2-5$$\n\n$$2(x+2)^2-5<0$$\n\n$$(x+2)^2<\\frac52$$\n\n$$|x+2|<\\sqrt{\\frac52}$$\n\nEvery transformation is reversible. Therefore the statement is True.",
+    "**D.** → True\n\nSolve each condition independently and intersect the results.\n\n$$x+1\\le|x-1|\\iff x\\le0$$\n\n$$|x-1|<4\\iff -3<x<5$$\n\n$$(-\\infty,0]\\cap(-3,5)=(-3,0]$$\n\nThe left endpoint is strict while $x=0$ satisfies both conditions. Therefore the statement is True.",
+    "**E.** → True\n\nCompare the two linear cost rules at the same usage.\n\nLet $x$ be call-minutes in a month ($x \\ge 0$).\n\nPlan A:\n\n$$10 + 0.10x$$\n\nPlan B:\n\n$$20 + 0.05x$$\n\n“A strictly cheaper than B” means\n\n$$10 + 0.10x < 20 + 0.05x$$\n\n$$0.10x - 0.05x < 20 - 10$$\n\n$$0.05x < 10$$\n\n$$x < 200$$\n\nPlan A is strictly cheaper exactly when $x < 200$. At $x = 200$ the plans cost the same; for $x > 200$, Plan B is cheaper.\n\nThe solved result agrees with the claim, so the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 92,
-   "solution_overview": "A 2:1 pen, a closed quadratic height interval, a unit-cost claim, a budget-bound factory, and a square-root inequality with domain.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests squared numerator over a quadratic denominator; C tests irrational-radius vertex interval; D tests intersection of a modulus comparison and band; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
@@ -2919,31 +2919,31 @@
    "case_id": "MATH 6.93",
    "title": "Exam-style tasks — 5",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A greenhouse uses at most 120 m of fencing, keeps a 5:3 ratio of length to width, and needs area at least 375 $m^{2}$. Then the shorter side can be any length from 5 m to 15 m inclusive.",
-    "If $f(x) = -x^{2} + 10x + 4$, then $f(x) > 20$ between 1 and 9, endpoints included.",
-    "If producing x units costs ${90 + 0.6x}$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR.",
-    "A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.",
-    "The compound inequality $-1 \\le 2x - 5 \\le 7$ has solution set $[2, 6]$."
+    "On its domain, $\\dfrac{x^2-9}{x-3}<5$ holds exactly when $x<2$.",
+    "The strict inequality $x^2-7x+10<0$ contains exactly the two integer solutions $x=3$ and $x=4$.",
+    "The inequality $|x|-|x-2|>0$ holds exactly when $x>1$.",
+    "Leo earns 14 EUR per hour and gets a 50 EUR bonus if he works more than 25 hours in a week. He claims that working 28 hours this week will bring him at least 450 EUR in total pay. That claim is true.",
+    "The inequality $\\dfrac{x}{x^2+4}<\\dfrac14$ holds for every real $x$ except $x=2$."
    ],
    "answer_key": [
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nWidth $w$, length $\\dfrac{5w}{3}$. Perimeter bound:\n\n$$2\\bigl(\\dfrac{5w}{3} + w\\bigr) \\le 120$$\n\n$$\\dfrac{16w}{3} \\le 120$$\n\n$$w \\le 22.5$$\n\n$$\\dfrac{5}{3} w^{2} \\ge 375$$\n\n$$w^{2} \\ge 225$$\n\n$$w \\ge 15$$\n\n$$15 \\le w \\le 22.5$$\n\nThe claimed lower end 5 m fails the area bound: $w = 5$ gives area $\\dfrac{5}{3} \\cdot 25 \\approx 41.7$, far below 375.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-x^{2} + 10x + 4 > 20$$\n\n$$x^{2} - 10x + 16 < 0$$\n\n$$(x - 2)(x - 8) < 0$$\n\n$$2 < x < 8$$\n\nThe true interval is $(2, 8)$, not the closed $[1, 9]$. Both claimed endpoints fail:\n\n$$f(1) = 13$$\n\nAnd $f(9) = 13$, neither greater than 20.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{90 + 0.6x}{x} < 1.20$$\n\n$$\\dfrac{90}{x} < 0.60$$\n\n$$x > 150$$\n\n$$x = 150$$\n\nThis gives $\\dfrac{90 + 90}{150} = 1.20$, which is not strictly below 1.20. The first whole number that works is 151.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$7n \\le 400$$\n\n$$n \\le 57$$\n\n$$60 + 60 + 40 + 5 = 165$$\n\n$$165n \\le 12000$$\n\n$$n \\le 72$$\n\nMaximum 57, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nApply the same algebraic operation to all three parts of the compound inequality.\n\n$$-1 \\le 2x - 5$$\n\nAlso, $2x - 5 \\le 7$.\n\n$$4 \\le 2x$$\n\n$$x \\ge 2$$\n\n$$2x \\le 12$$\n\n$$x \\le 6$$\n\n$$[2, 6]$$\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nFactor first, retaining the original domain restriction.\n\n$$x\\ne3,\\qquad \\frac{x^2-9}{x-3}=x+3$$\n\n$$x+3<5\\iff x<2$$\n\nThe removed point $x=3$ lies outside the resulting interval, so no extra hole appears. Therefore the statement is True.",
+    "**B.** → True\n\nFactor and inspect the integers in the open interval.\n\n$$(x-2)(x-5)<0$$\n\n$$2<x<5$$\n\n$$x\\in\\mathbb Z\\implies x\\in\\{3,4\\}$$\n\nThe roots themselves are excluded. Therefore the statement is True.",
+    "**C.** → True\n\nThe inequality says that $x$ is farther from $0$ than from $2$.\n\n$$|x|>|x-2|$$\n\n$$x^2>(x-2)^2$$\n\n$$4x>4$$\n\n$$x>1$$\n\nSquaring is reversible because both sides are nonnegative. Therefore the statement is True.",
+    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h$ be hours worked. Here $h = 28 > 25$, so pay $= 14h + 50$.\n\n“At least 450” with the bonus means\n\n$$14h + 50 \\ge 450$$\n\n$$14h \\ge 400$$\n\n$$h \\ge \\dfrac{400}{14} \\approx 28.57$$\n\nEven with the bonus, he needs more than 28 hours.\n\nAt 28 hours:\n\n$$14 \\cdot 28 + 50 = 442$$\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nThe denominator is positive, so clear it and complete the square.\n\n$$4x<x^2+4$$\n\n$$x^2-4x+4>0$$\n\n$$(x-2)^2>0$$\n\n$$x\\ne2$$\n\nEquality occurs only at $x=2$. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 93,
-   "solution_overview": "A 5:3 greenhouse, a quadratic “between” claim with the wrong interval, average cost with a trap at the boundary, a three-material plan, and a two-sided compound inequality.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests cancellation with an irrelevant hole; B tests integer solutions in an open quadratic interval; C tests difference of two distances; D tests a contextual inequality with all practical constraints; E tests bounded rational function versus its maximum. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
@@ -2951,461 +2951,461 @@
    "case_id": "MATH 6.94",
    "title": "Exam-style tasks — 6",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A square plot uses at most 40 m of fencing and must have area at least 81 $m^{2}$. Then every side length from 9 m to 12 m inclusive is feasible.",
-    "If $h(t) = -5t^{2} + 30t + 10$, then the object is at least 40 m above the ground for every t in $[1, 5]$, endpoints included.",
-    "If producing x units costs ${48 + 1.2x}$ EUR, then at least 40 whole units must be produced for average cost to be at most 2.40 EUR.",
-    "Each product uses 6 units of A and 2 units of B at 12 EUR and 90 EUR, plus 4 EUR to finish. Budget 7,000 EUR, storage 300. Then the maximum number of products is less than 50.",
-    "The inequality $|2x + 1| > 5$ has solution set $x < -3$ or $x > 2$."
+    "For every real parameter $a$, the strict inequality $x^2-2ax+a^2<0$ has no real solution.",
+    "The equation $|x-1|=|2x+3|$ has exactly the two real solutions $x=-4$ and $x=-\\dfrac23$.",
+    "A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.",
+    "The inequality $\\dfrac{(x-1)^2}{x+2}\\ge0$ is satisfied exactly for $x>-2$.",
+    "The inequality $x^2+2x\\le3x+4$ holds for $\\dfrac{1-\\sqrt{17}}2\\le x\\le\\dfrac{1+\\sqrt{17}}2$."
    ],
    "answer_key": [
-    false,
-    false,
+    true,
+    true,
     true,
     true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nA square of side $s$ has perimeter $4s$ and area $s^{2}$.\n\n$$4s \\le 40$$\n\n$$s \\le 10$$\n\n$$s^{2} \\ge 81$$\n\n$$s \\ge 9$$\n\n$$9 \\le s \\le 10$$\n\nSide 12 m would need 48 m of fence, so the claimed interval $[9, 12]$ is too wide.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\n$$-5t^{2} + 30t + 10 \\ge 40$$\n\n$$-5t^{2} + 30t - 30 \\ge 0$$\n\n$$t^{2} - 6t + 6 \\le 0$$\n\nRoots $3 \\pm \\sqrt{3}$. Since $\\sqrt{3} \\approx 1.73$, the solution is\n\n$$[3 - \\sqrt{3},\\, 3 + \\sqrt{3}] \\approx [1.27, 4.73]$$\n\n$$[1, 5]$$\n\nThis is larger than the true interval. At $t = 1$, $h(1) = -5 + 30 + 10 = 35 < 40$. At $t = 5$, $h(5) = -125 + 150 + 10 = 35 < 40$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nAverage cost is total cost divided by the positive number of units.\n\n$$\\dfrac{48 + 1.2x}{x} \\le 2.40$$\n\n$$\\dfrac{48}{x} \\le 1.20$$\n\n$$x \\ge 40$$\n\nThe bound is already an integer, and the inequality is non-strict, so 40 units meet it exactly.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$8n \\le 300$$\n\n$$n \\le 37$$\n\n$$72 + 180 + 4 = 256$$\n\n$$256n \\le 7000$$\n\n$$n \\le 27.34$$\n\nSo $n \\le 27$.\n\nBudget is tighter. Maximum is 27, which is less than 50.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\n$$2x + 1 > 5$$\n\nOr $2x + 1 < -5$.\n\n$$2x > 4$$\n\n$$x > 2$$\n\n$$2x < -6$$\n\n$$x < -3$$\n\n$$x < -3$$\n\nOr $x > 2$.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nRecognize the parameterized perfect square.\n\n$$x^2-2ax+a^2=(x-a)^2$$\n\n$$(x-a)^2\\ge0$$\n\nA real square cannot be strictly negative. Therefore the statement is True.",
+    "**B.** → True\n\nEqual absolute values split into equal and opposite linear branches.\n\n$$x-1=2x+3\\quad\\text{or}\\quad x-1=-(2x+3)$$\n\n$$x=-4\\quad\\text{or}\\quad 3x=-2$$\n\n$$x\\in\\left\\{-4,-\\frac23\\right\\}$$\n\nBoth branch solutions satisfy the original equation. Therefore the statement is True.",
+    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be payments.\n\n$$150n\\ge 1200$$\n\n$$n\\ge 8$$\n\nExactly 8 payments clear the debt.\n\n8 is necessary and sufficient.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe squared numerator is nonnegative, while the denominator controls the nonzero sign.\n\n$$(x-1)^2\\ge0,\\qquad x\\ne-2$$\n\n$$x>-2\\implies \\frac{(x-1)^2}{x+2}\\ge0$$\n\n$$x<-2\\implies \\frac{(x-1)^2}{x+2}<0$$\n\nThe zero at $x=1$ is already contained in the interval. Therefore the statement is True.",
+    "**E.** → True\n\nBring the two models to one side and use the quadratic formula.\n\n$$x^2-x-4\\le0$$\n\n$$x=\\frac{1\\pm\\sqrt{1+16}}2=\\frac{1\\pm\\sqrt{17}}2$$\n\n$$\\frac{1-\\sqrt{17}}2\\le x\\le\\frac{1+\\sqrt{17}}2$$\n\nThe upward-opening quadratic is nonpositive between its roots. Therefore the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 94,
-   "solution_overview": "A triangle-inequality style fence is not used; instead: a 1:1 square plot claim, a motion quadratic with a false closed interval, a cost-average trap, a factory where budget binds, and $|2x+1| > 5$.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests parameterized impossible square; B tests equality of two affine moduli; C tests a contextual inequality with all practical constraints; D tests squared numerator over a linear pole; E tests comparison of a quadratic and a line. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-95",
    "case_id": "MATH 6.95",
-   "title": "Real-life inequalities — bills, rides, and limits",
+   "title": "Exam-style tasks — 7",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A mobile plan costs 12 EUR per month plus 0.08 EUR for every megabyte over the included allowance. A customer has already used 200 MB beyond the allowance. They claim that if they use at most 150 more over-allowance megabytes this month, their total bill will stay at or under 40 EUR. That claim is correct.",
-    "A taxi charges 3.50 EUR as a base fare plus 1.20 EUR per kilometre. A passenger has 18 EUR and says they can travel any distance up to 15 km without going over budget. That statement is true.",
-    "Maya saves 25 EUR from her wages every week and already has 40 EUR in her jar. She needs at least 300 EUR for a weekend trip. She claims that after 10 more weeks of saving she will have enough. That claim is true.",
-    "An elevator may carry at most 600 kg. Three adults of 70 kg, 85 kg, and 90 kg are already inside. They claim that two children of 35 kg each can still enter without exceeding the limit. That claim is true.",
-    "A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents for exactly 3 days and has a total budget of 200 EUR for the rental. They claim that they can drive up to 300 km without exceeding the budget. That tourist claim is wrong."
+    "The inequality $|x-1|\\,|x+1|\\le0$ is satisfied only at $x=-1$ and $x=1$.",
+    "Shipper A charges 12 EUR plus 0.80 EUR per kg; shipper B charges 20 EUR plus 0.40 EUR per kg. For a 25 kg parcel, A is strictly cheaper than B.",
+    "The reciprocal inequality $\\dfrac1{x^2-4}>0$ has solution set $(-\\infty,-2)\\cup(2,\\infty)$.",
+    "The inequality $x^2-6x+k<0$ has at least one real solution exactly when $k\\le9$.",
+    "The simultaneous inequalities $|x-2|<3$ and $|x+1|\\ge2$ have solution set $[1,5)$."
    ],
    "answer_key": [
     true,
     false,
-    false,
     true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be the number of additional over-allowance megabytes still to be used this month ($m \\ge 0$).\n\nTotal overage:\n\n$$200 + m$$\n\nBill:\n\n$$12 + 0.08(200 + m)$$\n\n“At or under 40” means\n\n$$12 + 0.08(200 + m) \\le 40$$\n\n$$12 + 16 + 0.08m \\le 40$$\n\n$$28 + 0.08m \\le 40$$\n\n$$0.08m \\le 12$$\n\n$$m \\le \\dfrac{12}{0.08} = 150$$\n\nThe bill stays within 40 EUR exactly when the extra usage is at most 150 MB; the same bound the customer stated.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the distance in kilometres ($d \\ge 0$).\n\nFare:\n\n$$3.50 + 1.20d$$\n\n“Without going over” means\n\n$$3.50 + 1.20d \\le 18$$\n\n$$1.20d \\le 14.50$$\n\n$$d \\le \\dfrac{14.50}{1.20} = \\dfrac{145}{12} \\approx 12.08$$\n\nOnly distances up to about 12.08 km stay within 18 EUR. Fifteen kilometres is larger than that limit.\n\nAt $d = 15$, the fare is $3.50 + 18 = 21.50$ EUR, which is over budget.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $w$ be the number of whole weeks she continues saving ($w \\ge 0$).\n\nAmount after $w$ weeks:\n\n$$40 + 25w$$\n\n“At least 300” means\n\n$$40 + 25w \\ge 300$$\n\n$$25w \\ge 260$$\n\n$$w \\ge \\dfrac{260}{25} = 10.4$$\n\nBecause $w$ must be a whole number, the smallest admissible value is 11.\n\nAfter 10 weeks she has $40 + 250 = 290$ EUR, which is still short of 300 EUR.\n\nSaying that 10 weeks is enough is false.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $c$ be the number of 35 kg children who enter. The claim fixes $c = 2$.\n\nCurrent load:\n\n$$70 + 85 + 90 = 245$$\n\nWith $c$ children:\n\n$$245 + 35c \\le 600$$\n\n$$35c \\le 355$$\n\n$$c \\le \\dfrac{355}{35} \\approx 10.14$$\n\nSo up to 10 such children would be allowed. In particular $c = 2$ is allowed.\n\nTwo children add 70 kg, for a total of 315 kg, well under 600 kg.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be the number of kilometres driven ($k \\ge 0$).\n\nCost:\n\n$$135 + 0.25k$$\n\nWithin budget:\n\n$$135 + 0.25k \\le 200$$\n\n$$0.25k \\le 65$$\n\n$$k \\le \\dfrac{65}{0.25} = 260$$\n\nThey may drive at most 260 km. Three hundred kilometres would overshoot the budget.\n\nAt $k = 300$, cost is $135 + 75 = 210 > 200$. So the tourist claim is indeed wrong.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nA product of two absolute values is always nonnegative.\n\n$$|x-1|\\,|x+1|\\ge0$$\n\n$$|x-1|\\,|x+1|\\le0\\iff |x-1|\\,|x+1|=0$$\n\n$$x=-1\\quad\\text{or}\\quad x=1$$\n\nNo interval can satisfy the inequality away from the two zeros. Therefore the statement is True.",
+    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $w = 25$ be the parcel mass in kilograms.\n\nA $= 12 + 0.80w$. B $= 20 + 0.40w$.\n\nA $= 12 + 20 = 32$.\n\nB $= 20 + 10 = 30$.\n\n$$32 > 30$$\n\nB is cheaper at 25 kg. Crossing point:\n\n$$12 + 0.80w = 20 + 0.40w$$\n\n$$w = 20$$\n\nA is cheaper only when $w < 20$.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\nA reciprocal is positive exactly when its nonzero denominator is positive.\n\n$$x^2-4>0$$\n\n$$(x-2)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>2$$\n\nBoth poles are excluded. Therefore the statement is True.",
+    "**D.** → False\n\nComplete the square to identify the minimum value.\n\n$$x^2-6x+k=(x-3)^2+k-9$$\n\n$$\\min_x\\bigl(x^2-6x+k\\bigr)=k-9$$\n\n$$\\exists x:\\ x^2-6x+k<0\\iff k<9$$\n\nAt $k=9$ the minimum is zero, so the strict inequality has no solution. Therefore the statement is False.",
+    "**E.** → True\n\nSolve the two distance conditions and intersect them.\n\n$$|x-2|<3\\iff -1<x<5$$\n\n$$|x+1|\\ge2\\iff x\\le-3\\quad\\text{or}\\quad x\\ge1$$\n\n$$(-1,5)\\cap\\bigl((-\\infty,-3]\\cup[1,\\infty)\\bigr)=[1,5)$$\n\nThe left endpoint comes from a non-strict condition; the right remains strict. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 95,
-   "solution_overview": "Everyday linear inequalities: mobile overage, a taxi budget, weekly savings, an elevator load, and a rental-car kilometre package. Read each claim, name a variable, write the inequality the wording forces, then solve and check the claim.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests nonpositive product of moduli; B tests a contextual inequality with all practical constraints; C tests reciprocal of a difference of squares; D tests parameter threshold for a strict quadratic; E tests intersection of interior and exterior distance sets. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-96",
    "case_id": "MATH 6.96",
-   "title": "Real-life inequalities — work, fuel, and temperature",
+   "title": "Exam-style tasks — 8",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "Leo earns 14 EUR per hour and gets a 50 EUR bonus if he works more than 25 hours in a week. He claims that working 28 hours this week will bring him at least 450 EUR in total pay. That claim is true.",
-    "A car uses 0.07 litres of fuel per kilometre. Fuel costs 1.60 EUR per litre. For a trip, the driver has 56 EUR to spend on fuel only. They claim that any trip of 500 km or less stays within that fuel budget. That claim is true.",
-    "A medicine fridge must stay between 2 °C and 8 °C inclusive. A technician says that if the temperature reading T satisfies $|T - 5| \\le 4$, then the fridge is always inside the required range. That statement is true.",
-    "An empty tank holds 480 litres. A tap fills it at 12 litres per minute. Someone claims that after 30 minutes of filling from empty, the tank is still not more than half full. That claim is false.",
-    "A courier must deliver a package within 90 minutes. The drive takes 1.5 minutes per kilometre, and there is a fixed 15-minute stop at the warehouse. The courier claims that any delivery address within 45 km can be served on time. That courier claim is incorrect."
+    "An empty ${480 L}$ tank fills at ${12 L/min}$. After 30 minutes of filling from empty, the tank is still not more than half full.",
+    "The inequality $\\dfrac1{(x-2)^2}\\le1$ is equivalent to $x\\le1$ or $x\\ge3$.",
+    "The parabola inequality $-x^2+4x+5>x+3$ holds exactly between $\\dfrac{3-\\sqrt{17}}2$ and $\\dfrac{3+\\sqrt{17}}2$.",
+    "The condition $\\min\\{x+2,\\,4-x\\}\\ge1$ is equivalent to $-1\\le x\\le3$.",
+    "A courier may accept a parcel only when both conditions hold at once: mass $m$ at most 20 kg, and girth-plus-length $g$ at most 300 cm. A parcel with $m = 18$ kg and $g = 310$ cm is accepted under that rule."
    ],
    "answer_key": [
     false,
     true,
-    false,
+    true,
     true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h$ be hours worked. Here $h = 28 > 25$, so pay $= 14h + 50$.\n\n“At least 450” with the bonus means\n\n$$14h + 50 \\ge 450$$\n\n$$14h \\ge 400$$\n\n$$h \\ge \\dfrac{400}{14} \\approx 28.57$$\n\nEven with the bonus, he needs more than 28 hours.\n\nAt 28 hours:\n\n$$14 \\cdot 28 + 50 = 442$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the trip distance in kilometres.\n\nLitres used:\n\n$$0.07d$$\n\nCost:\n\n$$1.60 \\cdot 0.07d = 0.112d$$\n\nBudget:\n\n$$0.112d \\le 56$$\n\n$$d \\le \\dfrac{56}{0.112} = 500$$\n\nThe maximum affordable distance is exactly 500 km, so every trip of 500 km or less fits the budget.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $T$ be the temperature in °C.\n\n$$|T - 5| \\le 4$$\n\nRewrites as $-4 \\le T - 5 \\le 4$, so $1 \\le T \\le 9$.\n\nRequired set:\n\n$$[2, 8]$$\n\nTechnician’s set:\n\n$$[1, 9]$$\n\nThe technician’s set is wider: it includes $T = 1$ and $T = 9$, which lie outside $[2, 8]$.\n\nSatisfying $|T - 5| \\le 4$ does not force the fridge into the safe range.\n\nThe claim is false. (The matching absolute-value form for $[2, 8]$ would be $|T - 5| \\le 3$.)\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $t$ be minutes of filling. Here $t = 30$.\n\nVolume:\n\n$$12t$$\n\n“Not more than half full” means $12t \\le 240$, i.e. $t \\le 20$.\n\nAt $t = 30$: volume $= 360$ L $> 240$ L.\n\nAfter 30 minutes the tank is three-quarters full, not “at most half”.\n\nThe “not more than half full” claim is wrong, so the statement that it is false is true.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the distance in kilometres.\n\nTime:\n\n$$15 + 1.5d$$\n\nOn time:\n\n$$15 + 1.5d \\le 90$$\n\n$$1.5d \\le 75$$\n\n$$d \\le 50$$\n\nAddresses up to 50 km are on time. In particular, 45 km is allowed.\n\nAt $d = 45$: time $= 15 + 67.5 = 82.5 \\le 90$. The courier’s claim is actually correct, so calling it “incorrect” is false.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $t=30$.\n\n$$12\\cdot 30=360>240$$\n\nTank is three-quarters full.\n\nClaim is wrong.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nThe squared denominator is positive on the domain, so cross-multiplication is safe.\n\n$$x\\ne2,\\qquad 1\\le(x-2)^2$$\n\n$$|x-2|\\ge1$$\n\n$$x\\le1\\quad\\text{or}\\quad x\\ge3$$\n\nThe forbidden point $2$ lies in the rejected central interval. Therefore the statement is True.",
+    "**C.** → True\n\nSubtract the line and solve the resulting quadratic sign condition.\n\n$$-x^2+3x+2>0$$\n\n$$x^2-3x-2<0$$\n\n$$x=\\frac{3\\pm\\sqrt{9+8}}2=\\frac{3\\pm\\sqrt{17}}2$$\n\nThe interval is open because the comparison is strict. Therefore the statement is True.",
+    "**D.** → True\n\nA minimum is at least a threshold exactly when both entries are.\n\n$$x+2\\ge1\\quad\\text{and}\\quad4-x\\ge1$$\n\n$$x\\ge-1\\quad\\text{and}\\quad x\\le3$$\n\n$$-1\\le x\\le3$$\n\nBoth endpoints meet the non-strict threshold. Therefore the statement is True.",
+    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $m$ be mass in kilograms and $g$ be girth-plus-length in centimetres.\n\nGiven values:\n\n$$m = 18$$\n\n$g = 310$.\n\nBoth must hold:\n\n$$m \\le 20$$\n\nAlso, $g \\le 300$.\n\nMass:\n\n$$18 \\le 20$$\n\nSatisfied.\n\nGirth-plus-length:\n\n$$310 \\le 300$$\n\nFailed.\n\nThe compound condition is false because one conjunct fails.\n\nA light parcel can still be rejected if it is too long/girthy. Both inequalities are required.\n\nThe parcel is not acceptable, so the statement is false.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 96,
-   "solution_overview": "Hourly wages with a bonus, a fuel budget for a road trip, a fridge temperature window, a water-tank filling time, and a courier delivery deadline.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests reciprocal-square threshold; C tests strict comparison of parabola and line; D tests minimum of two affine expressions; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-97",
    "case_id": "MATH 6.97",
-   "title": "Real-life inequalities — shopping, school, and fitness",
+   "title": "Exam-style tasks — 9",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A shop offers 20% off the marked price. Nora has 48 EUR and wants to buy one item. She claims that any item with a marked price of at most 60 EUR will cost her no more than 48 EUR after the discount. That claim is true.",
-    "An exam has two parts: Part A is worth 40% of the grade and Part B is worth 60%. Sam scored 70% on Part A. He claims that scoring at least 80% on Part B is enough to reach an overall grade of at least 85%. That claim is true.",
-    "In one week, Ana burns about 8 kcal per minute of jogging. She has already burned 900 kcal from other activity and wants a weekly total of at least 2500 kcal. She claims that 3 hours of jogging this week will be enough. That claim is true.",
-    "A courier service accepts a parcel only if its mass is at most 5 kg. A box with packaging weighs 1.2 kg. A shop claims that they can put in any number of 0.4 kg items up to and including 10 items and still be accepted. That claim is false.",
-    "Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR and claims that they can buy tickets for at most 5 people without going over budget. That claim is true."
+    "The inequality $\\dfrac1x\\ge\\dfrac1{x+2}$ holds for $x\\in(-\\infty,-2)\\cup(0,\\infty)$.",
+    "The strict inequality $(x^2-4)(x^2-16)>0$ holds exactly for $x<-4$, $-2<x<2$, or $x>4$.",
+    "The compound inequality $-2<\\dfrac{x-1}{3}\\le4$ has solution set $-5<x\\le13$.",
+    "An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter.",
+    "The strict inequality $\\dfrac{x-3}{(x+1)^2}>0$ holds exactly when $x>3$."
    ],
    "answer_key": [
     true,
-    false,
-    false,
     true,
+    true,
+    false,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be the marked price in EUR ($p > 0$).\n\nDiscounted price:\n\n$$0.8p$$\n\nAffordable:\n\n$$0.8p \\le 48$$\n\n$$p \\le \\dfrac{48}{0.8} = 60$$\n\nMarked prices up to 60 EUR are exactly the ones she can afford after the discount.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → False\n\nA weighted grade is the sum of each score multiplied by its course weight.\n\nLet $b$ be Sam’s Part B percentage.\n\nOverall:\n\n$$0.4 \\cdot 70 + 0.6b = 28 + 0.6b$$\n\nTarget:\n\n$$28 + 0.6b \\ge 85$$\n\n$$0.6b \\ge 57$$\n\n$$b \\ge \\dfrac{57}{0.6} = 95$$\n\nHe needs at least 95% on Part B. Eighty percent is not enough.\n\nAt $b = 80$: overall $= 28 + 48 = 76 < 85$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be minutes of jogging. The claim uses $m = 180$.\n\nTotal kcal:\n\n$$900 + 8m \\ge 2500$$\n\n$$8m \\ge 1600$$\n\n$$m \\ge 200$$\n\nShe needs at least 200 minutes (about 3 hours 20 minutes). Three hours is only 180 minutes.\n\n$$900 + 8 \\cdot 180 = 900 + 1440 = 2340 < 2500$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be the number of 0.4 kg items ($n \\ge 0$, whole number).\n\nTotal mass:\n\n$$1.2 + 0.4n \\le 5$$\n\n$$0.4n \\le 3.8$$\n\n$$n \\le \\dfrac{3.8}{0.4} = 9.5$$\n\nSo the largest whole number is $n = 9$.\n\nTen items give $1.2 + 4.0 = 5.2 > 5$ kg, so they would be rejected.\n\nThe shop’s “up to 10 items” claim is wrong, so our statement is true.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of people (tickets), a whole number $n \\ge 1$.\n\nCost:\n\n$$28n + 12$$\n\nWithin budget:\n\n$$28n + 12 \\le 160$$\n\n$$28n \\le 148$$\n\n$$n \\le \\dfrac{148}{28} \\approx 5.286$$\n\nSo the largest whole $n$ is 5.\n\nFive tickets cost $140 + 12 = 152 \\le 160$. Six tickets would cost $168 + 12 = 180 > 160$.\n\n“At most 5 people” matches the solution, so\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nSubtract the two sides and retain both domain exclusions.\n\n$$\\frac1x-\\frac1{x+2}=\\frac{2}{x(x+2)}$$\n\n$$\\frac{2}{x(x+2)}\\ge0\\iff x(x+2)>0$$\n\n$$x\\in(-\\infty,-2)\\cup(0,\\infty)$$\n\nThe numerator never vanishes, so equality never occurs. Therefore the statement is True.",
+    "**B.** → True\n\nOrder the four simple roots and keep the positive sign intervals.\n\n$$(x-2)(x+2)(x-4)(x+4)>0$$\n\n$$-4,\\ -2,\\ 2,\\ 4$$\n\n$$x\\in(-\\infty,-4)\\cup(-2,2)\\cup(4,\\infty)$$\n\nEvery root is excluded by strictness. Therefore the statement is True.",
+    "**C.** → True\n\nMultiply all three parts by the positive denominator and then translate.\n\n$$-6<x-1\\le12$$\n\n$$-5<x\\le13$$\n\nMultiplication by $3$ does not reverse either sign. Therefore the statement is True.",
+    "**D.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $c$ be children.\n\n$$245+35c\\le 600$$\n\n$$c\\le 10.14$$\n\nMax $c=10$.\n\n8 is allowed, but the maximum is 10.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nAway from its pole, the squared denominator is positive.\n\n$$(x+1)^2>0\\quad(x\\ne-1)$$\n\n$$\\frac{x-3}{(x+1)^2}>0\\iff x-3>0$$\n\n$$x>3$$\n\nNeither the pole nor the numerator zero lies in the strict solution set. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 97,
-   "solution_overview": "Discount shopping with a spending cap, a weighted exam score target, a weekly calorie-burn goal, a shipping weight limit, and a group ticket budget.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests comparison of shifted reciprocals; B tests product of two quadratic factors; C tests three-part affine inequality; D tests a contextual inequality with all practical constraints; E tests positive squared denominator. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-98",
    "case_id": "MATH 6.98",
-   "title": "Real-life inequalities — mixing, travel time, and capacity",
+   "title": "Exam-style tasks — 10",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A café mixes beans that cost 8 EUR/kg with beans that cost 14 EUR/kg. They use equal masses of each type. They claim that any batch of at least 6 kg of the blend (half and half) will have a total ingredient cost of at most 60 EUR. That claim is false.",
-    "A train journey is 180 km. A passenger needs to arrive in at most 2.5 hours. They claim that any constant average speed of at least 70 km/h is fast enough. That claim is true.",
-    "A bridge may carry at most 12 tonnes. Each delivery truck weighs 2.8 tonnes when empty and may carry up to 1.5 tonnes of cargo. A planner claims that three fully loaded trucks can be on the bridge at the same time. That claim is true.",
-    "A phone battery is at 20% and charges at about 2 percentage points per minute while plugged in. A student claims that charging for 25 minutes will be enough to reach at least 80%. That claim is true.",
-    "Plan A costs 10 EUR per month plus 0.10 EUR per call-minute. Plan B costs 20 EUR per month plus 0.05 EUR per call-minute. A user claims that Plan A is strictly cheaper than Plan B whenever they use fewer than 200 call-minutes in a month. That claim is true."
+    "The inequality $x^2+kx+4\\ge0$ holds for every real $x$ exactly when $|k|\\le4$.",
+    "The radical inequality $\\sqrt{x+2}\\ge x$ has solution set $[-2,2]$.",
+    "A car rental costs 45 EUR per day plus 0.25 EUR per kilometre. A tourist rents for exactly 3 days and has a total budget of 200 EUR for the rental. They claim that they can drive up to 300 km without exceeding the budget. That tourist claim is wrong.",
+    "The inequality $\\dfrac{x^2-4x+3}{x-1}\\le0$ has solution set $(-\\infty,1)\\cup(1,3]$.",
+    "The inequality $(x-2)^2(x+1)<0$ is satisfied exactly for $x<-1$."
    ],
    "answer_key": [
     true,
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $M$ be the total mass of the blend in kilograms ($M > 0$).\n\nCost:\n\n$$\\dfrac{M}{2}\\cdot 8 + \\dfrac{M}{2}\\cdot 14 = 4M + 7M = 11M$$\n\n“At most 60 EUR” means $11M \\le 60$, so $M \\le \\dfrac{60}{11} \\approx 5.45$.\n\nBatches of at least 6 kg have $M \\ge 6 > 5.45$, so their cost is at least $11 \\cdot 6 = 66 > 60$ EUR.\n\nLarger batches cost more, not less. The café’s claim reverses the inequality direction.\n\nThe café claim is wrong, so our statement is true.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → False\n\nTranslate the stated limit into an inequality and solve it on the positive-speed domain.\n\nLet $v>0$ be the average speed in km/h. The time limit gives\n\n$$\\dfrac{180}{v} \\le 2.5$$\n\nSince $v>0$, multiplication by $v$ keeps the inequality direction:\n\n$$180 \\le 2.5v$$\n\n$$v \\ge \\dfrac{180}{2.5}$$\n\n$$v \\ge 72$$\n\nThe claim includes $v=70$, but\n\n$$\\dfrac{180}{70} \\approx 2.57>2.5$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be the number of fully loaded trucks ($n \\ge 0$, whole number).\n\n$$4.3n \\le 12$$\n\n$$n \\le \\dfrac{12}{4.3} \\approx 2.79$$\n\nSo the largest whole number is $n = 2$. Three trucks are not allowed.\n\nThree trucks would weigh $12.9$ tonnes, which exceeds 12 tonnes.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $t$ be minutes of charging ($t \\ge 0$).\n\nCharge level:\n\n$$20 + 2t$$\n\nTarget:\n\n$$20 + 2t \\ge 80$$\n\n$$2t \\ge 60$$\n\n$$t \\ge 30$$\n\nThey need at least 30 minutes. Twenty-five minutes only reaches 70%.\n\n$$20 + 2 \\cdot 25 = 70 < 80$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nCompare the two linear cost rules at the same usage.\n\nLet $x$ be call-minutes in a month ($x \\ge 0$).\n\nPlan A:\n\n$$10 + 0.10x$$\n\nPlan B:\n\n$$20 + 0.05x$$\n\n“A strictly cheaper than B” means\n\n$$10 + 0.10x < 20 + 0.05x$$\n\n$$0.10x - 0.05x < 20 - 10$$\n\n$$0.05x < 10$$\n\n$$x < 200$$\n\nPlan A is strictly cheaper exactly when $x < 200$. At $x = 200$ the plans cost the same; for $x > 200$, Plan B is cheaper.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nAn upward-opening quadratic is nonnegative everywhere exactly when its discriminant is nonpositive.\n\n$$\\Delta=k^2-16$$\n\n$$\\Delta\\le0\\iff k^2\\le16$$\n\n$$|k|\\le4$$\n\nAt the two boundary parameters the quadratic has a double zero. Therefore the statement is True.",
+    "**B.** → True\n\nRespect the radical domain and separate the branch where the right side is nonpositive.\n\n$$x\\ge-2$$\n\n$$-2\\le x\\le0\\implies \\sqrt{x+2}\\ge0\\ge x$$\n\n$$x>0:\\quad x+2\\ge x^2\\iff (x-2)(x+1)\\le0$$\n\n$$x\\in[-2,2]$$\n\nSquaring is used only where both sides are nonnegative. Therefore the statement is True.",
+    "**C.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be the number of kilometres driven ($k \\ge 0$).\n\nCost:\n\n$$135 + 0.25k$$\n\nWithin budget:\n\n$$135 + 0.25k \\le 200$$\n\n$$0.25k \\le 65$$\n\n$$k \\le \\dfrac{65}{0.25} = 260$$\n\nThey may drive at most 260 km. Three hundred kilometres would overshoot the budget.\n\nAt $k = 300$, cost is $135 + 75 = 210 > 200$. So the tourist claim is indeed wrong.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nFactor and cancel while preserving the original excluded point.\n\n$$x\\ne1,\\qquad \\frac{(x-1)(x-3)}{x-1}=x-3$$\n\n$$x-3\\le0\\iff x\\le3$$\n\n$$x\\in(-\\infty,1)\\cup(1,3]$$\n\nThe hole at $x=1$ splits the otherwise closed half-line. Therefore the statement is True.",
+    "**E.** → True\n\nThe even-multiplicity factor never changes sign.\n\n$$(x-2)^2\\ge0$$\n\n$$(x-2)^2(x+1)<0\\iff x+1<0$$\n\n$$x<-1$$\n\nThe double zero $x=2$ is not admitted by a strict inequality. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 98,
-   "solution_overview": "A coffee blend cost target, average speed needed to arrive on time, a bridge weight limit for identical trucks, a phone-battery charge window, and comparing two phone plans.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests parameter range for global nonnegativity; B tests radical inequality with a sign branch; C tests a contextual inequality with all practical constraints; D tests non-strict cancellation with an interior hole; E tests odd factor with a repeated root. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-99",
    "case_id": "MATH 6.99",
-   "title": "Real-life inequalities — bakery, garden, and parking",
+   "title": "Exam-style tasks — 11",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A bakery has 25 kg of flour. Each loaf needs 0.4 kg of flour. The baker claims that it is possible to bake 60 loaves from this stock. That claim is true.",
-    "A gardener fences three sides of a rectangular bed against an existing wall (the wall is the fourth side). There are 40 m of fencing. The gardener wants the area to be at least 96 $m^{2}$ and claims that every width from 4 m to 18 m inclusive is possible. That claim is true.",
-    "A parking garage has a clearance of 2.10 m. A car is 1.70 m tall and a roof box adds 0.35 m. The driver claims the car with the roof box can enter the garage. That claim is true.",
-    "A student owes 1,200 EUR on an interest-free loan and can pay 150 EUR at the end of each month. They claim that the loan will be fully paid after at most 8 monthly payments. That claim is true.",
-    "A storage room should keep relative humidity between 42% and 48% inclusive. A sensor alert is set to trigger unless $|H - 45| \\le 5$. A technician claims that whenever the alert does not trigger, the humidity is automatically inside the 42%–48% band. That claim is true."
+    "The inequality $|x|+|x-4|>6$ has solution set $(-\\infty,-1)\\cup(5,\\infty)$.",
+    "Concert tickets cost 28 EUR each, and a group booking fee of 12 EUR is added once for the whole group. A club has 160 EUR and claims that they can buy tickets for at most 5 people without going over budget. That claim is true.",
+    "The rational inequality $\\dfrac{x^2-2x-3}{x^2+2x+5}<0$ has solution set $(-1,3)$.",
+    "The inequality $x^2+4x+5\\le0$ has no real solution.",
+    "The inequality $|x-3|\\le2|x+1|$ holds exactly for $x\\le-5$ or $x\\ge\\dfrac13$."
    ],
    "answer_key": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be the number of loaves (whole number, $n \\ge 0$).\n\n$$0.4n \\le 25$$\n\n$$n \\le \\dfrac{25}{0.4} = 62.5$$\n\nSo up to 62 whole loaves are possible. Sixty is allowed.\n\nSixty loaves use $0.4 \\cdot 60 = 24$ kg $\\le 25$ kg.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w$ be the width perpendicular to the wall ($w > 0$). Then $L = 40 - 2w$ (and we need $L > 0$, so $w < 20$).\n\n$$w(40 - 2w) \\ge 96$$\n\n$$40w - 2w^{2} \\ge 96$$\n\n$$2w^{2} - 40w + 96 \\le 0$$\n\n$$w^{2} - 20w + 48 \\le 0$$\n\n$$(w - 4)(w - 16) \\le 0$$\n\nSo $4 \\le w \\le 16$.\n\nOnly widths from 4 m to 16 m give enough area. Width 18 m would give length $40 - 36 = 4$ m and area $72 < 96$.\n\nThe interval $[4, 18]$ is too wide.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $h$ be total height:\n\n$$h = 1.70 + 0.35$$\n\nEntry is allowed when:\n\n$$h \\le 2.10$$\n\n$$1.70 + 0.35 = 2.05 \\le 2.10$$\n\nThere are 0.05 m (5 cm) to spare.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be the number of monthly payments (whole number, $n \\ge 0$).\n\n$$150n \\ge 1200$$\n\n$$n \\ge \\dfrac{1200}{150} = 8$$\n\nSo the smallest number of payments is exactly 8, which is “at most 8” in the sense that 8 payments suffice and are needed.\n\nEight payments give exactly 1,200 EUR.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $H$ be relative humidity in percent.\n\nAlert off:\n\n$$|H - 45| \\le 5$$\n\nMeans $40 \\le H \\le 50$.\n\nRequired:\n\n$$[42, 48]$$\n\nAlert-off:\n\n$$[40, 50]$$\n\nThe alert-off set is larger. For example $H = 41$ keeps the alert off but is below 42%.\n\n“No alert” does not guarantee the narrow comfort band.\n\nThe claim is false. (A matching condition for $[42, 48]$ would be $|H - 45| \\le 3$.)\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nSplit at the two reference points.\n\n$$x<0:\\quad |x|+|x-4|=4-2x>6\\iff x<-1$$\n\n$$0\\le x\\le4:\\quad |x|+|x-4|=4$$\n\n$$x>4:\\quad |x|+|x-4|=2x-4>6\\iff x>5$$\n\nThe central segment contributes no solutions. Therefore the statement is True.",
+    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of people (tickets), a whole number $n \\ge 1$.\n\nCost:\n\n$$28n + 12$$\n\nWithin budget:\n\n$$28n + 12 \\le 160$$\n\n$$28n \\le 148$$\n\n$$n \\le \\dfrac{148}{28} \\approx 5.286$$\n\nSo the largest whole $n$ is 5.\n\nFive tickets cost $140 + 12 = 152 \\le 160$. Six tickets would cost $168 + 12 = 180 > 160$.\n\n“At most 5 people” matches the solution, so\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → True\n\nThe denominator is always positive, leaving only the factored numerator to test.\n\n$$x^2+2x+5=(x+1)^2+4>0$$\n\n$$x^2-2x-3=(x+1)(x-3)$$\n\n$$(x+1)(x-3)<0\\iff -1<x<3$$\n\nStrictness excludes both numerator zeros. Therefore the statement is True.",
+    "**D.** → True\n\nComplete the square to identify the global minimum.\n\n$$x^2+4x+5=(x+2)^2+1$$\n\n$$(x+2)^2+1\\ge1>0$$\n\nThe expression cannot be nonpositive. Therefore the statement is True.",
+    "**E.** → True\n\nBoth sides are nonnegative, so square and factor the difference.\n\n$$(x-3)^2\\le4(x+1)^2$$\n\n$$4(x+1)^2-(x-3)^2\\ge0$$\n\n$$(x+5)(3x-1)\\ge0$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge\\frac13$$\n\nEquality includes both boundary points. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 99,
-   "solution_overview": "A bakery flour stock, a three-sided garden fence against a wall, a parking-garage height limit, a loan payoff schedule, and a humidity comfort band.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests sum of distances above a threshold; B tests a contextual inequality with all practical constraints; C tests factorable numerator over an irreducible denominator; D tests empty quadratic sublevel set; E tests scaled comparison of two distances. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-100",
    "case_id": "MATH 6.100",
-   "title": "Real-life inequalities — drones, paint, and overtime",
+   "title": "Exam-style tasks — 12",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A delivery drone can fly for at most 40 minutes on one battery. It uses 0.8 minutes of battery per kilometre of route. A dispatcher claims that any one-way delivery of 55 km can be completed on a single charge. That claim is true.",
-    "A painter mixes 2 litres of white paint (3 EUR per litre) with 1 litre of colour concentrate (9 EUR per litre) to make 3 litres of blend. They claim that any amount of this same 2:1 mix whose total volume is at most 12 litres will cost at most 50 EUR in materials. That claim is true.",
-    "Jordan earns 12 EUR per hour for the first 40 hours in a week and 18 EUR per hour for each overtime hour after that. They claim that working 46 hours in a week will earn them at least 600 EUR. That claim is true.",
-    "A swimming pool’s free chlorine should stay between 1.0 and 3.0 mg/L inclusive. A caretaker says that if the reading C satisfies $|C - 2| \\le 1$, then the chlorine level is always acceptable. That statement is true.",
-    "Four friends share a taxi. The meter shows a fare of F EUR, and there is a fixed booking fee of 4 EUR added once. They claim that if each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR. That claim is true."
+    "A product needs 1 unit of A, 4 units of B, and 2 units of C at 60 EUR, 15 EUR, and 20 EUR, plus 5 EUR finishing. Budget 12,000 EUR, storage 400. Then the maximum number of products is less than 50.",
+    "The solution set of $\\dfrac{x^2-4}{x-2}\\ge0$ is the single interval $[-2,\\infty)$.",
+    "The closed quadratic inequality $(x-4)(x+3)\\le0$ contains exactly eight integer solutions.",
+    "The mixed inequality $|2x-3|<x+1$ has solution set $\\left(\\dfrac23,4\\right)$.",
+    "A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR."
    ],
    "answer_key": [
     false,
     false,
-    false,
     true,
-    true
+    true,
+    false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the one-way distance in kilometres.\n\nTime:\n\n$$0.8d$$\n\nFeasible:\n\n$$0.8d \\le 40$$\n\n$$d \\le \\dfrac{40}{0.8} = 50$$\n\nThe maximum range is 50 km. Fifty-five kilometres needs 44 minutes.\n\n$$0.8 \\cdot 55 = 44 > 40$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $V$ be the total volume of blend in litres ($V > 0$).\n\nCost:\n\n$$\\dfrac{2}{3}V \\cdot 3 + \\dfrac{1}{3}V \\cdot 9 = 2V + 3V = 5V$$\n\n“At most 50 EUR” means $5V \\le 50$, so $V \\le 10$.\n\nBatches up to 12 litres include $V = 12$, which costs $5 \\cdot 12 = 60 > 50$ EUR.\n\nOnly volumes up to 10 litres stay within 50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nPiecewise pay adds regular earnings to the overtime rate applied only beyond the threshold.\n\nLet $h$ be total hours. Here $h = 46$, so overtime hours $= 6$.\n\nPay:\n\n$$12 \\cdot 40 + 18 \\cdot (h - 40)$$\n\nFor $h > 40$.\n\nTarget:\n\n$$480 + 18(h - 40) \\ge 600$$\n\n$$18(h - 40) \\ge 120$$\n\n$$h - 40 \\ge \\dfrac{120}{18} = \\dfrac{20}{3} \\approx 6.67$$\n\n$$h \\ge 46.67$$\n\nAt 46 hours:\n\n$$480 + 18 \\cdot 6 = 480 + 108 = 588 < 600$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $C$ be chlorine concentration in mg/L.\n\n$$|C - 2| \\le 1$$\n\nMeans $-1 \\le C - 2 \\le 1$, so $1 \\le C \\le 3$.\n\nThe caretaker’s condition is exactly $[1, 3]$, which matches the required band.\n\nWhenever $|C - 2| \\le 1$, the reading is acceptable, and conversely.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $F$ be the meter fare in EUR ($F \\ge 0$).\n\nEach person’s share:\n\n$$\\dfrac{F + 4}{4} \\le 9$$\n\n$$F + 4 \\le 36$$\n\n$$F \\le 32$$\n\n“Each pays at most 9” is equivalent to “meter fare at most 32 EUR”.\n\nThe claim matches the algebra, so it is true.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\n$$7n \\le 400$$\n\n$$n \\le 57$$\n\n$$60 + 60 + 40 + 5 = 165$$\n\n$$165n \\le 12000$$\n\n$$n \\le 72$$\n\nMaximum 57, which is not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → False\n\nCancellation simplifies the sign test but does not restore an excluded denominator zero.\n\n$$x\\ne2,\\qquad \\frac{x^2-4}{x-2}=x+2$$\n\n$$x+2\\ge0\\iff x\\ge-2$$\n\n$$x\\in[-2,2)\\cup(2,\\infty)$$\n\nThe claimed interval wrongly includes the undefined point $x=2$. Therefore the statement is False.",
+    "**C.** → True\n\nAn upward-opening factored quadratic is nonpositive between its roots.\n\n$$(x-4)(x+3)\\le0\\iff -3\\le x\\le4$$\n\n$$x\\in\\{-3,-2,-1,0,1,2,3,4\\}$$\n\n$$\\#=8$$\n\nBoth integer endpoints count. Therefore the statement is True.",
+    "**D.** → True\n\nThe right side must be positive, and the modulus then unfolds into two simultaneous bounds.\n\n$$-(x+1)<2x-3<x+1$$\n\n$$x>\\frac23,\\qquad x<4$$\n\n$$x\\in\\left(\\frac23,4\\right)$$\n\nThe resulting interval already satisfies $x+1>0$. Therefore the statement is True.",
+    "**E.** → False\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be marked price.\n\n$$0.8p\\le 48$$\n\n$$p\\le 60$$\n\nShe can afford up to 60 EUR marked.\n\n55 understates the true ceiling.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 100,
-   "solution_overview": "A delivery-drone battery range, a paint-mix cost cap, overtime pay to hit a weekly earnings goal, a swimming-pool chlorine window, and a shared-taxi fare split.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests cancellation hole inside the answer; C tests integer count in a quadratic interval; D tests absolute value bounded by a linear function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-101",
    "case_id": "MATH 6.101",
-   "title": "Exam-style inequalities — set A",
+   "title": "Exam-style tasks — 13",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A farmer is planning a rectangular field. He has 80 meters of fencing available. If he wants the area to be at least 48 $m^{2}$ and to keep a 3:1 ratio between the longer and shorter sides, then the shorter side can be between 4 and 20 meters long (both values included).",
-    "If the height in meters after x seconds is $f(x)=-5x^{2}+70x+3$, then the object is more than 123 meters above the ground between 2 and 12 seconds.",
-    "If producing x units costs $150+0.2x$ EUR, then at least 83 whole units must be produced for the average cost per unit to fall below 2 EUR.",
-    "One product uses 3 units of A, 2 of B, and 4 of C at 40, 50, and 25 EUR, plus 12 EUR finishing. Budget 21,400 EUR and storage at most 475 raw units. The maximum number of products is less than 50.",
-    "The inequality system $\\dfrac{4}{x}<x<|2-3x|$ is satisfied if and only if $|x|>2$."
+    "The rational expression $\\dfrac{x^2+1}{x-2}$ is negative exactly when $x<2$.",
+    "The inequality $(x-1)^2-4>0$ has solution set $(-\\infty,-1)\\cup(3,\\infty)$.",
+    "The distance inequality $|x-2|+|x+2|\\le6$ has solution set $[-3,3]$.",
+    "A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.",
+    "The inequality $\\dfrac{x^2+4x+5}{x^2-1}\\le0$ is satisfied exactly for $-1<x<1$."
    ],
    "answer_key": [
-    false,
     true,
-    false,
-    false,
-    false
+    true,
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w>0$ be the shorter side; longer side $3w$.\n\nFencing:\n\n$$2(3w+w)\\le 80$$\n\nArea:\n\n$$3w^{2}\\ge 48$$\n\n$$8w\\le 80$$\n\n$$w\\le 10$$\n\n$$w^{2}\\ge 16$$\n\n$$w\\ge 4$$\n\nIntersection:\n\n$$4\\le w\\le 10$$\n\nTrue range is $[4,10]$, not $[4,20]$.\n\n$$w=20$$\n\nThis needs 160 m of fence.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $x$ be time in seconds.\n\n$$-5x^{2}+70x+3>123$$\n\n$$-5x^{2}+70x-120>0$$\n\nDivide by $-5$ (reverse): $x^{2}-14x+24<0$\n\n$$(x-2)(x-12)<0$$\n\n$$2<x<12$$\n\nStrictly above 123 m on the open interval $(2,12)$.\n\nMatches the claim’s open timing window.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\nLet $x>0$ be whole units.\n\n$$\\dfrac{150+0.2x}{x}<2$$\n\n$$x > \\dfrac{150}{1.8} = 83.\\overline{3}$$\n\nSmallest whole $x$ is 84.\n\nAt 83 the average is still slightly above 2 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be whole products.\n\n$$9n\\le 475$$\n\nAlso, $332n\\le 21400$.\n\n$$n\\le 52$$\n\n(storage binds); budget allows up to 64.\n\nMaximum is 52, not less than 50.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nSolve both inequalities on their valid domains, then intersect their solution sets.\n\nThe rational expression requires $x \\ne 0$. First solve\n\n$$\\frac{4}{x}<x$$\n\nFor $x>0$, multiplication by $x$ keeps the inequality direction:\n\n$$4<x^{2}$$\n\n$$x>2$$\n\nFor $x<0$, multiplication by $x$ reverses the direction:\n\n$$4>x^{2}$$\n\n$$-2<x<0$$\n\nThus the left inequality gives\n\n$$(-2,0)\\cup(2,\\infty)$$\n\nFor the right inequality, split where $2-3x$ changes sign:\n\n$$x<|2-3x|$$\n\n$$x<\\frac{1}{2}\\qquad x>1$$\n\nIntersecting the two solution sets gives\n\n$$(-2,0)\\cup(2,\\infty)$$\n\nThe claim $|x|>2$ describes $(-\\infty,-2)\\cup(2,\\infty)$, so it omits $(-2,0)$ and wrongly includes $(-\\infty,-2)$.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nThe numerator is positive everywhere, so only the denominator sign matters.\n\n$$x^2+1>0$$\n\n$$\\frac{x^2+1}{x-2}<0\\iff x-2<0$$\n\n$$x<2$$\n\nThe pole $x=2$ is excluded by the strict half-line. Therefore the statement is True.",
+    "**B.** → True\n\nCompare the shifted square with $4$.\n\n$$(x-1)^2>4$$\n\n$$|x-1|>2$$\n\n$$x<-1\\quad\\text{or}\\quad x>3$$\n\nStrictness excludes the two boundary roots. Therefore the statement is True.",
+    "**C.** → True\n\nSplit the line at the two absolute-value breakpoints.\n\n$$|x-2|+|x+2|=\\begin{cases}-2x,&x<-2,\\\\4,&-2\\le x\\le2,\\\\2x,&x>2,\\end{cases}$$\n\n$$|x-2|+|x+2|\\le6\\iff -3\\le x\\le3$$\n\nThe whole central segment works, with one additional unit on each side. Therefore the statement is True.",
+    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be loaves.\n\n$$0.4n\\le 25$$\n\n$$n\\le 62.5$$\n\n60 $\\le$ 62.5, so allowed.\n\n60 loaves use 24 kg.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**E.** → True\n\nThe numerator has a positive completed-square form.\n\n$$x^2+4x+5=(x+2)^2+1>0$$\n\n$$\\frac{x^2+4x+5}{x^2-1}\\le0\\iff x^2-1<0$$\n\n$$-1<x<1$$\n\nEquality cannot occur because the numerator never vanishes. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 101,
-   "solution_overview": "Classic exam mix: fencing ratio, quadratic height, average cost, factory constraints, algebraic system.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests positive quadratic numerator over a pole; B tests quadratic exterior from a shifted square; C tests sum of distances bounded above; D tests a contextual inequality with all practical constraints; E tests positive numerator over a difference of squares. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-102",
    "case_id": "MATH 6.102",
-   "title": "Exam-style inequalities — set B",
+   "title": "Exam-style tasks — 14",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A taxi charges 3.50 EUR base plus 1.20 EUR per kilometre. With 18 EUR, the greatest whole number of kilometres without going over budget is 15.",
-    "Maya has 40 EUR and saves 25 EUR each week. The smallest number of whole weeks needed to reach at least 300 EUR is 10.",
-    "If $s(t)=-4t^{2}+32t+5$, then $s(t)\\ge 53$ for every t in the closed interval $[2,6]$.",
-    "A 3-day car rental costs 45 EUR/day plus 0.25 EUR/km with a 200 EUR budget. The greatest whole number of kilometres allowed is 260.",
-    "An elevator limit is 600 kg. Adults of 70, 85, and 90 kg are already inside. At most 8 children of 35 kg each can still enter."
+    "The inequality $3x^2-12x+13>0$ holds for every real $x$.",
+    "The inequality $|x+1|\\ge4$ has solution set $(-\\infty,-5]\\cup[3,\\infty)$.",
+    "A parking garage has a clearance of 2.10 m. A car is 1.70 m tall and a roof box adds 0.35 m. The driver claims the car with the roof box can enter the garage. That claim is true.",
+    "The inequality $\\dfrac{x+2}{(x-1)^2}\\le0$ has solution set $(-\\infty,-2]$.",
+    "The quartic sign inequality $(x^2-1)(x^2-9)\\le0$ has solution set $[-3,-1]\\cup[1,3]$."
    ],
    "answer_key": [
-    false,
-    false,
     true,
     true,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be whole kilometres.\n\n$$3.50+1.20d\\le 18$$\n\n$$d \\le \\dfrac{14.5}{1.2} \\approx 12.08$$\n\nMax whole $d=12$.\n\n15 km costs 21.50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $w$ be whole weeks.\n\n$$40+25w\\ge 300$$\n\n$$w\\ge 10.4$$\n\nSmallest whole $w=11$.\n\nAfter 10 weeks she has 290 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $t$ be seconds.\n\n$$-4t^{2}+32t+5\\ge 53$$\n\n$$t^{2}-8t+12\\le 0$$\n\n$$(t-2)(t-6)\\le 0$$\n\n$$2\\le t\\le 6$$\n\nSolution set is exactly:\n\n$$[2,6]$$\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be whole kilometres.\n\n$$135+0.25k\\le 200$$\n\n$$k\\le 260$$\n\n260 km uses the budget exactly.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $c$ be children.\n\n$$245+35c\\le 600$$\n\n$$c\\le 10.14$$\n\nMax $c=10$.\n\n8 is allowed, but the maximum is 10.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nComplete the square to expose a positive minimum.\n\n$$3x^2-12x+13=3(x-2)^2+1$$\n\n$$3(x-2)^2+1\\ge1>0$$\n\nThe expression never reaches zero. Therefore the statement is True.",
+    "**B.** → True\n\nA lower bound on distance gives two outer rays.\n\n$$|x+1|\\ge4$$\n\n$$x+1\\le-4\\quad\\text{or}\\quad x+1\\ge4$$\n\n$$x\\le-5\\quad\\text{or}\\quad x\\ge3$$\n\nEquality includes both boundary points. Therefore the statement is True.",
+    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $h$ be total height:\n\n$$h = 1.70 + 0.35$$\n\nEntry is allowed when:\n\n$$h \\le 2.10$$\n\n$$1.70 + 0.35 = 2.05 \\le 2.10$$\n\nThere are 0.05 m (5 cm) to spare.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe squared denominator is positive wherever the fraction is defined.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+2}{(x-1)^2}\\le0\\iff x+2\\le0$$\n\n$$x\\le-2$$\n\nThe excluded value $1$ is not in the resulting half-line. Therefore the statement is True.",
+    "**E.** → True\n\nFactor into four linear terms and alternate signs across the simple roots.\n\n$$(x-1)(x+1)(x-3)(x+3)\\le0$$\n\n$$-3,\\ -1,\\ 1,\\ 3$$\n\n$$x\\in[-3,-1]\\cup[1,3]$$\n\nAll four roots are included because the inequality is non-strict. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 102,
-   "solution_overview": "Claims about greatest/smallest whole values and a closed quadratic height interval.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests globally positive quadratic; B tests exterior absolute-value rays; C tests a contextual inequality with all practical constraints; D tests nonpositive numerator over a square; E tests symmetric quartic sign pattern. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-103",
    "case_id": "MATH 6.103",
-   "title": "Exam-style inequalities — set C",
+   "title": "Exam-style tasks — 15",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "Leo earns 14 EUR/h plus a 50 EUR bonus when he works more than 25 hours. Working 28 hours is enough to earn at least 450 EUR.",
-    "Plan A costs 10 EUR plus 0.10 EUR per call-minute; Plan B costs 20 EUR plus 0.05 EUR per call-minute. Plan A is strictly cheaper whenever fewer than 200 call-minutes are used.",
-    "A car uses ${0.07 L/km}$ and fuel costs 1.60 EUR/L. With 56 EUR for fuel, any trip of 500 km or less stays within budget.",
-    "A shop offers 20% off. With 48 EUR, Nora can afford any item whose marked price is at most 55 EUR.",
-    "A courier has 90 minutes including a fixed 15-minute warehouse stop and drives at 1.5 min/km. Every address within 45 km can be reached on time."
+    "The inequality $|x|+x<2$ has solution set $(-\\infty,1)$.",
+    "A gym membership is 40 EUR per month and each guest pass costs 6 EUR. With 70 EUR this month, at most 5 guest passes can be bought.",
+    "The inequality $\\dfrac1{x-1}+\\dfrac1{x+1}>0$ has solution set $(-1,0)\\cup(1,\\infty)$.",
+    "The strict inequality $4x^2-12x+9<0$ has no real solution.",
+    "The inequality $|x|-x\\ge2$ has solution set $(-\\infty,-1]$."
    ],
    "answer_key": [
-    false,
     true,
     true,
-    false,
+    true,
+    true,
     true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h=28>25$.\n\n$$14h+50\\ge 450$$\n\n$$h \\ge \\dfrac{400}{14} \\approx 28.57$$\n\nAt $h=28$: pay $=442<450$.\n\nNeed at least 29 hours.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nCompare the two linear cost rules at the same usage.\n\nLet $x$ be call-minutes.\n\n$$10+0.10x<20+0.05x$$\n\n$$0.05x<10$$\n\n$$x<200$$\n\nStrict inequality holds exactly for $x<200$.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be km.\n\n$$0.112d\\le 56$$\n\n$$d\\le 500$$\n\n500 km is the exact cutoff.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → False\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be marked price.\n\n$$0.8p\\le 48$$\n\n$$p\\le 60$$\n\nShe can afford up to 60 EUR marked.\n\n55 understates the true ceiling.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $d$ be km.\n\n$$15+1.5d\\le 90$$\n\n$$d\\le 50$$\n\n$$[0,45]\\subset[0,50]$$\n\n45 km is safely inside the limit.\n\nThe solved result agrees with the claim, so the statement is True."
+    "**A.** → True\n\nResolve the expression on the negative and nonnegative half-lines.\n\n$$x<0:\\quad |x|+x=-x+x=0<2$$\n\n$$x\\ge0:\\quad |x|+x=2x<2\\iff x<1$$\n\n$$x<1$$\n\nThe two branches join without a gap at zero. Therefore the statement is True.",
+    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $g$ be the number of guest passes.\n\n$$40 + 6g \\le 70$$\n\n$$6g \\le 30$$\n\n$$g \\le 5$$\n\nThe greatest whole number of guest passes is 5.\n\nThe claim matches the solution.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**C.** → True\n\nCombine the fractions before making a sign chart.\n\n$$\\frac1{x-1}+\\frac1{x+1}=\\frac{2x}{x^2-1}$$\n\n$$-1,\\ 0,\\ 1\\ \\text{are the critical points}$$\n\n$$\\frac{2x}{x^2-1}>0\\iff x\\in(-1,0)\\cup(1,\\infty)$$\n\nStrictness excludes the numerator zero, and both poles are excluded. Therefore the statement is True.",
+    "**D.** → True\n\nThe trinomial is a perfect square.\n\n$$4x^2-12x+9=(2x-3)^2$$\n\n$$(2x-3)^2\\ge0$$\n\nThe expression reaches zero but never becomes negative. Therefore the statement is True.",
+    "**E.** → True\n\nSplit according to the sign of $x$.\n\n$$x\\ge0:\\quad |x|-x=0$$\n\n$$x<0:\\quad |x|-x=-2x\\ge2\\iff x\\le-1$$\n\n$$x\\in(-\\infty,-1]$$\n\nOnly the negative branch contributes. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 103,
-   "solution_overview": "Sufficiency claims, plan comparison, fuel range, discount ceiling, courier timing.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests one-sided cancellation in a modulus sum; B tests a contextual inequality with all practical constraints; C tests sum of two reciprocals; D tests strict inequality for a double-root quadratic; E tests one-sided modulus difference. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-104",
    "case_id": "MATH 6.104",
-   "title": "Exam-style inequalities — set D",
+   "title": "Exam-style tasks — 16",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A medicine fridge must stay between 2 °C and 8 °C inclusive. A technician logs $T = 8.5$ °C and, because $|8.5 - 5| = 3.5 \\le 4$, reports that the fridge is not in violation of the required range. That report is correct.",
-    "Pool chlorine must stay between 1.0 and 3.0 mg/L inclusive. Starting from that worded band alone, the absolute-value inequality that describes exactly the acceptable readings $C$ is $|C - 2| \\le 1$.",
-    "A museum archive must keep relative humidity between 42% and 48% inclusive to protect the paper collection. Facilities installed a cheap corridor sensor that stays quiet whenever $|H - 45| \\le 5$ and sounds an alert otherwise. After a week with no alerts, a technician concludes that the archive humidity has automatically stayed inside the 42%–48% conservation band the whole time. That conclusion is justified.",
-    "A courier may accept a parcel only when both conditions hold at once: mass $m$ at most 20 kg, and girth-plus-length $g$ at most 300 cm. A parcel with $m = 18$ kg and $g = 310$ cm is accepted under that rule.",
-    "A light sensor’s calibrated output is $\\sqrt{x + 3}$, where $x$ is the lux offset above a fixed baseline. Regulations require that output to be at least 2. A technician claims that every offset $x \\ge 0$ already meets the regulation."
+    "A backpack may carry at most 4 kg and at most 20 litres. Each book weighs 0.5 kg and takes 3 litres. The greatest number of books that satisfy both limits is 8.",
+    "The inequality $\\left(\\dfrac{x-1}{x+1}\\right)^2<1$ has solution set $(0,\\infty)$.",
+    "The inequality $-x^2+x+6<0$ has solution set $(-\\infty,-2)\\cup(3,\\infty)$.",
+    "The radical inequality $\\sqrt{x+1}<3$ has solution set $[-1,8)$.",
+    "Ferry tickets cost 18 EUR for adults and 9 EUR for children. A family has 72 EUR and buys 2 adult tickets. They can still buy 5 child tickets without exceeding the budget."
    ],
    "answer_key": [
     false,
     true,
-    false,
-    false,
+    true,
+    true,
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $T$ be the logged temperature in °C. Here $T = 8.5$.\n\nRequired range:\n\n$$2 \\le T \\le 8$$\n\nTechnician’s test:\n\n$$|T - 5| \\le 4$$\n\nWhich rewrites as $1 \\le T \\le 9$.\n\nCheck the log against the requirement:\n\n$$8.5 > 8$$\n\nSo $T = 8.5$ is already outside $[2, 8]$.\n\nSeparately, the technician’s test holds:\n\n$$|8.5 - 5| = 3.5 \\le 4$$\n\nSo $T = 8.5$ sits inside $[1, 9]$.\n\nPassing a wider absolute-value check does not clear the narrower fridge rule. At 8.5 °C the fridge is in violation, regardless of the $|T - 5| \\le 4$ calculation.\n\nThe report is incorrect, so the statement is false. (The absolute-value form that matches $[2, 8]$ exactly is $|T - 5| \\le 3$.)\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $C$ be the chlorine reading in mg/L.\n\nWorded band:\n\n$$1 \\le C \\le 3$$\n\nCentre of the band: midpoint $\\dfrac{1 + 3}{2} = 2$.\n\nHalf-width:\n\n$$\\dfrac{3 - 1}{2} = 1$$\n\nSo the same band is $|C - 2| \\le 1$.\n\nExpand the absolute-value form:\n\n$$-1 \\le C - 2 \\le 1$$\n\n$$1 \\le C \\le 3$$\n\nThe two descriptions are identical.\n\nThe derived absolute-value inequality matches the worded specification exactly (including the endpoints).\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $H$ be relative humidity in percent.\n\nConservation band:\n\n$$42 \\le H \\le 48$$\n\nQuiet-sensor condition:\n\n$$|H - 45| \\le 5$$\n\n$$-5 \\le H - 45 \\le 5$$\n\n$$40 \\le H \\le 50$$\n\nQuiet-sensor set:\n\n$$[40, 50]$$\n\nConservation set:\n\n$$[42, 48]$$\n\nThe quiet set is strictly larger. Every reading in $[42, 48]$ keeps the sensor quiet, but the converse fails: readings such as $H = 41$ or $H = 49$ also keep the sensor quiet while lying outside the conservation band.\n\nIn interval language, $[42, 48] \\subset [40, 50]$, so “inside the wider set” does not force “inside the tighter set”.\n\nA week of silence only proves that humidity stayed inside $[40, 50]$. It does not prove that humidity never drifted into the danger strips $40 \\le H < 42$ or $48 < H \\le 50$. The technician’s implication runs the wrong way.\n\nThe conclusion is not justified, so the statement is false. A sensor matched to the archive would need $|H - 45| \\le 3$, which is exactly $[42, 48]$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $m$ be mass in kilograms and $g$ be girth-plus-length in centimetres.\n\nGiven values:\n\n$$m = 18$$\n\n$g = 310$.\n\nBoth must hold:\n\n$$m \\le 20$$\n\nAlso, $g \\le 300$.\n\nMass:\n\n$$18 \\le 20$$\n\nSatisfied.\n\nGirth-plus-length:\n\n$$310 \\le 300$$\n\nFailed.\n\nThe compound condition is false because one conjunct fails.\n\nA light parcel can still be rejected if it is too long/girthy. Both inequalities are required.\n\nThe parcel is not acceptable, so the statement is false.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nA square-root inequality must first respect its domain, and then it may be squared on non-negative sides.\n\nLet $x$ be the lux offset. Domain of the expression:\n\n$$x + 3 \\ge 0$$\n\nSo $x \\ge -3$.\n\nRegulation:\n\n$$\\sqrt{x + 3} \\ge 2$$\n\nSquare both sides (valid because both sides are non-negative when the inequality can hold):\n\n$$x + 3 \\ge 4$$\n\n$$x \\ge 1$$\n\nIntersect with the domain $x \\ge -3$: the solution remains $x \\ge 1$.\n\nOffsets between 0 and 1 are non-negative but still too dim: for example $x = 0$ gives $\\sqrt{3} < 2$. The technician’s claimed set $x \\ge 0$ is larger than the true solution $x \\ge 1$.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → False\n\nThe number of books must satisfy both the mass and volume limits.\n\nLet $n$ be the number of books.\n\n$$0.5n \\le 4$$\n\nAlso, $3n \\le 20$.\n\nWeight:\n\n$$n \\le 8$$\n\nVolume:\n\n$$n \\le \\dfrac{20}{3} \\approx 6.67$$\n\nBinding limit:\n\n$$n \\le 6$$\n\nVolume binds first, so the maximum is 6, not 8.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**B.** → True\n\nCompare the absolute values after taking the square root of two nonnegative quantities.\n\n$$\\left|\\frac{x-1}{x+1}\\right|<1$$\n\n$$|x-1|<|x+1|$$\n\n$$(x-1)^2<(x+1)^2$$\n\n$$x>0$$\n\nThe pole $x=-1$ is already outside the solution half-line. Therefore the statement is True.",
+    "**C.** → True\n\nFactor after reversing the sign of the inequality.\n\n$$-x^2+x+6<0\\iff x^2-x-6>0$$\n\n$$(x-3)(x+2)>0$$\n\n$$x<-2\\quad\\text{or}\\quad x>3$$\n\nStrictness leaves both roots open. Therefore the statement is True.",
+    "**D.** → True\n\nCombine the radical domain with the squared upper bound.\n\n$$x+1\\ge0\\iff x\\ge-1$$\n\n$$\\sqrt{x+1}<3\\iff x+1<9\\iff x<8$$\n\n$$x\\in[-1,8)$$\n\nThe domain endpoint is included, while the threshold endpoint is not. Therefore the statement is True.",
+    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $c$ be the number of child tickets.\n\n$$2 \\cdot 18 + 9c \\le 72$$\n\n$$36 + 9c \\le 72$$\n\n$$9c \\le 36$$\n\n$$c \\le 4$$\n\nAt most 4 child tickets remain affordable.\n\n5 children would make the total 81 EUR.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 104,
-   "solution_overview": "Decision logs, deriving an absolute-value model, a sensor alert that is wider than the spec, a two-variable courier rule, and a calibrated square-root reading threshold.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests square of a Möbius expression; C tests downward quadratic negative outside; D tests bounded principal square root; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-105",
    "case_id": "MATH 6.105",
-   "title": "Exam-style inequalities — set E",
+   "title": "Exam-style tasks — 17",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A parcel may weigh at most 5 kg. The box is 1.2 kg and each item is 0.4 kg. Packing 10 items is still allowed.",
-    "Concert tickets cost 28 EUR each plus a one-time 12 EUR fee. With 160 EUR, a club can buy tickets for at most 5 people.",
-    "A bakery has 25 kg of flour and each loaf needs 0.4 kg. It is possible to bake 60 loaves from this stock.",
-    "A 2:1 paint mix (white 3 EUR/L, colour 9 EUR/L) costs at most 50 EUR whenever total blend volume is at most 12 litres.",
-    "A drone can fly at most 40 minutes and uses 0.8 min per kilometre. Any one-way delivery of 55 km can be completed on one charge."
+    "The rational inequality $\\dfrac{(x-4)(x+1)}{(x-2)(x+3)}\\le0$ has solution set $(-3,-1]\\cup(2,4]$.",
+    "The inequality $-2x^2+8x-6\\ge0$ has solution set $[1,3]$.",
+    "The inequality $\\left|\\dfrac1{x-1}\\right|>1$ has solution set $(0,1)\\cup(1,2)$.",
+    "A courier has 75 minutes including a fixed 10-minute warehouse stop and drives at 2 minutes per kilometre. Every delivery of at most 35 km can be finished on time.",
+    "The inequality $\\dfrac{x^2-4}{x^2-9}\\ge0$ has solution set $(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$."
    ],
    "answer_key": [
-    false,
     true,
     true,
+    true,
     false,
-    false
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be items.\n\n$$1.2+0.4n\\le 5$$\n\n$$n\\le 9.5$$\n\nMax whole $n=9$.\n\n10 items weigh 5.2 kg.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n\\ge 1$ be people.\n\n$$28n+12\\le 160$$\n\n$$n\\le 5.286$$\n\nMax whole $n=5$.\n\n5 costs 152 EUR; 6 costs 180 EUR.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be loaves.\n\n$$0.4n\\le 25$$\n\n$$n\\le 62.5$$\n\n60 $\\le$ 62.5, so allowed.\n\n60 loaves use 24 kg.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $V$ be litres of blend.\n\nCost:\n\n$$5V\\le 50$$\n\n$$V\\le 10$$\n\nAt $V=12$, cost is 60 EUR.\n\nOnly up to $10 L$ stay within 50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be one-way km.\n\n$$0.8d\\le 40$$\n\n$$d\\le 50$$\n\n55 km needs 44 minutes.\n\nBeyond battery life.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nZeros and poles partition the line; poles are never included.\n\n$$-3\\ (\\text{pole}),\\ -1\\ (\\text{zero}),\\ 2\\ (\\text{pole}),\\ 4\\ (\\text{zero})$$\n\n$$\\operatorname{sgn}=+,-,+,-,+$$\n\n$$x\\in(-3,-1]\\cup(2,4]$$\n\nThe nonpositive intervals include numerator zeros and exclude denominator zeros. Therefore the statement is True.",
+    "**B.** → True\n\nFactor after dividing by a negative number and reverse the sign.\n\n$$-2x^2+8x-6\\ge0$$\n\n$$x^2-4x+3\\le0$$\n\n$$(x-1)(x-3)\\le0$$\n\n$$1\\le x\\le3$$\n\nBoth roots are included. Therefore the statement is True.",
+    "**C.** → True\n\nRewrite the reciprocal modulus as a positive distance condition.\n\n$$x\\ne1,\\qquad \\frac1{|x-1|}>1$$\n\n$$0<|x-1|<1$$\n\n$$x\\in(0,1)\\cup(1,2)$$\n\nThe center is excluded because the reciprocal is undefined. Therefore the statement is True.",
+    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be delivery distance in kilometres.\n\n$$10 + 2d \\le 75$$\n\n$$2d \\le 65$$\n\n$$d \\le 32.5$$\n\nDistances above 32.5 km miss the deadline, so 35 km is not always feasible.\n\n35 km needs 80 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**E.** → True\n\nFactor both quadratics and order all four critical points.\n\n$$\\frac{(x-2)(x+2)}{(x-3)(x+3)}\\ge0$$\n\n$$-3,\\ -2,\\ 2,\\ 3$$\n\n$$x\\in(-\\infty,-3)\\cup[-2,2]\\cup(3,\\infty)$$\n\nNumerator zeros are included; denominator zeros are not. Therefore the statement is True."
    ],
-   "difficulty_level": "3/5",
+   "difficulty_level": "5/5",
    "sort_order": 105,
-   "solution_overview": "Packing, tickets, bakery, paint mix, drone range.",
+   "solution_overview": "Topics: 6.1, 6.2, 6.3, 6.4, 6.1. Map: A tests four-critical-point rational sign chart; B tests closed interval under a downward parabola; C tests reciprocal absolute-value neighborhood; D tests a contextual inequality with all practical constraints; E tests even quadratic over even quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-106",
    "case_id": "MATH 6.106",
-   "title": "Exam-style inequalities — set F",
+   "title": "Exam-style tasks — 18",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A 180 km train trip must finish in at most 2.5 hours. Any constant average speed of at least 70 km/h is fast enough.",
-    "Jordan earns 12 EUR/h for the first 40 hours and 18 EUR/h thereafter. Working 46 hours yields at least 600 EUR.",
-    "A student owes 1,200 EUR interest-free and pays 150 EUR each month. The loan is fully paid after at most 8 monthly payments.",
-    "A parking garage has 2.10 m clearance. A car 1.70 m tall with a 0.35 m roof box can enter.",
-    "If $p(x)=-2x^{2}+24x-10$, then the solution set of $p(x)>50$ is exactly the closed interval $[4,8]$."
+    "The inequality $x(x-1)>2$ has solution set $(-\\infty,-1)\\cup(2,\\infty)$.",
+    "The inequality $|3x-2|\\le|x+4|$ has solution set $\\left[-\\dfrac12,3\\right]$.",
+    "A café mixes beans that cost 8 EUR/kg with beans that cost 14 EUR/kg. They use equal masses of each type. They claim that any batch of at least 6 kg of the blend (half and half) will have a total ingredient cost of at most 60 EUR. That claim is false.",
+    "The inequality $\\dfrac{x+1}{x^2+1}\\ge0$ has solution set $[-1,\\infty)$.",
+    "The inequality $-x^2+2x-5<0$ holds for every real $x$."
    ],
    "answer_key": [
-    false,
-    false,
     true,
     true,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $v>0$ be km/h.\n\n$$\\dfrac{180}{v}\\le 2.5$$\n\n$$v\\ge 72$$\n\nAt $v=70$, time ≈ $2.57 h > 2.5$.\n\nNeed at least 72 km/h.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nPiecewise pay adds regular earnings to the overtime rate applied only beyond 40 hours.\n\nAt 46 hours, Jordan has 40 regular hours and 6 overtime hours:\n\n$$40\\cdot 12=480$$\n\n$$(46-40)\\cdot 18=108$$\n\nThe total pay is\n\n$$480+108=588$$\n\nComparing with the claimed minimum,\n\n$$588<600$$\n\nso 46 hours do not earn at least 600 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be payments.\n\n$$150n\\ge 1200$$\n\n$$n\\ge 8$$\n\nExactly 8 payments clear the debt.\n\n8 is necessary and sufficient.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nTotal height $h=2.05$.\n\n$$2.05\\le 2.10$$\n\n5 cm spare.\n\nEntry allowed.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $x$ be real.\n\n$$x^{2}-12x+30<0$$\n\nRoots $6\\pm\\sqrt{6}$; solution $(6-\\sqrt{6},\\,6+\\sqrt{6})$, open.\n\nNot the closed interval $[4,8]$.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nMove the threshold into the quadratic and factor.\n\n$$x^2-x-2>0$$\n\n$$(x+1)(x-2)>0$$\n\n$$x<-1\\quad\\text{or}\\quad x>2$$\n\nAn upward-opening quadratic is positive outside its roots. Therefore the statement is True.",
+    "**B.** → True\n\nBoth sides are nonnegative, so compare their squares.\n\n$$(3x-2)^2\\le(x+4)^2$$\n\n$$2x^2-5x-3\\le0$$\n\n$$(2x+1)(x-3)\\le0$$\n\n$$-\\frac12\\le x\\le3$$\n\nBoth equality points are included. Therefore the statement is True.",
+    "**C.** → True\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $M$ be the total mass of the blend in kilograms ($M > 0$).\n\nCost:\n\n$$\\dfrac{M}{2}\\cdot 8 + \\dfrac{M}{2}\\cdot 14 = 4M + 7M = 11M$$\n\n“At most 60 EUR” means $11M \\le 60$, so $M \\le \\dfrac{60}{11} \\approx 5.45$.\n\nBatches of at least 6 kg have $M \\ge 6 > 5.45$, so their cost is at least $11 \\cdot 6 = 66 > 60$ EUR.\n\nLarger batches cost more, not less. The café’s claim reverses the inequality direction.\n\nThe café claim is wrong, so our statement is true.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**D.** → True\n\nThe quadratic denominator is strictly positive for every real input.\n\n$$x^2+1>0$$\n\n$$\\frac{x+1}{x^2+1}\\ge0\\iff x+1\\ge0$$\n\n$$x\\ge-1$$\n\nThe numerator zero is included. Therefore the statement is True.",
+    "**E.** → True\n\nComplete the square in a form that is visibly negative.\n\n$$-x^2+2x-5=-(x-1)^2-4$$\n\n$$-(x-1)^2-4\\le-4<0$$\n\nThe expression never reaches zero. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 106,
-   "solution_overview": "Train speed, overtime, loan payoff, parking, quadratic profit solution set.",
+   "solution_overview": "Topics: 6.2, 6.3, 6.4, 6.1, 6.2. Map: A tests quadratic produced by a product threshold; B tests comparison of two absolute distances; C tests a contextual inequality with all practical constraints; D tests linear numerator over an always-positive quadratic; E tests globally negative quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-107",
    "case_id": "MATH 6.107",
-   "title": "Exam-style inequalities — set G",
+   "title": "Exam-style tasks — 19",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "A gardener fences three sides of a rectangular bed against a wall with 40 m of fencing. For area at least 96 $m^{2}$, every width from 4 m to 18 m inclusive is possible.",
-    "A rectangular courtyard uses at most 96 m of fencing, keeps a 5:2 length-to-width ratio, and needs area at least 160 $m^{2}$. Every shorter-side length from 8 m to 12 m inclusive is feasible.",
-    "A square plot uses at most 40 m of fencing and must have area at least 81 $m^{2}$. Every side length from 9 m to 12 m inclusive is feasible.",
-    "A rectangular pen uses at most 60 m of fencing with sides in ratio 2:1 and needs area at least 72 $m^{2}$. The shorter side can be any length from 6 m to 15 m inclusive.",
-    "A greenhouse uses at most 120 m of fencing, keeps a 5:3 length-to-width ratio, and needs area at least 375 $m^{2}$. The shorter side can be any length from 5 m to 15 m inclusive."
+    "The nested inequality $\\bigl||x|-3\\bigr|<1$ has solution set $(-4,-2)\\cup(2,4)$.",
+    "Ana has already burned 900 kcal and burns 8 kcal per minute of jogging. Three hours of jogging are enough to reach a weekly total of at least 2500 kcal.",
+    "The inequality $\\dfrac{x+3}{(x-1)^2(x-4)}\\ge0$ has solution set $(-\\infty,-3]\\cup(4,\\infty)$.",
+    "The inequality $(2x-1)(x+3)\\le0$ has solution set $\\left[-3,\\dfrac12\\right]$.",
+    "The inequality $|x^2-4|\\le3$ has solution set $[-\\sqrt7,-1]\\cup[1,\\sqrt7]$."
    ],
    "answer_key": [
-    false,
     true,
     false,
-    false,
-    false
+    true,
+    true,
+    true
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w$ be width; $L=40-2w$.\n\n$$w(40-2w)\\ge 96$$\n\n$$w^{2}-20w+48\\le 0$$\n\n$$(w-4)(w-16)\\le 0$$\n\n$$4\\le w\\le 16$$\n\nWidth 18 m gives area 72 < 96.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nWidth $w$, length $5w/2$.\n\n$$7w\\le 96$$\n\nAlso, $\\tfrac{5}{2}w^{2}\\ge 160$.\n\n$$8 \\le w \\le \\dfrac{96}{7} \\approx 13.71$$\n\nWhich contains $[8,12]$.\n\nAll claimed widths are feasible.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $s$ be side length.\n\n$$4s\\le 40$$\n\nAlso, $s^{2}\\ge 81$.\n\n$$9\\le s\\le 10$$\n\nSide 12 m needs 48 m of fence.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nSides $w$ and $2w$.\n\n$$6w\\le 60$$\n\nAlso, $2w^{2}\\ge 72$.\n\n$$6\\le w\\le 10$$\n\n15 m exceeds fencing.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nWidth $w$, length $5w/3$.\n\n$$\\tfrac{16w}{3}\\le 120$$\n\nAlso, $\\tfrac{5}{3}w^{2}\\ge 375$.\n\n$$15\\le w\\le 22.5$$\n\nWidth 5 m fails area badly.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nUnfold the outer modulus before resolving the inner one.\n\n$$\\bigl||x|-3\\bigr|<1\\iff -1<|x|-3<1$$\n\n$$2<|x|<4$$\n\n$$x\\in(-4,-2)\\cup(2,4)$$\n\nAll four boundary points are excluded. Therefore the statement is True.",
+    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be jogging minutes.\n\n$$900+8m\\ge 2500$$\n\n$$m\\ge 200$$\n\nAt $m=180$: total 2340 < 2500.\n\nNeed 200 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
+    "**C.** → True\n\nThe repeated pole at $x=1$ does not change sign; the remaining linear factors control the chart.\n\n$$(x-1)^2>0\\quad(x\\ne1)$$\n\n$$\\frac{x+3}{x-4}\\ge0$$\n\n$$x\\in(-\\infty,-3]\\cup(4,\\infty)$$\n\nThe repeated pole lies in a rejected interval, while $x=4$ is always excluded. Therefore the statement is True.",
+    "**D.** → True\n\nThe two simple roots bound the nonpositive region.\n\n$$x=-3,\\qquad x=\\frac12$$\n\n$$(2x-1)(x+3)\\le0\\iff -3\\le x\\le\\frac12$$\n\nNon-strictness includes both roots. Therefore the statement is True.",
+    "**E.** → True\n\nUnfold the absolute value into a double inequality in $x^2$.\n\n$$-3\\le x^2-4\\le3$$\n\n$$1\\le x^2\\le7$$\n\n$$1\\le|x|\\le\\sqrt7$$\n\n$$x\\in[-\\sqrt7,-1]\\cup[1,\\sqrt7]$$\n\nAll four boundaries are included. Therefore the statement is True."
    ],
-   "difficulty_level": "4/5",
+   "difficulty_level": "5/5",
    "sort_order": 107,
-   "solution_overview": "Fence-and-area geometry with changing ratios and a square plot.",
+   "solution_overview": "Topics: 6.3, 6.4, 6.1, 6.2, 6.3. Map: A tests nested absolute-value band; B tests a contextual inequality with all practical constraints; C tests rational inequality with a repeated pole; D tests unequal linear factors; E tests absolute value of a quadratic. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   },
   {
    "id": "math-6-108",
    "case_id": "MATH 6.108",
-   "title": "Exam-style inequalities — set H",
+   "title": "Exam-style tasks — 20",
    "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
+   "context": "Evaluate each independent statement. Mark it TRUE or FALSE. Every letter is a self-contained mini-problem.",
    "statements": [
-    "The inequality $x^{2}-9x+14\\le 0$ has solution set $[2,7]$.",
-    "The inequality $|x-3|\\le 5$ has solution set $[-2,8]$.",
-    "The inequality $|2x+1|>5$ has solution set $x<-3$ or $x>2$.",
-    "The inequality $\\dfrac{x-2}{x+1}\\le 0$ has solution set $-1<x\\le 2$.",
-    "If producing x units costs $90+0.6x$ EUR, then 150 whole units are the fewest that make average cost strictly less than 1.20 EUR."
+    "Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR.",
+    "The inequality $\\dfrac{x^3-x}{x^2-1}\\ge0$ has solution set $[0,1)\\cup(1,\\infty)$.",
+    "The inequality $x^2+6x+8\\ge0$ has solution set $(-\\infty,-4]\\cup[-2,\\infty)$.",
+    "The inequality $|x+2|\\le x+4$ has solution set $[-3,\\infty)$.",
+    "A 180 km train trip must finish in at most 2.5 hours. Any constant average speed of at least 70 km/h is fast enough."
    ],
    "answer_key": [
     true,
@@ -3415,335 +3415,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFactor the expression and use the signs on the intervals determined by its zeros.\n\nLet $x$ be real.\n\n$$(x-2)(x-7)\\le 0$$\n\nClosed interval between roots:\n\n$$[2,7]$$\n\nThis matches the claimed set.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\nLet $x$ be real.\n\n$$-5\\le x-3\\le 5$$\n\n$$-2\\le x\\le 8$$\n\nThis matches the claimed set.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\nLet $x$ be real.\n\n$$2x+1>5$$\n\nOr $2x+1<-5$.\n\n$$x>2$$\n\nOr $x<-3$.\n\nThis matches the claimed set.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nA rational expression can change sign only at a numerator zero or an excluded denominator zero.\n\nFor\n\n$$\\frac{x-2}{x+1}\\le 0$$\n\nthe numerator is zero at\n\n$$x=2$$\n\nand the denominator is zero at the excluded value\n\n$$x=-1$$\n\nThe signs are\n\n| Interval | Sign |\n| --- | --- |\n| $(-\\infty,-1)$ | $+$ |\n| $(-1,2)$ | $-$ |\n| $(2,\\infty)$ | $+$ |\n\nKeep the negative interval, include the numerator zero, and exclude the denominator zero:\n\n$$-1<x\\le 2$$\n\nThis is exactly the claimed solution set.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\nLet $x$ be whole units.\n\n$$\\dfrac{90+0.6x}{x}<1.20$$\n\n$$x>150$$\n\nFirst whole is 151; at 150 average equals 1.20.\n\nStrict inequality excludes 150.\n\nThe solved result does not agree with the claim, so the statement is False."
+    "**A.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $F$ be meter fare.\n\n$$\\dfrac{F+4}{4}\\le 9$$\n\n$$F\\le 32$$\n\nEquivalent inequality.\n\nImplication holds.\n\nThe solved result agrees with the claim, so the statement is True.",
+    "**B.** → True\n\nCancel the common quadratic factor but retain both original holes.\n\n$$x\\ne\\pm1,\\qquad \\frac{x(x-1)(x+1)}{(x-1)(x+1)}=x$$\n\n$$x\\ge0$$\n\n$$x\\in[0,1)\\cup(1,\\infty)$$\n\nThe negative hole is outside the half-line; the positive hole splits it. Therefore the statement is True.",
+    "**C.** → True\n\nFactor the upward-opening quadratic and keep the outer regions.\n\n$$x^2+6x+8=(x+4)(x+2)$$\n\n$$(x+4)(x+2)\\ge0$$\n\n$$x\\le-4\\quad\\text{or}\\quad x\\ge-2$$\n\nBoth roots are included. Therefore the statement is True.",
+    "**D.** → True\n\nThe right side must be nonnegative before the two sides may be squared.\n\n$$x+4\\ge0$$\n\n$$(x+2)^2\\le(x+4)^2$$\n\n$$4x+12\\ge0$$\n\n$$x\\ge-3$$\n\nThis final half-line automatically satisfies the sign requirement. Therefore the statement is True.",
+    "**E.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $v>0$ be km/h.\n\n$$\\dfrac{180}{v}\\le 2.5$$\n\n$$v\\ge 72$$\n\nAt $v=70$, time ≈ $2.57 h > 2.5$.\n\nNeed at least 72 km/h.\n\nThe solved result does not agree with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 108,
-   "solution_overview": "Mostly algebraic solution-set claims plus one average-cost boundary trap.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-109",
-   "case_id": "MATH 6.109",
-   "title": "Exam-style inequalities — set I",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Ana has already burned 900 kcal and burns 8 kcal per minute of jogging. Three hours of jogging are enough to reach a weekly total of at least 2500 kcal.",
-    "A phone battery at 20% charges at 2 percentage points per minute. Charging for 25 minutes is enough to reach at least 80%.",
-    "An empty ${480 L}$ tank fills at ${12 L/min}$. After 30 minutes of filling from empty, the tank is still not more than half full.",
-    "An exam is 40% Part A and 60% Part B. With 70% on Part A, scoring at least 80% on Part B is enough for an overall grade of at least 85%.",
-    "Four friends share a taxi with meter fare F EUR plus a 4 EUR booking fee. If each person pays at most 9 EUR, then the meter fare F must have been at most 32 EUR."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be jogging minutes.\n\n$$900+8m\\ge 2500$$\n\n$$m\\ge 200$$\n\nAt $m=180$: total 2340 < 2500.\n\nNeed 200 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $t$ be minutes.\n\n$$20+2t\\ge 80$$\n\n$$t\\ge 30$$\n\nAt $t=25$: level 70%.\n\nNeed 30 minutes.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $t=30$.\n\n$$12\\cdot 30=360>240$$\n\nTank is three-quarters full.\n\nClaim is wrong.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nA weighted grade is the sum of each score multiplied by its course weight.\n\nLet $b$ be Part B %.\n\n$$28+0.6b\\ge 85$$\n\n$$b\\ge 95$$\n\nAt $b=80$: overall 76%.\n\nNeed 95% on B.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $F$ be meter fare.\n\n$$\\dfrac{F+4}{4}\\le 9$$\n\n$$F\\le 32$$\n\nEquivalent inequality.\n\nImplication holds.\n\nThe solved result agrees with the claim, so the statement is True."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 109,
-   "solution_overview": "Fitness, charging, tank filling, exam weighting, taxi fare implication.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-110",
-   "case_id": "MATH 6.110",
-   "title": "Exam-style inequalities — set J",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Each product uses 2 of A, 3 of B, and 1 of C at 30, 20, and 40 EUR, plus 8 EUR finishing. Budget 10,000 EUR and storage at most 200 raw units. The maximum number of products is less than 30.",
-    "A bridge limit is 12 tonnes. Each fully loaded truck weighs 4.3 tonnes. Three fully loaded trucks can be on the bridge at once.",
-    "A café mixes equal masses of 8 EUR/kg and 14 EUR/kg beans. Any batch of at least 6 kg of this blend costs at most 60 EUR.",
-    "A mobile plan costs 12 EUR plus 0.08 EUR per over-allowance megabyte. After 200 MB overage already used, using at most 150 more MB keeps the bill at or under 40 EUR.",
-    "A gardener has 80 m of fencing for a 4:1 rectangular plot and needs area at least 64 $m^{2}$. The shorter side can be any length from 4 m to 20 m inclusive."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be products.\n\n$$6n\\le 200$$\n\nAlso, $168n\\le 10000$.\n\nStorage binds:\n\n$$n\\le 33$$\n\nMax is 33, not < 30.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be trucks.\n\n$$4.3n\\le 12$$\n\n$$n\\le 2.79$$\n\nMax $n=2$; three weigh 12.9 tonnes.\n\nNot allowed.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nUse the fixed mixture ratio to write the material cost as a rate per unit of total mixture.\n\nLet $M$ be total kg.\n\nCost:\n\n$$11M\\le 60$$\n\n$$M\\le 5.45$$\n\n$$M=6$$\n\nThis costs 66 EUR.\n\nLarger batches cost more.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be additional MB.\n\n$$12+0.08(200+m)\\le 40$$\n\n$$m\\le 150$$\n\nBound matches the claim.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nSides $w$ and $4w$.\n\n$$10w\\le 80$$\n\nAlso, $4w^{2}\\ge 64$.\n\n$$4\\le w\\le 8$$\n\n20 m needs 200 m of fence.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 110,
-   "solution_overview": "Factory, bridge, coffee blend, mobile overage, 4:1 fencing.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-111",
-   "case_id": "MATH 6.111",
-   "title": "Exam-style inequalities — set K",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "If producing x units costs $200+0.5x$ EUR, then at least 45 whole units must be made for average cost to fall below 5 EUR.",
-    "If $h(t)=-5t^{2}+40t+8$, then the object is more than 83 m above ground between 3 and 5 seconds.",
-    "Each finished good uses 4 of A and 3 of B at 25 and 40 EUR, plus 10 EUR finishing. Budget 9,000 EUR and storage $\\le$ 180 raw units. The maximum output is less than 25.",
-    "If $f(x)=-x^{2}+10x+4$, then $f(x)>20$ between 1 and 9, endpoints included.",
-    "The inequality $|x+4|\\ge 3$ has solution set $x\\le -7$ or $x\\ge -1$."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nAverage cost is total cost divided by the positive number of units.\n\nLet $x$ be whole units.\n\n$$\\dfrac{200+0.5x}{x}<5$$\n\n$$x>44.44$$\n\nSmallest whole $x=45$.\n\n44 still averages above 5.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → True\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $t$ be seconds.\n\n$$h(t)>83$$\n\n$$(t-3)(t-5)<0$$\n\n$$3<t<5$$\n\nOpen interval matches.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be output.\n\n$$7n\\le 180$$\n\nAlso, $230n\\le 9000$.\n\n$$n\\le 25$$\n\nFrom storage ($7\\cdot 25=175$).\n\nMaximum is 25, not less than 25.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $x$ be real.\n\n$$(x-2)(x-8)<0$$\n\n$$2<x<8$$\n\nOpen $(2,8)$; endpoints 1 and 9 fail.\n\nNot $[1,9]$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\nLet $x$ be real.\n\n$$x+4\\ge 3$$\n\nOr $x+4\\le -3$.\n\n$$x\\ge -1$$\n\nOr $x\\le -7$.\n\nThis matches the claimed set.\n\nThe solved result agrees with the claim, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 111,
-   "solution_overview": "Average cost, projectile window, two-resource factory, quadratic open interval, abs inequality.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-112",
-   "case_id": "MATH 6.112",
-   "title": "Exam-style inequalities — set L",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A streaming service costs 9 EUR per month plus 0.03 EUR per downloaded track. With a 15 EUR budget, a user can download at most 250 tracks.",
-    "A gym membership is 40 EUR per month and each guest pass costs 6 EUR. With 70 EUR this month, at most 5 guest passes can be bought.",
-    "A printer cartridge costs 22 EUR and premium paper is 0.05 EUR per sheet. With 30 EUR total, printing 200 premium sheets including one cartridge is affordable.",
-    "A rideshare charges 2.50 EUR pickup plus 0.90 EUR per kilometre. With 20 EUR, any trip of at most 22 km stays within budget.",
-    "A cafeteria card starts with 25 EUR and lunch costs 3.20 EUR each day. The card lasts for at least 8 full lunch days."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of downloaded tracks.\n\n$$9 + 0.03n \\le 15$$\n\n$$0.03n \\le 6$$\n\n$$n \\le 200$$\n\nAt most 200 tracks fit the budget, not 250.\n\n250 tracks would cost 16.50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $g$ be the number of guest passes.\n\n$$40 + 6g \\le 70$$\n\n$$6g \\le 30$$\n\n$$g \\le 5$$\n\nThe greatest whole number of guest passes is 5.\n\nThe claim matches the solution.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $s$ be the number of premium sheets.\n\n$$22 + 0.05s \\le 30$$\n\n$$0.05s \\le 8$$\n\n$$s \\le 160$$\n\nAt most 160 sheets fit; 200 sheets overshoot.\n\n200 sheets cost 32 EUR in total.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the trip distance in kilometres.\n\n$$2.50 + 0.90d \\le 20$$\n\n$$0.90d \\le 17.50$$\n\n$$d \\le \\dfrac{17.50}{0.90} \\approx 19.44$$\n\nTrips longer than about 19.44 km exceed the budget, so 22 km does not always work.\n\n22 km costs 22.30 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of full lunch days.\n\n$$3.20n \\le 25$$\n\n$$n \\le \\dfrac{25}{3.20} = 7.8125$$\n\nLargest whole $n$: 7.\n\nOnly 7 full lunches fit; 8 would overspend.\n\nEight lunches cost 25.60 EUR.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 112,
-   "solution_overview": "Everyday budgets: streaming downloads, gym guests, printer paper, rideshare distance, cafeteria lunches.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-113",
-   "case_id": "MATH 6.113",
-   "title": "Exam-style inequalities — set M",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Home heating costs 55 EUR fixed plus 0.12 EUR per kWh. With a 100 EUR energy budget, at most 400 kWh can be used.",
-    "A bike-share charges 1 EUR to unlock plus 0.15 EUR per minute. With 10 EUR, a ride of 65 minutes stays within budget.",
-    "A full ${480 L}$ tank drains at ${8 L}$ per minute. After 50 minutes of draining from full, at least one quarter of the water remains.",
-    "Shipper A charges 12 EUR plus 0.80 EUR per kg; shipper B charges 20 EUR plus 0.40 EUR per kg. For a 25 kg parcel, A is strictly cheaper than B.",
-    "Pat earns 11 EUR per hour up to 40 hours and 16.50 EUR per hour thereafter. Working 43 hours yields at least 500 EUR."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $k$ be the number of kilowatt-hours.\n\n$$55 + 0.12k \\le 100$$\n\n$$0.12k \\le 45$$\n\n$$k \\le 375$$\n\nAt most 375 kWh are affordable, not 400.\n\n400 kWh would cost 103 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $t$ be the ride time in minutes.\n\n$$1 + 0.15t \\le 10$$\n\n$$0.15t \\le 9$$\n\n$$t \\le 60$$\n\nAt most 60 minutes fit the budget.\n\n65 minutes cost 10.75 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $t = 50$ be the draining time in minutes.\n\nVolume left:\n\n$$480 - 8t$$\n\nNeed:\n\n$$480 - 8t \\ge 120$$\n\nAt $t = 50$: volume $= 480 - 400 = 80$.\n\n$$80 < 120$$\n\nOnly $80 L$ remain, which is less than one quarter.\n\nA quarter remains only while $t \\le 45$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $w = 25$ be the parcel mass in kilograms.\n\nA $= 12 + 0.80w$. B $= 20 + 0.40w$.\n\nA $= 12 + 20 = 32$.\n\nB $= 20 + 10 = 30$.\n\n$$32 > 30$$\n\nB is cheaper at 25 kg. Crossing point:\n\n$$12 + 0.80w = 20 + 0.40w$$\n\n$$w = 20$$\n\nA is cheaper only when $w < 20$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nPiecewise pay adds regular earnings to the overtime rate applied only beyond the threshold.\n\nLet $h = 43$ be hours worked.\n\nPay:\n\n$$11 \\cdot 40 + 16.50 \\cdot (h - 40)$$\n\nFor:\n\n$$h > 40$$\n\nPay:\n\n$$440 + 16.50 \\cdot 3 = 440 + 49.50 = 489.50$$\n\n$$489.50 < 500$$\n\n43 hours fall short of 500 EUR.\n\nNeed at least 44 hours (506 EUR).\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 113,
-   "solution_overview": "Energy use, bike-share minutes, draining tank, shipping comparison, and overtime pay.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-114",
-   "case_id": "MATH 6.114",
-   "title": "Exam-style inequalities — set N",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "If $f(x)=-5x^{2}+30x+10$, then the object is at least 40 m above the ground for every t in $[1,5]$, endpoints included.",
-    "If producing x units costs $120+0.25x$ EUR, then 80 whole units are enough to bring average cost strictly below 1.70 EUR.",
-    "The inequality $|3x-6|\\le 9$ has solution set $[-1,5]$.",
-    "The compound inequality $4<3x+1\\le 13$ has solution set $1<x\\le 4$.",
-    "Each product uses 5 units of A, 1 of B, and 2 of C priced at 10, 80, and 15 EUR, plus 20 EUR finishing. Budget 8,000 EUR and storage capacity at most 240 resource units. The maximum number of products is less than 50."
-   ],
-   "answer_key": [
-    false,
-    false,
-    true,
-    true,
-    true
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $t$ be time in seconds.\n\n$$-5t^{2}+30t+10 \\ge 40$$\n\n$$-5t^{2}+30t-30 \\ge 0$$\n\n$$t^{2}-6t+6 \\le 0$$\n\nRoots $3 \\pm \\sqrt{3} \\approx 1.27, 4.73$.\n\nSolution:\n\n$$3-\\sqrt{3} \\le t \\le 3+\\sqrt{3}$$\n\nThe true window is roughly $[1.27, 4.73]$, narrower than $[1,5]$.\n\n$$f(1) = f(5) = 35 < 40$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nAverage cost is total cost divided by the positive number of units.\n\nLet $x$ be the number of whole units produced.\n\n$$\\dfrac{120 + 0.25x}{x} < 1.70$$\n\n$$\\dfrac{120}{x} + 0.25 < 1.70$$\n\n$$\\dfrac{120}{x} < 1.45$$\n\n$$x > \\dfrac{120}{1.45} \\approx 82.76$$\n\nNeed:\n\n$$x \\ge 83$$\n\nEighty units give average cost $1.75$, still too high.\n\nNeed at least 83 whole units.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nSplit an absolute-value inequality into the corresponding one-sided cases.\n\nLet $x$ be a real number.\n\n$$-9 \\le 3x - 6 \\le 9$$\n\n$$-3 \\le 3x \\le 15$$\n\n$$-1 \\le x \\le 5$$\n\nThe solution set is exactly $[-1,5]$.\n\nThe claim matches.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → True\n\nApply the same algebraic operation to all three parts of the compound inequality.\n\nLet $x$ be a real number.\n\n$$4 < 3x + 1$$\n\nAlso, $3x + 1 \\le 13$.\n\n$$3 < 3x$$\n\n$$x > 1$$\n\n$$3x \\le 12$$\n\n$$x \\le 4$$\n\nIntersection:\n\n$$1 < x \\le 4$$\n\nThe claim matches.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → True\n\nThe number produced must satisfy both the storage limit and the budget limit.\n\nLet $n$ be the number of products.\n\n$$8n \\le 240$$\n\nAlso, $180n \\le 8000$.\n\nStorage:\n\n$$n \\le 30$$\n\nBudget:\n\n$$n \\le \\dfrac{8000}{180} \\approx 44.4$$\n\nBinding limit:\n\n$$n \\le 30$$\n\nMaximum is 30, which is less than 50.\n\n$$30 < 50$$\n\nThe solved result agrees with the claim, so the statement is True."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 114,
-   "solution_overview": "Quadratic height window, average-cost threshold, absolute-value interval, compound inequality, and storage-bound production.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-115",
-   "case_id": "MATH 6.115",
-   "title": "Exam-style inequalities — set O",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Street parking costs 1.50 EUR for the first hour and 0.80 EUR for each extra hour. With 5 EUR, at most 6 hours of parking are possible.",
-    "A library fine is 0.40 EUR per day late. With a 6 EUR limit before a block, a book can be at most 15 days late.",
-    "Ferry tickets cost 18 EUR for adults and 9 EUR for children. A family has 72 EUR and buys 2 adult tickets. They can still buy at most 5 child tickets.",
-    "An ice-cream stand sells scoops at 1.80 EUR each. With a 10 EUR note and buying only scoops, at most 5 scoops can be bought.",
-    "Laundry machines cost 3.50 EUR per cycle. With 20 EUR on a laundry card, at most 6 cycles can be run."
-   ],
-   "answer_key": [
-    false,
-    true,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h \\ge 1$ be the number of whole hours parked.\n\nFor $h \\ge 1$:\n\n$$1.50 + 0.80(h - 1) \\le 5$$\n\n$$0.80(h - 1) \\le 3.50$$\n\n$$h - 1 \\le 4.375$$\n\n$$h \\le 5.375$$\n\nLargest whole $h$: 5.\n\nAt most 5 whole hours fit; 6 hours overspend.\n\n6 hours cost 5.50 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be the number of days late.\n\n$$0.40d \\le 6$$\n\n$$d \\le 15$$\n\nThe greatest whole number of late days is 15.\n\nThe claim matches.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $c$ be the number of child tickets.\n\n$$2 \\cdot 18 + 9c \\le 72$$\n\n$$36 + 9c \\le 72$$\n\n$$9c \\le 36$$\n\n$$c \\le 4$$\n\nAt most 4 child tickets remain affordable.\n\n5 children would make the total 81 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nTranslate the stated limit into an inequality and solve it on the stated domain.\n\nLet $n$ be the number of scoops.\n\n$$1.80n \\le 10$$\n\n$$n \\le \\dfrac{10}{1.80} \\approx 5.56$$\n\nLargest whole $n$: 5.\n\nFive scoops fit; six do not.\n\nThe claim matches.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of cycles.\n\n$$3.50n \\le 20$$\n\n$$n \\le \\dfrac{20}{3.50} \\approx 5.71$$\n\nLargest whole $n$: 5.\n\nOnly 5 cycles fit; 6 cycles overspend.\n\n6 cycles cost 21 EUR.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 115,
-   "solution_overview": "Parking hours, library fines, ferry tickets, ice-cream scoops, and laundry cycles.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-116",
-   "case_id": "MATH 6.116",
-   "title": "Exam-style inequalities — set P",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "The inequality $x^{2}-x-6>0$ has solution set $x<-2$ or $x>3$.",
-    "The inequality $|x-1|+|x+1|\\le 4$ has solution set $[-2,2]$.",
-    "The inequality $\\dfrac{2x-1}{x-3}\\ge 0$ has solution set $\\dfrac{1}{2}\\le x<3$.",
-    "If $g(x)=-x^{2}+6x-5$, then $g(x)\\ge 0$ exactly on the open interval $(1,5)$.",
-    "A rectangular pen uses at most 100 m of fencing, keeps a 2:1 length-to-width ratio, and needs area at least 200 $m^{2}$. Every shorter-side length from 8 m to 16 m inclusive is possible."
-   ],
-   "answer_key": [
-    true,
-    true,
-    false,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → True\n\nFactor the expression and use the signs on the intervals determined by its zeros.\n\nLet $x$ be a real number.\n\n$$(x - 3)(x + 2) > 0$$\n\nCritical points $x = -2$ and $x = 3$.\n\nPositive outside:\n\n$$x < -2$$\n\nOr $x > 3$.\n\nThe solution set matches the claim.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**B.** → True\n\nSplit the absolute values at their breakpoints $x=-1$ and $x=1$.\n\nFor $x\\le -1$,\n\n$$|x-1|+|x+1|=-2x$$\n\n$$-2x\\le 4$$\n\n$$x\\ge -2$$\n\nThis contributes $[-2,-1]$. For $-1\\le x\\le 1$,\n\n$$|x-1|+|x+1|=2\\le 4$$\n\nso the whole middle interval works. For $x\\ge 1$,\n\n$$|x-1|+|x+1|=2x$$\n\n$$2x\\le 4$$\n\n$$x\\le 2$$\n\nThis contributes $[1,2]$. Their union is\n\n$$[-2,2]$$\n\nwhich matches the claimed set.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**C.** → False\n\nA rational expression can change sign only at a numerator zero or an excluded denominator zero.\n\nFor\n\n$$\\frac{2x-1}{x-3}\\ge 0$$\n\nthe numerator is zero at\n\n$$x=\\frac{1}{2}$$\n\nand the denominator is zero at the excluded value\n\n$$x=3$$\n\nThe signs are\n\n| Interval | Sign |\n| --- | --- |\n| $(-\\infty,\\frac{1}{2})$ | $+$ |\n| $(\\frac{1}{2},3)$ | $-$ |\n| $(3,\\infty)$ | $+$ |\n\nKeep the positive intervals, include the numerator zero, and exclude the denominator zero:\n\n$$\\left(-\\infty,\\frac{1}{2}\\right]\\cup(3,\\infty)$$\n\nThe claim instead gives $\\left[\\frac{1}{2},3\\right)$, which includes negative values of the expression and misses both positive intervals.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $x$ be a real number.\n\n$$-x^{2}+6x-5 \\ge 0$$\n\n$$x^{2}-6x+5 \\le 0$$\n\n$$(x-1)(x-5) \\le 0$$\n\nSolution:\n\n$$1 \\le x \\le 5$$\n\nEndpoints are included because $g(1) = g(5) = 0$.\n\nThe correct set is the closed interval $[1,5]$.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nThe dimensions must satisfy both the fencing bound and the area bound.\n\nLet $w > 0$ be the shorter side; longer side $2w$.\n\nFencing:\n\n$$2(2w + w) \\le 100$$\n\nArea:\n\n$$2w^{2} \\ge 200$$\n\n$$6w \\le 100$$\n\n$$w \\le \\dfrac{50}{3} \\approx 16.67$$\n\n$$w^{2} \\ge 100$$\n\n$$w \\ge 10$$\n\nTrue range:\n\n$$10 \\le w \\le \\dfrac{50}{3}$$\n\n$$w = 8$$\n\nThis fails the area requirement even though fencing would allow it.\n\nThe lower end must be 10 m, not 8 m.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "5/5",
-   "sort_order": 116,
-   "solution_overview": "Algebraic solution sets: quadratic, two-absolute-value sum, rational inequality, open quadratic window, and a 2:1 fencing claim.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-117",
-   "case_id": "MATH 6.117",
-   "title": "Exam-style inequalities — set Q",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "Sam earns 15 EUR per hour plus a 40 EUR bonus whenever more than 20 hours are worked. Working 22 hours is enough to earn at least 400 EUR.",
-    "Plan A costs 8 EUR plus 0.12 EUR per message; Plan B costs 15 EUR plus 0.04 EUR per message. For 100 messages, Plan A is cheaper than Plan B.",
-    "A car uses ${0.08 L}$ per km and fuel costs 1.50 EUR per litre. With 48 EUR for fuel, any trip of 400 km or less stays within budget.",
-    "A shop offers 25% off. With 60 EUR, Priya can afford any item whose marked price is at most 85 EUR.",
-    "A courier has 75 minutes including a fixed 10-minute warehouse stop and drives at 2 minutes per kilometre. Every delivery of at most 35 km can be finished on time."
-   ],
-   "answer_key": [
-    false,
-    false,
-    true,
-    false,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $h = 22$.\n\nPay:\n\n$$15h + 40$$\n\nWhen:\n\n$$h > 20$$\n\nPay:\n\n$$15 \\cdot 22 + 40 = 330 + 40 = 370$$\n\n$$370 < 400$$\n\n22 hours yield only 370 EUR.\n\nNeed:\n\n$$15h + 40 \\ge 400$$\n\n$$h \\ge 24$$\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nCompare the two linear cost rules at the same usage.\n\nLet $m = 100$ be the number of messages.\n\nA $= 8 + 0.12m$. B $= 15 + 0.04m$.\n\nA $= 8 + 12 = 20$.\n\nB $= 15 + 4 = 19$.\n\n$$20 > 19$$\n\nPlan B is cheaper at 100 messages. Break-even at $m = 87.5$.\n\nA is cheaper only for fewer than 87.5 messages.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → True\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be distance in kilometres.\n\nCost:\n\n$$0.08 \\cdot 1.50 \\cdot d = 0.12d$$\n\nNeed:\n\n$$0.12d \\le 48$$\n\n$$d \\le 400$$\n\nExactly 400 km uses the full 48 EUR, so every shorter trip fits.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**D.** → False\n\nAfter a percentage discount, the amount paid is the remaining percentage of the marked price.\n\nLet $p$ be the marked price in EUR.\n\nPay:\n\n$$0.75p \\le 60$$\n\n$$p \\le 80$$\n\nMarked prices above 80 EUR overshoot after discount.\n\nAt $p = 85$: pay $0.75 \\cdot 85 = 63.75 > 60$.\n\nThe true ceiling is 80 EUR, not 85 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**E.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $d$ be delivery distance in kilometres.\n\n$$10 + 2d \\le 75$$\n\n$$2d \\le 65$$\n\n$$d \\le 32.5$$\n\nDistances above 32.5 km miss the deadline, so 35 km is not always feasible.\n\n35 km needs 80 minutes.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "3/5",
-   "sort_order": 117,
-   "solution_overview": "Sufficiency and comparison claims: wages with bonus, phone plans, fuel range, sale discount, and delivery timing.",
-   "placeholder": false
-  },
-  {
-   "id": "math-6-118",
-   "case_id": "MATH 6.118",
-   "title": "Exam-style inequalities — set R",
-   "subsection": "6.5",
-   "context": "Evaluate each statement. Mark it TRUE or FALSE.",
-   "statements": [
-    "A water bill is 12 EUR fixed plus 1.80 EUR per cubic metre. With 30 EUR, a household can use at most 12 $m^{3}$.",
-    "Cinema tickets cost 9 EUR each. With 50 EUR, a group can buy at most 6 tickets.",
-    "A backpack may carry at most 4 kg and at most 20 litres. Each book weighs 0.5 kg and takes 3 litres. The greatest number of books that satisfy both limits is 8.",
-    "A vaccine fridge must stay between 2 °C and 6 °C inclusive. The condition $|T-4|\\le 2$ describes exactly that temperature band.",
-    "If $p(x)=-x^{2}+10x-9$, then the solution set of $p(x)>12$ is exactly the closed interval $[3,7]$."
-   ],
-   "answer_key": [
-    false,
-    false,
-    false,
-    true,
-    false
-   ],
-   "tactical_explanations": [
-    "**A.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $m$ be cubic metres used.\n\n$$12 + 1.80m \\le 30$$\n\n$$1.80m \\le 18$$\n\n$$m \\le 10$$\n\nAt most 10 m$^{3}$ fit the budget, not 12.\n\n12 m$^{3}$ would cost 33.60 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**B.** → False\n\nA fixed amount plus a constant per-unit rate gives a linear inequality.\n\nLet $n$ be the number of tickets.\n\n$$9n \\le 50$$\n\n$$n \\le \\dfrac{50}{9} \\approx 5.56$$\n\nLargest whole $n$: 5.\n\nOnly 5 tickets fit; 6 tickets overspend.\n\n6 tickets cost 54 EUR.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**C.** → False\n\nThe number of books must satisfy both the mass and volume limits.\n\nLet $n$ be the number of books.\n\n$$0.5n \\le 4$$\n\nAlso, $3n \\le 20$.\n\nWeight:\n\n$$n \\le 8$$\n\nVolume:\n\n$$n \\le \\dfrac{20}{3} \\approx 6.67$$\n\nBinding limit:\n\n$$n \\le 6$$\n\nVolume binds first, so the maximum is 6, not 8.\n\nThe solved result does not agree with the claim, so the statement is False.",
-    "**D.** → True\n\nAn absolute-value bound describes distance from the center of an interval.\n\nLet $T$ be the temperature in °C.\n\n$$|T - 4| \\le 2$$\n\n$$-2 \\le T - 4 \\le 2$$\n\n$$2 \\le T \\le 6$$\n\nThe absolute-value condition matches the required band exactly.\n\nThe solved result agrees with the claim, so the statement is True.",
-    "**E.** → False\n\nMove the height threshold to one side, factor or find the roots, and use the quadratic sign.\n\nLet $x$ be a real number.\n\n$$-x^{2}+10x-9 > 12$$\n\n$$-x^{2}+10x-21 > 0$$\n\n$$x^{2}-10x+21 < 0$$\n\n$$(x-3)(x-7) < 0$$\n\nSolution:\n\n$$3 < x < 7$$\n\nEndpoints give $p(3) = p(7) = 12$, which is not strictly greater than 12.\n\nThe correct set is the open interval $(3,7)$.\n\nThe solved result does not agree with the claim, so the statement is False."
-   ],
-   "difficulty_level": "4/5",
-   "sort_order": 118,
-   "solution_overview": "Utility bills, cinema tickets, backpack constraints, temperature band, and quadratic profit window.",
+   "solution_overview": "Topics: 6.4, 6.1, 6.2, 6.3, 6.4. Map: A tests a contextual inequality with all practical constraints; B tests two removable holes after cubic cancellation; C tests nonnegative quadratic outside two negative roots; D tests modulus bounded by an affine function; E tests a contextual inequality with all practical constraints. Each letter is solved independently; no result is shared across statements.",
    "placeholder": false
   }
  ]
