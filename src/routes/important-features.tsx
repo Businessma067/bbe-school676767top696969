@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
-import MockBuilderSimulator from "@/components/MockBuilderSimulator";
 import { SiteHeader } from "@/components/SiteHeader";
 
 
