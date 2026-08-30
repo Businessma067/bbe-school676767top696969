@@ -32,13 +32,13 @@ export function practiceInlineAiButtonClass(active: boolean) {
   );
 }
 
-/** Passage locate / highlight helper — text only. */
+/** Passage locate / highlight helper — high-visibility primary chip. */
 export function practiceInlineLocateButtonClass(active: boolean) {
   return cn(
-    "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-[11px] font-semibold transition-colors",
+    "inline-flex items-center justify-center rounded-md border px-3 py-1.5 text-xs font-bold transition-colors",
     active
-      ? "border-foreground/30 bg-foreground text-background"
-      : "border-border bg-background text-foreground hover:bg-secondary",
+      ? "border-primary bg-primary text-primary-foreground shadow-sm"
+      : "border-primary/50 bg-primary/15 text-primary hover:bg-primary/25",
   );
 }
 

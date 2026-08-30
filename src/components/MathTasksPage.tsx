@@ -4,9 +4,11 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeCalculatorInline, PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
+import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
+import { useTimedSession } from "@/lib/timed-practice";
 import { cn } from "@/lib/utils";
 import {
   practiceExplanationToggleClass,
@@ -133,6 +135,7 @@ export function MathTasksPage({ tier }: Props) {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [customResetOpen, setCustomResetOpen] = useState(false);
   const [showExplanations, setShowExplanations] = useState(false);
+  const timed = useTimedSession();
   const setPracticeCase = useSetPracticeCase();
 
   useEffect(() => {
@@ -164,6 +167,18 @@ export function MathTasksPage({ tier }: Props) {
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+
+  useEffect(() => {
+    if (!timed.enabled) return;
+    const unlocked =
+      activeCase &&
+      !activeCase.placeholder &&
+      !isLocked(tier, activeChapter, activeIdx, activeList);
+    timed.openQuestion(unlocked ? activeCase.id : null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timed.enabled, activeCase?.id, activeIdx, activeChapter, tier]);
+
+  const activeTimer = timed.get(activeCase?.id);
 
   useEffect(() => {
     if (typeof activeChapter !== "number") return;
@@ -583,6 +598,9 @@ export function MathTasksPage({ tier }: Props) {
                                                   Task {localI + 1}
                                                   {locked && " · Locked"}
                                                 </span>
+                                                {!locked && !c.placeholder && (
+                                                  <TimerStatusDot entry={timed.state[c.id]} />
+                                                )}
                                                 {!locked &&
                                                   !c.placeholder &&
                                                   c.difficulty_level !== "—" && (
@@ -657,6 +675,9 @@ export function MathTasksPage({ tier }: Props) {
                                         Task {i + 1}
                                         {locked && " · Locked"}
                                       </span>
+                                      {!locked && !c.placeholder && (
+                                        <TimerStatusDot entry={timed.state[c.id]} />
+                                      )}
                                       {!locked && !c.placeholder && c.difficulty_level !== "—" && (
                                         <DifficultyBars level={c.difficulty_level} />
                                       )}
@@ -796,7 +817,6 @@ export function MathTasksPage({ tier }: Props) {
                     <span className="hidden sm:inline">Theory</span>
                   </button>
                 )}
-                <PracticeCalculatorInline />
               </div>
             </div>
           )}
@@ -808,6 +828,13 @@ export function MathTasksPage({ tier }: Props) {
                 : "No tasks here yet. Content will be added soon."}
             </div>
           )}
+
+          {activeCase &&
+            !activeCase.placeholder &&
+            !isLocked(tier, activeChapter, activeIdx, activeList) &&
+            theoryChapter === null && (
+              <TimedModeBar session={timed} showCalculator />
+            )}
 
           <div key={activeCase?.id ?? "empty-task"} className="practice-panel-enter">
             {activeCase && isLocked(tier, activeChapter, activeIdx, activeList) ? (
@@ -836,7 +863,14 @@ export function MathTasksPage({ tier }: Props) {
                 onShowExplanations={() => setShowExplanations(true)}
                 onToggleExplanations={() => setShowExplanations((v) => !v)}
                 requireAuth={requireAuthForAnswers}
+                reviewOnly={!!activeTimer?.reviewOnly}
+                timerNote={
+                  activeTimer?.timedOut && activeTimer.status !== "submitted"
+                    ? "Failed on time"
+                    : null
+                }
                 onGraded={(result) => {
+                  if (timed.enabled) timed.markSubmitted(activeCase.id);
                   setProgress((prev) => {
                     const next: Progress = {
                       passed: prev.passed.filter((x) => x !== activeCase.id),
@@ -956,6 +990,13 @@ export function MathTasksPage({ tier }: Props) {
 
       {tier === "demo" && (
         <AuthModal open={authGate.authOpen} onOpenChange={authGate.setAuthOpen} />
+      )}
+
+      {timed.enabled && activeCase && activeTimer?.awaitingChoice && (
+        <TimeoutModal
+          onOvertime={() => timed.chooseOvertime(activeCase.id)}
+          onReview={() => timed.chooseReview(activeCase.id)}
+        />
       )}
     </div>
     </PracticeCalcProvider>
@@ -1734,6 +1775,8 @@ function MathTaskCard({
   onGraded,
   onResetProgress,
   requireAuth,
+  reviewOnly = false,
+  timerNote = null,
 }: {
   task: MathTask;
   index: number;
@@ -1750,6 +1793,8 @@ function MathTaskCard({
   }) => void;
   onResetProgress: () => void;
   requireAuth?: () => boolean;
+  reviewOnly?: boolean;
+  timerNote?: string | null;
 }) {
   const [answers, setAnswers] = useState<(boolean | null)[]>(() =>
     task.statements.map(() => null),
@@ -1760,6 +1805,13 @@ function MathTaskCard({
     setAnswers(task.statements.map(() => null));
     setChecked(false);
   }, [task.id, task.statements]);
+
+  useEffect(() => {
+    if (!reviewOnly) return;
+    setChecked(true);
+    onShowExplanations();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [reviewOnly, task.id]);
 
   const setAt = (i: number, v: boolean) => {
     if (requireAuth && !requireAuth()) return;
@@ -1809,6 +1861,11 @@ function MathTaskCard({
         {alreadyPassed && (
           <span className="rounded-md bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">
             Passed
+          </span>
+        )}
+        {timerNote && (
+          <span className="rounded-md bg-destructive/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-destructive">
+            {timerNote}
           </span>
         )}
         {inRevision && (
@@ -1915,7 +1972,11 @@ function MathTaskCard({
 
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-2">
-          {!checked ? (
+          {reviewOnly ? (
+            <span className="text-xs font-semibold text-muted-foreground">
+              Review only — the countdown ran out on this task.
+            </span>
+          ) : !checked ? (
             <button
               type="button"
               onClick={handleSubmit}
@@ -1942,7 +2003,7 @@ function MathTaskCard({
             </button>
           )}
         </div>
-        {checked && (
+        {checked && !reviewOnly && (
           <span className="text-sm font-semibold text-muted-foreground">
             {correctCount}/{task.answer_key.length} correct
           </span>
