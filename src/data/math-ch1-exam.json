@@ -13,13 +13,7 @@
         "On $D=\\{1,2,3,4,5\\}$, every $x$ has some $y$ in $D$ such that $x+y=6$.",
         "A museum catalog uses a set $C$ of five distinct codes. Its power set has $31$ members."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
+      "answer_key": [true, true, true, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied, so the statement is True.",
         "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim, so the statement is True.",
@@ -45,13 +39,7 @@
         "Eight delegates form a set $D$. A committee must include Ava and omit Ben and Chen; exactly $32$ committees meet those rules.",
         "For subsets $A$ and $B$ of a fixed universe, $(A\\cup B)^c=A^c\\cap B^c$."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [false, false, false, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D|=52+41-18=75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel, so the statement is False.",
         "**B.** → False\n\nOne truth assignment is enough to disprove a proposed logical equivalence.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q=F\\rightarrow T=T$$\n\n$$q\\rightarrow p=T\\rightarrow F=F$$\n\nThe original implication and its converse disagree, so the statement is False.",
@@ -77,13 +65,7 @@
         "Finite sets with $|A|=18$, $|B|=14$, and $|A\\cap B|=5$ have a symmetric difference of size $23$.",
         "The formula $((p\\rightarrow q)\\wedge p)\\rightarrow q$ is a tautology."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law, so the statement is True.",
         "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness, so the statement is True.",
@@ -109,13 +91,7 @@
         "No valuation can make at least one of $p,q$ true while also making both $p$ and $q$ false.",
         "The negation of $\\forall x\\ \\exists y\\ R(x,y)$ is $\\exists x\\ \\forall y\\ \\neg R(x,y)$."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        true,
-        true
-      ],
+      "answer_key": [false, true, true, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness, so the statement is False.",
         "**B.** → True\n\nApply the power-set cardinality rule once at each level.\n\n$$|X|=3$$\n\n$$|\\mathcal P(X)|=2^3=8$$\n\n$$|\\mathcal P(\\mathcal P(X))|=2^8=256$$\n\nThe second power set has the claimed size, so the statement is True.",
@@ -141,13 +117,7 @@
         "Every novelist is observant, and no observant person is careless. It follows validly that no novelist is careless.",
         "For $E=\\{\\emptyset,\\{\\emptyset\\}\\}$, the empty set is both an element of $E$ and a subset of $E$."
       ],
-      "answer_key": [
-        false,
-        false,
-        true,
-        true,
-        true
-      ],
+      "answer_key": [false, false, true, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions, so the statement is False.",
         "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants, so the statement is False.",
@@ -173,13 +143,7 @@
         "Whenever finite sets satisfy $A\\subsetneq B\\subsetneq C$, $|A|=2$, and $|C|=5$, the middle set must have four elements.",
         "In three overlapping mailing lists, the pairwise intersection sizes are $15$, $13$, and $11$, and the triple intersection has size $5$. Exactly $24$ names occur in exactly two lists."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct, so the statement is True.",
         "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q)=(T,T)\\Longrightarrow p\\wedge q=T$$\n\n$$(p,q)=(F,F)\\Longrightarrow\\neg p\\wedge\\neg q=T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows, so the statement is True.",
@@ -205,13 +169,7 @@
         "For $A=\\{1\\}$, $B=\\{2\\}$, and $C=\\{3\\}$, the equality $A\\cup(B\\cap C)=(A\\cup B)\\cap C$ holds.",
         "The expression $p\\vee(q\\wedge r)$ is logically equivalent to $(p\\vee q)\\wedge r$."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [false, false, false, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nCompare the formulas on an assignment where the antecedent holds and the consequent fails.\n\n$$(p,q)=(T,F)$$\n\n$$p\\rightarrow q=T\\rightarrow F=F$$\n\n$$\\neg p\\rightarrow\\neg q=F\\rightarrow T=T$$\n\nThe inverse can differ from the original implication, so the statement is False.",
         "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$, so the statement is False.",
@@ -237,13 +195,7 @@
         "Among the eight assignments for $p,q,r$, exactly one falsifies $p\\rightarrow(q\\vee r)$.",
         "For arbitrary predicates, $\\forall x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\forall x\\,P(x))\\vee(\\forall x\\,Q(x))$."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [true, false, false, true, false],
       "tactical_explanations": [
         "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence, so the statement is True.",
         "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked.\n\n$$n^2=16\\Longleftrightarrow n\\in\\{-4,4\\}$$\n\n$$A=\\{-4,4\\}$$\n\n$$4\\in A\\quad\\text{but}\\quad\\{4\\}\\notin A$$\n\nThe singleton $\\{4\\}$ is not one of the integer elements, so the statement is False.",
@@ -269,13 +221,7 @@
         "The formula $\\exists x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$.",
         "For a four-element ground set $G$, there are $81$ ordered pairs $(A,B)$ with $A\\subseteq B\\subseteq G$."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, true, false, true, true],
       "tactical_explanations": [
         "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$, so the statement is True.",
         "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$$\n\nThe proposed identity follows, so the statement is True.",
@@ -301,13 +247,7 @@
         "Take $S=\\{r,s\\}$. Both $\\{r\\}\\in\\mathcal P(S)$ and $r\\in\\mathcal P(S)$ are true.",
         "At an animal shelter, $28$ animals like dogs, $24$ like cats, and $11$ like both. Exactly $35$ like just one of the two."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
+      "answer_key": [true, true, true, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nSymmetric difference records unequal membership, so its complement records equal membership.\n\n$$A\\triangle B=(A\\cap B^c)\\cup(A^c\\cap B)$$\n\n$$x\\notin A\\triangle B\\Longleftrightarrow[x\\in A\\Longleftrightarrow x\\in B]$$\n\n$$(A\\triangle B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$$\n\nThe description matches the complement, so the statement is True.",
         "**B.** → True\n\nImplication elimination puts the original and contrapositive into the same disjunction.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg q\\rightarrow\\neg p\\equiv\\neg(\\neg q)\\vee\\neg p$$\n\n$$q\\vee\\neg p\\equiv\\neg p\\vee q$$\n\nThe two formulas are logically equivalent, so the statement is True.",
@@ -333,13 +273,7 @@
         "If $A$ and $B$ lie in a $15$-element universe with $|A|=12$ and $|B|=9$, then $A\\cap B$ has at least six elements.",
         "The formula $(p\\leftrightarrow q)\\leftrightarrow(\\neg p\\leftrightarrow\\neg q)$ is a tautology."
       ],
-      "answer_key": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
+      "answer_key": [true, true, true, true, true],
       "tactical_explanations": [
         "**A.** → True\n\nExpanding the implications exposes a proposition and its negation inside the disjunction.\n\n$$(p\\rightarrow q)\\vee(q\\rightarrow p)\\equiv(\\neg p\\vee q)\\vee(\\neg q\\vee p)$$\n\n$$\\equiv(\\neg p\\vee p)\\vee(q\\vee\\neg q)$$\n\n$$\\equiv T\\vee T\\equiv T$$\n\nThe disjunction is true on every row, so the statement is True.",
         "**B.** → True\n\nAn arbitrary snake inherits reptile status and then the stated exclusion.\n\n$$\\forall x\\,(S(x)\\rightarrow R(x))$$\n\n$$\\forall x\\,(R(x)\\rightarrow\\neg W(x))$$\n\n$$S(a)\\Longrightarrow R(a)\\Longrightarrow\\neg W(a)$$\n\nThe conclusion holds for every snake, so the statement is True.",
@@ -365,13 +299,7 @@
         "The conjunction $p\\wedge(p\\rightarrow q)\\wedge\\neg q$ is satisfiable.",
         "Over $D=\\{1,2,3\\}$, the statement $\\forall x\\,(x=1\\vee x>1)$ is false."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [false, true, false, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe premises control one artist witness but say nothing about all other artists.\n\n$$A(a)\\wedge B(a)$$\n\n$$\\forall x\\,(B(x)\\rightarrow C(x))\\Longrightarrow C(a)$$\n\n$$A(b)\\wedge\\neg B(b)\\wedge\\neg C(b)$$\n\nThe object $b$ gives a countermodel to the universal conclusion, so the statement is False.",
         "**B.** → True\n\nDistinct elements produce distinct singleton subsets, all living inside the first power set.\n\n$$|\\mathcal F|=|T|=5$$\n\n$$t\\in T\\Longrightarrow\\{t\\}\\in\\mathcal P(T)$$\n\n$$\\mathcal F\\subseteq\\mathcal P(T)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(T))$$\n\nBoth the size and the iterated membership are correct, so the statement is True.",
@@ -397,13 +325,7 @@
         "Every pilot is trained, and Dana is trained. These facts validly imply that Dana is a pilot.",
         "The set encoded by $\\{1,1,2,2,3,3\\}$ has six elements."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [true, true, false, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nSingleton membership in a power set recovers membership in the original set.\n\n$$x\\in A\\Longleftrightarrow\\{x\\}\\in\\mathcal P(A)$$\n\n$$\\mathcal P(A)=\\mathcal P(B)\\Longrightarrow\\{x\\}\\in\\mathcal P(A)\\Longleftrightarrow\\{x\\}\\in\\mathcal P(B)$$\n\n$$x\\in A\\Longleftrightarrow x\\in B$$\n\nThe two sets have exactly the same elements, so the statement is True.",
         "**B.** → True\n\nMembership in $A$ already guarantees membership in the larger union.\n\n$$x\\in A\\cap(A\\cup B)\\Longrightarrow x\\in A$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cup B$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cap(A\\cup B)$$\n\nThe two inclusions establish equality, so the statement is True.",
@@ -429,13 +351,7 @@
         "Among the subsets of a five-element set, exactly $16$ contain at least three elements.",
         "Let $U=\\{a,b,c,d,e,f,g,h\\}$, $A=\\{a,e\\}$, and $B=\\{a,b,c,d\\}$. Then $A^c\\cap B=\\{b,c,d\\}$."
       ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        true,
-        true
-      ],
+      "answer_key": [false, true, true, true, true],
       "tactical_explanations": [
         "**A.** → False\n\nThe four displayed Venn regions are disjoint and exhaust the universe.\n\n$$|U|=|A\\setminus B|+|B\\setminus A|+|A\\cap B|+|(A\\cup B)^c|$$\n\n$$|U|=12+9+7+4$$\n\n$$|U|=32\\ne33$$\n\nThe diagram contains $32$ objects, so the statement is False.",
         "**B.** → True\n\nExpand both implications and distribute the shared disjunct.\n\n$$p\\rightarrow(q\\wedge r)\\equiv\\neg p\\vee(q\\wedge r)$$\n\n$$\\neg p\\vee(q\\wedge r)\\equiv(\\neg p\\vee q)\\wedge(\\neg p\\vee r)$$\n\n$$(\\neg p\\vee q)\\wedge(\\neg p\\vee r)\\equiv(p\\rightarrow q)\\wedge(p\\rightarrow r)$$\n\nBoth sides have the same logical form, so the statement is True.",
@@ -461,13 +377,7 @@
         "An element belongs to $A\\triangle B\\triangle C$ exactly when it belongs to an odd number of the three sets.",
         "The exclusive-or formula $(p\\vee q)\\wedge\\neg(p\\wedge q)$ is equivalent to $\\neg(p\\leftrightarrow q)$."
       ],
-      "answer_key": [
-        true,
-        false,
-        false,
-        true,
-        true
-      ],
+      "answer_key": [true, false, false, true, true],
       "tactical_explanations": [
         "**A.** → True\n\nIf the antecedent holds, all three propositions share one truth value.\n\n$$p\\leftrightarrow q=T\\Longrightarrow p=q$$\n\n$$q\\leftrightarrow r=T\\Longrightarrow q=r$$\n\n$$p=q=r\\Longrightarrow p\\leftrightarrow r=T$$\n\nA true antecedent always forces a true consequent, so the statement is True.",
         "**B.** → False\n\nSeparate witnesses for the two predicates need not be one common witness.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$(\\exists x\\,P(x))\\wedge(\\exists x\\,Q(x))=T\\wedge T=T$$\n\n$$\\exists x\\,(P(x)\\wedge Q(x))=F$$\n\nThe right side can hold without the left side, so the statement is False.",
@@ -493,13 +403,7 @@
         "Moving the parentheses in the conditional chain from $p\\rightarrow(q\\rightarrow r)$ to $(p\\rightarrow q)\\rightarrow r$ never changes its value.",
         "On $D=\\{0,1,2\\}$, the sentence $\\exists x\\ \\forall y\\ (x\\le y)$ is true."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
+      "answer_key": [true, true, false, false, true],
       "tactical_explanations": [
         "**A.** → True\n\nPush the negation through the existential and then through the universal quantifier.\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\neg[\\forall y\\ R(x,y)]$$\n\n$$\\neg[\\forall y\\ R(x,y)]\\equiv\\exists y\\ \\neg R(x,y)$$\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\exists y\\ \\neg R(x,y)$$\n\nThe proposed quantifier pattern is correct, so the statement is True.",
         "**B.** → True\n\nBuild the two power sets one level at a time.\n\n$$\\mathcal P(\\emptyset)=\\{\\emptyset\\}$$\n\n$$\\mathcal P(\\mathcal P(\\emptyset))=\\mathcal P(\\{\\emptyset\\})$$\n\n$$\\mathcal P(\\{\\emptyset\\})=\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\nThe displayed roster is complete, so the statement is True.",
@@ -525,13 +429,7 @@
         "Inside the ordered domain $D=\\{0,1,2\\}$, choosing the maximum input never obstructs the demand for a strictly larger domain member.",
         "A fixed two-element subset of a seven-element set has exactly $30$ supersets inside that set."
       ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [false, true, false, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nOne proper subset can contain an element omitted by another candidate.\n\n$$S\\setminus\\{a\\}=\\{b,c\\}$$\n\n$$\\{a,b\\}\\subsetneq S$$\n\n$$a\\in\\{a,b\\}\\quad\\text{and}\\quad a\\notin\\{b,c\\}$$\n\nThe proper subset $\\{a,b\\}$ is not contained in $S\\setminus\\{a\\}$, so the statement is False.",
         "**B.** → True\n\nProper inclusion determines both basic operations and guarantees a leftover element.\n\n$$A\\subseteq B\\Longrightarrow A\\cup B=B$$\n\n$$A\\subseteq B\\Longrightarrow A\\cap B=A$$\n\n$$A\\ne B\\Longrightarrow B\\setminus A\\ne\\emptyset$$\n\nAll three consequences follow from $A\\subsetneq B$, so the statement is True.",
@@ -557,13 +455,7 @@
         "When $|S|=4$, exactly $14$ sets $A$ make the strict chain $\\emptyset\\subsetneq A\\subsetneq S$.",
         "In a $60$-element universe, $|A|=35$, $|B|=28$, and $|A\\cap B|=15$. Then $|A^c\\cup B|=43$."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        true,
-        false
-      ],
+      "answer_key": [false, false, false, true, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe part of $A$ outside $B$ is what remains after the intersection is removed.\n\n$$A=(A\\setminus B)\\mathbin{\\dot\\cup}(A\\cap B)$$\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=27-8=19\\ne17$$\n\nThe region $A\\setminus B$ has $19$ elements, so the statement is False.",
         "**B.** → False\n\nThe formula is true whenever at least two of the three propositions are true.\n\n$$\\#\\{\\text{exactly two true}\\}=\\binom{3}{2}=3$$\n\n$$\\#\\{\\text{all three true}\\}=\\binom{3}{3}=1$$\n\n$$3+1=4\\ne3$$\n\nFour assignments satisfy the majority formula, so the statement is False.",
@@ -589,13 +481,7 @@
         "A poll reports $50$ people in $A$, $45$ in $B$, and $20$ in both. Exactly $50$ respondents belong to one of the groups but not both.",
         "From premises $p\\vee q$ and $\\neg p\\vee r$, the conclusion $q\\wedge r$ follows validly."
       ],
-      "answer_key": [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [false, false, false, false, false],
       "tactical_explanations": [
         "**A.** → False\n\nThe displayed right side describes agreement, while the negation of a biconditional describes disagreement.\n\n$$(p,q)=(T,T)$$\n\n$$\\neg(p\\leftrightarrow q)=\\neg T=F$$\n\n$$(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)=T\\vee F=T$$\n\nThe two formulas already disagree on the all-true row, so the statement is False.",
         "**B.** → False\n\nA lowest-terms parity argument rules out a rational witness.\n\n$$x=\\frac{a}{b},\\quad\\gcd(a,b)=1,\\quad x^2=2\\Longrightarrow a^2=2b^2$$\n\n$$a^2\\text{ even}\\Longrightarrow a=2k\\Longrightarrow b^2=2k^2$$\n\n$$a\\text{ even and }b\\text{ even}\\Longrightarrow\\gcd(a,b)\\ne1$$\n\nNo rational witness can square to $2$, so the statement is False.",
@@ -621,13 +507,7 @@
         "An implication $p\\rightarrow q$ is true on exactly two of the four assignments for $p,q$.",
         "On every nonempty domain, $\\forall x\\ \\exists y\\ R(x,y)$ entails $\\exists y\\ \\forall x\\ R(x,y)$."
       ],
-      "answer_key": [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
+      "answer_key": [true, true, false, false, false],
       "tactical_explanations": [
         "**A.** → True\n\nCarry the witness from the first class through both universal implications.\n\n$$\\exists x\\,A(x)\\Longrightarrow A(a)$$\n\n$$A(a)\\rightarrow B(a)$$\n\n$$B(a)\\rightarrow C(a)\\Longrightarrow\\exists x\\,C(x)$$\n\nThe chained deduction produces a $C$ witness, so the statement is True.",
         "**B.** → True\n\nUnpack the outer subset relation and then follow elements of the union.\n\n$$A\\in\\mathcal A\\Longrightarrow A\\in\\mathcal P(S)\\Longrightarrow A\\subseteq S$$\n\n$$x\\in\\bigcup\\mathcal A\\Longrightarrow\\exists A\\in\\mathcal A\\;(x\\in A)$$\n\n$$x\\in A\\subseteq S\\Longrightarrow x\\in S$$\n\nEvery element collected by the union lies in $S$, so the statement is True.",
