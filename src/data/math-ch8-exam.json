@@ -7,11 +7,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a resin plant, block mass is modeled by $M(s)=5s^{3}$ for positive inputs. When the recorded input is $s=4$, the model returns exactly $320$ grams.",
-        "At a geometric printer, material use follows the power law $M(x)=Ax^{3}$ for positive $x$. Multiplying the input by $2$ therefore multiplies the modeled material use by exactly $6$.",
-        "At a tank, volume is modeled by $V=2h^{3}$ for $h>0$. To reach the target $V=250$, an analyst claims the required input is $h=5$.",
-        "At a packaging controller, a reading first passes through $g(x)=x^2$ and then through $f(u)=2u^{3/2}$. For the input $x=3$, the composed output $f(g(3))$ is exactly $36$.",
-        "At a panel maker, area follows $A=kr^{2}$ for a positive constant $k$. Changing the input by the factor $1.20$ causes the modeled area to increase by exactly $44\\%$."
+        "A resin kiln uses the calibration $M(s)=5s^{3}$ for block mass. The log entry at $s=4$ reports $320$ grams.",
+        "A polymer printer obeys the power law $M(s)=Ks^{3}$. Doubling the mold length is said to multiply material use by $9$.",
+        "A tank obeys $2h^{3}=250$ at its target fill. An operator proposes the positive depth $5$.",
+        "A packaging scanner squares a reading with $g(x)=x^2$ before applying $f(u)=2u^{3/2}$. For an entry of $3$, the controller is claimed to return $36$.",
+        "A sheet-metal shop has area law $A=kr^2$. Increasing every radius by $20\\%$ is claimed to increase area by $44\\%$."
       ],
       "answer_key": [
         true,
@@ -21,15 +21,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUse the recorded input in the power model.\n\n$$M(4)=5(4)^3$$\n\n$$M(4)=320$$\n\nThe evaluated output is $320$ grams, while the stem claims $320$ grams.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{M(2x)}{M(x)}=\\frac{A(2x)^{3}}{Ax^{3}}$$\n\n$$=(2)^{3}=8$$\n\nThe exact scale multiplier is $8$, compared with the claimed $6$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$2h^{3}=250$$\n\n$$h^{3}=125$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$h=125^{1/3}=5$$\n\nThe target requires $h=5$, whereas the analyst claims $h=5$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nApply the inner map before the outer map.\n\n$$g(3)=9$$\n\n$$f(g(3))=2(9)^{3/2}=54$$\n\nThe composition returns $54$, while the stated output is $36$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nConvert the input percentage change to a multiplier and apply the exponent.\n\n$$\\frac{A_{\\rm new}}{A_{\\rm old}}=(1.20)^{2}=1.44$$\n\n$$\\text{percentage change}=(1.44-1)100\\%=44\\%$$\n\nThe exact change is $44\\%$, compared with the claimed $44\\%$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$M(4)=5(4)^3$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$M(4)=5\\cdot64$$\n\nHence the model output is\n\n$$M(4)=320\\text{ grams}$$\n\nThe stem's value is $320\\text{ grams}$, so the numerical comparison is\n\n$$320=320$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{M(2s)}{M(s)}\n=\\frac{K(2s)^{3}}{Ks^{3}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{M(2s)}{M(s)}\n=(2)^{3}$$\n\nEvaluating that power gives\n\n$$(2)^{3}=8$$\n\nThe proposed multiplier is $9$, and therefore\n\n$$8\\ne9$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$2h^{3}=250$$\n\nDivide by the coefficient:\n\n$$h^{3}=125$$\n\nRaise both sides to the reciprocal exponent:\n\n$$h=(125)^{\\frac{1}{3}}=5$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$5=5$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(3)=3^2=9$$\n\nInsert that inner output into $f$:\n\n$$f(g(3))=2(9)^{3/2}$$\n\nComplete the power evaluation:\n\n$$2\\cdot27=54$$\n\nThe displayed claim is $36$, so\n\n$$54\\ne36$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{6}{5}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}\n=(\\dfrac{6}{5})^{2}=\\dfrac{36}{25}$$\n\nTranslate the output multiplier back to a percentage increase:\n\n$$\\left|\\dfrac{36}{25}-1\\right|\\cdot100\\%=44\\%$$\n\nThe direction follows from the multiplier being above $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}>1$$\n\nThe stem gives $44\\%$, so the decisive comparison is\n\n$$44\\%=44\\%$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 98,
-      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\n\nIndependent mini-problems: A: evaluate the block mass power model at one measured input; B: cancel the coefficient and apply the material use scale exponent; C: solve the volume target equation on its positive domain; D: evaluate a two-stage composition in the stated order; E: convert an input percentage change through a power exponent. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\nA: evaluate the M model at s=4.\nB: derive the scale multiplier for M.\nC: solve the positive power equation for h.\nD: evaluate the two maps in their stated order.\nE: analyze percentage growth, elasticity, domain, or joint input scaling.",
       "placeholder": false
     },
     {
@@ -39,11 +39,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a lamp maker, beam width follows the power law $B(d)=Ad^{\\frac12}$ for positive $d$. Multiplying the input by $9$ therefore multiplies the modeled beam width by exactly $3$.",
-        "At a factory, output is modeled by $Q=12L^{\\frac12}$ for $L>0$. To reach the target $Q=60$, an analyst claims the required input is $L=36$.",
-        "At a calibration bench, the power calibration is $y=4x^3$ on the restricted domain $x\\in\\mathbb R$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac y4\\right)^{1/3}$.",
-        "At an online retailer, demand is modeled by $q(p)=Ap^{-1.4}$ for positive inputs. Its constant elasticity with respect to $p$ is $-0.7$.",
-        "At a factory, daily output is modeled by $Q(L)=12L^{1/2}$ for positive inputs. When the recorded input is $L=81$, the model returns exactly $96$ units."
+        "For a lighthouse lens, $B(d)=Kd^{1/2}$ links aperture to beam width. Increasing the aperture ninefold allegedly scales the width by $3$.",
+        "A factory must satisfy $12L^{\\frac{1}{2}}=60$ to meet its quota. The staffing plan sets $L=26$.",
+        "A chemical monitor first uses $g(x)=8x^3$, then compresses the result through $f(u)=\\frac12u^{1/3}$. Its display at $x=4$ is said to be $4$.",
+        "An online market models demand as $q(p)=Kp^{-1.4}$. Its analyst reports a constant price elasticity of $\\dfrac{-7}{10}$.",
+        "Before a theatre opens, its lighting console predicts beam width with $B(d)=12d^{1/2}$. A technician says the setting $d=81$ produces a width of $109$ units."
       ],
       "answer_key": [
         true,
@@ -53,15 +53,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{B(9d)}{B(d)}=\\frac{A(9d)^{\\frac12}}{Ad^{\\frac12}}$$\n\n$$=(9)^{\\frac12}=3$$\n\nThe exact scale multiplier is $3$, compared with the claimed $3$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$12L^{\\frac12}=60$$\n\n$$L^{\\frac12}=5$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$L=5^2=25$$\n\nThe target requires $L=25$, whereas the analyst claims $L=36$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^3=\\frac y4$$\n\n$$x=\\left(\\frac y4\\right)^{1/3}$$\n\nThe valid inverse rule is $x=\\left(\\frac y4\\right)^{1/3}$, compared with the claimed $x=\\left(\\frac y4\\right)^{1/3}$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nDifferentiate and form the percentage-response ratio.\n\n$$q'(p)=A(-1.4)p^{-1.4-1}$$\n\n$$\\varepsilon=\\frac{p}{q}q'(p)=\\frac{p}{Ap^{-1.4}}A(-1.4)p^{-1.4-1}=-1.4$$\n\nThe elasticity is $-1.4$, while the statement gives $-0.7$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → False\n\nUse the recorded input in the power model.\n\n$$Q(81)=12\\sqrt{81}$$\n\n$$Q(81)=108$$\n\nThe evaluated output is $108$ units, while the stem claims $96$ units.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{B(9d)}{B(d)}\n=\\frac{K(9d)^{\\frac{1}{2}}}{Kd^{\\frac{1}{2}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{B(9d)}{B(d)}\n=(9)^{\\frac{1}{2}}$$\n\nEvaluating that power gives\n\n$$(9)^{\\frac{1}{2}}=3$$\n\nThe proposed multiplier is $3$, and therefore\n\n$$3=3$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$12L^{\\frac{1}{2}}=60$$\n\nDivide by the coefficient:\n\n$$L^{\\frac{1}{2}}=5$$\n\nRaise both sides to the reciprocal exponent:\n\n$$L=(5)^{2}=25$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$25\\ne26$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(4)=8(4)^3=512$$\n\nInsert that inner output into $f$:\n\n$$f(g(4))=\\frac12(512)^{1/3}$$\n\nComplete the power evaluation:\n\n$$\\frac12\\cdot8=4$$\n\nThe displayed claim is $4$, so\n\n$$4=4$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nFor a power law $Y=Kx^a$, differentiate before forming elasticity:\n\n$$\\frac{dY}{dx}=Ka x^{a-1}$$\n\nUse the point-elasticity definition:\n\n$$\\varepsilon=\\frac{x}{Y}\\frac{dY}{dx}\n=\\frac{x}{Kx^a}\\left(Ka x^{a-1}\\right)$$\n\nAll variable and coefficient factors cancel:\n\n$$\\varepsilon=a=\\dfrac{-7}{5}$$\n\nThe reported elasticity is $\\dfrac{-7}{10}$, and hence\n\n$$\\dfrac{-7}{5}\\ne\\dfrac{-7}{10}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$B(81)=12\\sqrt{81}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$B(81)=12\\cdot9$$\n\nHence the model output is\n\n$$B(81)=108\\text{ units}$$\n\nThe stem's value is $109\\text{ units}$, so the numerical comparison is\n\n$$108\\ne109$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 99,
-      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\n\nIndependent mini-problems: A: cancel the coefficient and apply the beam width scale exponent; B: solve the output target equation on its positive domain; C: derive an inverse power rule with its domain restriction; D: derive constant elasticity from a power model; E: evaluate the daily output power model at one measured input. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\nA: derive the scale multiplier for B.\nB: solve the positive power equation for L.\nC: evaluate the two maps in their stated order.\nD: analyze percentage growth, elasticity, domain, or joint input scaling.\nE: evaluate the B model at d=81.",
       "placeholder": false
     },
     {
@@ -71,11 +71,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a sensor lab, signal is modeled by $S=96d^{-2}$ for $d>0$. To reach the target $S=6$, an analyst claims the required input is $d=4$.",
-        "At a range finder, the power calibration is $y=9x^2$ on the restricted domain $x\\ge0$. Solving for the original input gives the inverse recovery rule $x=\\frac y3$.",
-        "At a bridge lab, load response is modeled by $R(x)=6x^{1/2}$ under ordinary real-power conventions. The report states that its real domain and range are exactly $x\\ge0\\text{ and }R\\ge0$.",
-        "At a light laboratory, sensor intensity is modeled by $I(d)=96d^{-2}$ for positive inputs. When the recorded input is $d=4$, the model returns exactly $6$ lux.",
-        "At a detector, intensity follows the power law $I(d)=Ad^{-2}$ for positive $d$. Multiplying the input by $3$ therefore multiplies the modeled intensity by exactly $\\frac13$."
+        "A beacon's target signal imposes $96d^{-2}=6$. Its installation guide recommends $d=4$.",
+        "An imaging pipeline magnifies by $g(x)=16x^2$ and subsequently applies $f(u)=u^{1/2}$. A source value of $5$ allegedly finishes at $25$.",
+        "A bridge sensor follows $R(x)=6x^{1/2}$ under real-power conventions. The stated domain and range are $x\\ge0\\text{ and }R\\ge0$.",
+        "A rescue beacon estimates received intensity through $I(d)=96d^{-2}$. At the documented separation $d=4$, the manual lists an intensity of $6$ lux.",
+        "A wildlife tag receives signal according to $I(d)=Kd^{-2}$. A ranger claims that tripling distance leaves $\\dfrac{10}{9}$ times the former intensity."
       ],
       "answer_key": [
         true,
@@ -85,15 +85,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$96d^{-2}=6$$\n\n$$d^{-2}=\\frac1{16}$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$d=\\left(\\frac1{16}\\right)^{-1/2}=4$$\n\nThe target requires $d=4$, whereas the analyst claims $d=4$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^2=\\frac y9$$\n\n$$x=\\sqrt{\\frac y9}\\quad(x\\ge0)$$\n\nThe valid inverse rule is $x=\\sqrt{\\frac y9}$, compared with the claimed $x=\\frac y3$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nInterpret the fractional or negative power before stating domain and range.\n\n$$x\\ge0,\\qquad x^{1/2}\\ge0$$\n\n$$\\text{actual domain and range: }x\\ge0\\text{ and }R\\ge0$$\n\nThe report instead gives $x\\ge0\\text{ and }R\\ge0$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → True\n\nUse the recorded input in the power model.\n\n$$I(4)=\\frac{96}{4^2}$$\n\n$$I(4)=6$$\n\nThe evaluated output is $6$ lux, while the stem claims $6$ lux.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{I(3d)}{I(d)}=\\frac{A(3d)^{-2}}{Ad^{-2}}$$\n\n$$=(3)^{-2}=\\frac19$$\n\nThe exact scale multiplier is $\\frac19$, compared with the claimed $\\frac13$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$96d^{-2}=6$$\n\nDivide by the coefficient:\n\n$$d^{-2}=\\dfrac{1}{16}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$d=(\\dfrac{1}{16})^{\\frac{-1}{2}}=4$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$4=4$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(5)=16(5)^2=400$$\n\nInsert that inner output into $f$:\n\n$$f(g(5))=\\sqrt{400}$$\n\nComplete the power evaluation:\n\n$$\\sqrt{400}=20$$\n\nThe displayed claim is $25$, so\n\n$$20\\ne25$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nRewrite the rational or negative power in ordinary real terms:\n\n$$x^{1/2}=\\sqrt{x}$$\n\nThis reveals the admissible inputs and attainable outputs:\n\n$$x\\ge0,\\qquad R=6\\sqrt{x}\\ge0$$\n\nTherefore the actual domain-range pair is\n\n$$x\\ge0\\text{ and }R\\ge0$$\n\nThe report states $x\\ge0\\text{ and }R\\ge0$, so\n\n$$x\\ge0\\text{ and }R\\ge0=x\\ge0\\text{ and }R\\ge0$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$I(4)=\\frac{96}{4^2}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$I(4)=\\frac{96}{16}$$\n\nHence the model output is\n\n$$I(4)=6\\text{ lux}$$\n\nThe stem's value is $6\\text{ lux}$, so the numerical comparison is\n\n$$6=6$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{I(3d)}{I(d)}\n=\\frac{K(3d)^{-2}}{Kd^{-2}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{I(3d)}{I(d)}\n=(3)^{-2}$$\n\nEvaluating that power gives\n\n$$(3)^{-2}=\\dfrac{1}{9}$$\n\nThe proposed multiplier is $\\dfrac{10}{9}$, and therefore\n\n$$\\dfrac{1}{9}\\ne\\dfrac{10}{9}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 100,
-      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\n\nIndependent mini-problems: A: solve the signal target equation on its positive domain; B: derive an inverse power rule with its domain restriction; C: determine the real domain and range of a power model; D: evaluate the sensor intensity power model at one measured input; E: cancel the coefficient and apply the intensity scale exponent. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\nA: solve the positive power equation for d.\nB: evaluate the two maps in their stated order.\nC: analyze percentage growth, elasticity, domain, or joint input scaling.\nD: evaluate the I model at d=4.\nE: derive the scale multiplier for I.",
       "placeholder": false
     },
     {
@@ -103,11 +103,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a chemical controller, a reading first passes through $g(x)=8x^3$ and then through $f(u)=\\frac12u^{1/3}$. For the input $x=4$, the composed output $f(g(4))$ is exactly $4$.",
-        "At a factory, production follows $Q=10L^{0.7}K^{0.5}$ for positive labour and capital. When both inputs are doubled, the output is multiplied by exactly $2$.",
-        "At a computing center, processing load is modeled by $T(n)=3n^{3/2}$ for positive inputs. When the recorded input is $n=16$, the model returns exactly $180$ seconds.",
-        "At an orbital lab, period follows the power law $T(a)=Aa^{\\frac32}$ for positive $a$. Multiplying the input by $4$ therefore multiplies the modeled period by exactly $8$.",
-        "At an orbital station, period is modeled by $T=3a^{\\frac32}$ for $a>0$. To reach the target $T=81$, an analyst claims the required input is $a=6$."
+        "A game engine computes $g(x)=27x^3$ before the scoring map $f(u)=2u^{1/3}$. The score assigned to $x=2$ is reported as $12$.",
+        "A textile mill uses $Q=10L^{0.7}K^{0.5}$. If labour and capital both double, managers expect output to be multiplied by $2$.",
+        "A cloud scheduler models processing time by $T(n)=3n^{3/2}$. Its dashboard assigns $193$ seconds to the workload $n=16$.",
+        "An orbital model uses $T(a)=Ka^{3/2}$ for period. Moving to four times the radius is reported to multiply the period by $8$.",
+        "An orbital station schedules a transfer using $3a^{\\frac{3}{2}}=81$. Mission control lists the positive radius $10$."
       ],
       "answer_key": [
         true,
@@ -117,15 +117,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply the inner map before the outer map.\n\n$$g(4)=8(4)^3=512$$\n\n$$f(g(4))=\\frac12\\sqrt[3]{512}=4$$\n\nThe composition returns $4$, while the stated output is $4$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nTake the ratio of new output to old output so the coefficient and original inputs cancel.\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{0.7+0.5}=2^{1.2}$$\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{1.2}$$\n\nThe production multiplier is $2^{1.2}$, compared with the claimed $2$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → False\n\nUse the recorded input in the power model.\n\n$$T(16)=3(\\sqrt{16})^3$$\n\n$$T(16)=192$$\n\nThe evaluated output is $192$ seconds, while the stem claims $180$ seconds.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{T(4a)}{T(a)}=\\frac{A(4a)^{\\frac32}}{Aa^{\\frac32}}$$\n\n$$=(4)^{\\frac32}=8$$\n\nThe exact scale multiplier is $8$, compared with the claimed $8$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$3a^{\\frac32}=81$$\n\n$$a^{\\frac32}=27$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$a=27^{2/3}=9$$\n\nThe target requires $a=9$, whereas the analyst claims $a=6$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(2)=27(2)^3=216$$\n\nInsert that inner output into $f$:\n\n$$f(g(2))=2\\sqrt[3]{216}$$\n\nComplete the power evaluation:\n\n$$2\\cdot6=12$$\n\nThe displayed claim is $12$, so\n\n$$12=12$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nCompare new output with old output so the coefficient and original inputs disappear:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{0.7+0.5}$$\n\nCombine the contributions from the separately changed inputs:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{1.2}$$\n\nThus the exact production multiplier is\n\n$$m_Q=2^{1.2}$$\n\nThe proposed factor is $2$, giving\n\n$$2^{1.2}\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$T(16)=3(\\sqrt{16})^3$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$T(16)=3\\cdot64$$\n\nHence the model output is\n\n$$T(16)=192\\text{ seconds}$$\n\nThe stem's value is $193\\text{ seconds}$, so the numerical comparison is\n\n$$192\\ne193$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{T(4a)}{T(a)}\n=\\frac{K(4a)^{\\frac{3}{2}}}{Ka^{\\frac{3}{2}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{T(4a)}{T(a)}\n=(4)^{\\frac{3}{2}}$$\n\nEvaluating that power gives\n\n$$(4)^{\\frac{3}{2}}=8$$\n\nThe proposed multiplier is $8$, and therefore\n\n$$8=8$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$3a^{\\frac{3}{2}}=81$$\n\nDivide by the coefficient:\n\n$$a^{\\frac{3}{2}}=27$$\n\nRaise both sides to the reciprocal exponent:\n\n$$a=(27)^{\\frac{2}{3}}=9$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$9\\ne10$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 101,
-      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\n\nIndependent mini-problems: A: evaluate a two-stage composition in the stated order; B: combine labour and capital exponents in a production ratio; C: evaluate the processing load power model at one measured input; D: cancel the coefficient and apply the period scale exponent; E: solve the period target equation on its positive domain. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\nA: evaluate the two maps in their stated order.\nB: analyze percentage growth, elasticity, domain, or joint input scaling.\nC: evaluate the T model at n=16.\nD: derive the scale multiplier for T.\nE: solve the positive power equation for a.",
       "placeholder": false
     },
     {
@@ -135,11 +135,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a balloon lab, volume follows $V=kr^{3}$ for a positive constant $k$. Changing the input by the factor $0.90$ causes the modeled volume to decrease by exactly $27.1\\%$.",
-        "At a clinic, dose concentration is modeled by $C(m)=18m^{-1/2}$ for positive inputs. When the recorded input is $m=9$, the model returns exactly $6$ mg/L.",
-        "At a farm, harvest follows the power law $H(L)=AL^{\\frac23}$ for positive $L$. Multiplying the input by $8$ therefore multiplies the modeled harvest by exactly $8$.",
-        "At a farm, yield is modeled by $Y=40L^{\\frac23}$ for $L>0$. To reach the target $Y=360$, an analyst claims the required input is $L=27$.",
-        "At a unit-cost system, the power calibration is $y=5x^{-1}$ on the restricted domain $x>0$. Solving for the original input gives the inverse recovery rule $x=5y$."
+        "A balloon maker has volume proportional to $r^3$. Shrinking radius by $10\\%$ is said to reduce volume by $\\dfrac{271}{10}\\%$.",
+        "In a pharmacy trial, concentration follows $C(m)=18m^{-1/2}$. The sample labelled $m=9$ is claimed to have concentration $6$ mg/L.",
+        "A cooperative farm follows $H(L)=KL^{2/3}$ for harvest. The forecast says eight times the cultivated area produces $5$ times the crop.",
+        "A grain cooperative reaches its promised yield when $40L^{\\frac{2}{3}}=360$. The land allocation is stated as $L=27$.",
+        "A materials sensor passes data through $g(x)=4x^2$ and then $f(u)=3u^{1/2}$. The composed output for $x=6$ is listed as $24$."
       ],
       "answer_key": [
         true,
@@ -149,15 +149,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConvert the input percentage change to a multiplier and apply the exponent.\n\n$$\\frac{V_{\\rm new}}{V_{\\rm old}}=(0.90)^{3}=0.729$$\n\n$$\\text{percentage change}=(1-0.729)100\\%=27.1\\%$$\n\nThe exact change is $27.1\\%$, compared with the claimed $27.1\\%$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → True\n\nUse the recorded input in the power model.\n\n$$C(9)=\\frac{18}{\\sqrt9}$$\n\n$$C(9)=6$$\n\nThe evaluated output is $6$ mg/L, while the stem claims $6$ mg/L.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{H(8L)}{H(L)}=\\frac{A(8L)^{\\frac23}}{AL^{\\frac23}}$$\n\n$$=(8)^{\\frac23}=4$$\n\nThe exact scale multiplier is $4$, compared with the claimed $8$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$40L^{\\frac23}=360$$\n\n$$L^{\\frac23}=9$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$L=9^{3/2}=27$$\n\nThe target requires $L=27$, whereas the analyst claims $L=27$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$yx=5$$\n\n$$x=\\frac5y$$\n\nThe valid inverse rule is $x=\\frac5y$, compared with the claimed $x=5y$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{9}{10}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}\n=(\\dfrac{9}{10})^{3}=\\dfrac{729}{1000}$$\n\nTranslate the output multiplier back to a percentage decrease:\n\n$$\\left|\\dfrac{729}{1000}-1\\right|\\cdot100\\%=\\dfrac{271}{10}\\%$$\n\nThe direction follows from the multiplier being below $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}<1$$\n\nThe stem gives $\\dfrac{271}{10}\\%$, so the decisive comparison is\n\n$$\\dfrac{271}{10}\\%=\\dfrac{271}{10}\\%$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$C(9)=\\frac{18}{\\sqrt9}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$C(9)=\\frac{18}{3}$$\n\nHence the model output is\n\n$$C(9)=6\\text{ mg/L}$$\n\nThe stem's value is $6\\text{ mg/L}$, so the numerical comparison is\n\n$$6=6$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{H(8L)}{H(L)}\n=\\frac{K(8L)^{\\frac{2}{3}}}{KL^{\\frac{2}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{H(8L)}{H(L)}\n=(8)^{\\frac{2}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{2}{3}}=4$$\n\nThe proposed multiplier is $5$, and therefore\n\n$$4\\ne5$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$40L^{\\frac{2}{3}}=360$$\n\nDivide by the coefficient:\n\n$$L^{\\frac{2}{3}}=9$$\n\nRaise both sides to the reciprocal exponent:\n\n$$L=(9)^{\\frac{3}{2}}=27$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$27=27$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(6)=4(6)^2=144$$\n\nInsert that inner output into $f$:\n\n$$f(g(6))=3\\sqrt{144}$$\n\nComplete the power evaluation:\n\n$$3\\cdot12=36$$\n\nThe displayed claim is $24$, so\n\n$$36\\ne24$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 102,
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\n\nIndependent mini-problems: A: convert an input percentage change through a power exponent; B: evaluate the dose concentration power model at one measured input; C: cancel the coefficient and apply the harvest scale exponent; D: solve the yield target equation on its positive domain; E: derive an inverse power rule with its domain restriction. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the C model at m=9.\nC: derive the scale multiplier for H.\nD: solve the positive power equation for L.\nE: evaluate the two maps in their stated order.",
       "placeholder": false
     },
     {
@@ -167,11 +167,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At an energy lab, stored energy is modeled by $E(t)=2t^{5/2}$ for positive inputs. When the recorded input is $t=9$, the model returns exactly $324$ joules.",
-        "At a pressure chamber, pressure follows the power law $P(V)=AV^{-1}$ for positive $V$. Multiplying the input by $5$ therefore multiplies the modeled pressure by exactly $\\frac15$.",
-        "At a pressure vessel, pressure is modeled by $P=5v^{-1}$ for $v>0$. To reach the target $P=1$, an analyst claims the required input is $v=1$.",
-        "At an imaging pipeline, a reading first passes through $g(x)=16x^2$ and then through $f(u)=u^{1/2}$. For the input $x=5$, the composed output $f(g(5))$ is exactly $20$.",
-        "At a transit agency, ridership is modeled by $R(p)=Ap^{-0.6}$ for positive inputs. Its constant elasticity with respect to $p$ is $0.6$."
+        "A flywheel experiment records stored energy according to $E(t)=2t^{5/2}$. For the test duration $t=9$, the notebook gives $487$ joules.",
+        "Inside a sealed syringe, $P(V)=KV^{-1}$ relates volume to pressure. Multiplying volume by five is claimed to scale pressure by $\\dfrac{1}{5}$.",
+        "A pressure vessel is tuned by the condition $5v^{-1}=1$. The maintenance card gives $v=6$.",
+        "A motion camera forms $g(x)=x^4$ and feeds it to $f(u)=5u^{1/2}$. For the frame value $3$, the archive stores $45$.",
+        "A transit authority fits ridership with $R(p)=Kp^{-0.6}$. The planning memo assigns elasticity $\\dfrac{3}{5}$ with respect to fare."
       ],
       "answer_key": [
         false,
@@ -181,15 +181,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nUse the recorded input in the power model.\n\n$$E(9)=2(\\sqrt9)^5$$\n\n$$E(9)=486$$\n\nThe evaluated output is $486$ joules, while the stem claims $324$ joules.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{P(5V)}{P(V)}=\\frac{A(5V)^{-1}}{AV^{-1}}$$\n\n$$=(5)^{-1}=\\frac15$$\n\nThe exact scale multiplier is $\\frac15$, compared with the claimed $\\frac15$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$5v^{-1}=1$$\n\n$$v^{-1}=\\frac15$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$v=\\left(\\frac15\\right)^{-1}=5$$\n\nThe target requires $v=5$, whereas the analyst claims $v=1$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nApply the inner map before the outer map.\n\n$$g(5)=16(5)^2=400$$\n\n$$f(g(5))=\\sqrt{400}=20$$\n\nThe composition returns $20$, while the stated output is $20$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nDifferentiate and form the percentage-response ratio.\n\n$$R'(p)=A(-0.6)p^{-0.6-1}$$\n\n$$\\varepsilon=\\frac{p}{R}R'(p)=\\frac{p}{Ap^{-0.6}}A(-0.6)p^{-0.6-1}=-0.6$$\n\nThe elasticity is $-0.6$, while the statement gives $0.6$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$E(9)=2(\\sqrt9)^5$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$E(9)=2\\cdot243$$\n\nHence the model output is\n\n$$E(9)=486\\text{ joules}$$\n\nThe stem's value is $487\\text{ joules}$, so the numerical comparison is\n\n$$486\\ne487$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{P(5V)}{P(V)}\n=\\frac{K(5V)^{-1}}{KV^{-1}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{P(5V)}{P(V)}\n=(5)^{-1}$$\n\nEvaluating that power gives\n\n$$(5)^{-1}=\\dfrac{1}{5}$$\n\nThe proposed multiplier is $\\dfrac{1}{5}$, and therefore\n\n$$\\dfrac{1}{5}=\\dfrac{1}{5}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$5v^{-1}=1$$\n\nDivide by the coefficient:\n\n$$v^{-1}=\\dfrac{1}{5}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$v=(\\dfrac{1}{5})^{-1}=5$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$5\\ne6$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(3)=3^4=81$$\n\nInsert that inner output into $f$:\n\n$$f(g(3))=5\\sqrt{81}$$\n\nComplete the power evaluation:\n\n$$5\\cdot9=45$$\n\nThe displayed claim is $45$, so\n\n$$45=45$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nFor a power law $Y=Kx^a$, differentiate before forming elasticity:\n\n$$\\frac{dY}{dx}=Ka x^{a-1}$$\n\nUse the point-elasticity definition:\n\n$$\\varepsilon=\\frac{x}{Y}\\frac{dY}{dx}\n=\\frac{x}{Kx^a}\\left(Ka x^{a-1}\\right)$$\n\nAll variable and coefficient factors cancel:\n\n$$\\varepsilon=a=\\dfrac{-3}{5}$$\n\nThe reported elasticity is $\\dfrac{3}{5}$, and hence\n\n$$\\dfrac{-3}{5}\\ne\\dfrac{3}{5}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 103,
-      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\n\nIndependent mini-problems: A: evaluate the stored energy power model at one measured input; B: cancel the coefficient and apply the pressure scale exponent; C: solve the pressure target equation on its positive domain; D: evaluate a two-stage composition in the stated order; E: derive constant elasticity from a power model. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\nA: evaluate the E model at t=9.\nB: derive the scale multiplier for P.\nC: solve the positive power equation for v.\nD: evaluate the two maps in their stated order.\nE: analyze percentage growth, elasticity, domain, or joint input scaling.",
       "placeholder": false
     },
     {
@@ -199,11 +199,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a computing team, runtime follows the power law $R(n)=An^{\\frac54}$ for positive $n$. Multiplying the input by $16$ therefore multiplies the modeled runtime by exactly $20$.",
-        "At a workshop, cost index is modeled by $C=7q^{\\frac34}$ for $q>0$. To reach the target $C=56$, an analyst claims the required input is $q=16$.",
-        "At a workload pipeline, a reading first passes through $g(x)=27x^3$ and then through $f(u)=2u^{1/3}$. For the input $x=2$, the composed output $f(g(2))$ is exactly $18$.",
-        "At a radiation sensor, intensity is modeled by $I(x)=4x^{-2}$ under ordinary real-power conventions. The report states that its real domain and range are exactly $x\\ne0\\text{ and }I>0$.",
-        "At a farm, crop index is modeled by $P(a)=40a^{2/3}$ for positive inputs. When the recorded input is $a=27$, the model returns exactly $360$ points."
+        "An algorithm benchmark satisfies $R(n)=Kn^{5/4}$. The report assigns a runtime factor of $33$ when the input size is multiplied by sixteen.",
+        "A craft studio prices an order through $7q^{\\frac{3}{4}}=56$. The quoted positive quantity is $16$.",
+        "A code profiler transforms input by $g(x)=32x^5$, followed by $f(u)=\\frac12u^{1/5}$. The run with $x=2$ is claimed to end at $4$.",
+        "A radiation meter is described by $I(x)=4x^{-2}$ on its real domain. Its technician lists the domain and range as $x\\ne0\\text{ and }I>0$.",
+        "An orchard planner scores harvest density with $H(a)=40a^{2/3}$. The plot measurement $a=27$ is entered as a score of $360$."
       ],
       "answer_key": [
         false,
@@ -213,15 +213,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{R(16n)}{R(n)}=\\frac{A(16n)^{\\frac54}}{An^{\\frac54}}$$\n\n$$=(16)^{\\frac54}=32$$\n\nThe exact scale multiplier is $32$, compared with the claimed $20$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$7q^{\\frac34}=56$$\n\n$$q^{\\frac34}=8$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$q=8^{4/3}=16$$\n\nThe target requires $q=16$, whereas the analyst claims $q=16$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nApply the inner map before the outer map.\n\n$$g(2)=27(2)^3=216$$\n\n$$f(g(2))=2\\sqrt[3]{216}=12$$\n\nThe composition returns $12$, while the stated output is $18$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nInterpret the fractional or negative power before stating domain and range.\n\n$$x\\ne0,\\qquad 4x^{-2}=\\frac4{x^2}>0$$\n\n$$\\text{actual domain and range: }x\\ne0\\text{ and }I>0$$\n\nThe report instead gives $x\\ne0\\text{ and }I>0$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → True\n\nUse the recorded input in the power model.\n\n$$P(27)=40(\\sqrt[3]{27})^2$$\n\n$$P(27)=360$$\n\nThe evaluated output is $360$ points, while the stem claims $360$ points.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{R(16n)}{R(n)}\n=\\frac{K(16n)^{\\frac{5}{4}}}{Kn^{\\frac{5}{4}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{R(16n)}{R(n)}\n=(16)^{\\frac{5}{4}}$$\n\nEvaluating that power gives\n\n$$(16)^{\\frac{5}{4}}=32$$\n\nThe proposed multiplier is $33$, and therefore\n\n$$32\\ne33$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$7q^{\\frac{3}{4}}=56$$\n\nDivide by the coefficient:\n\n$$q^{\\frac{3}{4}}=8$$\n\nRaise both sides to the reciprocal exponent:\n\n$$q=(8)^{\\frac{4}{3}}=16$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$16=16$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(2)=32(2)^5=1024$$\n\nInsert that inner output into $f$:\n\n$$f(g(2))=\\frac12\\sqrt[5]{1024}$$\n\nComplete the power evaluation:\n\n$$\\frac12\\cdot4=2$$\n\nThe displayed claim is $4$, so\n\n$$2\\ne4$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nRewrite the rational or negative power in ordinary real terms:\n\n$$4x^{-2}=\\frac4{x^2}$$\n\nThis reveals the admissible inputs and attainable outputs:\n\n$$x\\ne0,\\qquad \\frac4{x^2}>0$$\n\nTherefore the actual domain-range pair is\n\n$$x\\ne0\\text{ and }I>0$$\n\nThe report states $x\\ne0\\text{ and }I>0$, so\n\n$$x\\ne0\\text{ and }I>0=x\\ne0\\text{ and }I>0$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$H(27)=40(\\sqrt[3]{27})^2$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$H(27)=40\\cdot9$$\n\nHence the model output is\n\n$$H(27)=360\\text{ points}$$\n\nThe stem's value is $360\\text{ points}$, so the numerical comparison is\n\n$$360=360$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
-      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\n\nIndependent mini-problems: A: cancel the coefficient and apply the runtime scale exponent; B: solve the cost index target equation on its positive domain; C: evaluate a two-stage composition in the stated order; D: determine the real domain and range of a power model; E: evaluate the crop index power model at one measured input. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\nA: derive the scale multiplier for R.\nB: solve the positive power equation for q.\nC: evaluate the two maps in their stated order.\nD: analyze percentage growth, elasticity, domain, or joint input scaling.\nE: evaluate the H model at a=27.",
       "placeholder": false
     },
     {
@@ -231,11 +231,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a clinic, clearance time is modeled by $T=18m^{-\\frac12}$ for $m>0$. To reach the target $T=6$, an analyst claims the required input is $m=3$.",
-        "At a depth gauge, the power calibration is $y=2x^{3/2}$ on the restricted domain $x\\ge0$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac y2\\right)^{2/3}$.",
-        "At a farm, production follows $Q=30L^{1/2}K^{1/4}$ for positive labour and capital. When labour is multiplied by $4$ and capital by $16$, the output is multiplied by exactly $8$.",
-        "At a parking operator, flat charge is modeled by $C(h)=7h^{0}$ for positive inputs. When the recorded input is $h=12$, the model returns exactly $84$ dollars.",
-        "At a clinic, clearance rate follows the power law $C(m)=Am^{-\\frac12}$ for positive $m$. Multiplying the input by $4$ therefore multiplies the modeled clearance rate by exactly $\\frac12$."
+        "A clinic's clearance target leads to $18m^{\\frac{-1}{2}}=6$. The dose category selected by the nurse is $m=10$.",
+        "A pressure controller uses $g(x)=9x^2$ before $f(u)=4u^{-1/2}$. Its reading for $x=2$ is asserted to be $\\frac23$.",
+        "A farm's production law is $Q=30L^{1/2}K^{1/4}$. Multiplying labour by $4$ and capital by $16$ allegedly multiplies output by $8$.",
+        "A parking garage applies the flat-charge model $C(h)=7h^{0}$. One receipt treats the stay $h=12$ as costing $8$ euros.",
+        "A ceramics workshop models output with $Q(L)=KL^{3/4}$. Sixteen times the clay input is expected to yield an output factor of $8$."
       ],
       "answer_key": [
         false,
@@ -245,15 +245,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$18m^{-\\frac12}=6$$\n\n$$m^{-\\frac12}=\\frac13$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$m=\\left(\\frac13\\right)^{-2}=9$$\n\nThe target requires $m=9$, whereas the analyst claims $m=3$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{3/2}=\\frac y2$$\n\n$$x=\\left(\\frac y2\\right)^{2/3}$$\n\nThe valid inverse rule is $x=\\left(\\frac y2\\right)^{2/3}$, compared with the claimed $x=\\left(\\frac y2\\right)^{2/3}$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nTake the ratio of new output to old output so the coefficient and original inputs cancel.\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4^{1/2}16^{1/4}=2\\cdot2$$\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4$$\n\nThe production multiplier is $4$, compared with the claimed $8$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → False\n\nUse the recorded input in the power model.\n\n$$C(12)=7(12)^0$$\n\n$$C(12)=7$$\n\nThe evaluated output is $7$ dollars, while the stem claims $84$ dollars.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{C(4m)}{C(m)}=\\frac{A(4m)^{-\\frac12}}{Am^{-\\frac12}}$$\n\n$$=(4)^{-\\frac12}=\\frac12$$\n\nThe exact scale multiplier is $\\frac12$, compared with the claimed $\\frac12$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$18m^{\\frac{-1}{2}}=6$$\n\nDivide by the coefficient:\n\n$$m^{\\frac{-1}{2}}=\\dfrac{1}{3}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$m=(\\dfrac{1}{3})^{-2}=9$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$9\\ne10$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(2)=9(2)^2=36$$\n\nInsert that inner output into $f$:\n\n$$f(g(2))=\\frac4{\\sqrt{36}}$$\n\nComplete the power evaluation:\n\n$$\\frac46=\\frac23$$\n\nThe displayed claim is $\\frac23$, so\n\n$$\\frac23=\\frac23$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nCompare new output with old output so the coefficient and original inputs disappear:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4^{1/2}16^{1/4}$$\n\nCombine the contributions from the separately changed inputs:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4$$\n\nThus the exact production multiplier is\n\n$$m_Q=4$$\n\nThe proposed factor is $8$, giving\n\n$$4\\ne8$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$C(12)=7(12)^0$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$C(12)=7\\cdot1$$\n\nHence the model output is\n\n$$C(12)=7\\text{ euros}$$\n\nThe stem's value is $8\\text{ euros}$, so the numerical comparison is\n\n$$7\\ne8$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{Q(16L)}{Q(L)}\n=\\frac{K(16L)^{\\frac{3}{4}}}{KL^{\\frac{3}{4}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{Q(16L)}{Q(L)}\n=(16)^{\\frac{3}{4}}$$\n\nEvaluating that power gives\n\n$$(16)^{\\frac{3}{4}}=8$$\n\nThe proposed multiplier is $8$, and therefore\n\n$$8=8$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 105,
-      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\n\nIndependent mini-problems: A: solve the clearance time target equation on its positive domain; B: derive an inverse power rule with its domain restriction; C: combine labour and capital exponents in a production ratio; D: evaluate the flat charge power model at one measured input; E: cancel the coefficient and apply the clearance rate scale exponent. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\nA: solve the positive power equation for m.\nB: evaluate the two maps in their stated order.\nC: analyze percentage growth, elasticity, domain, or joint input scaling.\nD: evaluate the C model at h=12.\nE: derive the scale multiplier for Q.",
       "placeholder": false
     },
     {
@@ -263,11 +263,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a signed signal decoder, the power calibration is $y=7x^{1/3}$ on the restricted domain $x\\in\\mathbb R$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac y7\\right)^{1/3}$.",
-        "At a detector lab, intensity follows $I=kd^{-2}$ for a positive constant $k$. Changing the input by the factor $1.25$ causes the modeled intensity to decrease by exactly $36\\%$.",
-        "At a pressure lab, pressure is modeled by $P(v)=15v^{-1}$ for positive inputs. When the recorded input is $v=5$, the model returns exactly $3$ bar.",
-        "At a wave tank, energy follows the power law $E(h)=Ah^{\\frac43}$ for positive $h$. Multiplying the input by $8$ therefore multiplies the modeled energy by exactly $12$.",
-        "At an energy lab, energy is modeled by $E=2x^{\\frac52}$ for $x>0$. To reach the target $E=486$, an analyst claims the required input is $x=9$."
+        "A growth simulator applies $g(x)=x^3$ and then $f(u)=6u^{2/3}$. The scenario $x=3$ is labelled with output $162$.",
+        "A detector obeys the inverse-square law $I=kd^{-2}$. A $25\\%$ rise in distance is claimed to lower intensity by $36\\%$.",
+        "A diving chamber computes pressure from $P(v)=15v^{-1}$. The gauge reading corresponding to $v=5$ is asserted to be $3$ bar.",
+        "A sonar array follows $F(d)=Kd^{-3}$ for echo force. Doubling range is described as retaining $\\dfrac{9}{8}$ of the original force.",
+        "An energy store must solve $2x^{\\frac{5}{2}}=486$. The control room enters the positive setting $9$."
       ],
       "answer_key": [
         false,
@@ -277,15 +277,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{1/3}=\\frac y7$$\n\n$$x=\\left(\\frac y7\\right)^3$$\n\nThe valid inverse rule is $x=\\left(\\frac y7\\right)^3$, compared with the claimed $x=\\left(\\frac y7\\right)^{1/3}$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nConvert the input percentage change to a multiplier and apply the exponent.\n\n$$\\frac{I_{\\rm new}}{I_{\\rm old}}=(1.25)^{-2}=0.64$$\n\n$$\\text{percentage change}=(1-0.64)100\\%=36\\%$$\n\nThe exact change is $36\\%$, compared with the claimed $36\\%$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → True\n\nUse the recorded input in the power model.\n\n$$P(5)=\\frac{15}{5}$$\n\n$$P(5)=3$$\n\nThe evaluated output is $3$ bar, while the stem claims $3$ bar.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{E(8h)}{E(h)}=\\frac{A(8h)^{\\frac43}}{Ah^{\\frac43}}$$\n\n$$=(8)^{\\frac43}=16$$\n\nThe exact scale multiplier is $16$, compared with the claimed $12$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$2x^{\\frac52}=486$$\n\n$$x^{\\frac52}=243$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$x=243^{2/5}=9$$\n\nThe target requires $x=9$, whereas the analyst claims $x=9$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(3)=3^3=27$$\n\nInsert that inner output into $f$:\n\n$$f(g(3))=6(27)^{2/3}$$\n\nComplete the power evaluation:\n\n$$6\\cdot9=54$$\n\nThe displayed claim is $162$, so\n\n$$54\\ne162$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{5}{4}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}\n=(\\dfrac{5}{4})^{-2}=\\dfrac{16}{25}$$\n\nTranslate the output multiplier back to a percentage decrease:\n\n$$\\left|\\dfrac{16}{25}-1\\right|\\cdot100\\%=36\\%$$\n\nThe direction follows from the multiplier being below $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}<1$$\n\nThe stem gives $36\\%$, so the decisive comparison is\n\n$$36\\%=36\\%$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$P(5)=\\frac{15}{5}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$P(5)=15\\div5$$\n\nHence the model output is\n\n$$P(5)=3\\text{ bar}$$\n\nThe stem's value is $3\\text{ bar}$, so the numerical comparison is\n\n$$3=3$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{F(2d)}{F(d)}\n=\\frac{K(2d)^{-3}}{Kd^{-3}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{F(2d)}{F(d)}\n=(2)^{-3}$$\n\nEvaluating that power gives\n\n$$(2)^{-3}=\\dfrac{1}{8}$$\n\nThe proposed multiplier is $\\dfrac{9}{8}$, and therefore\n\n$$\\dfrac{1}{8}\\ne\\dfrac{9}{8}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$2x^{\\frac{5}{2}}=486$$\n\nDivide by the coefficient:\n\n$$x^{\\frac{5}{2}}=243$$\n\nRaise both sides to the reciprocal exponent:\n\n$$x=(243)^{\\frac{2}{5}}=9$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$9=9$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 106,
-      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\n\nIndependent mini-problems: A: derive an inverse power rule with its domain restriction; B: convert an input percentage change through a power exponent; C: evaluate the pressure power model at one measured input; D: cancel the coefficient and apply the energy scale exponent; E: solve the energy target equation on its positive domain. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\nA: evaluate the two maps in their stated order.\nB: analyze percentage growth, elasticity, domain, or joint input scaling.\nC: evaluate the P model at v=5.\nD: derive the scale multiplier for F.\nE: solve the positive power equation for x.",
       "placeholder": false
     },
     {
@@ -295,11 +295,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a streaming service, server load is modeled by $L(n)=An^{1.25}$ for positive inputs. Its constant elasticity with respect to $n$ is $0.8$.",
-        "At a materials lab, stress index is modeled by $S(a)=4a^{3/4}$ for positive inputs. When the recorded input is $a=16$, the model returns exactly $64$ units.",
-        "At a workshop, output follows the power law $Q(L)=AL^{\\frac34}$ for positive $L$. Multiplying the input by $16$ therefore multiplies the modeled output by exactly $8$.",
-        "At a signal plant, response is modeled by $R=9t^{\\frac43}$ for $t>0$. To reach the target $R=144$, an analyst claims the required input is $t=4$.",
-        "At a materials pipeline, a reading first passes through $g(x)=4x^2$ and then through $f(u)=3u^{1/2}$. For the input $x=6$, the composed output $f(g(6))$ is exactly $36$."
+        "A streaming platform predicts load with $L(n)=Kn^{1.25}$. The model team gives its user elasticity as $\\dfrac{4}{5}$.",
+        "A composite workshop predicts stress with $S(a)=4a^{3/4}$. Its certificate assigns $33$ units when $a=16$.",
+        "A circular coating process has $A(r)=Kr^{2}$. Enlarging radius by the factor $\\frac32$ is claimed to scale coating demand by $\\dfrac{9}{4}$.",
+        "A signal tower reaches calibration at $9t^{\\frac{4}{3}}=144$. Its technician chooses $t=9$.",
+        "A geometry tool sends $x$ through $g(x)=25x^2$ and afterward through $f(u)=2u^{1/2}$. At $x=4$, the final panel shows $40$."
       ],
       "answer_key": [
         false,
@@ -309,15 +309,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nDifferentiate and form the percentage-response ratio.\n\n$$L'(n)=A(1.25)n^{1.25-1}$$\n\n$$\\varepsilon=\\frac{n}{L}L'(n)=\\frac{n}{An^{1.25}}A(1.25)n^{1.25-1}=1.25$$\n\nThe elasticity is $1.25$, while the statement gives $0.8$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → False\n\nUse the recorded input in the power model.\n\n$$S(16)=4(\\sqrt[4]{16})^3$$\n\n$$S(16)=32$$\n\nThe evaluated output is $32$ units, while the stem claims $64$ units.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{Q(16L)}{Q(L)}=\\frac{A(16L)^{\\frac34}}{AL^{\\frac34}}$$\n\n$$=(16)^{\\frac34}=8$$\n\nThe exact scale multiplier is $8$, compared with the claimed $8$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$9t^{\\frac43}=144$$\n\n$$t^{\\frac43}=16$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$t=16^{3/4}=8$$\n\nThe target requires $t=8$, whereas the analyst claims $t=4$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nApply the inner map before the outer map.\n\n$$g(6)=4(6)^2=144$$\n\n$$f(g(6))=3\\sqrt{144}=36$$\n\nThe composition returns $36$, while the stated output is $36$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nFor a power law $Y=Kx^a$, differentiate before forming elasticity:\n\n$$\\frac{dY}{dx}=Ka x^{a-1}$$\n\nUse the point-elasticity definition:\n\n$$\\varepsilon=\\frac{x}{Y}\\frac{dY}{dx}\n=\\frac{x}{Kx^a}\\left(Ka x^{a-1}\\right)$$\n\nAll variable and coefficient factors cancel:\n\n$$\\varepsilon=a=\\dfrac{5}{4}$$\n\nThe reported elasticity is $\\dfrac{4}{5}$, and hence\n\n$$\\dfrac{5}{4}\\ne\\dfrac{4}{5}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$S(16)=4(\\sqrt[4]{16})^3$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$S(16)=4\\cdot8$$\n\nHence the model output is\n\n$$S(16)=32\\text{ units}$$\n\nThe stem's value is $33\\text{ units}$, so the numerical comparison is\n\n$$32\\ne33$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{A(\\dfrac{3}{2}r)}{A(r)}\n=\\frac{K(\\dfrac{3}{2}r)^{2}}{Kr^{2}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{A(\\dfrac{3}{2}r)}{A(r)}\n=(\\dfrac{3}{2})^{2}$$\n\nEvaluating that power gives\n\n$$(\\dfrac{3}{2})^{2}=\\dfrac{9}{4}$$\n\nThe proposed multiplier is $\\dfrac{9}{4}$, and therefore\n\n$$\\dfrac{9}{4}=\\dfrac{9}{4}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$9t^{\\frac{4}{3}}=144$$\n\nDivide by the coefficient:\n\n$$t^{\\frac{4}{3}}=16$$\n\nRaise both sides to the reciprocal exponent:\n\n$$t=(16)^{\\frac{3}{4}}=8$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$8\\ne9$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nComposition is ordered: evaluate the inner map before the outer map.\n\n$$g(4)=25(4)^2=400$$\n\nInsert that inner output into $f$:\n\n$$f(g(4))=2\\sqrt{400}$$\n\nComplete the power evaluation:\n\n$$2\\cdot20=40$$\n\nThe displayed claim is $40$, so\n\n$$40=40$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 107,
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\n\nIndependent mini-problems: A: derive constant elasticity from a power model; B: evaluate the stress index power model at one measured input; C: cancel the coefficient and apply the output scale exponent; D: solve the response target equation on its positive domain; E: evaluate a two-stage composition in the stated order. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the S model at a=16.\nC: derive the scale multiplier for A.\nD: solve the positive power equation for t.\nE: evaluate the two maps in their stated order.",
       "placeholder": false
     },
     {
@@ -327,11 +327,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a signal facility, response is modeled by $R(h)=9h^{4/3}$ for positive inputs. When the recorded input is $h=8$, the model returns exactly $144$ units.",
-        "At a tidal sensor, force follows the power law $F(d)=Ad^{-3}$ for positive $d$. Multiplying the input by $2$ therefore multiplies the modeled force by exactly $\\frac16$.",
-        "At a filtration unit, residue is modeled by $R=64c^{-\\frac13}$ for $c>0$. To reach the target $R=32$, an analyst claims the required input is $c=8$.",
-        "At a motion processor, a reading first passes through $g(x)=x^4$ and then through $f(u)=5u^{1/2}$. For the input $x=3$, the composed output $f(g(3))$ is exactly $135$.",
-        "At a signed calibration, response is modeled by $S(x)=5x^{1/3}$ under ordinary real-power conventions. The report states that its real domain and range are exactly $x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$."
+        "A tidal observatory converts wave height using $R(h)=9h^{4/3}$. At $h=8$, the archived response is $144$ units.",
+        "A subscription platform represents its base fee by $S(n)=Kn^{0}$. Seven times as many users supposedly makes that fee $2$ times as large.",
+        "A filtration cartridge meets specification under $64c^{\\frac{-1}{3}}=32$. The proposed concentration input is $8$.",
+        "A calibration bench is restricted to real inputs and obeys $y=4x^3$. The recovery rule in its handbook is $x=\\left(\\frac y4\\right)^3$.",
+        "A signed calibration uses $S(x)=5x^{1/3}$ with ordinary real roots. The report says its real domain and range are $x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$."
       ],
       "answer_key": [
         true,
@@ -341,15 +341,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nUse the recorded input in the power model.\n\n$$R(8)=9(\\sqrt[3]{8})^4$$\n\n$$R(8)=144$$\n\nThe evaluated output is $144$ units, while the stem claims $144$ units.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{F(2d)}{F(d)}=\\frac{A(2d)^{-3}}{Ad^{-3}}$$\n\n$$=(2)^{-3}=\\frac18$$\n\nThe exact scale multiplier is $\\frac18$, compared with the claimed $\\frac16$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$64c^{-\\frac13}=32$$\n\n$$c^{-\\frac13}=\\frac12$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$c=\\left(\\frac12\\right)^{-3}=8$$\n\nThe target requires $c=8$, whereas the analyst claims $c=8$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nApply the inner map before the outer map.\n\n$$g(3)=3^4=81$$\n\n$$f(g(3))=5\\sqrt{81}=45$$\n\nThe composition returns $45$, while the stated output is $135$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nInterpret the fractional or negative power before stating domain and range.\n\n$$\\sqrt[3]{x}\\text{ exists for every real }x$$\n\n$$\\text{actual domain and range: }x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$$\n\nThe report instead gives $x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$R(8)=9(\\sqrt[3]{8})^4$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$R(8)=9\\cdot16$$\n\nHence the model output is\n\n$$R(8)=144\\text{ units}$$\n\nThe stem's value is $144\\text{ units}$, so the numerical comparison is\n\n$$144=144$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{S(7n)}{S(n)}\n=\\frac{K(7n)^{0}}{Kn^{0}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{S(7n)}{S(n)}\n=(7)^{0}$$\n\nEvaluating that power gives\n\n$$(7)^{0}=1$$\n\nThe proposed multiplier is $2$, and therefore\n\n$$1\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$64c^{\\frac{-1}{3}}=32$$\n\nDivide by the coefficient:\n\n$$c^{\\frac{-1}{3}}=\\dfrac{1}{2}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$c=(\\dfrac{1}{2})^{-3}=8$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$8=8$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^3=\\frac y4$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac y4\\right)^{1/3}$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$4\\left(\\left(\\frac y4\\right)^{1/3}\\right)^3=y$$\n\nThus the valid recovery expression is $\\left(\\frac y4\\right)^{1/3}$, whereas the stem proposes $\\left(\\frac y4\\right)^3$:\n\n$$\\left(\\frac y4\\right)^{1/3}\\ne\\left(\\frac y4\\right)^3$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nRewrite the rational or negative power in ordinary real terms:\n\n$$x^{1/3}=\\sqrt[3]{x}$$\n\nThis reveals the admissible inputs and attainable outputs:\n\n$$\\sqrt[3]{x}\\text{ exists for every }x\\in\\mathbb R$$\n\nTherefore the actual domain-range pair is\n\n$$x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$$\n\nThe report states $x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$, so\n\n$$x\\in\\mathbb R\\text{ and }S\\in\\mathbb R=x\\in\\mathbb R\\text{ and }S\\in\\mathbb R$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 108,
-      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\n\nIndependent mini-problems: A: evaluate the response power model at one measured input; B: cancel the coefficient and apply the force scale exponent; C: solve the residue target equation on its positive domain; D: evaluate a two-stage composition in the stated order; E: determine the real domain and range of a power model. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\nA: evaluate the R model at h=8.\nB: derive the scale multiplier for S.\nC: solve the positive power equation for c.\nD: derive and verify the inverse on its restricted domain.\nE: analyze percentage growth, elasticity, domain, or joint input scaling.",
       "placeholder": false
     },
     {
@@ -359,11 +359,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a panel factory, coating area follows the power law $A(r)=Ar^{2}$ for positive $r$. Multiplying the input by $1.5$ therefore multiplies the modeled coating area by exactly $2.25$.",
-        "At a packaging line, capacity is modeled by $K=4n^{\\frac25}$ for $n>0$. To reach the target $K=16$, an analyst claims the required input is $n=16$.",
-        "At an inverse-square detector, the power calibration is $y=12x^{-2}$ on the restricted domain $x>0$. Solving for the original input gives the inverse recovery rule $x=\\sqrt{\\frac{12}{y}}$.",
-        "At a workshop, production follows $Q=50L^{0.4}K^{0.6}$ for positive labour and capital. When both inputs rise by $50\\%$, the output is multiplied by exactly $1.25$.",
-        "At an astronomy team, flux is modeled by $F(p)=25p^{-3/2}$ for positive inputs. When the recorded input is $p=4$, the model returns exactly $\\frac{25}{4}$ units."
+        "A biologist models a shell's length score with $G(x)=Kx^{1/3}$. Multiplying volume by twenty-seven is said to multiply the score by $3$.",
+        "A parcel line has capacity requirement $4n^{\\frac{2}{5}}=16$. Management says the necessary batch size is $n=33$.",
+        "A range finder uses $y=9x^2$ only for $x\\ge0$. Its software documentation proposes the inverse $x=\\sqrt{\\frac y9}$.",
+        "A workshop has $Q=50L^{0.4}K^{0.6}$. Raising both inputs by $50\\%$ is said to create an output factor of $1.25$.",
+        "An astronomy camera models photon flux as $F(p)=25p^{-3/2}$. The exposure record for $p=4$ displays $\\dfrac{33}{8}$ counts."
       ],
       "answer_key": [
         true,
@@ -373,15 +373,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{A(1.5r)}{A(r)}=\\frac{A(1.5r)^{2}}{Ar^{2}}$$\n\n$$=(1.5)^{2}=2.25$$\n\nThe exact scale multiplier is $2.25$, compared with the claimed $2.25$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$4n^{\\frac25}=16$$\n\n$$n^{\\frac25}=4$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$n=4^{5/2}=32$$\n\nThe target requires $n=32$, whereas the analyst claims $n=16$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^2=\\frac{12}{y}$$\n\n$$x=\\sqrt{\\frac{12}{y}}\\quad(x>0)$$\n\nThe valid inverse rule is $x=\\sqrt{\\frac{12}{y}}$, compared with the claimed $x=\\sqrt{\\frac{12}{y}}$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nTake the ratio of new output to old output so the coefficient and original inputs cancel.\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1.5^{0.4+0.6}$$\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1.5$$\n\nThe production multiplier is $1.5$, compared with the claimed $1.25$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → False\n\nUse the recorded input in the power model.\n\n$$F(4)=\\frac{25}{(\\sqrt4)^3}$$\n\n$$F(4)=\\frac{25}{8}$$\n\nThe evaluated output is $\\frac{25}{8}$ units, while the stem claims $\\frac{25}{4}$ units.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{G(27x)}{G(x)}\n=\\frac{K(27x)^{\\frac{1}{3}}}{Kx^{\\frac{1}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{G(27x)}{G(x)}\n=(27)^{\\frac{1}{3}}$$\n\nEvaluating that power gives\n\n$$(27)^{\\frac{1}{3}}=3$$\n\nThe proposed multiplier is $3$, and therefore\n\n$$3=3$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$4n^{\\frac{2}{5}}=16$$\n\nDivide by the coefficient:\n\n$$n^{\\frac{2}{5}}=4$$\n\nRaise both sides to the reciprocal exponent:\n\n$$n=(4)^{\\frac{5}{2}}=32$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$32\\ne33$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^2=\\frac y9$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\sqrt{\\frac y9}\\quad(x\\ge0)$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$9\\left(\\sqrt{\\frac y9}\\right)^2=y$$\n\nThus the valid recovery expression is $\\sqrt{\\frac y9}$, whereas the stem proposes $\\sqrt{\\frac y9}$:\n\n$$\\sqrt{\\frac y9}=\\sqrt{\\frac y9}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nCompare new output with old output so the coefficient and original inputs disappear:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1.5^{0.4+0.6}$$\n\nCombine the contributions from the separately changed inputs:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1.5$$\n\nThus the exact production multiplier is\n\n$$m_Q=1.5$$\n\nThe proposed factor is $1.25$, giving\n\n$$1.5\\ne1.25$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$F(4)=\\frac{25}{(\\sqrt4)^3}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$F(4)=\\frac{25}{8}$$\n\nHence the model output is\n\n$$F(4)=\\dfrac{25}{8}\\text{ counts}$$\n\nThe stem's value is $\\dfrac{33}{8}\\text{ counts}$, so the numerical comparison is\n\n$$\\dfrac{25}{8}\\ne\\dfrac{33}{8}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 109,
-      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\n\nIndependent mini-problems: A: cancel the coefficient and apply the coating area scale exponent; B: solve the capacity target equation on its positive domain; C: derive an inverse power rule with its domain restriction; D: combine labour and capital exponents in a production ratio; E: evaluate the flux power model at one measured input. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\nA: derive the scale multiplier for G.\nB: solve the positive power equation for n.\nC: derive and verify the inverse on its restricted domain.\nD: analyze percentage growth, elasticity, domain, or joint input scaling.\nE: evaluate the F model at p=4.",
       "placeholder": false
     },
     {
@@ -391,11 +391,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At an astronomy lab, flux is modeled by $F=25d^{-\\frac32}$ for $d>0$. To reach the target $F=\\frac{25}{8}$, an analyst claims the required input is $d=4$.",
-        "At an energy recovery system, the power calibration is $y=\\frac12x^{5/2}$ on the restricted domain $x\\ge0$. Solving for the original input gives the inverse recovery rule $x=(2y)^{5/2}$.",
-        "At a cable designer, capacity follows $C=kd^{\\frac12}$ for a positive constant $k$. Changing the input by the factor $1.21$ causes the modeled capacity to increase by exactly $10\\%$.",
-        "At a bioreactor, growth reading is modeled by $G(r)=6r^{1/3}$ for positive inputs. When the recorded input is $r=125$, the model returns exactly $30$ units.",
-        "At a subscription service, base index follows the power law $S(n)=An^{0}$ for positive $n$. Multiplying the input by $7$ therefore multiplies the modeled base index by exactly $7$."
+        "An observatory obtains its required flux from $25d^{\\frac{-3}{2}}=\\dfrac{25}{8}$. The astronomer records distance $4$.",
+        "A unit-cost decoder has law $y=5x^{-1}$ on $x>0$. The claimed formula for recovering the original input is $x=5y$.",
+        "A cable maker's capacity is proportional to $d^{1/2}$. A $21\\%$ increase in diameter supposedly raises capacity by $10\\%$.",
+        "A fermentation vessel tracks growth through $G(r)=6r^{1/3}$. The batch whose input is $r=125$ is said to reach $30$ units.",
+        "A cleanup crew tracks contaminant level through $C(t)=Kt^{-2/3}$. After the elapsed time is multiplied by eight, the level is claimed to have factor $\\dfrac{5}{4}$."
       ],
       "answer_key": [
         true,
@@ -405,15 +405,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$25d^{-\\frac32}=\\frac{25}{8}$$\n\n$$d^{-\\frac32}=\\frac18$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$d=\\left(\\frac18\\right)^{-2/3}=4$$\n\nThe target requires $d=4$, whereas the analyst claims $d=4$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{5/2}=2y$$\n\n$$x=(2y)^{2/5}$$\n\nThe valid inverse rule is $x=(2y)^{2/5}$, compared with the claimed $x=(2y)^{5/2}$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nConvert the input percentage change to a multiplier and apply the exponent.\n\n$$\\frac{C_{\\rm new}}{C_{\\rm old}}=(1.21)^{\\frac12}=1.10$$\n\n$$\\text{percentage change}=(1.10-1)100\\%=10\\%$$\n\nThe exact change is $10\\%$, compared with the claimed $10\\%$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → True\n\nUse the recorded input in the power model.\n\n$$G(125)=6\\sqrt[3]{125}$$\n\n$$G(125)=30$$\n\nThe evaluated output is $30$ units, while the stem claims $30$ units.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{S(7n)}{S(n)}=\\frac{A(7n)^{0}}{An^{0}}$$\n\n$$=(7)^{0}=1$$\n\nThe exact scale multiplier is $1$, compared with the claimed $7$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$25d^{\\frac{-3}{2}}=\\dfrac{25}{8}$$\n\nDivide by the coefficient:\n\n$$d^{\\frac{-3}{2}}=\\dfrac{1}{8}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$d=(\\dfrac{1}{8})^{\\frac{-2}{3}}=4$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$4=4$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$yx=5$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\frac5y$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$5\\left(\\frac5y\\right)^{-1}=y$$\n\nThus the valid recovery expression is $\\frac5y$, whereas the stem proposes $5y$:\n\n$$\\frac5y\\ne5y$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{121}{100}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}\n=(\\dfrac{121}{100})^{\\frac{1}{2}}=1.1$$\n\nTranslate the output multiplier back to a percentage increase:\n\n$$\\left|1.1-1\\right|\\cdot100\\%=10\\%$$\n\nThe direction follows from the multiplier being above $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}>1$$\n\nThe stem gives $10\\%$, so the decisive comparison is\n\n$$10\\%=10\\%$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$G(125)=6\\sqrt[3]{125}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$G(125)=6\\cdot5$$\n\nHence the model output is\n\n$$G(125)=30\\text{ units}$$\n\nThe stem's value is $30\\text{ units}$, so the numerical comparison is\n\n$$30=30$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{C(8t)}{C(t)}\n=\\frac{K(8t)^{\\frac{-2}{3}}}{Kt^{\\frac{-2}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{C(8t)}{C(t)}\n=(8)^{\\frac{-2}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{-2}{3}}=\\dfrac{1}{4}$$\n\nThe proposed multiplier is $\\dfrac{5}{4}$, and therefore\n\n$$\\dfrac{1}{4}\\ne\\dfrac{5}{4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 110,
-      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\n\nIndependent mini-problems: A: solve the flux target equation on its positive domain; B: derive an inverse power rule with its domain restriction; C: convert an input percentage change through a power exponent; D: evaluate the growth reading power model at one measured input; E: cancel the coefficient and apply the base index scale exponent. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\nA: solve the positive power equation for d.\nB: derive and verify the inverse on its restricted domain.\nC: analyze percentage growth, elasticity, domain, or joint input scaling.\nD: evaluate the G model at r=125.\nE: derive the scale multiplier for C.",
       "placeholder": false
     },
     {
@@ -423,11 +423,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a coding pipeline, a reading first passes through $g(x)=32x^5$ and then through $f(u)=\\frac12u^{1/5}$. For the input $x=2$, the composed output $f(g(2))$ is exactly $2$.",
-        "At a utility company, usage is modeled by $U(p)=Ap^{-2}$ for positive inputs. Its constant elasticity with respect to $p$ is $-1$.",
-        "At a transport lab, drag score is modeled by $D(z)=2.5z^{2}$ for positive inputs. When the recorded input is $z=12$, the model returns exactly $300$ points.",
-        "At a biologist, length score follows the power law $G(x)=Ax^{\\frac13}$ for positive $x$. Multiplying the input by $27$ therefore multiplies the modeled length score by exactly $3$.",
-        "At a bioreactor, growth is modeled by $G=6t^{\\frac13}$ for $t>0$. To reach the target $G=30$, an analyst claims the required input is $t=25$."
+        "A signed-signal device follows $y=7x^{1/3}$ across all real $x$. An engineer writes its inverse as $x=\\left(\\frac y7\\right)^3$.",
+        "A utility company models usage with $U(p)=Kp^{-2}$. The tariff study records constant elasticity $-1$.",
+        "A bridge engineer evaluates the drag index $D(z)=\\frac52z^{2}$. A load case with $z=12$ is annotated $361$ points.",
+        "A wind-tunnel turbine satisfies $P(v)=Kv^{5/2}$. Quadrupling air speed is recorded as a power-output multiplier of $32$.",
+        "A bioreactor is stopped when $6g^{\\frac{1}{3}}=30$. The lab sheet identifies $g=126$."
       ],
       "answer_key": [
         true,
@@ -437,15 +437,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply the inner map before the outer map.\n\n$$g(2)=32(2)^5=1024$$\n\n$$f(g(2))=\\frac12\\sqrt[5]{1024}=2$$\n\nThe composition returns $2$, while the stated output is $2$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → False\n\nDifferentiate and form the percentage-response ratio.\n\n$$U'(p)=A(-2)p^{-2-1}$$\n\n$$\\varepsilon=\\frac{p}{U}U'(p)=\\frac{p}{Ap^{-2}}A(-2)p^{-2-1}=-2$$\n\nThe elasticity is $-2$, while the statement gives $-1$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → False\n\nUse the recorded input in the power model.\n\n$$D(12)=2.5(12)^2$$\n\n$$D(12)=360$$\n\nThe evaluated output is $360$ points, while the stem claims $300$ points.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{G(27x)}{G(x)}=\\frac{A(27x)^{\\frac13}}{Ax^{\\frac13}}$$\n\n$$=(27)^{\\frac13}=3$$\n\nThe exact scale multiplier is $3$, compared with the claimed $3$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$6t^{\\frac13}=30$$\n\n$$t^{\\frac13}=5$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$t=5^3=125$$\n\nThe target requires $t=125$, whereas the analyst claims $t=25$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{1/3}=\\frac y7$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac y7\\right)^3$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$7\\sqrt[3]{\\left(\\frac y7\\right)^3}=y$$\n\nThus the valid recovery expression is $\\left(\\frac y7\\right)^3$, whereas the stem proposes $\\left(\\frac y7\\right)^3$:\n\n$$\\left(\\frac y7\\right)^3=\\left(\\frac y7\\right)^3$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → False\n\nFor a power law $Y=Kx^a$, differentiate before forming elasticity:\n\n$$\\frac{dY}{dx}=Ka x^{a-1}$$\n\nUse the point-elasticity definition:\n\n$$\\varepsilon=\\frac{x}{Y}\\frac{dY}{dx}\n=\\frac{x}{Kx^a}\\left(Ka x^{a-1}\\right)$$\n\nAll variable and coefficient factors cancel:\n\n$$\\varepsilon=a=-2$$\n\nThe reported elasticity is $-1$, and hence\n\n$$-2\\ne-1$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$D(12)=\\frac52(12)^2$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$D(12)=\\frac52\\cdot144$$\n\nHence the model output is\n\n$$D(12)=360\\text{ points}$$\n\nThe stem's value is $361\\text{ points}$, so the numerical comparison is\n\n$$360\\ne361$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{P(4v)}{P(v)}\n=\\frac{K(4v)^{\\frac{5}{2}}}{Kv^{\\frac{5}{2}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{P(4v)}{P(v)}\n=(4)^{\\frac{5}{2}}$$\n\nEvaluating that power gives\n\n$$(4)^{\\frac{5}{2}}=32$$\n\nThe proposed multiplier is $32$, and therefore\n\n$$32=32$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$6g^{\\frac{1}{3}}=30$$\n\nDivide by the coefficient:\n\n$$g^{\\frac{1}{3}}=5$$\n\nRaise both sides to the reciprocal exponent:\n\n$$g=(5)^{3}=125$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$125\\ne126$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 111,
-      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\n\nIndependent mini-problems: A: evaluate a two-stage composition in the stated order; B: derive constant elasticity from a power model; C: evaluate the drag score power model at one measured input; D: cancel the coefficient and apply the length score scale exponent; E: solve the growth target equation on its positive domain. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\nA: derive and verify the inverse on its restricted domain.\nB: analyze percentage growth, elasticity, domain, or joint input scaling.\nC: evaluate the D model at z=12.\nD: derive the scale multiplier for P.\nE: solve the positive power equation for g.",
       "placeholder": false
     },
     {
@@ -455,11 +455,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a materials lab, stress score is modeled by $T(x)=3x^{2/3}$ under ordinary real-power conventions. The report states that its real domain and range are exactly $x\\in\\mathbb R\\text{ and }T\\ge0$.",
-        "At a filtration plant, residue level is modeled by $R(c)=64c^{-1/3}$ for positive inputs. When the recorded input is $c=8$, the model returns exactly $32$ ppm.",
-        "At a cleanup plant, pollutant level follows the power law $C(t)=At^{-\\frac23}$ for positive $t$. Multiplying the input by $8$ therefore multiplies the modeled pollutant level by exactly $\\frac12$.",
-        "At a cleanup site, pollution is modeled by $C=10t^{-\\frac23}$ for $t>0$. To reach the target $C=\\frac52$, an analyst claims the required input is $t=8$.",
-        "At a flow meter, the power calibration is $y=8x^{2/3}$ on the restricted domain $x\\ge0$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac y8\\right)^{2/3}$."
+        "A materials lab studies $T(x)=3x^{2/3}$ using real cube roots. It declares the domain and range to be $x\\in\\mathbb R\\text{ and }T\\ge0$.",
+        "A water-treatment operator uses $R(c)=64c^{-1/3}$ for residue. The sample at $c=8$ is reported as $32$ ppm.",
+        "A training system uses $H(n)=Kn^{-1/4}$ for hours per unit. Increasing cumulative output sixteenfold is said to leave a time factor of $\\dfrac{3}{2}$.",
+        "A remediation site targets $10t^{\\frac{-2}{3}}=\\dfrac{5}{2}$. The project schedule assigns the positive time $8$.",
+        "An inverse-square photometer is calibrated by $y=12x^{-2}$ with $x>0$. The instrument card gives $x=\\frac{12}{y^2}$ for the inverse."
       ],
       "answer_key": [
         true,
@@ -469,15 +469,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nInterpret the fractional or negative power before stating domain and range.\n\n$$x^{2/3}=(\\sqrt[3]{x})^2\\ge0\\text{ for every real }x$$\n\n$$\\text{actual domain and range: }x\\in\\mathbb R\\text{ and }T\\ge0$$\n\nThe report instead gives $x\\in\\mathbb R\\text{ and }T\\ge0$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**B.** → True\n\nUse the recorded input in the power model.\n\n$$R(8)=\\frac{64}{\\sqrt[3]{8}}$$\n\n$$R(8)=32$$\n\nThe evaluated output is $32$ ppm, while the stem claims $32$ ppm.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{C(8t)}{C(t)}=\\frac{A(8t)^{-\\frac23}}{At^{-\\frac23}}$$\n\n$$=(8)^{-\\frac23}=\\frac14$$\n\nThe exact scale multiplier is $\\frac14$, compared with the claimed $\\frac12$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$10t^{-\\frac23}=\\frac52$$\n\n$$t^{-\\frac23}=\\frac14$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$t=\\left(\\frac14\\right)^{-3/2}=8$$\n\nThe target requires $t=8$, whereas the analyst claims $t=8$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{2/3}=\\frac y8$$\n\n$$x=\\left(\\frac y8\\right)^{3/2}\\quad(x\\ge0)$$\n\nThe valid inverse rule is $x=\\left(\\frac y8\\right)^{3/2}$, compared with the claimed $x=\\left(\\frac y8\\right)^{2/3}$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → True\n\nRewrite the rational or negative power in ordinary real terms:\n\n$$x^{2/3}=(\\sqrt[3]{x})^2$$\n\nThis reveals the admissible inputs and attainable outputs:\n\n$$x\\in\\mathbb R,\\qquad 3(\\sqrt[3]{x})^2\\ge0$$\n\nTherefore the actual domain-range pair is\n\n$$x\\in\\mathbb R\\text{ and }T\\ge0$$\n\nThe report states $x\\in\\mathbb R\\text{ and }T\\ge0$, so\n\n$$x\\in\\mathbb R\\text{ and }T\\ge0=x\\in\\mathbb R\\text{ and }T\\ge0$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**B.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$R(8)=\\frac{64}{\\sqrt[3]{8}}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$R(8)=\\frac{64}{2}$$\n\nHence the model output is\n\n$$R(8)=32\\text{ ppm}$$\n\nThe stem's value is $32\\text{ ppm}$, so the numerical comparison is\n\n$$32=32$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{H(16n)}{H(n)}\n=\\frac{K(16n)^{\\frac{-1}{4}}}{Kn^{\\frac{-1}{4}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{H(16n)}{H(n)}\n=(16)^{\\frac{-1}{4}}$$\n\nEvaluating that power gives\n\n$$(16)^{\\frac{-1}{4}}=\\dfrac{1}{2}$$\n\nThe proposed multiplier is $\\dfrac{3}{2}$, and therefore\n\n$$\\dfrac{1}{2}\\ne\\dfrac{3}{2}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$10t^{\\frac{-2}{3}}=\\dfrac{5}{2}$$\n\nDivide by the coefficient:\n\n$$t^{\\frac{-2}{3}}=\\dfrac{1}{4}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$t=(\\dfrac{1}{4})^{\\frac{-3}{2}}=8$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$8=8$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^2=\\frac{12}{y}$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\sqrt{\\frac{12}{y}}\\quad(x>0)$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$12\\left(\\sqrt{\\frac{12}{y}}\\right)^{-2}=y$$\n\nThus the valid recovery expression is $\\sqrt{\\frac{12}{y}}$, whereas the stem proposes $\\frac{12}{y^2}$:\n\n$$\\sqrt{\\frac{12}{y}}\\ne\\frac{12}{y^2}$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 112,
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\n\nIndependent mini-problems: A: determine the real domain and range of a power model; B: evaluate the residue level power model at one measured input; C: cancel the coefficient and apply the pollutant level scale exponent; D: solve the pollution target equation on its positive domain; E: derive an inverse power rule with its domain restriction. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the R model at c=8.\nC: derive the scale multiplier for H.\nD: solve the positive power equation for t.\nE: derive and verify the inverse on its restricted domain.",
       "placeholder": false
     },
     {
@@ -487,11 +487,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a construction model, load score is modeled by $W(u)=11u^{1/2}$ for positive inputs. When the recorded input is $u=49$, the model returns exactly $88$ units.",
-        "At a turbine lab, power follows the power law $P(v)=Av^{\\frac52}$ for positive $v$. Multiplying the input by $4$ therefore multiplies the modeled power by exactly $32$.",
-        "At a vibration bench, amplitude is modeled by $A=0.5x^{4}$ for $x>0$. To reach the target $A=40.5$, an analyst claims the required input is $x=9$.",
-        "At a pressure processor, a reading first passes through $g(x)=9x^2$ and then through $f(u)=4u^{-1/2}$. For the input $x=2$, the composed output $f(g(2))$ is exactly $\\frac23$.",
-        "At an energy plant, production follows $Q=20L^{1/2}K^{1/2}$ for positive labour and capital. When labour is multiplied by $4$ while capital is divided by $4$, the output is multiplied by exactly $2$."
+        "During a crane inspection, the load score is $W(u)=11u^{1/2}$. The inspector's value for $u=49$ is $78$.",
+        "A server cluster has workload law $W(N)=KN^{6/5}$. A capacity note states that a thirty-twofold user increase multiplies workload by $64$.",
+        "A shaker table is adjusted until $\\dfrac{1}{2}x^{4}=\\dfrac{81}{2}$. The engineer's solution is $x=4$.",
+        "An energy dial maps $x\\ge0$ through $y=\\frac12x^{5/2}$. The dial's reverse conversion is stated as $x=(2y)^{2/5}$.",
+        "An energy plant follows $Q=20L^{1/2}K^{1/2}$. Labour is quadrupled while capital is quartered, and output is claimed to gain factor $2$."
       ],
       "answer_key": [
         false,
@@ -501,15 +501,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nUse the recorded input in the power model.\n\n$$W(49)=11\\sqrt{49}$$\n\n$$W(49)=77$$\n\nThe evaluated output is $77$ units, while the stem claims $88$ units.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{P(4v)}{P(v)}=\\frac{A(4v)^{\\frac52}}{Av^{\\frac52}}$$\n\n$$=(4)^{\\frac52}=32$$\n\nThe exact scale multiplier is $32$, compared with the claimed $32$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$0.5x^{4}=40.5$$\n\n$$x^{4}=81$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$x=81^{1/4}=3$$\n\nThe target requires $x=3$, whereas the analyst claims $x=9$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nApply the inner map before the outer map.\n\n$$g(2)=9(2)^2=36$$\n\n$$f(g(2))=\\frac4{\\sqrt{36}}=\\frac23$$\n\nThe composition returns $\\frac23$, while the stated output is $\\frac23$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → False\n\nTake the ratio of new output to old output so the coefficient and original inputs cancel.\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4^{1/2}(1/4)^{1/2}$$\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1$$\n\nThe production multiplier is $1$, compared with the claimed $2$.\n\nTherefore, the claim does not match the solved result, so the statement is False."
+        "**A.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$W(49)=11\\sqrt{49}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$W(49)=11\\cdot7$$\n\nHence the model output is\n\n$$W(49)=77\\text{ units}$$\n\nThe stem's value is $78\\text{ units}$, so the numerical comparison is\n\n$$77\\ne78$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{W(32N)}{W(N)}\n=\\frac{K(32N)^{\\frac{6}{5}}}{KN^{\\frac{6}{5}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{W(32N)}{W(N)}\n=(32)^{\\frac{6}{5}}$$\n\nEvaluating that power gives\n\n$$(32)^{\\frac{6}{5}}=64$$\n\nThe proposed multiplier is $64$, and therefore\n\n$$64=64$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$\\dfrac{1}{2}x^{4}=\\dfrac{81}{2}$$\n\nDivide by the coefficient:\n\n$$x^{4}=81$$\n\nRaise both sides to the reciprocal exponent:\n\n$$x=(81)^{\\frac{1}{4}}=3$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$3\\ne4$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{5/2}=2y$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=(2y)^{2/5}$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$\\frac12\\left((2y)^{2/5}\\right)^{5/2}=y$$\n\nThus the valid recovery expression is $(2y)^{2/5}$, whereas the stem proposes $(2y)^{2/5}$:\n\n$$(2y)^{2/5}=(2y)^{2/5}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → False\n\nCompare new output with old output so the coefficient and original inputs disappear:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=4^{1/2}(1/4)^{1/2}$$\n\nCombine the contributions from the separately changed inputs:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=1$$\n\nThus the exact production multiplier is\n\n$$m_Q=1$$\n\nThe proposed factor is $2$, giving\n\n$$1\\ne2$$\n\nThe mathematical result does not agree with the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 113,
-      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\n\nIndependent mini-problems: A: evaluate the load score power model at one measured input; B: cancel the coefficient and apply the power scale exponent; C: solve the amplitude target equation on its positive domain; D: evaluate a two-stage composition in the stated order; E: combine labour and capital exponents in a production ratio. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: evaluate, scaling, solve, compose_inverse, growth_elastic.\nA: evaluate the W model at u=49.\nB: derive the scale multiplier for W.\nC: solve the positive power equation for x.\nD: derive and verify the inverse on its restricted domain.\nE: analyze percentage growth, elasticity, domain, or joint input scaling.",
       "placeholder": false
     },
     {
@@ -519,11 +519,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a learning center, hours per unit follows the power law $H(n)=An^{-\\frac14}$ for positive $n$. Multiplying the input by $16$ therefore multiplies the modeled hours per unit by exactly $\\frac14$.",
-        "At a propulsion lab, thrust is modeled by $H=8v^{\\frac53}$ for $v>0$. To reach the target $H=256$, an analyst claims the required input is $v=8$.",
-        "At a growth processor, a reading first passes through $g(x)=x^3$ and then through $f(u)=6u^{2/3}$. For the input $x=3$, the composed output $f(g(3))$ is exactly $162$.",
-        "At a fluid lab, flow follows $F=kp^{\\frac32}$ for a positive constant $k$. Changing the input by the factor $1.44$ causes the modeled flow to increase by exactly $72.8\\%$.",
-        "At a propulsion lab, thrust index is modeled by $H(x)=3x^{5/3}$ for positive inputs. When the recorded input is $x=8$, the model returns exactly $96$ units."
+        "For a spillway, $F(p)=Kp^{7/3}$ gives the flow index. An eightfold pressure change is claimed to create a flow multiplier of $129$.",
+        "A rocket test is accepted once $8v^{\\frac{5}{3}}=256$. The selected speed parameter is $8$.",
+        "A flow meter records $y=8x^{2/3}$ on the branch $x\\ge0$. Its proposed recovery equation is $x=\\left(\\frac y8\\right)^{2/3}$.",
+        "A fluid channel has $F=kp^{3/2}$. Increasing pressure by $44\\%$ is reported to increase flow by $\\dfrac{364}{5}\\%$.",
+        "A propulsion simulator defines its thrust index by $J(x)=3x^{5/3}$. The run at $x=8$ is summarized as $96$ units."
       ],
       "answer_key": [
         false,
@@ -533,15 +533,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{H(16n)}{H(n)}=\\frac{A(16n)^{-\\frac14}}{An^{-\\frac14}}$$\n\n$$=(16)^{-\\frac14}=\\frac12$$\n\nThe exact scale multiplier is $\\frac12$, compared with the claimed $\\frac14$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$8v^{\\frac53}=256$$\n\n$$v^{\\frac53}=32$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$v=32^{3/5}=8$$\n\nThe target requires $v=8$, whereas the analyst claims $v=8$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nApply the inner map before the outer map.\n\n$$g(3)=27$$\n\n$$f(g(3))=6(\\sqrt[3]{27})^2=54$$\n\nThe composition returns $54$, while the stated output is $162$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → True\n\nConvert the input percentage change to a multiplier and apply the exponent.\n\n$$\\frac{F_{\\rm new}}{F_{\\rm old}}=(1.44)^{\\frac32}=1.728$$\n\n$$\\text{percentage change}=(1.728-1)100\\%=72.8\\%$$\n\nThe exact change is $72.8\\%$, compared with the claimed $72.8\\%$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**E.** → True\n\nUse the recorded input in the power model.\n\n$$H(8)=3(\\sqrt[3]{8})^5$$\n\n$$H(8)=96$$\n\nThe evaluated output is $96$ units, while the stem claims $96$ units.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{F(8p)}{F(p)}\n=\\frac{K(8p)^{\\frac{7}{3}}}{Kp^{\\frac{7}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{F(8p)}{F(p)}\n=(8)^{\\frac{7}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{7}{3}}=128$$\n\nThe proposed multiplier is $129$, and therefore\n\n$$128\\ne129$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$8v^{\\frac{5}{3}}=256$$\n\nDivide by the coefficient:\n\n$$v^{\\frac{5}{3}}=32$$\n\nRaise both sides to the reciprocal exponent:\n\n$$v=(32)^{\\frac{3}{5}}=8$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$8=8$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{2/3}=\\frac y8$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac y8\\right)^{3/2}\\quad(x\\ge0)$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$8\\left(\\left(\\frac y8\\right)^{3/2}\\right)^{2/3}=y$$\n\nThus the valid recovery expression is $\\left(\\frac y8\\right)^{3/2}$, whereas the stem proposes $\\left(\\frac y8\\right)^{2/3}$:\n\n$$\\left(\\frac y8\\right)^{3/2}\\ne\\left(\\frac y8\\right)^{2/3}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → True\n\nConvert the input percentage change to the exact multiplier $\\dfrac{36}{25}$ and apply the power exponent:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}\n=(\\dfrac{36}{25})^{\\frac{3}{2}}=1.728$$\n\nTranslate the output multiplier back to a percentage increase:\n\n$$\\left|1.728-1\\right|\\cdot100\\%=\\dfrac{364}{5}\\%$$\n\nThe direction follows from the multiplier being above $1$:\n\n$$\\frac{Y_{\\rm new}}{Y_{\\rm old}}>1$$\n\nThe stem gives $\\dfrac{364}{5}\\%$, so the decisive comparison is\n\n$$\\dfrac{364}{5}\\%=\\dfrac{364}{5}\\%$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**E.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$J(8)=3(\\sqrt[3]{8})^5$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$J(8)=3\\cdot32$$\n\nHence the model output is\n\n$$J(8)=96\\text{ units}$$\n\nThe stem's value is $96\\text{ units}$, so the numerical comparison is\n\n$$96=96$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 114,
-      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\n\nIndependent mini-problems: A: cancel the coefficient and apply the hours per unit scale exponent; B: solve the thrust target equation on its positive domain; C: evaluate a two-stage composition in the stated order; D: convert an input percentage change through a power exponent; E: evaluate the thrust index power model at one measured input. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: scaling, solve, compose_inverse, growth_elastic, evaluate.\nA: derive the scale multiplier for F.\nB: solve the positive power equation for v.\nC: derive and verify the inverse on its restricted domain.\nD: analyze percentage growth, elasticity, domain, or joint input scaling.\nE: evaluate the J model at x=8.",
       "placeholder": false
     },
     {
@@ -551,11 +551,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a dosing center, dose is modeled by $D=100m^{-\\frac12}$ for $m>0$. To reach the target $D=20$, an analyst claims the required input is $m=20$.",
-        "At a concentration decoder, the power calibration is $y=3x^{-1/2}$ on the restricted domain $x>0$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac3y\\right)^2$.",
-        "At a media platform, engagement is modeled by $E(n)=An^{0.75}$ for positive inputs. Its constant elasticity with respect to $n$ is $1.75$.",
-        "At a dosing center, recommended amount is modeled by $A(k)=100k^{-1/2}$ for positive inputs. When the recorded input is $k=25$, the model returns exactly $25$ mg.",
-        "At a server farm, workload follows the power law $W(N)=AN^{\\frac65}$ for positive $N$. Multiplying the input by $32$ therefore multiplies the modeled workload by exactly $64$."
+        "A dosing chart is designed from $100m^{\\frac{-1}{2}}=20$. The chart claims the matching mass index is $m=26$.",
+        "A concentration reader has $y=3x^{-1/2}$ for positive $x$. The laboratory sheet solves backward using $x=\\left(\\frac3y\\right)^2$.",
+        "A media platform uses $E(n)=Kn^{0.75}$ for engagement. Its dashboard displays an elasticity of $\\dfrac{7}{4}$.",
+        "A pediatric dosage table is generated from $A(k)=100k^{-1/2}$. For the category $k=25$, the table prints $21$ mg.",
+        "A radiology room models dose rate by $D(r)=Kr^{-3/2}$. Four times the distance is described as producing $\\dfrac{1}{8}$ of the former dose."
       ],
       "answer_key": [
         false,
@@ -565,15 +565,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$100m^{-\\frac12}=20$$\n\n$$m^{-\\frac12}=\\frac15$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$m=\\left(\\frac15\\right)^{-2}=25$$\n\nThe target requires $m=25$, whereas the analyst claims $m=20$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{-1/2}=\\frac y3$$\n\n$$x=\\left(\\frac3y\\right)^2$$\n\nThe valid inverse rule is $x=\\left(\\frac3y\\right)^2$, compared with the claimed $x=\\left(\\frac3y\\right)^2$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → False\n\nDifferentiate and form the percentage-response ratio.\n\n$$E'(n)=A(0.75)n^{0.75-1}$$\n\n$$\\varepsilon=\\frac{n}{E}E'(n)=\\frac{n}{An^{0.75}}A(0.75)n^{0.75-1}=0.75$$\n\nThe elasticity is $0.75$, while the statement gives $1.75$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**D.** → False\n\nUse the recorded input in the power model.\n\n$$A(25)=\\frac{100}{\\sqrt{25}}$$\n\n$$A(25)=20$$\n\nThe evaluated output is $20$ mg, while the stem claims $25$ mg.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{W(32N)}{W(N)}=\\frac{A(32N)^{\\frac65}}{AN^{\\frac65}}$$\n\n$$=(32)^{\\frac65}=64$$\n\nThe exact scale multiplier is $64$, compared with the claimed $64$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$100m^{\\frac{-1}{2}}=20$$\n\nDivide by the coefficient:\n\n$$m^{\\frac{-1}{2}}=\\dfrac{1}{5}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$m=(\\dfrac{1}{5})^{-2}=25$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$25\\ne26$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{-1/2}=\\frac y3$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac3y\\right)^2$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$3\\left(\\left(\\frac3y\\right)^2\\right)^{-1/2}=y$$\n\nThus the valid recovery expression is $\\left(\\frac3y\\right)^2$, whereas the stem proposes $\\left(\\frac3y\\right)^2$:\n\n$$\\left(\\frac3y\\right)^2=\\left(\\frac3y\\right)^2$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → False\n\nFor a power law $Y=Kx^a$, differentiate before forming elasticity:\n\n$$\\frac{dY}{dx}=Ka x^{a-1}$$\n\nUse the point-elasticity definition:\n\n$$\\varepsilon=\\frac{x}{Y}\\frac{dY}{dx}\n=\\frac{x}{Kx^a}\\left(Ka x^{a-1}\\right)$$\n\nAll variable and coefficient factors cancel:\n\n$$\\varepsilon=a=\\dfrac{3}{4}$$\n\nThe reported elasticity is $\\dfrac{7}{4}$, and hence\n\n$$\\dfrac{3}{4}\\ne\\dfrac{7}{4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**D.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$A(25)=\\frac{100}{\\sqrt{25}}$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$A(25)=\\frac{100}{5}$$\n\nHence the model output is\n\n$$A(25)=20\\text{ mg}$$\n\nThe stem's value is $21\\text{ mg}$, so the numerical comparison is\n\n$$20\\ne21$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{D(4r)}{D(r)}\n=\\frac{K(4r)^{\\frac{-3}{2}}}{Kr^{\\frac{-3}{2}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{D(4r)}{D(r)}\n=(4)^{\\frac{-3}{2}}$$\n\nEvaluating that power gives\n\n$$(4)^{\\frac{-3}{2}}=\\dfrac{1}{8}$$\n\nThe proposed multiplier is $\\dfrac{1}{8}$, and therefore\n\n$$\\dfrac{1}{8}=\\dfrac{1}{8}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 115,
-      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\n\nIndependent mini-problems: A: solve the dose target equation on its positive domain; B: derive an inverse power rule with its domain restriction; C: derive constant elasticity from a power model; D: evaluate the recommended amount power model at one measured input; E: cancel the coefficient and apply the workload scale exponent. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: solve, compose_inverse, growth_elastic, evaluate, scaling.\nA: solve the positive power equation for m.\nB: derive and verify the inverse on its restricted domain.\nC: analyze percentage growth, elasticity, domain, or joint input scaling.\nD: evaluate the A model at k=25.\nE: derive the scale multiplier for D.",
       "placeholder": false
     },
     {
@@ -583,11 +583,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a radius recovery tool, the power calibration is $y=16x^{1/4}$ on the restricted domain $x\\ge0$. Solving for the original input gives the inverse recovery rule $x=\\left(\\frac y{16}\\right)^{1/4}$.",
-        "At a concentration lab, response is modeled by $C(x)=7x^{-1}$ under ordinary real-power conventions. The report states that its real domain and range are exactly $x\\ne0\\text{ and }C\\ne0$.",
-        "At a vibration lab, amplitude score is modeled by $V(y)=0.5y^{4}$ for positive inputs. When the recorded input is $y=3$, the model returns exactly $40.5$ units.",
-        "At a radiation lab, dose rate follows the power law $D(r)=Ar^{-\\frac32}$ for positive $r$. Multiplying the input by $4$ therefore multiplies the modeled dose rate by exactly $\\frac1{16}$.",
-        "At a logistics hub, capacity is modeled by $C=15w^{\\frac35}$ for $w>0$. To reach the target $C=120$, an analyst claims the required input is $w=32$."
+        "A radius encoder sends $x\\ge0$ to $y=16x^{1/4}$. The decoder is advertised as $x=\\left(\\frac y{16}\\right)^{1/4}$.",
+        "A concentration model is $C(x)=7x^{-1}$ under real arithmetic. The laboratory identifies the domain and range as $x\\ne0\\text{ and }C\\ne0$.",
+        "A vibration bench converts amplitude with $V(y)=\\frac12y^{4}$. The observation $y=3$ is assigned the value $\\dfrac{81}{2}$.",
+        "A radio engineer uses $B(x)=Kx^{4/3}$ for bandwidth. Multiplying power by eight allegedly multiplies bandwidth by $17$.",
+        "A logistics hub must make $15w^{\\frac{3}{5}}=120$ hold. Its planning model returns width $32$."
       ],
       "answer_key": [
         false,
@@ -597,15 +597,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nIsolate the power of the input and respect the stated domain.\n\n$$x^{1/4}=\\frac y{16}$$\n\n$$x=\\left(\\frac y{16}\\right)^4$$\n\nThe valid inverse rule is $x=\\left(\\frac y{16}\\right)^4$, compared with the claimed $x=\\left(\\frac y{16}\\right)^{1/4}$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → True\n\nInterpret the fractional or negative power before stating domain and range.\n\n$$x\\ne0,\\qquad 7x^{-1}=\\frac7x\\ne0$$\n\n$$\\text{actual domain and range: }x\\ne0\\text{ and }C\\ne0$$\n\nThe report instead gives $x\\ne0\\text{ and }C\\ne0$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**C.** → True\n\nUse the recorded input in the power model.\n\n$$V(3)=0.5(3)^4$$\n\n$$V(3)=40.5$$\n\nThe evaluated output is $40.5$ units, while the stem claims $40.5$ units.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{D(4r)}{D(r)}=\\frac{A(4r)^{-\\frac32}}{Ar^{-\\frac32}}$$\n\n$$=(4)^{-\\frac32}=\\frac18$$\n\nThe exact scale multiplier is $\\frac18$, compared with the claimed $\\frac1{16}$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nSet the power model equal to the target and isolate the power first.\n\n$$15w^{\\frac35}=120$$\n\n$$w^{\\frac35}=8$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$w=8^{5/3}=32$$\n\nThe target requires $w=32$, whereas the analyst claims $w=32$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{1/4}=\\frac y{16}$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac y{16}\\right)^4$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$16\\left(\\left(\\frac y{16}\\right)^4\\right)^{1/4}=y$$\n\nThus the valid recovery expression is $\\left(\\frac y{16}\\right)^4$, whereas the stem proposes $\\left(\\frac y{16}\\right)^{1/4}$:\n\n$$\\left(\\frac y{16}\\right)^4\\ne\\left(\\frac y{16}\\right)^{1/4}$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → True\n\nRewrite the rational or negative power in ordinary real terms:\n\n$$7x^{-1}=\\frac7x$$\n\nThis reveals the admissible inputs and attainable outputs:\n\n$$x\\ne0,\\qquad \\frac7x\\ne0$$\n\nTherefore the actual domain-range pair is\n\n$$x\\ne0\\text{ and }C\\ne0$$\n\nThe report states $x\\ne0\\text{ and }C\\ne0$, so\n\n$$x\\ne0\\text{ and }C\\ne0=x\\ne0\\text{ and }C\\ne0$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**C.** → True\n\nSubstitute the recorded input into the stated model:\n\n$$V(3)=\\frac12(3)^4$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$V(3)=\\frac12\\cdot81$$\n\nHence the model output is\n\n$$V(3)=\\dfrac{81}{2}\\text{ units}$$\n\nThe stem's value is $\\dfrac{81}{2}\\text{ units}$, so the numerical comparison is\n\n$$\\dfrac{81}{2}=\\dfrac{81}{2}$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{B(8x)}{B(x)}\n=\\frac{K(8x)^{\\frac{4}{3}}}{Kx^{\\frac{4}{3}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{B(8x)}{B(x)}\n=(8)^{\\frac{4}{3}}$$\n\nEvaluating that power gives\n\n$$(8)^{\\frac{4}{3}}=16$$\n\nThe proposed multiplier is $17$, and therefore\n\n$$16\\ne17$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$15w^{\\frac{3}{5}}=120$$\n\nDivide by the coefficient:\n\n$$w^{\\frac{3}{5}}=8$$\n\nRaise both sides to the reciprocal exponent:\n\n$$w=(8)^{\\frac{5}{3}}=32$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$32=32$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 116,
-      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\n\nIndependent mini-problems: A: derive an inverse power rule with its domain restriction; B: determine the real domain and range of a power model; C: evaluate the amplitude score power model at one measured input; D: cancel the coefficient and apply the dose rate scale exponent; E: solve the capacity target equation on its positive domain. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: compose_inverse, growth_elastic, evaluate, scaling, solve.\nA: derive and verify the inverse on its restricted domain.\nB: analyze percentage growth, elasticity, domain, or joint input scaling.\nC: evaluate the V model at y=3.\nD: derive the scale multiplier for B.\nE: solve the positive power equation for w.",
       "placeholder": false
     },
     {
@@ -615,11 +615,11 @@
       "subsection": "8.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a robotics plant, production follows $Q=8L^{2/3}K^{1/3}$ for positive labour and capital. When both inputs are doubled, the output is multiplied by exactly $4$.",
-        "At a logistics model, capacity is modeled by $K(w)=8w^{2/5}$ for positive inputs. When the recorded input is $w=32$, the model returns exactly $64$ units.",
-        "At a fluid facility, flow index follows the power law $F(p)=Ap^{\\frac73}$ for positive $p$. Multiplying the input by $8$ therefore multiplies the modeled flow index by exactly $128$.",
-        "At a tidal lab, force is modeled by $F=3d^{-\\frac43}$ for $d>0$. To reach the target $F=\\frac3{16}$, an analyst claims the required input is $d=4$.",
-        "At a geometry pipeline, a reading first passes through $g(x)=25x^2$ and then through $f(u)=2u^{1/2}$. For the input $x=4$, the composed output $f(g(4))$ is exactly $40$."
+        "A robot cell has production function $Q=8L^{2/3}K^{1/3}$. Doubling both inputs is claimed to multiply production by $4$.",
+        "A freight terminal estimates capacity via $K(w)=8w^{2/5}$. Its planning sheet maps $w=32$ to $33$ containers.",
+        "A sensor manufacturer calibrates response with $S(q)=Kq^{2/5}$. Raising charge by a factor of thirty-two is said to scale response by $4$.",
+        "A tide gauge hits its alarm threshold at $3d^{\\frac{-4}{3}}=\\dfrac{3}{16}$. The coastal report solves this as $d=9$.",
+        "A depth probe uses $y=2x^{3/2}$ on its nonnegative domain. The inverse module is programmed with $x=\\left(\\frac y2\\right)^{2/3}$."
       ],
       "answer_key": [
         false,
@@ -629,15 +629,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nTake the ratio of new output to old output so the coefficient and original inputs cancel.\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{2/3+1/3}$$\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2$$\n\nThe production multiplier is $2$, compared with the claimed $4$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**B.** → False\n\nUse the recorded input in the power model.\n\n$$K(32)=8(\\sqrt[5]{32})^2$$\n\n$$K(32)=32$$\n\nThe evaluated output is $32$ units, while the stem claims $64$ units.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**C.** → True\n\nThe unknown coefficient $A$ cancels in the output ratio.\n\n$$\\frac{F(8p)}{F(p)}=\\frac{A(8p)^{\\frac73}}{Ap^{\\frac73}}$$\n\n$$=(8)^{\\frac73}=128$$\n\nThe exact scale multiplier is $128$, compared with the claimed $128$.\n\nTherefore, the claim is verified, so the statement is True.",
-        "**D.** → False\n\nSet the power model equal to the target and isolate the power first.\n\n$$3d^{-\\frac43}=\\frac3{16}$$\n\n$$d^{-\\frac43}=\\frac1{16}$$\n\nApply the reciprocal exponent on the positive domain:\n\n$$d=\\left(\\frac1{16}\\right)^{-3/4}=8$$\n\nThe target requires $d=8$, whereas the analyst claims $d=4$.\n\nTherefore, the claim does not match the solved result, so the statement is False.",
-        "**E.** → True\n\nApply the inner map before the outer map.\n\n$$g(4)=25(4)^2=400$$\n\n$$f(g(4))=2\\sqrt{400}=40$$\n\nThe composition returns $40$, while the stated output is $40$.\n\nTherefore, the claim is verified, so the statement is True."
+        "**A.** → False\n\nCompare new output with old output so the coefficient and original inputs disappear:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2^{2/3}2^{1/3}$$\n\nCombine the contributions from the separately changed inputs:\n\n$$\\frac{Q_{\\rm new}}{Q_{\\rm old}}=2$$\n\nThus the exact production multiplier is\n\n$$m_Q=2$$\n\nThe proposed factor is $4$, giving\n\n$$2\\ne4$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**B.** → False\n\nSubstitute the recorded input into the stated model:\n\n$$K(32)=8(\\sqrt[5]{32})^2$$\n\nInterpret the rational or negative exponent before doing the final arithmetic:\n\n$$K(32)=8\\cdot4$$\n\nHence the model output is\n\n$$K(32)=32\\text{ containers}$$\n\nThe stem's value is $33\\text{ containers}$, so the numerical comparison is\n\n$$32\\ne33$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**C.** → True\n\nForm a ratio so the unknown positive coefficient and the original input cancel:\n\n$$\\frac{S(32q)}{S(q)}\n=\\frac{K(32q)^{\\frac{2}{5}}}{Kq^{\\frac{2}{5}}}$$\n\nSeparate the scale factor from the original power:\n\n$$\\frac{S(32q)}{S(q)}\n=(32)^{\\frac{2}{5}}$$\n\nEvaluating that power gives\n\n$$(32)^{\\frac{2}{5}}=4$$\n\nThe proposed multiplier is $4$, and therefore\n\n$$4=4$$\n\nThe mathematical result agrees with the claim, so the statement is True.",
+        "**D.** → False\n\nKeep the positive-domain restriction in view and isolate the power first:\n\n$$3d^{\\frac{-4}{3}}=\\dfrac{3}{16}$$\n\nDivide by the coefficient:\n\n$$d^{\\frac{-4}{3}}=\\dfrac{1}{16}$$\n\nRaise both sides to the reciprocal exponent:\n\n$$d=(\\dfrac{1}{16})^{\\frac{-3}{4}}=8$$\n\nOnly the positive solution is admissible in this model. Comparing it with the proposed value gives\n\n$$8\\ne9$$\n\nThe mathematical result does not agree with the claim, so the statement is False.",
+        "**E.** → True\n\nStart from the calibration equation and isolate the power of the original input:\n\n$$x^{3/2}=\\frac y2$$\n\nUse the reciprocal exponent on the stated one-to-one branch:\n\n$$x=\\left(\\frac y2\\right)^{2/3}$$\n\nSubstitution into the forward rule checks the inverse:\n\n$$2\\left(\\left(\\frac y2\\right)^{2/3}\\right)^{3/2}=y$$\n\nThus the valid recovery expression is $\\left(\\frac y2\\right)^{2/3}$, whereas the stem proposes $\\left(\\frac y2\\right)^{2/3}$:\n\n$$\\left(\\frac y2\\right)^{2/3}=\\left(\\frac y2\\right)^{2/3}$$\n\nThe mathematical result agrees with the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 117,
-      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\n\nIndependent mini-problems: A: combine labour and capital exponents in a production ratio; B: evaluate the capacity power model at one measured input; C: cancel the coefficient and apply the flow index scale exponent; D: solve the force target equation on its positive domain; E: evaluate a two-stage composition in the stated order. Each letter is solved from its own stem; no result is shared across letters.",
+      "solution_overview": "Topics: growth_elastic, evaluate, scaling, solve, compose_inverse.\nA: analyze percentage growth, elasticity, domain, or joint input scaling.\nB: evaluate the K model at w=32.\nC: derive the scale multiplier for S.\nD: solve the positive power equation for d.\nE: derive and verify the inverse on its restricted domain.",
       "placeholder": false
     }
   ]
