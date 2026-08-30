@@ -171,7 +171,7 @@ function Index() {
           <div className="relative mx-auto mt-8 flex w-full max-w-6xl flex-wrap items-center justify-center gap-2 sm:gap-3">
             {(
               [
-                { key: "practice", label: "Задания" },
+                { key: "practice", label: "Practice Tasks" },
                 { key: "mock", label: "Mock Builder" },
               ] as const
             ).map((m) => (
