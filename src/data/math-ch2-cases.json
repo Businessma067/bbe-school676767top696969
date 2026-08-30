@@ -23,9 +23,9 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nExpand the square by distributing:\n\n$$(a+b)^2=(a+b)(a+b)$$\n\nCollecting like terms recovers the claimed right-hand side $a^2+2ab+b^2$. The two sides therefore agree for every admissible value. So the statement is True.",
-    "**B.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**B.** → True\n\nUse the square-of-a-sum rule with the second term equal to $1$:\n\n$$(x+1)^2=x^2+2(x)(1)+1^2$$\n\n$$=x^2+2x+1$$\n\nThis is exactly the claimed expansion, so the statement is True.",
     "**C.** → True\n\nUse $(p-q)^2=(p+q)^2-4pq$ with the printed symmetric data.\n\n$$(p-q)^2=(p+q)^2-4pq$$\n\nComparing this value with the claim shows the statement is True.",
-    "**D.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**D.** → True\n\nSquare a product by squaring each factor:\n\n$$(2t)^2=(2t)(2t)$$\n\n$$=4t^2$$\n\nThe result matches the claimed monomial, so the statement is True.",
     "**E.** → False\n\nThe correct bridge from sum and product to the sum of squares is\n\n$$a^2+b^2=(a+b)^2-2ab$$\n\nThe printed formula alters the coefficient of the product term, so it disagrees with the expansion. So the statement is False."
    ],
    "solution_overview": "Five direct square expansions: three standard identities, one monomial square, and one missing middle term.",
@@ -55,10 +55,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nFactor the difference of squares in $x$ and $y$:\n\n$$(x-y)(x+y)=x^2-y^2$$\n\nBoth factors match the printed identity.\n\nSo the statement is True.",
-    "**B.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**B.** → True\n\nApply the difference-of-squares rule with the second square equal to $1^2$:\n\n$$a^2-1^2=(a-1)(a+1)$$\n\nSince $1^2=1$, this is the claimed factorisation, so the statement is True.",
+    "**C.** → True\n\nApply the difference-of-squares rule to $u^2-v^2$:\n\n$$u^2-v^2=(u-v)(u+v)$$\n\nMultiplication is commutative, so $(u-v)(u+v)=(u+v)(u-v)$. This matches the claim, so the statement is True.",
     "**D.** → False\n\nA difference of squares is not a square of a difference:\n\n$$k^2-9=(k-3)(k+3),\\qquad (k-3)^2=k^2-6k+3^2$$\n\nAt the test point $k=0$ the two polynomials already disagree, so the statement is False.",
-    "**E.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True."
+    "**E.** → True\n\nApply the difference-of-squares rule with $4=2^2$:\n\n$$r^2-4=r^2-2^2$$\n\n$$=(r-2)(r+2)$$\n\nThe factors agree with the printed expression, so the statement is True."
    ],
    "solution_overview": "Five factorisations of a difference of squares, including one squared-difference trap.",
    "sort_order": 2,
@@ -88,8 +88,8 @@
    "tactical_explanations": [
     "**A.** → True\n\nFrom the elementary expansion $(a+b)^2=a^2+2ab+b^2$ one isolates the sum of squares:\n\n$$a^2+b^2=(a+b)^2-2ab$$\n\nSubstituting the given sum and product (in letters) recovers the claimed relation. So the statement is True.",
     "**B.** → True\n\nFrom the elementary expansion $(a+b)^2=a^2+2ab+b^2$ one isolates the sum of squares:\n\n$$a^2+b^2=(a+b)^2-2ab$$\n\nSubstituting the given sum and product (in letters) recovers the claimed relation. So the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
-    "**D.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**C.** → True\n\nUse the square-of-a-sum identity and isolate the sum of squares:\n\n$$u^2+v^2=(u+v)^2-2uv$$\n\nSubstitute $u+v=r$ and $uv=w$:\n\n$$u^2+v^2=r^2-2w$$\n\nThis is the claimed relation, so the statement is True.",
+    "**D.** → True\n\nUse the square-of-a-sum identity and isolate the sum of squares:\n\n$$c^2+d^2=(c+d)^2-2cd$$\n\nSubstitute $c+d=h$ and $cd=k$:\n\n$$c^2+d^2=h^2-2k$$\n\nThis is the claimed relation, so the statement is True.",
     "**E.** → False\n\nThe correct bridge from sum and product to the sum of squares is\n\n$$a^2+b^2=(a+b)^2-2ab$$\n\nThe printed formula alters the coefficient of the product term, so it disagrees with the expansion. So the statement is False."
    ],
    "solution_overview": "Five square-sum recoveries from sum and product using $a^2+b^2=(a+b)^2-2ab$.",
@@ -119,10 +119,10 @@
    ],
    "tactical_explanations": [
     "**A.** → True\n\nThe identity $a^3+b^3+c^3=3abc$ collapses only when $a+b+c=0$.\n\nThe note uses values that do not sum to zero, so the shortcut fails.\n\nMatching these figures to the claim, the statement is True.",
-    "**B.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**B.** → True\n\nUse the three-variable cubic factorisation:\n\n$$x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$$\n\nUnder the hypothesis $x+y+z=0$,\n\n$$x^3+y^3+z^3-3xyz=0$$\n\nTherefore $x^3+y^3+z^3=3xyz$, so the statement is True.",
     "**C.** → True\n\nUnder the hypothesis that the three letters sum to zero, the standard cubic identity collapses.\n\nStart from:\n\n$$a^3+b^3+c^3-3abc=(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$$\n\nWhen $a+b+c=0$ the right-hand side vanishes, so $a^3+b^3+c^3=3abc$. So the statement is True.",
     "**D.** → False\n\nThe identity $a^3+b^3+c^3=3abc$ collapses only when $a+b+c=0$.\n\nThe note uses values that do not sum to zero, so the shortcut fails.\n\nSo the statement is False.",
-    "**E.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True."
+    "**E.** → True\n\nUse the three-variable cubic factorisation:\n\n$$m^3+n^3+t^3-3mnt=(m+n+t)(m^2+n^2+t^2-mn-nt-tm)$$\n\nUnder the hypothesis $m+n+t=0$,\n\n$$m^3+n^3+t^3-3mnt=0$$\n\nTherefore $m^3+n^3+t^3=3mnt$, so the statement is True."
    ],
    "solution_overview": "Five uses of the vanishing-sum cube identity with letter-only hypotheses.",
    "sort_order": 4,
@@ -246,11 +246,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nExpand the binomial square using the doubled-product middle term:\n\n$$(3y-2)^2=(3y)^2-2(3y)(2)+2^2$$\n\n$$=9y^2-12y+4$$\n\nThe expansion matches the claimed polynomial, so the statement is True.",
     "**B.** → False\n\nThe printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.\n\nDifference of the two sides:\n\n$$r^2+rs-(rs+s^2) = r^2-s^2$$\n\n$$= (r-s)(r+s)$$\n\nThe factorisation $(r-s)(r+s)$ is not a square, so the sign can change.\n\nFor $r=0$, $s=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.\n\nSo the statement is False.",
     "**C.** → False\n\nExpand the left-hand side fully:\n\n$$(f+1)^2$$\n\nThe expansion produces cross terms that the claimed right-hand side $f^2+1$ does not match. Comparing coefficients shows the identity fails in general. So the statement is False.",
-    "**D.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
-    "**E.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True."
+    "**D.** → True\n\nApply the difference-of-squares rule with $25=5^2$:\n\n$$z^2-25=z^2-5^2$$\n\n$$=(z-5)(z+5)$$\n\nThe factors match the claim for every real $z$, so the statement is True.",
+    "**E.** → True\n\nUse the quotient rule for exponents and the given value $p^{-3}q^2=2$. The first term is\n\n$$\\frac{p^8q^3}{p^2q^7}=p^6q^{-4}=(p^{-3}q^2)^{-2}=2^{-2}=0.25$$\n\nThe second term is\n\n$$3pq\\cdot\\frac{p^{-6}q^5}{p^7q^{-2}}=3p^{-12}q^8$$\n\n$$=3(p^{-3}q^2)^4=3(2^4)=48$$\n\nThus the full expression is\n\n$$0.25+48=48.25$$\n\nThis equals the claimed value, so the statement is True."
    ],
    "solution_overview": "Five recognition checks: a genuine perfect square, a missing middle, an undoubled elementary product, a difference of squares, and a subtracted-square remainder.",
    "sort_order": 8,
@@ -536,7 +536,7 @@
    "tactical_explanations": [
     "**A.** → False\n\nThe right-hand squares use a wrong letter pairing inside each square. Compare with the standard Brahmagupta cross terms.\n\nCorrect identity:\n\n$$(f^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$$\n\nThis is the standard sum-of-squares product factorisation.\n\nPrinted pairing:\n\n$$(ft+gt)^2+(fx-gx)^2$$\n\nFactoring shows these squares are not the same polynomials.\n\nExpanding both readings separates them; the error appears only in the cross pairing.\n\nMatching these figures to the claim, the statement is False.",
     "**B.** → True\n\nExpand the square by distributing:\n\n$$(7p-1)^2=(7p-1)(7p-1)$$\n\nCollecting like terms recovers the claimed right-hand side $49p^2-14p+1$. The two sides therefore agree for every admissible value. So the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**C.** → True\n\nUse the square-of-a-sum identity and isolate the sum of squares:\n\n$$u^2+v^2=(u+v)^2-2uv$$\n\nSubstitute $u+v=s$ and $uv=p$:\n\n$$u^2+v^2=s^2-2p$$\n\nThis is the claimed relation, so the statement is True.",
     "**D.** → True\n\nThis is the general three-variable factoring identity, valid with no hypothesis on $(a+b+c)$. Multiply out the right side:\n\n$$(a+b+c)(a^2+b^2+c^2-ab-bc-ca)$$\n\n$$a^3+b^3+c^3-3abc$$\n\nEvery cross term produced by the first factor cancels against a term from the second except the printed leftover, so the two sides agree for every real triple, not only under a vanishing-sum hypothesis.\n\nSo the statement is True.",
     "**E.** → False\n\nExpand the left-hand side fully:\n\n$$(x+1)^2$$\n\nThe expansion produces cross terms that the claimed right-hand side $x^2+1$ does not match. Comparing coefficients shows the identity fails in general. So the statement is False."
    ],
@@ -566,11 +566,11 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nUse the sum-and-product identity\n\n$$r^2+s^2=(r+s)^2-2rs$$\n\nThe printed hypothesis gives $r+s=s$ and $rs=p$. Substitution yields\n\n$$r^2+s^2=s^2-2p$$\n\nThis is exactly the claimed relation, so the statement is True.",
     "**B.** → False\n\nThe right-hand squares use a wrong letter pairing inside each square. Compare with the standard Brahmagupta cross terms.\n\nCorrect identity:\n\n$$(u^2+v^2)(w^2+z^2)=(uw-vz)^2+(uz+vw)^2$$\n\nThis is the standard sum-of-squares product factorisation.\n\nPrinted pairing:\n\n$$(uw+vw)^2+(uz-vz)^2$$\n\nFactoring shows these squares are not the same polynomials.\n\nExpanding both readings separates them; the error appears only in the cross pairing, so the statement is False.",
     "**C.** → False\n\nDifference of cubes leaves three terms in the quotient:\n\nFactor:\n\n$$\\frac{j^3-1331}{j-11}=j^2+11j+121$$\n\nAt the test point:\n\n$$j = 0 \\Rightarrow 121 \\text{ on both sides, but } j$$\n\n$$= 1 \\Rightarrow 133 \\neq 122$$\n\nMatching these figures to the claim, the statement is False.",
-    "**D.** → False\n\nParse the printed claim and reduce both sides by expanding or factoring.\n\nA mismatch appears: either a missing cross term, a wrong coefficient, or a domain issue.\n\nBecause the reduced forms are not identical, the universal statement is false. So the statement is False.",
-    "**E.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True."
+    "**D.** → False\n\nUse the binomial theorem to identify the $x^2y$ term:\n\n$$(x+y)^3=x^3+3x^2y+3xy^2+y^3$$\n\nThe coefficient of $x^2y$ is $3$, not $1$, so the statement is False.",
+    "**E.** → True\n\nTreat the two quadratic factors as a difference of squares:\n\n$$(p^2-2pq+2q^2)(p^2+2pq+2q^2)$$\n\n$$=(p^2+2q^2)^2-(2pq)^2$$\n\nExpanding and cancelling the mixed terms gives\n\n$$p^4+4p^2q^2+4q^4-4p^2q^2=p^4+4q^4$$\n\nThe product equals the stated fourth-power sum, so the statement is True."
    ],
    "solution_overview": "Five identity checks: a half-sum of squared gaps, an elementary difference square, a cubes-factor sign, a binomial coefficient, and a truncated Brahmagupta product.",
    "sort_order": 18,
@@ -694,7 +694,7 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nApply the square-of-a-difference rule with $A=x^2$ and $B=y^2$:\n\n$$(A-B)^2=A^2-2AB+B^2$$\n\nSubstitution gives\n\n$$(x^2-y^2)^2=x^4-2x^2y^2+y^4$$\n\nThis matches the claimed expansion, so the statement is True.",
     "**B.** → True\n\nApply the difference-of-squares rule three times in a row, each time to the product built so far:\n\n$$(x-1)(x+1)=x^2-1$$\n\n$$(x^2-1)(x^2+1)=x^4-1$$\n\n$$(x^4-1)(x^4+1)=x^8-1$$\n\nEach step only ever removes a square, so the final product telescopes to $x^8-1$, matching the claim.\n\nSo the statement is True.",
     "**C.** → False\n\nCollapsing the same chain of difference-of-squares steps gives\n\n$$(x-1)(x+1)(x^2+1)=x^4-1,\\qquad (x^4-1)(x^4+1)=x^8-1$$\n\nso the true product is $x^8-1$, not $x^{16}-1$. The two polynomials differ by $x^{16}-x^8$, which is not identically zero.\n\nSo the statement is False.",
     "**D.** → True\n\nThe inequality compares two quadratic-looking sides in $r$ and $a$. Bring every term to one side and factor before deciding whether the difference is always nonnegative.\n\nRearrange to one side:\n\n$$r^2-rs-(rs-a^2)=r^2-2rs+a^2$$\n\nCollecting like terms exposes a perfect square.\n\nRecognise the square:\n\n$$(r-a)^2\\ge 0$$\n\nA square is nonnegative for every real pair.\n\nSince the difference is a square, the inequality holds on the whole line, so the statement is True.",
@@ -726,9 +726,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nIn the square of a sum, each product of two distinct terms appears twice. The $ab$ contributions are\n\n$$a\\cdot b+b\\cdot a=2ab$$\n\nThus the coefficient of $ab$ in $(a+b+c+d)^2$ is $2$, so the statement is True.",
     "**B.** → True\n\nComplete the square on $t^2+6t+11$ by halving the linear coefficient:\n\n$$t^2+6t+11=(t^2+6t+9)+2=(t+3)^2+2$$\n\nSince $(t+3)^2\\ge 0$ for every real $t$, adding $2$ gives $t^2+6t+11\\ge 2$, with equality exactly at $t=-3$.\n\nSo the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**C.** → True\n\nSophie Germain's method completes a square and then subtracts the added mixed term:\n\n$$(t^2+2)^2=t^4+4t^2+4$$\n\n$$(t^2+2)^2-(2t)^2=t^4+4t^2+4-4t^2$$\n\n$$=t^4+4$$\n\nThe completing step reproduces the original expression, so the statement is True.",
     "**D.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(u^2+v^2)(w^2+a^2)=(uw-vz)^2+(uz+vw)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters.\n\nComparing this value with the claim shows the statement is True.",
     "**E.** → False\n\nCompleting the square correctly gives\n\n$$t^2+6t+11=(t+3)^2+2$$\n\nnot $(t+3)^2-2$: the printed version drags the constant down by $4$. Since $(t+3)^2\\ge 0$, the true minimum value of the expression is $2$, attained at $t=-3$, so it never falls below $2$.\n\nSo the statement is False."
    ],
@@ -824,7 +824,7 @@
    "tactical_explanations": [
     "**A.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(a^2+g^2)(t^2+x^2)=(ft-gx)^2+(fx+gt)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters, so the statement is True.",
     "**B.** → True\n\nGroup the four terms in pairs and pull out a common factor from each pair:\n\n$$pr+ps+qr+qs=p(r+s)+q(r+s)$$\n\n$$=p(r+s)+q(r+s)=(p+q)(r+s)$$\n\nThe regrouped expression matches the printed factorisation exactly.\n\nSo the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**C.** → True\n\nUse the square-of-a-sum identity and isolate the sum of squares:\n\n$$f^2+g^2=(f+g)^2-2fg$$\n\nSubstitute $f+g=s$ and $fg=p$:\n\n$$f^2+g^2=s^2-2p$$\n\nThis is the claimed relation, so the statement is True.",
     "**D.** → False\n\nGrouping in pairs and factoring gives\n\n$$pr+ps+qr+qs=p(r+s)+q(r+s)=(p+q)(r+s)$$\n\nso the correct common factor is $(p+q)$, not $(p-q)$. The two products differ by $2q(r+s)$, which is not identically zero.\n\nSo the statement is False.",
     "**E.** → False\n\nExpand the left-hand side fully:\n\n$$(t+1)^2$$\n\nThe expansion produces cross terms that the claimed right-hand side $t^2+1$ does not match. Comparing coefficients shows the identity fails in general. So the statement is False."
    ],
@@ -918,7 +918,7 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nExpand the completed square and the square being subtracted:\n\n$$(x^2+2y^2)^2=x^4+4x^2y^2+4y^4$$\n\n$$(2xy)^2=4x^2y^2$$\n\nTherefore\n\n$$(x^2+2y^2)^2-(2xy)^2=x^4+4y^4$$\n\nThe added mixed term cancels exactly, so the statement is True.",
     "**B.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters.\n\nSo the statement is True.",
     "**C.** → True\n\nTreat $(p-q+r)^2$ as the square of the three-term sum $p+(-q)+r$ and expand every pairwise product, doubled:\n\n$$(p-q+r)^2=p^2+q^2+r^2+2\\bigl[p(-q)+pr+(-q)r\\bigr]$$\n\n$$=p^2+q^2+r^2-2pq+2pr-2qr$$\n\nEach cross-term sign is fixed by the sign of the two factors it comes from, and this matches the printed right side.\n\nSo the statement is True.",
     "**D.** → False\n\nExpand the left-hand side fully:\n\n$$(m+1)^2$$\n\nThe expansion produces cross terms that the claimed right-hand side $m^2+1$ does not match. Comparing coefficients shows the identity fails in general. So the statement is False.",
@@ -983,7 +983,7 @@
    ],
    "tactical_explanations": [
     "**A.** → False\n\nCollapsing the same chain of difference-of-squares steps gives\n\n$$(t-1)(t+1)(t^2+1)=t^4-1,\\qquad (t^4-1)(t^4+1)=t^8-1$$\n\nso the true product is $t^8-1$, not $t^{16}-1$. The two polynomials differ by $t^{16}-t^8$, which is not identically zero.\n\nSo the statement is False.",
-    "**B.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**B.** → True\n\nUse the sum-and-product identity\n\n$$p^2+q^2=(p+q)^2-2pq$$\n\nThe displayed conditions are $p+q=s$ and $pq=p$. Substitution gives\n\n$$p^2+q^2=s^2-2p$$\n\nThis is the claimed relation, so the statement is True.",
     "**C.** → False\n\nThe printed inequality looks like a square identity, but the middle signs differ. Rearrange and factor before testing whether the difference keeps one sign.\n\nDifference of the two sides:\n\n$$a^2+xy-(xy+y^2) = a^2-y^2$$\n\n$$= (a-y)(a+y)$$\n\nThe factorisation $(a-y)(a+y)$ is not a square, so the sign can change.\n\nFor $a=0$, $y=1$ the left side is $0$ and the right side is $1$, so the inequality fails on that pair.\n\nSo the statement is False.",
     "**D.** → True\n\nComplete the square on $u^2+6u+11$ by halving the linear coefficient:\n\n$$u^2+6u+11=(u^2+6u+9)+2=(u+3)^2+2$$\n\nSince $(u+3)^2\\ge 0$ for every real $u$, adding $2$ gives $u^2+6u+11\\ge 2$, with equality exactly at $u=-3$.\n\nSo the statement is True.",
     "**E.** → False\n\nSet $A=m+n$ and $B=m-n$. Then $A-B=2n$ and\n\n$$A^3-B^3=(A-B)(A^2+AB+B^2)$$\n\nThe quadratic factor expands to $3m^2+n^2$, so the difference is $2n(3m^2+n^2)$.\n\nSo the statement is False."
@@ -1046,9 +1046,9 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**A.** → True\n\nUse the square-of-a-sum rule with $A=x^2$ and $B=y^2$:\n\n$$(A+B)^2=A^2+2AB+B^2$$\n\nSubstitution gives\n\n$$(x^2+y^2)^2=x^4+2x^2y^2+y^4$$\n\nThis is the printed biquadratic, so the statement is True.",
     "**B.** → True\n\nThe claim is Brahmagupta's product of two sums of squares in four letters. Expand both sides or verify the standard cross pairing.\n\nBrahmagupta identity:\n\n$$(a^2+e^2)(c^2+d^2)=(ac-bd)^2+(ad+bc)^2$$\n\nThe pairings $(ac-bd)$ and $(ad+bc)$ are forced by the product structure.\n\nBoth sides match as an identity in the four letters.\n\nSo the statement is True.",
-    "**C.** → True\n\nParse the printed claim as an algebraic identity (or inequality) on the stated domain.\n\nExpand, factor, or clear denominators until both sides are in a comparable form.\n\nAfter simplification the two sides agree wherever the claim is defined, which confirms the statement. So the statement is True.",
+    "**C.** → True\n\nFactor the common binomial after grouping the four terms:\n\n$$x^3+3x^2-x-3=x^2(x+3)-1(x+3)$$\n\n$$=(x^2-1)(x+3)$$\n\nNow apply the difference-of-squares rule:\n\n$$=(x-1)(x+1)(x+3)$$\n\nThis is exactly the claimed factorisation, so the statement is True.",
     "**D.** → True\n\nWrite the cube sum in terms of the sum and product using $p^3+q^3=(p+q)^3-3pq(p+q)$:\n\n$$p^3+q^3=(p+q)^3-3pq(p+q)$$\n\nSubstituting the sum $s$ and product $p$ gives\n\n$$s^3-3ps$$\n\nwhich is exactly the printed right side, so the identity holds for every pair with that sum and product.\n\nSo the statement is True.",
     "**E.** → False\n\nThe correct cube-sum identity is $p^3+q^3=(p+q)^3-3pq(p+q)=s^3-3ps$: the subtracted term carries an extra factor of $s$ that the printed claim drops. Taking $s=2$ and $p=1$ (so $p=q=1$) gives left side $2$ but the printed formula $s^3-3p=8-3=5$, so the two expressions are not identically equal.\n\nSo the statement is False."
    ],
