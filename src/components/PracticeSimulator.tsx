@@ -211,22 +211,23 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
         setFade(false);
         await wait(320);
 
-        // ---- feature demo ----
+        // ---- feature demo (kept snappy: no long cursor idling) ----
         if (subject === "economics") {
           await moveTo("[data-sim-timed]");
           await click();
           setTimed(true);
-          await pause(420);
+          await wait(160);
         } else if (subject === "math") {
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(true);
-          await pause(900);
+          await wait(500);
           await moveTo("[data-sim-calc]");
           await click();
           setCalcOpen(false);
-          await pause(200);
+          await wait(120);
         }
+
 
         // ---- phase 1: read the case, statements gently grow ----
         if (scrollRef.current) await smoothScroll(scrollRef.current, 90, 900);
@@ -304,14 +305,10 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
 
   return (
     <div ref={stageRef} className="relative">
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-stretch">
+      <div className="relative flex flex-col gap-4 lg:flex-row lg:items-stretch">
         {/* ---------------- Task panel ---------------- */}
-        <div
-          className={cn(
-            "min-w-0 transition-all duration-[900ms] ease-in-out",
-            showSolution ? "lg:w-[52%]" : "lg:w-full",
-          )}
-        >
+        <div className="min-w-0 lg:w-full">
+
           <div
             ref={scrollRef}
             className={cn(
@@ -454,19 +451,26 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
           </div>
         </div>
 
-        {/* ---------------- Explanation panel ---------------- */}
+        {/* ---------------- Dim backdrop ---------------- */}
         <div
           className={cn(
-            "min-w-0 overflow-hidden transition-all duration-[900ms] ease-in-out",
-            showSolution
-              ? "max-h-[700px] opacity-100 lg:w-[48%]"
-              : "max-h-0 opacity-0 lg:w-0",
+            "pointer-events-none absolute inset-0 z-[5] rounded-2xl bg-background/70 transition-opacity duration-700 ease-in-out",
+            showSolution ? "opacity-100" : "opacity-0",
+          )}
+        />
+
+        {/* ---------------- Explanation panel (slides in from the right) ---------------- */}
+        <div
+          className={cn(
+            "absolute inset-y-0 right-0 z-10 w-full transition-transform duration-[900ms] ease-in-out lg:w-[56%]",
+            showSolution ? "translate-x-0" : "pointer-events-none translate-x-[105%]",
           )}
         >
           <div
             ref={explRef}
-            className="practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm sm:h-[560px] sm:p-6 lg:h-[640px]"
+            className="practice-scroll h-full max-h-full overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-2xl sm:p-6"
           >
+
             <p className="mb-4 text-[11px] font-bold uppercase tracking-widest text-primary">
               Explanation
             </p>
