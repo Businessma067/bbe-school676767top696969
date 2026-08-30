@@ -169,7 +169,7 @@ export default function MockBuilderSimulator() {
         setQuestionCount(12);
         await wait(600);
 
-        // ---- 4. shape the topic weights ----
+        // ---- 4. shape the topic weights (cursor drags the handle) ----
         const path: Vec2[] = [
           { x: 0.12, y: -0.32 },
           { x: 0.42, y: -0.1 },
@@ -177,13 +177,28 @@ export default function MockBuilderSimulator() {
           { x: -0.18, y: 0.2 },
           { x: -0.05, y: -0.08 },
         ];
-        await moveTo("[data-sim-weight] svg");
+        await moveTo("[data-sim-weight] [data-weight-handle]");
+        await click();
+        let from: Vec2 = balancedPoint();
         for (const p of path) {
           if (cancelled) return;
-          setWeightPoint(p);
-          await wait(420);
+          const STEPS = 10;
+          for (let i = 1; i <= STEPS; i++) {
+            if (cancelled) return;
+            const t = i / STEPS;
+            const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            setWeightPoint({
+              x: from.x + (p.x - from.x) * eased,
+              y: from.y + (p.y - from.y) * eased,
+            });
+            await new Promise<void>((r) => requestAnimationFrame(() => r()));
+            snapCursor("[data-sim-weight] [data-weight-handle]");
+            await wait(45);
+          }
+          from = p;
+          await wait(260);
         }
-        await wait(700);
+        await wait(600);
 
         // ---- 5. build ----
         await moveTo("[data-sim-build]");
