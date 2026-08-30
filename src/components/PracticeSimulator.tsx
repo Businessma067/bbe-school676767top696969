@@ -454,7 +454,7 @@ export default function PracticeSimulator({ subject }: { subject: SimSubject }) 
         {/* ---------------- Dim backdrop ---------------- */}
         <div
           className={cn(
-            "pointer-events-none absolute inset-0 z-[5] rounded-2xl bg-background/70 transition-opacity duration-700 ease-in-out",
+            "pointer-events-none absolute inset-0 z-[5] rounded-2xl bg-black/75 transition-opacity duration-700 ease-in-out",
             showSolution ? "opacity-100" : "opacity-0",
           )}
         />
