@@ -20,6 +20,29 @@ CH8_TOPICS = ["evaluate", "scaling", "solve", "compose_inverse", "growth_elastic
 CH12_TOPICS = ["12.1", "12.2", "12.3", "12.4", "12.5"]
 CH13_TOPICS = ["exact", "tail", "moments", "compare", "complement"]
 
+CASE_NOTES = [
+    "The result determines whether the quarter-end control file is reopened.",
+    "A second analyst must reproduce the figure before the archived report is released.",
+    "The disputed claim appears in a board paper scheduled for independent review.",
+    "The calculation governs a reserve that cannot be changed after the reporting cutoff.",
+    "An external auditor supplied the raw observations but not the intermediate work.",
+    "The final comparison decides whether a contractual performance clause is triggered.",
+    "Management rounded nothing in the source ledger, so the check must remain exact.",
+    "A regulator requested the calculation after two summary dashboards appeared inconsistent.",
+    "The decision affects the next operating plan, making a plausible shortcut unacceptable.",
+    "The source records were independently timestamped and must be reconciled without averaging.",
+    "The claim will set a published benchmark used by a separate quality-control team.",
+    "A one-unit discrepancy would change the exception status in the compliance register.",
+    "The result feeds a fixed-price quotation that expires when the review window closes.",
+    "The analyst inherited only the original observations and the disputed conclusion.",
+    "The check is part of a loss investigation with exact arithmetic required throughout.",
+    "The committee will accept the claim only if every hidden parameter is recovered first.",
+    "A competing forecast used a linear shortcut, which the review team must independently test.",
+    "The calculation controls a capacity decision for the next fully booked operating cycle.",
+    "The submitted value is close to the correct one, so estimation alone cannot settle it.",
+    "The signed review requires both the model choice and final numerical comparison to be shown.",
+]
+
 
 @dataclass(frozen=True)
 class Item:
@@ -1728,7 +1751,20 @@ def make_bank(
     for i in range(20):
         topic_indices = [(i + j) % len(topics) for j in range(5)]
         ordered_topics = [topics[k] for k in topic_indices]
-        items = [builders[k](i, truth_for(i, k)) for k in topic_indices]
+        items: list[Item] = []
+        for k in topic_indices:
+            raw = builders[k](i, truth_for(i, k))
+            items.append(
+                Item(
+                    statement=(
+                        f"{raw.statement} "
+                        f"Case note: {CASE_NOTES[(i + 3 * k) % len(CASE_NOTES)]}"
+                    ),
+                    truth=raw.truth,
+                    work=raw.work,
+                    summary=raw.summary,
+                )
+            )
         task_id = first_id + i
         topic_map = "; ".join(
             f"{letter}: {item.summary}" for letter, item in zip("ABCDE", items)
