@@ -7,23 +7,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Let $R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$. Both $\\{0\\}\\in R$ and $\\{\\{0\\}\\}\\subseteq R$ hold.",
-        "Given $A=\\{1,2,4,7\\}$, $B=\\{2,3,4,8\\}$, and $C=\\{4,5,8\\}$, the set $(A\\cap B)\\cup C$ is $\\{2,4,5,8\\}$.",
-        "For propositions $p,q,r$, the formulas $p\\rightarrow(q\\rightarrow r)$ and $(p\\wedge q)\\rightarrow r$ are logically equivalent.",
-        "On $D=\\{1,2,3,4,5\\}$, every $x$ has some $y$ in $D$ such that $x+y=6$.",
-        "A museum catalog uses a set $C$ of five distinct codes. Its power set has $31$ members."
+        "A curator groups the archive accession codes in $G=\\{a,b,c,d,e,f\\}$ as $\\mathcal B=\\{\\{a,b\\},\\{c,d\\},\\{e,f\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
+        "In a regional food survey of $71$ people, $33$ belong to the coffee group, $28$ to the tea group, and $23$ to the cocoa group. The reported pairwise totals are $10$, $8$, and $7$, each including the $3$ people in all three. The report concludes that exactly $11$ people belong to none of the coffee, tea, and cocoa groups.",
+        "A policy says a loan applicant is approved if and only if either credit score at least $710$ or a qualified guarantor, and additionally debt ratio below $38\\%$. Marisol fails the condition \"credit score at least $710$\", meets the condition \"a qualified guarantor\", and meets the condition \"debt ratio below $38\\%$\". The policy therefore approves Marisol.",
+        "For a tournament roster, Ava, Bruno, Cleo, Darius, and Esme may compete. The rules are: (1) Bruno competes if and only if Ava competes; (2) if Ava competes, then Darius competes; (3) exactly one of Darius and Esme competes; (4) if Esme competes, then Cleo does not compete; (5) at least one of Bruno or Cleo competes; (6) at least 2 people compete. A coordinator concludes that Bruno must compete in every valid assignment.",
+        "A curator groups the museum specimen numbers in $G=\\{1,2,3,4,5,6,7\\}$ as $\\mathcal B=\\{\\{1,2\\},\\{3,4,2\\},\\{5,6,7\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct."
       ],
-      "answer_key": [true, true, true, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied, so the statement is True.",
-        "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim, so the statement is True.",
-        "**C.** → True\n\nEliminate each implication until both formulas have the same disjunctive form.\n\n$$p\\rightarrow(q\\rightarrow r)\\equiv\\neg p\\vee(\\neg q\\vee r)$$\n\n$$(p\\wedge q)\\rightarrow r\\equiv\\neg(p\\wedge q)\\vee r$$\n\n$$\\neg(p\\wedge q)\\vee r\\equiv\\neg p\\vee\\neg q\\vee r$$\n\nBoth formulas reduce to $\\neg p\\vee\\neg q\\vee r$, so the statement is True.",
-        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$, so the statement is True.",
-        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members, so the statement is False."
+        "**A.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{a,b,c,d,e,f\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True.",
+        "**B.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=10-3=7,\\quad AC\\text{ only}=8-3=5,\\quad BC\\text{ only}=7-3=4$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=33+28+23-10-8-7+3=62$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=9$$\n\nThe report gives $11$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**C.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Marisol, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Marisol is approved. The statement says approved, which matches the biconditional, so the statement is True.",
+        "**D.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Cleo},\\text{Darius}\\}\\quad \\{\\text{Ava},\\text{Bruno},\\text{Darius}\\}\\quad \\{\\text{Ava},\\text{Bruno},\\text{Cleo},\\text{Darius}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**E.** → False\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{1,2,3,4,5,6,7\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\{2\\}$$\n\nThe displayed collection fails at least one required test, so the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 109,
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nested membership and subset.\nB: intersection followed by union.\nC: exporting a conjunction.\nD: finite-domain partner.\nE: power-set size.",
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1\n\nA: partition test with overlap, coverage, and outsider checks.\nB: three-set survey with pair totals containing the triple.\nC: concrete biconditional with an inner alternative and outer requirement.\nD: named roster deduction with interacting rules.\nE: partition test with overlap, coverage, and outsider checks.",
       "placeholder": false
     },
     {
@@ -33,23 +39,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "At a conference of $90$ people, $52$ attended the language panel, $41$ attended the data panel, and $18$ attended both. Exactly $17$ attended neither panel.",
-        "A rule written $p\\rightarrow q$ is always logically equivalent to its converse $q\\rightarrow p$.",
-        "The sentence $\\exists y\\in\\{1,2,3\\}\\ \\forall x\\in\\{1,2,3\\}\\ (x+y=4)$ is true.",
-        "Eight delegates form a set $D$. A committee must include Ava and omit Ben and Chen; exactly $32$ committees meet those rules.",
-        "For subsets $A$ and $B$ of a fixed universe, $(A\\cup B)^c=A^c\\cap B^c$."
+        "In a hospital skills audit of $87$ people, $40$ belong to the triage group, $34$ to the imaging group, and $28$ to the pharmacy group. The reported pairwise totals are $12$, $10$, and $9$, each including the $4$ people in all three. The report concludes that exactly $19$ people belong to exactly two of the three groups.",
+        "A policy says a cargo pilot is approved if and only if either at least $1{,}200$ flight hours or military-equivalent experience, and additionally a passed simulator check. Devon meets the condition \"at least $1{,}200$ flight hours\", fails the condition \"military-equivalent experience\", and fails the condition \"a passed simulator check\". The policy therefore approves Devon.",
+        "For a journal review panel, Farah, Gideon, Holly, Isaac, and Jun may review. The rules are: (1) if Isaac reviews, then Jun reviews; (2) if Jun reviews, then Gideon does not review; (3) at least one of Gideon or Holly reviews; (4) if Farah reviews, then Isaac reviews; (5) Holly and Farah cannot both review; (6) at least 2 people review. A coordinator concludes that it is possible for Isaac to review in a valid assignment.",
+        "A curator groups the rail-platform zones in $G=\\{N,S,E,W,C\\}$ as $\\mathcal B=\\{\\{N,C\\},\\{S\\},\\{E,W\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
+        "In a city transport poll of $112$ people, $56$ belong to the bus group, $42$ to the rail group, and $37$ to the cycling group. The reported pairwise totals are $16$, $14$, and $12$, each including the $5$ people in all three. The report concludes that exactly $35$ people belong to the bus group but neither the rail nor cycling group."
       ],
-      "answer_key": [false, false, false, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D|=52+41-18=75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel, so the statement is False.",
-        "**B.** → False\n\nOne truth assignment is enough to disprove a proposed logical equivalence.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q=F\\rightarrow T=T$$\n\n$$q\\rightarrow p=T\\rightarrow F=F$$\n\nThe original implication and its converse disagree, so the statement is False.",
-        "**C.** → False\n\nThe existential witness must stay fixed while the universal variable changes.\n\n$$x=1\\Longrightarrow y=3$$\n\n$$x=2\\Longrightarrow y=2$$\n\n$$3\\ne2$$\n\nNo single $y$ satisfies both required equations, so the statement is False.",
-        "**D.** → True\n\nFixing required and forbidden delegates leaves a free include-or-omit choice for everyone else.\n\n$$8-1-2=5$$\n\n$$\\#\\{\\text{admissible committees}\\}=2^5$$\n\n$$2^5=32$$\n\nExactly $32$ committees are possible, so the statement is True.",
-        "**E.** → True\n\nAn element outside a union must be outside each set separately.\n\n$$x\\in(A\\cup B)^c\\Longleftrightarrow x\\notin A\\cup B$$\n\n$$x\\notin A\\cup B\\Longleftrightarrow(x\\notin A)\\wedge(x\\notin B)$$\n\n$$(x\\notin A)\\wedge(x\\notin B)\\Longleftrightarrow x\\in A^c\\cap B^c$$\n\nBoth sides have the same elements, so the statement is True."
+        "**A.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=12-4=8,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=9-4=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=40+34+28-12-10-9+4=75$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=19$$\n\nThe report gives $19$, which matches the disjoint-region calculation, so the statement is True.",
+        "**B.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Devon, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Devon is rejected. The statement says approved, which does not match the biconditional, so the statement is False.",
+        "**C.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Holly},\\text{Jun}\\}\\quad \\{\\text{Holly},\\text{Isaac},\\text{Jun}\\}\\quad \\{\\text{Gideon},\\text{Holly}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**D.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{C,E,N,S,W\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True.",
+        "**E.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=16-5=11,\\quad AC\\text{ only}=14-5=9,\\quad BC\\text{ only}=12-5=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=56+42+37-16-14-12+5=98$$\n\nThe requested region count is\n\n$$N_{\\text{first group only}}=31$$\n\nThe report gives $35$, which does not match the disjoint-region calculation, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 110,
-      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: two-panel survey.\nB: converse of an implication.\nC: one witness for all inputs.\nD: required and forbidden members.\nE: De Morgan union law.",
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2\n\nA: three-set survey with pair totals containing the triple.\nB: concrete biconditional with an inner alternative and outer requirement.\nC: named roster deduction with interacting rules.\nD: partition test with overlap, coverage, and outsider checks.\nE: three-set survey with pair totals containing the triple.",
       "placeholder": false
     },
     {
@@ -59,23 +71,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The negation of $p\\wedge q$ is logically equivalent to $\\neg p\\vee\\neg q$.",
-        "Over the integers, $\\forall n\\ \\exists m\\ (m>n)$ is true.",
-        "The roster $\\{\\alpha,\\beta,\\alpha\\}$ contains three elements and equals $\\{\\beta,\\alpha\\}$.",
-        "Finite sets with $|A|=18$, $|B|=14$, and $|A\\cap B|=5$ have a symmetric difference of size $23$.",
-        "The formula $((p\\rightarrow q)\\wedge p)\\rightarrow q$ is a tautology."
+        "A policy says a restaurant supplier is approved if and only if either a five-year trading record or a certified local producer, and additionally a clean hygiene inspection. Nia fails the condition \"a five-year trading record\", meets the condition \"a certified local producer\", and meets the condition \"a clean hygiene inspection\". The policy therefore approves Nia.",
+        "For a restaurant opening crew, Kira, Leo, Mina, Nolan, and Orla may serve. The rules are: (1) exactly one of Leo and Kira serves; (2) if Kira serves, then Nolan serves; (3) Nolan serves if and only if Orla serves; (4) if Orla serves, then Mina does not serve; (5) at least one of Leo or Mina serves; (6) at most 3 people serve. A coordinator concludes that the rules permit exactly one assignment.",
+        "A curator groups the court-file labels in $G=\\{u,v,w,x,y,z\\}$ as $\\mathcal B=\\{\\{u,v,w\\},\\{x,y,w\\},\\{z\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
+        "In a campus society census of $73$ people, $28$ belong to the debate group, $34$ to the robotics group, and $26$ to the drama group. The reported pairwise totals are $9$, $7$, and $10$, each including the $3$ people in all three. The report concludes that exactly $45$ people belong to exactly one of the three groups.",
+        "A policy says a research diver is approved if and only if either advanced diving certification or a naval diving waiver, and additionally a current medical clearance. Owen meets the condition \"advanced diving certification\", fails the condition \"a naval diving waiver\", and meets the condition \"a current medical clearance\". The policy therefore rejects Owen."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law, so the statement is True.",
-        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness, so the statement is True.",
-        "**C.** → False\n\nRepeated roster entries do not create new elements of a set.\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2\\ne3$$\n\nThe equality is correct but the claimed cardinality is not, so the statement is False.",
-        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B|=18-5=13$$\n\n$$|B\\setminus A|=14-5=9$$\n\n$$|A\\triangle B|=13+9=22\\ne23$$\n\nThe symmetric difference has size $22$, so the statement is False.",
-        "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p=T\\Longrightarrow p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false, so the statement is True."
+        "**A.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Nia, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Nia is approved. The statement says approved, which matches the biconditional, so the statement is True.",
+        "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Leo}\\}\\quad \\{\\text{Leo},\\text{Nolan},\\text{Orla}\\}\\quad \\{\\text{Leo},\\text{Mina}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**C.** → False\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{u,v,w,x,y,z\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\{w\\}$$\n\nThe displayed collection fails at least one required test, so the statement is False.",
+        "**D.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=9-3=6,\\quad AC\\text{ only}=7-3=4,\\quad BC\\text{ only}=10-3=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=28+34+26-9-7-10+3=65$$\n\nThe requested region count is\n\n$$N_{\\text{exactly one}}=45$$\n\nThe report gives $45$, which matches the disjoint-region calculation, so the statement is True.",
+        "**E.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Owen, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Owen is approved. The statement says rejected, which does not match the biconditional, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 111,
-      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: propositional De Morgan law.\nB: integer successor witness.\nC: duplicate roster entries.\nD: symmetric-difference size.\nE: modus ponens as a formula.",
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3\n\nA: concrete biconditional with an inner alternative and outer requirement.\nB: named roster deduction with interacting rules.\nC: partition test with overlap, coverage, and outsider checks.\nD: three-set survey with pair totals containing the triple.\nE: concrete biconditional with an inner alternative and outer requirement.",
       "placeholder": false
     },
     {
@@ -85,23 +103,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "There exists an integer $g$ such that every integer $n$ satisfies $n\\le g$.",
-        "If a set $X$ has three elements, then $\\mathcal P(\\mathcal P(X))$ has $256$ elements.",
-        "A campus has $46$ members in art club, $39$ in debate, and $31$ in music; pairwise overlaps are $17$, $12$, and $10$, while $4$ join all three. Exactly $81$ students join at least one club.",
-        "No valuation can make at least one of $p,q$ true while also making both $p$ and $q$ false.",
-        "The negation of $\\forall x\\ \\exists y\\ R(x,y)$ is $\\exists x\\ \\forall y\\ \\neg R(x,y)$."
+        "For a rescue drill team, Pavel, Rina, Samir, Talia, and Umar may participate. The rules are: (1) at least one of Samir or Rina participates; (2) if Samir participates, then Talia does not participate; (3) if Talia participates, then Pavel participates; (4) if Umar participates, then Rina participates; (5) exactly one of Pavel and Umar participates; (6) at least 2 people participate. A coordinator concludes that exactly 6 different assignments satisfy all the rules.",
+        "A curator groups the greenhouse bench tags in $G=\\{2,4,6,8,10,12\\}$ as $\\mathcal B=\\{\\{2,6\\},\\{4,8\\},\\{10,12\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
+        "In a hotel amenity survey of $116$ people, $51$ belong to the pool group, $46$ to the spa group, and $43$ to the gym group. The reported pairwise totals are $16$, $14$, and $15$, each including the $6$ people in all three. The report concludes that exactly $35$ people belong to at least two of the three groups.",
+        "A policy says an apartment applicant is approved if and only if either income above three times rent or an approved co-signer, and additionally no unresolved eviction. Priya fails the condition \"income above three times rent\", meets the condition \"an approved co-signer\", and fails the condition \"no unresolved eviction\". The policy therefore rejects Priya.",
+        "For a film selection jury, Vera, Wyatt, Xena, Yusuf, and Zoe may vote. The rules are: (1) Xena votes if and only if Wyatt votes; (2) if Wyatt votes, then Yusuf votes; (3) exactly one of Vera and Zoe votes; (4) if Yusuf votes, then Vera does not vote; (5) at least one of Xena or Zoe votes; (6) at least 3 people vote. A coordinator concludes that some valid assignment contains Vera but omits Xena."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness, so the statement is False.",
-        "**B.** → True\n\nApply the power-set cardinality rule once at each level.\n\n$$|X|=3$$\n\n$$|\\mathcal P(X)|=2^3=8$$\n\n$$|\\mathcal P(\\mathcal P(X))|=2^8=256$$\n\nThe second power set has the claimed size, so the statement is True.",
-        "**C.** → True\n\nThree-set inclusion-exclusion removes pairwise double counts and restores the triple overlap.\n\n$$|A\\cup D\\cup M|=46+39+31-17-12-10+4$$\n\n$$|A\\cup D\\cup M|=116-39+4$$\n\n$$|A\\cup D\\cup M|=81$$\n\nThe at-least-one count is $81$, so the statement is True.",
-        "**D.** → True\n\nThe last two conjuncts force values that make the first conjunct false.\n\n$$\\neg p\\wedge\\neg q=T\\Longrightarrow(p,q)=(F,F)$$\n\n$$(p,q)=(F,F)\\Longrightarrow p\\vee q=F$$\n\n$$(p\\vee q)\\wedge\\neg p\\wedge\\neg q=F$$\n\nThe formula is false on every assignment, so the statement is True.",
-        "**E.** → True\n\nMove the negation inward by switching each quantifier in order.\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\neg[\\exists y\\ R(x,y)]$$\n\n$$\\neg[\\exists y\\ R(x,y)]\\equiv\\forall y\\ \\neg R(x,y)$$\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\forall y\\ \\neg R(x,y)$$\n\nThe displayed sentence is the correct negation, so the statement is True."
+        "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Rina},\\text{Umar}\\}\\quad \\{\\text{Rina},\\text{Samir},\\text{Umar}\\}\\quad \\{\\text{Pavel},\\text{Samir}\\}\\quad \\{\\text{Pavel},\\text{Rina}\\}\\quad \\{\\text{Pavel},\\text{Rina},\\text{Talia}\\}\\quad \\{\\text{Pavel},\\text{Rina},\\text{Samir}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**B.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{10,12,2,4,6,8\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True.",
+        "**C.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=16-6=10,\\quad AC\\text{ only}=14-6=8,\\quad BC\\text{ only}=15-6=9$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=51+46+43-16-14-15+6=101$$\n\nThe requested region count is\n\n$$N_{\\text{at least two}}=33$$\n\nThe report gives $35$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**D.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Priya, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Priya is rejected. The statement says rejected, which matches the biconditional, so the statement is True.",
+        "**E.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=1$$\n\n$$ \\{\\text{Wyatt},\\text{Xena},\\text{Yusuf},\\text{Zoe}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 112,
-      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: greatest integer.\nB: iterated power set.\nC: three-club union.\nD: contradictory requirements.\nE: negating alternating quantifiers.",
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4\n\nA: named roster deduction with interacting rules.\nB: partition test with overlap, coverage, and outsider checks.\nC: three-set survey with pair totals containing the triple.\nD: concrete biconditional with an inner alternative and outer requirement.\nE: named roster deduction with interacting rules.",
       "placeholder": false
     },
     {
@@ -111,23 +135,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "From a six-symbol alphabet containing $x$ and $y$, there are five two-element subsets that include $x$ but exclude $y$.",
-        "A greenhouse has $30$ red plants, $22$ fragrant plants, and $9$ that are both. There are $19$ plants that are red but not fragrant.",
-        "Exactly two of the four truth assignments for $p,q$ satisfy $(p\\vee q)\\wedge\\neg(p\\wedge q)$.",
-        "Every novelist is observant, and no observant person is careless. It follows validly that no novelist is careless.",
-        "For $E=\\{\\emptyset,\\{\\emptyset\\}\\}$, the empty set is both an element of $E$ and a subset of $E$."
+        "A curator groups the orchestra chair codes in $G=\\{A1,A2,B1,B2,C1,C2\\}$ as $\\mathcal B=\\{\\{A1,B1\\},\\{A2,B2,B1\\},\\{C1,C2\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct.",
+        "In a factory certification review of $89$ people, $44$ belong to the welding group, $34$ to the electrical group, and $30$ to the safety group. The reported pairwise totals are $13$, $11$, and $9$, each including the $4$ people in all three. The report concludes that exactly $10$ people belong to none of the welding, electrical, and safety groups.",
+        "A policy says a festival vendor is approved if and only if either a city food permit or a reciprocal county permit, and additionally proof of liability insurance. Mateo meets the condition \"a city food permit\", fails the condition \"a reciprocal county permit\", and meets the condition \"proof of liability insurance\". The policy therefore rejects Mateo.",
+        "For a museum night shift, Adrian, Bea, Colin, Dina, and Emil may work. The rules are: (1) Emil works if and only if Bea works; (2) if Bea works, then Adrian works; (3) exactly one of Adrian and Dina works; (4) if Dina works, then Colin does not work; (5) at least one of Emil or Colin works; (6) at least 2 people work. A coordinator concludes that Bea is not forced to work; at least one valid assignment omits Bea.",
+        "A curator groups the warehouse aisle markers in $G=\\{g,h,j,k,m,n\\}$ as $\\mathcal B=\\{\\{g,j\\},\\{h,k\\},\\{m,n\\}\\}$. The curator's claim that $\\mathcal B$ is a partition of $G$ is correct."
       ],
-      "answer_key": [false, false, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions, so the statement is False.",
-        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants, so the statement is False.",
-        "**C.** → True\n\nThe formula requires at least one true proposition but forbids both from being true.\n\n$$(p,q)=(T,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)=(F,T)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(T,T),(F,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=F$$\n\nExactly the two mixed rows satisfy the formula, so the statement is True.",
-        "**D.** → True\n\nFollowing one arbitrary novelist through the two premises forces the negated property.\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nThe universal conclusion follows, so the statement is True.",
-        "**E.** → True\n\nThe empty set can be listed as an element and is also a subset of every set.\n\n$$\\emptyset\\in\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\n$$\\forall z\\,(z\\in\\emptyset\\Longrightarrow z\\in E)$$\n\n$$\\emptyset\\subseteq E$$\n\nBoth uses of the empty set are valid, so the statement is True."
+        "**A.** → False\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{A1,A2,B1,B2,C1,C2\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\{B1\\}$$\n\nThe displayed collection fails at least one required test, so the statement is False.",
+        "**B.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=13-4=9,\\quad AC\\text{ only}=11-4=7,\\quad BC\\text{ only}=9-4=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=44+34+30-13-11-9+4=79$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=10$$\n\nThe report gives $10$, which matches the disjoint-region calculation, so the statement is True.",
+        "**C.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Mateo, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Mateo is approved. The statement says rejected, which does not match the biconditional, so the statement is False.",
+        "**D.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Adrian},\\text{Colin}\\}\\quad \\{\\text{Adrian},\\text{Bea},\\text{Emil}\\}\\quad \\{\\text{Adrian},\\text{Bea},\\text{Colin},\\text{Emil}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**E.** → True\n\nA partition requires nonempty blocks, pairwise-disjoint blocks, and union exactly $G$.\n\n$$\\bigcup\\mathcal B=\\{g,h,j,k,m,n\\}$$\n\n$$\\text{nonempty pairwise intersections}=\\emptyset$$\n\nThe displayed collection passes all three tests, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 113,
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: restricted two-element subsets.\nB: one exclusive Venn region.\nC: exclusive-or truth count.\nD: categorical chain.\nE: empty-set roles.",
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1\n\nA: partition test with overlap, coverage, and outsider checks.\nB: three-set survey with pair totals containing the triple.\nC: concrete biconditional with an inner alternative and outer requirement.\nD: named roster deduction with interacting rules.\nE: partition test with overlap, coverage, and outsider checks.",
       "placeholder": false
     },
     {
@@ -137,23 +167,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "In $U=\\{1,2,\\ldots,15\\}$, let $A$ be the multiples of $3$ and $B=\\{1,2,3,4\\}$. Then $(A\\cup B)^c=\\{5,7,8,10,11,13,14\\}$.",
-        "The biconditional $p\\leftrightarrow q$ is equivalent to $(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$.",
-        "Every violinist is a musician, and Lee is a musician. Therefore Lee must be a violinist.",
-        "Whenever finite sets satisfy $A\\subsetneq B\\subsetneq C$, $|A|=2$, and $|C|=5$, the middle set must have four elements.",
-        "In three overlapping mailing lists, the pairwise intersection sizes are $15$, $13$, and $11$, and the triple intersection has size $5$. Exactly $24$ names occur in exactly two lists."
+        "In a library readership study of $131$ people, $58$ belong to the history group, $53$ to the science group, and $54$ to the fiction group. The reported pairwise totals are $19$, $17$, and $18$, each including the $7$ people in all three. The report concludes that exactly $37$ people belong to exactly two of the three groups.",
+        "A policy says a scholarship student is approved if and only if either a grade average above $85\\%$ or a national competition medal, and additionally full-time enrollment. Leila fails the condition \"a grade average above $85\\%$\", meets the condition \"a national competition medal\", and meets the condition \"full-time enrollment\". The policy therefore approves Leila.",
+        "For a hiking expedition, Fiona, Gabe, Heidi, Ivan, and Jaya may join. The rules are: (1) if Heidi joins, then Jaya joins; (2) if Jaya joins, then Gabe does not join; (3) at least one of Gabe or Ivan joins; (4) if Fiona joins, then Heidi joins; (5) Ivan and Fiona cannot both join; (6) at least 2 people join. A coordinator concludes that it is impossible for Ivan to join in any valid assignment.",
+        "A catalog stores $K=\\{\\text{red tag},\\{\\text{red tag}\\},\\{\\{\\text{red tag}\\}\\},\\text{blue tag}\\}$. The combined claim $\\{\\text{red tag}\\}\\in K$, $\\{\\{\\text{red tag}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{red tag}\\}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a farm equipment census of $85$ people, $37$ belong to the tractor group, $33$ to the drone group, and $29$ to the irrigation group. The reported pairwise totals are $11$, $9$, and $8$, each including the $3$ people in all three. The report concludes that exactly $20$ people belong to the tractor group but neither the drone nor irrigation group."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct, so the statement is True.",
-        "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q)=(T,T)\\Longrightarrow p\\wedge q=T$$\n\n$$(p,q)=(F,F)\\Longrightarrow\\neg p\\wedge\\neg q=T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows, so the statement is True.",
-        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$V(\\mathrm{Lee})=F,\\quad M(\\mathrm{Lee})=T$$\n\nThe last line is a countermodel to the conclusion, so the statement is False.",
-        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible, so the statement is False.",
-        "**E.** → True\n\nSubtract the triple intersection from each pairwise count before adding the disjoint regions.\n\n$$|A\\cap B\\text{ only}|=15-5=10$$\n\n$$|A\\cap C\\text{ only}|=13-5=8,\\qquad|B\\cap C\\text{ only}|=11-5=6$$\n\n$$10+8+6=24$$\n\nThe exactly-two total is $24$, so the statement is True."
+        "**A.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=19-7=12,\\quad AC\\text{ only}=17-7=10,\\quad BC\\text{ only}=18-7=11$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=58+53+54-19-17-18+7=118$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=33$$\n\nThe report gives $37$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**B.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Leila, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Leila is approved. The statement says approved, which matches the biconditional, so the statement is True.",
+        "**C.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Ivan},\\text{Jaya}\\}\\quad \\{\\text{Heidi},\\text{Ivan},\\text{Jaya}\\}\\quad \\{\\text{Gabe},\\text{Ivan}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**D.** → False\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{red tag}\\}\\in K,\\qquad \\{\\{\\text{red tag}\\}\\}\\in K$$\n\nThe only member of the last singleton is $\\{\\{\\{\\text{red tag}\\}\\}\\}$, which is not listed in $K$.\n\nThus the first two relations hold and the final relation fails, so the statement is False.",
+        "**E.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=11-3=8,\\quad AC\\text{ only}=9-3=6,\\quad BC\\text{ only}=8-3=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=37+33+29-11-9-8+3=74$$\n\nThe requested region count is\n\n$$N_{\\text{first group only}}=20$$\n\nThe report gives $20$, which matches the disjoint-region calculation, so the statement is True."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 114,
-      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: complement of a coded union.\nB: biconditional agreement form.\nC: affirming a class inclusion.\nD: strict subset chain.\nE: exactly two of three sets.",
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2\n\nA: three-set survey with pair totals containing the triple.\nB: concrete biconditional with an inner alternative and outer requirement.\nC: named roster deduction with interacting rules.\nD: nested membership and singleton-subset trap.\nE: three-set survey with pair totals containing the triple.",
       "placeholder": false
     },
     {
@@ -163,23 +199,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Replacing both propositions in a conditional by their negations, without exchanging their positions, always preserves the conditional's truth value.",
-        "Over the real numbers, $\\forall x\\ \\exists y\\ (y^2=x)$ holds.",
-        "A five-element set has exactly $15$ subsets of even cardinality.",
-        "For $A=\\{1\\}$, $B=\\{2\\}$, and $C=\\{3\\}$, the equality $A\\cup(B\\cap C)=(A\\cup B)\\cap C$ holds.",
-        "The expression $p\\vee(q\\wedge r)$ is logically equivalent to $(p\\vee q)\\wedge r$."
+        "A policy says a hotel guest is approved if and only if either platinum status or a suite-booking promotion, and additionally arrival before $8$ in the evening. Jasper meets the condition \"platinum status\", fails the condition \"a suite-booking promotion\", and fails the condition \"arrival before $8$ in the evening\". The policy therefore approves Jasper.",
+        "For a grant interview board, Kenji, Lara, Moses, Nora, and Omar may interview. The rules are: (1) exactly one of Lara and Omar interviews; (2) if Omar interviews, then Nora interviews; (3) Nora interviews if and only if Kenji interviews; (4) if Kenji interviews, then Moses does not interview; (5) at least one of Lara or Moses interviews; (6) at most 3 people interview. A coordinator concludes that the rules permit more than one assignment.",
+        "A catalog stores $K=\\{\\text{oak sample},\\{\\text{oak sample}\\},\\{\\{\\text{oak sample}\\}\\},\\text{pine sample}\\}$. The combined claim $\\{\\text{oak sample}\\}\\in K$, $\\{\\{\\text{oak sample}\\}\\}\\in K$, and $\\{\\{\\{\\text{oak sample}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a tourist activity poll of $99$ people, $30$ belong to the diving group, $45$ to the hiking group, and $37$ to the sailing group. The reported pairwise totals are $11$, $9$, and $13$, each including the $4$ people in all three. The report concludes that exactly $60$ people belong to exactly one of the three groups.",
+        "A policy says a paramedic candidate is approved if and only if either two years of ambulance service or a recognized military medic record, and additionally a passed clinical assessment. Amara fails the condition \"two years of ambulance service\", meets the condition \"a recognized military medic record\", and meets the condition \"a passed clinical assessment\". The policy therefore approves Amara."
       ],
-      "answer_key": [false, false, false, false, false],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nCompare the formulas on an assignment where the antecedent holds and the consequent fails.\n\n$$(p,q)=(T,F)$$\n\n$$p\\rightarrow q=T\\rightarrow F=F$$\n\n$$\\neg p\\rightarrow\\neg q=F\\rightarrow T=T$$\n\nThe inverse can differ from the original implication, so the statement is False.",
-        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$, so the statement is False.",
-        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$|\\mathcal P(S)|=2^5=32$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets, so the statement is False.",
-        "**D.** → False\n\nEvaluating both sides reveals that the proposed placement of the intersection is not distributive.\n\n$$B\\cap C=\\emptyset\\Longrightarrow A\\cup(B\\cap C)=\\{1\\}$$\n\n$$A\\cup B=\\{1,2\\}$$\n\n$$(A\\cup B)\\cap C=\\emptyset\\ne\\{1\\}$$\n\nThe two sides are different, so the statement is False.",
-        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent, so the statement is False."
+        "**A.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Jasper, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Jasper is rejected. The statement says approved, which does not match the biconditional, so the statement is False.",
+        "**B.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Lara}\\}\\quad \\{\\text{Lara},\\text{Moses}\\}\\quad \\{\\text{Kenji},\\text{Lara},\\text{Nora}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**C.** → True\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{oak sample}\\}\\in K,\\qquad \\{\\{\\text{oak sample}\\}\\}\\in K$$\n\nThe only member of $\\{\\{\\{\\text{oak sample}\\}\\}\\}$ is $\\{\\{\\text{oak sample}\\}\\}$, which is listed in $K$.\n\nThus the first two relations hold and the final relation also holds, so the statement is True.",
+        "**D.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=11-4=7,\\quad AC\\text{ only}=9-4=5,\\quad BC\\text{ only}=13-4=9$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=30+45+37-11-9-13+4=83$$\n\nThe requested region count is\n\n$$N_{\\text{exactly one}}=58$$\n\nThe report gives $60$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**E.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Amara, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Amara is approved. The statement says approved, which matches the biconditional, so the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 115,
-      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: inverse of an implication.\nB: universal real square root.\nC: even-cardinality subsets.\nD: failed distribution pattern.\nE: misplaced distributive factor.",
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3\n\nA: concrete biconditional with an inner alternative and outer requirement.\nB: named roster deduction with interacting rules.\nC: nested membership and singleton-subset trap.\nD: three-set survey with pair totals containing the triple.\nE: concrete biconditional with an inner alternative and outer requirement.",
       "placeholder": false
     },
     {
@@ -189,23 +231,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "In the integer domain, there is an $x$ satisfying $x+y=y$ for every integer $y$.",
-        "Define $A=\\{n\\in\\mathbb Z:n^2=16\\}$. Then $|A|=2$ and $\\{4\\}\\in A$.",
-        "A survey of $100$ residents can have $70$ in group $A$, $50$ in group $B$, and only $10$ in both groups.",
-        "Among the eight assignments for $p,q,r$, exactly one falsifies $p\\rightarrow(q\\vee r)$.",
-        "For arbitrary predicates, $\\forall x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\forall x\\,P(x))\\vee(\\forall x\\,Q(x))$."
+        "For a debate final lineup, Petra, Quinn, Ravi, Sana, and Theo may speak. The rules are: (1) at least one of Petra or Ravi speaks; (2) if Petra speaks, then Quinn does not speak; (3) if Quinn speaks, then Sana speaks; (4) if Theo speaks, then Ravi speaks; (5) exactly one of Sana and Theo speaks; (6) at least 2 people speak. A coordinator concludes that exactly 7 different assignments satisfy all the rules.",
+        "A catalog stores $K=\\{\\text{route 7},\\{\\text{route 7}\\},\\{\\{\\text{route 7}\\}\\},\\text{route 9}\\}$. The combined claim $\\{\\text{route 7}\\}\\in K$, $\\{\\{\\text{route 7}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{route 7}\\}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a professional software audit of $124$ people, $59$ belong to the spreadsheet group, $53$ to the database group, and $38$ to the design group. The reported pairwise totals are $18$, $13$, and $12$, each including the $5$ people in all three. The report concludes that exactly $33$ people belong to at least two of the three groups.",
+        "A policy says a tournament player is approved if and only if either a top-eight ranking or a defending-champion exemption, and additionally registration before Friday. Ruben meets the condition \"a top-eight ranking\", fails the condition \"a defending-champion exemption\", and meets the condition \"registration before Friday\". The policy therefore rejects Ruben.",
+        "For an airport audit crew, Uma, Victor, Wendy, Xavier, and Yara may inspect. The rules are: (1) Yara inspects if and only if Xavier inspects; (2) if Xavier inspects, then Wendy inspects; (3) exactly one of Uma and Victor inspects; (4) if Wendy inspects, then Uma does not inspect; (5) at least one of Yara or Victor inspects; (6) at least 3 people inspect. A coordinator concludes that every valid assignment containing Uma also contains Wendy."
       ],
-      "answer_key": [true, false, false, true, false],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence, so the statement is True.",
-        "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked.\n\n$$n^2=16\\Longleftrightarrow n\\in\\{-4,4\\}$$\n\n$$A=\\{-4,4\\}$$\n\n$$4\\in A\\quad\\text{but}\\quad\\{4\\}\\notin A$$\n\nThe singleton $\\{4\\}$ is not one of the integer elements, so the statement is False.",
-        "**C.** → False\n\nA union cannot contain more people than the survey population.\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=70+50-10=110$$\n\n$$110>|U|=100$$\n\nThe three reported figures are inconsistent, so the statement is False.",
-        "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r)=F\\Longleftrightarrow p=T\\ \\text{and}\\ q\\vee r=F$$\n\n$$q\\vee r=F\\Longleftrightarrow(q,r)=(F,F)$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment, so the statement is True.",
-        "**E.** → False\n\nDifferent domain elements may satisfy different sides of the disjunction.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$\\forall x\\in D\\,(P(x)\\vee Q(x))=T$$\n\n$$(\\forall x\\in D\\,P(x))\\vee(\\forall x\\in D\\,Q(x))=F\\vee F=F$$\n\nThe countermodel separates the two formulas, so the statement is False."
+        "**A.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Ravi},\\text{Theo}\\}\\quad \\{\\text{Ravi},\\text{Sana}\\}\\quad \\{\\text{Quinn},\\text{Ravi},\\text{Sana}\\}\\quad \\{\\text{Petra},\\text{Sana}\\}\\quad \\{\\text{Petra},\\text{Ravi},\\text{Theo}\\}\\quad \\{\\text{Petra},\\text{Ravi},\\text{Sana}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**B.** → False\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{route 7}\\}\\in K,\\qquad \\{\\{\\text{route 7}\\}\\}\\in K$$\n\nThe only member of the last singleton is $\\{\\{\\{\\text{route 7}\\}\\}\\}$, which is not listed in $K$.\n\nThus the first two relations hold and the final relation fails, so the statement is False.",
+        "**C.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=18-5=13,\\quad AC\\text{ only}=13-5=8,\\quad BC\\text{ only}=12-5=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=59+53+38-18-13-12+5=112$$\n\nThe requested region count is\n\n$$N_{\\text{at least two}}=33$$\n\nThe report gives $33$, which matches the disjoint-region calculation, so the statement is True.",
+        "**D.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Ruben, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Ruben is approved. The statement says rejected, which does not match the biconditional, so the statement is False.",
+        "**E.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=1$$\n\n$$ \\{\\text{Victor},\\text{Wendy},\\text{Xavier},\\text{Yara}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 116,
-      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: additive identity witness.\nB: set-builder roots.\nC: feasibility of survey counts.\nD: unique falsifying row.\nE: universal quantifier over disjunction.",
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4\n\nA: named roster deduction with interacting rules.\nB: nested membership and singleton-subset trap.\nC: three-set survey with pair totals containing the triple.\nD: concrete biconditional with an inner alternative and outer requirement.\nE: named roster deduction with interacting rules.",
       "placeholder": false
     },
     {
@@ -215,23 +263,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "After excluding both $\\emptyset$ and the full set, a four-element set has $14$ subsets left.",
-        "For any $A,B\\subseteq U$, the complement of $A\\setminus B$ is $A^c\\cup B$.",
-        "The logical negation of $p\\rightarrow q$ is $\\neg p\\wedge q$.",
-        "The formula $\\exists x\\,(P(x)\\vee Q(x))$ is equivalent to $(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$.",
-        "For a four-element ground set $G$, there are $81$ ordered pairs $(A,B)$ with $A\\subseteq B\\subseteq G$."
+        "A catalog stores $K=\\{\\text{invoice 14},\\{\\text{invoice 14}\\},\\{\\{\\text{invoice 14}\\}\\},\\text{invoice 21}\\}$. The combined claim $\\{\\text{invoice 14}\\}\\in K$, $\\{\\{\\text{invoice 14}\\}\\}\\in K$, and $\\{\\{\\{\\text{invoice 14}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a music festival survey of $99$ people, $40$ belong to the jazz group, $45$ to the folk group, and $35$ to the classical group. The reported pairwise totals are $13$, $10$, and $12$, each including the $4$ people in all three. The report concludes that exactly $14$ people belong to none of the jazz, folk, and classical groups.",
+        "A policy says an equipment renter is approved if and only if either a business credit file above $680$ or a cash security deposit, and additionally a verified operator license. Sofia fails the condition \"a business credit file above $680$\", meets the condition \"a cash security deposit\", and fails the condition \"a verified operator license\". The policy therefore rejects Sofia.",
+        "For a community garden team, Zane, Bianca, Arlo, Camila, and Diego may volunteer. The rules are: (1) Camila volunteers if and only if Diego volunteers; (2) if Diego volunteers, then Arlo volunteers; (3) exactly one of Arlo and Bianca volunteers; (4) if Bianca volunteers, then Zane does not volunteer; (5) at least one of Camila or Zane volunteers; (6) at least 2 people volunteer. A coordinator concludes that Bianca must volunteer in every valid assignment.",
+        "A catalog stores $K=\\{\\text{violin},\\{\\text{violin}\\},\\{\\{\\text{violin}\\}\\},\\text{cello}\\}$. The combined claim $\\{\\text{violin}\\}\\in K$, $\\{\\{\\text{violin}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{violin}\\}\\}\\}\\}\\subseteq K$ is valid."
       ],
-      "answer_key": [true, true, false, true, true],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$, so the statement is True.",
-        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$$\n\nThe proposed identity follows, so the statement is True.",
-        "**C.** → False\n\nRewrite the implication as a disjunction before applying negation.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg(p\\rightarrow q)\\equiv\\neg(\\neg p\\vee q)$$\n\n$$\\neg(\\neg p\\vee q)\\equiv p\\wedge\\neg q$$\n\nThe claimed formula reverses both required truth values, so the statement is False.",
-        "**D.** → True\n\nA witness for the disjunction witnesses at least one side, and either side supplies a witness for the disjunction.\n\n$$\\exists x\\,(P(x)\\vee Q(x))\\Longrightarrow(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$$\n\n$$\\exists x\\,P(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\n$$\\exists x\\,Q(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\nBoth directions of the equivalence hold, so the statement is True.",
-        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B,\\qquad g\\in B\\setminus A,\\qquad g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$, so the statement is True."
+        "**A.** → True\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{invoice 14}\\}\\in K,\\qquad \\{\\{\\text{invoice 14}\\}\\}\\in K$$\n\nThe only member of $\\{\\{\\{\\text{invoice 14}\\}\\}\\}$ is $\\{\\{\\text{invoice 14}\\}\\}$, which is listed in $K$.\n\nThus the first two relations hold and the final relation also holds, so the statement is True.",
+        "**B.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=13-4=9,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=12-4=8$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=40+45+35-13-10-12+4=89$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=10$$\n\nThe report gives $14$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**C.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Sofia, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{F}=\\mathrm{F}$$\n\nThus Sofia is rejected. The statement says rejected, which matches the biconditional, so the statement is True.",
+        "**D.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Arlo},\\text{Camila},\\text{Diego}\\}\\quad \\{\\text{Arlo},\\text{Zane}\\}\\quad \\{\\text{Arlo},\\text{Camila},\\text{Diego},\\text{Zane}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**E.** → False\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{violin}\\}\\in K,\\qquad \\{\\{\\text{violin}\\}\\}\\in K$$\n\nThe only member of the last singleton is $\\{\\{\\{\\text{violin}\\}\\}\\}$, which is not listed in $K$.\n\nThus the first two relations hold and the final relation fails, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 117,
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: nonempty proper subsets.\nB: complement of a difference.\nC: negating an implication.\nD: existential quantifier over disjunction.\nE: nested subset pairs.",
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1\n\nA: nested membership and singleton-subset trap.\nB: three-set survey with pair totals containing the triple.\nC: concrete biconditional with an inner alternative and outer requirement.\nD: named roster deduction with interacting rules.\nE: nested membership and singleton-subset trap.",
       "placeholder": false
     },
     {
@@ -241,23 +295,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The complement of $A\\triangle B$ consists exactly of elements that belong to both $A$ and $B$ or to neither one.",
-        "The contrapositive $\\neg q\\rightarrow\\neg p$ always has the same truth value as $p\\rightarrow q$.",
-        "Every medic is licensed, and at least one medic exists. Hence at least one licensed person exists.",
-        "Take $S=\\{r,s\\}$. Both $\\{r\\}\\in\\mathcal P(S)$ and $r\\in\\mathcal P(S)$ are true.",
-        "At an animal shelter, $28$ animals like dogs, $24$ like cats, and $11$ like both. Exactly $35$ like just one of the two."
+        "In a language program census of $106$ people, $47$ belong to the French group, $40$ to the German group, and $32$ to the Japanese group. The reported pairwise totals are $14$, $11$, and $10$, each including the $4$ people in all three. The report concludes that exactly $23$ people belong to exactly two of the three groups.",
+        "A policy says an airport contractor is approved if and only if either a federal clearance or an escorted-work waiver, and additionally completion of runway safety training. Caleb fails the condition \"a federal clearance\", meets the condition \"an escorted-work waiver\", and meets the condition \"completion of runway safety training\". The policy therefore rejects Caleb.",
+        "For a theater rehearsal cast, Elise, Felix, Greta, Hugo, and Ines may rehearse. The rules are: (1) if Elise rehearses, then Hugo rehearses; (2) if Hugo rehearses, then Felix does not rehearse; (3) at least one of Felix or Greta rehearses; (4) if Ines rehearses, then Elise rehearses; (5) Greta and Ines cannot both rehearse; (6) at least 2 people rehearse. A coordinator concludes that it is possible for Hugo to rehearse in a valid assignment.",
+        "A catalog stores $K=\\{\\text{north key},\\{\\text{north key}\\},\\{\\{\\text{north key}\\}\\},\\text{west key}\\}$. The combined claim $\\{\\text{north key}\\}\\in K$, $\\{\\{\\text{north key}\\}\\}\\in K$, and $\\{\\{\\{\\text{north key}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a sports membership audit of $99$ people, $45$ belong to the tennis group, $38$ to the rowing group, and $41$ to the climbing group. The reported pairwise totals are $13$, $14$, and $12$, each including the $5$ people in all three. The report concludes that exactly $25$ people belong to the tennis group but neither the rowing nor climbing group."
       ],
-      "answer_key": [true, true, true, false, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nSymmetric difference records unequal membership, so its complement records equal membership.\n\n$$A\\triangle B=(A\\cap B^c)\\cup(A^c\\cap B)$$\n\n$$x\\notin A\\triangle B\\Longleftrightarrow[x\\in A\\Longleftrightarrow x\\in B]$$\n\n$$(A\\triangle B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$$\n\nThe description matches the complement, so the statement is True.",
-        "**B.** → True\n\nImplication elimination puts the original and contrapositive into the same disjunction.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg q\\rightarrow\\neg p\\equiv\\neg(\\neg q)\\vee\\neg p$$\n\n$$q\\vee\\neg p\\equiv\\neg p\\vee q$$\n\nThe two formulas are logically equivalent, so the statement is True.",
-        "**C.** → True\n\nApply the universal implication to the witness supplied by the existential premise.\n\n$$\\forall x\\,(M(x)\\rightarrow L(x))$$\n\n$$\\exists x\\,M(x)\\Longrightarrow M(a)$$\n\n$$M(a)\\rightarrow L(a)\\Longrightarrow\\exists x\\,L(x)$$\n\nA licensed witness is forced, so the statement is True.",
-        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails, so the statement is False.",
-        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$|D\\setminus C|=28-11=17$$\n\n$$|C\\setminus D|=24-11=13$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group, so the statement is False."
+        "**A.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=14-4=10,\\quad AC\\text{ only}=11-4=7,\\quad BC\\text{ only}=10-4=6$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=47+40+32-14-11-10+4=88$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=23$$\n\nThe report gives $23$, which matches the disjoint-region calculation, so the statement is True.",
+        "**B.** → False\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Caleb, the policy evaluates as\n\n$$(\\mathrm{F}\\lor \\mathrm{T})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Caleb is approved. The statement says rejected, which does not match the biconditional, so the statement is False.",
+        "**C.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Greta},\\text{Hugo}\\}\\quad \\{\\text{Felix},\\text{Greta}\\}\\quad \\{\\text{Elise},\\text{Greta},\\text{Hugo}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**D.** → True\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{north key}\\}\\in K,\\qquad \\{\\{\\text{north key}\\}\\}\\in K$$\n\nThe only member of $\\{\\{\\{\\text{north key}\\}\\}\\}$ is $\\{\\{\\text{north key}\\}\\}$, which is listed in $K$.\n\nThus the first two relations hold and the final relation also holds, so the statement is True.",
+        "**E.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=13-5=8,\\quad AC\\text{ only}=14-5=9,\\quad BC\\text{ only}=12-5=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=45+38+41-13-14-12+5=90$$\n\nThe requested region count is\n\n$$N_{\\text{first group only}}=23$$\n\nThe report gives $25$, which does not match the disjoint-region calculation, so the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "4/5",
       "sort_order": 118,
-      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: complement of symmetric difference.\nB: contrapositive equivalence.\nC: existence through implication.\nD: power-set membership.\nE: exactly one of two groups.",
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2\n\nA: three-set survey with pair totals containing the triple.\nB: concrete biconditional with an inner alternative and outer requirement.\nC: named roster deduction with interacting rules.\nD: nested membership and singleton-subset trap.\nE: three-set survey with pair totals containing the triple.",
       "placeholder": false
     },
     {
@@ -267,23 +327,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Under every valuation, at least one direction between $p$ implies $q$ and $q$ implies $p$ is true.",
-        "No reptile is warm-blooded, and every snake is a reptile. Therefore no snake is warm-blooded.",
-        "If $K\\subseteq L$ and $L\\subseteq M$, then every element of $K$ belongs to $M$.",
-        "If $A$ and $B$ lie in a $15$-element universe with $|A|=12$ and $|B|=9$, then $A\\cap B$ has at least six elements.",
-        "The formula $(p\\leftrightarrow q)\\leftrightarrow(\\neg p\\leftrightarrow\\neg q)$ is a tautology."
+        "A policy says a grant applicant is approved if and only if either three published studies or a partner-university nomination, and additionally an approved ethics protocol. Imani meets the condition \"three published studies\", fails the condition \"a partner-university nomination\", and meets the condition \"an approved ethics protocol\". The policy therefore approves Imani.",
+        "For a conference talk group, Jamal, Keira, Luca, Maya, and Nikhil may present. The rules are: (1) exactly one of Jamal and Maya presents; (2) if Maya presents, then Keira presents; (3) Keira presents if and only if Nikhil presents; (4) if Nikhil presents, then Luca does not present; (5) at least one of Jamal or Luca presents; (6) at most 3 people present. A coordinator concludes that the rules permit exactly one assignment.",
+        "A catalog stores $K=\\{\\text{amber card},\\{\\text{amber card}\\},\\{\\{\\text{amber card}\\}\\},\\text{silver card}\\}$. The combined claim $\\{\\text{amber card}\\}\\in K$, $\\{\\{\\text{amber card}\\}\\}\\in K$, and $\\{\\{\\{\\{\\text{amber card}\\}\\}\\}\\}\\subseteq K$ is valid.",
+        "In a retail buying survey of $143$ people, $65$ belong to the books group, $59$ to the games group, and $47$ to the music group. The reported pairwise totals are $20$, $16$, and $15$, each including the $6$ people in all three. The report concludes that exactly $87$ people belong to exactly one of the three groups.",
+        "A bistro awards a dessert stamp whenever a diner orders a plated dessert. Hana received a dessert stamp from a birthday promotion and did not order dessert. Hana's case refutes the original policy because Hana received dessert stamp without having ordered dessert."
       ],
-      "answer_key": [true, true, true, true, true],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nExpanding the implications exposes a proposition and its negation inside the disjunction.\n\n$$(p\\rightarrow q)\\vee(q\\rightarrow p)\\equiv(\\neg p\\vee q)\\vee(\\neg q\\vee p)$$\n\n$$\\equiv(\\neg p\\vee p)\\vee(q\\vee\\neg q)$$\n\n$$\\equiv T\\vee T\\equiv T$$\n\nThe disjunction is true on every row, so the statement is True.",
-        "**B.** → True\n\nAn arbitrary snake inherits reptile status and then the stated exclusion.\n\n$$\\forall x\\,(S(x)\\rightarrow R(x))$$\n\n$$\\forall x\\,(R(x)\\rightarrow\\neg W(x))$$\n\n$$S(a)\\Longrightarrow R(a)\\Longrightarrow\\neg W(a)$$\n\nThe conclusion holds for every snake, so the statement is True.",
-        "**C.** → True\n\nFollow an arbitrary element through the two given inclusions.\n\n$$x\\in K\\Longrightarrow x\\in L$$\n\n$$x\\in L\\Longrightarrow x\\in M$$\n\n$$x\\in K\\Longrightarrow x\\in M$$\n\nThe element test proves $K\\subseteq M$, so the statement is True.",
-        "**D.** → True\n\nThe universe size bounds the union and therefore forces an overlap.\n\n$$|A\\cup B|\\le15$$\n\n$$|A|+|B|-|A\\cap B|\\le15$$\n\n$$12+9-|A\\cap B|\\le15\\Longrightarrow|A\\cap B|\\ge6$$\n\nAt least six elements must be shared, so the statement is True.",
-        "**E.** → True\n\nNegating both propositions preserves whether their truth values agree.\n\n$$p=q\\Longrightarrow\\neg p=\\neg q$$\n\n$$p\\ne q\\Longrightarrow\\neg p\\ne\\neg q$$\n\n$$(p\\leftrightarrow q)\\equiv(\\neg p\\leftrightarrow\\neg q)$$\n\nThe outer biconditional is always true, so the statement is True."
+        "**A.** → True\n\nThe biconditional makes the stated alternative together with the additional condition both necessary and sufficient. For Imani, the policy evaluates as\n\n$$(\\mathrm{T}\\lor \\mathrm{F})\\land \\mathrm{T}=\\mathrm{T}$$\n\nThus Imani is approved. The statement says approved, which matches the biconditional, so the statement is True.",
+        "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Jamal}\\}\\quad \\{\\text{Jamal},\\text{Luca}\\}\\quad \\{\\text{Jamal},\\text{Keira},\\text{Nikhil}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**C.** → False\n\nMembership checks listed objects, while subsethood checks every member of the proposed subset.\n\n$$\\{\\text{amber card}\\}\\in K,\\qquad \\{\\{\\text{amber card}\\}\\}\\in K$$\n\nThe only member of the last singleton is $\\{\\{\\{\\text{amber card}\\}\\}\\}$, which is not listed in $K$.\n\nThus the first two relations hold and the final relation fails, so the statement is False.",
+        "**D.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=20-6=14,\\quad AC\\text{ only}=16-6=10,\\quad BC\\text{ only}=15-6=9$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=65+59+47-20-16-15+6=126$$\n\nThe requested region count is\n\n$$N_{\\text{exactly one}}=87$$\n\nThe report gives $87$, which matches the disjoint-region calculation, so the statement is True.",
+        "**E.** → False\n\nHana's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Hana ordered dessert}=\\mathrm{F},\\qquad\n\\text{Hana received dessert stamp}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{dessert stamp}\\Longrightarrow\\text{ordered dessert}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 119,
-      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: comparable implications.\nB: negative categorical deduction.\nC: subset transitivity.\nD: forced minimum overlap.\nE: negating both sides of a biconditional.",
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3\n\nA: concrete biconditional with an inner alternative and outer requirement.\nB: named roster deduction with interacting rules.\nC: nested membership and singleton-subset trap.\nD: three-set survey with pair totals containing the triple.\nE: named counterexample separating a policy from its converse.",
       "placeholder": false
     },
     {
@@ -293,23 +359,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Some artist is a baker, and every baker is creative. Therefore every artist is creative.",
-        "Let $T$ have five elements and let $\\mathcal F=\\{\\{t\\}:t\\in T\\}$. Then $|\\mathcal F|=5$ and $\\mathcal F\\in\\mathcal P(\\mathcal P(T))$.",
-        "Among $140$ patients, set sizes are $80$, $65$, and $50$; pairwise overlaps are $30$, $22$, and $18$, with $9$ in all three. Exactly $11$ patients are in none of the sets.",
-        "The conjunction $p\\wedge(p\\rightarrow q)\\wedge\\neg q$ is satisfiable.",
-        "Over $D=\\{1,2,3\\}$, the statement $\\forall x\\,(x=1\\vee x>1)$ is false."
+        "For a robotics pit crew, Olive, Pedro, Rosa, Soren, and Tess may attend. The rules are: (1) at least one of Olive or Pedro attends; (2) if Olive attends, then Soren does not attend; (3) if Soren attends, then Tess attends; (4) if Rosa attends, then Pedro attends; (5) exactly one of Tess and Rosa attends; (6) at least 2 people attend. A coordinator concludes that exactly 6 different assignments satisfy all the rules.",
+        "Let $H=\\{4,8,12,\\ldots\\}$ be the set of positive multiples of $4$. The map $f(n)=4n$ is a bijection from the positive integers onto $H$; consequently, $H$ is a proper subset with the same cardinality as its parent set.",
+        "In a medical screening poll of $82$ people, $34$ belong to the vision group, $30$ to the hearing group, and $27$ to the mobility group. The reported pairwise totals are $9$, $8$, and $7$, each including the $2$ people in all three. The report concludes that exactly $24$ people belong to at least two of the three groups.",
+        "An airline grants lounge access whenever a traveler buys a business-class ticket. Elliot received lounge access through elite status and flew economy. Elliot's case refutes the converse, \"Anyone with lounge access must have bought business class,\" but does not refute the original policy.",
+        "For a charity allocation council, Anwar, Brooke, Chen, Delia, and Evan may serve. The rules are: (1) Anwar serves if and only if Evan serves; (2) if Evan serves, then Chen serves; (3) exactly one of Brooke and Delia serves; (4) if Chen serves, then Brooke does not serve; (5) at least one of Anwar or Delia serves; (6) at least 3 people serve. A coordinator concludes that some valid assignment contains Anwar but omits Chen."
       ],
-      "answer_key": [false, true, false, false, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe premises control one artist witness but say nothing about all other artists.\n\n$$A(a)\\wedge B(a)$$\n\n$$\\forall x\\,(B(x)\\rightarrow C(x))\\Longrightarrow C(a)$$\n\n$$A(b)\\wedge\\neg B(b)\\wedge\\neg C(b)$$\n\nThe object $b$ gives a countermodel to the universal conclusion, so the statement is False.",
-        "**B.** → True\n\nDistinct elements produce distinct singleton subsets, all living inside the first power set.\n\n$$|\\mathcal F|=|T|=5$$\n\n$$t\\in T\\Longrightarrow\\{t\\}\\in\\mathcal P(T)$$\n\n$$\\mathcal F\\subseteq\\mathcal P(T)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(T))$$\n\nBoth the size and the iterated membership are correct, so the statement is True.",
-        "**C.** → False\n\nFirst count the three-set union, then subtract it from the patient total.\n\n$$|A\\cup B\\cup C|=80+65+50-30-22-18+9$$\n\n$$|A\\cup B\\cup C|=195-70+9=134$$\n\n$$140-134=6\\ne11$$\n\nExactly six patients are in none of the sets, so the statement is False.",
-        "**D.** → False\n\nThe first two conjuncts force the truth of the proposition denied by the third.\n\n$$p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$q\\wedge\\neg q=F$$\n\nNo assignment satisfies all three conjuncts, so the statement is False.",
-        "**E.** → False\n\nCheck the alternatives directly for each member of the small domain.\n\n$$x=1\\Longrightarrow x=1$$\n\n$$x=2\\Longrightarrow x>1$$\n\n$$x=3\\Longrightarrow x>1$$\n\nEvery domain element satisfies the disjunction, so the statement is False."
+        "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Pedro},\\text{Tess}\\}\\quad \\{\\text{Pedro},\\text{Soren},\\text{Tess}\\}\\quad \\{\\text{Pedro},\\text{Rosa}\\}\\quad \\{\\text{Olive},\\text{Tess}\\}\\quad \\{\\text{Olive},\\text{Pedro},\\text{Tess}\\}\\quad \\{\\text{Olive},\\text{Pedro},\\text{Rosa}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**B.** → True\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. That is exactly the conclusion claimed, so the statement is True.",
+        "**C.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=9-2=7,\\quad AC\\text{ only}=8-2=6,\\quad BC\\text{ only}=7-2=5$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=34+30+27-9-8-7+2=69$$\n\nThe requested region count is\n\n$$N_{\\text{at least two}}=20$$\n\nThe report gives $24$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**D.** → True\n\nElliot's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Elliot bought business class}=\\mathrm{F},\\qquad\n\\text{Elliot received lounge access}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{lounge access}\\Longrightarrow\\text{bought business class}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
+        "**E.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=1$$\n\n$$ \\{\\text{Anwar},\\text{Chen},\\text{Delia},\\text{Evan}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 120,
-      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: existential premise versus universal conclusion.\nB: family of singletons.\nC: none of three groups.\nD: inconsistent implication premises.\nE: finite-domain disjunction.",
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4\n\nA: named roster deduction with interacting rules.\nB: infinite proper-subset cardinality and explicit bijection.\nC: three-set survey with pair totals containing the triple.\nD: named counterexample separating a policy from its converse.\nE: named roster deduction with interacting rules.",
       "placeholder": false
     },
     {
@@ -319,23 +391,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Two sets with identical power sets must themselves be equal.",
-        "The set identity $A\\cap(A\\cup B)=A$ holds for every pair of sets.",
-        "The formula $(p\\vee q)\\rightarrow r$ is false on four of the eight assignments for $p,q,r$.",
-        "Every pilot is trained, and Dana is trained. These facts validly imply that Dana is a pilot.",
-        "The set encoded by $\\{1,1,2,2,3,3\\}$ has six elements."
+        "Let $H=\\{1,3,5,\\ldots\\}$ be the set of positive odd integers. The map $f(n)=2n-1$ is a bijection from the positive integers onto $H$; consequently, $H$ must have strictly smaller cardinality than its parent set because it is proper.",
+        "In a conference track census of $121$ people, $53$ belong to the finance group, $49$ to the law group, and $43$ to the technology group. The reported pairwise totals are $16$, $14$, and $13$, each including the $5$ people in all three. The report concludes that exactly $14$ people belong to none of the finance, law, and technology groups.",
+        "A bank waives an appraisal fee whenever a borrower selects its green-home loan. Zara had the fee waived under an employee benefit and selected a standard loan. Zara's case refutes the original policy because Zara received fee waiver without having selected the green-home loan.",
+        "For a sailing relay squad, Freya, Goran, Hazel, Ibrahim, and Jo may race. The rules are: (1) Ibrahim races if and only if Goran races; (2) if Goran races, then Jo races; (3) exactly one of Jo and Hazel races; (4) if Hazel races, then Freya does not race; (5) at least one of Ibrahim or Freya races; (6) at least 2 people race. A coordinator concludes that Goran is not forced to race; at least one valid assignment omits Goran.",
+        "Let $H=\\{\\ldots,-5,0,5,\\ldots\\}$ be the set of integer multiples of $5$. The map $f(n)=5n$ is a bijection from the integers onto $H$; consequently, $H$ is a proper subset with the same cardinality as its parent set."
       ],
-      "answer_key": [true, true, false, false, false],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nSingleton membership in a power set recovers membership in the original set.\n\n$$x\\in A\\Longleftrightarrow\\{x\\}\\in\\mathcal P(A)$$\n\n$$\\mathcal P(A)=\\mathcal P(B)\\Longrightarrow\\{x\\}\\in\\mathcal P(A)\\Longleftrightarrow\\{x\\}\\in\\mathcal P(B)$$\n\n$$x\\in A\\Longleftrightarrow x\\in B$$\n\nThe two sets have exactly the same elements, so the statement is True.",
-        "**B.** → True\n\nMembership in $A$ already guarantees membership in the larger union.\n\n$$x\\in A\\cap(A\\cup B)\\Longrightarrow x\\in A$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cup B$$\n\n$$x\\in A\\Longrightarrow x\\in A\\cap(A\\cup B)$$\n\nThe two inclusions establish equality, so the statement is True.",
-        "**C.** → False\n\nA false implication fixes the consequent as false while requiring a true antecedent.\n\n$$(p\\vee q)\\rightarrow r=F\\Longleftrightarrow p\\vee q=T\\ \\text{and}\\ r=F$$\n\n$$\\#\\{(p,q):p\\vee q=T\\}=3$$\n\n$$3\\cdot1=3\\ne4$$\n\nExactly three assignments falsify the formula, so the statement is False.",
-        "**D.** → False\n\nThe premise points from pilots to trained people and does not supply the converse.\n\n$$\\forall x\\,(P(x)\\rightarrow T(x))$$\n\n$$T(\\mathrm{Dana})=T$$\n\n$$P(\\mathrm{Dana})=F,\\quad T(\\mathrm{Dana})=T$$\n\nA trained nonpilot is a countermodel, so the statement is False.",
-        "**E.** → False\n\nA set records whether an object appears, not how many times it is written.\n\n$$\\{1,1,2,2,3,3\\}=\\{1,2,3\\}$$\n\n$$|\\{1,2,3\\}|=3$$\n\n$$3\\ne6$$\n\nThe encoded set has only three elements, so the statement is False."
+        "**A.** → False\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. The final finite-set inference is therefore invalid, so the statement is False.",
+        "**B.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=16-5=11,\\quad AC\\text{ only}=14-5=9,\\quad BC\\text{ only}=13-5=8$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=53+49+43-16-14-13+5=107$$\n\nThe requested region count is\n\n$$N_{\\text{none}}=14$$\n\nThe report gives $14$, which matches the disjoint-region calculation, so the statement is True.",
+        "**C.** → False\n\nZara's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Zara selected the green-home loan}=\\mathrm{F},\\qquad\n\\text{Zara received fee waiver}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{fee waiver}\\Longrightarrow\\text{selected the green-home loan}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
+        "**D.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Goran},\\text{Ibrahim},\\text{Jo}\\}\\quad \\{\\text{Freya},\\text{Jo}\\}\\quad \\{\\text{Freya},\\text{Goran},\\text{Ibrahim},\\text{Jo}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**E.** → True\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. That is exactly the conclusion claimed, so the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 121,
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: recovering a set from its power set.\nB: absorption law.\nC: counting false implication rows.\nD: converse predicate inference.\nE: cardinality after deduplication.",
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1\n\nA: infinite proper-subset cardinality and explicit bijection.\nB: three-set survey with pair totals containing the triple.\nC: named counterexample separating a policy from its converse.\nD: named roster deduction with interacting rules.\nE: infinite proper-subset cardinality and explicit bijection.",
       "placeholder": false
     },
     {
@@ -345,23 +423,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A Venn diagram has $12$ objects only in $A$, $9$ only in $B$, $7$ in both, and $4$ in neither. The diagram represents a universe of $33$ objects.",
-        "The formula $p\\rightarrow(q\\wedge r)$ is equivalent to $(p\\rightarrow q)\\wedge(p\\rightarrow r)$.",
-        "From $\\forall x\\,(P(x)\\rightarrow Q(x))$ and $\\exists x\\,P(x)$, one may validly infer $\\exists x\\,Q(x)$.",
-        "Among the subsets of a five-element set, exactly $16$ contain at least three elements.",
-        "Let $U=\\{a,b,c,d,e,f,g,h\\}$, $A=\\{a,e\\}$, and $B=\\{a,b,c,d\\}$. Then $A^c\\cap B=\\{b,c,d\\}$."
+        "In a home-energy survey of $100$ people, $34$ belong to the solar group, $47$ to the insulation group, and $38$ to the heat pump group. The reported pairwise totals are $11$, $10$, and $14$, each including the $4$ people in all three. The report concludes that exactly $25$ people belong to exactly two of the three groups.",
+        "A theater gives a signed poster whenever a patron buys a premiere package. Noah received a signed poster in a raffle and bought a regular ticket. Noah's case refutes the converse, \"Anyone with signed poster must have bought a premiere package,\" but does not refute the original policy.",
+        "For a hobby club committee, Kofi, Lena, Marco, Nadia, and Otis may serve. The rules are: (1) if Kofi serves, then Otis serves; (2) if Otis serves, then Marco does not serve; (3) at least one of Marco or Lena serves; (4) if Nadia serves, then Kofi serves; (5) Lena and Nadia cannot both serve; (6) at least 2 people serve. A coordinator concludes that it is possible for Nadia to serve in a valid assignment.",
+        "Let $H=\\{1,4,9,\\ldots\\}$ be the set of perfect squares of positive integers. The map $f(n)=n^2$ is a bijection from the positive integers onto $H$; consequently, $H$ must have strictly smaller cardinality than its parent set because it is proper.",
+        "In a volunteer training audit of $97$ people, $38$ belong to the first aid group, $39$ to the logistics group, and $32$ to the fundraising group. The reported pairwise totals are $11$, $10$, and $9$, each including the $3$ people in all three. The report concludes that exactly $20$ people belong to the first aid group but neither the logistics nor fundraising group."
       ],
-      "answer_key": [false, true, true, true, true],
+      "answer_key": [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe four displayed Venn regions are disjoint and exhaust the universe.\n\n$$|U|=|A\\setminus B|+|B\\setminus A|+|A\\cap B|+|(A\\cup B)^c|$$\n\n$$|U|=12+9+7+4$$\n\n$$|U|=32\\ne33$$\n\nThe diagram contains $32$ objects, so the statement is False.",
-        "**B.** → True\n\nExpand both implications and distribute the shared disjunct.\n\n$$p\\rightarrow(q\\wedge r)\\equiv\\neg p\\vee(q\\wedge r)$$\n\n$$\\neg p\\vee(q\\wedge r)\\equiv(\\neg p\\vee q)\\wedge(\\neg p\\vee r)$$\n\n$$(\\neg p\\vee q)\\wedge(\\neg p\\vee r)\\equiv(p\\rightarrow q)\\wedge(p\\rightarrow r)$$\n\nBoth sides have the same logical form, so the statement is True.",
-        "**C.** → True\n\nUse the existential witness as the input to the universal rule.\n\n$$\\exists x\\,P(x)\\Longrightarrow P(a)$$\n\n$$\\forall x\\,(P(x)\\rightarrow Q(x))\\Longrightarrow P(a)\\rightarrow Q(a)$$\n\n$$P(a)\\wedge(P(a)\\rightarrow Q(a))\\Longrightarrow\\exists x\\,Q(x)$$\n\nThe argument preserves the witness, so the statement is True.",
-        "**D.** → True\n\nCount the allowable subset sizes with binomial coefficients.\n\n$$\\#=\\binom{5}{3}+\\binom{5}{4}+\\binom{5}{5}$$\n\n$$\\#=10+5+1$$\n\n$$\\#=16$$\n\nExactly $16$ subsets have size at least three, so the statement is True.",
-        "**E.** → True\n\nRemove the elements of $A$ from the universe before intersecting with $B$.\n\n$$A^c=\\{b,c,d,f,g,h\\}$$\n\n$$A^c\\cap B=\\{b,c,d,f,g,h\\}\\cap\\{a,b,c,d\\}$$\n\n$$A^c\\cap B=\\{b,c,d\\}$$\n\nThe resulting roster agrees with the claim, so the statement is True."
+        "**A.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=11-4=7,\\quad AC\\text{ only}=10-4=6,\\quad BC\\text{ only}=14-4=10$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=34+47+38-11-10-14+4=88$$\n\nThe requested region count is\n\n$$N_{\\text{exactly two}}=23$$\n\nThe report gives $25$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**B.** → True\n\nNoah's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Noah bought a premiere package}=\\mathrm{F},\\qquad\n\\text{Noah received signed poster}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{signed poster}\\Longrightarrow\\text{bought a premiere package}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
+        "**C.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Lena},\\text{Otis}\\}\\quad \\{\\text{Lena},\\text{Marco}\\}\\quad \\{\\text{Kofi},\\text{Lena},\\text{Otis}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**D.** → False\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. The final finite-set inference is therefore invalid, so the statement is False.",
+        "**E.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=11-3=8,\\quad AC\\text{ only}=10-3=7,\\quad BC\\text{ only}=9-3=6$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=38+39+32-11-10-9+3=82$$\n\nThe requested region count is\n\n$$N_{\\text{first group only}}=20$$\n\nThe report gives $20$, which matches the disjoint-region calculation, so the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 122,
-      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: reconstructing a Venn universe.\nB: implication into a conjunction.\nC: universal rule with a witness.\nD: large subsets.\nE: complement intersected with a roster.",
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2\n\nA: three-set survey with pair totals containing the triple.\nB: named counterexample separating a policy from its converse.\nC: named roster deduction with interacting rules.\nD: infinite proper-subset cardinality and explicit bijection.\nE: three-set survey with pair totals containing the triple.",
       "placeholder": false
     },
     {
@@ -371,23 +455,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Agreement is transitive: whenever $p$ matches $q$ and $q$ matches $r$, the truth values of $p$ and $r$ also match.",
-        "From the facts that someone has property $P$ and someone has property $Q$, it always follows that one person has both properties.",
-        "Set $A=\\{1,2\\}$ and $B=\\{\\{1,2\\}\\}$. Since $A\\in B$, it also follows that $A\\subseteq B$.",
-        "An element belongs to $A\\triangle B\\triangle C$ exactly when it belongs to an odd number of the three sets.",
-        "The exclusive-or formula $(p\\vee q)\\wedge\\neg(p\\wedge q)$ is equivalent to $\\neg(p\\leftrightarrow q)$."
+        "A marina issues a priority flag whenever a boat prepays an annual berth. Mei received a priority flag for emergency service and pays monthly. Mei's case refutes the original policy because Mei received priority flag without having prepaid an annual berth.",
+        "For a bakery tasting panel, Pia, Raj, Selma, Tobin, and Ursa may judge. The rules are: (1) exactly one of Selma and Pia judges; (2) if Pia judges, then Tobin judges; (3) Tobin judges if and only if Raj judges; (4) if Raj judges, then Ursa does not judge; (5) at least one of Selma or Ursa judges; (6) at most 3 people judge. A coordinator concludes that the rules permit more than one assignment.",
+        "Let $H=\\{20,21,22,\\ldots\\}$ be the set of integers at least $20$. The map $f(n)=n+19$ is a bijection from the positive integers onto $H$; consequently, $H$ is a proper subset with the same cardinality as its parent set.",
+        "In a restaurant preference study of $106$ people, $50$ belong to the vegan group, $39$ to the local group, and $44$ to the late-night group. The reported pairwise totals are $14$, $16$, and $12$, each including the $5$ people in all three. The report concludes that exactly $68$ people belong to exactly one of the three groups.",
+        "A library grants archive-room access whenever a scholar presents a faculty letter. Theo has archive access as a donor and presented no faculty letter. Theo's case refutes the converse, \"Anyone with archive access must have presented a faculty letter,\" but does not refute the original policy."
       ],
-      "answer_key": [true, false, false, true, true],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nIf the antecedent holds, all three propositions share one truth value.\n\n$$p\\leftrightarrow q=T\\Longrightarrow p=q$$\n\n$$q\\leftrightarrow r=T\\Longrightarrow q=r$$\n\n$$p=q=r\\Longrightarrow p\\leftrightarrow r=T$$\n\nA true antecedent always forces a true consequent, so the statement is True.",
-        "**B.** → False\n\nSeparate witnesses for the two predicates need not be one common witness.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$(\\exists x\\,P(x))\\wedge(\\exists x\\,Q(x))=T\\wedge T=T$$\n\n$$\\exists x\\,(P(x)\\wedge Q(x))=F$$\n\nThe right side can hold without the left side, so the statement is False.",
-        "**C.** → False\n\nBeing the single listed object of $B$ does not place the members of $A$ directly into $B$.\n\n$$A=\\{1,2\\}\\in B$$\n\n$$B=\\{A\\}=\\{\\{1,2\\}\\}$$\n\n$$1\\notin B\\Longrightarrow A\\nsubseteq B$$\n\nMembership of $A$ in $B$ does not imply $A\\subseteq B$, so the statement is False.",
-        "**D.** → True\n\nEach symmetric-difference operation toggles membership once for each containing set.\n\n$$0\\text{ containing sets}\\Longrightarrow0\\text{ toggles}\\Longrightarrow x\\notin A\\triangle B\\triangle C$$\n\n$$1\\text{ or }3\\text{ containing sets}\\Longrightarrow\\text{odd toggles}\\Longrightarrow x\\in A\\triangle B\\triangle C$$\n\n$$2\\text{ containing sets}\\Longrightarrow\\text{even toggles}\\Longrightarrow x\\notin A\\triangle B\\triangle C$$\n\nOdd membership is exactly the inclusion rule, so the statement is True.",
-        "**E.** → True\n\nExclusive or selects disagreement rows, which are exactly the rows rejected by a biconditional.\n\n$$(p,q)\\in\\{(T,F),(F,T)\\}\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)\\in\\{(T,T),(F,F)\\}\\Longrightarrow p\\leftrightarrow q=T$$\n\n$$(p\\vee q)\\wedge\\neg(p\\wedge q)\\equiv\\neg(p\\leftrightarrow q)$$\n\nThe two formulas select the same rows, so the statement is True."
+        "**A.** → False\n\nMei's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Mei prepaid an annual berth}=\\mathrm{F},\\qquad\n\\text{Mei received priority flag}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{priority flag}\\Longrightarrow\\text{prepaid an annual berth}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
+        "**B.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Selma}\\}\\quad \\{\\text{Selma},\\text{Ursa}\\}\\quad \\{\\text{Raj},\\text{Selma},\\text{Tobin}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**C.** → True\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. That is exactly the conclusion claimed, so the statement is True.",
+        "**D.** → False\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=14-5=9,\\quad AC\\text{ only}=16-5=11,\\quad BC\\text{ only}=12-5=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=50+39+44-14-16-12+5=96$$\n\nThe requested region count is\n\n$$N_{\\text{exactly one}}=64$$\n\nThe report gives $68$, which does not match the disjoint-region calculation, so the statement is False.",
+        "**E.** → True\n\nTheo's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Theo presented a faculty letter}=\\mathrm{F},\\qquad\n\\text{Theo received archive access}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{archive access}\\Longrightarrow\\text{presented a faculty letter}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
-      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: transitivity of agreement.\nB: existential quantifier over conjunction.\nC: element versus subset.\nD: three-set symmetric difference.\nE: exclusive or versus biconditional.",
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3\n\nA: named counterexample separating a policy from its converse.\nB: named roster deduction with interacting rules.\nC: infinite proper-subset cardinality and explicit bijection.\nD: three-set survey with pair totals containing the triple.\nE: named counterexample separating a policy from its converse.",
       "placeholder": false
     },
     {
@@ -397,23 +487,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The negation of $\\exists x\\ \\forall y\\ R(x,y)$ is $\\forall x\\ \\exists y\\ \\neg R(x,y)$.",
-        "The second iterated power set of the empty set is $\\mathcal P(\\mathcal P(\\emptyset))=\\{\\emptyset,\\{\\emptyset\\}\\}$.",
-        "Knowing $|A|=20$, $|B|=18$, $|C|=16$, and pairwise intersections $5$, $6$, and $7$ uniquely determines $|A\\cup B\\cup C|$ as $42$.",
-        "Moving the parentheses in the conditional chain from $p\\rightarrow(q\\rightarrow r)$ to $(p\\rightarrow q)\\rightarrow r$ never changes its value.",
-        "On $D=\\{0,1,2\\}$, the sentence $\\exists x\\ \\forall y\\ (x\\le y)$ is true."
+        "For a wildlife survey unit, Val, Willow, Ximena, Yanni, and Zara may survey. The rules are: (1) at least one of Val or Willow surveys; (2) if Val surveys, then Zara does not survey; (3) if Zara surveys, then Yanni surveys; (4) if Ximena surveys, then Willow surveys; (5) exactly one of Yanni and Ximena surveys; (6) at least 2 people survey. A coordinator concludes that exactly 7 different assignments satisfy all the rules.",
+        "Let $H=\\{\\ldots,-2,0,2,\\ldots\\}$ be the set of even integers. The map $f(n)=2n$ is a bijection from the integers onto $H$; consequently, $H$ must have strictly smaller cardinality than its parent set because it is proper.",
+        "In an airport service poll of $120$ people, $54$ belong to the lounge group, $47$ to the fast track group, and $38$ to the parking group. The reported pairwise totals are $16$, $12$, and $11$, each including the $4$ people in all three. The report concludes that exactly $31$ people belong to at least two of the three groups.",
+        "A hotel adds breakfast credit whenever a guest books a conference rate. Anika received breakfast credit after a service complaint and booked a leisure rate. Anika's case refutes the original policy because Anika received breakfast credit without having booked a conference rate.",
+        "For a clinic weekend rota, Aisha, Ben, Carla, Dmitri, and Eun may work. The rules are: (1) Carla works if and only if Eun works; (2) if Eun works, then Dmitri works; (3) exactly one of Ben and Aisha works; (4) if Dmitri works, then Ben does not work; (5) at least one of Carla or Aisha works; (6) at least 3 people work. A coordinator concludes that every valid assignment containing Aisha also contains Carla."
       ],
-      "answer_key": [true, true, false, false, true],
+      "answer_key": [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nPush the negation through the existential and then through the universal quantifier.\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\neg[\\forall y\\ R(x,y)]$$\n\n$$\\neg[\\forall y\\ R(x,y)]\\equiv\\exists y\\ \\neg R(x,y)$$\n\n$$\\neg[\\exists x\\ \\forall y\\ R(x,y)]\\equiv\\forall x\\ \\exists y\\ \\neg R(x,y)$$\n\nThe proposed quantifier pattern is correct, so the statement is True.",
-        "**B.** → True\n\nBuild the two power sets one level at a time.\n\n$$\\mathcal P(\\emptyset)=\\{\\emptyset\\}$$\n\n$$\\mathcal P(\\mathcal P(\\emptyset))=\\mathcal P(\\{\\emptyset\\})$$\n\n$$\\mathcal P(\\{\\emptyset\\})=\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\nThe displayed roster is complete, so the statement is True.",
-        "**C.** → False\n\nThree-set inclusion-exclusion still contains the unspecified triple overlap.\n\n$$|A\\cup B\\cup C|=20+18+16-5-6-7+|A\\cap B\\cap C|$$\n\n$$|A\\cup B\\cup C|=36+|A\\cap B\\cap C|$$\n\n$$|A\\cap B\\cap C|\\text{ is not given}$$\n\nThe union size is not uniquely determined, so the statement is False.",
-        "**D.** → False\n\nAn assignment with a false first proposition separates the two association patterns.\n\n$$(p,q,r)=(F,T,F)$$\n\n$$p\\rightarrow(q\\rightarrow r)=F\\rightarrow(T\\rightarrow F)=T$$\n\n$$(p\\rightarrow q)\\rightarrow r=(F\\rightarrow T)\\rightarrow F=T\\rightarrow F=F$$\n\nThe association of the implications changes the formula, so the statement is False.",
-        "**E.** → True\n\nThe least domain element supplies one witness below every possible $y$.\n\n$$x=0\\in D$$\n\n$$y\\in D\\Longrightarrow y\\in\\{0,1,2\\}$$\n\n$$0\\le0,\\qquad0\\le1,\\qquad0\\le2$$\n\nThe witness $x=0$ satisfies the universal condition, so the statement is True."
+        "**A.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Willow},\\text{Yanni}\\}\\quad \\{\\text{Willow},\\text{Yanni},\\text{Zara}\\}\\quad \\{\\text{Willow},\\text{Ximena}\\}\\quad \\{\\text{Val},\\text{Yanni}\\}\\quad \\{\\text{Val},\\text{Willow},\\text{Yanni}\\}\\quad \\{\\text{Val},\\text{Willow},\\text{Ximena}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**B.** → False\n\nThe proposed map is one-to-one and reaches every displayed element:\n\n$$f(a)=f(b)\\Longrightarrow a=b$$\n\n$$h\\in H\\Longrightarrow h=f(n)\\text{ for a unique input }n$$\n\nAt least one parent-set element is omitted, so the inclusion is proper, but a bijection proves equal infinite cardinality. The final finite-set inference is therefore invalid, so the statement is False.",
+        "**C.** → True\n\nFirst recover the disjoint Venn regions from pairwise totals that include the triple:\n\n$$AB\\text{ only}=16-4=12,\\quad AC\\text{ only}=12-4=8,\\quad BC\\text{ only}=11-4=7$$\n\nThree-set inclusion-exclusion gives\n\n$$|A\\cup B\\cup C|=54+47+38-16-12-11+4=104$$\n\nThe requested region count is\n\n$$N_{\\text{at least two}}=31$$\n\nThe report gives $31$, which matches the disjoint-region calculation, so the statement is True.",
+        "**D.** → False\n\nAnika's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Anika booked a conference rate}=\\mathrm{F},\\qquad\n\\text{Anika received breakfast credit}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{breakfast credit}\\Longrightarrow\\text{booked a conference rate}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
+        "**E.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=1$$\n\n$$ \\{\\text{Aisha},\\text{Carla},\\text{Dmitri},\\text{Eun}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 124,
-      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: negating exists-for-all.\nB: power sets of the empty set.\nC: missing triple intersection.\nD: different implication associations.\nE: least-element witness.",
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4\n\nA: named roster deduction with interacting rules.\nB: infinite proper-subset cardinality and explicit bijection.\nC: three-set survey with pair totals containing the triple.\nD: named counterexample separating a policy from its converse.\nE: named roster deduction with interacting rules.",
       "placeholder": false
     },
     {
@@ -423,23 +519,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For $S=\\{a,b,c\\}$, the proper subset $S\\setminus\\{a\\}$ contains every proper subset of $S$.",
-        "If $A\\subsetneq B$, then $A\\cup B=B$, $A\\cap B=A$, and $B\\setminus A$ is nonempty.",
-        "The formula $p\\vee(q\\wedge\\neg q)$ is a contradiction.",
-        "Inside the ordered domain $D=\\{0,1,2\\}$, choosing the maximum input never obstructs the demand for a strictly larger domain member.",
-        "A fixed two-element subset of a seven-element set has exactly $30$ supersets inside that set."
+        "A registry has a set $S$ of $5$ distinct film reels and fixes a particular $2$-element subset $F$. It claims that exactly $8$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$.",
+        "Let $U$ contain the integers from $1$ through $24$. Let $A$ be the multiples of $4$ in $U$ and $B$ the multiples of $6$. An auditor claims $|(A\\triangle B)^c|=16$, where the complement is taken in $U$.",
+        "A freight depot marks a shipment express whenever the sender pays the rush surcharge. Luis had a shipment marked express to replace damaged goods and paid no rush surcharge. Luis's case refutes the converse, \"Anyone with express marking must have paid the rush surcharge,\" but does not refute the original policy.",
+        "For an orchestra touring group, Flora, Gus, Hana, Idris, and Jules may travel. The rules are: (1) Idris travels if and only if Gus travels; (2) if Gus travels, then Flora travels; (3) exactly one of Flora and Hana travels; (4) if Hana travels, then Jules does not travel; (5) at least one of Idris or Jules travels; (6) at least 2 people travel. A coordinator concludes that Gus must travel in every valid assignment.",
+        "A registry has a set $S$ of $6$ distinct research samples and fixes a particular $3$-element subset $F$. It claims that exactly $7$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$."
       ],
-      "answer_key": [false, true, false, false, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nOne proper subset can contain an element omitted by another candidate.\n\n$$S\\setminus\\{a\\}=\\{b,c\\}$$\n\n$$\\{a,b\\}\\subsetneq S$$\n\n$$a\\in\\{a,b\\}\\quad\\text{and}\\quad a\\notin\\{b,c\\}$$\n\nThe proper subset $\\{a,b\\}$ is not contained in $S\\setminus\\{a\\}$, so the statement is False.",
-        "**B.** → True\n\nProper inclusion determines both basic operations and guarantees a leftover element.\n\n$$A\\subseteq B\\Longrightarrow A\\cup B=B$$\n\n$$A\\subseteq B\\Longrightarrow A\\cap B=A$$\n\n$$A\\ne B\\Longrightarrow B\\setminus A\\ne\\emptyset$$\n\nAll three consequences follow from $A\\subsetneq B$, so the statement is True.",
-        "**C.** → False\n\nThe contradiction inside the parentheses disappears under disjunction with $p$.\n\n$$q\\wedge\\neg q\\equiv F$$\n\n$$p\\vee(q\\wedge\\neg q)\\equiv p\\vee F$$\n\n$$p\\vee F\\equiv p$$\n\nThe formula is true whenever $p$ is true, so the statement is False.",
-        "**D.** → False\n\nThe largest domain element cannot have a larger witness inside the same domain.\n\n$$x=2$$\n\n$$y\\in D\\Longrightarrow y\\le2$$\n\n$$\\nexists y\\in D\\;(2<y)$$\n\nThe value $x=2$ is a counterexample, so the statement is False.",
-        "**E.** → False\n\nA superset already contains the fixed pair and freely chooses among the remaining elements.\n\n$$7-2=5$$\n\n$$\\#\\{\\text{supersets}\\}=2^5$$\n\n$$2^5=32\\ne30$$\n\nThere are $32$ such supersets, so the statement is False."
+        "**A.** → True\n\nEvery admissible $A$ contains the $2$ fixed objects and independently chooses from the remaining $3$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{3}=8$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count also matches, so the statement is True.",
+        "**B.** → False\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=6,\\quad |B|=4,\\quad |A\\cap B|=2$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=6+4-2(2)=6$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=24-6=18$$\n\nThe auditor's $16$ is not the computed complement size, so the statement is False.",
+        "**C.** → True\n\nLuis's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Luis paid the rush surcharge}=\\mathrm{F},\\qquad\n\\text{Luis received express marking}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{express marking}\\Longrightarrow\\text{paid the rush surcharge}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
+        "**D.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Flora},\\text{Jules}\\}\\quad \\{\\text{Flora},\\text{Gus},\\text{Idris}\\}\\quad \\{\\text{Flora},\\text{Gus},\\text{Idris},\\text{Jules}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**E.** → False\n\nEvery admissible $A$ contains the $3$ fixed objects and independently chooses from the remaining $3$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{3}=8$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count is 7 instead of 8, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 125,
-      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1.\n\nA: largest proper subset.\nB: operations on nested sets.\nC: simplifying an impossible conjunct.\nD: maximum-element counterexample.\nE: counting supersets.",
+      "solution_overview": "Topics: 1.1, 1.2, 1.3, 1.4, 1.1\n\nA: fixed-subset supersets inside an iterated power set.\nB: complement in a finite universe after symmetric difference.\nC: named counterexample separating a policy from its converse.\nD: named roster deduction with interacting rules.\nE: fixed-subset supersets inside an iterated power set.",
       "placeholder": false
     },
     {
@@ -449,23 +551,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Finite sets satisfy $|A|=27$, $|B|=19$, and $|A\\cap B|=8$. The region $A\\setminus B$ has $17$ elements.",
-        "Exactly three assignments for $p,q,r$ satisfy $(p\\wedge q)\\vee(p\\wedge r)\\vee(q\\wedge r)$.",
-        "Every real number $x$ has exactly two real numbers $y$ satisfying $y^3=x$.",
-        "When $|S|=4$, exactly $14$ sets $A$ make the strict chain $\\emptyset\\subsetneq A\\subsetneq S$.",
-        "In a $60$-element universe, $|A|=35$, $|B|=28$, and $|A\\cap B|=15$. Then $|A^c\\cup B|=43$."
+        "Let $U$ contain the ticket numbers from $1$ through $30$. Let $A$ be the multiples of $5$ in $U$ and $B$ the multiples of $7$. An auditor claims $|(A\\triangle B)^c|=20$, where the complement is taken in $U$.",
+        "A film festival gives a balcony badge whenever a guest sponsors a screening. Grace won a balcony badge in a volunteer draw and sponsored no screening. Grace's case refutes the original policy because Grace received balcony badge without having sponsored a screening.",
+        "For a startup pitch panel, Kai, Lily, Malik, Noemi, and Oscar may score. The rules are: (1) if Oscar scores, then Malik scores; (2) if Malik scores, then Noemi does not score; (3) at least one of Noemi or Lily scores; (4) if Kai scores, then Oscar scores; (5) Lily and Kai cannot both score; (6) at least 2 people score. A coordinator concludes that it is possible for Noemi to score in a valid assignment.",
+        "A registry has a set $S$ of $7$ distinct jury badges and fixes a particular $2$-element subset $F$. It claims that exactly $32$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$.",
+        "Let $U$ contain the locker numbers from $1$ through $36$. Let $A$ be the multiples of $6$ in $U$ and $B$ the multiples of $8$. An auditor claims $|(A\\triangle B)^c|=26$, where the complement is taken in $U$."
       ],
-      "answer_key": [false, false, false, true, false],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe part of $A$ outside $B$ is what remains after the intersection is removed.\n\n$$A=(A\\setminus B)\\mathbin{\\dot\\cup}(A\\cap B)$$\n\n$$|A\\setminus B|=|A|-|A\\cap B|$$\n\n$$|A\\setminus B|=27-8=19\\ne17$$\n\nThe region $A\\setminus B$ has $19$ elements, so the statement is False.",
-        "**B.** → False\n\nThe formula is true whenever at least two of the three propositions are true.\n\n$$\\#\\{\\text{exactly two true}\\}=\\binom{3}{2}=3$$\n\n$$\\#\\{\\text{all three true}\\}=\\binom{3}{3}=1$$\n\n$$3+1=4\\ne3$$\n\nFour assignments satisfy the majority formula, so the statement is False.",
-        "**C.** → False\n\nThe real cube function is strictly increasing and therefore has one inverse value.\n\n$$y_1<y_2\\Longrightarrow y_1^3<y_2^3$$\n\n$$y^3=x\\Longrightarrow y=\\sqrt[3]{x}$$\n\n$$\\#\\{y\\in\\mathbb R:y^3=x\\}=1\\ne2$$\n\nEach real number has one real cube root, so the statement is False.",
-        "**D.** → True\n\nThe middle set may be any nonempty proper subset.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$A\\ne\\emptyset\\quad\\text{and}\\quad A\\ne S$$\n\n$$16-2=14$$\n\nThere are $14$ admissible middle sets, so the statement is True.",
-        "**E.** → False\n\nComplement the expression by identifying exactly which elements it omits.\n\n$$(A^c\\cup B)^c=A\\cap B^c=A\\setminus B$$\n\n$$|A\\setminus B|=35-15=20$$\n\n$$|A^c\\cup B|=60-20=40\\ne43$$\n\nThe union has $40$ elements, so the statement is False."
+        "**A.** → True\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=6,\\quad |B|=4,\\quad |A\\cap B|=0$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=6+4-2(0)=10$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=30-10=20$$\n\nThe auditor's $20$ is the computed complement size, so the statement is True.",
+        "**B.** → False\n\nGrace's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Grace sponsored a screening}=\\mathrm{F},\\qquad\n\\text{Grace received balcony badge}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{balcony badge}\\Longrightarrow\\text{sponsored a screening}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False.",
+        "**C.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Lily},\\text{Noemi}\\}\\quad \\{\\text{Lily},\\text{Malik}\\}\\quad \\{\\text{Lily},\\text{Malik},\\text{Oscar}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**D.** → True\n\nEvery admissible $A$ contains the $2$ fixed objects and independently chooses from the remaining $5$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{5}=32$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count also matches, so the statement is True.",
+        "**E.** → False\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=6,\\quad |B|=4,\\quad |A\\cap B|=1$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=6+4-2(1)=8$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=36-8=28$$\n\nThe auditor's $26$ is not the computed complement size, so the statement is False."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 126,
-      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2.\n\nA: subtracting an overlap.\nB: majority formula truth count.\nC: uniqueness of a real cube root.\nD: strict chains through one subset.\nE: union with a complement.",
+      "solution_overview": "Topics: 1.2, 1.3, 1.4, 1.1, 1.2\n\nA: complement in a finite universe after symmetric difference.\nB: named counterexample separating a policy from its converse.\nC: named roster deduction with interacting rules.\nD: fixed-subset supersets inside an iterated power set.\nE: complement in a finite universe after symmetric difference.",
       "placeholder": false
     },
     {
@@ -475,23 +583,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "A truth-table report describes the rows where $p$ and $q$ disagree by $(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$. The report is correct.",
-        "In the rational-number domain, $\\exists x\\ (x^2=2)$ is true.",
-        "The two-element subsets of $\\{a,b,c,d\\}$ form a five-member family in which no member contains another.",
-        "A poll reports $50$ people in $A$, $45$ in $B$, and $20$ in both. Exactly $50$ respondents belong to one of the groups but not both.",
-        "From premises $p\\vee q$ and $\\neg p\\vee r$, the conclusion $q\\wedge r$ follows validly."
+        "A clinic provides free parking whenever a patient attends day surgery. Bashir received free parking through a disability permit and attended only a consultation. Bashir's case refutes the converse, \"Anyone with free parking must have attended day surgery,\" but does not refute the original policy.",
+        "For an election recount team, Paula, Reed, Suki, Tom, and Una may count. The rules are: (1) exactly one of Tom and Paula counts; (2) if Paula counts, then Una counts; (3) Una counts if and only if Suki counts; (4) if Suki counts, then Reed does not count; (5) at least one of Tom or Reed counts; (6) at most 3 people count. A coordinator concludes that the rules permit exactly one assignment.",
+        "A registry has a set $S$ of $8$ distinct shipping codes and fixes a particular $4$-element subset $F$. It claims that exactly $15$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$.",
+        "Let $U$ contain the route codes from $1$ through $28$. Let $A$ be the multiples of $4$ in $U$ and $B$ the multiples of $7$. An auditor claims $|(A\\triangle B)^c|=19$, where the complement is taken in $U$.",
+        "A farm cooperative pays a transport rebate whenever a member ships at least ten crates. Elena received a rebate for a delayed pickup and shipped six crates. Elena's case refutes the original policy because Elena received transport rebate without having shipped at least ten crates."
       ],
-      "answer_key": [false, false, false, false, false],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe displayed right side describes agreement, while the negation of a biconditional describes disagreement.\n\n$$(p,q)=(T,T)$$\n\n$$\\neg(p\\leftrightarrow q)=\\neg T=F$$\n\n$$(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)=T\\vee F=T$$\n\nThe two formulas already disagree on the all-true row, so the statement is False.",
-        "**B.** → False\n\nA lowest-terms parity argument rules out a rational witness.\n\n$$x=\\frac{a}{b},\\quad\\gcd(a,b)=1,\\quad x^2=2\\Longrightarrow a^2=2b^2$$\n\n$$a^2\\text{ even}\\Longrightarrow a=2k\\Longrightarrow b^2=2k^2$$\n\n$$a\\text{ even and }b\\text{ even}\\Longrightarrow\\gcd(a,b)\\ne1$$\n\nNo rational witness can square to $2$, so the statement is False.",
-        "**C.** → False\n\nEqual-sized distinct subsets cannot contain one another, but the family size still must be counted correctly.\n\n$$\\#\\{A\\subseteq S:|A|=2\\}=\\binom{4}{2}$$\n\n$$\\binom{4}{2}=6$$\n\n$$6\\ne5$$\n\nThe antichain property holds but the five-member count does not, so the statement is False.",
-        "**D.** → False\n\nRemove the shared respondents from each group before combining the exclusive pieces.\n\n$$|A\\setminus B|=50-20=30$$\n\n$$|B\\setminus A|=45-20=25$$\n\n$$|A\\triangle B|=30+25=55\\ne50$$\n\nExactly $55$ respondents belong to one group only, so the statement is False.",
-        "**E.** → False\n\nA countermodel can satisfy both disjunctive premises while making one conclusion conjunct false.\n\n$$(p,q,r)=(T,F,T)$$\n\n$$p\\vee q=T,\\qquad\\neg p\\vee r=T$$\n\n$$q\\wedge r=F\\wedge T=F$$\n\nThe premises can be true while the conclusion is false, so the statement is False."
+        "**A.** → True\n\nBashir's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Bashir attended day surgery}=\\mathrm{F},\\qquad\n\\text{Bashir received free parking}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{free parking}\\Longrightarrow\\text{attended day surgery}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
+        "**B.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=3$$\n\n$$ \\{\\text{Tom}\\}\\quad \\{\\text{Suki},\\text{Tom},\\text{Una}\\}\\quad \\{\\text{Reed},\\text{Tom}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False.",
+        "**C.** → False\n\nEvery admissible $A$ contains the $4$ fixed objects and independently chooses from the remaining $4$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{4}=16$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count is 15 instead of 16, so the statement is False.",
+        "**D.** → True\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=7,\\quad |B|=4,\\quad |A\\cap B|=1$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=7+4-2(1)=9$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=28-9=19$$\n\nThe auditor's $19$ is the computed complement size, so the statement is True.",
+        "**E.** → False\n\nElena's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Elena shipped at least ten crates}=\\mathrm{F},\\qquad\n\\text{Elena received transport rebate}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{transport rebate}\\Longrightarrow\\text{shipped at least ten crates}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, contrary to what the statement says, so the statement is False."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 127,
-      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3.\n\nA: negated biconditional.\nB: rational square root.\nC: uniform subsets as an antichain.\nD: exclusive-or poll count.\nE: overstated resolution conclusion.",
+      "solution_overview": "Topics: 1.3, 1.4, 1.1, 1.2, 1.3\n\nA: named counterexample separating a policy from its converse.\nB: named roster deduction with interacting rules.\nC: fixed-subset supersets inside an iterated power set.\nD: complement in a finite universe after symmetric difference.\nE: named counterexample separating a policy from its converse.",
       "placeholder": false
     },
     {
@@ -501,23 +615,29 @@
       "subsection": "1.5",
       "context": "Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Premises $\\forall x(A(x)\\rightarrow B(x))$, $\\forall x(B(x)\\rightarrow C(x))$, and $\\exists x\\,A(x)$ entail $\\exists x\\,C(x)$.",
-        "If $\\mathcal A\\subseteq\\mathcal P(S)$, then every member of $\\mathcal A$ is a subset of $S$, and $\\bigcup\\mathcal A\\subseteq S$.",
-        "If $|A\\cup B|=70$, $|A|=42$, and $|B|=36$, then $|A\\cap B|=6$.",
-        "An implication $p\\rightarrow q$ is true on exactly two of the four assignments for $p,q$.",
-        "On every nonempty domain, $\\forall x\\ \\exists y\\ R(x,y)$ entails $\\exists y\\ \\forall x\\ R(x,y)$."
+        "For a school-trip chaperone roster, Vik, Willa, Xavi, Yasmin, and Zed may chaperone. The rules are: (1) at least one of Yasmin or Willa chaperones; (2) if Yasmin chaperones, then Xavi does not chaperone; (3) if Xavi chaperones, then Vik chaperones; (4) if Zed chaperones, then Willa chaperones; (5) exactly one of Vik and Zed chaperones; (6) at least 2 people chaperone. A coordinator concludes that exactly 6 different assignments satisfy all the rules.",
+        "A registry has a set $S$ of $5$ distinct festival passes and fixes a particular $1$-element subset $F$. It claims that exactly $16$ members $A$ of $\\mathcal P(S)$ satisfy $F\\subseteq A\\subseteq S$, and that the family of all such $A$ is itself an element of $\\mathcal P(\\mathcal P(S))$.",
+        "Let $U$ contain the shelf numbers from $1$ through $40$. Let $A$ be the multiples of $5$ in $U$ and $B$ the multiples of $8$. An auditor claims $|(A\\triangle B)^c|=27$, where the complement is taken in $U$.",
+        "A conference issues a speaker pin whenever a delegate leads a workshop. Kwame received a speaker pin as last year's chair and led no workshop. Kwame's case refutes the converse, \"Anyone with speaker pin must have led a workshop,\" but does not refute the original policy.",
+        "For a harbor safety board, Alma, Boris, Chi, Dora, and Eli may sit. The rules are: (1) Chi sits if and only if Eli sits; (2) if Eli sits, then Alma sits; (3) exactly one of Dora and Boris sits; (4) if Alma sits, then Dora does not sit; (5) at least one of Chi or Boris sits; (6) at least 3 people sit. A coordinator concludes that some valid assignment contains Alma but omits Chi."
       ],
-      "answer_key": [true, true, false, false, false],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
       "tactical_explanations": [
-        "**A.** → True\n\nCarry the witness from the first class through both universal implications.\n\n$$\\exists x\\,A(x)\\Longrightarrow A(a)$$\n\n$$A(a)\\rightarrow B(a)$$\n\n$$B(a)\\rightarrow C(a)\\Longrightarrow\\exists x\\,C(x)$$\n\nThe chained deduction produces a $C$ witness, so the statement is True.",
-        "**B.** → True\n\nUnpack the outer subset relation and then follow elements of the union.\n\n$$A\\in\\mathcal A\\Longrightarrow A\\in\\mathcal P(S)\\Longrightarrow A\\subseteq S$$\n\n$$x\\in\\bigcup\\mathcal A\\Longrightarrow\\exists A\\in\\mathcal A\\;(x\\in A)$$\n\n$$x\\in A\\subseteq S\\Longrightarrow x\\in S$$\n\nEvery element collected by the union lies in $S$, so the statement is True.",
-        "**C.** → False\n\nRearrange the two-set inclusion-exclusion equation to isolate the overlap.\n\n$$|A\\cap B|=|A|+|B|-|A\\cup B|$$\n\n$$|A\\cap B|=42+36-70$$\n\n$$|A\\cap B|=8\\ne6$$\n\nThe intersection has eight elements, so the statement is False.",
-        "**D.** → False\n\nOnly the true-antecedent and false-consequent row falsifies an implication.\n\n$$p\\rightarrow q=F\\Longleftrightarrow(p,q)=(T,F)$$\n\n$$\\#\\{\\text{false rows}\\}=1$$\n\n$$\\#\\{\\text{true rows}\\}=4-1=3\\ne2$$\n\nThe implication is true on three assignments, so the statement is False.",
-        "**E.** → False\n\nA relation can provide a different witness for each input without providing one shared witness.\n\n$$D=\\{1,2\\},\\quad R(x,y)\\Longleftrightarrow x=y$$\n\n$$\\forall x\\in D\\ \\exists y\\in D\\;(x=y)=T$$\n\n$$\\exists y\\in D\\ \\forall x\\in D\\;(x=y)=F$$\n\nEquality on a two-element domain is a countermodel, so the statement is False."
+        "**A.** → True\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=6$$\n\n$$ \\{\\text{Willa},\\text{Zed}\\}\\quad \\{\\text{Willa},\\text{Yasmin},\\text{Zed}\\}\\quad \\{\\text{Vik},\\text{Yasmin}\\}\\quad \\{\\text{Vik},\\text{Willa}\\}\\quad \\{\\text{Vik},\\text{Willa},\\text{Yasmin}\\}\\quad \\{\\text{Vik},\\text{Willa},\\text{Xavi}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is confirmed by the full legal list, so the statement is True.",
+        "**B.** → True\n\nEvery admissible $A$ contains the $1$ fixed objects and independently chooses from the remaining $4$:\n\n$$\\#\\{A:F\\subseteq A\\subseteq S\\}=2^{4}=16$$\n\nEvery such $A$ is a subset of $S$, so the resulting family is a subset of $\\mathcal P(S)$:\n\n$$\\mathcal F\\subseteq\\mathcal P(S)\\Longrightarrow\\mathcal F\\in\\mathcal P(\\mathcal P(S))$$\n\nThe iterated membership is correct, and the claimed count also matches, so the statement is True.",
+        "**C.** → False\n\nThe symmetric difference keeps membership in exactly one of the two sets:\n\n$$|A|=8,\\quad |B|=5,\\quad |A\\cap B|=1$$\n\n$$|A\\triangle B|=|A|+|B|-2|A\\cap B|=8+5-2(1)=11$$\n\nTherefore\n\n$$|(A\\triangle B)^c|=40-11=29$$\n\nThe auditor's $27$ is not the computed complement size, so the statement is False.",
+        "**D.** → True\n\nKwame's facts have the policy's trigger false and its benefit true:\n\n$$\\text{Kwame led a workshop}=\\mathrm{F},\\qquad\n\\text{Kwame received speaker pin}=\\mathrm{T}$$\n\nThe original rule has a false hypothesis and is not violated. Its converse has a true hypothesis and false conclusion:\n\n$$\\text{speaker pin}\\Longrightarrow\\text{led a workshop}\n=\\mathrm{T}\\Longrightarrow\\mathrm{F}=\\mathrm{F}$$\n\nTherefore the case refutes the converse, not the original rule, which is what the statement says, so the statement is True.",
+        "**E.** → False\n\nApply each implication in its stated direction, each biconditional in both directions, and each exclusive-or as exactly one choice. The complete legal-roster check leaves\n\n$$N_{\\mathrm{valid}}=1$$\n\n$$ \\{\\text{Alma},\\text{Boris},\\text{Chi},\\text{Eli}\\} $$\n\nThese rosters show directly whether the named person is forced or possible, whether a conditional holds in every roster, and whether the assignment is unique.\n\nThe coordinator's conclusion is contradicted by the full legal list, so the statement is False."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 128,
-      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4.\n\nA: chained rules with existence.\nB: family contained in a power set.\nC: recovering an intersection.\nD: truth count for implication.\nE: swapping dependent witnesses.",
+      "solution_overview": "Topics: 1.4, 1.1, 1.2, 1.3, 1.4\n\nA: named roster deduction with interacting rules.\nB: fixed-subset supersets inside an iterated power set.\nC: complement in a finite universe after symmetric difference.\nD: named counterexample separating a policy from its converse.\nE: named roster deduction with interacting rules.",
       "placeholder": false
     }
   ]
