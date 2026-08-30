@@ -40,7 +40,7 @@
     "There are fewer ways to form a committee with exactly 2 men and 2 women than a committee with exactly 3 men and 1 woman.",
     "The probability that the committee consists of all men is less than 5%.",
     "The probability that the committee contains at least one woman is greater than 90%.",
-    "The probability of selecting exactly 2 men and 2 women equals 14/33."
+    "The probability of selecting exactly 2 men and 2 women equals $14/33$."
    ],
    "answer_key": [
     false,
@@ -100,7 +100,7 @@
    "statements": [
     "The total number of possible seating arrangements is 5,040.",
     "The number of arrangements in which all 3 girls sit together (in some order) is 720.",
-    "The probability that all 3 girls sit together is exactly 1/7.",
+    "The probability that all 3 girls sit together is exactly $1/7$.",
     "The probability that boys and girls alternate along the row (in either starting order) is greater than 5%.",
     "The probability that all 3 girls sit together is more than 5 times the probability of an alternating arrangement."
    ],
@@ -163,7 +163,7 @@
     "The total number of possible outcomes is 7,776.",
     "The probability that all five dice show different numbers is greater than 20%.",
     "The probability that at least two dice show the same number is less than 80%.",
-    "The probability that all five dice show different numbers equals exactly 1/6.",
+    "The probability that all five dice show different numbers equals exactly $1/6$.",
     "If only 3 dice were rolled instead of 5, the probability of all different values would be lower than with 5 dice."
    ],
    "answer_key": [
@@ -223,7 +223,7 @@
    "context": "The 7 letters of the word BALLOON (B, A, L, L, O, O, N) are arranged at random in a row. The two L's are identical to each other, and the two O's are identical to each other.",
    "statements": [
     "The total number of distinct arrangements is 2,520.",
-    "The probability that the two L's are adjacent to each other is 2/7.",
+    "The probability that the two L's are adjacent to each other is $2/7$.",
     "The probability that the two L's AND the two O's are both adjacent (each pair sitting together) is greater than 10%.",
     "The probability that the two L's are adjacent equals the probability that the two O's are adjacent.",
     "If all 7 letters had been different (no repeats at all), the total number of arrangements would be less than 2,520."
@@ -285,7 +285,7 @@
    "context": "8 people, including two specific friends A and B, are seated at random around a circular table. Only the relative order of the seats matters - rotating everyone around the table by the same amount counts as the same arrangement, but mirror-image seatings are still counted as different.",
    "statements": [
     "The total number of distinct circular arrangements is 5,040.",
-    "The probability of event A and B sit next to each other is 2/7.",
+    "The probability of event A and B sit next to each other is $2/7$.",
     "The probability of event A and B do NOT sit next to each other is less than 70%.",
     "If the same 8 people instead sat in a straight row (not around a table), the probability that A and B are adjacent would be exactly 1/4.",
     "Sitting around a round table makes A and B less likely to end up adjacent than sitting in a straight row would."
@@ -316,7 +316,7 @@
    "context": "A fair six-sided die is rolled 4 times. Separately, a pair of fair six-sided dice is rolled 24 times. (This pair of problems is a famous historical question first posed to Blaise Pascal in the 17th century.)",
    "statements": [
     "The probability of rolling at least one 6 in 4 rolls of a single die is greater than 50%.",
-    "The probability of rolling at least one 6 in 4 rolls equals 1 − (5/6)⁴.",
+    "The probability of rolling at least one 6 in 4 rolls equals $1-(5/6)^4$.",
     "The probability of rolling no 6 at all in the 4 rolls is less than 45%.",
     "The probability of rolling at least one double-six in 24 rolls of a pair of dice is less than 50%.",
     "The probability of rolling at least one double-six in 24 rolls of a pair of dice is greater than the probability of rolling at least one 6 in 4 rolls of a single die."
@@ -348,7 +348,7 @@
    "statements": [
     "The total number of possible arrangements is 40,320.",
     "The number of arrangements in which no two mystery novels are adjacent to each other is 14,400.",
-    "The probability that no two mystery novels are adjacent is 5/14.",
+    "The probability that no two mystery novels are adjacent is $5/14$.",
     "The probability that all three mystery novels are adjacent (sitting together as a block) is greater than the probability that no two mystery novels are adjacent.",
     "The probability that no two mystery novels are adjacent is more than 3 times the probability that all three mystery novels are adjacent."
    ],
@@ -473,7 +473,7 @@
     "The total number of ways to redistribute the 6 gifts is 720.",
     "The probability that no friend receives their own gift is greater than 36.8%.",
     "The probability that exactly one friend receives their own gift is greater than the probability that no friend receives their own gift.",
-    "The probability that exactly two friends receive their own gifts is exactly 3/16.",
+    "The probability that exactly two friends receive their own gifts is exactly $3/16$.",
     "The probability that every friend receives their own original gift (the identity assignment) is greater than 1 in 500."
    ],
    "answer_key": [
@@ -535,7 +535,7 @@
     "The total number of distinct ways to distribute the 10 candies among the 4 children is 286.",
     "The probability that a specific child receives no candy at all is greater than 23%.",
     "The probability that a specific child receives at least 5 candies is less than 20%.",
-    "The probability that every one of the 4 children receives at least one candy is exactly 42/143.",
+    "The probability that every one of the 4 children receives at least one candy is exactly $42/143$.",
     "The probability that a specific child receives no candy is more than double the probability that a specific child receives at least 5 candies."
    ],
    "answer_key": [
@@ -595,7 +595,7 @@
    "context": "For a campus assessment fair, ten letter tiles spelling the word ASSESSMENT (A, S, S, E, S, S, M, E, N, T) are placed in a bag and drawn out one at a time to form a poster headline in a row. Tiles for the same letter are indistinguishable from one another. The word contains four S's, two E's, and one each of A, M, N, and T.",
    "statements": [
     "The total number of distinct posters that can be formed is 75,600.",
-    "The probability that all four S's end up adjacent to each other is 1/30.",
+    "The probability that all four S's end up adjacent to each other is $1/30$.",
     "The probability that the two E's end up adjacent to each other is greater than 1/4.",
     "The probability that all four S's are adjacent AND the two E's are adjacent (simultaneously) is less than 1%.",
     "The probability of event M and T end up adjacent to each other equals the probability that the two E's end up adjacent to each other."
@@ -689,8 +689,8 @@
    "statements": [
     "The total number of handshakes exchanged during the warm-up is 66.",
     "The number of distinct ways to pair the 12 players into 6 round-1 matches is 10,395.",
-    "The probability that two specific players, Anna and Ben, are paired against each other in round 1 is 1/6.",
-    "The probability that one specific complete pairing (a predetermined list of exactly which 6 pairs play each other) is the one that occurs is 1/1,000.",
+    "The probability that two specific players, Anna and Ben, are paired against each other in round 1 is $1/6$.",
+    "The probability that one specific complete pairing (a predetermined list of exactly which 6 pairs play each other) is the one that occurs is $1/1$,000.",
     "If the club instead had 6 players, the number of ways to pair them into 3 round-1 matches would be 15."
    ],
    "answer_key": [
@@ -719,9 +719,9 @@
    "context": "At a gala dinner, 4 men and 4 women (8 distinct people total) are seated uniformly at random in a single row of 8 chairs.",
    "statements": [
     "The total number of possible seating arrangements is 40,320.",
-    "The probability that the genders strictly alternate along the row (man-woman-man-woman… or woman-man-woman-man…) is exactly 1/35.",
+    "The probability that the genders strictly alternate along the row (man-woman-man-woman… or woman-man-woman-man…) is exactly $1/35$.",
     "The probability that all four women sit in four consecutive seats is greater than 10%.",
-    "The probability that two specific guests end up in adjacent seats is exactly 1/4.",
+    "The probability that two specific guests end up in adjacent seats is exactly $1/4$.",
     "The probability that both end seats are occupied by women is greater than 20%."
    ],
    "answer_key": [
@@ -750,7 +750,7 @@
    "context": "For a statistics fair, ten letter tiles spelling the word STATISTICS (S, T, A, T, I, S, T, I, C, S) are placed in a bag and drawn out one at a time to form a banner in a row. Tiles for the same letter are indistinguishable from one another. The word contains three S's, three T's, two I's, one A, and one C.",
    "statements": [
     "The total number of distinct banners that can be formed is 50,400.",
-    "The probability that all three S's end up adjacent to each other is 1/15.",
+    "The probability that all three S's end up adjacent to each other is $1/15$.",
     "The probability that all three T's end up adjacent to each other equals the probability that all three S's end up adjacent to each other.",
     "The probability that the two I's end up adjacent to each other is greater than 1/6.",
     "The probability that the two I's are adjacent AND all three S's are adjacent (simultaneously) is less than 2%."
@@ -844,8 +844,8 @@
    "statements": [
     "The total number of handshakes exchanged during the icebreaker is 100.",
     "The number of distinct ways to pair the 10 players into 5 round-1 games is 945.",
-    "The probability that two specific players, Alice and Bob, are paired against each other in round 1 is 1/5.",
-    "The probability that one specific complete pairing (a predetermined list of exactly which 5 pairs play each other) is the one that occurs is 1/90.",
+    "The probability that two specific players, Alice and Bob, are paired against each other in round 1 is $1/5$.",
+    "The probability that one specific complete pairing (a predetermined list of exactly which 5 pairs play each other) is the one that occurs is $1/90$.",
     "If the club instead had 8 players, the number of ways to pair them into 4 round-1 games would be 96."
    ],
    "answer_key": [
@@ -874,7 +874,7 @@
    "context": "For a wedding photo, 3 married couples (6 distinct people total) line up in a single row, with everyone's position in the row determined completely at random.",
    "statements": [
     "The total number of possible lineups is 720.",
-    "The probability that all three couples end up standing together (each couple occupying two adjacent positions) is 1/15.",
+    "The probability that all three couples end up standing together (each couple occupying two adjacent positions) is $1/15$.",
     "The probability that at least one couple ends up standing together is greater than 60%.",
     "The probability that no couple ends up standing together is greater than 30%.",
     "The probability that no couple ends up standing together is less than the probability that all three couples end up standing together."
@@ -936,7 +936,7 @@
    "context": "At the European Data Summit in Vienna, the operations team is assembling a scrolling LED name-strip for the main stage. They have exactly ten physical letter tiles that spell the word CONFERENCE (C, O, N, F, E, R, E, N, C, E). Tiles showing the same letter are indistinguishable. A junior technician empties the tiles into a cloth bag and draws them out one by one to decide the left-to-right order on the strip; every distinct arrangement of the multiset is equally likely. The word contains two C's, two N's, three E's, and one each of O, F, and R.",
    "statements": [
     "The total number of distinct banners that can appear on the strip is 151,200.",
-    "The probability that the two C's end up adjacent to each other is 1/5.",
+    "The probability that the two C's end up adjacent to each other is $1/5$.",
     "The probability that all three E's end up adjacent to each other (as a single block of three) is greater than 10%.",
     "The probability that the two N's end up adjacent equals the probability that the two C's end up adjacent.",
     "The probability that the two C's are adjacent AND the two N's are adjacent (simultaneously) is less than 5%."
@@ -1030,7 +1030,7 @@
    "statements": [
     "The total number of handshakes exchanged during the icebreaker is 91.",
     "The number of distinct ways to pair the 14 dancers into 7 practice pairs is 135,135.",
-    "The probability that two specific dancers, Lena and Marco, are paired with each other is 1/7.",
+    "The probability that two specific dancers, Lena and Marco, are paired with each other is $1/7$.",
     "The probability that one specific complete pairing (a predetermined list of all 7 pairs) is the one that occurs is less than 1 in 100,000.",
     "If only 8 dancers had attended, the number of ways to pair them into 4 practice pairs would be 105."
    ],
@@ -1060,9 +1060,9 @@
    "context": "For a chamber-music showcase, nine distinct musicians - three violinists, three cellists, two flutists, and one pianist - must sit in a single row of nine chairs along the stage apron. The stage manager, running late, assigns the nine chairs by drawing the musicians' names from a hat, so every seating of the nine people is equally likely. Musicians within the same instrument group are still distinct individuals.",
    "statements": [
     "The total number of possible seating arrangements is 362,880.",
-    "The probability that all three violinists sit in three consecutive chairs is exactly 1/12.",
+    "The probability that all three violinists sit in three consecutive chairs is exactly $1/12$.",
     "The probability that the two flutists sit adjacent to each other is greater than 25%.",
-    "The probability that the pianist sits in one of the two end chairs is exactly 2/9.",
+    "The probability that the pianist sits in one of the two end chairs is exactly $2/9$.",
     "The probability that all three violinists sit together as a block AND all three cellists sit together as a block (simultaneously) is less than 2%."
    ],
    "answer_key": [
@@ -1122,10 +1122,10 @@
    "context": "Four married couples (eight distinct people) book a shared transfer from the valley station to a ski chalet. The shuttle is a single van with eight seats in one row behind the driver. The driver asks everyone to board in random order and sit wherever they like, which - for modelling purposes - means that the eight people are assigned to the eight seats uniformly at random. Couples prefer to sit side by side, but no seating constraints are enforced.",
    "statements": [
     "The total number of possible seating arrangements is 40,320.",
-    "The probability that all four couples each sit side by side (four adjacent couple-blocks) is exactly 1/105.",
+    "The probability that all four couples each sit side by side (four adjacent couple-blocks) is exactly $1/105$.",
     "The probability that at least one of the four couples sits side by side is greater than 70%.",
     "The probability that no couple sits side by side is greater than 30%.",
-    "The probability that one specific named couple sits side by side is exactly 1/4."
+    "The probability that one specific named couple sits side by side is exactly $1/4$."
    ],
    "answer_key": [
     true,
@@ -1184,9 +1184,9 @@
    "context": "Ten first-year students, including a pair of twins (Anya and Boris) and three other named friends (Clara, David, and Elena), are seated uniformly at random in a single row of ten desks for a written entrance exam. Proctors care about whether the twins sit together (possible collusion) and about whether particular friends end up in particular left-to-right orders.",
    "statements": [
     "The total number of possible seating arrangements is 3,628,800.",
-    "The probability that the twins sit in adjacent desks is exactly 1/5.",
+    "The probability that the twins sit in adjacent desks is exactly $1/5$.",
     "The probability that the twins do not sit adjacent is less than 75%.",
-    "Among the three friends Clara, David, and Elena, the probability that they appear from left to right in the specific order Clara-David-Elena (not necessarily adjacent) is exactly 1/6.",
+    "Among the three friends Clara, David, and Elena, the probability that they appear from left to right in the specific order Clara-David-Elena (not necessarily adjacent) is exactly $1/6$.",
     "The probability that the twins occupy the two end desks of the row (Anya at one end and Boris at the other, in either order) is greater than 5%."
    ],
    "answer_key": [
@@ -1247,7 +1247,7 @@
    "statements": [
     "The probability that the committee has exactly 2 women and 2 men is greater than 42%.",
     "The probability that the committee includes at least one woman equals 1 minus the probability that the committee is entirely men.",
-    "The probability that a specific person in the group is selected onto the committee equals 4/12.",
+    "The probability that a specific person in the group is selected onto the committee equals $4/12$.",
     "The probability that the committee is entirely men is less than 7%.",
     "The probability that the committee has exactly 2 women and 2 men is more than 6 times the probability that the committee is entirely men."
    ],
@@ -1278,7 +1278,7 @@
    "statements": [
     "The probability that the committee has exactly 3 women and 2 men is greater than 24%.",
     "The probability that the committee includes at least one man equals 1 minus the probability that the committee is entirely women.",
-    "The probability that a specific person in the group is selected onto the committee equals 5/15.",
+    "The probability that a specific person in the group is selected onto the committee equals $5/15$.",
     "The probability that the committee is entirely women is less than 0.5%.",
     "The probability that the committee has exactly 3 women and 2 men is more than 100 times the probability that the committee is entirely women."
    ],
@@ -1309,7 +1309,7 @@
    "statements": [
     "The probability that the sample has exactly 2 red and 2 blue is greater than 35%.",
     "The probability that the sample includes at least one red ball equals 1 minus the probability that the sample is entirely blue.",
-    "The probability that a specific ball in the bag is included in the sample equals 2/9.",
+    "The probability that a specific ball in the bag is included in the sample equals $2/9$.",
     "The probability that the sample is entirely blue is less than 2%.",
     "The probability that the sample has exactly 2 red and 2 blue is more than 15 times the probability that the sample is entirely blue."
    ],
@@ -3173,7 +3173,7 @@
    "title": "Two fair six-sided dice are rolled once",
    "context": "Two fair six-sided dice are rolled once. Consider probabilities conditional on whether the sum of the two dice is even or odd.",
    "statements": [
-    "The probability that the two dice show the same number given that the sum is even, equals 1/3.",
+    "The probability that the two dice show the same number given that the sum is even, equals $1/3$.",
     "The probability that the sum is at least 8 given that the sum is even, equals 50%.",
     "The probability that at least one die shows a 6 given that the sum is even, is greater than 28%.",
     "The probability that the sum is even equals the probability that the sum is odd.",
@@ -3204,7 +3204,7 @@
    "title": "Two fair six-sided dice are rolled once",
    "context": "Two fair six-sided dice are rolled once. Consider probabilities conditional on whether the product of the two dice is odd or even.",
    "statements": [
-    "The probability that the two dice show the same number given that the product is odd, equals 1/3.",
+    "The probability that the two dice show the same number given that the product is odd, equals $1/3$.",
     "The probability that the sum is even given that the product is odd, equals 100%.",
     "The probability that at least one die shows a 5 given that the product is even, is greater than 25%.",
     "The probability that the product is even equals 3 times the probability that the product is odd.",
@@ -3235,7 +3235,7 @@
    "title": "Two fair six-sided dice are rolled once",
    "context": "Two fair six-sided dice are rolled once. Consider probabilities conditional on the sum of the two dice being at least 9, or at most 4.",
    "statements": [
-    "The probability that the two dice show the same number given that the sum, is at least 9 equals 1/5.",
+    "The probability that the two dice show the same number given that the sum, is at least 9 equals $1/5$.",
     "The probability that the sum is even given that the sum, is at least 9 equals 40%.",
     "The probability that at least one die shows a 6 given that the sum, is at least 9 is greater than 75%.",
     "The probability that the sum is at least 9 is greater than the probability that the sum is at most 4.",
@@ -3548,7 +3548,7 @@
    "id": "math-12-114",
    "case_id": "MATH 12.114",
    "title": "Startup Profit Scenario",
-   "context": "A startup's founders model next year's outcome as one of four possibilities. There is a 20% chance of a $5,000 loss, a 30% chance of breaking even at $0, a 35% chance of a $10,000 profit, and a 15% chance of a $25,000 profit. Let X be next year's profit (in dollars, with a loss counted as negative).",
+   "context": "A startup's founders model next year's outcome as one of four possibilities. There is a 20% chance of a \\$5,000 loss, a 30% chance of breaking even at \\$0, a 35% chance of a \\$10,000 profit, and a 15% chance of a \\$25,000 profit. Let X be next year's profit (in dollars, with a loss counted as negative).",
    "statements": [
     "The expected value of X is greater than \\$6,000.",
     "The standard deviation σ is greater than \\$9,700.",
@@ -3709,7 +3709,7 @@
    "id": "math-12-119",
    "case_id": "MATH 12.119",
    "title": "Company Profit",
-   "context": "A company's monthly Profit is Revenue minus Cost. Monthly Revenue, R, has μ = $50,000 and σ² = 4,000,000 (in dollars²). Monthly Cost, C, has μ = $32,000 and σ² = 1,000,000, independent of Revenue. Let Profit = R - C.",
+   "context": "A company's monthly Profit is Revenue minus Cost. Monthly Revenue, R, has μ = \\$50,000 and σ² = 4,000,000 (in dollars²). Monthly Cost, C, has μ = \\$32,000 and σ² = 1,000,000, independent of Revenue. Let Profit = R - C.",
    "statements": [
     "The mean μ of Profit equals \\$18,000.",
     "The variance σ² of Profit equals σ² of R minus σ² of C.",
@@ -3897,7 +3897,7 @@
    "id": "math-12-125",
    "case_id": "MATH 12.125",
    "title": "A Charity Raffle",
-   "context": "A charity raffle ticket pays out X dollars: $0 with probability 0.70, $10 with probability 0.25, and \\$50 with probability 0.05.",
+   "context": "A charity raffle ticket pays out X dollars: \\$0 with probability 0.70, \\$10 with probability 0.25, and \\$50 with probability 0.05.",
    "statements": [
     "The mean μ equals \\$5.",
     "The variance σ² equals 125.",
@@ -3996,7 +3996,7 @@
    "id": "math-12-128",
    "case_id": "MATH 12.128",
    "title": "A Lottery Ticket",
-   "context": "A lottery ticket pays X dollars: $0 with probability 0.94, $5 with probability 0.05, and \\$1000 with probability 0.01.",
+   "context": "A lottery ticket pays X dollars: \\$0 with probability 0.94, \\$5 with probability 0.05, and \\$1000 with probability 0.01.",
    "statements": [
     "The mean μ equals \\$10.",
     "The variance σ² is approximately 9,896.19.",
@@ -4029,7 +4029,7 @@
    "id": "math-12-129",
    "case_id": "MATH 12.129",
    "title": "A Game Show Wheel",
-   "context": "A contestant spins a wheel and wins X dollars, where X = $0 with probability 0.50, X = $100 with probability 0.35, and X = \\$500 with probability 0.15.",
+   "context": "A contestant spins a wheel and wins X dollars, where X = \\$0 with probability 0.50, X = \\$100 with probability 0.35, and X = \\$500 with probability 0.15.",
    "statements": [
     "The expected value of X equals 110.",
     "The variance of X equals 28,900.",
@@ -4095,7 +4095,7 @@
    "id": "math-12-131",
    "case_id": "MATH 12.131",
    "title": "A Vending Machine",
-   "context": "A vending machine sells snacks at three prices. The price X paid by the next customer is $1 with probability 0.20, $2 with probability 0.50, and \\$3 with probability 0.30.",
+   "context": "A vending machine sells snacks at three prices. The price X paid by the next customer is \\$1 with probability 0.20, \\$2 with probability 0.50, and \\$3 with probability 0.30.",
    "statements": [
     "The expected value of X equals \\$2.10.",
     "The variance of X equals 0.49.",
@@ -4194,7 +4194,7 @@
    "id": "math-12-134",
    "case_id": "MATH 12.134",
    "title": "An Insurance Policy",
-   "context": "An insurance policy pays out a claim of X dollars: $0 with probability 0.90, $200 with probability 0.08, and \\$5,000 with probability 0.02.",
+   "context": "An insurance policy pays out a claim of X dollars: \\$0 with probability 0.90, \\$200 with probability 0.08, and \\$5,000 with probability 0.02.",
    "statements": [
     "The expected value of X equals \\$100.",
     "The variance of X is approximately 489,744.",
@@ -4227,7 +4227,7 @@
    "id": "math-12-135",
    "case_id": "MATH 12.135",
    "title": "A Charity Raffle",
-   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability 0.60, $50 with probability 0.30, and \\$250 with probability 0.10.",
+   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability 0.60, \\$50 with probability 0.30, and \\$250 with probability 0.10.",
    "statements": [
     "The expected value of X equals \\$40.",
     "The variance of X equals 5,400.",
@@ -4392,7 +4392,7 @@
    "id": "math-12-140",
    "case_id": "MATH 12.140",
    "title": "An Extended Warranty",
-   "context": "An extended warranty pays out a claim of X dollars on the next filed claim: $0 with probability 0.85, $150 with probability 0.12, and \\$4,000 with probability 0.03.",
+   "context": "An extended warranty pays out a claim of X dollars on the next filed claim: \\$0 with probability 0.85, \\$150 with probability 0.12, and \\$4,000 with probability 0.03.",
    "statements": [
     "The expected value of X equals \\$150.",
     "The variance of X is approximately 463,656.",
@@ -4518,7 +4518,7 @@
    "id": "math-12-144",
    "case_id": "MATH 12.144",
    "title": "The Vending Machine Puzzle",
-   "context": "A vending machine dispenses a prize X worth $0, $5, or $10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning $0 is less likely than winning \\$10.",
+   "context": "A vending machine dispenses a prize X worth $0, \\$5, or \\$10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning $0 is less likely than winning \\$10.",
    "statements": [
     "The unknown value p equals 0.4.",
     "The quadratic condition that the variance of X equals 10 has a second mathematically valid root, p ≈ 0.5236, which is rejected here only because it would make the probability that X equals 0 greater than the probability that X equals 10.",
@@ -4613,13 +4613,13 @@
    "id": "math-12-147",
    "case_id": "MATH 12.147",
    "title": "A Charity Raffle (Unknown Probabilities)",
-   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability p, $50 with probability q, and $250 with probability 0.10. It is known that the expected value of X equals $40.",
+   "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability p, \\$50 with probability q, and \\$250 with probability 0.10. It is known that the expected value of X equals $40.",
    "statements": [
     "The unknown value p equals 0.55.",
     "The variance of X equals 5,400.",
     "The standard deviation of X is approximately \\$73.48.",
     "The $0 outcome is less likely than the $50 outcome.",
-    "If every prize were reduced by $10 (to -$10, $40, and $240), the variance of X would still equal 5,400."
+    "If every prize were reduced by $10 (to -$10, \\$40, and $240), the variance of X would still equal 5,400."
    ],
    "answer_key": [
     false,
@@ -4633,12 +4633,12 @@
     "**B.** → True\n\nThe variance of a discrete random variable $X$ is computed as $E[X^2] - (E[X])^2$. We know $E[X] = 40$. We first calculate $E[X^2]$ using the derived probabilities $P(X=0) = 0.60$, $P(X=50) = 0.30$, and $P(X=250) = 0.10$.\n$$E[X^2] = (0^2 \\cdot 0.60) + (50^2 \\cdot 0.30) + (250^2 \\cdot 0.10)$$\n$$E[X^2] = 0 + (2500 \\cdot 0.30) + (62500 \\cdot 0.10)$$\n$$E[X^2] = 0 + 750 + 6250$$\n$$E[X^2] = 7000$$\nWith $E[X^2] = 7000$ and $E[X] = 40$, the variance is:\n$$\\mathrm{Var}(X) = 7000 - (40)^2$$\n$$\\mathrm{Var}(X) = 7000 - 1600$$\n$$\\mathrm{Var}(X) = 5400$$\nThis value matches the claim, so the statement is True.",
     "**C.** → True\n\nThe standard deviation is the square root of the variance. Using the variance $\\mathrm{Var}(X) = 5400$ found in the overview:\n$$\\mathrm{SD}(X) = \\sqrt{5400}$$\n$$\\mathrm{SD}(X) \\approx 73.48469$$\nThis value rounds to $73.48$ dollars, so the statement is True.",
     "**D.** → False\n\nThe likelihood of an outcome is given by its probability. We compare $P(X=0)$ with $P(X=50)$. From the overview:\n$$P(X=0) = 0.60$$\n$$P(X=50) = 0.30$$\nSince $0.60 > 0.30$, the $0$ dollar outcome is more likely than the $50$ dollars outcome. The claim states it is less likely, so the statement is False.",
-    "**E.** → True\n\nIf every prize is reduced by $10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)\\$.\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains $5400$, so the statement is True."
+    "**E.** → True\n\nIf every prize is reduced by \\$10, the new random variable $Y$ relates to $X$ as $Y = X - 10$. The variance of a random variable is unchanged by an additive constant shift. That is, for any constant $b$, $\\mathrm{Var}(X+b) = \\mathrm{Var}(X)\\$.\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X - 10)$$\n$$\\mathrm{Var}(Y) = \\mathrm{Var}(X)$$\nUsing $\\mathrm{Var}(X) = 5400$ from part B:\n$$\\mathrm{Var}(Y) = 5400$$\nThe variance remains $5400$, so the statement is True."
    ],
    "difficulty_level": "4/5",
    "sort_order": 147,
    "subsection": "12.4",
-   "solution_overview": "The winnings $X$ for a ticket drawn from a charity raffle are a discrete random variable with three possible values: $0, $50, and $250. The probabilities associated with these winnings are $P(X=0)=p$, $P(X=50)=q$, and $P(X=250)=0.10$. We are given that the expected value of $X$ is $E[X] = 40\\$.\n\nSince the sum of all probabilities for a discrete random variable must equal 1:\n$$p + q + 0.10 = 1$$\n$$p + q = 0.90 \\quad (1)$$\n\nThe expected value of a discrete random variable is calculated as the sum of each outcome multiplied by its probability:\n$$E[X] = \\sum x P(X=x)$$\nUsing the given values and $E[X]=40$:\n$$40 = (0 \\cdot p) + (50 \\cdot q) + (250 \\cdot 0.10)$$\n$$40 = 0 + 50q + 25$$\n$$15 = 50q$$\n$$q = \\frac{15}{50}$$\n$$q = 0.30$$\n\nSubstitute the value of $q$ back into equation (1) to find $p$:\n$$p + 0.30 = 0.90$$\n$$p = 0.60$$\n\nSo, the complete probability distribution for $X$ is:\n$P(X=0) = 0.60$\n$P(X=50) = 0.30$\n$P(X=250) = 0.10$"
+   "solution_overview": "The winnings $X$ for a ticket drawn from a charity raffle are a discrete random variable with three possible values: $0, \\$50, and \\$250. The probabilities associated with these winnings are $P(X=0)=p$, $P(X=50)=q$, and $P(X=250)=0.10$. We are given that the expected value of $X$ is $E[X] = 40\\$.\n\nSince the sum of all probabilities for a discrete random variable must equal 1:\n$$p + q + 0.10 = 1$$\n$$p + q = 0.90 \\quad (1)$$\n\nThe expected value of a discrete random variable is calculated as the sum of each outcome multiplied by its probability:\n$$E[X] = \\sum x P(X=x)$$\nUsing the given values and $E[X]=40$:\n$$40 = (0 \\cdot p) + (50 \\cdot q) + (250 \\cdot 0.10)$$\n$$40 = 0 + 50q + 25$$\n$$15 = 50q$$\n$$q = \\frac{15}{50}$$\n$$q = 0.30$$\n\nSubstitute the value of $q$ back into equation (1) to find $p$:\n$$p + 0.30 = 0.90$$\n$$p = 0.60$$\n\nSo, the complete probability distribution for $X$ is:\n$P(X=0) = 0.60$\n$P(X=50) = 0.30$\n$P(X=250) = 0.10$"
   },
   {
    "id": "math-12-148",
@@ -4776,7 +4776,7 @@
    "id": "math-12-152",
    "case_id": "MATH 12.152",
    "title": "An Extended Warranty (Two Independent Policies)",
-   "context": "An extended warranty pays out a claim of X dollars on a single policy: $0 with probability 0.85, $150 with probability 0.12, and \\$4,000 with probability 0.03. An insurer holds two such policies, written on unrelated customers so that the claims are independent. Let Y = X₁ + X₂ be the insurer's total payout across both policies.",
+   "context": "An extended warranty pays out a claim of X dollars on a single policy: \\$0 with probability 0.85, \\$150 with probability 0.12, and \\$4,000 with probability 0.03. An insurer holds two such policies, written on unrelated customers so that the claims are independent. Let Y = X₁ + X₂ be the insurer's total payout across both policies.",
    "statements": [
     "The expected value of Y equals \\$276.",
     "The variance of Y equals 927,312.",

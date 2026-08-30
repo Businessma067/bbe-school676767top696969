@@ -258,8 +258,80 @@ function looksLikeMathInner(inner: string): boolean {
  * - `\$P(A \mid B)\$` (escaped dollars around real math) → `$P(A \mid B)$`
  * Do not touch legitimate display math `$$40\,000 e^{…}$$`.
  */
+function isSingleOuterGroup(s: string): boolean {
+  if (!s.startsWith("{") || !s.endsWith("}")) return false;
+  let d = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "{") d++;
+    else if (s[i] === "}") {
+      d--;
+      if (d === 0 && i !== s.length - 1) return false;
+    }
+  }
+  return d === 0;
+}
+
+/**
+ * Unwrap authoring `${expr}$` / `$${expr}$$` where braces wrap the whole span.
+ * Braces are valid KaTeX grouping, but they confuse editors and pair poorly with
+ * currency heuristics; strip the redundant outer group before splitting.
+ */
+function unwrapOuterMathBraces(input: string): string {
+  let out = "";
+  let i = 0;
+  while (i < input.length) {
+    if (input.startsWith("$$", i)) {
+      const end = input.indexOf("$$", i + 2);
+      if (end === -1) {
+        out += input.slice(i);
+        break;
+      }
+      const rawInner = input.slice(i + 2, end);
+      const trimmed = rawInner.trim();
+      // Peel trailing English glued into display math: `(-3, 3), with neither…`
+      const glued = trimmed.match(/^(\([^)]+\)|\[[^\]]+\])\s*,\s*([A-Za-z].*)$/);
+      if (glued) {
+        out += `$$${glued[1]}$$, ${glued[2]}`;
+        i = end + 2;
+        continue;
+      }
+      if (isSingleOuterGroup(trimmed)) {
+        out += `$$${trimmed.slice(1, -1).trim()}$$`;
+      } else {
+        out += input.slice(i, end + 2);
+      }
+      i = end + 2;
+      continue;
+    }
+    if (input[i] === "\\" && input[i + 1] === "$") {
+      out += "\\$";
+      i += 2;
+      continue;
+    }
+    if (input[i] === "$") {
+      const end = indexOfUnescapedDollar(input, i + 1);
+      if (end === -1) {
+        out += input.slice(i);
+        break;
+      }
+      const rawInner = input.slice(i + 1, end);
+      const trimmed = rawInner.trim();
+      if (isSingleOuterGroup(trimmed)) {
+        out += `$${trimmed.slice(1, -1)}$`;
+      } else {
+        out += input.slice(i, end + 1);
+      }
+      i = end + 1;
+      continue;
+    }
+    out += input[i];
+    i++;
+  }
+  return out;
+}
+
 function normalizeBrokenMathMarkup(input: string): string {
-  let s = input;
+  let s = unwrapOuterMathBraces(input);
 
   // `\$…\$` used as math delimiters (common in some generated explanations).
   s = s.replace(/\\\$([^$]*?)\\\$/g, (_m, inner: string) => {
