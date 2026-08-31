@@ -614,11 +614,13 @@ export default function MockBuilderSimulator() {
         </div>
       </div>
 
-      {/* Animated cursor */}
+      {/* Animated cursor (transform is written directly to the DOM) */}
       <div
+        ref={cursorElRef}
         className="pointer-events-none absolute left-0 top-0 z-20 will-change-transform"
-        style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
+        style={{ transform: "translate3d(40px, 40px, 0)" }}
       >
+
         <div className={cn("transition-transform duration-150 ease-out", clicking ? "scale-90" : "scale-100")}>
 
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
