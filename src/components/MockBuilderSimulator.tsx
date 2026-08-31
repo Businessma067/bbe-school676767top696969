@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { BookOpen, Check, ChevronDown, Clock, Loader2 } from "lucide-react";
+import { BookOpen, Calculator, Check, ChevronDown, Clock, Loader2 } from "lucide-react";
 import { TopicWeightSelector } from "@/components/custom-mock/TopicWeightSelector";
 import { getCustomMockChapters } from "@/data/custom-mock-catalog";
 import {
@@ -78,14 +78,14 @@ export default function MockBuilderSimulator() {
   const [answers, setAnswers] = useState<Record<number, Record<number, boolean>>>({});
 
   const [fade, setFade] = useState(false);
-  const [cursor, setCursor] = useState({ x: 40, y: 40 });
+  // The cursor is driven straight through the DOM (no React state) so the
+  // 60fps animation never re-renders this tree — that was the source of the
+  // stutter while scrolling the page.
   const cursorRef = useRef({ x: 40, y: 40 });
+  const cursorElRef = useRef<HTMLDivElement | null>(null);
   const [clicking, setClicking] = useState(false);
+  const visibleRef = useRef(true);
 
-  // keep the ref in sync so glideCursor can read the current position
-  useEffect(() => {
-    cursorRef.current = cursor;
-  }, [cursor]);
 
   const stageRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -105,8 +105,14 @@ export default function MockBuilderSimulator() {
   useEffect(() => {
     let cancelled = false;
     const MOVE = 420;
-    const wait = (ms: number) =>
-      new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
+    const sleep = (ms: number) => new Promise<void>((r) => setTimeout(() => r(), ms));
+    // Pause the whole loop while the stage is off-screen so scrolling the page
+    // never competes with the animation for frames.
+    const wait = async (ms: number) => {
+      await sleep(ms);
+      while (!cancelled && !visibleRef.current) await sleep(200);
+    };
+
 
     // Generic rAF tween — every animated value in this simulator goes through
     // this so nothing is driven by setTimeout stepping (which causes jitter).
@@ -152,8 +158,10 @@ export default function MockBuilderSimulator() {
     const setCursorAt = (p: { x: number; y: number }) => {
       const c = clampToStage(p);
       cursorRef.current = c;
-      setCursor(c);
+      const el = cursorElRef.current;
+      if (el) el.style.transform = `translate3d(${c.x}px, ${c.y}px, 0)`;
     };
+
 
     const glideCursor = (target: { x: number; y: number }, duration = 620) => {
       const start = { ...cursorRef.current };
@@ -249,7 +257,11 @@ export default function MockBuilderSimulator() {
         setBuilding(false);
         setDialog(false);
         setExam(false);
+        setExamIndex(0);
+        setVisited([]);
+        setCalcOpen(false);
         setAnswers({});
+
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
         await wait(420);
@@ -328,15 +340,50 @@ export default function MockBuilderSimulator() {
         setFade(true);
         await wait(320);
         setExam(true);
+        setExamIndex(0);
+        setVisited([0]);
+        setSecondsLeft(12 * CUSTOM_MOCK_MINUTES_PER_QUESTION * 60);
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
         await wait(900);
 
-        // ---- 7. first question opens ----
-        await moveTo('[data-sim-answer="0"]');
+        // ---- 7. answer the first question ----
+        for (const i of [0, 2, 3]) {
+          if (cancelled) return;
+          await moveTo(`[data-sim-answer="${i}"]`);
+          await click();
+          setAnswers((prev) => ({ ...prev, 0: { ...(prev[0] ?? {}), [i]: true } }));
+          await wait(420);
+        }
+        await wait(700);
+
+        // ---- 8. open the calculator, then close it ----
+        await moveTo("[data-sim-calc]");
         await click();
-        setAnswers({ 0: true });
-        await wait(1400);
+        setCalcOpen(true);
+        await wait(1500);
+        await moveTo("[data-sim-calc]");
+        await click();
+        setCalcOpen(false);
+        await wait(600);
+
+        // ---- 9. jump to question 2 via the palette ----
+        await moveTo('[data-sim-tile="2"]');
+        await click();
+        setExamIndex(1);
+        setVisited((prev) => (prev.includes(1) ? prev : [...prev, 1]));
+        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+        await wait(900);
+
+        for (const i of [0, 1]) {
+          if (cancelled) return;
+          await moveTo(`[data-sim-answer="${i}"]`);
+          await click();
+          setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
+          await wait(420);
+        }
+        await wait(1600);
+
       }
     };
 
@@ -346,17 +393,45 @@ export default function MockBuilderSimulator() {
     };
   }, [chapters]);
 
+  // Pause the loop while the stage is off-screen (keeps page scrolling smooth).
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        visibleRef.current = entry?.isIntersecting ?? true;
+      },
+      { threshold: 0.05 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  // Exam countdown
+  useEffect(() => {
+    if (!exam) return;
+    const id = setInterval(() => setSecondsLeft((s) => (s > 0 ? s - 1 : 0)), 1000);
+    return () => clearInterval(id);
+  }, [exam]);
+
   return (
     <div ref={stageRef} className="relative">
       <div
         ref={scrollRef}
         className={cn(
-          "practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm transition-opacity duration-500 sm:h-[560px] sm:p-6 lg:h-[620px]",
+          "practice-scroll h-[520px] overflow-y-auto overscroll-contain rounded-2xl border border-border bg-card p-5 shadow-sm transition-opacity duration-500 sm:h-[560px] sm:p-6 lg:h-[620px]",
           fade ? "opacity-0" : "opacity-100",
         )}
       >
         {exam ? (
-          <ExamFirstQuestion answers={answers} durationMinutes={durationMinutes} />
+          <ExamScreen
+            index={examIndex}
+            answers={answers}
+            visited={visited}
+            calcOpen={calcOpen}
+            secondsLeft={secondsLeft}
+          />
+
         ) : (
           <>
             <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -539,11 +614,13 @@ export default function MockBuilderSimulator() {
         </div>
       </div>
 
-      {/* Animated cursor */}
+      {/* Animated cursor (transform is written directly to the DOM) */}
       <div
+        ref={cursorElRef}
         className="pointer-events-none absolute left-0 top-0 z-20 will-change-transform"
-        style={{ transform: `translate3d(${cursor.x}px, ${cursor.y}px, 0)` }}
+        style={{ transform: "translate3d(40px, 40px, 0)" }}
       >
+
         <div className={cn("transition-transform duration-150 ease-out", clicking ? "scale-90" : "scale-100")}>
 
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
@@ -564,33 +641,94 @@ export default function MockBuilderSimulator() {
   );
 }
 
-function ExamFirstQuestion({
+const TOTAL_SIM_QUESTIONS = 12;
+
+function formatClock(total: number) {
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+function ExamScreen({
+  index,
   answers,
-  durationMinutes,
+  visited,
+  calcOpen,
+  secondsLeft,
 }: {
-  answers: Record<number, boolean>;
-  durationMinutes: number;
+  index: number;
+  answers: Record<number, Record<number, boolean>>;
+  visited: number[];
+  calcOpen: boolean;
+  secondsLeft: number;
 }) {
+  const question = SIM_QUESTIONS[Math.min(index, SIM_QUESTIONS.length - 1)]!;
+  const marks = answers[index] ?? {};
+
   return (
-    <div>
+    <div className="relative">
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-          Question 1 / 12
+          Question {index + 1} / {TOTAL_SIM_QUESTIONS}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          {FIRST_QUESTION.caseId}
+          {question.caseId}
         </span>
-        <span className="ml-auto inline-flex items-center gap-2 rounded-lg border border-caramel-deep bg-caramel-deep px-3 py-2 text-xs font-bold text-primary-foreground">
+        <span
+          data-sim-calc
+          className={cn(
+            "ml-auto inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold transition-colors",
+            calcOpen
+              ? "border-foreground bg-foreground text-background"
+              : "border-border bg-card text-foreground",
+          )}
+        >
+          <Calculator className="h-4 w-4" />
+          Calculator
+        </span>
+        <span className="inline-flex items-center gap-2 rounded-lg border border-caramel-deep bg-caramel-deep px-3 py-2 text-xs font-bold tabular-nums text-primary-foreground">
           <Clock className="h-4 w-4" />
-          {durationMinutes}:00
+          {formatClock(secondsLeft)}
         </span>
       </div>
 
+      {/* Question palette */}
+      <div className="mb-5 rounded-xl border border-border bg-secondary/25 p-3">
+        <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+          Economics · {TOTAL_SIM_QUESTIONS} questions
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          {Array.from({ length: TOTAL_SIM_QUESTIONS }, (_, i) => {
+            const answered = Object.values(answers[i] ?? {}).some(Boolean);
+            const current = i === index;
+            return (
+              <span
+                key={i}
+                data-sim-tile={i + 1}
+                className={cn(
+                  "grid h-8 w-8 place-items-center rounded-md border text-xs font-semibold transition-colors",
+                  current
+                    ? "border-foreground bg-foreground text-background ring-2 ring-foreground/25 ring-offset-2 ring-offset-card"
+                    : answered
+                      ? "border-orange-500/50 bg-orange-500 text-white"
+                      : visited.includes(i)
+                        ? "border-blue-500/40 bg-blue-500/15 text-blue-700 dark:text-blue-300"
+                        : "border-border bg-muted/40 text-muted-foreground",
+                )}
+              >
+                {i + 1}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+
       <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-        {FIRST_QUESTION.chapter}
+        {question.chapter}
       </p>
-      <h3 className="mt-1 font-display text-lg font-bold tracking-tight">{FIRST_QUESTION.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{FIRST_QUESTION.context}</p>
+      <h3 className="mt-1 font-display text-lg font-bold tracking-tight">{question.title}</h3>
+      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{question.context}</p>
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -598,8 +736,8 @@ function ExamFirstQuestion({
           <span className="flex-1">Statement</span>
           <span className="w-14 text-center">True</span>
         </li>
-        {FIRST_QUESTION.statements.map((stmt, i) => {
-          const checked = answers[i] === true;
+        {question.statements.map((stmt, i) => {
+          const checked = marks[i] === true;
           return (
             <li key={i} className="flex items-center gap-3 px-4 py-3">
               <span className="w-6 text-center text-xs font-bold text-muted-foreground">
@@ -623,6 +761,31 @@ function ExamFirstQuestion({
           );
         })}
       </ol>
+
+      {/* Calculator popover */}
+      <div
+        className={cn(
+          "pointer-events-none absolute right-0 top-12 z-10 w-52 rounded-xl border border-border bg-card p-3 shadow-2xl transition-all duration-300",
+          calcOpen ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0",
+        )}
+      >
+        <div className="mb-2 rounded-md border border-border bg-background px-2 py-2 text-right text-sm font-semibold tabular-nums">
+          0
+        </div>
+        <div className="grid grid-cols-4 gap-1">
+          {["7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "−", "0", ".", "=", "+"].map(
+            (k) => (
+              <span
+                key={k}
+                className="grid h-7 place-items-center rounded border border-border bg-secondary/40 text-xs font-semibold"
+              >
+                {k}
+              </span>
+            ),
+          )}
+        </div>
+      </div>
     </div>
   );
 }
+
