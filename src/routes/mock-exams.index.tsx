@@ -16,10 +16,9 @@ import {
   type ProductTier,
 } from "@/lib/mock-exams";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
+import { userOwnsFullCourse } from "@/lib/full-course-access";
 import {
-  fetchEnrollments,
   fetchMockAttempts,
-  highestTier,
   type MockAttempt,
 } from "@/lib/user-progress";
 import { Clock, FileText, PlayCircle, Timer, Trophy } from "lucide-react";
@@ -58,11 +57,10 @@ function MockExamsPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [enrollments, history] = await Promise.all([fetchEnrollments(), fetchMockAttempts()]);
+      const [owns, history] = await Promise.all([userOwnsFullCourse(), fetchMockAttempts()]);
       if (cancelled) return;
-      const owned = highestTier(enrollments);
-      // Full Course mocks require a Full Course enrollment; do not grant lite mocks to guests.
-      setTier(owned === "full" ? "full" : owned === "lite" ? "lite" : "none");
+      // Site lockdown: only allowlisted full-site accounts see mock exams.
+      setTier(owns ? "full" : "none");
       setAttempts(history);
 
       const progress: Record<string, { timed: boolean; answerSheet: boolean }> = {};

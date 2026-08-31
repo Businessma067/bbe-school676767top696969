@@ -26,9 +26,8 @@ import {
   getCustomMockChapters,
 } from "@/data/custom-mock-catalog";
 import { SUBJECT_META } from "@/config/scoring-config";
-import { getCurrentAuthState } from "@/lib/auth-ui";
-import { userOwnsFullCourse, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 import {
   Dialog,
   DialogContent,
@@ -62,7 +61,11 @@ export const Route = createFileRoute("/products/custom-mock-builder")({
       { name: "robots", content: "noindex" },
     ],
   }),
-  component: CustomMockBuilderPage,
+  component: () => (
+    <RequireFullCourse>
+      <CustomMockBuilderPage />
+    </RequireFullCourse>
+  ),
 });
 
 function CustomMockBuilderPage() {
@@ -104,18 +107,7 @@ function CustomMockBuilderPage() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const auth = await getCurrentAuthState();
-      if (cancelled) return;
-      if (!auth) {
-        navigate({ to: "/login" });
-        return;
-      }
-      const owns = await userOwnsFullCourse();
-      if (cancelled) return;
-      if (!owns) {
-        navigate({ to: FULL_COURSE_PRODUCT_HREF });
-        return;
-      }
+      // RequireFullCourse already enforced allowlist access.
       setAuthReady(true);
       const list = await fetchCustomMocks();
       if (cancelled) return;
@@ -130,7 +122,7 @@ function CustomMockBuilderPage() {
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, []);
 
   const maxQuestions = useMemo(() => {
     const caps = chaptersFromSubtopicIds(subject, selectedSubtopics);

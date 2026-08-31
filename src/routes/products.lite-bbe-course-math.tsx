@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MathTasksPage } from "@/components/MathTasksPage";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/products/lite-bbe-course-math")({
   head: () => ({
@@ -17,9 +18,8 @@ export const Route = createFileRoute("/products/lite-bbe-course-math")({
 
 function LiteCourseMathTasks() {
   return (
-    <MathTasksPage
-      tier="lite"
-      backTo="/products/lite-bbe-course-subjects"
-    />
+    <RequireFullCourse>
+      <MathTasksPage tier="lite" backTo="/products/lite-bbe-course-subjects" />
+    </RequireFullCourse>
   );
 }

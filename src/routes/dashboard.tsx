@@ -27,6 +27,7 @@ import {
   MatchingModeArt,
   TutorModeArt,
 } from "@/components/study-modes/ModeArt";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 import {
   BookOpen,
   ClipboardCheck,
@@ -50,7 +51,11 @@ function parseDashboardTab(raw: unknown): DashboardTab {
 }
 
 export const Route = createFileRoute("/dashboard")({
-  component: DashboardPage,
+  component: () => (
+    <RequireFullCourse>
+      <DashboardPage />
+    </RequireFullCourse>
+  ),
   validateSearch: (search: Record<string, unknown>): { tab?: DashboardTab } => {
     if (search.tab == null || search.tab === "") return {};
     return { tab: parseDashboardTab(search.tab) };
