@@ -1,4 +1,4 @@
-import { memo, startTransition, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { memo, startTransition, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
@@ -181,6 +181,60 @@ export function MathTasksPage({ tier }: Props) {
         ? []
         : byChapter.get(activeChapter) ?? [];
   const activeCase = activeList[activeIdx];
+  // Defer heavy KaTeX task body so chapter/task list clicks paint immediately.
+  const deferredCase = useDeferredValue(activeCase);
+  const deferredCaseRef = useRef(deferredCase);
+  deferredCaseRef.current = deferredCase;
+  const onShowExplanations = useCallback(() => setShowExplanations(true), []);
+  const onToggleExplanations = useCallback(() => setShowExplanations((v) => !v), []);
+  const onGradedStable = useCallback((result: {
+    allCorrect: boolean;
+    correctCount: number;
+    statementCount: number;
+    statementResults: { statement_index: number; correct: boolean }[];
+  }) => {
+    const current = deferredCaseRef.current;
+    if (!current) return;
+    if (timed.enabled) timed.markSubmitted(current.id);
+    setProgress((prev) => {
+      const next: Progress = {
+        passed: prev.passed.filter((x) => x !== current.id),
+        revision: prev.revision.filter((x) => x !== current.id),
+      };
+      if (result.allCorrect) next.passed = [...next.passed, current.id];
+      else next.revision = [...next.revision, current.id];
+      saveProgress(next);
+      return next;
+    });
+    const chLabel =
+      activeChapter === "revision" ? "Revision" : `Chapter ${activeChapter}`;
+    void recordTaskAttempt({
+      subject: "math",
+      chapter: chLabel,
+      taskKey: `${tier}:${current.case_id || current.id}`,
+      taskTitle: current.title,
+      correctCount: result.correctCount,
+      statementCount: result.statementCount,
+      statementResults: result.statementResults,
+    });
+    void trackEvent({
+      eventType: "task_submit",
+      subject: "math",
+      entityType: "task",
+      entityId: current.id,
+      metadata: {
+        correct: result.correctCount,
+        total: result.statementCount,
+        passed: result.allCorrect,
+      },
+    });
+  }, [activeChapter, tier, timed]);
+  const onResetProgressStable = useCallback(() => {
+    const current = deferredCaseRef.current;
+    if (!current) return;
+    resetCaseIds([current.id]);
+    setShowExplanations(false);
+  }, []);
 
   useEffect(() => {
     if (!timed.enabled) return;
@@ -300,27 +354,24 @@ export function MathTasksPage({ tier }: Props) {
 
   const openChapterTasks = (ch: MathChapter) => {
     setExpanded((e) => ({ ...e, [ch.num]: true }));
-    setTheoryChapter(null);
-    setActiveChapter(ch.num);
+    // Do not setActiveChapter here — switching the main panel to that chapter's
+    // first task mounts heavy KaTeX and freezes the click.
+    void ch;
   };
 
-  /** Topic name: if any subtopics are open, close them; otherwise expand tasks (theory via Theory button). */
-  const onTopicNameClick = (ch: MathChapter, hasTheory: boolean) => {
+  /** Topic name: if any subtopics are open, close them; otherwise expand tasks. */
+  const onTopicNameClick = (ch: MathChapter, _hasTheory: boolean) => {
     if (ch.comingSoon) return;
     if (chapterHasOpenSubtopics(ch.num)) {
       closeChapterSubtopics(ch.num);
-      setActiveChapter(ch.num);
       return;
     }
     const isOpen = !!expanded[ch.num];
     if (isOpen) {
       setExpanded((e) => ({ ...e, [ch.num]: false }));
-      setActiveChapter(ch.num);
       return;
     }
-    // Always expand the task list first so the click feels instant.
     openChapterTasks(ch);
-    void hasTheory;
   };
 
   const nextTaskIdx = nextUnlockedIdx(tier, activeChapter, activeIdx, activeList);
@@ -410,9 +461,9 @@ export function MathTasksPage({ tier }: Props) {
                                   setExpanded((e) => ({ ...e, [ch.num]: false }));
                                   return;
                                 }
-                                // Expand task list only — opening theory here freezes the UI on KaTeX.
+                                // Expand task list only — do not switch activeChapter
+                                // (that would remount the main panel's KaTeX task).
                                 setExpanded((e) => ({ ...e, [ch.num]: true }));
-                                setActiveChapter(ch.num);
                               }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
                               aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
@@ -853,16 +904,21 @@ export function MathTasksPage({ tier }: Props) {
               <TimedModeBar session={timed} showCalculator />
             )}
 
-          <div className="practice-fade-in">
+          <div
+            className={cn(
+              "practice-fade-in",
+              deferredCase !== activeCase && "opacity-70 transition-opacity",
+            )}
+          >
             {activeCase && isLocked(tier, activeChapter, activeIdx, activeList) ? (
               <LockedDemoCard
                 onBack={() =>
                   setActiveIdx(lastUnlockedDemoMathIndex(activeChapter, activeList))
                 }
               />
-            ) : activeCase?.placeholder ? (
+            ) : deferredCase?.placeholder ? (
               <PlaceholderTaskCard
-                task={activeCase}
+                task={deferredCase}
                 index={activeIdx}
                 chapterTitle={
                   activeChapter === "revision"
@@ -870,15 +926,16 @@ export function MathTasksPage({ tier }: Props) {
                     : (chapters.find((c) => c.num === activeChapter)?.title ?? "Mathematics")
                 }
               />
-            ) : activeCase ? (
+            ) : deferredCase ? (
               <MathTaskCard
-                task={activeCase}
+                key={deferredCase.id}
+                task={deferredCase}
                 index={activeIdx}
-                alreadyPassed={progress.passed.includes(activeCase.id)}
-                inRevision={progress.revision.includes(activeCase.id)}
+                alreadyPassed={progress.passed.includes(deferredCase.id)}
+                inRevision={progress.revision.includes(deferredCase.id)}
                 explanationsOpen={showExplanations}
-                onShowExplanations={() => setShowExplanations(true)}
-                onToggleExplanations={() => setShowExplanations((v) => !v)}
+                onShowExplanations={onShowExplanations}
+                onToggleExplanations={onToggleExplanations}
                 requireAuth={requireAuthForAnswers}
                 reviewOnly={!!activeTimer?.reviewOnly}
                 timerNote={
@@ -886,47 +943,8 @@ export function MathTasksPage({ tier }: Props) {
                     ? "Failed on time"
                     : null
                 }
-                onGraded={(result) => {
-                  if (timed.enabled) timed.markSubmitted(activeCase.id);
-                  setProgress((prev) => {
-                    const next: Progress = {
-                      passed: prev.passed.filter((x) => x !== activeCase.id),
-                      revision: prev.revision.filter((x) => x !== activeCase.id),
-                    };
-                    if (result.allCorrect) next.passed = [...next.passed, activeCase.id];
-                    else next.revision = [...next.revision, activeCase.id];
-                    saveProgress(next);
-                    return next;
-                  });
-                  const chLabel =
-                    activeChapter === "revision"
-                      ? "Revision"
-                      : `Chapter ${activeChapter}`;
-                  void recordTaskAttempt({
-                    subject: "math",
-                    chapter: chLabel,
-                    taskKey: `${tier}:${activeCase.case_id || activeCase.id}`,
-                    taskTitle: activeCase.title,
-                    correctCount: result.correctCount,
-                    statementCount: result.statementCount,
-                    statementResults: result.statementResults,
-                  });
-                  void trackEvent({
-                    eventType: "task_submit",
-                    subject: "math",
-                    entityType: "task",
-                    entityId: activeCase.id,
-                    metadata: {
-                      correct: result.correctCount,
-                      total: result.statementCount,
-                      passed: result.allCorrect,
-                    },
-                  });
-                }}
-                onResetProgress={() => {
-                  resetCaseIds([activeCase.id]);
-                  setShowExplanations(false);
-                }}
+                onGraded={onGradedStable}
+                onResetProgress={onResetProgressStable}
               />
             ) : null}
           </div>
@@ -1782,7 +1800,7 @@ function LockedDemoCard({ onBack }: { onBack: () => void }) {
   );
 }
 
-function MathTaskCard({
+const MathTaskCard = memo(function MathTaskCard({
   task,
   index,
   alreadyPassed,
@@ -2029,8 +2047,8 @@ function MathTaskCard({
       </div>
     </article>
   );
-}
-
+});
+MathTaskCard.displayName = "MathTaskCard";
 function PlaceholderTaskCard({
   task,
   index,
