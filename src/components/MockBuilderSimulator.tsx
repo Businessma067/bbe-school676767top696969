@@ -257,7 +257,11 @@ export default function MockBuilderSimulator() {
         setBuilding(false);
         setDialog(false);
         setExam(false);
+        setExamIndex(0);
+        setVisited([]);
+        setCalcOpen(false);
         setAnswers({});
+
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
         await wait(420);
