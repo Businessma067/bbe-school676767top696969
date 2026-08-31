@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { memo, startTransition, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { AuthModal } from "@/components/AuthModal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { FlashcardMath, indexOfUnescapedDollar } from "@/components/FlashcardMath";
@@ -123,6 +123,7 @@ export function MathTasksPage({ tier }: Props) {
   const chapters = MATH_CHAPTERS;
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const skipNextIdxResetRef = useRef(false);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
   const authGate = useAuthGate();
@@ -148,6 +149,10 @@ export function MathTasksPage({ tier }: Props) {
   const setPracticeCase = useSetPracticeCase();
 
   useEffect(() => {
+    if (skipNextIdxResetRef.current) {
+      skipNextIdxResetRef.current = false;
+      return;
+    }
     setActiveIdx(0);
   }, [activeChapter]);
 
@@ -219,7 +224,7 @@ export function MathTasksPage({ tier }: Props) {
         statements: [],
         theorySnippet: `Mathematics theory for chapter ${theoryChapter}${ch?.title ? `: ${ch.title}` : ""}. The student is reading the theory reader for this chapter.`,
       });
-      return () => setPracticeCase(null);
+      return;
     }
 
     if (
@@ -241,14 +246,12 @@ export function MathTasksPage({ tier }: Props) {
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: activeCase.context,
         statements: activeCase.statements,
-        solutionOverview: activeCase.solution_overview,
-        tacticalExplanations: activeCase.tactical_explanations,
+        // Defer long explanations — keep clicks snappy
         answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);
     }
-    return () => setPracticeCase(null);
   }, [
     theoryChapter,
     activeCase,
@@ -318,7 +321,7 @@ export function MathTasksPage({ tier }: Props) {
     if (hasTheory) {
       setExpanded((e) => ({ ...e, [ch.num]: true }));
       setActiveChapter(ch.num);
-      setTheoryChapter(ch.num);
+      startTransition(() => setTheoryChapter(ch.num));
       return;
     }
     openChapterTasks(ch);
@@ -413,7 +416,7 @@ export function MathTasksPage({ tier }: Props) {
                                 }
                                 setExpanded((e) => ({ ...e, [ch.num]: true }));
                                 setActiveChapter(ch.num);
-                                setTheoryChapter(ch.num);
+                                startTransition(() => setTheoryChapter(ch.num));
                               }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
                               aria-label={isOpen ? "Collapse chapter" : "Open learning material"}
@@ -556,8 +559,9 @@ export function MathTasksPage({ tier }: Props) {
                                                 type="button"
                                                 onClick={() => {
                                                   setTheoryChapter(null);
+                                                  skipNextIdxResetRef.current = true;
                                                   setActiveChapter(ch.num);
-                                                  setTimeout(() => setActiveIdx(i), 0);
+                                                  setActiveIdx(i);
                                                 }}
                                                 disabled={locked}
                                                 style={
@@ -639,8 +643,9 @@ export function MathTasksPage({ tier }: Props) {
                                       type="button"
                                       onClick={() => {
                                         setTheoryChapter(null);
+                                        skipNextIdxResetRef.current = true;
                                         setActiveChapter(ch.num);
-                                        setTimeout(() => setActiveIdx(i), 0);
+                                        setActiveIdx(i);
                                       }}
                                       disabled={locked}
                                       style={locked ? { opacity: lockedOpacity } : undefined}
@@ -826,7 +831,11 @@ export function MathTasksPage({ tier }: Props) {
                   mathChapterHasTheory(activeChapter) && (
                   <button
                     type="button"
-                    onClick={() => setTheoryChapter(activeChapter)}
+                    onClick={() => {
+                      if (typeof activeChapter === "number") {
+                        startTransition(() => setTheoryChapter(activeChapter));
+                      }
+                    }}
                     className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-2.5 py-2 text-xs font-bold text-foreground hover:bg-secondary sm:px-3 sm:text-sm"
                   >
                     <BookOpen className="h-4 w-4 text-primary" />
@@ -852,7 +861,7 @@ export function MathTasksPage({ tier }: Props) {
               <TimedModeBar session={timed} showCalculator />
             )}
 
-          <div key={activeCase?.id ?? "empty-task"} className="practice-panel-enter">
+          <div className="practice-fade-in">
             {activeCase && isLocked(tier, activeChapter, activeIdx, activeList) ? (
               <LockedDemoCard
                 onBack={() =>
@@ -1172,7 +1181,7 @@ function isPartStartPara(trimmed: string): boolean {
  * Inter body, bold Part / step titles, airy centered KaTeX, Note callouts.
  * Spacing mirrors the samples: ~24–32px between steps, generous air around equations.
  */
-function MathProse({ text, className }: { text: string; className?: string }) {
+const MathProse = memo(function MathProse({ text, className }: { text: string; className?: string }) {
   // Keep blank-line paragraphs, but also split consecutive bullet lines apart.
   const paragraphs = text
     .split(/\n\n+/)
@@ -1441,7 +1450,8 @@ function MathProse({ text, className }: { text: string; className?: string }) {
       })}
     </div>
   );
-}
+});
+MathProse.displayName = "MathProse";
 
 function parseMarkdownTable(block: string): string[][] | null {
   const lines = block

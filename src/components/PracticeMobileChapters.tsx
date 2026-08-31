@@ -76,7 +76,9 @@ export function PracticeChaptersShell({
               <SheetTitle>Chapters</SheetTitle>
               <SheetDescription>Browse practice chapters and tasks</SheetDescription>
             </SheetHeader>
-            <div className="flex min-h-0 flex-1 flex-col overflow-hidden p-3">{children}</div>
+            <div className="flex min-h-0 flex-1 flex-col overflow-hidden p-3">
+              {mobileOpen ? children : null}
+            </div>
           </SheetContent>
         </Sheet>
       )}
