@@ -73,7 +73,7 @@ export function SiteHeader({
   compact = false,
 }: SiteHeaderProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const { ready, tier } = useAccountNavTier();
+  const { tier } = useAccountNavTier();
   const navItems = navItemsForContext(pathname, tier);
   const navVisible = shouldShowSiteNav(pathname, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
@@ -98,22 +98,14 @@ export function SiteHeader({
         {left ?? <BrandMark compact={compact} />}
         {center ??
           (navVisible ? (
-            ready ? (
-              <DesktopNav items={navItems} />
-            ) : (
-              <div className="hidden h-5 flex-1 lg:block" aria-hidden="true" />
-            )
+            <DesktopNav items={navItems} />
           ) : null)}
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
           {actions}
           <AuthNav />
           {mobileVisible ? (
             <div className="lg:hidden">
-              {ready ? (
-                <MobileNav items={navItems} />
-              ) : (
-                <div className="h-11 w-11 rounded-md border border-border bg-card" aria-hidden="true" />
-              )}
+              <MobileNav items={navItems} />
             </div>
           ) : null}
         </div>

@@ -37,14 +37,17 @@ type AssistantBridge = {
   openAndFocus?: () => void;
 };
 
-type PracticeCaseContextValue = {
-  casePayload: PracticeCasePayload | null;
+type PracticeCaseActions = {
   setCasePayload: (payload: PracticeCasePayload | null) => void;
   registerAssistant: (bridge: AssistantBridge | null) => void;
   openAssistantWithPrompt: (opts: OpenAssistantPrompt) => void;
 };
 
-const PracticeCaseContext = createContext<PracticeCaseContextValue | null>(null);
+/** Payload-only context — consumers re-render when the active case changes. */
+const PracticeCasePayloadContext = createContext<PracticeCasePayload | null>(null);
+
+/** Stable actions — does not re-render when case payload changes. */
+const PracticeCaseActionsContext = createContext<PracticeCaseActions | null>(null);
 
 const MAX_STEM = 8000;
 const MAX_STATEMENT = 1200;
@@ -93,32 +96,35 @@ export function PracticeCaseProvider({ children }: { children: ReactNode }) {
     bridgeRef.current?.openWithExplain(selection);
   }, []);
 
-  const value = useMemo(
+  const actions = useMemo(
     () => ({
-      casePayload,
       setCasePayload,
       registerAssistant,
       openAssistantWithPrompt,
     }),
-    [casePayload, setCasePayload, registerAssistant, openAssistantWithPrompt],
+    [setCasePayload, registerAssistant, openAssistantWithPrompt],
   );
 
   return (
-    <PracticeCaseContext.Provider value={value}>{children}</PracticeCaseContext.Provider>
+    <PracticeCaseActionsContext.Provider value={actions}>
+      <PracticeCasePayloadContext.Provider value={casePayload}>
+        {children}
+      </PracticeCasePayloadContext.Provider>
+    </PracticeCaseActionsContext.Provider>
   );
 }
 
 export function usePracticeCase(): PracticeCasePayload | null {
-  return useContext(PracticeCaseContext)?.casePayload ?? null;
+  return useContext(PracticeCasePayloadContext);
 }
 
 export function useSetPracticeCase(): (payload: PracticeCasePayload | null) => void {
-  const ctx = useContext(PracticeCaseContext);
+  const ctx = useContext(PracticeCaseActionsContext);
   return ctx?.setCasePayload ?? (() => {});
 }
 
 export function usePracticeCaseActions() {
-  const ctx = useContext(PracticeCaseContext);
+  const ctx = useContext(PracticeCaseActionsContext);
   return {
     registerAssistant: ctx?.registerAssistant ?? (() => {}),
     openAssistantWithPrompt: ctx?.openAssistantWithPrompt ?? (() => {}),

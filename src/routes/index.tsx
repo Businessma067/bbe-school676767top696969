@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode, Suspense, lazy } from "react";
 
 import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
@@ -7,8 +7,9 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { SiteHeader } from "@/components/SiteHeader";
-import PracticeSimulator from "@/components/PracticeSimulator";
-import MockBuilderSimulator from "@/components/MockBuilderSimulator";
+
+const PracticeSimulator = lazy(() => import("@/components/PracticeSimulator"));
+const MockBuilderSimulator = lazy(() => import("@/components/MockBuilderSimulator"));
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -224,9 +225,13 @@ function Index() {
           )}
           <div className="relative mx-auto mt-6 w-full max-w-6xl px-1 sm:px-0">
             {demoMode === "practice" ? (
-              <PracticeSimulator key={demoSubject} subject={demoSubject} />
+              <Suspense fallback={<div className="min-h-[28rem] animate-pulse rounded-2xl bg-muted/40" aria-hidden="true" />}>
+                <PracticeSimulator key={demoSubject} subject={demoSubject} />
+              </Suspense>
             ) : (
-              <MockBuilderSimulator />
+              <Suspense fallback={<div className="min-h-[28rem] animate-pulse rounded-2xl bg-muted/40" aria-hidden="true" />}>
+                <MockBuilderSimulator />
+              </Suspense>
             )}
           </div>
         </section>

@@ -1,5 +1,6 @@
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import { memo, useMemo } from "react";
 
 /** Index of next `$` that is not escaped as `\$` (odd number of preceding `\`). */
 export function indexOfUnescapedDollar(text: string, from = 0): number {
@@ -17,8 +18,31 @@ function unescapeProseDollars(s: string): string {
   return s.replace(/\\\$/g, "$");
 }
 
-/** Render flashcard text with inline `$...$` / display `$$...$$` KaTeX. */
-export function FlashcardMath({
+const katexHtmlCache = new Map<string, string>();
+const KATEX_CACHE_LIMIT = 800;
+
+function renderKatexCached(source: string, displayMode: boolean): string {
+  const key = `${displayMode ? "d" : "i"}\0${source}`;
+  const cached = katexHtmlCache.get(key);
+  if (cached !== undefined) return cached;
+  const html = katex.renderToString(source, {
+    throwOnError: false,
+    displayMode,
+    strict: "ignore",
+  });
+  if (katexHtmlCache.size >= KATEX_CACHE_LIMIT) {
+    const oldest = katexHtmlCache.keys().next().value;
+    if (oldest !== undefined) katexHtmlCache.delete(oldest);
+  }
+  katexHtmlCache.set(key, html);
+  return html;
+}
+
+/**
+ * Render flashcard text with inline `$...$` / display `$$...$$` KaTeX.
+ * Memoized + HTML cache so True/False clicks don't re-parse math.
+ */
+export const FlashcardMath = memo(function FlashcardMath({
   text,
   className,
   displayPrefer = false,
@@ -27,7 +51,7 @@ export function FlashcardMath({
   className?: string;
   displayPrefer?: boolean;
 }) {
-  const parts = splitMath(text);
+  const parts = useMemo(() => splitMath(text), [text]);
   return (
     <span className={className}>
       {parts.map((part, i) => {
@@ -38,9 +62,9 @@ export function FlashcardMath({
       })}
     </span>
   );
-}
+});
 
-function MathChunk({
+const MathChunk = memo(function MathChunk({
   part,
   displayPrefer,
 }: {
@@ -48,7 +72,7 @@ function MathChunk({
   displayPrefer: boolean;
 }) {
   const displayMode = part.type === "display" || (displayPrefer && part.type === "inline");
-  const chunks = sanitizeMathSource(part.value);
+  const chunks = useMemo(() => sanitizeMathSource(part.value), [part.value]);
 
   return (
     <>
@@ -61,11 +85,7 @@ function MathChunk({
           );
         }
         try {
-          const html = katex.renderToString(chunk.value, {
-            throwOnError: false,
-            displayMode,
-            strict: "ignore",
-          });
+          const html = renderKatexCached(chunk.value, displayMode);
           return (
             <span
               key={j}
@@ -83,7 +103,7 @@ function MathChunk({
       })}
     </>
   );
-}
+});
 
 /**
  * KaTeX collapses spaces and italicizes letters. Plain English left inside $...$
