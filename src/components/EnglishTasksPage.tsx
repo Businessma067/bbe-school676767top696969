@@ -8,9 +8,8 @@ import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calc
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
 import {
-  PracticeChaptersBackdrop,
   PracticeChaptersOpenButton,
-  practiceAsideClassName,
+  PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
@@ -320,11 +319,6 @@ export function EnglishTasksPage({ tier }: Props) {
       >
         <SiteHeader maxWidthClassName="max-w-none" compact />
 
-        <PracticeChaptersBackdrop
-          open={mobileChaptersOpen}
-          onClose={() => setMobileChaptersOpen(false)}
-        />
-
         <div
           className={cn(
             PRACTICE_BODY_STACK,
@@ -334,20 +328,17 @@ export function EnglishTasksPage({ tier }: Props) {
               "lg:min-h-0 lg:flex-1 lg:items-stretch lg:gap-4 lg:overflow-hidden lg:!py-2",
           )}
         >
-          <aside
-            className={cn(
-              practiceAsideClassName({
-                mobileOpen: mobileChaptersOpen,
-                desktopCollapsed: sidebarCollapsed,
-              }),
-              "lg:overflow-hidden lg:will-change-[width,transform]",
+          <PracticeChaptersShell
+            mobileOpen={mobileChaptersOpen}
+            onMobileOpenChange={setMobileChaptersOpen}
+            desktopCollapsed={sidebarCollapsed}
+            desktopClassName={
               textsWorkspace
                 ? "lg:static lg:h-auto lg:max-h-full lg:self-stretch"
-                : "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)]",
-            )}
-            aria-hidden={sidebarCollapsed && !mobileChaptersOpen}
+                : undefined
+            }
           >
-              <div className="flex h-full max-h-dvh flex-col rounded-none border-r border-border bg-card p-3 shadow-lg lg:max-h-none lg:rounded-2xl lg:border lg:shadow-sm lg:h-full lg:w-80 lg:max-h-none 2xl:w-96">
+              <div className="flex h-full max-h-dvh flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:max-h-none lg:w-80 2xl:w-96">
                 <div className="mb-2 flex shrink-0 items-center justify-between px-1">
                   <span className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                     <BookOpen className="h-3.5 w-3.5" /> Chapters
@@ -667,7 +658,7 @@ export function EnglishTasksPage({ tier }: Props) {
                   </button>
                 </div>
               </div>
-            </aside>
+          </PracticeChaptersShell>
 
           <main
             className={cn(

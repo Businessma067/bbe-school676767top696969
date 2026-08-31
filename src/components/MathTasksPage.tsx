@@ -8,9 +8,8 @@ import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedMo
 import { TheoryReader } from "@/components/TheoryReader";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import {
-  PracticeChaptersBackdrop,
   PracticeChaptersOpenButton,
-  practiceAsideClassName,
+  PracticeChaptersShell,
 } from "@/components/PracticeMobileChapters";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
@@ -335,11 +334,6 @@ export function MathTasksPage({ tier }: Props) {
     <div className={PRACTICE_PAGE}>
       <SiteHeader maxWidthClassName="max-w-none" compact />
 
-      <PracticeChaptersBackdrop
-        open={mobileChaptersOpen && theoryChapter === null}
-        onClose={() => setMobileChaptersOpen(false)}
-      />
-
       <div
         className={cn(
           PRACTICE_BODY_STACK,
@@ -347,18 +341,13 @@ export function MathTasksPage({ tier }: Props) {
           sidebarCollapsed ? "lg:gap-0" : "lg:gap-6",
         )}
       >
-          <aside
-            className={cn(
-              practiceAsideClassName({
-                mobileOpen: mobileChaptersOpen,
-                desktopCollapsed: sidebarCollapsed,
-                hiddenOnMobileExtra: theoryChapter !== null,
-              }),
-              "lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:overflow-hidden lg:will-change-[width,transform]",
-            )}
-            aria-hidden={sidebarCollapsed && !mobileChaptersOpen}
+          <PracticeChaptersShell
+            mobileOpen={mobileChaptersOpen}
+            onMobileOpenChange={setMobileChaptersOpen}
+            desktopCollapsed={sidebarCollapsed}
+            hideMobile={theoryChapter !== null}
           >
-            <div className="flex h-full max-h-dvh flex-col rounded-none border-r border-border bg-card p-3 shadow-lg lg:max-h-none lg:rounded-2xl lg:border lg:shadow-sm lg:h-full lg:w-80 lg:max-h-none 2xl:w-96">
+            <div className="flex h-full max-h-dvh flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:max-h-none lg:w-80 2xl:w-96">
               <div className="mb-2 flex shrink-0 items-center justify-between px-1">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                   Chapters
@@ -770,7 +759,7 @@ export function MathTasksPage({ tier }: Props) {
                 <Settings2 className="h-3.5 w-3.5" /> Customize reset
               </button>
             </div>
-          </aside>
+          </PracticeChaptersShell>
 
         <main className="min-w-0 flex-1" data-practice-surface>
           {theoryChapter === null && (

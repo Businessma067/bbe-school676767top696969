@@ -1,24 +1,13 @@
+import type { ReactNode } from "react";
 import { List } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-
-/** Off-canvas backdrop for practice chapter drawers (phones only). */
-export function PracticeChaptersBackdrop({
-  open,
-  onClose,
-}: {
-  open: boolean;
-  onClose: () => void;
-}) {
-  if (!open) return null;
-  return (
-    <button
-      type="button"
-      aria-label="Close chapters"
-      className="fixed inset-0 z-30 bg-black/40 lg:hidden"
-      onClick={onClose}
-    />
-  );
-}
 
 /** Sticky “Chapters” control shown above the case on phones. */
 export function PracticeChaptersOpenButton({
@@ -43,9 +32,78 @@ export function PracticeChaptersOpenButton({
 }
 
 /**
- * Aside positioning for practice chapter lists:
- * phones → fixed off-canvas drawer; lg+ → sticky sidebar in the page flow.
+ * Desktop sticky sidebar + phone Sheet drawer for the same chapter list.
+ * `children` is rendered twice (desktop + sheet) — both share parent state handlers.
  */
+export function PracticeChaptersShell({
+  mobileOpen,
+  onMobileOpenChange,
+  desktopCollapsed,
+  hideMobile,
+  children,
+  desktopClassName,
+}: {
+  mobileOpen: boolean;
+  onMobileOpenChange: (open: boolean) => void;
+  desktopCollapsed?: boolean;
+  /** Hide phone entry while theory reader (etc.) owns the screen */
+  hideMobile?: boolean;
+  children: ReactNode;
+  desktopClassName?: string;
+}) {
+  return (
+    <>
+      <aside
+        className={cn(
+          "mb-0 hidden shrink-0 lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:overflow-hidden lg:transition-[width,opacity,transform] lg:duration-300 lg:[transition-timing-function:cubic-bezier(0.22,1,0.36,1)]",
+          desktopCollapsed
+            ? "lg:pointer-events-none lg:w-0 lg:opacity-0 lg:-translate-x-4"
+            : "lg:w-80 lg:opacity-100 lg:translate-x-0 2xl:w-96",
+          desktopClassName,
+        )}
+        aria-hidden={desktopCollapsed}
+      >
+        {children}
+      </aside>
+
+      {!hideMobile && (
+        <Sheet open={mobileOpen} onOpenChange={onMobileOpenChange}>
+          <SheetContent
+            side="left"
+            className="flex w-[min(92vw,20rem)] max-w-sm flex-col border-r border-border bg-background p-0 lg:hidden [&>button]:hidden"
+          >
+            <SheetHeader className="sr-only">
+              <SheetTitle>Chapters</SheetTitle>
+              <SheetDescription>Browse practice chapters and tasks</SheetDescription>
+            </SheetHeader>
+            <div className="flex min-h-0 flex-1 flex-col overflow-hidden p-3">{children}</div>
+          </SheetContent>
+        </Sheet>
+      )}
+    </>
+  );
+}
+
+/** @deprecated Prefer PracticeChaptersShell — kept for any leftover imports */
+export function PracticeChaptersBackdrop({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
+  if (!open) return null;
+  return (
+    <button
+      type="button"
+      aria-label="Close chapters"
+      className="fixed inset-0 z-30 bg-black/40 lg:hidden"
+      onClick={onClose}
+    />
+  );
+}
+
+/** @deprecated Prefer PracticeChaptersShell */
 export function practiceAsideClassName({
   mobileOpen,
   desktopCollapsed,
@@ -53,15 +111,12 @@ export function practiceAsideClassName({
 }: {
   mobileOpen: boolean;
   desktopCollapsed?: boolean;
-  /** e.g. hide while theory reader is open */
   hiddenOnMobileExtra?: boolean;
 }) {
   return cn(
     "z-40 flex flex-col bg-transparent",
-    // Mobile drawer (out of document flow — case content comes first)
     "fixed inset-y-0 left-0 w-[min(92vw,20rem)] max-h-dvh transition-transform duration-300 ease-out",
     mobileOpen ? "translate-x-0 pointer-events-auto" : "-translate-x-full pointer-events-none",
-    // Desktop sidebar
     "lg:pointer-events-auto lg:static lg:inset-auto lg:mb-0 lg:max-h-none lg:translate-x-0 lg:transition-[width,opacity,transform]",
     desktopCollapsed
       ? "lg:pointer-events-none lg:w-0 lg:overflow-hidden lg:opacity-0 lg:-translate-x-4"
