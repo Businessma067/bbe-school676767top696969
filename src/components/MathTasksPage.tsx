@@ -304,7 +304,7 @@ export function MathTasksPage({ tier }: Props) {
     setActiveChapter(ch.num);
   };
 
-  /** Topic name: if any subtopics are open, close them; otherwise toggle the topic. */
+  /** Topic name: if any subtopics are open, close them; otherwise expand tasks (theory via Theory button). */
   const onTopicNameClick = (ch: MathChapter, hasTheory: boolean) => {
     if (ch.comingSoon) return;
     if (chapterHasOpenSubtopics(ch.num)) {
@@ -318,13 +318,9 @@ export function MathTasksPage({ tier }: Props) {
       setActiveChapter(ch.num);
       return;
     }
-    if (hasTheory) {
-      setExpanded((e) => ({ ...e, [ch.num]: true }));
-      setActiveChapter(ch.num);
-      startTransition(() => setTheoryChapter(ch.num));
-      return;
-    }
+    // Always expand the task list first so the click feels instant.
     openChapterTasks(ch);
+    void hasTheory;
   };
 
   const nextTaskIdx = nextUnlockedIdx(tier, activeChapter, activeIdx, activeList);
@@ -414,17 +410,13 @@ export function MathTasksPage({ tier }: Props) {
                                   setExpanded((e) => ({ ...e, [ch.num]: false }));
                                   return;
                                 }
+                                // Expand task list only — opening theory here freezes the UI on KaTeX.
                                 setExpanded((e) => ({ ...e, [ch.num]: true }));
                                 setActiveChapter(ch.num);
-                                startTransition(() => setTheoryChapter(ch.num));
                               }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
-                              aria-label={isOpen ? "Collapse chapter" : "Open learning material"}
-                              title={
-                                isOpen
-                                  ? "Collapse chapter"
-                                  : "Open learning material for this chapter"
-                              }
+                              aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
+                              title={isOpen ? "Collapse chapter" : "Expand chapter"}
                             >
                               <ChevronDown
                                 className={cn(
@@ -437,7 +429,7 @@ export function MathTasksPage({ tier }: Props) {
                               type="button"
                               onClick={() => onTopicNameClick(ch, true)}
                               className="flex min-w-0 flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
-                              title="Open learning material for this chapter"
+                              title="Expand chapter tasks"
                             >
                               <div className="flex min-w-0 flex-1 items-center gap-2">
                                 <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">

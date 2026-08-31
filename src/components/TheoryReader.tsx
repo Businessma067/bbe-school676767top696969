@@ -14,8 +14,8 @@ import { trackEvent, upsertTheoryProgress } from "@/lib/activity-tracker";
 const ECONOMICS_MATERIALS_PDF_URL = "/bbe-economics-textbook.pdf";
 const ECONOMICS_MATERIALS_PDF_NAME = "BBE-Economics-Full-Course-Theory.pdf";
 
-/** First paint: only this many segments; rest stream in on idle/rAF. */
-const THEORY_EAGER_SEGMENTS = 3;
+/** First paint: only this many segments; rest stream in so open stays clickable. */
+const THEORY_EAGER_SEGMENTS = 1;
 
 type Props = {
   chapter: number;
@@ -55,14 +55,25 @@ function extractToc(markdown: string): TocItem[] {
   return items;
 }
 
+/** Break long prose into ## chunks so eager KaTeX work stays small. */
+function pushMarkdownChunks(segments: Segment[], text: string) {
+  const trimmed = text.trim();
+  if (!trimmed) return;
+  const parts = trimmed.split(/(?=^##\s+)/m).map((p) => p.trim()).filter(Boolean);
+  if (parts.length <= 1) {
+    segments.push({ kind: "md", text: trimmed });
+    return;
+  }
+  for (const part of parts) segments.push({ kind: "md", text: part });
+}
+
 function segmentTheory(markdown: string): Segment[] {
   const segments: Segment[] = [];
   let last = 0;
   const re = new RegExp(EMBED_RE.source, "gi");
   let m: RegExpExecArray | null;
   while ((m = re.exec(markdown))) {
-    const before = markdown.slice(last, m.index).trim();
-    if (before) segments.push({ kind: "md", text: before });
+    pushMarkdownChunks(segments, markdown.slice(last, m.index));
     if (m[1]) {
       segments.push({
         kind: "figure",
@@ -78,8 +89,7 @@ function segmentTheory(markdown: string): Segment[] {
     }
     last = m.index + m[0].length;
   }
-  const rest = markdown.slice(last).trim();
-  if (rest) segments.push({ kind: "md", text: rest });
+  pushMarkdownChunks(segments, markdown.slice(last));
   return segments;
 }
 
