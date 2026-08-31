@@ -105,8 +105,14 @@ export default function MockBuilderSimulator() {
   useEffect(() => {
     let cancelled = false;
     const MOVE = 420;
-    const wait = (ms: number) =>
-      new Promise<void>((r) => setTimeout(() => (cancelled ? null : r()), ms));
+    const sleep = (ms: number) => new Promise<void>((r) => setTimeout(() => r(), ms));
+    // Pause the whole loop while the stage is off-screen so scrolling the page
+    // never competes with the animation for frames.
+    const wait = async (ms: number) => {
+      await sleep(ms);
+      while (!cancelled && !visibleRef.current) await sleep(200);
+    };
+
 
     // Generic rAF tween — every animated value in this simulator goes through
     // this so nothing is driven by setTimeout stepping (which causes jitter).
