@@ -2,11 +2,16 @@ import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { SiteHeader } from "@/components/SiteHeader";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 import { PracticeCalculatorInline } from "@/components/calculator/Ti30MathPrint";
 import { PRACTICE_BODY, PRACTICE_PAGE } from "@/lib/practice-layout";
 
 export const Route = createFileRoute("/practice")({
-  component: PracticePage,
+  component: () => (
+    <RequireFullCourse>
+      <PracticePage />
+    </RequireFullCourse>
+  ),
   head: () => ({
     meta: [
       { title: "Practice — BBE School" },

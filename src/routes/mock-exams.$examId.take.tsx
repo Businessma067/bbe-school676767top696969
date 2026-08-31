@@ -20,7 +20,8 @@ import {
   fetchInProgressMockSession,
   upsertMockExamProgress,
 } from "@/lib/user-progress";
-import { userOwnsFullCourse, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
+import { userOwnsFullCourse } from "@/lib/full-course-access";
+import { DEMO_ONLY_HREF } from "@/lib/site-access";
 import { AnnotationLayer } from "@/components/mock-exam/AnnotationLayer";
 import { ExamAnswerSheet } from "@/components/mock-exam/ExamAnswerSheet";
 import { ExamNotesPanel } from "@/components/mock-exam/ExamNotesPanel";
@@ -122,7 +123,7 @@ function TakeExamPage() {
         const owns = await userOwnsFullCourse();
         if (cancelled) return;
         if (!owns) {
-          navigate({ to: FULL_COURSE_PRODUCT_HREF });
+          navigate({ to: DEMO_ONLY_HREF });
           return;
         }
       }

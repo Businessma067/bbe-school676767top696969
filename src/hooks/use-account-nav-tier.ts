@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { AccountNavTier } from "@/config/site-nav";
-import { fetchEnrollments, highestTier } from "@/lib/user-progress";
+import { hasFullSiteAccess } from "@/lib/site-access";
 
 /**
- * Signed-in users get the course header (Demo-course, Products, Practice, …).
- * Guests keep the marketing guest nav. Lite owners keep lite nav until Full is owned.
+ * Only allowlisted full-site accounts get Practice / Mock / Games chrome.
+ * Everyone else (including signed-in demo users) keeps guest/demo nav.
  */
 export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
   const [ready, setReady] = useState(false);
@@ -24,16 +24,11 @@ export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
         return;
       }
 
-      const enrollments = await fetchEnrollments();
       if (cancelled) return;
-      const highest = highestTier(enrollments);
-      if (highest === "full") {
+      if (hasFullSiteAccess(data.session.user?.email)) {
         setTier("full");
-      } else if (highest === "lite") {
-        setTier("lite");
       } else {
-        // Signed in without a paid course: still show the signed-in course chrome.
-        setTier("full");
+        setTier("guest");
       }
       setReady(true);
     };

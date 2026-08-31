@@ -17,6 +17,7 @@ import { FloatingAssistant } from "../components/FloatingAssistant";
 import { ExplainSelectionChip } from "../components/ExplainSelectionChip";
 import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
+import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 
 function NotFoundComponent() {
@@ -140,6 +141,7 @@ function RootComponent() {
         <IntroSplash />
         <HashScrollOnLoad />
         <ActivityTracker />
+        <SiteAccessGuard />
         <Breadcrumbs />
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />

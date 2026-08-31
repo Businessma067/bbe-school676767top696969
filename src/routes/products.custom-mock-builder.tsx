@@ -27,7 +27,8 @@ import {
 } from "@/data/custom-mock-catalog";
 import { SUBJECT_META } from "@/config/scoring-config";
 import { getCurrentAuthState } from "@/lib/auth-ui";
-import { userOwnsFullCourse, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
+import { userOwnsFullCourse } from "@/lib/full-course-access";
+import { DEMO_ONLY_HREF } from "@/lib/site-access";
 import { clearSession, loadSession, sessionUsesAnswerSheet } from "@/lib/mock-exam-session";
 import {
   Dialog,
@@ -113,7 +114,7 @@ function CustomMockBuilderPage() {
       const owns = await userOwnsFullCourse();
       if (cancelled) return;
       if (!owns) {
-        navigate({ to: FULL_COURSE_PRODUCT_HREF });
+        navigate({ to: DEMO_ONLY_HREF });
         return;
       }
       setAuthReady(true);

@@ -3,6 +3,7 @@ import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/products/lite-bbe-course-subjects")({
   head: () => ({
@@ -19,7 +20,11 @@ export const Route = createFileRoute("/products/lite-bbe-course-subjects")({
       },
     ],
   }),
-  component: LiteCourseSubjects,
+  component: () => (
+    <RequireFullCourse>
+      <LiteCourseSubjects />
+    </RequireFullCourse>
+  ),
 });
 
 const subjects = [

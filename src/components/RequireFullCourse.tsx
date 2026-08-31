@@ -1,11 +1,12 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
-import { FULL_COURSE_PRODUCT_HREF, userOwnsFullCourse } from "@/lib/full-course-access";
+import { DEMO_ONLY_HREF, hasFullSiteAccess } from "@/lib/site-access";
 
 /**
- * Blocks Full Course practice / tools until the user is signed in and enrolled.
- * Guests → login; signed-in non-owners → product page.
+ * Blocks Full Course practice, Lite practice, flashcards, mocks, and related
+ * tools unless the signed-in account is on the full-site allowlist.
+ * Guests → login; everyone else → demo practice.
  */
 export function RequireFullCourse({ children }: { children: ReactNode }) {
   const navigate = useNavigate();
@@ -20,13 +21,11 @@ export function RequireFullCourse({ children }: { children: ReactNode }) {
         navigate({ to: "/login" });
         return;
       }
-      const owns = await userOwnsFullCourse();
-      if (cancelled) return;
-      if (!owns) {
-        navigate({ to: FULL_COURSE_PRODUCT_HREF });
+      if (!hasFullSiteAccess(data.session.user?.email)) {
+        if (!cancelled) navigate({ to: DEMO_ONLY_HREF });
         return;
       }
-      setAllowed(true);
+      if (!cancelled) setAllowed(true);
     })();
 
     return () => {
