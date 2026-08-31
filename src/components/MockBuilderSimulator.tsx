@@ -641,33 +641,94 @@ export default function MockBuilderSimulator() {
   );
 }
 
-function ExamFirstQuestion({
+const TOTAL_SIM_QUESTIONS = 12;
+
+function formatClock(total: number) {
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
+function ExamScreen({
+  index,
   answers,
-  durationMinutes,
+  visited,
+  calcOpen,
+  secondsLeft,
 }: {
-  answers: Record<number, boolean>;
-  durationMinutes: number;
+  index: number;
+  answers: Record<number, Record<number, boolean>>;
+  visited: number[];
+  calcOpen: boolean;
+  secondsLeft: number;
 }) {
+  const question = SIM_QUESTIONS[Math.min(index, SIM_QUESTIONS.length - 1)]!;
+  const marks = answers[index] ?? {};
+
   return (
-    <div>
+    <div className="relative">
       <div className="mb-4 flex flex-wrap items-center gap-2">
         <span className="rounded-md bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-primary">
-          Question 1 / 12
+          Question {index + 1} / {TOTAL_SIM_QUESTIONS}
         </span>
         <span className="rounded-md border border-border px-2 py-0.5 text-[10px] font-semibold text-taupe">
-          {FIRST_QUESTION.caseId}
+          {question.caseId}
         </span>
-        <span className="ml-auto inline-flex items-center gap-2 rounded-lg border border-caramel-deep bg-caramel-deep px-3 py-2 text-xs font-bold text-primary-foreground">
+        <span
+          data-sim-calc
+          className={cn(
+            "ml-auto inline-flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-semibold transition-colors",
+            calcOpen
+              ? "border-foreground bg-foreground text-background"
+              : "border-border bg-card text-foreground",
+          )}
+        >
+          <Calculator className="h-4 w-4" />
+          Calculator
+        </span>
+        <span className="inline-flex items-center gap-2 rounded-lg border border-caramel-deep bg-caramel-deep px-3 py-2 text-xs font-bold tabular-nums text-primary-foreground">
           <Clock className="h-4 w-4" />
-          {durationMinutes}:00
+          {formatClock(secondsLeft)}
         </span>
       </div>
 
+      {/* Question palette */}
+      <div className="mb-5 rounded-xl border border-border bg-secondary/25 p-3">
+        <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+          Economics · {TOTAL_SIM_QUESTIONS} questions
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          {Array.from({ length: TOTAL_SIM_QUESTIONS }, (_, i) => {
+            const answered = Object.values(answers[i] ?? {}).some(Boolean);
+            const current = i === index;
+            return (
+              <span
+                key={i}
+                data-sim-tile={i + 1}
+                className={cn(
+                  "grid h-8 w-8 place-items-center rounded-md border text-xs font-semibold transition-colors",
+                  current
+                    ? "border-foreground bg-foreground text-background ring-2 ring-foreground/25 ring-offset-2 ring-offset-card"
+                    : answered
+                      ? "border-orange-500/50 bg-orange-500 text-white"
+                      : visited.includes(i)
+                        ? "border-blue-500/40 bg-blue-500/15 text-blue-700 dark:text-blue-300"
+                        : "border-border bg-muted/40 text-muted-foreground",
+                )}
+              >
+                {i + 1}
+              </span>
+            );
+          })}
+        </div>
+      </div>
+
       <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-        {FIRST_QUESTION.chapter}
+        {question.chapter}
       </p>
-      <h3 className="mt-1 font-display text-lg font-bold tracking-tight">{FIRST_QUESTION.title}</h3>
-      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{FIRST_QUESTION.context}</p>
+      <h3 className="mt-1 font-display text-lg font-bold tracking-tight">{question.title}</h3>
+      <p className="mt-3 text-sm leading-relaxed text-foreground/90">{question.context}</p>
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
         <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
@@ -675,8 +736,8 @@ function ExamFirstQuestion({
           <span className="flex-1">Statement</span>
           <span className="w-14 text-center">True</span>
         </li>
-        {FIRST_QUESTION.statements.map((stmt, i) => {
-          const checked = answers[i] === true;
+        {question.statements.map((stmt, i) => {
+          const checked = marks[i] === true;
           return (
             <li key={i} className="flex items-center gap-3 px-4 py-3">
               <span className="w-6 text-center text-xs font-bold text-muted-foreground">
@@ -700,6 +761,32 @@ function ExamFirstQuestion({
           );
         })}
       </ol>
+
+      {/* Calculator popover */}
+      <div
+        className={cn(
+          "pointer-events-none absolute right-0 top-12 z-10 w-52 rounded-xl border border-border bg-card p-3 shadow-2xl transition-all duration-300",
+          calcOpen ? "translate-y-0 opacity-100" : "-translate-y-2 opacity-0",
+        )}
+      >
+        <div className="mb-2 rounded-md border border-border bg-background px-2 py-2 text-right text-sm font-semibold tabular-nums">
+          0
+        </div>
+        <div className="grid grid-cols-4 gap-1">
+          {["7", "8", "9", "÷", "4", "5", "6", "×", "1", "2", "3", "−", "0", ".", "=", "+"].map(
+            (k) => (
+              <span
+                key={k}
+                className="grid h-7 place-items-center rounded border border-border bg-secondary/40 text-xs font-semibold"
+              >
+                {k}
+              </span>
+            ),
+          )}
+        </div>
+      </div>
     </div>
   );
+}
+
 }
