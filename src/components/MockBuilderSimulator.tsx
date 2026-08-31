@@ -152,8 +152,10 @@ export default function MockBuilderSimulator() {
     const setCursorAt = (p: { x: number; y: number }) => {
       const c = clampToStage(p);
       cursorRef.current = c;
-      setCursor(c);
+      const el = cursorElRef.current;
+      if (el) el.style.transform = `translate3d(${c.x}px, ${c.y}px, 0)`;
     };
+
 
     const glideCursor = (target: { x: number; y: number }, duration = 620) => {
       const start = { ...cursorRef.current };
