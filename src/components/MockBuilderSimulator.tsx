@@ -78,14 +78,14 @@ export default function MockBuilderSimulator() {
   const [answers, setAnswers] = useState<Record<number, Record<number, boolean>>>({});
 
   const [fade, setFade] = useState(false);
-  const [cursor, setCursor] = useState({ x: 40, y: 40 });
+  // The cursor is driven straight through the DOM (no React state) so the
+  // 60fps animation never re-renders this tree — that was the source of the
+  // stutter while scrolling the page.
   const cursorRef = useRef({ x: 40, y: 40 });
+  const cursorElRef = useRef<HTMLDivElement | null>(null);
   const [clicking, setClicking] = useState(false);
+  const visibleRef = useRef(true);
 
-  // keep the ref in sync so glideCursor can read the current position
-  useEffect(() => {
-    cursorRef.current = cursor;
-  }, [cursor]);
 
   const stageRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
