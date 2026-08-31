@@ -141,9 +141,10 @@ export default function MockBuilderSimulator() {
       const change = to - start;
       if (Math.abs(change) < 1) return Promise.resolve();
       return tween(duration, (eased) => {
-        el.scrollTop = start + change * eased;
+        el.scrollTop = Math.round(start + change * eased);
       });
     };
+
 
     const clampToStage = (p: { x: number; y: number }) => {
       const stage = stageRef.current;
