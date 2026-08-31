@@ -7,6 +7,10 @@ import { ExplanationProse } from "@/components/ExplanationProse";
 import { PracticeCalcProvider, usePracticeCalcOptional } from "@/components/calculator/PracticeCalcContext";
 import { PracticeRightSlot } from "@/components/calculator/Ti30MathPrint";
 import { TimedModeBar, TimeoutModal, TimerStatusDot } from "@/components/TimedModeControls";
+import {
+  PracticeChaptersOpenButton,
+  PracticeChaptersShell,
+} from "@/components/PracticeMobileChapters";
 import { useAuthGate } from "@/hooks/use-auth-gate";
 import { PRACTICE_BODY_STACK, PRACTICE_PAGE } from "@/lib/practice-layout";
 import { useTimedSession } from "@/lib/timed-practice";
@@ -99,12 +103,17 @@ export function EnglishTasksPage({ tier }: Props) {
   );
   const [expandedSub, setExpandedSub] = useState<Record<string, boolean>>({});
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [mobileChaptersOpen, setMobileChaptersOpen] = useState(false);
   const [explanation, setExplanation] = useState<ExplanationState | null>(null);
   const [showExplanations, setShowExplanations] = useState(false);
   const timed = useTimedSession();
   const authGate = useAuthGate();
   const requireAuthForAnswers =
     tier === "demo" ? authGate.requireAuth : () => true;
+
+  useEffect(() => {
+    setMobileChaptersOpen(false);
+  }, [activeChapter, activeIdx]);
 
   const closeChapterSubtopics = (chapterKey: string) => {
     const prefix = `${chapterKey}:`;
@@ -319,25 +328,28 @@ export function EnglishTasksPage({ tier }: Props) {
               "lg:min-h-0 lg:flex-1 lg:items-stretch lg:gap-4 lg:overflow-hidden lg:!py-2",
           )}
         >
-          <aside
-            className={cn(
-              "mb-6 w-full shrink-0 transition-[width,opacity,transform] duration-300 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] lg:sticky lg:top-20 lg:mb-0 lg:block lg:overflow-hidden lg:will-change-[width,transform]",
-              textsWorkspace ? "lg:static lg:h-auto lg:max-h-full lg:self-stretch" : "lg:h-[calc(100vh-6rem)]",
-              sidebarCollapsed
-                ? "hidden lg:pointer-events-none lg:block lg:w-0 lg:-translate-x-4 lg:opacity-0"
-                : "lg:w-80 lg:translate-x-0 lg:opacity-100 2xl:w-96",
-            )}
-            aria-hidden={sidebarCollapsed}
+          <PracticeChaptersShell
+            mobileOpen={mobileChaptersOpen}
+            onMobileOpenChange={setMobileChaptersOpen}
+            desktopCollapsed={sidebarCollapsed}
+            desktopClassName={
+              textsWorkspace
+                ? "lg:static lg:h-auto lg:max-h-full lg:self-stretch"
+                : undefined
+            }
           >
-              <div className="flex max-h-[min(70vh,36rem)] flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:w-80 lg:max-h-none 2xl:w-96">
+              <div className="flex h-full max-h-dvh flex-col rounded-2xl border border-border bg-card p-3 shadow-sm lg:h-full lg:max-h-none lg:w-80 2xl:w-96">
                 <div className="mb-2 flex shrink-0 items-center justify-between px-1">
                   <span className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                     <BookOpen className="h-3.5 w-3.5" /> Chapters
                   </span>
                   <button
                     type="button"
-                    onClick={() => setSidebarCollapsed(true)}
-                    className="hidden rounded-md p-1 text-muted-foreground hover:bg-secondary hover:text-foreground lg:inline-flex"
+                    onClick={() => {
+                      setSidebarCollapsed(true);
+                      setMobileChaptersOpen(false);
+                    }}
+                    className="rounded-md p-2 text-muted-foreground hover:bg-secondary hover:text-foreground lg:inline-flex lg:p-1"
                     title="Hide chapters"
                   >
                     <PanelLeftClose className="h-3.5 w-3.5" />
@@ -646,7 +658,7 @@ export function EnglishTasksPage({ tier }: Props) {
                   </button>
                 </div>
               </div>
-            </aside>
+          </PracticeChaptersShell>
 
           <main
             className={cn(
@@ -655,6 +667,12 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
             data-practice-surface
           >
+            <PracticeChaptersOpenButton
+              onClick={() => {
+                setSidebarCollapsed(false);
+                setMobileChaptersOpen(true);
+              }}
+            />
             {sidebarCollapsed && !textsWorkspace && (
               <button
                 type="button"
@@ -666,14 +684,14 @@ export function EnglishTasksPage({ tier }: Props) {
             )}
 
             {activeChapter === null && (
-              <div className="rounded-2xl border border-dashed border-border bg-card p-10 text-center">
+              <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center sm:p-10">
                 <div className="mx-auto mb-4 grid h-14 w-14 place-items-center rounded-full bg-secondary text-muted-foreground">
                   <BookOpen className="h-6 w-6" />
                 </div>
                 <h2 className="font-display text-xl font-bold">Pick a chapter</h2>
                 <p className="mx-auto mt-2 max-w-sm text-sm text-muted-foreground">
-                  Open Texts, Grammar, or Vocabulary on the left to browse English tasks for the WU
-                  BBE exam.
+                  Tap <span className="font-semibold text-foreground">Chapters</span> above to browse
+                  English tasks for the WU BBE exam.
                 </p>
               </div>
             )}
@@ -966,7 +984,7 @@ function EnglishPracticeAside({
   const calc = usePracticeCalcOptional();
   if (!showExplanations && !calc?.open) return null;
   return (
-    <PracticeRightSlot className="lg:sticky lg:top-20 lg:block lg:h-[calc(100vh-6rem)] lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
+    <PracticeRightSlot className="mt-4 w-full max-h-[min(70vh,32rem)] overflow-hidden lg:sticky lg:top-20 lg:mt-0 lg:block lg:h-[calc(100vh-6rem)] lg:max-h-none lg:w-[28rem] lg:shrink-0 xl:w-[32rem] 2xl:w-[36rem]">
       {children}
     </PracticeRightSlot>
   );
@@ -1218,10 +1236,10 @@ function CaseCard({
       {/* Passage is shown in the center ReadingPanel for Texts. */}
 
       <ol className="mt-6 divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-        <li className="flex items-center gap-3 bg-secondary/60 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
+        <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
           <span className="w-6 text-center">#</span>
           <span className="flex-1">Statement</span>
-          <span className="w-14 text-center">True</span>
+          <span className="w-11 text-center lg:w-14">True</span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {data.statements.map((stmt, i) => {
@@ -1229,13 +1247,13 @@ function CaseCard({
           const correctAns = data.answer_key[i];
           const isCorrect = checked && isChecked === correctAns;
           return (
-            <li key={i} className="px-4 py-3">
-              <div className="flex items-center gap-3">
-                <span className="w-6 text-center text-xs font-bold text-muted-foreground">
+            <li key={i} className="px-3 py-3 sm:px-4">
+              <div className="flex items-start gap-2 sm:items-center sm:gap-3">
+                <span className="mt-2 w-6 text-center text-xs font-bold text-muted-foreground sm:mt-0">
                   {String.fromCharCode(65 + i)}.
                 </span>
-                <p className="flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
-                <div className="flex w-14 justify-center">
+                <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground">{stmt}</p>
+                <div className="flex w-11 shrink-0 justify-center lg:w-14">
                   <button
                     type="button"
                     role="checkbox"
@@ -1244,20 +1262,20 @@ function CaseCard({
                     disabled={checked}
                     onClick={() => setAt(i, !isChecked)}
                     className={cn(
-                      "grid h-6 w-6 place-items-center rounded border-2 transition-all",
+                      "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
                       isChecked
                         ? "border-primary bg-primary text-primary-foreground"
                         : "border-border bg-background hover:border-primary/60",
                       checked && "cursor-default",
                     )}
                   >
-                    {isChecked && <Check className="h-4 w-4" strokeWidth={3} />}
+                    {isChecked && <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />}
                   </button>
                 </div>
                 {checked && (
                   <span
                     className={cn(
-                      "grid h-6 w-6 place-items-center rounded-full",
+                      "mt-2 grid h-6 w-6 shrink-0 place-items-center rounded-full sm:mt-0",
                       isCorrect
                         ? "bg-emerald-500 text-white"
                         : "bg-destructive text-destructive-foreground",

@@ -694,8 +694,8 @@ function CustomMocksTab({
             No saved blueprints yet — generate one in the builder.
           </p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] text-sm">
+          <div className="-mx-1 overflow-x-auto overscroll-x-contain rounded-xl sm:mx-0">
+            <table className="w-full min-w-[520px] text-sm">
               <thead>
                 <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   <th className="px-3 py-2">Mock</th>
@@ -766,8 +766,8 @@ function CustomMocksTab({
           <h3 className="mb-3 px-3 pt-2 font-display text-lg font-bold tracking-tight">
             Attempt history
           </h3>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[560px] text-sm">
+          <div className="-mx-1 overflow-x-auto overscroll-x-contain rounded-xl sm:mx-0">
+            <table className="w-full min-w-[480px] text-sm">
               <thead>
                 <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   <th className="px-3 py-2">Exam</th>
@@ -893,8 +893,8 @@ function MocksTab({ mocks }: { mocks: MockAttempt[] }) {
       </section>
 
       <section className="rounded-2xl border border-border bg-card p-2 shadow-sm sm:p-4">
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[560px] text-sm">
+        <div className="-mx-1 overflow-x-auto overscroll-x-contain rounded-xl sm:mx-0">
+          <table className="w-full min-w-[480px] text-sm">
             <thead>
               <tr className="text-left text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 <th className="px-3 py-2">Exam</th>

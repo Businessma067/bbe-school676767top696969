@@ -163,13 +163,13 @@ export function FloatingAssistant() {
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Close case assistant" : "Open case assistant"}
-        className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-foreground text-background shadow-lg ring-1 ring-border transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-ring"
+        className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 grid h-14 w-14 place-items-center rounded-full bg-foreground text-background shadow-lg ring-1 ring-border transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-ring"
       >
         {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </button>
 
       {open && (
-        <div className="fixed bottom-24 right-5 z-50 flex h-[70vh] max-h-[600px] w-[92vw] max-w-sm flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
+        <div className="fixed bottom-[calc(5.5rem+env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 flex h-[min(70vh,600px)] w-[min(92vw,24rem)] max-w-sm flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-2xl">
           <div className="flex items-center gap-2 border-b border-border px-4 py-3">
             <div className="grid h-7 w-7 place-items-center rounded-full bg-foreground text-background">
               <Database className="h-4 w-4" />
