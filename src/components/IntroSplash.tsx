@@ -7,14 +7,19 @@ export function IntroSplash() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setSkip(true);
+      setHidden(true);
+      return;
+    }
     if (sessionStorage.getItem("bbe_intro_played")) {
       setSkip(true);
       setHidden(true);
       return;
     }
     sessionStorage.setItem("bbe_intro_played", "1");
-    const t1 = setTimeout(() => setFadeOut(true), 1000);
-    const t2 = setTimeout(() => setHidden(true), 1450);
+    const t1 = setTimeout(() => setFadeOut(true), 400);
+    const t2 = setTimeout(() => setHidden(true), 700);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
@@ -26,7 +31,7 @@ export function IntroSplash() {
   return (
     <div
       className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-500 ease-out ${
-        fadeOut ? "opacity-0 pointer-events-none" : "opacity-100"
+        fadeOut ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-none"
       }`}
       aria-hidden="true"
     >

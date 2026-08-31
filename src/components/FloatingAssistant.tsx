@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, startTransition } from "react";
 import { Send, X, MessageCircle, Database } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -161,7 +161,7 @@ export function FloatingAssistant() {
     <>
       <button
         type="button"
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => startTransition(() => setOpen((o) => !o))}
         aria-label={open ? "Close case assistant" : "Open case assistant"}
         className="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-50 grid h-14 w-14 place-items-center rounded-full bg-foreground text-background shadow-lg ring-1 ring-border transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-ring"
       >

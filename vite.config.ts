@@ -12,4 +12,28 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("node_modules/katex")) return "katex";
+            if (
+              id.includes("node_modules/react-markdown") ||
+              id.includes("node_modules/remark-") ||
+              id.includes("node_modules/rehype-") ||
+              id.includes("node_modules/unified") ||
+              id.includes("node_modules/mdast-") ||
+              id.includes("node_modules/hast-")
+            ) {
+              return "markdown";
+            }
+            if (id.includes("node_modules/recharts") || id.includes("node_modules/d3-")) {
+              return "charts";
+            }
+          },
+        },
+      },
+    },
+  },
 });

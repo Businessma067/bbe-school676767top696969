@@ -13,12 +13,20 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { HashScrollOnLoad } from "../components/HashScrollOnLoad";
 import { Breadcrumbs } from "../components/Breadcrumbs";
-import { FloatingAssistant } from "../components/FloatingAssistant";
-import { ExplainSelectionChip } from "../components/ExplainSelectionChip";
 import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
 import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
+import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
+
+const FloatingAssistant = lazyNamed(
+  () => import("../components/FloatingAssistant"),
+  "FloatingAssistant",
+);
+const ExplainSelectionChip = lazyNamed(
+  () => import("../components/ExplainSelectionChip"),
+  "ExplainSelectionChip",
+);
 
 function NotFoundComponent() {
   return (
@@ -108,7 +116,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+        // Two families only — fewer render-blocking stylesheet bytes on every page.
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap",
       },
     ],
   }),
@@ -145,8 +154,10 @@ function RootComponent() {
         <Breadcrumbs />
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
-        <ExplainSelectionChip />
-        <FloatingAssistant />
+        <DeferredChrome>
+          <ExplainSelectionChip />
+          <FloatingAssistant />
+        </DeferredChrome>
       </PracticeCaseProvider>
     </QueryClientProvider>
   );
