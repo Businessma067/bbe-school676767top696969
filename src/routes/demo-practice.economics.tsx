@@ -914,7 +914,7 @@ function CaseCard({
         <li className="flex items-center gap-2 bg-secondary/60 px-3 py-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground sm:gap-3 sm:px-4">
           <span className="w-6 text-center">#</span>
           <span className="flex-1">Statement</span>
-          <span className="w-11 text-center sm:w-12">True</span>
+          <span className="w-11 text-center lg:w-14">True</span>
           {checked && <span className="w-6" aria-hidden />}
         </li>
         {data.statements.map((stmt, i) => {
@@ -931,7 +931,7 @@ function CaseCard({
                   {String.fromCharCode(65 + i)}.
                 </span>
                 <p className="min-w-0 flex-1 text-sm leading-relaxed text-foreground">{scrubStatementHints(stmt)}</p>
-                <div className="flex w-11 shrink-0 justify-center sm:w-12">
+                <div className="flex w-11 shrink-0 justify-center lg:w-14">
                   <button
                     type="button"
                     role="checkbox"
@@ -940,14 +940,14 @@ function CaseCard({
                     disabled={checked}
                     onClick={() => setAt(i, !isChecked)}
                     className={cn(
-                      "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all",
+                      "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
                       isChecked
                         ? "border-primary bg-primary text-primary-foreground"
                         : "border-border bg-background hover:border-primary/60",
                       checked && "cursor-default",
                     )}
                   >
-                    {isChecked && <Check className="h-5 w-5" strokeWidth={3} />}
+                    {isChecked && <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />}
                   </button>
                 </div>
                 {checked && (

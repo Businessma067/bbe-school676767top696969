@@ -635,7 +635,7 @@ function TakeExamPage() {
                     <>
                       <span className="w-6">#</span>
                       <span className="flex-1">Statement</span>
-                      <span className="w-11 text-center sm:w-14">True</span>
+                      <span className="w-11 text-center lg:w-14">True</span>
                     </>
                   )}
                 </div>
@@ -664,7 +664,7 @@ function TakeExamPage() {
                           <p className="min-w-0 flex-1 text-sm leading-relaxed sm:text-[15px] lg:text-base">
                             <ExamStatementText q={q} text={s.text} />
                           </p>
-                          <div className="flex w-11 shrink-0 justify-center sm:w-14">
+                          <div className="flex w-11 shrink-0 justify-center lg:w-14">
                             <button
                               type="button"
                               role="checkbox"
@@ -672,13 +672,13 @@ function TakeExamPage() {
                               aria-label={`Mark statement ${String.fromCharCode(65 + i)} as true`}
                               onClick={() => toggleMark(q.index, i)}
                               className={cn(
-                                "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all",
+                                "grid h-11 w-11 place-items-center rounded-lg border-2 transition-all lg:h-6 lg:w-6 lg:rounded",
                                 marked
                                   ? "border-primary bg-primary text-primary-foreground"
                                   : "border-border bg-background hover:border-primary/60",
                               )}
                             >
-                              {marked && <Check className="h-4 w-4" strokeWidth={3} />}
+                              {marked && <Check className="h-5 w-5 lg:h-4 lg:w-4" strokeWidth={3} />}
                             </button>
                           </div>
                         </>
