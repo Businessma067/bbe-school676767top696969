@@ -393,17 +393,45 @@ export default function MockBuilderSimulator() {
     };
   }, [chapters]);
 
+  // Pause the loop while the stage is off-screen (keeps page scrolling smooth).
+  useEffect(() => {
+    const el = stageRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        visibleRef.current = entry?.isIntersecting ?? true;
+      },
+      { threshold: 0.05 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  // Exam countdown
+  useEffect(() => {
+    if (!exam) return;
+    const id = setInterval(() => setSecondsLeft((s) => (s > 0 ? s - 1 : 0)), 1000);
+    return () => clearInterval(id);
+  }, [exam]);
+
   return (
     <div ref={stageRef} className="relative">
       <div
         ref={scrollRef}
         className={cn(
-          "practice-scroll h-[520px] overflow-y-auto rounded-2xl border border-border bg-card p-5 shadow-sm transition-opacity duration-500 sm:h-[560px] sm:p-6 lg:h-[620px]",
+          "practice-scroll h-[520px] overflow-y-auto overscroll-contain rounded-2xl border border-border bg-card p-5 shadow-sm transition-opacity duration-500 sm:h-[560px] sm:p-6 lg:h-[620px]",
           fade ? "opacity-0" : "opacity-100",
         )}
       >
         {exam ? (
-          <ExamFirstQuestion answers={answers} durationMinutes={durationMinutes} />
+          <ExamScreen
+            index={examIndex}
+            answers={answers}
+            visited={visited}
+            calcOpen={calcOpen}
+            secondsLeft={secondsLeft}
+          />
+
         ) : (
           <>
             <div className="mb-4 flex flex-wrap items-center gap-2">
