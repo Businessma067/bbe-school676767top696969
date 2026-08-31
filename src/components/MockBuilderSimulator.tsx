@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { BookOpen, Check, ChevronDown, Clock, Loader2 } from "lucide-react";
+import { BookOpen, Calculator, Check, ChevronDown, Clock, Loader2 } from "lucide-react";
 import { TopicWeightSelector } from "@/components/custom-mock/TopicWeightSelector";
 import { getCustomMockChapters } from "@/data/custom-mock-catalog";
 import {
