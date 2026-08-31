@@ -336,15 +336,50 @@ export default function MockBuilderSimulator() {
         setFade(true);
         await wait(320);
         setExam(true);
+        setExamIndex(0);
+        setVisited([0]);
+        setSecondsLeft(12 * CUSTOM_MOCK_MINUTES_PER_QUESTION * 60);
         if (scrollRef.current) scrollRef.current.scrollTop = 0;
         setFade(false);
         await wait(900);
 
-        // ---- 7. first question opens ----
-        await moveTo('[data-sim-answer="0"]');
+        // ---- 7. answer the first question ----
+        for (const i of [0, 2, 3]) {
+          if (cancelled) return;
+          await moveTo(`[data-sim-answer="${i}"]`);
+          await click();
+          setAnswers((prev) => ({ ...prev, 0: { ...(prev[0] ?? {}), [i]: true } }));
+          await wait(420);
+        }
+        await wait(700);
+
+        // ---- 8. open the calculator, then close it ----
+        await moveTo("[data-sim-calc]");
         await click();
-        setAnswers({ 0: true });
-        await wait(1400);
+        setCalcOpen(true);
+        await wait(1500);
+        await moveTo("[data-sim-calc]");
+        await click();
+        setCalcOpen(false);
+        await wait(600);
+
+        // ---- 9. jump to question 2 via the palette ----
+        await moveTo('[data-sim-tile="2"]');
+        await click();
+        setExamIndex(1);
+        setVisited((prev) => (prev.includes(1) ? prev : [...prev, 1]));
+        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+        await wait(900);
+
+        for (const i of [0, 1]) {
+          if (cancelled) return;
+          await moveTo(`[data-sim-answer="${i}"]`);
+          await click();
+          setAnswers((prev) => ({ ...prev, 1: { ...(prev[1] ?? {}), [i]: true } }));
+          await wait(420);
+        }
+        await wait(1600);
+
       }
     };
 
