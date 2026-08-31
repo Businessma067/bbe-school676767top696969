@@ -1,6 +1,6 @@
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { startTransition, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useServerFn } from "@tanstack/react-start";
 import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
@@ -118,6 +118,7 @@ function EconomicsTasks() {
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const skipNextIdxResetRef = useRef(false);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const timed = useTimedSession();
@@ -164,7 +165,17 @@ function EconomicsTasks() {
     return () => { cancel = true; };
   }, []);
 
-  useEffect(() => { setActiveIdx(0); setExplanation(null); setShowExplanations(false); }, [activeChapter]);
+  useEffect(() => {
+    if (skipNextIdxResetRef.current) {
+      skipNextIdxResetRef.current = false;
+      setExplanation(null);
+      setShowExplanations(false);
+      return;
+    }
+    setActiveIdx(0);
+    setExplanation(null);
+    setShowExplanations(false);
+  }, [activeChapter]);
   useEffect(() => { setExplanation(null); setShowExplanations(false); }, [activeIdx]);
 
   const requestExplanation = async (caseData: Case, i: number) => {
@@ -230,7 +241,7 @@ function EconomicsTasks() {
         statements: [],
         theorySnippet: `Economics theory for chapter ${theoryChapter}${ch?.title ? `: ${ch.title}` : ""}.`,
       });
-      return () => setPracticeCase(null);
+      return;
     }
     if (activeCase && !isLocked(activeChapter, activeIdx)) {
       const chNum = chapterOf(activeCase);
@@ -245,13 +256,12 @@ function EconomicsTasks() {
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: activeCase.context,
         statements: activeCase.statements,
-        tacticalExplanations: activeCase.tactical_explanations,
+        // Defer long explanations — keep clicks snappy
         answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);
     }
-    return () => setPracticeCase(null);
   }, [theoryChapter, activeCase, activeChapter, activeIdx, setPracticeCase]);
 
   useEffect(() => {
@@ -367,7 +377,7 @@ function EconomicsTasks() {
                     <button
                       onClick={() => {
                         setActiveChapter(ch.num);
-                        setTheoryChapter(ch.num);
+                        startTransition(() => setTheoryChapter(ch.num));
                       }}
                       className="flex flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
                       title="Open Theory Reader for this chapter"
@@ -418,8 +428,9 @@ function EconomicsTasks() {
                               <button
                                 onClick={() => {
                                   setTheoryChapter(null);
+                                  skipNextIdxResetRef.current = true;
                                   setActiveChapter(ch.num);
-                                  setTimeout(() => setActiveIdx(i), 0);
+                                  setActiveIdx(i);
                                 }}
                                 disabled={locked}
                                 style={locked ? { opacity: lockedOpacity } : undefined}

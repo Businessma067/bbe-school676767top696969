@@ -2,8 +2,8 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Height animation driven by grid-template-rows, so the open state resolves to the
- * real content height instead of a guessed max-height.
+ * Height animation via grid-template-rows.
+ * Closed panels unmount children so large task lists are not reconciled every click.
  */
 export function Collapse({
   open,
@@ -16,7 +16,7 @@ export function Collapse({
 }) {
   return (
     <div className={cn("collapse-grid", open && "is-open", className)} aria-hidden={!open}>
-      <div className={cn(!open && "pointer-events-none")}>{children}</div>
+      <div className={cn(!open && "pointer-events-none")}>{open ? children : null}</div>
     </div>
   );
 }

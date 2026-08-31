@@ -118,6 +118,7 @@ function EconomicsTasks() {
   const [error, setError] = useState<string | null>(null);
   const [activeChapter, setActiveChapter] = useState<number | "revision" | null>(null);
   const [activeIdx, setActiveIdx] = useState(0);
+  const skipNextIdxResetRef = useRef(false);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const authGate = useAuthGate();
 
@@ -162,7 +163,17 @@ function EconomicsTasks() {
     return () => { cancel = true; };
   }, []);
 
-  useEffect(() => { setActiveIdx(0); setExplanation(null); setShowExplanations(false); }, [activeChapter]);
+  useEffect(() => {
+    if (skipNextIdxResetRef.current) {
+      skipNextIdxResetRef.current = false;
+      setExplanation(null);
+      setShowExplanations(false);
+      return;
+    }
+    setActiveIdx(0);
+    setExplanation(null);
+    setShowExplanations(false);
+  }, [activeChapter]);
   useEffect(() => { setExplanation(null); setShowExplanations(false); }, [activeIdx]);
 
   const requestExplanation = async (caseData: Case, i: number) => {
@@ -230,13 +241,12 @@ function EconomicsTasks() {
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: activeCase.context,
         statements: activeCase.statements,
-        tacticalExplanations: activeCase.tactical_explanations,
+        // Defer long explanations — keep clicks snappy
         answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);
     }
-    return () => setPracticeCase(null);
   }, [activeCase, activeChapter, activeIdx, setPracticeCase]);
 
   useEffect(() => {
@@ -391,8 +401,9 @@ function EconomicsTasks() {
                             <li key={c.id}>
                               <button
                                 onClick={() => {
+                                  skipNextIdxResetRef.current = true;
                                   setActiveChapter(ch.num);
-                                  setTimeout(() => setActiveIdx(i), 0);
+                                  setActiveIdx(i);
                                 }}
                                 disabled={locked}
                                 style={locked ? { opacity: lockedOpacity } : undefined}

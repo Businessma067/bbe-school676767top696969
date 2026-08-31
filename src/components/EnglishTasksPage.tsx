@@ -97,6 +97,7 @@ export function EnglishTasksPage({ tier }: Props) {
     null,
   );
   const [activeIdx, setActiveIdx] = useState(0);
+  const skipNextIdxResetRef = useRef(false);
   const [progress, setProgress] = useState<Progress>(() => loadProgress());
   const [expanded, setExpanded] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(chapters.map((c) => [c.key, false])),
@@ -142,6 +143,12 @@ export function EnglishTasksPage({ tier }: Props) {
   };
 
   useEffect(() => {
+    if (skipNextIdxResetRef.current) {
+      skipNextIdxResetRef.current = false;
+      setExplanation(null);
+      setShowExplanations(false);
+      return;
+    }
     setActiveIdx(0);
     setExplanation(null);
     setShowExplanations(false);
@@ -208,14 +215,13 @@ export function EnglishTasksPage({ tier }: Props) {
         title: `${activeCase.case_id} · ${activeCase.title}`,
         context: stem || activeCase.context,
         statements: activeCase.statements,
-        solutionOverview: activeCase.solution_overview,
-        tacticalExplanations: activeCase.tactical_explanations,
+        // Defer long explanations — keep clicks snappy
         answerKey: activeCase.answer_key,
       });
     } else {
       setPracticeCase(null);
     }
-    return () => setPracticeCase(null);
+    /* skip null thrash between task switches */
   }, [
     activeCase,
     activeChapter,
@@ -481,8 +487,9 @@ export function EnglishTasksPage({ tier }: Props) {
                                                 <button
                                                   type="button"
                                                   onClick={() => {
+                                                    skipNextIdxResetRef.current = true;
                                                     setActiveChapter(ch.key);
-                                                    setTimeout(() => setActiveIdx(i), 0);
+                                                    setActiveIdx(i);
                                                   }}
                                                   disabled={locked}
                                                   style={
@@ -569,8 +576,9 @@ export function EnglishTasksPage({ tier }: Props) {
                                       <button
                                         type="button"
                                         onClick={() => {
+                                          skipNextIdxResetRef.current = true;
                                           setActiveChapter(ch.key);
-                                          setTimeout(() => setActiveIdx(i), 0);
+                                          setActiveIdx(i);
                                         }}
                                         disabled={locked}
                                         className={cn(
