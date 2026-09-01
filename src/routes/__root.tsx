@@ -148,19 +148,22 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <PracticeCaseProvider>
-        <IntroSplash />
-        <HashScrollOnLoad />
-        <ActivityTracker />
-        <SiteAccessGuard />
-        <Breadcrumbs />
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
-        <DeferredChrome>
-          <ExplainSelectionChip />
-          <FloatingAssistant />
-        </DeferredChrome>
-      </PracticeCaseProvider>
+      <LanguageProvider>
+        <PracticeCaseProvider>
+          <PageTranslator />
+          <IntroSplash />
+          <HashScrollOnLoad />
+          <ActivityTracker />
+          <SiteAccessGuard />
+          <Breadcrumbs />
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+          <DeferredChrome>
+            <ExplainSelectionChip />
+            <FloatingAssistant />
+          </DeferredChrome>
+        </PracticeCaseProvider>
+      </LanguageProvider>
     </QueryClientProvider>
   );
 }
