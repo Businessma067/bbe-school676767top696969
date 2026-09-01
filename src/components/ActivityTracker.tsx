@@ -5,12 +5,13 @@ import { runOnceOnLogin, startActivityHeartbeat, trackPageView } from "@/lib/act
 
 function scheduleIdle(fn: () => void): () => void {
   if (typeof window === "undefined") return () => {};
-  if ("requestIdleCallback" in window) {
-    const id = window.requestIdleCallback(() => fn(), { timeout: 2500 });
-    return () => window.cancelIdleCallback(id);
+  const win = window as Window & typeof globalThis;
+  if (typeof win.requestIdleCallback === "function") {
+    const id = win.requestIdleCallback(() => fn(), { timeout: 2500 });
+    return () => win.cancelIdleCallback(id);
   }
-  const id = window.setTimeout(fn, 400);
-  return () => window.clearTimeout(id);
+  const id = win.setTimeout(fn, 400);
+  return () => win.clearTimeout(id);
 }
 
 /** Global presence + page-view tracking for logged-in users. */

@@ -17,6 +17,8 @@ import { IntroSplash } from "../components/IntroSplash";
 import { ActivityTracker } from "../components/ActivityTracker";
 import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
+import { LanguageProvider } from "../lib/i18n/context";
+import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 
 const FloatingAssistant = lazyNamed(
@@ -146,19 +148,22 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <PracticeCaseProvider>
-        <IntroSplash />
-        <HashScrollOnLoad />
-        <ActivityTracker />
-        <SiteAccessGuard />
-        <Breadcrumbs />
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
-        <DeferredChrome>
-          <ExplainSelectionChip />
-          <FloatingAssistant />
-        </DeferredChrome>
-      </PracticeCaseProvider>
+      <LanguageProvider>
+        <PracticeCaseProvider>
+          <PageTranslator />
+          <IntroSplash />
+          <HashScrollOnLoad />
+          <ActivityTracker />
+          <SiteAccessGuard />
+          <Breadcrumbs />
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+          <DeferredChrome>
+            <ExplainSelectionChip />
+            <FloatingAssistant />
+          </DeferredChrome>
+        </PracticeCaseProvider>
+      </LanguageProvider>
     </QueryClientProvider>
   );
 }
