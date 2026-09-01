@@ -3,6 +3,7 @@ import { useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
 import { navItemsForContext, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
