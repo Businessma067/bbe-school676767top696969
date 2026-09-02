@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { requireAdmin } from "@/lib/require-admin.server";
 import {
   DISCOUNT_CODE,
   DISCOUNT_PCT,
@@ -83,8 +82,6 @@ export const createCheckout = createServerFn({ method: "POST" })
         reference,
         redirectUrl: `${origin}/payment-result`,
         webHookUrl: `${origin}/api/public/payment/webhook`,
-        // Two-step payment: block the funds first, charge them on finalize.
-        paymentType: "hold",
       });
 
       const email = typeof context.claims.email === "string" ? context.claims.email : null;
@@ -98,7 +95,6 @@ export const createCheckout = createServerFn({ method: "POST" })
         amount_minor: amountMinor,
         currency_code: 980,
         status: "created",
-        payment_type: "hold",
         page_url: pageUrl,
       });
       if (error) {
@@ -169,167 +165,4 @@ export const listMyPayments = createServerFn({ method: "GET" })
       status: p.status,
       createdAt: p.created_at,
     }));
-  });
-
-/* ---------------------------------------------------------------------------
- * Two-step (hold) administration: finalize = charge, cancel = refund.
- * ------------------------------------------------------------------------- */
-
-const InvoiceActionInput = z.object({
-  invoiceId: z.string().min(1).max(128),
-  /** Optional partial amount in UAH (must be <= the held/charged amount). */
-  amountUah: z.number().positive().max(1_000_000).optional(),
-});
-
-export type InvoiceActionResult =
-  | { ok: true; status: string; message: string }
-  | { ok: false; error: string };
-
-/** Lists invoices that currently hold funds, so an admin can finalize them. */
-export const listHeldPayments = createServerFn({ method: "GET" })
-  .middleware([requireAdmin])
-  .handler(async ({ context }) => {
-    const { data } = await context.supabaseAdmin
-      .from("payments")
-      .select(
-        "invoice_id, user_email, product_name, amount_minor, status, payment_type, held_at, hold_expires_at, finalized_at, cancelled_at, created_at",
-      )
-      .in("status", ["created", "processing", "hold", "success"])
-      .order("created_at", { ascending: false })
-      .limit(100);
-
-    const { HOLD_SAFE_FINALIZE_DAYS } = await import("@/lib/monobank.server");
-    return (data ?? []).map((p) => {
-      const heldAt = p.held_at ? new Date(p.held_at) : null;
-      const daysHeld = heldAt ? (Date.now() - heldAt.getTime()) / 86_400_000 : null;
-      return {
-        invoiceId: p.invoice_id,
-        userEmail: p.user_email,
-        productName: p.product_name,
-        amountUah: p.amount_minor / 100,
-        status: p.status,
-        paymentType: p.payment_type,
-        heldAt: p.held_at,
-        holdExpiresAt: p.hold_expires_at,
-        finalizedAt: p.finalized_at,
-        cancelledAt: p.cancelled_at,
-        createdAt: p.created_at,
-        canFinalize: p.status === "hold" && (daysHeld === null || daysHeld < HOLD_SAFE_FINALIZE_DAYS),
-        canCancel: p.status === "success",
-        expiringSoon: daysHeld !== null && daysHeld >= HOLD_SAFE_FINALIZE_DAYS - 1,
-      };
-    });
-  });
-
-/**
- * Scenario A: order verified & delivered → charge the blocked funds.
- * Refuses when the invoice is not on hold or the hold is about to expire.
- */
-export const finalizePayment = createServerFn({ method: "POST" })
-  .middleware([requireAdmin])
-  .inputValidator((d: unknown) => InvoiceActionInput.parse(d))
-  .handler(async ({ context, data }): Promise<InvoiceActionResult> => {
-    try {
-      const { data: row } = await context.supabaseAdmin
-        .from("payments")
-        .select("id, amount_minor, status, held_at")
-        .eq("invoice_id", data.invoiceId)
-        .maybeSingle();
-      if (!row) return { ok: false, error: "Payment not found." };
-
-      const {
-        fetchMonoInvoiceStatus,
-        finalizeMonoInvoice,
-        syncInvoiceAndGrantAccess,
-        HOLD_SAFE_FINALIZE_DAYS,
-      } = await import("@/lib/monobank.server");
-
-      const mono = await fetchMonoInvoiceStatus(data.invoiceId);
-      if (mono.status === "success") {
-        return { ok: true, status: "success", message: "Already finalized — funds are charged." };
-      }
-      if (mono.status !== "hold") {
-        return { ok: false, error: `Cannot finalize an invoice with status "${mono.status}". Finalize only works on a hold.` };
-      }
-
-      const heldAt = row.held_at ? new Date(row.held_at) : null;
-      if (heldAt && (Date.now() - heldAt.getTime()) / 86_400_000 >= HOLD_SAFE_FINALIZE_DAYS) {
-        return {
-          ok: false,
-          error: "This hold is 8+ days old and may already be released by the bank. Ask the customer to pay again.",
-        };
-      }
-
-      const amountMinor = data.amountUah ? Math.round(data.amountUah * 100) : undefined;
-      if (amountMinor && amountMinor > row.amount_minor) {
-        return { ok: false, error: "You can only finalize the held amount or less." };
-      }
-
-      const result = await finalizeMonoInvoice(data.invoiceId, amountMinor);
-      console.log("[mono] finalize", { invoiceId: data.invoiceId, amountMinor, result });
-
-      // Re-read the authoritative status; this also grants course access.
-      const synced = await syncInvoiceAndGrantAccess(data.invoiceId);
-      return {
-        ok: true,
-        status: synced.status,
-        message: amountMinor
-          ? `Charged ${(amountMinor / 100).toFixed(2)} UAH of the hold.`
-          : "Full hold amount charged.",
-      };
-    } catch (err) {
-      console.error("finalizePayment", err);
-      return { ok: false, error: err instanceof Error ? err.message : "Finalize failed." };
-    }
-  });
-
-/**
- * Scenario C: money already charged (status "success") and the customer wants
- * a refund → cancel. Never call this for a hold: a hold simply expires.
- */
-export const cancelPayment = createServerFn({ method: "POST" })
-  .middleware([requireAdmin])
-  .inputValidator((d: unknown) => InvoiceActionInput.parse(d))
-  .handler(async ({ context, data }): Promise<InvoiceActionResult> => {
-    try {
-      const { data: row } = await context.supabaseAdmin
-        .from("payments")
-        .select("id, amount_minor, finalized_amount_minor, status")
-        .eq("invoice_id", data.invoiceId)
-        .maybeSingle();
-      if (!row) return { ok: false, error: "Payment not found." };
-
-      const { fetchMonoInvoiceStatus, cancelMonoInvoice, syncInvoiceAndGrantAccess } = await import(
-        "@/lib/monobank.server"
-      );
-
-      const mono = await fetchMonoInvoiceStatus(data.invoiceId);
-      if (mono.status === "hold") {
-        return {
-          ok: false,
-          error: "This invoice is only on hold — do not cancel it. Simply skip finalize and the bank releases the funds automatically.",
-        };
-      }
-      if (mono.status === "reversed") {
-        return { ok: true, status: "reversed", message: "Already refunded." };
-      }
-      if (mono.status !== "success") {
-        return { ok: false, error: `Cannot refund an invoice with status "${mono.status}".` };
-      }
-
-      const charged = row.finalized_amount_minor ?? row.amount_minor;
-      const amountMinor = data.amountUah ? Math.round(data.amountUah * 100) : undefined;
-      if (amountMinor && amountMinor > charged) {
-        return { ok: false, error: "Refund cannot exceed the charged amount." };
-      }
-
-      const result = await cancelMonoInvoice(data.invoiceId, amountMinor);
-      console.log("[mono] cancel", { invoiceId: data.invoiceId, amountMinor, result });
-
-      const synced = await syncInvoiceAndGrantAccess(data.invoiceId);
-      return { ok: true, status: synced.status, message: "Refund requested." };
-    } catch (err) {
-      console.error("cancelPayment", err);
-      return { ok: false, error: err instanceof Error ? err.message : "Refund failed." };
-    }
   });
