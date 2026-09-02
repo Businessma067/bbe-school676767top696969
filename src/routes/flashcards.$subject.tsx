@@ -48,6 +48,8 @@ export const Route = createFileRoute("/flashcards/$subject")({
     const subject = getFlashcardSubject(params.subject);
     const title = subject ? `${subject.title} Flashcards — BBE School` : "Flashcards — BBE School";
     return {
+      links: [{ rel: "canonical", href: `https://bbe-school.com/flashcards/${params.subject}` }],
+
       meta: [
         { title },
         {
@@ -77,7 +79,6 @@ function buildDeck(
     sectionId === "all" ? sections : sections.filter((s) => s.id === sectionId);
   return filtered.flatMap((s) =>
     s.cards.map((c) => ({
-    links: [{ rel: "canonical", href: `https://bbe-school.com/flashcards/${params.subject}` }],
       ...c,
       sectionId: s.id,
       sectionTitle: s.title,

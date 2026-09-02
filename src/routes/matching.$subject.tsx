@@ -23,6 +23,8 @@ export const Route = createFileRoute("/matching/$subject")({
       ? `${subject.title} Matching — BBE School`
       : "Matching — BBE School";
     return {
+      links: [{ rel: "canonical", href: `https://bbe-school.com/matching/${params.subject}` }],
+
       meta: [
         { title },
         {
@@ -58,7 +60,6 @@ function poolFromSections(
     sectionId === "all" ? sections : sections.filter((s) => s.id === sectionId);
   return filtered.flatMap((s) =>
     s.cards.map((c, i) => ({
-    links: [{ rel: "canonical", href: `https://bbe-school.com/matching/${params.subject}` }],
       ...c,
       id: `${s.id}::${i}::${c.term}`,
       sectionTitle: s.title,
