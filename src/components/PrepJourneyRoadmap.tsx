@@ -130,10 +130,16 @@ function NodeCircle({
 }: {
   milestone: Milestone;
   index: number;
-  size?: "sm" | "md";
+  size?: "sm" | "md" | "lg";
 }) {
-  const dim = size === "sm" ? "h-12 w-12" : "h-14 w-14 sm:h-16 sm:w-16";
-  const iconDim = size === "sm" ? "h-6 w-6" : "h-7 w-7 sm:h-8 sm:w-8";
+  const dim =
+    size === "lg"
+      ? "h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]"
+      : size === "sm"
+        ? "h-12 w-12"
+        : "h-14 w-14 sm:h-16 sm:w-16";
+  const iconDim =
+    size === "lg" ? "h-8 w-8 sm:h-9 sm:w-9" : size === "sm" ? "h-6 w-6" : "h-7 w-7 sm:h-8 sm:w-8";
 
   return (
     <div
@@ -141,7 +147,7 @@ function NodeCircle({
         "prep-roadmap-node relative grid place-items-center rounded-full",
         dim,
         milestone.destination
-          ? "bg-[var(--caramel-deep)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--caramel-deep)_55%,transparent)]"
+          ? "bg-[var(--exam-red)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--exam-red)_55%,transparent)]"
           : "border-[1.5px] border-foreground/70 bg-[color-mix(in_oklab,var(--ivory)_88%,white)] text-foreground",
       )}
       style={{ animationDelay: `${0.22 + index * 0.22}s` }}
@@ -176,7 +182,7 @@ function NodeCaption({
       <p
         className={cn(
           "font-display font-semibold leading-snug text-foreground",
-          compact ? "text-sm" : "text-[13px] sm:text-sm",
+          compact ? "text-sm" : "text-sm sm:text-base",
         )}
       >
         {milestone.title}
@@ -184,7 +190,7 @@ function NodeCaption({
       <p
         className={cn(
           "mt-0.5 leading-snug text-muted-foreground",
-          compact ? "text-[11px]" : "text-[10px] sm:text-[11px]",
+          compact ? "text-[11px]" : "text-[11px] sm:text-xs",
         )}
       >
         {milestone.label}
@@ -193,56 +199,56 @@ function NodeCaption({
   );
 }
 
-/** Desktop: soft S-curve path through four nodes. */
-function DesktopRoadmap() {
+/** Wide desktop: soft S-curve across the full content width. */
+function SpreadDesktopRoadmap() {
   return (
-    <div className="relative hidden h-full w-full lg:block">
+    <div className="relative hidden h-[340px] w-full md:block lg:h-[360px]">
       <svg
         className="absolute inset-0 h-full w-full"
-        viewBox="0 0 640 360"
-        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 1100 300"
+        preserveAspectRatio="none"
         aria-hidden
       >
         <path
           className="prep-roadmap-path"
-          d="M56 150 C 145 96, 205 96, 248 150 S 355 240, 408 155 S 520 80, 584 138"
+          d="M70 130 C 220 70, 300 70, 390 140 S 560 250, 700 140 S 900 55, 1030 120"
           fill="none"
           stroke="#161616"
           strokeOpacity="0.26"
-          strokeWidth="1.7"
+          strokeWidth="1.6"
           strokeLinecap="round"
           strokeLinejoin="round"
           pathLength={1}
+          vectorEffect="non-scaling-stroke"
         />
       </svg>
 
-      {/* Node positions tuned to the path curve */}
-      <div className="absolute left-[3%] top-[22%] flex w-[23%] flex-col items-center gap-2">
-        <NodeCircle milestone={MILESTONES[0]} index={0} />
+      <div className="absolute left-[0%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
+        <NodeCircle milestone={MILESTONES[0]} index={0} size="lg" />
         <NodeCaption milestone={MILESTONES[0]} />
       </div>
-      <div className="absolute left-[27%] top-[48%] flex w-[23%] flex-col items-center gap-2">
-        <NodeCircle milestone={MILESTONES[1]} index={1} />
+      <div className="absolute left-[25%] top-[48%] flex w-[24%] flex-col items-center gap-2.5">
+        <NodeCircle milestone={MILESTONES[1]} index={1} size="lg" />
         <NodeCaption milestone={MILESTONES[1]} />
       </div>
-      <div className="absolute left-[51%] top-[22%] flex w-[23%] flex-col items-center gap-2">
-        <NodeCircle milestone={MILESTONES[2]} index={2} />
+      <div className="absolute left-[51%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
+        <NodeCircle milestone={MILESTONES[2]} index={2} size="lg" />
         <NodeCaption milestone={MILESTONES[2]} />
       </div>
-      <div className="absolute left-[74%] top-[34%] flex w-[23%] flex-col items-center gap-2">
-        <NodeCircle milestone={MILESTONES[3]} index={3} />
+      <div className="absolute left-[76%] top-[34%] flex w-[24%] flex-col items-center gap-2.5">
+        <NodeCircle milestone={MILESTONES[3]} index={3} size="lg" />
         <NodeCaption milestone={MILESTONES[3]} />
       </div>
     </div>
   );
 }
 
-/** Mobile / tablet: vertical straight path. */
+/** Mobile: vertical straight path. */
 function MobileRoadmap() {
   return (
-    <div className="relative flex h-full w-full flex-col justify-center gap-0 px-2 py-3 lg:hidden">
+    <div className="relative mx-auto flex w-full max-w-md flex-col justify-center gap-0 px-1 py-2 md:hidden">
       <div
-        className="prep-roadmap-path-mobile absolute left-[1.9rem] top-8 bottom-8 w-px bg-foreground/25 sm:left-[2.15rem]"
+        className="prep-roadmap-path-mobile absolute bottom-8 left-[1.9rem] top-8 w-px bg-foreground/25"
         aria-hidden
       />
       {MILESTONES.map((m, i) => (
@@ -260,24 +266,11 @@ function MobileRoadmap() {
 export function PrepJourneyRoadmap({ className }: { className?: string }) {
   return (
     <div
-      className={cn(
-        "prep-roadmap relative h-full w-full overflow-hidden rounded-xl",
-        "bg-[color-mix(in_oklab,var(--ivory)_92%,#F2F1EA)]",
-        className,
-      )}
+      className={cn("prep-roadmap relative w-full", className)}
       role="img"
       aria-label="Step by step preparation: Free Demo, Build the Fundamentals, Full Simulation, Exam Day"
     >
-      {/* Soft paper grain */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.35]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(22,22,22,0.03), transparent 40%), radial-gradient(circle at 80% 70%, rgba(194,100,58,0.05), transparent 45%)",
-        }}
-      />
-      <DesktopRoadmap />
+      <SpreadDesktopRoadmap />
       <MobileRoadmap />
     </div>
   );
