@@ -691,7 +691,7 @@ function WhyUsSlider() {
           }}
         >
           {/* Slide 01 — Acceptance Rate */}
-          <WhySlide index="01" title="Acceptance Rate">
+          <WhySlide title="Acceptance Rate">
             <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
               <RingMetric
                 value="8%"
@@ -717,7 +717,7 @@ function WhyUsSlider() {
           </WhySlide>
 
           {/* Slide 02 — Capital Preservation */}
-          <WhySlide index="02" title="Capital Preservation">
+          <WhySlide title="Capital Preservation">
             <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
               <p className="text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
                 Private tutors in Vienna charge{" "}
@@ -739,7 +739,7 @@ function WhyUsSlider() {
           </WhySlide>
 
           {/* Slide 03 — Top-Tier Career Outcomes */}
-          <WhySlide index="03" title="Top-Tier Career Outcomes">
+          <WhySlide title="Top-Tier Career Outcomes">
             <p className="max-w-3xl text-base leading-relaxed text-primary-foreground/75 sm:text-[17px]">
               WU Vienna is a premier target university for the world's elite firms, but only for the{" "}
               <span className="text-caramel-deep">top 10% of the class</span>. Getting in is just
@@ -756,28 +756,14 @@ function WhyUsSlider() {
   );
 }
 
-function WhySlide({
-  index,
-  title,
-  children,
-}: {
-  index: string;
-  title: string;
-  children: ReactNode;
-}) {
+function WhySlide({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="relative flex w-full min-w-full flex-none items-center justify-center px-6 py-10 sm:px-10 lg:px-16">
       <div className="relative w-full max-w-6xl rounded-2xl border border-white/12 bg-why-us-card p-6 sm:p-10 lg:p-12">
-        <div className="mb-8 flex items-start gap-5 sm:items-center">
-          <span className="font-display text-3xl font-bold tracking-tight text-caramel-deep sm:text-4xl">
-            {index}
-          </span>
-          <span className="h-px flex-1 bg-white/10" />
-          <div className="min-w-0 text-right sm:text-left">
-            <h3 className="font-display text-xl font-semibold tracking-tight text-primary-foreground sm:text-2xl">
-              {title}
-            </h3>
-          </div>
+        <div className="mb-8 border-b border-white/12 pb-5">
+          <h3 className="font-display text-2xl font-semibold text-primary-foreground sm:text-3xl">
+            {title}
+          </h3>
         </div>
         {children}
       </div>
@@ -902,8 +888,8 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
 function PlacementsTicker() {
   return (
     <div className="mt-8 rounded-xl border border-[color:var(--color-caramel-deep)]/25 bg-black/40 px-4 py-6 sm:px-8 sm:py-8 why-us-glow">
-      <p className="mb-6 text-center text-[10px] font-semibold uppercase tracking-[0.32em] text-[color:var(--color-caramel)]/80">
-        ◆ Where alumni land ◆
+      <p className="mb-6 text-center text-sm font-medium text-primary-foreground/55">
+        Where alumni land
       </p>
       <div className="grid grid-cols-3 items-stretch justify-items-stretch gap-3 sm:grid-cols-6 sm:gap-4">
         {placements.map((p) => (
