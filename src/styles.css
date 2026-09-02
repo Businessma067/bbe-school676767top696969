@@ -76,36 +76,35 @@
 :root {
   --radius: 0.625rem;
 
-  /* White paper + light blue institutional palette */
-  --background: #ffffff;
-  --foreground: #12263a;
+  /* Exam-paper institutional palette */
+  --background: #f2f1ed;
+  --foreground: #161616;
   --card: #ffffff;
-  --card-foreground: #12263a;
+  --card-foreground: #161616;
   --popover: #ffffff;
-  --popover-foreground: #12263a;
-  --primary: #2f7cc0;
-  --primary-foreground: #ffffff;
-  --secondary: #eef6fd;
-  --secondary-foreground: #12263a;
-  --muted: #f2f7fc;
-  --muted-foreground: #5c7691;
-  --accent: #d8ecfb;
-  --accent-foreground: #12263a;
+  --popover-foreground: #161616;
+  --primary: #161616;
+  --primary-foreground: #f2f1ed;
+  --secondary: #e9e7e1;
+  --secondary-foreground: #161616;
+  --muted: #e9e7e1;
+  --muted-foreground: #5a584f;
+  --accent: #161616;
+  --accent-foreground: #f2f1ed;
   --destructive: #b3392a;
   --destructive-foreground: #ffffff;
-  --border: #dceaf6;
-  --input: #dceaf6;
-  --ring: #2f7cc0;
+  --border: #d8d6ce;
+  --input: #d8d6ce;
+  --ring: #161616;
 
-  --ivory: #f7fbff;
+  --ivory: #f2f1ed;
   --exam-red: #b3392a;                   /* stakes only: timers, negative marking, one CTA */
-  --caramel: #d8ecfb;                    /* quiet hairline tone (legacy token) */
-  --caramel-deep: #2f7cc0;
-  --espresso: #12263a;
-  --taupe: #5c7691;
-  --why-us-bg: #13324d;
-  --why-us-card: #1b4266;
-
+  --caramel: #d8d6ce;                    /* quiet hairline tone (legacy token) */
+  --caramel-deep: #b3392a;
+  --espresso: #161616;
+  --taupe: #5a584f;
+  --why-us-bg: #0d0d0d;
+  --why-us-card: #161616;
 
 
 
