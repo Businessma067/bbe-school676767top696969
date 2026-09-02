@@ -1,12 +1,7 @@
 import { EnrollButton } from "@/components/EnrollButton";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CompareTable } from "@/components/CompareTable";
 import slide1 from "@/assets/demo-slide-1.png.asset.json";
 import slide2 from "@/assets/demo-slide-2.png.asset.json";
@@ -294,26 +289,7 @@ function DemoPracticeProduct() {
             <h2 className="mb-6 text-center font-display text-xl font-semibold tracking-tight text-foreground">
               Frequently Asked Questions — Demo-Practice
             </h2>
-            <Accordion
-              type="single"
-              collapsible
-              className="rounded-2xl border border-border bg-card p-4 shadow-sm"
-            >
-              {demoFaqs.map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`demo-faq-${index}`}
-                  className="border-b-0 border-t border-border/40 first:border-t-0"
-                >
-                  <AccordionTrigger className="py-4 text-left font-display text-base font-semibold text-foreground hover:no-underline">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            <SeoFaq className="rounded-2xl border border-border bg-card p-4 shadow-sm" items={demoFaqs} />
           </section>
 
           <CompareTable highlight="free" />

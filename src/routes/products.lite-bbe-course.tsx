@@ -1,12 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { BookOpen, ListChecks, Clock, Users, Lightbulb, Check, Quote } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CompareTable } from "@/components/CompareTable";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -376,22 +371,7 @@ function LiteBbeCourseProduct() {
                 Frequently asked questions
               </h2>
 
-              <Accordion type="single" collapsible className="mt-8">
-                {liteFaqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`lite-faq-${index}`}
-                    className="border-b-0 border-t border-border/40 first:border-t-0"
-                  >
-                    <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-caramel">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <SeoFaq className="mt-8" items={liteFaqs} />
             </div>
           </section>
         </div>
