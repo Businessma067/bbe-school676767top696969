@@ -76,34 +76,36 @@
 :root {
   --radius: 0.625rem;
 
-  /* Monochrome — editorial black & white */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
-  --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.45 0 0);
-  --accent: oklch(0.15 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.55 0.2 25);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.15 0 0 / 12%);
-  --input: oklch(0.15 0 0 / 12%);
-  --ring: oklch(0.15 0 0);
+  /* Exam-paper institutional palette */
+  --background: #f2f1ed;
+  --foreground: #161616;
+  --card: #ffffff;
+  --card-foreground: #161616;
+  --popover: #ffffff;
+  --popover-foreground: #161616;
+  --primary: #161616;
+  --primary-foreground: #f2f1ed;
+  --secondary: #e9e7e1;
+  --secondary-foreground: #161616;
+  --muted: #e9e7e1;
+  --muted-foreground: #5a584f;
+  --accent: #161616;
+  --accent-foreground: #f2f1ed;
+  --destructive: #b3392a;
+  --destructive-foreground: #ffffff;
+  --border: #d8d6ce;
+  --input: #d8d6ce;
+  --ring: #161616;
 
-  --ivory: oklch(0.985 0 0);
-  --caramel: oklch(0.72 0.15 55);        /* warm amber accent */
-  --caramel-deep: oklch(0.62 0.19 42);   /* ember accent (eyebrows, flame) */
-  --espresso: oklch(0.1 0 0);
-  --taupe: oklch(0.45 0 0);
-  --why-us-bg: oklch(0.08 0 0);
-  --why-us-card: oklch(0.12 0 0);
+  --ivory: #f2f1ed;
+  --exam-red: #b3392a;                   /* stakes only: timers, negative marking, one CTA */
+  --caramel: #b3392a;
+  --caramel-deep: #b3392a;
+  --espresso: #161616;
+  --taupe: #5a584f;
+  --why-us-bg: #0d0d0d;
+  --why-us-card: #161616;
+
 
 
   --chart-1: oklch(0.62 0.19 42);   /* ember  */
