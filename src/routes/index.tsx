@@ -7,6 +7,7 @@ import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { cn } from "@/lib/utils";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
+import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const PracticeSimulator = lazy(() => import("@/components/PracticeSimulator"));
@@ -145,24 +146,8 @@ function Index() {
               </div>
 
               <div className="relative">
-                <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl">
-                  <div
-                    className="relative flex h-full flex-col items-center justify-center rounded-xl p-8 text-center"
-                    style={{
-                      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url(${wuAsset.url})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <div className="mb-6 grid h-16 w-16 place-items-center rounded-full border border-white/40 bg-white/10 backdrop-blur">
-                      <div className="h-0 w-0 border-y-8 border-y-transparent border-l-[14px] border-l-white pl-1" />
-                    </div>
-                    <p className="font-display text-lg font-medium text-white">Watch Intro Video</p>
-                    <p className="mt-2 text-sm text-white/80">Passing the Exam from Rimini Beach</p>
-                    <div className="mt-6 text-xs font-medium tracking-wider text-white/70">
-                      02:14 PREVIEW
-                    </div>
-                  </div>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:aspect-[5/4] lg:aspect-video">
+                  <PrepJourneyRoadmap />
                 </div>
               </div>
             </div>
