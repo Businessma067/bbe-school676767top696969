@@ -6,6 +6,7 @@ import { Bot } from "lucide-react";
 
 export const Route = createFileRoute("/tutor-exam/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/tutor-exam" }],
     meta: [
       { title: "Tutor Exam — BBE School" },
       {

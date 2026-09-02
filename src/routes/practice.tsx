@@ -13,6 +13,7 @@ export const Route = createFileRoute("/practice")({
     </RequireFullCourse>
   ),
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/practice" }],
     meta: [
       { title: "Practice — BBE School" },
       {

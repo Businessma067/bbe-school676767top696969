@@ -49,7 +49,8 @@ export const Route = createFileRoute("/mock-exams/$examId/take")({
     timed: search.timed === true || search.timed === "true",
     answerSheet: search.answerSheet !== false && search.answerSheet !== "false",
   }),
-  head: () => ({
+  head: ({ params }) => ({
+    links: [{ rel: "canonical", href: `https://bbe-school.com/mock-exams/${params.examId}/take` }],
     meta: [
       { title: "Mock Exam — In Progress — BBE School" },
       { name: "description", content: "Take a full-length WU BBE mock exam." },

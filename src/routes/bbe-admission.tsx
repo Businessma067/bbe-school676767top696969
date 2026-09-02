@@ -13,6 +13,10 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/bbe-admission")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-admission" }],
     meta: [
       {
         title:
@@ -82,7 +86,6 @@ const cycleDates: { field: string; detail: string }[] = [
 function BbeAdmissionPage() {
   return (
     <BbeExamShell
-      jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam"
       lead="Application, registration, the OSA, and the entrance exam all fit into WU Vienna’s Bachelor in Business and Economics selection process. Here is how they connect, and which details change from one cycle to the next."
       heroActions={

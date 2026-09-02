@@ -8,7 +8,9 @@ import { AuthNav } from "@/components/AuthNav";
 import { Loader2, ChevronLeft, Check } from "lucide-react";
 
 export const Route = createFileRoute("/admin/economics")({
-  head: () => ({ meta: [{ title: "Admin · Economics Cases" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/admin/economics" }],
+    meta: [{ title: "Admin · Economics Cases" }, { name: "robots", content: "noindex" }] }),
   component: AdminEconomics,
 });
 

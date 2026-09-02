@@ -6,6 +6,7 @@ import { Layers } from "lucide-react";
 
 export const Route = createFileRoute("/flashcards/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/flashcards" }],
     meta: [
       { title: "Flashcards — BBE School" },
       {

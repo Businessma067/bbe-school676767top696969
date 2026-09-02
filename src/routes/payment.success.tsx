@@ -15,7 +15,9 @@ export const Route = createFileRoute("/payment/success")({
       search.promo === true || search.promo === "1" || search.promo === "true" ? true : undefined,
   }),
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/payment/success" }],
     meta: [
+      { name: "robots", content: "noindex, nofollow" },
       { title: "Purchase confirmed — BBE School" },
       {
         name: "description",

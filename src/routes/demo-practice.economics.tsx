@@ -55,6 +55,7 @@ const isLocked = (chapter: number | "revision" | null, idx: number) =>
 
 export const Route = createFileRoute("/demo-practice/economics")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/demo-practice/economics" }],
     meta: [
       { title: "Economics Tasks — BBE School" },
       { name: "description", content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam." },

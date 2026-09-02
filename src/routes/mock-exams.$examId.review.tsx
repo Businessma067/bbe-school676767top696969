@@ -18,7 +18,8 @@ import {
 import { Check, ChevronDown, Clock, Target, TrendingUp, X } from "lucide-react";
 
 export const Route = createFileRoute("/mock-exams/$examId/review")({
-  head: () => ({
+  head: ({ params }) => ({
+    links: [{ rel: "canonical", href: `https://bbe-school.com/mock-exams/${params.examId}/review` }],
     meta: [
       { title: "Mock Exam Review — BBE School" },
       { name: "description", content: "Detailed wi2-scored review of your WU BBE mock exam." },

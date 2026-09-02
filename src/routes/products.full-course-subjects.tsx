@@ -8,6 +8,7 @@ import { RequireFullCourse } from "@/components/RequireFullCourse";
 
 export const Route = createFileRoute("/products/full-course-subjects")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/products/full-course-subjects" }],
     meta: [
       { title: "Full Course — Choose a Subject — BBE School" },
       {

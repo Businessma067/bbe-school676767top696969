@@ -12,12 +12,7 @@ import {
   Clock,
   Quote,
 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { SeoFaq, buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { CompareTable } from "@/components/CompareTable";
 import { PaymentModal } from "@/components/PaymentModal";
 import { AuthModal } from "@/components/AuthModal";
@@ -30,6 +25,10 @@ const FULL_COURSE_PRICE = 479;
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(fullCourseFaqs)) },
+    ],
+    links: [{ rel: "canonical", href: "https://bbe-school.com/products/full-course" }],
     meta: [
       { title: "Full BBE Course — Unlock Full Access" },
       {
@@ -545,22 +544,7 @@ function FullCourseProduct() {
                 Frequently asked questions
               </h2>
 
-              <Accordion type="single" collapsible className="mt-8">
-                {fullCourseFaqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`full-faq-${index}`}
-                    className="border-b-0 border-t border-border/40 first:border-t-0"
-                  >
-                    <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-foreground hover:no-underline [&[data-state=open]>svg]:text-caramel">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <SeoFaq className="mt-8" items={fullCourseFaqs} />
             </div>
           </section>
         </div>

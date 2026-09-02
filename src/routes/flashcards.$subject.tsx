@@ -48,6 +48,8 @@ export const Route = createFileRoute("/flashcards/$subject")({
     const subject = getFlashcardSubject(params.subject);
     const title = subject ? `${subject.title} Flashcards — BBE School` : "Flashcards — BBE School";
     return {
+      links: [{ rel: "canonical", href: `https://bbe-school.com/flashcards/${params.subject}` }],
+
       meta: [
         { title },
         {

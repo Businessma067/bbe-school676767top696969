@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/terms")({
   component: TermsPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/terms" }],
     meta: [
       { title: "Terms of Service & Privacy Policy · BBE School" },
       { name: "description", content: "Terms of Service and Privacy Policy for BBE School." },

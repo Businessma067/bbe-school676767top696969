@@ -5,6 +5,7 @@ import { getPaymentStatus, listMyPayments } from "@/lib/payments.functions";
 
 export const Route = createFileRoute("/payment-result")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/payment-result" }],
     meta: [
       { title: "Payment result — BBE School" },
       {

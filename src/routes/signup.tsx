@@ -9,6 +9,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const Route = createFileRoute("/signup")({
   component: SignupPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/signup" }],
     meta: [
       { title: "Sign up · BBE School" },
       { name: "description", content: "Create your BBE School account to start practicing." },

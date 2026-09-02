@@ -106,8 +106,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@BBESchool" },
       { name: "twitter:title", content: "BBE School | WU Vienna BBE Exam Prep" },
       { name: "twitter:description", content: "Interactive exam simulator for WU Vienna BBE selection. Practice under real time constraints, master the scoring logic, and track your progress." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9cb82508-9c21-494a-b668-61297a2abfd0" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/9cb82508-9c21-494a-b668-61297a2abfd0" },
+      { property: "og:image", content: "https://bbe-school.com/og-image.jpg" },
+      { name: "twitter:image", content: "https://bbe-school.com/og-image.jpg" },
+      { property: "og:site_name", content: "BBE School" },
     ],
     links: [
       { rel: "icon", type: "image/png", href: "/favicon.png?v=4" },
@@ -121,6 +122,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         // Two families only — fewer render-blocking stylesheet bytes on every page.
         href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "BBE School",
+          url: "https://bbe-school.com",
+          logo: "https://bbe-school.com/favicon.png",
+          image: "https://bbe-school.com/og-image.jpg",
+          description:
+            "Interactive exam simulator and preparation course for the WU Vienna BBE entrance exam.",
+          sameAs: ["https://twitter.com/BBESchool", "https://x.com/BBESchool"],
+        }),
       },
     ],
   }),

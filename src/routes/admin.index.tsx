@@ -8,6 +8,7 @@ import type { AdminCohortStats, AdminUserRow } from "@/lib/admin-types";
 export const Route = createFileRoute("/admin/")({
   component: AdminOverviewPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/admin" }],
     meta: [
       { title: "Admin panel · BBE School" },
       { name: "robots", content: "noindex" },

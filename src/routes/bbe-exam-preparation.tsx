@@ -11,6 +11,10 @@ import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 
 export const Route = createFileRoute("/bbe-exam-preparation")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-preparation" }],
     meta: [
       {
         title: "How to Prepare for the WU Vienna BBE Entrance Exam | BBE School",
@@ -95,7 +99,6 @@ const steps = [
 function BbeExamPreparationPage() {
   return (
     <BbeExamShell
-      jsonLd={buildFaqJsonLd(faqs)}
       h1="How to Prepare for the WU Vienna BBE Entrance Exam"
       lead="A practical preparation path: diagnose your starting point, plan by subject, practise BBE-style questions, then move into timed mocks. Example timelines below are there to adapt, not copy."
       heroActions={

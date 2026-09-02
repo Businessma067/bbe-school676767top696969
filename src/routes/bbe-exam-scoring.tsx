@@ -18,6 +18,10 @@ import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
 
 export const Route = createFileRoute("/bbe-exam-scoring")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-scoring" }],
     meta: [
       {
         title: "WU Vienna BBE Exam Scoring Explained: Points & Partial Credit | BBE School",
@@ -115,7 +119,6 @@ function BbeExamScoringPage() {
 
   return (
     <BbeExamShell
-      jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Exam Scoring Explained: Points & Partial Credit"
       lead="BBE exam points are not simply right or wrong. This page explains partial credit, how selections are scored, and what common ticking mistakes cost you."
       heroActions={

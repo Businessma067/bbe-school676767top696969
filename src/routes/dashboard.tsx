@@ -61,6 +61,7 @@ export const Route = createFileRoute("/dashboard")({
     return { tab: parseDashboardTab(search.tab) };
   },
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/dashboard" }],
     meta: [
       { title: "Dashboard · BBE School" },
       { name: "description", content: "Your BBE School practice dashboard." },

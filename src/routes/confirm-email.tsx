@@ -7,6 +7,7 @@ import { friendlyAuthError } from "@/lib/auth-ui";
 export const Route = createFileRoute("/confirm-email")({
   component: ConfirmEmailPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/confirm-email" }],
     meta: [
       { title: "Confirm email · BBE School" },
       { name: "robots", content: "noindex" },

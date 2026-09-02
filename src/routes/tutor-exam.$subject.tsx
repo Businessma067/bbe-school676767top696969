@@ -30,6 +30,7 @@ export const Route = createFileRoute("/tutor-exam/$subject")({
       ? `${subject.title} Tutor Exam — BBE School`
       : "Tutor Exam — BBE School";
     return {
+      links: [{ rel: "canonical", href: `https://bbe-school.com/tutor-exam/${params.subject}` }],
       meta: [
         { title },
         {
