@@ -81,7 +81,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         destination: product.name,
         reference,
         redirectUrl: `${origin}/payment-result`,
-        webHookUrl: `${origin}/api/public/monobank-webhook`,
+        webHookUrl: `${origin}/api/public/payment/webhook`,
       });
 
       const email = typeof context.claims.email === "string" ? context.claims.email : null;
