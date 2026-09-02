@@ -68,6 +68,7 @@ import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
 import { Route as AdminUsersIndexRouteImport } from './routes/admin.users.index'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
+import { Route as ApiPublicMonobankWebhookRouteImport } from './routes/api/public/monobank-webhook'
 import { Route as AdminUsersUserIdRouteImport } from './routes/admin.users.$userId'
 
 const TutorExamRoute = TutorExamRouteImport.update({
@@ -372,6 +373,12 @@ const MockExamsExamIdReviewRoute = MockExamsExamIdReviewRouteImport.update({
   path: '/$examId/review',
   getParentRoute: () => MockExamsRoute,
 } as any)
+const ApiPublicMonobankWebhookRoute =
+  ApiPublicMonobankWebhookRouteImport.update({
+    id: '/api/public/monobank-webhook',
+    path: '/api/public/monobank-webhook',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminUsersUserIdRoute = AdminUsersUserIdRouteImport.update({
   id: '/$userId',
   path: '/$userId',
@@ -436,6 +443,7 @@ export interface FileRoutesByFullPath {
   '/products/': typeof ProductsIndexRoute
   '/tutor-exam/': typeof TutorExamIndexRoute
   '/admin/users/$userId': typeof AdminUsersUserIdRoute
+  '/api/public/monobank-webhook': typeof ApiPublicMonobankWebhookRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
@@ -490,6 +498,7 @@ export interface FileRoutesByTo {
   '/products': typeof ProductsIndexRoute
   '/tutor-exam': typeof TutorExamIndexRoute
   '/admin/users/$userId': typeof AdminUsersUserIdRoute
+  '/api/public/monobank-webhook': typeof ApiPublicMonobankWebhookRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users': typeof AdminUsersIndexRoute
@@ -553,6 +562,7 @@ export interface FileRoutesById {
   '/products/': typeof ProductsIndexRoute
   '/tutor-exam/': typeof TutorExamIndexRoute
   '/admin/users/$userId': typeof AdminUsersUserIdRoute
+  '/api/public/monobank-webhook': typeof ApiPublicMonobankWebhookRoute
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
@@ -617,6 +627,7 @@ export interface FileRouteTypes {
     | '/products/'
     | '/tutor-exam/'
     | '/admin/users/$userId'
+    | '/api/public/monobank-webhook'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users/'
@@ -671,6 +682,7 @@ export interface FileRouteTypes {
     | '/products'
     | '/tutor-exam'
     | '/admin/users/$userId'
+    | '/api/public/monobank-webhook'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users'
@@ -733,6 +745,7 @@ export interface FileRouteTypes {
     | '/products/'
     | '/tutor-exam/'
     | '/admin/users/$userId'
+    | '/api/public/monobank-webhook'
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users/'
@@ -768,6 +781,7 @@ export interface RootRouteChildren {
   TutorExamRoute: typeof TutorExamRouteWithChildren
   ApiChatRoute: typeof ApiChatRoute
   FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
+  ApiPublicMonobankWebhookRoute: typeof ApiPublicMonobankWebhookRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1185,6 +1199,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MockExamsExamIdReviewRouteImport
       parentRoute: typeof MockExamsRoute
     }
+    '/api/public/monobank-webhook': {
+      id: '/api/public/monobank-webhook'
+      path: '/api/public/monobank-webhook'
+      fullPath: '/api/public/monobank-webhook'
+      preLoaderRoute: typeof ApiPublicMonobankWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/users/$userId': {
       id: '/admin/users/$userId'
       path: '/$userId'
@@ -1365,6 +1386,7 @@ const rootRouteChildren: RootRouteChildren = {
   TutorExamRoute: TutorExamRouteWithChildren,
   ApiChatRoute: ApiChatRoute,
   FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
+  ApiPublicMonobankWebhookRoute: ApiPublicMonobankWebhookRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

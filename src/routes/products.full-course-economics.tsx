@@ -45,7 +45,7 @@ export const Route = createFileRoute("/products/full-course-economics")({
   }),
   component: function EconomicsTasksRoute() {
     return (
-      <RequireFullCourse>
+      <RequireFullCourse minTier="full">
         <EconomicsTasks />
       </RequireFullCourse>
     );

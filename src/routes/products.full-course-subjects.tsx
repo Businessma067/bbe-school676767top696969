@@ -23,7 +23,7 @@ export const Route = createFileRoute("/products/full-course-subjects")({
   }),
   component: function FullCourseSubjectsRoute() {
     return (
-      <RequireFullCourse>
+      <RequireFullCourse minTier="full">
         <FullCourseSubjects />
       </RequireFullCourse>
     );

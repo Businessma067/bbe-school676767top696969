@@ -287,6 +287,60 @@ export type Database = {
         }
         Relationships: []
       }
+      payments: {
+        Row: {
+          amount_minor: number
+          created_at: string
+          currency_code: number
+          failure_reason: string | null
+          id: string
+          invoice_id: string
+          page_url: string | null
+          paid_at: string | null
+          product_name: string
+          product_slug: string
+          status: string
+          tier: string
+          updated_at: string
+          user_email: string | null
+          user_id: string
+        }
+        Insert: {
+          amount_minor: number
+          created_at?: string
+          currency_code?: number
+          failure_reason?: string | null
+          id?: string
+          invoice_id: string
+          page_url?: string | null
+          paid_at?: string | null
+          product_name: string
+          product_slug: string
+          status?: string
+          tier: string
+          updated_at?: string
+          user_email?: string | null
+          user_id: string
+        }
+        Update: {
+          amount_minor?: number
+          created_at?: string
+          currency_code?: number
+          failure_reason?: string | null
+          id?: string
+          invoice_id?: string
+          page_url?: string | null
+          paid_at?: string | null
+          product_name?: string
+          product_slug?: string
+          status?: string
+          tier?: string
+          updated_at?: string
+          user_email?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
       practice_sessions: {
         Row: {
           completed_at: string | null

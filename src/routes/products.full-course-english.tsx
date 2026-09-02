@@ -18,7 +18,7 @@ export const Route = createFileRoute("/products/full-course-english")({
 
 function FullCourseEnglishTasks() {
   return (
-    <RequireFullCourse>
+    <RequireFullCourse minTier="full">
       <EnglishTasksPage tier="full" backTo="/products/full-course-subjects" />
     </RequireFullCourse>
   );
