@@ -52,9 +52,10 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
           <span className="truncate font-display text-sm font-bold tracking-tight text-foreground sm:text-base">
             BBE School
           </span>
-          <span className="hidden text-[10px] font-medium uppercase tracking-[0.2em] text-taupe sm:inline">
-            WU Vienna · Prep
+          <span className="hidden text-[11px] font-medium text-taupe sm:inline">
+            Exam preparation for WU Vienna
           </span>
+
         </div>
       )}
     </Link>
