@@ -41,7 +41,7 @@ export const Route = createFileRoute("/products/full-course-economics")({
     links: [{ rel: "canonical", href: "https://bbe-school.com/products/full-course-economics" }],
     meta: [
       { title: "Economics — Full Course — BBE School" },
-      { name: "description", content: "Interactive Economics practice grouped by chapter for the WU BBE entrance exam." },
+      { name: "description", content: "Full Course Economics: chapter-by-chapter practice cases, theory reader and tactical breakdowns for the WU Vienna BBE entrance exam." },
     ],
   }),
   component: function EconomicsTasksRoute() {
