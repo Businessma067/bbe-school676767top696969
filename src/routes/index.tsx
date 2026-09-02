@@ -122,11 +122,11 @@ function Index() {
                   <Link
                     to="/products"
                     id="explore-courses"
-                    className="inline-flex flex-col items-center justify-center rounded-sm border border-[#12263A] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#1d4f7c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                    style={{ backgroundColor: "#12263A", color: "#F4F9FD" }}
+                    className="inline-flex flex-col items-center justify-center rounded-sm border border-[#2F7CC0] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#1b5f9c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                    style={{ backgroundColor: "#2F7CC0", color: "#FFFFFF" }}
                   >
                     <span>Explore Courses</span>
-                    <span className="mt-0.5 text-[11px] font-medium text-[#F4F9FD]/70">
+                    <span className="mt-0.5 text-[11px] font-medium text-white/75">
                       See all BBE School products
                     </span>
                   </Link>
@@ -344,8 +344,8 @@ function Index() {
               <div className="relative z-10 flex justify-center py-4">
                 <Link
                   to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#1d4f7c]"
-                  style={{ backgroundColor: "#12263A", color: "#F4F9FD" }}
+                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#1b5f9c]"
+                  style={{ backgroundColor: "#2F7CC0", color: "#FFFFFF" }}
                 >
                   <span>Read the full letter</span>
                   <svg
