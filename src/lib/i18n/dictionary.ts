@@ -1,3 +1,5 @@
+import { generatedDe, generatedUk } from "./generated";
+
 export type Lang = "en" | "de" | "uk";
 
 export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
@@ -10,7 +12,7 @@ export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
  * Translation dictionary keyed by the exact English source text as rendered.
  * Anything missing simply stays in English.
  */
-export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
   de: {
     // Navigation / chrome
     "Exam info": "Prüfungsinfos",
@@ -267,6 +269,12 @@ export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "10 times less": "у 10 разів менше",
     "top 10% of the class": "топ-10% курсу",
   },
+};
+
+/** Hand-written entries win over auto-generated page copy. */
+export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+  de: { ...generatedDe, ...baseDictionary.de },
+  uk: { ...generatedUk, ...baseDictionary.uk },
 };
 
 export function translate(text: string, lang: Lang): string | null {
