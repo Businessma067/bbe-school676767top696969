@@ -170,7 +170,7 @@ function Index() {
         </section>
 
         {/* FIVE-STATEMENT SIMULATION ENGINE */}
-        <section className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <section className="relative bg-[#10293f] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="relative mx-auto max-w-6xl text-center">
             <div className="text-sm font-medium text-white/55">Live product demo</div>
             <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
