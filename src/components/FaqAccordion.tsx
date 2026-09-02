@@ -47,10 +47,7 @@ export function FaqAccordion() {
   return (
     <section className="bg-ivory px-6 py-24 lg:px-8 lg:py-32">
       <div className="mx-auto max-w-3xl">
-        <p className="text-center text-[11px] font-semibold uppercase tracking-[0.32em] text-caramel">
-          Questions & Answers
-        </p>
-        <h2 className="mt-5 text-center font-display text-3xl font-bold tracking-tight text-espresso sm:text-4xl">
+        <h2 className="text-center font-display text-3xl font-semibold text-espresso sm:text-4xl">
           Frequently asked questions
         </h2>
 

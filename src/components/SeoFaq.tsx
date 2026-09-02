@@ -39,7 +39,7 @@ export function SeoFaq({
         const buttonId = `${baseId}-button-${index}`;
 
         return (
-          <div key={index} className={cn("border-b border-border/60", itemClassName)}>
+          <div key={index} className={cn("border-t border-border", itemClassName)}>
             <h3 className="m-0">
               <button
                 type="button"
@@ -48,7 +48,7 @@ export function SeoFaq({
                 aria-controls={panelId}
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 className={cn(
-                  "flex w-full items-center justify-between gap-4 py-5 text-left font-display text-base font-semibold text-foreground transition-colors hover:text-primary",
+                  "flex w-full items-center justify-between gap-4 py-5 text-left font-display text-base font-semibold text-foreground transition-colors hover:opacity-70",
                   questionClassName,
                 )}
               >
@@ -57,7 +57,7 @@ export function SeoFaq({
                   aria-hidden="true"
                   className={cn(
                     "h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200",
-                    isOpen && "rotate-180 text-primary",
+                    isOpen && "rotate-180 text-foreground",
                   )}
                 />
               </button>
