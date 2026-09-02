@@ -571,6 +571,7 @@ function FullCourseProduct() {
         onOpenChange={setPaymentOpen}
         productName="Full BBE Course"
         priceEuros={FULL_COURSE_PRICE}
+        productSlug="full-course"
       />
       <AuthModal
         open={authOpen}
