@@ -332,13 +332,20 @@ export type Database = {
       payments: {
         Row: {
           amount_minor: number
+          cancelled_at: string | null
           created_at: string
           currency_code: number
           failure_reason: string | null
+          finalized_amount_minor: number | null
+          finalized_at: string | null
+          held_at: string | null
+          hold_expires_at: string | null
           id: string
           invoice_id: string
+          last_status_modified_at: string | null
           page_url: string | null
           paid_at: string | null
+          payment_type: string
           product_name: string
           product_slug: string
           status: string
@@ -349,13 +356,20 @@ export type Database = {
         }
         Insert: {
           amount_minor: number
+          cancelled_at?: string | null
           created_at?: string
           currency_code?: number
           failure_reason?: string | null
+          finalized_amount_minor?: number | null
+          finalized_at?: string | null
+          held_at?: string | null
+          hold_expires_at?: string | null
           id?: string
           invoice_id: string
+          last_status_modified_at?: string | null
           page_url?: string | null
           paid_at?: string | null
+          payment_type?: string
           product_name: string
           product_slug: string
           status?: string
@@ -366,13 +380,20 @@ export type Database = {
         }
         Update: {
           amount_minor?: number
+          cancelled_at?: string | null
           created_at?: string
           currency_code?: number
           failure_reason?: string | null
+          finalized_amount_minor?: number | null
+          finalized_at?: string | null
+          held_at?: string | null
+          hold_expires_at?: string | null
           id?: string
           invoice_id?: string
+          last_status_modified_at?: string | null
           page_url?: string | null
           paid_at?: string | null
+          payment_type?: string
           product_name?: string
           product_slug?: string
           status?: string
