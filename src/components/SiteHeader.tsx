@@ -103,6 +103,7 @@ export function SiteHeader({
           ) : null)}
         <div className="flex shrink-0 items-center gap-1.5 sm:gap-3">
           {actions}
+          <LanguageSwitcher />
           <AuthNav />
           {mobileVisible ? (
             <div className="lg:hidden">
