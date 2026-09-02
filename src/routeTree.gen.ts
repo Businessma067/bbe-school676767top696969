@@ -71,6 +71,7 @@ import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$ex
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
 import { Route as ApiPublicMonobankWebhookRouteImport } from './routes/api/public/monobank-webhook'
 import { Route as AdminUsersUserIdRouteImport } from './routes/admin.users.$userId'
+import { Route as ApiPublicPaymentWebhookRouteImport } from './routes/api/public/payment.webhook'
 
 const TutorExamRoute = TutorExamRouteImport.update({
   id: '/tutor-exam',
@@ -390,6 +391,11 @@ const AdminUsersUserIdRoute = AdminUsersUserIdRouteImport.update({
   path: '/$userId',
   getParentRoute: () => AdminUsersRoute,
 } as any)
+const ApiPublicPaymentWebhookRoute = ApiPublicPaymentWebhookRouteImport.update({
+  id: '/api/public/payment/webhook',
+  path: '/api/public/payment/webhook',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -454,6 +460,7 @@ export interface FileRoutesByFullPath {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
+  '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -510,6 +517,7 @@ export interface FileRoutesByTo {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users': typeof AdminUsersIndexRoute
+  '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -575,6 +583,7 @@ export interface FileRoutesById {
   '/mock-exams/$examId/review': typeof MockExamsExamIdReviewRoute
   '/mock-exams/$examId/take': typeof MockExamsExamIdTakeRoute
   '/admin/users/': typeof AdminUsersIndexRoute
+  '/api/public/payment/webhook': typeof ApiPublicPaymentWebhookRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -641,6 +650,7 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users/'
+    | '/api/public/payment/webhook'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -697,6 +707,7 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users'
+    | '/api/public/payment/webhook'
   id:
     | '__root__'
     | '/'
@@ -761,6 +772,7 @@ export interface FileRouteTypes {
     | '/mock-exams/$examId/review'
     | '/mock-exams/$examId/take'
     | '/admin/users/'
+    | '/api/public/payment/webhook'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -795,6 +807,7 @@ export interface RootRouteChildren {
   ApiChatRoute: typeof ApiChatRoute
   FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
   ApiPublicMonobankWebhookRoute: typeof ApiPublicMonobankWebhookRoute
+  ApiPublicPaymentWebhookRoute: typeof ApiPublicPaymentWebhookRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1233,6 +1246,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminUsersUserIdRouteImport
       parentRoute: typeof AdminUsersRoute
     }
+    '/api/public/payment/webhook': {
+      id: '/api/public/payment/webhook'
+      path: '/api/public/payment/webhook'
+      fullPath: '/api/public/payment/webhook'
+      preLoaderRoute: typeof ApiPublicPaymentWebhookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1408,6 +1428,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiChatRoute: ApiChatRoute,
   FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
   ApiPublicMonobankWebhookRoute: ApiPublicMonobankWebhookRoute,
+  ApiPublicPaymentWebhookRoute: ApiPublicPaymentWebhookRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
