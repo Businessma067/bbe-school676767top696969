@@ -7,6 +7,64 @@ import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 
+const PROVIDER = {
+  "@type": "Organization",
+  name: "BBE School",
+  url: "https://bbe-school.com",
+} as const;
+
+/** Course structured data for the three offerings listed on this page. */
+const courseListJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Demo-Practice Package",
+    description:
+      "A free trial with 50+ starter cases across Economics, Mathematics and English with step-by-step explanations of the real WU Vienna BBE exam format.",
+    url: "https://bbe-school.com/products/demo-practice",
+    provider: PROVIDER,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://bbe-school.com/products/demo-practice",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Lite BBE Course",
+    description:
+      "A curated 950+ question database with step-by-step logic under every statement, built for steady self-paced WU Vienna BBE preparation.",
+    url: "https://bbe-school.com/products/lite-bbe-course",
+    provider: PROVIDER,
+    offers: {
+      "@type": "Offer",
+      price: "279",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://bbe-school.com/products/lite-bbe-course",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Full BBE Course",
+    description:
+      "The complete WU Vienna BBE prep system: 1500+ practice cases, timing and stress modules, full mock exams, a study assistant and detailed task breakdowns.",
+    url: "https://bbe-school.com/products/full-course",
+    provider: PROVIDER,
+    offers: {
+      "@type": "Offer",
+      price: "479",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url: "https://bbe-school.com/products/full-course",
+    },
+  },
+];
+
 export const Route = createFileRoute("/products/")({
   head: () => ({
     links: [{ rel: "canonical", href: "https://bbe-school.com/products" }],
