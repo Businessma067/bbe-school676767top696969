@@ -77,34 +77,34 @@
   --radius: 0.625rem;
 
   /* Exam-paper institutional palette */
-  --background: #f2f1ed;
-  --foreground: #161616;
+  --background: #e9f1f8;
+  --foreground: #12263a;
   --card: #ffffff;
-  --card-foreground: #161616;
+  --card-foreground: #12263a;
   --popover: #ffffff;
-  --popover-foreground: #161616;
-  --primary: #161616;
-  --primary-foreground: #f2f1ed;
-  --secondary: #e9e7e1;
-  --secondary-foreground: #161616;
-  --muted: #e9e7e1;
-  --muted-foreground: #5a584f;
-  --accent: #161616;
-  --accent-foreground: #f2f1ed;
+  --popover-foreground: #12263a;
+  --primary: #1d4f7c;
+  --primary-foreground: #f4f9fd;
+  --secondary: #dbe8f4;
+  --secondary-foreground: #12263a;
+  --muted: #dbe8f4;
+  --muted-foreground: #56708a;
+  --accent: #1d4f7c;
+  --accent-foreground: #f4f9fd;
   --destructive: #b3392a;
   --destructive-foreground: #ffffff;
-  --border: #d8d6ce;
-  --input: #d8d6ce;
-  --ring: #161616;
+  --border: #cfdfee;
+  --input: #cfdfee;
+  --ring: #1d4f7c;
 
-  --ivory: #f2f1ed;
+  --ivory: #f4f9fd;
   --exam-red: #b3392a;                   /* stakes only: timers, negative marking, one CTA */
-  --caramel: #d8d6ce;                    /* quiet hairline tone (legacy token) */
-  --caramel-deep: #b3392a;
-  --espresso: #161616;
-  --taupe: #5a584f;
-  --why-us-bg: #0d0d0d;
-  --why-us-card: #161616;
+  --caramel: #cfdfee;                    /* quiet hairline tone (legacy token) */
+  --caramel-deep: #1d4f7c;
+  --espresso: #12263a;
+  --taupe: #56708a;
+  --why-us-bg: #10293f;
+  --why-us-card: #17364f;
 
 
 
