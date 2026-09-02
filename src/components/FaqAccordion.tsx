@@ -1,11 +1,6 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { SeoFaq } from "@/components/SeoFaq";
 
-const faqs = [
+export const homepageFaqs = [
   {
     question: "Are the tasks and mock tests similar to the real exam?",
     answer:
@@ -59,22 +54,12 @@ export function FaqAccordion() {
           Frequently asked questions
         </h2>
 
-        <Accordion type="single" collapsible className="mt-12">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="border-b-0 border-t border-border/40 first:border-t-0"
-            >
-              <AccordionTrigger className="py-5 text-left font-display text-lg font-semibold text-espresso hover:no-underline [&[data-state=open]>svg]:text-caramel">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-base leading-relaxed text-taupe">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <SeoFaq
+          className="mt-12"
+          items={homepageFaqs}
+          questionClassName="text-lg text-espresso"
+          answerClassName="text-base text-taupe"
+        />
       </div>
     </section>
   );
