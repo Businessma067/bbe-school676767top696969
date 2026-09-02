@@ -26,6 +26,7 @@ import { ExamStartAnswerMode } from "@/components/mock-exam/ExamStartAnswerMode"
 
 export const Route = createFileRoute("/mock-exams/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/mock-exams" }],
     meta: [
       { title: "Mock Exams — BBE School" },
       {

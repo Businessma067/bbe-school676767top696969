@@ -8,7 +8,9 @@ import { friendlyAuthError } from "@/lib/auth-ui";
 export const Route = createFileRoute("/auth")({
   component: AuthPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/auth" }],
     meta: [
+      { name: "robots", content: "noindex, nofollow" },
       { title: "Sign in · BBE School" },
       { name: "description", content: "Sign in to BBE School to access your WU Vienna BBE prep." },
     ],

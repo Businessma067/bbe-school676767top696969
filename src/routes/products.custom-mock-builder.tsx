@@ -51,6 +51,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/custom-mock-builder")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/products/custom-mock-builder" }],
     meta: [
       { title: "Custom Mock Builder — BBE School" },
       {

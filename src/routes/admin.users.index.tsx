@@ -8,6 +8,7 @@ import type { AdminUserRow } from "@/lib/admin-types";
 export const Route = createFileRoute("/admin/users/")({
   component: AdminUsersPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/admin/users" }],
     meta: [
       { title: "Users · Admin · BBE School" },
       { name: "robots", content: "noindex" },

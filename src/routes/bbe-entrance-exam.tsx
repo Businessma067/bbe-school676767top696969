@@ -27,6 +27,7 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/bbe-entrance-exam")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-entrance-exam" }],
     meta: [
       {
         title: "WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide | BBE School",

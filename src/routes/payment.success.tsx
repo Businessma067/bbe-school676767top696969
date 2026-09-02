@@ -9,6 +9,7 @@ type SuccessSearch = {
 
 export const Route = createFileRoute("/payment/success")({
   validateSearch: (search: Record<string, unknown>): SuccessSearch => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/payment/success" }],
     product: typeof search.product === "string" ? search.product : undefined,
     href: typeof search.href === "string" ? search.href : undefined,
     promo:
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/payment/success")({
   }),
   head: () => ({
     meta: [
+      { name: "robots", content: "noindex, nofollow" },
       { title: "Purchase confirmed — BBE School" },
       {
         name: "description",

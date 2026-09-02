@@ -11,6 +11,7 @@ import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 
 export const Route = createFileRoute("/bbe-exam-preparation")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-preparation" }],
     meta: [
       {
         title: "How to Prepare for the WU Vienna BBE Entrance Exam | BBE School",

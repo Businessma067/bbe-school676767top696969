@@ -3,6 +3,7 @@ import { EnglishTasksPage } from "@/components/EnglishTasksPage";
 
 export const Route = createFileRoute("/demo-practice/english")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/demo-practice/english" }],
     meta: [
       { title: "English Tasks — BBE School" },
       {

@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/features/answer-sheet")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/features/answer-sheet" }],
     meta: [
       { title: "Official Answer Sheet Simulator — BBE School" },
       {

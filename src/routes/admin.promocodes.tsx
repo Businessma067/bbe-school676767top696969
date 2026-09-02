@@ -6,6 +6,7 @@ import { adminListPromocodes, type AdminPromocodeRow } from "@/lib/promo.functio
 export const Route = createFileRoute("/admin/promocodes")({
   component: AdminPromocodesPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/admin/promocodes" }],
     meta: [
       { title: "Promocodes · Admin · BBE School" },
       { name: "robots", content: "noindex" },

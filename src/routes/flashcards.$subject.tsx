@@ -77,6 +77,7 @@ function buildDeck(
     sectionId === "all" ? sections : sections.filter((s) => s.id === sectionId);
   return filtered.flatMap((s) =>
     s.cards.map((c) => ({
+    links: [{ rel: "canonical", href: `https://bbe-school.com/flashcards/${params.subject}` }],
       ...c,
       sectionId: s.id,
       sectionTitle: s.title,

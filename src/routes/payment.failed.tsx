@@ -5,6 +5,7 @@ type FailedSearch = { reason?: string };
 
 export const Route = createFileRoute("/payment/failed")({
   validateSearch: (search: Record<string, unknown>): FailedSearch => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/payment/failed" }],
     reason: typeof search.reason === "string" ? search.reason : undefined,
   }),
   head: () => ({

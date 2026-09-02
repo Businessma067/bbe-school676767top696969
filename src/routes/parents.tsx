@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/parents")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/parents" }],
     meta: [
       { title: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission | BBE School" },
       {

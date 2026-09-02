@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/demo-practice" }],
     meta: [
       { title: "Demo Practice — BBE School" },
       {

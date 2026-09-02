@@ -17,6 +17,7 @@ import {
 
 export const Route = createFileRoute("/bbe-mathematics")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-mathematics" }],
     meta: [
       {
         title: "WU Vienna BBE Mathematics: Topics, Syllabus & Practice | BBE School",

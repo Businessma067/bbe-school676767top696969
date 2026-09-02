@@ -9,6 +9,7 @@ import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-ac
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
       { title: "Products — BBE School" },
       {

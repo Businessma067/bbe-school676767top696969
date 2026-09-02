@@ -13,6 +13,7 @@ import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/
 
 export const Route = createFileRoute("/bbe-economics-english")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-economics-english" }],
     meta: [
       {
         title: "WU Vienna BBE Economics & English: What to Study | BBE School",

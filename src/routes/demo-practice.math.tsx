@@ -3,6 +3,7 @@ import { MathTasksPage } from "@/components/MathTasksPage";
 
 export const Route = createFileRoute("/demo-practice/math")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/demo-practice/math" }],
     meta: [
       { title: "Math Tasks — BBE School" },
       {

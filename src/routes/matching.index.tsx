@@ -6,6 +6,7 @@ import { Link2 } from "lucide-react";
 
 export const Route = createFileRoute("/matching/")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/matching" }],
     meta: [
       { title: "Matching — BBE School" },
       {

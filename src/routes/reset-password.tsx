@@ -7,6 +7,7 @@ import { friendlyAuthError } from "@/lib/auth-ui";
 export const Route = createFileRoute("/reset-password")({
   component: ResetPasswordPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/reset-password" }],
     meta: [
       { title: "Set new password · BBE School" },
       { name: "description", content: "Set a new password." },

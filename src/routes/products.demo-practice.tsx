@@ -12,6 +12,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/products/demo-practice")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/products/demo-practice" }],
     meta: [
       { title: "Demo-Practice Package — BBE School" },
       {

@@ -18,6 +18,7 @@ import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
 
 export const Route = createFileRoute("/bbe-exam-scoring")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-scoring" }],
     meta: [
       {
         title: "WU Vienna BBE Exam Scoring Explained: Points & Partial Credit | BBE School",

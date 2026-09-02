@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/bbe-admission")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-admission" }],
     meta: [
       {
         title:

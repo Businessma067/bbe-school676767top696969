@@ -8,6 +8,7 @@ import { signInWithGoogle } from "@/lib/google-auth";
 export const Route = createFileRoute("/login")({
   component: LoginPage,
   head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/login" }],
     meta: [
       { title: "Log in · BBE School" },
       { name: "description", content: "Log in to BBE School." },

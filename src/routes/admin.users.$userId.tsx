@@ -8,7 +8,8 @@ import { ChevronLeft, Download } from "lucide-react";
 
 export const Route = createFileRoute("/admin/users/$userId")({
   component: AdminUserDetailPage,
-  head: () => ({
+  head: ({ params }) => ({
+    links: [{ rel: "canonical", href: `https://bbe-school.com/admin/users/${params.userId}` }],
     meta: [
       { title: "User detail · Admin · BBE School" },
       { name: "robots", content: "noindex" },
