@@ -25,6 +25,9 @@ const FULL_COURSE_PRICE = 479;
 
 export const Route = createFileRoute("/products/full-course")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(fullCourseFaqs)) },
+    ],
     links: [{ rel: "canonical", href: "https://bbe-school.com/products/full-course" }],
     meta: [
       { title: "Full BBE Course — Unlock Full Access" },

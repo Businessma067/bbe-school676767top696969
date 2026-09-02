@@ -11,6 +11,9 @@ import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(liteFaqs)) },
+    ],
     links: [{ rel: "canonical", href: "https://bbe-school.com/products/lite-bbe-course" }],
     meta: [
       { title: "Light BBE Course — BBE School" },
