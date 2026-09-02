@@ -8,7 +8,6 @@ import { MobileNav } from "@/components/MobileNav";
 import { navItemsForContext, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { cn } from "@/lib/utils";
-import bbeLogo from "@/assets/bbe-logo.png.asset.json";
 
 type SiteHeaderProps = {
   /** Content shown to the left of AuthNav (e.g. back link). */
@@ -29,14 +28,21 @@ type SiteHeaderProps = {
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
     <Link to="/" className="group flex min-w-0 shrink items-center gap-2 sm:gap-3">
-      <img
-        src={bbeLogo.url}
-        alt="BBE School logo"
+      <div
         className={cn(
-          "shrink-0 rounded-xl object-cover shadow-md ring-1 ring-border/40 transition-transform group-hover:scale-105",
+          "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
           compact ? "h-9 w-9" : "h-10 w-10",
         )}
-      />
+      >
+        <span
+          className={cn(
+            "font-display font-bold leading-none tracking-tight text-primary-foreground",
+            compact ? "text-xs" : "text-sm",
+          )}
+        >
+          BBE
+        </span>
+      </div>
       {compact ? (
         <span className="truncate font-display text-sm font-bold tracking-tight text-foreground">
           BBE School
