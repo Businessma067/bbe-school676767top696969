@@ -13,6 +13,9 @@ import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/
 
 export const Route = createFileRoute("/bbe-economics-english")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
     links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-economics-english" }],
     meta: [
       {
@@ -64,7 +67,6 @@ const faqs = [
 function BbeEconomicsEnglishPage() {
   return (
     <BbeExamShell
-      jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Economics & English: What to Study"
       lead="Economics & Business and English each play a distinct role on the BBE entrance exam. This guide covers what WU tests, what to study, and how to practice without wasting time."
       heroActions={

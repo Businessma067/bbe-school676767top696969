@@ -27,6 +27,9 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/bbe-entrance-exam")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
     links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-entrance-exam" }],
     meta: [
       {
@@ -198,7 +201,6 @@ const mistakes = [
 function BbeEntranceExamHubPage() {
   return (
     <BbeExamShell
-      jsonLd={faqJsonLd}
       h1="WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide"
       lead="What is the WU Vienna BBE entrance exam, and what should you expect? This hub walks through format, subjects, scoring, difficulty, and preparation, then points you toward deeper guides and free practice."
       heroActions={

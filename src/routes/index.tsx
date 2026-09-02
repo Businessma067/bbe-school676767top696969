@@ -5,13 +5,37 @@ import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
-import { FaqAccordion } from "@/components/FaqAccordion";
+import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
+import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const PracticeSimulator = lazy(() => import("@/components/PracticeSimulator"));
 const MockBuilderSimulator = lazy(() => import("@/components/MockBuilderSimulator"));
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://bbe-school.com/" }],
+    meta: [
+      { title: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      {
+        name: "description",
+        content:
+          "Prepare for the WU Vienna BBE entrance exam with 1500+ realistic cases, timed mock exams and step-by-step explanations for Economics, Mathematics and English.",
+      },
+      { property: "og:title", content: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
+      {
+        property: "og:description",
+        content:
+          "Practice the real BBE exam format: True/False cases, partial-credit scoring, timed mocks and tactical explanations.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://bbe-school.com/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(homepageFaqs)) },
+    ],
+  }),
   component: Index,
 });
 

@@ -17,6 +17,9 @@ import {
 
 export const Route = createFileRoute("/bbe-mathematics")({
   head: () => ({
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
+    ],
     links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-mathematics" }],
     meta: [
       {
@@ -72,7 +75,6 @@ const faqs = [
 function BbeMathematicsPage() {
   return (
     <BbeExamShell
-      jsonLd={buildFaqJsonLd(faqs)}
       h1="WU Vienna BBE Mathematics: Topics, Syllabus & Practice"
       lead="Mathematics is one of the three BBE entrance exam sections. Here is what WU tests, why the section tends to run long, and how to work through the syllabus topic by topic."
       heroActions={
