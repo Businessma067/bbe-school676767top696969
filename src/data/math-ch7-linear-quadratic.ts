@@ -4,6 +4,9 @@
  * Explanations follow the MATH 13.18 rhythm (shared overview + letter-local steps).
  */
 
+/** Sync marker: Chapter 7 bank on Lovable main (2026-09-02). */
+
+
 import type { MathTask } from "@/data/math-chapters";
 import ch7Cases from "@/data/math-ch7-linear-quadratic.json";
 

@@ -14,7 +14,7 @@ import {
   MATH_CH5_LINEAR_EQUATIONS,
   MATH_CH5_SUBSECTIONS,
 } from "@/data/math-ch5-linear-equations";
-import { MATH_CH7_LINEAR_QUADRATIC } from "@/data/math-ch7-linear-quadratic";
+import { MATH_CH7_LINEAR_QUADRATIC } from "@/data/math-ch7-linear-quadratic"; // Lovable sync: ch7 practice bank
 import {
   MATH_CH8_POWER_FUNCTIONS,
   MATH_CH8_SUBSECTIONS,
