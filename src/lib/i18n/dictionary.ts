@@ -1,4 +1,5 @@
 import { generatedDe, generatedUk } from "./generated";
+import { extraDe, extraUk } from "./extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -273,16 +274,31 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
 /** Hand-written entries win over auto-generated page copy. */
 export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
-  de: { ...generatedDe, ...baseDictionary.de },
-  uk: { ...generatedUk, ...baseDictionary.uk },
+  de: { ...generatedDe, ...extraDe, ...baseDictionary.de },
+  uk: { ...generatedUk, ...extraUk, ...baseDictionary.uk },
 };
+
+/** Same tables keyed by whitespace-collapsed text, for multi-line JSX nodes. */
+const collapsedDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+  de: {},
+  uk: {},
+};
+for (const lang of ["de", "uk"] as const) {
+  for (const [key, value] of Object.entries(dictionary[lang])) {
+    const collapsed = key.replace(/\s+/g, " ").trim();
+    if (collapsed && !(collapsed in collapsedDictionary[lang])) {
+      collapsedDictionary[lang][collapsed] = value;
+    }
+  }
+}
 
 export function translate(text: string, lang: Lang): string | null {
   if (lang === "en") return null;
   const table = dictionary[lang];
   const trimmed = text.trim();
   if (!trimmed) return null;
-  const hit = table[trimmed];
+  const hit =
+    table[trimmed] ?? collapsedDictionary[lang][trimmed.replace(/\s+/g, " ")];
   if (!hit) return null;
   const [, lead = "", , trail = ""] = /^(\s*)([\s\S]*?)(\s*)$/.exec(text) ?? [];
   return `${lead}${hit}${trail}`;
