@@ -1,0 +1,14 @@
+[
+  {
+    "file": "textbook\\output\\_rev\\ch8\\01_10.json",
+    "id": "math-8-1",
+    "letter": "D",
+    "idx": 3,
+    "words": 103,
+    "statement": "Side $1$ cm gives mass $5$ grams.",
+    "key": true,
+    "header": "**D.** → True\n\nAt side $1$ every power is $1$, so the mass equals the coefficient. The overview's table already reads $M(1)=5$. That is a quick check on the printed $5$, not a new cube.\n\n**1.** A solver who still cubed $5$ would land on $125$ and confuse this letter with B. The unit side is where coefficient and mass coincide.\n\n**2.** Side $1$ cm is the smallest of the four standard sides in Part 3. It is also the one entry a density-first reader is most likely to overwrite by cubing $5$.\n\nThe recovered mass at $1$ cm is $5$, so the statement is True.",
+    "expl": "**D.** → True\n\nAt side $1$ every power is $1$, so the mass equals the coefficient. The overview's table already reads $M(1)=5$. That is a quick check on the printed $5$, not a new cube.\n\n**1.** A solver who still cubed $5$ would land on $125$ and confuse this letter with B. The unit side is where coefficient and mass coincide.\n\n**2.** Side $1$ cm is the smallest of the four standard sides in Part 3. It is also the one entry a density-first reader is most likely to overwrite by cubing $5$.\n\nThe recovered mass at $1$ cm is $5$, so the statement is True.",
+    "overview_head": "Resin blocks obey $M(s)=5s^{3}$ grams for side length $s>0$ centimetres.\n\n**Part 1: Building the model.**\n\nLet $s$ = side length in centimetres, $M$ = mass in grams. The rule $M(s)=5s^{3}$ is a power function with exponent $3$ and coefficient $5$ on the domain $s>0$, and the coefficient already carries the density of the resin. Two kinds of question follow from it: levels, which need the coefficie"
+  }
+]\n

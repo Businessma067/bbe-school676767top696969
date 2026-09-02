@@ -1,0 +1,1392 @@
+{
+  "counts": [
+    {
+      "key": "math-1-41:C",
+      "w": 69
+    },
+    {
+      "key": "math-1-42:A",
+      "w": 65
+    },
+    {
+      "key": "math-1-42:C",
+      "w": 58
+    },
+    {
+      "key": "math-1-23:C",
+      "w": 63
+    },
+    {
+      "key": "math-1-24:B",
+      "w": 62
+    },
+    {
+      "key": "math-1-27:D",
+      "w": 60
+    },
+    {
+      "key": "math-5-30:D",
+      "w": 65
+    },
+    {
+      "key": "math-5-35:A",
+      "w": 66
+    },
+    {
+      "key": "math-5-38:A",
+      "w": 60
+    },
+    {
+      "key": "math-5-38:B",
+      "w": 63
+    },
+    {
+      "key": "math-5-45:D",
+      "w": 69
+    },
+    {
+      "key": "math-5-45:E",
+      "w": 70
+    },
+    {
+      "key": "math-5-48:B",
+      "w": 55
+    },
+    {
+      "key": "math-5-49:B",
+      "w": 63
+    },
+    {
+      "key": "math-5-50:B",
+      "w": 68
+    },
+    {
+      "key": "math-5-51:B",
+      "w": 61
+    },
+    {
+      "key": "math-5-53:D",
+      "w": 67
+    },
+    {
+      "key": "math-5-57:B",
+      "w": 70
+    },
+    {
+      "key": "math-5-57:E",
+      "w": 63
+    },
+    {
+      "key": "math-5-60:D",
+      "w": 67
+    },
+    {
+      "key": "math-8-25:E",
+      "w": 70
+    },
+    {
+      "key": "math-8-40:B",
+      "w": 75
+    },
+    {
+      "key": "math-8-40:D",
+      "w": 62
+    },
+    {
+      "key": "math-8-45:C",
+      "w": 69
+    },
+    {
+      "key": "math-8-46:B",
+      "w": 69
+    },
+    {
+      "key": "math-8-53:B",
+      "w": 66
+    },
+    {
+      "key": "math-8-55:E",
+      "w": 69
+    },
+    {
+      "key": "math-8-56:C",
+      "w": 65
+    },
+    {
+      "key": "math-8-57:C",
+      "w": 56
+    },
+    {
+      "key": "math-8-58:B",
+      "w": 73
+    },
+    {
+      "key": "math-8-62:C",
+      "w": 60
+    },
+    {
+      "key": "math-8-63:D",
+      "w": 68
+    },
+    {
+      "key": "math-8-68:A",
+      "w": 53
+    },
+    {
+      "key": "math-8-69:B",
+      "w": 52
+    },
+    {
+      "key": "math-8-76:A",
+      "w": 57
+    },
+    {
+      "key": "math-8-77:C",
+      "w": 67
+    },
+    {
+      "key": "math-8-79:D",
+      "w": 66
+    },
+    {
+      "key": "math-8-80:A",
+      "w": 58
+    },
+    {
+      "key": "math-8-83:B",
+      "w": 62
+    },
+    {
+      "key": "math-8-85:A",
+      "w": 68
+    },
+    {
+      "key": "math-8-86:D",
+      "w": 70
+    },
+    {
+      "key": "math-8-87:C",
+      "w": 52
+    },
+    {
+      "key": "math-8-96:E",
+      "w": 57
+    },
+    {
+      "key": "math-11-105:D",
+      "w": 61
+    },
+    {
+      "key": "math-11-112:C",
+      "w": 61
+    },
+    {
+      "key": "math-11-113:B",
+      "w": 61
+    },
+    {
+      "key": "math-11-113:D",
+      "w": 71
+    },
+    {
+      "key": "math-11-120:D",
+      "w": 72
+    },
+    {
+      "key": "math-11-123:C",
+      "w": 66
+    },
+    {
+      "key": "math-11-30:E",
+      "w": 66
+    },
+    {
+      "key": "math-11-35:A",
+      "w": 64
+    },
+    {
+      "key": "math-11-39:B",
+      "w": 70
+    },
+    {
+      "key": "math-11-59:B",
+      "w": 64
+    }
+  ],
+  "issues": [],
+  "dump": [
+    {
+      "key": "math-1-41:C",
+      "w": 69,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**How many students take at least one language?** The 12 students taking both were counted twice, once among the 34 and once among the 28, so one copy has to come off:\n\n$$|A\\cup B|=34+28-12=50.$$\n\n**How many take just one?** Spanish minus the overlap is $34-12=22$; French minus the overlap is $28-12=16$. Together with the 12 who take both that is $22+12+16=50$, the same total as above, a good sign the pieces are right.\n\n**How many take nothing?** The cohort has 60 students and 50 of them sit inside the union, so $60-50=10$ take neither language.\n\n**Could the overlap ever beat the union?** No. Taking both courses is a stronger requirement than taking at least one, so those 12 students are part of the 50 and can never outnumber them.",
+      "current_body": "Neither is the cohort minus the union: $60-50=10$. The overview's three-region rebuild $22+12+16=50$ confirms the leftover. Subtracting both headlines from $60$ without restoring the overlap would overcount \"neither.\" Treating the $34$ Spanish and $28$ French counts as disjoint would subtract $62$ from $60$ and invent a negative remainder. Ten leftover seats is what a union of $50$ leaves; a larger neither figure would need fewer language-takers than that $50$.",
+      "new_body": "Neither is the cohort minus the union: $60-50=10$. The overview's three-region rebuild $22+12+16=50$ confirms the leftover. Subtracting both headlines from $60$ without restoring the overlap would overcount \"neither.\" Treating the $34$ Spanish and $28$ French counts as disjoint would subtract $62$ from $60$ and invent a negative remainder. Ten leftover seats is what a union of $50$ leaves; a larger neither figure would need fewer language-takers than that $50$.",
+      "displays_overview": [
+        "$$|A\\cup B|=34+28-12=50.$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-1-42:A",
+      "w": 65,
+      "header": "**A.** → True",
+      "listed_header": "**A.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "Twenty members use the pool and eighteen use the sauna, but that does not describe 38 separate people: the five who use both facilities show up in each count. Removing that duplication is exactly what **inclusion-exclusion** does,\n\n$$|A\\cup B|=20+18-5=33,$$\n\nso 33 members use at least one facility.\n\nSplitting those 33 shows where they sit: $20-5=15$ use only the pool, $5$ use both, and $18-5=13$ use only the sauna. The pieces reconcile, since $15+5+13=33$.\n\nThe gym has 50 members altogether, so $50-33=17$ use neither facility, and the whole membership is now accounted for: $15+5+13+17=50$.\n\nFinally, because the five \"both\" members are themselves part of the 33, the intersection is always the **smaller** of those two counts.",
+      "current_body": "Inclusion-exclusion on the gym counts: $20+18-5=33$. The five \"both\" members were in each headline, so one copy comes off. Adding $20+18$ without subtracting inflates the union to $38$. That $38$ is two copies of the overlap, not $33$ distinct members. Every later region in this task is built from the $33$; dropping the minus-$5$ step would make the union, and then the leftover, too large.",
+      "new_body": "Inclusion-exclusion on the gym counts: $20+18-5=33$. The five \"both\" members were in each headline, so one copy comes off. Adding $20+18$ without subtracting inflates the union to $38$. That $38$ is two copies of the overlap, not $33$ distinct members. Every later region in this task is built from the $33$; dropping the minus-$5$ step would make the union, and then the leftover, too large.",
+      "displays_overview": [
+        "$$|A\\cup B|=20+18-5=33,$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-1-42:C",
+      "w": 58,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "Twenty members use the pool and eighteen use the sauna, but that does not describe 38 separate people: the five who use both facilities show up in each count. Removing that duplication is exactly what **inclusion-exclusion** does,\n\n$$|A\\cup B|=20+18-5=33,$$\n\nso 33 members use at least one facility.\n\nSplitting those 33 shows where they sit: $20-5=15$ use only the pool, $5$ use both, and $18-5=13$ use only the sauna. The pieces reconcile, since $15+5+13=33$.\n\nThe gym has 50 members altogether, so $50-33=17$ use neither facility, and the whole membership is now accounted for: $15+5+13+17=50$.\n\nFinally, because the five \"both\" members are themselves part of the 33, the intersection is always the **smaller** of those two counts.",
+      "current_body": "Neither is $50-33=17$. Out of $50$ members, $33$ use a facility, leaving $17$ who use neither. The four-region check $15+5+13+17=50$ confirms the leftover. Subtracting pool plus sauna from $50$ without restoring the five \"both\" members would overcount the unused lockers. Seventeen unused memberships is the complement of that $33$-person union, not a second walk through the gym list.",
+      "new_body": "Neither is $50-33=17$. Out of $50$ members, $33$ use a facility, leaving $17$ who use neither. The four-region check $15+5+13+17=50$ confirms the leftover. Subtracting pool plus sauna from $50$ without restoring the five \"both\" members would overcount the unused lockers. Seventeen unused memberships is the complement of that $33$-person union, not a second walk through the gym list.",
+      "displays_overview": [
+        "$$|A\\cup B|=20+18-5=33,$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-1-23:C",
+      "w": 63,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "Complements inside $U=\\{1,\\ldots,10\\}$ with $A=\\{1,\\ldots,5\\}$ and $B=\\{4,\\ldots,8\\}$.\n\nFirst the overlap and the complements:\n\n$$A\\cap B=\\{4,5\\},\\quad A^c=\\{6,7,8,9,10\\},\\quad B^c=\\{1,2,3,9,10\\}.$$\n\nUnion of $A$ and $B$ is $\\{1,\\ldots,8\\}$, so\n\n$$(A\\cup B)^c=\\{9,10\\}=A^c\\cap B^c,$$\n\nwhich is De Morgan’s first law. Removing the overlap from $U$ gives\n\n$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}=A^c\\cup B^c,$$\n\nDe Morgan’s second law. False claims either pad the intersection with $6$ or scramble which numbers belong in the complement of the intersection.",
+      "current_body": "Second identity: $(A\\cap B)^c=A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}$. Escaping an intersection takes only escaping one set, so the union of complements is large. Copying $(A\\cup B)^c$ here would undercount to $\\{9,10\\}$. Those two leftovers are the numbers that miss both $A$ and $B$, a much stricter filter. Eight numbers sit in the complement of the overlap; collapsing De Morgan's two identities would drop six of them.",
+      "new_body": "Second identity: $(A\\cap B)^c=A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}$. Escaping an intersection takes only escaping one set, so the union of complements is large. Copying $(A\\cup B)^c$ here would undercount to $\\{9,10\\}$. Those two leftovers are the numbers that miss both $A$ and $B$, a much stricter filter. Eight numbers sit in the complement of the overlap; collapsing De Morgan's two identities would drop six of them.",
+      "displays_overview": [
+        "$$A\\cap B=\\{4,5\\},\\quad A^c=\\{6,7,8,9,10\\},\\quad B^c=\\{1,2,3,9,10\\}.$$",
+        "$$(A\\cup B)^c=\\{9,10\\}=A^c\\cap B^c,$$",
+        "$$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}=A^c\\cup B^c,$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-1-24:B",
+      "w": 62,
+      "header": "**B.** → True",
+      "listed_header": "**B.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "An ordered pair $(a,b)$ lands in $A\\times B$ only when the **first** slot is from $A=\\{1,2\\}$ and the **second** from $B=\\{x,y,z\\}$.\n\nList them:\n\n$$A\\times B=\\{(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)\\}.$$\n\nSix pairs, matching $|A|\\cdot|B|=2\\cdot 3=6$.\n\nReverse the factors and the pairs flip roles:\n\n$$B\\times A=\\{(x,1),(x,2),(y,1),(y,2),(z,1),(z,2)\\}.$$\n\nSame count $3\\cdot 2=6$, but different ordered pairs, so the sets $A\\times B$ and $B\\times A$ are unequal. In particular $(x,2)$ has a letter first, which $A\\times B$ never allows.",
+      "current_body": "$(2,x)$ has first slot in $A=\\{1,2\\}$ and second in $B=\\{x,y,z\\}$. Both tests succeed, and the pair appears on the overview's list. Swapping the slots would exit this product: $(x,2)$ has a letter first, which $A\\times B$ never allows. A solver who treated pairs as unordered would keep both orientations and miss that only one of them sits on the listed $A\\times B$.",
+      "new_body": "$(2,x)$ has first slot in $A=\\{1,2\\}$ and second in $B=\\{x,y,z\\}$. Both tests succeed, and the pair appears on the overview's list. Swapping the slots would exit this product: $(x,2)$ has a letter first, which $A\\times B$ never allows. A solver who treated pairs as unordered would keep both orientations and miss that only one of them sits on the listed $A\\times B$.",
+      "displays_overview": [
+        "$$A\\times B=\\{(1,x),(1,y),(1,z),(2,x),(2,y),(2,z)\\}.$$",
+        "$$B\\times A=\\{(x,1),(x,2),(y,1),(y,2),(z,1),(z,2)\\}.$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-1-27:D",
+      "w": 60,
+      "header": "**D.** → False",
+      "listed_header": "**D.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "A coverage assignment is an ordered pair $(\\text{rep},\\text{account})$ in the Cartesian product $\\text{Reps}\\times\\text{Accounts}$.\n\n**Product rule.** With $5$ reps and $8$ accounts there are\n\n$$5\\cdot 8=40$$\n\npossible pairs. Hiring a sixth rep raises the count to $6\\cdot 8=48$.\n\n**Order is the point.** First coordinate = rep, second = account. Swapping Maria with Account 3 changes the pair and usually exits the product entirely. Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$, never the reverse.\n\n**Zero accounts.** For any number $r$ of reps, $r\\cdot 0=0$: without a second coordinate there is no assignment.",
+      "current_body": "Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$. The claim swaps both tests. That swapped reading would put Maria among the accounts, which is the same slot-reversal as letter B. The pair (Maria, Account 3) is in the product only under the original slot tests. Requiring Maria $\\in$ Accounts would need the coordinates flipped, and this coverage assignment does not flip them.",
+      "new_body": "Membership $(r,a)\\in\\text{Reps}\\times\\text{Accounts}$ means $r\\in\\text{Reps}$ and $a\\in\\text{Accounts}$. The claim swaps both tests. That swapped reading would put Maria among the accounts, which is the same slot-reversal as letter B. The pair (Maria, Account 3) is in the product only under the original slot tests. Requiring Maria $\\in$ Accounts would need the coordinates flipped, and this coverage assignment does not flip them.",
+      "displays_overview": [
+        "$$5\\cdot 8=40$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-30:D",
+      "w": 65,
+      "header": "**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.**  (true)",
+      "listed_header": "**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = price of Product X, $y$ = price of Product Y.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: North.** That observation becomes:\n\n$$\n85x + 70y = 4145\n$$\n\n**2. Translate: South.** That observation becomes:\n\n$$\n55x + 95y = 3875\n$$\n\n**Part 2: The model.**\n\n$$\n85x + 70y = 4145 \\tag{1}\n$$\n\n$$\n55x + 95y = 3875 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** North and South are used to derive the prices, since they reconcile with each other.\n\n**2.** Divide by 5: $17x + 14y = 829$; $11x + 19y = 775$.\n\n**3.** Multiply by 19 and 14: $323x + 266y = 15751$; $154x + 266y = 10850$.\n\n**4.** Subtracting:\n\n$$\n(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29\n$$\n\n**5.** Substituting back into $17x + 14y = 829$:\n\n$$\n17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow y = 24\n$$\n\n**6.** Testing East:\n\n$$\n65(29) + 50(24) = 1885 + 1200 = 3085\n$$\n\nwhich does not match East's reported \\$3,200. The $115$ discrepancy reveals East as the erroneous branch.\n\n**Answer.** Product X = \\$29.00/unit | Product Y = \\$24.00/unit",
+      "current_body": "Letter C already rebuilt East at $\\$3{,}085$ from the recovered prices. Replacing the printed $\\$3{,}200$ with $\\$3{,}085$ would put East on the same price pair as North and South. The $\\$115$ shortfall is East's recording error, not a second price pair. A solver who \"corrected\" East up to the printed $\\$3{,}200$ would be defending the bad row instead of rewriting it from $x=29$ and $y=24$.",
+      "new_body": "Letter C already rebuilt East at $\\$3{,}085$ from the recovered prices. Replacing the printed $\\$3{,}200$ with $\\$3{,}085$ would put East on the same price pair as North and South. The $\\$115$ shortfall is East's recording error, not a second price pair. A solver who \"corrected\" East up to the printed $\\$3{,}200$ would be defending the bad row instead of rewriting it from $x=29$ and $y=24$.",
+      "displays_overview": [
+        "$$\n85x + 70y = 4145\n$$",
+        "$$\n55x + 95y = 3875\n$$",
+        "$$\n85x + 70y = 4145 \\tag{1}\n$$",
+        "$$\n55x + 95y = 3875 \\tag{2}\n$$",
+        "$$\n(323x + 266y) - (154x + 266y) = 15751 - 10850 \\Rightarrow 169x = 4901 \\Rightarrow x = 29\n$$",
+        "$$\n17(29) + 14y = 829 \\Rightarrow 493 + 14y = 829 \\Rightarrow y = 24\n$$",
+        "$$\n65(29) + 50(24) = 1885 + 1200 = 3085\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-35:A",
+      "w": 66,
+      "header": "**A) Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.**  (true)",
+      "listed_header": "**A) Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = profit per Fabric Roll, $y$ = profit per Yarn Spool.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Record this independent observation.** In symbols:\n\n$$\n240x + 175y = 10029.00\n$$\n\n**2. Record this independent observation.** In symbols:\n\n$$\n310x + 90y = 10260.50\n$$\n\n**Part 2: The model.**\n\n$$\n240x + 175y = 10029.00 \\tag{1}\n$$\n\n$$\n310x + 90y = 10260.50 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Multiply Q1 by 90 and Q2 by 175 so the $y$ coefficients both become $15750y$:\n\n$$\n90(240x + 175y) = 90(10029.00) \\Rightarrow 21600x + 15750y = 902610\n$$\n\n$$\n175(310x + 90y) = 175(10260.50) \\Rightarrow 54250x + 15750y = 1795587.5\n$$\n\n**2.** Subtract the scaled Q1 from the scaled Q2:\n\n$$\n(54250x + 15750y) - (21600x + 15750y) = 1795587.5 - 902610\n$$\n\n$$\n32650x = 892977.5 \\Rightarrow x = \\frac{892977.5}{32650} = 27.35\n$$\n\n**3.** Substitute $x = 27.35$ into Q1:\n\n$$\n240(27.35) + 175y = 10029.00 \\Rightarrow 6564.00 + 175y = 10029.00\n$$\n\n$$\n175y = 3465.00 \\Rightarrow y = 19.80\n$$\n\n**Answer.** Fabric Roll margin = \\$27.35 per unit; Yarn Spool margin = \\$19.80 per unit.",
+      "current_body": "The overview already recovered $x = 27.35$. That sits $35$ cents above $\\$27.00$ and $15$ cents below $\\$27.50$, so it clears the first line and not the second. Rounding to $\\$27$ or to $\\$27.50$ is the usual mix-up; the recovered margin sits strictly between those two marks. Clearing $\\$27.50$ would have needed another $15$ cents of Fabric Roll profit, which the two invoices do not support.",
+      "new_body": "The overview already recovered $x = 27.35$. That sits $35$ cents above $\\$27.00$ and $15$ cents below $\\$27.50$, so it clears the first line and not the second. Rounding to $\\$27$ or to $\\$27.50$ is the usual mix-up; the recovered margin sits strictly between those two marks. Clearing $\\$27.50$ would have needed another $15$ cents of Fabric Roll profit, which the two invoices do not support.",
+      "displays_overview": [
+        "$$\n240x + 175y = 10029.00\n$$",
+        "$$\n310x + 90y = 10260.50\n$$",
+        "$$\n240x + 175y = 10029.00 \\tag{1}\n$$",
+        "$$\n310x + 90y = 10260.50 \\tag{2}\n$$",
+        "$$\n90(240x + 175y) = 90(10029.00) \\Rightarrow 21600x + 15750y = 902610\n$$",
+        "$$\n175(310x + 90y) = 175(10260.50) \\Rightarrow 54250x + 15750y = 1795587.5\n$$",
+        "$$\n(54250x + 15750y) - (21600x + 15750y) = 1795587.5 - 902610\n$$",
+        "$$\n32650x = 892977.5 \\Rightarrow x = \\frac{892977.5}{32650} = 27.35\n$$",
+        "$$\n240(27.35) + 175y = 10029.00 \\Rightarrow 6564.00 + 175y = 10029.00\n$$",
+        "$$\n175y = 3465.00 \\Rightarrow y = 19.80\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-38:A",
+      "w": 60,
+      "header": "**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.**  (false)",
+      "listed_header": "**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.**  (false)",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = profit per T-Shirt, $y$ = profit per Hoodie.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: Season 1.** That observation becomes:\n\n$$\n430x + 260y = 9793.50\n$$\n\n**2. Translate: Season 2.** That observation becomes:\n\n$$\n275x + 410y = 10747.75\n$$\n\n**Part 2: The model.**\n\n$$\n430x + 260y = 9793.50 \\tag{1}\n$$\n\n$$\n275x + 410y = 10747.75 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Multiply Season 1 by 410 and Season 2 by 260 so the $y$ coefficients both become $106600y$:\n\n$$\n410(430x + 260y) = 410(9793.50) \\Rightarrow 176300x + 106600y = 4015335\n$$\n\n$$\n260(275x + 410y) = 260(10747.75) \\Rightarrow 71500x + 106600y = 2794415\n$$\n\n**2.** Subtract:\n\n$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$\n\n$$\n104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65\n$$\n\n**3.** Substitute $x = 11.65$ into Season 1:\n\n$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$\n\n$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$\n\n**4.** Reconstruct Season 3's T-Shirt count $T$:\n\n$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$\n\n$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$\n\n**Answer.** T-Shirts earn \\$11.65 each, Hoodies earn \\$18.40 each, and Season 3 made 245 T-Shirts.",
+      "current_body": "The overview already recovered $x = 11.65$. Distances: $|11.65 - 11| = 0.65$ and $|11.65 - 12| = 0.35$, so the margin sits closer to twelve dollars, not eleven. Midway would have been $11.50$; $11.65$ is $15$ cents past that midpoint toward $12$. A solver who compared to $11$ because the integer part is $11$ would pick the farther neighbour.",
+      "new_body": "The overview already recovered $x = 11.65$. Distances: $|11.65 - 11| = 0.65$ and $|11.65 - 12| = 0.35$, so the margin sits closer to twelve dollars, not eleven. Midway would have been $11.50$; $11.65$ is $15$ cents past that midpoint toward $12$. A solver who compared to $11$ because the integer part is $11$ would pick the farther neighbour.",
+      "displays_overview": [
+        "$$\n430x + 260y = 9793.50\n$$",
+        "$$\n275x + 410y = 10747.75\n$$",
+        "$$\n430x + 260y = 9793.50 \\tag{1}\n$$",
+        "$$\n275x + 410y = 10747.75 \\tag{2}\n$$",
+        "$$\n410(430x + 260y) = 410(9793.50) \\Rightarrow 176300x + 106600y = 4015335\n$$",
+        "$$\n260(275x + 410y) = 260(10747.75) \\Rightarrow 71500x + 106600y = 2794415\n$$",
+        "$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$",
+        "$$\n104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65\n$$",
+        "$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$",
+        "$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$",
+        "$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$",
+        "$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-38:B",
+      "w": 63,
+      "header": "**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.**  (true)",
+      "listed_header": "**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = profit per T-Shirt, $y$ = profit per Hoodie.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: Season 1.** That observation becomes:\n\n$$\n430x + 260y = 9793.50\n$$\n\n**2. Translate: Season 2.** That observation becomes:\n\n$$\n275x + 410y = 10747.75\n$$\n\n**Part 2: The model.**\n\n$$\n430x + 260y = 9793.50 \\tag{1}\n$$\n\n$$\n275x + 410y = 10747.75 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Multiply Season 1 by 410 and Season 2 by 260 so the $y$ coefficients both become $106600y$:\n\n$$\n410(430x + 260y) = 410(9793.50) \\Rightarrow 176300x + 106600y = 4015335\n$$\n\n$$\n260(275x + 410y) = 260(10747.75) \\Rightarrow 71500x + 106600y = 2794415\n$$\n\n**2.** Subtract:\n\n$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$\n\n$$\n104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65\n$$\n\n**3.** Substitute $x = 11.65$ into Season 1:\n\n$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$\n\n$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$\n\n**4.** Reconstruct Season 3's T-Shirt count $T$:\n\n$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$\n\n$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$\n\n**Answer.** T-Shirts earn \\$11.65 each, Hoodies earn \\$18.40 each, and Season 3 made 245 T-Shirts.",
+      "current_body": "The overview already recovered $y = 18.40$, which is $40$ cents from eighteen and $60$ cents from nineteen. It is the closer of the two to eighteen. Midway would have been $18.50$; $18.40$ still sits on the $18$ side of that midpoint. Treating $18.40$ as almost $19$ because a dollar amount would round up is how a rushed solver picks the farther neighbour.",
+      "new_body": "The overview already recovered $y = 18.40$, which is $40$ cents from eighteen and $60$ cents from nineteen. It is the closer of the two to eighteen. Midway would have been $18.50$; $18.40$ still sits on the $18$ side of that midpoint. Treating $18.40$ as almost $19$ because a dollar amount would round up is how a rushed solver picks the farther neighbour.",
+      "displays_overview": [
+        "$$\n430x + 260y = 9793.50\n$$",
+        "$$\n275x + 410y = 10747.75\n$$",
+        "$$\n430x + 260y = 9793.50 \\tag{1}\n$$",
+        "$$\n275x + 410y = 10747.75 \\tag{2}\n$$",
+        "$$\n410(430x + 260y) = 410(9793.50) \\Rightarrow 176300x + 106600y = 4015335\n$$",
+        "$$\n260(275x + 410y) = 260(10747.75) \\Rightarrow 71500x + 106600y = 2794415\n$$",
+        "$$\n(176300x + 106600y) - (71500x + 106600y) = 4015335 - 2794415\n$$",
+        "$$\n104800x = 1220920 \\Rightarrow x = \\frac{1220920}{104800} = 11.65\n$$",
+        "$$\n430(11.65) + 260y = 9793.50 \\Rightarrow 5009.50 + 260y = 9793.50\n$$",
+        "$$\n260y = 4784.00 \\Rightarrow y = 18.40\n$$",
+        "$$\n11.65T + 18.40(310) = 8558.25 \\Rightarrow 11.65T + 5704.00 = 8558.25\n$$",
+        "$$\n11.65T = 2854.25 \\Rightarrow T = 245\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-45:D",
+      "w": 69,
+      "header": "**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)",
+      "listed_header": "**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = Boat A's speed (km/h), $y$ = Boat B's speed (km/h).\n\nTime coefficients come from the story's clocks - head-starts, overtime hours, or duration multipliers - not from the headline total alone.\n\n**1. Translate: 250 km gap closed in 2 hrs: 2(x+y) = 250.** That observation becomes:\n\n$$\nx + y = 125\n$$\n\n**2. Translate: Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs.** That observation becomes:\n\n$$\nx + 4y = 356\n$$\n\n**Part 2: The model.**\n\n$$\nx + y = 125 \\tag{1}\n$$\n\n$$\nx + 4y = 356 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Subtract the first equation from the second:\n\n$$\n(x + 4y) - (x + y) = 356 - 125\n$$\n\n$$\n3y = 231 \\Rightarrow y = \\frac{231}{3} = 77\n$$\n\n**2.** Substitute $y = 77$ into $x + y = 125$:\n\n$$\nx + 77 = 125 \\Rightarrow x = 48\n$$\n\n**Answer.** Boat A travels 48 km/h and Boat B travels 77 km/h.",
+      "current_body": "Over $3$ hours the pair covers $3(125) = 375$ km, which is $19$ km more than the $356$ km stretch. The same total is $3(48) + 3(77) = 375$. That $3$-hour combined run is not the meeting-time story from the stem; it is a separate clock on the recovered speeds. Falling short of $356$ km would have needed a combined rate below $356/3$, but $x+y=125$ already sits above that.",
+      "new_body": "Over $3$ hours the pair covers $3(125) = 375$ km, which is $19$ km more than the $356$ km stretch. The same total is $3(48) + 3(77) = 375$. That $3$-hour combined run is not the meeting-time story from the stem; it is a separate clock on the recovered speeds. Falling short of $356$ km would have needed a combined rate below $356/3$, but $x+y=125$ already sits above that.",
+      "displays_overview": [
+        "$$\nx + y = 125\n$$",
+        "$$\nx + 4y = 356\n$$",
+        "$$\nx + y = 125 \\tag{1}\n$$",
+        "$$\nx + 4y = 356 \\tag{2}\n$$",
+        "$$\n(x + 4y) - (x + y) = 356 - 125\n$$",
+        "$$\n3y = 231 \\Rightarrow y = \\frac{231}{3} = 77\n$$",
+        "$$\nx + 77 = 125 \\Rightarrow x = 48\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-45:E",
+      "w": 70,
+      "header": "**E) Boat B's speed is more than 60% higher than Boat A's speed.**  (true)",
+      "listed_header": "**E) Boat B's speed is more than 60% higher than Boat A's speed.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = Boat A's speed (km/h), $y$ = Boat B's speed (km/h).\n\nTime coefficients come from the story's clocks - head-starts, overtime hours, or duration multipliers - not from the headline total alone.\n\n**1. Translate: 250 km gap closed in 2 hrs: 2(x+y) = 250.** That observation becomes:\n\n$$\nx + y = 125\n$$\n\n**2. Translate: Boat A travels 1 hr; Boat B travels its 3-hr head start plus 1 more = 4 hrs.** That observation becomes:\n\n$$\nx + 4y = 356\n$$\n\n**Part 2: The model.**\n\n$$\nx + y = 125 \\tag{1}\n$$\n\n$$\nx + 4y = 356 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Subtract the first equation from the second:\n\n$$\n(x + 4y) - (x + y) = 356 - 125\n$$\n\n$$\n3y = 231 \\Rightarrow y = \\frac{231}{3} = 77\n$$\n\n**2.** Substitute $y = 77$ into $x + y = 125$:\n\n$$\nx + 77 = 125 \\Rightarrow x = 48\n$$\n\n**Answer.** Boat A travels 48 km/h and Boat B travels 77 km/h.",
+      "current_body": "Boat B's advantage measured against Boat A's recovered speed:\n\n$$\n\\frac{77 - 48}{48} = \\frac{29}{48} \\approx 0.604\n$$\n\nAt about $60.4\\%$ that is more than $60\\%$, though only just. Measuring the $29$ km/h gap against Boat B instead of Boat A would understate the relative lift and miss the cutoff. Equality at $60\\%$ would have needed $y = 1.6\\times 48 = 76.8$; the recovered $77$ sits just above that line.",
+      "new_body": "Boat B's advantage measured against Boat A's recovered speed:\n\n$$\n\\frac{77 - 48}{48} = \\frac{29}{48} \\approx 0.604\n$$\n\nAt about $60.4\\%$ that is more than $60\\%$, though only just. Measuring the $29$ km/h gap against Boat B instead of Boat A would understate the relative lift and miss the cutoff. Equality at $60\\%$ would have needed $y = 1.6\\times 48 = 76.8$; the recovered $77$ sits just above that line.",
+      "displays_overview": [
+        "$$\nx + y = 125\n$$",
+        "$$\nx + 4y = 356\n$$",
+        "$$\nx + y = 125 \\tag{1}\n$$",
+        "$$\nx + 4y = 356 \\tag{2}\n$$",
+        "$$\n(x + 4y) - (x + y) = 356 - 125\n$$",
+        "$$\n3y = 231 \\Rightarrow y = \\frac{231}{3} = 77\n$$",
+        "$$\nx + 77 = 125 \\Rightarrow x = 48\n$$"
+      ],
+      "displays_new": [
+        "$$\n\\frac{77 - 48}{48} = \\frac{29}{48} \\approx 0.604\n$$"
+      ]
+    },
+    {
+      "key": "math-5-48:B",
+      "w": 55,
+      "header": "**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)",
+      "listed_header": "**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = wholesale cost of Product A, $y$ = wholesale cost of Product B.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: Order 1: retail A is 1.32x, retail B is 1.18y.** That observation becomes:\n\n$$\n10.56x + 5.9y = 1052.80\n$$\n\n**2. Translate: Order 3, independent of Order 1.** That observation becomes:\n\n$$\n3.96x + 14.16y = 1350.60\n$$\n\n**Part 2: The model.**\n\n$$\n10.56x + 5.9y = 1052.80 \\tag{1}\n$$\n\n$$\n3.96x + 14.16y = 1350.60 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Order 2 $(16, 10, 2105.60)$ is exactly double Order 1 $(8, 5, 1052.80)$, so it is redundant and set aside.\n\n**2.** Multiply Order 1 by $0.375$ so its $x$ coefficient matches Order 3's $3.96x$:\n\n$$\n0.375(10.56x + 5.9y) = 0.375(1052.80)\n$$\n\n$$\n3.96x + 2.2125y = 394.80\n$$\n\n**3.** Subtract from Order 3:\n\n$$\n(3.96x + 14.16y) - (3.96x + 2.2125y) = 1350.60 - 394.80\n$$\n\n$$\n11.9475y = 955.80 \\Rightarrow y = \\frac{955.80}{11.9475} = 80.00\n$$\n\n**4.** Substitute $y = 80$ into Order 1:\n\n$$\n10.56x + 5.9(80) = 1052.80 \\Rightarrow 10.56x + 472 = 1052.80\n$$\n\n$$\n10.56x = 580.80 \\Rightarrow x = 55.00\n$$\n\n**Answer.** Product A wholesale = \\$55.00 | Product B wholesale = \\$80.00",
+      "current_body": "A's dollar markup is $0.32(55) = 17.60$ and B's is $0.18(80) = 14.40$. Then $\\frac{14.40}{17.60} \\approx 0.818$, about $81.8\\%$, which exceeds $80\\%$. Comparing the markup rates $18\\%$ to $32\\%$ instead of the dollar amounts looks like a miss, because $18/32 = 0.562$. Eighty percent of A's $\\$17.60$ is $\\$14.08$, and B's $\\$14.40$ clears that mark.",
+      "new_body": "A's dollar markup is $0.32(55) = 17.60$ and B's is $0.18(80) = 14.40$. Then $\\frac{14.40}{17.60} \\approx 0.818$, about $81.8\\%$, which exceeds $80\\%$. Comparing the markup rates $18\\%$ to $32\\%$ instead of the dollar amounts looks like a miss, because $18/32 = 0.562$. Eighty percent of A's $\\$17.60$ is $\\$14.08$, and B's $\\$14.40$ clears that mark.",
+      "displays_overview": [
+        "$$\n10.56x + 5.9y = 1052.80\n$$",
+        "$$\n3.96x + 14.16y = 1350.60\n$$",
+        "$$\n10.56x + 5.9y = 1052.80 \\tag{1}\n$$",
+        "$$\n3.96x + 14.16y = 1350.60 \\tag{2}\n$$",
+        "$$\n0.375(10.56x + 5.9y) = 0.375(1052.80)\n$$",
+        "$$\n3.96x + 2.2125y = 394.80\n$$",
+        "$$\n(3.96x + 14.16y) - (3.96x + 2.2125y) = 1350.60 - 394.80\n$$",
+        "$$\n11.9475y = 955.80 \\Rightarrow y = \\frac{955.80}{11.9475} = 80.00\n$$",
+        "$$\n10.56x + 5.9(80) = 1052.80 \\Rightarrow 10.56x + 472 = 1052.80\n$$",
+        "$$\n10.56x = 580.80 \\Rightarrow x = 55.00\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-49:B",
+      "w": 63,
+      "header": "**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)",
+      "listed_header": "**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = points per win, $y$ = points per draw.\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: Falcons.** That observation becomes:\n\n$$\n9x + 4y = 75\n$$\n\n**2. Translate: Ravens: 75 - 8 = 67 total points.** That observation becomes:\n\n$$\n7x + 6y = 67\n$$\n\n**Part 2: The model.**\n\n$$\n9x + 4y = 75 \\tag{1}\n$$\n\n$$\n7x + 6y = 67 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Multiply the Falcons equation by 3 and the Ravens equation by 2 so the $y$ coefficients both become $12y$:\n\n$$\n3(9x + 4y) = 3(75) \\Rightarrow 27x + 12y = 225\n$$\n\n$$\n2(7x + 6y) = 2(67) \\Rightarrow 14x + 12y = 134\n$$\n\n**2.** Subtract:\n\n$$\n(27x + 12y) - (14x + 12y) = 225 - 134\n$$\n\n$$\n13x = 91 \\Rightarrow x = 7\n$$\n\n**3.** Substitute $x = 7$ into the Falcons equation:\n\n$$\n9(7) + 4y = 75 \\Rightarrow 63 + 4y = 75 \\Rightarrow 4y = 12 \\Rightarrow y = 3\n$$\n\n**Answer.** Win = 7 points | Draw = 3 points",
+      "current_body": "The Ravens' $67$ points include $6(3) = 18$ from draws. The draw share is $\\frac{18}{67} \\approx 0.269$, about $27\\%$, far below $45\\%$. Counting all six draws as if they were wins, $6\\times 7 = 42$, would manufacture a share near $63\\%$ and flip the reading. Forty-five percent of $67$ is about $30$ points, and the $18$ draw points sit well short of that.",
+      "new_body": "The Ravens' $67$ points include $6(3) = 18$ from draws. The draw share is $\\frac{18}{67} \\approx 0.269$, about $27\\%$, far below $45\\%$. Counting all six draws as if they were wins, $6\\times 7 = 42$, would manufacture a share near $63\\%$ and flip the reading. Forty-five percent of $67$ is about $30$ points, and the $18$ draw points sit well short of that.",
+      "displays_overview": [
+        "$$\n9x + 4y = 75\n$$",
+        "$$\n7x + 6y = 67\n$$",
+        "$$\n9x + 4y = 75 \\tag{1}\n$$",
+        "$$\n7x + 6y = 67 \\tag{2}\n$$",
+        "$$\n3(9x + 4y) = 3(75) \\Rightarrow 27x + 12y = 225\n$$",
+        "$$\n2(7x + 6y) = 2(67) \\Rightarrow 14x + 12y = 134\n$$",
+        "$$\n(27x + 12y) - (14x + 12y) = 225 - 134\n$$",
+        "$$\n13x = 91 \\Rightarrow x = 7\n$$",
+        "$$\n9(7) + 4y = 75 \\Rightarrow 63 + 4y = 75 \\Rightarrow 4y = 12 \\Rightarrow y = 3\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-50:B",
+      "w": 68,
+      "header": "**B) Metal B's density is more than 50% greater than Metal A's density.**  (false)",
+      "listed_header": "**B) Metal B's density is more than 50% greater than Metal A's density.**  (false)",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = mass per liter of Metal A (kg/L), $y$ = mass per liter of Metal B (kg/L).\n\nBefore writing coefficients, every quantity is converted into one shared unit (for example miles→km or L→mL) so the left-hand sides match the right-hand side units.\n\n**1. Translate: Batch 1.** That observation becomes:\n\n$$\n12x + 8y = 182.4\n$$\n\n**2. Translate: Batch 2.** That observation becomes:\n\n$$\n5x + 15y = 209.0\n$$\n\n**Part 2: The model.**\n\n$$\n12x + 8y = 182.4 \\tag{1}\n$$\n\n$$\n5x + 15y = 209.0 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Divide Batch 1 by 4 and Batch 2 by 5:\n\n$$\n3x + 2y = 45.6, \\qquad x + 3y = 41.8 \\Rightarrow x = 41.8 - 3y\n$$\n\n**2.** Substitute into the first simplified equation:\n\n$$\n3(41.8 - 3y) + 2y = 45.6 \\Rightarrow 125.4 - 9y + 2y = 45.6\n$$\n\n$$\n-7y = 45.6 - 125.4 = -79.8 \\Rightarrow y = \\frac{79.8}{7} = 11.4\n$$\n\n**3.** Substitute $y = 11.4$ back:\n\n$$\nx = 41.8 - 3(11.4) = 41.8 - 34.2 = 7.6\n$$\n\n**4.** Audit Batch 3:\n\n$$\n9.5(7.6) + 6(11.4) = 72.2 + 68.4 = 140.6\n$$\n\nversus 147.0 kg recorded, a 6.4 kg discrepancy.\n\n**Answer.** Metal A = 7.6 kg/L | Metal B = 11.4 kg/L | Batch 3 predicted = 140.6 kg (vs. 147.0 kg recorded)",
+      "current_body": "The relative increase is $\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$, exactly $50\\%$, not more than $50\\%$. A strict inequality fails on the boundary. A rushed solver who computed $11.4/7.6 = 1.5$ and then treated \"$50\\%$ greater\" as if \"more than\" were optional would miss the wording. Density B would have to sit strictly above $11.4$ to clear a \"more than\" test, and the recovered value does not.",
+      "new_body": "The relative increase is $\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$, exactly $50\\%$, not more than $50\\%$. A strict inequality fails on the boundary. A rushed solver who computed $11.4/7.6 = 1.5$ and then treated \"$50\\%$ greater\" as if \"more than\" were optional would miss the wording. Density B would have to sit strictly above $11.4$ to clear a \"more than\" test, and the recovered value does not.",
+      "displays_overview": [
+        "$$\n12x + 8y = 182.4\n$$",
+        "$$\n5x + 15y = 209.0\n$$",
+        "$$\n12x + 8y = 182.4 \\tag{1}\n$$",
+        "$$\n5x + 15y = 209.0 \\tag{2}\n$$",
+        "$$\n3x + 2y = 45.6, \\qquad x + 3y = 41.8 \\Rightarrow x = 41.8 - 3y\n$$",
+        "$$\n3(41.8 - 3y) + 2y = 45.6 \\Rightarrow 125.4 - 9y + 2y = 45.6\n$$",
+        "$$\n-7y = 45.6 - 125.4 = -79.8 \\Rightarrow y = \\frac{79.8}{7} = 11.4\n$$",
+        "$$\nx = 41.8 - 3(11.4) = 41.8 - 34.2 = 7.6\n$$",
+        "$$\n9.5(7.6) + 6(11.4) = 72.2 + 68.4 = 140.6\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-51:B",
+      "w": 61,
+      "header": "**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)",
+      "listed_header": "**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = the percentage fee rate (as a decimal), $y$ = the flat retainer (in dollars).\n\nThe printed totals are not raw unknown×quantity rows: any shared fee or tax is peeled off first, and only then do the remaining amounts become the right-hand sides.\n\n**1. Translate: Client 2's total fee.** That observation becomes:\n\n$$\n600000x + y = 10800\n$$\n\n**2. Translate: fee difference / AUM difference  -  retainer cancels.** That observation becomes:\n\n$$\n150000x = 2400\n$$\n\n**Part 2: The model.**\n\n$$\n600000x + y = 10800 \\tag{1}\n$$\n\n$$\n150000x = 2400 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** The fee-difference equation already isolates the rate:\n\n$$\n150000x = 2400 \\Rightarrow x = \\frac{2400}{150000} = 0.016\n$$\n\n(that is $1.6\\%$).\n\n**2.** Substitute into Client 2's total:\n\n$$\n600000(0.016) + y = 10800 \\Rightarrow 9600 + y = 10800 \\Rightarrow y = 1200\n$$\n\n**Answer.** Fee rate = 1.6% of AUM | Retainer = \\$1,200.00 (Fee = 0.016·AUM + 1200)",
+      "current_body": "The recovered retainer is $1200$ against Client 2's \\$10,800:\n\n$$\n\\frac{1200}{10800} \\approx 0.111\n$$\n\nAbout $11.1\\%$ exceeds $10\\%$. Treating the whole \\$10,800 as rate-only would hide the retainer entirely. Ten percent of $\\$10{,}800$ is $\\$1{,}080$; the recovered $\\$1{,}200$ sits $\\$120$ above that line. Dividing $\\$1{,}200$ by AUM instead of by the fee would report a tiny fraction and miss the cutoff.",
+      "new_body": "The recovered retainer is $1200$ against Client 2's \\$10,800:\n\n$$\n\\frac{1200}{10800} \\approx 0.111\n$$\n\nAbout $11.1\\%$ exceeds $10\\%$. Treating the whole \\$10,800 as rate-only would hide the retainer entirely. Ten percent of $\\$10{,}800$ is $\\$1{,}080$; the recovered $\\$1{,}200$ sits $\\$120$ above that line. Dividing $\\$1{,}200$ by AUM instead of by the fee would report a tiny fraction and miss the cutoff.",
+      "displays_overview": [
+        "$$\n600000x + y = 10800\n$$",
+        "$$\n150000x = 2400\n$$",
+        "$$\n600000x + y = 10800 \\tag{1}\n$$",
+        "$$\n150000x = 2400 \\tag{2}\n$$",
+        "$$\n150000x = 2400 \\Rightarrow x = \\frac{2400}{150000} = 0.016\n$$",
+        "$$\n600000(0.016) + y = 10800 \\Rightarrow 9600 + y = 10800 \\Rightarrow y = 1200\n$$"
+      ],
+      "displays_new": [
+        "$$\n\\frac{1200}{10800} \\approx 0.111\n$$"
+      ]
+    },
+    {
+      "key": "math-5-53:D",
+      "w": 67,
+      "header": "**D) The drywall price (y) is more than 8 times the stud price (x).**  (true)",
+      "listed_header": "**D) The drywall price (y) is more than 8 times the stud price (x).**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = price per stud, $y$ = price per drywall sheet. The ordered (waste-inflated) quantities must be computed from the usable amounts before any pricing model can be built.\n\nWaste allowances change how many units are purchased relative to usable amounts; the equations follow the as-ordered quantities that actually appear on the invoice.\n\n**1. Translate: Job 1: 200×1.12=224 studs, 150×1.08=162 sheets.** That observation becomes:\n\n$$\n224x + 162y = 7164\n$$\n\n**2. Translate: Job 2: 350×1.12=392 studs, 175×1.08=189 sheets.** That observation becomes:\n\n$$\n392x + 189y = 8946\n$$\n\n**Part 2: The model.**\n\n$$\n224x + 162y = 7164 \\tag{1}\n$$\n\n$$\n392x + 189y = 8946 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Multiply Job 1 by $1.75$ so its stud coefficient matches Job 2's $392x$ ($224 \\times 1.75 = 392$):\n\n$$\n1.75(224x + 162y) = 1.75(7164) \\Rightarrow 392x + 283.5y = 12537\n$$\n\n**2.** Subtract Job 2:\n\n$$\n(392x + 283.5y) - (392x + 189y) = 12537 - 8946\n$$\n\n$$\n94.5y = 3591 \\Rightarrow y = \\frac{3591}{94.5} = 38.00\n$$\n\n**3.** Substitute $y = 38$ into Job 1:\n\n$$\n224x + 162(38) = 7164 \\Rightarrow 224x + 6156 = 7164\n$$\n\n$$\n224x = 1008 \\Rightarrow x = 4.50\n$$\n\n**Answer.** Stud price = \\$4.50 | Drywall sheet price = \\$38.00",
+      "current_body": "The recovered ratio is $\\frac{38}{4.50} \\approx 8.444$. Eight studs cost $8(4.50) = 36$, and one sheet at $\\$38$ costs more than that, so the ratio clears $8$. Comparing list prices as $38/4$ by dropping the $\\$0.50$ would overshoot; the recovered $x=4.50$ is what pins the factor just above $8$. A ratio of $8$ exactly would have needed drywall at $\\$36$, two dollars below the recovered sheet price.",
+      "new_body": "The recovered ratio is $\\frac{38}{4.50} \\approx 8.444$. Eight studs cost $8(4.50) = 36$, and one sheet at $\\$38$ costs more than that, so the ratio clears $8$. Comparing list prices as $38/4$ by dropping the $\\$0.50$ would overshoot; the recovered $x=4.50$ is what pins the factor just above $8$. A ratio of $8$ exactly would have needed drywall at $\\$36$, two dollars below the recovered sheet price.",
+      "displays_overview": [
+        "$$\n224x + 162y = 7164\n$$",
+        "$$\n392x + 189y = 8946\n$$",
+        "$$\n224x + 162y = 7164 \\tag{1}\n$$",
+        "$$\n392x + 189y = 8946 \\tag{2}\n$$",
+        "$$\n1.75(224x + 162y) = 1.75(7164) \\Rightarrow 392x + 283.5y = 12537\n$$",
+        "$$\n(392x + 283.5y) - (392x + 189y) = 12537 - 8946\n$$",
+        "$$\n94.5y = 3591 \\Rightarrow y = \\frac{3591}{94.5} = 38.00\n$$",
+        "$$\n224x + 162(38) = 7164 \\Rightarrow 224x + 6156 = 7164\n$$",
+        "$$\n224x = 1008 \\Rightarrow x = 4.50\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-57:B",
+      "w": 70,
+      "header": "**B) Under the current allocation, the blended rate is less than 6%.**  (true)",
+      "listed_header": "**B) Under the current allocation, the blended rate is less than 6%.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = Bond Portfolio's annual rate (%), $y$ = Equity Portfolio's annual rate (%).\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: current allocation.** That observation becomes:\n\n$$\n270x + 180y = 2646\n$$\n\n**2. Translate: proposed reallocation.** That observation becomes:\n\n$$\n180x + 270y = 2754\n$$\n\n**Part 2: The model.**\n\n$$\n270x + 180y = 2646 \\tag{1}\n$$\n\n$$\n180x + 270y = 2754 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Add the two allocation equations:\n\n$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$\n\n$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$\n\n**2.** Subtract the first from the second:\n\n$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$\n\n$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$\n\n**3.** Substitute into $x + y = 12$:\n\n$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$\n\nThen $y = 5.4 + 1.2 = 6.6$.\n\n**Answer.** Bond rate = 5.4% | Equity rate = 6.6%",
+      "current_body": "The current $\\$2{,}646$ on $\\$45{,}000$ is a blended $\\frac{2646}{45000} = 0.0588$, or $5.88\\%$, which is less than $6\\%$. Most of the money sits in the lower-yielding Bonds. Averaging $5.4\\%$ and $6.6\\%$ as if the split were equal would report $6.0\\%$ exactly and sit on the wrong side of the cutoff. The current mix weights Bonds more heavily, which is why the blend lands at $5.88\\%$ rather than at the midpoint.",
+      "new_body": "The current $\\$2{,}646$ on $\\$45{,}000$ is a blended $\\frac{2646}{45000} = 0.0588$, or $5.88\\%$, which is less than $6\\%$. Most of the money sits in the lower-yielding Bonds. Averaging $5.4\\%$ and $6.6\\%$ as if the split were equal would report $6.0\\%$ exactly and sit on the wrong side of the cutoff. The current mix weights Bonds more heavily, which is why the blend lands at $5.88\\%$ rather than at the midpoint.",
+      "displays_overview": [
+        "$$\n270x + 180y = 2646\n$$",
+        "$$\n180x + 270y = 2754\n$$",
+        "$$\n270x + 180y = 2646 \\tag{1}\n$$",
+        "$$\n180x + 270y = 2754 \\tag{2}\n$$",
+        "$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$",
+        "$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$",
+        "$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$",
+        "$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$",
+        "$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-57:E",
+      "w": 63,
+      "header": "**E) The bond rate is more than 80% of the equity rate.**  (true)",
+      "listed_header": "**E) The bond rate is more than 80% of the equity rate.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = Bond Portfolio's annual rate (%), $y$ = Equity Portfolio's annual rate (%).\n\nEach left-hand coefficient is a quantity taken straight from an observation row or bill; the matching right-hand side is that observation's total in the same units.\n\n**1. Translate: current allocation.** That observation becomes:\n\n$$\n270x + 180y = 2646\n$$\n\n**2. Translate: proposed reallocation.** That observation becomes:\n\n$$\n180x + 270y = 2754\n$$\n\n**Part 2: The model.**\n\n$$\n270x + 180y = 2646 \\tag{1}\n$$\n\n$$\n180x + 270y = 2754 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Add the two allocation equations:\n\n$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$\n\n$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$\n\n**2.** Subtract the first from the second:\n\n$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$\n\n$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$\n\n**3.** Substitute into $x + y = 12$:\n\n$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$\n\nThen $y = 5.4 + 1.2 = 6.6$.\n\n**Answer.** Bond rate = 5.4% | Equity rate = 6.6%",
+      "current_body": "The Bond rate as a fraction of Equity is $\\frac{5.4}{6.6} \\approx 0.818$. Eighty percent of $6.6$ is $5.28$, and $5.4 > 5.28$, so Bonds clear $80\\%$ of Equities. Letter A asked how much Equities outrun Bonds; this letter asks the reciprocal fraction. Dropping the Bond rate to $5.28$ or below is what would fail the $80\\%$ test, and the recovered $5.4\\%$ does not.",
+      "new_body": "The Bond rate as a fraction of Equity is $\\frac{5.4}{6.6} \\approx 0.818$. Eighty percent of $6.6$ is $5.28$, and $5.4 > 5.28$, so Bonds clear $80\\%$ of Equities. Letter A asked how much Equities outrun Bonds; this letter asks the reciprocal fraction. Dropping the Bond rate to $5.28$ or below is what would fail the $80\\%$ test, and the recovered $5.4\\%$ does not.",
+      "displays_overview": [
+        "$$\n270x + 180y = 2646\n$$",
+        "$$\n180x + 270y = 2754\n$$",
+        "$$\n270x + 180y = 2646 \\tag{1}\n$$",
+        "$$\n180x + 270y = 2754 \\tag{2}\n$$",
+        "$$\n(270x + 180y) + (180x + 270y) = 2646 + 2754\n$$",
+        "$$\n450x + 450y = 5400 \\Rightarrow x + y = 12\n$$",
+        "$$\n(180x + 270y) - (270x + 180y) = 2754 - 2646\n$$",
+        "$$\n-90x + 90y = 108 \\Rightarrow y - x = 1.2 \\Rightarrow y = x + 1.2\n$$",
+        "$$\nx + (x + 1.2) = 12 \\Rightarrow 2x + 1.2 = 12 \\Rightarrow 2x = 10.8 \\Rightarrow x = 5.4\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-5-60:D",
+      "w": 67,
+      "header": "**D) The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.**  (true)",
+      "listed_header": "**D) The combined output rate of both plants together (x + y) is more than 2.4 times Plant B's rate alone.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the system.**\n\nLet $x$ = Plant A's output rate (MWh/operating hr), $y$ = Plant B's output rate (MWh/operating hr).\n\nBefore writing coefficients, every quantity is converted into one shared unit (for example miles→km or L→mL) so the left-hand sides match the right-hand side units.\n\n**1. Translate: Day 1.** That observation becomes:\n\n$$\n14x + 20y = 3990\n$$\n\n**2. Translate: Day 2.** That observation becomes:\n\n$$\n22x + 9y = 4072\n$$\n\n**Part 2: The model.**\n\n$$\n14x + 20y = 3990 \\tag{1}\n$$\n\n$$\n22x + 9y = 4072 \\tag{2}\n$$\n\n**Part 3: Solve.**\n\n**1.** Divide Day 1 by 2:\n\n$$\n7x + 10y = 1995\n$$\n\n**2.** Multiply that simplified equation by 9:\n\n$$\n63x + 90y = 17955\n$$\n\n**3.** Multiply Day 2 by 10:\n\n$$\n10(22x + 9y) = 10(4072) \\Rightarrow 220x + 90y = 40720\n$$\n\n**4.** Subtract the scaled Day 1 from the scaled Day 2:\n\n$$\n(220x + 90y) - (63x + 90y) = 40720 - 17955\n$$\n\n$$\n157x = 22765 \\Rightarrow x = \\frac{22765}{157} = 145.0\n$$\n\n**5.** Substitute $x = 145$ into $7x + 10y = 1995$:\n\n$$\n7(145) + 10y = 1995 \\Rightarrow 1015 + 10y = 1995 \\Rightarrow 10y = 980 \\Rightarrow y = 98.0\n$$\n\n**6.** Audit Day 3 ($1020$ min $= 17$ hrs):\n\n$$\n17(145) + 11(98) = 2465 + 1078 = 3543\n$$\n\nversus 3,553 MWh recorded, a 10 MWh discrepancy.\n\n**Answer.** Plant A = 145.0 MWh/hr | Plant B = 98.0 MWh/hr | Day 3 predicted = 3,543 MWh (vs. 3,553 MWh recorded)",
+      "current_body": "The combined rate is $145 + 98 = 243$. Then $2.4(98) = 235.2$, and $243 > 235.2$. Equivalently $\\frac{243}{98} \\approx 2.48$, above the factor of $2.4$. Measuring against Plant A instead of Plant B would compare $243$ to $2.4(145)=348$, which fails, and that is the wrong base. The recovered $x+y=243$ only needs to beat $2.4$ times the slower plant, which it does with $7.8$ MWh/hr to spare.",
+      "new_body": "The combined rate is $145 + 98 = 243$. Then $2.4(98) = 235.2$, and $243 > 235.2$. Equivalently $\\frac{243}{98} \\approx 2.48$, above the factor of $2.4$. Measuring against Plant A instead of Plant B would compare $243$ to $2.4(145)=348$, which fails, and that is the wrong base. The recovered $x+y=243$ only needs to beat $2.4$ times the slower plant, which it does with $7.8$ MWh/hr to spare.",
+      "displays_overview": [
+        "$$\n14x + 20y = 3990\n$$",
+        "$$\n22x + 9y = 4072\n$$",
+        "$$\n14x + 20y = 3990 \\tag{1}\n$$",
+        "$$\n22x + 9y = 4072 \\tag{2}\n$$",
+        "$$\n7x + 10y = 1995\n$$",
+        "$$\n63x + 90y = 17955\n$$",
+        "$$\n10(22x + 9y) = 10(4072) \\Rightarrow 220x + 90y = 40720\n$$",
+        "$$\n(220x + 90y) - (63x + 90y) = 40720 - 17955\n$$",
+        "$$\n157x = 22765 \\Rightarrow x = \\frac{22765}{157} = 145.0\n$$",
+        "$$\n7(145) + 10y = 1995 \\Rightarrow 1015 + 10y = 1995 \\Rightarrow 10y = 980 \\Rightarrow y = 98.0\n$$",
+        "$$\n17(145) + 11(98) = 2465 + 1078 = 3543\n$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-25:E",
+      "w": 70,
+      "header": "**E.** → False",
+      "listed_header": "**E.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $t$ = hours. The four-hour radius fixes $A$. Area then composes a square with that square root.\n\n**1. Translate: the recorded radius.**\n\n$$A\\cdot 2=6$$\n\n**Part 2: The model.**\n\n$$r(t)=3t^{\\frac{1}{2}} \\tag{1}$$\n\n$$S(t)=9\\pi t \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $S(4)=36\\pi>30\\pi$ and $S(9)=81\\pi$, not $100\\pi$.\n\n**2.** $(2)$ is proportional to $t$, so doubling time doubles area. The inverse $t=S/(9\\pi)$ is a power of $S$.\n\n**Answer.** $A=3$ | $S(t)=9\\pi t$ | $S(4)=36\\pi$ | $S(9)=81\\pi$",
+      "current_body": "The overview already lists $S(9)=81\\pi$, which sits below $100\\pi$. Nine hours at $9\\pi$ per hour is $81\\pi$. Reaching $100\\pi$ would need $t=\\frac{100}{9}\\approx 11.1$ hours. Nine hours is too soon. A solver who squared the nine-hour radius, or who copied $S(4)=36\\pi$ with a $100$ in place of $36$, would invent a hit. Area here grows with $t$, not with $t^{2}$, so hour $9$ is still $19\\pi$ short of the $100\\pi$ mark.",
+      "new_body": "The overview already lists $S(9)=81\\pi$, which sits below $100\\pi$. Nine hours at $9\\pi$ per hour is $81\\pi$. Reaching $100\\pi$ would need $t=\\frac{100}{9}\\approx 11.1$ hours. Nine hours is too soon. A solver who squared the nine-hour radius, or who copied $S(4)=36\\pi$ with a $100$ in place of $36$, would invent a hit. Area here grows with $t$, not with $t^{2}$, so hour $9$ is still $19\\pi$ short of the $100\\pi$ mark.",
+      "displays_overview": [
+        "$$A\\cdot 2=6$$",
+        "$$r(t)=3t^{\\frac{1}{2}} \\tag{1}$$",
+        "$$S(t)=9\\pi t \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-40:B",
+      "w": 75,
+      "header": "**B.** → False",
+      "listed_header": "**B.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $x>0$ be the input and $y$ the response. Two unknowns need two facts; the first two measurements supply them. The third measurement and the planned run are not used in the fit.\n\n**1. Translate: the ratio.** $A$ cancels:\n\n$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24}$$\n\n**2. Translate: the level.** Either point then pins $A$:\n\n$$A\\cdot 4^{r}=24$$\n\n**Part 2: The model.**\n\n$$4^{r}=8 \\tag{1}$$\n\n$$A\\cdot 4^{r}=24 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) forces $r=\\frac{3}{2}$. Equation (2) then gives $A=3$, so\n\n$$y=3x^{\\frac{3}{2}}$$\n\n**2.** Both fitted points sit on that law, so they are consistent with a single power.\n\n**3.** The held-out point:\n\n$$3\\cdot 9^{\\frac{3}{2}}=81$$\n\nmatches the recorded $81$, so it does not contradict the fit.\n\n**4.** The planned run:\n\n$$3\\cdot 25^{\\frac{3}{2}}=375$$\n\nnot $300$.\n\n**5.** Exponent $2$ would require $4^{2}=16$, but the observed ratio is $8$, so $r=2$ is uniquely ruled out.\n\n**Answer.** $r=\\frac{3}{2}$ | $A=3$ | $y=3x^{\\frac{3}{2}}$ | $y(9)=81$ | $y(25)=375$",
+      "current_body": "Exponent $2$ would have required $4^{2}=16$, but the logged ratio is $8$, not $16$. The two measurements do not fit a square. An integer-exponent guess is tempting and wrong. The recovered $r=\\frac{3}{2}$ is the unique power that turns a factor of $4$ on $x$ into a factor of $8$ on $y$. A square-law fit would have needed the response ratio to be $16$ when the input ratio is $4$, and the logged pair gives $8$.",
+      "new_body": "Exponent $2$ would have required $4^{2}=16$, but the logged ratio is $8$, not $16$. The two measurements do not fit a square. An integer-exponent guess is tempting and wrong. The recovered $r=\\frac{3}{2}$ is the unique power that turns a factor of $4$ on $x$ into a factor of $8$ on $y$. A square-law fit would have needed the response ratio to be $16$ when the input ratio is $4$, and the logged pair gives $8$.",
+      "displays_overview": [
+        "$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24}$$",
+        "$$A\\cdot 4^{r}=24$$",
+        "$$4^{r}=8 \\tag{1}$$",
+        "$$A\\cdot 4^{r}=24 \\tag{2}$$",
+        "$$y=3x^{\\frac{3}{2}}$$",
+        "$$3\\cdot 9^{\\frac{3}{2}}=81$$",
+        "$$3\\cdot 25^{\\frac{3}{2}}=375$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-40:D",
+      "w": 62,
+      "header": "**D.** → True",
+      "listed_header": "**D.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $x>0$ be the input and $y$ the response. Two unknowns need two facts; the first two measurements supply them. The third measurement and the planned run are not used in the fit.\n\n**1. Translate: the ratio.** $A$ cancels:\n\n$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24}$$\n\n**2. Translate: the level.** Either point then pins $A$:\n\n$$A\\cdot 4^{r}=24$$\n\n**Part 2: The model.**\n\n$$4^{r}=8 \\tag{1}$$\n\n$$A\\cdot 4^{r}=24 \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Equation (1) forces $r=\\frac{3}{2}$. Equation (2) then gives $A=3$, so\n\n$$y=3x^{\\frac{3}{2}}$$\n\n**2.** Both fitted points sit on that law, so they are consistent with a single power.\n\n**3.** The held-out point:\n\n$$3\\cdot 9^{\\frac{3}{2}}=81$$\n\nmatches the recorded $81$, so it does not contradict the fit.\n\n**4.** The planned run:\n\n$$3\\cdot 25^{\\frac{3}{2}}=375$$\n\nnot $300$.\n\n**5.** Exponent $2$ would require $4^{2}=16$, but the observed ratio is $8$, so $r=2$ is uniquely ruled out.\n\n**Answer.** $r=\\frac{3}{2}$ | $A=3$ | $y=3x^{\\frac{3}{2}}$ | $y(9)=81$ | $y(25)=375$",
+      "current_body": "The overview already listed $y(25)=375$, which sits above $350$. Twenty-five contributes $5^{3}=125$, times $3$ is $375$. A square-law prediction $A\\cdot 625$ would have been a different number entirely. Letter B already ruled out exponent $2$; this letter only checks the fitted $r=\\frac{3}{2}$ at the planned run. Falling short of $350$ would have needed $A$ below $350/125$, and the recovered $A=3$ does not.",
+      "new_body": "The overview already listed $y(25)=375$, which sits above $350$. Twenty-five contributes $5^{3}=125$, times $3$ is $375$. A square-law prediction $A\\cdot 625$ would have been a different number entirely. Letter B already ruled out exponent $2$; this letter only checks the fitted $r=\\frac{3}{2}$ at the planned run. Falling short of $350$ would have needed $A$ below $350/125$, and the recovered $A=3$ does not.",
+      "displays_overview": [
+        "$$\\left(\\frac{16}{4}\\right)^{r}=\\frac{192}{24}$$",
+        "$$A\\cdot 4^{r}=24$$",
+        "$$4^{r}=8 \\tag{1}$$",
+        "$$A\\cdot 4^{r}=24 \\tag{2}$$",
+        "$$y=3x^{\\frac{3}{2}}$$",
+        "$$3\\cdot 9^{\\frac{3}{2}}=81$$",
+        "$$3\\cdot 25^{\\frac{3}{2}}=375$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-45:C",
+      "w": 69,
+      "header": "**C.** → False",
+      "listed_header": "**C.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $g$ = gas feed. Two unknowns need both runs. The ratio cancels $A$ and isolates $r$; the eight-feed level then pins $A$.\n\n**1. Translate: the ratio.**\n\n$$\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}$$\n\n**2. Translate: the eight-feed level.** $A\\cdot 8^{r}=16$.\n\n**Part 2: The model.**\n\n$$r=\\frac{2}{3} \\tag{1}$$\n\n$$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $r<1$, doubling the feed does not double throughput, and throughput per cubic metre falls.\n\n**2.** The ceiling $T=32$ is met at $g=16\\sqrt{2}\\approx 22.63$, below $24$.\n\n**3.** $T(64)=64$.\n\n**Answer.** $A=4$ | $r=\\frac{2}{3}$ | ceiling at $g=16\\sqrt{2}$",
+      "current_body": "Doubling gas would double throughput only if $r=1$. The factor is $2^{\\frac{2}{3}}\\approx 1.59$, not $2$. The furnace will not keep pace with the feed. A linear scale-up assumes every extra cubic metre of gas is as productive as the last, but $r=\\frac{2}{3}<1$ means diminishing returns. Throughput would have to carry exponent $1$ for a doubled feed to double the output, and the two logged runs do not support that.",
+      "new_body": "Doubling gas would double throughput only if $r=1$. The factor is $2^{\\frac{2}{3}}\\approx 1.59$, not $2$. The furnace will not keep pace with the feed. A linear scale-up assumes every extra cubic metre of gas is as productive as the last, but $r=\\frac{2}{3}<1$ means diminishing returns. Throughput would have to carry exponent $1$ for a doubled feed to double the output, and the two logged runs do not support that.",
+      "displays_overview": [
+        "$$\\frac{36}{16}=\\left(\\frac{27}{8}\\right)^{r}$$",
+        "$$r=\\frac{2}{3} \\tag{1}$$",
+        "$$T(g)=4g^{\\frac{2}{3}} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-46:B",
+      "w": 69,
+      "header": "**B.** → True",
+      "listed_header": "**B.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $d$ = depth in metres and $V$ = stored volume. The exponent is given, so the survey is a difference of shape factors and recovers $A$.\n\n**1. Translate: the survey.**\n\n$$A(25-9)=64$$\n\n**2. Translate: a change of unit.** $d_{\\mathrm{cm}}=100d$ rescales only the coefficient.\n\n**Part 2: The model.**\n\n$$V(d)=4d^{2} \\tag{1}$$\n\n$$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** $A=4$. Volume grows faster than depth and without a cap.\n\n**2.** $V(6)=144$. Filling from four metres to eight metres adds $192$, not more than $200$.\n\n**3.** Doubling stored volume scales depth by $\\sqrt{2}$, not by more than $2$.\n\n**Answer.** $A=4$ | $V=4d^{2}$ | $V(6)=144$",
+      "current_body": "The overview already lists $V(6)=144$, which sits above $140$. Six metres squared is $36$, times $4$. Linear scaling from the $5$ m store would have missed that exact square. Depth $6$ is not $20\\%$ more volume than depth $5$, because volume runs with $d^{2}$. A basin under $140$ at $6$ m would have needed $A$ below $140/36$, and the recovered $A=4$ puts it $4$ cubic metres over the mark.",
+      "new_body": "The overview already lists $V(6)=144$, which sits above $140$. Six metres squared is $36$, times $4$. Linear scaling from the $5$ m store would have missed that exact square. Depth $6$ is not $20\\%$ more volume than depth $5$, because volume runs with $d^{2}$. A basin under $140$ at $6$ m would have needed $A$ below $140/36$, and the recovered $A=4$ puts it $4$ cubic metres over the mark.",
+      "displays_overview": [
+        "$$A(25-9)=64$$",
+        "$$V(d)=4d^{2} \\tag{1}$$",
+        "$$V=\\frac{4}{10000}\\,d_{\\mathrm{cm}}^{2} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-53:B",
+      "w": 66,
+      "header": "**B.** → False",
+      "listed_header": "**B.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $w$ be wind speed, $s$ surge height, and $L$ the loss index. Composing multiplies exponents and raises the inner coefficient to the outer power.\n\n**1. Translate: the surge stage.**\n\n$$s(w)=0.5 w^{0.5}$$\n\n**2. Translate: the loss stage applied to it.**\n\n$$L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}$$\n\n**Part 2: The model.**\n\n$$32\\cdot 0.5^{3}=4 \\qquad 0.5\\cdot 3=1.5 \\tag{1}$$\n\n$$L(w)=4 w^{1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A named wind speed, stage by stage:\n\n$$s(64)=4 \\qquad L(64)=2048$$\n\n**2.** Scale of a doubling:\n\n$$\\frac{L(2w)}{L(w)}=2^{1.5}=2\\sqrt{2}\\approx 2.83$$\n\n**3.** Invert a loss of $1000$:\n\n$$w=250^{\\frac{2}{3}}\\approx 39.69$$\n\n**4.** Marginal loss rises because the composed exponent exceeds $1$:\n\n$$L'(w)=6 w^{0.5}$$\n\n**Answer.** $L(w)=4w^{1.5}$ | $s(64)=4$ | $L(64)=2048$ | $L=1000$ at $w\\approx 39.7$",
+      "current_body": "Doubling wind multiplies loss by $2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83$, not by $2$. The composed exponent sits above one, so losses more than double. A one-for-one wind scale-up understates the second stage. Surge already grows with $\\sqrt{w}$, and cubing that surge is what pushes the leftover exponent to $1.5$. A doubled loss index would have needed the composition to land at exponent $1$, which these two stages do not.",
+      "new_body": "Doubling wind multiplies loss by $2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.83$, not by $2$. The composed exponent sits above one, so losses more than double. A one-for-one wind scale-up understates the second stage. Surge already grows with $\\sqrt{w}$, and cubing that surge is what pushes the leftover exponent to $1.5$. A doubled loss index would have needed the composition to land at exponent $1$, which these two stages do not.",
+      "displays_overview": [
+        "$$s(w)=0.5 w^{0.5}$$",
+        "$$L(w)=32\\bigl(0.5 w^{0.5}\\bigr)^{3}$$",
+        "$$32\\cdot 0.5^{3}=4 \\qquad 0.5\\cdot 3=1.5 \\tag{1}$$",
+        "$$L(w)=4 w^{1.5} \\tag{2}$$",
+        "$$s(64)=4 \\qquad L(64)=2048$$",
+        "$$\\frac{L(2w)}{L(w)}=2^{1.5}=2\\sqrt{2}\\approx 2.83$$",
+        "$$w=250^{\\frac{2}{3}}\\approx 39.69$$",
+        "$$L'(w)=6 w^{0.5}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-55:E",
+      "w": 69,
+      "header": "**E.** → True",
+      "listed_header": "**E.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $m$ be body mass in kilograms and $E(m)$ daily energy. The exponent $\\frac{2}{3}$ is given, so only $A$ is unknown. The $70$ units is a difference of two animals, and both masses are cubes.\n\n**1. Translate: the shape factors.**\n\n$$27^{\\frac{2}{3}}=9 \\qquad 64^{\\frac{2}{3}}=16$$\n\n**2. Translate: the recorded gap.**\n\n$$A(16-9)=70$$\n\n**Part 2: The model.**\n\n$$E(m)=10 m^{\\frac{2}{3}} \\tag{1}$$\n\n$$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Named levels:\n\n$$E(27)=90 \\qquad E(64)=160$$\n\n**2.** Inverse:\n\n$$m=\\bigl(E/10\\bigr)^{\\frac{3}{2}}$$\n\n**3.** Herd comparison at total mass $216$ kg:\n\n$$8E(27)=720 \\qquad E(216)=360$$\n\n**4.** Merging two equal animals:\n\n$$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$\n\n**Answer.** $A=10$ | $E(64)=160$ | $8E(27)=2E(216)$ | per-kilogram law $10m^{-\\frac{1}{3}}$",
+      "current_body": "The overview already listed $E(216)=360$, which sits under $400$. Two hundred and sixteen is $6^{3}$, so the two-thirds power is $36$, times $10$. A cube-then-linear guess would have overshot. Treating the $216$ kg animal as eight copies of the $27$ kg animal is the other comparison in the overview and is not this letter. Clearing $400$ would have needed $A$ above $400/36$, and the recovered $A=10$ stays at $360$.",
+      "new_body": "The overview already listed $E(216)=360$, which sits under $400$. Two hundred and sixteen is $6^{3}$, so the two-thirds power is $36$, times $10$. A cube-then-linear guess would have overshot. Treating the $216$ kg animal as eight copies of the $27$ kg animal is the other comparison in the overview and is not this letter. Clearing $400$ would have needed $A$ above $400/36$, and the recovered $A=10$ stays at $360$.",
+      "displays_overview": [
+        "$$27^{\\frac{2}{3}}=9 \\qquad 64^{\\frac{2}{3}}=16$$",
+        "$$A(16-9)=70$$",
+        "$$E(m)=10 m^{\\frac{2}{3}} \\tag{1}$$",
+        "$$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}} \\tag{2}$$",
+        "$$E(27)=90 \\qquad E(64)=160$$",
+        "$$m=\\bigl(E/10\\bigr)^{\\frac{3}{2}}$$",
+        "$$8E(27)=720 \\qquad E(216)=360$$",
+        "$$E(2m)/E(m)=2^{\\frac{2}{3}}<2$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-56:C",
+      "w": 65,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $d$ be driving distance and $f(d)$ weekly visitors. The exponent $-1.5$ is given, so only $A$ is unknown. The recorded $350$ is a difference of two zones, and both distances are perfect squares.\n\n**1. Translate: the shape factors.**\n\n$$4^{1.5}=8 \\qquad 16^{1.5}=64$$\n\n**2. Translate: the recorded gap.**\n\n$$\\frac{A}{8}-\\frac{A}{64}=350$$\n\n**Part 2: The model.**\n\n$$\\frac{7A}{64}=350 \\tag{1}$$\n\n$$f(d)=3200 d^{-1.5} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Zone levels:\n\n$$f(4)=400 \\qquad f(16)=50 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5$$\n\n**2.** Core-catchment boundary:\n\n$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08$$\n\n**3.** Scale and slope:\n\n$$\\frac{f(4d)}{f(d)}=\\frac{1}{8}$$\n\nThe slope magnitude $\\lvert f'(d)\\rvert$ falls as $d$ rises.\n\n**Answer.** $A=3200$ | $f(4)=400$ | $f(9)\\approx 118.5$ | core out to $d\\approx 10.08$ km",
+      "current_body": "The overview already listed $f(9)\\approx 118.5$, which sits above $100$. Nine contributes $3^{3}=27$, and $3200/27\\approx 118.5$. That reading still clears the hundred-visitor core threshold. The core boundary in the overview sits near $10.08$ km, so a $9$ km zone is still inside that catchment. A solver who used $9^{1.5}=27$ as the visitor count itself, forgetting to divide $3200$, would report $27$ and miss the threshold.",
+      "new_body": "The overview already listed $f(9)\\approx 118.5$, which sits above $100$. Nine contributes $3^{3}=27$, and $3200/27\\approx 118.5$. That reading still clears the hundred-visitor core threshold. The core boundary in the overview sits near $10.08$ km, so a $9$ km zone is still inside that catchment. A solver who used $9^{1.5}=27$ as the visitor count itself, forgetting to divide $3200$, would report $27$ and miss the threshold.",
+      "displays_overview": [
+        "$$4^{1.5}=8 \\qquad 16^{1.5}=64$$",
+        "$$\\frac{A}{8}-\\frac{A}{64}=350$$",
+        "$$\\frac{7A}{64}=350 \\tag{1}$$",
+        "$$f(d)=3200 d^{-1.5} \\tag{2}$$",
+        "$$f(4)=400 \\qquad f(16)=50 \\qquad f(9)=\\frac{3200}{27}\\approx 118.5$$",
+        "$$3200 d^{-1.5}=100 \\Rightarrow d=32^{\\frac{2}{3}}\\approx 10.08$$",
+        "$$\\frac{f(4d)}{f(d)}=\\frac{1}{8}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-57:C",
+      "w": 56,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $a$ be panel area and $y(a)$ daily output. Both $A$ and $r$ are unknown, so the two arrays supply two equations: their ratio carries the exponent, and either array then carries the coefficient.\n\n**1. Translate: the ratio of the two arrays.**\n\n$$\\bigl(\\tfrac{225}{100}\\bigr)^{r}=\\tfrac{360}{240}$$\n\n**2. Translate: the coefficient.**\n\n$$A\\cdot 100^{r}=240$$\n\n**Part 2: The model.**\n\n$$2.25^{r}=1.5 \\tag{1}$$\n\n$$y(a)=24\\sqrt{a} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because $1.5=2.25^{\\frac{1}{2}}$,\n\n$$r=\\frac{1}{2} \\qquad A=24$$\n\n**2.** The proposal:\n\n$$y(450)=24\\sqrt{450}\\approx 509.1<520$$\n\n**3.** Average product:\n\n$$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}} \\qquad \\frac{y(100)}{100}=2.4$$\n\n**4.** Doubling the $240$ kWh output:\n\n$$a=400$$\n\n**Answer.** $r=\\frac{1}{2}$ | $A=24$ | $y(a)=24\\sqrt{a}$ | $y(450)\\approx 509$ | double output at $a=400$",
+      "current_body": "Output per square metre is $24a^{-\\frac{1}{2}}$, a negative leftover power. A larger roof delivers more kilowatt-hours in total, but fewer per square metre. Falling intensity is the $r<1$ story. Total output $24\\sqrt{a}$ still rises; it is the quotient $y/a$ that falls. A constant intensity would have needed $r=1$, and the two array records forced $r=\\frac{1}{2}$ instead.",
+      "new_body": "Output per square metre is $24a^{-\\frac{1}{2}}$, a negative leftover power. A larger roof delivers more kilowatt-hours in total, but fewer per square metre. Falling intensity is the $r<1$ story. Total output $24\\sqrt{a}$ still rises; it is the quotient $y/a$ that falls. A constant intensity would have needed $r=1$, and the two array records forced $r=\\frac{1}{2}$ instead.",
+      "displays_overview": [
+        "$$\\bigl(\\tfrac{225}{100}\\bigr)^{r}=\\tfrac{360}{240}$$",
+        "$$A\\cdot 100^{r}=240$$",
+        "$$2.25^{r}=1.5 \\tag{1}$$",
+        "$$y(a)=24\\sqrt{a} \\tag{2}$$",
+        "$$r=\\frac{1}{2} \\qquad A=24$$",
+        "$$y(450)=24\\sqrt{450}\\approx 509.1<520$$",
+        "$$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}} \\qquad \\frac{y(100)}{100}=2.4$$",
+        "$$a=400$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-58:B",
+      "w": 73,
+      "header": "**B.** → True",
+      "listed_header": "**B.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $N$ be cumulative volume, $c$ unit cost, and $S$ cumulative spend. Two milestones give two equations: their ratio isolates $b$, and either milestone then fixes $A$.\n\n**1. Translate: the ratio of the milestones.**\n\n$$4^{b}=\\frac{40}{80}$$\n\n**2. Translate: cumulative spend.**\n\n$$S(N)=A N^{b+1}$$\n\n**Part 2: The model.**\n\n$$c(N)=800 N^{-\\frac{1}{2}} \\tag{1}$$\n\n$$S(N)=800 N^{\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exponent and coefficient:\n\n$$b=-\\frac{1}{2} \\qquad A=800$$\n\n**2.** Named cost and spend:\n\n$$c(1600)=20 \\qquad S(100)=8000$$\n\n**3.** Scale:\n\n$$4^{-\\frac{1}{2}}=\\frac{1}{2} \\qquad 2^{-\\frac{1}{2}}\\approx 0.707$$\n\n**4.** Quadrupling $N$ doubles $S$, it does not more than double $S$.\n\n**Answer.** $b=-\\frac{1}{2}$ | $A=800$ | $c(1600)=20$ | $S(100)=8000$ | $S(N)=800\\sqrt{N}$",
+      "current_body": "Unit cost $800N^{-\\frac{1}{2}}$ falls, while cumulative spend $S=800N^{\\frac{1}{2}}$ still rises. The leftover exponent on spend is positive. Cheaper cells can still mean a larger total cheque as volume grows. The usual mix-up is to treat falling unit cost as falling total spend; multiplying a falling $c$ by a rising $N$ is what keeps $S$ climbing. Spend would fall only if the leftover exponent $b+1$ were negative, and $b=-\\frac{1}{2}$ does not go that far.",
+      "new_body": "Unit cost $800N^{-\\frac{1}{2}}$ falls, while cumulative spend $S=800N^{\\frac{1}{2}}$ still rises. The leftover exponent on spend is positive. Cheaper cells can still mean a larger total cheque as volume grows. The usual mix-up is to treat falling unit cost as falling total spend; multiplying a falling $c$ by a rising $N$ is what keeps $S$ climbing. Spend would fall only if the leftover exponent $b+1$ were negative, and $b=-\\frac{1}{2}$ does not go that far.",
+      "displays_overview": [
+        "$$4^{b}=\\frac{40}{80}$$",
+        "$$S(N)=A N^{b+1}$$",
+        "$$c(N)=800 N^{-\\frac{1}{2}} \\tag{1}$$",
+        "$$S(N)=800 N^{\\frac{1}{2}} \\tag{2}$$",
+        "$$b=-\\frac{1}{2} \\qquad A=800$$",
+        "$$c(1600)=20 \\qquad S(100)=8000$$",
+        "$$4^{-\\frac{1}{2}}=\\frac{1}{2} \\qquad 2^{-\\frac{1}{2}}\\approx 0.707$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-62:C",
+      "w": 60,
+      "header": "**C.** → False",
+      "listed_header": "**C.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $m$ = buoy mass in kilograms, $t$ = the same mass in tonnes, $H$ = holding power in kilonewtons. The exponent is given, so one trial fixes $A$. A change of unit is the substitution $m=1000t$, and the conversion enters under the exponent.\n\n**1. Translate: the trial buoy.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=24 \\qquad 8^{\\frac{2}{3}}=4$$\n\n**2. Translate: the unit change.**\n\n$$B=A\\cdot 1000^{\\frac{2}{3}}$$\n\n**Part 2: The model.**\n\n$$H(m)=6m^{\\frac{2}{3}} \\tag{1}$$\n\n$$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The storm mass in kilograms is $125$, which is $0.125$ tonnes, not $125$ tonnes.\n\n**2.** Two $8$ kg buoys hold $48$ kN, short of one $64$ kg buoy at $96$ kN. Doubling mass multiplies holding power by $2^{\\frac{2}{3}}\\approx 1.587$.\n\n**Answer.** $A=6$ | $B=600$ | storm mass $125$ kg | doubling factor $2^{\\frac{2}{3}}$",
+      "current_body": "Doubling mass multiplies hold by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Holding power rises, but not in lockstep with mass. Two small buoys are not a doubled mass in one hull; the exponent $\\frac{2}{3}$ is a surface-like leftover, so extra kilograms buy less than proportional extra hold. Lockstep would have needed exponent $1$, and the trial buoy was fitted with $\\frac{2}{3}$.",
+      "new_body": "Doubling mass multiplies hold by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Holding power rises, but not in lockstep with mass. Two small buoys are not a doubled mass in one hull; the exponent $\\frac{2}{3}$ is a surface-like leftover, so extra kilograms buy less than proportional extra hold. Lockstep would have needed exponent $1$, and the trial buoy was fitted with $\\frac{2}{3}$.",
+      "displays_overview": [
+        "$$A\\cdot 8^{\\frac{2}{3}}=24 \\qquad 8^{\\frac{2}{3}}=4$$",
+        "$$B=A\\cdot 1000^{\\frac{2}{3}}$$",
+        "$$H(m)=6m^{\\frac{2}{3}} \\tag{1}$$",
+        "$$H(t)=600t^{\\frac{2}{3}} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-63:D",
+      "w": 68,
+      "header": "**D.** → False",
+      "listed_header": "**D.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $d$ = hop distance in metres and $T$ = sustained throughput in megabits per second. The exponent $-2$ is given, so one bench reading fixes $A$. Because the exponent is negative, the reliability floor becomes a maximum distance.\n\n**1. Translate: the bench reading.**\n\n$$\\frac{A}{4^{2}}=50$$\n\n**2. Translate: the reliability floor.**\n\n$$\\frac{A}{d^{2}}\\ge 8 \\quad\\Longleftrightarrow\\quad d\\le \\sqrt{\\frac{A}{8}}$$\n\n**Part 2: The model.**\n\n$$T(d)=\\frac{800}{d^{2}} \\tag{1}$$\n\n$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The reliable radius is $10$ m, and $T(11)\\approx 6.61$ already misses the floor.\n\n**2.** Doubling a hop quarters throughput, the inverse $(2)$ is a power, and an extra metre cuts more throughput at $4$ m than at $8$ m.\n\n**Answer.** $A=800$ | reliable radius $10$ m | doubling factor $\\frac{1}{4}$ | $T$ never negative",
+      "current_body": "At $d=11$, $T(11)=\\frac{800}{121}\\approx 6.61$, which sits below $8$. The reliable radius is $10$ m; a longer hop can only be slower. Eleven metres already misses the floor. A solver who used $d=11$ in an inverse-linear $800/11$ would report a much larger throughput and think the floor still holds. Inverse square is what drops $11$ m below $8$ Mbps; the extra metre past the $10$ m radius is enough.",
+      "new_body": "At $d=11$, $T(11)=\\frac{800}{121}\\approx 6.61$, which sits below $8$. The reliable radius is $10$ m; a longer hop can only be slower. Eleven metres already misses the floor. A solver who used $d=11$ in an inverse-linear $800/11$ would report a much larger throughput and think the floor still holds. Inverse square is what drops $11$ m below $8$ Mbps; the extra metre past the $10$ m radius is enough.",
+      "displays_overview": [
+        "$$\\frac{A}{4^{2}}=50$$",
+        "$$\\frac{A}{d^{2}}\\ge 8 \\quad\\Longleftrightarrow\\quad d\\le \\sqrt{\\frac{A}{8}}$$",
+        "$$T(d)=\\frac{800}{d^{2}} \\tag{1}$$",
+        "$$d=\\sqrt{800}\\, T^{-\\frac{1}{2}} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-68:A",
+      "w": 53,
+      "header": "**A.** → True",
+      "listed_header": "**A.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $d$ = distance from the hub in metres and $I$ = acoustic intensity in watts per square metre. The exponent $-2$ is given, so one meter reading fixes $A$. Because the exponent is negative, the night cap becomes a minimum standing distance.\n\n**1. Translate: the meter reading.**\n\n$$\\frac{A}{2^{2}}=0.72$$\n\n**2. Translate: the night cap.**\n\n$$\\frac{A}{d^{2}}\\le 0.08 \\quad\\Longleftrightarrow\\quad d\\ge \\sqrt{\\frac{A}{0.08}}$$\n\n**Part 2: The model.**\n\n$$I(d)=\\frac{2.88}{d^{2}} \\tag{1}$$\n\n$$I'(d)=-5.76\\, d^{-3} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** The recovered coefficient is $2.88$, not $1.44$. Doubling distance quarters intensity.\n\n**2.** The cap is met at $d=6$, where $I=0.08$, and $|I'|$ is larger at $2$ m than at $6$ m.\n\n**Answer.** $I(d)=2.88d^{-2}$ | cap met at $d=6$ m | doubling factor $\\frac{1}{4}$ | $A\\ne 1.44$",
+      "current_body": "Identity $(1)$ already gives $2^{-2}=\\frac{1}{4}$. Doubling distance quarters intensity at every starting range. Inverse-linear thinking would have claimed a half. Inverse square is steeper than inverse proportion. Halving would have been the $r=-1$ story; the meter reading forced $r=-2$. The night-cap distance later in the task uses this same quartering, not a half.",
+      "new_body": "Identity $(1)$ already gives $2^{-2}=\\frac{1}{4}$. Doubling distance quarters intensity at every starting range. Inverse-linear thinking would have claimed a half. Inverse square is steeper than inverse proportion. Halving would have been the $r=-1$ story; the meter reading forced $r=-2$. The night-cap distance later in the task uses this same quartering, not a half.",
+      "displays_overview": [
+        "$$\\frac{A}{2^{2}}=0.72$$",
+        "$$\\frac{A}{d^{2}}\\le 0.08 \\quad\\Longleftrightarrow\\quad d\\ge \\sqrt{\\frac{A}{0.08}}$$",
+        "$$I(d)=\\frac{2.88}{d^{2}} \\tag{1}$$",
+        "$$I'(d)=-5.76\\, d^{-3} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-69:B",
+      "w": 52,
+      "header": "**B.** → True",
+      "listed_header": "**B.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $q$ = flow in cubic metres per hour, $H$ = differential head in metres, $v$ = jet speed in metres per second. The pump stage is calibrated from the commissioning run. Composing the two stages multiplies the exponents.\n\n**1. Translate: the commissioning run.**\n\n$$A\\cdot 5^{2}=50$$\n\n**2. Translate: the composition.**\n\n$$v(q)=4\\sqrt{2q^{2}} \\qquad 2\\cdot \\frac{1}{2}=1$$\n\n**Part 2: The model.**\n\n$$H(q)=2q^{2} \\tag{1}$$\n\n$$v(q)=4\\sqrt{2}\\, q \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Jet speed is linear in flow, with $v(5)=20\\sqrt{2}$. Doubling flow quadruples head and doubles speed.\n\n**2.** A target of $40\\sqrt{2}$ m/s needs $q=10$, not $q=20$, and eliminating $q$ gives $H=\\frac{v^{2}}{16}$.\n\n**Answer.** $H(q)=2q^{2}$ | $v(q)=4\\sqrt{2}\\, q$ | $v(5)=20\\sqrt{2}$ m/s | $40\\sqrt{2}$ m/s needs $q=10$",
+      "current_body": "At $q=5$, $v=20\\sqrt{2}>28$ because $\\sqrt{2}>1.4$. The overview already listed $v(5)=20\\sqrt{2}$. Using $4\\sqrt{50}$ is the same check. Jet speed already sits above twenty-eight metres per second. Twenty-eight would require $\\sqrt{2}=1.4$ exactly, and $\\sqrt{2}$ overshoots that. A solver who dropped the $\\sqrt{2}$ and reported $v=20$ would sit under the cutoff and flip the letter.",
+      "new_body": "At $q=5$, $v=20\\sqrt{2}>28$ because $\\sqrt{2}>1.4$. The overview already listed $v(5)=20\\sqrt{2}$. Using $4\\sqrt{50}$ is the same check. Jet speed already sits above twenty-eight metres per second. Twenty-eight would require $\\sqrt{2}=1.4$ exactly, and $\\sqrt{2}$ overshoots that. A solver who dropped the $\\sqrt{2}$ and reported $v=20$ would sit under the cutoff and flip the letter.",
+      "displays_overview": [
+        "$$A\\cdot 5^{2}=50$$",
+        "$$v(q)=4\\sqrt{2q^{2}} \\qquad 2\\cdot \\frac{1}{2}=1$$",
+        "$$H(q)=2q^{2} \\tag{1}$$",
+        "$$v(q)=4\\sqrt{2}\\, q \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-76:A",
+      "w": 57,
+      "header": "**A.** → False",
+      "listed_header": "**A.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $x$ = tonnes of feed. The exponent is given, so the eight-tonne level pins $A$. Cost is linear, so a curve with exponent $\\frac{2}{3}$ is overtaken once.\n\n**1. Translate: the recorded revenue.**\n\n$$A\\cdot 8^{\\frac{2}{3}}=360$$\n\n**Part 2: The model.**\n\n$$R(x)=90x^{\\frac{2}{3}}, \\qquad C(x)=30x \\tag{1}$$\n\n$$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Revenue is not proportional to feed. At $x=64$, cost $1920$ already exceeds revenue $1440$. Profit at $x=8$ is $120$.\n\n**2.** $R'(8)=30>R'(27)=20$. For $x>27$ ratio (2) stays below $1$, so extra feed cannot restore a surplus.\n\n**Answer.** $A=90$ | break-even at $x=27$ | $P(8)=120$ | cost leads for every $x>27$",
+      "current_body": "Revenue is $90x^{\\frac{2}{3}}$, and $\\frac{2}{3}\\neq 1$. Doubling feed multiplies revenue by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Revenue rises more slowly than feed. Proportionality would have required lockstep. Cost is the linear series here, $C=30x$; revenue is the slower one. A proportional reading would survive only if the eight-tonne calibration had produced exponent $1$, which it did not.",
+      "new_body": "Revenue is $90x^{\\frac{2}{3}}$, and $\\frac{2}{3}\\neq 1$. Doubling feed multiplies revenue by $2^{\\frac{2}{3}}\\approx 1.59$, not by $2$. Revenue rises more slowly than feed. Proportionality would have required lockstep. Cost is the linear series here, $C=30x$; revenue is the slower one. A proportional reading would survive only if the eight-tonne calibration had produced exponent $1$, which it did not.",
+      "displays_overview": [
+        "$$A\\cdot 8^{\\frac{2}{3}}=360$$",
+        "$$R(x)=90x^{\\frac{2}{3}}, \\qquad C(x)=30x \\tag{1}$$",
+        "$$\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-77:C",
+      "w": 67,
+      "header": "**C.** → True",
+      "listed_header": "**C.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $x$ = pallet-volume index and $f$ = daily euros. No single level is known, so $A$ comes out of a difference.\n\n**1. Translate: the surviving record.**\n\n$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$\n\n**Part 2: The model.**\n\n$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$\n\n$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A factor of $4$ on the index multiplies cost by $8$, not by $4$. Because $r>1$, cost grows faster than the index, and equal index gaps do not give equal cost gaps.\n\n**2.** $f(9)=162>150$ and $f(25)-f(9)=588$, which is not under $500$.\n\n**Answer.** $A=6$ | $f(9)=162$ | $f(25)=750$ | factor of $4$ on volume multiplies cost by $8$",
+      "current_body": "The exponent $\\frac{3}{2}>1$, and the same $4^{\\frac{3}{2}}=8$ from A is already larger than $4$. Cost grows faster than the pallet-volume index. A proportional handler would have carried exponent $1$. Letter A asked whether a factor of $4$ on volume is a factor of $4$ on cost; this letter names the comparison that factor already settled. Equal growth would have needed $r=1$, and the surviving record forced $r=\\frac{3}{2}$.",
+      "new_body": "The exponent $\\frac{3}{2}>1$, and the same $4^{\\frac{3}{2}}=8$ from A is already larger than $4$. Cost grows faster than the pallet-volume index. A proportional handler would have carried exponent $1$. Letter A asked whether a factor of $4$ on volume is a factor of $4$ on cost; this letter names the comparison that factor already settled. Equal growth would have needed $r=1$, and the surviving record forced $r=\\frac{3}{2}$.",
+      "displays_overview": [
+        "$$A\\left(16^{\\frac{3}{2}}-4^{\\frac{3}{2}}\\right)=336$$",
+        "$$f(x)=6x^{\\frac{3}{2}} \\tag{1}$$",
+        "$$\\frac{f(kx)}{f(x)}=k^{\\frac{3}{2}} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-79:D",
+      "w": 66,
+      "header": "**D.** → False",
+      "listed_header": "**D.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $p$ = hourly tariff in euros and $q$ = occupied spaces. The exponent $-2$ is the constant elasticity. The shortcut multiplies that elasticity by a percentage change; the exact route raises the tariff factor to $-2$.\n\n**1. Translate: the observed pair.**\n\n$$A\\cdot 3^{-2}=4000$$\n\n**2. Translate: the two methods.** For a tariff factor $k$,\n\n$$-2(k-1), \\qquad k^{-2}-1$$\n\n**Part 2: The model.**\n\n$$q(p)=36000p^{-2} \\tag{1}$$\n\n$$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** A $25\\%$ rise has exact multiplier $0.64$, a $36\\%$ cut, so $q(3.75)=2560>2500$. The shortcut's $50\\%$ overstates that loss. The two routes do not agree.\n\n**2.** A $25\\%$ cut raises demand by about $77.8\\%$, not by $36\\%$. At $p=2$, demand is $9000>8000$.\n\n**Answer.** $A=36000$ | exact cut $36\\%$ for a $25\\%$ rise | $q(3.75)=2560$ | $q(2)=9000$",
+      "current_body": "A $25\\%$ rise cuts demand by $36\\%$; a $25\\%$ cut raises it by $\\frac{16}{9}-1=\\frac{7}{9}\\approx 77.8\\%$. Inverse-square percentage changes are not symmetric. The two percentages are not the same. Going up to $1.25p$ multiplies demand by $0.64$; coming back down is a multiply by $1/0.64$, which is larger than $1.25$. Reusing the $36\\%$ in both directions applies a linear elasticity shortcut that inverse square does not permit.",
+      "new_body": "A $25\\%$ rise cuts demand by $36\\%$; a $25\\%$ cut raises it by $\\frac{16}{9}-1=\\frac{7}{9}\\approx 77.8\\%$. Inverse-square percentage changes are not symmetric. The two percentages are not the same. Going up to $1.25p$ multiplies demand by $0.64$; coming back down is a multiply by $1/0.64$, which is larger than $1.25$. Reusing the $36\\%$ in both directions applies a linear elasticity shortcut that inverse square does not permit.",
+      "displays_overview": [
+        "$$A\\cdot 3^{-2}=4000$$",
+        "$$-2(k-1), \\qquad k^{-2}-1$$",
+        "$$q(p)=36000p^{-2} \\tag{1}$$",
+        "$$\\frac{q(kp)}{q(p)}=k^{-2} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-80:A",
+      "w": 58,
+      "header": "**A.** → True",
+      "listed_header": "**A.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $h$ = height in metres and $M$ = mass in kilograms. Geometric similarity fixes the exponent at $3$; one observed pair pins $A$.\n\n**1. Translate: the weighed bell.**\n\n$$A(0.5)^{3}=30$$\n\n**2. Translate: the scaling rule.**\n\n$$\\frac{M(kh)}{M(h)}=k^{3}$$\n\n**Part 2: The model.**\n\n$$M(h)=240h^{3} \\tag{1}$$\n\n$$M(kh)=k^{3}M(h) \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Because the exponent is $3>1$, mass outruns height. Doubling height multiplies mass by $8$, not by $2$. Mass per metre is $240h^{2}$, not constant.\n\n**2.** $M(1.5)=810>700$ and $M(1)=240>200$.\n\n**Answer.** $A=240$ | $M(1.5)=810$ | doubling $\\times 8$ | $M(1)=240$",
+      "current_body": "Identity $(2)$ already gives $2^{3}=8$. Doubling height multiplies mass by $8$, which exceeds $2$. Mass grows faster than height. A proportional casting would have carried exponent $1$. Geometric similarity is a volume scaling, so the leftover exponent is $3$, not $1$. Mass would keep pace with height only for a one-dimensional casting, and a bell is not that.",
+      "new_body": "Identity $(2)$ already gives $2^{3}=8$. Doubling height multiplies mass by $8$, which exceeds $2$. Mass grows faster than height. A proportional casting would have carried exponent $1$. Geometric similarity is a volume scaling, so the leftover exponent is $3$, not $1$. Mass would keep pace with height only for a one-dimensional casting, and a bell is not that.",
+      "displays_overview": [
+        "$$A(0.5)^{3}=30$$",
+        "$$\\frac{M(kh)}{M(h)}=k^{3}$$",
+        "$$M(h)=240h^{3} \\tag{1}$$",
+        "$$M(kh)=k^{3}M(h) \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-83:B",
+      "w": 62,
+      "header": "**B.** → False",
+      "listed_header": "**B.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $m$ = body mass in grams, $D$ = oxygen demand in millilitres per hour, $G$ = gill area in square centimetres. Both exponents are supplied, so each law needs exactly one record: a difference for demand and a level for gill area. Intensity subtracts the exponents. A tank total is a sum, never $D$ applied to a pooled mass.\n\n**1. Translate: the demand gap.**\n\n$$A\\left(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\right)=95$$\n\n**2. Translate: the gill record.**\n\n$$B\\cdot 64^{\\frac{2}{3}}=48$$\n\n**3. Translate: demand per unit gill area.**\n\n$$\\frac{D(m)}{G(m)}=\\frac{A}{B}m^{\\frac{1}{12}}$$\n\n**Part 2: The model.**\n\n$$D(m)=5m^{\\frac{3}{4}} \\tag{1}$$\n\n$$G(m)=3m^{\\frac{2}{3}} \\tag{2}$$\n\n$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make both calibrations one-step solves:\n\n$$81^{\\frac{3}{4}}=27,\\quad 16^{\\frac{3}{4}}=8 \\;\\Rightarrow\\; 19A=95 \\;\\Rightarrow\\; A=5$$\n\n$$64^{\\frac{2}{3}}=16 \\;\\Rightarrow\\; 16B=48 \\;\\Rightarrow\\; B=3$$\n\n**2.** Because $\\frac{3}{4}<1$, demand lags mass. Intensity $(3)$ still rises, since $\\frac{1}{12}>0$, and two $16$ g fish out-area one $32$ g fish.\n\n**3.** Levels against the thresholds:\n\n$$D(256)=320>300, \\qquad 16\\,D(16)=640>600$$\n\n**Answer.** $A=5$, $B=3$ | $D(256)=320$ | $16\\,D(16)=640$ | $\\frac{D}{G}=\\frac{5}{3}m^{\\frac{1}{12}}$",
+      "current_body": "The overview already composed $\\frac{D}{G}=\\frac{5}{3}m^{\\frac{1}{12}}$. The leftover exponent $\\frac{1}{12}$ is positive, so intensity rises with body mass. It does not fall. Demand outruns gill area, just barely, because $\\frac{3}{4}>\\frac{2}{3}$. The mix-up is to read \"per square centimetre\" as a declining average, copying the $r<1$ story from demand-versus-mass. Intensity would fall only if gill area outran demand, and $\\frac{2}{3}$ does not beat $\\frac{3}{4}$.",
+      "new_body": "The overview already composed $\\frac{D}{G}=\\frac{5}{3}m^{\\frac{1}{12}}$. The leftover exponent $\\frac{1}{12}$ is positive, so intensity rises with body mass. It does not fall. Demand outruns gill area, just barely, because $\\frac{3}{4}>\\frac{2}{3}$. The mix-up is to read \"per square centimetre\" as a declining average, copying the $r<1$ story from demand-versus-mass. Intensity would fall only if gill area outran demand, and $\\frac{2}{3}$ does not beat $\\frac{3}{4}$.",
+      "displays_overview": [
+        "$$A\\left(81^{\\frac{3}{4}}-16^{\\frac{3}{4}}\\right)=95$$",
+        "$$B\\cdot 64^{\\frac{2}{3}}=48$$",
+        "$$\\frac{D(m)}{G(m)}=\\frac{A}{B}m^{\\frac{1}{12}}$$",
+        "$$D(m)=5m^{\\frac{3}{4}} \\tag{1}$$",
+        "$$G(m)=3m^{\\frac{2}{3}} \\tag{2}$$",
+        "$$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}} \\tag{3}$$",
+        "$$81^{\\frac{3}{4}}=27,\\quad 16^{\\frac{3}{4}}=8 \\;\\Rightarrow\\; 19A=95 \\;\\Rightarrow\\; A=5$$",
+        "$$64^{\\frac{2}{3}}=16 \\;\\Rightarrow\\; 16B=48 \\;\\Rightarrow\\; B=3$$",
+        "$$D(256)=320>300, \\qquad 16\\,D(16)=640>600$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-85:A",
+      "w": 68,
+      "header": "**A.** → False",
+      "listed_header": "**A.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $d$ = distance from the source in metres and $H$ = dose rate in microsieverts per hour. The quadrupling record isolates the exponent. One survey reading then pins the coefficient; because that exponent is negative the recovery multiplies by a square. The barrier question inverts the same law.\n\n**1. Translate: the quadrupling rule.**\n\n$$4^{r}=\\frac{1}{16}$$\n\n**2. Translate: the survey reading.**\n\n$$A\\cdot 3^{r}=80$$\n\n**3. Translate: the barrier rule.**\n\n$$\\frac{A}{d^{-r}}=5$$\n\n**Part 2: The model.**\n\n$$r=-2 \\tag{1}$$\n\n$$H(d)=720d^{-2} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Matching powers of four, then multiplying by the survey square:\n\n$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$\n\n**2.** Doubling quarters the dose rate, not halves it. The inverse of $(2)$ is a power, and an extra metre cuts more dose at $3$ m than at $6$ m.\n\n**3.** Levels against the thresholds:\n\n$$H(6)=20<25, \\qquad d=12<15$$\n\n**Answer.** $r=-2$, $A=720$ | $H(d)=720d^{-2}$ | $H(6)=20$ | barrier at $d=12$ m",
+      "current_body": "The overview already recovered $r=-2$. Doubling distance multiplies dose by $2^{-2}=\\frac{1}{4}$, not by $\\frac{1}{2}$. A half would have been inverse-linear; this survey's quadrupling record is inverse-square. The quadrupling note $4^{-2}=\\frac{1}{16}$ is the same exponent. Halving is the $r=-1$ reading; the quadrupling record forced $r=-2$ uniquely. A solver who halved the $3$ m survey reading at twice the distance would still be running inverse-linear, which this source is not.",
+      "new_body": "The overview already recovered $r=-2$. Doubling distance multiplies dose by $2^{-2}=\\frac{1}{4}$, not by $\\frac{1}{2}$. A half would have been inverse-linear; this survey's quadrupling record is inverse-square. The quadrupling note $4^{-2}=\\frac{1}{16}$ is the same exponent. Halving is the $r=-1$ reading; the quadrupling record forced $r=-2$ uniquely. A solver who halved the $3$ m survey reading at twice the distance would still be running inverse-linear, which this source is not.",
+      "displays_overview": [
+        "$$4^{r}=\\frac{1}{16}$$",
+        "$$A\\cdot 3^{r}=80$$",
+        "$$\\frac{A}{d^{-r}}=5$$",
+        "$$r=-2 \\tag{1}$$",
+        "$$H(d)=720d^{-2} \\tag{2}$$",
+        "$$\\frac{1}{16}=4^{-2} \\quad \\Rightarrow \\quad r=-2, \\qquad A=80\\times 9=720$$",
+        "$$H(6)=20<25, \\qquad d=12<15$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-86:D",
+      "w": 70,
+      "header": "**D.** → True",
+      "listed_header": "**D.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $t$ = hours since release, $r$ = plume radius in metres, $S$ = stained area in square metres. The survey gives a difference rather than a level, so the coefficient comes from subtracting two shape factors. Composing with the disc formula then doubles the exponent and squares the coefficient.\n\n**1. Translate: the recorded growth.**\n\n$$A\\left(8^{\\frac{2}{3}}-1^{\\frac{2}{3}}\\right)=45$$\n\n**2. Translate: the composition.** Squaring the radius law doubles its exponent:\n\n$$S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}=\\pi A^{2}t^{\\frac{4}{3}}$$\n\n**Part 2: The model.**\n\n$$r(t)=15t^{\\frac{2}{3}} \\tag{1}$$\n\n$$S(t)=225\\pi\\, t^{\\frac{4}{3}} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Exact shape factors make the calibration a one-step solve:\n\n$$8^{\\frac{2}{3}}=4 \\;\\Rightarrow\\; 3A=45 \\;\\Rightarrow\\; A=15$$\n\n**2.** $(2)$ is a power of $t$. Because $\\frac{4}{3}>1$, area outruns proportional growth, and doubling time multiplies area by $2^{\\frac{4}{3}}\\approx 2.52$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$r(8)=60>50, \\qquad t=64\\ \\text{at}\\ r=240$$\n\n**Answer.** $A=15$ | $r(t)=15t^{\\frac{2}{3}}$, $S(t)=225\\pi t^{\\frac{4}{3}}$ | $r(8)=60$ m | $r=240$ m at $t=64$ h",
+      "current_body": "The overview already lists $r(8)=60$, which sits above $50$. Eight hours contribute $8^{\\frac{2}{3}}=4$, times $15$. That is also $r(1)+45=15+45$, the first-hour radius plus the logged gap. A linear-in-time plume would have added equal metres each hour and missed this $60$. Clearing $50$ m at hour $8$ is what $A=15$ forces; a coefficient below $50/4$ is what would have failed, and the survey gap of $45$ m did not produce that.",
+      "new_body": "The overview already lists $r(8)=60$, which sits above $50$. Eight hours contribute $8^{\\frac{2}{3}}=4$, times $15$. That is also $r(1)+45=15+45$, the first-hour radius plus the logged gap. A linear-in-time plume would have added equal metres each hour and missed this $60$. Clearing $50$ m at hour $8$ is what $A=15$ forces; a coefficient below $50/4$ is what would have failed, and the survey gap of $45$ m did not produce that.",
+      "displays_overview": [
+        "$$A\\left(8^{\\frac{2}{3}}-1^{\\frac{2}{3}}\\right)=45$$",
+        "$$S(t)=\\pi\\bigl(At^{\\frac{2}{3}}\\bigr)^{2}=\\pi A^{2}t^{\\frac{4}{3}}$$",
+        "$$r(t)=15t^{\\frac{2}{3}} \\tag{1}$$",
+        "$$S(t)=225\\pi\\, t^{\\frac{4}{3}} \\tag{2}$$",
+        "$$8^{\\frac{2}{3}}=4 \\;\\Rightarrow\\; 3A=45 \\;\\Rightarrow\\; A=15$$",
+        "$$r(8)=60>50, \\qquad t=64\\ \\text{at}\\ r=240$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-87:C",
+      "w": 52,
+      "header": "**C.** → False",
+      "listed_header": "**C.** → False",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Building the model.**\n\nLet $h$ = head in metres, $h_{\\mathrm{cm}}=100h$ = head in centimetres, $Q$ = discharge. The exponent belongs to the weir, so one gauging fixes the coefficient. A change of input unit replaces the input by a constant multiple of itself, and a power function pushes that constant through its exponent, so the exponent never moves and only the coefficient does. A change of output unit scales the coefficient directly.\n\n**1. Translate: the gauging.**\n\n$$A(0.25)^{\\frac{3}{2}}=2$$\n\n**2. Translate: the change of input unit.**\n\n$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$\n\n**3. Translate: the change of output unit.** One cubic metre per second is $1000$ litres per second.\n\n**Part 2: The model.**\n\n$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$\n\n$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$\n\n$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$\n\n**Part 3: Solve.**\n\n**1.** The shape factor at the gauged head is exact:\n\n$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$\n\n**2.** The inverse $h=(Q/16)^{2/3}$ is a power. Because the exponent exceeds $1$, discharge outruns head, and doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$.\n\n**3.** Levels against the thresholds:\n\n$$Q(1)=16<20, \\qquad Q(4)=128>100$$\n\n**Answer.** $A=16$ | $Q=16h^{\\frac{3}{2}}$ (m, m$^{3}$/s) | $Q=0.016h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, m$^{3}$/s) | $Q=16h_{\\mathrm{cm}}^{\\frac{3}{2}}$ (cm, L/s)",
+      "current_body": "Doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$. The three-halves exponent outruns a proportional clock. Changing the input unit to centimetres rescales only the coefficient; it does not flatten the exponent to $1$. Discharge would double with head only for a linear weir, and the gauging was fitted with $\\frac{3}{2}$.",
+      "new_body": "Doubling head multiplies discharge by $2^{\\frac{3}{2}}\\approx 2.83$, not by $2$. The three-halves exponent outruns a proportional clock. Changing the input unit to centimetres rescales only the coefficient; it does not flatten the exponent to $1$. Discharge would double with head only for a linear weir, and the gauging was fitted with $\\frac{3}{2}$.",
+      "displays_overview": [
+        "$$A(0.25)^{\\frac{3}{2}}=2$$",
+        "$$Q=A\\left(\\frac{h_{\\mathrm{cm}}}{100}\\right)^{\\frac{3}{2}}=\\frac{A}{100^{\\frac{3}{2}}}\\,h_{\\mathrm{cm}}^{\\frac{3}{2}}$$",
+        "$$Q=16h^{\\frac{3}{2}} \\quad \\text{(m, m}^{3}\\text{/s)} \\tag{1}$$",
+        "$$Q=0.016\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, m}^{3}\\text{/s)} \\tag{2}$$",
+        "$$Q=16\\,h_{\\mathrm{cm}}^{\\frac{3}{2}} \\quad \\text{(cm, L/s)} \\tag{3}$$",
+        "$$0.25^{\\frac{3}{2}}=0.5^{3}=0.125 \\;\\Rightarrow\\; A=\\frac{2}{0.125}=16$$",
+        "$$Q(1)=16<20, \\qquad Q(4)=128>100$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-8-96:E",
+      "w": 57,
+      "header": "**E.** → True",
+      "listed_header": "**E.** → True",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Building the model.**\n\nLet $p$ = admission price and $q$ = tickets. The exponent is given, so the desk record fixes $A$. For a price factor $k$, the shortcut and the exact rule return $-2(k-1)$ and $k^{-2}-1$.\n\n**1. Translate: the desk record.**\n\n$$A\\cdot 10^{-2}=40$$\n\n**Part 2: The model.**\n\n$$q(p)=4000p^{-2} \\tag{1}$$\n\n$$R(p)=\\frac{4000}{p} \\tag{2}$$\n\n**Part 3: Solve.**\n\n**1.** Point elasticity equals the exponent, $\\varepsilon=-2$ at every price.\n\n**2.** $q(12)=\\frac{250}{9}$, a cut of about $12.22>10$ tickets. A $10\\%$ rise cuts demand by about $17.4\\%$, not by the shortcut's $20\\%$.\n\n**3.** $(2)$ falls with price. Halving the price quadruples demand, so $q(5)=160>150$.\n\n**Answer.** $\\varepsilon=-2$ | $A=4000$ | exact cut about $12.22$ tickets | $q(5)=160$",
+      "current_body": "The overview already lists $q(5)=160$, which sits above $150$. Halving the price quadruples inverse-square demand: $40\\cdot 4=160$. Inverse-linear thinking would have claimed $80$ and missed the letter. Eighty is the $r=-1$ reading of a halved tariff. Inverse square is why $5$ euros already clears $150$ tickets; an exponent of $-1$ would have left the desk at $80$.",
+      "new_body": "The overview already lists $q(5)=160$, which sits above $150$. Halving the price quadruples inverse-square demand: $40\\cdot 4=160$. Inverse-linear thinking would have claimed $80$ and missed the letter. Eighty is the $r=-1$ reading of a halved tariff. Inverse square is why $5$ euros already clears $150$ tickets; an exponent of $-1$ would have left the desk at $80$.",
+      "displays_overview": [
+        "$$A\\cdot 10^{-2}=40$$",
+        "$$q(p)=4000p^{-2} \\tag{1}$$",
+        "$$R(p)=\\frac{4000}{p} \\tag{2}$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-105:D",
+      "w": 61,
+      "header": "**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)",
+      "listed_header": "**D) The total amount paid over the entire life of the loan is approximately \\$49,682.53.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe company borrows \\$35,000 at 13% and pays \\$10,000 at each year-end until a smaller final payment clears the balance:\n\n$$K = 35,000, \\qquad r = 0.13, \\qquad a = 10,000$$\n\n**Part 2: Formula.**\n\nThe required number of periods is the smallest integer satisfying\n\n$$n \\ge \\frac{\\ln a-\\ln(a-rK)}{\\ln(1+r)}$$\n\nAfter $m$ years, the loan's future value is\n\n$$K(1+r)^m$$\n\nThe future value of $m$ fixed payments at the time of the last payment is\n\n$$\\frac{a}{r}\\left[(1+r)^m-1\\right]$$\n\n**Part 3: Solve.**\n\n**1.** First evaluate the period bound:\n\n$$\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}$$\n\n$$= \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)} \\approx 4.9663$$\n\nThe smallest qualifying integer is\n\n$$n = 5$$\n\n**2.** Four full payments total\n\n$$4 \\times 10,000 = 40,000.00$$\n\n**3.** The loan's value after four years is\n\n$$35,000(1.13)^4 \\approx 57,066.58$$\n\n**4.** The four fixed payments are worth at year 4\n\n$$\\frac{10,000}{0.13}\\left[(1.13)^4-1\\right] \\approx 48,497.97$$\n\n**5.** The remaining debt at year 4 is\n\n$$57,066.58 - 48,497.97 = 8,568.61$$\n\nCarry that balance forward one more year:\n\n$$8,568.61 \\times 1.13 = 9,682.53$$\n\nThe final payment is about \\$9,682.53.\n\n**6.** Total paid is\n\n$$40,000.00 + 9,682.53 = 49,682.53$$\n\nTotal interest is\n\n$$49,682.53 - 35,000.00 = 14,682.53$$\n\nThe \\$14,682.53 interest total is less than the \\$35,000.00 principal.",
+      "current_body": "Four full payments plus the recovered final instalment are already $40,000 + 9,682.53 = 49,682.53$ in the overview. Five copies of $\\$10,000$ would overstate the total by about $\\$317$. The last payment is smaller than the four full ones, so the life-of-loan total cannot be $\\$50,000$. Adding principal plus interest, $35,000 + 14,682.53$, is the same $49,682.53$ by a different route.",
+      "new_body": "Four full payments plus the recovered final instalment are already $40,000 + 9,682.53 = 49,682.53$ in the overview. Five copies of $\\$10,000$ would overstate the total by about $\\$317$. The last payment is smaller than the four full ones, so the life-of-loan total cannot be $\\$50,000$. Adding principal plus interest, $35,000 + 14,682.53$, is the same $49,682.53$ by a different route.",
+      "displays_overview": [
+        "$$K = 35,000, \\qquad r = 0.13, \\qquad a = 10,000$$",
+        "$$n \\ge \\frac{\\ln a-\\ln(a-rK)}{\\ln(1+r)}$$",
+        "$$K(1+r)^m$$",
+        "$$\\frac{a}{r}\\left[(1+r)^m-1\\right]$$",
+        "$$\\frac{\\ln(10,000)-\\ln(10,000-0.13 \\times 35,000)}{\\ln(1.13)}$$",
+        "$$= \\frac{\\ln(10,000)-\\ln(5,450)}{\\ln(1.13)} \\approx 4.9663$$",
+        "$$n = 5$$",
+        "$$4 \\times 10,000 = 40,000.00$$",
+        "$$35,000(1.13)^4 \\approx 57,066.58$$",
+        "$$\\frac{10,000}{0.13}\\left[(1.13)^4-1\\right] \\approx 48,497.97$$",
+        "$$57,066.58 - 48,497.97 = 8,568.61$$",
+        "$$8,568.61 \\times 1.13 = 9,682.53$$",
+        "$$40,000.00 + 9,682.53 = 49,682.53$$",
+        "$$49,682.53 - 35,000.00 = 14,682.53$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-112:C",
+      "w": 61,
+      "header": "**C) At an 8% annual rate, Schedule I is the cheapest of the three schedules.**  (true)",
+      "listed_header": "**C) At an 8% annual rate, Schedule I is the cheapest of the three schedules.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nSchedule I costs \\$850,000 today. Schedule II is a nine-payment annuity due with payments of \\$140,000. Schedule III combines \\$300,000 today with eleven ordinary-annuity payments of \\$80,000:\n\n$$a_{\\mathrm{II}}=140,000, \\qquad n_{\\mathrm{II}}=9$$\n\n$$a_{\\mathrm{III}}=80,000, \\qquad n_{\\mathrm{III}}=11$$\n\nThe annual rates are $r=0.08$ and $r=0.12$.\n\n**Part 2: Formula.**\n\nSchedule II uses the annuity-due formula:\n\n$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$\n\nSchedule III uses an immediate payment plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}}=300,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$\n\n**Part 3: Solve.**\n\n**1.** At 8%, the present values are:\n\n$$PV_{\\mathrm{II}}\\approx944,529, \\qquad PV_{\\mathrm{III}}\\approx871,117$$\n\nCompare these with Schedule I:\n\n$$850,000<871,117<944,529$$\n\nSchedule I is cheapest at 8%.\n\n**2.** At 12%, the present values change to:\n\n$$PV_{\\mathrm{III}}\\approx775,016, \\qquad PV_{\\mathrm{II}}\\approx835,470$$\n\nThe ranking is now:\n\n$$775,016<835,470<850,000$$\n\nSchedule III becomes cheapest at 12%, not Schedule II.",
+      "current_body": "The overview already ranked $850,000 < 871,117 < 944,529$. Cash wins at $8\\%$. Both instalment plans still carry a present-value premium at this modest rate. Discounting is not strong enough at $8\\%$ to make waiting cheaper than paying $\\$850{,}000$ today. A solver who compared undiscounted payment totals, nine times $\\$140{,}000$ versus cash, would pick an instalment plan and reverse the ranking.",
+      "new_body": "The overview already ranked $850,000 < 871,117 < 944,529$. Cash wins at $8\\%$. Both instalment plans still carry a present-value premium at this modest rate. Discounting is not strong enough at $8\\%$ to make waiting cheaper than paying $\\$850{,}000$ today. A solver who compared undiscounted payment totals, nine times $\\$140{,}000$ versus cash, would pick an instalment plan and reverse the ranking.",
+      "displays_overview": [
+        "$$a_{\\mathrm{II}}=140,000, \\qquad n_{\\mathrm{II}}=9$$",
+        "$$a_{\\mathrm{III}}=80,000, \\qquad n_{\\mathrm{III}}=11$$",
+        "$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$",
+        "$$PV_{\\mathrm{III}}=300,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$",
+        "$$PV_{\\mathrm{II}}\\approx944,529, \\qquad PV_{\\mathrm{III}}\\approx871,117$$",
+        "$$850,000<871,117<944,529$$",
+        "$$PV_{\\mathrm{III}}\\approx775,016, \\qquad PV_{\\mathrm{II}}\\approx835,470$$",
+        "$$775,016<835,470<850,000$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-113:B",
+      "w": 61,
+      "header": "**B) At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.**  (false)",
+      "listed_header": "**B) At a 7.5% annual rate, the present value of Schedule III is approximately \\$2,250,000.00.**  (false)",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Setup.**\n\nSchedule I costs \\$2,400,000 today. Schedule II is a ten-payment annuity due with payments of \\$340,000. Schedule III combines \\$600,000 today with nine ordinary-annuity payments of \\$250,000:\n\n$$a_{\\mathrm{II}}=340,000, \\qquad n_{\\mathrm{II}}=10$$\n\n$$a_{\\mathrm{III}}=250,000, \\qquad n_{\\mathrm{III}}=9$$\n\nThe rates are $r=0.075$ and $r=0.115$.\n\n**Part 2: Formula.**\n\nSchedule II uses the annuity-due present value:\n\n$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$\n\nSchedule III uses an immediate payment plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}}=600,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$\n\n**Part 3: Solve.**\n\n**1.** At 7.5%, the two instalment schedules have present values:\n\n$$PV_{\\mathrm{II}}\\approx2,508,822, \\qquad PV_{\\mathrm{III}}\\approx2,194,722$$\n\nFor the requested comparison between Schedule I and Schedule II:\n\n$$2,400,000<2,508,822$$\n\nCash under Schedule I beats Schedule II at 7.5%. Schedule III is cheapest overall at this rate.\n\n**2.** At 11.5%, the present values are:\n\n$$PV_{\\mathrm{II}}\\approx2,186,562, \\qquad PV_{\\mathrm{III}}\\approx1,957,766$$\n\nSchedule II now falls below the cash price:\n\n$$2,186,562<2,400,000$$\n\nThe ranking of Schedules I and II flips, so Schedule II now beats cash. Schedule III remains the cheapest overall.",
+      "current_body": "The overview's $PV_{\\mathrm{III}} \\approx 2,194,722$, not $2,250,000$. The round $\\$2.25$ million is a nearby stand-in. III is still the cheapest overall at $7.5\\%$, just not at that rounder figure. Rounding the recovered present value up is how the wording gets to $\\$2.25$ million. This letter is only whether III equals that round quote at $7.5\\%$, not whether III wins the ranking.",
+      "new_body": "The overview's $PV_{\\mathrm{III}} \\approx 2,194,722$, not $2,250,000$. The round $\\$2.25$ million is a nearby stand-in. III is still the cheapest overall at $7.5\\%$, just not at that rounder figure. Rounding the recovered present value up is how the wording gets to $\\$2.25$ million. This letter is only whether III equals that round quote at $7.5\\%$, not whether III wins the ranking.",
+      "displays_overview": [
+        "$$a_{\\mathrm{II}}=340,000, \\qquad n_{\\mathrm{II}}=10$$",
+        "$$a_{\\mathrm{III}}=250,000, \\qquad n_{\\mathrm{III}}=9$$",
+        "$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$",
+        "$$PV_{\\mathrm{III}}=600,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$",
+        "$$PV_{\\mathrm{II}}\\approx2,508,822, \\qquad PV_{\\mathrm{III}}\\approx2,194,722$$",
+        "$$2,400,000<2,508,822$$",
+        "$$PV_{\\mathrm{II}}\\approx2,186,562, \\qquad PV_{\\mathrm{III}}\\approx1,957,766$$",
+        "$$2,186,562<2,400,000$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-113:D",
+      "w": 71,
+      "header": "**D) At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.**  (false)",
+      "listed_header": "**D) At an 11.5% annual rate, the present value of Schedule II is approximately \\$2,100,000.00.**  (false)",
+      "header_match": true,
+      "answer_key": false,
+      "listed_key": false,
+      "overview": "**Part 1: Setup.**\n\nSchedule I costs \\$2,400,000 today. Schedule II is a ten-payment annuity due with payments of \\$340,000. Schedule III combines \\$600,000 today with nine ordinary-annuity payments of \\$250,000:\n\n$$a_{\\mathrm{II}}=340,000, \\qquad n_{\\mathrm{II}}=10$$\n\n$$a_{\\mathrm{III}}=250,000, \\qquad n_{\\mathrm{III}}=9$$\n\nThe rates are $r=0.075$ and $r=0.115$.\n\n**Part 2: Formula.**\n\nSchedule II uses the annuity-due present value:\n\n$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$\n\nSchedule III uses an immediate payment plus an ordinary annuity:\n\n$$PV_{\\mathrm{III}}=600,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$\n\n**Part 3: Solve.**\n\n**1.** At 7.5%, the two instalment schedules have present values:\n\n$$PV_{\\mathrm{II}}\\approx2,508,822, \\qquad PV_{\\mathrm{III}}\\approx2,194,722$$\n\nFor the requested comparison between Schedule I and Schedule II:\n\n$$2,400,000<2,508,822$$\n\nCash under Schedule I beats Schedule II at 7.5%. Schedule III is cheapest overall at this rate.\n\n**2.** At 11.5%, the present values are:\n\n$$PV_{\\mathrm{II}}\\approx2,186,562, \\qquad PV_{\\mathrm{III}}\\approx1,957,766$$\n\nSchedule II now falls below the cash price:\n\n$$2,186,562<2,400,000$$\n\nThe ranking of Schedules I and II flips, so Schedule II now beats cash. Schedule III remains the cheapest overall.",
+      "current_body": "A higher rate does cheapen II, but the overview's $11.5\\%$ value is about $\\$2,186,562$, not $\\$2,100,000$. The round $\\$2.1$ million understates the recovered present value by about $\\$87,000$. Cheaper than cash is a ranking question for letter E; this letter is only whether the present value equals that round figure. Parking II at $\\$2.1$ million because it sits below the $\\$2.4$ million cash price mixes a ranking with a dollar quote.",
+      "new_body": "A higher rate does cheapen II, but the overview's $11.5\\%$ value is about $\\$2,186,562$, not $\\$2,100,000$. The round $\\$2.1$ million understates the recovered present value by about $\\$87,000$. Cheaper than cash is a ranking question for letter E; this letter is only whether the present value equals that round figure. Parking II at $\\$2.1$ million because it sits below the $\\$2.4$ million cash price mixes a ranking with a dollar quote.",
+      "displays_overview": [
+        "$$a_{\\mathrm{II}}=340,000, \\qquad n_{\\mathrm{II}}=10$$",
+        "$$a_{\\mathrm{III}}=250,000, \\qquad n_{\\mathrm{III}}=9$$",
+        "$$PV_{\\mathrm{II}}=a+\\frac{a}{r}\\left[1-(1+r)^{-(n-1)}\\right]$$",
+        "$$PV_{\\mathrm{III}}=600,000+\\frac{a}{r}\\left[1-(1+r)^{-n}\\right]$$",
+        "$$PV_{\\mathrm{II}}\\approx2,508,822, \\qquad PV_{\\mathrm{III}}\\approx2,194,722$$",
+        "$$2,400,000<2,508,822$$",
+        "$$PV_{\\mathrm{II}}\\approx2,186,562, \\qquad PV_{\\mathrm{III}}\\approx1,957,766$$",
+        "$$2,186,562<2,400,000$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-120:D",
+      "w": 72,
+      "header": "**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)",
+      "listed_header": "**D) The sum of all the project's cash flows, $a_0$ + $a_1$ + $a_2$, equals \\$9,600.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe initial outlay is \\$40,000. The project returns \\$22,000 after one year and \\$27,600 after two years:\n\n$$a_0=-40,000, \\qquad a_1=22,000, \\qquad a_2=27,600$$\n\n**Part 2: Formula.**\n\nAt a test rate $r$, the two-year net present value is:\n\n$$A=a_0+\\frac{a_1}{1+r}+\\frac{a_2}{(1+r)^2}$$\n\n**Part 3: Solve.**\n\n**1.** Step 1 tests $r=15\\%$:\n\n$$A=-40,000+\\frac{22,000}{1.15}+\\frac{27,600}{1.3225}$$\n\n$$=-40,000+19,130.43+20,869.57$$\n\n$$A=0.00$$\n\nThe NPV is \\$0.00 to the nearest cent.\n\n**2.** Step 2 uses the defining condition for an internal rate. At $r=15\\%$, the calculation gives:\n\n$$A=0$$\n\nThus 15% is the project's internal rate of return.\n\n**3.** At 10%, the NPV is:\n\n$$-40,000+\\frac{22,000}{1.10}+\\frac{27,600}{1.21}$$\n\n$$=-40,000+20,000.00+22,809.92 =2,809.92>0$$\n\nThe NPV is positive \\$2,809.92.\n\n**4.** At 20%, the NPV is:\n\n$$-40,000+\\frac{22,000}{1.20}+\\frac{27,600}{1.44}$$\n\n$$=-40,000+18,333.33+19,166.67 =-2,500.00<0$$\n\nThe NPV is negative \\$2,500.00.\n\n**5.** The undiscounted cash-flow sum is:\n\n$$-40,000+22,000+27,600=9,600$$\n\nThe sum is positive \\$9,600.",
+      "current_body": "The overview already added $-40,000+22,000+27,600=9,600$. A positive undiscounted total is why the unique IRR is positive. It is not a present value. Dropping the sign on the outlay, or adding only the two inflows, would report the wrong total and the wrong meaning. NPV letters discount these same three cash flows; this letter adds them at a zero rate, which is why the total can be positive while some NPVs are not.",
+      "new_body": "The overview already added $-40,000+22,000+27,600=9,600$. A positive undiscounted total is why the unique IRR is positive. It is not a present value. Dropping the sign on the outlay, or adding only the two inflows, would report the wrong total and the wrong meaning. NPV letters discount these same three cash flows; this letter adds them at a zero rate, which is why the total can be positive while some NPVs are not.",
+      "displays_overview": [
+        "$$a_0=-40,000, \\qquad a_1=22,000, \\qquad a_2=27,600$$",
+        "$$A=a_0+\\frac{a_1}{1+r}+\\frac{a_2}{(1+r)^2}$$",
+        "$$A=-40,000+\\frac{22,000}{1.15}+\\frac{27,600}{1.3225}$$",
+        "$$=-40,000+19,130.43+20,869.57$$",
+        "$$A=0.00$$",
+        "$$A=0$$",
+        "$$-40,000+\\frac{22,000}{1.10}+\\frac{27,600}{1.21}$$",
+        "$$=-40,000+20,000.00+22,809.92 =2,809.92>0$$",
+        "$$-40,000+\\frac{22,000}{1.20}+\\frac{27,600}{1.44}$$",
+        "$$=-40,000+18,333.33+19,166.67 =-2,500.00<0$$",
+        "$$-40,000+22,000+27,600=9,600$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-123:C",
+      "w": 66,
+      "header": "**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)",
+      "listed_header": "**C) Based on the internal rate of return criterion, Design B should be preferred over Design A.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nDesign A has an initial outlay of \\$120,000 and two year-end returns:\n\n$$a_0=-120,000, \\qquad a_1=54,000, \\qquad a_2=88,000$$\n\nDesign B has an outlay of \\$70,000 and a one-year return of \\$81,200:\n\n$$a=70,000, \\qquad b=81,200$$\n\nDesign A lasts two years, while Design B lasts one year.\n\n**Part 2: Formula.**\n\nDesign A's internal rate satisfies:\n\n$$a_0+\\frac{a_1}{1+r}+\\frac{a_2}{(1+r)^2}=0$$\n\nUse the substitution:\n\n$$s=(1+r)^{-1}$$\n\nFor the one-year Design B, use:\n\n$$r=\\frac{b}{a}-1$$\n\n**Part 3: Solve.**\n\n**1.** Step 1 forms Design A's quadratic:\n\n$$88,000s^2+54,000s-120,000=0$$\n\n**2.** Divide each term by 2,000:\n\n$$44s^2+27s-60=0$$\n\n**3.** Step 2 computes the discriminant:\n\n$$27^2+4(44)(60)=729+10,560 =11,289$$\n\n**4.** Its square root is:\n\n$$\\sqrt{11,289}\\approx106.250$$\n\n**5.** Step 3 takes the valid root:\n\n$$s=\\frac{-27+106.250}{88}, \\qquad s\\approx0.90057$$\n\nConvert that discount factor to Design A's internal rate:\n\n$$r_A=\\frac{1}{0.90057}-1, \\qquad r_A\\approx0.11041\\approx11.04\\%$$\n\n**6.** Step 4 calculates Design B's one-year return:\n\n$$r_B=\\frac{81,200}{70,000}-1 =1.16-1, \\qquad r_B=0.16=16\\%$$\n\n**7.** At a 13% discount rate, Design A has:\n\n$$NPV_A=-120,000+\\frac{54,000}{1.13}+\\frac{88,000}{1.2769}$$\n\n$$=-120,000+47,787.61+68,916.91$$\n\n$$NPV_A=-3,295.48<0$$\n\nDesign A's NPV is negative \\$3,295.48. Design B has:\n\n$$NPV_B=-70,000+\\frac{81,200}{1.13} =-70,000+71,858.41$$\n\n$$NPV_B=1,858.41>0$$\n\nDesign B's NPV is positive \\$1,858.41.",
+      "current_body": "The overview already ranked $16\\% > 11.04\\%$. IRR prefers B. A's larger total cash in is spread over two years; B's single-year $16\\%$ wins the rate comparison. IRR is a rate, not a dollar ranking, so A's bigger inflows do not automatically win. NPV at $13\\%$ is a different criterion in letter D; this letter only asks which internal rate is larger, and $16\\%$ beats $11.04\\%$.",
+      "new_body": "The overview already ranked $16\\% > 11.04\\%$. IRR prefers B. A's larger total cash in is spread over two years; B's single-year $16\\%$ wins the rate comparison. IRR is a rate, not a dollar ranking, so A's bigger inflows do not automatically win. NPV at $13\\%$ is a different criterion in letter D; this letter only asks which internal rate is larger, and $16\\%$ beats $11.04\\%$.",
+      "displays_overview": [
+        "$$a_0=-120,000, \\qquad a_1=54,000, \\qquad a_2=88,000$$",
+        "$$a=70,000, \\qquad b=81,200$$",
+        "$$a_0+\\frac{a_1}{1+r}+\\frac{a_2}{(1+r)^2}=0$$",
+        "$$s=(1+r)^{-1}$$",
+        "$$r=\\frac{b}{a}-1$$",
+        "$$88,000s^2+54,000s-120,000=0$$",
+        "$$44s^2+27s-60=0$$",
+        "$$27^2+4(44)(60)=729+10,560 =11,289$$",
+        "$$\\sqrt{11,289}\\approx106.250$$",
+        "$$s=\\frac{-27+106.250}{88}, \\qquad s\\approx0.90057$$",
+        "$$r_A=\\frac{1}{0.90057}-1, \\qquad r_A\\approx0.11041\\approx11.04\\%$$",
+        "$$r_B=\\frac{81,200}{70,000}-1 =1.16-1, \\qquad r_B=0.16=16\\%$$",
+        "$$NPV_A=-120,000+\\frac{54,000}{1.13}+\\frac{88,000}{1.2769}$$",
+        "$$=-120,000+47,787.61+68,916.91$$",
+        "$$NPV_A=-3,295.48<0$$",
+        "$$NPV_B=-70,000+\\frac{81,200}{1.13} =-70,000+71,858.41$$",
+        "$$NPV_B=1,858.41>0$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-30:E",
+      "w": 66,
+      "header": "**E) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.**  (true)",
+      "listed_header": "**E) The dollar gap between Fund A and Fund B narrows when Fund B switches from monthly to daily compounding.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe allocation is \\$400,000, so both funds start from the same principal:\n\n$$P = 400,000$$\n\nThe nominal annual rate is quoted as $9.5\\%$, so $r = i = 0.095$.\n\nFund A compounds continuously.\n\nFund B compounds monthly, so $m = 12$; the closing comparison switches it to daily compounding with $m = 365$.\n\nBoth funds are held for $t = 1$ year.\n\n**Part 2: Formula.**\n\nFund A accumulates continuously:\n\n$$S_A = P \\times e^{rt}$$\n\nFund B accumulates on its discrete schedule:\n\n$$S_B = P \\times (1+\\frac{i}{m})^{mt}$$\n\nThe ceiling on the effective annual rate is set by continuous compounding:\n\n$$EAR_{\\mathrm{max}} = e^{r} - 1$$\n\n**Part 3: Solve.**\n\n**1.** Fund A over one year:\n\n$$S_A = 400,000 \\times e^{0.095} = 400,000 \\times 1.0996589$$\n\n$$= 439,863.54$$\n\nFund A ends the year at \\$439,863.54.\n\n**2.** Fund B's monthly periodic rate is:\n\n$$\\frac{0.095}{12} = 0.0079167$$\n\n**3.** Fund B over twelve months:\n\n$$S_B = 400,000 \\times (1.0079167)^{12} = 400,000 \\times 1.0992476$$\n\n$$= 439,699.03$$\n\nThe correct balance is \\$439,699.03, not the \\$439,750.00 the statement claims.\n\n**4.** The ceiling on the effective annual rate is:\n\n$$EAR_{\\mathrm{max}} = e^{0.095} - 1 \\approx 9.97\\%$$\n\nThat ceiling sits above the nominal $9.50\\%$; it is not equal to it.\n\n**5.** Switching Fund B to daily compounding:\n\n$$S_{\\mathrm{daily}} = 400,000 \\times (1 + \\frac{0.095}{365})^{365}$$\n\n$$= 400,000 \\times 1.0996453 = 439,858.10$$\n\nDaily compounding reaches \\$439,858.10, still below Fund A's \\$439,863.54.\n\n**6.** The gap between continuous and monthly compounding is:\n\n$$439,863.54 - 439,699.03 = 164.51$$\n\nThat gap is \\$164.51.\n\n**7.** The gap between continuous and daily compounding is:\n\n$$439,863.54 - 439,858.10 = 5.44$$\n\nThat gap of \\$5.44 is narrower than the monthly gap of \\$164.51, so more frequent compounding closes the distance without ever crossing it.",
+      "current_body": "The overview's two gaps are about $\\$165$ monthly versus about $\\$5$ daily. Switching toward more frequent credits pulls Fund B toward the continuous ceiling, so the dollar gap shrinks. Daily compounding never overtakes Fund A; letter D already checked that. It only closes most of the $\\$165$. Expecting more frequent credits to widen the gap runs the comparison backwards: Fund B is the one catching up.",
+      "new_body": "The overview's two gaps are about $\\$165$ monthly versus about $\\$5$ daily. Switching toward more frequent credits pulls Fund B toward the continuous ceiling, so the dollar gap shrinks. Daily compounding never overtakes Fund A; letter D already checked that. It only closes most of the $\\$165$. Expecting more frequent credits to widen the gap runs the comparison backwards: Fund B is the one catching up.",
+      "displays_overview": [
+        "$$P = 400,000$$",
+        "$$S_A = P \\times e^{rt}$$",
+        "$$S_B = P \\times (1+\\frac{i}{m})^{mt}$$",
+        "$$EAR_{\\mathrm{max}} = e^{r} - 1$$",
+        "$$S_A = 400,000 \\times e^{0.095} = 400,000 \\times 1.0996589$$",
+        "$$= 439,863.54$$",
+        "$$\\frac{0.095}{12} = 0.0079167$$",
+        "$$S_B = 400,000 \\times (1.0079167)^{12} = 400,000 \\times 1.0992476$$",
+        "$$= 439,699.03$$",
+        "$$EAR_{\\mathrm{max}} = e^{0.095} - 1 \\approx 9.97\\%$$",
+        "$$S_{\\mathrm{daily}} = 400,000 \\times (1 + \\frac{0.095}{365})^{365}$$",
+        "$$= 400,000 \\times 1.0996453 = 439,858.10$$",
+        "$$439,863.54 - 439,699.03 = 164.51$$",
+        "$$439,863.54 - 439,858.10 = 5.44$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-35:A",
+      "w": 64,
+      "header": "**A) The annual-compounding value is exactly \\$42,800.00.**  (true)",
+      "listed_header": "**A) The annual-compounding value is exactly \\$42,800.00.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe reserve fund is \\$40,000, so every schedule starts from the same principal:\n\n$$P = 40,000$$\n\nThe nominal annual rate is quoted as $7\\%$, so $i = r = 0.07$.\n\nThe schedules are annual with $m = 1$, quarterly with $m = 4$, monthly with $m = 12$, and continuous.\n\nEach schedule runs for $t = 1$ year.\n\n**Part 2: Formula.**\n\nFor a finite number of compounding periods:\n\n$$S_m = P(1+\\frac{i}{m})^{m}$$\n\nFor continuous compounding:\n\n$$S_{\\mathrm{cont}} = P e^{r}$$\n\n**Part 3: Solve.**\n\n**1.** Annual compounding:\n\n$$S = 40,000 \\times 1.07 = 42,800.00$$\n\nThe year-end value is \\$42,800.00.\n\n**2.** Quarterly compounding, where the periodic rate is $0.0175$:\n\n$$S = 40,000 \\times (1.0175)^{4} = 40,000 \\times 1.0718590$$\n\n$$= 42,874.36$$\n\nThe year-end value is \\$42,874.36.\n\n**3.** Monthly compounding, where the periodic rate is $0.0058333$:\n\n$$S = 40,000 \\times (1.0058333)^{12} = 40,000 \\times 1.0722901$$\n\n$$= 42,891.60$$\n\nThe year-end value is \\$42,891.60.\n\n**4.** Continuous compounding:\n\n$$S = 40,000 \\times e^{0.07} = 40,000 \\times 1.0725082 = 42,900.33$$\n\nThe year-end value is \\$42,900.33.\n\n**5.** The step from quarterly to monthly compounding is worth:\n\n$$42,891.60 - 42,874.36 = 17.24$$\n\nThat gap is \\$17.24.\n\n**6.** The step from monthly to continuous compounding is worth:\n\n$$42,900.33 - 42,891.60 = 8.72$$\n\nThat gap of \\$8.72 is smaller than the earlier gap, not larger. The four values do rise with frequency, and they stop at the continuous ceiling.",
+      "current_body": "Annual compounding at $7\\%$ is $40,000 \\times 1.07$, which is step 1 of the overview: exactly $\\$42,800$. That is the weakest of the four schedules at this quoted rate. No intra-year interest-on-interest is credited when $m=1$, so this is also the only schedule that matches the nominal $7\\%$ as an effective rate. Using $(1.07)^{4}$ or $e^{0.07}$ here would be answering a later, stronger clock.",
+      "new_body": "Annual compounding at $7\\%$ is $40,000 \\times 1.07$, which is step 1 of the overview: exactly $\\$42,800$. That is the weakest of the four schedules at this quoted rate. No intra-year interest-on-interest is credited when $m=1$, so this is also the only schedule that matches the nominal $7\\%$ as an effective rate. Using $(1.07)^{4}$ or $e^{0.07}$ here would be answering a later, stronger clock.",
+      "displays_overview": [
+        "$$P = 40,000$$",
+        "$$S_m = P(1+\\frac{i}{m})^{m}$$",
+        "$$S_{\\mathrm{cont}} = P e^{r}$$",
+        "$$S = 40,000 \\times 1.07 = 42,800.00$$",
+        "$$S = 40,000 \\times (1.0175)^{4} = 40,000 \\times 1.0718590$$",
+        "$$= 42,874.36$$",
+        "$$S = 40,000 \\times (1.0058333)^{12} = 40,000 \\times 1.0722901$$",
+        "$$= 42,891.60$$",
+        "$$S = 40,000 \\times e^{0.07} = 40,000 \\times 1.0725082 = 42,900.33$$",
+        "$$42,891.60 - 42,874.36 = 17.24$$",
+        "$$42,900.33 - 42,891.60 = 8.72$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-39:B",
+      "w": 70,
+      "header": "**B) The tripling time at 6.5% is approximately 16.90 years.**  (true)",
+      "listed_header": "**B) The tripling time at 6.5% is approximately 16.90 years.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe fund places \\$12,000 in the account, so the starting balance is:\n\n$$S_0 = 12,000$$\n\nThe account pays a nominal annual rate of $6.5\\%$, so $r = 0.065$, added continuously.\n\nThe trustees ask for the times to reach $2S_0$, $3S_0$, and $4S_0$.\n\n**Part 2: Formula.**\n\nThe balance after $t$ years is:\n\n$$S(t) = S_0 e^{rt}$$\n\nReaching a multiple $M$ of the deposit takes:\n\n$$t = \\frac{\\ln(M)}{r}$$\n\n**Part 3: Solve.**\n\n**1.** Doubling the deposit takes:\n\n$$t = \\ln\\frac{(2)}{0.065} = \\frac{0.693147}{0.065} \\approx 10.6638$$\n\nThat is about $10.6638$ years.\n\n**2.** Tripling the deposit takes:\n\n$$t = \\ln\\frac{(3)}{0.065} = \\frac{1.098612}{0.065} \\approx 16.9017$$\n\nThat is about $16.9017$ years.\n\n**3.** Quadrupling the deposit takes:\n\n$$t = \\ln\\frac{(4)}{0.065} = \\frac{1.386294}{0.065} \\approx 21.3276$$\n\nThat is about $21.3276$ years.\n\n**4.** Twice the doubling time is:\n\n$$2 \\times 10.6638 = 21.3276$$\n\nThat matches the quadrupling time exactly, because the logarithms line up:\n\n$$\\ln(4) = \\ln(2^{2}) = 2\\ln(2)$$\n\n**5.** The tripling time compares with the doubling time as:\n\n$$\\frac{\\ln(3)}{\\ln(2)} \\approx 1.5850$$\n\nThe ratio is $1.5850$, not $1.5$. At the quadrupling time the account holds:\n\n$$12,000 \\times 4 = 48,000.00$$\n\nThe balance is then \\$48,000.00.",
+      "current_body": "Tripling swaps in $\\ln 3$: the overview's $16.90$ years. It is not $1.5$ times the doubling time, because $\\ln 3 / \\ln 2 \\approx 1.585$, not $1.5$. Letter E is the false claim that the ratio must be $1.5$; this letter only records the $16.90$ figure the logarithm actually produces. Multiplying the doubling time $10.66$ by $1.5$ would undershoot $16.90$ and miss the extra from $\\ln 3$ versus $1.5\\ln 2$.",
+      "new_body": "Tripling swaps in $\\ln 3$: the overview's $16.90$ years. It is not $1.5$ times the doubling time, because $\\ln 3 / \\ln 2 \\approx 1.585$, not $1.5$. Letter E is the false claim that the ratio must be $1.5$; this letter only records the $16.90$ figure the logarithm actually produces. Multiplying the doubling time $10.66$ by $1.5$ would undershoot $16.90$ and miss the extra from $\\ln 3$ versus $1.5\\ln 2$.",
+      "displays_overview": [
+        "$$S_0 = 12,000$$",
+        "$$S(t) = S_0 e^{rt}$$",
+        "$$t = \\frac{\\ln(M)}{r}$$",
+        "$$t = \\ln\\frac{(2)}{0.065} = \\frac{0.693147}{0.065} \\approx 10.6638$$",
+        "$$t = \\ln\\frac{(3)}{0.065} = \\frac{1.098612}{0.065} \\approx 16.9017$$",
+        "$$t = \\ln\\frac{(4)}{0.065} = \\frac{1.386294}{0.065} \\approx 21.3276$$",
+        "$$2 \\times 10.6638 = 21.3276$$",
+        "$$\\ln(4) = \\ln(2^{2}) = 2\\ln(2)$$",
+        "$$\\frac{\\ln(3)}{\\ln(2)} \\approx 1.5850$$",
+        "$$12,000 \\times 4 = 48,000.00$$"
+      ],
+      "displays_new": []
+    },
+    {
+      "key": "math-11-59:B",
+      "w": 64,
+      "header": "**B) Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately $t^* = 21.67$ years.**  (true)",
+      "listed_header": "**B) Using A = 1,200, k = 5, and r = 7.5%, the optimal harvest time is approximately $t^* = 21.67$ years.**  (true)",
+      "header_match": true,
+      "answer_key": true,
+      "listed_key": true,
+      "overview": "**Part 1: Setup.**\n\nThe general timber-value function is\n\n$$P(t) = A(t+k)^2$$\n\nFor the particular stand, the parameters are\n\n$$A = 1,200, \\qquad k = 5, \\qquad r = 0.075$$\n\nThe coefficient represents \\$1,200 in the model's monetary scale.\n\n**Part 2: Formula.**\n\nDifferentiate the general value function:\n\n$$P'(t) = 2A(t+k)$$\n\nAt an interior optimum,\n\n$$P'(t^*) = rP(t^*)$$\n\n**Part 3: Solve.**\n\n**1.** Substitute the general function and derivative:\n\n$$2A(t+k) = rA(t+k)^2$$\n\nBecause $A(t+k)$ is nonzero, divide by it:\n\n$$2 = r(t+k)$$\n\nSolve for time:\n\n$$t^* = \\frac{2}{r}-k$$\n\n**2.** Use the particular rate and shift:\n\n$$t^* = \\frac{2}{0.075}-5, \\qquad t^* = 26.6667-5, \\qquad t^* \\approx 21.67$$\n\nThe optimal harvest time is about $21.67$ years.\n\n**3.** The timber value at that time is\n\n$$P(t^*) = 1,200(26.6667)^2, \\qquad P(t^*) \\approx 853,333.33$$\n\nThe stand is then worth about \\$853,333.33.\n\n**4.** Discount that future value:\n\n$$f(t^*) = 853,333.33e^{-0.075 \\times 21.6667}$$\n\n$$f(t^*) = 853,333.33e^{-1.625}, \\qquad f(t^*) \\approx 168,031.30$$\n\nThe present value at the optimum is about \\$168,031.30.\n\n**5.** If $k = 8$, then\n\n$$t^* = \\frac{2}{0.075}-8, \\qquad t^* \\approx 26.6667-8 = 18.67$$\n\nThe optimal time becomes about $18.67$ years.\n\n**6.** If the rate rises to $15\\%$,\n\n$$t^* = \\frac{2}{0.15}-5, \\qquad t^* = 13.3333-5 = 8.33$$\n\nThe optimal time becomes about $8.33$ years.\n\n**7.** Half of the original optimum is\n\n$$\\frac{21.67}{2} \\approx 10.83$$\n\nThe $8.33$-year result at a $15\\%$ rate is less than half of the original $21.67$ years.",
+      "current_body": "Substituting into that formula is step 2 of the overview: $\\frac{2}{0.075} - 5 \\approx 21.67$. The $\\$1,200$ scale never enters the date, only the later present-value check. A solver who folded $A=1{,}200$ into the date, or who used $1/r - k$ instead of $2/r - k$, would land on a different year. The $21.67$ is what $r=7.5\\%$ and $k=5$ force once the $A$ cancels.",
+      "new_body": "Substituting into that formula is step 2 of the overview: $\\frac{2}{0.075} - 5 \\approx 21.67$. The $\\$1,200$ scale never enters the date, only the later present-value check. A solver who folded $A=1{,}200$ into the date, or who used $1/r - k$ instead of $2/r - k$, would land on a different year. The $21.67$ is what $r=7.5\\%$ and $k=5$ force once the $A$ cancels.",
+      "displays_overview": [
+        "$$P(t) = A(t+k)^2$$",
+        "$$A = 1,200, \\qquad k = 5, \\qquad r = 0.075$$",
+        "$$P'(t) = 2A(t+k)$$",
+        "$$P'(t^*) = rP(t^*)$$",
+        "$$2A(t+k) = rA(t+k)^2$$",
+        "$$2 = r(t+k)$$",
+        "$$t^* = \\frac{2}{r}-k$$",
+        "$$t^* = \\frac{2}{0.075}-5, \\qquad t^* = 26.6667-5, \\qquad t^* \\approx 21.67$$",
+        "$$P(t^*) = 1,200(26.6667)^2, \\qquad P(t^*) \\approx 853,333.33$$",
+        "$$f(t^*) = 853,333.33e^{-0.075 \\times 21.6667}$$",
+        "$$f(t^*) = 853,333.33e^{-1.625}, \\qquad f(t^*) \\approx 168,031.30$$",
+        "$$t^* = \\frac{2}{0.075}-8, \\qquad t^* \\approx 26.6667-8 = 18.67$$",
+        "$$t^* = \\frac{2}{0.15}-5, \\qquad t^* = 13.3333-5 = 8.33$$",
+        "$$\\frac{21.67}{2} \\approx 10.83$$"
+      ],
+      "displays_new": []
+    }
+  ]
+}
