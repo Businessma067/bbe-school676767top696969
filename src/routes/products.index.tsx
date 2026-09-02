@@ -24,6 +24,10 @@ export const Route = createFileRoute("/products/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://bbe-school.com/products" },
+    ],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(courseListJsonLd) },
     ],
   }),
   component: ProductsPage,
