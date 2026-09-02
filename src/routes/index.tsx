@@ -122,11 +122,11 @@ function Index() {
                   <Link
                     to="/products"
                     id="explore-courses"
-                    className="inline-flex flex-col items-center justify-center rounded-sm border border-[#161616] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                    style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
+                    className="inline-flex flex-col items-center justify-center rounded-sm border border-[#12263A] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#1d4f7c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                    style={{ backgroundColor: "#12263A", color: "#F4F9FD" }}
                   >
                     <span>Explore Courses</span>
-                    <span className="mt-0.5 text-[11px] font-medium text-[#F2F1ED]/70">
+                    <span className="mt-0.5 text-[11px] font-medium text-[#F4F9FD]/70">
                       See all BBE School products
                     </span>
                   </Link>
@@ -195,7 +195,7 @@ function Index() {
                 className={cn(
                   "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                   demoMode === m.key
-                    ? "border-white bg-white text-[#161616]"
+                    ? "border-white bg-white text-[#12263A]"
                     : "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white",
                 )}
               >
@@ -222,7 +222,7 @@ function Index() {
                   className={cn(
                     "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                     active
-                      ? "border-white bg-white text-[#161616]"
+                      ? "border-white bg-white text-[#12263A]"
                       : s.enabled
                         ? "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white"
                         : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
@@ -297,7 +297,7 @@ function Index() {
             <Link
               to="/products"
               className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-8 py-4 text-sm font-semibold transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-              style={{ backgroundColor: "#F2F1ED", color: "#161616" }}
+              style={{ backgroundColor: "#F4F9FD", color: "#12263A" }}
             >
               View Preparation Products
             </Link>
@@ -344,8 +344,8 @@ function Index() {
               <div className="relative z-10 flex justify-center py-4">
                 <Link
                   to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#2a2a2a]"
-                  style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
+                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#1d4f7c]"
+                  style={{ backgroundColor: "#12263A", color: "#F4F9FD" }}
                 >
                   <span>Read the full letter</span>
                   <svg
@@ -411,7 +411,7 @@ function Index() {
             <div className="flex items-center gap-3">
               <span
                 className="inline-flex h-2.5 w-2.5 rounded-full"
-                style={{ backgroundColor: "#161616" }}
+                style={{ backgroundColor: "#12263A" }}
               />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
@@ -449,7 +449,7 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
           className="mt-3 inline-flex items-center gap-1.5 rounded-sm border px-3 py-1"
           style={{ borderColor: "#D8D6CE" }}
         >
-          <span className="text-xs font-semibold tracking-wide" style={{ color: "#161616" }}>
+          <span className="text-xs font-semibold tracking-wide" style={{ color: "#12263A" }}>
             {report.badge}
           </span>
           {report.fire && (
