@@ -5,6 +5,7 @@ import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 
 import { cn } from "@/lib/utils";
+import { ExamCountdown } from "@/components/ExamCountdown";
 import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
@@ -49,113 +50,77 @@ function Index() {
       <SiteHeader showNav showMobileNav />
 
       <main>
-        {/* HERO — light ivory */}
-        <section className="relative overflow-hidden px-4 pt-14 pb-16 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8 lg:pt-28 lg:pb-32">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-              <div className="max-w-2xl">
-                {/* Rating + reviews */}
-                <div className="mb-6 flex flex-wrap items-center gap-4">
-                  <div className="flex -space-x-2">
-                    {[
-                      "https://i.pravatar.cc/64?img=12",
-                      "https://i.pravatar.cc/64?img=32",
-                      "https://i.pravatar.cc/64?img=47",
-                      "https://i.pravatar.cc/64?img=68",
-                      "https://i.pravatar.cc/64?img=5",
-                    ].map((src, i) => (
-                      <img
-                        key={i}
-                        src={src}
-                        alt={`Student ${i + 1}`}
-                        loading="lazy"
-                        className="h-8 w-8 rounded-full border-2 border-background object-cover shadow-sm"
-                      />
-                    ))}
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-0.5" aria-label="Rated 4.77 out of 5">
-                      {[0, 1, 2, 3, 4].map((i) => (
-                        <svg
-                          key={i}
-                          viewBox="0 0 20 20"
-                          className="h-4 w-4 fill-foreground"
-                          aria-hidden="true"
-                        >
-                          <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <span className="font-display text-sm font-semibold text-foreground">4.77</span>
-                    <span className="text-sm text-muted-foreground">· 348 reviews</span>
-                  </div>
-                </div>
+        {/* HERO — centered paper */}
+        <section className="relative overflow-hidden px-4 pt-14 pb-16 sm:px-6 sm:pt-20 sm:pb-24 lg:px-8 lg:pt-24 lg:pb-28">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+              <ExamCountdown className="mb-8 sm:mb-10" />
 
-                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
-                  <span
-                    className="h-1.5 w-1.5 rounded-full"
-                    style={{ backgroundColor: "#2DD4A8" }}
-                  />
-                  <span className="text-xs font-medium tracking-wide text-taupe">
-                    Built by top 1% of the hall
-                  </span>
-                </div>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 shadow-sm">
+                <span
+                  className="h-1.5 w-1.5 rounded-full"
+                  style={{ backgroundColor: "#2DD4A8" }}
+                />
+                <span className="text-xs font-medium tracking-wide text-taupe">
+                  Built by top 1% of the hall
+                </span>
+              </div>
 
-                <h1 className="font-display text-[2.25rem] font-semibold leading-[1.08] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[4rem]">
-                  Step by step preparation for your 2027 WU BBE exam
-                </h1>
+              <h1 className="font-display text-[2.25rem] font-semibold leading-[1.08] text-foreground sm:text-[3.25rem] sm:leading-[1.05] lg:text-[3.75rem]">
+                Step by step preparation for your 2027 WU BBE exam
+              </h1>
 
-                <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                  Master every detail and tactic of the actual exam.
-                </p>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+                Master every detail and tactic of the actual exam.
+              </p>
 
-                <div id="full-course" className="mt-10 flex flex-col gap-3 sm:flex-row">
-                  <Link
-                    to="/demo-practice"
-                    className="inline-flex flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#9c3125] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-                    style={{ backgroundColor: "#B3392A" }}
-                  >
-                    <span>Try demo-practice</span>
-                    <span className="mt-0.5 text-[11px] font-medium text-white/80">
-                      50+ tasks for start
-                    </span>
-                  </Link>
-                  <Link
-                    to="/products"
-                    id="explore-courses"
-                    className="inline-flex flex-col items-center justify-center rounded-sm border border-[#2F7CC0] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#1b5f9c] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                    style={{ backgroundColor: "#2F7CC0", color: "#FFFFFF" }}
-                  >
-                    <span>Explore Courses</span>
-                    <span className="mt-0.5 text-[11px] font-medium text-white/75">
-                      See all BBE School products
-                    </span>
-                  </Link>
-                </div>
-
-                <div
-                  id="important-features"
-                  className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+              <div
+                id="full-course"
+                className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
+              >
+                <Link
+                  to="/demo-practice"
+                  className="inline-flex flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#9c3125] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+                  style={{ backgroundColor: "#B3392A" }}
                 >
-                  <span>Beauty of stress and time management</span>
-                  <span className="h-1 w-1 rounded-full bg-border" />
-                  <span>Most common and tricky Mistakes</span>
-                  <span className="h-1 w-1 rounded-full bg-border" />
-                  <span>Exam life hacks and loopholes</span>
-                </div>
+                  <span>Try demo-practice</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-white/80">
+                    50+ tasks for start
+                  </span>
+                </Link>
+                <Link
+                  to="/products"
+                  id="explore-courses"
+                  className="inline-flex flex-col items-center justify-center rounded-sm border border-[#161616] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                  style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
+                >
+                  <span>Explore Courses</span>
+                  <span className="mt-0.5 text-[11px] font-medium text-[#F2F1ED]/70">
+                    See all BBE School products
+                  </span>
+                </Link>
               </div>
 
-              <div className="relative">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card p-1 shadow-xl sm:aspect-[5/4] lg:aspect-video">
-                  <PrepJourneyRoadmap />
-                </div>
+              <div
+                id="important-features"
+                className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium tracking-wide text-taupe"
+              >
+                <span>Beauty of stress and time management</span>
+                <span className="h-1 w-1 rounded-full bg-border" />
+                <span>Most common and tricky Mistakes</span>
+                <span className="h-1 w-1 rounded-full bg-border" />
+                <span>Exam life hacks and loopholes</span>
               </div>
+            </div>
+
+            <div className="mt-14 sm:mt-16 lg:mt-20">
+              <PrepJourneyRoadmap />
             </div>
           </div>
         </section>
 
         {/* FIVE-STATEMENT SIMULATION ENGINE */}
-        <section className="relative bg-[#10293f] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <section className="relative bg-[#070a12] px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="relative mx-auto max-w-6xl text-center">
             <div className="text-sm font-medium text-white/55">Live product demo</div>
             <h2 className="mx-auto mt-3 max-w-3xl font-display text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
@@ -180,7 +145,7 @@ function Index() {
                 className={cn(
                   "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                   demoMode === m.key
-                    ? "border-white bg-white text-[#12263A]"
+                    ? "border-white bg-white text-[#161616]"
                     : "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white",
                 )}
               >
@@ -207,7 +172,7 @@ function Index() {
                   className={cn(
                     "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                     active
-                      ? "border-white bg-white text-[#12263A]"
+                      ? "border-white bg-white text-[#161616]"
                       : s.enabled
                         ? "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white"
                         : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
@@ -282,7 +247,7 @@ function Index() {
             <Link
               to="/products"
               className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-8 py-4 text-sm font-semibold transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-              style={{ backgroundColor: "#F4F9FD", color: "#12263A" }}
+              style={{ backgroundColor: "#F2F1ED", color: "#161616" }}
             >
               View Preparation Products
             </Link>
@@ -329,8 +294,8 @@ function Index() {
               <div className="relative z-10 flex justify-center py-4">
                 <Link
                   to="/parents"
-                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#1b5f9c]"
-                  style={{ backgroundColor: "#2F7CC0", color: "#FFFFFF" }}
+                  className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#2a2a2a]"
+                  style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
                 >
                   <span>Read the full letter</span>
                   <svg
@@ -396,7 +361,7 @@ function Index() {
             <div className="flex items-center gap-3">
               <span
                 className="inline-flex h-2.5 w-2.5 rounded-full"
-                style={{ backgroundColor: "#12263A" }}
+                style={{ backgroundColor: "#161616" }}
               />
               <span className="font-display text-sm font-semibold tracking-widest uppercase text-foreground">
                 BBE School
@@ -434,7 +399,7 @@ function ReviewCard({ report }: { report: (typeof reports)[0] }) {
           className="mt-3 inline-flex items-center gap-1.5 rounded-sm border px-3 py-1"
           style={{ borderColor: "#D8D6CE" }}
         >
-          <span className="text-xs font-semibold tracking-wide" style={{ color: "#12263A" }}>
+          <span className="text-xs font-semibold tracking-wide" style={{ color: "#161616" }}>
             {report.badge}
           </span>
           {report.fire && (
