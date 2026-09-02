@@ -1,3 +1,5 @@
+import { generatedDe, generatedUk } from "./generated";
+
 export type Lang = "en" | "de" | "uk";
 
 export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
