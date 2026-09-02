@@ -56,6 +56,8 @@ import { Route as ProductsFullCourseEconomicsRouteImport } from './routes/produc
 import { Route as ProductsFullCourseRouteImport } from './routes/products.full-course'
 import { Route as ProductsDemoPracticeRouteImport } from './routes/products.demo-practice'
 import { Route as ProductsCustomMockBuilderRouteImport } from './routes/products.custom-mock-builder'
+import { Route as PaymentSuccessRouteImport } from './routes/payment.success'
+import { Route as PaymentFailedRouteImport } from './routes/payment.failed'
 import { Route as MatchingSubjectRouteImport } from './routes/matching.$subject'
 import { Route as FlashcardsSubjectRouteImport } from './routes/flashcards.$subject'
 import { Route as FeaturesAnswerSheetRouteImport } from './routes/features.answer-sheet'
@@ -315,6 +317,16 @@ const ProductsCustomMockBuilderRoute =
     path: '/custom-mock-builder',
     getParentRoute: () => ProductsRoute,
   } as any)
+const PaymentSuccessRoute = PaymentSuccessRouteImport.update({
+  id: '/payment/success',
+  path: '/payment/success',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentFailedRoute = PaymentFailedRouteImport.update({
+  id: '/payment/failed',
+  path: '/payment/failed',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MatchingSubjectRoute = MatchingSubjectRouteImport.update({
   id: '/$subject',
   path: '/$subject',
@@ -436,6 +448,8 @@ export interface FileRoutesByFullPath {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/payment/failed': typeof PaymentFailedRoute
+  '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -493,6 +507,8 @@ export interface FileRoutesByTo {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/payment/failed': typeof PaymentFailedRoute
+  '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -559,6 +575,8 @@ export interface FileRoutesById {
   '/features/answer-sheet': typeof FeaturesAnswerSheetRoute
   '/flashcards/$subject': typeof FlashcardsSubjectRoute
   '/matching/$subject': typeof MatchingSubjectRoute
+  '/payment/failed': typeof PaymentFailedRoute
+  '/payment/success': typeof PaymentSuccessRoute
   '/products/custom-mock-builder': typeof ProductsCustomMockBuilderRoute
   '/products/demo-practice': typeof ProductsDemoPracticeRoute
   '/products/full-course': typeof ProductsFullCourseRoute
@@ -626,6 +644,8 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/payment/failed'
+    | '/payment/success'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -683,6 +703,8 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/payment/failed'
+    | '/payment/success'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -748,6 +770,8 @@ export interface FileRouteTypes {
     | '/features/answer-sheet'
     | '/flashcards/$subject'
     | '/matching/$subject'
+    | '/payment/failed'
+    | '/payment/success'
     | '/products/custom-mock-builder'
     | '/products/demo-practice'
     | '/products/full-course'
@@ -806,6 +830,8 @@ export interface RootRouteChildren {
   TutorExamRoute: typeof TutorExamRouteWithChildren
   ApiChatRoute: typeof ApiChatRoute
   FeaturesAnswerSheetRoute: typeof FeaturesAnswerSheetRoute
+  PaymentFailedRoute: typeof PaymentFailedRoute
+  PaymentSuccessRoute: typeof PaymentSuccessRoute
   ApiPublicMonobankWebhookRoute: typeof ApiPublicMonobankWebhookRoute
   ApiPublicPaymentWebhookRoute: typeof ApiPublicPaymentWebhookRoute
 }
@@ -1141,6 +1167,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsCustomMockBuilderRouteImport
       parentRoute: typeof ProductsRoute
     }
+    '/payment/success': {
+      id: '/payment/success'
+      path: '/payment/success'
+      fullPath: '/payment/success'
+      preLoaderRoute: typeof PaymentSuccessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment/failed': {
+      id: '/payment/failed'
+      path: '/payment/failed'
+      fullPath: '/payment/failed'
+      preLoaderRoute: typeof PaymentFailedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/matching/$subject': {
       id: '/matching/$subject'
       path: '/$subject'
@@ -1427,6 +1467,8 @@ const rootRouteChildren: RootRouteChildren = {
   TutorExamRoute: TutorExamRouteWithChildren,
   ApiChatRoute: ApiChatRoute,
   FeaturesAnswerSheetRoute: FeaturesAnswerSheetRoute,
+  PaymentFailedRoute: PaymentFailedRoute,
+  PaymentSuccessRoute: PaymentSuccessRoute,
   ApiPublicMonobankWebhookRoute: ApiPublicMonobankWebhookRoute,
   ApiPublicPaymentWebhookRoute: ApiPublicPaymentWebhookRoute,
 }
