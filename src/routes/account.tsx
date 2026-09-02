@@ -9,7 +9,10 @@ import { isAdminEmail, resolveAppRole, type AppRole } from "@/lib/admin-access";
 export const Route = createFileRoute("/account")({
   component: AccountPage,
   head: () => ({
+  links: [{ rel: "canonical", href: "https://bbe-school.com/account" }],
+  // Private / transactional route: keep it out of the index.
     meta: [
+      { name: "robots", content: "noindex, nofollow" },
       { title: "My account · BBE School" },
       { name: "description", content: "Your BBE School profile, progress and recent activity." },
       { name: "robots", content: "noindex" },
