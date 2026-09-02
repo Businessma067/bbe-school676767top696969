@@ -97,6 +97,7 @@ export const createCheckout = createServerFn({ method: "POST" })
         amount_minor: amountMinor,
         currency_code: 980,
         status: "created",
+        payment_type: "hold",
         page_url: pageUrl,
       });
       if (error) {
