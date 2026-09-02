@@ -99,7 +99,7 @@
 
   --ivory: #f2f1ed;
   --exam-red: #b3392a;                   /* stakes only: timers, negative marking, one CTA */
-  --caramel: #b3392a;
+  --caramel: #d8d6ce;                    /* quiet hairline tone (legacy token) */
   --caramel-deep: #b3392a;
   --espresso: #161616;
   --taupe: #5a584f;
@@ -150,10 +150,7 @@
 
 /* Why Us — high-contrast dark fintech section. */
 @utility why-us-glow {
-  box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--color-caramel-deep) 25%, transparent),
-    0 0 40px -12px color-mix(in oklab, var(--color-caramel-deep) 65%, transparent),
-    0 0 80px -24px color-mix(in oklab, var(--color-caramel) 45%, transparent);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 @utility featured-column {
@@ -161,7 +158,7 @@
 }
 
 @utility why-us-pulse {
-  animation: why-us-pulse 3s ease-in-out infinite;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 @keyframes why-us-pulse {
