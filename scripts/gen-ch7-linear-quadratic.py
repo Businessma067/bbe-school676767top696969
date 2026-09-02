@@ -2,7 +2,8 @@
 """Generate Chapter 7 — Linear and quadratic functions (no subtopics).
 
 Exam-style stems like Item 29: given f linear and g quadratic, five multi-hop
-True/False claims. Difficulty fixed at 3/5. Explanations follow MATH 13.18 rhythm.
+True/False claims. Difficulties spread across 1/5 … 5/5. Explanations follow
+MATH 13.18 rhythm.
 """
 
 from __future__ import annotations
@@ -204,7 +205,24 @@ def pybool(v) -> bool:
     return bool(v)
 
 
-def build_claims(f, g, rng: random.Random) -> list[tuple[str, bool, dict]]:
+# Claim-kind bands used to tilt selection by difficulty (1 = easiest).
+EASY_KINDS = {"slope", "opens", "eval", "axis", "disc"}
+MEDIUM_KINDS = {"vertex", "min", "max", "vieta", "diff", "intersect"}
+HARD_KINDS = {"rewrite", "comp", "avg", "common", "lead", "vertex_on"}
+
+
+def kind_band(kind: str) -> str:
+    head = kind.split("_")[0]
+    if kind.startswith("vertex_on") or head in {"rewrite", "comp", "avg", "common", "lead"}:
+        return "hard"
+    if head in {"vertex", "min", "max", "vieta", "diff", "intersect"}:
+        return "medium"
+    return "easy"
+
+
+def build_claims(
+    f, g, rng: random.Random, difficulty: int = 3
+) -> list[tuple[str, bool, dict]]:
     """Return 5 (statement, truth, meta) with diverse multi-hop checks."""
     h, k = vertex(g)
     a_g, b_g, c_g = Poly(g, x).nth(2), Poly(g, x).nth(1), Poly(g, x).nth(0)
@@ -535,22 +553,38 @@ def build_claims(f, g, rng: random.Random) -> list[tuple[str, bool, dict]]:
         )
     )
 
-    # Pick 5 with mix of true/false and diverse kinds
-    rng.shuffle(pool)
-    # prefer diversity of kinds
+    # Prefer claim bands that match the difficulty, then fall back.
+    if difficulty <= 2:
+        preferred = {"easy", "medium"}
+    elif difficulty == 3:
+        preferred = {"easy", "medium", "hard"}
+    else:
+        preferred = {"medium", "hard"}
+
+    def sort_key(item):
+        band = kind_band(item[2]["kind"])
+        # lower is better
+        return (0 if band in preferred else 1, rng.random())
+
+    pool_sorted = sorted(pool, key=sort_key)
     chosen: list[tuple[str, bool, dict]] = []
     seen_kinds = set()
-    # first pass: unique kinds
-    for item in pool:
+    # first pass: unique kinds with difficulty tilt
+    for item in pool_sorted:
         kind = item[2]["kind"].split("_")[0]
         if kind in seen_kinds:
+            continue
+        if difficulty <= 2 and kind_band(item[2]["kind"]) == "hard" and len(chosen) < 4:
+            # keep hard claims rare on easy tasks
+            continue
+        if difficulty >= 4 and kind_band(item[2]["kind"]) == "easy" and len(chosen) < 3:
             continue
         chosen.append(item)
         seen_kinds.add(kind)
         if len(chosen) == 5:
             break
     # fill
-    for item in pool:
+    for item in pool_sorted:
         if len(chosen) == 5:
             break
         if item in chosen:
@@ -639,7 +673,7 @@ def build_claims(f, g, rng: random.Random) -> list[tuple[str, bool, dict]]:
                 continue
             seen2.add(s)
             final.append((s, False, {"kind": "intersect_exact", "n": n_int, "claimed": 20 + i}))
-        # re-check mix
+        # re-check mix and force a known true/false if needed
         truths = sum(1 for _, t, _ in final[:5])
         if truths == 5:
             final[4] = (
@@ -648,12 +682,35 @@ def build_claims(f, g, rng: random.Random) -> list[tuple[str, bool, dict]]:
                 {"kind": "intersect_exact", "n": n_int, "claimed": 9},
             )
         elif truths == 0:
-            final[0] = (
+            # Prefer a short true claim that cannot collide with the false pool noise.
+            true_axis = (
                 f"The axis of symmetry of $g(x)$ is the line $x = {frac_tex(h)}$.",
                 True,
                 {"kind": "axis", "h": h},
             )
-        return final[:5]
+            # Drop any existing axis claim, then put the true one first.
+            final = [item for item in final if not str(item[2].get("kind", "")).startswith("axis")]
+            final.insert(0, true_axis)
+            # keep length 5
+            final = final[:5]
+            while len(final) < 5:
+                s = f"The graphs of $f(x)$ and $g(x)$ intersect at exactly ${30 + len(final)}$ points."
+                final.append((s, False, {"kind": "intersect_exact", "n": n_int, "claimed": 30 + len(final)}))
+        # Absolute last resort
+        truths = sum(1 for _, t, _ in final[:5])
+        if truths == 0:
+            final[0] = (
+                f"The slope of the line $y = f(x)$ is ${frac_tex(Rational(Poly(f, x).nth(1)))}$.",
+                True,
+                {"kind": "slope", "m": Rational(Poly(f, x).nth(1))},
+            )
+        elif truths == 5:
+            final[4] = (
+                "The graphs of the functions $f(x)$ and $g(x)$ intersect more than twice.",
+                False,
+                {"kind": "intersect_gt2", "n": n_int},
+            )
+        return [(s, pybool(t), m) for s, t, m in final[:5]]
 
     chosen = finalize(chosen)
 
@@ -1155,8 +1212,15 @@ def overview(f, g) -> str:
     return "\n".join(parts)
 
 
-def build_task(idx: int, pair: Pair, rng: random.Random) -> dict:
-    claims = build_claims(pair.f, pair.g, rng)
+def difficulty_for_index(idx: int, total: int = 50) -> int:
+    """Spread difficulties 1..5 evenly across the bank (10 each for 50 tasks)."""
+    per = total // 5
+    # Round-robin so easy/hard are interleaved, not a wall of 1s then 5s.
+    return (idx % 5) + 1 if total % 5 == 0 else min(5, idx // per + 1)
+
+
+def build_task(idx: int, pair: Pair, rng: random.Random, difficulty: int) -> dict:
+    claims = build_claims(pair.f, pair.g, rng, difficulty=difficulty)
     letters = "ABCDE"
     statements = [c[0] for c in claims]
     answer_key = [c[1] for c in claims]
@@ -1178,30 +1242,150 @@ def build_task(idx: int, pair: Pair, rng: random.Random) -> dict:
         "statements": statements,
         "answer_key": answer_key,
         "tactical_explanations": explanations,
-        "difficulty_level": "3/5",
+        "difficulty_level": f"{difficulty}/5",
         "sort_order": n,
         "solution_overview": overview(pair.f, pair.g),
+        "subsection": "7",
+        "placeholder": False,
     }
+
+
+def patch_photo_task(task: dict) -> dict:
+    """MATH 7.01 mirrors the reference exam item (difficulty 3/5)."""
+    task = dict(task)
+    task["title"] = "Vertex, Linear Rewrite, and Crossings of a Line and a Parabola"
+    task["context"] = (
+        "Consider the following linear and quadratic functions: "
+        "$f(x) = 4x + 2$ and $g(x) = x^{2} - x - 2$. "
+        "Evaluate each statement. Mark it TRUE or FALSE."
+    )
+    task["statements"] = [
+        "The point on the graph of $g(x)$ with the lowest $y$ coordinate is $\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$.",
+        "There exist values $a, b, c \\in \\mathbb{R}$ such that $g(x) = a f(x)^{2} + b f(x) + c$.",
+        "The sum of the roots of function $g(x)$ is $-1$.",
+        "The graph of the function $f(x) - g(x)$ intersects with the $y$-axis at $y = 0$.",
+        "The graphs of the functions $f(x)$ and $g(x)$ intersect more than twice.",
+    ]
+    task["answer_key"] = [True, True, False, False, False]
+    task["difficulty_level"] = "3/5"
+    task["tactical_explanations"] = [
+        "**A.** → True\n\nFor a quadratic $g(x)=ax^{2}+bx+c$, the vertex abscissa is $-\\dfrac{b}{2a}$:\n\n$$\nx = -\\frac{-1}{2\\cdot 1} = \\frac{1}{2}\n$$\n\nSubstitute into $g$:\n\n$$\ng\\left(\\frac{1}{2}\\right) = \\left(\\frac{1}{2}\\right)^{2} - \\frac{1}{2} - 2\n$$\n\n$$\n= \\frac{1}{4} - \\frac{1}{2} - 2 = -\\frac{9}{4}\n$$\n\nSince $a = 1 > 0$, the parabola opens upwards, so the vertex is the lowest point $\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$.\n\nThe claim matches that point, so the statement is True.",
+        "**B.** → True\n\nBecause $f$ is degree $1$, the set $\\{1, f, f^{2}\\}$ spans every polynomial of degree at most $2$. Matching coefficients in $g(x) = a f(x)^{2} + b f(x) + c$ recovers\n\n$$\na = \\frac{1}{16},\\quad b = -\\frac{1}{2},\\quad c = -\\frac{5}{4}\n$$\n\nSuch real coefficients exist, so the statement is True.",
+        "**C.** → False\n\nFor $g(x)=ax^{2}+bx+c$, Vieta's formula gives the sum of roots as $-\\dfrac{b}{a}$:\n\n$$\n-\\frac{-1}{1} = 1\n$$\n\nThe claim uses $-1$, which is not $1$, so the statement is False.",
+        "**D.** → False\n\nThe $y$-intercept of $f - g$ is the value at $x = 0$:\n\n$$\n(f - g)(0) = f(0) - g(0) = 2 - (-2) = 4\n$$\n\nThe intercept is $4$, not $0$, so the statement is False.",
+        "**E.** → False\n\nIntersection points solve $f(x) = g(x)$, or equivalently\n\n$$\nx^{2} - 5x - 4 = 0\n$$\n\nThis is at most quadratic, so it has at most two real roots. The discriminant is\n\n$$\n\\Delta = 25 + 16 = 41 > 0\n$$\n\nWith $\\Delta = 41$ there are $2$ real intersection(s), which is not more than two, so the statement is False.",
+    ]
+    task["solution_overview"] = (
+        "Consider the linear function $f(x) = 4x + 2$ and the quadratic function $g(x) = x^{2} - x - 2$.\n\n"
+        "**Part 1: Shared facts.**\n\n"
+        "Vertex of $g$ from $x = -\\dfrac{b}{2a}$:\n\n"
+        "$$\nx = -\\frac{-1}{2\\cdot 1} = \\frac{1}{2}\n$$\n\n"
+        "$$\ng\\left(\\frac{1}{2}\\right) = \\left(\\frac{1}{2}\\right)^{2} - \\frac{1}{2} - 2 = \\frac{1}{4} - \\frac{1}{2} - 2 = -\\frac{9}{4}\n$$\n\n"
+        "Vieta for $g(x) = 0$:\n\n"
+        "$$\n\\text{sum of roots} = -\\frac{b}{a} = 1\\qquad \\text{product of roots} = \\frac{c}{a} = -2\n$$\n\n"
+        "**Part 2: Difference and intersections.**\n\n"
+        "$$\nf(x) - g(x) = (4x + 2) - (x^{2} - x - 2) = -x^{2} + 5x + 4\n$$\n\n"
+        "$$\n(f - g)(0) = 4\\qquad g(x) - f(x) = x^{2} - 5x - 4 = 0 \\text{ has discriminant } 41 > 0\n$$\n\n"
+        "so the graphs meet at exactly two real points.\n\n"
+        "**Part 3: Rewrite in the linear basis.**\n\n"
+        "Because $\\deg f = 1$, the span $\\{1, f, f^{2}\\}$ covers every polynomial of degree at most $2$, "
+        "so real $a,b,c$ with $g = a f^{2} + b f + c$ exist. Matching coefficients yields "
+        "$a = \\dfrac{1}{16}$, $b = -\\dfrac{1}{2}$, $c = -\\dfrac{5}{4}$.\n\n"
+        "**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$ | sum $=1$ | product $=-2$ | intersections $=2$"
+    )
+    return task
+
+
+def sanitize_task(task: dict, f, g) -> dict:
+    """Guarantee unique statements and a mixed T/F key."""
+    from sympy import Poly as _Poly
+
+    stmts = list(task["statements"])
+    keys = [bool(x) for x in task["answer_key"]]
+    expls = list(task["tactical_explanations"])
+    # dedupe statements
+    seen = set()
+    keep_idx = []
+    for i, s in enumerate(stmts):
+        if s in seen:
+            continue
+        seen.add(s)
+        keep_idx.append(i)
+    stmts = [stmts[i] for i in keep_idx]
+    keys = [keys[i] for i in keep_idx]
+    expls = [expls[i] for i in keep_idx]
+    # refill to 5
+    n = 0
+    while len(stmts) < 5:
+        s = f"The graphs of $f(x)$ and $g(x)$ intersect at exactly ${40 + n}$ points."
+        n += 1
+        if s in seen:
+            continue
+        seen.add(s)
+        stmts.append(s)
+        keys.append(False)
+        expls.append(
+            f"**{chr(64 + len(stmts))}.** → False\n\n"
+            "A line and a parabola meet in at most two points, so the claim is impossible,\n\n"
+            "so the statement is False."
+        )
+    stmts, keys, expls = stmts[:5], keys[:5], expls[:5]
+    truths = sum(1 for k in keys if k)
+    if truths == 0:
+        a_f = _Poly(f, x).nth(1)
+        stmts[0] = f"The slope of the line $y = f(x)$ is ${frac_tex(Rational(a_f))}$."
+        keys[0] = True
+        expls[0] = (
+            f"**A.** → True\n\n"
+            f"The coefficient of $x$ in $f$ is the slope:\n\n"
+            f"$$\nm = {frac_tex(Rational(a_f))}\n$$\n\n"
+            f"The claim matches that slope, so the statement is True."
+        )
+    elif truths == 5:
+        stmts[4] = "The graphs of the functions $f(x)$ and $g(x)$ intersect more than twice."
+        keys[4] = False
+        expls[4] = (
+            "**E.** → False\n\n"
+            "Intersection points solve $f(x)=g(x)$, which is at most quadratic, so there are at most two real solutions.\n\n"
+            "More than two intersections is impossible, so the statement is False."
+        )
+    # re-letter explanations headers lightly if needed — keep existing bodies
+    task = dict(task)
+    task["statements"] = stmts
+    task["answer_key"] = keys
+    task["tactical_explanations"] = expls
+    return task
 
 
 def main():
     rng = random.Random(7)
     pairs = make_pairs()
     assert len(pairs) == 50
-    # shuffle titles uniqueness already ok; keep order for reproducibility of pairs
-    tasks = [build_task(i, pairs[i], rng) for i in range(50)]
+    # Interleave difficulties 1..5 across the bank (10 of each).
+    difficulties = [difficulty_for_index(i) for i in range(50)]
+    # Keep MATH 7.01 (photo exemplar) at 3/5: swap so index 0 gets difficulty 3.
+    if difficulties[0] != 3:
+        j = difficulties.index(3)
+        difficulties[0], difficulties[j] = difficulties[j], difficulties[0]
+
+    tasks = [build_task(i, pairs[i], rng, difficulties[i]) for i in range(50)]
+    tasks = [sanitize_task(t, pairs[i].f, pairs[i].g) for i, t in enumerate(tasks)]
+    tasks[0] = patch_photo_task(tasks[0])
 
     # uniqueness check on statements within each case
     for t in tasks:
-        assert len(set(t["statements"])) == 5, t["case_id"]
-        assert 1 <= sum(t["answer_key"]) <= 4, (t["case_id"], t["answer_key"])
+        assert len(set(t["statements"])) == 5, (t["case_id"], t["statements"])
+        assert 1 <= sum(1 for x in t["answer_key"] if x) <= 4, (t["case_id"], t["answer_key"])
         assert len(t["tactical_explanations"]) == 5
+        assert t["difficulty_level"] in {f"{d}/5" for d in range(1, 6)}, t["difficulty_level"]
 
     OUT.write_text(json.dumps(tasks, ensure_ascii=False, indent=2) + "\n")
     print(f"Wrote {len(tasks)} tasks to {OUT}")
     # summary
-    true_counts = [sum(t["answer_key"]) for t in tasks]
+    true_counts = [sum(1 for x in t["answer_key"] if x) for t in tasks]
     print("true-counts:", {k: true_counts.count(k) for k in sorted(set(true_counts))})
+    diffs = [t["difficulty_level"] for t in tasks]
+    print("difficulties:", {k: diffs.count(k) for k in sorted(set(diffs))})
 
 
 if __name__ == "__main__":
