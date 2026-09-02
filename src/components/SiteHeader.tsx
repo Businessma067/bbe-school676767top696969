@@ -8,6 +8,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { navItemsForContext, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { cn } from "@/lib/utils";
+import bbeLogo from "@/assets/bbe-logo.png.asset.json";
 
 type SiteHeaderProps = {
   /** Content shown to the left of AuthNav (e.g. back link). */
