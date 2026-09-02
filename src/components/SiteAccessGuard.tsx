@@ -1,15 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate, useRouterState } from "@tanstack/react-router";
-import { supabase } from "@/integrations/supabase/client";
-import {
-  DEMO_ONLY_HREF,
-  hasFullSiteAccess,
-  isFullSiteProtectedPath,
-} from "@/lib/site-access";
+import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
+import { isFullSiteProtectedPath } from "@/lib/site-access";
 
 /**
- * Belt-and-suspenders redirect: any protected path without a full-site
- * account goes to Demo Practice (covers routes that forget RequireFullCourse).
+ * Belt-and-suspenders redirect: paid paths without a paid entitlement send the
+ * visitor to login (guests) or to the free Demo Practice (signed-in free users).
  */
 export function SiteAccessGuard() {
   const navigate = useNavigate();
@@ -20,10 +16,14 @@ export function SiteAccessGuard() {
 
     let cancelled = false;
     (async () => {
-      const { data } = await supabase.auth.getSession();
+      const state = await fetchAccessState();
       if (cancelled) return;
-      if (hasFullSiteAccess(data.session?.user?.email)) return;
-      navigate({ to: DEMO_ONLY_HREF });
+      if (!state.signedIn) {
+        navigate({ to: "/login" });
+        return;
+      }
+      if (tierAtLeast(state.tier, "lite")) return;
+      navigate({ to: "/products/lite-bbe-course" });
     })();
 
     return () => {

@@ -52,7 +52,7 @@ function parseDashboardTab(raw: unknown): DashboardTab {
 
 export const Route = createFileRoute("/dashboard")({
   component: () => (
-    <RequireFullCourse>
+    <RequireFullCourse minTier="none">
       <DashboardPage />
     </RequireFullCourse>
   ),

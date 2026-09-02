@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { AccountNavTier } from "@/config/site-nav";
-import { hasFullSiteAccess } from "@/lib/site-access";
+import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
 
 /**
- * Only allowlisted full-site accounts get Practice / Mock / Games chrome.
- * Everyone else (including signed-in demo users) keeps guest/demo nav.
+ * Practice / Mock / Games chrome shows for accounts that actually own a paid
+ * course (Lite or Full) or for admins. Everyone else keeps guest/demo nav.
  */
 export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
   const [ready, setReady] = useState(false);
@@ -15,21 +15,9 @@ export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
     let cancelled = false;
 
     const refresh = async () => {
-      const { data } = await supabase.auth.getSession();
-      if (!data.session) {
-        if (!cancelled) {
-          setTier("guest");
-          setReady(true);
-        }
-        return;
-      }
-
+      const state = await fetchAccessState();
       if (cancelled) return;
-      if (hasFullSiteAccess(data.session.user?.email)) {
-        setTier("full");
-      } else {
-        setTier("guest");
-      }
+      setTier(tierAtLeast(state.tier, "lite") ? "full" : "guest");
       setReady(true);
     };
 

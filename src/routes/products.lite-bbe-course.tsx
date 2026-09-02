@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { BookOpen, ListChecks, Clock, Users, Lightbulb, Check, Quote } from "lucide-react";
 import {
   Accordion,
@@ -9,6 +10,9 @@ import {
 import { CompareTable } from "@/components/CompareTable";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PaymentModal } from "@/components/PaymentModal";
+import { AuthModal } from "@/components/AuthModal";
+import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
@@ -166,6 +170,18 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
 }
 
 function LiteBbeCourseProduct() {
+  const { signedIn } = useFullCourseAccess();
+  const [paymentOpen, setPaymentOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+
+  const openBuy = () => {
+    if (!signedIn) {
+      setAuthOpen(true);
+      return;
+    }
+    setPaymentOpen(true);
+  };
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
@@ -233,15 +249,15 @@ function LiteBbeCourseProduct() {
               </div>
               <button
                 type="button"
-                disabled
-                className="inline-flex w-full cursor-not-allowed items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white opacity-70 shadow-sm sm:w-auto"
+                onClick={openBuy}
+                className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 text-base font-semibold text-white shadow-sm transition-all hover:brightness-110 sm:w-auto"
                 style={{ backgroundColor: ORANGE }}
               >
-                Coming soon
+                Unlock lite access
               </button>
             </div>
             <p className="mt-3 text-center text-xs text-muted-foreground sm:text-left">
-              Lite access is not available for purchase yet.
+              One-time payment · Instant access after checkout.
             </p>
           </div>
 
@@ -380,6 +396,23 @@ function LiteBbeCourseProduct() {
           </section>
         </div>
       </main>
+
+      <PaymentModal
+        open={paymentOpen}
+        onOpenChange={setPaymentOpen}
+        productName="Lite BBE Course"
+        priceEuros={279}
+        productSlug="lite-bbe-course"
+      />
+      <AuthModal
+        open={authOpen}
+        onOpenChange={setAuthOpen}
+        defaultMode="signin"
+        onSignedIn={() => {
+          setAuthOpen(false);
+          setPaymentOpen(true);
+        }}
+      />
     </div>
   );
 }

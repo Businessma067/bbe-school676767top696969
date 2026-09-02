@@ -21,7 +21,6 @@ export const FULL_SITE_PATH_PREFIXES = [
   "/tutor-exam",
   "/mock-exams",
   "/practice",
-  "/dashboard",
   "/products/full-course-subjects",
   "/products/full-course-math",
   "/products/full-course-english",
@@ -30,7 +29,6 @@ export const FULL_SITE_PATH_PREFIXES = [
   "/products/lite-bbe-course-subjects",
   "/products/lite-bbe-course-math",
   "/products/lite-bbe-course-english",
-  "/admin",
 ] as const;
 
 export function isFullSiteEmail(email: string | null | undefined): boolean {
