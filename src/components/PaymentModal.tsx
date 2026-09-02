@@ -136,7 +136,10 @@ export function PaymentModal({
       setPromoUnlocked(true);
       setTimeout(() => {
         onOpenChange(false);
-        navigate({ to: result.href });
+        navigate({
+          to: "/payment/success",
+          search: { product: productName, href: result.href, promo: true },
+        });
       }, 1200);
     } catch (err) {
       const message = err instanceof Error ? err.message : "Could not redeem promocode.";

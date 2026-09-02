@@ -1,6 +1,6 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle2, Loader2, XCircle } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { getPaymentStatus, listMyPayments } from "@/lib/payments.functions";
 
 export const Route = createFileRoute("/payment-result")({
@@ -26,11 +26,7 @@ export const Route = createFileRoute("/payment-result")({
 
 const ORANGE = "#C2643A";
 
-type View =
-  | { state: "checking" }
-  | { state: "paid"; productName: string | null; href: string | null }
-  | { state: "pending" }
-  | { state: "failed"; reason: string };
+type View = { state: "checking" } | { state: "pending" };
 
 function PaymentResultPage() {
   const navigate = useNavigate();
@@ -41,6 +37,9 @@ function PaymentResultPage() {
     let cancelled = false;
     let timer: ReturnType<typeof setTimeout>;
 
+    const goFailed = (reason: string) =>
+      navigate({ to: "/payment/failed", search: { reason }, replace: true });
+
     const check = async () => {
       try {
         const params = new URLSearchParams(window.location.search);
@@ -50,7 +49,7 @@ function PaymentResultPage() {
           invoiceId = mine[0]?.invoiceId ?? "";
         }
         if (!invoiceId) {
-          if (!cancelled) setView({ state: "failed", reason: "No recent payment found." });
+          if (!cancelled) void goFailed("No recent payment found.");
           return;
         }
 
@@ -58,18 +57,22 @@ function PaymentResultPage() {
         if (cancelled) return;
 
         if (!result.ok) {
-          setView({ state: "failed", reason: result.error });
+          void goFailed(result.error);
           return;
         }
         if (result.paid) {
-          setView({ state: "paid", productName: result.productName, href: result.href });
+          void navigate({
+            to: "/payment/success",
+            search: {
+              ...(result.productName ? { product: result.productName } : {}),
+              ...(result.href ? { href: result.href } : {}),
+            },
+            replace: true,
+          });
           return;
         }
         if (["failure", "reversed", "expired"].includes(result.status)) {
-          setView({
-            state: "failed",
-            reason: result.failureReason ?? "The payment was not completed.",
-          });
+          void goFailed(result.failureReason ?? "The payment was not completed.");
           return;
         }
 
@@ -79,10 +82,7 @@ function PaymentResultPage() {
       } catch (err) {
         if (cancelled) return;
         const message = err instanceof Error ? err.message : "Could not check the payment.";
-        setView({
-          state: "failed",
-          reason: /unauthorized/i.test(message) ? "Sign in to see your payment." : message,
-        });
+        void goFailed(/unauthorized/i.test(message) ? "Sign in to see your payment." : message);
       }
     };
 
@@ -91,7 +91,7 @@ function PaymentResultPage() {
       cancelled = true;
       clearTimeout(timer);
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -121,39 +121,6 @@ function PaymentResultPage() {
           </>
         )}
 
-        {view.state === "paid" && (
-          <>
-            <CheckCircle2 className="mx-auto h-10 w-10" style={{ color: ORANGE }} />
-            <h1 className="mt-5 font-display text-2xl font-bold text-foreground">Payment received</h1>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {view.productName ?? "Your course"} is unlocked on your account.
-            </p>
-            <button
-              type="button"
-              onClick={() => navigate({ to: view.href ?? "/dashboard" })}
-              className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white"
-              style={{ backgroundColor: ORANGE }}
-            >
-              Start the course →
-            </button>
-          </>
-        )}
-
-        {view.state === "failed" && (
-          <>
-            <XCircle className="mx-auto h-10 w-10 text-destructive" />
-            <h1 className="mt-5 font-display text-2xl font-bold text-foreground">
-              Payment not completed
-            </h1>
-            <p className="mt-2 text-sm text-muted-foreground">{view.reason}</p>
-            <Link
-              to="/products"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground"
-            >
-              Back to courses
-            </Link>
-          </>
-        )}
       </div>
     </div>
   );
