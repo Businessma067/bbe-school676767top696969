@@ -195,8 +195,8 @@ function Index() {
                 className={cn(
                   "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                   demoMode === m.key
-                    ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
-                    : "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white",
+                    ? "border-white bg-white text-[#161616]"
+                    : "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white",
                 )}
               >
                 {m.label}
@@ -222,9 +222,9 @@ function Index() {
                   className={cn(
                     "rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] transition-all sm:text-sm",
                     active
-                      ? "border-caramel-deep bg-caramel-deep text-white shadow-md"
+                      ? "border-white bg-white text-[#161616]"
                       : s.enabled
-                        ? "border-white/20 bg-white/5 text-white/70 hover:border-caramel-deep/60 hover:text-white"
+                        ? "border-white/20 bg-white/5 text-white/70 hover:border-white/50 hover:text-white"
                         : "cursor-not-allowed border-white/10 bg-white/[0.03] text-white/30",
                   )}
                 >
@@ -632,7 +632,7 @@ function WhyUsSlider() {
         type="button"
         aria-label="Previous slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:left-6 sm:h-12 sm:w-12"
+        className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:left-6 sm:h-12 sm:w-12"
       >
         <ChevronLeft size={24} />
       </button>
@@ -640,7 +640,7 @@ function WhyUsSlider() {
         type="button"
         aria-label="Next slide"
         onClick={next}
-        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-caramel-deep hover:bg-black/70 hover:text-caramel sm:right-6 sm:h-12 sm:w-12"
+        className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/50 text-primary-foreground backdrop-blur-sm transition-all hover:border-white/40 hover:bg-black/70 hover:text-white sm:right-6 sm:h-12 sm:w-12"
       >
         <ChevronRight size={24} />
       </button>
@@ -656,7 +656,7 @@ function WhyUsSlider() {
             className={cn(
               "h-2 rounded-full transition-all duration-300",
               active === i
-                ? "w-8 bg-caramel-deep"
+                ? "w-8 bg-white"
                 : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50",
             )}
           />
@@ -830,7 +830,7 @@ function CapitalBars() {
         </div>
         <div className="flex h-full flex-1 flex-col items-center justify-end">
           <span
-            className="mb-2 font-display text-sm font-semibold text-caramel-deep"
+            className="mb-2 font-display text-sm font-semibold text-primary-foreground"
             style={{ opacity: progress }}
           >
             ~€2,200
@@ -842,7 +842,7 @@ function CapitalBars() {
               backgroundColor: "#B3392A",
             }}
           />
-          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-caramel-deep">
+          <span className="mt-3 text-center text-[11px] font-medium uppercase tracking-wider text-primary-foreground/70">
             WU Vienna · 3-Year Total
           </span>
         </div>
@@ -872,7 +872,7 @@ const placements: { name: string; src: string }[] = [
 
 function PlacementLogo({ src, name }: { src: string; name: string }) {
   return (
-    <div className="group flex flex-col items-center justify-center rounded-lg border border-[color:var(--color-caramel-deep)]/25 bg-white px-3 py-4 transition hover:border-[color:var(--color-caramel-deep)]/70 hover:shadow-[0_0_20px_-4px_color-mix(in_oklab,var(--color-caramel-deep)_60%,transparent)]">
+    <div className="group flex flex-col items-center justify-center rounded-lg border border-white/15 bg-white px-3 py-4 transition hover:border-white/40">
       <div className="flex h-10 w-full items-center justify-center sm:h-12">
         <img
           src={src}
@@ -887,7 +887,7 @@ function PlacementLogo({ src, name }: { src: string; name: string }) {
 
 function PlacementsTicker() {
   return (
-    <div className="mt-8 rounded-xl border border-[color:var(--color-caramel-deep)]/25 bg-black/40 px-4 py-6 sm:px-8 sm:py-8 why-us-glow">
+    <div className="mt-8 rounded-xl border border-white/12 bg-black/40 px-4 py-6 sm:px-8 sm:py-8">
       <p className="mb-6 text-center text-sm font-medium text-primary-foreground/55">
         Where alumni land
       </p>
@@ -896,7 +896,7 @@ function PlacementsTicker() {
           <PlacementLogo key={p.name} {...p} />
         ))}
       </div>
-      <p className="mt-6 border-t border-[color:var(--color-caramel-deep)]/20 pt-4 text-center text-xs text-primary-foreground/55">
+      <p className="mt-6 border-t border-white/12 pt-4 text-center text-xs text-primary-foreground/55">
         Global tier-1 finance, consulting & tech.
       </p>
     </div>
