@@ -133,6 +133,13 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       ]),
     ),
     toChapterToc(
+      7,
+      "Linear and quadratic functions",
+      "Chapter 7",
+      // Flat chapter (no book subtopics) — single picker row for the whole bank.
+      subs(7, [{ id: "7", title: "Linear and quadratic functions" }]),
+    ),
+    toChapterToc(
       8,
       "Power functions",
       "Chapter 8",
