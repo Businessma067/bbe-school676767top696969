@@ -12,7 +12,7 @@ export const LANGUAGES: { code: Lang; label: string; short: string }[] = [
  * Translation dictionary keyed by the exact English source text as rendered.
  * Anything missing simply stays in English.
  */
-export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
   de: {
     // Navigation / chrome
     "Exam info": "Prüfungsinfos",
