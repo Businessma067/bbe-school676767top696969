@@ -15,6 +15,7 @@ import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as PracticeRouteImport } from './routes/practice'
+import { Route as PaymentResultRouteImport } from './routes/payment-result'
 import { Route as ParentsRouteImport } from './routes/parents'
 import { Route as MockExamsRouteImport } from './routes/mock-exams'
 import { Route as MatchingRouteImport } from './routes/matching'
@@ -99,6 +100,11 @@ const ProductsRoute = ProductsRouteImport.update({
 const PracticeRoute = PracticeRouteImport.update({
   id: '/practice',
   path: '/practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentResultRoute = PaymentResultRouteImport.update({
+  id: '/payment-result',
+  path: '/payment-result',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ParentsRoute = ParentsRouteImport.update({
@@ -407,6 +413,7 @@ export interface FileRoutesByFullPath {
   '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
+  '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
@@ -465,6 +472,7 @@ export interface FileRoutesByTo {
   '/important-features': typeof ImportantFeaturesRoute
   '/login': typeof LoginRoute
   '/parents': typeof ParentsRoute
+  '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
@@ -526,6 +534,7 @@ export interface FileRoutesById {
   '/matching': typeof MatchingRouteWithChildren
   '/mock-exams': typeof MockExamsRouteWithChildren
   '/parents': typeof ParentsRoute
+  '/payment-result': typeof PaymentResultRoute
   '/practice': typeof PracticeRoute
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
@@ -591,6 +600,7 @@ export interface FileRouteTypes {
     | '/matching'
     | '/mock-exams'
     | '/parents'
+    | '/payment-result'
     | '/practice'
     | '/products'
     | '/reset-password'
@@ -649,6 +659,7 @@ export interface FileRouteTypes {
     | '/important-features'
     | '/login'
     | '/parents'
+    | '/payment-result'
     | '/practice'
     | '/reset-password'
     | '/signup'
@@ -709,6 +720,7 @@ export interface FileRouteTypes {
     | '/matching'
     | '/mock-exams'
     | '/parents'
+    | '/payment-result'
     | '/practice'
     | '/products'
     | '/reset-password'
@@ -773,6 +785,7 @@ export interface RootRouteChildren {
   MatchingRoute: typeof MatchingRouteWithChildren
   MockExamsRoute: typeof MockExamsRouteWithChildren
   ParentsRoute: typeof ParentsRoute
+  PaymentResultRoute: typeof PaymentResultRoute
   PracticeRoute: typeof PracticeRoute
   ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
@@ -826,6 +839,13 @@ declare module '@tanstack/react-router' {
       path: '/practice'
       fullPath: '/practice'
       preLoaderRoute: typeof PracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment-result': {
+      id: '/payment-result'
+      path: '/payment-result'
+      fullPath: '/payment-result'
+      preLoaderRoute: typeof PaymentResultRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/parents': {
@@ -1378,6 +1398,7 @@ const rootRouteChildren: RootRouteChildren = {
   MatchingRoute: MatchingRouteWithChildren,
   MockExamsRoute: MockExamsRouteWithChildren,
   ParentsRoute: ParentsRoute,
+  PaymentResultRoute: PaymentResultRoute,
   PracticeRoute: PracticeRoute,
   ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
