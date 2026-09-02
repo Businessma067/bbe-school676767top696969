@@ -11,7 +11,8 @@ export const Route = createFileRoute("/payment/success")({
   validateSearch: (search: Record<string, unknown>): SuccessSearch => ({
     product: typeof search.product === "string" ? search.product : undefined,
     href: typeof search.href === "string" ? search.href : undefined,
-    promo: search.promo === true || search.promo === "1" || search.promo === "true",
+    promo:
+      search.promo === true || search.promo === "1" || search.promo === "true" ? true : undefined,
   }),
   head: () => ({
     meta: [
