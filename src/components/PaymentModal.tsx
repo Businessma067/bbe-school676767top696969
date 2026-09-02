@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
-import { CreditCard, Landmark, Lock, Loader2, Ticket } from "lucide-react";
+import { CreditCard, Lock, Loader2, Ticket } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -12,16 +12,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AuthModal } from "@/components/AuthModal";
 import { supabase } from "@/integrations/supabase/client";
 import { redeemPromocode } from "@/lib/promo.functions";
+import { createCheckout } from "@/lib/payments.functions";
+import {
+  DISCOUNT_CODE,
+  DISCOUNT_PCT,
+  PAID_PRODUCTS,
+  type PaidProductSlug,
+} from "@/lib/checkout-catalog";
 
 const ORANGE = "#C2643A";
-const DISCOUNT_CODE = "BBE-JfkDjt15";
-const DISCOUNT_PCT = 15;
 
 type PaymentModalProps = {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   productName?: string;
   priceEuros?: number;
+  productSlug?: PaidProductSlug;
 };
 
 export function PaymentModal({
@@ -29,27 +35,27 @@ export function PaymentModal({
   onOpenChange,
   productName = "Full BBE Course",
   priceEuros = 479,
+  productSlug = "full-course",
 }: PaymentModalProps) {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
   const [method, setMethod] = useState("card");
   const [promoCode, setPromoCode] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [submitted, setSubmitted] = useState(false);
   const [promoUnlocked, setPromoUnlocked] = useState(false);
   const [discountApplied, setDiscountApplied] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
 
+  const product = PAID_PRODUCTS[productSlug];
+  const uahPrice = Math.round(product.priceUah * (discountApplied ? 1 - DISCOUNT_PCT / 100 : 1));
+  const eurPrice = Math.round(priceEuros * (discountApplied ? 1 - DISCOUNT_PCT / 100 : 1));
 
   useEffect(() => {
     if (!open) return;
-    setEmail("");
     setMethod("card");
     setPromoCode("");
     setLoading(false);
     setError(null);
-    setSubmitted(false);
     setPromoUnlocked(false);
     setDiscountApplied(false);
     setAuthOpen(false);
@@ -64,20 +70,35 @@ export function PaymentModal({
     })();
   }, [open, onOpenChange]);
 
-  const handlePaySubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handlePay = async () => {
     setError(null);
-
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-      setError("Enter a valid email address.");
+    const { data } = await supabase.auth.getSession();
+    if (!data.session) {
+      onOpenChange(false);
+      setAuthOpen(true);
       return;
     }
 
     setLoading(true);
-    // Placeholder until a payment provider is connected.
-    await new Promise((r) => setTimeout(r, 700));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const result = await createCheckout({
+        data: {
+          productSlug,
+          ...(discountApplied ? { promoCode: DISCOUNT_CODE } : {}),
+        },
+      });
+      if (!result.ok) {
+        setError(result.error);
+        return;
+      }
+      // Hand the user over to Monobank's secure checkout page.
+      window.location.href = result.pageUrl;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Could not start the payment.";
+      setError(/unauthorized/i.test(message) ? "Sign in to continue to payment." : message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handlePromoRedeem = async (e: React.FormEvent) => {
@@ -93,6 +114,7 @@ export function PaymentModal({
     // Discount-only code: applies 15% off, nothing else.
     if (code.toLowerCase() === DISCOUNT_CODE.toLowerCase()) {
       setDiscountApplied(true);
+      setMethod("card");
       return;
     }
     setDiscountApplied(false);
@@ -103,7 +125,6 @@ export function PaymentModal({
       setError("Sign in to redeem a promocode and unlock full access.");
       return;
     }
-
 
     setLoading(true);
     try {
@@ -147,9 +168,14 @@ export function PaymentModal({
               <p className="mt-0.5 font-display text-sm font-semibold text-foreground">
                 {productName}
               </p>
+              {method !== "promo" && (
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  Charged as {uahPrice.toLocaleString("uk-UA")} UAH
+                </p>
+              )}
             </div>
             <p className="font-display text-2xl font-bold text-foreground">
-              {method === "promo" ? "Free" : `€${priceEuros}`}
+              {method === "promo" ? "Free" : `€${eurPrice}`}
             </p>
           </div>
 
@@ -165,39 +191,18 @@ export function PaymentModal({
                 Your promocode worked. Taking you to the course…
               </p>
             </div>
-          ) : submitted ? (
-            <div className="space-y-4 py-1">
-              <div
-                className="rounded-xl border p-4 text-center"
-                style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10` }}
-              >
-                <p className="font-display text-lg font-semibold text-foreground">
-                  Request received
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  We&apos;ll send a secure payment link to <strong>{email}</strong> so you can finish
-                  checkout.
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => onOpenChange(false)}
-                className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white"
-                style={{ backgroundColor: ORANGE }}
-              >
-                Done
-              </button>
-            </div>
           ) : (
-            <Tabs value={method} onValueChange={(v) => { setMethod(v); setError(null); }}>
-              <TabsList className="grid w-full grid-cols-3">
+            <Tabs
+              value={method}
+              onValueChange={(v) => {
+                setMethod(v);
+                setError(null);
+              }}
+            >
+              <TabsList className="grid w-full grid-cols-2">
                 <TabsTrigger value="card" className="gap-1.5">
                   <CreditCard className="h-3.5 w-3.5" />
                   Card
-                </TabsTrigger>
-                <TabsTrigger value="bank" className="gap-1.5">
-                  <Landmark className="h-3.5 w-3.5" />
-                  Bank
                 </TabsTrigger>
                 <TabsTrigger value="promo" className="gap-1.5">
                   <Ticket className="h-3.5 w-3.5" />
@@ -206,34 +211,60 @@ export function PaymentModal({
               </TabsList>
 
               <TabsContent value="card" className="mt-4">
-                <PayForm
-                  email={email}
-                  setEmail={setEmail}
-                  error={error}
-                  loading={loading}
-                  priceEuros={priceEuros}
-                  onSubmit={handlePaySubmit}
-                  hint={`Pay securely by card. Enter your email and we'll send a checkout link for €${priceEuros}.`}
-                />
-              </TabsContent>
+                <div className="space-y-4">
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    Pay securely by card through Monobank. You will be taken to the bank&apos;s
+                    checkout page and returned here right after the payment.
+                  </p>
 
-              <TabsContent value="bank" className="mt-4">
-                <PayForm
-                  email={email}
-                  setEmail={setEmail}
-                  error={error}
-                  loading={loading}
-                  priceEuros={priceEuros}
-                  onSubmit={handlePaySubmit}
-                  hint={`Prefer a bank transfer? Enter your email and we'll send transfer details and a payment reference for €${priceEuros}.`}
-                />
+                  {discountApplied && (
+                    <p
+                      className="rounded-md border px-3 py-2 text-sm font-semibold"
+                      style={{
+                        borderColor: `${ORANGE}55`,
+                        backgroundColor: `${ORANGE}10`,
+                        color: ORANGE,
+                      }}
+                    >
+                      {DISCOUNT_PCT}% discount applied
+                    </p>
+                  )}
+
+                  {error && (
+                    <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+                      {error}
+                    </p>
+                  )}
+
+                  <button
+                    type="button"
+                    onClick={handlePay}
+                    disabled={loading}
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:opacity-70"
+                    style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
+                  >
+                    {loading ? (
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                    ) : (
+                      <>
+                        <Lock className="h-4 w-4" />
+                        Proceed to payment · {uahPrice.toLocaleString("uk-UA")} UAH
+                      </>
+                    )}
+                  </button>
+
+                  <p className="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted-foreground">
+                    <Lock className="h-3 w-3" />
+                    One-time payment · No subscription · Secured by Monobank
+                  </p>
+                </div>
               </TabsContent>
 
               <TabsContent value="promo" className="mt-4">
                 <form onSubmit={handlePromoRedeem} className="space-y-4">
                   <p className="text-sm leading-relaxed text-muted-foreground">
-                    Have a one-time promocode? Redeem it while signed in to unlock full course access
-                    instantly — no payment needed.
+                    Have a one-time promocode? Redeem it while signed in to unlock full course
+                    access instantly — no payment needed.
                   </p>
                   <div>
                     <label className="mb-1 block text-xs font-medium text-foreground">
@@ -249,17 +280,6 @@ export function PaymentModal({
                       className="w-full rounded-md border border-border bg-background px-3 py-2 font-mono text-sm uppercase outline-none focus:ring-2 focus:ring-ring"
                     />
                   </div>
-
-                  {discountApplied && (
-                    <p
-                      className="rounded-md border px-3 py-2 text-sm font-semibold"
-                      style={{ borderColor: `${ORANGE}55`, backgroundColor: `${ORANGE}10`, color: ORANGE }}
-                    >
-                      {DISCOUNT_PCT}% discount applied
-                    </p>
-                  )}
-
-
 
                   {error && (
                     <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
@@ -299,67 +319,5 @@ export function PaymentModal({
         }}
       />
     </>
-  );
-}
-
-function PayForm({
-  email,
-  setEmail,
-  error,
-  loading,
-  priceEuros,
-  onSubmit,
-  hint,
-}: {
-  email: string;
-  setEmail: (v: string) => void;
-  error: string | null;
-  loading: boolean;
-  priceEuros: number;
-  onSubmit: (e: React.FormEvent) => void;
-  hint: string;
-}) {
-  return (
-    <form onSubmit={onSubmit} className="space-y-4">
-      <p className="text-sm leading-relaxed text-muted-foreground">{hint}</p>
-      <div>
-        <label className="mb-1 block text-xs font-medium text-foreground">Email</label>
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="you@email.com"
-          className="w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
-        />
-      </div>
-
-      {error && (
-        <p className="rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
-          {error}
-        </p>
-      )}
-
-      <button
-        type="submit"
-        disabled={loading}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 disabled:opacity-70"
-        style={{ backgroundColor: ORANGE, boxShadow: `0 10px 28px -8px ${ORANGE}90` }}
-      >
-        {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin" />
-        ) : (
-          <>
-            <Lock className="h-4 w-4" />
-            Continue · €{priceEuros}
-          </>
-        )}
-      </button>
-
-      <p className="flex items-center justify-center gap-1.5 text-center text-[11px] text-muted-foreground">
-        <Lock className="h-3 w-3" />
-        One-time payment · No subscription
-      </p>
-    </form>
   );
 }
