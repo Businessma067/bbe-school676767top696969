@@ -44,8 +44,37 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+const CANONICAL_HOST = "bbe-school.com";
+
+/**
+ * One canonical host + no trailing slash. Returns a 301 target when the
+ * incoming URL is a www or trailing-slash duplicate of a canonical URL.
+ */
+function canonicalRedirect(request: Request): string | null {
+  const url = new URL(request.url);
+  let changed = false;
+
+  if (url.hostname === `www.${CANONICAL_HOST}`) {
+    url.hostname = CANONICAL_HOST;
+    url.protocol = "https:";
+    url.port = "";
+    changed = true;
+  }
+
+  if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+    url.pathname = url.pathname.replace(/\/+$/, "");
+    changed = true;
+  }
+
+  return changed ? url.toString() : null;
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    const redirectTo = canonicalRedirect(request);
+    if (redirectTo) {
+      return new Response(null, { status: 301, headers: { location: redirectTo } });
+    }
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
