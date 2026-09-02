@@ -287,6 +287,48 @@ export type Database = {
         }
         Relationships: []
       }
+      payment_webhook_logs: {
+        Row: {
+          amount_minor: number | null
+          created_at: string
+          currency_code: number | null
+          error: string | null
+          headers: Json
+          id: string
+          invoice_id: string | null
+          payload: Json | null
+          raw_body: string | null
+          signature_valid: boolean
+          status: string | null
+        }
+        Insert: {
+          amount_minor?: number | null
+          created_at?: string
+          currency_code?: number | null
+          error?: string | null
+          headers?: Json
+          id?: string
+          invoice_id?: string | null
+          payload?: Json | null
+          raw_body?: string | null
+          signature_valid?: boolean
+          status?: string | null
+        }
+        Update: {
+          amount_minor?: number | null
+          created_at?: string
+          currency_code?: number | null
+          error?: string | null
+          headers?: Json
+          id?: string
+          invoice_id?: string | null
+          payload?: Json | null
+          raw_body?: string | null
+          signature_valid?: boolean
+          status?: string | null
+        }
+        Relationships: []
+      }
       payments: {
         Row: {
           amount_minor: number
