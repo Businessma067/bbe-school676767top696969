@@ -1,7 +1,8 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
- * 4 (Equations), 5 (Linear equations), 6 (Inequalities), 8 (Power functions),
+ * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
+ * 7 (Linear and quadratic functions), 8 (Power functions),
  * 11 (Elementary probability), and 12 (Binomial) are populated;
  * chapters 9–10 are marked coming soon; others use placeholders.
  */
@@ -13,6 +14,7 @@ import {
   MATH_CH5_LINEAR_EQUATIONS,
   MATH_CH5_SUBSECTIONS,
 } from "@/data/math-ch5-linear-equations";
+import { MATH_CH7_LINEAR_QUADRATIC } from "@/data/math-ch7-linear-quadratic";
 import {
   MATH_CH8_POWER_FUNCTIONS,
   MATH_CH8_SUBSECTIONS,
@@ -78,7 +80,10 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
-export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {};
+export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {
+  /** Chapter 7 has no book subtopics — unlock the first N tasks at chapter level. */
+  7: 10,
+};
 
 function localIndexInSubsection(
   tasks: MathTask[],
@@ -180,6 +185,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   4: MATH_CH4_EQUATIONS,
   5: MATH_CH5_LINEAR_EQUATIONS,
   6: MATH_CH6_INEQUALITIES,
+  7: MATH_CH7_LINEAR_QUADRATIC,
   8: MATH_CH8_POWER_FUNCTIONS,
   11: MATH_CH12_PROBABILITY,
   12: MATH_CH13_BINOMIAL,
