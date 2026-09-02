@@ -82,6 +82,8 @@ export const createCheckout = createServerFn({ method: "POST" })
         reference,
         redirectUrl: `${origin}/payment-result`,
         webHookUrl: `${origin}/api/public/payment/webhook`,
+        // Two-step payment: block the funds first, charge them on finalize.
+        paymentType: "hold",
       });
 
       const email = typeof context.claims.email === "string" ? context.claims.email : null;
