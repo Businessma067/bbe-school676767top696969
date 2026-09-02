@@ -271,6 +271,12 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
   },
 };
 
+/** Hand-written entries win over auto-generated page copy. */
+export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
+  de: { ...generatedDe, ...baseDictionary.de },
+  uk: { ...generatedUk, ...baseDictionary.uk },
+};
+
 export function translate(text: string, lang: Lang): string | null {
   if (lang === "en") return null;
   const table = dictionary[lang];
