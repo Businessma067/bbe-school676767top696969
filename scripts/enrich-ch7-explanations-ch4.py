@@ -205,9 +205,12 @@ def rewrite_ABC(f, g):
 
 
 def vertex_form_string(a_g, h, k) -> str:
-    shift = (
-        rf"\left(x-{F(h)}\right)^{{2}}" if h >= 0 else rf"\left(x+{F(-h)}\right)^{{2}}"
-    )
+    if h == 0:
+        shift = "x^{2}"
+    elif h > 0:
+        shift = rf"\left(x-{F(h)}\right)^{{2}}"
+    else:
+        shift = rf"\left(x+{F(-h)}\right)^{{2}}"
     if a_g == 1:
         lead = ""
     elif a_g == -1:
@@ -292,7 +295,7 @@ def subst_display(name: str, expr, x0) -> tuple[str, Rational]:
 
 
 def axis_display(a2, a1, h) -> str:
-    return D(rf"x=-\frac{{{F(a1)}}}{{2\cdot {F(a2)}}}={F(h)}")
+    return D(rf"x=-\frac{{{F(a1)}}}{{2\cdot {par(a2)}}}={F(h)}")
 
 
 def disc_display(expr, sym: str = r"\Delta") -> str:
@@ -384,18 +387,453 @@ def recover_models(task: dict):
     return f, g
 
 
+"""Tools a purely symbolic stem can appeal to: keywords, formula, explanation."""
+SYMBOLIC_TOOLS: tuple[tuple[str, tuple[str, ...], str, str], ...] = (
+    (
+        "axis",
+        ("axis", "symmetr", "midpoint"),
+        r"x=-\frac{b}{2a}",
+        "The axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two "
+        "coefficients and ignores the constant term entirely.",
+    ),
+    (
+        "vieta",
+        ("sum of their", "for their sum", "sum of the roots", "product"),
+        r"S=-\frac{b}{a}\qquad P=\frac{c}{a}",
+        "Vieta's relations turn the coefficients into the sum and the product of the "
+        "roots without solving any equation.",
+    ),
+    (
+        "disc",
+        ("discriminant", "\\delta", "tangent", "real root", "double root"),
+        r"\Delta=b^{2}-4ac",
+        "The discriminant counts the real roots: two while it is positive, one when it "
+        "vanishes and none once it turns negative.",
+    ),
+    (
+        "vertex",
+        ("vertex", "range", "smallest", "largest", "minimum", "maximum", "(x-h)"),
+        r"g(x)=a\left(x-h\right)^{2}+k",
+        "Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ "
+        "decides whether $k$ is the smallest or the largest value taken.",
+    ),
+    (
+        "rewrite",
+        ("af^{2}", "a f(x)^{2}", "af^{2}+bf+c"),
+        r"g=Af^{2}+Bf+C",
+        "Squaring a line already creates an $x^{2}$ term, which is what lets a parabola "
+        "be rebuilt out of $f^{2}$, $f$ and a constant.",
+    ),
+    (
+        "nest",
+        ("\\circ", "nested", "g(f(x))", "f(g(x))", "highest power", "composit"),
+        "",
+        "Nesting two polynomials multiplies their highest powers instead of adding "
+        "them, so a line inside a parabola still leaves a parabola.",
+    ),
+    (
+        "inverse",
+        ("f^{-1}", "inverse", "undoing"),
+        r"f^{-1}(x)=\frac{x-q}{m}",
+        "Undoing a line gives another line, so wrapping it around a parabola cannot "
+        "change the highest power that appears.",
+    ),
+    (
+        "mirror",
+        ("even", "odd function", "g(-x)", "mirror"),
+        r"g(-x)=g(x)\iff b=0",
+        "Replacing $x$ by $-x$ reflects a graph in the $y$-axis, and a parabola "
+        "survives that swap exactly when its middle coefficient vanishes.",
+    ),
+    (
+        "meet",
+        ("intersect", "meet", "common point", "difference"),
+        r"g(x)-f(x)=0",
+        "Common points of a line and a parabola solve a single quadratic equation, so "
+        "there can never be more than two of them.",
+    ),
+    (
+        "growth",
+        ("sufficiently large", "bounded", "stays above", "strictly below", "squeezed"),
+        "",
+        "Far out on either side the $x^{2}$ term outgrows every linear term, so the "
+        "parabola decides who ends up on top.",
+    ),
+    (
+        "transform",
+        ("shift", "translat", "\\lambda", "scaling", "scalings"),
+        r"g(x-r)\qquad g(x)+s\qquad \lambda g(x)",
+        "A horizontal shift moves the axis, a vertical shift leaves it where it is, "
+        "and a non-zero factor can only stretch the graph or flip it over.",
+    ),
+    (
+        "mono",
+        ("monoton", "increasing", "decreasing"),
+        "",
+        "A line with non-zero slope keeps one direction everywhere, while a parabola "
+        "only becomes monotone once the axis cuts its domain in two.",
+    ),
+    (
+        "fit",
+        ("collinear", "pin down", "points of the plane", "on its graph"),
+        "",
+        "Two points with different abscissas settle exactly one line, and three "
+        "non-collinear ones settle exactly one parabola.",
+    ),
+)
+
+SYMBOLIC_OPENERS: dict[str, tuple[str, ...]] = {
+    "axis": (
+        "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled "
+        "through the formulas that hold for every parabola.",
+        "The parabola keeps its coefficients as letters, which leaves the general "
+        "formulas for the axis and the discriminant as the only tools.",
+        "Since $a$, $b$ and $c$ are never given numbers, each claim has to survive for "
+        "every admissible choice of them.",
+        "Arithmetic is unavailable here: the coefficients stay symbolic, so the axis "
+        "formula has to be argued with rather than evaluated.",
+        "Everything is stated for a general parabola, so the reasoning runs on the "
+        "structure of $ax^{2}+bx+c$ instead of on numbers.",
+    ),
+    "vieta": (
+        "Nothing is numeric here, so the roots stay unknown and only their sum and "
+        "their product are within reach.",
+        "The roots themselves are out of reach without numbers, but their sum and "
+        "product are still readable from the coefficients.",
+        "No coefficient is pinned down, so the roots can only be discussed through the "
+        "two symmetric quantities Vieta supplies.",
+    ),
+    "disc": (
+        "Nothing is numeric here, so the sign of the discriminant is the only lever "
+        "available.",
+        "With the coefficients left as letters, every claim about roots reduces to a "
+        "question about the sign of $b^{2}-4ac$.",
+        "No numbers are supplied, so counting roots means tracking the discriminant "
+        "rather than solving anything.",
+    ),
+    "vertex": (
+        "The stem hands over a parabola in completed-square form and nothing else, so "
+        "every claim is decided by what $a$, $h$ and $k$ stand for.",
+        "Only the completed-square shape is given, which makes $a$, $h$ and $k$ the "
+        "three letters every claim has to be traced back to.",
+        "The parabola arrives already centred on its vertex, so the reasoning stays "
+        "with the roles of $a$, $h$ and $k$.",
+    ),
+    "rewrite": (
+        "No coefficients are given, so the claims have to be settled by what a line "
+        "and its square can build.",
+        "Without numbers, the question is purely structural: which parabolas are "
+        "reachable from a line and its square.",
+    ),
+    "nest": (
+        "No numbers appear, so the claims are settled by what nesting does to the "
+        "highest power of $x$.",
+        "Everything stays symbolic, so composing the two rules has to be judged by the "
+        "power of $x$ it produces.",
+    ),
+    "inverse": (
+        "No numbers appear, so the claims are settled by what undoing a line does to "
+        "the highest power of $x$.",
+        "The coefficients stay symbolic, so the effect of inverting a line has to be "
+        "argued in general.",
+    ),
+    "mirror": (
+        "Nothing is numeric, so the mirror test that compares $g(-x)$ with $g(x)$ has "
+        "to do the work.",
+        "With letters in place of numbers, symmetry claims are settled by substituting "
+        "$-x$ and comparing.",
+    ),
+    "meet": (
+        "With no coefficients supplied, every claim is decided by the shape of the "
+        "difference of the two functions.",
+        "No numbers are on offer, so the meetings of the graphs have to be counted "
+        "through the difference $g-f$ in general form.",
+        "The stem stays symbolic, which makes the difference of the two rules the only "
+        "object worth examining.",
+    ),
+    "growth": (
+        "With no coefficients supplied, only the long-run behaviour of the two "
+        "functions can settle the claims.",
+        "Nothing is numeric, so the comparison has to be made far out on the axis where "
+        "the squared term dominates.",
+    ),
+    "transform": (
+        "No numbers are supplied; each claim asks what a shift or a stretch can and "
+        "cannot change.",
+        "The coefficients stay symbolic, so the claims are about which features a "
+        "translation or a scaling preserves.",
+    ),
+    "mono": (
+        "No numbers are supplied, so the claims turn on where each graph changes "
+        "direction.",
+        "Everything is general, which makes the location of the turning point the "
+        "deciding factor for monotonicity.",
+    ),
+    "fit": (
+        "No coordinates are given, so the claims are about how many points a line or a "
+        "parabola needs.",
+        "The points stay unnamed, so the question is one of counting conditions against "
+        "unknown coefficients.",
+    ),
+}
+
+
+"""Extra notes keyed to the auxiliary objects a symbolic stem introduces."""
+SYMBOLIC_NOTES: tuple[tuple[str, str], ...] = (
+    (
+        r"axis of symmetry (?:of the graph of \$g\$ )?\\?ell|\\ell\b",
+        "The axis carries its own name here, and every letter compares it with some "
+        "other line.",
+    ),
+    (
+        r"vertex \$V\$",
+        "The line is pinned to the vertex $V$, so one common point is there before any "
+        "computation starts.",
+    ),
+    (
+        r"f_t\(x\)",
+        "The lines arrive as a whole family, so the parameter has to be carried along "
+        "as an unknown instead of a number.",
+    ),
+    (
+        r"g_1\(x\)",
+        "Three transformed copies of one parabola are put next to the original, so ask "
+        "each time which feature the transformation touches.",
+    ),
+    (
+        r"\\tilde f",
+        "Both graphs are reflected at once, so the question is always which feature "
+        "survives a reflection.",
+    ),
+    (
+        r"q\(y\)=",
+        "The parabola arrives as a second function wrapped around a line, so the "
+        "substitution has to be unwound before the roots can be read.",
+    ),
+    (
+        r"g\\circ g",
+        "Here a parabola is nested inside a parabola, not merely a line inside one.",
+    ),
+    (
+        r"set \$d=|Write \$d=",
+        "The difference of the two functions is given its own name, so watch which of "
+        "its coefficients still depend on the line.",
+    ),
+    (
+        r"\$u\$ and \$v\$",
+        "A pair of different inputs with equal values is handed over, which is a "
+        "statement about symmetry rather than about roots.",
+    ),
+    (
+        r"\\Delta=b\^\{2\}-4ac",
+        "The discriminant is introduced by the stem itself, so each letter is a claim "
+        "about what its sign controls.",
+    ),
+    (
+        r"range of \$g\$",
+        "The claims are about the set of values that come out, which for a parabola is "
+        "always a half-line starting at the turning point.",
+    ),
+    (
+        r"unique|uniquely",
+        "Uniqueness is claimed more than once here, and existence on its own never "
+        "establishes it.",
+    ),
+    (
+        r"pairwise distinct points",
+        "The points stay anonymous, so only counting arguments can decide the claims.",
+    ),
+)
+
+
+def build_symbolic_overview(task: dict) -> str:
+    """A worked overview for a stem that fixes no coefficients at all."""
+    blob = (task.get("context", "") + " " + " ".join(task["statements"])).lower()
+    hits = [
+        (key, formula, sentence)
+        for key, words, formula, sentence in SYMBOLIC_TOOLS
+        if any(w in blob for w in words)
+    ]
+    if not hits:
+        hits = [
+            (
+                "axis",
+                r"x=-\frac{b}{2a}\qquad \Delta=b^{2}-4ac",
+                "Every claim here follows from the two formulas that describe any "
+                "parabola: the axis of symmetry and the discriminant.",
+            )
+        ]
+
+    opener = pick(
+        task,
+        SYMBOLIC_OPENERS.get(
+            hits[0][0],
+            (
+                "No coefficients are fixed in this stem, so each letter is settled by a "
+                "general rule rather than by arithmetic.",
+            ),
+        ),
+    )
+    formulas = [f for _, f, _ in hits if f][:2] or [
+        r"f(x)=mx+q\qquad g(x)=ax^{2}+bx+c,\quad a\neq 0"
+    ]
+    raw = task.get("context", "") + " " + " ".join(task["statements"])
+
+    sentences = []
+    for key, _, sentence in hits[:3]:
+        # A parabola nested in a parabola needs a stronger statement than the
+        # line-inside-parabola one the generic entry supplies.
+        if key == "nest" and (r"g\circ g" in raw or "x^{4}" in raw):
+            sentence = (
+                "Nesting multiplies the highest powers instead of adding them, so "
+                "feeding a parabola into a parabola reaches $x^{4}$, and inserting a "
+                "line between them changes nothing about that."
+            )
+        sentences.append(sentence)
+
+    blocks = [opener]
+    if formulas:
+        blocks.append(D(r"\qquad ".join(formulas)))
+    blocks.append(" ".join(sentences))
+
+    for pattern, note in SYMBOLIC_NOTES:
+        if re.search(pattern, raw):
+            blocks.append(note)
+            break
+    return "\n\n".join(blocks)
+
+
+FG_OPENERS: tuple[str, ...] = (
+    "The stem fixes the two models",
+    "Both rules are handed over with numbers already in place:",
+    "The stem names a line and a parabola,",
+    "Everything starts from the two concrete rules",
+    "The pair under discussion is",
+)
+
+
+def case_seed(task: dict) -> int:
+    """A stable small integer per task, used to vary boilerplate phrasing."""
+    digits = re.sub(r"\D", "", task.get("case_id", "")) or "0"
+    return int(digits)
+
+
+def pick(task: dict, options: tuple[str, ...], offset: int = 0) -> str:
+    """One of several equivalent phrasings, chosen so tasks do not read alike."""
+    return options[(case_seed(task) + offset) % len(options)]
+
+
+PARABOLA_OPENERS: tuple[str, ...] = (
+    "The stem fixes a single parabola.",
+    "Only one parabola is in play here.",
+    "A single quadratic rule carries every claim.",
+    "There is one graph to study, and it is a parabola.",
+    "Everything below refers to the same parabola.",
+)
+
+APPLIED_OPENERS: tuple[str, ...] = (
+    "One formula carries the whole story.",
+    "The situation is captured by a single rule.",
+    "Behind the wording there is just one function.",
+    "The story reduces to one formula and the quantities it links.",
+)
+
+SINGLE_TWO_ROOT_LINES: tuple[str, ...] = (
+    "A positive discriminant puts two crossings on the $x$-axis, placed symmetrically "
+    "around the axis of the parabola.",
+    "The discriminant comes out positive, so the graph cuts the $x$-axis twice, once on "
+    "either side of the axis of symmetry.",
+    "Two real roots follow from the positive discriminant, and the axis of symmetry sits "
+    "exactly halfway between them.",
+    "Because the discriminant is positive the parabola meets the $x$-axis in two points, "
+    "and factoring recovers them.",
+)
+
+SINGLE_VERTEX_LINES: tuple[str, ...] = (
+    "Completing the square locates the turning point, and Vieta's relations give the "
+    "sum $S$ and the product $P$ of the roots without solving anything.",
+    "Two standard readings cover most of what follows: the vertex from the completed "
+    "square, and the sum and product of the roots from the coefficients.",
+    "The axis formula fixes the turning point, while the sum $S$ and the product $P$ of "
+    "the roots come out of the coefficients with no equation to solve.",
+    "Before testing anything, it pays to write down the vertex together with the sum and "
+    "the product of the roots, all three being coefficient arithmetic.",
+    "The completed square hands over the turning point, and Vieta's relations hand over "
+    "the sum and the product of the roots.",
+)
+
+FG_VERTEX_LINES: tuple[str, ...] = (
+    "Completing the square moves the turning point of the parabola into view: the axis "
+    "comes from the first two coefficients and the height is the value of $g$ there.",
+    "The turning point is worth having in hand: the axis of symmetry is read off the "
+    "first two coefficients, and evaluating $g$ there supplies the height.",
+    "Rewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis "
+    "formula and $k$ obtained by substituting that abscissa back in.",
+    "Since the parabola is concrete, the vertex can be computed once and reused: the "
+    "axis first, then the height above it.",
+)
+
+FG_VIETA_LINES: tuple[str, ...] = (
+    "Vieta's relations read the sum $S$ and the product $P$ of the roots of $g$ straight "
+    "off the coefficients, and the discriminant of $g$ says how many real roots there "
+    "are to sum in the first place.",
+    "The roots of $g$ never have to be computed: their sum and product follow from the "
+    "coefficients, while the discriminant records whether they are real at all.",
+    "Coefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and "
+    "the sign of its discriminant tells how many of those roots are real.",
+    "For the roots of $g$ the useful data are the sum, the product and the discriminant, "
+    "all three of which come from the coefficients directly.",
+)
+
+FG_READOFF_LINES: tuple[str, ...] = (
+    "Several claims only need the coefficients as they stand: the slope of the line is "
+    "the factor in front of $x$, each constant term is the value of that rule at $0$, "
+    "and the sign of the leading coefficient makes the arms open {dir}.",
+    "A first group of claims is pure reading: the factor in front of $x$ is the slope, "
+    "the constant terms give the intercepts on the vertical axis, and the leading "
+    "coefficient of $g$ sends the arms {dir}.",
+    "No work beyond reading is needed for the slope, for the two values at $0$ and for "
+    "the opening direction, which is {dir} here because of the sign in front of "
+    "$x^{{2}}$.",
+    "The slope, the vertical intercepts and the opening direction all sit in plain view "
+    "in the coefficients; the arms go {dir}.",
+)
+
+FG_MEET_LINES: tuple[str, ...] = (
+    "The graphs share a point exactly where the difference of the two rules vanishes, so "
+    "the discriminant of that single quadratic counts the meetings: here there are {n}.",
+    "Common points are the roots of $f-g$, and that difference is again a quadratic, so "
+    "its discriminant settles the count: {n} here.",
+    "Comparing the two graphs means solving $f(x)=g(x)$, a quadratic equation whose "
+    "discriminant reports {n} real solutions.",
+    "Wherever the two graphs touch, the difference $f-g$ is zero; that difference is "
+    "quadratic and its discriminant leaves {n} crossings.",
+)
+
+
+def disc_of(p) -> Rational:
+    return Rational(discriminant(Poly(expand(p), x)))
+
+
 def build_overview(task, f, g) -> str:
-    if task.get("stem_kind") == "symbolic" or f is None or g is None:
+    if task.get("stem_kind") in SINGLE_KINDS:
+        single = build_single_overview(task)
+        if single:
+            return single
+
+    if task.get("stem_kind") == "symbolic":
+        return build_symbolic_overview(task)
+
+    if f is None or g is None:
         ov = (task.get("solution_overview") or "").strip()
         ov = re.sub(r"\\deg\([^)]+\)", "highest power", ov)
-        ov = ov.replace("basis", "building blocks").replace("Degree-", "Line of slope type ")
-        if task.get("stem_kind") == "symbolic":
-            return (
-                "The stem states structural rules about lines and parabolas without "
-                "fixing any coefficients, so every letter is settled by a general "
-                "formula rather than by arithmetic.\n\n" + ov
-            )
-        return ov
+        # Collapse accidental repeated paragraphs.
+        paras = [p.strip() for p in re.split(r"\n\s*\n", ov) if p.strip()]
+        dedup: list[str] = []
+        for p in paras:
+            if p not in dedup:
+                dedup.append(p)
+        return "\n\n".join(dedup).strip()
 
     h, k, a_g = vertex_of(g)
     a2, a1, a0 = poly_coeffs(g)
@@ -406,36 +844,69 @@ def build_overview(task, f, g) -> str:
     n_int = 2 if Delta > 0 else (1 if Delta == 0 else 0)
     meetings = {2: "two", 1: "one", 0: "no"}[n_int]
 
-    try:
-        A, B, C = rewrite_ABC(f, g)
-        rw = (
-            "Because $f$ is a line with non-zero slope, the square $f(x)^{2}$ already "
-            "carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and "
-            "a constant. Matching coefficients gives\n\n"
-            + D(rf"A={F(A)},\quad B={F(B)},\quad C={F(C)}")
-        )
-    except Exception:
-        rw = (
-            "Because $f$ is a line with non-zero slope, a rewriting "
-            "$g=A f^{2}+B f+C$ exists and is uniquely determined."
-        )
+    blob = (task.get("context", "") + " " + " ".join(task["statements"])).lower()
+    compact = blob.replace(" ", "")
+    wants = lambda *words: any(w in blob for w in words)
 
-    return "\n\n".join(
-        [
-            "The stem fixes the two models",
-            D(rf"f(x)={L(f)}\qquad g(x)={L(g)}"),
-            "Completing the square locates the turning point of the parabola, and "
-            "Vieta's relations give the sum $S$ and the product $P$ of its roots.",
-            D(
-                rf"\text{{vertex}}=\left({F(h)},{F(k)}\right)"
-                rf"\qquad S={F(sum_r)}\qquad P={F(prod_r)}"
+    blocks = [pick(task, FG_OPENERS), D(rf"f(x)={L(f)}\qquad g(x)={L(g)}")]
+
+    if wants("slope", "opens", "upward", "downward", "intercept", "steep"):
+        m_f = Rational(Poly(f, x).nth(1))
+        blocks += [
+            pick(task, FG_READOFF_LINES, 3).format(
+                dir="upwards" if a2 > 0 else "downwards"
             ),
-            "The graphs meet where the difference vanishes, and the discriminant of "
-            f"that quadratic counts the meetings: here there are {meetings}.",
-            D(rf"f(x)-g(x)={L(diff)}\qquad \Delta={F(Delta)}"),
-            rw,
+            D(rf"m={F(m_f)}\qquad f(0)={F(Rational(Poly(f, x).nth(0)))}\qquad g(0)={F(a0)}\qquad a={F(a2)}"),
         ]
-    )
+
+    if wants(
+        "vertex", "completing", "turning", "lowest", "highest", "smallest", "largest",
+        "minimum", "maximum", "range", "axis", "(x-", "(x+",
+    ):
+        blocks += [
+            pick(task, FG_VERTEX_LINES),
+            D(rf"g(x)={vertex_form_string(a2, h, k)}\qquad \text{{vertex}}=\left({F(h)},{F(k)}\right)"),
+        ]
+
+    if wants("root", "zero", "vieta", "solution of") or "sumof" in compact:
+        blocks += [
+            pick(task, FG_VIETA_LINES, 1),
+            D(rf"S={F(sum_r)}\qquad P={F(prod_r)}\qquad \Delta_{{g}}={F(disc_of(g))}"),
+        ]
+
+    if wants(
+        "intersect", "meet", "common", "cross", "difference", "gap", "tangent",
+        "above", "below", "f-g", "f(x)-g(x)", "g(x)-f(x)",
+    ):
+        blocks += [
+            pick(task, FG_MEET_LINES, 2).format(n=meetings),
+            D(rf"f(x)-g(x)={L(diff)}\qquad \Delta={F(Delta)}"),
+        ]
+
+    if wants("f^{2}", "f(x)^{2}", "af^{2}", "rebuilt", "rewrit") or "f(x)^2" in compact:
+        try:
+            A, B, C = rewrite_ABC(f, g)
+            blocks += [
+                "Because $f$ is a line with non-zero slope, the square $f(x)^{2}$ "
+                "already carries an $x^{2}$ term, so $g$ can be rebuilt from "
+                "$f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives",
+                D(rf"A={F(A)},\quad B={F(B)},\quad C={F(C)}"),
+            ]
+        except Exception:
+            blocks.append(
+                "Because $f$ is a line with non-zero slope, a rewriting "
+                "$g=A f^{2}+B f+C$ exists and is uniquely determined."
+            )
+
+    if len(blocks) == 2:
+        blocks += [
+            "Both rules are concrete, so every claim can be checked by evaluating or by "
+            "comparing the two expressions directly; the vertex of $g$ and the "
+            "difference $f-g$ are the two quantities worth having ready.",
+            D(rf"\text{{vertex}}=\left({F(h)},{F(k)}\right)\qquad f(x)-g(x)={L(diff)}"),
+        ]
+
+    return "\n\n".join(blocks)
 
 
 # --------------------------------------------------------------------------- #
@@ -3487,74 +3958,10 @@ PARAMETRIC: dict[tuple[str, str], list[str]] = {
                     "$\\frac{2}{9}$"),
     ],
     # ---- 7.64 Gap on the y-axis ------------------------------------------ #
-    ("MATH 7.64", "C"): [
-        "Subtracting a parabola from a line leaves a square term behind, so expand the "
-        "difference and look at the coefficient of $x^{2}$.",
-        D(r"\left(f-g\right)(x)=\left(-2x+7\right)-\left(x^{2}+x-1\right)"),
-        D(r"\left(f-g\right)(x)=-x^{2}-3x+8"),
-        "The number in front of $x^{2}$ is $-1$, which is non-zero, so the difference "
-        "is a genuine quadratic function; the negative sign only says that its graph "
-        "opens downwards.",
-        close(True, "The difference is a parabola, hence a quadratic function"),
-    ],
     # ---- 7.68 Building a parabola out of a line -------------------------- #
-    ("MATH 7.68", "B"): [
-        "The line here is $f(x)=x+3$, and completing the square in $g$ produces exactly "
-        "that bracket, which is what makes the middle coefficient avoidable.",
-        D(r"g(x)=x^{2}+6x+4=\left(x+3\right)^{2}-5"),
-        "Since $\\left(x+3\\right)^{2}$ is the square of $f(x)$, the rewriting needs no "
-        "single copy of $f$ at all.",
-        D(r"g(x)=1\cdot f(x)^{2}+0\cdot f(x)+\left(-5\right)"),
-        "Expanding back gives $x^{2}+6x+9-5=x^{2}+6x+4$, which is $g$ again.",
-        close(True, "The choice $A=1$, $B=0$, $C=-5$ works"),
-    ],
     # ---- 7.75 Rewriting through a shifted line --------------------------- #
-    ("MATH 7.75", "C"): [
-        "The line is $f(x)=2\\left(x-3\\right)$, and completing the square in $g$ "
-        "produces the same bracket, so the middle term can be dispensed with.",
-        D(r"g(x)=x^{2}-6x+1=\left(x-3\right)^{2}-8"),
-        "Dividing the square of $f$ by four reproduces $\\left(x-3\\right)^{2}$ exactly.",
-        D(r"\frac{1}{4}f(x)^{2}=\frac{1}{4}\cdot 4\left(x-3\right)^{2}"
-          r"=\left(x-3\right)^{2}"),
-        D(r"g(x)=\frac{1}{4}f(x)^{2}+0\cdot f(x)+\left(-8\right)"),
-        close(True, "The triple $A=\\frac{1}{4}$, $B=0$, $C=-8$ does the job"),
-    ],
     # ---- 7.76 A line the parabola never reaches -------------------------- #
-    ("MATH 7.76", "A"): [
-        "Common points are the real solutions of $g(x)=f(x)$, so collect everything on "
-        "one side and count them through the discriminant.",
-        D(r"-x^{2}-2-\left(x+3\right)=-x^{2}-x-5=0"),
-        D(r"\Delta=\left(-1\right)^{2}-4\left(-1\right)\left(-5\right)=1-20=-19"),
-        "A negative discriminant leaves no real square root in the quadratic formula, "
-        "so the equation has no real solution.",
-        D(r"-x^{2}-x-5=-\left(x+\frac{1}{2}\right)^{2}-\frac{19}{4}<0"),
-        "Completing the square shows the difference is strictly negative everywhere: "
-        "the parabola stays below the line by at least $\\frac{19}{4}$.",
-        close(True, "The two graphs share no point"),
-    ],
-    ("MATH 7.76", "D"): [
-        "Roots are the abscissas where the graph reaches the horizontal axis, so solve "
-        "$g(x)=0$ directly.",
-        D(r"-x^{2}-2=0\iff x^{2}=-2"),
-        "No real number has a negative square, so the equation has no real solution.",
-        D(r"g(x)=-x^{2}-2\le -2<0\quad\text{for every real }x"),
-        "The parabola opens downwards with highest value $-2$, so the whole graph sits "
-        "strictly below the horizontal axis and never touches it.",
-        close(False, "There are no real roots at all, so certainly not two"),
-    ],
     # ---- 7.87 Root distance, midpoint and a sign ------------------------- #
-    ("MATH 7.87", "E"): [
-        "Meeting abscissas are the real roots of the difference, so subtract and see "
-        "what kind of equation is left.",
-        D(r"g(x)-f(x)=x^{2}+3x-40-\left(7x+2\right)=x^{2}-4x-42"),
-        "The coefficient of $x^{2}$ is $1$, so this is a quadratic equation and it can "
-        "have at most two real solutions.",
-        D(r"\Delta=\left(-4\right)^{2}-4\left(1\right)\left(-42\right)=16+168=184>0"),
-        D(r"x=2\pm\sqrt{46}"),
-        "The discriminant is positive, so there are exactly two meeting points, and a "
-        "third one is impossible.",
-        close(False, "Two is the exact count, so more than two never happens"),
-    ],
     # ---- 7.97 Axis gap, Vieta and nested order --------------------------- #
     ("MATH 7.97", "E"): [
         "The abscissas where the graphs meet solve $g(x)=f(x)$, so bring the line over "
@@ -3586,6 +3993,1799 @@ def expl_parametric(letter, stmt, truth, task) -> str | None:
 
 
 # --------------------------------------------------------------------------- #
+# Single-model stems: one parabola, one line, a story, a table, conditions
+# --------------------------------------------------------------------------- #
+
+SINGLE_KINDS = {"parabola", "line", "applied", "table", "rebuild"}
+
+
+def ptex(expr) -> str:
+    """A polynomial of degree at most two, written in descending order."""
+    a2, a1, a0 = poly_coeffs(expr)
+    out = ""
+    for coef, base in ((a2, "x^{2}"), (a1, "x"), (a0, "")):
+        if coef == 0:
+            continue
+        mag = abs(coef)
+        body = base if (base and mag == 1) else f"{F(mag)}{base}"
+        out += ("-" if coef < 0 else ("+" if out else "")) + body
+    return out or "0"
+
+
+def signed(v) -> str:
+    """A number ready to be appended to an expression: ``+3`` or ``-3``."""
+    v = Rational(v)
+    return f"-{F(-v)}" if v < 0 else f"+{F(v)}"
+
+
+def factor_tex(r) -> str:
+    r = Rational(r)
+    if r == 0:
+        return "x"
+    return rf"\left(x-{F(r)}\right)" if r > 0 else rf"\left(x+{F(-r)}\right)"
+
+
+def claim_num(s: str):
+    """The rational number a claim displays, or None when it is not one."""
+    try:
+        return Rational(parse_poly(s))
+    except Exception:
+        return None
+
+
+def perfect_sqrt(n):
+    n = Rational(n)
+    if n < 0:
+        return None
+    r = Rational(int(round(float(n) ** 0.5)))
+    return r if r * r == n else None
+
+
+def pairs_from_table(md: str):
+    pts = []
+    for line in (md or "").splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) != 2:
+            continue
+        vals = []
+        for c in cells:
+            v = claim_num(c.strip("$"))
+            if v is None:
+                vals = None
+                break
+            vals.append(v)
+        if vals:
+            pts.append((vals[0], vals[1]))
+    return pts
+
+
+def diffs(seq):
+    return [seq[i + 1] - seq[i] for i in range(len(seq) - 1)]
+
+
+def table_fit(points):
+    """Degree and rule of the polynomial behind an equally spaced table."""
+    xs = [p[0] for p in points]
+    ys = [p[1] for p in points]
+    dx = xs[1] - xs[0]
+    d1 = diffs(ys)
+    if len(set(d1)) == 1:
+        m = Rational(d1[0], dx)
+        return 1, expand(m * (x - xs[0]) + ys[0])
+    d2 = diffs(d1)
+    if len(set(d2)) == 1:
+        a = Rational(d2[0]) / (2 * dx * dx)
+        b = Rational(d1[0]) / dx - a * (2 * xs[0] + dx)
+        c = ys[0] - a * xs[0] ** 2 - b * xs[0]
+        return 2, expand(a * x**2 + b * x + c)
+    return 0, None
+
+
+def rebuild_from_conditions(ctx: str):
+    """Turn the stated conditions of a rebuild stem into a name and a rule."""
+    m = re.search(
+        r"parabola \$([A-Za-z])\$ has zeros \$([^$]+)\$ and \$([^$]+)\$ and "
+        r"leading coefficient \$([^$]+)\$",
+        ctx,
+    )
+    if m:
+        name = m.group(1)
+        r1, r2, a = (claim_num(m.group(i)) for i in (2, 3, 4))
+        rule = expand(a * (x - r1) * (x - r2))
+        build = [
+            "Two zeros and a leading coefficient describe a parabola completely: the "
+            "zeros fix the factors and the coefficient fixes the vertical stretch.",
+            D(rf"{name}(x)={F(a)}{factor_tex(r1)}{factor_tex(r2)}"),
+            "Multiplying the two brackets out puts the rule in standard form.",
+            D(f"{name}(x)={ptex(rule)}"),
+        ]
+        return name, rule, build
+
+    m = re.search(
+        r"line \$([A-Za-z])\$ has slope \$([^$]+)\$ and passes through the point "
+        r"\$\(([^,]+),([^)]+)\)\$",
+        ctx,
+    )
+    if m:
+        name = m.group(1)
+        slope, px, py = (claim_num(m.group(i)) for i in (2, 3, 4))
+        rule = expand(slope * (x - px) + py)
+        build = [
+            "A slope and one point are enough for a line: start at the given point and "
+            "walk along the slope.",
+            D(rf"{name}(x)={F(slope)}{factor_tex(px)}{signed(py)}"),
+            "Expanding the bracket puts the rule in the familiar shape.",
+            D(f"{name}(x)={ptex(rule)}"),
+        ]
+        return name, rule, build
+
+    m = re.search(
+        r"parabola \$([A-Za-z])\$ has its vertex at \$\(([^,]+),([^)]+)\)\$ and "
+        r"passes through the point \$\(([^,]+),([^)]+)\)\$",
+        ctx,
+    )
+    if m:
+        name = m.group(1)
+        h, k, px, py = (claim_num(m.group(i)) for i in (2, 3, 4, 5))
+        a = Rational(py - k, (px - h) ** 2)
+        rule = expand(a * (x - h) ** 2 + k)
+        build = [
+            "A vertex already fixes the shape up to one stretch factor, so write the "
+            "parabola in completed-square form and let the extra point decide the "
+            "factor.",
+            D(rf"{name}(x)=a{factor_tex(h)}^{{2}}{signed(k)}"),
+            f"Substituting the point $({F(px)},{F(py)})$ leaves one equation for $a$.",
+            D(
+                rf"{F(py)}=a\left({F(px)}-{par(h)}\right)^{{2}}{signed(k)}"
+                rf"\Rightarrow a={F(a)}"
+            ),
+            "Expanding the square puts the rule in standard form.",
+            D(f"{name}(x)={ptex(rule)}"),
+        ]
+        return name, rule, build
+
+    return None, None, None
+
+
+def single_model(task: dict):
+    kind = task.get("stem_kind")
+    if kind not in SINGLE_KINDS:
+        return None
+    ctx = task.get("context", "")
+
+    if kind == "table":
+        pts = pairs_from_table(task.get("tables_markdown", ""))
+        if len(pts) < 4:
+            return None
+        deg, fit = table_fit(pts)
+        return {"kind": kind, "points": pts, "deg": deg, "fit": fit, "name": "y"}
+
+    m = re.search(r"\$([A-Za-z])\(x\)\s*=\s*([^$]+)\$", ctx)
+    if m:
+        try:
+            expr = expand(parse_poly(m.group(2)))
+        except Exception:
+            return None
+        if not numeric_ok(expr):
+            return None
+        raw = m.group(2).strip()
+        # A stem may hand the rule over factored or completed; keep that shape so the
+        # explanations can start from what the reader actually sees.
+        given = None if raw.replace(" ", "") == ptex(expr).replace(" ", "") else raw
+        return {"kind": kind, "name": m.group(1), "expr": expr, "given": given, "build": None}
+
+    name, rule, build = rebuild_from_conditions(ctx)
+    if rule is None:
+        return None
+    return {"kind": kind, "name": name, "expr": rule, "build": build}
+
+
+def q_bits(mod):
+    """Coefficients, vertex and discriminant of the model's quadratic."""
+    q = mod["expr"]
+    a2, a1, a0 = poly_coeffs(q)
+    h, k, _ = vertex_of(q)
+    return q, a2, a1, a0, h, k, Rational(discriminant(Poly(q, x)))
+
+
+def roots_line(q, name="x"):
+    """A display naming the two rational roots, plus the roots themselves."""
+    rs = rational_roots(q)
+    if not rs or len(rs) != 2:
+        return None, rs
+    return D(rf"x_{{1}}={F(rs[0])}\qquad x_{{2}}={F(rs[1])}"), rs
+
+
+# --- claims about a single parabola --------------------------------------- #
+
+def h_axis(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    truth = claim == h
+    parts = [
+        "A parabola is its own mirror image in one vertical line, and the abscissa "
+        "of that line is settled by the first two coefficients alone.",
+        D(r"x=-\frac{b}{2a}"),
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        close(
+            truth,
+            f"The mirror line is $x={F(h)}$, exactly the line named in the claim"
+            if truth
+            else f"The mirror line is $x={F(h)}$ while the claim names $x={F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_axis_yaxis(m, mod):
+    name = m.group(1)
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    truth = h == 0
+    parts = [
+        "Symmetry about the $y$-axis means the axis of symmetry is the line $x=0$, "
+        "and that happens exactly when the middle coefficient disappears.",
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        "Testing a pair of opposite inputs shows the same behaviour from the other "
+        "side.",
+        D(
+            rf"{name}(-x)={ptex(expand(q.subs(x, -x)))}"
+        ),
+        close(
+            truth,
+            "The rule is unchanged when $x$ is replaced by $-x$, the algebraic form of "
+            "symmetry about the $y$-axis"
+            if truth
+            else f"The mirror line is $x={F(h)}$, not the $y$-axis",
+        ),
+    ]
+    return truth, parts
+
+
+def h_vertex(m, mod):
+    name = m.group(1)
+    ch, ck = claim_num(m.group(2)), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    truth = (ch == h) and (ck == k)
+    sub, _ = subst_display(name, q, h)
+    parts = [
+        "The turning point lies on the axis of symmetry, so its abscissa comes from "
+        "the coefficients and its height is the value of the function there.",
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        "Evaluating on the axis gives the height.",
+        sub,
+        close(
+            truth,
+            rf"The turning point is $\left({F(h)},{F(k)}\right)$, the point the claim names"
+            if truth
+            else rf"The turning point is $\left({F(h)},{F(k)}\right)$ while the claim "
+            rf"reports $\left({F(ch)},{F(ck)}\right)$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_opens(m, mod):
+    name, word = m.group(1), m.group(2)
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    truth = (a2 > 0) == (word == "upwards")
+    actual = "upwards" if a2 > 0 else "downwards"
+    parts = [
+        "Far away from the turning point the square term dwarfs the rest, so the sign "
+        "of the leading coefficient decides on its own which way the arms point.",
+        D(f"{name}(x)={ptex(q)}"),
+        D(rf"a={F(a2)}"),
+        f"A {'positive' if a2 > 0 else 'negative'} leading coefficient sends both arms "
+        f"{actual}, and the turning point is the "
+        f"{'lowest' if a2 > 0 else 'highest'} point of the graph.",
+        close(
+            truth,
+            f"The graph opens {actual}, which is what the claim says"
+            if truth
+            else f"The graph opens {actual}, not {word}",
+        ),
+    ]
+    return truth, parts
+
+
+def h_sum_roots(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    S = Rational(-a1, 1) / a2
+    truth = claim == S
+    parts = [
+        "Vieta's relations read the sum of the two roots straight off the "
+        "coefficients, with no equation to solve: it is minus the middle coefficient "
+        "divided by the leading one.",
+        D(r"S=-\frac{b}{a}"),
+        D(f"{name}(x)={ptex(q)}"),
+        D(rf"S=-\frac{{{F(a1)}}}{{{F(a2)}}}={F(S)}"),
+    ]
+    disp, rs = roots_line(q)
+    if disp:
+        parts.append(f"The roots themselves are ${F(rs[0])}$ and ${F(rs[1])}$, and they "
+                     f"do add up to ${F(S)}$.")
+    parts.append(
+        close(
+            truth,
+            f"The sum is ${F(S)}$, the number the claim reports"
+            if truth
+            else f"The sum is ${F(S)}$ while the claim reports ${F(claim)}$",
+        )
+    )
+    return truth, parts
+
+
+def h_prod_roots(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    P = Rational(a0, 1) / a2
+    truth = claim == P
+    parts = [
+        "The second of Vieta's relations gives the product of the roots as the "
+        "constant term divided by the leading coefficient.",
+        D(r"P=\frac{c}{a}"),
+        D(f"{name}(x)={ptex(q)}"),
+        D(rf"P=\frac{{{F(a0)}}}{{{F(a2)}}}={F(P)}"),
+    ]
+    disp, rs = roots_line(q)
+    if disp:
+        parts.append(
+            f"Multiplying the roots ${F(rs[0])}$ and ${F(rs[1])}$ confirms the value."
+        )
+    parts.append(
+        close(
+            truth,
+            f"The product is ${F(P)}$, exactly what the claim reports"
+            if truth
+            else f"The product is ${F(P)}$ while the claim reports ${F(claim)}$",
+        )
+    )
+    return truth, parts
+
+
+def h_roots(m, mod):
+    name = m.group(1)
+    c1, c2 = claim_num(m.group(2)), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, d = q_bits(mod)
+    rs = rational_roots(q) or []
+    truth = len(rs) == 2 and sorted([c1, c2]) == rs
+    given = mod.get("given") or ""
+    if r"\left(x" in given and len(rs) == 2:
+        # A factored stem already displays its roots; no expansion is needed.
+        return truth, [
+            "A product is zero exactly when one of its factors is, so a rule handed "
+            "over in factored form shows its roots without any expanding.",
+            D(f"{name}(x)={given}=0"),
+            "Each bracket contributes one linear equation."
+            if a2 == 1
+            else "The constant factor in front can never vanish, which leaves one "
+            "linear equation per bracket.",
+            D(rf"x={F(rs[0])}\qquad x={F(rs[1])}"),
+            close(
+                truth,
+                f"The brackets vanish at ${F(rs[0])}$ and ${F(rs[1])}$, the pair named "
+                "in the claim"
+                if truth
+                else f"The brackets vanish at ${F(rs[0])}$ and ${F(rs[1])}$ while the "
+                f"claim names ${F(c1)}$ and ${F(c2)}$",
+            ),
+        ]
+
+    parts = [
+        "The roots are the inputs where the graph touches the $x$-axis, so set the "
+        "rule equal to zero; the discriminant says first how many such inputs exist.",
+        D(f"{name}(x)={ptex(q)}"),
+        disc_display(q),
+    ]
+    if len(rs) == 2:
+        parts.append("A positive discriminant gives two separate roots, delivered by "
+                     "the quadratic formula.")
+        parts.append(D(rf"x_{{1}}={F(rs[0])}\qquad x_{{2}}={F(rs[1])}"))
+        parts.append(
+            close(
+                truth,
+                f"The zeros are ${F(rs[0])}$ and ${F(rs[1])}$, the pair named in the claim"
+                if truth
+                else f"The zeros are ${F(rs[0])}$ and ${F(rs[1])}$ while the claim names "
+                f"${F(c1)}$ and ${F(c2)}$",
+            )
+        )
+    else:
+        parts.append(
+            close(False, "A negative discriminant leaves no real root at all, so no "
+                         "such pair of zeros exists")
+        )
+    return truth, parts
+
+
+def h_root_distance(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    q, a2, a1, a0, h, k, d = q_bits(mod)
+    root = perfect_sqrt(d)
+    dist = None if root is None else root / abs(a2)
+    truth = dist is not None and dist == claim
+    parts = [
+        "The two roots sit symmetrically on either side of the axis, so their gap is "
+        "the square root of the discriminant divided by the size of the leading "
+        "coefficient.",
+        D(r"\left|x_{1}-x_{2}\right|=\frac{\sqrt{\Delta}}{\left|a\right|}"),
+        disc_display(q),
+    ]
+    if dist is not None:
+        parts.append(
+            D(
+                rf"\left|x_{{1}}-x_{{2}}\right|=\frac{{{F(root)}}}{{{F(abs(a2))}}}"
+                rf"={F(dist)}"
+            )
+        )
+        rs = rational_roots(q) or []
+        if len(rs) == 2:
+            parts.append(
+                f"The roots ${F(rs[0])}$ and ${F(rs[1])}$ are indeed ${F(dist)}$ apart."
+            )
+        parts.append(
+            close(
+                truth,
+                f"The gap is ${F(dist)}$, the distance the claim reports"
+                if truth
+                else f"The gap is ${F(dist)}$ while the claim reports ${F(claim)}$",
+            )
+        )
+    else:
+        parts.append(close(False, "The discriminant is not a square of a rational "
+                                  "number, so the claimed distance cannot be right"))
+    return truth, parts
+
+
+def h_root_count(m, mod):
+    name, phrase = m.group(1), m.group(2)
+    q, a2, a1, a0, h, k, d = q_bits(mod)
+    actual = "two distinct real solutions" if d > 0 else (
+        "exactly one real solution" if d == 0 else "no real solution"
+    )
+    truth = actual == phrase
+    parts = [
+        "The number of real solutions of a quadratic equation is decided by the "
+        "discriminant, the expression under the square root of the solution formula.",
+        D(r"\Delta=b^{2}-4ac"),
+        D(f"{name}(x)={ptex(q)}"),
+        disc_display(q),
+        f"A discriminant that is {'positive' if d > 0 else ('zero' if d == 0 else 'negative')} "
+        f"means the equation has {actual}.",
+        close(
+            truth,
+            f"There are {actual}, which is what the claim says"
+            if truth
+            else f"There are {actual}, not {phrase}",
+        ),
+    ]
+    return truth, parts
+
+
+def h_complete_square(m, mod):
+    name, claimed = m.group(1), m.group(2)
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    try:
+        claimed_poly = expand(parse_poly(claimed))
+    except Exception:
+        claimed_poly = None
+    truth = claimed_poly is not None and expand(claimed_poly - q) == 0
+    sub, _ = subst_display(name, q, h)
+    parts = [
+        "Completing the square rewrites a parabola as $a(x-h)^{2}+k$, where $h$ is the "
+        "abscissa of the axis and $k$ the height of the turning point, so both numbers "
+        "have to be produced first.",
+        D(f"{name}(x)={mod['given']}") if mod.get("given") else D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        "The height of the turning point is the value on that axis.",
+        sub,
+        "Putting the stretch, the shift and the height together gives",
+        D(f"{name}(x)={vertex_form_string(a2, h, k)}"),
+        close(
+            truth,
+            "This is the very expression the claim displays"
+            if truth
+            else f"The claim displays ${claimed}$, a different expression",
+        ),
+    ]
+    return truth, parts
+
+
+def _expansion_parts(name, mod, claimed, verb):
+    q = mod["expr"]
+    try:
+        claimed_poly = expand(parse_poly(claimed))
+    except Exception:
+        claimed_poly = None
+    truth = claimed_poly is not None and expand(claimed_poly - q) == 0
+    parts = [
+        f"{verb} means multiplying every bracket out and collecting equal powers of "
+        "$x$; nothing else about the function changes.",
+    ]
+    if mod.get("given"):
+        parts.append(D(f"{name}(x)={mod['given']}"))
+    parts.append(D(f"{name}(x)={ptex(q)}"))
+    if claimed_poly is None or truth:
+        parts.append(
+            "Every coefficient of the expansion can now be compared with the one the "
+            "claim displays."
+        )
+        parts.append(
+            close(True, "The two rules agree in all three coefficients")
+            if truth
+            else close(False, "The displayed rule cannot be read as a polynomial at all")
+        )
+    else:
+        mm = first_mismatch(claimed_poly, q)
+        if mm is not None:
+            t, pv, qv = mm
+            parts.append(
+                f"The claim writes ${claimed}$, which takes the value ${F(pv)}$ at "
+                f"$x={F(t)}$ where the true rule gives ${F(qv)}$."
+            )
+        parts.append(close(False, "The two expressions therefore differ"))
+    return truth, parts
+
+
+def h_expand(m, mod):
+    return _expansion_parts(m.group(1), mod, m.group(2), "Expanding")
+
+
+def h_rule(m, mod):
+    name, claimed = m.group(1), m.group(2)
+    q = mod["expr"]
+    try:
+        claimed_poly = expand(parse_poly(claimed))
+    except Exception:
+        claimed_poly = None
+    truth = claimed_poly is not None and expand(claimed_poly - q) == 0
+    parts = list(mod.get("build") or [])
+    if not parts:
+        parts = [
+            "The stated conditions single out one rule, so rebuild it before reading "
+            "the claim.",
+            D(f"{name}(x)={ptex(q)}"),
+        ]
+    if truth:
+        parts.append(close(True, "The rebuilt rule is the one printed in the claim"))
+    else:
+        parts.append(
+            close(False, f"The claim prints ${claimed}$, which is not that rule")
+        )
+    return truth, parts
+
+
+def h_extreme(m, mod):
+    word, name, claim = m.group(1), m.group(2), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    wants_min = word == "smallest"
+    has_it = (a2 > 0) == wants_min
+    truth = has_it and claim == k
+    sub, _ = subst_display(name, q, h)
+    parts = [
+        "A parabola reaches its extreme value at the turning point and nowhere else, "
+        "so locate the axis first and then read the height there.",
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        sub,
+    ]
+    if a2 > 0:
+        parts.append(
+            f"The leading coefficient ${F(a2)}$ is positive, so the arms rise on both "
+            f"sides and ${F(k)}$ is the smallest value the function ever takes; there "
+            "is no largest one."
+        )
+    else:
+        parts.append(
+            f"The leading coefficient ${F(a2)}$ is negative, so the arms fall on both "
+            f"sides and ${F(k)}$ is the largest value the function ever takes; there "
+            "is no smallest one."
+        )
+    if truth:
+        parts.append(close(True, f"That extreme value is ${F(k)}$, exactly as claimed"))
+    elif has_it:
+        parts.append(
+            close(False, f"The {word} value is ${F(k)}$ while the claim reports ${F(claim)}$")
+        )
+    else:
+        parts.append(
+            close(False, f"A parabola opening this way has no {word} value at all")
+        )
+    return truth, parts
+
+
+def h_yint(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    expr = mod["expr"]
+    sub, val = subst_display(name, expr, 0)
+    truth = val == claim
+    parts = [
+        "The graph meets the $y$-axis where the input is zero, so the intercept is "
+        "simply the constant term of the rule.",
+        D(f"{name}(x)={ptex(expr)}"),
+        sub,
+        close(
+            truth,
+            f"The graph cuts the $y$-axis at $y={F(val)}$, the height the claim names"
+            if truth
+            else f"The graph cuts the $y$-axis at $y={F(val)}$ while the claim names "
+            f"$y={F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_value(m, mod):
+    name, arg, claim = m.group(1), claim_num(m.group(2)), claim_num(m.group(3))
+    if name != mod["name"] or arg is None or claim is None:
+        return None
+    expr = mod["expr"]
+    sub, val = subst_display(name, expr, arg)
+    truth = val == claim
+    parts = [
+        "Evaluating a function means putting the number in place of every $x$ and "
+        "working the arithmetic out once.",
+        D(f"{name}(x)={ptex(expr)}"),
+        sub,
+        rf"The graph therefore passes through the point $\left({F(arg)},{F(val)}\right)$.",
+        close(
+            truth,
+            f"The value is ${F(val)}$, precisely the number in the claim"
+            if truth
+            else f"The value is ${F(val)}$ while the claim states ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_monotone_q(m, mod):
+    name, word, rel, bound = m.group(1), m.group(2), m.group(3), claim_num(m.group(4))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    if a2 > 0:
+        truth = (bound <= h) if word == "decreasing" else (bound >= h)
+    else:
+        truth = False
+    side = "left" if rel == "<" else "right"
+    parts = [
+        "A parabola changes direction exactly once, at its axis, so a claim about a "
+        "whole half-line is decided by where that axis sits.",
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+    ]
+    if a2 > 0:
+        parts.append(
+            f"With a positive leading coefficient the graph falls on everything to the "
+            f"left of $x={F(h)}$ and rises on everything to its right."
+        )
+    else:
+        parts.append(
+            f"With a negative leading coefficient the graph rises to the left of "
+            f"$x={F(h)}$ and falls to its right, so it can never be {word} on a "
+            f"half-line stretching to infinity on the {side}."
+        )
+    parts.append(
+        close(
+            truth,
+            f"The half-line $x{rel}{F(bound)}$ lies entirely on the {word} side of the axis"
+            if truth
+            else f"The half-line $x{rel}{F(bound)}$ reaches across the axis $x={F(h)}$, "
+            f"where the direction changes",
+        )
+    )
+    return truth, parts
+
+
+def h_range(m, mod):
+    name, rel, bound = m.group(1), m.group(2), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    at_least = rel == "ge"
+    truth = (a2 > 0 and bound <= k) if at_least else (a2 < 0 and bound >= k)
+    sub, _ = subst_display(name, q, h)
+    sym = r"\ge" if at_least else r"\le"
+    parts = [
+        "An inequality that has to hold for every real $x$ is a statement about the "
+        "extreme value of the parabola, so the turning point decides it.",
+        axis_display(a2, a1, h),
+        sub,
+        f"The leading coefficient ${F(a2)}$ is "
+        f"{'positive, so the values never drop below' if a2 > 0 else 'negative, so the values never rise above'} "
+        f"${F(k)}$.",
+        D(rf"{name}(x){r'\ge' if a2 > 0 else r'\le'} {F(k)}"),
+        close(
+            truth,
+            f"The bound ${F(bound)}$ is reached once and never passed anywhere else"
+            if truth
+            else f"The value ${F(k)}$ is taken at the turning point, which breaks the "
+            f"claimed bound ${F(bound)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_horizontal(m, mod):
+    c, name = claim_num(m.group(1)), m.group(2)
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    shifted = expand(q - c)
+    d = Rational(discriminant(Poly(shifted, x)))
+    truth = d > 0
+    parts = [
+        "A horizontal line meets the parabola where the rule takes that constant "
+        "value, so move the constant to the other side and count the solutions of the "
+        "quadratic that is left.",
+        D(f"{name}(x){signed(-c)}={ptex(shifted)}"),
+        disc_display(shifted),
+        f"The turning point sits at height ${F(k)}$ and the arms open "
+        f"{'upwards' if a2 > 0 else 'downwards'}, so the levels the graph reaches twice "
+        f"are exactly those {'above' if a2 > 0 else 'below'} ${F(k)}$.",
+        close(
+            truth,
+            f"The level $y={F(c)}$ is one of them, so there are two crossings"
+            if truth
+            else (
+                f"The level $y={F(c)}$ is the height of the turning point itself, where the "
+                "line touches the graph once instead of cutting it twice"
+                if d == 0
+                else f"The level $y={F(c)}$ is never reached at all"
+            ),
+        ),
+    ]
+    return truth, parts
+
+
+def h_equal_values(m, mod):
+    name, p1, p2 = m.group(1), claim_num(m.group(2)), claim_num(m.group(4))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    s1, v1 = subst_display(name, q, p1)
+    s2, v2 = subst_display(name, q, p2)
+    truth = v1 == v2
+    mid = Rational(p1 + p2, 2)
+    parts = [
+        "Two inputs give the same output exactly when they lie at the same distance "
+        "from the axis of symmetry, but the safest check is to work both values out.",
+        axis_display(a2, a1, h),
+        s1,
+        s2,
+        f"The midpoint of ${F(p1)}$ and ${F(p2)}$ is ${F(mid)}$, "
+        f"{'which is the axis itself' if mid == h else f'while the axis sits at ${F(h)}$'}.",
+        close(
+            truth,
+            f"Both inputs return ${F(v1)}$, an equal pair of values"
+            if truth
+            else f"The two values are ${F(v1)}$ and ${F(v2)}$, so they differ",
+        ),
+    ]
+    return truth, parts
+
+
+def h_lead_coefficient(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    expr = mod["expr"]
+    a2, a1, a0 = poly_coeffs(expr)
+    truth = claim == a2
+    parts = [
+        "The leading coefficient is the number multiplying $x^{2}$ once every bracket "
+        "has been multiplied out, and any minus sign in front belongs to it.",
+        D(f"{name}(x)={ptex(expr)}"),
+        D(rf"a={F(a2)}"),
+        f"Its sign tells the opening direction and its size tells how narrow the "
+        f"parabola is.",
+        close(
+            truth,
+            f"The leading coefficient is ${F(a2)}$, the number the claim gives"
+            if truth
+            else f"The leading coefficient is ${F(a2)}$, not ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+# --- claims about a single line ------------------------------------------- #
+
+def h_slope(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    line = mod["expr"]
+    slope = Rational(Poly(line, x).nth(1))
+    const = Rational(Poly(line, x).nth(0))
+    truth = claim == slope
+    parts = [
+        "A line written as $mx+q$ shows both of its numbers openly: $m$ is the slope "
+        "and $q$ is the height above the origin.",
+        D(f"{name}(x)={ptex(line)}"),
+        D(rf"m={F(slope)}\qquad q={F(const)}"),
+        f"Stepping one unit to the right changes the height by ${F(slope)}$, the same "
+        "everywhere along the line.",
+        close(
+            truth,
+            f"The slope is ${F(slope)}$, the number the claim reports"
+            if truth
+            else f"The slope is ${F(slope)}$ while the claim reports ${F(claim)}$; the "
+            f"other number, ${F(const)}$, is the intercept",
+        ),
+    ]
+    return truth, parts
+
+
+def h_line_zero(m, mod):
+    name, claim = m.group(1), claim_num(m.group(2))
+    line = mod["expr"]
+    slope = Rational(Poly(line, x).nth(1))
+    const = Rational(Poly(line, x).nth(0))
+    if slope == 0:
+        return False, [
+            "A horizontal line either lies on the $x$-axis or misses it completely.",
+            D(f"{name}(x)={ptex(line)}"),
+            close(False, "This line has no single crossing point"),
+        ]
+    zero = Rational(-const, slope)
+    truth = claim == zero
+    parts = [
+        "The graph crosses the $x$-axis where the height is zero, so set the rule "
+        "equal to zero and solve the linear equation.",
+        D(f"{ptex(line)}=0"),
+        D(rf"{F(slope)}x={F(-const)}"),
+        (
+            D(rf"x=\frac{{{F(-const)}}}{{{F(slope)}}}={F(zero)}")
+            if slope.q == 1 and const.q == 1
+            else D(rf"x={par(-const)}\cdot {par(1 / slope)}={F(zero)}")
+        ),
+        close(
+            truth,
+            f"The crossing is at $x={F(zero)}$, exactly where the claim puts it"
+            if truth
+            else f"The crossing is at $x={F(zero)}$, not at $x={F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_line_monotone(m, mod):
+    name, word = m.group(1), m.group(2)
+    line = mod["expr"]
+    slope = Rational(Poly(line, x).nth(1))
+    actual = "increasing" if slope > 0 else ("decreasing" if slope < 0 else "constant")
+    truth = actual == word
+    parts = [
+        "A line has the same steepness everywhere, so its direction is decided once "
+        "and for all by the sign of the slope.",
+        D(f"{name}(x)={ptex(line)}"),
+        D(rf"m={F(slope)}"),
+        f"Because the slope is {'positive' if slope > 0 else ('negative' if slope < 0 else 'zero')}, "
+        "every step to the right "
+        + (
+            "raises the height."
+            if slope > 0
+            else ("lowers the height." if slope < 0 else "leaves the height unchanged.")
+        ),
+        close(
+            truth,
+            f"The function is {actual}, as claimed"
+            if truth
+            else f"The function is {actual}, not {word}",
+        ),
+    ]
+    return truth, parts
+
+
+def h_line_step(m, mod):
+    step, name, claim = claim_num(m.group(1)), m.group(2), claim_num(m.group(3))
+    line = mod["expr"]
+    slope = Rational(Poly(line, x).nth(1))
+    actual = slope * step
+    truth = claim == actual
+    parts = [
+        "On a line the change of height depends only on the length of the step, never "
+        "on where the step starts: it is the slope times that length.",
+        D(f"{name}(x)={ptex(line)}"),
+        D(
+            rf"{name}\left(x+{F(step)}\right)-{name}(x)={F(slope)}\cdot {par(step)}"
+            rf"={F(actual)}"
+        ),
+        close(
+            truth,
+            f"A step of ${F(step)}$ changes the height by ${F(actual)}$, as claimed"
+            if truth
+            else f"A step of ${F(step)}$ changes the height by ${F(actual)}$, not by "
+            f"${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_line_point(m, mod):
+    px, py, name = claim_num(m.group(1)), claim_num(m.group(2)), m.group(3)
+    line = mod["expr"]
+    sub, val = subst_display(name, line, px)
+    truth = val == py
+    parts = [
+        "A point lies on a graph exactly when the rule turns its abscissa into its "
+        "ordinate, so substitute and compare.",
+        D(f"{name}(x)={ptex(line)}"),
+        sub,
+        close(
+            truth,
+            rf"The line passes through $\left({F(px)},{F(val)}\right)$, the point of the claim"
+            if truth
+            else rf"At $x={F(px)}$ the line is at height ${F(val)}$, not ${F(py)}$",
+        ),
+    ]
+    return truth, parts
+
+
+# --- claims dressed as a story -------------------------------------------- #
+
+def h_ap_value(m, mod):
+    x0, subject, claim = claim_num(m.group(1)), m.group(2), claim_num(m.group(3))
+    name, expr = mod["name"], mod["expr"]
+    sub, val = subst_display(name, expr, x0)
+    truth = val == claim
+    parts = [
+        f"The model turns any input into the {subject}, so a claim about one "
+        "particular input is settled by a single substitution.",
+        D(f"{name}(x)={ptex(expr)}"),
+        sub,
+        close(
+            truth,
+            f"The model returns ${F(val)}$ there, the figure named in the claim"
+            if truth
+            else f"The model returns ${F(val)}$ there while the claim names ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_solve(m, mod):
+    subject, claim, x0 = m.group(1), claim_num(m.group(2)), claim_num(m.group(3))
+    name, expr = mod["name"], mod["expr"]
+    sub, val = subst_display(name, expr, x0)
+    truth = val == claim
+    parts = [
+        f"The claim pins the {subject} to one figure, so read the model as an equation "
+        "and see which input produces that figure.",
+        D(f"{ptex(expr)}={F(claim)}"),
+    ]
+    if Poly(expr, x).degree() == 1:
+        slope = Rational(Poly(expr, x).nth(1))
+        const = Rational(Poly(expr, x).nth(0))
+        root = Rational(claim - const, slope)
+        parts.append(D(rf"{F(slope)}x={F(claim - const)}"))
+        parts.append(D(rf"x={F(root)}"))
+    parts.append("Substituting the claimed input back into the model checks the pair.")
+    parts.append(sub)
+    parts.append(
+        close(
+            truth,
+            f"The {subject} at that input really is ${F(claim)}$"
+            if truth
+            else f"The {subject} at that input is ${F(val)}$, not ${F(claim)}$",
+        )
+    )
+    return truth, parts
+
+
+def h_ap_step(m, mod):
+    noun, subject, claim = m.group(1), m.group(2), claim_num(m.group(3))
+    name, expr = mod["name"], mod["expr"]
+    slope = Rational(Poly(expr, x).nth(1))
+    if Poly(expr, x).degree() > 1:
+        return None
+    truth = claim == slope
+    const = Rational(Poly(expr, x).nth(0))
+    parts = [
+        f"The model is linear, so one extra {noun} always changes the {subject} by the "
+        "same amount, and that amount is the slope.",
+        D(f"{name}(x)={ptex(expr)}"),
+        D(
+            rf"{name}(x+1)-{name}(x)=\left({F(slope)}\left(x+1\right){signed(const)}"
+            rf"\right)-\left({ptex(expr)}\right)={F(slope)}"
+        ),
+        close(
+            truth,
+            f"Each extra {noun} moves the {subject} by ${F(slope)}$, as claimed"
+            if truth
+            else f"Each extra {noun} moves the {subject} by ${F(slope)}$, not by ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_doubling(m, mod):
+    subject = m.group(1)
+    name, expr = mod["name"], mod["expr"]
+    const = Rational(Poly(expr, x).nth(0))
+    slope = Rational(Poly(expr, x).nth(1))
+    truth = const == 0 and Poly(expr, x).degree() <= 1
+    s1, v1 = subst_display(name, expr, 1)
+    s2, v2 = subst_display(name, expr, 2)
+    parts = [
+        "Doubling the input doubles the output only for a model whose graph runs "
+        "through the origin; a constant term is charged once and is not doubled with "
+        "the rest.",
+        D(f"{name}(x)={ptex(expr)}"),
+        s1,
+        s2,
+        f"Twice the value at $x=1$ would be ${F(2 * v1)}$, whereas the model gives "
+        f"${F(v2)}$ at $x=2$.",
+        close(
+            truth,
+            f"The two agree at every input, so the {subject} really is proportional to $x$"
+            if truth
+            else f"The constant term ${F(const)}$ survives the doubling and breaks the "
+            f"proportion between $x$ and the {subject}",
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_extreme_at(m, mod):
+    subject, word, x0 = m.group(1), m.group(2), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    name = mod["name"]
+    wants_max = word == "largest"
+    has_it = (a2 < 0) == wants_max
+    truth = has_it and x0 == h
+    parts = [
+        f"The {subject} follows a parabola, and a parabola turns exactly once: the "
+        "best input is the abscissa of the turning point.",
+        D(f"{name}(x)={ptex(q)}"),
+        axis_display(a2, a1, h),
+        f"The leading coefficient ${F(a2)}$ is "
+        f"{'negative, so the model rises to that input and falls afterwards' if a2 < 0 else 'positive, so the model falls to that input and rises afterwards'}.",
+        close(
+            truth,
+            f"The {subject} is therefore {word} at $x={F(h)}$, the input in the claim"
+            if truth
+            else (
+                f"The turning point is at $x={F(h)}$, not at $x={F(x0)}$"
+                if has_it
+                else f"With this opening direction the {subject} has no {word} value at all"
+            ),
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_extreme_value(m, mod):
+    word, subject, claim = m.group(1), m.group(2), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    name = mod["name"]
+    wants_max = word == "largest"
+    has_it = (a2 < 0) == wants_max
+    truth = has_it and claim == k
+    sub, _ = subst_display(name, q, h)
+    parts = [
+        f"The extreme {subject} is the height of the turning point, so find the input "
+        "that produces it and evaluate the model there.",
+        axis_display(a2, a1, h),
+        sub,
+        f"Because the leading coefficient ${F(a2)}$ is "
+        f"{'negative' if a2 < 0 else 'positive'}, this height is the "
+        f"{'largest' if a2 < 0 else 'smallest'} value the model ever reaches.",
+        close(
+            truth,
+            f"The extreme {subject} is ${F(k)}$, the figure the claim gives"
+            if truth
+            else (
+                f"The extreme {subject} is ${F(k)}$, not ${F(claim)}$"
+                if has_it
+                else f"The model has no {word} value at all"
+            ),
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_zeros(m, mod):
+    subject, c1, c2 = m.group(1), claim_num(m.group(2)), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, d = q_bits(mod)
+    name = mod["name"]
+    rs = rational_roots(q) or []
+    truth = len(rs) == 2 and sorted([c1, c2]) == rs
+    parts = [
+        f"The {subject} vanishes where the model takes the value zero, so solve that "
+        "quadratic equation.",
+        D(f"{name}(x)=0"),
+        D(f"{ptex(q)}=0"),
+    ]
+    if len(rs) == 2:
+        parts.append(D(rf"x_{{1}}={F(rs[0])}\qquad x_{{2}}={F(rs[1])}"))
+        parts.append(
+            close(
+                truth,
+                f"The {subject} is zero exactly at those two inputs, as claimed"
+                if truth
+                else f"The zeros are ${F(rs[0])}$ and ${F(rs[1])}$ while the claim names "
+                f"${F(c1)}$ and ${F(c2)}$",
+            )
+        )
+    else:
+        parts.append(disc_display(q))
+        parts.append(close(False, "A negative discriminant leaves no real zero at all"))
+    return truth, parts
+
+
+def h_ap_average_rate(m, mod):
+    p, qq = claim_num(m.group(1)), claim_num(m.group(2))
+    subject, claim = m.group(3), claim_num(m.group(4))
+    name, expr = mod["name"], mod["expr"]
+    s1, v1 = subst_display(name, expr, p)
+    s2, v2 = subst_display(name, expr, qq)
+    rate = Rational(v2 - v1, qq - p)
+    truth = claim == rate
+    parts = [
+        f"An average rate compares the change of the {subject} with the change of the "
+        "input, so both endpoint values are needed first.",
+        s1,
+        s2,
+        D(
+            rf"\frac{{{name}\left({F(qq)}\right)-{name}\left({F(p)}\right)}}"
+            rf"{{{F(qq)}-{par(p)}}}=\frac{{{F(v2 - v1)}}}{{{F(qq - p)}}}={F(rate)}"
+        ),
+        close(
+            truth,
+            f"The average rate over that stretch is ${F(rate)}$, the figure claimed"
+            if truth
+            else f"The average rate over that stretch is ${F(rate)}$, not ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_ap_positive_between(m, mod):
+    subject, c1, c2 = m.group(1), claim_num(m.group(2)), claim_num(m.group(3))
+    q, a2, a1, a0, h, k, _ = q_bits(mod)
+    name = mod["name"]
+    rs = rational_roots(q) or []
+    truth = len(rs) == 2 and sorted([c1, c2]) == rs and a2 < 0
+    parts = [
+        f"A parabola keeps one sign between its two zeros and the opposite sign "
+        "outside them, so the zeros and the opening direction settle where the "
+        f"{subject} is positive.",
+        D(f"{name}(x)={ptex(q)}"),
+    ]
+    if len(rs) == 2:
+        parts.append(D(rf"x_{{1}}={F(rs[0])}\qquad x_{{2}}={F(rs[1])}"))
+        mid = Rational(rs[0] + rs[1], 2)
+        sub, val = subst_display(name, q, mid)
+        parts.append(
+            f"Testing the midpoint of the two zeros shows the sign in between."
+        )
+        parts.append(sub)
+        parts.append(
+            close(
+                truth,
+                f"Between ${F(rs[0])}$ and ${F(rs[1])}$ the {subject} stays above zero, "
+                "as claimed"
+                if truth
+                else f"The interval named in the claim is not the one between the zeros "
+                f"${F(rs[0])}$ and ${F(rs[1])}$",
+            )
+        )
+    else:
+        parts.append(disc_display(q))
+        parts.append(close(False, "Without real zeros no such interval exists"))
+    return truth, parts
+
+
+def h_ap_constant_change(m, mod):
+    subject, noun = m.group(1), m.group(2)
+    name, expr = mod["name"], mod["expr"]
+    deg = Poly(expr, x).degree()
+    truth = deg <= 1
+    parts = [
+        f"Equal steps of the input produce equal changes of the {subject} only when "
+        "the model is a line; a square term makes the steps grow.",
+        D(f"{name}(x)={ptex(expr)}"),
+    ]
+    if truth:
+        slope = Rational(Poly(expr, x).nth(1))
+        parts.append(D(rf"{name}(x+1)-{name}(x)={F(slope)}"))
+        parts.append(
+            f"The difference does not contain $x$ any more, so every extra {noun} "
+            f"counts the same."
+        )
+        parts.append(close(True, "The change per step is the constant slope"))
+    else:
+        a2 = Rational(Poly(expr, x).nth(2))
+        a1 = Rational(Poly(expr, x).nth(1))
+        parts.append(
+            D(
+                rf"{name}(x+1)-{name}(x)={F(2 * a2)}x+{F(a2 + a1)}"
+                if (a2 + a1) >= 0
+                else rf"{name}(x+1)-{name}(x)={F(2 * a2)}x-{F(-(a2 + a1))}"
+            )
+        )
+        parts.append(
+            f"The difference still depends on $x$, so the change per extra {noun} keeps "
+            "moving."
+        )
+        parts.append(close(False, "The steps are not all of the same size"))
+    return truth, parts
+
+
+def h_ap_never_zero(m, mod):
+    subject = m.group(1)
+    q, a2, a1, a0, h, k, d = q_bits(mod)
+    name = mod["name"]
+    truth = d < 0
+    sub, _ = subst_display(name, q, h)
+    parts = [
+        f"The {subject} hits zero exactly when the quadratic has a real root, so the "
+        "discriminant answers the question.",
+        D(f"{name}(x)={ptex(q)}"),
+        disc_display(q),
+        "The extreme value of the model confirms the same picture.",
+        sub,
+        close(
+            truth,
+            f"A negative discriminant keeps the whole graph on one side of the $x$-axis, "
+            f"out of reach of a zero {subject}"
+            if truth
+            else f"The discriminant is not negative, so the {subject} does reach zero",
+        ),
+    ]
+    return truth, parts
+
+
+# --- claims about a table of measurements --------------------------------- #
+
+def _table_setup(mod):
+    pts = mod["points"]
+    xs = [p[0] for p in pts]
+    ys = [p[1] for p in pts]
+    d1 = diffs(ys)
+    d2 = diffs(d1)
+    return pts, xs, ys, d1, d2, xs[1] - xs[0]
+
+
+def _list_tex(seq) -> str:
+    return ",\\ ".join(F(v) for v in seq)
+
+
+def h_tb_first_diff(m, mod):
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    truth = len(set(d1)) == 1
+    parts = [
+        "With equally spaced inputs the differences of neighbouring outputs do all "
+        "the work: constant first differences are the fingerprint of a line.",
+        D(rf"y:\ {_list_tex(ys)}"),
+        D(rf"\text{{first differences}}:\ {_list_tex(d1)}"),
+        close(
+            truth,
+            f"Every step adds the same ${F(d1[0])}$, keeping the first differences constant"
+            if truth
+            else "The steps come in different sizes, which is exactly what non-constant "
+            "first differences mean",
+        ),
+    ]
+    return truth, parts
+
+
+def h_tb_second_diff(m, mod):
+    claim = claim_num(m.group(1))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    truth = len(set(d2)) == 1 and Rational(d2[0]) == claim
+    parts = [
+        "Differencing twice is the standard test for a parabola: the second "
+        "differences of a quadratic rule are constant, and they are zero for a line.",
+        D(rf"\text{{first differences}}:\ {_list_tex(d1)}"),
+        D(rf"\text{{second differences}}:\ {_list_tex(d2)}"),
+    ]
+    if len(set(d2)) == 1:
+        parts.append(
+            close(
+                truth,
+                f"They are all equal to ${F(d2[0])}$, the value the claim names"
+                if truth
+                else f"They are all equal to ${F(d2[0])}$ while the claim names ${F(claim)}$",
+            )
+        )
+    else:
+        parts.append(close(False, "They are not even constant, so no single value can "
+                                  "describe them"))
+    return truth, parts
+
+
+def h_tb_model(m, mod):
+    word = m.group(1)
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    deg = mod["deg"]
+    truth = (deg == 1) if word == "linear" else (deg == 2)
+    parts = [
+        "A table is consistent with a line when its first differences are constant, "
+        "and with a parabola when the second differences are constant while the first "
+        "ones are not.",
+        D(rf"\text{{first differences}}:\ {_list_tex(d1)}"),
+        D(rf"\text{{second differences}}:\ {_list_tex(d2)}"),
+        D(f"y={ptex(mod['fit'])}") if mod["fit"] is not None else
+        D(r"\text{no polynomial rule of degree at most two fits}"),
+        close(
+            truth,
+            f"The pattern is exactly the one a {word} rule produces"
+            if truth
+            else f"The pattern is the one a {'quadratic' if deg == 2 else 'linear'} rule "
+            f"produces, not a {word} one",
+        ),
+    ]
+    return truth, parts
+
+
+def h_tb_rule(m, mod):
+    claimed = m.group(1)
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    fit = mod["fit"]
+    try:
+        claimed_poly = expand(parse_poly(claimed))
+    except Exception:
+        claimed_poly = None
+    truth = fit is not None and claimed_poly is not None and expand(claimed_poly - fit) == 0
+    parts = [
+        "Testing a proposed rule against a table is a matter of substitution: the rule "
+        "has to reproduce every row, and for a rule of degree at most two three rows "
+        "already pin it down.",
+        D(f"y={ptex(fit)}") if fit is not None else D(r"y=\text{no such rule}"),
+    ]
+    if claimed_poly is not None and fit is not None:
+        checks = []
+        for xv, yv in pts[:3]:
+            checks.append(rf"{F(xv)}\mapsto {F(Rational(expand(claimed_poly.subs(x, xv))))}")
+        parts.append("Running the claimed rule over the first rows gives")
+        parts.append(D(r",\quad ".join(checks)))
+    if truth:
+        parts.append(close(True, "Every row comes out right, which identifies the claimed "
+                                 "rule as the one behind the table"))
+    else:
+        bad = None
+        if claimed_poly is not None:
+            for xv, yv in pts:
+                if Rational(expand(claimed_poly.subs(x, xv))) != yv:
+                    bad = (xv, yv, Rational(expand(claimed_poly.subs(x, xv))))
+                    break
+        if bad:
+            parts.append(
+                f"At $x={F(bad[0])}$ the table reads ${F(bad[1])}$ while the claimed "
+                f"rule gives ${F(bad[2])}$."
+            )
+        parts.append(close(False, "The proposed rule does not reproduce the table"))
+    return truth, parts
+
+
+def h_tb_slope(m, mod):
+    claim = claim_num(m.group(1))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    deg, fit = mod["deg"], mod["fit"]
+    truth = deg == 1 and Rational(Poly(fit, x).nth(1)) == claim
+    parts = [
+        "The slope of a line through a table is the change of the output divided by "
+        "the change of the input, which is the same for every pair of rows only when "
+        "the first differences are constant.",
+        D(rf"\text{{first differences}}:\ {_list_tex(d1)}"),
+        D(rf"m=\frac{{{F(d1[0])}}}{{{F(dx)}}}={F(Rational(d1[0], dx))}"),
+    ]
+    if deg == 1:
+        parts.append(
+            close(
+                truth,
+                f"The line through the table has slope ${F(Rational(d1[0], dx))}$, as claimed"
+                if truth
+                else f"The slope is ${F(Rational(d1[0], dx))}$ while the claim reports "
+                f"${F(claim)}$",
+            )
+        )
+    else:
+        parts.append(close(False, "The first differences are not constant, so no single "
+                                  "line runs through the table at all"))
+    return truth, parts
+
+
+def h_tb_lead(m, mod):
+    claim = claim_num(m.group(1))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    deg, fit = mod["deg"], mod["fit"]
+    truth = deg == 2 and Rational(Poly(fit, x).nth(2)) == claim
+    parts = [
+        "For equally spaced inputs the constant second difference of a quadratic rule "
+        "equals twice the leading coefficient times the square of the spacing, so the "
+        "coefficient can be read off the table directly.",
+        D(r"\text{second difference}=2a\left(\Delta x\right)^{2}"),
+        D(rf"\text{{second differences}}:\ {_list_tex(d2)}"),
+    ]
+    if deg == 2:
+        a = Rational(Poly(fit, x).nth(2))
+        parts.append(D(rf"a=\frac{{{F(d2[0])}}}{{2\cdot {F(dx)}^{{2}}}}={F(a)}"))
+        parts.append(
+            close(
+                truth,
+                f"The leading coefficient is ${F(a)}$, the number the claim gives"
+                if truth
+                else f"The leading coefficient is ${F(a)}$, not ${F(claim)}$",
+            )
+        )
+    else:
+        parts.append(close(False, "The second differences do not describe a genuine "
+                                  "quadratic rule here"))
+    return truth, parts
+
+
+def h_tb_average_rate(m, mod):
+    p, qq, claim = claim_num(m.group(1)), claim_num(m.group(2)), claim_num(m.group(3))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    table = dict(pts)
+    if p not in table or qq not in table:
+        return None
+    rate = Rational(table[qq] - table[p], qq - p)
+    truth = claim == rate
+    parts = [
+        "An average rate of change over a stretch is read from the two end rows only: "
+        "the change of the output divided by the change of the input.",
+        D(rf"y\left({F(p)}\right)={F(table[p])}\qquad y\left({F(qq)}\right)={F(table[qq])}"),
+        D(
+            rf"\frac{{{F(table[qq])}-{par(table[p])}}}{{{F(qq)}-{par(p)}}}"
+            rf"=\frac{{{F(table[qq] - table[p])}}}{{{F(qq - p)}}}={F(rate)}"
+        ),
+        close(
+            truth,
+            f"The average rate over that stretch is ${F(rate)}$, the figure claimed"
+            if truth
+            else f"The average rate over that stretch is ${F(rate)}$, not ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_tb_continue(m, mod):
+    x0, claim = claim_num(m.group(1)), claim_num(m.group(2))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    fit = mod["fit"]
+    if fit is None:
+        return None
+    val = Rational(expand(fit.subs(x, x0)))
+    truth = claim == val
+    sub, _ = subst_display("y", fit, x0)
+    parts = [
+        "Continuing a table means continuing its rule, so identify the rule from the "
+        "differences first and only then step one row further.",
+        D(f"y={ptex(fit)}"),
+        sub,
+        close(
+            truth,
+            f"The next row would read ${F(val)}$, exactly the value claimed"
+            if truth
+            else f"The next row would read ${F(val)}$ while the claim announces ${F(claim)}$",
+        ),
+    ]
+    return truth, parts
+
+
+def h_tb_extreme_row(m, mod):
+    word, x0 = m.group(1), claim_num(m.group(2))
+    pts, xs, ys, d1, d2, dx = _table_setup(mod)
+    target = max(ys) if word == "largest" else min(ys)
+    table = dict(pts)
+    truth = x0 in table and table[x0] == target and ys.count(target) == 1
+    parts = [
+        "A claim about the rows of the table is settled inside the table itself: "
+        "compare the listed outputs and see where the extreme one sits.",
+        D(rf"y:\ {_list_tex(ys)}"),
+        D(rf"\text{{{word} listed value}}={F(target)}"),
+    ]
+    where = [F(xv) for xv, yv in pts if yv == target]
+    parts.append(
+        f"That value appears at $x={where[0]}$"
+        + ("." if len(where) == 1 else f" and also at $x={where[-1]}$.")
+    )
+    parts.append(
+        close(
+            truth,
+            f"The {word} entry of the table does sit at $x={F(x0)}$"
+            if truth
+            else f"The {word} entry sits at $x={where[0]}$, not at $x={F(x0)}$",
+        )
+    )
+    return truth, parts
+
+
+# --- dispatch -------------------------------------------------------------- #
+
+SINGLE_HANDLERS: list[tuple[re.Pattern[str], object]] = [
+    (re.compile(r"^The axis of symmetry of \$([A-Za-z])\$ is the line \$x=(.+?)\$\.$"), h_axis),
+    (re.compile(r"^The graph of \$([A-Za-z])\$ is symmetric about the \$y\$-axis\.$"), h_axis_yaxis),
+    (
+        re.compile(
+            r"^The vertex of the graph of \$([A-Za-z])\$ is the point "
+            r"\$\\left\((.+?),(.+?)\\right\)\$\.$"
+        ),
+        h_vertex,
+    ),
+    (re.compile(r"^The graph of \$([A-Za-z])\$ opens (upwards|downwards)\.$"), h_opens),
+    (re.compile(r"^The two roots of \$([A-Za-z])\$ add up to \$(.+?)\$\.$"), h_sum_roots),
+    (re.compile(r"^The two roots of \$([A-Za-z])\$ multiply to \$(.+?)\$\.$"), h_prod_roots),
+    (re.compile(r"^The roots of \$([A-Za-z])\$ are \$(.+?)\$ and \$(.+?)\$\.$"), h_roots),
+    (
+        re.compile(r"^The distance between the two roots of \$([A-Za-z])\$ is \$(.+?)\$\.$"),
+        h_root_distance,
+    ),
+    (
+        re.compile(
+            r"^The equation \$([A-Za-z])\(x\)=0\$ has "
+            r"(two distinct real solutions|exactly one real solution|no real solution)\.$"
+        ),
+        h_root_count,
+    ),
+    (
+        re.compile(r"^Completing the square gives \$([A-Za-z])\(x\)=(.+?)\$\.$"),
+        h_complete_square,
+    ),
+    (re.compile(r"^Expanding gives \$([A-Za-z])\(x\)=(.+?)\$\.$"), h_expand),
+    (re.compile(r"^The rule is \$([A-Za-z])\(x\)=(.+?)\$\.$"), h_rule),
+    (
+        re.compile(r"^The (smallest|largest) value taken by \$([A-Za-z])\$ is \$(.+?)\$\.$"),
+        h_extreme,
+    ),
+    (
+        re.compile(r"^The graph of \$([A-Za-z])\$ meets the \$y\$-axis at \$y=(.+?)\$\.$"),
+        h_yint,
+    ),
+    (re.compile(r"^\$([A-Za-z])\((.+?)\)=(.+?)\$\.$"), h_value),
+    (
+        re.compile(r"^\$([A-Za-z])\$ is (decreasing|increasing) for every \$x([<>])(.+?)\$\.$"),
+        h_monotone_q,
+    ),
+    (
+        re.compile(r"^\$([A-Za-z])\(x\)\\(ge|le) (.+?)\$ holds for every real \$x\$\.$"),
+        h_range,
+    ),
+    (
+        re.compile(
+            r"^The horizontal line \$y=(.+?)\$ meets the graph of \$([A-Za-z])\$ at "
+            r"two different points\.$"
+        ),
+        h_horizontal,
+    ),
+    (
+        re.compile(
+            r"^The values \$([A-Za-z])\((.+?)\)\$ and \$([A-Za-z])\((.+?)\)\$ are equal\.$"
+        ),
+        h_equal_values,
+    ),
+    (
+        re.compile(r"^The leading coefficient of \$([A-Za-z])\$ is \$(.+?)\$\.$"),
+        h_lead_coefficient,
+    ),
+    (re.compile(r"^The slope of the graph of \$([A-Za-z])\$ is \$(.+?)\$\.$"), h_slope),
+    (
+        re.compile(r"^The graph of \$([A-Za-z])\$ crosses the \$x\$-axis at \$x=(.+?)\$\.$"),
+        h_line_zero,
+    ),
+    (re.compile(r"^\$([A-Za-z])\$ is (increasing|decreasing)\.$"), h_line_monotone),
+    (
+        re.compile(r"^Increasing \$x\$ by \$(.+?)\$ always changes \$([A-Za-z])\$ by \$(.+?)\$\.$"),
+        h_line_step,
+    ),
+    (
+        re.compile(
+            r"^The point \$\\left\((.+?),(.+?)\\right\)\$ lies on the graph of \$([A-Za-z])\$\.$"
+        ),
+        h_line_point,
+    ),
+    (re.compile(r"^At \$x=(.+?)\$ the (.+?) equals \$(.+?)\$(?: [a-z]+)?\.$"), h_ap_value),
+    (
+        re.compile(r"^The (.+?) equals \$(.+?)\$(?: [a-z]+)? at \$x=(.+?)\$\.$"),
+        h_ap_solve,
+    ),
+    (
+        re.compile(r"^Each extra (.+?) changes the (.+?) by \$(.+?)\$(?: [a-z]+)?\.$"),
+        h_ap_step,
+    ),
+    (re.compile(r"^Doubling \$x\$ always doubles the (.+?)\.$"), h_ap_doubling),
+    (re.compile(r"^The (.+?) is (largest|smallest) at \$x=(.+?)\$\.$"), h_ap_extreme_at),
+    (
+        re.compile(r"^The (largest|smallest) possible (.+?) equals \$(.+?)\$(?: [a-z]+)?\.$"),
+        h_ap_extreme_value,
+    ),
+    (
+        re.compile(r"^The (.+?) is zero exactly at \$x=(.+?)\$ and \$x=(.+?)\$\.$"),
+        h_ap_zeros,
+    ),
+    (
+        re.compile(
+            r"^Between \$x=(.+?)\$ and \$x=(.+?)\$ the (.+?) changes at an average rate "
+            r"of \$(.+?)\$(?: [a-z]+)? per unit of \$x\$\.$"
+        ),
+        h_ap_average_rate,
+    ),
+    (
+        re.compile(
+            r"^The (.+?) is positive for every \$x\$ strictly between \$(.+?)\$ and \$(.+?)\$\.$"
+        ),
+        h_ap_positive_between,
+    ),
+    (
+        re.compile(r"^The (.+?) changes by the same amount for every extra (.+?)\.$"),
+        h_ap_constant_change,
+    ),
+    (re.compile(r"^The (.+?) is never zero\.$"), h_ap_never_zero),
+    (
+        re.compile(r"^The first differences of the \$y\$-values are constant\.$"),
+        h_tb_first_diff,
+    ),
+    (
+        re.compile(
+            r"^The second differences of the \$y\$-values are constant and equal to \$(.+?)\$\.$"
+        ),
+        h_tb_second_diff,
+    ),
+    (re.compile(r"^The table is consistent with a (linear|quadratic) model\.$"), h_tb_model),
+    (re.compile(r"^The table is produced by the rule \$y=(.+?)\$\.$"), h_tb_rule),
+    (re.compile(r"^A linear rule through the table has slope \$(.+?)\$\.$"), h_tb_slope),
+    (
+        re.compile(r"^A quadratic rule through the table has leading coefficient \$(.+?)\$\.$"),
+        h_tb_lead,
+    ),
+    (
+        re.compile(
+            r"^The average rate of change between \$x=(.+?)\$ and \$x=(.+?)\$ is \$(.+?)\$\.$"
+        ),
+        h_tb_average_rate,
+    ),
+    (
+        re.compile(r"^Continuing the pattern, the value at \$x=(.+?)\$ is \$(.+?)\$\.$"),
+        h_tb_continue,
+    ),
+    (
+        re.compile(r"^The \$y\$-values in the table are (largest|smallest) at \$x=(.+?)\$\.$"),
+        h_tb_extreme_row,
+    ),
+]
+
+
+def expl_single(letter, stmt, truth, task) -> str | None:
+    if task.get("stem_kind") not in SINGLE_KINDS:
+        return None
+    mod = single_model(task)
+    if mod is None:
+        return None
+    s = stmt.strip()
+    for pattern, handler in SINGLE_HANDLERS:
+        m = pattern.match(s)
+        if not m:
+            continue
+        out = handler(m, mod)
+        if out is None:
+            continue
+        computed, parts = out
+        if bool(computed) != bool(truth):
+            raise AssertionError(
+                f"{task['case_id']} {letter}: answer key says {truth} but the "
+                f"explanation computes {computed} for: {stmt}"
+            )
+        return pack(letter, truth, parts)
+    return None
+
+
+def build_single_overview(task: dict) -> str | None:
+    mod = single_model(task)
+    if mod is None:
+        return None
+    kind = mod["kind"]
+
+    if kind == "table":
+        pts, xs, ys, d1, d2, dx = _table_setup(mod)
+        rows = ",\\ ".join(rf"\left({F(a)},{F(b)}\right)" for a, b in pts)
+        blocks = [
+            "The table is the whole stem, so read it as a list of pairs.",
+            D(rows),
+            "The inputs are equally spaced, which makes the differences of "
+            "neighbouring outputs the fastest diagnostic tool available.",
+            D(
+                rf"\text{{first}}:\ {_list_tex(d1)}\qquad "
+                rf"\text{{second}}:\ {_list_tex(d2)}"
+            ),
+        ]
+        if mod["deg"] == 1:
+            blocks.append(
+                "Constant first differences mean a line, and the slope is one "
+                "difference divided by the spacing of the inputs."
+            )
+        elif mod["deg"] == 2:
+            blocks.append(
+                "The first differences move while the second ones stand still, the "
+                "signature of a parabola; the constant second difference is twice the "
+                "leading coefficient times the squared spacing."
+            )
+        if mod["fit"] is not None:
+            blocks.append(D(f"y={ptex(mod['fit'])}"))
+        return "\n\n".join(blocks)
+
+    name, expr = mod["name"], mod["expr"]
+    deg = Poly(expr, x).degree()
+
+    if deg <= 1:
+        slope = Rational(Poly(expr, x).nth(1))
+        const = Rational(Poly(expr, x).nth(0))
+        blocks = []
+        if mod.get("build"):
+            blocks.extend(mod["build"])
+        else:
+            blocks.append("The stem fixes a single line.")
+            if mod.get("given"):
+                blocks.append(D(f"{name}(x)={mod['given']}"))
+                blocks.append(
+                    "Splitting the fraction term by term brings the rule into the "
+                    "shape $mx+q$."
+                    if "\\frac" in mod["given"]
+                    else "Ordering the two terms brings the rule into the shape $mx+q$."
+                )
+            blocks.append(D(f"{name}(x)={ptex(expr)}"))
+        blocks.append(
+            "Two numbers describe it completely: the slope, which is the change of "
+            "height per unit step, and the height above the origin."
+        )
+        blocks.append(D(rf"m={F(slope)}\qquad {name}(0)={F(const)}"))
+        if slope != 0:
+            zero = Rational(-const, slope)
+            blocks.append(
+                "Setting the height to zero locates the single crossing of the "
+                "$x$-axis, and the sign of the slope fixes the direction once and for "
+                "all."
+            )
+            blocks.append(D(rf"{ptex(expr)}=0\Rightarrow x={F(zero)}"))
+        return "\n\n".join(blocks)
+
+    a2, a1, a0 = poly_coeffs(expr)
+    h, k, _ = vertex_of(expr)
+    d = Rational(discriminant(Poly(expr, x)))
+    S = Rational(-a1, 1) / a2
+    P = Rational(a0, 1) / a2
+    rs = rational_roots(expr) or []
+
+    blocks = []
+    if mod.get("build"):
+        blocks.extend(mod["build"])
+    else:
+        blocks.append(
+            pick(task, APPLIED_OPENERS, 1)
+            if kind == "applied"
+            else pick(task, PARABOLA_OPENERS, 1)
+        )
+        if mod.get("given"):
+            blocks.append(D(f"{name}(x)={mod['given']}"))
+            blocks.append(
+                "Multiplying out puts the same rule in standard form, where every "
+                "coefficient can be read off directly."
+            )
+        blocks.append(D(f"{name}(x)={ptex(expr)}"))
+
+    blocks.append(pick(task, SINGLE_VERTEX_LINES))
+    blocks.append(
+        rf"$$\text{{vertex}}=\left({F(h)},{F(k)}\right)\qquad S={F(S)}\qquad P={F(P)}$$"
+    )
+    if d > 0 and len(rs) == 2:
+        blocks.append(pick(task, SINGLE_TWO_ROOT_LINES, 2))
+        blocks.append(D(rf"\Delta={F(d)}\qquad x_{{1}}={F(rs[0])}\qquad x_{{2}}={F(rs[1])}"))
+    elif d > 0:
+        blocks.append("A positive discriminant puts two crossings on the $x$-axis.")
+        blocks.append(D(rf"\Delta={F(d)}"))
+    elif d == 0:
+        blocks.append("A vanishing discriminant makes the graph touch the $x$-axis once.")
+        blocks.append(D(rf"\Delta={F(d)}"))
+    else:
+        blocks.append(
+            "A negative discriminant keeps the graph entirely on one side of the "
+            "$x$-axis."
+        )
+        blocks.append(D(rf"\Delta={F(d)}"))
+    blocks.append(
+        f"The arms open {'upwards' if a2 > 0 else 'downwards'}, so the turning point "
+        f"is the {'lowest' if a2 > 0 else 'highest'} point of the graph and the "
+        f"{'smallest' if a2 > 0 else 'largest'} value is ${F(k)}$."
+    )
+    return "\n\n".join(blocks)
+
+
+# --------------------------------------------------------------------------- #
 # Driver
 # --------------------------------------------------------------------------- #
 
@@ -3594,7 +5794,7 @@ def explain_one(task, idx, f, g) -> str:
     stmt = task["statements"][idx]
     truth = bool(task["answer_key"][idx])
 
-    for builder in (expl_symbolic, expl_parametric):
+    for builder in (expl_single, expl_symbolic, expl_parametric):
         out = builder(letter, stmt, truth, task)
         if out is not None:
             return out
