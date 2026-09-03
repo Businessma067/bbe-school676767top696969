@@ -1625,7 +1625,7 @@ The extra factor from the second term depends on $t$. The statement is False.`,
     statements: [
       "The derivative can be found by rewriting $M(x)$ as $(x^{2}+1)(x+3)^{-\dfrac{1}{2}}$ and using the product rule.",
       "The derivative equals $2x(x+3)^{-\dfrac{1}{2}}-\dfrac{1}{2}(x^{2}+1)(x+3)^{-\dfrac{3}{2}}$.",
-      "$M'(1)=\dfrac{13}{8}$.",
+      "$M'(1)=\dfrac{7}{8}$.",
       "The derivative requires a chain-rule step.",
       "The derivative is a constant.",
     ],
