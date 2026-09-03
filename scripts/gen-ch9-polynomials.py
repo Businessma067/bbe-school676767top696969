@@ -2162,6 +2162,1957 @@ L3.append(
     )
 )
 
+# =========================================================================== #
+# Difficulty 4/5
+# =========================================================================== #
+
+L4.append(
+    Spec(
+        case="",
+        title="Coefficients Against Zeros in a Cubic",
+        context=(
+            "Let $P(x)=ax^{3}+bx^{2}+cx+d$ with $a\\neq 0$, and suppose $P$ has three real "
+            "zeros $r_{1},r_{2},r_{3}$, listed with repeats if any occur. No numerical "
+            "coefficients are given. " + TF
+        ),
+        difficulty=4,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "The three zeros always add up to $-\\frac{b}{a}$.",
+                True,
+                body(
+                    "Knowing all three zeros lets the cubic be rebuilt as a product of brackets "
+                    "times the leading coefficient, and the two forms must have identical "
+                    "coefficients.",
+                    D(
+                        "ax^{3}+bx^{2}+cx+d=a\\left(x-r_{1}\\right)\\left(x-r_{2}\\right)"
+                        "\\left(x-r_{3}\\right)"
+                    ),
+                    "Expanding the right-hand side, the $x^{2}$ term collects one bracket's "
+                    "root at a time and each arrives with a minus sign.",
+                    D("b=-a\\left(r_{1}+r_{2}+r_{3}\\right)"),
+                    "Dividing by the leading coefficient isolates the sum.",
+                    D("r_{1}+r_{2}+r_{3}=-\\frac{b}{a}"),
+                    close(True, "The sum is exactly the quotient named in the claim"),
+                ),
+            ),
+            C(
+                "The three zeros always multiply to $\\frac{d}{a}$.",
+                False,
+                body(
+                    "The product of the zeros shows up in the constant term of the expanded "
+                    "product, where all three minus signs meet.",
+                    D(
+                        "a\\left(x-r_{1}\\right)\\left(x-r_{2}\\right)\\left(x-r_{3}\\right)"
+                    ),
+                    "Setting $x=0$ picks out that constant term on both sides.",
+                    D("d=-a\\,r_{1}r_{2}r_{3}"),
+                    "Three minus signs multiply to one, so the product carries a sign the claim "
+                    "has dropped.",
+                    D("r_{1}r_{2}r_{3}=-\\frac{d}{a}"),
+                    close(False, "The product is $-\\frac{d}{a}$, the negative of the claim"),
+                ),
+            ),
+            C(
+                "Changing $d$ on its own never changes the product of the zeros.",
+                False,
+                body(
+                    "The product of the zeros is tied directly to the constant term, so moving "
+                    "$d$ has to move the product with it.",
+                    D("r_{1}r_{2}r_{3}=-\\frac{d}{a}"),
+                    "The leading coefficient stays put by assumption, so the right-hand side "
+                    "changes the moment $d$ does.",
+                    D("d\\ \\text{changes}\\ \\Rightarrow\\ r_{1}r_{2}r_{3}\\ \\text{changes}"),
+                    close(
+                        False,
+                        "It is the sum of the zeros that ignores $d$; the product does not",
+                    ),
+                ),
+            ),
+            C(
+                "If $d=0$, then $x=0$ is one of the zeros.",
+                True,
+                body(
+                    "A number is a zero exactly when substituting it returns $0$, and at $x=0$ "
+                    "every term carrying a power of $x$ disappears.",
+                    D("P(0)=a\\cdot 0+b\\cdot 0+c\\cdot 0+d=d"),
+                    "So the value at the origin is nothing but the constant term, and the "
+                    "assumption sets that to zero.",
+                    D("P(0)=0"),
+                    close(True, "The origin is then a zero of the cubic"),
+                ),
+            ),
+            C(
+                "If $b=0$, then the three zeros add up to zero.",
+                True,
+                body(
+                    "The sum of the zeros is fixed by the first two coefficients alone, and "
+                    "nothing else in the cubic can influence it.",
+                    D("r_{1}+r_{2}+r_{3}=-\\frac{b}{a}"),
+                    "Putting $b=0$ into that quotient leaves a numerator of zero over a "
+                    "non-zero denominator.",
+                    D("r_{1}+r_{2}+r_{3}=-\\frac{0}{a}=0"),
+                    close(True, "The three zeros are forced to cancel one another out"),
+                ),
+            ),
+        ],
+        overview=body(
+            "Writing the cubic twice — once by coefficients, once by brackets — and matching "
+            "terms is the whole method.",
+            D(
+                "ax^{3}+bx^{2}+cx+d=a\\left(x-r_{1}\\right)\\left(x-r_{2}\\right)"
+                "\\left(x-r_{3}\\right)"
+            ),
+            "Comparing the $x^{2}$ terms gives the sum of the zeros, and comparing the constant "
+            "terms gives their product, with a sign that is easy to lose.",
+            D(
+                "r_{1}+r_{2}+r_{3}=-\\frac{b}{a}\\qquad "
+                "r_{1}r_{2}r_{3}=-\\frac{d}{a}"
+            ),
+            "So $d$ controls the product while $b$ controls the sum, and a vanishing constant "
+            "term always drags a zero to the origin.",
+        ),
+    )
+)
+
+L4.append(
+    Spec(
+        case="",
+        title="Repeated Brackets: Touching, Crossing and Sign",
+        context=(
+            "Let $P$ be a polynomial function with real coefficients and let $c$ be one of its "
+            "real zeros. The multiplicity of $c$ is the number of times the bracket "
+            "$\\left(x-c\\right)$ can be pulled out of $P(x)$. " + TF
+        ),
+        difficulty=4,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "If $c$ has even multiplicity, the graph of $P$ touches the horizontal axis at "
+                "$c$ without crossing it.",
+                True,
+                body(
+                    "Pull out every copy of the bracket and keep what is left over; that "
+                    "leftover factor is not zero at $c$, so close to $c$ it keeps one sign.",
+                    D("P(x)=\\left(x-c\\right)^{k}Q(x),\\qquad Q(c)\\neq 0"),
+                    "With $k$ even the first factor is a perfect power of a square, so it is "
+                    "never negative and the sign of $P$ near $c$ follows $Q$ alone.",
+                    D("\\left(x-c\\right)^{k}\\ge 0\\quad\\text{for even }k"),
+                    close(
+                        True,
+                        "The values on both sides of $c$ share a sign, so the curve returns the "
+                        "way it came",
+                    ),
+                ),
+            ),
+            C(
+                "If $c$ has multiplicity $3$, the graph of $P$ touches the axis at $c$ without "
+                "crossing it.",
+                False,
+                body(
+                    "The same factorisation applies, but an odd power keeps the sign of its "
+                    "base instead of destroying it.",
+                    D("P(x)=\\left(x-c\\right)^{3}Q(x),\\qquad Q(c)\\neq 0"),
+                    "To the left of $c$ the bracket is negative and its cube is negative; to "
+                    "the right both are positive, while $Q$ has not had time to change sign.",
+                    D(
+                        "\\left(x-c\\right)^{3}<0\\ \\text{for }x<c\\qquad "
+                        "\\left(x-c\\right)^{3}>0\\ \\text{for }x>c"
+                    ),
+                    close(
+                        False,
+                        "The values change sign across $c$, so the curve flattens but still "
+                        "passes through",
+                    ),
+                ),
+            ),
+            C(
+                "A polynomial of degree $5$ can have exactly two distinct real zeros.",
+                True,
+                body(
+                    "Multiplicities are what allow a short list of zeros inside a high degree, "
+                    "because they add up to the degree rather than the count of zeros doing so.",
+                    D("P(x)=\\left(x-c_{1}\\right)^{3}\\left(x-c_{2}\\right)^{2}"),
+                    "Expanding this gives degree $3+2=5$, yet only two numbers are ever sent "
+                    "to zero.",
+                    D("3+2=5\\qquad \\text{distinct real zeros}=2"),
+                    close(True, "Such a polynomial exists, so the count is possible"),
+                ),
+            ),
+            C(
+                "A polynomial of degree $n\\ge 1$ always has exactly $n$ distinct real zeros.",
+                False,
+                body(
+                    "Repeats and zeros that are not real both shorten the list, and a single "
+                    "counterexample is enough to sink an \"always\".",
+                    D("P(x)=x^{2}+1"),
+                    "This has degree $2$, but a square is never negative, so the value never "
+                    "reaches zero.",
+                    D("P(x)\\ge 1>0"),
+                    close(False, "Here the count of distinct real zeros is $0$, not $2$"),
+                ),
+            ),
+            C(
+                "If every zero of $P$ has even multiplicity, then $P$ never changes sign.",
+                True,
+                body(
+                    "A polynomial can only change sign by passing through a zero, since its "
+                    "graph is an unbroken curve.",
+                    D(
+                        "P(x)=a\\left(x-c_{1}\\right)^{k_{1}}\\cdots"
+                        "\\left(x-c_{m}\\right)^{k_{m}}Q(x)"
+                    ),
+                    "Each even power is never negative, and the remaining factor has no real "
+                    "zero left to change sign at, so the whole product keeps the sign of the "
+                    "constant in front.",
+                    D("\\left(x-c_{i}\\right)^{k_{i}}\\ge 0\\quad\\text{for every }i"),
+                    close(
+                        True,
+                        "Every zero is a touch rather than a crossing, so the sign never flips",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "One factorisation carries all five claims: strip the bracket of a zero as often as "
+            "it comes out, and inspect what is left.",
+            D("P(x)=\\left(x-c\\right)^{k}Q(x),\\qquad Q(c)\\neq 0"),
+            "An even $k$ gives a factor that never turns negative, so the curve touches and "
+            "returns; an odd $k$ carries the sign change through, so the curve crosses. "
+            "Multiplicities add to the degree, which is why a high degree can still have very "
+            "few distinct zeros.",
+            D("k_{1}+k_{2}+\\cdots+k_{m}\\le n"),
+        ),
+    )
+)
+
+L4.append(
+    Spec(
+        case="",
+        title="What Shifting and Reflecting Does to a Polynomial Graph",
+        context=(
+            "Let $P$ be a polynomial function and let $c$ be a non-zero real constant. Compare "
+            "the graph of $P$ with the graphs obtained from the expressions named below. " + TF
+        ),
+        difficulty=4,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "The graph of $P(x)+c$ is the graph of $P$ moved vertically.",
+                True,
+                body(
+                    "Adding a constant after the function has done its work changes every "
+                    "height by the same amount and leaves every input where it was.",
+                    D("H(x)=P(x)+c"),
+                    "The point above $x$ climbs from $P(x)$ to $P(x)+c$, and the value of $x$ "
+                    "itself is untouched.",
+                    D("\\left(x,P(x)\\right)\\ \\mapsto\\ \\left(x,P(x)+c\\right)"),
+                    close(True, "Every point moves straight up or straight down by $c$"),
+                ),
+            ),
+            C(
+                "The graph of $P(x+c)$ is also the graph of $P$ moved vertically.",
+                False,
+                body(
+                    "Here the constant is added before the function acts, so it interferes with "
+                    "the input rather than with the output.",
+                    D("H(x)=P(x+c)"),
+                    "The height that $P$ used to show above $x+c$ now appears above $x$, so "
+                    "each point slides sideways by $c$ and keeps its height.",
+                    D("\\left(x+c,P(x+c)\\right)\\ \\mapsto\\ \\left(x,P(x+c)\\right)"),
+                    close(
+                        False,
+                        "The movement is horizontal, not vertical",
+                    ),
+                ),
+            ),
+            C(
+                "Adding a constant to $P$ never changes how many turning points its graph has.",
+                True,
+                body(
+                    "Turning points are places where the curve stops rising and starts falling, "
+                    "or the reverse, and that is a statement about differences of heights.",
+                    D("H(x)=P(x)+c"),
+                    "Two heights of $H$ differ by exactly the same amount as the matching two "
+                    "heights of $P$, because the added constant cancels in every comparison.",
+                    D("H(x_{2})-H(x_{1})=P(x_{2})-P(x_{1})"),
+                    close(
+                        True,
+                        "The curve rises and falls in exactly the same places, so the turning "
+                        "points are the same ones lifted bodily",
+                    ),
+                ),
+            ),
+            C(
+                "Adding a constant to $P$ never changes how many distinct real zeros it has.",
+                False,
+                body(
+                    "Zeros are the crossings of the horizontal axis, and lifting a curve moves "
+                    "it relative to that axis even though its shape is unchanged.",
+                    D("P(x)=x^{2}"),
+                    "This has one zero. Lifting it by $1$ pushes the whole curve above the "
+                    "axis, and lowering it by $1$ opens up two crossings instead.",
+                    D("x^{2}+1>0\\qquad x^{2}-1=0\\ \\text{at}\\ x=\\pm 1"),
+                    close(
+                        False,
+                        "The same curve can be made to have none, one or two zeros by shifting "
+                        "alone",
+                    ),
+                ),
+            ),
+            C(
+                "The graph of $-P(x)$ is the mirror image of the graph of $P$ in the horizontal "
+                "axis.",
+                True,
+                body(
+                    "Multiplying the output by $-1$ leaves the input alone and sends each "
+                    "height to its opposite.",
+                    D("H(x)=-P(x)"),
+                    "A point at height $h$ is replaced by a point at height $-h$ above the same "
+                    "input, which is exactly what reflecting in the horizontal axis does.",
+                    D("\\left(x,P(x)\\right)\\ \\mapsto\\ \\left(x,-P(x)\\right)"),
+                    close(True, "The two graphs are mirror images in that axis"),
+                ),
+            ),
+        ],
+        overview=body(
+            "Whether a constant acts on the output or on the input decides everything.",
+            D("P(x)+c\\ \\text{moves the graph vertically}"),
+            D("P(x+c)\\ \\text{moves the graph horizontally}"),
+            "Vertical movement preserves every difference of heights, so the pattern of rises "
+            "and falls — and therefore the turning points — survives untouched. What it does "
+            "not preserve is the position of the horizontal axis relative to the curve, so the "
+            "number of zeros can change. A factor of $-1$ on the output flips the curve in that "
+            "same axis.",
+        ),
+    )
+)
+
+L4.append(
+    Spec(
+        case="",
+        title="How Many Zeros and How Many Turns a Degree Allows",
+        context=(
+            "Let $P$ be a polynomial function of degree $n\\ge 1$ with real coefficients. No "
+            "coefficients are supplied. " + TF
+        ),
+        difficulty=4,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "$P$ has at most $n$ distinct real zeros.",
+                True,
+                body(
+                    "Every distinct zero hands over its own linear bracket, and those brackets "
+                    "sit inside $P$ side by side.",
+                    D(
+                        "P(x)=\\left(x-c_{1}\\right)\\cdots\\left(x-c_{k}\\right)Q(x)"
+                    ),
+                    "Each bracket costs one degree, so $k$ brackets already use up $k$ of the "
+                    "$n$ available.",
+                    D("k\\le n"),
+                    close(True, "The count of distinct real zeros cannot pass $n$"),
+                ),
+            ),
+            C(
+                "The graph of $P$ has at most $n-1$ turning points.",
+                True,
+                body(
+                    "A turning point is a place where the rate of change of $P$ passes through "
+                    "zero, so the turns of $P$ are among the zeros of its derivative.",
+                    D("\\text{degree of }P'=n-1"),
+                    "A polynomial of degree $n-1$ has at most $n-1$ distinct zeros, and every "
+                    "turn of $P$ needs one of them.",
+                    D("\\text{turning points}\\le n-1"),
+                    close(True, "The ceiling is one below the degree"),
+                ),
+            ),
+            C(
+                "The graph of $P$ has exactly $n-1$ turning points.",
+                False,
+                body(
+                    "The derivative supplies a ceiling, not a guarantee: its zeros may be "
+                    "repeated or not real at all, and a repeated one need not be a genuine turn.",
+                    D("P(x)=x^{3}"),
+                    "Its rate of change vanishes only at the origin, and it does so without "
+                    "changing sign, so the curve merely flattens and keeps climbing.",
+                    D("P'(x)=3x^{2}\\ge 0"),
+                    close(
+                        False,
+                        "This cubic has no turning point at all, well short of the two the claim "
+                        "promises",
+                    ),
+                ),
+            ),
+            C(
+                "Between two consecutive distinct real zeros of $P$ there is always at least "
+                "one turning point.",
+                True,
+                body(
+                    "Between two consecutive zeros the curve never touches the horizontal axis, "
+                    "so it stays strictly on one side of it the whole way across.",
+                    D("P(c_{1})=0,\\quad P(c_{2})=0,\\quad P(x)\\neq 0\\ \\text{in between}"),
+                    "Leaving one zero and returning to the next means climbing away from the "
+                    "axis and then coming back, or dropping away and coming back, and the "
+                    "moment of reversal is a turning point.",
+                    D("P'\\left(x_{0}\\right)=0\\ \\text{for some }x_{0}\\ \\text{between }c_{1}\\ \\text{and }c_{2}"),
+                    close(True, "The reversal has to happen somewhere strictly between them"),
+                ),
+            ),
+            C(
+                "If the graph of $P$ has no turning point at all, then $n=1$.",
+                False,
+                body(
+                    "A missing turning point only says that the rate of change never changes "
+                    "sign, which higher degrees can also manage.",
+                    D("P(x)=x^{3}+x"),
+                    "Its rate of change is a sum of a square and a positive constant, so it is "
+                    "strictly positive everywhere and the curve climbs without ever reversing.",
+                    D("P'(x)=3x^{2}+1>0"),
+                    close(False, "This is a cubic with no turning point, so $n$ need not be $1$"),
+                ),
+            ),
+        ],
+        overview=body(
+            "Two ceilings, both coming from the degree, and neither of them an equality.",
+            D("\\text{distinct real zeros}\\le n\\qquad \\text{turning points}\\le n-1"),
+            "The first holds because each distinct zero costs a bracket, the second because the "
+            "turns of $P$ hide among the zeros of the derivative, whose degree is $n-1$. Neither "
+            "bound has to be attained: $x^{3}$ climbs forever without turning. What is "
+            "guaranteed is a turn between consecutive zeros, since the curve must come back to "
+            "the axis after leaving it.",
+        ),
+    )
+)
+
+_p = Pol.desc(1, -2, -5, 6, 0)
+L4.append(
+    Spec(
+        case="",
+        title="A Quartic With Four Crossings and No Symmetry",
+        context=(
+            "The figure shows the graph of a polynomial function $f$ on the window "
+            "$-2.6\\le x\\le 3.6$. " + TF
+        ),
+        difficulty=4,
+        stem_kind="graph",
+        figure=plot(_p, xlim=(-2.6, 3.6), ylim=(-12, 10), ystep=2, label="y = f(x)"),
+        claims=[
+            claim_factored_form(
+                _p,
+                Pol.from_roots([0, -2, 1, 3]),
+                candidate_latex=(
+                    "x\\left(x+2\\right)\\left(x-1\\right)\\left(x-3\\right)"
+                ),
+                name="f",
+            ),
+            claim_real_root_count(
+                _p,
+                4,
+                name="f",
+                roots=[-2, 0, 1, 3],
+                text="The curve meets the horizontal axis exactly four times.",
+                opener=(
+                    "The crossings are the zeros, and this quartic splits completely into "
+                    "linear brackets, one per crossing."
+                ),
+            ),
+            claim_turning_points(_p, 3, name="f"),
+            C(
+                "The curve is symmetric about the vertical axis.",
+                False,
+                body(
+                    "Symmetry about the vertical axis means that replacing $x$ by $-x$ returns "
+                    "the same function, which happens only when every power present is even.",
+                    D(_p.eq("f")),
+                    "The odd powers $x^{3}$ and $x$ both appear, and they change sign when the "
+                    "input does.",
+                    D("f(1)=0\\qquad f(-1)=-8"),
+                    close(
+                        False,
+                        "Two inputs that are mirror images give different heights, so no such "
+                        "symmetry exists",
+                    ),
+                ),
+            ),
+            claim_end_behaviour(_p, side="left", rises=False, name="f"),
+        ],
+        overview=body(
+            "The picture belongs to the quartic",
+            D(_p.eq("f")),
+            D("f(x)=x\\left(x+2\\right)\\left(x-1\\right)\\left(x-3\\right)"),
+            "Four single brackets give four genuine crossings, at $x=-2,0,1,3$, and between "
+            "them the curve must turn three times. Because the degree is even with a positive "
+            "leading coefficient, both arms climb.",
+            D("f(0)=0\\qquad f(-1)=-8\\qquad f(1)=0"),
+            "The odd powers in the expanded form rule out any mirror symmetry in the vertical "
+            "axis.",
+        ),
+    )
+)
+
+_p = Pol.desc(-1, 2, 5, -6)
+L4.append(
+    Spec(
+        case="",
+        title="Recovering a Cubic From a Falling Picture",
+        context=(
+            "The figure shows the graph of a cubic function $h$ on the window "
+            "$-3\\le x\\le 4$. " + TF
+        ),
+        difficulty=4,
+        stem_kind="graph",
+        figure=plot(_p, xlim=(-3, 4), ylim=(-12, 8), ystep=2, label="y = h(x)"),
+        claims=[
+            C(
+                "The leading coefficient of $h$ is negative.",
+                True,
+                body(
+                    "For large inputs the leading term decides the picture on its own, so the "
+                    "direction of the right-hand arm reveals its sign.",
+                    D("h(x)\\approx a x^{3}\\quad\\text{for large }x"),
+                    "In the drawing the right-hand arm plunges, so the values become very "
+                    "negative for large positive $x$ while $x^{3}$ itself is very positive.",
+                    D("h(4)=-18"),
+                    close(
+                        True,
+                        "Only a negative leading coefficient can turn a large positive $x^{3}$ "
+                        "into a large negative height",
+                    ),
+                ),
+            ),
+            claim_factored_form(
+                _p,
+                Pol.from_roots([1, -2, 3], -1),
+                candidate_latex=(
+                    "-\\left(x-1\\right)\\left(x+2\\right)\\left(x-3\\right)"
+                ),
+                name="h",
+            ),
+            claim_factored_form(
+                _p,
+                Pol.from_roots([1, -2, 3], 1),
+                candidate_latex=(
+                    "\\left(x-1\\right)\\left(x+2\\right)\\left(x-3\\right)"
+                ),
+                name="h",
+            ),
+            claim_yintercept(_p, 6, name="h"),
+            C(
+                "For every $x>3$ the curve stays above the horizontal axis.",
+                False,
+                body(
+                    "Past the largest zero no bracket can change sign again, so the whole "
+                    "product keeps one sign out to the right.",
+                    D("h(x)=-\\left(x-1\\right)\\left(x+2\\right)\\left(x-3\\right)"),
+                    "For $x>3$ all three brackets are positive, and the minus sign in front "
+                    "then fixes the outcome.",
+                    D(f"h(4)={_p.subst(4)}={numstr(_p.at(4))}"),
+                    close(
+                        False,
+                        "The curve runs below the axis for every $x>3$, not above it",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The three crossings in the drawing sit at $x=-2$, $x=1$ and $x=3$, and the arms go "
+            "up on the left and down on the right, which forces a negative leading coefficient.",
+            D("h(x)=-\\left(x-1\\right)\\left(x+2\\right)\\left(x-3\\right)"),
+            D(_p.eq("h")),
+            "Dropping the minus sign would flip the whole picture, so the sign is not a detail. "
+            "The vertical axis is met at $-6$, and past the last crossing the curve dives for "
+            "good.",
+            D("h(0)=-6\\qquad h(4)=-18"),
+        ),
+    )
+)
+
+L4.append(
+    Spec(
+        case="",
+        title="How Many Zeros the Family $x^{3}-3x^{2}+k$ Has",
+        context=(
+            "For each real number $k$ define $P_{k}(x)=x^{3}-3x^{2}+k$. Statements must hold "
+            "for the whole family unless a particular $k$ is named. " + TF
+        ),
+        difficulty=4,
+        stem_kind="parametric",
+        claims=[
+            C(
+                "For $k=2$ the function has three distinct real zeros.",
+                True,
+                body(
+                    "A cubic with a positive leading coefficient crosses the axis three times "
+                    "exactly when its local maximum sits above the axis and its local minimum "
+                    "sits below it, so locate the two turns first.",
+                    D("P_{k}'(x)=3x^{2}-6x=3x\\left(x-2\\right)"),
+                    "The turns are therefore always at $x=0$ and $x=2$, and the heights there "
+                    "depend on the parameter.",
+                    D("P_{k}(0)=k\\qquad P_{k}(2)=k-4"),
+                    "With $k=2$ the local maximum is at height $2$ and the local minimum at "
+                    "height $-2$, so the curve is above the axis, then below it, then above it "
+                    "again.",
+                    D("2>0>-2"),
+                    close(True, "The axis is crossed three separate times"),
+                ),
+            ),
+            C(
+                "For $k=5$ the function has three distinct real zeros.",
+                False,
+                body(
+                    "The same two turns govern the count, so compare their heights with the "
+                    "axis once more.",
+                    D("P_{k}(0)=k\\qquad P_{k}(2)=k-4"),
+                    "With $k=5$ the local minimum is already above the axis, so the curve never "
+                    "comes down to it in the middle.",
+                    D("P_{5}(2)=1>0"),
+                    "The curve rises from far below on the left, dips to height $1$ and climbs "
+                    "away again, meeting the axis only once.",
+                    close(False, "There is exactly one crossing here, not three"),
+                ),
+            ),
+            C(
+                "The turning points of $P_{k}$ sit at $x=0$ and $x=2$ whatever $k$ is.",
+                True,
+                body(
+                    "Adding a constant to a polynomial lifts the whole curve without bending "
+                    "it, so it cannot move the places where the curve reverses.",
+                    D("P_{k}'(x)=3x^{2}-6x"),
+                    "The parameter $k$ has vanished from the rate of change entirely, so the "
+                    "solutions of $P_{k}'(x)=0$ are the same for every member.",
+                    D("3x\\left(x-2\\right)=0\\quad\\Rightarrow\\quad x=0,\\ x=2"),
+                    close(True, "Both turning points stay put as $k$ moves"),
+                ),
+            ),
+            C(
+                "For $k=0$ the graph touches the horizontal axis at one place and crosses it at "
+                "another.",
+                True,
+                body(
+                    "With the constant term gone, the expression factorises at once and the "
+                    "shape at each zero can be read off the brackets.",
+                    D("P_{0}(x)=x^{3}-3x^{2}=x^{2}\\left(x-3\\right)"),
+                    "The bracket at the origin appears twice, so it is a square and never "
+                    "negative; the bracket at $3$ appears once and carries a sign change.",
+                    D("P_{0}(-0.1)=-0.031\\qquad P_{0}(0.1)=-0.029"),
+                    close(
+                        True,
+                        "The origin is a touch and $x=3$ is a crossing, exactly as described",
+                    ),
+                ),
+            ),
+            C(
+                "There is a value of $k$ for which $P_{k}$ has no real zero.",
+                False,
+                body(
+                    "The degree is odd, so the two arms of the graph are driven apart by the "
+                    "leading term no matter what the constant does.",
+                    D("P_{k}(x)\\approx x^{3}\\quad\\text{for large }\\left|x\\right|"),
+                    "One arm therefore ends up far below the axis and the other far above it, "
+                    "and a polynomial curve has no breaks in which to skip across.",
+                    D("P_{k}(x_{1})<0<P_{k}(x_{2})"),
+                    close(
+                        False,
+                        "Every member of the family is forced to meet the axis at least once",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The parameter sits in the constant term, so it lifts the curve without reshaping "
+            "it: the two turns never move.",
+            D("P_{k}'(x)=3x^{2}-6x=3x\\left(x-2\\right)\\quad\\Rightarrow\\quad x=0,\\ 2"),
+            D("P_{k}(0)=k\\qquad P_{k}(2)=k-4"),
+            "Three crossings need the local maximum above the axis and the local minimum below "
+            "it, that is $0<k<4$. Outside that range there is a single crossing, and at the two "
+            "ends $k=0$ and $k=4$ one crossing becomes a touch. An odd degree guarantees at "
+            "least one crossing for every $k$.",
+        ),
+    )
+)
+
+_pt = Pol.desc(1, -2, 4, -8)
+L4.append(
+    Spec(
+        case="",
+        title="Choosing the Parameter That Creates a Factor",
+        context=(
+            "For each real number $t$ define $P_{t}(x)=x^{3}-tx^{2}+4x-8$. " + TF
+        ),
+        difficulty=4,
+        stem_kind="parametric",
+        claims=[
+            C(
+                "The bracket $\\left(x-2\\right)$ divides $P_{t}(x)$ exactly when $t=2$.",
+                True,
+                body(
+                    "A bracket divides a polynomial exactly when the polynomial vanishes at the "
+                    "matching number, so substitute $x=2$ and treat the result as an equation "
+                    "in the parameter.",
+                    D("P_{t}(2)=8-4t+8-8=8-4t"),
+                    "Setting that value to zero gives one linear equation, so there is exactly "
+                    "one parameter that works.",
+                    D("8-4t=0\\quad\\Rightarrow\\quad t=2"),
+                    close(True, "Only $t=2$ turns the bracket into a genuine factor"),
+                ),
+            ),
+            C(
+                "For $t=2$ the polynomial factorises as "
+                "$\\left(x-2\\right)\\left(x^{2}+4\\right)$.",
+                True,
+                body(
+                    "Once the factor is known, dividing it out is quick, and the quotient of a "
+                    "cubic by a linear bracket is a quadratic.",
+                    D(_pt.eq("P_{2}")),
+                    "Multiplying the proposed factorisation back out is the fastest check.",
+                    D(
+                        "\\left(x-2\\right)\\left(x^{2}+4\\right)=x^{3}+4x-2x^{2}-8"
+                    ),
+                    D(f"\\left(x-2\\right)\\left(x^{{2}}+4\\right)={_pt.latex()}"),
+                    close(True, "The expansion reproduces $P_{2}$ term for term"),
+                ),
+            ),
+            C(
+                "For $t=2$ the polynomial has three distinct real zeros.",
+                False,
+                body(
+                    "With the factorisation in hand the zeros are read off the two factors "
+                    "separately, since a product vanishes only when a factor does.",
+                    D("P_{2}(x)=\\left(x-2\\right)\\left(x^{2}+4\\right)"),
+                    "The linear bracket gives $x=2$. The quadratic bracket asks for a number "
+                    "whose square is $-4$, and no real number squares to a negative value.",
+                    D("x^{2}+4\\ge 4>0"),
+                    close(
+                        False,
+                        "Only one real zero exists, the $x=2$ coming from the linear bracket",
+                    ),
+                ),
+            ),
+            C(
+                "For every real $t$ the polynomial has at least one real zero.",
+                True,
+                body(
+                    "The degree is $3$ whatever the parameter does, because $t$ only ever "
+                    "touches the $x^{2}$ term.",
+                    D("P_{t}(x)=x^{3}-tx^{2}+4x-8"),
+                    "An odd degree with a positive leading coefficient drives one arm of the "
+                    "graph far below the axis and the other far above it, and the curve has no "
+                    "breaks.",
+                    D("P_{t}(x_{1})<0<P_{t}(x_{2})"),
+                    close(True, "Every member of the family meets the axis somewhere"),
+                ),
+            ),
+            C(
+                "For $t=3$ the remainder on dividing $P_{t}(x)$ by $\\left(x-2\\right)$ is $4$.",
+                False,
+                body(
+                    "Division by a linear bracket leaves a constant remainder equal to the value "
+                    "of the polynomial at the number that kills the bracket.",
+                    D("P_{3}(2)=8-4\\cdot 3+8-8"),
+                    D("P_{3}(2)=-4"),
+                    close(
+                        False,
+                        "The remainder is $-4$, which the claim has reported without its sign",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The parameter enters through a single term, so every question about it becomes an "
+            "equation in $t$ after one substitution.",
+            D("P_{t}(2)=8-4t"),
+            "That value is both the remainder on dividing by $\\left(x-2\\right)$ and the test "
+            "for the factor, so the factor appears only at $t=2$ and the remainder at $t=3$ is "
+            "$-4$. At the special parameter the cubic splits as",
+            D("P_{2}(x)=\\left(x-2\\right)\\left(x^{2}+4\\right)"),
+            "whose quadratic factor never reaches zero, so only one real zero survives — though "
+            "the odd degree guarantees that one for every $t$.",
+        ),
+    )
+)
+
+_pi = Pol.of(0, -32, 12, -1, var="q")
+L4.append(
+    Spec(
+        case="",
+        title="A Profit Cubic With Two Break-Even Points",
+        context=(
+            "A workshop's weekly profit in thousands of euros is modelled by "
+            "$\\pi(q)=-q\\left(q-4\\right)\\left(q-8\\right)$, where $q$ is output in hundreds "
+            "of units and $0\\le q\\le 10$. " + TF
+        ),
+        difficulty=4,
+        stem_kind="applied",
+        claims=[
+            C(
+                "Profit is exactly zero at the three outputs $q=0$, $q=4$ and $q=8$.",
+                True,
+                body(
+                    "The model is already a product, so it vanishes precisely when one of its "
+                    "brackets does — no expanding required.",
+                    D("\\pi(q)=-q\\left(q-4\\right)\\left(q-8\\right)"),
+                    "Each bracket names the output at which it closes.",
+                    D("q=0\\qquad q-4=0\\qquad q-8=0"),
+                    close(
+                        True,
+                        "All three of those outputs lie inside the modelled range and give zero "
+                        "profit",
+                    ),
+                ),
+            ),
+            C(
+                "The workshop is profitable at every output strictly between $4$ and $8$ "
+                "hundred units.",
+                True,
+                body(
+                    "The sign of a product is the product of the signs, so track each bracket "
+                    "across the interval in question.",
+                    D("\\pi(q)=-q\\left(q-4\\right)\\left(q-8\\right)"),
+                    "For $4<q<8$ the factor $q$ is positive, $\\left(q-4\\right)$ has turned "
+                    "positive and $\\left(q-8\\right)$ is still negative, so the three factors "
+                    "multiply to something negative — and the minus sign in front flips it.",
+                    D(f"\\pi(6)={numstr(_pi.at(6))}"),
+                    close(
+                        True,
+                        "Profit is positive right across that stretch, reaching $24$ thousand "
+                        "euros at $q=6$",
+                    ),
+                ),
+            ),
+            C(
+                "The workshop is also profitable at every output strictly between $0$ and $4$ "
+                "hundred units.",
+                False,
+                body(
+                    "The same sign count applies, but one bracket has not yet changed over.",
+                    D("\\pi(q)=-q\\left(q-4\\right)\\left(q-8\\right)"),
+                    "For $0<q<4$ the factor $q$ is positive while both other brackets are "
+                    "negative, so their product is positive and the leading minus sign makes "
+                    "the profit negative.",
+                    D(f"\\pi(2)={numstr(_pi.at(2))}"),
+                    close(
+                        False,
+                        "The workshop is losing money throughout that stretch, $24$ thousand "
+                        "euros a week at $q=2$",
+                    ),
+                ),
+            ),
+            claim_value(
+                _pi,
+                6,
+                24,
+                name="\\pi",
+                unit="thousand euros",
+                text="At an output of $600$ units the weekly profit is $24$ thousand euros.",
+                opener=(
+                    "Expanding the product once makes every substitution routine, and the "
+                    "expanded cubic is easier to evaluate term by term."
+                ),
+            ),
+            C(
+                "At an output of $1000$ units the workshop is still profitable.",
+                False,
+                body(
+                    "Past the last break-even output no bracket changes sign again, so the "
+                    "profit keeps whichever sign it has just taken.",
+                    D("\\pi(10)=-10\\left(10-4\\right)\\left(10-8\\right)"),
+                    D(f"\\pi(10)={numstr(_pi.at(10))}"),
+                    close(
+                        False,
+                        "At that output the workshop is losing $120$ thousand euros a week",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The model comes factorised, which is the useful form for signs, and expands to a "
+            "cubic, which is the useful form for values.",
+            D("\\pi(q)=-q\\left(q-4\\right)\\left(q-8\\right)"),
+            D(_pi.eq("\\pi", arg="q")),
+            "Profit is zero at $q=0,4,8$ and changes sign at each of them, so the workshop "
+            "loses money on $\\left(0,4\\right)$, makes money on $\\left(4,8\\right)$ and loses "
+            "it again beyond $q=8$.",
+            D("\\pi(2)=-24\\qquad \\pi(6)=24\\qquad \\pi(10)=-120"),
+        ),
+    )
+)
+
+_p = Pol.desc(1, -2, -7, 8, 12)
+L4.append(
+    Spec(
+        case="",
+        title="Factoring a Quartic Completely",
+        context=f"Let ${_p.eq('P')}$ for every real $x$. " + TF,
+        difficulty=4,
+        stem_kind="formula",
+        claims=[
+            claim_real_root_count(
+                _p,
+                4,
+                roots=[-2, -1, 2, 3],
+                opener=(
+                    "A quartic with integer coefficients can only have rational zeros among the "
+                    "divisors of its constant term, so the search is short: test the divisors "
+                    "of $12$ and factor out whatever works."
+                ),
+            ),
+            claim_root(_p, 1, style="factor"),
+            claim_remainder(_p, 1, 12),
+            claim_yintercept(_p, 12),
+            C(
+                "The four zeros of $P$ add up to $-2$.",
+                False,
+                body(
+                    "Rebuilding the quartic from its brackets and comparing the $x^{3}$ terms "
+                    "ties the sum of the zeros to the second coefficient.",
+                    D(
+                        "P(x)=\\left(x+2\\right)\\left(x+1\\right)\\left(x-2\\right)"
+                        "\\left(x-3\\right)"
+                    ),
+                    "Each bracket contributes its root with a minus sign to that term, so the "
+                    "coefficient of $x^{3}$ is minus the sum of the zeros.",
+                    D("-2-1+2+3=2"),
+                    "The expanded form agrees: its $x^{3}$ coefficient is $-2$.",
+                    D("\\text{sum of the zeros}=-\\left(-2\\right)=2"),
+                    close(False, "The zeros add to $2$, and the claim has the sign the wrong way "
+                          "round"),
+                ),
+            ),
+        ],
+        overview=body(
+            "Testing the divisors of the constant term finds all four zeros, and the quartic "
+            "splits completely.",
+            D(_p.eq("P")),
+            D(
+                "P(x)=\\left(x+2\\right)\\left(x+1\\right)\\left(x-2\\right)"
+                "\\left(x-3\\right)"
+            ),
+            "So the zeros are $-2$, $-1$, $2$ and $3$, and they add to $2$ — which is minus the "
+            "coefficient of $x^{3}$, as rebuilding the product from the brackets requires. "
+            "Anything not on that list leaves a remainder:",
+            D("P(0)=12\\qquad P(1)=12"),
+        ),
+    )
+)
+
+# =========================================================================== #
+# Difficulty 5/5
+# =========================================================================== #
+
+L5.append(
+    Spec(
+        case="",
+        title="Signs, Global Extremes and What the Degree Permits",
+        context=(
+            "Let $P$ be a polynomial function with real coefficients, of degree $n\\ge 1$. No "
+            "coefficients are given. " + TF
+        ),
+        difficulty=5,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "If $n$ is even and the leading coefficient is positive, then $P$ has a "
+                "smallest value that it actually attains.",
+                True,
+                body(
+                    "For inputs far from the origin the leading term rules, and an even power "
+                    "with a positive coefficient sends both arms upwards without limit.",
+                    D("P(x)\\to +\\infty\\quad\\text{as}\\quad \\left|x\\right|\\to\\infty"),
+                    "So outside some large interval the values are already bigger than $P(0)$, "
+                    "and nothing outside that interval can compete for the minimum.",
+                    D("P(x)>P(0)\\quad\\text{for}\\quad \\left|x\\right|>M"),
+                    "Inside a closed interval an unbroken curve does reach a lowest height, and "
+                    "that height is the lowest anywhere.",
+                    close(
+                        True,
+                        "The polynomial genuinely attains a global minimum",
+                    ),
+                ),
+            ),
+            C(
+                "A polynomial of odd degree can have a smallest value that it attains.",
+                False,
+                body(
+                    "An odd power keeps the sign of its input, so the two arms of the graph "
+                    "leave in opposite directions and one of them heads downwards forever.",
+                    D("P(x)\\approx a x^{n}\\quad\\text{for large }\\left|x\\right|"),
+                    "Whichever the sign of $a$, one side of the picture takes the values below "
+                    "every bound.",
+                    D("P(x)\\to -\\infty\\quad\\text{on one side}"),
+                    "Any candidate for a smallest value is therefore beaten by going far enough "
+                    "out on that side.",
+                    close(
+                        False,
+                        "No odd-degree polynomial can have a smallest value",
+                    ),
+                ),
+            ),
+            C(
+                "If $P(x)>0$ for every real $x$, then $n$ is even.",
+                True,
+                body(
+                    "Staying strictly positive everywhere rules out the behaviour that odd "
+                    "degrees force on the graph.",
+                    D("P(x)\\to -\\infty\\quad\\text{on one side, when }n\\text{ is odd}"),
+                    "An odd degree would push the values below zero far out on one side, "
+                    "contradicting the assumption, so that possibility is closed.",
+                    D("n\\ \\text{odd}\\ \\Rightarrow\\ P(x)<0\\ \\text{somewhere}"),
+                    close(True, "Only an even degree can keep a polynomial positive everywhere"),
+                ),
+            ),
+            C(
+                "If $P$ has no real zero, then $P$ keeps the same sign at every real number.",
+                True,
+                body(
+                    "A polynomial graph is an unbroken curve, so it cannot get from a negative "
+                    "height to a positive one without passing through the height $0$ on the way.",
+                    D("P(x_{1})<0<P(x_{2})"),
+                    "Two heights of opposite sign would therefore hand over a zero somewhere "
+                    "between those two inputs, which the assumption forbids.",
+                    D("P(c)=0\\ \\text{for some }c\\ \\text{between }x_{1}\\ \\text{and }x_{2}"),
+                    close(
+                        True,
+                        "With no zero available, values of both signs are impossible and the "
+                        "sign is constant",
+                    ),
+                ),
+            ),
+            C(
+                "If $P$ has exactly one distinct real zero, then $n$ is odd.",
+                False,
+                body(
+                    "One crossing is compatible with an even degree as soon as that crossing is "
+                    "a touch rather than a passage.",
+                    D("P(x)=x^{2}"),
+                    "Here the only number sent to zero is the origin, yet the degree is even and "
+                    "both arms climb.",
+                    D("x^{2}=0\\ \\text{only at}\\ x=0"),
+                    close(
+                        False,
+                        "A single real zero says nothing about the parity of the degree",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "Everything follows from the two arms and from the curve being unbroken. Far out, "
+            "the leading term decides:",
+            D("P(x)\\approx a x^{n}\\quad\\text{for large }\\left|x\\right|"),
+            "An even degree sends both arms the same way, which both bounds the values on one "
+            "side and creates a genuine global extreme; an odd degree splits the arms, so the "
+            "values run off in both directions and no global extreme can exist. Being unbroken "
+            "then forces a zero between any two heights of opposite sign, so a polynomial "
+            "without real zeros cannot change sign at all. Counting distinct zeros, though, "
+            "reveals nothing about parity: $x^{2}$ has one zero and even degree.",
+        ),
+    )
+)
+
+L5.append(
+    Spec(
+        case="",
+        title="Repeated Factors Seen Through the Derivative",
+        context=(
+            "Let $P$ be a polynomial function with real coefficients and let $c$ be a real "
+            "number. Write $P'$ for the derivative of $P$. No coefficients are supplied. " + TF
+        ),
+        difficulty=5,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "If $\\left(x-c\\right)^{2}$ divides $P(x)$, then $P(c)=0$ and $P'(c)=0$.",
+                True,
+                body(
+                    "Write the assumption as a product and differentiate it with the product "
+                    "rule, keeping the bracket visible.",
+                    D("P(x)=\\left(x-c\\right)^{2}Q(x)"),
+                    D(
+                        "P'(x)=2\\left(x-c\\right)Q(x)"
+                        "+\\left(x-c\\right)^{2}Q'(x)"
+                    ),
+                    "Both terms of the derivative still carry at least one copy of the bracket, "
+                    "so both vanish at $x=c$, and the original product vanishes there too.",
+                    D("P(c)=0\\qquad P'(c)=0"),
+                    close(True, "A squared bracket forces the value and the rate to vanish "
+                          "together"),
+                ),
+            ),
+            C(
+                "If $P(c)=0$ and $P'(c)=0$, then $\\left(x-c\\right)^{3}$ divides $P(x)$.",
+                False,
+                body(
+                    "The two conditions do buy a repeated bracket, but only two copies of it: "
+                    "the first zero gives one bracket and the vanishing rate gives a second.",
+                    D("P(x)=\\left(x-c\\right)^{2}Q(x),\\qquad Q(c)\\neq 0\\ \\text{possible}"),
+                    "A third copy would additionally demand that $Q$ vanish at $c$, which "
+                    "nothing in the assumptions provides. A single example settles it.",
+                    D("P(x)=\\left(x-c\\right)^{2}"),
+                    "This satisfies both conditions, yet dividing it by three copies of the "
+                    "bracket is impossible.",
+                    close(
+                        False,
+                        "Two copies are guaranteed and a third is not",
+                    ),
+                ),
+            ),
+            C(
+                "If $P$ has degree $n\\ge 1$, then $P'$ has degree $n-1$.",
+                True,
+                body(
+                    "Differentiating acts on each power separately, dropping the exponent by "
+                    "one and multiplying by the old exponent.",
+                    D("\\left(a x^{n}\\right)'=n\\,a\\,x^{n-1}"),
+                    "The leading coefficient of the derivative is therefore $na$, and with "
+                    "$n\\ge 1$ and $a\\neq 0$ that product cannot be zero, so the new leading "
+                    "term genuinely survives.",
+                    D("n\\,a\\neq 0"),
+                    close(True, "The derivative has degree exactly one lower"),
+                ),
+            ),
+            C(
+                "A polynomial of degree $n$ can have $n$ turning points.",
+                False,
+                body(
+                    "Turning points live among the zeros of the derivative, so the derivative's "
+                    "degree caps how many there can be.",
+                    D("\\text{degree of }P'=n-1"),
+                    "A polynomial of degree $n-1$ has at most $n-1$ distinct zeros, so at most "
+                    "that many places can be turns.",
+                    D("\\text{turning points}\\le n-1<n"),
+                    close(False, "Reaching $n$ turns is impossible for degree $n$"),
+                ),
+            ),
+            C(
+                "If $P'$ has no real zero, then $P$ is either increasing everywhere or "
+                "decreasing everywhere.",
+                True,
+                body(
+                    "The derivative is itself a polynomial, so its graph is unbroken and cannot "
+                    "get from a negative value to a positive one without passing through zero.",
+                    D("P'(x)\\neq 0\\quad\\text{for every real }x"),
+                    "With no zero available, the derivative keeps one sign across the whole real "
+                    "line.",
+                    D("P'(x)>0\\ \\text{everywhere}\\quad\\text{or}\\quad P'(x)<0\\ "
+                      "\\text{everywhere}"),
+                    close(
+                        True,
+                        "A rate of change that never changes sign gives a function that only "
+                        "ever climbs or only ever falls",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "Differentiating a product keeps the brackets in view, which is how repeated "
+            "factors and vanishing rates are linked.",
+            D("P(x)=\\left(x-c\\right)^{2}Q(x)\\ \\Rightarrow\\ P(c)=P'(c)=0"),
+            "The converse buys exactly two copies of the bracket and no more. Differentiation "
+            "also lowers the degree by exactly one, which caps the turning points at $n-1$, and "
+            "the derivative being unbroken means that a derivative without zeros keeps a "
+            "constant sign.",
+            D("\\text{degree of }P'=n-1\\qquad \\text{turning points}\\le n-1"),
+        ),
+    )
+)
+
+L5.append(
+    Spec(
+        case="",
+        title="How Many Points Pin a Polynomial Down",
+        context=(
+            "Let $n$ be a positive whole number and consider polynomial functions of degree at "
+            "most $n$ with real coefficients. No coefficients are supplied. " + TF
+        ),
+        difficulty=5,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "Through any $n+1$ points with pairwise different abscissas there passes exactly "
+                "one polynomial of degree at most $n$.",
+                True,
+                body(
+                    "A polynomial of degree at most $n$ carries $n+1$ unknown coefficients, and "
+                    "each point demands one linear equation of them.",
+                    D("P(x)=a_{0}+a_{1}x+\\cdots+a_{n}x^{n}"),
+                    "Existence is settled by building the polynomial directly, one term per "
+                    "point, each term vanishing at all the other abscissas.",
+                    D(
+                        "P(x)=\\sum_{i}y_{i}\\prod_{j\\neq i}"
+                        "\\frac{x-x_{j}}{x_{i}-x_{j}}"
+                    ),
+                    "Uniqueness comes from the difference of two such polynomials: it has "
+                    "degree at most $n$ and vanishes at $n+1$ different places, which is one "
+                    "zero too many unless it is the zero polynomial.",
+                    close(True, "Exactly one such polynomial passes through the points"),
+                ),
+            ),
+            C(
+                "Two polynomials of degree at most $n$ that agree at $n+1$ different numbers "
+                "are the same polynomial.",
+                True,
+                body(
+                    "Compare them by subtracting, which turns agreement into zeros.",
+                    D("H(x)=P(x)-Q(x)"),
+                    "The difference has degree at most $n$, and each place where the two agree "
+                    "sends it to zero.",
+                    D("H(x_{1})=H(x_{2})=\\cdots=H(x_{n+1})=0"),
+                    "A non-zero polynomial of degree at most $n$ cannot have $n+1$ distinct "
+                    "zeros, so the difference has to be the zero polynomial.",
+                    close(True, "The two polynomials coincide everywhere"),
+                ),
+            ),
+            C(
+                "Two different polynomials of degree at most $n$ can agree at $n+1$ different "
+                "numbers.",
+                False,
+                body(
+                    "This is the previous idea read backwards, so the same difference does the "
+                    "work.",
+                    D("H(x)=P(x)-Q(x)"),
+                    "Agreement at $n+1$ places hands $H$ that many distinct zeros while its "
+                    "degree stays at most $n$.",
+                    D("\\text{distinct zeros of }H\\le n\\ \\text{unless}\\ H=0"),
+                    close(
+                        False,
+                        "The only way out is $H=0$, which makes the two polynomials identical "
+                        "rather than different",
+                    ),
+                ),
+            ),
+            C(
+                "A polynomial of degree exactly $n$ is already determined by its values at any "
+                "$n$ different numbers.",
+                False,
+                body(
+                    "Counting unknowns against equations shows the shortfall: degree $n$ leaves "
+                    "$n+1$ coefficients to be found, and $n$ points give only $n$ conditions.",
+                    D("a_{0},a_{1},\\ldots,a_{n}\\ \\text{is}\\ n+1\\ \\text{unknowns}"),
+                    "A concrete pair makes the gap visible: both of the following have degree "
+                    "$2$ and agree at the two numbers $0$ and $1$.",
+                    D("x^{2}\\qquad\\text{and}\\qquad 2x^{2}-x"),
+                    D("0\\mapsto 0\\qquad 1\\mapsto 1"),
+                    close(
+                        False,
+                        "Two different polynomials of the same degree can share $n$ values, so "
+                        "$n$ points are not enough",
+                    ),
+                ),
+            ),
+            C(
+                "If a polynomial of degree at most $n$ vanishes at $n+1$ different numbers, it "
+                "is the zero polynomial.",
+                True,
+                body(
+                    "Suppose it is not the zero polynomial; then it has some degree $m$ with "
+                    "$m\\le n$, and every distinct zero costs a bracket.",
+                    D(
+                        "P(x)=\\left(x-c_{1}\\right)\\cdots\\left(x-c_{n+1}\\right)Q(x)"
+                    ),
+                    "That product already has degree at least $n+1$, which contradicts the "
+                    "assumed ceiling.",
+                    D("n+1\\le m\\le n"),
+                    close(
+                        True,
+                        "The contradiction leaves only the zero polynomial, which vanishes "
+                        "everywhere",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "One counting principle answers everything: a polynomial of degree at most $n$ has "
+            "$n+1$ coefficients, and it cannot have $n+1$ distinct zeros unless it is zero "
+            "throughout.",
+            D("\\text{degree}\\le n\\ \\text{and}\\ n+1\\ \\text{distinct zeros}"
+              "\\ \\Rightarrow\\ P=0"),
+            "Applied to the difference of two candidates, that turns agreement at $n+1$ points "
+            "into outright equality, which is exactly uniqueness. Existence is supplied by "
+            "building the interpolating polynomial explicitly. With only $n$ points there is "
+            "one condition too few, and different polynomials can slip through the same values.",
+        ),
+    )
+)
+
+L5.append(
+    Spec(
+        case="",
+        title="Nesting One Polynomial Inside Another",
+        context=(
+            "Let $f$ and $g$ be non-constant polynomial functions, of degrees $m$ and $n$. "
+            "Write $f\\circ g$ for the function sending $x$ to $f(g(x))$. " + TF
+        ),
+        difficulty=5,
+        stem_kind="symbolic",
+        claims=[
+            C(
+                "The nested function $f\\circ g$ always has degree $mn$.",
+                True,
+                body(
+                    "Substituting $g$ into the leading term of $f$ raises $g$ to the power $m$, "
+                    "and raising a polynomial to a power multiplies its degree.",
+                    D("f(x)=a x^{m}+\\left(\\text{lower powers}\\right)"),
+                    D("f(g(x))=a\\,g(x)^{m}+\\left(\\text{lower powers of }g\\right)"),
+                    "The leading coefficient of $g(x)^{m}$ is the $m$-th power of the leading "
+                    "coefficient of $g$, which cannot be zero, and the lower terms cannot reach "
+                    "that high.",
+                    D("\\text{degree of }f\\circ g=m\\cdot n"),
+                    close(True, "The degrees multiply in every case"),
+                ),
+            ),
+            C(
+                "The difference $f\\circ g-g\\circ f$ always has degree $mn$.",
+                False,
+                body(
+                    "Both nestings have degree $mn$, so their leading terms live at the same "
+                    "power and can wipe each other out.",
+                    D("\\text{degree of }f\\circ g=\\text{degree of }g\\circ f=mn"),
+                    "The simplest way to see it is to take the two functions equal, when the "
+                    "difference collapses completely.",
+                    D("f=g\\ \\Rightarrow\\ f\\circ g-g\\circ f=0"),
+                    close(
+                        False,
+                        "The difference can be the zero polynomial, which has no degree $mn$ to "
+                        "speak of",
+                    ),
+                ),
+            ),
+            C(
+                "The function sending $x$ to $f\\left(x^{2}\\right)$ always has degree $2m$.",
+                True,
+                body(
+                    "This is nesting with the particular inner function $x^{2}$, whose degree is "
+                    "$2$, so the same multiplication rule applies.",
+                    D("f\\left(x^{2}\\right)=a\\left(x^{2}\\right)^{m}"
+                      "+\\left(\\text{lower powers}\\right)"),
+                    "The leading term becomes $a x^{2m}$, and nothing below it can climb that "
+                    "high.",
+                    D("\\text{degree}=2m"),
+                    close(True, "The degree doubles, exactly as the product rule predicts"),
+                ),
+            ),
+            C(
+                "The function sending $x$ to $f(x)+f(-x)$ always has degree $m$.",
+                False,
+                body(
+                    "Adding the reflected function keeps the even powers and destroys the odd "
+                    "ones, because an odd power changes sign with its input.",
+                    D("f(x)+f(-x)=2\\left(\\text{the even-power part of }f\\right)"),
+                    "If the leading power of $f$ is odd, that leading term is precisely one of "
+                    "the casualties.",
+                    D("f(x)=x^{3}\\ \\Rightarrow\\ f(x)+f(-x)=x^{3}-x^{3}=0"),
+                    close(
+                        False,
+                        "Here the sum vanishes identically instead of keeping degree $3$",
+                    ),
+                ),
+            ),
+            C(
+                "If $f\\circ f$ sends every $x$ to $x$ itself, then $f$ has degree $1$.",
+                True,
+                body(
+                    "The identity function has degree $1$, so compare degrees on the two sides "
+                    "of the assumption.",
+                    D("f(f(x))=x"),
+                    "The left-hand side has degree $m\\cdot m$ by the multiplication rule, and "
+                    "the right-hand side has degree $1$.",
+                    D("m^{2}=1"),
+                    "Degrees are positive whole numbers here because $f$ is non-constant, so "
+                    "only one value survives.",
+                    D("m=1"),
+                    close(True, "Nothing beyond a linear function can undo itself"),
+                ),
+            ),
+        ],
+        overview=body(
+            "Nesting multiplies degrees, because the inner function is raised to the power of "
+            "the outer degree.",
+            D("\\text{degree of }f\\circ g=mn"),
+            "That single rule settles the nestings, the special case $f\\left(x^{2}\\right)$, "
+            "and the self-inverse question, where $m^{2}=1$ forces a linear function. The traps "
+            "are subtractions: two expressions of equal degree may cancel, as $f\\circ g$ "
+            "against $g\\circ f$ or $f(x)$ against $f(-x)$ show.",
+            D("f=g\\ \\Rightarrow\\ f\\circ g-g\\circ f=0"),
+        ),
+    )
+)
+
+_p = Pol.desc(2, -4, -2, 4)
+L5.append(
+    Spec(
+        case="",
+        title="Same Crossings, Wrong Scale",
+        context=(
+            "The figure shows the graph of a cubic function $f$ on the window "
+            "$-1.8\\le x\\le 2.8$. " + TF
+        ),
+        difficulty=5,
+        stem_kind="graph",
+        figure=plot(_p, xlim=(-1.8, 2.8), ylim=(-6, 10), ystep=2, label="y = f(x)"),
+        claims=[
+            claim_factored_form(
+                _p,
+                Pol.from_roots([-1, 1, 2]),
+                candidate_latex=(
+                    "\\left(x+1\\right)\\left(x-1\\right)\\left(x-2\\right)"
+                ),
+                name="f",
+                opener=(
+                    "Three crossings fix the three brackets, but they do not fix the constant "
+                    "in front of them: a vertical stretch keeps every crossing exactly where it "
+                    "is. So the offered product has to be expanded and compared with the "
+                    "function itself."
+                ),
+            ),
+            claim_factored_form(
+                _p,
+                Pol.from_roots([-1, 1, 2], 2),
+                candidate_latex=(
+                    "2\\left(x+1\\right)\\left(x-1\\right)\\left(x-2\\right)"
+                ),
+                name="f",
+            ),
+            claim_yintercept(_p, 4, name="f"),
+            claim_turning_points(_p, 3, name="f"),
+            C(
+                "The local minimum of $f$ lies at an $x$ between $1$ and $2$.",
+                True,
+                body(
+                    "The curve turns where its rate of change vanishes, so differentiate and "
+                    "look for the solutions.",
+                    D(_p.eq("f")),
+                    D(f"f'(x)={_p.deriv().latex()}"),
+                    "Setting that quadratic to zero and using the quadratic formula gives the "
+                    "two turning points.",
+                    D(
+                        "x=\\frac{8\\pm\\sqrt{64+48}}{12}"
+                        "\\approx -0.22\\ \\text{and}\\ 1.55"
+                    ),
+                    "The leading coefficient is positive, so the right-hand turn is the low "
+                    "point of the pair, and it sits at about $1.55$.",
+                    close(True, "That value lies between $1$ and $2$ as claimed"),
+                ),
+            ),
+        ],
+        overview=body(
+            "The crossings at $x=-1$, $x=1$ and $x=2$ fix the brackets, but the height of the "
+            "vertical-axis crossing fixes the constant in front: the offered product without a "
+            "factor would pass through $2$, while the picture passes through $4$.",
+            D("f(x)=2\\left(x+1\\right)\\left(x-1\\right)\\left(x-2\\right)"),
+            D(_p.eq("f")),
+            "Differentiating locates the two turns, and the right-hand one is the local minimum.",
+            D(f"f'(x)={_p.deriv().latex()}"),
+            D("x\\approx -0.22\\ \\text{and}\\ x\\approx 1.55"),
+        ),
+    )
+)
+
+_p = Pol.desc(1, 0, -5, 0, 4, 0)
+L5.append(
+    Spec(
+        case="",
+        title="A Degree-Five Curve With Five Crossings",
+        context=(
+            "The figure shows the graph of a polynomial function $p$ on the window "
+            "$-2.4\\le x\\le 2.4$. " + TF
+        ),
+        difficulty=5,
+        stem_kind="graph",
+        figure=plot(_p, xlim=(-2.4, 2.4), ylim=(-6, 6), ystep=2, label="y = p(x)"),
+        claims=[
+            claim_real_root_count(
+                _p,
+                5,
+                name="p",
+                roots=[-2, -1, 0, 1, 2],
+                text="The curve meets the horizontal axis exactly five times.",
+                opener=(
+                    "Pulling the common factor $x$ out first and then treating the rest as a "
+                    "quadratic in $x^{2}$ splits the expression into five linear brackets."
+                ),
+            ),
+            claim_turning_points(_p, 4, name="p"),
+            C(
+                "The curve is unchanged by a half-turn about the origin.",
+                True,
+                body(
+                    "A half-turn about the origin sends the point above $x$ to the point below "
+                    "$-x$, so the curve survives it exactly when $p(-x)=-p(x)$ holds "
+                    "throughout.",
+                    D(_p.eq("p")),
+                    "Every power appearing here is odd, and an odd power carries a change of "
+                    "sign in its input straight through to the output.",
+                    D(
+                        "p(-x)=-x^{5}+5x^{3}-4x=-\\left(x^{5}-5x^{3}+4x\\right)"
+                    ),
+                    close(True, "The identity $p(-x)=-p(x)$ holds for every $x$"),
+                ),
+            ),
+            C(
+                "The picture could equally be the graph of a polynomial of degree $4$.",
+                False,
+                body(
+                    "The number of crossings puts a floor under the degree, because each "
+                    "distinct zero costs one bracket.",
+                    D(
+                        "P(x)=\\left(x-c_{1}\\right)\\cdots\\left(x-c_{5}\\right)Q(x)"
+                    ),
+                    "The drawing shows five different crossings, so any polynomial behind it "
+                    "needs at least five brackets and therefore degree at least $5$.",
+                    D("\\text{degree}\\ge 5>4"),
+                    close(
+                        False,
+                        "A quartic has at most four zeros, so it cannot produce five crossings",
+                    ),
+                ),
+            ),
+            claim_end_behaviour(_p, side="left", rises=True, name="p"),
+        ],
+        overview=body(
+            "The curve in the picture belongs to",
+            D(_p.eq("p")),
+            D(
+                "p(x)=x\\left(x+1\\right)\\left(x-1\\right)\\left(x+2\\right)"
+                "\\left(x-2\\right)"
+            ),
+            "Five single brackets give five crossings, at $x=-2,-1,0,1,2$, so no polynomial of "
+            "degree below $5$ could draw this picture. Between the crossings the curve turns "
+            "four times.",
+            D("\\text{turning points}\\ \\approx\\ \\pm 0.54\\ \\text{and}\\ \\pm 1.64"),
+            "Only odd powers appear, which is the half-turn symmetry about the origin, and an "
+            "odd degree with a positive leading coefficient sends the left arm down and the "
+            "right arm up.",
+        ),
+    )
+)
+
+L5.append(
+    Spec(
+        case="",
+        title="The Family $x^{4}+bx^{2}+1$ and Its Missing Zeros",
+        context=(
+            "For each real number $b$ define $Q_{b}(x)=x^{4}+bx^{2}+1$. Statements must hold "
+            "for the whole family unless a particular $b$ is named. " + TF
+        ),
+        difficulty=5,
+        stem_kind="parametric",
+        claims=[
+            C(
+                "For $b=0$ the function has no real zero.",
+                True,
+                body(
+                    "With the middle term gone the expression is a fourth power plus one, and a "
+                    "fourth power of a real number is never negative.",
+                    D("Q_{0}(x)=x^{4}+1"),
+                    D("x^{4}\\ge 0\\ \\Rightarrow\\ Q_{0}(x)\\ge 1"),
+                    close(
+                        True,
+                        "The values never come below $1$, so the axis is never reached",
+                    ),
+                ),
+            ),
+            C(
+                "For $b=-2$ the function has exactly two distinct real zeros.",
+                True,
+                body(
+                    "Substituting the parameter reveals a perfect square in the variable "
+                    "$x^{2}$, which factorises at once.",
+                    D("Q_{-2}(x)=x^{4}-2x^{2}+1=\\left(x^{2}-1\\right)^{2}"),
+                    "The squared bracket vanishes exactly when the inner bracket does, and that "
+                    "asks for a number whose square is $1$.",
+                    D("x^{2}=1\\ \\Rightarrow\\ x=\\pm 1"),
+                    close(
+                        True,
+                        "The two numbers $1$ and $-1$ are the only real zeros, each of them a "
+                        "touching point",
+                    ),
+                ),
+            ),
+            C(
+                "For $b=2$ the function likewise has exactly two distinct real zeros.",
+                False,
+                body(
+                    "The same substitution produces a square again, but this time the inner "
+                    "bracket is a sum rather than a difference.",
+                    D("Q_{2}(x)=x^{4}+2x^{2}+1=\\left(x^{2}+1\\right)^{2}"),
+                    "A square of a real number is never negative, and adding $1$ pushes the "
+                    "inner bracket strictly above zero.",
+                    D("\\left(x^{2}+1\\right)^{2}\\ge 1>0"),
+                    close(
+                        False,
+                        "This member has no real zero at all, so a sign change in $b$ is not a "
+                        "harmless one",
+                    ),
+                ),
+            ),
+            C(
+                "Every member of the family has a graph symmetric about the vertical axis.",
+                True,
+                body(
+                    "Symmetry about the vertical axis is the identity $Q_{b}(-x)=Q_{b}(x)$, and "
+                    "that holds as soon as only even powers appear.",
+                    D("Q_{b}(x)=x^{4}+bx^{2}+1"),
+                    "The powers present are $4$, $2$ and $0$, all even, and an even power "
+                    "cannot notice a change of sign in the input.",
+                    D(
+                        "Q_{b}(-x)=\\left(-x\\right)^{4}+b\\left(-x\\right)^{2}+1"
+                        "=x^{4}+bx^{2}+1"
+                    ),
+                    close(True, "The identity holds for every $b$ and every $x$"),
+                ),
+            ),
+            C(
+                "There is a value of $b$ for which the function has exactly three distinct real "
+                "zeros.",
+                False,
+                body(
+                    "The symmetry already forces the zeros to come in pairs: whenever a number "
+                    "is a zero, so is its opposite.",
+                    D("Q_{b}(-x)=Q_{b}(x)"),
+                    "An odd count would need a zero equal to its own opposite, and the only such "
+                    "number is $0$ — but the constant term rules that out.",
+                    D("Q_{b}(0)=1\\neq 0"),
+                    close(
+                        False,
+                        "The real zeros always pair off, so their number is even and never three",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "Only even powers appear, so every member is symmetric about the vertical axis and "
+            "its real zeros come in opposite pairs.",
+            D("Q_{b}(-x)=Q_{b}(x)\\qquad Q_{b}(0)=1"),
+            "Since the origin is never a zero, the count of real zeros is always even — never "
+            "one, never three. Treating the expression as a quadratic in $x^{2}$ finishes the "
+            "work:",
+            D("x^{4}+bx^{2}+1=\\left(x^{2}\\right)^{2}+b\\left(x^{2}\\right)+1"),
+            "For $b=-2$ this is $\\left(x^{2}-1\\right)^{2}$ with the two touching zeros "
+            "$\\pm 1$; for $b=0$ and $b=2$ it stays strictly positive and there are no real "
+            "zeros at all.",
+        ),
+    )
+)
+
+_m = Pol.of(10, 24, -9, 1, var="t")
+_meas = [10, 26, 30, 28, 26, 30, 44]
+L5.append(
+    Spec(
+        case="",
+        title="A Cubic Model Against Six Hours of Measurements",
+        context=(
+            "A reservoir's inflow is measured on the hour, in cubic metres per second, and an "
+            f"engineer proposes the model ${_m.eq('M', arg='t')}$, where $t$ is the number of "
+            "hours after 06:00. " + TF
+        ),
+        difficulty=5,
+        stem_kind="hybrid",
+        tables="\n".join(
+            ["| Hour $t$ | Measured inflow (m³/s) |", "| --- | --- |"]
+            + [f"| {i} | {v} |" for i, v in enumerate(_meas)]
+        ),
+        claims=[
+            claim_value(
+                _m,
+                2,
+                30,
+                name="M",
+                unit="cubic metres per second",
+                text="The model reproduces the measurement taken at $t=2$.",
+                opener=(
+                    "Checking a model against one row of a table is a single substitution: put "
+                    "the hour in and see whether the recorded figure comes back."
+                ),
+            ),
+            C(
+                "The model reproduces every measurement in the table.",
+                False,
+                body(
+                    "A model matches a table only if it matches every row, so the last row has "
+                    "to be tested as well as the convenient ones.",
+                    D(_m.eq("M", arg="t")),
+                    D(f"M\\left(6\\right)={_m.subst(6)}={numstr(_m.at(6))}"),
+                    "The log records $44$ at that hour, so the model overshoots the final "
+                    "reading by $2$.",
+                    D("46-44=2"),
+                    close(
+                        False,
+                        "One row is out, and one row is enough to break the claim",
+                    ),
+                ),
+            ),
+            C(
+                "The model's turning points are at $t=2$ and $t=4$.",
+                True,
+                body(
+                    "The model turns where its rate of change vanishes, so differentiate and "
+                    "factorise the result.",
+                    D(f"M'(t)={_m.deriv().latex()}"),
+                    "Taking the common factor $3$ out leaves a quadratic that factorises over "
+                    "the whole numbers.",
+                    D("M'(t)=3\\left(t-2\\right)\\left(t-4\\right)"),
+                    "The rate is positive before $t=2$, negative between $2$ and $4$ and "
+                    "positive again afterwards, so both places are genuine turns.",
+                    D("M(2)=30\\qquad M(4)=26"),
+                    close(
+                        True,
+                        "The model peaks at $t=2$ and bottoms out at $t=4$, exactly the two "
+                        "hours named",
+                    ),
+                ),
+            ),
+            C(
+                "Across the six hours the measured inflow rose on average by $6$ cubic metres "
+                "per second each hour.",
+                False,
+                body(
+                    "An average rate of change over the whole span uses only the first and last "
+                    "measurements, taken from the table rather than from the model.",
+                    D("\\frac{44-10}{6-0}=\\frac{34}{6}"),
+                    D("\\frac{17}{3}\\approx 5.67"),
+                    close(
+                        False,
+                        "The measured average is about $5.67$ per hour, short of the $6$ claimed",
+                    ),
+                ),
+            ),
+            C(
+                "Between $t=2$ and $t=4$ the model falls.",
+                True,
+                body(
+                    "A model falls exactly where its rate of change is negative, and here that "
+                    "rate has been factorised already.",
+                    D("M'(t)=3\\left(t-2\\right)\\left(t-4\\right)"),
+                    "For $2<t<4$ the first bracket is positive and the second negative, so the "
+                    "product is negative throughout.",
+                    D("M(2)=30\\qquad M(3)=28\\qquad M(4)=26"),
+                    close(
+                        True,
+                        "The model drops steadily from $30$ to $26$ across that stretch",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The proposed model is a cubic in the hours after 06:00, and its rate of change "
+            "factorises neatly.",
+            D(_m.eq("M", arg="t")),
+            D("M'(t)=3t^{2}-18t+24=3\\left(t-2\\right)\\left(t-4\\right)"),
+            "So the model peaks at $t=2$, falls to a low point at $t=4$ and climbs afterwards.",
+            D("M(0)=10\\quad M(2)=30\\quad M(3)=28\\quad M(4)=26\\quad M(6)=46"),
+            "Those figures reproduce the log until the last hour, where the model gives $46$ "
+            "against a measured $44$. The measurements themselves rise on average by",
+            D("\\frac{44-10}{6}=\\frac{17}{3}\\approx 5.67"),
+        ),
+    )
+)
+
+_f = Pol.desc(1, 0, -3, 0)
+L5.append(
+    Spec(
+        case="",
+        title="Lifting a Curve Until Its Crossings Disappear",
+        context=(
+            "The figure shows the graph of $f(x)=x^{3}-3x$ on the window "
+            "$-2.4\\le x\\le 2.4$. Alongside it, consider the lifted functions "
+            "$g(x)=f(x)+2$ and $h(x)=f(x)+3$. " + TF
+        ),
+        difficulty=5,
+        stem_kind="hybrid",
+        figure=plot(_f, xlim=(-2.4, 2.4), ylim=(-5, 5), label="y = f(x)"),
+        claims=[
+            C(
+                "The curve in the figure meets the horizontal axis exactly three times.",
+                True,
+                body(
+                    "Pulling the common factor $x$ out leaves a difference of squares, so every "
+                    "crossing can be named exactly.",
+                    D("f(x)=x^{3}-3x=x\\left(x^{2}-3\\right)"),
+                    "The second bracket vanishes where the square of the input is $3$, and a "
+                    "positive number has two real square roots.",
+                    D(
+                        "f(x)=x\\left(x-\\sqrt{3}\\right)\\left(x+\\sqrt{3}\\right)"
+                    ),
+                    "The three numbers $0$, $\\sqrt{3}\\approx 1.73$ and "
+                    "$-\\sqrt{3}\\approx -1.73$ are all different, and all three lie inside the "
+                    "window drawn.",
+                    close(True, "There are exactly three crossings, just as the picture shows"),
+                ),
+            ),
+            C(
+                "The lifted function $g$ has exactly two distinct real zeros.",
+                True,
+                body(
+                    "Lifting the curve by $2$ changes the constant term and nothing else, and "
+                    "the result happens to factorise.",
+                    D("g(x)=x^{3}-3x+2"),
+                    "Testing $x=1$ shows it is a zero, and dividing the bracket out twice is "
+                    "possible.",
+                    D("g(x)=\\left(x-1\\right)^{2}\\left(x+2\\right)"),
+                    "The squared bracket names $x=1$ once, so the list of distinct zeros is "
+                    "shorter than the degree.",
+                    D("x=1\\ \\text{and}\\ x=-2"),
+                    close(
+                        True,
+                        "Exactly two different numbers are sent to zero, one of them a touching "
+                        "point",
+                    ),
+                ),
+            ),
+            C(
+                "The lifted function $g$ has three distinct real zeros, just as $f$ does.",
+                False,
+                body(
+                    "The two turning points of $f$ decide how many crossings survive a lift, so "
+                    "look at their heights after the lift.",
+                    D("f'(x)=3x^{2}-3\\ \\Rightarrow\\ x=\\pm 1"),
+                    D("f(-1)=2\\qquad f(1)=-2"),
+                    "Lifting by $2$ raises the local minimum from $-2$ to exactly $0$, so that "
+                    "turning point lands on the axis instead of dipping below it.",
+                    D("g(-1)=4\\qquad g(1)=0"),
+                    close(
+                        False,
+                        "The two crossings on the right merge into a single touch, leaving two "
+                        "distinct zeros rather than three",
+                    ),
+                ),
+            ),
+            C(
+                "The local maximum of $f$ sits at $x=-1$, at height $2$.",
+                True,
+                body(
+                    "The curve turns where its rate of change vanishes, and with a positive "
+                    "leading coefficient the left-hand turn is the high one.",
+                    D("f'(x)=3x^{2}-3"),
+                    D("3x^{2}=3\\ \\Rightarrow\\ x=\\pm 1"),
+                    "Evaluating the function at the left turn gives its height.",
+                    D(f"f(-1)={_f.subst(-1)}={numstr(_f.at(-1))}"),
+                    close(True, "The local maximum is the point $\\left(-1,2\\right)$"),
+                ),
+            ),
+            C(
+                "Lifting by $3$ instead of $2$ still leaves three crossings of the horizontal "
+                "axis.",
+                False,
+                body(
+                    "The lift moves both turning points up by the same amount, and three "
+                    "crossings need the local maximum above the axis and the local minimum "
+                    "below it.",
+                    D("h(-1)=2+3=5\\qquad h(1)=-2+3=1"),
+                    "After this lift the local minimum sits at height $1$, above the axis, so "
+                    "the middle dip never reaches it.",
+                    D("5>0\\quad\\text{and}\\quad 1>0"),
+                    close(
+                        False,
+                        "Only the left-hand arm still crosses, so there is exactly one crossing "
+                        "left",
+                    ),
+                ),
+            ),
+        ],
+        overview=body(
+            "The curve in the figure factorises completely, which is why it crosses three times.",
+            D("f(x)=x^{3}-3x=x\\left(x-\\sqrt{3}\\right)\\left(x+\\sqrt{3}\\right)"),
+            "Its two turning points are the key to what a vertical lift does:",
+            D("f'(x)=3x^{2}-3\\ \\Rightarrow\\ x=\\pm 1\\qquad f(-1)=2\\quad f(1)=-2"),
+            "Three crossings survive exactly while the local maximum stays above the axis and "
+            "the local minimum stays below it. Lifting by $2$ pushes the local minimum onto the "
+            "axis, so two crossings merge into one touch,",
+            D("f(x)+2=\\left(x-1\\right)^{2}\\left(x+2\\right)"),
+            "and lifting by $3$ pushes it clear above the axis, leaving a single crossing.",
+        ),
+    )
+)
+
+_p = Pol.desc(1, 0, -13, 0, 36)
+L5.append(
+    Spec(
+        case="",
+        title="A Quartic That Hides a Quadratic",
+        context=f"Let ${_p.eq('P')}$ for every real $x$. " + TF,
+        difficulty=5,
+        stem_kind="formula",
+        claims=[
+            claim_real_root_count(
+                _p,
+                4,
+                roots=[-3, -2, 2, 3],
+                opener=(
+                    "Only even powers appear, so the expression is really a quadratic in the "
+                    "quantity $x^{2}$; solving that first and then taking square roots finds "
+                    "every zero."
+                ),
+            ),
+            C(
+                "$P(x)=\\left(x^{2}-4\\right)\\left(x^{2}-9\\right)$ for every real $x$.",
+                True,
+                body(
+                    "Treating $x^{2}$ as the unknown turns the quartic into a quadratic that "
+                    "factorises over the whole numbers.",
+                    D("u^{2}-13u+36=\\left(u-4\\right)\\left(u-9\\right)"),
+                    "Putting $u=x^{2}$ back gives the proposed pair of brackets, and multiplying "
+                    "them out is the check.",
+                    D(
+                        "\\left(x^{2}-4\\right)\\left(x^{2}-9\\right)"
+                        "=x^{4}-9x^{2}-4x^{2}+36"
+                    ),
+                    D(f"\\left(x^{{2}}-4\\right)\\left(x^{{2}}-9\\right)={_p.latex()}"),
+                    close(True, "The expansion returns $P$ exactly"),
+                ),
+            ),
+            C(
+                "The graph of $P$ is unchanged by a half-turn about the origin.",
+                False,
+                body(
+                    "A half-turn about the origin leaves a graph alone exactly when "
+                    "$P(-x)=-P(x)$ holds, which needs every power present to be odd.",
+                    D(_p.eq("P")),
+                    "Here every power is even, so changing the sign of the input changes nothing "
+                    "at all.",
+                    D("P(-x)=x^{4}-13x^{2}+36=P(x)"),
+                    close(
+                        False,
+                        "The symmetry on offer is a mirror in the vertical axis, not a half-turn",
+                    ),
+                ),
+            ),
+            C(
+                "The four zeros of $P$ add up to $13$.",
+                False,
+                body(
+                    "Rebuilding the quartic from its brackets ties the sum of the zeros to the "
+                    "coefficient of $x^{3}$, which is where each root arrives with a minus sign.",
+                    D(
+                        "P(x)=\\left(x+3\\right)\\left(x+2\\right)\\left(x-2\\right)"
+                        "\\left(x-3\\right)"
+                    ),
+                    "The expanded form has no $x^{3}$ term at all, so the zeros must cancel one "
+                    "another — and indeed they come in opposite pairs.",
+                    D("-3-2+2+3=0"),
+                    close(
+                        False,
+                        "The zeros add to $0$; the $13$ in the claim is a coefficient, not a sum",
+                    ),
+                ),
+            ),
+            claim_turning_points(_p, 3),
+        ],
+        overview=body(
+            "Only even powers appear, so the quartic is a quadratic in disguise.",
+            D("P(x)=\\left(x^{2}\\right)^{2}-13\\left(x^{2}\\right)+36"),
+            D(
+                "P(x)=\\left(x^{2}-4\\right)\\left(x^{2}-9\\right)"
+                "=\\left(x+3\\right)\\left(x+2\\right)\\left(x-2\\right)\\left(x-3\\right)"
+            ),
+            "The four zeros $\\pm 2$ and $\\pm 3$ come in opposite pairs, so they add to $0$ and "
+            "the graph is a mirror image in the vertical axis rather than symmetric under a "
+            "half-turn. Differentiating shows three turns, one of them at the origin.",
+            D(f"P'(x)={_p.deriv().latex()}"),
+        ),
+    )
+)
+
 
 # === MORE TASKS GO ABOVE THIS LINE ========================================= #
 
