@@ -1125,7 +1125,14 @@ def expl_with_fg(letter, stmt, truth, f, g) -> str | None:
         return pack(letter, truth, parts)
 
     # --- extreme value ----------------------------------------------------- #
-    if "minimum" in sl or "maximum" in sl:
+    if (
+        "minimum" in sl
+        or "maximum" in sl
+        or "smallest value" in sl
+        or "largest value" in sl
+        or "takes its largest" in sl
+        or "takes its smallest" in sl
+    ):
         word = "smallest" if up else "largest"
         parts = [
             f"An {'upward' if up else 'downward'}-opening parabola takes its {word} "
@@ -2275,6 +2282,687 @@ SYMBOLIC: dict[tuple[str, str], list[str]] = {
         "functions vanish at exactly the same abscissas.",
         close(True, "The root sets coincide, as claimed"),
     ],
+    # ---- 7.69 Who wins far to the right ---------------------------------- #
+    ("MATH 7.69", "A"): [
+        "Far out to the right the contest between a line and a parabola is settled by "
+        "the square term alone, so write $f(x)=mx+q$ and compare the two functions "
+        "through their difference.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "Subtracting a line never touches the coefficient of $x^{2}$, so the difference "
+        "is again a parabola with leading coefficient $a>0$: it opens upwards and takes "
+        "negative values at most on the bounded interval between its two roots.",
+        D(r"g(x)-f(x)=a\left(x-h\right)^{2}+k\quad\text{with }a>0"),
+        "Once $x$ lies to the right of that interval the difference is strictly "
+        "positive and grows without bound, since the square term outruns the linear and "
+        "constant ones.",
+        close(True, "The parabola therefore overtakes the line and stays above it for "
+                    "all sufficiently large $x$"),
+    ],
+    ("MATH 7.69", "B"): [
+        "Winning the race far to the right says nothing about the region near the "
+        "origin, where the linear term can still be in front, so a single well-chosen "
+        "pair settles the claim.",
+        D(r"g(x)=x^{2}\qquad f(x)=x"),
+        "Here $a=1>0$ and the line is non-constant, so both hypotheses hold. Test the "
+        "two functions halfway between the points where they agree.",
+        D(r"g\left(\frac{1}{2}\right)=\frac{1}{4}\qquad "
+          r"f\left(\frac{1}{2}\right)=\frac{1}{2}"),
+        "At that abscissa the line is the higher of the two, and indeed the difference "
+        "$g(x)-f(x)=x^{2}-x=x(x-1)$ is negative on the whole interval between $0$ and "
+        "$1$.",
+        close(False, "An upward-opening parabola can dip below a line on a bounded "
+                     "stretch, so the inequality cannot hold for every real $x$"),
+    ],
+    ("MATH 7.69", "C"): [
+        "The same comparison works upside down: subtracting the line leaves the "
+        "coefficient of $x^{2}$ untouched, and now that coefficient is negative.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a<0"),
+        "A downward-opening parabola is positive at most between its two roots, so "
+        "beyond the larger of them the difference stays strictly negative and falls "
+        "without bound.",
+        D(r"x\text{ large}\implies g(x)-f(x)<0\implies g(x)<f(x)"),
+        close(True, "Far enough to the right the line is above the parabola, exactly as "
+                    "the claim says"),
+    ],
+    ("MATH 7.69", "D"): [
+        "A line staying above the whole graph would mean the difference $g-f$ never "
+        "becomes positive, so look at what that difference actually does.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a>0"),
+        "Being an upward-opening parabola, this difference grows beyond every bound as "
+        "$x$ increases; for instance with $g(x)=x^{2}$ and any line $f(x)=mx+q$ the "
+        "difference is positive as soon as $x>m+|q|+1$.",
+        D(r"x^{2}-mx-q>0\text{ for all large }x"),
+        close(False, "Every line is eventually overtaken, so no line can stay above an "
+                     "upward-opening parabola everywhere"),
+    ],
+    ("MATH 7.69", "E"): [
+        "Bounded below means the values never sink past some fixed level, and for a "
+        "parabola that level is supplied by the vertex.",
+        D(r"d(x)=g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a>0"),
+        "Completing the square isolates a non-negative square multiplied by the "
+        "positive number $a$, so the whole expression can never drop below the constant "
+        "left over.",
+        D(r"d(x)=a\left(x-h\right)^{2}+k\ge k\quad\text{for every real }x"),
+        "The number $k$ is the height of the vertex of $d$, and it depends only on the "
+        "coefficients, not on where $x$ happens to be.",
+        close(True, "The difference has a genuine smallest value and is therefore "
+                    "bounded below on all of $\\mathbb{R}$"),
+    ],
+    # ---- 7.70 When the difference stays curved --------------------------- #
+    ("MATH 7.70", "A"): [
+        "Only the parabola can contribute a square term, so expand the difference and "
+        "watch which coefficient the line is able to reach.",
+        D(r"d(x)=\left(ax^{2}+bx+c\right)-\left(mx+q\right)"),
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "The line only ever touches the $x$ term and the constant term; the coefficient "
+        "in front of $x^{2}$ is copied straight from $g$, and it is non-zero because "
+        "$g$ is a parabola.",
+        close(True, "That coefficient equals $a\\neq 0$ whatever $f$ is"),
+    ],
+    ("MATH 7.70", "B"): [
+        "Making $d$ a line would require the square term to disappear, so ask which "
+        "choice of $f$ could cancel it.",
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "A line has no $x^{2}$ term at all, so subtracting it leaves $a$ in place; the "
+        "only way to reach a zero coefficient would be $a=0$, which is excluded by "
+        "hypothesis.",
+        D(r"a\neq 0\implies d\text{ still has a square term}"),
+        close(False, "No choice of $f$ can flatten the difference into a line"),
+    ],
+    ("MATH 7.70", "C"): [
+        "The coefficient of $x$ in the difference is the gap between the middle "
+        "coefficient of $g$ and the slope of $f$, so it can be steered by choosing the "
+        "slope.",
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "Setting $m=b$ makes that gap vanish, and such a line certainly exists: take "
+        "$f(x)=bx$, for example.",
+        D(r"m=b\implies d(x)=ax^{2}+\left(c-q\right)"),
+        close(True, "One suitable line removes the $x$ term completely"),
+    ],
+    ("MATH 7.70", "D"): [
+        "A vanishing $x$ term in $d$ means $m=b$, and that condition concerns the "
+        "difference, not the original parabola.",
+        D(r"b-m=0\implies d(x)=ax^{2}+\left(c-q\right)"),
+        "The axis of $d$ is then the vertical line through the origin, but the axis of "
+        "$g$ is still computed from the coefficients of $g$ alone.",
+        D(r"g(x)=x^{2}+2x,\quad f(x)=2x\implies d(x)=x^{2}"),
+        "Here the $x$ term of $d$ has indeed vanished, yet the axis of $g$ is the line "
+        "$x=-1$ and not the vertical coordinate axis.",
+        close(False, "The condition on $d$ says nothing about where the axis of $g$ "
+                     "sits"),
+    ],
+    ("MATH 7.70", "E"): [
+        "The opening direction of a parabola is read off from the sign of its "
+        "coefficient of $x^{2}$, so compare that single number for $g$ and for $d$.",
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "Subtracting a line changes the $x$ term and the constant term only, so both "
+        "graphs carry the very same leading coefficient $a$.",
+        D(r"a>0\implies\text{both open upwards}\qquad "
+          r"a<0\implies\text{both open downwards}"),
+        close(True, "The two parabolas always turn the same way, whichever line is "
+                    "subtracted"),
+    ],
+    # ---- 7.79 Undoing a line around a parabola --------------------------- #
+    ("MATH 7.79", "A"): [
+        "Write $f(x)=mx+q$ with $m\\neq 0$ and undo it by solving $y=mx+q$ for $x$.",
+        D(r"y=mx+q\iff x=\frac{y-q}{m}"),
+        "The division is legitimate precisely because the line is non-constant, and the "
+        "result is again a first-degree formula.",
+        D(r"f^{-1}(y)=\frac{1}{m}y-\frac{q}{m}"),
+        "Its slope is $1/m$, which is a non-zero number, so the inverse is not a "
+        "constant function.",
+        close(True, "Undoing a non-constant line gives another non-constant line"),
+    ],
+    ("MATH 7.79", "B"): [
+        "Nesting the inverse line inside the parabola substitutes a first-degree "
+        "expression for $x$, so expand the square and collect the terms.",
+        D(r"g\left(f^{-1}(x)\right)=a\left(\frac{x-q}{m}\right)^{2}"
+          r"+b\left(\frac{x-q}{m}\right)+c"),
+        "The square of a first-degree expression reaches $x^{2}$ and stops there, and "
+        "the coefficient it produces is the leading one of the composite.",
+        D(r"\text{coefficient of }x^{2}=\frac{a}{m^{2}}\neq 0"),
+        "It is non-zero because $a\\neq 0$ and $m\\neq 0$, so nothing cancels the "
+        "square term.",
+        close(True, "The composite is again a parabola"),
+    ],
+    ("MATH 7.79", "C"): [
+        "In this order the parabola is computed first and the inverse line is applied "
+        "afterwards, which merely rescales and shifts the values.",
+        D(r"f^{-1}\left(g(x)\right)=\frac{g(x)-q}{m}"),
+        D(r"f^{-1}\left(g(x)\right)=\frac{a}{m}x^{2}+\frac{b}{m}x+\frac{c-q}{m}"),
+        "The leading coefficient $a/m$ is again non-zero, so the square term survives "
+        "the rescaling.",
+        close(True, "The composite is a parabola in this order as well"),
+    ],
+    ("MATH 7.79", "D"): [
+        "Here the inverse line acts on the argument, so a root of the composite is an "
+        "abscissa whose image under $f^{-1}$ is a root of $g$; the roots get moved "
+        "rather than kept.",
+        D(r"g\left(f^{-1}(x)\right)=0\iff f^{-1}(x)\text{ is a root of }g"),
+        "Take the simplest concrete pair and follow the bookkeeping.",
+        D(r"g(x)=x^{2}\qquad f(x)=x+1\implies f^{-1}(x)=x-1"),
+        D(r"g\left(f^{-1}(x)\right)=\left(x-1\right)^{2}"),
+        "The composite vanishes at $x=1$ while $g$ vanishes at $x=0$, so the two root "
+        "sets are different.",
+        close(False, "Substituting inside the parabola shifts its roots"),
+    ],
+    ("MATH 7.79", "E"): [
+        "In this order the line acts after the parabola, and an operation performed on "
+        "the values can only stretch or slide the graph vertically.",
+        D(r"f^{-1}\left(g(x)\right)=\frac{a}{m}x^{2}+\frac{b}{m}x+\frac{c-q}{m}"),
+        "Both the leading and the middle coefficient are divided by the same non-zero "
+        "number $m$, so the quotient that produces the axis is unchanged.",
+        D(r"-\frac{b/m}{2\left(a/m\right)}=-\frac{b}{2a}"),
+        close(True, "The composite has exactly the same axis of symmetry as $g$"),
+    ],
+    # ---- 7.80 Mirroring a line and a parabola ---------------------------- #
+    ("MATH 7.80", "A"): [
+        "Mirroring replaces $x$ by $-x$ in both formulas at once, so the equation for "
+        "the common abscissas is transported by the same substitution.",
+        D(r"\tilde f(x)=\tilde g(x)\iff f(-x)=g(-x)"),
+        "Hence $x$ is a meeting abscissa of the mirrored pair exactly when $-x$ is a "
+        "meeting abscissa of the original pair, and the assignment $x\\mapsto -x$ pairs "
+        "the two sets of solutions off one against one.",
+        D(r"x\text{ solves the new equation}\iff -x\text{ solves the old one}"),
+        close(True, "Reflection can neither create nor destroy a meeting, so the counts "
+                    "agree"),
+    ],
+    ("MATH 7.80", "B"): [
+        "Tangency is the algebraic statement that the difference has a repeated root, "
+        "so mirror the difference and inspect its shape.",
+        D(r"\tilde g(x)-\tilde f(x)=\left(g-f\right)(-x)"),
+        "If the original graphs are tangent at abscissa $h$, the difference is a "
+        "perfect square times its leading coefficient.",
+        D(r"g(x)-f(x)=a\left(x-h\right)^{2}\implies "
+          r"\left(g-f\right)(-x)=a\left(x+h\right)^{2}"),
+        "The mirrored difference is again a square with the same leading coefficient, "
+        "now with its repeated root at $-h$.",
+        close(True, "The reflected graphs touch at the mirrored abscissa"),
+    ],
+    ("MATH 7.80", "C"): [
+        "The number of meetings is governed by the difference, and mirroring keeps that "
+        "difference quadratic with the very same leading coefficient.",
+        D(r"\left(g-f\right)(-x)=ax^{2}-\left(b-m\right)x+\left(c-q\right)"),
+        "A quadratic equation has at most two real solutions, so three meetings are out "
+        "of reach; and the correspondence $x\\mapsto -x$ shows the count was preserved "
+        "exactly anyway.",
+        D(r"a\neq 0\implies\text{at most two solutions}"),
+        close(False, "Two meetings stay two meetings under a reflection"),
+    ],
+    ("MATH 7.80", "D"): [
+        "The opening direction depends only on the coefficient of $x^{2}$, so mirror "
+        "the formula and read that coefficient off.",
+        D(r"\tilde g(x)=a\left(-x\right)^{2}+b\left(-x\right)+c"),
+        D(r"\tilde g(x)=ax^{2}-bx+c"),
+        "Squaring kills the minus sign, so the leading coefficient is still $a$ and its "
+        "sign has not moved.",
+        close(True, "The mirrored parabola opens the same way as the original"),
+    ],
+    ("MATH 7.80", "E"): [
+        "Reflecting across the vertical coordinate axis carries the axis of symmetry "
+        "along with the graph, so compute where it lands.",
+        D(r"\tilde g(x)=ax^{2}-bx+c\implies\text{axis }x=\frac{b}{2a}"),
+        "The original axis is $x=-b/(2a)$, so the two lines are opposites of each other "
+        "and coincide only when $b=0$.",
+        D(r"g(x)=\left(x-1\right)^{2}\implies\tilde g(x)=\left(x+1\right)^{2}"),
+        "In this example the axis jumps from $x=1$ to $x=-1$, two different vertical "
+        "lines.",
+        close(False, "The axis is mirrored too, so it generally moves"),
+    ],
+    # ---- 7.81 How many points pin down a curve --------------------------- #
+    ("MATH 7.81", "A"): [
+        "Two points with different abscissas determine a slope, and the slope together "
+        "with one of the points determines the whole line.",
+        D(r"m=\frac{y_{Q}-y_{P}}{x_{Q}-x_{P}}"),
+        "The denominator is non-zero because $P$ and $Q$ do not lie on a common "
+        "vertical line, so this quotient is a genuine number; the intercept then has no "
+        "freedom left.",
+        D(r"q=y_{P}-m\,x_{P}"),
+        "Any line through both points must have this slope and this intercept, so no "
+        "second one is possible.",
+        close(True, "Exactly one linear function passes through the two points"),
+    ],
+    ("MATH 7.81", "B"): [
+        "Three points with distinct abscissas are always matched by exactly one formula "
+        "of the shape $Ax^{2}+Bx+C$, but nothing guarantees that $A$ comes out "
+        "non-zero.",
+        D(r"Ax_{P}^{2}+Bx_{P}+C=y_{P},\quad\text{and likewise for }Q\text{ and }R"),
+        "If the three points happen to be collinear, that unique solution is the line "
+        "through them, with a vanishing square coefficient.",
+        D(r"(0,0),\;(1,1),\;(2,2)\implies A=0,\;B=1,\;C=0"),
+        "A quadratic function needs a non-zero coefficient of $x^{2}$, so in this "
+        "configuration there is no quadratic function at all through the three points.",
+        close(False, "Collinear triples admit only a line, so the existence claim fails "
+                     "in general"),
+    ],
+    ("MATH 7.81", "C"): [
+        "The three interpolation conditions form a system in the unknown coefficients, "
+        "and distinct abscissas make it solvable in exactly one way.",
+        D(r"Ax_{P}^{2}+Bx_{P}+C=y_{P},\;Ax_{Q}^{2}+Bx_{Q}+C=y_{Q},"
+          r"\;Ax_{R}^{2}+Bx_{R}+C=y_{R}"),
+        "Subtracting the equations in pairs eliminates $C$ and then $B$, leaving one "
+        "value for $A$, after which $B$ and $C$ follow in turn; every step divides only "
+        "by differences of the abscissas, which are non-zero.",
+        D(r"A=0\iff P,\,Q,\,R\text{ are collinear}"),
+        "Since the points are assumed not to be collinear, the value obtained for $A$ "
+        "is non-zero and the interpolating formula really is a quadratic one.",
+        close(True, "There is one such quadratic function and no more"),
+    ],
+    ("MATH 7.81", "D"): [
+        "Passing through two points leaves one degree of freedom, and it can be "
+        "displayed explicitly: start from the line through $P$ and $Q$ and add a term "
+        "that vanishes at both abscissas.",
+        D(r"g_{\lambda}(x)=\lambda\left(x-x_{P}\right)\left(x-x_{Q}\right)+mx+q"),
+        "At $x=x_{P}$ and $x=x_{Q}$ the first summand is zero, so every member of this "
+        "family contains both points, while the coefficient of $x^{2}$ is $\\lambda$.",
+        D(r"\lambda\neq 0\implies g_{\lambda}\text{ is a quadratic function}"),
+        "Different non-zero values of $\\lambda$ give different functions, and there "
+        "are infinitely many of them.",
+        close(True, "Infinitely many parabolas pass through the same two points"),
+    ],
+    ("MATH 7.81", "E"): [
+        "Agreement at a point means the difference of the two functions vanishes there, "
+        "so study that difference.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a\neq 0"),
+        "This is a quadratic expression, so it can vanish at two abscissas at most; "
+        "three distinct abscissas are one too many.",
+        D(r"x_{P},\,x_{Q},\,x_{R}\text{ distinct}\implies\text{three roots needed}"),
+        "The abscissas are pairwise different because no two of the points share a "
+        "vertical line, so the required third root cannot exist.",
+        close(False, "A parabola and a line can agree at two points but never at "
+                     "three"),
+    ],
+    # ---- 7.82 Where the difference reaches its extreme ------------------- #
+    ("MATH 7.82", "A"): [
+        "Subtracting the line leaves the square term alone but shifts the middle "
+        "coefficient by the slope, and the axis is built from exactly those two "
+        "numbers.",
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        D(r"\text{axis of }d:\;x=-\frac{b-m}{2a}\qquad "
+          r"\text{axis of }g:\;x=-\frac{b}{2a}"),
+        "Subtracting one from the other leaves a single term, whose vanishing is "
+        "controlled by the slope alone.",
+        D(r"-\frac{b-m}{2a}-\left(-\frac{b}{2a}\right)=\frac{m}{2a}"),
+        close(True, "As long as $m\\neq 0$ this gap is non-zero, so the two axes are "
+                    "different vertical lines"),
+    ],
+    ("MATH 7.82", "B"): [
+        "The axis of the difference was just computed, and the slope of the line sits "
+        "right inside the formula.",
+        D(r"\text{axis of }d:\;x=-\frac{b}{2a}+\frac{m}{2a}"),
+        "Changing $m$ therefore slides that vertical line, and a concrete pair makes "
+        "the movement visible.",
+        D(r"g(x)=x^{2},\;m=0\implies\text{axis }x=0\qquad "
+          r"m=2\implies\text{axis }x=1"),
+        "Tilting the subtracted line moves the lowest point of the difference "
+        "sideways.",
+        close(False, "The axis of $d$ does depend on the slope"),
+    ],
+    ("MATH 7.82", "C"): [
+        "A line contributes an $x$ term and a constant and nothing else, so the square "
+        "term of the difference is inherited untouched.",
+        D(r"d(x)=\left(ax^{2}+bx+c\right)-\left(mx+q\right)"),
+        D(r"d(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right)"),
+        "Whatever slope and intercept the line has, the number in front of $x^{2}$ is "
+        "still the leading coefficient of $g$, and it is non-zero.",
+        close(True, "That coefficient equals $a$ exactly"),
+    ],
+    ("MATH 7.82", "D"): [
+        "Whether a parabola has a smallest value is decided by the direction in which "
+        "it opens, and the difference opens the same way as $g$.",
+        D(r"d(x)=a\left(x-h\right)^{2}+k"),
+        "With $a>0$ the square is multiplied by a positive number, so the values never "
+        "sink below the vertex height $k$, which is actually attained at $x=h$.",
+        D(r"a>0\implies d(x)\ge k\qquad a<0\implies d(x)\le k"),
+        "With $a<0$ the picture is turned over: $k$ becomes the largest value and the "
+        "arms fall without bound, so no smallest value exists.",
+        close(True, "A minimum exists precisely in the case $a>0$"),
+    ],
+    ("MATH 7.82", "E"): [
+        "Tangency of the two graphs means the equation $g(x)=f(x)$ has a repeated "
+        "solution, that is, the difference has a double root.",
+        D(r"d(x)=g(x)-f(x)=a\left(x-h\right)^{2}"),
+        "No constant is left over, so the vertex of $d$ sits at height zero.",
+        D(r"d(h)=0\implies\text{vertex}=\left(h,0\right)"),
+        "A point of height zero lies on the horizontal coordinate axis, and $h$ is the "
+        "abscissa where the line touches the parabola.",
+        close(True, "The vertex of the difference lands exactly on that axis"),
+    ],
+    # ---- 7.83 Signs of the roots from sum and product -------------------- #
+    ("MATH 7.83", "A"): [
+        "Vieta's relations turn the coefficients into the sum and the product of the "
+        "roots, and the product alone already records their signs.",
+        D(r"S=x_{1}+x_{2}=-\frac{b}{a}\qquad P=x_{1}x_{2}=\frac{c}{a}"),
+        "A product of two real numbers is negative only when the factors have opposite "
+        "signs, since equal signs give a positive product and a zero factor gives zero.",
+        D(r"P<0\implies x_{1}x_{2}<0\implies\text{one root}<0<\text{the other}"),
+        "Geometrically the parabola then crosses the horizontal axis once on each side "
+        "of the origin.",
+        close(True, "A negative product forces roots of opposite signs"),
+    ],
+    ("MATH 7.83", "B"): [
+        "The product fixes whether the signs agree, and the sum then decides which sign "
+        "it is.",
+        D(r"P>0\implies x_{1}\text{ and }x_{2}\text{ have the same sign}"),
+        "Two positive numbers would add up to something positive, so a negative sum "
+        "rules that case out and only the negative one survives.",
+        D(r"S<0\implies x_{1}+x_{2}<0\implies\text{both roots}<0"),
+        "For instance $g(x)=x^{2}+3x+2$ has $P=2>0$ and $S=-3<0$, with roots $-1$ and "
+        "$-2$.",
+        close(True, "The two conditions together force both roots to be negative"),
+    ],
+    ("MATH 7.83", "C"): [
+        "The value at the origin is the constant term, and Vieta's second relation "
+        "expresses that term through the product of the roots.",
+        D(r"P=\frac{c}{a}\implies c=aP"),
+        "With $a>0$ and $P<0$ the product $aP$ is negative, so the constant term is "
+        "negative.",
+        D(r"g(0)=c=aP<0"),
+        "This matches the picture: an upward-opening parabola with one root on each "
+        "side of the origin must dip below the horizontal axis in between, and the "
+        "origin lies in that stretch.",
+        close(True, "The function takes a negative value at the origin"),
+    ],
+    ("MATH 7.83", "D"): [
+        "A positive product only says the two roots share a sign; it does not say which "
+        "sign, so one counterexample is enough.",
+        D(r"g(x)=x^{2}+3x+2=\left(x+1\right)\left(x+2\right)"),
+        D(r"x_{1}=-1\qquad x_{2}=-2\qquad P=2>0"),
+        "The roots are distinct and real, the product is positive, yet both roots are "
+        "negative.",
+        close(False, "Positivity of the product leaves the negative case wide open"),
+    ],
+    ("MATH 7.83", "E"): [
+        "A vanishing sum makes the two roots opposites, and the axis of symmetry is "
+        "always the half-sum of the roots.",
+        D(r"S=x_{1}+x_{2}=0\implies x_{2}=-x_{1}"),
+        D(r"\text{axis}:\;x=-\frac{b}{2a}=\frac{S}{2}=0"),
+        "The line $x=0$ is the vertical coordinate axis, and the two roots sit "
+        "symmetrically on either side of it at equal distance.",
+        D(r"S=0\implies b=0\implies g(x)=ax^{2}+c"),
+        close(True, "Both halves of the claim hold together"),
+    ],
+    # ---- 7.89 Lines through the vertex ----------------------------------- #
+    ("MATH 7.89", "A"): [
+        "Put the parabola in vertex form around $V=(h,k)$; a line of slope zero through "
+        "$V$ is simply the horizontal line at that height.",
+        D(r"g(x)=a\left(x-h\right)^{2}+k\qquad f(x)=k"),
+        "The difference is then a pure square, so the meeting condition has a repeated "
+        "solution and no other.",
+        D(r"g(x)-f(x)=a\left(x-h\right)^{2}=0\iff x=h"),
+        "Away from $x=h$ the square is strictly positive and $a\\neq 0$, so the "
+        "difference never returns to zero.",
+        close(True, "The vertex is the one and only common point in that case"),
+    ],
+    ("MATH 7.89", "B"): [
+        "A line through the vertex can be written using the same shifted variable, and "
+        "then the difference factors by hand.",
+        D(r"f(x)=m\left(x-h\right)+k"),
+        D(r"g(x)-f(x)=a\left(x-h\right)^{2}-m\left(x-h\right)"
+          r"=\left(x-h\right)\left(a\left(x-h\right)-m\right)"),
+        "The first factor gives back the vertex; the second one vanishes at an abscissa "
+        "obtained by dividing the slope by the leading coefficient.",
+        D(r"a\left(x-h\right)=m\iff x=h+\frac{m}{a}"),
+        "Because $m\\neq 0$ and $a\\neq 0$ the shift $m/a$ is non-zero, so this second "
+        "abscissa really is different from $h$.",
+        close(True, "A second common point appears as soon as the line is tilted"),
+    ],
+    ("MATH 7.89", "C"): [
+        "Tangency would mean the factored difference has a repeated root at the vertex, "
+        "so look at the factorisation once more.",
+        D(r"g(x)-f(x)=\left(x-h\right)\left(a\left(x-h\right)-m\right)"),
+        "For $m\\neq 0$ the factor $x-h$ occurs only once, so the difference changes "
+        "sign at $x=h$ and the graphs cross there instead of touching.",
+        D(r"g(x)=x^{2},\;f(x)=x\implies g(x)-f(x)=x\left(x-1\right)"),
+        "In this example the line through the vertex $(0,0)$ cuts the parabola again at "
+        "$x=1$, and near the origin the difference is negative on one side and positive "
+        "on the other.",
+        close(False, "Only the horizontal choice $m=0$ produces a genuine tangency"),
+    ],
+    ("MATH 7.89", "D"): [
+        "The line is required to pass through the vertex, so one common point is handed "
+        "over by the hypothesis itself.",
+        D(r"f(h)=k=g(h)"),
+        "Both graphs therefore contain the point $V=(h,k)$, whatever the slope $m$ and "
+        "the leading coefficient $a$ happen to be.",
+        D(r"g(x)-f(x)=\left(x-h\right)\left(a\left(x-h\right)-m\right)"),
+        "Algebraically the factor $x-h$ is always present in the difference, so the "
+        "meeting can never be lost.",
+        close(True, "At least the vertex is always shared"),
+    ],
+    ("MATH 7.89", "E"): [
+        "The second meeting was located exactly, so its position relative to the axis "
+        "$x=h$ is a matter of one sign.",
+        D(r"x_{2}=h+\frac{m}{a}"),
+        "The point lies to the right of the axis precisely when the added shift is "
+        "positive, and a quotient of two non-zero numbers is positive exactly when they "
+        "share a sign.",
+        D(r"x_{2}>h\iff\frac{m}{a}>0\iff m\text{ and }a\text{ have the same sign}"),
+        "Opposite signs push the second meeting to the left instead, at the mirrored "
+        "distance from the axis.",
+        close(True, "The criterion is exactly the agreement of the two signs"),
+    ],
+    # ---- 7.90 Composing a parabola with itself --------------------------- #
+    ("MATH 7.90", "A"): [
+        "Nesting substitutes the whole parabola in place of $x$, so the square term "
+        "gets squared and that is where the top power comes from.",
+        D(r"g\left(g(x)\right)=a\left(ax^{2}+bx+c\right)^{2}"
+          r"+b\left(ax^{2}+bx+c\right)+c"),
+        "Squaring an expression whose highest power is $x^{2}$ reaches $x^{4}$, with a "
+        "coefficient that is a product of non-zero numbers.",
+        D(r"a\left(ax^{2}\right)^{2}=a^{3}x^{4}"),
+        "The remaining summands only climb to $x^{2}$, so nothing can cancel the "
+        "$a^{3}x^{4}$ term.",
+        close(True, "The highest power really is $x^{4}$"),
+    ],
+    ("MATH 7.90", "B"): [
+        "Work from the inside out: applying the line to the parabola only rescales it, "
+        "and then the outer parabola squares the result.",
+        D(r"f\left(g(x)\right)=m\left(ax^{2}+bx+c\right)+q"),
+        "The leading coefficient here is $ma$, non-zero because the line is "
+        "non-constant, so the middle stage is still a parabola.",
+        D(r"g\left(f\left(g(x)\right)\right)=a\left(ma\,x^{2}+\dots\right)^{2}+\dots"),
+        D(r"\text{coefficient of }x^{4}=a\left(ma\right)^{2}=a^{3}m^{2}\neq 0"),
+        close(True, "The triple nesting also tops out at $x^{4}$"),
+    ],
+    ("MATH 7.90", "C"): [
+        "The value $x^{4}$ is right, but the reason offered is not: powers of nested "
+        "functions multiply, and here $2$ times $2$ happens to agree with $2$ plus $2$.",
+        D(r"2\cdot 2=4\qquad 2+2=4"),
+        "A single case where the two rules disagree exposes which one is at work: nest "
+        "the parabola inside the line and count.",
+        D(r"g\left(f(x)\right)=a\left(mx+q\right)^{2}+b\left(mx+q\right)+c"),
+        D(r"\text{highest power}=x^{2}:\quad 2\cdot 1=2\text{, not }2+1=3"),
+        "Adding the powers is the rule for multiplying two formulas together, not for "
+        "nesting one inside the other.",
+        close(False, "The stated justification is the wrong rule, even though the "
+                     "number it produces here is right"),
+    ],
+    ("MATH 7.90", "D"): [
+        "Nesting a line inside itself substitutes a first-degree expression into a "
+        "first-degree formula, so expand and collect.",
+        D(r"f\left(f(x)\right)=m\left(mx+q\right)+q"),
+        D(r"f\left(f(x)\right)=m^{2}x+q\left(m+1\right)"),
+        "The new slope is $m^{2}$, and a square of a non-zero number is non-zero, so "
+        "the result is a line that is not constant.",
+        D(r"m\neq 0\implies m^{2}>0"),
+        close(True, "The double nesting stays a non-constant line"),
+    ],
+    ("MATH 7.90", "E"): [
+        "For the nesting to collapse to a parabola, the $x^{4}$ term would have to "
+        "disappear, so look at the coefficient it carries.",
+        D(r"g\left(g(x)\right)=a\left(ax^{2}+bx+c\right)^{2}+b\left(ax^{2}+bx+c\right)+c"),
+        D(r"\text{coefficient of }x^{4}=a^{3}"),
+        "This vanishes only when $a=0$, which is forbidden because $g$ is a parabola; "
+        "no choice of $b$ or $c$ has any influence on it.",
+        D(r"a\neq 0\implies a^{3}\neq 0"),
+        close(False, "The $x^{4}$ term is always there, so the nesting is never a "
+                     "parabola"),
+    ],
+    # ---- 7.91 Can a line trap a parabola --------------------------------- #
+    ("MATH 7.91", "A"): [
+        "An upward-opening parabola has a lowest point, and any level below that height "
+        "gives a line the graph never reaches.",
+        D(r"g(x)=a\left(x-h\right)^{2}+k\ge k\quad\text{for all }x,\qquad a>0"),
+        "Take the horizontal line one unit under the vertex; it is a perfectly "
+        "legitimate linear function.",
+        D(r"f(x)=k-1\implies g(x)-f(x)\ge 1>0"),
+        "The gap between the two graphs is at least one unit everywhere, so the line "
+        "stays strictly below the parabola.",
+        close(True, "Such a line exists, for instance that horizontal one"),
+    ],
+    ("MATH 7.91", "B"): [
+        "A line above the whole graph would need $g(x)<f(x)$ for every $x$, so examine "
+        "the difference far from the origin.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a>0"),
+        "The difference is itself an upward-opening parabola, so it has a lowest point "
+        "and then climbs beyond every bound on both sides.",
+        D(r"g(x)-f(x)>0\text{ for all }|x|\text{ large enough}"),
+        "The arms of the parabola therefore rise past any line eventually, no matter "
+        "how steep the line is chosen.",
+        close(False, "No line can stay above the whole graph when $a>0$"),
+    ],
+    ("MATH 7.91", "C"): [
+        "Subtracting a line changes only the $x$ term and the constant term, so the "
+        "difference keeps the leading coefficient of $g$.",
+        D(r"g(x)-f(x)=ax^{2}+\left(b-m\right)x+\left(c-q\right),\quad a>0"),
+        "Completing the square exhibits a non-negative square multiplied by a positive "
+        "number, plus a constant that is actually attained at the vertex.",
+        D(r"g(x)-f(x)=a\left(x-h_{d}\right)^{2}+k_{d}\ge k_{d}"),
+        "The value $k_{d}$ depends on the line chosen, but for each line it is a "
+        "genuine number reached at one abscissa.",
+        close(True, "The difference attains a smallest value for every linear $f$"),
+    ],
+    ("MATH 7.91", "D"): [
+        "A negative leading coefficient turns the arms downwards, so the vertex is now "
+        "the highest point of the graph.",
+        D(r"g(x)=a\left(x-h\right)^{2}+k\le k\quad\text{for all }x,\qquad a<0"),
+        "The square is non-negative and $a<0$, so the product is at most zero and the "
+        "values never climb past the vertex height $k$.",
+        D(r"f(x)=k+1\implies f(x)-g(x)\ge 1>0"),
+        "The horizontal line one unit above the vertex therefore misses the graph "
+        "entirely and stays above it.",
+        close(True, "Such a horizontal line exists"),
+    ],
+    ("MATH 7.91", "E"): [
+        "A strip between two parallel lines has bounded width, so being squeezed inside "
+        "it would keep the difference to one of those lines bounded.",
+        D(r"f_{1}(x)=mx+q_{1}\qquad f_{2}(x)=mx+q_{2}"),
+        "Subtracting the lower line from $g$ leaves a parabola with the same leading "
+        "coefficient $a\\neq 0$, and such a difference is unbounded.",
+        D(r"g(x)-f_{1}(x)=ax^{2}+\left(b-m\right)x+\left(c-q_{1}\right)"),
+        "For $a>0$ its values exceed $q_{2}-q_{1}$ once $|x|$ is large, and for $a<0$ "
+        "they fall below the strip instead, so the graph escapes on one side or the "
+        "other.",
+        close(False, "A parabola always breaks out of a strip of finite width"),
+    ],
+    # ---- 7.92 Reading roots through a linear substitution ---------------- #
+    ("MATH 7.92", "A"): [
+        "Substituting the line into the outer formula replaces $y$ by a first-degree "
+        "expression, so expand and collect the powers of $x$.",
+        D(r"g(x)=A\left(mx+k\right)^{2}+B\left(mx+k\right)+C"),
+        D(r"g(x)=Am^{2}x^{2}+\left(2Amk+Bm\right)x+\left(Ak^{2}+Bk+C\right)"),
+        "The coefficient of $x^{2}$ is the product $Am^{2}$, and both factors are "
+        "non-zero: $A$ by hypothesis and $m$ because the line is non-constant.",
+        close(True, "The substitution produces a genuine quadratic function"),
+    ],
+    ("MATH 7.92", "B"): [
+        "The composite is evaluated in two stages, so a zero of the whole thing is a "
+        "zero produced at the second stage.",
+        D(r"g\left(x_{0}\right)=q\left(f\left(x_{0}\right)\right)"),
+        "If this number is zero then the value $y_{0}=f(x_{0})$ satisfies $q(y_{0})=0$, "
+        "so it is one of the roots of $q$.",
+        D(r"g\left(x_{0}\right)=0\iff q\left(y_{0}\right)=0,\quad y_{0}=f\left(x_{0}\right)"),
+        "The reasoning uses nothing but the definition of nesting, so it applies to "
+        "every real root of $g$.",
+        close(True, "Each root of the composite is an abscissa where the line hits a "
+                    "root of $q$"),
+    ],
+    ("MATH 7.92", "C"): [
+        "The composite can only reach values that $q$ itself takes, so a $q$ that never "
+        "vanishes hands its property straight over.",
+        D(r"q(y)\neq 0\text{ for every real }y"),
+        "For any real $x$ the number $f(x)$ is real, so $q$ evaluated there is non-zero "
+        "as well.",
+        D(r"g(x)=q\left(f(x)\right)\neq 0\quad\text{for all real }x"),
+        "In terms of discriminants, $q$ having none means its graph misses the "
+        "horizontal axis, and substituting a line cannot pull it back down.",
+        close(True, "The composite has no real roots either"),
+    ],
+    ("MATH 7.92", "D"): [
+        "The roots of the composite are the abscissas whose image under $f$ is a root "
+        "of $q$, so they are the roots of $q$ pulled back through the line.",
+        D(r"g(x)=0\iff f(x)\text{ is a root of }q\iff x=f^{-1}\left(\text{root}\right)"),
+        "One concrete pair shows the shift at once.",
+        D(r"f(x)=x+1\qquad q(y)=y^{2}\implies g(x)=\left(x+1\right)^{2}"),
+        "The only root of $q$ is $0$, while the only root of $g$ is $-1$, so the two "
+        "sets do not coincide.",
+        close(False, "The line moves the roots unless it happens to be the identity"),
+    ],
+    ("MATH 7.92", "E"): [
+        "The expansion already displays the leading coefficient of the composite, and "
+        "the slope of the line is squared into it.",
+        D(r"g(x)=Am^{2}x^{2}+\left(2Amk+Bm\right)x+\left(Ak^{2}+Bk+C\right)"),
+        "So the coefficient of $x^{2}$ is $Am^{2}$, which equals $A$ only in the "
+        "special case $m^{2}=1$.",
+        D(r"m=2\implies\text{coefficient of }x^{2}=4A\neq A\text{ unless }A=0"),
+        "Since $A\\neq 0$ is assumed, a slope such as $m=2$ genuinely changes the "
+        "number in front of $x^{2}$.",
+        close(False, "The leading coefficient is $Am^{2}$, not $A$"),
+    ],
+    # ---- 7.93 Equal values and the axis ---------------------------------- #
+    ("MATH 7.93", "A"): [
+        "Two equal values give an equation between the coefficients, so subtract the "
+        "two evaluations and factor.",
+        D(r"g(u)-g(v)=a\left(u^{2}-v^{2}\right)+b\left(u-v\right)"),
+        D(r"g(u)-g(v)=\left(u-v\right)\left(a\left(u+v\right)+b\right)"),
+        "The first factor is non-zero because $u$ and $v$ are distinct, so the second "
+        "one must vanish, which pins down the sum.",
+        D(r"a\left(u+v\right)+b=0\implies\frac{u+v}{2}=-\frac{b}{2a}"),
+        "The right-hand side is exactly the abscissa of the axis of symmetry.",
+        close(True, "The axis passes through the midpoint of the two abscissas"),
+    ],
+    ("MATH 7.93", "B"): [
+        "Equal values need not be zero values, so nothing forces the common value onto "
+        "the horizontal axis.",
+        D(r"g(x)=x^{2}\qquad u=1\qquad v=-1"),
+        D(r"g(1)=1=g(-1)"),
+        "The hypothesis is satisfied with a common value of $1$, yet the only root of "
+        "this parabola is $0$, which is neither $u$ nor $v$.",
+        D(r"g(x)=0\iff x=0"),
+        close(False, "Symmetric pairs of abscissas exist at every height, not only at "
+                     "height zero"),
+    ],
+    ("MATH 7.93", "C"): [
+        "Vertex form makes the symmetry visible: only the distance from the axis "
+        "enters, through a square.",
+        D(r"g(x)=a\left(x-h\right)^{2}+k,\qquad\ell:\;x=h"),
+        "Evaluating at the two abscissas $h+t$ and $h-t$ squares the same number up to "
+        "sign, so the two results agree.",
+        D(r"g\left(h+t\right)=at^{2}+k\qquad g\left(h-t\right)=at^{2}+k"),
+        "This holds for every positive $t$, and the two abscissas are genuinely "
+        "different because $t\\neq 0$.",
+        close(True, "Points mirrored in the axis always carry the same value"),
+    ],
+    ("MATH 7.93", "D"): [
+        "The relation derived from $g(u)=g(v)$ involved no data beyond the "
+        "coefficients, so read it again.",
+        D(r"\left(u-v\right)\left(a\left(u+v\right)+b\right)=0,\quad u\neq v"),
+        D(r"u+v=-\frac{b}{a}"),
+        "Whatever pair of distinct abscissas with equal values one starts from, its sum "
+        "is this one number, which is twice the abscissa of the axis.",
+        close(True, "The sum is fixed by $a$ and $b$ alone"),
+    ],
+    ("MATH 7.93", "E"): [
+        "The axis of symmetry always exists, and it supplies such a pair for free.",
+        D(r"h=-\frac{b}{2a}\qquad u=h+1\qquad v=h-1"),
+        "These two numbers are distinct, and vertex form shows they carry the same "
+        "value.",
+        D(r"g\left(h+1\right)=a+k=g\left(h-1\right)"),
+        "The construction only needs $a\\neq 0$, which is part of being a quadratic "
+        "function, so it works for every $g$ of this kind.",
+        close(True, "Such a pair can always be produced"),
+    ],
 }
 
 
@@ -2472,6 +3160,414 @@ PARAMETRIC: dict[tuple[str, str], list[str]] = {
         "axis formula; the graph slides vertically while the axis stays put.",
         close(False, "The axis is the line $x=\\frac{1}{2}$ for every $s$"),
     ],
+    # ---- 7.71 Touching at the vertex ------------------------------------- #
+    ("MATH 7.71", "A"): [
+        "Common points are the solutions of $g(x)=f(x)$, so bring everything to one "
+        "side and see what kind of expression appears.",
+        D(r"x^{2}+2x+3-2=x^{2}+2x+1=0"),
+        "The left-hand side is a perfect square, which can vanish only where the "
+        "bracket itself does.",
+        D(r"\left(x+1\right)^{2}=0\iff x=-1"),
+        "A double root counts as a single point of the plane, namely $(-1,2)$, and "
+        "there is nowhere else the two graphs can agree.",
+        close(True, "Exactly one point is shared"),
+    ],
+    ("MATH 7.71", "B"): [
+        "The vertex sits on the axis of symmetry, whose abscissa comes from the first "
+        "two coefficients, and its height is the value of $g$ there.",
+        D(r"x=-\frac{2}{2\cdot 1}=-1"),
+        D(r"g(-1)=1-2+3=2"),
+        "So the vertex is the point $(-1,2)$, which is exactly the abscissa and height "
+        "found for the single common point.",
+        D(r"f(-1)=2=g(-1)"),
+        close(True, "The contact happens precisely at the vertex"),
+    ],
+    ("MATH 7.71", "C"): [
+        "The line is horizontal, so its slope is zero; compare that with the slope of "
+        "the parabola at the contact abscissa.",
+        D(r"g'(x)=2x+2"),
+        D(r"g'(-1)=-2+2=0"),
+        "Both slopes are zero at $x=-1$, which is no accident: the tangent at a vertex "
+        "is always horizontal, and the difference $\\left(x+1\\right)^{2}$ having a "
+        "double root is the algebraic form of that agreement.",
+        close(True, "The two graphs share the same slope where they touch"),
+    ],
+    ("MATH 7.71", "D"): [
+        "Crossing would mean the difference changes sign at the contact point, so track "
+        "the sign of that difference.",
+        D(r"g(x)-f(x)=\left(x+1\right)^{2}"),
+        "A square is never negative, and here it is strictly positive on both sides of "
+        "$x=-1$.",
+        D(r"g(-2)-f(-2)=1>0\qquad g(0)-f(0)=1>0"),
+        "The parabola stays above the line on either side and merely comes down to "
+        "touch it once, so the line never passes from one side of the curve to the "
+        "other.",
+        close(False, "The graphs touch without crossing"),
+    ],
+    ("MATH 7.71", "E"): [
+        "Real roots of $g$ exist according to the sign of its discriminant, so compute "
+        "that number.",
+        D(r"\Delta=2^{2}-4\cdot 1\cdot 3=4-12=-8"),
+        "A negative discriminant leaves no real square root in the quadratic formula, "
+        "so the equation $g(x)=0$ has no real solution at all.",
+        D(r"g(x)=\left(x+1\right)^{2}+2\ge 2>0"),
+        "Vertex form says the same thing more directly: the lowest value of $g$ is $2$, "
+        "so the graph stays entirely above the horizontal axis.",
+        close(False, "There are no real roots, let alone two distinct ones"),
+    ],
+    # ---- 7.84 Sliding a line until it touches ---------------------------- #
+    ("MATH 7.84", "A"): [
+        "The family slides a line of fixed slope up and down, and touching means the "
+        "equation $g(x)=f_c(x)$ has a repeated solution, so form the difference and "
+        "watch its discriminant.",
+        D(r"x^{2}-2x-5-\left(x+c\right)=x^{2}-3x-\left(5+c\right)=0"),
+        D(r"\Delta(c)=9+4\left(5+c\right)=29+4c"),
+        "This is a first-degree expression in the parameter, so it vanishes for one "
+        "single value.",
+        D(r"29+4c=0\implies c=-\frac{29}{4}"),
+        close(True, "Exactly one member of the family touches the parabola"),
+    ],
+    ("MATH 7.84", "B"): [
+        "Passing through the origin fixes the parameter, since the intercept of "
+        "$f_c$ is $c$ itself.",
+        D(r"f_c(0)=c=0\implies f_{0}(x)=x"),
+        "Now count the solutions of the difference at that parameter value.",
+        D(r"\Delta(0)=29>0"),
+        D(r"x=\frac{3\pm\sqrt{29}}{2}"),
+        "A positive discriminant makes the square root a genuine positive number, so "
+        "the two abscissas are real and different.",
+        close(True, "The line through the origin cuts the parabola twice"),
+    ],
+    ("MATH 7.84", "C"): [
+        "Whether a member meets the parabola is decided by the sign of the same "
+        "discriminant, now read as a function of the shift.",
+        D(r"\Delta(c)=29+4c"),
+        D(r"c<-\frac{29}{4}\implies \Delta(c)<0"),
+        "Taking $c=-10$, for instance, gives a negative value.",
+        D(r"\Delta(-10)=29-40=-11<0"),
+        "With no real solution left the line has slid too far down and shares no point "
+        "with the curve.",
+        close(False, "Sufficiently low members of the family miss the parabola "
+                     "entirely"),
+    ],
+    ("MATH 7.84", "D"): [
+        "The parameter enters $f_c$ only as an added constant, so it never touches the "
+        "coefficient of $x$.",
+        D(r"f_c(x)=x+c"),
+        D(r"f_c\left(x_{2}\right)-f_c\left(x_{1}\right)=x_{2}-x_{1}"),
+        "The rate of change is $1$ for every $c$, so all the members are parallel and "
+        "the whole family is just one line sliding vertically.",
+        close(True, "Every line of the family has slope one"),
+    ],
+    ("MATH 7.84", "E"): [
+        "The common abscissas are the real roots of the difference, so look at what "
+        "kind of equation that difference gives.",
+        D(r"g(x)-f_c(x)=x^{2}-3x-\left(5+c\right)"),
+        "The parameter only shifts the constant term; the coefficient of $x^{2}$ stays "
+        "$1$ for every $c$, so the equation remains quadratic.",
+        D(r"\text{leading coefficient}=1\neq 0\implies\text{at most two real roots}"),
+        "Depending on the sign of the discriminant the count is two, one or none, but "
+        "it can never be three.",
+        close(True, "Two meetings is the maximum, whatever the shift"),
+    ],
+    # ---- 7.85 Choosing the leading coefficient --------------------------- #
+    ("MATH 7.85", "A"): [
+        "Here the parameter is the leading coefficient itself, so form the difference "
+        "and treat its discriminant as a function of $a$.",
+        D(r"ax^{2}+2x-3-\left(x+1\right)=ax^{2}+x-4=0"),
+        D(r"\Delta(a)=1+16a"),
+        "Tangency asks for a repeated root, that is a vanishing discriminant, which "
+        "again is a first-degree condition on the parameter.",
+        D(r"1+16a=0\implies a=-\frac{1}{16}"),
+        "This value is real and non-zero, so it is an admissible member of the family.",
+        close(True, "One parabola of the family touches the line"),
+    ],
+    ("MATH 7.85", "B"): [
+        "Two distinct meetings require a strictly positive discriminant, so check "
+        "whether that holds for every admissible parameter.",
+        D(r"\Delta(a)=1+16a"),
+        D(r"a<-\frac{1}{16}\implies \Delta(a)<0"),
+        "Taking $a=-1$ gives a negative number, so that member has no real meeting "
+        "abscissa at all.",
+        D(r"\Delta(-1)=1-16=-15<0"),
+        close(False, "Sufficiently negative leading coefficients destroy both "
+                     "intersections"),
+    ],
+    ("MATH 7.85", "C"): [
+        "Missing each other is the case of a negative discriminant, and the discriminant "
+        "moves along a straight line as the parameter varies.",
+        D(r"\Delta(a)=1+16a<0\iff a<-\frac{1}{16}"),
+        "Any parameter below that threshold works; with $a=-1$ the difference has no "
+        "real root.",
+        D(r"-x^{2}+x-4=0\implies \Delta=1-16=-15<0"),
+        "The corresponding parabola opens downwards and stays entirely below the line.",
+        close(True, "Such a choice of the leading coefficient exists"),
+    ],
+    ("MATH 7.85", "D"): [
+        "The axis of a parabola is computed from its first two coefficients, and here "
+        "only the leading one carries the parameter.",
+        D(r"x=-\frac{2}{2a}=-\frac{1}{a}"),
+        "The result depends on $a$, so different members have different axes.",
+        D(r"a=1\implies x=-1\qquad a=2\implies x=-\frac{1}{2}"),
+        close(False, "The axis slides as the leading coefficient changes"),
+    ],
+    ("MATH 7.85", "E"): [
+        "The crossing with the vertical coordinate axis is the value at $x=0$, and the "
+        "parameter multiplies $x^{2}$, which vanishes there.",
+        D(r"g_a(0)=a\cdot 0+2\cdot 0-3=-3"),
+        "So every member of the family reaches the same height at $x=0$, however large "
+        "or small the leading coefficient is.",
+        D(r"a=1\implies g_{1}(0)=-3\qquad a=-5\implies g_{-5}(0)=-3"),
+        "The whole family therefore pivots through the single point $(0,-3)$.",
+        close(True, "All of them cross the $y$-axis at that same point"),
+    ],
+    # ---- 7.94 A pencil of lines and two tangents ------------------------- #
+    ("MATH 7.94", "A"): [
+        "The parameter multiplies the bracket $x-1$, so it loses all its influence "
+        "wherever that bracket vanishes.",
+        D(r"f_t(1)=t\cdot 0+2=2"),
+        "Every member of the family therefore reaches the height $2$ at the abscissa "
+        "$1$, whatever the slope.",
+        D(r"t=0\implies f_{0}(x)=2\qquad t=3\implies f_{3}(x)=3x-1"),
+        "Both of these pass through $(1,2)$, and the same computation works for any "
+        "slope: the family is a pencil of lines hinged at that point.",
+        close(True, "One fixed point is common to all the lines"),
+    ],
+    ("MATH 7.94", "B"): [
+        "Touching at a single point means the equation $g(x)=f_t(x)$ has a repeated "
+        "solution, so collect the terms and set the discriminant to zero.",
+        D(r"x^{2}-4x+6-t\left(x-1\right)-2=x^{2}-\left(4+t\right)x+\left(4+t\right)=0"),
+        D(r"\Delta(t)=\left(4+t\right)^{2}-4\left(4+t\right)=t\left(4+t\right)"),
+        "The condition is now a quadratic equation in the slope, and it factors "
+        "immediately.",
+        D(r"t\left(4+t\right)=0\implies t=0\text{ or }t=-4"),
+        "The first gives the horizontal line $y=2$ touching at the vertex $(2,2)$, the "
+        "second the line $y=-4x+6$ touching at $(0,6)$.",
+        close(True, "There are exactly two such slopes"),
+    ],
+    ("MATH 7.94", "C"): [
+        "A member misses the parabola exactly when the discriminant is negative, so "
+        "study the sign of the product just obtained.",
+        D(r"\Delta(t)=t\left(4+t\right)"),
+        "A product of two factors is negative when they have opposite signs, which "
+        "happens strictly between the two roots.",
+        D(r"-4<t<0\implies \Delta(t)<0"),
+        D(r"t=-2\implies \Delta(-2)=\left(-2\right)\cdot 2=-4<0"),
+        "The line $y=-2x+4$ therefore shares no point with the curve.",
+        close(True, "Slopes in that window make the line miss the parabola"),
+    ],
+    ("MATH 7.94", "D"): [
+        "Two distinct meetings need a strictly positive discriminant, and the "
+        "discriminant has already been factored.",
+        D(r"\Delta(t)=t\left(4+t\right)"),
+        "It vanishes at $t=0$ and $t=-4$, where the line only touches the curve, and it "
+        "is negative in between, where nothing is shared.",
+        D(r"t=-2\implies \Delta=-4<0\qquad t=0\implies \Delta=0"),
+        close(False, "Some slopes give one meeting and some give none, so two distinct "
+                     "meetings do not always occur"),
+    ],
+    ("MATH 7.94", "E"): [
+        "The fixed point of the pencil was found to be $(1,2)$, so test whether the "
+        "parabola reaches that height there.",
+        D(r"g(1)=1-4+6=3"),
+        "The parabola is at height $3$ while the fixed point sits at height $2$, so the "
+        "point lies strictly below the curve.",
+        D(r"\text{vertex of }g=\left(2,2\right)\quad\text{and}\quad g(1)=3\neq 2"),
+        "That position is exactly what makes the two tangent lines and the window of "
+        "missing lines possible.",
+        close(False, "The hinge point of the family is not on the parabola"),
+    ],
+    # ---- 7.95 Sliding the parabola sideways ------------------------------ #
+    ("MATH 7.95", "A"): [
+        "The family moves a fixed parabola left and right, and tangency means the "
+        "equation $g_r(x)=f(x)$ has a repeated solution.",
+        D(r"\left(x-r\right)^{2}-4-\left(2x-1\right)"
+          r"=x^{2}-\left(2r+2\right)x+\left(r^{2}-3\right)=0"),
+        D(r"\Delta(r)=\left(2r+2\right)^{2}-4\left(r^{2}-3\right)=8r+16"),
+        "The squares in $r$ cancel, so the condition is a first-degree equation with "
+        "one solution.",
+        D(r"8r+16=0\implies r=-2"),
+        "At that shift the difference becomes $\\left(x+1\\right)^{2}$, a perfect "
+        "square touching zero once.",
+        close(True, "Exactly one shift makes the line tangent"),
+    ],
+    ("MATH 7.95", "B"): [
+        "Missing each other means a negative discriminant, and the discriminant just "
+        "computed increases steadily with the shift.",
+        D(r"\Delta(r)=8r+16"),
+        D(r"r<-2\implies \Delta(r)<0"),
+        "Taking $r=-3$, for instance, leaves no real solution.",
+        D(r"\Delta(-3)=-24+16=-8<0"),
+        "Pushed far enough to the left, the parabola has slid out from under the rising "
+        "line and the two curves share nothing.",
+        close(True, "Sufficiently negative shifts separate the graphs"),
+    ],
+    ("MATH 7.95", "C"): [
+        "The formula is already in vertex form, so the turning point can be read "
+        "straight off it.",
+        D(r"g_r(x)=\left(x-r\right)^{2}-4\implies\text{vertex}=\left(r,-4\right)"),
+        "The shift appears in the bracket only, which moves the vertex sideways; the "
+        "constant $-4$ outside the square is the height, and $r$ never enters it.",
+        D(r"r=0\implies\text{vertex}\left(0,-4\right)\qquad "
+          r"r=5\implies\text{vertex}\left(5,-4\right)"),
+        close(False, "The vertex height stays $-4$ for every shift"),
+    ],
+    ("MATH 7.95", "D"): [
+        "The axis of symmetry is the vertical line through the vertex, and vertex form "
+        "puts the vertex at abscissa $r$.",
+        D(r"g_r(x)=\left(x-r\right)^{2}-4\implies\ell:\;x=r"),
+        "The mirrored values confirm it, since only the distance from $r$ enters the "
+        "square.",
+        D(r"g_r\left(r+t\right)=t^{2}-4=g_r\left(r-t\right)"),
+        "Changing $r$ therefore drags the axis along with the whole graph.",
+        close(True, "The axis moves exactly as much as the shift"),
+    ],
+    ("MATH 7.95", "E"): [
+        "The crossing with the vertical coordinate axis is the value at $x=0$, so "
+        "substitute and see whether the shift survives.",
+        D(r"g_r(0)=\left(0-r\right)^{2}-4=r^{2}-4"),
+        "The result depends on $r$, and two members already disagree.",
+        D(r"r=0\implies g_{0}(0)=-4\qquad r=3\implies g_{3}(0)=5"),
+        "Sliding a parabola sideways changes the height at which it passes the $y$-axis.",
+        close(False, "The family crosses the $y$-axis at different points"),
+    ],
+    # ---- 7.96 Rebuild from a vertex and a point -------------------------- #
+    ("MATH 7.96", "A"): [
+        "A slope and one point determine a line, and the point-slope shape is the "
+        "quickest route to its formula.",
+        D(r"f(x)=-3\left(x-1\right)+2"),
+        D(r"f(x)=-3x+3+2=-3x+5"),
+        "The check is immediate: the slope is $-3$ and the value at $x=1$ is $2$, as "
+        "required.",
+        D(r"f(1)=-3+5=2"),
+        close(True, "The recovered formula is exactly the one claimed"),
+    ],
+    ("MATH 7.96", "B"): [
+        "A leading coefficient together with a vertex determines a parabola, and vertex "
+        "form assembles it directly.",
+        D(r"g(x)=2\left(x-2\right)^{2}-8"),
+        D(r"g(x)=2x^{2}-8x+8-8=2x^{2}-8x"),
+        "The constant terms cancel, which is worth checking against the vertex: the "
+        "axis is at $x=-\\left(-8\\right)/\\left(2\\cdot 2\\right)=2$ and the value "
+        "there is $8-16=-8$.",
+        close(True, "The expanded formula matches the claim"),
+    ],
+    ("MATH 7.96", "C"): [
+        "With no constant term the recovered formula factors at sight, so the roots "
+        "need no quadratic formula.",
+        D(r"g(x)=2x^{2}-8x=2x\left(x-4\right)"),
+        "A product vanishes exactly when one of its factors does, and the factor $2$ "
+        "never does.",
+        D(r"2x\left(x-4\right)=0\iff x=0\text{ or }x=4"),
+        "The midpoint of the two roots is $2$, which is the axis of symmetry found from "
+        "the vertex, so the two computations agree.",
+        close(True, "The roots are $0$ and $4$"),
+    ],
+    ("MATH 7.96", "D"): [
+        "A common point on the vertical coordinate axis would mean the two functions "
+        "agree at $x=0$, so evaluate both there.",
+        D(r"f(0)=5\qquad g(0)=0"),
+        "The heights differ, so $x=0$ is not a meeting abscissa; solving the meeting "
+        "equation confirms where the graphs actually cross.",
+        D(r"2x^{2}-8x=-3x+5\implies 2x^{2}-5x-5=0"),
+        D(r"\Delta=25+40=65\implies x=\frac{5\pm\sqrt{65}}{4}"),
+        "Neither of these abscissas is $0$, since the constant term $-5$ of that "
+        "equation is non-zero.",
+        close(False, "The graphs do meet twice, but never on the $y$-axis"),
+    ],
+    ("MATH 7.96", "E"): [
+        "Only the term $Af(x)^{2}$ can supply an $x^{2}$, so square the recovered line "
+        "and compare that coefficient with the one in $g$.",
+        D(r"f(x)^{2}=\left(-3x+5\right)^{2}=9x^{2}-30x+25"),
+        D(r"9A=2\implies A=\frac{2}{9}"),
+        "The division is legitimate because the slope $-3$ is non-zero, and no other "
+        "value of $A$ can reproduce the coefficient $2$; matching the $x$ term and the "
+        "constant term afterwards gives $B=\\frac{4}{9}$ and $C=-\\frac{70}{9}$.",
+        close(True, "The leading coefficient of the rewriting is forced to be "
+                    "$\\frac{2}{9}$"),
+    ],
+    # ---- 7.64 Gap on the y-axis ------------------------------------------ #
+    ("MATH 7.64", "C"): [
+        "Subtracting a parabola from a line leaves a square term behind, so expand the "
+        "difference and look at the coefficient of $x^{2}$.",
+        D(r"\left(f-g\right)(x)=\left(-2x+7\right)-\left(x^{2}+x-1\right)"),
+        D(r"\left(f-g\right)(x)=-x^{2}-3x+8"),
+        "The number in front of $x^{2}$ is $-1$, which is non-zero, so the difference "
+        "is a genuine quadratic function; the negative sign only says that its graph "
+        "opens downwards.",
+        close(True, "The difference is a parabola, hence a quadratic function"),
+    ],
+    # ---- 7.68 Building a parabola out of a line -------------------------- #
+    ("MATH 7.68", "B"): [
+        "The line here is $f(x)=x+3$, and completing the square in $g$ produces exactly "
+        "that bracket, which is what makes the middle coefficient avoidable.",
+        D(r"g(x)=x^{2}+6x+4=\left(x+3\right)^{2}-5"),
+        "Since $\\left(x+3\\right)^{2}$ is the square of $f(x)$, the rewriting needs no "
+        "single copy of $f$ at all.",
+        D(r"g(x)=1\cdot f(x)^{2}+0\cdot f(x)+\left(-5\right)"),
+        "Expanding back gives $x^{2}+6x+9-5=x^{2}+6x+4$, which is $g$ again.",
+        close(True, "The choice $A=1$, $B=0$, $C=-5$ works"),
+    ],
+    # ---- 7.75 Rewriting through a shifted line --------------------------- #
+    ("MATH 7.75", "C"): [
+        "The line is $f(x)=2\\left(x-3\\right)$, and completing the square in $g$ "
+        "produces the same bracket, so the middle term can be dispensed with.",
+        D(r"g(x)=x^{2}-6x+1=\left(x-3\right)^{2}-8"),
+        "Dividing the square of $f$ by four reproduces $\\left(x-3\\right)^{2}$ exactly.",
+        D(r"\frac{1}{4}f(x)^{2}=\frac{1}{4}\cdot 4\left(x-3\right)^{2}"
+          r"=\left(x-3\right)^{2}"),
+        D(r"g(x)=\frac{1}{4}f(x)^{2}+0\cdot f(x)+\left(-8\right)"),
+        close(True, "The triple $A=\\frac{1}{4}$, $B=0$, $C=-8$ does the job"),
+    ],
+    # ---- 7.76 A line the parabola never reaches -------------------------- #
+    ("MATH 7.76", "A"): [
+        "Common points are the real solutions of $g(x)=f(x)$, so collect everything on "
+        "one side and count them through the discriminant.",
+        D(r"-x^{2}-2-\left(x+3\right)=-x^{2}-x-5=0"),
+        D(r"\Delta=\left(-1\right)^{2}-4\left(-1\right)\left(-5\right)=1-20=-19"),
+        "A negative discriminant leaves no real square root in the quadratic formula, "
+        "so the equation has no real solution.",
+        D(r"-x^{2}-x-5=-\left(x+\frac{1}{2}\right)^{2}-\frac{19}{4}<0"),
+        "Completing the square shows the difference is strictly negative everywhere: "
+        "the parabola stays below the line by at least $\\frac{19}{4}$.",
+        close(True, "The two graphs share no point"),
+    ],
+    ("MATH 7.76", "D"): [
+        "Roots are the abscissas where the graph reaches the horizontal axis, so solve "
+        "$g(x)=0$ directly.",
+        D(r"-x^{2}-2=0\iff x^{2}=-2"),
+        "No real number has a negative square, so the equation has no real solution.",
+        D(r"g(x)=-x^{2}-2\le -2<0\quad\text{for every real }x"),
+        "The parabola opens downwards with highest value $-2$, so the whole graph sits "
+        "strictly below the horizontal axis and never touches it.",
+        close(False, "There are no real roots at all, so certainly not two"),
+    ],
+    # ---- 7.87 Root distance, midpoint and a sign ------------------------- #
+    ("MATH 7.87", "E"): [
+        "Meeting abscissas are the real roots of the difference, so subtract and see "
+        "what kind of equation is left.",
+        D(r"g(x)-f(x)=x^{2}+3x-40-\left(7x+2\right)=x^{2}-4x-42"),
+        "The coefficient of $x^{2}$ is $1$, so this is a quadratic equation and it can "
+        "have at most two real solutions.",
+        D(r"\Delta=\left(-4\right)^{2}-4\left(1\right)\left(-42\right)=16+168=184>0"),
+        D(r"x=2\pm\sqrt{46}"),
+        "The discriminant is positive, so there are exactly two meeting points, and a "
+        "third one is impossible.",
+        close(False, "Two is the exact count, so more than two never happens"),
+    ],
+    # ---- 7.97 Axis gap, Vieta and nested order --------------------------- #
+    ("MATH 7.97", "E"): [
+        "The abscissas where the graphs meet solve $g(x)=f(x)$, so bring the line over "
+        "and read the discriminant.",
+        D(r"x^{2}-5x+2-\left(3x-7\right)=x^{2}-8x+9=0"),
+        D(r"\Delta=\left(-8\right)^{2}-4\left(1\right)\left(9\right)=64-36=28"),
+        "A strictly positive discriminant makes the square root a genuine positive "
+        "number, so the quadratic formula returns two different real abscissas.",
+        D(r"x=\frac{8\pm\sqrt{28}}{2}=4\pm\sqrt{7}"),
+        "Both values are real and they differ by $2\\sqrt{7}$, so the line cuts the "
+        "parabola in two separate points.",
+        close(True, "The graphs meet at exactly two distinct points"),
+    ],
 }
 
 
@@ -2621,7 +3717,7 @@ def enrich_task(task: dict) -> dict:
 def main() -> None:
     data = json.loads(PATH.read_text())
     tasks = [enrich_task(t) for t in data["tasks"]]
-    assert len(tasks) == 50
+    assert len(tasks) >= 50
 
     expls = [e for t in tasks for e in t["tactical_explanations"]]
     lens = sorted(len(e) for e in expls)
