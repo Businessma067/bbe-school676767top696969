@@ -43,12 +43,38 @@ def hdr(letter: str, truth: bool) -> str:
     return f"**{letter}.** → {'True' if truth else 'False'}"
 
 
+def normalize_displays(text: str) -> str:
+    """Force Ch4 single-line displays: $$formula$$ (no blank lines inside)."""
+
+    def repl(m: re.Match[str]) -> str:
+        inner = re.sub(r"\s+", " ", m.group(1)).strip()
+        return f"$${inner}$$"
+
+    return re.sub(r"\$\$([\s\S]*?)\$\$", repl, text)
+
+
 def pack(letter: str, truth: bool, parts: list[str]) -> str:
-    body = "\n\n".join(p for p in parts if p and str(p).strip())
+    # Coalesce ["$$", formula, "$$"] triples into one Ch4 display line.
+    coalesced: list[str] = []
+    i = 0
+    while i < len(parts):
+        a = parts[i]
+        if (
+            i + 2 < len(parts)
+            and str(a).strip() == "$$"
+            and str(parts[i + 2]).strip() == "$$"
+        ):
+            coalesced.append(f"$${str(parts[i + 1]).strip()}$$")
+            i += 3
+            continue
+        coalesced.append(a)
+        i += 1
+    body = "\n\n".join(p for p in coalesced if p and str(p).strip())
     verdict = "True" if truth else "False"
     if "so the statement is" not in body.lower():
         body += f"\n\nMatching the claim, so the statement is {verdict}."
-    return f"{hdr(letter, truth)}\n\n{body}"
+    return normalize_displays(f"{hdr(letter, truth)}\n\n{body}")
+
 
 
 def clean_poly(s: str) -> str:
@@ -746,6 +772,31 @@ def expl_with_fg(letter, stmt, truth, f, g) -> str | None:
             "Compare that range statement with the claim.",
         ])
 
+    if ("difference" in sl and "quadratic" in sl) or (
+        "d=f-g" in stmt.replace(" ", "") and "quadratic" in sl
+    ):
+        return pack(letter, truth, [
+            "A parabola minus a line still has an $x^{2}$ term, so $d=f-g$ is itself a quadratic function.",
+            "$$",
+            rf"d(x)={L(diff)}",
+            "$$",
+        ])
+
+    if "looks cubic" in sl or ("cubic" in sl and "three" in sl):
+        return pack(letter, truth, [
+            "Even if $d$ looks busy, expanding shows an $x^{2}$ leading term only:",
+            "$$",
+            rf"d(x)={L(diff)}",
+            "$$",
+            "So $f$ and $g$ meet where a quadratic equation is zero — at most twice.",
+        ])
+
+    if "meet wherever $d=0$" in sl or ("meet wherever" in sl and "d=0" in stmt.replace(" ", "")):
+        return pack(letter, truth, [
+            "By definition $d=f-g$, so $d(x)=0$ means $f(x)=g(x)$. "
+            "Those are exactly the meeting points of the two graphs.",
+        ])
+
     return None
 
 
@@ -1383,19 +1434,8 @@ def explain_one(task, idx, f, g) -> str:
         if out is not None:
             return out
 
-    if task.get("stem_kind") == "symbolic":
-        return expl_symbolic(letter, stmt, truth, old)
-
-    old_body = re.sub(r"^\*\*[A-E]\.\*\*.*?\n+", "", old, flags=re.S).strip()
-    old_body = re.sub(r"\\deg\([^)]+\)", "highest power", old_body)
-    if "$$" in old_body and "deg" not in old_body.lower():
-        return pack(letter, truth, [old_body])
-    if len(old_body) < 80:
-        return pack(letter, truth, [
-            "Use the models recovered in the overview.",
-            old_body if old_body else "Compare the claim with those recovered facts.",
-        ])
-    return pack(letter, truth, [old_body])
+    # Always prefer a fresh structural writeup over recycling old broken bodies.
+    return expl_symbolic(letter, stmt, truth, old)
 
 
 def patch_statements(task: dict) -> dict:
@@ -1489,8 +1529,10 @@ def enrich_task(task: dict) -> dict:
     task = patch_statements(task)
     f, g = recover_models(task)
     task = dict(task)
-    task["solution_overview"] = build_overview(task, f, g)
-    task["tactical_explanations"] = [explain_one(task, i, f, g) for i in range(5)]
+    task["solution_overview"] = normalize_displays(build_overview(task, f, g))
+    task["tactical_explanations"] = [
+        normalize_displays(explain_one(task, i, f, g)) for i in range(5)
+    ]
     return task
 
 
