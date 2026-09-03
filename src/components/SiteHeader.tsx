@@ -5,7 +5,7 @@ import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
-import { navItemsForContext, shouldShowSiteNav } from "@/config/site-nav";
+import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
 import { cn } from "@/lib/utils";
 
@@ -75,8 +75,8 @@ export function SiteHeader({
   compact = false,
 }: SiteHeaderProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const { tier } = useAccountNavTier();
-  const navItems = navItemsForContext(pathname, tier);
+  const { hasLite, hasFull } = useAccountNavTier();
+  const navItems = navItemsForAccess({ hasLite, hasFull });
   const navVisible = shouldShowSiteNav(pathname, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 

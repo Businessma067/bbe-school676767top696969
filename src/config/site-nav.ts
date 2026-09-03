@@ -9,6 +9,13 @@ export type NavItem = {
   activePrefixes?: string[];
 };
 
+/** Paid-course flags that drive the shared site header. */
+export type AccountNavAccess = {
+  hasLite: boolean;
+  hasFull: boolean;
+};
+
+/** @deprecated Prefer AccountNavAccess — kept for any lingering imports. */
 export type AccountNavTier = "guest" | "lite" | "full";
 
 const EXAM_INFO_PREFIXES = [
@@ -41,15 +48,72 @@ const productsItem: NavItem = {
   activeExact: PRODUCTS_EXACT,
 };
 
-/** Homepage menu — marketing sections that match on-page anchors. */
-export const homeNavItems: NavItem[] = [
-  {
-    label: "Demo-Practice",
-    href: "/demo-practice",
-    isRoute: true,
-    activePrefixes: ["/demo-practice", "/products/demo-practice"],
-  },
-  { label: "Full Course", href: "#full-course", isRoute: false },
+const demoPracticeItem: NavItem = {
+  label: "Demo-Practice",
+  href: "/demo-practice",
+  isRoute: true,
+  activePrefixes: ["/demo-practice", "/products/demo-practice"],
+};
+
+const demoCourseItem: NavItem = {
+  label: "Demo-course",
+  href: "/demo-practice",
+  isRoute: true,
+  activePrefixes: ["/demo-practice", "/products/demo-practice"],
+};
+
+const fullCourseItem: NavItem = {
+  label: "Full Course",
+  href: "/products/full-course-subjects",
+  isRoute: true,
+  activePrefixes: [
+    "/products/full-course-subjects",
+    "/products/full-course-math",
+    "/products/full-course-english",
+    "/products/full-course-economics",
+    "/practice",
+  ],
+};
+
+const lightCourseItem: NavItem = {
+  label: "Light course",
+  href: "/products/lite-bbe-course-subjects",
+  isRoute: true,
+  activePrefixes: [
+    "/products/lite-bbe-course-subjects",
+    "/products/lite-bbe-course-math",
+    "/products/lite-bbe-course-english",
+    "/practice",
+  ],
+};
+
+const mockExamsItem: NavItem = {
+  label: "Mock Exams",
+  href: "/mock-exams",
+  isRoute: true,
+  activePrefixes: ["/mock-exams"],
+};
+
+const mockBuilderItem: NavItem = {
+  label: "Mock Builder",
+  href: "/products/custom-mock-builder",
+  isRoute: true,
+  activePrefixes: ["/products/custom-mock-builder"],
+};
+
+const gamesItem: NavItem = {
+  label: "Games",
+  href: "/dashboard",
+  isRoute: true,
+  search: { tab: "games" },
+  activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
+};
+
+/** Logged out, demo-only, or signed-in without Lite/Full. Same on every page. */
+export const guestNavItems: NavItem[] = [
+  examInfoItem,
+  demoPracticeItem,
+  { label: "How it works", href: "#how-it-works", isRoute: false },
   productsItem,
   {
     label: "Features",
@@ -61,103 +125,31 @@ export const homeNavItems: NavItem[] = [
   { label: "FAQ", href: "#faq", isRoute: false },
 ];
 
-/** Logged out (and signed-in users who have not bought Lite or Full). */
-export const guestNavItems: NavItem[] = [
-  examInfoItem,
-  {
-    label: "Demo Practice",
-    href: "/demo-practice",
-    isRoute: true,
-    activePrefixes: ["/demo-practice", "/products/demo-practice"],
-  },
-  productsItem,
-  {
-    label: "Features",
-    href: "/important-features",
-    isRoute: true,
-    activePrefixes: ["/important-features", "/features"],
-  },
-  { label: "FAQ", href: "#faq", isRoute: false },
-];
+/**
+ * Build header links from course ownership.
+ * Full Course / Light course appear only for the tiers the person owns;
+ * both appear when they own both. Result does not depend on pathname.
+ */
+export function navItemsForAccess(access: AccountNavAccess): NavItem[] {
+  if (!access.hasLite && !access.hasFull) return guestNavItems;
 
-/** Lite course owners. */
-export const liteNavItems: NavItem[] = [
-  examInfoItem,
-  productsItem,
-  {
-    label: "Practice",
-    href: "/products/lite-bbe-course-subjects",
-    isRoute: true,
-    activePrefixes: [
-      "/products/lite-bbe-course-subjects",
-      "/products/lite-bbe-course-math",
-      "/products/lite-bbe-course-english",
-      "/practice",
-    ],
-  },
-  {
-    label: "Mock Exams",
-    href: "/mock-exams",
-    isRoute: true,
-    activePrefixes: ["/mock-exams"],
-  },
-];
-
-/** Full course owners (and signed-in users who should see the course chrome). */
-export const fullNavItems: NavItem[] = [
-  examInfoItem,
-  {
-    label: "Demo-course",
-    href: "/demo-practice",
-    isRoute: true,
-    activePrefixes: ["/demo-practice", "/products/demo-practice"],
-  },
-  productsItem,
-  {
-    label: "Practice",
-    href: "/products/full-course-subjects",
-    isRoute: true,
-    activePrefixes: [
-      "/products/full-course-subjects",
-      "/products/full-course-math",
-      "/products/full-course-english",
-      "/products/full-course-economics",
-      "/practice",
-    ],
-  },
-  {
-    label: "Mock Exams",
-    href: "/mock-exams",
-    isRoute: true,
-    activePrefixes: ["/mock-exams"],
-  },
-  {
-    label: "Mock Builder",
-    href: "/products/custom-mock-builder",
-    isRoute: true,
-    activePrefixes: ["/products/custom-mock-builder"],
-  },
-  {
-    label: "Games",
-    href: "/dashboard",
-    isRoute: true,
-    search: { tab: "games" },
-    activePrefixes: ["/flashcards", "/matching", "/tutor-exam"],
-  },
-];
-
-export function navItemsForTier(tier: AccountNavTier): NavItem[] {
-  if (tier === "full") return fullNavItems;
-  if (tier === "lite") return liteNavItems;
-  return guestNavItems;
+  const items: NavItem[] = [examInfoItem, demoCourseItem];
+  if (access.hasFull) items.push(fullCourseItem);
+  if (access.hasLite) items.push(lightCourseItem);
+  items.push(mockExamsItem, mockBuilderItem, gamesItem, productsItem);
+  return items;
 }
 
-/**
- * Guests on the homepage get marketing anchors; signed-in users (lite/full)
- * keep their course nav (Practice, Mock Exams, …) on every page including `/`.
- */
-export function navItemsForContext(pathname: string, tier: AccountNavTier): NavItem[] {
-  if (normalizePathname(pathname) === "/" && tier === "guest") return homeNavItems;
+/** @deprecated Use navItemsForAccess. */
+export function navItemsForTier(tier: AccountNavTier): NavItem[] {
+  return navItemsForAccess({
+    hasLite: tier === "lite",
+    hasFull: tier === "full",
+  });
+}
+
+/** @deprecated Pathname no longer changes the header — status only. */
+export function navItemsForContext(_pathname: string, tier: AccountNavTier): NavItem[] {
   return navItemsForTier(tier);
 }
 

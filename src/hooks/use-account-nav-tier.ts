@@ -1,23 +1,52 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import type { AccountNavTier } from "@/config/site-nav";
-import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
+import type { AccountNavAccess } from "@/config/site-nav";
+import { isAdminEmail } from "@/lib/admin-access";
+import { fetchEnrollments } from "@/lib/user-progress";
+
+export type AccountNavState = AccountNavAccess & { ready: boolean };
 
 /**
- * Practice / Mock / Games chrome shows for accounts that actually own a paid
- * course (Lite or Full) or for admins. Everyone else keeps guest/demo nav.
+ * Header chrome depends only on whether the account owns Lite and/or Full.
+ * Demo / signed-out / unpaid accounts keep the guest marketing nav on every page.
  */
-export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
+export function useAccountNavTier(): AccountNavState {
   const [ready, setReady] = useState(false);
-  const [tier, setTier] = useState<AccountNavTier>("guest");
+  const [access, setAccess] = useState<AccountNavAccess>({
+    hasLite: false,
+    hasFull: false,
+  });
 
   useEffect(() => {
     let cancelled = false;
 
     const refresh = async () => {
-      const state = await fetchAccessState();
+      const { data } = await supabase.auth.getSession();
+      const session = data.session;
+      if (!session) {
+        if (!cancelled) {
+          setAccess({ hasLite: false, hasFull: false });
+          setReady(true);
+        }
+        return;
+      }
+
+      const email = session.user?.email ?? null;
+      const admin = isAdminEmail(email);
+
+      let hasLite = false;
+      let hasFull = admin;
+
+      try {
+        const enrollments = await fetchEnrollments();
+        hasLite = enrollments.some((e) => e.tier === "lite");
+        hasFull = hasFull || enrollments.some((e) => e.tier === "full");
+      } catch {
+        /* keep admin flag / defaults */
+      }
+
       if (cancelled) return;
-      setTier(tierAtLeast(state.tier, "lite") ? "full" : "guest");
+      setAccess({ hasLite, hasFull });
       setReady(true);
     };
 
@@ -34,5 +63,5 @@ export function useAccountNavTier(): { ready: boolean; tier: AccountNavTier } {
     };
   }, []);
 
-  return { ready, tier };
+  return { ready, ...access };
 }
