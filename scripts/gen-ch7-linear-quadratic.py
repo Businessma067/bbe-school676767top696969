@@ -702,8 +702,8 @@ def bank_d5() -> list[Spec]:
            C("Because $f-g$ can be mistaken for a cubic, the graphs may meet three times.", False,
              "Still degree $2$."),
            C("$g(f(0))=f(g(0))$.", False, "$f(0)=2$, $g(2)=0$; $g(0)=-2$, $f(-2)=-6$."),
-           C("At the axis of $g$, the gap $f-g$ equals $\\frac{17}{4}$.", True,
-             "Axis $x=1/2$; $f=4$, $g=-9/4$; gap $17/4$."),
+           C("At the axis of $g$, the gap $f-g$ equals $\\frac{17}{4}$.", False,
+             "Axis $x=1/2$; $f=4$, $g=-9/4$; gap $25/4$ (not $17/4$)."),
            C("Completing the square gives "
              "$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$.", True, "Vertex form.")],
           "Multi-hop on the photo models: rewrite triple, nested mismatch, axis gap."),
