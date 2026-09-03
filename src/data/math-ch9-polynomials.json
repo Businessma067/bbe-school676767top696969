@@ -1,0 +1,371 @@
+{
+  "tasks": [
+    {
+      "id": "math-9-1",
+      "case_id": "MATH 9.01",
+      "title": "Two Train Lines: A Cubic Velocity Model and a Distance Log",
+      "context": "A transit authority studies the first two minutes of travel on two lines. On Line 1 the velocity of the train, in metres per second, is modelled for $0\\le t\\le 120$ by the polynomial $v(t)=0.00002t^{3}-0.005t^{2}+0.4t$, where $t$ is the time in seconds since departure. On Line 2 no formula is available; instead an odometer logged the distance travelled from the platform every ten seconds, as recorded in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At $t=80$ seconds the Line 1 train is decelerating.",
+        "The acceleration of the Line 1 train reaches its smallest value at some moment before $t=75$ seconds.",
+        "Over the whole two minutes the Line 2 train averaged more than $45$ km/h.",
+        "Among the ten-second stretches of the Line 2 log, exactly one interior stretch has a higher average velocity than both of its neighbours.",
+        "The highest ten-second average velocity on Line 2 is reached between $t=60$ and $t=70$ seconds."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDeceleration means the velocity is falling, and the rate at which velocity changes is the acceleration, obtained by differentiating the velocity model term by term. A negative acceleration is exactly a train slowing down.\n\n$$v(t)=0.00002t^{3} - 0.005t^{2} + 0.4t$$\n\n$$a(t)=0.00006t^{2} - 0.01t + 0.4$$\n\nSubstituting $t=80$:\n\n$$a\\left(80\\right)=0.00006\\cdot 80^{2} - 0.01\\cdot 80 + 0.4=-0.016$$\n\nThe rate is $-0.016\\ \\text{m/s}^{2}$, which is negative, so $v$ is falling there, so the statement is True.",
+        "**B.** → False\n\nThe acceleration is the derivative of the velocity model, and that derivative is itself a quadratic in $t$. A quadratic with a positive leading coefficient opens upwards, so it has one lowest point and that point sits on its axis of symmetry.\n\n$$v(t)=0.00002t^{3} - 0.005t^{2} + 0.4t$$\n\n$$a(t)=0.00006t^{2} - 0.01t + 0.4$$\n\nThe leading coefficient $0.00006$ is positive, so the axis of symmetry carries the minimum.\n\n$$t=-\\frac{b}{2a}=\\frac{0.01}{2\\cdot 0.00006}=\\frac{250}{3}$$\n\nThat is about $83.33$ seconds, and the acceleration there is the smallest value it takes on the whole interval.\n\n$$a\\left(\\frac{250}{3}\\right)=-\\frac{1}{60}\\approx -0.0167\\ \\text{m/s}^{2}$$\n\nThe smallest acceleration arrives after $75$ seconds, not before it, so the statement is False.",
+        "**C.** → False\n\nAn average velocity is the total distance divided by the total time, so only the first and last rows of the log matter. The answer comes out in metres per second, and one metre per second is $3.6$ kilometres per hour.\n\n$$\\bar v=\\frac{1400-0}{120-0}=\\frac{35}{3}\\approx 11.67\\ \\text{m/s}$$\n\nConverting to the units used in the claim:\n\n$$\\frac{35}{3}\\cdot 3.6=42\\ \\text{km/h}$$\n\nThe average is $42$ km/h, which does not clear the $45$ km/h mark, so the statement is False.",
+        "**D.** → False\n\nEach row of the log gives a ten-second stretch, and the average velocity on a stretch is the distance gained there divided by ten seconds.\n\n$$\\bar v_{i}=\\frac{d_{i+1}-d_{i}}{10}$$\n\nWorking through the twelve stretches in order gives, in metres per second,\n\n$$7,\\ 12,\\ 14,\\ 11,\\ 15,\\ 12,\\ 13,\\ 9,\\ 14,\\ 10,\\ 11,\\ 12$$\n\nA stretch beats both neighbours whenever the sequence rises into it and falls out of it again, and that happens at the values $14,\\ 15,\\ 13,\\ 14$.\n\nThere are four such stretches rather than a single one, so the statement is False.",
+        "**E.** → False\n\nThe stretch with the highest average velocity is the stretch on which the odometer gained the most metres, because every stretch lasts the same ten seconds.\n\n$$\\bar v_{60\\text{–}70}=\\frac{840-710}{10}=13\\ \\text{m/s}$$\n\nThe largest gain in the whole log is the one from $440$ to $590$ metres:\n\n$$\\bar v_{40\\text{–}50}=\\frac{590-440}{10}=15\\ \\text{m/s}$$\n\nThe record belongs to the $40$–$50$ second stretch at $15$ m/s, not to the $60$–$70$ stretch at $13$ m/s, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 1,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "Line 1 is given by a cubic velocity model, so its acceleration is the quadratic obtained by differentiating it once.\n\n$$v(t)=0.00002t^{3} - 0.005t^{2} + 0.4t$$\n\n$$a(t)=0.00006t^{2} - 0.01t + 0.4$$\n\nThat quadratic opens upwards, so the acceleration bottoms out on its axis of symmetry and is negative around there — the train is losing speed.\n\n$$t=\\frac{250}{3}\\approx 83.3\\ \\text{s}\\qquad a(80)=-0.016$$\n\nLine 2 has no formula, only a log, so every velocity question there is answered by dividing a distance gain by the ten seconds in which it happened.\n\n$$\\bar v=\\frac{1400}{120}=\\frac{35}{3}\\ \\text{m/s}=42\\ \\text{km/h}$$\n\nThe twelve stretch averages, in metres per second, are\n\n$$7,\\ 12,\\ 14,\\ 11,\\ 15,\\ 12,\\ 13,\\ 9,\\ 14,\\ 10,\\ 11,\\ 12$$\n\nso the record stretch is $40$–$50$ seconds and the sequence peaks locally four separate times.",
+      "stem_kind": "applied",
+      "tables_markdown": "| Time $t$ (s) | Line 2 distance from start (m) |\n| --- | --- |\n| 0 | 0 |\n| 10 | 70 |\n| 20 | 190 |\n| 30 | 330 |\n| 40 | 440 |\n| 50 | 590 |\n| 60 | 710 |\n| 70 | 840 |\n| 80 | 930 |\n| 90 | 1070 |\n| 100 | 1170 |\n| 110 | 1280 |\n| 120 | 1400 |"
+    },
+    {
+      "id": "math-9-2",
+      "case_id": "MATH 9.02",
+      "title": "Reading Degree, Leading Coefficient and Constant Term",
+      "context": "Consider the polynomial function $P(x)=2x^{4} - 5x^{3} + x - 7$, defined for every real $x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The degree of $P$ is $4$.",
+        "The leading coefficient of $P$ is $-5$.",
+        "The graph of $P$ crosses the vertical axis at $\\left(0,-7\\right)$.",
+        "$P\\left(1\\right)=-9$.",
+        "As $x$ grows beyond every bound, $P\\left(x\\right)$ falls below every bound."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe degree is the largest power of the variable that still carries a non-zero coefficient, so order the terms by falling powers and look at the first one.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\nThe largest power present is $x^{4}$, and its coefficient $2$ is not zero.\n\n$$\\text{degree of }P=4$$\n\nThe degree is $4$, exactly the number in the claim, so the statement is True.",
+        "**B.** → False\n\nThe leading coefficient is the number sitting in front of the highest power, so order the terms by falling powers and read the first one.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\nThe highest power is $x^{4}$ and the number in front of it is what we are after.\n\n$$\\text{leading coefficient}=2$$\n\nThat number is $2$ while the claim says $-5$, so the statement is False.",
+        "**C.** → True\n\nThe graph meets the vertical axis where the input is $0$, and at that input every term with a power of the variable disappears — only the constant term survives.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\n$$P\\left(0\\right)=-7$$\n\nThe crossing sits at height $-7$, exactly where the claim puts it, so the statement is True.",
+        "**D.** → True\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\nSubstituting $x=1$ term by term:\n\n$$P\\left(1\\right)=2\\cdot 1^{4} - 5\\cdot 1^{3} + 1 - 7$$\n\n$$P\\left(1\\right)=-9$$\n\nThe value is $-9$, exactly the figure in the claim, so the statement is True.",
+        "**E.** → False\n\nFar away from the origin the highest power dwarfs everything else, so the far ends of the graph are decided by the leading term alone.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\n$$\\text{leading term}=2x^{4}$$\n\nThe exponent $4$ is even and the coefficient $2$ is positive, which fixes both ends of the picture.\n\nOn that side the values grow beyond every bound, the opposite of the claim, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "Everything asked here is read off the polynomial once its terms are ordered by falling powers.\n\n$$P(x)=2x^{4} - 5x^{3} + x - 7$$\n\nThe highest power is $x^{4}$, so the degree is $4$ and the leading coefficient is the $2$ in front of it. Setting $x=0$ kills every other term and leaves the constant.\n\n$$\\text{degree}=4\\qquad \\text{leading coefficient}=2\\qquad P(0)=-7$$\n\nBecause the degree is even and the leading coefficient positive, both far ends of the graph climb.",
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-3",
+      "case_id": "MATH 9.03",
+      "title": "Testing Candidate Zeros of a Cubic",
+      "context": "A cubic function is given by $P(x)=x^{3} - 4x^{2} + x + 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$x=2$ is a zero of $P$.",
+        "$x=1$ is a zero of $P$.",
+        "$\\left(x+1\\right)$ is a factor of $P\\left(x\\right)$.",
+        "The graph of $P$ crosses the vertical axis at $\\left(0,-6\\right)$.",
+        "$P$ has exactly three distinct real zeros."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA zero is a number the function sends to $0$, so the check is a single substitution.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\nPutting $x=2$ into the expression:\n\n$$P\\left(2\\right)=2^{3} - 4\\cdot 2^{2} + 2 + 6=0$$\n\nThe function sends $2$ to $0$, which is what a zero means, so the statement is True.",
+        "**B.** → False\n\nA zero is a number the function sends to $0$, so the check is a single substitution.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\nPutting $x=1$ into the expression:\n\n$$P\\left(1\\right)=1^{3} - 4\\cdot 1^{2} + 1 + 6=4$$\n\nThe value there is $4$ and not $0$, so the statement is False.",
+        "**C.** → True\n\nA linear bracket divides a polynomial exactly when the number that makes the bracket vanish is a zero of the polynomial, so there is nothing to divide: just substitute that number.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\nPutting $x=-1$ into the expression:\n\n$$P\\left(-1\\right)=\\left(-1\\right)^{3} - 4\\cdot \\left(-1\\right)^{2} + \\left(-1\\right) + 6=0$$\n\nThe substitution returns $0$, so the bracket divides $P$ with nothing left over, so the statement is True.",
+        "**D.** → False\n\nThe graph meets the vertical axis where the input is $0$, and at that input every term with a power of the variable disappears — only the constant term survives.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\n$$P\\left(0\\right)=6$$\n\nThe crossing sits at height $6$, not at $-6$, so the statement is False.",
+        "**E.** → True\n\nZeros are easiest to count from a factorised form, because a product is $0$ exactly when one of its factors is.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\n$$P\\left(x\\right)=\\left(x+1\\right)\\left(x-2\\right)\\left(x-3\\right)$$\n\nEach bracket contributes the number that makes it vanish: $x=-1$, $x=2$, $x=3$.\n\nThere are three distinct real zeros, exactly the count claimed, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "A number is a zero of a polynomial exactly when substituting it returns $0$, and each zero corresponds to a linear factor.\n\n$$P(x)=x^{3} - 4x^{2} + x + 6$$\n\n$$P(x)=\\left(x+1\\right)\\left(x-2\\right)\\left(x-3\\right)$$\n\nThe three brackets vanish at $x=-1$, $x=2$ and $x=3$, so those are the zeros; any other candidate, $x=1$ included, must give a non-zero value.\n\n$$P(-1)=0\\qquad P(2)=0\\qquad P(3)=0\\qquad P(1)=4$$",
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-4",
+      "case_id": "MATH 9.04",
+      "title": "Adding and Subtracting Two Cubics",
+      "context": "Two polynomial functions are given by $f(x)=3x^{3} - x + 2$ and $g(x)=x^{3} + 4x^{2} - 5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$f\\left(x\\right)+g\\left(x\\right)=4x^{3} + 4x^{2} - x - 3$.",
+        "The degree of $f\\left(x\\right)-g\\left(x\\right)$ is $3$.",
+        "In $f\\left(x\\right)+g\\left(x\\right)$ the constant term is $3$.",
+        "In $f\\left(x\\right)-g\\left(x\\right)$ the coefficient of $x^{2}$ is $4$.",
+        "The degree of $f\\left(x\\right)\\cdot g\\left(x\\right)$ is $6$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAdding two polynomials means adding the coefficients of matching powers, and nothing else happens.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f\\left(x\\right)+g\\left(x\\right)=4x^{3} + 4x^{2} - x - 3$$\n\nThe collected expression is exactly the one written in the claim, so the statement is True.",
+        "**B.** → True\n\nSubtracting means changing every sign in the second function and then collecting matching powers.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f\\left(x\\right)-g\\left(x\\right)=2x^{3} - 4x^{2} - x + 7$$\n\nThe surviving highest power is $x^{3}$ with coefficient $2$.\n\nThe degree of the combination is $3$, the number claimed, so the statement is True.",
+        "**C.** → False\n\nAdding two polynomials means adding the coefficients of matching powers, and nothing else happens.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f\\left(x\\right)+g\\left(x\\right)=4x^{3} + 4x^{2} - x - 3$$\n\n$$\\text{coefficient of }x^{0}=-3$$\n\nThat coefficient is $-3$ and the claim reports $3$, so the statement is False.",
+        "**D.** → False\n\nSubtracting means changing every sign in the second function and then collecting matching powers.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f\\left(x\\right)-g\\left(x\\right)=2x^{3} - 4x^{2} - x + 7$$\n\n$$\\text{coefficient of }x^{2}=-4$$\n\nThat coefficient is $-4$ and the claim reports $4$, so the statement is False.",
+        "**E.** → True\n\nMultiplying means every term of the first function meets every term of the second, after which matching powers are collected.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f\\left(x\\right)\\cdot g\\left(x\\right)=3x^{6} + 12x^{5} - x^{4} - 17x^{3} + 8x^{2} + 5x - 10$$\n\nThe surviving highest power is $x^{6}$ with coefficient $3$.\n\nThe degree of the combination is $6$, the number claimed, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "Sums and differences of polynomials are settled power by power; products raise the degree by adding the two degrees.\n\n$$f(x)=3x^{3} - x + 2\\qquad g(x)=x^{3} + 4x^{2} - 5$$\n\n$$f(x)+g(x)=4x^{3} + 4x^{2} - x - 3$$\n\n$$f(x)-g(x)=2x^{3} - 4x^{2} - x + 7$$\n\nBoth functions have degree $3$, so their product has degree $6$ while the sum and the difference stay at degree $3$ — the leading terms $3x^{3}$ and $x^{3}$ do not cancel.",
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-5",
+      "case_id": "MATH 9.05",
+      "title": "Reading a Cubic Off Its Graph",
+      "context": "The figure shows the graph of a polynomial function $f$ over the window $-2\\le x\\le 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The graph of $f$ crosses the vertical axis at $\\left(0,3\\right)$.",
+        "The curve meets the horizontal axis exactly three times.",
+        "The graph of $f$ has exactly one turning point.",
+        "At $x=0$ the graph of $f$ lies below the horizontal axis.",
+        "As $x$ grows beyond every bound, $f\\left(x\\right)$ grows beyond every bound."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe graph meets the vertical axis where the input is $0$, and at that input every term with a power of the variable disappears — only the constant term survives.\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\n$$f\\left(0\\right)=3$$\n\nThe crossing sits at height $3$, exactly where the claim puts it, so the statement is True.",
+        "**B.** → True\n\nCrossings of the horizontal axis are the zeros of the function, and a factorised form shows them all at once.\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\n$$f\\left(x\\right)=\\left(x+1\\right)\\left(x-1\\right)\\left(x-3\\right)$$\n\nEach bracket contributes the number that makes it vanish: $x=-1$, $x=1$, $x=3$.\n\nThere are three distinct real zeros, exactly the count claimed, so the statement is True.",
+        "**C.** → False\n\nA turning point is a place where the curve stops rising and starts falling, or the other way round; a polynomial of degree $n$ can have at most $n-1$ of them.\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\nThe picture changes direction at $x\\approx -0.15$, $x\\approx 2.15$, and between those places the curve keeps one direction throughout.\n\n$$\\text{turning points of }f=2$$\n\nThere are two turning points while the claim insists on one, so the statement is False.",
+        "**D.** → False\n\nWhether the curve runs under or over the horizontal axis at a given input is decided by the sign of the value there, so evaluate and look at the sign.\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\n$$f\\left(0\\right)=0^{3} - 3\\cdot 0^{2} - 0 + 3=3$$\n\nThe value $3$ is positive, so the curve runs above the axis there, so the statement is False.",
+        "**E.** → True\n\nFar away from the origin the highest power dwarfs everything else, so the far ends of the graph are decided by the leading term alone.\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\n$$\\text{leading term}=x^{3}$$\n\nThe exponent $3$ is odd and the coefficient $1$ is positive, which fixes both ends of the picture.\n\nOn that side the values grow beyond every bound, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 5,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "The picture belongs to the cubic\n\n$$f(x)=x^{3} - 3x^{2} - x + 3$$\n\n$$f(x)=\\left(x+1\\right)\\left(x-1\\right)\\left(x-3\\right)$$\n\nso the curve cuts the horizontal axis at $x=-1$, $x=1$ and $x=3$ and meets the vertical axis at height $3$.\n\n$$f(0)=3$$\n\nBetween the outer crossings the curve turns twice, once up and once down, and because the leading coefficient is positive the right-hand arm climbs without bound.",
+      "stem_kind": "graph",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20520%20360%22%20width=%22520%22%20height=%22360%22%20role=%22img%22%3E%3Crect%20width=%22520%22%20height=%22360%22%20rx=%2216%22%20fill=%22%23f8f6f2%22%20stroke=%22%23d9d2c5%22/%3E%3Cline%20x1=%2246.0%22%20y1=%2230%22%20x2=%2246.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22122.0%22%20y1=%2230%22%20x2=%22122.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22198.0%22%20y1=%2230%22%20x2=%22198.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22274.0%22%20y1=%2230%22%20x2=%22274.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22350.0%22%20y1=%2230%22%20x2=%22350.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22426.0%22%20y1=%2230%22%20x2=%22426.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22502.0%22%20y1=%2230%22%20x2=%22502.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22326.0%22%20x2=%22502%22%20y2=%22326.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22283.7%22%20x2=%22502%22%20y2=%22283.7%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22241.4%22%20x2=%22502%22%20y2=%22241.4%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22199.1%22%20x2=%22502%22%20y2=%22199.1%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22156.9%22%20x2=%22502%22%20y2=%22156.9%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22114.6%22%20x2=%22502%22%20y2=%22114.6%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%2272.3%22%20x2=%22502%22%20y2=%2272.3%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%2230.0%22%20x2=%22502%22%20y2=%2230.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22199.1%22%20x2=%22502%22%20y2=%22199.1%22%20stroke=%22%238a8375%22%20stroke-width=%221.6%22/%3E%3Cline%20x1=%22198.0%22%20y1=%2230%22%20x2=%22198.0%22%20y2=%22326%22%20stroke=%22%238a8375%22%20stroke-width=%221.6%22/%3E%3Ctext%20x=%2246.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-2%3C/text%3E%3Ctext%20x=%22122.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-1%3C/text%3E%3Ctext%20x=%22274.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E1%3C/text%3E%3Ctext%20x=%22350.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E2%3C/text%3E%3Ctext%20x=%22426.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E3%3C/text%3E%3Ctext%20x=%22502.0%22%20y=%22214.1%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22330.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-6%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22287.7%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-4%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22245.4%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-2%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22160.9%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E2%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22118.6%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%2276.3%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E6%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%2234.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E8%3C/text%3E%3Ctext%20x=%22192.0%22%20y=%22214.1%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E0%3C/text%3E%3Ctext%20x=%22502.0%22%20y=%22191.1%22%20text-anchor=%22end%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%238a8375%22%3Ex%3C/text%3E%3Ctext%20x=%22206.0%22%20y=%2242.0%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%238a8375%22%3Ey%3C/text%3E%3Cpolyline%20points=%2280.9,326.0%2082.2,325.5%2083.6,319.9%2084.9,314.4%2086.2,309.0%2087.6,303.7%2088.9,298.6%2090.3,293.5%2091.6,288.5%2092.9,283.5%2094.3,278.7%2095.6,274.0%2097.0,269.4%2098.3,264.8%2099.6,260.4%20101.0,256.0%20102.3,251.8%20103.7,247.6%20105.0,243.5%20106.4,239.5%20107.7,235.6%20109.0,231.8%20110.4,228.1%20111.7,224.4%20113.1,220.8%20114.4,217.3%20115.7,213.9%20117.1,210.6%20118.4,207.4%20119.8,204.2%20121.1,201.2%20122.4,198.2%20123.8,195.2%20125.1,192.4%20126.5,189.6%20127.8,186.9%20129.2,184.3%20130.5,181.8%20131.8,179.3%20133.2,176.9%20134.5,174.6%20135.9,172.4%20137.2,170.2%20138.5,168.1%20139.9,166.1%20141.2,164.1%20142.6,162.2%20143.9,160.4%20145.2,158.7%20146.6,157.0%20147.9,155.4%20149.3,153.8%20150.6,152.3%20152.0,150.9%20153.3,149.5%20154.6,148.2%20156.0,147.0%20157.3,145.8%20158.7,144.7%20160.0,143.6%20161.3,142.6%20162.7,141.7%20164.0,140.8%20165.4,140.0%20166.7,139.2%20168.0,138.5%20169.4,137.9%20170.7,137.3%20172.1,136.7%20173.4,136.2%20174.8,135.8%20176.1,135.4%20177.4,135.1%20178.8,134.8%20180.1,134.5%20181.5,134.3%20182.8,134.2%20184.1,134.1%20185.5,134.0%20186.8,134.0%20188.2,134.1%20189.5,134.2%20190.8,134.3%20192.2,134.5%20193.5,134.7%20194.9,135.0%20196.2,135.3%20197.6,135.6%20198.9,136.0%20200.2,136.4%20201.6,136.8%20202.9,137.3%20204.3,137.9%20205.6,138.4%20206.9,139.0%20208.3,139.7%20209.6,140.4%20211.0,141.1%20212.3,141.8%20213.6,142.6%20215.0,143.4%20216.3,144.2%20217.7,145.1%20219.0,146.0%20220.4,146.9%20221.7,147.8%20223.0,148.8%20224.4,149.8%20225.7,150.8%20227.1,151.9%20228.4,153.0%20229.7,154.1%20231.1,155.2%20232.4,156.3%20233.8,157.5%20235.1,158.7%20236.4,159.9%20237.8,161.1%20239.1,162.4%20240.5,163.6%20241.8,164.9%20243.2,166.2%20244.5,167.5%20245.8,168.9%20247.2,170.2%20248.5,171.6%20249.9,173.0%20251.2,174.3%20252.5,175.7%20253.9,177.1%20255.2,178.6%20256.6,180.0%20257.9,181.4%20259.2,182.9%20260.6,184.3%20261.9,185.8%20263.3,187.3%20264.6,188.7%20266.0,190.2%20267.3,191.7%20268.6,193.2%20270.0,194.7%20271.3,196.2%20272.7,197.7%20274.0,199.1%20275.3,200.6%20276.7,202.1%20278.0,203.6%20279.4,205.1%20280.7,206.6%20282.0,208.1%20283.4,209.6%20284.7,211.0%20286.1,212.5%20287.4,214.0%20288.8,215.4%20290.1,216.9%20291.4,218.3%20292.8,219.7%20294.1,221.1%20295.5,222.5%20296.8,223.9%20298.1,225.3%20299.5,226.7%20300.8,228.1%20302.2,229.4%20303.5,230.7%20304.8,232.1%20306.2,233.4%20307.5,234.6%20308.9,235.9%20310.2,237.2%20311.6,238.4%20312.9,239.6%20314.2,240.8%20315.6,241.9%20316.9,243.1%20318.3,244.2%20319.6,245.3%20320.9,246.4%20322.3,247.4%20323.6,248.5%20325.0,249.5%20326.3,250.5%20327.6,251.4%20329.0,252.3%20330.3,253.2%20331.7,254.1%20333.0,254.9%20334.4,255.7%20335.7,256.5%20337.0,257.2%20338.4,257.9%20339.7,258.6%20341.1,259.2%20342.4,259.8%20343.7,260.4%20345.1,260.9%20346.4,261.4%20347.8,261.9%20349.1,262.3%20350.4,262.7%20351.8,263.0%20353.1,263.3%20354.5,263.6%20355.8,263.8%20357.2,264.0%20358.5,264.1%20359.8,264.2%20361.2,264.2%20362.5,264.2%20363.9,264.2%20365.2,264.1%20366.5,264.0%20367.9,263.8%20369.2,263.5%20370.6,263.2%20371.9,262.9%20373.2,262.5%20374.6,262.1%20375.9,261.6%20377.3,261.0%20378.6,260.4%20380.0,259.8%20381.3,259.0%20382.6,258.3%20384.0,257.5%20385.3,256.6%20386.7,255.6%20388.0,254.6%20389.3,253.6%20390.7,252.5%20392.0,251.3%20393.4,250.1%20394.7,248.8%20396.0,247.4%20397.4,246.0%20398.7,244.5%20400.1,242.9%20401.4,241.3%20402.8,239.6%20404.1,237.9%20405.4,236.0%20406.8,234.2%20408.1,232.2%20409.5,230.2%20410.8,228.1%20412.1,225.9%20413.5,223.7%20414.8,221.3%20416.2,219.0%20417.5,216.5%20418.8,214.0%20420.2,211.3%20421.5,208.7%20422.9,205.9%20424.2,203.1%20425.6,200.1%20426.9,197.1%20428.2,194.1%20429.6,190.9%20430.9,187.7%20432.3,184.3%20433.6,180.9%20434.9,177.5%20436.3,173.9%20437.6,170.2%20439.0,166.5%20440.3,162.7%20441.6,158.8%20443.0,154.8%20444.3,150.7%20445.7,146.5%20447.0,142.2%20448.4,137.9%20449.7,133.4%20451.0,128.9%20452.4,124.3%20453.7,119.6%20455.1,114.7%20456.4,109.8%20457.7,104.8%20459.1,99.7%20460.4,94.5%20461.8,89.2%20463.1,83.9%20464.4,78.4%20465.8,72.8%20467.1,67.1%20468.5,61.3%20469.8,55.4%20471.2,49.4%20472.5,43.3%20473.8,37.2%20475.2,30.9%20476.5,30.0%22%20fill=%22none%22%20stroke=%22%23b5683a%22%20stroke-width=%222.4%22%20stroke-linejoin=%22round%22/%3E%3Ctext%20x=%22498.0%22%20y=%22352.0%22%20text-anchor=%22end%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%23b5683a%22%3Ey%20=%20f(x)%3C/text%3E%3C/svg%3E"
+    },
+    {
+      "id": "math-9-6",
+      "case_id": "MATH 9.06",
+      "title": "A Cubic Cost Curve for a Small Workshop",
+      "context": "A workshop's weekly production cost, in hundreds of euros, is modelled by $C(q)=q^{3} - 12q^{2} + 60q + 200$, where $q$ is the number of batches produced per week and $0\\le q\\le 10$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Producing nothing at all still costs $200$ hundred euros.",
+        "$C\\left(2\\right)=280$ hundred euros.",
+        "$C\\left(5\\right)=335$ hundred euros.",
+        "The degree of $C$ is $2$.",
+        "Between $q=0$ and $q=5$ the cost grows on average by $25$ hundred euros per batch."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFixed cost is what the model charges when output is zero, and putting $q=0$ into a polynomial leaves only its constant term.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\nSubstituting $q=0$ term by term:\n\n$$C\\left(0\\right)=0^{3} - 12\\cdot 0^{2} + 60\\cdot 0 + 200$$\n\n$$C\\left(0\\right)=200$$\n\nThe value is $200$ hundred euros, exactly the figure in the claim, so the statement is True.",
+        "**B.** → True\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\nSubstituting $q=2$ term by term:\n\n$$C\\left(2\\right)=2^{3} - 12\\cdot 2^{2} + 60\\cdot 2 + 200$$\n\n$$C\\left(2\\right)=280$$\n\nThe value is $280$ hundred euros, exactly the figure in the claim, so the statement is True.",
+        "**C.** → False\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\nSubstituting $q=5$ term by term:\n\n$$C\\left(5\\right)=5^{3} - 12\\cdot 5^{2} + 60\\cdot 5 + 200$$\n\n$$C\\left(5\\right)=325$$\n\nThe value is $325$ hundred euros while the claim reports $335$ hundred euros, so the statement is False.",
+        "**D.** → False\n\nThe degree is the largest power of the variable that still carries a non-zero coefficient, so order the terms by falling powers and look at the first one.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\nThe largest power present is $q^{3}$, and its coefficient $1$ is not zero.\n\n$$\\text{degree of }C=3$$\n\nThe degree is $3$ and the claim names $2$, so the statement is False.",
+        "**E.** → True\n\nAn average rate of change is the total change in the output divided by the change in the input, so both endpoint values are needed first.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\n$$C\\left(0\\right)=200\\qquad C\\left(5\\right)=325$$\n\nDividing the change in the output by the change in the input:\n\n$$\\frac{325-\\left(200\\right)}{5-\\left(0\\right)}=25$$\n\nThe average rate is $25$ hundred euros per batch, which is what the claim asks for, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 6,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "The model is a cubic in the number of batches, so every question is answered by substitution.\n\n$$C(q)=q^{3} - 12q^{2} + 60q + 200$$\n\n$$C(0)=200\\qquad C(2)=280\\qquad C(5)=325$$\n\nThe highest power is $q^{3}$, so the degree is $3$, and an average growth rate is a change in cost divided by the change in output.\n\n$$\\frac{C(5)-C(0)}{5-0}=\\frac{125}{5}=25$$",
+      "stem_kind": "applied"
+    },
+    {
+      "id": "math-9-7",
+      "case_id": "MATH 9.07",
+      "title": "Cumulative Output Recorded Hour by Hour",
+      "context": "A bottling line logs the number of crates completed since the start of the shift, measured at the end of each hour. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The hour-by-hour gains recorded in the table are not all equal.",
+        "Differencing the table twice produces a constant row.",
+        "The line completed $36$ crates during the fifth hour.",
+        "Because the second differences are constant, a linear model in $h$ fits the cumulative totals exactly.",
+        "Over the whole five hours the line averaged $28$ crates per hour."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFor inputs spaced equally apart, differencing a table repeatedly strips one degree away each time, so a polynomial of degree $k$ flattens out to a constant exactly at the $k$-th round of differences.\n\n$$\\text{first differences}: 12,\\ 20,\\ 28,\\ 36,\\ 44$$\n\nThe first row still moves, so the flattening has not happened yet.\n\nThe first differences of the cumulative crate counts are not constant, which is what the claim describes, so the statement is True.",
+        "**B.** → True\n\nFor inputs spaced equally apart, differencing a table repeatedly strips one degree away each time, so a polynomial of degree $k$ flattens out to a constant exactly at the $k$-th round of differences.\n\n$$\\text{first differences}: 12,\\ 20,\\ 28,\\ 36,\\ 44$$\n\n$$\\text{second differences}: 8,\\ 8,\\ 8,\\ 8$$\n\nThe second row repeats the single value $8$ all the way across.\n\nThe second differences of the cumulative crate counts are constant, which is what the claim describes, so the statement is True.",
+        "**C.** → False\n\nA single hour's output is the difference between two consecutive cumulative readings, because the table records running totals rather than hourly figures. The fifth hour runs from the reading at $h=4$ to the reading at $h=5$.\n\n$$140-96=44$$\n\nThe figure $36$ does appear among the hourly gains, but one row earlier:\n\n$$96-60=36$$\n\nThe fifth hour added $44$ crates and the $36$ belongs to the fourth hour, so the statement is False.",
+        "**D.** → False\n\nDifferencing a table of equally spaced readings strips one degree away each round, so the row that first becomes constant tells us the degree of the polynomial behind the data.\n\n$$\\text{first differences}: 12,\\ 20,\\ 28,\\ 36,\\ 44$$\n\n$$\\text{second differences}: 8,\\ 8,\\ 8,\\ 8$$\n\nA linear model would already have constant first differences, and these are still climbing by $8$ each time; the row that flattens is the second, which points to degree $2$.\n\nThe data need a quadratic in $h$, so a linear model cannot fit them exactly, so the statement is False.",
+        "**E.** → True\n\nAn average per hour is the total produced divided by the number of hours, so only the first and last rows are needed.\n\n$$\\frac{140-0}{5-0}=28$$\n\nThe shift averaged $28$ crates an hour as claimed, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 7,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "The readings are one hour apart, so differencing them is the natural first move.\n\n$$\\text{totals}: 0,\\ 12,\\ 32,\\ 60,\\ 96,\\ 140$$\n\n$$\\text{first differences}: 12,\\ 20,\\ 28,\\ 36,\\ 44$$\n\n$$\\text{second differences}: 8,\\ 8,\\ 8,\\ 8$$\n\nThe second row is constant, so the cumulative totals follow a quadratic in $h$ — not a linear one — and each single hour's output is one first difference.",
+      "stem_kind": "table",
+      "tables_markdown": "| Hour $h$ | Crates completed in total |\n| --- | --- |\n| 0 | 0 |\n| 1 | 12 |\n| 2 | 32 |\n| 3 | 60 |\n| 4 | 96 |\n| 5 | 140 |"
+    },
+    {
+      "id": "math-9-8",
+      "case_id": "MATH 9.08",
+      "title": "Multiplying Two Linear Functions",
+      "context": "Two linear functions are given by $f(x)=2x - 3$ and $g(x)=x + 5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$f\\left(x\\right)\\cdot g\\left(x\\right)=2x^{2} + 7x - 15$.",
+        "The degree of $f\\left(x\\right)\\cdot g\\left(x\\right)$ is $2$.",
+        "In $f\\left(x\\right)\\cdot g\\left(x\\right)$ the constant term is $-13$.",
+        "The degree of $f\\left(x\\right)+g\\left(x\\right)$ is $2$.",
+        "The product $f(x)g(x)$ has exactly two distinct real zeros."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nMultiplying means every term of the first function meets every term of the second, after which matching powers are collected.\n\n$$f(x)=2x - 3\\qquad g(x)=x + 5$$\n\n$$f\\left(x\\right)\\cdot g\\left(x\\right)=2x^{2} + 7x - 15$$\n\nThe collected expression is exactly the one written in the claim, so the statement is True.",
+        "**B.** → True\n\nMultiplying means every term of the first function meets every term of the second, after which matching powers are collected.\n\n$$f(x)=2x - 3\\qquad g(x)=x + 5$$\n\n$$f\\left(x\\right)\\cdot g\\left(x\\right)=2x^{2} + 7x - 15$$\n\nThe surviving highest power is $x^{2}$ with coefficient $2$.\n\nThe degree of the combination is $2$, the number claimed, so the statement is True.",
+        "**C.** → False\n\nMultiplying means every term of the first function meets every term of the second, after which matching powers are collected.\n\n$$f(x)=2x - 3\\qquad g(x)=x + 5$$\n\n$$f\\left(x\\right)\\cdot g\\left(x\\right)=2x^{2} + 7x - 15$$\n\n$$\\text{coefficient of }x^{0}=-15$$\n\nThat coefficient is $-15$ and the claim reports $-13$, so the statement is False.",
+        "**D.** → False\n\nAdding two polynomials means adding the coefficients of matching powers, and nothing else happens.\n\n$$f(x)=2x - 3\\qquad g(x)=x + 5$$\n\n$$f\\left(x\\right)+g\\left(x\\right)=3x + 2$$\n\nThe surviving highest power is $x^{1}$ with coefficient $3$.\n\nThe degree of the combination is $1$ while the claim says $2$, so the statement is False.",
+        "**E.** → True\n\nZeros are easiest to count from a factorised form, because a product is $0$ exactly when one of its factors is.\n\n$$fg(x)=2x^{2} + 7x - 15$$\n\n$$fg\\left(x\\right)=2\\left(x-\\frac{3}{2}\\right)\\left(x+5\\right)$$\n\nEach bracket contributes the number that makes it vanish: $x=\\frac{3}{2}$, $x=-5$.\n\nThere are two distinct real zeros, exactly the count claimed, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 8,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "Each term of the first bracket meets each term of the second, and matching powers are then collected.\n\n$$f(x)=2x - 3\\qquad g(x)=x + 5$$\n\n$$f(x)g(x)=2x^{2} + 7x - 15$$\n\nDegrees add under multiplication, $1+1=2$, but a sum of two linear functions is still linear.\n\n$$f(x)+g(x)=3x + 2$$\n\nA product is zero when a factor is, so the zeros are $x=\\frac{3}{2}$ and $x=-5$.",
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-9",
+      "case_id": "MATH 9.09",
+      "title": "Degrees of Sums and Products Without Numbers",
+      "context": "Let $f$ and $g$ be polynomial functions of degree $3$ and degree $2$ respectively, with no further information about their coefficients. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The product $f\\cdot g$ always has degree $5$.",
+        "The sum $f+g$ always has degree $3$.",
+        "The difference $f-g$ can have degree $2$ for a suitable choice of $f$ and $g$.",
+        "The function $f\\cdot f$ always has degree $6$.",
+        "The constant term of $f\\cdot g$ is always zero."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWhen two polynomials are multiplied, the highest power of the answer comes from the two leading terms meeting each other, and no other pairing can reach that high.\n\n$$a x^{3}\\cdot b x^{2}=ab\\,x^{5}$$\n\nLeading coefficients are non-zero by definition, so the product $ab$ is non-zero too and the $x^{5}$ term genuinely survives.\n\nThe degrees add, $3+2=5$, in every case, so the statement is True.",
+        "**B.** → True\n\nAdding polynomials adds coefficients of matching powers, so a term can only disappear if the other function has a term of the same power to cancel it.\n\n$$f(x)+g(x)=a x^{3}+\\left(\\text{powers no higher than }x^{2}\\right)$$\n\nThe function $g$ has degree $2$, so it contributes nothing at the level of $x^{3}$ and the leading term of $f$ survives untouched.\n\nThe sum keeps the degree $3$ of the larger of the two, so the statement is True.",
+        "**C.** → False\n\nSubtracting changes every sign in $g$ and then collects matching powers, so the $x^{3}$ term of $f$ again meets nothing to cancel it.\n\n$$f(x)-g(x)=a x^{3}+\\left(\\text{powers no higher than }x^{2}\\right)$$\n\nWith $a\\neq 0$ the cubic term is still there whatever $g$ does at the lower powers.\n\nThe difference always has degree $3$, so degree $2$ is out of reach, so the statement is False.",
+        "**D.** → True\n\nSquaring is multiplying a polynomial by itself, so the same rule about leading terms applies.\n\n$$a x^{3}\\cdot a x^{3}=a^{2}x^{6}$$\n\nSince $a\\neq 0$, the square $a^{2}$ is non-zero as well.\n\nThe degree doubles from $3$ to $6$ every time, so the statement is True.",
+        "**E.** → False\n\nThe constant term of a product is the product of the two constant terms, since that is the only way to end up with no factor of $x$ at all.\n\n$$f(0)\\cdot g(0)$$\n\nNothing in the statement forces either constant term to vanish; a single example settles it.\n\n$$\\left(x^{3}+1\\right)\\left(x^{2}+1\\right)=x^{5}+x^{3}+x^{2}+1$$\n\nThat product ends in a constant term of $1$, not $0$, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 9,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "Only two structural rules are in play, and both concern the leading terms.\n\n$$\\text{degree}(fg)=\\text{degree}(f)+\\text{degree}(g)$$\n\n$$\\text{degree}(f\\pm g)=\\max\\left(3,2\\right)=3$$\n\nDegrees add under multiplication because the two leading terms meet; under addition the larger degree survives whenever the two degrees differ, because there is nothing at that level to cancel against.",
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-10",
+      "case_id": "MATH 9.10",
+      "title": "Two Curves, One Picture: Which Arm Goes Where",
+      "context": "The figure shows two polynomial graphs on the same axes: the solid curve is $y=f(x)$ and the dashed curve is $y=g(x)$, drawn for $-3\\le x\\le 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "As $x$ grows beyond every bound, $f\\left(x\\right)$ falls below every bound.",
+        "As $x$ grows beyond every bound, $g\\left(x\\right)$ falls below every bound.",
+        "The graph of $f$ crosses the vertical axis at $\\left(0,0\\right)$.",
+        "The graph of $f$ has exactly three turning points.",
+        "Both curves pass through the origin."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFar away from the origin the highest power dwarfs everything else, so the far ends of the graph are decided by the leading term alone.\n\n$$f(x)=-x^{3} + 4x$$\n\n$$\\text{leading term}=-x^{3}$$\n\nThe exponent $3$ is odd and the coefficient $-1$ is negative, which fixes both ends of the picture.\n\nOn that side the values fall below every bound, so the statement is True.",
+        "**B.** → False\n\nFar away from the origin the highest power dwarfs everything else, so the far ends of the graph are decided by the leading term alone.\n\n$$g(x)=x^{3} - 3x$$\n\n$$\\text{leading term}=x^{3}$$\n\nThe exponent $3$ is odd and the coefficient $1$ is positive, which fixes both ends of the picture.\n\nOn that side the values grow beyond every bound, the opposite of the claim, so the statement is False.",
+        "**C.** → True\n\nThe graph meets the vertical axis where the input is $0$, and at that input every term with a power of the variable disappears — only the constant term survives.\n\n$$f(x)=-x^{3} + 4x$$\n\n$$f\\left(0\\right)=0$$\n\nThe crossing sits at height $0$, exactly where the claim puts it, so the statement is True.",
+        "**D.** → False\n\nA turning point is a place where the curve stops rising and starts falling, or the other way round; a polynomial of degree $n$ can have at most $n-1$ of them.\n\n$$f(x)=-x^{3} + 4x$$\n\nThe picture changes direction at $x\\approx -1.15$, $x\\approx 1.15$, and between those places the curve keeps one direction throughout.\n\n$$\\text{turning points of }f=2$$\n\nThere are two turning points while the claim insists on three, so the statement is False.",
+        "**E.** → True\n\nA curve runs through the origin exactly when its value at $x=0$ is $0$, and at that input only the constant term of a polynomial survives.\n\n$$f(x)=-x^{3} + 4x$$\n\n$$g(x)=x^{3} - 3x$$\n\nNeither expression carries a constant term, so both vanish at $x=0$.\n\n$$f(0)=0\\qquad g(0)=0$$\n\nBoth graphs go through $(0,0)$ as the picture suggests, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 10,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "The two functions in the picture are\n\n$$f(x)=-x^{3} + 4x$$\n\n$$g(x)=x^{3} - 3x$$\n\nBoth are odd cubics through the origin, but their leading coefficients have opposite signs, so their right-hand arms head in opposite directions: $f$ dives, $g$ climbs. Each has two turning points.",
+      "stem_kind": "graph",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20520%20360%22%20width=%22520%22%20height=%22360%22%20role=%22img%22%3E%3Crect%20width=%22520%22%20height=%22360%22%20rx=%2216%22%20fill=%22%23f8f6f2%22%20stroke=%22%23d9d2c5%22/%3E%3Cline%20x1=%2246.0%22%20y1=%2230%22%20x2=%2246.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22122.0%22%20y1=%2230%22%20x2=%22122.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22198.0%22%20y1=%2230%22%20x2=%22198.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22274.0%22%20y1=%2230%22%20x2=%22274.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22350.0%22%20y1=%2230%22%20x2=%22350.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22426.0%22%20y1=%2230%22%20x2=%22426.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%22502.0%22%20y1=%2230%22%20x2=%22502.0%22%20y2=%22326%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22326.0%22%20x2=%22502%22%20y2=%22326.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22289.0%22%20x2=%22502%22%20y2=%22289.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22252.0%22%20x2=%22502%22%20y2=%22252.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22215.0%22%20x2=%22502%22%20y2=%22215.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22178.0%22%20x2=%22502%22%20y2=%22178.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22141.0%22%20x2=%22502%22%20y2=%22141.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22104.0%22%20x2=%22502%22%20y2=%22104.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%2267.0%22%20x2=%22502%22%20y2=%2267.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%2230.0%22%20x2=%22502%22%20y2=%2230.0%22%20stroke=%22%23e3ddd1%22%20stroke-width=%221%22/%3E%3Cline%20x1=%2246%22%20y1=%22178.0%22%20x2=%22502%22%20y2=%22178.0%22%20stroke=%22%238a8375%22%20stroke-width=%221.6%22/%3E%3Cline%20x1=%22274.0%22%20y1=%2230%22%20x2=%22274.0%22%20y2=%22326%22%20stroke=%22%238a8375%22%20stroke-width=%221.6%22/%3E%3Ctext%20x=%2246.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-3%3C/text%3E%3Ctext%20x=%22122.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-2%3C/text%3E%3Ctext%20x=%22198.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-1%3C/text%3E%3Ctext%20x=%22350.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E1%3C/text%3E%3Ctext%20x=%22426.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E2%3C/text%3E%3Ctext%20x=%22502.0%22%20y=%22193.0%22%20text-anchor=%22middle%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E3%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22330.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-8%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22293.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-6%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22256.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-4%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22219.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E-2%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22145.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E2%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22108.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E4%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%2271.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E6%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%2234.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E8%3C/text%3E%3Ctext%20x=%22268.0%22%20y=%22193.0%22%20text-anchor=%22end%22%20font-size=%2211%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3E0%3C/text%3E%3Ctext%20x=%22502.0%22%20y=%22170.0%22%20text-anchor=%22end%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%238a8375%22%3Ex%3C/text%3E%3Ctext%20x=%22282.0%22%20y=%2242.0%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%238a8375%22%3Ey%3C/text%3E%3Ctext%20x=%22498.0%22%20y=%22352.0%22%20text-anchor=%22end%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%23b5683a%22%3E%3C/text%3E%3Cpolyline%20points=%2271.5,30.0%2072.8,30.7%2074.2,36.3%2075.5,41.7%2076.8,47.0%2078.2,52.3%2079.5,57.4%2080.9,62.5%2082.2,67.4%2083.6,72.3%2084.9,77.1%2086.2,81.8%2087.6,86.5%2088.9,91.0%2090.3,95.5%2091.6,99.9%2092.9,104.2%2094.3,108.4%2095.6,112.5%2097.0,116.5%2098.3,120.5%2099.6,124.4%20101.0,128.2%20102.3,131.9%20103.7,135.6%20105.0,139.2%20106.4,142.7%20107.7,146.1%20109.0,149.4%20110.4,152.7%20111.7,155.9%20113.1,159.0%20114.4,162.1%20115.7,165.0%20117.1,168.0%20118.4,170.8%20119.8,173.6%20121.1,176.2%20122.4,178.9%20123.8,181.4%20125.1,183.9%20126.5,186.3%20127.8,188.7%20129.2,191.0%20130.5,193.2%20131.8,195.3%20133.2,197.4%20134.5,199.4%20135.9,201.4%20137.2,203.3%20138.5,205.1%20139.9,206.9%20141.2,208.6%20142.6,210.3%20143.9,211.9%20145.2,213.4%20146.6,214.9%20147.9,216.3%20149.3,217.7%20150.6,219.0%20152.0,220.2%20153.3,221.4%20154.6,222.6%20156.0,223.6%20157.3,224.7%20158.7,225.6%20160.0,226.6%20161.3,227.4%20162.7,228.3%20164.0,229.0%20165.4,229.7%20166.7,230.4%20168.0,231.0%20169.4,231.6%20170.7,232.1%20172.1,232.6%20173.4,233.0%20174.8,233.4%20176.1,233.8%20177.4,234.1%20178.8,234.3%20180.1,234.5%20181.5,234.7%20182.8,234.8%20184.1,234.9%20185.5,235.0%20186.8,235.0%20188.2,234.9%20189.5,234.8%20190.8,234.7%20192.2,234.6%20193.5,234.4%20194.9,234.2%20196.2,233.9%20197.6,233.6%20198.9,233.3%20200.2,232.9%20201.6,232.5%20202.9,232.1%20204.3,231.6%20205.6,231.1%20206.9,230.6%20208.3,230.0%20209.6,229.4%20211.0,228.8%20212.3,228.2%20213.6,227.5%20215.0,226.8%20216.3,226.1%20217.7,225.3%20219.0,224.5%20220.4,223.7%20221.7,222.9%20223.0,222.0%20224.4,221.2%20225.7,220.3%20227.1,219.3%20228.4,218.4%20229.7,217.4%20231.1,216.5%20232.4,215.5%20233.8,214.4%20235.1,213.4%20236.4,212.3%20237.8,211.3%20239.1,210.2%20240.5,209.1%20241.8,207.9%20243.2,206.8%20244.5,205.6%20245.8,204.5%20247.2,203.3%20248.5,202.1%20249.9,200.9%20251.2,199.7%20252.5,198.5%20253.9,197.2%20255.2,196.0%20256.6,194.8%20257.9,193.5%20259.2,192.2%20260.6,191.0%20261.9,189.7%20263.3,188.4%20264.6,187.1%20266.0,185.8%20267.3,184.5%20268.6,183.2%20270.0,181.9%20271.3,180.6%20272.7,179.3%20274.0,178.0%20275.3,176.7%20276.7,175.4%20278.0,174.1%20279.4,172.8%20280.7,171.5%20282.0,170.2%20283.4,168.9%20284.7,167.6%20286.1,166.3%20287.4,165.0%20288.8,163.8%20290.1,162.5%20291.4,161.2%20292.8,160.0%20294.1,158.8%20295.5,157.5%20296.8,156.3%20298.1,155.1%20299.5,153.9%20300.8,152.7%20302.2,151.5%20303.5,150.4%20304.8,149.2%20306.2,148.1%20307.5,146.9%20308.9,145.8%20310.2,144.7%20311.6,143.7%20312.9,142.6%20314.2,141.6%20315.6,140.5%20316.9,139.5%20318.3,138.6%20319.6,137.6%20320.9,136.7%20322.3,135.7%20323.6,134.8%20325.0,134.0%20326.3,133.1%20327.6,132.3%20329.0,131.5%20330.3,130.7%20331.7,129.9%20333.0,129.2%20334.4,128.5%20335.7,127.8%20337.0,127.2%20338.4,126.6%20339.7,126.0%20341.1,125.4%20342.4,124.9%20343.7,124.4%20345.1,123.9%20346.4,123.5%20347.8,123.1%20349.1,122.7%20350.4,122.4%20351.8,122.1%20353.1,121.8%20354.5,121.6%20355.8,121.4%20357.2,121.3%20358.5,121.2%20359.8,121.1%20361.2,121.0%20362.5,121.0%20363.9,121.1%20365.2,121.2%20366.5,121.3%20367.9,121.5%20369.2,121.7%20370.6,121.9%20371.9,122.2%20373.2,122.6%20374.6,123.0%20375.9,123.4%20377.3,123.9%20378.6,124.4%20380.0,125.0%20381.3,125.6%20382.6,126.3%20384.0,127.0%20385.3,127.7%20386.7,128.6%20388.0,129.4%20389.3,130.4%20390.7,131.3%20392.0,132.4%20393.4,133.4%20394.7,134.6%20396.0,135.8%20397.4,137.0%20398.7,138.3%20400.1,139.7%20401.4,141.1%20402.8,142.6%20404.1,144.1%20405.4,145.7%20406.8,147.4%20408.1,149.1%20409.5,150.9%20410.8,152.7%20412.1,154.6%20413.5,156.6%20414.8,158.6%20416.2,160.7%20417.5,162.8%20418.8,165.0%20420.2,167.3%20421.5,169.7%20422.9,172.1%20424.2,174.6%20425.6,177.1%20426.9,179.8%20428.2,182.4%20429.6,185.2%20430.9,188.0%20432.3,191.0%20433.6,193.9%20434.9,197.0%20436.3,200.1%20437.6,203.3%20439.0,206.6%20440.3,209.9%20441.6,213.3%20443.0,216.8%20444.3,220.4%20445.7,224.1%20447.0,227.8%20448.4,231.6%20449.7,235.5%20451.0,239.5%20452.4,243.5%20453.7,247.6%20455.1,251.8%20456.4,256.1%20457.7,260.5%20459.1,265.0%20460.4,269.5%20461.8,274.2%20463.1,278.9%20464.4,283.7%20465.8,288.6%20467.1,293.5%20468.5,298.6%20469.8,303.7%20471.2,309.0%20472.5,314.3%20473.8,319.7%20475.2,325.3%20476.5,326.0%22%20fill=%22none%22%20stroke=%22%23b5683a%22%20stroke-width=%222.4%22%20stroke-linejoin=%22round%22/%3E%3Cline%20x1=%22406.0%22%20y1=%2240.0%22%20x2=%22436.0%22%20y2=%2240.0%22%20stroke=%22%23b5683a%22%20stroke-width=%222.4%22/%3E%3Ctext%20x=%22442.0%22%20y=%2244.0%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3Ey%20=%20f(x)%3C/text%3E%3Cpolyline%20points=%2283.6,326.0%2084.9,324.9%2086.2,319.9%2087.6,314.9%2088.9,310.0%2090.3,305.2%2091.6,300.5%2092.9,295.9%2094.3,291.4%2095.6,286.9%2097.0,282.6%2098.3,278.3%2099.6,274.0%20101.0,269.9%20102.3,265.9%20103.7,261.9%20105.0,258.0%20106.4,254.1%20107.7,250.4%20109.0,246.7%20110.4,243.1%20111.7,239.6%20113.1,236.2%20114.4,232.8%20115.7,229.5%20117.1,226.2%20118.4,223.1%20119.8,220.0%20121.1,217.0%20122.4,214.0%20123.8,211.1%20125.1,208.3%20126.5,205.6%20127.8,202.9%20129.2,200.3%20130.5,197.8%20131.8,195.3%20133.2,192.9%20134.5,190.5%20135.9,188.2%20137.2,186.0%20138.5,183.8%20139.9,181.7%20141.2,179.7%20142.6,177.7%20143.9,175.8%20145.2,173.9%20146.6,172.1%20147.9,170.4%20149.3,168.7%20150.6,167.1%20152.0,165.5%20153.3,164.0%20154.6,162.5%20156.0,161.1%20157.3,159.7%20158.7,158.4%20160.0,157.2%20161.3,156.0%20162.7,154.8%20164.0,153.7%20165.4,152.7%20166.7,151.7%20168.0,150.8%20169.4,149.9%20170.7,149.0%20172.1,148.2%20173.4,147.4%20174.8,146.7%20176.1,146.1%20177.4,145.4%20178.8,144.9%20180.1,144.3%20181.5,143.8%20182.8,143.4%20184.1,143.0%20185.5,142.6%20186.8,142.3%20188.2,142.0%20189.5,141.7%20190.8,141.5%20192.2,141.3%20193.5,141.2%20194.9,141.1%20196.2,141.0%20197.6,141.0%20198.9,141.0%20200.2,141.0%20201.6,141.1%20202.9,141.2%20204.3,141.4%20205.6,141.5%20206.9,141.7%20208.3,142.0%20209.6,142.2%20211.0,142.5%20212.3,142.8%20213.6,143.2%20215.0,143.6%20216.3,144.0%20217.7,144.4%20219.0,144.9%20220.4,145.3%20221.7,145.8%20223.0,146.4%20224.4,146.9%20225.7,147.5%20227.1,148.1%20228.4,148.7%20229.7,149.3%20231.1,150.0%20232.4,150.7%20233.8,151.4%20235.1,152.1%20236.4,152.8%20237.8,153.6%20239.1,154.3%20240.5,155.1%20241.8,155.9%20243.2,156.7%20244.5,157.5%20245.8,158.4%20247.2,159.2%20248.5,160.1%20249.9,161.0%20251.2,161.8%20252.5,162.7%20253.9,163.7%20255.2,164.6%20256.6,165.5%20257.9,166.4%20259.2,167.4%20260.6,168.3%20261.9,169.3%20263.3,170.2%20264.6,171.2%20266.0,172.1%20267.3,173.1%20268.6,174.1%20270.0,175.1%20271.3,176.0%20272.7,177.0%20274.0,178.0%20275.3,179.0%20276.7,180.0%20278.0,180.9%20279.4,181.9%20280.7,182.9%20282.0,183.9%20283.4,184.8%20284.7,185.8%20286.1,186.7%20287.4,187.7%20288.8,188.6%20290.1,189.6%20291.4,190.5%20292.8,191.4%20294.1,192.3%20295.5,193.3%20296.8,194.2%20298.1,195.0%20299.5,195.9%20300.8,196.8%20302.2,197.6%20303.5,198.5%20304.8,199.3%20306.2,200.1%20307.5,200.9%20308.9,201.7%20310.2,202.4%20311.6,203.2%20312.9,203.9%20314.2,204.6%20315.6,205.3%20316.9,206.0%20318.3,206.7%20319.6,207.3%20320.9,207.9%20322.3,208.5%20323.6,209.1%20325.0,209.6%20326.3,210.2%20327.6,210.7%20329.0,211.1%20330.3,211.6%20331.7,212.0%20333.0,212.4%20334.4,212.8%20335.7,213.2%20337.0,213.5%20338.4,213.8%20339.7,214.0%20341.1,214.3%20342.4,214.5%20343.7,214.6%20345.1,214.8%20346.4,214.9%20347.8,215.0%20349.1,215.0%20350.4,215.0%20351.8,215.0%20353.1,214.9%20354.5,214.8%20355.8,214.7%20357.2,214.5%20358.5,214.3%20359.8,214.0%20361.2,213.7%20362.5,213.4%20363.9,213.0%20365.2,212.6%20366.5,212.2%20367.9,211.7%20369.2,211.1%20370.6,210.6%20371.9,209.9%20373.2,209.3%20374.6,208.6%20375.9,207.8%20377.3,207.0%20378.6,206.1%20380.0,205.2%20381.3,204.3%20382.6,203.3%20384.0,202.3%20385.3,201.2%20386.7,200.0%20388.0,198.8%20389.3,197.6%20390.7,196.3%20392.0,194.9%20393.4,193.5%20394.7,192.0%20396.0,190.5%20397.4,188.9%20398.7,187.3%20400.1,185.6%20401.4,183.9%20402.8,182.1%20404.1,180.2%20405.4,178.3%20406.8,176.3%20408.1,174.3%20409.5,172.2%20410.8,170.0%20412.1,167.8%20413.5,165.5%20414.8,163.1%20416.2,160.7%20417.5,158.2%20418.8,155.7%20420.2,153.1%20421.5,150.4%20422.9,147.7%20424.2,144.9%20425.6,142.0%20426.9,139.0%20428.2,136.0%20429.6,132.9%20430.9,129.8%20432.3,126.5%20433.6,123.2%20434.9,119.8%20436.3,116.4%20437.6,112.9%20439.0,109.3%20440.3,105.6%20441.6,101.9%20443.0,98.0%20444.3,94.1%20445.7,90.1%20447.0,86.1%20448.4,82.0%20449.7,77.7%20451.0,73.4%20452.4,69.1%20453.7,64.6%20455.1,60.1%20456.4,55.5%20457.7,50.8%20459.1,46.0%20460.4,41.1%20461.8,36.1%20463.1,31.1%20464.4,30.0%22%20fill=%22none%22%20stroke=%22%233b6ea5%22%20stroke-width=%222.4%22%20stroke-linejoin=%22round%22%20stroke-dasharray=%227%205%22/%3E%3Cline%20x1=%22406.0%22%20y1=%2258.0%22%20x2=%22436.0%22%20y2=%2258.0%22%20stroke=%22%233b6ea5%22%20stroke-width=%222.4%22%20stroke-dasharray=%227%205%22/%3E%3Ctext%20x=%22442.0%22%20y=%2262.0%22%20font-size=%2212%22%20font-family=%22Georgia,serif%22%20fill=%22%232b2b2b%22%3Ey%20=%20g(x)%3C/text%3E%3C/svg%3E"
+    },
+    {
+      "id": "math-9-11",
+      "case_id": "MATH 9.11",
+      "title": "A Quadratic Temperature Model Through the Morning",
+      "context": "In a greenhouse the temperature in degrees Celsius above the outside air is modelled by $T(d)=-d^{2} + 6d + 4$, where $d$ is the number of hours since sunrise and $0\\le d\\le 7$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$T\\left(0\\right)=4$ degrees.",
+        "$T\\left(3\\right)=13$ degrees.",
+        "$T\\left(6\\right)=6$ degrees.",
+        "The degree of $T$ is $3$.",
+        "Across the first three hours the model warms by $3$ degrees per hour on average."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\nSubstituting $d=0$ term by term:\n\n$$T\\left(0\\right)=-0^{2} + 6\\cdot 0 + 4$$\n\n$$T\\left(0\\right)=4$$\n\nThe value is $4$ degrees, exactly the figure in the claim, so the statement is True.",
+        "**B.** → True\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\nSubstituting $d=3$ term by term:\n\n$$T\\left(3\\right)=-3^{2} + 6\\cdot 3 + 4$$\n\n$$T\\left(3\\right)=13$$\n\nThe value is $13$ degrees, exactly the figure in the claim, so the statement is True.",
+        "**C.** → False\n\nEvaluating a polynomial is substitution and nothing more: put the number in place of every occurrence of the variable and finish the arithmetic.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\nSubstituting $d=6$ term by term:\n\n$$T\\left(6\\right)=-6^{2} + 6\\cdot 6 + 4$$\n\n$$T\\left(6\\right)=4$$\n\nThe value is $4$ degrees while the claim reports $6$ degrees, so the statement is False.",
+        "**D.** → False\n\nThe degree is the largest power of the variable that still carries a non-zero coefficient, so order the terms by falling powers and look at the first one.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\nThe largest power present is $d^{2}$, and its coefficient $-1$ is not zero.\n\n$$\\text{degree of }T=2$$\n\nThe degree is $2$ and the claim names $3$, so the statement is False.",
+        "**E.** → True\n\nAn average rate of change is the total change in the output divided by the change in the input, so both endpoint values are needed first.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\n$$T\\left(0\\right)=4\\qquad T\\left(3\\right)=13$$\n\nDividing the change in the output by the change in the input:\n\n$$\\frac{13-\\left(4\\right)}{3-\\left(0\\right)}=3$$\n\nThe average rate is $3$ degrees per hour, which is what the claim asks for, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 11,
+      "subsection": "9",
+      "placeholder": false,
+      "solution_overview": "The model is a quadratic in the number of hours since sunrise.\n\n$$T(d)=-d^{2} + 6d + 4$$\n\n$$T(0)=4\\qquad T(3)=13\\qquad T(6)=4$$\n\nThe leading coefficient $-1$ is negative, so the curve opens downwards and the warmest moment is its turning point at $d=3$; the model is symmetric about that hour, which is why $d=0$ and $d=6$ give the same reading.\n\n$$\\frac{T(3)-T(0)}{3-0}=\\frac{9}{3}=3$$",
+      "stem_kind": "applied"
+    }
+  ]
+}
