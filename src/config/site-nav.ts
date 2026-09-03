@@ -127,16 +127,16 @@ export const guestNavItems: NavItem[] = [
 
 /**
  * Build header links from course ownership.
- * Full Course / Light course appear only for the tiers the person owns;
+ * Light course / Full Course appear only for the tiers the person owns;
  * both appear when they own both. Result does not depend on pathname.
  */
 export function navItemsForAccess(access: AccountNavAccess): NavItem[] {
   if (!access.hasLite && !access.hasFull) return guestNavItems;
 
-  const items: NavItem[] = [examInfoItem, demoCourseItem];
-  if (access.hasFull) items.push(fullCourseItem);
+  const items: NavItem[] = [examInfoItem, productsItem, demoCourseItem];
   if (access.hasLite) items.push(lightCourseItem);
-  items.push(mockExamsItem, mockBuilderItem, gamesItem, productsItem);
+  if (access.hasFull) items.push(fullCourseItem);
+  items.push(mockExamsItem, mockBuilderItem, gamesItem);
   return items;
 }
 
