@@ -25,11 +25,15 @@ def main() -> None:
     overviews = [t.get("solution_overview") or "" for t in tasks]
     max_ov = max(overviews, key=len)
     dup_para = 0
+    across = Counter()
     for ov in overviews:
         paras = [p.strip() for p in re.split(r"\n\s*\n", ov) if p.strip()]
         counts = Counter(paras)
         if counts and max(counts.values()) > 1:
             dup_para += 1
+        across.update(set(paras))
+    worst_para, worst_n = across.most_common(1)[0] if across else ("", 0)
+    dup_overviews = sum(n for _, n in Counter(overviews).items() if n > 1)
 
     expls = [e for t in tasks for e in t.get("tactical_explanations", [])]
     lens = sorted(len(e) for e in expls)
@@ -41,6 +45,8 @@ def main() -> None:
     print(f"fg-in-context tasks: {len(fg)}  (formula only: {len(fg_formula)})")
     print(f"max overview length: {len(max_ov)}  ({tasks[overviews.index(max_ov)]['case_id']})")
     print(f"overviews with a repeated paragraph: {dup_para}")
+    print(f"overviews identical to another one: {dup_overviews}")
+    print(f"most reused paragraph: {worst_n}x — {worst_para[:70]}...")
     print(f"'Matching the claim' occurrences: {sum('Matching the claim' in e for e in expls)}")
     if lens:
         print(f"explanations: n={len(lens)} min={lens[0]} median={lens[len(lens)//2]} max={lens[-1]}")

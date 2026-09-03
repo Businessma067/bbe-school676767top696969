@@ -28,7 +28,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 1,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 5 x + 4\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}\\qquad \\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=1\\qquad P=-2\\qquad \\Delta_{g}=9$$\n\nWherever the two graphs touch, the difference $f-g$ is zero; that difference is quadratic and its discriminant leaves two crossings.\n\n$$f(x)-g(x)=- x^{2} + 5 x + 4\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -61,7 +61,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 x - 5\\qquad g(x)=- 2 x^{2} + x + 4$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{4},\\frac{33}{8}\\right)\\qquad S=\\frac{1}{2}\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=2 x^{2} + 2 x - 9\\qquad \\Delta=76$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=-\\frac{2}{9},\\quad B=-\\frac{17}{9},\\quad C=\\frac{1}{9}$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=3 x - 5\\qquad g(x)=- 2 x^{2} + x + 4$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms downwards.\n\n$$m=3\\qquad f(0)=-5\\qquad g(0)=4\\qquad a=-2$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -94,7 +94,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 6 x + 5$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(3,-4\\right)\\qquad S=6\\qquad P=5$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 8 x - 4\\qquad \\Delta=48$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-\\frac{7}{2},\\quad C=\\frac{33}{4}$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 6 x + 5$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=2\\qquad f(0)=1\\qquad g(0)=5\\qquad a=1$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=\\left(x-3\\right)^{2}-4\\qquad \\text{vertex}=\\left(3,-4\\right)$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -120,10 +120,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nThe model turns any input into the fare, so a claim about one particular input is settled by a single substitution.\n\n$$C(x)=3x+5$$\n\n$$C(4)=3\\cdot 4+5=17$$\n\nThe model returns $17$ there, the figure named in the claim, so the statement is True.",
-        "**B.** → True\n\nThe model is linear, so one extra kilometre always changes the fare by the same amount, and that amount is the slope.\n\n$$C(x)=3x+5$$\n\n$$C(x+1)-C(x)=3$$\n\nEach extra kilometre moves the fare by $3$, as claimed, so the statement is True.",
+        "**B.** → True\n\nThe model is linear, so one extra kilometre always changes the fare by the same amount, and that amount is the slope.\n\n$$C(x)=3x+5$$\n\n$$C(x+1)-C(x)=\\left(3\\left(x+1\\right)+5\\right)-\\left(3x+5\\right)=3$$\n\nEach extra kilometre moves the fare by $3$, as claimed, so the statement is True.",
         "**C.** → True\n\nEqual steps of the input produce equal changes of the fare only when the model is a line; a square term makes the steps grow.\n\n$$C(x)=3x+5$$\n\n$$C(x+1)-C(x)=3$$\n\nThe difference does not contain $x$ any more, so every extra kilometre counts the same.\n\nThe change per step is the constant slope, so the statement is True.",
-        "**D.** → True\n\nThe claim pairs one input with one fare, so put the input into the model and see which figure comes out.\n\n$$C(x)=3x+5$$\n\n$$C(5)=3\\cdot 5+5=20$$\n\nThe fare at that input really is $20$, so the statement is True.",
-        "**E.** → False\n\nDoubling the input doubles the output only for a model whose graph runs through the origin; a constant term is charged once and is not doubled with the rest.\n\n$$C(x)=3x+5$$\n\n$$C(1)=3\\cdot 1+5=8$$\n\n$$C(2)=3\\cdot 2+5=11$$\n\nTwice the value at $x=1$ would be $16$, whereas the model gives $11$ at $x=2$.\n\nThe constant term $5$ survives the doubling, so the fare is not proportional to $x$, so the statement is False."
+        "**D.** → True\n\nThe claim pins the fare to one figure, so read the model as an equation and see which input produces that figure.\n\n$$3x+5=20$$\n\n$$3x=15$$\n\n$$x=5$$\n\nSubstituting the claimed input back into the model checks the pair.\n\n$$C(5)=3\\cdot 5+5=20$$\n\nThe fare at that input really is $20$, so the statement is True.",
+        "**E.** → False\n\nDoubling the input doubles the output only for a model whose graph runs through the origin; a constant term is charged once and is not doubled with the rest.\n\n$$C(x)=3x+5$$\n\n$$C(1)=3\\cdot 1+5=8$$\n\n$$C(2)=3\\cdot 2+5=11$$\n\nTwice the value at $x=1$ would be $16$, whereas the model gives $11$ at $x=2$.\n\nThe constant term $5$ survives the doubling and breaks the proportion between $x$ and the fare, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
@@ -160,7 +160,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 5,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=5 x\\qquad g(x)=x^{2} - 4$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(0,-4\\right)\\qquad S=0\\qquad P=-4$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 5 x + 4\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{25},\\quad B=0,\\quad C=-4$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=5 x\\qquad g(x)=x^{2} - 4$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=5\\qquad f(0)=0\\qquad g(0)=-4\\qquad a=1$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=0\\qquad P=-4\\qquad \\Delta_{g}=16$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -193,7 +193,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 6,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x - 2\\qquad g(x)=x^{2} - 4 x + 7$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(2,3\\right)\\qquad S=4\\qquad P=7$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are no.\n\n$$f(x)-g(x)=- x^{2} + 5 x - 9\\qquad \\Delta=-11$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=0,\\quad C=3$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=x - 2\\qquad g(x)=x^{2} - 4 x + 7$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms upwards.\n\n$$m=1\\qquad f(0)=-2\\qquad g(0)=7\\qquad a=1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-2\\right)^{2}+3\\qquad \\text{vertex}=\\left(2,3\\right)$$\n\nFor the roots of $g$ the useful data are the sum, the product and the discriminant, all three of which come from the coefficients directly.\n\n$$S=4\\qquad P=7\\qquad \\Delta_{g}=-12$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -226,7 +226,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 7,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=\\frac{x}{2} + 7\\qquad g(x)=x \\left(3 x - 1\\right)$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{6},-\\frac{1}{12}\\right)\\qquad S=\\frac{1}{3}\\qquad P=0$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 3 x^{2} + \\frac{3 x}{2} + 7\\qquad \\Delta=\\frac{345}{4}$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=12,\\quad B=-170,\\quad C=602$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=\\frac{x}{2} + 7\\qquad g(x)=x \\left(3 x - 1\\right)$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=\\frac{1}{2}\\qquad f(0)=7\\qquad g(0)=0\\qquad a=3$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=3\\left(x-\\frac{1}{6}\\right)^{2}-\\frac{1}{12}\\qquad \\text{vertex}=\\left(\\frac{1}{6},-\\frac{1}{12}\\right)$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -259,7 +259,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 8,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x\\qquad g(x)=x \\left(x - 2\\right)$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(1,-1\\right)\\qquad S=2\\qquad P=0$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=x \\left(3 - x\\right)\\qquad \\Delta=9$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=-2,\\quad C=0$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=x\\qquad g(x)=x \\left(x - 2\\right)$$\n\nThe slope, the vertical intercepts and the opening direction all sit in plain view in the coefficients; the arms go upwards.\n\n$$m=1\\qquad f(0)=0\\qquad g(0)=0\\qquad a=1$$\n\nComparing the two graphs means solving $f(x)=g(x)$, a quadratic equation whose discriminant reports two real solutions.\n\n$$f(x)-g(x)=x \\left(3 - x\\right)\\qquad \\Delta=9$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -292,7 +292,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 9,
-      "solution_overview": "One formula carries the whole story.\n\n$$H(x)=-5x^{2}+20x$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(2,20\\right)\\qquad S=4\\qquad P=0$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=400\\qquad x_{1}=0\\qquad x_{2}=4$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $20$.",
+      "solution_overview": "Behind the wording there is just one function.\n\n$$H(x)=-5x^{2}+20x$$\n\nThe completed square hands over the turning point, and Vieta's relations hand over the sum and the product of the roots.\n\n$$\\text{vertex}=\\left(2,20\\right)\\qquad S=4\\qquad P=0$$\n\nBecause the discriminant is positive the parabola meets the $x$-axis in two points, and factoring recovers them.\n\n$$\\Delta=400\\qquad x_{1}=0\\qquad x_{2}=4$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $20$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -325,7 +325,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 10,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 - 2 x\\qquad g(x)=x^{2} - 3 x - 4$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{3}{2},-\\frac{25}{4}\\right)\\qquad S=3\\qquad P=-4$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + x + 7\\qquad \\Delta=29$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=0,\\quad C=-\\frac{25}{4}$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 - 2 x\\qquad g(x)=x^{2} - 3 x - 4$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms upwards.\n\n$$m=-2\\qquad f(0)=3\\qquad g(0)=-4\\qquad a=1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{25}{4}\\qquad \\text{vertex}=\\left(\\frac{3}{2},-\\frac{25}{4}\\right)$$\n\nFor the roots of $g$ the useful data are the sum, the product and the discriminant, all three of which come from the coefficients directly.\n\n$$S=3\\qquad P=-4\\qquad \\Delta_{g}=25$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -354,11 +354,11 @@
         "**B.** → True\n\nThe graph meets the $y$-axis where the input is zero, so the intercept is simply the constant term of the rule.\n\n$$s(x)=-2x+6$$\n\n$$s(0)=-2\\cdot 0+6=6$$\n\nThe graph cuts the $y$-axis at $y=6$, the height the claim names, so the statement is True.",
         "**C.** → False\n\nA line has the same steepness everywhere, so its direction is decided once and for all by the sign of the slope.\n\n$$s(x)=-2x+6$$\n\n$$m=-2$$\n\nBecause the slope is negative, every step to the right lowers the height.\n\nThe function is decreasing, not increasing, so the statement is False.",
         "**D.** → True\n\nThe graph crosses the $x$-axis where the height is zero, so set the rule equal to zero and solve the linear equation.\n\n$$-2x+6=0$$\n\n$$-2x=-6$$\n\n$$x=\\frac{-6}{-2}=3$$\n\nThe crossing is at $x=3$, exactly where the claim puts it, so the statement is True.",
-        "**E.** → False\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$s(x)=-2x+6$$\n\n$$s(4)=-2\\cdot 4+6=-2$$\n\nThe value is $-2$ while the claim states $-1$, so the statement is False."
+        "**E.** → False\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$s(x)=-2x+6$$\n\n$$s(4)=-2\\cdot 4+6=-2$$\n\nThe graph therefore passes through the point $\\left(4,-2\\right)$.\n\nThe value is $-2$ while the claim states $-1$, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 11,
-      "solution_overview": "The stem fixes a single line.\n\n$$s(x)=6-2x$$\n\nSplitting the fraction term by term brings the rule into the shape $mx+q$.\n\n$$s(x)=-2x+6$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$m=-2\\qquad s(0)=6$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$-2x+6=0\\Rightarrow x=3$$",
+      "solution_overview": "The stem fixes a single line.\n\n$$s(x)=6-2x$$\n\nOrdering the two terms brings the rule into the shape $mx+q$.\n\n$$s(x)=-2x+6$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$m=-2\\qquad s(0)=6$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$-2x+6=0\\Rightarrow x=3$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "line"
@@ -391,7 +391,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 12,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x - 1\\qquad g(x)=x^{2} - 5 x + 6$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad S=5\\qquad P=6$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 7 x - 7\\qquad \\Delta=21$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{15}{4}$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=2 x - 1\\qquad g(x)=x^{2} - 5 x + 6$$\n\nThe slope, the vertical intercepts and the opening direction all sit in plain view in the coefficients; the arms go upwards.\n\n$$m=2\\qquad f(0)=-1\\qquad g(0)=6\\qquad a=1$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$g(x)=\\left(x-\\frac{5}{2}\\right)^{2}-\\frac{1}{4}\\qquad \\text{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)$$\n\nThe roots of $g$ never have to be computed: their sum and product follow from the coefficients, while the discriminant records whether they are real at all.\n\n$$S=5\\qquad P=6\\qquad \\Delta_{g}=1$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -424,7 +424,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 13,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x + 3\\qquad g(x)=2 x^{2} - 8 x + 3$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(2,-5\\right)\\qquad S=4\\qquad P=\\frac{3}{2}$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=x \\left(9 - 2 x\\right)\\qquad \\Delta=81$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=2,\\quad B=-20,\\quad C=45$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=x + 3\\qquad g(x)=2 x^{2} - 8 x + 3$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=1\\qquad f(0)=3\\qquad g(0)=3\\qquad a=2$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=2\\left(x-2\\right)^{2}-5\\qquad \\text{vertex}=\\left(2,-5\\right)$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -457,7 +457,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 14,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x + 1\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 2 x + 3\\qquad \\Delta=16$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=-3,\\quad C=0$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=x + 1\\qquad g(x)=x^{2} - x - 2$$\n\nFor the roots of $g$ the useful data are the sum, the product and the discriminant, all three of which come from the coefficients directly.\n\n$$S=1\\qquad P=-2\\qquad \\Delta_{g}=9$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 2 x + 3\\qquad \\Delta=16$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -490,7 +490,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 15,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=- x\\qquad g(x)=x^{2} + 4 x + 1$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-2,-3\\right)\\qquad S=-4\\qquad P=1$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} - 5 x - 1\\qquad \\Delta=21$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=-4,\\quad C=1$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=- x\\qquad g(x)=x^{2} + 4 x + 1$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=-1\\qquad f(0)=0\\qquad g(0)=1\\qquad a=1$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=\\left(x+2\\right)^{2}-3\\qquad \\text{vertex}=\\left(-2,-3\\right)$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -556,7 +556,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 17,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 x\\qquad g(x)=2 x^{2} - 8 x + 6$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(2,-2\\right)\\qquad S=4\\qquad P=3$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 2 x^{2} + 11 x - 6\\qquad \\Delta=73$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{2}{9},\\quad B=-\\frac{8}{3},\\quad C=6$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=3 x\\qquad g(x)=2 x^{2} - 8 x + 6$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=3\\qquad f(0)=0\\qquad g(0)=6\\qquad a=2$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=2\\left(x-2\\right)^{2}-2\\qquad \\text{vertex}=\\left(2,-2\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=4\\qquad P=3\\qquad \\Delta_{g}=16$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -589,7 +589,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 18,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 - x\\qquad g(x)=x^{2} + x - 6$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad S=-1\\qquad P=-6$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} - 2 x + 8\\qquad \\Delta=36$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=-5,\\quad C=0$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=2 - x\\qquad g(x)=x^{2} + x - 6$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms upwards.\n\n$$m=-1\\qquad f(0)=2\\qquad g(0)=-6\\qquad a=1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x+\\frac{1}{2}\\right)^{2}-\\frac{25}{4}\\qquad \\text{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)$$\n\nFor the roots of $g$ the useful data are the sum, the product and the discriminant, all three of which come from the coefficients directly.\n\n$$S=-1\\qquad P=-6\\qquad \\Delta_{g}=25$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -622,7 +622,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 19,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 9$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(0,-9\\right)\\qquad S=0\\qquad P=-9$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 2 x + 10\\qquad \\Delta=44$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{35}{4}$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 9$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=x^{2}-9\\qquad \\text{vertex}=\\left(0,-9\\right)$$\n\nVieta's relations read the sum $S$ and the product $P$ of the roots of $g$ straight off the coefficients, and the discriminant of $g$ says how many real roots there are to sum in the first place.\n\n$$S=0\\qquad P=-9\\qquad \\Delta_{g}=36$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -647,9 +647,9 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ -3,\\ 1,\\ 5,\\ 9,\\ 13$$\n\n$$\\text{first differences}:\\ 4,\\ 4,\\ 4,\\ 4$$\n\nEvery step adds the same $4$, so the first differences are constant, so the statement is True.",
+        "**A.** → True\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ -3,\\ 1,\\ 5,\\ 9,\\ 13$$\n\n$$\\text{first differences}:\\ 4,\\ 4,\\ 4,\\ 4$$\n\nEvery step adds the same $4$, keeping the first differences constant, so the statement is True.",
         "**B.** → True\n\nThe slope of a line through a table is the change of the output divided by the change of the input, which is the same for every pair of rows only when the first differences are constant.\n\n$$\\text{first differences}:\\ 4,\\ 4,\\ 4,\\ 4$$\n\n$$m=\\frac{4}{1}=4$$\n\nThe line through the table has slope $4$, as claimed, so the statement is True.",
-        "**C.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=4x-3$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto -3,\\quad 1\\mapsto 1,\\quad 2\\mapsto 5$$\n\nEvery row comes out right, so the claimed rule is the one behind the table, so the statement is True.",
+        "**C.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=4x-3$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto -3,\\quad 1\\mapsto 1,\\quad 2\\mapsto 5$$\n\nEvery row comes out right, which identifies the claimed rule as the one behind the table, so the statement is True.",
         "**D.** → True\n\nAn average rate of change over a stretch is read from the two end rows only: the change of the output divided by the change of the input.\n\n$$y\\left(1\\right)=1\\qquad y\\left(4\\right)=13$$\n\n$$\\frac{13-1}{4-1}=\\frac{12}{3}=4$$\n\nThe average rate over that stretch is $4$, the figure claimed, so the statement is True.",
         "**E.** → False\n\nContinuing a table means continuing its rule, so identify the rule from the differences first and only then step one row further.\n\n$$y=4x-3$$\n\n$$y(5)=4\\cdot 5-3=17$$\n\nThe next row would read $17$ while the claim announces $18$, so the statement is False."
       ],
@@ -689,7 +689,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 21,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x - 1\\qquad g(x)=x^{2} - 1$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(0,-1\\right)\\qquad S=0\\qquad P=-1$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=x \\left(1 - x\\right)\\qquad \\Delta=1$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=2,\\quad C=0$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=x - 1\\qquad g(x)=x^{2} - 1$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=1\\qquad f(0)=-1\\qquad g(0)=-1\\qquad a=1$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=x^{2}-1\\qquad \\text{vertex}=\\left(0,-1\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=0\\qquad P=-1\\qquad \\Delta_{g}=4$$\n\nWherever the two graphs touch, the difference $f-g$ is zero; that difference is quadratic and its discriminant leaves two crossings.\n\n$$f(x)-g(x)=x \\left(1 - x\\right)\\qquad \\Delta=1$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=2,\\quad C=0$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -722,7 +722,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 22,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDiscriminant dictionary; the vertex exists independently of $\\Delta$.",
+      "solution_overview": "Since $a$, $b$ and $c$ are never given numbers, each claim has to survive for every admissible choice of them.\n\n$$x=-\\frac{b}{2a}\\qquad \\Delta=b^{2}-4ac$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nThe discriminant is introduced by the stem itself, so each letter is a claim about what its sign controls.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -755,7 +755,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 23,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$g$ is even iff $b=0$ iff the axis is the $y$-axis.",
+      "solution_overview": "Arithmetic is unavailable here: the coefficients stay symbolic, so the axis formula has to be argued with rather than evaluated.\n\n$$x=-\\frac{b}{2a}\\qquad g(x)=a\\left(x-h\\right)^{2}+k$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken. Replacing $x$ by $-x$ reflects a graph in the $y$-axis, and a parabola survives that swap exactly when its middle coefficient vanishes.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -788,7 +788,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 24,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x - 3\\qquad g(x)=x^{2} - 4 x + 5$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(2,1\\right)\\qquad S=4\\qquad P=5$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 6 x - 8\\qquad \\Delta=4$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=\\frac{5}{4}$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=2 x - 3\\qquad g(x)=x^{2} - 4 x + 5$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$g(x)=\\left(x-2\\right)^{2}+1\\qquad \\text{vertex}=\\left(2,1\\right)$$\n\nComparing the two graphs means solving $f(x)=g(x)$, a quadratic equation whose discriminant reports two real solutions.\n\n$$f(x)-g(x)=- x^{2} + 6 x - 8\\qquad \\Delta=4$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "geometric"
@@ -821,7 +821,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 25,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 3\\qquad \\Delta=21$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-1,\\quad C=-\\frac{5}{4}$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - x - 2$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=1\\qquad P=-2\\qquad \\Delta_{g}=9$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -854,7 +854,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 26,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 x\\qquad g(x)=x^{2} - 6 x + 10$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(3,1\\right)\\qquad S=6\\qquad P=10$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 9 x - 10\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{9},\\quad B=-2,\\quad C=10$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=3 x\\qquad g(x)=x^{2} - 6 x + 10$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-3\\right)^{2}+1\\qquad \\text{vertex}=\\left(3,1\\right)$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 9 x - 10\\qquad \\Delta=41$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -887,7 +887,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 27,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 5 x + 6$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad S=5\\qquad P=6$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 7 x - 5\\qquad \\Delta=29$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=2 x + 1\\qquad g(x)=x^{2} - 5 x + 6$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=2\\qquad f(0)=1\\qquad g(0)=6\\qquad a=1$$\n\nVieta's relations read the sum $S$ and the product $P$ of the roots of $g$ straight off the coefficients, and the discriminant of $g$ says how many real roots there are to sum in the first place.\n\n$$S=5\\qquad P=6\\qquad \\Delta_{g}=1$$\n\nCommon points are the roots of $f-g$, and that difference is again a quadratic, so its discriminant settles the count: two here.\n\n$$f(x)-g(x)=- x^{2} + 7 x - 5\\qquad \\Delta=29$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "hybrid"
@@ -920,7 +920,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 28,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x - 1\\qquad g(x)=x^{2} - 2 x - 3$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(1,-4\\right)\\qquad S=2\\qquad P=-3$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 2\\qquad \\Delta=17$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=0,\\quad C=-4$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=x - 1\\qquad g(x)=x^{2} - 2 x - 3$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$g(x)=\\left(x-1\\right)^{2}-4\\qquad \\text{vertex}=\\left(1,-4\\right)$$\n\nThe roots of $g$ never have to be computed: their sum and product follow from the coefficients, while the discriminant records whether they are real at all.\n\n$$S=2\\qquad P=-3\\qquad \\Delta_{g}=16$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -953,7 +953,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 29,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=4 x - 1\\qquad g(x)=x^{2} - 4 x + 1$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(2,-3\\right)\\qquad S=4\\qquad P=1$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 8 x - 2\\qquad \\Delta=56$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{7}{8},\\quad C=\\frac{1}{16}$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=4 x - 1\\qquad g(x)=x^{2} - 4 x + 1$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=4\\qquad f(0)=-1\\qquad g(0)=1\\qquad a=1$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=\\left(x-2\\right)^{2}-3\\qquad \\text{vertex}=\\left(2,-3\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=4\\qquad P=1\\qquad \\Delta_{g}=12$$\n\nWherever the two graphs touch, the difference $f-g$ is zero; that difference is quadratic and its discriminant leaves two crossings.\n\n$$f(x)-g(x)=- x^{2} + 8 x - 2\\qquad \\Delta=56$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -986,7 +986,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 30,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x\\qquad g(x)=x^{2} + x + 1$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-\\frac{1}{2},\\frac{3}{4}\\right)\\qquad S=-1\\qquad P=1$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are no.\n\n$$f(x)-g(x)=- x^{2} - 1\\qquad \\Delta=-4$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=1,\\quad B=1,\\quad C=1$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=x\\qquad g(x)=x^{2} + x + 1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x+\\frac{1}{2}\\right)^{2}+\\frac{3}{4}\\qquad \\text{vertex}=\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$$\n\nFor the roots of $g$ the useful data are the sum, the product and the discriminant, all three of which come from the coefficients directly.\n\n$$S=-1\\qquad P=1\\qquad \\Delta_{g}=-3$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are no.\n\n$$f(x)-g(x)=- x^{2} - 1\\qquad \\Delta=-4$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1019,7 +1019,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 31,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nLine of slope type $1$ $f$ makes $\\{1,f,f^{2}\\}$ a building blocks of polynomials of degree at most $2$.",
+      "solution_overview": "Without numbers, the question is purely structural: which parabolas are reachable from a line and its square.\n\n$$g=Af^{2}+Bf+C$$\n\nSquaring a line already creates an $x^{2}$ term, which is what lets a parabola be rebuilt out of $f^{2}$, $f$ and a constant. Nesting multiplies the highest powers instead of adding them, so feeding a parabola into a parabola reaches $x^{4}$, and inserting a line between them changes nothing about that.\n\nUniqueness is claimed more than once here, and existence on its own never establishes it.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1052,7 +1052,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 32,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nVertex form is unique: $(h,k)$ is the vertex and $a$ is the leading coefficient.",
+      "solution_overview": "Since $a$, $b$ and $c$ are never given numbers, each claim has to survive for every admissible choice of them.\n\n$$x=-\\frac{b}{2a}\\qquad g(x)=a\\left(x-h\\right)^{2}+k$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nUniqueness is claimed more than once here, and existence on its own never establishes it.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1085,7 +1085,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 33,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$f=g$ is at most quadratic $\\Rightarrow$ at most two real meetings.",
+      "solution_overview": "With the coefficients left as letters, every claim about roots reduces to a question about the sign of $b^{2}-4ac$.\n\n$$\\Delta=b^{2}-4ac\\qquad g(x)-f(x)=0$$\n\nThe discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Common points of a line and a parabola solve a single quadratic equation, so there can never be more than two of them. A horizontal shift moves the axis, a vertical shift leaves it where it is, and a non-zero factor can only stretch the graph or flip it over.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1118,7 +1118,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 34,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nOpening direction decides whether the range is $[k,+\\infty)$ or $(-\\infty,k]$.",
+      "solution_overview": "Everything is stated for a general parabola, so the reasoning runs on the structure of $ax^{2}+bx+c$ instead of on numbers.\n\n$$x=-\\frac{b}{2a}\\qquad g(x)=a\\left(x-h\\right)^{2}+k$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nThe claims are about the set of values that come out, which for a parabola is always a half-line starting at the turning point.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1151,7 +1151,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 35,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$d=f-g$ is quadratic; its zeros are the intersection abscissae.",
+      "solution_overview": "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled through the formulas that hold for every parabola.\n\n$$x=-\\frac{b}{2a}\\qquad \\Delta=b^{2}-4ac$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Common points of a line and a parabola solve a single quadratic equation, so there can never be more than two of them.\n\nThe difference of the two functions is given its own name, so watch which of its coefficients still depend on the line.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1217,7 +1217,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 37,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 x - 1\\qquad g(x)=2 x^{2} - 4 x - 6$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(1,-8\\right)\\qquad S=2\\qquad P=-3$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 2 x^{2} + 7 x + 5\\qquad \\Delta=89$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{2}{9},\\quad B=-\\frac{8}{9},\\quad C=-\\frac{64}{9}$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=3 x - 1\\qquad g(x)=2 x^{2} - 4 x - 6$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{2}{9},\\quad B=-\\frac{8}{9},\\quad C=-\\frac{64}{9}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1250,7 +1250,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 38,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=6 - 3 x\\qquad g(x)=x^{2} - 3 x - 10$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)\\qquad S=3\\qquad P=-10$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=16 - x^{2}\\qquad \\Delta=64$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{9},\\quad B=-\\frac{1}{3},\\quad C=-12$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=6 - 3 x\\qquad g(x)=x^{2} - 3 x - 10$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms upwards.\n\n$$m=-3\\qquad f(0)=6\\qquad g(0)=-10\\qquad a=1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}\\qquad \\text{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=16 - x^{2}\\qquad \\Delta=64$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1283,7 +1283,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 39,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x + 3\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 5\\qquad \\Delta=29$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{7}{4}$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=2 x + 3\\qquad g(x)=x^{2} - x - 2$$\n\nCommon points are the roots of $f-g$, and that difference is again a quadratic, so its discriminant settles the count: two here.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 5\\qquad \\Delta=29$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1349,7 +1349,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 41,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$$S=-\\frac{b}{a}\\qquad \\ell:\\ x=\\frac{S}{2}.$$\nThe axis is the midpoint of the roots.",
+      "solution_overview": "The parabola keeps its coefficients as letters, which leaves the general formulas for the axis and the discriminant as the only tools.\n\n$$x=-\\frac{b}{2a}\\qquad S=-\\frac{b}{a}\\qquad P=\\frac{c}{a}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Vieta's relations turn the coefficients into the sum and the product of the roots without solving any equation. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative.\n\nThe axis carries its own name here, and every letter compares it with some other line.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1382,7 +1382,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 42,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDegree multiplies under composition. Adding degrees ($1+2=3$) is the trap.",
+      "solution_overview": "No numbers appear, so the claims are settled by what nesting does to the highest power of $x$.\n\n$$f(x)=mx+q\\qquad g(x)=ax^{2}+bx+c,\\quad a\\neq 0$$\n\nNesting multiplies the highest powers instead of adding them, so feeding a parabola into a parabola reaches $x^{4}$, and inserting a line between them changes nothing about that.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1415,7 +1415,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 43,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nNon-constant lines are globally monotone; quadratics only on each side of the axis.",
+      "solution_overview": "Arithmetic is unavailable here: the coefficients stay symbolic, so the axis formula has to be argued with rather than evaluated.\n\n$$x=-\\frac{b}{2a}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Far out on either side the $x^{2}$ term outgrows every linear term, so the parabola decides who ends up on top. A line with non-zero slope keeps one direction everywhere, while a parabola only becomes monotone once the axis cuts its domain in two.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1448,7 +1448,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 44,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nTangency means $\\Delta(t)=0$ for $ax^{2}+(b-t)x+(c-1)$; this may have $0$, $1$, or $2$ real solutions.",
+      "solution_overview": "Nothing is numeric here, so the sign of the discriminant is the only lever available.\n\n$$\\Delta=b^{2}-4ac\\qquad g(x)-f(x)=0$$\n\nThe discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Common points of a line and a parabola solve a single quadratic equation, so there can never be more than two of them.\n\nThe lines arrive as a whole family, so the parameter has to be carried along as an unknown instead of a number.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1481,7 +1481,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 45,
-      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nHorizontal shifts move the axis; vertical shifts preserve it; nonzero scalings preserve roots.",
+      "solution_overview": "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled through the formulas that hold for every parabola.\n\n$$x=-\\frac{b}{2a}\\qquad g(x-r)\\qquad g(x)+s\\qquad \\lambda g(x)$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. A horizontal shift moves the axis, a vertical shift leaves it where it is, and a non-zero factor can only stretch the graph or flip it over.\n\nThree transformed copies of one parabola are put next to the original, so ask each time which feature the transformation touches.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1514,7 +1514,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 46,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 5 x + 4\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}\\qquad \\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 5 x + 4\\qquad \\Delta=41$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1580,7 +1580,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 48,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=5 x - 2\\qquad g(x)=2 x^{2} - 12 x + 16$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(3,-2\\right)\\qquad S=6\\qquad P=8$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 2 x^{2} + 17 x - 18\\qquad \\Delta=145$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{2}{25},\\quad B=-\\frac{52}{25},\\quad C=\\frac{288}{25}$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=5 x - 2\\qquad g(x)=2 x^{2} - 12 x + 16$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$g(x)=2\\left(x-3\\right)^{2}-2\\qquad \\text{vertex}=\\left(3,-2\\right)$$\n\nThe roots of $g$ never have to be computed: their sum and product follow from the coefficients, while the discriminant records whether they are real at all.\n\n$$S=6\\qquad P=8\\qquad \\Delta_{g}=16$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{2}{25},\\quad B=-\\frac{52}{25},\\quad C=\\frac{288}{25}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "hybrid"
@@ -1613,7 +1613,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 49,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=4 x - 8\\qquad g(x)=x^{2} - 6 x + 5$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(3,-4\\right)\\qquad S=6\\qquad P=5$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 10 x - 13\\qquad \\Delta=48$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-3$$",
+      "solution_overview": "The pair under discussion is\n\n$$f(x)=4 x - 8\\qquad g(x)=x^{2} - 6 x + 5$$\n\nSeveral claims only need the coefficients as they stand: the slope of the line is the factor in front of $x$, each constant term is the value of that rule at $0$, and the sign of the leading coefficient makes the arms open upwards.\n\n$$m=4\\qquad f(0)=-8\\qquad g(0)=5\\qquad a=1$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=\\left(x-3\\right)^{2}-4\\qquad \\text{vertex}=\\left(3,-4\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=6\\qquad P=5\\qquad \\Delta_{g}=16$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1646,7 +1646,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 50,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x\\qquad g(x)=x^{2} - x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 2\\qquad \\Delta=17$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-2$$",
+      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2 x\\qquad g(x)=x^{2} - x - 2$$\n\nA first group of claims is pure reading: the factor in front of $x$ is the slope, the constant terms give the intercepts on the vertical axis, and the leading coefficient of $g$ sends the arms upwards.\n\n$$m=2\\qquad f(0)=0\\qquad g(0)=-2\\qquad a=1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}\\qquad \\text{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)$$\n\nThe graphs share a point exactly where the difference of the two rules vanishes, so the discriminant of that single quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 3 x + 2\\qquad \\Delta=17$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
@@ -1679,7 +1679,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 51,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=7 x + 2\\qquad g(x)=x \\left(x + 6\\right)$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-3,-9\\right)\\qquad S=-6\\qquad P=0$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + x + 2\\qquad \\Delta=9$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{49},\\quad B=\\frac{38}{49},\\quad C=-\\frac{80}{49}$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=7 x + 2\\qquad g(x)=x \\left(x + 6\\right)$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=7\\qquad f(0)=2\\qquad g(0)=0\\qquad a=1$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=\\left(x+3\\right)^{2}-9\\qquad \\text{vertex}=\\left(-3,-9\\right)$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1712,7 +1712,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 52,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=2x^{2}-8$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(0,-8\\right)\\qquad S=0\\qquad P=-4$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=64\\qquad x_{1}=-2\\qquad x_{2}=2$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
+      "solution_overview": "There is one graph to study, and it is a parabola.\n\n$$p(x)=2x^{2}-8$$\n\nThe axis formula fixes the turning point, while the sum $S$ and the product $P$ of the roots come out of the coefficients with no equation to solve.\n\n$$\\text{vertex}=\\left(0,-8\\right)\\qquad S=0\\qquad P=-4$$\n\nTwo real roots follow from the positive discriminant, and the axis of symmetry sits exactly halfway between them.\n\n$$\\Delta=64\\qquad x_{1}=-2\\qquad x_{2}=2$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -1745,7 +1745,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 53,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$q(x)=-3x^{2}+12x-4$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(2,8\\right)\\qquad S=4\\qquad P=\\frac{4}{3}$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=96$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $8$.",
+      "solution_overview": "Everything below refers to the same parabola.\n\n$$q(x)=-3x^{2}+12x-4$$\n\nBefore testing anything, it pays to write down the vertex together with the sum and the product of the roots, all three being coefficient arithmetic.\n\n$$\\text{vertex}=\\left(2,8\\right)\\qquad S=4\\qquad P=\\frac{4}{3}$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=96$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $8$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -1778,7 +1778,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 54,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=\\left(x+3\\right)^{2}-7$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$p(x)=x^{2}+6x+2$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-3,-7\\right)\\qquad S=-6\\qquad P=2$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=28$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-7$.",
+      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=\\left(x+3\\right)^{2}-7$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$p(x)=x^{2}+6x+2$$\n\nThe completed square hands over the turning point, and Vieta's relations hand over the sum and the product of the roots.\n\n$$\\text{vertex}=\\left(-3,-7\\right)\\qquad S=-6\\qquad P=2$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=28$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-7$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -1811,7 +1811,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 55,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$q(x)=\\left(x-1\\right)\\left(x+6\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$q(x)=x^{2}+5x-6$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-\\frac{5}{2},-\\frac{49}{4}\\right)\\qquad S=-5\\qquad P=-6$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=49\\qquad x_{1}=-6\\qquad x_{2}=1$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-\\frac{49}{4}$.",
+      "solution_overview": "Only one parabola is in play here.\n\n$$q(x)=\\left(x-1\\right)\\left(x+6\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$q(x)=x^{2}+5x-6$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-\\frac{5}{2},-\\frac{49}{4}\\right)\\qquad S=-5\\qquad P=-6$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\\Delta=49\\qquad x_{1}=-6\\qquad x_{2}=1$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-\\frac{49}{4}$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -1836,15 +1836,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe model is linear, so one extra minute always changes the volume by the same amount, and that amount is the slope.\n\n$$V(x)=-8x+200$$\n\n$$V(x+1)-V(x)=-8$$\n\nEach extra minute moves the volume by $-8$, as claimed, so the statement is True.",
+        "**A.** → True\n\nThe model is linear, so one extra minute always changes the volume by the same amount, and that amount is the slope.\n\n$$V(x)=-8x+200$$\n\n$$V(x+1)-V(x)=\\left(-8\\left(x+1\\right)+200\\right)-\\left(-8x+200\\right)=-8$$\n\nEach extra minute moves the volume by $-8$, as claimed, so the statement is True.",
         "**B.** → True\n\nThe model turns any input into the volume, so a claim about one particular input is settled by a single substitution.\n\n$$V(x)=-8x+200$$\n\n$$V(10)=-8\\cdot 10+200=120$$\n\nThe model returns $120$ there, the figure named in the claim, so the statement is True.",
-        "**C.** → True\n\nThe claim pairs one input with one volume, so put the input into the model and see which figure comes out.\n\n$$V(x)=-8x+200$$\n\n$$V(25)=-8\\cdot 25+200=0$$\n\nThe volume at that input really is $0$, so the statement is True.",
-        "**D.** → False\n\nDoubling the input doubles the output only for a model whose graph runs through the origin; a constant term is charged once and is not doubled with the rest.\n\n$$V(x)=-8x+200$$\n\n$$V(1)=-8\\cdot 1+200=192$$\n\n$$V(2)=-8\\cdot 2+200=184$$\n\nTwice the value at $x=1$ would be $384$, whereas the model gives $184$ at $x=2$.\n\nThe constant term $200$ survives the doubling, so the volume is not proportional to $x$, so the statement is False.",
+        "**C.** → True\n\nThe claim pins the volume to one figure, so read the model as an equation and see which input produces that figure.\n\n$$-8x+200=0$$\n\n$$-8x=-200$$\n\n$$x=25$$\n\nSubstituting the claimed input back into the model checks the pair.\n\n$$V(25)=-8\\cdot 25+200=0$$\n\nThe volume at that input really is $0$, so the statement is True.",
+        "**D.** → False\n\nDoubling the input doubles the output only for a model whose graph runs through the origin; a constant term is charged once and is not doubled with the rest.\n\n$$V(x)=-8x+200$$\n\n$$V(1)=-8\\cdot 1+200=192$$\n\n$$V(2)=-8\\cdot 2+200=184$$\n\nTwice the value at $x=1$ would be $384$, whereas the model gives $184$ at $x=2$.\n\nThe constant term $200$ survives the doubling and breaks the proportion between $x$ and the volume, so the statement is False.",
         "**E.** → True\n\nEqual steps of the input produce equal changes of the volume only when the model is a line; a square term makes the steps grow.\n\n$$V(x)=-8x+200$$\n\n$$V(x+1)-V(x)=-8$$\n\nThe difference does not contain $x$ any more, so every extra minute counts the same.\n\nThe change per step is the constant slope, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 56,
-      "solution_overview": "The stem fixes a single line.\n\n$$V(x)=200-8x$$\n\nSplitting the fraction term by term brings the rule into the shape $mx+q$.\n\n$$V(x)=-8x+200$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$m=-8\\qquad V(0)=200$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$-8x+200=0\\Rightarrow x=25$$",
+      "solution_overview": "The stem fixes a single line.\n\n$$V(x)=200-8x$$\n\nOrdering the two terms brings the rule into the shape $mx+q$.\n\n$$V(x)=-8x+200$$\n\nTwo numbers describe it completely: the slope, which is the change of height per unit step, and the height above the origin.\n\n$$m=-8\\qquad V(0)=200$$\n\nSetting the height to zero locates the single crossing of the $x$-axis, and the sign of the slope fixes the direction once and for all.\n\n$$-8x+200=0\\Rightarrow x=25$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -1873,7 +1873,7 @@
         "**B.** → True\n\nThe graph meets the $y$-axis where the input is zero, so the intercept is simply the constant term of the rule.\n\n$$u(x)=4x+10$$\n\n$$u(0)=4\\cdot 0+10=10$$\n\nThe graph cuts the $y$-axis at $y=10$, the height the claim names, so the statement is True.",
         "**C.** → False\n\nA line written as $mx+q$ shows both of its numbers openly: $m$ is the slope and $q$ is the height above the origin.\n\n$$u(x)=4x+10$$\n\n$$m=4\\qquad q=10$$\n\nStepping one unit to the right changes the height by $4$, the same everywhere along the line.\n\nThe slope is $4$ while the claim reports $10$; the other number, $10$, is the intercept, so the statement is False.",
         "**D.** → True\n\nA line has the same steepness everywhere, so its direction is decided once and for all by the sign of the slope.\n\n$$u(x)=4x+10$$\n\n$$m=4$$\n\nBecause the slope is positive, every step to the right raises the height.\n\nThe function is increasing, as claimed, so the statement is True.",
-        "**E.** → True\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$u(x)=4x+10$$\n\n$$u(3)=4\\cdot 3+10=22$$\n\nThe value is $22$, precisely the number in the claim, so the statement is True."
+        "**E.** → True\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$u(x)=4x+10$$\n\n$$u(3)=4\\cdot 3+10=22$$\n\nThe graph therefore passes through the point $\\left(3,22\\right)$.\n\nThe value is $22$, precisely the number in the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 57,
@@ -1910,7 +1910,7 @@
       ],
       "difficulty_level": "1/5",
       "sort_order": 58,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$h(x)=-x^{2}+6x-5$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(3,4\\right)\\qquad S=6\\qquad P=5$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=16\\qquad x_{1}=1\\qquad x_{2}=5$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $4$.",
+      "solution_overview": "Everything below refers to the same parabola.\n\n$$h(x)=-x^{2}+6x-5$$\n\nBefore testing anything, it pays to write down the vertex together with the sum and the product of the roots, all three being coefficient arithmetic.\n\n$$\\text{vertex}=\\left(3,4\\right)\\qquad S=6\\qquad P=5$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=16\\qquad x_{1}=1\\qquad x_{2}=5$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $4$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -1968,10 +1968,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 1,\\ 2,\\ 5,\\ 10,\\ 17$$\n\n$$\\text{first differences}:\\ 1,\\ 3,\\ 5,\\ 7$$\n\nThe steps are of different sizes, so the first differences are not constant, so the statement is False.",
+        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 1,\\ 2,\\ 5,\\ 10,\\ 17$$\n\n$$\\text{first differences}:\\ 1,\\ 3,\\ 5,\\ 7$$\n\nThe steps come in different sizes, which is exactly what non-constant first differences mean, so the statement is False.",
         "**B.** → True\n\nDifferencing twice is the standard test for a parabola: the second differences of a quadratic rule are constant, and they are zero for a line.\n\n$$\\text{first differences}:\\ 1,\\ 3,\\ 5,\\ 7$$\n\n$$\\text{second differences}:\\ 2,\\ 2,\\ 2$$\n\nThey are all equal to $2$, the value the claim names, so the statement is True.",
         "**C.** → True\n\nA table is consistent with a line when its first differences are constant, and with a parabola when the second differences are constant while the first ones are not.\n\n$$\\text{first differences}:\\ 1,\\ 3,\\ 5,\\ 7$$\n\n$$\\text{second differences}:\\ 2,\\ 2,\\ 2$$\n\n$$y=x^{2}+1$$\n\nThe pattern is exactly the one a quadratic rule produces, so the statement is True.",
-        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=x^{2}+1$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 1,\\quad 1\\mapsto 2,\\quad 2\\mapsto 5$$\n\nEvery row comes out right, so the claimed rule is the one behind the table, so the statement is True.",
+        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=x^{2}+1$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 1,\\quad 1\\mapsto 2,\\quad 2\\mapsto 5$$\n\nEvery row comes out right, which identifies the claimed rule as the one behind the table, so the statement is True.",
         "**E.** → True\n\nContinuing a table means continuing its rule, so identify the rule from the differences first and only then step one row further.\n\n$$y=x^{2}+1$$\n\n$$y(5)=5^{2}+1=26$$\n\nThe next row would read $26$, exactly the value claimed, so the statement is True."
       ],
       "difficulty_level": "2/5",
@@ -2010,7 +2010,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 61,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=3x^{2}-12x+7$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(2,-5\\right)\\qquad S=4\\qquad P=\\frac{7}{3}$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=60$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-5$.",
+      "solution_overview": "A single quadratic rule carries every claim.\n\n$$p(x)=3x^{2}-12x+7$$\n\nTwo standard readings cover most of what follows: the vertex from the completed square, and the sum and product of the roots from the coefficients.\n\n$$\\text{vertex}=\\left(2,-5\\right)\\qquad S=4\\qquad P=\\frac{7}{3}$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=60$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-5$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2043,7 +2043,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 62,
-      "solution_overview": "One formula carries the whole story.\n\n$$R(x)=-2x^{2}+36x$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(9,162\\right)\\qquad S=18\\qquad P=0$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=1296\\qquad x_{1}=0\\qquad x_{2}=18$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $162$.",
+      "solution_overview": "The story reduces to one formula and the quantities it links.\n\n$$R(x)=-2x^{2}+36x$$\n\nThe axis formula fixes the turning point, while the sum $S$ and the product $P$ of the roots come out of the coefficients with no equation to solve.\n\n$$\\text{vertex}=\\left(9,162\\right)\\qquad S=18\\qquad P=0$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=1296\\qquad x_{1}=0\\qquad x_{2}=18$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $162$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -2071,12 +2071,12 @@
         "**A.** → True\n\nCompleting the square rewrites a parabola as $a(x-h)^{2}+k$, where $h$ is the abscissa of the axis and $k$ the height of the turning point, so both numbers have to be produced first.\n\n$$q(x)=x^{2}+8x+10$$\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\nThe height of the turning point is the value on that axis.\n\n$$q\\left(-4\\right)=\\left(-4\\right)^{2}+8\\cdot \\left(-4\\right)+10=-6$$\n\nPutting the stretch, the shift and the height together gives\n\n$$q(x)=\\left(x+4\\right)^{2}-6$$\n\nThis is the very expression the claim displays, so the statement is True.",
         "**B.** → True\n\nThe turning point lies on the axis of symmetry, so its abscissa comes from the coefficients and its height is the value of the function there.\n\n$$q(x)=x^{2}+8x+10$$\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\nEvaluating on the axis gives the height.\n\n$$q\\left(-4\\right)=\\left(-4\\right)^{2}+8\\cdot \\left(-4\\right)+10=-6$$\n\nThe turning point is $\\left(-4,-6\\right)$, the point the claim names, so the statement is True.",
         "**C.** → False\n\nA parabola reaches its extreme value at the turning point and nowhere else, so locate the axis first and then read the height there.\n\n$$q(x)=x^{2}+8x+10$$\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\n$$q\\left(-4\\right)=\\left(-4\\right)^{2}+8\\cdot \\left(-4\\right)+10=-6$$\n\nThe leading coefficient $1$ is positive, so the arms rise on both sides and $-6$ is the smallest value the function ever takes; there is no largest one.\n\nThe smallest value is $-6$ while the claim reports $10$, so the statement is False.",
-        "**D.** → True\n\nAn inequality that has to hold for every real $x$ is a statement about the extreme value of the parabola, so the turning point decides it.\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\n$$q\\left(-4\\right)=\\left(-4\\right)^{2}+8\\cdot \\left(-4\\right)+10=-6$$\n\nThe leading coefficient $1$ is positive, so the values never drop below $-6$.\n\n$$q(x)\\ge-6$$\n\nThe bound $-6$ is reached and never passed, so the inequality holds everywhere, so the statement is True.",
+        "**D.** → True\n\nAn inequality that has to hold for every real $x$ is a statement about the extreme value of the parabola, so the turning point decides it.\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\n$$q\\left(-4\\right)=\\left(-4\\right)^{2}+8\\cdot \\left(-4\\right)+10=-6$$\n\nThe leading coefficient $1$ is positive, so the values never drop below $-6$.\n\n$$q(x)\\ge -6$$\n\nThe bound $-6$ is reached once and never passed anywhere else, so the statement is True.",
         "**E.** → False\n\nA parabola is its own mirror image in one vertical line, and the abscissa of that line is settled by the first two coefficients alone.\n\n$$x=-\\frac{b}{2a}$$\n\n$$q(x)=x^{2}+8x+10$$\n\n$$x=-\\frac{8}{2\\cdot 1}=-4$$\n\nThe mirror line is $x=-4$ while the claim names $x=4$, so the statement is False."
       ],
       "difficulty_level": "2/5",
       "sort_order": 63,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$q(x)=x^{2}+8x+10$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-4,-6\\right)\\qquad S=-8\\qquad P=10$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=24$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-6$.",
+      "solution_overview": "Everything below refers to the same parabola.\n\n$$q(x)=x^{2}+8x+10$$\n\nBefore testing anything, it pays to write down the vertex together with the sum and the product of the roots, all three being coefficient arithmetic.\n\n$$\\text{vertex}=\\left(-4,-6\\right)\\qquad S=-8\\qquad P=10$$\n\nA positive discriminant puts two crossings on the $x$-axis.\n\n$$\\Delta=24$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-6$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2104,7 +2104,7 @@
         "**A.** → True\n\nA table is consistent with a line when its first differences are constant, and with a parabola when the second differences are constant while the first ones are not.\n\n$$\\text{first differences}:\\ -3,\\ -3,\\ -3,\\ -3$$\n\n$$\\text{second differences}:\\ 0,\\ 0,\\ 0$$\n\n$$y=-3x+10$$\n\nThe pattern is exactly the one a linear rule produces, so the statement is True.",
         "**B.** → True\n\nThe slope of a line through a table is the change of the output divided by the change of the input, which is the same for every pair of rows only when the first differences are constant.\n\n$$\\text{first differences}:\\ -3,\\ -3,\\ -3,\\ -3$$\n\n$$m=\\frac{-3}{1}=-3$$\n\nThe line through the table has slope $-3$, as claimed, so the statement is True.",
         "**C.** → True\n\nAn average rate of change over a stretch is read from the two end rows only: the change of the output divided by the change of the input.\n\n$$y\\left(0\\right)=10\\qquad y\\left(4\\right)=-2$$\n\n$$\\frac{-2-10}{4-0}=\\frac{-12}{4}=-3$$\n\nThe average rate over that stretch is $-3$, the figure claimed, so the statement is True.",
-        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=-3x+10$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 10,\\quad 1\\mapsto 7,\\quad 2\\mapsto 4$$\n\nEvery row comes out right, so the claimed rule is the one behind the table, so the statement is True.",
+        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=-3x+10$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 10,\\quad 1\\mapsto 7,\\quad 2\\mapsto 4$$\n\nEvery row comes out right, which identifies the claimed rule as the one behind the table, so the statement is True.",
         "**E.** → False\n\nDifferencing twice is the standard test for a parabola: the second differences of a quadratic rule are constant, and they are zero for a line.\n\n$$\\text{first differences}:\\ -3,\\ -3,\\ -3,\\ -3$$\n\n$$\\text{second differences}:\\ 0,\\ 0,\\ 0$$\n\nThey are all equal to $0$ while the claim names $-3$, so the statement is False."
       ],
       "difficulty_level": "2/5",
@@ -2143,7 +2143,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 65,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=-3\\left(x+2\\right)\\left(x-5\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$p(x)=-3x^{2}+9x+30$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(\\frac{3}{2},\\frac{147}{4}\\right)\\qquad S=3\\qquad P=-10$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=441\\qquad x_{1}=-2\\qquad x_{2}=5$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $\\frac{147}{4}$.",
+      "solution_overview": "Only one parabola is in play here.\n\n$$p(x)=-3\\left(x+2\\right)\\left(x-5\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$p(x)=-3x^{2}+9x+30$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(\\frac{3}{2},\\frac{147}{4}\\right)\\qquad S=3\\qquad P=-10$$\n\nBecause the discriminant is positive the parabola meets the $x$-axis in two points, and factoring recovers them.\n\n$$\\Delta=441\\qquad x_{1}=-2\\qquad x_{2}=5$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $\\frac{147}{4}$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2168,15 +2168,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSymmetry about the $y$-axis means the axis of symmetry is the line $x=0$, and that happens exactly when the middle coefficient disappears.\n\n$$p(x)=2x^{2}-18$$\n\n$$x=-\\frac{0}{2\\cdot 2}=0$$\n\nTesting a pair of opposite inputs shows the same behaviour from the other side.\n\n$$p(-x)=2x^{2}-18$$\n\nThe rule is unchanged when $x$ is replaced by $-x$, so the $y$-axis is indeed the mirror, so the statement is True.",
-        "**B.** → True\n\nTwo inputs give the same output exactly when they lie at the same distance from the axis of symmetry, but the safest check is to work both values out.\n\n$$x=-\\frac{0}{2\\cdot 2}=0$$\n\n$$p\\left(-3\\right)=2\\cdot \\left(-3\\right)^{2}-18=0$$\n\n$$p(3)=2\\cdot 3^{2}-18=0$$\n\nThe midpoint of $-3$ and $3$ is $0$, which is the axis itself.\n\nBoth inputs return $0$, so the two values do agree, so the statement is True.",
+        "**A.** → True\n\nSymmetry about the $y$-axis means the axis of symmetry is the line $x=0$, and that happens exactly when the middle coefficient disappears.\n\n$$p(x)=2x^{2}-18$$\n\n$$x=-\\frac{0}{2\\cdot 2}=0$$\n\nTesting a pair of opposite inputs shows the same behaviour from the other side.\n\n$$p(-x)=2x^{2}-18$$\n\nThe rule is unchanged when $x$ is replaced by $-x$, the algebraic form of symmetry about the $y$-axis, so the statement is True.",
+        "**B.** → True\n\nTwo inputs give the same output exactly when they lie at the same distance from the axis of symmetry, but the safest check is to work both values out.\n\n$$x=-\\frac{0}{2\\cdot 2}=0$$\n\n$$p\\left(-3\\right)=2\\cdot \\left(-3\\right)^{2}-18=0$$\n\n$$p(3)=2\\cdot 3^{2}-18=0$$\n\nThe midpoint of $-3$ and $3$ is $0$, which is the axis itself.\n\nBoth inputs return $0$, an equal pair of values, so the statement is True.",
         "**C.** → True\n\nThe roots are the inputs where the graph touches the $x$-axis, so set the rule equal to zero; the discriminant says first how many such inputs exist.\n\n$$p(x)=2x^{2}-18$$\n\n$$\\Delta=0^{2}-4\\left(2\\right)\\left(-18\\right)=144$$\n\nA positive discriminant gives two separate roots, delivered by the quadratic formula.\n\n$$x_{1}=-3\\qquad x_{2}=3$$\n\nThe zeros are $-3$ and $3$, the pair named in the claim, so the statement is True.",
         "**D.** → False\n\nThe second of Vieta's relations gives the product of the roots as the constant term divided by the leading coefficient.\n\n$$P=\\frac{c}{a}$$\n\n$$p(x)=2x^{2}-18$$\n\n$$P=\\frac{-18}{2}=-9$$\n\nMultiplying the roots $-3$ and $3$ confirms the value.\n\nThe product is $-9$ while the claim reports $9$, so the statement is False.",
         "**E.** → True\n\nA parabola reaches its extreme value at the turning point and nowhere else, so locate the axis first and then read the height there.\n\n$$p(x)=2x^{2}-18$$\n\n$$x=-\\frac{0}{2\\cdot 2}=0$$\n\n$$p(0)=2\\cdot 0^{2}-18=-18$$\n\nThe leading coefficient $2$ is positive, so the arms rise on both sides and $-18$ is the smallest value the function ever takes; there is no largest one.\n\nThat extreme value is $-18$, exactly as claimed, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 66,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=2x^{2}-18$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(0,-18\\right)\\qquad S=0\\qquad P=-9$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=144\\qquad x_{1}=-3\\qquad x_{2}=3$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-18$.",
+      "solution_overview": "A single quadratic rule carries every claim.\n\n$$p(x)=2x^{2}-18$$\n\nTwo standard readings cover most of what follows: the vertex from the completed square, and the sum and product of the roots from the coefficients.\n\n$$\\text{vertex}=\\left(0,-18\\right)\\qquad S=0\\qquad P=-9$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=144\\qquad x_{1}=-3\\qquad x_{2}=3$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-18$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2209,7 +2209,7 @@
       ],
       "difficulty_level": "2/5",
       "sort_order": 67,
-      "solution_overview": "Two zeros and a leading coefficient describe a parabola completely: the zeros fix the factors and the coefficient fixes the vertical stretch.\n\n$$p(x)=3\\left(x+4\\right)\\left(x-2\\right)$$\n\nMultiplying the two brackets out puts the rule in standard form.\n\n$$p(x)=3x^{2}+6x-24$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-1,-27\\right)\\qquad S=-2\\qquad P=-8$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=324\\qquad x_{1}=-4\\qquad x_{2}=2$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-27$.",
+      "solution_overview": "Two zeros and a leading coefficient describe a parabola completely: the zeros fix the factors and the coefficient fixes the vertical stretch.\n\n$$p(x)=3\\left(x+4\\right)\\left(x-2\\right)$$\n\nMultiplying the two brackets out puts the rule in standard form.\n\n$$p(x)=3x^{2}+6x-24$$\n\nThe axis formula fixes the turning point, while the sum $S$ and the product $P$ of the roots come out of the coefficients with no equation to solve.\n\n$$\\text{vertex}=\\left(-1,-27\\right)\\qquad S=-2\\qquad P=-8$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\\Delta=324\\qquad x_{1}=-4\\qquad x_{2}=2$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-27$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "rebuild"
@@ -2237,7 +2237,7 @@
         "**A.** → True\n\nA slope and one point are enough for a line: start at the given point and walk along the slope.\n\n$$u(x)=-\\frac{1}{2}\\left(x-4\\right)+1$$\n\nExpanding the bracket puts the rule in the familiar shape.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\nThe rebuilt rule is the one printed in the claim, so the statement is True.",
         "**B.** → True\n\nThe graph meets the $y$-axis where the input is zero, so the intercept is simply the constant term of the rule.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\n$$u(0)=-\\frac{1}{2}\\cdot 0+3=3$$\n\nThe graph cuts the $y$-axis at $y=3$, the height the claim names, so the statement is True.",
         "**C.** → True\n\nThe graph crosses the $x$-axis where the height is zero, so set the rule equal to zero and solve the linear equation.\n\n$$-\\frac{1}{2}x+3=0$$\n\n$$-\\frac{1}{2}x=-3$$\n\n$$x=\\left(-3\\right)\\cdot \\left(-2\\right)=6$$\n\nThe crossing is at $x=6$, exactly where the claim puts it, so the statement is True.",
-        "**D.** → True\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\n$$u\\left(-2\\right)=-\\frac{1}{2}\\cdot \\left(-2\\right)+3=4$$\n\nThe value is $4$, precisely the number in the claim, so the statement is True.",
+        "**D.** → True\n\nEvaluating a function means putting the number in place of every $x$ and working the arithmetic out once.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\n$$u\\left(-2\\right)=-\\frac{1}{2}\\cdot \\left(-2\\right)+3=4$$\n\nThe graph therefore passes through the point $\\left(-2,4\\right)$.\n\nThe value is $4$, precisely the number in the claim, so the statement is True.",
         "**E.** → False\n\nA line has the same steepness everywhere, so its direction is decided once and for all by the sign of the slope.\n\n$$u(x)=-\\frac{1}{2}x+3$$\n\n$$m=-\\frac{1}{2}$$\n\nBecause the slope is negative, every step to the right lowers the height.\n\nThe function is decreasing, not increasing, so the statement is False."
       ],
       "difficulty_level": "2/5",
@@ -2275,7 +2275,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 69,
-      "solution_overview": "Far from the origin the square term decides; a line can only win locally.",
+      "solution_overview": "No numbers are on offer, so the meetings of the graphs have to be counted through the difference $g-f$ in general form.\n\n$$g(x)-f(x)=0$$\n\nCommon points of a line and a parabola solve a single quadratic equation, so there can never be more than two of them. Far out on either side the $x^{2}$ term outgrows every linear term, so the parabola decides who ends up on top.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2308,7 +2308,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 70,
-      "solution_overview": "Only the linear part of $d$ can be tuned by $f$; the opening is inherited from $g$.",
+      "solution_overview": "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled through the formulas that hold for every parabola.\n\n$$x=-\\frac{b}{2a}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely.\n\nThe difference of the two functions is given its own name, so watch which of its coefficients still depend on the line.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2341,7 +2341,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 71,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=2\\qquad g(x)=x^{2} + 2 x + 3$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-1,2\\right)\\qquad S=-2\\qquad P=3$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are one.\n\n$$f(x)-g(x)=- x^{2} - 2 x - 1\\qquad \\Delta=0$$\n\nBecause $f$ is a line with non-zero slope, a rewriting $g=A f^{2}+B f+C$ exists and is uniquely determined.",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=2\\qquad g(x)=x^{2} + 2 x + 3$$\n\nNo work beyond reading is needed for the slope, for the two values at $0$ and for the opening direction, which is upwards here because of the sign in front of $x^{2}$.\n\n$$m=0\\qquad f(0)=2\\qquad g(0)=3\\qquad a=1$$\n\nSince the parabola is concrete, the vertex can be computed once and reused: the axis first, then the height above it.\n\n$$g(x)=\\left(x+1\\right)^{2}+2\\qquad \\text{vertex}=\\left(-1,2\\right)$$\n\nVieta's relations read the sum $S$ and the product $P$ of the roots of $g$ straight off the coefficients, and the discriminant of $g$ says how many real roots there are to sum in the first place.\n\n$$S=-2\\qquad P=3\\qquad \\Delta_{g}=-8$$\n\nCommon points are the roots of $f-g$, and that difference is again a quadratic, so its discriminant settles the count: one here.\n\n$$f(x)-g(x)=- x^{2} - 2 x - 1\\qquad \\Delta=0$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "geometric"
@@ -2366,10 +2366,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 1,\\ 0,\\ 3,\\ 10,\\ 21$$\n\n$$\\text{first differences}:\\ -1,\\ 3,\\ 7,\\ 11$$\n\nThe steps are of different sizes, so the first differences are not constant, so the statement is False.",
+        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 1,\\ 0,\\ 3,\\ 10,\\ 21$$\n\n$$\\text{first differences}:\\ -1,\\ 3,\\ 7,\\ 11$$\n\nThe steps come in different sizes, which is exactly what non-constant first differences mean, so the statement is False.",
         "**B.** → True\n\nDifferencing twice is the standard test for a parabola: the second differences of a quadratic rule are constant, and they are zero for a line.\n\n$$\\text{first differences}:\\ -1,\\ 3,\\ 7,\\ 11$$\n\n$$\\text{second differences}:\\ 4,\\ 4,\\ 4$$\n\nThey are all equal to $4$, the value the claim names, so the statement is True.",
         "**C.** → True\n\nFor equally spaced inputs the constant second difference of a quadratic rule equals twice the leading coefficient times the square of the spacing, so the coefficient can be read off the table directly.\n\n$$\\text{second difference}=2a\\left(\\Delta x\\right)^{2}$$\n\n$$\\text{second differences}:\\ 4,\\ 4,\\ 4$$\n\n$$a=\\frac{4}{2\\cdot 1^{2}}=2$$\n\nThe leading coefficient is $2$, the number the claim gives, so the statement is True.",
-        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=2x^{2}-3x+1$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 1,\\quad 1\\mapsto 0,\\quad 2\\mapsto 3$$\n\nEvery row comes out right, so the claimed rule is the one behind the table, so the statement is True.",
+        "**D.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=2x^{2}-3x+1$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 1,\\quad 1\\mapsto 0,\\quad 2\\mapsto 3$$\n\nEvery row comes out right, which identifies the claimed rule as the one behind the table, so the statement is True.",
         "**E.** → True\n\nA claim about the rows of the table is settled inside the table itself: compare the listed outputs and see where the extreme one sits.\n\n$$y:\\ 1,\\ 0,\\ 3,\\ 10,\\ 21$$\n\n$$\\text{smallest listed value}=0$$\n\nThat value appears at $x=1$.\n\nThe smallest entry of the table does sit at $x=1$, so the statement is True."
       ],
       "difficulty_level": "3/5",
@@ -2402,13 +2402,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nThe turning point lies on the axis of symmetry, so its abscissa comes from the coefficients and its height is the value of the function there.\n\n$$q(x)=x^{2}-10x+21$$\n\n$$x=-\\frac{-10}{2\\cdot 1}=5$$\n\nEvaluating on the axis gives the height.\n\n$$q(5)=5^{2}-10\\cdot 5+21=-4$$\n\nThe turning point is $\\left(5,-4\\right)$, the point the claim names, so the statement is True.",
         "**B.** → True\n\nThe roots are the inputs where the graph touches the $x$-axis, so set the rule equal to zero; the discriminant says first how many such inputs exist.\n\n$$q(x)=x^{2}-10x+21$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(1\\right)\\left(21\\right)=16$$\n\nA positive discriminant gives two separate roots, delivered by the quadratic formula.\n\n$$x_{1}=3\\qquad x_{2}=7$$\n\nThe zeros are $3$ and $7$, the pair named in the claim, so the statement is True.",
-        "**C.** → True\n\nThe two roots sit symmetrically on either side of the axis, so their gap is the square root of the discriminant divided by the leading coefficient.\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{\\sqrt{\\Delta}}{\\left|a\\right|}$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(1\\right)\\left(21\\right)=16$$\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{4}{1}=4$$\n\nThe roots $3$ and $7$ are indeed $4$ apart.\n\nThe gap is $4$, the distance the claim reports, so the statement is True.",
+        "**C.** → True\n\nThe two roots sit symmetrically on either side of the axis, so their gap is the square root of the discriminant divided by the size of the leading coefficient.\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{\\sqrt{\\Delta}}{\\left|a\\right|}$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(1\\right)\\left(21\\right)=16$$\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{4}{1}=4$$\n\nThe roots $3$ and $7$ are indeed $4$ apart.\n\nThe gap is $4$, the distance the claim reports, so the statement is True.",
         "**D.** → False\n\nA parabola reaches its extreme value at the turning point and nowhere else, so locate the axis first and then read the height there.\n\n$$q(x)=x^{2}-10x+21$$\n\n$$x=-\\frac{-10}{2\\cdot 1}=5$$\n\n$$q(5)=5^{2}-10\\cdot 5+21=-4$$\n\nThe leading coefficient $1$ is positive, so the arms rise on both sides and $-4$ is the smallest value the function ever takes; there is no largest one.\n\nThe smallest value is $-4$ while the claim reports $21$, so the statement is False.",
-        "**E.** → False\n\nA horizontal line meets the parabola where the rule takes that constant value, so move the constant to the other side and count the solutions of the quadratic that is left.\n\n$$q(x)+4=x^{2}-10x+25$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(1\\right)\\left(25\\right)=0$$\n\nThe turning point sits at height $-4$ and the arms open upwards, so the levels the graph reaches twice are exactly those above $-4$.\n\nThe level $y=-4$ is the height of the turning point itself, so the line touches the graph once instead of twice, so the statement is False."
+        "**E.** → False\n\nA horizontal line meets the parabola where the rule takes that constant value, so move the constant to the other side and count the solutions of the quadratic that is left.\n\n$$q(x)+4=x^{2}-10x+25$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(1\\right)\\left(25\\right)=0$$\n\nThe turning point sits at height $-4$ and the arms open upwards, so the levels the graph reaches twice are exactly those above $-4$.\n\nThe level $y=-4$ is the height of the turning point itself, where the line touches the graph once instead of cutting it twice, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 73,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$q(x)=x^{2}-10x+21$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(5,-4\\right)\\qquad S=10\\qquad P=21$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=16\\qquad x_{1}=3\\qquad x_{2}=7$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-4$.",
+      "solution_overview": "Everything below refers to the same parabola.\n\n$$q(x)=x^{2}-10x+21$$\n\nBefore testing anything, it pays to write down the vertex together with the sum and the product of the roots, all three being coefficient arithmetic.\n\n$$\\text{vertex}=\\left(5,-4\\right)\\qquad S=10\\qquad P=21$$\n\nBecause the discriminant is positive the parabola meets the $x$-axis in two points, and factoring recovers them.\n\n$$\\Delta=16\\qquad x_{1}=3\\qquad x_{2}=7$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-4$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2436,12 +2436,12 @@
         "**A.** → True\n\nThe fuel use follows a parabola, and a parabola turns exactly once: the best input is the abscissa of the turning point.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\n$$x=-\\frac{-2}{2\\cdot \\left(\\frac{1}{50}\\right)}=50$$\n\nThe leading coefficient $\\frac{1}{50}$ is positive, so the model falls to that input and rises afterwards.\n\nThe fuel use is therefore smallest at $x=50$, the input in the claim, so the statement is True.",
         "**B.** → True\n\nThe extreme fuel use is the height of the turning point, so find the input that produces it and evaluate the model there.\n\n$$x=-\\frac{-2}{2\\cdot \\left(\\frac{1}{50}\\right)}=50$$\n\n$$F(50)=\\frac{1}{50}\\cdot 50^{2}-2\\cdot 50+80=30$$\n\nBecause the leading coefficient $\\frac{1}{50}$ is positive, this height is the smallest value the model ever reaches.\n\nThe extreme fuel use is $30$, the figure the claim gives, so the statement is True.",
         "**C.** → False\n\nAn average rate compares the change of the fuel use with the change of the input, so both endpoint values are needed first.\n\n$$F(20)=\\frac{1}{50}\\cdot 20^{2}-2\\cdot 20+80=48$$\n\n$$F(40)=\\frac{1}{50}\\cdot 40^{2}-2\\cdot 40+80=32$$\n\n$$\\frac{F\\left(40\\right)-F\\left(20\\right)}{40-20}=\\frac{-16}{20}=-\\frac{4}{5}$$\n\nThe average rate over that stretch is $-\\frac{4}{5}$, not $-1$, so the statement is False.",
-        "**D.** → True\n\nThe fuel use hits zero exactly when the quadratic has a real root, so the discriminant answers the question.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\n$$\\Delta=\\left(-2\\right)^{2}-4\\left(\\frac{1}{50}\\right)\\left(80\\right)=-\\frac{12}{5}$$\n\nThe extreme value of the model confirms the same picture.\n\n$$F(50)=\\frac{1}{50}\\cdot 50^{2}-2\\cdot 50+80=30$$\n\nA negative discriminant keeps the whole graph on one side of the axis, so the fuel use never reaches zero, so the statement is True.",
+        "**D.** → True\n\nThe fuel use hits zero exactly when the quadratic has a real root, so the discriminant answers the question.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\n$$\\Delta=\\left(-2\\right)^{2}-4\\left(\\frac{1}{50}\\right)\\left(80\\right)=-\\frac{12}{5}$$\n\nThe extreme value of the model confirms the same picture.\n\n$$F(50)=\\frac{1}{50}\\cdot 50^{2}-2\\cdot 50+80=30$$\n\nA negative discriminant keeps the whole graph on one side of the $x$-axis, out of reach of a zero fuel use, so the statement is True.",
         "**E.** → True\n\nThe model turns any input into the fuel use, so a claim about one particular input is settled by a single substitution.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\n$$F(100)=\\frac{1}{50}\\cdot 100^{2}-2\\cdot 100+80=80$$\n\nThe model returns $80$ there, the figure named in the claim, so the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 74,
-      "solution_overview": "One formula carries the whole story.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(50,30\\right)\\qquad S=100\\qquad P=4000$$\n\nA negative discriminant keeps the graph entirely on one side of the $x$-axis.\n\n$$\\Delta=-\\frac{12}{5}$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $30$.",
+      "solution_overview": "The story reduces to one formula and the quantities it links.\n\n$$F(x)=\\frac{1}{50}x^{2}-2x+80$$\n\nThe completed square hands over the turning point, and Vieta's relations hand over the sum and the product of the roots.\n\n$$\\text{vertex}=\\left(50,30\\right)\\qquad S=100\\qquad P=4000$$\n\nA negative discriminant keeps the graph entirely on one side of the $x$-axis.\n\n$$\\Delta=-\\frac{12}{5}$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $30$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -2470,11 +2470,11 @@
         "**B.** → True\n\nThe roots are the inputs where the graph touches the $x$-axis, so set the rule equal to zero; the discriminant says first how many such inputs exist.\n\n$$q(x)=2x^{2}-12x+10$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\left(2\\right)\\left(10\\right)=64$$\n\nA positive discriminant gives two separate roots, delivered by the quadratic formula.\n\n$$x_{1}=1\\qquad x_{2}=5$$\n\nThe zeros are $1$ and $5$, the pair named in the claim, so the statement is True.",
         "**C.** → True\n\nThe graph meets the $y$-axis where the input is zero, so the intercept is simply the constant term of the rule.\n\n$$q(x)=2x^{2}-12x+10$$\n\n$$q(0)=2\\cdot 0^{2}-12\\cdot 0+10=10$$\n\nThe graph cuts the $y$-axis at $y=10$, the height the claim names, so the statement is True.",
         "**D.** → True\n\nThe leading coefficient is the number multiplying $x^{2}$ once every bracket has been multiplied out, and any minus sign in front belongs to it.\n\n$$q(x)=2x^{2}-12x+10$$\n\n$$a=2$$\n\nIts sign tells the opening direction and its size tells how narrow the parabola is.\n\nThe leading coefficient is $2$, the number the claim gives, so the statement is True.",
-        "**E.** → False\n\nA horizontal line meets the parabola where the rule takes that constant value, so move the constant to the other side and count the solutions of the quadratic that is left.\n\n$$q(x)+8=2x^{2}-12x+18$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\left(2\\right)\\left(18\\right)=0$$\n\nThe turning point sits at height $-8$ and the arms open upwards, so the levels the graph reaches twice are exactly those above $-8$.\n\nThe level $y=-8$ is the height of the turning point itself, so the line touches the graph once instead of twice, so the statement is False."
+        "**E.** → False\n\nA horizontal line meets the parabola where the rule takes that constant value, so move the constant to the other side and count the solutions of the quadratic that is left.\n\n$$q(x)+8=2x^{2}-12x+18$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\left(2\\right)\\left(18\\right)=0$$\n\nThe turning point sits at height $-8$ and the arms open upwards, so the levels the graph reaches twice are exactly those above $-8$.\n\nThe level $y=-8$ is the height of the turning point itself, where the line touches the graph once instead of cutting it twice, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 75,
-      "solution_overview": "A vertex already fixes the shape up to one stretch factor, so write the parabola in completed-square form and let the extra point decide the factor.\n\n$$q(x)=a\\left(x-3\\right)^{2}-8$$\n\nSubstituting the point $(1,0)$ leaves one equation for $a$.\n\n$$0=a\\left(1-3\\right)^{2}-8\\Rightarrow a=2$$\n\nExpanding the square puts the rule in standard form.\n\n$$q(x)=2x^{2}-12x+10$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(3,-8\\right)\\qquad S=6\\qquad P=5$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=64\\qquad x_{1}=1\\qquad x_{2}=5$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
+      "solution_overview": "A vertex already fixes the shape up to one stretch factor, so write the parabola in completed-square form and let the extra point decide the factor.\n\n$$q(x)=a\\left(x-3\\right)^{2}-8$$\n\nSubstituting the point $(1,0)$ leaves one equation for $a$.\n\n$$0=a\\left(1-3\\right)^{2}-8\\Rightarrow a=2$$\n\nExpanding the square puts the rule in standard form.\n\n$$q(x)=2x^{2}-12x+10$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(3,-8\\right)\\qquad S=6\\qquad P=5$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\\Delta=64\\qquad x_{1}=1\\qquad x_{2}=5$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "rebuild"
@@ -2507,7 +2507,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 76,
-      "solution_overview": "One formula carries the whole story.\n\n$$P(x)=-x^{2}+24x-80$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(12,64\\right)\\qquad S=24\\qquad P=80$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=256\\qquad x_{1}=4\\qquad x_{2}=20$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $64$.",
+      "solution_overview": "The situation is captured by a single rule.\n\n$$P(x)=-x^{2}+24x-80$$\n\nTwo standard readings cover most of what follows: the vertex from the completed square, and the sum and product of the roots from the coefficients.\n\n$$\\text{vertex}=\\left(12,64\\right)\\qquad S=24\\qquad P=80$$\n\nTwo real roots follow from the positive discriminant, and the axis of symmetry sits exactly halfway between them.\n\n$$\\Delta=256\\qquad x_{1}=4\\qquad x_{2}=20$$\n\nThe arms open downwards, so the turning point is the highest point of the graph and the largest value is $64$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "applied"
@@ -2536,11 +2536,11 @@
         "**B.** → True\n\nA parabola is its own mirror image in one vertical line, and the abscissa of that line is settled by the first two coefficients alone.\n\n$$x=-\\frac{b}{2a}$$\n\n$$w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$$\n\n$$x=-\\frac{-3}{2\\cdot \\left(\\frac{1}{2}\\right)}=3$$\n\nThe mirror line is $x=3$, exactly the line named in the claim, so the statement is True.",
         "**C.** → True\n\nExpanding means multiplying every bracket out and collecting equal powers of $x$; nothing else about the function changes.\n\n$$w(x)=\\frac{1}{2}\\left(x+1\\right)\\left(x-7\\right)$$\n\n$$w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$$\n\nEvery coefficient of the expansion can now be compared with the one the claim displays.\n\nThe two rules agree in all three coefficients, so the statement is True.",
         "**D.** → True\n\nA parabola reaches its extreme value at the turning point and nowhere else, so locate the axis first and then read the height there.\n\n$$w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$$\n\n$$x=-\\frac{-3}{2\\cdot \\left(\\frac{1}{2}\\right)}=3$$\n\n$$w(3)=\\frac{1}{2}\\cdot 3^{2}-3\\cdot 3-\\frac{7}{2}=-8$$\n\nThe leading coefficient $\\frac{1}{2}$ is positive, so the arms rise on both sides and $-8$ is the smallest value the function ever takes; there is no largest one.\n\nThat extreme value is $-8$, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nAn inequality that has to hold for every real $x$ is a statement about the extreme value of the parabola, so the turning point decides it.\n\n$$x=-\\frac{-3}{2\\cdot \\left(\\frac{1}{2}\\right)}=3$$\n\n$$w(3)=\\frac{1}{2}\\cdot 3^{2}-3\\cdot 3-\\frac{7}{2}=-8$$\n\nThe leading coefficient $\\frac{1}{2}$ is positive, so the values never drop below $-8$.\n\n$$w(x)\\ge-8$$\n\nThe value $-8$ is taken at the turning point, which breaks the claimed bound $0$, so the statement is False."
+        "**E.** → False\n\nAn inequality that has to hold for every real $x$ is a statement about the extreme value of the parabola, so the turning point decides it.\n\n$$x=-\\frac{-3}{2\\cdot \\left(\\frac{1}{2}\\right)}=3$$\n\n$$w(3)=\\frac{1}{2}\\cdot 3^{2}-3\\cdot 3-\\frac{7}{2}=-8$$\n\nThe leading coefficient $\\frac{1}{2}$ is positive, so the values never drop below $-8$.\n\n$$w(x)\\ge -8$$\n\nThe value $-8$ is taken at the turning point, which breaks the claimed bound $0$, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 77,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$w(x)=\\frac{1}{2}\\left(x+1\\right)\\left(x-7\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(3,-8\\right)\\qquad S=6\\qquad P=-7$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=16\\qquad x_{1}=-1\\qquad x_{2}=7$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
+      "solution_overview": "There is one graph to study, and it is a parabola.\n\n$$w(x)=\\frac{1}{2}\\left(x+1\\right)\\left(x-7\\right)$$\n\nMultiplying out puts the same rule in standard form, where every coefficient can be read off directly.\n\n$$w(x)=\\frac{1}{2}x^{2}-3x-\\frac{7}{2}$$\n\nThe axis formula fixes the turning point, while the sum $S$ and the product $P$ of the roots come out of the coefficients with no equation to solve.\n\n$$\\text{vertex}=\\left(3,-8\\right)\\qquad S=6\\qquad P=-7$$\n\nBecause the discriminant is positive the parabola meets the $x$-axis in two points, and factoring recovers them.\n\n$$\\Delta=16\\qquad x_{1}=-1\\qquad x_{2}=7$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-8$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2565,9 +2565,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 0,\\ 25,\\ 40,\\ 45,\\ 40$$\n\n$$\\text{first differences}:\\ 25,\\ 15,\\ 5,\\ -5$$\n\nThe steps are of different sizes, so the first differences are not constant, so the statement is False.",
+        "**A.** → False\n\nWith equally spaced inputs the differences of neighbouring outputs do all the work: constant first differences are the fingerprint of a line.\n\n$$y:\\ 0,\\ 25,\\ 40,\\ 45,\\ 40$$\n\n$$\\text{first differences}:\\ 25,\\ 15,\\ 5,\\ -5$$\n\nThe steps come in different sizes, which is exactly what non-constant first differences mean, so the statement is False.",
         "**B.** → True\n\nDifferencing twice is the standard test for a parabola: the second differences of a quadratic rule are constant, and they are zero for a line.\n\n$$\\text{first differences}:\\ 25,\\ 15,\\ 5,\\ -5$$\n\n$$\\text{second differences}:\\ -10,\\ -10,\\ -10$$\n\nThey are all equal to $-10$, the value the claim names, so the statement is True.",
-        "**C.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=-5x^{2}+30x$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 0,\\quad 1\\mapsto 25,\\quad 2\\mapsto 40$$\n\nEvery row comes out right, so the claimed rule is the one behind the table, so the statement is True.",
+        "**C.** → True\n\nTesting a proposed rule against a table is a matter of substitution: the rule has to reproduce every row, and for a rule of degree at most two three rows already pin it down.\n\n$$y=-5x^{2}+30x$$\n\nRunning the claimed rule over the first rows gives\n\n$$0\\mapsto 0,\\quad 1\\mapsto 25,\\quad 2\\mapsto 40$$\n\nEvery row comes out right, which identifies the claimed rule as the one behind the table, so the statement is True.",
         "**D.** → True\n\nA claim about the rows of the table is settled inside the table itself: compare the listed outputs and see where the extreme one sits.\n\n$$y:\\ 0,\\ 25,\\ 40,\\ 45,\\ 40$$\n\n$$\\text{largest listed value}=45$$\n\nThat value appears at $x=3$.\n\nThe largest entry of the table does sit at $x=3$, so the statement is True.",
         "**E.** → True\n\nContinuing a table means continuing its rule, so identify the rule from the differences first and only then step one row further.\n\n$$y=-5x^{2}+30x$$\n\n$$y(5)=-5\\cdot 5^{2}+30\\cdot 5=25$$\n\nThe next row would read $25$, exactly the value claimed, so the statement is True."
       ],
@@ -2607,7 +2607,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 79,
-      "solution_overview": "Composing inside moves the roots; composing outside preserves the axis.",
+      "solution_overview": "Everything is stated for a general parabola, so the reasoning runs on the structure of $ax^{2}+bx+c$ instead of on numbers.\n\n$$x=-\\frac{b}{2a}\\qquad f^{-1}(x)=\\frac{x-q}{m}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Nesting two polynomials multiplies their highest powers instead of adding them, so a line inside a parabola still leaves a parabola. Undoing a line gives another line, so wrapping it around a parabola cannot change the highest power that appears.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2640,7 +2640,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 80,
-      "solution_overview": "Mirroring preserves counts, tangency and opening direction, but flips the axis.",
+      "solution_overview": "No coefficients are fixed, so the letters $a$, $b$ and $c$ have to be handled through the formulas that hold for every parabola.\n\n$$x=-\\frac{b}{2a}\\qquad \\Delta=b^{2}-4ac$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Replacing $x$ by $-x$ reflects a graph in the $y$-axis, and a parabola survives that swap exactly when its middle coefficient vanishes.\n\nBoth graphs are reflected at once, so the question is always which feature survives a reflection.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2673,7 +2673,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 81,
-      "solution_overview": "Two points fix a line; three non-collinear points fix a parabola.",
+      "solution_overview": "The points stay unnamed, so the question is one of counting conditions against unknown coefficients.\n\n$$f(x)=mx+q\\qquad g(x)=ax^{2}+bx+c,\\quad a\\neq 0$$\n\nTwo points with different abscissas settle exactly one line, and three non-collinear ones settle exactly one parabola.\n\nThe points stay anonymous, so only counting arguments can decide the claims.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2706,7 +2706,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 82,
-      "solution_overview": "Only the axis of $d$ feels the slope of $f$; the opening and tangency read off $d$.",
+      "solution_overview": "Since $a$, $b$ and $c$ are never given numbers, each claim has to survive for every admissible choice of them.\n\n$$x=-\\frac{b}{2a}\\qquad \\Delta=b^{2}-4ac$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nThe difference of the two functions is given its own name, so watch which of its coefficients still depend on the line.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2739,7 +2739,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 83,
-      "solution_overview": "Product fixes whether the signs agree; sum then decides which sign it is.",
+      "solution_overview": "Arithmetic is unavailable here: the coefficients stay symbolic, so the axis formula has to be argued with rather than evaluated.\n\n$$x=-\\frac{b}{2a}\\qquad S=-\\frac{b}{a}\\qquad P=\\frac{c}{a}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. Vieta's relations turn the coefficients into the sum and the product of the roots without solving any equation. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2838,7 +2838,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 86,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=5 x + 1\\qquad g(x)=3 x^{2} - 2 x - 1$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{1}{3},-\\frac{4}{3}\\right)\\qquad S=\\frac{2}{3}\\qquad P=-\\frac{1}{3}$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 3 x^{2} + 7 x + 2\\qquad \\Delta=73$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{3}{25},\\quad B=-\\frac{16}{25},\\quad C=-\\frac{12}{25}$$",
+      "solution_overview": "Both rules are handed over with numbers already in place:\n\n$$f(x)=5 x + 1\\qquad g(x)=3 x^{2} - 2 x - 1$$\n\nRewriting $g$ as $a(x-h)^{2}+k$ exposes the vertex, with $h$ taken from the axis formula and $k$ obtained by substituting that abscissa back in.\n\n$$g(x)=3\\left(x-\\frac{1}{3}\\right)^{2}-\\frac{4}{3}\\qquad \\text{vertex}=\\left(\\frac{1}{3},-\\frac{4}{3}\\right)$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{3}{25},\\quad B=-\\frac{16}{25},\\quad C=-\\frac{12}{25}$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2863,7 +2863,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe two roots sit symmetrically on either side of the axis, so their gap is the square root of the discriminant divided by the leading coefficient.\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{\\sqrt{\\Delta}}{\\left|a\\right|}$$\n\n$$\\Delta=3^{2}-4\\left(1\\right)\\left(-40\\right)=169$$\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{13}{1}=13$$\n\nThe roots $-8$ and $5$ are indeed $13$ apart.\n\nThe gap is $13$, the distance the claim reports, so the statement is True.",
+        "**A.** → True\n\nThe two roots sit symmetrically on either side of the axis, so their gap is the square root of the discriminant divided by the size of the leading coefficient.\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{\\sqrt{\\Delta}}{\\left|a\\right|}$$\n\n$$\\Delta=3^{2}-4\\left(1\\right)\\left(-40\\right)=169$$\n\n$$\\left|x_{1}-x_{2}\\right|=\\frac{13}{1}=13$$\n\nThe roots $-8$ and $5$ are indeed $13$ apart.\n\nThe gap is $13$, the distance the claim reports, so the statement is True.",
         "**B.** → True\n\nA parabola is its own mirror image in one vertical line, and the abscissa of that line is settled by the first two coefficients alone.\n\n$$x=-\\frac{b}{2a}$$\n\n$$p(x)=x^{2}+3x-40$$\n\n$$x=-\\frac{3}{2\\cdot 1}=-\\frac{3}{2}$$\n\nThe mirror line is $x=-\\frac{3}{2}$, exactly the line named in the claim, so the statement is True.",
         "**C.** → False\n\nVieta's relations read the sum of the two roots straight off the coefficients, with no equation to solve: it is minus the middle coefficient divided by the leading one.\n\n$$S=-\\frac{b}{a}$$\n\n$$p(x)=x^{2}+3x-40$$\n\n$$S=-\\frac{3}{1}=-3$$\n\nThe roots themselves are $-8$ and $5$, and they do add up to $-3$.\n\nThe sum is $-3$ while the claim reports $3$, so the statement is False.",
         "**D.** → True\n\nThe second of Vieta's relations gives the product of the roots as the constant term divided by the leading coefficient.\n\n$$P=\\frac{c}{a}$$\n\n$$p(x)=x^{2}+3x-40$$\n\n$$P=\\frac{-40}{1}=-40$$\n\nMultiplying the roots $-8$ and $5$ confirms the value.\n\nThe product is $-40$, exactly what the claim reports, so the statement is True.",
@@ -2871,7 +2871,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 87,
-      "solution_overview": "The stem fixes a single parabola.\n\n$$p(x)=x^{2}+3x-40$$\n\nCompleting the square locates the turning point, and Vieta's relations give the sum $S$ and the product $P$ of the roots without solving anything.\n\n$$\\text{vertex}=\\left(-\\frac{3}{2},-\\frac{169}{4}\\right)\\qquad S=-3\\qquad P=-40$$\n\nA positive discriminant puts two crossings on the $x$-axis, placed symmetrically around the axis of the parabola.\n\n$$\\Delta=169\\qquad x_{1}=-8\\qquad x_{2}=5$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-\\frac{169}{4}$.",
+      "solution_overview": "There is one graph to study, and it is a parabola.\n\n$$p(x)=x^{2}+3x-40$$\n\nThe axis formula fixes the turning point, while the sum $S$ and the product $P$ of the roots come out of the coefficients with no equation to solve.\n\n$$\\text{vertex}=\\left(-\\frac{3}{2},-\\frac{169}{4}\\right)\\qquad S=-3\\qquad P=-40$$\n\nThe discriminant comes out positive, so the graph cuts the $x$-axis twice, once on either side of the axis of symmetry.\n\n$$\\Delta=169\\qquad x_{1}=-8\\qquad x_{2}=5$$\n\nThe arms open upwards, so the turning point is the lowest point of the graph and the smallest value is $-\\frac{169}{4}$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parabola"
@@ -2904,7 +2904,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 88,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=4 - 6 x\\qquad g(x)=2 x^{2} + 3 x - 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(-\\frac{3}{4},-\\frac{25}{8}\\right)\\qquad S=-\\frac{3}{2}\\qquad P=-1$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- 2 x^{2} - 9 x + 6\\qquad \\Delta=129$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{18},\\quad B=-\\frac{17}{18},\\quad C=\\frac{8}{9}$$",
+      "solution_overview": "Everything starts from the two concrete rules\n\n$$f(x)=4 - 6 x\\qquad g(x)=2 x^{2} + 3 x - 2$$\n\nThe slope, the vertical intercepts and the opening direction all sit in plain view in the coefficients; the arms go upwards.\n\n$$m=-6\\qquad f(0)=4\\qquad g(0)=-2\\qquad a=2$$\n\nCompleting the square moves the turning point of the parabola into view: the axis comes from the first two coefficients and the height is the value of $g$ there.\n\n$$g(x)=2\\left(x+\\frac{3}{4}\\right)^{2}-\\frac{25}{8}\\qquad \\text{vertex}=\\left(-\\frac{3}{4},-\\frac{25}{8}\\right)$$\n\nComparing the two graphs means solving $f(x)=g(x)$, a quadratic equation whose discriminant reports two real solutions.\n\n$$f(x)-g(x)=- 2 x^{2} - 9 x + 6\\qquad \\Delta=129$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2937,7 +2937,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 89,
-      "solution_overview": "Through the vertex, only the horizontal line is tangent; every other slope cuts.",
+      "solution_overview": "Everything is stated for a general parabola, so the reasoning runs on the structure of $ax^{2}+bx+c$ instead of on numbers.\n\n$$x=-\\frac{b}{2a}\\qquad \\Delta=b^{2}-4ac$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely. The discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Completed-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken.\n\nThe line is pinned to the vertex $V$, so one common point is there before any computation starts.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -2970,7 +2970,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 90,
-      "solution_overview": "Under composition degrees multiply, so a parabola inside a parabola gives $x^{4}$.",
+      "solution_overview": "No numbers appear, so the claims are settled by what nesting does to the highest power of $x$.\n\n$$f(x)=mx+q\\qquad g(x)=ax^{2}+bx+c,\\quad a\\neq 0$$\n\nNesting multiplies the highest powers instead of adding them, so feeding a parabola into a parabola reaches $x^{4}$, and inserting a line between them changes nothing about that.\n\nHere a parabola is nested inside a parabola, not merely a line inside one.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -3003,7 +3003,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 91,
-      "solution_overview": "A line can bound a parabola on the flat side only, never on the opening side.",
+      "solution_overview": "The parabola arrives already centred on its vertex, so the reasoning stays with the roles of $a$, $h$ and $k$.\n\n$$g(x)=a\\left(x-h\\right)^{2}+k$$\n\nCompleted-square form puts the turning point at $(h,k)$, and the sign of $a$ decides whether $k$ is the smallest or the largest value taken. Far out on either side the $x^{2}$ term outgrows every linear term, so the parabola decides who ends up on top.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -3036,7 +3036,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 92,
-      "solution_overview": "Substituting a line permutes the roots by the inverse line and scales the leading coefficient.",
+      "solution_overview": "Nothing is numeric here, so the sign of the discriminant is the only lever available.\n\n$$\\Delta=b^{2}-4ac$$\n\nThe discriminant counts the real roots: two while it is positive, one when it vanishes and none once it turns negative. Nesting two polynomials multiplies their highest powers instead of adding them, so a line inside a parabola still leaves a parabola.\n\nThe parabola arrives as a second function wrapped around a line, so the substitution has to be unwound before the roots can be read.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -3069,7 +3069,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 93,
-      "solution_overview": "Equal values pair up symmetrically about the axis, whatever the common height.",
+      "solution_overview": "Arithmetic is unavailable here: the coefficients stay symbolic, so the axis formula has to be argued with rather than evaluated.\n\n$$x=-\\frac{b}{2a}$$\n\nThe axis of symmetry sits at $x=-\\frac{b}{2a}$, so it follows the first two coefficients and ignores the constant term entirely.\n\nThe axis carries its own name here, and every letter compares it with some other line.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -3201,7 +3201,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 97,
-      "solution_overview": "The stem fixes the two models\n\n$$f(x)=3 x - 7\\qquad g(x)=x^{2} - 5 x + 2$$\n\nCompleting the square locates the turning point of the parabola, and Vieta's relations give the sum $S$ and the product $P$ of its roots.\n\n$$\\text{vertex}=\\left(\\frac{5}{2},-\\frac{17}{4}\\right)\\qquad S=5\\qquad P=2$$\n\nThe graphs meet where the difference vanishes, and the discriminant of that quadratic counts the meetings: here there are two.\n\n$$f(x)-g(x)=- x^{2} + 8 x - 9\\qquad \\Delta=28$$\n\nBecause $f$ is a line with non-zero slope, the square $f(x)^{2}$ already carries an $x^{2}$ term, so $g$ can be rebuilt from $f(x)^{2}$, $f(x)$ and a constant. Matching coefficients gives\n\n$$A=\\frac{1}{9},\\quad B=-\\frac{1}{9},\\quad C=-\\frac{38}{9}$$",
+      "solution_overview": "The stem names a line and a parabola,\n\n$$f(x)=3 x - 7\\qquad g(x)=x^{2} - 5 x + 2$$\n\nThe turning point is worth having in hand: the axis of symmetry is read off the first two coefficients, and evaluating $g$ there supplies the height.\n\n$$g(x)=\\left(x-\\frac{5}{2}\\right)^{2}-\\frac{17}{4}\\qquad \\text{vertex}=\\left(\\frac{5}{2},-\\frac{17}{4}\\right)$$\n\nCoefficients alone settle the sum $S$ and the product $P$ of the roots of $g$, and the sign of its discriminant tells how many of those roots are real.\n\n$$S=5\\qquad P=2\\qquad \\Delta_{g}=17$$\n\nWherever the two graphs touch, the difference $f-g$ is zero; that difference is quadratic and its discriminant leaves two crossings.\n\n$$f(x)-g(x)=- x^{2} + 8 x - 9\\qquad \\Delta=28$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
