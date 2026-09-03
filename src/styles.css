@@ -512,6 +512,45 @@ body.flashcard-swiping {
   animation: prep-roadmap-pulse 2.2s ease-in-out 1.4s infinite;
 }
 
+@keyframes prep-roadmap-here-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.32);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.32);
+    opacity: 0;
+  }
+}
+
+.prep-roadmap-here-ring {
+  animation: prep-roadmap-here-ring 2.6s ease-out infinite;
+}
+
+.prep-roadmap-here-ring-2 {
+  animation-delay: 1.3s;
+}
+
+@keyframes prep-roadmap-comet {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.prep-roadmap-comet {
+  stroke-dasharray: 0.09 0.91;
+  stroke-dashoffset: 1;
+  animation: prep-roadmap-comet 7s linear 1.1s infinite;
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   .practice-panel-enter,
   .practice-fade-in {
