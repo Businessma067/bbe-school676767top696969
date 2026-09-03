@@ -545,7 +545,7 @@ body.flashcard-swiping {
 .prep-roadmap-comet {
   stroke-dasharray: 0.09 0.91;
   stroke-dashoffset: 1;
-  animation: prep-roadmap-comet 14s linear 0.4s infinite;
+  animation: prep-roadmap-comet 10s linear 0.4s infinite;
 }
 
 
