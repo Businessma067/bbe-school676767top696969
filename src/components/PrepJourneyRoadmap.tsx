@@ -190,11 +190,6 @@ function NodeCaption({
 }) {
   return (
     <div className={cn(align === "center" ? "text-center" : "text-left")}>
-      {milestone.youAreHere && (
-        <p className="mb-1 text-[10px] font-medium leading-none text-muted-foreground">
-          you are here
-        </p>
-      )}
       <p
         className={cn(
           "font-display font-semibold leading-snug text-foreground",
@@ -218,16 +213,26 @@ function NodeCaption({
 /** Wide desktop: soft S-curve across the full content width. */
 function SpreadDesktopRoadmap() {
   return (
-    <div className="relative hidden h-[340px] w-full md:block lg:h-[360px]">
+    <div className="relative hidden h-[340px] w-full md:block">
       <svg
         className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1100 300"
+        viewBox="0 0 1100 340"
         preserveAspectRatio="none"
         aria-hidden
       >
+        <defs>
+          <filter id="prepGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="6" result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
         <path
+          id="prepRoadmapPath"
           className="prep-roadmap-path"
-          d="M70 130 C 220 70, 300 70, 390 140 S 560 250, 700 140 S 900 55, 1030 120"
+          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
           fill="none"
           stroke="#161616"
           strokeOpacity="0.26"
@@ -237,6 +242,22 @@ function SpreadDesktopRoadmap() {
           pathLength={1}
           vectorEffect="non-scaling-stroke"
         />
+        <path
+          className="prep-roadmap-comet"
+          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
+          fill="none"
+          stroke="var(--exam-red)"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          pathLength={1}
+          vectorEffect="non-scaling-stroke"
+          filter="url(#prepGlow)"
+        />
+        <circle r="4.5" fill="var(--exam-red)" filter="url(#prepGlow)">
+          <animateMotion dur="7s" begin="1.1s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#prepRoadmapPath" />
+          </animateMotion>
+        </circle>
       </svg>
 
       <div className="absolute left-[0%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
