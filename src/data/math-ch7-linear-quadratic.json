@@ -37,7 +37,7 @@
       "id": "math-7-2",
       "case_id": "MATH 7.02",
       "title": "Slope and Opening at a Glance",
-      "context": "Let $f(x)=3x-5$ and $g(x)=-2x^{2}+x+4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line and a parabola are given by $f(x)=3x-5$ and $g(x)=-2x^{2}+x+4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The slope of $y=f(x)$ is $3$.",
         "The parabola $g$ opens upwards.",
@@ -70,7 +70,7 @@
       "id": "math-7-3",
       "case_id": "MATH 7.03",
       "title": "Axis from Coefficients",
-      "context": "Let $g(x)=x^{2}-6x+5$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The parabola $g$ and the line $f$ have the rules $g(x)=x^{2}-6x+5$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The axis of symmetry of $g$ is $x=3$.",
         "$g$ opens downwards.",
@@ -136,7 +136,7 @@
       "id": "math-7-5",
       "case_id": "MATH 7.05",
       "title": "Intercept Checklist",
-      "context": "Let $f(x)=5x$ and $g(x)=x^{2}-4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Start from the line $f(x)=5x$ and the parabola $g(x)=x^{2}-4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$f(0)=0$.",
         "$g$ has roots $2$ and $-2$.",
@@ -169,7 +169,7 @@
       "id": "math-7-6",
       "case_id": "MATH 7.06",
       "title": "Simple Vertex Read",
-      "context": "Let $g(x)=(x-2)^{2}+3$ and $f(x)=x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A completed-square parabola and a matching line are supplied: $g(x)=(x-2)^{2}+3$ and $f(x)=x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The vertex of $g$ is $(2,3)$.",
         "The axis of $g$ is $x=2$.",
@@ -202,7 +202,7 @@
       "id": "math-7-7",
       "case_id": "MATH 7.07",
       "title": "Leading Coefficient Sign",
-      "context": "Let $f(x)=\\frac{1}{2}x+7$ and $g(x)=3x^{2}-x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Two functions are handed over already written out: $f(x)=\\frac{1}{2}x+7$ and $g(x)=3x^{2}-x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$g$ opens upwards.",
         "$g(0)=0$.",
@@ -235,7 +235,7 @@
       "id": "math-7-8",
       "case_id": "MATH 7.08",
       "title": "Two Easy Meetings",
-      "context": "Let $f(x)=x$ and $g(x)=x^{2}-2x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Here is the identity line together with a parabola: $f(x)=x$ and $g(x)=x^{2}-2x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs meet at $x=0$.",
         "The graphs meet at $x=3$.",
@@ -301,7 +301,7 @@
       "id": "math-7-10",
       "case_id": "MATH 7.10",
       "title": "Factor Roots Quickly",
-      "context": "Let $g(x)=(x+1)(x-4)$ and $f(x)=-2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A quadratic arrives already factored, next to a line: $g(x)=(x+1)(x-4)$ and $f(x)=-2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The roots of $g$ are $-1$ and $4$.",
         "The sum of the roots of $g$ is $3$.",
@@ -367,7 +367,7 @@
       "id": "math-7-12",
       "case_id": "MATH 7.12",
       "title": "Vieta Against a Line",
-      "context": "Let $f(x)=2x-1$ and $g(x)=x^{2}-5x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Read the line $f(x)=2x-1$ and the parabola $g(x)=x^{2}-5x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The sum of the roots of $g$ is $5$.",
         "The product of the roots of $g$ is $-6$.",
@@ -400,7 +400,7 @@
       "id": "math-7-13",
       "case_id": "MATH 7.13",
       "title": "Vertex Versus Intercept",
-      "context": "Let $g(x)=2x^{2}-8x+3$ and $f(x)=x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The following pair is given: the parabola $g(x)=2x^{2}-8x+3$ together with the line $f(x)=x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The vertex of $g$ is $(2,-5)$.",
         "$g(0)$ equals the vertex height of $g$.",
@@ -433,7 +433,7 @@
       "id": "math-7-14",
       "case_id": "MATH 7.14",
       "title": "Count the Meetings",
-      "context": "Let $f(x)=x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A concrete line $f$ and a concrete parabola $g$ are supplied: $f(x)=x+1$, $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs intersect at exactly two points.",
         "The graphs intersect at $x=-1$.",
@@ -466,7 +466,7 @@
       "id": "math-7-15",
       "case_id": "MATH 7.15",
       "title": "Completing the Square, Easy",
-      "context": "Let $g(x)=x^{2}+4x+1$ and $f(x)=-x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The parabola $g(x)=x^{2}+4x+1$ is compared with the line $f(x)=-x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Completing the square gives $g(x)=(x+2)^{2}-3$.",
         "The vertex of $g$ is $(-2,-3)$.",
@@ -532,7 +532,7 @@
       "id": "math-7-17",
       "case_id": "MATH 7.17",
       "title": "Scaled Parabola Roots",
-      "context": "Let $g(x)=2(x-1)(x-3)$ and $f(x)=3x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A scaled factored parabola sits next to a line through the origin: $g(x)=2(x-1)(x-3)$ and $f(x)=3x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The roots of $g$ are $1$ and $3$.",
         "The leading coefficient of $g$ is $2$.",
@@ -565,7 +565,7 @@
       "id": "math-7-18",
       "case_id": "MATH 7.18",
       "title": "Falling Line Twin Roots",
-      "context": "Let $f(x)=-x+2$ and $g(x)=x^{2}+x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A downward-sloping line and a parabola are written $f(x)=-x+2$ and $g(x)=x^{2}+x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The roots of $g$ are $-3$ and $2$.",
         "The axis of $g$ is $x=-\\frac{1}{2}$.",
@@ -598,7 +598,7 @@
       "id": "math-7-19",
       "case_id": "MATH 7.19",
       "title": "Even Parabola Check",
-      "context": "Let $g(x)=x^{2}-9$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A difference of squares $g(x)=x^{2}-9$ is given together with the line $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$g$ is even.",
         "The axis of $g$ is $x=0$.",
@@ -665,7 +665,7 @@
       "id": "math-7-21",
       "case_id": "MATH 7.21",
       "title": "Rewrite Exists at Level Two",
-      "context": "Let $f(x)=x-1$ and $g(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The pair $f(x)=x-1$ and $g(x)=x^{2}-1$ is given. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There exist real numbers $A,B,C$ with $g(x)=A f(x)^{2}+B f(x)+C$.",
         "$g$ factors as $(x-1)(x+1)$.",
@@ -698,7 +698,7 @@
       "id": "math-7-22",
       "case_id": "MATH 7.22",
       "title": "Discriminant Logic for Quadratics",
-      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$ and $\\Delta=b^{2}-4ac$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A general parabola is written $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and $\\Delta=b^{2}-4ac$ stands for its discriminant. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $\\Delta<0$, then $g$ has no real roots.",
         "If $\\Delta<0$, then $g$ has no vertex.",
@@ -731,7 +731,7 @@
       "id": "math-7-23",
       "case_id": "MATH 7.23",
       "title": "Even Quadratic Symmetry",
-      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each statement about evenness. Mark it TRUE or FALSE.",
+      "context": "A quadratic is given in the general shape $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Judge the claims about evenness. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$g$ is an even function if and only if $b=0$.",
         "If $g$ is even, then its vertex lies on the $y$-axis.",
@@ -764,7 +764,7 @@
       "id": "math-7-24",
       "case_id": "MATH 7.24",
       "title": "Tangent Line Probe",
-      "context": "Let $g(x)=x^{2}-4x+5$ and $f(x)=2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The parabola $g(x)=x^{2}-4x+5$ is paired with the line $f(x)=2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs are tangent.",
         "The graphs meet at $x=2$ and $x=4$.",
@@ -797,7 +797,7 @@
       "id": "math-7-25",
       "case_id": "MATH 7.25",
       "title": "Nested Evaluation Chain",
-      "context": "Let $f(x)=2x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line and a parabola are given by $f(x)=2x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$g(f(0))=-2$.",
         "$f(g(0))=-3$.",
@@ -830,7 +830,7 @@
       "id": "math-7-26",
       "case_id": "MATH 7.26",
       "title": "Complete Square and Meetings",
-      "context": "Let $f(x)=3x$ and $g(x)=x^{2}-6x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Start from the line $f(x)=3x$ and the parabola $g(x)=x^{2}-6x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Completing the square gives $g(x)=(x-3)^{2}+1$.",
         "The minimum of $g$ is $1$.",
@@ -896,7 +896,7 @@
       "id": "math-7-28",
       "case_id": "MATH 7.28",
       "title": "Vertex on the Line?",
-      "context": "Let $f(x)=x-1$ and $g(x)=x^{2}-2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The line $f$ and the parabola $g$ have the rules $f(x)=x-1$ and $g(x)=x^{2}-2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The vertex of $g$ lies on $y=f(x)$.",
         "The vertex of $g$ is $(1,-4)$.",
@@ -929,7 +929,7 @@
       "id": "math-7-29",
       "case_id": "MATH 7.29",
       "title": "Horizontal Gap at the Axis",
-      "context": "Let $f(x)=4x-1$ and $g(x)=x^{2}-4x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Two functions are handed over already written out: $f(x)=4x-1$ and $g(x)=x^{2}-4x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "At the axis of $g$, the vertical gap $f-g$ equals $10$.",
         "The axis of $g$ is $x=2$.",
@@ -962,7 +962,7 @@
       "id": "math-7-30",
       "case_id": "MATH 7.30",
       "title": "No Real Roots Versus Line",
-      "context": "Let $f(x)=x$ and $g(x)=x^{2}+x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Here is the identity line together with a parabola: $f(x)=x$ and $g(x)=x^{2}+x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$g$ has no real roots.",
         "The graphs of $f$ and $g$ do not meet.",
@@ -995,7 +995,7 @@
       "id": "math-7-31",
       "case_id": "MATH 7.31",
       "title": "Writing a Parabola Using a Line",
-      "context": "Let $f$ be any non-constant linear function and $g$ any quadratic function. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ and a parabola $g$ are given; no further numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There always exist real numbers $A,B,C$ with $g(x)=A f(x)^{2}+B f(x)+C$.",
         "The coefficient $A$ is uniquely determined by $g$ and $f$.",
@@ -1061,7 +1061,7 @@
       "id": "math-7-33",
       "case_id": "MATH 7.33",
       "title": "Line Meets Parabola: Structural Bound",
-      "context": "Let $f$ be any linear function and $g$ any quadratic function over $\\mathbb{R}$. Evaluate each statement about their graphs. Mark it TRUE or FALSE.",
+      "context": "Take any line $f$ and any parabola $g$ over $\\mathbb{R}$. Judge the claims about their graphs. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs of $f$ and $g$ can intersect in three distinct real points.",
         "It is possible that the graphs do not intersect at all.",
@@ -1094,7 +1094,7 @@
       "id": "math-7-34",
       "case_id": "MATH 7.34",
       "title": "Range of a Quadratic, Symbolically",
-      "context": "Let $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. Evaluate each statement about the range of $g$. Mark it TRUE or FALSE.",
+      "context": "A parabola is already written in completed-square form $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. Judge the claims about the range of $g$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $a>0$, then the range of $g$ is $[k,+\\infty)$.",
         "If $a<0$, then the range of $g$ is $[k,+\\infty)$.",
@@ -1127,7 +1127,7 @@
       "id": "math-7-35",
       "case_id": "MATH 7.35",
       "title": "Difference $f-g$ and Intercept Traps",
-      "context": "Let $f$ be linear and $g$ quadratic. Write $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line $f$ and a parabola $g$ are given; write $d=f-g$ for their difference. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The difference $d=f-g$ is always a quadratic function.",
         "The $y$-intercept of $d$ is $f(0)-g(0)$.",
@@ -1160,7 +1160,7 @@
       "id": "math-7-36",
       "case_id": "MATH 7.36",
       "title": "Family of Lines Seeking Tangency",
-      "context": "Let $g(x)=x^{2}-2x+2$ and $f_t(x)=tx$. Evaluate each statement about the real parameter $t$. Mark it TRUE or FALSE.",
+      "context": "A fixed parabola $g(x)=x^{2}-2x+2$ is compared with the family of lines $f_t(x)=tx$ as the real parameter $t$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There exist real values of $t$ for which $y=f_t$ is tangent to $y=g$.",
         "There is a slope for which the line misses the parabola entirely.",
@@ -1193,7 +1193,7 @@
       "id": "math-7-37",
       "case_id": "MATH 7.37",
       "title": "Composition Trap with Explicit Maps",
-      "context": "Let $f(x)=3x-1$ and $g(x)=2x^{2}-4x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Read the line $f(x)=3x-1$ and the parabola $g(x)=2x^{2}-4x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Because $f$ is a line and $g$ is a parabola, the nested function $f(g(x))$ must have an $x^{3}$ term.",
         "The nested function $g(f(x))$ is always a parabola.",
@@ -1226,7 +1226,7 @@
       "id": "math-7-38",
       "case_id": "MATH 7.38",
       "title": "Wrong Completed Square Sign",
-      "context": "Let $g(x)=x^{2}-3x-10$ and $f(x)=-3x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The following pair is given: the parabola $g(x)=x^{2}-3x-10$ together with the line $f(x)=-3x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Completing the square gives $g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
         "Completing the square gives $g(x)=\\left(x+\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
@@ -1259,7 +1259,7 @@
       "id": "math-7-39",
       "case_id": "MATH 7.39",
       "title": "Three Maps: Line, Square, Difference",
-      "context": "Let $f(x)=2x+3$, $g(x)=x^{2}-x-2$, and $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A concrete line $f$ and a concrete parabola $g$ are supplied, and $d=f-g$ is their difference: $f(x)=2x+3$, $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The leading coefficient of $d$ is $-1$.",
         "The difference $d=f-g$ is a quadratic function.",
@@ -1292,7 +1292,7 @@
       "id": "math-7-40",
       "case_id": "MATH 7.40",
       "title": "Parameter Constraint on Opening",
-      "context": "Let $g_a(x)=ax^{2}-4x+1$ with $a\\neq 0$, and let $f(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A one-parameter family of parabolas $g_a(x)=ax^{2}-4x+1$ with $a\\neq 0$ is compared with the identity line $f(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "When the leading coefficient of $g_a$ is positive and not too large, the graphs can meet twice.",
         "Making the leading coefficient of $g_a$ large enough can make the graphs miss each other.",
@@ -1325,7 +1325,7 @@
       "id": "math-7-41",
       "case_id": "MATH 7.41",
       "title": "Axis, Vieta, and the Half-Sum Trap",
-      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and write $S$ for the sum of the roots of $g$ in $\\mathbb{C}$. Let $\\ell$ be the axis of symmetry of the graph of $g$. No concrete coefficients are given. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A general parabola is written $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Write $S$ for the sum of the roots of $g$ in $\\mathbb{C}$, and write $\\ell$ for the axis of symmetry of its graph. No concrete coefficients are given. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The vertical line $\\ell$ is always the same as the vertical line $x=S$.",
         "In all cases, $\\ell$ is the line $x=S/2$.",
@@ -1358,7 +1358,7 @@
       "id": "math-7-42",
       "case_id": "MATH 7.42",
       "title": "Nested Functions Without Numbers",
-      "context": "Let $f$ be a non-constant linear function and $g$ a quadratic function. No further data are given. Evaluate each claim about compositions. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ and a parabola $g$ are given, with no further numeric data. Judge the claims about nested functions. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The nested function $g(f(x))$ always has an $x^{3}$ term, because one adds $1$ and $2$.",
         "The nested function $f(g(x))$ is always a parabola (highest power $x^{2}$).",
@@ -1391,7 +1391,7 @@
       "id": "math-7-43",
       "case_id": "MATH 7.43",
       "title": "Monotonicity: Line Versus Parabola",
-      "context": "Let $f(x)=mx+k$ with $m\\neq 0$, and let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each claim. Mark it TRUE or FALSE.",
+      "context": "A general line $f(x)=mx+k$ with $m\\neq 0$ is paired with a general parabola $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$f$ is strictly monotone on all of $\\mathbb{R}$.",
         "$g$ is strictly monotone on all of $\\mathbb{R}$.",
@@ -1424,7 +1424,7 @@
       "id": "math-7-44",
       "case_id": "MATH 7.44",
       "title": "Parameter Tangency Criterion",
-      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and let $f_t(x)=tx+1$ be a family of lines parametrised by $t\\in\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A general parabola $g(x)=ax^{2}+bx+c$ with $a\\neq 0$ is compared with the family of lines $f_t(x)=tx+1$ parametrised by $t\\in\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "For every real $t$, the line $y=f_t(x)$ is tangent to the graph of $g$.",
         "There exists at least one real $t$ for which $y=f_t$ is tangent to $y=g$.",
@@ -1490,7 +1490,7 @@
       "id": "math-7-46",
       "case_id": "MATH 7.46",
       "title": "Double Composition and Leading Match",
-      "context": "Let $f(x)=4x+2$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line and a parabola are given by $f(x)=4x+2$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.",
         "Because $f-g$ can be mistaken for a cubic, the graphs may meet three times.",
@@ -1523,7 +1523,7 @@
       "id": "math-7-47",
       "case_id": "MATH 7.47",
       "title": "Parameter Window for Two Meetings",
-      "context": "Let $g(x)=x^{2}-4x+1$ and $f_k(x)=kx+1$. Evaluate each statement about the real parameter $k$. Mark it TRUE or FALSE.",
+      "context": "A fixed parabola $g(x)=x^{2}-4x+1$ is compared with the family of lines $f_k(x)=kx+1$ as the real parameter $k$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "For every $k$, the graphs intersect at the point $(0,1)$.",
         "There is a unique slope that makes the line touch the parabola at exactly one point.",
@@ -1589,7 +1589,7 @@
       "id": "math-7-49",
       "case_id": "MATH 7.49",
       "title": "Average Rate Versus Instantaneous Slope",
-      "context": "Let $g(x)=x^{2}-6x+5$ and $f(x)=4x-8$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The parabola $g(x)=x^{2}-6x+5$ is paired with the line $f(x)=4x-8$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.",
         "There exists $c\\in(0,2)$ with $g'(c)$ equal to that average rate.",
@@ -1622,7 +1622,7 @@
       "id": "math-7-50",
       "case_id": "MATH 7.50",
       "title": "When Does Vertical Shift Kill Meetings?",
-      "context": "Let $f(x)=2x$ and $g_s(x)=x^{2}-x-2+s$ with real shift $s$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The line $f(x)=2x$ is compared with the vertically shifted family $g_s(x)=x^{2}-x-2+s$, where $s$ is a real shift. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "With no vertical shift, the graphs meet at two points.",
         "A large enough upward shift can make the graphs miss each other.",
@@ -1655,7 +1655,7 @@
       "id": "math-7-51",
       "case_id": "MATH 7.51",
       "title": "Slope, Constant Term, Axis",
-      "context": "Let $f(x)=7x+2$ and $g(x)=x^{2}+6x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Start from the line $f(x)=7x+2$ and the parabola $g(x)=x^{2}+6x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The slope of $y=f(x)$ is $7$.",
         "$f(0)=2$.",
@@ -1853,7 +1853,7 @@
       "id": "math-7-57",
       "case_id": "MATH 7.57",
       "title": "Where a Rising Line Crosses the Axes",
-      "context": "Let $u(x)=4x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The line $u$ is given by $u(x)=4x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graph of $u$ crosses the $x$-axis at $x=-\\frac{5}{2}$.",
         "The graph of $u$ meets the $y$-axis at $y=10$.",
@@ -1986,7 +1986,7 @@
       "id": "math-7-61",
       "case_id": "MATH 7.61",
       "title": "A Stretched Parabola and Its Turning Point",
-      "context": "Let $p(x)=3x^{2}-12x+7$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The parabola $p$ is given by $p(x)=3x^{2}-12x+7$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The axis of symmetry of $p$ is the line $x=2$.",
         "The vertex of the graph of $p$ is the point $\\left(2,-5\\right)$.",
@@ -2119,7 +2119,7 @@
       "id": "math-7-65",
       "case_id": "MATH 7.65",
       "title": "A Negative Stretch Keeps the Zeros",
-      "context": "Let $p(x)=-3\\left(x+2\\right)\\left(x-5\\right)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A scaled factored parabola is written $p(x)=-3\\left(x+2\\right)\\left(x-5\\right)$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The roots of $p$ are $-2$ and $5$.",
         "The graph of $p$ opens downwards.",
@@ -2251,7 +2251,7 @@
       "id": "math-7-69",
       "case_id": "MATH 7.69",
       "title": "Who Wins Far to the Right?",
-      "context": "Let $f$ be a non-constant linear function and let $g$ be a quadratic function whose leading coefficient $a$ is nonzero. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ and a parabola $g$ whose leading coefficient $a$ is nonzero are given; no numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $a$ is positive, then $g(x)>f(x)$ for all sufficiently large $x$.",
         "If $a$ is positive, then $g(x)>f(x)$ for every real $x$.",
@@ -2284,7 +2284,7 @@
       "id": "math-7-70",
       "case_id": "MATH 7.70",
       "title": "When Is the Difference Still Curved?",
-      "context": "Let $f$ be a linear function, let $g$ be a quadratic function whose leading coefficient $a$ is nonzero, and set $d=g-f$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line $f$ and a parabola $g$ with nonzero leading coefficient $a$ are given; write $d=g-f$ for their difference. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The coefficient of $x^{2}$ in $d$ is nonzero.",
         "Some choice of $f$ makes $d$ a linear function.",
@@ -2317,7 +2317,7 @@
       "id": "math-7-71",
       "case_id": "MATH 7.71",
       "title": "Touching at the Vertex",
-      "context": "Let $f(x)=2$ and $g(x)=x^{2}+2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A horizontal line $f(x)=2$ sits next to the parabola $g(x)=x^{2}+2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs of $f$ and $g$ have exactly one point in common.",
         "That common point is the vertex of the graph of $g$.",
@@ -2384,7 +2384,7 @@
       "id": "math-7-73",
       "case_id": "MATH 7.73",
       "title": "Turning Point, Zeros and a Horizontal Probe",
-      "context": "Let $q(x)=x^{2}-10x+21$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Consider the quadratic $q(x)=x^{2}-10x+21$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The vertex of the graph of $q$ is the point $\\left(5,-4\\right)$.",
         "The roots of $q$ are $3$ and $7$.",
@@ -2583,13 +2583,13 @@
       "id": "math-7-79",
       "case_id": "MATH 7.79",
       "title": "Undoing a Line Around a Parabola",
-      "context": "Let $f$ be a non-constant linear function with inverse $f^{-1}$, and let $g$ be a quadratic function. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ with inverse $f^{-1}$ is given together with a parabola $g$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The inverse $f^{-1}$ is again a non-constant linear function.",
-        "The composite $g\\circ f^{-1}$ is a quadratic function.",
-        "The composite $f^{-1}\\circ g$ is a quadratic function.",
-        "The composite $g\\circ f^{-1}$ always has the same roots as $g$.",
-        "The composite $f^{-1}\\circ g$ always has the same axis of symmetry as $g$."
+        "The nested function $g(f^{-1}(x))$ is a quadratic function.",
+        "The nested function $f^{-1}(g(x))$ is a quadratic function.",
+        "The nested function $g(f^{-1}(x))$ always has the same roots as $g$.",
+        "The nested function $f^{-1}(g(x))$ always has the same axis of symmetry as $g$."
       ],
       "answer_key": [
         true,
@@ -2616,7 +2616,7 @@
       "id": "math-7-80",
       "case_id": "MATH 7.80",
       "title": "Mirroring a Line and a Parabola",
-      "context": "Let $f$ be a linear function and $g$ a quadratic function, and consider the mirrored pair $\\tilde f(x)=f(-x)$ and $\\tilde g(x)=g(-x)$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line $f$ and a parabola $g$ are mirrored by replacing $x$ with $-x$: write $\\tilde f(x)=f(-x)$ and $\\tilde g(x)=g(-x)$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The graphs of $\\tilde f$ and $\\tilde g$ meet exactly as often as those of $f$ and $g$.",
         "If the graphs of $f$ and $g$ are tangent, then so are those of $\\tilde f$ and $\\tilde g$.",
@@ -2649,7 +2649,7 @@
       "id": "math-7-81",
       "case_id": "MATH 7.81",
       "title": "How Many Points Pin Down a Curve?",
-      "context": "Let $P$, $Q$ and $R$ be pairwise distinct points of the plane, no two of which lie on the same vertical line. No coordinates are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Three pairwise distinct points $P$, $Q$ and $R$ of the plane are given, no two of which lie on the same vertical line. No coordinates are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Exactly one linear function has both $P$ and $Q$ on its graph.",
         "There is always at least one quadratic function having $P$, $Q$ and $R$ on its graph.",
@@ -2682,7 +2682,7 @@
       "id": "math-7-82",
       "case_id": "MATH 7.82",
       "title": "Where the Difference Reaches Its Extreme",
-      "context": "Let $f$ be a linear function with slope $m$, let $g$ be a quadratic function whose leading coefficient $a$ is nonzero, and set $d=g-f$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A line $f$ with slope $m$ and a parabola $g$ with nonzero leading coefficient $a$ are given; write $d=g-f$ for their difference. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Unless $m$ vanishes, the axis of $d$ differs from the axis of $g$.",
         "The axis of $d$ never depends on $m$.",
@@ -2715,7 +2715,7 @@
       "id": "math-7-83",
       "case_id": "MATH 7.83",
       "title": "Signs of the Roots from Sum and Product",
-      "context": "Let $g(x)=ax^{2}+bx+c$ with nonzero $a$ have two distinct real roots; write $S$ for their sum and $P$ for their product. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A quadratic $g(x)=ax^{2}+bx+c$ with nonzero $a$ has two distinct real roots; write $S$ for their sum and $P$ for their product. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $P$ is negative, then the two roots have opposite signs.",
         "If $P$ is positive and $S$ is negative, then both roots are negative.",
@@ -2748,7 +2748,7 @@
       "id": "math-7-84",
       "case_id": "MATH 7.84",
       "title": "Sliding a Line Until It Touches",
-      "context": "Let $g(x)=x^{2}-2x-5$ and let $f_c(x)=x+c$ be the family of lines of slope one, where $c$ runs through $\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A fixed parabola $g(x)=x^{2}-2x-5$ is compared with the family of slope-one lines $f_c(x)=x+c$, where $c$ runs through $\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There is exactly one value of $c$ for which the line touches the parabola at a single point.",
         "When the line passes through the origin, it meets the parabola twice.",
@@ -2781,7 +2781,7 @@
       "id": "math-7-85",
       "case_id": "MATH 7.85",
       "title": "Choosing the Leading Coefficient",
-      "context": "Let $g_a(x)=ax^{2}+2x-3$ with $a\\neq 0$ and let $f(x)=x+1$. Consider what the real parameter $a$ can do. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A one-parameter family of parabolas $g_a(x)=ax^{2}+2x-3$ with $a\\neq 0$ is compared with the fixed line $f(x)=x+1$. Consider what the real parameter $a$ can do. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There is a value of $a$ for which the line is tangent to the parabola.",
         "For every $a\\neq 0$ the graphs meet at two distinct points.",
@@ -2814,7 +2814,7 @@
       "id": "math-7-86",
       "case_id": "MATH 7.86",
       "title": "Coefficient Match Against a Composition",
-      "context": "Let $f(x)=5x+1$ and $g(x)=3x^{2}-2x-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "Read the line $f(x)=5x+1$ and the parabola $g(x)=3x^{2}-2x-1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{3}{25}$.",
         "Matching $g=Af^{2}+Bf+C$ forces $B=-2$.",
@@ -2880,7 +2880,7 @@
       "id": "math-7-88",
       "case_id": "MATH 7.88",
       "title": "A Translation Cannot Flatten a Parabola",
-      "context": "Let $f(x)=-6x+4$ and $g(x)=2x^{2}+3x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "The following pair is given: the line $f(x)=-6x+4$ together with the parabola $g(x)=2x^{2}+3x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Completing the square gives $g(x)=2\\left(x+\\frac{3}{4}\\right)^{2}-\\frac{25}{8}$.",
         "Some vertical translation of $g$ makes $f-g$ a constant function.",
@@ -2913,7 +2913,7 @@
       "id": "math-7-89",
       "case_id": "MATH 7.89",
       "title": "Lines Through the Vertex",
-      "context": "Let $g$ be a quadratic function with vertex $V$ and nonzero leading coefficient $a$, and let $f$ be a linear function with slope $m$ whose graph passes through $V$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A parabola $g$ has vertex $V$ and nonzero leading coefficient $a$. A line $f$ of slope $m$ is drawn through that same vertex. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $m$ vanishes, then $V$ is the only common point of the two graphs.",
         "If $m$ is nonzero, then the graphs have a second common point different from $V$.",
@@ -2946,13 +2946,13 @@
       "id": "math-7-90",
       "case_id": "MATH 7.90",
       "title": "Composing a Parabola With Itself",
-      "context": "Let $f$ be a non-constant linear function and let $g$ be a quadratic function. Consider the compositions $g\\circ g$ and $g\\circ f\\circ g$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ and a parabola $g$ are given. Consider the nested functions $g(g(x))$ and $g(f(g(x)))$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The highest power of $x$ in $g\\circ g$ is $x^{4}$.",
-        "The highest power of $x$ in $g\\circ f\\circ g$ is $x^{4}$.",
-        "The highest power of $x$ in $g\\circ g$ is $x^{4}$ because the two powers are added rather than multiplied.",
-        "The composition $f\\circ f$ is again a non-constant linear function.",
-        "For a suitable $g$, the composition $g\\circ g$ is a quadratic function."
+        "The highest power of $x$ in $g(g(x))$ is $x^{4}$.",
+        "The highest power of $x$ in $g(f(g(x)))$ is $x^{4}$.",
+        "The highest power of $x$ in $g(g(x))$ is $x^{4}$ because the two powers are added rather than multiplied.",
+        "The nested function $f(f(x))$ is again a non-constant linear function.",
+        "For a suitable $g$, the nested function $g(g(x))$ is a quadratic function."
       ],
       "answer_key": [
         true,
@@ -2979,7 +2979,7 @@
       "id": "math-7-91",
       "case_id": "MATH 7.91",
       "title": "Can a Line Trap a Parabola?",
-      "context": "Let $g$ be a quadratic function whose leading coefficient $a$ is nonzero, and let $f$ be a linear function. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A parabola $g$ with nonzero leading coefficient $a$ is given together with a line $f$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "If $a$ is positive, some line lies strictly below the whole graph of $g$.",
         "If $a$ is positive, some line lies strictly above the whole graph of $g$.",
@@ -3012,7 +3012,7 @@
       "id": "math-7-92",
       "case_id": "MATH 7.92",
       "title": "Reading Roots Through a Linear Substitution",
-      "context": "Let $f$ be a non-constant linear function with slope $m$, let $q(y)=Ay^{2}+By+C$ with nonzero $A$, and set $g=q\\circ f$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A non-constant line $f$ has slope $m$, and an outer parabola is written $q(y)=Ay^{2}+By+C$ with nonzero $A$. Set $g(x)=q(f(x))$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The function $g$ is a quadratic function.",
         "Every real root of $g$ is a point at which $f$ takes a root value of $q$.",
@@ -3045,7 +3045,7 @@
       "id": "math-7-93",
       "case_id": "MATH 7.93",
       "title": "Equal Values and the Axis",
-      "context": "Let $g$ be a quadratic function with nonzero leading coefficient and axis of symmetry $\\ell$, and let $u$ and $v$ be distinct real numbers with $g(u)=g(v)$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A parabola $g$ has nonzero leading coefficient and axis of symmetry $\\ell$. Two distinct real numbers $u$ and $v$ satisfy $g(u)=g(v)$. No numeric data are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The line $\\ell$ passes through the midpoint of $u$ and $v$.",
         "The numbers $u$ and $v$ must be the roots of $g$.",
@@ -3078,7 +3078,7 @@
       "id": "math-7-94",
       "case_id": "MATH 7.94",
       "title": "A Pencil of Lines and Two Tangents",
-      "context": "Let $g(x)=x^{2}-4x+6$ and let $f_t(x)=t(x-1)+2$ be the family of lines obtained as the real parameter $t$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A fixed parabola $g(x)=x^{2}-4x+6$ is compared with the family of lines $f_t(x)=t(x-1)+2$ obtained as the real parameter $t$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Every line of the family passes through one and the same point.",
         "There are exactly two slopes for which the line touches the parabola at a single point.",
@@ -3111,7 +3111,7 @@
       "id": "math-7-95",
       "case_id": "MATH 7.95",
       "title": "Sliding the Parabola Sideways",
-      "context": "Let $f(x)=2x-1$ and let $g_r(x)=(x-r)^{2}-4$ be the family of parabolas obtained as the real shift $r$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A fixed line $f(x)=2x-1$ is compared with the family of parabolas $g_r(x)=(x-r)^{2}-4$ obtained as the real shift $r$ varies. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "There is exactly one shift for which the line is tangent to the parabola.",
         "For sufficiently negative shifts the line and the parabola do not meet.",
@@ -3177,7 +3177,7 @@
       "id": "math-7-97",
       "case_id": "MATH 7.97",
       "title": "Axis Gap, Vieta, and Nested Order",
-      "context": "Let $f(x)=3x-7$ and $g(x)=x^{2}-5x+2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "context": "A concrete line $f$ and a concrete parabola $g$ are supplied: $f(x)=3x-7$, $g(x)=x^{2}-5x+2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Completing the square gives $g(x)=\\left(x-\\frac{5}{2}\\right)^{2}-\\frac{17}{4}$.",
         "At the axis of $g$ the gap $f-g$ equals $\\frac{19}{4}$.",

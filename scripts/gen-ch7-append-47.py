@@ -740,13 +740,13 @@ def t_d4_sym_01() -> Spec:
         4, "symbolic",
         [C("The inverse $f^{-1}$ is again a non-constant linear function.", True,
            "Solving $y=mx+k$ for $x$ gives a line."),
-         C("The composite $g\\circ f^{-1}$ is a quadratic function.", True,
+         C("The nested function $g(f^{-1}(x))$ is a quadratic function.", True,
            "A linear change of variable preserves the highest power."),
-         C("The composite $f^{-1}\\circ g$ is a quadratic function.", True,
+         C("The nested function $f^{-1}(g(x))$ is a quadratic function.", True,
            "Applying a line after $g$ only rescales and shifts values."),
-         C("The composite $g\\circ f^{-1}$ always has the same roots as $g$.", False,
+         C("The nested function $g(f^{-1}(x))$ always has the same roots as $g$.", False,
            "Its roots are the images of the roots of $g$ under $f$."),
-         C("The composite $f^{-1}\\circ g$ always has the same axis of symmetry as $g$.",
+         C("The nested function $f^{-1}(g(x))$ always has the same axis of symmetry as $g$.",
            True,
            "Acting on values, not on inputs, cannot move the axis.")],
         "Composing inside moves the roots; composing outside preserves the axis.",
@@ -1003,21 +1003,21 @@ def t_d5_sym_02() -> Spec:
     return S(
         "Composing a Parabola With Itself",
         "Let $f$ be a non-constant linear function and let $g$ be a quadratic function. "
-        "Consider the compositions $g\\circ g$ and $g\\circ f\\circ g$. No numeric data "
+        "Consider the nested functions $g(g(x))$ and $g(f(g(x)))$. No numeric data "
         "are supplied. " + TAIL,
         5, "symbolic",
-        [C("The highest power of $x$ in $g\\circ g$ is $x^{4}$.", True,
+        [C("The highest power of $x$ in $g(g(x))$ is $x^{4}$.", True,
            "Degrees multiply: two times two."),
-         C("The highest power of $x$ in $g\\circ f\\circ g$ is $x^{4}$.", True,
+         C("The highest power of $x$ in $g(f(g(x)))$ is $x^{4}$.", True,
            "A degree-one map inserted in the middle changes nothing."),
-         C("The highest power of $x$ in $g\\circ g$ is $x^{4}$ because the two powers are "
+         C("The highest power of $x$ in $g(g(x))$ is $x^{4}$ because the two powers are "
            "added rather than multiplied.", False,
            "Adding would give a cube; the correct rule is multiplication."),
-         C("The composition $f\\circ f$ is again a non-constant linear function.", True,
+         C("The nested function $f(f(x))$ is again a non-constant linear function.", True,
            "The slopes multiply and stay nonzero."),
-         C("For a suitable $g$, the composition $g\\circ g$ is a quadratic function.",
+         C("For a suitable $g$, the nested function $g(g(x))$ is a quadratic function.",
            False,
-           "The leading coefficient of $g\\circ g$ is a nonzero cube, so the degree stays four.")],
+           "The leading coefficient of $g(g(x))$ is a nonzero cube, so the highest power stays $x^{4}$.")],
         "Under composition degrees multiply, so a parabola inside a parabola gives $x^{4}$.",
     )
 
@@ -1047,7 +1047,7 @@ def t_d5_sym_04() -> Spec:
     return S(
         "Reading Roots Through a Linear Substitution",
         "Let $f$ be a non-constant linear function with slope $m$, let "
-        "$q(y)=Ay^{2}+By+C$ with nonzero $A$, and set $g=q\\circ f$. No numeric data are "
+        "$q(y)=Ay^{2}+By+C$ with nonzero $A$, and set $g(x)=q(f(x))$. No numeric data are "
         "supplied. " + TAIL,
         5, "symbolic",
         [C("The function $g$ is a quadratic function.", True,

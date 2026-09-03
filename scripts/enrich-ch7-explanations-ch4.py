@@ -5895,10 +5895,13 @@ def patch_statements(task: dict) -> dict:
     if "context" in task:
         task["context"] = task["context"].replace(
             "Let $f$ be linear of degree $1$ and $g$ quadratic of degree $2$.",
-            "Let $f$ be a non-constant linear function and $g$ a quadratic function.",
+            "A non-constant line $f$ and a parabola $g$ are given.",
         ).replace(
             "Let $f$ be any non-constant linear polynomial and $g$ any quadratic polynomial over $\\mathbb{R}$.",
-            "Let $f$ be any non-constant linear function and $g$ any quadratic function.",
+            "A non-constant line $f$ and a parabola $g$ are given.",
+        ).replace(
+            "Let $f$ be a non-constant linear function and $g$ a quadratic function.",
+            "A non-constant line $f$ and a parabola $g$ are given.",
         )
     return task
 
