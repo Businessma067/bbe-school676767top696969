@@ -11,18 +11,18 @@ type Milestone = {
 const MILESTONES: Milestone[] = [
   {
     title: "Free Demo",
-    label: "50+ tasks, all 3 subjects",
+    label: "100+ tasks, 1 mock exam, all 3 subjects",
     icon: "demo",
     youAreHere: true,
   },
   {
     title: "Build the Fundamentals",
-    label: "950+ questions, self-paced",
+    label: "3000+ questions, self-paced",
     icon: "lite",
   },
   {
     title: "Full Simulation",
-    label: "Timed mocks, answer sheets, stress mode",
+    label: "Interactive modes, customized mocks, and timed exam practice",
     icon: "full",
   },
   {
@@ -220,15 +220,6 @@ function SpreadDesktopRoadmap() {
         preserveAspectRatio="none"
         aria-hidden
       >
-        <defs>
-          <filter id="prepGlow" x="-60%" y="-60%" width="220%" height="220%">
-            <feGaussianBlur stdDeviation="6" result="b" />
-            <feMerge>
-              <feMergeNode in="b" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
         <path
           id="prepRoadmapPath"
           className="prep-roadmap-path"
@@ -242,22 +233,6 @@ function SpreadDesktopRoadmap() {
           pathLength={1}
           vectorEffect="non-scaling-stroke"
         />
-        <path
-          className="prep-roadmap-comet"
-          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
-          fill="none"
-          stroke="var(--exam-red)"
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          pathLength={1}
-          vectorEffect="non-scaling-stroke"
-          filter="url(#prepGlow)"
-        />
-        <circle r="4.5" fill="var(--exam-red)" filter="url(#prepGlow)">
-          <animateMotion dur="7s" begin="1.1s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#prepRoadmapPath" />
-          </animateMotion>
-        </circle>
       </svg>
 
       <div className="absolute left-[0%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
