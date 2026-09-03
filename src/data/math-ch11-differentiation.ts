@@ -5441,901 +5441,1100 @@ The statement is False.`
   {
     id: "math-11-81",
     case_id: "MATH 11.81",
-    title: "Why an interior peak forces a flat tangent",
+    title: "Workshop profit: differentiate, then classify the peak",
     subsection: "11.3",
     context:
-      "A differentiable profit function $P(Q)$ is defined for all $Q>0$. Management claims that at an interior output $Q^{\\ast}>0$ the firm reaches a local or global maximum of profit. Decide TRUE or FALSE for each claim.",
+      "A small workshop sells $Q$ handmade lamps per day and models daily profit (in euros) by $P(Q)=-Q^{2}+12Q-20$ for $Q\\ge 0$. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
     statements: [
-      "At that interior maximum one must have $P'(Q^{\\ast})=0$.",
-      "The condition $P'(Q^{\\ast})=0$ alone already proves that $Q^{\\ast}$ maximizes profit.",
-      "If $P'(Q^{\\ast})\\neq 0$, then $Q^{\\ast}$ cannot be an interior local maximum.",
-      "The first-order condition is about the slope of profit, not about the height $P(Q^{\\ast})$.",
-      "Finding a point where $P'(Q)=0$ is enough to finish an optimization problem without any further check."
+      "Differentiating gives $P'(Q)=-2Q+12$.",
+      "The only critical point solves $P'(Q)=0$ and is $Q=6$.",
+      "The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.",
+      "Daily profit at that critical output is $P(6)=16$.",
+      "Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$."
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-For a differentiable function, an interior local or global maximum must occur at a critical point. The tangent is horizontal there, so
+Differentiate term by term:
 
 $$
-P'(Q^{\\ast})=0.
+P'(Q)=-2Q+12.
 $$
 
-That is the necessary first-order condition (FOC).
+That matches the claim.
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-$P'(Q^{\\ast})=0$ is necessary, not sufficient. A critical point can be a local maximum, a local minimum, or neither (for example a horizontal inflection). The FOC alone does not prove a maximum.
+Solve the FOC
 
-The statement is False.`,
+$$
+P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
+
+On $Q\\ge 0$ this is the only critical point.
+
+The statement is True.`,
       `**C.** → True
 
-The FOC is necessary at an interior extremum of a differentiable function. If $P'(Q^{\\ast})\\neq 0$, the slope is not flat, so $Q^{\\ast}$ cannot be an interior local maximum.
+Differentiate again:
+
+$$
+P''(Q)=-2<0.
+$$
+
+With $P'(6)=0$ and $P''(6)<0$, the second-derivative test classifies a strict local maximum at $Q=6$.
 
 The statement is True.`,
       `**D.** → True
 
-$P'(Q^{\\ast})=0$ says that the instantaneous rate of change of profit is zero. It does not report the profit level $P(Q^{\\ast})$. Slope and height are different objects.
+Substitute into the profit formula:
+
+$$
+P(6)=-6^{2}+12\\cdot 6-20=-36+72-20=16.
+$$
+
+The peak profit is $16$ euros.
 
 The statement is True.`,
       `**E.** → False
 
-After solving $P'(Q)=0$ one still has to classify each critical point (sign of $P'$, second-derivative test, or comparison of values) and, on a closed interval, check endpoints. The FOC only produces candidates.
+$P'(6)=0$ is about the slope, not the height. The calculated level is $P(6)=16\\neq 0$. Slope zero does not force profit zero.
 
 The statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 81,
     solution_overview:
-      "State the necessary FOC $P'(Q^{\\ast})=0$ at an interior extremum, and refuse to treat it as a finished proof of a maximum.",
+      "Differentiate $P(Q)=-Q^{2}+12Q-20$, solve $P'=0$, use $P''<0$ to classify the max, and evaluate $P(6)$.",
   },
   {
     id: "math-11-82",
     case_id: "MATH 11.82",
-    title: "A flat tangent that is not a peak",
+    title: "Café lunch: build profit, then solve R'=C'",
     subsection: "11.3",
     context:
-      "An analyst finds an output $Q_0$ where marginal profit is exactly zero: $P'(Q_0)=0$. A colleague immediately announces that $Q_0$ is therefore optimal. Nearby, profit is still rising for outputs slightly below $Q_0$, and profit is still rising for outputs slightly above $Q_0$ as well. Decide TRUE or FALSE for each claim.",
+      "A café sells $Q$ lunch boxes. Revenue is $R(Q)=30Q-Q^{2}$ euros and total cost is $C(Q)=Q^{2}+6Q+40$ euros, for $Q>0$. Profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$Q_0$ is a critical (stationary) point of profit.",
-      "Because $P'(Q_0)=0$, the point $Q_0$ must be a local maximum.",
-      "The neighbouring pattern (profit rising on both sides) means $Q_0$ is not a local maximum.",
-      "The same neighbouring pattern also means $Q_0$ is not a local minimum.",
-      "A critical point can fail to be either a local max or a local min."
+      "The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
+      "Marginal profit is $P'(Q)=-4Q+24$.",
+      "The FOC $P'(Q)=0$ gives the candidate $Q=6$.",
+      "At $Q=6$ one also has $R'(6)=C'(6)=18$.",
+      "Because $P'(6)=0$, the café's profit level equals its cost level at $Q=6$."
     ],
-    answer_key: [true, false, true, true, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-By definition, a point where the derivative exists and equals zero is a critical (stationary) point. Here $P'(Q_0)=0$, so $Q_0$ is critical.
+$$
+P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.
+$$
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-Zero slope is only the FOC. Without a classification test, one cannot conclude that the critical point is a local maximum.
+$$
+P'(Q)=-4Q+24.
+$$
 
-The statement is False.`,
+The statement is True.`,
       `**C.** → True
 
-A local maximum requires that nearby points have profit no larger than at $Q_0$. If profit keeps rising through $Q_0$ on both sides, the first-derivative test does not show a peak: $P'$ fails to change from $+$ to $-$. So $Q_0$ is not a local maximum.
+$$
+-4Q+24=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
 
 The statement is True.`,
       `**D.** → True
 
-A local minimum needs a valley: $P'$ should change from $-$ to $+$. Rising on both sides means $Q_0$ is not a local minimum either. The usual picture is a horizontal inflection.
+$$
+R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.
+$$
+
+At $Q=6$:
+
+$$
+R'(6)=18,\\qquad C'(6)=18.
+$$
+
+So $R'(6)=C'(6)$, which is equivalent to $P'(6)=0$.
 
 The statement is True.`,
-      `**E.** → True
+      `**E.** → False
 
-Critical points include maxima, minima, and "neither" cases. Finding $P'=0$ does not by itself classify the point.
+$P'(6)=0$ does not compare the levels $P(6)$ and $C(6)$. Compute
 
-The statement is True.`
+$$
+P(6)=-2\\cdot 36+24\\cdot 6-40=32,\\qquad C(6)=36+36+40=112.
+$$
+
+They are not equal.
+
+The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 82,
     solution_overview:
-      "Separate the FOC (critical point) from classification: a flat tangent can be a max, a min, or neither.",
+      "Form $P=R-C$, differentiate, solve the FOC, and check the equivalent condition $R'=C'$.",
   },
   {
     id: "math-11-83",
     case_id: "MATH 11.83",
-    title: "Second-order test that finishes the classification",
+    title: "Delivery fleet: minimise a quadratic cost",
     subsection: "11.3",
     context:
-      "A twice differentiable cost function $C(Q)$ has a critical point at $Q_0>0$, so $C'(Q_0)=0$. An engineer also computes $C''(Q_0)=4>0$. Decide TRUE or FALSE for each claim.",
+      "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $C(Q)=Q^{2}-10Q+40$ for $Q\\ge 0$. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The second-derivative test classifies $Q_0$ as a strict local minimum of cost.",
-      "The same numbers would classify $Q_0$ as a strict local maximum of cost.",
-      "If instead $C''(Q_0)=-3<0$ with $C'(Q_0)=0$, then $Q_0$ would be a strict local maximum of cost.",
-      "The condition $C'(Q_0)=0$ was still needed; $C''(Q_0)>0$ alone does not locate the candidate.",
-      "Because $C''(Q_0)>0$, average cost $\\dfrac{C(Q)}{Q}$ must equal marginal cost at $Q_0$."
+      "$C'(Q)=2Q-10$, so the only critical point is $Q=5$.",
+      "$C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.",
+      "The minimal cost value is $C(5)=15$.",
+      "The same critical point $Q=5$ would be a local maximum if the SOC were ignored and only $C'(5)=0$ were used.",
+      "On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$."
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The second-derivative test says: if $C'(Q_0)=0$ and $C''(Q_0)>0$, then $Q_0$ is a strict local minimum. Here $C''(Q_0)=4>0$, so the classification is a strict local min of cost.
+$$
+C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.
+$$
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-Positive second derivative at a critical point signals a local valley (minimum), not a peak. The claim reverses the test.
+$$
+C''(Q)=2>0
+$$
 
-The statement is False.`,
+with $C'(5)=0$ classifies a strict local minimum.
+
+The statement is True.`,
       `**C.** → True
 
-If $C'(Q_0)=0$ and $C''(Q_0)<0$, the second-derivative test classifies a strict local maximum. The alternative numbers give exactly that mathematical case.
+$$
+C(5)=25-50+40=15.
+$$
 
 The statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
-The second-derivative test is applied at a critical point. Without $C'(Q_0)=0$, the value of $C''(Q_0)$ alone does not identify a stationary candidate.
+The FOC alone does not decide max versus min. Here $C''>0$ forces a minimum, not a maximum. Ignoring the SOC does not turn the point into a maximum.
 
-The statement is True.`,
-      `**E.** → False
+The statement is False.`,
+      `**E.** → True
 
-$C''(Q_0)>0$ classifies the critical point of total cost. The link $C'(Q)=A(Q)$ belongs to minimizing average cost $A(Q)=\\dfrac{C(Q)}{Q}$, a different problem. It does not follow from $C''(Q_0)>0$ alone.
+$C$ is a parabola opening upward. Its unique critical point is therefore the global minimum on $Q\\ge 0$ (and $C(0)=40>15$).
 
-The statement is False.`
+The statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 83,
     solution_overview:
-      "Apply the SOC at a critical point: $C''>0$ gives a strict local min; $C''<0$ would give a strict local max.",
+      "Differentiate cost, solve $C'=0$, use $C''>0$ to classify a global cost minimum.",
   },
   {
     id: "math-11-84",
     case_id: "MATH 11.84",
-    title: "When the second derivative vanishes",
+    title: "Two promo scores with f'=f''=0 at zero",
     subsection: "11.3",
     context:
-      "Three different twice differentiable functions each satisfy $f'(0)=0$ and $f''(0)=0$. For the first, $x=0$ is a strict local minimum; for the second, $x=0$ is a strict local maximum; for the third, $x=0$ is neither. Decide TRUE or FALSE for each claim.",
+      "A marketing team compares two campaign-score models near intensity $x=0$: $A(x)=x^{4}$ and $B(x)=-x^{4}$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The second-derivative test is inconclusive when $f'(c)=f''(c)=0$.",
-      "Because the three functions in the story share $f'(0)=f''(0)=0$, they must share the same classification at $0$.",
-      "The story already shows that $f'=f''=0$ is compatible with a local max, a local min, and a non-extremum.",
-      "One can still classify such a point by studying the sign of $f'$ on either side of $c$.",
-      "Reporting only $f''(c)=0$ is enough to conclude that $c$ is an inflection and not an extremum."
+      "For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.",
+      "The second-derivative test is inconclusive at $x=0$ for both $A$ and $B$.",
+      "Nevertheless, $x=0$ is a strict local minimum of $A$.",
+      "Nevertheless, $x=0$ is a strict local maximum of $B$.",
+      "Because $A''(0)=B''(0)=0$, neither $A$ nor $B$ can have an extremum at $0$."
     ],
-    answer_key: [true, false, true, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The second-derivative test's third clause is exactly that: when $f'(c)=0$ and $f''(c)=0$, the test does not decide among local max, local min, or neither.
+$$
+A'(x)=4x^{3},\\quad A''(x)=12x^{2},
+$$
+$$
+B'(x)=-4x^{3},\\quad B''(x)=-12x^{2}.
+$$
+
+At $x=0$ all four values are zero.
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-Sharing the same inconclusive numbers $f'=f''=0$ does not force the same label. The story's three functions are classified differently at $0$, so the claim that they must share the same classification is false.
+The second-derivative test requires $f''\\neq 0$ at the critical point. Here both second derivatives vanish, so the test gives no classification.
 
-The statement is False.`,
+The statement is True.`,
       `**C.** → True
 
-That is the point of the story: vanishing $f''$ at a critical point still leaves all three outcomes open, and each outcome actually occurs for one of the three functions.
+$A(x)=x^{4}\\ge 0=A(0)$ for all $x$, so $x=0$ is a strict global (hence local) minimum even though $A''(0)=0$.
 
 The statement is True.`,
       `**D.** → True
 
-The first-derivative sign test still works: $-$ to $+$ gives a local min; $+$ to $-$ gives a local max; no sign change means neither.
+$B(x)=-x^{4}\\le 0=B(0)$ for all $x$, so $x=0$ is a strict global maximum.
 
 The statement is True.`,
       `**E.** → False
 
-$f''(c)=0$ alone does not force an inflection or rule out an extremum. Classification needs more information.
+Vanishing $f''$ does not forbid extrema. $A$ has a min and $B$ a max at $0$. Use a sign chart or direct comparison when the SOC is inconclusive.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 84,
     solution_overview:
-      "Treat $f'=f''=0$ as inconclusive for the SOC; max, min, or neither remain possible.",
+      "Compute $f'$ and $f''$ for $x^{4}$ and $-x^{4}$; show the SOC fails while extrema still exist.",
   },
   {
     id: "math-11-85",
     case_id: "MATH 11.85",
-    title: "Two cafés, same FOC, opposite second derivatives",
+    title: "Two cafés: same FOC output, opposite P'' signs",
     subsection: "11.3",
     context:
-      "Two cafés both report a critical output $Q=10$ where marginal profit vanishes: $P_A'(10)=0$ and $P_B'(10)=0$. Café A also reports $P_A''(10)=-2<0$. Café B reports $P_B''(10)=3>0$. Neither café posts the profit level. Decide TRUE or FALSE for each claim.",
+      "Café A models profit by $P_A(Q)=-Q^{2}+20Q-50$. Café B models profit by $P_B(Q)=Q^{2}-20Q+90$. Both consider the output $Q=10$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Café A's numbers classify $Q=10$ as a strict local maximum of profit.",
-      "Café B's numbers classify $Q=10$ as a strict local minimum of profit.",
-      "Because both cafés share the same FOC at $Q=10$, they share the same classification.",
-      "Café A should treat $Q=10$ as a candidate peak; Café B should treat it as a candidate trough.",
-      "The larger second derivative at B already means B earns more profit than A at $Q=10$."
+      "$P_A'(10)=0$ and $P_B'(10)=0$, so both have a critical point at $Q=10$.",
+      "$P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.",
+      "$P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.",
+      "Because both cafés satisfy the same FOC at $Q=10$, both are maximising profit there.",
+      "Café A's profit at the critical point is $P_A(10)=50$, while Café B's is $P_B(10)=-10$."
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$P_A'(10)=0$ and $P_A''(10)<0$ are exactly the SOC for a strict local maximum of profit.
+$$
+P_A'(Q)=-2Q+20,\\qquad P_B'(Q)=2Q-20.
+$$
+
+At $Q=10$ both derivatives are zero.
 
 The statement is True.`,
       `**B.** → True
 
-$P_B'(10)=0$ and $P_B''(10)>0$ are the SOC for a strict local minimum of profit.
+$$
+P_A''(Q)=-2<0
+$$
+
+with $P_A'(10)=0$ classifies a strict local maximum for A.
 
 The statement is True.`,
-      `**C.** → False
-
-The FOC only says both are critical. The second derivatives have opposite signs, so the classifications are opposite: local max at A, local min at B.
-
-The statement is False.`,
-      `**D.** → True
-
-That is the practical reading of the two SOC outcomes: A has a local peak candidate; B has a local valley candidate.
-
-The statement is True.`,
-      `**E.** → False
-
-$P''$ describes curvature at the critical point, not the height $P(10)$. Nothing in the reports compares $P_A(10)$ with $P_B(10)$.
-
-The statement is False.`
-    ],
-    difficulty_level: "4/5",
-    sort_order: 85,
-    solution_overview:
-      "Same FOC at two firms can still yield opposite classifications once the SOC signs differ.",
-  },
-  {
-    id: "math-11-86",
-    case_id: "MATH 11.86",
-    title: "A local peak that is not the global best",
-    subsection: "11.3",
-    context:
-      "On a closed interval of feasible outputs, a firm has a critical point $Q_1$ where the second-derivative test gives a strict local maximum of profit. At the right endpoint $Q_2$ of the interval, profit is still higher than at $Q_1$, and one does not require $P'(Q_2)=0$ at that endpoint. Decide TRUE or FALSE for each claim.",
-    statements: [
-      "$Q_1$ can be a local maximum without being a global maximum on the interval.",
-      "Because $Q_1$ passed the SOC for a local max, it must also be the global max.",
-      "A global maximum on a closed interval may occur at an endpoint rather than at a critical point.",
-      "To find a global maximum on a closed interval, one must compare profit values at all candidates, including endpoints.",
-      "Local classification with $P''$ already ranks global profits across distant points."
-    ],
-    answer_key: [true, false, true, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-Local means best among nearby outputs. A higher profit at a distant endpoint is compatible with $Q_1$ remaining a local peak.
-
-The statement is True.`,
-      `**B.** → False
-
-The SOC proves a local property only. It does not compare $P(Q_1)$ with profits far away, so it does not prove a global maximum.
-
-The statement is False.`,
       `**C.** → True
 
-On a closed interval, global extrema of a continuous function exist and may sit at endpoints. Endpoints need not satisfy $P'=0$.
+$$
+P_B''(Q)=2>0
+$$
 
-The statement is True.`,
-      `**D.** → True
-
-The standard candidate list is: interior critical points, endpoints, and any interior points where the derivative fails to exist. Global comparison uses the function values at those candidates.
-
-The statement is True.`,
-      `**E.** → False
-
-$P''$ classifies the shape near one critical point. It does not compare profit heights at distant candidates.
-
-The statement is False.`
-    ],
-    difficulty_level: "3/5",
-    sort_order: 86,
-    solution_overview:
-      "Keep local SOC classification separate from the global comparison of profit values on a closed interval.",
-  },
-  {
-    id: "math-11-87",
-    case_id: "MATH 11.87",
-    title: "An endpoint optimum without a zero derivative",
-    subsection: "11.3",
-    context:
-      "A workshop may produce any output in the closed interval $0\\le Q\\le 50$. Profit is differentiable on $(0,50)$, and $P'(Q)>0$ for every $Q$ in $(0,50)$. Decide TRUE or FALSE for each claim.",
-    statements: [
-      "There is no interior critical point in $(0,50)$.",
-      "Profit is increasing throughout $(0,50)$, so the maximum on $[0,50]$ occurs at the right endpoint $Q=50$.",
-      "Because the maximum is at $Q=50$, one must have $P'(50)=0$.",
-      "The minimum on $[0,50]$ occurs at the left endpoint $Q=0$.",
-      "The FOC $P'(Q)=0$ is required at every global maximum, including endpoints."
-    ],
-    answer_key: [true, true, false, true, false],
-    tactical_explanations: [
-      `**A.** → True
-
-A critical point needs $P'(Q)=0$. Here $P'(Q)>0$ everywhere inside $(0,50)$, so there is no interior critical point.
-
-The statement is True.`,
-      `**B.** → True
-
-Positive derivative means profit rises as $Q$ rises. On a closed interval the highest value is then at the right end $Q=50$.
-
-The statement is True.`,
-      `**C.** → False
-
-At an endpoint the necessary FOC for interior extrema does not apply. One can have a maximum at $Q=50$ without $P'(50)=0$.
-
-The statement is False.`,
-      `**D.** → True
-
-With profit increasing on $(0,50)$, the smallest value on $[0,50]$ is at the left end $Q=0$.
-
-The statement is True.`,
-      `**E.** → False
-
-The FOC $P'=0$ is necessary only for interior extrema of a differentiable function. Endpoint optima are allowed without a zero derivative.
-
-The statement is False.`
-    ],
-    difficulty_level: "3/5",
-    sort_order: 87,
-    solution_overview:
-      "When $P'>0$ throughout an open interval, the closed-interval max and min sit at the endpoints, without an interior FOC.",
-  },
-  {
-    id: "math-11-88",
-    case_id: "MATH 11.88",
-    title: "Reading a sign chart instead of a second derivative",
-    subsection: "11.3",
-    context:
-      "A differentiable function $f$ has a single critical point at $x=c$. A sign chart shows $f'(x)>0$ for $x$ just below $c$ and $f'(x)<0$ for $x$ just above $c$. Decide TRUE or FALSE for each claim.",
-    statements: [
-      "The first-derivative test classifies $c$ as a strict local maximum.",
-      "The same sign pattern would classify $c$ as a strict local minimum.",
-      "If instead $f'$ changed from negative to positive at $c$, then $c$ would be a strict local minimum.",
-      "This sign-chart argument needs the value of $f''(c)$.",
-      "If $f'$ kept the same sign on both sides of $c$, then $c$ would be neither a local max nor a local min."
-    ],
-    answer_key: [true, false, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-The first-derivative test: if $f'$ changes from $+$ to $-$ at a critical point, the function rises then falls, so $c$ is a strict local maximum.
-
-The statement is True.`,
-      `**B.** → False
-
-$+$ to $-$ is a peak, not a valley. A local minimum needs $-$ to $+$.
-
-The statement is False.`,
-      `**C.** → True
-
-A change from $-$ to $+$ means the function falls then rises: a strict local minimum.
+with $P_B'(10)=0$ classifies a strict local minimum for B.
 
 The statement is True.`,
       `**D.** → False
 
-The first-derivative test uses the sign of $f'$ on either side. It does not require computing $f''(c)$.
+Same FOC, opposite SOC. Only A has a local max; B has a local min. The FOC alone does not prove maximisation.
 
 The statement is False.`,
       `**E.** → True
 
-If $f'$ does not change sign, the function keeps increasing through $c$ or keeps decreasing through $c$. Then $c$ is not a local extremum.
+$$
+P_A(10)=-100+200-50=50,
+$$
+$$
+P_B(10)=100-200+90=-10.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 85,
+    solution_overview:
+      "Differentiate two café profits; same critical $Q$ gets opposite classifications from $P''$.",
+  },
+  {
+    id: "math-11-86",
+    case_id: "MATH 11.86",
+    title: "Ticket booth: local peak vs endpoint global max",
+    subsection: "11.3",
+    context:
+      "A festival ticket booth may sell any output in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is $P(Q)=Q^{3}-6Q^{2}+9Q+10$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=3Q^{2}-12Q+9$, and the critical points in $(0,5)$ are $Q=1$ and $Q=3$.",
+      "$P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.",
+      "The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.",
+      "On $[0,5]$, the global maximum is at the local peak $Q=1$.",
+      "On $[0,5]$, the global maximum is at the endpoint $Q=5$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).
+$$
+
+Critical points: $Q=1$ and $Q=3$.
+
+The statement is True.`,
+      `**B.** → True
+
+$$
+P''(Q)=6Q-12,\\qquad P''(1)=-6<0,\\qquad P''(3)=6>0.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+$$
+P(1)=14,\\quad P(3)=10,\\quad P(0)=10,\\quad P(5)=30.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+$P(1)=14$ is only a local peak. $P(5)=30>14$, so $Q=1$ is not the global max on $[0,5]$.
+
+The statement is False.`,
+      `**E.** → True
+
+Among the candidates, $P(5)=30$ is largest. The global maximum is at the endpoint $Q=5$.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
-    sort_order: 88,
+    sort_order: 86,
     solution_overview:
-      "Classify a critical point from the sign change of $f'$: $+$ to $-$ is a local max; $-$ to $+$ is a local min.",
+      "Find and classify critical points of a cubic profit, then compare endpoint values for the global max.",
   },
   {
-    id: "math-11-89",
-    case_id: "MATH 11.89",
-    title: "Candidates first, classification second",
+    id: "math-11-87",
+    case_id: "MATH 11.87",
+    title: "Pop-up stall: rising profit forces an endpoint max",
     subsection: "11.3",
     context:
-      "A student is asked to maximize a twice differentiable objective $f(x)$ on an open interval. The student writes: Step 1 solve $f'(x)=0$; Step 2 use $f''$ or a sign chart to label each solution as local max, local min, or neither. Decide TRUE or FALSE for each claim.",
+      "A pop-up stall can produce any output in $0\\le Q\\le 8$. Its profit is $P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Step 1 produces the interior critical candidates required by the FOC.",
-      "Step 2 is the classification step that the FOC alone does not provide.",
-      "Skipping Step 2 is harmless because every solution of $f'(x)=0$ is a local maximum.",
-      "If Step 2 finds $f'(c)=0$ and $f''(c)<0$, then $c$ is a strict local maximum.",
-      "If Step 2 finds $f'(c)=0$ and $f''(c)>0$, then $c$ is a strict local minimum."
+      "$P'(Q)=5-\\dfrac{Q}{5}$.",
+      "On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior critical point.",
+      "Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.",
+      "At the maximum point $Q=8$ one must have $P'(8)=0$.",
+      "The maximal profit on the interval is $P(8)=36.6$."
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Solving $f'(x)=0$ is exactly the search for interior critical points — the FOC candidates.
+$$
+P'(Q)=5-\\dfrac{Q}{5}.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-Classification (max / min / neither) needs a further test. That is Step 2's job.
+For $0<Q<8$,
+
+$$
+5-\\dfrac{Q}{5}>5-\\dfrac{8}{5}=3.4>0.
+$$
+
+So $P'$ never vanishes inside $(0,8)$.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-Critical points need not be local maxima. Skipping classification leaves the answer incomplete and possibly wrong.
+Positive derivative means $P$ is strictly increasing on the interval, so the minimum is at $Q=0$ and the maximum at $Q=8$.
+
+The statement is True.`,
+      `**D.** → False
+
+An endpoint maximum need not satisfy the FOC. Here
+
+$$
+P'(8)=5-\\dfrac{8}{5}=3.4\\neq 0.
+$$
 
 The statement is False.`,
-      `**D.** → True
-
-That pair of conditions is the sufficient SOC for a strict local maximum.
-
-The statement is True.`,
       `**E.** → True
 
-That pair is the sufficient SOC for a strict local minimum.
+$$
+P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.
+$$
 
 The statement is True.`
     ],
-    difficulty_level: "2/5",
-    sort_order: 89,
+    difficulty_level: "3/5",
+    sort_order: 87,
     solution_overview:
-      "Treat optimization as a two-step skill: find critical candidates with the FOC, then classify them with an SOC or sign test.",
+      "Compute $P'$, verify it stays positive on $(0,8)$, and locate the max at the right endpoint without $P'=0$.",
   },
   {
-    id: "math-11-90",
-    case_id: "MATH 11.90",
-    title: "Profit peak: FOC then SOC in words",
+    id: "math-11-88",
+    case_id: "MATH 11.88",
+    title: "App downloads: classify two critical points by signs",
     subsection: "11.3",
     context:
-      "A firm seeks an interior output that locally maximizes profit $P(Q)=R(Q)-C(Q)$, with $R$ and $C$ twice differentiable. Decide TRUE or FALSE for each claim.",
+      "An app studio models weekly net benefit (in thousands of euros) by $B(x)=x^{3}-6x^{2}+9x+2$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "A necessary FOC at an interior local profit maximum $Q^{\\ast}$ is $P'(Q^{\\ast})=0$, equivalently $R'(Q^{\\ast})=C'(Q^{\\ast})$.",
-      "A sufficient SOC for a strict local profit maximum is $P'(Q^{\\ast})=0$ together with $P''(Q^{\\ast})<0$.",
-      "The equality $R'(Q^{\\ast})=C'(Q^{\\ast})$ alone already proves a local profit maximum.",
-      "If $P'(Q^{\\ast})=0$ and $P''(Q^{\\ast})>0$, then $Q^{\\ast}$ is a strict local minimum of profit, not a maximum.",
-      "Checking only that total profit $P(Q^{\\ast})$ is positive is a valid substitute for the SOC."
+      "$B'(x)=3x^{2}-12x+9$, with critical points $x=1$ and $x=3$.",
+      "A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.",
+      "A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.",
+      "$B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same classifications.",
+      "Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$."
     ],
-    answer_key: [true, true, false, true, false],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Interior local max $\\Rightarrow$ $P'(Q^{\\ast})=0$. Expanding $P'=R'-C'$ gives the familiar $R'(Q^{\\ast})=C'(Q^{\\ast})$.
+$$
+B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).
+$$
+
+Critical points: $x=1$ and $x=3$.
 
 The statement is True.`,
       `**B.** → True
 
-The second-derivative test applied to profit: zero first derivative and negative second derivative yield a strict local maximum.
+For $x\\in(0,1)$, both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$.
+For $x\\in(1,3)$, $(x-1)>0$ and $(x-3)<0$, so $B'<0$.
+Thus $+$ to $-$ at $x=1$: local maximum.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-$R'=C'$ is only the FOC. Without a second-order or sign test, the critical point might be a min or neither.
+For $x>3$, both factors are positive, so $B'>0$. Crossing $x=3$ changes $-$ to $+$: local minimum.
 
-The statement is False.`,
+The statement is True.`,
       `**D.** → True
 
-$P'=0$ with $P''>0$ is the SOC for a strict local minimum of profit — the opposite of a peak.
+$$
+B''(x)=6x-12,\\qquad B''(1)=-6<0,\\qquad B''(3)=6>0.
+$$
 
 The statement is True.`,
       `**E.** → False
 
-The sign of the profit level $P(Q^{\\ast})$ does not classify the critical point. Positive profit can sit at a local minimum; negative profit can sit at a local maximum.
+$B(x)\\to\\infty$ as $x\\to\\infty$ because of the $x^{3}$ term, so there is no global maximum on $[0,\\infty)$. A local max need not be global.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 88,
+    solution_overview:
+      "Factor $B'$, read a sign chart at two critical points, and confirm with $B''$; refuse local=global.",
+  },
+  {
+    id: "math-11-89",
+    case_id: "MATH 11.89",
+    title: "Bakery ovens: full FOC-then-SOC pipeline",
+    subsection: "11.3",
+    context:
+      "A bakery's daily profit from running $Q$ ovens is $P(Q)=-Q^{3}+9Q^{2}-24Q+30$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=-3Q^{2}+18Q-24$, and the critical points in $(0,6)$ are $Q=2$ and $Q=4$.",
+      "$P''(2)=6>0$, so $Q=2$ is a strict local minimum.",
+      "$P''(4)=-6<0$, so $Q=4$ is a strict local maximum.",
+      "Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.",
+      "Step 1 (solve $P'=0$) alone already proves which point maximises profit on $[0,6]$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).
+$$
+
+Critical points: $Q=2$ and $Q=4$.
+
+The statement is True.`,
+      `**B.** → True
+
+$$
+P''(Q)=-6Q+18,\\qquad P''(2)=6>0,
+$$
+
+so $Q=2$ is a strict local minimum.
+
+The statement is True.`,
+      `**C.** → True
+
+$$
+P''(4)=-24+18=-6<0,
+$$
+
+so $Q=4$ is a strict local maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+P(0)=30,\\quad P(2)=10,\\quad P(4)=14,\\quad P(6)=-6.
+$$
+
+The largest value is $P(0)=30$, so the global max on $[0,6]$ is at the endpoint.
+
+The statement is True.`,
+      `**E.** → False
+
+The FOC only lists candidates. Classification plus comparing function values (including endpoints) is still required.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 89,
+    solution_overview:
+      "Differentiate, solve $P'=0$, classify with $P''$, then compare values to find the global max.",
+  },
+  {
+    id: "math-11-90",
+    case_id: "MATH 11.90",
+    title: "Print shop: FOC from R and C, then SOC on P",
+    subsection: "11.3",
+    context:
+      "A print shop has revenue $R(Q)=40Q-2Q^{2}$ and cost $C(Q)=Q^{2}+4Q+10$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.",
+      "The FOC gives the candidate $Q=6$, and equivalently $R'(6)=C'(6)=16$.",
+      "$P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.",
+      "Maximal profit is $P(6)=98$.",
+      "Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,
+$$
+$$
+P'(Q)=-6Q+36.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+$$
+P'(Q)=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
+
+Also $R'(Q)=40-4Q$ and $C'(Q)=2Q+4$, so
+
+$$
+R'(6)=16=C'(6).
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+$$
+P''(Q)=-6<0
+$$
+
+at the critical point classifies a strict local maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+$R'=C'$ is only the FOC. Without an SOC or sign test, the critical point might be a minimum. Here $P''<0$ finishes the proof of a max.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 90,
     solution_overview:
-      "For interior profit maximization, combine the FOC $R'=C'$ with the SOC $P''<0$; neither piece alone finishes the job.",
+      "Build $P$ from $R$ and $C$, solve the FOC, confirm with $R'=C'$, and classify with $P''<0$.",
   },
   {
     id: "math-11-91",
     case_id: "MATH 11.91",
-    title: "Two bakeries: one peak, one trough at the same recipe",
+    title: "Two bakeries: compute both FOCs and both SOCs",
     subsection: "11.3",
     context:
-      "Two bakeries use similar daily profit models and both find a critical batch size $Q=8$ where $P'(8)=0$. Bakery North's second derivative is $P_N''(8)=-5$. Bakery South's is $P_S''(8)=2$. A consultant says both bakeries have therefore found their optimal batch. Decide TRUE or FALSE for each claim.",
+      "Bakery North uses $P_N(Q)=-Q^{2}+16Q-30$. Bakery South uses $P_S(Q)=Q^{2}-16Q+70$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "North's SOC classifies $Q=8$ as a strict local profit maximum.",
-      "South's SOC classifies $Q=8$ as a strict local profit minimum.",
-      "The consultant is right that both bakeries have found a local profit maximum.",
-      "South should not expand or contract away from $Q=8$ if the goal is to maximize profit near that point.",
-      "North can treat the FOC-plus-SOC package as evidence of a local peak; South's package points the other way."
+      "Both bakeries have a critical output at $Q=8$.",
+      "North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.",
+      "South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.",
+      "North's peak profit is $P_N(8)=34$, while South's critical profit is $P_S(8)=6$.",
+      "Because both critical outputs equal $8$, both bakeries are at a profit maximum."
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$P_N'(8)=0$ with $P_N''(8)<0$ is the sufficient SOC for a strict local maximum.
+$$
+P_N'(Q)=-2Q+16=0\\qquad\\Rightarrow\\qquad Q=8,
+$$
+$$
+P_S'(Q)=2Q-16=0\\qquad\\Rightarrow\\qquad Q=8.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-$P_S'(8)=0$ with $P_S''(8)>0$ is the sufficient SOC for a strict local minimum.
+$P_N''=-2<0$ with the FOC classifies a strict local max for North.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-Only North has a local maximum. South has a local minimum. The consultant wrongly treats every FOC solution as a max.
+$P_S''=2>0$ with the FOC classifies a strict local min for South.
 
-The statement is False.`,
-      `**D.** → False
+The statement is True.`,
+      `**D.** → True
 
-At a local minimum of profit, moving a little away from $Q=8$ raises profit. Staying put is the wrong advice if the goal is local maximization.
+$$
+P_N(8)=-64+128-30=34,
+$$
+$$
+P_S(8)=64-128+70=6.
+$$
 
-The statement is False.`,
-      `**E.** → True
+The statement is True.`,
+      `**E.** → False
 
-That is the whole point of pairing FOC with SOC: North's package supports a peak; South's supports a trough.
+Same critical output does not mean the same classification. South's SOC shows a trough, not a peak.
 
-The statement is True.`
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 91,
     solution_overview:
-      "Two bakeries share a critical batch size but opposite $P''$ signs, so only one has a local profit peak.",
+      "Differentiate two bakery profits; shared critical $Q$ gets opposite SOC labels.",
   },
   {
     id: "math-11-92",
     case_id: "MATH 11.92",
-    title: "Necessary SOC versus sufficient SOC",
+    title: "Loyalty index: sufficient SOC fails but a max remains",
     subsection: "11.3",
     context:
-      "A twice differentiable function $f$ has a local maximum at an interior point $c$. Decide TRUE or FALSE for each claim.",
+      "A retailer's loyalty index near a special offer intensity $x$ is modelled by $L(x)=10-x^{4}$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "A necessary FOC is $f'(c)=0$.",
-      "A necessary second-order condition is $f''(c)\\le 0$.",
-      "The inequality $f''(c)<0$ is necessary at every local maximum.",
-      "The pair $f'(c)=0$ and $f''(c)<0$ is sufficient for a strict local maximum.",
-      "If $f'(c)=0$ and $f''(c)=0$, one can still have a local maximum."
+      "$L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so $x=0$ is a critical point with $L''(0)=0$.",
+      "The sufficient second-derivative test for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.",
+      "Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.",
+      "Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.",
+      "A necessary condition at an interior local max of a twice differentiable function is $L''\\le 0$; here $L''(0)=0$ still obeys that necessary condition."
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-At an interior local maximum of a differentiable function, the derivative must vanish.
+Differentiate:
+
+$$
+L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.
+$$
+
+Both vanish at $x=0$.
 
 The statement is True.`,
       `**B.** → True
 
-If a local maximum occurred with $f''(c)>0$, the second-derivative test would force a local minimum, a contradiction. Hence at a local max one must have $f''(c)\\\\le 0$.
+The usual sufficient SOC needs a strictly negative second derivative. Here $L''(0)=0$, so that sufficient test does not fire.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-Necessity only gives $f''(c)\\\\le 0$. The case $f''(c)=0$ is allowed (for example $-x^{4}$ at $0$ is a local max with $f''(0)=0$). Strict inequality is sufficient, not necessary.
+$x^{4}\\ge 0$ for all $x$, so $L(x)=10-x^{4}\\le 10=L(0)$. The peak is global.
+
+The statement is True.`,
+      `**D.** → False
+
+$L''(0)=0$ does not forbid a maximum; the direct comparison already proves one.
 
 The statement is False.`,
-      `**D.** → True
-
-That is the standard sufficient SOC for a strict local maximum.
-
-The statement is True.`,
       `**E.** → True
 
-When $f''(c)=0$, the sufficient SOC fails, but a local maximum can still occur. The necessary condition $f''\\\\le 0$ still holds.
+At an interior local maximum one must have $L''\\le 0$. Equality is allowed. Necessary is weaker than sufficient.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 92,
     solution_overview:
-      "Distinguish necessary SOC ($f''\\le 0$ at a local max) from sufficient SOC ($f'=0$ and $f''<0$).",
+      "Compute derivatives of $10-x^{4}$; separate inconclusive sufficient SOC from a still-valid global max.",
   },
   {
     id: "math-11-93",
     case_id: "MATH 11.93",
-    title: "Minimizing cost is not maximizing profit",
+    title: "Same firm: minimise cost and maximise profit separately",
     subsection: "11.3",
     context:
-      "A plant can choose output $Q>0$. Cost $C$ and profit $P=R-C$ are twice differentiable. At an output $Q_c$ one has $C'(Q_c)=0$ and $C''(Q_c)>0$. At a different output $Q_p$ one has $P'(Q_p)=0$ and $P''(Q_p)<0$. Decide TRUE or FALSE for each claim.",
+      "A firm has cost $C(Q)=Q^{2}-8Q+30$ and revenue $R(Q)=20Q-Q^{2}$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$Q_c$ is classified as a strict local minimum of cost.",
-      "$Q_p$ is classified as a strict local maximum of profit.",
-      "Because both outputs satisfy a first-order condition, $Q_c$ and $Q_p$ must be the same point.",
-      "A local cost minimum need not be a local profit maximum.",
-      "The two problems use the same FOC-then-SOC logic, but applied to different objective functions."
-    ],
-    answer_key: [true, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-$C'(Q_c)=0$ with $C''(Q_c)>0$ is the SOC package for a strict local minimum of cost.
-
-The statement is True.`,
-      `**B.** → True
-
-$P'(Q_p)=0$ with $P''(Q_p)<0$ is the SOC package for a strict local maximum of profit.
-
-The statement is True.`,
-      `**C.** → False
-
-The FOCs are $C'=0$ versus $P'=R'-C'=0$. Those are different equations unless $R'=0$ as well. The critical outputs need not coincide.
-
-The statement is False.`,
-      `**D.** → True
-
-Cost and profit are different objectives. A valley of $C$ need not be a peak of $R-C$.
-
-The statement is True.`,
-      `**E.** → True
-
-Both tasks follow "find critical points, then classify," but one applies that skill to $C$ and the other to $P$.
-
-The statement is True.`
-    ],
-    difficulty_level: "3/5",
-    sort_order: 93,
-    solution_overview:
-      "Run FOC+SOC on the objective you actually care about: cost minima and profit maxima are different problems.",
-  },
-  {
-    id: "math-11-94",
-    case_id: "MATH 11.94",
-    title: "Two leisure utilities at the same critical hour",
-    subsection: "11.3",
-    context:
-      "Two students each model utility of leisure hours by a twice differentiable $U(x)$. Student A reports $U_A'(6)=0$ and $U_A''(6)=-1$. Student B reports $U_B'(6)=0$ and $U_B''(6)=1$. Decide TRUE or FALSE for each claim.",
-    statements: [
-      "Student A's numbers classify $x=6$ as a strict local maximum of utility.",
-      "Student B's numbers classify $x=6$ as a strict local minimum of utility.",
-      "Both students have found the leisure hour that maximizes satisfaction.",
-      "For student B, a little more or a little less than $6$ hours raises utility compared with $x=6$.",
-      "Sharing the same FOC hour does not force the two students to share the same classification."
-    ],
-    answer_key: [true, true, false, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-$U_A'(6)=0$ with $U_A''(6)<0$ is a strict local maximum of utility.
-
-The statement is True.`,
-      `**B.** → True
-
-$U_B'(6)=0$ with $U_B''(6)>0$ is a strict local minimum of utility.
-
-The statement is True.`,
-      `**C.** → False
-
-Only A has a local maximum. B has a local minimum. The FOC alone does not mean "maximizes satisfaction."
-
-The statement is False.`,
-      `**D.** → True
-
-At a local minimum, nearby points have higher function values. So moving slightly away from $6$ raises B's utility.
-
-The statement is True.`,
-      `**E.** → True
-
-Same critical hour, opposite $U''$ signs: classifications diverge.
-
-The statement is True.`
-    ],
-    difficulty_level: "4/5",
-    sort_order: 94,
-    solution_overview:
-      "Two utility models can share $U'(6)=0$ yet opposite $U''(6)$ signs, yielding max versus min.",
-  },
-  {
-    id: "math-11-95",
-    case_id: "MATH 11.95",
-    title: "Several critical points, each needs its own label",
-    subsection: "11.3",
-    context:
-      "A twice differentiable revenue function $R(Q)$ has three critical outputs $Q_1<Q_2<Q_3$, each with $R'(Q_i)=0$. The second derivatives are $R''(Q_1)<0$, $R''(Q_2)>0$, and $R''(Q_3)<0$. Decide TRUE or FALSE for each claim.",
-    statements: [
-      "$Q_1$ is classified as a strict local maximum of revenue.",
-      "$Q_2$ is classified as a strict local minimum of revenue.",
-      "$Q_3$ is classified as a strict local maximum of revenue.",
-      "Because three critical points exist, they must all be maxima.",
-      "A global maximum on a closed interval containing these points still requires comparing revenue values (and endpoints), not only reading the three SOC labels."
+      "Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.",
+      "Profit is $P(Q)=-2Q^{2}+28Q-30$, with critical point $Q=7$.",
+      "$P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.",
+      "The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.",
+      "At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$R'(Q_1)=0$ with $R''(Q_1)<0$ gives a strict local max.
+$$
+C'(Q)=2Q-8=0\\qquad\\Rightarrow\\qquad Q=4,\\qquad C''=2>0.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-$R'(Q_2)=0$ with $R''(Q_2)>0$ gives a strict local min.
+$$
+P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30,
+$$
+$$
+P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.
+$$
 
 The statement is True.`,
       `**C.** → True
 
-$R'(Q_3)=0$ with $R''(Q_3)<0$ gives another strict local max.
+$P''=-4<0$ classifies a strict local maximum at $Q=7$.
 
 The statement is True.`,
       `**D.** → False
 
-The middle critical point is a local minimum. Multiple critical points need individual classification.
+Cost min and profit max are different problems on different functions. Here the answers are $Q=4$ versus $Q=7$.
 
 The statement is False.`,
       `**E.** → True
 
-SOC labels are local. Choosing a global max still compares the actual $R$ values at candidates, including endpoints of a closed interval.
+$$
+P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,
+$$
+$$
+C(4)=16-32+30=14.
+$$
 
 The statement is True.`
     ],
-    difficulty_level: "3/5",
+    difficulty_level: "4/5",
+    sort_order: 93,
+    solution_overview:
+      "Run FOC+SOC twice: once on $C$, once on $P$; show the optimal outputs differ.",
+  },
+  {
+    id: "math-11-94",
+    case_id: "MATH 11.94",
+    title: "Two hikers: same critical hour, opposite utility labels",
+    subsection: "11.3",
+    context:
+      "Hiker A has utility $U_A(t)=-t^{2}+10t$ from $t$ hours on a trail. Hiker B has utility $U_B(t)=t^{2}-10t+30$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Both hikers have a critical time at $t=5$.",
+      "$U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.",
+      "$U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.",
+      "A's peak utility is $U_A(5)=25$, while B's critical utility is $U_B(5)=5$.",
+      "Because both solve $U'=0$ at the same hour, both are maximising satisfaction there."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+U_A'(t)=-2t+10=0\\qquad\\Rightarrow\\qquad t=5,
+$$
+$$
+U_B'(t)=2t-10=0\\qquad\\Rightarrow\\qquad t=5.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+$U_A''=-2<0$ classifies a local max for A.
+
+The statement is True.`,
+      `**C.** → True
+
+$U_B''=2>0$ classifies a local min for B.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+U_A(5)=-25+50=25,\\qquad U_B(5)=25-50+30=5.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+Shared FOC is not shared classification. B is at a trough.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 94,
+    solution_overview:
+      "Differentiate two utility functions; same critical $t$, opposite SOC outcomes.",
+  },
+  {
+    id: "math-11-95",
+    case_id: "MATH 11.95",
+    title: "Warehouse staffing: three candidates, three labels",
+    subsection: "11.3",
+    context:
+      "A warehouse models daily net payoff by $f(x)=x^{4}-8x^{2}+16$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the critical points are $x=-2$, $x=0$, and $x=2$.",
+      "$f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.",
+      "Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.",
+      "The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.",
+      "Because $x=0$ is a local maximum, it is also the global maximum of $f$ on $\\mathbb{R}$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+f'(x)=4x^{3}-16x=4x(x-2)(x+2).
+$$
+
+Critical points: $-2,0,2$.
+
+The statement is True.`,
+      `**B.** → True
+
+$$
+f''(x)=12x^{2}-16,
+$$
+$$
+f''(\\\\pm 2)=48-16=32>0,\\qquad f''(0)=-16<0.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+SOC: $f''>0$ at $\\\\pm 2$ gives local minima; $f''<0$ at $0$ gives a local maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+f(0)=16,\\qquad f(2)=16-32+16=0=f(-2).
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+As $|x|\\\\to\\\\infty$, $x^{4}$ dominates and $f(x)\\\\to\\\\infty$, so there is no global maximum. The local peak at $0$ is not global.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
     sort_order: 95,
     solution_overview:
-      "Classify each critical point on its own; a mix of local max and local min is normal.",
+      "Factor $f'$, evaluate $f''$ at three critical points, then refuse local=global.",
   },
   {
     id: "math-11-96",
     case_id: "MATH 11.96",
-    title: "Stationary is not a synonym for optimal",
+    title: "Clinic hours: stationary point that is a cost trough",
     subsection: "11.3",
     context:
-      "In a report, an economist writes that $Q^{\\ast}$ is a stationary point of profit because $P'(Q^{\\ast})=0$. A manager reads this as \"$Q^{\\ast}$ is optimal.\" Decide TRUE or FALSE for each claim.",
+      "A clinic's daily staffing cost is $C(h)=2h^{2}-24h+100$ for $h>0$ open hours. A manager finds the stationary point and calls it \"optimal\" for cost control. Decide TRUE or FALSE for each claim.",
     statements: [
-      "\"Stationary point\" correctly means a critical point where $P'(Q^{\\ast})=0$.",
-      "\"Optimal\" would require a classification that identifies a maximum (or a minimum, if that were the goal).",
-      "Every stationary point of profit is a profit-maximizing point.",
-      "The manager's reading skips the classify step of the find-then-classify skill.",
-      "If later one finds $P''(Q^{\\ast})<0$, then the stationary point is confirmed as a strict local maximum."
+      "$C'(h)=4h-24$, so the stationary point is $h=6$.",
+      "$C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.",
+      "Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the SOC confirms a min.",
+      "If the clinic's goal were instead to maximise cost, the same stationary point would be the wrong type of extremum.",
+      "The word \"stationary\" already means \"profit-maximising\", so no SOC is needed."
     ],
-    answer_key: [true, true, false, true, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Stationary / critical means derivative zero. That matches $P'(Q^{\\\\ast})=0$.
+$$
+4h-24=0\\qquad\\Rightarrow\\qquad h=6.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-Optimality is a claim about max or min. It needs more than stationarity.
+$C''=4>0$ classifies a strict local minimum.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-Stationary points include minima and non-extrema. They are not automatically profit-maximizing.
+For minimising cost, a classified local (here also global) minimum is the right kind of optimum.
 
-The statement is False.`,
+The statement is True.`,
       `**D.** → True
 
-Find (FOC) without classify (SOC or sign test) is exactly the manager's jump.
+A cost minimum is not a cost maximum. Goal and classification must match.
 
 The statement is True.`,
-      `**E.** → True
+      `**E.** → False
 
-Adding $P''(Q^{\\\\ast})<0$ supplies the sufficient SOC for a strict local maximum.
+Stationary only means $C'=0$. It does not encode the economic goal or the max/min label.
 
-The statement is True.`
+The statement is False.`
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "3/5",
     sort_order: 96,
     solution_overview:
-      "Refuse to equate \"stationary\" with \"optimal\"; optimality needs the classification step.",
+      "Compute the clinic's FOC and SOC; tie \"optimal\" to the stated min-cost goal.",
   },
   {
     id: "math-11-97",
     case_id: "MATH 11.97",
-    title: "Two cinemas: FOC holds, only one has a peak",
+    title: "Two cinemas: peak versus horizontal inflection",
     subsection: "11.3",
     context:
-      "Cinema A and Cinema B each choose ticket volume. Both currently satisfy the FOC $R'(Q)=C'(Q)$ at their chosen outputs $Q_A$ and $Q_B$. Cinema A also has $P_A''(Q_A)<0$. Cinema B has $P_B''(Q_B)=0$, and a sign chart shows $P_B'$ does not change sign at $Q_B$. Decide TRUE or FALSE for each claim.",
+      "Cinema A models profit by $P_A(Q)=-(Q-3)^{2}+5$. Cinema B models profit by $P_B(Q)=(Q-3)^{3}+5$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both cinemas are at critical points of profit.",
-      "Cinema A's SOC classifies $Q_A$ as a strict local profit maximum.",
-      "Cinema B's information classifies $Q_B$ as a strict local profit maximum.",
-      "Equalizing marginal revenue and marginal cost is enough to guarantee a local profit peak at both cinemas.",
-      "Cinema B needs a different test than \"$P''<0$\" because that sufficient SOC is unavailable when $P''=0$."
+      "Both cinemas have $P'(3)=0$, so $Q=3$ is critical for each.",
+      "For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.",
+      "For B, $P_B''(3)=0$, so the second-derivative test is inconclusive.",
+      "A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.",
+      "Because both satisfy the FOC at $Q=3$, both cinemas are at a profit peak."
     ],
-    answer_key: [true, true, false, false, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$R'=C'$ means $P'=0$, so both outputs are critical points of profit.
+Expand or use chain rule:
+
+$$
+P_A'(Q)=-2(Q-3),\\qquad P_B'(Q)=3(Q-3)^{2}.
+$$
+
+Both vanish at $Q=3$.
 
 The statement is True.`,
       `**B.** → True
 
-$P_A'=0$ with $P_A''<0$ is the sufficient SOC for a strict local maximum.
+$P_A''(Q)=-2<0$ classifies a strict local max for A.
 
 The statement is True.`,
-      `**C.** → False
+      `**C.** → True
 
-With $P_B''=0$ the sufficient SOC fails, and the sign chart says $P_B'$ does not change sign, so $Q_B$ is not a local max (nor a local min).
+$P_B''(Q)=6(Q-3)$, so $P_B''(3)=0$: the SOC test does not decide.
 
-The statement is False.`,
-      `**D.** → False
+The statement is True.`,
+      `**D.** → True
 
-$R'=C'$ is only the FOC. Cinema B shows a critical point that is not a local peak.
+$P_B'(Q)=3(Q-3)^{2}\\\\ge 0$ on both sides of $3$, and is zero only at $3$. No $+\\\\to-$ or $-\\\\to+$ change, so neither local max nor local min.
 
-The statement is False.`,
-      `**E.** → True
+The statement is True.`,
+      `**E.** → False
 
-When $P''=0$, fall back to the first-derivative sign test (or higher-order information). Cinema B already used a sign chart.
+Only A has a peak. B has a horizontal inflection. Shared FOC is not shared classification.
 
-The statement is True.`
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 97,
     solution_overview:
-      "Two cinemas share the FOC $R'=C'$, but only the one with $P''<0$ (or a $+$ to $-$ sign change) has a local profit peak.",
+      "Differentiate two cinema profits; classify A's peak and B's non-extremum when $P''=0$.",
   },
   {
     id: "math-11-98",
     case_id: "MATH 11.98",
-    title: "Stopping after f'=0 leaves the answer unfinished",
+    title: "Exam trap: FOC found, but the critical point is a min",
     subsection: "11.3",
     context:
-      "In an exam solution a candidate writes only \"$f'(x)=0$ at $x=2$, therefore $x=2$ is the maximum.\" No second derivative, sign chart, or function-value comparison appears. Decide TRUE or FALSE for each claim.",
+      "A student's exam solution for maximising $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$ writes only \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
     statements: [
-      "The candidate correctly identified a critical-point candidate.",
-      "The candidate correctly completed the classification of that candidate.",
-      "Without further work, $x=2$ might still be a local minimum.",
-      "Without further work, $x=2$ might be neither a local max nor a local min.",
-      "A complete solution must find candidates and then prove what kind of point each candidate is."
+      "$f'(x)=3x^{2}-6x$, so the critical points really are $x=0$ and $x=2$.",
+      "$f''(0)=-6<0$, so $x=0$ is a strict local maximum.",
+      "$f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.",
+      "There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.",
+      "Stopping after listing the solutions of $f'=0$ already finishes a maximisation proof."
     ],
-    answer_key: [true, false, true, true, true],
+    answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Solving $f'=0$ does produce a critical candidate. That part is fine.
+$$
+f'(x)=3x(x-2)=0\\qquad\\Rightarrow\\qquad x=0,2.
+$$
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-Jumping from "$f'=0$" to "maximum" skips classification. The solution is unfinished.
+$$
+f''(x)=6x-6,\\qquad f''(0)=-6<0.
+$$
 
-The statement is False.`,
+The statement is True.`,
       `**C.** → True
 
-A critical point can be a local minimum. Nothing in the write-up rules that out.
+$f''(2)=6>0$ classifies a local minimum at $x=2$.
 
 The statement is True.`,
       `**D.** → True
 
-A critical point can also be neither. That possibility is still open.
+The leading term $x^{3}$ sends $f\\\\to\\\\infty$ as $x\\\\to\\\\infty$, so no global max exists on $\\\\mathbb{R}$.
 
 The statement is True.`,
-      `**E.** → True
+      `**E.** → False
 
-That is the continuous skill for this subsection: find it (FOC), then prove what it is (SOC or sign test, and global comparison when needed).
+Classification and global discussion are missing. The FOC step alone is unfinished.
 
-The statement is True.`
+The statement is False.`
     ],
-    difficulty_level: "2/5",
+    difficulty_level: "3/5",
     sort_order: 98,
     solution_overview:
-      "Treat \"find then classify\" as mandatory: stopping at $f'=0$ is not a finished optimum argument.",
+      "Complete the student's unfinished solution: classify both critical points and note the missing global max.",
   },
   {
     id: "math-11-99",
     case_id: "MATH 11.99",
-    title: "What a strict local maximum promises nearby",
+    title: "Bike rental: prove a strict local max from derivatives",
     subsection: "11.3",
     context:
-      "A function $f$ has a strict local maximum at an interior point $c$. Decide TRUE or FALSE for each claim.",
+      "A bike-rental shop models hourly profit by $P(Q)=-3Q^{2}+30Q-40$ for $Q>0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "There is a neighbourhood of $c$ in which every other point gives a strictly smaller function value.",
-      "The same statement already implies that $c$ is a global maximum on the whole domain.",
-      "If $f$ is differentiable at $c$, then $f'(c)=0$.",
-      "If $f$ is twice differentiable and $f''(c)<0$ with $f'(c)=0$, that is enough to guarantee a strict local maximum.",
-      "Strict local maximum is only about nearby points; distant points may still beat $f(c)$."
+      "$P'(Q)=-6Q+30$, so the critical point is $Q=5$.",
+      "$P''(5)=-6<0$, so $Q=5$ is a strict local maximum.",
+      "Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.",
+      "Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.",
+      "Evaluating gives $P(5)=35$."
     ],
-    answer_key: [true, false, true, true, true],
+    answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-That is the definition of a strict local maximum: nearby alternative points have strictly smaller values.
+$$
+-6Q+30=0\\qquad\\Rightarrow\\qquad Q=5.
+$$
 
 The statement is True.`,
-      `**B.** → False
+      `**B.** → True
 
-Local is not global. A higher peak elsewhere remains possible.
+Constant $P''=-6<0$ with the FOC classifies a strict local maximum.
 
-The statement is False.`,
+The statement is True.`,
       `**C.** → True
 
-Interior local extrema of differentiable functions are critical points, so $f'(c)=0$.
+That is the definition of a strict local maximum: nearby points have strictly smaller $P$.
 
 The statement is True.`,
-      `**D.** → True
+      `**D.** → False
 
-That is the sufficient second-derivative test for a strict local maximum.
+Local maximality concerns neighbouring comparisons of $P$, not the numerical level being zero. Here $P(5)=35\\\\neq 0$.
 
-The statement is True.`,
+The statement is False.`,
       `**E.** → True
 
-The definition compares only a neighbourhood of $c$. Distant comparisons are a separate global question.
+$$
+P(5)=-3\\\\cdot 25+30\\\\cdot 5-40=-75+150-40=35.
+$$
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
     solution_overview:
-      "Read the definition of a strict local max, link it to the FOC, and keep it distinct from a global max.",
+      "Differentiate the bike-rental profit, classify the peak, and read local versus global for a concave quadratic.",
   },
   {
     id: "math-11-100",
@@ -6343,45 +6542,54 @@ The statement is True.`
     title: "Two plants: different critical outputs, different labels",
     subsection: "11.3",
     context:
-      "A company can produce in Plant West or Plant East. West's profit $P_W$ has a critical output $Q_W$ with $P_W'(Q_W)=0$ and $P_W''(Q_W)<0$. East's profit $P_E$ has a different critical output $Q_E$ with $P_E'(Q_E)=0$ and $P_E''(Q_E)>0$. A board memo says both plants have found optimal production levels. Decide TRUE or FALSE for each claim.",
+      "Plant West has profit $P_W(Q)=-Q^{2}+14Q-20$. Plant East has profit $P_E(Q)=Q^{2}-10Q+40$. A memo claims both plants have found optimal production levels at their critical outputs. Decide TRUE or FALSE for each claim.",
     statements: [
-      "West's package classifies $Q_W$ as a strict local profit maximum.",
-      "East's package classifies $Q_E$ as a strict local profit minimum.",
-      "The memo is correct that both $Q_W$ and $Q_E$ are local profit maxima.",
-      "East's critical output is a place where profit has a local trough, so calling it \"optimal\" for maximization is misleading.",
-      "Because $Q_W\\neq Q_E$, the two FOCs cannot both be valid."
+      "West's FOC gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.",
+      "East's FOC gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.",
+      "The memo is correct that both critical outputs are local profit maxima.",
+      "West's peak profit is $P_W(7)=29$, while East's critical profit is $P_E(5)=15$.",
+      "Because $Q_W\\neq Q_E$, at most one of the two FOCs can be valid."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$P_W'=0$ with $P_W''<0$ is a strict local maximum at $Q_W$.
+$$
+P_W'(Q)=-2Q+14=0\\qquad\\Rightarrow\\qquad Q=7,\\qquad P_W''=-2<0.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-$P_E'=0$ with $P_E''>0$ is a strict local minimum at $Q_E$.
+$$
+P_E'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5,\\qquad P_E''=2>0.
+$$
 
 The statement is True.`,
       `**C.** → False
 
-Only West has a local maximum. East has a local minimum. The memo over-claims.
+Only West has a local max. East has a local min. The memo over-claims.
 
 The statement is False.`,
       `**D.** → True
 
-For a maximization goal, a local minimum is not an optimal operating point. The word "optimal" in the memo is misleading for East.
+$$
+P_W(7)=-49+98-20=29,
+$$
+$$
+P_E(5)=25-50+40=15.
+$$
 
 The statement is True.`,
       `**E.** → False
 
-Different plants have different profit functions. Each can have its own valid FOC at its own output. Unequal critical outputs are expected.
+Different plants have different profit functions. Each FOC is valid for its own $P$. Unequal critical outputs are expected.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 100,
     solution_overview:
-      "Two plants can each satisfy an FOC at different outputs; SOC signs decide which one is a local max and which is a local min.",
+      "Compute each plant's FOC and SOC; reject the memo that both critical outputs are maxima.",
   }
 ];
