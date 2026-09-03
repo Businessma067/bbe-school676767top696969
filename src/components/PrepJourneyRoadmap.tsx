@@ -149,19 +149,35 @@ function NodeCircle({
         milestone.destination
           ? "bg-[var(--exam-red)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--exam-red)_55%,transparent)]"
           : "border-[1.5px] border-foreground/70 bg-[color-mix(in_oklab,var(--ivory)_88%,white)] text-foreground",
+        milestone.youAreHere && "border-[var(--exam-red)]",
       )}
       style={{ animationDelay: `${0.22 + index * 0.22}s` }}
     >
+      {milestone.youAreHere && (
+        <>
+          <span
+            className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            aria-hidden
+          />
+          <span
+            className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            aria-hidden
+          />
+        </>
+      )}
       <MilestoneIcon type={milestone.icon} className={iconDim} />
       {milestone.youAreHere && (
         <span
-          className="prep-roadmap-pulse absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-foreground"
+          className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full border border-[var(--exam-red)] bg-[var(--exam-red)] px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white shadow-[0_4px_12px_-6px_color-mix(in_oklab,var(--exam-red)_70%,transparent)]"
           aria-hidden
-        />
+        >
+          you are here
+        </span>
       )}
     </div>
   );
 }
+
 
 function NodeCaption({
   milestone,
@@ -174,11 +190,6 @@ function NodeCaption({
 }) {
   return (
     <div className={cn(align === "center" ? "text-center" : "text-left")}>
-      {milestone.youAreHere && (
-        <p className="mb-1 text-[10px] font-medium leading-none text-muted-foreground">
-          you are here
-        </p>
-      )}
       <p
         className={cn(
           "font-display font-semibold leading-snug text-foreground",
@@ -202,16 +213,26 @@ function NodeCaption({
 /** Wide desktop: soft S-curve across the full content width. */
 function SpreadDesktopRoadmap() {
   return (
-    <div className="relative hidden h-[340px] w-full md:block lg:h-[360px]">
+    <div className="relative hidden h-[340px] w-full md:block">
       <svg
         className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1100 300"
+        viewBox="0 0 1100 340"
         preserveAspectRatio="none"
         aria-hidden
       >
+        <defs>
+          <filter id="prepGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="6" result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
         <path
+          id="prepRoadmapPath"
           className="prep-roadmap-path"
-          d="M70 130 C 220 70, 300 70, 390 140 S 560 250, 700 140 S 900 55, 1030 120"
+          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
           fill="none"
           stroke="#161616"
           strokeOpacity="0.26"
@@ -221,6 +242,22 @@ function SpreadDesktopRoadmap() {
           pathLength={1}
           vectorEffect="non-scaling-stroke"
         />
+        <path
+          className="prep-roadmap-comet"
+          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
+          fill="none"
+          stroke="var(--exam-red)"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          pathLength={1}
+          vectorEffect="non-scaling-stroke"
+          filter="url(#prepGlow)"
+        />
+        <circle r="4.5" fill="var(--exam-red)" filter="url(#prepGlow)">
+          <animateMotion dur="7s" begin="1.1s" repeatCount="indefinite" rotate="auto">
+            <mpath href="#prepRoadmapPath" />
+          </animateMotion>
+        </circle>
       </svg>
 
       <div className="absolute left-[0%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
