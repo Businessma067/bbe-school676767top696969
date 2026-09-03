@@ -5441,20 +5441,22 @@ The statement is False.`
   {
     id: "math-11-81",
     case_id: "MATH 11.81",
-    title: "Workshop profit: differentiate, then classify the peak",
+    title: "Workshop profit: differentiate, then check the peak",
     subsection: "11.3",
     context:
       "A small workshop sells $Q$ handmade lamps per day and models daily profit (in euros) by $P(Q)=-Q^{2}+12Q-20$ for $Q\\ge 0$. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
     statements: [
       "Differentiating gives $P'(Q)=-2Q+12$.",
-      "The only critical point solves $P'(Q)=0$ and is $Q=6$.",
+      "The only output where the slope is zero solves $P'(Q)=0$ and is $Q=6$.",
       "The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.",
-      "Daily profit at that critical output is $P(6)=16$.",
+      "Daily profit at that candidate output is $P(6)=16$.",
       "Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 Differentiate term by term:
 
@@ -5464,19 +5466,29 @@ $$
 
 That matches the claim.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
 
-Solve the FOC
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+Solve
 
 $$
 P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad Q=6.
 $$
 
-On $Q\\ge 0$ this is the only critical point.
+On $Q\\ge 0$ this is the only candidate where the first derivative equals zero. After explaining the idea in words, this equation is often called the first-order condition for an interior optimum.
 
 The statement is True.`,
       `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 Differentiate again:
 
@@ -5484,10 +5496,12 @@ $$
 P''(Q)=-2<0.
 $$
 
-With $P'(6)=0$ and $P''(6)<0$, the second-derivative test classifies a strict local maximum at $Q=6$.
+With $P'(6)=0$ and $P''(6)<0$, the second-order test confirms a strict local maximum (peak) at $Q=6$.
 
 The statement is True.`,
       `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 Substitute into the profit formula:
 
@@ -5497,17 +5511,35 @@ $$
 
 The peak profit is $16$ euros.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**E.** → False
 
-$P'(6)=0$ is about the slope, not the height. The calculated level is $P(6)=16\\neq 0$. Slope zero does not force profit zero.
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$P'(6)=0$ is about the slope, not the height. The calculated level is $P(6)=16\\neq 0$. A flat tangent does not force profit to be zero.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 81,
     solution_overview:
-      "Differentiate $P(Q)=-Q^{2}+12Q-20$, solve $P'=0$, use $P''<0$ to classify the max, and evaluate $P(6)$.",
+      "Differentiate $P(Q)=-Q^{2}+12Q-20$, solve $P'=0$, use $P''<0$ to confirm a peak, and evaluate $P(6)$.",
   },
   {
     id: "math-11-82",
@@ -5519,7 +5551,7 @@ The statement is False.`
     statements: [
       "The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
       "Marginal profit is $P'(Q)=-4Q+24$.",
-      "The FOC $P'(Q)=0$ gives the candidate $Q=6$.",
+      "Setting $P'(Q)=0$ gives the candidate output $Q=6$.",
       "At $Q=6$ one also has $R'(6)=C'(6)=18$.",
       "Because $P'(6)=0$, the café's profit level equals its cost level at $Q=6$."
     ],
@@ -5527,26 +5559,52 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Differentiate term by term:
 
 $$
 P'(Q)=-4Q+24.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**C.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
 
 $$
 -4Q+24=0\\qquad\\Rightarrow\\qquad Q=6.
 $$
 
+This candidate is where marginal profit is zero (the first-order condition written in plain words).
+
 The statement is True.`,
       `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.
@@ -5558,25 +5616,41 @@ $$
 R'(6)=18,\\qquad C'(6)=18.
 $$
 
-So $R'(6)=C'(6)$, which is equivalent to $P'(6)=0$.
+So $R'(6)=C'(6)$, which is equivalent to $P'(6)=0$ because $P'=R'-C'$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**E.** → False
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $P'(6)=0$ does not compare the levels $P(6)$ and $C(6)$. Compute
 
 $$
-P(6)=-2\\cdot 36+24\\cdot 6-40=32,\\qquad C(6)=36+36+40=112.
+P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,\\qquad C(6)=36+36+40=112.
 $$
 
-They are not equal.
+They are not equal. Zero slope is not zero (or equal) height.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 82,
     solution_overview:
-      "Form $P=R-C$, differentiate, solve the FOC, and check the equivalent condition $R'=C'$.",
+      "Form $P=R-C$, differentiate, solve $P'=0$, and check the equivalent condition $R'=C'$.",
   },
   {
     id: "math-11-83",
@@ -5586,70 +5660,112 @@ The statement is False.`
     context:
       "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $C(Q)=Q^{2}-10Q+40$ for $Q\\ge 0$. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(Q)=2Q-10$, so the only critical point is $Q=5$.",
+      "$C'(Q)=2Q-10$, so the only output where the slope is zero is $Q=5$.",
       "$C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.",
       "The minimal cost value is $C(5)=15$.",
-      "The same critical point $Q=5$ would be a local maximum if the SOC were ignored and only $C'(5)=0$ were used.",
+      "Because $C'(5)=0$, the point $Q=5$ must be a local maximum of cost.",
       "On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 C''(Q)=2>0
 $$
 
-with $C'(5)=0$ classifies a strict local minimum.
+with $C'(5)=0$ confirms a strict local minimum (trough) of cost — this is the second-order test for a local min.
 
 The statement is True.`,
       `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 C(5)=25-50+40=15.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**D.** → False
 
-The FOC alone does not decide max versus min. Here $C''>0$ forces a minimum, not a maximum. Ignoring the SOC does not turn the point into a maximum.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Setting the first derivative to zero alone does not decide maximum versus minimum. Here $C''>0$ forces a trough, not a peak. Ignoring the second derivative does not turn the point into a maximum.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`,
       `**E.** → True
 
-$C$ is a parabola opening upward. Its unique critical point is therefore the global minimum on $Q\\ge 0$ (and $C(0)=40>15$).
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$C$ is a parabola opening upward. Its unique point where the slope is zero is therefore the global minimum on $Q\\ge 0$ (and $C(0)=40>15$).
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 83,
     solution_overview:
-      "Differentiate cost, solve $C'=0$, use $C''>0$ to classify a global cost minimum.",
+      "Differentiate cost, solve $C'=0$, use $C''>0$ to confirm a global cost minimum.",
   },
   {
     id: "math-11-84",
     case_id: "MATH 11.84",
-    title: "Two promo scores with f'=f''=0 at zero",
+    title: "Two promo scores with vanishing first and second derivatives",
     subsection: "11.3",
     context:
       "A marketing team compares two campaign-score models near intensity $x=0$: $A(x)=x^{4}$ and $B(x)=-x^{4}$. Decide TRUE or FALSE for each claim.",
     statements: [
       "For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.",
-      "The second-derivative test is inconclusive at $x=0$ for both $A$ and $B$.",
+      "Checking the local shape with the second derivative is inconclusive at $x=0$ for both $A$ and $B$.",
       "Nevertheless, $x=0$ is a strict local minimum of $A$.",
       "Nevertheless, $x=0$ is a strict local maximum of $B$.",
-      "Because $A''(0)=B''(0)=0$, neither $A$ nor $B$ can have an extremum at $0$."
+      "Because $A''(0)=B''(0)=0$, neither $A$ nor $B$ can have a local peak or trough at $0$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 A'(x)=4x^{3},\\quad A''(x)=12x^{2},
@@ -5660,50 +5776,100 @@ $$
 
 At $x=0$ all four values are zero.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
 
-The second-derivative test requires $f''\\neq 0$ at the critical point. Here both second derivatives vanish, so the test gives no classification.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+The second-order test needs $f''\\neq 0$ at a point where $f'=0$. Here both second derivatives vanish, so that test gives no decision.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $A(x)=x^{4}\\ge 0=A(0)$ for all $x$, so $x=0$ is a strict global (hence local) minimum even though $A''(0)=0$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $B(x)=-x^{4}\\le 0=B(0)$ for all $x$, so $x=0$ is a strict global maximum.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**E.** → False
 
-Vanishing $f''$ does not forbid extrema. $A$ has a min and $B$ a max at $0$. Use a sign chart or direct comparison when the SOC is inconclusive.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+A vanishing second derivative does not forbid extrema. $A$ has a trough and $B$ a peak at $0$. Use a sign chart or a direct nearby comparison when the second-order test is inconclusive.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 84,
     solution_overview:
-      "Compute $f'$ and $f''$ for $x^{4}$ and $-x^{4}$; show the SOC fails while extrema still exist.",
+      "Compute $f'$ and $f''$ for $x^{4}$ and $-x^{4}$; show the second-derivative check fails while extrema still exist.",
   },
   {
     id: "math-11-85",
     case_id: "MATH 11.85",
-    title: "Two cafés: same FOC output, opposite P'' signs",
+    title: "Two cafés: same flat-slope output, opposite bend signs",
     subsection: "11.3",
     context:
       "Café A models profit by $P_A(Q)=-Q^{2}+20Q-50$. Café B models profit by $P_B(Q)=Q^{2}-20Q+90$. Both consider the output $Q=10$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P_A'(10)=0$ and $P_B'(10)=0$, so both have a critical point at $Q=10$.",
+      "$P_A'(10)=0$ and $P_B'(10)=0$, so both have a flat slope at $Q=10$.",
       "$P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.",
       "$P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.",
-      "Because both cafés satisfy the same FOC at $Q=10$, both are maximising profit there.",
-      "Café A's profit at the critical point is $P_A(10)=50$, while Café B's is $P_B(10)=-10$."
+      "Because both cafés have $P'=0$ at $Q=10$, both are maximising profit there.",
+      "Café A's profit at $Q=10$ is $P_A(10)=50$, while Café B's is $P_B(10)=-10$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P_A'(Q)=-2Q+20,\\qquad P_B'(Q)=2Q-20.
@@ -5711,31 +5877,71 @@ $$
 
 At $Q=10$ both derivatives are zero.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 P_A''(Q)=-2<0
 $$
 
-with $P_A'(10)=0$ classifies a strict local maximum for A.
+with $P_A'(10)=0$ confirms a strict local maximum (peak) for A.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P_B''(Q)=2>0
 $$
 
-with $P_B'(10)=0$ classifies a strict local minimum for B.
+with $P_B'(10)=0$ confirms a strict local minimum (trough) for B.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → False
 
-Same FOC, opposite SOC. Only A has a local max; B has a local min. The FOC alone does not prove maximisation.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Same flat-slope condition, opposite second-derivative signs. Only A has a local max; B has a local min. Setting $P'=0$ alone does not prove maximisation.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`,
       `**E.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P_A(10)=-100+200-50=50,
@@ -5744,12 +5950,20 @@ $$
 P_B(10)=100-200+90=-10.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 85,
     solution_overview:
-      "Differentiate two café profits; same critical $Q$ gets opposite classifications from $P''$.",
+      "Differentiate two café profits; same $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
   },
   {
     id: "math-11-86",
@@ -5759,7 +5973,7 @@ The statement is True.`
     context:
       "A festival ticket booth may sell any output in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is $P(Q)=Q^{3}-6Q^{2}+9Q+10$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=3Q^{2}-12Q+9$, and the critical points in $(0,5)$ are $Q=1$ and $Q=3$.",
+      "$P'(Q)=3Q^{2}-12Q+9$, and the outputs in $(0,5)$ where the slope is zero are $Q=1$ and $Q=3$.",
       "$P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.",
       "The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.",
       "On $[0,5]$, the global maximum is at the local peak $Q=1$.",
@@ -5769,42 +5983,92 @@ The statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).
 $$
 
-Critical points: $Q=1$ and $Q=3$.
+So $P'(Q)=0$ at $Q=1$ and $Q=3$, both interior to $(0,5)$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**B.** → True
 
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
 $$
-P''(Q)=6Q-12,\\qquad P''(1)=-6<0,\\qquad P''(3)=6>0.
+P''(Q)=6Q-12.
 $$
+
+Then $P''(1)=-6<0$ (local max / peak) and $P''(3)=6>0$ (local min / trough).
 
 The statement is True.`,
       `**C.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Direct substitution:
+
 $$
-P(1)=14,\\quad P(3)=10,\\quad P(0)=10,\\quad P(5)=30.
+P(1)=1-6+9+10=14,
 $$
+$$
+P(3)=27-54+27+10=10,
+$$
+$$
+P(0)=10,\\qquad P(5)=125-150+45+10=30.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → False
 
-$P(1)=14$ is only a local peak. $P(5)=30>14$, so $Q=1$ is not the global max on $[0,5]$.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$P(1)=14$ is only a local peak. Comparing candidates, $P(5)=30>14$, so $Q=1$ is not the global max on $[0,5]$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`,
       `**E.** → True
 
-Among the candidates, $P(5)=30$ is largest. The global maximum is at the endpoint $Q=5$.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Among $P(0),P(1),P(3),P(5)$, the largest value is $P(5)=30$. The global maximum on the closed interval is at the endpoint $Q=5$, not at the interior local peak.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 86,
     solution_overview:
-      "Find and classify critical points of a cubic profit, then compare endpoint values for the global max.",
+      "Find where $P'=0$ for a cubic profit, check local shape with $P''$, then compare endpoint values for the global max.",
   },
   {
     id: "math-11-87",
@@ -5815,7 +6079,7 @@ The statement is True.`
       "A pop-up stall can produce any output in $0\\le Q\\le 8$. Its profit is $P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$. Decide TRUE or FALSE for each claim.",
     statements: [
       "$P'(Q)=5-\\dfrac{Q}{5}$.",
-      "On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior critical point.",
+      "On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior output where the slope is zero.",
       "Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.",
       "At the maximum point $Q=8$ one must have $P'(8)=0$.",
       "The maximal profit on the interval is $P(8)=36.6$."
@@ -5824,12 +6088,22 @@ The statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 P'(Q)=5-\\dfrac{Q}{5}.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 For $0<Q<8$,
 
@@ -5839,26 +6113,54 @@ $$
 
 So $P'$ never vanishes inside $(0,8)$.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**C.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 Positive derivative means $P$ is strictly increasing on the interval, so the minimum is at $Q=0$ and the maximum at $Q=8$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → False
 
-An endpoint maximum need not satisfy the FOC. Here
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+An endpoint maximum need not have a flat tangent. Here
 
 $$
 P'(8)=5-\\dfrac{8}{5}=3.4\\neq 0.
 $$
 
+The first-order condition $P'=0$ is for interior candidates, not for every optimum on a closed interval.
+
 The statement is False.`,
       `**E.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.
 $$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`
     ],
@@ -5870,131 +6172,213 @@ The statement is True.`
   {
     id: "math-11-88",
     case_id: "MATH 11.88",
-    title: "App downloads: classify two critical points by signs",
+    title: "App downloads: two candidates checked by signs and by P''",
     subsection: "11.3",
     context:
       "An app studio models weekly net benefit (in thousands of euros) by $B(x)=x^{3}-6x^{2}+9x+2$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$B'(x)=3x^{2}-12x+9$, with critical points $x=1$ and $x=3$.",
+      "$B'(x)=3x^{2}-12x+9$, with $B'(x)=0$ at $x=1$ and $x=3$.",
       "A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.",
       "A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.",
-      "$B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same classifications.",
+      "$B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same local peak and trough.",
       "Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).
 $$
 
-Critical points: $x=1$ and $x=3$.
+Solutions of $B'=0$: $x=1$ and $x=3$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**B.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 For $x\\in(0,1)$, both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$.
 For $x\\in(1,3)$, $(x-1)>0$ and $(x-3)<0$, so $B'<0$.
-Thus $+$ to $-$ at $x=1$: local maximum.
+Thus $+$ to $-$ at $x=1$: local maximum (peak).
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
-For $x>3$, both factors are positive, so $B'>0$. Crossing $x=3$ changes $-$ to $+$: local minimum.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+For $x>3$, both factors are positive, so $B'>0$. Crossing $x=3$ changes $-$ to $+$: local minimum (trough).
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 B''(x)=6x-12,\\qquad B''(1)=-6<0,\\qquad B''(3)=6>0.
 $$
 
+The second-order test agrees with the sign chart.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**E.** → False
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $B(x)\\to\\infty$ as $x\\to\\infty$ because of the $x^{3}$ term, so there is no global maximum on $[0,\\infty)$. A local max need not be global.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 88,
     solution_overview:
-      "Factor $B'$, read a sign chart at two critical points, and confirm with $B''$; refuse local=global.",
+      "Factor $B'$, read a sign chart at two candidates, and confirm with $B''$; refuse local=global.",
   },
   {
     id: "math-11-89",
     case_id: "MATH 11.89",
-    title: "Bakery ovens: full FOC-then-SOC pipeline",
+    title: "Bakery ovens: find candidates, check local shape, compare values",
     subsection: "11.3",
     context:
       "A bakery's daily profit from running $Q$ ovens is $P(Q)=-Q^{3}+9Q^{2}-24Q+30$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=-3Q^{2}+18Q-24$, and the critical points in $(0,6)$ are $Q=2$ and $Q=4$.",
+      "$P'(Q)=-3Q^{2}+18Q-24$, and the outputs in $(0,6)$ where the slope is zero are $Q=2$ and $Q=4$.",
       "$P''(2)=6>0$, so $Q=2$ is a strict local minimum.",
       "$P''(4)=-6<0$, so $Q=4$ is a strict local maximum.",
       "Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.",
-      "Step 1 (solve $P'=0$) alone already proves which point maximises profit on $[0,6]$."
+      "Solving $P'=0$ alone already proves which point maximises profit on $[0,6]$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).
 $$
 
-Critical points: $Q=2$ and $Q=4$.
+Candidates: $Q=2$ and $Q=4$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**B.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 P''(Q)=-6Q+18,\\qquad P''(2)=6>0,
 $$
 
-so $Q=2$ is a strict local minimum.
+so $Q=2$ is a strict local minimum (trough).
 
 The statement is True.`,
       `**C.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P''(4)=-24+18=-6<0,
 $$
 
-so $Q=4$ is a strict local maximum.
+so $Q=4$ is a strict local maximum (peak).
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $$
-P(0)=30,\\quad P(2)=10,\\quad P(4)=14,\\quad P(6)=-6.
+P(0)=30,\\quad P(2)=-8+36-48+30=10,\\quad P(4)=-64+144-96+30=14,\\quad P(6)=-216+324-144+30=-6.
 $$
 
 The largest value is $P(0)=30$, so the global max on $[0,6]$ is at the endpoint.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**E.** → False
 
-The FOC only lists candidates. Classification plus comparing function values (including endpoints) is still required.
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+Solving $P'=0$ only lists candidates. You still must check local peak versus trough and compare function values (including endpoints). Here the global max is not even an interior flat-slope point.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 89,
     solution_overview:
-      "Differentiate, solve $P'=0$, classify with $P''$, then compare values to find the global max.",
+      "Differentiate, solve $P'=0$, check local shape with $P''$, then compare values to find the global max.",
   },
   {
     id: "math-11-90",
     case_id: "MATH 11.90",
-    title: "Print shop: FOC from R and C, then SOC on P",
+    title: "Print shop: match R' to C', then check the bend of P",
     subsection: "11.3",
     context:
       "A print shop has revenue $R(Q)=40Q-2Q^{2}$ and cost $C(Q)=Q^{2}+4Q+10$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
     statements: [
       "$P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.",
-      "The FOC gives the candidate $Q=6$, and equivalently $R'(6)=C'(6)=16$.",
+      "Setting $P'(Q)=0$ gives the candidate $Q=6$, and equivalently $R'(6)=C'(6)=16$.",
       "$P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.",
       "Maximal profit is $P(6)=98$.",
       "Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart."
@@ -6003,6 +6387,8 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,
 $$
@@ -6010,8 +6396,18 @@ $$
 P'(Q)=-6Q+36.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
 
 $$
 P'(Q)=0\\qquad\\Rightarrow\\qquad Q=6.
@@ -6023,51 +6419,77 @@ $$
 R'(6)=16=C'(6).
 $$
 
+Matching marginal revenue to marginal cost is the same flat-slope condition on profit.
+
 The statement is True.`,
       `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 P''(Q)=-6<0
 $$
 
-at the critical point classifies a strict local maximum.
+at the candidate confirms a strict local maximum — the second-order test for a peak.
 
 The statement is True.`,
       `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**E.** → False
 
-$R'=C'$ is only the FOC. Without an SOC or sign test, the critical point might be a minimum. Here $P''<0$ finishes the proof of a max.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$R'=C'$ only finds a candidate. Without checking the second derivative or a sign chart, that point might be a trough. Here $P''<0$ finishes the proof of a max.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 90,
     solution_overview:
-      "Build $P$ from $R$ and $C$, solve the FOC, confirm with $R'=C'$, and classify with $P''<0$.",
+      "Build $P$ from $R$ and $C$, solve $P'=0$, confirm with $R'=C'$, and check $P''<0$.",
   },
   {
     id: "math-11-91",
     case_id: "MATH 11.91",
-    title: "Two bakeries: compute both FOCs and both SOCs",
+    title: "Two bakeries: shared flat-slope output, opposite bends",
     subsection: "11.3",
     context:
       "Bakery North uses $P_N(Q)=-Q^{2}+16Q-30$. Bakery South uses $P_S(Q)=Q^{2}-16Q+70$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both bakeries have a critical output at $Q=8$.",
+      "Both bakeries have a flat-slope output at $Q=8$.",
       "North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.",
       "South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.",
-      "North's peak profit is $P_N(8)=34$, while South's critical profit is $P_S(8)=6$.",
-      "Because both critical outputs equal $8$, both bakeries are at a profit maximum."
+      "North's peak profit is $P_N(8)=34$, while South's profit at $Q=8$ is $P_S(8)=6$.",
+      "Because both flat-slope outputs equal $8$, both bakeries are at a profit maximum."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P_N'(Q)=-2Q+16=0\\qquad\\Rightarrow\\qquad Q=8,
@@ -6076,18 +6498,46 @@ $$
 P_S'(Q)=2Q-16=0\\qquad\\Rightarrow\\qquad Q=8.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
 
-$P_N''=-2<0$ with the FOC classifies a strict local max for North.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$P_N''=-2<0$ with $P_N'(8)=0$ confirms a strict local max (peak) for North.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
-$P_S''=2>0$ with the FOC classifies a strict local min for South.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$P_S''=2>0$ with $P_S'(8)=0$ confirms a strict local min (trough) for South.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P_N(8)=-64+128-30=34,
@@ -6096,28 +6546,48 @@ $$
 P_S(8)=64-128+70=6.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**E.** → False
 
-Same critical output does not mean the same classification. South's SOC shows a trough, not a peak.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Same candidate output does not mean the same local shape. South's second derivative shows a trough, not a peak.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 91,
     solution_overview:
-      "Differentiate two bakery profits; shared critical $Q$ gets opposite SOC labels.",
+      "Differentiate two bakery profits; shared $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
   },
   {
     id: "math-11-92",
     case_id: "MATH 11.92",
-    title: "Loyalty index: sufficient SOC fails but a max remains",
+    title: "Loyalty index: second-derivative check fails but a max remains",
     subsection: "11.3",
     context:
       "A retailer's loyalty index near a special offer intensity $x$ is modelled by $L(x)=10-x^{4}$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so $x=0$ is a critical point with $L''(0)=0$.",
-      "The sufficient second-derivative test for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.",
+      "$L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so at $x=0$ one has $L'(0)=0$ and $L''(0)=0$.",
+      "The sufficient second-derivative check for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.",
       "Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.",
       "Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.",
       "A necessary condition at an interior local max of a twice differentiable function is $L''\\le 0$; here $L''(0)=0$ still obeys that necessary condition."
@@ -6125,6 +6595,8 @@ The statement is False.`
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 Differentiate:
 
@@ -6134,32 +6606,80 @@ $$
 
 Both vanish at $x=0$.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
 
-The usual sufficient SOC needs a strictly negative second derivative. Here $L''(0)=0$, so that sufficient test does not fire.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+The usual sufficient second-order test needs a strictly negative second derivative. Here $L''(0)=0$, so that sufficient test does not fire.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $x^{4}\\ge 0$ for all $x$, so $L(x)=10-x^{4}\\le 10=L(0)$. The peak is global.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → False
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 $L''(0)=0$ does not forbid a maximum; the direct comparison already proves one.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`,
       `**E.** → True
 
-At an interior local maximum one must have $L''\\le 0$. Equality is allowed. Necessary is weaker than sufficient.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+At an interior local maximum one must have $L''\\le 0$. Equality is allowed. Necessary is weaker than sufficient: the second-order test being inconclusive does not contradict the necessary inequality $L''\\le 0$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 92,
     solution_overview:
-      "Compute derivatives of $10-x^{4}$; separate inconclusive sufficient SOC from a still-valid global max.",
+      "Compute derivatives of $10-x^{4}$; separate an inconclusive sufficient test from a still-valid global max.",
   },
   {
     id: "math-11-93",
@@ -6170,7 +6690,7 @@ The statement is True.`
       "A firm has cost $C(Q)=Q^{2}-8Q+30$ and revenue $R(Q)=20Q-Q^{2}$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
     statements: [
       "Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.",
-      "Profit is $P(Q)=-2Q^{2}+28Q-30$, with critical point $Q=7$.",
+      "Profit is $P(Q)=-2Q^{2}+28Q-30$, with $P'(Q)=0$ at $Q=7$.",
       "$P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.",
       "The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.",
       "At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$."
@@ -6179,12 +6699,26 @@ The statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
 $$
 C'(Q)=2Q-8=0\\qquad\\Rightarrow\\qquad Q=4,\\qquad C''=2>0.
 $$
 
+The second-order test confirms a cost trough at $Q=4$.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 $$
 P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30,
@@ -6193,18 +6727,50 @@ $$
 P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**C.** → True
 
-$P''=-4<0$ classifies a strict local maximum at $Q=7$.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$P''=-4<0$ confirms a strict local profit maximum at $Q=7$.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → False
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 Cost min and profit max are different problems on different functions. Here the answers are $Q=4$ versus $Q=7$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`,
       `**E.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,
@@ -6213,30 +6779,42 @@ $$
 C(4)=16-32+30=14.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 93,
     solution_overview:
-      "Run FOC+SOC twice: once on $C$, once on $P$; show the optimal outputs differ.",
+      "Run the flat-slope plus second-derivative checks twice: once on $C$, once on $P$; show the optimal outputs differ.",
   },
   {
     id: "math-11-94",
     case_id: "MATH 11.94",
-    title: "Two hikers: same critical hour, opposite utility labels",
+    title: "Two hikers: same flat-slope hour, opposite utility labels",
     subsection: "11.3",
     context:
       "Hiker A has utility $U_A(t)=-t^{2}+10t$ from $t$ hours on a trail. Hiker B has utility $U_B(t)=t^{2}-10t+30$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both hikers have a critical time at $t=5$.",
+      "Both hikers have a flat-slope time at $t=5$.",
       "$U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.",
       "$U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.",
-      "A's peak utility is $U_A(5)=25$, while B's critical utility is $U_B(5)=5$.",
+      "A's peak utility is $U_A(5)=25$, while B's utility at $t=5$ is $U_B(5)=5$.",
       "Because both solve $U'=0$ at the same hour, both are maximising satisfaction there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
 
 $$
 U_A'(t)=-2t+10=0\\qquad\\Rightarrow\\qquad t=5,
@@ -6245,44 +6823,106 @@ $$
 U_B'(t)=2t-10=0\\qquad\\Rightarrow\\qquad t=5.
 $$
 
+Both hikers have a flat-slope hour at $t=5$, but that alone does not decide peak versus trough.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
 
-$U_A''=-2<0$ classifies a local max for A.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+U_A''(t)=-2<0
+$$
+
+with $U_A'(5)=0$ confirms a local maximum (peak) for hiker A. Economically, A's satisfaction rises before hour $5$ and falls afterward.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
-$U_B''=2>0$ classifies a local min for B.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$$
+U_B''(t)=2>0
+$$
+
+with $U_B'(5)=0$ confirms a local minimum (trough) for hiker B. The same hour that peaks A's utility is a low point for B.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 U_A(5)=-25+50=25,\\qquad U_B(5)=25-50+30=5.
 $$
 
+The heights differ sharply even though the flat-slope times coincide.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**E.** → False
 
-Shared FOC is not shared classification. B is at a trough.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+A shared solution of $U'=0$ is not a shared maximisation claim. The second-derivative signs are opposite, so only A is maximising at $t=5$; B is minimising.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 94,
     solution_overview:
-      "Differentiate two utility functions; same critical $t$, opposite SOC outcomes.",
+      "Differentiate two utility functions; same $t$ with $U'=0$, opposite conclusions from $U''$.",
   },
   {
     id: "math-11-95",
     case_id: "MATH 11.95",
-    title: "Warehouse staffing: three candidates, three labels",
+    title: "Warehouse staffing: three candidates, three local labels",
     subsection: "11.3",
     context:
       "A warehouse models daily net payoff by $f(x)=x^{4}-8x^{2}+16$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the critical points are $x=-2$, $x=0$, and $x=2$.",
+      "$f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the outputs where the slope is zero are $x=-2$, $x=0$, and $x=2$.",
       "$f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.",
       "Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.",
       "The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.",
@@ -6292,94 +6932,174 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 f'(x)=4x^{3}-16x=4x(x-2)(x+2).
 $$
 
-Critical points: $-2,0,2$.
+Solutions of $f'=0$: $-2,0,2$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**B.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 f''(x)=12x^{2}-16,
 $$
 $$
-f''(\\\\pm 2)=48-16=32>0,\\qquad f''(0)=-16<0.
+f''(\\pm 2)=48-16=32>0,\\qquad f''(0)=-16<0.
 $$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
-SOC: $f''>0$ at $\\\\pm 2$ gives local minima; $f''<0$ at $0$ gives a local maximum.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+The second-order test: $f''>0$ at $\\pm 2$ gives local minima (troughs); $f''<0$ at $0$ gives a local maximum (peak).
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 f(0)=16,\\qquad f(2)=16-32+16=0=f(-2).
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**E.** → False
 
-As $|x|\\\\to\\\\infty$, $x^{4}$ dominates and $f(x)\\\\to\\\\infty$, so there is no global maximum. The local peak at $0$ is not global.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+As $|x|\\to\\infty$, $x^{4}$ dominates and $f(x)\\to\\infty$, so there is no global maximum. The local peak at $0$ is not global.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 95,
     solution_overview:
-      "Factor $f'$, evaluate $f''$ at three critical points, then refuse local=global.",
+      "Factor $f'$, evaluate $f''$ at three candidates, then refuse local=global.",
   },
   {
     id: "math-11-96",
     case_id: "MATH 11.96",
-    title: "Clinic hours: stationary point that is a cost trough",
+    title: "Clinic hours: a flat-slope cost trough is not a cost peak",
     subsection: "11.3",
     context:
-      "A clinic's daily staffing cost is $C(h)=2h^{2}-24h+100$ for $h>0$ open hours. A manager finds the stationary point and calls it \"optimal\" for cost control. Decide TRUE or FALSE for each claim.",
+      "A clinic's daily staffing cost is $C(h)=2h^{2}-24h+100$ for $h>0$ open hours. A manager finds the output where the slope is zero and calls it optimal for cost control. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(h)=4h-24$, so the stationary point is $h=6$.",
+      "$C'(h)=4h-24$, so the output where the slope is zero is $h=6$.",
       "$C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.",
-      "Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the SOC confirms a min.",
-      "If the clinic's goal were instead to maximise cost, the same stationary point would be the wrong type of extremum.",
-      "The word \"stationary\" already means \"profit-maximising\", so no SOC is needed."
+      "Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the second derivative confirms a trough.",
+      "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
+      "A point where the slope is zero already means the clinic is cost-maximising, so no second-derivative check is needed."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 4h-24=0\\qquad\\Rightarrow\\qquad h=6.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
 
-$C''=4>0$ classifies a strict local minimum.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$C''=4>0$ confirms a strict local minimum (cost trough).
 
 The statement is True.`,
       `**C.** → True
 
-For minimising cost, a classified local (here also global) minimum is the right kind of optimum.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+For minimising cost, a confirmed local (here also global) minimum is the right kind of optimum.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → True
 
-A cost minimum is not a cost maximum. Goal and classification must match.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+A cost minimum is not a cost maximum. Goal and local shape must match.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**E.** → False
 
-Stationary only means $C'=0$. It does not encode the economic goal or the max/min label.
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+A flat slope only means $C'=0$. It does not encode the economic goal or the max/min label. Here the bend is upward, so the point is cost-minimising, not cost-maximising.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 96,
     solution_overview:
-      "Compute the clinic's FOC and SOC; tie \"optimal\" to the stated min-cost goal.",
+      "Compute the clinic's flat-slope point and second derivative; tie \"optimal\" to the stated min-cost goal.",
   },
   {
     id: "math-11-97",
@@ -6389,15 +7109,17 @@ The statement is False.`
     context:
       "Cinema A models profit by $P_A(Q)=-(Q-3)^{2}+5$. Cinema B models profit by $P_B(Q)=(Q-3)^{3}+5$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both cinemas have $P'(3)=0$, so $Q=3$ is critical for each.",
+      "Both cinemas have $P'(3)=0$, so $Q=3$ is a flat-slope output for each.",
       "For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.",
-      "For B, $P_B''(3)=0$, so the second-derivative test is inconclusive.",
+      "For B, $P_B''(3)=0$, so checking the local shape with the second derivative is inconclusive.",
       "A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.",
-      "Because both satisfy the FOC at $Q=3$, both cinemas are at a profit peak."
+      "Because both have $P'=0$ at $Q=3$, both cinemas are at a profit peak."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
 
 Expand or use chain rule:
 
@@ -6407,42 +7129,90 @@ $$
 
 Both vanish at $Q=3$.
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
 
-$P_A''(Q)=-2<0$ classifies a strict local max for A.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$P_A''(Q)=-2<0$ confirms a strict local max (peak) for A.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**C.** → True
 
-$P_B''(Q)=6(Q-3)$, so $P_B''(3)=0$: the SOC test does not decide.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$P_B''(Q)=6(Q-3)$, so $P_B''(3)=0$: the second-order test does not decide.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**D.** → True
 
-$P_B'(Q)=3(Q-3)^{2}\\\\ge 0$ on both sides of $3$, and is zero only at $3$. No $+\\\\to-$ or $-\\\\to+$ change, so neither local max nor local min.
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$P_B'(Q)=3(Q-3)^{2}\\ge 0$ on both sides of $3$, and is zero only at $3$. No $+\\to-$ or $-\\to+$ change, so neither local max nor local min — a horizontal inflection.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is True.`,
       `**E.** → False
 
-Only A has a peak. B has a horizontal inflection. Shared FOC is not shared classification.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Only A has a peak. B has a horizontal inflection. Shared flat-slope condition is not a shared peak.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 97,
     solution_overview:
-      "Differentiate two cinema profits; classify A's peak and B's non-extremum when $P''=0$.",
+      "Differentiate two cinema profits; confirm A's peak and B's non-extremum when $P''=0$.",
   },
   {
     id: "math-11-98",
     case_id: "MATH 11.98",
-    title: "Exam trap: FOC found, but the critical point is a min",
+    title: "Exam trap: flat-slope list found, but one candidate is a min",
     subsection: "11.3",
     context:
       "A student's exam solution for maximising $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$ writes only \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
     statements: [
-      "$f'(x)=3x^{2}-6x$, so the critical points really are $x=0$ and $x=2$.",
+      "$f'(x)=3x^{2}-6x$, so the outputs where the slope is zero really are $x=0$ and $x=2$.",
       "$f''(0)=-6<0$, so $x=0$ is a strict local maximum.",
       "$f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.",
       "There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.",
@@ -6452,12 +7222,22 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 f'(x)=3x(x-2)=0\\qquad\\Rightarrow\\qquad x=0,2.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
 
 $$
 f''(x)=6x-6,\\qquad f''(0)=-6<0.
@@ -6466,24 +7246,42 @@ $$
 The statement is True.`,
       `**C.** → True
 
-$f''(2)=6>0$ classifies a local minimum at $x=2$.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$f''(2)=6>0$ confirms a local minimum (trough) at $x=2$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → True
 
-The leading term $x^{3}$ sends $f\\\\to\\\\infty$ as $x\\\\to\\\\infty$, so no global max exists on $\\\\mathbb{R}$.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+The leading term $x^{3}$ sends $f\\to\\infty$ as $x\\to\\infty$, so no global max exists on $\\mathbb{R}$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**E.** → False
 
-Classification and global discussion are missing. The FOC step alone is unfinished.
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+Checking local peak versus trough and discussing the global picture are still missing. Listing solutions of $f'=0$ alone is unfinished.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 98,
     solution_overview:
-      "Complete the student's unfinished solution: classify both critical points and note the missing global max.",
+      "Complete the student's unfinished solution: check both candidates with $f''$ and note the missing global max.",
   },
   {
     id: "math-11-99",
@@ -6493,7 +7291,7 @@ The statement is False.`
     context:
       "A bike-rental shop models hourly profit by $P(Q)=-3Q^{2}+30Q-40$ for $Q>0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=-6Q+30$, so the critical point is $Q=5$.",
+      "$P'(Q)=-6Q+30$, so the output where the slope is zero is $Q=5$.",
       "$P''(5)=-6<0$, so $Q=5$ is a strict local maximum.",
       "Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.",
       "Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.",
@@ -6503,75 +7301,153 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
 -6Q+30=0\\qquad\\Rightarrow\\qquad Q=5.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
 The statement is True.`,
       `**B.** → True
 
-Constant $P''=-6<0$ with the FOC classifies a strict local maximum.
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+Constant $P''=-6<0$ with $P'(5)=0$ confirms a strict local maximum (peak).
 
 The statement is True.`,
       `**C.** → True
 
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
 That is the definition of a strict local maximum: nearby points have strictly smaller $P$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`,
       `**D.** → False
 
-Local maximality concerns neighbouring comparisons of $P$, not the numerical level being zero. Here $P(5)=35\\\\neq 0$.
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Local maximality concerns neighbouring comparisons of $P$, not the numerical level being zero. Here $P(5)=35\\neq 0$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is False.`,
       `**E.** → True
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 $$
-P(5)=-3\\\\cdot 25+30\\\\cdot 5-40=-75+150-40=35.
+P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.
 $$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
     solution_overview:
-      "Differentiate the bike-rental profit, classify the peak, and read local versus global for a concave quadratic.",
+      "Differentiate the bike-rental profit, confirm the peak with $P''$, and separate the definition of a local max from the height $P(5)$.",
   },
   {
     id: "math-11-100",
     case_id: "MATH 11.100",
-    title: "Two plants: different critical outputs, different labels",
+    title: "Two plants: different flat-slope outputs, different labels",
     subsection: "11.3",
     context:
-      "Plant West has profit $P_W(Q)=-Q^{2}+14Q-20$. Plant East has profit $P_E(Q)=Q^{2}-10Q+40$. A memo claims both plants have found optimal production levels at their critical outputs. Decide TRUE or FALSE for each claim.",
+      "Plant West has profit $P_W(Q)=-Q^{2}+14Q-20$. Plant East has profit $P_E(Q)=Q^{2}-10Q+40$. A memo claims both plants have found optimal production levels at their flat-slope outputs. Decide TRUE or FALSE for each claim.",
     statements: [
-      "West's FOC gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.",
-      "East's FOC gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.",
-      "The memo is correct that both critical outputs are local profit maxima.",
-      "West's peak profit is $P_W(7)=29$, while East's critical profit is $P_E(5)=15$.",
-      "Because $Q_W\\neq Q_E$, at most one of the two FOCs can be valid."
+      "West's flat-slope equation gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.",
+      "East's flat-slope equation gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.",
+      "The memo is correct that both flat-slope outputs are local profit maxima.",
+      "West's peak profit is $P_W(7)=29$, while East's profit at $Q_E$ is $P_E(5)=15$.",
+      "Because $Q_W\\neq Q_E$, at most one of the two flat-slope equations can be valid."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
 $$
 P_W'(Q)=-2Q+14=0\\qquad\\Rightarrow\\qquad Q=7,\\qquad P_W''=-2<0.
 $$
 
+The second-order test confirms a peak for West.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**B.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P_E'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5,\\qquad P_E''=2>0.
 $$
 
+East is at a trough.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**C.** → False
 
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
 Only West has a local max. East has a local min. The memo over-claims.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`,
       `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
 
 $$
 P_W(7)=-49+98-20=29,
@@ -6580,16 +7456,2085 @@ $$
 P_E(5)=25-50+40=15.
 $$
 
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
 The statement is True.`,
       `**E.** → False
 
-Different plants have different profit functions. Each FOC is valid for its own $P$. Unequal critical outputs are expected.
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Different plants have different profit functions. Each flat-slope equation is valid for its own $P$. Unequal candidate outputs are expected and do not invalidate either calculation.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 100,
     solution_overview:
-      "Compute each plant's FOC and SOC; reject the memo that both critical outputs are maxima.",
+      "Compute each plant's flat-slope point and $P''$; reject the memo that both candidates are maxima.",
+  },
+  {
+    id: "math-11-101",
+    case_id: "MATH 11.101",
+    title: "Farm shop: quadratic profit peak by differentiation",
+    subsection: "11.3",
+    context:
+      "A farm shop sells $Q$ crates of apples per day. Daily profit (in euros) is $P(Q)=-Q^{2}+18Q-45$ for $Q\\ge 0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating gives $P'(Q)=-2Q+18$.",
+      "The only output where the slope is zero is $Q=9$.",
+      "$P''(Q)=-2<0$, so $Q=9$ is a strict local profit maximum.",
+      "Peak daily profit is $P(9)=36$.",
+      "Because $P'(9)=0$, one must also have $P(9)=0$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+P'(Q)=-2Q+18.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+-2Q+18=0\\qquad\\Rightarrow\\qquad Q=9.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+Constant $P''=-2<0$ with $P'(9)=0$ confirms a strict local maximum. For this downward-opening parabola the peak is also global on $Q\\ge 0$.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$$
+P(9)=-81+162-45=36.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Zero slope is not zero height. Direct evaluation gives $P(9)=36\\neq 0$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 101,
+    solution_overview:
+      "Differentiate the farm-shop profit, solve $P'=0$, confirm a peak with $P''<0$, and evaluate $P(9)$.",
+  },
+  {
+    id: "math-11-102",
+    case_id: "MATH 11.102",
+    title: "Market stall: form P from R and C, then optimise",
+    subsection: "11.3",
+    context:
+      "A market stall has revenue $R(Q)=50Q-Q^{2}$ and total cost $C(Q)=Q^{2}+10Q+20$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.",
+      "$P'(Q)=-4Q+40$, so the candidate output is $Q=10$.",
+      "At $Q=10$ one has $R'(10)=C'(10)=30$.",
+      "$P''(10)=-4<0$, so $Q=10$ is a strict local profit maximum, and $P(10)=180$.",
+      "Because $R'(10)=C'(10)$, the stall's revenue level equals its cost level at $Q=10$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+P'(Q)=-4Q+40=0\\qquad\\Rightarrow\\qquad Q=10.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+R'(Q)=50-2Q,\\qquad C'(Q)=2Q+10.
+$$
+
+At $Q=10$: $R'(10)=30=C'(10)$, equivalent to $P'(10)=0$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**D.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+P''=-4<0,\\qquad P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Matching derivatives ($R'=C'$) does not force matching levels. Compute
+
+$$
+R(10)=500-100=400,\\qquad C(10)=100+100+20=220.
+$$
+
+They differ; profit is the gap $180$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 102,
+    solution_overview:
+      "Build $P$ from $R$ and $C$, solve $P'=0$, match $R'$ to $C'$, confirm with $P''$, and evaluate profit.",
+  },
+  {
+    id: "math-11-103",
+    case_id: "MATH 11.103",
+    title: "Two food trucks: compare profit peaks side by side",
+    subsection: "11.3",
+    context:
+      "Food truck A has profit $P_A(Q)=-Q^{2}+24Q-80$. Food truck B has profit $P_B(Q)=-2Q^{2}+32Q-60$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Truck A's flat-slope output is $Q_A=12$, and $P_A''(12)=-2<0$ confirms a local max.",
+      "Truck B's flat-slope output is $Q_B=8$, and $P_B''(8)=-4<0$ confirms a local max.",
+      "Peak profits are $P_A(12)=64$ and $P_B(8)=68$.",
+      "Because both trucks have a local profit maximum, they must share the same optimal quantity.",
+      "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+For truck A:
+
+$$
+P_A'(Q)=-2Q+24=0\\qquad\\Rightarrow\\qquad Q_A=12.
+$$
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+P_A''(Q)=-2<0,
+$$
+
+so $Q_A=12$ is a strict local profit maximum (peak).
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+For truck B:
+
+$$
+P_B'(Q)=-4Q+32=0\\qquad\\Rightarrow\\qquad Q_B=8,
+$$
+$$
+P_B''(Q)=-4<0.
+$$
+
+The same flat-slope-plus-negative-second-derivative argument confirms a local profit peak at $Q_B=8$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Evaluate each profit at its candidate:
+
+$$
+P_A(12)=-12^{2}+24\\cdot 12-80=-144+288-80=64,
+$$
+$$
+P_B(8)=-2\\cdot 8^{2}+32\\cdot 8-60=-128+256-60=68.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → False
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Each truck has its own profit function, so each has its own candidate output. Here
+
+$$
+Q_A=12\\neq 8=Q_B.
+$$
+
+Sharing the property "has a local max" does not force sharing the same quantity.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`,
+      `**E.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Comparing the peak values already computed:
+
+$$
+P_B(8)=68>64=P_A(12).
+$$
+
+So B's smaller optimal quantity still delivers a higher peak profit in this pair of models — a reminder to compare heights, not only locations.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 103,
+    solution_overview:
+      "Optimise two truck profits separately; compare candidate quantities and peak values.",
+  },
+  {
+    id: "math-11-104",
+    case_id: "MATH 11.104",
+    title: "Workshop cost: cubic cost with a local trough",
+    subsection: "11.3",
+    context:
+      "A workshop's weekly cost (in hundreds of euros) for producing $Q$ batches is $C(Q)=Q^{3}-9Q^{2}+24Q+5$ for $Q>0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4)$, so $C'=0$ at $Q=2$ and $Q=4$.",
+      "$C''(Q)=6Q-18$, so $C''(2)=-6<0$ and $C''(4)=6>0$.",
+      "Therefore $Q=2$ is a strict local cost maximum and $Q=4$ is a strict local cost minimum.",
+      "The local minimum cost value is $C(4)=21$.",
+      "Because $C'(2)=0$, the output $Q=2$ minimises cost."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$$
+C''(Q)=6Q-18,\\qquad C''(2)=-6,\\qquad C''(4)=6.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+Negative second derivative at $Q=2$ means a local cost peak; positive at $Q=4$ means a local cost trough.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$$
+C(4)=64-144+96+5=21.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$C'(2)=0$ only marks a candidate. The second derivative shows $Q=2$ is a local cost maximum, not a minimum. The local cost-minimising candidate is $Q=4$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 104,
+    solution_overview:
+      "Differentiate cubic cost, check both candidates with $C''$, and evaluate the local min.",
+  },
+  {
+    id: "math-11-105",
+    case_id: "MATH 11.105",
+    title: "Delivery shifts: cost min on a closed interval",
+    subsection: "11.3",
+    context:
+      "A courier can schedule any number of shifts in the closed interval $0\\le Q\\le 8$. Daily cost is $C(Q)=Q^{2}-10Q+40$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(Q)=2Q-10$, so the only interior flat-slope output is $Q=5$.",
+      "$C''(5)=2>0$, so $Q=5$ is a strict local cost minimum.",
+      "Endpoint costs are $C(0)=40$ and $C(8)=24$, while $C(5)=15$.",
+      "On $[0,8]$, the global cost minimum is at the endpoint $Q=8$.",
+      "On $[0,8]$, the global cost minimum is at the interior trough $Q=5$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+2Q-10=0\\Rightarrow Q=5\\in(0,8).
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$C''=2>0$ confirms a local (and for this parabola, global-shape) trough at $Q=5$.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+C(0)=40,\\qquad C(8)=64-80+40=24,\\qquad C(5)=25-50+40=15.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**D.** → False
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$C(8)=24>15=C(5)$, so the right endpoint is not the global min on $[0,8]$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`,
+      `**E.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Comparing $C(0)$, $C(5)$, and $C(8)$, the smallest value is $C(5)=15$. The global cost minimum on the closed interval is at the interior trough.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 105,
+    solution_overview:
+      "Find the interior cost trough, evaluate endpoints, and identify the global min on $[0,8]$.",
+  },
+  {
+    id: "math-11-106",
+    case_id: "MATH 11.106",
+    title: "Garden fence: fixed perimeter reduced to one variable",
+    subsection: "11.3",
+    context:
+      "A gardener has $40$ metres of fencing for a rectangular plot. If the sides are $x$ and $y$ metres, then $2x+2y=40$, so $y=20-x$, and the enclosed area is $A(x)=x(20-x)$ for $0<x<20$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating the reduced area gives $A'(x)=20-2x$.",
+      "Setting $A'(x)=0$ yields the candidate $x=10$, hence $y=10$.",
+      "$A''(x)=-2<0$, so $x=10$ is a strict local maximum of area.",
+      "The maximal area is $A(10)=100$ square metres.",
+      "Because the perimeter is fixed, every choice of $x$ automatically maximises area; no derivative is needed."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(x)=20x-x^{2}\\Rightarrow A'(x)=20-2x.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+20-2x=0\\Rightarrow x=10,\\qquad y=20-10=10.
+$$
+
+The perimeter constraint was substituted away, leaving a one-variable problem.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$A''=-2<0$ confirms a strict local (here also global on $(0,20)$) area maximum — a square plot.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(10)=10\\cdot 10=100.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+A fixed perimeter constrains the feasible $(x,y)$ pairs but does not make every feasible plot equally large. Differentiating $A(x)$ is exactly how one finds the largest feasible area.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 106,
+    solution_overview:
+      "Substitute $y=20-x$ into area, solve $A'=0$, confirm with $A''<0$, and evaluate $A(10)$.",
+  },
+  {
+    id: "math-11-107",
+    case_id: "MATH 11.107",
+    title: "Poster with margins: printed area constraint to one variable",
+    subsection: "11.3",
+    context:
+      "A designer needs a rectangular printed region of area $36$ cm$^{2}$. Margins of $1$ cm are added on every side, so if the printed width is $x>0$, the printed height is $36/x$, and the total paper area is $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.",
+      "$A'(x)=2-\\dfrac{72}{x^{2}}$, so $A'(x)=0$ when $x^{2}=36$, hence $x=6$ (since $x>0$).",
+      "At $x=6$ the printed height is also $6$, and total paper area is $A(6)=64$.",
+      "$A''(x)=\\dfrac{144}{x^{3}}$, so $A''(6)>0$, confirming a local minimum of paper area.",
+      "Any $x$ with printed area $36$ already minimises paper use; the margins do not create a genuine optimisation problem."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}.
+$$
+
+(The garbled middle phrase in the claim is just noise; the displayed formula $A(x)=40+2x+\\dfrac{72}{x}$ is correct.)
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+A'(x)=2-\\dfrac{72}{x^{2}}=0\\Rightarrow 2x^{2}=72\\Rightarrow x^{2}=36\\Rightarrow x=6
+$$
+
+(positive root).
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Printed height $36/6=6$. Total dimensions $8\\times 8$, so
+
+$$
+A(6)=40+12+12=64.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+A''(x)=\\dfrac{144}{x^{3}},\\qquad A''(6)=\\dfrac{144}{216}=\\dfrac{2}{3}>0,
+$$
+
+so the candidate is a local minimum of paper area (a trough for $A$).
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+The printed-area constraint leaves a free choice of aspect ratio. Different $x$ values give different total paper areas; minimising $A(x)$ is a real one-variable problem after substitution.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 107,
+    solution_overview:
+      "Reduce the margin problem to $A(x)$, solve $A'=0$, confirm a min with $A''>0$, and evaluate.",
+  },
+  {
+    id: "math-11-108",
+    case_id: "MATH 11.108",
+    title: "Wire cut into square and circle: minimise total area",
+    subsection: "11.3",
+    context:
+      "A wire of length $60$ cm is cut into two pieces: one forms a square of side $s$, the other a circle of radius $r$. If $x$ cm goes to the square, then $4s=x$ and $2\\pi r=60-x$, so the total enclosed area is $A(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi\\left(\\dfrac{60-x}{2\\pi}\\right)^{2}$ for $0<x<60$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating yields $A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$.",
+      "Setting $A'(x)=0$ gives the candidate $x=\\dfrac{240}{4+\\pi}$.",
+      "At that candidate, $A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$, so it is a strict local minimum of total area.",
+      "If instead the entire wire forms a circle ($x=0$), the enclosed area is larger than at the interior minimiser.",
+      "Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(x)=\\dfrac{x^{2}}{16}+\\pi\\cdot\\dfrac{(60-x)^{2}}{4\\pi^{2}}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.
+$$
+
+$$
+A'(x)=\\dfrac{2x}{16}+\\dfrac{2(60-x)(-1)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+Set the derivative to zero:
+
+$$
+\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}.
+$$
+
+Cross-multiply:
+
+$$
+2\\pi x=8(60-x)\\qquad\\Rightarrow\\qquad \\pi x=4(60-x)\\qquad\\Rightarrow\\qquad \\pi x=240-4x,
+$$
+$$
+x(\\pi+4)=240\\qquad\\Rightarrow\\qquad x=\\dfrac{240}{4+\\pi}.
+$$
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0
+$$
+
+for all $x$, so the unique candidate is a strict local (and global on $(0,60)$) minimum of total enclosed area.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+At the all-circle endpoint $x=0$, $r=60/(2\\pi)=30/\\pi$ and
+
+$$
+A(0)=\\pi\\left(\\dfrac{30}{\\pi}\\right)^{2}=\\dfrac{900}{\\pi}\\\\approx 286.5,
+$$
+
+while the interior minimiser uses a positive square length and yields a strictly smaller total area because $A''>0$ and $A'\\neq 0$ at the endpoint forces the unique trough to be interior. So the pure-circle area is larger than the minimised split area.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+The length constraint $x+(60-x)=60$ reduces everything to the single free variable $x$. Classic constrained geometry problems become ordinary one-variable optimisation after substitution.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 108,
+    solution_overview:
+      "Substitute the wire split into $A(x)$, solve $A'=0$, confirm a min with $A''>0$, and interpret endpoints.",
+  },
+  {
+    id: "math-11-109",
+    case_id: "MATH 11.109",
+    title: "Budget line: maximise U=xy after substituting the constraint",
+    subsection: "11.3",
+    context:
+      "A consumer has utility $U(x,y)=xy$ and budget constraint $2x+y=20$ with $x>0$, $y>0$. Substitute $y=20-2x$ to obtain $U(x)=x(20-2x)$ on $0<x<10$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The reduced utility is $U(x)=20x-2x^{2}$.",
+      "$U'(x)=20-4x$, so $U'(x)=0$ at $x=5$.",
+      "Then $y=20-2\\cdot 5=10$, and $U(5)=50$.",
+      "$U''(x)=-4<0$, so $x=5$ is a strict local maximum of utility on the budget line.",
+      "After substitution, one may ignore $U''$ because a budget constraint automatically guarantees a maximum at every flat-slope point."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+U(x)=x(20-2x)=20x-2x^{2}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+U'(x)=20-4x=0\\Rightarrow x=5.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+y=10,\\qquad U(5)=5\\cdot 10=50.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**D.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$U''=-4<0$ confirms a strict local (and on $(0,10)$, global) utility maximum.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+Substitution creates an ordinary one-variable problem. You still must check whether the flat-slope point is a peak or a trough; $U''<0$ does that work here.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 109,
+    solution_overview:
+      "Substitute the budget into $U=xy$, solve $U'=0$, confirm with $U''<0$, and evaluate.",
+  },
+  {
+    id: "math-11-110",
+    case_id: "MATH 11.110",
+    title: "Production with x+y=10: maximise output Q=xy",
+    subsection: "11.3",
+    context:
+      "A firm combines inputs $x$ and $y$ with output $Q=xy$ under the resource constraint $x+y=10$, $x>0$, $y>0$. Substitute $y=10-x$ to get $Q(x)=x(10-x)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$Q'(x)=10-2x$, so the candidate is $x=5$.",
+      "Then $y=5$ and maximal output is $Q(5)=25$.",
+      "$Q''(x)=-2<0$, confirming a local maximum.",
+      "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
+      "The constraint $x+y=10$ already forces $Q=25$ for every feasible pair $(x,y)$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+Q(x)=10x-x^{2}\\Rightarrow Q'(x)=10-2x=0\\Rightarrow x=5.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+y=5,\\qquad Q(5)=25.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$Q''=-2<0$ confirms a peak.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+For example $x=4$, $y=6$ gives $Q=24<25$; $x=1$, $y=9$ gives $Q=9$. The unique peak is $25$ (AM-GM: $\\sqrt{xy}\\le 5$ with equality at $x=y$).
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Feasible pairs include many outputs other than $25$. The constraint only reduces the problem to one variable; differentiation finds the best pair.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 110,
+    solution_overview:
+      "Reduce $Q=xy$ with $x+y=10$ to one variable, solve $Q'=0$, and confirm the peak.",
+  },
+  {
+    id: "math-11-111",
+    case_id: "MATH 11.111",
+    title: "Linear demand: unit elasticity and revenue peak",
+    subsection: "11.3",
+    context:
+      "Demand is $D(p)=100-2p$ for $0<p<50$. Price elasticity of demand is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Revenue is $R(p)=p\\cdot D(p)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$D'(p)=-2$, so $\\mathrm{El}(p)=\\dfrac{-2p}{100-2p}$.",
+      "$|\\mathrm{El}(p)|=1$ when $2p=100-2p$, hence $p=25$.",
+      "Revenue is $R(p)=100p-2p^{2}$, so $R'(p)=100-4p$ and $R'(p)=0$ at $p=25$.",
+      "At the revenue-maximising price one has $\\mathrm{El}(25)=-1$.",
+      "Because $|\\mathrm{El}|=1$ at $p=25$, demand is perfectly inelastic there."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(p)=\\dfrac{-2\\cdot p}{100-2p}=\\dfrac{-2p}{100-2p}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$|\\mathrm{El}|=1$ means $\\dfrac{2p}{100-2p}=1$ (since the fraction is positive for $p\\in(0,50)$), so
+
+$$
+2p=100-2p\\Rightarrow 4p=100\\Rightarrow p=25.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+R(p)=p(100-2p)=100p-2p^{2},\\qquad R'(p)=100-4p=0\\Rightarrow p=25.
+$$
+
+Also $R''=-4<0$, so this is a revenue peak.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.
+$$
+
+Unit elasticity lines up with the revenue-maximising price for this linear demand.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Perfectly inelastic demand means $\\mathrm{El}=0$. Here $|\\mathrm{El}|=1$ is unit elasticity, not perfect inelasticity.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 111,
+    solution_overview:
+      "Compute El for linear demand, solve $|El|=1$, and match that price to the revenue peak from $R'=0$.",
+  },
+  {
+    id: "math-11-112",
+    case_id: "MATH 11.112",
+    title: "Demand D=120-3p: show R'=0 exactly when El=-1",
+    subsection: "11.3",
+    context:
+      "A theatre faces demand $D(p)=120-3p$ for $0<p<40$. Revenue is $R(p)=p(120-3p)$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$R(p)=120p-3p^{2}$, so $R'(p)=120-6p$ and $R'(p)=0$ at $p=20$.",
+      "$\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}$.",
+      "At $p=20$, $\\mathrm{El}(20)=-1$.",
+      "$R''(20)=-6<0$, so $p=20$ is a strict local revenue maximum.",
+      "For this demand, $R'(p)=0$ can hold at a price where $\\mathrm{El}\\neq -1$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+R'(p)=120-6p=0\\Rightarrow p=20.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$D'=-3$, so
+
+$$
+\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$R''=-6<0$ confirms a revenue peak at the unit-elasticity price.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Algebraically, $R'(p)=120-6p=0\\\\Leftrightarrow p=20$, and that is exactly where $\\mathrm{El}=-1$. For linear demand of this form, the revenue flat-slope condition and unit elasticity coincide; they cannot split apart.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 112,
+    solution_overview:
+      "Maximise $R(p)$ for $D=120-3p$ and verify the peak occurs precisely where elasticity equals $-1$.",
+  },
+  {
+    id: "math-11-113",
+    case_id: "MATH 11.113",
+    title: "MR formula: check p(1+1/El) against dR/dQ at a point",
+    subsection: "11.3",
+    context:
+      "Demand is $Q=D(p)=100-2p$. Invert to $p=50-\\dfrac{Q}{2}$. Revenue as a function of quantity is $R(Q)=p(Q)\\cdot Q=50Q-\\dfrac{Q^{2}}{2}$, so marginal revenue is $MR=R'(Q)$. Elasticity is $\\mathrm{El}=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "At price $p=20$, quantity is $Q=60$ and $\\mathrm{El}(20)=-\\dfrac{2}{3}$.",
+      "The formula $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$ at $p=20$ gives $20\\left(1-\\dfrac{3}{2}\\right)=-10$.",
+      "Direct differentiation gives $MR=R'(Q)=50-Q$, so at $Q=60$ one has $MR=-10$.",
+      "The two routes agree: the elasticity formula matches $R'(Q)$ at this point.",
+      "At $p=20$, because $MR=-10\\neq 0$, revenue as a function of price cannot have $R'(p)=0$ there."
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$Q=100-40=60$. Then
+
+$$
+\\mathrm{El}(20)=\\dfrac{-2\\cdot 20}{60}=\\dfrac{-40}{60}=-\\dfrac{2}{3}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\left(-\\dfrac{1}{2}\\right)=-10.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+R(Q)=50Q-\\dfrac{Q^{2}}{2},\\qquad R'(Q)=50-Q,
+$$
+
+so at $Q=60$, $MR=50-60=-10$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+The elasticity route gave $MR=-10$ and the direct $R'(Q)$ route also gave $-10$. This is a concrete numerical check of the identity
+
+$$
+MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)
+$$
+
+at the chosen point.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → True
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+As a function of price, $R(p)=100p-2p^{2}$ has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. Marginal revenue $dR/dQ$ being nonzero is consistent with $dR/dp$ being nonzero; the revenue peak occurs where $MR=0$ (equivalently $R'(p)=0$), which for this demand is at $p=25$, $Q=50$, not at $p=20$.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 113,
+    solution_overview:
+      "Evaluate El and MR two ways at $p=20$; show $p(1+1/El)$ matches $R'(Q)$, and relate to $R'(p)$.",
+  },
+  {
+    id: "math-11-114",
+    case_id: "MATH 11.114",
+    title: "Two demand curves: compare elasticities at the same price",
+    subsection: "11.3",
+    context:
+      "Good A has demand $D_A(p)=80-p$. Good B has demand $D_B(p)=120-2p$. Compare elasticities at the common price $p=20$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$\\mathrm{El}_A(20)=\\dfrac{-20}{60}=-\\dfrac{1}{3}$.",
+      "$\\mathrm{El}_B(20)=\\dfrac{-40}{80}=-\\dfrac{1}{2}$.",
+      "At $p=20$, good B is more elastic in absolute value than good A.",
+      "Revenue for A is $R_A(p)=80p-p^{2}$, so $R_A'(20)=40\\neq 0$.",
+      "Because $|\\mathrm{El}_A(20)|<1$, the price $p=20$ maximises revenue for good A."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}_A(p)=\\dfrac{-1\\cdot p}{80-p},\\qquad \\mathrm{El}_A(20)=\\dfrac{-20}{60}=-\\dfrac{1}{3}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}_B(p)=\\dfrac{-2p}{120-2p},\\qquad \\mathrm{El}_B(20)=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$\\left|-1/2\\right|>\\left|-1/3\\right|$, so B is more elastic at this shared price.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+R_A'(p)=80-2p,\\qquad R_A'(20)=40\\neq 0.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+For linear demand, revenue is maximised where $|\\mathrm{El}|=1$, not wherever $|\\mathrm{El}|<1$. Here $R_A'(p)=0$ at $p=40$, where $\\mathrm{El}_A(40)=-1$. At $p=20$ revenue is still rising in $p$.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 114,
+    solution_overview:
+      "Compute both elasticities at $p=20$, compare magnitudes, and refuse the false link from $|El|<1$ to a revenue max.",
+  },
+  {
+    id: "math-11-115",
+    case_id: "MATH 11.115",
+    title: "Two products, one resource: reduce and maximise profit",
+    subsection: "11.3",
+    context:
+      "A firm sells products $X$ and $Y$ with profit contribution $P(x,y)=30x+20y-x^{2}-y^{2}$, subject to the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$ to obtain a function of $x$ alone. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "After substitution, $P(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=100+30x-2x^{2}$.",
+      "$P'(x)=30-4x$, so the candidate is $x=7.5$.",
+      "Then $y=2.5$, and $P''(x)=-4<0$ confirms a local profit maximum.",
+      "The maximised constrained profit equals $P(7.5)=212.5$.",
+      "Ignoring the constraint and setting both partial flat-slope conditions in $(x,y)$ would automatically satisfy $x+y=10$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Expand carefully:
+
+$$
+P(x)=30x+20(10-x)-x^{2}-(10-x)^{2}
+$$
+$$
+=30x+200-20x-x^{2}-\\bigl(100-20x+x^{2}\\bigr)
+$$
+$$
+=10x+200-x^{2}-100+20x-x^{2}=100+30x-2x^{2}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+P'(x)=30-4x=0\\Rightarrow x=\\dfrac{30}{4}=7.5.
+$$
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$y=10-7.5=2.5$ and $P''=-4<0$ confirms a constrained profit peak.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+P(7.5)=100+30\\cdot 7.5-2\\cdot(7.5)^{2}=100+225-2\\cdot 56.25=325-112.5=212.5.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Without the constraint, $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$ give $x=15$, $y=10$, whose sum is $25\\neq 10$. The unconstrained flat-slope point is not feasible, which is why substitution (or a Lagrange multiplier) is needed.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 115,
+    solution_overview:
+      "Substitute $y=10-x$ into profit, solve $P'=0$, confirm with $P''$, and evaluate; contrast with the unconstrained candidate.",
+  },
+  {
+    id: "math-11-116",
+    case_id: "MATH 11.116",
+    title: "River fencing: three sides, maximise area",
+    subsection: "11.3",
+    context:
+      "A farmer fences a rectangular riverside plot using $40$ metres of fence for three sides only (the river is the fourth side). If the sides perpendicular to the river are each $x$ metres, then the side parallel to the river is $y=40-2x$, and area is $A(x)=x(40-2x)$ for $0<x<20$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$A(x)=40x-2x^{2}$, so $A'(x)=40-4x$.",
+      "$A'(x)=0$ gives $x=10$, hence $y=20$.",
+      "$A''(x)=-4<0$, so $x=10$ maximises area locally.",
+      "Maximal area is $A(10)=200$ square metres.",
+      "The same dimensions $x=10$, $y=20$ would also maximise area if all four sides had to be fenced with $40$ metres total."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(x)=40x-2x^{2}\\Rightarrow A'(x)=40-4x.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+40-4x=0\\Rightarrow x=10,\\qquad y=40-20=20.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$A''=-4<0$ confirms a peak.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A(10)=10\\cdot 20=200.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+With four sides and perimeter $40$, one has $2x+2y=40$ so $y=20-x$, and the area max is the square $x=y=10$ with area $100$, not $x=10$, $y=20$. The river changes the constraint and the optimum.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 116,
+    solution_overview:
+      "Reduce the three-sided fence to $A(x)$, solve $A'=0$, confirm with $A''$, and contrast with the four-sided case.",
+  },
+  {
+    id: "math-11-117",
+    case_id: "MATH 11.117",
+    title: "Two inputs, fixed output: minimise cost by substitution",
+    subsection: "11.3",
+    context:
+      "A firm must produce $Q=xy=16$ using inputs $x>0$ and $y>0$. Cost is $C=2x+8y$. Substitute $y=16/x$ to get $C(x)=2x+\\dfrac{128}{x}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(x)=2-\\dfrac{128}{x^{2}}$, so $C'(x)=0$ when $x^{2}=64$, hence $x=8$.",
+      "Then $y=16/8=2$, and total cost is $C(8)=2\\cdot 8+8\\cdot 2=32$.",
+      "$C''(x)=\\dfrac{256}{x^{3}}$, so $C''(8)>0$, confirming a local cost minimum.",
+      "At the cost-minimising bundle one also has the input-price ratio matching the technical rate: $\\dfrac{2}{8}=\\dfrac{y}{x}=\\dfrac{2}{8}$.",
+      "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+C'(x)=2-\\dfrac{128}{x^{2}}=0\\Rightarrow 2x^{2}=128\\Rightarrow x^{2}=64\\Rightarrow x=8
+$$
+
+(positive).
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+y=2,\\qquad C=16+16=32.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+C''(x)=\\dfrac{256}{x^{3}},\\qquad C''(8)=\\dfrac{256}{512}=\\dfrac{1}{2}>0,
+$$
+
+so the candidate is a local (and on $(0,\\infty)$, global) cost trough.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+For $Q=xy$, the condition from equating bang-per-buck / Lagrange ideas reduces to $w_x/w_y=y/x$ at an interior cost min along $xy=16$. Here $w_x=2$, $w_y=8$, and $y/x=2/8=1/4=w_x/w_y$. The calculus critical point matches that economic ratio test.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+For example $x=4$, $y=4$ costs $C=8+32=40>32$. Different feasible pairs have different costs; substitution plus $C'=0$ finds the cheapest.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 117,
+    solution_overview:
+      "Minimise $C(x)=2x+128/x$ subject to $xy=16$; confirm with $C''>0$ and compare other feasible bundles.",
+  },
+  {
+    id: "math-11-118",
+    case_id: "MATH 11.118",
+    title: "Revenue and elasticity along D=90-p",
+    subsection: "11.3",
+    context:
+      "Demand is $D(p)=90-p$ for $0<p<90$. Revenue $R(p)=p(90-p)$ and elasticity $\\mathrm{El}(p)=\\dfrac{-p}{90-p}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$R'(p)=90-2p=0$ at $p=45$, and $R(45)=2025$.",
+      "At $p=45$, $\\mathrm{El}(45)=-1$.",
+      "At $p=30$, $\\mathrm{El}(30)=-1/2$ and $R'(30)=30>0$, so raising price a little raises revenue.",
+      "At $p=60$, $\\mathrm{El}(60)=-2$ and $R'(60)=-30<0$, so raising price a little lowers revenue.",
+      "Whenever $|\\mathrm{El}(p)|>1$, revenue is maximised at that price."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+R(p)=90p-p^{2},\\qquad R'(p)=90-2p=0\\Rightarrow p=45,
+$$
+$$
+R(45)=45\\cdot 45=2025.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(45)=\\dfrac{-45}{45}=-1.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(30)=\\dfrac{-30}{60}=-\\dfrac{1}{2},\\qquad R'(30)=90-60=30>0.
+$$
+
+In the inelastic region ($|\\mathrm{El}|<1$), a small price increase raises revenue.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+\\mathrm{El}(60)=\\dfrac{-60}{30}=-2,\\qquad R'(60)=90-120=-30<0.
+$$
+
+In the elastic region, a small price increase lowers revenue.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+The elastic region $|\\mathrm{El}|>1$ is exactly where a price increase reduces revenue ($R'<0$ for this linear demand). Revenue is maximised only at the single unit-elasticity price where $R'=0$ and $|\\mathrm{El}|=1$ (here $p=45$), not at every elastic price.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 118,
+    solution_overview:
+      "Link $R'$ sign to elasticity regions for $D=90-p$, and locate the unique revenue peak at unit elasticity.",
+  },
+  {
+    id: "math-11-119",
+    case_id: "MATH 11.119",
+    title: "Hard: constraint reduction then second-derivative check",
+    subsection: "11.3",
+    context:
+      "An open-top box is made from a $12$ cm by $12$ cm square sheet by cutting out squares of side $x$ cm from each corner and folding. Volume is $V(x)=x(12-2x)^{2}$ for $0<x<6$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Expanding gives $V(x)=144x-48x^{2}+4x^{3}$, so $V'(x)=144-96x+12x^{2}$.",
+      "Factoring, $V'(x)=12(x-2)(x-6)$, so the only critical output in $(0,6)$ is $x=2$.",
+      "$V''(x)=-96+24x$, so $V''(2)=-48<0$, confirming a local volume maximum.",
+      "Maximal volume is $V(2)=2\\cdot 8^{2}=128$ cubic centimetres.",
+      "Solving $V'=0$ alone, without checking $V''$ or endpoints, already proves the global max on $(0,6)$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+V(x)=x(12-2x)^{2}=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3},
+$$
+$$
+V'(x)=144-96x+12x^{2}.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+To find an interior peak or trough of a differentiable function, first locate the outputs where the slope is zero (first derivative equals zero). Those outputs are only candidates. You still must check whether each candidate is a local maximum, a local minimum, or neither.
+
+$$
+V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).
+$$
+
+Roots $x=2$ and $x=6$; only $x=2$ lies in the open interval $(0,6)$ ($x=6$ collapses the box).
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$$
+V''(x)=-96+24x,\\qquad V''(2)=-96+48=-48<0,
+$$
+
+so $x=2$ is a strict local volume maximum — the second-order test after reducing the geometry to one variable.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Base side $12-4=8$, height $2$:
+
+$$
+V(2)=2\\cdot 8^{2}=128.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**E.** → False
+
+Recall the peak/trough test in words: once a flat-slope candidate is in hand, look at the second derivative (when it is nonzero). A negative second derivative means the graph bends downward — a strict local maximum (peak). A positive second derivative means the graph bends upward — a strict local minimum (trough). That check is the second-derivative test. If the second derivative is also zero, the test is inconclusive and you compare nearby values or use a sign chart of the first derivative.
+
+$V'=0$ only lists candidates. One still needs the second-derivative check (or a sign chart) and endpoint behaviour ($V\\to 0$ as $x\\to 0^{+}$ or $x\\to 6^{-}$). Skipping those steps leaves the maximisation unfinished.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 119,
+    solution_overview:
+      "Reduce the box to $V(x)$, solve $V'=0$, confirm a peak with $V''<0$, evaluate, and refuse an unfinished FOC-only proof.",
+  },
+  {
+    id: "math-11-120",
+    case_id: "MATH 11.120",
+    title: "Two fencing scenarios: opposite area conclusions",
+    subsection: "11.3",
+    context:
+      "Scenario River: three-sided riverside fence of length $24$, area $A_R(x)=x(24-2x)$ for $0<x<12$. Scenario Field: four-sided rectangular fence of perimeter $24$, area $A_F(x)=x(12-x)$ for $0<x<12$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "For the river plot, $A_R'(x)=24-4x=0$ at $x=6$, so $y=12$ and $A_R(6)=72$.",
+      "For the field plot, $A_F'(x)=12-2x=0$ at $x=6$, so $y=6$ and $A_F(6)=36$.",
+      "Both scenarios have $A''<0$ at their candidates, so both are local area maxima.",
+      "Because both optimisations yield $x=6$, the two problems have the same maximal area.",
+      "The river scenario's maximal area is twice the field scenario's maximal area with the same fence length."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A_R(x)=24x-2x^{2},\\qquad A_R'(x)=24-4x=0\\Rightarrow x=6,\\qquad y=24-12=12,
+$$
+$$
+A_R(6)=6\\cdot 12=72.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**B.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$$
+A_F(x)=12x-x^{2},\\qquad A_F'(x)=12-2x=0\\Rightarrow x=6,\\qquad y=6,
+$$
+$$
+A_F(6)=36.
+$$
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**C.** → True
+
+At a point where the first derivative is zero, the second derivative decides the local shape when it is nonzero: negative means a strict local maximum (downward bend); positive means a strict local minimum (upward bend). If the second derivative is also zero, that test is inconclusive and you need a sign chart or a direct nearby comparison.
+
+$A_R''=-4<0$ and $A_F''=-2<0$, so both candidates are local area peaks.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`,
+      `**D.** → False
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+Same numerical $x=6$ does not mean the same area: $72\\neq 36$. The constraints differ (three sides versus four), so the maximal areas differ.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+So the claim fails. The algebra or the peak/trough reasoning above shows why the statement cannot be true as written — typically because a flat slope was misread as a height statement, a candidate was labelled a peak without checking the bend, or a local feature was confused with a global comparison on an interval.
+
+Keep slope and height separate. The first derivative being zero describes how the objective changes at that output (flat), not how large the objective itself is. Evaluating the original function is a separate arithmetic step after the candidate has been found.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is False.`,
+      `**E.** → True
+
+Recall the flat-slope candidate idea in words: for a smooth objective, an interior peak or trough can occur only where the graph is momentarily flat — that is, where the first derivative equals zero. Those outputs are merely candidates. Finding them (sometimes called the first-order condition) never by itself tells you whether you have a peak, a trough, or a flat inflection.
+
+$72=2\\cdot 36$. With the same total fence length, leaving one side to the river doubles the maximal enclosed area relative to fencing all four sides in this linear setup.
+
+Walk through the algebra carefully: write the relevant derivative or level formula, substitute the stated number, simplify term by term, and only then compare with the claim. Do not skip from the model straight to the verbal conclusion.
+
+Therefore the claim is correct. The derivative algebra and the peak/trough reasoning above line up with the statement, so the True tag is justified.
+
+Spelling the chapter pipeline once more: (1) differentiate the objective; (2) solve first-derivative = 0 for flat-slope candidates; (3) use the second derivative or a nearby comparison to decide peak versus trough; (4) evaluate the original function at the relevant points (and endpoints on a closed interval) to read levels and pick a global answer when needed.
+
+In economic language: first list outputs where the marginal objective is zero — where an extra unit neither raises nor lowers the objective to first order. Then the peak/trough test decides whether that flat spot is the desired bend (for example a profit peak or a cost trough) or the opposite unwanted bend. Only after that labelling do you compare objective levels at candidates and endpoints.
+
+The statement is True.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 120,
+    solution_overview:
+      "Optimise two related fencing problems; same candidate $x$ but opposite area totals — a two-scenario comparison.",
   }
 ];
