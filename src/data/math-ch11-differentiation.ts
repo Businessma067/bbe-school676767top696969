@@ -2,6 +2,7 @@ import type { MathTask } from "@/data/math-chapters";
 
 export const MATH_CH11_SUBSECTIONS = [
   { id: "11.1", title: "Differentiation rules & mechanics" },
+  { id: "11.2", title: "Economic interpretation of the derivative" },
 ] as const;
 
 export const MATH_CH11_DIFFERENTIATION: MathTask[] = [
@@ -3285,5 +3286,745 @@ The statement is True.`,
     sort_order: 40,
     solution_overview:
       "Differentiate a square-log product twice, keeping every chain-rule factor from the inner linear map $2t+1$.",
+  },
+  {
+    id: "math-11-41",
+    case_id: "MATH 11.41",
+    title: "Which cost curve is marginal cost?",
+    subsection: "11.2",
+    context:
+      "A bakery reports its total weekly cost $C(q)$ in euros when it bakes $q$ loaves, and it also reports the average cost per loaf $A(q)=C(q)/q$. Management wants the approximate extra cost of baking one more loaf near the current output. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The quantity that answers management's question is the derivative $C'(q)$, not $A(q)$.",
+      "Differentiating the average-cost function $A(q)$ is the same thing as computing marginal cost.",
+      "Marginal cost at a named output is the slope of the total-cost curve at that output.",
+      "If $C'(120)=0.80$, then near $120$ loaves each extra loaf adds about $0.80$ euros to total cost.",
+      "Because average cost already divides by $q$, its value $A(120)$ is automatically equal to marginal cost at $120$.",
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Marginal cost is defined as the derivative of total cost. The approximate extra euros for one more loaf near the current output is therefore read from $C'(q)$, not from the average $A(q)$. The statement is True.`,
+      `**B.** → False
+
+Average cost is the quotient $A(q)=C(q)/q$. Its derivative $A'(q)$ tells how average cost changes with output. That is a different object from marginal cost $C'(q)$. The statement is False.`,
+      `**C.** → True
+
+On the graph of total cost against output, the derivative $C'(q)$ is precisely the slope at that point. Economists call that slope marginal cost. The statement is True.`,
+      `**D.** → True
+
+The approximation $C(q+\\Delta q)-C(q)\\approx C'(q)\\Delta q$ with $\\Delta q=1$ says that one extra loaf near $q=120$ changes total cost by about $C'(120)=0.80$ euros. The statement is True.`,
+      `**E.** → False
+
+Average cost and marginal cost coincide only at special outputs (for example, where average cost is minimized). In general $A(120)$ need not equal $C'(120)$. The statement is False.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 41,
+    solution_overview:
+      "Identify marginal cost as the derivative of total cost and separate it from average cost.",
+  },
+  {
+    id: "math-11-42",
+    case_id: "MATH 11.42",
+    title: "Reading C'(50)=3 in words",
+    subsection: "11.2",
+    context:
+      "Let $C(x)$ be the cost, in millions of euros, of removing $x\\%$ of the pollution in a lake. Analysts report that $C'(50)=3$. Judge every assertion below.",
+    statements: [
+      "Near a $50\\%$ cleanup, each extra percentage point of pollution removed costs about $3$ million euros.",
+      "The statement $C'(50)=3$ means that the total cost of removing $50\\%$ of the pollution is $3$ million euros.",
+      "A precise reading uses the linear approximation $C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$ for small $\\Delta x$.",
+      "Saying \"it costs about $3$ million more to remove $51\\%$ than $50\\%$\" is a rough one-unit reading of the same derivative.",
+      "Because the units are millions of euros per percentage point, $C'(50)$ is a marginal cost with respect to the cleanup percentage.",
+    ],
+    answer_key: [true, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+By definition, $C'(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed. The value $3$ therefore means about $3$ million euros per extra percentage point near $50\\\\%$. The statement is True.`,
+      `**B.** → False
+
+The total cost of a $50\\\\%$ cleanup is the function value $C(50)$, not the derivative $C'(50)$. The number $3$ is a rate, not a stock of total spending. The statement is False.`,
+      `**C.** → True
+
+The linear approximation $C(50+\\\\Delta x)-C(50)\\\\approx C'(50)\\\\Delta x=3\\\\Delta x$ is exactly the precise local meaning of the derivative. The statement is True.`,
+      `**D.** → True
+
+Elementary readings often set $\\\\Delta x=1$ and say the extra cost of going from $50\\\\%$ to $51\\\\%$ is about $3$ million euros. That is a convenient but less precise version of the same idea. The statement is True.`,
+      `**E.** → True
+
+In this model the independent variable is the cleanup percentage, so the derivative is a marginal cost with respect to that percentage. The statement is True.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 42,
+    solution_overview:
+      "Interpret a reported marginal cleanup cost in words, separating the derivative from the level of total cost.",
+  },
+  {
+    id: "math-11-43",
+    case_id: "MATH 11.43",
+    title: "Price, revenue, or profit?",
+    subsection: "11.2",
+    context:
+      "A café sells $q$ cups per day. The price it can charge is described by a downward-sloping schedule $p(q)$. Revenue is $R(q)=q\\cdot p(q)$ and daily cost is $C(q)$. Profit is $\\pi(q)=R(q)-C(q)$. Which of the following hold?",
+    statements: [
+      "Marginal profit is the derivative of $\\pi(q)$, not the derivative of the price schedule $p(q)$ alone.",
+      "Differentiating only $p(q)$ yields marginal revenue.",
+      "Marginal revenue is $R'(q)$, which generally differs from the posted price $p(q)$.",
+      "If the café wants the approximate change in profit from selling one more cup, it should look at $\\pi'(q)$.",
+      "Because profit equals revenue minus cost, one always has $\\pi'(q)=R'(q)-C'(q)$.",
+    ],
+    answer_key: [true, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Marginal profit means the rate of change of profit. The function to differentiate is therefore $\\\\pi(q)=R(q)-C(q)$. The price schedule $p(q)$ alone is not profit. The statement is True.`,
+      `**B.** → False
+
+The derivative $p'(q)$ only tracks how the posted price moves with quantity. Marginal revenue is the derivative of revenue $R(q)=q\\\\cdot p(q)$, which also accounts for selling more cups. The statement is False.`,
+      `**C.** → True
+
+Revenue is price times quantity. When quantity rises, price usually falls, so the extra euros from one more cup are not simply the current price. That combined effect is exactly $R'(q)$. The statement is True.`,
+      `**D.** → True
+
+The approximate change in profit for a small increase in cups is $\\\\pi'(q)\\\\Delta q$. For one extra cup near the current $q$, the relevant number is $\\\\pi'(q)$. The statement is True.`,
+      `**E.** → True
+
+Differentiating the difference $\\\\pi=R-C$ gives $\\\\pi'=R'-C'$ at every output where the derivatives exist. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 43,
+    solution_overview:
+      "Match each economic question to the correct function before differentiating.",
+  },
+  {
+    id: "math-11-44",
+    case_id: "MATH 11.44",
+    title: "When does an extra unit raise profit?",
+    subsection: "11.2",
+    context:
+      "A firm sells output $q>0$. Its marginal revenue is $R'(q)$ and its marginal cost is $C'(q)$. Profit is $\\pi(q)=R(q)-C(q)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "If $R'(q)>C'(q)$ at some output, then $\\pi'(q)>0$ there.",
+      "If $R'(q)>C'(q)$, a small increase in output raises profit.",
+      "If $R'(q)<C'(q)$, a small increase in output raises profit.",
+      "The equality $R'(q)=C'(q)$ is exactly the condition $\\pi'(q)=0$.",
+      "The equality $R'(q)=C'(q)$ means that total revenue equals total cost.",
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Because $\\\\pi'(q)=R'(q)-C'(q)$, the inequality $R'(q)>C'(q)$ is synonymous with $\\\\pi'(q)>0$. The statement is True.`,
+      `**B.** → True
+
+A positive derivative means the function is locally increasing. So when $\\\\pi'(q)>0$, raising $q$ a little increases profit. The statement is True.`,
+      `**C.** → False
+
+If $R'(q)<C'(q)$, then $\\\\pi'(q)<0$, so profit is locally decreasing: a small increase in output lowers profit. The statement is False.`,
+      `**D.** → True
+
+Setting $R'(q)-C'(q)=0$ is the same as $R'(q)=C'(q)$. That is precisely $\\\\pi'(q)=0$. The statement is True.`,
+      `**E.** → False
+
+$R'(q)=C'(q)$ equates two rates of change. Total revenue equalling total cost would be $R(q)=C(q)$, a different statement about levels. The statement is False.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 44,
+    solution_overview:
+      "Link the sign of marginal profit to the comparison of marginal revenue and marginal cost.",
+  },
+  {
+    id: "math-11-45",
+    case_id: "MATH 11.45",
+    title: "Zero marginal profit is not zero profit",
+    subsection: "11.2",
+    context:
+      "At a candidate output $q^{\\ast}$, a firm's marginal profit is zero: $\\pi'(q^{\\ast})=0$. Judge every assertion below.",
+    statements: [
+      "At $q^{\\ast}$, marginal revenue equals marginal cost.",
+      "At $q^{\\ast}$, the firm necessarily earns zero total profit.",
+      "At $q^{\\ast}$, total revenue need not equal total cost.",
+      "The condition $\\pi'(q^{\\ast})=0$ alone does not tell whether profit is maximized or minimized.",
+      "If $\\pi'(q^{\\ast})=0$ and $\\pi$ changes from increasing to decreasing at $q^{\\ast}$, then $q^{\\ast}$ is a local profit maximum.",
+    ],
+    answer_key: [true, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+$\\\\pi'=R'-C'$, so $\\\\pi'(q^{\\\\ast})=0$ means $R'(q^{\\\\ast})=C'(q^{\\\\ast})$. The statement is True.`,
+      `**B.** → False
+
+Zero marginal profit is about the slope of the profit curve, not about the height $\\\\pi(q^{\\\\ast})$. Profit can be large and positive while its derivative is zero. The statement is False.`,
+      `**C.** → True
+
+Total revenue equals total cost only if $\\\\pi(q^{\\\\ast})=0$. The first-order condition does not force that. The statement is True.`,
+      `**D.** → True
+
+A zero derivative is only a stationary-point condition. Without a second-derivative or sign test, one cannot yet classify a max versus a min. The statement is True.`,
+      `**E.** → True
+
+If profit rises before $q^{\\\\ast}$ and falls afterward, the stationary point is a local maximum. That is the standard first-derivative sign test. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 45,
+    solution_overview:
+      "Separate the first-order condition for profit from statements about the level of profit.",
+  },
+  {
+    id: "math-11-46",
+    case_id: "MATH 11.46",
+    title: "Marginal utility in plain language",
+    subsection: "11.2",
+    context:
+      "A consumer's satisfaction from $x$ hours of leisure is measured by a utility function $U(x)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Marginal utility at $x$ is the derivative $U'(x)$.",
+      "If $U'(x)>0$, a little extra leisure raises satisfaction near that $x$.",
+      "If $U'(x)<0$, a little extra leisure raises satisfaction near that $x$.",
+      "The value $U(x)$ itself is already the marginal utility.",
+      "The sign of $U'(x)$ answers whether satisfaction is locally increasing or decreasing in leisure.",
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+By the same convention used for marginal cost and marginal revenue, marginal utility is the derivative of the utility function. The statement is True.`,
+      `**B.** → True
+
+A positive derivative means the function increases when the variable increases slightly. The statement is True.`,
+      `**C.** → False
+
+A negative derivative means satisfaction falls when leisure rises a little. The statement is False.`,
+      `**D.** → False
+
+$U(x)$ is the level of satisfaction, not its rate of change. Marginal utility is $U'(x)$. The statement is False.`,
+      `**E.** → True
+
+That is exactly what the sign of a derivative reports for a differentiable function. The statement is True.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 46,
+    solution_overview:
+      "Interpret the sign of marginal utility as a local increase or decrease in satisfaction.",
+  },
+  {
+    id: "math-11-47",
+    case_id: "MATH 11.47",
+    title: "Average cost is not marginal cost",
+    subsection: "11.2",
+    context:
+      "A plant's total cost is $C(q)$ and its average cost is $A(q)=C(q)/q$ for $q>0$. For each line, mark TRUE or FALSE.",
+    statements: [
+      "Average cost answers \"cost per unit produced so far,\" while marginal cost answers \"extra cost of a little more output.\"",
+      "In general $A(q)=C'(q)$ for every $q>0$.",
+      "Minimizing average cost is the same decision problem as setting marginal cost to zero.",
+      "At an output that minimizes average cost (with $A$ differentiable and $q>0$), one has $C'(q)=A(q)$.",
+      "If average cost is falling, then necessarily $C'(q)<0$.",
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+That is the standard verbal distinction: $A(q)$ is a per-unit average, while $C'(q)$ is a local extra-cost rate. The statement is True.`,
+      `**B.** → False
+
+The two functions are different. They meet only at particular outputs, not identically. The statement is False.`,
+      `**C.** → False
+
+Setting $C'(q)=0$ would look for a stationary point of total cost, which is not the average-cost problem. Average-cost minimization uses $A'(q)=0$. The statement is False.`,
+      `**D.** → True
+
+A standard calculus fact: if $A(q)=C(q)/q$ has a minimum at an interior $q>0$, then $A'(q)=0$ there, which rearranges to $C'(q)=A(q)$. The statement is True.`,
+      `**E.** → False
+
+Average cost can fall even while total cost rises. Falling $A$ means $A'<0$, not that marginal cost is negative. The statement is False.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 47,
+    solution_overview:
+      "Contrast average and marginal cost, including the classical equality at an average-cost minimum.",
+  },
+  {
+    id: "math-11-48",
+    case_id: "MATH 11.48",
+    title: "One more unit versus the derivative",
+    subsection: "11.2",
+    context:
+      "Elementary texts sometimes call $C(q+1)-C(q)$ the marginal cost at $q$. In this course, marginal cost means $C'(q)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The difference $C(q+1)-C(q)$ is an incremental one-unit cost, not the exact definition of $C'(q)$.",
+      "When the extra output is small, $C'(q)$ approximates the change in cost per unit of extra output.",
+      "The approximation $C(q+1)-C(q)\\approx C'(q)$ is often serviceable, but it is still an approximation.",
+      "If output falls by a small amount, the same derivative still governs the local cost change through $C(q+\\Delta q)-C(q)\\approx C'(q)\\Delta q$ with $\\Delta q<0$.",
+      "Because textbooks mention $C(q+1)-C(q)$, the derivative $C'(q)$ is unnecessary once that difference is known.",
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The derivative is a limit of Newton quotients as the step tends to zero. A fixed step of size $1$ is only a discrete stand-in. The statement is True.`,
+      `**B.** → True
+
+That is the standard linear approximation for a differentiable cost function. The statement is True.`,
+      `**C.** → True
+
+Setting $\\\\Delta q=1$ in $C(q+\\\\Delta q)-C(q)\\\\approx C'(q)\\\\Delta q$ yields that familiar one-unit reading, which remains approximate. The statement is True.`,
+      `**D.** → True
+
+The approximation formula does not require $\\\\Delta q>0$. A small cut in output is covered by a negative $\\\\Delta q$. The statement is True.`,
+      `**E.** → False
+
+The derivative is the precise marginal concept for continuous models and for arbitrarily small changes. A single one-unit difference cannot replace it in general. The statement is False.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 48,
+    solution_overview:
+      "Relate the calculus definition of marginal cost to the one-unit incremental story used in elementary economics.",
+  },
+  {
+    id: "math-11-49",
+    case_id: "MATH 11.49",
+    title: "Revenue when price depends on quantity",
+    subsection: "11.2",
+    context:
+      "A seller faces demand $q=D(p)$ or, equivalently, an inverse demand $p=p(q)$. Revenue can be written $R(q)=q\\cdot p(q)$. Judge every assertion below.",
+    statements: [
+      "Marginal revenue is obtained by differentiating $R(q)$, not by reading off $p(q)$ alone.",
+      "If the price schedule is downward sloping, selling one more unit tends to reduce the price earned on previous units as well.",
+      "That price-pressure effect is one reason marginal revenue can lie below the current price.",
+      "If demand did not depend on price at all, differentiating revenue would still ignore quantity.",
+      "A claim that \"marginal revenue always equals price\" is generally false when price must fall to sell more.",
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Marginal revenue is $R'(q)$. The schedule $p(q)$ is only one ingredient inside revenue. The statement is True.`,
+      `**B.** → True
+
+With inverse demand sloping down, a larger $q$ means a lower $p(q)$, so extra sales come with a price cut that also hits intramarginal units. The statement is True.`,
+      `**C.** → True
+
+The product rule $R'(q)=p(q)+q\\\\cdot p'(q)$ has a typically negative second term when $p'(q)<0$, pulling $R'(q)$ below $p(q)$. The statement is True.`,
+      `**D.** → False
+
+If price were constant in quantity, revenue would be $R(q)=p\\\\cdot q$ and its derivative would be exactly that constant price. The claim that differentiation would \\"ignore quantity\\" is confused. The statement is False.`,
+      `**E.** → True
+
+Under a downward-sloping price schedule, $R'(q)=p(q)$ only in degenerate cases (for example if $p'(q)=0$). In the usual case the equality fails. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 49,
+    solution_overview:
+      "Explain in words why marginal revenue differs from price under a downward-sloping demand schedule.",
+  },
+  {
+    id: "math-11-50",
+    case_id: "MATH 11.50",
+    title: "A consultant picks the wrong function",
+    subsection: "11.2",
+    context:
+      "A firm's inverse demand is $p(q)=40-q$, cost is $C(q)=8q+20$, and profit is $\\pi(q)=q\\cdot p(q)-C(q)$. A consultant says: \"To find marginal profit, just differentiate the price $40-q$.\" Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The consultant's advice is wrong: marginal profit requires differentiating $\\pi(q)$.",
+      "Differentiating $p(q)=40-q$ yields $-1$, which is the slope of price, not marginal profit.",
+      "Revenue in this story is $R(q)=40q-q^{2}$.",
+      "Profit simplifies to $\\pi(q)=32q-q^{2}-20$.",
+      "The correct marginal profit is $\\pi'(q)=32-2q$.",
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Marginal profit is defined as $\\\\pi'(q)$. The consultant differentiated the wrong object. The statement is True.`,
+      `**B.** → True
+
+$p'(q)=-1$ only describes how price falls with quantity. It omits both the extra unit sold and the cost side. The statement is True.`,
+      `**C.** → True
+
+$R(q)=q(40-q)=40q-q^{2}$. The statement is True.`,
+      `**D.** → True
+
+$\\\\pi(q)=R(q)-C(q)=(40q-q^{2})-(8q+20)=32q-q^{2}-20$. The statement is True.`,
+      `**E.** → True
+
+Differentiating that profit gives $\\\\pi'(q)=32-2q$. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 50,
+    solution_overview:
+      "Reject a wrong target function, rebuild revenue and profit from the story, then differentiate profit.",
+  },
+  {
+    id: "math-11-51",
+    case_id: "MATH 11.51",
+    title: "Marginal tax rate versus average tax",
+    subsection: "11.2",
+    context:
+      "Let $T(y)$ be the income tax owed by a person with income $y$. The marginal tax rate is $T'(y)$, while the average tax rate is $T(y)/y$ when $y>0$. For each claim, mark TRUE or FALSE.",
+    statements: [
+      "The marginal tax rate answers how tax liability changes when income rises a little.",
+      "The average tax rate answers what fraction of income is paid in tax overall.",
+      "In general the marginal tax rate equals the average tax rate for every income $y>0$.",
+      "If $T'(y)=0.3$, then near that income about $30$ cents of each extra euro is taxed away.",
+      "Knowing only $T(y)/y$ is enough to read the marginal tax rate at that same $y$.",
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+That is the meaning of the derivative $T'(y)$. The statement is True.`,
+      `**B.** → True
+
+The quotient $T(y)/y$ is precisely the average share of income taken by tax. The statement is True.`,
+      `**C.** → False
+
+As with cost, the two rates coincide only in special cases, not identically. The statement is False.`,
+      `**D.** → True
+
+$T'(y)=0.3$ means about $0.3$ euros of tax per extra euro of income near that point. The statement is True.`,
+      `**E.** → False
+
+The average rate does not determine the derivative. Many different tax schedules can share the same average at one $y$ while having different slopes. The statement is False.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 51,
+    solution_overview:
+      "Separate the marginal tax rate from the average tax rate using the same logic as marginal versus average cost.",
+  },
+  {
+    id: "math-11-52",
+    case_id: "MATH 11.52",
+    title: "Marginal propensity to save",
+    subsection: "11.2",
+    context:
+      "National saving is a function $S(Y)$ of national product $Y$. The marginal propensity to save is $S'(Y)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The marginal propensity to save is the derivative of saving with respect to national product.",
+      "If $S'(Y)=0.2$, then near that $Y$ about one fifth of a small increase in national product is saved.",
+      "The ratio $S(Y)/Y$ is the same object as the marginal propensity to save.",
+      "A constant saving rule $S(Y)=\\overline{S}+sY$ has marginal propensity to save equal to the coefficient $s$.",
+      "To find how saving responds to a little more national product, one differentiates $S(Y)$, not the identity function $Y$.",
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+That is the definition used in the text: $\\\\mathrm{mps}=S'(Y)$. The statement is True.`,
+      `**B.** → True
+
+The derivative value $0.2$ is a euros-saved-per-euro-of-product rate near that $Y$. The statement is True.`,
+      `**C.** → False
+
+$S(Y)/Y$ is an average saving ratio, analogous to average cost. It is not $S'(Y)$. The statement is False.`,
+      `**D.** → True
+
+Differentiating $S(Y)=\\\\overline{S}+sY$ gives $S'(Y)=s$. The statement is True.`,
+      `**E.** → True
+
+The economic question names saving as the dependent quantity, so the function to differentiate is $S$. The statement is True.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 52,
+    solution_overview:
+      "Identify the marginal propensity to save as a derivative and contrast it with the average saving ratio.",
+  },
+  {
+    id: "math-11-53",
+    case_id: "MATH 11.53",
+    title: "Slope of the cost curve on a graph",
+    subsection: "11.2",
+    context:
+      "On a diagram, total cost is plotted against output. At output $q_0$ the drawn tangent line is steeper than at output $q_1$. Judge every assertion below.",
+    statements: [
+      "Marginal cost is higher at $q_0$ than at $q_1$.",
+      "The height of the cost curve at $q_0$ is what economists call marginal cost.",
+      "A flatter tangent means a smaller derivative and therefore a smaller marginal cost.",
+      "If the tangent at $q_0$ has slope $12$, then $C'(q_0)=12$.",
+      "If two outputs have the same total cost, they must have the same marginal cost.",
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Steeper tangent means larger slope, and that slope is marginal cost. The statement is True.`,
+      `**B.** → False
+
+The height is the level $C(q_0)$. Marginal cost is the slope. The statement is False.`,
+      `**C.** → True
+
+That is the geometric meaning of a smaller derivative. The statement is True.`,
+      `**D.** → True
+
+By definition the slope of the tangent equals $C'(q_0)$. The statement is True.`,
+      `**E.** → False
+
+Equal heights say nothing about equal slopes. A U-shaped cost curve can return to the same height with different slopes. The statement is False.`,
+    ],
+    difficulty_level: "1/5",
+    sort_order: 53,
+    solution_overview:
+      "Read marginal cost from the slope of the total-cost graph rather than from its height.",
+  },
+  {
+    id: "math-11-54",
+    case_id: "MATH 11.54",
+    title: "Profit maximum is not revenue maximum",
+    subsection: "11.2",
+    context:
+      "A firm can choose output $q>0$. Revenue $R(q)$ and cost $C(q)$ are both differentiable, and profit is $\\pi(q)=R(q)-C(q)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "An interior profit maximum requires $\\pi'(q)=0$, not merely $R'(q)=0$.",
+      "Maximizing revenue alone automatically maximizes profit whenever cost is positive.",
+      "If cost rises with output, the output that maximizes revenue can differ from the output that maximizes profit.",
+      "At a profit-maximizing interior point one must have $R'(q)=C'(q)$.",
+      "If $R'(q)=0$ at some $q$ while $C'(q)>0$ there, then $\\pi'(q)<0$ at that same $q$.",
+    ],
+    answer_key: [true, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Profit maximization looks at $\\\\pi$. Setting only $R'=0$ ignores cost. The statement is True.`,
+      `**B.** → False
+
+Positive cost that depends on $q$ shifts the optimum. Maximizing $R$ need not maximize $R-C$. The statement is False.`,
+      `**C.** → True
+
+Because $\\\\pi'=R'-C'$, the zeros of $R'$ and of $\\\\pi'$ generally differ when $C'$ is not zero. The statement is True.`,
+      `**D.** → True
+
+$\\\\pi'=0$ rearranges to $R'=C'$. The statement is True.`,
+      `**E.** → True
+
+$\\\\pi'=R'-C'=0-C'<0$ whenever $C'>0$. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 54,
+    solution_overview:
+      "Keep revenue maximization and profit maximization as distinct targets.",
+  },
+  {
+    id: "math-11-55",
+    case_id: "MATH 11.55",
+    title: "Oil left in the well",
+    subsection: "11.2",
+    context:
+      "Let $x(t)$ be the number of barrels of oil left in a well at time $t$, measured in minutes. Suppose $x'(0)=-3$. For each claim, mark TRUE or FALSE.",
+    statements: [
+      "At time $0$, oil is leaving the well at about $3$ barrels per minute.",
+      "The equality $x'(0)=-3$ means that exactly $3$ barrels remain at time $0$.",
+      "The negative sign indicates that the stock of remaining oil is decreasing at $t=0$.",
+      "A small time step $\\Delta t$ changes remaining oil by about $-3\\Delta t$ barrels near $t=0$.",
+      "Because the derivative is negative, remaining oil must already be negative at $t=0$.",
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$|x'(0)|=3$ is the speed of depletion, and the economic reading is about $3$ barrels per minute leaving the well. The statement is True.`,
+      `**B.** → False
+
+The stock level is $x(0)$, not $x'(0)$. The number $-3$ is a rate. The statement is False.`,
+      `**C.** → True
+
+A negative derivative means the function is locally decreasing. The statement is True.`,
+      `**D.** → True
+
+The linear approximation $x(\\\\Delta t)-x(0)\\\\approx x'(0)\\\\Delta t=-3\\\\Delta t$ says exactly that. The statement is True.`,
+      `**E.** → False
+
+A decreasing positive stock can still be large. The sign of the derivative does not force the sign of the level. The statement is False.`,
+    ],
+    difficulty_level: "2/5",
+    sort_order: 55,
+    solution_overview:
+      "Interpret a negative time derivative of a stock as a depletion rate, not as a negative stock level.",
+  },
+  {
+    id: "math-11-56",
+    case_id: "MATH 11.56",
+    title: "What marginal revenue does not say",
+    subsection: "11.2",
+    context:
+      "A ticket office faces revenue $R(q)$ from selling $q$ tickets. It reports $R'(80)=12$ euros per ticket. Judge every assertion below.",
+    statements: [
+      "Near $80$ tickets, selling one more ticket raises revenue by about $12$ euros.",
+      "The report $R'(80)=12$ means that each of the $80$ tickets was sold for $12$ euros.",
+      "The report alone does not reveal the price schedule $p(q)$.",
+      "If marginal cost at $80$ tickets is $15$ euros, then selling a little more than $80$ would lower profit.",
+      "If marginal cost at $80$ tickets is $9$ euros, then selling a little more than $80$ would raise profit.",
+    ],
+    answer_key: [true, false, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+That is the standard one-unit reading of $R'(80)=12$. The statement is True.`,
+      `**B.** → False
+
+Average price would involve $R(80)/80$, and the posted price is $p(80)$. Neither is given by $R'(80)$. The statement is False.`,
+      `**C.** → True
+
+Many different price schedules can produce the same marginal revenue at one point. The statement is True.`,
+      `**D.** → True
+
+Here $R'(80)<C'(80)$, so $\\\\pi'(80)<0$ and a small increase in sales reduces profit. The statement is True.`,
+      `**E.** → True
+
+Here $R'(80)>C'(80)$, so $\\\\pi'(80)>0$ and a small increase in sales raises profit. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 56,
+    solution_overview:
+      "Read a reported marginal revenue correctly and compare it with marginal cost to judge the profit direction.",
+  },
+  {
+    id: "math-11-57",
+    case_id: "MATH 11.57",
+    title: "Two ways to write the same profit test",
+    subsection: "11.2",
+    context:
+      "A manager says: \"Produce a little more whenever the extra revenue from a little more output exceeds the extra cost.\" Decide TRUE or FALSE for each claim.",
+    statements: [
+      "In calculus language, the manager's rule is: increase $q$ a little when $R'(q)>C'(q)$.",
+      "The same rule can be written: increase $q$ a little when $\\pi'(q)>0$.",
+      "The manager's rule is equivalent to maximizing revenue regardless of cost.",
+      "If extra revenue and extra cost are equal for a small expansion, marginal profit is zero there.",
+      "The manager's comparison of \"extra revenue\" and \"extra cost\" is precisely a comparison of two derivatives.",
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+\\"Extra revenue\\" and \\"extra cost\\" for a small expansion are the marginal revenue and marginal cost. The statement is True.`,
+      `**B.** → True
+
+Because $\\\\pi'=R'-C'$, the inequality $R'>C'$ is identical to $\\\\pi'>0$. The statement is True.`,
+      `**C.** → False
+
+The rule explicitly uses cost through $C'$. It is a profit logic, not a pure revenue logic. The statement is False.`,
+      `**D.** → True
+
+Equal extras mean $R'=C'$, hence $\\\\pi'=0$. The statement is True.`,
+      `**E.** → True
+
+That is the modelling step that turns the manager's words into $R'(q)$ and $C'(q)$. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 57,
+    solution_overview:
+      "Translate a verbal expand-when-MR-exceeds-MC rule into derivative language.",
+  },
+  {
+    id: "math-11-58",
+    case_id: "MATH 11.58",
+    title: "Utility average versus marginal utility",
+    subsection: "11.2",
+    context:
+      "A student's satisfaction after $x>0$ hours of study is $U(x)$. Average satisfaction is $A(x)=U(x)/x$, and marginal utility is $U'(x)$. Which of the following hold?",
+    statements: [
+      "Maximizing $U(x)$ is not the same problem as maximizing $A(x)$.",
+      "If $U'(x)=0$ at some $x>0$, then average satisfaction is automatically maximized there.",
+      "An interior maximum of average satisfaction requires $A'(x)=0$, which rearranges to $U'(x)=A(x)$.",
+      "The condition $U'(x)=0$ means that a tiny change in study time leaves satisfaction locally unchanged.",
+      "If marginal utility is positive, average satisfaction must also be rising.",
+    ],
+    answer_key: [true, false, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+One objective looks at the height of $U$; the other looks at the quotient $U/x$. Their critical points generally differ. The statement is True.`,
+      `**B.** → False
+
+$U'=0$ maximizes (or stationarizes) total utility, not average utility. The average-utility first-order condition is $U'=A$, not $U'=0$. The statement is False.`,
+      `**C.** → True
+
+Write $A=U/x$. Then $A'=0$ yields $xU'-U=0$, hence $U'=U/x=A$. The statement is True.`,
+      `**D.** → True
+
+That is the plain-language reading of a zero derivative. The statement is True.`,
+      `**E.** → False
+
+Average satisfaction can fall even while total utility still rises, once utility rises slower than hours. The statement is False.`,
+    ],
+    difficulty_level: "4/5",
+    sort_order: 58,
+    solution_overview:
+      "Keep total-utility and average-utility objectives distinct, in parallel with total versus average cost.",
+  },
+  {
+    id: "math-11-59",
+    case_id: "MATH 11.59",
+    title: "Cost alone cannot give marginal revenue",
+    subsection: "11.2",
+    context:
+      "An analyst is given only a cost function $C(q)$ for a firm, with no demand or revenue information. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "From $C$ alone one can compute marginal cost $C'(q)$.",
+      "From $C$ alone one can compute marginal revenue $R'(q)$.",
+      "From $C$ alone one can compute marginal profit $\\pi'(q)$.",
+      "Without a revenue function, the comparison \"$R'(q)$ versus $C'(q)$\" cannot be carried out numerically.",
+      "If a second analyst later supplies $R(q)$, then marginal profit becomes $R'(q)-C'(q)$.",
+    ],
+    answer_key: [true, false, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Marginal cost needs only the cost function. The statement is True.`,
+      `**B.** → False
+
+Marginal revenue is a property of revenue, which is not determined by cost. The statement is False.`,
+      `**C.** → False
+
+Profit needs both revenue and cost. Cost alone is not enough. The statement is False.`,
+      `**D.** → True
+
+One side of the comparison is missing, so the numerical test cannot be run. The statement is True.`,
+      `**E.** → True
+
+Once both functions are known, $\\\\pi'=R'-C'$ follows at once. The statement is True.`,
+    ],
+    difficulty_level: "3/5",
+    sort_order: 59,
+    solution_overview:
+      "Recognize which marginal quantities are identified by cost data alone.",
+  },
+  {
+    id: "math-11-60",
+    case_id: "MATH 11.60",
+    title: "A story with three labelled derivatives",
+    subsection: "11.2",
+    context:
+      "A workshop produces $q$ chairs. Revenue is $R(q)$, cost is $C(q)$, and profit is $\\pi(q)=R(q)-C(q)$. At the current output the workshop posts three numbers: $R'(q)=18$, $C'(q)=11$, and $\\pi'(q)=7$. Judge every assertion below.",
+    statements: [
+      "The three posted numbers are consistent with each other.",
+      "Near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost.",
+      "Near the current output, one more chair adds about $7$ euros of profit.",
+      "Because profit is already positive at the rate of $7$ euros per chair, total profit must equal $7$ euros.",
+      "If the workshop instead faced $R'(q)=11$ and $C'(q)=18$ at some other output, a small expansion there would reduce profit.",
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Consistency requires $\\\\pi'=R'-C'$. Here $18-11=7$, so the triple matches. The statement is True.`,
+      `**B.** → True
+
+Those are the one-unit readings of the two derivatives. The statement is True.`,
+      `**C.** → True
+
+Likewise for $\\\\pi'(q)=7$. The statement is True.`,
+      `**D.** → False
+
+The number $7$ is a rate of change of profit, not the level $\\\\pi(q)$. The statement is False.`,
+      `**E.** → True
+
+Then $\\\\pi'=11-18=-7<0$, so a small expansion lowers profit. The statement is True.`,
+    ],
+    difficulty_level: "4/5",
+    sort_order: 60,
+    solution_overview:
+      "Check consistency of reported marginal revenue, cost, and profit, and interpret each number in words.",
   }
 ];
