@@ -212,6 +212,9 @@ function FlashcardSubjectPage() {
     document.body.classList.remove("flashcard-swiping");
   }, []);
 
+  // If the route unmounts mid-swipe, clear the body class so other pages keep scrolling.
+  useEffect(() => () => document.body.classList.remove("flashcard-swiping"), []);
+
   const shouldAcceptSwipe = (dx: number, vx: number) => {
     if (dx >= SWIPE_THRESHOLD || (dx > 8 && vx >= SWIPE_VELOCITY)) return "known" as const;
     if (dx <= -SWIPE_THRESHOLD || (dx < -8 && vx <= -SWIPE_VELOCITY))

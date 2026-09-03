@@ -791,7 +791,7 @@ export function EnglishTasksPage({ tier }: Props) {
                     storageKey={`english-course:${activeCase.subsection ?? activeCase.id}`}
                     explanation={explanation}
                     onClose={() => setExplanation(null)}
-                    lockPageScroll
+                    lockPageScroll={typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches}
                   />
                 </div>
                 <div className="flex min-h-0 w-full flex-col overflow-hidden lg:w-[min(42rem,46vw)] lg:shrink-0 xl:w-[min(44rem,42vw)]">

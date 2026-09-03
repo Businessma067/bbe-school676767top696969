@@ -136,7 +136,14 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    overflow-x: hidden;
+    /* Do not set overflow-x: hidden on body — on iOS Safari it turns body into a
+       scroll container and freezes vertical page scrolling site-wide. Clip
+       horizontal overflow on page shells instead (e.g. .flashcards-page). */
+  }
+
+  /* Soft horizontal clip without creating a body scroll trap on mobile. */
+  #root {
+    overflow-x: clip;
   }
 }
 
@@ -249,10 +256,10 @@
   overflow-x: clip;
 }
 
+/* Only block horizontal overscroll while swiping — never lock vertical touch
+   on body (that freezes scrolling on every page if the class sticks). */
 body.flashcard-swiping {
-  overflow-x: hidden;
   overscroll-behavior-x: none;
-  touch-action: none;
 }
 
 .flashcard-viewport {
