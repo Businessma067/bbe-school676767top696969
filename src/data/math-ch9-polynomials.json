@@ -1,0 +1,1671 @@
+{
+  "tasks": [
+    {
+      "id": "math-9-1",
+      "case_id": "MATH 9.01",
+      "title": "Two Lines Between A and B: Cubic Speed and a Distance Table",
+      "context": "Elisabeth commutes regularly by train between stops $A$ and $B$. Line L1 is described by the velocity (in m/s)\n\n$$v(t)=0.00002t^{3}-0.005t^{2}+0.4t$$\n\nLine L1 passes through stop $B$ but does not stop there. Line L2 records the total travel distance from $A$ every $10$ seconds (table below). The run of L2 from $A$ to $B$ lasts $120$ seconds. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Line L1 is decelerating at $t=80$.",
+        "The minimal acceleration of Line L1 between stops $A$ and $B$ is reached before $t=75$.",
+        "The average velocity between the two stops $A$ and $B$ of Line L2 is more than $45$ km/h.",
+        "The velocity of Line L2 has only one local maximum.",
+        "The highest average velocity of Line L2 was reached between $60$ and $70$ seconds."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDeceleration means that the acceleration $a=v'$ is negative at that instant, so differentiate the cubic speed.\n\n$$v(t)=0.00002t^{3}-0.005t^{2}+0.4t$$\n\n$$a(t)=v'(t)=0.00006t^{2}-0.01t+0.4$$\n\nSubstitute $t=80$.\n\n$$a(80)=0.00006\\cdot 80^{2}-0.01\\cdot 80+0.4=-0.016$$\n\nThe value is negative, so L1 is slowing down at $t=80$, so the statement is True.",
+        "**B.** → False\n\nThe acceleration of a cubic speed is a quadratic, so its minimum on the line occurs where $a'(t)=0$ and the leading coefficient of $a$ is positive.\n\n$$a'(t)=0.00012t-0.01$$\n\n$$0.00012t-0.01=0\\implies t=\\frac{0.01}{0.00012}=\\frac{250}{3}$$\n\n$$t=\\frac{250}{3}\\approx 83.3$$\n\nThat critical time is after $75$, not before it.\n\nThe minimal acceleration is reached near $t=83$, later than $t=75$, so the statement is False.",
+        "**C.** → False\n\nThe whole-trip average speed of L2 is the last distance divided by the last time, then converted from m/s into km/h.\n\n$$\\bar v=\\frac{1400}{120}=\\frac{35}{3}\\ \\mathrm{m/s}$$\n\n$$\\frac{35}{3}\\cdot 3.6=42\\ \\mathrm{km/h}$$\n\n$42$ is not greater than $45$, so the statement is False.",
+        "**D.** → False\n\nOn a discrete table the interval velocities are the first differences of distance over each $10$ s block.\n\n$$\\Delta s/\\Delta t:\\ 7,9,13,14,15,15,13,15,15,12,7,5$$\n\nA local maximum of this sequence is a value strictly larger than both neighbours (or a plateau that falls on both sides). The plateau $15,15$ around $40$–$60$ s and the later plateau $15,15$ around $70$–$90$ s are two separate local peaks, with $13$ sitting between them.\n\nThere are two local maxima, not only one, so the statement is False.",
+        "**E.** → False\n\nThe average velocity on $[60,70]$ is the corresponding first difference.\n\n$$\\frac{860-730}{10}=13\\ \\mathrm{m/s}$$\n\nSeveral other blocks reach $15$ m/s, which is larger.\n\n$$\\frac{580-430}{10}=15\\qquad \\frac{1010-860}{10}=15$$\n\nThe highest interval average is $15$ m/s, not the $13$ on $[60,70]$, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 1,
+      "solution_overview": "Differentiate the cubic speed of L1 to read acceleration; the second derivative locates the extreme of $a(t)$. For L2 the table gives interval average speeds as first differences over $10$ s, and the whole-trip average is total distance over $120$ s, converted by the factor $3.6$ from m/s into km/h.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied",
+      "tables_markdown": "| Time $t$ in seconds | $0$ | $10$ | $20$ | $30$ | $40$ | $50$ | $60$ | $70$ | $80$ | $90$ | $100$ | $110$ | $120$ |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $70$ | $160$ | $290$ | $430$ | $580$ | $730$ | $860$ | $1010$ | $1160$ | $1280$ | $1350$ | $1400$ |"
+    },
+    {
+      "id": "math-9-2",
+      "case_id": "MATH 9.02",
+      "title": "Reading a Cubic at Three Abscissas",
+      "context": "Let $p(x)=x^{3}-2x+4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(0)=4$.",
+        "$p(1)=3$.",
+        "$p(-1)=7$.",
+        "The highest power of $x$ in $p$ is $x^{3}$.",
+        "The constant term of $p$ is $-2$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe value at $0$ is the constant term.\n\n$$p(0)=4$$\n\nThat is the claimed number, so the statement is True.",
+        "**B.** → True\n\nSubstitute $x=1$.\n\n$$p(1)=1^{3}-2\\cdot 1+4=3$$\n\nThe value is $3$, so the statement is True.",
+        "**C.** → False\n\nSubstitute $x=-1$.\n\n$$p(-1)=(-1)^{3}-2(-1)+4=-1+2+4=5$$\n\nThe value is $5$, not $7$, so the statement is False.",
+        "**D.** → True\n\nThe written formula already shows a non-zero $x^{3}$ term and nothing higher.\n\n$$p(x)=x^{3}-2x+4$$\n\nThe highest power is $x^{3}$, so the statement is True.",
+        "**E.** → False\n\nThe constant term is the value at $0$, already computed as $4$.\n\n$$p(0)=4$$\n\nThe constant term is $4$, not $-2$, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 2,
+      "solution_overview": "A cubic is evaluated by substituting the named number and simplifying the powers.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-3",
+      "case_id": "MATH 9.03",
+      "title": "Degree and Leading Coefficient on Sight",
+      "context": "Let $q(x)=4x^{3}-x+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $q$ is $x^{3}$.",
+        "The leading coefficient of $q$ is $4$.",
+        "$q$ is a quadratic function.",
+        "$q(0)=5$.",
+        "The leading coefficient of $q$ is $-1$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe term $4x^{3}$ is present and no $x^{4}$ appears.\n\n$$q(x)=4x^{3}-x+5$$\n\nThe highest power is $x^{3}$, so the statement is True.",
+        "**B.** → True\n\nThe leading coefficient is the coefficient of the highest power.\n\n$$4x^{3}$$\n\nThat coefficient is $4$, so the statement is True.",
+        "**C.** → False\n\nA quadratic has highest power $x^{2}$. Here the highest power is $x^{3}$.\n\n$q$ is cubic, not quadratic, so the statement is False.",
+        "**D.** → True\n\n$$q(0)=5$$\n\nThe constant term is $5$, so the statement is True.",
+        "**E.** → False\n\nThe coefficient of $x$ is $-1$, but the leading term is $4x^{3}$.\n\nThe leading coefficient is $4$, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 3,
+      "solution_overview": "Degree and leading coefficient are read from the highest written power.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-4",
+      "case_id": "MATH 9.04",
+      "title": "Roots from a Factored Cubic",
+      "context": "Let $p(x)=(x-1)(x+2)(x-3)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The roots of $p$ are $1$, $-2$ and $3$.",
+        "$p(1)=0$.",
+        "$p(0)=6$.",
+        "$p$ has highest power $x^{2}$.",
+        "$x=2$ is a root of $p$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA product is zero precisely when one of the factors is zero.\n\n$$x-1=0\\ \\text{or}\\ x+2=0\\ \\text{or}\\ x-3=0$$\n\n$$x=1,\\quad x=-2,\\quad x=3$$\n\nThose are the three roots, so the statement is True.",
+        "**B.** → True\n\n$$p(1)=(1-1)(1+2)(1-3)=0$$\n\nThe first factor vanishes, so the statement is True.",
+        "**C.** → True\n\n$$p(0)=(-1)(2)(-3)=6$$\n\nThe constant value is $6$, so the statement is True.",
+        "**D.** → False\n\nThree linear factors multiply to a cubic.\n\n$$(x-1)(x+2)(x-3)=x^{3}-2x^{2}-5x+6$$\n\nThe highest power is $x^{3}$, so the statement is False.",
+        "**E.** → False\n\n$$p(2)=(2-1)(2+2)(2-3)=1\\cdot 4\\cdot(-1)=-4$$\n\nThe value is $-4$, not $0$, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 4,
+      "solution_overview": "A product of linear factors vanishes exactly at those roots.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-5",
+      "case_id": "MATH 9.05",
+      "title": "A Line Times a Square",
+      "context": "Let $p(x)=(2x-1)(x^{2}+1)$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $p$ is $x^{3}$.",
+        "$p$ has exactly one real root.",
+        "$p(0)=-1$.",
+        "The leading coefficient of $p$ is $1$.",
+        "$p$ is even."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe $x$ from the line times $x^{2}$ produces $x^{3}$.\n\n$$p(x)=2x^{3}-x^{2}+2x-1$$\n\nThe highest power is $x^{3}$, so the statement is True.",
+        "**B.** → True\n\n$x^{2}+1$ never vanishes on $\\mathbb{R}$, so the only real root comes from the line.\n\n$$2x-1=0\\implies x=\\frac{1}{2}$$\n\nThat is the only real root, so the statement is True.",
+        "**C.** → True\n\n$$p(0)=(-1)(1)=-1$$\n\nThe value is $-1$, so the statement is True.",
+        "**D.** → False\n\n$$2x\\cdot x^{2}=2x^{3}$$\n\nThe leading coefficient is $2$, so the statement is False.",
+        "**E.** → False\n\nAn even function satisfies $p(-x)=p(x)$. Expanding shows both even and odd powers.\n\n$$p(x)=2x^{3}-x^{2}+2x-1$$\n\nOdd powers are present, so $p$ is not even, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 5,
+      "solution_overview": "The product of a line and a quadratic with no real roots is a cubic with exactly one real root.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-6",
+      "case_id": "MATH 9.06",
+      "title": "Adding Two Cubics",
+      "context": "Let $p(x)=x^{3}+x$ and $q(x)=-x^{3}+4x^{2}-2$. Write $s=p+q$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$s(x)=4x^{2}+x-2$.",
+        "The highest power of $x$ in $s$ is $x^{3}$.",
+        "$s(0)=-2$.",
+        "$s$ is a quadratic function.",
+        "The leading coefficient of $s$ is $4$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAdd coefficient-wise.\n\n$$s(x)=(x^{3}-x^{3})+4x^{2}+(x)+(-2)=4x^{2}+x-2$$\n\nThe sum is exactly that quadratic, so the statement is True.",
+        "**B.** → False\n\nThe two $x^{3}$ coefficients cancel.\n\n$$1+(-1)=0$$\n\nThe highest remaining power is $x^{2}$, so the statement is False.",
+        "**C.** → True\n\n$$s(0)=-2$$\n\nThe constant term is $-2$, so the statement is True.",
+        "**D.** → True\n\nAfter cancellation the leading term is $4x^{2}$.\n\n$s$ is quadratic, so the statement is True.",
+        "**E.** → True\n\n$$s(x)=4x^{2}+x-2$$\n\nThe leading coefficient is $4$, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 6,
+      "solution_overview": "Adding cancels the $x^{3}$ terms and leaves a quadratic.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-7",
+      "case_id": "MATH 9.07",
+      "title": "Odd Cubic on Sight",
+      "context": "Let $p(x)=x^{3}-4x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p$ is an odd function.",
+        "The graph of $p$ is symmetric about the $y$-axis.",
+        "$p(0)=0$.",
+        "The roots of $p$ are $0$, $2$ and $-2$.",
+        "$p(2)=4$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p(-x)=(-x)^{3}-4(-x)=-x^{3}+4x=-p(x)$$\n\nThat is the definition of an odd function, so the statement is True.",
+        "**B.** → False\n\nSymmetry about the $y$-axis is evenness, $p(-x)=p(x)$. Here $p$ is odd.\n\nThe graph is symmetric about the origin, not about the $y$-axis, so the statement is False.",
+        "**C.** → True\n\n$$p(0)=0$$\n\nEvery odd function vanishes at the origin, so the statement is True.",
+        "**D.** → True\n\n$$p(x)=x(x^{2}-4)=x(x-2)(x+2)$$\n\nThose three numbers are the roots, so the statement is True.",
+        "**E.** → False\n\n$$p(2)=8-8=0$$\n\nThe value is $0$, because $2$ is a root, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 7,
+      "solution_overview": "Only odd powers appear, so $p(-x)=-p(x)$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-8",
+      "case_id": "MATH 9.08",
+      "title": "End Behaviour of a Downward Cubic",
+      "context": "Let $p(x)=-2x^{3}+x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "As $x\\to +\\infty$, $p(x)\\to -\\infty$.",
+        "As $x\\to -\\infty$, $p(x)\\to -\\infty$.",
+        "The leading coefficient of $p$ is $-2$.",
+        "$p(0)=1$.",
+        "$p$ is a quadratic function."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe leading term $-2x^{3}$ dominates for large positive $x$, and $-2<0$.\n\nThe graph disappears downwards on the right, so the statement is True.",
+        "**B.** → False\n\nFor large negative $x$, $x^{3}$ is negative, so $-2x^{3}$ is positive.\n\nThe graph rises to $+\\infty$ on the left, so the statement is False.",
+        "**C.** → True\n\n$$p(x)=-2x^{3}+x+1$$\n\nThe leading coefficient is $-2$, so the statement is True.",
+        "**D.** → True\n\n$$p(0)=1$$\n\nThe graph crosses the $y$-axis at height $1$, so the statement is True.",
+        "**E.** → False\n\nThe highest power is $x^{3}$.\n\n$p$ is cubic, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 8,
+      "solution_overview": "A cubic with negative leading coefficient falls to $-\\infty$ on the right and rises to $+\\infty$ on the left.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20-2x%C2%B3%20%2B%20x%20%2B%201%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22162.1%22%20x2%3D%22542%22%20y2%3D%22162.1%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.2%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.1%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-22.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-6.9%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8.9%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E24.7%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C59.4%2058.0%2C62.0%2060.0%2C64.6%2062.1%2C67.1%2064.1%2C69.6%2066.1%2C72.0%2068.1%2C74.4%2070.2%2C76.7%2072.2%2C79.0%2074.2%2C81.3%2076.2%2C83.5%2078.3%2C85.7%2080.3%2C87.8%2082.3%2C89.9%2084.4%2C91.9%2086.4%2C93.9%2088.4%2C95.9%2090.4%2C97.8%2092.5%2C99.7%2094.5%2C101.6%2096.5%2C103.4%2098.5%2C105.2%20100.5%2C106.9%20102.6%2C108.6%20104.6%2C110.3%20106.6%2C111.9%20108.6%2C113.5%20110.7%2C115.1%20112.7%2C116.6%20114.7%2C118.1%20116.8%2C119.5%20118.8%2C120.9%20120.8%2C122.3%20122.8%2C123.7%20124.9%2C125.0%20126.9%2C126.3%20128.9%2C127.5%20130.9%2C128.8%20132.9%2C130.0%20135.0%2C131.1%20137.0%2C132.3%20139.0%2C133.4%20141.1%2C134.4%20143.1%2C135.5%20145.1%2C136.5%20147.1%2C137.5%20149.1%2C138.4%20151.2%2C139.3%20153.2%2C140.2%20155.2%2C141.1%20157.2%2C142.0%20159.3%2C142.8%20161.3%2C143.6%20163.3%2C144.3%20165.4%2C145.1%20167.4%2C145.8%20169.4%2C146.5%20171.4%2C147.2%20173.4%2C147.8%20175.5%2C148.4%20177.5%2C149.0%20179.5%2C149.6%20181.5%2C150.1%20183.6%2C150.7%20185.6%2C151.2%20187.6%2C151.7%20189.7%2C152.1%20191.7%2C152.6%20193.7%2C153.0%20195.7%2C153.4%20197.8%2C153.8%20199.8%2C154.2%20201.8%2C154.5%20203.8%2C154.9%20205.8%2C155.2%20207.9%2C155.5%20209.9%2C155.8%20211.9%2C156.0%20214.0%2C156.3%20216.0%2C156.5%20218.0%2C156.7%20220.0%2C156.9%20222.1%2C157.1%20224.1%2C157.3%20226.1%2C157.4%20228.1%2C157.6%20230.2%2C157.7%20232.2%2C157.8%20234.2%2C157.9%20236.2%2C158.0%20238.2%2C158.1%20240.3%2C158.2%20242.3%2C158.2%20244.3%2C158.3%20246.3%2C158.3%20248.4%2C158.4%20250.4%2C158.4%20252.4%2C158.4%20254.4%2C158.4%20256.5%2C158.4%20258.5%2C158.4%20260.5%2C158.3%20262.5%2C158.3%20264.6%2C158.3%20266.6%2C158.2%20268.6%2C158.2%20270.6%2C158.1%20272.7%2C158.1%20274.7%2C158.0%20276.7%2C157.9%20278.8%2C157.9%20280.8%2C157.8%20282.8%2C157.7%20284.8%2C157.6%20286.9%2C157.5%20288.9%2C157.5%20290.9%2C157.4%20292.9%2C157.3%20295.0%2C157.2%20297.0%2C157.1%20299.0%2C157.0%20301.0%2C156.9%20303.0%2C156.8%20305.1%2C156.7%20307.1%2C156.6%20309.1%2C156.5%20311.1%2C156.5%20313.2%2C156.4%20315.2%2C156.3%20317.2%2C156.2%20319.2%2C156.1%20321.3%2C156.1%20323.3%2C156.0%20325.3%2C155.9%20327.3%2C155.9%20329.4%2C155.8%20331.4%2C155.8%20333.4%2C155.7%20335.4%2C155.7%20337.5%2C155.7%20339.5%2C155.6%20341.5%2C155.6%20343.6%2C155.6%20345.6%2C155.6%20347.6%2C155.6%20349.6%2C155.6%20351.7%2C155.7%20353.7%2C155.7%20355.7%2C155.8%20357.7%2C155.8%20359.8%2C155.9%20361.8%2C156.0%20363.8%2C156.1%20365.8%2C156.2%20367.8%2C156.3%20369.9%2C156.4%20371.9%2C156.6%20373.9%2C156.7%20375.9%2C156.9%20378.0%2C157.1%20380.0%2C157.3%20382.0%2C157.5%20384.1%2C157.7%20386.1%2C158.0%20388.1%2C158.2%20390.1%2C158.5%20392.2%2C158.8%20394.2%2C159.1%20396.2%2C159.5%20398.2%2C159.8%20400.2%2C160.2%20402.3%2C160.6%20404.3%2C161.0%20406.3%2C161.4%20408.3%2C161.9%20410.4%2C162.3%20412.4%2C162.8%20414.4%2C163.3%20416.4%2C163.9%20418.5%2C164.4%20420.5%2C165.0%20422.5%2C165.6%20424.6%2C166.2%20426.6%2C166.8%20428.6%2C167.5%20430.6%2C168.2%20432.7%2C168.9%20434.7%2C169.7%20436.7%2C170.4%20438.7%2C171.2%20440.8%2C172.0%20442.8%2C172.9%20444.8%2C173.8%20446.8%2C174.7%20448.8%2C175.6%20450.9%2C176.5%20452.9%2C177.5%20454.9%2C178.5%20456.9%2C179.6%20459.0%2C180.6%20461.0%2C181.7%20463.0%2C182.9%20465.1%2C184.0%20467.1%2C185.2%20469.1%2C186.5%20471.1%2C187.7%20473.1%2C189.0%20475.2%2C190.3%20477.2%2C191.7%20479.2%2C193.1%20481.2%2C194.5%20483.3%2C195.9%20485.3%2C197.4%20487.3%2C198.9%20489.3%2C200.5%20491.4%2C202.1%20493.4%2C203.7%20495.4%2C205.4%20497.4%2C207.1%20499.5%2C208.8%20501.5%2C210.6%20503.5%2C212.4%20505.6%2C214.3%20507.6%2C216.2%20509.6%2C218.1%20511.6%2C220.1%20513.6%2C222.1%20515.7%2C224.1%20517.7%2C226.2%20519.7%2C228.3%20521.8%2C230.5%20523.8%2C232.7%20525.8%2C235.0%20527.8%2C237.3%20529.9%2C239.6%20531.9%2C242.0%20533.9%2C244.4%20535.9%2C246.9%20538.0%2C249.4%20540.0%2C252.0%20542.0%2C254.6%22%2F%3E%0A%3Ccircle%20cx%3D%22299.0%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22305.0%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ep%280%29%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-9",
+      "case_id": "MATH 9.09",
+      "title": "A Short Value Table for a Cubic",
+      "context": "The cubic $p$ takes the values in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(0)=1$.",
+        "$p(2)=7$.",
+        "$p$ is a linear function.",
+        "The first differences of $p$ are constant.",
+        "$p(1)=p(-1)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRead the column $x=0$.\n\nThe table lists $1$, so the statement is True.",
+        "**B.** → True\n\nRead the column $x=2$.\n\nThe table lists $7$, so the statement is True.",
+        "**C.** → False\n\nThe first differences $p(x+1)-p(x)$ are $-1+2=1$, then $2-1=1$, then $7-2=5$, which are not constant.\n\nA line would have a constant first difference, so the statement is False.",
+        "**D.** → False\n\nThey run $1,1,5$.\n\nThe last step is already larger, so the statement is False.",
+        "**E.** → True\n\nBoth columns list $2$.\n\nThe two values agree, so the statement is True."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 9,
+      "solution_overview": "The table is consistent with $p(x)=x^{3}-x+1$. First differences already show the growth is not linear.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "table",
+      "tables_markdown": "| $x$ | $-1$ | $0$ | $1$ | $2$ |\n| --- | --- | --- | --- | --- |\n| $p(x)$ | $2$ | $1$ | $2$ | $7$ |"
+    },
+    {
+      "id": "math-9-10",
+      "case_id": "MATH 9.10",
+      "title": "Constant Term Versus Leading Term",
+      "context": "Let $p(x)=5-3x^{2}+x^{4}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $p$ is $x^{4}$.",
+        "The leading coefficient of $p$ is $5$.",
+        "$p(0)=5$.",
+        "$p$ is even.",
+        "$p$ has an $x^{3}$ term."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p(x)=x^{4}-3x^{2}+5$$\n\nThe highest power is $x^{4}$, so the statement is True.",
+        "**B.** → False\n\nThe $5$ is the constant term, not the coefficient of $x^{4}$.\n\nThe leading coefficient is $1$, so the statement is False.",
+        "**C.** → True\n\n$$p(0)=5$$\n\nThe constant term is $5$, so the statement is True.",
+        "**D.** → True\n\nOnly even powers appear, so $p(-x)=p(x)$.\n\n$p$ is even, so the statement is True.",
+        "**E.** → False\n\nNo odd power is written.\n\nThere is no $x^{3}$ term, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 10,
+      "solution_overview": "Rewrite in descending powers: $p(x)=x^{4}-3x^{2}+5$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-11",
+      "case_id": "MATH 9.11",
+      "title": "A Horizontal Line Against a Cubic",
+      "context": "Let $p(x)=x^{3}-x$ and let $c$ be the constant function $c(x)=0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The graphs of $p$ and $c$ meet at three points.",
+        "$p$ is odd.",
+        "The leading coefficient of $p$ is $-1$.",
+        "$p(1)=0$.",
+        "As $x\\to +\\infty$, $p(x)\\to -\\infty$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x^{3}-x=x(x-1)(x+1)=0$$\n\nThree distinct real roots give three meetings, so the statement is True.",
+        "**B.** → True\n\n$$p(-x)=-x^{3}+x=-p(x)$$\n\n$p$ is odd, so the statement is True.",
+        "**C.** → False\n\n$$p(x)=x^{3}-x$$\n\nThe leading coefficient is $1$, so the statement is False.",
+        "**D.** → True\n\n$$p(1)=1-1=0$$\n\n$1$ is a root, so the statement is True.",
+        "**E.** → False\n\nThe leading coefficient is positive, so $p$ rises on the right.\n\n$p(x)\\to +\\infty$ as $x\\to +\\infty$, so the statement is False."
+      ],
+      "difficulty_level": "1/5",
+      "sort_order": 11,
+      "solution_overview": "The zeros of $p$ are the meetings with the $x$-axis.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%C2%B3%20%E2%88%92%20x%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22157.0%22%20x2%3D%22542%22%20y2%3D%22157.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-7.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.5%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.5%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E7.4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C254.6%2058.0%2C251.6%2060.1%2C248.7%2062.1%2C245.9%2064.1%2C243.1%2066.1%2C240.3%2068.2%2C237.7%2070.2%2C235.0%2072.2%2C232.4%2074.2%2C229.9%2076.3%2C227.4%2078.3%2C225.0%2080.3%2C222.6%2082.3%2C220.2%2084.4%2C217.9%2086.4%2C215.7%2088.4%2C213.5%2090.4%2C211.4%2092.5%2C209.3%2094.5%2C207.2%2096.5%2C205.2%2098.5%2C203.2%20100.6%2C201.3%20102.6%2C199.4%20104.6%2C197.6%20106.6%2C195.8%20108.7%2C194.1%20110.7%2C192.4%20112.7%2C190.7%20114.7%2C189.1%20116.8%2C187.5%20118.8%2C186.0%20120.8%2C184.5%20122.8%2C183.0%20124.8%2C181.6%20126.9%2C180.2%20128.9%2C178.9%20130.9%2C177.6%20132.9%2C176.3%20135.0%2C175.1%20137.0%2C173.9%20139.0%2C172.7%20141.1%2C171.6%20143.1%2C170.5%20145.1%2C169.5%20147.1%2C168.4%20149.1%2C167.5%20151.2%2C166.5%20153.2%2C165.6%20155.2%2C164.7%20157.2%2C163.9%20159.3%2C163.0%20161.3%2C162.2%20163.3%2C161.5%20165.3%2C160.8%20167.4%2C160.1%20169.4%2C159.4%20171.4%2C158.8%20173.5%2C158.1%20175.5%2C157.6%20177.5%2C157.0%20179.5%2C156.5%20181.6%2C156.0%20183.6%2C155.5%20185.6%2C155.0%20187.6%2C154.6%20189.7%2C154.2%20191.7%2C153.8%20193.7%2C153.5%20195.7%2C153.2%20197.8%2C152.9%20199.8%2C152.6%20201.8%2C152.3%20203.8%2C152.1%20205.8%2C151.9%20207.9%2C151.7%20209.9%2C151.5%20211.9%2C151.3%20214.0%2C151.2%20216.0%2C151.1%20218.0%2C151.0%20220.0%2C150.9%20222.1%2C150.8%20224.1%2C150.8%20226.1%2C150.8%20228.1%2C150.7%20230.2%2C150.7%20232.2%2C150.8%20234.2%2C150.8%20236.2%2C150.8%20238.2%2C150.9%20240.3%2C151.0%20242.3%2C151.1%20244.3%2C151.2%20246.3%2C151.3%20248.4%2C151.4%20250.4%2C151.5%20252.4%2C151.7%20254.4%2C151.8%20256.5%2C152.0%20258.5%2C152.2%20260.5%2C152.4%20262.5%2C152.6%20264.6%2C152.8%20266.6%2C153.0%20268.6%2C153.2%20270.6%2C153.4%20272.7%2C153.6%20274.7%2C153.9%20276.7%2C154.1%20278.8%2C154.4%20280.8%2C154.6%20282.8%2C154.9%20284.8%2C155.1%20286.9%2C155.4%20288.9%2C155.7%20290.9%2C155.9%20292.9%2C156.2%20294.9%2C156.5%20297.0%2C156.7%20299.0%2C157.0%20301.0%2C157.3%20303.0%2C157.5%20305.1%2C157.8%20307.1%2C158.1%20309.1%2C158.3%20311.1%2C158.6%20313.2%2C158.9%20315.2%2C159.1%20317.2%2C159.4%20319.2%2C159.6%20321.3%2C159.9%20323.3%2C160.1%20325.3%2C160.4%20327.4%2C160.6%20329.4%2C160.8%20331.4%2C161.0%20333.4%2C161.2%20335.4%2C161.4%20337.5%2C161.6%20339.5%2C161.8%20341.5%2C162.0%20343.6%2C162.2%20345.6%2C162.3%20347.6%2C162.5%20349.6%2C162.6%20351.6%2C162.7%20353.7%2C162.8%20355.7%2C162.9%20357.7%2C163.0%20359.8%2C163.1%20361.8%2C163.2%20363.8%2C163.2%20365.8%2C163.2%20367.9%2C163.3%20369.9%2C163.3%20371.9%2C163.2%20373.9%2C163.2%20375.9%2C163.2%20378.0%2C163.1%20380.0%2C163.0%20382.0%2C162.9%20384.1%2C162.8%20386.1%2C162.7%20388.1%2C162.5%20390.1%2C162.3%20392.1%2C162.1%20394.2%2C161.9%20396.2%2C161.7%20398.2%2C161.4%20400.2%2C161.1%20402.3%2C160.8%20404.3%2C160.5%20406.3%2C160.2%20408.3%2C159.8%20410.4%2C159.4%20412.4%2C159.0%20414.4%2C158.5%20416.4%2C158.0%20418.5%2C157.5%20420.5%2C157.0%20422.5%2C156.4%20424.6%2C155.9%20426.6%2C155.2%20428.6%2C154.6%20430.6%2C153.9%20432.7%2C153.2%20434.7%2C152.5%20436.7%2C151.8%20438.7%2C151.0%20440.8%2C150.1%20442.8%2C149.3%20444.8%2C148.4%20446.8%2C147.5%20448.9%2C146.5%20450.9%2C145.6%20452.9%2C144.5%20454.9%2C143.5%20456.9%2C142.4%20459.0%2C141.3%20461.0%2C140.1%20463.0%2C138.9%20465.1%2C137.7%20467.1%2C136.4%20469.1%2C135.1%20471.1%2C133.8%20473.1%2C132.4%20475.2%2C131.0%20477.2%2C129.5%20479.2%2C128.0%20481.2%2C126.5%20483.3%2C124.9%20485.3%2C123.3%20487.3%2C121.6%20489.4%2C119.9%20491.4%2C118.2%20493.4%2C116.4%20495.4%2C114.6%20497.4%2C112.7%20499.5%2C110.8%20501.5%2C108.8%20503.5%2C106.8%20505.6%2C104.7%20507.6%2C102.6%20509.6%2C100.5%20511.6%2C98.3%20513.6%2C96.1%20515.7%2C93.8%20517.7%2C91.4%20519.7%2C89.0%20521.8%2C86.6%20523.8%2C84.1%20525.8%2C81.6%20527.8%2C79.0%20529.8%2C76.3%20531.9%2C73.7%20533.9%2C70.9%20535.9%2C68.1%20538.0%2C65.3%20540.0%2C62.4%20542.0%2C59.4%22%2F%3E%0A%3Ccircle%20cx%3D%22177.5%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22183.5%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%3Ccircle%20cx%3D%22299.0%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22305.0%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%3Ccircle%20cx%3D%22420.5%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22426.5%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-12",
+      "case_id": "MATH 9.12",
+      "title": "Product of a Line and a Cubic",
+      "context": "Let $f(x)=x-2$ and $p(x)=x^{3}+1$. Write $h=f\\cdot p$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $h$ is $x^{4}$.",
+        "The leading coefficient of $h$ is $1$.",
+        "$h(2)=0$.",
+        "$h(-1)=0$.",
+        "$h$ is a cubic function."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe $x$ from the line times $x^{3}$ produces $x^{4}$.\n\n$$h(x)=(x-2)(x^{3}+1)=x^{4}-2x^{3}+x-2$$\n\nThe highest power is $x^{4}$, so the statement is True.",
+        "**B.** → True\n\n$$x\\cdot x^{3}=x^{4}$$\n\nThe leading coefficient is $1$, so the statement is True.",
+        "**C.** → True\n\nThe factor $x-2$ vanishes at $2$.\n\n$2$ is a root of the product, so the statement is True.",
+        "**D.** → True\n\n$$p(-1)=-1+1=0$$\n\nThe cubic factor already vanishes, so the product does too, so the statement is True.",
+        "**E.** → False\n\nThe highest power is $x^{4}$.\n\n$h$ is quartic, so the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 12,
+      "solution_overview": "The product of a non-constant line and a cubic has highest power $x^{4}$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-13",
+      "case_id": "MATH 9.13",
+      "title": "First Differences Hint at the Degree",
+      "context": "A polynomial $p$ is sampled at equally spaced points.",
+      "statements": [
+        "The first differences are $1,7,19,37$.",
+        "The second differences are constant.",
+        "The third differences are constant and equal to $6$.",
+        "$p$ could be a quadratic function.",
+        "$p(0)=1$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$2-1=1,\\ 9-2=7,\\ 28-9=19,\\ 65-28=37$$\n\nThose are the successive steps, so the statement is True.",
+        "**B.** → False\n\n$$7-1=6,\\ 19-7=12,\\ 37-19=18$$\n\nThe second differences still grow, so the statement is False.",
+        "**C.** → True\n\n$$12-6=6,\\ 18-12=6$$\n\nA constant third difference is the signature of a cubic, so the statement is True.",
+        "**D.** → False\n\nA quadratic has constant second differences. Here they are $6,12,18$.\n\nThe table is not quadratic, so the statement is False.",
+        "**E.** → True\n\nRead the first column.\n\nThe table lists $1$, so the statement is True."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 13,
+      "solution_overview": "The values match $p(x)=x^{3}+1$. Third differences of a cubic are constant.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "table",
+      "tables_markdown": "| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ |\n| --- | --- | --- | --- | --- | --- |\n| $p(x)$ | $1$ | $2$ | $9$ | $28$ | $65$ |"
+    },
+    {
+      "id": "math-9-14",
+      "case_id": "MATH 9.14",
+      "title": "Warehouse Cost as a Cubic",
+      "context": "Weekly handling cost, in hundreds of euros, is modelled by $C(q)=q^{3}-6q^{2}+20q$ for output $q\\ge 0$ (in tonnes). Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$C(0)=0$.",
+        "$C(2)=24$.",
+        "$C(6)=C(0)$.",
+        "The highest power of $q$ in $C$ is $q^{3}$.",
+        "$C$ has a positive real root besides $q=0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$C(0)=0$$\n\nZero output carries zero modelled cost, so the statement is True.",
+        "**B.** → True\n\n$$C(2)=8-24+40=24$$\n\nThe cost is $24$ hundred euros, so the statement is True.",
+        "**C.** → False\n\n$$C(6)=216-216+120=120$$\n\nThe two values are $120$ and $0$, so the statement is False.",
+        "**D.** → True\n\n$$C(q)=q^{3}-6q^{2}+20q$$\n\nThe model is cubic, so the statement is True.",
+        "**E.** → False\n\n$$q^{2}-6q+20=0\\qquad \\Delta=36-80<0$$\n\nThe quadratic factor has no real roots, so the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 14,
+      "solution_overview": "Evaluate the cubic cost and factor $C(q)=q(q^{2}-6q+20)$ to see there is no other positive root.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied"
+    },
+    {
+      "id": "math-9-15",
+      "case_id": "MATH 9.15",
+      "title": "Turning-Point Budget of a Cubic",
+      "context": "Let $p(x)=x^{3}-3x^{2}+2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p$ can have at most two turning points.",
+        "The stationary points lie at $x=0$ and $x=2$.",
+        "$p(0)=2$.",
+        "$p(2)=2$.",
+        "As $x\\to +\\infty$, $p(x)\\to +\\infty$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe derivative of a cubic is a quadratic, and a quadratic equation has at most two real roots.\n\n$$p'(x)=3x^{2}-6x$$\n\nAt most two stationary points are possible, so the statement is True.",
+        "**B.** → True\n\n$$p'(x)=3x(x-2)=0$$\n\nThose are the two roots of $p'$, so the statement is True.",
+        "**C.** → True\n\n$$p(0)=2$$\n\nThe $y$-intercept is $2$, so the statement is True.",
+        "**D.** → False\n\n$$p(2)=8-12+2=-2$$\n\nThe value is $-2$, not $2$, so the statement is False.",
+        "**E.** → True\n\nThe leading coefficient is $+1$.\n\nThe graph rises on the right, so the statement is True."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 15,
+      "solution_overview": "A cubic has at most two turning points, located where $p'(x)=0$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%C2%B3%20%E2%88%92%203x%C2%B2%20%2B%202%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22216.0%22%20x2%3D%22542%22%20y2%3D%22216.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22164.0%22%20y1%3D%2236%22%20x2%3D%22164.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.2%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.4%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3.5%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-3.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.0%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E9.3%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C254.6%2058.0%2C251.4%2060.0%2C248.2%2062.1%2C245.2%2064.1%2C242.2%2066.1%2C239.3%2068.2%2C236.5%2070.2%2C233.8%2072.2%2C231.1%2074.2%2C228.5%2076.2%2C226.0%2078.3%2C223.6%2080.3%2C221.2%2082.3%2C218.9%2084.3%2C216.7%2086.4%2C214.5%2088.4%2C212.4%2090.4%2C210.4%2092.5%2C208.5%2094.5%2C206.6%2096.5%2C204.8%2098.5%2C203.0%20100.5%2C201.3%20102.6%2C199.7%20104.6%2C198.2%20106.6%2C196.7%20108.7%2C195.3%20110.7%2C193.9%20112.7%2C192.6%20114.7%2C191.3%20116.8%2C190.2%20118.8%2C189.0%20120.8%2C188.0%20122.8%2C187.0%20124.8%2C186.0%20126.9%2C185.1%20128.9%2C184.2%20130.9%2C183.5%20132.9%2C182.7%20135.0%2C182.0%20137.0%2C181.4%20139.0%2C180.8%20141.1%2C180.3%20143.1%2C179.8%20145.1%2C179.4%20147.1%2C179.0%20149.2%2C178.6%20151.2%2C178.3%20153.2%2C178.1%20155.2%2C177.9%20157.2%2C177.7%20159.3%2C177.6%20161.3%2C177.5%20163.3%2C177.5%20165.3%2C177.5%20167.4%2C177.5%20169.4%2C177.6%20171.4%2C177.7%20173.4%2C177.9%20175.5%2C178.1%20177.5%2C178.3%20179.5%2C178.6%20181.6%2C178.9%20183.6%2C179.3%20185.6%2C179.6%20187.6%2C180.0%20189.7%2C180.5%20191.7%2C181.0%20193.7%2C181.5%20195.7%2C182.0%20197.8%2C182.5%20199.8%2C183.1%20201.8%2C183.7%20203.8%2C184.4%20205.8%2C185.0%20207.9%2C185.7%20209.9%2C186.4%20211.9%2C187.2%20213.9%2C187.9%20216.0%2C188.7%20218.0%2C189.5%20220.0%2C190.4%20222.1%2C191.2%20224.1%2C192.1%20226.1%2C192.9%20228.1%2C193.8%20230.2%2C194.7%20232.2%2C195.7%20234.2%2C196.6%20236.2%2C197.6%20238.2%2C198.5%20240.3%2C199.5%20242.3%2C200.5%20244.3%2C201.5%20246.3%2C202.6%20248.4%2C203.6%20250.4%2C204.6%20252.4%2C205.7%20254.4%2C206.7%20256.5%2C207.8%20258.5%2C208.8%20260.5%2C209.9%20262.6%2C211.0%20264.6%2C212.1%20266.6%2C213.1%20268.6%2C214.2%20270.6%2C215.3%20272.7%2C216.4%20274.7%2C217.5%20276.7%2C218.6%20278.8%2C219.6%20280.8%2C220.7%20282.8%2C221.8%20284.8%2C222.9%20286.9%2C223.9%20288.9%2C225.0%20290.9%2C226.0%20292.9%2C227.1%20294.9%2C228.1%20297.0%2C229.2%20299.0%2C230.2%20301.0%2C231.2%20303.0%2C232.2%20305.1%2C233.2%20307.1%2C234.2%20309.1%2C235.1%20311.1%2C236.1%20313.2%2C237.0%20315.2%2C237.9%20317.2%2C238.8%20319.2%2C239.7%20321.3%2C240.6%20323.3%2C241.4%20325.3%2C242.3%20327.4%2C243.1%20329.4%2C243.9%20331.4%2C244.6%20333.4%2C245.4%20335.4%2C246.1%20337.5%2C246.8%20339.5%2C247.5%20341.5%2C248.1%20343.6%2C248.7%20345.6%2C249.3%20347.6%2C249.9%20349.6%2C250.4%20351.6%2C250.9%20353.7%2C251.4%20355.7%2C251.9%20357.7%2C252.3%20359.8%2C252.7%20361.8%2C253.0%20363.8%2C253.3%20365.8%2C253.6%20367.9%2C253.9%20369.9%2C254.1%20371.9%2C254.3%20373.9%2C254.4%20375.9%2C254.5%20378.0%2C254.6%20380.0%2C254.6%20382.0%2C254.6%20384.1%2C254.5%20386.1%2C254.4%20388.1%2C254.2%20390.1%2C254.1%20392.1%2C253.8%20394.2%2C253.5%20396.2%2C253.2%20398.2%2C252.8%20400.2%2C252.4%20402.3%2C252.0%20404.3%2C251.4%20406.3%2C250.9%20408.4%2C250.2%20410.4%2C249.6%20412.4%2C248.9%20414.4%2C248.1%20416.4%2C247.3%20418.5%2C246.4%20420.5%2C245.4%20422.5%2C244.4%20424.6%2C243.4%20426.6%2C242.3%20428.6%2C241.1%20430.6%2C239.9%20432.6%2C238.6%20434.7%2C237.3%20436.7%2C235.9%20438.7%2C234.4%20440.8%2C232.9%20442.8%2C231.3%20444.8%2C229.6%20446.8%2C227.9%20448.9%2C226.1%20450.9%2C224.2%20452.9%2C222.3%20454.9%2C220.3%20456.9%2C218.3%20459.0%2C216.1%20461.0%2C213.9%20463.0%2C211.7%20465.1%2C209.3%20467.1%2C206.9%20469.1%2C204.4%20471.1%2C201.8%20473.1%2C199.2%20475.2%2C196.5%20477.2%2C193.7%20479.2%2C190.8%20481.2%2C187.9%20483.3%2C184.8%20485.3%2C181.7%20487.3%2C178.6%20489.4%2C175.3%20491.4%2C171.9%20493.4%2C168.5%20495.4%2C165.0%20497.5%2C161.4%20499.5%2C157.7%20501.5%2C154.0%20503.5%2C150.1%20505.5%2C146.2%20507.6%2C142.1%20509.6%2C138.0%20511.6%2C133.8%20513.6%2C129.5%20515.7%2C125.1%20517.7%2C120.6%20519.7%2C116.1%20521.8%2C111.4%20523.8%2C106.6%20525.8%2C101.8%20527.8%2C96.8%20529.9%2C91.8%20531.9%2C86.6%20533.9%2C81.4%20535.9%2C76.0%20538.0%2C70.6%20540.0%2C65.1%20542.0%2C59.4%22%2F%3E%0A%3Ccircle%20cx%3D%22164.0%22%20cy%3D%22177.5%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22170.0%22%20y%3D%22171.5%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ep%280%29%3C%2Ftext%3E%3Ccircle%20cx%3D%22380.0%22%20cy%3D%22254.6%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22386.0%22%20y%3D%22248.6%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-16",
+      "case_id": "MATH 9.16",
+      "title": "Factor Theorem at a Named Point",
+      "context": "Let $p(x)=x^{3}-4x^{2}+x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$x-2$ is a factor of $p$.",
+        "$x+1$ is a factor of $p$.",
+        "$p(1)=4$.",
+        "$x-3$ is a factor of $p$.",
+        "$p$ has no real roots."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p(2)=8-16+2+6=0$$\n\nA root at $2$ gives the factor $x-2$, so the statement is True.",
+        "**B.** → True\n\n$$p(-1)=-1-4-1+6=0$$\n\nA root at $-1$ gives the factor $x+1$, so the statement is True.",
+        "**C.** → True\n\n$$p(1)=1-4+1+6=4$$\n\nThe value is $4$, so the statement is True.",
+        "**D.** → True\n\n$$p(3)=27-36+3+6=0$$\n\n$3$ is also a root, so the statement is True.",
+        "**E.** → False\n\nAlready $p(2)=p(-1)=p(3)=0$.\n\nThere are three real roots, so the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 16,
+      "solution_overview": "If $p(a)=0$ then $x-a$ is a factor. Here $p(2)=0$ and $p(-1)=0$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-17",
+      "case_id": "MATH 9.17",
+      "title": "Shift of a Cubic",
+      "context": "Let $p(x)=x^{3}$ and $q(x)=p(x-1)=(x-1)^{3}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $q$ is still $x^{3}$.",
+        "$q(1)=0$.",
+        "$q(0)=-1$.",
+        "The graphs of $p$ and $q$ are the same curve.",
+        "The leading coefficient of $q$ is $1$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$q(x)=x^{3}-3x^{2}+3x-1$$\n\nThe shift never lowers the highest power, so the statement is True.",
+        "**B.** → True\n\n$$q(1)=(1-1)^{3}=0$$\n\nThe root moves from $0$ to $1$, so the statement is True.",
+        "**C.** → True\n\n$$q(0)=(-1)^{3}=-1$$\n\nThe $y$-intercept is $-1$, so the statement is True.",
+        "**D.** → False\n\n$p(0)=0$ while $q(0)=-1$.\n\nA horizontal shift produces a different graph, so the statement is False.",
+        "**E.** → True\n\n$$(x-1)^{3}=x^{3}+\\cdots$$\n\nThe leading coefficient stays $1$, so the statement is True."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 17,
+      "solution_overview": "Replacing $x$ by $x-1$ slides the graph one unit to the right and does not change the highest power.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-18",
+      "case_id": "MATH 9.18",
+      "title": "Cooling Chamber: Cubic Temperature",
+      "context": "The temperature in $^{\\circ}\\mathrm{C}$ of a cooling chamber follows $T(t)=-0.01t^{3}+0.3t^{2}-t+8$ for $0\\le t\\le 20$ minutes. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$T(0)=8$.",
+        "$T(10)=18$.",
+        "The highest power of $t$ in $T$ is $t^{2}$.",
+        "As $t$ becomes large, $T(t)$ eventually decreases without bound.",
+        "$T(20)=8$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$T(0)=8$$\n\nThe chamber starts at $8^{\\circ}\\mathrm{C}$, so the statement is True.",
+        "**B.** → True\n\n$$T(10)=-10+30-10+8=18$$\n\nThe temperature is $18^{\\circ}\\mathrm{C}$, so the statement is True.",
+        "**C.** → False\n\nThe written formula contains $-0.01t^{3}$.\n\nThe model is cubic, so the statement is False.",
+        "**D.** → True\n\nThe leading coefficient $-0.01$ is negative, so $-0.01t^{3}\\to -\\infty$.\n\nA downward cubic cannot stay high forever, so the statement is True.",
+        "**E.** → False\n\n$$T(20)=-80+120-20+8=28$$\n\nThe value is $28$, not $8$, so the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 18,
+      "solution_overview": "Evaluate $T$ at the named times; the leading coefficient is negative.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied"
+    },
+    {
+      "id": "math-9-19",
+      "case_id": "MATH 9.19",
+      "title": "Meetings of a Cubic and a Line",
+      "context": "Let $p(x)=x^{3}-x$ and $\\ell(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The graphs meet at three real points.",
+        "One meeting is at the origin.",
+        "A cubic and a line can never meet more than twice.",
+        "$p(1)=\\ell(1)$.",
+        "The difference $p-\\ell$ has highest power $x^{3}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x^{3}-x-x=x^{3}-2x=x(x^{2}-2)=0$$\n\n$$x=0,\\ \\pm\\sqrt{2}$$\n\nThree distinct real solutions, so the statement is True.",
+        "**B.** → True\n\n$$p(0)=\\ell(0)=0$$\n\nBoth graphs pass through $(0,0)$, so the statement is True.",
+        "**C.** → False\n\nThe difference $p-\\ell$ can still have highest power $x^{3}$, so up to three real roots.\n\nThree meetings are possible and occur here, so the statement is False.",
+        "**D.** → False\n\n$$p(1)=0\\qquad \\ell(1)=1$$\n\nThe heights $0$ and $1$ differ, so the statement is False.",
+        "**E.** → True\n\n$$p(x)-\\ell(x)=x^{3}-2x$$\n\nThe $x^{3}$ term survives, so the statement is True."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 19,
+      "solution_overview": "Meetings solve $p-\\ell=0$. Here $p-\\ell=x^{3}-2x=x(x^{2}-2)$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-20",
+      "case_id": "MATH 9.20",
+      "title": "Revenue Cubic and a Break-Even Read",
+      "context": "A one-day stall models revenue by $R(n)=-\\frac{1}{10}n^{3}+3n^{2}+20n$ in euros, where $n$ is the number of items sold, $0\\le n\\le 25$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$R(0)=0$.",
+        "$R(10)=400$.",
+        "The leading coefficient of $R$ is positive.",
+        "$R(5)=R(0)+R(5)$ forces $R(5)=0$.",
+        "The highest power of $n$ in $R$ is $n^{3}$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$R(0)=0$$\n\nNo sales, no revenue, so the statement is True.",
+        "**B.** → True\n\n$$R(10)=-100+300+200=400$$\n\nThe revenue is $400$ euros, so the statement is True.",
+        "**C.** → False\n\n$$-\\frac{1}{10}<0$$\n\nThe cubic term opens downwards, so the statement is False.",
+        "**D.** → False\n\nThat identity would require $R(5)=R(5)+R(5)$, hence $R(5)=0$, but\n\n$$R(5)=-\\frac{125}{10}+75+100=162.5$$\n\nThe claimed implication is false because $R(5)\\neq 0$, so the statement is False.",
+        "**E.** → True\n\nThe model is written as a cubic, so the statement is True."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 20,
+      "solution_overview": "Evaluate $R$ at the named integers; the leading coefficient is negative.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied"
+    },
+    {
+      "id": "math-9-21",
+      "case_id": "MATH 9.21",
+      "title": "Even Quartic from a Square",
+      "context": "Let $p(x)=(x^{2}-3)^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(x)=x^{4}-6x^{2}+8$.",
+        "$p$ is even.",
+        "The highest power of $x$ in $p$ is $x^{2}$.",
+        "$p(\\sqrt{3})=-1$.",
+        "$p$ has no real roots."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$(x^{2}-3)^{2}-1=x^{4}-6x^{2}+9-1=x^{4}-6x^{2}+8$$\n\nThe expanded form matches, so the statement is True.",
+        "**B.** → True\n\nOnly even powers appear.\n\n$p(-x)=p(x)$, so the statement is True.",
+        "**C.** → False\n\nSquaring $x^{2}$ produces $x^{4}$.\n\nThe highest power is $x^{4}$, so the statement is False.",
+        "**D.** → True\n\n$$p(\\sqrt{3})=(3-3)^{2}-1=-1$$\n\nThe inner square vanishes, so the statement is True.",
+        "**E.** → False\n\n$$x^{4}-6x^{2}+8=(x^{2}-2)(x^{2}-4)$$\n\nThe roots $\\pm\\sqrt{2}$ and $\\pm 2$ are real, so the statement is False."
+      ],
+      "difficulty_level": "2/5",
+      "sort_order": 21,
+      "solution_overview": "Expanding gives $p(x)=x^{4}-6x^{2}+8$. Only even powers appear.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20%28x%C2%B2%20%E2%88%92%203%29%C2%B2%20%E2%88%92%201%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22250.9%22%20x2%3D%22542%22%20y2%3D%22250.9%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-3.2%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.6%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.6%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-7.3%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E14.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E36.0%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E57.7%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C59.4%2058.0%2C68.5%2060.0%2C77.2%2062.1%2C85.7%2064.1%2C93.9%2066.1%2C101.9%2068.2%2C109.5%2070.2%2C116.9%2072.2%2C124.1%2074.2%2C131.0%2076.2%2C137.6%2078.3%2C144.0%2080.3%2C150.2%2082.3%2C156.2%2084.4%2C161.9%2086.4%2C167.4%2088.4%2C172.6%2090.4%2C177.7%2092.4%2C182.6%2094.5%2C187.2%2096.5%2C191.7%2098.5%2C195.9%20100.6%2C200.0%20102.6%2C203.9%20104.6%2C207.6%20106.6%2C211.1%20108.7%2C214.4%20110.7%2C217.6%20112.7%2C220.6%20114.7%2C223.5%20116.7%2C226.2%20118.8%2C228.8%20120.8%2C231.2%20122.8%2C233.4%20124.8%2C235.6%20126.9%2C237.6%20128.9%2C239.4%20130.9%2C241.2%20133.0%2C242.8%20135.0%2C244.3%20137.0%2C245.6%20139.0%2C246.9%20141.1%2C248.0%20143.1%2C249.1%20145.1%2C250.0%20147.1%2C250.9%20149.2%2C251.6%20151.2%2C252.3%20153.2%2C252.8%20155.2%2C253.3%20157.2%2C253.7%20159.3%2C254.0%20161.3%2C254.3%20163.3%2C254.4%20165.4%2C254.5%20167.4%2C254.6%20169.4%2C254.6%20171.4%2C254.5%20173.5%2C254.3%20175.5%2C254.1%20177.5%2C253.9%20179.5%2C253.6%20181.5%2C253.2%20183.6%2C252.8%20185.6%2C252.4%20187.6%2C251.9%20189.7%2C251.4%20191.7%2C250.8%20193.7%2C250.3%20195.7%2C249.7%20197.7%2C249.0%20199.8%2C248.4%20201.8%2C247.7%20203.8%2C247.0%20205.8%2C246.3%20207.9%2C245.5%20209.9%2C244.8%20211.9%2C244.0%20214.0%2C243.2%20216.0%2C242.5%20218.0%2C241.7%20220.0%2C240.9%20222.1%2C240.1%20224.1%2C239.3%20226.1%2C238.5%20228.1%2C237.7%20230.2%2C236.9%20232.2%2C236.1%20234.2%2C235.4%20236.2%2C234.6%20238.2%2C233.8%20240.3%2C233.1%20242.3%2C232.4%20244.3%2C231.7%20246.3%2C231.0%20248.4%2C230.3%20250.4%2C229.6%20252.4%2C228.9%20254.5%2C228.3%20256.5%2C227.7%20258.5%2C227.1%20260.5%2C226.6%20262.5%2C226.0%20264.6%2C225.5%20266.6%2C225.0%20268.6%2C224.6%20270.6%2C224.1%20272.7%2C223.7%20274.7%2C223.3%20276.7%2C223.0%20278.8%2C222.6%20280.8%2C222.3%20282.8%2C222.1%20284.8%2C221.8%20286.9%2C221.6%20288.9%2C221.5%20290.9%2C221.3%20292.9%2C221.2%20295.0%2C221.1%20297.0%2C221.1%20299.0%2C221.1%20301.0%2C221.1%20303.0%2C221.1%20305.1%2C221.2%20307.1%2C221.3%20309.1%2C221.5%20311.1%2C221.6%20313.2%2C221.8%20315.2%2C222.1%20317.2%2C222.3%20319.2%2C222.6%20321.3%2C223.0%20323.3%2C223.3%20325.3%2C223.7%20327.3%2C224.1%20329.4%2C224.6%20331.4%2C225.0%20333.4%2C225.5%20335.4%2C226.0%20337.5%2C226.6%20339.5%2C227.1%20341.5%2C227.7%20343.6%2C228.3%20345.6%2C228.9%20347.6%2C229.6%20349.6%2C230.3%20351.6%2C231.0%20353.7%2C231.7%20355.7%2C232.4%20357.7%2C233.1%20359.8%2C233.8%20361.8%2C234.6%20363.8%2C235.4%20365.8%2C236.1%20367.8%2C236.9%20369.9%2C237.7%20371.9%2C238.5%20373.9%2C239.3%20375.9%2C240.1%20378.0%2C240.9%20380.0%2C241.7%20382.0%2C242.5%20384.0%2C243.2%20386.1%2C244.0%20388.1%2C244.8%20390.1%2C245.5%20392.1%2C246.3%20394.2%2C247.0%20396.2%2C247.7%20398.2%2C248.4%20400.2%2C249.0%20402.3%2C249.7%20404.3%2C250.3%20406.3%2C250.8%20408.4%2C251.4%20410.4%2C251.9%20412.4%2C252.4%20414.4%2C252.8%20416.4%2C253.2%20418.5%2C253.6%20420.5%2C253.9%20422.5%2C254.1%20424.6%2C254.3%20426.6%2C254.5%20428.6%2C254.6%20430.6%2C254.6%20432.6%2C254.5%20434.7%2C254.4%20436.7%2C254.3%20438.7%2C254.0%20440.8%2C253.7%20442.8%2C253.3%20444.8%2C252.8%20446.8%2C252.3%20448.9%2C251.6%20450.9%2C250.9%20452.9%2C250.0%20454.9%2C249.1%20456.9%2C248.0%20459.0%2C246.9%20461.0%2C245.6%20463.0%2C244.3%20465.1%2C242.8%20467.1%2C241.2%20469.1%2C239.4%20471.1%2C237.6%20473.2%2C235.6%20475.2%2C233.4%20477.2%2C231.2%20479.2%2C228.8%20481.2%2C226.2%20483.3%2C223.5%20485.3%2C220.6%20487.3%2C217.6%20489.4%2C214.4%20491.4%2C211.1%20493.4%2C207.6%20495.4%2C203.9%20497.4%2C200.0%20499.5%2C195.9%20501.5%2C191.7%20503.5%2C187.2%20505.6%2C182.6%20507.6%2C177.7%20509.6%2C172.6%20511.6%2C167.4%20513.7%2C161.9%20515.7%2C156.2%20517.7%2C150.2%20519.7%2C144.0%20521.8%2C137.6%20523.8%2C131.0%20525.8%2C124.1%20527.8%2C116.9%20529.8%2C109.5%20531.9%2C101.9%20533.9%2C93.9%20535.9%2C85.7%20538.0%2C77.2%20540.0%2C68.5%20542.0%2C59.4%22%2F%3E%0A%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-22",
+      "case_id": "MATH 9.22",
+      "title": "Delivery Van: Cubic Speed Against a Short Table",
+      "context": "A delivery van leaves the depot with modelled speed $$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$ in m/s. A second van is timed from the depot; its distances are in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The first van is decelerating at $t=40$.",
+        "The average speed of the second van over the $40$ s is $11$ m/s.",
+        "That whole-run average exceeds $45$ km/h.",
+        "The highest interval speed of the second van is on $[0,8]$.",
+        "The speed $v$ of the first van is a cubic polynomial in $t$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$a(t)=v'(t)=0.0012t^{2}-0.072t+0.9$$\n\n$$a(40)=0.0012\\cdot 1600-0.072\\cdot 40+0.9=-0.06$$\n\nNegative acceleration means deceleration, so the statement is True.",
+        "**B.** → True\n\n$$\\frac{440}{40}=11$$\n\nThe whole-run average is $11$ m/s, so the statement is True.",
+        "**C.** → False\n\n$$11\\cdot 3.6=39.6\\ \\mathrm{km/h}$$\n\n$39.6$ is less than $45$, so the statement is False.",
+        "**D.** → False\n\n$$\\frac{48}{8}=6,\\quad \\frac{80}{8}=10,\\quad \\frac{112}{8}=14,\\quad \\frac{112}{8}=14,\\quad \\frac{88}{8}=11$$\n\nThe peak interval speed is $14$ m/s, later than the first block, so the statement is False.",
+        "**E.** → True\n\nThe written formula has highest power $t^{3}$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 22,
+      "solution_overview": "Differentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied",
+      "tables_markdown": "| Time $t$ in seconds | $0$ | $8$ | $16$ | $24$ | $32$ | $40$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $48$ | $128$ | $240$ | $352$ | $440$ |"
+    },
+    {
+      "id": "math-9-23",
+      "case_id": "MATH 9.23",
+      "title": "Graph of a Cubic with Two Turns",
+      "context": "The figure shows the graph of a cubic $p$ with leading coefficient $1$. The curve crosses the $x$-axis at $-1$, $1$ and $2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(x)=(x+1)(x-1)(x-2)$.",
+        "$p(0)=2$.",
+        "As $x\\to +\\infty$, $p(x)\\to -\\infty$.",
+        "$p$ has a stationary point between $1$ and $2$.",
+        "$x=0$ is a root of $p$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA monic cubic is determined by its three roots as that product of factors.\n\nThose are the three crossings, so the statement is True.",
+        "**B.** → True\n\n$$p(0)=(1)(-1)(-2)=2$$\n\nThe $y$-intercept is $2$, so the statement is True.",
+        "**C.** → False\n\nThe leading coefficient is $+1$.\n\nThe graph rises on the right, so the statement is False.",
+        "**D.** → True\n\nBetween two consecutive roots a continuous cubic that rises from the axis and returns to it must turn once.\n\n$$p'(x)=3x^{2}-4x-1$$\n\nOne root of $p'$ lies in $(1,2)$ because $p'(1)=-2<0$ and $p'(2)=3>0$.\n\nA turning point sits in that interval, so the statement is True.",
+        "**E.** → False\n\n$$p(0)=2\\neq 0$$\n\nThe graph misses the origin, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 23,
+      "solution_overview": "$p(x)=(x+1)(x-1)(x-2)=x^{3}-2x^{2}-x+2$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "graph",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EA%20monic%20cubic%20with%20roots%20%E2%88%921%2C%201%2C%202%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22135.8%22%20x2%3D%22542%22%20y2%3D%22135.8%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22246.2%22%20y1%3D%2236%22%20x2%3D%22246.2%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.8%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-0.7%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.5%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.6%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.8%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-10.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E7.2%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C254.6%2058.0%2C250.4%2060.0%2C246.2%2062.1%2C242.1%2064.1%2C238.1%2066.1%2C234.2%2068.2%2C230.4%2070.2%2C226.6%2072.2%2C222.9%2074.2%2C219.3%2076.2%2C215.7%2078.3%2C212.2%2080.3%2C208.8%2082.3%2C205.4%2084.3%2C202.1%2086.4%2C198.9%2088.4%2C195.8%2090.4%2C192.7%2092.4%2C189.6%2094.5%2C186.7%2096.5%2C183.8%2098.5%2C181.0%20100.5%2C178.2%20102.6%2C175.5%20104.6%2C172.9%20106.6%2C170.3%20108.7%2C167.8%20110.7%2C165.3%20112.7%2C162.9%20114.7%2C160.6%20116.8%2C158.3%20118.8%2C156.1%20120.8%2C153.9%20122.8%2C151.8%20124.8%2C149.8%20126.9%2C147.8%20128.9%2C145.9%20130.9%2C144.0%20132.9%2C142.2%20135.0%2C140.4%20137.0%2C138.7%20139.0%2C137.0%20141.1%2C135.4%20143.1%2C133.8%20145.1%2C132.3%20147.1%2C130.8%20149.2%2C129.4%20151.2%2C128.0%20153.2%2C126.7%20155.2%2C125.4%20157.2%2C124.2%20159.3%2C123.0%20161.3%2C121.9%20163.3%2C120.8%20165.4%2C119.8%20167.4%2C118.8%20169.4%2C117.8%20171.4%2C116.9%20173.4%2C116.0%20175.5%2C115.2%20177.5%2C114.4%20179.5%2C113.7%20181.6%2C113.0%20183.6%2C112.3%20185.6%2C111.7%20187.6%2C111.1%20189.7%2C110.5%20191.7%2C110.0%20193.7%2C109.5%20195.7%2C109.1%20197.8%2C108.7%20199.8%2C108.3%20201.8%2C108.0%20203.8%2C107.7%20205.8%2C107.4%20207.9%2C107.1%20209.9%2C106.9%20211.9%2C106.8%20214.0%2C106.6%20216.0%2C106.5%20218.0%2C106.4%20220.0%2C106.3%20222.1%2C106.3%20224.1%2C106.3%20226.1%2C106.3%20228.1%2C106.4%20230.2%2C106.4%20232.2%2C106.5%20234.2%2C106.7%20236.2%2C106.8%20238.2%2C107.0%20240.3%2C107.2%20242.3%2C107.4%20244.3%2C107.6%20246.3%2C107.9%20248.4%2C108.2%20250.4%2C108.5%20252.4%2C108.8%20254.4%2C109.1%20256.5%2C109.5%20258.5%2C109.9%20260.5%2C110.3%20262.5%2C110.7%20264.6%2C111.1%20266.6%2C111.5%20268.6%2C112.0%20270.6%2C112.4%20272.7%2C112.9%20274.7%2C113.4%20276.7%2C113.9%20278.8%2C114.4%20280.8%2C114.9%20282.8%2C115.5%20284.8%2C116.0%20286.9%2C116.6%20288.9%2C117.2%20290.9%2C117.7%20292.9%2C118.3%20294.9%2C118.9%20297.0%2C119.5%20299.0%2C120.1%20301.0%2C120.7%20303.0%2C121.3%20305.1%2C121.9%20307.1%2C122.5%20309.1%2C123.1%20311.1%2C123.8%20313.2%2C124.4%20315.2%2C125.0%20317.2%2C125.6%20319.3%2C126.3%20321.3%2C126.9%20323.3%2C127.5%20325.3%2C128.1%20327.4%2C128.7%20329.4%2C129.4%20331.4%2C130.0%20333.4%2C130.6%20335.5%2C131.2%20337.5%2C131.8%20339.5%2C132.4%20341.5%2C132.9%20343.5%2C133.5%20345.6%2C134.1%20347.6%2C134.6%20349.6%2C135.2%20351.6%2C135.7%20353.7%2C136.3%20355.7%2C136.8%20357.7%2C137.3%20359.8%2C137.8%20361.8%2C138.3%20363.8%2C138.8%20365.8%2C139.2%20367.9%2C139.7%20369.9%2C140.1%20371.9%2C140.5%20373.9%2C140.9%20376.0%2C141.3%20378.0%2C141.6%20380.0%2C142.0%20382.0%2C142.3%20384.0%2C142.6%20386.1%2C142.9%20388.1%2C143.2%20390.1%2C143.4%20392.1%2C143.6%20394.2%2C143.8%20396.2%2C144.0%20398.2%2C144.2%20400.2%2C144.3%20402.3%2C144.4%20404.3%2C144.5%20406.3%2C144.6%20408.4%2C144.6%20410.4%2C144.6%20412.4%2C144.6%20414.4%2C144.5%20416.4%2C144.4%20418.5%2C144.3%20420.5%2C144.2%20422.5%2C144.0%20424.6%2C143.8%20426.6%2C143.6%20428.6%2C143.3%20430.6%2C143.1%20432.6%2C142.7%20434.7%2C142.4%20436.7%2C142.0%20438.7%2C141.5%20440.8%2C141.1%20442.8%2C140.6%20444.8%2C140.0%20446.8%2C139.5%20448.9%2C138.8%20450.9%2C138.2%20452.9%2C137.5%20454.9%2C136.8%20457.0%2C136.0%20459.0%2C135.2%20461.0%2C134.3%20463.0%2C133.4%20465.0%2C132.5%20467.1%2C131.5%20469.1%2C130.5%20471.1%2C129.4%20473.1%2C128.3%20475.2%2C127.1%20477.2%2C125.9%20479.2%2C124.7%20481.2%2C123.4%20483.3%2C122.0%20485.3%2C120.6%20487.3%2C119.2%20489.4%2C117.7%20491.4%2C116.1%20493.4%2C114.5%20495.4%2C112.9%20497.4%2C111.2%20499.5%2C109.4%20501.5%2C107.6%20503.5%2C105.8%20505.6%2C103.9%20507.6%2C101.9%20509.6%2C99.9%20511.6%2C97.8%20513.6%2C95.6%20515.7%2C93.5%20517.7%2C91.2%20519.7%2C88.9%20521.8%2C86.5%20523.8%2C84.1%20525.8%2C81.6%20527.8%2C79.0%20529.8%2C76.4%20531.9%2C73.8%20533.9%2C71.0%20535.9%2C68.2%20538.0%2C65.3%20540.0%2C62.4%20542.0%2C59.4%22%2F%3E%0A%3Ccircle%20cx%3D%22140.5%22%20cy%3D%22135.8%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22146.5%22%20y%3D%22129.8%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%E2%88%921%3C%2Ftext%3E%3Ccircle%20cx%3D%22351.8%22%20cy%3D%22135.8%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22357.8%22%20y%3D%22129.8%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%3Ccircle%20cx%3D%22457.5%22%20cy%3D%22135.8%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22463.5%22%20y%3D%22129.8%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-24",
+      "case_id": "MATH 9.24",
+      "title": "Production: Cubic Cost and a Piece Table",
+      "context": "Unit cost in euros is modelled by $C(q)=0.02q^{3}-0.6q^{2}+8q+20$ for daily output $q$ in dozens. A second workshop records total cost in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$C(0)=20$.",
+        "$C(10)=40$.",
+        "The second workshop's average cost per dozen from $0$ to $20$ is $16$ euros.",
+        "The highest interval average cost of the table is on $[0,5]$.",
+        "The highest power of $q$ in $C$ is $q^{3}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$C(0)=20$$\n\nThe fixed cost is $20$ euros, so the statement is True.",
+        "**B.** → False\n\n$$C(10)=20-60+80+20=60$$\n\nThe model gives $60$, not $40$, so the statement is False.",
+        "**C.** → True\n\n$$\\frac{340-20}{20}=16$$\n\nThe whole-run average is $16$ €/dozen, so the statement is True.",
+        "**D.** → False\n\n$$\\frac{50}{5}=10,\\ \\frac{70}{5}=14,\\ \\frac{90}{5}=18,\\ \\frac{110}{5}=22$$\n\nThe last block at $22$ is the largest, so the statement is False.",
+        "**E.** → True\n\nThe written model is cubic, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 24,
+      "solution_overview": "Evaluate the cubic; interval average costs are $\\Delta C/\\Delta q$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied",
+      "tables_markdown": "| Dozens $q$ | $0$ | $5$ | $10$ | $15$ | $20$ |\n| --- | --- | --- | --- | --- | --- |\n| Total cost (€) | $20$ | $70$ | $140$ | $230$ | $340$ |"
+    },
+    {
+      "id": "math-9-25",
+      "case_id": "MATH 9.25",
+      "title": "How Many Real Roots Can a Cubic Have?",
+      "context": "Let $p$ be any cubic polynomial with real coefficients. No concrete coefficients are given. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "A real cubic always has at least one real root.",
+        "A real cubic can have four distinct real roots.",
+        "If a cubic has three distinct real roots, it factors into three real linear factors.",
+        "Changing the constant term can change the number of real roots.",
+        "Every cubic is an odd function."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAs $x\\to\\pm\\infty$ a cubic tends to opposite infinities, so the intermediate-value theorem forces a crossing of the $x$-axis.\n\nAt least one real root is guaranteed, so the statement is True.",
+        "**B.** → False\n\nA non-zero cubic equation has at most three roots, counting multiplicity.\n\nFour distinct roots would force the cubic to be identically zero, so the statement is False.",
+        "**C.** → True\n\nEach real root supplies a linear factor, and a cubic is a product of three linear factors over $\\mathbb{C}$; here all three are real.\n\nThe factorisation is entirely real, so the statement is True.",
+        "**D.** → True\n\nA vertical shift of $x^{3}-x$ turns three crossings into one.\n\n$$x^{3}-x+2=0\\ \\text{has only one real root}$$\n\nThe constant term does affect the count, so the statement is True.",
+        "**E.** → False\n\n$x^{3}+1$ satisfies $p(-x)\\neq -p(x)$.\n\nA non-zero constant term already destroys oddness, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 25,
+      "solution_overview": "A cubic always has at least one real root; it cannot have four.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-26",
+      "case_id": "MATH 9.26",
+      "title": "Leading Coefficient and the Far Right",
+      "context": "Let $p(x)=a_n x^{n}+\\cdots+a_0$ with $n\\ge 1$ and $a_n\\neq 0$. No further numbers are given. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $n$ is odd and $a_n>0$, then $p(x)\\to +\\infty$ as $x\\to +\\infty$.",
+        "If $n$ is even and $a_n>0$, then $p(x)\\to -\\infty$ as $x\\to -\\infty$.",
+        "The value $p(0)$ equals the constant term $a_0$.",
+        "The highest power of $x$ is $x^{n}$.",
+        "If $n$ is odd, then $p$ is necessarily an odd function."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe leading term dominates, and a positive times a large positive power stays positive.\n\nThe graph disappears upwards on the right, so the statement is True.",
+        "**B.** → False\n\nAn even power is positive on both sides, so a positive leading coefficient sends both ends up.\n\nBoth ends tend to $+\\infty$, so the statement is False.",
+        "**C.** → True\n\n$$p(0)=a_0$$\n\nEvery other term contains $x$, so the statement is True.",
+        "**D.** → True\n\nThat is the definition of $n$, so the statement is True.",
+        "**E.** → False\n\n$x^{3}+x^{2}$ has odd degree but is not odd as a function.\n\nOdd degree is not the same as an odd function, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 26,
+      "solution_overview": "End behaviour is read from $n$ and the sign of $a_n$ alone.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-27",
+      "case_id": "MATH 9.27",
+      "title": "Nested Polynomials Without Cancelling the Top Power",
+      "context": "Let $p(x)=x^{2}+1$ and $q(x)=x^{3}-x$. Write $r=q\\circ p$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $r$ is $x^{6}$.",
+        "$r(0)=0$.",
+        "$r$ is a cubic function.",
+        "The leading coefficient of $r$ is $1$.",
+        "$r(x)=q(x)\\cdot p(x)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCubing $x^{2}$ produces $x^{6}$, and nothing cancels that term.\n\n$$(x^{2})^{3}=x^{6}$$\n\nThe highest power is $x^{6}$, so the statement is True.",
+        "**B.** → True\n\n$$p(0)=1\\qquad q(1)=1-1=0$$\n\nThe composition vanishes at $0$, so the statement is True.",
+        "**C.** → False\n\nThe highest power is $x^{6}$.\n\n$r$ is of degree $6$, so the statement is False.",
+        "**D.** → True\n\n$$q(u)=u^{3}-u\\implies r(x)=(x^{2})^{3}+\\cdots=x^{6}+\\cdots$$\n\nThe leading coefficient stays $1$, so the statement is True.",
+        "**E.** → False\n\nComposition substitutes $p(x)$ into $q$; it is not the pointwise product.\n\nThe two constructions are different, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 27,
+      "solution_overview": "$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$. The highest power is $x^{6}$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-28",
+      "case_id": "MATH 9.28",
+      "title": "Finite Differences of a Quartic Sample",
+      "context": "A polynomial $p$ is sampled below. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(0)=1$.",
+        "The first differences are constant.",
+        "$p(2)=17$.",
+        "A linear model $mx+c$ can fit every listed point.",
+        "The values are consistent with $p(x)=x^{4}+1$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe first column lists $1$, so the statement is True.",
+        "**B.** → False\n\n$$2-1=1,\\ 17-2=15,\\ 82-17=65$$\n\nThe steps grow quickly, so the statement is False.",
+        "**C.** → True\n\nThe table lists $17$, so the statement is True.",
+        "**D.** → False\n\nA line cannot reproduce first differences $1,15,65,\\ldots$.\n\nThe table is far from linear, so the statement is False.",
+        "**E.** → True\n\n$$2^{4}+1=17\\qquad 3^{4}+1=82\\qquad 4^{4}+1=257$$\n\nEach listed height matches $x^{4}+1$, so the statement is True."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 28,
+      "solution_overview": "The values match $p(x)=x^{4}+1$. Fourth differences of a quartic are constant.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "table",
+      "tables_markdown": "| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| $p(x)$ | $1$ | $2$ | $17$ | $82$ | $257$ | $626$ |"
+    },
+    {
+      "id": "math-9-29",
+      "case_id": "MATH 9.29",
+      "title": "Canal Lock: Height as a Cubic in Time",
+      "context": "The water height in metres is $h(t)=0.002t^{3}-0.09t^{2}+t$ for $0\\le t\\le 30$ minutes after opening a valve. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$h(0)=0$.",
+        "$h(10)=3$.",
+        "The instantaneous rate $h'(10)$ is positive.",
+        "The highest power of $t$ in $h$ is $t^{3}$.",
+        "$h(30)=h(0)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$h(0)=0$$\n\nThe lock starts at the reference height, so the statement is True.",
+        "**B.** → True\n\n$$h(10)=2-9+10=3$$\n\nThe height is $3$ m, so the statement is True.",
+        "**C.** → False\n\n$$h'(t)=0.006t^{2}-0.18t+1$$\n\n$$h'(10)=0.6-1.8+1=-0.2$$\n\nThe rate is negative at $t=10$, so the statement is False.",
+        "**D.** → True\n\nThe model is cubic, so the statement is True.",
+        "**E.** → False\n\n$$h(30)=54-81+30=3$$\n\nThe height is $3$ m, not $0$, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 29,
+      "solution_overview": "Evaluate $h$ and $h'=v$ at the named times.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied"
+    },
+    {
+      "id": "math-9-30",
+      "case_id": "MATH 9.30",
+      "title": "Rebuild a Monic Cubic from Three Roots",
+      "context": "A monic cubic $p$ has roots $-2$, $0$ and $4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(x)=x^{3}-2x^{2}-8x$.",
+        "$p(1)=-9$.",
+        "The constant term of $p$ is $0$.",
+        "The sum of the roots is $-2$.",
+        "$p$ is even."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x(x+2)(x-4)=x(x^{2}-2x-8)=x^{3}-2x^{2}-8x$$\n\nThat is the unique monic cubic with those roots, so the statement is True.",
+        "**B.** → True\n\n$$p(1)=1-2-8=-9$$\n\nThe value is $-9$, so the statement is True.",
+        "**C.** → True\n\nOne root is $0$, so $p(0)=0$.\n\nThe graph passes through the origin, so the statement is True.",
+        "**D.** → False\n\n$$-2+0+4=2$$\n\nThe sum is $2$, which also equals the middle-coefficient rule $2$, so the statement is False.",
+        "**E.** → False\n\nThe expansion contains $x^{3}$ and $x$, which are odd powers.\n\n$p$ is not even, so the statement is False."
+      ],
+      "difficulty_level": "3/5",
+      "sort_order": 30,
+      "solution_overview": "$p(x)=x(x+2)(x-4)=x^{3}-2x^{2}-8x$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "hybrid"
+    },
+    {
+      "id": "math-9-31",
+      "case_id": "MATH 9.31",
+      "title": "Degree of a Sum, Symbolically",
+      "context": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $p+q$ is $x^{n}$.",
+        "The highest power of $x$ in $p-q$ is $x^{n}$.",
+        "The highest power of $x$ in $p\\cdot q$ is $x^{n+m}$.",
+        "The highest power of $x$ in $p+q$ is always $x^{n+m}$.",
+        "If the two leading coefficients are opposite, the highest power of $p+q$ must drop below $n$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe leading term of $p$ has nothing of the same power in $q$ to cancel it.\n\nThe sum keeps highest power $x^{n}$, so the statement is True.",
+        "**B.** → True\n\nSubtracting still leaves the leading term of $p$ untouched.\n\nThe difference keeps highest power $x^{n}$, so the statement is True.",
+        "**C.** → True\n\nLeading terms multiply and the exponents add.\n\nThe product has highest power $x^{n+m}$, so the statement is True.",
+        "**D.** → False\n\nAdding never adds the exponents; that is the product rule.\n\nThe sum has highest power $x^{n}$, not $x^{n+m}$, so the statement is False.",
+        "**E.** → False\n\nThe leading powers are different, so there is nothing of power $n$ in $q$ to cancel.\n\nCancellation of the top term requires equal highest powers, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 31,
+      "solution_overview": "When the highest powers differ, they cannot cancel in the sum.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-32",
+      "case_id": "MATH 9.32",
+      "title": "When Leading Terms Cancel",
+      "context": "Let $p$ and $q$ both have highest power $x^{n}$ and leading coefficients $a$ and $b$, with $a+b=0$ and $a\\neq 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $p+q$ is strictly less than $n$.",
+        "The highest power of $x$ in $p-q$ is still $x^{n}$.",
+        "The highest power of $x$ in $p\\cdot q$ is $x^{2n}$.",
+        "$p+q$ must be the zero polynomial.",
+        "The graphs of $p$ and $-q$ have the same end behaviour on the far right."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe two leading terms add to $(a+b)x^{n}=0$.\n\nThe top power disappears, so the statement is True.",
+        "**B.** → True\n\n$$a-b=a-(-a)=2a\\neq 0$$\n\nThe difference doubles the leading term instead of cancelling it, so the statement is True.",
+        "**C.** → True\n\nExponents add under multiplication, so the statement is True.",
+        "**D.** → False\n\nOnly the leading terms are forced to cancel; lower terms may survive.\n\n$$(x^{2}+1)+(-x^{2}+x)=x+1$$\n\nThe sum can be a non-zero lower-power polynomial, so the statement is False.",
+        "**E.** → True\n\n$-q$ has leading coefficient $-b=a$, the same as $p$, and the same highest power.\n\nThe two leading terms agree, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 32,
+      "solution_overview": "Equal highest powers with opposite leading coefficients cancel in the sum.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-33",
+      "case_id": "MATH 9.33",
+      "title": "Even and Odd Parts of a Polynomial",
+      "context": "Let $p$ be any polynomial. Write $p_{\\mathrm{e}}(x)=\\frac{p(x)+p(-x)}{2}$ and $p_{\\mathrm{o}}(x)=\\frac{p(x)-p(-x)}{2}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p_{\\mathrm{e}}$ is always an even function.",
+        "$p_{\\mathrm{o}}$ is always an odd function.",
+        "$p=p_{\\mathrm{e}}+p_{\\mathrm{o}}$.",
+        "If $p$ contains only even powers, then $p_{\\mathrm{o}}$ is the zero polynomial.",
+        "$p_{\\mathrm{e}}$ is always a constant polynomial."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p_{\\mathrm{e}}(-x)=\\frac{p(-x)+p(x)}{2}=p_{\\mathrm{e}}(x)$$\n\nThat is evenness, so the statement is True.",
+        "**B.** → True\n\n$$p_{\\mathrm{o}}(-x)=\\frac{p(-x)-p(x)}{2}=-p_{\\mathrm{o}}(x)$$\n\nThat is oddness, so the statement is True.",
+        "**C.** → True\n\nAdding the two displayed formulae recovers $p(x)$.\n\nThe split reconstructs $p$, so the statement is True.",
+        "**D.** → True\n\nThen $p(-x)=p(x)$, so the numerator of $p_{\\mathrm{o}}$ vanishes.\n\nThe odd part is identically zero, so the statement is True.",
+        "**E.** → False\n\nFor $p(x)=x^{2}$ one has $p_{\\mathrm{e}}=p$, which is not constant.\n\nThe even part can have any even powers, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 33,
+      "solution_overview": "Every polynomial splits uniquely into an even part and an odd part.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-34",
+      "case_id": "MATH 9.34",
+      "title": "Composition Multiplies the Highest Powers",
+      "context": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n,m\\ge 1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest power of $x$ in $q(p(x))$ is $x^{nm}$.",
+        "The highest power of $x$ in $q(p(x))$ is $x^{n+m}$.",
+        "The highest power of $x$ in $p(q(x))$ is also $x^{nm}$.",
+        "$p\\circ q$ and $q\\circ p$ are always the same polynomial.",
+        "If $p$ is non-constant, then $q\\circ p$ cannot be a non-zero constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nIf $p$ behaves like $ax^{n}$ and $q$ like $b u^{m}$, then $q(p(x))$ behaves like $b a^{m} x^{nm}$.\n\nThe exponents multiply, so the statement is True.",
+        "**B.** → False\n\nAdding the exponents is the product rule $p\\cdot q$, not composition.\n\nComposition multiplies the highest powers, so the statement is False.",
+        "**C.** → True\n\nThe same count with the roles reversed still multiplies $n$ by $m$.\n\nBoth orders give highest power $x^{nm}$, so the statement is True.",
+        "**D.** → False\n\n$p(x)=x+1$, $q(x)=x^{2}$ give $x^{2}+1$ versus $(x+1)^{2}$.\n\nComposition does not commute, so the statement is False.",
+        "**E.** → True\n\nA non-constant polynomial takes infinitely many values, and a non-constant $q$ cannot crush all of them to one number.\n\nThe composition stays non-constant, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 34,
+      "solution_overview": "The highest power of $q\\circ p$ is $x^{nm}$, not $x^{n+m}$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-35",
+      "case_id": "MATH 9.35",
+      "title": "A Vertical Shift Cannot Create Extra Roots Beyond the Degree",
+      "context": "Let $p$ be a polynomial of highest power $x^{n}$ with $n\\ge 1$, and let $p_c(x)=p(x)+c$ for a real shift $c$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For every $c$, the highest power of $p_c$ is still $x^{n}$.",
+        "Some choice of $c$ can give $p_c$ more than $n$ distinct real roots.",
+        "There exists $c$ such that $p_c$ has at least one real root if $n$ is odd.",
+        "If $n$ is even and the leading coefficient is positive, some $c$ makes $p_c$ have no real roots.",
+        "The derivative $p_c'$ depends on $c$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAdding a constant never touches the leading term.\n\nThe highest power is unchanged, so the statement is True.",
+        "**B.** → False\n\nA non-zero polynomial of highest power $x^{n}$ has at most $n$ roots.\n\nA shift cannot create an $(n+1)$-st root, so the statement is False.",
+        "**C.** → True\n\nAn odd-highest-power polynomial already tends to opposite infinities, so it already has a real root; the same holds after any shift.\n\nEvery odd-degree real polynomial crosses the axis, so the statement is True.",
+        "**D.** → True\n\nThen $p$ is bounded below; choose $c$ larger than $-\\min p$.\n\nA large upward shift lifts the whole graph above the axis, so the statement is True.",
+        "**E.** → False\n\nA constant shift disappears upon differentiating.\n\n$p_c'=p'$ for every $c$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 35,
+      "solution_overview": "A vertical shift never raises the highest power, so the root count stays at most $n$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-36",
+      "case_id": "MATH 9.36",
+      "title": "Family $p_a(x)=x^{3}-3x+a$",
+      "context": "Let $p_a(x)=x^{3}-3x+a$ for a real parameter $a$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The stationary points of $p_a$ do not depend on $a$.",
+        "For $a=0$ there are three distinct real roots.",
+        "For every $a$ there are three distinct real roots.",
+        "There is a unique $a$ for which $x=1$ is a double root.",
+        "The leading coefficient of $p_a$ depends on $a$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p_a'(x)=3x^{2}-3=3(x-1)(x+1)$$\n\nThe shift $a$ never enters $p_a'$, so the statement is True.",
+        "**B.** → True\n\n$$x^{3}-3x=x(x-\\sqrt{3})(x+\\sqrt{3})$$\n\nThree distinct real roots, so the statement is True.",
+        "**C.** → False\n\nWhen $|a|>2$ the horizontal axis misses the local max/min, leaving only one real root.\n\n$$p_3(x)=x^{3}-3x+3=0\\ \\text{has one real root}$$\n\nA large shift kills two of the crossings, so the statement is False.",
+        "**D.** → True\n\nNeed $p_a(1)=0$ and $p_a'(1)=0$. The derivative already vanishes at $1$, so\n\n$$p_a(1)=a-2=0\\implies a=2$$\n\nThat single parameter makes the local minimum sit on the axis, so the statement is True.",
+        "**E.** → False\n\nThe leading term is $x^{3}$ for every $a$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 36,
+      "solution_overview": "$p_a'=3x^{2}-3$, critical values $p_a(-1)=a+2$ and $p_a(1)=a-2$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "parametric",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%C2%B3%20%E2%88%92%203x%20%20%28a%20%3D%200%29%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22157.0%22%20x2%3D%22542%22%20y2%3D%22157.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.4%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.2%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.2%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8.2%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C254.6%2058.0%2C250.4%2060.1%2C246.3%2062.1%2C242.3%2064.1%2C238.4%2066.1%2C234.6%2068.2%2C230.8%2070.2%2C227.2%2072.2%2C223.6%2074.2%2C220.1%2076.3%2C216.6%2078.3%2C213.3%2080.3%2C210.0%2082.3%2C206.8%2084.3%2C203.7%2086.4%2C200.6%2088.4%2C197.6%2090.4%2C194.7%2092.4%2C191.9%2094.5%2C189.1%2096.5%2C186.5%2098.5%2C183.8%20100.5%2C181.3%20102.6%2C178.8%20104.6%2C176.4%20106.6%2C174.1%20108.7%2C171.8%20110.7%2C169.6%20112.7%2C167.5%20114.7%2C165.4%20116.8%2C163.4%20118.8%2C161.4%20120.8%2C159.5%20122.8%2C157.7%20124.8%2C155.9%20126.9%2C154.2%20128.9%2C152.6%20130.9%2C151.0%20132.9%2C149.5%20135.0%2C148.0%20137.0%2C146.6%20139.0%2C145.3%20141.1%2C144.0%20143.1%2C142.7%20145.1%2C141.6%20147.1%2C140.4%20149.1%2C139.3%20151.2%2C138.3%20153.2%2C137.3%20155.2%2C136.4%20157.2%2C135.6%20159.3%2C134.7%20161.3%2C134.0%20163.3%2C133.2%20165.3%2C132.5%20167.4%2C131.9%20169.4%2C131.3%20171.4%2C130.8%20173.4%2C130.3%20175.5%2C129.8%20177.5%2C129.4%20179.5%2C129.1%20181.5%2C128.7%20183.6%2C128.4%20185.6%2C128.2%20187.6%2C128.0%20189.7%2C127.8%20191.7%2C127.7%20193.7%2C127.6%20195.7%2C127.6%20197.8%2C127.5%20199.8%2C127.6%20201.8%2C127.6%20203.8%2C127.7%20205.8%2C127.8%20207.9%2C128.0%20209.9%2C128.1%20211.9%2C128.4%20213.9%2C128.6%20216.0%2C128.9%20218.0%2C129.2%20220.0%2C129.5%20222.1%2C129.9%20224.1%2C130.3%20226.1%2C130.7%20228.1%2C131.1%20230.2%2C131.6%20232.2%2C132.1%20234.2%2C132.6%20236.2%2C133.1%20238.2%2C133.7%20240.3%2C134.2%20242.3%2C134.8%20244.3%2C135.5%20246.3%2C136.1%20248.4%2C136.7%20250.4%2C137.4%20252.4%2C138.1%20254.4%2C138.8%20256.5%2C139.5%20258.5%2C140.3%20260.5%2C141.0%20262.6%2C141.8%20264.6%2C142.6%20266.6%2C143.3%20268.6%2C144.1%20270.6%2C144.9%20272.7%2C145.8%20274.7%2C146.6%20276.7%2C147.4%20278.8%2C148.3%20280.8%2C149.1%20282.8%2C150.0%20284.8%2C150.9%20286.9%2C151.7%20288.9%2C152.6%20290.9%2C153.5%20292.9%2C154.4%20294.9%2C155.2%20297.0%2C156.1%20299.0%2C157.0%20301.0%2C157.9%20303.0%2C158.8%20305.1%2C159.6%20307.1%2C160.5%20309.1%2C161.4%20311.1%2C162.3%20313.2%2C163.1%20315.2%2C164.0%20317.2%2C164.9%20319.3%2C165.7%20321.3%2C166.6%20323.3%2C167.4%20325.3%2C168.2%20327.4%2C169.1%20329.4%2C169.9%20331.4%2C170.7%20333.4%2C171.4%20335.4%2C172.2%20337.5%2C173.0%20339.5%2C173.7%20341.5%2C174.5%20343.6%2C175.2%20345.6%2C175.9%20347.6%2C176.6%20349.6%2C177.3%20351.7%2C177.9%20353.7%2C178.5%20355.7%2C179.2%20357.7%2C179.8%20359.8%2C180.3%20361.8%2C180.9%20363.8%2C181.4%20365.8%2C181.9%20367.8%2C182.4%20369.9%2C182.9%20371.9%2C183.3%20373.9%2C183.7%20375.9%2C184.1%20378.0%2C184.5%20380.0%2C184.8%20382.0%2C185.1%20384.1%2C185.4%20386.1%2C185.6%20388.1%2C185.9%20390.1%2C186.0%20392.1%2C186.2%20394.2%2C186.3%20396.2%2C186.4%20398.2%2C186.4%20400.2%2C186.5%20402.3%2C186.4%20404.3%2C186.4%20406.3%2C186.3%20408.3%2C186.2%20410.4%2C186.0%20412.4%2C185.8%20414.4%2C185.6%20416.4%2C185.3%20418.5%2C184.9%20420.5%2C184.6%20422.5%2C184.2%20424.6%2C183.7%20426.6%2C183.2%20428.6%2C182.7%20430.6%2C182.1%20432.7%2C181.5%20434.7%2C180.8%20436.7%2C180.0%20438.7%2C179.3%20440.8%2C178.4%20442.8%2C177.6%20444.8%2C176.7%20446.8%2C175.7%20448.9%2C174.7%20450.9%2C173.6%20452.9%2C172.4%20454.9%2C171.3%20457.0%2C170.0%20459.0%2C168.7%20461.0%2C167.4%20463.0%2C166.0%20465.1%2C164.5%20467.1%2C163.0%20469.1%2C161.4%20471.1%2C159.8%20473.2%2C158.1%20475.2%2C156.3%20477.2%2C154.5%20479.2%2C152.6%20481.3%2C150.6%20483.3%2C148.6%20485.3%2C146.5%20487.3%2C144.4%20489.4%2C142.2%20491.4%2C139.9%20493.4%2C137.6%20495.4%2C135.2%20497.4%2C132.7%20499.5%2C130.2%20501.5%2C127.5%20503.5%2C124.9%20505.5%2C122.1%20507.6%2C119.3%20509.6%2C116.4%20511.6%2C113.4%20513.6%2C110.3%20515.7%2C107.2%20517.7%2C104.0%20519.7%2C100.7%20521.8%2C97.4%20523.8%2C93.9%20525.8%2C90.4%20527.8%2C86.8%20529.9%2C83.2%20531.9%2C79.4%20533.9%2C75.6%20535.9%2C71.7%20538.0%2C67.7%20540.0%2C63.6%20542.0%2C59.4%22%2F%3E%0A%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-37",
+      "case_id": "MATH 9.37",
+      "title": "Bicycle Speed: Another Cubic and a Table",
+      "context": "A rider's speed in m/s is $$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$ A second rider's distances from the start are tabulated. The second rider finishes $90$ s after the start at $900$ m. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The first rider is decelerating at $t=60$.",
+        "The second rider's average speed is $36$ km/h.",
+        "The highest interval speed of the second rider is on $[0,15]$.",
+        "The first rider's acceleration $a(t)$ is a quadratic polynomial.",
+        "The second rider's interval speeds have only one local maximum."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$a(t)=0.00003t^{2}-0.006t+0.24$$\n\n$$a(60)=0.108-0.36+0.24=-0.012$$\n\nThe acceleration is negative, so the statement is True.",
+        "**B.** → True\n\n$$\\frac{900}{90}=10\\ \\mathrm{m/s}=36\\ \\mathrm{km/h}$$\n\nThe conversion factor $3.6$ turns $10$ into $36$, so the statement is True.",
+        "**C.** → False\n\n$$6,\\ 8,\\ 10,\\ 12,\\ 14,\\ 10\\ \\mathrm{m/s}$$\n\nThe peak is $14$ m/s on $[60,75]$, so the statement is False.",
+        "**D.** → True\n\nThe derivative of a cubic is quadratic, so the statement is True.",
+        "**E.** → True\n\nThe sequence $6,8,10,12,14,10$ rises then falls once.\n\nA single peak occurs at $14$, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 37,
+      "solution_overview": "Differentiate $v$; convert the second rider's $900/90$ into km/h.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied",
+      "tables_markdown": "| Time $t$ in seconds | $0$ | $15$ | $30$ | $45$ | $60$ | $75$ | $90$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Distance in metres | $0$ | $90$ | $210$ | $360$ | $540$ | $750$ | $900$ |"
+    },
+    {
+      "id": "math-9-38",
+      "case_id": "MATH 9.38",
+      "title": "Graph: Which Cubic Matches the Turns?",
+      "context": "The figure shows a cubic that turns at $x=-1$ and $x=1$, with $p(-1)=-2$ and $p(1)=2$. The leading coefficient is $-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(x)=-x^{3}+3x$.",
+        "$p$ is an odd function.",
+        "The local maximum value is $2$.",
+        "As $x\\to +\\infty$, $p(x)\\to -\\infty$.",
+        "$p(0)=3$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA cubic with leading coefficient $-1$ and stationary points at $\\pm 1$ has derivative $-3x^{2}+3$, which integrates to $-x^{3}+3x$ up to a constant; the figure crosses the origin, so the constant is $0$.\n\n$$p'(x)=-3x^{2}+3= -3(x-1)(x+1)$$\n\nThat is the unique such cubic through the origin, so the statement is True.",
+        "**B.** → True\n\n$$p(-x)=x^{3}-3x=-p(x)$$\n\nOnly odd powers appear, so the statement is True.",
+        "**C.** → True\n\nThe derivative $p'=-3x^{2}+3$ is positive on $(-1,1)$ and negative on $(1,\\infty)$, so the local maximum is at $x=1$.\n\n$$p(1)=-1+3=2$$\n\nThe local maximum value is $2$, so the statement is True.",
+        "**D.** → True\n\nThe leading coefficient is $-1$.\n\nThe graph falls on the right, so the statement is True.",
+        "**E.** → False\n\n$$p(0)=0$$\n\nThe graph crosses the origin, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 38,
+      "solution_overview": "$p(x)=-x^{3}+3x$. Then $p'= -3x^{2}+3$, so turns at $\\pm 1$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "graph",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20%E2%88%92x%C2%B3%20%2B%203x%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22157.0%22%20x2%3D%22542%22%20y2%3D%22157.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.2%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.1%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-5.0%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5.0%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C59.4%2058.0%2C64.5%2060.0%2C69.4%2062.1%2C74.2%2064.1%2C78.9%2066.1%2C83.6%2068.1%2C88.1%2070.2%2C92.5%2072.2%2C96.8%2074.2%2C101.0%2076.2%2C105.1%2078.3%2C109.1%2080.3%2C113.1%2082.3%2C116.9%2084.4%2C120.6%2086.4%2C124.3%2088.4%2C127.8%2090.4%2C131.2%2092.5%2C134.6%2094.5%2C137.9%2096.5%2C141.0%2098.5%2C144.1%20100.5%2C147.1%20102.6%2C150.0%20104.6%2C152.9%20106.6%2C155.6%20108.6%2C158.3%20110.7%2C160.8%20112.7%2C163.3%20114.7%2C165.7%20116.8%2C168.0%20118.8%2C170.3%20120.8%2C172.4%20122.8%2C174.5%20124.9%2C176.5%20126.9%2C178.5%20128.9%2C180.3%20130.9%2C182.1%20132.9%2C183.8%20135.0%2C185.5%20137.0%2C187.0%20139.0%2C188.5%20141.1%2C189.9%20143.1%2C191.3%20145.1%2C192.6%20147.1%2C193.8%20149.1%2C194.9%20151.2%2C196.0%20153.2%2C197.0%20155.2%2C198.0%20157.2%2C198.9%20159.3%2C199.7%20161.3%2C200.4%20163.3%2C201.2%20165.4%2C201.8%20167.4%2C202.4%20169.4%2C202.9%20171.4%2C203.4%20173.4%2C203.8%20175.5%2C204.2%20177.5%2C204.5%20179.5%2C204.7%20181.5%2C204.9%20183.6%2C205.1%20185.6%2C205.2%20187.6%2C205.2%20189.7%2C205.2%20191.7%2C205.2%20193.7%2C205.1%20195.7%2C204.9%20197.8%2C204.7%20199.8%2C204.5%20201.8%2C204.2%20203.8%2C203.9%20205.8%2C203.5%20207.9%2C203.1%20209.9%2C202.7%20211.9%2C202.2%20214.0%2C201.7%20216.0%2C201.1%20218.0%2C200.5%20220.0%2C199.9%20222.1%2C199.2%20224.1%2C198.5%20226.1%2C197.8%20228.1%2C197.0%20230.2%2C196.2%20232.2%2C195.4%20234.2%2C194.6%20236.2%2C193.7%20238.2%2C192.8%20240.3%2C191.8%20242.3%2C190.9%20244.3%2C189.9%20246.3%2C188.9%20248.4%2C187.8%20250.4%2C186.8%20252.4%2C185.7%20254.4%2C184.6%20256.5%2C183.5%20258.5%2C182.3%20260.5%2C181.2%20262.5%2C180.0%20264.6%2C178.8%20266.6%2C177.6%20268.6%2C176.4%20270.6%2C175.2%20272.7%2C173.9%20274.7%2C172.7%20276.7%2C171.4%20278.8%2C170.1%20280.8%2C168.8%20282.8%2C167.5%20284.8%2C166.2%20286.9%2C164.9%20288.9%2C163.6%20290.9%2C162.3%20292.9%2C161.0%20295.0%2C159.7%20297.0%2C158.3%20299.0%2C157.0%20301.0%2C155.7%20303.0%2C154.3%20305.1%2C153.0%20307.1%2C151.7%20309.1%2C150.4%20311.1%2C149.1%20313.2%2C147.8%20315.2%2C146.5%20317.2%2C145.2%20319.2%2C143.9%20321.3%2C142.6%20323.3%2C141.3%20325.3%2C140.1%20327.3%2C138.8%20329.4%2C137.6%20331.4%2C136.4%20333.4%2C135.2%20335.4%2C134.0%20337.5%2C132.8%20339.5%2C131.7%20341.5%2C130.5%20343.6%2C129.4%20345.6%2C128.3%20347.6%2C127.2%20349.6%2C126.2%20351.7%2C125.1%20353.7%2C124.1%20355.7%2C123.1%20357.7%2C122.2%20359.8%2C121.2%20361.8%2C120.3%20363.8%2C119.4%20365.8%2C118.6%20367.8%2C117.8%20369.9%2C117.0%20371.9%2C116.2%20373.9%2C115.5%20375.9%2C114.8%20378.0%2C114.1%20380.0%2C113.5%20382.0%2C112.9%20384.1%2C112.3%20386.1%2C111.8%20388.1%2C111.3%20390.1%2C110.9%20392.2%2C110.5%20394.2%2C110.1%20396.2%2C109.8%20398.2%2C109.5%20400.2%2C109.3%20402.3%2C109.1%20404.3%2C108.9%20406.3%2C108.8%20408.3%2C108.8%20410.4%2C108.8%20412.4%2C108.8%20414.4%2C108.9%20416.4%2C109.1%20418.5%2C109.3%20420.5%2C109.5%20422.5%2C109.8%20424.6%2C110.2%20426.6%2C110.6%20428.6%2C111.1%20430.6%2C111.6%20432.7%2C112.2%20434.7%2C112.8%20436.7%2C113.6%20438.7%2C114.3%20440.8%2C115.1%20442.8%2C116.0%20444.8%2C117.0%20446.8%2C118.0%20448.8%2C119.1%20450.9%2C120.2%20452.9%2C121.4%20454.9%2C122.7%20456.9%2C124.1%20459.0%2C125.5%20461.0%2C127.0%20463.0%2C128.5%20465.1%2C130.2%20467.1%2C131.9%20469.1%2C133.7%20471.1%2C135.5%20473.1%2C137.5%20475.2%2C139.5%20477.2%2C141.6%20479.2%2C143.7%20481.2%2C146.0%20483.3%2C148.3%20485.3%2C150.7%20487.3%2C153.2%20489.3%2C155.7%20491.4%2C158.4%20493.4%2C161.1%20495.4%2C164.0%20497.4%2C166.9%20499.5%2C169.9%20501.5%2C173.0%20503.5%2C176.1%20505.6%2C179.4%20507.6%2C182.8%20509.6%2C186.2%20511.6%2C189.7%20513.6%2C193.4%20515.7%2C197.1%20517.7%2C200.9%20519.7%2C204.9%20521.8%2C208.9%20523.8%2C213.0%20525.8%2C217.2%20527.8%2C221.5%20529.9%2C225.9%20531.9%2C230.4%20533.9%2C235.1%20535.9%2C239.8%20538.0%2C244.6%20540.0%2C249.5%20542.0%2C254.6%22%2F%3E%0A%3Ccircle%20cx%3D%22188.5%22%20cy%3D%22205.2%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22194.5%22%20y%3D%22199.2%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Emin%3C%2Ftext%3E%3Ccircle%20cx%3D%22409.5%22%20cy%3D%22108.8%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22415.5%22%20y%3D%22102.8%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Emax%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-39",
+      "case_id": "MATH 9.39",
+      "title": "Quartic End Behaviour Against a Cubic",
+      "context": "Let $p(x)=x^{4}-4x^{2}$ and $q(x)=-x^{3}+x$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "As $x\\to\\pm\\infty$, $p(x)\\to +\\infty$.",
+        "As $x\\to +\\infty$, $q(x)\\to +\\infty$.",
+        "$p$ is even.",
+        "The roots of $p$ are $0$, $2$ and $-2$.",
+        "$p$ and $q$ have the same highest power of $x$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nHighest power $x^{4}$ is even and the leading coefficient is $+1$.\n\nBoth ends of $p$ rise, so the statement is True.",
+        "**B.** → False\n\nThe leading term of $q$ is $-x^{3}$.\n\n$q$ falls on the right, so the statement is False.",
+        "**C.** → True\n\n$$p(-x)=x^{4}-4x^{2}=p(x)$$\n\nOnly even powers appear, so the statement is True.",
+        "**D.** → True\n\n$$p(x)=x^{2}(x^{2}-4)=x^{2}(x-2)(x+2)$$\n\nThose are the real roots, with $0$ repeated, so the statement is True.",
+        "**E.** → False\n\n$p$ has highest power $x^{4}$ while $q$ has $x^{3}$, so the statement is False."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 39,
+      "solution_overview": "Even highest power with positive leading coefficient lifts both ends of $p$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%E2%81%B4%20%E2%88%92%204x%C2%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22220.1%22%20x2%3D%22542%22%20y2%3D%22220.1%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.6%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1.3%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1.3%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.6%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-6.7%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.6%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E12.0%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E21.4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C59.4%2058.0%2C68.5%2060.1%2C77.3%2062.1%2C85.8%2064.1%2C94.1%2066.1%2C102.0%2068.1%2C109.7%2070.2%2C117.2%2072.2%2C124.3%2074.2%2C131.2%2076.3%2C137.9%2078.3%2C144.3%2080.3%2C150.5%2082.3%2C156.5%2084.3%2C162.2%2086.4%2C167.7%2088.4%2C173.0%2090.4%2C178.1%2092.5%2C182.9%2094.5%2C187.6%2096.5%2C192.0%2098.5%2C196.3%20100.5%2C200.4%20102.6%2C204.3%20104.6%2C208.0%20106.6%2C211.5%20108.7%2C214.8%20110.7%2C218.0%20112.7%2C221.0%20114.7%2C223.9%20116.7%2C226.6%20118.8%2C229.1%20120.8%2C231.5%20122.8%2C233.8%20124.9%2C235.9%20126.9%2C237.9%20128.9%2C239.7%20130.9%2C241.5%20132.9%2C243.1%20135.0%2C244.5%20137.0%2C245.9%20139.0%2C247.1%20141.1%2C248.3%20143.1%2C249.3%20145.1%2C250.2%20147.1%2C251.0%20149.1%2C251.8%20151.2%2C252.4%20153.2%2C253.0%20155.2%2C253.4%20157.2%2C253.8%20159.3%2C254.1%20161.3%2C254.3%20163.3%2C254.5%20165.4%2C254.6%20167.4%2C254.6%20169.4%2C254.5%20171.4%2C254.4%20173.5%2C254.3%20175.5%2C254.0%20177.5%2C253.8%20179.5%2C253.4%20181.6%2C253.1%20183.6%2C252.6%20185.6%2C252.2%20187.6%2C251.7%20189.6%2C251.2%20191.7%2C250.6%20193.7%2C250.0%20195.7%2C249.4%20197.7%2C248.7%20199.8%2C248.0%20201.8%2C247.3%20203.8%2C246.6%20205.8%2C245.9%20207.9%2C245.1%20209.9%2C244.3%20211.9%2C243.5%20214.0%2C242.8%20216.0%2C242.0%20218.0%2C241.1%20220.0%2C240.3%20222.1%2C239.5%20224.1%2C238.7%20226.1%2C237.9%20228.1%2C237.1%20230.2%2C236.3%20232.2%2C235.5%20234.2%2C234.7%20236.2%2C233.9%20238.2%2C233.1%20240.3%2C232.4%20242.3%2C231.6%20244.3%2C230.9%20246.3%2C230.2%20248.4%2C229.5%20250.4%2C228.8%20252.4%2C228.2%20254.5%2C227.5%20256.5%2C226.9%20258.5%2C226.3%20260.5%2C225.7%20262.5%2C225.2%20264.6%2C224.6%20266.6%2C224.1%20268.6%2C223.7%20270.6%2C223.2%20272.7%2C222.8%20274.7%2C222.4%20276.7%2C222.1%20278.8%2C221.7%20280.8%2C221.4%20282.8%2C221.2%20284.8%2C220.9%20286.9%2C220.7%20288.9%2C220.5%20290.9%2C220.4%20292.9%2C220.3%20294.9%2C220.2%20297.0%2C220.1%20299.0%2C220.1%20301.0%2C220.1%20303.0%2C220.2%20305.1%2C220.3%20307.1%2C220.4%20309.1%2C220.5%20311.1%2C220.7%20313.2%2C220.9%20315.2%2C221.2%20317.2%2C221.4%20319.3%2C221.7%20321.3%2C222.1%20323.3%2C222.4%20325.3%2C222.8%20327.4%2C223.2%20329.4%2C223.7%20331.4%2C224.1%20333.4%2C224.6%20335.5%2C225.2%20337.5%2C225.7%20339.5%2C226.3%20341.5%2C226.9%20343.6%2C227.5%20345.6%2C228.2%20347.6%2C228.8%20349.6%2C229.5%20351.7%2C230.2%20353.7%2C230.9%20355.7%2C231.6%20357.7%2C232.4%20359.8%2C233.1%20361.8%2C233.9%20363.8%2C234.7%20365.8%2C235.5%20367.9%2C236.3%20369.9%2C237.1%20371.9%2C237.9%20373.9%2C238.7%20375.9%2C239.5%20378.0%2C240.3%20380.0%2C241.1%20382.0%2C242.0%20384.0%2C242.8%20386.1%2C243.5%20388.1%2C244.3%20390.1%2C245.1%20392.1%2C245.9%20394.2%2C246.6%20396.2%2C247.3%20398.2%2C248.0%20400.2%2C248.7%20402.3%2C249.4%20404.3%2C250.0%20406.3%2C250.6%20408.4%2C251.2%20410.4%2C251.7%20412.4%2C252.2%20414.4%2C252.6%20416.4%2C253.1%20418.5%2C253.4%20420.5%2C253.8%20422.5%2C254.0%20424.6%2C254.3%20426.6%2C254.4%20428.6%2C254.5%20430.6%2C254.6%20432.7%2C254.6%20434.7%2C254.5%20436.7%2C254.3%20438.7%2C254.1%20440.7%2C253.8%20442.8%2C253.4%20444.8%2C253.0%20446.8%2C252.4%20448.9%2C251.8%20450.9%2C251.0%20452.9%2C250.2%20454.9%2C249.3%20457.0%2C248.3%20459.0%2C247.1%20461.0%2C245.9%20463.0%2C244.5%20465.1%2C243.1%20467.1%2C241.5%20469.1%2C239.7%20471.1%2C237.9%20473.2%2C235.9%20475.2%2C233.8%20477.2%2C231.5%20479.2%2C229.1%20481.2%2C226.6%20483.3%2C223.9%20485.3%2C221.0%20487.3%2C218.0%20489.3%2C214.8%20491.4%2C211.5%20493.4%2C208.0%20495.4%2C204.3%20497.4%2C200.4%20499.5%2C196.3%20501.5%2C192.0%20503.5%2C187.6%20505.6%2C182.9%20507.6%2C178.1%20509.6%2C173.0%20511.6%2C167.7%20513.6%2C162.2%20515.7%2C156.5%20517.7%2C150.5%20519.7%2C144.3%20521.8%2C137.9%20523.8%2C131.2%20525.8%2C124.3%20527.8%2C117.2%20529.8%2C109.7%20531.9%2C102.0%20533.9%2C94.1%20535.9%2C85.8%20538.0%2C77.3%20540.0%2C68.5%20542.0%2C59.4%22%2F%3E%0A%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-9-40",
+      "case_id": "MATH 9.40",
+      "title": "Parameter Window for Three Real Roots",
+      "context": "Let $g_k(x)=x^{3}-kx$ with real $k$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $k>0$, then $g_k$ has three distinct real roots.",
+        "If $k=0$, then $g_k$ has three distinct real roots.",
+        "If $k<0$, then $g_k$ has only one real root.",
+        "The leading coefficient of $g_k$ depends on $k$.",
+        "$g_k$ is an odd function for every $k$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x=0,\\ \\pm\\sqrt{k}$$\n\nThose three numbers are distinct when $k>0$, so the statement is True.",
+        "**B.** → False\n\n$$g_0(x)=x^{3}$$\n\nThe only root is $0$, with multiplicity three, so the statement is False.",
+        "**C.** → True\n\n$x^{2}-k>0$ for every real $x$, so the only real solution of $x(x^{2}-k)=0$ is $x=0$.\n\nA negative $k$ leaves a single real root, so the statement is True.",
+        "**D.** → False\n\nThe leading term is $x^{3}$ for every $k$, so the statement is False.",
+        "**E.** → True\n\n$$g_k(-x)=-x^{3}+kx=-g_k(x)$$\n\nOnly odd powers appear, so the statement is True."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 40,
+      "solution_overview": "$g_k(x)=x(x^{2}-k)$. Three distinct real roots precisely when $k>0$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "parametric"
+    },
+    {
+      "id": "math-9-41",
+      "case_id": "MATH 9.41",
+      "title": "How Many Times Can Two Polynomials Meet?",
+      "context": "Let $p$ have highest power $x^{n}$ and $q$ have highest power $x^{m}$, with $n>m\\ge 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The graphs of $p$ and $q$ meet in at most $n$ points, unless $p=q$.",
+        "The graphs of $p$ and $q$ can meet in $n+1$ distinct points without $p$ coinciding with $q$.",
+        "If $p-q$ has highest power $x^{n}$, the graphs cannot be the same.",
+        "Translating $q$ vertically can create more than $n$ meetings with $p$.",
+        "If $m=n$ and the leading coefficients differ, the meeting bound is still $n$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe difference $p-q$ has highest power $x^{n}$, so at most $n$ roots unless it is identically zero.\n\nThat is the bound on meetings, so the statement is True.",
+        "**B.** → False\n\nThen $p-q$ would have $n+1$ roots and highest power $x^{n}$, forcing $p-q\\equiv 0$.\n\nAn extra meeting collapses the two polynomials, so the statement is False.",
+        "**C.** → True\n\nThe zero polynomial has no highest power in the usual sense; a surviving $x^{n}$ term means $p\\neq q$.\n\nA non-zero difference forbids identical graphs, so the statement is True.",
+        "**D.** → False\n\nA vertical shift of $q$ still leaves $p-q$ of highest power $x^{n}$.\n\nThe degree bound is unchanged, so the statement is False.",
+        "**E.** → True\n\nThen $p-q$ still has highest power $x^{n}$.\n\nThe bound remains $n$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 41,
+      "solution_overview": "Meetings are roots of $p-q$, whose highest power is $x^{n}$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-42",
+      "case_id": "MATH 9.42",
+      "title": "Multiple Roots and the Derivative",
+      "context": "Let $p$ be a non-constant polynomial and let $a$ be a real number. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $x-a$ is a repeated factor of $p$, then $p(a)=0$ and $p'(a)=0$.",
+        "If $p(a)=0$ and $p'(a)=0$, then $x-a$ is a repeated factor of $p$.",
+        "Every root of $p'$ is a root of $p$.",
+        "A cubic can have a repeated root and a third distinct simple root.",
+        "If $p'$ is identically zero, then $p$ is a non-constant polynomial."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWrite $p(x)=(x-a)^{2} q(x)$. Differentiating gives $p'(x)=2(x-a)q(x)+(x-a)^{2}q'(x)$, so $p'(a)=0$.\n\nA repeated root is a stationary root, so the statement is True.",
+        "**B.** → True\n\nOver the reals one may write $p(x)=(x-a)r(x)$. Then $p'(a)=r(a)$, so $r(a)=0$ and $x-a$ divides $r$ as well.\n\nThe two conditions force multiplicity at least two, so the statement is True.",
+        "**C.** → False\n\nFor $p(x)=x^{2}+1$ one has $p'(x)=2x$, so $x=0$ is stationary but $p(0)=1\\neq 0$.\n\nA turning point need not sit on the $x$-axis, so the statement is False.",
+        "**D.** → True\n\n$$(x-1)^{2}(x-2)=x^{3}-4x^{2}+5x-2$$\n\nThat cubic has roots $1$ (double) and $2$ (simple), so the statement is True.",
+        "**E.** → False\n\nA vanishing derivative means $p$ is constant.\n\nThe only polynomials with $p'\\equiv 0$ are the constants, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 42,
+      "solution_overview": "A multiple root of $p$ is a common root of $p$ and $p'$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-43",
+      "case_id": "MATH 9.43",
+      "title": "Bounds on Turning Points",
+      "context": "Let $p$ have highest power $x^{n}$ with $n\\ge 2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p$ has at most $n-1$ stationary points, unless $p'$ is identically zero.",
+        "Every polynomial of highest power $x^{n}$ has exactly $n-1$ stationary points.",
+        "A vertical stretch $kp$ with $k\\neq 0$ keeps the same stationary abscissas.",
+        "A horizontal shift $p(x-h)$ can increase the number of stationary points.",
+        "If $n$ is even, $p'$ has odd highest power, so $p'$ has at least one real root."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe equation $p'(x)=0$ has at most $n-1$ roots.\n\nThat is the turning-point budget, so the statement is True.",
+        "**B.** → False\n\n$x^{3}+x$ has $p'=3x^{2}+1>0$, so no real stationary point at all.\n\nThe bound $n-1$ need not be attained, so the statement is False.",
+        "**C.** → True\n\n$$(kp)'=k p'$$\n\nThe zeros of the derivative are unchanged, so the statement is True.",
+        "**D.** → False\n\nA shift only slides the graph; it does not create new turns.\n\nThe count of stationary points is invariant under translation, so the statement is False.",
+        "**E.** → True\n\nAn odd-highest-power real polynomial always crosses the axis, so $p'$ has a real root and $p$ has at least one stationary point.\n\nEven-degree polynomials always turn at least once, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 43,
+      "solution_overview": "$p'$ has highest power $x^{n-1}$, so at most $n-1$ stationary points.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-44",
+      "case_id": "MATH 9.44",
+      "title": "Palindromic Coefficients",
+      "context": "Let $p(x)=a_n x^{n}+\\cdots+a_0$ satisfy $a_k=a_{n-k}$ for every $k$, with $a_n\\neq 0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "If $r\\neq 0$ is a root of $p$, then $1/r$ is also a root.",
+        "$p(0)$ cannot be zero.",
+        "Every such $p$ is an even function.",
+        "The value $p(1)$ equals twice the sum of the first half of the coefficients when $n$ is odd.",
+        "$x^{2}+1$ is an example of such a polynomial."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$r^{n}p(1/r)=p(r)=0\\implies p(1/r)=0$$\n\nNon-zero roots come in reciprocal pairs, so the statement is True.",
+        "**B.** → True\n\n$p(0)=a_0=a_n\\neq 0$.\n\nThe constant term equals the leading coefficient, so the statement is True.",
+        "**C.** → False\n\n$x^{2}+3x+1$ has palindromic coefficients but is not even.\n\nPalindromic is not the same as even, so the statement is False.",
+        "**D.** → False\n\n$$p(1)=a_n+\\cdots+a_0$$\n\nThat is the sum of all coefficients, not a forced doubling independent of the middle term.\n\nThe claimed doubling is not a general identity, so the statement is False.",
+        "**E.** → True\n\nThe coefficients read $1,0,1$, which are palindromic.\n\nThat quadratic fits the pattern, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 44,
+      "solution_overview": "Such a $p$ satisfies $x^{n}p(1/x)=p(x)$ wherever $x\\neq 0$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-45",
+      "case_id": "MATH 9.45",
+      "title": "Integer Coefficients and Integer Roots",
+      "context": "Let $p$ be a monic polynomial with integer coefficients. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Every integer root of $p$ divides the constant term $p(0)$.",
+        "If $p(0)=6$, then the only possible integer roots are the divisors of $6$.",
+        "Every monic integer polynomial has at least one integer root.",
+        "If $a$ is an integer root, then $x-a$ is a factor of $p$ in the integer-coefficient polynomials.",
+        "A monic cubic $x^{3}+x+1$ has $x=-1$ as a root."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nIf $p(a)=0$ with $a\\in\\mathbb{Z}$, write $p(x)=(x-a)q(x)$ with $q$ also integer-coefficient, so $p(0)=-a\\,q(0)$.\n\nThe constant term is a multiple of the root, so the statement is True.",
+        "**B.** → True\n\nThe candidate list is $\\pm 1,\\pm 2,\\pm 3,\\pm 6$, so the statement is True.",
+        "**C.** → False\n\n$x^{2}+1$ is monic with integer coefficients and no real root at all.\n\nInteger coefficients do not force an integer root, so the statement is False.",
+        "**D.** → True\n\nThat is the factor theorem together with Gauss's lemma for monic polynomials.\n\nThe factor stays inside $\\mathbb{Z}[x]$, so the statement is True.",
+        "**E.** → False\n\n$$(-1)^{3}+(-1)+1=-1$$\n\nThe value is $-1$, not $0$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 45,
+      "solution_overview": "Any integer root of a monic integer polynomial divides the constant term.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-9-46",
+      "case_id": "MATH 9.46",
+      "title": "Min Acceleration of a Family of Cubics",
+      "context": "A train's speed is $v_b(t)=0.00002t^{3}-b t^{2}+0.4t$ with $b>0$, on $0\\le t\\le 120$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The time of minimal acceleration is $t=\\dfrac{2b}{0.00012}$.",
+        "For $b=0.005$, the minimal acceleration occurs before $t=75$.",
+        "Larger $b$ moves the moment of minimal acceleration to the right.",
+        "$v_b$ is a cubic polynomial in $t$ for every $b>0$.",
+        "The sign of $a(0)$ depends on $b$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$a'(t)=0.00012t-2b=0\\implies t=\\frac{2b}{0.00012}$$\n\nThat is the unique critical point of the quadratic $a$, so the statement is True.",
+        "**B.** → False\n\n$$t=\\frac{0.01}{0.00012}=\\frac{250}{3}\\approx 83.3$$\n\nThe critical time is after $75$, so the statement is False.",
+        "**C.** → True\n\nThe critical time is proportional to $b$.\n\nIncreasing $b$ delays the minimum of $a$, so the statement is True.",
+        "**D.** → True\n\nThe $t^{3}$ term is present and non-zero, so the statement is True.",
+        "**E.** → False\n\n$$a(0)=0.4$$\n\nThe initial acceleration is $0.4$ for every $b$, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 46,
+      "solution_overview": "$a=v_b'=0.00006t^{2}-2bt+0.4$, and $a'=0.00012t-2b$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "parametric"
+    },
+    {
+      "id": "math-9-47",
+      "case_id": "MATH 9.47",
+      "title": "Workshop Output: Cubic Versus Recorded Totals",
+      "context": "Daily output in units is modelled by $Q(t)=-\\frac{1}{50}t^{3}+t^{2}+2t$ for $0\\le t\\le 40$ (hours of a production run). A second line records cumulative output in the table. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$Q(10)=90$.",
+        "The second line's average output per hour over the $40$ h is $16$ units/h.",
+        "The highest interval rate of the table is on $[0,8]$.",
+        "$Q'(0)=2$.",
+        "The model $Q$ is a cubic polynomial in $t$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\n$$Q(10)=-\\frac{1000}{50}+100+20=100$$\n\nThe model gives $100$ units, not $90$, so the statement is False.",
+        "**B.** → True\n\n$$\\frac{640}{40}=16$$\n\nThe whole-run average is $16$, so the statement is True.",
+        "**C.** → False\n\n$$10,\\ 15,\\ 20,\\ 20,\\ 15$$\n\nThe peak blocks are $20$ units/h, later than the first, so the statement is False.",
+        "**D.** → True\n\n$$Q'(t)=-\\frac{3}{50}t^{2}+2t+2\\qquad Q'(0)=2$$\n\nThe initial instantaneous rate is $2$, so the statement is True.",
+        "**E.** → True\n\nThe highest power is $t^{3}$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 47,
+      "solution_overview": "Evaluate $Q$ and $Q'$; table interval rates are $\\Delta Q/8$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "applied",
+      "tables_markdown": "| Hours $t$ | $0$ | $8$ | $16$ | $24$ | $32$ | $40$ |\n| --- | --- | --- | --- | --- | --- | --- |\n| Cumulative units | $0$ | $80$ | $200$ | $360$ | $520$ | $640$ |"
+    },
+    {
+      "id": "math-9-48",
+      "case_id": "MATH 9.48",
+      "title": "Rebuild from a Double Root and a Simple Root",
+      "context": "A monic cubic $p$ has a double root at $x=1$ and a simple root at $x=-3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "$p(x)=x^{3}+x^{2}-5x+3$.",
+        "$p'(1)=0$.",
+        "$p(-3)=0$ and $p'(-3)=0$.",
+        "The constant term of $p$ is $3$.",
+        "The sum of the roots counted with multiplicity is $-1$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$(x-1)^{2}(x+3)=(x^{2}-2x+1)(x+3)=x^{3}+x^{2}-5x+3$$\n\nThat is the unique monic cubic with those roots, so the statement is True.",
+        "**B.** → True\n\nA double root is a stationary root.\n\n$$p'(x)=3x^{2}+2x-5\\qquad p'(1)=3+2-5=0$$\n\nThe derivative vanishes at the double root, so the statement is True.",
+        "**C.** → False\n\n$$p'(-3)=27-6-5=16\\neq 0$$\n\nThe root at $-3$ is simple, so $p'$ does not vanish there, so the statement is False.",
+        "**D.** → True\n\n$$p(0)=3$$\n\nThe constant term is $3$, so the statement is True.",
+        "**E.** → True\n\n$$1+1+(-3)=-1$$\n\n$$-\\frac{b}{a}=-1$$\n\nThe multiplicity-weighted sum is $-1$, so the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 48,
+      "solution_overview": "$p(x)=(x-1)^{2}(x+3)=x^{3}+x^{2}-5x+3$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "hybrid"
+    },
+    {
+      "id": "math-9-49",
+      "case_id": "MATH 9.49",
+      "title": "Crossing a Quartic and a Line Three Times",
+      "context": "Let $p(x)=x^{4}-5x^{2}+4$ and $\\ell(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The graphs meet at four distinct real points.",
+        "$p$ is even.",
+        "$\\ell$ is a cubic function.",
+        "The highest power of $x$ in $p-\\ell$ is $x^{4}$.",
+        "$p(0)=\\ell(0)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$p(x)-\\ell(x)=x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$$\n\n$$x=\\pm 1,\\ \\pm\\sqrt{5}$$\n\nFour distinct real meetings, so the statement is True.",
+        "**B.** → True\n\nOnly even powers appear in $p$, so the statement is True.",
+        "**C.** → False\n\n$\\ell$ is quadratic, so the statement is False.",
+        "**D.** → True\n\nThe $x^{4}$ term of $p$ is untouched, so the statement is True.",
+        "**E.** → False\n\n$$p(0)=4\\qquad \\ell(0)=-1$$\n\nThe intercepts $4$ and $-1$ differ, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 49,
+      "solution_overview": "$p-\\ell=x^{4}-6x^{2}+5=(x^{2}-1)(x^{2}-5)$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "formula"
+    },
+    {
+      "id": "math-9-50",
+      "case_id": "MATH 9.50",
+      "title": "Graph of $x^{3}-x$ Versus a Raised Copy",
+      "context": "The figure shows $p(x)=x^{3}-x$. Let $q(x)=p(x)+c$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For $c=0$ the graph meets the $x$-axis three times.",
+        "The turning abscissas of $q$ depend on $c$.",
+        "There exist values of $c$ for which $q$ has only one real root.",
+        "$p$ is odd.",
+        "For every $c$, $q$ remains odd."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$$x(x-1)(x+1)=0$$\n\nThree distinct crossings, so the statement is True.",
+        "**B.** → False\n\n$$q'(x)=p'(x)=3x^{2}-1$$\n\nA vertical shift never moves the stationary $x$-coordinates, so the statement is False.",
+        "**C.** → True\n\nThe local max and min of $p$ are $p(-1/\\sqrt{3})$ and $p(1/\\sqrt{3})$; a shift larger than that gap lifts or drops the axis past both turns.\n\nA large enough $|c|$ leaves a single crossing, so the statement is True.",
+        "**D.** → True\n\nOnly odd powers appear, so the statement is True.",
+        "**E.** → False\n\n$q(0)=c$, and an odd function must vanish at $0$.\n\nA non-zero shift destroys oddness, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 50,
+      "solution_overview": "A vertical shift of $x^{3}-x$ keeps the same turning abscissas $\\pm 1/\\sqrt{3}$.",
+      "subsection": "9",
+      "placeholder": false,
+      "stem_kind": "graph",
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20560%20320%22%20width%3D%22560%22%20height%3D%22320%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22560%22%20height%3D%22320%22%20rx%3D%2216%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%2222%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ey%20%3D%20x%C2%B3%20%E2%88%92%20x%3C%2Ftext%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%2236%22%20x2%3D%2256%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22278%22%20x2%3D%22542%22%20y2%3D%22278%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.4%22%2F%3E%0A%3Cline%20x1%3D%2256%22%20y1%3D%22157.0%22%20x2%3D%22542%22%20y2%3D%22157.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%2236%22%20x2%3D%22299.0%22%20y2%3D%22278%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2256.0%22%20y1%3D%22278%22%20x2%3D%2256.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2256.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2%3C%2Ftext%3E%3Cline%20x1%3D%22177.5%22%20y1%3D%22278%22%20x2%3D%22177.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22177.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1%3C%2Ftext%3E%3Cline%20x1%3D%22299.0%22%20y1%3D%22278%22%20x2%3D%22299.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22299.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%3Cline%20x1%3D%22420.5%22%20y1%3D%22278%22%20x2%3D%22420.5%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22420.5%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%3Cline%20x1%3D%22542.0%22%20y1%3D%22278%22%20x2%3D%22542.0%22%20y2%3D%22283%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22542.0%22%20y%3D%22296%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22278.0%22%20x2%3D%2256%22%20y2%3D%22278.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22282.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-7.4%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22197.3%22%20x2%3D%2256%22%20y2%3D%22197.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22201.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2.5%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%22116.7%22%20x2%3D%2256%22%20y2%3D%22116.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%22120.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2.5%3C%2Ftext%3E%3Cline%20x1%3D%2251%22%20y1%3D%2236.0%22%20x2%3D%2256%22%20y2%3D%2236.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2248%22%20y%3D%2240.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E7.4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.2%22%20points%3D%2256.0%2C254.6%2058.0%2C251.6%2060.1%2C248.7%2062.1%2C245.9%2064.1%2C243.1%2066.1%2C240.3%2068.2%2C237.7%2070.2%2C235.0%2072.2%2C232.4%2074.2%2C229.9%2076.3%2C227.4%2078.3%2C225.0%2080.3%2C222.6%2082.3%2C220.2%2084.4%2C217.9%2086.4%2C215.7%2088.4%2C213.5%2090.4%2C211.4%2092.5%2C209.3%2094.5%2C207.2%2096.5%2C205.2%2098.5%2C203.2%20100.6%2C201.3%20102.6%2C199.4%20104.6%2C197.6%20106.6%2C195.8%20108.7%2C194.1%20110.7%2C192.4%20112.7%2C190.7%20114.7%2C189.1%20116.8%2C187.5%20118.8%2C186.0%20120.8%2C184.5%20122.8%2C183.0%20124.8%2C181.6%20126.9%2C180.2%20128.9%2C178.9%20130.9%2C177.6%20132.9%2C176.3%20135.0%2C175.1%20137.0%2C173.9%20139.0%2C172.7%20141.1%2C171.6%20143.1%2C170.5%20145.1%2C169.5%20147.1%2C168.4%20149.1%2C167.5%20151.2%2C166.5%20153.2%2C165.6%20155.2%2C164.7%20157.2%2C163.9%20159.3%2C163.0%20161.3%2C162.2%20163.3%2C161.5%20165.3%2C160.8%20167.4%2C160.1%20169.4%2C159.4%20171.4%2C158.8%20173.5%2C158.1%20175.5%2C157.6%20177.5%2C157.0%20179.5%2C156.5%20181.6%2C156.0%20183.6%2C155.5%20185.6%2C155.0%20187.6%2C154.6%20189.7%2C154.2%20191.7%2C153.8%20193.7%2C153.5%20195.7%2C153.2%20197.8%2C152.9%20199.8%2C152.6%20201.8%2C152.3%20203.8%2C152.1%20205.8%2C151.9%20207.9%2C151.7%20209.9%2C151.5%20211.9%2C151.3%20214.0%2C151.2%20216.0%2C151.1%20218.0%2C151.0%20220.0%2C150.9%20222.1%2C150.8%20224.1%2C150.8%20226.1%2C150.8%20228.1%2C150.7%20230.2%2C150.7%20232.2%2C150.8%20234.2%2C150.8%20236.2%2C150.8%20238.2%2C150.9%20240.3%2C151.0%20242.3%2C151.1%20244.3%2C151.2%20246.3%2C151.3%20248.4%2C151.4%20250.4%2C151.5%20252.4%2C151.7%20254.4%2C151.8%20256.5%2C152.0%20258.5%2C152.2%20260.5%2C152.4%20262.5%2C152.6%20264.6%2C152.8%20266.6%2C153.0%20268.6%2C153.2%20270.6%2C153.4%20272.7%2C153.6%20274.7%2C153.9%20276.7%2C154.1%20278.8%2C154.4%20280.8%2C154.6%20282.8%2C154.9%20284.8%2C155.1%20286.9%2C155.4%20288.9%2C155.7%20290.9%2C155.9%20292.9%2C156.2%20294.9%2C156.5%20297.0%2C156.7%20299.0%2C157.0%20301.0%2C157.3%20303.0%2C157.5%20305.1%2C157.8%20307.1%2C158.1%20309.1%2C158.3%20311.1%2C158.6%20313.2%2C158.9%20315.2%2C159.1%20317.2%2C159.4%20319.2%2C159.6%20321.3%2C159.9%20323.3%2C160.1%20325.3%2C160.4%20327.4%2C160.6%20329.4%2C160.8%20331.4%2C161.0%20333.4%2C161.2%20335.4%2C161.4%20337.5%2C161.6%20339.5%2C161.8%20341.5%2C162.0%20343.6%2C162.2%20345.6%2C162.3%20347.6%2C162.5%20349.6%2C162.6%20351.6%2C162.7%20353.7%2C162.8%20355.7%2C162.9%20357.7%2C163.0%20359.8%2C163.1%20361.8%2C163.2%20363.8%2C163.2%20365.8%2C163.2%20367.9%2C163.3%20369.9%2C163.3%20371.9%2C163.2%20373.9%2C163.2%20375.9%2C163.2%20378.0%2C163.1%20380.0%2C163.0%20382.0%2C162.9%20384.1%2C162.8%20386.1%2C162.7%20388.1%2C162.5%20390.1%2C162.3%20392.1%2C162.1%20394.2%2C161.9%20396.2%2C161.7%20398.2%2C161.4%20400.2%2C161.1%20402.3%2C160.8%20404.3%2C160.5%20406.3%2C160.2%20408.3%2C159.8%20410.4%2C159.4%20412.4%2C159.0%20414.4%2C158.5%20416.4%2C158.0%20418.5%2C157.5%20420.5%2C157.0%20422.5%2C156.4%20424.6%2C155.9%20426.6%2C155.2%20428.6%2C154.6%20430.6%2C153.9%20432.7%2C153.2%20434.7%2C152.5%20436.7%2C151.8%20438.7%2C151.0%20440.8%2C150.1%20442.8%2C149.3%20444.8%2C148.4%20446.8%2C147.5%20448.9%2C146.5%20450.9%2C145.6%20452.9%2C144.5%20454.9%2C143.5%20456.9%2C142.4%20459.0%2C141.3%20461.0%2C140.1%20463.0%2C138.9%20465.1%2C137.7%20467.1%2C136.4%20469.1%2C135.1%20471.1%2C133.8%20473.1%2C132.4%20475.2%2C131.0%20477.2%2C129.5%20479.2%2C128.0%20481.2%2C126.5%20483.3%2C124.9%20485.3%2C123.3%20487.3%2C121.6%20489.4%2C119.9%20491.4%2C118.2%20493.4%2C116.4%20495.4%2C114.6%20497.4%2C112.7%20499.5%2C110.8%20501.5%2C108.8%20503.5%2C106.8%20505.6%2C104.7%20507.6%2C102.6%20509.6%2C100.5%20511.6%2C98.3%20513.6%2C96.1%20515.7%2C93.8%20517.7%2C91.4%20519.7%2C89.0%20521.8%2C86.6%20523.8%2C84.1%20525.8%2C81.6%20527.8%2C79.0%20529.8%2C76.3%20531.9%2C73.7%20533.9%2C70.9%20535.9%2C68.1%20538.0%2C65.3%20540.0%2C62.4%20542.0%2C59.4%22%2F%3E%0A%3Ccircle%20cx%3D%22177.5%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22183.5%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%3Ccircle%20cx%3D%22420.5%22%20cy%3D%22157.0%22%20r%3D%223.5%22%20fill%3D%22%238B5A2B%22%2F%3E%3Ctext%20x%3D%22426.5%22%20y%3D%22151.0%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E%3C%2Ftext%3E%0A%3Ctext%20x%3D%22280%22%20y%3D%22312%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3Ctext%20x%3D%2216%22%20y%3D%22157%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%20transform%3D%22rotate%28-90%2016%20157%29%22%3Ey%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    }
+  ]
+}

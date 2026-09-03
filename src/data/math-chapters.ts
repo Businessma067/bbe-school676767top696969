@@ -3,9 +3,10 @@
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
  * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
  * 7 (Linear and quadratic functions), 8 (Power functions),
+ * 9 (Polynomial functions),
  * 11 (Differentiation and single-variable optimization),
  * 12 (Elementary probability), and 13 (Binomial) are populated;
- * chapters 9–10 are marked coming soon; others use placeholders.
+ * chapter 10 is marked coming soon; others use placeholders.
  */
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
@@ -16,6 +17,7 @@ import {
   MATH_CH5_SUBSECTIONS,
 } from "@/data/math-ch5-linear-equations";
 import { MATH_CH7_LINEAR_QUADRATIC } from "@/data/math-ch7-linear-quadratic"; // Lovable sync: ch7 practice bank
+import { MATH_CH9_POLYNOMIALS } from "@/data/math-ch9-polynomials";
 import {
   MATH_CH8_POWER_FUNCTIONS,
   MATH_CH8_SUBSECTIONS,
@@ -92,6 +94,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
 export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {
   /** Chapter 7 has no book subtopics — unlock the first N tasks at chapter level. */
   7: 10,
+  9: 10,
 };
 
 function localIndexInSubsection(
@@ -197,6 +200,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   6: MATH_CH6_INEQUALITIES,
   7: MATH_CH7_LINEAR_QUADRATIC,
   8: MATH_CH8_POWER_FUNCTIONS,
+  9: MATH_CH9_POLYNOMIALS,
   11: MATH_CH11_DIFFERENTIATION,
   12: MATH_CH12_PROBABILITY,
   13: MATH_CH13_BINOMIAL,
@@ -216,7 +220,7 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
 };
 
 /** Syllabus chapters with structure ready but no practice content yet. */
-const COMING_SOON_CHAPTERS = new Set([9, 10]);
+const COMING_SOON_CHAPTERS = new Set([10]);
 
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   const num = i + 1;
