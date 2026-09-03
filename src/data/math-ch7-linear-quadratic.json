@@ -20,15 +20,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\nSince $a>0$, the vertex $\\left(\\frac{1}{2},-\\frac{9}{4}\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nSince $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ is a basis of the space of polynomials of degree at most $2$. Every quadratic $g$ can therefore be written uniquely as $Af^{2}+Bf+C$.\n\nMatching coefficients against the given models recovers\n\n$$\n\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}\n\n$$\n\nso the rewrite exists.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**D.** → False\n\nThe $y$-intercept of $f-g$ is the value at the origin:\n\n$$\n\n(f-g)(0)=4\n\n$$\n\nCompare with the claimed value $0$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 5 x - 4=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: degree $\\le 2$ forbids it.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\nBecause the leading coefficient is positive, $\\left(\\frac{1}{2},-\\frac{9}{4}\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nBecause $f$ is a non-constant line, squaring it produces an $x^{2}$ term. Matching the $x^{2}$ term, then the $x$ term, then the constant, recovers unique numbers $A$, $B$, and $C$ with\n\n$$\n\ng(x)=A f(x)^{2}+B f(x)+C\n\n$$\n\nHere the match gives\n\n$$\n\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}\n\n$$\n\nso such a rewriting exists.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**D.** → False\n\nThe graph of $f-g$ meets the $y$-axis where $x=0$:\n\n$$\n\n(f-g)(0)=4\n\n$$\n\nCompare with the claimed height $0$.\n\nMatching the claim, so the statement is False.",
+        "**E.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 5 x - 4=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: a quadratic equation forbids it.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 1,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -53,15 +53,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x - 5\n\n$$\n\nThe slope is $3$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=-2\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
+        "**A.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x - 5\n\n$$\n\nThat coefficient is the slope $3$.\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=- 2 x^{2} + x + 4\n\n$$\n\nHere the leading coefficient is $-2$, so the parabola opens downwards.\n\nMatching the claim, so the statement is False.",
         "**C.** → True\n\nSubstitute $x=0$ into $f$:\n\n$$\n\nf\\left(0\\right)=-5\n\n$$\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=4\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x - 5\n\n$$\n\nThe slope is $3$.\n\nMatching the claim, so the statement is False."
+        "**E.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x - 5\n\n$$\n\nThat coefficient is the slope $3$.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 2,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x - 5\\qquad g(x)=- 2 x^{2} + x + 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{4},\\frac{33}{8}\\right)\\qquad \\mathrm{sum}=\\frac{1}{2}\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=2 x^{2} + 2 x - 9\\qquad \\Delta=76\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=-\\frac{2}{9},\\quad B=-\\frac{17}{9},\\quad C=\\frac{1}{9}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x - 5\\qquad g(x)=- 2 x^{2} + x + 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{4},\\frac{33}{8}\\right)\\qquad S=\\frac{1}{2}\\qquad P=-2\n$$\n\n$$\nf-g=2 x^{2} + 2 x - 9\\qquad \\Delta=76\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=-\\frac{2}{9},\\quad B=-\\frac{17}{9},\\quad C=\\frac{1}{9}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -86,15 +86,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=2 x + 1\n\n$$\n\nThe slope is $2$.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 6 x + 5\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=2 x + 1\n\n$$\n\nThat coefficient is the slope $2$.\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nSubstitute $x=3$ into $g$:\n\n$$\n\ng\\left(3\\right)=-4\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is False."
+        "**E.** → False\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 3,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=5\n$$\n\n$$\nf-g=- x^{2} + 8 x - 4\\qquad \\Delta=48\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{7}{2},\\quad C=\\frac{33}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad S=6\\qquad P=5\n$$\n\n$$\nf-g=- x^{2} + 8 x - 4\\qquad \\Delta=48\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{7}{2},\\quad C=\\frac{33}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -121,13 +121,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute $x=2$ into $f$:\n\n$$\n\nf\\left(2\\right)=2\n\n$$\n\nMatching the claim, so the statement is True.",
         "**B.** → False\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(0\\right)=1\n\n$$\n\nSince $a>0$, the vertex $\\left(0,1\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nA non-constant linear map is monotone by the sign of its slope:\n\n$$\n\nf(x)=4 - x\\qquad \\mathrm{slope}=-1\n\n$$\n\nHence $f$ is decreasing.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(0\\right)=1\n\n$$\n\nBecause the leading coefficient is positive, $\\left(0,1\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nA non-constant line rises or falls according to the sign of its slope:\n\n$$\n\nf(x)=4 - x\\qquad \\mathrm{slope}=-1\n\n$$\n\nHence $f$ is decreasing.\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nSubstitute $x=1$ into $g$:\n\n$$\n\ng\\left(1\\right)=2\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 4,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 - x\\qquad g(x)=x^{2} + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,1\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=1\n$$\n\n$$\nf-g=- x^{2} - x + 3\\qquad \\Delta=13\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=-8,\\quad C=17.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 - x\\qquad g(x)=x^{2} + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,1\\right)\\qquad S=0\\qquad P=1\n$$\n\n$$\nf-g=- x^{2} - x + 3\\qquad \\Delta=13\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=-8,\\quad C=17.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -154,13 +154,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute $x=0$ into $f$:\n\n$$\n\nf\\left(0\\right)=0\n\n$$\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nSolve $g(x)=0$. The discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nso the roots are\n\n$$\n\nx\\in\\{-2, 2\\}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=5 x\n\n$$\n\nThe slope is $5$.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=5 x\n\n$$\n\nThat coefficient is the slope $5$.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 4\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=-4\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 5,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5 x\\qquad g(x)=x^{2} - 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-4\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-4\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{25},\\quad B=0,\\quad C=-4.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5 x\\qquad g(x)=x^{2} - 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-4\\right)\\qquad S=0\\qquad P=-4\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{25},\\quad B=0,\\quad C=-4.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -185,15 +185,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(2\\right)=3\n\n$$\n\nSince $a>0$, the vertex $\\left(2,3\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(2\\right)=3\n\n$$\n\nBecause the leading coefficient is positive, $\\left(2,3\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → False\n\nA shared root is a common zero of both models.\n\n$$\n\nf(x)=x - 2\\qquad g(x)=x^{2} - 4 x + 7\n\n$$\n\nComparing zeros shows whether a common root exists.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=x - 2\n\n$$\n\nThe slope is $1$.\n\nMatching the claim, so the statement is True."
+        "**D.** → True\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 4 x + 7\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=x - 2\n\n$$\n\nThat coefficient is the slope $1$.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 6,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 2\\qquad g(x)=x^{2} - 4 x + 7\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,3\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=7\n$$\n\n$$\nf-g=- x^{2} + 5 x - 9\\qquad \\Delta=-11\\qquad \\#\\mathrm{meetings}=0\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=0,\\quad C=3.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 2\\qquad g(x)=x^{2} - 4 x + 7\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,3\\right)\\qquad S=4\\qquad P=7\n$$\n\n$$\nf-g=- x^{2} + 5 x - 9\\qquad \\Delta=-11\\qquad \\mathrm{meetings}=0\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=0,\\quad C=3.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -218,15 +218,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=3\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x \\left(3 x - 1\\right)\n\n$$\n\nHere the leading coefficient is $3$, so the parabola opens upwards.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=0\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=\\frac{x}{2} + 7\n\n$$\n\nThe slope is $\\frac{1}{2}$.\n\nMatching the claim, so the statement is False.",
+        "**C.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=\\frac{x}{2} + 7\n\n$$\n\nThat coefficient is the slope $\\frac{1}{2}$.\n\nMatching the claim, so the statement is False.",
         "**D.** → True\n\nSubstitute $x=0$ into $f$:\n\n$$\n\nf\\left(0\\right)=7\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 3}=\\frac{1}{6}\n\n$$\n\nMatching the claim, so the statement is True."
+        "**E.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 3}=\\frac{1}{6}\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 7,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=\\frac{x}{2} + 7\\qquad g(x)=x \\left(3 x - 1\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{6},-\\frac{1}{12}\\right)\\qquad \\mathrm{sum}=\\frac{1}{3}\\qquad \\mathrm{product}=0\n$$\n\n$$\nf-g=- 3 x^{2} + \\frac{3 x}{2} + 7\\qquad \\Delta=\\frac{345}{4}\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=12,\\quad B=-170,\\quad C=602.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=\\frac{x}{2} + 7\\qquad g(x)=x \\left(3 x - 1\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{6},-\\frac{1}{12}\\right)\\qquad S=\\frac{1}{3}\\qquad P=0\n$$\n\n$$\nf-g=- 3 x^{2} + \\frac{3 x}{2} + 7\\qquad \\Delta=\\frac{345}{4}\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=12,\\quad B=-170,\\quad C=602.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -251,15 +251,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx \\left(x - 3\\right)=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx \\left(x - 3\\right)=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx \\left(x - 3\\right)=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: degree $\\le 2$ forbids it.\n\nMatching the claim, so the statement is False.",
-        "**D.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=x\n\n$$\n\nThe slope is $1$.\n\nMatching the claim, so the statement is True."
+        "**A.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x \\left(x - 3\\right)=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x \\left(x - 3\\right)=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x \\left(x - 3\\right)=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=9\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: a quadratic equation forbids it.\n\nMatching the claim, so the statement is False.",
+        "**D.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x \\left(x - 2\\right)\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=x\n\n$$\n\nThat coefficient is the slope $1$.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 8,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x\\qquad g(x)=x \\left(x - 2\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-1\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=0\n$$\n\n$$\nf-g=x \\left(3 - x\\right)\\qquad \\Delta=9\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=-2,\\quad C=0.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x\\qquad g(x)=x \\left(x - 2\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-1\\right)\\qquad S=2\\qquad P=0\n$$\n\n$$\nf-g=x \\left(3 - x\\right)\\qquad \\Delta=9\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=-2,\\quad C=0.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -284,15 +284,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot -1}=2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(2\\right)=4\n\n$$\n\nSince $a<0$, the vertex $\\left(2,4\\right)$ is the global maximum point.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{4}{2\\cdot -1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot -1}=2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(2\\right)=4\n\n$$\n\nBecause the leading coefficient is negative, $\\left(2,4\\right)$ is the highest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{4}{2\\cdot -1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → True\n\nA horizontal line needs slope $0$. Here\n\n$$\n\nf(x)=2\n\n$$\n\nhas slope $0$.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=-1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
+        "**D.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x \\left(4 - x\\right)\n\n$$\n\nHere the leading coefficient is $-1$, so the parabola opens downwards.\n\nMatching the claim, so the statement is False.",
         "**E.** → False\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=0\n\n$$\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 9,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2\\qquad g(x)=x \\left(4 - x\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,4\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=0\n$$\n\n$$\nf-g=x^{2} - 4 x + 2\\qquad \\Delta=8\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, a rewrite $g=Af^{2}+Bf+C$ exists and is unique.",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2\\qquad g(x)=x \\left(4 - x\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,4\\right)\\qquad S=4\\qquad P=0\n$$\n\n$$\nf-g=x^{2} - 4 x + 2\\qquad \\Delta=8\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, a rewrite $g=A f^{2}+B f+C$ exists and is unique.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -318,14 +318,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nSolve $g(x)=0$. The discriminant is\n\n$$\n\n\\Delta=25\n\n$$\n\nso the roots are\n\n$$\n\nx\\in\\{-1, 4\\}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-3}{1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 - 2 x\n\n$$\n\nThe slope is $-2$.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-3}{1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 - 2 x\n\n$$\n\nThat coefficient is the slope $-2$.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 3 x - 4\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nSubstitute $x=0$ into $f$:\n\n$$\n\nf\\left(0\\right)=3\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "1/5",
       "sort_order": 10,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 - 2 x\\qquad g(x)=x^{2} - 3 x - 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-4\n$$\n\n$$\nf-g=- x^{2} + x + 7\\qquad \\Delta=29\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=0,\\quad C=-\\frac{25}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 - 2 x\\qquad g(x)=x^{2} - 3 x - 4\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{25}{4}\\right)\\qquad S=3\\qquad P=-4\n$$\n\n$$\nf-g=- x^{2} + x + 7\\qquad \\Delta=29\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=0,\\quad C=-\\frac{25}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -350,15 +350,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTangency of the line and the parabola means $\\Delta(g-f)=0$ (a double root).\n\n$$\n\n\\Delta=0\n\n$$\n\nso there are exactly $1$ distinct real meeting point(s).\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nSince $a=1$, the range is $[k,+\\infty)$ with\n\n$$\n\nk=g\\left(0\\right)=5\n\n$$\n\nCompare that range statement with the claim.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=5\n\n$$\n\nThe slope is $0$.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2}=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=0\n\n$$\n\nhence exactly one real meeting (a tangency).\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nTangency of the line and the parabola means the equation $g(x)=f(x)$ has a repeated root, so its discriminant vanishes.\n\n$$\n\n\\Delta=0\n\n$$\n\nso there are exactly $1$ distinct real meeting point(s).\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nSince the leading coefficient is $1$, the values of $g$ never go below the vertex height:\n\n$$\n\nk=g\\left(0\\right)=5\n\n$$\n\nCompare that range statement with the claim.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=5\n\n$$\n\nThat coefficient is the slope $0$.\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} + 5\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is True.",
+        "**E.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2}=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=0\n\n$$\n\nhence exactly one real meeting (a repeated root).\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "1/5",
       "sort_order": 11,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5\\qquad g(x)=x^{2} + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,5\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=5\n$$\n\n$$\nf-g=- x^{2}\\qquad \\Delta=0\\qquad \\#\\mathrm{meetings}=1\n$$\n\nBecause $\\deg f=1$, a rewrite $g=Af^{2}+Bf+C$ exists and is unique.",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5\\qquad g(x)=x^{2} + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,5\\right)\\qquad S=0\\qquad P=5\n$$\n\n$$\nf-g=- x^{2}\\qquad \\Delta=0\\qquad \\mathrm{meetings}=1\n$$\n\nBecause $f$ is a non-constant line, a rewrite $g=A f^{2}+B f+C$ exists and is unique.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -383,15 +383,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-5}{1}=5\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nVieta's product of roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{6}{1}=6\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-5}{2\\cdot 1}=\\frac{5}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=2 x - 1\n\n$$\n\nThe slope is $2$.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-5}{1}=5\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nFor a parabola $ax^{2}+bx+c$, the product of the roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{6}{1}=6\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-5}{2\\cdot 1}=\\frac{5}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=2 x - 1\n\n$$\n\nThat coefficient is the slope $2$.\n\nMatching the claim, so the statement is True.",
         "**E.** → True\n\nSubstitute $x=2$ into $g$:\n\n$$\n\ng\\left(2\\right)=0\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 12,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x - 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n$$\nf-g=- x^{2} + 7 x - 7\\qquad \\Delta=21\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{15}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x - 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad S=5\\qquad P=6\n$$\n\n$$\nf-g=- x^{2} + 7 x - 7\\qquad \\Delta=21\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{15}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -416,15 +416,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(2\\right)=-5\n\n$$\n\nSince $a>0$, the vertex $\\left(2,-5\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(2\\right)=-5\n\n$$\n\nSince $a>0$, the vertex $\\left(2,-5\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(2\\right)=-5\n\n$$\n\nBecause the leading coefficient is positive, $\\left(2,-5\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(2\\right)=-5\n\n$$\n\nBecause the leading coefficient is positive, $\\left(2,-5\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nSubstitute $x=2$ into $f$:\n\n$$\n\nf\\left(2\\right)=5\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=2\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False."
+        "**E.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=2 x^{2} - 8 x + 3\n\n$$\n\nHere the leading coefficient is $2$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "2/5",
       "sort_order": 13,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x + 3\\qquad g(x)=2 x^{2} - 8 x + 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-5\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=\\frac{3}{2}\n$$\n\n$$\nf-g=x \\left(9 - 2 x\\right)\\qquad \\Delta=81\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=2,\\quad B=-20,\\quad C=45.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x + 3\\qquad g(x)=2 x^{2} - 8 x + 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-5\\right)\\qquad S=4\\qquad P=\\frac{3}{2}\n$$\n\n$$\nf-g=x \\left(9 - 2 x\\right)\\qquad \\Delta=81\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=2,\\quad B=-20,\\quad C=45.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -449,15 +449,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 2 x - 3=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 2 x - 3=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 2 x - 3=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nA non-constant linear map is monotone by the sign of its slope:\n\n$$\n\nf(x)=x + 1\\qquad \\mathrm{slope}=1\n\n$$\n\nHence $f$ is increasing.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 2 x - 3=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 2 x - 3=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 2 x - 3=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**E.** → False\n\nA non-constant line rises or falls according to the sign of its slope:\n\n$$\n\nf(x)=x + 1\\qquad \\mathrm{slope}=1\n\n$$\n\nHence $f$ is increasing.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "2/5",
       "sort_order": 14,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x + 1\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 2 x + 3\\qquad \\Delta=16\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=-3,\\quad C=0.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x + 1\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 2 x + 3\\qquad \\Delta=16\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=-3,\\quad C=0.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -482,15 +482,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x+2\\right)^2-3\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nSince $a>0$, the vertex $\\left(-2,-3\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nSince $a>0$, the vertex $\\left(-2,-3\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=- x\n\n$$\n\nThe slope is $-1$.\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is True."
+        "**A.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x+2\\right)^2-3\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nBecause the leading coefficient is positive, $\\left(-2,-3\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{4}{2\\cdot 1}=-2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(-2\\right)=-3\n\n$$\n\nBecause the leading coefficient is positive, $\\left(-2,-3\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=- x\n\n$$\n\nThat coefficient is the slope $-1$.\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} + 4 x + 1\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 15,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=- x\\qquad g(x)=x^{2} + 4 x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-2,-3\\right)\\qquad \\mathrm{sum}=-4\\qquad \\mathrm{product}=1\n$$\n\n$$\nf-g=- x^{2} - 5 x - 1\\qquad \\Delta=21\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=-4,\\quad C=1.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=- x\\qquad g(x)=x^{2} + 4 x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-2,-3\\right)\\qquad S=-4\\qquad P=1\n$$\n\n$$\nf-g=- x^{2} - 5 x - 1\\qquad \\Delta=21\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=-4,\\quad C=1.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -516,14 +516,14 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nEvaluate the difference at the origin:\n\n$$\n\n(f-g)(0)=-1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**B.** → False\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**B.** → False\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nMatching the claim, so the statement is False.",
         "**C.** → True\n\nThe discriminant of $g$ is\n\n$$\n\n\\Delta=b^{2}-4ac=-12\n\n$$\n\nso $g$ has exactly $0$ distinct real root(s).\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=4 x + 2\n\n$$\n\nThe slope is $4$.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=4 x + 2\n\n$$\n\nThat coefficient is the slope $4$.\n\nMatching the claim, so the statement is True.",
         "**E.** → True\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=3\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 16,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} + 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,3\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=3\n$$\n\n$$\nf-g=- x^{2} + 4 x - 1\\qquad \\Delta=12\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{4},\\quad C=\\frac{13}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} + 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,3\\right)\\qquad S=0\\qquad P=3\n$$\n\n$$\nf-g=- x^{2} + 4 x - 1\\qquad \\Delta=12\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{4},\\quad C=\\frac{13}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -550,13 +550,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nSolve $g(x)=0$. The discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nso the roots are\n\n$$\n\nx\\in\\{1, 3\\}\n\n$$\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nExpand the difference:\n\n$$\n\n- 2 x^{2} + 11 x - 6\n\n$$\n\nThe leading coefficient is $-2$.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-8}{2}=4\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x\n\n$$\n\nThe slope is $3$.\n\nMatching the claim, so the statement is True."
+        "**C.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-8}{2}=4\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-8}{2\\cdot 2}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nRead the coefficient of $x$ in the linear model:\n\n$$\n\nf(x)=3 x\n\n$$\n\nThat coefficient is the slope $3$.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 17,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x\\qquad g(x)=2 x^{2} - 8 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-2\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n$$\nf-g=- 2 x^{2} + 11 x - 6\\qquad \\Delta=73\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{2}{9},\\quad B=-\\frac{8}{3},\\quad C=6.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x\\qquad g(x)=2 x^{2} - 8 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-2\\right)\\qquad S=4\\qquad P=3\n$$\n\n$$\nf-g=- 2 x^{2} + 11 x - 6\\qquad \\Delta=73\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{2}{9},\\quad B=-\\frac{8}{3},\\quad C=6.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -582,14 +582,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nSolve $g(x)=0$. The discriminant is\n\n$$\n\n\\Delta=25\n\n$$\n\nso the roots are\n\n$$\n\nx\\in\\{-3, 2\\}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → True\n\nSubstitute $x=2$ into $f$:\n\n$$\n\nf\\left(2\\right)=0\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{1}{1}=-1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is True."
+        "**D.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{1}{1}=-1\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} + x - 6\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 18,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 - x\\qquad g(x)=x^{2} + x - 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=-1\\qquad \\mathrm{product}=-6\n$$\n\n$$\nf-g=- x^{2} - 2 x + 8\\qquad \\Delta=36\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=-5,\\quad C=0.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 - x\\qquad g(x)=x^{2} + x - 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad S=-1\\qquad P=-6\n$$\n\n$$\nf-g=- x^{2} - 2 x + 8\\qquad \\Delta=36\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=-5,\\quad C=0.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -615,14 +615,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nEvenness requires $g(-x)=g(x)$ for all $x$. Compare values at $\\pm 1$:\n\n$$\n\ng(1)=-8\\qquad g(-1)=-8\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nVieta's product of roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{-9}{1}=-9\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{0}{2\\cdot 1}=0\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nFor a parabola $ax^{2}+bx+c$, the product of the roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{-9}{1}=-9\n\n$$\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nEvenness requires $f(-x)=f(x)$ for all $x$. Compare values at $\\pm 1$:\n\n$$\n\nf(1)=3\\qquad f(-1)=-1\n\n$$\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nSubstitute $x=3$ into $g$:\n\n$$\n\ng\\left(3\\right)=0\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 19,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 9\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-9\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-9\n$$\n\n$$\nf-g=- x^{2} + 2 x + 10\\qquad \\Delta=44\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{35}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 9\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-9\\right)\\qquad S=0\\qquad P=-9\n$$\n\n$$\nf-g=- x^{2} + 2 x + 10\\qquad \\Delta=44\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{35}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -647,15 +647,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe average rate of change of $g$ on $[0,2]$ is the difference quotient\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=0,\\qquad g(2)=-4\n\n$$\n\n$$\n\n\\frac{-4-0}{2}=-2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is the difference quotient\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=0,\\qquad g(2)=-4\n\n$$\n\n$$\n\n\\frac{-4-0}{2}=-2\n\n$$\n\nThe slope of $f$ is $3$.\n\nCompare $-2$ with $3$.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nThe average rate of change of $g$ on $[0,2]$ is\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=0,\\qquad g(2)=-4\n\n$$\n\n$$\n\n\\frac{-4-0}{2}=-2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=0,\\qquad g(2)=-4\n\n$$\n\n$$\n\n\\frac{-4-0}{2}=-2\n\n$$\n\nThe slope of $f$ is $3$.\n\nCompare $-2$ with $3$.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nSubstitute $x=0$ into $g$:\n\n$$\n\ng\\left(0\\right)=0\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → True\n\nSubstitute $x=0$ into $f$:\n\n$$\n\nf\\left(0\\right)=1\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "2/5",
       "sort_order": 20,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x + 1\\qquad g(x)=x \\left(x - 4\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-4\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=0\n$$\n\n$$\nf-g=- x^{2} + 7 x + 1\\qquad \\Delta=53\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-\\frac{14}{9},\\quad C=\\frac{13}{9}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x + 1\\qquad g(x)=x \\left(x - 4\\right)\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-4\\right)\\qquad S=4\\qquad P=0\n$$\n\n$$\nf-g=- x^{2} + 7 x + 1\\qquad \\Delta=53\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-\\frac{14}{9},\\quad C=\\frac{13}{9}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -666,7 +666,7 @@
       "title": "Rewrite Exists at Level Two",
       "context": "Let $f(x)=x-1$ and $g(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "There exist $A,B,C$ with $g=Af^{2}+Bf+C$.",
+        "There exist real numbers $A,B,C$ with $g(x)=A f(x)^{2}+B f(x)+C$.",
         "$g$ factors as $(x-1)(x+1)$.",
         "The graphs meet at $x=1$.",
         "The sum of roots of $g$ is $0$.",
@@ -680,15 +680,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSince $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ is a basis of the space of polynomials of degree at most $2$. Every quadratic $g$ can therefore be written uniquely as $Af^{2}+Bf+C$.\n\nMatching coefficients against the given models recovers\n\n$$\n\nA=1,\\quad B=2,\\quad C=0\n\n$$\n\nso the rewrite exists.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nBecause $f$ is a non-constant line, squaring it produces an $x^{2}$ term. Matching the $x^{2}$ term, then the $x$ term, then the constant, recovers unique numbers $A$, $B$, and $C$ with\n\n$$\n\ng(x)=A f(x)^{2}+B f(x)+C\n\n$$\n\nHere the match gives\n\n$$\n\nA=1,\\quad B=2,\\quad C=0\n\n$$\n\nso such a rewriting exists.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nFactor the recovered quadratic:\n\n$$\n\ng(x)=x^{2} - 1\n\n$$\n\nand compare with the claimed factorization.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx \\left(x - 1\\right)=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=1\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{0}{1}=0\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False."
+        "**C.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x \\left(x - 1\\right)=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=1\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{0}{1}=0\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**E.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 1\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "2/5",
       "sort_order": 21,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 1\\qquad g(x)=x^{2} - 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-1\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-1\n$$\n\n$$\nf-g=x \\left(1 - x\\right)\\qquad \\Delta=1\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=2,\\quad C=0.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 1\\qquad g(x)=x^{2} - 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(0,-1\\right)\\qquad S=0\\qquad P=-1\n$$\n\n$$\nf-g=x \\left(1 - x\\right)\\qquad \\Delta=1\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=2,\\quad C=0.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -713,15 +713,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nBy definition, $\\Delta<0$ means the quadratic equation $g(x)=0$ has no real solutions.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nThe vertex abscissa $x=-b/(2a)$ is defined for every $a\\neq 0$. It does not depend on the sign of $\\Delta$.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nIf $\\Delta=0$ there is a repeated real root. The graph touches the $x$-axis at exactly that one point (a tangency).\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nBy definition, $\\Delta<0$ means the equation $g(x)=0$ has no real solutions.\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nThe vertex abscissa $x=-b/(2a)$ is defined whenever $a\\neq 0$. It does not depend on the sign of $\\Delta$.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nIf $\\Delta=0$ there is a repeated real root. The graph touches the $x$-axis at exactly that one point.\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nIf $a$ and $c$ have opposite signs then $ac<0$, so $-4ac>0$. Hence\n\n$$\n\n\\Delta=b^{2}-4ac\\ge -4ac>0\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → True\n\nWhen $\\Delta>0$ there are two distinct real roots. Their midpoint is $-b/(2a)$, which is exactly the axis, so the axis lies strictly between them.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 22,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDiscriminant dictionary; the vertex exists independently of $\\Delta$.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDiscriminant dictionary; the vertex exists independently of $\\Delta$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -746,15 +746,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCompute the difference:\n\n$$\n\ng(-x)-g(x)=-2bx\n\n$$\n\nThis vanishes for all $x$ if and only if $b=0$.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nCompute $g(-x)-g(x)=-2bx$. This vanishes for all $x$ if and only if $b=0$, which is exactly evenness.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nCompute the difference:\n\n$$\n\ng(-x)-g(x)=-2bx\n\n$$\n\nThis vanishes for all $x$ if and only if $b=0$.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nThe only function that is both even and odd is the zero function. A non-zero quadratic cannot be odd.\n\nMatching the claim, so the statement is False.",
+        "**C.** → False\n\nThe only function that is both even and odd is the zero function. A genuine parabola with $a\\neq 0$ cannot be odd.\n\nMatching the claim, so the statement is False.",
         "**D.** → True\n\nAxis $x=0$ means $b=0$, which is exactly the condition for $g$ to be even.\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nIf $b=0$, then $-g$ still has linear coefficient $0$, so evenness is preserved.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 23,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$g$ is even iff $b=0$ iff the axis is the $y$-axis.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$g$ is even iff $b=0$ iff the axis is the $y$-axis.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -779,15 +779,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nTangency of the line and the parabola means $\\Delta(g-f)=0$ (a double root).\n\n$$\n\n\\Delta=4\n\n$$\n\nso there are exactly $2$ distinct real meeting point(s).\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 6 x + 8=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=4\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(2\\right)=1\n\n$$\n\nSince $a>0$, the vertex $\\left(2,1\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
+        "**A.** → False\n\nTangency of the line and the parabola means the equation $g(x)=f(x)$ has a repeated root, so its discriminant vanishes.\n\n$$\n\n\\Delta=4\n\n$$\n\nso there are exactly $2$ distinct real meeting point(s).\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 6 x + 8=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=4\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(2\\right)=1\n\n$$\n\nBecause the leading coefficient is positive, $\\left(2,1\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nDifferentiate $g$ and evaluate:\n\n$$\n\ng'(x)=2 x - 4\\qquad g'\\left(2\\right)=0\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nDifferentiate $f$ and evaluate:\n\n$$\n\nf'(x)=2\\qquad f'\\left(x\\right)=2\n\n$$\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 24,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x - 3\\qquad g(x)=x^{2} - 4 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,1\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=5\n$$\n\n$$\nf-g=- x^{2} + 6 x - 8\\qquad \\Delta=4\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=\\frac{5}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x - 3\\qquad g(x)=x^{2} - 4 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,1\\right)\\qquad S=4\\qquad P=5\n$$\n\n$$\nf-g=- x^{2} + 6 x - 8\\qquad \\Delta=4\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=\\frac{5}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "geometric"
@@ -802,7 +802,7 @@
         "$f(g(0))=-3$.",
         "$g(f(0))=f(g(0))$.",
         "The sum of roots of $g$ is $1$.",
-        "$\\deg(g\\circ f)=2$."
+        "The nested function $g(f(x))$ is always a parabola."
       ],
       "answer_key": [
         true,
@@ -812,15 +812,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWork inside-out:\n\n$$\n\nf(0)=1\n\n$$\n\n$$\n\ng\\big(f(0)\\big)=g\\big(1\\big)=-2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=1\\qquad g\\big(f(0)\\big)=-2\n\n$$\n\n$$\n\ng(0)=-2\\qquad f\\big(g(0)\\big)=-3\n\n$$\n\nCompare $-2$ with $-3$.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nWork inside-out:\n\n$$\n\ng(0)=-2\n\n$$\n\n$$\n\nf\\big(g(0)\\big)=f\\big(-2\\big)=-3\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → False\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=1\\qquad g\\big(f(0)\\big)=-2\n\n$$\n\n$$\n\ng(0)=-2\\qquad f\\big(g(0)\\big)=-3\n\n$$\n\nCompare $-2$ with $-3$.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nDegrees of non-constant polynomials multiply under composition:\n\n$$\n\n\\deg(g\\circ f)=\\deg(g)\\cdot\\deg(f)=2\\cdot 1=2\n\n$$\n\nExpanding explicitly:\n\n$$\n\n4 x^{2} + 2 x - 2\n\n$$\n\nwhich has degree $2$. Adding degrees ($1+2=3$) is the wrong rule.\n\nMatching the claim, so the statement is True."
+        "**D.** → True\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-1}{1}=1\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nSubstitute the line into the parabola and expand:\n\n$$\n\ng(f(x))=4 x^{2} + 2 x - 2\n\n$$\n\nThe highest power of $x$ that appears is $x^{2}$, so the nested function is still a parabola.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 25,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 3\\qquad \\Delta=21\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-1,\\quad C=-\\frac{5}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 3\\qquad \\Delta=21\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-1,\\quad C=-\\frac{5}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -845,15 +845,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=1\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x-3\\right)^2+1\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(3\\right)=1\n\n$$\n\nSince $a>0$, the vertex $\\left(3,1\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 9 x + 10=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=1\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x-3\\right)^2+1\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(3\\right)=1\n\n$$\n\nBecause the leading coefficient is positive, $\\left(3,1\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 9 x + 10=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nSubstitute $x=3$ into $g$:\n\n$$\n\ng\\left(3\\right)=1\n\n$$\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 26,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x\\qquad g(x)=x^{2} - 6 x + 10\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,1\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=10\n$$\n\n$$\nf-g=- x^{2} + 9 x - 10\\qquad \\Delta=41\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-2,\\quad C=10.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x\\qquad g(x)=x^{2} - 6 x + 10\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,1\\right)\\qquad S=6\\qquad P=10\n$$\n\n$$\nf-g=- x^{2} + 9 x - 10\\qquad \\Delta=41\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-2,\\quad C=10.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -867,7 +867,7 @@
         "$f(x)=2x+1$.",
         "$g(x)=x^{2}-5x+6$.",
         "The sum of roots of $g$ is $-5$.",
-        "There exist $A,B,C$ with $g=Af^{2}+Bf+C$.",
+        "There exist real numbers $A,B,C$ with $g(x)=A f(x)^{2}+B f(x)+C$.",
         "The graphs meet more than twice."
       ],
       "answer_key": [
@@ -880,13 +880,13 @@
       "tactical_explanations": [
         "**A.** → True\n\nExpand the recovered model $f$:\n\n$$\n\nf(x)=2 x + 1\n\n$$\n\nCompare with the claimed formula $f(x)=2 x + 1$.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nExpand the recovered model $g$:\n\n$$\n\ng(x)=x^{2} - 5 x + 6\n\n$$\n\nCompare with the claimed formula $g(x)=x^{2} - 5 x + 6$.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-5}{1}=5\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nSince $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ is a basis of the space of polynomials of degree at most $2$. Every quadratic $g$ can therefore be written uniquely as $Af^{2}+Bf+C$.\n\nMatching coefficients against the given models recovers\n\n$$\n\nA=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}\n\n$$\n\nso the rewrite exists.\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 7 x + 5=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: degree $\\le 2$ forbids it.\n\nMatching the claim, so the statement is False."
+        "**C.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-5}{1}=5\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nBecause $f$ is a non-constant line, squaring it produces an $x^{2}$ term. Matching the $x^{2}$ term, then the $x$ term, then the constant, recovers unique numbers $A$, $B$, and $C$ with\n\n$$\n\ng(x)=A f(x)^{2}+B f(x)+C\n\n$$\n\nHere the match gives\n\n$$\n\nA=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}\n\n$$\n\nso such a rewriting exists.\n\nMatching the claim, so the statement is True.",
+        "**E.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 7 x + 5=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: a quadratic equation forbids it.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 27,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n$$\nf-g=- x^{2} + 7 x - 5\\qquad \\Delta=29\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad S=5\\qquad P=6\n$$\n\n$$\nf-g=- x^{2} + 7 x - 5\\qquad \\Delta=29\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-3,\\quad C=\\frac{35}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "hybrid"
@@ -901,7 +901,7 @@
         "The vertex of $g$ is $(1,-4)$.",
         "The roots of $g$ are $-1$ and $3$.",
         "The axis of $g$ equals the Vieta sum of its roots.",
-        "$\\deg(f\\circ g)=2$."
+        "The nested function $f(g(x))$ is always a parabola."
       ],
       "answer_key": [
         false,
@@ -911,15 +911,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(1\\right)=-4\n\n$$\n\nSince $a>0$, the vertex $\\left(1,-4\\right)$ is the global minimum point.\n\nCheck whether that point lies on $y=f(x)$:\n\n$$\n\nf\\left(1\\right)=0\n\n$$\n\nCompare with the vertex height $-4$.\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(1\\right)=-4\n\n$$\n\nSince $a>0$, the vertex $\\left(1,-4\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
+        "**A.** → False\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(1\\right)=-4\n\n$$\n\nBecause the leading coefficient is positive, $\\left(1,-4\\right)$ is the lowest point on the graph.\n\nCheck the height against the claimed line:\n\n$$\n\nf\\left(1\\right)=0\n\n$$\n\nCompare with the vertex height $-4$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(1\\right)=-4\n\n$$\n\nBecause the leading coefficient is positive, $\\left(1,-4\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
         "**C.** → True\n\nSolve $g(x)=0$. The discriminant is\n\n$$\n\n\\Delta=16\n\n$$\n\nso the roots are\n\n$$\n\nx\\in\\{-1, 3\\}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nDegrees of non-constant polynomials multiply under composition:\n\n$$\n\n\\deg(g\\circ f)=\\deg(g)\\cdot\\deg(f)=2\\cdot 1=2\n\n$$\n\nExpanding explicitly:\n\n$$\n\nx \\left(x - 4\\right)\n\n$$\n\nwhich has degree $2$. Adding degrees ($1+2=3$) is the wrong rule.\n\nMatching the claim, so the statement is True."
+        "**D.** → False\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-2}{2\\cdot 1}=1\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nSubstitute the parabola into the line and expand:\n\n$$\n\nf(g(x))=x^{2} - 2 x - 4\n\n$$\n\nThe highest power of $x$ that appears is $x^{2}$.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "3/5",
       "sort_order": 28,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 1\\qquad g(x)=x^{2} - 2 x - 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-4\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n$$\nf-g=- x^{2} + 3 x + 2\\qquad \\Delta=17\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=0,\\quad C=-4.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x - 1\\qquad g(x)=x^{2} - 2 x - 3\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-4\\right)\\qquad S=2\\qquad P=-3\n$$\n\n$$\nf-g=- x^{2} + 3 x + 2\\qquad \\Delta=17\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=0,\\quad C=-4.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -944,15 +944,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFirst locate the axis of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nEvaluate both models there:\n\n$$\n\nf\\left(2\\right)=7\\qquad g\\left(2\\right)=-3\n\n$$\n\n$$\n\nf-g=7-\\left(-3\\right)=10\n\n$$\n\nCompare with the claimed value $10$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-4}{1}=4\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nThe opening direction is the sign of the leading coefficient:\n\n$$\n\na=1\n\n$$\n\nUpwards if $a>0$, downwards if $a<0$.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nFirst find the axis of the parabola $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nEvaluate both models there:\n\n$$\n\nf\\left(2\\right)=7\\qquad g\\left(2\\right)=-3\n\n$$\n\n$$\n\nf-g=7-\\left(-3\\right)=10\n\n$$\n\nCompare with the claimed value $10$.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-4}{2\\cdot 1}=2\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**D.** → True\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-4}{1}=4\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**E.** → False\n\nA parabola opens according to the sign of its leading coefficient:\n\n$$\n\ng(x)=x^{2} - 4 x + 1\n\n$$\n\nHere the leading coefficient is $1$, so the parabola opens upwards.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 29,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x - 1\\qquad g(x)=x^{2} - 4 x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-3\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=1\n$$\n\n$$\nf-g=- x^{2} + 8 x - 2\\qquad \\Delta=56\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{7}{8},\\quad C=\\frac{1}{16}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x - 1\\qquad g(x)=x^{2} - 4 x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(2,-3\\right)\\qquad S=4\\qquad P=1\n$$\n\n$$\nf-g=- x^{2} + 8 x - 2\\qquad \\Delta=56\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{7}{8},\\quad C=\\frac{1}{16}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -978,14 +978,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nThe discriminant of $g$ is\n\n$$\n\n\\Delta=b^{2}-4ac=-3\n\n$$\n\nso $g$ has exactly $0$ distinct real root(s).\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} + 1=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=-4\n\n$$\n\nhence no real meetings.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nThe vertex abscissa is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n\n$$\n\nEvaluate $g$ there:\n\n$$\n\ng\\left(-\\frac{1}{2}\\right)=\\frac{3}{4}\n\n$$\n\nSince $a>0$, the vertex $\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$ is the global minimum point.\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nVieta's product of roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{1}{1}=1\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} + 1=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=-4\n\n$$\n\nhence no real meeting.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nThe vertex sits on the axis of the parabola:\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\n$$\n\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n\n$$\n\nThe height there is\n\n$$\n\ng\\left(-\\frac{1}{2}\\right)=\\frac{3}{4}\n\n$$\n\nBecause the leading coefficient is positive, $\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$ is the lowest point on the graph.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nFor a parabola $ax^{2}+bx+c$, the product of the roots is\n\n$$\n\nP=\\frac{c}{a}\n\n$$\n\n$$\n\nP=\\frac{1}{1}=1\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nA constant function has slope $0$. The recovered linear model is\n\n$$\n\nf(x)=x\n\n$$\n\nwith slope $1$.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 30,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x\\qquad g(x)=x^{2} + x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},\\frac{3}{4}\\right)\\qquad \\mathrm{sum}=-1\\qquad \\mathrm{product}=1\n$$\n\n$$\nf-g=- x^{2} - 1\\qquad \\Delta=-4\\qquad \\#\\mathrm{meetings}=0\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=1,\\quad B=1,\\quad C=1.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=x\\qquad g(x)=x^{2} + x + 1\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},\\frac{3}{4}\\right)\\qquad S=-1\\qquad P=1\n$$\n\n$$\nf-g=- x^{2} - 1\\qquad \\Delta=-4\\qquad \\mathrm{meetings}=0\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=1,\\quad B=1,\\quad C=1.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -993,13 +993,13 @@
     {
       "id": "math-7-31",
       "case_id": "MATH 7.31",
-      "title": "Linear Basis for Every Quadratic",
-      "context": "Let $f$ be any non-constant linear polynomial and $g$ any quadratic polynomial over $\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Writing a Parabola Using a Line",
+      "context": "Let $f$ be any non-constant linear function and $g$ any quadratic function. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "There always exist $A,B,C\\in\\mathbb{R}$ with $g=Af^{2}+Bf+C$.",
+        "There always exist real numbers $A,B,C$ with $g(x)=A f(x)^{2}+B f(x)+C$.",
         "The coefficient $A$ is uniquely determined by $g$ and $f$.",
-        "The same identity remains true if $f$ is replaced by a non-zero constant polynomial.",
-        "If $g=Af^{2}+Bf+C$, then necessarily $\\deg(g\\circ f)=4$.",
+        "The same identity remains true if $f$ is replaced by a non-zero constant function.",
+        "If $g=Af^{2}+Bf+C$, then $g(f(x))$ always has an $x^{4}$ term.",
         "If $g=Af^{2}+Bf+C$ with $A\\neq 0$, then $g$ and $f$ have exactly the same roots."
       ],
       "answer_key": [
@@ -1010,15 +1010,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIf $\\deg f=1$, then $\\{1,f,f^{2}\\}$ is a basis of the three-dimensional space of polynomials of degree at most $2$. Every quadratic $g$ is therefore a unique linear combination\n\n$$\n\ng=Af^{2}+Bf+C\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nMatching leading coefficients forces\n\n$$\n\nA=\\frac{a_g}{a_f^{2}}\n\n$$\n\na single number determined by $g$ and $f$.\n\nMatching the claim, so the statement is True.",
-        "**C.** → False\n\nA non-zero constant has degree $0$. Then $f^{2}$ is still constant, so $Af^{2}+Bf+C$ stays in degree $0$ and cannot equal a genuine quadratic.\n\nMatching the claim, so the statement is False.",
-        "**D.** → False\n\nDegrees multiply under composition:\n\n$$\n\n\\deg(g\\circ f)=\\deg(g)\\cdot\\deg(f)=2\\cdot 1=2\n\n$$\n\nnot $4$. Degree $4$ would require composing with a degree-$2$ inner or outer map.\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nThe equation $Af(x)^{2}+Bf(x)+C=0$ is quadratic in the value $f(x)$. Its solutions need not be the roots of $f$ itself.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nBecause $f$ is a non-constant line, $f(x)^{2}$ contributes an $x^{2}$ term. Matching the $x^{2}$ term, then the $x$ term, then the constant, always recovers unique numbers $A$, $B$, $C$ with\n\n$$\n\ng(x)=A f(x)^{2}+B f(x)+C\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nMatching the $x^{2}$ coefficients forces\n\n$$\n\nA=\\frac{a_g}{a_f^{2}}\n\n$$\n\na single number determined by $g$ and $f$.\n\nMatching the claim, so the statement is True.",
+        "**C.** → False\n\nA non-zero constant has no $x$ term. Squaring it stays constant, so $A f(x)^{2}+B f(x)+C$ cannot produce a genuine parabola.\n\nMatching the claim, so the statement is False.",
+        "**D.** → False\n\nNesting a parabola around a line expands to highest power $x^{2}$, not $x^{4}$. An $x^{4}$ term would need nesting around a parabola.\n\nMatching the claim, so the statement is False.",
+        "**E.** → False\n\nThe equation $A f(x)^{2}+B f(x)+C=0$ is quadratic in the value $f(x)$. Its solutions need not be the roots of $f$ itself.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 31,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDegree-$1$ $f$ makes $\\{1,f,f^{2}\\}$ a basis of polynomials of degree at most $2$.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nLine of slope type $1$ $f$ makes $\\{1,f,f^{2}\\}$ a building blocks of polynomials of degree at most $2$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1043,15 +1043,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIn vertex form $g(x)=a(x-h)^{2}+k$ the critical point is uniquely $x=h$, and $g(h)=k$, so $(h,k)$ is the unique vertex.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nIn the form $g(x)=a(x-h)^{2}+k$ the critical point is uniquely $x=h$, and $g(h)=k$, so $(h,k)$ is the unique vertex.\n\nMatching the claim, so the statement is True.",
         "**B.** → False\n\nIf $a<0$ the parabola opens downwards, so the vertex value $k$ is a global maximum, not a minimum.\n\nMatching the claim, so the statement is False.",
         "**C.** → True\n\nThe axis is $x=h$. Changing $k$ translates the graph vertically and does not move the axis.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nReplacing $h$ by $-h$ reflects the axis across the $y$-axis. The graph is unchanged only in the special case $h=0$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nCompleting the square writes any real quadratic in vertex form. The leading coefficient $a$ and the vertex $(h,k)$ are uniquely determined by $g$, so the triple $(a,h,k)$ is unique.\n\nMatching the claim, so the statement is True."
+        "**D.** → False\n\nReplacing $h$ by $-h$ reflects the axis across the $y$-axis. The graph is unchanged only when $h=0$.\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nCompleting the square writes any real parabola in vertex form. The leading coefficient $a$ and the vertex $(h,k)$ are uniquely determined by $g$, so the triple $(a,h,k)$ is unique.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 32,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nVertex form is unique: $(h,k)$ is the vertex and $a$ is the leading coefficient.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nVertex form is unique: $(h,k)$ is the vertex and $a$ is the leading coefficient.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1076,15 +1076,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe equation $f(x)=g(x)$ rearranges to a polynomial equation of degree at most $2$, which has at most two real roots.\n\nMatching the claim, so the statement is False.",
+        "**A.** → False\n\nThe equation $f(x)=g(x)$ rearranges to a polynomial equation of highest power at most $2$, which has at most two real roots.\n\nMatching the claim, so the statement is False.",
         "**B.** → True\n\nFor example, $g(x)=x^{2}+1$ and $f(x)=0$ never meet: $x^{2}+1=0$ has no real solution.\n\nMatching the claim, so the statement is True.",
         "**C.** → True\n\nTangency means a shared point and a shared first derivative. Equivalently, $x_0$ is a root of both $g-f$ and $(g-f)'$, i.e. a double root of $g-f$.\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nA horizontal line may miss the parabola, touch it once, or cut it twice. Two intersections are not forced.\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nA vertical translation changes only the constant term of $g$. The degree of $g-f$ remains $2$, so a third intersection cannot appear.\n\nMatching the claim, so the statement is False."
+        "**E.** → False\n\nA vertical translation changes only the constant term of $g$. The difference $g-f$ remains a quadratic, so a third intersection cannot appear.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 33,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$f=g$ is at most quadratic $\\Rightarrow$ at most two real meetings.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$f=g$ is at most quadratic $\\Rightarrow$ at most two real meetings.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1099,7 +1099,7 @@
         "If $a<0$, then the range of $g$ is $[k,+\\infty)$.",
         "The range of $g$ is never all of $\\mathbb{R}$.",
         "Any non-constant linear function has range $\\mathbb{R}$.",
-        "If $k=0$ and $a>0$, then $g$ never takes negative values."
+        "When the vertex sits on the $x$-axis and the parabola opens upwards, $g$ never takes negative values."
       ],
       "answer_key": [
         true,
@@ -1109,15 +1109,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom vertex form $g(x)=a(x-h)^{2}+k$ with $a>0$, the square is nonnegative, so $g(x)\\ge k$ with equality at $x=h$. The range is $[k,+\\infty)$.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nFrom $g(x)=a(x-h)^{2}+k$ with $a>0$, the square is nonnegative, so $g(x)\\ge k$ with equality at $x=h$. The range is $[k,+\\infty)$.\n\nMatching the claim, so the statement is True.",
         "**B.** → False\n\nIf $a<0$ the parabola opens downwards, so the range is $(-\\infty,k]$, not $[k,+\\infty)$.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nA quadratic is unbounded on only one side of its vertex, so its range misses an infinite open ray and cannot be all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nA non-constant linear map is continuous and strictly monotone on $\\mathbb{R}$, hence surjective onto $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nIf $a>0$ and $k=0$, the range is $[0,+\\infty)$, so $g$ never takes negative values.\n\nMatching the claim, so the statement is True."
+        "**C.** → True\n\nA parabola is unbounded on only one side, so its range can never be all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nA non-constant line is continuous and strictly monotone on $\\mathbb{R}$, so its range is all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nIf $k=0$ and $a>0$, then $g(x)=a(x-h)^{2}\\ge 0$, so $g$ never takes negative values.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 34,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nOpening direction decides whether the range is $[k,+\\infty)$ or $(-\\infty,k]$.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nOpening direction decides whether the range is $[k,+\\infty)$ or $(-\\infty,k]$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1128,7 +1128,7 @@
       "title": "Difference $f-g$ and Intercept Traps",
       "context": "Let $f$ be linear and $g$ quadratic. Write $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Always $\\deg d=2$.",
+        "The difference $d=f-g$ is always a quadratic function.",
         "The $y$-intercept of $d$ is $f(0)-g(0)$.",
         "If $d(0)=0$, then the graphs of $f$ and $g$ intersect on the $y$-axis.",
         "If $d$ has two distinct real roots, the graphs intersect more than twice.",
@@ -1142,15 +1142,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA quadratic minus a linear polynomial still has degree $2$: the $x^{2}$ term cannot cancel.\n\nMatching the claim, so the statement is True.",
+        "**A.** → True\n\nA parabola minus a line still has an $x^{2}$ term, so $d=f-g$ is itself a quadratic function.\n\nMatching the claim, so the statement is True.",
         "**B.** → True\n\nDirect evaluation.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nIf $d(0)=0$ then $f(0)=g(0)$, so the graphs share the point $(0,f(0))$ on the $y$-axis.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nIf $d(0)=0$, then $f(0)=g(0)$, so the graphs share the point $(0,f(0))$ on the $y$-axis.\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nTwo distinct real roots of $d=f-g$ mean exactly two intersections of the graphs, not more than two.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nSince $\\deg d=2$, the graph of $d$ is a parabola.\n\nMatching the claim, so the statement is True."
+        "**E.** → True\n\nBecause $d$ is a quadratic function, its graph is a parabola.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 35,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$d=f-g$ is quadratic; its zeros are the intersection abscissae.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$d=f-g$ is quadratic; its zeros are the intersection abscissae.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1162,24 +1162,24 @@
       "context": "Let $g(x)=x^{2}-2x+2$ and $f_t(x)=tx$. Evaluate each statement about the real parameter $t$. Mark it TRUE or FALSE.",
       "statements": [
         "There exist real values of $t$ for which $y=f_t$ is tangent to $y=g$.",
-        "For $t=0$, the graphs intersect twice.",
+        "There is a slope for which the line misses the parabola entirely.",
         "If $\\Delta(t)>0$, the graphs intersect at two distinct points.",
-        "The vertex of $g$ lies on the line $y=f_0(x)$.",
+        "The vertex of $g$ lies on the $x$-axis.",
         "Tangency can occur for at most one real $t$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTangency means $\\Delta(t)=0$. From the overview,\n\n$$\n\n\\Delta(t)=(2+t)^{2}-8\n\n$$\n\nwhich is a genuine quadratic in $t$ and takes a negative value at $t=-2$, so real roots exist.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nSubstitute $t=0$:\n\n$$\n\nf(x)=0\\qquad g(x)=x^{2} - 2 x + 2\n\n$$\n\n$$\n\ng-f=x^{2} - 2 x + 2\\qquad \\Delta=-4\n\n$$\n\nHence exactly $0$ distinct real intersection(s).\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nBy definition, $\\Delta(t)>0$ means the quadratic $g-f_t$ has two distinct real roots, so the graphs meet at two distinct points.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nThe vertex of $g$ is\n\n$$\n\n\\left(1,1\\right)\n\n$$\n\nwhile $f_0(x)=0$ is the $x$-axis. Compare the vertex height with $0$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nTangency is the equation $\\Delta(t)=0$, a quadratic condition in $t$. A quadratic equation can have two real roots, so tangency is not limited to a single parameter value.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nTangency means $\\Delta(t)=0$. From the overview that equation has real solutions for this family.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe discriminant of $g-f_t$ is a quadratic in the slope. For some slopes it is negative, so those lines miss the parabola.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nBy definition, $\\Delta(t)>0$ means $g-f_t$ has two distinct real roots, so the graphs meet at two distinct points.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nThe vertex of $g$ is\n\n$$\n\n\\left(1,1\\right)\n\n$$\n\nLying on the $x$-axis would require height $0$. Compare with the recovered height.\n\nMatching the claim, so the statement is False.",
+        "**E.** → False\n\nTangency is the equation $\\Delta(t)=0$, a quadratic condition in $t$. A quadratic equation can have two real roots, so tangency is not limited to a single slope.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 36,
@@ -1194,8 +1194,8 @@
       "title": "Composition Trap with Explicit Maps",
       "context": "Let $f(x)=3x-1$ and $g(x)=2x^{2}-4x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Because $\\deg f=1$ and $\\deg g=2$, the map $f\\circ g$ must have degree $3$.",
-        "$\\deg(g\\circ f)=2$.",
+        "Because $f$ is a line and $g$ is a parabola, the nested function $f(g(x))$ must have an $x^{3}$ term.",
+        "The nested function $g(f(x))$ is always a parabola.",
         "$g(f(0))=0$.",
         "$f(g(0))=g(f(0))$.",
         "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{9}$."
@@ -1208,15 +1208,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nDegrees multiply under composition:\n\n$$\n\n\\deg(f\\circ g)=1\\cdot 2=2\n\n$$\n\n$$\n\n6 x^{2} - 12 x - 19\n\n$$\n\nDegree $2$.\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nDegrees of non-constant polynomials multiply under composition:\n\n$$\n\n\\deg(g\\circ f)=\\deg(g)\\cdot\\deg(f)=2\\cdot 1=2\n\n$$\n\nExpanding explicitly:\n\n$$\n\n6 x \\left(3 x - 4\\right)\n\n$$\n\nwhich has degree $2$. Adding degrees ($1+2=3$) is the wrong rule.\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nWork inside-out:\n\n$$\n\nf(0)=-1\n\n$$\n\n$$\n\ng\\big(f(0)\\big)=g\\big(-1\\big)=0\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → False\n\nSubstitute the parabola into the line and expand:\n\n$$\n\nf(g(x))=6 x^{2} - 12 x - 19\n\n$$\n\nThe highest power of $x$ that appears is $x^{2}$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nSubstitute the line into the parabola and expand:\n\n$$\n\ng(f(x))=6 x \\left(3 x - 4\\right)\n\n$$\n\nThe highest power of $x$ that appears is $x^{2}$, so the nested function is still a parabola.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=-1\\qquad g\\big(f(0)\\big)=0\n\n$$\n\n$$\n\ng(0)=-6\\qquad f\\big(g(0)\\big)=-19\n\n$$\n\nCompare $0$ with $-19$.\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=-1\\qquad g\\big(f(0)\\big)=0\n\n$$\n\n$$\n\ng(0)=-6\\qquad f\\big(g(0)\\big)=-19\n\n$$\n\nCompare $0$ with $-19$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nWrite $g=Af^{2}+Bf+C$ and match coefficients. The $x^{2}$-coefficient of $f^{2}$ is $(3)^2$, so\n\n$$\n\nA\\cdot(3)^2=2\\implies A=\\frac{2}{9}\n\n$$\n\nContinuing the match for the linear and constant terms gives\n\n$$\n\nB=-\\frac{8}{9},\\quad C=-\\frac{64}{9}\n\n$$\n\nThe full triple is\n\n$$\n\n(A,B,C)=\\left(\\frac{2}{9},-\\frac{8}{9},-\\frac{64}{9}\\right)\n\n$$\n\nMatching the claim, so the statement is True."
+        "**E.** → True\n\nWrite $g(x)=A f(x)^{2}+B f(x)+C$ and match coefficients. The $x^2$ coefficient coming from $f^2$ is $(3)^2$, so\n\n$$\n\nA\\cdot(3)^2=2\\implies A=\\frac{2}{9}\n\n$$\n\nContinuing for the linear and constant terms gives\n\n$$\n\nB=-\\frac{8}{9},\\quad C=-\\frac{64}{9}\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 37,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x - 1\\qquad g(x)=2 x^{2} - 4 x - 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-8\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n$$\nf-g=- 2 x^{2} + 7 x + 5\\qquad \\Delta=89\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{2}{9},\\quad B=-\\frac{8}{9},\\quad C=-\\frac{64}{9}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=3 x - 1\\qquad g(x)=2 x^{2} - 4 x - 6\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(1,-8\\right)\\qquad S=2\\qquad P=-3\n$$\n\n$$\nf-g=- 2 x^{2} + 7 x + 5\\qquad \\Delta=89\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{2}{9},\\quad B=-\\frac{8}{9},\\quad C=-\\frac{64}{9}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1241,15 +1241,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-3}{2\\cdot 1}=\\frac{3}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{3}{2}\\right)=-\\frac{49}{4}\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x-\\frac{3}{2}\\right)^2-\\frac{49}{4}\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-3}{2\\cdot 1}=\\frac{3}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{3}{2}\\right)=-\\frac{49}{4}\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x-\\frac{3}{2}\\right)^2-\\frac{49}{4}\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**C.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is the difference quotient\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=-10,\\qquad g(2)=-12\n\n$$\n\n$$\n\n\\frac{-12--10}{2}=-1\n\n$$\n\nThe slope of $f$ is $-3$.\n\nCompare $-1$ with $-3$.\n\nMatching the claim, so the statement is False.",
+        "**A.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-3}{2\\cdot 1}=\\frac{3}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{3}{2}\\right)=-\\frac{49}{4}\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x-\\frac{3}{2}\\right)^2-\\frac{49}{4}\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-3}{2\\cdot 1}=\\frac{3}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{3}{2}\\right)=-\\frac{49}{4}\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x-\\frac{3}{2}\\right)^2-\\frac{49}{4}\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**C.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=-10,\\qquad g(2)=-12\n\n$$\n\n$$\n\n\\frac{-12--10}{2}=-1\n\n$$\n\nThe slope of $f$ is $-3$.\n\nCompare $-1$ with $-3$.\n\nMatching the claim, so the statement is False.",
         "**D.** → True\n\nWork inside-out:\n\n$$\n\ng(0)=-10\n\n$$\n\n$$\n\nf\\big(g(0)\\big)=f\\big(-10\\big)=36\n\n$$\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nA constant function has slope $0$. The recovered linear model is\n\n$$\n\nf(x)=6 - 3 x\n\n$$\n\nwith slope $-3$.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 38,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=6 - 3 x\\qquad g(x)=x^{2} - 3 x - 10\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-10\n$$\n\n$$\nf-g=16 - x^{2}\\qquad \\Delta=64\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-\\frac{1}{3},\\quad C=-12.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=6 - 3 x\\qquad g(x)=x^{2} - 3 x - 10\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)\\qquad S=3\\qquad P=-10\n$$\n\n$$\nf-g=16 - x^{2}\\qquad \\Delta=64\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{9},\\quad B=-\\frac{1}{3},\\quad C=-12.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1261,7 +1261,7 @@
       "context": "Let $f(x)=2x+3$, $g(x)=x^{2}-x-2$, and $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The leading coefficient of $d$ is $-1$.",
-        "$\\deg d=2$.",
+        "The difference $d=f-g$ is a quadratic function.",
         "The graphs of $f$ and $g$ meet wherever $d=0$.",
         "$d(0)=0$.",
         "Because $d$ looks cubic at a glance, $f$ and $g$ can meet three times."
@@ -1275,14 +1275,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the difference:\n\n$$\n\n- x^{2} + 3 x + 5\n\n$$\n\nThe leading coefficient is $-1$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nDegrees multiply under composition:\n\n$$\n\n\\deg(g\\circ f)=2,\\qquad \\deg(f\\circ g)=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 3 x - 5=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nDegrees multiply under composition:\n\n$$\n\nhighest power=2,\\qquad highest power=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 3 x - 5=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nSince $d=f-g$, evaluate the difference:\n\n$$\n\nd\\left(0\\right)=(f-g)\\left(0\\right)=5\n\n$$\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 3 x - 5=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: degree $\\le 2$ forbids it.\n\nMatching the claim, so the statement is False."
+        "**E.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 3 x - 5=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=29\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: a quadratic equation forbids it.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 39,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 3\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 5\\qquad \\Delta=29\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{7}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x + 3\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 5\\qquad \\Delta=29\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-2,\\quad C=\\frac{7}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1293,22 +1293,22 @@
       "title": "Parameter Constraint on Opening",
       "context": "Let $g_a(x)=ax^{2}-4x+1$ with $a\\neq 0$, and let $f(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "If $a=1$, the graphs of $f$ and $g_a$ meet twice.",
-        "If $a=10$, the graphs of $f$ and $g_a$ still meet twice.",
+        "When the leading coefficient of $g_a$ is positive and not too large, the graphs can meet twice.",
+        "Making the leading coefficient of $g_a$ large enough can make the graphs miss each other.",
         "The axis of $g_a$ is $x=2$ for every $a$.",
         "If $a<0$, then $g_a$ opens downwards.",
         "There exists $a$ for which $y=f$ is tangent to $y=g_a$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         false,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute $a=1$:\n\n$$\n\ng(x)=x^{2} - 4 x + 1\\qquad f(x)=x\n\n$$\n\n$$\n\n\\Delta=21\\qquad \\#\\mathrm{meetings}=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nSubstitute $a=10$:\n\n$$\n\ng(x)=10 x^{2} - 4 x + 1\\qquad f(x)=x\n\n$$\n\n$$\n\n\\Delta=-15\\qquad \\#\\mathrm{meetings}=0\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**A.** → True\n\nWhen $a>0$ is small enough that $25-4a>0$, the discriminant is positive and the graphs meet twice.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nThe discriminant of $g_a-f$ is $25-4a$. Making $a$ large enough drives this negative, so the graphs miss each other.\n\nMatching the claim, so the statement is True.",
         "**C.** → False\n\nFor $g_a(x)=ax^{2}-4x+1$ the axis is\n\n$$\n\nx=\\frac{4}{2a}=\\frac{2}{a}\n\n$$\n\nwhich depends on $a$, so it is not the fixed line $x=2$ for every $a$.\n\nMatching the claim, so the statement is False.",
         "**D.** → True\n\nThe leading coefficient of $g_a$ is the parameter $a$ itself.\n\nIf $a<0$, the parabola opens downwards.\n\nMatching the claim, so the statement is True.",
         "**E.** → True\n\nTangency means $\\Delta(g_a-f)=0$. Expanding gives\n\n$$\n\n\\Delta=25-4a\n\n$$\n\nwhich vanishes at $a=\\frac{25}{4}\\neq 0$, so a tangent member exists in the family.\n\nMatching the claim, so the statement is True."
@@ -1340,15 +1340,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nVieta's sum of roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\nwhile the axis of symmetry is\n\n$$\n\nx=-\\frac{b}{2a}=\\frac{S}{2}\n\n$$\n\nThe axis is the midpoint of the roots, not the line $x=S$. Those two vertical lines coincide only in the special case $S=0$.\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nCombine the two standard formulas:\n\n$$\n\nS=-\\frac{b}{a}\\qquad x_{\\mathrm{axis}}=-\\frac{b}{2a}\n\n$$\n\nDividing the sum by two recovers the axis in every case:\n\n$$\n\nx_{\\mathrm{axis}}=\\frac{S}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**A.** → False\n\nThe sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\nwhile the axis of the parabola is\n\n$$\n\nx=-\\frac{b}{2a}=\\frac{S}{2}\n\n$$\n\nThe axis is the midpoint of the roots, not the line $x=S$. Those two vertical lines coincide only when $S=0$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nThe sum of the roots and the axis are linked by\n\n$$\n\nS=-\\frac{b}{a}\\qquad x_{\\mathrm{axis}}=-\\frac{b}{2a}\n\n$$\n\nDividing the sum by two recovers the axis in every case:\n\n$$\n\nx_{\\mathrm{axis}}=\\frac{S}{2}\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → True\n\nIf $S=0$, then $-b/a=0$, so $b=0$. The axis formula collapses to\n\n$$\n\nx=-\\frac{b}{2a}=0\n\n$$\n\nwhich is the $y$-axis.\n\nMatching the claim, so the statement is True.",
         "**D.** → False\n\nA positive sum of roots does not force both roots to be positive. For example, the roots $-1$ and $3$ sum to $2>0$ while one of them is negative.\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nThe axis $x=-b/(2a)$ depends only on $a$ and $b$. Changing $c$ shifts the graph vertically and leaves the axis fixed.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 41,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$$\nS=-\\frac{b}{a}\\qquad \\ell:\\ x=\\frac{S}{2}.\n$$\nThe axis is the midpoint of the roots.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\n$$\nS=-\\frac{b}{a}\\qquad \\ell:\\ x=\\frac{S}{2}.\n$$\nThe axis is the midpoint of the roots.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1356,14 +1356,14 @@
     {
       "id": "math-7-42",
       "case_id": "MATH 7.42",
-      "title": "Composition Degrees Without Numbers",
-      "context": "Let $f$ be linear of degree $1$ and $g$ quadratic of degree $2$. No further data are given. Evaluate each claim about compositions. Mark it TRUE or FALSE.",
+      "title": "Nested Functions Without Numbers",
+      "context": "Let $f$ be a non-constant linear function and $g$ a quadratic function. No further data are given. Evaluate each claim about compositions. Mark it TRUE or FALSE.",
       "statements": [
-        "Always $\\deg(g\\circ f)=3$, because one adds the degrees.",
-        "Always $\\deg(f\\circ g)=2$.",
-        "Always $\\deg(g\\circ f)=\\deg(f\\circ g)$.",
-        "The polynomials $g\\circ f$ and $f\\circ g$ are always identical as functions.",
-        "If one replaces $f$ by $f^{2}$ (still using the same $g$), then $\\deg(g\\circ f^{2})=4$."
+        "The nested function $g(f(x))$ always has an $x^{3}$ term, because one adds $1$ and $2$.",
+        "The nested function $f(g(x))$ is always a parabola (highest power $x^{2}$).",
+        "The nested functions $g(f(x))$ and $f(g(x))$ always have the same highest power of $x$.",
+        "The polynomials $g(f(x))$ and $f(g(x))$ are always identical as functions.",
+        "If one replaces $f$ by $f^{2}$ (still using the same $g$), then $g(f(x)^{2})$ has highest power $x^{4}$."
       ],
       "answer_key": [
         false,
@@ -1373,15 +1373,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nFor non-constant polynomials, degree multiplies under composition:\n\n$$\n\n\\deg(g\\circ f)=\\deg(g)\\cdot\\deg(f)\n\n$$\n\nWith $\\deg f=1$ and $\\deg g=2$ this is\n\n$$\n\n2\\cdot 1=2\n\n$$\n\nnot $1+2=3$. Adding degrees is the wrong rule.\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nDegrees multiply:\n\n$$\n\n\\deg(f\\circ g)=\\deg(f)\\cdot\\deg(g)=1\\cdot 2=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nA quadratic minus a linear polynomial still has degree $2$: the $x^{2}$ term cannot cancel.\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nEqual degree does not imply equal polynomials. For $f(x)=x+1$ and $g(x)=x^{2}$,\n\n$$\n\ng(f(x))=(x+1)^{2}\\neq f(g(x))=x^{2}+1\n\n$$\n\nso composition does not commute.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nNow $\\deg(f^{2})=2$, so\n\n$$\n\n\\deg(g\\circ f^{2})=\\deg(g)\\cdot 2=4\n\n$$\n\nMatching the claim, so the statement is True."
+        "**A.** → False\n\nSubstitute a line into a parabola and expand. If $f(x)=mx+k$ and $g(x)=ax^{2}+bx+c$, then\n\n$$\n\ng(f(x))=a(mx+k)^{2}+b(mx+k)+c\n\n$$\n\nThe highest power that appears is $x^{2}$, not $x^{3}$. Adding $1$ and $2$ is the wrong rule; the powers multiply.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nA line applied to a parabola stays a parabola: if $f(x)=mx+k$, then\n\n$$\n\nf(g(x))=m g(x)+k\n\n$$\n\nstill has highest power $x^{2}$.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nBoth nestings expand to a parabola. Expanding $g(f(x))$ and $f(g(x))$ each produces highest power $x^{2}$, so the highest powers agree, even though the formulas need not.\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nEqual highest power does not mean equal formulas. For $f(x)=x+1$ and $g(x)=x^{2}$,\n\n$$\n\ng(f(x))=(x+1)^{2}\\neq f(g(x))=x^{2}+1\n\n$$\n\nso nesting does not commute.\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nNow $f(x)^{2}$ itself is a parabola (highest power $x^{2}$). Nesting $g$ around it gives\n\n$$\n\ng\\big(f(x)^{2}\\big)\n\n$$\n\nwith highest power $x^{4}$.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 42,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDegree multiplies under composition. Adding degrees ($1+2=3$) is the trap.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nDegree multiplies under composition. Adding degrees ($1+2=3$) is the trap.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1396,7 +1396,7 @@
         "$g$ is strictly monotone on all of $\\mathbb{R}$.",
         "On the half-line to the right of the axis of $g$, the restriction of $g$ is strictly monotone.",
         "If $m>0$ and $a>0$, then $f(x)<g(x)$ for all sufficiently large $x$.",
-        "If $m=0$ were allowed, $f$ would still be strictly monotone."
+        "A constant function (slope zero) is still strictly monotone."
       ],
       "answer_key": [
         true,
@@ -1406,15 +1406,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIf $m\\neq 0$ then $f'(x)=m$ never changes sign, so $f$ is strictly monotone on $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nIf $m\\neq 0$ then $f'(x)=m$ never changes sign, so $f$ is strictly monotone on $\\mathbb{R}$.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nOn either open half-line determined by the axis, $g'$ keeps a constant sign, so the restriction of $g$ is strictly monotone there.\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nIf $a>0$, then $g(x)/x^{2}\\to a>0$ as $x\\to+\\infty$, while $f(x)/x^{2}\\to 0$. Hence $g$ dominates $f$ for all sufficiently large $x$.\n\nMatching the claim, so the statement is True.",
-        "**E.** → False\n\nIf $m=0$ then $f$ is constant. Constants are not strictly monotone.\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nA non-constant line ($m\\neq 0$) is strictly increasing or strictly decreasing on all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nA non-constant line ($m\\neq 0$) is strictly increasing or strictly decreasing on all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is False.",
+        "**C.** → True\n\nA non-constant line ($m\\neq 0$) is strictly increasing or strictly decreasing on all of $\\mathbb{R}$.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nIf $a>0$, the parabola grows faster than any line as $x\\to+\\infty$, so $f(x)<g(x)$ for all large $x$.\n\nMatching the claim, so the statement is True.",
+        "**E.** → False\n\nA non-zero constant has no $x$ term. Squaring it stays constant, so $A f(x)^{2}+B f(x)+C$ cannot produce a genuine parabola.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 43,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nNon-constant lines are globally monotone; quadratics only on each side of the axis.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nNon-constant lines are globally monotone; quadratics only on each side of the axis.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1439,15 +1439,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nTangency of $y=tx+1$ to $y=g$ means the discriminant\n\n$$\n\n\\Delta(t)=(b-t)^{2}-4a(c-1)\n\n$$\n\nvanishes. That is one equation in $t$, not an identity holding for every $t$.\n\nMatching the claim, so the statement is False.",
-        "**B.** → False\n\nTangency means $\\Delta(t)=0$. From the overview,\n\n$$\n\n\\Delta(t)=(2+t)^{2}-8\n\n$$\n\nwhich is a genuine quadratic in $t$ and takes a negative value at $t=-2$, so real roots exist.\n\nMatching the claim, so the statement is False.",
+        "**A.** → False\n\nTangency of $y=tx+1$ to $y=g$ means one algebraic condition on $t$, not an identity holding for every $t$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → False\n\nTangency means $\\Delta(t)=0$. From the overview that equation has real solutions for this family.\n\nMatching the claim, so the statement is False.",
         "**C.** → True\n\nTangency requires equal derivatives at the contact point. The slope of $y=tx+1$ is $t$, so $g'(x_0)=t$.\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nTwo distinct simple roots of $g-f_t$ mean two transversal intersection points, so the graphs are not tangent.\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nTangency means $\\Delta(t)=0$. From the overview,\n\n$$\n\n\\Delta(t)=(2+t)^{2}-8\n\n$$\n\nwhich is a genuine quadratic in $t$ and takes a negative value at $t=-2$, so real roots exist.\n\nMatching the claim, so the statement is True."
+        "**E.** → True\n\nTangency means $\\Delta(t)=0$. From the overview that equation has real solutions for this family.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 44,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nTangency means $\\Delta(t)=0$ for $ax^{2}+(b-t)x+(c-1)$; this may have $0$, $1$, or $2$ real solutions.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nTangency means $\\Delta(t)=0$ for $ax^{2}+(b-t)x+(c-1)$; this may have $0$, $1$, or $2$ real solutions.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1476,11 +1476,11 @@
         "**B.** → False\n\nAdding a constant $s$ translates the graph vertically. The axis $x=h$ is unchanged.\n\nMatching the claim, so the statement is False.",
         "**C.** → True\n\nScaling by $\\lambda<0$ replaces the leading coefficient $a$ by $\\lambda a$, which has the opposite sign, so the parabola flips its opening direction.\n\nMatching the claim, so the statement is True.",
         "**D.** → True\n\nAny horizontal shift $r\\neq 0$ moves the axis while leaving the leading coefficient $a$ unchanged.\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nThe equation $Af(x)^{2}+Bf(x)+C=0$ is quadratic in the value $f(x)$. Its solutions need not be the roots of $f$ itself.\n\nMatching the claim, so the statement is True."
+        "**E.** → True\n\nThe equation $A f(x)^{2}+B f(x)+C=0$ is quadratic in the value $f(x)$. Its solutions need not be the roots of $f$ itself.\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 45,
-      "solution_overview": "The stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nHorizontal shifts move the axis; vertical shifts preserve it; nonzero scalings preserve roots.",
+      "solution_overview": "The stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem gives structural rules for lines and parabolas — no concrete coefficients. Each letter checks one claim with those rules.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nThe stem states structural hypotheses only — no concrete coefficients. Each letter applies a general rule for linear and quadratic maps.\n\nHorizontal shifts move the axis; vertical shifts preserve it; nonzero scalings preserve roots.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "symbolic"
@@ -1505,15 +1505,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWrite $g=Af^{2}+Bf+C$ and match coefficients. The $x^{2}$-coefficient of $f^{2}$ is $(4)^2$, so\n\n$$\n\nA\\cdot(4)^2=1\\implies A=\\frac{1}{16}\n\n$$\n\nContinuing the match for the linear and constant terms gives\n\n$$\n\nB=-\\frac{1}{2},\\quad C=-\\frac{5}{4}\n\n$$\n\nThe full triple is\n\n$$\n\n(A,B,C)=\\left(\\frac{1}{16},-\\frac{1}{2},-\\frac{5}{4}\\right)\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 5 x - 4=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: degree $\\le 2$ forbids it.\n\nMatching the claim, so the statement is False.",
+        "**A.** → True\n\nWrite $g(x)=A f(x)^{2}+B f(x)+C$ and match coefficients. The $x^2$ coefficient coming from $f^2$ is $(4)^2$, so\n\n$$\n\nA\\cdot(4)^2=1\\implies A=\\frac{1}{16}\n\n$$\n\nContinuing for the linear and constant terms gives\n\n$$\n\nB=-\\frac{1}{2},\\quad C=-\\frac{5}{4}\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 5 x - 4=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=41\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nA line and a parabola cannot meet three times: a quadratic equation forbids it.\n\nMatching the claim, so the statement is False.",
         "**C.** → False\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=2\\qquad g\\big(f(0)\\big)=0\n\n$$\n\n$$\n\ng(0)=-2\\qquad f\\big(g(0)\\big)=-6\n\n$$\n\nCompare $0$ with $-6$.\n\nMatching the claim, so the statement is False.",
-        "**D.** → False\n\nFirst locate the axis of $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nEvaluate both models there:\n\n$$\n\nf\\left(\\frac{1}{2}\\right)=4\\qquad g\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\n$$\n\nf-g=4-\\left(-\\frac{9}{4}\\right)=\\frac{25}{4}\n\n$$\n\nCompare with the claimed value $\\frac{17}{4}$.\n\nMatching the claim, so the statement is False.",
-        "**E.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x-\\frac{1}{2}\\right)^2-\\frac{9}{4}\n\n$$\n\nMatching the claim, so the statement is True."
+        "**D.** → False\n\nFirst find the axis of the parabola $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nEvaluate both models there:\n\n$$\n\nf\\left(\\frac{1}{2}\\right)=4\\qquad g\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\n$$\n\nf-g=4-\\left(-\\frac{9}{4}\\right)=\\frac{25}{4}\n\n$$\n\nCompare with the claimed value $\\frac{17}{4}$.\n\nMatching the claim, so the statement is False.",
+        "**E.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(\\frac{1}{2}\\right)=-\\frac{9}{4}\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x-\\frac{1}{2}\\right)^2-\\frac{9}{4}\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 46,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\Delta=41\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-\\frac{5}{4}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1525,9 +1525,9 @@
       "context": "Let $g(x)=x^{2}-4x+1$ and $f_k(x)=kx+1$. Evaluate each statement about the real parameter $k$. Mark it TRUE or FALSE.",
       "statements": [
         "For every $k$, the graphs intersect at the point $(0,1)$.",
-        "If $k=-4$, the graphs intersect at exactly one point.",
-        "If $k=-4$, the line is tangent to the parabola at $(0,1)$.",
-        "For $k=0$, the second intersection is at $x=4$.",
+        "There is a unique slope that makes the line touch the parabola at exactly one point.",
+        "That unique touch happens at the shared $y$-intercept $(0,1)$ and matches the slope of the parabola there.",
+        "Besides the shared $y$-intercept, the graphs can meet again at a point with positive $x$-coordinate.",
         "There exists a real $k$ for which the graphs fail to meet."
       ],
       "answer_key": [
@@ -1539,9 +1539,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nAt $x=0$ one has $g(0)=1$ and $f_k(0)$ equals the constant term of $f_k$.\n\nBoth equal $1$ for every parameter value, so the graphs always share $(0,1)$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nSubstitute $k=-4$:\n\n$$\n\nf(x)=1 - 4 x\\qquad g(x)=x^{2} - 4 x + 1\n\n$$\n\n$$\n\ng-f=x^{2}\\qquad \\Delta=0\n\n$$\n\nHence exactly $1$ distinct real intersection(s).\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nSubstitute $k=-4$:\n\n$$\n\nf(x)=1 - 4 x\\qquad g(x)=x^{2} - 4 x + 1\n\n$$\n\n$$\n\ng-f=x^{2}\\qquad \\Delta=0\n\n$$\n\nHence exactly $1$ distinct real intersection(s).\n\nTangency also needs equal derivatives at the contact point; here $g'(0)=-4$ and the line slope is $-4$.\n\nMatching the claim, so the statement is True.",
-        "**D.** → True\n\nSubstitute $k=0$:\n\n$$\n\nf(x)=1\\qquad g(x)=x^{2} - 4 x + 1\n\n$$\n\n$$\n\ng-f=x \\left(x - 4\\right)\\qquad \\Delta=16\n\n$$\n\nHence exactly $2$ distinct real intersection(s).\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nEqual values and equal derivatives at the shared $y$-intercept pin down a single slope for which the line touches the parabola at exactly one point.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nEqual values and equal derivatives at the shared $y$-intercept pin down a single slope for which the line touches the parabola at exactly one point.\n\nMatching the claim, so the statement is True.",
+        "**D.** → True\n\nFactoring out the shared root at $x=0$ leaves a linear factor that can give a second meeting with positive abscissa.\n\nMatching the claim, so the statement is True.",
         "**E.** → False\n\nBecause every $f_k$ passes through $(0,1)$ and $g(0)=1$, the graphs always share at least that point, so they never fail to meet.\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
@@ -1572,14 +1572,14 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nExpand the recovered model $g$:\n\n$$\n\ng(x)=2 x^{2} - 12 x + 16\n\n$$\n\nCompare with the claimed formula $g(x)=2 x^{2} - 12 x + 16$.\n\nMatching the claim, so the statement is True.",
-        "**B.** → True\n\nWrite $g=Af^{2}+Bf+C$ and match coefficients. The $x^{2}$-coefficient of $f^{2}$ is $(5)^2$, so\n\n$$\n\nA\\cdot(5)^2=2\\implies A=\\frac{2}{25}\n\n$$\n\nContinuing the match for the linear and constant terms gives\n\n$$\n\nB=-\\frac{52}{25},\\quad C=\\frac{288}{25}\n\n$$\n\nThe full triple is\n\n$$\n\n(A,B,C)=\\left(\\frac{2}{25},-\\frac{52}{25},\\frac{288}{25}\\right)\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nWrite $g(x)=A f(x)^{2}+B f(x)+C$ and match coefficients. The $x^2$ coefficient coming from $f^2$ is $(5)^2$, so\n\n$$\n\nA\\cdot(5)^2=2\\implies A=\\frac{2}{25}\n\n$$\n\nContinuing for the linear and constant terms gives\n\n$$\n\nB=-\\frac{52}{25},\\quad C=\\frac{288}{25}\n\n$$\n\nMatching the claim, so the statement is True.",
         "**C.** → False\n\nEvaluate the two nestings separately.\n\n$$\n\nf(0)=-2\\qquad g\\big(f(0)\\big)=48\n\n$$\n\n$$\n\ng(0)=16\\qquad f\\big(g(0)\\big)=78\n\n$$\n\nCompare $48$ with $78$.\n\nMatching the claim, so the statement is False.",
-        "**D.** → True\n\nWith two real roots the distance equals $\\sqrt{\\Delta}/|a|$:\n\n$$\n\n\\Delta=16\\qquad \\mathrm{distance}=2\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**E.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-12}{2\\cdot 2}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=-2\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=2\\left(x-3\\right)^2-2\n\n$$\n\nMatching the claim, so the statement is True."
+        "**D.** → True\n\nWith two real roots the distance is\n\n$$\n\n\\Delta=16\\qquad \\mathrm{distance}=2\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**E.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-12}{2\\cdot 2}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=-2\n\n$$\n\nso\n\n$$\n\ng(x)=2\\left(x-3\\right)^2-2\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 48,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5 x - 2\\qquad g(x)=2 x^{2} - 12 x + 16\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-2\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=8\n$$\n\n$$\nf-g=- 2 x^{2} + 17 x - 18\\qquad \\Delta=145\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{2}{25},\\quad B=-\\frac{52}{25},\\quad C=\\frac{288}{25}.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=5 x - 2\\qquad g(x)=2 x^{2} - 12 x + 16\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-2\\right)\\qquad S=6\\qquad P=8\n$$\n\n$$\nf-g=- 2 x^{2} + 17 x - 18\\qquad \\Delta=145\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{2}{25},\\quad B=-\\frac{52}{25},\\quad C=\\frac{288}{25}.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "hybrid"
@@ -1604,15 +1604,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is the difference quotient\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=5,\\qquad g(2)=-3\n\n$$\n\n$$\n\n\\frac{-3-5}{2}=-4\n\n$$\n\nThe slope of $f$ is $4$.\n\nCompare $-4$ with $4$.\n\nMatching the claim, so the statement is False.",
-        "**B.** → True\n\nThe average rate of change of $g$ on $[0,2]$ is the difference quotient\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=5,\\qquad g(2)=-3\n\n$$\n\n$$\n\n\\frac{-3-5}{2}=-4\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**C.** → True\n\nComplete the square. The vertex abscissa is $x=-b/(2a)$:\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=-4\n\n$$\n\nso the completed-square form is\n\n$$\n\ng(x)=\\left(x-3\\right)^2-4\n\n$$\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nVieta's sum of roots for $ax^{2}+bx+c$ is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-6}{1}=6\n\n$$\n\nMatching the claim, so the statement is False.",
+        "**A.** → False\n\nThe average rate of change of $g$ on $[0,2]$ is\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=5,\\qquad g(2)=-3\n\n$$\n\n$$\n\n\\frac{-3-5}{2}=-4\n\n$$\n\nThe slope of $f$ is $4$.\n\nCompare $-4$ with $4$.\n\nMatching the claim, so the statement is False.",
+        "**B.** → True\n\nThe average rate of change of $g$ on $[0,2]$ is\n\n$$\n\n\\frac{g(2)-g(0)}{2}\n\n$$\n\n$$\n\ng(0)=5,\\qquad g(2)=-3\n\n$$\n\n$$\n\n\\frac{-3-5}{2}=-4\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nComplete the square. The axis abscissa is\n\n$$\n\nx=-\\frac{-6}{2\\cdot 1}=3\n\n$$\n\nThe vertex height is\n\n$$\n\ng\\left(3\\right)=-4\n\n$$\n\nso\n\n$$\n\ng(x)=\\left(x-3\\right)^2-4\n\n$$\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nFor a parabola $ax^{2}+bx+c$, the sum of the roots is\n\n$$\n\nS=-\\frac{b}{a}\n\n$$\n\n$$\n\nS=-\\frac{-6}{1}=6\n\n$$\n\nMatching the claim, so the statement is False.",
         "**E.** → True\n\nWork inside-out:\n\n$$\n\ng(0)=5\n\n$$\n\n$$\n\nf\\big(g(0)\\big)=f\\big(5\\big)=12\n\n$$\n\nMatching the claim, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 49,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x - 8\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=5\n$$\n\n$$\nf-g=- x^{2} + 10 x - 13\\qquad \\Delta=48\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-3.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=4 x - 8\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad S=6\\qquad P=5\n$$\n\n$$\nf-g=- x^{2} + 10 x - 13\\qquad \\Delta=48\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{16},\\quad B=-\\frac{1}{2},\\quad C=-3.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1623,29 +1623,29 @@
       "title": "When Does Vertical Shift Kill Meetings?",
       "context": "Let $f(x)=2x$ and $g_s(x)=x^{2}-x-2+s$ with real shift $s$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "For $s=0$, the graphs meet twice.",
-        "For $s=5$, the graphs meet twice.",
+        "With no vertical shift, the graphs meet at two points.",
+        "A large enough upward shift can make the graphs miss each other.",
         "There exists $s$ making the graphs tangent.",
         "Vertical shifts can create a third intersection with $f$.",
         "The axis of $g_s$ depends on $s$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 3 x - 2=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=17\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
-        "**B.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 3 x - 2=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=17\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is False.",
-        "**C.** → True\n\nTangency of the line and the parabola means $\\Delta(g-f)=0$ (a double root).\n\n$$\n\n\\Delta=17\n\n$$\n\nso there are exactly $2$ distinct real meeting point(s).\n\nMatching the claim, so the statement is True.",
-        "**D.** → False\n\nIntersection abscissae solve $f(x)=g(x)$, equivalently\n\n$$\n\nx^{2} - 3 x - 2=0\n\n$$\n\nThis equation has degree at most $2$. Its discriminant is\n\n$$\n\n\\Delta=17\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is False.",
-        "**E.** → False\n\nThe axis of symmetry of a quadratic is\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nMatching the claim, so the statement is False."
+        "**A.** → True\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 3 x - 2=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=17\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is True.",
+        "**B.** → True\n\nRaising the parabola enough makes the discriminant negative, so the graphs miss.\n\nMatching the claim, so the statement is True.",
+        "**C.** → True\n\nTangency of the line and the parabola means the equation $g(x)=f(x)$ has a repeated root, so its discriminant vanishes.\n\n$$\n\n\\Delta=17\n\n$$\n\nso there are exactly $2$ distinct real meeting point(s).\n\nMatching the claim, so the statement is True.",
+        "**D.** → False\n\nThe graphs meet where $f(x)=g(x)$, that is where\n\n$$\n\ng(x)-f(x)=x^{2} - 3 x - 2=0\n\n$$\n\nThis is at most a quadratic equation in $x$, so there are at most two real solutions. Its discriminant is\n\n$$\n\n\\Delta=17\n\n$$\n\nhence exactly $2$ distinct real meetings.\n\nMatching the claim, so the statement is False.",
+        "**E.** → False\n\nThe axis of a parabola $ax^{2}+bx+c$ is the vertical line\n\n$$\n\nx=-\\frac{b}{2a}\n\n$$\n\nSubstitute the coefficients of $g$:\n\n$$\n\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n\n$$\n\nMatching the claim, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 50,
-      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 2\\qquad \\Delta=17\\qquad \\#\\mathrm{meetings}=2\n$$\n\nBecause $\\deg f=1$, the set $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching $g=Af^{2}+Bf+C$ recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-2.\n$$",
+      "solution_overview": "The stem determines the two models\n\n$$\nf(x)=2 x\\qquad g(x)=x^{2} - x - 2\n$$\n\nShared facts used across letters:\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad S=1\\qquad P=-2\n$$\n\n$$\nf-g=- x^{2} + 3 x + 2\\qquad \\Delta=17\\qquad \\mathrm{meetings}=2\n$$\n\nBecause $f$ is a non-constant line, one can rebuild $g$ as $A f(x)^{2}+B f(x)+C$. Matching coefficients recovers\n\n$$\nA=\\frac{1}{4},\\quad B=-\\frac{1}{2},\\quad C=-2.\n$$",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "parametric"
