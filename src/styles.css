@@ -564,8 +564,15 @@ body.flashcard-swiping {
   .prep-roadmap-path,
   .prep-roadmap-path-mobile,
   .prep-roadmap-node,
-  .prep-roadmap-pulse {
+  .prep-roadmap-pulse,
+  .prep-roadmap-comet,
+  .prep-roadmap-here-ring {
     animation: none;
+  }
+
+  .prep-roadmap-comet,
+  .prep-roadmap-here-ring {
+    opacity: 0;
   }
 
   .prep-roadmap-path {
