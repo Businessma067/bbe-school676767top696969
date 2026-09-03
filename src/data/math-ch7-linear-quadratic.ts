@@ -1,6 +1,8 @@
 /**
  * Chapter 7 — Linear and quadratic functions (no book subtopics).
- * Exam-style stems: given f linear and g quadratic, five multi-hop True/False claims.
+ * Mix: ~25% purely symbolic stems (parameters only) + formula / parametric /
+ * hybrid / geometric stems. Levels 4–5 use multi-hop traps (compositions,
+ * tangency families, rewrite matching). MATH 7.01 is the photo exemplar at 3/5.
  * Explanations follow the MATH 13.18 rhythm (shared overview + letter-local steps).
  */
 

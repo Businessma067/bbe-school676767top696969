@@ -1,858 +1,911 @@
 #!/usr/bin/env python3
-"""Generate Chapter 7 — Linear & quadratic functions (diverse stems).
+"""Chapter 7 bank: ~25% symbolic (no numbers) + hard 4–5/5 in any form.
 
-Stem kinds:
-  formula  — f and g given in math
-  text     — prose scene; rebuild formulas first
-  points   — roots / slope / intercepts in words
-  hybrid   — one formula printed, the other only verbal
-
-Difficulties 1/5 … 5/5 (10 each). Levels 4–5 use traps, compositions,
-recoveries, and text→formula work. Explanations follow MATH 13.18 rhythm.
+Writes src/data/math-ch7-linear-quadratic.json
+Schema matches existing bank / MathTasksPage.
 """
 
 from __future__ import annotations
 
 import json
-import random
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
-from sympy import Poly, Rational, Symbol, discriminant, expand, latex, solve
-
-x = Symbol("x")
 OUT = Path("/workspace/src/data/math-ch7-linear-quadratic.json")
 
 
-def L(expr) -> str:
-    return latex(expr)
-
-
-def F(r) -> str:
-    r = Rational(r)
-    if r.q == 1:
-        return str(int(r))
-    sign = "-" if r < 0 else ""
-    r = abs(r)
-    return f"{sign}\\frac{{{r.p}}}{{{r.q}}}"
-
-
-def signed_term(r) -> str:
-    """Render +k or -k for concatenation after another term."""
-    r = Rational(r)
-    if r >= 0:
-        return f"+{F(r)}"
-    return f"-{F(-r)}"
-
-
-def x_shift(h) -> str:
-    """Render (x-h) with a clean sign when h is negative."""
-    h = Rational(h)
-    if h >= 0:
-        return f"\\left(x-{F(h)}\\right)"
-    return f"\\left(x+{F(-h)}\\right)"
-
-
-def poly_lead(a) -> str:
-    a = Rational(a)
-    if a == 1:
-        return ""
-    if a == -1:
-        return "-"
-    return F(a)
-
-
-def P(h, k) -> str:
-    return f"\\left({F(h)}, {F(k)}\\right)"
-
-
-def B(v) -> bool:
-    return bool(v)
+@dataclass
+class Claim:
+    text: str
+    truth: bool
+    explanation: str
 
 
 @dataclass
-class Model:
-    f: object
-    g: object
+class Spec:
     title: str
+    context: str
+    difficulty: int
     stem_kind: str
-    scene: str | None = None
+    claims: list[Claim]
+    overview: str
+    is_photo: bool = False
 
 
-def M(fa, fb, ga, gb, gc, title, kind, scene=None) -> Model:
-    return Model(fa * x + fb, ga * x**2 + gb * x + gc, title, kind, scene)
+def expl(letter: str, truth: bool, body: str) -> str:
+    return f"**{letter}.** → {'True' if truth else 'False'}\n\n{body.strip()}"
 
 
-FORMULA = [
-    M(4, 2, 1, -1, -2, "Vertex, Linear Rewrite, and Crossings", "formula"),
-    M(2, -1, 1, -3, 2, "Integer Roots and Axis Check", "formula"),
-    M(3, 1, 1, 2, -3, "Opening Direction and Meetings", "formula"),
-    M(-2, 4, 1, -4, 3, "Minimum Point and Difference Graph", "formula"),
-    M(5, -5, 2, -4, -6, "Scaled Parabola Against a Steep Line", "formula"),
-    M(1, 3, 1, 0, -4, "Even Parabola and Shifted Line", "formula"),
-    M(-1, 2, 1, 1, -6, "Falling Line Through Twin Roots", "formula"),
-    M(4, -2, 1, -5, 6, "Factorable Quadratic Parallel Trap", "formula"),
-    M(2, 4, -1, 2, 3, "Downward Parabola Versus Rising Line", "formula"),
-    M(6, 0, 1, -6, 5, "Through-Origin Line and Twin Roots", "formula"),
-    M(2, -3, 1, 1, -6, "Axis Versus Vieta Sum", "formula"),
-    M(-4, -2, 2, 0, -18, "Deep Even Minimum", "formula"),
-    M(7, 1, 1, -6, 8, "Steep Line Twin Roots", "formula"),
-    M(1, -4, 1, -1, -12, "Distant Roots Shallow Line", "formula"),
-    M(3, -6, 1, -2, -8, "Wide Roots Translation Trap", "formula"),
-    M(8, -4, 1, -1, -6, "Half-Integer Mid Vertex", "formula"),
-    M(-5, 10, 2, -2, -12, "Scaled Fall Against Rising Line", "formula"),
-    M(4, 3, 1, -8, 15, "Roots Three and Five", "formula"),
-    M(2, 2, 1, -1, -20, "Large Negative Constant", "formula"),
-    M(5, 0, 1, -4, -5, "Proportional Line Product Trap", "formula"),
+def C(text: str, truth: bool, explanation: str) -> Claim:
+    return Claim(text, truth, explanation)
+
+
+def S(title, context, difficulty, kind, claims, overview, is_photo=False) -> Spec:
+    return Spec(title, context, difficulty, kind, claims, overview, is_photo)
+
+
+# ---------------------------------------------------------------------------
+# Symbolic (~26%): no concrete numbers in stems
+# ---------------------------------------------------------------------------
+
+SYMBOLIC: list[Spec] = [
+    S(
+        "Axis, Vieta, and the Half-Sum Trap",
+        "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and write $S$ for the sum of the roots of $g$ "
+        "in $\\mathbb{C}$. Let $\\ell$ be the axis of symmetry of the graph of $g$. "
+        "No concrete coefficients are given. Evaluate each statement. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("The vertical line $\\ell$ is always the same as the vertical line $x=S$.", False,
+              "The axis is $x=S/2$, not $x=S$."),
+            C("In all cases, $\\ell$ is the line $x=S/2$.", True,
+              "By Vieta $S=-b/a$, so $-b/(2a)=S/2$."),
+            C("If $S=0$, then the axis of $g$ is the $y$-axis.", True,
+              "$S=0\\Rightarrow b=0\\Rightarrow$ axis $x=0$."),
+            C("If $a>0$ and $S>0$, then both real roots (when they exist) must be positive.", False,
+              "A positive sum allows opposite signs, e.g. roots $-1$ and $3$."),
+            C("Changing the constant term $c$ never moves the axis $\\ell$.", True,
+              "The axis depends only on $a$ and $b$."),
+        ],
+        "$$\nS=-\\frac{b}{a}\\qquad \\ell:\\ x=\\frac{S}{2}.\n$$\nThe axis is the midpoint of the roots.",
+    ),
+    S(
+        "Linear Basis for Every Quadratic",
+        "Let $f$ be any non-constant linear polynomial and $g$ any quadratic polynomial over "
+        "$\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+        4, "symbolic",
+        [
+            C("There always exist $A,B,C\\in\\mathbb{R}$ with $g=Af^{2}+Bf+C$.", True,
+              "If $\\deg f=1$, then $\\{1,f,f^{2}\\}$ spans all polynomials of degree $\\le 2$."),
+            C("The coefficient $A$ is uniquely determined by $g$ and $f$.", True,
+              "Matching leading coefficients: $A=a_g/a_f^{2}$."),
+            C("The same identity remains true if $f$ is replaced by a non-zero constant polynomial.", False,
+              "Constants cannot produce an $x^{2}$ term."),
+            C("If $g=Af^{2}+Bf+C$, then necessarily $\\deg(g\\circ f)=4$.", False,
+              "Degrees multiply: $\\deg(g\\circ f)=2\\cdot 1=2$."),
+            C("If $g=Af^{2}+Bf+C$ with $A\\neq 0$, then $g$ and $f$ have exactly the same roots.", False,
+              "Roots of $g$ solve a quadratic in the value $f(x)$."),
+        ],
+        "Degree-$1$ $f$ makes $\\{1,f,f^{2}\\}$ a basis of polynomials of degree at most $2$.",
+    ),
+    S(
+        "Composition Degrees Without Numbers",
+        "Let $f$ be linear of degree $1$ and $g$ quadratic of degree $2$. No further data are "
+        "given. Evaluate each claim about compositions. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("Always $\\deg(g\\circ f)=3$, because one adds the degrees.", False,
+              "Degrees multiply: $2\\cdot 1=2$."),
+            C("Always $\\deg(f\\circ g)=2$.", True, "$\\deg(f\\circ g)=1\\cdot 2=2$."),
+            C("Always $\\deg(g\\circ f)=\\deg(f\\circ g)$.", True, "Both equal $2$."),
+            C("The polynomials $g\\circ f$ and $f\\circ g$ are always identical as functions.", False,
+              "Composition does not commute."),
+            C("If one replaces $f$ by $f^{2}$ (still using the same $g$), then $\\deg(g\\circ f^{2})=4$.", True,
+              "$\\deg(f^{2})=2$, so $\\deg(g\\circ f^{2})=4$."),
+        ],
+        "Degree multiplies under composition. Adding degrees ($1+2=3$) is the trap.",
+    ),
+    S(
+        "Vertex Form Uniqueness",
+        "A quadratic is written $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. No numeric values are "
+        "supplied. Evaluate each statement. Mark it TRUE or FALSE.",
+        4, "symbolic",
+        [
+            C("The point $(h,k)$ is always the unique vertex of the graph of $g$.", True,
+              "By construction of vertex form."),
+            C("If $a<0$, then $k$ is the global minimum value of $g$.", False,
+              "If $a<0$, then $k$ is the global maximum."),
+            C("The axis of symmetry is always $x=h$, independent of $k$.", True,
+              "Vertical translation does not move the axis."),
+            C("Replacing $h$ by $-h$ never changes the graph of $g$.", False, "Only when $h=0$."),
+            C("Every real quadratic admits such a representation for unique $(a,h,k)$.", True,
+              "Completing the square; uniqueness of vertex and leading coefficient."),
+        ],
+        "Vertex form is unique: $(h,k)$ is the vertex and $a$ is the leading coefficient.",
+    ),
+    S(
+        "Discriminant Logic for Quadratics",
+        "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$ and $\\Delta=b^{2}-4ac$. Evaluate each "
+        "statement. Mark it TRUE or FALSE.",
+        3, "symbolic",
+        [
+            C("If $\\Delta<0$, then $g$ has no real roots.", True, "Standard discriminant."),
+            C("If $\\Delta<0$, then $g$ has no vertex.", False,
+              "The vertex $x=-b/(2a)$ always exists over $\\mathbb{R}$."),
+            C("If $\\Delta=0$, then the graph of $g$ touches the $x$-axis at exactly one point.", True,
+              "A double root is tangency to the $x$-axis."),
+            C("If $a$ and $c$ have opposite signs, then necessarily $\\Delta>0$.", True,
+              "Then $ac<0$, so $-4ac>0$, hence $\\Delta>0$."),
+            C("If $\\Delta>0$, then the axis of symmetry lies strictly between the two real roots.", True,
+              "The axis is their midpoint."),
+        ],
+        "Discriminant dictionary; the vertex exists independently of $\\Delta$.",
+    ),
+    S(
+        "Line Meets Parabola: Structural Bound",
+        "Let $f$ be any linear function and $g$ any quadratic function over $\\mathbb{R}$. "
+        "Evaluate each statement about their graphs. Mark it TRUE or FALSE.",
+        4, "symbolic",
+        [
+            C("The graphs of $f$ and $g$ can intersect in three distinct real points.", False,
+              "$g-f$ has degree at most $2$."),
+            C("It is possible that the graphs do not intersect at all.", True,
+              "Example: $g(x)=x^{2}+1$ and $f(x)=0$."),
+            C("If the graphs are tangent at a point, then $g-f$ has a double root there.", True,
+              "Shared value and derivative $\\Leftrightarrow$ double root."),
+            C("If $f$ is constant, the graphs always intersect twice.", False,
+              "A horizontal line may miss, touch, or cut the parabola."),
+            C("Translating $g$ vertically by any constant can create a third intersection with $f$.", False,
+              "Vertical translation preserves $\\deg(g-f)\\le 2$."),
+        ],
+        "$f=g$ is at most quadratic $\\Rightarrow$ at most two real meetings.",
+    ),
+    S(
+        "Monotonicity: Line Versus Parabola",
+        "Let $f(x)=mx+k$ with $m\\neq 0$, and let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. "
+        "Evaluate each claim. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("$f$ is strictly monotone on all of $\\mathbb{R}$.", True,
+              "$m\\neq 0$ forces a global strict increase or decrease."),
+            C("$g$ is strictly monotone on all of $\\mathbb{R}$.", False,
+              "$g'(x)=2ax+b$ changes sign at the axis."),
+            C("On the half-line to the right of the axis of $g$, the restriction of $g$ is strictly monotone.", True,
+              "The derivative keeps constant sign on each open half-line from the axis."),
+            C("If $m>0$ and $a>0$, then $f(x)<g(x)$ for all sufficiently large $x$.", True,
+              "A quadratic with $a>0$ dominates every line as $x\\to+\\infty$."),
+            C("If $m=0$ were allowed, $f$ would still be strictly monotone.", False,
+              "Constant functions are not strictly monotone."),
+        ],
+        "Non-constant lines are globally monotone; quadratics only on each side of the axis.",
+    ),
+    S(
+        "Even Quadratic Symmetry",
+        "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each statement about evenness. "
+        "Mark it TRUE or FALSE.",
+        3, "symbolic",
+        [
+            C("$g$ is an even function if and only if $b=0$.", True,
+              "$g(-x)-g(x)=-2bx$ vanishes identically iff $b=0$."),
+            C("If $g$ is even, then its vertex lies on the $y$-axis.", True,
+              "$b=0\\Rightarrow$ vertex at $x=0$."),
+            C("Every even quadratic is also an odd function.", False,
+              "The only both-even-and-odd function is zero."),
+            C("If the axis of $g$ is $x=0$, then $g$ is even.", True,
+              "Axis $x=0\\Leftrightarrow b=0\\Leftrightarrow$ even."),
+            C("Multiplying $g$ by $-1$ can destroy evenness.", False,
+              "$-g$ still has linear coefficient $0$ whenever $b=0$."),
+        ],
+        "$g$ is even iff $b=0$ iff the axis is the $y$-axis.",
+    ),
+    S(
+        "Parameter Tangency Criterion",
+        "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and let $f_t(x)=tx+1$ be a family of lines "
+        "parametrised by $t\\in\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("For every real $t$, the line $y=f_t(x)$ is tangent to the graph of $g$.", False,
+              "Tangency is a single algebraic condition on $t$, not an identity."),
+            C("There exists at least one real $t$ for which $y=f_t$ is tangent to $y=g$.", False,
+              "Let $\\Delta(t)=(b-t)^{2}-4a(c-1)$. As a quadratic in $t$ its discriminant is "
+              "$16a(c-1)$. When $a(c-1)<0$, one has $\\Delta(t)>0$ for all $t$, so no tangent."),
+            C("If $y=f_t$ is tangent to $y=g$ at $x_0$, then $g'(x_0)=t$.", True,
+              "Shared derivative at the contact point."),
+            C("If $g-f_t$ has two distinct real roots, then the graphs intersect at two points and are not tangent.", True,
+              "Two simple roots mean two transversal meetings."),
+            C("Replacing the intercept $1$ in $f_t$ by an arbitrary constant $q$ can change whether a tangent slope exists.", True,
+              "The condition involves $c-q$."),
+        ],
+        "Tangency means $\\Delta(t)=0$ for $ax^{2}+(b-t)x+(c-1)$; this may have $0$, $1$, or $2$ real solutions.",
+    ),
+    S(
+        "Range of a Quadratic, Symbolically",
+        "Let $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. Evaluate each statement about the range of $g$. "
+        "Mark it TRUE or FALSE.",
+        4, "symbolic",
+        [
+            C("If $a>0$, then the range of $g$ is $[k,+\\infty)$.", True, "Vertex form."),
+            C("If $a<0$, then the range of $g$ is $[k,+\\infty)$.", False, "Then $(-\\infty,k]$."),
+            C("The range of $g$ is never all of $\\mathbb{R}$.", True, "Unbounded on only one side."),
+            C("Any non-constant linear function has range $\\mathbb{R}$.", True,
+              "Strictly monotone continuous $\\mathbb{R}\\to\\mathbb{R}$ is surjective."),
+            C("If $k=0$ and $a>0$, then $g$ never takes negative values.", True, "Range $[0,+\\infty)$."),
+        ],
+        "Opening direction decides whether the range is $[k,+\\infty)$ or $(-\\infty,k]$.",
+    ),
+    S(
+        "Shifts and Scalings of a Parabola",
+        "Start from $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Consider $g_1(x)=g(x-r)$, "
+        "$g_2(x)=g(x)+s$, and $g_3(x)=\\lambda g(x)$ with $\\lambda\\neq 0$. No numeric data. "
+        "Evaluate each statement. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("The axis of $g_1$ is the axis of $g$ shifted by $r$ units to the right.", True,
+              "If $g$ has axis $x=h$, then $g_1$ has axis $x=h+r$."),
+            C("The axis of $g_2$ differs from the axis of $g$.", False,
+              "A vertical shift does not move the axis."),
+            C("If $\\lambda<0$, then $g_3$ opens in the opposite direction from $g$.", True,
+              "Leading coefficient becomes $\\lambda a$."),
+            C("There exist $r\\neq 0$ such that $g_1$ has a different axis from $g$ but the same leading coefficient.", True,
+              "Horizontal shift changes the axis and preserves $a$."),
+            C("$g_3$ always has the same roots as $g$.", True,
+              "For $\\lambda\\neq 0$, $\\lambda g(x)=0\\Leftrightarrow g(x)=0$."),
+        ],
+        "Horizontal shifts move the axis; vertical shifts preserve it; nonzero scalings preserve roots.",
+    ),
+    S(
+        "Difference $f-g$ and Intercept Traps",
+        "Let $f$ be linear and $g$ quadratic. Write $d=f-g$. Evaluate each statement. "
+        "Mark it TRUE or FALSE.",
+        4, "symbolic",
+        [
+            C("Always $\\deg d=2$.", True, "A quadratic minus a linear polynomial still has degree $2$."),
+            C("The $y$-intercept of $d$ is $f(0)-g(0)$.", True, "Direct evaluation."),
+            C("If $d(0)=0$, then the graphs of $f$ and $g$ intersect on the $y$-axis.", True,
+              "$f(0)=g(0)$ means a common point $(0,f(0))$."),
+            C("If $d$ has two distinct real roots, the graphs intersect more than twice.", False,
+              "Two roots of $d$ mean exactly two intersections."),
+            C("The graph of $d$ is itself a parabola.", True, "It is a degree-$2$ polynomial."),
+        ],
+        "$d=f-g$ is quadratic; its zeros are the intersection abscissae.",
+    ),
+    S(
+        "Root Product Versus Vertex Height",
+        "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, product of roots $P=c/a$, and vertex height "
+        "$k=g\\!\\left(-b/(2a)\\right)$. No numbers. Evaluate each statement. Mark it TRUE or FALSE.",
+        5, "symbolic",
+        [
+            C("Always $k=c$.", False, "$k=c$ if and only if $b=0$."),
+            C("Always $P=c/a$.", True, "Vieta's formula."),
+            C("If $b=0$, then $k=c$.", True, "Vertex at $x=0$, so $k=g(0)=c$."),
+            C("If $P=0$, then one root is $0$ and the graph passes through the origin.", True,
+              "$P=0\\Rightarrow c=0\\Rightarrow g(0)=0$."),
+            C("The sign of $k$ is always the same as the sign of $a$.", False,
+              "Vertex height and opening direction are independent."),
+        ],
+        "$$\nk=c-\\frac{b^{2}}{4a}.\n$$\nIn particular $k=c$ only when $b=0$.",
+    ),
 ]
 
-TEXT = [
-    M(
-        4, 2, 1, -1, -2, "Warehouse Fees Hidden in Prose", "text",
-        "A logistics desk bills a fixed handling fee of 2 euros plus 4 euros for each pallet "
-        "handled — call this linear rule $f$. A rival quote instead squares the pallet count, "
-        "subtracts the pallet count once, then subtracts 2 — call this quadratic rule $g$.",
-    ),
-    M(
-        3, -1, 1, -5, 6, "Lab Calibration Described in Words", "text",
-        "A sensor outputs three times the reading minus one (the linear map $f$). "
-        "A second processing stage takes the square of the reading, subtracts five times "
-        "the reading, and adds six (the quadratic map $g$).",
-    ),
-    M(
-        2, 0, 1, -4, 3, "Ticket Prices From a Narrative", "text",
-        "Adult tickets cost twice the number of seats reserved with no fixed surcharge ($f$). "
-        "A group deal squares the seat count, then subtracts four times that count, then adds three ($g$).",
-    ),
-    M(
-        -2, 5, 1, 0, -9, "Cooling Curve Told in Sentences", "text",
-        "An oven cools with offset 5 while losing 2 degrees per minute of the timer ($f$). "
-        "Residual heat squares elapsed minutes and then subtracts 9 ($g$).",
-    ),
-    M(
-        1, 4, -1, 2, 8, "Revenue Story Without Printed Formulas", "text",
-        "Unit revenue grows by one euro per item after a base of four euros ($f$). "
-        "A promotional curve opens downwards: eight plus twice the volume, minus the square of the volume ($g$).",
-    ),
-    M(
-        5, 1, 2, -8, 6, "Production Cost Buried in Text", "text",
-        "Machine A charges a setup of 1 plus five per batch ($f$). Machine B costs twice the "
-        "square of the batch size, minus eight times that size, plus six ($g$).",
-    ),
-    M(
-        3, 0, 1, -2, -8, "Bridge Load Described Verbally", "text",
-        "Safe linear load grows as three times the span coordinate with no constant term ($f$). "
-        "Parabolic stress is the square of the span, minus twice the span, minus eight ($g$).",
-    ),
-    M(
-        -3, 6, 1, -3, -10, "Discount Schedule in Ordinary Language", "text",
-        "A coupon subtracts three euros per item from a starting credit of six ($f$). "
-        "A loyalty score squares visits, subtracts three times visits, then subtracts ten ($g$).",
-    ),
-    M(
-        4, -8, 1, -6, 5, "Irrigation Settings From a Briefing", "text",
-        "Flow starts eight units below zero offset and rises by four per notch ($f$). "
-        "Pressure follows the square of the notch, minus six notches, plus five ($g$).",
-    ),
-    M(
-        2, 5, 1, 4, 3, "No-Root Trap Hidden in a Story", "text",
-        "A quote is five plus twice the order size ($f$). A penalty curve is the square of "
-        "order size plus four times that size plus three ($g$) — and $g$ never crosses zero.",
-    ),
-    M(
-        6, -2, 1, -7, 10, "Fleet Mileage Brief Written Out", "text",
-        "Dispatch pays six times the route index minus two ($f$). Fuel burn is the square of "
-        "the index, minus seven times the index, plus ten ($g$).",
-    ),
-    M(
-        -1, 0, 1, -2, -3, "Negative Identity in a Memo", "text",
-        "Controller $f$ simply negates the input. Residual $g$ squares the input, subtracts "
-        "twice the input, then subtracts three.",
-    ),
-]
 
-POINTS = [
-    M(
-        2, 1, 1, -5, 6, "Rebuild From Roots and a Slope", "points",
-        "The line $f$ has slope $2$ and $y$-intercept $1$. The parabola $g$ opens upwards with "
-        "leading coefficient $1$ and crosses the $x$-axis at $x=2$ and $x=3$.",
-    ),
-    M(
-        3, -3, 1, -1, -12, "Recover Models From Axis Data", "points",
-        "Line $f$ passes through $(0,-3)$ with slope $3$. Quadratic $g$ has roots $-3$ and $4$ "
-        "and leading coefficient $1$.",
-    ),
-    M(
-        -1, 4, 1, -4, 3, "Vertex-Free Reconstruction", "points",
-        "The linear rule $f$ sends $0$ to $4$ and $1$ to $3$. The quadratic $g$ factors as $(x-1)(x-3)$.",
-    ),
-    M(
-        4, 0, 1, 2, -8, "Two Points and Two Roots", "points",
-        "$f$ is proportional to $x$ with $f(2)=8$. $g$ has roots $2$ and $-4$ and opens upwards "
-        "with coefficient $1$.",
-    ),
-    M(
-        1, -2, 2, -8, 6, "Scaled Factor Recovery", "points",
-        "$f(0)=-2$ and $f(3)=1$. The quadratic $g$ has roots $1$ and $3$ but is scaled so that "
-        "its leading coefficient is $2$.",
-    ),
-    M(
-        5, -5, 1, -6, 8, "Intercept Pair Plus Twin Roots", "points",
-        "$f$ has slope $5$ and meets the $y$-axis at $-5$. $g$ is the monic quadratic with roots $2$ and $4$.",
-    ),
-    M(
-        -2, 1, 1, 5, 4, "Falling Line From Two Values", "points",
-        "$f(0)=1$ and $f(2)=-3$. $g$ has no real roots: it equals $(x+1)(x+4)$.",
-    ),
-    M(
-        6, 2, -1, 3, 4, "Printed Slope Against Peak Data", "points",
-        "$f$ rises with slope $6$ through $(0,2)$. $g$ opens downwards with leading coefficient $-1$, "
-        "equals $4$ at the origin, and has linear coefficient $3$.",
-    ),
-]
+# ---------------------------------------------------------------------------
+# Numeric / parametric / hybrid banks
+# ---------------------------------------------------------------------------
 
-HYBRID = [
-    M(
-        5, -2, 1, -6, 8, "Formula Plus a Verbal Twin", "hybrid",
-        "You are given $f(x)=5x-2$ in closed form. The matching quadratic $g$ is described only "
-        "in words: it opens upwards, leading coefficient one, and vanishes at $x=2$ and $x=4$.",
-    ),
-    M(
-        -2, 1, 1, 5, 4, "Named Line, Story Parabola", "hybrid",
-        "Let $f(x)=-2x+1$. Separately, a warehouse residual is the square of stock days plus "
-        "five times those days plus four — that residual is $g$.",
-    ),
-    M(
-        6, 2, -1, 3, 4, "Closed Form Against a Peak Story", "hybrid",
-        "$f(x)=6x+2$ is printed on the sheet. $g$ opens downwards, equals $4$ at the origin, "
-        "has initial slope $3$, and leading coefficient $-1$.",
-    ),
-    M(
-        1, 1, 1, -8, 15, "Unit Line Versus Roots in Prose", "hybrid",
-        "Take $f(x)=x+1$. The quadratic $g$ is promised to have roots $3$ and $5$ with leading "
-        "coefficient $1$.",
-    ),
-    M(
-        3, 2, 1, -5, 6, "Printed Line, Factorable Story", "hybrid",
-        "$f(x)=3x+2$ is given. $g$ is the monic quadratic that factors as $(x-2)(x-3)$.",
-    ),
-    M(
-        4, -1, 1, -3, -10, "Half-Printed Pair", "hybrid",
-        "Use $f(x)=4x-1$. The quadratic $g$ opens upwards, leading coefficient $1$, with roots "
-        "$-2$ and $5$.",
-    ),
-    M(
-        2, 3, 1, 0, -9, "Line Given, Even Parabola Told", "hybrid",
-        "$f(x)=2x+3$ is explicit. $g$ is even about the $y$-axis, leading coefficient $1$, and "
-        "equals $-9$ at the origin.",
-    ),
-    M(
-        -3, 6, 2, -4, -6, "Verbal Scale Factor", "hybrid",
-        "$f(x)=-3x+6$ is given. $g$ has roots $-1$ and $3$ but is scaled by leading coefficient $2$.",
-    ),
-]
-
-
-def all_models() -> list[Model]:
-    return FORMULA + TEXT + POINTS + HYBRID
-
-
-def vertex(g):
-    a, b = Poly(g, x).nth(2), Poly(g, x).nth(1)
-    h = Rational(-b / (2 * a))
-    k = Rational(expand(g.subs(x, h)))
-    return h, k
-
-
-def rewrite_coeffs(f, g):
-    from sympy import Symbol as Sym
-    from sympy import solve as sy_solve
-
-    A, B, C = Sym("A"), Sym("B"), Sym("C")
-    rhs = expand(A * f**2 + B * f + C)
-    eqs = Poly(expand(g - rhs), x).coeffs()
-    sol = sy_solve(eqs, [A, B, C], dict=True)[0]
-    return Rational(sol[A]), Rational(sol[B]), Rational(sol[C])
-
-
-def intersect_count(f, g) -> int:
-    d = Rational(discriminant(Poly(expand(g - f), x)))
-    if d > 0:
-        return 2
-    if d == 0:
-        return 1
-    return 0
-
-
-def pool_easy(f, g, rng: random.Random):
-    a_f = Rational(Poly(f, x).nth(1))
-    a_g = Rational(Poly(g, x).nth(2))
-    h, k = vertex(g)
-    pool = []
-    pool += [
-        (f"The slope of $y=f(x)$ is ${F(a_f)}$.", True, {"kind": "slope", "m": a_f}),
-        (f"The slope of $y=f(x)$ is ${F(-a_f if a_f != 0 else 1)}$.", False, {"kind": "slope", "m": a_f, "bad": -a_f if a_f != 0 else 1}),
-        ("The parabola $g$ opens upwards.", B(a_g > 0), {"kind": "opens", "a": a_g}),
-        ("The parabola $g$ opens downwards.", B(a_g < 0), {"kind": "opens", "a": a_g}),
-    ]
-    x0 = Rational(rng.choice([0, 1, 2]))
-    val = Rational(expand(g.subs(x, x0)))
-    pool += [
-        (f"$g({F(x0)})={F(val)}$.", True, {"kind": "eval_g", "x0": x0, "val": val}),
-        (f"$g({F(x0)})={F(val+3)}$.", False, {"kind": "eval_g", "x0": x0, "val": val, "bad": val + 3}),
-        (f"The axis of symmetry of $g$ is $x={F(h)}$.", True, {"kind": "axis", "h": h}),
-        (f"The axis of symmetry of $g$ is $x={F(h+1)}$.", False, {"kind": "axis", "h": h, "bad": h + 1}),
-    ]
-    f0 = Rational(expand(f.subs(x, 0)))
-    pool += [
-        (f"$f(0)={F(f0)}$.", True, {"kind": "eval_f", "val": f0}),
-        (f"$f(0)={F(f0+1)}$.", False, {"kind": "eval_f", "val": f0, "bad": f0 + 1}),
-    ]
-    if a_g > 0:
-        pool += [
-            (f"The minimum value of $g$ is ${F(k)}$.", True, {"kind": "min", "k": k}),
-            (f"The minimum value of $g$ is ${F(k+2)}$.", False, {"kind": "min", "k": k, "bad": k + 2}),
-        ]
-    else:
-        pool += [
-            (f"The maximum value of $g$ is ${F(k)}$.", True, {"kind": "max", "k": k}),
-            (f"The maximum value of $g$ is ${F(k-2)}$.", False, {"kind": "max", "k": k, "bad": k - 2}),
-        ]
-    return pool
-
-
-def pool_medium(f, g, rng: random.Random):
-    a_g, b_g, c_g = [Rational(Poly(g, x).nth(i)) for i in (2, 1, 0)]
-    h, k = vertex(g)
-    sum_r, prod_r = Rational(-b_g / a_g), Rational(c_g / a_g)
-    ydiff = Rational(expand((f - g).subs(x, 0)))
-    n_int = intersect_count(f, g)
-    rw = rewrite_coeffs(f, g)
-    pool = []
-    if a_g > 0:
-        pool += [
-            (f"The point on the graph of $g(x)$ with the lowest $y$ coordinate is ${P(h, k)}$.", True, {"kind": "vertex_min", "h": h, "k": k}),
-            (f"The point on the graph of $g(x)$ with the lowest $y$ coordinate is ${P(h+1, k)}$.", False, {"kind": "vertex_min", "h": h, "k": k, "bad": True}),
-        ]
-    else:
-        pool += [
-            (f"The point on the graph of $g(x)$ with the highest $y$ coordinate is ${P(h, k)}$.", True, {"kind": "vertex_max", "h": h, "k": k}),
-            (f"The point on the graph of $g(x)$ with the lowest $y$ coordinate is ${P(h, k)}$.", False, {"kind": "vertex_min_impossible", "h": h, "k": k}),
-        ]
-    pool += [
-        ("There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.", True, {"kind": "rewrite", "rw": rw}),
-        (f"The sum of the roots of $g(x)$ is ${F(sum_r)}$.", True, {"kind": "vieta_sum", "s": sum_r}),
-        (f"The sum of the roots of $g(x)$ is ${F(-sum_r if sum_r != 0 else 1)}$.", False, {"kind": "vieta_sum", "s": sum_r, "bad": -sum_r if sum_r != 0 else 1}),
-        (f"The product of the roots of $g(x)$ is ${F(prod_r)}$.", True, {"kind": "vieta_prod", "p": prod_r}),
-        ("The graph of $f(x)-g(x)$ intersects the $y$-axis at $y=0$.", ydiff == 0, {"kind": "diff_yint", "y": ydiff}),
-        ("The graphs of $f(x)$ and $g(x)$ intersect more than twice.", False, {"kind": "intersect_gt2", "n": n_int}),
-        (f"The graphs of $f(x)$ and $g(x)$ intersect at exactly ${n_int}$ point{'s' if n_int != 1 else ''}.", True, {"kind": "intersect_exact", "n": n_int}),
-    ]
-    return pool
-
-
-def pool_hard(f, g, rng: random.Random):
-    a_f = Rational(Poly(f, x).nth(1))
-    b_f = Rational(Poly(f, x).nth(0))
-    a_g, b_g, c_g = [Rational(Poly(g, x).nth(i)) for i in (2, 1, 0)]
-    h, k = vertex(g)
-    sum_r, prod_r = Rational(-b_g / a_g), Rational(c_g / a_g)
-    n_int = intersect_count(f, g)
-    rw = rewrite_coeffs(f, g)
-    fg = expand(f.subs(x, g))
-    gf = expand(g.subs(x, f))
-    deg_fg = int(Poly(fg, x).degree())
-    deg_gf = int(Poly(gf, x).degree())
-    avg = Rational(expand((g.subs(x, 2) - g.subs(x, 0)) / 2))
-    on_line = B(expand(f.subs(x, h) - k) == 0)
-    fh = Rational(expand(f.subs(x, h)))
-    lead_diff = Rational(Poly(expand(f - g), x).LC())
-    disc = Rational(discriminant(Poly(g, x)))
-    n_real = 2 if disc > 0 else (1 if disc == 0 else 0)
-    nested = Rational(expand(g.subs(x, f.subs(x, 0))))
-    nested_flip = Rational(expand(f.subs(x, g.subs(x, 0))))
-    wrong_deg = 3 if deg_gf != 3 else 1
-    # traps: confuse axis with Vieta sum, confuse vertex height with g(0), swap compositions
-    axis_as_sum = B(h == sum_r)
-    gap = Rational(fh - k)
-    mid_roots = Rational(sum_r / 2)
-    mid_is_axis = B(mid_roots == h)
-    # wrong completing-the-square with flipped shift sign
-    bad_h = -h if h != 0 else Rational(1)
-    # distance between roots when real
-    root_span = None
-    if n_real == 2:
-        roots = solve(g, x)
-        root_span = Rational(abs(roots[0] - roots[1]))
-    pool = [
-        (f"Completing the square gives $g(x)={poly_lead(a_g)}{x_shift(h)}^{{2}}{signed_term(k)}$.", True, {"kind": "complete_sq", "a": a_g, "h": h, "k": k}),
-        (f"Completing the square gives $g(x)={poly_lead(a_g)}{x_shift(bad_h)}^{{2}}{signed_term(k)}$.", False, {"kind": "complete_sq", "a": a_g, "h": h, "k": k, "bad_h": bad_h}),
-        (f"The composition $g(f(x))$ has degree ${deg_gf}$.", True, {"kind": "comp_gf", "deg": deg_gf}),
-        (f"The composition $f(g(x))$ has degree ${deg_fg}$.", True, {"kind": "comp_fg", "deg": deg_fg}),
-        (f"The composition $g(f(x))$ has degree ${wrong_deg}$.", False, {"kind": "comp_gf", "deg": deg_gf, "bad": wrong_deg}),
-        (f"Because $\\deg f=1$ and $\\deg g=2$, the composition $f(g(x))$ must have degree $3$.", False, {"kind": "comp_fg", "deg": deg_fg, "bad": 3}),
-        (f"The average rate of change of $g$ on $[0,2]$ is ${F(avg)}$.", True, {"kind": "avg", "avg": avg}),
-        (f"The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely ${F(a_f)}$.", avg == a_f, {"kind": "avg_vs_slope", "avg": avg, "m": a_f}),
-        ("The vertex of $g$ lies on the line $y=f(x)$.", on_line, {"kind": "vertex_on_f", "h": h, "k": k, "fh": fh}),
-        (f"The vertical gap $f(h)-g(h)$ at the axis of $g$ equals ${F(gap)}$.", True, {"kind": "gap", "gap": gap, "h": h, "fh": fh, "k": k}),
-        (f"The vertical gap $f(h)-g(h)$ at the axis of $g$ equals ${F(gap+a_f)}$.", False, {"kind": "gap", "gap": gap, "h": h, "fh": fh, "k": k, "bad": gap + a_f}),
-        (f"Matching $g=Af^{2}+Bf+C$ forces $A={F(rw[0])}$, $B={F(rw[1])}$, $C={F(rw[2])}$.", True, {"kind": "rewrite_full", "rw": rw}),
-        (f"Matching $g=Af^{2}+Bf+C$ forces $A={F(rw[0])}$.", True, {"kind": "rewrite_A", "rw": rw}),
-        (f"Matching $g=Af^{2}+Bf+C$ forces $A={F(rw[0]*2)}$.", False, {"kind": "rewrite_A", "rw": rw, "bad": rw[0] * 2}),
-        (f"Matching $g=Af^{2}+Bf+C$ forces $B={F(rw[1]+1)}$.", False, {"kind": "rewrite_B", "rw": rw, "bad": rw[1] + 1}),
-        (f"By Vieta, the sum of roots of $g$ is ${F(b_g)}$ (forgetting the sign and the division by $a$).", False, {"kind": "vieta_trap", "s": sum_r, "bad": b_g}),
-        (f"The axis of symmetry $x={F(h)}$ coincides with the Vieta sum of the roots.", axis_as_sum, {"kind": "axis_vs_sum", "h": h, "s": sum_r}),
-        (f"The midpoint of the roots of $g$ is $x={F(mid_roots)}$, which equals the axis of symmetry.", mid_is_axis, {"kind": "mid_axis", "mid": mid_roots, "h": h}),
-        ("Because $f-g$ looks cubic at a glance, the graphs can meet three times.", False, {"kind": "false_cubic", "n": n_int}),
-        (f"The leading coefficient of $f-g$ is ${F(lead_diff)}$.", True, {"kind": "lead_diff", "lead": lead_diff}),
-        (f"The sum of the roots of $g$ is ${F(sum_r)}$ and their product is ${F(prod_r)}$.", True, {"kind": "vieta_both", "s": sum_r, "p": prod_r}),
-        (f"$g(f(0))={F(nested)}$.", True, {"kind": "nested_eval", "val": nested}),
-        (f"$g(f(0))={F(nested+a_f)}$.", False, {"kind": "nested_eval", "val": nested, "bad": nested + a_f}),
-        (f"$f(g(0))={F(nested_flip)}$.", True, {"kind": "nested_flip", "val": nested_flip}),
-        (f"$f(g(0))=g(f(0))$, so composition order does not matter at $0$.", nested_flip == nested, {"kind": "nested_commute", "a": nested, "b": nested_flip}),
-        (f"$g(x)=0$ has exactly ${n_real}$ distinct real root{'s' if n_real != 1 else ''}.", True, {"kind": "disc", "d": disc, "n": n_real}),
-        ("A line meets a parabola at most twice, yet these two graphs meet more than twice.", False, {"kind": "contradict_meet", "n": n_int}),
-        (f"Since $f$ has slope ${F(a_f)}$, translating $g$ by ${F(b_f)}$ units vertically would make $f-g$ constant.", False, {"kind": "false_const", "m": a_f, "b": b_f}),
-        (f"The $y$-intercept of $g$ equals the vertex height, so $g(0)={F(k)}$.", B(c_g == k), {"kind": "yint_vs_vertex", "c": c_g, "k": k}),
-    ]
-    if root_span is not None:
-        pool += [
-            (f"The distance between the two real roots of $g$ is ${F(root_span)}$.", True, {"kind": "root_span", "span": root_span}),
-            (f"The distance between the two real roots of $g$ is ${F(root_span + 1)}$.", False, {"kind": "root_span", "span": root_span, "bad": root_span + 1}),
-        ]
-    return pool
-
-
-def pick_claims(f, g, rng: random.Random, difficulty: int):
-    hard_kinds = {
-        "complete_sq", "comp_gf", "comp_fg", "false_cubic", "nested_eval", "nested_flip",
-        "nested_commute", "rewrite_A", "rewrite_B", "rewrite_full", "vieta_trap",
-        "contradict_meet", "avg_vs_slope", "vertex_on_f", "gap", "axis_vs_sum",
-        "mid_axis", "lead_diff", "vieta_both", "disc", "root_span", "false_const",
-        "yint_vs_vertex", "avg",
-    }
-    if difficulty <= 2:
-        pool = pool_easy(f, g, rng)
-    elif difficulty == 3:
-        pool = pool_medium(f, g, rng) + pool_easy(f, g, rng)
-    elif difficulty == 4:
-        # mostly hard, a little medium for variety
-        pool = pool_hard(f, g, rng) + pool_medium(f, g, rng)[:4]
-    else:
-        # 5/5: hard only — no easy slope/opens fillers
-        pool = pool_hard(f, g, rng)
-
-    rng.shuffle(pool)
-    chosen = []
-    seen_kind, seen_text = set(), set()
-    for stmt, truth, meta in pool:
-        head = meta["kind"].split("_")[0]
-        if stmt in seen_text:
-            continue
-        if difficulty <= 2 and meta["kind"] in hard_kinds:
-            continue
-        # for 5/5 prefer distinct hard heads; skip medium leftovers if any
-        if difficulty >= 5 and meta["kind"] not in hard_kinds and len(chosen) < 4:
-            continue
-        if head in seen_kind and len(chosen) < 4:
-            continue
-        chosen.append((stmt, B(truth), meta))
-        seen_kind.add(head)
-        seen_text.add(stmt)
-        if len(chosen) == 5:
-            break
-    for item in pool:
-        if len(chosen) == 5:
-            break
-        if item[0] in seen_text:
-            continue
-        chosen.append((item[0], B(item[1]), item[2]))
-        seen_text.add(item[0])
-    while len(chosen) < 5:
-        s = f"The graphs of $f$ and $g$ intersect at exactly ${30 + len(chosen)}$ points."
-        if s not in seen_text:
-            chosen.append((s, False, {"kind": "intersect_pad", "n": 30 + len(chosen)}))
-            seen_text.add(s)
-    chosen = chosen[:5]
-    truths = sum(1 for _, t, _ in chosen if t)
-    if truths == 0:
-        # keep difficulty: use a true hard claim, not a slope giveaway
-        h, k = vertex(g)
-        a_g = Rational(Poly(g, x).nth(2))
-        chosen[0] = (
-            f"Completing the square gives $g(x)={poly_lead(a_g)}{x_shift(h)}^{{2}}{signed_term(k)}$.",
-            True,
-            {"kind": "complete_sq", "a": a_g, "h": h, "k": k},
-        )
-    elif truths == 5:
-        chosen[4] = ("The graphs of $f(x)$ and $g(x)$ intersect more than twice.", False, {"kind": "intersect_gt2", "n": intersect_count(f, g)})
-    # final unique
-    out, seen = [], set()
-    for item in chosen:
-        if item[0] in seen:
-            continue
-        seen.add(item[0])
-        out.append(item)
-    while len(out) < 5:
-        s = f"The graphs of $f$ and $g$ intersect at exactly ${40 + len(out)}$ points."
-        out.append((s, False, {"kind": "intersect_pad"}))
-    return out[:5]
-
-
-def explain(letter, stmt, truth, meta, f, g) -> str:
-    kind = meta["kind"]
-    a_g = Rational(Poly(g, x).nth(2))
-    b_g = Rational(Poly(g, x).nth(1))
-    h, k = vertex(g)
-    lines = [f"**{letter}.** → {'True' if truth else 'False'}", ""]
-
-    def end(ok: bool):
-        lines.append(f"so the statement is {'True' if ok else 'False'}.")
-
-    if kind == "slope":
-        lines += ["Read the coefficient of $x$:", "", "$$", f"f(x)={L(f)}", "$$", ""]
-        if "bad" in meta:
-            lines += [f"The slope is ${F(meta['m'])}$, not ${F(meta['bad'])}$,", ""]
-            end(False)
-        else:
-            lines += [f"The slope is ${F(meta['m'])}$,", ""]
-            end(True)
-    elif kind == "opens":
-        lines += ["Leading coefficient:", "", "$$", f"a={F(a_g)}", "$$", "", "Upwards iff $a>0$.", ""]
-        end(truth)
-    elif kind == "eval_g":
-        lines += [f"Substitute $x={F(meta['x0'])}$:", "", "$$", f"g({F(meta['x0'])})={F(meta['val'])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "eval_f":
-        lines += ["Evaluate at the origin:", "", "$$", f"f(0)={F(meta['val'])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "axis":
-        lines += ["Axis $x=-b/(2a)$:", "", "$$", f"x=-\\frac{{{F(b_g)}}}{{2\\cdot {F(a_g)}}}={F(h)}", "$$", ""]
-        end("bad" not in meta)
-    elif kind in ("min", "max"):
-        lines += ["Vertex height:", "", "$$", f"x={F(h)}\\qquad g({F(h)})={F(k)}", "$$", ""]
-        if "bad" in meta:
-            lines += [f"True extreme ${F(k)}$, not ${F(meta['bad'])}$,", ""]
-            end(False)
-        else:
-            end(True)
-    elif kind in ("vertex_min", "vertex_max", "vertex_min_impossible"):
-        lines += ["Vertex:", "", "$$", f"x={F(h)}\\qquad g({F(h)})={F(k)}", "$$", ""]
-        if kind == "vertex_min_impossible" or (kind == "vertex_min" and a_g < 0):
-            lines += ["With $a<0$ there is no lowest point,", ""]
-            end(False)
-        elif meta.get("bad"):
-            lines += ["The claimed point is not the vertex,", ""]
-            end(False)
-        else:
-            end(True)
-    elif kind == "rewrite":
-        A, B, C = meta["rw"]
-        lines += ["Since $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives", "", "$$", f"A={F(A)},\\ B={F(B)},\\ C={F(C)}", "$$", ""]
-        end(True)
-    elif kind == "rewrite_full":
-        A, B, C = meta["rw"]
-        lines += ["Match coefficients of $Af^{2}+Bf+C$ against $g$:", "", "$$", f"A={F(A)},\\ B={F(B)},\\ C={F(C)}", "$$", ""]
-        end(True)
-    elif kind == "rewrite_A":
-        lines += ["Match the $x^{2}$ coefficient in $Af^{2}+Bf+C$:", "", "$$", f"A={F(meta['rw'][0])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "rewrite_B":
-        lines += ["Match the linear coefficient in $Af^{2}+Bf+C$:", "", "$$", f"B={F(meta['rw'][1])}", "$$", ""]
-        end(False)
-    elif kind == "vieta_sum":
-        lines += ["Sum $=-b/a$:", "", "$$", f"-\\frac{{{F(b_g)}}}{{{F(a_g)}}}={F(meta['s'])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "vieta_prod":
-        c_g = Rational(Poly(g, x).nth(0))
-        lines += ["Product $=c/a$:", "", "$$", f"\\frac{{{F(c_g)}}}{{{F(a_g)}}}={F(meta['p'])}", "$$", ""]
-        end(True)
-    elif kind == "vieta_both":
-        lines += ["Both Vieta formulas:", "", "$$", f"\\mathrm{{sum}}={F(meta['s'])}\\qquad \\mathrm{{product}}={F(meta['p'])}", "$$", ""]
-        end(True)
-    elif kind == "vieta_trap":
-        lines += ["Sum is $-b/a$, not the raw $b$:", "", "$$", f"-\\frac{{{F(b_g)}}}{{{F(a_g)}}}={F(meta['s'])}", "$$", ""]
-        end(False)
-    elif kind == "axis_vs_sum":
-        lines += [
-            "Axis $x=-b/(2a)$ versus Vieta sum $-b/a$:", "", "$$",
-            f"x={F(meta['h'])}\\qquad \\mathrm{{sum}}={F(meta['s'])}", "$$", "",
-            "These coincide only in special cases (often when the sum is twice the axis).", "",
-        ]
-        end(truth)
-    elif kind == "mid_axis":
-        lines += [
-            "Midpoint of roots is half the Vieta sum; axis is $-b/(2a)$:", "", "$$",
-            f"\\mathrm{{mid}}={F(meta['mid'])}\\qquad \\mathrm{{axis}}={F(meta['h'])}", "$$", "",
-        ]
-        end(truth)
-    elif kind == "diff_yint":
-        lines += ["$y$-intercept of $f-g$:", "", "$$", f"(f-g)(0)={F(meta['y'])}", "$$", ""]
-        end(truth)
-    elif kind in ("intersect_gt2", "intersect_exact", "false_cubic", "contradict_meet", "intersect_pad"):
-        n = meta.get("n", intersect_count(f, g))
-        lines += ["Solve $f=g$:", "", "$$", f"{L(expand(g - f))}=0", "$$", ""]
-        d = Rational(discriminant(Poly(expand(g - f), x)))
-        lines += [f"$\\Delta={F(d)}$ yields ${n}$ real meeting(s). A line and a parabola meet at most twice.", ""]
-        end(truth)
-    elif kind == "complete_sq":
-        a, hh, kk = meta["a"], meta["h"], meta["k"]
-        lines += ["Vertex form:", "", "$$", f"g(x)={poly_lead(a)}{x_shift(hh)}^{{2}}{signed_term(kk)}", "$$", ""]
-        if "bad" in meta or "bad_h" in meta:
-            lines += ["The claimed completed-square form does not match this vertex form,", ""]
-            end(False)
-        else:
-            end(True)
-    elif kind in ("comp_gf", "comp_fg"):
-        comp = expand(g.subs(x, f) if kind == "comp_gf" else f.subs(x, g))
-        name = "g(f(x))" if kind == "comp_gf" else "f(g(x))"
-        deg = int(Poly(comp, x).degree())
-        lines += [f"Expand ${name}$:", "", "$$", L(comp), "$$", "", f"Degree ${deg}$ (not the naive sum of degrees when the outer map is linear).", ""]
-        end("bad" not in meta)
-    elif kind in ("avg", "avg_vs_slope"):
-        g0, g2 = Rational(expand(g.subs(x, 0))), Rational(expand(g.subs(x, 2)))
-        lines += ["Difference quotient on $[0,2]$:", "", "$$", f"\\frac{{g(2)-g(0)}}{{2}}=\\frac{{{F(g2)}-{F(g0)}}}{{2}}={F(meta['avg'])}", "$$", ""]
-        if kind == "avg_vs_slope":
-            lines += [f"Compare with slope of $f$, namely ${F(meta['m'])}$.", ""]
-            end(truth)
-        else:
-            end(True)
-    elif kind == "vertex_on_f":
-        lines += [f"Vertex ${P(meta['h'], meta['k'])}$ vs", "", "$$", f"f({F(meta['h'])})={F(meta['fh'])}", "$$", ""]
-        end(truth)
-    elif kind == "gap":
-        lines += [
-            f"At the axis $x={F(meta['h'])}$:", "", "$$",
-            f"f({F(meta['h'])})={F(meta['fh'])}\\qquad g({F(meta['h'])})={F(meta['k'])}", "$$", "",
-            f"Difference ${F(meta['gap'])}$.", "",
-        ]
-        end("bad" not in meta)
-    elif kind == "lead_diff":
-        lines += ["Expand $f-g$:", "", "$$", L(expand(f - g)), "$$", ""]
-        end(True)
-    elif kind == "nested_eval":
-        lines += ["Inside-out:", "", "$$", f"f(0)={F(Rational(expand(f.subs(x, 0))))}", "$$", "", "$$", f"g(f(0))={F(meta['val'])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "nested_flip":
-        lines += ["Other order:", "", "$$", f"g(0)={F(Rational(expand(g.subs(x, 0))))}", "$$", "", "$$", f"f(g(0))={F(meta['val'])}", "$$", ""]
-        end(True)
-    elif kind == "nested_commute":
-        lines += [
-            "Compare both nestings at $0$:", "", "$$",
-            f"g(f(0))={F(meta['a'])}\\qquad f(g(0))={F(meta['b'])}", "$$", "",
-        ]
-        end(truth)
-    elif kind == "disc":
-        lines += ["Discriminant of $g$:", "", "$$", f"\\Delta={F(meta['d'])}", "$$", "", f"Exactly ${meta['n']}$ distinct real root(s),", ""]
-        end(True)
-    elif kind == "root_span":
-        lines += ["With two real roots, distance $=\\sqrt{\\Delta}/|a|$:", "", "$$", f"\\mathrm{{span}}={F(meta['span'])}", "$$", ""]
-        end("bad" not in meta)
-    elif kind == "false_const":
-        lines += [
-            "A vertical shift of $g$ changes only the constant term of $f-g$; the $x$ and $x^{2}$ "
-            "pieces remain, so $f-g$ cannot become constant.", "",
-        ]
-        end(False)
-    elif kind == "yint_vs_vertex":
-        lines += [
-            "Compare $g(0)$ with the vertex height:", "", "$$",
-            f"g(0)={F(meta['c'])}\\qquad g(h)={F(meta['k'])}", "$$", "",
-        ]
-        end(truth)
-    else:
-        lines += ["Compare the claim with the recovered models.", ""]
-        end(truth)
-    return "\n".join(lines)
-
-
-def overview(model: Model) -> str:
-    f, g = model.f, model.g
-    h, k = vertex(g)
-    a_g, b_g, c_g = [Rational(Poly(g, x).nth(i)) for i in (2, 1, 0)]
-    sum_r, prod_r = Rational(-b_g / a_g), Rational(c_g / a_g)
-    n_int = intersect_count(f, g)
-    rw = rewrite_coeffs(f, g)
-    parts = []
-    if model.stem_kind != "formula" and model.scene:
-        parts += ["**Part 0: Recover the models from the stem.**", "", model.scene, "", "Translating the stem into formulas gives"]
-    else:
-        parts += ["The stem gives the models directly:"]
-    parts += ["", "$$", f"f(x)={L(f)}\\qquad g(x)={L(g)}", "$$", "",
-              "**Part 1: Shared facts.**", "", "$$",
-              f"\\mathrm{{vertex}}=\\left({F(h)},{F(k)}\\right)\\qquad \\mathrm{{sum}}={F(sum_r)}\\qquad \\mathrm{{product}}={F(prod_r)}",
-              "$$", "", "**Part 2: Difference and meetings.**", "", "$$",
-              f"f-g={L(expand(f - g))}\\qquad \\#\\mathrm{{intersections}}={n_int}", "$$", "",
-              "**Part 3: Linear basis.**", "",
-              f"Because $\\deg f=1$, write $g=Af^{2}+Bf+C$ with $A={F(rw[0])}$, $B={F(rw[1])}$, $C={F(rw[2])}$.",
-              "", f"**Answer.** vertex $={P(h, k)}$ | sum $={F(sum_r)}$ | product $={F(prod_r)}$ | meetings $={n_int}$"]
-    return "\n".join(parts)
-
-
-def build_context(model: Model) -> str:
-    if model.stem_kind == "formula":
-        return (
-            f"Consider the linear and quadratic functions $f(x)={L(model.f)}$ and "
-            f"$g(x)={L(model.g)}$. Evaluate each statement. Mark it TRUE or FALSE."
-        )
-    if model.stem_kind == "text":
-        return (
-            f"{model.scene} First recover the formulas for $f$ and $g$ from the text, "
-            f"then evaluate each statement. Mark it TRUE or FALSE."
-        )
-    if model.stem_kind == "points":
-        return (
-            f"{model.scene} Rebuild $f$ and $g$ from these facts, then evaluate each statement. "
-            f"Mark it TRUE or FALSE."
-        )
-    return (
-        f"{model.scene} Recover any missing formula, then evaluate each statement. "
-        f"Mark it TRUE or FALSE."
+def photo() -> Spec:
+    return S(
+        "Vertex, Linear Rewrite, and Crossings of a Line and a Parabola",
+        "Consider the following linear and quadratic functions: "
+        "$f(x) = 4x + 2$ and $g(x) = x^{2} - x - 2$. "
+        "Evaluate each statement. Mark it TRUE or FALSE.",
+        3, "formula",
+        [
+            C("The point on the graph of $g(x)$ with the lowest $y$ coordinate is "
+              "$\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$.", True,
+              "Axis $x=1/2$; $g(1/2)=-9/4$; $a>0$ so this is the minimum."),
+            C("There exist values $a, b, c \\in \\mathbb{R}$ such that "
+              "$g(x) = a f(x)^{2} + b f(x) + c$.", True,
+              "$\\{1,f,f^{2}\\}$ spans degree $\\le 2$; matching recovers $a=1/16$, $b=-1/2$, $c=-5/4$."),
+            C("The sum of the roots of function $g(x)$ is $-1$.", False, "Sum $=-b/a=1$, not $-1$."),
+            C("The graph of the function $f(x) - g(x)$ intersects with the $y$-axis at $y = 0$.", False,
+              "$(f-g)(0)=4\\neq 0$."),
+            C("The graphs of the functions $f(x)$ and $g(x)$ intersect more than twice.", False,
+              "$f=g$ is quadratic with $\\Delta=41>0$: exactly two meetings."),
+        ],
+        "$$\nf(x)=4x+2\\qquad g(x)=x^{2}-x-2\n$$\n\n"
+        "$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)"
+        "\\qquad \\mathrm{sum}=1\\qquad \\#\\mathrm{meetings}=2\n$$\n\n"
+        "Rewrite $g=Af^{2}+Bf+C$ yields $A=1/16$, $B=-1/2$, $C=-5/4$.",
+        is_photo=True,
     )
 
 
-def assign_slots(models: list[Model], rng: random.Random) -> list[tuple[Model, int]]:
-    formula = [m for m in models if m.stem_kind == "formula"]
-    text = [m for m in models if m.stem_kind == "text"]
-    points = [m for m in models if m.stem_kind == "points"]
-    hybrid = [m for m in models if m.stem_kind == "hybrid"]
-    for bucket in (formula, text, points, hybrid):
-        rng.shuffle(bucket)
+def bank_d1() -> list[Spec]:
+    return [
+        S("Slope and Opening at a Glance",
+          "Let $f(x)=3x-5$ and $g(x)=-2x^{2}+x+4$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The slope of $y=f(x)$ is $3$.", True, "Coefficient of $x$."),
+           C("The parabola $g$ opens upwards.", False, "Leading coefficient $-2<0$."),
+           C("$f(0)=-5$.", True, "Constant term."),
+           C("$g(0)=4$.", True, "Constant term."),
+           C("The slope of $y=f(x)$ is $-3$.", False, "Slope is $3$.")],
+          "Read coefficients: slope $3$; $g$ opens downwards."),
+        S("Axis from Coefficients",
+          "Let $g(x)=x^{2}-6x+5$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The axis of symmetry of $g$ is $x=3$.", True, "$-b/(2a)=3$."),
+           C("$g$ opens downwards.", False, "$a=1>0$."),
+           C("The slope of $f$ is $2$.", True, "Read off."),
+           C("$g(3)=-4$.", True, "$9-18+5=-4$."),
+           C("The axis of $g$ is $x=-3$.", False, "Sign error in $-b/(2a)$.")],
+          "Axis $x=3$; $g=(x-1)(x-5)$."),
+        S("Evaluate and Compare",
+          "Let $f(x)=-x+4$ and $g(x)=x^{2}+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("$f(2)=2$.", True, "$-2+4=2$."),
+           C("$g(0)=0$.", False, "$g(0)=1$."),
+           C("The minimum of $g$ is $1$.", True, "Vertex $(0,1)$."),
+           C("$f$ is increasing.", False, "Slope $-1<0$."),
+           C("$g(1)=2$.", True, "$1+1=2$.")],
+          "Direct evaluation; $g\\ge 1$."),
+        S("Intercept Checklist",
+          "Let $f(x)=5x$ and $g(x)=x^{2}-4$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("$f(0)=0$.", True, "Through the origin."),
+           C("$g$ has roots $2$ and $-2$.", True, "$x^{2}=4$."),
+           C("The slope of $f$ is $5$.", True, "Read off."),
+           C("$g$ opens downwards.", False, "$a=1$."),
+           C("$g(0)=-4$.", True, "Constant term.")],
+          "$f$ through origin; $g$ roots $\\pm 2$."),
+        S("Simple Vertex Read",
+          "Let $g(x)=(x-2)^{2}+3$ and $f(x)=x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The vertex of $g$ is $(2,3)$.", True, "Vertex form."),
+           C("The axis of $g$ is $x=2$.", True, "Same $h$."),
+           C("$f$ and $g$ share the root $x=2$.", False, "$g(2)=3\\neq 0$."),
+           C("$g$ opens upwards.", True, "$a=1$."),
+           C("The slope of $f$ is $1$.", True, "Read off.")],
+          "Vertex already visible at $(2,3)$."),
+        S("Leading Coefficient Sign",
+          "Let $f(x)=\\frac{1}{2}x+7$ and $g(x)=3x^{2}-x$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("$g$ opens upwards.", True, "$a=3>0$."),
+           C("$g(0)=0$.", True, "No constant term."),
+           C("The slope of $f$ is $7$.", False, "Slope is $1/2$."),
+           C("$f(0)=7$.", True, "Intercept."),
+           C("The axis of $g$ is $x=\\frac{1}{6}$.", True, "$-b/(2a)=1/6$.")],
+          "Positive leading coefficient; axis $x=1/6$."),
+        S("Two Easy Meetings",
+          "Let $f(x)=x$ and $g(x)=x^{2}-2x$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The graphs meet at $x=0$.", True, "$f(0)=g(0)=0$."),
+           C("The graphs meet at $x=3$.", True, "$f(3)=g(3)=3$."),
+           C("The graphs meet at three points.", False, "Degree at most $2$."),
+           C("$g$ opens downwards.", False, "$a=1$."),
+           C("The slope of $f$ is $1$.", True, "Identity line.")],
+          "$g-f=x(x-3)$."),
+        S("Downward Peak",
+          "Let $g(x)=-x^{2}+4x$ and $f(x)=2$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The maximum of $g$ is $4$.", True, "$g(2)=4$."),
+           C("The axis of $g$ is $x=2$.", True, "$-b/(2a)=2$."),
+           C("$f$ is a horizontal line.", True, "Constant."),
+           C("$g$ opens upwards.", False, "$a=-1$."),
+           C("$g(0)=4$.", False, "$g(0)=0$.")],
+          "Vertex at $(2,4)$."),
+        S("Factor Roots Quickly",
+          "Let $g(x)=(x+1)(x-4)$ and $f(x)=-2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The roots of $g$ are $-1$ and $4$.", True, "Factored form."),
+           C("The sum of the roots of $g$ is $3$.", True, "Add the roots."),
+           C("The slope of $f$ is $-2$.", True, "Read off."),
+           C("$g$ opens downwards.", False, "Expanded leading coefficient $1$."),
+           C("$f(0)=3$.", True, "Intercept.")],
+          "Roots $-1$ and $4$; sum $3$."),
+        S("Constant Versus Square",
+          "Let $f(x)=5$ and $g(x)=x^{2}+5$. Evaluate each statement. Mark it TRUE or FALSE.",
+          1, "formula",
+          [C("The graphs touch at $(0,5)$.", True, "$f(0)=g(0)=5$."),
+           C("$g(x)\\ge 5$ for all real $x$.", True, "$x^{2}\\ge 0$."),
+           C("$f$ has slope $5$.", False, "Slope $0$."),
+           C("$g$ opens upwards.", True, "$a=1$."),
+           C("The graphs intersect twice.", False, "Only one contact point.")],
+          "$g-f=x^{2}$: single contact."),
+    ]
 
-    photo = next(m for m in formula if Poly(m.f, x).nth(1) == 4 and Poly(m.f, x).nth(0) == 2)
-    formula = [m for m in formula if m is not photo]
-    slots: list[tuple[Model, int]] = [(photo, 3)]
 
-    # Target mix among remaining 49, with hard diffs biased to text/points/hybrid
-    plan = []
-    # difficulties: need 1×9 more of 3, and 10 of each 1,2,4,5
-    diffs = [1] * 10 + [2] * 10 + [3] * 9 + [4] * 10 + [5] * 10
-    rng.shuffle(diffs)
-    for d in diffs:
-        if d >= 4:
-            kind = rng.choice(["text", "text", "text", "points", "hybrid", "hybrid", "formula"])
-        elif d <= 2:
-            kind = rng.choice(["formula", "formula", "formula", "text", "points"])
-        else:
-            kind = rng.choice(["formula", "text", "points", "hybrid", "formula"])
-        plan.append((kind, d))
+def bank_d2() -> list[Spec]:
+    return [
+        S("Vieta Against a Line",
+          "Let $f(x)=2x-1$ and $g(x)=x^{2}-5x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The sum of the roots of $g$ is $5$.", True, "$-b/a=5$."),
+           C("The product of the roots of $g$ is $-6$.", False, "Product $6$."),
+           C("The axis of $g$ is $x=\\frac{5}{2}$.", True, "Midpoint."),
+           C("The slope of $f$ is $2$.", True, "Read off."),
+           C("$g(2)=0$.", True, "Root.")],
+          "Roots $2,3$; sum $5$; product $6$."),
+        S("Vertex Versus Intercept",
+          "Let $g(x)=2x^{2}-8x+3$ and $f(x)=x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The vertex of $g$ is $(2,-5)$.", True, "$g(2)=-5$."),
+           C("$g(0)$ equals the vertex height of $g$.", False, "$3\\neq -5$."),
+           C("The axis of $g$ is $x=2$.", True, "$-b/(2a)=2$."),
+           C("$f(2)=5$.", True, "$2+3$."),
+           C("$g$ opens downwards.", False, "$a=2$.")],
+          "Axis $x=2$; vertex height $-5\\neq g(0)$."),
+        S("Count the Meetings",
+          "Let $f(x)=x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The graphs intersect at exactly two points.", True, "$\\Delta>0$."),
+           C("The graphs intersect at $x=-1$.", True, "$g-f=(x-3)(x+1)$."),
+           C("The graphs intersect at $x=3$.", True, "Same factorisation."),
+           C("The sum of roots of $g$ is $-1$.", False, "Sum $=1$."),
+           C("$f$ is decreasing.", False, "Slope $1$.")],
+          "$g-f=(x-3)(x+1)$."),
+        S("Completing the Square, Easy",
+          "Let $g(x)=x^{2}+4x+1$ and $f(x)=-x$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("Completing the square gives $g(x)=(x+2)^{2}-3$.", True, "Standard completion."),
+           C("The vertex of $g$ is $(-2,-3)$.", True, "From vertex form."),
+           C("The minimum value of $g$ is $1$.", False, "Minimum is $-3$."),
+           C("The slope of $f$ is $-1$.", True, "Read off."),
+           C("$g$ opens upwards.", True, "$a=1$.")],
+          "$g(x)=(x+2)^{2}-3$."),
+        S("Difference $y$-Intercept",
+          "Let $f(x)=4x+2$ and $g(x)=x^{2}+3$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("$(f-g)(0)=0$.", False, "$2-3=-1$."),
+           C("The graphs meet on the $y$-axis.", False, "Same as previous."),
+           C("$g$ has no real roots.", True, "$x^{2}=-3$."),
+           C("The slope of $f$ is $4$.", True, "Read off."),
+           C("$g(0)=3$.", True, "Constant.")],
+          "$(f-g)(0)=-1$."),
+        S("Scaled Parabola Roots",
+          "Let $g(x)=2(x-1)(x-3)$ and $f(x)=3x$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The roots of $g$ are $1$ and $3$.", True, "Factors."),
+           C("The leading coefficient of $g$ is $2$.", True, "Scale factor."),
+           C("The sum of the roots is $2$.", False, "Sum $4$."),
+           C("The axis of $g$ is $x=2$.", True, "Midpoint."),
+           C("The slope of $f$ is $3$.", True, "Read off.")],
+          "Scaling preserves roots; sum $4$."),
+        S("Falling Line Twin Roots",
+          "Let $f(x)=-x+2$ and $g(x)=x^{2}+x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The roots of $g$ are $-3$ and $2$.", True, "$(x+3)(x-2)$."),
+           C("The axis of $g$ is $x=-\\frac{1}{2}$.", True, "Midpoint."),
+           C("$f(2)=0$.", True, "Root of the line."),
+           C("The sum of roots of $g$ is $1$.", False, "Sum $=-1$."),
+           C("$g$ opens upwards.", True, "$a=1$.")],
+          "Roots $-3,2$; axis $x=-1/2$."),
+        S("Even Parabola Check",
+          "Let $g(x)=x^{2}-9$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("$g$ is even.", True, "Only even powers."),
+           C("The axis of $g$ is $x=0$.", True, "$b=0$."),
+           C("The product of roots of $g$ is $-9$.", True, "Vieta."),
+           C("$f$ is even.", False, "Nonzero slope."),
+           C("$g(3)=0$.", True, "Root.")],
+          "Even about the $y$-axis; roots $\\pm 3$."),
+        S("Average Rate Warm-Up",
+          "Let $g(x)=x^{2}-4x$ and $f(x)=3x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("The average rate of change of $g$ on $[0,2]$ is $-2$.", True, "$(g(2)-g(0))/2=-2$."),
+           C("That average rate equals the slope of $f$.", False, "Slope of $f$ is $3$."),
+           C("The axis of $g$ is $x=2$.", True, "$-b/(2a)=2$."),
+           C("$g(0)=0$.", True, "Through origin."),
+           C("$f(0)=1$.", True, "Intercept.")],
+          "Average rate $-2\\neq$ slope $3$."),
+        S("Rewrite Exists at Level Two",
+          "Let $f(x)=x-1$ and $g(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          2, "formula",
+          [C("There exist $A,B,C$ with $g=Af^{2}+Bf+C$.", True, "Degree-$1$ basis."),
+           C("$g$ factors as $(x-1)(x+1)$.", True, "Difference of squares."),
+           C("The graphs meet at $x=1$.", True, "$f(1)=g(1)=0$."),
+           C("The sum of roots of $g$ is $0$.", True, "Vieta."),
+           C("$f$ opens upwards.", False, "Lines do not open.")],
+          "$g=f^{2}+2f$; rewrite exists."),
+    ]
 
-    idx = {"formula": 0, "text": 0, "points": 0, "hybrid": 0}
-    bags = {"formula": formula, "text": text, "points": points, "hybrid": hybrid}
-    used: set[int] = set()
 
-    def take(kind: str) -> Model:
-        order = [kind, "text", "hybrid", "points", "formula"]
-        for k in order:
-            bag = bags[k]
-            start = idx[k]
-            for offset in range(len(bag)):
-                i = (start + offset) % len(bag)
-                m = bag[i]
-                mid = id(m)
-                if mid in used:
-                    continue
-                used.add(mid)
-                idx[k] = i + 1
-                return m
-        # last resort: reuse formula models
-        m = bags["formula"][idx["formula"] % len(bags["formula"])]
-        idx["formula"] += 1
-        return m
+def bank_d3() -> list[Spec]:
+    """9 medium tasks; photo is separate."""
+    return [
+        S("Tangent Line Probe",
+          "Let $g(x)=x^{2}-4x+5$ and $f(x)=2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "geometric",
+          [C("The graphs are tangent.", False, "$g-f=(x-2)(x-4)$: two meetings."),
+           C("The graphs meet at $x=2$ and $x=4$.", True, "Factorisation."),
+           C("The vertex of $g$ is $(2,1)$.", True, "$g(2)=1$."),
+           C("$g'(2)=0$.", True, "$g'=2x-4$."),
+           C("$f'(x)=g'(x)$ for all $x$.", False, "Only possible at isolated points.")],
+          "$g-f=(x-2)(x-4)$: two meetings, not tangent."),
+        S("Nested Evaluation Chain",
+          "Let $f(x)=2x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "formula",
+          [C("$g(f(0))=-2$.", True, "$f(0)=1$, $g(1)=-2$."),
+           C("$f(g(0))=-3$.", True, "$g(0)=-2$, $f(-2)=-3$."),
+           C("$g(f(0))=f(g(0))$.", False, "$-2\\neq -3$."),
+           C("The sum of roots of $g$ is $1$.", True, "Vieta."),
+           C("$\\deg(g\\circ f)=2$.", True, "$2\\cdot 1=2$.")],
+          "Composition order matters."),
+        S("Complete Square and Meetings",
+          "Let $f(x)=3x$ and $g(x)=x^{2}-6x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "formula",
+          [C("Completing the square gives $g(x)=(x-3)^{2}+1$.", True, "Standard completion."),
+           C("The minimum of $g$ is $1$.", True, "Vertex height."),
+           C("The graphs of $f$ and $g$ never meet.", False, "$\\Delta=41>0$."),
+           C("The axis of $g$ is $x=3$.", True, "From vertex form."),
+           C("$g(3)=f(3)$.", False, "$g(3)=1$, $f(3)=9$.")],
+          "$g=(x-3)^{2}+1$; still meets the line twice."),
+        S("Rebuild from Roots and Slope",
+          "The line $f$ has slope $2$ and $y$-intercept $1$. The monic quadratic $g$ has roots "
+          "$2$ and $3$. Rebuild the formulas, then evaluate each statement. Mark it TRUE or FALSE.",
+          3, "hybrid",
+          [C("$f(x)=2x+1$.", True, "Slope-intercept recovery."),
+           C("$g(x)=x^{2}-5x+6$.", True, "Monic with given roots."),
+           C("The sum of roots of $g$ is $-5$.", False, "Sum $5$."),
+           C("There exist $A,B,C$ with $g=Af^{2}+Bf+C$.", True, "Linear basis."),
+           C("The graphs meet more than twice.", False, "Degree bound.")],
+          "$$\nf(x)=2x+1\\qquad g(x)=(x-2)(x-3)\n$$"),
+        S("Vertex on the Line?",
+          "Let $f(x)=x-1$ and $g(x)=x^{2}-2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "formula",
+          [C("The vertex of $g$ lies on $y=f(x)$.", False, "$f(1)=0\\neq -4$."),
+           C("The vertex of $g$ is $(1,-4)$.", True, "$g(1)=-4$."),
+           C("The roots of $g$ are $-1$ and $3$.", True, "$(x+1)(x-3)$."),
+           C("The axis of $g$ equals the Vieta sum of its roots.", False, "Axis $1$, sum $2$."),
+           C("$\\deg(f\\circ g)=2$.", True, "Degree multiply.")],
+          "Vertex $(1,-4)$ is not on the line."),
+        S("Horizontal Gap at the Axis",
+          "Let $f(x)=4x-1$ and $g(x)=x^{2}-4x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "formula",
+          [C("At the axis of $g$, the vertical gap $f-g$ equals $10$.", True, "$f(2)-g(2)=7-(-3)=10$."),
+           C("The axis of $g$ is $x=2$.", True, "$-b/(2a)=2$."),
+           C("The graphs are tangent at the axis.", False, "Gap $\\neq 0$."),
+           C("The sum of roots of $g$ is $4$.", True, "Vieta."),
+           C("$g$ opens downwards.", False, "$a=1$.")],
+          "Axis $x=2$; gap $10$."),
+        S("No Real Roots Versus Line",
+          "Let $f(x)=x$ and $g(x)=x^{2}+x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
+          3, "formula",
+          [C("$g$ has no real roots.", True, "$\\Delta=-3$."),
+           C("The graphs of $f$ and $g$ do not meet.", True, "$g-f=x^{2}+1>0$."),
+           C("The vertex of $g$ is $\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$.", True, "Direct computation."),
+           C("The product of complex roots of $g$ is $1$.", True, "Vieta $c/a$."),
+           C("$f$ is constant.", False, "Slope $1$.")],
+          "$\\Delta_g<0$ and $g-f=x^{2}+1$."),
+    ]
 
-    for kind, d in plan:
-        slots.append((take(kind), d))
-    assert len(slots) == 50
-    assert Counter(d for _, d in slots) == Counter({1: 10, 2: 10, 3: 10, 4: 10, 5: 10})
-    return slots
+
+def bank_d4() -> list[Spec]:
+    return [
+        S("Family of Lines Seeking Tangency",
+          "Let $g(x)=x^{2}-2x+2$ and $f_t(x)=tx$. Evaluate each statement about the real "
+          "parameter $t$. Mark it TRUE or FALSE.",
+          4, "parametric",
+          [C("There exist real values of $t$ for which $y=f_t$ is tangent to $y=g$.", True,
+             "$\\Delta(t)=(2+t)^{2}-8=0$ has solutions $t=-2\\pm 2\\sqrt{2}$."),
+           C("For $t=0$, the graphs intersect twice.", False, "$\\Delta(0)=-4<0$."),
+           C("If $\\Delta(t)>0$, the graphs intersect at two distinct points.", True, "Definition."),
+           C("The vertex of $g$ lies on the line $y=f_0(x)$.", False, "Vertex $(1,1)$; $f_0\\equiv 0$."),
+           C("Tangency can occur for at most one real $t$.", False, "Two solutions.")],
+          "$g-f_t=x^{2}-(2+t)x+2$, $\\Delta(t)=(2+t)^{2}-8$."),
+        S("Composition Trap with Explicit Maps",
+          "Let $f(x)=3x-1$ and $g(x)=2x^{2}-4x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("Because $\\deg f=1$ and $\\deg g=2$, the map $f\\circ g$ must have degree $3$.", False,
+             "Degrees multiply: degree $2$."),
+           C("$\\deg(g\\circ f)=2$.", True, "$2\\cdot 1=2$."),
+           C("$g(f(0))=0$.", True, "$f(0)=-1$, $g(-1)=0$."),
+           C("$f(g(0))=g(f(0))$.", False, "$f(-6)=-19\\neq 0$."),
+           C("Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{9}$.", True, "Leading: $A\\cdot 9=2$.")],
+          "Degree multiply, nested mismatch, $A=2/9$."),
+        S("Wrong Completed Square Sign",
+          "Let $g(x)=x^{2}-3x-10$ and $f(x)=-3x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("Completing the square gives $g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.", True,
+             "Correct vertex form."),
+           C("Completing the square gives $g(x)=\\left(x+\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.", False,
+             "Wrong sign in the shift."),
+           C("The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.", False,
+             "Average $-1$; slope of $f$ is $-3$."),
+           C("$f(g(0))=36$.", True, "$g(0)=-10$, $f(-10)=36$."),
+           C("A vertical translation of $g$ can make $f-g$ a constant function.", False,
+             "The quadratic term survives any vertical shift.")],
+          "True completion uses $x-3/2$; translation cannot kill $x^{2}$."),
+        S("Three Maps: Line, Square, Difference",
+          "Let $f(x)=2x+3$, $g(x)=x^{2}-x-2$, and $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("The leading coefficient of $d$ is $-1$.", True, "$d=-x^{2}+3x+5$."),
+           C("$\\deg d=2$.", True, "Quadratic."),
+           C("The graphs of $f$ and $g$ meet wherever $d=0$.", True, "Definition."),
+           C("$d(0)=0$.", False, "$d(0)=5$."),
+           C("Because $d$ looks cubic at a glance, $f$ and $g$ can meet three times.", False,
+             "Still degree $2$.")],
+          "$d=-x^{2}+3x+5$."),
+        S("Parameter Constraint on Opening",
+          "Let $g_a(x)=ax^{2}-4x+1$ with $a\\neq 0$, and let $f(x)=x$. Evaluate each statement. "
+          "Mark it TRUE or FALSE.",
+          4, "parametric",
+          [C("If $a=1$, the graphs of $f$ and $g_a$ meet twice.", True, "$\\Delta=25-4a=21>0$."),
+           C("If $a=10$, the graphs of $f$ and $g_a$ still meet twice.", False, "$\\Delta=25-40<0$."),
+           C("The axis of $g_a$ is $x=2$ for every $a$.", False, "Axis $x=2/a$."),
+           C("If $a<0$, then $g_a$ opens downwards.", True, "Sign of leading coefficient."),
+           C("There exists $a$ for which $y=f$ is tangent to $y=g_a$.", True, "$\\Delta=0$ at $a=25/4$.")],
+          "$g_a-f=ax^{2}-5x+1$, $\\Delta=25-4a$."),
+        S("Vieta Trap Combined with Rewrite",
+          "Let $f(x)=4x-1$ and $g(x)=x^{2}-3x-10$. Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("By Vieta, the sum of roots of $g$ is $-3$ (forgetting the minus).", False, "Sum $=3$."),
+           C("The product of roots of $g$ is $-10$.", True, "Vieta."),
+           C("Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{1}{16}$.", True, "Leading $A\\cdot 16=1$."),
+           C("Matching forces $B=-3$.", False, "$B$ is not the raw linear coefficient of $g$."),
+           C("$\\deg(g\\circ f)=2$.", True, "Degree multiply.")],
+          "Sum $3$, product $-10$, $A=1/16$."),
+        S("Root Distance and Midpoint",
+          "Let $g(x)=x^{2}-x-12$ and $f(x)=5x-5$. Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("The distance between the real roots of $g$ is $7$.", True, "$|-3-4|=7$."),
+           C("The midpoint of the roots equals the axis of symmetry.", True, "Always for a quadratic."),
+           C("The axis of $g$ coincides with the Vieta sum of the roots.", False, "Axis $1/2$, sum $1$."),
+           C("$f(1)=0$.", True, "$5-5=0$."),
+           C("The graphs meet more than twice.", False, "Degree bound.")],
+          "Roots $-3,4$; midpoint $=$ axis $=1/2$."),
+        S("Inverse Linear Then Quadratic",
+          "Let $f(x)=2x-4$ (invertible) and $g(x)=x^{2}-5x+6$. Let $f^{-1}$ be the inverse of $f$. "
+          "Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "formula",
+          [C("$f^{-1}(x)=\\frac{x+4}{2}$.", True, "Solve $y=2x-4$."),
+           C("$\\deg(g\\circ f^{-1})=2$.", True, "Linear change of variable."),
+           C("$g(f^{-1}(f(2)))=0$.", True, "$f(2)=0$, $f^{-1}(0)=2$, $g(2)=0$."),
+           C("$f^{-1}$ is quadratic.", False, "Inverse of linear is linear."),
+           C("The product of roots of $g$ is $6$.", True, "Vieta.")],
+          "$f^{-1}(x)=(x+4)/2$."),
+        S("Hybrid: Printed Line, Roots in Words",
+          "Take $f(x)=x+1$. The quadratic $g$ is monic with roots $3$ and $5$. Recover $g$, "
+          "then evaluate each statement. Mark it TRUE or FALSE.",
+          4, "hybrid",
+          [C("The average rate of change of $g$ on $[0,2]$ is $-6$.", True,
+             "$(g(2)-g(0))/2=(3-15)/2=-6$."),
+           C("Matching $g=Af^{2}+Bf+C$ forces $B=-9$.", False,
+             "With $A=1$: match gives $B=-10$, $C=24$."),
+           C("The $y$-intercept of $g$ equals the vertex height.", False,
+             "$g(0)=15$, vertex height $g(4)=-1$."),
+           C("$f(g(0))=16$.", True, "$g(0)=15$, $f(15)=16$."),
+           C("The graphs meet more than twice.", False, "Degree bound.")],
+          "$$\ng(x)=(x-3)(x-5)=x^{2}-8x+15\n$$"),
+        S("Forced Coefficient System",
+          "Suppose $g(x)=x^{2}+px+q$ passes through $(0,-3)$ and has axis $x=2$. Let $f(x)=x-2$. "
+          "Evaluate each statement. Mark it TRUE or FALSE.",
+          4, "parametric",
+          [C("$p=-4$.", True, "Axis $x=2\\Rightarrow -p/2=2$."),
+           C("$q=-3$.", True, "From $g(0)=-3$."),
+           C("The vertex of $g$ is $(2,-7)$.", True, "$g(2)=-7$."),
+           C("$f$ vanishes at the axis of $g$.", True, "$f(2)=0$."),
+           C("$g$ has two positive real roots.", False, "Product $q=-3<0$: opposite signs.")],
+          "$$\ng(x)=x^{2}-4x-3\\qquad f(x)=x-2\n$$"),
+    ]
 
 
-def build_task(idx: int, model: Model, difficulty: int, rng: random.Random) -> dict:
-    claims = pick_claims(model.f, model.g, rng, difficulty)
+def bank_d5() -> list[Spec]:
+    return [
+        S("Double Composition and Leading Match",
+          "Let $f(x)=4x+2$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+          5, "formula",
+          [C("Matching $g=Af^{2}+Bf+C$ forces "
+             "$A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.", True,
+             "Full coefficient match."),
+           C("Because $f-g$ can be mistaken for a cubic, the graphs may meet three times.", False,
+             "Still degree $2$."),
+           C("$g(f(0))=f(g(0))$.", False, "$f(0)=2$, $g(2)=0$; $g(0)=-2$, $f(-2)=-6$."),
+           C("At the axis of $g$, the gap $f-g$ equals $\\frac{17}{4}$.", True,
+             "Axis $x=1/2$; $f=4$, $g=-9/4$; gap $17/4$."),
+           C("Completing the square gives "
+             "$g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$.", True, "Vertex form.")],
+          "Multi-hop on the photo models: rewrite triple, nested mismatch, axis gap."),
+        S("Parameter Window for Two Meetings",
+          "Let $g(x)=x^{2}-4x+1$ and $f_k(x)=kx+1$. Evaluate each statement about the real "
+          "parameter $k$. Mark it TRUE or FALSE.",
+          5, "parametric",
+          [C("For every $k$, the graphs intersect at the point $(0,1)$.", True, "$g(0)=f_k(0)=1$."),
+           C("If $k=-4$, the graphs intersect at exactly one point.", True, "$g-f_k=x^{2}$: double root at $0$."),
+           C("If $k=-4$, the line is tangent to the parabola at $(0,1)$.", True,
+             "Double root and $g'(0)=-4=k$."),
+           C("For $k=0$, the second intersection is at $x=4$.", True, "Roots $0$ and $4$."),
+           C("There exists a real $k$ for which the graphs fail to meet.", False,
+             "They always share the point $(0,1)$.")],
+          "$g-f_k=x^{2}-(4+k)x$. Always through $(0,1)$; tangency at $k=-4$."),
+        S("Scaled Roots and Nested Order",
+          "You are given $f(x)=5x-2$. The quadratic $g$ has roots $2$ and $4$ but leading "
+          "coefficient $2$. Recover $g$, then evaluate each statement. Mark it TRUE or FALSE.",
+          5, "hybrid",
+          [C("$g(x)=2x^{2}-12x+16$.", True, "$2(x-2)(x-4)$."),
+           C("Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{25}$.", True, "Leading $A\\cdot 25=2$."),
+           C("$g(f(0))=f(g(0))$.", False, "$f(0)=-2$, $g(-2)=48$; $g(0)=16$, $f(16)=78$."),
+           C("The distance between the roots of $g$ is $2$.", True, "Scaling does not move roots."),
+           C("Completing the square gives $g(x)=2(x-3)^{2}-2$.", True, "Vertex at $x=3$; $g(3)=-2$.")],
+          "$$\ng(x)=2(x-2)(x-4)=2x^{2}-12x+16\n$$"),
+        S("Average Rate Versus Instantaneous Slope",
+          "Let $g(x)=x^{2}-6x+5$ and $f(x)=4x-8$. Evaluate each statement. Mark it TRUE or FALSE.",
+          5, "formula",
+          [C("The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.", False,
+             "Average $-4$; slope of $f$ is $+4$."),
+           C("There exists $c\\in(0,2)$ with $g'(c)$ equal to that average rate.", True,
+             "Mean value theorem; explicitly $g'(1)=-4$."),
+           C("Completing the square gives $g(x)=(x-3)^{2}-4$.", True, "Vertex form."),
+           C("By Vieta, the sum of roots is $-6$.", False, "Sum $=6$; sign trap."),
+           C("$f(g(0))=12$.", True, "$g(0)=5$, $f(5)=12$.")],
+          "Average $-4$; MVT witness $c=1$; Vieta sign trap."),
+        S("When Does Vertical Shift Kill Meetings?",
+          "Let $f(x)=2x$ and $g_s(x)=x^{2}-x-2+s$ with real shift $s$. Evaluate each statement. "
+          "Mark it TRUE or FALSE.",
+          5, "parametric",
+          [C("For $s=0$, the graphs meet twice.", True, "$\\Delta=17>0$."),
+           C("For $s=5$, the graphs meet twice.", False, "$\\Delta=17-20<0$."),
+           C("There exists $s$ making the graphs tangent.", True, "$\\Delta=0$ at $s=17/4$."),
+           C("Vertical shifts can create a third intersection with $f$.", False, "Degree stays $2$."),
+           C("The axis of $g_s$ depends on $s$.", False, "Axis still $x=1/2$.")],
+          "$g_s-f=x^{2}-3x+(s-2)$, $\\Delta=17-4s$."),
+        S("Simultaneous Vertex and Intercept Constraints",
+          "A monic quadratic $g$ has vertex at $(1,-4)$ and a linear $f$ satisfies $f(1)=0$ "
+          "and $f(0)=-2$. Rebuild both, then evaluate each statement. Mark it TRUE or FALSE.",
+          5, "geometric",
+          [C("$g(x)=x^{2}-2x-3$.", True, "$(x-1)^{2}-4$."),
+           C("$f(x)=2x-2$.", True, "Two-point recovery."),
+           C("The vertex of $g$ lies on $y=f(x)$.", False, "$f(1)=0\\neq -4$."),
+           C("The roots of $g$ are $-1$ and $3$.", True, "Factor."),
+           C("$\\deg(g\\circ f)=2$.", True, "Degree multiply.")],
+          "$$\ng(x)=(x-1)^{2}-4\\qquad f(x)=2x-2\n$$"),
+        S("False Constant After Translation",
+          "Let $f(x)=-3x+6$ and $g(x)=x^{2}-3x-10$. Evaluate each statement. Mark it TRUE or FALSE.",
+          5, "formula",
+          [C("Completing the square gives "
+             "$g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.", True, "Correct vertex form."),
+           C("Because $\\deg f=1$ and $\\deg g=2$, the composition $f\\circ g$ must have degree $3$.", False,
+             "Degree $2$."),
+           C("$f(g(0))=36$.", True, "$g(0)=-10$, $f(-10)=36$."),
+           C("The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.", False,
+             "Average $-1$; slope $-3$."),
+           C("Since $f$ has slope $-3$, translating $g$ by $6$ units vertically would make $f-g$ constant.", False,
+             "The quadratic term remains.")],
+          "Composition-degree trap; translation cannot kill $x^{2}$."),
+        S("Cross-Condition Web",
+          "Let $f(x)=x+1$, $g(x)=x^{2}-8x+15$, and $h(x)=g(x)-f(x)$. Evaluate each statement. "
+          "Mark it TRUE or FALSE.",
+          5, "formula",
+          [C("The graphs of $f$ and $g$ meet at $x=2$ and $x=7$.", True, "$h=(x-2)(x-7)$."),
+           C("Matching $g=Af^{2}+Bf+C$ forces $A=1$.", True, "Leading match with $f^{2}$."),
+           C("The $y$-intercept of $g$ equals the vertex height of $g$.", False,
+             "$g(0)=15$, vertex height $g(4)=-1$."),
+           C("$f(g(0))=16$.", True, "$15+1$."),
+           C("$h$ opens downwards.", False, "Leading coefficient $+1$.")],
+          "$h=x^{2}-9x+14$; rewrite leading $A=1$."),
+        S("Slope Family Against Fixed Vertex",
+          "Let $g(x)=(x-2)^{2}-1$ be fixed, and let $f_m(x)=m(x-2)-1$ be the pencil of lines "
+          "through the vertex of $g$. Evaluate each statement. Mark it TRUE or FALSE.",
+          5, "parametric",
+          [C("For every $m$, the graphs intersect at the vertex of $g$.", True,
+             "Both pass through $(2,-1)$."),
+           C("If $m=0$, the graphs intersect at exactly one point.", True,
+             "$g-f_0=(x-2)^{2}$: double root at the vertex."),
+           C("If $m=3$, there is a second intersection at $x=5$.", True,
+             "Second root $x=2+m$."),
+           C("For $m\\neq 0$, the line is tangent to the parabola.", False,
+             "Two distinct intersections when $m\\neq 0$."),
+           C("No line in the pencil can be tangent except $m=0$.", True, "Only then a double root.")],
+          "$g-f_m=(x-2)\\bigl((x-2)-m\\bigr)$. Tangency only for $m=0$."),
+        S("Linked Conditions on Sum and Gap",
+          "Let $g(x)=x^{2}-Sx+P$ with unknown Vieta data. Suppose the axis is $x=3$, the product "
+          "of roots is $-4$, and $f(x)=2x$. Recover $g$, then evaluate each statement. "
+          "Mark it TRUE or FALSE.",
+          5, "parametric",
+          [C("$S=6$.", True, "Axis $x=S/2=3$."),
+           C("$P=-4$.", True, "Given product."),
+           C("$g(x)=x^{2}-6x-4$.", True, "Recovered model."),
+           C("At the axis, $f-g=19$.", True, "$f(3)=6$, $g(3)=-13$, gap $19$."),
+           C("The graphs of $f$ and $g$ meet more than twice.", False, "Degree bound.")],
+          "Axis $\\Rightarrow S=6$; product $\\Rightarrow P=-4$; gap at $x=3$ equals $19$."),
+    ]
+
+
+# ---------------------------------------------------------------------------
+# Assemble
+# ---------------------------------------------------------------------------
+
+def assemble() -> list[Spec]:
+    photo_task = photo()
+    d1 = bank_d1()
+    d2 = bank_d2()
+    # d3: photo + 2 symbolic@3 + 7 medium
+    sym3 = [t for t in SYMBOLIC if t.difficulty == 3]
+    d3 = [photo_task] + sym3[:2] + bank_d3()
+    # d4: 5 symbolic@4 + 5 hard4  → overall ~25% symbolic with d3/d5
+    sym4 = [t for t in SYMBOLIC if t.difficulty == 4]
+    d4 = sym4[:5] + bank_d4()[:5]
+    # d5: 5 symbolic@5 + 5 hard5
+    sym5 = [t for t in SYMBOLIC if t.difficulty == 5]
+    d5 = sym5[:5] + bank_d5()[:5]
+
+    for label, bucket in [("1", d1), ("2", d2), ("3", d3), ("4", d4), ("5", d5)]:
+        if len(bucket) != 10:
+            raise SystemExit(f"diff {label}: {len(bucket)}")
+        if any(t.difficulty != int(label) for t in bucket):
+            bad = [t.title for t in bucket if t.difficulty != int(label)]
+            raise SystemExit(f"diff mismatch in {label}: {bad}")
+
+    # Order: photo first, then remaining by cycling difficulties
+    rest = d1 + d2 + [t for t in d3 if not t.is_photo] + d4 + d5
+    final = [photo_task] + rest
+    assert len(final) == 50
+    assert Counter(t.difficulty for t in final) == Counter({1: 10, 2: 10, 3: 10, 4: 10, 5: 10})
+    assert sum(1 for t in final if t.stem_kind == "symbolic") >= 12
+    assert final[0].is_photo
+    return final
+
+
+def render(spec: Spec, idx: int) -> dict:
     letters = "ABCDE"
     return {
         "id": f"math-7-{idx + 1}",
         "case_id": f"MATH 7.{idx + 1:02d}",
-        "title": model.title,
-        "context": build_context(model),
-        "statements": [c[0] for c in claims],
-        "answer_key": [c[1] for c in claims],
+        "title": spec.title,
+        "context": spec.context,
+        "statements": [c.text for c in spec.claims],
+        "answer_key": [c.truth for c in spec.claims],
         "tactical_explanations": [
-            explain(letters[i], claims[i][0], claims[i][1], claims[i][2], model.f, model.g)
-            for i in range(5)
+            expl(letters[i], c.truth, c.explanation) for i, c in enumerate(spec.claims)
         ],
-        "difficulty_level": f"{difficulty}/5",
+        "difficulty_level": f"{spec.difficulty}/5",
         "sort_order": idx + 1,
-        "solution_overview": overview(model),
+        "solution_overview": spec.overview,
         "subsection": "7",
         "placeholder": False,
-        "stem_kind": model.stem_kind,
+        "stem_kind": spec.stem_kind,
     }
 
 
-def patch_photo(task: dict) -> dict:
-    task = dict(task)
-    f, g = 4 * x + 2, x**2 - x - 2
-    task.update(
-        {
-            "title": "Vertex, Linear Rewrite, and Crossings of a Line and a Parabola",
-            "context": (
-                "Consider the following linear and quadratic functions: "
-                "$f(x) = 4x + 2$ and $g(x) = x^{2} - x - 2$. "
-                "Evaluate each statement. Mark it TRUE or FALSE."
-            ),
-            "statements": [
-                "The point on the graph of $g(x)$ with the lowest $y$ coordinate is $\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$.",
-                "There exist values $a, b, c \\in \\mathbb{R}$ such that $g(x) = a f(x)^{2} + b f(x) + c$.",
-                "The sum of the roots of function $g(x)$ is $-1$.",
-                "The graph of the function $f(x) - g(x)$ intersects with the $y$-axis at $y = 0$.",
-                "The graphs of the functions $f(x)$ and $g(x)$ intersect more than twice.",
-            ],
-            "answer_key": [True, True, False, False, False],
-            "difficulty_level": "3/5",
-            "stem_kind": "formula",
-            "tactical_explanations": [
-                "**A.** → True\n\nVertex abscissa $-b/(2a)$:\n\n$$\nx=-\\frac{-1}{2}=\\frac{1}{2}\n$$\n\n$$\ng\\left(\\frac{1}{2}\\right)=\\frac{1}{4}-\\frac{1}{2}-2=-\\frac{9}{4}\n$$\n\nWith $a>0$ this is the lowest point, so the statement is True.",
-                "**B.** → True\n\n$\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching recovers $a=1/16$, $b=-1/2$, $c=-5/4$, so the statement is True.",
-                "**C.** → False\n\nSum $=-b/a=1$, not $-1$, so the statement is False.",
-                "**D.** → False\n\n$(f-g)(0)=4\\neq 0$, so the statement is False.",
-                "**E.** → False\n\n$f=g$ is quadratic with $\\Delta=41>0$, hence exactly two meetings, so the statement is False.",
-            ],
-            "solution_overview": overview(Model(f, g, task["title"], "formula")),
-        }
-    )
-    return task
-
-
-def main():
-    rng = random.Random(17)
-    slots = assign_slots(all_models(), rng)
-    tasks = [build_task(i, m, d, rng) for i, (m, d) in enumerate(slots)]
-    tasks[0] = patch_photo(tasks[0])
-
+def validate(tasks: list[dict]) -> None:
+    assert len(tasks) == 50
+    assert Counter(t["difficulty_level"] for t in tasks) == Counter({f"{d}/5": 10 for d in range(1, 6)})
+    sym = sum(1 for t in tasks if t["stem_kind"] == "symbolic")
+    assert sym >= 12, sym
+    assert tasks[0]["case_id"] == "MATH 7.01"
+    assert tasks[0]["difficulty_level"] == "3/5"
+    assert "4x + 2" in tasks[0]["context"] or "4x+2" in tasks[0]["context"].replace(" ", "")
     for t in tasks:
-        assert len(set(t["statements"])) == 5, t["case_id"]
-        assert 1 <= sum(1 for x in t["answer_key"] if x) <= 4, (t["case_id"], t["answer_key"])
+        assert len(t["statements"]) == 5 and len(set(t["statements"])) == 5, t["case_id"]
+        truths = sum(1 for x in t["answer_key"] if x)
+        assert 1 <= truths <= 4, (t["case_id"], t["answer_key"])
         assert len(t["tactical_explanations"]) == 5
+        if t["stem_kind"] == "symbolic":
+            blob = (t["context"] + " ".join(t["statements"])).lower()
+            assert "euro" not in blob and "pallet" not in blob
 
-    diffs = Counter(t["difficulty_level"] for t in tasks)
-    kinds = Counter(t["stem_kind"] for t in tasks)
-    assert diffs == Counter({f"{d}/5": 10 for d in range(1, 6)}), diffs
 
+def main() -> None:
+    specs = assemble()
+    tasks = [render(s, i) for i, s in enumerate(specs)]
+    validate(tasks)
     OUT.write_text(json.dumps({"tasks": tasks}, ensure_ascii=False, indent=2) + "\n")
+    kinds = Counter(t["stem_kind"] for t in tasks)
+    diffs = Counter(t["difficulty_level"] for t in tasks)
     print(f"Wrote {len(tasks)} -> {OUT}")
     print("difficulties:", dict(sorted(diffs.items())))
     print("stem_kinds:", dict(kinds))
-    print("true-counts:", dict(Counter(sum(1 for x in t["answer_key"] if x) for t in tasks)))
-    # show a couple of text stems
+    print(f"symbolic: {kinds['symbolic']}/50 = {100 * kinds['symbolic'] / 50:.0f}%")
+    print("7.01:", tasks[0]["title"], tasks[0]["difficulty_level"])
     for t in tasks:
-        if t["stem_kind"] == "text":
-            print("TEXT sample:", t["case_id"], t["difficulty_level"], t["context"][:100], "...")
+        if t["stem_kind"] == "symbolic" and t["difficulty_level"] in ("4/5", "5/5"):
+            print("SYM hard:", t["case_id"], t["difficulty_level"], t["title"])
+            print("  A:", t["statements"][0][:110])
             break
     for t in tasks:
-        if t["difficulty_level"] == "5/5" and t["stem_kind"] != "formula":
-            print("HARD sample:", t["case_id"], t["stem_kind"], t["statements"][0][:80])
+        if t["difficulty_level"] == "5/5" and t["stem_kind"] != "symbolic":
+            print("NUM5:", t["case_id"], t["stem_kind"], t["title"])
             break
 
 

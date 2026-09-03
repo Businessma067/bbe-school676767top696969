@@ -20,15 +20,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex abscissa $-b/(2a)$:\n\n$$\nx=-\\frac{-1}{2}=\\frac{1}{2}\n$$\n\n$$\ng\\left(\\frac{1}{2}\\right)=\\frac{1}{4}-\\frac{1}{2}-2=-\\frac{9}{4}\n$$\n\nWith $a>0$ this is the lowest point, so the statement is True.",
-        "**B.** → True\n\n$\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching recovers $a=1/16$, $b=-1/2$, $c=-5/4$, so the statement is True.",
-        "**C.** → False\n\nSum $=-b/a=1$, not $-1$, so the statement is False.",
-        "**D.** → False\n\n$(f-g)(0)=4\\neq 0$, so the statement is False.",
-        "**E.** → False\n\n$f=g$ is quadratic with $\\Delta=41>0$, hence exactly two meetings, so the statement is False."
+        "**A.** → True\n\nAxis $x=1/2$; $g(1/2)=-9/4$; $a>0$ so this is the minimum.",
+        "**B.** → True\n\n$\\{1,f,f^{2}\\}$ spans degree $\\le 2$; matching recovers $a=1/16$, $b=-1/2$, $c=-5/4$.",
+        "**C.** → False\n\nSum $=-b/a=1$, not $-1$.",
+        "**D.** → False\n\n$(f-g)(0)=4\\neq 0$.",
+        "**E.** → False\n\n$f=g$ is quadratic with $\\Delta=41>0$: exactly two meetings."
       ],
       "difficulty_level": "3/5",
       "sort_order": 1,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$ | sum $=1$ | product $=-2$ | meetings $=2$",
+      "solution_overview": "$$\nf(x)=4x+2\\qquad g(x)=x^{2}-x-2\n$$\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\#\\mathrm{meetings}=2\n$$\n\nRewrite $g=Af^{2}+Bf+C$ yields $A=1/16$, $B=-1/2$, $C=-5/4$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -36,32 +36,32 @@
     {
       "id": "math-7-2",
       "case_id": "MATH 7.02",
-      "title": "Factorable Quadratic Parallel Trap",
-      "context": "Consider the linear and quadratic functions $f(x)=4 x - 2$ and $g(x)=x^{2} - 5 x + 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Slope and Opening at a Glance",
+      "context": "Let $f(x)=3x-5$ and $g(x)=-2x^{2}+x+4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The parabola $g$ opens downwards.",
-        "The axis of symmetry of $g$ is $x=\\frac{7}{2}$.",
-        "$g(1)=5$.",
-        "The slope of $y=f(x)$ is $-4$.",
-        "$g(1)=2$."
+        "The slope of $y=f(x)$ is $3$.",
+        "The parabola $g$ opens upwards.",
+        "$f(0)=-5$.",
+        "$g(0)=4$.",
+        "The slope of $y=f(x)$ is $-3$."
       ],
       "answer_key": [
+        true,
         false,
-        false,
-        false,
-        false,
-        true
+        true,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**B.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-5}{2\\cdot 1}=\\frac{5}{2}\n$$\n\nso the statement is False.",
-        "**C.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=2\n$$\n\nso the statement is False.",
-        "**D.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 x - 2\n$$\n\nThe slope is $4$, not $-4$,\n\nso the statement is False.",
-        "**E.** → True\n\nSubstitute $x=1$:\n\n$$\ng(1)=2\n$$\n\nso the statement is True."
+        "**A.** → True\n\nCoefficient of $x$.",
+        "**B.** → False\n\nLeading coefficient $-2<0$.",
+        "**C.** → True\n\nConstant term.",
+        "**D.** → True\n\nConstant term.",
+        "**E.** → False\n\nSlope is $3$."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "1/5",
       "sort_order": 2,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=4 x - 2\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 9 x - 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-1$, $C=\\frac{15}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ | sum $=5$ | product $=6$ | meetings $=2$",
+      "solution_overview": "Read coefficients: slope $3$; $g$ opens downwards.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -69,65 +69,65 @@
     {
       "id": "math-7-3",
       "case_id": "MATH 7.03",
-      "title": "Printed Slope Against Peak Data",
-      "context": "$f$ rises with slope $6$ through $(0,2)$. $g$ opens downwards with leading coefficient $-1$, equals $4$ at the origin, and has linear coefficient $3$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Axis from Coefficients",
+      "context": "Let $g(x)=x^{2}-6x+5$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The axis of symmetry of $g$ is $x=\\frac{3}{2}$.",
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "The sum of the roots of $g(x)$ is $3$.",
-        "$f(0)=2$.",
-        "$g(2)=9$."
+        "The axis of symmetry of $g$ is $x=3$.",
+        "$g$ opens downwards.",
+        "The slope of $f$ is $2$.",
+        "$g(3)=-4$.",
+        "The axis of $g$ is $x=-3$."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{3}{2\\cdot -1}=\\frac{3}{2}\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=-\\frac{1}{36},\\ B=\\frac{11}{18},\\ C=\\frac{26}{9}\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nSum $=-b/a$:\n\n$$\n-\\frac{3}{-1}=3\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=2\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nSubstitute $x=2$:\n\n$$\ng(2)=6\n$$\n\nso the statement is False."
+        "**A.** → True\n\n$-b/(2a)=3$.",
+        "**B.** → False\n\n$a=1>0$.",
+        "**C.** → True\n\nRead off.",
+        "**D.** → True\n\n$9-18+5=-4$.",
+        "**E.** → False\n\nSign error in $-b/(2a)$."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "1/5",
       "sort_order": 3,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f$ rises with slope $6$ through $(0,2)$. $g$ opens downwards with leading coefficient $-1$, equals $4$ at the origin, and has linear coefficient $3$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=6 x + 2\\qquad g(x)=- x^{2} + 3 x + 4\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-4\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=x^{2} + 3 x - 2\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=-\\frac{1}{36}$, $B=\\frac{11}{18}$, $C=\\frac{26}{9}$.\n\n**Answer.** vertex $=\\left(\\frac{3}{2}, \\frac{25}{4}\\right)$ | sum $=3$ | product $=-4$ | meetings $=2$",
+      "solution_overview": "Axis $x=3$; $g=(x-1)(x-5)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-4",
       "case_id": "MATH 7.04",
-      "title": "Falling Line Through Twin Roots",
-      "context": "Consider the linear and quadratic functions $f(x)=2 - x$ and $g(x)=x^{2} + x - 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Evaluate and Compare",
+      "context": "Let $f(x)=-x+4$ and $g(x)=x^{2}+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The slope of $y=f(x)$ is $1$.",
-        "The axis of symmetry of $g$ is $x=-\\frac{1}{2}$.",
-        "$g(1)=-1$.",
-        "The minimum value of $g$ is $-\\frac{25}{4}$.",
-        "The slope of $y=f(x)$ is $-1$."
+        "$f(2)=2$.",
+        "$g(0)=0$.",
+        "The minimum of $g$ is $1$.",
+        "$f$ is increasing.",
+        "$g(1)=2$."
       ],
       "answer_key": [
-        false,
         true,
         false,
         true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 - x\n$$\n\nThe slope is $-1$, not $1$,\n\nso the statement is False.",
-        "**B.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=-4\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=-\\frac{1}{2}\\qquad g(-\\frac{1}{2})=-\\frac{25}{4}\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 - x\n$$\n\nThe slope is $-1$,\n\nso the statement is True."
+        "**A.** → True\n\n$-2+4=2$.",
+        "**B.** → False\n\n$g(0)=1$.",
+        "**C.** → True\n\nVertex $(0,1)$.",
+        "**D.** → False\n\nSlope $-1<0$.",
+        "**E.** → True\n\n$1+1=2$."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "1/5",
       "sort_order": 4,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 - x\\qquad g(x)=x^{2} + x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=-1\\qquad \\mathrm{product}=-6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 2 x + 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=-5$, $C=0$.\n\n**Answer.** vertex $=\\left(-\\frac{1}{2}, -\\frac{25}{4}\\right)$ | sum $=-1$ | product $=-6$ | meetings $=2$",
+      "solution_overview": "Direct evaluation; $g\\ge 1$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -135,428 +135,428 @@
     {
       "id": "math-7-5",
       "case_id": "MATH 7.05",
-      "title": "Irrigation Settings From a Briefing",
-      "context": "Flow starts eight units below zero offset and rises by four per notch ($f$). Pressure follows the square of the notch, minus six notches, plus five ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Intercept Checklist",
+      "context": "Let $f(x)=5x$ and $g(x)=x^{2}-4$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The composition $g(f(x))$ has degree $2$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $4$.",
-        "A line meets a parabola at most twice, yet these two graphs meet more than twice.",
-        "The sum of the roots of $g$ is $6$ and their product is $5$.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-3$."
+        "$f(0)=0$.",
+        "$g$ has roots $2$ and $-2$.",
+        "The slope of $f$ is $5$.",
+        "$g$ opens downwards.",
+        "$g(0)=-4$."
       ],
       "answer_key": [
         true,
-        false,
-        false,
         true,
+        true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nExpand $g(f(x))$:\n\n$$\n16 x^{2} - 88 x + 117\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is True.",
-        "**B.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{-3-5}{2}=-4\n$$\n\nCompare with slope of $f$, namely $4$.\n\nso the statement is False.",
-        "**C.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 10 x + 13=0\n$$\n\n$\\Delta=48$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**D.** → True\n\nBoth Vieta formulas:\n\n$$\n\\mathrm{sum}=6\\qquad \\mathrm{product}=5\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=\\frac{1}{16},\\ B=-\\frac{1}{2},\\ C=-3\n$$\n\nso the statement is True."
+        "**A.** → True\n\nThrough the origin.",
+        "**B.** → True\n\n$x^{2}=4$.",
+        "**C.** → True\n\nRead off.",
+        "**D.** → False\n\n$a=1$.",
+        "**E.** → True\n\nConstant term."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "1/5",
       "sort_order": 5,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nFlow starts eight units below zero offset and rises by four per notch ($f$). Pressure follows the square of the notch, minus six notches, plus five ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=4 x - 8\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=5\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 10 x - 13\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-3$.\n\n**Answer.** vertex $=\\left(3, -4\\right)$ | sum $=6$ | product $=5$ | meetings $=2$",
+      "solution_overview": "$f$ through origin; $g$ roots $\\pm 2$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-6",
       "case_id": "MATH 7.06",
-      "title": "Unit Line Versus Roots in Prose",
-      "context": "Take $f(x)=x+1$. The quadratic $g$ is promised to have roots $3$ and $5$ with leading coefficient $1$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Simple Vertex Read",
+      "context": "Let $g(x)=(x-2)^{2}+3$ and $f(x)=x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The average rate of change of $g$ on $[0,2]$ is $-6$.",
-        "A line meets a parabola at most twice, yet these two graphs meet more than twice.",
-        "Matching $g=Af^2+Bf+C$ forces $B=-9$.",
-        "The $y$-intercept of $g$ equals the vertex height, so $g(0)=-1$.",
-        "$f(g(0))=16$."
+        "The vertex of $g$ is $(2,3)$.",
+        "The axis of $g$ is $x=2$.",
+        "$f$ and $g$ share the root $x=2$.",
+        "$g$ opens upwards.",
+        "The slope of $f$ is $1$."
       ],
       "answer_key": [
         true,
+        true,
         false,
-        false,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{3-15}{2}=-6\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 9 x + 14=0\n$$\n\n$\\Delta=25$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**C.** → False\n\nMatch the linear coefficient in $Af^{2}+Bf+C$:\n\n$$\nB=-10\n$$\n\nso the statement is False.",
-        "**D.** → False\n\nCompare $g(0)$ with the vertex height:\n\n$$\ng(0)=15\\qquad g(h)=-1\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nOther order:\n\n$$\ng(0)=15\n$$\n\n$$\nf(g(0))=16\n$$\n\nso the statement is True."
+        "**A.** → True\n\nVertex form.",
+        "**B.** → True\n\nSame $h$.",
+        "**C.** → False\n\n$g(2)=3\\neq 0$.",
+        "**D.** → True\n\n$a=1$.",
+        "**E.** → True\n\nRead off."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 6,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nTake $f(x)=x+1$. The quadratic $g$ is promised to have roots $3$ and $5$ with leading coefficient $1$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=x + 1\\qquad g(x)=x^{2} - 8 x + 15\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(4,-1\\right)\\qquad \\mathrm{sum}=8\\qquad \\mathrm{product}=15\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 9 x - 14\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=-10$, $C=24$.\n\n**Answer.** vertex $=\\left(4, -1\\right)$ | sum $=8$ | product $=15$ | meetings $=2$",
+      "solution_overview": "Vertex already visible at $(2,3)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-7",
       "case_id": "MATH 7.07",
-      "title": "Half-Printed Pair",
-      "context": "Use $f(x)=4x-1$. The quadratic $g$ opens upwards, leading coefficient $1$, with roots $-2$ and $5$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Leading Coefficient Sign",
+      "context": "Let $f(x)=\\frac{1}{2}x+7$ and $g(x)=3x^{2}-x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Completing the square gives $g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
-        "$f(g(0))=g(f(0))$, so composition order does not matter at $0$.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{5}{8}$, $C=-\\frac{171}{16}$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $\\frac{85}{4}$.",
-        "$g(f(0))=-2$."
+        "$g$ opens upwards.",
+        "$g(0)=0$.",
+        "The slope of $f$ is $7$.",
+        "$f(0)=7$.",
+        "The axis of $g$ is $x=\\frac{1}{6}$."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nCompare both nestings at $0$:\n\n$$\ng(f(0))=-6\\qquad f(g(0))=-41\n$$\n\nso the statement is False.",
-        "**C.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=\\frac{1}{16},\\ B=-\\frac{5}{8},\\ C=-\\frac{171}{16}\n$$\n\nso the statement is True.",
-        "**D.** → False\n\nAt the axis $x=\\frac{3}{2}$:\n\n$$\nf(\\frac{3}{2})=5\\qquad g(\\frac{3}{2})=-\\frac{49}{4}\n$$\n\nDifference $\\frac{69}{4}$.\n\nso the statement is False.",
-        "**E.** → False\n\nInside-out:\n\n$$\nf(0)=-1\n$$\n\n$$\ng(f(0))=-6\n$$\n\nso the statement is False."
+        "**A.** → True\n\n$a=3>0$.",
+        "**B.** → True\n\nNo constant term.",
+        "**C.** → False\n\nSlope is $1/2$.",
+        "**D.** → True\n\nIntercept.",
+        "**E.** → True\n\n$-b/(2a)=1/6$."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "1/5",
       "sort_order": 7,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nUse $f(x)=4x-1$. The quadratic $g$ opens upwards, leading coefficient $1$, with roots $-2$ and $5$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=4 x - 1\\qquad g(x)=x^{2} - 3 x - 10\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-10\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 7 x + 9\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-\\frac{5}{8}$, $C=-\\frac{171}{16}$.\n\n**Answer.** vertex $=\\left(\\frac{3}{2}, -\\frac{49}{4}\\right)$ | sum $=3$ | product $=-10$ | meetings $=2$",
+      "solution_overview": "Positive leading coefficient; axis $x=1/6$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-8",
       "case_id": "MATH 7.08",
-      "title": "Named Line, Story Parabola",
-      "context": "Let $f(x)=-2x+1$. Separately, a warehouse residual is the square of stock days plus five times those days plus four — that residual is $g$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Two Easy Meetings",
+      "context": "Let $f(x)=x$ and $g(x)=x^{2}-2x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=1$.",
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "The minimum value of $g$ is $-\\frac{1}{4}$.",
-        "The graph of $f(x)-g(x)$ intersects the $y$-axis at $y=0$.",
-        "The parabola $g$ opens downwards."
+        "The graphs meet at $x=0$.",
+        "The graphs meet at $x=3$.",
+        "The graphs meet at three points.",
+        "$g$ opens downwards.",
+        "The slope of $f$ is $1$."
       ],
       "answer_key": [
         true,
         true,
         false,
         false,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=1\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=\\frac{1}{4},\\ B=-3,\\ C=\\frac{27}{4}\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nVertex height:\n\n$$\nx=-\\frac{5}{2}\\qquad g(-\\frac{5}{2})=-\\frac{9}{4}\n$$\n\nTrue extreme $-\\frac{9}{4}$, not $-\\frac{1}{4}$,\n\nso the statement is False.",
-        "**D.** → False\n\n$y$-intercept of $f-g$:\n\n$$\n(f-g)(0)=-3\n$$\n\nso the statement is False.",
-        "**E.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False."
+        "**A.** → True\n\n$f(0)=g(0)=0$.",
+        "**B.** → True\n\n$f(3)=g(3)=3$.",
+        "**C.** → False\n\nDegree at most $2$.",
+        "**D.** → False\n\n$a=1$.",
+        "**E.** → True\n\nIdentity line."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "1/5",
       "sort_order": 8,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nLet $f(x)=-2x+1$. Separately, a warehouse residual is the square of stock days plus five times those days plus four — that residual is $g$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=1 - 2 x\\qquad g(x)=x^{2} + 5 x + 4\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{5}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=-5\\qquad \\mathrm{product}=4\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 7 x - 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-3$, $C=\\frac{27}{4}$.\n\n**Answer.** vertex $=\\left(-\\frac{5}{2}, -\\frac{9}{4}\\right)$ | sum $=-5$ | product $=4$ | meetings $=2$",
+      "solution_overview": "$g-f=x(x-3)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-9",
       "case_id": "MATH 7.09",
-      "title": "Discount Schedule in Ordinary Language",
-      "context": "A coupon subtracts three euros per item from a starting credit of six ($f$). A loyalty score squares visits, subtracts three times visits, then subtracts ten ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Downward Peak",
+      "context": "Let $g(x)=-x^{2}+4x$ and $f(x)=2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Completing the square gives $g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
-        "Because $\\deg f=1$ and $\\deg g=2$, the composition $f(g(x))$ must have degree $3$.",
-        "$f(g(0))=36$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $-3$.",
-        "Since $f$ has slope $-3$, translating $g$ by $6$ units vertically would make $f-g$ constant."
+        "The maximum of $g$ is $4$.",
+        "The axis of $g$ is $x=2$.",
+        "$f$ is a horizontal line.",
+        "$g$ opens upwards.",
+        "$g(0)=4$."
       ],
       "answer_key": [
         true,
-        false,
+        true,
         true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nExpand $f(g(x))$:\n\n$$\n- 3 x^{2} + 9 x + 36\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is False.",
-        "**C.** → True\n\nOther order:\n\n$$\ng(0)=-10\n$$\n\n$$\nf(g(0))=36\n$$\n\nso the statement is True.",
-        "**D.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{-12--10}{2}=-1\n$$\n\nCompare with slope of $f$, namely $-3$.\n\nso the statement is False.",
-        "**E.** → False\n\nA vertical shift of $g$ changes only the constant term of $f-g$; the $x$ and $x^{2}$ pieces remain, so $f-g$ cannot become constant.\n\nso the statement is False."
+        "**A.** → True\n\n$g(2)=4$.",
+        "**B.** → True\n\n$-b/(2a)=2$.",
+        "**C.** → True\n\nConstant.",
+        "**D.** → False\n\n$a=-1$.",
+        "**E.** → False\n\n$g(0)=0$."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 9,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nA coupon subtracts three euros per item from a starting credit of six ($f$). A loyalty score squares visits, subtracts three times visits, then subtracts ten ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=6 - 3 x\\qquad g(x)=x^{2} - 3 x - 10\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{49}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-10\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=16 - x^{2}\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=-\\frac{1}{3}$, $C=-12$.\n\n**Answer.** vertex $=\\left(\\frac{3}{2}, -\\frac{49}{4}\\right)$ | sum $=3$ | product $=-10$ | meetings $=2$",
+      "solution_overview": "Vertex at $(2,4)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-10",
       "case_id": "MATH 7.10",
-      "title": "Scaled Factor Recovery",
-      "context": "$f(0)=-2$ and $f(3)=1$. The quadratic $g$ has roots $1$ and $3$ but is scaled so that its leading coefficient is $2$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Factor Roots Quickly",
+      "context": "Let $g(x)=(x+1)(x-4)$ and $f(x)=-2x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=-1$.",
-        "The parabola $g$ opens upwards.",
-        "The slope of $y=f(x)$ is $-1$.",
-        "The minimum value of $g$ is $-2$.",
-        "$f(0)=-2$."
+        "The roots of $g$ are $-1$ and $4$.",
+        "The sum of the roots of $g$ is $3$.",
+        "The slope of $f$ is $-2$.",
+        "$g$ opens downwards.",
+        "$f(0)=3$."
       ],
       "answer_key": [
-        false,
+        true,
+        true,
         true,
         false,
-        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=-2\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nLeading coefficient:\n\n$$\na=2\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**C.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=x - 2\n$$\n\nThe slope is $1$, not $-1$,\n\nso the statement is False.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=2\\qquad g(2)=-2\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=-2\n$$\n\nso the statement is True."
+        "**A.** → True\n\nFactored form.",
+        "**B.** → True\n\nAdd the roots.",
+        "**C.** → True\n\nRead off.",
+        "**D.** → False\n\nExpanded leading coefficient $1$.",
+        "**E.** → True\n\nIntercept."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "1/5",
       "sort_order": 10,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(0)=-2$ and $f(3)=1$. The quadratic $g$ has roots $1$ and $3$ but is scaled so that its leading coefficient is $2$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=x - 2\\qquad g(x)=2 x^{2} - 8 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-2\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} + 9 x - 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=2$, $B=0$, $C=-2$.\n\n**Answer.** vertex $=\\left(2, -2\\right)$ | sum $=4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "Roots $-1$ and $4$; sum $3$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-11",
       "case_id": "MATH 7.11",
-      "title": "Formula Plus a Verbal Twin",
-      "context": "You are given $f(x)=5x-2$ in closed form. The matching quadratic $g$ is described only in words: it opens upwards, leading coefficient one, and vanishes at $x=2$ and $x=4$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Constant Versus Square",
+      "context": "Let $f(x)=5$ and $g(x)=x^{2}+5$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$g(x)=0$ has exactly $2$ distinct real roots.",
-        "The midpoint of the roots of $g$ is $x=3$, which equals the axis of symmetry.",
-        "The composition $g(f(x))$ has degree $3$.",
-        "$f(g(0))=g(f(0))$, so composition order does not matter at $0$.",
-        "Completing the square gives $g(x)=\\left(x-3\\right)^{2}-1$."
+        "The graphs touch at $(0,5)$.",
+        "$g(x)\\ge 5$ for all real $x$.",
+        "$f$ has slope $5$.",
+        "$g$ opens upwards.",
+        "The graphs intersect twice."
       ],
       "answer_key": [
         true,
         true,
         false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDiscriminant of $g$:\n\n$$\n\\Delta=4\n$$\n\nExactly $2$ distinct real root(s),\n\nso the statement is True.",
-        "**B.** → True\n\nMidpoint of roots is half the Vieta sum; axis is $-b/(2a)$:\n\n$$\n\\mathrm{mid}=3\\qquad \\mathrm{axis}=3\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nExpand $g(f(x))$:\n\n$$\n25 x^{2} - 50 x + 24\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is False.",
-        "**D.** → False\n\nCompare both nestings at $0$:\n\n$$\ng(f(0))=24\\qquad f(g(0))=38\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-3\\right)^{2}-1\n$$\n\nso the statement is True."
+        "**A.** → True\n\n$f(0)=g(0)=5$.",
+        "**B.** → True\n\n$x^{2}\\ge 0$.",
+        "**C.** → False\n\nSlope $0$.",
+        "**D.** → True\n\n$a=1$.",
+        "**E.** → False\n\nOnly one contact point."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "1/5",
       "sort_order": 11,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nYou are given $f(x)=5x-2$ in closed form. The matching quadratic $g$ is described only in words: it opens upwards, leading coefficient one, and vanishes at $x=2$ and $x=4$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=5 x - 2\\qquad g(x)=x^{2} - 6 x + 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(3,-1\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 11 x - 10\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{25}$, $B=-\\frac{26}{25}$, $C=\\frac{144}{25}$.\n\n**Answer.** vertex $=\\left(3, -1\\right)$ | sum $=6$ | product $=8$ | meetings $=2$",
+      "solution_overview": "$g-f=x^{2}$: single contact.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-12",
       "case_id": "MATH 7.12",
-      "title": "Falling Line From Two Values",
-      "context": "$f(0)=1$ and $f(2)=-3$. $g$ has no real roots: it equals $(x+1)(x+4)$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Vieta Against a Line",
+      "context": "Let $f(x)=2x-1$ and $g(x)=x^{2}-5x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The minimum value of $g$ is $-\\frac{1}{4}$.",
-        "The slope of $y=f(x)$ is $-2$.",
-        "$g(1)=10$.",
-        "The parabola $g$ opens upwards.",
-        "The axis of symmetry of $g$ is $x=-\\frac{3}{2}$."
+        "The sum of the roots of $g$ is $5$.",
+        "The product of the roots of $g$ is $-6$.",
+        "The axis of $g$ is $x=\\frac{5}{2}$.",
+        "The slope of $f$ is $2$.",
+        "$g(2)=0$."
       ],
       "answer_key": [
+        true,
         false,
         true,
         true,
-        true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nVertex height:\n\n$$\nx=-\\frac{5}{2}\\qquad g(-\\frac{5}{2})=-\\frac{9}{4}\n$$\n\nTrue extreme $-\\frac{9}{4}$, not $-\\frac{1}{4}$,\n\nso the statement is False.",
-        "**B.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=1 - 2 x\n$$\n\nThe slope is $-2$,\n\nso the statement is True.",
-        "**C.** → True\n\nSubstitute $x=1$:\n\n$$\ng(1)=10\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**E.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{5}{2\\cdot 1}=-\\frac{5}{2}\n$$\n\nso the statement is False."
+        "**A.** → True\n\n$-b/a=5$.",
+        "**B.** → False\n\nProduct $6$.",
+        "**C.** → True\n\nMidpoint.",
+        "**D.** → True\n\nRead off.",
+        "**E.** → True\n\nRoot."
       ],
       "difficulty_level": "2/5",
       "sort_order": 12,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(0)=1$ and $f(2)=-3$. $g$ has no real roots: it equals $(x+1)(x+4)$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=1 - 2 x\\qquad g(x)=x^{2} + 5 x + 4\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{5}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=-5\\qquad \\mathrm{product}=4\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 7 x - 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-3$, $C=\\frac{27}{4}$.\n\n**Answer.** vertex $=\\left(-\\frac{5}{2}, -\\frac{9}{4}\\right)$ | sum $=-5$ | product $=4$ | meetings $=2$",
+      "solution_overview": "Roots $2,3$; sum $5$; product $6$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-13",
       "case_id": "MATH 7.13",
-      "title": "Cooling Curve Told in Sentences",
-      "context": "An oven cools with offset 5 while losing 2 degrees per minute of the timer ($f$). Residual heat squares elapsed minutes and then subtracts 9 ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Vertex Versus Intercept",
+      "context": "Let $g(x)=2x^{2}-8x+3$ and $f(x)=x+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The product of the roots of $g(x)$ is $-9$.",
-        "The slope of $y=f(x)$ is $2$.",
-        "The parabola $g$ opens upwards.",
-        "The graph of $f(x)-g(x)$ intersects the $y$-axis at $y=0$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect at exactly $2$ points."
+        "The vertex of $g$ is $(2,-5)$.",
+        "$g(0)$ equals the vertex height of $g$.",
+        "The axis of $g$ is $x=2$.",
+        "$f(2)=5$.",
+        "$g$ opens downwards."
       ],
       "answer_key": [
         true,
         false,
         true,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nProduct $=c/a$:\n\n$$\n\\frac{-9}{1}=-9\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=5 - 2 x\n$$\n\nThe slope is $-2$, not $2$,\n\nso the statement is False.",
-        "**C.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**D.** → False\n\n$y$-intercept of $f-g$:\n\n$$\n(f-g)(0)=14\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nSolve $f=g$:\n\n$$\nx^{2} + 2 x - 14=0\n$$\n\n$\\Delta=60$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is True."
+        "**A.** → True\n\n$g(2)=-5$.",
+        "**B.** → False\n\n$3\\neq -5$.",
+        "**C.** → True\n\n$-b/(2a)=2$.",
+        "**D.** → True\n\n$2+3$.",
+        "**E.** → False\n\n$a=2$."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "2/5",
       "sort_order": 13,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nAn oven cools with offset 5 while losing 2 degrees per minute of the timer ($f$). Residual heat squares elapsed minutes and then subtracts 9 ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=5 - 2 x\\qquad g(x)=x^{2} - 9\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(0,-9\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-9\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 2 x + 14\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-\\frac{5}{2}$, $C=-\\frac{11}{4}$.\n\n**Answer.** vertex $=\\left(0, -9\\right)$ | sum $=0$ | product $=-9$ | meetings $=2$",
+      "solution_overview": "Axis $x=2$; vertex height $-5\\neq g(0)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-14",
       "case_id": "MATH 7.14",
-      "title": "Intercept Pair Plus Twin Roots",
-      "context": "$f$ has slope $5$ and meets the $y$-axis at $-5$. $g$ is the monic quadratic with roots $2$ and $4$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Count the Meetings",
+      "context": "Let $f(x)=x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The $y$-intercept of $g$ equals the vertex height, so $g(0)=-1$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $5$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $16$.",
-        "The distance between the two real roots of $g$ is $3$.",
-        "$g(f(0))=63$."
+        "The graphs intersect at exactly two points.",
+        "The graphs intersect at $x=-1$.",
+        "The graphs intersect at $x=3$.",
+        "The sum of roots of $g$ is $-1$.",
+        "$f$ is decreasing."
       ],
       "answer_key": [
+        true,
+        true,
+        true,
         false,
-        false,
-        false,
-        false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCompare $g(0)$ with the vertex height:\n\n$$\ng(0)=8\\qquad g(h)=-1\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{0-8}{2}=-4\n$$\n\nCompare with slope of $f$, namely $5$.\n\nso the statement is False.",
-        "**C.** → False\n\nAt the axis $x=3$:\n\n$$\nf(3)=10\\qquad g(3)=-1\n$$\n\nDifference $11$.\n\nso the statement is False.",
-        "**D.** → False\n\nWith two real roots, distance $=\\sqrt{\\Delta}/|a|$:\n\n$$\n\\mathrm{span}=2\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nInside-out:\n\n$$\nf(0)=-5\n$$\n\n$$\ng(f(0))=63\n$$\n\nso the statement is True."
+        "**A.** → True\n\n$\\Delta>0$.",
+        "**B.** → True\n\n$g-f=(x-3)(x+1)$.",
+        "**C.** → True\n\nSame factorisation.",
+        "**D.** → False\n\nSum $=1$.",
+        "**E.** → False\n\nSlope $1$."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 14,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f$ has slope $5$ and meets the $y$-axis at $-5$. $g$ is the monic quadratic with roots $2$ and $4$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=5 x - 5\\qquad g(x)=x^{2} - 6 x + 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(3,-1\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 11 x - 13\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{25}$, $B=-\\frac{4}{5}$, $C=3$.\n\n**Answer.** vertex $=\\left(3, -1\\right)$ | sum $=6$ | product $=8$ | meetings $=2$",
+      "solution_overview": "$g-f=(x-3)(x+1)$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-15",
       "case_id": "MATH 7.15",
-      "title": "Rebuild From Roots and a Slope",
-      "context": "The line $f$ has slope $2$ and $y$-intercept $1$. The parabola $g$ opens upwards with leading coefficient $1$ and crosses the $x$-axis at $x=2$ and $x=3$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Completing the Square, Easy",
+      "context": "Let $g(x)=x^{2}+4x+1$ and $f(x)=-x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The distance between the two real roots of $g$ is $1$.",
-        "The vertex of $g$ lies on the line $y=f(x)$.",
-        "The sum of the roots of $g$ is $5$ and their product is $6$.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{2}$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $\\frac{25}{4}$."
+        "Completing the square gives $g(x)=(x+2)^{2}-3$.",
+        "The vertex of $g$ is $(-2,-3)$.",
+        "The minimum value of $g$ is $1$.",
+        "The slope of $f$ is $-1$.",
+        "$g$ opens upwards."
       ],
       "answer_key": [
         true,
-        false,
         true,
         false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWith two real roots, distance $=\\sqrt{\\Delta}/|a|$:\n\n$$\n\\mathrm{span}=1\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nVertex $\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ vs\n\n$$\nf(\\frac{5}{2})=6\n$$\n\nso the statement is False.",
-        "**C.** → True\n\nBoth Vieta formulas:\n\n$$\n\\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\nso the statement is True.",
-        "**D.** → False\n\nMatch the $x^{2}$ coefficient in $Af^{2}+Bf+C$:\n\n$$\nA=\\frac{1}{4}\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nAt the axis $x=\\frac{5}{2}$:\n\n$$\nf(\\frac{5}{2})=6\\qquad g(\\frac{5}{2})=-\\frac{1}{4}\n$$\n\nDifference $\\frac{25}{4}$.\n\nso the statement is True."
+        "**A.** → True\n\nStandard completion.",
+        "**B.** → True\n\nFrom vertex form.",
+        "**C.** → False\n\nMinimum is $-3$.",
+        "**D.** → True\n\nRead off.",
+        "**E.** → True\n\n$a=1$."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "2/5",
       "sort_order": 15,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nThe line $f$ has slope $2$ and $y$-intercept $1$. The parabola $g$ opens upwards with leading coefficient $1$ and crosses the $x$-axis at $x=2$ and $x=3$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=2 x + 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 7 x - 5\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-3$, $C=\\frac{35}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ | sum $=5$ | product $=6$ | meetings $=2$",
+      "solution_overview": "$g(x)=(x+2)^{2}-3$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-16",
       "case_id": "MATH 7.16",
-      "title": "Two Points and Two Roots",
-      "context": "$f$ is proportional to $x$ with $f(2)=8$. $g$ has roots $2$ and $-4$ and opens upwards with coefficient $1$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Difference $y$-Intercept",
+      "context": "Let $f(x)=4x+2$ and $g(x)=x^{2}+3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$g(0)=-5$.",
-        "The slope of $y=f(x)$ is $-4$.",
-        "The axis of symmetry of $g$ is $x=-1$.",
-        "The minimum value of $g$ is $-9$.",
-        "The minimum value of $g$ is $-7$."
+        "$(f-g)(0)=0$.",
+        "The graphs meet on the $y$-axis.",
+        "$g$ has no real roots.",
+        "The slope of $f$ is $4$.",
+        "$g(0)=3$."
       ],
       "answer_key": [
         false,
         false,
         true,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute $x=0$:\n\n$$\ng(0)=-8\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 x\n$$\n\nThe slope is $4$, not $-4$,\n\nso the statement is False.",
-        "**C.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{2}{2\\cdot 1}=-1\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=-1\\qquad g(-1)=-9\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nVertex height:\n\n$$\nx=-1\\qquad g(-1)=-9\n$$\n\nTrue extreme $-9$, not $-7$,\n\nso the statement is False."
+        "**A.** → False\n\n$2-3=-1$.",
+        "**B.** → False\n\nSame as previous.",
+        "**C.** → True\n\n$x^{2}=-3$.",
+        "**D.** → True\n\nRead off.",
+        "**E.** → True\n\nConstant."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "2/5",
       "sort_order": 16,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f$ is proportional to $x$ with $f(2)=8$. $g$ has roots $2$ and $-4$ and opens upwards with coefficient $1$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=4 x\\qquad g(x)=x^{2} + 2 x - 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-1,-9\\right)\\qquad \\mathrm{sum}=-2\\qquad \\mathrm{product}=-8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 2 x + 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=\\frac{1}{2}$, $C=-8$.\n\n**Answer.** vertex $=\\left(-1, -9\\right)$ | sum $=-2$ | product $=-8$ | meetings $=2$",
+      "solution_overview": "$(f-g)(0)=-1$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-17",
       "case_id": "MATH 7.17",
-      "title": "Half-Integer Mid Vertex",
-      "context": "Consider the linear and quadratic functions $f(x)=8 x - 4$ and $g(x)=x^{2} - x - 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Scaled Parabola Roots",
+      "context": "Let $g(x)=2(x-1)(x-3)$ and $f(x)=3x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Completing the square gives $g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{25}{4}$.",
-        "Because $f-g$ looks cubic at a glance, the graphs can meet three times.",
-        "The $y$-intercept of $g$ equals the vertex height, so $g(0)=-\\frac{25}{4}$.",
-        "The vertex of $g$ lies on the line $y=f(x)$.",
-        "The composition $g(f(x))$ has degree $3$."
+        "The roots of $g$ are $1$ and $3$.",
+        "The leading coefficient of $g$ is $2$.",
+        "The sum of the roots is $2$.",
+        "The axis of $g$ is $x=2$.",
+        "The slope of $f$ is $3$."
       ],
       "answer_key": [
         true,
+        true,
         false,
-        false,
-        false,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{25}{4}\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 9 x - 2=0\n$$\n\n$\\Delta=89$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**C.** → False\n\nCompare $g(0)$ with the vertex height:\n\n$$\ng(0)=-6\\qquad g(h)=-\\frac{25}{4}\n$$\n\nso the statement is False.",
-        "**D.** → False\n\nVertex $\\left(\\frac{1}{2}, -\\frac{25}{4}\\right)$ vs\n\n$$\nf(\\frac{1}{2})=0\n$$\n\nso the statement is False.",
-        "**E.** → False\n\nExpand $g(f(x))$:\n\n$$\n64 x^{2} - 72 x + 14\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is False."
+        "**A.** → True\n\nFactors.",
+        "**B.** → True\n\nScale factor.",
+        "**C.** → False\n\nSum $4$.",
+        "**D.** → True\n\nMidpoint.",
+        "**E.** → True\n\nRead off."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "2/5",
       "sort_order": 17,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=8 x - 4\\qquad g(x)=x^{2} - x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 9 x + 2\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{64}$, $B=0$, $C=-\\frac{25}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{25}{4}\\right)$ | sum $=1$ | product $=-6$ | meetings $=2$",
+      "solution_overview": "Scaling preserves roots; sum $4$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -564,65 +564,65 @@
     {
       "id": "math-7-18",
       "case_id": "MATH 7.18",
-      "title": "Revenue Story Without Printed Formulas",
-      "context": "Unit revenue grows by one euro per item after a base of four euros ($f$). A promotional curve opens downwards: eight plus twice the volume, minus the square of the volume ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Falling Line Twin Roots",
+      "context": "Let $f(x)=-x+2$ and $g(x)=x^{2}+x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=5$.",
-        "The maximum value of $g$ is $7$.",
-        "The parabola $g$ opens upwards.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "The slope of $y=f(x)$ is $1$."
+        "The roots of $g$ are $-3$ and $2$.",
+        "The axis of $g$ is $x=-\\frac{1}{2}$.",
+        "$f(2)=0$.",
+        "The sum of roots of $g$ is $1$.",
+        "$g$ opens upwards."
       ],
       "answer_key": [
-        false,
-        false,
-        false,
+        true,
+        true,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=4\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nVertex height:\n\n$$\nx=1\\qquad g(1)=9\n$$\n\nTrue extreme $9$, not $7$,\n\nso the statement is False.",
-        "**C.** → False\n\nLeading coefficient:\n\n$$\na=-1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**D.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{2}{2\\cdot -1}=1\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=x + 4\n$$\n\nThe slope is $1$,\n\nso the statement is True."
+        "**A.** → True\n\n$(x+3)(x-2)$.",
+        "**B.** → True\n\nMidpoint.",
+        "**C.** → True\n\nRoot of the line.",
+        "**D.** → False\n\nSum $=-1$.",
+        "**E.** → True\n\n$a=1$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "2/5",
       "sort_order": 18,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nUnit revenue grows by one euro per item after a base of four euros ($f$). A promotional curve opens downwards: eight plus twice the volume, minus the square of the volume ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=x + 4\\qquad g(x)=- x^{2} + 2 x + 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,9\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=x^{2} - x - 4\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=-1$, $B=10$, $C=-16$.\n\n**Answer.** vertex $=\\left(1, 9\\right)$ | sum $=2$ | product $=-8$ | meetings $=2$",
+      "solution_overview": "Roots $-3,2$; axis $x=-1/2$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-19",
       "case_id": "MATH 7.19",
-      "title": "Wide Roots Translation Trap",
-      "context": "Consider the linear and quadratic functions $f(x)=3 x - 6$ and $g(x)=x^{2} - 2 x - 8$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Even Parabola Check",
+      "context": "Let $g(x)=x^{2}-9$ and $f(x)=2x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The axis of symmetry of $g$ is $x=2$.",
-        "$g(2)=-8$.",
-        "The slope of $y=f(x)$ is $3$.",
-        "The minimum value of $g$ is $-7$.",
-        "$f(0)=-6$."
+        "$g$ is even.",
+        "The axis of $g$ is $x=0$.",
+        "The product of roots of $g$ is $-9$.",
+        "$f$ is even.",
+        "$g(3)=0$."
       ],
       "answer_key": [
-        false,
+        true,
         true,
         true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-2}{2\\cdot 1}=1\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nSubstitute $x=2$:\n\n$$\ng(2)=-8\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=3 x - 6\n$$\n\nThe slope is $3$,\n\nso the statement is True.",
-        "**D.** → False\n\nVertex height:\n\n$$\nx=1\\qquad g(1)=-9\n$$\n\nTrue extreme $-9$, not $-7$,\n\nso the statement is False.",
-        "**E.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=-6\n$$\n\nso the statement is True."
+        "**A.** → True\n\nOnly even powers.",
+        "**B.** → True\n\n$b=0$.",
+        "**C.** → True\n\nVieta.",
+        "**D.** → False\n\nNonzero slope.",
+        "**E.** → True\n\nRoot."
       ],
       "difficulty_level": "2/5",
       "sort_order": 19,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=3 x - 6\\qquad g(x)=x^{2} - 2 x - 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,-9\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 5 x + 2\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=\\frac{2}{3}$, $C=-8$.\n\n**Answer.** vertex $=\\left(1, -9\\right)$ | sum $=2$ | product $=-8$ | meetings $=2$",
+      "solution_overview": "Even about the $y$-axis; roots $\\pm 3$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -630,32 +630,32 @@
     {
       "id": "math-7-20",
       "case_id": "MATH 7.20",
-      "title": "Even Parabola and Shifted Line",
-      "context": "Consider the linear and quadratic functions $f(x)=x + 3$ and $g(x)=x^{2} - 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Average Rate Warm-Up",
+      "context": "Let $g(x)=x^{2}-4x$ and $f(x)=3x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The parabola $g$ opens upwards.",
-        "$g(0)=-4$.",
-        "The minimum value of $g$ is $-2$.",
-        "The slope of $y=f(x)$ is $-1$.",
-        "The slope of $y=f(x)$ is $1$."
+        "The average rate of change of $g$ on $[0,2]$ is $-2$.",
+        "That average rate equals the slope of $f$.",
+        "The axis of $g$ is $x=2$.",
+        "$g(0)=0$.",
+        "$f(0)=1$."
       ],
       "answer_key": [
         true,
+        false,
         true,
-        false,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**B.** → True\n\nSubstitute $x=0$:\n\n$$\ng(0)=-4\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nVertex height:\n\n$$\nx=0\\qquad g(0)=-4\n$$\n\nTrue extreme $-4$, not $-2$,\n\nso the statement is False.",
-        "**D.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=x + 3\n$$\n\nThe slope is $1$, not $-1$,\n\nso the statement is False.",
-        "**E.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=x + 3\n$$\n\nThe slope is $1$,\n\nso the statement is True."
+        "**A.** → True\n\n$(g(2)-g(0))/2=-2$.",
+        "**B.** → False\n\nSlope of $f$ is $3$.",
+        "**C.** → True\n\n$-b/(2a)=2$.",
+        "**D.** → True\n\nThrough origin.",
+        "**E.** → True\n\nIntercept."
       ],
       "difficulty_level": "2/5",
       "sort_order": 20,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=x + 3\\qquad g(x)=x^{2} - 4\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(0,-4\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-4\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + x + 7\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=-6$, $C=5$.\n\n**Answer.** vertex $=\\left(0, -4\\right)$ | sum $=0$ | product $=-4$ | meetings $=2$",
+      "solution_overview": "Average rate $-2\\neq$ slope $3$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -663,32 +663,32 @@
     {
       "id": "math-7-21",
       "case_id": "MATH 7.21",
-      "title": "Minimum Point and Difference Graph",
-      "context": "Consider the linear and quadratic functions $f(x)=4 - 2 x$ and $g(x)=x^{2} - 4 x + 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Rewrite Exists at Level Two",
+      "context": "Let $f(x)=x-1$ and $g(x)=x^{2}-1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The parabola $g$ opens upwards.",
-        "The slope of $y=f(x)$ is $2$.",
-        "The axis of symmetry of $g$ is $x=3$.",
-        "The minimum value of $g$ is $-1$.",
-        "$f(0)=4$."
+        "There exist $A,B,C$ with $g=Af^{2}+Bf+C$.",
+        "$g$ factors as $(x-1)(x+1)$.",
+        "The graphs meet at $x=1$.",
+        "The sum of roots of $g$ is $0$.",
+        "$f$ opens upwards."
       ],
       "answer_key": [
         true,
-        false,
-        false,
         true,
-        true
+        true,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 - 2 x\n$$\n\nThe slope is $-2$, not $2$,\n\nso the statement is False.",
-        "**C.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 1}=2\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=2\\qquad g(2)=-1\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=4\n$$\n\nso the statement is True."
+        "**A.** → True\n\nDegree-$1$ basis.",
+        "**B.** → True\n\nDifference of squares.",
+        "**C.** → True\n\n$f(1)=g(1)=0$.",
+        "**D.** → True\n\nVieta.",
+        "**E.** → False\n\nLines do not open."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "2/5",
       "sort_order": 21,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=4 - 2 x\\qquad g(x)=x^{2} - 4 x + 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-1\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 2 x + 1\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=0$, $C=-1$.\n\n**Answer.** vertex $=\\left(2, -1\\right)$ | sum $=4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "$g=f^{2}+2f$; rewrite exists.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -696,131 +696,131 @@
     {
       "id": "math-7-22",
       "case_id": "MATH 7.22",
-      "title": "Production Cost Buried in Text",
-      "context": "Machine A charges a setup of 1 plus five per batch ($f$). Machine B costs twice the square of the batch size, minus eight times that size, plus six ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Discriminant Logic for Quadratics",
+      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$ and $\\Delta=b^{2}-4ac$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The axis of symmetry of $g$ is $x=3$.",
-        "The minimum value of $g$ is $0$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect at exactly $2$ points.",
-        "The graph of $f(x)-g(x)$ intersects the $y$-axis at $y=0$.",
-        "$g(2)=1$."
+        "If $\\Delta<0$, then $g$ has no real roots.",
+        "If $\\Delta<0$, then $g$ has no vertex.",
+        "If $\\Delta=0$, then the graph of $g$ touches the $x$-axis at exactly one point.",
+        "If $a$ and $c$ have opposite signs, then necessarily $\\Delta>0$.",
+        "If $\\Delta>0$, then the axis of symmetry lies strictly between the two real roots."
       ],
       "answer_key": [
-        false,
-        false,
         true,
         false,
-        false
+        true,
+        true,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-8}{2\\cdot 2}=2\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nVertex height:\n\n$$\nx=2\\qquad g(2)=-2\n$$\n\nTrue extreme $-2$, not $0$,\n\nso the statement is False.",
-        "**C.** → True\n\nSolve $f=g$:\n\n$$\n2 x^{2} - 13 x + 5=0\n$$\n\n$\\Delta=129$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is True.",
-        "**D.** → False\n\n$y$-intercept of $f-g$:\n\n$$\n(f-g)(0)=-5\n$$\n\nso the statement is False.",
-        "**E.** → False\n\nSubstitute $x=2$:\n\n$$\ng(2)=-2\n$$\n\nso the statement is False."
+        "**A.** → True\n\nStandard discriminant.",
+        "**B.** → False\n\nThe vertex $x=-b/(2a)$ always exists over $\\mathbb{R}$.",
+        "**C.** → True\n\nA double root is tangency to the $x$-axis.",
+        "**D.** → True\n\nThen $ac<0$, so $-4ac>0$, hence $\\Delta>0$.",
+        "**E.** → True\n\nThe axis is their midpoint."
       ],
       "difficulty_level": "3/5",
       "sort_order": 22,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nMachine A charges a setup of 1 plus five per batch ($f$). Machine B costs twice the square of the batch size, minus eight times that size, plus six ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=5 x + 1\\qquad g(x)=2 x^{2} - 8 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-2\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} + 13 x - 5\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{2}{25}$, $B=-\\frac{44}{25}$, $C=\\frac{192}{25}$.\n\n**Answer.** vertex $=\\left(2, -2\\right)$ | sum $=4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "Discriminant dictionary; the vertex exists independently of $\\Delta$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-23",
       "case_id": "MATH 7.23",
-      "title": "Axis Versus Vieta Sum",
-      "context": "Consider the linear and quadratic functions $f(x)=2 x - 3$ and $g(x)=x^{2} + x - 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Even Quadratic Symmetry",
+      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each statement about evenness. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=-2$.",
-        "The slope of $y=f(x)$ is $-2$.",
-        "The minimum value of $g$ is $-\\frac{25}{4}$.",
-        "The parabola $g$ opens downwards.",
-        "The axis of symmetry of $g$ is $x=\\frac{1}{2}$."
+        "$g$ is an even function if and only if $b=0$.",
+        "If $g$ is even, then its vertex lies on the $y$-axis.",
+        "Every even quadratic is also an odd function.",
+        "If the axis of $g$ is $x=0$, then $g$ is even.",
+        "Multiplying $g$ by $-1$ can destroy evenness."
       ],
       "answer_key": [
-        false,
-        false,
+        true,
         true,
         false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=-3\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 x - 3\n$$\n\nThe slope is $2$, not $-2$,\n\nso the statement is False.",
-        "**C.** → True\n\nVertex height:\n\n$$\nx=-\\frac{1}{2}\\qquad g(-\\frac{1}{2})=-\\frac{25}{4}\n$$\n\nso the statement is True.",
-        "**D.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**E.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{1}{2\\cdot 1}=-\\frac{1}{2}\n$$\n\nso the statement is False."
+        "**A.** → True\n\n$g(-x)-g(x)=-2bx$ vanishes identically iff $b=0$.",
+        "**B.** → True\n\n$b=0\\Rightarrow$ vertex at $x=0$.",
+        "**C.** → False\n\nThe only both-even-and-odd function is zero.",
+        "**D.** → True\n\nAxis $x=0\\Leftrightarrow b=0\\Leftrightarrow$ even.",
+        "**E.** → False\n\n$-g$ still has linear coefficient $0$ whenever $b=0$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "3/5",
       "sort_order": 23,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 x - 3\\qquad g(x)=x^{2} + x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=-1\\qquad \\mathrm{product}=-6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + x + 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=2$, $C=-\\frac{9}{4}$.\n\n**Answer.** vertex $=\\left(-\\frac{1}{2}, -\\frac{25}{4}\\right)$ | sum $=-1$ | product $=-6$ | meetings $=2$",
+      "solution_overview": "$g$ is even iff $b=0$ iff the axis is the $y$-axis.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-24",
       "case_id": "MATH 7.24",
-      "title": "No-Root Trap Hidden in a Story",
-      "context": "A quote is five plus twice the order size ($f$). A penalty curve is the square of order size plus four times that size plus three ($g$) — and $g$ never crosses zero. First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Tangent Line Probe",
+      "context": "Let $g(x)=x^{2}-4x+5$ and $f(x)=2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "$f(0)=5$.",
-        "The parabola $g$ opens downwards.",
-        "The minimum value of $g$ is $-1$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect at exactly $2$ points."
+        "The graphs are tangent.",
+        "The graphs meet at $x=2$ and $x=4$.",
+        "The vertex of $g$ is $(2,1)$.",
+        "$g'(2)=0$.",
+        "$f'(x)=g'(x)$ for all $x$."
       ],
       "answer_key": [
-        true,
-        true,
         false,
         true,
-        true
+        true,
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=\\frac{1}{4},\\ B=-\\frac{1}{2},\\ C=-\\frac{3}{4}\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=5\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=-2\\qquad g(-2)=-1\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nSolve $f=g$:\n\n$$\nx^{2} + 2 x - 2=0\n$$\n\n$\\Delta=12$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is True."
+        "**A.** → False\n\n$g-f=(x-2)(x-4)$: two meetings.",
+        "**B.** → True\n\nFactorisation.",
+        "**C.** → True\n\n$g(2)=1$.",
+        "**D.** → True\n\n$g'=2x-4$.",
+        "**E.** → False\n\nOnly possible at isolated points."
       ],
       "difficulty_level": "3/5",
       "sort_order": 24,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nA quote is five plus twice the order size ($f$). A penalty curve is the square of order size plus four times that size plus three ($g$) — and $g$ never crosses zero.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=2 x + 5\\qquad g(x)=x^{2} + 4 x + 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-2,-1\\right)\\qquad \\mathrm{sum}=-4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 2 x + 2\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-\\frac{1}{2}$, $C=-\\frac{3}{4}$.\n\n**Answer.** vertex $=\\left(-2, -1\\right)$ | sum $=-4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "$g-f=(x-2)(x-4)$: two meetings, not tangent.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "geometric"
     },
     {
       "id": "math-7-25",
       "case_id": "MATH 7.25",
-      "title": "Integer Roots and Axis Check",
-      "context": "Consider the linear and quadratic functions $f(x)=2 x - 1$ and $g(x)=x^{2} - 3 x + 2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Nested Evaluation Chain",
+      "context": "Let $f(x)=2x+1$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The parabola $g$ opens downwards.",
-        "The minimum value of $g$ is $-\\frac{1}{4}$.",
-        "The slope of $y=f(x)$ is $2$.",
-        "$g(0)=2$.",
-        "The product of the roots of $g(x)$ is $2$."
+        "$g(f(0))=-2$.",
+        "$f(g(0))=-3$.",
+        "$g(f(0))=f(g(0))$.",
+        "The sum of roots of $g$ is $1$.",
+        "$\\deg(g\\circ f)=2$."
       ],
       "answer_key": [
+        true,
+        true,
         false,
-        true,
-        true,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**B.** → True\n\nVertex height:\n\n$$\nx=\\frac{3}{2}\\qquad g(\\frac{3}{2})=-\\frac{1}{4}\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 x - 1\n$$\n\nThe slope is $2$,\n\nso the statement is True.",
-        "**D.** → True\n\nSubstitute $x=0$:\n\n$$\ng(0)=2\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nProduct $=c/a$:\n\n$$\n\\frac{2}{1}=2\n$$\n\nso the statement is True."
+        "**A.** → True\n\n$f(0)=1$, $g(1)=-2$.",
+        "**B.** → True\n\n$g(0)=-2$, $f(-2)=-3$.",
+        "**C.** → False\n\n$-2\\neq -3$.",
+        "**D.** → True\n\nVieta.",
+        "**E.** → True\n\n$2\\cdot 1=2$."
       ],
       "difficulty_level": "3/5",
       "sort_order": 25,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 x - 1\\qquad g(x)=x^{2} - 3 x + 2\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=2\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 5 x - 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-1$, $C=\\frac{3}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{3}{2}, -\\frac{1}{4}\\right)$ | sum $=3$ | product $=2$ | meetings $=2$",
+      "solution_overview": "Composition order matters.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -828,32 +828,32 @@
     {
       "id": "math-7-26",
       "case_id": "MATH 7.26",
-      "title": "Scaled Parabola Against a Steep Line",
-      "context": "Consider the linear and quadratic functions $f(x)=5 x - 5$ and $g(x)=2 x^{2} - 4 x - 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Complete Square and Meetings",
+      "context": "Let $f(x)=3x$ and $g(x)=x^{2}-6x+10$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The vertex of $g$ lies on the line $y=f(x)$.",
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "Since $f$ has slope $5$, translating $g$ by $-5$ units vertically would make $f-g$ constant.",
-        "The composition $f(g(x))$ has degree $2$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $5$."
+        "Completing the square gives $g(x)=(x-3)^{2}+1$.",
+        "The minimum of $g$ is $1$.",
+        "The graphs of $f$ and $g$ never meet.",
+        "The axis of $g$ is $x=3$.",
+        "$g(3)=f(3)$."
       ],
       "answer_key": [
-        false,
+        true,
         true,
         false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nVertex $\\left(1, -8\\right)$ vs\n\n$$\nf(1)=0\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=\\frac{2}{25},\\ B=0,\\ C=-8\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nA vertical shift of $g$ changes only the constant term of $f-g$; the $x$ and $x^{2}$ pieces remain, so $f-g$ cannot become constant.\n\nso the statement is False.",
-        "**D.** → True\n\nExpand $f(g(x))$:\n\n$$\n10 x^{2} - 20 x - 35\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is True.",
-        "**E.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{-6--6}{2}=0\n$$\n\nCompare with slope of $f$, namely $5$.\n\nso the statement is False."
+        "**A.** → True\n\nStandard completion.",
+        "**B.** → True\n\nVertex height.",
+        "**C.** → False\n\n$\\Delta=41>0$.",
+        "**D.** → True\n\nFrom vertex form.",
+        "**E.** → False\n\n$g(3)=1$, $f(3)=9$."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "3/5",
       "sort_order": 26,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=5 x - 5\\qquad g(x)=2 x^{2} - 4 x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,-8\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} + 9 x + 1\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{2}{25}$, $B=0$, $C=-8$.\n\n**Answer.** vertex $=\\left(1, -8\\right)$ | sum $=2$ | product $=-3$ | meetings $=2$",
+      "solution_overview": "$g=(x-3)^{2}+1$; still meets the line twice.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -861,98 +861,98 @@
     {
       "id": "math-7-27",
       "case_id": "MATH 7.27",
-      "title": "Vertex-Free Reconstruction",
-      "context": "The linear rule $f$ sends $0$ to $4$ and $1$ to $3$. The quadratic $g$ factors as $(x-1)(x-3)$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Rebuild from Roots and Slope",
+      "context": "The line $f$ has slope $2$ and $y$-intercept $1$. The monic quadratic $g$ has roots $2$ and $3$. Rebuild the formulas, then evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The slope of $y=f(x)$ is $-1$.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "$f(0)=4$.",
-        "The minimum value of $g$ is $-1$.",
-        "The parabola $g$ opens downwards."
+        "$f(x)=2x+1$.",
+        "$g(x)=x^{2}-5x+6$.",
+        "The sum of roots of $g$ is $-5$.",
+        "There exist $A,B,C$ with $g=Af^{2}+Bf+C$.",
+        "The graphs meet more than twice."
       ],
       "answer_key": [
         true,
         true,
-        true,
+        false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 - x\n$$\n\nThe slope is $-1$,\n\nso the statement is True.",
-        "**B.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 1}=2\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=4\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=2\\qquad g(2)=-1\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False."
+        "**A.** → True\n\nSlope-intercept recovery.",
+        "**B.** → True\n\nMonic with given roots.",
+        "**C.** → False\n\nSum $5$.",
+        "**D.** → True\n\nLinear basis.",
+        "**E.** → False\n\nDegree bound."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "3/5",
       "sort_order": 27,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nThe linear rule $f$ sends $0$ to $4$ and $1$ to $3$. The quadratic $g$ factors as $(x-1)(x-3)$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=4 - x\\qquad g(x)=x^{2} - 4 x + 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-1\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 3 x + 1\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=-4$, $C=3$.\n\n**Answer.** vertex $=\\left(2, -1\\right)$ | sum $=4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "$$\nf(x)=2x+1\\qquad g(x)=(x-2)(x-3)\n$$",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "points"
+      "stem_kind": "hybrid"
     },
     {
       "id": "math-7-28",
       "case_id": "MATH 7.28",
-      "title": "Lab Calibration Described in Words",
-      "context": "A sensor outputs three times the reading minus one (the linear map $f$). A second processing stage takes the square of the reading, subtracts five times the reading, and adds six (the quadratic map $g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Vertex on the Line?",
+      "context": "Let $f(x)=x-1$ and $g(x)=x^{2}-2x-3$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{9}$, $B=-\\frac{13}{9}$, $C=\\frac{40}{9}$.",
-        "The sum of the roots of $g(x)$ is $5$.",
-        "Because $f-g$ looks cubic at a glance, the graphs can meet three times.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $3$.",
-        "The average rate of change of $g$ on $[0,2]$ is $-3$."
+        "The vertex of $g$ lies on $y=f(x)$.",
+        "The vertex of $g$ is $(1,-4)$.",
+        "The roots of $g$ are $-1$ and $3$.",
+        "The axis of $g$ equals the Vieta sum of its roots.",
+        "$\\deg(f\\circ g)=2$."
       ],
       "answer_key": [
-        true,
-        true,
         false,
+        true,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=\\frac{1}{9},\\ B=-\\frac{13}{9},\\ C=\\frac{40}{9}\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nSum $=-b/a$:\n\n$$\n-\\frac{-5}{1}=5\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 8 x + 7=0\n$$\n\n$\\Delta=36$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**D.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{0-6}{2}=-3\n$$\n\nCompare with slope of $f$, namely $3$.\n\nso the statement is False.",
-        "**E.** → True\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{0-6}{2}=-3\n$$\n\nso the statement is True."
+        "**A.** → False\n\n$f(1)=0\\neq -4$.",
+        "**B.** → True\n\n$g(1)=-4$.",
+        "**C.** → True\n\n$(x+1)(x-3)$.",
+        "**D.** → False\n\nAxis $1$, sum $2$.",
+        "**E.** → True\n\nDegree multiply."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "3/5",
       "sort_order": 28,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nA sensor outputs three times the reading minus one (the linear map $f$). A second processing stage takes the square of the reading, subtracts five times the reading, and adds six (the quadratic map $g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=3 x - 1\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 8 x - 7\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=-\\frac{13}{9}$, $C=\\frac{40}{9}$.\n\n**Answer.** vertex $=\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ | sum $=5$ | product $=6$ | meetings $=2$",
+      "solution_overview": "Vertex $(1,-4)$ is not on the line.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-29",
       "case_id": "MATH 7.29",
-      "title": "Downward Parabola Versus Rising Line",
-      "context": "Consider the linear and quadratic functions $f(x)=2 x + 4$ and $g(x)=- x^{2} + 2 x + 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Horizontal Gap at the Axis",
+      "context": "Let $f(x)=4x-1$ and $g(x)=x^{2}-4x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The maximum value of $g$ is $4$.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "The parabola $g$ opens upwards.",
-        "$g(1)=7$.",
-        "$g(1)=4$."
+        "At the axis of $g$, the vertical gap $f-g$ equals $10$.",
+        "The axis of $g$ is $x=2$.",
+        "The graphs are tangent at the axis.",
+        "The sum of roots of $g$ is $4$.",
+        "$g$ opens downwards."
       ],
       "answer_key": [
         true,
+        true,
         false,
-        false,
-        false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex height:\n\n$$\nx=1\\qquad g(1)=4\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{2}{2\\cdot -1}=1\n$$\n\nso the statement is False.",
-        "**C.** → False\n\nLeading coefficient:\n\n$$\na=-1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**D.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=4\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nSubstitute $x=1$:\n\n$$\ng(1)=4\n$$\n\nso the statement is True."
+        "**A.** → True\n\n$f(2)-g(2)=7-(-3)=10$.",
+        "**B.** → True\n\n$-b/(2a)=2$.",
+        "**C.** → False\n\nGap $\\neq 0$.",
+        "**D.** → True\n\nVieta.",
+        "**E.** → False\n\n$a=1$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "3/5",
       "sort_order": 29,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 x + 4\\qquad g(x)=- x^{2} + 2 x + 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,4\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=x^{2} + 1\\qquad \\#\\mathrm{intersections}=0\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=-\\frac{1}{4}$, $B=3$, $C=-5$.\n\n**Answer.** vertex $=\\left(1, 4\\right)$ | sum $=2$ | product $=-3$ | meetings $=0$",
+      "solution_overview": "Axis $x=2$; gap $10$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -960,32 +960,32 @@
     {
       "id": "math-7-30",
       "case_id": "MATH 7.30",
-      "title": "Large Negative Constant",
-      "context": "Consider the linear and quadratic functions $f(x)=2 x + 2$ and $g(x)=x^{2} - x - 20$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "No Real Roots Versus Line",
+      "context": "Let $f(x)=x$ and $g(x)=x^{2}+x+1$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The axis of symmetry of $g$ is $x=\\frac{1}{2}$.",
-        "$g(1)=-17$.",
-        "The slope of $y=f(x)$ is $2$.",
-        "The minimum value of $g$ is $-\\frac{81}{4}$.",
-        "The parabola $g$ opens upwards."
+        "$g$ has no real roots.",
+        "The graphs of $f$ and $g$ do not meet.",
+        "The vertex of $g$ is $\\left(-\\frac{1}{2},\\frac{3}{4}\\right)$.",
+        "The product of complex roots of $g$ is $1$.",
+        "$f$ is constant."
       ],
       "answer_key": [
         true,
-        false,
         true,
         true,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=-20\n$$\n\nso the statement is False.",
-        "**C.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 x + 2\n$$\n\nThe slope is $2$,\n\nso the statement is True.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=\\frac{1}{2}\\qquad g(\\frac{1}{2})=-\\frac{81}{4}\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True."
+        "**A.** → True\n\n$\\Delta=-3$.",
+        "**B.** → True\n\n$g-f=x^{2}+1>0$.",
+        "**C.** → True\n\nDirect computation.",
+        "**D.** → True\n\nVieta $c/a$.",
+        "**E.** → False\n\nSlope $1$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "3/5",
       "sort_order": 30,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 x + 2\\qquad g(x)=x^{2} - x - 20\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{81}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-20\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 3 x + 22\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-\\frac{3}{2}$, $C=-18$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{81}{4}\\right)$ | sum $=1$ | product $=-20$ | meetings $=2$",
+      "solution_overview": "$\\Delta_g<0$ and $g-f=x^{2}+1$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -993,263 +993,263 @@
     {
       "id": "math-7-31",
       "case_id": "MATH 7.31",
-      "title": "Warehouse Fees Hidden in Prose",
-      "context": "A logistics desk bills a fixed handling fee of 2 euros plus 4 euros for each pallet handled — call this linear rule $f$. A rival quote instead squares the pallet count, subtracts the pallet count once, then subtracts 2 — call this quadratic rule $g$. First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Linear Basis for Every Quadratic",
+      "context": "Let $f$ be any non-constant linear polynomial and $g$ any quadratic polynomial over $\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$g(x)=0$ has exactly $2$ distinct real roots.",
-        "$g(f(0))=0$.",
-        "The midpoint of the roots of $g$ is $x=\\frac{1}{2}$, which equals the axis of symmetry.",
-        "The average rate of change of $g$ on $[0,2]$ is $1$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect more than twice."
+        "There always exist $A,B,C\\in\\mathbb{R}$ with $g=Af^{2}+Bf+C$.",
+        "The coefficient $A$ is uniquely determined by $g$ and $f$.",
+        "The same identity remains true if $f$ is replaced by a non-zero constant polynomial.",
+        "If $g=Af^{2}+Bf+C$, then necessarily $\\deg(g\\circ f)=4$.",
+        "If $g=Af^{2}+Bf+C$ with $A\\neq 0$, then $g$ and $f$ have exactly the same roots."
       ],
       "answer_key": [
         true,
         true,
-        true,
-        true,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDiscriminant of $g$:\n\n$$\n\\Delta=9\n$$\n\nExactly $2$ distinct real root(s),\n\nso the statement is True.",
-        "**B.** → True\n\nInside-out:\n\n$$\nf(0)=2\n$$\n\n$$\ng(f(0))=0\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nMidpoint of roots is half the Vieta sum; axis is $-b/(2a)$:\n\n$$\n\\mathrm{mid}=\\frac{1}{2}\\qquad \\mathrm{axis}=\\frac{1}{2}\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{0--2}{2}=1\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 5 x - 4=0\n$$\n\n$\\Delta=41$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False."
+        "**A.** → True\n\nIf $\\deg f=1$, then $\\{1,f,f^{2}\\}$ spans all polynomials of degree $\\le 2$.",
+        "**B.** → True\n\nMatching leading coefficients: $A=a_g/a_f^{2}$.",
+        "**C.** → False\n\nConstants cannot produce an $x^{2}$ term.",
+        "**D.** → False\n\nDegrees multiply: $\\deg(g\\circ f)=2\\cdot 1=2$.",
+        "**E.** → False\n\nRoots of $g$ solve a quadratic in the value $f(x)$."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 31,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nA logistics desk bills a fixed handling fee of 2 euros plus 4 euros for each pallet handled — call this linear rule $f$. A rival quote instead squares the pallet count, subtracts the pallet count once, then subtracts 2 — call this quadratic rule $g$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=4 x + 2\\qquad g(x)=x^{2} - x - 2\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-2\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 5 x + 4\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{9}{4}\\right)$ | sum $=1$ | product $=-2$ | meetings $=2$",
+      "solution_overview": "Degree-$1$ $f$ makes $\\{1,f,f^{2}\\}$ a basis of polynomials of degree at most $2$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-32",
       "case_id": "MATH 7.32",
-      "title": "Proportional Line Product Trap",
-      "context": "Consider the linear and quadratic functions $f(x)=5 x$ and $g(x)=x^{2} - 4 x - 5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Vertex Form Uniqueness",
+      "context": "A quadratic is written $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. No numeric values are supplied. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=0$.",
-        "The parabola $g$ opens upwards.",
-        "The minimum value of $g$ is $-7$.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "The slope of $y=f(x)$ is $-5$."
+        "The point $(h,k)$ is always the unique vertex of the graph of $g$.",
+        "If $a<0$, then $k$ is the global minimum value of $g$.",
+        "The axis of symmetry is always $x=h$, independent of $k$.",
+        "Replacing $h$ by $-h$ never changes the graph of $g$.",
+        "Every real quadratic admits such a representation for unique $(a,h,k)$."
       ],
       "answer_key": [
         true,
-        true,
         false,
         true,
-        false
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=0\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**C.** → False\n\nVertex height:\n\n$$\nx=2\\qquad g(2)=-9\n$$\n\nTrue extreme $-9$, not $-7$,\n\nso the statement is False.",
-        "**D.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 1}=2\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=5 x\n$$\n\nThe slope is $5$, not $-5$,\n\nso the statement is False."
+        "**A.** → True\n\nBy construction of vertex form.",
+        "**B.** → False\n\nIf $a<0$, then $k$ is the global maximum.",
+        "**C.** → True\n\nVertical translation does not move the axis.",
+        "**D.** → False\n\nOnly when $h=0$.",
+        "**E.** → True\n\nCompleting the square; uniqueness of vertex and leading coefficient."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "4/5",
       "sort_order": 32,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=5 x\\qquad g(x)=x^{2} - 4 x - 5\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-9\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=-5\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 9 x + 5\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{25}$, $B=-\\frac{4}{5}$, $C=-5$.\n\n**Answer.** vertex $=\\left(2, -9\\right)$ | sum $=4$ | product $=-5$ | meetings $=2$",
+      "solution_overview": "Vertex form is unique: $(h,k)$ is the vertex and $a$ is the leading coefficient.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-33",
       "case_id": "MATH 7.33",
-      "title": "Ticket Prices From a Narrative",
-      "context": "Adult tickets cost twice the number of seats reserved with no fixed surcharge ($f$). A group deal squares the seat count, then subtracts four times that count, then adds three ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Line Meets Parabola: Structural Bound",
+      "context": "Let $f$ be any linear function and $g$ any quadratic function over $\\mathbb{R}$. Evaluate each statement about their graphs. Mark it TRUE or FALSE.",
       "statements": [
-        "The parabola $g$ opens downwards.",
-        "The slope of $y=f(x)$ is $-2$.",
-        "$g(2)=2$.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "The axis of symmetry of $g$ is $x=3$."
+        "The graphs of $f$ and $g$ can intersect in three distinct real points.",
+        "It is possible that the graphs do not intersect at all.",
+        "If the graphs are tangent at a point, then $g-f$ has a double root there.",
+        "If $f$ is constant, the graphs always intersect twice.",
+        "Translating $g$ vertically by any constant can create a third intersection with $f$."
       ],
       "answer_key": [
         false,
-        false,
-        false,
         true,
+        true,
+        false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=2 x\n$$\n\nThe slope is $2$, not $-2$,\n\nso the statement is False.",
-        "**C.** → False\n\nSubstitute $x=2$:\n\n$$\ng(2)=-1\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 1}=2\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 1}=2\n$$\n\nso the statement is False."
+        "**A.** → False\n\n$g-f$ has degree at most $2$.",
+        "**B.** → True\n\nExample: $g(x)=x^{2}+1$ and $f(x)=0$.",
+        "**C.** → True\n\nShared value and derivative $\\Leftrightarrow$ double root.",
+        "**D.** → False\n\nA horizontal line may miss, touch, or cut the parabola.",
+        "**E.** → False\n\nVertical translation preserves $\\deg(g-f)\\le 2$."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 33,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nAdult tickets cost twice the number of seats reserved with no fixed surcharge ($f$). A group deal squares the seat count, then subtracts four times that count, then adds three ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=2 x\\qquad g(x)=x^{2} - 4 x + 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(2,-1\\right)\\qquad \\mathrm{sum}=4\\qquad \\mathrm{product}=3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 6 x - 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-2$, $C=3$.\n\n**Answer.** vertex $=\\left(2, -1\\right)$ | sum $=4$ | product $=3$ | meetings $=2$",
+      "solution_overview": "$f=g$ is at most quadratic $\\Rightarrow$ at most two real meetings.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-34",
       "case_id": "MATH 7.34",
-      "title": "Bridge Load Described Verbally",
-      "context": "Safe linear load grows as three times the span coordinate with no constant term ($f$). Parabolic stress is the square of the span, minus twice the span, minus eight ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Range of a Quadratic, Symbolically",
+      "context": "Let $g(x)=a(x-h)^{2}+k$ with $a\\neq 0$. Evaluate each statement about the range of $g$. Mark it TRUE or FALSE.",
       "statements": [
-        "A line meets a parabola at most twice, yet these two graphs meet more than twice.",
-        "$g(x)=0$ has exactly $2$ distinct real roots.",
-        "The axis of symmetry $x=1$ coincides with the Vieta sum of the roots.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{2}{9}$.",
-        "The leading coefficient of $f-g$ is $-1$."
+        "If $a>0$, then the range of $g$ is $[k,+\\infty)$.",
+        "If $a<0$, then the range of $g$ is $[k,+\\infty)$.",
+        "The range of $g$ is never all of $\\mathbb{R}$.",
+        "Any non-constant linear function has range $\\mathbb{R}$.",
+        "If $k=0$ and $a>0$, then $g$ never takes negative values."
       ],
       "answer_key": [
-        false,
         true,
         false,
-        false,
+        true,
+        true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 5 x - 8=0\n$$\n\n$\\Delta=57$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**B.** → True\n\nDiscriminant of $g$:\n\n$$\n\\Delta=36\n$$\n\nExactly $2$ distinct real root(s),\n\nso the statement is True.",
-        "**C.** → False\n\nAxis $x=-b/(2a)$ versus Vieta sum $-b/a$:\n\n$$\nx=1\\qquad \\mathrm{sum}=2\n$$\n\nThese coincide only in special cases (often when the sum is twice the axis).\n\nso the statement is False.",
-        "**D.** → False\n\nMatch the $x^{2}$ coefficient in $Af^{2}+Bf+C$:\n\n$$\nA=\\frac{1}{9}\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nExpand $f-g$:\n\n$$\n- x^{2} + 5 x + 8\n$$\n\nso the statement is True."
+        "**A.** → True\n\nVertex form.",
+        "**B.** → False\n\nThen $(-\\infty,k]$.",
+        "**C.** → True\n\nUnbounded on only one side.",
+        "**D.** → True\n\nStrictly monotone continuous $\\mathbb{R}\\to\\mathbb{R}$ is surjective.",
+        "**E.** → True\n\nRange $[0,+\\infty)$."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 34,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nSafe linear load grows as three times the span coordinate with no constant term ($f$). Parabolic stress is the square of the span, minus twice the span, minus eight ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=3 x\\qquad g(x)=x^{2} - 2 x - 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,-9\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 5 x + 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=-\\frac{2}{3}$, $C=-8$.\n\n**Answer.** vertex $=\\left(1, -9\\right)$ | sum $=2$ | product $=-8$ | meetings $=2$",
+      "solution_overview": "Opening direction decides whether the range is $[k,+\\infty)$ or $(-\\infty,k]$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-35",
       "case_id": "MATH 7.35",
-      "title": "Closed Form Against a Peak Story",
-      "context": "$f(x)=6x+2$ is printed on the sheet. $g$ opens downwards, equals $4$ at the origin, has initial slope $3$, and leading coefficient $-1$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Difference $f-g$ and Intercept Traps",
+      "context": "Let $f$ be linear and $g$ quadratic. Write $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(g(0))=g(f(0))$, so composition order does not matter at $0$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $\\frac{43}{4}$.",
-        "By Vieta, the sum of roots of $g$ is $3$ (forgetting the sign and the division by $a$).",
-        "Matching $g=Af^2+Bf+C$ forces $A=-\\frac{1}{36}$, $B=\\frac{11}{18}$, $C=\\frac{26}{9}$.",
-        "The $y$-intercept of $g$ equals the vertex height, so $g(0)=\\frac{25}{4}$."
+        "Always $\\deg d=2$.",
+        "The $y$-intercept of $d$ is $f(0)-g(0)$.",
+        "If $d(0)=0$, then the graphs of $f$ and $g$ intersect on the $y$-axis.",
+        "If $d$ has two distinct real roots, the graphs intersect more than twice.",
+        "The graph of $d$ is itself a parabola."
       ],
       "answer_key": [
-        false,
-        false,
-        false,
         true,
-        false
+        true,
+        true,
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCompare both nestings at $0$:\n\n$$\ng(f(0))=6\\qquad f(g(0))=26\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nAt the axis $x=\\frac{3}{2}$:\n\n$$\nf(\\frac{3}{2})=11\\qquad g(\\frac{3}{2})=\\frac{25}{4}\n$$\n\nDifference $\\frac{19}{4}$.\n\nso the statement is False.",
-        "**C.** → False\n\nSum is $-b/a$, not the raw $b$:\n\n$$\n-\\frac{3}{-1}=3\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=-\\frac{1}{36},\\ B=\\frac{11}{18},\\ C=\\frac{26}{9}\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nCompare $g(0)$ with the vertex height:\n\n$$\ng(0)=4\\qquad g(h)=\\frac{25}{4}\n$$\n\nso the statement is False."
+        "**A.** → True\n\nA quadratic minus a linear polynomial still has degree $2$.",
+        "**B.** → True\n\nDirect evaluation.",
+        "**C.** → True\n\n$f(0)=g(0)$ means a common point $(0,f(0))$.",
+        "**D.** → False\n\nTwo roots of $d$ mean exactly two intersections.",
+        "**E.** → True\n\nIt is a degree-$2$ polynomial."
       ],
-      "difficulty_level": "5/5",
+      "difficulty_level": "4/5",
       "sort_order": 35,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(x)=6x+2$ is printed on the sheet. $g$ opens downwards, equals $4$ at the origin, has initial slope $3$, and leading coefficient $-1$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=6 x + 2\\qquad g(x)=- x^{2} + 3 x + 4\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{3}{2},\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=3\\qquad \\mathrm{product}=-4\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=x^{2} + 3 x - 2\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=-\\frac{1}{36}$, $B=\\frac{11}{18}$, $C=\\frac{26}{9}$.\n\n**Answer.** vertex $=\\left(\\frac{3}{2}, \\frac{25}{4}\\right)$ | sum $=3$ | product $=-4$ | meetings $=2$",
+      "solution_overview": "$d=f-g$ is quadratic; its zeros are the intersection abscissae.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-36",
       "case_id": "MATH 7.36",
-      "title": "Steep Line Twin Roots",
-      "context": "Consider the linear and quadratic functions $f(x)=7 x + 1$ and $g(x)=x^{2} - 6 x + 8$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Family of Lines Seeking Tangency",
+      "context": "Let $g(x)=x^{2}-2x+2$ and $f_t(x)=tx$. Evaluate each statement about the real parameter $t$. Mark it TRUE or FALSE.",
       "statements": [
-        "The sum of the roots of $g$ is $6$ and their product is $8$.",
-        "$f(g(0))=57$.",
-        "Since $f$ has slope $7$, translating $g$ by $1$ units vertically would make $f-g$ constant.",
-        "The point on the graph of $g(x)$ with the lowest $y$ coordinate is $\\left(4, -1\\right)$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $7$."
+        "There exist real values of $t$ for which $y=f_t$ is tangent to $y=g$.",
+        "For $t=0$, the graphs intersect twice.",
+        "If $\\Delta(t)>0$, the graphs intersect at two distinct points.",
+        "The vertex of $g$ lies on the line $y=f_0(x)$.",
+        "Tangency can occur for at most one real $t$."
       ],
       "answer_key": [
         true,
-        true,
         false,
+        true,
         false,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nBoth Vieta formulas:\n\n$$\n\\mathrm{sum}=6\\qquad \\mathrm{product}=8\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nOther order:\n\n$$\ng(0)=8\n$$\n\n$$\nf(g(0))=57\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nA vertical shift of $g$ changes only the constant term of $f-g$; the $x$ and $x^{2}$ pieces remain, so $f-g$ cannot become constant.\n\nso the statement is False.",
-        "**D.** → False\n\nVertex:\n\n$$\nx=3\\qquad g(3)=-1\n$$\n\nThe claimed point is not the vertex,\n\nso the statement is False.",
-        "**E.** → False\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{0-8}{2}=-4\n$$\n\nCompare with slope of $f$, namely $7$.\n\nso the statement is False."
+        "**A.** → True\n\n$\\Delta(t)=(2+t)^{2}-8=0$ has solutions $t=-2\\pm 2\\sqrt{2}$.",
+        "**B.** → False\n\n$\\Delta(0)=-4<0$.",
+        "**C.** → True\n\nDefinition.",
+        "**D.** → False\n\nVertex $(1,1)$; $f_0\\equiv 0$.",
+        "**E.** → False\n\nTwo solutions."
       ],
       "difficulty_level": "4/5",
       "sort_order": 36,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=7 x + 1\\qquad g(x)=x^{2} - 6 x + 8\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(3,-1\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=8\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 13 x - 7\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{49}$, $B=-\\frac{44}{49}$, $C=\\frac{435}{49}$.\n\n**Answer.** vertex $=\\left(3, -1\\right)$ | sum $=6$ | product $=8$ | meetings $=2$",
+      "solution_overview": "$g-f_t=x^{2}-(2+t)x+2$, $\\Delta(t)=(2+t)^{2}-8$.",
+      "subsection": "7",
+      "placeholder": false,
+      "stem_kind": "parametric"
+    },
+    {
+      "id": "math-7-37",
+      "case_id": "MATH 7.37",
+      "title": "Composition Trap with Explicit Maps",
+      "context": "Let $f(x)=3x-1$ and $g(x)=2x^{2}-4x-6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Because $\\deg f=1$ and $\\deg g=2$, the map $f\\circ g$ must have degree $3$.",
+        "$\\deg(g\\circ f)=2$.",
+        "$g(f(0))=0$.",
+        "$f(g(0))=g(f(0))$.",
+        "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{9}$."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nDegrees multiply: degree $2$.",
+        "**B.** → True\n\n$2\\cdot 1=2$.",
+        "**C.** → True\n\n$f(0)=-1$, $g(-1)=0$.",
+        "**D.** → False\n\n$f(-6)=-19\\neq 0$.",
+        "**E.** → True\n\nLeading: $A\\cdot 9=2$."
+      ],
+      "difficulty_level": "4/5",
+      "sort_order": 37,
+      "solution_overview": "Degree multiply, nested mismatch, $A=2/9$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
     },
     {
-      "id": "math-7-37",
-      "case_id": "MATH 7.37",
-      "title": "Negative Identity in a Memo",
-      "context": "Controller $f$ simply negates the input. Residual $g$ squares the input, subtracts twice the input, then subtracts three. First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Matching $g=Af^2+Bf+C$ forces $A=1$, $B=2$, $C=-3$.",
-        "A line meets a parabola at most twice, yet these two graphs meet more than twice.",
-        "$g(x)=0$ has exactly $2$ distinct real roots.",
-        "The vertex of $g$ lies on the line $y=f(x)$.",
-        "Completing the square gives $g(x)=\\left(x-1\\right)^{2}-4$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=1,\\ B=2,\\ C=-3\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - x - 3=0\n$$\n\n$\\Delta=13$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**C.** → True\n\nDiscriminant of $g$:\n\n$$\n\\Delta=16\n$$\n\nExactly $2$ distinct real root(s),\n\nso the statement is True.",
-        "**D.** → False\n\nVertex $\\left(1, -4\\right)$ vs\n\n$$\nf(1)=-1\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-1\\right)^{2}-4\n$$\n\nso the statement is True."
-      ],
-      "difficulty_level": "5/5",
-      "sort_order": 37,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nController $f$ simply negates the input. Residual $g$ squares the input, subtracts twice the input, then subtracts three.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=- x\\qquad g(x)=x^{2} - 2 x - 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,-4\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + x + 3\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=2$, $C=-3$.\n\n**Answer.** vertex $=\\left(1, -4\\right)$ | sum $=2$ | product $=-3$ | meetings $=2$",
-      "subsection": "7",
-      "placeholder": false,
-      "stem_kind": "text"
-    },
-    {
       "id": "math-7-38",
       "case_id": "MATH 7.38",
-      "title": "Opening Direction and Meetings",
-      "context": "Consider the linear and quadratic functions $f(x)=3 x + 1$ and $g(x)=x^{2} + 2 x - 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Wrong Completed Square Sign",
+      "context": "Let $g(x)=x^{2}-3x-10$ and $f(x)=-3x+6$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The minimum value of $g$ is $-4$.",
-        "The parabola $g$ opens downwards.",
-        "The slope of $y=f(x)$ is $3$.",
-        "$f(0)=2$.",
-        "The parabola $g$ opens upwards."
+        "Completing the square gives $g(x)=\\left(x-\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
+        "Completing the square gives $g(x)=\\left(x+\\frac{3}{2}\\right)^{2}-\\frac{49}{4}$.",
+        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.",
+        "$f(g(0))=36$.",
+        "A vertical translation of $g$ can make $f-g$ a constant function."
       ],
       "answer_key": [
         true,
         false,
-        true,
         false,
-        true
+        true,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex height:\n\n$$\nx=-1\\qquad g(-1)=-4\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**C.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=3 x + 1\n$$\n\nThe slope is $3$,\n\nso the statement is True.",
-        "**D.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=1\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True."
+        "**A.** → True\n\nCorrect vertex form.",
+        "**B.** → False\n\nWrong sign in the shift.",
+        "**C.** → False\n\nAverage $-1$; slope of $f$ is $-3$.",
+        "**D.** → True\n\n$g(0)=-10$, $f(-10)=36$.",
+        "**E.** → False\n\nThe quadratic term survives any vertical shift."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "4/5",
       "sort_order": 38,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=3 x + 1\\qquad g(x)=x^{2} + 2 x - 3\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-1,-4\\right)\\qquad \\mathrm{sum}=-2\\qquad \\mathrm{product}=-3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + x + 4\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=\\frac{4}{9}$, $C=-\\frac{32}{9}$.\n\n**Answer.** vertex $=\\left(-1, -4\\right)$ | sum $=-2$ | product $=-3$ | meetings $=2$",
+      "solution_overview": "True completion uses $x-3/2$; translation cannot kill $x^{2}$.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1257,263 +1257,263 @@
     {
       "id": "math-7-39",
       "case_id": "MATH 7.39",
-      "title": "Printed Line, Factorable Story",
-      "context": "$f(x)=3x+2$ is given. $g$ is the monic quadratic that factors as $(x-2)(x-3)$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Three Maps: Line, Square, Difference",
+      "context": "Let $f(x)=2x+3$, $g(x)=x^{2}-x-2$, and $d=f-g$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Because $f-g$ looks cubic at a glance, the graphs can meet three times.",
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $\\frac{39}{4}$.",
-        "The $y$-intercept of $g$ equals the vertex height, so $g(0)=-\\frac{1}{4}$.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{9}$, $B=-\\frac{19}{9}$, $C=\\frac{88}{9}$."
+        "The leading coefficient of $d$ is $-1$.",
+        "$\\deg d=2$.",
+        "The graphs of $f$ and $g$ meet wherever $d=0$.",
+        "$d(0)=0$.",
+        "Because $d$ looks cubic at a glance, $f$ and $g$ can meet three times."
       ],
       "answer_key": [
-        false,
         true,
         true,
+        true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 8 x + 4=0\n$$\n\n$\\Delta=48$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**B.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=\\frac{1}{9},\\ B=-\\frac{19}{9},\\ C=\\frac{88}{9}\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nAt the axis $x=\\frac{5}{2}$:\n\n$$\nf(\\frac{5}{2})=\\frac{19}{2}\\qquad g(\\frac{5}{2})=-\\frac{1}{4}\n$$\n\nDifference $\\frac{39}{4}$.\n\nso the statement is True.",
-        "**D.** → False\n\nCompare $g(0)$ with the vertex height:\n\n$$\ng(0)=6\\qquad g(h)=-\\frac{1}{4}\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nMatch coefficients of $Af^{2}+Bf+C$ against $g$:\n\n$$\nA=\\frac{1}{9},\\ B=-\\frac{19}{9},\\ C=\\frac{88}{9}\n$$\n\nso the statement is True."
+        "**A.** → True\n\n$d=-x^{2}+3x+5$.",
+        "**B.** → True\n\nQuadratic.",
+        "**C.** → True\n\nDefinition.",
+        "**D.** → False\n\n$d(0)=5$.",
+        "**E.** → False\n\nStill degree $2$."
       ],
       "difficulty_level": "4/5",
       "sort_order": 39,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(x)=3x+2$ is given. $g$ is the monic quadratic that factors as $(x-2)(x-3)$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=3 x + 2\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 8 x - 4\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=-\\frac{19}{9}$, $C=\\frac{88}{9}$.\n\n**Answer.** vertex $=\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ | sum $=5$ | product $=6$ | meetings $=2$",
+      "solution_overview": "$d=-x^{2}+3x+5$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "formula"
     },
     {
       "id": "math-7-40",
       "case_id": "MATH 7.40",
-      "title": "Fleet Mileage Brief Written Out",
-      "context": "Dispatch pays six times the route index minus two ($f$). Fuel burn is the square of the index, minus seven times the index, plus ten ($g$). First recover the formulas for $f$ and $g$ from the text, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Parameter Constraint on Opening",
+      "context": "Let $g_a(x)=ax^{2}-4x+1$ with $a\\neq 0$, and let $f(x)=x$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=-2$.",
-        "The slope of $y=f(x)$ is $6$.",
-        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
-        "The minimum value of $g$ is $-\\frac{9}{4}$.",
-        "The parabola $g$ opens upwards."
+        "If $a=1$, the graphs of $f$ and $g_a$ meet twice.",
+        "If $a=10$, the graphs of $f$ and $g_a$ still meet twice.",
+        "The axis of $g_a$ is $x=2$ for every $a$.",
+        "If $a<0$, then $g_a$ opens downwards.",
+        "There exists $a$ for which $y=f$ is tangent to $y=g_a$."
       ],
       "answer_key": [
         true,
-        true,
+        false,
         false,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=-2\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=6 x - 2\n$$\n\nThe slope is $6$,\n\nso the statement is True.",
-        "**C.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-7}{2\\cdot 1}=\\frac{7}{2}\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=\\frac{7}{2}\\qquad g(\\frac{7}{2})=-\\frac{9}{4}\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True."
+        "**A.** → True\n\n$\\Delta=25-4a=21>0$.",
+        "**B.** → False\n\n$\\Delta=25-40<0$.",
+        "**C.** → False\n\nAxis $x=2/a$.",
+        "**D.** → True\n\nSign of leading coefficient.",
+        "**E.** → True\n\n$\\Delta=0$ at $a=25/4$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "4/5",
       "sort_order": 40,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nDispatch pays six times the route index minus two ($f$). Fuel burn is the square of the index, minus seven times the index, plus ten ($g$).\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=6 x - 2\\qquad g(x)=x^{2} - 7 x + 10\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{7}{2},-\\frac{9}{4}\\right)\\qquad \\mathrm{sum}=7\\qquad \\mathrm{product}=10\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 13 x - 12\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{36}$, $B=-\\frac{19}{18}$, $C=\\frac{70}{9}$.\n\n**Answer.** vertex $=\\left(\\frac{7}{2}, -\\frac{9}{4}\\right)$ | sum $=7$ | product $=10$ | meetings $=2$",
+      "solution_overview": "$g_a-f=ax^{2}-5x+1$, $\\Delta=25-4a$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "text"
+      "stem_kind": "parametric"
     },
     {
       "id": "math-7-41",
       "case_id": "MATH 7.41",
-      "title": "Verbal Scale Factor",
-      "context": "$f(x)=-3x+6$ is given. $g$ has roots $-1$ and $3$ but is scaled by leading coefficient $2$. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Axis, Vieta, and the Half-Sum Trap",
+      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and write $S$ for the sum of the roots of $g$ in $\\mathbb{C}$. Let $\\ell$ be the axis of symmetry of the graph of $g$. No concrete coefficients are given. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=6$.",
-        "The minimum value of $g$ is $-8$.",
-        "The axis of symmetry of $g$ is $x=2$.",
-        "The parabola $g$ opens downwards.",
-        "$g(0)=-6$."
+        "The vertical line $\\ell$ is always the same as the vertical line $x=S$.",
+        "In all cases, $\\ell$ is the line $x=S/2$.",
+        "If $S=0$, then the axis of $g$ is the $y$-axis.",
+        "If $a>0$ and $S>0$, then both real roots (when they exist) must be positive.",
+        "Changing the constant term $c$ never moves the axis $\\ell$."
       ],
       "answer_key": [
-        true,
-        true,
         false,
+        true,
+        true,
         false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEvaluate at the origin:\n\n$$\nf(0)=6\n$$\n\nso the statement is True.",
-        "**B.** → True\n\nVertex height:\n\n$$\nx=1\\qquad g(1)=-8\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-4}{2\\cdot 2}=1\n$$\n\nso the statement is False.",
-        "**D.** → False\n\nLeading coefficient:\n\n$$\na=2\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**E.** → True\n\nSubstitute $x=0$:\n\n$$\ng(0)=-6\n$$\n\nso the statement is True."
+        "**A.** → False\n\nThe axis is $x=S/2$, not $x=S$.",
+        "**B.** → True\n\nBy Vieta $S=-b/a$, so $-b/(2a)=S/2$.",
+        "**C.** → True\n\n$S=0\\Rightarrow b=0\\Rightarrow$ axis $x=0$.",
+        "**D.** → False\n\nA positive sum allows opposite signs, e.g. roots $-1$ and $3$.",
+        "**E.** → True\n\nThe axis depends only on $a$ and $b$."
       ],
-      "difficulty_level": "2/5",
+      "difficulty_level": "5/5",
       "sort_order": 41,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(x)=-3x+6$ is given. $g$ has roots $-1$ and $3$ but is scaled by leading coefficient $2$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=6 - 3 x\\qquad g(x)=2 x^{2} - 4 x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(1,-8\\right)\\qquad \\mathrm{sum}=2\\qquad \\mathrm{product}=-3\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} + x + 12\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{2}{9}$, $B=-\\frac{4}{3}$, $C=-6$.\n\n**Answer.** vertex $=\\left(1, -8\\right)$ | sum $=2$ | product $=-3$ | meetings $=2$",
+      "solution_overview": "$$\nS=-\\frac{b}{a}\\qquad \\ell:\\ x=\\frac{S}{2}.\n$$\nThe axis is the midpoint of the roots.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "hybrid"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-42",
       "case_id": "MATH 7.42",
-      "title": "Roots Three and Five",
-      "context": "Consider the linear and quadratic functions $f(x)=4 x + 3$ and $g(x)=x^{2} - 8 x + 15$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Composition Degrees Without Numbers",
+      "context": "Let $f$ be linear of degree $1$ and $g$ quadratic of degree $2$. No further data are given. Evaluate each claim about compositions. Mark it TRUE or FALSE.",
       "statements": [
-        "The graphs of $f(x)$ and $g(x)$ intersect more than twice.",
-        "The graph of $f(x)-g(x)$ intersects the $y$-axis at $y=0$.",
-        "The minimum value of $g$ is $1$.",
-        "The parabola $g$ opens upwards.",
-        "$g(1)=11$."
+        "Always $\\deg(g\\circ f)=3$, because one adds the degrees.",
+        "Always $\\deg(f\\circ g)=2$.",
+        "Always $\\deg(g\\circ f)=\\deg(f\\circ g)$.",
+        "The polynomials $g\\circ f$ and $f\\circ g$ are always identical as functions.",
+        "If one replaces $f$ by $f^{2}$ (still using the same $g$), then $\\deg(g\\circ f^{2})=4$."
       ],
       "answer_key": [
         false,
-        false,
-        false,
         true,
-        false
+        true,
+        false,
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 12 x + 12=0\n$$\n\n$\\Delta=96$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**B.** → False\n\n$y$-intercept of $f-g$:\n\n$$\n(f-g)(0)=-12\n$$\n\nso the statement is False.",
-        "**C.** → False\n\nVertex height:\n\n$$\nx=4\\qquad g(4)=-1\n$$\n\nTrue extreme $-1$, not $1$,\n\nso the statement is False.",
-        "**D.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**E.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=8\n$$\n\nso the statement is False."
+        "**A.** → False\n\nDegrees multiply: $2\\cdot 1=2$.",
+        "**B.** → True\n\n$\\deg(f\\circ g)=1\\cdot 2=2$.",
+        "**C.** → True\n\nBoth equal $2$.",
+        "**D.** → False\n\nComposition does not commute.",
+        "**E.** → True\n\n$\\deg(f^{2})=2$, so $\\deg(g\\circ f^{2})=4$."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 42,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=4 x + 3\\qquad g(x)=x^{2} - 8 x + 15\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(4,-1\\right)\\qquad \\mathrm{sum}=8\\qquad \\mathrm{product}=15\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 12 x - 12\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-\\frac{19}{8}$, $C=\\frac{345}{16}$.\n\n**Answer.** vertex $=\\left(4, -1\\right)$ | sum $=8$ | product $=15$ | meetings $=2$",
+      "solution_overview": "Degree multiplies under composition. Adding degrees ($1+2=3$) is the trap.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "symbolic"
     },
     {
       "id": "math-7-43",
       "case_id": "MATH 7.43",
-      "title": "Recover Models From Axis Data",
-      "context": "Line $f$ passes through $(0,-3)$ with slope $3$. Quadratic $g$ has roots $-3$ and $4$ and leading coefficient $1$. Rebuild $f$ and $g$ from these facts, then evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Monotonicity: Line Versus Parabola",
+      "context": "Let $f(x)=mx+k$ with $m\\neq 0$, and let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Evaluate each claim. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=-2$.",
-        "The axis of symmetry of $g$ is $x=\\frac{1}{2}$.",
-        "The parabola $g$ opens upwards.",
-        "The minimum value of $g$ is $-\\frac{49}{4}$.",
-        "$g(0)=-12$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=-3\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-1}{2\\cdot 1}=\\frac{1}{2}\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is True.",
-        "**D.** → True\n\nVertex height:\n\n$$\nx=\\frac{1}{2}\\qquad g(\\frac{1}{2})=-\\frac{49}{4}\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nSubstitute $x=0$:\n\n$$\ng(0)=-12\n$$\n\nso the statement is True."
-      ],
-      "difficulty_level": "1/5",
-      "sort_order": 43,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\nLine $f$ passes through $(0,-3)$ with slope $3$. Quadratic $g$ has roots $-3$ and $4$ and leading coefficient $1$.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=3 x - 3\\qquad g(x)=x^{2} - x - 12\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{49}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-12\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 4 x + 9\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{9}$, $B=\\frac{1}{3}$, $C=-12$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{49}{4}\\right)$ | sum $=1$ | product $=-12$ | meetings $=2$",
-      "subsection": "7",
-      "placeholder": false,
-      "stem_kind": "points"
-    },
-    {
-      "id": "math-7-44",
-      "case_id": "MATH 7.44",
-      "title": "Line Given, Even Parabola Told",
-      "context": "$f(x)=2x+3$ is explicit. $g$ is even about the $y$-axis, leading coefficient $1$, and equals $-9$ at the origin. Recover any missing formula, then evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "Completing the square gives $g(x)=\\left(x-0\\right)^{2}-9$.",
-        "$g(f(0))=2$.",
-        "$g(x)=0$ has exactly $2$ distinct real roots.",
-        "The sum of the roots of $g(x)$ is $0$.",
-        "Matching $g=Af^2+Bf+C$ forces $A=\\frac{1}{4}$."
+        "$f$ is strictly monotone on all of $\\mathbb{R}$.",
+        "$g$ is strictly monotone on all of $\\mathbb{R}$.",
+        "On the half-line to the right of the axis of $g$, the restriction of $g$ is strictly monotone.",
+        "If $m>0$ and $a>0$, then $f(x)<g(x)$ for all sufficiently large $x$.",
+        "If $m=0$ were allowed, $f$ would still be strictly monotone."
       ],
       "answer_key": [
         true,
         false,
         true,
-        true,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → True\n\nVertex form:\n\n$$\ng(x)=\\left(x-0\\right)^{2}-9\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nInside-out:\n\n$$\nf(0)=3\n$$\n\n$$\ng(f(0))=0\n$$\n\nso the statement is False.",
-        "**C.** → True\n\nDiscriminant of $g$:\n\n$$\n\\Delta=36\n$$\n\nExactly $2$ distinct real root(s),\n\nso the statement is True.",
-        "**D.** → True\n\nSum $=-b/a$:\n\n$$\n-\\frac{0}{1}=0\n$$\n\nso the statement is True.",
-        "**E.** → True\n\nMatch the $x^{2}$ coefficient in $Af^{2}+Bf+C$:\n\n$$\nA=\\frac{1}{4}\n$$\n\nso the statement is True."
-      ],
-      "difficulty_level": "4/5",
-      "sort_order": 44,
-      "solution_overview": "**Part 0: Recover the models from the stem.**\n\n$f(x)=2x+3$ is explicit. $g$ is even about the $y$-axis, leading coefficient $1$, and equals $-9$ at the origin.\n\nTranslating the stem into formulas gives\n\n$$\nf(x)=2 x + 3\\qquad g(x)=x^{2} - 9\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(0,-9\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-9\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 2 x + 12\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{4}$, $B=-\\frac{3}{2}$, $C=-\\frac{27}{4}$.\n\n**Answer.** vertex $=\\left(0, -9\\right)$ | sum $=0$ | product $=-9$ | meetings $=2$",
-      "subsection": "7",
-      "placeholder": false,
-      "stem_kind": "hybrid"
-    },
-    {
-      "id": "math-7-45",
-      "case_id": "MATH 7.45",
-      "title": "Deep Even Minimum",
-      "context": "Consider the linear and quadratic functions $f(x)=- 4 x - 2$ and $g(x)=2 x^{2} - 18$. Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "The axis of symmetry of $g$ is $x=1$.",
-        "The slope of $y=f(x)$ is $-4$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect more than twice.",
-        "$g(1)=-13$.",
-        "$g(1)=-16$."
-      ],
-      "answer_key": [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      "tactical_explanations": [
-        "**A.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{0}{2\\cdot 2}=0\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=- 4 x - 2\n$$\n\nThe slope is $-4$,\n\nso the statement is True.",
-        "**C.** → False\n\nSolve $f=g$:\n\n$$\n2 x^{2} + 4 x - 16=0\n$$\n\n$\\Delta=144$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**D.** → False\n\nSubstitute $x=1$:\n\n$$\ng(1)=-16\n$$\n\nso the statement is False.",
-        "**E.** → True\n\nSubstitute $x=1$:\n\n$$\ng(1)=-16\n$$\n\nso the statement is True."
-      ],
-      "difficulty_level": "3/5",
-      "sort_order": 45,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=- 4 x - 2\\qquad g(x)=2 x^{2} - 18\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(0,-18\\right)\\qquad \\mathrm{sum}=0\\qquad \\mathrm{product}=-9\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} - 4 x + 16\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{8}$, $B=\\frac{1}{2}$, $C=-\\frac{35}{2}$.\n\n**Answer.** vertex $=\\left(0, -18\\right)$ | sum $=0$ | product $=-9$ | meetings $=2$",
-      "subsection": "7",
-      "placeholder": false,
-      "stem_kind": "formula"
-    },
-    {
-      "id": "math-7-46",
-      "case_id": "MATH 7.46",
-      "title": "Through-Origin Line and Twin Roots",
-      "context": "Consider the linear and quadratic functions $f(x)=6 x$ and $g(x)=x^{2} - 6 x + 5$. Evaluate each statement. Mark it TRUE or FALSE.",
-      "statements": [
-        "There exist values $a,b,c\\in\\mathbb{R}$ such that $g(x)=a f(x)^{2}+b f(x)+c$.",
-        "The vertical gap $f(h)-g(h)$ at the axis of $g$ equals $28$.",
-        "A line meets a parabola at most twice, yet these two graphs meet more than twice.",
-        "The average rate of change of $g$ on $[0,2]$ is $-4$.",
-        "The point on the graph of $g(x)$ with the lowest $y$ coordinate is $\\left(4, -4\\right)$."
-      ],
-      "answer_key": [
-        true,
-        false,
-        false,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSince $\\deg f=1$, $\\{1,f,f^{2}\\}$ spans degree $\\le 2$. Matching gives\n\n$$\nA=\\frac{1}{36},\\ B=-1,\\ C=5\n$$\n\nso the statement is True.",
-        "**B.** → False\n\nAt the axis $x=3$:\n\n$$\nf(3)=18\\qquad g(3)=-4\n$$\n\nDifference $22$.\n\nso the statement is False.",
-        "**C.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 12 x + 5=0\n$$\n\n$\\Delta=124$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False.",
-        "**D.** → True\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{-3-5}{2}=-4\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nVertex:\n\n$$\nx=3\\qquad g(3)=-4\n$$\n\nThe claimed point is not the vertex,\n\nso the statement is False."
+        "**A.** → True\n\n$m\\neq 0$ forces a global strict increase or decrease.",
+        "**B.** → False\n\n$g'(x)=2ax+b$ changes sign at the axis.",
+        "**C.** → True\n\nThe derivative keeps constant sign on each open half-line from the axis.",
+        "**D.** → True\n\nA quadratic with $a>0$ dominates every line as $x\\to+\\infty$.",
+        "**E.** → False\n\nConstant functions are not strictly monotone."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
+      "sort_order": 43,
+      "solution_overview": "Non-constant lines are globally monotone; quadratics only on each side of the axis.",
+      "subsection": "7",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-7-44",
+      "case_id": "MATH 7.44",
+      "title": "Parameter Tangency Criterion",
+      "context": "Let $g(x)=ax^{2}+bx+c$ with $a\\neq 0$, and let $f_t(x)=tx+1$ be a family of lines parametrised by $t\\in\\mathbb{R}$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "For every real $t$, the line $y=f_t(x)$ is tangent to the graph of $g$.",
+        "There exists at least one real $t$ for which $y=f_t$ is tangent to $y=g$.",
+        "If $y=f_t$ is tangent to $y=g$ at $x_0$, then $g'(x_0)=t$.",
+        "If $g-f_t$ has two distinct real roots, then the graphs intersect at two points and are not tangent.",
+        "Replacing the intercept $1$ in $f_t$ by an arbitrary constant $q$ can change whether a tangent slope exists."
+      ],
+      "answer_key": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nTangency is a single algebraic condition on $t$, not an identity.",
+        "**B.** → False\n\nLet $\\Delta(t)=(b-t)^{2}-4a(c-1)$. As a quadratic in $t$ its discriminant is $16a(c-1)$. When $a(c-1)<0$, one has $\\Delta(t)>0$ for all $t$, so no tangent.",
+        "**C.** → True\n\nShared derivative at the contact point.",
+        "**D.** → True\n\nTwo simple roots mean two transversal meetings.",
+        "**E.** → True\n\nThe condition involves $c-q$."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 44,
+      "solution_overview": "Tangency means $\\Delta(t)=0$ for $ax^{2}+(b-t)x+(c-1)$; this may have $0$, $1$, or $2$ real solutions.",
+      "subsection": "7",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-7-45",
+      "case_id": "MATH 7.45",
+      "title": "Shifts and Scalings of a Parabola",
+      "context": "Start from $g(x)=ax^{2}+bx+c$ with $a\\neq 0$. Consider $g_1(x)=g(x-r)$, $g_2(x)=g(x)+s$, and $g_3(x)=\\lambda g(x)$ with $\\lambda\\neq 0$. No numeric data. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The axis of $g_1$ is the axis of $g$ shifted by $r$ units to the right.",
+        "The axis of $g_2$ differs from the axis of $g$.",
+        "If $\\lambda<0$, then $g_3$ opens in the opposite direction from $g$.",
+        "There exist $r\\neq 0$ such that $g_1$ has a different axis from $g$ but the same leading coefficient.",
+        "$g_3$ always has the same roots as $g$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nIf $g$ has axis $x=h$, then $g_1$ has axis $x=h+r$.",
+        "**B.** → False\n\nA vertical shift does not move the axis.",
+        "**C.** → True\n\nLeading coefficient becomes $\\lambda a$.",
+        "**D.** → True\n\nHorizontal shift changes the axis and preserves $a$.",
+        "**E.** → True\n\nFor $\\lambda\\neq 0$, $\\lambda g(x)=0\\Leftrightarrow g(x)=0$."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 45,
+      "solution_overview": "Horizontal shifts move the axis; vertical shifts preserve it; nonzero scalings preserve roots.",
+      "subsection": "7",
+      "placeholder": false,
+      "stem_kind": "symbolic"
+    },
+    {
+      "id": "math-7-46",
+      "case_id": "MATH 7.46",
+      "title": "Double Composition and Leading Match",
+      "context": "Let $f(x)=4x+2$ and $g(x)=x^{2}-x-2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{1}{16}$, $B=-\\frac{1}{2}$, $C=-\\frac{5}{4}$.",
+        "Because $f-g$ can be mistaken for a cubic, the graphs may meet three times.",
+        "$g(f(0))=f(g(0))$.",
+        "At the axis of $g$, the gap $f-g$ equals $\\frac{17}{4}$.",
+        "Completing the square gives $g(x)=\\left(x-\\frac{1}{2}\\right)^{2}-\\frac{9}{4}$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFull coefficient match.",
+        "**B.** → False\n\nStill degree $2$.",
+        "**C.** → False\n\n$f(0)=2$, $g(2)=0$; $g(0)=-2$, $f(-2)=-6$.",
+        "**D.** → True\n\nAxis $x=1/2$; $f=4$, $g=-9/4$; gap $17/4$.",
+        "**E.** → True\n\nVertex form."
+      ],
+      "difficulty_level": "5/5",
       "sort_order": 46,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=6 x\\qquad g(x)=x^{2} - 6 x + 5\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(3,-4\\right)\\qquad \\mathrm{sum}=6\\qquad \\mathrm{product}=5\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 12 x - 5\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{36}$, $B=-1$, $C=5$.\n\n**Answer.** vertex $=\\left(3, -4\\right)$ | sum $=6$ | product $=5$ | meetings $=2$",
+      "solution_overview": "Multi-hop on the photo models: rewrite triple, nested mismatch, axis gap.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1521,98 +1521,98 @@
     {
       "id": "math-7-47",
       "case_id": "MATH 7.47",
-      "title": "Distant Roots Shallow Line",
-      "context": "Consider the linear and quadratic functions $f(x)=x - 4$ and $g(x)=x^{2} - x - 12$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Parameter Window for Two Meetings",
+      "context": "Let $g(x)=x^{2}-4x+1$ and $f_k(x)=kx+1$. Evaluate each statement about the real parameter $k$. Mark it TRUE or FALSE.",
       "statements": [
-        "The distance between the two real roots of $g$ is $8$.",
-        "The leading coefficient of $f-g$ is $-1$.",
-        "The sum of the roots of $g$ is $1$ and their product is $-12$.",
-        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$, namely $1$.",
-        "Because $f-g$ looks cubic at a glance, the graphs can meet three times."
+        "For every $k$, the graphs intersect at the point $(0,1)$.",
+        "If $k=-4$, the graphs intersect at exactly one point.",
+        "If $k=-4$, the line is tangent to the parabola at $(0,1)$.",
+        "For $k=0$, the second intersection is at $x=4$.",
+        "There exists a real $k$ for which the graphs fail to meet."
       ],
       "answer_key": [
-        false,
+        true,
         true,
         true,
         true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nWith two real roots, distance $=\\sqrt{\\Delta}/|a|$:\n\n$$\n\\mathrm{span}=7\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nExpand $f-g$:\n\n$$\n- x^{2} + 2 x + 8\n$$\n\nso the statement is True.",
-        "**C.** → True\n\nBoth Vieta formulas:\n\n$$\n\\mathrm{sum}=1\\qquad \\mathrm{product}=-12\n$$\n\nso the statement is True.",
-        "**D.** → True\n\nDifference quotient on $[0,2]$:\n\n$$\n\\frac{g(2)-g(0)}{2}=\\frac{-10--12}{2}=1\n$$\n\nCompare with slope of $f$, namely $1$.\n\nso the statement is True.",
-        "**E.** → False\n\nSolve $f=g$:\n\n$$\nx^{2} - 2 x - 8=0\n$$\n\n$\\Delta=36$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False."
+        "**A.** → True\n\n$g(0)=f_k(0)=1$.",
+        "**B.** → True\n\n$g-f_k=x^{2}$: double root at $0$.",
+        "**C.** → True\n\nDouble root and $g'(0)=-4=k$.",
+        "**D.** → True\n\nRoots $0$ and $4$.",
+        "**E.** → False\n\nThey always share the point $(0,1)$."
       ],
       "difficulty_level": "5/5",
       "sort_order": 47,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=x - 4\\qquad g(x)=x^{2} - x - 12\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{49}{4}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-12\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 2 x + 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=7$, $C=0$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{49}{4}\\right)$ | sum $=1$ | product $=-12$ | meetings $=2$",
+      "solution_overview": "$g-f_k=x^{2}-(4+k)x$. Always through $(0,1)$; tangency at $k=-4$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "parametric"
     },
     {
       "id": "math-7-48",
       "case_id": "MATH 7.48",
-      "title": "Scaled Fall Against Rising Line",
-      "context": "Consider the linear and quadratic functions $f(x)=10 - 5 x$ and $g(x)=2 x^{2} - 2 x - 12$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Scaled Roots and Nested Order",
+      "context": "You are given $f(x)=5x-2$. The quadratic $g$ has roots $2$ and $4$ but leading coefficient $2$. Recover $g$, then evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "$f(0)=11$.",
-        "The slope of $y=f(x)$ is $5$.",
-        "The sum of the roots of $g(x)$ is $-1$.",
-        "The point on the graph of $g(x)$ with the lowest $y$ coordinate is $\\left(\\frac{1}{2}, -\\frac{25}{2}\\right)$.",
-        "The graphs of $f(x)$ and $g(x)$ intersect more than twice."
+        "$g(x)=2x^{2}-12x+16$.",
+        "Matching $g=Af^{2}+Bf+C$ forces $A=\\frac{2}{25}$.",
+        "$g(f(0))=f(g(0))$.",
+        "The distance between the roots of $g$ is $2$.",
+        "Completing the square gives $g(x)=2(x-3)^{2}-2$."
       ],
       "answer_key": [
-        false,
-        false,
+        true,
+        true,
         false,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nEvaluate at the origin:\n\n$$\nf(0)=10\n$$\n\nso the statement is False.",
-        "**B.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=10 - 5 x\n$$\n\nThe slope is $-5$, not $5$,\n\nso the statement is False.",
-        "**C.** → False\n\nSum $=-b/a$:\n\n$$\n-\\frac{-2}{2}=1\n$$\n\nso the statement is False.",
-        "**D.** → True\n\nVertex:\n\n$$\nx=\\frac{1}{2}\\qquad g(\\frac{1}{2})=-\\frac{25}{2}\n$$\n\nso the statement is True.",
-        "**E.** → False\n\nSolve $f=g$:\n\n$$\n2 x^{2} + 3 x - 22=0\n$$\n\n$\\Delta=185$ yields $2$ real meeting(s). A line and a parabola meet at most twice.\n\nso the statement is False."
+        "**A.** → True\n\n$2(x-2)(x-4)$.",
+        "**B.** → True\n\nLeading $A\\cdot 25=2$.",
+        "**C.** → False\n\n$f(0)=-2$, $g(-2)=48$; $g(0)=16$, $f(16)=78$.",
+        "**D.** → True\n\nScaling does not move roots.",
+        "**E.** → True\n\nVertex at $x=3$; $g(3)=-2$."
       ],
-      "difficulty_level": "3/5",
+      "difficulty_level": "5/5",
       "sort_order": 48,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=10 - 5 x\\qquad g(x)=2 x^{2} - 2 x - 12\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{1}{2},-\\frac{25}{2}\\right)\\qquad \\mathrm{sum}=1\\qquad \\mathrm{product}=-6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- 2 x^{2} - 3 x + 22\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{2}{25}$, $B=-\\frac{6}{5}$, $C=-8$.\n\n**Answer.** vertex $=\\left(\\frac{1}{2}, -\\frac{25}{2}\\right)$ | sum $=1$ | product $=-6$ | meetings $=2$",
+      "solution_overview": "$$\ng(x)=2(x-2)(x-4)=2x^{2}-12x+16\n$$",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "hybrid"
     },
     {
       "id": "math-7-49",
       "case_id": "MATH 7.49",
-      "title": "Factorable Quadratic Parallel Trap",
-      "context": "Consider the linear and quadratic functions $f(x)=4 x - 2$ and $g(x)=x^{2} - 5 x + 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "Average Rate Versus Instantaneous Slope",
+      "context": "Let $g(x)=x^{2}-6x+5$ and $f(x)=4x-8$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The minimum value of $g$ is $\\frac{7}{4}$.",
-        "The slope of $y=f(x)$ is $4$.",
-        "The parabola $g$ opens downwards.",
-        "The axis of symmetry of $g$ is $x=\\frac{7}{2}$.",
-        "The slope of $y=f(x)$ is $-4$."
+        "The average rate of change of $g$ on $[0,2]$ equals the slope of $f$.",
+        "There exists $c\\in(0,2)$ with $g'(c)$ equal to that average rate.",
+        "Completing the square gives $g(x)=(x-3)^{2}-4$.",
+        "By Vieta, the sum of roots is $-6$.",
+        "$f(g(0))=12$."
       ],
       "answer_key": [
         false,
         true,
+        true,
         false,
-        false,
-        false
+        true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nVertex height:\n\n$$\nx=\\frac{5}{2}\\qquad g(\\frac{5}{2})=-\\frac{1}{4}\n$$\n\nTrue extreme $-\\frac{1}{4}$, not $\\frac{7}{4}$,\n\nso the statement is False.",
-        "**B.** → True\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 x - 2\n$$\n\nThe slope is $4$,\n\nso the statement is True.",
-        "**C.** → False\n\nLeading coefficient:\n\n$$\na=1\n$$\n\nUpwards iff $a>0$.\n\nso the statement is False.",
-        "**D.** → False\n\nAxis $x=-b/(2a)$:\n\n$$\nx=-\\frac{-5}{2\\cdot 1}=\\frac{5}{2}\n$$\n\nso the statement is False.",
-        "**E.** → False\n\nRead the coefficient of $x$:\n\n$$\nf(x)=4 x - 2\n$$\n\nThe slope is $4$, not $-4$,\n\nso the statement is False."
+        "**A.** → False\n\nAverage $-4$; slope of $f$ is $+4$.",
+        "**B.** → True\n\nMean value theorem; explicitly $g'(1)=-4$.",
+        "**C.** → True\n\nVertex form.",
+        "**D.** → False\n\nSum $=6$; sign trap.",
+        "**E.** → True\n\n$g(0)=5$, $f(5)=12$."
       ],
-      "difficulty_level": "1/5",
+      "difficulty_level": "5/5",
       "sort_order": 49,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=4 x - 2\\qquad g(x)=x^{2} - 5 x + 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(\\frac{5}{2},-\\frac{1}{4}\\right)\\qquad \\mathrm{sum}=5\\qquad \\mathrm{product}=6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} + 9 x - 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=\\frac{1}{16}$, $B=-1$, $C=\\frac{15}{4}$.\n\n**Answer.** vertex $=\\left(\\frac{5}{2}, -\\frac{1}{4}\\right)$ | sum $=5$ | product $=6$ | meetings $=2$",
+      "solution_overview": "Average $-4$; MVT witness $c=1$; Vieta sign trap.",
       "subsection": "7",
       "placeholder": false,
       "stem_kind": "formula"
@@ -1620,35 +1620,35 @@
     {
       "id": "math-7-50",
       "case_id": "MATH 7.50",
-      "title": "Falling Line Through Twin Roots",
-      "context": "Consider the linear and quadratic functions $f(x)=2 - x$ and $g(x)=x^{2} + x - 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "title": "When Does Vertical Shift Kill Meetings?",
+      "context": "Let $f(x)=2x$ and $g_s(x)=x^{2}-x-2+s$ with real shift $s$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "Matching $g=Af^2+Bf+C$ forces $A=2$.",
-        "$f(g(0))=8$.",
-        "Because $\\deg f=1$ and $\\deg g=2$, the composition $f(g(x))$ must have degree $3$.",
-        "The axis of symmetry $x=-\\frac{1}{2}$ coincides with the Vieta sum of the roots.",
-        "The composition $f(g(x))$ has degree $2$."
+        "For $s=0$, the graphs meet twice.",
+        "For $s=5$, the graphs meet twice.",
+        "There exists $s$ making the graphs tangent.",
+        "Vertical shifts can create a third intersection with $f$.",
+        "The axis of $g_s$ depends on $s$."
       ],
       "answer_key": [
+        true,
         false,
         true,
         false,
-        false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nMatch the $x^{2}$ coefficient in $Af^{2}+Bf+C$:\n\n$$\nA=1\n$$\n\nso the statement is False.",
-        "**B.** → True\n\nOther order:\n\n$$\ng(0)=-6\n$$\n\n$$\nf(g(0))=8\n$$\n\nso the statement is True.",
-        "**C.** → False\n\nExpand $f(g(x))$:\n\n$$\n- x^{2} - x + 8\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is False.",
-        "**D.** → False\n\nAxis $x=-b/(2a)$ versus Vieta sum $-b/a$:\n\n$$\nx=-\\frac{1}{2}\\qquad \\mathrm{sum}=-1\n$$\n\nThese coincide only in special cases (often when the sum is twice the axis).\n\nso the statement is False.",
-        "**E.** → True\n\nExpand $f(g(x))$:\n\n$$\n- x^{2} - x + 8\n$$\n\nDegree $2$ (not the naive sum of degrees when the outer map is linear).\n\nso the statement is True."
+        "**A.** → True\n\n$\\Delta=17>0$.",
+        "**B.** → False\n\n$\\Delta=17-20<0$.",
+        "**C.** → True\n\n$\\Delta=0$ at $s=17/4$.",
+        "**D.** → False\n\nDegree stays $2$.",
+        "**E.** → False\n\nAxis still $x=1/2$."
       ],
-      "difficulty_level": "4/5",
+      "difficulty_level": "5/5",
       "sort_order": 50,
-      "solution_overview": "The stem gives the models directly:\n\n$$\nf(x)=2 - x\\qquad g(x)=x^{2} + x - 6\n$$\n\n**Part 1: Shared facts.**\n\n$$\n\\mathrm{vertex}=\\left(-\\frac{1}{2},-\\frac{25}{4}\\right)\\qquad \\mathrm{sum}=-1\\qquad \\mathrm{product}=-6\n$$\n\n**Part 2: Difference and meetings.**\n\n$$\nf-g=- x^{2} - 2 x + 8\\qquad \\#\\mathrm{intersections}=2\n$$\n\n**Part 3: Linear basis.**\n\nBecause $\\deg f=1$, write $g=Af^2+Bf+C$ with $A=1$, $B=-5$, $C=0$.\n\n**Answer.** vertex $=\\left(-\\frac{1}{2}, -\\frac{25}{4}\\right)$ | sum $=-1$ | product $=-6$ | meetings $=2$",
+      "solution_overview": "$g_s-f=x^{2}-3x+(s-2)$, $\\Delta=17-4s$.",
       "subsection": "7",
       "placeholder": false,
-      "stem_kind": "formula"
+      "stem_kind": "parametric"
     }
   ]
 }
