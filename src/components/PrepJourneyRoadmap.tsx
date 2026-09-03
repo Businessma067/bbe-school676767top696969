@@ -148,7 +148,7 @@ function NodeCircle({
         dim,
         milestone.destination
           ? "bg-[var(--exam-red)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--exam-red)_55%,transparent)]"
-          : "border-[1.5px] border-foreground/70 bg-[color-mix(in_oklab,var(--ivory)_88%,white)] text-foreground",
+          : "border-[1.5px] border-foreground/70 bg-background text-foreground",
         milestone.youAreHere && "border-[var(--exam-red)]",
       )}
       style={{ animationDelay: `${0.22 + index * 0.22}s` }}
@@ -177,7 +177,6 @@ function NodeCircle({
     </div>
   );
 }
-
 
 function NodeCaption({
   milestone,
@@ -210,13 +209,28 @@ function NodeCaption({
   );
 }
 
-/** Wide desktop: soft S-curve across the full content width. */
+/** Wide desktop: path through circle centers; captions clear of the stroke. */
 function SpreadDesktopRoadmap() {
+  /**
+   * Circle centers (percent of container) — path is drawn through these.
+   * High nodes: caption above. Low nodes: caption below.
+   * Above captions use enough offset to clear the "you are here" badge.
+   */
+  const nodes = [
+    { milestone: MILESTONES[0], left: "0%", centerY: "42%", caption: "above" as const },
+    { milestone: MILESTONES[1], left: "25%", centerY: "62%", caption: "below" as const },
+    { milestone: MILESTONES[2], left: "51%", centerY: "42%", caption: "above" as const },
+    { milestone: MILESTONES[3], left: "76%", centerY: "58%", caption: "below" as const },
+  ];
+
+  const pathD =
+    "M125 185 C 250 185, 280 273, 375 273 S 530 185, 625 185 S 790 255, 875 255";
+
   return (
-    <div className="relative hidden h-[340px] w-full md:block">
+    <div className="relative hidden h-[420px] w-full overflow-visible md:block lg:h-[440px]">
       <svg
-        className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1100 340"
+        className="pointer-events-none absolute inset-0 z-0 h-full w-full"
+        viewBox="0 0 1000 440"
         preserveAspectRatio="none"
         aria-hidden
       >
@@ -232,10 +246,10 @@ function SpreadDesktopRoadmap() {
         <path
           id="prepRoadmapPath"
           className="prep-roadmap-path"
-          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
+          d={pathD}
           fill="none"
           stroke="#161616"
-          strokeOpacity="0.26"
+          strokeOpacity="0.28"
           strokeWidth="1.6"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -244,7 +258,7 @@ function SpreadDesktopRoadmap() {
         />
         <path
           className="prep-roadmap-comet"
-          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
+          d={pathD}
           fill="none"
           stroke="var(--exam-red)"
           strokeWidth="2.4"
@@ -255,22 +269,35 @@ function SpreadDesktopRoadmap() {
         />
       </svg>
 
-      <div className="absolute left-[0%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
-        <NodeCircle milestone={MILESTONES[0]} index={0} size="lg" />
-        <NodeCaption milestone={MILESTONES[0]} />
-      </div>
-      <div className="absolute left-[25%] top-[48%] flex w-[24%] flex-col items-center gap-2.5">
-        <NodeCircle milestone={MILESTONES[1]} index={1} size="lg" />
-        <NodeCaption milestone={MILESTONES[1]} />
-      </div>
-      <div className="absolute left-[51%] top-[18%] flex w-[24%] flex-col items-center gap-2.5">
-        <NodeCircle milestone={MILESTONES[2]} index={2} size="lg" />
-        <NodeCaption milestone={MILESTONES[2]} />
-      </div>
-      <div className="absolute left-[76%] top-[34%] flex w-[24%] flex-col items-center gap-2.5">
-        <NodeCircle milestone={MILESTONES[3]} index={3} size="lg" />
-        <NodeCaption milestone={MILESTONES[3]} />
-      </div>
+      {nodes.map((n, i) => (
+        <div
+          key={n.milestone.title}
+          className="absolute z-10 w-[24%] -translate-y-1/2"
+          style={{ left: n.left, top: n.centerY }}
+        >
+          <div className="relative mx-auto flex w-full flex-col items-center">
+            <div className="relative">
+              {n.caption === "above" && (
+                <div
+                  className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
+                  style={{ bottom: "calc(100% + 1.5rem)" }}
+                >
+                  <NodeCaption milestone={n.milestone} />
+                </div>
+              )}
+              <NodeCircle milestone={n.milestone} index={i} size="lg" />
+              {n.caption === "below" && (
+                <div
+                  className="absolute left-1/2 z-10 w-[min(240px,70vw)] -translate-x-1/2 text-center"
+                  style={{ top: "calc(100% + 0.85rem)" }}
+                >
+                  <NodeCaption milestone={n.milestone} />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
@@ -280,7 +307,7 @@ function MobileRoadmap() {
   return (
     <div className="relative mx-auto flex w-full max-w-md flex-col justify-center gap-0 px-1 py-2 md:hidden">
       <div
-        className="prep-roadmap-path-mobile absolute bottom-8 left-[1.9rem] top-8 w-px bg-foreground/25"
+        className="prep-roadmap-path-mobile absolute bottom-8 left-[1.9rem] top-8 z-0 w-px bg-foreground/25"
         aria-hidden
       />
       {MILESTONES.map((m, i) => (
