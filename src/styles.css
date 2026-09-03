@@ -492,9 +492,8 @@ body.flashcard-swiping {
 }
 
 .prep-roadmap-path {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: prep-roadmap-draw 2.6s ease-out forwards;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
 }
 
 .prep-roadmap-path-mobile {
@@ -534,6 +533,20 @@ body.flashcard-swiping {
 .prep-roadmap-here-ring-2 {
   animation-delay: 1.3s;
 }
+@keyframes prep-roadmap-comet {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.prep-roadmap-comet {
+  stroke-dasharray: 0.09 0.91;
+  stroke-dashoffset: 1;
+  animation: prep-roadmap-comet 14s linear 0.4s infinite;
+}
 
 
 
@@ -551,10 +564,12 @@ body.flashcard-swiping {
   .prep-roadmap-path-mobile,
   .prep-roadmap-node,
   .prep-roadmap-pulse,
+  .prep-roadmap-comet,
   .prep-roadmap-here-ring {
     animation: none;
   }
 
+  .prep-roadmap-comet,
   .prep-roadmap-here-ring {
     opacity: 0;
   }

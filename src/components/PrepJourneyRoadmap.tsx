@@ -220,6 +220,15 @@ function SpreadDesktopRoadmap() {
         preserveAspectRatio="none"
         aria-hidden
       >
+        <defs>
+          <filter id="prepGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="6" result="b" />
+            <feMerge>
+              <feMergeNode in="b" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
         <path
           id="prepRoadmapPath"
           className="prep-roadmap-path"
@@ -232,6 +241,17 @@ function SpreadDesktopRoadmap() {
           strokeLinejoin="round"
           pathLength={1}
           vectorEffect="non-scaling-stroke"
+        />
+        <path
+          className="prep-roadmap-comet"
+          d="M132 97 C 220 97, 320 199, 407 199 S 600 97, 693 97 S 880 152, 968 152"
+          fill="none"
+          stroke="var(--exam-red)"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          pathLength={1}
+          vectorEffect="non-scaling-stroke"
+          filter="url(#prepGlow)"
         />
       </svg>
 
