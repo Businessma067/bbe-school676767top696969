@@ -155,6 +155,7 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       subs(11, [
         { id: "11.1", title: "Differentiation rules & mechanics" },
         { id: "11.2", title: "Economic interpretation of the derivative" },
+        { id: "11.3", title: "Finding and classifying optima" },
       ]),
     ),
     toChapterToc(
