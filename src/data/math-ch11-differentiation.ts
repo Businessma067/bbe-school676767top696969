@@ -4149,8 +4149,8 @@ The statement is False.`
       "A small workshop can run its regular crew for up to $50$ units a week. Up to that point every unit costs a steady $12$ euros of labour and materials, so weekly cost is $C(Q)=12Q$ whenever $0\\le Q\\le 50$. Beyond $50$ units the crew must be paid overtime: the workshop still pays the $600$ euros already spent on the first $50$ units, and then $20$ euros for each extra unit, which is written $C(Q)=600+20(Q-50)$ when $Q>50$. Customers are willing to pay enough that marginal revenue stays at $R'(Q)=16$ euros per unit for every $Q>0$. Judge every assertion below.",
     statements: [
       "For $Q<50$, marginal cost is $12$ euros per unit.",
-      "For $Q>50$, marginal cost is $20$ euros per unit.",
-      "At an output just above $50$, a small expansion raises profit.",
+      "Crossing into overtime raises the cost of an extra unit by $8$ euros relative to the regular-crew schedule.",
+      "Just above $50$, overtime still leaves $R'(Q)>C'(Q)$.",
       "At $Q=40$, a small expansion raises profit.",
       "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$."
     ],
@@ -4172,27 +4172,27 @@ The statement is True.`,
 Rewrite the overtime formula by expanding the brackets:
 
 $$
-C(Q)=600+20(Q-50)=600+20Q-1000=20Q-400.
+C(Q)=600+20(Q-50)=20Q-400.
 $$
 
-Differentiating the overtime piece gives
+Differentiating the overtime piece gives $C'(Q)=20$ for $Q>50$. Relative to the regular-crew slope $12$,
 
 $$
-C'(Q)=20\\qquad\\text{for }Q>50.
+20-12=8.
 $$
 
-After the kink, each extra unit adds $20$ euros of cost.
+So overtime raises the cost of an extra unit by $8$ euros.
 
 The statement is True.`,
       `**C.** → False
 
-Just above $Q=50$ the workshop is already on overtime, so $C'(Q)=20$. Marginal revenue is still $R'(Q)=16$. Profit satisfies
+Just above $Q=50$ the workshop is already on overtime, so $C'(Q)=20$. Marginal revenue is still $R'(Q)=16$. Then
 
 $$
-P'(Q)=R'(Q)-C'(Q)=16-20=-4<0.
+R'(Q)-C'(Q)=16-20=-4<0,
 $$
 
-A negative marginal profit means a small expansion lowers profit; it does not raise it.
+hence $R'(Q)<C'(Q)$, not $R'(Q)>C'(Q)$.
 
 The statement is False.`,
       `**D.** → True
@@ -4221,7 +4221,7 @@ The statement is False.`
     difficulty_level: "5/5",
     sort_order: 62,
     solution_overview:
-      "The overtime kink changes marginal cost from $12$ to $20$. Compare each piece with the fixed $R'(Q)=16$, and keep average cost $\\dfrac{C(Q)}{Q}$ separate from $C'(Q)$.",
+      "The overtime kink changes marginal cost from $12$ to $20$. Measure that gap, compare each piece with $R'(Q)=16$, and keep average cost $\\dfrac{C(Q)}{Q}$ separate from $C'(Q)$.",
   },
   {
     id: "math-11-63",
@@ -4362,9 +4362,9 @@ The statement is False.`
       "A riverside bar runs a happy-hour promotion for the first $20$ drinks of the evening: each of those drinks brings in a steady $15$ euros, so revenue is $R(Q)=15Q$ while $0\\le Q\\le 20$. After the twentieth drink the promotion ends and later drinks add only $8$ euros each, which the manager writes as $R(Q)=300+8(Q-20)$ for $Q>20$. Mixing and serving costs rise at a constant $C'(Q)=10$ euros per drink all evening. Decide TRUE or FALSE for each claim.",
     statements: [
       "For $Q<20$, marginal revenue is $15$.",
-      "For $Q>20$, marginal revenue is $8$.",
+      "After happy hour ends, each extra drink adds only $8$ euros of revenue, which is already below the constant marginal cost $10$.",
       "At $Q=12$, a small extra drink raises profit.",
-      "At $Q=25$, a small extra drink raises profit.",
+      "At $Q=25$, post-promotion revenue still beats cost at the margin.",
       "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
     ],
     answer_key: [true, true, true, false, false],
@@ -4388,13 +4388,13 @@ $$
 R(Q)=300+8(Q-20)=8Q+140,
 $$
 
-so
+so $R'(Q)=8$ for $Q>20$. The serving cost stays at $C'(Q)=10$, and
 
 $$
-R'(Q)=8\\qquad\\text{for }Q>20.
+8<10.
 $$
 
-Past the kink, each extra drink adds only $8$ euros of revenue.
+Post-promotion extra revenue therefore already lies below marginal cost.
 
 The statement is True.`,
       `**C.** → True
@@ -4416,7 +4416,7 @@ $$
 P'(25)=8-10=-2<0.
 $$
 
-A small extra drink lowers profit at $Q=25$, it does not raise it.
+Post-promotion revenue does not beat cost at the margin; a small extra drink lowers profit.
 
 The statement is False.`,
       `**E.** → False
@@ -4506,7 +4506,7 @@ The statement is True.`
       "A manufacturer can produce one more small unit either in Plant 1 or in Plant 2 and will sell that unit in the same market either way. Plant 1 is currently cheaper at the margin: $C_1'(Q_1)=9$ euros. Plant 2 is more expensive at the margin: $C_2'(Q_2)=13$ euros. Whichever plant makes the unit, the extra sale adds $R'=11$ euros of revenue. Decide TRUE or FALSE for each claim.",
     statements: [
       "Producing the extra unit in Plant 1 raises the firm's profit.",
-      "Producing the extra unit in Plant 2 raises the firm's profit.",
+      "Plant 2 should produce the extra unit because both plants sell into the same market.",
       "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
       "Because both plants belong to one firm, the two marginal costs must be equal.",
       "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
@@ -4526,13 +4526,13 @@ Producing that unit in Plant 1 therefore raises the firm's profit.
 The statement is True.`,
       `**B.** → False
 
-Send the same extra unit to Plant 2:
+Sharing one market only means both plants face the same extra revenue $R'=11$. It does not make Plant 2 profitable:
 
 $$
-P_2'=R'-C_2'(Q_2)=11-13=-2<0.
+P_2'=11-13=-2<0.
 $$
 
-Producing it in Plant 2 would lower the firm's profit, not raise it.
+Plant 2 should not produce the extra unit.
 
 The statement is False.`,
       `**C.** → True
@@ -4573,7 +4573,7 @@ The statement is True.`
       "A country's income tax has two brackets. On the first $1000$ euros of income the tax office takes one fifth, so $T(y)=\\dfrac{1}{5}y$ whenever $0\\le y\\le 1000$. Above $1000$ euros the taxpayer still owes the $200$ euros already due on the first bracket, and then two fifths of every euro beyond $1000$, which is written $T(y)=200+\\dfrac{2}{5}(y-1000)$ for $y>1000$. Which of the following hold?",
     statements: [
       "For $y<1000$, the marginal tax rate is $\\dfrac{1}{5}$.",
-      "For $y>1000$, the marginal tax rate is $\\dfrac{2}{5}$.",
+      "Crossing $y=1000$ raises the tax on an extra euro from one fifth to two fifths.",
       "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
       "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
       "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
@@ -4599,13 +4599,7 @@ $$
 T(y)=200+\\dfrac{2}{5}(y-1000),
 $$
 
-so
-
-$$
-T'(y)=\\dfrac{2}{5}\\qquad\\text{for }y>1000.
-$$
-
-Above $1000$, each extra euro is taxed at two fifths.
+so $T'(y)=\\dfrac{2}{5}$ for $y>1000$. Crossing $y=1000$ therefore raises the tax on an extra euro from $\\dfrac{1}{5}$ to $\\dfrac{2}{5}$.
 
 The statement is True.`,
       `**C.** → False
@@ -4993,9 +4987,9 @@ The statement is True.`
       "A street vendor faces a two-piece inverse demand. While sales stay at most $30$ units, buyers require the price $p(Q)=40-Q$. Once sales exceed $30$, further units can only be sold at a flat clearance price $p(Q)=10$. Revenue is always $R(Q)=Q\\cdot p(Q)$, and packing cost rises at a constant $C'(Q)=12$ euros per unit. Judge every assertion below.",
     statements: [
       "For $Q<30$, $R(Q)=40Q-Q^{2}$ and $R'(Q)=40-2Q$.",
-      "For $Q>30$, $R(Q)=10Q$ and $R'(Q)=10$.",
+      "Once clearance pricing begins, marginal revenue collapses to the flat price $10$.",
       "At $Q=12$, a small expansion raises profit.",
-      "At $Q=35$, a small expansion raises profit.",
+      "At $Q=35$, clearance pricing still leaves $R'(Q)>C'(Q)$.",
       "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
     ],
     answer_key: [true, true, true, false, false],
@@ -5017,13 +5011,13 @@ $$
 The statement is True.`,
       `**B.** → True
 
-On the clearance piece the price is the constant $10$, so
+On the clearance piece the price is the constant $10$, so revenue becomes $R(Q)=10Q$ and
 
 $$
-R(Q)=10Q\\qquad\\text{and}\\qquad R'(Q)=10\\qquad\\text{for }Q>30.
+R'(Q)=10\\qquad\\text{for }Q>30.
 $$
 
-The statement is True.`,
+That flat price is exactly the post-kink marginal revenue. The statement is True.`,
       `**C.** → True
 
 At $Q=12$ one is on the first piece:
@@ -5046,10 +5040,10 @@ The statement is True.`,
 At $Q=35$ one is on the clearance piece, so $R'(35)=10$. Then
 
 $$
-P'(35)=10-12=-2<0.
+R'(35)-C'(35)=10-12=-2<0,
 $$
 
-A small expansion lowers profit at $Q=35$.
+hence $R'(Q)<C'(Q)$ under clearance pricing, not $R'(Q)>C'(Q)$.
 
 The statement is False.`,
       `**E.** → False
@@ -5192,9 +5186,9 @@ The statement is False.`
       "The same café serves the same menu all week, but staffing costs change with the day. On weekdays cost is the linear rule $C_{\\mathrm{wd}}(Q)=12Q$; on weekends overtime staffing makes cost $C_{\\mathrm{we}}(Q)=20Q$. Customer demand is steady enough that marginal revenue is $R'(Q)=15$ on both kinds of day. Which of the following hold?",
     statements: [
       "On a weekday, $C_{\\mathrm{wd}}'(Q)=12$.",
-      "On a weekend, $C_{\\mathrm{we}}'(Q)=20$.",
+      "Weekend overtime raises the cost of an extra sale by $8$ euros relative to the weekday schedule.",
       "A small extra sale raises profit on a weekday.",
-      "A small extra sale raises profit on a weekend.",
+      "Because weekend revenue is still $R'(Q)=15$, weekend marginal profit equals the weekday figure $3$.",
       "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
     ],
     answer_key: [true, true, true, false, true],
@@ -5207,16 +5201,16 @@ $$
 C_{\\mathrm{wd}}'(Q)=12.
 $$
 
-The statement is True.`,
+So on a weekday each extra sale adds $12$ euros of cost. The statement is True.`,
       `**B.** → True
 
-Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so
+Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}'(Q)=20$. The weekday slope was $12$, and
 
 $$
-C_{\\mathrm{we}}'(Q)=20.
+20-12=8.
 $$
 
-The statement is True.`,
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule. The statement is True.`,
       `**C.** → True
 
 On a weekday,
@@ -5225,30 +5219,24 @@ $$
 P'(Q)=R'(Q)-C_{\\mathrm{wd}}'(Q)=15-12=3>0.
 $$
 
-A small extra sale raises weekday profit.
-
-The statement is True.`,
+A positive marginal profit means a small extra sale raises weekday profit. The statement is True.`,
       `**D.** → False
 
-On a weekend,
+Weekend marginal profit uses the weekend cost slope, not the weekday one:
 
 $$
-P'(Q)=15-20=-5<0.
+P'(Q)=R'(Q)-C_{\\mathrm{we}}'(Q)=15-20=-5.
 $$
 
-A small extra sale lowers weekend profit; it does not raise it.
-
-The statement is False.`,
+That is not equal to the weekday figure $3$. Same $R'(Q)$ with a higher $C'(Q)$ changes the profit slope. The statement is False.`,
       `**E.** → True
 
-$R'(Q)=15$ is the same number both days. What changes is which cost schedule supplies $C'(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change.
-
-The statement is True.`
+$R'(Q)=15$ is the same number both days. What changes is which cost schedule supplies $C'(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change. The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
     solution_overview:
-      "Treat weekday and weekend as two cost regimes, then run the same $R'(Q)$ versus $C'(Q)$ test in each regime.",
+      "Treat weekday and weekend as two cost regimes: read the weekday slope, measure the overtime gap, then run the $R'(Q)$ versus $C'(Q)$ test without assuming equal marginal profits.",
   },
   {
     id: "math-11-78",
