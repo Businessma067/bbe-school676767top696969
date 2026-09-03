@@ -150,9 +150,15 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
     ),
     toChapterToc(
       11,
-      "Elementary probability",
+      "Differentiation and single-variable optimization",
       "Chapter 11",
-      subs(11, [
+      subs(11, [{ id: "11.1", title: "Differentiation rules & mechanics" }]),
+    ),
+    toChapterToc(
+      12,
+      "Elementary probability",
+      "Chapter 12",
+      subs(12, [
         { id: "12.1", title: "Combinatorial Probability" },
         { id: "12.2", title: "Inclusion–Exclusion" },
         { id: "12.3", title: "Conditional Probability" },
@@ -162,10 +168,10 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       ]),
     ),
     toChapterToc(
-      12,
+      13,
       "Binomial distribution",
-      "Chapter 12",
-      subs(12, [
+      "Chapter 13",
+      subs(13, [
         { id: "13", title: "Binomial distribution" },
         { id: "13.5", title: "Exam-style tasks" },
       ]),

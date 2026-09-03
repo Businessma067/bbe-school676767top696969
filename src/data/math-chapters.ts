@@ -3,7 +3,8 @@
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
  * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
  * 7 (Linear and quadratic functions), 8 (Power functions),
- * 11 (Elementary probability), and 12 (Binomial) are populated;
+ * 11 (Differentiation and single-variable optimization),
+ * 12 (Elementary probability), and 13 (Binomial) are populated;
  * chapters 9–10 are marked coming soon; others use placeholders.
  */
 
@@ -20,7 +21,14 @@ import {
   MATH_CH8_SUBSECTIONS,
 } from "@/data/math-ch8-power-functions";
 import { MATH_CH6_INEQUALITIES, MATH_CH6_SUBSECTIONS } from "@/data/math-ch6-inequalities";
-import { MATH_CH11_FINANCIAL, MATH_CH11_SUBSECTIONS } from "@/data/math-ch11-financial";
+import {
+  MATH_CH11_DIFFERENTIATION,
+  MATH_CH11_SUBSECTIONS as MATH_CH11_DIFF_SUBSECTIONS,
+} from "@/data/math-ch11-differentiation";
+import {
+  MATH_CH11_FINANCIAL,
+  MATH_CH11_SUBSECTIONS as MATH_CH3_SUBSECTIONS,
+} from "@/data/math-ch11-financial";
 import { MATH_CH12_PROBABILITY, MATH_CH12_SUBSECTIONS } from "@/data/math-ch12-probability";
 import { MATH_CH13_BINOMIAL, MATH_CH13_SUBSECTIONS } from "@/data/math-ch13-binomial";
 
@@ -77,6 +85,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   5: { "5": 10 },
   6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5, "6.5": 4 },
   8: { "8": 10 },
+  11: { "11.1": 10 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
@@ -156,6 +165,7 @@ const CHAPTER_TITLES = [
   "Power functions",
   "Polynomial functions",
   "Exponential and logarithmic functions",
+  "Differentiation and single-variable optimization",
   "Elementary probability",
   "Binomial distribution",
 ] as const;
@@ -187,20 +197,22 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   6: MATH_CH6_INEQUALITIES,
   7: MATH_CH7_LINEAR_QUADRATIC,
   8: MATH_CH8_POWER_FUNCTIONS,
-  11: MATH_CH12_PROBABILITY,
-  12: MATH_CH13_BINOMIAL,
+  11: MATH_CH11_DIFFERENTIATION,
+  12: MATH_CH12_PROBABILITY,
+  13: MATH_CH13_BINOMIAL,
 };
 
 const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
   1: MATH_CH1_SUBSECTIONS,
   2: MATH_CH2_SUBSECTIONS,
-  3: MATH_CH11_SUBSECTIONS,
+  3: MATH_CH3_SUBSECTIONS,
   4: MATH_CH4_SUBSECTIONS,
   5: MATH_CH5_SUBSECTIONS,
   6: MATH_CH6_SUBSECTIONS,
   8: MATH_CH8_SUBSECTIONS,
-  11: MATH_CH12_SUBSECTIONS,
-  12: MATH_CH13_SUBSECTIONS,
+  11: MATH_CH11_DIFF_SUBSECTIONS,
+  12: MATH_CH12_SUBSECTIONS,
+  13: MATH_CH13_SUBSECTIONS,
 };
 
 /** Syllabus chapters with structure ready but no practice content yet. */
