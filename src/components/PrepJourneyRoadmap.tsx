@@ -149,19 +149,35 @@ function NodeCircle({
         milestone.destination
           ? "bg-[var(--exam-red)] text-white shadow-[0_8px_20px_-8px_color-mix(in_oklab,var(--exam-red)_55%,transparent)]"
           : "border-[1.5px] border-foreground/70 bg-[color-mix(in_oklab,var(--ivory)_88%,white)] text-foreground",
+        milestone.youAreHere && "border-[var(--exam-red)]",
       )}
       style={{ animationDelay: `${0.22 + index * 0.22}s` }}
     >
+      {milestone.youAreHere && (
+        <>
+          <span
+            className="prep-roadmap-here-ring pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            aria-hidden
+          />
+          <span
+            className="prep-roadmap-here-ring prep-roadmap-here-ring-2 pointer-events-none absolute inset-0 rounded-full border border-[var(--exam-red)]"
+            aria-hidden
+          />
+        </>
+      )}
       <MilestoneIcon type={milestone.icon} className={iconDim} />
       {milestone.youAreHere && (
         <span
-          className="prep-roadmap-pulse absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-foreground"
+          className="absolute -top-3 left-1/2 z-[2] -translate-x-1/2 whitespace-nowrap rounded-full border border-[var(--exam-red)] bg-[var(--exam-red)] px-2 py-[3px] text-[9px] font-semibold uppercase tracking-[0.08em] leading-none text-white shadow-[0_4px_12px_-6px_color-mix(in_oklab,var(--exam-red)_70%,transparent)]"
           aria-hidden
-        />
+        >
+          you are here
+        </span>
       )}
     </div>
   );
 }
+
 
 function NodeCaption({
   milestone,
