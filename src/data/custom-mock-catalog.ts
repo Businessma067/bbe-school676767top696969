@@ -152,7 +152,10 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       11,
       "Differentiation and single-variable optimization",
       "Chapter 11",
-      subs(11, [{ id: "11.1", title: "Differentiation rules & mechanics" }]),
+      subs(11, [
+        { id: "11.1", title: "Differentiation rules & mechanics" },
+        { id: "11.2", title: "Economic interpretation of the derivative" },
+      ]),
     ),
     toChapterToc(
       12,
