@@ -3520,7 +3520,7 @@ That is exactly what the sign of a derivative reports for a differentiable funct
       "Average cost answers \"cost per unit produced so far,\" while marginal cost answers \"extra cost of a little more output.\"",
       "In general $A(Q)=C'(Q)$ for every $Q>0$.",
       "Minimizing average cost is the same decision problem as setting marginal cost to zero.",
-      "At an output that minimizes average cost (with $A$ differentiable and $Q>0$), one has $C'(Q)=A(Q)$.",
+      "At an output that minimizes average cost (with $A(Q)$ differentiable and $Q>0$), one has $C'(Q)=A(Q)$.",
       "If average cost is falling, then necessarily $C'(Q)<0$.",
     ],
     answer_key: [true, false, false, true, false],
@@ -3539,7 +3539,7 @@ Setting $C'(Q)=0$ would look for a stationary point of total cost, which is not 
 A standard calculus fact: if $A(Q)=\\dfrac{C(Q)}{Q}$ has a minimum at an interior $Q>0$, then $A'(Q)=0$ there, which rearranges to $C'(Q)=A(Q)$. The statement is True.`,
       `**E.** → False
 
-Average cost can fall even while total cost rises. Falling $A$ means $A'<0$, not that marginal cost is negative. The statement is False.`,
+Average cost can fall even while total cost rises. Falling average cost means $A'(Q)<0$, not that marginal cost is negative. The statement is False.`,
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -3644,13 +3644,31 @@ Marginal profit is defined as $P'(Q)$. The consultant differentiated the wrong o
 $p'(Q)=-1$ only describes how price falls with quantity. It omits both the extra unit sold and the cost side. The statement is True.`,
       `**C.** → True
 
-$R(Q)= Q(40-Q)=40Q-Q^{2}$. The statement is True.`,
+Revenue is price times quantity. Substitute the inverse demand $p(Q)=40-Q$:
+
+$$
+R(Q)=Q\cdot p(Q)=Q(40-Q)=40Q-Q^{2}.
+$$
+
+That is exactly the claimed revenue function. The statement is True.`,
       `**D.** → True
 
-$P(Q)=R(Q)-C(Q)=(40Q-Q^{2})-(8Q+20)=32Q-Q^{2}-20$. The statement is True.`,
+Profit is revenue minus cost. Using the revenue from statement C and the given cost $C(Q)=8Q+20$,
+
+$$
+P(Q)=R(Q)-C(Q)=(40Q-Q^{2})-(8Q+20)=32Q-Q^{2}-20.
+$$
+
+The claimed simplification matches. The statement is True.`,
       `**E.** → True
 
-Differentiating that profit gives $P'(Q)=32-2Q$. The statement is True.`,
+Differentiate the simplified profit from statement D term by term:
+
+$$
+P'(Q)=32-2Q.
+$$
+
+That is the correct marginal profit, not the consultant's $p'(Q)=-1$. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -3724,7 +3742,7 @@ $\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost. It is 
 Differentiating $S(Y)=\\overline{S}+sY$ gives $S'(Y)=s$. The statement is True.`,
       `**E.** → True
 
-The economic question names saving as the dependent quantity, so the function to differentiate is $S$. The statement is True.`,
+The economic question names saving as the dependent quantity, so the function to differentiate is saving $S(Y)$. The statement is True.`,
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -3786,19 +3804,31 @@ Equal heights say nothing about equal slopes. A U-shaped cost curve can return t
     tactical_explanations: [
       `**A.** → True
 
-Profit maximization looks at $P$. Setting only $R'=0$ ignores cost. The statement is True.`,
+Profit maximization looks at profit $P(Q)$. Setting only $R'(Q)=0$ ignores cost. The statement is True.`,
       `**B.** → False
 
 Positive cost that depends on $Q$ shifts the optimum. Maximizing $R$ need not maximize $R-C$. The statement is False.`,
       `**C.** → True
 
-Because $P'=R'-C'$, the zeros of $R'$ and of $P'$ generally differ when $C'$ is not zero. The statement is True.`,
+Because $P'=R'-C'$, the zeros of $R'(Q)$ and of $P'(Q)$ generally differ when $C'(Q)$ is not zero. The statement is True.`,
       `**D.** → True
 
-$P'=0$ rearranges to $R'=C'$. The statement is True.`,
+At an interior profit maximum one must have $P'(Q)=0$. Because $P'(Q)=R'(Q)-C'(Q)$, that first-order condition rearranges at once to
+
+$$
+R'(Q)=C'(Q).
+$$
+
+The statement is True.`,
       `**E.** → True
 
-$P'=R'-C'=0-C'<0$ whenever $C'>0$. The statement is True.`,
+If $R'(Q)=0$ while $C'(Q)>0$, then
+
+$$
+P'(Q)=R'(Q)-C'(Q)=0-C'(Q)=-C'(Q)<0.
+$$
+
+So at a revenue-stationary point with rising cost, profit is already locally decreasing. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -3903,7 +3933,7 @@ Here $R'(80)>C'(80)$, so $P'(80)>0$ and a small increase in sales raises profit.
 Because $P'=R'-C'$, the inequality $R'>C'$ is identical to $P'>0$. The statement is True.`,
       `**C.** → False
 
-The rule explicitly uses cost through $C'$. It is a profit logic, not a pure revenue logic. The statement is False.`,
+The rule explicitly uses cost through $C'(Q)$. It is a profit logic, not a pure revenue logic. The statement is False.`,
       `**D.** → True
 
 Equal extras mean $R'=C'$, hence $P'=0$. The statement is True.`,
@@ -3934,7 +3964,7 @@ That is the modelling step that turns the manager's words into $R'(Q)$ and $C'(Q
     tactical_explanations: [
       `**A.** → True
 
-One objective looks at the height of $U$; the other looks at the quotient $\\dfrac{U}{x}$. Their critical points generally differ. The statement is True.`,
+One objective looks at the height of $U(x)$; the other looks at the quotient $\\dfrac{U}{x}$. Their critical points generally differ. The statement is True.`,
       `**B.** → False
 
 $U'=0$ maximizes (or stationarizes) total utility, not average utility. The average-utility first-order condition is $U'=A$, not $U'=0$. The statement is False.`,
@@ -4033,44 +4063,82 @@ Then $P'=11-18=-7<0$, so a small expansion lowers profit. The statement is True.
     title: "Two bakeries, same output, opposite advice",
     subsection: "11.2",
     context:
-      "Two bakeries each sell $Q=10$ cakes today. Bakery A reports $R_A'(10)=9$, $C_A'(10)=6$, and $P_A(10)=40$. Bakery B reports $R_B'(10)=5$, $C_B'(10)=7$, and $P_B(10)=90$. Profit means $P=R-C$. Decide TRUE or FALSE for each claim.",
+      "Two neighbourhood bakeries both sold exactly $Q=10$ cakes today, but their evenings look very different. At bakery A the next cake would still bring in about $R_A'(10)=9$ euros of revenue while costing only about $C_A'(10)=6$ euros to bake, and today's total profit sits at $P_A(10)=40$ euros. At bakery B the next cake would bring in only about $R_B'(10)=5$ euros while costing about $C_B'(10)=7$ euros, yet B already earned a much larger total profit $P_B(10)=90$ euros. Profit means $P(Q)=R(Q)-C(Q)$ for each bakery. Decide TRUE or FALSE for each claim.",
     statements: [
       "Bakery A's numbers imply $P_A'(10)=3$.",
       "Near $10$ cakes, bakery B's profit falls if it bakes a little more.",
       "Because $P_B(10)>P_A(10)$, bakery B should expand and bakery A should not.",
       "A small extra cake raises A's profit by about $3$ euros and lowers B's profit by about $2$ euros.",
-      "The higher profit level at B already tells you that B's marginal profit is larger.",
+      "The higher profit level at B already tells you that B's marginal profit is larger."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-By definition $P_A'=R_A'-C_A'$, so
+Profit is revenue minus cost, so marginal profit is the difference of the two derivatives:
+
+$$
+P_A'(Q)=R_A'(Q)-C_A'(Q).
+$$
+
+Plug in the bakery-A reports at $Q=10$:
+
 $$
 P_A'(10)=9-6=3.
 $$
+
+So A's posted numbers already force $P_A'(10)=3$.
+
 The statement is True.`,
       `**B.** → True
 
-For B,
+For bakery B the same identity gives
+
 $$
-P_B'(10)=5-7=-2<0.
+P_B'(10)=R_B'(10)-C_B'(10)=5-7=-2.
 $$
-A negative marginal profit means that a small increase in $Q$ lowers profit. The statement is True.`,
+
+A negative derivative means the profit function is locally decreasing. Near $10$ cakes, baking a little more therefore lowers B's profit.
+
+The statement is True.`,
       `**C.** → False
 
-The expansion test uses the sign of $P'$, not the height of $P$. Here $P_A'(10)>0$ while $P_B'(10)<0$, so A is the bakery that should expand a little, even though B currently earns more total profit. The statement is False.`,
+The expansion test asks whether profit is still rising, which is the sign of $P'(Q)$, not the size of today's profit stock $P(Q)$.
+
+Here
+
+$$
+P_A'(10)=3>0,\\qquad P_B'(10)=-2<0.
+$$
+
+So a small expansion raises A's profit and lowers B's, even though B currently has the larger total $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice.
+
+The statement is False.`,
       `**D.** → True
 
-The one-unit readings are $P_A'(10)=3$ and $P_B'(10)=-2$. The statement is True.`,
+The one-unit reading of a derivative says that a small extra cake changes profit by about $P'(10)$ euros.
+
+From earlier,
+
+$$
+P_A'(10)=3,\\qquad P_B'(10)=-2.
+$$
+
+So the extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros.
+
+The statement is True.`,
       `**E.** → False
 
-A large profit stock $P_B(10)=90$ can sit on a downward slope. Levels and rates are different objects. The statement is False.`,
+$P_B(10)=90$ is a level (how much profit B has already earned today). $P_B'(10)=-2$ is a rate (how that profit changes if B bakes a little more).
+
+A large positive stock can sit on a downward slope. Knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit.
+
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 61,
     solution_overview:
-      "Compare two firms at the same output: profit levels do not decide the expansion test; $P'=R'-C'$ does.",
+      "Two bakeries share today's output but not today's slopes: expand when $P'(Q)=R'(Q)-C'(Q)>0$, not when total profit $P(Q)$ is larger.",
   },
   {
     id: "math-11-62",
@@ -4078,40 +4146,82 @@ A large profit stock $P_B(10)=90$ can sit on a downward slope. Levels and rates 
     title: "Overtime cost after fifty units",
     subsection: "11.2",
     context:
-      "A workshop's weekly cost in euros is piecewise: $C(Q)=12Q$ if $0\\le Q\\le 50$, and $C(Q)=600+20(Q-50)$ if $Q>50$. Revenue is differentiable with $R'(Q)=16$ at every $Q>0$. Judge every assertion below.",
+      "A small workshop can run its regular crew for up to $50$ units a week. Up to that point every unit costs a steady $12$ euros of labour and materials, so weekly cost is $C(Q)=12Q$ whenever $0\\le Q\\le 50$. Beyond $50$ units the crew must be paid overtime: the workshop still pays the $600$ euros already spent on the first $50$ units, and then $20$ euros for each extra unit, which is written $C(Q)=600+20(Q-50)$ when $Q>50$. Customers are willing to pay enough that marginal revenue stays at $R'(Q)=16$ euros per unit for every $Q>0$. Judge every assertion below.",
     statements: [
       "For $Q<50$, marginal cost is $12$ euros per unit.",
       "For $Q>50$, marginal cost is $20$ euros per unit.",
       "At an output just above $50$, a small expansion raises profit.",
       "At $Q=40$, a small expansion raises profit.",
-      "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$.",
+      "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece, $C(Q)=12Q$, so $C'(Q)=12$ for $Q<50$. The statement is True.`,
+On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
+
+$$
+C'(Q)=12\\qquad\\text{for }Q<50.
+$$
+
+So before overtime kicks in, each extra unit adds $12$ euros of cost.
+
+The statement is True.`,
       `**B.** → True
 
-On the overtime piece, $C(Q)=600+20(Q-50)=20Q-400$, so $C'(Q)=20$ for $Q>50$. The statement is True.`,
+Rewrite the overtime formula by expanding the brackets:
+
+$$
+C(Q)=600+20(Q-50)=600+20Q-1000=20Q-400.
+$$
+
+Differentiating the overtime piece gives
+
+$$
+C'(Q)=20\\qquad\\text{for }Q>50.
+$$
+
+After the kink, each extra unit adds $20$ euros of cost.
+
+The statement is True.`,
       `**C.** → False
 
-Just above $50$, $R'(Q)=16<20=C'(Q)$, hence $P'(Q)=16-20=-4<0$. A small expansion lowers profit. The statement is False.`,
+Just above $Q=50$ the workshop is already on overtime, so $C'(Q)=20$. Marginal revenue is still $R'(Q)=16$. Profit satisfies
+
+$$
+P'(Q)=R'(Q)-C'(Q)=16-20=-4<0.
+$$
+
+A negative marginal profit means a small expansion lowers profit; it does not raise it.
+
+The statement is False.`,
       `**D.** → True
 
-At $Q=40<50$, $R'(40)=16>12=C'(40)$, so $P'(40)>0$. The statement is True.`,
+At $Q=40$ the workshop is still on the regular piece, so $C'(40)=12$. Compare with revenue:
+
+$$
+P'(40)=R'(40)-C'(40)=16-12=4>0.
+$$
+
+A positive derivative means a small expansion raises profit at $Q=40$.
+
+The statement is True.`,
       `**E.** → False
 
-For $Q>50$,
+Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
+
 $$
-\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}=20-\\dfrac{400}{Q},
+\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}=20-\\dfrac{400}{Q}.
 $$
-which equals $12$ only at the isolated point $Q=50$, not for every $Q>50$. The statement is False.`,
+
+The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, so average cost approaches $20$ from below. It equals $12$ only at the isolated handover point $Q=50$, not for every overtime output.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 62,
     solution_overview:
-      "Read a piecewise cost rule on each side of the kink, then compare each piece's marginal cost with the given marginal revenue.",
+      "The overtime kink changes marginal cost from $12$ to $20$. Compare each piece with the fixed $R'(Q)=16$, and keep average cost $\\dfrac{C(Q)}{Q}$ separate from $C'(Q)$.",
   },
   {
     id: "math-11-63",
@@ -4119,36 +4229,60 @@ which equals $12$ only at the isolated point $Q=50$, not for every $Q>50$. The s
     title: "Only marginal profit and marginal cost are posted",
     subsection: "11.2",
     context:
-      "A kiosk posts $P'(Q)=4$ and $C'(Q)=11$ at its current output, but it does not post revenue. A passer-by says the price schedule is $p(Q)=30-\\dfrac{Q}{10}$ and that this price is already marginal revenue. Decide TRUE or FALSE for each claim.",
+      "A station kiosk posts two numbers on its whiteboard at the current sales level: marginal profit $P'(Q)=4$ and marginal cost $C'(Q)=11$. It does not post revenue. A passer-by glances at the board, invents the price schedule $p(Q)=30-\\dfrac{Q}{10}$, and claims that this posted price is already the same thing as marginal revenue. Decide TRUE or FALSE for each claim.",
     statements: [
       "The implied marginal revenue is $R'(Q)=15$.",
       "A small extra sale raises profit, so the kiosk should expand a little.",
       "The passer-by's claim that $p(Q)$ equals marginal revenue is guaranteed by the posted numbers.",
       "The posted $P'(Q)=4$ is not the same information as the current profit level $P(Q)$.",
-      "If instead the kiosk had posted $P'(Q)=-4$ with the same $C'(Q)=11$, implied $R'(Q)$ would be $7$.",
+      "If instead the kiosk had posted $P'(Q)=-4$ with the same $C'(Q)=11$, implied $R'(Q)$ would be $7$."
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$P'=R'-C'$ rearranges to $R'=P'+C'=4+11=15$. The statement is True.`,
+By definition $P'(Q)=R'(Q)-C'(Q)$. Rearrange to recover the missing marginal revenue:
+
+$$
+R'(Q)=P'(Q)+C'(Q)=4+11=15.
+$$
+
+The whiteboard's two numbers therefore imply $R'(Q)=15$.
+
+The statement is True.`,
       `**B.** → True
 
-$P'(Q)=4>0$, so a small expansion raises profit. The statement is True.`,
+The kiosk itself posted $P'(Q)=4>0$. A positive marginal profit means profit is locally increasing, so a small extra sale raises profit and a little expansion is recommended.
+
+The statement is True.`,
       `**C.** → False
 
-Price $p(Q)$ is not identified by $P'$ and $C'$. Even if someone writes down a schedule $30-\\dfrac{Q}{10}$, that function is not $R'$ unless it has been shown to equal $15$ at this $Q$. The posted pair does not force $p=R'$. The statement is False.`,
+The posted pair determines only $R'(Q)=15$. It does not determine the price schedule $p(Q)$.
+
+Even if someone writes down $p(Q)=30-\\dfrac{Q}{10}$, that function equals marginal revenue only if it has been shown to equal $15$ at this $Q$. Under a downward-sloping price, the product rule usually gives $R'(Q)=p(Q)+Q\\cdot p'(Q)<p(Q)$, so price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R'(Q)$.
+
+The statement is False.`,
       `**D.** → True
 
-$P'$ is a slope. The height $P(Q)$ is unreported. The statement is True.`,
+$P'(Q)=4$ is a rate of change of profit near the current output. The current profit level is the height $P(Q)$, which was never posted. A slope of $4$ is compatible with many different heights.
+
+The statement is True.`,
       `**E.** → True
 
-Then $R'=P'+C'=-4+11=7$. The statement is True.`,
+Repeat the same rearrangement with the alternative report $P'(Q)=-4$ and the same $C'(Q)=11$:
+
+$$
+R'(Q)=P'(Q)+C'(Q)=-4+11=7.
+$$
+
+So the implied marginal revenue would be $7$.
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 63,
     solution_overview:
-      "Rearrange $P'=R'-C'$ to recover the missing marginal revenue, and refuse to confuse price with $R'$.",
+      "Rearrange $P'(Q)=R'(Q)-C'(Q)$ to recover a missing $R'(Q)$, keep price $p(Q)$ distinct from $R'(Q)$, and remember that $P'(Q)$ is a slope rather than a profit stock.",
   },
   {
     id: "math-11-64",
@@ -4156,36 +4290,68 @@ Then $R'=P'+C'=-4+11=7$. The statement is True.`,
     title: "Two cinemas: price versus extra ticket revenue",
     subsection: "11.2",
     context:
-      "Cinema A currently charges $p_A=12$ euros and reports $R_A'(Q_A)=7$. Cinema B currently charges $p_B=10$ euros and reports $R_B'(Q_B)=10$. Both have marginal cost $C'=8$ at their current outputs. Which of the following hold?",
+      "Two city cinemas are deciding whether to sell one more ticket tonight. Cinema A currently charges $p_A=12$ euros per ticket, but because a lower price is needed to fill an extra seat, the extra revenue from that seat is only $R_A'(Q_A)=7$ euros. Cinema B currently charges $p_B=10$ euros and reports that the extra ticket would add the full $R_B'(Q_B)=10$ euros of revenue. Both cinemas face the same marginal cost $C'(Q)=8$ euros for one more viewer. Which of the following hold?",
     statements: [
       "At cinema A, the extra revenue from one more ticket is about $7$ euros, not $12$.",
       "Cinema B's numbers are consistent with a price that does not have to be cut to sell one more ticket.",
       "Cinema A should expand a little, because its price $12$ exceeds marginal cost $8$.",
-      "Cinema B should expand a little, because $R_B'>C_B'$.",
-      "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit.",
+      "Cinema B should expand a little, because $R_B'(Q_B)>C_B'(Q_B)$.",
+      "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Marginal revenue, not the posted price, is the extra-euros-per-ticket figure. For A that figure is $R_A'=7$. The statement is True.`,
+The economic question "how many extra euros does one more ticket bring in?" is answered by marginal revenue $R_A'(Q_A)$, not by the sticker price $p_A$.
+
+Cinema A reports $R_A'(Q_A)=7$, so the extra ticket is worth about $7$ euros of revenue even though the current price is $12$.
+
+The statement is True.`,
       `**B.** → True
 
-When $R'=p$, the product-rule penalty $Q p'$ is zero, which is the usual reading of a price that need not fall to sell a little more. The statement is True.`,
+When price need not fall to sell a little more, the product-rule penalty $Q\\cdot p'(Q)$ is zero and $R'(Q)=p(Q)$.
+
+Cinema B reports $R_B'(Q_B)=10=p_B$, which is exactly that situation.
+
+The statement is True.`,
       `**C.** → False
 
-A's expansion test is $R_A'$ versus $C'$, that is $7$ versus $8$, not $12$ versus $8$. Since $7<8$, a small expansion lowers A's profit. The statement is False.`,
+A's expansion test compares extra revenue with extra cost:
+
+$$
+P_A'(Q_A)=R_A'(Q_A)-C'=7-8=-1<0.
+$$
+
+The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit.
+
+The statement is False.`,
       `**D.** → True
 
-$R_B'=10>8=C_B'$, so $P_B'>0$. The statement is True.`,
+For cinema B,
+
+$$
+P_B'(Q_B)=R_B'(Q_B)-C'=10-8=2>0.
+$$
+
+So $R_B'(Q_B)>C_B'(Q_B)$ and a small expansion raises B's profit.
+
+The statement is True.`,
       `**E.** → False
 
-Marginal profit is $R'-C'$. Here $P_A'=7-8=-1$ while $P_B'=10-8=2$. The higher posted price at A does not make A's marginal profit larger. The statement is False.`,
+Marginal profit is $R'(Q)-C'(Q)$, not a ranking of sticker prices. Here
+
+$$
+P_A'(Q_A)=7-8=-1,\\qquad P_B'(Q_B)=10-8=2.
+$$
+
+A has the higher price but the lower (in fact negative) marginal profit. The comparison $p_A>p_B$ does not decide the expansion ranking.
+
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 64,
     solution_overview:
-      "Force the expansion test to use $R'$ rather than the posted price, then compare two cinemas.",
+      "Force each cinema's expand-or-not test to use $R'(Q)$ rather than the posted price, then compare the two marginal profits.",
   },
   {
     id: "math-11-65",
@@ -4193,36 +4359,78 @@ Marginal profit is $R'-C'$. Here $P_A'=7-8=-1$ while $P_B'=10-8=2$. The higher p
     title: "Happy-hour revenue after twenty drinks",
     subsection: "11.2",
     context:
-      "A bar's evening revenue is $R(Q)=15Q$ if $0\\le Q\\le 20$, and $R(Q)=300+8(Q-20)$ if $Q>20$. Cost satisfies $C'(Q)=10$ at every $Q>0$. Decide TRUE or FALSE for each claim.",
+      "A riverside bar runs a happy-hour promotion for the first $20$ drinks of the evening: each of those drinks brings in a steady $15$ euros, so revenue is $R(Q)=15Q$ while $0\\le Q\\le 20$. After the twentieth drink the promotion ends and later drinks add only $8$ euros each, which the manager writes as $R(Q)=300+8(Q-20)$ for $Q>20$. Mixing and serving costs rise at a constant $C'(Q)=10$ euros per drink all evening. Decide TRUE or FALSE for each claim.",
     statements: [
       "For $Q<20$, marginal revenue is $15$.",
       "For $Q>20$, marginal revenue is $8$.",
       "At $Q=12$, a small extra drink raises profit.",
       "At $Q=25$, a small extra drink raises profit.",
-      "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros.",
+      "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece $R(Q)=15Q$, so $R'(Q)=15$ for $Q<20$. The statement is True.`,
+During happy hour the revenue rule is $R(Q)=15Q$. Differentiating that piece gives
+
+$$
+R'(Q)=15\\qquad\\text{for }Q<20.
+$$
+
+So before the twentieth drink, each extra drink adds $15$ euros of revenue.
+
+The statement is True.`,
       `**B.** → True
 
-On the second piece $R(Q)=300+8(Q-20)=8Q+140$, so $R'(Q)=8$ for $Q>20$. The statement is True.`,
+After happy hour,
+
+$$
+R(Q)=300+8(Q-20)=8Q+140,
+$$
+
+so
+
+$$
+R'(Q)=8\\qquad\\text{for }Q>20.
+$$
+
+Past the kink, each extra drink adds only $8$ euros of revenue.
+
+The statement is True.`,
       `**C.** → True
 
-At $Q=12$, $R'=15>10=C'$, hence $P'>0$. The statement is True.`,
+At $Q=12$ the bar is still in happy hour, so $R'(12)=15$. Cost adds $C'(12)=10$. Therefore
+
+$$
+P'(12)=15-10=5>0.
+$$
+
+A small extra drink raises profit at $Q=12$.
+
+The statement is True.`,
       `**D.** → False
 
-At $Q=25$, $R'=8<10=C'$, hence $P'<0$. A small extra drink lowers profit. The statement is False.`,
+At $Q=25$ the bar is past happy hour, so $R'(25)=8$. Then
+
+$$
+P'(25)=8-10=-2<0.
+$$
+
+A small extra drink lowers profit at $Q=25$, it does not raise it.
+
+The statement is False.`,
       `**E.** → False
 
-After the kink the relevant extra is the second-piece derivative $8$, not the old $15$. Intramarginal drinks do not set the current $R'$. The statement is False.`,
+The first $20$ drinks were sold under the happy-hour rule, but the extra drink at $Q=25$ is sold under the post-promotion rule. Its extra revenue is the current derivative $R'(25)=8$, not the old $15$.
+
+Intramarginal drinks do not set today's marginal revenue.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 65,
     solution_overview:
-      "Switch revenue formula at the happy-hour kink and compare each piece's $R'$ with the constant $C'$.",
+      "Happy hour changes the revenue slope from $15$ to $8$ at $Q=20$. Compare each piece with the constant $C'(Q)=10$.",
   },
   {
     id: "math-11-66",
@@ -4230,36 +4438,64 @@ After the kink the relevant extra is the second-piece derivative $8$, not the ol
     title: "What an expansion recommendation already contains",
     subsection: "11.2",
     context:
-      "An adviser says only this: at the current $Q$, a small increase in output would raise profit. You also know $C'(Q)=14$. No revenue formula is supplied. Judge every assertion below.",
+      "A consultant visits a factory and says only this sentence: at the current output $Q$, a small increase in production would raise profit. Separately, the factory's cost office reports that marginal cost is $C'(Q)=14$ euros. No revenue formula is supplied. Judge every assertion below.",
     statements: [
       "The advice already means $P'(Q)>0$.",
       "The advice already means $R'(Q)>14$.",
       "The advice tells you the current profit level $P(Q)$.",
       "The advice tells you the average cost $\\dfrac{C(Q)}{Q}$.",
-      "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first.",
+      "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first."
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
 
-\\"A small increase in output would raise profit\\" is the meaning of $P'(Q)>0$. The statement is True.`,
+In calculus language, "a small increase in output would raise profit" is exactly the meaning of a positive derivative of profit:
+
+$$
+P'(Q)>0.
+$$
+
+The consultant's sentence is therefore already the statement $P'(Q)>0$.
+
+The statement is True.`,
       `**B.** → True
 
-$P'=R'-C'$ and $C'=14$, so $P'>0$ is $R'>14$. The statement is True.`,
+Profit satisfies $P'(Q)=R'(Q)-C'(Q)$. With the cost office's report $C'(Q)=14$, the inequality $P'(Q)>0$ becomes
+
+$$
+R'(Q)-14>0\\qquad\\Leftrightarrow\\qquad R'(Q)>14.
+$$
+
+So the advice already forces marginal revenue to exceed $14$.
+
+The statement is True.`,
       `**C.** → False
 
-The sign of $P'$ does not identify the height $P(Q)$. The statement is False.`,
+$P'(Q)>0$ only says that profit is locally rising. It does not identify the height $P(Q)$ of today's profit. Many different profit levels are compatible with the same positive slope.
+
+The statement is False.`,
       `**D.** → False
 
-Average cost is a quotient of levels, not a consequence of $P'>0$. The statement is False.`,
+Average cost $\\dfrac{C(Q)}{Q}$ is a quotient of levels. Knowing that $P'(Q)>0$ and $C'(Q)=14$ does not determine that quotient.
+
+The statement is False.`,
       `**E.** → True
 
-$R'=11$ would give $P'=11-14=-3<0$, which says that a small expansion lowers profit. That contradicts the first adviser. The statement is True.`,
+If $R'(Q)=11$ while $C'(Q)=14$, then
+
+$$
+P'(Q)=11-14=-3<0,
+$$
+
+which says that a small expansion lowers profit. That directly contradicts the first adviser's claim that a small expansion raises profit.
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 66,
     solution_overview:
-      "Translate a verbal expansion recommendation into $P'>0$ and then into a bound on the unobserved $R'$.",
+      "Translate a verbal expansion recommendation into $P'(Q)>0$, then into the bound $R'(Q)>C'(Q)$ on the unobserved marginal revenue.",
   },
   {
     id: "math-11-67",
@@ -4267,36 +4503,66 @@ $R'=11$ would give $P'=11-14=-3<0$, which says that a small expansion lowers pro
     title: "Two plants, one market price for the extra unit",
     subsection: "11.2",
     context:
-      "A firm can produce the next small unit in Plant 1 or in Plant 2 and sell it in the same market. Plant 1 has $C_1'(Q_1)=9$, Plant 2 has $C_2'(Q_2)=13$, and the extra unit would add $R'=11$ of revenue either way. Decide TRUE or FALSE for each claim.",
+      "A manufacturer can produce one more small unit either in Plant 1 or in Plant 2 and will sell that unit in the same market either way. Plant 1 is currently cheaper at the margin: $C_1'(Q_1)=9$ euros. Plant 2 is more expensive at the margin: $C_2'(Q_2)=13$ euros. Whichever plant makes the unit, the extra sale adds $R'=11$ euros of revenue. Decide TRUE or FALSE for each claim.",
     statements: [
       "Producing the extra unit in Plant 1 raises the firm's profit.",
       "Producing the extra unit in Plant 2 raises the firm's profit.",
       "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
       "Because both plants belong to one firm, the two marginal costs must be equal.",
-      "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it.",
+      "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-For Plant 1, $11-9=2>0$, so that extra unit raises profit. The statement is True.`,
+Send the extra unit to Plant 1 and compare extra revenue with Plant 1's extra cost:
+
+$$
+P_1'=R'-C_1'(Q_1)=11-9=2>0.
+$$
+
+Producing that unit in Plant 1 therefore raises the firm's profit.
+
+The statement is True.`,
       `**B.** → False
 
-For Plant 2, $11-13=-2<0$, so that extra unit lowers profit. The statement is False.`,
+Send the same extra unit to Plant 2:
+
+$$
+P_2'=R'-C_2'(Q_2)=11-13=-2<0.
+$$
+
+Producing it in Plant 2 would lower the firm's profit, not raise it.
+
+The statement is False.`,
       `**C.** → True
 
-With a common $R'$, the extra unit is profitable only where $C'<R'$. That is Plant 1, which is also the cheaper plant at the margin. The statement is True.`,
+With a common $R'=11$, the extra unit is profitable only where marginal cost lies below $11$. That is Plant 1 ($C_1'=9$), not Plant 2 ($C_2'=13$).
+
+Preferring the plant with the lower marginal cost is exactly the right ranking here.
+
+The statement is True.`,
       `**D.** → False
 
-Nothing in the story forces $C_1'=C_2'$. The two reported numbers $9$ and $13$ already differ. The statement is False.`,
+Nothing in the story forces the two plants to have equal marginal costs. The reported figures are already different: $9$ versus $13$. Common ownership does not erase that difference.
+
+The statement is False.`,
       `**E.** → True
 
-Then $8<9$ and $8<13$, so $P'<0$ in both plants. The statement is True.`,
+If instead $R'=8$, then
+
+$$
+8<9\\qquad\\text{and}\\qquad 8<13,
+$$
+
+so $P'<0$ in both plants. Neither plant should produce that extra unit.
+
+The statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 67,
     solution_overview:
-      "Apply the $R'$ versus $C'$ test separately to each plant, then compare the two marginal costs.",
+      "Apply the $R'(Q)$ versus $C'(Q)$ test separately to each plant, then compare the two marginal costs under a common market revenue.",
   },
   {
     id: "math-11-68",
@@ -4304,44 +4570,82 @@ Then $8<9$ and $8<13$, so $P'<0$ in both plants. The statement is True.`,
     title: "A two-bracket income tax",
     subsection: "11.2",
     context:
-      "Income tax is $T(y)=\\dfrac{1}{5}y$ if $0\\le y\\le 1000$, and $T(y)=200+\\dfrac{2}{5}(y-1000)$ if $y>1000$. Which of the following hold?",
+      "A country's income tax has two brackets. On the first $1000$ euros of income the tax office takes one fifth, so $T(y)=\\dfrac{1}{5}y$ whenever $0\\le y\\le 1000$. Above $1000$ euros the taxpayer still owes the $200$ euros already due on the first bracket, and then two fifths of every euro beyond $1000$, which is written $T(y)=200+\\dfrac{2}{5}(y-1000)$ for $y>1000$. Which of the following hold?",
     statements: [
       "For $y<1000$, the marginal tax rate is $\\dfrac{1}{5}$.",
       "For $y>1000$, the marginal tax rate is $\\dfrac{2}{5}$.",
       "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
       "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
-      "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope.",
+      "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece, $T(y)=\\dfrac{1}{5}y$, so $T'(y)=\\dfrac{1}{5}$. The statement is True.`,
+On the first bracket the tax rule is $T(y)=\\dfrac{1}{5}y$. Differentiating that piece gives
+
+$$
+T'(y)=\\dfrac{1}{5}\\qquad\\text{for }y<1000.
+$$
+
+So the marginal tax rate below $1000$ is one fifth.
+
+The statement is True.`,
       `**B.** → True
 
-On the second piece, $T(y)=200+\\dfrac{2}{5}(y-1000)$, so $T'(y)=\\dfrac{2}{5}$. The statement is True.`,
+On the second bracket,
+
+$$
+T(y)=200+\\dfrac{2}{5}(y-1000),
+$$
+
+so
+
+$$
+T'(y)=\\dfrac{2}{5}\\qquad\\text{for }y>1000.
+$$
+
+Above $1000$, each extra euro is taxed at two fifths.
+
+The statement is True.`,
       `**C.** → False
 
-At $y=1500$,
+At $y=1500$ the taxpayer is in the second bracket, so
+
 $$
-T(1500)=200+\\dfrac{2}{5}\\cdot 500=200+200=400,
+T(1500)=200+\\dfrac{2}{5}\\cdot 500=200+200=400.
 $$
-so the average rate is
+
+The average tax rate is the quotient of total tax over income:
+
 $$
-\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15},
+\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}.
 $$
-which is not $\\dfrac{2}{5}$. The statement is False.`,
+
+That is not equal to the second-bracket slope $\\dfrac{2}{5}=\\dfrac{6}{15}$. Average and marginal rates differ because the first $1000$ euros were taxed more lightly.
+
+The statement is False.`,
       `**D.** → True
 
-The extra euro is taxed at the marginal rate $T'(1500)=\\dfrac{2}{5}=0.4$. The statement is True.`,
+At $y=1500$ the relevant rate for a small extra euro is the second-bracket derivative
+
+$$
+T'(1500)=\\dfrac{2}{5}=0.4.
+$$
+
+About $40$ cents of that extra euro is taxed away.
+
+The statement is True.`,
       `**E.** → False
 
-The average $\\dfrac{4}{15}$ mixes both brackets. Many second-bracket slopes could produce that same average. The statement is False.`,
+The average $\\dfrac{4}{15}$ mixes both brackets. Many different second-bracket slopes could be combined with the first bracket to produce that same average at $y=1500$. Knowing only the average does not recover $T'(1500)$.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 68,
     solution_overview:
-      "Read a piecewise tax on each side of the bracket, and keep the average rate $\\dfrac{T(y)}{y}$ distinct from $T'(y)$.",
+      "Read the piecewise tax on each side of the bracket, compute the average $\\dfrac{T(y)}{y}$ carefully, and keep it distinct from $T'(y)$.",
   },
   {
     id: "math-11-69",
@@ -4349,36 +4653,58 @@ The average $\\dfrac{4}{15}$ mixes both brackets. Many second-bracket slopes cou
     title: "Falling average cost plus a reported R'",
     subsection: "11.2",
     context:
-      "A mill reports average cost $A(Q)=\\dfrac{C(Q)}{Q}=12$ and says that average cost is currently falling. It also reports $R'(Q)=10$. Total cost itself is not shown. Decide TRUE or FALSE for each claim.",
+      "A flour mill reports that its current average cost is $A(Q)=\\dfrac{C(Q)}{Q}=12$ euros per sack and that this average cost is currently falling as output rises. Separately, the sales desk reports marginal revenue $R'(Q)=10$. Total cost itself is not shown. Decide TRUE or FALSE for each claim.",
     statements: [
       "Falling average cost implies $C'(Q)<A(Q)$, hence $C'(Q)<12$.",
       "The reports already imply $C'(Q)<10$.",
       "The reports already imply $P'(Q)>0$.",
       "Marginal cost could still exceed marginal revenue even while average cost is falling.",
-      "Differentiating $A(Q)$ would produce marginal cost.",
+      "Differentiating $A(Q)$ would produce marginal cost."
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-For $A=\\dfrac{C}{Q}$, the sign of $A'$ is the sign of $C'-A$. Falling average cost means $A'<0$, hence $C'<A=12$. The statement is True.`,
+Write $A(Q)=\\dfrac{C(Q)}{Q}$. A standard quotient-rule fact is that the sign of $A'(Q)$ matches the sign of $C'(Q)-A(Q)$.
+
+Falling average cost means $A'(Q)<0$, hence
+
+$$
+C'(Q)<A(Q)=12.
+$$
+
+The statement is True.`,
       `**B.** → False
 
-$C'<12$ does not force $C'<10$. Marginal cost could be $11$, which is still below $12$ and still above $R'=10$. The statement is False.`,
+$C'(Q)<12$ does not force $C'(Q)<10$. For example, marginal cost could be $11$: that is still below average cost $12$ (so average cost keeps falling) and still above marginal revenue $10$.
+
+The statement is False.`,
       `**C.** → False
 
-Without knowing whether $C'$ is below or above $10$, the sign of $P'=10-C'$ is unsettled. The statement is False.`,
+Profit moves with $P'(Q)=R'(Q)-C'(Q)=10-C'(Q)$. Without knowing whether $C'(Q)$ lies below or above $10$, the sign of $P'(Q)$ is unsettled. Falling average cost alone does not imply $P'(Q)>0$.
+
+The statement is False.`,
       `**D.** → True
 
-The example $C'=11$ makes $A$ fall (since $11<12$) while $R'=10<11$, so $P'<0$. The statement is True.`,
+Take the concrete possibility $C'(Q)=11$. Then $C'(Q)<A(Q)=12$, so average cost is falling, while
+
+$$
+R'(Q)=10<11=C'(Q),
+$$
+
+so $P'(Q)<0$. Marginal cost can exceed marginal revenue even while average cost falls.
+
+The statement is True.`,
       `**E.** → False
 
-$A'$ is the rate of change of average cost, not $C'$. The statement is False.`,
+Differentiating average cost produces $A'(Q)$, the rate of change of the average. Marginal cost is $C'(Q)$, the derivative of total cost. Those are different objects.
+
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 69,
     solution_overview:
-      "From $A'<0$ infer only $C'<A$, which is not enough to sign $P'=R'-C'$.",
+      "From $A'(Q)<0$ infer only $C'(Q)<A(Q)$, which is not enough to sign $P'(Q)=R'(Q)-C'(Q)$.",
   },
   {
     id: "math-11-70",
@@ -4386,36 +4712,76 @@ $A'$ is the rate of change of average cost, not $C'$. The statement is False.`,
     title: "North posts formulas, South posts only P'",
     subsection: "11.2",
     context:
-      "Firm North has $R_N(Q)=30Q$ and $C_N(Q)=18Q+40$. Firm South posts only $P_S'(Q)=20-Q$ and does not post $R_S$ or $C_S$. Both currently produce $Q=15$. Judge every assertion below.",
+      "Two rival snack firms both currently sell $Q=15$ packs a day, but they report information differently. Firm North posts full formulas: revenue $R_N(Q)=30Q$ and cost $C_N(Q)=18Q+40$. Firm South refuses to show revenue or cost and posts only its marginal profit schedule $P_S'(Q)=20-Q$. Judge every assertion below.",
     statements: [
       "North's marginal profit is $P_N'(Q)=12$ at every $Q$.",
       "At $Q=15$, South's profit is still locally increasing.",
       "At $Q=25$, South's profit is locally decreasing.",
-      "Because South's $P_S'$ depends on $Q$ while North's does not, South must currently earn less total profit.",
-      "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'-C_N'$, not the intercept $40$.",
+      "Because South's $P_S'(Q)$ depends on $Q$ while North's does not, South must currently earn less total profit.",
+      "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'(Q)-C_N'(Q)$, not the intercept $40$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$R_N'(Q)=30$ and $C_N'(Q)=18$, so $P_N'(Q)=12$ for all $Q$. The statement is True.`,
+Differentiate North's formulas:
+
+$$
+R_N'(Q)=30,\\qquad C_N'(Q)=18.
+$$
+
+Therefore
+
+$$
+P_N'(Q)=30-18=12
+$$
+
+at every output, including the current $Q=15$.
+
+The statement is True.`,
       `**B.** → True
 
-$P_S'(15)=20-15=5>0$. The statement is True.`,
+South posted $P_S'(Q)=20-Q$. At the current output,
+
+$$
+P_S'(15)=20-15=5>0.
+$$
+
+A positive derivative means South's profit is still locally increasing at $Q=15$.
+
+The statement is True.`,
       `**C.** → True
 
-$P_S'(25)=20-25=-5<0$. The statement is True.`,
+At the larger output $Q=25$,
+
+$$
+P_S'(25)=20-25=-5<0.
+$$
+
+South's profit is then locally decreasing.
+
+The statement is True.`,
       `**D.** → False
 
-Nothing about the slope $P_S'(Q)$ identifies the height $P_S(15)$ relative to $P_N(15)$. The statement is False.`,
+$P_S'(Q)$ is only a slope schedule. It does not identify the height $P_S(15)$ of South's current profit, nor does it compare that height with North's $P_N(15)$.
+
+A firm whose marginal profit depends on $Q$ can still be earning more, or less, total profit than a firm with constant marginal profit.
+
+The statement is False.`,
       `**E.** → True
 
-The constant $40$ vanishes upon differentiation. Only the slopes $30$ and $18$ enter $P_N'$. The statement is True.`,
+North's cost has a fixed overhead of $40$ euros, but constants vanish upon differentiation. The extra-profit figure $12$ comes only from the slopes $30$ and $18$:
+
+$$
+P_N'(Q)=R_N'(Q)-C_N'(Q)=30-18=12.
+$$
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 70,
     solution_overview:
-      "One firm supplies $R$ and $C$; the other supplies only $P'$. Compare expansion advice without confusing rates with levels.",
+      "One firm supplies $R$ and $C$; the other supplies only $P'(Q)$. Compare expansion advice without confusing rates with levels.",
   },
   {
     id: "math-11-71",
@@ -4423,40 +4789,76 @@ The constant $40$ vanishes upon differentiation. Only the slopes $30$ and $18$ e
     title: "Leisure utility that flattens after eight hours",
     subsection: "11.2",
     context:
-      "Utility from $x$ hours of leisure is $U(x)=10x-\\dfrac{1}{2}x^{2}$ if $0\\le x\\le 8$, and $U(x)=48$ if $x>8$. Decide TRUE or FALSE for each claim.",
+      "A student measures satisfaction from leisure hours by a utility function that rises at a decreasing rate up to eight hours and then flattens: $U(x)=10x-\\dfrac{1}{2}x^{2}$ while $0\\le x\\le 8$, and $U(x)=48$ once $x>8$ (further leisure adds no more satisfaction). Decide TRUE or FALSE for each claim.",
     statements: [
       "For $x<8$, marginal utility is $U'(x)=10-x$.",
       "At $x=6$, a little extra leisure still raises satisfaction.",
       "For $x>8$, marginal utility is $0$.",
       "Because $U(8)=48$, the eighth hour must have added $48$ units of utility.",
-      "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$.",
+      "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece, $U'(x)=10-x$. The statement is True.`,
+On the first piece, differentiate term by term:
+
+$$
+U'(x)=10-x\\qquad\\text{for }x<8.
+$$
+
+That is the marginal utility before satiation.
+
+The statement is True.`,
       `**B.** → True
 
-$U'(6)=4>0$. The statement is True.`,
+At $x=6$ one is still on the rising piece:
+
+$$
+U'(6)=10-6=4>0.
+$$
+
+A little extra leisure still raises satisfaction.
+
+The statement is True.`,
       `**C.** → True
 
-On the second piece $U$ is the constant $48$, so $U'(x)=0$ for $x>8$. The statement is True.`,
+For $x>8$ the utility rule is the constant $U(x)=48$. The derivative of a constant is zero, so
+
+$$
+U'(x)=0\\qquad\\text{for }x>8.
+$$
+
+After eight hours, extra leisure adds no satisfaction.
+
+The statement is True.`,
       `**D.** → False
 
-$U(8)=48$ is the stock of utility after eight hours, not the derivative at $x=8$. The eighth hour's extra is the first-piece derivative $U'(8^{-})=10-8=2$, not $48$. The statement is False.`,
+$U(8)=48$ is the stock of utility after eight hours, not the contribution of the eighth hour alone.
+
+Approaching $x=8$ from the left, the eighth hour's extra is the first-piece derivative
+
+$$
+U'(8^{-})=10-8=2,
+$$
+
+not $48$. Confusing the level with the derivative is the error.
+
+The statement is False.`,
       `**E.** → True
 
-For $x=12>8$, $U(12)=48$, so
+At $x=12>8$ one is on the flat piece, so $U(12)=48$. Average utility is the quotient
+
 $$
 \\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.
 $$
-The statement is True.`,
+
+The statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 71,
     solution_overview:
-      "Differentiate a piecewise utility, interpret satiation as a zero derivative, and compute average utility as a fraction.",
+      "Differentiate the piecewise utility, read satiation as a zero derivative, and compute average utility as the fraction $\\dfrac{U(x)}{x}$.",
   },
   {
     id: "math-11-72",
@@ -4464,36 +4866,58 @@ The statement is True.`,
     title: "Revenue slope and profit slope, cost missing",
     subsection: "11.2",
     context:
-      "A printer reports $R'(Q)=16$ and $P'(Q)=-3$ at the current run length, but not $C(Q)$. A second printer, at a different run length, reports $R'(Q)=16$ and $C'(Q)=16$. Which of the following hold?",
+      "Two print shops both currently face the same extra-revenue figure $R'(Q)=16$ euros per job, but they report different companions. The first shop also reports marginal profit $P'(Q)=-3$ and does not report cost. The second shop, at a different run length, reports marginal cost $C'(Q)=16$ instead of profit. Which of the following hold?",
     statements: [
       "The first printer's implied marginal cost is $C'(Q)=19$.",
       "The first printer should print a little more.",
       "The second printer's marginal profit is $0$.",
       "Both printers have the same extra-revenue figure, so they have the same extra-profit figure.",
-      "The first printer's current total profit $P(Q)$ must equal $-3$.",
+      "The first printer's current total profit $P(Q)$ must equal $-3$."
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-$P'=R'-C'$ gives $-3=16-C'$, hence $C'=19$. The statement is True.`,
+For the first printer, $P'(Q)=R'(Q)-C'(Q)$ rearranges to
+
+$$
+-3=16-C'(Q)\\qquad\\Rightarrow\\qquad C'(Q)=19.
+$$
+
+The missing marginal cost is therefore $19$.
+
+The statement is True.`,
       `**B.** → False
 
-$P'=-3<0$, so a little more output lowers profit. The statement is False.`,
+The first printer posted $P'(Q)=-3<0$. A negative marginal profit means that printing a little more lowers profit, so the shop should not expand.
+
+The statement is False.`,
       `**C.** → True
 
-$P'=16-16=0$. The statement is True.`,
+For the second printer,
+
+$$
+P'(Q)=R'(Q)-C'(Q)=16-16=0.
+$$
+
+Marginal profit is zero at that run length.
+
+The statement is True.`,
       `**D.** → False
 
-Same $R'$ with different $C'$ yields different $P'$: here $-3$ versus $0$. The statement is False.`,
+Same $R'(Q)=16$ with different cost sides yields different profit sides: $-3$ at the first shop versus $0$ at the second. Equal extra revenue does not force equal extra profit.
+
+The statement is False.`,
       `**E.** → False
 
-$-3$ is the slope, not the height of profit. The statement is False.`,
+The number $-3$ is the slope $P'(Q)$, not the height of profit. The current total $P(Q)$ was never reported and need not equal $-3$.
+
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 72,
     solution_overview:
-      "Recover $C'$ from $R'$ and $P'$ for one firm, then contrast a second firm with the same $R'$ but $P'=0$.",
+      "Recover $C'(Q)$ from $R'(Q)$ and $P'(Q)$ for one firm, then contrast a second firm with the same $R'(Q)$ but $P'(Q)=0$.",
   },
   {
     id: "math-11-73",
@@ -4501,36 +4925,64 @@ $-3$ is the slope, not the height of profit. The statement is False.`,
     title: "The same firm before and after a per-unit tax",
     subsection: "11.2",
     context:
-      "Before a tax, a firm has $R'(Q)=14$ and $C'(Q)=10$. A per-unit tax of $5$ euros is then added to cost, so the new cost is $\\widetilde{C}(Q)=C(Q)+5Q$, while revenue is unchanged. Decide TRUE or FALSE for each claim.",
+      "Before any tax, a firm faces marginal revenue $R'(Q)=14$ and marginal cost $C'(Q)=10$ at its current output. The government then adds a per-unit tax of $5$ euros, so the new total cost becomes $\\widetilde{C}(Q)=C(Q)+5Q$ while the revenue schedule is left unchanged. Decide TRUE or FALSE for each claim.",
     statements: [
       "Before the tax, a small expansion raises profit.",
       "After the tax, the relevant marginal cost is $15$.",
       "After the tax, a small expansion raises profit.",
       "The tax changes which function must be differentiated for the extra-cost side: the new cost $\\widetilde{C}$, not the old $C$.",
-      "Because revenue is unchanged, marginal revenue is still $14$ after the tax.",
+      "Because revenue is unchanged, marginal revenue is still $14$ after the tax."
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Before: $P'=14-10=4>0$. The statement is True.`,
+Before the tax,
+
+$$
+P'(Q)=R'(Q)-C'(Q)=14-10=4>0.
+$$
+
+A small expansion raises pre-tax profit.
+
+The statement is True.`,
       `**B.** → True
 
-$\\widetilde{C}'(Q)=C'(Q)+5=15$. The statement is True.`,
+After the tax the cost function is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
+
+$$
+\\widetilde{C}'(Q)=C'(Q)+5=10+5=15.
+$$
+
+The relevant marginal cost is therefore $15$.
+
+The statement is True.`,
       `**C.** → False
 
-After: $P'=14-15=-1<0$. A small expansion now lowers profit. The statement is False.`,
+After the tax, compare the unchanged $R'(Q)=14$ with the new marginal cost $15$:
+
+$$
+P'(Q)=14-15=-1<0.
+$$
+
+A small expansion now lowers profit; it does not raise it.
+
+The statement is False.`,
       `**D.** → True
 
-Extra cost after the tax is the derivative of $\\widetilde{C}$, not of the pre-tax $C$. The statement is True.`,
+The economic question after the tax is about extra cost including the tax. That is the derivative of the new cost $\\widetilde{C}$, not of the old pre-tax $C$. Using the old $C'(Q)=10$ would ignore the $5$ euro tax on each extra unit.
+
+The statement is True.`,
       `**E.** → True
 
-Revenue was not rewritten, so $R'$ is still $14$. The statement is True.`,
+The story leaves the revenue schedule unchanged, so its derivative is still $R'(Q)=14$ after the tax. Only the cost side shifted.
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 73,
     solution_overview:
-      "Keep $R'$ fixed and shift only the cost function by a per-unit tax, then re-run the expansion test.",
+      "Keep $R'(Q)$ fixed and shift only the cost function by a per-unit tax, then re-run the expansion test with $\\widetilde{C}'(Q)$.",
   },
   {
     id: "math-11-74",
@@ -4538,36 +4990,80 @@ Revenue was not rewritten, so $R'$ is still $14$. The statement is True.`,
     title: "Price follows one rule, then another",
     subsection: "11.2",
     context:
-      "Inverse demand is $p(Q)=40-Q$ if $0<Q\\le 30$, and $p(Q)=10$ if $Q>30$. Revenue is $R(Q)=Q\\cdot p(Q)$. Cost has $C'(Q)=12$ everywhere. Judge every assertion below.",
+      "A street vendor faces a two-piece inverse demand. While sales stay at most $30$ units, buyers require the price $p(Q)=40-Q$. Once sales exceed $30$, further units can only be sold at a flat clearance price $p(Q)=10$. Revenue is always $R(Q)=Q\\cdot p(Q)$, and packing cost rises at a constant $C'(Q)=12$ euros per unit. Judge every assertion below.",
     statements: [
       "For $Q<30$, $R(Q)=40Q-Q^{2}$ and $R'(Q)=40-2Q$.",
       "For $Q>30$, $R(Q)=10Q$ and $R'(Q)=10$.",
       "At $Q=12$, a small expansion raises profit.",
       "At $Q=35$, a small expansion raises profit.",
-      "At $Q=12$, extra revenue equals the posted price $p(12)=28$.",
+      "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece, $R(Q)=Q(40-Q)=40Q-Q^{2}$, so $R'(Q)=40-2Q$. The statement is True.`,
+On the first piece, price is $p(Q)=40-Q$, so
+
+$$
+R(Q)=Q\\cdot(40-Q)=40Q-Q^{2}.
+$$
+
+Differentiating gives
+
+$$
+R'(Q)=40-2Q\\qquad\\text{for }Q<30.
+$$
+
+The statement is True.`,
       `**B.** → True
 
-On the second piece the price is the constant $10$, so $R(Q)=10Q$ and $R'(Q)=10$. The statement is True.`,
+On the clearance piece the price is the constant $10$, so
+
+$$
+R(Q)=10Q\\qquad\\text{and}\\qquad R'(Q)=10\\qquad\\text{for }Q>30.
+$$
+
+The statement is True.`,
       `**C.** → True
 
-$R'(12)=40-24=16>12=C'$, hence $P'(12)>0$. The statement is True.`,
+At $Q=12$ one is on the first piece:
+
+$$
+R'(12)=40-2\\cdot 12=16.
+$$
+
+Compare with cost:
+
+$$
+P'(12)=16-12=4>0.
+$$
+
+A small expansion raises profit at $Q=12$.
+
+The statement is True.`,
       `**D.** → False
 
-$R'(35)=10<12=C'$, hence $P'(35)<0$. The statement is False.`,
+At $Q=35$ one is on the clearance piece, so $R'(35)=10$. Then
+
+$$
+P'(35)=10-12=-2<0.
+$$
+
+A small expansion lowers profit at $Q=35$.
+
+The statement is False.`,
       `**E.** → False
 
-$p(12)=28$, but $R'(12)=16$. The extra unit also forces a price cut on previous units, so $R'\\neq p$. The statement is False.`,
+At $Q=12$ the posted price is $p(12)=40-12=28$, but marginal revenue is $R'(12)=16$.
+
+The gap appears because selling one more unit also forces a price cut on previous units: the product rule gives $R'(Q)=p(Q)+Q\\cdot p'(Q)$ with $p'(Q)=-1<0$. Extra revenue is not the posted price.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 74,
     solution_overview:
-      "Build $R$ from a piecewise $p(Q)$, differentiate each piece, and only then compare with $C'$.",
+      "Build $R(Q)$ from the piecewise price schedule, differentiate each piece, and only then compare with $C'(Q)$.",
   },
   {
     id: "math-11-75",
@@ -4575,36 +5071,70 @@ $p(12)=28$, but $R'(12)=16$. The extra unit also forces a price cut on previous 
     title: "Cheaper on average is not cheaper at the margin",
     subsection: "11.2",
     context:
-      "Firm A has average cost $A_A=8$ and marginal cost $C_A'=5$. Firm B has average cost $A_B=6$ and marginal cost $C_B'=9$. Both can sell an extra unit at the same $R'=7$. Decide TRUE or FALSE for each claim.",
+      "Two courier firms can both take one more delivery at the same extra revenue $R'=7$ euros. Firm A currently has average cost $A_A=8$ and marginal cost $C_A'=5$. Firm B currently has average cost $A_B=6$ and marginal cost $C_B'=9$. Decide TRUE or FALSE for each claim.",
     statements: [
       "Firm A's average cost is currently falling.",
       "Firm B's average cost is currently rising.",
       "Firm B is cheaper per unit on average, so B should produce the extra unit and A should not.",
       "Only firm A has $R'>C'$ here.",
-      "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B.",
+      "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B."
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$C_A'=5<8=A_A$, so $A_A'<0$. The statement is True.`,
+Average cost falls when marginal cost lies below average cost. For firm A,
+
+$$
+C_A'=5<8=A_A,
+$$
+
+so $A_A'(Q)<0$: A's average cost is currently falling.
+
+The statement is True.`,
       `**B.** → True
 
-$C_B'=9>6=A_B$, so $A_B'>0$. The statement is True.`,
+For firm B,
+
+$$
+C_B'=9>6=A_B,
+$$
+
+so $A_B'(Q)>0$: B's average cost is currently rising.
+
+The statement is True.`,
       `**C.** → False
 
-The extra-unit test is $R'$ versus $C'$, not a comparison of averages. Here $7>5$ at A but $7<9$ at B, so A should produce the extra unit. The statement is False.`,
+The extra-unit test compares $R'(Q)$ with $C'(Q)$, not the two averages. Here
+
+$$
+7>5\\qquad\\text{at A, but}\\qquad 7<9\\qquad\\text{at B}.
+$$
+
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison.
+
+The statement is False.`,
       `**D.** → True
 
-$7>5$ and $7<9$. The statement is True.`,
+$R'=7$ exceeds $C_A'=5$ and falls short of $C_B'=9$. Only firm A satisfies $R'>C'$.
+
+The statement is True.`,
       `**E.** → True
 
-$P_A'=7-5=2$ and $P_B'=7-9=-2$. The statement is True.`,
+The extra-profit figures are
+
+$$
+P_A'=7-5=2,\\qquad P_B'=7-9=-2.
+$$
+
+So the extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B.
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 75,
     solution_overview:
-      "Use $C'$ versus $A$ to read whether average cost is falling, but use $R'$ versus $C'$ for the extra-unit test.",
+      "Use $C'(Q)$ versus $A$ to read whether average cost is falling, but use $R'(Q)$ versus $C'(Q)$ for the extra-unit test.",
   },
   {
     id: "math-11-76",
@@ -4612,36 +5142,46 @@ $P_A'=7-5=2$ and $P_B'=7-9=-2$. The statement is True.`,
     title: "Zero profit versus zero extra profit",
     subsection: "11.2",
     context:
-      "Studio A currently has $P_A(Q)=50$ and $P_A'(Q)=0$. Studio B currently has $P_B(Q)=0$ and $P_B'(Q)=4$. Judge every assertion below.",
+      "Two recording studios report very different profit situations today. Studio A is already earning a solid total profit $P_A(Q)=50$ euros, but its profit has stopped rising: $P_A'(Q)=0$. Studio B is currently just breaking even with $P_B(Q)=0$, yet each extra unit would still add about $P_B'(Q)=4$ euros of profit. Judge every assertion below.",
     statements: [
       "Studio A is earning a positive profit stock, but a tiny output change leaves that profit locally unchanged.",
       "Studio B is currently breaking even, yet a small expansion would start to create profit.",
       "Studio A's $P_A'(Q)=0$ means A earns nothing.",
-      "Studio B should expand a little; studio A's first-order condition is already $R_A'=C_A'$.",
-      "Because B's current profit is $0$, B cannot have a positive marginal profit.",
+      "Studio B should expand a little; studio A's first-order condition is already $R_A'(Q)=C_A'(Q)$.",
+      "Because B's current profit is $0$, B cannot have a positive marginal profit."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-$P_A=50>0$ while $P_A'=0$. The statement is True.`,
+Studio A reports $P_A(Q)=50>0$ and $P_A'(Q)=0$. The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero.
+
+The statement is True.`,
       `**B.** → True
 
-$P_B=0$ while $P_B'=4>0$, so a small expansion raises profit above zero. The statement is True.`,
+Studio B reports $P_B(Q)=0$ together with $P_B'(Q)=4>0$. Breaking even today is compatible with an upward slope: a small expansion would push profit above zero.
+
+The statement is True.`,
       `**C.** → False
 
-Zero slope is not a zero height. A already earns $50$. The statement is False.`,
+Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$. The report $P_A'(Q)=0$ only says that profit is stationary at that output.
+
+The statement is False.`,
       `**D.** → True
 
-$P_B'>0$ is an expansion signal. $P_A'=0$ is $R_A'=C_A'$. The statement is True.`,
+$P_B'(Q)=4>0$ is an expansion signal for B. For A, $P_A'(Q)=0$ rearranges to $R_A'(Q)=C_A'(Q)$, the usual first-order condition.
+
+The statement is True.`,
       `**E.** → False
 
-A zero height can sit on an upward slope. That is exactly B. The statement is False.`,
+A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B'(Q)=4>0$. Current break-even does not forbid a positive marginal profit.
+
+The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 76,
     solution_overview:
-      "Put a profitable stationary firm next to a break-even firm with $P'>0$, and keep height distinct from slope.",
+      "Put a profitable stationary firm next to a break-even firm with $P'(Q)>0$, and keep the height of profit distinct from its slope.",
   },
   {
     id: "math-11-77",
@@ -4649,36 +5189,66 @@ A zero height can sit on an upward slope. That is exactly B. The statement is Fa
     title: "Weekday cost versus weekend cost",
     subsection: "11.2",
     context:
-      "The same café faces $C_{\\mathrm{wd}}(Q)=12Q$ on weekdays and $C_{\\mathrm{we}}(Q)=20Q$ on weekends. Marginal revenue is $R'(Q)=15$ on both kinds of day. Which of the following hold?",
+      "The same café serves the same menu all week, but staffing costs change with the day. On weekdays cost is the linear rule $C_{\\mathrm{wd}}(Q)=12Q$; on weekends overtime staffing makes cost $C_{\\mathrm{we}}(Q)=20Q$. Customer demand is steady enough that marginal revenue is $R'(Q)=15$ on both kinds of day. Which of the following hold?",
     statements: [
       "On a weekday, $C_{\\mathrm{wd}}'(Q)=12$.",
       "On a weekend, $C_{\\mathrm{we}}'(Q)=20$.",
       "A small extra sale raises profit on a weekday.",
       "A small extra sale raises profit on a weekend.",
-      "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'$.",
+      "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-$C_{\\mathrm{wd}}'(Q)=12$. The statement is True.`,
+Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives
+
+$$
+C_{\\mathrm{wd}}'(Q)=12.
+$$
+
+The statement is True.`,
       `**B.** → True
 
-$C_{\\mathrm{we}}'(Q)=20$. The statement is True.`,
+Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so
+
+$$
+C_{\\mathrm{we}}'(Q)=20.
+$$
+
+The statement is True.`,
       `**C.** → True
 
-$15>12$, so weekday $P'>0$. The statement is True.`,
+On a weekday,
+
+$$
+P'(Q)=R'(Q)-C_{\\mathrm{wd}}'(Q)=15-12=3>0.
+$$
+
+A small extra sale raises weekday profit.
+
+The statement is True.`,
       `**D.** → False
 
-$15<20$, so weekend $P'<0$. The statement is False.`,
+On a weekend,
+
+$$
+P'(Q)=15-20=-5<0.
+$$
+
+A small extra sale lowers weekend profit; it does not raise it.
+
+The statement is False.`,
       `**E.** → True
 
-$R'$ is the same number both days; what changes is which cost schedule supplies $C'$. The statement is True.`,
+$R'(Q)=15$ is the same number both days. What changes is which cost schedule supplies $C'(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change.
+
+The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
     solution_overview:
-      "Treat weekday and weekend as two cost regimes, then run the same $R'$ versus $C'$ test in each regime.",
+      "Treat weekday and weekend as two cost regimes, then run the same $R'(Q)$ versus $C'(Q)$ test in each regime.",
   },
   {
     id: "math-11-78",
@@ -4686,36 +5256,64 @@ $R'$ is the same number both days; what changes is which cost schedule supplies 
     title: "Extra revenue smaller than extra cost: two shops",
     subsection: "11.2",
     context:
-      "A reviewer writes: \"At Shop L, the extra euros from a little more output are smaller than the extra euros of cost.\" Shop L has $R_L'(Q)=9$ and $P_L'(Q)=-4$. Shop M has $R_M'(Q)=9$ and $C_M'(Q)=6$. Decide TRUE or FALSE for each claim.",
+      "A reviewer writes of Shop L: \"At Shop L, the extra euros from a little more output are smaller than the extra euros of cost.\" Shop L also posts $R_L'(Q)=9$ and $P_L'(Q)=-4$. Across the street, Shop M faces the same extra-revenue figure $R_M'(Q)=9$ but reports marginal cost $C_M'(Q)=6$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The reviewer's sentence about Shop L already means $R_L'<C_L'$.",
+      "The reviewer's sentence about Shop L already means $R_L'(Q)<C_L'(Q)$.",
       "Shop L's implied marginal cost is $C_L'(Q)=13$.",
       "Shop M does not satisfy the reviewer's sentence.",
       "A small expansion raises profit at Shop M and lowers profit at Shop L.",
-      "Because both shops have the same $R'$, they have the same extra-cost figure.",
+      "Because both shops have the same $R'(Q)$, they have the same extra-cost figure."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-\\"Extra revenue smaller than extra cost\\" is $R'<C'$. The statement is True.`,
+"Extra revenue smaller than extra cost" is precisely the inequality of derivatives
+
+$$
+R_L'(Q)<C_L'(Q).
+$$
+
+The reviewer's sentence is already that comparison.
+
+The statement is True.`,
       `**B.** → True
 
-$P_L'=R_L'-C_L'$ gives $-4=9-C_L'$, so $C_L'=13$. The statement is True.`,
+From $P_L'(Q)=R_L'(Q)-C_L'(Q)$ and the posted numbers,
+
+$$
+-4=9-C_L'(Q)\\qquad\\Rightarrow\\qquad C_L'(Q)=13.
+$$
+
+Shop L's implied marginal cost is $13$.
+
+The statement is True.`,
       `**C.** → True
 
-At M, $R_M'=9>6=C_M'$, so extra revenue is larger than extra cost. The statement is True.`,
+At Shop M, $R_M'(Q)=9>6=C_M'(Q)$, so extra revenue is larger than extra cost. That is the opposite of the reviewer's sentence.
+
+The statement is True.`,
       `**D.** → True
 
-$P_M'=9-6=3>0$ while $P_L'=-4<0$. The statement is True.`,
+Shop M has
+
+$$
+P_M'(Q)=9-6=3>0,
+$$
+
+while Shop L has $P_L'(Q)=-4<0$. A small expansion raises profit at M and lowers it at L.
+
+The statement is True.`,
       `**E.** → False
 
-Same $R'$ with different $C'$: $13$ at L versus $6$ at M. The statement is False.`,
+Both shops share $R'(Q)=9$, but their cost slopes differ: $C_L'(Q)=13$ versus $C_M'(Q)=6$. Same extra revenue does not force the same extra cost.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 78,
     solution_overview:
-      "Translate a verbal $R'<C'$ claim, recover the missing $C'$ at one shop, and contrast a second shop with the same $R'$.",
+      "Translate a verbal $R'<C'$ claim, recover the missing $C'(Q)$ at one shop, and contrast a second shop with the same $R'(Q)$.",
   },
   {
     id: "math-11-79",
@@ -4723,40 +5321,74 @@ Same $R'$ with different $C'$: $13$ at L versus $6$ at M. The statement is False
     title: "Profit itself is piecewise at capacity",
     subsection: "11.2",
     context:
-      "Profit is $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$ if $0\\le Q\\le 30$, and $P(Q)=150-4(Q-30)$ if $Q>30$. Judge every assertion below.",
+      "A maker of custom lamps can run its workshop smoothly up to capacity $Q=30$. In that range weekly profit is $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$. Beyond capacity every extra lamp requires rushed outsourcing that eats profit: the firm still has the $150$ euros earned at capacity, and then loses $4$ euros on each unit above $30$, written $P(Q)=150-4(Q-30)$ for $Q>30$. Judge every assertion below.",
     statements: [
       "For $Q<30$, $P'(Q)=8-\\dfrac{1}{5}Q$.",
       "At $Q=20$, a small expansion raises profit.",
       "For $Q>30$, $P'(Q)=-4$.",
       "Just above $Q=30$, a small expansion raises profit.",
-      "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit.",
+      "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit."
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-On the first piece,
+On the pre-capacity piece,
+
 $$
-P'(Q)=8-\\dfrac{2}{10}Q=8-\\dfrac{1}{5}Q.
+P(Q)=8Q-\\dfrac{1}{10}Q^{2},
 $$
+
+so
+
+$$
+P'(Q)=8-\\dfrac{2}{10}Q=8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30.
+$$
+
 The statement is True.`,
       `**B.** → True
 
-$P'(20)=8-4=4>0$. The statement is True.`,
+At $Q=20$,
+
+$$
+P'(20)=8-\\dfrac{1}{5}\\cdot 20=8-4=4>0.
+$$
+
+A small expansion raises profit at $Q=20$.
+
+The statement is True.`,
       `**C.** → True
 
-On the second piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$. The statement is True.`,
+On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
+
+$$
+P'(Q)=-4\\qquad\\text{for }Q>30.
+$$
+
+The statement is True.`,
       `**D.** → False
 
-Just above $30$, $P'=-4<0$, so a small expansion lowers profit. The statement is False.`,
+Just above capacity the firm is on the outsourcing piece, where $P'(Q)=-4<0$. A small expansion lowers profit; it does not raise it.
+
+The statement is False.`,
       `**E.** → False
 
-$P(30)=150$ is the profit stock at $Q=30$. The extra from a tiny change near $30$ from the left is $P'(30^{-})=8-6=2$, not $150$. The statement is False.`,
+$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
+
+Approaching $Q=30$ from the left,
+
+$$
+P'(30^{-})=8-\\dfrac{1}{5}\\cdot 30=8-6=2,
+$$
+
+so the thirtieth unit adds about $2$ euros of profit, not $150$.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 79,
     solution_overview:
-      "Differentiate a piecewise profit function on each side of capacity and refuse to treat the level $P(30)$ as a derivative.",
+      "Differentiate the piecewise profit function on each side of capacity and refuse to treat the level $P(30)$ as a derivative.",
   },
   {
     id: "math-11-80",
@@ -4764,35 +5396,58 @@ $P(30)=150$ is the profit stock at $Q=30$. The extra from a tiny change near $30
     title: "Same output, same R', missing different pieces",
     subsection: "11.2",
     context:
-      "A café and a kiosk both sell $Q=40$ items and both report $R'(40)=3$. The café also reports $P'(40)=1$ but not $C'$. The kiosk also reports $C'(40)=5$ but not $P'$. Decide TRUE or FALSE for each claim.",
+      "A café and a nearby kiosk both sold $Q=40$ items today and both report the same extra-revenue figure $R'(40)=3$ euros. Their whiteboards are incomplete in different ways: the café also posts $P'(40)=1$ but hides cost, while the kiosk posts $C'(40)=5$ but hides profit. Decide TRUE or FALSE for each claim.",
     statements: [
       "The café's implied marginal cost is $C'(40)=2$.",
       "The kiosk's implied marginal profit is $P'(40)=-2$.",
       "A small extra item raises profit at the café and lowers profit at the kiosk.",
       "Because both have the same $R'(40)$ and the same $Q$, they must have the same $C'(40)$.",
-      "The café's report $P'(40)=1$ already equals its profit level $P(40)$.",
+      "The café's report $P'(40)=1$ already equals its profit level $P(40)$."
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
       `**A.** → True
 
-Café: $1=3-C'$, so $C'=2$. The statement is True.`,
+For the café, $P'(40)=R'(40)-C'(40)$ gives
+
+$$
+1=3-C'(40)\\qquad\\Rightarrow\\qquad C'(40)=2.
+$$
+
+The café's implied marginal cost is $2$.
+
+The statement is True.`,
       `**B.** → True
 
-Kiosk: $P'=3-5=-2$. The statement is True.`,
+For the kiosk,
+
+$$
+P'(40)=R'(40)-C'(40)=3-5=-2.
+$$
+
+The kiosk's implied marginal profit is $-2$.
+
+The statement is True.`,
       `**C.** → True
 
-Café $P'>0$, kiosk $P'<0$. The statement is True.`,
+The café has $P'(40)=1>0$, so a small extra item raises café profit. The kiosk has $P'(40)=-2<0$, so a small extra item lowers kiosk profit.
+
+The statement is True.`,
       `**D.** → False
 
-Same $R'$ and same $Q$ do not force the same cost slope. The recovered values are $2$ versus $5$. The statement is False.`,
+Same $R'(40)$ and same $Q$ do not force the same cost slope. The recovered values are already different: $C'(40)=2$ at the café versus $C'(40)=5$ at the kiosk.
+
+The statement is False.`,
       `**E.** → False
 
-$P'(40)=1$ is a rate. The height $P(40)$ is unreported. The statement is False.`,
+$P'(40)=1$ is a rate of change of profit. The height $P(40)$ of today's profit was never posted and need not equal $1$.
+
+The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 80,
     solution_overview:
-      "Two firms share $Q$ and $R'$ but reveal different missing pieces; recover $C'$ at one and $P'$ at the other.",
+      "Two firms share $Q$ and $R'(Q)$ but reveal different missing pieces; recover $C'(Q)$ at one and $P'(Q)$ at the other.",
   }
+
 ];
