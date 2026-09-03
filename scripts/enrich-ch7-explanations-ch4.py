@@ -4352,6 +4352,28 @@ def h_roots(m, mod):
     q, a2, a1, a0, h, k, d = q_bits(mod)
     rs = rational_roots(q) or []
     truth = len(rs) == 2 and sorted([c1, c2]) == rs
+    given = mod.get("given") or ""
+    if r"\left(x" in given and len(rs) == 2:
+        # A factored stem already displays its roots; no expansion is needed.
+        return truth, [
+            "A product is zero exactly when one of its factors is, so a rule handed "
+            "over in factored form shows its roots without any expanding.",
+            D(f"{name}(x)={given}=0"),
+            "Each bracket contributes one linear equation."
+            if a2 == 1
+            else "The constant factor in front can never vanish, which leaves one "
+            "linear equation per bracket.",
+            D(rf"x={F(rs[0])}\qquad x={F(rs[1])}"),
+            close(
+                truth,
+                f"The brackets vanish at ${F(rs[0])}$ and ${F(rs[1])}$, the pair named "
+                "in the claim"
+                if truth
+                else f"The brackets vanish at ${F(rs[0])}$ and ${F(rs[1])}$ while the "
+                f"claim names ${F(c1)}$ and ${F(c2)}$",
+            ),
+        ]
+
     parts = [
         "The roots are the inputs where the graph touches the $x$-axis, so set the "
         "rule equal to zero; the discriminant says first how many such inputs exist.",
