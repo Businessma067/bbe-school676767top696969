@@ -359,11 +359,20 @@ export function MathTasksPage({ tier }: Props) {
     void ch;
   };
 
-  /** Topic name: if any subtopics are open, close them; otherwise expand tasks. */
-  const onTopicNameClick = (ch: MathChapter, _hasTheory: boolean) => {
+  /**
+   * Topic name: if any subtopics are open, close them; otherwise open theory
+   * when available (same as binomial / Ch 13), or expand/collapse the task list.
+   * Opening theory does not mount the first task, so the click stays responsive.
+   */
+  const onTopicNameClick = (ch: MathChapter, hasTheory: boolean) => {
     if (ch.comingSoon) return;
     if (chapterHasOpenSubtopics(ch.num)) {
       closeChapterSubtopics(ch.num);
+      return;
+    }
+    if (hasTheory) {
+      setExpanded((e) => ({ ...e, [ch.num]: true }));
+      startTransition(() => setTheoryChapter(ch.num));
       return;
     }
     const isOpen = !!expanded[ch.num];
@@ -480,7 +489,7 @@ export function MathTasksPage({ tier }: Props) {
                               type="button"
                               onClick={() => onTopicNameClick(ch, true)}
                               className="flex min-w-0 flex-1 items-center gap-2 py-2.5 pr-2 text-left hover:bg-secondary/60"
-                              title="Expand chapter tasks"
+                              title="Open theory for this chapter"
                             >
                               <div className="flex min-w-0 flex-1 items-center gap-2">
                                 <span className="min-w-0 flex-1 truncate text-sm font-bold text-foreground">
