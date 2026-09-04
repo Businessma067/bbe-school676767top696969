@@ -68,7 +68,7 @@ The owner is comparing operating decisions, average-cost movements, and a nearby
             r"""Profit is $P=R-C=-0.5Q^{3}+6Q^{2}+30Q-200$, hence
 $$P^{\prime}(Q)=-1.5Q^{2}+12Q+30=-1.5(Q-10)(Q+2).$$
 The positive critical point is $Q=10$, and the derivative is already negative at $Q=15$.""",
-            r"""Average cost is $AC(Q)=C(Q)/Q=0.5Q^{2}-9Q+60+200/Q$. Therefore
+            r"""Average cost is $AC(Q)=\\dfrac{C(Q)}{Q}=0.5Q^{2}-9Q+60+\\dfrac{200}{Q}$. Therefore
 $$AC^{\prime}(Q)=Q-9-\dfrac{200}{Q^{2}}.$$
 The one-unit change is approximated by $AC^{\prime}(Q_{0})$.""",
             r"""On the left branch, $T^{\prime}(Q)=Q+4$, giving $T^{\prime}(11)=15$. On the right branch $T^{\prime}(Q)=12$, so $T^{\prime}(15)=12$ and $15>12$.""",
@@ -92,7 +92,7 @@ Management wants to distinguish a profit condition from a revenue condition and 
             r"Profit $R-C$ has a critical point at $Q=10$.",
             r"At $Q=8$, marginal revenue exceeds marginal cost.",
             r"Staffing hours rise more steeply at $Q=18$ than at $Q=24$.",
-            r"Average cost $C(Q)/Q$ is decreasing at $Q=5$.",
+            r"Average cost $\\dfrac{C(Q)}{Q}$ is decreasing at $Q=5$.",
             r"If a rival café matches this café's revenue at $Q=6$ but has strictly smaller marginal revenue on $6\le Q\le12$, then the rival's revenue at $Q=10$ must be larger than this café's revenue at $Q=10$.",
         ],
         [True, True, True, True, False],
@@ -104,7 +104,7 @@ Thus $Q=10$ is stationary.""",
 $$R^{\prime}(Q)=40-Q,\qquad C^{\prime}(Q)=Q^{2}-9Q+20.$$
 At $8$ they are $32$ and $12$, respectively.""",
             r"""The left staffing slope is $H^{\prime}(Q)=Q+2$, hence $H^{\prime}(18)=20$. The later branch has slope $H^{\prime}(24)=14$, so the first slope is larger.""",
-            r"""Dividing first gives $AC=\dfrac13Q^{2}-\dfrac92Q+20+80/Q$, so
+            r"""Dividing first gives $AC=\dfrac13Q^{2}-\dfrac92Q+20+\\dfrac{80}{Q}$, so
 $$AC^{\prime}(Q)=\dfrac23Q-\dfrac92-\dfrac{80}{Q^{2}}.$$
 At $Q=5$ this is $\dfrac{10}{3}-\dfrac92-\dfrac{80}{25}<0$.""",
             r"""A smaller marginal revenue over the interval means a smaller accumulated revenue gain:
@@ -123,14 +123,14 @@ Equal revenue at $6$ consequently implies lower rival revenue at $10$.""",
             r"At that revenue-maximising price, the price elasticity of demand equals $-1$.",
             r"At the revenue-maximising price, marginal revenue equals marginal cost, so profit is maximised there as well.",
             r"If price rises a little from $p=10$, revenue rises.",
-            r"Average cost $C(Q)/Q$ is increasing for every $Q>0$.",
+            r"Average cost $\\dfrac{C(Q)}{Q}$ is increasing for every $Q>0$.",
         ],
         [True, True, False, True, True],
         [
             r"""$R(p)=120p-4p^{2}$, so $R^{\prime}(p)=120-8p$. Its zero is $p=15$, and $R^{\prime\prime}(p)=-8<0$.""",
             r"""Point elasticity is
 $$\varepsilon(p)=\frac{D^{\prime}(p)p}{D(p)}=\frac{-4p}{120-4p}.$$
-At $p=15$, this is $-60/60=-1$.""",
+At $p=15$, this is $\\dfrac{-60}{60}=-1$.""",
             r"""At $p=15$, quantity is $60$ and revenue is at its maximum, so $MR=0$. But
 $$MC=C^{\prime}(60)=2+0.1(60)=8,$$
 which rules out a profit optimum there.""",
@@ -193,7 +193,7 @@ $$AC(x)=x+20+\frac{100}{x},\qquad AC^{\prime}(x)=1-\frac{100}{x^{2}}.$$
 The positive zero is $x=10$, and the derivative changes from negative to positive there.""",
             r"""On the first branch, $P=40x-\dfrac32x^{2}-100$. Thus
 $$P^{\prime}(x)=40-3x,$$
-whose zero is $x=40/3$.""",
+whose zero is $x=\\dfrac{40}{3}$.""",
             r"""Marginal revenue is $R^{\prime}(x)=60-x$. At $x=30$ this equals $30$, which is positive.""",
             r"""Both cost formulas give $1225$ at $x=25$, establishing continuity. Their one-sided slopes are nevertheless
 $$C^{\prime}_{-}(25)=70\ne45=C^{\prime}_{+}(25),$$
@@ -249,13 +249,13 @@ The equal initial revenues leave the rival strictly higher at $18$.""",
         [
             r"""Pre-tax profit is $P=38Q-\dfrac34Q^{2}-180$, so
 $$P^{\prime}(Q)=38-\frac32Q.$$
-The zero is $Q=76/3$, with negative second derivative $-3/2$.""",
+The zero is $Q=\\dfrac{76}{3}$, with negative second derivative $-\\dfrac{3}{2}$.""",
             r"""The levy changes profit to $P_t=34Q-\dfrac34Q^{2}-180$. Therefore
 $$P_t^{\prime}(Q)=34-\frac32Q=0$$
-at $Q=68/3$, not $22$.""",
-            r"""$AC(Q)=\dfrac14Q+12+180/Q$, giving
+at $Q=\\dfrac{68}{3}$, not $22$.""",
+            r"""$AC(Q)=\dfrac14Q+12+1\\dfrac{80}{Q}$, giving
 $$AC^{\prime}(Q)=\frac14-\frac{180}{Q^{2}}.$$
-At $20$, this is $1/4-180/400=-1/5<0$.""",
+At $20$, this is $\\dfrac{1}{4}-\\dfrac{180}{400}=-\\dfrac{1}{5}<0$.""",
             r"""Demand in price form is $Q(p)=100-2p$, and revenue is $100p-2p^{2}$. At its maximum $p=25$,
 $$\varepsilon=\frac{-2(25)}{100-2(25)}=-1.$$
 """,
@@ -285,7 +285,7 @@ It is zero at $\sqrt L=6$, hence $L=36$, and the derivative changes from positiv
             r"""The output ratio is
 $$\frac{Q(2L)}{Q(L)}=\frac{80\sqrt{2L}}{80\sqrt L}=\sqrt2.$$
 This is less than $2$, reflecting diminishing marginal product.""",
-            r"""Using $Q(L)=80L^{1/2}$,
+            r"""Using $Q(L)=80L^{\\frac{1}{2}}$,
 $$\varepsilon_L=\frac{LQ^{\prime}(L)}{Q(L)}=\frac12.$$
 The exponent is the constant output elasticity.""",
             r"""$Q^{\prime}(L)=40/\sqrt L$. At $L=36$,
@@ -324,9 +324,9 @@ The piecewise schedule meets without a gap.""",
             r"""The left derivative is $2q+10$, so it approaches $40$ at $15$. The right derivative is also $40$, hence
 $$H^{\prime}_{-}(15)=H^{\prime}_{+}(15)=40.$$
 There is no derivative jump.""",
-            r"""$AC(q)=\dfrac13q^{2}-5q+32+240/q$, so
+            r"""$AC(q)=\dfrac13q^{2}-5q+32+\\dfrac{240}{q}$, so
 $$AC^{\prime}(q)=\frac23q-5-\frac{240}{q^{2}}.$$
-At $10$, this equals $20/3-5-12/5<0$.""",
+At $10$, this equals $\\dfrac{20}{3}-5-\\dfrac{12}{5}<0$.""",
         ],
         r"""The factory's cubic cost creates a quadratic profit derivative whose positive maximum condition occurs at $12$. The packing formula is deliberately continuous and differentiable at its threshold. Average cost requires the fixed cost to be divided by output before taking a derivative."""
     ))
@@ -353,7 +353,7 @@ not at $20$.""",
             r"""At $Q=20$,
 $$MR=R^{\prime}(20)=120-80=40,\qquad MC=C^{\prime}(20)=20+20=40.$$
 The two marginal quantities agree.""",
-            r"""Demand is $Q(p)=60-p/2$. At $Q=20$, price is $80$, so
+            r"""Demand is $Q(p)=60-\\dfrac{p}{2}$. At $Q=20$, price is $80$, so
 $$\varepsilon=\frac{-1}{2}\frac{80}{20}=-2.$$
 """,
             r"""The commission makes profit $P_c=90Q-\dfrac52Q^{2}-600$. Thus
@@ -366,7 +366,7 @@ at $Q=18$.""",
     tasks.append(make_task(
         11,
         "Greenhouse: two inputs and labour value",
-        r"""A greenhouse produces $Q(L,K)=12L^{1/2}K^{1/4}$ baskets of herbs, sold for $10$ euros each. Capital is fixed at $K=16$, labour costs $30$ euros per hour, and fixed greenhouse overhead is $400$. The owner is testing claims about the production exponent, marginal product, and the profit-maximising labour quantity. Which of the following statements is/are correct?""",
+        r"""A greenhouse produces $Q(L,K)=12L^{\\frac{1}{2}}K^{\\frac{1}{4}}$ baskets of herbs, sold for $10$ euros each. Capital is fixed at $K=16$, labour costs $30$ euros per hour, and fixed greenhouse overhead is $400$. The owner is testing claims about the production exponent, marginal product, and the profit-maximising labour quantity. Which of the following statements is/are correct?""",
         [
             r"With capital fixed at $16$, profit is maximised at $L=16$ labour-hours.",
             r"Doubling labour while capital is fixed doubles output.",
@@ -380,9 +380,9 @@ at $Q=18$.""",
 $$\pi(L)=240\sqrt L-30L-400,\qquad \pi^{\prime}(L)=\frac{120}{\sqrt L}-30.$$
 The derivative is zero at $\sqrt L=4$, or $L=16$.""",
             r"""Holding capital fixed,
-$$\frac{Q(2L,16)}{Q(L,16)}=2^{1/2}=\sqrt2.$$
+$$\frac{Q(2L,16)}{Q(L,16)}=2^{\\frac{1}{2}}=\sqrt2.$$
 The labour exponent prevents a doubling of output.""",
-            r"""Differentiating with respect to labour gives $Q_L=6L^{-1/2}K^{1/4}$. Thus
+            r"""Differentiating with respect to labour gives $Q_L=6L^{-\\frac{1}{2}}K^{\\frac{1}{4}}$. Thus
 $$\frac{LQ_L}{Q}=\frac12,$$
 the exponent on $L$.""",
             r"""At $K=16$, $Q_L=12/\sqrt L$. At $L=16$,
@@ -445,13 +445,13 @@ $$R^{\prime}(p)=200-10p=0$$
 at $p=20$, with negative second derivative.""",
             r"""In output form, $p(Q)=40-0.2Q$, so
 $$P(Q)=35Q-0.3Q^{2}-300,\qquad P^{\prime}(Q)=35-0.6Q.$$
-The stationary output is $Q=175/3$, not $100$.""",
+The stationary output is $Q=\\dfrac{175}{3}$, not $100$.""",
             r"""At $p=20$, quantity is $100$. The elasticity is
 $$\varepsilon=\frac{-5(20)}{200-5(20)}=-1.$$
 """,
-            r"""$AC=5+0.1Q+300/Q$, so
+            r"""$AC=5+0.1Q+\\dfrac{300}{Q}$, so
 $$AC^{\prime}(Q)=0.1-\frac{300}{Q^{2}}.$$
-At $50$ it is $0.1-300/2500=-0.02<0$.""",
+At $50$ it is $0.1-\\dfrac{300}{2500}=-0.02<0$.""",
             r"""Over the interval from $40$ to $50$,
 $$R_e(50)-R_e(40)>R(50)-R(40).$$
 Equal revenue at $40$ then gives strictly higher rival revenue at $50$.""",
@@ -480,7 +480,7 @@ At $14$, $P^{\prime\prime}=12-3(14)<0$.""",
             r"""$R^{\prime}(x)=150-6x$ vanishes at
 $$x=25,$$
 and $R^{\prime\prime}=-6<0$. This is above $20$.""",
-            r"""$AC=0.5x^{2}-9x+24+500/x$, hence
+            r"""$AC=0.5x^{2}-9x+24+\\dfrac{500}{x}$, hence
 $$AC^{\prime}(x)=x-9-\frac{500}{x^{2}}.$$
 At $10$ the value is $10-9-5=-4<0$, so average cost is falling.""",
             r"""Both loading levels at $20$ are $500$. Their slopes are also equal:
@@ -520,9 +520,9 @@ not $-1$.""",
             r"""At $20$, the first formula approaches $\frac12(400)+20=220$, while the second gives $420-200=220$. The one-sided slopes are
 $$20+1=21=21,$$
 so both continuity and differentiability hold.""",
-            r"""$AC=Q/6+6+120/Q$, hence
+            r"""$AC=\\dfrac{Q}{6}+6+\\dfrac{120}{Q}$, hence
 $$AC^{\prime}(Q)=\frac16-\frac{120}{Q^{2}}.$$
-At $30$ this is $1/6-120/900=1/30>0$, so average cost is rising.""",
+At $30$ this is $\\dfrac{1}{6}-\\dfrac{120}{900}=\\dfrac{1}{30}>0$, so average cost is rising.""",
         ],
         r"""Inverse demand supplies marginal revenue, while the levy shifts the profit derivative. Elasticity is evaluated in the price-demand representation. The setup branches agree in both their values and slopes at twenty, and average cost is assessed from its own derivative."""
     ))

@@ -1,6 +1,6 @@
 /**
  * Chapter 11 — Differentiation and single-variable optimization.
- * Subsections 11.1–11.5 (11.5: Exam-style tasks, MATH 11.161–11.190).
+ * Subsections 11.1–11.5 (11.5: Exam-style tasks, MATH 11.161–11.205).
  * Lovable sync marker: 11.4 one-plane graphs; 11.5 hard multi-topic exam bank (algebra + figures).
  */
 import type { MathTask } from "@/data/math-chapters";
