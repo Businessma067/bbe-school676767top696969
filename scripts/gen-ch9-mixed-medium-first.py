@@ -687,51 +687,51 @@ def build_table(variant: int) -> TaskSpec:
         ]
         overview = f"Table stem: samples of $p(x)={L(p)}$; $\\Delta_3=6$; factors $x\\pm 1$ and $x-2$."
     elif variant == 1:
-        p = expand((x + 2) * (x + 1) * (x - 1))
-        xs = [-2, -1, 0, 1, 2]
+        p = expand((x - 2) * (x + 1))
+        xs = [-2, -1, 0, 1, 2, 3]
         opener = (
             "Laboratory readings of an unknown polynomial appear in the table (unit spacing). "
-            "No closed form and no difference columns are supplied. Recover degree and factors "
-            f"from the raw values alone. {TAIL}"
+            "No closed form and no difference columns are supplied. Recover degree, factors, "
+            f"and the next sample from the raw values alone. {TAIL}"
         )
         ys = [int(ev(p, v)) for v in xs]
         layers = diff_layers(ys)
+        nxt = next_sample(ys)
         claims = [
             C(
-                "The third differences are constantly $6$, so a cubic with leading coefficient $1$ is consistent with every listed column.",
+                "The second differences are constantly $2$, so a quadratic with leading coefficient $1$ fits every listed column.",
                 True,
                 pack("A", True, [
-                    "Finite differences of unit-spaced samples lose one degree per pass. For a cubic $ax^{3}+\\cdots$ the third difference on unit spacing equals $6a$. Compute down from the raw row.",
+                    "Compute differences from the raw row until a layer freezes. For unit spacing the second difference of a quadratic $ax^{2}+\\cdots$ equals $2a$.",
                     D(layer_tex(ys)),
                     D(r"\Delta_{1}:\ " + layer_tex(layers[1])),
                     D(r"\Delta_{2}:\ " + layer_tex(layers[2])),
-                    D(r"\Delta_{3}:\ " + layer_tex(layers[3])),
-                    close(True, r"Constant third differences $6=3!\cdot 1$ diagnose a monic cubic"),
+                    D(r"2a=2\\Rightarrow a=1"),
+                    close(True, "Constant second differences $2$ diagnose a monic quadratic"),
                 ]),
-                lambda: len(set(layers[3])) == 1 and layers[3][0] == 6,
+                lambda: len(set(layers[2])) == 1 and layers[2][0] == 2,
             ),
             C(
                 "The factor $x+1$ divides the unknown polynomial.",
                 True,
                 pack("B", True, [
-                    "The factor theorem is a table-lookup: $x+1$ divides $p$ if and only if the $x=-1$ column is $0$.",
+                    "Apply the factor theorem to the $x=-1$ column.",
                     D(r"p(-1)=0"),
                     D(r"x-(-1)=x+1"),
-                    D(r"p(x)=(x+2)(x+1)(x-1)"),
                     close(True, "The sample at $-1$ vanishes, so $x+1$ is a factor"),
                 ]),
                 lambda: ys[xs.index(-1)] == 0,
             ),
             C(
-                "The factor $x-1$ divides the unknown polynomial.",
+                "The factor $x-2$ divides the unknown polynomial.",
                 True,
                 pack("C", True, [
-                    "The same test at $x=1$: a factor $x-1$ is present precisely when that column is $0$.",
-                    D(r"p(1)=0"),
-                    D(r"p(x)=(x+2)(x+1)(x-1)"),
-                    close(True, "The sample at $1$ vanishes, so $x-1$ is a factor"),
+                    "The same test at $x=2$.",
+                    D(r"p(2)=0"),
+                    D(r"p(x)=(x-2)(x+1)"),
+                    close(True, "The sample at $2$ vanishes, so $x-2$ is a factor"),
                 ]),
-                lambda: ys[xs.index(1)] == 0,
+                lambda: ys[xs.index(2)] == 0,
             ),
             C(
                 "The first differences are not constant, so the samples cannot come from a linear polynomial.",
@@ -739,25 +739,26 @@ def build_table(variant: int) -> TaskSpec:
                 pack("D", True, [
                     "A linear model would freeze at the first difference layer. Read that layer from the table.",
                     D(r"\Delta_{1}:\ " + layer_tex(layers[1])),
-                    D(r"0,\ -2,\ 2,\ 12"),
+                    D(r"-4,\ -2,\ 0,\ 2,\ 4"),
                     close(True, "First differences still move, so the degree is at least $2$"),
                 ]),
                 lambda: len(set(layers[1])) > 1,
             ),
             C(
-                "The factor $x+2$ divides the unknown polynomial.",
+                "If the same second-difference pattern continues, the next sample (at $x=4$) equals $10$.",
                 True,
                 pack("E", True, [
-                    "Apply the factor theorem to the $x=-2$ column. That is the leftmost tabulated input.",
-                    D(r"p(-2)=0"),
-                    D(r"x-(-2)=x+2"),
-                    D(r"p(x)=(x+2)(x^{2}-1)"),
-                    close(True, "The sample at $-2$ vanishes, so $x+2$ is a factor"),
+                    "Newton's forward step: the constant second difference $2$ updates the last first difference, which then updates the last sample.",
+                    D(r"\Delta_{2}=2"),
+                    D(r"\Delta_{1}^{\mathrm{next}}=4+2=6"),
+                    D(r"p(4)=4+6=10"),
+                    D(r"p(4)=(4-2)(4+1)=10"),
+                    close(True, "The extrapolated value is $10$"),
                 ]),
-                lambda: ys[xs.index(-2)] == 0,
+                lambda: nxt == 10 and int(ev(p, 4)) == 10,
             ),
         ]
-        overview = f"Table stem: samples of $p(x)={L(p)}$; $\\Delta_3=6$; factors $x+2$ and $x\\pm 1$."
+        overview = f"Table stem: samples of $p(x)={L(p)}$; $\\Delta_2=2$; $p(4)=10$."
     else:
         p = expand((x ** 2 - 1) ** 2)
         xs = [-2, -1, 0, 1, 2]
@@ -2667,23 +2668,20 @@ def _interpret_display(latex_src: str, kind: str) -> str:
 
 
 def ch4ify(expl: str, letter: str, truth: bool, stmt: str, overview: str, kind: str) -> str:
-    """Chapter-4 tutor voice: keep the original algebra, put prose between displays."""
+    """Chapter-4 tutor voice: keep the original algebra, put a method beat after the opener."""
     expl = normalize_displays(expl)
     expl = re.sub(r"^\*\*[A-E]\.\*\* → (?:True|False)\s*", "", expl).strip()
-    closer_m = re.search(
-        r"(.{20,220}so the statement is (?:True|False)\.)\s*$",
-        expl,
-        flags=re.I | re.S,
-    )
-    closer = closer_m.group(1).strip() if closer_m else close(truth, "This settles the claim")
-    if closer_m:
-        expl = expl[: closer_m.start()].rstrip()
+    paras = [p.strip() for p in re.split(r"\n\s*\n", expl) if p.strip()]
+    closer = close(truth, "This settles the claim")
+    if paras and "so the statement is" in paras[-1].lower():
+        closer = paras.pop()
+    expl = "\n\n".join(paras)
 
     displays = re.findall(r"\$\$([\s\S]*?)\$\$", expl)
     pieces = re.split(r"\$\$[\s\S]*?\$\$", expl)
     opener = (pieces[0] if pieces else "").strip()
     if not opener:
-        opener = "Test the wording against an explicit computation, not against a glance at the algebra."
+        opener = "Carry out the named polynomial test in full; a glance at the shape is not enough."
 
     parts: list[str] = [opener]
     # Kind-specific second beat, varied by letter so five letters in one task do not clone.
@@ -2698,9 +2696,9 @@ def ch4ify(expl: str, letter: str, truth: bool, stmt: str, overview: str, kind: 
         "table": [
             "The table is raw values on unit spacing. Differences are computed by hand; they are not printed as extra rows.",
             "The factor theorem is a column lookup: $x-r$ divides the unknown polynomial if and only if the entry at $x=r$ is $0$.",
-            "A constant $k$-th difference layer diagnoses minimal degree $k$, with that constant equal to $k!$ times the leading coefficient.",
-            "Six (or five) samples never forbid a higher-degree interpolant: add any multiple of the product of all tabulated $(x-r)$ factors.",
-            "Extrapolation continues the last constant difference one step, then walks back up the difference triangle to the next sample.",
+            "A constant difference layer diagnoses a minimal degree; the same nodes still lie on infinitely many higher-degree interpolants.",
+            "A listed heading is not a root. Only a listed value of $0$ is a root.",
+            "Each first difference is a consecutive jump in the raw row; constancy there would mean a line.",
         ],
         "applied": [
             "The story's ledger (or plot) is the only source; no engineering formula is issued in the stem.",
