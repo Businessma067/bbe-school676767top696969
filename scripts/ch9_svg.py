@@ -139,15 +139,15 @@ def svg_polynomial(
         ticks.append(
             f'<line x1="{X(xv):.1f}" y1="{height - B}" x2="{X(xv):.1f}" y2="{height - B + 8}" '
             f'stroke="#5a534a" stroke-width="1.6"/>'
-            f'<text x="{X(xv):.1f}" y="{height - B + 26}" text-anchor="middle" font-size="16" '
-            f'font-weight="600" font-family="Georgia,serif" fill="#1a1a1a">{_tick(xv)}</text>'
+            f'<text x="{X(xv):.1f}" y="{height - B + 28}" text-anchor="middle" font-size="18" '
+            f'font-weight="700" font-family="Georgia,serif" fill="#1a1a1a">{_tick(xv)}</text>'
         )
     for yv in _nice_ticks(y0, y1, 6):
         ticks.append(
             f'<line x1="{L - 8}" y1="{Y(yv):.1f}" x2="{L}" y2="{Y(yv):.1f}" '
             f'stroke="#5a534a" stroke-width="1.6"/>'
-            f'<text x="{L - 12}" y="{Y(yv) + 5:.1f}" text-anchor="end" font-size="15" '
-            f'font-weight="600" font-family="Georgia,serif" fill="#1a1a1a">{_tick(yv)}</text>'
+            f'<text x="{L - 12}" y="{Y(yv) + 6:.1f}" text-anchor="end" font-size="17" '
+            f'font-weight="700" font-family="Georgia,serif" fill="#1a1a1a">{_tick(yv)}</text>'
         )
 
     auto_marks: list[tuple[float, str]] = []
@@ -159,20 +159,16 @@ def svg_polynomial(
             auto_marks.append((c, f"turn {_tick(c)}"))
 
     dots = []
-    for xv, lab in (marks or []) + auto_marks:
+    for xv, _lab in (marks or []) + auto_marks:
         yv = _poly_eval(coeffs, xv)
         if not (xmin - 1e-9 <= xv <= xmax + 1e-9):
             continue
         if not (y0 - 1e-6 <= yv <= y1 + 1e-6):
             continue
-        # Vertical guide through the marked abscissa so the number is obvious
+        # Mark the point only — no text label; abscissa is read from the axis ticks.
         dots.append(
-            f'<line x1="{X(xv):.1f}" y1="{T}" x2="{X(xv):.1f}" y2="{height - B}" '
-            f'stroke="#c4b09a" stroke-width="1.2" stroke-dasharray="3 4"/>'
             f'<circle cx="{X(xv):.1f}" cy="{Y(yv):.1f}" r="5.5" fill="#8B5A2B" '
             f'stroke="#fff6ea" stroke-width="1.5"/>'
-            f'<text x="{X(xv):.1f}" y="{Y(yv) - 14:.1f}" text-anchor="middle" font-size="16" '
-            f'font-weight="700" font-family="Georgia,serif" fill="#1a1a1a">{_esc(lab)}</text>'
         )
 
     guides = []
