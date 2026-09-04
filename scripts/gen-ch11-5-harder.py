@@ -137,8 +137,8 @@ def harder_graph_replacements() -> dict[str, dict]:
     """Map case_id → replacement task (same id/number)."""
     out: dict[str, dict] = {}
 
-    # 22 / 182 — cubic P' with three zeros; scenario mixes expand / contract / tax
-    # P'(Q) = -(Q-1)(Q-4)(Q-9) = -Q^3+14Q^2-49Q+36
+    # 22 / 182 — cubic P^{\prime} with three zeros; scenario mixes expand / contract / tax
+    # P^{\prime}(Q) = -(Q-1)(Q-4)(Q-9) = -Q^3+14Q^2-49Q+36
     def pprime(q: float) -> float:
         return -(q - 1.0) * (q - 4.0) * (q - 9.0)
 
@@ -157,7 +157,7 @@ def harder_graph_replacements() -> dict[str, dict]:
     out["MATH 11.182"] = make_task(
         22,
         "Bike workshop: cubic P′ and a per-unit levy",
-        r"""A bike workshop's weekly profit $P(Q)$ is not printed as a formula. The figure shows only marginal profit $P'(Q)$, with zeros marked at $Q=1$, $Q=4$ and $Q=9$. Later the city proposes a per-unit levy that would shift the entire $P'$ graph down by a constant $6$ units (same shape, lower by $6$). Use the figure and that proposed shift. Which of the following statements is/are correct?""",
+        r"""A bike workshop^{\prime}s weekly profit $P(Q)$ is not printed as a formula. The figure shows only marginal profit $P'(Q)$, with zeros marked at $Q=1$, $Q=4$ and $Q=9$. Later the city proposes a per-unit levy that would shift the entire $P'$ graph down by a constant $6$ units (same shape, lower by $6$). Use the figure and that proposed shift. Which of the following statements is/are correct?""",
         [
             r"On the open interval $(4,9)$, the workshop should expand a little: $P'>0$ there.",
             r"Profit has a local maximum at $Q=4$ and a local minimum at $Q=9$.",
@@ -241,8 +241,8 @@ def harder_graph_replacements() -> dict[str, dict]:
         figure=fig183,
     )
 
-    # 24 / 184 — f, f', f'' consistency with economic labels
-    # f' = -(x-1)(x-5), f'' = -2x+6 = -2(x-3)
+    # 24 / 184 — f, f^{\prime}, f^{\prime\prime} consistency with economic labels
+    # f^{\prime} = -(x-1)(x-5), f^{\prime\prime} = -2x+6 = -2(x-3)
     def f184(x: float) -> float:
         return -(x**3) / 3.0 + 3.0 * x * x - 5.0 * x
 
@@ -282,9 +282,9 @@ def harder_graph_replacements() -> dict[str, dict]:
         [True, True, True, False, False],
         [
             r"""Green changes $-$ to $+$ at $x=1$ (local min of brown) and $+$ to $-$ at $x=5$ (local max of brown)""",
-            r"""Purple's zero is where $f''=0$; the figure shows purple changing from $+$ to $-$ there, so brown changes from concave up to concave down — an inflection""",
+            r"""Purple^{\prime}s zero is where $f''=0$; the figure shows purple changing from $+$ to $-$ there, so brown changes from concave up to concave down — an inflection""",
             r"""Negative $f''$ means $f'$ is decreasing: green slopes down wherever purple is below the axis""",
-            r"""The peak of green is where brown's slope is largest, not where brown peaks. Brown peaks where green crosses through zero near $x=5$""",
+            r"""The peak of green is where brown^{\prime}s slope is largest, not where brown peaks. Brown peaks where green crosses through zero near $x=5$""",
             r"""At $x=3$, green is still positive (throughput still rising) and purple near zero only marks an inflection of $f$, not a max of $f$. The throughput max is near $x=5$""",
         ],
         r"""Three-curve consistency: zeros of green mark turns of brown; zero of purple marks an inflection; the peak of green is steepest climb, not a peak of throughput.""",
@@ -318,10 +318,10 @@ def harder_graph_replacements() -> dict[str, dict]:
     out["MATH 11.189"] = make_task(
         29,
         "Coffee subscription: MU against a constant opportunity cost",
-        r"""A coffee subscription models a subscriber's marginal utility of cups $c$ per month (brown). Each cup also has a constant opportunity cost of $6$ utility units, so the green curve is $\mathrm{MU}-6$. Interior cups are worthwhile while green is positive. Which of the following statements is/are correct?""",
+        r"""A coffee subscription models a subscriber^{\prime}s marginal utility of cups $c$ per month (brown). Each cup also has a constant opportunity cost of $6$ utility units, so the green curve is $\mathrm{MU}-6$. Interior cups are worthwhile while green is positive. Which of the following statements is/are correct?""",
         [
             r"Without the opportunity cost, utility of cups would keep rising until about $c=45$.",
-            r"Accounting for the opportunity cost, the subscriber's best cup count among positive green values ends near $c=30$.",
+            r"Accounting for the opportunity cost, the subscriber^{\prime}s best cup count among positive green values ends near $c=30$.",
             r"At $c=10$, brown is above $12$, so green is above $6$.",
             r"Because brown is linear and falling, utility $U(c)$ is strictly concave, so the subscriber is risk-averse in cup-equivalent wealth shocks on this range.",
             r"Green lying below brown by a constant means the optimal cup count is where brown itself is maximised.",
@@ -343,10 +343,10 @@ Change: claim says green is above $6$ — actually True. Use: green is above $10
     out["MATH 11.189"] = make_task(
         29,
         "Coffee subscription: MU against a constant opportunity cost",
-        r"""A coffee subscription models a subscriber's marginal utility of cups $c$ per month (brown). Each cup also has a constant opportunity cost of $6$ utility units, so the green curve is $\mathrm{MU}-6$. Interior cups are worthwhile while green is positive. Which of the following statements is/are correct?""",
+        r"""A coffee subscription models a subscriber^{\prime}s marginal utility of cups $c$ per month (brown). Each cup also has a constant opportunity cost of $6$ utility units, so the green curve is $\mathrm{MU}-6$. Interior cups are worthwhile while green is positive. Which of the following statements is/are correct?""",
         [
             r"Without the opportunity cost, utility of cups would keep rising until about $c=45$.",
-            r"Accounting for the opportunity cost, the subscriber's best cup count among the plotted options is near $c=30$, where green crosses zero.",
+            r"Accounting for the opportunity cost, the subscriber^{\prime}s best cup count among the plotted options is near $c=30$, where green crosses zero.",
             r"At $c=10$, green lies above height $10$.",
             r"Because brown is linear and falling, utility $U(c)$ is strictly concave on this range.",
             r"Green lying below brown by a constant means the optimal cup count is where brown itself is maximised.",
@@ -357,7 +357,7 @@ Change: claim says green is above $6$ — actually True. Use: green is above $10
             r"""Green crosses zero near $c=30$; that is where $\mathrm{MU}=6$, the stop rule with constant opportunity cost $6$""",
             r"""At $c=10$, brown is $18-4=14$, so green is $8$, which is below $10$""",
             r"""Constant negative slope of MU means $U''<0$: strict concavity""",
-            r"""Optimal cups solve $\mathrm{MU}=6$ (green's zero), not a maximum of brown. Brown falls throughout the window and has no interior peak""",
+            r"""Optimal cups solve $\mathrm{MU}=6$ (green^{\prime}s zero), not a maximum of brown. Brown falls throughout the window and has no interior peak""",
         ],
         r"""Read brown for when utility still rises, and green for when cups beat the opportunity cost. Concavity follows from falling MU. Do not confuse a zero of $\mathrm{MU}-6$ with a peak of MU.""",
         figure=fig189,
@@ -371,7 +371,7 @@ Change: claim says green is above $6$ — actually True. Use: green is above $10
 def build_new_hard() -> list[dict]:
     tasks: list[dict] = []
 
-    # 31. Graph P' + algebraic rival comparison
+    # 31. Graph P^{\prime} + algebraic rival comparison
     def pprime_a(q: float) -> float:
         return 12.0 - 2.0 * q  # zero at 6
 
@@ -387,7 +387,7 @@ def build_new_hard() -> list[dict]:
         xmax=12,
         ymin=-6,
         ymax=14,
-        title="Two workshops' marginal profit",
+        title="Two workshops^{\prime} marginal profit",
         xlabel="Q",
         xticks=[0, 3, 6, 9, 12],
         yticks=[-4, 0, 4, 8, 12],
@@ -491,7 +491,7 @@ def build_new_hard() -> list[dict]:
         make_task(
             33,
             "Spice importer: per-unit tax shifts MC on the figure",
-            r"""A spice importer's MR (brown) and MC (green) are shown, together with post-tax marginal cost (purple) after a specific tax of $4$ per unit. Pre-tax they meet near $Q=16$; post-tax purple meets brown nearer $Q=\dfrac{40}{3}$. Which of the following statements is/are correct?""",
+            r"""A spice importer^{\prime}s MR (brown) and MC (green) are shown, together with post-tax marginal cost (purple) after a specific tax of $4$ per unit. Pre-tax they meet near $Q=16$; post-tax purple meets brown nearer $Q=\dfrac{40}{3}$. Which of the following statements is/are correct?""",
             [
                 r"Pre-tax, expanding a little from $Q=12$ raises profit because brown is above green there.",
                 r"The tax raises the profit-maximising output.",
@@ -563,9 +563,9 @@ def build_new_hard() -> list[dict]:
         make_task(
             35,
             "App studio: learning curve AC/MC figure plus formula check",
-            r"""An app studio's cost is $C(Q)=80\sqrt{Q}$ for $Q>0$. The figure shows $AC$ (brown) and $MC$ (green). Which of the following statements is/are correct?""",
+            r"""An app studio^{\prime}s cost is $C(Q)=80\sqrt{Q}$ for $Q>0$. The figure shows $AC$ (brown) and $MC$ (green). Which of the following statements is/are correct?""",
             [
-                r"At $Q=16$, the figure's brown height is $20$ and green height is $10$, matching $AC=\dfrac{80}{\sqrt{Q}}$ and $MC=\dfrac{40}{\sqrt{Q}}$.",
+                r"At $Q=16$, the figure^{\prime}s brown height is $20$ and green height is $10$, matching $AC=\dfrac{80}{\sqrt{Q}}$ and $MC=\dfrac{40}{\sqrt{Q}}$.",
                 r"$MC=\dfrac12 AC$ at every $Q>0$ shown.",
                 r"Because both curves fall, total cost $C(Q)$ is decreasing.",
                 r"Doubling cumulative output from $9$ to $18$ multiplies total cost by $\sqrt{2}$.",
@@ -589,7 +589,7 @@ def build_new_hard() -> list[dict]:
         make_task(
             36,
             "Pop-up gallery: Newton quotient, tax, and elasticity stub",
-            r"""A pop-up gallery's profit (hundreds of euros) is $P(x)=x^{2}-8x+25$ before a flat licence fee. Staffed hours are $x>0$. After the fee, profit is $P(x)-6$. Separately, ticket demand at price $p$ is $D(p)=40-p$. Which of the following statements is/are correct?""",
+            r"""A pop-up gallery^{\prime}s profit (hundreds of euros) is $P(x)=x^{2}-8x+25$ before a flat licence fee. Staffed hours are $x>0$. After the fee, profit is $P(x)-6$. Separately, ticket demand at price $p$ is $D(p)=40-p$. Which of the following statements is/are correct?""",
             [
                 r"The Newton quotient $\dfrac{P(a+h)-P(a)}{h}$ simplifies to $2a+h-8$.",
                 r"The licence fee changes $P'(x)$ at every $x$.",
@@ -609,7 +609,7 @@ def build_new_hard() -> list[dict]:
         )
     )
 
-    # 37. f' and f'' graph with cost story
+    # 37. f^{\prime} and f^{\prime\prime} graph with cost story
     def mc37(q: float) -> float:
         return 0.5 * (q - 4.0) ** 2 + 5.0  # min at q=4, height 5
 
@@ -656,7 +656,7 @@ def build_new_hard() -> list[dict]:
         )
     )
 
-    # 38. Budget + graph of U'(x) after reduction
+    # 38. Budget + graph of U^{\prime}(x) after reduction
     def uprime38(x: float) -> float:
         return 10.0 - x  # from U=10x - x^2/2
 
@@ -678,7 +678,7 @@ def build_new_hard() -> list[dict]:
             "Design duo: budget reduction then read U′ from the figure",
             r"""A design duo has budget $2x+4y=40$ and output $U=xy$. After eliminating $y$ one obtains a single-variable $U(x)$ on $(0,20)$. The figure shows $U'(x)$ for that reduced problem. Which of the following statements is/are correct?""",
             [
-                r"The reduced optimum is at $x=10$, where the figure's $U'$ crosses zero from above.",
+                r"The reduced optimum is at $x=10$, where the figure^{\prime}s $U'$ crosses zero from above.",
                 r"At that optimum, $y=5$.",
                 r"On $(0,10)$, $U'>0$, so shifting a little budget from typesetting toward illustration raises output.",
                 r"The figure shows $U'(4)=6$, matching $U(x)=10x-\dfrac12 x^{2}$.",
@@ -722,7 +722,7 @@ def build_new_hard() -> list[dict]:
         )
     )
 
-    # 40. Three-curve P, P', P'' story with graph of P' and P''
+    # 40. Three-curve P, P^{\prime}, P^{\prime\prime} story with graph of P^{\prime} and P^{\prime\prime}
     def pp40(q: float) -> float:
         return -(q - 2.0) * (q - 8.0)  # = -q^2+10q-16
 
@@ -758,7 +758,7 @@ def build_new_hard() -> list[dict]:
             ],
             [True, True, True, False, True],
             [
-                r"""Brown's $-$ to $+$ at $2$ and $+$ to $-$ at $8$ give min then max of $P$""",
+                r"""Brown^{\prime}s $-$ to $+$ at $2$ and $+$ to $-$ at $8$ give min then max of $P$""",
                 r"""Negative $P''$ is concave-down profit""",
                 r"""Peak of $P'$ is max slope of $P$; it lines up with $P''=0$""",
                 r"""$P''=0$ is an inflection of $P$, not a max. The max is where $P'=0$ with $+$ to $-$ at $Q=8$""",
@@ -785,7 +785,7 @@ def build_new_hard() -> list[dict]:
             [True, False, True, True, False],
             [
                 r"""$Q'=10\cdot\dfrac34 a^{-1/4}=\dfrac{15}{2}a^{-1/4}$, so $R'=8Q'=60\,a^{-1/4}$""",
-                r"""Set $60 a^{-1/4}=1$, so $a^{-1/4}=\dfrac{1}{60}$, hence $a=60^{4}$. Wait that's TRUE. Want a false claim.
+                r"""Set $60 a^{-1/4}=1$, so $a^{-1/4}=\dfrac{1}{60}$, hence $a=60^{4}$. Wait that^{\prime}s TRUE. Want a false claim.
 
 Use: maximised at a=60^4 — actually True. Change to a=60^2 — False.""",
                 r"""$16^{-1/4}=\dfrac12$, so $R'=30>1$""",
@@ -840,7 +840,7 @@ Use: maximised at a=60^4 — actually True. Change to a=60^2 — False.""",
         make_task(
             42,
             "Club: inverse-demand figure, membership fee, and MC",
-            r"""A climbing club faces inverse demand $p(Q)$ as in the figure. Variable cost is $C(Q)=4Q$, and members also pay a fixed membership fee $F=50$ (a constant in the club's profit). Which of the following statements is/are correct?""",
+            r"""A climbing club faces inverse demand $p(Q)$ as in the figure. Variable cost is $C(Q)=4Q$, and members also pay a fixed membership fee $F=50$ (a constant in the club^{\prime}s profit). Which of the following statements is/are correct?""",
             [
                 r"At $Q=20$, the figure gives $p=10$, so variable profit $pQ-C$ equals $200-80=120$ before adding $F$.",
                 r"Marginal revenue is $MR=20-Q$, so the quantity that maximises variable profit solves $20-Q=4$.",
@@ -850,7 +850,7 @@ Use: maximised at a=60^4 — actually True. Change to a=60^2 — False.""",
             ],
             [False, True, False, True, True],
             [
-                r"""Variable profit is $pQ-4Q$. At $Q=20$, $p=10$, so $200-80=120$ — but the claim says before adding $F$. Fee is revenue, so profit is $pQ+F-C$. The claim's arithmetic for $pQ-C$ is right, but it says "before adding $F$" implying $F$ is added to that variable profit as cost-side confusion — actually claim is arithmetically True for $pQ-C$. 
+                r"""Variable profit is $pQ-4Q$. At $Q=20$, $p=10$, so $200-80=120$ — but the claim says before adding $F$. Fee is revenue, so profit is $pQ+F-C$. The claim^{\prime}s arithmetic for $pQ-C$ is right, but it says "before adding $F$" implying $F$ is added to that variable profit as cost-side confusion — actually claim is arithmetically True for $pQ-C$. 
 
 Wait: "variable profit pQ-C equals 120 before adding F" — True.
 Need False for A: use wrong arithmetic: claim says 120 but if someone forgets — change A to say equals 150.""",
@@ -889,22 +889,22 @@ Need False for A: use wrong arithmetic: claim says 120 but if someone forgets �
         )
     )
 
-    # 43. Hard: combine AC' approximation with rival MR integral
+    # 43. Hard: combine AC^{\prime} approximation with rival MR integral
     tasks.append(
         make_task(
             43,
-            "Mill: average-cost drift and a rival's marginal revenue",
+            "Mill: average-cost drift and a rival^{\prime}s marginal revenue",
             r"""A mill has cost $C(Q)=\dfrac13 Q^{3}-4Q^{2}+30Q+90$. A rival mill matches revenue at $Q=5$ but has strictly larger marginal revenue on $5\le Q\le 8$. Which of the following statements is/are correct?""",
             [
                 r"$AC'(Q)=Q-\dfrac{8}{3}-\dfrac{90}{Q^{2}}$ after writing $AC=\dfrac{C}{Q}$.",
                 r"At $Q=6$, average cost is still falling.",
-                r"The rival's revenue at $Q=8$ must exceed this mill's revenue at $Q=8$.",
+                r"The rival^{\prime}s revenue at $Q=8$ must exceed this mill^{\prime}s revenue at $Q=8$.",
                 r"Marginal cost equals average cost at every critical point of $AC$.",
                 r"$C''(Q)=2Q-8$, so total cost has an inflection at $Q=4$.",
             ],
             # AC = (1/3)Q^2 - 4Q + 30 + 90/Q
-            # AC' = (2/3)Q - 4 - 90/Q^2
-            # I had wrong AC' in claim A — make A false with wrong formula, or fix A to true formula
+            # AC^{\prime} = (2/3)Q - 4 - 90/Q^2
+            # I had wrong AC^{\prime} in claim A — make A false with wrong formula, or fix A to true formula
             [False, True, True, True, True],
             [
                 r"""Correctly, $AC=\dfrac13 Q^{2}-4Q+30+\dfrac{90}{Q}$, so $AC'=\dfrac23 Q-4-\dfrac{90}{Q^{2}}$, not $Q-\dfrac83-\dfrac{90}{Q^{2}}$""",
@@ -943,17 +943,17 @@ Need False for A: use wrong arithmetic: claim says 120 but if someone forgets �
         make_task(
             44,
             "Theatre: price and MR figure with constant MC",
-            r"""A theatre's inverse demand $p(Q)$ (brown) and marginal revenue (green) are shown. Marginal cost is constant at $MC=10$. Which of the following statements is/are correct?""",
+            r"""A theatre^{\prime}s inverse demand $p(Q)$ (brown) and marginal revenue (green) are shown. Marginal cost is constant at $MC=10$. Which of the following statements is/are correct?""",
             [
                 r"Revenue is maximised where green crosses zero, near $Q=10$.",
                 r"Profit is maximised where green meets height $10$, near $Q=15$.",
-                r"At the profit-maximising output, the figure's brown height is $p=25$.",
+                r"At the profit-maximising output, the figure^{\prime}s brown height is $p=25$.",
                 r"At $Q=10$, $MR=0$ while $p=20$, illustrating that price exceeds marginal revenue under downward-sloping demand.",
                 r"Because $MC$ is constant, average variable cost equals $MC$, so the profit max also minimises average cost.",
             ],
             [True, True, False, True, False],
             [
-                r"""$MR=0$ maximises revenue; green's zero is near $Q=10$""",
+                r"""$MR=0$ maximises revenue; green^{\prime}s zero is near $Q=10$""",
                 r"""Set $MR=MC=10$: green at height $10$ is near $Q=15$ ($40-2Q=10\Rightarrow Q=15$)""",
                 r"""At $Q=15$, brown shows $p=40-15=25$ — wait True. Want False: claim says 25 — change to p=30""",
                 r"""Marked points match $MR=0<p$ at the revenue peak""",
@@ -968,11 +968,11 @@ Need False for A: use wrong arithmetic: claim says 120 but if someone forgets �
         make_task(
             44,
             "Theatre: price and MR figure with constant MC",
-            r"""A theatre's inverse demand $p(Q)$ (brown) and marginal revenue (green) are shown. Marginal cost is constant at $MC=10$. Which of the following statements is/are correct?""",
+            r"""A theatre^{\prime}s inverse demand $p(Q)$ (brown) and marginal revenue (green) are shown. Marginal cost is constant at $MC=10$. Which of the following statements is/are correct?""",
             [
                 r"Revenue is maximised where green crosses zero, near $Q=10$.",
                 r"Profit is maximised where green meets height $10$, near $Q=15$.",
-                r"At the profit-maximising output, the figure's brown height is $p=30$.",
+                r"At the profit-maximising output, the figure^{\prime}s brown height is $p=30$.",
                 r"At $Q=10$, $MR=0$ while $p=20$, so price exceeds marginal revenue.",
                 r"Because $MC$ is constant, the profit-maximising output also minimises average cost.",
             ],
@@ -994,7 +994,7 @@ Need False for A: use wrong arithmetic: claim says 120 but if someone forgets �
         make_task(
             45,
             "Distillery: quadratic cost, linear demand, and a unit tax",
-            r"""A distillery faces inverse demand $p=30-\dfrac13 Q$ and cost $C(Q)=\dfrac25 Q^{2}+8Q+60$. A unit tax of $5$ shifts the firm's marginal cost up by $5$. Which of the following statements is/are correct?""",
+            r"""A distillery faces inverse demand $p=30-\dfrac13 Q$ and cost $C(Q)=\dfrac25 Q^{2}+8Q+60$. A unit tax of $5$ shifts the firm^{\prime}s marginal cost up by $5$. Which of the following statements is/are correct?""",
             [
                 r"Pretax marginal revenue is $MR=30-\dfrac23 Q$.",
                 r"Pretax profit is maximised at $Q=15$.",

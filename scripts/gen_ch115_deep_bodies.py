@@ -71,12 +71,12 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
     if any(k in blob for k in ("eoq", "warehouse", "order quantity", "holding cost", "tc(q)")):
         return (
             "EOQ balances a falling ordering-cost term against a rising holding-cost term. "
-            "Set $TC'=0$, check $TC''>0$, and compare nearby order sizes by evaluating $TC$ directly."
+            "Set $TC^{\prime}=0$, check $TC^{\prime\prime}>0$, and compare nearby order sizes by evaluating $TC$ directly."
         )
     if "newton" in blob or "quotient" in blob:
         return (
             "The Newton quotient $\\dfrac{P(a+h)-P(a)}{h}$ is the average slope between $a$ and $a+h$. "
-            "Expand $P(a+h)$, cancel $P(a)$, divide by $h$, then let $h\\to 0$ to recover $P'(a)$."
+            "Expand $P(a+h)$, cancel $P(a)$, divide by $h$, then let $h\\to 0$ to recover $P^{\prime}(a)$."
         )
     if any(k in blob for k in ("learning", "square-root", "sqrt", "app studio")) and "cost" in blob:
         return (
@@ -85,7 +85,7 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
         )
     if "utility" in blob and ("risk" in blob or "wealth" in blob or "founder" in blob):
         return (
-            "Marginal utility is $U'$; risk aversion for a smooth $U$ is the statement $U''<0$. "
+            "Marginal utility is $U^{\prime}$; risk aversion for a smooth $U$ is the statement $U^{\prime\prime}<0$. "
             "A mean-preserving spread then lowers expected utility by Jensen's inequality."
         )
     if "budget" in blob and ("illustration" in blob or "typeset" in blob or "design duo" in blob):
@@ -109,8 +109,8 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
             )
         if "f'" in sh or "f″" in short or "throughput" in blob or "inflection" in s:
             return (
-                "When a figure plots $f$, $f'$, and $f''$ together, zeros of $f'$ mark turning points of $f$, "
-                "while zeros of $f''$ with a sign change mark inflections. The peak of $f'$ is steepest climb of $f$, "
+                "When a figure plots $f$, $f^{\prime}$, and $f^{\prime\prime}$ together, zeros of $f^{\prime}$ mark turning points of $f$, "
+                "while zeros of $f^{\prime\prime}$ with a sign change mark inflections. The peak of $f^{\prime}$ is steepest climb of $f$, "
                 "not a peak of $f$ itself."
             )
         if re.search(r"\bmu\b", sh) or "opportunity" in blob or "marginal utility" in blob:
@@ -122,17 +122,17 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
         if "ac" in sh and "mc" in sh:
             return (
                 "Brown and green on the figure are average and marginal cost. Falling $AC$ or $MC$ does not mean "
-                "total cost falls: $C'=MC>0$ still holds. Compare heights and identities such as $MC=\\dfrac12 AC$."
+                "total cost falls: $C^{\prime}=MC>0$ still holds. Compare heights and identities such as $MC=\\dfrac12 AC$."
             )
         if "u'" in sh or ("budget" in blob and fig):
             return (
-                "The plotted $U'(x)$ is the derivative of output after substituting the budget constraint. "
-                "Positive $U'$ means shifting spending toward $x$ raises $U$; a $+\\to-$ zero marks the interior maximum."
+                "The plotted $U^{\prime}(x)$ is the derivative of output after substituting the budget constraint. "
+                "Positive $U^{\prime}$ means shifting spending toward $x$ raises $U$; a $+\\to-$ zero marks the interior maximum."
             )
         if "workshop" in blob and ("p_a" in sh or "p'_a" in sh or "two workshops" in blob):
             return (
                 "Two marginal-profit curves on one figure are compared by sign and by integration when profit "
-                "levels start equal. A crossing height is a common $P'$ value, not a level of total profit."
+                "levels start equal. A crossing height is a common $P^{\prime}$ value, not a level of total profit."
             )
         return (
             "Read signs, crossings, and labelled heights from the figure first. Which curve lies above the axis, "
@@ -141,13 +141,13 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
 
     if "elastic" in s:
         return (
-            "Point price elasticity is $\\varepsilon=\\dfrac{D'(p)\\,p}{D(p)}$. For ordinary downward-sloping "
+            "Point price elasticity is $\\varepsilon=\\dfrac{D^{\prime}(p)\\,p}{D(p)}$. For ordinary downward-sloping "
             "demand, revenue peaks where $\\varepsilon=-1$, which is equivalent to $MR=0$ on the quantity side."
         )
     if "average cost" in s or "ac'" in sh:
         return (
             "Average cost is total cost divided by output. Form $AC=\\dfrac{C}{Q}$ before differentiating; "
-            "the sign of $AC'$ says whether a little more output raises or lowers cost per unit."
+            "the sign of $AC^{\prime}$ says whether a little more output raises or lowers cost per unit."
         )
     if "rival" in s or "r_e" in sh:
         return (
@@ -171,8 +171,8 @@ def opener(stmt: str, short: str, fig: bool, title: str, context: str) -> str:
         )
     if "profit" in s or "π" in short or "\\pi" in short:
         return (
-            "Profit is revenue minus cost. Interior candidates solve $P'=0$; a sign chart of $P'$ or the sign "
-            "of $P''$ then classifies a local max versus a local min."
+            "Profit is revenue minus cost. Interior candidates solve $P^{\prime}=0$; a sign chart of $P^{\prime}$ or the sign "
+            "of $P^{\prime\prime}$ then classifies a local max versus a local min."
         )
     return (
         "Translate the claim into the appropriate derivative or first-order condition from the stem, "
@@ -188,12 +188,12 @@ def extra(stmt: str, short: str, title: str, context: str, i: int) -> str:
 
     if any(k in blob for k in ("advertis", "podcast", "listener")):
         candidates.append(
-            "Because $Q$ is concave in advertising spend, $\\pi'$ is strictly decreasing and crosses zero at most once, "
+            "Because $Q$ is concave in advertising spend, $\\pi^{\prime}$ is strictly decreasing and crosses zero at most once, "
             "so the critical point is the unique interior maximum."
         )
     elif "eoq" in blob or "holding" in blob or "tc'" in short.lower():
         candidates.append(
-            "Multiplying $TC'=0$ by $Q^{2}$ isolates $Q^{2}=\\dfrac{KD}{h/2}$; at that EOQ the ordering and holding "
+            "Multiplying $TC^{\prime}=0$ by $Q^{2}$ isolates $Q^{2}=\\dfrac{KD}{h/2}$; at that EOQ the ordering and holding "
             "cost pieces are equal."
         )
     elif "elastic" in s:
@@ -204,7 +204,7 @@ def extra(stmt: str, short: str, title: str, context: str, i: int) -> str:
     elif "rival" in s:
         candidates.append(
             "With equal levels at the left endpoint $a$, "
-            "$\\int_a^b\\bigl(R_e'(Q)-R'(Q)\\bigr)\\,dQ=R_e(b)-R(b)$ inherits the sign of $R_e'-R'$ on $(a,b)$."
+            "$\\int_a^b\\bigl(R_e^{\prime}(Q)-R^{\prime}(Q)\\bigr)\\,dQ=R_e(b)-R(b)$ inherits the sign of $R_e^{\prime}-R^{\prime}$ on $(a,b)$."
         )
     elif "tax" in s or "levy" in s:
         candidates.append(
@@ -228,12 +228,12 @@ def extra(stmt: str, short: str, title: str, context: str, i: int) -> str:
         )
     elif "average cost" in s:
         candidates.append(
-            "The fixed-cost term $\\dfrac{F}{Q}$ in $AC$ produces the $-\\dfrac{F}{Q^{2}}$ piece of $AC'$; "
+            "The fixed-cost term $\\dfrac{F}{Q}$ in $AC$ produces the $-\\dfrac{F}{Q^{2}}$ piece of $AC^{\prime}$; "
             "that is why average cost can fall even when marginal cost is positive."
         )
     elif "inflection" in s:
         candidates.append(
-            "An inflection of total cost is where $C''$ changes sign — equivalently where $MC$ has a turn — "
+            "An inflection of total cost is where $C^{\prime\prime}$ changes sign — equivalently where $MC$ has a turn — "
             "and that need not be where $AC=MC$."
         )
     elif "local max" in s or "local min" in s:
@@ -248,7 +248,7 @@ def extra(stmt: str, short: str, title: str, context: str, i: int) -> str:
         )
     elif "learning" in blob or "sqrt" in short.lower():
         candidates.append(
-            "Falling $AC$ and $MC$ can coexist with rising total cost because $C'=MC>0$; never confuse a falling "
+            "Falling $AC$ and $MC$ can coexist with rising total cost because $C^{\prime}=MC>0$; never confuse a falling "
             "average with a falling total."
         )
     elif "budget" in blob and "u" in short.lower():
