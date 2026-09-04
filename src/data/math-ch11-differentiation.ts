@@ -3,6 +3,7 @@ import type { MathTask } from "@/data/math-chapters";
 export const MATH_CH11_SUBSECTIONS = [
   { id: "11.1", title: "Differentiation rules & mechanics" },
   { id: "11.2", title: "Economic interpretation of the derivative" },
+  { id: "11.3", title: "Finding and classifying optima" },
 ] as const;
 
 export const MATH_CH11_DIFFERENTIATION: MathTask[] = [
@@ -3293,28 +3294,28 @@ The statement is True.`,
     title: "Which cost curve is marginal cost?",
     subsection: "11.2",
     context:
-      "A bakery reports its total weekly cost $C(q)$ in euros when it bakes $q$ loaves, and it also reports the average cost per loaf $A(q)=C(q)/q$. Management wants the approximate extra cost of baking one more loaf near the current output. Decide TRUE or FALSE for each claim.",
+      "A bakery reports its total weekly cost $C(Q)$ in euros when it bakes $Q$ loaves, and it also reports the average cost per loaf $A(Q)=\\dfrac{C(Q)}{Q}$. Management wants the approximate extra cost of baking one more loaf near the current output. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The quantity that answers management's question is the derivative $C'(q)$, not $A(q)$.",
-      "Differentiating the average-cost function $A(q)$ is the same thing as computing marginal cost.",
+      "The quantity that answers management's question is the derivative $C'(Q)$, not $A(Q)$.",
+      "Differentiating the average-cost function $A(Q)$ is the same thing as computing marginal cost.",
       "Marginal cost at a named output is the slope of the total-cost curve at that output.",
       "If $C'(120)=0.80$, then near $120$ loaves each extra loaf adds about $0.80$ euros to total cost.",
-      "Because average cost already divides by $q$, its value $A(120)$ is automatically equal to marginal cost at $120$.",
+      "Because average cost already divides by $Q$, its value $A(120)$ is automatically equal to marginal cost at $120$.",
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Marginal cost is defined as the derivative of total cost. The approximate extra euros for one more loaf near the current output is therefore read from $C'(q)$, not from the average $A(q)$. The statement is True.`,
+Marginal cost is defined as the derivative of total cost. The approximate extra euros for one more loaf near the current output is therefore read from $C'(Q)$, not from the average $A(Q)$. The statement is True.`,
       `**B.** → False
 
-Average cost is the quotient $A(q)=C(q)/q$. Its derivative $A'(q)$ tells how average cost changes with output. That is a different object from marginal cost $C'(q)$. The statement is False.`,
+Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$. Its derivative $A'(Q)$ tells how average cost changes with output. That is a different object from marginal cost $C'(Q)$. The statement is False.`,
       `**C.** → True
 
-On the graph of total cost against output, the derivative $C'(q)$ is precisely the slope at that point. Economists call that slope marginal cost. The statement is True.`,
+On the graph of total cost against output, the derivative $C'(Q)$ is precisely the slope at that point. Economists call that slope marginal cost. The statement is True.`,
       `**D.** → True
 
-The approximation $C(q+\\Delta q)-C(q)\\approx C'(q)\\Delta q$ with $\\Delta q=1$ says that one extra loaf near $q=120$ changes total cost by about $C'(120)=0.80$ euros. The statement is True.`,
+The approximation $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\Delta Q$ with $\\Delta Q=1$ says that one extra loaf near $Q=120$ changes total cost by about $C'(120)=0.80$ euros. The statement is True.`,
       `**E.** → False
 
 Average cost and marginal cost coincide only at special outputs (for example, where average cost is minimized). In general $A(120)$ need not equal $C'(120)$. The statement is False.`,
@@ -3342,16 +3343,16 @@ Average cost and marginal cost coincide only at special outputs (for example, wh
     tactical_explanations: [
       `**A.** → True
 
-By definition, $C'(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed. The value $3$ therefore means about $3$ million euros per extra percentage point near $50\\\\%$. The statement is True.`,
+By definition, $C'(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed. The value $3$ therefore means about $3$ million euros per extra percentage point near $50\\\%$. The statement is True.`,
       `**B.** → False
 
-The total cost of a $50\\\\%$ cleanup is the function value $C(50)$, not the derivative $C'(50)$. The number $3$ is a rate, not a stock of total spending. The statement is False.`,
+The total cost of a $50\\\%$ cleanup is the function value $C(50)$, not the derivative $C'(50)$. The number $3$ is a rate, not a stock of total spending. The statement is False.`,
       `**C.** → True
 
-The linear approximation $C(50+\\\\Delta x)-C(50)\\\\approx C'(50)\\\\Delta x=3\\\\Delta x$ is exactly the precise local meaning of the derivative. The statement is True.`,
+The linear approximation $C(50+\\Delta x)-C(50)\\approx C'(50)\\Delta x=3\\Delta x$ is exactly the precise local meaning of the derivative. The statement is True.`,
       `**D.** → True
 
-Elementary readings often set $\\\\Delta x=1$ and say the extra cost of going from $50\\\\%$ to $51\\\\%$ is about $3$ million euros. That is a convenient but less precise version of the same idea. The statement is True.`,
+Elementary readings often set $\\Delta x=1$ and say the extra cost of going from $50\\\%$ to $51\\\%$ is about $3$ million euros. That is a convenient but less precise version of the same idea. The statement is True.`,
       `**E.** → True
 
 In this model the independent variable is the cleanup percentage, so the derivative is a marginal cost with respect to that percentage. The statement is True.`,
@@ -3367,31 +3368,31 @@ In this model the independent variable is the cleanup percentage, so the derivat
     title: "Price, revenue, or profit?",
     subsection: "11.2",
     context:
-      "A café sells $q$ cups per day. The price it can charge is described by a downward-sloping schedule $p(q)$. Revenue is $R(q)=q\\cdot p(q)$ and daily cost is $C(q)$. Profit is $\\pi(q)=R(q)-C(q)$. Which of the following hold?",
+      "A café sells $Q$ cups per day. The price it can charge is described by a downward-sloping schedule $p(Q)$. Revenue is $R(Q)=Q\\cdot p(Q)$ and daily cost is $C(Q)$. Profit is $P(Q)=R(Q)-C(Q)$. Which of the following hold?",
     statements: [
-      "Marginal profit is the derivative of $\\pi(q)$, not the derivative of the price schedule $p(q)$ alone.",
-      "Differentiating only $p(q)$ yields marginal revenue.",
-      "Marginal revenue is $R'(q)$, which generally differs from the posted price $p(q)$.",
-      "If the café wants the approximate change in profit from selling one more cup, it should look at $\\pi'(q)$.",
-      "Because profit equals revenue minus cost, one always has $\\pi'(q)=R'(q)-C'(q)$.",
+      "Marginal profit is the derivative of $P(Q)$, not the derivative of the price schedule $p(Q)$ alone.",
+      "Differentiating only $p(Q)$ yields marginal revenue.",
+      "Marginal revenue is $R'(Q)$, which generally differs from the posted price $p(Q)$.",
+      "If the café wants the approximate change in profit from selling one more cup, it should look at $P'(Q)$.",
+      "Because profit equals revenue minus cost, one always has $P'(Q)=R'(Q)-C'(Q)$.",
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Marginal profit means the rate of change of profit. The function to differentiate is therefore $\\\\pi(q)=R(q)-C(q)$. The price schedule $p(q)$ alone is not profit. The statement is True.`,
+Marginal profit means the rate of change of profit. The function to differentiate is therefore $P(Q)=R(Q)-C(Q)$. The price schedule $p(Q)$ alone is not profit. The statement is True.`,
       `**B.** → False
 
-The derivative $p'(q)$ only tracks how the posted price moves with quantity. Marginal revenue is the derivative of revenue $R(q)=q\\\\cdot p(q)$, which also accounts for selling more cups. The statement is False.`,
+The derivative $p'(Q)$ only tracks how the posted price moves with quantity. Marginal revenue is the derivative of revenue $R(Q)= Q\\cdot p(Q)$, which also accounts for selling more cups. The statement is False.`,
       `**C.** → True
 
-Revenue is price times quantity. When quantity rises, price usually falls, so the extra euros from one more cup are not simply the current price. That combined effect is exactly $R'(q)$. The statement is True.`,
+Revenue is price times quantity. When quantity rises, price usually falls, so the extra euros from one more cup are not simply the current price. That combined effect is exactly $R'(Q)$. The statement is True.`,
       `**D.** → True
 
-The approximate change in profit for a small increase in cups is $\\\\pi'(q)\\\\Delta q$. For one extra cup near the current $q$, the relevant number is $\\\\pi'(q)$. The statement is True.`,
+The approximate change in profit for a small increase in cups is $P'(Q)\\Delta Q$. For one extra cup near the current $Q$, the relevant number is $P'(Q)$. The statement is True.`,
       `**E.** → True
 
-Differentiating the difference $\\\\pi=R-C$ gives $\\\\pi'=R'-C'$ at every output where the derivatives exist. The statement is True.`,
+Differentiating the difference $P=R-C$ gives $P'=R'-C'$ at every output where the derivatives exist. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 43,
@@ -3404,31 +3405,31 @@ Differentiating the difference $\\\\pi=R-C$ gives $\\\\pi'=R'-C'$ at every outpu
     title: "When does an extra unit raise profit?",
     subsection: "11.2",
     context:
-      "A firm sells output $q>0$. Its marginal revenue is $R'(q)$ and its marginal cost is $C'(q)$. Profit is $\\pi(q)=R(q)-C(q)$. Decide TRUE or FALSE for each claim.",
+      "A firm sells output $Q>0$. Its marginal revenue is $R'(Q)$ and its marginal cost is $C'(Q)$. Profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "If $R'(q)>C'(q)$ at some output, then $\\pi'(q)>0$ there.",
-      "If $R'(q)>C'(q)$, a small increase in output raises profit.",
-      "If $R'(q)<C'(q)$, a small increase in output raises profit.",
-      "The equality $R'(q)=C'(q)$ is exactly the condition $\\pi'(q)=0$.",
-      "The equality $R'(q)=C'(q)$ means that total revenue equals total cost.",
+      "If $R'(Q)>C'(Q)$ at some output, then $P'(Q)>0$ there.",
+      "If $R'(Q)>C'(Q)$, a small increase in output raises profit.",
+      "If $R'(Q)<C'(Q)$, a small increase in output raises profit.",
+      "The equality $R'(Q)=C'(Q)$ is exactly the condition $P'(Q)=0$.",
+      "The equality $R'(Q)=C'(Q)$ means that total revenue equals total cost.",
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Because $\\\\pi'(q)=R'(q)-C'(q)$, the inequality $R'(q)>C'(q)$ is synonymous with $\\\\pi'(q)>0$. The statement is True.`,
+Because $P'(Q)=R'(Q)-C'(Q)$, the inequality $R'(Q)>C'(Q)$ is synonymous with $P'(Q)>0$. The statement is True.`,
       `**B.** → True
 
-A positive derivative means the function is locally increasing. So when $\\\\pi'(q)>0$, raising $q$ a little increases profit. The statement is True.`,
+A positive derivative means the function is locally increasing. So when $P'(Q)>0$, raising $Q$ a little increases profit. The statement is True.`,
       `**C.** → False
 
-If $R'(q)<C'(q)$, then $\\\\pi'(q)<0$, so profit is locally decreasing: a small increase in output lowers profit. The statement is False.`,
+If $R'(Q)<C'(Q)$, then $P'(Q)<0$, so profit is locally decreasing: a small increase in output lowers profit. The statement is False.`,
       `**D.** → True
 
-Setting $R'(q)-C'(q)=0$ is the same as $R'(q)=C'(q)$. That is precisely $\\\\pi'(q)=0$. The statement is True.`,
+Setting $R'(Q)-C'(Q)=0$ is the same as $R'(Q)=C'(Q)$. That is precisely $P'(Q)=0$. The statement is True.`,
       `**E.** → False
 
-$R'(q)=C'(q)$ equates two rates of change. Total revenue equalling total cost would be $R(q)=C(q)$, a different statement about levels. The statement is False.`,
+$R'(Q)=C'(Q)$ equates two rates of change. Total revenue equalling total cost would be $R(Q)=C(Q)$, a different statement about levels. The statement is False.`,
     ],
     difficulty_level: "2/5",
     sort_order: 44,
@@ -3441,31 +3442,31 @@ $R'(q)=C'(q)$ equates two rates of change. Total revenue equalling total cost wo
     title: "Zero marginal profit is not zero profit",
     subsection: "11.2",
     context:
-      "At a candidate output $q^{\\ast}$, a firm's marginal profit is zero: $\\pi'(q^{\\ast})=0$. Judge every assertion below.",
+      "At a candidate output $Q^{\\ast}$, a firm's marginal profit is zero: $P'(Q^{\\ast})=0$. Judge every assertion below.",
     statements: [
-      "At $q^{\\ast}$, marginal revenue equals marginal cost.",
-      "At $q^{\\ast}$, the firm necessarily earns zero total profit.",
-      "At $q^{\\ast}$, total revenue need not equal total cost.",
-      "The condition $\\pi'(q^{\\ast})=0$ alone does not tell whether profit is maximized or minimized.",
-      "If $\\pi'(q^{\\ast})=0$ and $\\pi$ changes from increasing to decreasing at $q^{\\ast}$, then $q^{\\ast}$ is a local profit maximum.",
+      "At $Q^{\\ast}$, marginal revenue equals marginal cost.",
+      "At $Q^{\\ast}$, the firm necessarily earns zero total profit.",
+      "At $Q^{\\ast}$, total revenue need not equal total cost.",
+      "The condition $P'(Q^{\\ast})=0$ alone does not tell whether profit is maximized or minimized.",
+      "If $P'(Q^{\\ast})=0$ and $P$ changes from increasing to decreasing at $Q^{\\ast}$, then $Q^{\\ast}$ is a local profit maximum.",
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$\\\\pi'=R'-C'$, so $\\\\pi'(q^{\\\\ast})=0$ means $R'(q^{\\\\ast})=C'(q^{\\\\ast})$. The statement is True.`,
+$P'=R'-C'$, so $P'(Q^{\\ast})=0$ means $R'(Q^{\\ast})=C'(Q^{\\ast})$. The statement is True.`,
       `**B.** → False
 
-Zero marginal profit is about the slope of the profit curve, not about the height $\\\\pi(q^{\\\\ast})$. Profit can be large and positive while its derivative is zero. The statement is False.`,
+Zero marginal profit is about the slope of the profit curve, not about the height $P(Q^{\\ast})$. Profit can be large and positive while its derivative is zero. The statement is False.`,
       `**C.** → True
 
-Total revenue equals total cost only if $\\\\pi(q^{\\\\ast})=0$. The first-order condition does not force that. The statement is True.`,
+Total revenue equals total cost only if $P(Q^{\\ast})=0$. The first-order condition does not force that. The statement is True.`,
       `**D.** → True
 
 A zero derivative is only a stationary-point condition. Without a second-derivative or sign test, one cannot yet classify a max versus a min. The statement is True.`,
       `**E.** → True
 
-If profit rises before $q^{\\\\ast}$ and falls afterward, the stationary point is a local maximum. That is the standard first-derivative sign test. The statement is True.`,
+If profit rises before $Q^{\\ast}$ and falls afterward, the stationary point is a local maximum. That is the standard first-derivative sign test. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 45,
@@ -3515,31 +3516,31 @@ That is exactly what the sign of a derivative reports for a differentiable funct
     title: "Average cost is not marginal cost",
     subsection: "11.2",
     context:
-      "A plant's total cost is $C(q)$ and its average cost is $A(q)=C(q)/q$ for $q>0$. For each line, mark TRUE or FALSE.",
+      "A plant's total cost is $C(Q)$ and its average cost is $A(Q)=\\dfrac{C(Q)}{Q}$ for $Q>0$. For each line, mark TRUE or FALSE.",
     statements: [
       "Average cost answers \"cost per unit produced so far,\" while marginal cost answers \"extra cost of a little more output.\"",
-      "In general $A(q)=C'(q)$ for every $q>0$.",
+      "In general $A(Q)=C'(Q)$ for every $Q>0$.",
       "Minimizing average cost is the same decision problem as setting marginal cost to zero.",
-      "At an output that minimizes average cost (with $A$ differentiable and $q>0$), one has $C'(q)=A(q)$.",
-      "If average cost is falling, then necessarily $C'(q)<0$.",
+      "At an output that minimizes average cost (with $A(Q)$ differentiable and $Q>0$), one has $C'(Q)=A(Q)$.",
+      "If average cost is falling, then necessarily $C'(Q)<0$.",
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-That is the standard verbal distinction: $A(q)$ is a per-unit average, while $C'(q)$ is a local extra-cost rate. The statement is True.`,
+That is the standard verbal distinction: $A(Q)$ is a per-unit average, while $C'(Q)$ is a local extra-cost rate. The statement is True.`,
       `**B.** → False
 
 The two functions are different. They meet only at particular outputs, not identically. The statement is False.`,
       `**C.** → False
 
-Setting $C'(q)=0$ would look for a stationary point of total cost, which is not the average-cost problem. Average-cost minimization uses $A'(q)=0$. The statement is False.`,
+Setting $C'(Q)=0$ would look for a stationary point of total cost, which is not the average-cost problem. Average-cost minimization uses $A'(Q)=0$. The statement is False.`,
       `**D.** → True
 
-A standard calculus fact: if $A(q)=C(q)/q$ has a minimum at an interior $q>0$, then $A'(q)=0$ there, which rearranges to $C'(q)=A(q)$. The statement is True.`,
+A standard calculus fact: if $A(Q)=\\dfrac{C(Q)}{Q}$ has a minimum at an interior $Q>0$, then $A'(Q)=0$ there, which rearranges to $C'(Q)=A(Q)$. The statement is True.`,
       `**E.** → False
 
-Average cost can fall even while total cost rises. Falling $A$ means $A'<0$, not that marginal cost is negative. The statement is False.`,
+Average cost can fall even while total cost rises. Falling average cost means $A'(Q)<0$, not that marginal cost is negative. The statement is False.`,
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -3552,13 +3553,13 @@ Average cost can fall even while total cost rises. Falling $A$ means $A'<0$, not
     title: "One more unit versus the derivative",
     subsection: "11.2",
     context:
-      "Elementary texts sometimes call $C(q+1)-C(q)$ the marginal cost at $q$. In this course, marginal cost means $C'(q)$. Decide TRUE or FALSE for each claim.",
+      "Elementary texts sometimes call $C(Q+1)-C(Q)$ the marginal cost at $Q$. In this course, marginal cost means $C'(Q)$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The difference $C(q+1)-C(q)$ is an incremental one-unit cost, not the exact definition of $C'(q)$.",
-      "When the extra output is small, $C'(q)$ approximates the change in cost per unit of extra output.",
-      "The approximation $C(q+1)-C(q)\\approx C'(q)$ is often serviceable, but it is still an approximation.",
-      "If output falls by a small amount, the same derivative still governs the local cost change through $C(q+\\Delta q)-C(q)\\approx C'(q)\\Delta q$ with $\\Delta q<0$.",
-      "Because textbooks mention $C(q+1)-C(q)$, the derivative $C'(q)$ is unnecessary once that difference is known.",
+      "The difference $C(Q+1)-C(Q)$ is an incremental one-unit cost, not the exact definition of $C'(Q)$.",
+      "When the extra output is small, $C'(Q)$ approximates the change in cost per unit of extra output.",
+      "The approximation $C(Q+1)-C(Q)\\approx C'(Q)$ is often serviceable, but it is still an approximation.",
+      "If output falls by a small amount, the same derivative still governs the local cost change through $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\Delta Q$ with $\\Delta Q<0$.",
+      "Because textbooks mention $C(Q+1)-C(Q)$, the derivative $C'(Q)$ is unnecessary once that difference is known.",
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
@@ -3570,10 +3571,10 @@ The derivative is a limit of Newton quotients as the step tends to zero. A fixed
 That is the standard linear approximation for a differentiable cost function. The statement is True.`,
       `**C.** → True
 
-Setting $\\\\Delta q=1$ in $C(q+\\\\Delta q)-C(q)\\\\approx C'(q)\\\\Delta q$ yields that familiar one-unit reading, which remains approximate. The statement is True.`,
+Setting $\\Delta Q=1$ in $C(Q+\\Delta Q)-C(Q)\\approx C'(Q)\\Delta Q$ yields that familiar one-unit reading, which remains approximate. The statement is True.`,
       `**D.** → True
 
-The approximation formula does not require $\\\\Delta q>0$. A small cut in output is covered by a negative $\\\\Delta q$. The statement is True.`,
+The approximation formula does not require $\\Delta Q>0$. A small cut in output is covered by a negative $\\Delta Q$. The statement is True.`,
       `**E.** → False
 
 The derivative is the precise marginal concept for continuous models and for arbitrarily small changes. A single one-unit difference cannot replace it in general. The statement is False.`,
@@ -3589,9 +3590,9 @@ The derivative is the precise marginal concept for continuous models and for arb
     title: "Revenue when price depends on quantity",
     subsection: "11.2",
     context:
-      "A seller faces demand $q=D(p)$ or, equivalently, an inverse demand $p=p(q)$. Revenue can be written $R(q)=q\\cdot p(q)$. Judge every assertion below.",
+      "A seller faces demand $Q=D(p)$ or, equivalently, an inverse demand $p=p(Q)$. Revenue can be written $R(Q)=Q\\cdot p(Q)$. Judge every assertion below.",
     statements: [
-      "Marginal revenue is obtained by differentiating $R(q)$, not by reading off $p(q)$ alone.",
+      "Marginal revenue is obtained by differentiating $R(Q)$, not by reading off $p(Q)$ alone.",
       "If the price schedule is downward sloping, selling one more unit tends to reduce the price earned on previous units as well.",
       "That price-pressure effect is one reason marginal revenue can lie below the current price.",
       "If demand did not depend on price at all, differentiating revenue would still ignore quantity.",
@@ -3601,19 +3602,19 @@ The derivative is the precise marginal concept for continuous models and for arb
     tactical_explanations: [
       `**A.** → True
 
-Marginal revenue is $R'(q)$. The schedule $p(q)$ is only one ingredient inside revenue. The statement is True.`,
+Marginal revenue is $R'(Q)$. The schedule $p(Q)$ is only one ingredient inside revenue. The statement is True.`,
       `**B.** → True
 
-With inverse demand sloping down, a larger $q$ means a lower $p(q)$, so extra sales come with a price cut that also hits intramarginal units. The statement is True.`,
+With inverse demand sloping down, a larger $Q$ means a lower $p(Q)$, so extra sales come with a price cut that also hits intramarginal units. The statement is True.`,
       `**C.** → True
 
-The product rule $R'(q)=p(q)+q\\\\cdot p'(q)$ has a typically negative second term when $p'(q)<0$, pulling $R'(q)$ below $p(q)$. The statement is True.`,
+The product rule $R'(Q)=p(Q)+Q\\cdot p'(Q)$ has a typically negative second term when $p'(Q)<0$, pulling $R'(Q)$ below $p(Q)$. The statement is True.`,
       `**D.** → False
 
-If price were constant in quantity, revenue would be $R(q)=p\\\\cdot q$ and its derivative would be exactly that constant price. The claim that differentiation would \\"ignore quantity\\" is confused. The statement is False.`,
+If price were constant in quantity, revenue would be $R(Q)=p\\cdot Q$ and its derivative would be exactly that constant price. The claim that differentiation would \"ignore quantity\" is confused. The statement is False.`,
       `**E.** → True
 
-Under a downward-sloping price schedule, $R'(q)=p(q)$ only in degenerate cases (for example if $p'(q)=0$). In the usual case the equality fails. The statement is True.`,
+Under a downward-sloping price schedule, $R'(Q)=p(Q)$ only in degenerate cases (for example if $p'(Q)=0$). In the usual case the equality fails. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 49,
@@ -3626,31 +3627,49 @@ Under a downward-sloping price schedule, $R'(q)=p(q)$ only in degenerate cases (
     title: "A consultant picks the wrong function",
     subsection: "11.2",
     context:
-      "A firm's inverse demand is $p(q)=40-q$, cost is $C(q)=8q+20$, and profit is $\\pi(q)=q\\cdot p(q)-C(q)$. A consultant says: \"To find marginal profit, just differentiate the price $40-q$.\" Decide TRUE or FALSE for each claim.",
+      "A firm's inverse demand is $p(Q)=40-Q$, cost is $C(Q)=8Q+20$, and profit is $P(Q)=Q\\cdot p(Q)-C(Q)$. A consultant says: \"To find marginal profit, just differentiate the price $40-Q$.\" Decide TRUE or FALSE for each claim.",
     statements: [
-      "The consultant's advice is wrong: marginal profit requires differentiating $\\pi(q)$.",
-      "Differentiating $p(q)=40-q$ yields $-1$, which is the slope of price, not marginal profit.",
-      "Revenue in this story is $R(q)=40q-q^{2}$.",
-      "Profit simplifies to $\\pi(q)=32q-q^{2}-20$.",
-      "The correct marginal profit is $\\pi'(q)=32-2q$.",
+      "The consultant's advice is wrong: marginal profit requires differentiating $P(Q)$.",
+      "Differentiating $p(Q)=40-Q$ yields $-1$, which is the slope of price, not marginal profit.",
+      "Revenue in this story is $R(Q)=40Q-Q^{2}$.",
+      "Profit simplifies to $P(Q)=32Q-Q^{2}-20$.",
+      "The correct marginal profit is $P'(Q)=32-2Q$.",
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Marginal profit is defined as $\\\\pi'(q)$. The consultant differentiated the wrong object. The statement is True.`,
+Marginal profit is defined as $P'(Q)$. The consultant differentiated the wrong object. The statement is True.`,
       `**B.** → True
 
-$p'(q)=-1$ only describes how price falls with quantity. It omits both the extra unit sold and the cost side. The statement is True.`,
+$p'(Q)=-1$ only describes how price falls with quantity. It omits both the extra unit sold and the cost side. The statement is True.`,
       `**C.** → True
 
-$R(q)=q(40-q)=40q-q^{2}$. The statement is True.`,
+Revenue is price times quantity. Substitute the inverse demand $p(Q)=40-Q$:
+
+$$
+R(Q)=Q\cdot p(Q)=Q(40-Q)=40Q-Q^{2}.
+$$
+
+That is exactly the claimed revenue function. The statement is True.`,
       `**D.** → True
 
-$\\\\pi(q)=R(q)-C(q)=(40q-q^{2})-(8q+20)=32q-q^{2}-20$. The statement is True.`,
+Profit is revenue minus cost. Using the revenue from statement C and the given cost $C(Q)=8Q+20$,
+
+$$
+P(Q)=R(Q)-C(Q)=(40Q-Q^{2})-(8Q+20)=32Q-Q^{2}-20.
+$$
+
+The claimed simplification matches. The statement is True.`,
       `**E.** → True
 
-Differentiating that profit gives $\\\\pi'(q)=32-2q$. The statement is True.`,
+Differentiate the simplified profit from statement D term by term:
+
+$$
+P'(Q)=32-2Q.
+$$
+
+That is the correct marginal profit, not the consultant's $p'(Q)=-1$. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -3663,13 +3682,13 @@ Differentiating that profit gives $\\\\pi'(q)=32-2q$. The statement is True.`,
     title: "Marginal tax rate versus average tax",
     subsection: "11.2",
     context:
-      "Let $T(y)$ be the income tax owed by a person with income $y$. The marginal tax rate is $T'(y)$, while the average tax rate is $T(y)/y$ when $y>0$. For each claim, mark TRUE or FALSE.",
+      "Let $T(y)$ be the income tax owed by a person with income $y$. The marginal tax rate is $T'(y)$, while the average tax rate is $\\dfrac{T(y)}{y}$ when $y>0$. For each claim, mark TRUE or FALSE.",
     statements: [
       "The marginal tax rate answers how tax liability changes when income rises a little.",
       "The average tax rate answers what fraction of income is paid in tax overall.",
       "In general the marginal tax rate equals the average tax rate for every income $y>0$.",
       "If $T'(y)=0.3$, then near that income about $30$ cents of each extra euro is taxed away.",
-      "Knowing only $T(y)/y$ is enough to read the marginal tax rate at that same $y$.",
+      "Knowing only $\\dfrac{T(y)}{y}$ is enough to read the marginal tax rate at that same $y$.",
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
@@ -3678,7 +3697,7 @@ Differentiating that profit gives $\\\\pi'(q)=32-2q$. The statement is True.`,
 That is the meaning of the derivative $T'(y)$. The statement is True.`,
       `**B.** → True
 
-The quotient $T(y)/y$ is precisely the average share of income taken by tax. The statement is True.`,
+The quotient $\\dfrac{T(y)}{y}$ is precisely the average share of income taken by tax. The statement is True.`,
       `**C.** → False
 
 As with cost, the two rates coincide only in special cases, not identically. The statement is False.`,
@@ -3704,7 +3723,7 @@ The average rate does not determine the derivative. Many different tax schedules
     statements: [
       "The marginal propensity to save is the derivative of saving with respect to national product.",
       "If $S'(Y)=0.2$, then near that $Y$ about one fifth of a small increase in national product is saved.",
-      "The ratio $S(Y)/Y$ is the same object as the marginal propensity to save.",
+      "The ratio $\\dfrac{S(Y)}{Y}$ is the same object as the marginal propensity to save.",
       "A constant saving rule $S(Y)=\\overline{S}+sY$ has marginal propensity to save equal to the coefficient $s$.",
       "To find how saving responds to a little more national product, one differentiates $S(Y)$, not the identity function $Y$.",
     ],
@@ -3712,19 +3731,19 @@ The average rate does not determine the derivative. Many different tax schedules
     tactical_explanations: [
       `**A.** → True
 
-That is the definition used in the text: $\\\\mathrm{mps}=S'(Y)$. The statement is True.`,
+That is the definition used in the text: $\\mathrm{mps}=S'(Y)$. The statement is True.`,
       `**B.** → True
 
 The derivative value $0.2$ is a euros-saved-per-euro-of-product rate near that $Y$. The statement is True.`,
       `**C.** → False
 
-$S(Y)/Y$ is an average saving ratio, analogous to average cost. It is not $S'(Y)$. The statement is False.`,
+$\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost. It is not $S'(Y)$. The statement is False.`,
       `**D.** → True
 
-Differentiating $S(Y)=\\\\overline{S}+sY$ gives $S'(Y)=s$. The statement is True.`,
+Differentiating $S(Y)=\\overline{S}+sY$ gives $S'(Y)=s$. The statement is True.`,
       `**E.** → True
 
-The economic question names saving as the dependent quantity, so the function to differentiate is $S$. The statement is True.`,
+The economic question names saving as the dependent quantity, so the function to differentiate is saving $S(Y)$. The statement is True.`,
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -3737,12 +3756,12 @@ The economic question names saving as the dependent quantity, so the function to
     title: "Slope of the cost curve on a graph",
     subsection: "11.2",
     context:
-      "On a diagram, total cost is plotted against output. At output $q_0$ the drawn tangent line is steeper than at output $q_1$. Judge every assertion below.",
+      "On a diagram, total cost is plotted against output. At output $Q_0$ the drawn tangent line is steeper than at output $Q_1$. Judge every assertion below.",
     statements: [
-      "Marginal cost is higher at $q_0$ than at $q_1$.",
-      "The height of the cost curve at $q_0$ is what economists call marginal cost.",
+      "Marginal cost is higher at $Q_0$ than at $Q_1$.",
+      "The height of the cost curve at $Q_0$ is what economists call marginal cost.",
       "A flatter tangent means a smaller derivative and therefore a smaller marginal cost.",
-      "If the tangent at $q_0$ has slope $12$, then $C'(q_0)=12$.",
+      "If the tangent at $Q_0$ has slope $12$, then $C'(Q_0)=12$.",
       "If two outputs have the same total cost, they must have the same marginal cost.",
     ],
     answer_key: [true, false, true, true, false],
@@ -3752,13 +3771,13 @@ The economic question names saving as the dependent quantity, so the function to
 Steeper tangent means larger slope, and that slope is marginal cost. The statement is True.`,
       `**B.** → False
 
-The height is the level $C(q_0)$. Marginal cost is the slope. The statement is False.`,
+The height is the level $C(Q_0)$. Marginal cost is the slope. The statement is False.`,
       `**C.** → True
 
 That is the geometric meaning of a smaller derivative. The statement is True.`,
       `**D.** → True
 
-By definition the slope of the tangent equals $C'(q_0)$. The statement is True.`,
+By definition the slope of the tangent equals $C'(Q_0)$. The statement is True.`,
       `**E.** → False
 
 Equal heights say nothing about equal slopes. A U-shaped cost curve can return to the same height with different slopes. The statement is False.`,
@@ -3774,31 +3793,43 @@ Equal heights say nothing about equal slopes. A U-shaped cost curve can return t
     title: "Profit maximum is not revenue maximum",
     subsection: "11.2",
     context:
-      "A firm can choose output $q>0$. Revenue $R(q)$ and cost $C(q)$ are both differentiable, and profit is $\\pi(q)=R(q)-C(q)$. Decide TRUE or FALSE for each claim.",
+      "A firm can choose output $Q>0$. Revenue $R(Q)$ and cost $C(Q)$ are both differentiable, and profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "An interior profit maximum requires $\\pi'(q)=0$, not merely $R'(q)=0$.",
+      "An interior profit maximum requires $P'(Q)=0$, not merely $R'(Q)=0$.",
       "Maximizing revenue alone automatically maximizes profit whenever cost is positive.",
       "If cost rises with output, the output that maximizes revenue can differ from the output that maximizes profit.",
-      "At a profit-maximizing interior point one must have $R'(q)=C'(q)$.",
-      "If $R'(q)=0$ at some $q$ while $C'(q)>0$ there, then $\\pi'(q)<0$ at that same $q$.",
+      "At a profit-maximizing interior point one must have $R'(Q)=C'(Q)$.",
+      "If $R'(Q)=0$ at some $Q$ while $C'(Q)>0$ there, then $P'(Q)<0$ at that same $Q$.",
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-Profit maximization looks at $\\\\pi$. Setting only $R'=0$ ignores cost. The statement is True.`,
+Profit maximization looks at profit $P(Q)$. Setting only $R'(Q)=0$ ignores cost. The statement is True.`,
       `**B.** → False
 
-Positive cost that depends on $q$ shifts the optimum. Maximizing $R$ need not maximize $R-C$. The statement is False.`,
+Positive cost that depends on $Q$ shifts the optimum. Maximizing $R$ need not maximize $R-C$. The statement is False.`,
       `**C.** → True
 
-Because $\\\\pi'=R'-C'$, the zeros of $R'$ and of $\\\\pi'$ generally differ when $C'$ is not zero. The statement is True.`,
+Because $P'=R'-C'$, the zeros of $R'(Q)$ and of $P'(Q)$ generally differ when $C'(Q)$ is not zero. The statement is True.`,
       `**D.** → True
 
-$\\\\pi'=0$ rearranges to $R'=C'$. The statement is True.`,
+At an interior profit maximum one must have $P'(Q)=0$. Because $P'(Q)=R'(Q)-C'(Q)$, that first-order condition rearranges at once to
+
+$$
+R'(Q)=C'(Q).
+$$
+
+The statement is True.`,
       `**E.** → True
 
-$\\\\pi'=R'-C'=0-C'<0$ whenever $C'>0$. The statement is True.`,
+If $R'(Q)=0$ while $C'(Q)>0$, then
+
+$$
+P'(Q)=R'(Q)-C'(Q)=0-C'(Q)=-C'(Q)<0.
+$$
+
+So at a revenue-stationary point with rising cost, profit is already locally decreasing. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -3832,7 +3863,7 @@ The stock level is $x(0)$, not $x'(0)$. The number $-3$ is a rate. The statement
 A negative derivative means the function is locally decreasing. The statement is True.`,
       `**D.** → True
 
-The linear approximation $x(\\\\Delta t)-x(0)\\\\approx x'(0)\\\\Delta t=-3\\\\Delta t$ says exactly that. The statement is True.`,
+The linear approximation $x(\\Delta t)-x(0)\\approx x'(0)\\Delta t=-3\\Delta t$ says exactly that. The statement is True.`,
       `**E.** → False
 
 A decreasing positive stock can still be large. The sign of the derivative does not force the sign of the level. The statement is False.`,
@@ -3848,11 +3879,11 @@ A decreasing positive stock can still be large. The sign of the derivative does 
     title: "What marginal revenue does not say",
     subsection: "11.2",
     context:
-      "A ticket office faces revenue $R(q)$ from selling $q$ tickets. It reports $R'(80)=12$ euros per ticket. Judge every assertion below.",
+      "A ticket office faces revenue $R(Q)$ from selling $Q$ tickets. It reports $R'(80)=12$ euros per ticket. Judge every assertion below.",
     statements: [
       "Near $80$ tickets, selling one more ticket raises revenue by about $12$ euros.",
       "The report $R'(80)=12$ means that each of the $80$ tickets was sold for $12$ euros.",
-      "The report alone does not reveal the price schedule $p(q)$.",
+      "The report alone does not reveal the price schedule $p(Q)$.",
       "If marginal cost at $80$ tickets is $15$ euros, then selling a little more than $80$ would lower profit.",
       "If marginal cost at $80$ tickets is $9$ euros, then selling a little more than $80$ would raise profit.",
     ],
@@ -3863,16 +3894,16 @@ A decreasing positive stock can still be large. The sign of the derivative does 
 That is the standard one-unit reading of $R'(80)=12$. The statement is True.`,
       `**B.** → False
 
-Average price would involve $R(80)/80$, and the posted price is $p(80)$. Neither is given by $R'(80)$. The statement is False.`,
+Average price would involve $\\dfrac{R(80)}{80}$, and the posted price is $p(80)$. Neither is given by $R'(80)$. The statement is False.`,
       `**C.** → True
 
 Many different price schedules can produce the same marginal revenue at one point. The statement is True.`,
       `**D.** → True
 
-Here $R'(80)<C'(80)$, so $\\\\pi'(80)<0$ and a small increase in sales reduces profit. The statement is True.`,
+Here $R'(80)<C'(80)$, so $P'(80)<0$ and a small increase in sales reduces profit. The statement is True.`,
       `**E.** → True
 
-Here $R'(80)>C'(80)$, so $\\\\pi'(80)>0$ and a small increase in sales raises profit. The statement is True.`,
+Here $R'(80)>C'(80)$, so $P'(80)>0$ and a small increase in sales raises profit. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 56,
@@ -3887,8 +3918,8 @@ Here $R'(80)>C'(80)$, so $\\\\pi'(80)>0$ and a small increase in sales raises pr
     context:
       "A manager says: \"Produce a little more whenever the extra revenue from a little more output exceeds the extra cost.\" Decide TRUE or FALSE for each claim.",
     statements: [
-      "In calculus language, the manager's rule is: increase $q$ a little when $R'(q)>C'(q)$.",
-      "The same rule can be written: increase $q$ a little when $\\pi'(q)>0$.",
+      "In calculus language, the manager's rule is: increase $Q$ a little when $R'(Q)>C'(Q)$.",
+      "The same rule can be written: increase $Q$ a little when $P'(Q)>0$.",
       "The manager's rule is equivalent to maximizing revenue regardless of cost.",
       "If extra revenue and extra cost are equal for a small expansion, marginal profit is zero there.",
       "The manager's comparison of \"extra revenue\" and \"extra cost\" is precisely a comparison of two derivatives.",
@@ -3897,19 +3928,19 @@ Here $R'(80)>C'(80)$, so $\\\\pi'(80)>0$ and a small increase in sales raises pr
     tactical_explanations: [
       `**A.** → True
 
-\\"Extra revenue\\" and \\"extra cost\\" for a small expansion are the marginal revenue and marginal cost. The statement is True.`,
+\"Extra revenue\" and \"extra cost\" for a small expansion are the marginal revenue and marginal cost. The statement is True.`,
       `**B.** → True
 
-Because $\\\\pi'=R'-C'$, the inequality $R'>C'$ is identical to $\\\\pi'>0$. The statement is True.`,
+Because $P'=R'-C'$, the inequality $R'>C'$ is identical to $P'>0$. The statement is True.`,
       `**C.** → False
 
-The rule explicitly uses cost through $C'$. It is a profit logic, not a pure revenue logic. The statement is False.`,
+The rule explicitly uses cost through $C'(Q)$. It is a profit logic, not a pure revenue logic. The statement is False.`,
       `**D.** → True
 
-Equal extras mean $R'=C'$, hence $\\\\pi'=0$. The statement is True.`,
+Equal extras mean $R'=C'$, hence $P'=0$. The statement is True.`,
       `**E.** → True
 
-That is the modelling step that turns the manager's words into $R'(q)$ and $C'(q)$. The statement is True.`,
+That is the modelling step that turns the manager's words into $R'(Q)$ and $C'(Q)$. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 57,
@@ -3922,7 +3953,7 @@ That is the modelling step that turns the manager's words into $R'(q)$ and $C'(q
     title: "Utility average versus marginal utility",
     subsection: "11.2",
     context:
-      "A student's satisfaction after $x>0$ hours of study is $U(x)$. Average satisfaction is $A(x)=U(x)/x$, and marginal utility is $U'(x)$. Which of the following hold?",
+      "A student's satisfaction after $x>0$ hours of study is $U(x)$. Average satisfaction is $A(x)=\\dfrac{U(x)}{x}$, and marginal utility is $U'(x)$. Which of the following hold?",
     statements: [
       "Maximizing $U(x)$ is not the same problem as maximizing $A(x)$.",
       "If $U'(x)=0$ at some $x>0$, then average satisfaction is automatically maximized there.",
@@ -3934,13 +3965,13 @@ That is the modelling step that turns the manager's words into $R'(q)$ and $C'(q
     tactical_explanations: [
       `**A.** → True
 
-One objective looks at the height of $U$; the other looks at the quotient $U/x$. Their critical points generally differ. The statement is True.`,
+One objective looks at the height of $U(x)$; the other looks at the quotient $\\dfrac{U}{x}$. Their critical points generally differ. The statement is True.`,
       `**B.** → False
 
 $U'=0$ maximizes (or stationarizes) total utility, not average utility. The average-utility first-order condition is $U'=A$, not $U'=0$. The statement is False.`,
       `**C.** → True
 
-Write $A=U/x$. Then $A'=0$ yields $xU'-U=0$, hence $U'=U/x=A$. The statement is True.`,
+Write $A=\\dfrac{U}{x}$. Then $A'=0$ yields $xU'-U=0$, hence $U'=\\dfrac{U}{x}=A$. The statement is True.`,
       `**D.** → True
 
 That is the plain-language reading of a zero derivative. The statement is True.`,
@@ -3959,13 +3990,13 @@ Average satisfaction can fall even while total utility still rises, once utility
     title: "Cost alone cannot give marginal revenue",
     subsection: "11.2",
     context:
-      "An analyst is given only a cost function $C(q)$ for a firm, with no demand or revenue information. Decide TRUE or FALSE for each claim.",
+      "An analyst is given only a cost function $C(Q)$ for a firm, with no demand or revenue information. Decide TRUE or FALSE for each claim.",
     statements: [
-      "From $C$ alone one can compute marginal cost $C'(q)$.",
-      "From $C$ alone one can compute marginal revenue $R'(q)$.",
-      "From $C$ alone one can compute marginal profit $\\pi'(q)$.",
-      "Without a revenue function, the comparison \"$R'(q)$ versus $C'(q)$\" cannot be carried out numerically.",
-      "If a second analyst later supplies $R(q)$, then marginal profit becomes $R'(q)-C'(q)$.",
+      "From $C$ alone one can compute marginal cost $C'(Q)$.",
+      "From $C$ alone one can compute marginal revenue $R'(Q)$.",
+      "From $C$ alone one can compute marginal profit $P'(Q)$.",
+      "Without a revenue function, the comparison \"$R'(Q)$ versus $C'(Q)$\" cannot be carried out numerically.",
+      "If a second analyst later supplies $R(Q)$, then marginal profit becomes $R'(Q)-C'(Q)$.",
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
@@ -3983,7 +4014,7 @@ Profit needs both revenue and cost. Cost alone is not enough. The statement is F
 One side of the comparison is missing, so the numerical test cannot be run. The statement is True.`,
       `**E.** → True
 
-Once both functions are known, $\\\\pi'=R'-C'$ follows at once. The statement is True.`,
+Once both functions are known, $P'=R'-C'$ follows at once. The statement is True.`,
     ],
     difficulty_level: "3/5",
     sort_order: 59,
@@ -3996,35 +4027,4582 @@ Once both functions are known, $\\\\pi'=R'-C'$ follows at once. The statement is
     title: "A story with three labelled derivatives",
     subsection: "11.2",
     context:
-      "A workshop produces $q$ chairs. Revenue is $R(q)$, cost is $C(q)$, and profit is $\\pi(q)=R(q)-C(q)$. At the current output the workshop posts three numbers: $R'(q)=18$, $C'(q)=11$, and $\\pi'(q)=7$. Judge every assertion below.",
+      "A workshop produces $Q$ chairs. Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P(Q)=R(Q)-C(Q)$. At the current output the workshop posts three numbers: $R'(Q)=18$, $C'(Q)=11$, and $P'(Q)=7$. Judge every assertion below.",
     statements: [
       "The three posted numbers are consistent with each other.",
       "Near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost.",
       "Near the current output, one more chair adds about $7$ euros of profit.",
       "Because profit is already positive at the rate of $7$ euros per chair, total profit must equal $7$ euros.",
-      "If the workshop instead faced $R'(q)=11$ and $C'(q)=18$ at some other output, a small expansion there would reduce profit.",
+      "If the workshop instead faced $R'(Q)=11$ and $C'(Q)=18$ at some other output, a small expansion there would reduce profit.",
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-Consistency requires $\\\\pi'=R'-C'$. Here $18-11=7$, so the triple matches. The statement is True.`,
+Consistency requires $P'=R'-C'$. Here $18-11=7$, so the triple matches. The statement is True.`,
       `**B.** → True
 
 Those are the one-unit readings of the two derivatives. The statement is True.`,
       `**C.** → True
 
-Likewise for $\\\\pi'(q)=7$. The statement is True.`,
+Likewise for $P'(Q)=7$. The statement is True.`,
       `**D.** → False
 
-The number $7$ is a rate of change of profit, not the level $\\\\pi(q)$. The statement is False.`,
+The number $7$ is a rate of change of profit, not the level $P(Q)$. The statement is False.`,
       `**E.** → True
 
-Then $\\\\pi'=11-18=-7<0$, so a small expansion lowers profit. The statement is True.`,
+Then $P'=11-18=-7<0$, so a small expansion lowers profit. The statement is True.`,
     ],
     difficulty_level: "4/5",
     sort_order: 60,
     solution_overview:
       "Check consistency of reported marginal revenue, cost, and profit, and interpret each number in words.",
+  },
+  {
+    id: "math-11-61",
+    case_id: "MATH 11.61",
+    title: "Two bakeries, same output, opposite advice",
+    subsection: "11.2",
+    context:
+      "Two neighbourhood bakeries both sold exactly $Q=10$ cakes today, but their evenings look very different. At bakery A the next cake would still bring in about $R_A'(10)=9$ euros of revenue while costing only about $C_A'(10)=6$ euros to bake, and today's total profit sits at $P_A(10)=40$ euros. At bakery B the next cake would bring in only about $R_B'(10)=5$ euros while costing about $C_B'(10)=7$ euros, yet B already earned a much larger total profit $P_B(10)=90$ euros. Profit means $P(Q)=R(Q)-C(Q)$ for each bakery. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Bakery A's numbers imply $P_A'(10)=3$.",
+      "Near $10$ cakes, bakery B's profit falls if it bakes a little more.",
+      "Because $P_B(10)>P_A(10)$, bakery B should expand and bakery A should not.",
+      "A small extra cake raises A's profit by about $3$ euros and lowers B's profit by about $2$ euros.",
+      "The higher profit level at B already tells you that B's marginal profit is larger."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Profit is revenue minus cost, so marginal profit is the difference of the two derivatives:
+
+$$
+P_A'(Q)=R_A'(Q)-C_A'(Q).
+$$
+
+Plug in the bakery-A reports at $Q=10$:
+
+$$
+P_A'(10)=9-6=3.
+$$
+
+So A's posted numbers already force $P_A'(10)=3$.
+
+The statement is True.`,
+      `**B.** → True
+
+For bakery B the same identity gives
+
+$$
+P_B'(10)=R_B'(10)-C_B'(10)=5-7=-2.
+$$
+
+A negative derivative means the profit function is locally decreasing. Near $10$ cakes, baking a little more therefore lowers B's profit.
+
+The statement is True.`,
+      `**C.** → False
+
+The expansion test asks whether profit is still rising, which is the sign of $P'(Q)$, not the size of today's profit stock $P(Q)$.
+
+Here
+
+$$
+P_A'(10)=3>0,\\qquad P_B'(10)=-2<0.
+$$
+
+So a small expansion raises A's profit and lowers B's, even though B currently has the larger total $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice.
+
+The statement is False.`,
+      `**D.** → True
+
+The one-unit reading of a derivative says that a small extra cake changes profit by about $P'(10)$ euros.
+
+From earlier,
+
+$$
+P_A'(10)=3,\\qquad P_B'(10)=-2.
+$$
+
+So the extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros.
+
+The statement is True.`,
+      `**E.** → False
+
+$P_B(10)=90$ is a level (how much profit B has already earned today). $P_B'(10)=-2$ is a rate (how that profit changes if B bakes a little more).
+
+A large positive stock can sit on a downward slope. Knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 61,
+    solution_overview:
+      "Two bakeries share today's output but not today's slopes: expand when $P'(Q)=R'(Q)-C'(Q)>0$, not when total profit $P(Q)$ is larger.",
+  },
+  {
+    id: "math-11-62",
+    case_id: "MATH 11.62",
+    title: "Overtime cost after fifty units",
+    subsection: "11.2",
+    context:
+      "A small workshop can run its regular crew for up to $50$ units a week. Up to that point every unit costs a steady $12$ euros of labour and materials, so weekly cost is $C(Q)=12Q$ whenever $0\\le Q\\le 50$. Beyond $50$ units the crew must be paid overtime: the workshop still pays the $600$ euros already spent on the first $50$ units, and then $20$ euros for each extra unit, which is written $C(Q)=600+20(Q-50)$ when $Q>50$. Customers are willing to pay enough that marginal revenue stays at $R'(Q)=16$ euros per unit for every $Q>0$. Judge every assertion below.",
+    statements: [
+      "For $Q<50$, marginal cost is $12$ euros per unit.",
+      "Crossing into overtime raises the cost of an extra unit by $8$ euros relative to the regular-crew schedule.",
+      "Just above $50$, overtime still leaves $R'(Q)>C'(Q)$.",
+      "At $Q=40$, a small expansion raises profit.",
+      "Average cost $\\dfrac{C(Q)}{Q}$ equals $12$ for every $Q>50$."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
+
+$$
+C'(Q)=12\\qquad\\text{for }Q<50.
+$$
+
+So before overtime kicks in, each extra unit adds $12$ euros of cost.
+
+The statement is True.`,
+      `**B.** → True
+
+Rewrite the overtime formula by expanding the brackets:
+
+$$
+C(Q)=600+20(Q-50)=20Q-400.
+$$
+
+Differentiating the overtime piece gives $C'(Q)=20$ for $Q>50$. Relative to the regular-crew slope $12$,
+
+$$
+20-12=8.
+$$
+
+So overtime raises the cost of an extra unit by $8$ euros.
+
+The statement is True.`,
+      `**C.** → False
+
+Just above $Q=50$ the workshop is already on overtime, so $C'(Q)=20$. Marginal revenue is still $R'(Q)=16$. Then
+
+$$
+R'(Q)-C'(Q)=16-20=-4<0,
+$$
+
+hence $R'(Q)<C'(Q)$, not $R'(Q)>C'(Q)$.
+
+The statement is False.`,
+      `**D.** → True
+
+At $Q=40$ the workshop is still on the regular piece, so $C'(40)=12$. Compare with revenue:
+
+$$
+P'(40)=R'(40)-C'(40)=16-12=4>0.
+$$
+
+A positive derivative means a small expansion raises profit at $Q=40$.
+
+The statement is True.`,
+      `**E.** → False
+
+Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
+
+$$
+\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}=20-\\dfrac{400}{Q}.
+$$
+
+The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, so average cost approaches $20$ from below. It equals $12$ only at the isolated handover point $Q=50$, not for every overtime output.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 62,
+    solution_overview:
+      "The overtime kink changes marginal cost from $12$ to $20$. Measure that gap, compare each piece with $R'(Q)=16$, and keep average cost $\\dfrac{C(Q)}{Q}$ separate from $C'(Q)$.",
+  },
+  {
+    id: "math-11-63",
+    case_id: "MATH 11.63",
+    title: "Only marginal profit and marginal cost are posted",
+    subsection: "11.2",
+    context:
+      "A station kiosk posts two numbers on its whiteboard at the current sales level: marginal profit $P'(Q)=4$ and marginal cost $C'(Q)=11$. It does not post revenue. A passer-by glances at the board, invents the price schedule $p(Q)=30-\\dfrac{Q}{10}$, and claims that this posted price is already the same thing as marginal revenue. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The implied marginal revenue is $R'(Q)=15$.",
+      "A small extra sale raises profit, so the kiosk should expand a little.",
+      "The passer-by's claim that $p(Q)$ equals marginal revenue is guaranteed by the posted numbers.",
+      "The posted $P'(Q)=4$ is not the same information as the current profit level $P(Q)$.",
+      "If instead the kiosk had posted $P'(Q)=-4$ with the same $C'(Q)=11$, implied $R'(Q)$ would be $7$."
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+By definition $P'(Q)=R'(Q)-C'(Q)$. Rearrange to recover the missing marginal revenue:
+
+$$
+R'(Q)=P'(Q)+C'(Q)=4+11=15.
+$$
+
+The whiteboard's two numbers therefore imply $R'(Q)=15$.
+
+The statement is True.`,
+      `**B.** → True
+
+The kiosk itself posted $P'(Q)=4>0$. A positive marginal profit means profit is locally increasing, so a small extra sale raises profit and a little expansion is recommended.
+
+The statement is True.`,
+      `**C.** → False
+
+The posted pair determines only $R'(Q)=15$. It does not determine the price schedule $p(Q)$.
+
+Even if someone writes down $p(Q)=30-\\dfrac{Q}{10}$, that function equals marginal revenue only if it has been shown to equal $15$ at this $Q$. Under a downward-sloping price, the product rule usually gives $R'(Q)=p(Q)+Q\\cdot p'(Q)<p(Q)$, so price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R'(Q)$.
+
+The statement is False.`,
+      `**D.** → True
+
+$P'(Q)=4$ is a rate of change of profit near the current output. The current profit level is the height $P(Q)$, which was never posted. A slope of $4$ is compatible with many different heights.
+
+The statement is True.`,
+      `**E.** → True
+
+Repeat the same rearrangement with the alternative report $P'(Q)=-4$ and the same $C'(Q)=11$:
+
+$$
+R'(Q)=P'(Q)+C'(Q)=-4+11=7.
+$$
+
+So the implied marginal revenue would be $7$.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 63,
+    solution_overview:
+      "Rearrange $P'(Q)=R'(Q)-C'(Q)$ to recover a missing $R'(Q)$, keep price $p(Q)$ distinct from $R'(Q)$, and remember that $P'(Q)$ is a slope rather than a profit stock.",
+  },
+  {
+    id: "math-11-64",
+    case_id: "MATH 11.64",
+    title: "Two cinemas: price versus extra ticket revenue",
+    subsection: "11.2",
+    context:
+      "Two city cinemas are deciding whether to sell one more ticket tonight. Cinema A currently charges $p_A=12$ euros per ticket, but because a lower price is needed to fill an extra seat, the extra revenue from that seat is only $R_A'(Q_A)=7$ euros. Cinema B currently charges $p_B=10$ euros and reports that the extra ticket would add the full $R_B'(Q_B)=10$ euros of revenue. Both cinemas face the same marginal cost $C'(Q)=8$ euros for one more viewer. Which of the following hold?",
+    statements: [
+      "At cinema A, the extra revenue from one more ticket is about $7$ euros, not $12$.",
+      "Cinema B's numbers are consistent with a price that does not have to be cut to sell one more ticket.",
+      "Cinema A should expand a little, because its price $12$ exceeds marginal cost $8$.",
+      "Cinema B should expand a little, because $R_B'(Q_B)>C_B'(Q_B)$.",
+      "The comparison $p_A>p_B$ already decides which cinema has the larger marginal profit."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The economic question "how many extra euros does one more ticket bring in?" is answered by marginal revenue $R_A'(Q_A)$, not by the sticker price $p_A$.
+
+Cinema A reports $R_A'(Q_A)=7$, so the extra ticket is worth about $7$ euros of revenue even though the current price is $12$.
+
+The statement is True.`,
+      `**B.** → True
+
+When price need not fall to sell a little more, the product-rule penalty $Q\\cdot p'(Q)$ is zero and $R'(Q)=p(Q)$.
+
+Cinema B reports $R_B'(Q_B)=10=p_B$, which is exactly that situation.
+
+The statement is True.`,
+      `**C.** → False
+
+A's expansion test compares extra revenue with extra cost:
+
+$$
+P_A'(Q_A)=R_A'(Q_A)-C'=7-8=-1<0.
+$$
+
+The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit.
+
+The statement is False.`,
+      `**D.** → True
+
+For cinema B,
+
+$$
+P_B'(Q_B)=R_B'(Q_B)-C'=10-8=2>0.
+$$
+
+So $R_B'(Q_B)>C_B'(Q_B)$ and a small expansion raises B's profit.
+
+The statement is True.`,
+      `**E.** → False
+
+Marginal profit is $R'(Q)-C'(Q)$, not a ranking of sticker prices. Here
+
+$$
+P_A'(Q_A)=7-8=-1,\\qquad P_B'(Q_B)=10-8=2.
+$$
+
+A has the higher price but the lower (in fact negative) marginal profit. The comparison $p_A>p_B$ does not decide the expansion ranking.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 64,
+    solution_overview:
+      "Force each cinema's expand-or-not test to use $R'(Q)$ rather than the posted price, then compare the two marginal profits.",
+  },
+  {
+    id: "math-11-65",
+    case_id: "MATH 11.65",
+    title: "Happy-hour revenue after twenty drinks",
+    subsection: "11.2",
+    context:
+      "A riverside bar runs a happy-hour promotion for the first $20$ drinks of the evening: each of those drinks brings in a steady $15$ euros, so revenue is $R(Q)=15Q$ while $0\\le Q\\le 20$. After the twentieth drink the promotion ends and later drinks add only $8$ euros each, which the manager writes as $R(Q)=300+8(Q-20)$ for $Q>20$. Mixing and serving costs rise at a constant $C'(Q)=10$ euros per drink all evening. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "For $Q<20$, marginal revenue is $15$.",
+      "After happy hour ends, each extra drink adds only $8$ euros of revenue, which is already below the constant marginal cost $10$.",
+      "At $Q=12$, a small extra drink raises profit.",
+      "At $Q=25$, post-promotion revenue still beats cost at the margin.",
+      "Because the first $20$ drinks each bring in $15$ euros, the extra drink at $Q=25$ also brings in $15$ euros."
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+During happy hour the revenue rule is $R(Q)=15Q$. Differentiating that piece gives
+
+$$
+R'(Q)=15\\qquad\\text{for }Q<20.
+$$
+
+So before the twentieth drink, each extra drink adds $15$ euros of revenue.
+
+The statement is True.`,
+      `**B.** → True
+
+After happy hour,
+
+$$
+R(Q)=300+8(Q-20)=8Q+140,
+$$
+
+so $R'(Q)=8$ for $Q>20$. The serving cost stays at $C'(Q)=10$, and
+
+$$
+8<10.
+$$
+
+Post-promotion extra revenue therefore already lies below marginal cost.
+
+The statement is True.`,
+      `**C.** → True
+
+At $Q=12$ the bar is still in happy hour, so $R'(12)=15$. Cost adds $C'(12)=10$. Therefore
+
+$$
+P'(12)=15-10=5>0.
+$$
+
+A small extra drink raises profit at $Q=12$.
+
+The statement is True.`,
+      `**D.** → False
+
+At $Q=25$ the bar is past happy hour, so $R'(25)=8$. Then
+
+$$
+P'(25)=8-10=-2<0.
+$$
+
+Post-promotion revenue does not beat cost at the margin; a small extra drink lowers profit.
+
+The statement is False.`,
+      `**E.** → False
+
+The first $20$ drinks were sold under the happy-hour rule, but the extra drink at $Q=25$ is sold under the post-promotion rule. Its extra revenue is the current derivative $R'(25)=8$, not the old $15$.
+
+Intramarginal drinks do not set today's marginal revenue.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 65,
+    solution_overview:
+      "Happy hour changes the revenue slope from $15$ to $8$ at $Q=20$. Compare each piece with the constant $C'(Q)=10$.",
+  },
+  {
+    id: "math-11-66",
+    case_id: "MATH 11.66",
+    title: "What an expansion recommendation already contains",
+    subsection: "11.2",
+    context:
+      "A consultant visits a factory and says only this sentence: at the current output $Q$, a small increase in production would raise profit. Separately, the factory's cost office reports that marginal cost is $C'(Q)=14$ euros. No revenue formula is supplied. Judge every assertion below.",
+    statements: [
+      "The advice already means $P'(Q)>0$.",
+      "The advice already means $R'(Q)>14$.",
+      "The advice tells you the current profit level $P(Q)$.",
+      "The advice tells you the average cost $\\dfrac{C(Q)}{Q}$.",
+      "If a second adviser, at the same $Q$, claimed $R'(Q)=11$, that second claim would contradict the first."
+    ],
+    answer_key: [true, true, false, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+In calculus language, "a small increase in output would raise profit" is exactly the meaning of a positive derivative of profit:
+
+$$
+P'(Q)>0.
+$$
+
+The consultant's sentence is therefore already the statement $P'(Q)>0$.
+
+The statement is True.`,
+      `**B.** → True
+
+Profit satisfies $P'(Q)=R'(Q)-C'(Q)$. With the cost office's report $C'(Q)=14$, the inequality $P'(Q)>0$ becomes
+
+$$
+R'(Q)-14>0\\qquad\\Leftrightarrow\\qquad R'(Q)>14.
+$$
+
+So the advice already forces marginal revenue to exceed $14$.
+
+The statement is True.`,
+      `**C.** → False
+
+$P'(Q)>0$ only says that profit is locally rising. It does not identify the height $P(Q)$ of today's profit. Many different profit levels are compatible with the same positive slope.
+
+The statement is False.`,
+      `**D.** → False
+
+Average cost $\\dfrac{C(Q)}{Q}$ is a quotient of levels. Knowing that $P'(Q)>0$ and $C'(Q)=14$ does not determine that quotient.
+
+The statement is False.`,
+      `**E.** → True
+
+If $R'(Q)=11$ while $C'(Q)=14$, then
+
+$$
+P'(Q)=11-14=-3<0,
+$$
+
+which says that a small expansion lowers profit. That directly contradicts the first adviser's claim that a small expansion raises profit.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 66,
+    solution_overview:
+      "Translate a verbal expansion recommendation into $P'(Q)>0$, then into the bound $R'(Q)>C'(Q)$ on the unobserved marginal revenue.",
+  },
+  {
+    id: "math-11-67",
+    case_id: "MATH 11.67",
+    title: "Two plants, one market price for the extra unit",
+    subsection: "11.2",
+    context:
+      "A manufacturer can produce one more small unit either in Plant 1 or in Plant 2 and will sell that unit in the same market either way. Plant 1 is currently cheaper at the margin: $C_1'(Q_1)=9$ euros. Plant 2 is more expensive at the margin: $C_2'(Q_2)=13$ euros. Whichever plant makes the unit, the extra sale adds $R'=11$ euros of revenue. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Producing the extra unit in Plant 1 raises the firm's profit.",
+      "Plant 2 should produce the extra unit because both plants sell into the same market.",
+      "The firm should prefer Plant 1 for that extra unit because Plant 1 has the lower marginal cost.",
+      "Because both plants belong to one firm, the two marginal costs must be equal.",
+      "If the extra unit's revenue were instead $R'=8$, then neither plant should produce it."
+    ],
+    answer_key: [true, false, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Send the extra unit to Plant 1 and compare extra revenue with Plant 1's extra cost:
+
+$$
+P_1'=R'-C_1'(Q_1)=11-9=2>0.
+$$
+
+Producing that unit in Plant 1 therefore raises the firm's profit.
+
+The statement is True.`,
+      `**B.** → False
+
+Sharing one market only means both plants face the same extra revenue $R'=11$. It does not make Plant 2 profitable:
+
+$$
+P_2'=11-13=-2<0.
+$$
+
+Plant 2 should not produce the extra unit.
+
+The statement is False.`,
+      `**C.** → True
+
+With a common $R'=11$, the extra unit is profitable only where marginal cost lies below $11$. That is Plant 1 ($C_1'=9$), not Plant 2 ($C_2'=13$).
+
+Preferring the plant with the lower marginal cost is exactly the right ranking here.
+
+The statement is True.`,
+      `**D.** → False
+
+Nothing in the story forces the two plants to have equal marginal costs. The reported figures are already different: $9$ versus $13$. Common ownership does not erase that difference.
+
+The statement is False.`,
+      `**E.** → True
+
+If instead $R'=8$, then
+
+$$
+8<9\\qquad\\text{and}\\qquad 8<13,
+$$
+
+so $P'<0$ in both plants. Neither plant should produce that extra unit.
+
+The statement is True.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 67,
+    solution_overview:
+      "Apply the $R'(Q)$ versus $C'(Q)$ test separately to each plant, then compare the two marginal costs under a common market revenue.",
+  },
+  {
+    id: "math-11-68",
+    case_id: "MATH 11.68",
+    title: "A two-bracket income tax",
+    subsection: "11.2",
+    context:
+      "A country's income tax has two brackets. On the first $1000$ euros of income the tax office takes one fifth, so $T(y)=\\dfrac{1}{5}y$ whenever $0\\le y\\le 1000$. Above $1000$ euros the taxpayer still owes the $200$ euros already due on the first bracket, and then two fifths of every euro beyond $1000$, which is written $T(y)=200+\\dfrac{2}{5}(y-1000)$ for $y>1000$. Which of the following hold?",
+    statements: [
+      "For $y<1000$, the marginal tax rate is $\\dfrac{1}{5}$.",
+      "Crossing $y=1000$ raises the tax on an extra euro from one fifth to two fifths.",
+      "At $y=1500$, the average tax rate equals $\\dfrac{2}{5}$.",
+      "At $y=1500$, about $40$ cents of a small extra euro of income is taxed away.",
+      "Knowing only the average tax rate at $y=1500$ is enough to recover the second-bracket slope."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+On the first bracket the tax rule is $T(y)=\\dfrac{1}{5}y$. Differentiating that piece gives
+
+$$
+T'(y)=\\dfrac{1}{5}\\qquad\\text{for }y<1000.
+$$
+
+So the marginal tax rate below $1000$ is one fifth.
+
+The statement is True.`,
+      `**B.** → True
+
+On the second bracket,
+
+$$
+T(y)=200+\\dfrac{2}{5}(y-1000),
+$$
+
+so $T'(y)=\\dfrac{2}{5}$ for $y>1000$. Crossing $y=1000$ therefore raises the tax on an extra euro from $\\dfrac{1}{5}$ to $\\dfrac{2}{5}$.
+
+The statement is True.`,
+      `**C.** → False
+
+At $y=1500$ the taxpayer is in the second bracket, so
+
+$$
+T(1500)=200+\\dfrac{2}{5}\\cdot 500=200+200=400.
+$$
+
+The average tax rate is the quotient of total tax over income:
+
+$$
+\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}.
+$$
+
+That is not equal to the second-bracket slope $\\dfrac{2}{5}=\\dfrac{6}{15}$. Average and marginal rates differ because the first $1000$ euros were taxed more lightly.
+
+The statement is False.`,
+      `**D.** → True
+
+At $y=1500$ the relevant rate for a small extra euro is the second-bracket derivative
+
+$$
+T'(1500)=\\dfrac{2}{5}=0.4.
+$$
+
+About $40$ cents of that extra euro is taxed away.
+
+The statement is True.`,
+      `**E.** → False
+
+The average $\\dfrac{4}{15}$ mixes both brackets. Many different second-bracket slopes could be combined with the first bracket to produce that same average at $y=1500$. Knowing only the average does not recover $T'(1500)$.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 68,
+    solution_overview:
+      "Read the piecewise tax on each side of the bracket, compute the average $\\dfrac{T(y)}{y}$ carefully, and keep it distinct from $T'(y)$.",
+  },
+  {
+    id: "math-11-69",
+    case_id: "MATH 11.69",
+    title: "Falling average cost plus a reported R'",
+    subsection: "11.2",
+    context:
+      "A flour mill reports that its current average cost is $A(Q)=\\dfrac{C(Q)}{Q}=12$ euros per sack and that this average cost is currently falling as output rises. Separately, the sales desk reports marginal revenue $R'(Q)=10$. Total cost itself is not shown. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Falling average cost implies $C'(Q)<A(Q)$, hence $C'(Q)<12$.",
+      "The reports already imply $C'(Q)<10$.",
+      "The reports already imply $P'(Q)>0$.",
+      "Marginal cost could still exceed marginal revenue even while average cost is falling.",
+      "Differentiating $A(Q)$ would produce marginal cost."
+    ],
+    answer_key: [true, false, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Write $A(Q)=\\dfrac{C(Q)}{Q}$. A standard quotient-rule fact is that the sign of $A'(Q)$ matches the sign of $C'(Q)-A(Q)$.
+
+Falling average cost means $A'(Q)<0$, hence
+
+$$
+C'(Q)<A(Q)=12.
+$$
+
+The statement is True.`,
+      `**B.** → False
+
+$C'(Q)<12$ does not force $C'(Q)<10$. For example, marginal cost could be $11$: that is still below average cost $12$ (so average cost keeps falling) and still above marginal revenue $10$.
+
+The statement is False.`,
+      `**C.** → False
+
+Profit moves with $P'(Q)=R'(Q)-C'(Q)=10-C'(Q)$. Without knowing whether $C'(Q)$ lies below or above $10$, the sign of $P'(Q)$ is unsettled. Falling average cost alone does not imply $P'(Q)>0$.
+
+The statement is False.`,
+      `**D.** → True
+
+Take the concrete possibility $C'(Q)=11$. Then $C'(Q)<A(Q)=12$, so average cost is falling, while
+
+$$
+R'(Q)=10<11=C'(Q),
+$$
+
+so $P'(Q)<0$. Marginal cost can exceed marginal revenue even while average cost falls.
+
+The statement is True.`,
+      `**E.** → False
+
+Differentiating average cost produces $A'(Q)$, the rate of change of the average. Marginal cost is $C'(Q)$, the derivative of total cost. Those are different objects.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 69,
+    solution_overview:
+      "From $A'(Q)<0$ infer only $C'(Q)<A(Q)$, which is not enough to sign $P'(Q)=R'(Q)-C'(Q)$.",
+  },
+  {
+    id: "math-11-70",
+    case_id: "MATH 11.70",
+    title: "North posts formulas, South posts only P'",
+    subsection: "11.2",
+    context:
+      "Two rival snack firms both currently sell $Q=15$ packs a day, but they report information differently. Firm North posts full formulas: revenue $R_N(Q)=30Q$ and cost $C_N(Q)=18Q+40$. Firm South refuses to show revenue or cost and posts only its marginal profit schedule $P_S'(Q)=20-Q$. Judge every assertion below.",
+    statements: [
+      "North's marginal profit is $P_N'(Q)=12$ at every $Q$.",
+      "At $Q=15$, South's profit is still locally increasing.",
+      "At $Q=25$, South's profit is locally decreasing.",
+      "Because South's $P_S'(Q)$ depends on $Q$ while North's does not, South must currently earn less total profit.",
+      "North's extra unit always adds $12$ euros of profit; that fact uses $R_N'(Q)-C_N'(Q)$, not the intercept $40$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Differentiate North's formulas:
+
+$$
+R_N'(Q)=30,\\qquad C_N'(Q)=18.
+$$
+
+Therefore
+
+$$
+P_N'(Q)=30-18=12
+$$
+
+at every output, including the current $Q=15$.
+
+The statement is True.`,
+      `**B.** → True
+
+South posted $P_S'(Q)=20-Q$. At the current output,
+
+$$
+P_S'(15)=20-15=5>0.
+$$
+
+A positive derivative means South's profit is still locally increasing at $Q=15$.
+
+The statement is True.`,
+      `**C.** → True
+
+At the larger output $Q=25$,
+
+$$
+P_S'(25)=20-25=-5<0.
+$$
+
+South's profit is then locally decreasing.
+
+The statement is True.`,
+      `**D.** → False
+
+$P_S'(Q)$ is only a slope schedule. It does not identify the height $P_S(15)$ of South's current profit, nor does it compare that height with North's $P_N(15)$.
+
+A firm whose marginal profit depends on $Q$ can still be earning more, or less, total profit than a firm with constant marginal profit.
+
+The statement is False.`,
+      `**E.** → True
+
+North's cost has a fixed overhead of $40$ euros, but constants vanish upon differentiation. The extra-profit figure $12$ comes only from the slopes $30$ and $18$:
+
+$$
+P_N'(Q)=R_N'(Q)-C_N'(Q)=30-18=12.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 70,
+    solution_overview:
+      "One firm supplies $R$ and $C$; the other supplies only $P'(Q)$. Compare expansion advice without confusing rates with levels.",
+  },
+  {
+    id: "math-11-71",
+    case_id: "MATH 11.71",
+    title: "Leisure utility that flattens after eight hours",
+    subsection: "11.2",
+    context:
+      "A student measures satisfaction from leisure hours by a utility function that rises at a decreasing rate up to eight hours and then flattens: $U(x)=10x-\\dfrac{1}{2}x^{2}$ while $0\\le x\\le 8$, and $U(x)=48$ once $x>8$ (further leisure adds no more satisfaction). Decide TRUE or FALSE for each claim.",
+    statements: [
+      "For $x<8$, marginal utility is $U'(x)=10-x$.",
+      "At $x=6$, a little extra leisure still raises satisfaction.",
+      "For $x>8$, marginal utility is $0$.",
+      "Because $U(8)=48$, the eighth hour must have added $48$ units of utility.",
+      "Average utility $\\dfrac{U(x)}{x}$ at $x=12$ equals $4$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+On the first piece, differentiate term by term:
+
+$$
+U'(x)=10-x\\qquad\\text{for }x<8.
+$$
+
+That is the marginal utility before satiation.
+
+The statement is True.`,
+      `**B.** → True
+
+At $x=6$ one is still on the rising piece:
+
+$$
+U'(6)=10-6=4>0.
+$$
+
+A little extra leisure still raises satisfaction.
+
+The statement is True.`,
+      `**C.** → True
+
+For $x>8$ the utility rule is the constant $U(x)=48$. The derivative of a constant is zero, so
+
+$$
+U'(x)=0\\qquad\\text{for }x>8.
+$$
+
+After eight hours, extra leisure adds no satisfaction.
+
+The statement is True.`,
+      `**D.** → False
+
+$U(8)=48$ is the stock of utility after eight hours, not the contribution of the eighth hour alone.
+
+Approaching $x=8$ from the left, the eighth hour's extra is the first-piece derivative
+
+$$
+U'(8^{-})=10-8=2,
+$$
+
+not $48$. Confusing the level with the derivative is the error.
+
+The statement is False.`,
+      `**E.** → True
+
+At $x=12>8$ one is on the flat piece, so $U(12)=48$. Average utility is the quotient
+
+$$
+\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 71,
+    solution_overview:
+      "Differentiate the piecewise utility, read satiation as a zero derivative, and compute average utility as the fraction $\\dfrac{U(x)}{x}$.",
+  },
+  {
+    id: "math-11-72",
+    case_id: "MATH 11.72",
+    title: "Revenue slope and profit slope, cost missing",
+    subsection: "11.2",
+    context:
+      "Two print shops both currently face the same extra-revenue figure $R'(Q)=16$ euros per job, but they report different companions. The first shop also reports marginal profit $P'(Q)=-3$ and does not report cost. The second shop, at a different run length, reports marginal cost $C'(Q)=16$ instead of profit. Which of the following hold?",
+    statements: [
+      "The first printer's implied marginal cost is $C'(Q)=19$.",
+      "The first printer should print a little more.",
+      "The second printer's marginal profit is $0$.",
+      "Both printers have the same extra-revenue figure, so they have the same extra-profit figure.",
+      "The first printer's current total profit $P(Q)$ must equal $-3$."
+    ],
+    answer_key: [true, false, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+For the first printer, $P'(Q)=R'(Q)-C'(Q)$ rearranges to
+
+$$
+-3=16-C'(Q)\\qquad\\Rightarrow\\qquad C'(Q)=19.
+$$
+
+The missing marginal cost is therefore $19$.
+
+The statement is True.`,
+      `**B.** → False
+
+The first printer posted $P'(Q)=-3<0$. A negative marginal profit means that printing a little more lowers profit, so the shop should not expand.
+
+The statement is False.`,
+      `**C.** → True
+
+For the second printer,
+
+$$
+P'(Q)=R'(Q)-C'(Q)=16-16=0.
+$$
+
+Marginal profit is zero at that run length.
+
+The statement is True.`,
+      `**D.** → False
+
+Same $R'(Q)=16$ with different cost sides yields different profit sides: $-3$ at the first shop versus $0$ at the second. Equal extra revenue does not force equal extra profit.
+
+The statement is False.`,
+      `**E.** → False
+
+The number $-3$ is the slope $P'(Q)$, not the height of profit. The current total $P(Q)$ was never reported and need not equal $-3$.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 72,
+    solution_overview:
+      "Recover $C'(Q)$ from $R'(Q)$ and $P'(Q)$ for one firm, then contrast a second firm with the same $R'(Q)$ but $P'(Q)=0$.",
+  },
+  {
+    id: "math-11-73",
+    case_id: "MATH 11.73",
+    title: "The same firm before and after a per-unit tax",
+    subsection: "11.2",
+    context:
+      "Before any tax, a firm faces marginal revenue $R'(Q)=14$ and marginal cost $C'(Q)=10$ at its current output. The government then adds a per-unit tax of $5$ euros, so the new total cost becomes $\\widetilde{C}(Q)=C(Q)+5Q$ while the revenue schedule is left unchanged. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Before the tax, a small expansion raises profit.",
+      "After the tax, the relevant marginal cost is $15$.",
+      "After the tax, a small expansion raises profit.",
+      "The tax changes which function must be differentiated for the extra-cost side: the new cost $\\widetilde{C}$, not the old $C$.",
+      "Because revenue is unchanged, marginal revenue is still $14$ after the tax."
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Before the tax,
+
+$$
+P'(Q)=R'(Q)-C'(Q)=14-10=4>0.
+$$
+
+A small expansion raises pre-tax profit.
+
+The statement is True.`,
+      `**B.** → True
+
+After the tax the cost function is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
+
+$$
+\\widetilde{C}'(Q)=C'(Q)+5=10+5=15.
+$$
+
+The relevant marginal cost is therefore $15$.
+
+The statement is True.`,
+      `**C.** → False
+
+After the tax, compare the unchanged $R'(Q)=14$ with the new marginal cost $15$:
+
+$$
+P'(Q)=14-15=-1<0.
+$$
+
+A small expansion now lowers profit; it does not raise it.
+
+The statement is False.`,
+      `**D.** → True
+
+The economic question after the tax is about extra cost including the tax. That is the derivative of the new cost $\\widetilde{C}$, not of the old pre-tax $C$. Using the old $C'(Q)=10$ would ignore the $5$ euro tax on each extra unit.
+
+The statement is True.`,
+      `**E.** → True
+
+The story leaves the revenue schedule unchanged, so its derivative is still $R'(Q)=14$ after the tax. Only the cost side shifted.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 73,
+    solution_overview:
+      "Keep $R'(Q)$ fixed and shift only the cost function by a per-unit tax, then re-run the expansion test with $\\widetilde{C}'(Q)$.",
+  },
+  {
+    id: "math-11-74",
+    case_id: "MATH 11.74",
+    title: "Price follows one rule, then another",
+    subsection: "11.2",
+    context:
+      "A street vendor faces a two-piece inverse demand. While sales stay at most $30$ units, buyers require the price $p(Q)=40-Q$. Once sales exceed $30$, further units can only be sold at a flat clearance price $p(Q)=10$. Revenue is always $R(Q)=Q\\cdot p(Q)$, and packing cost rises at a constant $C'(Q)=12$ euros per unit. Judge every assertion below.",
+    statements: [
+      "For $Q<30$, $R(Q)=40Q-Q^{2}$ and $R'(Q)=40-2Q$.",
+      "Once clearance pricing begins, marginal revenue collapses to the flat price $10$.",
+      "At $Q=12$, a small expansion raises profit.",
+      "At $Q=35$, clearance pricing still leaves $R'(Q)>C'(Q)$.",
+      "At $Q=12$, extra revenue equals the posted price $p(12)=28$."
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+On the first piece, price is $p(Q)=40-Q$, so
+
+$$
+R(Q)=Q\\cdot(40-Q)=40Q-Q^{2}.
+$$
+
+Differentiating gives
+
+$$
+R'(Q)=40-2Q\\qquad\\text{for }Q<30.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+On the clearance piece the price is the constant $10$, so revenue becomes $R(Q)=10Q$ and
+
+$$
+R'(Q)=10\\qquad\\text{for }Q>30.
+$$
+
+That flat price is exactly the post-kink marginal revenue. The statement is True.`,
+      `**C.** → True
+
+At $Q=12$ one is on the first piece:
+
+$$
+R'(12)=40-2\\cdot 12=16.
+$$
+
+Compare with cost:
+
+$$
+P'(12)=16-12=4>0.
+$$
+
+A small expansion raises profit at $Q=12$.
+
+The statement is True.`,
+      `**D.** → False
+
+At $Q=35$ one is on the clearance piece, so $R'(35)=10$. Then
+
+$$
+R'(35)-C'(35)=10-12=-2<0,
+$$
+
+hence $R'(Q)<C'(Q)$ under clearance pricing, not $R'(Q)>C'(Q)$.
+
+The statement is False.`,
+      `**E.** → False
+
+At $Q=12$ the posted price is $p(12)=40-12=28$, but marginal revenue is $R'(12)=16$.
+
+The gap appears because selling one more unit also forces a price cut on previous units: the product rule gives $R'(Q)=p(Q)+Q\\cdot p'(Q)$ with $p'(Q)=-1<0$. Extra revenue is not the posted price.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 74,
+    solution_overview:
+      "Build $R(Q)$ from the piecewise price schedule, differentiate each piece, and only then compare with $C'(Q)$.",
+  },
+  {
+    id: "math-11-75",
+    case_id: "MATH 11.75",
+    title: "Cheaper on average is not cheaper at the margin",
+    subsection: "11.2",
+    context:
+      "Two courier firms can both take one more delivery at the same extra revenue $R'=7$ euros. Firm A currently has average cost $A_A=8$ and marginal cost $C_A'=5$. Firm B currently has average cost $A_B=6$ and marginal cost $C_B'=9$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Firm A's average cost is currently falling.",
+      "Firm B's average cost is currently rising.",
+      "Firm B is cheaper per unit on average, so B should produce the extra unit and A should not.",
+      "Only firm A has $R'>C'$ here.",
+      "The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B."
+    ],
+    answer_key: [true, true, false, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Average cost falls when marginal cost lies below average cost. For firm A,
+
+$$
+C_A'=5<8=A_A,
+$$
+
+so $A_A'(Q)<0$: A's average cost is currently falling.
+
+The statement is True.`,
+      `**B.** → True
+
+For firm B,
+
+$$
+C_B'=9>6=A_B,
+$$
+
+so $A_B'(Q)>0$: B's average cost is currently rising.
+
+The statement is True.`,
+      `**C.** → False
+
+The extra-unit test compares $R'(Q)$ with $C'(Q)$, not the two averages. Here
+
+$$
+7>5\\qquad\\text{at A, but}\\qquad 7<9\\qquad\\text{at B}.
+$$
+
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison.
+
+The statement is False.`,
+      `**D.** → True
+
+$R'=7$ exceeds $C_A'=5$ and falls short of $C_B'=9$. Only firm A satisfies $R'>C'$.
+
+The statement is True.`,
+      `**E.** → True
+
+The extra-profit figures are
+
+$$
+P_A'=7-5=2,\\qquad P_B'=7-9=-2.
+$$
+
+So the extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 75,
+    solution_overview:
+      "Use $C'(Q)$ versus $A$ to read whether average cost is falling, but use $R'(Q)$ versus $C'(Q)$ for the extra-unit test.",
+  },
+  {
+    id: "math-11-76",
+    case_id: "MATH 11.76",
+    title: "Zero profit versus zero extra profit",
+    subsection: "11.2",
+    context:
+      "Two recording studios report very different profit situations today. Studio A is already earning a solid total profit $P_A(Q)=50$ euros, but its profit has stopped rising: $P_A'(Q)=0$. Studio B is currently just breaking even with $P_B(Q)=0$, yet each extra unit would still add about $P_B'(Q)=4$ euros of profit. Judge every assertion below.",
+    statements: [
+      "Studio A is earning a positive profit stock, but a tiny output change leaves that profit locally unchanged.",
+      "Studio B is currently breaking even, yet a small expansion would start to create profit.",
+      "Studio A's $P_A'(Q)=0$ means A earns nothing.",
+      "Studio B should expand a little; studio A's first-order condition is already $R_A'(Q)=C_A'(Q)$.",
+      "Because B's current profit is $0$, B cannot have a positive marginal profit."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Studio A reports $P_A(Q)=50>0$ and $P_A'(Q)=0$. The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero.
+
+The statement is True.`,
+      `**B.** → True
+
+Studio B reports $P_B(Q)=0$ together with $P_B'(Q)=4>0$. Breaking even today is compatible with an upward slope: a small expansion would push profit above zero.
+
+The statement is True.`,
+      `**C.** → False
+
+Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$. The report $P_A'(Q)=0$ only says that profit is stationary at that output.
+
+The statement is False.`,
+      `**D.** → True
+
+$P_B'(Q)=4>0$ is an expansion signal for B. For A, $P_A'(Q)=0$ rearranges to $R_A'(Q)=C_A'(Q)$, the usual first-order condition.
+
+The statement is True.`,
+      `**E.** → False
+
+A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B'(Q)=4>0$. Current break-even does not forbid a positive marginal profit.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 76,
+    solution_overview:
+      "Put a profitable stationary firm next to a break-even firm with $P'(Q)>0$, and keep the height of profit distinct from its slope.",
+  },
+  {
+    id: "math-11-77",
+    case_id: "MATH 11.77",
+    title: "Weekday cost versus weekend cost",
+    subsection: "11.2",
+    context:
+      "The same café serves the same menu all week, but staffing costs change with the day. On weekdays cost is the linear rule $C_{\\mathrm{wd}}(Q)=12Q$; on weekends overtime staffing makes cost $C_{\\mathrm{we}}(Q)=20Q$. Customer demand is steady enough that marginal revenue is $R'(Q)=15$ on both kinds of day. Which of the following hold?",
+    statements: [
+      "On a weekday, $C_{\\mathrm{wd}}'(Q)=12$.",
+      "Weekend overtime raises the cost of an extra sale by $8$ euros relative to the weekday schedule.",
+      "A small extra sale raises profit on a weekday.",
+      "Because weekend revenue is still $R'(Q)=15$, weekend marginal profit equals the weekday figure $3$.",
+      "The weekday-versus-weekend switch changes the cost function that must be differentiated, not the meaning of $R'(Q)$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives
+
+$$
+C_{\\mathrm{wd}}'(Q)=12.
+$$
+
+So on a weekday each extra sale adds $12$ euros of cost. The statement is True.`,
+      `**B.** → True
+
+Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}'(Q)=20$. The weekday slope was $12$, and
+
+$$
+20-12=8.
+$$
+
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule. The statement is True.`,
+      `**C.** → True
+
+On a weekday,
+
+$$
+P'(Q)=R'(Q)-C_{\\mathrm{wd}}'(Q)=15-12=3>0.
+$$
+
+A positive marginal profit means a small extra sale raises weekday profit. The statement is True.`,
+      `**D.** → False
+
+Weekend marginal profit uses the weekend cost slope, not the weekday one:
+
+$$
+P'(Q)=R'(Q)-C_{\\mathrm{we}}'(Q)=15-20=-5.
+$$
+
+That is not equal to the weekday figure $3$. Same $R'(Q)$ with a higher $C'(Q)$ changes the profit slope. The statement is False.`,
+      `**E.** → True
+
+$R'(Q)=15$ is the same number both days. What changes is which cost schedule supplies $C'(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change. The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 77,
+    solution_overview:
+      "Treat weekday and weekend as two cost regimes: read the weekday slope, measure the overtime gap, then run the $R'(Q)$ versus $C'(Q)$ test without assuming equal marginal profits.",
+  },
+  {
+    id: "math-11-78",
+    case_id: "MATH 11.78",
+    title: "Extra revenue smaller than extra cost: two shops",
+    subsection: "11.2",
+    context:
+      "A reviewer writes of Shop L: \"At Shop L, the extra euros from a little more output are smaller than the extra euros of cost.\" Shop L also posts $R_L'(Q)=9$ and $P_L'(Q)=-4$. Across the street, Shop M faces the same extra-revenue figure $R_M'(Q)=9$ but reports marginal cost $C_M'(Q)=6$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The reviewer's sentence about Shop L already means $R_L'(Q)<C_L'(Q)$.",
+      "Shop L's implied marginal cost is $C_L'(Q)=13$.",
+      "Shop M does not satisfy the reviewer's sentence.",
+      "A small expansion raises profit at Shop M and lowers profit at Shop L.",
+      "Because both shops have the same $R'(Q)$, they have the same extra-cost figure."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+"Extra revenue smaller than extra cost" is precisely the inequality of derivatives
+
+$$
+R_L'(Q)<C_L'(Q).
+$$
+
+The reviewer's sentence is already that comparison.
+
+The statement is True.`,
+      `**B.** → True
+
+From $P_L'(Q)=R_L'(Q)-C_L'(Q)$ and the posted numbers,
+
+$$
+-4=9-C_L'(Q)\\qquad\\Rightarrow\\qquad C_L'(Q)=13.
+$$
+
+Shop L's implied marginal cost is $13$.
+
+The statement is True.`,
+      `**C.** → True
+
+At Shop M, $R_M'(Q)=9>6=C_M'(Q)$, so extra revenue is larger than extra cost. That is the opposite of the reviewer's sentence.
+
+The statement is True.`,
+      `**D.** → True
+
+Shop M has
+
+$$
+P_M'(Q)=9-6=3>0,
+$$
+
+while Shop L has $P_L'(Q)=-4<0$. A small expansion raises profit at M and lowers it at L.
+
+The statement is True.`,
+      `**E.** → False
+
+Both shops share $R'(Q)=9$, but their cost slopes differ: $C_L'(Q)=13$ versus $C_M'(Q)=6$. Same extra revenue does not force the same extra cost.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 78,
+    solution_overview:
+      "Translate a verbal $R'<C'$ claim, recover the missing $C'(Q)$ at one shop, and contrast a second shop with the same $R'(Q)$.",
+  },
+  {
+    id: "math-11-79",
+    case_id: "MATH 11.79",
+    title: "Profit itself is piecewise at capacity",
+    subsection: "11.2",
+    context:
+      "A maker of custom lamps can run its workshop smoothly up to capacity $Q=30$. In that range weekly profit is $P(Q)=8Q-\\dfrac{1}{10}Q^{2}$. Beyond capacity every extra lamp requires rushed outsourcing that eats profit: the firm still has the $150$ euros earned at capacity, and then loses $4$ euros on each unit above $30$, written $P(Q)=150-4(Q-30)$ for $Q>30$. Judge every assertion below.",
+    statements: [
+      "For $Q<30$, $P'(Q)=8-\\dfrac{1}{5}Q$.",
+      "At $Q=20$, a small expansion raises profit.",
+      "For $Q>30$, $P'(Q)=-4$.",
+      "Just above $Q=30$, a small expansion raises profit.",
+      "$P(30)=150$, so the firm earns $150$ euros of extra profit from the thirtieth unit."
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+On the pre-capacity piece,
+
+$$
+P(Q)=8Q-\\dfrac{1}{10}Q^{2},
+$$
+
+so
+
+$$
+P'(Q)=8-\\dfrac{2}{10}Q=8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+At $Q=20$,
+
+$$
+P'(20)=8-\\dfrac{1}{5}\\cdot 20=8-4=4>0.
+$$
+
+A small expansion raises profit at $Q=20$.
+
+The statement is True.`,
+      `**C.** → True
+
+On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
+
+$$
+P'(Q)=-4\\qquad\\text{for }Q>30.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+Just above capacity the firm is on the outsourcing piece, where $P'(Q)=-4<0$. A small expansion lowers profit; it does not raise it.
+
+The statement is False.`,
+      `**E.** → False
+
+$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
+
+Approaching $Q=30$ from the left,
+
+$$
+P'(30^{-})=8-\\dfrac{1}{5}\\cdot 30=8-6=2,
+$$
+
+so the thirtieth unit adds about $2$ euros of profit, not $150$.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 79,
+    solution_overview:
+      "Differentiate the piecewise profit function on each side of capacity and refuse to treat the level $P(30)$ as a derivative.",
+  },
+  {
+    id: "math-11-80",
+    case_id: "MATH 11.80",
+    title: "Same output, same R', missing different pieces",
+    subsection: "11.2",
+    context:
+      "A café and a nearby kiosk both sold $Q=40$ items today and both report the same extra-revenue figure $R'(40)=3$ euros. Their whiteboards are incomplete in different ways: the café also posts $P'(40)=1$ but hides cost, while the kiosk posts $C'(40)=5$ but hides profit. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The café's implied marginal cost is $C'(40)=2$.",
+      "The kiosk's implied marginal profit is $P'(40)=-2$.",
+      "A small extra item raises profit at the café and lowers profit at the kiosk.",
+      "Because both have the same $R'(40)$ and the same $Q$, they must have the same $C'(40)$.",
+      "The café's report $P'(40)=1$ already equals its profit level $P(40)$."
+    ],
+    answer_key: [true, true, true, false, false],
+    tactical_explanations: [
+      `**A.** → True
+
+For the café, $P'(40)=R'(40)-C'(40)$ gives
+
+$$
+1=3-C'(40)\\qquad\\Rightarrow\\qquad C'(40)=2.
+$$
+
+The café's implied marginal cost is $2$.
+
+The statement is True.`,
+      `**B.** → True
+
+For the kiosk,
+
+$$
+P'(40)=R'(40)-C'(40)=3-5=-2.
+$$
+
+The kiosk's implied marginal profit is $-2$.
+
+The statement is True.`,
+      `**C.** → True
+
+The café has $P'(40)=1>0$, so a small extra item raises café profit. The kiosk has $P'(40)=-2<0$, so a small extra item lowers kiosk profit.
+
+The statement is True.`,
+      `**D.** → False
+
+Same $R'(40)$ and same $Q$ do not force the same cost slope. The recovered values are already different: $C'(40)=2$ at the café versus $C'(40)=5$ at the kiosk.
+
+The statement is False.`,
+      `**E.** → False
+
+$P'(40)=1$ is a rate of change of profit. The height $P(40)$ of today's profit was never posted and need not equal $1$.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 80,
+    solution_overview:
+      "Two firms share $Q$ and $R'(Q)$ but reveal different missing pieces; recover $C'(Q)$ at one and $P'(Q)$ at the other.",
+  },
+  {
+    id: "math-11-81",
+    case_id: "MATH 11.81",
+    title: "Workshop profit: differentiate, then check the peak",
+    subsection: "11.3",
+    context:
+      "A small workshop sells $Q$ handmade lamps per day and models daily profit (in euros) by $P(Q)=-Q^{2}+12Q-20$ for $Q\\ge 0$. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating gives $P'(Q)=-2Q+12$.",
+      "The only output where the slope is zero solves $P'(Q)=0$ and is $Q=6$.",
+      "The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.",
+      "Daily profit at that candidate output is $P(6)=16$.",
+      "Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Differentiating gives $P'(Q)=-2Q+12$.
+
+Work it from the given model as follows.
+
+Differentiate term by term:
+
+$$
+P'(Q)=-2Q+12.
+$$
+
+That matches the claim.
+
+The statement is True.`,
+      `**B.** → True
+
+Solve
+
+$$
+P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
+
+On $Q\\ge 0$ this is the only candidate where the first derivative equals zero. After explaining the idea in words, this equation is often called the first-order condition for an interior optimum.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+Differentiate again:
+
+$$
+P''(Q)=-2<0.
+$$
+
+With $P'(6)=0$ and $P''(6)<0$, the second-order test confirms a strict local maximum (peak) at $Q=6$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Daily profit at that candidate output is $P(6)=16$.
+
+Work it from the given model as follows.
+
+Substitute into the profit formula:
+
+$$
+P(6)=-6^{2}+12\\cdot 6-20=-36+72-20=16.
+$$
+
+The peak profit is $16$ euros.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$.
+
+Work it from the given model as follows.
+
+$P'(6)=0$ is about the slope, not the height. The calculated level is $P(6)=16\\neq 0$. A flat tangent does not force profit to be zero.
+
+The statement is False.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 81,
+    solution_overview:
+      "Differentiate $P(Q)=-Q^{2}+12Q-20$, solve $P'=0$, use $P''<0$ to confirm a peak, and evaluate $P(6)$.",
+  },
+  {
+    id: "math-11-82",
+    case_id: "MATH 11.82",
+    title: "Café lunch: build profit, then solve R'=C'",
+    subsection: "11.3",
+    context:
+      "A café sells $Q$ lunch boxes. Revenue is $R(Q)=30Q-Q^{2}$ euros and total cost is $C(Q)=Q^{2}+6Q+40$ euros, for $Q>0$. Profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
+      "Marginal profit is $P'(Q)=-4Q+24$.",
+      "Setting $P'(Q)=0$ gives the candidate output $Q=6$.",
+      "At $Q=6$ one also has $R'(6)=C'(6)=18$.",
+      "Because $P'(6)=0$, the café's profit level equals its cost level at $Q=6$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.
+
+Work it from the given model as follows.
+
+$$
+P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Marginal profit is $P'(Q)=-4Q+24$.
+
+Work it from the given model as follows.
+
+Differentiate term by term:
+
+$$
+P'(Q)=-4Q+24.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Setting $P'(Q)=0$ gives the candidate output $Q=6$.
+
+Work it from the given model as follows.
+
+$$
+-4Q+24=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
+
+This candidate is where marginal profit is zero (the first-order condition written in plain words).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: At $Q=6$ one also has $R'(6)=C'(6)=18$.
+
+Work it from the given model as follows.
+
+$$
+R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.
+$$
+
+At $Q=6$:
+
+$$
+R'(6)=18,\\qquad C'(6)=18.
+$$
+
+So $R'(6)=C'(6)$, which is equivalent to $P'(6)=0$ because $P'=R'-C'$.
+
+The statement is True.`,
+      `**E.** → False
+
+$P'(6)=0$ does not compare the levels $P(6)$ and $C(6)$. Compute
+
+$$
+P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,\\qquad C(6)=36+36+40=112.
+$$
+
+They are not equal. Zero slope is not zero (or equal) height.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 82,
+    solution_overview:
+      "Form $P=R-C$, differentiate, solve $P'=0$, and check the equivalent condition $R'=C'$.",
+  },
+  {
+    id: "math-11-83",
+    case_id: "MATH 11.83",
+    title: "Delivery fleet: minimise a quadratic cost",
+    subsection: "11.3",
+    context:
+      "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $C(Q)=Q^{2}-10Q+40$ for $Q\\ge 0$. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(Q)=2Q-10$, so the only output where the slope is zero is $Q=5$.",
+      "$C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.",
+      "The minimal cost value is $C(5)=15$.",
+      "Because $C'(5)=0$, the point $Q=5$ must be a local maximum of cost.",
+      "On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $C'(Q)=2Q-10$, so the only output where the slope is zero is $Q=5$.
+
+Work it from the given model as follows.
+
+$$
+C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.
+
+Work it from the given model as follows.
+
+$$
+C''(Q)=2>0
+$$
+
+with $C'(5)=0$ confirms a strict local minimum (trough) of cost — this is the second-order test for a local min.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: The minimal cost value is $C(5)=15$.
+
+Work it from the given model as follows.
+
+$$
+C(5)=25-50+40=15.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+Setting the first derivative to zero alone does not decide maximum versus minimum. Here $C''>0$ forces a trough, not a peak. Ignoring the second derivative does not turn the point into a maximum.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$.
+
+Work it from the given model as follows.
+
+$C$ is a parabola opening upward. Its unique point where the slope is zero is therefore the global minimum on $Q\\ge 0$ (and $C(0)=40>15$).
+
+The statement is True.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 83,
+    solution_overview:
+      "Differentiate cost, solve $C'=0$, use $C''>0$ to confirm a global cost minimum.",
+  },
+  {
+    id: "math-11-84",
+    case_id: "MATH 11.84",
+    title: "Two promo scores with vanishing first and second derivatives",
+    subsection: "11.3",
+    context:
+      "A marketing team compares two campaign-score models near intensity $x=0$: $A(x)=x^{4}$ and $B(x)=-x^{4}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.",
+      "Checking the local shape with the second derivative is inconclusive at $x=0$ for both $A$ and $B$.",
+      "Nevertheless, $x=0$ is a strict local minimum of $A$.",
+      "Nevertheless, $x=0$ is a strict local maximum of $B$.",
+      "Because $A''(0)=B''(0)=0$, neither $A$ nor $B$ can have a local peak or trough at $0$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.
+
+Work it from the given model as follows.
+
+$$
+A'(x)=4x^{3},\\quad A''(x)=12x^{2},
+$$
+$$
+B'(x)=-4x^{3},\\quad B''(x)=-12x^{2}.
+$$
+
+At $x=0$ all four values are zero.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Checking the local shape with the second derivative is inconclusive at $x=0$ for both $A$ and $B$.
+
+Work it from the given model as follows.
+
+The second-order test needs $f''\\neq 0$ at a point where $f'=0$. Here both second derivatives vanish, so that test gives no decision.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Nevertheless, $x=0$ is a strict local minimum of $A$.
+
+Work it from the given model as follows.
+
+$A(x)=x^{4}\\ge 0=A(0)$ for all $x$, so $x=0$ is a strict global (hence local) minimum even though $A''(0)=0$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Nevertheless, $x=0$ is a strict local maximum of $B$.
+
+Work it from the given model as follows.
+
+$B(x)=-x^{4}\\le 0=B(0)$ for all $x$, so $x=0$ is a strict global maximum.
+
+The statement is True.`,
+      `**E.** → False
+
+A vanishing second derivative does not forbid extrema. $A$ has a trough and $B$ a peak at $0$. Use a sign chart or a direct nearby comparison when the second-order test is inconclusive.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 84,
+    solution_overview:
+      "Compute $f'$ and $f''$ for $x^{4}$ and $-x^{4}$; show the second-derivative check fails while extrema still exist.",
+  },
+  {
+    id: "math-11-85",
+    case_id: "MATH 11.85",
+    title: "Two cafés: same flat-slope output, opposite bend signs",
+    subsection: "11.3",
+    context:
+      "Café A models profit by $P_A(Q)=-Q^{2}+20Q-50$. Café B models profit by $P_B(Q)=Q^{2}-20Q+90$. Both consider the output $Q=10$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P_A'(10)=0$ and $P_B'(10)=0$, so both have a flat slope at $Q=10$.",
+      "$P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.",
+      "$P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.",
+      "Because both cafés have $P'=0$ at $Q=10$, both are maximising profit there.",
+      "Café A's profit at $Q=10$ is $P_A(10)=50$, while Café B's is $P_B(10)=-10$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P_A'(10)=0$ and $P_B'(10)=0$, so both have a flat slope at $Q=10$.
+
+Work it from the given model as follows.
+
+$$
+P_A'(Q)=-2Q+20,\\qquad P_B'(Q)=2Q-20.
+$$
+
+At $Q=10$ both derivatives are zero.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.
+
+Work it from the given model as follows.
+
+$$
+P_A''(Q)=-2<0
+$$
+
+with $P_A'(10)=0$ confirms a strict local maximum (peak) for A.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.
+
+Work it from the given model as follows.
+
+$$
+P_B''(Q)=2>0
+$$
+
+with $P_B'(10)=0$ confirms a strict local minimum (trough) for B.
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: Because both cafés have $P'=0$ at $Q=10$, both are maximising profit there.
+
+Work it from the given model as follows.
+
+Same flat-slope condition, opposite second-derivative signs. Only A has a local max; B has a local min. Setting $P'=0$ alone does not prove maximisation.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: Café A's profit at $Q=10$ is $P_A(10)=50$, while Café B's is $P_B(10)=-10$.
+
+Work it from the given model as follows.
+
+$$
+P_A(10)=-100+200-50=50,
+$$
+$$
+P_B(10)=100-200+90=-10.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 85,
+    solution_overview:
+      "Differentiate two café profits; same $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
+  },
+  {
+    id: "math-11-86",
+    case_id: "MATH 11.86",
+    title: "Ticket booth: local peak vs endpoint global max",
+    subsection: "11.3",
+    context:
+      "A festival ticket booth may sell any output in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is $P(Q)=Q^{3}-6Q^{2}+9Q+10$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=3Q^{2}-12Q+9$, and the outputs in $(0,5)$ where the slope is zero are $Q=1$ and $Q=3$.",
+      "$P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.",
+      "The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.",
+      "On $[0,5]$, the global maximum is at the local peak $Q=1$.",
+      "On $[0,5]$, the global maximum is at the endpoint $Q=5$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P'(Q)=3Q^{2}-12Q+9$, and the outputs in $(0,5)$ where the slope is zero are $Q=1$ and $Q=3$.
+
+Work it from the given model as follows.
+
+$$
+P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).
+$$
+
+So $P'(Q)=0$ at $Q=1$ and $Q=3$, both interior to $(0,5)$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.
+
+Work it from the given model as follows.
+
+$$
+P''(Q)=6Q-12.
+$$
+
+Then $P''(1)=-6<0$ (local max / peak) and $P''(3)=6>0$ (local min / trough).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.
+
+Work it from the given model as follows.
+
+Direct substitution:
+
+$$
+P(1)=1-6+9+10=14,
+$$
+$$
+P(3)=27-54+27+10=10,
+$$
+$$
+P(0)=10,\\qquad P(5)=125-150+45+10=30.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: On $[0,5]$, the global maximum is at the local peak $Q=1$.
+
+Work it from the given model as follows.
+
+$P(1)=14$ is only a local peak. Comparing candidates, $P(5)=30>14$, so $Q=1$ is not the global max on $[0,5]$.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: On $[0,5]$, the global maximum is at the endpoint $Q=5$.
+
+Work it from the given model as follows.
+
+Among $P(0),P(1),P(3),P(5)$, the largest value is $P(5)=30$. The global maximum on the closed interval is at the endpoint $Q=5$, not at the interior local peak.
+
+The statement is True.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 86,
+    solution_overview:
+      "Find where $P'=0$ for a cubic profit, check local shape with $P''$, then compare endpoint values for the global max.",
+  },
+  {
+    id: "math-11-87",
+    case_id: "MATH 11.87",
+    title: "Pop-up stall: rising profit forces an endpoint max",
+    subsection: "11.3",
+    context:
+      "A pop-up stall can produce any output in $0\\le Q\\le 8$. Its profit is $P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=5-\\dfrac{Q}{5}$.",
+      "On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior output where the slope is zero.",
+      "Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.",
+      "At the maximum point $Q=8$ one must have $P'(8)=0$.",
+      "The maximal profit on the interval is $P(8)=36.6$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P'(Q)=5-\\dfrac{Q}{5}$.
+
+Work it from the given model as follows.
+
+$$
+P'(Q)=5-\\dfrac{Q}{5}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior output where the slope is zero.
+
+Work it from the given model as follows.
+
+For $0<Q<8$,
+
+$$
+5-\\dfrac{Q}{5}>5-\\dfrac{8}{5}=3.4>0.
+$$
+
+So $P'$ never vanishes inside $(0,8)$.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.
+
+Work it from the given model as follows.
+
+Positive derivative means $P$ is strictly increasing on the interval, so the minimum is at $Q=0$ and the maximum at $Q=8$.
+
+The statement is True.`,
+      `**D.** → False
+
+An endpoint maximum need not have a flat tangent. Here
+
+$$
+P'(8)=5-\\dfrac{8}{5}=3.4\\neq 0.
+$$
+
+The first-order condition $P'=0$ is for interior candidates, not for every optimum on a closed interval.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: The maximal profit on the interval is $P(8)=36.6$.
+
+Work it from the given model as follows.
+
+$$
+P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 87,
+    solution_overview:
+      "Compute $P'$, verify it stays positive on $(0,8)$, and locate the max at the right endpoint without $P'=0$.",
+  },
+  {
+    id: "math-11-88",
+    case_id: "MATH 11.88",
+    title: "App downloads: two candidates checked by signs and by P''",
+    subsection: "11.3",
+    context:
+      "An app studio models weekly net benefit (in thousands of euros) by $B(x)=x^{3}-6x^{2}+9x+2$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$B'(x)=3x^{2}-12x+9$, with $B'(x)=0$ at $x=1$ and $x=3$.",
+      "A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.",
+      "A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.",
+      "$B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same local peak and trough.",
+      "Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $B'(x)=3x^{2}-12x+9$, with $B'(x)=0$ at $x=1$ and $x=3$.
+
+Work it from the given model as follows.
+
+$$
+B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).
+$$
+
+Solutions of $B'=0$: $x=1$ and $x=3$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.
+
+Work it from the given model as follows.
+
+For $x\\in(0,1)$, both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$.
+For $x\\in(1,3)$, $(x-1)>0$ and $(x-3)<0$, so $B'<0$.
+Thus $+$ to $-$ at $x=1$: local maximum (peak).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.
+
+Work it from the given model as follows.
+
+For $x>3$, both factors are positive, so $B'>0$. Crossing $x=3$ changes $-$ to $+$: local minimum (trough).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: $B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same local peak and trough.
+
+Work it from the given model as follows.
+
+$$
+B''(x)=6x-12,\\qquad B''(1)=-6<0,\\qquad B''(3)=6>0.
+$$
+
+The second-order test agrees with the sign chart.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$.
+
+Work it from the given model as follows.
+
+$B(x)\\to\\infty$ as $x\\to\\infty$ because of the $x^{3}$ term, so there is no global maximum on $[0,\\infty)$. A local max need not be global.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 88,
+    solution_overview:
+      "Factor $B'$, read a sign chart at two candidates, and confirm with $B''$; refuse local=global.",
+  },
+  {
+    id: "math-11-89",
+    case_id: "MATH 11.89",
+    title: "Bakery ovens: find candidates, check local shape, compare values",
+    subsection: "11.3",
+    context:
+      "A bakery's daily profit from running $Q$ ovens is $P(Q)=-Q^{3}+9Q^{2}-24Q+30$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=-3Q^{2}+18Q-24$, and the outputs in $(0,6)$ where the slope is zero are $Q=2$ and $Q=4$.",
+      "$P''(2)=6>0$, so $Q=2$ is a strict local minimum.",
+      "$P''(4)=-6<0$, so $Q=4$ is a strict local maximum.",
+      "Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.",
+      "Solving $P'=0$ alone already proves which point maximises profit on $[0,6]$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P'(Q)=-3Q^{2}+18Q-24$, and the outputs in $(0,6)$ where the slope is zero are $Q=2$ and $Q=4$.
+
+Work it from the given model as follows.
+
+$$
+P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).
+$$
+
+Candidates: $Q=2$ and $Q=4$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $P''(2)=6>0$, so $Q=2$ is a strict local minimum.
+
+Work it from the given model as follows.
+
+$$
+P''(Q)=-6Q+18,\\qquad P''(2)=6>0,
+$$
+
+so $Q=2$ is a strict local minimum (trough).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $P''(4)=-6<0$, so $Q=4$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+$$
+P''(4)=-24+18=-6<0,
+$$
+
+so $Q=4$ is a strict local maximum (peak).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.
+
+Work it from the given model as follows.
+
+$$
+P(0)=30,\\quad P(2)=-8+36-48+30=10,\\quad P(4)=-64+144-96+30=14,\\quad P(6)=-216+324-144+30=-6.
+$$
+
+The largest value is $P(0)=30$, so the global max on $[0,6]$ is at the endpoint.
+
+The statement is True.`,
+      `**E.** → False
+
+Solving $P'=0$ only lists candidates. You still must check local peak versus trough and compare function values (including endpoints). Here the global max is not even an interior flat-slope point.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 89,
+    solution_overview:
+      "Differentiate, solve $P'=0$, check local shape with $P''$, then compare values to find the global max.",
+  },
+  {
+    id: "math-11-90",
+    case_id: "MATH 11.90",
+    title: "Print shop: match R' to C', then check the bend of P",
+    subsection: "11.3",
+    context:
+      "A print shop has revenue $R(Q)=40Q-2Q^{2}$ and cost $C(Q)=Q^{2}+4Q+10$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.",
+      "Setting $P'(Q)=0$ gives the candidate $Q=6$, and equivalently $R'(6)=C'(6)=16$.",
+      "$P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.",
+      "Maximal profit is $P(6)=98$.",
+      "Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.
+
+Work it from the given model as follows.
+
+$$
+P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,
+$$
+$$
+P'(Q)=-6Q+36.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+$$
+P'(Q)=0\\qquad\\Rightarrow\\qquad Q=6.
+$$
+
+Also $R'(Q)=40-4Q$ and $C'(Q)=2Q+4$, so
+
+$$
+R'(6)=16=C'(6).
+$$
+
+Matching marginal revenue to marginal cost is the same flat-slope condition on profit.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.
+
+Work it from the given model as follows.
+
+$$
+P''(Q)=-6<0
+$$
+
+at the candidate confirms a strict local maximum — the second-order test for a peak.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Maximal profit is $P(6)=98$.
+
+Work it from the given model as follows.
+
+$$
+P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart.
+
+Work it from the given model as follows.
+
+$R'=C'$ only finds a candidate. Without checking the second derivative or a sign chart, that point might be a trough. Here $P''<0$ finishes the proof of a max.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 90,
+    solution_overview:
+      "Build $P$ from $R$ and $C$, solve $P'=0$, confirm with $R'=C'$, and check $P''<0$.",
+  },
+  {
+    id: "math-11-91",
+    case_id: "MATH 11.91",
+    title: "Two bakeries: shared flat-slope output, opposite bends",
+    subsection: "11.3",
+    context:
+      "Bakery North uses $P_N(Q)=-Q^{2}+16Q-30$. Bakery South uses $P_S(Q)=Q^{2}-16Q+70$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Both bakeries have a flat-slope output at $Q=8$.",
+      "North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.",
+      "South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.",
+      "North's peak profit is $P_N(8)=34$, while South's profit at $Q=8$ is $P_S(8)=6$.",
+      "Because both flat-slope outputs equal $8$, both bakeries are at a profit maximum."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Both bakeries have a flat-slope output at $Q=8$.
+
+Work it from the given model as follows.
+
+$$
+P_N'(Q)=-2Q+16=0\\qquad\\Rightarrow\\qquad Q=8,
+$$
+$$
+P_S'(Q)=2Q-16=0\\qquad\\Rightarrow\\qquad Q=8.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.
+
+Work it from the given model as follows.
+
+$P_N''=-2<0$ with $P_N'(8)=0$ confirms a strict local max (peak) for North.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.
+
+Work it from the given model as follows.
+
+$P_S''=2>0$ with $P_S'(8)=0$ confirms a strict local min (trough) for South.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: North's peak profit is $P_N(8)=34$, while South's profit at $Q=8$ is $P_S(8)=6$.
+
+Work it from the given model as follows.
+
+$$
+P_N(8)=-64+128-30=34,
+$$
+$$
+P_S(8)=64-128+70=6.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because both flat-slope outputs equal $8$, both bakeries are at a profit maximum.
+
+Work it from the given model as follows.
+
+Same candidate output does not mean the same local shape. South's second derivative shows a trough, not a peak.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 91,
+    solution_overview:
+      "Differentiate two bakery profits; shared $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
+  },
+  {
+    id: "math-11-92",
+    case_id: "MATH 11.92",
+    title: "Loyalty index: second-derivative check fails but a max remains",
+    subsection: "11.3",
+    context:
+      "A retailer's loyalty index near a special offer intensity $x$ is modelled by $L(x)=10-x^{4}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so at $x=0$ one has $L'(0)=0$ and $L''(0)=0$.",
+      "The sufficient second-derivative check for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.",
+      "Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.",
+      "Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.",
+      "A necessary condition at an interior local max of a twice differentiable function is $L''\\le 0$; here $L''(0)=0$ still obeys that necessary condition."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so at $x=0$ one has $L'(0)=0$ and $L''(0)=0$.
+
+Work it from the given model as follows.
+
+Differentiate:
+
+$$
+L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.
+$$
+
+Both vanish at $x=0$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The sufficient second-derivative check for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.
+
+Work it from the given model as follows.
+
+The usual sufficient second-order test needs a strictly negative second derivative. Here $L''(0)=0$, so that sufficient test does not fire.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.
+
+Work it from the given model as follows.
+
+$x^{4}\\ge 0$ for all $x$, so $L(x)=10-x^{4}\\le 10=L(0)$. The peak is global.
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.
+
+Work it from the given model as follows.
+
+$L''(0)=0$ does not forbid a maximum; the direct comparison already proves one.
+
+The statement is False.`,
+      `**E.** → True
+
+At an interior local maximum one must have $L''\\le 0$. Equality is allowed. Necessary is weaker than sufficient: the second-order test being inconclusive does not contradict the necessary inequality $L''\\le 0$.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 92,
+    solution_overview:
+      "Compute derivatives of $10-x^{4}$; separate an inconclusive sufficient test from a still-valid global max.",
+  },
+  {
+    id: "math-11-93",
+    case_id: "MATH 11.93",
+    title: "Same firm: minimise cost and maximise profit separately",
+    subsection: "11.3",
+    context:
+      "A firm has cost $C(Q)=Q^{2}-8Q+30$ and revenue $R(Q)=20Q-Q^{2}$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.",
+      "Profit is $P(Q)=-2Q^{2}+28Q-30$, with $P'(Q)=0$ at $Q=7$.",
+      "$P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.",
+      "The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.",
+      "At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.
+
+Work it from the given model as follows.
+
+$$
+C'(Q)=2Q-8=0\\qquad\\Rightarrow\\qquad Q=4,\\qquad C''=2>0.
+$$
+
+The second-order test confirms a cost trough at $Q=4$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Profit is $P(Q)=-2Q^{2}+28Q-30$, with $P'(Q)=0$ at $Q=7$.
+
+Work it from the given model as follows.
+
+$$
+P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30,
+$$
+$$
+P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.
+
+Work it from the given model as follows.
+
+$P''=-4<0$ confirms a strict local profit maximum at $Q=7$.
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.
+
+Work it from the given model as follows.
+
+Cost min and profit max are different problems on different functions. Here the answers are $Q=4$ versus $Q=7$.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$.
+
+Work it from the given model as follows.
+
+$$
+P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,
+$$
+$$
+C(4)=16-32+30=14.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 93,
+    solution_overview:
+      "Run the flat-slope plus second-derivative checks twice: once on $C$, once on $P$; show the optimal outputs differ.",
+  },
+  {
+    id: "math-11-94",
+    case_id: "MATH 11.94",
+    title: "Two hikers: same flat-slope hour, opposite utility labels",
+    subsection: "11.3",
+    context:
+      "Hiker A has utility $U_A(t)=-t^{2}+10t$ from $t$ hours on a trail. Hiker B has utility $U_B(t)=t^{2}-10t+30$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Both hikers have a flat-slope time at $t=5$.",
+      "$U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.",
+      "$U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.",
+      "A's peak utility is $U_A(5)=25$, while B's utility at $t=5$ is $U_B(5)=5$.",
+      "Because both solve $U'=0$ at the same hour, both are maximising satisfaction there."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+U_A'(t)=-2t+10=0\\qquad\\Rightarrow\\qquad t=5,
+$$
+$$
+U_B'(t)=2t-10=0\\qquad\\Rightarrow\\qquad t=5.
+$$
+
+Both hikers have a flat-slope hour at $t=5$, but that alone does not decide peak versus trough.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.
+
+Work it from the given model as follows.
+
+$$
+U_A''(t)=-2<0
+$$
+
+with $U_A'(5)=0$ confirms a local maximum (peak) for hiker A. Economically, A's satisfaction rises before hour $5$ and falls afterward.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.
+
+Work it from the given model as follows.
+
+$$
+U_B''(t)=2>0
+$$
+
+with $U_B'(5)=0$ confirms a local minimum (trough) for hiker B. The same hour that peaks A's utility is a low point for B.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: A's peak utility is $U_A(5)=25$, while B's utility at $t=5$ is $U_B(5)=5$.
+
+Work it from the given model as follows.
+
+$$
+U_A(5)=-25+50=25,\\qquad U_B(5)=25-50+30=5.
+$$
+
+The heights differ sharply even though the flat-slope times coincide.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because both solve $U'=0$ at the same hour, both are maximising satisfaction there.
+
+Work it from the given model as follows.
+
+A shared solution of $U'=0$ is not a shared maximisation claim. The second-derivative signs are opposite, so only A is maximising at $t=5$; B is minimising.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 94,
+    solution_overview:
+      "Differentiate two utility functions; same $t$ with $U'=0$, opposite conclusions from $U''$.",
+  },
+  {
+    id: "math-11-95",
+    case_id: "MATH 11.95",
+    title: "Warehouse staffing: three candidates, three local labels",
+    subsection: "11.3",
+    context:
+      "A warehouse models daily net payoff by $f(x)=x^{4}-8x^{2}+16$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the outputs where the slope is zero are $x=-2$, $x=0$, and $x=2$.",
+      "$f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.",
+      "Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.",
+      "The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.",
+      "Because $x=0$ is a local maximum, it is also the global maximum of $f$ on $\\mathbb{R}$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the outputs where the slope is zero are $x=-2$, $x=0$, and $x=2$.
+
+Work it from the given model as follows.
+
+$$
+f'(x)=4x^{3}-16x=4x(x-2)(x+2).
+$$
+
+Solutions of $f'=0$: $-2,0,2$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.
+
+Work it from the given model as follows.
+
+$$
+f''(x)=12x^{2}-16,
+$$
+$$
+f''(\\pm 2)=48-16=32>0,\\qquad f''(0)=-16<0.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+The second-order test: $f''>0$ at $\\pm 2$ gives local minima (troughs); $f''<0$ at $0$ gives a local maximum (peak).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.
+
+Work it from the given model as follows.
+
+$$
+f(0)=16,\\qquad f(2)=16-32+16=0=f(-2).
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $x=0$ is a local maximum, it is also the global maximum of $f$ on $\\mathbb{R}$.
+
+Work it from the given model as follows.
+
+As $|x|\\to\\infty$, $x^{4}$ dominates and $f(x)\\to\\infty$, so there is no global maximum. The local peak at $0$ is not global.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 95,
+    solution_overview:
+      "Factor $f'$, evaluate $f''$ at three candidates, then refuse local=global.",
+  },
+  {
+    id: "math-11-96",
+    case_id: "MATH 11.96",
+    title: "Clinic hours: a flat-slope cost trough is not a cost peak",
+    subsection: "11.3",
+    context:
+      "A clinic's daily staffing cost is $C(h)=2h^{2}-24h+100$ for $h>0$ open hours. A manager finds the output where the slope is zero and calls it optimal for cost control. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(h)=4h-24$, so the output where the slope is zero is $h=6$.",
+      "$C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.",
+      "Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the second derivative confirms a trough.",
+      "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
+      "A point where the slope is zero already means the clinic is cost-maximising, so no second-derivative check is needed."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $C'(h)=4h-24$, so the output where the slope is zero is $h=6$.
+
+Work it from the given model as follows.
+
+$$
+4h-24=0\\qquad\\Rightarrow\\qquad h=6.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.
+
+Work it from the given model as follows.
+
+$C''=4>0$ confirms a strict local minimum (cost trough).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the second derivative confirms a trough.
+
+Work it from the given model as follows.
+
+For minimising cost, a confirmed local (here also global) minimum is the right kind of optimum.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.
+
+Work it from the given model as follows.
+
+A cost minimum is not a cost maximum. Goal and local shape must match.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: A point where the slope is zero already means the clinic is cost-maximising, so no second-derivative check is needed.
+
+Work it from the given model as follows.
+
+A flat slope only means $C'=0$. It does not encode the economic goal or the max/min label. Here the bend is upward, so the point is cost-minimising, not cost-maximising.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 96,
+    solution_overview:
+      "Compute the clinic's flat-slope point and second derivative; tie \"optimal\" to the stated min-cost goal.",
+  },
+  {
+    id: "math-11-97",
+    case_id: "MATH 11.97",
+    title: "Two cinemas: peak versus horizontal inflection",
+    subsection: "11.3",
+    context:
+      "Cinema A models profit by $P_A(Q)=-(Q-3)^{2}+5$. Cinema B models profit by $P_B(Q)=(Q-3)^{3}+5$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Both cinemas have $P'(3)=0$, so $Q=3$ is a flat-slope output for each.",
+      "For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.",
+      "For B, $P_B''(3)=0$, so checking the local shape with the second derivative is inconclusive.",
+      "A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.",
+      "Because both have $P'=0$ at $Q=3$, both cinemas are at a profit peak."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Both cinemas have $P'(3)=0$, so $Q=3$ is a flat-slope output for each.
+
+Work it from the given model as follows.
+
+Expand or use chain rule:
+
+$$
+P_A'(Q)=-2(Q-3),\\qquad P_B'(Q)=3(Q-3)^{2}.
+$$
+
+Both vanish at $Q=3$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+$P_A''(Q)=-2<0$ confirms a strict local max (peak) for A.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: For B, $P_B''(3)=0$, so checking the local shape with the second derivative is inconclusive.
+
+Work it from the given model as follows.
+
+$P_B''(Q)=6(Q-3)$, so $P_B''(3)=0$: the second-order test does not decide.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.
+
+Work it from the given model as follows.
+
+$P_B'(Q)=3(Q-3)^{2}\\ge 0$ on both sides of $3$, and is zero only at $3$. No $+\\to-$ or $-\\to+$ change, so neither local max nor local min — a horizontal inflection.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because both have $P'=0$ at $Q=3$, both cinemas are at a profit peak.
+
+Work it from the given model as follows.
+
+Only A has a peak. B has a horizontal inflection. Shared flat-slope condition is not a shared peak.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 97,
+    solution_overview:
+      "Differentiate two cinema profits; confirm A's peak and B's non-extremum when $P''=0$.",
+  },
+  {
+    id: "math-11-98",
+    case_id: "MATH 11.98",
+    title: "Exam trap: flat-slope list found, but one candidate is a min",
+    subsection: "11.3",
+    context:
+      "A student's exam solution for maximising $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$ writes only \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$f'(x)=3x^{2}-6x$, so the outputs where the slope is zero really are $x=0$ and $x=2$.",
+      "$f''(0)=-6<0$, so $x=0$ is a strict local maximum.",
+      "$f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.",
+      "There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.",
+      "Stopping after listing the solutions of $f'=0$ already finishes a maximisation proof."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $f'(x)=3x^{2}-6x$, so the outputs where the slope is zero really are $x=0$ and $x=2$.
+
+Work it from the given model as follows.
+
+$$
+f'(x)=3x(x-2)=0\\qquad\\Rightarrow\\qquad x=0,2.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $f''(0)=-6<0$, so $x=0$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+$$
+f''(x)=6x-6,\\qquad f''(0)=-6<0.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.
+
+Work it from the given model as follows.
+
+$f''(2)=6>0$ confirms a local minimum (trough) at $x=2$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.
+
+Work it from the given model as follows.
+
+The leading term $x^{3}$ sends $f\\to\\infty$ as $x\\to\\infty$, so no global max exists on $\\mathbb{R}$.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Stopping after listing the solutions of $f'=0$ already finishes a maximisation proof.
+
+Work it from the given model as follows.
+
+Checking local peak versus trough and discussing the global picture are still missing. Listing solutions of $f'=0$ alone is unfinished.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 98,
+    solution_overview:
+      "Complete the student's unfinished solution: check both candidates with $f''$ and note the missing global max.",
+  },
+  {
+    id: "math-11-99",
+    case_id: "MATH 11.99",
+    title: "Bike rental: prove a strict local max from derivatives",
+    subsection: "11.3",
+    context:
+      "A bike-rental shop models hourly profit by $P(Q)=-3Q^{2}+30Q-40$ for $Q>0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$P'(Q)=-6Q+30$, so the output where the slope is zero is $Q=5$.",
+      "$P''(5)=-6<0$, so $Q=5$ is a strict local maximum.",
+      "Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.",
+      "Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.",
+      "Evaluating gives $P(5)=35$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $P'(Q)=-6Q+30$, so the output where the slope is zero is $Q=5$.
+
+Work it from the given model as follows.
+
+$$
+-6Q+30=0\\qquad\\Rightarrow\\qquad Q=5.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $P''(5)=-6<0$, so $Q=5$ is a strict local maximum.
+
+Work it from the given model as follows.
+
+Constant $P''=-6<0$ with $P'(5)=0$ confirms a strict local maximum (peak).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.
+
+Work it from the given model as follows.
+
+That is the definition of a strict local maximum: nearby points have strictly smaller $P$.
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.
+
+Work it from the given model as follows.
+
+Local maximality concerns neighbouring comparisons of $P$, not the numerical level being zero. Here $P(5)=35\\neq 0$.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: Evaluating gives $P(5)=35$.
+
+Work it from the given model as follows.
+
+$$
+P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.
+$$
+
+The statement is True.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 99,
+    solution_overview:
+      "Differentiate the bike-rental profit, confirm the peak with $P''$, and separate the definition of a local max from the height $P(5)$.",
+  },
+  {
+    id: "math-11-100",
+    case_id: "MATH 11.100",
+    title: "Two plants: different flat-slope outputs, different labels",
+    subsection: "11.3",
+    context:
+      "Plant West has profit $P_W(Q)=-Q^{2}+14Q-20$. Plant East has profit $P_E(Q)=Q^{2}-10Q+40$. A memo claims both plants have found optimal production levels at their flat-slope outputs. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "West's flat-slope equation gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.",
+      "East's flat-slope equation gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.",
+      "The memo is correct that both flat-slope outputs are local profit maxima.",
+      "West's peak profit is $P_W(7)=29$, while East's profit at $Q_E$ is $P_E(5)=15$.",
+      "Because $Q_W\\neq Q_E$, at most one of the two flat-slope equations can be valid."
+    ],
+    answer_key: [true, true, false, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: West's flat-slope equation gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.
+
+Work it from the given model as follows.
+
+$$
+P_W'(Q)=-2Q+14=0\\qquad\\Rightarrow\\qquad Q=7,\\qquad P_W''=-2<0.
+$$
+
+The second-order test confirms a peak for West.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: East's flat-slope equation gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.
+
+Work it from the given model as follows.
+
+$$
+P_E'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5,\\qquad P_E''=2>0.
+$$
+
+East is at a trough.
+
+The statement is True.`,
+      `**C.** → False
+
+The claim says: The memo is correct that both flat-slope outputs are local profit maxima.
+
+Work it from the given model as follows.
+
+Only West has a local max. East has a local min. The memo over-claims.
+
+The statement is False.`,
+      `**D.** → True
+
+The claim says: West's peak profit is $P_W(7)=29$, while East's profit at $Q_E$ is $P_E(5)=15$.
+
+Work it from the given model as follows.
+
+$$
+P_W(7)=-49+98-20=29,
+$$
+$$
+P_E(5)=25-50+40=15.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+Different plants have different profit functions. Each flat-slope equation is valid for its own $P$. Unequal candidate outputs are expected and do not invalidate either calculation.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 100,
+    solution_overview:
+      "Compute each plant's flat-slope point and $P''$; reject the memo that both candidates are maxima.",
+  },
+  {
+    id: "math-11-101",
+    case_id: "MATH 11.101",
+    title: "Farm shop: quadratic profit peak by differentiation",
+    subsection: "11.3",
+    context:
+      "A farm shop sells $Q$ crates of apples per day. Daily profit (in euros) is $P(Q)=-Q^{2}+18Q-45$ for $Q\\ge 0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating gives $P'(Q)=-2Q+18$.",
+      "The only output where the slope is zero is $Q=9$.",
+      "$P''(Q)=-2<0$, so $Q=9$ is a strict local profit maximum.",
+      "Peak daily profit is $P(9)=36$.",
+      "Because $P'(9)=0$, one must also have $P(9)=0$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Differentiating gives $P'(Q)=-2Q+18$.
+
+Work it from the given model as follows.
+
+$$
+P'(Q)=-2Q+18.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The only output where the slope is zero is $Q=9$.
+
+Work it from the given model as follows.
+
+$$
+-2Q+18=0\\qquad\\Rightarrow\\qquad Q=9.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $P''(Q)=-2<0$, so $Q=9$ is a strict local profit maximum.
+
+Work it from the given model as follows.
+
+Constant $P''=-2<0$ with $P'(9)=0$ confirms a strict local maximum. For this downward-opening parabola the peak is also global on $Q\\ge 0$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Peak daily profit is $P(9)=36$.
+
+Work it from the given model as follows.
+
+$$
+P(9)=-81+162-45=36.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $P'(9)=0$, one must also have $P(9)=0$.
+
+Work it from the given model as follows.
+
+Zero slope is not zero height. Direct evaluation gives $P(9)=36\\neq 0$.
+
+The statement is False.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 101,
+    solution_overview:
+      "Differentiate the farm-shop profit, solve $P'=0$, confirm a peak with $P''<0$, and evaluate $P(9)$.",
+  },
+  {
+    id: "math-11-102",
+    case_id: "MATH 11.102",
+    title: "Market stall: form P from R and C, then optimise",
+    subsection: "11.3",
+    context:
+      "A market stall has revenue $R(Q)=50Q-Q^{2}$ and total cost $C(Q)=Q^{2}+10Q+20$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.",
+      "$P'(Q)=-4Q+40$, so the candidate output is $Q=10$.",
+      "At $Q=10$ one has $R'(10)=C'(10)=30$.",
+      "$P''(10)=-4<0$, so $Q=10$ is a strict local profit maximum, and $P(10)=180$.",
+      "Because $R'(10)=C'(10)$, the stall's revenue level equals its cost level at $Q=10$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.
+
+Work it from the given model as follows.
+
+$$
+P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $P'(Q)=-4Q+40$, so the candidate output is $Q=10$.
+
+Work it from the given model as follows.
+
+$$
+P'(Q)=-4Q+40=0\\qquad\\Rightarrow\\qquad Q=10.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At $Q=10$ one has $R'(10)=C'(10)=30$.
+
+Work it from the given model as follows.
+
+$$
+R'(Q)=50-2Q,\\qquad C'(Q)=2Q+10.
+$$
+
+At $Q=10$: $R'(10)=30=C'(10)$, equivalent to $P'(10)=0$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: $P''(10)=-4<0$, so $Q=10$ is a strict local profit maximum, and $P(10)=180$.
+
+Work it from the given model as follows.
+
+$$
+P''=-4<0,\\qquad P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $R'(10)=C'(10)$, the stall's revenue level equals its cost level at $Q=10$.
+
+Work it from the given model as follows.
+
+Matching derivatives ($R'=C'$) does not force matching levels. Compute
+
+$$
+R(10)=500-100=400,\\qquad C(10)=100+100+20=220.
+$$
+
+They differ; profit is the gap $180$.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 102,
+    solution_overview:
+      "Build $P$ from $R$ and $C$, solve $P'=0$, match $R'$ to $C'$, confirm with $P''$, and evaluate profit.",
+  },
+  {
+    id: "math-11-103",
+    case_id: "MATH 11.103",
+    title: "Two food trucks: compare profit peaks side by side",
+    subsection: "11.3",
+    context:
+      "Food truck A has profit $P_A(Q)=-Q^{2}+24Q-80$. Food truck B has profit $P_B(Q)=-2Q^{2}+32Q-60$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Truck A's flat-slope output is $Q_A=12$, and $P_A''(12)=-2<0$ confirms a local max.",
+      "Truck B's flat-slope output is $Q_B=8$, and $P_B''(8)=-4<0$ confirms a local max.",
+      "Peak profits are $P_A(12)=64$ and $P_B(8)=68$.",
+      "Because both trucks have a local profit maximum, they must share the same optimal quantity.",
+      "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Truck A's flat-slope output is $Q_A=12$, and $P_A''(12)=-2<0$ confirms a local max.
+
+Work it from the given model as follows.
+
+For truck A:
+
+$$
+P_A'(Q)=-2Q+24=0\\qquad\\Rightarrow\\qquad Q_A=12.
+$$
+
+$$
+P_A''(Q)=-2<0,
+$$
+
+so $Q_A=12$ is a strict local profit maximum (peak).
+
+The statement is True.`,
+      `**B.** → True
+
+For truck B:
+
+$$
+P_B'(Q)=-4Q+32=0\\qquad\\Rightarrow\\qquad Q_B=8,
+$$
+$$
+P_B''(Q)=-4<0.
+$$
+
+The same flat-slope-plus-negative-second-derivative argument confirms a local profit peak at $Q_B=8$.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Peak profits are $P_A(12)=64$ and $P_B(8)=68$.
+
+Work it from the given model as follows.
+
+Evaluate each profit at its candidate:
+
+$$
+P_A(12)=-12^{2}+24\\cdot 12-80=-144+288-80=64,
+$$
+$$
+P_B(8)=-2\\cdot 8^{2}+32\\cdot 8-60=-128+256-60=68.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+Each truck has its own profit function, so each has its own candidate output. Here
+
+$$
+Q_A=12\\neq 8=Q_B.
+$$
+
+Sharing the property "has a local max" does not force sharing the same quantity.
+
+The statement is False.`,
+      `**E.** → True
+
+Comparing the peak values already computed:
+
+$$
+P_B(8)=68>64=P_A(12).
+$$
+
+So B's smaller optimal quantity still delivers a higher peak profit in this pair of models — a reminder to compare heights, not only locations.
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 103,
+    solution_overview:
+      "Optimise two truck profits separately; compare candidate quantities and peak values.",
+  },
+  {
+    id: "math-11-104",
+    case_id: "MATH 11.104",
+    title: "Workshop cost: cubic cost with a local trough",
+    subsection: "11.3",
+    context:
+      "A workshop's weekly cost (in hundreds of euros) for producing $Q$ batches is $C(Q)=Q^{3}-9Q^{2}+24Q+5$ for $Q>0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4)$, so $C'=0$ at $Q=2$ and $Q=4$.",
+      "$C''(Q)=6Q-18$, so $C''(2)=-6<0$ and $C''(4)=6>0$.",
+      "Therefore $Q=2$ is a strict local cost maximum and $Q=4$ is a strict local cost minimum.",
+      "The local minimum cost value is $C(4)=21$.",
+      "Because $C'(2)=0$, the output $Q=2$ minimises cost."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4)$, so $C'=0$ at $Q=2$ and $Q=4$.
+
+Work it from the given model as follows.
+
+$$
+C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $C''(Q)=6Q-18$, so $C''(2)=-6<0$ and $C''(4)=6>0$.
+
+Work it from the given model as follows.
+
+$$
+C''(Q)=6Q-18,\\qquad C''(2)=-6,\\qquad C''(4)=6.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Therefore $Q=2$ is a strict local cost maximum and $Q=4$ is a strict local cost minimum.
+
+Work it from the given model as follows.
+
+Negative second derivative at $Q=2$ means a local cost peak; positive at $Q=4$ means a local cost trough.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: The local minimum cost value is $C(4)=21$.
+
+Work it from the given model as follows.
+
+$$
+C(4)=64-144+96+5=21.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $C'(2)=0$, the output $Q=2$ minimises cost.
+
+Work it from the given model as follows.
+
+$C'(2)=0$ only marks a candidate. The second derivative shows $Q=2$ is a local cost maximum, not a minimum. The local cost-minimising candidate is $Q=4$.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 104,
+    solution_overview:
+      "Differentiate cubic cost, check both candidates with $C''$, and evaluate the local min.",
+  },
+  {
+    id: "math-11-105",
+    case_id: "MATH 11.105",
+    title: "Delivery shifts: cost min on a closed interval",
+    subsection: "11.3",
+    context:
+      "A courier can schedule any number of shifts in the closed interval $0\\le Q\\le 8$. Daily cost is $C(Q)=Q^{2}-10Q+40$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$C'(Q)=2Q-10$, so the only interior flat-slope output is $Q=5$.",
+      "$C''(5)=2>0$, so $Q=5$ is a strict local cost minimum.",
+      "Endpoint costs are $C(0)=40$ and $C(8)=24$, while $C(5)=15$.",
+      "On $[0,8]$, the global cost minimum is at the endpoint $Q=8$.",
+      "On $[0,8]$, the global cost minimum is at the interior trough $Q=5$."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $C'(Q)=2Q-10$, so the only interior flat-slope output is $Q=5$.
+
+Work it from the given model as follows.
+
+$$
+2Q-10=0\\Rightarrow Q=5\\in(0,8).
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $C''(5)=2>0$, so $Q=5$ is a strict local cost minimum.
+
+Work it from the given model as follows.
+
+$C''=2>0$ confirms a local (and for this parabola, global-shape) trough at $Q=5$.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Endpoint costs are $C(0)=40$ and $C(8)=24$, while $C(5)=15$.
+
+Work it from the given model as follows.
+
+$$
+C(0)=40,\\qquad C(8)=64-80+40=24,\\qquad C(5)=25-50+40=15.
+$$
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: On $[0,8]$, the global cost minimum is at the endpoint $Q=8$.
+
+Work it from the given model as follows.
+
+$C(8)=24>15=C(5)$, so the right endpoint is not the global min on $[0,8]$.
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: On $[0,8]$, the global cost minimum is at the interior trough $Q=5$.
+
+Work it from the given model as follows.
+
+Comparing $C(0)$, $C(5)$, and $C(8)$, the smallest value is $C(5)=15$. The global cost minimum on the closed interval is at the interior trough.
+
+The statement is True.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 105,
+    solution_overview:
+      "Find the interior cost trough, evaluate endpoints, and identify the global min on $[0,8]$.",
+  },
+  {
+    id: "math-11-106",
+    case_id: "MATH 11.106",
+    title: "Garden fence: maximise area from a fixed perimeter",
+    subsection: "11.3",
+    context:
+      "A gardener has exactly $40$ metres of fencing and wants a rectangular plot that encloses as much area as possible. Let the sides be $x$ metres and $y$ metres. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "From the fencing constraint one can write the area as a function of $x$ alone: $A(x)=x(20-x)$ for $0<x<20$.",
+      "Differentiating that area function gives $A'(x)=20-2x$.",
+      "Setting the slope of area to zero yields the candidate $x=10$, and then $y=10$.",
+      "The second derivative is $A''(x)=-2<0$, so $x=10$ is a strict local maximum of area, and the maximal area is $100$ m$^{2}$.",
+      "Because the perimeter is fixed, every choice of $x$ automatically maximises area, so no derivative work is needed."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The fencing uses all $40$ metres on the four sides:
+
+$$
+2x+2y=40\\qquad\\Rightarrow\\qquad x+y=20\\qquad\\Rightarrow\\qquad y=20-x.
+$$
+
+Area is length times width:
+
+$$
+A=xy=x(20-x)=20x-x^{2},
+$$
+
+for $0<x<20$ (both sides positive). So the one-variable formula in the claim is correct — but it had to be derived from the constraint, not assumed.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Differentiating that area function gives $A'(x)=20-2x$.
+
+Work it from the given model as follows.
+
+From $A(x)=20x-x^{2}$,
+
+$$
+A'(x)=20-2x.
+$$
+
+That is the slope of enclosed area with respect to the side length $x$.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Setting the slope of area to zero yields the candidate $x=10$, and then $y=10$.
+
+Work it from the given model as follows.
+
+Solve
+
+$$
+A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10.
+$$
+
+Then $y=20-10=10$. So the candidate rectangle is a $10\\times 10$ square.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+A''(x)=-2<0
+$$
+
+at $x=10$ (and everywhere), so the flat-slope candidate is a strict local maximum. The area there is
+
+$$
+A(10)=10\\cdot 10=100.
+$$
+
+For this downward-opening parabola it is also the global maximum on $(0,20)$.
+
+The statement is True.`,
+      `**E.** → False
+
+A fixed perimeter only restricts the feasible pairs $(x,y)$. Different splits give different areas — for example $A(5)=75<100=A(10)$. Maximising area still requires writing $A$ in one variable and using derivatives (or an equivalent argument).
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 106,
+    solution_overview:
+      "Derive $A(x)=x(20-x)$ from the $40$ m perimeter, then maximise with $A'$ and $A''$.",
+  },
+  {
+    id: "math-11-107",
+    case_id: "MATH 11.107",
+    title: "Poster margins: minimise paper for a fixed printed area",
+    subsection: "11.3",
+    context:
+      "A designer needs a rectangular printed region of area exactly $36$ cm$^{2}$. A blank margin of $1$ cm is added on every side, and the total sheet of paper (print plus margins) should be as small as possible. Let $x>0$ be the printed width in centimetres. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "If the printed width is $x$, the printed height must be $36/x$, and the total paper area is $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$.",
+      "Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.",
+      "$A'(x)=2-\\dfrac{72}{x^{2}}$, so $A'(x)=0$ when $x=6$ (taking $x>0$).",
+      "At $x=6$ the printed region is $6\\times 6$, total paper area is $A(6)=64$, and $A''(6)>0$ confirms a local minimum.",
+      "Any printed rectangle of area $36$ already minimises paper use; the margins do not create a real optimisation problem."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Printed area $36$ forces printed height $h=36/x$. Adding $1$ cm margins on each side makes the sheet
+
+$$
+(x+2)\\times(h+2)=(x+2)\\left(\\dfrac{36}{x}+2\\right).
+$$
+
+That is the total paper area as a function of the single free choice $x$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.
+
+Work it from the given model as follows.
+
+Expand:
+
+$$
+A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $A'(x)=2-\\dfrac{72}{x^{2}}$, so $A'(x)=0$ when $x=6$ (taking $x>0$).
+
+Work it from the given model as follows.
+
+Differentiate:
+
+$$
+A'(x)=2-\\dfrac{72}{x^{2}}.
+$$
+
+Set the slope to zero:
+
+$$
+2=\\dfrac{72}{x^{2}}\\qquad\\Rightarrow\\qquad x^{2}=36\\qquad\\Rightarrow\\qquad x=6
+$$
+
+(since $x>0$).
+
+The statement is True.`,
+      `**D.** → True
+
+Printed height at $x=6$ is $36/6=6$. Total paper:
+
+$$
+A(6)=40+2\\cdot 6+\\dfrac{72}{6}=40+12+12=64.
+$$
+
+Second derivative:
+
+$$
+A''(x)=\\dfrac{144}{x^{3}}\\qquad\\Rightarrow\\qquad A''(6)=\\dfrac{144}{216}>0,
+$$
+
+so the candidate is a local minimum of paper area.
+
+The statement is True.`,
+      `**E.** → False
+
+Different shapes with printed area $36$ produce different sheet sizes once margins are added. For example $x=4$ gives $A(4)=40+8+18=66>64$. The margin geometry creates a genuine one-variable minimum.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 107,
+    solution_overview:
+      "From printed area $36$ and $1$ cm margins, form $A(x)$, then minimise with $A'$ and $A''$.",
+  },
+  {
+    id: "math-11-108",
+    case_id: "MATH 11.108",
+    title: "Wire into square and circle: minimise total enclosed area",
+    subsection: "11.3",
+    context:
+      "A wire of length $60$ cm is cut into two pieces. One piece is bent into a square, the other into a circle. The goal is to minimise the total area enclosed by the square and the circle. Let $x$ be the length of wire used for the square ($0\\le x\\le 60$). Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The total enclosed area as a function of $x$ is $A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$.",
+      "Differentiating yields $A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$.",
+      "Setting $A'(x)=0$ gives the candidate $x=\\dfrac{240}{4+\\pi}$.",
+      "At that candidate, $A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$, so it is a strict local minimum of total area.",
+      "Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+Square perimeter $x$ means side $s=x/4$, so square area $s^{2}=x^{2}/16$.
+
+Circle gets wire length $60-x$, so circumference $2\\pi r=60-x$ and $r=(60-x)/(2\\pi)$. Circle area:
+
+$$
+\\pi r^{2}=\\pi\\cdot\\dfrac{(60-x)^{2}}{4\\pi^{2}}=\\dfrac{(60-x)^{2}}{4\\pi}.
+$$
+
+Total area:
+
+$$
+A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+Differentiate term by term:
+
+$$
+\\dfrac{d}{dx}\\left(\\dfrac{x^{2}}{16}\\right)=\\dfrac{x}{8},
+$$
+$$
+\\dfrac{d}{dx}\\left(\\dfrac{(60-x)^{2}}{4\\pi}\\right)=\\dfrac{2(60-x)(-1)}{4\\pi}=-\\dfrac{60-x}{2\\pi}.
+$$
+
+Hence
+
+$$
+A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+Set $A'(x)=0$:
+
+$$
+\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}\\qquad\\Rightarrow\\qquad 2\\pi x=8(60-x)\\qquad\\Rightarrow\\qquad 2\\pi x=480-8x,
+$$
+$$
+x(2\\pi+8)=480\\qquad\\Rightarrow\\qquad x=\\dfrac{480}{8+2\\pi}=\\dfrac{240}{4+\\pi}.
+$$
+
+The statement is True.`,
+      `**D.** → True
+
+Differentiate $A'$ again:
+
+$$
+A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0
+$$
+
+for every $x$. So the unique flat-slope candidate is a strict local (and global) minimum of total enclosed area.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise.
+
+Work it from the given model as follows.
+
+The cut length $x$ is a single free variable; the two shapes are encoded in $A(x)$. The whole problem is a standard one-variable optimisation after the constraint is substituted.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 108,
+    solution_overview:
+      "Express total area in terms of the cut length $x$, then minimise with $A'$ and $A''$.",
+  },
+  {
+    id: "math-11-109",
+    case_id: "MATH 11.109",
+    title: "Budget line: maximise U=xy without a pre-built substitute",
+    subsection: "11.3",
+    context:
+      "A consumer has utility $U(x,y)=xy$ and must spend the entire budget on the constraint $2x+y=20$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Solving the budget for $y$ and substituting gives the one-variable utility $U(x)=x(20-2x)=20x-2x^{2}$ on $0<x<10$.",
+      "The slope of that utility is $U'(x)=20-4x$, so $U'(x)=0$ at $x=5$.",
+      "At $x=5$ one has $y=10$ and utility level $U=50$.",
+      "$U''(x)=-4<0$, so $x=5$ is a strict local maximum of utility on the budget line.",
+      "After substitution, one may skip the second-derivative check because a budget constraint automatically guarantees a maximum."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Solving the budget for $y$ and substituting gives the one-variable utility $U(x)=x(20-2x)=20x-2x^{2}$ on $0<x<10$.
+
+Work it from the given model as follows.
+
+From $2x+y=20$,
+
+$$
+y=20-2x.
+$$
+
+Utility becomes
+
+$$
+U(x,y)=x(20-2x)=20x-2x^{2},
+$$
+
+with $x>0$ and $y>0$ forcing $0<x<10$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The slope of that utility is $U'(x)=20-4x$, so $U'(x)=0$ at $x=5$.
+
+Work it from the given model as follows.
+
+$$
+U'(x)=20-4x=0\\qquad\\Rightarrow\\qquad x=5.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At $x=5$ one has $y=10$ and utility level $U=50$.
+
+Work it from the given model as follows.
+
+$$
+y=20-2\\cdot 5=10,\\qquad U(5)=5\\cdot 10=50
+$$
+
+(or $U(5)=20\\cdot 5-2\\cdot 25=100-50=50$).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: $U''(x)=-4<0$, so $x=5$ is a strict local maximum of utility on the budget line.
+
+Work it from the given model as follows.
+
+$$
+U''(x)=-4<0,
+$$
+
+so the flat-slope candidate is a strict local maximum on the budget segment.
+
+The statement is True.`,
+      `**E.** → False
+
+Substitution only produces a one-variable function. You still need $U''$ (or a sign chart / endpoint comparison) to prove a maximum. A budget constraint does not by itself decide peak versus trough.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 109,
+    solution_overview:
+      "Substitute $y=20-2x$ into $U=xy$, then maximise the resulting $U(x)$.",
+  },
+  {
+    id: "math-11-110",
+    case_id: "MATH 11.110",
+    title: "Two inputs on x+y=10: maximise output Q=xy",
+    subsection: "11.3",
+    context:
+      "A firm produces output $Q=xy$ using inputs that must satisfy the resource constraint $x+y=10$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Substituting $y=10-x$ gives $Q(x)=x(10-x)$, whose slope is $Q'(x)=10-2x$.",
+      "The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q=25$.",
+      "$Q''(x)=-2<0$, confirming a local maximum.",
+      "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
+      "The constraint $x+y=10$ already forces $Q=25$ for every feasible pair $(x,y)$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Substituting $y=10-x$ gives $Q(x)=x(10-x)$, whose slope is $Q'(x)=10-2x$.
+
+Work it from the given model as follows.
+
+$$
+y=10-x\\qquad\\Rightarrow\\qquad Q(x)=x(10-x)=10x-x^{2},\\qquad Q'(x)=10-2x.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q=25$.
+
+Work it from the given model as follows.
+
+$$
+10-2x=0\\qquad\\Rightarrow\\qquad x=5,\\quad y=5,\\quad Q(5)=25.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: $Q''(x)=-2<0$, confirming a local maximum.
+
+Work it from the given model as follows.
+
+$$
+Q''(x)=-2<0
+$$
+
+at the candidate, so it is a strict local maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Any other split with $x+y=10$ yields strictly smaller output than $25$.
+
+Work it from the given model as follows.
+
+$Q(x)=10x-x^{2}$ is a downward-opening parabola with unique peak $25$ at $x=5$. For example $Q(4)=24<25$. So every other feasible split is strictly worse.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: The constraint $x+y=10$ already forces $Q=25$ for every feasible pair $(x,y)$.
+
+Work it from the given model as follows.
+
+$x+y=10$ allows many pairs; $Q=xy$ varies along that line. Only the balanced split $x=y=5$ reaches $25$.
+
+The statement is False.`
+    ],
+    difficulty_level: "2/5",
+    sort_order: 110,
+    solution_overview:
+      "Substitute the resource constraint into $Q=xy$ and maximise the resulting quadratic.",
+  },
+  {
+    id: "math-11-111",
+    case_id: "MATH 11.111",
+    title: "Linear demand: derive elasticity and find the revenue peak",
+    subsection: "11.3",
+    context:
+      "A firm faces demand $D(p)=100-2p$ for prices $0<p<50$. Revenue is $R(p)=p\\cdot D(p)$. Price elasticity of demand is defined by $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Differentiating demand and applying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-2p}{100-2p}$.",
+      "$|\\mathrm{El}(p)|=1$ holds exactly at $p=25$.",
+      "Expanding revenue gives $R(p)=100p-2p^{2}$, so $R'(p)=100-4p$ and $R'(p)=0$ at $p=25$.",
+      "At the revenue-maximising price one has $\\mathrm{El}(25)=-1$.",
+      "Because $|\\mathrm{El}|=1$ at $p=25$, demand is perfectly inelastic there."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+$$
+D'(p)=-2,
+$$
+$$
+\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}=\\dfrac{-2p}{100-2p}.
+$$
+
+The simplified elasticity formula must be computed from the definition; it is not handed to you in the stem.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $|\\mathrm{El}(p)|=1$ holds exactly at $p=25$.
+
+Work it from the given model as follows.
+
+$|\\mathrm{El}|=1$ means $\\dfrac{2p}{100-2p}=1$ (since the fraction is positive for $0<p<50$), so
+
+$$
+2p=100-2p\\qquad\\Rightarrow\\qquad 4p=100\\qquad\\Rightarrow\\qquad p=25.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Expanding revenue gives $R(p)=100p-2p^{2}$, so $R'(p)=100-4p$ and $R'(p)=0$ at $p=25$.
+
+Work it from the given model as follows.
+
+$$
+R(p)=p(100-2p)=100p-2p^{2},\\qquad R'(p)=100-4p=0\\qquad\\Rightarrow\\qquad p=25.
+$$
+
+The statement is True.`,
+      `**D.** → True
+
+Substitute $p=25$ into the elasticity formula from A:
+
+$$
+\\mathrm{El}(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.
+$$
+
+So the price that maximises revenue is exactly the unit-elastic price.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Because $|\\mathrm{El}|=1$ at $p=25$, demand is perfectly inelastic there.
+
+Work it from the given model as follows.
+
+Perfectly inelastic demand means elasticity $0$, not $-1$. Here $|\\mathrm{El}(25)|=1$ is unit elastic.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 111,
+    solution_overview:
+      "Derive $\\mathrm{El}(p)$ from $D(p)$, maximise $R(p)$, and match the unit-elastic price.",
+  },
+  {
+    id: "math-11-112",
+    case_id: "MATH 11.112",
+    title: "Theatre demand: show revenue flat slope matches El=-1",
+    subsection: "11.3",
+    context:
+      "A theatre faces demand $D(p)=120-3p$ for $0<p<40$. Revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Revenue expands to $R(p)=120p-3p^{2}$, so $R'(p)=0$ at $p=20$.",
+      "The elasticity formula simplifies to $\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}$.",
+      "At $p=20$, $\\mathrm{El}(20)=-1$.",
+      "$R''(20)=-6<0$, so $p=20$ is a strict local revenue maximum.",
+      "For this demand, $R'(p)=0$ can hold at a price where $\\mathrm{El}\\neq -1$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Revenue expands to $R(p)=120p-3p^{2}$, so $R'(p)=0$ at $p=20$.
+
+Work it from the given model as follows.
+
+$$
+R(p)=p(120-3p)=120p-3p^{2},\\qquad R'(p)=120-6p=0\\qquad\\Rightarrow\\qquad p=20.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The elasticity formula simplifies to $\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}$.
+
+Work it from the given model as follows.
+
+$$
+D'(p)=-3,\\qquad \\mathrm{El}(p)=\\dfrac{-3p}{120-3p}.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At $p=20$, $\\mathrm{El}(20)=-1$.
+
+Work it from the given model as follows.
+
+$$
+\\mathrm{El}(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.
+$$
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: $R''(20)=-6<0$, so $p=20$ is a strict local revenue maximum.
+
+Work it from the given model as follows.
+
+$$
+R''(p)=-6<0
+$$
+
+at every $p$, including $p=20$, so the revenue peak is a strict local maximum.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: For this demand, $R'(p)=0$ can hold at a price where $\\mathrm{El}\\neq -1$.
+
+Work it from the given model as follows.
+
+For this linear demand, the algebra forces $R'(p)=0$ and $\\mathrm{El}(p)=-1$ to occur at the same price $p=20$. They cannot separate.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 112,
+    solution_overview:
+      "Compute $R'$ and $\\mathrm{El}$ separately from $D(p)=120-3p$ and verify they meet at $p=20$.",
+  },
+  {
+    id: "math-11-113",
+    case_id: "MATH 11.113",
+    title: "Match MR from elasticity with MR from R(Q)",
+    subsection: "11.3",
+    context:
+      "Demand is $Q=D(p)=100-2p$. The firm may work with price or with quantity. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "At price $p=20$, quantity is $Q=60$ and $\\mathrm{El}(20)=-\\dfrac{2}{3}$.",
+      "The formula $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$ at $p=20$ gives $-10$.",
+      "Inverting demand to $p=50-\\dfrac{Q}{2}$ and forming $R(Q)=p(Q)\\cdot Q$ gives $R'(Q)=50-Q$, so at $Q=60$ one has $MR=-10$.",
+      "The two routes agree at this point.",
+      "At $p=20$, because $MR=-10\\neq 0$, revenue as a function of price cannot have a flat slope there."
+    ],
+    answer_key: [true, true, true, true, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: At price $p=20$, quantity is $Q=60$ and $\\mathrm{El}(20)=-\\dfrac{2}{3}$.
+
+Work it from the given model as follows.
+
+$$
+Q=100-40=60,\\qquad \\mathrm{El}(20)=\\dfrac{-2\\cdot 20}{60}=\\dfrac{-40}{60}=-\\dfrac{2}{3}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: The formula $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$ at $p=20$ gives $-10$.
+
+Work it from the given model as follows.
+
+$$
+MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\left(-\\dfrac{1}{2}\\right)=-10.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Inverting demand to $p=50-\\dfrac{Q}{2}$ and forming $R(Q)=p(Q)\\cdot Q$ gives $R'(Q)=50-Q$, so at $Q=60$ one has $MR=-10$.
+
+Work it from the given model as follows.
+
+From $Q=100-2p$ get $p=50-Q/2$. Then
+
+$$
+R(Q)=\\left(50-\\dfrac{Q}{2}\\right)Q=50Q-\\dfrac{Q^{2}}{2},\\qquad R'(Q)=50-Q.
+$$
+
+At $Q=60$, $R'(60)=-10$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: The two routes agree at this point.
+
+Work it from the given model as follows.
+
+Both calculations give $MR=-10$ at the same point, so the elasticity shortcut matches direct differentiation of $R(Q)$.
+
+The statement is True.`,
+      `**E.** → True
+
+As a function of price, $R(p)=p(100-2p)=100p-2p^{2}$ has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. That matches $MR\\neq 0$ in the quantity picture: $p=20$ is not the revenue-maximising price (which is $p=25$).
+
+The statement is True.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 113,
+    solution_overview:
+      "Compute elasticity-based MR and $R'(Q)$ at the same point and compare with $R'(p)$.",
+  },
+  {
+    id: "math-11-114",
+    case_id: "MATH 11.114",
+    title: "Two markets: compare elasticities at the same price",
+    subsection: "11.3",
+    context:
+      "Good A has demand $D_A(p)=80-p$. Good B has demand $D_B(p)=120-2p$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Compare the two markets at the common price $p=20$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$\\mathrm{El}_A(20)=-\\dfrac{1}{3}$.",
+      "$\\mathrm{El}_B(20)=-\\dfrac{1}{2}$.",
+      "At $p=20$, good B is more elastic in absolute value than good A.",
+      "Revenue for A is $R_A(p)=p(80-p)$, so $R_A'(20)=40\\neq 0$.",
+      "Because $|\\mathrm{El}_A(20)|<1$, the price $p=20$ maximises revenue for good A."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $\\mathrm{El}_A(20)=-\\dfrac{1}{3}$.
+
+Work it from the given model as follows.
+
+$$
+D_A'(p)=-1,\\qquad \\mathrm{El}_A(20)=\\dfrac{-1\\cdot 20}{80-20}=\\dfrac{-20}{60}=-\\dfrac{1}{3}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $\\mathrm{El}_B(20)=-\\dfrac{1}{2}$.
+
+Work it from the given model as follows.
+
+$$
+D_B'(p)=-2,\\qquad \\mathrm{El}_B(20)=\\dfrac{-2\\cdot 20}{120-40}=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At $p=20$, good B is more elastic in absolute value than good A.
+
+Work it from the given model as follows.
+
+$|\\mathrm{El}_B(20)|=1/2>1/3=|\\mathrm{El}_A(20)|$, so B is more elastic at this price.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Revenue for A is $R_A(p)=p(80-p)$, so $R_A'(20)=40\\neq 0$.
+
+Work it from the given model as follows.
+
+$$
+R_A(p)=80p-p^{2},\\qquad R_A'(p)=80-2p,\\qquad R_A'(20)=40\\neq 0.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+Unit elasticity (and $R'=0$) for good A occurs at $80-2p=0$, i.e. $p=40$, not at $p=20$. Having $|\\mathrm{El}|<1$ means revenue still rises if price rises a little; it does not mean revenue is already maximised.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 114,
+    solution_overview:
+      "Compute both elasticities at $p=20$ from the definition and relate to $R_A'$.",
+  },
+  {
+    id: "math-11-115",
+    case_id: "MATH 11.115",
+    title: "Two products, one resource: reduce then maximise profit",
+    subsection: "11.3",
+    context:
+      "A workshop makes two products in amounts $x$ and $y$. Profit is $P=30x+20y-x^{2}-y^{2}$, and a single resource constraint requires $x+y=10$ with $x\\ge 0$, $y\\ge 0$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Substituting $y=10-x$ into profit gives $P(x)=100+30x-2x^{2}$.",
+      "Then $P'(x)=30-4x$, so the candidate is $x=7.5$.",
+      "At that candidate, $y=2.5$ and $P''(x)=-4<0$, confirming a local profit maximum.",
+      "The maximised constrained profit equals $212.5$.",
+      "Ignoring the constraint and treating $x$ and $y$ as unrelated would automatically give the same answer."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Substituting $y=10-x$ into profit gives $P(x)=100+30x-2x^{2}$.
+
+Work it from the given model as follows.
+
+$$
+P(x,10-x)=30x+20(10-x)-x^{2}-(10-x)^{2}=30x+200-20x-x^{2}-(100-20x+x^{2}).
+$$
+
+Simplify:
+
+$$
+P=200+10x-x^{2}-100+20x-x^{2}=100+30x-2x^{2}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Then $P'(x)=30-4x$, so the candidate is $x=7.5$.
+
+Work it from the given model as follows.
+
+$$
+P'(x)=30-4x=0\\qquad\\Rightarrow\\qquad x=7.5.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At that candidate, $y=2.5$ and $P''(x)=-4<0$, confirming a local profit maximum.
+
+Work it from the given model as follows.
+
+$$
+y=10-7.5=2.5,\\qquad P''(x)=-4<0,
+$$
+
+so the candidate is a strict local profit maximum on the resource line.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: The maximised constrained profit equals $212.5$.
+
+Work it from the given model as follows.
+
+$$
+P(7.5)=100+30\\cdot 7.5-2\\cdot(7.5)^{2}=100+225-2\\cdot 56.25=325-112.5=212.5.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+Without the constraint, flat slopes of $P(x,y)$ would solve a different problem (unconstrained critical point of a two-variable profit). The resource link $x+y=10$ changes the feasible set and the optimal mix.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 115,
+    solution_overview:
+      "Substitute $x+y=10$ into profit, then maximise the resulting one-variable $P(x)$.",
+  },
+  {
+    id: "math-11-116",
+    case_id: "MATH 11.116",
+    title: "River paddock: three-sided fence maximises area",
+    subsection: "11.3",
+    context:
+      "A farmer fences a rectangular riverside paddock using $40$ metres of fence for three sides only (the river forms the fourth side). Let $x$ be the length of each side perpendicular to the river. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "If $x$ is each perpendicular side, the side along the river uses $40-2x$ metres, so the enclosed area is $A(x)=x(40-2x)$.",
+      "$A'(x)=40-4x$, so $A'(x)=0$ at $x=10$.",
+      "Then the riverside side is $20$ metres and $A''(x)=-4<0$, so $x=10$ maximises area locally.",
+      "Maximal area is $200$ square metres.",
+      "The same dimensions would also maximise area if all four sides had to be fenced with the same $40$ metres."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: If $x$ is each perpendicular side, the side along the river uses $40-2x$ metres, so the enclosed area is $A(x)=x(40-2x)$.
+
+Work it from the given model as follows.
+
+Two perpendicular sides use $2x$ metres, so the parallel side is $40-2x$. Area:
+
+$$
+A(x)=x(40-2x)=40x-2x^{2},
+$$
+
+for $0<x<20$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $A'(x)=40-4x$, so $A'(x)=0$ at $x=10$.
+
+Work it from the given model as follows.
+
+$$
+A'(x)=40-4x=0\\qquad\\Rightarrow\\qquad x=10.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Then the riverside side is $20$ metres and $A''(x)=-4<0$, so $x=10$ maximises area locally.
+
+Work it from the given model as follows.
+
+Riverside length $40-20=20$. And
+
+$$
+A''(x)=-4<0,
+$$
+
+so the candidate is a local maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: Maximal area is $200$ square metres.
+
+Work it from the given model as follows.
+
+$$
+A(10)=10\\cdot 20=200.
+$$
+
+The statement is True.`,
+      `**E.** → False
+
+With four sides and perimeter $40$, the constraint is $2x+2y=40$, so $A=x(20-x)$ with maximum $100$ at a $10\\times 10$ square — different geometry and a smaller max area. The river changes the problem.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 116,
+    solution_overview:
+      "Derive the three-sided area function from the $40$ m fence, then maximise.",
+  },
+  {
+    id: "math-11-117",
+    case_id: "MATH 11.117",
+    title: "Fixed output xy=16: minimise cost by substitution",
+    subsection: "11.3",
+    context:
+      "A firm must produce exactly $16$ units with production $Q=xy$, using inputs that cost $C=2x+8y$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "Substituting $y=16/x$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.",
+      "$C'(x)=2-\\dfrac{128}{x^{2}}$, so $C'(x)=0$ at $x=8$.",
+      "Then $y=2$, total cost is $32$, and $C''(8)>0$ confirms a local cost minimum.",
+      "Along $xy=16$, the cost-minimising point satisfies $2=8\\cdot\\dfrac{y}{x}$ when $y=16/x$, which holds at $(x,y)=(8,2)$.",
+      "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: Substituting $y=16/x$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.
+
+Work it from the given model as follows.
+
+From $xy=16$, $y=16/x$. Cost:
+
+$$
+C=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: $C'(x)=2-\\dfrac{128}{x^{2}}$, so $C'(x)=0$ at $x=8$.
+
+Work it from the given model as follows.
+
+$$
+C'(x)=2-\\dfrac{128}{x^{2}}=0\\qquad\\Rightarrow\\qquad x^{2}=64\\qquad\\Rightarrow\\qquad x=8
+$$
+
+($x>0$).
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Then $y=2$, total cost is $32$, and $C''(8)>0$ confirms a local cost minimum.
+
+Work it from the given model as follows.
+
+$$
+y=16/8=2,\\qquad C(8)=16+16=32.
+$$
+
+$$
+C''(x)=\\dfrac{256}{x^{3}}\\qquad\\Rightarrow\\qquad C''(8)>0,
+$$
+
+so the candidate is a local cost minimum.
+
+The statement is True.`,
+      `**D.** → True
+
+Along $y=16/x$, $\\dfrac{dy}{dx}=-16/x^{2}=-y/x$. Setting the cost slope in $x$ to zero is equivalent to balancing the input prices against that trade-off:
+
+$$
+2+8\\cdot\\left(-\\dfrac{y}{x}\\right)=0\\qquad\\Rightarrow\\qquad 2=8\\dfrac{y}{x}.
+$$
+
+At $(8,2)$: $8\\cdot(2/8)=2$, which matches.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary.
+
+Work it from the given model as follows.
+
+Other feasible pairs have different costs. For example $(4,4)$ gives $C=8+32=40>32$. Substitution is essential.
+
+The statement is False.`
+    ],
+    difficulty_level: "4/5",
+    sort_order: 117,
+    solution_overview:
+      "Substitute $y=16/x$ into $C=2x+8y$ and minimise the resulting $C(x)$.",
+  },
+  {
+    id: "math-11-118",
+    case_id: "MATH 11.118",
+    title: "Derive elasticity along D=90-p and read revenue slope",
+    subsection: "11.3",
+    context:
+      "Demand is $D(p)=90-p$ for $0<p<90$. Revenue is $R(p)=p\\cdot D(p)$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "$R(p)=90p-p^{2}$, so $R'(p)=0$ at $p=45$, with $R(45)=2025$.",
+      "Simplifying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-p}{90-p}$, and $\\mathrm{El}(45)=-1$.",
+      "At $p=30$, $\\mathrm{El}(30)=-1/2$ and $R'(30)=30>0$, so a small price increase raises revenue.",
+      "At $p=60$, $\\mathrm{El}(60)=-2$ and $R'(60)=-30<0$, so a small price increase lowers revenue.",
+      "Whenever $|\\mathrm{El}(p)|>1$, revenue is maximised at that price."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: $R(p)=90p-p^{2}$, so $R'(p)=0$ at $p=45$, with $R(45)=2025$.
+
+Work it from the given model as follows.
+
+$$
+R(p)=p(90-p)=90p-p^{2},\\qquad R'(p)=90-2p=0\\qquad\\Rightarrow\\qquad p=45,
+$$
+$$
+R(45)=45\\cdot 45=2025.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Simplifying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-p}{90-p}$, and $\\mathrm{El}(45)=-1$.
+
+Work it from the given model as follows.
+
+$$
+D'(p)=-1,\\qquad \\mathrm{El}(p)=\\dfrac{-p}{90-p},\\qquad \\mathrm{El}(45)=\\dfrac{-45}{45}=-1.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: At $p=30$, $\\mathrm{El}(30)=-1/2$ and $R'(30)=30>0$, so a small price increase raises revenue.
+
+Work it from the given model as follows.
+
+$$
+\\mathrm{El}(30)=\\dfrac{-30}{60}=-\\dfrac{1}{2},\\qquad R'(30)=90-60=30>0.
+$$
+
+With $|\\mathrm{El}|<1$, raising price a little increases revenue, matching $R'>0$.
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: At $p=60$, $\\mathrm{El}(60)=-2$ and $R'(60)=-30<0$, so a small price increase lowers revenue.
+
+Work it from the given model as follows.
+
+$$
+\\mathrm{El}(60)=\\dfrac{-60}{30}=-2,\\qquad R'(60)=90-120=-30<0.
+$$
+
+Elastic demand: a small price rise lowers revenue.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Whenever $|\\mathrm{El}(p)|>1$, revenue is maximised at that price.
+
+Work it from the given model as follows.
+
+Revenue is maximised where $\\mathrm{El}=-1$ (here $p=45$), not wherever $|\\mathrm{El}|>1$. In the elastic region revenue falls as price rises.
+
+The statement is False.`
+    ],
+    difficulty_level: "3/5",
+    sort_order: 118,
+    solution_overview:
+      "Derive $R'$ and $\\mathrm{El}$ from $D=90-p$, then connect elasticity regions to the sign of $R'$.",
+  },
+  {
+    id: "math-11-119",
+    case_id: "MATH 11.119",
+    title: "Open box from a sheet: reduce volume then prove the peak",
+    subsection: "11.3",
+    context:
+      "A square sheet of side $12$ cm has equal squares of side $x$ cut from each corner, and the edges are folded up to make an open box. The volume of the box should be maximised for $0<x<6$. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "The box has height $x$ and base side $12-2x$, so volume is $V(x)=x(12-2x)^{2}$.",
+      "Expanding gives $V(x)=144x-48x^{2}+4x^{3}$, so $V'(x)=144-96x+12x^{2}$.",
+      "Factoring yields $V'(x)=12(x-2)(x-6)$, so the only flat-slope candidate in $(0,6)$ is $x=2$.",
+      "$V''(2)<0$ and $V(2)=128$, so $x=2$ is a local volume maximum with volume $128$.",
+      "Solving $V'=0$ alone, without checking $V''$ or endpoints, already proves the global max on $(0,6)$."
+    ],
+    answer_key: [true, true, true, true, false],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: The box has height $x$ and base side $12-2x$, so volume is $V(x)=x(12-2x)^{2}$.
+
+Work it from the given model as follows.
+
+Cutting out corner squares of side $x$ leaves a base of side $12-2x$ and height $x$, so
+
+$$
+V(x)=x(12-2x)^{2}.
+$$
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: Expanding gives $V(x)=144x-48x^{2}+4x^{3}$, so $V'(x)=144-96x+12x^{2}$.
+
+Work it from the given model as follows.
+
+$$
+(12-2x)^{2}=144-48x+4x^{2},
+$$
+$$
+V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3},
+$$
+$$
+V'(x)=144-96x+12x^{2}.
+$$
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Factoring yields $V'(x)=12(x-2)(x-6)$, so the only flat-slope candidate in $(0,6)$ is $x=2$.
+
+Work it from the given model as follows.
+
+$$
+V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).
+$$
+
+In the open interval $(0,6)$ the only root is $x=2$ ($x=6$ is an endpoint where the box flattens).
+
+The statement is True.`,
+      `**D.** → True
+
+The claim says: $V''(2)<0$ and $V(2)=128$, so $x=2$ is a local volume maximum with volume $128$.
+
+Work it from the given model as follows.
+
+$$
+V''(x)=-96+24x,\\qquad V''(2)=-96+48=-48<0,
+$$
+$$
+V(2)=2\\cdot(12-4)^{2}=2\\cdot 64=128.
+$$
+
+So $x=2$ is a strict local volume maximum.
+
+The statement is True.`,
+      `**E.** → False
+
+The claim says: Solving $V'=0$ alone, without checking $V''$ or endpoints, already proves the global max on $(0,6)$.
+
+Work it from the given model as follows.
+
+$V'=0$ only lists candidates. You still need $V''$ (or a sign chart) and, for a global claim on $(0,6)$, a comparison with the behaviour near the endpoints where $V\\\\to 0$.
+
+The statement is False.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 119,
+    solution_overview:
+      "Derive $V(x)=x(12-2x)^{2}$ from the sheet geometry, then maximise with $V'$ and $V''$.",
+  },
+  {
+    id: "math-11-120",
+    case_id: "MATH 11.120",
+    title: "Two fencing jobs: derive both area functions, compare peaks",
+    subsection: "11.3",
+    context:
+      "Two projects use $24$ metres of fencing. River project: a rectangular paddock with one side along a river (only three sides fenced). Field project: a fully enclosed rectangle (all four sides fenced). In both projects let $x$ be a side perpendicular to the long direction described in the usual way. Decide TRUE or FALSE for each claim.",
+    statements: [
+      "For the river project the area is $A_R(x)=x(24-2x)$, with a local maximum at $x=6$ and maximal area $72$.",
+      "For the field project the area is $A_F(x)=x(12-x)$, with a local maximum at $x=6$ and maximal area $36$.",
+      "Both projects have a negative second derivative at their candidates, so both candidates are local area maxima.",
+      "Because both optimisations yield $x=6$, the two projects have the same maximal area.",
+      "The river project's maximal area is twice the field project's maximal area for the same fence length."
+    ],
+    answer_key: [true, true, true, false, true],
+    tactical_explanations: [
+      `**A.** → True
+
+The claim says: For the river project the area is $A_R(x)=x(24-2x)$, with a local maximum at $x=6$ and maximal area $72$.
+
+Work it from the given model as follows.
+
+Three sides: $2x+(24-2x)=24$, area $A_R=x(24-2x)=24x-2x^{2}$.
+
+$$
+A_R'(x)=24-4x=0\\qquad\\Rightarrow\\qquad x=6,
+$$
+
+riverside length $12$, area $6\\cdot 12=72$.
+
+The statement is True.`,
+      `**B.** → True
+
+The claim says: For the field project the area is $A_F(x)=x(12-x)$, with a local maximum at $x=6$ and maximal area $36$.
+
+Work it from the given model as follows.
+
+Four sides: $2x+2y=24\\Rightarrow y=12-x$, area $A_F=x(12-x)=12x-x^{2}$.
+
+$$
+A_F'(x)=12-2x=0\\qquad\\Rightarrow\\qquad x=6,
+$$
+
+$y=6$, area $36$.
+
+The statement is True.`,
+      `**C.** → True
+
+The claim says: Both projects have a negative second derivative at their candidates, so both candidates are local area maxima.
+
+Work it from the given model as follows.
+
+$$
+A_R''(x)=-4<0,\\qquad A_F''(x)=-2<0,
+$$
+
+so both flat-slope candidates are local maxima.
+
+The statement is True.`,
+      `**D.** → False
+
+The claim says: Because both optimisations yield $x=6$, the two projects have the same maximal area.
+
+Work it from the given model as follows.
+
+Same $x=6$ does not mean same area: $A_R(6)=72\\neq 36=A_F(6)$. The constraints differ (three sides versus four).
+
+The statement is False.`,
+      `**E.** → True
+
+The claim says: The river project's maximal area is twice the field project's maximal area for the same fence length.
+
+Work it from the given model as follows.
+
+$72=2\\cdot 36$. With the same fence length, opening one side to the river doubles the maximal enclosed area compared with a fully enclosed rectangle.
+
+The statement is True.`
+    ],
+    difficulty_level: "5/5",
+    sort_order: 120,
+    solution_overview:
+      "Derive both area functions from the fencing rules, maximise each, and compare the peak areas.",
   }
 ];
