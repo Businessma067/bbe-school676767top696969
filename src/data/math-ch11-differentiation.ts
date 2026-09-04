@@ -7386,64 +7386,42 @@ The statement is True.`
   {
     id: "math-11-106",
     case_id: "MATH 11.106",
-    title: "Garden fence: maximise area from a fixed perimeter",
+    title: "Community garden: stretch 40 m of fence as far as possible",
     subsection: "11.3",
     context:
-      "A gardener has exactly $40$ metres of fencing and wants a rectangular plot that encloses as much area as possible. Let the sides be $x$ metres and $y$ metres. Decide TRUE or FALSE for each claim.",
+      "A community garden committee has exactly $40$ metres of fencing for one rectangular bed. They can choose the side lengths freely so long as all of the fencing is used, and they want the bed to enclose as much planting area as possible. Let one side be $x$ metres. Decide TRUE or FALSE for each claim.",
     statements: [
-      "From the fencing constraint one can write the area as a function of $x$ alone: $A(x)=x(20-x)$ for $0<x<20$.",
-      "Differentiating that area function gives $A'(x)=20-2x$.",
-      "Setting the slope of area to zero yields the candidate $x=10$, and then $y=10$.",
-      "The second derivative is $A''(x)=-2<0$, so $x=10$ is a strict local maximum of area, and the maximal area is $100$ m$^{2}$.",
-      "Because the perimeter is fixed, every choice of $x$ automatically maximises area, so no derivative work is needed."
+      "Using the fencing fully, the planting area can be written as $A(x)=x(20-x)$ for $0<x<20$.",
+      "The area is maximised when the bed is a $10$ by $10$ metre square.",
+      "That maximum planting area is $100$ square metres.",
+      "The second derivative of area is negative at that square, confirming a local maximum.",
+      "Because every layout uses the same $40$ metres of fence, every layout gives the same area, so no optimisation is needed."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The fencing uses all $40$ metres on the four sides:
+All fencing used: $2x+2y=40$, so $y=20-x$. Area:
 
 $$
-2x+2y=40\\qquad\\Rightarrow\\qquad x+y=20\\qquad\\Rightarrow\\qquad y=20-x.
+A=xy=x(20-x).
 $$
-
-Area is length times width:
-
-$$
-A=xy=x(20-x)=20x-x^{2},
-$$
-
-for $0<x<20$ (both sides positive). So the one-variable formula in the claim is correct — but it had to be derived from the constraint, not assumed.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Differentiating that area function gives $A'(x)=20-2x$.
-
-Work it from the given model as follows.
-
-From $A(x)=20x-x^{2}$,
-
 $$
-A'(x)=20-2x.
+A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10,\\quad y=10.
 $$
 
-That is the slope of enclosed area with respect to the side length $x$.
+So the maximising shape is a square.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Setting the slope of area to zero yields the candidate $x=10$, and then $y=10$.
-
-Work it from the given model as follows.
-
-Solve
-
 $$
-A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10.
+A(10)=10\\cdot 10=100.
 $$
-
-Then $y=20-10=10$. So the candidate rectangle is a $10\\times 10$ square.
 
 The statement is True.`,
       `**D.** → True
@@ -7452,25 +7430,19 @@ $$
 A''(x)=-2<0
 $$
 
-at $x=10$ (and everywhere), so the flat-slope candidate is a strict local maximum. The area there is
-
-$$
-A(10)=10\\cdot 10=100.
-$$
-
-For this downward-opening parabola it is also the global maximum on $(0,20)$.
+at $x=10$, so the flat-slope layout is a local maximum of area.
 
 The statement is True.`,
       `**E.** → False
 
-A fixed perimeter only restricts the feasible pairs $(x,y)$. Different splits give different areas — for example $A(5)=75<100=A(10)$. Maximising area still requires writing $A$ in one variable and using derivatives (or an equivalent argument).
+Same fence length does not mean same area. For example a $5\\times 15$ bed has area $75<100$. Optimisation is needed.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 106,
     solution_overview:
-      "Derive $A(x)=x(20-x)$ from the $40$ m perimeter, then maximise with $A'$ and $A''$.",
+      "Garden fence story: derive $A(x)$ from $40$ m perimeter and maximise in words and derivatives.",
   },
   {
     id: "math-11-107",
@@ -7813,102 +7785,107 @@ The statement is False.`
   {
     id: "math-11-111",
     case_id: "MATH 11.111",
-    title: "Linear demand: derive elasticity and find the revenue peak",
+    title: "City bike hire: when does a price rise help revenue?",
     subsection: "11.3",
     context:
-      "A firm faces demand $D(p)=100-2p$ for prices $0<p<50$. Revenue is $R(p)=p\\cdot D(p)$. Price elasticity of demand is defined by $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+      "A city bike-hire firm estimates that if the daily rental price is $p$ euros (with $0<p<50$), the number of bikes hired that day is $D(p)=100-2p$. Managers want to know how price changes affect revenue and how sensitive demand is to price. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Differentiating demand and applying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-2p}{100-2p}$.",
-      "$|\\mathrm{El}(p)|=1$ holds exactly at $p=25$.",
-      "Expanding revenue gives $R(p)=100p-2p^{2}$, so $R'(p)=100-4p$ and $R'(p)=0$ at $p=25$.",
-      "At the revenue-maximising price one has $\\mathrm{El}(25)=-1$.",
-      "Because $|\\mathrm{El}|=1$ at $p=25$, demand is perfectly inelastic there."
+      "Daily revenue, as a function of price, is $R(p)=100p-2p^{2}$.",
+      "Revenue is maximised at a daily price of $25$ euros, and that peak revenue is $1250$ euros.",
+      "At the $25$-euro price, the price elasticity of demand equals $-1$ (unit elastic).",
+      "At a price of $20$ euros, a small further price increase would still raise the firm's daily revenue.",
+      "At the $25$-euro price demand is perfectly inelastic, because elasticity has absolute value $1$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
+Revenue is price times quantity hired:
+
 $$
-D'(p)=-2,
-$$
-$$
-\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}=\\dfrac{-2p}{100-2p}.
+R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}.
 $$
 
-The simplified elasticity formula must be computed from the definition; it is not handed to you in the stem.
+So the claimed revenue formula is correct.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $|\\mathrm{El}(p)|=1$ holds exactly at $p=25$.
-
-Work it from the given model as follows.
-
-$|\\mathrm{El}|=1$ means $\\dfrac{2p}{100-2p}=1$ (since the fraction is positive for $0<p<50$), so
+Differentiate revenue:
 
 $$
-2p=100-2p\\qquad\\Rightarrow\\qquad 4p=100\\qquad\\Rightarrow\\qquad p=25.
+R'(p)=100-4p.
+$$
+
+Set the slope to zero:
+
+$$
+100-4p=0\\qquad\\Rightarrow\\qquad p=25.
+$$
+
+The second derivative is $R''(p)=-4<0$, so this is a maximum. The peak revenue is
+
+$$
+R(25)=100\\cdot 25-2\\cdot 25^{2}=2500-1250=1250.
 $$
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Expanding revenue gives $R(p)=100p-2p^{2}$, so $R'(p)=100-4p$ and $R'(p)=0$ at $p=25$.
-
-Work it from the given model as follows.
+Price elasticity of demand is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Here $D'(p)=-2$, so
 
 $$
-R(p)=p(100-2p)=100p-2p^{2},\\qquad R'(p)=100-4p=0\\qquad\\Rightarrow\\qquad p=25.
+\\mathrm{El}(p)=\\dfrac{-2p}{100-2p}.
 $$
+
+At $p=25$:
+
+$$
+\\mathrm{El}(25)=\\dfrac{-50}{50}=-1.
+$$
+
+Demand is unit elastic exactly at the revenue-maximising price.
 
 The statement is True.`,
       `**D.** → True
 
-Substitute $p=25$ into the elasticity formula from A:
+At $p=20$,
 
 $$
-\\mathrm{El}(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.
+R'(20)=100-80=20>0.
 $$
 
-So the price that maximises revenue is exactly the unit-elastic price.
+A positive slope of revenue means that a small price increase raises daily revenue. Equivalently, $|\\mathrm{El}(20)|=\\dfrac{40}{60}<1$ (inelastic), which is the same conclusion.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $|\\mathrm{El}|=1$ at $p=25$, demand is perfectly inelastic there.
-
-Work it from the given model as follows.
-
-Perfectly inelastic demand means elasticity $0$, not $-1$. Here $|\\mathrm{El}(25)|=1$ is unit elastic.
+Perfectly inelastic demand means elasticity $0$, not $-1$. Absolute value $1$ is unit elastic. The claim confuses those two ideas.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 111,
     solution_overview:
-      "Derive $\\mathrm{El}(p)$ from $D(p)$, maximise $R(p)$, and match the unit-elastic price.",
+      "From bike-hire demand $D=100-2p$, form revenue, find its peak, and read elasticity at that price.",
   },
   {
     id: "math-11-112",
     case_id: "MATH 11.112",
-    title: "Theatre demand: show revenue flat slope matches El=-1",
+    title: "Theatre tickets: match the revenue peak to unit elasticity",
     subsection: "11.3",
     context:
-      "A theatre faces demand $D(p)=120-3p$ for $0<p<40$. Revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+      "A small theatre sells tickets at price $p$ euros, with $0<p<40$. Audience size that evening is $D(p)=120-3p$. The box office wants the price that maximises ticket revenue and wants to see how that price relates to demand sensitivity. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Revenue expands to $R(p)=120p-3p^{2}$, so $R'(p)=0$ at $p=20$.",
-      "The elasticity formula simplifies to $\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}$.",
-      "At $p=20$, $\\mathrm{El}(20)=-1$.",
-      "$R''(20)=-6<0$, so $p=20$ is a strict local revenue maximum.",
-      "For this demand, $R'(p)=0$ can hold at a price where $\\mathrm{El}\\neq -1$."
+      "Ticket revenue expands to $R(p)=120p-3p^{2}$, and its slope is zero at $p=20$.",
+      "At $20$ euros, the price elasticity of demand equals $-1$.",
+      "The second derivative of revenue is negative at $p=20$, so that price is a local revenue maximum.",
+      "At $20$ euros the theatre sells $60$ tickets and earns $1200$ euros.",
+      "For this demand curve, the price that flattens revenue can differ from the unit-elastic price."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
-
-The claim says: Revenue expands to $R(p)=120p-3p^{2}$, so $R'(p)=0$ at $p=20$.
-
-Work it from the given model as follows.
 
 $$
 R(p)=p(120-3p)=120p-3p^{2},\\qquad R'(p)=120-6p=0\\qquad\\Rightarrow\\qquad p=20.
@@ -7917,99 +7894,81 @@ $$
 The statement is True.`,
       `**B.** → True
 
-The claim says: The elasticity formula simplifies to $\\mathrm{El}(p)=\\dfrac{-3p}{120-3p}$.
-
-Work it from the given model as follows.
+With $D'(p)=-3$,
 
 $$
-D'(p)=-3,\\qquad \\mathrm{El}(p)=\\dfrac{-3p}{120-3p}.
+\\mathrm{El}(p)=\\dfrac{-3p}{120-3p},\\qquad \\mathrm{El}(20)=\\dfrac{-60}{60}=-1.
 $$
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At $p=20$, $\\mathrm{El}(20)=-1$.
-
-Work it from the given model as follows.
-
-$$
-\\mathrm{El}(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.
-$$
-
-The statement is True.`,
-      `**D.** → True
-
-The claim says: $R''(20)=-6<0$, so $p=20$ is a strict local revenue maximum.
-
-Work it from the given model as follows.
-
 $$
 R''(p)=-6<0
 $$
 
-at every $p$, including $p=20$, so the revenue peak is a strict local maximum.
+at every price, including $p=20$, so the flat-slope ticket price is a strict local revenue maximum.
+
+The statement is True.`,
+      `**D.** → True
+
+$$
+D(20)=120-60=60,\\qquad R(20)=20\\cdot 60=1200.
+$$
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: For this demand, $R'(p)=0$ can hold at a price where $\\mathrm{El}\\neq -1$.
-
-Work it from the given model as follows.
-
-For this linear demand, the algebra forces $R'(p)=0$ and $\\mathrm{El}(p)=-1$ to occur at the same price $p=20$. They cannot separate.
+For this linear demand the algebra forces $R'(p)=0$ and $\\mathrm{El}(p)=-1$ at the same price $p=20$. They cannot separate.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 112,
     solution_overview:
-      "Compute $R'$ and $\\mathrm{El}$ separately from $D(p)=120-3p$ and verify they meet at $p=20$.",
+      "Theatre demand $D=120-3p$: show the revenue peak and unit elasticity land on the same price.",
   },
   {
     id: "math-11-113",
     case_id: "MATH 11.113",
-    title: "Match MR from elasticity with MR from R(Q)",
+    title: "Online shop: two ways to read marginal revenue at one price",
     subsection: "11.3",
     context:
-      "Demand is $Q=D(p)=100-2p$. The firm may work with price or with quantity. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+      "An online shop faces demand $Q=D(p)=100-2p$ for a gadget. Analysts sometimes work with price $p$ and sometimes with quantity $Q$. Today the posted price is $p=20$ euros. Decide TRUE or FALSE for each claim.",
     statements: [
-      "At price $p=20$, quantity is $Q=60$ and $\\mathrm{El}(20)=-\\dfrac{2}{3}$.",
-      "The formula $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$ at $p=20$ gives $-10$.",
-      "Inverting demand to $p=50-\\dfrac{Q}{2}$ and forming $R(Q)=p(Q)\\cdot Q$ gives $R'(Q)=50-Q$, so at $Q=60$ one has $MR=-10$.",
-      "The two routes agree at this point.",
-      "At $p=20$, because $MR=-10\\neq 0$, revenue as a function of price cannot have a flat slope there."
+      "At $20$ euros the shop sells $60$ gadgets, and the price elasticity of demand is $-2/3$.",
+      "Using the elasticity route, marginal revenue at that point equals $-10$ euros per extra gadget.",
+      "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at $Q=60$.",
+      "The two calculations agree, so the elasticity shortcut matches direct differentiation of $R(Q)$.",
+      "Because that marginal revenue is not zero, the $20$-euro price does not maximise the shop's revenue."
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: At price $p=20$, quantity is $Q=60$ and $\\mathrm{El}(20)=-\\dfrac{2}{3}$.
+$$
+Q=100-2\\cdot 20=60.
+$$
 
-Work it from the given model as follows.
+Elasticity:
 
 $$
-Q=100-40=60,\\qquad \\mathrm{El}(20)=\\dfrac{-2\\cdot 20}{60}=\\dfrac{-40}{60}=-\\dfrac{2}{3}.
+\\mathrm{El}(20)=\\dfrac{D'(20)\\cdot 20}{D(20)}=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}.
 $$
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: The formula $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$ at $p=20$ gives $-10$.
-
-Work it from the given model as follows.
+The standard link is $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$:
 
 $$
-MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\left(-\\dfrac{1}{2}\\right)=-10.
+MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\cdot\\left(-\\dfrac{1}{2}\\right)=-10.
 $$
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Inverting demand to $p=50-\\dfrac{Q}{2}$ and forming $R(Q)=p(Q)\\cdot Q$ gives $R'(Q)=50-Q$, so at $Q=60$ one has $MR=-10$.
-
-Work it from the given model as follows.
-
-From $Q=100-2p$ get $p=50-Q/2$. Then
+Invert demand: $p=50-Q/2$. Then
 
 $$
 R(Q)=\\left(50-\\dfrac{Q}{2}\\right)Q=50Q-\\dfrac{Q^{2}}{2},\\qquad R'(Q)=50-Q.
@@ -8020,92 +7979,70 @@ At $Q=60$, $R'(60)=-10$.
 The statement is True.`,
       `**D.** → True
 
-The claim says: The two routes agree at this point.
-
-Work it from the given model as follows.
-
-Both calculations give $MR=-10$ at the same point, so the elasticity shortcut matches direct differentiation of $R(Q)$.
+Both routes give $-10$, so they describe the same marginal revenue at this operating point.
 
 The statement is True.`,
       `**E.** → True
 
-As a function of price, $R(p)=p(100-2p)=100p-2p^{2}$ has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. That matches $MR\\neq 0$ in the quantity picture: $p=20$ is not the revenue-maximising price (which is $p=25$).
+Revenue as a function of price has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. The revenue-maximising price is $p=25$, not $20$. Nonzero marginal revenue at $Q=60$ is the same warning in quantity language.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 113,
     solution_overview:
-      "Compute elasticity-based MR and $R'(Q)$ at the same point and compare with $R'(p)$.",
+      "At $p=20$ for $D=100-2p$, match elasticity-based MR with $R'(Q)$ and note revenue is not maximised.",
   },
   {
     id: "math-11-114",
     case_id: "MATH 11.114",
-    title: "Two markets: compare elasticities at the same price",
+    title: "Two coffee carts: which market is more price-sensitive?",
     subsection: "11.3",
     context:
-      "Good A has demand $D_A(p)=80-p$. Good B has demand $D_B(p)=120-2p$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Compare the two markets at the common price $p=20$. Decide TRUE or FALSE for each claim.",
+      "Two coffee carts charge the same cup price $p=20$ euros on a festival day. Cart A faces demand $D_A(p)=80-p$. Cart B faces demand $D_B(p)=120-2p$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$\\mathrm{El}_A(20)=-\\dfrac{1}{3}$.",
-      "$\\mathrm{El}_B(20)=-\\dfrac{1}{2}$.",
-      "At $p=20$, good B is more elastic in absolute value than good A.",
-      "Revenue for A is $R_A(p)=p(80-p)$, so $R_A'(20)=40\\neq 0$.",
-      "Because $|\\mathrm{El}_A(20)|<1$, the price $p=20$ maximises revenue for good A."
+      "At $20$ euros, Cart A expects $60$ cups and has price elasticity $-1/3$.",
+      "At $20$ euros, Cart B expects $80$ cups and has price elasticity $-1/2$.",
+      "At this common price, Cart B's customers are more price-sensitive than Cart A's (larger absolute elasticity).",
+      "For Cart A, a small price increase from $20$ euros would still raise its revenue.",
+      "Because Cart A's demand is inelastic at $20$ euros, that price already maximises Cart A's revenue."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $\\mathrm{El}_A(20)=-\\dfrac{1}{3}$.
-
-Work it from the given model as follows.
-
 $$
-D_A'(p)=-1,\\qquad \\mathrm{El}_A(20)=\\dfrac{-1\\cdot 20}{80-20}=\\dfrac{-20}{60}=-\\dfrac{1}{3}.
+D_A(20)=80-20=60,\\qquad \\mathrm{El}_A(20)=\\dfrac{-20}{60}=-\\dfrac{1}{3}.
 $$
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $\\mathrm{El}_B(20)=-\\dfrac{1}{2}$.
-
-Work it from the given model as follows.
-
 $$
-D_B'(p)=-2,\\qquad \\mathrm{El}_B(20)=\\dfrac{-2\\cdot 20}{120-40}=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
+D_B(20)=120-40=80,\\qquad \\mathrm{El}_B(20)=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
 $$
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At $p=20$, good B is more elastic in absolute value than good A.
-
-Work it from the given model as follows.
-
-$|\\mathrm{El}_B(20)|=1/2>1/3=|\\mathrm{El}_A(20)|$, so B is more elastic at this price.
+$|\\mathrm{El}_B(20)|=1/2>1/3=|\\mathrm{El}_A(20)|$, so B's demand responds more strongly to a one-percent price change.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Revenue for A is $R_A(p)=p(80-p)$, so $R_A'(20)=40\\neq 0$.
-
-Work it from the given model as follows.
-
-$$
-R_A(p)=80p-p^{2},\\qquad R_A'(p)=80-2p,\\qquad R_A'(20)=40\\neq 0.
-$$
+Cart A revenue $R_A(p)=p(80-p)=80p-p^{2}$ has $R_A'(p)=80-2p$, so $R_A'(20)=40>0$. A small price rise from $20$ still increases A's revenue. That matches inelastic demand ($|\\mathrm{El}_A|<1$).
 
 The statement is True.`,
       `**E.** → False
 
-Unit elasticity (and $R'=0$) for good A occurs at $80-2p=0$, i.e. $p=40$, not at $p=20$. Having $|\\mathrm{El}|<1$ means revenue still rises if price rises a little; it does not mean revenue is already maximised.
+Inelastic demand means revenue still rises with price; it does not mean revenue is already maximised. Cart A's revenue peak solves $R_A'(p)=0$, i.e. $p=40$, not $p=20$.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 114,
     solution_overview:
-      "Compute both elasticities at $p=20$ from the definition and relate to $R_A'$.",
+      "Compare two coffee-cart demands at $p=20$: elasticities, revenue slope for A, and a false 'already max' claim.",
   },
   {
     id: "math-11-115",
@@ -8353,84 +8290,91 @@ The statement is False.`
   {
     id: "math-11-118",
     case_id: "MATH 11.118",
-    title: "Derive elasticity along D=90-p and read revenue slope",
+    title: "Ferry tickets: story of revenue and demand sensitivity",
     subsection: "11.3",
     context:
-      "Demand is $D(p)=90-p$ for $0<p<90$. Revenue is $R(p)=p\\cdot D(p)$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Decide TRUE or FALSE for each claim.",
+      "A coastal ferry sells day-return tickets at price $p$ euros. For prices between $0$ and $90$ euros, passenger demand that day is $D(p)=90-p$. The operator cares about ticket revenue and about how sensitive passenger numbers are to the fare. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$R(p)=90p-p^{2}$, so $R'(p)=0$ at $p=45$, with $R(45)=2025$.",
-      "Simplifying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-p}{90-p}$, and $\\mathrm{El}(45)=-1$.",
-      "At $p=30$, $\\mathrm{El}(30)=-1/2$ and $R'(30)=30>0$, so a small price increase raises revenue.",
-      "At $p=60$, $\\mathrm{El}(60)=-2$ and $R'(60)=-30<0$, so a small price increase lowers revenue.",
-      "Whenever $|\\mathrm{El}(p)|>1$, revenue is maximised at that price."
+      "Ticket revenue as a function of the fare is $R(p)=90p-p^{2}$, and revenue is maximised at a fare of $45$ euros, where revenue equals $2025$ euros.",
+      "At the $45$-euro fare, demand is unit elastic: the price elasticity of demand equals $-1$.",
+      "If the ferry instead charges $30$ euros, a small fare increase would raise ticket revenue.",
+      "If the ferry charges $60$ euros, a small fare increase would lower ticket revenue.",
+      "Whenever demand is elastic (absolute elasticity greater than $1$), that fare already maximises revenue."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $R(p)=90p-p^{2}$, so $R'(p)=0$ at $p=45$, with $R(45)=2025$.
-
-Work it from the given model as follows.
+Revenue is fare times passengers:
 
 $$
-R(p)=p(90-p)=90p-p^{2},\\qquad R'(p)=90-2p=0\\qquad\\Rightarrow\\qquad p=45,
+R(p)=p\\cdot(90-p)=90p-p^{2}.
 $$
+
+The slope is $R'(p)=90-2p$. Setting it to zero gives $p=45$. Then
+
 $$
 R(45)=45\\cdot 45=2025.
 $$
 
+Also $R''(p)=-2<0$, so this is a maximum.
+
 The statement is True.`,
       `**B.** → True
 
-The claim says: Simplifying the elasticity definition gives $\\mathrm{El}(p)=\\dfrac{-p}{90-p}$, and $\\mathrm{El}(45)=-1$.
-
-Work it from the given model as follows.
+Price elasticity of demand is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Here $D'(p)=-1$, so
 
 $$
-D'(p)=-1,\\qquad \\mathrm{El}(p)=\\dfrac{-p}{90-p},\\qquad \\mathrm{El}(45)=\\dfrac{-45}{45}=-1.
+\\mathrm{El}(p)=\\dfrac{-p}{90-p}.
 $$
+
+At the revenue-maximising fare:
+
+$$
+\\mathrm{El}(45)=\\dfrac{-45}{45}=-1.
+$$
+
+Demand is unit elastic exactly there.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At $p=30$, $\\mathrm{El}(30)=-1/2$ and $R'(30)=30>0$, so a small price increase raises revenue.
-
-Work it from the given model as follows.
+At $p=30$,
 
 $$
-\\mathrm{El}(30)=\\dfrac{-30}{60}=-\\dfrac{1}{2},\\qquad R'(30)=90-60=30>0.
+R'(30)=90-60=30>0.
 $$
 
-With $|\\mathrm{El}|<1$, raising price a little increases revenue, matching $R'>0$.
+Positive revenue slope means a small fare rise increases revenue. Equivalently,
+
+$$
+\\mathrm{El}(30)=\\dfrac{-30}{60}=-\\dfrac{1}{2},
+$$
+
+so demand is inelastic and the same conclusion follows.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: At $p=60$, $\\mathrm{El}(60)=-2$ and $R'(60)=-30<0$, so a small price increase lowers revenue.
-
-Work it from the given model as follows.
+At $p=60$,
 
 $$
-\\mathrm{El}(60)=\\dfrac{-60}{30}=-2,\\qquad R'(60)=90-120=-30<0.
+R'(60)=90-120=-30<0.
 $$
 
-Elastic demand: a small price rise lowers revenue.
+Negative revenue slope means a small fare rise reduces revenue. Equivalently $\\mathrm{El}(60)=-2$ (elastic demand).
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Whenever $|\\mathrm{El}(p)|>1$, revenue is maximised at that price.
-
-Work it from the given model as follows.
-
-Revenue is maximised where $\\mathrm{El}=-1$ (here $p=45$), not wherever $|\\mathrm{El}|>1$. In the elastic region revenue falls as price rises.
+Elastic demand ($|\\mathrm{El}|>1$) is the region where raising the fare lowers revenue. The revenue maximum sits where elasticity is $-1$ (here $p=45$), not wherever demand is elastic.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 118,
     solution_overview:
-      "Derive $R'$ and $\\mathrm{El}$ from $D=90-p$, then connect elasticity regions to the sign of $R'$.",
+      "Ferry demand $D=90-p$: form revenue, find the peak fare, and read inelastic vs elastic fare regions in words.",
   },
   {
     id: "math-11-119",
