@@ -2,6 +2,7 @@
  * Chapter 9 — Polynomial functions (subsections 9 and 9.5).
  * Core bank: ~25% symbolic + formula / applied / table / graph / parametric.
  * 9.5 mixed exam tasks from math-ch9-mixed-exam.json.
+ * Lovable sync: 115 core tasks + Mixed exam (9.5) load via .tasks wrappers.
  */
 
 import type { MathTask } from "@/data/math-chapters";

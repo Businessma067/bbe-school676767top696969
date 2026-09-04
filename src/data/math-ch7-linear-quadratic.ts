@@ -2,6 +2,7 @@
  * Chapter 7 — Linear and quadratic functions (subsections 7 and 7.5).
  * Core bank: ~25% symbolic + formula / parametric / hybrid stems.
  * 7.5 mixed exam tasks from math-ch7-mixed-exam.json.
+ * Lovable sync: core + Mixed exam (7.5) load via .tasks wrappers.
  */
 
 import type { MathTask } from "@/data/math-chapters";

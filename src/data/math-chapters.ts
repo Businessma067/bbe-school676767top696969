@@ -3,10 +3,10 @@
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
  * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
  * 7 (Linear and quadratic functions), 8 (Power functions),
- * 9 (Polynomial functions),
+ * 9 (Polynomial functions, incl. Mixed exam 9.5),
  * 11 (Differentiation and single-variable optimization),
  * 12 (Elementary probability), and 13 (Binomial) are populated;
- * chapter 10 is marked coming soon; others use placeholders.
+ * chapter 7 also exposes Mixed exam 7.5; chapter 10 is coming soon.
  */
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
