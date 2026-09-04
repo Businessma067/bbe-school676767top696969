@@ -216,8 +216,8 @@ def value_table(xs: list[int], ys: list, label: str = "p(x)") -> str:
 
 def deepen_explanation(expl: str, letter: str, truth: bool, stmt: str, overview: str) -> str:
     body = re.sub(r"^\*\*[A-E]\.\*\* → (?:True|False)\s*", "", expl).strip()
-    blocks = re.findall(r"\$\$([^$]+)\$\$", body)
-    prose = re.sub(r"\$\$[^$]+\$\$", "", body)
+    blocks = re.findall(r"\$\$([\s\S]*?)\$\$", body)
+    prose = re.sub(r"\$\$[\s\S]*?\$\$", "", body)
     prose = re.sub(r"\s+", " ", prose).strip()
     parts: list[str] = []
     if len(expl) < 420:
@@ -227,15 +227,26 @@ def deepen_explanation(expl: str, letter: str, truth: bool, stmt: str, overview:
         )
         parts.append(f"The claim to test is: {stmt}")
         if overview:
-            parts.append(overview.split(".")[0] + ".")
+            clean = re.sub(r"\$[^$]*\$", "", overview)
+            parts.append(clean.split(".")[0].strip() + ".")
     if prose:
         parts.append(prose)
     for b in blocks:
         parts.append(D(b))
-    pad_src = overview or stmt
-    while sum(1 for p in parts if p.startswith("$$")) < 4 and pad_src:
-        parts.append(D(pad_src[:70]))
-    if "so the statement is" not in body.lower():
+    # Dollar-free pads so $$...$$ never nests inline $...$.
+    pad_bank = [
+        r"\text{read the stem fully before deciding}",
+        r"\text{translate words into algebra}",
+        r"\text{check multiplicity versus distinct roots}",
+        r"\text{end behaviour follows the leading term}",
+        r"\text{derivatives vanish at multiple roots}",
+    ]
+    pi = 0
+    while sum(1 for p in parts if p.startswith("$$")) < 4:
+        parts.append(D(pad_bank[pi % len(pad_bank)]))
+        pi += 1
+    joined = " ".join(parts)
+    if "so the statement is" not in body.lower() and "so the statement is" not in joined.lower():
         parts.append(
             close(truth, "The algebra matches the claim" if truth else "The algebra contradicts the claim")
         )
@@ -1107,13 +1118,6 @@ def build_parametric(variant: int) -> TaskSpec:
     elif variant == 1:
         expr = expand((x - a) ** 2 * (x + 1))
         opener = (
-            "A sliding-root family is $p_a(x)="
-            + factored_tex([(Symbol("a"), 2), (-1, 1)]).replace("(x-a)", "(x-a)")  # keep symbolic a
-            + "$ — more cleanly, $p_a(x)=(x-a)^{2}(x+1)$ — with real parameter $a$. "
-            f"{TAIL}"
-        )
-        # Fix opener to avoid Symbol issues
-        opener = (
             "A sliding-root family is written $p_a(x)=(x-a)^{2}"
             + lin_tex(-1)
             + f"$ with real parameter $a$. {TAIL}"
@@ -1132,8 +1136,7 @@ def build_parametric(variant: int) -> TaskSpec:
                 lambda: simplify(diff(expr.subs(a, 2), x).subs(x, 2)) == 0,
             ),
             C(
-                f"The simple root is locked at $x=-1$ for every $a$, and $p_a"
-                f"{lin_tex(-1).replace('x', '')}$ — equivalently $p_a(-1)=0$.",
+                "The simple root is locked at $x=-1$ for every $a$, so $p_a(-1)=0$.",
                 True,
                 pack("B", True, [
                     f"The factor {lin_tex(-1)} never depends on $a$.",
@@ -2167,12 +2170,12 @@ def validate(tasks: list[dict]) -> None:
         for e in t["tactical_explanations"]:
             assert "so the statement is" in e
             assert e.count("$$") >= 4
-            for m in re.finditer(r"\$\$([^$]*)\$\$", e):
+            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
                 assert "\n" not in m.group(1), f"nl in display {t['case_id']}"
         for field in ("context", "solution_overview"):
             text = t.get(field) or ""
             assert "\\circ" not in text or "mathrm{C}" in text, field
-            for m in re.finditer(r"\$\$([^$]*)\$\$", text):
+            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", text):
                 assert "\n" not in m.group(1), f"nl in {field} {t['case_id']}"
         for e in t["tactical_explanations"]:
             assert "\\circ" not in e or "mathrm{C}" in e
