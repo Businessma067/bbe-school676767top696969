@@ -73,8 +73,11 @@ function AnswerSheetFeaturePage() {
               Official Answer Sheet
             </span>
             <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              The step almost nobody practices
+              Official Answer Sheet Simulator
             </h1>
+            <p className="mt-3 font-display text-lg font-semibold text-muted-foreground">
+              The step almost nobody practices
+            </p>
 
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
               Students spend months on math, English and economics. Then the exam ends with forty
