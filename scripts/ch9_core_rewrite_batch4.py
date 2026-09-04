@@ -110,11 +110,11 @@ $$p(x)=-(x+2)(x-1)(x-4)$$
 
 $$p(1)=-(3)(0)(-3)=0$$
 
-The middle factor vanishes, so the graph sits on the axis at $x=1$. Expanding is only a check.
+The middle factor vanishes, so the graph sits on the axis at $x=1$. Expanding $p(x)=-x^{3}+3x^{2}+6x-8$ is only a check.
 
 $$-1+3+6-8=0$$
 
-The value $p(1)=0$ matches the claim, so the statement is True.
+The value $p(1)=0$ matches the marked crossing, so the statement is True.
 """,
     r"""
 Three distinct zeros force two turns. Rolle places a stationary point in each gap $(-2,1)$ and $(1,4)$, and a cubic derivative is quadratic, so those two are the full list.
@@ -136,7 +136,7 @@ The comparison asked for is the strict inequality $-8>0$, which fails: the graph
 
 $$-8>0$$
 
-The intercept is negative rather than positive, so the statement is False.
+The intercept is negative rather than positive, and $-8>0$ fails, so the statement is False.
 """,
     r"""
 Multiply the three marked zeros rather than guessing from a sketch of the intercept.
@@ -147,7 +147,7 @@ Zero is not among $\{-2,1,4\}$, so the product cannot vanish. The same number is
 
 $$p(0)=-8$$
 
-The product is $-8$, not $0$, so the statement is False.
+The product of the three zeros is $-8$, not $0$, so the claim fails, so the statement is False.
 """,
 ]
 
@@ -172,7 +172,7 @@ $$p(x)=-x(x-1)(x-5)$$
 
 $$p(1)=-1\cdot 0\cdot(-4)=0$$
 
-The factor $(x-1)$ is zero there, which is exactly the geometric meaning of a marked crossing at $x=1$.
+The factor $(x-1)$ is zero there, which is exactly the geometric meaning of a marked crossing at $x=1$. Expanding gives the same height.
 
 $$-1+6-5=0$$
 
@@ -194,7 +194,7 @@ $$p(x)=-x(x-1)(x-5)$$
 
 $$p(0)=0$$
 
-The claim is the strict inequality $p(0)>0$. Equality to zero fails that test.
+The claim is the strict inequality $p(0)>0$. Equality to zero fails that test: the factor $x$ already forces the intercept onto the axis.
 
 $$0>0$$
 
@@ -205,11 +205,11 @@ A product of real numbers is zero precisely when at least one factor is zero. Re
 
 $$0\cdot 1\cdot 5=0$$
 
-The factor $0$ already kills the product. Equivalently, $p$ has no constant term.
+The factor $0$ already kills the product. Equivalently, $p$ has no constant term: every summand contains $x$.
 
 $$p(x)=-x^{3}+6x^{2}-5x$$
 
-The product of the zeros is $0$, so the statement is True.
+The product of those three zeros is $0$, so the statement is True.
 """,
 ]
 
@@ -232,11 +232,11 @@ $$p(x)=-(x+1)(x-2)(x-3)$$
 
 $$p(2)=-(3)(0)(-1)=0$$
 
-The middle factor vanishes. A direct expansion check gives the same height.
+The middle factor vanishes. A direct expansion of $p(x)=-x^{3}+4x^{2}-x-6$ gives the same height.
 
 $$-8+16-2-6=0$$
 
-The graph meets the axis at $x=2$, so the statement is True.
+The graph therefore meets the axis at $x=2$, as the factor $(x-2)$ requires, so the statement is True.
 """,
     r"""
 Count turning points from the derivative, not from a guess about how cubics look.
@@ -254,11 +254,11 @@ Substitute $x=0$ into the factored form to read the intercept.
 
 $$p(0)=-(1)(-2)(-3)=-6$$
 
-The claim $p(0)>0$ would need a positive height. Here the graph meets the vertical axis six units below the origin.
+The claim $p(0)>0$ would need a positive height. Here the graph meets the vertical axis six units below the origin, matching the expanded constant term of $-x^{3}+4x^{2}-x-6$.
 
 $$-6>0$$
 
-The intercept is negative, so the statement is False.
+The intercept is negative, not positive, so the statement is False.
 """,
     r"""
 Form the product of the three zeros named in the stem.
@@ -269,7 +269,7 @@ None of $-1$, $2$, $3$ is zero, so the product stays nonzero. The same number ap
 
 $$p(0)=-6$$
 
-The product is $-6$, not $0$, so the statement is False.
+The product of those three zeros is $-6$, not $0$, since none of them vanishes, so the statement is False.
 """,
 ]
 
@@ -283,7 +283,7 @@ $$p(x)=-x^{3}+7x^{2}-14x+8$$
 
 $$\lim_{x\to+\infty}p(x)=-\infty$$
 
-As a numerical check, $p(10)=-(9)(8)(6)=-432$, already large and negative. The right end dives, so the statement is True.
+As a numerical check, $p(10)=-(9)(8)(6)=-432$, already large and negative. The right end therefore dives, so the statement is True.
 """,
     r"""
 The claimed root $x=2$ is one of the three zeros listed in the stem.
@@ -292,7 +292,7 @@ $$p(x)=-(x-1)(x-2)(x-4)$$
 
 $$p(2)=-(1)(0)(-2)=0$$
 
-The factor $(x-2)$ is zero, so the height is zero independently of the other two factors.
+The factor $(x-2)$ is zero, so the height is zero independently of the other two factors. Expanding $p(x)=-x^{3}+7x^{2}-14x+8$ confirms it.
 
 $$-8+28-28+8=0$$
 
@@ -305,7 +305,7 @@ $$p'(x)=-3x^{2}+14x-14$$
 
 $$x=\frac{7\pm\sqrt{7}}{3}$$
 
-Those abscissas are about $1.45$ and $3.22$, both real. A cubic cannot have a third stationary point because $p'$ has degree $2$. Two turning points occur, so the statement is True.
+Those abscissas are about $1.45$ and $3.22$, both real. A cubic cannot have a third stationary point, because $p'$ has degree $2$. Exactly two turning points occur, so the statement is True.
 """,
     r"""
 The intercept equals the product of the zeros when the leading coefficient is $-1$.
@@ -318,18 +318,18 @@ The graph meets the vertical axis eight units above the origin, which is exactly
 
 $$p(x)=-x^{3}+7x^{2}-14x+8$$
 
-The intercept is positive, so the statement is True.
+The intercept $p(0)=8$ is strictly positive, so the statement is True.
 """,
     r"""
 Multiply the three zeros $1$, $2$ and $4$.
 
 $$1\cdot 2\cdot 4=8$$
 
-The product is $8$, not $0$. None of the three marked crossings sits at the origin, so a zero factor never appears.
+The product is $8$, not $0$. None of the three marked crossings sits at the origin, so a zero factor never appears. The same $8$ is the constant term of $-x^{3}+7x^{2}-14x+8$.
 
 $$p(0)=8$$
 
-The product of the zeros is $8$, so the statement is False.
+The product of those three zeros is $8$, not $0$, since none of them vanishes, so the statement is False.
 """,
 ]
 
@@ -354,11 +354,11 @@ $$p(x)=-x(x-2)(x-3)$$
 
 $$p(2)=-2\cdot 0\cdot(-1)=0$$
 
-The factor $(x-2)$ vanishes. Expanding and substituting gives the same identity.
+The factor $(x-2)$ vanishes. Expanding $p(x)=-x^{3}+5x^{2}-6x$ and substituting gives the same identity.
 
 $$-8+20-12=0$$
 
-The height at $x=2$ is zero, so the statement is True.
+The height at $x=2$ is therefore zero, as the middle factor requires, so the statement is True.
 """,
     r"""
 Differentiate the expanded cubic and solve $p'(x)=0$.
@@ -376,11 +376,11 @@ $$p(x)=-x(x-2)(x-3)$$
 
 $$p(0)=0$$
 
-The claim requires a strictly positive intercept. A height of $0$ is not greater than $0$.
+The claim requires a strictly positive intercept. A height of $0$ is not greater than $0$: the explicit factor $x$ kills the constant term.
 
 $$0>0$$
 
-The intercept is zero, so the statement is False.
+The intercept is zero rather than a positive height, so the statement is False.
 """,
     r"""
 The product of the zeros includes the marked root at the origin.
@@ -391,7 +391,7 @@ Any product with a factor $0$ is $0$. Equivalently, every term of $p$ contains $
 
 $$p(x)=-x^{3}+5x^{2}-6x$$
 
-The product of the zeros is $0$, so the statement is True.
+The product of those three listed zeros is $0$, because one factor is the origin, so the statement is True.
 """,
 ]
 
@@ -405,7 +405,7 @@ $$p(x)=-x^{3}+4x$$
 
 $$p(x)=x^{3}\left(-1+\frac{4}{x^{2}}\right)$$
 
-As $x\to+\infty$ the bracket tends to $-1$, so $p(x)\to-\infty$. The right end dives, so the statement is True.
+As $x\to+\infty$ the bracket tends to $-1$, so $p(x)\to-\infty$. A check: $p(5)=-125+20=-105$. The right-hand end therefore dives, so the statement is True.
 """,
     r"""
 The origin is one of the three listed zeros $-2$, $0$ and $2$.
@@ -418,7 +418,7 @@ The explicit factor $x$ is already zero, so the whole product vanishes. Expandin
 
 $$p(x)=-x^{3}+4x$$
 
-The graph meets the axis at $x=0$, so the statement is True.
+The graph therefore meets the axis at $x=0$, so the statement is True.
 """,
     r"""
 Differentiate the odd cubic $p(x)=-x^{3}+4x$ and solve for the stationary points.
@@ -436,22 +436,22 @@ $$p(x)=-x^{3}+4x$$
 
 $$p(0)=0$$
 
-The claim is the strict inequality $p(0)>0$. Sitting on the axis fails that test.
+The claim is the strict inequality $p(0)>0$. Sitting on the axis fails that test, because every term of $-x^{3}+4x$ contains $x$.
 
 $$0>0$$
 
-The intercept is zero rather than positive, so the statement is False.
+The intercept is zero rather than a positive height, so the statement is False.
 """,
     r"""
 Among the zeros $-2$, $0$ and $2$ sits the number $0$, which kills the product at once.
 
 $$(-2)\cdot 0\cdot 2=0$$
 
-Equivalently, $p(x)=-x(x^{2}-4)$ has no constant term.
+Equivalently, $p(x)=-x(x^{2}-4)$ has no constant term, because the factor $x$ sits in front of the whole cubic.
 
 $$p(x)=-x^{3}+4x$$
 
-The product of the zeros is $0$, so the statement is True.
+The product of those three listed zeros is $0$, because one factor is the origin, so the statement is True.
 """,
 ]
 
@@ -465,7 +465,7 @@ $$p(x)=-x^{3}+9x^{2}-23x+15$$
 
 $$\lim_{x\to+\infty}p(x)=-\infty$$
 
-As a check, $p(8)=-(7)(5)(3)=-105$. The right end dives, so the statement is True.
+As a check, $p(8)=-(7)(5)(3)=-105$, already large and negative. The right-hand end therefore dives, so the statement is True.
 """,
     r"""
 The middle marked crossing is $x=3$. Substitute that abscissa into the product of factors.
@@ -474,7 +474,7 @@ $$p(x)=-(x-1)(x-3)(x-5)$$
 
 $$p(3)=-(2)(0)(-2)=0$$
 
-The factor $(x-3)$ is zero, so the height is zero regardless of the other two factors.
+The factor $(x-3)$ is zero, so the height is zero regardless of the other two factors. Expanding is unnecessary once a factor vanishes.
 
 $$p(3)=0$$
 
@@ -487,7 +487,7 @@ $$p'(x)=-3x^{2}+18x-23$$
 
 $$x=3\pm\frac{2\sqrt{3}}{3}$$
 
-Those abscissas are about $1.85$ and $4.15$, both real. A quadratic $p'$ cannot hide a third root. Two turning points occur, so the statement is True.
+Those abscissas are about $1.85$ and $4.15$, both real. A quadratic $p'$ cannot hide a third root. Rolle already placed one turn in each gap. Two turning points occur, so the statement is True.
 """,
     r"""
 With leading coefficient $-1$, the intercept equals the product of the three zeros.
@@ -500,18 +500,18 @@ The graph meets the vertical axis fifteen units above the origin, which is the s
 
 $$p(x)=-x^{3}+9x^{2}-23x+15$$
 
-The intercept is positive, so the statement is True.
+The intercept $p(0)=15$ is strictly positive, so the statement is True.
 """,
     r"""
 Multiply the three zeros $1$, $3$ and $5$.
 
 $$1\cdot 3\cdot 5=15$$
 
-None of them is zero, so the product stays positive. The same number is the constant term of the expanded cubic.
+None of them is zero, so the product stays positive. The same number is the constant term of the expanded cubic $-x^{3}+9x^{2}-23x+15$.
 
 $$p(0)=15$$
 
-The product of the zeros is $15$, not $0$, so the statement is False.
+The product of those three zeros is $15$, not $0$, since none of them vanishes, so equality to $0$ fails, so the statement is False.
 """,
 ]
 
@@ -525,7 +525,7 @@ $$(x^{2}-1)(x^{2}-6)=0$$
 
 $$x=\pm 1,\ \pm\sqrt{6}$$
 
-Four distinct real solutions appear, which is more than two meetings. The graphs meet at least twice, so the statement is True.
+Four distinct real solutions appear, which is more than two meetings. The two graphs therefore meet at least twice on the real line, so the statement is True.
 """,
     r"""
 The difference $p-\ell$ is the polynomial whose degree decides the claim.
@@ -545,7 +545,7 @@ $$p(-x)=(-x)^{4}-6(-x)^{2}+5$$
 
 $$p(-x)=x^{4}-6x^{2}+5=p(x)$$
 
-Only even powers appear, so reflecting the input changes nothing. The polynomial is even, so the statement is True.
+Only even powers appear, so reflecting the input changes nothing. Odd powers are absent, which is the coefficient test for evenness. The polynomial is even, so the statement is True.
 """,
     r"""
 A linear function has the shape $ax+b$, with highest power $x^{1}$. The second formula in the stem is a quadratic.
@@ -567,7 +567,7 @@ $$\ell(0)=-1$$
 
 $$5=-1$$
 
-The two heights are different: the quartic sits at $5$ while the parabola sits at $-1$. The graphs do not meet at $x=0$, so the statement is False.
+The two heights are different: the quartic sits at $5$ while the parabola sits at $-1$. Equality would need the constant terms to match, and $5\neq -1$. Those two graphs do not meet at $x=0$, because $5\neq -1$, so the statement is False.
 """,
 ]
 
@@ -592,7 +592,7 @@ $$\ell(x)=x^{2}-4$$
 
 $$p(x)-\ell(x)=x^{3}-x^{2}-6x+4$$
 
-The $x^{3}$ term is untouched, so the difference is a cubic polynomial. That is exactly the shape named in the claim, so the statement is True.
+The $x^{3}$ term is untouched, so the difference is a cubic polynomial of leading coefficient $1$. That cubic is exactly the shape named in the claim, with top term $x^{3}$, so the statement is True.
 """,
     r"""
 Evenness would require $p(-x)=p(x)$. Test the given cubic against its reflection.
@@ -627,7 +627,7 @@ $$\ell(0)=-4$$
 
 $$0=-4$$
 
-The cubic crosses the origin while the parabola sits four units below it. The two values are not equal, so the statement is False.
+The cubic $x^{3}-6x$ has no constant term, while $\ell(x)=x^{2}-4$ has constant term $-4$. The cubic crosses the origin while the parabola sits four units below it. Those two values $0$ and $-4$ are not equal, so the statement is False.
 """,
 ]
 
@@ -639,10 +639,10 @@ $$p(x)-\ell(x)=x^{3}-4x-1$$
 
 $$f(-2)=-1,\quad f(-1)=2,\quad f(0)=-1,\quad f(2)=-1,\quad f(3)=14$$
 
-Three sign changes give three real roots, near $-1.86$, $-0.25$ and $2.11$. Three meetings is at least twice, so the statement is True.
+Three sign changes give three real roots, near $-1.86$, $-0.25$ and $2.11$. Three meetings is already at least twice, so the statement is True.
 """,
     r"""
-The difference of a cubic and a line keeps the cubic term.
+The difference of a cubic and a line keeps the cubic term, because a line cannot cancel $x^{3}$.
 
 $$p(x)=x^{3}-3x$$
 
@@ -650,7 +650,7 @@ $$\ell(x)=x+1$$
 
 $$p(x)-\ell(x)=x^{3}-4x-1$$
 
-The highest power is $x^{3}$ with coefficient $1\neq 0$, so $p-\ell$ is a cubic polynomial. That matches the claim, so the statement is True.
+The highest power is $x^{3}$ with coefficient $1\neq 0$, so $p-\ell$ is a cubic polynomial. That cubic difference matches the claim, with uncancelled $x^{3}$, so the statement is True.
 """,
     r"""
 Test $p(-x)$ against $p(x)$. The given rule is an odd cubic.
@@ -663,7 +663,7 @@ Oddness is the opposite identity from evenness. A quick numerical check: $p(1)=-
 
 $$p(1)=-2$$
 
-The values are opposites, not equals, so $p$ is not even, so the statement is False.
+The values are opposites, not equals, so $p$ is odd rather than even, and evenness fails, so the statement is False.
 """,
     r"""
 A linear function has the form $ax+b$. The second formula in the stem is already written that way.
@@ -685,7 +685,7 @@ $$\ell(0)=1$$
 
 $$0=1$$
 
-The cubic passes through the origin while the line sits at height $1$. The two values differ, so the statement is False.
+The cubic $x^{3}-3x$ has no constant term, while the line $x+1$ has constant term $1$. The cubic passes through the origin while the line sits at height $1$. Those two values $0$ and $1$ differ, so the equality $p(0)=\ell(0)$ fails, so the statement is False.
 """,
 ]
 
@@ -697,7 +697,7 @@ $$p(x)-x=x^{4}-4x^{2}-x$$
 
 $$x(x^{3}-4x-1)=0$$
 
-One root is $x=0$. The cubic $x^{3}-4x-1$ has three further real roots (near $-1.86$, $-0.25$ and $2.11$), none of them zero. Four real meetings is at least twice, so the statement is True.
+One root is $x=0$. The cubic $x^{3}-4x-1$ has three further real roots (near $-1.86$, $-0.25$ and $2.11$), none of them zero. Four distinct real meetings is already at least twice on the line, so the statement is True.
 """,
     r"""
 Read the degree of $p-\ell$ from the expanded difference.
@@ -719,7 +719,7 @@ $$p(-x)=(-x)^{4}-4(-x)^{2}=x^{4}-4x^{2}$$
 
 $$p(-x)=p(x)$$
 
-The identity $p(-x)=p(x)$ is evenness. The graph is symmetric across the $y$-axis, so the statement is True.
+The identity $p(-x)=p(x)$ is evenness. Odd powers are absent, and the graph is symmetric across the $y$-axis, which is evenness of $p$, so the statement is True.
 """,
     r"""
 The second formula is $\ell(x)=x$, the identity map, which is the linear function of slope $1$ through the origin.
@@ -741,7 +741,7 @@ $$\ell(0)=0$$
 
 $$0=0$$
 
-Both rules vanish at the origin, so the two graphs meet there. Direct inspection of $p(x)-x=x(x^{3}-4x-1)$ also shows the factor $x$. The values agree, so the statement is True.
+Both rules vanish at the origin, so the two graphs meet there. Direct inspection of $p(x)-x=x(x^{3}-4x-1)$ also shows the factor $x$. The two constant terms are both $0$, so the equality $p(0)=\ell(0)$ holds at the origin, as required, so the statement is True.
 """,
 ]
 
@@ -755,10 +755,10 @@ $$p(x)=(x^{2}-2x+1)(x+3)$$
 
 $$p(x)=x^{3}+x^{2}-5x+3$$
 
-That is the unique monic cubic with those roots, matching the displayed formula, so the statement is True.
+That is the unique monic cubic with those roots, matching the displayed formula exactly, so the statement is True.
 """,
     r"""
-A factor $(x-1)^{2}$ forces both $p$ and $p'$ to vanish at $x=1$. Differentiate the product.
+A factor $(x-1)^{2}$ forces both $p$ and $p'$ to vanish at $x=1$. Differentiate the product by the product rule.
 
 $$p'(x)=2(x-1)(x+3)+(x-1)^{2}$$
 
@@ -766,7 +766,7 @@ $$p'(x)=(x-1)(3x+5)$$
 
 $$p'(1)=0\cdot 8=0$$
 
-The double root is a stationary point. The slope at $x=1$ is zero, so the statement is True.
+The double root is a stationary point: the graph touches the axis at $x=1$. The slope at that double root is zero, as multiplicity two requires, so the statement is True.
 """,
     r"""
 A simple root need not be stationary. Evaluate the same derivative at $x=-3$.
@@ -779,29 +779,29 @@ The slope is $16$, not $0$. Geometrically the graph cuts the axis at $x=-3$ rath
 
 $$p'(-3)=16$$
 
-The derivative does not vanish at the simple root, so the statement is False.
+The derivative does not vanish at the simple root $x=-3$, so the statement is False.
 """,
     r"""
 The constant term of a polynomial is its value at $x=0$. Substitute into the factored form.
 
 $$p(0)=(-1)^{2}(3)=3$$
 
-Expanding confirms the same constant: $p(x)=x^{3}+x^{2}-5x+3$.
+Expanding confirms the same constant: $p(x)=x^{3}+x^{2}-5x+3$, whose last term is $3$.
 
 $$p(x)=x^{3}+x^{2}-5x+3$$
 
-The constant term is $3$, so the statement is True.
+The constant term is $3$, matching the named value $p(0)=3$ from the factored form, so the statement is True.
 """,
     r"""
 Count each root as often as its multiplicity, then add.
 
 $$1+1+(-3)=-1$$
 
-For a monic cubic $x^{3}+ax^{2}+\cdots$ that sum equals $-a$. Here $a=1$, so the weighted sum is $-1$.
+For a monic cubic $x^{3}+ax^{2}+\cdots$ that sum equals $-a$. Here $a=1$, so the weighted sum is $-1$, the opposite of the $x^{2}$ coefficient.
 
 $$p(x)=x^{3}+x^{2}-5x+3$$
 
-The multiplicity-weighted sum of roots is $-1$, so the statement is True.
+The multiplicity-weighted sum of the roots is $-1$, matching Vieta, so the statement is True.
 """,
 ]
 
@@ -839,11 +839,11 @@ $$p(0)=3$$
 
 $$r(0)=3^{2}-3=6$$
 
-The same value comes from the factored form $r(0)=p(0)(p(0)-1)=3\cdot 2=6$.
+The same value comes from the factored form $r(0)=p(0)(p(0)-1)=3\cdot 2=6$. Either route uses only the constant term of $p$.
 
 $$3\cdot 2=6$$
 
-The constant term of $r$ is $6$, so the statement is True.
+The constant term of $r$ is $6$, matching the named value $r(0)=6$ computed above, so the statement is True.
 """,
     r"""
 Zeros of $r$ occur where $p=0$ or $p=1$. Complete the square for $p$.
@@ -856,7 +856,7 @@ The range of $p$ starts at $2$ and never reaches $0$ or $1$. Both $p=0$ and $p=1
 
 $$(x-1)^{2}+2=1\implies (x-1)^{2}=-1$$
 
-No real $x$ makes $r$ vanish, so the statement is True.
+No real $x$ makes $r$ vanish, so there are no real zeros, so the statement is True.
 """,
     r"""
 The leading term of $r$ is the square of the leading term of $p$.
@@ -869,7 +869,7 @@ Subtracting $p$ does not touch $x^{4}$, so the leading coefficient of $r$ is $1^
 
 $$r(x)=x^{4}-4x^{3}+\cdots$$
 
-The leading coefficient is $1$, so the statement is False.
+The leading coefficient of $r$ is $1$, not the claimed $2$, since $(x^{2})^{2}=x^{4}$, so the statement is False.
 """,
 ]
 
@@ -894,7 +894,7 @@ $$p(-x)=(-x)^{4}-5(-x)^{2}+4$$
 
 $$p(-x)=x^{4}-5x^{2}+4=p(x)$$
 
-Reflecting the input leaves every term unchanged. The polynomial is even, so the statement is True.
+Reflecting the input leaves every term unchanged. That is the definition of an even function. The given polynomial is even, as only even powers survive, so the statement is True.
 """,
     r"""
 Factor as a biquadratic, then split each quadratic.
@@ -907,7 +907,7 @@ The four zeros are $-2$, $-1$, $1$ and $2$, all real and pairwise distinct.
 
 $$p(\pm 1)=0,\quad p(\pm 2)=0$$
 
-Four distinct real zeros occur, so the statement is True.
+Four distinct real zeros occur, and none of them is a repeated root of $p$, so the count is $4$, so the statement is True.
 """,
     r"""
 An even degree with a positive leading coefficient sends both far ends up.
@@ -945,10 +945,10 @@ $$p(x)=(x^{2}-4x+4)(x+1)$$
 
 $$p(x)=x^{3}-3x^{2}+4$$
 
-That expansion matches the displayed formula coefficient by coefficient, so the statement is True.
+That expansion matches the displayed formula coefficient by coefficient, including the missing $x$ term of coefficient $0$, so the statement is True.
 """,
     r"""
-A double factor $(x-2)^{2}$ forces the derivative to share the root $x=2$. Differentiate the product.
+A double factor $(x-2)^{2}$ forces the derivative to share the root $x=2$. Differentiate the product by the product rule.
 
 $$p'(x)=2(x-2)(x+1)+(x-2)^{2}$$
 
@@ -956,7 +956,7 @@ $$p'(x)=3x(x-2)$$
 
 $$p'(2)=0$$
 
-The slope at the double root is zero, so the statement is True.
+The slope at the double root is zero: the graph touches the axis at $x=2$ rather than cutting it. The derivative vanishes there, so the statement is True.
 """,
     r"""
 The simple root $x=-1$ is a crossing, not a tangency. Evaluate $p'$ there.
@@ -965,22 +965,22 @@ $$p'(x)=3x(x-2)$$
 
 $$p'(-1)=3(-1)(-3)=9$$
 
-The slope is $9$, not $0$. Horizontal tangents occur only at $x=0$ and $x=2$.
+The slope is $9$, not $0$. Horizontal tangents occur only at $x=0$ and $x=2$, the zeros of $3x(x-2)$.
 
 $$p'(-1)=9$$
 
-The derivative does not vanish at $x=-1$, so the statement is False.
+The derivative does not vanish at the simple root $x=-1$, where the slope is $9$, so the statement is False.
 """,
     r"""
 The constant term is $p(0)$. Substitute into the factored cubic.
 
 $$p(0)=(-2)^{2}(1)=4$$
 
-Expanding gives $p(x)=x^{3}-3x^{2}+4$, whose constant term is $4$.
+Expanding gives $p(x)=x^{3}-3x^{2}+4$, whose constant term is $4$. That is also $(-1)^{3}$ times the product of the roots $2,2,-1$.
 
 $$p(x)=x^{3}-3x^{2}+4$$
 
-The constant term is $4$, so the statement is True.
+The constant term is $4$, matching the named value $p(0)=4$ exactly, so the statement is True.
 """,
     r"""
 Add the roots with multiplicity: the double root $2$ contributes twice.
@@ -991,7 +991,7 @@ Vieta for the monic cubic $x^{3}-3x^{2}+4$ gives the same sum as the coefficient
 
 $$p(x)=x^{3}-3x^{2}+4$$
 
-The multiplicity-weighted sum of roots is $3$, so the statement is True.
+The multiplicity-weighted sum of the roots is $3$, matching Vieta's $x^{2}$ coefficient exactly, so the statement is True.
 """,
 ]
 
@@ -1016,11 +1016,11 @@ $$r(x)=p(x)^{2}-p(x)$$
 
 $$r(x)=p(x)\bigl(p(x)-1\bigr)$$
 
-The identity does not depend on the particular quadratic. Both writings name the same polynomial.
+The identity does not depend on the particular quadratic. Both writings name the same polynomial $p^{2}-p$.
 
 $$r=p(p-1)$$
 
-The factorisation holds identically, so the statement is True.
+The factorisation $r=p(p-1)$ holds identically for this quadratic, so the statement is True.
 """,
     r"""
 Substitute $x=0$ into $p$, then into $r=p^{2}-p$.
@@ -1029,11 +1029,11 @@ $$p(0)=1$$
 
 $$r(0)=1^{2}-1=0$$
 
-The factored form gives the same: $r(0)=1\cdot(1-1)=0$.
+The factored form gives the same: $r(0)=1\cdot(1-1)=0$. Here $p(0)=1$ already forces a factor $p-1$ to vanish at the origin.
 
 $$1\cdot 0=0$$
 
-The value $r(0)$ is $0$, so the statement is True.
+The value $r(0)$ is $0$, matching the named number because $p(0)=1$ forces $p-1=0$ there, so the statement is True.
 """,
     r"""
 Zeros of $r$ occur where $p=0$ or $p=1$. The equation $p=1$ is immediate.
@@ -1044,7 +1044,7 @@ $$x^{2}+x=0$$
 
 $$x(x+1)=0$$
 
-The roots $x=0$ and $x=-1$ are real, and $r(0)=0$ already exhibits one of them. The polynomial $r$ has real zeros, so the statement is False.
+The roots $x=0$ and $x=-1$ are real, and $r(0)=0$ already exhibits one of them. Directly, $r(-1)=p(-1)(p(-1)-1)$ with $p(-1)=1$, so that factor vanishes too. The polynomial $r$ has real zeros, so the statement is False.
 """,
     r"""
 The leading coefficient of $r$ is the square of the leading coefficient of $p$.
@@ -1057,7 +1057,7 @@ The coefficient of $x^{4}$ in $r$ is $1$, not $2$. Expanding confirms $r(x)=x^{4
 
 $$r(x)=x^{4}+\cdots$$
 
-The leading coefficient is $1$, so the statement is False.
+The leading coefficient of $r$ is $1$, not the claimed $2$, since $(x^{2})^{2}=x^{4}$, so the statement is False.
 """,
 ]
 
@@ -1071,7 +1071,7 @@ Leading $1$, no odd powers, $-10$ on $x^{2}$, constant $9$. Every coefficient ag
 
 $$p(x)=(x^{2}-9)(x^{2}-1)$$
 
-The two writings are the same polynomial, so the statement is True.
+The two writings are the same polynomial, coefficient by coefficient on every power, so the statement is True.
 """,
     r"""
 Substitute $-x$ and compare with $p(x)$. All powers in the given quartic are even.
@@ -1082,7 +1082,7 @@ $$p(-x)=(-x)^{4}-10(-x)^{2}+9$$
 
 $$p(-x)=x^{4}-10x^{2}+9=p(x)$$
 
-The identity $p(-x)=p(x)$ holds, so $p$ is even, so the statement is True.
+The identity $p(-x)=p(x)$ holds, which is the definition of evenness. The given quartic is even, as only even powers appear in $x^{4}-10x^{2}+9$, so the statement is True.
 """,
     r"""
 Factor the biquadratic into quadratics, then into linear factors.
@@ -1095,7 +1095,7 @@ The four zeros are $-3$, $-1$, $1$ and $3$, all real and distinct.
 
 $$p(\pm 1)=0,\quad p(\pm 3)=0$$
 
-Four distinct real zeros occur, so the statement is True.
+Four distinct real zeros occur, and none of them is a repeated root of $p$, so the count is $4$, so the statement is True.
 """,
     r"""
 A positive leading coefficient on an even degree sends both infinities upward.
@@ -1108,7 +1108,7 @@ As $x\to\pm\infty$ the bracket tends to $1$ and $x^{4}$ tends to $+\infty$.
 
 $$\lim_{x\to\pm\infty}p(x)=+\infty$$
 
-Both far ends rise, so the statement is True.
+Both far ends of the graph rise, so the statement is True.
 """,
     r"""
 Degree is the largest exponent with a nonzero coefficient. Here that exponent is $4$.
@@ -1119,7 +1119,7 @@ A cubic would stop at $x^{3}$, but the $x^{4}$ term has coefficient $1\neq 0$.
 
 $$(x^{2}-9)(x^{2}-1)=x^{4}+\cdots$$
 
-The function is a quartic, not a cubic, so the statement is False.
+The function is a quartic of degree $4$, not a cubic of degree $3$, so the degree claim fails, so the statement is False.
 """,
 ]
 
@@ -1133,10 +1133,10 @@ $$p(x)=(x^{2}+2x+1)(x-2)$$
 
 $$p(x)=x^{3}-3x-2$$
 
-That is the unique monic cubic with the stated roots, matching the claim, so the statement is True.
+That is the unique monic cubic with the stated roots, matching the claim coefficient by coefficient on every power of $x$, including the missing $x^{2}$, so the statement is True.
 """,
     r"""
-The double factor $(x+1)^{2}$ makes $x=-1$ a root of the derivative as well.
+The double factor $(x+1)^{2}$ makes $x=-1$ a root of the derivative as well. Differentiate by the product rule.
 
 $$p'(x)=2(x+1)(x-2)+(x+1)^{2}$$
 
@@ -1144,7 +1144,7 @@ $$p'(x)=3(x+1)(x-1)$$
 
 $$p'(-1)=0$$
 
-The slope at the double root is zero, so the statement is True.
+The slope at the double root is zero: the graph touches the axis at $x=-1$ rather than cutting it. The derivative vanishes there, so the statement is True.
 """,
     r"""
 The simple root $x=2$ is a crossing. Evaluate the derivative there.
@@ -1153,22 +1153,22 @@ $$p'(x)=3(x+1)(x-1)$$
 
 $$p'(2)=3(3)(1)=9$$
 
-The slope is $9$, not $0$. Stationary points sit at $x=\pm 1$, not at $x=2$.
+The slope is $9$, not $0$. Stationary points sit at $x=\pm 1$, the zeros of $3(x+1)(x-1)$, not at $x=2$.
 
 $$p'(2)=9$$
 
-The derivative does not vanish at the simple root, so the statement is False.
+The derivative does not vanish at the simple root $x=2$, where the slope is $9$, so the statement is False.
 """,
     r"""
 The constant term is the height at $x=0$. Substitute into the factored form.
 
 $$p(0)=(1)^{2}(-2)=-2$$
 
-Expanding gives $p(x)=x^{3}-3x-2$, whose last term is $-2$.
+Expanding gives $p(x)=x^{3}-3x-2$, whose last term is $-2$. Vieta gives the same: $(-1)^{3}(-1)^{2}(2)=-2$.
 
 $$p(x)=x^{3}-3x-2$$
 
-The constant term is $-2$, so the statement is True.
+The constant term is $-2$, matching the named value $p(0)=-2$ from the factors, so the statement is True.
 """,
     r"""
 Add the roots counted with multiplicity.
@@ -1179,7 +1179,7 @@ Vieta agrees: the monic cubic $x^{3}+0\cdot x^{2}-3x-2$ has $x^{2}$-coefficient 
 
 $$p(x)=x^{3}-3x-2$$
 
-The multiplicity-weighted sum of roots is $0$, so the statement is True.
+The multiplicity-weighted sum of the roots is $0$, matching the missing $x^{2}$ term of that expansion exactly, so the statement is True.
 """,
 ]
 
@@ -1204,11 +1204,11 @@ $$r(x)=p(x)^{2}-p(x)$$
 
 $$r(x)=p(x)\bigl(p(x)-1\bigr)$$
 
-The two expressions are identical as polynomials. The identity holds for this $p$ just as it holds in general.
+The two expressions are identical as polynomials. The identity holds for this $p$ just as it holds in general, by factoring $p$ out of $p^{2}-p$.
 
 $$r=p(p-1)$$
 
-The factorisation is valid, so the statement is True.
+The factorisation $r=p(p-1)$ is valid for this quadratic, so the statement is True.
 """,
     r"""
 Compute $p(0)$ first, then $r(0)=p(0)^{2}-p(0)$.
@@ -1217,11 +1217,11 @@ $$p(0)=5$$
 
 $$r(0)=25-5=20$$
 
-The factored form agrees: $r(0)=5\cdot(5-1)=20$.
+The factored form agrees: $r(0)=5\cdot(5-1)=20$. Either route uses only the constant term $5$ of the given quadratic.
 
 $$5\cdot 4=20$$
 
-The value $r(0)$ is $20$, so the statement is True.
+The value $r(0)$ is $20$, matching the named number because $p(0)=5$ gives $25-5=20$ exactly, so the statement is True.
 """,
     r"""
 Zeros of $r$ need $p=0$ or $p=1$. Complete the square.
@@ -1247,7 +1247,7 @@ That coefficient is $1$, not $2$. Expanding $r$ begins $x^{4}-6x^{3}+\cdots$.
 
 $$r(x)=x^{4}-6x^{3}+\cdots$$
 
-The leading coefficient is $1$, so the statement is False.
+The leading coefficient of $r$ is $1$, not the claimed $2$, since $(x^{2})^{2}=x^{4}$, so the statement is False.
 """,
 ]
 
