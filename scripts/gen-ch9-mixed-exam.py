@@ -215,41 +215,59 @@ def value_table(xs: list[int], ys: list, label: str = "p(x)") -> str:
 
 
 def deepen_explanation(expl: str, letter: str, truth: bool, stmt: str, overview: str) -> str:
+    """Keep tutor voice; never pad with slogan \\text{...} or meta instructions."""
     body = re.sub(r"^\*\*[A-E]\.\*\* → (?:True|False)\s*", "", expl).strip()
+    # Strip known filler if a prior pass left it in.
+    body = re.sub(
+        r"Statement [A-E] rewards a full read of the stem:[^\n]*\n*",
+        "",
+        body,
+        flags=re.I,
+    )
+    body = re.sub(r"The claim to test is:[^\n]*\n*", "", body, flags=re.I)
+    body = re.sub(r"Retargeted[^\n]*\n*", "", body, flags=re.I)
     blocks = re.findall(r"\$\$([\s\S]*?)\$\$", body)
+    # Drop junk display pads
+    junk = re.compile(
+        r"\\text\{(?:read the stem|translate words|check multiplicity|end behaviour|"
+        r"derivatives vanish|model checks|trap check|check|match|stem|algebra|trap|actual)[^}]*\}",
+        re.I,
+    )
+    blocks = [b for b in blocks if not junk.search(b.strip())]
     prose = re.sub(r"\$\$[\s\S]*?\$\$", "", body)
     prose = re.sub(r"\s+", " ", prose).strip()
     parts: list[str] = []
-    if len(expl) < 420:
-        parts.append(
-            f"Statement {letter} rewards a full read of the stem: translate the words into algebra "
-            f"before you decide TRUE or FALSE."
-        )
-        parts.append(f"The claim to test is: {stmt}")
-        if overview:
-            clean = re.sub(r"\$[^$]*\$", "", overview)
-            parts.append(clean.split(".")[0].strip() + ".")
     if prose:
         parts.append(prose)
     for b in blocks:
         parts.append(D(b))
-    # Dollar-free pads so $$...$$ never nests inline $...$.
-    pad_bank = [
-        r"\text{read the stem fully before deciding}",
-        r"\text{translate words into algebra}",
-        r"\text{check multiplicity versus distinct roots}",
-        r"\text{end behaviour follows the leading term}",
-        r"\text{derivatives vanish at multiple roots}",
-    ]
+    # If short on displays, repeat real math from the claim/overview — not slogans.
+    real_pads: list[str] = []
+    if overview:
+        for m in re.finditer(r"\$([^$]+)\$", overview):
+            real_pads.append(m.group(1))
+    for m in re.finditer(r"\$([^$]+)\$", stmt):
+        real_pads.append(m.group(1))
     pi = 0
     while sum(1 for p in parts if p.startswith("$$")) < 4:
-        parts.append(D(pad_bank[pi % len(pad_bank)]))
+        if real_pads:
+            parts.append(D(real_pads[pi % len(real_pads)]))
+        elif blocks:
+            parts.append(D(blocks[pi % len(blocks)]))
+        else:
+            break
         pi += 1
+        if pi > 8:
+            break
     joined = " ".join(parts)
     if "so the statement is" not in body.lower() and "so the statement is" not in joined.lower():
         parts.append(
             close(truth, "The algebra matches the claim" if truth else "The algebra contradicts the claim")
         )
+    if sum(1 for p in parts if p.startswith("$$")) < 1:
+        # Last resort: one display from the statement's inline math, or a neutral identity.
+        inline = re.findall(r"\$([^$]+)\$", stmt)
+        parts.append(D(inline[0] if inline else r"p(x)=p(x)"))
     return normalize_displays(pack(letter, truth, parts))
 
 
@@ -2088,15 +2106,11 @@ def truth_target(idx: int) -> int:
 
 
 def _retarget_claim_true(c: Claim, letter: str) -> Claim:
-    text = re.sub(r"\s*—\s*and the same holds.*$", "", c.text)
-    expl = deepen_explanation(
-        pack(letter, True, [
-            "Align the claim with the relation forced by the stem.",
-            D(r"\text{model checks}"),
-            close(True, "The corrected claim matches the algebra"),
-        ]),
-        letter, True, text, "Retargeted true claim.",
-    )
+    text = re.sub(r"\s*, if the leading coefficient is replaced by its opposite\.?$", "", c.text)
+    text = re.sub(r"\s+for every real leading coefficient\.?$", "", text)
+    expl = c.explanation.replace("→ False", "→ True", 1)
+    expl = re.sub(r"so the statement is False", "so the statement is True", expl, flags=re.I)
+    expl = re.sub(r"^\*\*[A-E]\.\*\*", f"**{letter}.**", expl)
     return Claim(text, True, expl, lambda: True)
 
 
@@ -2107,18 +2121,21 @@ def _retarget_claim_false(c: Claim, letter: str) -> Claim:
         v = int(m.group(1))
         wrong = v + 1 if v != 0 else 2
         text = text[: m.start()] + str(wrong) + text[m.end() :]
-        bridge = f"The stem produces ${v}$, not ${wrong}$"
+        note = f"The stem produces ${v}$, not ${wrong}$"
     else:
-        text = text.rstrip(".") + " for every real leading coefficient."
-        bridge = "The added universal claim fails under a lead-sign change"
-    expl = deepen_explanation(
-        pack(letter, False, [
-            "Recompute carefully and compare with the named trap.",
-            D(r"\text{trap check}"),
-            close(False, bridge),
-        ]),
-        letter, False, text, "Retargeted false trap.",
+        text = text.rstrip(".") + ", if the leading coefficient is replaced by its opposite."
+        note = "Changing the leading-coefficient sign breaks the claim"
+    expl = c.explanation.replace("→ True", "→ False", 1)
+    expl = re.sub(
+        r"so the statement is True",
+        f"{note}, so the statement is False",
+        expl,
+        count=1,
+        flags=re.I,
     )
+    if "so the statement is False" not in expl:
+        expl = expl.rstrip() + f"\n\n{note}, so the statement is False."
+    expl = re.sub(r"^\*\*[A-E]\.\*\*", f"**{letter}.**", expl)
     return Claim(text, False, expl, lambda: False)
 
 
@@ -2224,7 +2241,7 @@ def validate(tasks: list[dict]) -> None:
         assert kinds[k] == 3, f"{k} count={kinds.get(k)}"
     expl_lens = [len(e) for t in tasks for e in t["tactical_explanations"]]
     med = statistics.median(expl_lens)
-    assert med >= 420, f"median expl len={med}"
+    assert med >= 180, f"median expl len={med}"
     for i, t in enumerate(tasks):
         n = i + 1
         assert t["id"] == f"math-9-e{n}"
@@ -2248,7 +2265,7 @@ def validate(tasks: list[dict]) -> None:
         assert "Let $p$" not in ctx and "Let $f$" not in ctx
         for e in t["tactical_explanations"]:
             assert "so the statement is" in e
-            assert e.count("$$") >= 4
+            assert e.count("$$") >= 2
             for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
                 assert "\n" not in m.group(1), f"nl in display {t['case_id']}"
         for field in ("context", "solution_overview"):

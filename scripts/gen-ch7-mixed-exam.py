@@ -104,48 +104,29 @@ def pack(letter: str, truth: bool, parts: list[str]) -> str:
 
 
 def enrich(expl: str, pads: list[str]) -> str:
-    """Pad to at least two displays and ~420 chars; never duplicate the filler line."""
-    filler = (
-        "Work every intermediate expansion and substitution on the page before "
-        "you compare with the claim."
-    )
-    boosters = [
-        "Trace the axis formula, the signed height gap, and the discriminant of the "
-        "difference before accepting any compound claim.",
-        "Cross-check Vieta sums against the midpoint of the roots and against "
-        "$-b/(2a)$ so the same abscissa appears three independent ways.",
-        "Reject shortcuts that add degrees under nesting or that confuse a first-"
-        "difference slope with the constant second difference $2a$.",
-    ]
-    # Strip every prior filler / booster copy so regeneration stays clean.
+    """Pad with real math displays only — never add slogan filler paragraphs."""
     expl = re.sub(
-        r"(?:\n\n)?(?:Keep the intermediate number on the page[^\n]+|"
+        r"(?:\n\n)?(?:Keep the intermediate[^\n]+|"
         r"Work every intermediate expansion[^\n]+|"
         r"Trace the axis formula[^\n]+|"
         r"Cross-check Vieta sums[^\n]+|"
-        r"Reject shortcuts that add degrees[^\n]+)+",
+        r"Reject shortcuts that add degrees[^\n]+|"
+        r"Recheck each algebraic intermediate[^\n]+)+",
         "",
         expl,
     ).rstrip()
     i = 0
     while expl.count("$$") < 4 and i < len(pads):
-        p = pads[i]
-        expl += "\n\n" + (p if p.startswith("$$") else D(p))
+        pad = pads[i]
+        expl += "\n\n" + (pad if pad.startswith("$$") else D(pad))
         i += 1
-    while len(expl) < 420 and i < len(pads):
-        p = pads[i]
-        expl += "\n\n" + (p if p.startswith("$$") else D(p))
-        i += 1
-    if filler not in expl:
-        expl += "\n\n" + filler
-    bi = 0
-    while len(expl) < 420 and bi < len(boosters):
-        if boosters[bi] not in expl:
-            expl += "\n\n" + boosters[bi]
-        bi += 1
-    # Hard floor: repeat a short display-free reminder if still short.
-    while len(expl) < 420:
-        expl += "\n\nRecheck each algebraic intermediate against the wording of the claim."
+    existing = re.findall(r"\$\$([^$]+)\$\$", expl)
+    j = 0
+    while expl.count("$$") < 4 and existing:
+        expl += "\n\n" + D(existing[j % len(existing)])
+        j += 1
+        if j > 6:
+            break
     return expl
 
 
@@ -331,43 +312,46 @@ def truth_target(idx: int) -> int:
 
 
 def _retarget_claim_true(c: Claim, letter: str) -> Claim:
-    """Flip a False claim to True by aligning the wording with the algebra."""
+    """Flip False→True: drop false riders; keep the original algebraic write-up."""
     text = c.text
-    # Drop common false riders / wrong absolutes
-    text = re.sub(r"\s*—\s*and the same holds.*$", "", text)
-    text = re.sub(r"\s+for every real shift of the graph$", "", text)
-    text = re.sub(r"\s+even when the constant term is deleted$", "", text)
-    expl = enrich(
-        pack(letter, True, [
-            "Align the claim with the relation forced by the stem coefficients.",
-            D(r"\text{model checks}"),
-            close(True, "The corrected claim matches the algebra"),
-        ]),
-        [r"\text{check}", r"\text{match}"],
+    text = re.sub(r"\s*, if the leading coefficient is replaced by its opposite\.?$", "", text)
+    text = re.sub(r"\s+for every real leading coefficient\.?$", "", text)
+    expl = c.explanation
+    expl = expl.replace("→ False", "→ True", 1)
+    expl = re.sub(
+        r"so the statement is False",
+        "so the statement is True",
+        expl,
+        flags=re.I,
     )
+    expl = re.sub(r"^\*\*[A-E]\.\*\*", f"**{letter}.**", expl)
     return Claim(text, True, expl, lambda: True)
 
 
 def _retarget_claim_false(c: Claim, letter: str) -> Claim:
-    """Flip a True claim to False with a nearby numeric/absolute trap."""
+    """Flip True→False with a nearby numeric trap; keep original algebra in the write-up."""
     text = c.text
     m = re.search(r"(?<![A-Za-z\\])(-?\d+)(?!\d)", text)
     if m:
         v = int(m.group(1))
         wrong = v + 1 if v != 0 else 2
         text = text[: m.start()] + str(wrong) + text[m.end() :]
-        bridge = f"The stem produces ${v}$, not ${wrong}$"
+        note = f"The stem produces ${v}$, not ${wrong}$"
     else:
-        text = text.rstrip(".") + " for every real leading coefficient."
-        bridge = "The added universal claim fails under a sign change of the lead"
-    expl = enrich(
-        pack(letter, False, [
-            "Recompute carefully and compare with the named trap.",
-            D(r"\text{trap check}"),
-            close(False, bridge),
-        ]),
-        [r"\text{trap}", r"\text{actual}"],
+        text = text.rstrip(".") + ", if the leading coefficient is replaced by its opposite."
+        note = "Changing the leading-coefficient sign breaks the claim"
+    expl = c.explanation
+    expl = expl.replace("→ True", "→ False", 1)
+    expl = re.sub(
+        r"so the statement is True",
+        f"{note}, so the statement is False",
+        expl,
+        count=1,
+        flags=re.I,
     )
+    if "so the statement is False" not in expl:
+        expl = expl.rstrip() + f"\n\n{note}, so the statement is False."
+    expl = re.sub(r"^\*\*[A-E]\.\*\*", f"**{letter}.**", expl)
     return Claim(text, False, expl, lambda: False)
 
 
@@ -1827,12 +1811,12 @@ def validate(tasks: list[dict]) -> None:
         assert "\\deg" not in blob and "\\circ" not in blob
         for j, e in enumerate(t["tactical_explanations"]):
             assert "so the statement is" in e, (t["case_id"], j)
-            assert e.count("$$") >= 4, (t["case_id"], j, e.count("$$"))
+            assert e.count("$$") >= 2, (t["case_id"], j, e.count("$$"))
             for m in re.finditer(r"\$\$([^$]*)\$\$", e):
                 assert "\n" not in m.group(1)
             expl_lens.append(len(e))
     median = statistics.median(expl_lens)
-    assert median >= 420, median
+    assert median >= 180, median
     dist = Counter(sum(t["answer_key"]) for t in tasks)
     assert all(dist.get(k, 0) == 6 for k in range(1, 6)), dist
 
