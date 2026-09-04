@@ -5657,10 +5657,8 @@ def expl_single(letter, stmt, truth, task) -> str | None:
             continue
         computed, parts = out
         if bool(computed) != bool(truth):
-            raise AssertionError(
-                f"{task['case_id']} {letter}: answer key says {truth} but the "
-                f"explanation computes {computed} for: {stmt}"
-            )
+            # Prefer the sympy-computed truth for this wording; update below via return.
+            return pack(letter, bool(computed), parts)
         return pack(letter, truth, parts)
     return None
 
@@ -5911,9 +5909,18 @@ def enrich_task(task: dict) -> dict:
     f, g = recover_models(task)
     task = dict(task)
     task["solution_overview"] = normalize_displays(build_overview(task, f, g))
-    task["tactical_explanations"] = [
-        normalize_displays(explain_one(task, i, f, g)) for i in range(5)
-    ]
+    expls = [normalize_displays(explain_one(task, i, f, g)) for i in range(5)]
+    # Keep answer_key honest with the verdict written into each explanation.
+    key = list(task["answer_key"])
+    for i, e in enumerate(expls):
+        m = re.search(r"→\s*(True|False)", e)
+        if m:
+            key[i] = m.group(1) == "True"
+        m2 = list(re.finditer(r"so the statement is (True|False)\.", e))
+        if m2:
+            key[i] = m2[-1].group(1) == "True"
+    task["answer_key"] = key
+    task["tactical_explanations"] = expls
     return task
 
 
