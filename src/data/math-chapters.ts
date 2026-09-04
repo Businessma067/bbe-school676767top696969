@@ -89,7 +89,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   7: { "7": 10 },
   8: { "8": 10 },
   9: { "9": 10 },
-  11: { "11.1": 10, "11.2": 10, "11.3": 10 },
+  11: { "11.1": 10, "11.2": 10, "11.3": 10, "11.4": 10 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
