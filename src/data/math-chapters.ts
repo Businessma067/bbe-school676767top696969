@@ -201,7 +201,7 @@ const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
   7: MATH_CH7_LINEAR_QUADRATIC,
   8: MATH_CH8_POWER_FUNCTIONS,
   9: MATH_CH9_POLYNOMIALS,
-  /** Includes 11.4 graph reading (MATH 11.121–11.160) and 11.5 exam-style (MATH 11.161–11.175). */
+  /** Includes 11.4 graph reading (MATH 11.121–11.160) and 11.5 exam-style (MATH 11.161–11.190). */
   11: MATH_CH11_DIFFERENTIATION,
   12: MATH_CH12_PROBABILITY,
   13: MATH_CH13_BINOMIAL,
