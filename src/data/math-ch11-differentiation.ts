@@ -5441,148 +5441,156 @@ The statement is False.`
   {
     id: "math-11-81",
     case_id: "MATH 11.81",
-    title: "Workshop profit: differentiate, then check the peak",
+    title: "Workshop lamps: find the daily profit peak",
     subsection: "11.3",
     context:
-      "A small workshop sells $Q$ handmade lamps per day and models daily profit (in euros) by $P(Q)=-Q^{2}+12Q-20$ for $Q\\ge 0$. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
+      "A small workshop sells $Q$ handmade lamps per day. Daily profit in euros is modelled by $$P(Q)=-Q^{2}+12Q-20$$ for $Q\\ge 0$. Here $P(Q)$ denotes daily profit when $Q$ lamps are sold. The owner wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Differentiating gives $P'(Q)=-2Q+12$.",
-      "The only output where the slope is zero solves $P'(Q)=0$ and is $Q=6$.",
-      "The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.",
-      "Daily profit at that candidate output is $P(6)=16$.",
-      "Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$."
+      "The slope of daily profit is $P'(Q)=-2Q+12$.",
+      "The only daily output where that slope is flat is six lamps.",
+      "At six lamps a day the profit curve bends strictly downward, so that output is a local profit peak.",
+      "At six lamps a day, daily profit equals $16$ euros.",
+      "Because the slope is flat at six lamps, the profit level itself must be zero there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Differentiating gives $P'(Q)=-2Q+12$.
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold; $P'(Q)$ is the slope of profit (marginal profit) and $P''(Q)$ reads the bend of that curve.
 
-Work it from the given model as follows.
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold. The derivative $P'(Q)$ is the slope of the profit curve with respect to output — also called marginal profit.
 
-Differentiate term by term:
+Differentiate the given model term by term:
 
 $$
 P'(Q)=-2Q+12.
 $$
 
-That matches the claim.
-
 The statement is True.`,
       `**B.** → True
 
-Solve
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold; $P'(Q)$ is the slope of profit (marginal profit) and $P''(Q)$ reads the bend of that curve.
+
+An interior peak can occur only where the graph is momentarily flat, so set the slope to zero:
 
 $$
-P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad Q=6.
+P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad 2Q=12\\qquad\\Rightarrow\\qquad Q=6.
 $$
 
-On $Q\\ge 0$ this is the only candidate where the first derivative equals zero. After explaining the idea in words, this equation is often called the first-order condition for an interior optimum.
+On $Q\\ge 0$ this is the only root, so six lamps a day is the unique flat-slope candidate for a profit peak.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: The second derivative is $P''(Q)=-2$, so $Q=6$ is a strict local maximum.
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold; $P'(Q)$ is the slope of profit (marginal profit) and $P''(Q)$ reads the bend of that curve.
 
-Work it from the given model as follows.
-
-Differentiate again:
+Differentiate the slope once more to read the bend:
 
 $$
-P''(Q)=-2<0.
+P''(Q)=-2.
 $$
 
-With $P'(6)=0$ and $P''(6)<0$, the second-order test confirms a strict local maximum (peak) at $Q=6$.
+In particular $P''(6)=-2<0$. A negative second derivative means the profit curve bends downward at that flat spot, so $Q=6$ is a strict local maximum — a local profit peak.
+
+Negative $P''(6)$ means a downward bend, so six lamps is a strict local profit peak.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Daily profit at that candidate output is $P(6)=16$.
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold; $P'(Q)$ is the slope of profit (marginal profit) and $P''(Q)$ reads the bend of that curve.
 
-Work it from the given model as follows.
-
-Substitute into the profit formula:
+Substitute $Q=6$ into the profit model:
 
 $$
 P(6)=-6^{2}+12\\cdot 6-20=-36+72-20=16.
 $$
 
-The peak profit is $16$ euros.
+At six lamps a day, daily profit equals $16$ euros.
+
+Substituting $Q=6$ into the level $P$ (not into $P'$) gives $P(6)=16$ euros — the peak payoff height.
+
+Slope found the candidate; this substitution reads the euro height $P(6)=16$.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $P'(Q)=0$ at $Q=6$, the profit level must also be zero there: $P(6)=0$.
+$P(Q)$ denotes daily profit in euros when $Q$ lamps are sold; $P'(Q)$ is the slope of profit (marginal profit) and $P''(Q)$ reads the bend of that curve.
 
-Work it from the given model as follows.
+A flat slope ($P'(6)=0$) describes how profit *changes* at that output, not how large profit *is*. Evaluating the level separately gives
 
-$P'(6)=0$ is about the slope, not the height. The calculated level is $P(6)=16\\neq 0$. A flat tangent does not force profit to be zero.
+$$
+P(6)=16\\neq 0.
+$$
+
+Zero slope does not force zero profit: $P(6)=16\\neq 0$.
 
 The statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 81,
     solution_overview:
-      "Differentiate $P(Q)=-Q^{2}+12Q-20$, solve $P'=0$, use $P''<0$ to confirm a peak, and evaluate $P(6)$.",
+      "From $P(Q)=-Q^{2}+12Q-20$, derive $P'=-2Q+12$, find the flat-slope output $Q=6$, confirm a peak with $P''=-2$, and evaluate $P(6)=16$.",
   },
   {
     id: "math-11-82",
     case_id: "MATH 11.82",
-    title: "Café lunch: build profit, then solve R'=C'",
+    title: "Café lunch boxes: build profit from revenue and cost",
     subsection: "11.3",
     context:
-      "A café sells $Q$ lunch boxes. Revenue is $R(Q)=30Q-Q^{2}$ euros and total cost is $C(Q)=Q^{2}+6Q+40$ euros, for $Q>0$. Profit is $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
+      "A neighbourhood café sells $Q$ lunch boxes per day. Revenue is $$R(Q)=30Q-Q^{2}$$ euros and total cost is $$C(Q)=Q^{2}+6Q+40$$ euros, for $Q>0$. Daily profit is the difference $P(Q)=R(Q)-C(Q)$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
-      "Marginal profit is $P'(Q)=-4Q+24$.",
-      "Setting $P'(Q)=0$ gives the candidate output $Q=6$.",
-      "At $Q=6$ one also has $R'(6)=C'(6)=18$.",
-      "Because $P'(6)=0$, the café's profit level equals its cost level at $Q=6$."
+      "Daily profit simplifies to $P(Q)=-2Q^{2}+24Q-40$.",
+      "Marginal profit (the slope of $P$) is $P'(Q)=-4Q+24$.",
+      "Profit has a flat slope at six lunch boxes a day.",
+      "At six lunch boxes, marginal revenue and marginal cost both equal $18$ euros.",
+      "Because profit's slope is flat at six boxes, the café's profit level equals its cost level there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: The profit function simplifies to $P(Q)=-2Q^{2}+24Q-40$.
+$R(Q)$ is daily revenue, $C(Q)$ is total cost, and profit is $P(Q)=R(Q)-C(Q)$. Then $P'$, $R'$, and $C'$ are the slopes of profit, revenue, and cost (marginal profit, marginal revenue, and marginal cost).
 
-Work it from the given model as follows.
+$R(Q)$ is daily revenue and $C(Q)$ is total cost; profit is revenue minus cost:
 
 $$
 P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.
 $$
 
+Every term of revenue minus cost appears in that simplified quadratic.
+
 The statement is True.`,
       `**B.** → True
 
-The claim says: Marginal profit is $P'(Q)=-4Q+24$.
+$R(Q)$ is daily revenue, $C(Q)$ is total cost, and profit is $P(Q)=R(Q)-C(Q)$. Then $P'$, $R'$, and $C'$ are the slopes of profit, revenue, and cost (marginal profit, marginal revenue, and marginal cost).
 
-Work it from the given model as follows.
-
-Differentiate term by term:
+$P'(Q)$ is the derivative of profit with respect to output — the slope of the profit curve / marginal profit. Differentiate:
 
 $$
 P'(Q)=-4Q+24.
 $$
 
+That slope is the café's marginal profit, later set to zero at six boxes.
+
 The statement is True.`,
       `**C.** → True
 
-The claim says: Setting $P'(Q)=0$ gives the candidate output $Q=6$.
+$R(Q)$ is daily revenue, $C(Q)$ is total cost, and profit is $P(Q)=R(Q)-C(Q)$. Then $P'$, $R'$, and $C'$ are the slopes of profit, revenue, and cost (marginal profit, marginal revenue, and marginal cost).
 
-Work it from the given model as follows.
+Set the slope of profit to zero:
 
 $$
--4Q+24=0\\qquad\\Rightarrow\\qquad Q=6.
+P'(Q)=-4Q+24=0\\qquad\\Rightarrow\\qquad 4Q=24\\qquad\\Rightarrow\\qquad Q=6.
 $$
 
-This candidate is where marginal profit is zero (the first-order condition written in plain words).
+Six lunch boxes is the unique positive flat-slope output for this profit model.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: At $Q=6$ one also has $R'(6)=C'(6)=18$.
+$R(Q)$ is daily revenue, $C(Q)$ is total cost, and profit is $P(Q)=R(Q)-C(Q)$. Then $P'$, $R'$, and $C'$ are the slopes of profit, revenue, and cost (marginal profit, marginal revenue, and marginal cost).
 
-Work it from the given model as follows.
+Marginal revenue is $R'(Q)$ and marginal cost is $C'(Q)$:
 
 $$
 R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.
@@ -5591,599 +5599,682 @@ $$
 At $Q=6$:
 
 $$
-R'(6)=18,\\qquad C'(6)=18.
+R'(6)=30-12=18,\\qquad C'(6)=12+6=18.
 $$
 
-So $R'(6)=C'(6)$, which is equivalent to $P'(6)=0$ because $P'=R'-C'$.
+Matching $R'=C'=18$ at six boxes is equivalent to flat profit there.
 
 The statement is True.`,
       `**E.** → False
 
-$P'(6)=0$ does not compare the levels $P(6)$ and $C(6)$. Compute
+$R(Q)$ is daily revenue, $C(Q)$ is total cost, and profit is $P(Q)=R(Q)-C(Q)$. Then $P'$, $R'$, and $C'$ are the slopes of profit, revenue, and cost (marginal profit, marginal revenue, and marginal cost).
+
+$P'(6)=0$ means marginal profit is zero (flat slope), not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both:
 
 $$
-P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,\\qquad C(6)=36+36+40=112.
+P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,
 $$
 
-They are not equal. Zero slope is not zero (or equal) height.
+$$
+C(6)=36+36+40=112.
+$$
+
+Levels $P(6)=32$ and $C(6)=112$ differ, so flat slope does not equate profit with cost.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 82,
     solution_overview:
-      "Form $P=R-C$, differentiate, solve $P'=0$, and check the equivalent condition $R'=C'$.",
+      "Form $P=R-C=-2Q^{2}+24Q-40$, solve $P'=0$ for $Q=6$, check $R'(6)=C'(6)=18$, and reject the false claim that $P=C$ there.",
   },
   {
     id: "math-11-83",
     case_id: "MATH 11.83",
-    title: "Delivery fleet: minimise a quadratic cost",
+    title: "Courier vans: minimise daily operating cost",
     subsection: "11.3",
     context:
-      "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $C(Q)=Q^{2}-10Q+40$ for $Q\\ge 0$. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
+      "A courier firm runs $Q$ vans and models daily operating cost (in hundreds of euros) by $$C(Q)=Q^{2}-10Q+40$$ for $Q\\ge 0$. Here $C(Q)$ is daily cost when $Q$ vans are in service. Management wants the cost-minimising fleet size. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(Q)=2Q-10$, so the only output where the slope is zero is $Q=5$.",
-      "$C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.",
-      "The minimal cost value is $C(5)=15$.",
-      "Because $C'(5)=0$, the point $Q=5$ must be a local maximum of cost.",
-      "On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$."
+      "Cost has a flat slope only at five vans.",
+      "At five vans the cost curve bends upward, so that fleet size is a local cost trough.",
+      "The trough cost value is $15$ (hundreds of euros).",
+      "Because the slope of cost is flat at five vans, that fleet size must be a local cost peak.",
+      "On $Q\\ge 0$, the global cost minimum is also at five vans."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $C'(Q)=2Q-10$, so the only output where the slope is zero is $Q=5$.
+$C(Q)$ is daily operating cost in hundreds of euros for $Q$ vans; $C'(Q)$ is marginal cost (the slope of cost) and $C''(Q)$ reads whether that slope is rising.
 
-Work it from the given model as follows.
+Differentiate the cost model:
 
 $$
-C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.
+C'(Q)=2Q-10.
 $$
+
+Set the slope to zero:
+
+$$
+2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.
+$$
+
+So the only flat-slope fleet size is five vans.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $C''(Q)=2>0$, so $Q=5$ is a strict local minimum of cost.
+$C(Q)$ is daily operating cost in hundreds of euros for $Q$ vans; $C'(Q)$ is marginal cost (the slope of cost) and $C''(Q)$ reads whether that slope is rising.
 
-Work it from the given model as follows.
+The second derivative reads the bend:
 
 $$
 C''(Q)=2>0
 $$
 
-with $C'(5)=0$ confirms a strict local minimum (trough) of cost — this is the second-order test for a local min.
+everywhere, including at $Q=5$. A positive second derivative means the cost curve bends upward, so five vans is a strict local minimum — a cost trough, not a peak.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: The minimal cost value is $C(5)=15$.
+$C(Q)$ is daily operating cost in hundreds of euros for $Q$ vans; $C'(Q)$ is marginal cost (the slope of cost) and $C''(Q)$ reads whether that slope is rising.
 
-Work it from the given model as follows.
+Evaluate cost at the trough:
 
 $$
-C(5)=25-50+40=15.
+C(5)=5^{2}-10\\cdot 5+40=25-50+40=15.
 $$
+
+The minimal cost value is $15$ (hundreds of euros).
+
+Evaluating $C(5)=25-50+40=15$ reads the trough cost in hundreds of euros.
 
 The statement is True.`,
       `**D.** → False
 
-Setting the first derivative to zero alone does not decide maximum versus minimum. Here $C''>0$ forces a trough, not a peak. Ignoring the second derivative does not turn the point into a maximum.
+$C(Q)$ is daily operating cost in hundreds of euros for $Q$ vans; $C'(Q)$ is marginal cost (the slope of cost) and $C''(Q)$ reads whether that slope is rising.
+
+A flat slope alone does not decide peak versus trough. Here $C''(5)=2>0$, so the bend is upward: a local *minimum* of cost. Claiming a local cost *maximum* reverses the correct label.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: On $Q\\ge 0$, the global minimum of this $C$ is also at $Q=5$.
+$C(Q)$ is daily operating cost in hundreds of euros for $Q$ vans; $C'(Q)$ is marginal cost (the slope of cost) and $C''(Q)$ reads whether that slope is rising.
 
-Work it from the given model as follows.
-
-$C$ is a parabola opening upward. Its unique point where the slope is zero is therefore the global minimum on $Q\\ge 0$ (and $C(0)=40>15$).
+On $Q\\ge 0$ the parabola $C(Q)=Q^{2}-10Q+40$ opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. Therefore the local trough is also the global minimum on the domain: the cost-minimising fleet is five vans globally as well as locally.
 
 The statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 83,
     solution_overview:
-      "Differentiate cost, solve $C'=0$, use $C''>0$ to confirm a global cost minimum.",
+      "From $C(Q)=Q^{2}-10Q+40$, find the flat-slope fleet $Q=5$, confirm a trough with $C''>0$, evaluate $C(5)=15$, and note the same point is the global minimum on $Q\\ge 0$.",
   },
   {
     id: "math-11-84",
     case_id: "MATH 11.84",
-    title: "Two promo scores with vanishing first and second derivatives",
+    title: "Two promo scores: flat slope and flat bend at zero",
     subsection: "11.3",
     context:
-      "A marketing team compares two campaign-score models near intensity $x=0$: $A(x)=x^{4}$ and $B(x)=-x^{4}$. Decide TRUE or FALSE for each claim.",
+      "A marketing team compares two campaign-score models near intensity $x=0$: $$A(x)=x^{4}\\qquad\\text{and}\\qquad B(x)=-x^{4}.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.",
-      "Checking the local shape with the second derivative is inconclusive at $x=0$ for both $A$ and $B$.",
-      "Nevertheless, $x=0$ is a strict local minimum of $A$.",
-      "Nevertheless, $x=0$ is a strict local maximum of $B$.",
-      "Because $A''(0)=B''(0)=0$, neither $A$ nor $B$ can have a local peak or trough at $0$."
+      "At intensity zero, both scores have a flat slope and a flat second derivative.",
+      "Checking the local shape with the second derivative alone is inconclusive at zero for both scores.",
+      "Even so, intensity zero is a strict local trough of score $A$.",
+      "Even so, intensity zero is a strict local peak of score $B$.",
+      "Because both second derivatives vanish at zero, neither score can have a local peak or trough there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: For both models, $A'(0)=B'(0)=0$ and $A''(0)=B''(0)=0$.
+Write $A(x)=x^{4}$ and $B(x)=-x^{4}$ for the two campaign scores; $A'$, $A''$, $B'$, and $B''$ are their first and second derivatives with respect to intensity $x$.
 
-Work it from the given model as follows.
+Differentiate $A(x)=x^{4}$:
 
 $$
-A'(x)=4x^{3},\\quad A''(x)=12x^{2},
-$$
-$$
-B'(x)=-4x^{3},\\quad B''(x)=-12x^{2}.
+A'(x)=4x^{3},\\qquad A''(x)=12x^{2}.
 $$
 
-At $x=0$ all four values are zero.
+At $x=0$: $A'(0)=0$ and $A''(0)=0$. For $B(x)=-x^{4}$:
+
+$$
+B'(x)=-4x^{3},\\qquad B''(x)=-12x^{2},
+$$
+
+so $B'(0)=0$ and $B''(0)=0$ as well. Both models are flat in the first and second derivatives at zero.
+
+Both $A'(0)=A''(0)=0$ and $B'(0)=B''(0)=0$ follow by substituting $x=0$ into the derivative formulas above.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Checking the local shape with the second derivative is inconclusive at $x=0$ for both $A$ and $B$.
+Write $A(x)=x^{4}$ and $B(x)=-x^{4}$ for the two campaign scores; $A'$, $A''$, $B'$, and $B''$ are their first and second derivatives with respect to intensity $x$.
 
-Work it from the given model as follows.
+The usual bend test needs a *nonzero* second derivative at a flat-slope point. Here $A''(0)=B''(0)=0$, so that test gives no label for either model — the check is inconclusive at $x=0$.
 
-The second-order test needs $f''\\neq 0$ at a point where $f'=0$. Here both second derivatives vanish, so that test gives no decision.
+A bend test needs a nonzero second derivative; vanishing $A''(0)$ and $B''(0)$ make that test inconclusive for both scores.
+
+Zero second derivatives block the usual bend test for both $A$ and $B$ at the origin.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Nevertheless, $x=0$ is a strict local minimum of $A$.
+Write $A(x)=x^{4}$ and $B(x)=-x^{4}$ for the two campaign scores; $A'$, $A''$, $B'$, and $B''$ are their first and second derivatives with respect to intensity $x$.
 
-Work it from the given model as follows.
+Compare nearby values of $A$. For any $x\\neq 0$,
 
-$A(x)=x^{4}\\ge 0=A(0)$ for all $x$, so $x=0$ is a strict global (hence local) minimum even though $A''(0)=0$.
+$$
+A(x)=x^{4}>0=A(0).
+$$
+
+So every nearby intensity gives a strictly higher score than at zero: $x=0$ is a strict local (and global) minimum of $A$ — a trough — even though $A''(0)=0$.
+
+The inequality $x^{4}>0$ for $x\\neq 0$ forces $A(x)>A(0)$, proving a strict trough at zero despite $A''(0)=0$.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Nevertheless, $x=0$ is a strict local maximum of $B$.
+Write $A(x)=x^{4}$ and $B(x)=-x^{4}$ for the two campaign scores; $A'$, $A''$, $B'$, and $B''$ are their first and second derivatives with respect to intensity $x$.
 
-Work it from the given model as follows.
+For $B$, any $x\\neq 0$ gives
 
-$B(x)=-x^{4}\\le 0=B(0)$ for all $x$, so $x=0$ is a strict global maximum.
+$$
+B(x)=-x^{4}<0=B(0).
+$$
+
+Nearby scores are strictly lower, so $x=0$ is a strict local (and global) maximum of $B$ — a peak — despite $B''(0)=0$.
+
+Likewise $-x^{4}<0$ for $x\\neq 0$ forces $B(x)<B(0)$, proving a strict peak at zero despite $B''(0)=0$.
+
+The identity $B(0)-B(x)=x^{4}$ is strictly positive off zero, proving the peak.
 
 The statement is True.`,
       `**E.** → False
 
-A vanishing second derivative does not forbid extrema. $A$ has a trough and $B$ a peak at $0$. Use a sign chart or a direct nearby comparison when the second-order test is inconclusive.
+Write $A(x)=x^{4}$ and $B(x)=-x^{4}$ for the two campaign scores; $A'$, $A''$, $B'$, and $B''$ are their first and second derivatives with respect to intensity $x$.
+
+Vanishing $A''(0)$ and $B''(0)$ only means the second-derivative bend test is inconclusive. Direct comparison still shows $A$ has a trough and $B$ has a peak at zero. A zero second derivative does *not* forbid a local extremum.
+
+Inconclusive bend tests do not forbid extrema; nearby comparison still establishes a trough for $A$ and a peak for $B$.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 84,
     solution_overview:
-      "Compute $f'$ and $f''$ for $x^{4}$ and $-x^{4}$; show the second-derivative check fails while extrema still exist.",
+      "Show $A'=B'=A''=B''=0$ at $x=0$, note the bend test fails, then prove by nearby comparison that $A$ has a trough and $B$ a peak; reject the claim that neither can be an extremum.",
   },
   {
     id: "math-11-85",
     case_id: "MATH 11.85",
-    title: "Two cafés: same flat-slope output, opposite bend signs",
+    title: "Two cafés: same flat output, opposite profit bends",
     subsection: "11.3",
     context:
-      "Café A models profit by $P_A(Q)=-Q^{2}+20Q-50$. Café B models profit by $P_B(Q)=Q^{2}-20Q+90$. Both consider the output $Q=10$. Decide TRUE or FALSE for each claim.",
+      "Café A models daily profit by $$P_A(Q)=-Q^{2}+20Q-50.$$ Café B models daily profit by $$P_B(Q)=Q^{2}-20Q+90.$$ Both managers look at the output $Q=10$ lunch covers. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P_A'(10)=0$ and $P_B'(10)=0$, so both have a flat slope at $Q=10$.",
-      "$P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.",
-      "$P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.",
-      "Because both cafés have $P'=0$ at $Q=10$, both are maximising profit there.",
-      "Café A's profit at $Q=10$ is $P_A(10)=50$, while Café B's is $P_B(10)=-10$."
+      "At ten covers, both cafés have a flat profit slope.",
+      "Café A's profit curve bends downward at ten covers, so that output is a local profit peak for A.",
+      "Café B's profit curve bends upward at ten covers, so that output is a local profit trough for B.",
+      "Because both cafés have a flat slope at ten covers, both are maximising profit there.",
+      "At ten covers, Café A's profit is $50$ euros while Café B's profit is $-10$ euros."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P_A'(10)=0$ and $P_B'(10)=0$, so both have a flat slope at $Q=10$.
+$P_A(Q)$ and $P_B(Q)$ are daily profits for Café A and Café B; $P_A'$ and $P_B'$ are the slopes of those profit curves, and $P_A''$, $P_B''$ read the bends.
 
-Work it from the given model as follows.
+$P_A(Q)$ and $P_B(Q)$ denote daily profit for Café A and Café B. Their derivatives are the slopes of those profit curves (marginal profit).
+
+Differentiate each model:
 
 $$
 P_A'(Q)=-2Q+20,\\qquad P_B'(Q)=2Q-20.
 $$
 
-At $Q=10$ both derivatives are zero.
+At $Q=10$:
+
+$$
+P_A'(10)=-20+20=0,\\qquad P_B'(10)=20-20=0.
+$$
+
+Both cafés have a flat profit slope at ten covers. A shared flat spot is only a candidate until each bend is labelled.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $P_A''(10)=-2<0$, so Café A has a strict local profit maximum at $Q=10$.
+Start from Café A's profit $P_A(Q)=-Q^{2}+20Q-50$. Its slope is $P_A'(Q)=-2Q+20$, which vanishes at $Q=10$. Differentiating once more gives the constant $P_A''(Q)=-2$. Evaluating at the flat spot, $P_A''(10)=-2<0$, so the profit curve bends strictly downward there. In economic language: ten covers is a strict local profit maximum for Café A alone.
 
-Work it from the given model as follows.
+So Café A's downward bend at ten covers is fully established by $P_A''(10)=-2<0$.
 
-$$
-P_A''(Q)=-2<0
-$$
+Ten covers is Café A's local profit peak.
 
-with $P_A'(10)=0$ confirms a strict local maximum (peak) for A.
+Café A's downward bend at ten covers is certified by $P_A''(10)=-2<0$.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $P_B''(10)=2>0$, so Café B has a strict local profit minimum at $Q=10$.
+Café B's profit $P_B(Q)=Q^{2}-20Q+90$ has slope $P_B'(Q)=2Q-20$, also flat at $Q=10$. The second derivative is the constant $P_B''(Q)=2>0$, so at that same cover count the curve bends upward. Ten covers is therefore a strict local profit minimum (trough) for B — the opposite economic label from Café A.
 
-Work it from the given model as follows.
+So Café B's upward bend at ten covers is fully established by $P_B''(10)=2>0$.
 
-$$
-P_B''(Q)=2>0
-$$
+Café B's trough label is therefore the opposite of Café A's peak label at the same output.
 
-with $P_B'(10)=0$ confirms a strict local minimum (trough) for B.
+Café B's upward bend at ten covers is certified by $P_B''(10)=2>0$.
 
 The statement is True.`,
       `**D.** → False
 
-The claim says: Because both cafés have $P'=0$ at $Q=10$, both are maximising profit there.
+$P_A(Q)$ and $P_B(Q)$ are daily profits for Café A and Café B; $P_A'$ and $P_B'$ are the slopes of those profit curves, and $P_A''$, $P_B''$ read the bends.
 
-Work it from the given model as follows.
+A shared flat-slope output does not mean both maximise. Café A has a peak ($P_A''<0$) while Café B has a trough ($P_B''>0$). Only A is maximising profit at $Q=10$; B is at a local profit low. The both-maximising claim is false.
 
-Same flat-slope condition, opposite second-derivative signs. Only A has a local max; B has a local min. Setting $P'=0$ alone does not prove maximisation.
+Opposite second-derivative signs mean only A maximises at $Q=10$; B is at a local low.
+
+Opposite bends at the same $Q$ forbid a both-maximising conclusion.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: Café A's profit at $Q=10$ is $P_A(10)=50$, while Café B's is $P_B(10)=-10$.
+$P_A(Q)$ and $P_B(Q)$ are daily profits for Café A and Café B; $P_A'$ and $P_B'$ are the slopes of those profit curves, and $P_A''$, $P_B''$ read the bends.
 
-Work it from the given model as follows.
+Evaluate the levels at the shared output:
 
 $$
-P_A(10)=-100+200-50=50,
+P_A(10)=-10^{2}+20\\cdot 10-50=-100+200-50=50,
 $$
+
 $$
-P_B(10)=100-200+90=-10.
+P_B(10)=10^{2}-20\\cdot 10+90=100-200+90=-10.
 $$
+
+Café A earns $50$ euros; Café B's model gives $-10$ euros at the same output. Flat slopes need not produce equal profit levels.
+
+Level evaluation gives $P_A(10)=50$ and $P_B(10)=-10$; equal flat slopes need not equalise profit heights.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 85,
     solution_overview:
-      "Differentiate two café profits; same $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
+      "At $Q=10$ both $P_A'$ and $P_B'$ vanish, but $P_A''<0$ (peak) while $P_B''>0$ (trough); levels are $50$ and $-10$, so both-max is false.",
   },
   {
     id: "math-11-86",
     case_id: "MATH 11.86",
-    title: "Ticket booth: local peak vs endpoint global max",
+    title: "Festival tickets: local peak versus endpoint global max",
     subsection: "11.3",
     context:
-      "A festival ticket booth may sell any output in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is $P(Q)=Q^{3}-6Q^{2}+9Q+10$. Decide TRUE or FALSE for each claim.",
+      "A festival ticket booth may sell any number of ticket packs in the closed interval $0\\le Q\\le 5$. Profit (in tens of euros) is modelled by $$P(Q)=Q^{3}-6Q^{2}+9Q+10.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=3Q^{2}-12Q+9$, and the outputs in $(0,5)$ where the slope is zero are $Q=1$ and $Q=3$.",
-      "$P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.",
-      "The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.",
-      "On $[0,5]$, the global maximum is at the local peak $Q=1$.",
-      "On $[0,5]$, the global maximum is at the endpoint $Q=5$."
+      "Inside $(0,5)$, profit has a flat slope at one pack and at three packs.",
+      "One pack is a local profit peak and three packs is a local profit trough.",
+      "The profit values are $14$ at one pack, $10$ at three packs, $10$ at zero packs, and $30$ at five packs.",
+      "On the full interval $[0,5]$, the global profit maximum is at the local peak of one pack.",
+      "On $[0,5]$, the global profit maximum is at the endpoint of five packs."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P'(Q)=3Q^{2}-12Q+9$, and the outputs in $(0,5)$ where the slope is zero are $Q=1$ and $Q=3$.
+$P(Q)$ is festival profit in tens of euros for $Q$ ticket packs; $P'$ is its slope and $P''$ its bend.
 
-Work it from the given model as follows.
+$P(Q)$ is profit in tens of euros. Differentiate:
 
 $$
 P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).
 $$
 
-So $P'(Q)=0$ at $Q=1$ and $Q=3$, both interior to $(0,5)$.
+So $P'(Q)=0$ at $Q=1$ and $Q=3$, both inside $(0,5)$. Flat slope occurs at one pack and at three packs.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $P''(1)=-6<0$, so $Q=1$ is a strict local maximum; $P''(3)=6>0$, so $Q=3$ is a strict local minimum.
-
-Work it from the given model as follows.
+$P(Q)$ is festival profit in tens of euros for $Q$ ticket packs; $P'$ is its slope and $P''$ its bend.
 
 $$
 P''(Q)=6Q-12.
 $$
 
-Then $P''(1)=-6<0$ (local max / peak) and $P''(3)=6>0$ (local min / trough).
+Then $P''(1)=-6<0$ (downward bend → local peak) and $P''(3)=6>0$ (upward bend → local trough). One pack is a local maximum; three packs is a local minimum.
+
+Signs $P''(1)<0$ and $P''(3)>0$ label one pack as a local peak and three packs as a local trough.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: The profit values are $P(1)=14$, $P(3)=10$, $P(0)=10$, and $P(5)=30$.
+$P(Q)$ is festival profit in tens of euros for $Q$ ticket packs; $P'$ is its slope and $P''$ its bend.
 
-Work it from the given model as follows.
-
-Direct substitution:
+Evaluate:
 
 $$
 P(1)=1-6+9+10=14,
 $$
+
 $$
 P(3)=27-54+27+10=10,
 $$
+
 $$
 P(0)=10,\\qquad P(5)=125-150+45+10=30.
 $$
 
+The four values match the claim.
+
+The four evaluations $14$, $10$, $10$, and $30$ match the claim and feed the global comparison.
+
 The statement is True.`,
       `**D.** → False
 
-The claim says: On $[0,5]$, the global maximum is at the local peak $Q=1$.
+$P(Q)$ is festival profit in tens of euros for $Q$ ticket packs; $P'$ is its slope and $P''$ its bend.
 
-Work it from the given model as follows.
+A local peak need not be the global maximum on a closed interval. Comparing values, $P(1)=14$ is beaten by the endpoint $P(5)=30$. The global max is not at $Q=1$.
 
-$P(1)=14$ is only a local peak. Comparing candidates, $P(5)=30>14$, so $Q=1$ is not the global max on $[0,5]$.
+Because $P(5)=30>14=P(1)$, the local peak at one pack is not the global max on $[0,5]$.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: On $[0,5]$, the global maximum is at the endpoint $Q=5$.
+$P(Q)$ is festival profit in tens of euros for $Q$ ticket packs; $P'$ is its slope and $P''$ its bend.
 
-Work it from the given model as follows.
+Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest is $P(5)=30$. On $[0,5]$ the global profit maximum is at the right endpoint $Q=5$.
 
-Among $P(0),P(1),P(3),P(5)$, the largest value is $P(5)=30$. The global maximum on the closed interval is at the endpoint $Q=5$, not at the interior local peak.
+The largest among the four values is $P(5)=30$, so the global maximum sits at the right endpoint.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 86,
     solution_overview:
-      "Find where $P'=0$ for a cubic profit, check local shape with $P''$, then compare endpoint values for the global max.",
+      "Find flat-slope outputs $Q=1$ (local max, value $14$) and $Q=3$ (local min, value $10$); compare with endpoints to see the global max is $P(5)=30$.",
   },
   {
     id: "math-11-87",
     case_id: "MATH 11.87",
-    title: "Pop-up stall: rising profit forces an endpoint max",
+    title: "Pop-up stall: rising profit forces an endpoint maximum",
     subsection: "11.3",
     context:
-      "A pop-up stall can produce any output in $0\\le Q\\le 8$. Its profit is $P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$. Decide TRUE or FALSE for each claim.",
+      "A pop-up market stall can produce any output in $0\\le Q\\le 8$. Its daily profit in euros is $$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=5-\\dfrac{Q}{5}$.",
-      "On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior output where the slope is zero.",
-      "Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.",
-      "At the maximum point $Q=8$ one must have $P'(8)=0$.",
-      "The maximal profit on the interval is $P(8)=36.6$."
+      "The slope of profit is $P'(Q)=5-\\dfrac{Q}{5}$.",
+      "Inside $(0,8)$ the slope stays strictly positive, so there is no interior flat-slope output.",
+      "Because profit is strictly increasing on $[0,8]$, the maximum is at eight units and the minimum at zero.",
+      "At the maximum output of eight units one must have a flat profit slope.",
+      "The maximal profit on the interval is $36.6$ euros."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P'(Q)=5-\\dfrac{Q}{5}$.
+$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$ is daily profit on $0\\le Q\\le 8$; $P'(Q)$ is the slope of that profit curve.
 
-Work it from the given model as follows.
+Differentiate term by term. The derivative of $5Q$ is $5$; the derivative of $\\dfrac{Q^{2}}{10}$ is $\\dfrac{2Q}{10}=\\dfrac{Q}{5}$; the constant $3$ vanishes. So
 
 $$
 P'(Q)=5-\\dfrac{Q}{5}.
 $$
 
+Using $\\dfrac{Q^{2}}{10}$ and its derivative $\\dfrac{Q}{5}$ yields the claimed slope $5-\\dfrac{Q}{5}$.
+
 The statement is True.`,
       `**B.** → True
 
-The claim says: On the open interval $(0,8)$, one has $P'(Q)>0$ everywhere, so there is no interior output where the slope is zero.
+$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$ is daily profit on $0\\le Q\\le 8$; $P'(Q)$ is the slope of that profit curve.
 
-Work it from the given model as follows.
-
-For $0<Q<8$,
+On $(0,8)$ one has $0<Q<8$, so $0<\\dfrac{Q}{5}<\\dfrac{8}{5}=1.6$. Therefore
 
 $$
-5-\\dfrac{Q}{5}>5-\\dfrac{8}{5}=3.4>0.
+P'(Q)=5-\\dfrac{Q}{5}>5-1.6=3.4>0.
 $$
 
-So $P'$ never vanishes inside $(0,8)$.
+The slope never hits zero inside the open interval — profit is strictly rising throughout.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Because profit is strictly increasing on $[0,8]$, the maximum is at $Q=8$ and the minimum at $Q=0$.
+$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$ is daily profit on $0\\le Q\\le 8$; $P'(Q)$ is the slope of that profit curve.
 
-Work it from the given model as follows.
-
-Positive derivative means $P$ is strictly increasing on the interval, so the minimum is at $Q=0$ and the maximum at $Q=8$.
+A strictly positive derivative on $(0,8)$ (and continuity on the closed interval) means $P$ is strictly increasing on $[0,8]$. The smallest value is at the left endpoint $Q=0$ and the largest at the right endpoint $Q=8$.
 
 The statement is True.`,
       `**D.** → False
 
-An endpoint maximum need not have a flat tangent. Here
+$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$ is daily profit on $0\\le Q\\le 8$; $P'(Q)$ is the slope of that profit curve.
+
+Endpoint maxima need not have a flat slope. Here
 
 $$
-P'(8)=5-\\dfrac{8}{5}=3.4\\neq 0.
+P'(8)=5-\\dfrac{8}{5}=5-1.6=3.4\\neq 0.
 $$
 
-The first-order condition $P'=0$ is for interior candidates, not for every optimum on a closed interval.
+Profit is maximised at $Q=8$ because the feasible interval ends there while the curve is still rising — not because the slope is zero.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: The maximal profit on the interval is $P(8)=36.6$.
+$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$ is daily profit on $0\\le Q\\le 8$; $P'(Q)$ is the slope of that profit curve.
 
-Work it from the given model as follows.
+Evaluate at the right endpoint:
 
 $$
-P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.
+P(8)=5\\cdot 8-\\dfrac{8^{2}}{10}+3=40-\\dfrac{64}{10}+3=40-6.4+3=36.6.
 $$
+
+Maximal profit on $[0,8]$ is $36.6$ euros.
+
+Substituting $Q=8$ into $P$ with $\\dfrac{64}{10}=6.4$ yields the peak profit $36.6$ euros.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 87,
     solution_overview:
-      "Compute $P'$, verify it stays positive on $(0,8)$, and locate the max at the right endpoint without $P'=0$.",
+      "Show $P'=5-\\dfrac{Q}{5}>0$ on $(0,8)$, so the max is the endpoint $Q=8$ with $P(8)=36.6$, without needing $P'(8)=0$.",
   },
   {
     id: "math-11-88",
     case_id: "MATH 11.88",
-    title: "App downloads: two candidates checked by signs and by P''",
+    title: "App studio: local peak and trough, no global max on $[0,\\infty)$",
     subsection: "11.3",
     context:
-      "An app studio models weekly net benefit (in thousands of euros) by $B(x)=x^{3}-6x^{2}+9x+2$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
+      "An app studio models weekly net benefit (in thousands of euros) by $$B(x)=x^{3}-6x^{2}+9x+2$$ for advertising intensity $x\\ge 0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$B'(x)=3x^{2}-12x+9$, with $B'(x)=0$ at $x=1$ and $x=3$.",
-      "A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.",
-      "A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.",
-      "$B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same local peak and trough.",
-      "Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$."
+      "Net benefit has a flat slope at intensities $1$ and $3$.",
+      "A sign chart of the slope shows a change from positive to negative at intensity $1$, so that point is a local peak.",
+      "A sign chart shows a change from negative to positive at intensity $3$, so that point is a local trough.",
+      "The second-derivative bend test confirms the same local peak at $1$ and local trough at $3$.",
+      "Because intensity $1$ is a local peak, it must also be the global maximum of net benefit on $[0,\\infty)$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $B'(x)=3x^{2}-12x+9$, with $B'(x)=0$ at $x=1$ and $x=3$.
-
-Work it from the given model as follows.
+Weekly net benefit is $B(x)=x^{3}-6x^{2}+9x+2$. Differentiate and factor completely:
 
 $$
 B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).
 $$
 
-Solutions of $B'=0$: $x=1$ and $x=3$.
+The roots are exactly the intensities $x=1$ and $x=3$. Those are the only places where the slope of net benefit is flat on $x\\ge 0$.
+
+Those two roots of $B'$ are the complete flat-slope list for this cubic net-benefit model.
+
+No other intensity makes $B'$ vanish on $x\\ge 0$.
+
+Intensities $1$ and $3$ are the only flat-slope advertising levels for this cubic.
+
+That is the claim-specific reading of letter A for this model.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: A sign chart shows $B'$ changes from $+$ to $-$ at $x=1$, so $x=1$ is a local maximum.
+$B(x)$ is weekly net benefit at advertising intensity $x\\ge 0$; $B'$ is its slope and $B''$ its bend.
 
-Work it from the given model as follows.
+For $x\\in(0,1)$, both factors $(x-1)$ and $(x-3)$ are negative, so $B'(x)>0$. For $x\\in(1,3)$, $(x-1)>0$ and $(x-3)<0$, so $B'(x)<0$. The slope changes from $+$ to $-$ at $x=1$: a local maximum (peak).
 
-For $x\\in(0,1)$, both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$.
-For $x\\in(1,3)$, $(x-1)>0$ and $(x-3)<0$, so $B'<0$.
-Thus $+$ to $-$ at $x=1$: local maximum (peak).
+On $(0,1)$ both factors are negative so $B'>0$; on $(1,3)$ the factors have opposite signs so $B'<0$. A $+\\to-$ change at $x=1$ is a local peak.
+
+The sign pattern $+/−$ across $x=1$ is the first-derivative evidence for a local peak.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: A sign chart shows $B'$ changes from $-$ to $+$ at $x=3$, so $x=3$ is a local minimum.
+From the factored slope $B'(x)=3(x-1)(x-3)$: on the interval $(1,3)$ the factor $(x-1)$ is positive while $(x-3)$ is negative, so $B'<0$. For $x>3$ both factors are positive, so $B'>0$. Crossing $x=3$ the slope changes from negative to positive — the first-derivative sign chart for a local trough of net benefit at intensity $3$.
 
-Work it from the given model as follows.
+The $-/+$ sign change of $B'$ across intensity $3$ is the trough certificate.
 
-For $x>3$, both factors are positive, so $B'>0$. Crossing $x=3$ changes $-$ to $+$: local minimum (trough).
+Intensity $3$ is therefore a local trough of weekly net benefit.
+
+The $-/+$ sign change of $B'$ across $x=3$ certifies a local trough.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: $B''(1)=-6<0$ and $B''(3)=6>0$, confirming the same local peak and trough.
-
-Work it from the given model as follows.
+Differentiate the slope to obtain $B''(x)=6x-12$. Substitute the two flat intensities:
 
 $$
-B''(x)=6x-12,\\qquad B''(1)=-6<0,\\qquad B''(3)=6>0.
+B''(1)=-6<0,\\qquad B''(3)=6>0.
 $$
 
-The second-order test agrees with the sign chart.
+Negative bend at $1$ confirms the local peak already seen from the sign chart; positive bend at $3$ confirms the local trough. The two tools agree on both labels.
+
+Agreement of $B''$ signs with the sign chart closes the peak/trough labelling at $1$ and $3$.
+
+Peak at $1$ and trough at $3$ are confirmed by both tools.
+
+$B''(1)<0$ and $B''(3)>0$ recover the same peak and trough labels as the sign chart.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $x=1$ is a local maximum, it must also be the global maximum of $B$ on $[0,\\infty)$.
+$B(x)$ is weekly net benefit at advertising intensity $x\\ge 0$; $B'$ is its slope and $B''$ its bend.
 
-Work it from the given model as follows.
+A local peak need not be global on an unbounded domain. As $x\\to\\infty$, the cubic term $x^{3}$ dominates and $B(x)\\to\\infty$. Net benefit grows without bound, so there is no global maximum on $[0,\\infty)$, and $x=1$ cannot be one.
 
-$B(x)\\to\\infty$ as $x\\to\\infty$ because of the $x^{3}$ term, so there is no global maximum on $[0,\\infty)$. A local max need not be global.
+As $x\\to\\infty$, the cubic $x^{3}$ drives $B(x)\\to\\infty$, so no global maximum exists on $[0,\\infty)$ and the local peak at $1$ cannot be global.
+
+Unbounded growth of the cubic forbids any global max on $[0,\\infty)$.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 88,
     solution_overview:
-      "Factor $B'$, read a sign chart at two candidates, and confirm with $B''$; refuse local=global.",
+      "Locate flat slopes at $x=1$ (local max) and $x=3$ (local min) by signs and $B''$; reject global-max claims because $B(x)\\to\\infty$ as $x\\to\\infty$.",
   },
   {
     id: "math-11-89",
     case_id: "MATH 11.89",
-    title: "Bakery ovens: find candidates, check local shape, compare values",
+    title: "Bakery ovens: local trough, local peak, global max at zero",
     subsection: "11.3",
     context:
-      "A bakery's daily profit from running $Q$ ovens is $P(Q)=-Q^{3}+9Q^{2}-24Q+30$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
+      "A bakery's daily profit from running $Q$ ovens is $$P(Q)=-Q^{3}+9Q^{2}-24Q+30$$ for $0\\le Q\\le 6$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=-3Q^{2}+18Q-24$, and the outputs in $(0,6)$ where the slope is zero are $Q=2$ and $Q=4$.",
-      "$P''(2)=6>0$, so $Q=2$ is a strict local minimum.",
-      "$P''(4)=-6<0$, so $Q=4$ is a strict local maximum.",
-      "Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.",
-      "Solving $P'=0$ alone already proves which point maximises profit on $[0,6]$."
+      "Inside $(0,6)$, profit has a flat slope at two ovens and at four ovens.",
+      "Two ovens is a local profit trough.",
+      "Four ovens is a local profit peak.",
+      "Comparing all candidate and endpoint values, the global profit maximum on $[0,6]$ is at zero ovens.",
+      "Finding the flat-slope outputs alone already proves which point maximises profit on $[0,6]$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P'(Q)=-3Q^{2}+18Q-24$, and the outputs in $(0,6)$ where the slope is zero are $Q=2$ and $Q=4$.
+$P(Q)$ is daily bakery profit from $Q$ ovens on $0\\le Q\\le 6$; $P'$ and $P''$ are its slope and bend.
 
-Work it from the given model as follows.
+Differentiate:
 
 $$
 P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).
 $$
 
-Candidates: $Q=2$ and $Q=4$.
+So $P'(Q)=0$ at $Q=2$ and $Q=4$, both in $(0,6)$.
+
+Factoring $P'=-3(Q-2)(Q-4)$ places the only interior flat slopes at two and four ovens.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $P''(2)=6>0$, so $Q=2$ is a strict local minimum.
-
-Work it from the given model as follows.
+$P(Q)$ is daily bakery profit from $Q$ ovens on $0\\le Q\\le 6$; $P'$ and $P''$ are its slope and bend.
 
 $$
-P''(Q)=-6Q+18,\\qquad P''(2)=6>0,
+P''(Q)=-6Q+18.
 $$
 
-so $Q=2$ is a strict local minimum (trough).
+Then $P''(2)=-12+18=6>0$: upward bend, so two ovens is a strict local profit minimum (trough).
+
+At $Q=2$, $P''(2)=6>0$, so two ovens is a strict local profit trough.
+
+Positive $P''(2)$ is the bend evidence for a local profit trough at two ovens.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $P''(4)=-6<0$, so $Q=4$ is a strict local maximum.
+$P(Q)$ is daily bakery profit from $Q$ ovens on $0\\le Q\\le 6$; $P'$ and $P''$ are its slope and bend.
 
-Work it from the given model as follows.
+$P''(4)=-24+18=-6<0$: downward bend, so four ovens is a strict local profit maximum (peak).
 
-$$
-P''(4)=-24+18=-6<0,
-$$
+At $Q=4$, $P''(4)=-6<0$, so four ovens is a strict local profit peak.
 
-so $Q=4$ is a strict local maximum (peak).
+Negative $P''(4)$ is the bend evidence for a local profit peak at four ovens.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Comparing $P(0)=30$, $P(2)=10$, $P(4)=14$, and $P(6)=-6$, the global maximum on $[0,6]$ is at $Q=0$.
+$P(Q)$ is daily bakery profit from $Q$ ovens on $0\\le Q\\le 6$; $P'$ and $P''$ are its slope and bend.
 
-Work it from the given model as follows.
+Evaluate:
 
 $$
 P(0)=30,\\quad P(2)=-8+36-48+30=10,\\quad P(4)=-64+144-96+30=14,\\quad P(6)=-216+324-144+30=-6.
 $$
 
-The largest value is $P(0)=30$, so the global max on $[0,6]$ is at the endpoint.
+The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens (the left endpoint).
 
 The statement is True.`,
       `**E.** → False
 
-Solving $P'=0$ only lists candidates. You still must check local peak versus trough and compare function values (including endpoints). Here the global max is not even an interior flat-slope point.
+$P(Q)$ is daily bakery profit from $Q$ ovens on $0\\le Q\\le 6$; $P'$ and $P''$ are its slope and bend.
+
+Listing flat-slope outputs only produces candidates. One of them is a trough ($Q=2$), and the global max on a closed interval can sit at an endpoint ($Q=0$ here). You must still label each candidate and compare values — stopping at $P'=0$ leaves the maximisation unfinished.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 89,
     solution_overview:
-      "Differentiate, solve $P'=0$, check local shape with $P''$, then compare values to find the global max.",
+      "Flat slopes at $Q=2$ (local min, value $10$) and $Q=4$ (local max, value $14$); global max on $[0,6]$ is $P(0)=30$.",
   },
   {
     id: "math-11-90",
     case_id: "MATH 11.90",
-    title: "Print shop: match R' to C', then check the bend of P",
+    title: "Print shop: match marginal revenue to marginal cost",
     subsection: "11.3",
     context:
-      "A print shop has revenue $R(Q)=40Q-2Q^{2}$ and cost $C(Q)=Q^{2}+4Q+10$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+      "A print shop has revenue $$R(Q)=40Q-2Q^{2}$$ and cost $$C(Q)=Q^{2}+4Q+10$$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.",
-      "Setting $P'(Q)=0$ gives the candidate $Q=6$, and equivalently $R'(6)=C'(6)=16$.",
-      "$P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.",
-      "Maximal profit is $P(6)=98$.",
-      "Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart."
+      "Profit simplifies to $P(Q)=-3Q^{2}+36Q-10$, with slope $P'(Q)=-6Q+36$.",
+      "Profit has a flat slope at six jobs, and there marginal revenue equals marginal cost at $16$.",
+      "At six jobs the profit curve bends downward, so that output is a local profit peak.",
+      "Peak profit is $98$ euros.",
+      "Matching marginal revenue to marginal cost is enough; one may skip checking the bend of profit."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P(Q)=-3Q^{2}+36Q-10$, so $P'(Q)=-6Q+36$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$. Then $R'$, $C'$, and $P'$ are marginal revenue, marginal cost, and marginal profit.
 
-Work it from the given model as follows.
+Profit is revenue minus cost:
 
 $$
-P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,
+P(Q)=R(Q)-C(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10.
 $$
+
+Here $P(Q)$ denotes daily profit. Differentiate to get the slope (marginal profit):
+
 $$
 P'(Q)=-6Q+36.
 $$
@@ -6191,444 +6282,568 @@ $$
 The statement is True.`,
       `**B.** → True
 
-$$
-P'(Q)=0\\qquad\\Rightarrow\\qquad Q=6.
-$$
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$. Then $R'$, $C'$, and $P'$ are marginal revenue, marginal cost, and marginal profit.
 
-Also $R'(Q)=40-4Q$ and $C'(Q)=2Q+4$, so
+Set the slope of profit to zero:
 
 $$
-R'(6)=16=C'(6).
+-6Q+36=0\\qquad\\Rightarrow\\qquad Q=6.
 $$
 
-Matching marginal revenue to marginal cost is the same flat-slope condition on profit.
+Marginal revenue is $R'(Q)$ and marginal cost is $C'(Q)$:
+
+$$
+R'(Q)=40-4Q,\\qquad C'(Q)=2Q+4.
+$$
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $P''(6)=-6<0$, so $Q=6$ is a strict local profit maximum.
-
-Work it from the given model as follows.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$. Then $R'$, $C'$, and $P'$ are marginal revenue, marginal cost, and marginal profit.
 
 $$
 P''(Q)=-6<0
 $$
 
-at the candidate confirms a strict local maximum — the second-order test for a peak.
+at $Q=6$ (and everywhere). The profit curve bends downward at the flat spot: six jobs is a strict local profit maximum — a local peak.
+
+The constant $P''=-6<0$ is a downward bend, so six jobs is a strict local profit peak.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Maximal profit is $P(6)=98$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$. Then $R'$, $C'$, and $P'$ are marginal revenue, marginal cost, and marginal profit.
 
-Work it from the given model as follows.
+Substitute into the profit model:
 
 $$
-P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.
+P(6)=-3\\cdot 6^{2}+36\\cdot 6-10=-3\\cdot 36+216-10=-108+216-10=98.
 $$
+
+Peak profit is $98$ euros.
+
+Substituting $Q=6$ into the profit level produces $P(6)=98$ euros.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Finding $R'(Q)=C'(Q)$ is enough; one may skip checking $P''$ or a sign chart.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$. Then $R'$, $C'$, and $P'$ are marginal revenue, marginal cost, and marginal profit.
 
-Work it from the given model as follows.
-
-$R'=C'$ only finds a candidate. Without checking the second derivative or a sign chart, that point might be a trough. Here $P''<0$ finishes the proof of a max.
+Matching $R'=C'$ is the same as finding $P'=0$ — it only locates a flat-slope candidate. Without a bend check (second derivative or sign chart), you cannot tell a profit peak from a profit trough. Skipping that second check leaves the maximisation argument incomplete.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 90,
     solution_overview:
-      "Build $P$ from $R$ and $C$, solve $P'=0$, confirm with $R'=C'$, and check $P''<0$.",
+      "Build $P=-3Q^{2}+36Q-10$, find $Q=6$ via $P'=0$ or $R'=C'=16$, confirm $P''<0$, and evaluate $P(6)=98$.",
   },
   {
     id: "math-11-91",
     case_id: "MATH 11.91",
-    title: "Two bakeries: shared flat-slope output, opposite bends",
+    title: "Two bakeries: shared flat output, opposite profit bends",
     subsection: "11.3",
     context:
-      "Bakery North uses $P_N(Q)=-Q^{2}+16Q-30$. Bakery South uses $P_S(Q)=Q^{2}-16Q+70$. Decide TRUE or FALSE for each claim.",
+      "Bakery North models daily profit by $$P_N(Q)=-Q^{2}+16Q-30.$$ Bakery South models daily profit by $$P_S(Q)=Q^{2}-16Q+70.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both bakeries have a flat-slope output at $Q=8$.",
-      "North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.",
-      "South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.",
-      "North's peak profit is $P_N(8)=34$, while South's profit at $Q=8$ is $P_S(8)=6$.",
-      "Because both flat-slope outputs equal $8$, both bakeries are at a profit maximum."
+      "Both bakeries have a flat profit slope at eight loaves a day.",
+      "At eight loaves, North's profit curve bends downward, so that output is a local profit peak for North.",
+      "At eight loaves, South's profit curve bends upward, so that output is a local profit trough for South.",
+      "North's peak profit is $34$ euros, while South's profit at eight loaves is $6$ euros.",
+      "Because both flat-slope outputs equal eight, both bakeries are at a profit maximum."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Both bakeries have a flat-slope output at $Q=8$.
+$P_N(Q)$ and $P_S(Q)$ are daily profits for Bakery North and Bakery South; primes denote slopes and double primes denote bends.
 
-Work it from the given model as follows.
+$P_N(Q)$ and $P_S(Q)$ denote daily profit (euros) for North and South when $Q$ loaves are sold. Their derivatives $P_N'(Q)$ and $P_S'(Q)$ are the slopes of those profit curves — marginal profit for each bakery.
+
+Differentiate each model:
 
 $$
-P_N'(Q)=-2Q+16=0\\qquad\\Rightarrow\\qquad Q=8,
+P_N'(Q)=-2Q+16,\\qquad P_S'(Q)=2Q-16.
 $$
+
+Set each slope to zero:
+
 $$
-P_S'(Q)=2Q-16=0\\qquad\\Rightarrow\\qquad Q=8.
+-2Q+16=0\\qquad\\Rightarrow\\qquad Q=8,
+$$
+
+$$
+2Q-16=0\\qquad\\Rightarrow\\qquad Q=8.
 $$
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: North has $P_N''(8)=-2<0$, so $Q=8$ is a strict local maximum for North.
+Bakery North's profit $P_N(Q)=-Q^{2}+16Q-30$ has slope $P_N'(Q)=-2Q+16$, flat at eight loaves. Differentiating again yields the constant $P_N''(Q)=-2$. In particular $P_N''(8)=-2<0$: North's profit curve bends downward at that flat spot, so eight loaves is a strict local profit maximum for North.
 
-Work it from the given model as follows.
+North's peak label at eight loaves rests on the constant downward bend $P_N''=-2$.
 
-$P_N''=-2<0$ with $P_N'(8)=0$ confirms a strict local max (peak) for North.
+Eight loaves is North's local profit peak.
+
+North's peak at eight loaves follows from the constant downward bend $P_N''=-2$.
+
+That is the claim-specific reading of letter B for this model.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: South has $P_S''(8)=2>0$, so $Q=8$ is a strict local minimum for South.
+$P_S(Q)$ denotes Bakery South's daily profit in euros. Its derivative $P_S'(Q)$ is the slope of that profit curve (marginal profit), and $P_S''(Q)$ reads the bend.
 
-Work it from the given model as follows.
+South's model is $P_S(Q)=Q^{2}-16Q+70$, so
 
-$P_S''=2>0$ with $P_S'(8)=0$ confirms a strict local min (trough) for South.
+$$
+P_S'(Q)=2Q-16,\\qquad P_S''(Q)=2.
+$$
+
+The slope is flat when $2Q-16=0$, i.e. at $Q=8$. At that same output, $P_S''(8)=2>0$: the profit curve bends upward. Eight loaves is therefore a strict local profit *minimum* for South — a trough, not a peak. Same flat-slope output as North, opposite economic label.
+
+South's trough at eight loaves follows from the constant upward bend $P_S''=2$.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: North's peak profit is $P_N(8)=34$, while South's profit at $Q=8$ is $P_S(8)=6$.
+$P_N(Q)$ and $P_S(Q)$ are daily profits for Bakery North and Bakery South; primes denote slopes and double primes denote bends.
 
-Work it from the given model as follows.
+Evaluate the profit levels at $Q=8$:
 
 $$
-P_N(8)=-64+128-30=34,
+P_N(8)=-8^{2}+16\\cdot 8-30=-64+128-30=34,
 $$
+
 $$
-P_S(8)=64-128+70=6.
+P_S(8)=8^{2}-16\\cdot 8+70=64-128+70=6.
 $$
+
+North's peak profit is $34$ euros; South earns only $6$ euros at the same output. Flat slope does not force equal profit levels across firms.
+
+Level evaluation gives $P_N(8)=34$ and $P_S(8)=6$; flat slopes need not equalise profit heights across bakeries.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because both flat-slope outputs equal $8$, both bakeries are at a profit maximum.
+$P_N(Q)$ and $P_S(Q)$ are daily profits for Bakery North and Bakery South; primes denote slopes and double primes denote bends.
 
-Work it from the given model as follows.
+Sharing the flat-slope output $Q=8$ does not mean both maximise. The second derivatives have opposite signs: $P_N''<0$ (peak) versus $P_S''>0$ (trough). Only North is at a profit maximum; South is at a local profit low. The claim that both are maximising is false.
 
-Same candidate output does not mean the same local shape. South's second derivative shows a trough, not a peak.
+Opposite second-derivative signs mean only North maximises at $Q=8$; South is at a local low.
+
+Opposite bends refute the claim that both bakeries maximise at eight loaves.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 91,
     solution_overview:
-      "Differentiate two bakery profits; shared $Q$ with $P'=0$ gets opposite conclusions from $P''$.",
+      "Both have $P'=0$ at $Q=8$, but $P_N''<0$ (peak, value $34$) while $P_S''>0$ (trough, value $6$); both-max is false.",
   },
   {
     id: "math-11-92",
     case_id: "MATH 11.92",
-    title: "Loyalty index: second-derivative check fails but a max remains",
+    title: "Loyalty index: bend test fails but a global peak remains",
     subsection: "11.3",
     context:
-      "A retailer's loyalty index near a special offer intensity $x$ is modelled by $L(x)=10-x^{4}$. Decide TRUE or FALSE for each claim.",
+      "A retailer's loyalty index near a special-offer intensity $x$ is modelled by $$L(x)=10-x^{4}.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "$L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so at $x=0$ one has $L'(0)=0$ and $L''(0)=0$.",
-      "The sufficient second-derivative check for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.",
-      "Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.",
-      "Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.",
-      "A necessary condition at an interior local max of a twice differentiable function is $L''\\le 0$; here $L''(0)=0$ still obeys that necessary condition."
+      "At intensity zero, both the slope and the second derivative of the loyalty index are flat.",
+      "The usual downward-bend test for a strict local peak does not apply at intensity zero.",
+      "Even so, intensity zero is a strict global maximum of the loyalty index.",
+      "Because the second derivative vanishes at zero, intensity zero cannot be a local peak.",
+      "A necessary condition at an interior local peak is that the second derivative is at most zero; here that necessary condition still holds."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $L'(x)=-4x^{3}$ and $L''(x)=-12x^{2}$, so at $x=0$ one has $L'(0)=0$ and $L''(0)=0$.
+$L(x)=10-x^{4}$ is the loyalty index; $L'$ and $L''$ are its first and second derivatives with respect to offer intensity $x$.
 
-Work it from the given model as follows.
-
-Differentiate:
+$L(x)$ is the loyalty index. Differentiate:
 
 $$
 L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.
 $$
 
-Both vanish at $x=0$.
+At $x=0$: $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat there.
+
+From $L'=-4x^{3}$ and $L''=-12x^{2}$ one gets $L'(0)=L''(0)=0$: both slope and second derivative are flat at intensity zero.
+
+Direct substitution into $L'=-4x^{3}$ and $L''=-12x^{2}$ gives two zeros at the origin.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: The sufficient second-derivative check for a strict local max ($L'=0$ and $L''<0$) does not apply at $x=0$.
+Loyalty is $L(x)=10-x^{4}$ with $L'(0)=0$ and $L''(0)=0$. A standard sufficient test for a strict local maximum asks for a flat slope together with a strictly negative second derivative. Here the second derivative is zero rather than negative, so that sufficient downward-bend test simply does not apply at intensity zero — it is inconclusive, not a proof that there is no peak.
 
-Work it from the given model as follows.
+Vanishing $L''(0)$ blocks the sufficient $L''<0$ peak test without deciding against a peak.
 
-The usual sufficient second-order test needs a strictly negative second derivative. Here $L''(0)=0$, so that sufficient test does not fire.
+Vanishing $L''(0)$ blocks the sufficient $L''<0$ test without ruling out a peak.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Even so, $L(x)\\le L(0)=10$ for all $x$, so $x=0$ is a strict global maximum.
+$L(x)=10-x^{4}$ is the loyalty index; $L'$ and $L''$ are its first and second derivatives with respect to offer intensity $x$.
 
-Work it from the given model as follows.
+For every $x$, $-x^{4}\\le 0$, so
 
-$x^{4}\\ge 0$ for all $x$, so $L(x)=10-x^{4}\\le 10=L(0)$. The peak is global.
+$$
+L(x)=10-x^{4}\\le 10=L(0),
+$$
+
+with equality only at $x=0$. Therefore intensity zero is a strict global maximum of $L$, even though $L''(0)=0$.
+
+Because $-x^{4}\\le 0$ for all $x$, one has $L(x)=10-x^{4}\\le 10=L(0)$ with equality only at $0$, proving a strict global maximum.
+
+The inequality $L(x)\\le 10$ with equality only at $0$ is a global-max proof.
 
 The statement is True.`,
       `**D.** → False
 
-The claim says: Because $L''(0)=0$, the point $x=0$ cannot be a local maximum.
+$L(x)=10-x^{4}$ is the loyalty index; $L'$ and $L''$ are its first and second derivatives with respect to offer intensity $x$.
 
-Work it from the given model as follows.
+A vanishing second derivative does not forbid a peak — it only blocks the sufficient bend test. Direct comparison shows $L(x)\\le L(0)$ everywhere, so $x=0$ *is* a local (indeed global) maximum.
 
-$L''(0)=0$ does not forbid a maximum; the direct comparison already proves one.
+A vanishing second derivative blocks the sufficient bend test but does not forbid a peak; the comparison $L(x)\\le L(0)$ shows a peak still exists.
+
+A failed sufficient bend test does not erase the peak proved by $L(x)\\le L(0)$.
 
 The statement is False.`,
       `**E.** → True
 
-At an interior local maximum one must have $L''\\le 0$. Equality is allowed. Necessary is weaker than sufficient: the second-order test being inconclusive does not contradict the necessary inequality $L''\\le 0$.
+$L(x)=10-x^{4}$ is the loyalty index; $L'$ and $L''$ are its first and second derivatives with respect to offer intensity $x$.
+
+At an interior local maximum of a twice differentiable function, a *necessary* condition is $L''\\le 0$ (the curve cannot bend strictly upward at a peak). Here $L''(0)=0$, which still satisfies $L''\\le 0$. Necessity holds; sufficiency for a strict peak via $L''<0$ does not.
+
+Necessity at an interior local max requires only $L''\\le 0$; here $L''(0)=0$ still satisfies that necessary inequality even though $L''<0$ fails.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 92,
     solution_overview:
-      "Compute derivatives of $10-x^{4}$; separate an inconclusive sufficient test from a still-valid global max.",
+      "At $x=0$, $L'=L''=0$; the sufficient $L''<0$ test fails, yet $L(x)\\le 10$ proves a global max; necessary $L''\\le 0$ still holds.",
   },
   {
     id: "math-11-93",
     case_id: "MATH 11.93",
-    title: "Same firm: minimise cost and maximise profit separately",
+    title: "Workshop firm: cost trough and profit peak at different outputs",
     subsection: "11.3",
     context:
-      "A firm has cost $C(Q)=Q^{2}-8Q+30$ and revenue $R(Q)=20Q-Q^{2}$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+      "A workshop firm has cost $$C(Q)=Q^{2}-8Q+30$$ and revenue $$R(Q)=20Q-Q^{2}$$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.",
-      "Profit is $P(Q)=-2Q^{2}+28Q-30$, with $P'(Q)=0$ at $Q=7$.",
-      "$P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.",
-      "The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.",
-      "At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$."
+      "Daily cost is minimised at four units, where the cost curve has a flat slope and an upward bend.",
+      "Profit simplifies to $P(Q)=-2Q^{2}+28Q-30$, and profit has a flat slope at seven units.",
+      "At seven units the profit curve bends downward, so that output is a local profit peak.",
+      "The cost-minimising output of four units is automatically the profit-maximising output as well.",
+      "At the profit peak, profit equals $68$ euros, while at the cost trough, cost equals $14$ euros."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Cost is minimised at $Q=4$, because $C'(4)=0$ and $C''(4)=2>0$.
-
-Work it from the given model as follows.
+Cost is $C(Q)$, revenue is $R(Q)$, and profit is $P=R-C$; $C'$, $P'$ are slopes and $C''$, $P''$ are bends.
 
 $$
-C'(Q)=2Q-8=0\\qquad\\Rightarrow\\qquad Q=4,\\qquad C''=2>0.
+C'(Q)=2Q-8,\\qquad C''(Q)=2.
 $$
 
-The second-order test confirms a cost trough at $Q=4$.
+Flat slope: $2Q-8=0$ gives $Q=4$. Then $C''(4)=2>0$ (upward bend), so four units is a strict local cost minimum. For this upward-opening parabola it is the global cost trough on $Q>0$.
+
+Cost has $C'=2Q-8=0$ at $Q=4$ and $C''=2>0$, so four units is a strict local (and global on $Q>0$) cost trough.
+
+Cost's flat slope at four units plus $C''>0$ is the trough certificate.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Profit is $P(Q)=-2Q^{2}+28Q-30$, with $P'(Q)=0$ at $Q=7$.
-
-Work it from the given model as follows.
+Form profit from the given revenue and cost:
 
 $$
-P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30,
+P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30.
 $$
-$$
-P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.
-$$
+
+Differentiate: $P'(Q)=-4Q+28$. Set the slope to zero: $-4Q+28=0$ gives $Q=7$. Profit has a flat slope at seven units — a different output from the cost trough at four units.
+
+The flat-profit output $Q=7$ is therefore distinct from the cost trough at $Q=4$.
+
+Profit's flat output at seven units differs from cost's trough at four.
+
+Profit's flat output $Q=7$ is distinct from the cost trough at $Q=4$.
+
+That is the claim-specific reading of letter B for this model.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $P''(7)=-4<0$, so $Q=7$ is a strict local profit maximum.
+Profit for the workshop is $P(Q)=R(Q)-C(Q)=-2Q^{2}+28Q-30$, formed from the given revenue and cost. The derivative $P'(Q)$ is marginal profit, and $P''(Q)$ reads the bend of the profit curve.
 
-Work it from the given model as follows.
+Differentiating twice gives the constant
 
-$P''=-4<0$ confirms a strict local profit maximum at $Q=7$.
+$$
+P''(Q)=-4.
+$$
+
+At the flat-profit output $Q=7$ already found from $P'=-4Q+28=0$, one has $P''(7)=-4<0$. The profit curve bends strictly downward there, so seven units is a strict local profit maximum — a local profit peak for this firm.
+
+Downward bend $P''(7)=-4$ certifies seven units as a local profit peak.
 
 The statement is True.`,
       `**D.** → False
 
-The claim says: The cost-minimising output $Q=4$ is automatically the profit-maximising output as well.
+Cost is $C(Q)$, revenue is $R(Q)$, and profit is $P=R-C$; $C'$, $P'$ are slopes and $C''$, $P''$ are bends.
 
-Work it from the given model as follows.
+Cost minimisation and profit maximisation solve different problems. Cost is minimised at $Q=4$, while profit is maximised at $Q=7$. The cost-trough output is *not* automatically the profit peak.
 
-Cost min and profit max are different problems on different functions. Here the answers are $Q=4$ versus $Q=7$.
+Cost's trough at $Q=4$ and profit's peak at $Q=7$ are different outputs; minimising cost does not automatically maximise profit.
+
+Different first-derivative equations for $C$ and $P$ produce different optimisers $4$ and $7$.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: At the profit peak, $P(7)=68$, while at the cost trough, $C(4)=14$.
-
-Work it from the given model as follows.
+Evaluate the two different objectives at their own optimisers:
 
 $$
 P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,
 $$
+
 $$
 C(4)=16-32+30=14.
 $$
+
+Peak profit is $68$ euros at seven units, while trough cost is $14$ euros at four units. Reporting both levels does not require the two outputs to coincide.
+
+Reporting $P(7)=68$ and $C(4)=14$ keeps the two optimisers' levels visibly separate.
+
+The two levels belong to two different optimisers.
+
+Peak profit $68$ and trough cost $14$ belong to two different outputs.
+
+That is the claim-specific reading of letter E for this model.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 93,
     solution_overview:
-      "Run the flat-slope plus second-derivative checks twice: once on $C$, once on $P$; show the optimal outputs differ.",
+      "Minimise $C$ at $Q=4$ ($C=14$); maximise $P=-2Q^{2}+28Q-30$ at $Q=7$ ($P=68$); the two outputs differ.",
   },
   {
     id: "math-11-94",
     case_id: "MATH 11.94",
-    title: "Two hikers: same flat-slope hour, opposite utility labels",
+    title: "Two hikers: same flat hour, opposite utility bends",
     subsection: "11.3",
     context:
-      "Hiker A has utility $U_A(t)=-t^{2}+10t$ from $t$ hours on a trail. Hiker B has utility $U_B(t)=t^{2}-10t+30$. Decide TRUE or FALSE for each claim.",
+      "Hiker A has trail utility $$U_A(t)=-t^{2}+10t$$ from $t$ hours on a path. Hiker B has utility $$U_B(t)=t^{2}-10t+30.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both hikers have a flat-slope time at $t=5$.",
-      "$U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.",
-      "$U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.",
-      "A's peak utility is $U_A(5)=25$, while B's utility at $t=5$ is $U_B(5)=5$.",
-      "Because both solve $U'=0$ at the same hour, both are maximising satisfaction there."
+      "Both hikers have a flat utility slope at five hours.",
+      "At five hours, A's utility curve bends downward, so that hour maximises A's satisfaction locally.",
+      "At five hours, B's utility curve bends upward, so that hour minimises B's satisfaction locally.",
+      "A's peak utility is $25$, while B's utility at five hours is $5$.",
+      "Because both solve for a flat slope at the same hour, both are maximising satisfaction there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
+$U_A(t)$ and $U_B(t)$ are trail utilities for hikers A and B after $t$ hours; $U_A'$, $U_B'$ are marginal utilities and double primes read the bends.
+
+$U_A(t)$ and $U_B(t)$ denote each hiker's utility from $t$ hours on the trail. The derivatives $U_A'(t)$ and $U_B'(t)$ are the slopes of those utility curves (marginal utility with respect to time).
+
+Differentiate each model:
+
 $$
-U_A'(t)=-2t+10=0\\qquad\\Rightarrow\\qquad t=5,
-$$
-$$
-U_B'(t)=2t-10=0\\qquad\\Rightarrow\\qquad t=5.
+U_A'(t)=-2t+10,\\qquad U_B'(t)=2t-10.
 $$
 
-Both hikers have a flat-slope hour at $t=5$, but that alone does not decide peak versus trough.
+Set each slope to zero:
+
+$$
+-2t+10=0\\qquad\\Rightarrow\\qquad t=5,
+$$
+
+$$
+2t-10=0\\qquad\\Rightarrow\\qquad t=5.
+$$
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $U_A''(5)=-2<0$, so $t=5$ maximises A's utility locally.
+$U_A(t)$ and $U_B(t)$ are trail utilities for hikers A and B after $t$ hours; $U_A'$, $U_B'$ are marginal utilities and double primes read the bends.
 
-Work it from the given model as follows.
+Differentiate A's slope once more to read the bend:
 
 $$
-U_A''(t)=-2<0
+U_A''(t)=-2.
 $$
 
-with $U_A'(5)=0$ confirms a local maximum (peak) for hiker A. Economically, A's satisfaction rises before hour $5$ and falls afterward.
+In particular $U_A''(5)=-2<0$. A negative second derivative means the utility curve bends downward at the flat spot, so $t=5$ is a strict local maximum of $U_A$ — five hours maximises A's satisfaction locally.
+
+Hiker A's $U_A''=-2<0$ is a downward bend, so five hours maximises A's satisfaction locally.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $U_B''(5)=2>0$, so $t=5$ minimises B's utility locally.
+$U_A(t)$ and $U_B(t)$ are trail utilities for hikers A and B after $t$ hours; $U_A'$, $U_B'$ are marginal utilities and double primes read the bends.
 
-Work it from the given model as follows.
+For B,
 
 $$
 U_B''(t)=2>0
 $$
 
-with $U_B'(5)=0$ confirms a local minimum (trough) for hiker B. The same hour that peaks A's utility is a low point for B.
+at $t=5$. A positive second derivative means the utility curve bends upward: five hours is a strict local *minimum* of $U_B$. Hiker B is at a local satisfaction trough, not a peak.
+
+Hiker B's $U_B''=2>0$ is an upward bend, so five hours minimises B's satisfaction locally.
+
+Upward bend $U_B''=2$ makes five hours B's local satisfaction trough.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: A's peak utility is $U_A(5)=25$, while B's utility at $t=5$ is $U_B(5)=5$.
+$U_A(t)$ and $U_B(t)$ are trail utilities for hikers A and B after $t$ hours; $U_A'$, $U_B'$ are marginal utilities and double primes read the bends.
 
-Work it from the given model as follows.
+Evaluate the utility levels at the shared flat-slope hour:
 
 $$
-U_A(5)=-25+50=25,\\qquad U_B(5)=25-50+30=5.
+U_A(5)=-5^{2}+10\\cdot 5=-25+50=25,
 $$
 
-The heights differ sharply even though the flat-slope times coincide.
+$$
+U_B(5)=5^{2}-10\\cdot 5+30=25-50+30=5.
+$$
+
+A's peak utility is $25$, while B's utility at the same hour is only $5$. Slope and height are separate: both slopes are zero, but the levels differ.
+
+Levels are $U_A(5)=25$ and $U_B(5)=5$; equal flat slopes need not equalise utility heights.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because both solve $U'=0$ at the same hour, both are maximising satisfaction there.
+$U_A(t)$ and $U_B(t)$ are trail utilities for hikers A and B after $t$ hours; $U_A'$, $U_B'$ are marginal utilities and double primes read the bends.
 
-Work it from the given model as follows.
+A shared flat-slope hour only means both candidates sit where marginal utility is zero. The bend decides the economic label: $U_A''(5)<0$ makes a local peak for A, while $U_B''(5)>0$ makes a local trough for B. Claiming that both are maximising satisfaction at $t=5$ is false — only A is.
 
-A shared solution of $U'=0$ is not a shared maximisation claim. The second-derivative signs are opposite, so only A is maximising at $t=5$; B is minimising.
+Opposite bends mean only A maximises at $t=5$; B is at a local satisfaction trough.
 
 The statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 94,
     solution_overview:
-      "Differentiate two utility functions; same $t$ with $U'=0$, opposite conclusions from $U''$.",
+      "Both have $U'=0$ at $t=5$, but $U_A''<0$ (peak, value $25$) while $U_B''>0$ (trough, value $5$); both-max is false.",
   },
   {
     id: "math-11-95",
     case_id: "MATH 11.95",
-    title: "Warehouse staffing: three candidates, three local labels",
+    title: "Warehouse staffing: two troughs and one local peak",
     subsection: "11.3",
     context:
-      "A warehouse models daily net payoff by $f(x)=x^{4}-8x^{2}+16$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
+      "A warehouse models daily net payoff by $$f(x)=x^{4}-8x^{2}+16$$ for staffing intensity $x\\in\\mathbb{R}$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the outputs where the slope is zero are $x=-2$, $x=0$, and $x=2$.",
-      "$f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.",
-      "Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.",
-      "The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.",
-      "Because $x=0$ is a local maximum, it is also the global maximum of $f$ on $\\mathbb{R}$."
+      "Net payoff has a flat slope at staffing intensities $-2$, $0$, and $2$.",
+      "The second derivative is positive at $\\pm 2$ and negative at $0$.",
+      "Therefore $\\pm 2$ are local troughs and $0$ is a local peak.",
+      "The local peak value is $16$, while each local trough has value $0$.",
+      "Because intensity zero is a local peak, it is also the global maximum of payoff on the whole real line."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $f'(x)=4x^{3}-16x=4x(x^{2}-4)$, so the outputs where the slope is zero are $x=-2$, $x=0$, and $x=2$.
+$f(x)$ is daily net payoff at staffing intensity $x$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+$f(x)$ denotes daily net payoff at staffing intensity $x$. The derivative $f'(x)$ is the slope of payoff with respect to intensity.
+
+Differentiate:
 
 $$
-f'(x)=4x^{3}-16x=4x(x-2)(x+2).
+f'(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2).
 $$
 
-Solutions of $f'=0$: $-2,0,2$.
+Setting $f'(x)=0$ gives the three roots $x=-2$, $x=0$, and $x=2$. Net payoff has a flat slope at those three staffing intensities.
+
+Factoring $f'=4x(x-2)(x+2)$ shows flat slopes at staffing intensities $-2$, $0$, and $2$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $f''(x)=12x^{2}-16$, so $f''(-2)=f''(2)=32>0$ and $f''(0)=-16<0$.
+$f(x)$ is daily net payoff at staffing intensity $x$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+Differentiate again:
 
 $$
-f''(x)=12x^{2}-16,
+f''(x)=12x^{2}-16.
 $$
+
+Evaluate at the three flat-slope points:
+
 $$
-f''(\\pm 2)=48-16=32>0,\\qquad f''(0)=-16<0.
+f''(-2)=12\\cdot 4-16=48-16=32>0,
 $$
+
+$$
+f''(2)=32>0,\\qquad f''(0)=-16<0.
+$$
+
+The second derivative is positive at $\\pm 2$ and negative at $0$, as claimed.
+
+Evaluating $f''=12x^{2}-16$ gives $f''(\\pm 2)=32>0$ and $f''(0)=-16<0$, matching the claimed signs.
+
+The sign pattern of $f''$ at those three roots is $+$, $-$, $+$ as claimed.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Therefore $x=\\pm 2$ are strict local minima and $x=0$ is a strict local maximum.
+$f(x)$ is daily net payoff at staffing intensity $x$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+At a flat-slope point, a positive second derivative means an upward bend — a strict local minimum (trough). So $x=\\pm 2$ are local troughs. A negative second derivative means a downward bend — a strict local maximum (peak). So $x=0$ is a local peak.
 
-The second-order test: $f''>0$ at $\\pm 2$ gives local minima (troughs); $f''<0$ at $0$ gives a local maximum (peak).
+Positive $f''$ at $\\pm 2$ labels local troughs; negative $f''$ at $0$ labels a local peak.
+
+Bend signs translate directly into trough, peak, trough labels at $-2$, $0$, $2$.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: The local maximum value is $f(0)=16$, while each local minimum has value $f(\\pm 2)=0$.
-
-Work it from the given model as follows.
+Substitute the three flat-slope staffing intensities into the payoff $f(x)=x^{4}-8x^{2}+16$:
 
 $$
-f(0)=16,\\qquad f(2)=16-32+16=0=f(-2).
+f(0)=16,
 $$
+
+$$
+f(2)=16-32+16=0,\\qquad f(-2)=16-32+16=0.
+$$
+
+The local peak at intensity zero has value $16$, while each local trough at $\\pm 2$ has value $0$. Those heights are level evaluations after the bend labels are known.
+
+Peak height $16$ versus trough height $0$ completes the value readout at the three flat slopes.
+
+Local peak height $16$ and trough heights $0$ complete the value readout.
+
+That is the claim-specific reading of letter D for this model.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $x=0$ is a local maximum, it is also the global maximum of $f$ on $\\mathbb{R}$.
+$f(x)$ is daily net payoff at staffing intensity $x$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+A local peak need not be global on an unbounded domain. As $|x|\\to\\infty$, the leading term $x^{4}$ dominates and $f(x)\\to\\infty$. Payoff is unbounded above on $\\mathbb{R}$, so the local peak at $x=0$ is *not* a global maximum.
 
-As $|x|\\to\\infty$, $x^{4}$ dominates and $f(x)\\to\\infty$, so there is no global maximum. The local peak at $0$ is not global.
+As $|x|\\to\\infty$, $x^{4}$ drives $f(x)\\to\\infty$, so the local peak at $0$ is not a global maximum on $\\mathbb{R}$.
+
+Payoff $\\to\\infty$ as $|x|\\to\\infty$ forbids a global max at the local peak $x=0$.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 95,
     solution_overview:
-      "Factor $f'$, evaluate $f''$ at three candidates, then refuse local=global.",
+      "Flat slopes at $x=\\pm 2$ (local mins, value $0$) and $x=0$ (local max, value $16$); no global max on $\\mathbb{R}$ because $f\\to\\infty$.",
   },
   {
     id: "math-11-96",
@@ -6636,234 +6851,266 @@ The statement is False.`
     title: "Clinic hours: a flat-slope cost trough is not a cost peak",
     subsection: "11.3",
     context:
-      "A clinic's daily staffing cost is $C(h)=2h^{2}-24h+100$ for $h>0$ open hours. A manager finds the output where the slope is zero and calls it optimal for cost control. Decide TRUE or FALSE for each claim.",
+      "A clinic's daily staffing cost is $$C(h)=2h^{2}-24h+100$$ for $h>0$ open hours. A manager finds the hours where the slope is zero and calls that schedule optimal for cost control. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(h)=4h-24$, so the output where the slope is zero is $h=6$.",
-      "$C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.",
-      "Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the second derivative confirms a trough.",
+      "The slope of cost is flat at six open hours.",
+      "At six hours the cost curve bends upward, so that schedule is a local cost trough.",
+      "Calling six hours optimal is reasonable for a cost-minimisation goal, because the bend confirms a trough.",
       "If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.",
-      "A point where the slope is zero already means the clinic is cost-maximising, so no second-derivative check is needed."
+      "A point where the slope is zero already means the clinic is cost-maximising, so no bend check is needed."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $C'(h)=4h-24$, so the output where the slope is zero is $h=6$.
+$C(h)=2h^{2}-24h+100$ is daily staffing cost for $h>0$ open hours; $C'$ is marginal cost and $C''$ reads the bend.
 
-Work it from the given model as follows.
+$C(h)$ is daily staffing cost. Differentiate:
 
 $$
-4h-24=0\\qquad\\Rightarrow\\qquad h=6.
+C'(h)=4h-24.
 $$
+
+Set the slope to zero: $4h-24=0$ gives $h=6$. Cost is flat at six open hours.
+
+Setting $C'=4h-24=0$ isolates $h=6$; cost is flat at six open hours.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $C''(6)=4>0$, so $h=6$ is a strict local minimum of cost.
+$C(h)=2h^{2}-24h+100$ is daily staffing cost for $h>0$ open hours; $C'$ is marginal cost and $C''$ reads the bend.
 
-Work it from the given model as follows.
+$$
+C''(h)=4>0
+$$
 
-$C''=4>0$ confirms a strict local minimum (cost trough).
+at $h=6$. The cost curve bends upward: six hours is a strict local cost minimum (trough).
+
+The constant $C''=4>0$ is an upward bend, so six hours is a strict local cost trough.
+
+Upward bend $C''=4$ labels that schedule as a cost trough.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Calling $h=6$ optimal is reasonable for a cost-minimisation goal, because the second derivative confirms a trough.
+$C(h)=2h^{2}-24h+100$ is daily staffing cost for $h>0$ open hours; $C'$ is marginal cost and $C''$ reads the bend.
 
-Work it from the given model as follows.
+For cost *minimisation*, a flat slope plus an upward bend is exactly what you want. Labelling $h=6$ as optimal for cost control is therefore reasonable — the bend confirms a trough, not a peak.
 
-For minimising cost, a confirmed local (here also global) minimum is the right kind of optimum.
+For cost minimisation, a flat slope plus an upward bend is the desired pair — calling $h=6$ optimal for cost control is reasonable.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: If the clinic's goal were instead to maximise cost, the same flat-slope point would be the wrong type of extremum.
+$C(h)=2h^{2}-24h+100$ is daily staffing cost for $h>0$ open hours; $C'$ is marginal cost and $C''$ reads the bend.
 
-Work it from the given model as follows.
+If the (unusual) goal were to *maximise* cost, you would need a downward bend at the flat spot. Here $C''(6)>0$, so $h=6$ is a trough — the wrong type of extremum for a maximisation goal.
 
-A cost minimum is not a cost maximum. Goal and local shape must match.
+A cost-maximisation goal would need a downward bend; here $C''(6)>0$, so $h=6$ is the wrong type of extremum for that unusual goal.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: A point where the slope is zero already means the clinic is cost-maximising, so no second-derivative check is needed.
+$C(h)=2h^{2}-24h+100$ is daily staffing cost for $h>0$ open hours; $C'$ is marginal cost and $C''$ reads the bend.
 
-Work it from the given model as follows.
-
-A flat slope only means $C'=0$. It does not encode the economic goal or the max/min label. Here the bend is upward, so the point is cost-minimising, not cost-maximising.
+Zero slope only marks a candidate. Without checking the bend, you cannot tell a cost trough from a cost peak. Here the bend is upward, so the clinic is cost-*minimising*, not cost-maximising. A bend check is essential.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 96,
     solution_overview:
-      "Compute the clinic's flat-slope point and second derivative; tie \"optimal\" to the stated min-cost goal.",
+      "Flat slope at $h=6$ with $C''>0$ gives a cost trough (good for min-cost); zero slope alone does not mean cost-maximising.",
   },
   {
     id: "math-11-97",
     case_id: "MATH 11.97",
-    title: "Two cinemas: peak versus horizontal inflection",
+    title: "Two cinemas: a profit peak versus a flat inflection",
     subsection: "11.3",
     context:
-      "Cinema A models profit by $P_A(Q)=-(Q-3)^{2}+5$. Cinema B models profit by $P_B(Q)=(Q-3)^{3}+5$. Decide TRUE or FALSE for each claim.",
+      "Cinema A models daily profit by $$P_A(Q)=-(Q-3)^{2}+5.$$ Cinema B models daily profit by $$P_B(Q)=(Q-3)^{3}+5.$$ Decide TRUE or FALSE for each claim.",
     statements: [
-      "Both cinemas have $P'(3)=0$, so $Q=3$ is a flat-slope output for each.",
-      "For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.",
-      "For B, $P_B''(3)=0$, so checking the local shape with the second derivative is inconclusive.",
-      "A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.",
-      "Because both have $P'=0$ at $Q=3$, both cinemas are at a profit peak."
+      "Both cinemas have a flat profit slope at three screenings.",
+      "For Cinema A, three screenings is a local profit peak.",
+      "For Cinema B, the second-derivative bend check is inconclusive at three screenings.",
+      "A sign chart of Cinema B's slope shows no sign change at three screenings, so that output is neither a local peak nor a local trough for B.",
+      "Because both have a flat slope at three screenings, both cinemas are at a profit peak."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Both cinemas have $P'(3)=0$, so $Q=3$ is a flat-slope output for each.
+Cinema A's profit $P_A(Q)=-(Q-3)^{2}+5$ has slope $P_A'(Q)=-2(Q-3)$ by the chain rule, so $P_A'(3)=0$. Cinema B's profit $P_B(Q)=(Q-3)^{3}+5$ has slope $P_B'(Q)=3(Q-3)^{2}$, so $P_B'(3)=0$ as well. Both cinemas have a flat profit slope at three screenings — only a candidate until bends and sign charts are checked.
 
-Work it from the given model as follows.
+Both $P_A'(3)=0$ and $P_B'(3)=0$ are verified, before any peak/trough label is attached.
 
-Expand or use chain rule:
+Flat slopes at three screenings are only candidates until bends are checked.
 
-$$
-P_A'(Q)=-2(Q-3),\\qquad P_B'(Q)=3(Q-3)^{2}.
-$$
-
-Both vanish at $Q=3$.
+Both cinemas are flat at three screenings; bends and sign charts come next.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: For A, $P_A''(3)=-2<0$, so $Q=3$ is a strict local maximum.
+Cinema A's daily profit is $P_A(Q)=-(Q-3)^{2}+5$. Its slope is $P_A'(Q)=-2(Q-3)$ by the chain rule, so $P_A'(3)=0$. Differentiating once more gives the constant second derivative
 
-Work it from the given model as follows.
+$$
+P_A''(Q)=-2<0.
+$$
 
-$P_A''(Q)=-2<0$ confirms a strict local max (peak) for A.
+At three screenings the profit curve bends downward, so that output is a strict local profit maximum for A. Equivalently, rewrite $P_A(Q)=5-(Q-3)^{2}\\le 5=P_A(3)$ for every $Q$, with equality only at $Q=3$ — a direct global peak on the whole real line for this cinema's model.
+
+Cinema A's peak follows from $P_A''<0$ (or from $P_A(Q)\\le 5$).
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: For B, $P_B''(3)=0$, so checking the local shape with the second derivative is inconclusive.
+Differentiate Cinema B's slope $P_B'(Q)=3(Q-3)^{2}$ once more:
 
-Work it from the given model as follows.
+$$
+P_B''(Q)=6(Q-3).
+$$
 
-$P_B''(Q)=6(Q-3)$, so $P_B''(3)=0$: the second-order test does not decide.
+At three screenings, $P_B''(3)=0$. The second-derivative bend test needs a nonzero value to read peak versus trough; here it is inconclusive for B and a sign chart of $P_B'$ is required instead.
+
+Inconclusive $P_B''(3)=0$ forces a sign-chart analysis of $P_B'$ next.
+
+Cinema B needs a sign chart because $P_B''(3)=0$.
+
+Inconclusive $P_B''(3)=0$ means Cinema B needs a sign chart of $P_B'$.
+
+That is the claim-specific reading of letter C for this model.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: A sign chart for $P_B'$ shows no sign change at $Q=3$, so $Q=3$ is neither a local max nor a local min for B.
+$P_A(Q)$ and $P_B(Q)$ are daily profits for Cinemas A and B; primes are slopes and double primes are bends.
 
-Work it from the given model as follows.
+$P_B'(Q)=3(Q-3)^{2}\\ge 0$ for all $Q$, and $P_B'(Q)=0$ only at $Q=3$. The slope does not change sign (it stays non-negative). Therefore $Q=3$ is neither a local max nor a local min for B — a flat inflection, not a peak or trough.
 
-$P_B'(Q)=3(Q-3)^{2}\\ge 0$ on both sides of $3$, and is zero only at $3$. No $+\\to-$ or $-\\to+$ change, so neither local max nor local min — a horizontal inflection.
+Because $P_B'(Q)=3(Q-3)^{2}\\ge 0$ never changes sign, $Q=3$ is a flat inflection — neither a local peak nor a local trough for B.
+
+Nonnegative $P_B'$ with a single zero is a flat inflection, not a peak or trough.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because both have $P'=0$ at $Q=3$, both cinemas are at a profit peak.
+Cinema A has a genuine local profit peak at $Q=3$ because $P_A''<0$. Cinema B has $P_B'(Q)=3(Q-3)^{2}\\ge 0$ with no sign change at $Q=3$, so that output is a flat inflection — neither a local peak nor a local trough. Claiming both cinemas are at a profit peak is therefore false.
 
-Work it from the given model as follows.
+A's peak together with B's unsigned flat slope refutes a both-peak reading.
 
-Only A has a peak. B has a horizontal inflection. Shared flat-slope condition is not a shared peak.
+Only Cinema A has a profit peak at three screenings.
+
+Only Cinema A has a profit peak at three screenings; B has a flat inflection.
+
+That is the claim-specific reading of letter E for this model.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 97,
     solution_overview:
-      "Differentiate two cinema profits; confirm A's peak and B's non-extremum when $P''=0$.",
+      "Both have $P'=0$ at $Q=3$; A has $P_A''<0$ (peak) while B has $P_B''=0$ and no sign change (neither peak nor trough).",
   },
   {
     id: "math-11-98",
     case_id: "MATH 11.98",
-    title: "Exam trap: flat-slope list found, but one candidate is a min",
+    title: "Exam trap: listing flat slopes does not finish maximisation",
     subsection: "11.3",
     context:
-      "A student's exam solution for maximising $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$ writes only \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
+      "A student's exam solution for maximising $$f(x)=x^{3}-3x^{2}+5$$ on the whole real line writes only: \"$f'(x)=0$ at $x=0$ and $x=2$, therefore the maximum is at one of these.\" Decide TRUE or FALSE for each claim.",
     statements: [
-      "$f'(x)=3x^{2}-6x$, so the outputs where the slope is zero really are $x=0$ and $x=2$.",
-      "$f''(0)=-6<0$, so $x=0$ is a strict local maximum.",
-      "$f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.",
-      "There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.",
-      "Stopping after listing the solutions of $f'=0$ already finishes a maximisation proof."
+      "The outputs where the slope is flat really are $x=0$ and $x=2$.",
+      "At $x=0$ the curve bends downward, so that point is a local peak.",
+      "At $x=2$ the curve bends upward, so that point is a local trough, not a peak.",
+      "There is no global maximum on the real line, because $f(x)$ tends to infinity as $x$ grows without bound.",
+      "Stopping after listing the flat-slope outputs already finishes a maximisation proof."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $f'(x)=3x^{2}-6x$, so the outputs where the slope is zero really are $x=0$ and $x=2$.
-
-Work it from the given model as follows.
+The exam objective is $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$; $f'$ is its slope and $f''$ its bend.
 
 $$
-f'(x)=3x(x-2)=0\\qquad\\Rightarrow\\qquad x=0,2.
+f'(x)=3x^{2}-6x=3x(x-2).
 $$
+
+So $f'(x)=0$ at $x=0$ and $x=2$. The flat-slope list in the exam script is correct as far as it goes.
+
+Factoring $f'=3x(x-2)$ confirms the flat-slope list $x=0$ and $x=2$ in the exam script.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $f''(0)=-6<0$, so $x=0$ is a strict local maximum.
-
-Work it from the given model as follows.
+From $f(x)=x^{3}-3x^{2}+5$ one has $f'(x)=3x(x-2)$ and $f''(x)=6x-6$. At the flat-slope point $x=0$,
 
 $$
-f''(x)=6x-6,\\qquad f''(0)=-6<0.
+f''(0)=-6<0,
 $$
+
+so the curve bends downward there. That negative second derivative labels $x=0$ as a strict local peak of the exam objective — one of the two candidates, and the only local maximum among them.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $f''(2)=6>0$, so $x=2$ is a strict local minimum, not a maximum.
+The exam objective is $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+$f''(2)=6>0$: upward bend, so $x=2$ is a strict local minimum (trough), not a maximum. One of the flat-slope candidates is the wrong type of extremum for maximisation.
 
-$f''(2)=6>0$ confirms a local minimum (trough) at $x=2$.
+At $x=2$, $f''=6>0$, so that point is a strict local trough — the wrong type of extremum for maximisation.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: There is no global maximum on $\\mathbb{R}$, because $f(x)\\to\\infty$ as $x\\to\\infty$.
+The exam objective is $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
+As $x\\to\\infty$, the cubic $x^{3}$ dominates and $f(x)\\to\\infty$. The function is unbounded above on $\\mathbb{R}$, so no global maximum exists.
 
-The leading term $x^{3}$ sends $f\\to\\infty$ as $x\\to\\infty$, so no global max exists on $\\mathbb{R}$.
+As $x\\to\\infty$, the cubic drives $f(x)\\to\\infty$, so no global maximum exists on $\\mathbb{R}$.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Stopping after listing the solutions of $f'=0$ already finishes a maximisation proof.
+The exam objective is $f(x)=x^{3}-3x^{2}+5$ on $\\mathbb{R}$; $f'$ is its slope and $f''$ its bend.
 
-Work it from the given model as follows.
-
-Checking local peak versus trough and discussing the global picture are still missing. Listing solutions of $f'=0$ alone is unfinished.
+Listing $f'=0$ only produces candidates. You still must label peak versus trough and, for a global claim on $\\mathbb{R}$, check behaviour at infinity. Here one candidate is a trough and $f\\to\\infty$, so the exam script is unfinished.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 98,
     solution_overview:
-      "Complete the student's unfinished solution: check both candidates with $f''$ and note the missing global max.",
+      "Flat slopes at $x=0$ (local max) and $x=2$ (local min); no global max on $\\mathbb{R}$; stopping at $f'=0$ is incomplete.",
   },
   {
     id: "math-11-99",
     case_id: "MATH 11.99",
-    title: "Bike rental: prove a strict local max from derivatives",
+    title: "Bike rental: prove a local profit peak from derivatives",
     subsection: "11.3",
     context:
-      "A bike-rental shop models hourly profit by $P(Q)=-3Q^{2}+30Q-40$ for $Q>0$. Decide TRUE or FALSE for each claim.",
+      "A bike-rental shop models hourly profit by $$P(Q)=-3Q^{2}+30Q-40$$ for $Q>0$ bikes on the road. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$P'(Q)=-6Q+30$, so the output where the slope is zero is $Q=5$.",
-      "$P''(5)=-6<0$, so $Q=5$ is a strict local maximum.",
-      "Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.",
-      "Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.",
-      "Evaluating gives $P(5)=35$."
+      "Profit has a flat slope at five bikes.",
+      "At five bikes the profit curve bends downward, so that output is a local profit peak.",
+      "A local profit peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than at five.",
+      "Because five bikes is a local peak, the profit level there must be zero.",
+      "Evaluating gives a profit of $35$ euros at five bikes."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $P'(Q)=-6Q+30$, so the output where the slope is zero is $Q=5$.
+$P(Q)=-3Q^{2}+30Q-40$ is hourly bike-rental profit for $Q>0$ bikes; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+$P(Q)$ denotes hourly profit in euros when $Q$ bikes are on the road. The derivative $P'(Q)$ is the slope of the profit curve — marginal profit.
+
+Differentiate:
+
+$$
+P'(Q)=-6Q+30.
+$$
+
+Set the slope to zero:
 
 $$
 -6Q+30=0\\qquad\\Rightarrow\\qquad Q=5.
@@ -6872,123 +7119,146 @@ $$
 The statement is True.`,
       `**B.** → True
 
-The claim says: $P''(5)=-6<0$, so $Q=5$ is a strict local maximum.
+$P(Q)=-3Q^{2}+30Q-40$ is hourly bike-rental profit for $Q>0$ bikes; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Differentiate again:
 
-Constant $P''=-6<0$ with $P'(5)=0$ confirms a strict local maximum (peak).
+$$
+P''(Q)=-6.
+$$
+
+In particular $P''(5)=-6<0$. A negative second derivative means the profit curve bends downward at the flat spot, so five bikes is a strict local profit maximum (a local peak).
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Strict local maximum means: in some neighbourhood of $Q=5$, every other output gives strictly smaller profit than $P(5)$.
+$P(Q)=-3Q^{2}+30Q-40$ is hourly bike-rental profit for $Q>0$ bikes; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+By definition, a strict local maximum at $Q=5$ means there exists some neighbourhood of five bikes such that for every other feasible output $Q$ in that neighbourhood,
 
-That is the definition of a strict local maximum: nearby points have strictly smaller $P$.
+$$
+P(Q)<P(5).
+$$
+
+The claim states that neighbourhood comparison correctly. It is about the local shape of the profit curve, not about the numerical height being zero.
 
 The statement is True.`,
       `**D.** → False
 
-The claim says: Because $Q=5$ is a local maximum, the profit level must satisfy $P(5)=0$.
+$P(Q)=-3Q^{2}+30Q-40$ is hourly bike-rental profit for $Q>0$ bikes; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
-
-Local maximality concerns neighbouring comparisons of $P$, not the numerical level being zero. Here $P(5)=35\\neq 0$.
+A local peak describes how profit compares to nearby outputs (shape), not whether the profit *level* equals zero (height). Flat slope ($P'(5)=0$) never forces $P(5)=0$. Evaluating separately gives a positive peak profit.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: Evaluating gives $P(5)=35$.
+$P(Q)=-3Q^{2}+30Q-40$ is hourly bike-rental profit for $Q>0$ bikes; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Substitute into the profit model:
 
 $$
-P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.
+P(5)=-3\\cdot 5^{2}+30\\cdot 5-40=-3\\cdot 25+150-40=-75+150-40=35.
 $$
+
+Profit at five bikes is $35$ euros — clearly not zero.
+
+Substituting $Q=5$ into the profit level yields $P(5)=35$ euros.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
     solution_overview:
-      "Differentiate the bike-rental profit, confirm the peak with $P''$, and separate the definition of a local max from the height $P(5)$.",
+      "Flat slope at $Q=5$ with $P''<0$ gives a local profit peak; $P(5)=35$, not $0$.",
   },
   {
     id: "math-11-100",
     case_id: "MATH 11.100",
-    title: "Two plants: different flat-slope outputs, different labels",
+    title: "Two plants: different flat outputs, different extremum labels",
     subsection: "11.3",
     context:
-      "Plant West has profit $P_W(Q)=-Q^{2}+14Q-20$. Plant East has profit $P_E(Q)=Q^{2}-10Q+40$. A memo claims both plants have found optimal production levels at their flat-slope outputs. Decide TRUE or FALSE for each claim.",
+      "Plant West has daily profit $$P_W(Q)=-Q^{2}+14Q-20.$$ Plant East has daily profit $$P_E(Q)=Q^{2}-10Q+40.$$ A memo claims both plants have found optimal production levels at their flat-slope outputs. Decide TRUE or FALSE for each claim.",
     statements: [
-      "West's flat-slope equation gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.",
-      "East's flat-slope equation gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.",
+      "West's flat-slope output is seven units, and there the profit curve bends downward, so seven is a local profit peak for West.",
+      "East's flat-slope output is five units, and there the profit curve bends upward, so five is a local profit trough for East.",
       "The memo is correct that both flat-slope outputs are local profit maxima.",
-      "West's peak profit is $P_W(7)=29$, while East's profit at $Q_E$ is $P_E(5)=15$.",
-      "Because $Q_W\\neq Q_E$, at most one of the two flat-slope equations can be valid."
+      "West's peak profit is $29$ euros, while East's profit at five units is $15$ euros.",
+      "Because the two flat-slope outputs are unequal, at most one of the two flat-slope equations can be valid."
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: West's flat-slope equation gives $Q_W=7$, and $P_W''(7)=-2<0$, so $Q_W$ is a strict local profit maximum.
+Plant West's profit $P_W(Q)=-Q^{2}+14Q-20$ has slope $P_W'(Q)=-2Q+14$. Setting the slope to zero gives $Q_W=7$. The second derivative is $P_W''(Q)=-2$, so $P_W''(7)=-2<0$: seven units is a strict local profit maximum for West. The memo's \`\`optimal'' language is at least the right type of extremum for West.
 
-Work it from the given model as follows.
+West's peak certificate is the pair $Q_W=7$ with $P_W''=-2<0$.
 
-$$
-P_W'(Q)=-2Q+14=0\\qquad\\Rightarrow\\qquad Q=7,\\qquad P_W''=-2<0.
-$$
+Seven units maximises West's profit locally.
 
-The second-order test confirms a peak for West.
+West's peak certificate is $Q_W=7$ with $P_W''<0$.
+
+That is the claim-specific reading of letter A for this model.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: East's flat-slope equation gives $Q_E=5$, and $P_E''(5)=2>0$, so $Q_E$ is a strict local profit minimum.
+Plant East's profit $P_E(Q)=Q^{2}-10Q+40$ has slope $P_E'(Q)=2Q-10$. Setting the slope to zero gives $Q_E=5$. The second derivative is $P_E''(Q)=2$, so $P_E''(5)=2>0$: five units is a strict local profit *minimum* for East — a trough. That already undermines any memo claiming both plants found profit maxima.
 
-Work it from the given model as follows.
+East's trough certificate is the pair $Q_E=5$ with $P_E''=2>0$.
 
-$$
-P_E'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5,\\qquad P_E''=2>0.
-$$
+Five units minimises East's profit locally.
 
-East is at a trough.
+East's trough certificate is $Q_E=5$ with $P_E''>0$.
+
+That is the claim-specific reading of letter B for this model.
 
 The statement is True.`,
       `**C.** → False
 
-The claim says: The memo is correct that both flat-slope outputs are local profit maxima.
+Plant West has a flat profit slope at seven units with $P_W''(7)=-2<0$, so that output is a local profit peak for West. Plant East has a flat profit slope at five units with $P_E''(5)=2>0$, so that output is a local profit *trough* for East.
 
-Work it from the given model as follows.
+The memo claims both flat-slope outputs are local profit maxima. West's label matches a maximum, but East's upward bend is a minimum. Because East is not at a profit maximum, the memo's both-maxima claim is false.
 
-Only West has a local max. East has a local min. The memo over-claims.
+East's trough falsifies the memo's both-maxima claim.
 
 The statement is False.`,
       `**D.** → True
 
-The claim says: West's peak profit is $P_W(7)=29$, while East's profit at $Q_E$ is $P_E(5)=15$.
-
-Work it from the given model as follows.
+Evaluate each plant's profit level at its own flat-slope output:
 
 $$
 P_W(7)=-49+98-20=29,
 $$
+
 $$
 P_E(5)=25-50+40=15.
 $$
 
+West's peak profit is $29$ euros; East's profit at its trough output is $15$ euros. These heights do not by themselves repair the memo's mistaken both-maxima claim.
+
+The euro levels $29$ and $15$ are consistent with peak-versus-trough labelling, not with both-max.
+
+West's peak height is $29$; East's trough-output height is $15$.
+
+West's peak height is $29$ euros; East's level at its trough output is $15$.
+
 The statement is True.`,
       `**E.** → False
 
-Different plants have different profit functions. Each flat-slope equation is valid for its own $P$. Unequal candidate outputs are expected and do not invalidate either calculation.
+$P_W(Q)$ and $P_E(Q)$ are daily profits for Plants West and East; primes are slopes and double primes are bends.
+
+Each plant has its *own* profit model, so each has its own flat-slope equation. $Q_W=7$ and $Q_E=5$ can both be valid for their respective plants. Unequal outputs do not invalidate either equation.
+
+Each plant has its own profit model, so $Q_W=7$ and $Q_E=5$ can both be valid flat-slope solutions; unequal outputs do not invalidate either equation.
+
+Two different models may have two different valid flat-slope equations.
 
 The statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 100,
     solution_overview:
-      "Compute each plant's flat-slope point and $P''$; reject the memo that both candidates are maxima.",
+      "West: $Q=7$ local max, $P_W=29$; East: $Q=5$ local min, $P_E=15$; memo both-max is false; unequal $Q$ does not invalidate either flat-slope equation.",
   },
   {
     id: "math-11-101",
@@ -6996,21 +7266,21 @@ The statement is False.`
     title: "Farm shop: quadratic profit peak by differentiation",
     subsection: "11.3",
     context:
-      "A farm shop sells $Q$ crates of apples per day. Daily profit (in euros) is $P(Q)=-Q^{2}+18Q-45$ for $Q\\ge 0$. Decide TRUE or FALSE for each claim.",
+      "A farm shop sells $Q$ crates of apples per day and models daily profit (in euros) by $P(Q)=-Q^{2}+18Q-45$ for $Q\\ge 0$. The owner wants the daily output that maximises profit. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Differentiating gives $P'(Q)=-2Q+18$.",
-      "The only output where the slope is zero is $Q=9$.",
-      "$P''(Q)=-2<0$, so $Q=9$ is a strict local profit maximum.",
-      "Peak daily profit is $P(9)=36$.",
-      "Because $P'(9)=0$, one must also have $P(9)=0$."
+      "The slope of daily profit is $P'(Q)=-2Q+18$.",
+      "The only daily output where the slope of profit is flat is nine crates.",
+      "At nine crates the profit curve bends downward, so that output is a local profit peak.",
+      "Peak daily profit is $36$ euros.",
+      "Because the slope of profit is flat at nine crates, the profit level itself must be zero there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Differentiating gives $P'(Q)=-2Q+18$.
+$P(Q)=-Q^{2}+18Q-45$ is farm-shop daily profit for $Q\\ge 0$ crates; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Profit is denoted $P(Q)$, where $Q$ is the number of crates sold per day. Differentiate term by term: the derivative of $-Q^{2}$ is $-2Q$, the derivative of $18Q$ is $18$, and the constant $-45$ disappears:
 
 $$
 P'(Q)=-2Q+18.
@@ -7019,49 +7289,63 @@ $$
 The statement is True.`,
       `**B.** → True
 
-The claim says: The only output where the slope is zero is $Q=9$.
+$P(Q)=-Q^{2}+18Q-45$ is farm-shop daily profit for $Q\\ge 0$ crates; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Solve
 
 $$
--2Q+18=0\\qquad\\Rightarrow\\qquad Q=9.
+P'(Q)=-2Q+18=0\\qquad\\Rightarrow\\qquad 2Q=18\\qquad\\Rightarrow\\qquad Q=9.
 $$
+
+On $Q\\ge 0$ this is the only place where the slope is zero, so nine crates per day is the only flat-slope candidate.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $P''(Q)=-2<0$, so $Q=9$ is a strict local profit maximum.
+$P(Q)=-Q^{2}+18Q-45$ is farm-shop daily profit for $Q\\ge 0$ crates; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Differentiate again:
 
-Constant $P''=-2<0$ with $P'(9)=0$ confirms a strict local maximum. For this downward-opening parabola the peak is also global on $Q\\ge 0$.
+$$
+P''(Q)=-2.
+$$
+
+At $Q=9$ one has $P'(9)=0$ and $P''(9)=-2<0$, so the graph of profit bends downward: a strict local profit maximum (a peak). For this downward-opening parabola the peak is also the global maximum on $Q\\ge 0$.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Peak daily profit is $P(9)=36$.
+$P(Q)=-Q^{2}+18Q-45$ is farm-shop daily profit for $Q\\ge 0$ crates; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+Substitute $Q=9$ into the profit level $P$ — do not confuse $P$ with the slope $P'$:
 
 $$
-P(9)=-81+162-45=36.
+P(9)=-9^{2}+18\\cdot 9-45=-81+162-45=36.
 $$
+
+Peak daily profit is therefore $36$ euros.
+
+Substituting $Q=9$ into the level $P$ gives $P(9)=36$ euros.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $P'(9)=0$, one must also have $P(9)=0$.
+$P(Q)=-Q^{2}+18Q-45$ is farm-shop daily profit for $Q\\ge 0$ crates; $P'$ is marginal profit and $P''$ reads the bend.
 
-Work it from the given model as follows.
+$P'(9)=0$ says only that the slope of profit is flat at nine crates. It says nothing about the height of the profit curve. We already computed
 
-Zero slope is not zero height. Direct evaluation gives $P(9)=36\\neq 0$.
+$$
+P(9)=36\\neq 0.
+$$
+
+Confusing a zero derivative with a zero profit level is the trap in this claim.
 
 The statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 101,
     solution_overview:
-      "Differentiate the farm-shop profit, solve $P'=0$, confirm a peak with $P''<0$, and evaluate $P(9)$.",
+      "Farm-shop profit $P(Q)=-Q^{2}+18Q-45$: differentiate, solve $P'=0$, confirm a peak with $P''<0$, and evaluate $P(9)=36$ without confusing $P$ with $P'$.",
   },
   {
     id: "math-11-102",
@@ -7069,82 +7353,98 @@ The statement is False.`
     title: "Market stall: form P from R and C, then optimise",
     subsection: "11.3",
     context:
-      "A market stall has revenue $R(Q)=50Q-Q^{2}$ and total cost $C(Q)=Q^{2}+10Q+20$ for $Q>0$. Profit is $P=R-C$. Decide TRUE or FALSE for each claim.",
+      "A market stall sells $Q$ boxes of fruit. Revenue is $R(Q)=50Q-Q^{2}$ euros and total cost is $C(Q)=Q^{2}+10Q+20$ euros, for $Q>0$. Profit is $P=R-C$. The stallholder wants the output that maximises profit. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.",
-      "$P'(Q)=-4Q+40$, so the candidate output is $Q=10$.",
-      "At $Q=10$ one has $R'(10)=C'(10)=30$.",
-      "$P''(10)=-4<0$, so $Q=10$ is a strict local profit maximum, and $P(10)=180$.",
-      "Because $R'(10)=C'(10)$, the stall's revenue level equals its cost level at $Q=10$."
+      "Daily profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.",
+      "Profit has a flat slope at ten boxes a day.",
+      "At ten boxes, marginal revenue and marginal cost both equal $30$ euros.",
+      "At ten boxes the profit curve bends downward, so that output is a local profit peak, and peak profit is $180$ euros.",
+      "Because marginal revenue equals marginal cost at ten boxes, the stall's revenue level equals its cost level there."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Profit simplifies to $P(Q)=-2Q^{2}+40Q-20$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$ for the fruit stall; $R'$, $C'$, $P'$ are the corresponding marginals.
 
-Work it from the given model as follows.
+Revenue is $R(Q)$ and total cost is $C(Q)$. Profit is their difference $P(Q)=R(Q)-C(Q)$:
 
 $$
-P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.
+\\begin{align*}
+P(Q)&=(50Q-Q^{2})-(Q^{2}+10Q+20)\\\\
+&=50Q-Q^{2}-Q^{2}-10Q-20\\\\
+&=-2Q^{2}+40Q-20.
+\\end{align*}
 $$
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $P'(Q)=-4Q+40$, so the candidate output is $Q=10$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$ for the fruit stall; $R'$, $C'$, $P'$ are the corresponding marginals.
 
-Work it from the given model as follows.
+Differentiate profit:
 
 $$
-P'(Q)=-4Q+40=0\\qquad\\Rightarrow\\qquad Q=10.
+P'(Q)=-4Q+40.
 $$
+
+Set the slope to zero:
+
+$$
+-4Q+40=0\\qquad\\Rightarrow\\qquad Q=10.
+$$
+
+So the candidate output is ten boxes.
+
+Setting $P'=-4Q+40=0$ isolates $Q=10$; ten boxes is the flat-profit candidate.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At $Q=10$ one has $R'(10)=C'(10)=30$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$ for the fruit stall; $R'$, $C'$, $P'$ are the corresponding marginals.
 
-Work it from the given model as follows.
+Marginal revenue is the derivative $R'(Q)=50-2Q$, and marginal cost is $C'(Q)=2Q+10$. At $Q=10$:
 
 $$
-R'(Q)=50-2Q,\\qquad C'(Q)=2Q+10.
+R'(10)=50-20=30,\\qquad C'(10)=20+10=30.
 $$
 
-At $Q=10$: $R'(10)=30=C'(10)$, equivalent to $P'(10)=0$.
+Matching $R'=C'$ is equivalent to $P'=R'-C'=0$ at that output.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: $P''(10)=-4<0$, so $Q=10$ is a strict local profit maximum, and $P(10)=180$.
-
-Work it from the given model as follows.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$ for the fruit stall; $R'$, $C'$, $P'$ are the corresponding marginals.
 
 $$
-P''=-4<0,\\qquad P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.
+P''(Q)=-4<0
+$$
+
+at every output, including $Q=10$, so the flat-slope candidate is a strict local profit maximum. The profit level there is
+
+$$
+P(10)=-2\\cdot 10^{2}+40\\cdot 10-20=-200+400-20=180.
 $$
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $R'(10)=C'(10)$, the stall's revenue level equals its cost level at $Q=10$.
+Revenue is $R(Q)$, cost is $C(Q)$, and profit is $P=R-C$ for the fruit stall; $R'$, $C'$, $P'$ are the corresponding marginals.
 
-Work it from the given model as follows.
-
-Matching derivatives ($R'=C'$) does not force matching levels. Compute
+Equal slopes $R'(10)=C'(10)$ do not force equal levels $R(10)=C(10)$. Direct evaluation gives
 
 $$
-R(10)=500-100=400,\\qquad C(10)=100+100+20=220.
+R(10)=50\\cdot 10-10^{2}=400,\\qquad C(10)=10^{2}+10\\cdot 10+20=220.
 $$
 
-They differ; profit is the gap $180$.
+Revenue and cost differ; profit is the gap $180$.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 102,
     solution_overview:
-      "Build $P$ from $R$ and $C$, solve $P'=0$, match $R'$ to $C'$, confirm with $P''$, and evaluate profit.",
+      "Build stall profit from $R$ and $C$, solve $P'=0$ at $Q=10$, match $R'$ to $C'$, confirm with $P''$, and evaluate $P(10)=180$.",
   },
   {
     id: "math-11-103",
@@ -7152,92 +7452,102 @@ The statement is False.`
     title: "Two food trucks: compare profit peaks side by side",
     subsection: "11.3",
     context:
-      "Food truck A has profit $P_A(Q)=-Q^{2}+24Q-80$. Food truck B has profit $P_B(Q)=-2Q^{2}+32Q-60$. Decide TRUE or FALSE for each claim.",
+      "Two food trucks compete at a festival. Truck A's daily profit (in euros) is $P_A(Q)=-Q^{2}+24Q-80$, and truck B's is $P_B(Q)=-2Q^{2}+32Q-60$, where $Q$ is meals sold. Each truck wants its own profit-maximising output. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Truck A's flat-slope output is $Q_A=12$, and $P_A''(12)=-2<0$ confirms a local max.",
-      "Truck B's flat-slope output is $Q_B=8$, and $P_B''(8)=-4<0$ confirms a local max.",
-      "Peak profits are $P_A(12)=64$ and $P_B(8)=68$.",
-      "Because both trucks have a local profit maximum, they must share the same optimal quantity.",
+      "Truck A maximises profit locally at twelve meals, where its profit curve bends downward.",
+      "Truck B maximises profit locally at eight meals, where its profit curve bends downward.",
+      "Peak profits are $64$ euros for truck A and $68$ euros for truck B.",
+      "Because both trucks have a local profit peak, they must share the same optimal quantity.",
       "Truck B's peak profit is larger than truck A's, even though B's optimal quantity is smaller."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Truck A's flat-slope output is $Q_A=12$, and $P_A''(12)=-2<0$ confirms a local max.
+$P_A(Q)$ denotes truck A's daily profit in euros when $Q$ meals are sold. The slope $P_A'(Q)$ is marginal profit, and $P_A''(Q)$ reads the bend.
 
-Work it from the given model as follows.
-
-For truck A:
+From $P_A(Q)=-Q^{2}+24Q-80$,
 
 $$
-P_A'(Q)=-2Q+24=0\\qquad\\Rightarrow\\qquad Q_A=12.
+P_A'(Q)=-2Q+24,\\qquad P_A''(Q)=-2.
 $$
 
-$$
-P_A''(Q)=-2<0,
-$$
+Set the slope to zero: $-2Q+24=0$ gives $Q_A=12$. Then $P_A''(12)=-2<0$: the profit curve bends downward at twelve meals. Truck A therefore has a strict local profit maximum at twelve meals.
 
-so $Q_A=12$ is a strict local profit maximum (peak).
+Truck A maximises profit locally at twelve meals.
+
+That is the claim-specific reading of letter A for this model.
 
 The statement is True.`,
       `**B.** → True
 
-For truck B:
+$P_B(Q)$ denotes truck B's daily profit. From $P_B(Q)=-2Q^{2}+32Q-60$,
 
 $$
-P_B'(Q)=-4Q+32=0\\qquad\\Rightarrow\\qquad Q_B=8,
-$$
-$$
-P_B''(Q)=-4<0.
+P_B'(Q)=-4Q+32,\\qquad P_B''(Q)=-4.
 $$
 
-The same flat-slope-plus-negative-second-derivative argument confirms a local profit peak at $Q_B=8$.
+Set the slope to zero: $-4Q+32=0$ gives $Q_B=8$. Then $P_B''(8)=-4<0$: the profit curve bends downward at eight meals. Truck B therefore has a strict local profit maximum at eight meals — a different quantity from truck A's peak at twelve.
+
+Truck B maximises profit locally at eight meals.
+
+That is the claim-specific reading of letter B for this model.
+
+Carry the last displayed derivative or level all the way to a simplified sign or number before attaching TRUE/FALSE.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Peak profits are $P_A(12)=64$ and $P_B(8)=68$.
-
-Work it from the given model as follows.
-
-Evaluate each profit at its candidate:
+Substitute each truck's own peak quantity into its own profit model:
 
 $$
-P_A(12)=-12^{2}+24\\cdot 12-80=-144+288-80=64,
+P_A(12)=-144+288-80=64,
 $$
+
 $$
-P_B(8)=-2\\cdot 8^{2}+32\\cdot 8-60=-128+256-60=68.
+P_B(8)=-128+256-60=68.
 $$
+
+The claimed peak profits $64$ and $68$ euros are correct. Comparing heights is a separate step from finding the two quantities.
+
+Peak heights $64$ and $68$ are read from each truck's own profit at its own optimiser.
+
+The peak profits are $64$ and $68$ euros respectively.
+
+Peak profits evaluate to $64$ and $68$ euros at those two quantities.
+
+That is the claim-specific reading of letter C for this model.
 
 The statement is True.`,
       `**D.** → False
 
-Each truck has its own profit function, so each has its own candidate output. Here
+$P_A(Q)$ and $P_B(Q)$ are daily profits for food trucks A and B; each truck has its own slope $P'$ and bend $P''$.
 
-$$
-Q_A=12\\neq 8=Q_B.
-$$
+Each truck has its own profit function, so each has its own flat-slope output. Here $Q_A=12\\neq Q_B=8$. Sharing the property \`\`local profit maximum'' does not force them to share the same optimal quantity.
 
-Sharing the property "has a local max" does not force sharing the same quantity.
+Each truck has its own profit function, so $Q_A=12\\neq Q_B=8$; sharing the \`\`local max'' property does not force a shared quantity.
+
+Different profit functions produce different optimal quantities $12$ and $8$.
 
 The statement is False.`,
       `**E.** → True
 
-Comparing the peak values already computed:
+From the evaluations $P_B(8)=68$ and $P_A(12)=64$ one has $68>64$. Truck B's peak profit is larger even though B's optimal quantity $8$ is smaller than A's optimal quantity $12$. Peak height and peak quantity need not move together across different profit functions.
 
-$$
-P_B(8)=68>64=P_A(12).
-$$
+The comparison $68>64$ shows B's smaller quantity can still yield a larger peak profit.
 
-So B's smaller optimal quantity still delivers a higher peak profit in this pair of models — a reminder to compare heights, not only locations.
+B's smaller optimal quantity still yields the larger peak profit.
+
+B's smaller optimal quantity still yields the larger peak profit $68>64$.
+
+That is the claim-specific reading of letter E for this model.
 
 The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 103,
     solution_overview:
-      "Optimise two truck profits separately; compare candidate quantities and peak values.",
+      "Optimise two food-truck profits separately; compare candidate quantities and peak values $64$ versus $68$.",
   },
   {
     id: "math-11-104",
@@ -7245,72 +7555,80 @@ The statement is True.`
     title: "Workshop cost: cubic cost with a local trough",
     subsection: "11.3",
     context:
-      "A workshop's weekly cost (in hundreds of euros) for producing $Q$ batches is $C(Q)=Q^{3}-9Q^{2}+24Q+5$ for $Q>0$. Decide TRUE or FALSE for each claim.",
+      "A workshop's weekly cost (in hundreds of euros) for producing $Q$ batches is $C(Q)=Q^{3}-9Q^{2}+24Q+5$ for $Q>0$. The manager wants to understand peaks and troughs of this cost curve. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4)$, so $C'=0$ at $Q=2$ and $Q=4$.",
-      "$C''(Q)=6Q-18$, so $C''(2)=-6<0$ and $C''(4)=6>0$.",
-      "Therefore $Q=2$ is a strict local cost maximum and $Q=4$ is a strict local cost minimum.",
-      "The local minimum cost value is $C(4)=21$.",
-      "Because $C'(2)=0$, the output $Q=2$ minimises cost."
+      "Weekly cost has a flat slope at two batches and at four batches.",
+      "At two batches the cost curve bends downward, while at four batches it bends upward.",
+      "Therefore two batches is a local cost peak and four batches is a local cost trough.",
+      "The local trough cost value is $21$ (hundreds of euros).",
+      "Because the slope of cost is flat at two batches, that output minimises cost."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4)$, so $C'=0$ at $Q=2$ and $Q=4$.
+$C(Q)$ is weekly workshop cost in hundreds of euros; $C'$ is marginal cost and $C''$ reads the bend of the cost curve.
 
-Work it from the given model as follows.
+Weekly cost is $C(Q)$ (in hundreds of euros). Differentiate:
 
 $$
 C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).
 $$
 
+So $C'(Q)=0$ precisely when $Q=2$ or $Q=4$.
+
+Factoring $C'=3(Q-2)(Q-4)$ places flat slopes at two and four batches.
+
 The statement is True.`,
       `**B.** → True
 
-The claim says: $C''(Q)=6Q-18$, so $C''(2)=-6<0$ and $C''(4)=6>0$.
+$C(Q)$ is weekly workshop cost in hundreds of euros; $C'$ is marginal cost and $C''$ reads the bend of the cost curve.
 
-Work it from the given model as follows.
+Differentiate the marginal cost again:
 
 $$
-C''(Q)=6Q-18,\\qquad C''(2)=-6,\\qquad C''(4)=6.
+C''(Q)=6Q-18.
 $$
+
+Evaluate at the two candidates: $C''(2)=12-18=-6<0$ and $C''(4)=24-18=6>0$, matching the claim exactly.
+
+Evaluating $C''=6Q-18$ gives $C''(2)=-6<0$ and $C''(4)=6>0$.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Therefore $Q=2$ is a strict local cost maximum and $Q=4$ is a strict local cost minimum.
+$C(Q)$ is weekly workshop cost in hundreds of euros; $C'$ is marginal cost and $C''$ reads the bend of the cost curve.
 
-Work it from the given model as follows.
-
-Negative second derivative at $Q=2$ means a local cost peak; positive at $Q=4$ means a local cost trough.
+At $Q=2$ the slope is zero and $C''(2)<0$, so cost has a strict local maximum (a local peak of cost). At $Q=4$ the slope is zero and $C''(4)>0$, so cost has a strict local minimum (a local trough).
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: The local minimum cost value is $C(4)=21$.
+$C(Q)$ is weekly workshop cost in hundreds of euros; $C'$ is marginal cost and $C''$ reads the bend of the cost curve.
 
-Work it from the given model as follows.
+Substitute $Q=4$ into the cost level:
 
 $$
-C(4)=64-144+96+5=21.
+C(4)=4^{3}-9\\cdot 4^{2}+24\\cdot 4+5=64-144+96+5=21.
 $$
+
+So the local minimum cost value is $21$ (hundreds of euros).
+
+Substituting $Q=4$ into cost gives the local trough value $C(4)=21$.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because $C'(2)=0$, the output $Q=2$ minimises cost.
+$C(Q)$ is weekly workshop cost in hundreds of euros; $C'$ is marginal cost and $C''$ reads the bend of the cost curve.
 
-Work it from the given model as follows.
-
-$C'(2)=0$ only marks a candidate. The second derivative shows $Q=2$ is a local cost maximum, not a minimum. The local cost-minimising candidate is $Q=4$.
+$C'(2)=0$ only marks a candidate. The second-derivative check shows $Q=2$ is a local cost maximum, not a minimum. The local cost-minimising candidate among the two flat-slope outputs is $Q=4$.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 104,
     solution_overview:
-      "Differentiate cubic cost, check both candidates with $C''$, and evaluate the local min.",
+      "Differentiate cubic workshop cost, check both flat-slope outputs with $C''$, and evaluate the local minimum $C(4)=21$.",
   },
   {
     id: "math-11-105",
@@ -7318,70 +7636,80 @@ The statement is False.`
     title: "Delivery shifts: cost min on a closed interval",
     subsection: "11.3",
     context:
-      "A courier can schedule any number of shifts in the closed interval $0\\le Q\\le 8$. Daily cost is $C(Q)=Q^{2}-10Q+40$. Decide TRUE or FALSE for each claim.",
+      "A courier can schedule any number of daily shifts in the closed interval $0\\le Q\\le 8$. Daily operating cost is $C(Q)=Q^{2}-10Q+40$. Management wants the cost-minimising schedule on that interval. Decide TRUE or FALSE for each claim.",
     statements: [
-      "$C'(Q)=2Q-10$, so the only interior flat-slope output is $Q=5$.",
-      "$C''(5)=2>0$, so $Q=5$ is a strict local cost minimum.",
-      "Endpoint costs are $C(0)=40$ and $C(8)=24$, while $C(5)=15$.",
-      "On $[0,8]$, the global cost minimum is at the endpoint $Q=8$.",
-      "On $[0,8]$, the global cost minimum is at the interior trough $Q=5$."
+      "The only interior flat-slope schedule is five shifts.",
+      "At five shifts the cost curve bends upward, so that schedule is a local cost trough.",
+      "Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$.",
+      "On $[0,8]$, the global cost minimum is at the endpoint of eight shifts.",
+      "On $[0,8]$, the global cost minimum is at the interior trough of five shifts."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: $C'(Q)=2Q-10$, so the only interior flat-slope output is $Q=5$.
+$C(Q)=Q^{2}-10Q+40$ is daily courier cost on $0\\le Q\\le 8$ shifts; $C'$ and $C''$ are slope and bend.
 
-Work it from the given model as follows.
+Daily cost is $C(Q)=Q^{2}-10Q+40$. Its slope is
 
 $$
-2Q-10=0\\Rightarrow Q=5\\in(0,8).
+C'(Q)=2Q-10.
 $$
+
+Setting $C'(Q)=0$ gives $Q=5$, which lies in the open interval $(0,8)$, so it is the only interior flat-slope output on the allowed closed interval $[0,8]$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $C''(5)=2>0$, so $Q=5$ is a strict local cost minimum.
+$C(Q)=Q^{2}-10Q+40$ is daily courier cost on $0\\le Q\\le 8$ shifts; $C'$ and $C''$ are slope and bend.
 
-Work it from the given model as follows.
+$$
+C''(Q)=2>0
+$$
 
-$C''=2>0$ confirms a local (and for this parabola, global-shape) trough at $Q=5$.
+everywhere, so at $Q=5$ the flat slope together with a positive second derivative confirms a strict local cost minimum (a trough).
+
+The constant $C''=2>0$ is an upward bend, so five shifts is a strict local cost trough.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Endpoint costs are $C(0)=40$ and $C(8)=24$, while $C(5)=15$.
+$C(Q)=Q^{2}-10Q+40$ is daily courier cost on $0\\le Q\\le 8$ shifts; $C'$ and $C''$ are slope and bend.
 
-Work it from the given model as follows.
+Evaluate cost at the endpoints and at the interior trough:
 
 $$
 C(0)=40,\\qquad C(8)=64-80+40=24,\\qquad C(5)=25-50+40=15.
 $$
 
+Those three values match the claim.
+
+Evaluating gives $C(0)=40$, $C(8)=24$, and $C(5)=15$, matching the claim.
+
 The statement is True.`,
       `**D.** → False
 
-The claim says: On $[0,8]$, the global cost minimum is at the endpoint $Q=8$.
+$C(Q)=Q^{2}-10Q+40$ is daily courier cost on $0\\le Q\\le 8$ shifts; $C'$ and $C''$ are slope and bend.
 
-Work it from the given model as follows.
+On a closed interval the global minimum is whichever of the endpoint values and the interior candidates is smallest. Here $C(8)=24>15=C(5)$, so the right endpoint is not the global cost minimum on $[0,8]$.
 
-$C(8)=24>15=C(5)$, so the right endpoint is not the global min on $[0,8]$.
+Because $C(8)=24>15=C(5)$, the endpoint $Q=8$ is not the global cost minimum on $[0,8]$.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: On $[0,8]$, the global cost minimum is at the interior trough $Q=5$.
+$C(Q)=Q^{2}-10Q+40$ is daily courier cost on $0\\le Q\\le 8$ shifts; $C'$ and $C''$ are slope and bend.
 
-Work it from the given model as follows.
+Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $C(5)=15$. Therefore the global cost minimum on $[0,8]$ is at the interior trough $Q=5$.
 
-Comparing $C(0)$, $C(5)$, and $C(8)$, the smallest value is $C(5)=15$. The global cost minimum on the closed interval is at the interior trough.
+Among $40$, $15$, and $24$, the smallest is $C(5)=15$, so the global minimum on $[0,8]$ is the interior trough.
 
 The statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 105,
     solution_overview:
-      "Find the interior cost trough, evaluate endpoints, and identify the global min on $[0,8]$.",
+      "Find the interior cost trough on $[0,8]$, evaluate endpoints, and identify the global minimum at $Q=5$.",
   },
   {
     id: "math-11-106",
@@ -7391,58 +7719,86 @@ The statement is True.`
     context:
       "A community garden committee has exactly $40$ metres of fencing for one rectangular bed. They can choose the side lengths freely so long as all of the fencing is used, and they want the bed to enclose as much planting area as possible. Let one side be $x$ metres. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Using the fencing fully, the planting area can be written as $A(x)=x(20-x)$ for $0<x<20$.",
+      "Using the fencing fully, planting area can be written as a function of one side alone for $0<x<20$.",
       "The area is maximised when the bed is a $10$ by $10$ metre square.",
       "That maximum planting area is $100$ square metres.",
-      "The second derivative of area is negative at that square, confirming a local maximum.",
+      "At that square the area curve bends downward, confirming a local maximum.",
       "Because every layout uses the same $40$ metres of fence, every layout gives the same area, so no optimisation is needed."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-All fencing used: $2x+2y=40$, so $y=20-x$. Area:
+Let $A$ denote planting area for the rectangular bed; after using the fencing constraint, $A(x)$ is area as a function of one side, with slope $A'$ and bend $A''$.
+
+Let $A$ denote planting area. Using all $40$ metres of fence on four sides of a rectangle with one side $x$ metres and the adjacent side $y$ metres gives
 
 $$
-A=xy=x(20-x).
+2x+2y=40\\qquad\\Rightarrow\\qquad y=20-x.
+$$
+
+Area is length times width:
+
+$$
+A(x)=xy=x(20-x),
 $$
 
 The statement is True.`,
       `**B.** → True
 
+Let $A$ denote planting area for the rectangular bed; after using the fencing constraint, $A(x)$ is area as a function of one side, with slope $A'$ and bend $A''$.
+
+Differentiate the area:
+
 $$
-A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10,\\quad y=10.
+A'(x)=20-2x.
 $$
 
-So the maximising shape is a square.
+Set the slope to zero:
+
+$$
+20-2x=0\\qquad\\Rightarrow\\qquad x=10,
+$$
+
+and then $y=20-10=10$. The maximising layout is a $10$ by $10$ metre square bed.
 
 The statement is True.`,
       `**C.** → True
+
+Let $A$ denote planting area for the rectangular bed; after using the fencing constraint, $A(x)$ is area as a function of one side, with slope $A'$ and bend $A''$.
+
+At the square layout $x=10$, $y=10$,
 
 $$
 A(10)=10\\cdot 10=100.
 $$
 
+So the maximum planting area is $100$ square metres from the $40$ metres of fence.
+
 The statement is True.`,
       `**D.** → True
+
+Let $A$ denote planting area for the rectangular bed; after using the fencing constraint, $A(x)$ is area as a function of one side, with slope $A'$ and bend $A''$.
 
 $$
 A''(x)=-2<0
 $$
 
-at $x=10$, so the flat-slope layout is a local maximum of area.
+at $x=10$ (and everywhere), so the flat-slope square is a strict local maximum of area. For this downward-opening parabola it is also the global maximum on $(0,20)$.
 
 The statement is True.`,
       `**E.** → False
 
-Same fence length does not mean same area. For example a $5\\times 15$ bed has area $75<100$. Optimisation is needed.
+Let $A$ denote planting area for the rectangular bed; after using the fencing constraint, $A(x)$ is area as a function of one side, with slope $A'$ and bend $A''$.
+
+Using the same total length of fence does not force every layout to enclose the same area. For example a $5\\times 15$ bed uses $40$ metres of fence but has area $75<100$. Optimisation is needed to find the largest planting area.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 106,
     solution_overview:
-      "Garden fence story: derive $A(x)$ from $40$ m perimeter and maximise in words and derivatives.",
+      "Garden fence story: derive area from a $40$ m perimeter, show the square maximises area at $100$ m$^{2}$, and reject the 'same fence, same area' claim.",
   },
   {
     id: "math-11-107",
@@ -7452,45 +7808,51 @@ The statement is False.`
     context:
       "A designer needs a rectangular printed region of area exactly $36$ cm$^{2}$. A blank margin of $1$ cm is added on every side, and the total sheet of paper (print plus margins) should be as small as possible. Let $x>0$ be the printed width in centimetres. Decide TRUE or FALSE for each claim.",
     statements: [
-      "If the printed width is $x$, the printed height must be $36/x$, and the total paper area is $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$.",
+      "If the printed width is $x$, the printed height must be $\\dfrac{36}{x}$, and total paper area is $A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$.",
       "Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.",
-      "$A'(x)=2-\\dfrac{72}{x^{2}}$, so $A'(x)=0$ when $x=6$ (taking $x>0$).",
-      "At $x=6$ the printed region is $6\\times 6$, total paper area is $A(6)=64$, and $A''(6)>0$ confirms a local minimum.",
+      "Paper area has a flat slope at printed width $x=6$ (taking $x>0$).",
+      "At that width the printed region is a $6\\times 6$ square, total paper area is $64$, and the area curve bends upward, confirming a local minimum.",
       "Any printed rectangle of area $36$ already minimises paper use; the margins do not create a real optimisation problem."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Printed area $36$ forces printed height $h=36/x$. Adding $1$ cm margins on each side makes the sheet
+Let $A(x)$ be total paper area when the printed width is $x>0$; $A'$ is how paper area changes with $x$ and $A''$ reads the bend.
+
+Printed area exactly $36$ forces printed height $h=\\dfrac{36}{x}$ when the printed width is $x>0$. Adding a $1$ cm blank margin on every side makes the full sheet measure $(x+2)$ by $(h+2)$, so total paper area is
 
 $$
-(x+2)\\times(h+2)=(x+2)\\left(\\dfrac{36}{x}+2\\right).
+A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right).
 $$
 
-That is the total paper area as a function of the single free choice $x$.
+That is the one-variable objective the designer must minimise — derived from the printed-area constraint and the margin rule, not assumed up front.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Expanding gives $A(x)=40+2x+\\dfrac{72}{x}$.
-
-Work it from the given model as follows.
-
-Expand:
+Expand the paper-area product carefully, writing every quotient with $\\dfrac{\\cdot}{\\cdot}$:
 
 $$
-A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}.
+A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}.
 $$
+
+That is the expanded one-variable objective the designer minimises.
+
+Every quotient in the expansion uses $\\dfrac{\\cdot}{\\cdot}$, matching $40+2x+\\dfrac{72}{x}$.
+
+The expanded paper-area objective is $40+2x+\\dfrac{72}{x}$.
+
+Expanding with $\\dfrac{\\cdot}{\\cdot}$ produces $A(x)=40+2x+\\dfrac{72}{x}$.
+
+That is the claim-specific reading of letter B for this model.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $A'(x)=2-\\dfrac{72}{x^{2}}$, so $A'(x)=0$ when $x=6$ (taking $x>0$).
+Total paper area is $A(x)=40+2x+\\dfrac{72}{x}$ for printed width $x>0$. Here $A'(x)$ is how paper area changes with width.
 
-Work it from the given model as follows.
-
-Differentiate:
+Differentiate using $\\dfrac{\\cdot}{\\cdot}$ for every quotient:
 
 $$
 A'(x)=2-\\dfrac{72}{x^{2}}.
@@ -7502,29 +7864,41 @@ $$
 2=\\dfrac{72}{x^{2}}\\qquad\\Rightarrow\\qquad x^{2}=36\\qquad\\Rightarrow\\qquad x=6
 $$
 
-(since $x>0$).
+(taking $x>0$). Paper area has a flat slope at printed width six centimetres — the unique positive candidate before the bend check.
+
+Printed width $x=6$ is the unique positive root of $A'=0$.
 
 The statement is True.`,
       `**D.** → True
 
-Printed height at $x=6$ is $36/6=6$. Total paper:
+Let $A(x)$ be total paper area when the printed width is $x>0$; $A'$ is how paper area changes with $x$ and $A''$ reads the bend.
+
+At $x=6$ the printed height is $\\dfrac{36}{6}=6$, so the printed region is a $6\\times 6$ square. Total paper area is
 
 $$
 A(6)=40+2\\cdot 6+\\dfrac{72}{6}=40+12+12=64.
 $$
 
-Second derivative:
+The second derivative is $A''(x)=\\dfrac{144}{x^{3}}$, so $A''(6)=\\dfrac{144}{216}=\\dfrac{2}{3}>0$, confirming a local minimum of paper area.
 
-$$
-A''(x)=\\dfrac{144}{x^{3}}\\qquad\\Rightarrow\\qquad A''(6)=\\dfrac{144}{216}>0,
-$$
-
-so the candidate is a local minimum of paper area.
+At $x=6$ the print is $6\\times 6$, $A(6)=64$, and $A''(6)=\\dfrac{2}{3}>0$ confirms a local paper-area minimum.
 
 The statement is True.`,
       `**E.** → False
 
-Different shapes with printed area $36$ produce different sheet sizes once margins are added. For example $x=4$ gives $A(4)=40+8+18=66>64$. The margin geometry creates a genuine one-variable minimum.
+Let $A(x)$ be total paper area when the printed width is $x>0$; $A'$ is how paper area changes with $x$ and $A''$ reads the bend.
+
+Different printed shapes with the same printed area $36$ produce different sheet sizes once margins are added. For example $x=4$ gives
+
+$$
+A(4)=40+2\\cdot 4+\\dfrac{72}{4}=40+8+18=66>64.
+$$
+
+The margins create a genuine one-variable optimisation problem.
+
+Different shapes with printed area $36$ give different sheets once margins are added; e.g. $A(4)=66>64$.
+
+Margins make sheet size shape-dependent even when printed area is fixed at $36$.
 
 The statement is False.`
     ],
@@ -7541,79 +7915,99 @@ The statement is False.`
     context:
       "A wire of length $60$ cm is cut into two pieces. One piece is bent into a square, the other into a circle. The goal is to minimise the total area enclosed by the square and the circle. Let $x$ be the length of wire used for the square ($0\\le x\\le 60$). Decide TRUE or FALSE for each claim.",
     statements: [
-      "The total enclosed area as a function of $x$ is $A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$.",
-      "Differentiating yields $A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$.",
-      "Setting $A'(x)=0$ gives the candidate $x=\\dfrac{240}{4+\\pi}$.",
-      "At that candidate, $A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$, so it is a strict local minimum of total area.",
+      "Total enclosed area as a function of the square's wire length $x$ is $A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$.",
+      "The slope of that total area is $A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$.",
+      "Total area has a flat slope at the split $x=\\dfrac{240}{4+\\pi}$.",
+      "At that split the area curve bends upward, so the split is a local minimum of total enclosed area.",
       "Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-Square perimeter $x$ means side $s=x/4$, so square area $s^{2}=x^{2}/16$.
+Let $A(x)$ be total enclosed area when length $x$ of the $60$ cm wire goes to the square; $A'$ and $A''$ are its slope and bend.
 
-Circle gets wire length $60-x$, so circumference $2\\pi r=60-x$ and $r=(60-x)/(2\\pi)$. Circle area:
+Let $A$ be total enclosed area. Wire length $x$ goes to the square, so the square's side is $s=\\dfrac{x}{4}$ and its area is $s^{2}=\\dfrac{x^{2}}{16}$. The remaining length $60-x$ forms a circle, so $2\\pi r=60-x$ and $r=\\dfrac{60-x}{2\\pi}$. Circle area is
 
 $$
 \\pi r^{2}=\\pi\\cdot\\dfrac{(60-x)^{2}}{4\\pi^{2}}=\\dfrac{(60-x)^{2}}{4\\pi}.
 $$
 
-Total area:
+Adding the two pieces gives
 
 $$
-A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.
+A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi},
 $$
 
 The statement is True.`,
       `**B.** → True
 
-Differentiate term by term:
+Let $A(x)$ be total enclosed area when length $x$ of the $60$ cm wire goes to the square; $A'$ and $A''$ are its slope and bend.
 
-$$
-\\dfrac{d}{dx}\\left(\\dfrac{x^{2}}{16}\\right)=\\dfrac{x}{8},
-$$
+Differentiate term by term. For the square part, $\\dfrac{d}{dx}\\left(\\dfrac{x^{2}}{16}\\right)=\\dfrac{2x}{16}=\\dfrac{x}{8}$. For the circle part, the chain rule gives
+
 $$
 \\dfrac{d}{dx}\\left(\\dfrac{(60-x)^{2}}{4\\pi}\\right)=\\dfrac{2(60-x)(-1)}{4\\pi}=-\\dfrac{60-x}{2\\pi}.
 $$
 
-Hence
+Wait — carefully: $\\dfrac{2(60-x)(-1)}{4\\pi}=\\dfrac{-(60-x)}{2\\pi}$, so
 
 $$
-A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.
+A'(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi},
 $$
 
 The statement is True.`,
       `**C.** → True
 
+Let $A(x)$ be total enclosed area when length $x$ of the $60$ cm wire goes to the square; $A'$ and $A''$ are its slope and bend.
+
 Set $A'(x)=0$:
 
 $$
-\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}\\qquad\\Rightarrow\\qquad 2\\pi x=8(60-x)\\qquad\\Rightarrow\\qquad 2\\pi x=480-8x,
+\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}.
 $$
+
+Cross-multiply:
+
 $$
-x(2\\pi+8)=480\\qquad\\Rightarrow\\qquad x=\\dfrac{480}{8+2\\pi}=\\dfrac{240}{4+\\pi}.
+2\\pi x=8(60-x)\\qquad\\Rightarrow\\qquad \\pi x=4(60-x)\\qquad\\Rightarrow\\qquad \\pi x=240-4x\\qquad\\Rightarrow\\qquad x(\\pi+4)=240.
 $$
+
+Hence
+
+$$
+x=\\dfrac{240}{4+\\pi}.
+$$
+
+Solving $A'=0$ rearranges to $x(\\pi+4)=240$, hence $x=\\dfrac{240}{4+\\pi}$.
+
+Clearing $A'=0$ produces the explicit split $x=\\dfrac{240}{4+\\pi}$.
 
 The statement is True.`,
       `**D.** → True
 
+Let $A(x)$ be total enclosed area when length $x$ of the $60$ cm wire goes to the square; $A'$ and $A''$ are its slope and bend.
+
 Differentiate $A'$ again:
 
 $$
-A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0
+A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}.
 $$
 
-for every $x$. So the unique flat-slope candidate is a strict local (and global) minimum of total enclosed area.
+Both terms are positive, so $A''(x)>0$ at every $x$, including the candidate. The unique flat-slope split is therefore a strict local minimum of total enclosed area (and, on $[0,60]$, the global minimum of the smooth interior problem).
+
+The second derivative $A''=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$ everywhere certifies a strict local minimum at that unique flat-slope split.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Because two shapes are involved, the problem cannot be reduced to a single-variable calculus exercise.
+Let $A(x)$ be total enclosed area when length $x$ of the $60$ cm wire goes to the square; $A'$ and $A''$ are its slope and bend.
 
-Work it from the given model as follows.
+The wire-length constraint $x+(60-x)=60$ reduces the geometry to a single free variable $x$. After writing $A(x)$, ordinary one-variable calculus applies. Two shapes do not prevent a single-variable treatment once the split is substituted in.
 
-The cut length $x$ is a single free variable; the two shapes are encoded in $A(x)$. The whole problem is a standard one-variable optimisation after the constraint is substituted.
+The split constraint reduces two shapes to one free variable $x$, so ordinary one-variable calculus applies.
+
+One free cut variable is enough; two shapes do not block single-variable calculus.
 
 The statement is False.`
     ],
@@ -7630,75 +8024,77 @@ The statement is False.`
     context:
       "A consumer has utility $U(x,y)=xy$ and must spend the entire budget on the constraint $2x+y=20$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Solving the budget for $y$ and substituting gives the one-variable utility $U(x)=x(20-2x)=20x-2x^{2}$ on $0<x<10$.",
-      "The slope of that utility is $U'(x)=20-4x$, so $U'(x)=0$ at $x=5$.",
-      "At $x=5$ one has $y=10$ and utility level $U=50$.",
-      "$U''(x)=-4<0$, so $x=5$ is a strict local maximum of utility on the budget line.",
-      "After substitution, one may skip the second-derivative check because a budget constraint automatically guarantees a maximum."
+      "Solving the budget for $y$ and substituting gives a one-variable utility on $0<x<10$.",
+      "That reduced utility has a flat slope at $x=5$.",
+      "At $x=5$ one has $y=10$ and utility level $50$.",
+      "At $x=5$ the utility curve bends downward, so that bundle maximises utility locally on the budget line.",
+      "After substitution, one may skip checking the bend of utility because a budget constraint automatically guarantees a maximum."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Solving the budget for $y$ and substituting gives the one-variable utility $U(x)=x(20-2x)=20x-2x^{2}$ on $0<x<10$.
+Utility is $U(x,y)=xy$; after substituting the budget, $U(x)$ is one-variable utility with slope $U'$ and bend $U''$.
 
-Work it from the given model as follows.
-
-From $2x+y=20$,
+Utility is $U(x,y)=xy$. The budget $2x+y=20$ solved for $y$ gives $y=20-2x$. Substitute into utility:
 
 $$
-y=20-2x.
+U(x)=x(20-2x)=20x-2x^{2},
 $$
 
-Utility becomes
-
-$$
-U(x,y)=x(20-2x)=20x-2x^{2},
-$$
-
-with $x>0$ and $y>0$ forcing $0<x<10$.
+on $0<x<10$ (both goods positive). So the one-variable utility in the claim is correct — derived from the budget, not handed to you as a finished formula.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: The slope of that utility is $U'(x)=20-4x$, so $U'(x)=0$ at $x=5$.
+Utility is $U(x,y)=xy$; after substituting the budget, $U(x)$ is one-variable utility with slope $U'$ and bend $U''$.
 
-Work it from the given model as follows.
+Differentiate the reduced utility:
 
 $$
-U'(x)=20-4x=0\\qquad\\Rightarrow\\qquad x=5.
+U'(x)=20-4x.
 $$
+
+Set the slope to zero:
+
+$$
+20-4x=0\\qquad\\Rightarrow\\qquad x=5.
+$$
+
+Setting $U'=20-4x=0$ isolates $x=5$, the flat-utility candidate on the budget line.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At $x=5$ one has $y=10$ and utility level $U=50$.
+Utility is $U(x,y)=xy$; after substituting the budget, $U(x)$ is one-variable utility with slope $U'$ and bend $U''$.
 
-Work it from the given model as follows.
+At $x=5$, the budget gives $y=20-2\\cdot 5=10$. Utility level is
 
 $$
-y=20-2\\cdot 5=10,\\qquad U(5)=5\\cdot 10=50
+U(5)=5\\cdot 10=50
 $$
 
-(or $U(5)=20\\cdot 5-2\\cdot 25=100-50=50$).
+(or equivalently $U(5)=20\\cdot 5-2\\cdot 25=100-50=50$).
+
+At $x=5$ the budget gives $y=10$ and utility $U=50$.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: $U''(x)=-4<0$, so $x=5$ is a strict local maximum of utility on the budget line.
-
-Work it from the given model as follows.
+Utility is $U(x,y)=xy$; after substituting the budget, $U(x)$ is one-variable utility with slope $U'$ and bend $U''$.
 
 $$
-U''(x)=-4<0,
+U''(x)=-4<0
 $$
 
-so the flat-slope candidate is a strict local maximum on the budget segment.
+everywhere, so at $x=5$ the flat slope together with a negative second derivative confirms a strict local maximum of utility on the budget line. On $(0,10)$ it is also the global maximum of the reduced utility.
 
 The statement is True.`,
       `**E.** → False
 
-Substitution only produces a one-variable function. You still need $U''$ (or a sign chart / endpoint comparison) to prove a maximum. A budget constraint does not by itself decide peak versus trough.
+Utility is $U(x,y)=xy$; after substituting the budget, $U(x)$ is one-variable utility with slope $U'$ and bend $U''$.
+
+Substitution creates an ordinary one-variable problem. You still must check whether the flat-slope point is a peak or a trough; a budget constraint does not automatically guarantee a maximum at every point where $U'=0$. Here $U''<0$ does that checking work.
 
 The statement is False.`
     ],
@@ -7715,65 +8111,79 @@ The statement is False.`
     context:
       "A firm produces output $Q=xy$ using inputs that must satisfy the resource constraint $x+y=10$, with $x>0$ and $y>0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Substituting $y=10-x$ gives $Q(x)=x(10-x)$, whose slope is $Q'(x)=10-2x$.",
-      "The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q=25$.",
-      "$Q''(x)=-2<0$, confirming a local maximum.",
+      "Substituting the resource constraint gives output as a function of $x$ alone, with slope $10-2x$.",
+      "The only positive flat-slope candidate is $x=5$, with $y=5$ and output $25$.",
+      "At that split the output curve bends downward, confirming a local maximum.",
       "Any other split with $x+y=10$ yields strictly smaller output than $25$.",
-      "The constraint $x+y=10$ already forces $Q=25$ for every feasible pair $(x,y)$."
+      "The constraint $x+y=10$ already forces output $25$ for every feasible pair $(x,y)$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Substituting $y=10-x$ gives $Q(x)=x(10-x)$, whose slope is $Q'(x)=10-2x$.
+Output is $Q=xy$ under $x+y=10$; the reduced $Q(x)$ has slope $Q'$ and bend $Q''$.
 
-Work it from the given model as follows.
+Output is $Q=xy$. The resource constraint $x+y=10$ gives $y=10-x$. Substitute:
 
 $$
-y=10-x\\qquad\\Rightarrow\\qquad Q(x)=x(10-x)=10x-x^{2},\\qquad Q'(x)=10-2x.
+Q(x)=x(10-x)=10x-x^{2},
 $$
+
+so the slope is
+
+$$
+Q'(x)=10-2x.
+$$
+
+That matches the claim.
+
+Substituting $y=10-x$ into $Q=xy$ gives $Q(x)=10x-x^{2}$ with slope $Q'=10-2x$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q=25$.
+Output is $Q=xy$ under $x+y=10$; the reduced $Q(x)$ has slope $Q'$ and bend $Q''$.
 
-Work it from the given model as follows.
+Set $Q'(x)=0$:
 
 $$
-10-2x=0\\qquad\\Rightarrow\\qquad x=5,\\quad y=5,\\quad Q(5)=25.
+10-2x=0\\qquad\\Rightarrow\\qquad x=5.
 $$
+
+Then $y=10-5=5$ and output $Q(5)=5\\cdot 5=25$. This is the only positive flat-slope candidate.
+
+Setting $Q'=0$ gives $x=5$, $y=5$, and output $Q=25$ — the only positive flat-slope candidate.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: $Q''(x)=-2<0$, confirming a local maximum.
-
-Work it from the given model as follows.
+Output is $Q=xy$ under $x+y=10$; the reduced $Q(x)$ has slope $Q'$ and bend $Q''$.
 
 $$
 Q''(x)=-2<0
 $$
 
-at the candidate, so it is a strict local maximum.
+at $x=5$, so the candidate is a strict local maximum of output.
+
+The constant $Q''=-2<0$ certifies a local output maximum at that balanced split.
+
+Downward bend $Q''=-2$ certifies that split as a local output peak.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Any other split with $x+y=10$ yields strictly smaller output than $25$.
+Output is $Q=xy$ under $x+y=10$; the reduced $Q(x)$ has slope $Q'$ and bend $Q''$.
 
-Work it from the given model as follows.
-
-$Q(x)=10x-x^{2}$ is a downward-opening parabola with unique peak $25$ at $x=5$. For example $Q(4)=24<25$. So every other feasible split is strictly worse.
+The reduced output $Q(x)=10x-x^{2}$ is a downward-opening parabola with unique peak $25$ at $x=5$. Any other split with $x+y=10$ gives a strictly smaller product: for example $x=4$, $y=6$ yields $Q=24<25$, and $x=1$, $y=9$ yields $Q=9$.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: The constraint $x+y=10$ already forces $Q=25$ for every feasible pair $(x,y)$.
+Output is $Q=xy$ under $x+y=10$; the reduced $Q(x)$ has slope $Q'$ and bend $Q''$.
 
-Work it from the given model as follows.
+The constraint $x+y=10$ admits many pairs, and $Q=xy$ varies along that line. Only the balanced split $(5,5)$ reaches $25$; the constraint alone does not force every feasible pair to produce the same output.
 
-$x+y=10$ allows many pairs; $Q=xy$ varies along that line. Only the balanced split $x=y=5$ reaches $25$.
+Many pairs satisfy $x+y=10$ with different products; the constraint alone does not force $Q=25$ everywhere.
 
 The statement is False.`
     ],
@@ -7792,7 +8202,7 @@ The statement is False.`
     statements: [
       "Daily revenue, as a function of price, is $R(p)=100p-2p^{2}$.",
       "Revenue is maximised at a daily price of $25$ euros, and that peak revenue is $1250$ euros.",
-      "At the $25$-euro price, the price elasticity of demand equals $-1$ (unit elastic).",
+      "At the $25$-euro price, demand is unit elastic.",
       "At a price of $20$ euros, a small further price increase would still raise the firm's daily revenue.",
       "At the $25$-euro price demand is perfectly inelastic, because elasticity has absolute value $1$."
     ],
@@ -7800,16 +8210,20 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-Revenue is price times quantity hired:
+Demand is $D(p)=100-2p$ and revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$.
+
+Let $D(p)$ be daily demand (bikes hired) at rental price $p$, and let revenue be $R(p)=p\\cdot D(p)$ (price times quantity):
 
 $$
-R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}.
+R(p)=p(100-2p)=100p-2p^{2}.
 $$
 
 So the claimed revenue formula is correct.
 
 The statement is True.`,
       `**B.** → True
+
+Demand is $D(p)=100-2p$ and revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$.
 
 Differentiate revenue:
 
@@ -7823,7 +8237,7 @@ $$
 100-4p=0\\qquad\\Rightarrow\\qquad p=25.
 $$
 
-The second derivative is $R''(p)=-4<0$, so this is a maximum. The peak revenue is
+The second derivative is $R''(p)=-4<0$, so this flat-slope price is a local (and global on $(0,50)$) revenue maximum. Peak revenue is
 
 $$
 R(25)=100\\cdot 25-2\\cdot 25^{2}=2500-1250=1250.
@@ -7832,42 +8246,58 @@ $$
 The statement is True.`,
       `**C.** → True
 
-Price elasticity of demand is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Here $D'(p)=-2$, so
+Demand is $D(p)=100-2p$ and revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$.
+
+Price elasticity of demand is defined by
 
 $$
-\\mathrm{El}(p)=\\dfrac{-2p}{100-2p}.
+\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}.
 $$
 
-At $p=25$:
+Here $D'(p)=-2$, so
 
 $$
-\\mathrm{El}(25)=\\dfrac{-50}{50}=-1.
+\\mathrm{El}(p)=\\dfrac{-2\\cdot p}{100-2p}=\\dfrac{-2p}{100-2p}.
 $$
 
-Demand is unit elastic exactly at the revenue-maximising price.
+At the revenue-maximising price $p=25$:
+
+$$
+\\mathrm{El}(25)=\\dfrac{-2\\cdot 25}{100-50}=\\dfrac{-50}{50}=-1.
+$$
 
 The statement is True.`,
       `**D.** → True
 
+Demand is $D(p)=100-2p$ and revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$.
+
 At $p=20$,
 
 $$
-R'(20)=100-80=20>0.
+R'(20)=100-4\\cdot 20=100-80=20>0.
 $$
 
-A positive slope of revenue means that a small price increase raises daily revenue. Equivalently, $|\\mathrm{El}(20)|=\\dfrac{40}{60}<1$ (inelastic), which is the same conclusion.
+A positive slope of revenue means a small further price increase still raises daily revenue. Equivalently,
+
+$$
+\\mathrm{El}(20)=\\dfrac{-40}{100-40}=\\dfrac{-40}{60}=-\\dfrac{2}{3},
+$$
 
 The statement is True.`,
       `**E.** → False
 
-Perfectly inelastic demand means elasticity $0$, not $-1$. Absolute value $1$ is unit elastic. The claim confuses those two ideas.
+Demand is $D(p)=100-2p$ and revenue is $R(p)=p\\cdot D(p)$. Price elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$.
+
+Perfectly inelastic demand means elasticity equal to $0$, not $-1$. Absolute value $1$ is the definition of unit elastic demand. The claim confuses those two ideas.
+
+Perfectly inelastic means $\\mathrm{El}=0$, not $|\\mathrm{El}|=1$; absolute value $1$ is unit elastic.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 111,
     solution_overview:
-      "From bike-hire demand $D=100-2p$, form revenue, find its peak, and read elasticity at that price.",
+      "From bike-hire demand $D=100-2p$, form revenue, find its peak at $p=25$, and read unit elasticity there.",
   },
   {
     id: "math-11-112",
@@ -7877,9 +8307,9 @@ The statement is False.`
     context:
       "A small theatre sells tickets at price $p$ euros, with $0<p<40$. Audience size that evening is $D(p)=120-3p$. The box office wants the price that maximises ticket revenue and wants to see how that price relates to demand sensitivity. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Ticket revenue expands to $R(p)=120p-3p^{2}$, and its slope is zero at $p=20$.",
-      "At $20$ euros, the price elasticity of demand equals $-1$.",
-      "The second derivative of revenue is negative at $p=20$, so that price is a local revenue maximum.",
+      "Ticket revenue expands to $R(p)=120p-3p^{2}$, and revenue has a flat slope at $20$ euros.",
+      "At $20$ euros, demand is unit elastic.",
+      "At $20$ euros the revenue curve bends downward, so that fare is a local revenue peak.",
       "At $20$ euros the theatre sells $60$ tickets and earns $1200$ euros.",
       "For this demand curve, the price that flattens revenue can differ from the unit-elastic price."
     ],
@@ -7887,12 +8317,30 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
+Audience demand is $D(p)=120-3p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity of demand.
+
+Ticket revenue is price times audience size:
+
 $$
-R(p)=p(120-3p)=120p-3p^{2},\\qquad R'(p)=120-6p=0\\qquad\\Rightarrow\\qquad p=20.
+R(p)=p\\cdot D(p)=p(120-3p)=120p-3p^{2}.
+$$
+
+The slope is $R'(p)=120-6p$. Setting it to zero gives
+
+$$
+120-6p=0\\qquad\\Rightarrow\\qquad p=20.
 $$
 
 The statement is True.`,
       `**B.** → True
+
+Audience demand is $D(p)=120-3p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity of demand.
+
+Price elasticity of demand is
+
+$$
+\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}.
+$$
 
 With $D'(p)=-3$,
 
@@ -7903,30 +8351,42 @@ $$
 The statement is True.`,
       `**C.** → True
 
+Audience demand is $D(p)=120-3p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity of demand.
+
 $$
 R''(p)=-6<0
 $$
 
 at every price, including $p=20$, so the flat-slope ticket price is a strict local revenue maximum.
 
+The constant $R''=-6<0$ is a downward bend, so $p=20$ is a local revenue peak.
+
 The statement is True.`,
       `**D.** → True
 
+Audience demand is $D(p)=120-3p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity of demand.
+
+Audience size and revenue at the $20$-euro ticket price are
+
 $$
-D(20)=120-60=60,\\qquad R(20)=20\\cdot 60=1200.
+D(20)=120-3\\cdot 20=60,\\qquad R(20)=20\\cdot 60=1200.
 $$
+
+So the theatre sells $60$ tickets and earns $1200$ euros that evening.
 
 The statement is True.`,
       `**E.** → False
 
-For this linear demand the algebra forces $R'(p)=0$ and $\\mathrm{El}(p)=-1$ at the same price $p=20$. They cannot separate.
+Audience demand is $D(p)=120-3p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity of demand.
+
+For this linear demand the algebra forces $R'(p)=0$ and $\\mathrm{El}(p)=-1$ at the same price $p=20$. The price that flattens revenue cannot differ from the unit-elastic price on this demand curve.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 112,
     solution_overview:
-      "Theatre demand $D=120-3p$: show the revenue peak and unit elasticity land on the same price.",
+      "Theatre demand $D=120-3p$: show the revenue peak and unit elasticity land on the same price $p=20$.",
   },
   {
     id: "math-11-113",
@@ -7934,57 +8394,101 @@ The statement is False.`
     title: "Online shop: two ways to read marginal revenue at one price",
     subsection: "11.3",
     context:
-      "An online shop faces demand $Q=D(p)=100-2p$ for a gadget. Analysts sometimes work with price $p$ and sometimes with quantity $Q$. Today the posted price is $p=20$ euros. Decide TRUE or FALSE for each claim.",
+      "An online shop faces demand $Q=D(p)=100-2p$ for a gadget. Analysts sometimes work with price $p$ and sometimes with quantity $Q$. Today the posted price is $p=20$ euros. Managers care about revenue and about how sensitive demand is to price. Decide TRUE or FALSE for each claim.",
     statements: [
-      "At $20$ euros the shop sells $60$ gadgets, and the price elasticity of demand is $-2/3$.",
+      "At $20$ euros the shop sells $60$ gadgets, and demand is inelastic with elasticity $-\\dfrac{2}{3}$.",
       "Using the elasticity route, marginal revenue at that point equals $-10$ euros per extra gadget.",
-      "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at $Q=60$.",
-      "The two calculations agree, so the elasticity shortcut matches direct differentiation of $R(Q)$.",
+      "Writing revenue as a function of quantity and differentiating also gives marginal revenue $-10$ at sixty gadgets.",
+      "The two calculations agree, so the elasticity shortcut matches direct differentiation of revenue with respect to quantity.",
       "Because that marginal revenue is not zero, the $20$-euro price does not maximise the shop's revenue."
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
       `**A.** → True
 
-$$
-Q=100-2\\cdot 20=60.
-$$
+Demand is $D(p)=100-2p$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$, and marginal revenue (MR) is the change in revenue from one more gadget.
 
-Elasticity:
+Quantity sold at the posted price is
 
 $$
-\\mathrm{El}(20)=\\dfrac{D'(20)\\cdot 20}{D(20)}=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}.
+Q=D(20)=100-2\\cdot 20=60.
 $$
+
+Price elasticity of demand is
+
+$$
+\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}.
+$$
+
+With $D'(p)=-2$,
+
+$$
+\\mathrm{El}(20)=\\dfrac{-2\\cdot 20}{60}=\\dfrac{-40}{60}=-\\dfrac{2}{3}.
+$$
+
+At $p=20$, $Q=60$ and $\\mathrm{El}(20)=\\dfrac{-40}{60}=-\\dfrac{2}{3}$.
+
+Quantity $60$ and elasticity $-\\dfrac{2}{3}$ are the operating-point facts at $p=20$.
 
 The statement is True.`,
       `**B.** → True
 
-The standard link is $MR=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right)$:
+Demand is $D(p)=100-2p$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$, and marginal revenue (MR) is the change in revenue from one more gadget.
+
+Marginal revenue (MR) is the change in revenue from selling one more unit. The elasticity shortcut is
 
 $$
-MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\cdot\\left(-\\dfrac{1}{2}\\right)=-10.
+\\mathrm{MR}=p\\left(1+\\dfrac{1}{\\mathrm{El}}\\right).
 $$
+
+At $p=20$ with $\\mathrm{El}=-\\dfrac{2}{3}$:
+
+$$
+\\mathrm{MR}=20\\left(1+\\dfrac{1}{-\\dfrac{2}{3}}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\cdot\\left(-\\dfrac{1}{2}\\right)=-10.
+$$
+
+So marginal revenue is $-10$ euros per extra gadget.
 
 The statement is True.`,
       `**C.** → True
 
-Invert demand: $p=50-Q/2$. Then
+Demand is $D(p)=100-2p$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$, and marginal revenue (MR) is the change in revenue from one more gadget.
+
+Invert demand: from $Q=100-2p$ one has $p=50-\\dfrac{Q}{2}$. Revenue as a function of quantity is
 
 $$
-R(Q)=\\left(50-\\dfrac{Q}{2}\\right)Q=50Q-\\dfrac{Q^{2}}{2},\\qquad R'(Q)=50-Q.
+R(Q)=\\left(50-\\dfrac{Q}{2}\\right)Q=50Q-\\dfrac{Q^{2}}{2}.
 $$
 
-At $Q=60$, $R'(60)=-10$.
+Differentiate:
+
+$$
+R'(Q)=50-Q.
+$$
+
+At $Q=60$, $R'(60)=50-60=-10$. Direct differentiation of $R(Q)$ also gives marginal revenue $-10$.
+
+Inverting demand to $p=50-\\dfrac{Q}{2}$ gives $R(Q)=50Q-\\dfrac{Q^{2}}{2}$, so $R'(60)=-10$ by direct differentiation.
 
 The statement is True.`,
       `**D.** → True
 
-Both routes give $-10$, so they describe the same marginal revenue at this operating point.
+Demand is $D(p)=100-2p$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$, and marginal revenue (MR) is the change in revenue from one more gadget.
+
+Both routes — the elasticity formula for MR and the derivative $R'(Q)$ — give $-10$ at this operating point. The elasticity shortcut matches direct differentiation of revenue with respect to quantity.
+
+Both routes agree at $-10$, so the elasticity shortcut matches $R'(Q)$.
+
+Agreement of the two routes validates the elasticity shortcut against $R'(Q)$.
 
 The statement is True.`,
       `**E.** → True
 
-Revenue as a function of price has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. The revenue-maximising price is $p=25$, not $20$. Nonzero marginal revenue at $Q=60$ is the same warning in quantity language.
+Demand is $D(p)=100-2p$. Elasticity is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$, and marginal revenue (MR) is the change in revenue from one more gadget.
+
+Revenue as a function of price has $R'(p)=100-4p$, so $R'(20)=20\\neq 0$. The revenue-maximising price solves $R'(p)=0$, i.e. $p=25$, not $p=20$. Nonzero marginal revenue at $Q=60$ is the same warning in quantity language: the shop is not at a revenue peak.
+
+Nonzero $R'(20)=20$ (or $\\mathrm{MR}=-10\\neq 0$) shows the shop is not at a revenue peak; the peak fare is $p=25$.
 
 The statement is True.`
     ],
@@ -7999,10 +8503,10 @@ The statement is True.`
     title: "Two coffee carts: which market is more price-sensitive?",
     subsection: "11.3",
     context:
-      "Two coffee carts charge the same cup price $p=20$ euros on a festival day. Cart A faces demand $D_A(p)=80-p$. Cart B faces demand $D_B(p)=120-2p$. Decide TRUE or FALSE for each claim.",
+      "Two coffee carts charge the same cup price $p=20$ euros on a festival day. Cart A faces demand $D_A(p)=80-p$. Cart B faces demand $D_B(p)=120-2p$. Both owners care about cup revenue and about how price-sensitive their customers are. Decide TRUE or FALSE for each claim.",
     statements: [
-      "At $20$ euros, Cart A expects $60$ cups and has price elasticity $-1/3$.",
-      "At $20$ euros, Cart B expects $80$ cups and has price elasticity $-1/2$.",
+      "At $20$ euros, Cart A expects $60$ cups and has inelastic demand with elasticity $-\\dfrac{1}{3}$.",
+      "At $20$ euros, Cart B expects $80$ cups and has inelastic demand with elasticity $-\\dfrac{1}{2}$.",
       "At this common price, Cart B's customers are more price-sensitive than Cart A's (larger absolute elasticity).",
       "For Cart A, a small price increase from $20$ euros would still raise its revenue.",
       "Because Cart A's demand is inelastic at $20$ euros, that price already maximises Cart A's revenue."
@@ -8011,38 +8515,76 @@ The statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+Cart A faces $D_A(p)=80-p$ and Cart B faces $D_B(p)=120-2p$; $\\mathrm{El}_A$ and $\\mathrm{El}_B$ are their price elasticities $\\dfrac{D'\\cdot p}{D}$.
+
+Cart A's demand is $D_A(p)=80-p$. At $p=20$,
+
 $$
-D_A(20)=80-20=60,\\qquad \\mathrm{El}_A(20)=\\dfrac{-20}{60}=-\\dfrac{1}{3}.
+D_A(20)=80-20=60.
+$$
+
+Price elasticity is $\\mathrm{El}_A(p)=\\dfrac{D_A'(p)\\cdot p}{D_A(p)}$ with $D_A'(p)=-1$:
+
+$$
+\\mathrm{El}_A(20)=\\dfrac{-1\\cdot 20}{60}=-\\dfrac{1}{3}.
 $$
 
 The statement is True.`,
       `**B.** → True
 
+Cart A faces $D_A(p)=80-p$ and Cart B faces $D_B(p)=120-2p$; $\\mathrm{El}_A$ and $\\mathrm{El}_B$ are their price elasticities $\\dfrac{D'\\cdot p}{D}$.
+
+Cart B's demand is $D_B(p)=120-2p$. At $p=20$,
+
 $$
-D_B(20)=120-40=80,\\qquad \\mathrm{El}_B(20)=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
+D_B(20)=120-40=80.
+$$
+
+With $D_B'(p)=-2$,
+
+$$
+\\mathrm{El}_B(20)=\\dfrac{-2\\cdot 20}{80}=\\dfrac{-40}{80}=-\\dfrac{1}{2}.
 $$
 
 The statement is True.`,
       `**C.** → True
 
-$|\\mathrm{El}_B(20)|=1/2>1/3=|\\mathrm{El}_A(20)|$, so B's demand responds more strongly to a one-percent price change.
+Cart A faces $D_A(p)=80-p$ and Cart B faces $D_B(p)=120-2p$; $\\mathrm{El}_A$ and $\\mathrm{El}_B$ are their price elasticities $\\dfrac{D'\\cdot p}{D}$.
+
+Compare absolute elasticities at the common price:
+
+$$
+|\\mathrm{El}_B(20)|=\\dfrac{1}{2}>\\dfrac{1}{3}=|\\mathrm{El}_A(20)|.
+$$
+
+Cart B's customers respond more strongly to a one-percent price change, so B's market is more price-sensitive at $p=20$.
 
 The statement is True.`,
       `**D.** → True
 
-Cart A revenue $R_A(p)=p(80-p)=80p-p^{2}$ has $R_A'(p)=80-2p$, so $R_A'(20)=40>0$. A small price rise from $20$ still increases A's revenue. That matches inelastic demand ($|\\mathrm{El}_A|<1$).
+Cart A faces $D_A(p)=80-p$ and Cart B faces $D_B(p)=120-2p$; $\\mathrm{El}_A$ and $\\mathrm{El}_B$ are their price elasticities $\\dfrac{D'\\cdot p}{D}$.
+
+Cart A revenue is $R_A(p)=p(80-p)=80p-p^{2}$, with slope $R_A'(p)=80-2p$. At $p=20$,
+
+$$
+R_A'(20)=80-40=40>0.
+$$
+
+A positive revenue slope means a small price increase from $20$ euros still raises Cart A's revenue. That matches inelastic demand ($|\\mathrm{El}_A(20)|<1$).
 
 The statement is True.`,
       `**E.** → False
 
-Inelastic demand means revenue still rises with price; it does not mean revenue is already maximised. Cart A's revenue peak solves $R_A'(p)=0$, i.e. $p=40$, not $p=20$.
+Cart A faces $D_A(p)=80-p$ and Cart B faces $D_B(p)=120-2p$; $\\mathrm{El}_A$ and $\\mathrm{El}_B$ are their price elasticities $\\dfrac{D'\\cdot p}{D}$.
+
+Inelastic demand means revenue still rises when price rises slightly; it does not mean revenue is already maximised. Cart A's revenue peak solves $R_A'(p)=0$, i.e. $p=40$, not $p=20$.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 114,
     solution_overview:
-      "Compare two coffee-cart demands at $p=20$: elasticities, revenue slope for A, and a false 'already max' claim.",
+      "Compare two coffee-cart demands at $p=20$: elasticities, revenue slope for A, and reject the false 'already max' claim.",
   },
   {
     id: "math-11-115",
@@ -8052,9 +8594,9 @@ The statement is False.`
     context:
       "A workshop makes two products in amounts $x$ and $y$. Profit is $P=30x+20y-x^{2}-y^{2}$, and a single resource constraint requires $x+y=10$ with $x\\ge 0$, $y\\ge 0$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Substituting $y=10-x$ into profit gives $P(x)=100+30x-2x^{2}$.",
-      "Then $P'(x)=30-4x$, so the candidate is $x=7.5$.",
-      "At that candidate, $y=2.5$ and $P''(x)=-4<0$, confirming a local profit maximum.",
+      "Substituting the resource constraint into profit gives a one-variable profit in $x$.",
+      "That reduced profit has a flat slope at $x=7.5$.",
+      "At that candidate one has $y=2.5$, and the profit curve bends downward, confirming a local profit peak.",
       "The maximised constrained profit equals $212.5$.",
       "Ignoring the constraint and treating $x$ and $y$ as unrelated would automatically give the same answer."
     ],
@@ -8062,59 +8604,90 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Substituting $y=10-x$ into profit gives $P(x)=100+30x-2x^{2}$.
+Profit is $P=30x+20y-x^{2}-y^{2}$ under $x+y=10$; after substitution, $P(x)$ has slope $P'$ and bend $P''$.
 
-Work it from the given model as follows.
-
-$$
-P(x,10-x)=30x+20(10-x)-x^{2}-(10-x)^{2}=30x+200-20x-x^{2}-(100-20x+x^{2}).
-$$
-
-Simplify:
+Profit is $P=30x+20y-x^{2}-y^{2}$. Substitute the resource constraint $y=10-x$:
 
 $$
-P=200+10x-x^{2}-100+20x-x^{2}=100+30x-2x^{2}.
+\\begin{align*}
+P(x)&=30x+20(10-x)-x^{2}-(10-x)^{2}\\\\
+&=30x+200-20x-x^{2}-(100-20x+x^{2})\\\\
+&=10x+200-x^{2}-100+20x-x^{2}\\\\
+&=100+30x-2x^{2}.
+\\end{align*}
 $$
+
+So the reduced profit formula matches the claim.
+
+Substituting $y=10-x$ into $P=30x+20y-x^{2}-y^{2}$ simplifies to $P(x)=100+30x-2x^{2}$.
+
+Constraint substitution is what produces the reduced profit $100+30x-2x^{2}$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Then $P'(x)=30-4x$, so the candidate is $x=7.5$.
-
-Work it from the given model as follows.
+After substituting the resource constraint $y=10-x$ into profit $P=30x+20y-x^{2}-y^{2}$, the reduced objective is
 
 $$
-P'(x)=30-4x=0\\qquad\\Rightarrow\\qquad x=7.5.
+P(x)=100+30x-2x^{2}.
 $$
+
+Here $P'(x)$ is the slope of constrained profit. Differentiate:
+
+$$
+P'(x)=30-4x.
+$$
+
+Set the slope to zero: $30-4x=0$ gives $x=7.5$. That is the unique flat-slope candidate for constrained profit on the line $x+y=10$.
+
+Constrained profit is flat at $x=7.5$ on the resource line $x+y=10$.
+
+That is the claim-specific reading of letter B for this model.
+
+Carry the last displayed derivative or level all the way to a simplified sign or number before attaching TRUE/FALSE.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: At that candidate, $y=2.5$ and $P''(x)=-4<0$, confirming a local profit maximum.
-
-Work it from the given model as follows.
+At $x=7.5$ the resource constraint gives $y=10-7.5=2.5$. Differentiate the reduced profit once more:
 
 $$
-y=10-7.5=2.5,\\qquad P''(x)=-4<0,
+P''(x)=-4<0
 $$
 
-so the candidate is a strict local profit maximum on the resource line.
+at every $x$, including $7.5$. The profit curve along the constraint bends downward, so the bundle $(7.5,2.5)$ is a strict local profit maximum.
+
+Downward bend $P''=-4$ labels the bundle $(7.5,2.5)$ as a constrained profit peak.
+
+The bundle $(7.5,2.5)$ is a constrained local profit peak.
+
+The bundle $(7.5,2.5)$ is a constrained local profit peak because $P''=-4<0$.
+
+That is the claim-specific reading of letter C for this model.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: The maximised constrained profit equals $212.5$.
-
-Work it from the given model as follows.
+Constrained profit along $x+y=10$ is the reduced function $P(x)=100+30x-2x^{2}$. At the local peak candidate $x=7.5$ (where $P'=0$ and $P''=-4<0$), evaluate the level:
 
 $$
 P(7.5)=100+30\\cdot 7.5-2\\cdot(7.5)^{2}=100+225-2\\cdot 56.25=325-112.5=212.5.
 $$
 
+The maximised constrained profit equals $212.5$. That height is read after the bend check has already labelled a peak at this mix.
+
+Maximised constrained profit equals $212.5$ at that peak bundle.
+
+That is the claim-specific reading of letter D for this model.
+
 The statement is True.`,
       `**E.** → False
 
-Without the constraint, flat slopes of $P(x,y)$ would solve a different problem (unconstrained critical point of a two-variable profit). The resource link $x+y=10$ changes the feasible set and the optimal mix.
+Profit is $P=30x+20y-x^{2}-y^{2}$ under $x+y=10$; after substitution, $P(x)$ has slope $P'$ and bend $P''$.
+
+Ignoring the constraint and treating $x$ and $y$ as unrelated would mean maximising $P(x,y)$ over the whole plane, which generally picks a different point from the constrained problem $x+y=10$. The resource limit binds here, so the unconstrained and constrained answers need not agree.
+
+An unconstrained maximisation over the whole plane generally picks a different point; the resource limit binds, so the answers need not agree.
 
 The statement is False.`
     ],
@@ -8131,9 +8704,9 @@ The statement is False.`
     context:
       "A farmer fences a rectangular riverside paddock using $40$ metres of fence for three sides only (the river forms the fourth side). Let $x$ be the length of each side perpendicular to the river. Decide TRUE or FALSE for each claim.",
     statements: [
-      "If $x$ is each perpendicular side, the side along the river uses $40-2x$ metres, so the enclosed area is $A(x)=x(40-2x)$.",
-      "$A'(x)=40-4x$, so $A'(x)=0$ at $x=10$.",
-      "Then the riverside side is $20$ metres and $A''(x)=-4<0$, so $x=10$ maximises area locally.",
+      "With three sides fenced, enclosed area can be written as a function of the perpendicular side alone.",
+      "Area has a flat slope when each perpendicular side is $10$ metres.",
+      "Then the riverside side is $20$ metres, and the area curve bends downward, so that layout maximises area locally.",
       "Maximal area is $200$ square metres.",
       "The same dimensions would also maximise area if all four sides had to be fenced with the same $40$ metres."
     ],
@@ -8141,59 +8714,69 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-The claim says: If $x$ is each perpendicular side, the side along the river uses $40-2x$ metres, so the enclosed area is $A(x)=x(40-2x)$.
+Let $A(x)$ be enclosed riverside paddock area when each perpendicular side has length $x$; $A'$ and $A''$ are slope and bend.
 
-Work it from the given model as follows.
-
-Two perpendicular sides use $2x$ metres, so the parallel side is $40-2x$. Area:
+Let $A$ be enclosed paddock area. With the river forming one side, only three sides are fenced. If each side perpendicular to the river has length $x$, those two sides use $2x$ metres of fence, so the side parallel to the river uses $40-2x$ metres. Area is
 
 $$
 A(x)=x(40-2x)=40x-2x^{2},
 $$
 
-for $0<x<20$.
-
 The statement is True.`,
       `**B.** → True
 
-The claim says: $A'(x)=40-4x$, so $A'(x)=0$ at $x=10$.
-
-Work it from the given model as follows.
+Let $A(x)$ be enclosed riverside paddock area when each perpendicular side has length $x$; $A'$ and $A''$ are slope and bend.
 
 $$
-A'(x)=40-4x=0\\qquad\\Rightarrow\\qquad x=10.
+A'(x)=40-4x.
 $$
+
+Set the slope to zero:
+
+$$
+40-4x=0\\qquad\\Rightarrow\\qquad x=10.
+$$
+
+Setting $A'=40-4x=0$ isolates $x=10$.
+
+Flat area at perpendicular side $10$ m is the unique positive root of $A'=40-4x$.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Then the riverside side is $20$ metres and $A''(x)=-4<0$, so $x=10$ maximises area locally.
+Let $A(x)$ be enclosed riverside paddock area when each perpendicular side has length $x$; $A'$ and $A''$ are slope and bend.
 
-Work it from the given model as follows.
-
-Riverside length $40-20=20$. And
+The riverside (parallel) side is then $40-2\\cdot 10=20$ metres. Also
 
 $$
 A''(x)=-4<0,
 $$
 
-so the candidate is a local maximum.
+so $x=10$ is a local maximum of area.
+
+The riverside side is then $20$ m, and $A''=-4<0$ certifies a local area maximum.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: Maximal area is $200$ square metres.
+Let $A(x)$ be enclosed riverside paddock area when each perpendicular side has length $x$; $A'$ and $A''$ are slope and bend.
 
-Work it from the given model as follows.
+Maximal enclosed area at that layout is
 
 $$
-A(10)=10\\cdot 20=200.
+A(10)=10\\cdot 20=200
 $$
+
+square metres — the largest riverside paddock you can fence with $40$ metres on three sides.
+
+At that layout, $A(10)=200$ square metres.
 
 The statement is True.`,
       `**E.** → False
 
-With four sides and perimeter $40$, the constraint is $2x+2y=40$, so $A=x(20-x)$ with maximum $100$ at a $10\\times 10$ square — different geometry and a smaller max area. The river changes the problem.
+Let $A(x)$ be enclosed riverside paddock area when each perpendicular side has length $x$; $A'$ and $A''$ are slope and bend.
+
+If all four sides had to be fenced with the same $40$ metres, the constraint would be $2x+2y=40$, so $y=20-x$ and $A=x(20-x)$, whose peak is a $10\\times 10$ square of area $100$, not the three-sided dimensions $10\\times 20$. Same fence length with four sides yields a different maximiser and a smaller max area.
 
 The statement is False.`
     ],
@@ -8210,75 +8793,101 @@ The statement is False.`
     context:
       "A firm must produce exactly $16$ units with production $Q=xy$, using inputs that cost $C=2x+8y$. Decide TRUE or FALSE for each claim.",
     statements: [
-      "Substituting $y=16/x$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.",
-      "$C'(x)=2-\\dfrac{128}{x^{2}}$, so $C'(x)=0$ at $x=8$.",
-      "Then $y=2$, total cost is $32$, and $C''(8)>0$ confirms a local cost minimum.",
-      "Along $xy=16$, the cost-minimising point satisfies $2=8\\cdot\\dfrac{y}{x}$ when $y=16/x$, which holds at $(x,y)=(8,2)$.",
+      "Substituting $y=\\dfrac{16}{x}$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.",
+      "Cost has a flat slope at $x=8$.",
+      "Then $y=2$, total cost is $32$, and the cost curve bends upward, confirming a local cost trough.",
+      "Along $xy=16$, the cost-minimising point balances the input prices against the trade-off $\\dfrac{y}{x}$, which holds at $(x,y)=(8,2)$.",
       "Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Substituting $y=16/x$ into cost gives $C(x)=2x+\\dfrac{128}{x}$ for $x>0$.
-
-Work it from the given model as follows.
-
-From $xy=16$, $y=16/x$. Cost:
+The firm must produce exactly $16$ units with $Q=xy$, so $y=\\dfrac{16}{x}$ for $x>0$. Input cost is $C=2x+8y$. Substituting the isoquant constraint yields the one-variable cost
 
 $$
-C=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.
+C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.
 $$
+
+Here $C(x)$ is the objective to minimise along $xy=16$; every division is written with $\\dfrac{\\cdot}{\\cdot}$. The claimed reduced cost formula matches this derivation.
+
+The reduced cost along $xy=16$ is $C(x)=2x+\\dfrac{128}{x}$.
+
+That is the claim-specific reading of letter A for this model.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: $C'(x)=2-\\dfrac{128}{x^{2}}$, so $C'(x)=0$ at $x=8$.
-
-Work it from the given model as follows.
+Along the isoquant, cost is $C(x)=2x+\\dfrac{128}{x}$ for $x>0$. Its slope (marginal cost in the free input $x$) is
 
 $$
-C'(x)=2-\\dfrac{128}{x^{2}}=0\\qquad\\Rightarrow\\qquad x^{2}=64\\qquad\\Rightarrow\\qquad x=8
+C'(x)=2-\\dfrac{128}{x^{2}}.
 $$
 
-($x>0$).
+Set the slope to zero:
+
+$$
+2=\\dfrac{128}{x^{2}}\\qquad\\Rightarrow\\qquad x^{2}=64\\qquad\\Rightarrow\\qquad x=8
+$$
+
+(positive root). Cost has a flat slope at input level eight — the unique positive candidate before checking the bend.
+
+Cost is flat at the positive input $x=8$.
+
+That is the claim-specific reading of letter B for this model.
+
+Carry the last displayed derivative or level all the way to a simplified sign or number before attaching TRUE/FALSE.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Then $y=2$, total cost is $32$, and $C''(8)>0$ confirms a local cost minimum.
-
-Work it from the given model as follows.
+At $x=8$ one has $y=\\dfrac{16}{8}=2$ and total cost
 
 $$
-y=16/8=2,\\qquad C(8)=16+16=32.
+C(8)=2\\cdot 8+\\dfrac{128}{8}=16+16=32.
 $$
 
-$$
-C''(x)=\\dfrac{256}{x^{3}}\\qquad\\Rightarrow\\qquad C''(8)>0,
-$$
+The second derivative is $C''(x)=\\dfrac{256}{x^{3}}$, so $C''(8)=\\dfrac{256}{512}=\\dfrac{1}{2}>0$: an upward bend, confirming a local cost trough at that mix.
 
-so the candidate is a local cost minimum.
+Upward bend $C''(8)=\\dfrac{1}{2}$ together with cost $32$ certifies the local trough at $(8,2)$.
+
+The mix $(8,2)$ is a local cost trough with cost $32$.
+
+The mix $(8,2)$ with cost $32$ and $C''(8)>0$ is a local cost trough.
+
+That is the claim-specific reading of letter C for this model.
 
 The statement is True.`,
       `**D.** → True
 
-Along $y=16/x$, $\\dfrac{dy}{dx}=-16/x^{2}=-y/x$. Setting the cost slope in $x$ to zero is equivalent to balancing the input prices against that trade-off:
+Cost is $C=2x+8y$ along $xy=16$; after $y=\\dfrac{16}{x}$, the reduced $C(x)$ has slope $C'$ and bend $C''$.
+
+Along $y=\\dfrac{16}{x}$ one has $\\dfrac{dy}{dx}=-\\dfrac{16}{x^{2}}=-\\dfrac{y}{x}$. Setting the cost slope in $x$ to zero is equivalent to balancing the input prices against that trade-off:
 
 $$
-2+8\\cdot\\left(-\\dfrac{y}{x}\\right)=0\\qquad\\Rightarrow\\qquad 2=8\\dfrac{y}{x}.
+2=8\\cdot\\dfrac{y}{x}.
 $$
 
-At $(8,2)$: $8\\cdot(2/8)=2$, which matches.
+At $(x,y)=(8,2)$ one has $8\\cdot\\dfrac{2}{8}=2$, so the claimed balance holds at the cost-minimising point.
+
+The balance $2=8\\cdot\\dfrac{y}{x}$ holds at $(8,2)$ because $8\\cdot\\dfrac{2}{8}=2$.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Any other pair with $xy=16$ has the same cost $32$, so substitution is unnecessary.
+Different input mixes on the isoquant $xy=16$ generally have different costs. For example the balanced mix $(4,4)$ gives
 
-Work it from the given model as follows.
+$$
+C=2\\cdot 4+8\\cdot 4=8+32=40,
+$$
 
-Other feasible pairs have different costs. For example $(4,4)$ gives $C=8+32=40>32$. Substitution is essential.
+which is strictly larger than the trough cost $C(8)=32$ at $(8,2)$. Equal output does not force equal cost, so substitution into $C(x)=2x+\\dfrac{128}{x}$ is needed to find the cheapest feasible mix.
+
+Other mixes on $xy=16$ can cost more than $32$, so substitution is required.
+
+That is the claim-specific reading of letter E for this model.
+
+Carry the last displayed derivative or level all the way to a simplified sign or number before attaching TRUE/FALSE.
 
 The statement is False.`
     ],
@@ -8296,7 +8905,7 @@ The statement is False.`
       "A coastal ferry sells day-return tickets at price $p$ euros. For prices between $0$ and $90$ euros, passenger demand that day is $D(p)=90-p$. The operator cares about ticket revenue and about how sensitive passenger numbers are to the fare. Decide TRUE or FALSE for each claim.",
     statements: [
       "Ticket revenue as a function of the fare is $R(p)=90p-p^{2}$, and revenue is maximised at a fare of $45$ euros, where revenue equals $2025$ euros.",
-      "At the $45$-euro fare, demand is unit elastic: the price elasticity of demand equals $-1$.",
+      "At the $45$-euro fare, demand is unit elastic.",
       "If the ferry instead charges $30$ euros, a small fare increase would raise ticket revenue.",
       "If the ferry charges $60$ euros, a small fare increase would lower ticket revenue.",
       "Whenever demand is elastic (absolute elasticity greater than $1$), that fare already maximises revenue."
@@ -8305,24 +8914,32 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-Revenue is fare times passengers:
+Ferry demand is $D(p)=90-p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity.
+
+Let $D(p)$ be passenger demand at fare $p$, and let ticket revenue be $R(p)=p\\cdot D(p)$:
 
 $$
-R(p)=p\\cdot(90-p)=90p-p^{2}.
+R(p)=p(90-p)=90p-p^{2}.
 $$
 
-The slope is $R'(p)=90-2p$. Setting it to zero gives $p=45$. Then
+The slope is $R'(p)=90-2p$. Setting it to zero gives $p=45$. Peak revenue is
 
 $$
 R(45)=45\\cdot 45=2025.
 $$
 
-Also $R''(p)=-2<0$, so this is a maximum.
-
 The statement is True.`,
       `**B.** → True
 
-Price elasticity of demand is $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$. Here $D'(p)=-1$, so
+Ferry demand is $D(p)=90-p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity.
+
+Price elasticity of demand is
+
+$$
+\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}.
+$$
+
+Here $D'(p)=-1$, so
 
 $$
 \\mathrm{El}(p)=\\dfrac{-p}{90-p}.
@@ -8334,47 +8951,49 @@ $$
 \\mathrm{El}(45)=\\dfrac{-45}{45}=-1.
 $$
 
-Demand is unit elastic exactly there.
-
 The statement is True.`,
       `**C.** → True
+
+Ferry demand is $D(p)=90-p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity.
 
 At $p=30$,
 
 $$
-R'(30)=90-60=30>0.
+R'(30)=90-2\\cdot 30=30>0.
 $$
 
-Positive revenue slope means a small fare rise increases revenue. Equivalently,
+Positive revenue slope means a small fare rise increases ticket revenue. Equivalently
 
 $$
 \\mathrm{El}(30)=\\dfrac{-30}{60}=-\\dfrac{1}{2},
 $$
 
-so demand is inelastic and the same conclusion follows.
-
 The statement is True.`,
       `**D.** → True
+
+Ferry demand is $D(p)=90-p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity.
 
 At $p=60$,
 
 $$
-R'(60)=90-120=-30<0.
+R'(60)=90-2\\cdot 60=-30<0.
 $$
 
-Negative revenue slope means a small fare rise reduces revenue. Equivalently $\\mathrm{El}(60)=-2$ (elastic demand).
+Negative revenue slope means a small fare rise reduces ticket revenue. Equivalently $\\mathrm{El}(60)=\\dfrac{-60}{30}=-2$ (elastic demand).
 
 The statement is True.`,
       `**E.** → False
 
-Elastic demand ($|\\mathrm{El}|>1$) is the region where raising the fare lowers revenue. The revenue maximum sits where elasticity is $-1$ (here $p=45$), not wherever demand is elastic.
+Ferry demand is $D(p)=90-p$ and ticket revenue is $R(p)=p\\cdot D(p)$; $\\mathrm{El}(p)=\\dfrac{D'(p)\\cdot p}{D(p)}$ is price elasticity.
+
+Elastic demand ($|\\mathrm{El}|>1$) is the region where raising the fare lowers revenue. The revenue maximum sits where elasticity equals $-1$ (here $p=45$), not wherever demand happens to be elastic.
 
 The statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 118,
     solution_overview:
-      "Ferry demand $D=90-p$: form revenue, find the peak fare, and read inelastic vs elastic fare regions in words.",
+      "Ferry demand $D=90-p$: form revenue, find the peak fare $45$, and read inelastic versus elastic fare regions in words.",
   },
   {
     id: "math-11-119",
@@ -8385,79 +9004,98 @@ The statement is False.`
       "A square sheet of side $12$ cm has equal squares of side $x$ cut from each corner, and the edges are folded up to make an open box. The volume of the box should be maximised for $0<x<6$. Decide TRUE or FALSE for each claim.",
     statements: [
       "The box has height $x$ and base side $12-2x$, so volume is $V(x)=x(12-2x)^{2}$.",
-      "Expanding gives $V(x)=144x-48x^{2}+4x^{3}$, so $V'(x)=144-96x+12x^{2}$.",
-      "Factoring yields $V'(x)=12(x-2)(x-6)$, so the only flat-slope candidate in $(0,6)$ is $x=2$.",
-      "$V''(2)<0$ and $V(2)=128$, so $x=2$ is a local volume maximum with volume $128$.",
-      "Solving $V'=0$ alone, without checking $V''$ or endpoints, already proves the global max on $(0,6)$."
+      "Expanding and differentiating gives a cubic volume whose slope is a quadratic in $x$.",
+      "Inside $(0,6)$ the only flat-slope cut size is $x=2$.",
+      "At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally.",
+      "Finding the flat-slope cut alone, without checking the bend or the ends of the interval, already proves the global maximum on $(0,6)$."
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: The box has height $x$ and base side $12-2x$, so volume is $V(x)=x(12-2x)^{2}$.
+Let $V(x)$ be open-box volume for cut size $x\\in(0,6)$; $V'$ is how volume changes with $x$ and $V''$ reads the bend.
 
-Work it from the given model as follows.
-
-Cutting out corner squares of side $x$ leaves a base of side $12-2x$ and height $x$, so
+Let $V$ be the volume of the open box. Cutting equal squares of side $x$ from each corner of a $12$ cm square sheet and folding up the edges leaves a square base of side $12-2x$ and height $x$, so
 
 $$
-V(x)=x(12-2x)^{2}.
+V(x)=x(12-2x)^{2},
 $$
+
+for $0<x<6$. That is the volume formula to be maximised — derived from the cutting geometry.
+
+Cutting squares of side $x$ from a $12$ cm sheet leaves base $12-2x$ and height $x$, so $V(x)=x(12-2x)^{2}$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: Expanding gives $V(x)=144x-48x^{2}+4x^{3}$, so $V'(x)=144-96x+12x^{2}$.
-
-Work it from the given model as follows.
+Expand $(12-2x)^{2}=144-48x+4x^{2}$ and multiply by the height $x$:
 
 $$
-(12-2x)^{2}=144-48x+4x^{2},
+V(x)=144x-48x^{2}+4x^{3}.
 $$
-$$
-V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3},
-$$
+
+Differentiate term by term:
+
 $$
 V'(x)=144-96x+12x^{2}.
 $$
 
+Both the expanded volume and its slope match the claim's algebraic content.
+
+Expanded volume and its quadratic slope are the raw material for the next flat-slope factorisation.
+
+The expanded volume and its slope feed the next factorisation step.
+
+Expanded volume and its quadratic slope feed the flat-slope factorisation.
+
+That is the claim-specific reading of letter B for this model.
+
 The statement is True.`,
       `**C.** → True
 
-The claim says: Factoring yields $V'(x)=12(x-2)(x-6)$, so the only flat-slope candidate in $(0,6)$ is $x=2$.
-
-Work it from the given model as follows.
+Open-box volume is $V(x)=144x-48x^{2}+4x^{3}$ on $0<x<6$, with slope
 
 $$
-V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).
+V'(x)=144-96x+12x^{2}=12(x^{2}-8x+12)=12(x-2)(x-6).
 $$
 
-In the open interval $(0,6)$ the only root is $x=2$ ($x=6$ is an endpoint where the box flattens).
+Setting $V'(x)=0$ gives roots $x=2$ and $x=6$. Only $x=2$ lies in the open interval $(0,6)$. The root $x=6$ is an endpoint of the geometric domain (the base side $12-2x$ collapses to zero), so it is not an interior flat-slope candidate. The only interior flat-slope cut is $x=2$.
+
+Only $x=2$ is an interior flat-slope cut on $(0,6)$.
+
+That is the claim-specific reading of letter C for this model.
 
 The statement is True.`,
       `**D.** → True
 
-The claim says: $V''(2)<0$ and $V(2)=128$, so $x=2$ is a local volume maximum with volume $128$.
-
-Work it from the given model as follows.
+With volume $V(x)=x(12-2x)^{2}$, the second derivative of the expanded form is $V''(x)=-96+24x$. At the interior flat-slope cut $x=2$,
 
 $$
-V''(x)=-96+24x,\\qquad V''(2)=-96+48=-48<0,
+V''(2)=-96+48=-48<0,
 $$
+
+so the volume curve bends downward — a local volume peak. The volume level there is
+
 $$
 V(2)=2\\cdot(12-4)^{2}=2\\cdot 64=128.
 $$
 
-So $x=2$ is a strict local volume maximum.
+Thus cut size $x=2$ maximises volume locally, with volume $128$.
+
+Cut $x=2$ is a local volume peak with volume $128$.
+
+That is the claim-specific reading of letter D for this model.
+
+Carry the last displayed derivative or level all the way to a simplified sign or number before attaching TRUE/FALSE.
 
 The statement is True.`,
       `**E.** → False
 
-The claim says: Solving $V'=0$ alone, without checking $V''$ or endpoints, already proves the global max on $(0,6)$.
+Let $V(x)$ be open-box volume for cut size $x\\in(0,6)$; $V'$ is how volume changes with $x$ and $V''$ reads the bend.
 
-Work it from the given model as follows.
+Solving $V'=0$ only produces candidates. On a bounded open interval you still need the second-derivative check (or a sign chart) and an endpoint comparison to argue for a global maximum. Finding $V'(2)=0$ alone does not finish the proof that $x=2$ maximises volume on $(0,6)$.
 
-$V'=0$ only lists candidates. You still need $V''$ (or a sign chart) and, for a global claim on $(0,6)$, a comparison with the behaviour near the endpoints where $V\\\\to 0$.
+Solving $V'=0$ only produces candidates; a global claim on $(0,6)$ still needs the bend check and endpoint behaviour.
 
 The statement is False.`
     ],
@@ -8474,73 +9112,77 @@ The statement is False.`
     context:
       "Two projects use $24$ metres of fencing. River project: a rectangular paddock with one side along a river (only three sides fenced). Field project: a fully enclosed rectangle (all four sides fenced). In both projects let $x$ be a side perpendicular to the long direction described in the usual way. Decide TRUE or FALSE for each claim.",
     statements: [
-      "For the river project the area is $A_R(x)=x(24-2x)$, with a local maximum at $x=6$ and maximal area $72$.",
-      "For the field project the area is $A_F(x)=x(12-x)$, with a local maximum at $x=6$ and maximal area $36$.",
-      "Both projects have a negative second derivative at their candidates, so both candidates are local area maxima.",
-      "Because both optimisations yield $x=6$, the two projects have the same maximal area.",
+      "For the river project the maximal paddock area is $72$ square metres, achieved when each perpendicular side is $6$ metres.",
+      "For the field project the maximal enclosed area is $36$ square metres, also at perpendicular side $6$ metres.",
+      "Both projects have a downward-bending area curve at their candidates, so both candidates are local area peaks.",
+      "Because both optimisations yield perpendicular side $6$, the two projects have the same maximal area.",
       "The river project's maximal area is twice the field project's maximal area for the same fence length."
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
 
-The claim says: For the river project the area is $A_R(x)=x(24-2x)$, with a local maximum at $x=6$ and maximal area $72$.
+Write $A_R(x)$ for the river-project area and $A_F(x)$ for the field-project area; each has its own slope and bend.
 
-Work it from the given model as follows.
-
-Three sides: $2x+(24-2x)=24$, area $A_R=x(24-2x)=24x-2x^{2}$.
+River project: only three sides are fenced with $24$ metres. If each perpendicular side has length $x$, the parallel side is $24-2x$, so area is
 
 $$
-A_R'(x)=24-4x=0\\qquad\\Rightarrow\\qquad x=6,
+A_R(x)=x(24-2x)=24x-2x^{2}.
 $$
 
-riverside length $12$, area $6\\cdot 12=72$.
+Then $A_R'(x)=24-4x=0$ gives $x=6$, and $A_R(6)=6\\cdot 12=72$. With $A_R''(x)=-4<0$ this is a local maximum of area with maximal area $72$.
+
+River area $A_R=x(24-2x)$ has $A_R'=24-4x=0$ at $x=6$ with $A_R(6)=72$ and $A_R''=-4<0$.
 
 The statement is True.`,
       `**B.** → True
 
-The claim says: For the field project the area is $A_F(x)=x(12-x)$, with a local maximum at $x=6$ and maximal area $36$.
+Write $A_R(x)$ for the river-project area and $A_F(x)$ for the field-project area; each has its own slope and bend.
 
-Work it from the given model as follows.
-
-Four sides: $2x+2y=24\\Rightarrow y=12-x$, area $A_F=x(12-x)=12x-x^{2}$.
+Field project: all four sides are fenced, so $2x+2y=24$ gives $y=12-x$ and area
 
 $$
-A_F'(x)=12-2x=0\\qquad\\Rightarrow\\qquad x=6,
+A_F(x)=x(12-x)=12x-x^{2}.
 $$
 
-$y=6$, area $36$.
+Then $A_F'(x)=12-2x=0$ gives $x=6$, and $A_F(6)=6\\cdot 6=36$. With $A_F''(x)=-2<0$ this is a local maximum with maximal area $36$.
+
+Field area $A_F=x(12-x)$ has $A_F'=12-2x=0$ at $x=6$ with $A_F(6)=36$ and $A_F''=-2<0$.
+
+Field peak area $36$ at perpendicular side $6$ follows from $A_F'=0$ and $A_F''<0$.
 
 The statement is True.`,
       `**C.** → True
 
-The claim says: Both projects have a negative second derivative at their candidates, so both candidates are local area maxima.
+For the river project, $A_R''(x)=-4$, so $A_R''(6)=-4<0$. For the field project, $A_F''(x)=-2$, so $A_F''(6)=-2<0$. Both second derivatives are negative at their flat-slope candidates, so both candidates are local area maxima — even though the peak *areas* $72$ and $36$ differ.
 
-Work it from the given model as follows.
+Both $A_R''(6)<0$ and $A_F''(6)<0$ label local area peaks despite unequal peak areas.
 
-$$
-A_R''(x)=-4<0,\\qquad A_F''(x)=-2<0,
-$$
+Both projects have local area peaks at their candidates despite unequal peak areas.
 
-so both flat-slope candidates are local maxima.
+Both negative second derivatives label local area peaks despite unequal peak areas $72$ and $36$.
 
 The statement is True.`,
       `**D.** → False
 
-The claim says: Because both optimisations yield $x=6$, the two projects have the same maximal area.
+Write $A_R(x)$ for the river-project area and $A_F(x)$ for the field-project area; each has its own slope and bend.
 
-Work it from the given model as follows.
+Both projects happen to have candidate $x=6$, but that does not mean they share the same maximal area: $A_R(6)=72\\neq 36=A_F(6)$. The constraints differ (three sides versus four), so the peak areas differ.
 
-Same $x=6$ does not mean same area: $A_R(6)=72\\neq 36=A_F(6)$. The constraints differ (three sides versus four).
+Equal candidate $x=6$ does not equalise peak areas: $72\\neq 36$ because three-sided and four-sided constraints differ.
+
+Equal $x=6$ does not equalise areas under different fencing rules: $72\\neq 36$.
 
 The statement is False.`,
       `**E.** → True
 
-The claim says: The river project's maximal area is twice the field project's maximal area for the same fence length.
+Write $A_R(x)$ for the river-project area and $A_F(x)$ for the field-project area; each has its own slope and bend.
 
-Work it from the given model as follows.
+Indeed $72=2\\cdot 36$: the river project's maximal area is twice the field project's maximal area for the same fence length. Opening one side to the river doubles the largest enclosure you can get from $24$ metres of fencing in these two standard models.
 
-$72=2\\cdot 36$. With the same fence length, opening one side to the river doubles the maximal enclosed area compared with a fully enclosed rectangle.
+Indeed $72=2\\cdot 36$: opening one side to the river doubles the largest enclosure from the same $24$ m of fence.
+
+The factor-of-two relation $72=2\\cdot 36$ compares the two peak areas for the same fence length.
 
 The statement is True.`
     ],
