@@ -614,7 +614,7 @@ $$a_n\neq 0$$
 If $p(0)$ vanished then $a_n$ would vanish, contradicting the stem. The constant term cannot be zero for a palindromic polynomial with $a_n\neq 0$, because $a_0=a_n$ identically, so the statement is True.
 """,
     r"""
-Evenness needs $p(-x)=p(x)$, which palindromy does not force: a palindromic cubic with a linear term is already a counter-example.
+Evenness needs $p(-x)=p(x)$, which palindromy does not force: a palindromic quadratic with a linear term is already a counter-example.
 
 $$p(x)=x^{2}+x+1$$
 
