@@ -945,14 +945,14 @@ def build_tasks() -> list[dict]:
         yticks=[-15, -10, -5, 0, 5, 10, 15],
     )
     add(
-        title="Three named curves: evaluate A, B, A−B at x=3",
+        title="Three named curves: signs, heights, and A vs A′",
         context=(
             "The figure shows three curves on one plane: $A$ (brown), $B$ (green), and $A-B$ (purple). "
             "In this model $B=A'$. Decide TRUE or FALSE from the coordinates."
         ),
         statements=[
             "At $x=3$, $A(3)<0$ and $B(3)<0$.",
-            "At $x=3$, the purple curve $A-B$ is greater than $A$ because $B$ is negative there ($A-B=A-|B|$).",
+            "At $x=3$, the purple curve lies strictly below the brown curve.",
             "Zeros of $B$ occur under a local max and a local min of $A$.",
             "Wherever $B>0$, the brown curve $A$ is rising.",
             "The purple curve having a zero means $A=B$ at that $x$, i.e. $A(x)=A'(x)$.",
@@ -963,15 +963,13 @@ def build_tasks() -> list[dict]:
             expl(
                 "B",
                 False,
-                "If $B<0$, then $A-B=A-(\\text{negative})=A+|B|>A$. The statement wrote "
-                "$A-|B|$, which is the wrong algebraic reading. Purple is above brown when green is negative — "
-                "but the formula in the claim is incorrect, so the claim as written is False.",
+                "At $x=3$, purple sits above brown on the shared scale, not below.",
             ),
             expl("C", True, "Since $B=A'$, extrema of $A$ sit at zeros of $B$."),
             expl("D", True, "$A'>0$ ⇒ $A$ increasing."),
             expl("E", True, "Purple zero ⇔ $A-B=0$ ⇔ $A=B=A'$."),
         ],
-        solution_overview="Named curves with $B=A'$; evaluate at $x=3$ and use differentiation alignment.",
+        solution_overview="Named curves with $B=A'$; compare heights at $x=3$ and use differentiation alignment.",
         figure=fig,
         difficulty_level="5/5",
     )
