@@ -1,3 +1,8 @@
+/**
+ * Chapter 11 — Differentiation and single-variable optimization.
+ * Subsections 11.1–11.4 (11.4: Interpreting graphs without algebra, MATH 11.121–11.140).
+ * Lovable sync marker: 11.4 graph bank (20 SVG figure tasks).
+ */
 import type { MathTask } from "@/data/math-chapters";
 
 export const MATH_CH11_SUBSECTIONS = [
