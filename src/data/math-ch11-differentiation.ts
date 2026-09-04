@@ -10919,7 +10919,7 @@ Lowest point of brown aligns with a green zero.
 So the statement is True.`,
       `**D.** → True
 
-Brown is $f'$. Wherever it sits above the axis, $f'>0$, so $f$ is increasing there. At $x=1$ brown is still positive.
+Brown is $f'$. On $(4,5)$ it sits above the axis, so $f'>0$ and $f$ is increasing there.
 
 So the statement is True.`,
       `**E.** → False
