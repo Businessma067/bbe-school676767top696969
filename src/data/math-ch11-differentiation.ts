@@ -9707,7 +9707,7 @@ Monotonicity comes from the sign of the derivative on the figure. $f''>0$ ⇒ $f
 Locate the axis crossings the claim refers to on the drawn window. Extrema of $f'$ at $x=\pm 1$ where $f''=0$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-Monotonicity comes from the sign of the derivative on the figure. Where $f$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
 Monotonicity comes from the sign of the derivative on the figure. Positive $f'$ ⇒ increasing $f$. That reading supports the claim, so the statement is True.`
@@ -9853,10 +9853,10 @@ Match the stem's labels to the colours on the figure and check the geometric fac
 At $x=2$ on the shared figure, read the colour(s) named in the stem. A peak of the brown curve lines up with a zero of the green curve. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-On the interval $(0,2)$, read the sign of the plotted derivative across that stretch. Where $f$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
+On the interval $(0,2)$, read the sign of the plotted derivative across that stretch. Where $f''$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-On the interval $(2,5)$, read the sign of the plotted derivative across that stretch. Where $f$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
+On the interval $(2,5)$, read the sign of the plotted derivative across that stretch. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
 Monotonicity comes from the sign of the derivative on the figure. The sign of $f'$ is what controls whether $f$ rises or falls. That reading supports the claim, so the statement is True.`,
@@ -10122,7 +10122,7 @@ Locate the axis crossings the claim refers to on the drawn window. Visible zero 
 Locate the axis crossings the claim refers to on the drawn window. Peak of $f'$ ↔ zero of $f''$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-Monotonicity comes from the sign of the derivative on the figure. Where $f$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
 At $x=0$ on the shared figure, read the colour(s) named in the stem. Read the two heights at the left edge of the figure. That reading supports the claim, so the statement is True.`,
@@ -10429,7 +10429,7 @@ Match the stem's labels to the colours on the figure and check the geometric fac
 Locate the axis crossings the claim refers to on the drawn window. A vertical shift moves the axis crossings. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-Monotonicity comes from the sign of the derivative on the figure. Where $f$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
 Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A vertical shift does not move peaks left/right — only up/down. That reading supports the claim, so the statement is True.`
