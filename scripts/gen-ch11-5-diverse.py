@@ -112,7 +112,7 @@ Setting $\pi'=0$ gives $\sqrt{a}=50$, so $a=2500$. Also $\pi''<0$ there""",
     )
 
     # ── 18. EOQ-style inventory ─────────────────────────────────────────
-    # TC(Q)=K D/Q + h Q/2, D=10000, K=40, h=2 → TC'= -KD/Q^2 + h/2=0 ⇒ Q^2=KD/(h/2)=400000 ⇒ Q=200√10≈632.5
+    # TC(Q)=K D/Q + h \\dfrac{Q}{2}, D=10000, K=40, h=2 → TC'= -KD/Q^2 + h/2=0 ⇒ Q^2=KD/(h/2)=400000 ⇒ Q=200√10≈632.5
     # Use nicer: D=800, K=50, h=4 → Q^2=2KD/h=20000 ⇒ Q=100√2
     # Or D=500, K=80, h=4 → Q^2=2*80*500/4=20000 → same
     # Use D=450, K=50, h=4 → Q^2=2*50*450/4=11250 not square
@@ -128,7 +128,7 @@ Which of the following statements is/are correct?""",
             [
                 r"The cost-minimising order quantity is $Q=100$.",
                 r"At that quantity, marginal ordering cost equals marginal holding cost in absolute value.",
-                r"Average inventory in the model is $Q/2$, so holding cost at $Q=100$ equals $200$ euros per year.",
+                r"Average inventory in the model is $\\dfrac{Q}{2}$, so holding cost at $Q=100$ equals $200$ euros per year.",
                 r"Ordering $Q=50$ instead of $Q=100$ would cut total ordering-plus-holding cost.",
                 r"$TC''(Q)>0$ for every $Q>0$, so the critical point is a minimum.",
             ],
@@ -140,14 +140,14 @@ Which of the following statements is/are correct?""",
                 r"""$TC(100)=200+200=400$ while $TC(50)=400+100=500>400$, so halving the order raises total cost""",
                 r"""$TC''(Q)=\dfrac{40000}{Q^{3}}>0$ for $Q>0$, confirming a minimum""",
             ],
-            r"""EOQ calculus: set $TC'=-KD/Q^{2}+h/2=0$ to get $Q=100$. Holding cost is $hQ/2$. The second derivative is positive, and nearby order sizes cost more.""",
+            r"""EOQ calculus: set $TC'=-\\dfrac{KD}{Q^{2}}+\\dfrac{h}{2}=0$ to get $Q=100$. Holding cost is $h\\dfrac{Q}{2}$. The second derivative is positive, and nearby order sizes cost more.""",
         )
     )
 
     # ── 19. Inverse demand product rule ─────────────────────────────────
     # p=36-3Q, R=36Q-3Q^2, R'=36-6Q=0 ⇒ Q=6, p=18
-    # El=-3p/(36-3p); at p=18: -54/(36-54)= wait D from p: Q=(36-p)/3, D'= -1/3
-    # El = D' p / D = (-1/3)*18 / 6 = -6/6=-1
+    # El=-3p/(36-3p); at p=18: -54/(36-54)= wait D from p: Q=\\dfrac{36-p}{3}, D'= -1/3
+    # El = D' p / D = (-\\dfrac{1}{3})*18 / 6 = -6/6=-1
     tasks.append(
         make_task(
             19,
@@ -163,8 +163,8 @@ Which of the following statements is/are correct?""",
             [True, True, False, True, False],
             [
                 r"""$R(Q)=36Q-3Q^{2}$, so $R'=36-6Q=0$ at $Q=6$, and $R''=-6<0$""",
-                r"""Demand is $Q=(36-p)/3$, so $D'(p)=-1/3$. At $Q=6$ one has $p=18$, and
-$$El_{Q}(p)=\dfrac{D'(p)\cdot p}{Q}=\dfrac{(-1/3)\cdot18}{6}=-1$$""",
+                r"""Demand is $Q=\\dfrac{36-p}{3}$, so $D'(p)=-\\dfrac{1}{3}$. At $Q=6$ one has $p=18$, and
+$$El_{Q}(p)=\dfrac{D'(p)\cdot p}{Q}=\dfrac{(-\\dfrac{1}{3})\cdot18}{6}=-1$$""",
                 r"""Profit $P=R-6Q=30Q-3Q^{2}$ has $P'=30-6Q=0$ at $Q=5$, not at the revenue max $Q=6$""",
                 r"""$R'(4)=36-24=12$""",
                 r"""Falling price does not force falling revenue while $MR>0$; here $R'>0$ on $(0,6)$""",
@@ -211,7 +211,7 @@ $$El_{Q}(p)=\dfrac{D'(p)\cdot p}{Q}=\dfrac{(-1/3)\cdot18}{6}=-1$$""",
                 r"Eliminating $y$ gives $U(x)=10x-\dfrac12 x^{2}$ for $0<x<20$.",
                 r"Output is maximised at $x=10$ illustration hours.",
                 r"At that point the duo buys $y=5$ typesetting hours.",
-                r"The MRS condition $y/x=p_{x}/p_{y}$ holds at the optimum.",
+                r"The MRS condition $\\dfrac{y}{x}=\\dfrac{p_{x}}{p_{y}}$ holds at the optimum.",
                 r"Spending the entire budget on illustration alone ($y=0$) maximises $U$.",
             ],
             [True, True, True, False, False],
@@ -219,10 +219,10 @@ $$El_{Q}(p)=\dfrac{D'(p)\cdot p}{Q}=\dfrac{(-1/3)\cdot18}{6}=-1$$""",
                 r"""From $2x+4y=40$ one has $y=(20-x)/2=10-x/2$, so $U=x(10-x/2)=10x-\frac12 x^{2}$""",
                 r"""$U'(x)=10-x=0$ at $x=10$, and $U''=-1<0$""",
                 r"""$y=10-10/2=5$""",
-                r"""$MRS=MU_{x}/MU_{y}=y/x$. At the optimum $y/x=1/2$, while $p_{x}/p_{y}=2/4=1/2$. Wait — they ARE equal. So the claim is TRUE.
+                r"""$MRS=MU_{x}/MU_{y}=\\dfrac{y}{x}$. At the optimum $\\dfrac{y}{x}=1/2$, while $\\dfrac{p_{x}}{p_{y}}=2/4=1/2$. Wait — they ARE equal. So the claim is TRUE.
 
-Claim says MRS condition y/x = p_x/p_y holds — True.
-Change claim to y/x = p_y/p_x (wrong) to make false.""",
+Claim says MRS condition \\dfrac{y}{x} = \\dfrac{p_x}{p_y} holds — True.
+Change claim to \\dfrac{y}{x} = p_y/p_x (wrong) to make false.""",
                 r"""If $y=0$ then $U=0$, which is minimal among interior points, not maximal""",
             ],
             r"""todo""",
@@ -247,10 +247,10 @@ Change claim to y/x = p_y/p_x (wrong) to make false.""",
                 r"""From $2x+4y=40$ one has $y=10-\frac12 x$, so $U=x(10-\frac12 x)=10x-\frac12 x^{2}$""",
                 r"""$U'(x)=10-x=0$ at $x=10$, and $U''=-1<0$""",
                 r"""$y=10-5=5$""",
-                r"""The correct price ratio in the MRS condition is $p_{x}/p_{y}$. Here $y/x=\frac12=p_{x}/p_{y}$, not $p_{y}/p_{x}=2$""",
+                r"""The correct price ratio in the MRS condition is $\\dfrac{p_{x}}{p_{y}}$. Here $\\dfrac{y}{x}=\frac12=\\dfrac{p_{x}}{p_{y}}$, not $\\dfrac{p_{y}}{p_{x}}=2$""",
                 r"""With $y=0$ one has $U=0$, far below the interior maximum $U=50$""",
             ],
-            r"""Budget reduction yields $U=10x-\frac12 x^{2}$, maximised at $x=10$, $y=5$. The MRS matches $p_x/p_y$, not the reciprocal. Corner solutions with $y=0$ kill the product utility.""",
+            r"""Budget reduction yields $U=10x-\frac12 x^{2}$, maximised at $x=10$, $y=5$. The MRS matches $\\dfrac{p_x}{p_y}$, not the reciprocal. Corner solutions with $y=0$ kill the product utility.""",
         )
     )
 
@@ -495,11 +495,11 @@ Change E to: brown has a local maximum near x=1.""",
             ],
             [True, True, True, False, True],
             [
-                r"""Power rule: $C'(Q)=80\cdot\frac12 Q^{-1/2}=40/\sqrt{Q}$""",
-                r"""$AC(Q)=80/\sqrt{Q}$ has derivative $-40 Q^{-3/2}<0$ for $Q>0$""",
+                r"""Power rule: $C'(Q)=80\cdot\frac12 Q^{-\\frac{1}{2}}=40/\sqrt{Q}$""",
+                r"""$AC(Q)=80/\sqrt{Q}$ has derivative $-40 Q^{-\\frac{3}{2}}<0$ for $Q>0$""",
                 r"""$AC=80/\sqrt{Q}$ and $MC=40/\sqrt{Q}$, so $MC=\frac12 AC$ identically""",
                 r"""$C(2Q)=80\sqrt{2Q}=\sqrt{2}\,C(Q)$, so cost rises by factor $\sqrt{2}$, not $2$""",
-                r"""$C'(16)=40/4=10$""",
+                r"""$C'(16)=\\dfrac{40}{4}=10$""",
             ],
             r"""Square-root total cost yields falling average cost and $MC=\frac12 AC$. Scaling $Q$ by $2$ scales $C$ by $\sqrt{2}$ only.""",
         )
