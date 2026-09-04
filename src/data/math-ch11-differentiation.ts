@@ -9128,49 +9128,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between the zeros the curve sits above the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,5)$, read the sign of the plotted derivative across that stretch. Between the zeros the curve sits above the axis. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A $+$ to $-$ crossing at $x=5$ is a local maximum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=5$ on the shared figure, read the colour(s) named in the stem. A $+$ to $-$ crossing at $x=5$ is a local maximum of $f$. That reading supports the claim, so the statement is True.`,
       `**C.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At $x=3$ one has $f'=4\\neq 0$. That peak of $f'$ is an inflection of $f$, not a local min of $f$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. At $x=3$ one has $f'=4\neq 0$. That peak of $f'$ is an inflection of $f$, not a local min of $f$. A local min of $f$ would need $f'=0$ with a $-$ to $+$ change — not a nonzero peak of $f'$. That reading conflicts with the claim, so the statement is False.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of $x=1$ the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,1)$, read the sign of the plotted derivative across that stretch. Left of $x=1$ the curve is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The largest positive height of $f'$ is $4$ at $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The largest positive height of $f'$ is $4$ at $x=3$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 121,
@@ -9196,49 +9166,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign change $+$ to $-$ at $x=2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. Sign change $+$ to $-$ at $x=2$. A $+$ to $-$ change through a zero of $f'$ is a local maximum of $f$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign change $-$ to $+$ at $x=4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. Sign change $-$ to $+$ at $x=4$. A $-$ to $+$ change through a zero of $f'$ is a local minimum of $f$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve dips below the axis between the zeros. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(2,4)$, read the sign of the plotted derivative across that stretch. The curve dips below the axis between the zeros. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The lowest point of the curve sits near height $-1$ at $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. The lowest point of the curve sits near height $-1$ at $x=3$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A local extremum of $f$ needs $f'=0$ (with a sign change). Here $f'(3)\\neq 0$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+For a local extremum claim, find the relevant zero on the figure and check the sign change through it. A local extremum of $f$ needs $f'=0$ (with a sign change). Here $f'(3)\neq 0$. A local minimum of $f$ needs $f'=0$ with a $-$ to $+$ change; a nonzero peak of $f'$ does not qualify. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 122,
@@ -9264,49 +9204,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local lowest point near $x=1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The graph of $f$ has a local lowest point near $x=1$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local highest point near $x=5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The graph of $f$ has a local highest point near $x=5$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve climbs between those turning points. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. The curve climbs between those turning points. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The middle of the climb is the steepest stretch. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The middle of the climb is the steepest stretch. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: An axis crossing is $f=0$, not $f'=0$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. An axis crossing is $f=0$, not $f'=0$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 123,
@@ -9332,49 +9242,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of the zero the curve is above the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,4)$, read the sign of the plotted derivative across that stretch. Left of the zero the curve is above the axis. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Right of the zero the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(5,6)$, read the sign of the plotted derivative across that stretch. Right of the zero the curve is below the axis. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign change $+$ to $-$ ⇒ local maximum of $P$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Sign change $+$ to $-$ ⇒ local maximum of $P$. That $+$ to $-$ crossing of marginal profit marks the firm's local profit peak. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=1$ the height is near $1.9$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. At $x=1$ the height is near $1.9$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A linear $P'$ means $P$ is quadratic (a parabola), not linear. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Read each firm's marginal-profit colour against the horizontal axis. A linear $P'$ means $P$ is quadratic (a parabola), not linear. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 124,
@@ -9400,49 +9280,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of the zero the line is above the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,3)$, read the sign of the plotted derivative across that stretch. Left of the zero the line is above the axis. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Right of the zero the line is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(3,5)$, read the sign of the plotted derivative across that stretch. Right of the zero the line is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $+$ to $-$ at $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. $+$ to $-$ at $x=3$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Height $2$ at $x=1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. Height $2$ at $x=1$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Falling $f'$ means $f''<0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Monotonicity comes from the sign of the derivative on the figure. Falling $f'$ means $f''<0$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 125,
@@ -9468,49 +9318,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Lowest point at the origin with $f(0)=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Lowest point at the origin with $f(0)=0$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve falls as $x$ approaches $0$ from the left. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(-3,0)$, read the sign of the plotted derivative across that stretch. The curve falls as $x$ approaches $0$ from the left. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve rises as $x$ moves right from $0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,3)$, read the sign of the plotted derivative across that stretch. The curve rises as $x$ moves right from $0$. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f(2)=4\\ln 5\\approx 6.4>2$ — visibly well above $2$ on the scale. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. $f(2)=4\ln 5\approx 6.4>2$ — visibly well above $2$ on the scale. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: An axis crossing means $f(0)=0$ (a root). A horizontal tangent means $f'(0)=0$. Those are different geometric facts; a root need not be critical. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. An axis crossing means $f(0)=0$ (a root). A horizontal tangent means $f'(0)=0$. Those are different geometric facts; a root need not be critical. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 126,
@@ -9536,49 +9356,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local lowest point near $x=1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The graph of $f$ has a local lowest point near $x=1$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local highest point near $x=2.5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Local highest point near $x=2.5$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local lowest point near $x=5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Local lowest point near $x=5$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between those turning points the curve rises. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,2.5)$, read the sign of the plotted derivative across that stretch. Between those turning points the curve rises. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: $f(0)=0$ is a root, not a claim about the slope $f'(0)$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. $f(0)=0$ is a root, not a claim about the slope $f'(0)$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 127,
@@ -9604,49 +9394,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The hill crosses down through the axis on both sides of the peak. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. The hill crosses down through the axis on both sides of the peak. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The hill sits above the axis between its two zeros. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. The hill sits above the axis between its two zeros. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Outside that interval the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Outside that interval the curve is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The top of the hill is at $x=2$ with height near $4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The top of the hill is at $x=2$ with height near $4$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A max of $f'$ is where $f$ is steepest, not where $f$ peaks. Peaks of $f$ need zeros of $f'$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+For a local extremum claim, find the relevant zero on the figure and check the sign change through it. A max of $f'$ is where $f$ is steepest, not where $f$ peaks. Peaks of $f$ need zeros of $f'$. A local maximum of $f$ needs $f'=0$ with a $+$ to $-$ change, not a nonzero peak of $f'$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 128,
@@ -9672,49 +9432,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve stays on or above the axis for $x>0$ in view. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. The curve stays on or above the axis for $x>0$ in view. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Largest $f'$ is the top of the hump near $x=2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Largest $f'$ is the top of the hump near $x=2$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve starts at the origin. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. The curve starts at the origin. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Small positive $f'$ means a gentle rise. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Small positive $f'$ means a gentle rise. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 129,
@@ -9740,49 +9470,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Clear $-$ to $+$ crossing at $x=4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. There is a clear $-$ to $+$ crossing at $x=4$. A $-$ to $+$ change through a zero of $f'$ is a local minimum of $f$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between $1$ and $4$ the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,4)$, read the sign of the plotted derivative across that stretch. Between $1$ and $4$ the curve is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of $x=1$ the curve is below the axis as well. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,1)$, read the sign of the plotted derivative across that stretch. Left of $x=1$ the curve is below the axis as well. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read the height at $x=2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. Read the height at $x=2$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A flat touch without a sign change fails the first-derivative test for a local extremum. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A flat touch without a sign change fails the first-derivative test for a local extremum. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 130,
@@ -9808,49 +9508,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The curve stays above the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. The curve stays above the axis. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Rising $C'$ means $C''>0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Rising $C'$ means $C''>0$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=4$ the height is clearly above $2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. At $x=4$ the height is clearly above $2$. That reading supports the claim, so the statement is True.`,
       `**D.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Positive $C'$ means cost keeps rising — no interior cost minimum from a sign change of $C'$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Positive $C'$ means cost keeps rising — no interior cost minimum from a sign change of $C'$. That reading conflicts with the claim, so the statement is False.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The left endpoint height is near $0.5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+At $x=0$ on the shared figure, read the colour(s) named in the stem. The left endpoint height is near $0.5$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 131,
@@ -9876,49 +9546,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between the zeros $1$ and $2.5$ the curve is above the axis, and $x=2$ lies in that interval. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. Between the zeros $1$ and $2.5$ the curve is above the axis, and $x=2$ lies in that interval. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between $2.5$ and $5$ the curve is below the axis; $x=4$ is in that interval. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. Between $2.5$ and $5$ the curve is below the axis; $x=4$ is in that interval. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A $+$ to $-$ sign change of $f'$ at $x=2.5$ is a local maximum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A $+$ to $-$ sign change of $f'$ at $x=2.5$ is a local maximum of $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A $-$ to $+$ sign change of $f'$ at $x=1$ is a local minimum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A $-$ to $+$ sign change of $f'$ at $x=1$ is a local minimum of $f$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At $x=0$ the curve is clearly below the axis, so $f'(0)<0$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. At $x=0$ the curve is clearly below the axis, so $f'(0)<0$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 132,
@@ -9944,49 +9584,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of the marked zero the curve is above the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,4)$, read the sign of the plotted derivative across that stretch. Left of the marked zero the curve is above the axis. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Right of $x=4$ the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(4,8)$, read the sign of the plotted derivative across that stretch. Right of $x=4$ the curve is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign change $+$ to $-$ at $x=4$ ⇒ local maximum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Sign change $+$ to $-$ at $x=4$ ⇒ local maximum of $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The largest $f'$ is the top of the hump near $x=1$; at $x=4$ one has $f'=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The largest $f'$ is the top of the hump near $x=1$; at $x=4$ one has $f'=0$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=0$ the height is near $4$; at $x=6$ the curve is slightly below zero but above $-1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. At $x=0$ the height is near $4$; at $x=6$ the curve is slightly below zero but above $-1$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 133,
@@ -10012,49 +9622,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $-$ to $+$ at a zero of $f'$ ⇒ local minimum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. $-$ to $+$ at a zero of $f'$ ⇒ local minimum of $f$. A $-$ to $+$ change through a zero of $f'$ is a local minimum of $f$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign of $f'$ is negative on the left and positive on the right. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(-3,0)$, read the sign of the plotted derivative across that stretch. Sign of $f'$ is negative on the left and positive on the right. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The lobes peak near height $4$ in absolute value at $x=\\pm 1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The lobes peak near height $4$ in absolute value at $x=\pm 1$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Max of $f'$ on the right is near $x=1$; that maximises the upward slope of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Max of $f'$ on the right is near $x=1$; that maximises the upward slope of $f$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A zero of $f'$ with a sign change is a local extremum of $f$. Inflection points of $f$ track sign changes of $f''$ (extrema of the graph of $f'$), which here are near $x=\\pm 1$, not at $0$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A zero of $f'$ with a sign change is a local extremum of $f$. Inflection points of $f$ track sign changes of $f''$ (extrema of the graph of $f'$), which here are near $x=\pm 1$, not at $0$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 134,
@@ -10080,49 +9660,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between $-2$ and $1$ the curve is above the axis; $x=0$ is there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Between $-2$ and $1$ the curve is above the axis; $x=0$ is there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between $1$ and $2$ the curve dips below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,2)$, read the sign of the plotted derivative across that stretch. Between $1$ and $2$ the curve dips below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=1$: $+$ to $-$ ⇒ local max of $f$. At $x=2$: $-$ to $+$ ⇒ local min of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. At $x=1$: $+$ to $-$ ⇒ local max of $f$. At $x=2$: $-$ to $+$ ⇒ local min of $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f'(3)=(9-4)(2)=10>4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. $f'(3)=(9-4)(2)=10>4$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Zeros of $f'$ are about $f$, not $f''$. Zeros of $f''$ are extrema of the graph of $f'$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. Zeros of $f'$ are about $f$, not $f''$. Zeros of $f''$ are extrema of the graph of $f'$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 135,
@@ -10148,49 +9698,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Odd $f'$ vanishes at $0$; $f''(0)=8>0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Odd $f'$ vanishes at $0$; $f''(0)=8>0$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f''>0$ ⇒ $f'$ increasing. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. $f''>0$ ⇒ $f'$ increasing. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Extrema of $f'$ at $x=\\pm 1$ where $f''=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Extrema of $f'$ at $x=\pm 1$ where $f''=0$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f''$ ⇒ decreasing $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f'$ ⇒ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Monotonicity comes from the sign of the derivative on the figure. Positive $f'$ ⇒ increasing $f$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 136,
@@ -10216,49 +9736,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Local min of $f$ at $0$ with $f'(0)=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Local min of $f$ at $0$ with $f'(0)=0$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f'$ ↔ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,3)$, read the sign of the plotted derivative across that stretch. Positive $f'$ ↔ increasing $f$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f'$ ↔ decreasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(-3,0)$, read the sign of the plotted derivative across that stretch. Negative $f'$ ↔ decreasing $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f'(1)$ is the height of the green curve at $x=1$; on the figure that height is about $4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. $f'(1)$ is the height of the green curve at $x=1$; on the figure that height is about $4$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A maximum of $f'$ is where $f$ is steepest, not where $f$ has a local maximum. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A maximum of $f'$ is where $f$ is steepest, not where $f$ has a local maximum. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 137,
@@ -10284,49 +9774,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Both curves are above the axis at $x=2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. Both curves are above the axis at $x=2$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Green has a zero at $x=5$; brown is below the axis near the right. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=5$ on the shared figure, read the colour(s) named in the stem. Green has a zero at $x=5$; brown is below the axis near the right. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read brown's two axis crossings on the shared plane. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Read brown's two axis crossings on the shared plane. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign of $Q'$ controls monotonicity of $Q$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(2.5,5)$, read the sign of the plotted derivative across that stretch. Sign of $Q'$ controls monotonicity of $Q$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: On a shared vertical scale, higher curve ⇒ larger derivative value. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. On a shared vertical scale, higher curve ⇒ larger derivative value. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 138,
@@ -10352,49 +9812,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read both heights at $x=4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. Read both heights at $x=4$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Peak of $f'$ sits above the zero of $f''$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Peak of $f'$ sits above the zero of $f''$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f''$ ⇒ decreasing $f'$ and concave-down $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(3,6)$, read the sign of the plotted derivative across that stretch. Negative $f''$ ⇒ decreasing $f'$ and concave-down $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f'$ ⇒ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. Positive $f'$ ⇒ increasing $f$. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Brown still changes $+$ to $-$ at $x=5$, so $f$ has a local maximum there. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Brown still changes $+$ to $-$ at $x=5$, so $f$ has a local maximum there. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 139,
@@ -10420,49 +9850,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Peak of brown aligns with a green zero. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, read the colour(s) named in the stem. A peak of the brown curve lines up with a zero of the green curve. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f''$ ⇒ increasing $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,2)$, read the sign of the plotted derivative across that stretch. Where $f''$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f''$ ⇒ decreasing $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(2,5)$, read the sign of the plotted derivative across that stretch. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign of $f'$ controls monotonicity of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. The sign of $f'$ is what controls whether $f$ rises or falls. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Zero of $f''$ is about $f'$, not a critical point of $f$. Critical points of $f$ are zeros of brown. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Zero of $f''$ is about $f'$, not a critical point of $f$. Critical points of $f$ are zeros of brown. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 140,
@@ -10488,49 +9888,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Visible alignment of the green zero with the brown peak. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Visible alignment of the green zero with the brown peak. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive green on the left. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,2)$, read the sign of the plotted derivative across that stretch. Positive green on the left. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative green on the right. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(2,8)$, read the sign of the plotted derivative across that stretch. Negative green on the right. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Small positive brown ⇒ slow increase of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=6$ on the shared figure, read the colour(s) named in the stem. Small positive brown ⇒ slow increase of $f$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: No $+$ to $-$ zero of $f'$ in $(0,8)$ ⇒ no local max of $f$ there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. No $+$ to $-$ zero of $f'$ in $(0,8)$ ⇒ no local max of $f$ there. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 141,
@@ -10556,49 +9926,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=1$, brown is near $2$ and green is near $1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, brown is near $2$ and green is near $1$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown has crossed below zero; green remains above. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=5$ on the shared figure, read the colour(s) named in the stem. Brown has crossed below zero; green remains above. For these firms, the sign of marginal profit is the expand-versus-contract signal. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $P'$ ⇒ expanding raises profit. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. Positive $P'$ ⇒ expanding raises profit. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $C'$ ⇒ increasing $C$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Positive $C'$ ⇒ increasing $C$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A profit peak is where brown crosses from $+$ to $-$ (zero of $P'$). That is not the same as the place where brown equals green. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Read each firm's marginal-profit colour against the horizontal axis. A profit peak is where brown crosses from $+$ to $-$ (zero of $P'$). That is not the same as the place where brown equals green. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 142,
@@ -10624,49 +9964,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Both curves sit below the axis at $x=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Both curves sit below the axis at $x=0$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Count the axis crossings of each colour. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Count the axis crossings of each colour. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between brown's middle and right zeros the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Between brown's middle and right zeros the curve is below the axis. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative derivatives ⇒ decreasing; less negative ⇒ gentler decrease. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Negative derivatives ⇒ decreasing; less negative ⇒ gentler decrease. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Brown has three zeros and green two, so $f$ and $g$ need not have the same number of turning points. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Brown has three zeros and green two, so $f$ and $g$ need not have the same number of turning points. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 143,
@@ -10692,49 +10002,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Four transversal zeros of $f'$ give four local extrema of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Four transversal zeros of $f'$ give four local extrema of $f$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Visually the curve dips below the axis between the middle two zeros. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Visually the curve dips below the axis between the middle two zeros. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between $0.5$ and $2$ the curve is above the axis; $x=1$ lies there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. Between $0.5$ and $2$ the curve is above the axis; $x=1$ lies there. That reading supports the claim, so the statement is True.`,
       `**D.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A lowest point of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — that is an inflection of $f$, not a local minimum of $f$. Local minima of $f$ occur at zeros of $f'$ with a $-$ to $+$ sign change. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A lowest point of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — that is an inflection of $f$, not a local minimum of $f$. Local minima of $f$ occur at zeros of $f'$ with a $-$ to $+$ sign change. That reading conflicts with the claim, so the statement is False.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A continuous $f'$ cannot change sign without a zero. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Locate the axis crossings the claim refers to on the drawn window. A continuous $f'$ cannot change sign without a zero. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 144,
@@ -10760,49 +10040,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between the marked zeros the curve is below the axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,3)$, read the sign of the plotted derivative across that stretch. Between the marked zeros the curve is below the axis. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Left of $x=1$ the curve is above the axis; just right of $x=1$ it is below. That $+$ to $-$ change is a local maximum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. Left of $x=1$ the curve is above the axis; just right of $x=1$ it is below. That $+$ to $-$ change is a local maximum of $f$. A $+$ to $-$ change through a zero of $f'$ is a local maximum of $f$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative to positive at $x=3$ ⇒ local minimum of $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Negative to positive at $x=3$ ⇒ local minimum of $f$. A $-$ to $+$ change through a zero of $f'$ is a local minimum of $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Later amplitudes are visibly smaller than the dip near $x=2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=5$ on the shared figure, read the colour(s) named in the stem. Later amplitudes are visibly smaller than the dip near $x=2$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A sign change of $f'$ still produces a local extremum of $f$, even when $|f'|$ is smaller. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A sign change of $f'$ still produces a local extremum of $f$, even when $|f'|$ is smaller. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 145,
@@ -10828,49 +10078,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=3$ (between $2.5$ and $5$) brown is negative. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. At $x=3$ (between $2.5$ and $5$) brown is negative. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Green is negative through much of the middle, including $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Green is negative through much of the middle, including $x=3$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Extrema of $f'$ occur where $f''=0$; the local max of brown aligns with a green zero. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Extrema of $f'$ occur where $f''=0$; the local max of brown aligns with a green zero. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f''>0$ means $f'$ is increasing. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. $f''>0$ means $f'$ is increasing. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Count axis crossings: brown three times, green twice. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Locate the axis crossings the claim refers to on the drawn window. Count axis crossings: brown three times, green twice. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 146,
@@ -10896,49 +10116,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Visible zero at $x=4$ with a positive hump on the left. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Visible zero at $x=4$ with a positive hump on the left. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Peak of $f'$ ↔ zero of $f''$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Peak of $f'$ ↔ zero of $f''$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f''$ ⇒ decreasing $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is negative, $f'$ is decreasing. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read the two heights at the left edge of the figure. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Read the two heights at the left edge of the figure. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Negative $f''$ is about concavity of $f$ / decrease of $f'$, not about whether $f$ decreases. On $(2,4)$ one still has $f'>0$, so $f$ is still increasing there. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Monotonicity comes from the sign of the derivative on the figure. Negative $f''$ is about concavity of $f$ / decrease of $f'$, not about whether $f$ decreases. On $(2,4)$ one still has $f'>0$, so $f$ is still increasing there. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 147,
@@ -10964,49 +10154,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read the axis crossings on the shared $x$-axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Read the axis crossings on the shared $x$-axis. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Opposite signs of marginal profit ⇒ opposite expand/contract advice. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1.5$ on the shared figure, read the colour(s) named in the stem. Opposite signs of marginal profit ⇒ opposite expand/contract advice. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $P'$ means profit falls as output rises. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. Negative $P'$ means profit falls as output rises. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: From the figure at $x=0$, both curves are above the axis and green sits higher than brown. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. From the figure at $x=0$, both curves are above the axis and green sits higher than brown. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Critical-point counts do not determine the height of profit levels — $P$ itself is not plotted. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. Critical-point counts do not determine the height of profit levels — $P$ itself is not plotted. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 148,
@@ -11032,49 +10192,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Four crossings of the brown curve. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Four crossings of the brown curve. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A degree drop: three crossings for green. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. A degree drop: three crossings for green. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Extrema of $f'$ occur where $f''=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Extrema of $f'$ occur where $f''=0$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $f''>0$ ⇒ $f'$ increasing and $f$ concave up. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. $f''>0$ ⇒ $f'$ increasing and $f$ concave up. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Between the middle zeros brown is below the axis; $x=3$ is there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Between the middle zeros brown is below the axis; $x=3$ is there. With $f'$ negative on that stretch, $f$ itself is decreasing there. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 149,
@@ -11100,49 +10230,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown and purple start above the axis; green starts at about $-1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Brown and purple start above the axis; green starts at about $-1$. That reading supports the claim, so the statement is True.`,
       `**B.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: From the figure, green starts below the axis at $x=0$ (near height $-1$). That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. From the figure, green starts below the axis at $x=0$ (near height $-1$). That reading conflicts with the claim, so the statement is False.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown crosses near $x=4$ and is negative afterward, including at $x=5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=5$ on the shared figure, read the colour(s) named in the stem. Brown crosses near $x=4$ and is negative afterward, including at $x=5$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Different zero locations mean different first sign changes when moving right from $x=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Different zero locations mean different first sign changes when moving right from $x=0$. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: The value of $P'$ is the instantaneous rate. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. The value of $P'$ is the instantaneous rate. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 150,
@@ -11168,49 +10268,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read the four marked-style crossings off the shared axis. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Read the four marked-style crossings off the shared axis. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: From the figure at $x=0$, both curves are above the axis and green sits higher than brown. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. From the figure at $x=0$, both curves are above the axis and green sits higher than brown. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=2.5$: brown is in $(1,3)$ (negative); green is in $(2,5)$ (negative). That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2.5$ on the shared figure, read the colour(s) named in the stem. At $x=2.5$: brown is in $(1,3)$ (negative); green is in $(2,5)$ (negative). That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: After $x=3$, brown is positive; green stays negative until $x=5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(3,5)$, read the sign of the plotted derivative across that stretch. After $x=3$, brown is positive; green stays negative until $x=5$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Critical-point counts do not equate function values. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. Critical-point counts do not equate function values. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 151,
@@ -11236,49 +10306,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read the two heights at $x=0$ on the shared scale. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Read the two heights at $x=0$ on the shared scale. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=3$, brown sits near $10$ and purple sits lower, near $6$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, brown sits near $10$ and purple sits lower, near $6$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Green is U-shaped and below the axis at $x=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Green is U-shaped and below the axis at $x=0$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive green means $f''>0$, so $f'$ (brown) is increasing. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Positive green means $f''>0$, so $f'$ (brown) is increasing. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: A vertical shift changes which $x$ make the purple curve zero; the zeros need not match brown's zeros. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. A vertical shift changes which $x$ make the purple curve zero; the zeros need not match brown's zeros. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 152,
@@ -11304,49 +10344,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Both brown and green are below the axis at $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Both brown and green are below the axis at $x=3$. That reading supports the claim, so the statement is True.`,
       `**B.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At $x=3$, purple sits above brown on the shared scale, not below. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+At $x=3$ on the shared figure, purple sits above brown on the shared scale, not below. Relative height on the shared scale settles it — no algebraic rewrite of $A-B$ is needed. That reading conflicts with the claim, so the statement is False.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Since $B=A'$, extrema of $A$ sit at zeros of $B$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Since $B=A'$, extrema of $A$ sit at zeros of $B$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $A'>0$ ⇒ $A$ increasing. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Wherever $A'>0$ on the figure, the brown curve $A$ is rising. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Purple zero ⇔ $A-B=0$ ⇔ $A=B=A'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Locate the axis crossings the claim refers to on the drawn window. A zero of the purple $A-B$ curve means $A=B$, and with $B=A'$ that is $A(x)=A'(x)$. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 153,
@@ -11372,49 +10382,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive between $-2$ and $1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(-2,1)$, read the sign of the plotted derivative across that stretch. Positive between $-2$ and $1$. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Direct reading of the figure matches a positive height near $6$ at $x=-1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=-1$ on the shared figure, read the colour(s) named in the stem. Direct reading of the figure matches a positive height near $6$ at $x=-1$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative between $1$ and $2$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(1,2)$, read the sign of the plotted derivative across that stretch. Negative between $1$ and $2$. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: $+$ to $-$ at $x=1$ ⇒ local max. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. $+$ to $-$ at $x=1$ ⇒ local max. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: For $x<-2$, $f'<0$; just after $x=-2$, $f'>0$. The change is $-$ to $+$, so $x=-2$ is a local **minimum** of $f$, not a local maximum. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+At $x=-2$ on the shared figure, read the colour(s) named in the stem. For $x<-2$, $f'<0$; just after $x=-2$, $f'>0$. The change is $-$ to $+$, so $x=-2$ is a local **minimum** of $f$, not a local maximum. A local maximum of $f$ needs $f'=0$ with a $+$ to $-$ change, not a nonzero peak of $f'$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 154,
@@ -11440,49 +10420,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Read both brown and purple at $x=0$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=0$ on the shared figure, read the colour(s) named in the stem. Read both brown and purple at $x=0$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Extrema of $f'$ align with zeros of $f''$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Extrema of $f'$ align with zeros of $f''$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A vertical shift moves the axis crossings. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. A vertical shift moves the axis crossings. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f''$ ⇒ increasing $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Where $f''$ is positive, $f'$ is increasing. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: A vertical shift does not move peaks left/right — only up/down. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. A vertical shift does not move peaks left/right — only up/down. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 155,
@@ -11508,49 +10458,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=3$, brown and purple sit above the axis; green sits below. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=3$ on the shared figure, brown and purple sit above the axis; green sits below. For these firms, the sign of marginal profit is the expand-versus-contract signal. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown crosses from $+$ to $-$ near $x=5$, so firm A's profit has a local peak there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. Brown crosses from $+$ to $-$ near $x=5$, so firm A's profit has a local peak there. That $+$ to $-$ crossing of marginal profit marks the firm's local profit peak. That reading supports the claim, so the statement is True.`,
       `**C.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At $x=0$, brown is below the axis; it only becomes positive after $x=1$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+At $x=0$ on the shared figure, brown is below the axis; it only becomes positive after $x=1$. For these firms, the sign of marginal profit is the expand-versus-contract signal. That reading conflicts with the claim, so the statement is False.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Purple falls through the axis between $x=4$ and $x=5$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Purple falls through the axis between $x=4$ and $x=5$. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: At $x=3$, brown and purple recommend expand while green recommends contract. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Read each firm's marginal-profit colour against the horizontal axis. At $x=3$, brown and purple recommend expand while green recommends contract. Disagreement in sign at even one $x$ means the firms do not share one recommendation on the whole interval. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 156,
@@ -11576,49 +10496,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Critical points of $f$ are zeros of $f'$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Critical points of $f$ are zeros of $f'$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive $f'$ ⇒ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Positive $f'$ ⇒ increasing $f$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative $f'$ ⇒ decreasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Monotonicity comes from the sign of the derivative on the figure. Negative $f'$ ⇒ decreasing $f$. That reading supports the claim, so the statement is True.`,
       `**D.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Highest green is steepest slope of brown, not a peak of brown. Brown's peak is near $x=5$ where green is $0$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Highest green is steepest slope of brown, not a peak of brown. Brown's peak is near $x=5$ where green is $0$. That reading conflicts with the claim, so the statement is False.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Green's peak height near $4$ at $x=3$ matches the steep middle climb of brown. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+At $x=3$ on the shared figure, read the colour(s) named in the stem. Green's peak height near $4$ at $x=3$ matches the steep middle climb of brown. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 157,
@@ -11644,49 +10534,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Visible $-$ to $+$ crossing at $x=4$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=4$ on the shared figure, read the colour(s) named in the stem. Visible $-$ to $+$ crossing at $x=4$. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown does not change from above to below (or below to above) across $x=1$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Brown does not change from above to below (or below to above) across $x=1$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Lowest point of brown aligns with a green zero. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Lowest point of brown aligns with a green zero. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive brown ⇒ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(4,5)$, read the sign of the plotted derivative across that stretch. Positive brown ⇒ increasing $f$. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Zeros of $f''$ control extrema of $f'$, not of $f$. Extrema of $f$ need zeros of $f'$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Locate the axis crossings the claim refers to on the drawn window. Zeros of $f''$ control extrema of $f'$, not of $f$. Extrema of $f$ need zeros of $f'$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 158,
@@ -11712,49 +10572,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: By construction on the figure, purple tracks brown minus green. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. By construction on the figure, purple tracks brown minus green. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: At $x=2$, brown is high and above green. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=2$ on the shared figure, brown is high and above green. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Brown drops toward/under green on the right; purple goes negative. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. Brown drops toward/under green on the right; purple goes negative. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Sign change of $P'$ from $+$ to $-$ is a local max of $P$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Read each firm's marginal-profit colour against the horizontal axis. Sign change of $P'$ from $+$ to $-$ is a local max of $P$. That $+$ to $-$ crossing of marginal profit marks the firm's local profit peak. That reading supports the claim, so the statement is True.`,
       `**E.** → False
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about, then check the same three geometric questions (sign, crossing direction, relative height). Also watch for category errors: a fact about $f'$ (slope) is not automatically a fact about $f$ (level), and a fact about $f''$ (concavity / whether $f'$ is rising) is not a fact about where $f$ has a local max or min.
-
-**Applied to this claim.** Step by step: Green stays positive, so cost keeps rising — no local cost maximum from a sign change of $C'$. That conflicts with what the claim asserts, so we reject the claim.
-
-**Conclusion.** The picture does not support the claim (wrong sign, wrong crossing, or a confused $f$/$f'$/$f''$ role). The statement is False.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Green stays positive, so cost keeps rising — no local cost maximum from a sign change of $C'$. That reading conflicts with the claim, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 159,
@@ -11780,49 +10610,19 @@ The statement is False.`
     tactical_explanations: [
       `**A.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Green crosses at $x=3$; brown bottoms there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Locate the axis crossings the claim refers to on the drawn window. Green crosses at $x=3$; brown bottoms there. That reading supports the claim, so the statement is True.`,
       `**B.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Negative green on the left of $x=3$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+On the interval $(0,3)$, read the sign of the plotted derivative across that stretch. Negative green on the left of $x=3$. That reading supports the claim, so the statement is True.`,
       `**C.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Purple tracks a parallel lift of brown. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Purple tracks a parallel lift of brown. That reading supports the claim, so the statement is True.`,
       `**D.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Positive brown ⇒ increasing $f$. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`,
+At $x=1$ on the shared figure, read the colour(s) named in the stem. Positive brown ⇒ increasing $f$. With $f'$ positive on that stretch, $f$ itself is increasing there. That reading supports the claim, so the statement is True.`,
       `**E.** → True
 
-**Assumption.** The figure's labels are correct (for example brown really is the named $f'$, $P'$, or $f$), every drawn curve is continuous on the visible window, and an axis crossing that clearly goes from one side of the axis to the other is a genuine sign change. We read approximate heights from the vertical scale. We do **not** invent or expand an algebraic formula when the graph already shows the needed information.
-
-**How to solve it.** Identify which curve the claim talks about (the stem names the colours / labels). Then ask three questions of the picture: (1) Is the curve above or below the horizontal axis at the relevant $x$? (2) Does it cross the axis there, and in which direction? (3) If two curves are drawn, which one sits higher at that $x$? Use only those geometric facts — not an algebraic formula for the curve.
-
-**Applied to this claim.** Step by step: Purple is non-negative and only touches zero at $x=3$. No sign change ⇒ the first-derivative test does not give a local extremum of $h$ there. That is exactly what the claim asserts.
-
-**Conclusion.** The geometric reading matches the claim, so the statement is True.`
+Match the stem's labels to the colours on the figure and check the geometric fact it asserts. Purple is non-negative and only touches zero at $x=3$. No sign change ⇒ the first-derivative test does not give a local extremum of $h$ there. That reading supports the claim, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 160,
