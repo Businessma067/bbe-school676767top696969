@@ -21,11 +21,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the turning abscissa as $-b/(2a)$, evaluate height there, then confirm the same abscissa as half the Vieta sum of the zeros.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=6$$\n\n$$S=-\\frac{b}{a}=-4\\Rightarrow\\frac{S}{2}=-2$$\n\nVertex abscissa and Vieta midpoint agree, so the statement is True.",
-        "**B.** → False\n\nThe gap on the axis and the meeting count are independent: evaluate $f-g$ at the axis first, then inspect the discriminant of $g-f$ separately.\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-15\\neq-17$$\n\n$$g(x)-f(x)=- x^{2} - 6 x + 7$$\n\n$$\\Delta=64\\Rightarrow 2\\text{ meetings, not }0$$\n\nBoth halves of the compound claim fail, so the statement is False.",
-        "**C.** → False\n\nMeeting abscissae are roots of $d=g-f$; their midpoint is the axis of $d$, which shifts whenever the line has nonzero slope.\n\n$$d(x)=- x^{2} - 6 x + 7$$\n\n$$x_{\\text{meet mid}}=-3,\\quad x_{\\text{axis of }g}=-2$$\n\nThe meeting midpoint and the parabola axis are compared correctly, The stem produces $-3$, not $-2$, so the statement is False.",
-        "**D.** → False\n\nA parabola $ax^{2}+bx+c$ has a vertical mirror $x=\\text{constant}$; a horizontal $y$-line through the vertex height is not the axis.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=6$$\n\nThe axis is the vertical line $x=-2$, not $y=7$, so the statement is False.",
-        "**E.** → False\n\nCombine the discriminant count with a direct height comparison on the axis.\n\n$$\\Delta=64\\Rightarrow 2\\text{ meetings}$$\n\n$$f-g\\big|_{x=-2}=-15$$\n\nBoth the meeting count and the axis gap match the figure, The stem produces $2$, not $3$, so the statement is False."
+        "**A.** → True\n\nThe turning point of a parabola sits on its axis of symmetry, and that axis has abscissa $-b/(2a)$. For the curve in the figure:\n\n$$x=-\\frac{-4}{2\\left(-1\\right)}$$\n\n$$x=-2$$\n\nSubstituting that abscissa returns the turning height:\n\n$$g\\left(-2\\right)=-\\left(-2\\right)^{2}-4\\left(-2\\right)+2$$\n\n$$g\\left(-2\\right)=6$$\n\nVieta gives the sum of the zeros as $-b/a$, and the axis always bisects the two zeros, so half that sum has to land on the same abscissa:\n\n$$x_{1}+x_{2}=-\\frac{-4}{-1}$$\n\n$$x_{1}+x_{2}=-4$$\n\n$$\\frac{x_{1}+x_{2}}{2}=-2$$\n\nThe reading from the plot and the Vieta midpoint both give $-2$, and the height at that abscissa is $6$, so the statement is True.",
+        "**B.** → False\n\nTwo separate things are asserted: the size of the vertical gap over the axis, and how often the graphs cross. Take the gap first, at the axis abscissa $x=-2$:\n\n$$f\\left(-2\\right)=-9$$\n\n$$g\\left(-2\\right)=6$$\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-15$$\n\nThe claim names $-17$. The crossing count is a different computation: the meeting abscissae are the real zeros of the difference.\n\n$$d(x)=g(x)-f(x)=-x^{2} - 6 x + 7$$\n\n$$\\Delta=\\left(-6\\right)^{2}-4\\left(-1\\right)\\cdot 7$$\n\n$$\\Delta=64$$\n\nA positive discriminant gives two crossings, not none. Both halves of the compound claim fail, so the statement is False.",
+        "**C.** → False\n\nThe meeting abscissae are the zeros of $d=g-f$, so their midpoint is the axis of that difference:\n\n$$d(x)=-x^{2} - 6 x + 7$$\n\n$$x_{1}+x_{2}=-6$$\n\n$$\\frac{x_{1}+x_{2}}{2}=-3$$\n\nThe vertex abscissa of the parabola is a different number:\n\n$$x=-2$$\n\nThe midpoint is $-3$, not the $-2$ the claim quotes, and the claim goes on to assert that $-2$ differs from $-2$ — the same number twice, so the statement is False.",
+        "**D.** → False\n\nFor $ax^{2}+bx+c$ the mirror line runs vertically through the turning point, so it is described by fixing $x$, never by fixing $y$. Here the axis is\n\n$$x=-2$$\n\nand folding the curve along it matches heights at equal distances either side:\n\n$$g\\left(-3\\right)=g\\left(-1\\right)=5$$\n\nA horizontal line cannot do that; it meets the parabola in at most two points instead of reflecting it. The number $7$ is not even the turning height, which is\n\n$$g\\left(-2\\right)=6$$\n\nThe axis is the vertical line $x=-2$, so the statement is False.",
+        "**E.** → False\n\nThe crossing count and the axis gap are independent computations, and here only one of them survives. The difference is quadratic, so its discriminant settles the count:\n\n$$d(x)=-x^{2} - 6 x + 7$$\n\n$$\\Delta=64$$\n\nThat gives two crossings, while the claim counts three; a quadratic difference can never supply a third. The gap, on the other hand, is quoted correctly:\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-15$$\n\nA compound claim needs both halves, and the count is wrong, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 101,
@@ -55,11 +55,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConstant second differences equal $2a$; the opening first difference is $a+b$; the $n=0$ entry is $c$.\n\n$$\\Delta^{(2)}=2a=2\\Rightarrow a=1$$\n\n$$\\Delta^{(1)}_0=a+b=-5\\Rightarrow b=-6$$\n\n$$s_0=c=3$$\n\nThe reconstructed triple matches the continuous quadratic, so the statement is True.",
-        "**B.** → False\n\nFirst differences of a quadratic sequence grow linearly; they are not the slope of the unrelated service line $f$.\n\n$$\\Delta^{(1)}_0=-5$$\n\n$$f'(x)=3\\neq-5$$\n\nConfusing $\\Delta^{{(1)}}$ with the slope of $f$ is a trap, so the statement is False.",
-        "**C.** → True\n\nOnce $a$ and $b$ are recovered from the table, form $-b/(2a)$ and compare with the printed continuous axis.\n\n$$x=-\\frac{-6}{2\\cdot 1}=3$$\n\n$$\\text{axis of }g=3$$\n\nDiscrete reconstruction and continuous model share the axis, so the statement is True.",
-        "**D.** → False\n\nRead the constant second-difference row carefully; twice that constant is $a$.\n\n$$\\Delta^{(2)}=2\\neq3$$\n\n$$a=\\frac{\\Delta^{(2)}}{2}=1$$\n\nThe constant is $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nSubstitute into the reconstructed rule, then cross-check against $g(3)$.\n\n$$s_3=1\\cdot 9+-6\\cdot 3+3=-6$$\n\n$$g(3)=-6$$\n\nTable entry and continuous evaluation agree, The stem produces $3$, not $4$, so the statement is False."
+        "**A.** → True\n\nA quadratic sequence $s_n=an^{2}+bn+c$ has constant second differences, and that constant is $2a$. The bottom row of the table therefore fixes the leading coefficient:\n\n$$2a=2$$\n\n$$a=1$$\n\nThe opening first difference is $s_{1}-s_{0}$, which for this shape equals $a+b$, so the second unknown follows:\n\n$$a+b=-5$$\n\n$$b=-6$$\n\nThe constant term is simply the entry at $n=0$:\n\n$$c=s_{0}=3$$\n\nThe rebuild gives $s_{n}=n^{2}-6n+3$, the same coefficients as the continuous model $g$, so the statement is True.",
+        "**B.** → False\n\nA first difference and a slope are different objects. The slope of a line is the number multiplying $x$ in its own formula:\n\n$$f(x)=3 x - 4$$\n\n$$m=3$$\n\nThe value $-5$ is only the first step of the sequence, and those steps do not repeat — each one is larger than the last by the constant second difference:\n\n$$s_{1}-s_{0}=-5$$\n\n$$s_{2}-s_{1}=-3$$\n\nA line has one slope for all of its points, so nothing about the sequence's opening step can force the slope to be $-5$, and the printed slope is $3$, so the statement is False.",
+        "**C.** → True\n\nWith $a=1$ and $b=-6$ recovered, the axis of the discrete quadratic is computed exactly as for any parabola:\n\n$$n=-\\frac{-6}{2\\cdot 1}$$\n\n$$n=3$$\n\nThe continuous model carries the identical coefficients, so its axis is the identical calculation:\n\n$$x=3$$\n\nThe table shows the same mirror directly, since entries at equal distances from that index agree:\n\n$$s_{0}=s_{6}=3$$\n\nDiscrete and continuous axes are both $x=3$, so the statement is True.",
+        "**D.** → False\n\nThe rule quoted is the right rule: second differences of a quadratic sequence equal $2a$, so a constant row of $3$ really would force a leading coefficient of $\\frac{3}{2}$.\n\n$$2a=3$$\n\n$$a=\\frac{3}{2}$$\n\nWhat fails is the premise. The bottom row of the printed table is constant at a different value:\n\n$$\\Delta^{(2)}=2$$\n\n$$a=1$$\n\nThe leading coefficient is $1$, not $\\frac{3}{2}$, so the statement is False.",
+        "**E.** → False\n\nThe two numbers quoted are correct and the label in front of them is not, which is enough to sink the claim. The entry and the evaluation do match:\n\n$$s_{3}=-6$$\n\n$$g\\left(3\\right)=-6$$\n\nBut the column named is $n=4$, and that column holds a different value:\n\n$$s_{4}=-5$$\n\n$$g\\left(4\\right)=-5$$\n\nThe entry $s_{3}$ does not sit at $n=4$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 102,
@@ -86,14 +86,14 @@
         false,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLocate the axis, subtract the heights in metres, then multiply by $100$ for centimetres — never convert before subtracting.\n\n$$x=4$$\n\n$$f-g=25\\text{ m}$$\n\n$$100(f-g)=2500\\text{ cm}$$\n\nMetre gap and centimetre conversion both match, so the statement is True.",
-        "**B.** → False\n\nDifferentiate $R(x)=x(mx+k)$; the critical point $-k/(2m)$ is unrelated to the clearance axis $-b/(2a)$ unless coefficients accidentally match.\n\n$$R(x)=x \\left(4 x - 3\\right)$$\n\n$$R'(x)=0\\Rightarrow x=\\frac{3}{8}$$\n\n$$\\text{axis of }g:\\ x=4$$\n\nRevenue peak and clearance axis need not coincide, so the statement is False.",
-        "**C.** → False\n\nUnder composition, highest powers multiply: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=16 x^{2} - 56 x + 37$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe highest power is $x^{2}$, not $x^{3}$, so the statement is False.",
-        "**D.** → True\n\nSolve $g(x)=f(x)$ and read the discriminant of the difference.\n\n$$g(x)-f(x)=x^{2} - 12 x + 7$$\n\n$$\\Delta=116$$\n\nThere are 2 meetings, so the statement is True.",
-        "**E.** → True\n\nOne metre is $1000$ millimetres; multiplying by $10$ under-converts by a factor of $100$.\n\n$$f-g=25\\text{ m}$$\n\n$$1000(f-g)=25000\\text{ mm}\\neq250$$\n\nThe millimetre conversion factor is $1000$, not $10$, so the statement is True."
+        "**A.** → True\n\nThe gap is measured over the axis of the clearance parabola, so locate that abscissa first:\n\n$$x=-\\frac{-8}{2\\cdot 1}$$\n\n$$x=4$$\n\nNow evaluate both models there and subtract in the order named, $f$ minus $g$:\n\n$$f\\left(4\\right)=13$$\n\n$$g\\left(4\\right)=-12$$\n\n$$f\\left(4\\right)-g\\left(4\\right)=25$$\n\nMetres become centimetres by a factor of one hundred:\n\n$$25\\cdot 100=2500$$\n\nGap and conversion both match the claim, so the statement is True.",
+        "**B.** → False\n\nRevenue and clearance are two different parabolas, so there is no reason for their axes to coincide. Multiplying the fare by the distance gives\n\n$$R(x)=x\\left(4 x - 3\\right)$$\n\n$$R(x)=4 x^{2} - 3 x$$\n\n$$x=-\\frac{-3}{2\\cdot 4}$$\n\n$$x=\\frac{3}{8}$$\n\nSo the abscissa $\\frac{3}{8}$ is genuinely the vertex of $R$ — though with a positive leading coefficient $4$ that vertex is the lowest point of revenue, not a peak. The clearance parabola turns somewhere else entirely:\n\n$$x=4$$\n\nThe two abscissae $\\frac{3}{8}$ and $4$ are not equal, so the statement is False.",
+        "**C.** → False\n\nSubstitution is not multiplication: nesting replaces $x$ by a linear expression, and the degrees multiply rather than add. Write it out:\n\n$$g(f(x))=\\left(4 x - 3\\right)^{2}-8\\left(4 x - 3\\right)+4$$\n\n$$g(f(x))=16 x^{2} - 56 x + 37$$\n\nThe only square in play is the square of a linear expression, which reaches $x^{2}$ and stops there:\n\n$$\\left(4 x - 3\\right)^{2}=16 x^{2} - 24 x + 9$$\n\nThere is no cubic term anywhere in the composition, so the statement is False.",
+        "**D.** → True\n\nMeetings are the real solutions of $f(x)=g(x)$, so move everything to one side and count zeros:\n\n$$g(x)-f(x)=x^{2} - 12 x + 7$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\cdot 1\\cdot 7$$\n\n$$\\Delta=116$$\n\nA positive discriminant gives two distinct real roots, so the line cuts the clearance parabola at two separate abscissae, so the statement is True.",
+        "**E.** → False\n\nThe gap itself is settled above: over the axis $f-g$ measures $25$ metres.\n\n$$f\\left(4\\right)-g\\left(4\\right)=25$$\n\nWhat the claim mishandles is the unit step rather than the arithmetic. Multiplying by ten does give the number quoted:\n\n$$25\\cdot 10=250$$\n\nBut one metre is a thousand millimetres, so the conversion needs the larger factor:\n\n$$25\\cdot 1000=25000$$\n\nThe factor $10$ only carries centimetres to millimetres. In millimetres the gap is $25000$, not $250$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 103,
@@ -123,11 +123,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubtracting a slanted line shifts the linear coefficient, hence the axis.\n\n$$d(x)=g(x)-f(x)$$\n\n$$x_{d}=-\\frac{b-m}{2a}\\neq-\\frac{b}{2a}=x_{g}\\text{ when }m\\neq 0$$\n\nA nonzero slope moves the axis of the difference, so the statement is True.",
-        "**B.** → True\n\nA line contributes no square term, so the quadratic coefficient survives unchanged.\n\n$$d(x)=ax^{2}+(b-m)x+(c-k)$$\n\nThe quadratic coefficient is unchanged, so the statement is True.\n\n$$\\text{coef of }x^{2}=a$$",
-        "**C.** → True\n\nTangency gives $d$ a double root, which sits at its vertex on the $x$-axis.\n\n$$\\Delta_{d}=0\\Rightarrow\\text{one repeated root of }d$$\n\nA double root forces the vertex onto the axis, so the statement is True.\n\n$$d(x_{0})=0=d'(x_{0})$$",
-        "**D.** → False\n\nHighest powers multiply under composition: two times one equals two, not three.\n\n$$\\text{top power of }g(f(x))=2\\neq 3$$\n\nPowers multiply; they do not add, so the statement is False.\n\n$$2\\cdot 1=2$$",
-        "**E.** → True\n\nAn upward opening parabola is bounded below and attains its minimum.\n\n$$a>0\\Rightarrow d\\text{ opens upward}$$\n\nPositive leading coefficient gives a minimum, so the statement is True.\n\n$$\\min d\\text{ exists iff }a>0$$"
+        "**A.** → True\n\nSubtracting a line from a parabola leaves the squared term alone but changes the linear coefficient. Writing $g(x)=ax^{2}+bx+c$ and $f(x)=mx+k$:\n\n$$d(x)=ax^{2}+\\left(b-m\\right)x+\\left(c-k\\right)$$\n\nAn axis depends only on the first two coefficients, so compare the two axes built from them:\n\n$$x_{d}=-\\frac{b-m}{2a}$$\n\n$$x_{g}=-\\frac{b}{2a}$$\n\n$$x_{d}-x_{g}=\\frac{m}{2a}$$\n\nThat difference vanishes only when $m$ does, and a non-constant line has $m\\neq 0$, so the two axes really do sit apart, so the statement is True.",
+        "**B.** → True\n\nThe subtraction runs coefficient by coefficient, and a line has no squared term to contribute:\n\n$$d(x)=\\left(ax^{2}+bx+c\\right)-\\left(mx+k\\right)$$\n\n$$d(x)=ax^{2}+\\left(b-m\\right)x+\\left(c-k\\right)$$\n\nOnly the linear and constant coefficients absorb $m$ and $k$, so the coefficient of $x^{2}$ in $d$ is the untouched leading coefficient of $g$:\n\n$$a_{d}=a$$\n\nThat is exactly what the claim asserts, so the statement is True.",
+        "**C.** → True\n\nTangency means the graphs touch without crossing, so the equation $g(x)=f(x)$ has one repeated solution. A repeated solution of the difference is a double zero:\n\n$$d(x)=a\\left(x-x_{0}\\right)^{2}$$\n\nA double zero sits on the axis, so $x_{0}$ is the vertex abscissa, and the vertex height is the value of $d$ there:\n\n$$d\\left(x_{0}\\right)=0$$\n\nA vertex of height zero lies on the horizontal axis, so the statement is True.",
+        "**D.** → False\n\nDegrees add when polynomials are multiplied; under substitution they multiply instead. Put the line inside the quadratic:\n\n$$g(f(x))=a\\left(mx+k\\right)^{2}+b\\left(mx+k\\right)+c$$\n\nSquaring a linear expression reaches $x^{2}$ and no further, so the expansion closes at the second power:\n\n$$g(f(x))=am^{2}x^{2}+\\left(2amk+bm\\right)x+\\left(ak^{2}+bk+c\\right)$$\n\nThe highest power is $x^{2}$, the product of the two degrees, while the rule in the claim would predict $x^{3}$, so the statement is False.",
+        "**E.** → True\n\nThe difference inherits the leading coefficient of $g$, so it opens the same way $g$ does:\n\n$$d(x)=ax^{2}+\\left(b-m\\right)x+\\left(c-k\\right)$$\n\nAn upward parabola falls to its vertex and rises after it, so the vertex height is the least value it ever takes:\n\n$$d(x)\\geq d\\left(x_{d}\\right)$$\n\nA downward one has a greatest value instead and falls without bound on both sides, so it has no smallest value at all. The existence of a minimum is therefore exactly the upward case:\n\n$$a>0$$\n\nThat is the condition named, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
@@ -149,18 +149,18 @@
         "There exists a real $t$ making $\\Delta(t)=0$ (tangency)."
       ],
       "answer_key": [
+        false,
         true,
         true,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTangency means the intersection quadratic has discriminant zero.\n\n$$\\Delta(t)=4 t^{2} + 20 t + 32$$\n\n$$\\Delta\\left(3\\right)=128$$\n\nThe discriminant vanishes exactly when the line touches once, so the statement is True.",
-        "**B.** → True\n\nA single probe value cannot certify an infinite half-line; the discriminant of $\\Delta(t)$ itself may change sign again.\n\n$$\\Delta(t)=4 t^{2} + 20 t + 32$$\n\n$$\\Delta\\left(5\\right)=232$$\n\nThe blanket inequality overstates the admissible range, so the statement is True.",
-        "**C.** → True\n\nCount real roots of $g_t(x)-f(x)$ via the discriminant at this $t$.\n\n$$\\Delta=128$$\n\nMeeting count is 2, so the statement is True.\n\n$$\\#=2\\Leftrightarrow\\Delta>0$$",
-        "**D.** → True\n\nThe difference $g_t-f$ stays quadratic in $x$ for every parameter value.\n\n$$\\text{degree of }(g_t-f)=2$$\n\nAt most two real meetings for any $t$, so the statement is True.\n\n$$\\leq 2\\text{ roots}$$",
-        "**E.** → True\n\nSolve the discriminant equation $\\Delta(t)=0$ for the parameter.\n\n$$\\Delta(t)=4 t^{2} + 20 t + 32$$\n\nTangency occurs for at least one real $t$, so the statement is True.\n\n$$\\Delta(t)=0$$"
+        "**A.** → False\n\nTangency is the case of a single repeated meeting, which happens exactly when the difference has discriminant zero. Build that difference for the whole family first:\n\n$$g_t(x)-f(x)=x^{2}-\\left(2t+6\\right)x+\\left(t+1\\right)$$\n\n$$\\Delta(t)=\\left(2 t + 6\\right)^{2}-4\\left(t + 1\\right)$$\n\n$$\\Delta(t)=4 t^{2} + 20 t + 32$$\n\nNow substitute the run under review:\n\n$$\\Delta(3)=128$$\n\nA discriminant of $128$ is far from zero, so the line cuts this parabola at two separate abscissae instead of touching it once, so the statement is False.",
+        "**B.** → True\n\nThe question is whether the discriminant stays positive along the whole half-line, and that is itself a quadratic question. The discriminant of the family is\n\n$$\\Delta(t)=4 t^{2} + 20 t + 32$$\n\nIts own discriminant decides whether it ever reaches zero:\n\n$$20^{2}-4\\cdot 4\\cdot 32=-112$$\n\nA negative value there means $\\Delta(t)$ has no real zeros, and its leading coefficient $4$ is positive, so it never drops to the axis:\n\n$$\\Delta(t)>0$$\n\nPositive for every $t$ is in particular positive for every $t>4$, and a positive discriminant means two distinct crossings, so the statement is True.",
+        "**C.** → True\n\nAt a fixed parameter the family collapses to a single parabola, so substitute before counting:\n\n$$g_3(x)=x^{2} - 6 x + 3$$\n\n$$g_3(x)-f(x)=x^{2} - 12 x + 4$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\cdot 1\\cdot 4$$\n\n$$\\Delta=128$$\n\nA positive discriminant leaves the difference with two distinct real zeros, and each zero is a crossing, so the statement is True.",
+        "**D.** → True\n\nWhatever the parameter does to the coefficients, subtracting a line never removes the squared term:\n\n$$g_t(x)-f(x)=x^{2}-\\left(2t+6\\right)x+\\left(t+1\\right)$$\n\nThe leading coefficient stays $1$ for every $t$, so the difference is a genuine quadratic and the quadratic formula offers only two candidate abscissae:\n\n$$x=\\frac{2 t + 6\\pm\\sqrt{\\Delta(t)}}{2}$$\n\nDepending on the sign of $\\Delta(t)$ that list supplies two crossings, one, or none, but never a third, so the statement is True.",
+        "**E.** → False\n\nTangency somewhere in the family would need the discriminant to vanish for some real parameter, so solve that equation:\n\n$$4 t^{2} + 20 t + 32=0$$\n\n$$t^{2} + 5 t + 8=0$$\n\nWhether a real $t$ exists is decided by the discriminant of this parameter equation:\n\n$$5^{2}-4\\cdot 1\\cdot 8=-7$$\n\nA negative value means no real $t$ solves it, so $\\Delta(t)$ never reaches zero and no member of the family is tangent to the line, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 105,
@@ -189,11 +189,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nPoint-slope form: $f(x)=m(x-x_0)+y_0$.\n\n$$f(x)=2 x$$\n\nThe line matches the data, so the statement is True.\n\n$$m=2$$",
-        "**B.** → False\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$ against the rebuilt pair.\n\n$$A=\\frac{1}{2^2}=\\frac{1}{4}$$\n\n$$B=-7,\\ C=7$$\n\n$A=\\frac{1}{4}$ is consistent with the rewrite, The stem produces $2$, not $3$, so the statement is False.",
-        "**C.** → False\n\nThe rewrite leading coefficient is $a/m^{2}$, not an off-by-one guess.\n\n$$A=\\frac{1}{4}\\neq\\frac{5}{4}$$\n\nThe correct $A$ is $\\frac{1}{4}$, so the statement is False.\n\n$$A=\\frac{1}{4}$$",
-        "**D.** → False\n\nSolve $g=f$ for the meeting count, then evaluate $g$ on the axis for height.\n\n$$\\Delta=228\\Rightarrow 2\\text{ meetings}$$\n\n$$g\\left(7\\right)=-42\\neq-40$$\n\nMeeting count and vertex height both match the rebuild, The stem produces $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nThe axis is the midpoint of the roots or $-b/(2a)$, not a one-unit shift.\n\n$$x=7\\neq8$$\n\nThe axis is $x=7$, not $x=8$, so the statement is False.\n\n$$x=7$$"
+        "**A.** → True\n\nA slope and one point determine a line: keep the slope and let the point fix the intercept.\n\n$$y=2x+q$$\n\n$$8=2\\cdot 4+q$$\n\n$$q=0$$\n\nSo the line is $f(x)=2 x$. Substituting the given abscissa checks it:\n\n$$f\\left(4\\right)=8$$\n\nThe rebuilt formula reproduces the point with the stated slope, so the statement is True.",
+        "**B.** → False\n\nThe number $\\frac{1}{4}$ is right, but the power attached to it is not. A cube of a linear expression climbs to $x^{3}$, and the rebuilt parabola has no cubic term to absorb it:\n\n$$f(x)^{3}=8 x^{3}$$\n\nThe square is the power that fits, and matching squared terms fixes the coefficient:\n\n$$f(x)^{2}=4 x^{2}$$\n\n$$4A=1$$\n\n$$A=\\frac{1}{4}$$\n\nWith that value the rewrite closes:\n\n$$g(x)=\\frac{1}{4}f(x)^{2}-7f(x)+7$$\n\nThe correct rewrite uses $f(x)^{2}$, not $f(x)^{3}$, so the statement is False.",
+        "**C.** → False\n\nOnly the squared terms matter for the leading coefficient of the rewrite, so compare them directly:\n\n$$f(x)^{2}=4 x^{2}$$\n\n$$A\\cdot 4x^{2}=x^{2}$$\n\n$$A=\\frac{1}{4}$$\n\nTesting the claimed value shows the mismatch at once:\n\n$$\\frac{5}{4}\\cdot 4x^{2}=5x^{2}$$\n\nThat would describe a parabola five times as steep as the rebuilt one, whose squared term is plain $x^{2}$, so the statement is False.",
+        "**D.** → False\n\nThe vertex height in the claim is correct, so the count is what has to be tested. Subtract the line from the parabola:\n\n$$g(x)-f(x)=x^{2} - 16 x + 7$$\n\n$$\\Delta=\\left(-16\\right)^{2}-4\\cdot 1\\cdot 7$$\n\n$$\\Delta=228$$\n\nA positive discriminant means two distinct real crossings, and a quadratic difference cannot supply a third. The height does check out:\n\n$$g\\left(7\\right)=-42$$\n\nA correct height cannot rescue a wrong count, so the statement is False.",
+        "**E.** → False\n\nThe axis runs through the vertex, and the rebuild data name that vertex outright:\n\n$$V=\\left(7,-42\\right)$$\n\nThe rebuilt coefficients say the same thing:\n\n$$x=-\\frac{-14}{2\\cdot 1}$$\n\n$$x=7$$\n\nIf the mirror were the claimed $x=8$, heights at equal distances from it would agree, and they do not:\n\n$$g\\left(7\\right)=-42$$\n\n$$g\\left(9\\right)=-38$$\n\nThe axis is $x=7$, not $x=8$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 106,
@@ -222,11 +222,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nHighest powers multiply under nesting; leading coefficients multiply by the outer map's lead and the inner lead raised to the outer degree.\n\n$$g(f(x))=9 x^{2} - 6 x + 5$$\n\n$$f(g(x))=3 x^{2} - 12 x + 25$$\n\n$$\\text{leads }9\\text{ and }3$$\n\nDegrees and leading coefficients of both orders match, so the statement is True.",
-        "**B.** → False\n\nHighest powers multiply under nesting: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=9 x^{2} - 6 x + 5$$\n\nThe top power is $x^{2}$, not $x^{3}$, so the statement is False.\n\n$$\\text{top power}=2$$",
-        "**C.** → True\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{3^2}=\\frac{1}{9}$$\n\n$$B=-\\frac{14}{9},\\ C=\\frac{85}{9}$$\n\n$A=\\frac{1}{9}$ is consistent, so the statement is True.",
-        "**D.** → False\n\nEvaluate the inner map first in each order; composition is not commutative.\n\n$$f(1)=4,\\quad g(f(1))=8$$\n\n$$g(1)=5,\\quad f(g(1))=16$$\n\nBoth nested evaluations match, The stem produces $1$, not $2$, so the statement is False.",
-        "**E.** → False\n\nA single coincidence does not make a general law; the two orders differ here.\n\n$$f(g(1))=16$$\n\n$$g(f(1))=8$$\n\nThe orders need not agree in general, so the statement is False."
+        "**A.** → True\n\nComposition substitutes one formula into the other, so expand both orders before comparing. First the line inside the parabola:\n\n$$g(f(x))=\\left(3 x + 1\\right)^{2}-4\\left(3 x + 1\\right)+8$$\n\n$$g(f(x))=9 x^{2} - 6 x + 5$$\n\nNow the parabola inside the line, where the outer formula only scales and shifts what it receives:\n\n$$f(g(x))=3\\left(x^{2} - 4 x + 8\\right)+1$$\n\n$$f(g(x))=3 x^{2} - 12 x + 25$$\n\nBoth compositions are quadratic, with leading coefficients $9$ and $3$ as claimed, so the statement is True.",
+        "**B.** → False\n\nDegrees add when polynomials are multiplied; under substitution they multiply, and here one of the two degrees is $1$. Expanding shows where the highest power comes from:\n\n$$g(f(x))=\\left(3 x + 1\\right)^{2}-4\\left(3 x + 1\\right)+8$$\n\n$$g(f(x))=9 x^{2} - 6 x + 5$$\n\nThe only square in play is the square of a linear expression:\n\n$$\\left(3 x + 1\\right)^{2}=9 x^{2} + 6 x + 1$$\n\nThat reaches $x^{2}$ and stops, and no other term in $g$ raises the power, so there is no cubic term to be had, so the statement is False.",
+        "**C.** → True\n\nRewriting $g$ in powers of $f$ is coefficient matching, and the squared term alone fixes $A$. Square the line:\n\n$$f(x)^{2}=9 x^{2} + 6 x + 1$$\n\nOnly $A f(x)^{2}$ can produce a squared term, since $B f(x)+C$ is linear, so match the two squared terms:\n\n$$9A=1$$\n\n$$A=\\frac{1}{9}$$\n\nThe linear and constant coefficients then determine the other two numbers and the rewrite closes:\n\n$$g(x)=\\frac{1}{9}f(x)^{2}-\\frac{14}{9}f(x)+\\frac{85}{9}$$\n\nSuch $A$, $B$, $C$ exist and $A=\\frac{1}{9}$, so the statement is True.",
+        "**D.** → False\n\nEach composition is evaluated from the inside out. For the first one the line acts before the parabola:\n\n$$f\\left(2\\right)=7$$\n\n$$g\\left(7\\right)=29$$\n\nThe claim quotes $8$, which this composition does reach — but one unit earlier, at a different inner abscissa:\n\n$$g(f(1))=8$$\n\nThe second evaluation in the claim does hold:\n\n$$g\\left(1\\right)=5$$\n\n$$f\\left(5\\right)=16$$\n\nOne of the two numbers is $29$ rather than $8$, and a compound claim needs both, so the statement is False.",
+        "**E.** → False\n\nComposition is not symmetric: the inner formula acts first, so swapping the order changes what gets substituted. The stem's own pair already disagrees at $x=1$:\n\n$$g(f(1))=8$$\n\n$$f(g(1))=16$$\n\nA single pair where the two orders differ is enough to refute a claim about every line and every parabola:\n\n$$8\\neq 16$$\n\nEquality can happen for special pairs, but not for every pair, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 107,
@@ -255,11 +255,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEach linear factor $x-r$ contributes a zero at $x=r$; the leading constant does not move the zeros.\n\n$$g(x)=(x-1)(x-5)$$\n\n$$g\\left(1\\right)=0,\\quad g\\left(5\\right)=0$$\n\nBoth claimed zeros sit on the factors, so the statement is True.",
-        "**B.** → True\n\nVieta gives $S=-b/a$; the axis is the midpoint $S/2$.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\n$$S=6$$\n\n$$x_{\\text{axis}}=3$$\n\nSum and axis agree with the factors, so the statement is True.",
-        "**C.** → False\n\nShifting a single root would move the midpoint, but both roots are fixed; the axis stays at their average.\n\n$$x=3\\neq 4$$\n\nThe axis is $x=3$, not $x=4$, so the statement is False.\n\n$$x=3$$",
-        "**D.** → False\n\nVieta gives $P=c/a$ with no extra minus; flipping the sign is a common exam trap.\n\n$$P=5=1\\cdot5$$\n\nThe product is $5$, not $-5$, so the statement is False.\n\n$$P=5$$",
-        "**E.** → True\n\nAt a zero of $g$, the gap collapses to $f(r)$. Separately, meetings solve $g-f=0$.\n\n$$f\\left(1\\right)-g\\left(1\\right)=1$$\n\n$$g(x)-f(x)=x^{2} - 9 x + 7$$\n\n$$\\Delta=53\\Rightarrow 2\\text{ meetings}$$\n\nBoth the local gap and the global meeting count match, so the statement is True."
+        "**A.** → True\n\nA product is zero exactly when one of its factors is zero, so the factored form hands over the zeros with no expansion at all:\n\n$$x-1=0$$\n\n$$x-5=0$$\n\nThe two abscissae are $1$ and $5$. Substituting either one collapses the whole product:\n\n$$g\\left(1\\right)=0$$\n\n$$g\\left(5\\right)=0$$\n\nThose are exactly the zeros named, so the statement is True.",
+        "**B.** → True\n\nExpanding puts the coefficients where Vieta can reach them:\n\n$$g(x)=x^{2} - 6 x + 5$$\n\n$$x_{1}+x_{2}=-\\frac{-6}{1}$$\n\n$$x_{1}+x_{2}=6$$\n\nThe axis bisects the zeros, so halving that sum gives it:\n\n$$\\frac{6}{2}=3$$\n\nRoot sum $6$ and axis $x=3$, both as claimed, so the statement is True.",
+        "**C.** → False\n\nThe axis sits midway between the zeros, so it is their average and not a root shifted by hand:\n\n$$\\frac{1+5}{2}=3$$\n\nSliding it one unit to $x=4$ would demand that heights at equal distances either side of that line agree. They do not:\n\n$$g\\left(3\\right)=-4$$\n\n$$g\\left(5\\right)=0$$\n\nOnly $x=3$ folds the curve onto itself, so the statement is False.",
+        "**D.** → False\n\nVieta gives the product as $c/a$, with no extra minus sign attached:\n\n$$x_{1}x_{2}=\\frac{5}{1}$$\n\n$$x_{1}x_{2}=5$$\n\nThe factored form says the same without any formula at all:\n\n$$1\\cdot 5=5$$\n\nThe claim flips a sign that was never there, reporting $-5$ instead of $5$, so the statement is False.",
+        "**E.** → True\n\nTwo things to settle: the signed gap at a named abscissa, and the total number of crossings. At the left-hand zero the parabola is on the horizontal axis, so the gap is just the height of the line:\n\n$$g\\left(1\\right)=0$$\n\n$$f\\left(1\\right)=1$$\n\n$$f\\left(1\\right)-g\\left(1\\right)=1$$\n\nFor the crossings, subtract and count real zeros:\n\n$$g(x)-f(x)=x^{2} - 9 x + 7$$\n\n$$\\Delta=53$$\n\nA positive discriminant gives two crossings, so both halves hold, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 108,
@@ -285,14 +285,14 @@
         true,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the marked turning point; confirm with $-b/(2a)$ and $g$ there.\n\n$$x=-4$$\n\n$$g\\left(-4\\right)=19$$\n\nAxis and height match the figure, so the statement is True.",
-        "**B.** → True\n\nLeading-coefficient quotient $a/m^{2}$ gives $A$ without expanding fully.\n\n$$A=\\frac{-1}{5^2}=-\\frac{1}{25}$$\n\n$A=-\\frac{1}{25}$, so the statement is True.\n\n$$A=-\\frac{1}{25}$$",
-        "**C.** → False\n\nSolve $g=f$ and read the discriminant.\n\n$$\\Delta=169$$\n\nThere are 2 meetings, not 4, so the statement is False.\n\n$$\\#=2$$",
-        "**D.** → True\n\nEvaluate both formulas at the origin before subtracting.\n\n$$f(0)-g(0)=0$$\n\nThe gap matches, so the statement is True.\n\n$$f(0)=3$$",
-        "**E.** → True\n\nNesting multiplies degrees: $2\\cdot 1=2$.\n\n$$g(f(x))=- 25 x^{2} - 70 x - 30$$\n\nThe composition stays quadratic, so the statement is True.\n\n$$\\text{top power}=2$$"
+        "**A.** → True\n\nThe sketch shows a downward parabola, and its turning point is where the axis meets the curve. Compute that abscissa from the coefficients:\n\n$$x=-\\frac{-8}{2\\left(-1\\right)}$$\n\n$$x=-4$$\n\nSubstituting it returns the height of the turning point:\n\n$$g\\left(-4\\right)=-\\left(-4\\right)^{2}-8\\left(-4\\right)+3$$\n\n$$g\\left(-4\\right)=19$$\n\nAxis at $x=-4$ and vertex height $19$: the geometry in the figure and the algebra agree, so the statement is True.",
+        "**B.** → True\n\nRewriting $g$ in powers of the line is coefficient matching, and only the squared terms decide the leading coefficient. Square the line:\n\n$$f(x)^{2}=25 x^{2} + 30 x + 9$$\n\nThe term $B f(x)+C$ contributes nothing quadratic, so the squared term of $g$ has to come out of $A f(x)^{2}$ alone:\n\n$$25A=-1$$\n\n$$A=-\\frac{1}{25}$$\n\nOnly the two leading coefficients were needed, $-1$ for $g$ and $5$ for $f$, so the statement is True.",
+        "**C.** → False\n\nA line and a parabola meet where their difference vanishes, and that difference is quadratic, so four real zeros are impossible. Subtract:\n\n$$g(x)-f(x)=-x^{2} - 13 x$$\n\n$$-x \\left(x + 13\\right)=0$$\n\n$$x=-13$$\n\n$$x=0$$\n\nTwo crossings, and the shape of the equation forbids any more, so the statement is False.",
+        "**D.** → True\n\nAt the vertical axis both formulas collapse onto their constant terms:\n\n$$f(0)=3$$\n\n$$g(0)=3$$\n\n$$f(0)-g(0)=0$$\n\nA signed gap of zero means the two graphs pass through the same point there, which is exactly the crossing at $x=0$ found from the difference, so the statement is True.",
+        "**E.** → False\n\nWhat the figure shows is the shape of $g$; the degree of a composition has to be expanded, not read off a picture. Substituting the line into the parabola:\n\n$$g(f(x))=-\\left(5 x + 3\\right)^{2}-8\\left(5 x + 3\\right)+3$$\n\n$$g(f(x))=-25 x^{2} - 70 x - 30$$\n\nThe only square present is the square of a linear expression, which reaches $x^{2}$ and stops:\n\n$$\\left(5 x + 3\\right)^{2}=25 x^{2} + 30 x + 9$$\n\nThe composition is quadratic, not cubic, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 109,
@@ -316,17 +316,17 @@
       ],
       "answer_key": [
         true,
+        false,
         true,
-        true,
-        true,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply $x=-b/(2a)$ then evaluate $p$ there.\n\n$$x=\\frac{3}{10}$$\n\n$$p\\left(\\frac{3}{10}\\right)=\\frac{11}{20}$$\n\nAxis and height both match, so the statement is True.",
-        "**B.** → True\n\nPoint-slope reconstruction fixes both slope and intercept; changing the intercept moves the line off the given point.\n\n$$y-11=3(x-2)\\Rightarrow y=3 x + 5$$\n\n$$y=3 x + 6\\text{ misses }(2,11)$$\n\nThe intercept cannot be shifted without leaving the point, so the statement is True.",
-        "**C.** → True\n\nAxis $x=-b/(2a)$; evaluate $q$ there for the height.\n\n$$x=\\frac{3}{2}$$\n\n$$q\\left(\\frac{3}{2}\\right)=\\frac{1}{2}$$\n\nVertex abscissa and height match, so the statement is True.",
-        "**D.** → True\n\nDegrees multiply under nesting.\n\n$$g(f(x))=2 x^{2} + x - 1$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe degree is $2$, not $3$, so the statement is True.",
-        "**E.** → True\n\nVieta: product $c/a$ with no extra minus sign.\n\n$$P=5=1\\cdot5$$\n\nThe product is $5$, not $-5$, so the statement is True.\n\n$$P=5$$"
+        "**A.** → True\n\nScenario (i) asks for the axis and the turning height of one parabola. The axis comes from the first two coefficients:\n\n$$x=-\\frac{-3}{2\\cdot 5}$$\n\n$$x=\\frac{3}{10}$$\n\nSubstituting that abscissa gives the height:\n\n$$p\\left(\\frac{3}{10}\\right)=5\\left(\\frac{3}{10}\\right)^{2}-3\\left(\\frac{3}{10}\\right)+1$$\n\n$$p\\left(\\frac{3}{10}\\right)=\\frac{11}{20}$$\n\nAxis $\\frac{3}{10}$ and height $\\frac{11}{20}$ are the two numbers claimed, so the statement is True.",
+        "**B.** → False\n\nScenario (ii) has a correct first half and a false second half. The slope and the point fix the intercept:\n\n$$11=3\\cdot 2+q$$\n\n$$q=5$$\n\nSo $y=3x+5$ is right. Shifting the intercept by one unit gives a parallel line, and parallel lines with different intercepts have no point in common:\n\n$$y=3x+6$$\n\n$$3\\cdot 2+6=12$$\n\nThat height is $12$, not the $11$ the point requires, so the statement is False.",
+        "**C.** → True\n\nScenario (iii) is a downward parabola, so its vertex is a highest point. The abscissa first:\n\n$$x=-\\frac{6}{2\\left(-2\\right)}$$\n\n$$x=\\frac{3}{2}$$\n\nThen the height there:\n\n$$q\\left(\\frac{3}{2}\\right)=-2\\left(\\frac{3}{2}\\right)^{2}+6\\left(\\frac{3}{2}\\right)-4$$\n\n$$q\\left(\\frac{3}{2}\\right)=\\frac{1}{2}$$\n\nVertex abscissa $\\frac{3}{2}$ and height $\\frac{1}{2}$, as claimed, so the statement is True.",
+        "**D.** → False\n\nScenario (iv) substitutes a line into a parabola, and substitution multiplies the degrees instead of adding them. Replace $x$ by the line inside $g$:\n\n$$g(f(x))=\\left(x + 1\\right)\\left(2\\left(x + 1\\right)-3\\right)$$\n\n$$g(f(x))=2 x^{2} + x - 1$$\n\nThe factored form makes the same point: a product of two linear factors is quadratic.\n\n$$g(f(x))=\\left(x + 1\\right) \\left(2 x - 1\\right)$$\n\nThe highest power is $x^{2}$, so the composition is quadratic rather than cubic, so the statement is False.",
+        "**E.** → False\n\nScenario (v) is a Vieta sign trap. For a monic quadratic the product of the roots is the constant term itself, with no sign change:\n\n$$x_{1}x_{2}=\\frac{5}{1}$$\n\n$$x_{1}x_{2}=5$$\n\nFactoring confirms it, since the roots can be read off directly:\n\n$$x^{2} - 6 x + 5=\\left(x-1\\right)\\left(x-5\\right)$$\n\n$$1\\cdot 5=5$$\n\nThe product is $5$, not $-5$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 110,
@@ -351,15 +351,15 @@
         true,
         false,
         true,
-        true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the turning abscissa as $-b/(2a)$, evaluate height there, then confirm the same abscissa as half the Vieta sum of the zeros.\n\n$$x=-\\frac{b}{2a}=-\\frac{-12}{2\\cdot 1}=6$$\n\n$$g\\left(6\\right)=-31$$\n\n$$S=-\\frac{b}{a}=12\\Rightarrow\\frac{S}{2}=6$$\n\nVertex abscissa and Vieta midpoint agree, so the statement is True.",
-        "**B.** → False\n\nThe gap on the axis and the meeting count are independent: evaluate $f-g$ at the axis first, then inspect the discriminant of $g-f$ separately.\n\n$$f\\left(6\\right)-g\\left(6\\right)=39\\neq41$$\n\n$$g(x)-f(x)=x^{2} - 14 x + 9$$\n\n$$\\Delta=160\\Rightarrow 2\\text{ meetings, not }0$$\n\nBoth halves of the compound claim fail, so the statement is False.",
-        "**C.** → True\n\nMeeting abscissae are roots of $d=g-f$; their midpoint is the axis of $d$, which shifts whenever the line has nonzero slope.\n\n$$d(x)=x^{2} - 14 x + 9$$\n\n$$x_{\\text{meet mid}}=7,\\quad x_{\\text{axis of }g}=6$$\n\nThe meeting midpoint and the parabola axis are compared correctly, so the statement is True.",
-        "**D.** → True\n\nA parabola $ax^{2}+bx+c$ has a vertical mirror $x=\\text{constant}$; a horizontal $y$-line through the vertex height is not the axis.\n\n$$x=6$$\n\n$$g\\left(6\\right)=-31$$\n\nThe axis is the vertical line $x=6$, not $y=-30$, so the statement is True.",
-        "**E.** → True\n\nCombine the discriminant count with a direct height comparison on the axis.\n\n$$\\Delta=160\\Rightarrow 2\\text{ meetings}$$\n\n$$f-g\\big|_{x=6}=39$$\n\nBoth the meeting count and the axis gap match the figure, so the statement is True."
+        "**A.** → True\n\nThe turning point of a parabola sits on its axis of symmetry, and that axis has abscissa $-b/(2a)$. For the curve in the figure:\n\n$$x=-\\frac{-12}{2\\cdot 1}$$\n\n$$x=6$$\n\nSubstituting that abscissa returns the turning height:\n\n$$g\\left(6\\right)=\\left(6\\right)^{2}-12\\left(6\\right)+5$$\n\n$$g\\left(6\\right)=-31$$\n\nVieta gives the sum of the zeros as $-b/a$, and the axis always bisects the two zeros, so half that sum has to land on the same abscissa:\n\n$$x_{1}+x_{2}=-\\frac{-12}{1}$$\n\n$$x_{1}+x_{2}=12$$\n\n$$\\frac{x_{1}+x_{2}}{2}=6$$\n\nThe reading from the plot and the Vieta midpoint both give $6$, and the height at that abscissa is $-31$, so the statement is True.",
+        "**B.** → False\n\nTwo separate things are asserted: the size of the vertical gap over the axis, and how often the graphs cross. Take the gap first, at the axis abscissa $x=6$:\n\n$$f\\left(6\\right)=8$$\n\n$$g\\left(6\\right)=-31$$\n\n$$f\\left(6\\right)-g\\left(6\\right)=39$$\n\nThe claim names $41$. The crossing count is a different computation: the meeting abscissae are the real zeros of the difference.\n\n$$d(x)=g(x)-f(x)=x^{2} - 14 x + 9$$\n\n$$\\Delta=\\left(-14\\right)^{2}-4\\cdot 1\\cdot 9$$\n\n$$\\Delta=160$$\n\nA positive discriminant gives two crossings, not none. Both halves of the compound claim fail, so the statement is False.",
+        "**C.** → True\n\nThe graphs meet where the difference vanishes, so the meeting abscissae are the zeros of $d=g-f$ and their midpoint is the axis of $d$ rather than the axis of $g$.\n\n$$d(x)=x^{2} - 14 x + 9$$\n\n$$x_{1}+x_{2}=14$$\n\n$$\\frac{x_{1}+x_{2}}{2}=7$$\n\nThe parabola's own axis is built from $g$ alone:\n\n$$x=6$$\n\nSubtracting the line changed the linear coefficient, which slides the midpoint of the meetings away from the vertex abscissa, exactly as the claim says, so the statement is True.",
+        "**D.** → False\n\nFor $ax^{2}+bx+c$ the mirror line runs vertically through the turning point, so it is described by fixing $x$, never by fixing $y$. Here the axis is\n\n$$x=6$$\n\nand folding the curve along it matches heights at equal distances either side:\n\n$$g\\left(5\\right)=g\\left(7\\right)=-30$$\n\nA horizontal line cannot do that; it meets the parabola in at most two points instead of reflecting it. The number $-30$ is not even the turning height, which is\n\n$$g\\left(6\\right)=-31$$\n\nThe axis is the vertical line $x=6$, so the statement is False.",
+        "**E.** → True\n\nBoth halves need checking separately. The crossings are the real zeros of the difference:\n\n$$d(x)=x^{2} - 14 x + 9$$\n\n$$\\Delta=160$$\n\nA positive discriminant means two distinct crossings, which is what the figure shows. The signed gap is read at the axis abscissa:\n\n$$f\\left(6\\right)=8$$\n\n$$g\\left(6\\right)=-31$$\n\n$$f\\left(6\\right)-g\\left(6\\right)=39$$\n\nTwo crossings and a signed gap of $39$: both halves hold, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 111,
@@ -383,17 +383,17 @@
       ],
       "answer_key": [
         true,
+        false,
         true,
-        true,
-        true,
+        false,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConstant second differences equal $2a$; the opening first difference is $a+b$; the $n=0$ entry is $c$.\n\n$$\\Delta^{(2)}=2a=2\\Rightarrow a=1$$\n\n$$\\Delta^{(1)}_0=a+b=-13\\Rightarrow b=-14$$\n\n$$s_0=c=6$$\n\nThe reconstructed triple matches the continuous quadratic, so the statement is True.",
-        "**B.** → True\n\nFirst differences of a quadratic sequence grow linearly; they are not the slope of the unrelated service line $f$.\n\n$$\\Delta^{(1)}_0=-13$$\n\n$$f'(x)=3\\neq-13$$\n\nConfusing $\\Delta^{{(1)}}$ with the slope of $f$ is a trap, so the statement is True.",
-        "**C.** → True\n\nOnce $a$ and $b$ are recovered from the table, form $-b/(2a)$ and compare with the printed continuous axis.\n\n$$x=-\\frac{-14}{2\\cdot 1}=7$$\n\n$$\\text{axis of }g=7$$\n\nDiscrete reconstruction and continuous model share the axis, so the statement is True.",
-        "**D.** → True\n\nRead the constant second-difference row carefully; twice that constant is $a$.\n\n$$\\Delta^{(2)}=2\\neq1$$\n\n$$a=\\frac{\\Delta^{(2)}}{2}=1$$\n\nThe constant is $2$, not $1$, so the statement is True.",
-        "**E.** → True\n\nSubstitute into the reconstructed rule, then cross-check against $g(3)$.\n\n$$s_3=1\\cdot 9+-14\\cdot 3+6=-27$$\n\n$$g(3)=-27$$\n\nTable entry and continuous evaluation agree, so the statement is True."
+        "**A.** → True\n\nA quadratic sequence $s_n=an^{2}+bn+c$ has constant second differences, and that constant is $2a$. The bottom row of the table therefore fixes the leading coefficient:\n\n$$2a=2$$\n\n$$a=1$$\n\nThe opening first difference is $s_{1}-s_{0}$, which for this shape equals $a+b$, so the second unknown follows:\n\n$$a+b=-13$$\n\n$$b=-14$$\n\nThe constant term is simply the entry at $n=0$:\n\n$$c=s_{0}=6$$\n\nThe rebuild gives $s_{n}=n^{2}-14n+6$, the same coefficients as the continuous model $g$, so the statement is True.",
+        "**B.** → False\n\nNo formula for a line is printed in this stem, and even if one were, an opening first difference could not fix its slope. A line steps by the same amount every time; this sequence changes its step by $2$ at each index:\n\n$$\\Delta^{(2)}=\\Delta^{(1)}_{n+1}-\\Delta^{(1)}_{n}=2$$\n\nSo the steps run\n\n$$s_{1}-s_{0}=-13$$\n\n$$s_{2}-s_{1}=-11$$\n\nand continue climbing towards zero. No single line has both slopes, so the opening difference $-13$ is not the slope of anything here, so the statement is False.",
+        "**C.** → True\n\nWith $a=1$ and $b=-14$ recovered, the axis of the discrete quadratic is computed exactly as for any parabola:\n\n$$n=-\\frac{-14}{2\\cdot 1}$$\n\n$$n=7$$\n\nThe continuous model carries the identical coefficients, so its axis is the identical calculation:\n\n$$x=7$$\n\nThe table stops before that index, which is why the printed steps are still negative — they are shrinking towards the turn:\n\n$$s_{6}-s_{5}=-3$$\n\nDiscrete and continuous axes are both $x=7$, so the statement is True.",
+        "**D.** → False\n\nThe rule quoted is the right rule: second differences of a quadratic sequence equal $2a$, so a constant row of $1$ really would force a leading coefficient of $\\frac{1}{2}$.\n\n$$2a=1$$\n\n$$a=\\frac{1}{2}$$\n\nWhat fails is the premise. The bottom row of the printed table is constant at a different value:\n\n$$\\Delta^{(2)}=2$$\n\n$$a=1$$\n\nThe leading coefficient is $1$, not $\\frac{1}{2}$, so the statement is False.",
+        "**E.** → True\n\nThe claim ties one table entry to one evaluation of the continuous model, so check the index first. At $n=3$ the table reads\n\n$$s_{3}=-27$$\n\nEvaluating the rebuilt formula at the same abscissa:\n\n$$g\\left(3\\right)=\\left(3\\right)^{2}-14\\left(3\\right)+6$$\n\n$$g\\left(3\\right)=-27$$\n\nThe index quoted and the index used agree, and so do the two values, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 112,
@@ -423,11 +423,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLocate the axis, subtract the heights in metres, then multiply by $100$ for centimetres — never convert before subtracting.\n\n$$x=-2$$\n\n$$f-g=-21\\text{ m}$$\n\n$$100(f-g)=-2100\\text{ cm}$$\n\nMetre gap and centimetre conversion both match, so the statement is True.",
-        "**B.** → False\n\nDifferentiate $R(x)=x(mx+k)$; the critical point $-k/(2m)$ is unrelated to the clearance axis $-b/(2a)$ unless coefficients accidentally match.\n\n$$R(x)=2 x \\left(2 x - 1\\right)$$\n\n$$R'(x)=0\\Rightarrow x=\\frac{1}{4}$$\n\n$$\\text{axis of }g:\\ x=-2$$\n\nRevenue peak and clearance axis need not coincide, so the statement is False.",
-        "**C.** → False\n\nUnder composition, highest powers multiply: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=11 - 16 x^{2}$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe highest power is $x^{2}$, not $x^{3}$, so the statement is False.",
-        "**D.** → False\n\nSolve $g(x)=f(x)$ and read the discriminant of the difference.\n\n$$g(x)-f(x)=- x^{2} - 8 x + 9$$\n\n$$\\Delta=100$$\n\nThere are 2 meetings, The stem produces $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nOne metre is $1000$ millimetres; multiplying by $10$ under-converts by a factor of $100$.\n\n$$f-g=-21\\text{ m}$$\n\n$$1000(f-g)=-21000\\text{ mm}\\neq-210$$\n\nThe millimetre conversion factor is $1000$, not $10$, so the statement is False."
+        "**A.** → True\n\nThe gap is measured over the axis of the clearance parabola, so locate that abscissa first:\n\n$$x=-\\frac{-4}{2\\left(-1\\right)}$$\n\n$$x=-2$$\n\nNow evaluate both models there and subtract in the order named, $f$ minus $g$:\n\n$$f\\left(-2\\right)=-10$$\n\n$$g\\left(-2\\right)=11$$\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-21$$\n\nMetres become centimetres by a factor of one hundred:\n\n$$-21\\cdot 100=-2100$$\n\nGap and conversion both match the claim, so the statement is True.",
+        "**B.** → False\n\nRevenue and clearance are two different parabolas, so there is no reason for their axes to coincide. Multiplying the fare by the distance gives\n\n$$R(x)=x\\left(4 x - 2\\right)$$\n\n$$R(x)=4 x^{2} - 2 x$$\n\n$$x=-\\frac{-2}{2\\cdot 4}$$\n\n$$x=\\frac{1}{4}$$\n\nSo the abscissa $\\frac{1}{4}$ is genuinely the vertex of $R$ — though with a positive leading coefficient $4$ that vertex is the lowest point of revenue, not a peak. The clearance parabola turns somewhere else entirely:\n\n$$x=-2$$\n\nThe two abscissae $\\frac{1}{4}$ and $-2$ are not equal, so the statement is False.",
+        "**C.** → False\n\nSubstitution is not multiplication: nesting replaces $x$ by a linear expression, and the degrees multiply rather than add. Write it out:\n\n$$g(f(x))=-\\left(4 x - 2\\right)^{2}-4\\left(4 x - 2\\right)+7$$\n\n$$g(f(x))=-16 x^{2} + 11$$\n\nThe only square in play is the square of a linear expression, which reaches $x^{2}$ and stops there:\n\n$$\\left(4 x - 2\\right)^{2}=16 x^{2} - 16 x + 4$$\n\nThere is no cubic term anywhere in the composition, so the statement is False.",
+        "**D.** → False\n\nThe difference of a line and a parabola is quadratic, so it has at most two real zeros and the graphs can meet at most twice. Here\n\n$$g(x)-f(x)=-x^{2} - 8 x + 9$$\n\n$$\\Delta=\\left(-8\\right)^{2}-4\\left(-1\\right)\\cdot 9$$\n\n$$\\Delta=100$$\n\nA positive discriminant gives exactly two crossings, and no quadratic difference can supply the third one the claim counts, so the statement is False.",
+        "**E.** → False\n\nThe gap itself is settled above: over the axis $f-g$ measures $-21$ metres.\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-21$$\n\nWhat the claim mishandles is the unit step rather than the arithmetic. Multiplying by ten does give the number quoted:\n\n$$-21\\cdot 10=-210$$\n\nBut one metre is a thousand millimetres, so the conversion needs the larger factor:\n\n$$-21\\cdot 1000=-21000$$\n\nThe factor $10$ only carries centimetres to millimetres. In millimetres the gap is $-21000$, not $-210$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 113,
@@ -457,11 +457,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe mirror $x\\mapsto -x$ is a bijection sending intersections to intersections.\n\n$$x\\text{ solves }g=f\\iff -x\\text{ solves }\\tilde g=\\tilde f$$\n\nMeeting count is preserved, so the statement is True.\n\n$$\\#\\text{meetings preserved}$$",
-        "**B.** → True\n\nA double root is mirrored into a double root.\n\n$$\\Delta(g-f)=0\\Rightarrow\\Delta(\\tilde g-\\tilde f)=0$$\n\nTangency survives mirroring, so the statement is True.\n\n$$\\text{double root mirrored}$$",
-        "**C.** → False\n\nThe difference stays quadratic, so at most two real zeros.\n\n$$\\text{degree of }(\\tilde g-\\tilde f)=2$$\n\nAt most two meetings remain, so the statement is False.\n\n$$\\leq 2\\text{ roots}$$",
-        "**D.** → False\n\nReplacing $x$ by $-x$ leaves the leading coefficient unchanged.\n\n$$a_{\\tilde g}=a$$\n\nOpening direction is preserved, Changing the leading-coefficient sign breaks the claim, so the statement is False.\n\n$$\\text{sign}(a)\\text{ unchanged}$$",
-        "**E.** → False\n\nThe axis is reflected: $x\\mapsto -x$ sends $x=h$ to $x=-h$ unless $h=0$.\n\n$$x_{\\tilde g}=-x_{g}$$\n\nThe axis moves unless it is the $y$-axis, so the statement is False.\n\n$$x\\mapsto -x$$"
+        "**A.** → True\n\nReplacing $x$ by $-x$ reflects both graphs in the vertical axis, and a reflection moves crossings without creating or destroying them. A meeting abscissa of the mirrored pair solves\n\n$$f(-x)=g(-x)$$\n\nSubstituting $u=-x$ turns that into the original equation:\n\n$$f(u)=g(u)$$\n\nSo each meeting of the original pair at $u$ corresponds to exactly one meeting of the mirrored pair at $-u$, and the correspondence works in both directions:\n\n$$u\\mapsto -u$$\n\nA one-to-one pairing keeps the counts equal, so the statement is True.",
+        "**B.** → True\n\nTangency is a statement about a repeated solution, and the substitution $u=-x$ preserves multiplicity. The mirrored difference is the old difference read backwards:\n\n$$\\tilde g(x)-\\tilde f(x)=g(-x)-f(-x)$$\n\nIf the original difference has a double zero at $u_{0}$, factor it and substitute:\n\n$$g(u)-f(u)=a\\left(u-u_{0}\\right)^{2}$$\n\n$$g(-x)-f(-x)=a\\left(x+u_{0}\\right)^{2}$$\n\nThe mirrored difference again has a double zero, at $-u_{0}$, which is again a touch without a crossing, so the statement is True.",
+        "**C.** → False\n\nThe number of meetings is the number of real zeros of the difference, and mirroring does not change the shape of that difference:\n\n$$\\tilde g(x)-\\tilde f(x)=g(-x)-f(-x)$$\n\nThe reflection leaves the squared term intact, because the minus sign is squared away:\n\n$$a\\left(-x\\right)^{2}=ax^{2}$$\n\nSo the mirrored difference is still quadratic in $x$, only with the linear term reversed:\n\n$$\\tilde g(x)-\\tilde f(x)=ax^{2}-\\left(b-m\\right)x+\\left(c-k\\right)$$\n\nTwo before and at most two after; a third meeting is out of reach for either pair, so the statement is False.",
+        "**D.** → False\n\nThe reflection leaves the leading coefficient untouched, since the square kills the minus sign:\n\n$$a\\left(-x\\right)^{2}=ax^{2}$$\n\nSo the mirrored parabola does open the same way as the original — but precisely because its leading coefficient is unchanged. Replacing that coefficient by its opposite would flip the opening instead:\n\n$$a\\mapsto -a$$\n\nThe rider attached to the claim reverses the very fact it is supposed to explain, so the statement is False.",
+        "**E.** → False\n\nReflecting in the vertical axis carries the axis of symmetry to its mirror image. If the original turns at $x_{0}$, the mirrored curve takes the same heights at the opposite abscissae:\n\n$$\\tilde g\\left(-x_{0}\\right)=g\\left(x_{0}\\right)$$\n\n$$x_{\\tilde g}=-x_{0}$$\n\nThe two axes therefore coincide only in one special case:\n\n$$x_{0}=0$$\n\nThe word \"always\" is what breaks the claim, since any parabola whose axis is off centre is a counterexample, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 114,
@@ -490,11 +490,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTangency is $\\Delta(a)=0$; solve for $a$ and discard $a=0$ if it appears.\n\n$$\\Delta(a)=12 a + 16$$\n\nThe discriminant vanishes for some $a\\neq 0$, so the statement is True.\n\n$$\\Delta=12 a + 16$$",
-        "**B.** → False\n\nA linear (or quadratic) discriminant in $a$ changes sign at most twice; an open half-line of parameters is not automatically a double-meeting zone.\n\n$$\\Delta(a)=12 a + 16$$\n\n$$a=-\\frac{4}{3}\\text{ is a critical threshold, not a blanket guarantee}$$\n\nThe inequality range overstates where $\\Delta>0$, so the statement is False.",
-        "**C.** → True\n\nPick $a$ on the side of the critical root where the discriminant is negative.\n\n$$\\Delta(a)=12 a + 16$$\n\nNo real roots occur for some admissible $a$, so the statement is True.\n\n$$\\Delta<0\\text{ for some }a$$",
-        "**D.** → False\n\nThe axis $x=-1/a$ moves when $a$ changes.\n\n$$x_{\\text{axis}}=-\\frac{1}{a}$$\n\nThe axis depends on $a$, so the statement is False.\n\n$$x=-1/a$$",
-        "**E.** → True\n\nThe constant term does not involve $a$.\n\n$$g_a(0)=-3$$\n\nThe $y$-intercept is always $-3$, so the statement is True.\n\n$$c=-3$$"
+        "**A.** → True\n\nTangency asks for a vanishing discriminant, so build the difference and read its discriminant as a function of the parameter:\n\n$$g_a(x)-f(x)=a x^{2} - 4 x - 3$$\n\n$$\\Delta(a)=\\left(-4\\right)^{2}-4a\\left(-3\\right)$$\n\n$$\\Delta(a)=12 a + 16$$\n\nSetting that to zero picks out one parameter value:\n\n$$12a+16=0$$\n\n$$a=-\\frac{4}{3}$$\n\nThat value is nonzero, so it is admissible for the family, and there the line touches the parabola exactly once, so the statement is True.",
+        "**B.** → False\n\nFor genuine parabolas the inequality is the right one: two crossings need a positive discriminant, and that happens above the tangency threshold.\n\n$$\\Delta(a)=12 a + 16$$\n\n$$\\Delta(a)>0\\Leftrightarrow a>-\\frac{4}{3}$$\n\nThe trouble is that the half-line as written also contains the one value the family excludes, and there the squared term disappears altogether:\n\n$$g_0(x)=2x-3$$\n\nTwo lines of different slopes meet once, not twice:\n\n$$2x-3=6x$$\n\nRestricted to admissible parameters the count would be right, but \"every $a>-\\frac{4}{3}$\" reaches one value too far, so the statement is False.",
+        "**C.** → True\n\nA complete miss means the difference has no real zero, so make the discriminant negative:\n\n$$\\Delta(a)=12 a + 16$$\n\n$$12a+16<0$$\n\n$$a<-\\frac{4}{3}$$\n\nAny parameter below that threshold qualifies, for instance\n\n$$\\Delta(-2)=-8$$\n\nA negative discriminant leaves the line and the parabola without a common abscissa, so such $a$ exist, so the statement is True.",
+        "**D.** → False\n\nThe axis of $ax^{2}+2x-3$ is built from its first two coefficients, and only one of those is fixed:\n\n$$x=-\\frac{2}{2a}$$\n\n$$x=-\\frac{1}{a}$$\n\nThe parameter sits in the denominator, so changing it moves the axis:\n\n$$a=1\\Rightarrow x=-1$$\n\n$$a=2\\Rightarrow x=-\\frac{1}{2}$$\n\nDifferent parameters give different axes, so the statement is False.",
+        "**E.** → True\n\nThe crossing of the vertical axis is the value at abscissa zero, and there both the squared and the linear term collapse whatever the parameter is:\n\n$$g_a(0)=a\\cdot 0^{2}+2\\cdot 0-3$$\n\n$$g_a(0)=-3$$\n\nThe parameter multiplies a term that has already vanished, so every member of the family crosses the vertical axis at the same height, which is the crossing named, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 115,
@@ -520,14 +520,14 @@
         true,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nPoint-slope form: $f(x)=m(x-x_0)+y_0$.\n\n$$f(x)=2 x + 1$$\n\nThe line matches the data, so the statement is True.\n\n$$m=2$$",
-        "**B.** → True\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$ against the rebuilt pair.\n\n$$A=\\frac{1}{2^2}=\\frac{1}{4}$$\n\n$$B=-\\frac{11}{2},\\ C=\\frac{33}{4}$$\n\n$A=\\frac{1}{4}$ is consistent with the rewrite, so the statement is True.",
-        "**C.** → False\n\nThe rewrite leading coefficient is $a/m^{2}$, not an off-by-one guess.\n\n$$A=\\frac{1}{4}\\neq\\frac{5}{4}$$\n\nThe correct $A$ is $\\frac{1}{4}$, so the statement is False.\n\n$$A=\\frac{1}{4}$$",
-        "**D.** → True\n\nSolve $g=f$ for the meeting count, then evaluate $g$ on the axis for height.\n\n$$\\Delta=136\\Rightarrow 2\\text{ meetings}$$\n\n$$g\\left(5\\right)=-22\\neq-20$$\n\nMeeting count and vertex height both match the rebuild, so the statement is True.",
-        "**E.** → True\n\nThe axis is the midpoint of the roots or $-b/(2a)$, not a one-unit shift.\n\n$$x=5\\neq6$$\n\nThe axis is $x=5$, not $x=6$, so the statement is True.\n\n$$x=5$$"
+        "**A.** → True\n\nA slope and one point determine a line: keep the slope and let the point fix the intercept.\n\n$$y=2x+q$$\n\n$$5=2\\cdot 2+q$$\n\n$$q=1$$\n\nSo the line is $f(x)=2 x + 1$. Substituting the given abscissa checks it:\n\n$$f\\left(2\\right)=5$$\n\nThe rebuilt formula reproduces the point with the stated slope, so the statement is True.",
+        "**B.** → True\n\nWriting $g$ in powers of the line is coefficient matching, and only the squared terms decide $A$. Square the line first:\n\n$$f(x)^{2}=4 x^{2} + 4 x + 1$$\n\nNothing else on the right-hand side is quadratic, so the squared terms have to agree on their own:\n\n$$4A=1$$\n\n$$A=\\frac{1}{4}$$\n\nThe linear and constant coefficients then fix the other two numbers and the rewrite closes:\n\n$$g(x)=\\frac{1}{4}f(x)^{2}-\\frac{11}{2}f(x)+\\frac{33}{4}$$\n\nThe leading coefficient of the rewrite is $\\frac{1}{4}$, as claimed, so the statement is True.",
+        "**C.** → False\n\nOnly the squared terms matter for the leading coefficient of the rewrite, so compare them directly:\n\n$$f(x)^{2}=4 x^{2} + 4 x + 1$$\n\n$$A\\cdot 4x^{2}=x^{2}$$\n\n$$A=\\frac{1}{4}$$\n\nTesting the claimed value shows the mismatch at once:\n\n$$\\frac{5}{4}\\cdot 4x^{2}=5x^{2}$$\n\nThat would describe a parabola five times as steep as the rebuilt one, whose squared term is plain $x^{2}$, so the statement is False.",
+        "**D.** → True\n\nTwo things travel together here: how often the curves meet, and where the vertex sits. Meetings come from the difference:\n\n$$g(x)-f(x)=x^{2} - 12 x + 2$$\n\n$$\\Delta=\\left(-12\\right)^{2}-4\\cdot 1\\cdot 2$$\n\n$$\\Delta=136$$\n\nA positive discriminant gives two distinct crossings. The vertex height can be confirmed straight from the rebuilt formula:\n\n$$g\\left(5\\right)=-22$$\n\nTwo meetings and a vertex height of $-22$: both halves hold, so the statement is True.",
+        "**E.** → False\n\nThe axis runs through the vertex, and the rebuild data name that vertex outright:\n\n$$V=\\left(5,-22\\right)$$\n\nThe rebuilt coefficients say the same thing:\n\n$$x=-\\frac{-10}{2\\cdot 1}$$\n\n$$x=5$$\n\nIf the mirror were the claimed $x=6$, heights at equal distances from it would agree, and they do not:\n\n$$g\\left(5\\right)=-22$$\n\n$$g\\left(7\\right)=-18$$\n\nThe axis is $x=5$, not $x=6$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 116,
@@ -550,17 +550,17 @@
       ],
       "answer_key": [
         true,
+        false,
         true,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nHighest powers multiply under nesting; leading coefficients multiply by the outer map's lead and the inner lead raised to the outer degree.\n\n$$g(f(x))=- 9 x^{2} - 48 x - 24$$\n\n$$f(g(x))=- 3 x^{2} - 36 x + 14$$\n\n$$\\text{leads }-9\\text{ and }-3$$\n\nDegrees and leading coefficients of both orders match, so the statement is True.",
-        "**B.** → True\n\nHighest powers multiply under nesting: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=- 9 x^{2} - 48 x - 24$$\n\nThe top power is $x^{2}$, not $x^{3}$, so the statement is True.\n\n$$\\text{top power}=2$$",
-        "**C.** → True\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{-1}{3^2}=-\\frac{1}{9}$$\n\n$$B=-\\frac{32}{9},\\ C=\\frac{104}{9}$$\n\n$A=-\\frac{1}{9}$ is consistent, so the statement is True.",
-        "**D.** → True\n\nEvaluate the inner map first in each order; composition is not commutative.\n\n$$f(2)=8,\\quad g(f(2))=-156$$\n\n$$g(2)=-24,\\quad f(g(2))=-70$$\n\nBoth nested evaluations match, so the statement is True.",
-        "**E.** → True\n\nA single coincidence does not make a general law; the two orders differ here.\n\n$$f(g(2))=-70$$\n\n$$g(f(2))=-156$$\n\nThe orders need not agree in general, so the statement is True."
+        "**A.** → True\n\nComposition substitutes one formula into the other, so expand both orders before comparing. First the line inside the parabola:\n\n$$g(f(x))=-\\left(3 x + 2\\right)^{2}-12\\left(3 x + 2\\right)+4$$\n\n$$g(f(x))=-9 x^{2} - 48 x - 24$$\n\nNow the parabola inside the line, where the outer formula only scales and shifts what it receives:\n\n$$f(g(x))=3\\left(-x^{2} - 12 x + 4\\right)+2$$\n\n$$f(g(x))=-3 x^{2} - 36 x + 14$$\n\nBoth compositions are quadratic, with leading coefficients $-9$ and $-3$ as claimed, so the statement is True.",
+        "**B.** → False\n\nDegrees add when polynomials are multiplied; under substitution they multiply, and here one of the two degrees is $1$. Expanding shows where the highest power comes from:\n\n$$g(f(x))=-\\left(3 x + 2\\right)^{2}-12\\left(3 x + 2\\right)+4$$\n\n$$g(f(x))=-9 x^{2} - 48 x - 24$$\n\nThe only square in play is the square of a linear expression:\n\n$$\\left(3 x + 2\\right)^{2}=9 x^{2} + 12 x + 4$$\n\nThat reaches $x^{2}$ and stops, and no other term in $g$ raises the power, so there is no cubic term to be had, so the statement is False.",
+        "**C.** → True\n\nRewriting $g$ in powers of $f$ is coefficient matching, and the squared term alone fixes $A$. Square the line:\n\n$$f(x)^{2}=9 x^{2} + 12 x + 4$$\n\nOnly $A f(x)^{2}$ can produce a squared term, since $B f(x)+C$ is linear, so match the two squared terms:\n\n$$9A=-1$$\n\n$$A=-\\frac{1}{9}$$\n\nThe linear and constant coefficients then determine the other two numbers and the rewrite closes:\n\n$$g(x)=-\\frac{1}{9}f(x)^{2}-\\frac{32}{9}f(x)+\\frac{104}{9}$$\n\nSuch $A$, $B$, $C$ exist and $A=-\\frac{1}{9}$, so the statement is True.",
+        "**D.** → True\n\nBoth sides are single evaluations, so work from the inside out and keep the two orders apart. Line first, then parabola:\n\n$$f\\left(2\\right)=8$$\n\n$$g\\left(8\\right)=-156$$\n\nNow the other order, parabola first:\n\n$$g\\left(2\\right)=-24$$\n\n$$f\\left(-24\\right)=-70$$\n\nBoth numbers land where the claim says, so the statement is True.",
+        "**E.** → False\n\nComposition is not symmetric: the inner formula acts first, so swapping the order changes what gets substituted. The stem's own pair already disagrees at $x=2$:\n\n$$g(f(2))=-156$$\n\n$$f(g(2))=-70$$\n\nA single pair where the two orders differ is enough to refute a claim about every line and every parabola:\n\n$$-156\\neq -70$$\n\nEquality can happen for special pairs, but not for every pair, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 117,
@@ -589,11 +589,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEach linear factor $x-r$ contributes a zero at $x=r$; the leading constant does not move the zeros.\n\n$$g(x)=-(x+3)(x-2)$$\n\n$$g\\left(-3\\right)=0,\\quad g\\left(2\\right)=0$$\n\nBoth claimed zeros sit on the factors, so the statement is True.",
-        "**B.** → False\n\nVieta gives $S=-b/a$; the axis is the midpoint $S/2$.\n\n$$g(x)=- x^{2} - x + 6$$\n\n$$S=-1$$\n\n$$x_{\\text{axis}}=-\\frac{1}{2}$$\n\nSum and axis agree with the factors, The stem produces $-1$, not $0$, so the statement is False.",
-        "**C.** → False\n\nShifting a single root would move the midpoint, but both roots are fixed; the axis stays at their average.\n\n$$x=-\\frac{1}{2}\\neq \\frac{1}{2}$$\n\nThe axis is $x=-\\frac{1}{2}$, not $x=\\frac{1}{2}$, so the statement is False.\n\n$$x=-\\frac{1}{2}$$",
-        "**D.** → False\n\nVieta gives $P=c/a$ with no extra minus; flipping the sign is a common exam trap.\n\n$$P=-6=-3\\cdot2$$\n\nThe product is $-6$, not $6$, so the statement is False.\n\n$$P=-6$$",
-        "**E.** → False\n\nAt a zero of $g$, the gap collapses to $f(r)$. Separately, meetings solve $g-f=0$.\n\n$$f\\left(-3\\right)-g\\left(-3\\right)=-2$$\n\n$$g(x)-f(x)=- x^{2} - 3 x + 2$$\n\n$$\\Delta=17\\Rightarrow 2\\text{ meetings}$$\n\nBoth the local gap and the global meeting count match, The stem produces $-3$, not $-2$, so the statement is False."
+        "**A.** → True\n\nA product is zero exactly when one of its factors is zero, so the factored form hands over the zeros with no expansion at all:\n\n$$x+3=0$$\n\n$$x-2=0$$\n\nThe two abscissae are $-3$ and $2$. Substituting either one collapses the whole product:\n\n$$g\\left(-3\\right)=0$$\n\n$$g\\left(2\\right)=0$$\n\nThose are exactly the zeros named, so the statement is True.",
+        "**B.** → False\n\nThe axis quoted is correct, but the root sum it is supposed to come from is not. Expand first:\n\n$$g(x)=-x^{2} - x + 6$$\n\n$$x_{1}+x_{2}=-\\frac{-1}{-1}$$\n\n$$x_{1}+x_{2}=-1$$\n\nThe zeros confirm it directly, and halving still gives the quoted axis:\n\n$$-3+2=-1$$\n\n$$\\frac{x_{1}+x_{2}}{2}=-\\frac{1}{2}$$\n\nA root sum of $-1$ cannot be reported as $0$, even when the axis that follows from it is right, so the statement is False.",
+        "**C.** → False\n\nThe axis sits midway between the zeros, so it is their average and not a root shifted by hand:\n\n$$\\frac{-3+2}{2}=-\\frac{1}{2}$$\n\nSliding it one unit to $x=\\frac{1}{2}$ would demand that heights at equal distances either side of that line agree. They do not:\n\n$$g\\left(-\\frac{1}{2}\\right)=\\frac{25}{4}$$\n\n$$g\\left(\\frac{3}{2}\\right)=\\frac{9}{4}$$\n\nOnly $x=-\\frac{1}{2}$ folds the curve onto itself, so the statement is False.",
+        "**D.** → False\n\nVieta gives the product as $c/a$, with no extra minus sign attached:\n\n$$x_{1}x_{2}=\\frac{6}{-1}$$\n\n$$x_{1}x_{2}=-6$$\n\nThe factored form says the same without any formula at all:\n\n$$-3\\cdot 2=-6$$\n\nThe claim flips a sign that was never there, reporting $6$ instead of $-6$, so the statement is False.",
+        "**E.** → False\n\nThe zeros of this parabola are $-3$ and $2$, so the left-hand one is $-3$, not the $-2$ the claim names. At the abscissa actually quoted the parabola is nowhere near the horizontal axis:\n\n$$g\\left(-2\\right)=4$$\n\n$$f\\left(-2\\right)=0$$\n\n$$f\\left(-2\\right)-g\\left(-2\\right)=-4$$\n\nAt the genuine left-hand zero the gap would indeed be the quoted $-2$:\n\n$$f\\left(-3\\right)-g\\left(-3\\right)=-2$$\n\nThe crossing count of two is right as well, but the abscissa named is not a zero of $g$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 118,
@@ -622,11 +622,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the $x=2$ column, then substitute into $g$ as a cross-check.\n\n$$g(2)=2$$\n\nTable and formula agree at $x=2$, so the statement is True.\n\n$$g(2)=2$$",
-        "**B.** → True\n\nForm $-b/(2a)$ from coefficients; the table may or may not sample that abscissa.\n\n$$x=2$$\n\n$$g\\left(2\\right)=2$$\n\nThe axis claim is consistent with the coefficients, so the statement is True.",
-        "**C.** → False\n\nA quadratic row has linearly growing first differences and constant second differences.\n\n$$g(x)=x^{2} - 4 x + 6$$\n\nConstant first differences would require a line, not $g$, so the statement is False.\n\n$$\\Delta^{{(1)}}\\text{ not constant for }g$$",
-        "**D.** → False\n\nCombine a discriminant count with an origin evaluation.\n\n$$\\Delta=37$$\n\n$$f(0)-g(0)=-11$$\n\nMeeting count and origin gap both match, The stem produces $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nRead the coefficient of $x$ in the printed line; a single table step is not a slope trap.\n\n$$f(x)=5 x - 5$$\n\n$$m=5\\neq6$$\n\nThe slope is $5$, so the statement is False."
+        "**A.** → True\n\nA table is a set of samples, so the check is whether the sampled entry agrees with the printed formula. The column at $x=2$ reads $2$, and the formula gives\n\n$$g\\left(2\\right)=\\left(2\\right)^{2}-4\\left(2\\right)+6$$\n\n$$g\\left(2\\right)=2$$\n\nThe neighbouring columns match as well, which is what a correctly tabulated parabola looks like:\n\n$$g(1)=3$$\n\n$$g(3)=3$$\n\nTable entry and formula agree, so the statement is True.",
+        "**B.** → True\n\nThe axis comes from the coefficients rather than from the table:\n\n$$x=-\\frac{-4}{2\\cdot 1}$$\n\n$$x=2$$\n\nThat abscissa happens to be one of the sampled columns, so the turning height can be read straight off the table and confirmed on the formula:\n\n$$g\\left(2\\right)=2$$\n\nThe mirror symmetry of the row about that column is the visible sign of the same fact:\n\n$$g(0)=g(4)=6$$\n\nA sampled axis at $x=2$ with matching vertex height, so the statement is True.",
+        "**C.** → False\n\nConstant first differences are the signature of a line, so compute the differences of the tabulated row instead of assuming them:\n\n$$3-6=-3$$\n\n$$2-3=-1$$\n\n$$3-2=1$$\n\nThe steps change, and they change by the same amount each time, which is the signature of a quadratic:\n\n$$\\Delta^{(2)}=2$$\n\nThe first differences are not constant, so $g$ is not linear, so the statement is False.",
+        "**D.** → False\n\nThe gap at the vertical axis is quoted correctly, so the count is what fails. Reading the first column:\n\n$$f(0)-g(0)=-5-6$$\n\n$$f(0)-g(0)=-11$$\n\nCrossings come from the difference, which is quadratic:\n\n$$g(x)-f(x)=x^{2} - 9 x + 11$$\n\n$$\\Delta=\\left(-9\\right)^{2}-4\\cdot 1\\cdot 11$$\n\n$$\\Delta=37$$\n\nA positive discriminant gives two crossings and never a third, so the statement is False.",
+        "**E.** → False\n\nSteepness in a printed table is about how the columns are spaced; the slope is the constant step per unit of $x$. The tabulated row moves in equal steps:\n\n$$0-\\left(-5\\right)=5$$\n\n$$5-0=5$$\n\nThe formula says the same thing:\n\n$$f(x)=5 x - 5$$\n\n$$m=5$$\n\nThe slope is $5$, not $6$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 119,
@@ -653,14 +653,14 @@
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply $x=-b/(2a)$ then evaluate $p$ there.\n\n$$x=\\frac{1}{2}$$\n\n$$p\\left(\\frac{1}{2}\\right)=\\frac{3}{4}$$\n\nAxis and height both match, so the statement is True.",
-        "**B.** → False\n\nPoint-slope reconstruction fixes both slope and intercept; changing the intercept moves the line off the given point.\n\n$$y-15=5(x-2)\\Rightarrow y=5 x + 5$$\n\n$$y=5 x + 6\\text{ misses }(2,15)$$\n\nThe intercept cannot be shifted without leaving the point, so the statement is False.",
-        "**C.** → True\n\nAxis $x=-b/(2a)$; evaluate $q$ there for the height.\n\n$$x=\\frac{7}{4}$$\n\n$$q\\left(\\frac{7}{4}\\right)=\\frac{17}{8}$$\n\nVertex abscissa and height match, so the statement is True.",
-        "**D.** → False\n\nDegrees multiply under nesting.\n\n$$g(f(x))=2 x \\left(x + 2\\right)$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe degree is $2$, not $3$, so the statement is False.",
-        "**E.** → True\n\nVieta: product $c/a$ with no extra minus sign.\n\n$$P=12=2\\cdot6$$\n\nThe product is $12$, not $-12$, so the statement is True.\n\n$$P=12$$"
+        "**A.** → True\n\nScenario (i) asks for the axis and the turning height of one parabola. The axis comes from the first two coefficients:\n\n$$x=-\\frac{-5}{2\\cdot 5}$$\n\n$$x=\\frac{1}{2}$$\n\nSubstituting that abscissa gives the height:\n\n$$p\\left(\\frac{1}{2}\\right)=5\\left(\\frac{1}{2}\\right)^{2}-5\\left(\\frac{1}{2}\\right)+2$$\n\n$$p\\left(\\frac{1}{2}\\right)=\\frac{3}{4}$$\n\nAxis $\\frac{1}{2}$ and height $\\frac{3}{4}$ are the two numbers claimed, so the statement is True.",
+        "**B.** → False\n\nScenario (ii) has a correct first half and a false second half. The slope and the point fix the intercept:\n\n$$15=5\\cdot 2+q$$\n\n$$q=5$$\n\nSo $y=5x+5$ is right. Shifting the intercept by one unit gives a parallel line, and parallel lines with different intercepts have no point in common:\n\n$$y=5x+6$$\n\n$$5\\cdot 2+6=16$$\n\nThat height is $16$, not the $15$ the point requires, so the statement is False.",
+        "**C.** → True\n\nScenario (iii) is a downward parabola, so its vertex is a highest point. The abscissa first:\n\n$$x=-\\frac{7}{2\\left(-2\\right)}$$\n\n$$x=\\frac{7}{4}$$\n\nThen the height there:\n\n$$q\\left(\\frac{7}{4}\\right)=-2\\left(\\frac{7}{4}\\right)^{2}+7\\left(\\frac{7}{4}\\right)-4$$\n\n$$q\\left(\\frac{7}{4}\\right)=\\frac{17}{8}$$\n\nVertex abscissa $\\frac{7}{4}$ and height $\\frac{17}{8}$, as claimed, so the statement is True.",
+        "**D.** → False\n\nScenario (iv) substitutes a line into a parabola, and substitution multiplies the degrees instead of adding them. Replace $x$ by the line inside $g$:\n\n$$g(f(x))=\\left(x + 2\\right)\\left(2\\left(x + 2\\right)-4\\right)$$\n\n$$g(f(x))=2 x^{2} + 4 x$$\n\nThe factored form makes the same point: a product of two linear factors is quadratic.\n\n$$g(f(x))=2 x \\left(x + 2\\right)$$\n\nThe highest power is $x^{2}$, so the composition is quadratic rather than cubic, so the statement is False.",
+        "**E.** → False\n\nScenario (v) is a Vieta sign trap. For a monic quadratic the product of the roots is the constant term itself, with no sign change:\n\n$$x_{1}x_{2}=\\frac{12}{1}$$\n\n$$x_{1}x_{2}=12$$\n\nFactoring confirms it, since the roots can be read off directly:\n\n$$x^{2} - 8 x + 12=\\left(x-2\\right)\\left(x-6\\right)$$\n\n$$2\\cdot 6=12$$\n\nThe product is $12$, not $-12$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 120,
@@ -689,11 +689,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the turning abscissa as $-b/(2a)$, evaluate height there, then confirm the same abscissa as half the Vieta sum of the zeros.\n\n$$x=-\\frac{b}{2a}=-\\frac{-8}{2\\cdot -1}=-4$$\n\n$$g\\left(-4\\right)=24$$\n\n$$S=-\\frac{b}{a}=-8\\Rightarrow\\frac{S}{2}=-4$$\n\nVertex abscissa and Vieta midpoint agree, so the statement is True.",
-        "**B.** → False\n\nThe gap on the axis and the meeting count are independent: evaluate $f-g$ at the axis first, then inspect the discriminant of $g-f$ separately.\n\n$$f\\left(-4\\right)-g\\left(-4\\right)=-35\\neq-37$$\n\n$$g(x)-f(x)=- x^{2} - 10 x + 11$$\n\n$$\\Delta=144\\Rightarrow 2\\text{ meetings, not }0$$\n\nBoth halves of the compound claim fail, so the statement is False.",
-        "**C.** → True\n\nMeeting abscissae are roots of $d=g-f$; their midpoint is the axis of $d$, which shifts whenever the line has nonzero slope.\n\n$$d(x)=- x^{2} - 10 x + 11$$\n\n$$x_{\\text{meet mid}}=-5,\\quad x_{\\text{axis of }g}=-4$$\n\nThe meeting midpoint and the parabola axis are compared correctly, so the statement is True.",
-        "**D.** → False\n\nA parabola $ax^{2}+bx+c$ has a vertical mirror $x=\\text{constant}$; a horizontal $y$-line through the vertex height is not the axis.\n\n$$x=-4$$\n\n$$g\\left(-4\\right)=24$$\n\nThe axis is the vertical line $x=-4$, not $y=25$, so the statement is False.",
-        "**E.** → False\n\nCombine the discriminant count with a direct height comparison on the axis.\n\n$$\\Delta=144\\Rightarrow 2\\text{ meetings}$$\n\n$$f-g\\big|_{x=-4}=-35$$\n\nBoth the meeting count and the axis gap match the figure, The stem produces $2$, not $3$, so the statement is False."
+        "**A.** → True\n\nThe turning point of a parabola sits on its axis of symmetry, and that axis has abscissa $-b/(2a)$. For the curve in the figure:\n\n$$x=-\\frac{-8}{2\\left(-1\\right)}$$\n\n$$x=-4$$\n\nSubstituting that abscissa returns the turning height:\n\n$$g\\left(-4\\right)=-\\left(-4\\right)^{2}-8\\left(-4\\right)+8$$\n\n$$g\\left(-4\\right)=24$$\n\nVieta gives the sum of the zeros as $-b/a$, and the axis always bisects the two zeros, so half that sum has to land on the same abscissa:\n\n$$x_{1}+x_{2}=-\\frac{-8}{-1}$$\n\n$$x_{1}+x_{2}=-8$$\n\n$$\\frac{x_{1}+x_{2}}{2}=-4$$\n\nThe reading from the plot and the Vieta midpoint both give $-4$, and the height at that abscissa is $24$, so the statement is True.",
+        "**B.** → False\n\nTwo separate things are asserted: the size of the vertical gap over the axis, and how often the graphs cross. Take the gap first, at the axis abscissa $x=-4$:\n\n$$f\\left(-4\\right)=-11$$\n\n$$g\\left(-4\\right)=24$$\n\n$$f\\left(-4\\right)-g\\left(-4\\right)=-35$$\n\nThe claim names $-37$. The crossing count is a different computation: the meeting abscissae are the real zeros of the difference.\n\n$$d(x)=g(x)-f(x)=-x^{2} - 10 x + 11$$\n\n$$\\Delta=\\left(-10\\right)^{2}-4\\left(-1\\right)\\cdot 11$$\n\n$$\\Delta=144$$\n\nA positive discriminant gives two crossings, not none. Both halves of the compound claim fail, so the statement is False.",
+        "**C.** → True\n\nThe graphs meet where the difference vanishes, so the meeting abscissae are the zeros of $d=g-f$ and their midpoint is the axis of $d$ rather than the axis of $g$.\n\n$$d(x)=-x^{2} - 10 x + 11$$\n\n$$x_{1}+x_{2}=-10$$\n\n$$\\frac{x_{1}+x_{2}}{2}=-5$$\n\nThe parabola's own axis is built from $g$ alone:\n\n$$x=-4$$\n\nSubtracting the line changed the linear coefficient, which slides the midpoint of the meetings away from the vertex abscissa, exactly as the claim says, so the statement is True.",
+        "**D.** → False\n\nFor $ax^{2}+bx+c$ the mirror line runs vertically through the turning point, so it is described by fixing $x$, never by fixing $y$. Here the axis is\n\n$$x=-4$$\n\nand folding the curve along it matches heights at equal distances either side:\n\n$$g\\left(-5\\right)=g\\left(-3\\right)=23$$\n\nA horizontal line cannot do that; it meets the parabola in at most two points instead of reflecting it. The number $25$ is not even the turning height, which is\n\n$$g\\left(-4\\right)=24$$\n\nThe axis is the vertical line $x=-4$, so the statement is False.",
+        "**E.** → False\n\nThe crossing count and the axis gap are independent computations, and here only one of them survives. The difference is quadratic, so its discriminant settles the count:\n\n$$d(x)=-x^{2} - 10 x + 11$$\n\n$$\\Delta=144$$\n\nThat gives two crossings, while the claim counts three; a quadratic difference can never supply a third. The gap, on the other hand, is quoted correctly:\n\n$$f\\left(-4\\right)-g\\left(-4\\right)=-35$$\n\nA compound claim needs both halves, and the count is wrong, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 121,
@@ -723,11 +723,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConstant second differences equal $2a$; the opening first difference is $a+b$; the $n=0$ entry is $c$.\n\n$$\\Delta^{(2)}=2a=2\\Rightarrow a=1$$\n\n$$\\Delta^{(1)}_0=a+b=-9\\Rightarrow b=-10$$\n\n$$s_0=c=2$$\n\nThe reconstructed triple matches the continuous quadratic, so the statement is True.",
-        "**B.** → False\n\nFirst differences of a quadratic sequence grow linearly; they are not the slope of the unrelated service line $f$.\n\n$$\\Delta^{(1)}_0=-9$$\n\n$$f'(x)=3\\neq-9$$\n\nConfusing $\\Delta^{{(1)}}$ with the slope of $f$ is a trap, so the statement is False.",
-        "**C.** → True\n\nOnce $a$ and $b$ are recovered from the table, form $-b/(2a)$ and compare with the printed continuous axis.\n\n$$x=-\\frac{-10}{2\\cdot 1}=5$$\n\n$$\\text{axis of }g=5$$\n\nDiscrete reconstruction and continuous model share the axis, so the statement is True.",
-        "**D.** → False\n\nRead the constant second-difference row carefully; twice that constant is $a$.\n\n$$\\Delta^{(2)}=2\\neq3$$\n\n$$a=\\frac{\\Delta^{(2)}}{2}=1$$\n\nThe constant is $2$, not $3$, so the statement is False.",
-        "**E.** → True\n\nSubstitute into the reconstructed rule, then cross-check against $g(3)$.\n\n$$s_3=1\\cdot 9+-10\\cdot 3+2=-19$$\n\n$$g(3)=-19$$\n\nTable entry and continuous evaluation agree, so the statement is True."
+        "**A.** → True\n\nA quadratic sequence $s_n=an^{2}+bn+c$ has constant second differences, and that constant is $2a$. The bottom row of the table therefore fixes the leading coefficient:\n\n$$2a=2$$\n\n$$a=1$$\n\nThe opening first difference is $s_{1}-s_{0}$, which for this shape equals $a+b$, so the second unknown follows:\n\n$$a+b=-9$$\n\n$$b=-10$$\n\nThe constant term is simply the entry at $n=0$:\n\n$$c=s_{0}=2$$\n\nThe rebuild gives $s_{n}=n^{2}-10n+2$, the same coefficients as the continuous model $g$, so the statement is True.",
+        "**B.** → False\n\nNo formula for a line is printed in this stem, and even if one were, an opening first difference could not fix its slope. A line steps by the same amount every time; this sequence changes its step by $2$ at each index:\n\n$$\\Delta^{(2)}=\\Delta^{(1)}_{n+1}-\\Delta^{(1)}_{n}=2$$\n\nSo the steps run\n\n$$s_{1}-s_{0}=-9$$\n\n$$s_{2}-s_{1}=-7$$\n\nand continue climbing towards zero. No single line has both slopes, so the opening difference $-9$ is not the slope of anything here, so the statement is False.",
+        "**C.** → True\n\nWith $a=1$ and $b=-10$ recovered, the axis of the discrete quadratic is computed exactly as for any parabola:\n\n$$n=-\\frac{-10}{2\\cdot 1}$$\n\n$$n=5$$\n\nThe continuous model carries the identical coefficients, so its axis is the identical calculation:\n\n$$x=5$$\n\nThe table shows the same mirror directly, since entries at equal distances from that index agree:\n\n$$s_{4}=s_{6}=-22$$\n\nDiscrete and continuous axes are both $x=5$, so the statement is True.",
+        "**D.** → False\n\nThe rule quoted is the right rule: second differences of a quadratic sequence equal $2a$, so a constant row of $3$ really would force a leading coefficient of $\\frac{3}{2}$.\n\n$$2a=3$$\n\n$$a=\\frac{3}{2}$$\n\nWhat fails is the premise. The bottom row of the printed table is constant at a different value:\n\n$$\\Delta^{(2)}=2$$\n\n$$a=1$$\n\nThe leading coefficient is $1$, not $\\frac{3}{2}$, so the statement is False.",
+        "**E.** → True\n\nThe claim ties one table entry to one evaluation of the continuous model, so check the index first. At $n=3$ the table reads\n\n$$s_{3}=-19$$\n\nEvaluating the rebuilt formula at the same abscissa:\n\n$$g\\left(3\\right)=\\left(3\\right)^{2}-10\\left(3\\right)+2$$\n\n$$g\\left(3\\right)=-19$$\n\nThe index quoted and the index used agree, and so do the two values, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 122,
@@ -752,16 +752,16 @@
       "answer_key": [
         true,
         false,
+        false,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLocate the axis, subtract the heights in metres, then multiply by $100$ for centimetres — never convert before subtracting.\n\n$$x=6$$\n\n$$f-g=56\\text{ m}$$\n\n$$100(f-g)=5600\\text{ cm}$$\n\nMetre gap and centimetre conversion both match, so the statement is True.",
-        "**B.** → False\n\nDifferentiate $R(x)=x(mx+k)$; the critical point $-k/(2m)$ is unrelated to the clearance axis $-b/(2a)$ unless coefficients accidentally match.\n\n$$R(x)=x \\left(4 x - 1\\right)$$\n\n$$R'(x)=0\\Rightarrow x=\\frac{1}{8}$$\n\n$$\\text{axis of }g:\\ x=6$$\n\nRevenue peak and clearance axis need not coincide, so the statement is False.",
-        "**C.** → True\n\nUnder composition, highest powers multiply: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=16 x^{2} - 56 x + 16$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe highest power is $x^{2}$, not $x^{3}$, so the statement is True.",
-        "**D.** → True\n\nSolve $g(x)=f(x)$ and read the discriminant of the difference.\n\n$$g(x)-f(x)=x^{2} - 16 x + 4$$\n\n$$\\Delta=240$$\n\nThere are 2 meetings, so the statement is True.",
-        "**E.** → True\n\nOne metre is $1000$ millimetres; multiplying by $10$ under-converts by a factor of $100$.\n\n$$f-g=56\\text{ m}$$\n\n$$1000(f-g)=56000\\text{ mm}\\neq560$$\n\nThe millimetre conversion factor is $1000$, not $10$, so the statement is True."
+        "**A.** → True\n\nThe gap is measured over the axis of the clearance parabola, so locate that abscissa first:\n\n$$x=-\\frac{-12}{2\\cdot 1}$$\n\n$$x=6$$\n\nNow evaluate both models there and subtract in the order named, $f$ minus $g$:\n\n$$f\\left(6\\right)=23$$\n\n$$g\\left(6\\right)=-33$$\n\n$$f\\left(6\\right)-g\\left(6\\right)=56$$\n\nMetres become centimetres by a factor of one hundred:\n\n$$56\\cdot 100=5600$$\n\nGap and conversion both match the claim, so the statement is True.",
+        "**B.** → False\n\nRevenue and clearance are two different parabolas, so there is no reason for their axes to coincide. Multiplying the fare by the distance gives\n\n$$R(x)=x\\left(4 x - 1\\right)$$\n\n$$R(x)=4 x^{2} - x$$\n\n$$x=-\\frac{-1}{2\\cdot 4}$$\n\n$$x=\\frac{1}{8}$$\n\nSo the abscissa $\\frac{1}{8}$ is genuinely the vertex of $R$ — though with a positive leading coefficient $4$ that vertex is the lowest point of revenue, not a peak. The clearance parabola turns somewhere else entirely:\n\n$$x=6$$\n\nThe two abscissae $\\frac{1}{8}$ and $6$ are not equal, so the statement is False.",
+        "**C.** → False\n\nSubstitution is not multiplication: nesting replaces $x$ by a linear expression, and the degrees multiply rather than add. Write it out:\n\n$$g(f(x))=\\left(4 x - 1\\right)^{2}-12\\left(4 x - 1\\right)+3$$\n\n$$g(f(x))=16 x^{2} - 56 x + 16$$\n\nThe only square in play is the square of a linear expression, which reaches $x^{2}$ and stops there:\n\n$$\\left(4 x - 1\\right)^{2}=16 x^{2} - 8 x + 1$$\n\nThere is no cubic term anywhere in the composition, so the statement is False.",
+        "**D.** → True\n\nMeetings are the real solutions of $f(x)=g(x)$, so move everything to one side and count zeros:\n\n$$g(x)-f(x)=x^{2} - 16 x + 4$$\n\n$$\\Delta=\\left(-16\\right)^{2}-4\\cdot 1\\cdot 4$$\n\n$$\\Delta=240$$\n\nA positive discriminant gives two distinct real roots, so the line cuts the clearance parabola at two separate abscissae, so the statement is True.",
+        "**E.** → False\n\nThe gap itself is settled above: over the axis $f-g$ measures $56$ metres.\n\n$$f\\left(6\\right)-g\\left(6\\right)=56$$\n\nWhat the claim mishandles is the unit step rather than the arithmetic. Multiplying by ten does give the number quoted:\n\n$$56\\cdot 10=560$$\n\nBut one metre is a thousand millimetres, so the conversion needs the larger factor:\n\n$$56\\cdot 1000=56000$$\n\nThe factor $10$ only carries centimetres to millimetres. In millimetres the gap is $56000$, not $560$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -786,16 +786,16 @@
       "answer_key": [
         true,
         true,
-        true,
+        false,
         true,
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA negative product forces one root on each side of the origin.\n\n$$r_{1}r_{2}=P<0$$\n\nOpposite signs follow from $P<0$, so the statement is True.\n\n$$P<0\\Rightarrow\\text{opposite signs}$$",
-        "**B.** → True\n\nEqual signs from the product, negative from the sum.\n\n$$P>0,S<0\\Rightarrow r_{1},r_{2}<0$$\n\nBoth roots lie left of the origin, so the statement is True.\n\n$$\\text{same sign, negative}$$",
-        "**C.** → True\n\nThey could both be negative instead.\n\n$$P>0,S<0\\Rightarrow\\text{both negative possible}$$\n\nPositive product does not force positive roots, so the statement is True.\n\n$$P>0\\not\\Rightarrow r>0$$",
-        "**D.** → True\n\nA vanishing sum puts the midpoint of the roots at the origin.\n\n$$S=0\\Rightarrow h=0$$\n\nThe axis is $x=0$, so the statement is True.\n\n$$x_{\\text{axis}}=0$$",
-        "**E.** → True\n\n$P=c/a$, so $c$ and $a$ have opposite signs when $P<0$.\n\n$$g(0)=c<0\\text{ when }a>0,P<0$$\n\nThe origin lies below the axis, so the statement is True.\n\n$$c=Pa<0$$"
+        "**A.** → True\n\nWith two distinct real roots the product is a genuine product of two nonzero numbers, and its sign records whether they agree:\n\n$$P=x_{1}x_{2}<0$$\n\nIf both roots were positive the product would be positive; if both were negative the two minus signs would cancel and the product would be positive again:\n\n$$\\left(-p\\right)\\left(-q\\right)=pq>0$$\n\nOnly one positive and one negative root leaves the product negative, so the statement is True.",
+        "**B.** → True\n\nRead the two conditions in turn. A positive product rules out roots of opposite signs, so the roots share a sign:\n\n$$P=x_{1}x_{2}>0$$\n\nThe sum then decides which sign that is, because two positive numbers cannot add to something negative:\n\n$$S=x_{1}+x_{2}<0$$\n\nSame sign together with a negative total leaves exactly one case:\n\n$$x_{1}<0,\\ x_{2}<0$$\n\nThat is what the claim concludes, so the statement is True.",
+        "**C.** → False\n\nA positive product says only that the roots share a sign; it does not say which sign, because two negatives multiply to a positive just as two positives do:\n\n$$P=x_{1}x_{2}>0$$\n\nThe sum is what separates the cases, and the claim never consults it:\n\n$$S=x_{1}+x_{2}$$\n\nA pair of negative roots gives a positive product with a negative sum, so it satisfies the hypothesis and refutes the conclusion:\n\n$$\\left(-p\\right)\\left(-q\\right)=pq>0$$\n\n\"Both positive\" is therefore not forced, so the statement is False.",
+        "**D.** → True\n\nVieta's sum and the axis carry the same information. A vanishing sum makes the roots negatives of each other:\n\n$$x_{1}+x_{2}=S=0$$\n\n$$x_{2}=-x_{1}$$\n\nThe axis of a parabola bisects its zeros, so it sits at their average:\n\n$$\\frac{x_{1}+x_{2}}{2}=0$$\n\nA vertical mirror at abscissa zero is the vertical coordinate axis itself, so both halves of the claim hold, so the statement is True.",
+        "**E.** → True\n\nThe product of the roots is not a free number: Vieta ties it to the coefficients.\n\n$$P=\\frac{c}{a}$$\n\nA negative product with a positive leading coefficient forces the constant term to be negative:\n\n$$\\frac{c}{a}<0$$\n\n$$c<0$$\n\nThe constant term is the height of the graph over the vertical axis, because substituting zero kills the other two terms:\n\n$$g(0)=c$$\n\nSo that height is negative, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 124,
@@ -820,15 +820,15 @@
         true,
         false,
         false,
-        false,
+        true,
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nTangency is one equation in $k$ from $\\Delta(k)=0$.\n\n$$\\Delta(k)=4 k + 29$$\n\n$$k=-\\frac{29}{4}$$\n\nThe discriminant is linear in $k$ with one real root, so the statement is True.",
-        "**B.** → False\n\nRead the sign of the leading coefficient of $\\Delta(k)$ before choosing which side of the critical value gives $\\Delta>0$.\n\n$$\\Delta(k)=4 k + 29$$\n\n$$\\Delta>0\\text{ on the side }k>-\\frac{29}{4}\\text{, not }k<-\\frac{29}{4}$$\n\nThe inequality points the wrong way, so the statement is False.",
-        "**C.** → False\n\nOn the side of $k={F(k_star)}$ where $\\Delta(k)$ keeps the sign of its leading coefficient, two distinct real meetings occur.\n\n$$\\Delta(k)=4 k + 29$$\n\n$$k>-\\frac{29}{4}\\Rightarrow\\Delta(k)>0$$\n\nThe correct half-line yields two meetings, The stem produces $29$, not $30$, so the statement is False.",
-        "**D.** → False\n\nSubstitute $k=0$ and inspect the discriminant.\n\n$$\\Delta(0)=29$$\n\nTwo distinct meetings occur at $k=0$, The stem produces $0$, not $2$, so the statement is False.\n\n$$k=0$$",
-        "**E.** → False\n\nPushing $k$ past the critical value into the negative-$\\Delta$ region makes the graphs miss.\n\n$$\\Delta(k)=4 k + 29$$\n\nSome shifts miss the parabola, so the statement is False.\n\n$$\\Delta<0\\text{ possible}$$"
+        "**A.** → True\n\nSliding the line vertically changes only the constant term of the difference, so the discriminant comes out linear in the shift:\n\n$$g(x)-f_k(x)=x^{2}-3x-\\left(5+k\\right)$$\n\n$$\\Delta(k)=\\left(-3\\right)^{2}-4\\left(-5-k\\right)$$\n\n$$\\Delta(k)=4 k + 29$$\n\nA linear expression vanishes at exactly one place:\n\n$$4k+29=0$$\n\n$$k=-\\frac{29}{4}$$\n\nOne shift and no other makes the discriminant zero, which is one touching point, so the statement is True.",
+        "**B.** → False\n\nBelow the tangency threshold the discriminant is negative, and a negative discriminant means no meeting at all:\n\n$$\\Delta(k)=4 k + 29$$\n\n$$k<-\\frac{29}{4}\\Rightarrow\\Delta(k)<0$$\n\nTaking a shift from that range shows it:\n\n$$\\Delta(-10)=-11$$\n\nNo real abscissa then satisfies $g(x)=f_k(x)$, so the line misses the parabola entirely rather than cutting it twice, so the statement is False.",
+        "**C.** → False\n\nTwo crossings need a positive discriminant, and that fixes the threshold exactly:\n\n$$\\Delta(k)=4 k + 29$$\n\n$$\\Delta(k)>0\\Leftrightarrow k>-\\frac{29}{4}$$\n\nThe threshold quoted in the claim is the smaller number $-\\frac{30}{4}$, so its range also admits shifts between the two values. Test one:\n\n$$\\Delta\\left(-\\frac{59}{8}\\right)=-\\frac{1}{2}$$\n\nThere the line misses the parabola completely, so the claim fails on part of its own range, so the statement is False.",
+        "**D.** → True\n\nSubstitute the shift into the discriminant that was set up for the family:\n\n$$\\Delta(k)=4 k + 29$$\n\n$$\\Delta(2)=37$$\n\nA positive value means the difference has two distinct real zeros, and the difference itself confirms the shape:\n\n$$x^{2} - 3 x - 7=0$$\n\nTwo distinct real abscissae are two crossings, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nWhether the line reaches the parabola depends on the shift, so the word \"every\" is the part to test:\n\n$$\\Delta(k)=4 k + 29$$\n\nThe discriminant is negative for all shifts below the threshold:\n\n$$k<-\\frac{29}{4}$$\n\nOne explicit counterexample settles it:\n\n$$\\Delta(-8)=-3$$\n\nFor that shift the difference has no real zero, so those two graphs never touch, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 125,
@@ -857,11 +857,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nPoint-slope form: $f(x)=m(x-x_0)+y_0$.\n\n$$f(x)=2 x + 2$$\n\nThe line matches the data, so the statement is True.\n\n$$m=2$$",
-        "**B.** → True\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$ against the rebuilt pair.\n\n$$A=\\frac{1}{2^2}=\\frac{1}{4}$$\n\n$$B=-4,\\ C=13$$\n\n$A=\\frac{1}{4}$ is consistent with the rewrite, so the statement is True.",
-        "**C.** → False\n\nThe rewrite leading coefficient is $a/m^{2}$, not an off-by-one guess.\n\n$$A=\\frac{1}{4}\\neq\\frac{5}{4}$$\n\nThe correct $A$ is $\\frac{1}{4}$, so the statement is False.\n\n$$A=\\frac{1}{4}$$",
-        "**D.** → False\n\nSolve $g=f$ for the meeting count, then evaluate $g$ on the axis for height.\n\n$$\\Delta=48\\Rightarrow 2\\text{ meetings}$$\n\n$$g\\left(3\\right)=-3\\neq-1$$\n\nMeeting count and vertex height both match the rebuild, The stem produces $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nThe axis is the midpoint of the roots or $-b/(2a)$, not a one-unit shift.\n\n$$x=3\\neq4$$\n\nThe axis is $x=3$, not $x=4$, so the statement is False.\n\n$$x=3$$"
+        "**A.** → True\n\nA slope and one point determine a line: keep the slope and let the point fix the intercept.\n\n$$y=2x+q$$\n\n$$8=2\\cdot 3+q$$\n\n$$q=2$$\n\nSo the line is $f(x)=2 x + 2$. Substituting the given abscissa checks it:\n\n$$f\\left(3\\right)=8$$\n\nThe rebuilt formula reproduces the point with the stated slope, so the statement is True.",
+        "**B.** → True\n\nWriting $g$ in powers of the line is coefficient matching, and only the squared terms decide $A$. Square the line first:\n\n$$f(x)^{2}=4 x^{2} + 8 x + 4$$\n\nNothing else on the right-hand side is quadratic, so the squared terms have to agree on their own:\n\n$$4A=1$$\n\n$$A=\\frac{1}{4}$$\n\nThe linear and constant coefficients then fix the other two numbers and the rewrite closes:\n\n$$g(x)=\\frac{1}{4}f(x)^{2}-4f(x)+13$$\n\nThe leading coefficient of the rewrite is $\\frac{1}{4}$, as claimed, so the statement is True.",
+        "**C.** → False\n\nOnly the squared terms matter for the leading coefficient of the rewrite, so compare them directly:\n\n$$f(x)^{2}=4 x^{2} + 8 x + 4$$\n\n$$A\\cdot 4x^{2}=x^{2}$$\n\n$$A=\\frac{1}{4}$$\n\nTesting the claimed value shows the mismatch at once:\n\n$$\\frac{5}{4}\\cdot 4x^{2}=5x^{2}$$\n\nThat would describe a parabola five times as steep as the rebuilt one, whose squared term is plain $x^{2}$, so the statement is False.",
+        "**D.** → False\n\nThe vertex height in the claim is correct, so the count is what has to be tested. Subtract the line from the parabola:\n\n$$g(x)-f(x)=x^{2} - 8 x + 4$$\n\n$$\\Delta=\\left(-8\\right)^{2}-4\\cdot 1\\cdot 4$$\n\n$$\\Delta=48$$\n\nA positive discriminant means two distinct real crossings, and a quadratic difference cannot supply a third. The height does check out:\n\n$$g\\left(3\\right)=-3$$\n\nA correct height cannot rescue a wrong count, so the statement is False.",
+        "**E.** → False\n\nThe axis runs through the vertex, and the rebuild data name that vertex outright:\n\n$$V=\\left(3,-3\\right)$$\n\nThe rebuilt coefficients say the same thing:\n\n$$x=-\\frac{-6}{2\\cdot 1}$$\n\n$$x=3$$\n\nIf the mirror were the claimed $x=4$, heights at equal distances from it would agree, and they do not:\n\n$$g\\left(3\\right)=-3$$\n\n$$g\\left(5\\right)=1$$\n\nThe axis is $x=3$, not $x=4$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 126,
@@ -890,11 +890,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nHighest powers multiply under nesting; leading coefficients multiply by the outer map's lead and the inner lead raised to the outer degree.\n\n$$g(f(x))=9 x^{2} - 6 x - 8$$\n\n$$f(g(x))=3 x^{2} - 24 x + 24$$\n\n$$\\text{leads }9\\text{ and }3$$\n\nDegrees and leading coefficients of both orders match, so the statement is True.",
-        "**B.** → False\n\nHighest powers multiply under nesting: $2\\cdot 1=2$, they do not add.\n\n$$g(f(x))=9 x^{2} - 6 x - 8$$\n\nThe top power is $x^{2}$, not $x^{3}$, so the statement is False.\n\n$$\\text{top power}=2$$",
-        "**C.** → True\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{3^2}=\\frac{1}{9}$$\n\n$$B=-\\frac{10}{3},\\ C=16$$\n\n$A=\\frac{1}{9}$ is consistent, so the statement is True.",
-        "**D.** → True\n\nEvaluate the inner map first in each order; composition is not commutative.\n\n$$f(3)=12,\\quad g(f(3))=55$$\n\n$$g(3)=-8,\\quad f(g(3))=-21$$\n\nBoth nested evaluations match, so the statement is True.",
-        "**E.** → False\n\nA single coincidence does not make a general law; the two orders differ here.\n\n$$f(g(3))=-21$$\n\n$$g(f(3))=55$$\n\nThe orders need not agree in general, so the statement is False."
+        "**A.** → True\n\nComposition substitutes one formula into the other, so expand both orders before comparing. First the line inside the parabola:\n\n$$g(f(x))=\\left(3 x + 3\\right)^{2}-8\\left(3 x + 3\\right)+7$$\n\n$$g(f(x))=9 x^{2} - 6 x - 8$$\n\nNow the parabola inside the line, where the outer formula only scales and shifts what it receives:\n\n$$f(g(x))=3\\left(x^{2} - 8 x + 7\\right)+3$$\n\n$$f(g(x))=3 x^{2} - 24 x + 24$$\n\nBoth compositions are quadratic, with leading coefficients $9$ and $3$ as claimed, so the statement is True.",
+        "**B.** → False\n\nDegrees add when polynomials are multiplied; under substitution they multiply, and here one of the two degrees is $1$. Expanding shows where the highest power comes from:\n\n$$g(f(x))=\\left(3 x + 3\\right)^{2}-8\\left(3 x + 3\\right)+7$$\n\n$$g(f(x))=9 x^{2} - 6 x - 8$$\n\nThe only square in play is the square of a linear expression:\n\n$$\\left(3 x + 3\\right)^{2}=9 x^{2} + 18 x + 9$$\n\nThat reaches $x^{2}$ and stops, and no other term in $g$ raises the power, so there is no cubic term to be had, so the statement is False.",
+        "**C.** → True\n\nRewriting $g$ in powers of $f$ is coefficient matching, and the squared term alone fixes $A$. Square the line:\n\n$$f(x)^{2}=9 x^{2} + 18 x + 9$$\n\nOnly $A f(x)^{2}$ can produce a squared term, since $B f(x)+C$ is linear, so match the two squared terms:\n\n$$9A=1$$\n\n$$A=\\frac{1}{9}$$\n\nThe linear and constant coefficients then determine the other two numbers and the rewrite closes:\n\n$$g(x)=\\frac{1}{9}f(x)^{2}-\\frac{10}{3}f(x)+16$$\n\nSuch $A$, $B$, $C$ exist and $A=\\frac{1}{9}$, so the statement is True.",
+        "**D.** → True\n\nBoth sides are single evaluations, so work from the inside out and keep the two orders apart. Line first, then parabola:\n\n$$f\\left(3\\right)=12$$\n\n$$g\\left(12\\right)=55$$\n\nNow the other order, parabola first:\n\n$$g\\left(3\\right)=-8$$\n\n$$f\\left(-8\\right)=-21$$\n\nBoth numbers land where the claim says, so the statement is True.",
+        "**E.** → False\n\nComposition is not symmetric: the inner formula acts first, so swapping the order changes what gets substituted. The stem's own pair already disagrees at $x=3$:\n\n$$g(f(3))=55$$\n\n$$f(g(3))=-21$$\n\nA single pair where the two orders differ is enough to refute a claim about every line and every parabola:\n\n$$55\\neq -21$$\n\nEquality can happen for special pairs, but not for every pair, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 127,
@@ -923,11 +923,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nEach linear factor $x-r$ contributes a zero at $x=r$; the leading constant does not move the zeros.\n\n$$g(x)=2x(x-4)$$\n\n$$g\\left(0\\right)=0,\\quad g\\left(4\\right)=0$$\n\nBoth claimed zeros sit on the factors, so the statement is True.",
-        "**B.** → True\n\nVieta gives $S=-b/a$; the axis is the midpoint $S/2$.\n\n$$g(x)=2 x \\left(x - 4\\right)$$\n\n$$S=4$$\n\n$$x_{\\text{axis}}=2$$\n\nSum and axis agree with the factors, so the statement is True.",
-        "**C.** → False\n\nShifting a single root would move the midpoint, but both roots are fixed; the axis stays at their average.\n\n$$x=2\\neq 3$$\n\nThe axis is $x=2$, not $x=3$, so the statement is False.\n\n$$x=2$$",
-        "**D.** → True\n\nVieta gives $P=c/a$ with no extra minus; flipping the sign is a common exam trap.\n\n$$P=0=0\\cdot4$$\n\nThe product is $0$, not $0$, so the statement is True.\n\n$$P=0$$",
-        "**E.** → True\n\nAt a zero of $g$, the gap collapses to $f(r)$. Separately, meetings solve $g-f=0$.\n\n$$f\\left(0\\right)-g\\left(0\\right)=1$$\n\n$$g(x)-f(x)=2 x^{2} - 7 x - 1$$\n\n$$\\Delta=57\\Rightarrow 2\\text{ meetings}$$\n\nBoth the local gap and the global meeting count match, so the statement is True."
+        "**A.** → True\n\nA product is zero exactly when one of its factors is zero, so the factored form hands over the zeros with no expansion at all:\n\n$$x=0$$\n\n$$x-4=0$$\n\nThe two abscissae are $0$ and $4$. Substituting either one collapses the whole product:\n\n$$g\\left(0\\right)=0$$\n\n$$g\\left(4\\right)=0$$\n\nThose are exactly the zeros named, so the statement is True.",
+        "**B.** → True\n\nExpanding puts the coefficients where Vieta can reach them:\n\n$$g(x)=2 x^{2} - 8 x$$\n\n$$x_{1}+x_{2}=-\\frac{-8}{2}$$\n\n$$x_{1}+x_{2}=4$$\n\nThe axis bisects the zeros, so halving that sum gives it:\n\n$$\\frac{4}{2}=2$$\n\nRoot sum $4$ and axis $x=2$, both as claimed, so the statement is True.",
+        "**C.** → False\n\nThe axis sits midway between the zeros, so it is their average and not a root shifted by hand:\n\n$$\\frac{0+4}{2}=2$$\n\nSliding it one unit to $x=3$ would demand that heights at equal distances either side of that line agree. They do not:\n\n$$g\\left(2\\right)=-8$$\n\n$$g\\left(4\\right)=0$$\n\nOnly $x=2$ folds the curve onto itself, so the statement is False.",
+        "**D.** → True\n\nVieta reads the product off the expanded coefficients:\n\n$$g(x)=2 x^{2} - 8 x$$\n\n$$x_{1}x_{2}=\\frac{0}{2}$$\n\n$$x_{1}x_{2}=0$$\n\nThe factored form agrees, because one of the zeros is the origin:\n\n$$0\\cdot 4=0$$\n\nFlipping the sign of zero changes nothing, so the number named is right either way, so the statement is True.",
+        "**E.** → True\n\nTwo things to settle: the signed gap at a named abscissa, and the total number of crossings. At the left-hand zero the parabola is on the horizontal axis, so the gap is just the height of the line:\n\n$$g\\left(0\\right)=0$$\n\n$$f\\left(0\\right)=1$$\n\n$$f\\left(0\\right)-g\\left(0\\right)=1$$\n\nFor the crossings, subtract and count real zeros:\n\n$$g(x)-f(x)=2 x^{2} - 7 x - 1$$\n\n$$\\Delta=57$$\n\nA positive discriminant gives two crossings, so both halves hold, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 128,
@@ -951,16 +951,16 @@
       "answer_key": [
         true,
         true,
+        false,
         true,
-        true,
-        true
+        false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nConfirm the marked turning point with algebra.\n\n$$x=-6,\\quad g=38$$\n\nThe vertex matches, so the statement is True.\n\n$$(-6,38)$$",
-        "**B.** → True\n\nSubtract the two table entries in the $x=2$ column.\n\n$$f(2)-g(2)=32$$\n\nThe table gap matches, so the statement is True.\n\n$$f(2)=6$$",
-        "**C.** → True\n\nCompute $A=a/m^{2}$ carefully.\n\n$$A=-\\frac{1}{25}\\neq\\frac{24}{25}$$\n\nThe correct $A$ is $-\\frac{1}{25}$, so the statement is True.\n\n$$A=-\\frac{1}{25}$$",
-        "**D.** → True\n\nForm $g-f$ and read $\\Delta$.\n\n$$\\Delta=313$$\n\nThere are 2 meetings, so the statement is True.\n\n$$\\#=2$$",
-        "**E.** → True\n\nDegrees multiply: $2\\cdot 1=2$.\n\n$$g(f(x))=- 25 x^{2} - 20 x + 34$$\n\nThe degree is $2$, so the statement is True.\n\n$$\\text{top power}=2$$"
+        "**A.** → True\n\nThe turning point follows from the coefficients of $g$, and the figure only has to agree with them. The axis first:\n\n$$x=-\\frac{-12}{2\\left(-1\\right)}$$\n\n$$x=-6$$\n\nThen the height at that abscissa:\n\n$$g\\left(-6\\right)=-\\left(-6\\right)^{2}-12\\left(-6\\right)+2$$\n\n$$g\\left(-6\\right)=38$$\n\nThe vertex is $\\left(-6,38\\right)$, exactly the point named, so the statement is True.",
+        "**B.** → True\n\nThe table supplies both values at $x=2$, so the gap is a subtraction in the order named, $f$ minus $g$:\n\n$$f(2)=6$$\n\n$$g(2)=-26$$\n\n$$f(2)-g(2)=32$$\n\nThe formulas confirm both tabulated entries:\n\n$$5\\cdot 2-4=6$$\n\n$$-\\left(2\\right)^{2}-12\\left(2\\right)+2=-26$$\n\nThe signed gap is $32$, as claimed, so the statement is True.",
+        "**C.** → False\n\nThe rewrite coefficient is fixed by the squared terms alone, so square the line and compare:\n\n$$f(x)^{2}=25 x^{2} - 40 x + 16$$\n\nOnly $A f(x)^{2}$ can produce a squared term, so it must match the squared term of $g$:\n\n$$25A=-1$$\n\n$$A=-\\frac{1}{25}$$\n\nThe claimed value has the wrong sign as well as the wrong size, and it would make the rewrite open upwards:\n\n$$\\frac{24}{25}\\cdot 25x^{2}=24x^{2}$$\n\nThe coefficient is $-\\frac{1}{25}$, not $\\frac{24}{25}$, so the statement is False.",
+        "**D.** → True\n\nIntersections are the real zeros of the difference, so subtract and take the discriminant:\n\n$$g(x)-f(x)=-x^{2} - 17 x + 6$$\n\n$$\\Delta=\\left(-17\\right)^{2}-4\\left(-1\\right)\\cdot 6$$\n\n$$\\Delta=313$$\n\nA positive discriminant gives two distinct real zeros, hence two crossings, exactly as claimed, so the statement is True.",
+        "**E.** → False\n\nWrapping a parabola around a line multiplies the two degrees instead of adding them, and one of them is $1$. Expanding settles it:\n\n$$g(f(x))=-\\left(5 x - 4\\right)^{2}-12\\left(5 x - 4\\right)+2$$\n\n$$g(f(x))=-25 x^{2} - 20 x + 34$$\n\nNo term can climb past $x^{2}$, because the only square in play is the square of a linear expression:\n\n$$\\left(5 x - 4\\right)^{2}=25 x^{2} - 40 x + 16$$\n\nThe composition is quadratic, not cubic, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 129,
@@ -991,11 +991,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply $x=-b/(2a)$ then evaluate $p$ there.\n\n$$x=\\frac{3}{10}$$\n\n$$p\\left(\\frac{3}{10}\\right)=\\frac{51}{20}$$\n\nAxis and height both match, so the statement is True.",
-        "**B.** → False\n\nPoint-slope reconstruction fixes both slope and intercept; changing the intercept moves the line off the given point.\n\n$$y-11=3(x-2)\\Rightarrow y=3 x + 5$$\n\n$$y=3 x + 6\\text{ misses }(2,11)$$\n\nThe intercept cannot be shifted without leaving the point, so the statement is False.",
-        "**C.** → False\n\nAxis $x=-b/(2a)$; evaluate $q$ there for the height.\n\n$$x=2$$\n\n$$q\\left(2\\right)=4$$\n\nVertex abscissa and height match, The stem produces $2$, not $3$, so the statement is False.",
-        "**D.** → False\n\nDegrees multiply under nesting.\n\n$$g(f(x))=2 x^{2} + 7 x + 3$$\n\n$$\\text{top power}=2\\neq 3$$\n\nThe degree is $2$, not $3$, so the statement is False.",
-        "**E.** → False\n\nVieta: product $c/a$ with no extra minus sign.\n\n$$P=21=3\\cdot7$$\n\nThe product is $21$, not $-21$, so the statement is False.\n\n$$P=21$$"
+        "**A.** → True\n\nScenario (i) asks for the axis and the turning height of one parabola. The axis comes from the first two coefficients:\n\n$$x=-\\frac{-3}{2\\cdot 5}$$\n\n$$x=\\frac{3}{10}$$\n\nSubstituting that abscissa gives the height:\n\n$$p\\left(\\frac{3}{10}\\right)=5\\left(\\frac{3}{10}\\right)^{2}-3\\left(\\frac{3}{10}\\right)+3$$\n\n$$p\\left(\\frac{3}{10}\\right)=\\frac{51}{20}$$\n\nAxis $\\frac{3}{10}$ and height $\\frac{51}{20}$ are the two numbers claimed, so the statement is True.",
+        "**B.** → False\n\nScenario (ii) has a correct first half and a false second half. The slope and the point fix the intercept:\n\n$$11=3\\cdot 2+q$$\n\n$$q=5$$\n\nSo $y=3x+5$ is right. Shifting the intercept by one unit gives a parallel line, and parallel lines with different intercepts have no point in common:\n\n$$y=3x+6$$\n\n$$3\\cdot 2+6=12$$\n\nThat height is $12$, not the $11$ the point requires, so the statement is False.",
+        "**C.** → False\n\nScenario (iii) names an abscissa that is not the axis of this parabola. Compute it from the coefficients:\n\n$$x=-\\frac{8}{2\\left(-3\\right)}$$\n\n$$x=\\frac{4}{3}$$\n\nThe height at the genuine vertex is not the claimed number either:\n\n$$q\\left(\\frac{4}{3}\\right)=\\frac{4}{3}$$\n\nAt the abscissa the claim quotes, the curve is on the horizontal axis:\n\n$$q\\left(2\\right)=0$$\n\nNeither the abscissa nor the height matches, so the statement is False.",
+        "**D.** → False\n\nScenario (iv) substitutes a line into a parabola, and substitution multiplies the degrees instead of adding them. Replace $x$ by the line inside $g$:\n\n$$g(f(x))=\\left(x + 3\\right)\\left(2\\left(x + 3\\right)-5\\right)$$\n\n$$g(f(x))=2 x^{2} + 7 x + 3$$\n\nThe factored form makes the same point: a product of two linear factors is quadratic.\n\n$$g(f(x))=\\left(x + 3\\right) \\left(2 x + 1\\right)$$\n\nThe highest power is $x^{2}$, so the composition is quadratic rather than cubic, so the statement is False.",
+        "**E.** → False\n\nScenario (v) is a Vieta sign trap. For a monic quadratic the product of the roots is the constant term itself, with no sign change:\n\n$$x_{1}x_{2}=\\frac{21}{1}$$\n\n$$x_{1}x_{2}=21$$\n\nFactoring confirms it, since the roots can be read off directly:\n\n$$x^{2} - 10 x + 21=\\left(x-3\\right)\\left(x-7\\right)$$\n\n$$3\\cdot 7=21$$\n\nThe product is $21$, not $-21$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 130,
