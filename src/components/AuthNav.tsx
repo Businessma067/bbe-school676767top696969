@@ -83,6 +83,9 @@ export function AuthNav() {
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
+          aria-label="Open account menu"
+          aria-expanded={open}
+          aria-haspopup="menu"
           className="flex items-center gap-2 rounded-md border border-border bg-card px-2 py-1 hover:bg-secondary"
         >
           <div className="grid h-7 w-7 place-items-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
