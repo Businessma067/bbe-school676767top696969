@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Reorder Ch 11.4 tasks by difficulty and keep natural tactical explanations.
 
-Explanations should be continuous prose (like earlier chapter sections), not
-scaffold headings such as Assumption / How to solve it / Applied / Conclusion.
+Explanations follow the binomial tutoring style: **A.** → True/False, then
+flowing prose (no statement echo, no scaffold headings). Teach the idea in
+words, apply it to the figure, and end with "So the statement is True/False."
 """
 
 from __future__ import annotations
@@ -132,8 +133,8 @@ def strip_scaffold(expl: str) -> str:
         if ch == "$":
             break
 
-    if not body.lower().rstrip(".").endswith(f"the statement is {verd.lower()}"):
-        body = f"{body} The statement is {verd}."
+    if "so the statement is" not in body.lower():
+        body = f"{body}\n\nSo the statement is {verd}."
 
     body = re.sub(r"  +", " ", body)
     return f"**{letter}.** → {verd}\n\n{body}"
