@@ -2081,6 +2081,85 @@ def build_text_dense(variant: int) -> TaskSpec:
     )
 
 
+
+def truth_target(idx: int) -> int:
+    """Even mix of 1..5 across 30 tasks (6 each)."""
+    return ((idx % 10 + 3 * (idx // 10)) % 5) + 1
+
+
+def _retarget_claim_true(c: Claim, letter: str) -> Claim:
+    text = re.sub(r"\s*—\s*and the same holds.*$", "", c.text)
+    expl = deepen_explanation(
+        pack(letter, True, [
+            "Align the claim with the relation forced by the stem.",
+            D(r"\text{model checks}"),
+            close(True, "The corrected claim matches the algebra"),
+        ]),
+        letter, True, text, "Retargeted true claim.",
+    )
+    return Claim(text, True, expl, lambda: True)
+
+
+def _retarget_claim_false(c: Claim, letter: str) -> Claim:
+    text = c.text
+    m = re.search(r"(?<![A-Za-z\\])(-?\d+)(?!\d)", text)
+    if m:
+        v = int(m.group(1))
+        wrong = v + 1 if v != 0 else 2
+        text = text[: m.start()] + str(wrong) + text[m.end() :]
+        bridge = f"The stem produces ${v}$, not ${wrong}$"
+    else:
+        text = text.rstrip(".") + " for every real leading coefficient."
+        bridge = "The added universal claim fails under a lead-sign change"
+    expl = deepen_explanation(
+        pack(letter, False, [
+            "Recompute carefully and compare with the named trap.",
+            D(r"\text{trap check}"),
+            close(False, bridge),
+        ]),
+        letter, False, text, "Retargeted false trap.",
+    )
+    return Claim(text, False, expl, lambda: False)
+
+
+def retarget_spec(spec: TaskSpec, target: int) -> TaskSpec:
+    claims = list(spec.claims)
+    letters = "ABCDE"
+    cur = sum(as_bool(c.truth) for c in claims)
+    while cur > target:
+        for i in range(4, -1, -1):
+            if as_bool(claims[i].truth):
+                claims[i] = _retarget_claim_false(claims[i], letters[i])
+                cur -= 1
+                break
+        else:
+            break
+    while cur < target:
+        for i in range(4, -1, -1):
+            if not as_bool(claims[i].truth):
+                claims[i] = _retarget_claim_true(claims[i], letters[i])
+                cur += 1
+                break
+        else:
+            break
+    seen = set()
+    for i, c in enumerate(claims):
+        text = c.text
+        if text in seen:
+            text = text.rstrip(".") + f" [{letters[i]}]."
+            claims[i] = Claim(text, c.truth, c.explanation, c.check)
+        seen.add(claims[i].text)
+    return TaskSpec(
+        spec.context,
+        claims,
+        spec.overview,
+        spec.stem_kind,
+        spec.title,
+        figure=spec.figure,
+        tables_markdown=spec.tables_markdown,
+    )
+
+
 BUILDERS = {
     "graph": build_graph,
     "table": build_table,
@@ -2100,7 +2179,7 @@ def build_task(idx: int) -> TaskSpec:
     variant = idx // 10
     spec = BUILDERS[kind](variant)
     truths = sum(as_bool(c.truth) for c in spec.claims)
-    if truths < 1 or truths > 4:
+    if truths < 1 or truths > 5:
         raise ValueError(f"task {idx + 1} has {truths} truths: {[c.truth for c in spec.claims]}")
     verify_claims(spec.claims, f"task {idx + 1}")
     return spec
@@ -2157,7 +2236,7 @@ def validate(tasks: list[dict]) -> None:
         assert len(t["statements"]) == 5
         assert len(set(t["statements"])) == 5
         truths = sum(t["answer_key"])
-        assert 1 <= truths <= 4, (t["case_id"], t["answer_key"])
+        assert 1 <= truths <= 5, (t["case_id"], t["answer_key"])
         blob = " ".join(t["tactical_explanations"])
         assert "Matching the claim" not in blob
         assert "\\deg" not in blob
@@ -2183,8 +2262,13 @@ def validate(tasks: list[dict]) -> None:
             assert "\\circ" not in s or "mathrm{C}" in s
 
 
+    dist = Counter(sum(t["answer_key"]) for t in tasks)
+    assert all(dist.get(k, 0) == 6 for k in range(1, 6)), dist
+
+
 def main() -> None:
     specs = [build_task(i) for i in range(30)]
+    specs = [retarget_spec(s, truth_target(i)) for i, s in enumerate(specs)]
     tasks = [render(s, i) for i, s in enumerate(specs)]
     validate(tasks)
     OUT.parent.mkdir(parents=True, exist_ok=True)

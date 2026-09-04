@@ -8,23 +8,23 @@
       "context": "The figure shows a monic cubic whose graph crosses the axis at three marked abscissas (no printed formula). Combine end behaviour, multiplicity, and the marked $y$-intercept. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "As $x\\to+\\infty$, $p(x)\\to+\\infty$, and as $x\\to-\\infty$, $p(x)\\to-\\infty$.",
-        "At $x=1$ the graph crosses (does not touch), which forces $p'(1)\\neq 0$.",
-        "Exactly one stationary point lies strictly between the consecutive zeros $-2$ and $1$.",
-        "The $y$-intercept is $p(0)=6$, which equals $(-1)^3$ times the product of the three roots.",
+        "At $x=2$ the graph crosses (does not touch), which forces $p'(1)\\neq 0$.",
+        "Exactly one stationary point lies strictly between the consecutive zeros $-1$ and $1$.",
+        "The $y$-intercept is $p(2)=6$, which equals $(-1)^3$ times the product of the three roots.",
         "$p'(0)=-4$ at the marked vertical through the origin."
       ],
       "answer_key": [
         true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to+\\infty$, $p(x)\\to+\\infty$, and as $x\\to-\\infty$, $p(x)\\to-\\infty$.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nOdd degree with positive leading coefficient sends the right end up and the left end down. Both end claims match the leading term, so the statement is True.\n\n$$p(x)\\sim 1x^{3}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: At $x=1$ the graph crosses (does not touch), which forces $p'(1)\\neq 0$.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nA simple root is a transversal crossing: the derivative need not vanish there. $p'(1)\\neq 0$ confirms a crossing, so the statement is True.\n\n$$p'(1)=-6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Exactly one stationary point lies strictly between the consecutive zeros $-2$ and $1$.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nSolve $p'(x)=0$ and count real roots in the open interval $(-2,1)$. One turning abscissa sits between those zeros, so the statement is True.\n\n$$p'(x)=3 x^{2} - 4 x - 5$$\n\n$$\\#\\text{crits in }(-2,1)=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The $y$-intercept is $p(0)=6$, which equals $(-1)^3$ times the product of the three roots.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nFor a monic cubic, $p(0)=(-1)^{3}r_1 r_2 r_3$; also read the intercept from the figure. Intercept and Vieta product agree, so the statement is True.\n\n$$p(0)=6$$\n\n$$(-1)^3(-2)(1)(3)=6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
+        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: At $x=2$ the graph crosses (does not touch), which forces $p'(1)\\neq 0$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $1$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Exactly one stationary point lies strictly between the consecutive zeros $-1$ and $1$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $-2$, not $-1$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The $y$-intercept is $p(2)=6$, which equals $(-1)^3$ times the product of the three roots. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $0$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(0)=-4$ at the marked vertical through the origin.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nDifferentiate then substitute $x=0$; do not confuse the intercept with the slope. The slope is $-5$, not $-4$, so the statement is False.\n\n$$p'(x)=3 x^{2} - 4 x - 5$$\n\n$$p'(0)=-5$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
       ],
       "difficulty_level": "5/5",
@@ -45,21 +45,21 @@
         "Because second differences are not constant, a linear model is still possible if noise is ignored.",
         "Reconstructing from the table, $p(2)=3$ and $p(5)-p(4)=44$.",
         "Any polynomial agreeing with the six samples must have degree exactly $3$.",
-        "The closed form $p(x)=x^{3} - 2 x^{2} + x + 1$ reproduces every listed column."
+        "The closed form $p(x)=x^{4} - 2 x^{2} + x + 1$ reproduces every listed column."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The third differences are constantly $6$, so the samples come from a cubic (not a quadratic).\n\nTable stem: values match ; use -order to diagnose degree.\n\nThe first constant difference layer equals the degree: constant $\\Delta^{3}$ diagnoses degree $3$. Constant third differences confirm a cubic, so the statement is True.\n\n$$\\Delta_1:\\ 0,\\ 2,\\ 10,\\ 24,\\ 44$$\n\n$$\\Delta_3:\\ 6,\\ 6,\\ 6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Because second differences are not constant, a linear model is still possible if noise is ignored.\n\nTable stem: values match ; use -order to diagnose degree.\n\nA linear model needs constant first differences; non-constant $\\Delta^{2}$ already rules out degree $\\le 1$. Linear models are incompatible with growing second differences, so the statement is False.\n\n$$\\Delta_2:\\ 2,\\ 8,\\ 14,\\ 20$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Reconstructing from the table, $p(2)=3$ and $p(5)-p(4)=44$.\n\nTable stem: values match ; use -order to diagnose degree.\n\nRead the value at $x=2$, then the last first-difference entry. Both table facts hold, so the statement is True.\n\n$$p(2)=3$$\n\n$$\\Delta_1(4\\to 5)=44$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Any polynomial agreeing with the six samples must have degree exactly $3$.\n\nTable stem: values match ; use -order to diagnose degree.\n\nInfinitely many higher-degree polynomials can interpolate the same six points; differences only give a minimal degree. Degree at most can rise; uniqueness needs more hypotheses, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The closed form $p(x)=x^{3} - 2 x^{2} + x + 1$ reproduces every listed column.\n\nTable stem: values match ; use -order to diagnose degree.\n\nSpot-check several abscissas against the proposed cubic. Every sample matches the cubic, so the statement is True.\n\n$$p(0)=1$$\n\n$$p(3)=13$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The closed form $p(x)=x^{4} - 2 x^{2} + x + 1$ reproduces every listed column. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $3$, not $4$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 202,
@@ -78,21 +78,21 @@
         "Expanding the factored model yields $t^{3} - 11 t^{2} + 34 t - 24$ (as a polynomial in $t$).",
         "By Vieta, the multiplicity-weighted root sum equals $11$.",
         "As $t\\to+\\infty$, the model tends to $+\\infty$, fixed by leading coefficient $1$ on degree $3$.",
-        "The constant term equals $-24$, which is also nonzero because $t=0$ is not a root.",
+        "The constant term equals $-23$, which is also nonzero because $t=0$ is not a root.",
         "Because there are 3 roots counting multiplicity, the graph of the model must cross the $t$-axis at 3 distinct times in the recorded window."
       ],
       "answer_key": [
         true,
         true,
         true,
-        true,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Expanding the factored model yields $t^{3} - 11 t^{2} + 34 t - 24$ (as a polynomial in $t$).\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nMultiply the linear factors carefully, tracking the leading coefficient. The expanded form matches the product of factors, so the statement is True.\n\n$$h(t)=t^{3} - 11 t^{2} + 34 t - 24$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: By Vieta, the multiplicity-weighted root sum equals $11$.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nFor $a_n t^{n}+a_{n-1}t^{n-1}+\\cdots$, the root sum is $-a_{n-1}/a_n$. Weighted root sum is $11$, so the statement is True.\n\n$$\\sum r_i=-\\frac{-11}{1}=11$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $t\\to+\\infty$, the model tends to $+\\infty$, fixed by leading coefficient $1$ on degree $3$.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nEnd behaviour is the sign of the leading term for large positive $t$. Far-right behaviour matches the leading term, so the statement is True.\n\n$$\\text{lead}=1,\\ \\text{degree}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The constant term equals $-24$, which is also nonzero because $t=0$ is not a root.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nEvaluate at $t=0$, or multiply the factors' constant pieces. Constant term diagnosis is correct, so the statement is True.\n\n$$\\text{value at }0=-24$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The constant term equals $-23$, which is also nonzero because $t=0$ is not a root. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $-24$, not $-23$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Because there are 3 roots counting multiplicity, the graph of the model must cross the $t$-axis at 3 distinct times in the recorded window.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nMultiplicity and distinct abscissas differ; a repeated root is one meeting time, and some roots may lie outside the window. Distinct crossing count is not automatically the multiplicity total, so the statement is False.\n\n$$\\text{distinct roots}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -118,15 +118,15 @@
       "answer_key": [
         true,
         false,
-        false,
-        false,
+        true,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The highest power appearing in $f(g(x))$ is $x^{mn}$.\n\nSymbolic stem: composition degrees without coefficients.\n\nUnder nesting $f(g(x))$, highest powers multiply: the outer degree hits the inner highest power. Composed highest power is $x^{mn}$, so the statement is True.\n\n$$\\text{highest power in } f(g(x))=x^{mn}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The highest power in $f(g(x))$ is always $x^{m+n}$.\n\nSymbolic stem: composition degrees without coefficients.\n\nAdding degrees describes sums of polynomials, not nesting. Nesting multiplies degrees, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $m\\neq n$, then $f(g(x))$ and $g(f(x))$ have different highest powers.\n\nSymbolic stem: composition degrees without coefficients.\n\nBoth nestings produce highest power $x^{mn}=x^{nm}$; unequal degrees do not split the product. The highest powers agree even when $m\\neq n$, so the statement is False.\n\n$$mn=nm$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Nesting is commutative for all cubics: $f(g(x))=g(f(x))$ identically whenever $m=n=3$.\n\nSymbolic stem: composition degrees without coefficients.\n\nEqual degree does not force commuting maps; try $f(x)=x^{3}$ and $g(x)=x^{3}+x$. Order of nesting still matters, so the statement is False.\n\n$$f(g(x))\\neq g(f(x))\\ \\text{in general}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: If $m\\neq n$, then $f(g(x))$ and $g(f(x))$ have different highest powers. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Nesting is commutative for all cubics: $f(g(x))=g(f(x))$ identically whenever $m=n=3$. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $m=n=2$, then both $f(g(x))$ and $g(f(x))$ can attain highest power $x^{4}$.\n\nSymbolic stem: composition degrees without coefficients.\n\nEach nesting multiplies $2\\cdot 2=4$. $x^{4}$ is the expected highest power, so the statement is True.\n\n$$2\\cdot 2=4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -152,15 +152,15 @@
         true,
         true,
         true,
-        false,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: For every real $k$, $g_k$ is an odd function.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nOnly odd powers appear; $g_k(-x)=-g_k(x)$ identically in $k$. Oddness holds for all parameters, so the statement is True.\n\n$$g_k(-x)=-x^{3}+kx=-g_k(x)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The value $k=0$ is exactly when $g_k$ has a repeated real root.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nFactor $x(x^{2}-k)$; a repeated root occurs only when the nonzero roots collide at $0$, i.e. $k=0$. $k=0$ produces the triple root at the origin, so the statement is True.\n\n$$g_0(x)=x^{3}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $k>0$, then $g_k$ has three distinct real zeros, including $g_k(\\sqrt{k})=0$.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nZeros are $0,\\pm\\sqrt{k}$ precisely when $k>0$. Three distinct real zeros appear, so the statement is True.\n\n$$g_k(x)=x(x-\\sqrt{k})(x+\\sqrt{k})\\quad(k>0)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Stationary points solve $3x^{2}-k=0$, so their abscissas are independent of $k$.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nThe equation $3x^{2}=k$ moves the critical points whenever $k$ changes. Turning locations depend on $k$, so the statement is False.\n\n$$g_k'(x)=3x^{2}-k$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: There is no real $k$ for which $g_k(1)=0$ and $g_k$ has three distinct real zeros.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nNeed $1-k=0$ so $k=1>0$, which already yields three distinct zeros $0,\\pm 1$. $k=1$ satisfies both requirements, so the statement is False.\n\n$$g_1(1)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Stationary points solve $3x^{2}-k=0$, so their abscissas are independent of $k$. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: There is no real $k$ for which $g_k(1)=0$ and $g_k$ has three distinct real zeros. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 205,
@@ -177,24 +177,24 @@
       "context": "A monic cubic touches the axis at $x=2$ and crosses at $x=-1$. Rebuild $p$ from that multiplicity pattern, then test derivative and Vieta claims. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "$p(x)=(x-2)^{2}(x+1)$.",
-        "$p'(2)=0$ while $p'(-1)\\neq 0$.",
-        "The multiplicity-weighted Vieta sum $2\\cdot(2)+(-1)$ equals $3$, matching $-$(coefficient of $x^2)$.",
+        "$p'(3)=0$ while $p'(-1)\\neq 0$.",
+        "The multiplicity-weighted Vieta sum $3\\cdot(2)+(-1)$ equals $3$, matching $-$(coefficient of $x^2)$.",
         "$p$ has exactly three distinct real zeros because the multiplicity total is three.",
-        "The constant term $p(0)$ equals $4$, and equals $(-1)^3(2)^2(-1)$."
+        "The constant term $p(2)$ equals $4$, and equals $(-1)^3(2)^2(-1)$."
       ],
       "answer_key": [
         true,
-        true,
-        true,
         false,
-        true
+        false,
+        false,
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(x)=(x-2)^{2}(x+1)$.\n\nRebuild stem:.\n\nA monic cubic with that multiplicity pattern is uniquely the displayed product. The factorisation is forced, so the statement is True.\n\n$$p(x)=(x-2)^{2}(x+1)$$\n\n$$p(x)=x^{3} - 3 x^{2} + 4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(2)=0$ while $p'(-1)\\neq 0$.\n\nRebuild stem:.\n\nDifferentiate the rebuilt cubic; only multiplicity $\\ge 2$ kills the derivative. Only the double root flattens the derivative, so the statement is True.\n\n$$p'(2)=0$$\n\n$$p'(-1)=9$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The multiplicity-weighted Vieta sum $2\\cdot(2)+(-1)$ equals $3$, matching $-$(coefficient of $x^2)$.\n\nRebuild stem:.\n\nCount the double root twice; for a monic cubic that sum equals minus the $x^{2}$ coefficient. Weighted sum $3$ matches Vieta, so the statement is True.\n\n$$2\\cdot(2)+(-1)=3$$\n\n$$p(x)=x^{3} - 3 x^{2} + 4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
+        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p'(3)=0$ while $p'(-1)\\neq 0$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $2$, not $3$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The multiplicity-weighted Vieta sum $3\\cdot(2)+(-1)$ equals $3$, matching $-$(coefficient of $x^2)$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $2$, not $3$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ has exactly three distinct real zeros because the multiplicity total is three.\n\nRebuild stem:.\n\nDistinct abscissas: only $\\{d,s\\}$ — two meetings, even though multiplicities sum to three. Distinct-versus-multiplicity trap: only two distinct zeros, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The constant term $p(0)$ equals $4$, and equals $(-1)^3(2)^2(-1)$.\n\nRebuild stem:.\n\nEvaluate at zero, or multiply the constant pieces of each factor. Constant term matches the signed product, so the statement is True.\n\n$$p(0)=4$$\n\n$$(-1)^3(2)^2(-1)=4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The constant term $p(2)$ equals $4$, and equals $(-1)^3(2)^2(-1)$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $0$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 206,
@@ -213,22 +213,22 @@
         "The highest power in $q(p(x))$ is $x^{2}$.",
         "The leading coefficient of $q(p(x))$ equals $1$.",
         "The leading coefficient of $q(p(x))$ equals $2$.",
-        "$q(p(0))=4$ while $p(q(0))=2$.",
-        "$p(q(x))$ and $q(p(x))$ share the same highest power $x^{2}$."
+        "$q(p(2))=4$ while $p(q(0))=2$.",
+        "$p(q(x))$ and $q(p(x))$ share the same highest power $x^{3}$."
       ],
       "answer_key": [
         true,
         true,
         false,
-        true,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The highest power in $q(p(x))$ is $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nMultiply the degrees of the outer and inner polynomials. Highest power is $x^{2}$, so the statement is True.\n\n$$1\\cdot2=2$$\n\n$$q(p(x))=x^{2} - 2 x + 4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $1$.\n\nNested stem:  has highest power  and lead.\n\nLeading coefficients multiply when nesting: outer lead times inner lead raised to the outer degree. Lead product formula matches, so the statement is True.\n\n$$\\text{lead}(q(p))=1$$\n\n$$1\\cdot(1)^{1}=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $2$.\n\nNested stem:  has highest power  and lead.\n\nExpand the highest-power term carefully; off-by-one traps are common. The lead is $1$, not $2$, so the statement is False.\n\n$$\\text{lead}(q(p))=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $q(p(0))=4$ while $p(q(0))=2$.\n\nNested stem:  has highest power  and lead.\n\nEvaluate inside-out for each nesting order. Both nested values match the claim, so the statement is True.\n\n$$p(0)=3,\\ q(p(0))=4$$\n\n$$q(0)=1,\\ p(q(0))=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(q(x))$ and $q(p(x))$ share the same highest power $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nBoth products of degrees coincide here, even though the expanded polynomials differ. Highest powers agree, so the statement is True.\n\n$$\\text{highest in }p(q)=x^{2},\\ \\text{in }q(p)=x^{2}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $q(p(2))=4$ while $p(q(0))=2$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $0$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p(q(x))$ and $q(p(x))$ share the same highest power $x^{3}$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $2$, not $3$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 207,
@@ -246,21 +246,21 @@
         "Expanding carefully gives $p(x)=x^{4} - 3 x^{3} - 3 x^{2} + 11 x - 6$.",
         "$x=1$ is a root of multiplicity at least $2$.",
         "The sum of roots with multiplicity equals $3$, matching Vieta for this monic polynomial.",
-        "$p'(1)=0$ because $x=1$ is a multiple root.",
+        "$p'(2)=0$ because $x=1$ is a multiple root.",
         "$p$ has exactly 4 distinct real zeros."
       ],
       "answer_key": [
         true,
         true,
         true,
-        true,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Expanding carefully gives $p(x)=x^{4} - 3 x^{3} - 3 x^{2} + 11 x - 6$.\n\nFactored stem:.\n\nMultiply factors left to right, tracking repeated roots. The expansion matches, so the statement is True.\n\n$$p(x)=x^{4} - 3 x^{3} - 3 x^{2} + 11 x - 6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $x=1$ is a root of multiplicity at least $2$.\n\nFactored stem:.\n\nRead multiplicity from the exponent on the corresponding linear factor. $x=1$ is at least double, so the statement is True.\n\n$$p(x)=x^{4} - 3 x^{3} - 3 x^{2} + 11 x - 6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The sum of roots with multiplicity equals $3$, matching Vieta for this monic polynomial.\n\nFactored stem:.\n\nAdd every root as many times as its multiplicity. Multiset sum is $3$, so the statement is True.\n\n$$\\sum=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(1)=0$ because $x=1$ is a multiple root.\n\nFactored stem:.\n\nA root of multiplicity $\\ge 2$ is automatically a root of $p'$. Derivative vanishes at the multiple root, so the statement is True.\n\n$$p'(1)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p'(2)=0$ because $x=1$ is a multiple root. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $1$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ has exactly 4 distinct real zeros.\n\nFactored stem:.\n\nList distinct abscissas from the factorisation (ignore multiplicity for this count). There are 3 distinct real zeros, not 4, so the statement is False.\n\n$$\\text{distinct}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -286,14 +286,14 @@
         true,
         true,
         false,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The solid cubic factors as $p(x)=(x+2)(x-1)(x-3)$ and therefore crosses at $-2$, $1$, and $3$.\n\nHybrid: figure plus explicit quadratic partner.\n\nMatch figure markers to the factorisation. Three crossings match the factors, so the statement is True.\n\n$$p(x)=x^{3} - 2 x^{2} - 5 x + 6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Solving $p(x)=q(x)$ yields exactly 0 real meetings; the difference $p-q$ has degree $3$.\n\nHybrid: figure plus explicit quadratic partner.\n\nSubtract and count real roots of the difference. 0 real meetings of degree-$3$ difference, so the statement is True.\n\n$$p(x)-q(x)=x^{3} - 3 x^{2} - 4 x + 8$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: At every meeting point the curves automatically share the same slope.\n\nHybrid: figure plus explicit quadratic partner.\n\nEqual values do not force equal derivatives unless the difference has a repeated root there. Crossings can have unequal slopes, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The dashed quadratic $q(x)=x^{2} - x - 2$ is odd.\n\nHybrid: figure plus explicit quadratic partner.\n\nTest $q(-x)+q(x)$. Oddness fails for this quadratic, so the statement is False.\n\n$$q(-x)=x^{2} + x - 2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The dashed quadratic $q(x)=x^{2} - x - 2$ is odd. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to+\\infty$, $p(x)-q(x)\\to+\\infty$ because the cubic term dominates.\n\nHybrid: figure plus explicit quadratic partner.\n\nThe difference is cubic with positive lead. Far-right difference goes to $+\\infty$, so the statement is True.\n\n$$p-q\\sim 1x^{3}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -320,15 +320,15 @@
         true,
         true,
         true,
-        false,
-        false
+        true,
+        true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: A monic cubic with zeros $-1$, $0$ and $2$ satisfies $p(1)=-2$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nUnpack the mini-scenario: identify the polynomial, then carry out the named computation. The value is $-2$, so the statement is True.\n\n$$f(1)=-2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $f(x)=x^4+1$, then $f(-x)=f(x)$ for every real $x$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nSubstitute $-x$ throughout the named polynomial. Evenness holds, so the statement is True.\n\n$$f(-x)=x^{4} + 1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The nested map obtained by feeding $x^{2}+1$ into $u^{2}-u$ has highest power $x^{4}$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nExpand fully before reading the highest power. Degree $4$ settles the claim, so the statement is True.\n\n$$\\text{highest power}=x^{4}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Translating $x^{3}-x$ upward by $2$ leaves exactly three real roots.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nCount real solutions of the shifted cubic. There are 1 real roots, so the statement is False.\n\n$$\\#\\text{real roots}=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: A quadratic speed $v(t)=t^{2}-4t+3$ has negative acceleration for all $t>2$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nDifferentiate speed: $a(t)=2t-4$, which is positive for $t>2$. Acceleration is not negative throughout $t>2$, so the statement is False.\n\n$$a(t)=2 t - 4$$\n\n$$a(3)=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Translating $x^{3}-x$ upward by $2$ leaves exactly three real roots. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: A quadratic speed $v(t)=t^{2}-4t+3$ has negative acceleration for all $t>2$. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 210,
@@ -353,14 +353,14 @@
         true,
         false,
         true,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to+\\infty$, $p(x)\\to+\\infty$, and the graph is tangent to the axis at $x=2$.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nPositive leading cubic rises to the right; a double root forces $p(2)=p'(2)=0$ (touch). End behaviour and tangency both hold, so the statement is True.\n\n$$p(x)=x^{3} - 3 x^{2} + 4$$\n\n$$p'(2)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: At the simple zero $x=-1$, one also has $p'(-1)=0$.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nOnly multiplicity $\\ge 2$ forces a flat derivative; test the simple root separately. The simple root is not a critical point, so the statement is False.\n\n$$p'(-1)=9$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(0)=4$ and the constant term equals $(-1)^3\\cdot 2^2\\cdot(-1)$ from the multiset of roots.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nCount the double root twice in the product: roots $2,2,-1$. Constant term matches the weighted product, so the statement is True.\n\n$$p(0)=4$$\n\n$$(-1)^3\\cdot 2\\cdot 2\\cdot(-1)=4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Because the cubic has three real roots counting multiplicity, the figure shows three distinct axis crossings.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nMultiplicity three in total need not mean three distinct abscissas; the double root appears once. Only two distinct axis meetings appear, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Because the cubic has three real roots counting multiplicity, the figure shows three distinct axis crossings. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Between the touch at $2$ and the cross at $-1$, $p'$ has a root (a local extremum exists on $(-1,2)$).\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nA cubic with a double root and a distinct simple root still has a critical point in between by Rolle. A stationary point lies in $(-1,2)$, so the statement is True.\n\n$$p'(x)=3 x \\left(x - 2\\right)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -385,16 +385,16 @@
       ],
       "answer_key": [
         true,
-        false,
         true,
-        false,
+        true,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Fourth differences are constantly $24$, diagnosing degree $4$.\n\nTable stem: values match ; use -order to diagnose degree.\n\nFor degree $4$, the fourth difference layer is the first constant one. Constant $\\Delta^{4}$ matches a quartic, so the statement is True.\n\n$$\\Delta_3:\\ 36,\\ 60,\\ 84$$\n\n$$\\Delta_4:\\ 24,\\ 24$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Third differences are already constant, so a cubic interpolant fits all six points exactly.\n\nTable stem: values match ; use -order to diagnose degree.\n\nInspect whether $\\Delta^{3}$ is flat; for a genuine quartic it still moves. Third differences are not constant, so the statement is False.\n\n$$\\Delta_3:\\ 36,\\ 60,\\ 84$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Third differences are already constant, so a cubic interpolant fits all six points exactly. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ is even, so $p(2)=p(-2)$, and the table's $p(2)=6$ therefore predicts the value at $-2$.\n\nTable stem: values match ; use -order to diagnose degree.\n\nCheck $p(-x)-p(x)$; evenness lets you extend the table to the left. Evenness holds for this quartic, so the statement is True.\n\n$$p(x)=x^{4} - 3 x^{2} + 2$$\n\n$$p(2)=6$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The sample $p(1)=0$ equals the constant term of $p$.\n\nTable stem: values match ; use -order to diagnose degree.\n\nThe constant term is $p(0)$, not $p(1)$. Those values differ, so the statement is False.\n\n$$p(0)=2$$\n\n$$p(1)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The sample $p(1)=0$ equals the constant term of $p$. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: A model of degree $4$ is consistent with constant $4$th differences on unit spacing.\n\nTable stem: values match ; use -order to diagnose degree.\n\nFinite-difference degree diagnosis: the first constant layer index equals the degree. Degree $4$ matches the $\\Delta$ hierarchy, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$"
       ],
       "difficulty_level": "5/5",
@@ -412,23 +412,23 @@
       "context": "Bridge camber (cm) under a test load follows $c(t)=-(x-2)^{2}(x-5)$ on $0\\le t\\le 6$ (hours into the test). A short sample table is provided. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Expanding the factored model yields $- t^{3} + 9 t^{2} - 24 t + 20$ (as a polynomial in $t$).",
-        "By Vieta, the multiplicity-weighted root sum equals $9$.",
-        "As $t\\to+\\infty$, the model tends to $-\\infty$, fixed by leading coefficient $-1$ on degree $3$.",
-        "The constant term equals $20$, which is also nonzero because $t=0$ is not a root.",
+        "By Vieta, the multiplicity-weighted root sum equals $10$.",
+        "As $t\\to+\\infty$, the model tends to $-\\infty$, fixed by leading coefficient $0$ on degree $3$.",
+        "The constant term equals $21$, which is also nonzero because $t=0$ is not a root.",
         "Because there are 3 roots counting multiplicity, the graph of the model must cross the $t$-axis at 3 distinct times in the recorded window."
       ],
       "answer_key": [
         true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Expanding the factored model yields $- t^{3} + 9 t^{2} - 24 t + 20$ (as a polynomial in $t$).\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nMultiply the linear factors carefully, tracking the leading coefficient. The expanded form matches the product of factors, so the statement is True.\n\n$$h(t)=- t^{3} + 9 t^{2} - 24 t + 20$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: By Vieta, the multiplicity-weighted root sum equals $9$.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nFor $a_n t^{n}+a_{n-1}t^{n-1}+\\cdots$, the root sum is $-a_{n-1}/a_n$. Weighted root sum is $9$, so the statement is True.\n\n$$\\sum r_i=-\\frac{9}{-1}=9$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $t\\to+\\infty$, the model tends to $-\\infty$, fixed by leading coefficient $-1$ on degree $3$.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nEnd behaviour is the sign of the leading term for large positive $t$. Far-right behaviour matches the leading term, so the statement is True.\n\n$$\\text{lead}=-1,\\ \\text{degree}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The constant term equals $20$, which is also nonzero because $t=0$ is not a root.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nEvaluate at $t=0$, or multiply the factors' constant pieces. Constant term diagnosis is correct, so the statement is True.\n\n$$\\text{value at }0=20$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: By Vieta, the multiplicity-weighted root sum equals $10$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $9$, not $10$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: As $t\\to+\\infty$, the model tends to $-\\infty$, fixed by leading coefficient $0$ on degree $3$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $-1$, not $0$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The constant term equals $21$, which is also nonzero because $t=0$ is not a root. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $20$, not $21$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Because there are 3 roots counting multiplicity, the graph of the model must cross the $t$-axis at 3 distinct times in the recorded window.\n\nApplied stem: expand , apply Vieta (sum ), read end behaviour from lead.\n\nMultiplicity and distinct abscissas differ; a repeated root is one meeting time, and some roots may lie outside the window. Distinct crossing count is not automatically the multiplicity total, so the statement is False.\n\n$$\\text{distinct roots}=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
@@ -447,21 +447,21 @@
       "statements": [
         "$p_{\\mathrm{even}}$ is always an even function, and $p_{\\mathrm{odd}}$ is always odd.",
         "$p=p_{\\mathrm{even}}+p_{\\mathrm{odd}}$ as an identity of polynomials.",
-        "If $p$ is odd, then $p_{\\mathrm{even}}$ is the zero polynomial.",
+        "If $p$ is odd, then $p_{\\mathrm{even}}$ is the zero polynomial for every real leading coefficient.",
         "$p_{\\mathrm{odd}}(0)=p(0)$ for every $p$.",
         "The even part can have odd degree when $p$ itself has odd degree."
       ],
       "answer_key": [
         true,
         true,
-        true,
+        false,
         false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p_{\\mathrm{even}}$ is always an even function, and $p_{\\mathrm{odd}}$ is always odd.\n\nSymbolic stem: even/odd decomposition.\n\nReplace $x$ by $-x$ in each definition; the even part is unchanged and the odd part flips sign. Parity of the parts is forced by construction, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p=p_{\\mathrm{even}}+p_{\\mathrm{odd}}$ as an identity of polynomials.\n\nSymbolic stem: even/odd decomposition.\n\nAdding the two halves cancels the $\\pm p(-x)$ terms and doubles $p(x)$. Every polynomial splits into even plus odd parts, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $p$ is odd, then $p_{\\mathrm{even}}$ is the zero polynomial.\n\nSymbolic stem: even/odd decomposition.\n\nOddness means $p(-x)=-p(x)$, so the even average vanishes. Odd inputs leave no even part, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: If $p$ is odd, then $p_{\\mathrm{even}}$ is the zero polynomial for every real leading coefficient. Retargeted false trap. Recompute carefully and compare with the named trap. The added universal claim fails under a lead-sign change, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p_{\\mathrm{odd}}(0)=p(0)$ for every $p$.\n\nSymbolic stem: even/odd decomposition.\n\nAt zero, $p(0)-p(0)=0$, so the odd part is always $0$ there. The odd part vanishes at the origin, so the statement is False.\n\n$$p_{\\mathrm{odd}}(0)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The even part can have odd degree when $p$ itself has odd degree.\n\nSymbolic stem: even/odd decomposition.\n\nEven functions only involve even powers; an even polynomial cannot have odd degree unless it is zero. Even parts never carry odd-degree leading terms, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$"
       ],
@@ -553,14 +553,14 @@
       "answer_key": [
         true,
         true,
-        false,
+        true,
         true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The highest power in $q(p(x))$ is $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nMultiply the degrees of the outer and inner polynomials. Highest power is $x^{2}$, so the statement is True.\n\n$$1\\cdot2=2$$\n\n$$q(p(x))=2 x^{2} + 2 x + 1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $2$.\n\nNested stem:  has highest power  and lead.\n\nLeading coefficients multiply when nesting: outer lead times inner lead raised to the outer degree. Lead product formula matches, so the statement is True.\n\n$$\\text{lead}(q(p))=2$$\n\n$$2\\cdot(1)^{1}=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $3$.\n\nNested stem:  has highest power  and lead.\n\nExpand the highest-power term carefully; off-by-one traps are common. The lead is $2$, not $3$, so the statement is False.\n\n$$\\text{lead}(q(p))=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The leading coefficient of $q(p(x))$ equals $3$. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $q(p(0))=1$ while $p(q(0))=1$.\n\nNested stem:  has highest power  and lead.\n\nEvaluate inside-out for each nesting order. Both nested values match the claim, so the statement is True.\n\n$$p(0)=1,\\ q(p(0))=1$$\n\n$$q(0)=-1,\\ p(q(0))=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(q(x))$ and $q(p(x))$ share the same highest power $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nBoth products of degrees coincide here, even though the expanded polynomials differ. Highest powers agree, so the statement is True.\n\n$$\\text{highest in }p(q)=x^{2},\\ \\text{in }q(p)=x^{2}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
@@ -579,21 +579,21 @@
       "statements": [
         "Expanding carefully gives $p(x)=x^{3} - 5 x^{2} + 2 x + 8$.",
         "$x=1$ is a root of multiplicity at least $2$.",
-        "The sum of roots with multiplicity equals $5$, matching Vieta for this monic polynomial.",
+        "The sum of roots with multiplicity equals $6$, matching Vieta for this monic polynomial.",
         "$p'(3)=0$ because $x=3$ is a multiple root.",
         "$p$ has exactly 4 distinct real zeros."
       ],
       "answer_key": [
         true,
         false,
-        true,
+        false,
         false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Expanding carefully gives $p(x)=x^{3} - 5 x^{2} + 2 x + 8$.\n\nFactored stem:.\n\nMultiply factors left to right, tracking repeated roots. The expansion matches, so the statement is True.\n\n$$p(x)=x^{3} - 5 x^{2} + 2 x + 8$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $x=1$ is a root of multiplicity at least $2$.\n\nFactored stem:.\n\nRead multiplicity from the exponent on the corresponding linear factor. $x=1$ is not a repeated root, so the statement is False.\n\n$$p(x)=x^{3} - 5 x^{2} + 2 x + 8$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The sum of roots with multiplicity equals $5$, matching Vieta for this monic polynomial.\n\nFactored stem:.\n\nAdd every root as many times as its multiplicity. Multiset sum is $5$, so the statement is True.\n\n$$\\sum=5$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The sum of roots with multiplicity equals $6$, matching Vieta for this monic polynomial. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $5$, not $6$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(3)=0$ because $x=3$ is a multiple root.\n\nFactored stem:.\n\nA root of multiplicity $\\ge 2$ is automatically a root of $p'$. No multiple root at the tested abscissa, so the statement is False.\n\n$$p'(3)=-1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ has exactly 4 distinct real zeros.\n\nFactored stem:.\n\nList distinct abscissas from the factorisation (ignore multiplicity for this count). There are 3 distinct real zeros, not 4, so the statement is False.\n\n$$\\text{distinct}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
@@ -614,21 +614,21 @@
         "Third differences are constant, so a cubic fits all six samples exactly.",
         "$p(2)=17$ from the table, and evenness forces $p(-2)=p(2)$.",
         "As $x\\to+\\infty$, $p(x)\\to+\\infty$, but as $x\\to-\\infty$, $p(x)\\to-\\infty$.",
-        "The constant term is $1$, matching both $p(0)$ in the table and the closed form."
+        "The constant term is $2$, matching both $p(0)$ in the table and the closed form."
       ],
       "answer_key": [
         true,
         false,
         true,
         false,
-        true
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The table samples an even quartic with no real zeros.\n\nHybrid: table plus.\n\nEvenness plus $p(x)\\ge 1$ on $\\mathbb{R}$ kills real roots. Even quartic bounded below by $1$, so the statement is True.\n\n$$p(x)=x^{4} + 1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Third differences are constant, so a cubic fits all six samples exactly.\n\nHybrid: table plus.\n\nA quartic needs constant fourth differences; third differences still vary. Growth is quartic, so the statement is False.\n\n$$\\Delta_3:\\ 36,\\ 60,\\ 84$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(2)=17$ from the table, and evenness forces $p(-2)=p(2)$.\n\nHybrid: table plus.\n\nRead the column, then apply $p(-x)=p(x)$. Table and evenness agree, so the statement is True.\n\n$$p(2)=17$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to+\\infty$, $p(x)\\to+\\infty$, but as $x\\to-\\infty$, $p(x)\\to-\\infty$.\n\nHybrid: table plus.\n\nEven degree with positive lead sends both ends to $+\\infty$. Both ends rise for this even quartic, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The constant term is $1$, matching both $p(0)$ in the table and the closed form.\n\nHybrid: table plus.\n\nCompare the $x=0$ column with $x^{4}+1$. Constant term confirmed, so the statement is True.\n\n$$p(0)=1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The constant term is $2$, matching both $p(0)$ in the table and the closed form. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $1$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 219,
@@ -648,21 +648,21 @@
         "For $g(x)=x^{3}-4x$, the derivative $g'(x)$ is even.",
         "$p(x)=(x+3)(x-1)(x-4)$ has root sum $8$.",
         "If $h(x)=-x^{3}+3x$, then $h$ is odd and $h(0)=0$.",
-        "A quartic $x^{4}-5x^{2}+4$ factors into four real linear factors."
+        "A quartic $x^{5}-5x^{2}+4$ factors into four real linear factors."
       ],
       "answer_key": [
         true,
         true,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The polynomial (x-2)^{2}(x+1) touches the axis at $x=2$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nTouching means a double root: both $p$ and $p'$ vanish there. $x=2$ is a touch point, so the statement is True.\n\n$$p(2)=0$$\n\n$$p'(2)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: For $g(x)=x^{3}-4x$, the derivative $g'(x)$ is even.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nTest the parity claim by substituting $-x$ or by inspecting powers. Parity matches the claim, so the statement is True.\n\n$$\\text{parity check on } 3 x^{2} - 4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(x)=(x+3)(x-1)(x-4)$ has root sum $8$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nFor a monic cubic, the root sum equals minus the $x^{2}$ coefficient. Root sum is $2$, so the statement is False.\n\n$$\\sum r_i=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $h(x)=-x^{3}+3x$, then $h$ is odd and $h(0)=0$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nTest the parity claim by substituting $-x$ or by inspecting powers. Parity matches the claim, so the statement is True.\n\n$$\\text{parity check on } x \\left(3 - x^{2}\\right)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: A quartic $x^{4}-5x^{2}+4$ factors into four real linear factors.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nFactor completely over the reals. Four real linear factors appear, so the statement is True.\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: A quartic $x^{5}-5x^{2}+4$ factors into four real linear factors. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $4$, not $5$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 220,
@@ -680,21 +680,21 @@
         "As $x\\to+\\infty$, $p(x)\\to-\\infty$, matching a negative leading coefficient on an odd degree.",
         "At the marked root $x=0$, both $p(0)=0$ and $p'(0)=0$, so the graph touches rather than crosses.",
         "The $y$-intercept claim $p(0)=0$ is compatible with the product of roots times $(-1)^3$ times the leading coefficient.",
-        "$p'(4)=-20$, so the rightmost crossing is not a horizontal tangent.",
+        "$p'(5)=-20$, so the rightmost crossing is not a horizontal tangent.",
         "Every cubic with three distinct real zeros must open upward."
       ],
       "answer_key": [
         true,
         false,
         true,
-        true,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to+\\infty$, $p(x)\\to-\\infty$, matching a negative leading coefficient on an odd degree.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nRead the far-right arrow from the leading term $-x^{3}$. The right end goes to $-\\infty$, so the statement is True.\n\n$$p(x)\\sim -1x^3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: At the marked root $x=0$, both $p(0)=0$ and $p'(0)=0$, so the graph touches rather than crosses.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nA simple root at the origin still has $p'(0)\\neq 0$ unless the factor is repeated. Touch would need $p'(0)=0$, so the statement is False.\n\n$$p(0)=0$$\n\n$$p'(0)=4$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The $y$-intercept claim $p(0)=0$ is compatible with the product of roots times $(-1)^3$ times the leading coefficient.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nWith a root at $0$, the constant term must vanish; Vieta agrees. Intercept is zero as forced by the root at the origin, so the statement is True.\n\n$$p(0)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(4)=-20$, so the rightmost crossing is not a horizontal tangent.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nTest the derivative at the simple root $x=4$. The graph crosses at $x=4$, so the statement is True.\n\n$$p'(4)=-20$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p'(5)=-20$, so the rightmost crossing is not a horizontal tangent. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $4$, not $5$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Every cubic with three distinct real zeros must open upward.\n\nGraph stem: ; combine ends, multiplicity, and  at marked points.\n\nEnd behaviour is fixed by the leading coefficient, not by the root count alone. A negative leading coefficient can still have three real zeros, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$"
       ],
       "difficulty_level": "5/5",
@@ -788,15 +788,15 @@
       "answer_key": [
         true,
         true,
-        false,
-        false,
+        true,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: A suitable choice of $c$ can change the number of distinct real roots of $p$.\n\nSymbolic stem: vertical shifts.\n\nCompare $x^{2}-1$ (two real roots) with $x^{2}-1+2=x^{2}+1$ (none). Root counts are not invariant under vertical shifts, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $q'(x)=p'(x)$ for every real $c$, so turning abscissas are shift-invariant.\n\nSymbolic stem: vertical shifts.\n\nConstants disappear under differentiation; stationary $x$-values solve the same equation. Derivatives ignore additive constants, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Some shift $c$ can create more than $n$ distinct real roots.\n\nSymbolic stem: vertical shifts.\n\nDegree is unchanged by adding $c$, so at most $n$ roots remain. A shift cannot raise the degree, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $p$ is even and $c\\neq 0$, then $q$ fails to be even.\n\nSymbolic stem: vertical shifts.\n\nEvenness: $q(-x)=p(-x)+c=p(x)+c=q(x)$ still holds. Adding a constant preserves evenness, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
+        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: Some shift $c$ can create more than $n$ distinct real roots. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: If $p$ is even and $c\\neq 0$, then $q$ fails to be even. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $p$ is odd and $c\\neq 0$, then $q$ fails to be odd.\n\nSymbolic stem: vertical shifts.\n\nOddness requires $q(0)=0$; a nonzero shift makes $q(0)=c\\neq 0$. A nonzero shift destroys odd symmetry, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$"
       ],
       "difficulty_level": "5/5",
@@ -813,23 +813,23 @@
       "context": "Consider the family $h_k(x)=(x-1)^{2}(x-k)$ with real $k$. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The parameter value that creates a triple root at $x=1$ is exactly $k=1$.",
-        "For every real $k$, the graph is tangent to the axis at $x=1$.",
+        "For every real $k$, the graph is tangent to the axis at $x=2$.",
         "Increasing $k$ strictly increases the number of distinct real zeros.",
-        "$h_k(0)=-k$, so the unique $k$ with $h_k(0)=0$ is $k=0$, which still leaves a double root at $1$.",
+        "$h_k(2)=-k$, so the unique $k$ with $h_k(0)=0$ is $k=0$, which still leaves a double root at $1$.",
         "There exists $k$ making $h_k$ an even function."
       ],
       "answer_key": [
         true,
-        true,
         false,
-        true,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The parameter value that creates a triple root at $x=1$ is exactly $k=1$.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nSet the remaining root equal to $1$: $k=1$ yields $(x-1)^{3}$. $k=1$ merges all roots, so the statement is True.\n\n$$h_1(x)=(x-1)^{3}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: For every real $k$, the graph is tangent to the axis at $x=1$.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nThe squared factor $(x-1)^{2}$ is always present, so $h_k(1)=h_k'(1)=0$. Tangency at $1$ is parameter-free, so the statement is True.\n\n$$h_3'(1)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: For every real $k$, the graph is tangent to the axis at $x=2$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $1$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Increasing $k$ strictly increases the number of distinct real zeros.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nAt $k=1$ there is one distinct zero; for all $k\\neq 1$ there are exactly two — no further increase. Distinct-zero count plateaus for $k\\neq 1$, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $h_k(0)=-k$, so the unique $k$ with $h_k(0)=0$ is $k=0$, which still leaves a double root at $1$.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nConstant term: $(-1)^{2}(-k)=-k$. Then $k=0$ gives $x^{2}(x-1)$ wait — $h_0(x)=(x-1)^2x$. Vanishing intercept forces $k=0$ without destroying the double root at $1$, so the statement is True.\n\n$$h_k(0)=-k$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $h_k(2)=-k$, so the unique $k$ with $h_k(0)=0$ is $k=0$, which still leaves a double root at $1$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $0$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: There exists $k$ making $h_k$ an even function.\n\nParametric stem: locate repeated roots, oddness, and special parameter values.\n\nEven cubics must actually have even degree or be constant; a genuine cubic cannot be even. No cubic is an even function, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$"
       ],
       "difficulty_level": "5/5",
@@ -848,23 +848,23 @@
       "statements": [
         "$p(x)=(x+1)^{2}(x-2)$.",
         "$p'(-1)=0$ while $p'(2)\\neq 0$.",
-        "The multiplicity-weighted Vieta sum $2\\cdot(-1)+(2)$ equals $0$, matching $-$(coefficient of $x^2)$.",
+        "The multiplicity-weighted Vieta sum $3\\cdot(-1)+(2)$ equals $0$, matching $-$(coefficient of $x^2)$.",
         "$p$ has exactly three distinct real zeros because the multiplicity total is three.",
-        "The constant term $p(0)$ equals $-2$, and equals $(-1)^3(-1)^2(2)$."
+        "The constant term $p(2)$ equals $-2$, and equals $(-1)^3(-1)^2(2)$."
       ],
       "answer_key": [
         true,
         true,
-        true,
         false,
-        true
+        false,
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(x)=(x+1)^{2}(x-2)$.\n\nRebuild stem:.\n\nA monic cubic with that multiplicity pattern is uniquely the displayed product. The factorisation is forced, so the statement is True.\n\n$$p(x)=(x+1)^{2}(x-2)$$\n\n$$p(x)=x^{3} - 3 x - 2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(-1)=0$ while $p'(2)\\neq 0$.\n\nRebuild stem:.\n\nDifferentiate the rebuilt cubic; only multiplicity $\\ge 2$ kills the derivative. Only the double root flattens the derivative, so the statement is True.\n\n$$p'(-1)=0$$\n\n$$p'(2)=9$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The multiplicity-weighted Vieta sum $2\\cdot(-1)+(2)$ equals $0$, matching $-$(coefficient of $x^2)$.\n\nRebuild stem:.\n\nCount the double root twice; for a monic cubic that sum equals minus the $x^{2}$ coefficient. Weighted sum $0$ matches Vieta, so the statement is True.\n\n$$2\\cdot(-1)+(2)=0$$\n\n$$p(x)=x^{3} - 3 x - 2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
+        "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The multiplicity-weighted Vieta sum $3\\cdot(-1)+(2)$ equals $0$, matching $-$(coefficient of $x^2)$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $2$, not $3$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ has exactly three distinct real zeros because the multiplicity total is three.\n\nRebuild stem:.\n\nDistinct abscissas: only $\\{d,s\\}$ — two meetings, even though multiplicities sum to three. Distinct-versus-multiplicity trap: only two distinct zeros, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The constant term $p(0)$ equals $-2$, and equals $(-1)^3(-1)^2(2)$.\n\nRebuild stem:.\n\nEvaluate at zero, or multiply the constant pieces of each factor. Constant term matches the signed product, so the statement is True.\n\n$$p(0)=-2$$\n\n$$(-1)^3(-1)^2(2)=-2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: The constant term $p(2)$ equals $-2$, and equals $(-1)^3(-1)^2(2)$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $0$, not $2$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 226,
@@ -884,21 +884,21 @@
         "The leading coefficient of $q(p(x))$ equals $-1$.",
         "The leading coefficient of $q(p(x))$ equals $0$.",
         "$q(p(0))=-3$ while $p(q(0))=3$.",
-        "$p(q(x))$ and $q(p(x))$ share the same highest power $x^{2}$."
+        "$p(q(x))$ and $q(p(x))$ share the same highest power $x^{3}$."
       ],
       "answer_key": [
         true,
         true,
         false,
         true,
-        true
+        false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The highest power in $q(p(x))$ is $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nMultiply the degrees of the outer and inner polynomials. Highest power is $x^{2}$, so the statement is True.\n\n$$1\\cdot2=2$$\n\n$$q(p(x))=- x^{2} + 3 x - 3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $-1$.\n\nNested stem:  has highest power  and lead.\n\nLeading coefficients multiply when nesting: outer lead times inner lead raised to the outer degree. Lead product formula matches, so the statement is True.\n\n$$\\text{lead}(q(p))=-1$$\n\n$$-1\\cdot(1)^{1}=-1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The leading coefficient of $q(p(x))$ equals $0$.\n\nNested stem:  has highest power  and lead.\n\nExpand the highest-power term carefully; off-by-one traps are common. The lead is $-1$, not $0$, so the statement is False.\n\n$$\\text{lead}(q(p))=-1$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $q(p(0))=-3$ while $p(q(0))=3$.\n\nNested stem:  has highest power  and lead.\n\nEvaluate inside-out for each nesting order. Both nested values match the claim, so the statement is True.\n\n$$p(0)=5,\\ q(p(0))=-3$$\n\n$$q(0)=2,\\ p(q(0))=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(q(x))$ and $q(p(x))$ share the same highest power $x^{2}$.\n\nNested stem:  has highest power  and lead.\n\nBoth products of degrees coincide here, even though the expanded polynomials differ. Highest powers agree, so the statement is True.\n\n$$\\text{highest in }p(q)=x^{2},\\ \\text{in }q(p)=x^{2}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p(q(x))$ and $q(p(x))$ share the same highest power $x^{3}$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $2$, not $3$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 227,
@@ -924,14 +924,14 @@
         false,
         true,
         true,
-        false
+        true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Expanding carefully gives $p(x)=x \\left(x^{3} - 5 x^{2} + 3 x + 9\\right)$.\n\nFactored stem:.\n\nMultiply factors left to right, tracking repeated roots. The expansion matches, so the statement is True.\n\n$$p(x)=x \\left(x^{3} - 5 x^{2} + 3 x + 9\\right)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $x=1$ is a root of multiplicity at least $2$.\n\nFactored stem:.\n\nRead multiplicity from the exponent on the corresponding linear factor. $x=1$ is not a repeated root, so the statement is False.\n\n$$p(x)=x \\left(x^{3} - 5 x^{2} + 3 x + 9\\right)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: The sum of roots with multiplicity equals $5$, matching Vieta for this monic polynomial.\n\nFactored stem:.\n\nAdd every root as many times as its multiplicity. Multiset sum is $5$, so the statement is True.\n\n$$\\sum=5$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p'(3)=0$ because $x=3$ is a multiple root.\n\nFactored stem:.\n\nA root of multiplicity $\\ge 2$ is automatically a root of $p'$. Derivative vanishes at the multiple root, so the statement is True.\n\n$$p'(3)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p$ has exactly 4 distinct real zeros.\n\nFactored stem:.\n\nList distinct abscissas from the factorisation (ignore multiplicity for this count). There are 3 distinct real zeros, not 4, so the statement is False.\n\n$$\\text{distinct}=3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
+        "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p$ has exactly 4 distinct real zeros. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
       "sort_order": 228,
@@ -956,14 +956,14 @@
         true,
         true,
         true,
-        false,
+        true,
         true
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: With $q(x)=p(x)+2$, the graph of $q$ is $p$ shifted upward by $2$, and turning abscissas stay put.\n\nHybrid: graph of  plus shifted  with table.\n\nVertical shifts add a constant; derivatives ignore it. Shift up by $2$ with unchanged stationary $x$-values, so the statement is True.\n\n$$q(x)=p(x)+2$$\n\n$$q'(x)=p'(x)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: When $c=2$, $q$ has fewer distinct real zeros than $p$.\n\nHybrid: graph of  plus shifted  with table.\n\nCount crossings of $p$ from the figure; solve $q(x)=0$ algebraically. Upward shift reduces the real-root count, so the statement is True.\n\n$$\\#\\text{zeros}(p)=3$$\n\n$$\\#\\text{zeros}(q)=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
         "**C.** → True\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $q(0)=2$, matching the table's shifted intercept.\n\nHybrid: graph of  plus shifted  with table.\n\nAdd the shift to $p(0)$. Intercept shifts by $+2$, so the statement is True.\n\n$$p(0)=0$$\n\n$$q(0)=2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$",
-        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: For every real $c$, $q$ remains odd whenever $p$ is odd.\n\nHybrid: graph of  plus shifted  with table.\n\nOddness needs $q(0)=0$; nonzero $c$ breaks it. A nonzero shift destroys odd symmetry, so the statement is False.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
+        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: For every real $c$, $q$ remains odd whenever $p$ is odd. Retargeted true claim. Align the claim with the relation forced by the stem. The corrected claim matches the algebra, so the statement is True.\n\n$$\\text{model checks}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → True\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: As $x\\to-\\infty$, both $p$ and $q$ tend to $-\\infty$.\n\nHybrid: graph of  plus shifted  with table.\n\nOdd degree with positive leading coefficient sends the left end down; adding $2$ does not change that. Both left ends go to $-\\infty$, so the statement is True.\n\n$$p(x)\\sim x^3$$\n\n$$q(x)\\sim x^3$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$"
       ],
       "difficulty_level": "5/5",
@@ -982,23 +982,23 @@
       "context": "Five standalone polynomial micro-scenarios — no shared formula across letters. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "Meeting points of $x^{3}$ and $3x$ solve $x^{3}-3x=0$.",
-        "$p(x)=x^3+x^2-x-1$ has $p(-1)=0$.",
+        "$p(x)=x^4+x^2-x-1$ has $p(-1)=0$.",
         "If $p(n)=n^{3}+n$ for $n=0,1,2$ only, then $p$ is necessarily cubic.",
-        "For every real $k$, $x^{3}+k$ has at least one real root.",
+        "For every real $k$, $x^{4}+k$ has at least one real root.",
         "If $p$ has degree $3$ and leading coefficient $-2$, then $p(x)\\to -\\infty$ as $x\\to-\\infty$."
       ],
       "answer_key": [
         true,
-        true,
         false,
-        true,
+        false,
+        false,
         false
       ],
       "tactical_explanations": [
         "**A.** → True\n\nStatement A rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: Meeting points of $x^{3}$ and $3x$ solve $x^{3}-3x=0$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nSet $x^{3}=3x$, rearrange to $x^{3}-3x=0$. The meeting equation is correct, so the statement is True.\n\n$$x^3-3x=x \\left(x^{2} - 3\\right)$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**B.** → True\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: $p(x)=x^3+x^2-x-1$ has $p(-1)=0$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nUnpack the mini-scenario: identify the polynomial, then carry out the named computation. The value is $0$, so the statement is True.\n\n$$f(-1)=0$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
+        "**B.** → False\n\nStatement B rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: $p(x)=x^4+x^2-x-1$ has $p(-1)=0$. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $3$, not $4$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**C.** → False\n\nStatement C rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $p(n)=n^{3}+n$ for $n=0,1,2$ only, then $p$ is necessarily cubic.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nThree sample points never uniquely force degree three; higher-degree interpolants exist. Necessity fails, so the statement is False.\n\n$$p(x)=x^{3} + x\\ \\text{is one model, not the only}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
-        "**D.** → True\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: For every real $k$, $x^{3}+k$ has at least one real root.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nOdd degree with real coefficients forces at least one real root. At least one real root is guaranteed, so the statement is True.\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$\n\n$$\\text{end behaviour follows the leading term}$$",
+        "**D.** → False\n\nStatement D rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE. The claim to test is: For every real $k$, $x^{4}+k$ has at least one real root. Retargeted false trap. Recompute carefully and compare with the named trap. The stem produces $3$, not $4$, so the statement is False.\n\n$$\\text{trap check}$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$",
         "**E.** → False\n\nStatement E rewards a full read of the stem: translate the words into algebra before you decide TRUE or FALSE.\n\nThe claim to test is: If $p$ has degree $3$ and leading coefficient $-2$, then $p(x)\\to -\\infty$ as $x\\to-\\infty$.\n\nText-dense stem: each letter is its own polynomial puzzle.\n\nOdd degree with negative lead: as $x\\to-\\infty$, $x^{3}\\to-\\infty$, times $-2$ yields $+\\infty$. Left end goes to $+\\infty$, not $-\\infty$, so the statement is False.\n\n$$a=-2$$\n\n$$\\text{read the stem fully before deciding}$$\n\n$$\\text{translate words into algebra}$$\n\n$$\\text{check multiplicity versus distinct roots}$$"
       ],
       "difficulty_level": "5/5",
