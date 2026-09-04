@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
-"""Chapter 7 mixed exam — medium-first 30-task bank (subsection 7.5).
+"""Chapter 7.5 mixed exam — medium-first, Chapter 11 diversity.
 
-Each stem_kind forces the student to solve FROM that medium:
-  graph       figure only (no formulae / vertex coords / root lists in stems)
-  table       raw s_n values (no Δ rows, no closed form)
-  applied     story + table OR figure as the sole numeric source (no unit traps)
-  hybrid      ≥1 figure-only letter and ≥1 table/algebra letter; no printed formulae
-  algebra     small integers, multi-step (axis, Vieta, meetings, discriminant, nesting)
+Graph / table / hybrid / applied stems name the medium and withhold formulas.
+Statements are bare claims: covering the figure or table must make those
+letters unsolvable. Textual styles stay fully algebraic.
 
-Integers in stems lie in −20…20 (coefficients prefer 1–10). Difficulty 5/5.
-Chapter 4 explanations: header, one-line displays, closing verdict.
-Sympy verifies every answer key.
+Small integers; hard 5/5 multi-step work; Chapter 4 tutor explanations.
+Every answer key is sympy-checked before export.
 
 Run: python3 scripts/gen-ch7-mixed-medium-first.py
 """
-
 from __future__ import annotations
 
 import json
@@ -22,23 +17,17 @@ import re
 import statistics
 import sys
 from collections import Counter
-from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Callable, Optional
 
-from sympy import Poly, Rational, Symbol, discriminant, expand, latex, simplify, solve
+from sympy import Poly, Rational, Symbol, discriminant, expand, simplify
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ch9_svg import svg_polynomial  # noqa: E402
 
 x = Symbol("x")
-t_sym = Symbol("t")
-a_sym = Symbol("a")
-k_sym = Symbol("k")
-
 OUT = Path("/workspace/src/data/math-ch7-mixed-exam.json")
 
-STEM_KINDS = [
+STEMS = [
     "graph",
     "table",
     "applied",
@@ -51,7 +40,20 @@ STEM_KINDS = [
     "text_dense",
 ]
 
+# Six tasks at each truth-count 1..5.
+PLANNED_TRUTHS = [
+    2, 3, 4, 5, 1, 3, 2, 4, 5, 1,
+    3, 4, 1, 2, 5, 4, 3, 1, 2, 5,
+    4, 1, 5, 3, 2, 1, 5, 2, 3, 4,
+]
+
 TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
+
+BANNED = (r"\deg", r"\circ")
+LEAK_RE = re.compile(
+    r"turns at\s*\$x\s*=|vertex is\s*\$\(|From the plot,|From the figure, the vertex",
+    re.I,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -59,7 +61,33 @@ TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
 # ---------------------------------------------------------------------------
 
 def D(s: str) -> str:
-    return f"$${re.sub(r'\\s+', ' ', s).strip()}$$"
+    inner = re.sub(r"\s+", " ", s.strip())
+    return f"$${inner}$$"
+
+
+_STEP_SPLIT = re.compile(r"\\qquad|\\Rightarrow")
+
+
+def explode_display(inner: str) -> list[str]:
+    """Chapter 4: one algebraic step per display. Split \\qquad / \\Rightarrow
+    and peel a=b=c chains. Leave inequalities intact."""
+    inner = re.sub(r"\s+", " ", inner.strip())
+    chunks = [c.strip() for c in _STEP_SPLIT.split(inner) if c.strip()]
+    out: list[str] = []
+    for ch in chunks:
+        if any(op in ch for op in ("<", ">", r"\neq", r"\le", r"\ge", r"\to")):
+            out.append(ch)
+            continue
+        parts = [p.strip() for p in ch.split("=")]
+        if len(parts) <= 2:
+            out.append(ch)
+            continue
+        running = parts[1]
+        out.append(f"{parts[0]}={running}")
+        for nxt in parts[2:]:
+            out.append(f"{running}={nxt}")
+            running = nxt
+    return out
 
 
 def F(r) -> str:
@@ -71,25 +99,9 @@ def F(r) -> str:
     return f"{sign}\\frac{{{r.p}}}{{{r.q}}}"
 
 
-def L(expr) -> str:
-    return latex(simplify(expand(expr)))
-
-
-def par(r) -> str:
-    r = Rational(r)
-    s = F(r)
-    return s if (r >= 0 and r.q == 1) else rf"\left({s}\right)"
-
-
-def close(truth: bool, bridge: str) -> str:
-    return f"{bridge.rstrip(' .')}, so the statement is {'True' if truth else 'False'}."
-
-
-def pack(letter: str, truth: bool, parts: list[str]) -> str:
-    body = "\n\n".join(p for p in parts if p and str(p).strip())
-    if "so the statement is" not in body.lower():
-        body += "\n\n" + close(truth, "This settles the claim")
-    return f"**{letter}.** → {'True' if truth else 'False'}\n\n{body}"
+def close(truth: bool, clause: str) -> str:
+    clause = clause.strip().rstrip(".,;")
+    return f"{clause}, so the statement is {'True' if truth else 'False'}."
 
 
 def normalize_displays(text: str) -> str:
@@ -100,2542 +112,2071 @@ def normalize_displays(text: str) -> str:
     return re.sub(r"\$\$([\s\S]*?)\$\$", repl, text)
 
 
+def pack(letter: str, truth: bool, parts: list[str]) -> str:
+    exploded: list[str] = []
+    for p in parts:
+        p = str(p).strip()
+        if not p:
+            continue
+        if p.startswith("$$") and p.endswith("$$"):
+            exploded.extend(D(s) for s in explode_display(p[2:-2]))
+        else:
+            exploded.append(p)
+    body = "\n\n".join(exploded)
+    if "so the statement is" not in body.lower():
+        body += "\n\n" + close(
+            truth,
+            "This is exactly what the claim states" if truth else "This is not what the claim states",
+        )
+    header = f"**{letter}.** → {'True' if truth else 'False'}"
+    return normalize_displays(f"{header}\n\n{body}")
+
+
 # ---------------------------------------------------------------------------
-# Model
+# Algebra helpers (sympy)
 # ---------------------------------------------------------------------------
 
-def rewrite_coeffs(f, g):
-    fu, gu = Poly(f, x), Poly(g, x)
+def coeffs_high(expr) -> list[float]:
+    p = Poly(expand(expr), x)
+    return [float(c) for c in p.all_coeffs()]
+
+
+def ev(expr, val):
+    return Rational(simplify(expand(expr).subs(x, val)))
+
+
+def axis_of(g):
+    coeffs = Poly(expand(g), x).all_coeffs()
+    if len(coeffs) < 3:
+        raise ValueError("axis_of expects a quadratic")
+    a, b, _c = (Rational(c) for c in coeffs)
+    return Rational(-b / (2 * a))
+
+
+def vertex_of(g):
+    h = axis_of(g)
+    return h, ev(g, h)
+
+
+def disc_of(expr):
+    return Rational(discriminant(Poly(expand(expr), x)))
+
+
+def nmeet(f, g) -> int:
+    d = disc_of(expand(g - f))
+    if d < 0:
+        return 0
+    if d == 0:
+        return 1
+    return 2
+
+
+def vprod(g):
+    a, _b, c = (Rational(c) for c in Poly(expand(g), x).all_coeffs())
+    return Rational(c / a)
+
+
+def vsum(g):
+    a, b, _c = (Rational(c) for c in Poly(expand(g), x).all_coeffs())
+    return Rational(-b / a)
+
+
+def lead(expr):
+    return Rational(Poly(expand(expr), x).LC())
+
+
+def rewrite_ABC(f, g):
+    fu, gu = Poly(expand(f), x), Poly(expand(g), x)
     m = Rational(fu.all_coeffs()[0])
-    kk = Rational(fu.all_coeffs()[1])
-    a, b, cc = [Rational(c) for c in gu.all_coeffs()]
+    k = Rational(fu.all_coeffs()[1])
+    a, b, c = (Rational(coeff) for coeff in gu.all_coeffs())
     A = a / m**2
-    B = (b - 2 * A * m * kk) / m
-    C = cc - A * kk**2 - B * kk
+    B = (b - 2 * A * m * k) / m
+    C = c - A * k**2 - B * k
     assert expand(A * f**2 + B * f + C - g) == 0
     return A, B, C
 
 
-class FG:
-    def __init__(self, f, g):
-        self.f = expand(f)
-        self.g = expand(g)
-        fc = [Rational(c) for c in Poly(self.f, x).all_coeffs()]
-        gc = [Rational(c) for c in Poly(self.g, x).all_coeffs()]
-        if len(fc) == 1:
-            self.m, self.k = Rational(0), fc[0]
-        else:
-            self.m, self.k = fc[0], fc[1]
-        if len(gc) == 2:
-            gc = [Rational(0)] + gc
-        self.a, self.b, self.c = gc[0], gc[1], gc[2]
-        self.h = Rational(-self.b / (2 * self.a))
-        self.kv = Rational(simplify(self.g.subs(x, self.h)))
-        self.diff = expand(self.g - self.f)
-        self.delta = Rational(discriminant(Poly(self.diff, x)))
-        if self.delta < 0:
-            self.meet = 0
-        elif self.delta == 0:
-            self.meet = 1
-        else:
-            self.meet = 2
-        self.s = Rational(-self.b / self.a)
-        self.p = Rational(self.c / self.a)
-        self.gf = expand(self.g.subs(x, self.f))
-        self.fg = expand(self.f.subs(x, self.g))
-        self.A, self.B, self.C = rewrite_coeffs(self.f, self.g)
-        self.g_lead = self.a
-
-    def at(self, expr, val):
-        return Rational(simplify(expr.subs(x, val)))
-
-    def g_at(self, val):
-        return self.at(self.g, val)
-
-    def f_at(self, val):
-        return self.at(self.f, val)
-
-    def seq(self, ns: list[int]) -> list[int]:
-        return [int(self.g_at(n)) for n in ns]
+def first_diffs(ys: list[int]) -> list[int]:
+    return [ys[i + 1] - ys[i] for i in range(len(ys) - 1)]
 
 
-def seq_from(a, b, c, ns: list[int]) -> list[int]:
-    return [int(a * n * n + b * n + c) for n in ns]
+def second_diffs(ys: list[int]) -> list[int]:
+    d1 = first_diffs(ys)
+    return first_diffs(d1)
 
 
-def second_diffs(vals: list[int]) -> list[int]:
-    d1 = [vals[i + 1] - vals[i] for i in range(len(vals) - 1)]
-    return [d1[i + 1] - d1[i] for i in range(len(d1) - 1)]
-
-
-def first_diffs(vals: list[int]) -> list[int]:
-    return [vals[i + 1] - vals[i] for i in range(len(vals) - 1)]
-
-
-def raw_table(ns: list[int], vals: list[int], row: str = "s_n") -> str:
-    hdr = "| $n$ | " + " | ".join(str(n) for n in ns) + " |"
-    sep = "| --- | " + " | ".join("---" for _ in ns) + " |"
-    body = f"| ${row}$ | " + " | ".join(str(v) for v in vals) + " |"
-    return "\n".join([hdr, sep, body])
-
-
-def xy_table(xs: list[int], f_vals: list[int], g_vals: list[int], f_name: str, g_name: str) -> str:
-    hdr = "| $x$ | " + " | ".join(str(v) for v in xs) + " |"
+def md_table(xs: list[int], ys: list[int], yname: str = "y", xname: str = "x") -> str:
+    head = f"| ${xname}$ | " + " | ".join(str(v) for v in xs) + " |"
     sep = "| --- | " + " | ".join("---" for _ in xs) + " |"
-    fr = f"| {f_name} | " + " | ".join(str(v) for v in f_vals) + " |"
-    gr = f"| {g_name} | " + " | ".join(str(v) for v in g_vals) + " |"
-    return "\n".join([hdr, sep, fr, gr])
+    row = f"| ${yname}$ | " + " | ".join(str(v) for v in ys) + " |"
+    return "\n".join([head, sep, row])
 
 
-def poly_coeffs(expr) -> list[float]:
-    return [float(c) for c in Poly(expand(expr), x).all_coeffs()]
-
-
-def make_figure(g, f, title: str, xmin: int, xmax: int) -> str:
-    return svg_polynomial(
-        poly_coeffs(g),
-        xmin=float(xmin),
-        xmax=float(xmax),
+def figure(
+    g,
+    *,
+    xmin: float,
+    xmax: float,
+    ymin: float,
+    ymax: float,
+    title: str,
+    f=None,
+    flabel: str | None = None,
+    xlabel: str = "x",
+    ylabel: str = "y",
+) -> str:
+    kw: dict = dict(
+        xmin=xmin,
+        xmax=xmax,
+        ymin=ymin,
+        ymax=ymax,
         title=title,
-        ymin=-20,
-        ymax=20,
+        xlabel=xlabel,
+        ylabel=ylabel,
         auto_mark_roots=True,
         auto_mark_turns=True,
-        second=poly_coeffs(f),
     )
+    if f is not None:
+        kw["second"] = coeffs_high(f)
+        if flabel:
+            kw["second_label"] = flabel
+    return svg_polynomial(coeffs_high(g), **kw)
 
 
-def y_ok(expr, xmin: int, xmax: int) -> None:
-    for n in range(xmin, xmax + 1):
-        y = Rational(simplify(expr.subs(x, n)))
-        if y.q != 1:
-            continue
-        if abs(int(y)) > 20:
-            raise AssertionError(f"|y|={y} at x={n} for {expr} exceeds 20")
-
-
-# ---------------------------------------------------------------------------
-# Spec
-# ---------------------------------------------------------------------------
-
-@dataclass
-class Claim:
-    text: str
-    truth: bool
-    explanation: str
-    check: Optional[Callable[[], bool]] = None
-
-
-@dataclass
-class TaskSpec:
-    title: str
-    context: str
-    stem_kind: str
-    claims: list[Claim]
-    overview: str
-    figure: str | None = None
-    tables_markdown: str | None = None
-
-
-def C(text: str, truth: bool, explanation: str, check: Optional[Callable[[], bool]] = None) -> Claim:
-    return Claim(text, truth, explanation, check)
-
-
-def assert_claims(spec: TaskSpec) -> None:
-    if len(spec.claims) != 5:
-        raise AssertionError(f"{spec.title}: need 5 claims")
-    if len({c.text for c in spec.claims}) != 5:
-        raise AssertionError(f"{spec.title}: duplicate statements")
-    ntrue = sum(1 for c in spec.claims if c.truth)
-    if not (1 <= ntrue <= 5):
-        raise AssertionError(f"{spec.title}: {ntrue} trues")
-    for c in spec.claims:
-        if c.check is not None and bool(c.check()) != bool(c.truth):
-            raise AssertionError(f"{spec.title}: key drift on: {c.text[:80]}")
-
-
-# ---------------------------------------------------------------------------
-# GRAPH — figure is the only source
-# ---------------------------------------------------------------------------
-
-def build_graph(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(x - 3, -(x**2) + 4 * x + 1)
-        xmin, xmax, name = -2, 6, "MetroLink"
-        title = "Reading a clearance plot"
-        ntrue = 1
-        claims = [
-            C(
-                "The solid curve and the dashed line meet in exactly two points.",
-                True,
-                pack("A", True, [
-                    "Two graphs meet where their heights agree, so the crossings on the sketch are the real zeros of the difference.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"f(x)={L(M.f)}"),
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    "A quadratic difference has at most two real zeros; the discriminant decides how many actually occur.",
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "The discriminant is positive and the plot shows two crossings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The turning point of the solid curve lies below the dashed line.",
-                False,
-                pack("B", False, [
-                    "The turning point sits on the axis of the parabola. Recover that abscissa from the reconstructed coefficients, then compare heights.",
-                    D(rf"x=-\frac{{{F(M.b)}}}{{2\cdot {par(M.a)}}}={F(M.h)}"),
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    D(rf"f\left({F(M.h)}\right)={F(M.f_at(M.h))}"),
-                    close(False, "The turning height sits above the dashed line, not below it"),
-                ]),
-                lambda: M.kv < M.f_at(M.h),
-            ),
-            C(
-                "At the integer mark $x=0$ the dashed line sits above the solid curve.",
-                False,
-                pack("C", False, [
-                    "Compare the two heights on the vertical axis, which is the integer mark $x=0$.",
-                    D(rf"g(0)={F(M.g_at(0))}"),
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    "The signed gap dashed-minus-solid is therefore negative, so the solid curve is the higher of the two.",
-                    D(rf"f(0)-g(0)={F(M.f_at(0) - M.g_at(0))}"),
-                    close(False, "At $x=0$ the solid curve sits above the dashed line"),
-                ]),
-                lambda: M.f_at(0) > M.g_at(0),
-            ),
-            C(
-                "The solid curve opens upwards.",
-                False,
-                pack("D", False, [
-                    "A parabola opens upwards only when its leading coefficient is positive. The reconstructed solid curve is",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    "A negative leading coefficient turns the arms down, which is also why the marked turning point is a peak rather than a trough.",
-                    close(False, "The solid curve opens downwards"),
-                ]),
-                lambda: M.a > 0,
-            ),
-            C(
-                "At the integer mark $x=3$ the dashed line is higher than the solid curve.",
-                False,
-                pack("E", False, [
-                    "Read both heights at the tick $x=3$ on the horizontal axis, then confirm by substituting into the reconstructed models.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"g(3)={F(M.g_at(3))}"),
-                    D(rf"f(x)={L(M.f)}"),
-                    D(rf"f(3)={F(M.f_at(3))}"),
-                    close(False, "The solid height $4$ sits above the dashed height $0$"),
-                ]),
-                lambda: M.f_at(3) > M.g_at(3),
-            ),
-        ]
-    elif cycle == 1:
-        M = FG(2 * x - 8, x**2 - 6 * x + 5)
-        xmin, xmax, name = -1, 7, "CoastGuard"
-        title = "Vertex against the service line"
-        ntrue = 2
-        claims = [
-            C(
-                "The graphs meet in more than two points.",
-                False,
-                pack("A", False, [
-                    "A line and a parabola differ by a quadratic, so they cannot meet three times.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    "A positive discriminant supplies two distinct real meetings and no more.",
-                    D(rf"{M.meet}"),
-                    close(False, "The count is two, never more than two"),
-                ]),
-                lambda: M.meet > 2,
-            ),
-            C(
-                "The turning point of the solid curve lies below the dashed line.",
-                True,
-                pack("B", True, [
-                    "Locate the axis of the solid curve, evaluate both models there, and compare.",
-                    D(rf"x={F(M.h)}"),
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    D(rf"f\left({F(M.h)}\right)={F(M.f_at(M.h))}"),
-                    close(True, "The turning height $-4$ sits below the dashed height $-2$"),
-                ]),
-                lambda: M.kv < M.f_at(M.h),
-            ),
-            C(
-                "The solid curve opens downwards.",
-                False,
-                pack("C", False, [
-                    "Opening is the sign of the leading coefficient alone.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    "A positive leading coefficient sends the arms up, so the marked turning point is a trough.",
-                    close(False, "The solid curve opens upwards"),
-                ]),
-                lambda: M.a < 0,
-            ),
-            C(
-                "At $x=0$ the solid curve sits above the dashed line.",
-                True,
-                pack("D", True, [
-                    "The vertical axis is the integer mark $x=0$; read the two intercepts and subtract.",
-                    D(rf"g(0)={F(M.g_at(0))}"),
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    D(rf"g(0)-f(0)={F(M.g_at(0) - M.f_at(0))}"),
-                    close(True, "The solid intercept $5$ sits well above the dashed intercept $-8$"),
-                ]),
-                lambda: M.g_at(0) > M.f_at(0),
-            ),
-            C(
-                "At the integer mark $x=4$ the solid curve is higher than the dashed line.",
-                False,
-                pack("E", False, [
-                    "Compare heights at the tick $x=4$.",
-                    D(rf"g(4)={F(M.g_at(4))}"),
-                    D(rf"f(4)={F(M.f_at(4))}"),
-                    close(False, "The dashed height $0$ sits above the solid height $-3$"),
-                ]),
-                lambda: M.g_at(4) > M.f_at(4),
-            ),
-        ]
-    else:
-        M = FG(-x + 2, -(x**2) + 2 * x + 8)
-        xmin, xmax, name = -3, 5, "WindFarm"
-        title = "Opening, crossings, and a height comparison"
-        ntrue = 3
-        claims = [
-            C(
-                "The graphs meet in exactly two points.",
-                True,
-                pack("A", True, [
-                    "Count the crossings on the sketch, then confirm with the discriminant of the difference.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant matches the two visible crossings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The turning point of the solid curve lies above the dashed line.",
-                True,
-                pack("B", True, [
-                    "The axis of the reconstructed parabola is an integer tick, so both heights can be read and then checked.",
-                    D(rf"x={F(M.h)}"),
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    D(rf"f\left({F(M.h)}\right)={F(M.f_at(M.h))}"),
-                    close(True, "The peak height $9$ sits above the dashed height $1$"),
-                ]),
-                lambda: M.kv > M.f_at(M.h),
-            ),
-            C(
-                "The solid curve opens upwards.",
-                False,
-                pack("C", False, [
-                    "Recover the leading coefficient from the reconstructed solid curve.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(False, "A negative leading coefficient opens the curve downwards"),
-                ]),
-                lambda: M.a > 0,
-            ),
-            C(
-                "At $x=0$ the dashed line sits above the solid curve.",
-                False,
-                pack("D", False, [
-                    "The gap at the origin is the difference of the two intercepts.",
-                    D(rf"g(0)={F(M.g_at(0))}"),
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    close(False, "The solid intercept $8$ sits above the dashed intercept $2$"),
-                ]),
-                lambda: M.f_at(0) > M.g_at(0),
-            ),
-            C(
-                "At the integer mark $x=3$ the solid curve is higher than the dashed line.",
-                True,
-                pack("E", True, [
-                    "Read both heights at $x=3$.",
-                    D(rf"g(3)={F(M.g_at(3))}"),
-                    D(rf"f(3)={F(M.f_at(3))}"),
-                    close(True, "The solid height $5$ sits above the dashed height $-1$"),
-                ]),
-                lambda: M.g_at(3) > M.f_at(3),
-            ),
-        ]
-    y_ok(M.g, xmin, xmax)
-    y_ok(M.f, xmin, xmax)
-    assert sum(c.truth for c in claims) == ntrue
-    ctx = (
-        f"On the axes below, a **solid brown parabola** and a **dashed green line** model "
-        f"clearance for {name}. Coefficients are not printed on the diagram. {TAIL}"
-    )
-    ov = (
-        f"The figure is the only source. Reconstructing the two models gives "
-        f"$f(x)={L(M.f)}$ and $g(x)={L(M.g)}$. "
-        f"The vertex is $\\left({F(M.h)},{F(M.kv)}\\right)$ and the graphs meet {M.meet} times."
-    )
-    spec = TaskSpec(
-        f"Mixed exam — {title}",
-        ctx,
-        "graph",
-        claims,
-        ov,
-        figure=make_figure(M.g, M.f, f"{name} clearance", xmin, xmax),
-    )
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# TABLE — raw values only
-# ---------------------------------------------------------------------------
-
-def build_table(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        a, b, c = 1, -6, 8
-        ns = list(range(0, 7))
-        vals = seq_from(a, b, c, ns)
-        name, title = "SkyLift", "SkyLift sequence"
-        ntrue = 2
-        s7 = a * 49 + b * 7 + c
-        axis_n = Rational(-b, 2 * a)
-        d2 = second_diffs(vals)[0]
-        claims = [
-            C(
-                "Diagnosing the table by successive differences, the sequence is quadratic with leading coefficient $1$.",
-                True,
-                pack("A", True, [
-                    "A quadratic sequence $s_n=an^{2}+bn+c$ has constant second differences equal to $2a$. Build the first differences from the raw row, then the second differences from those.",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in first_diffs(vals))})"),
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"2a={d2}\Rightarrow a={F(Rational(d2, 2))}"),
-                    close(True, "The constant $2$ forces leading coefficient $1$"),
-                ]),
-                lambda: d2 == 2 and a == 1,
-            ),
-            C(
-                "The first differences are constant, so the sequence is linear.",
-                False,
-                pack("B", False, [
-                    "A linear sequence is the unique case in which first differences do not change. The first differences of this row are",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in first_diffs(vals))})"),
-                    "Those steps themselves grow by $2$ each time, which is the signature of a quadratic, not a line.",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    close(False, "Growing first differences rule out a linear model"),
-                ]),
-                lambda: len(set(first_diffs(vals))) == 1,
-            ),
-            C(
-                f"Extrapolating one step beyond the table gives $s_{{7}}={s7}$.",
-                True,
-                pack("C", True, [
-                    "Once $a$ is known from the second differences, the opening first difference $a+b$ and the $n=0$ entry recover $b$ and $c$.",
-                    D(rf"a=1,\quad a+b={vals[1]-vals[0]}\Rightarrow b={b}"),
-                    D(rf"c=s_0={c}"),
-                    "The same rule evaluated at $n=7$ is the extrapolated term.",
-                    D(rf"s_7={a}\cdot 7^{{2}}+({b})\cdot 7+{c}={s7}"),
-                    close(True, "The next term is $15$"),
-                ]),
-                lambda: s7 == 15,
-            ),
-            C(
-                "After the quadratic is rebuilt, its axis is $n=4$.",
-                False,
-                pack("D", False, [
-                    "The axis of $an^{2}+bn+c$ is $n=-b/(2a)$. With $a=1$ and $b=-6$",
-                    D(rf"n=-\frac{{{b}}}{{2\cdot {a}}}={F(axis_n)}"),
-                    close(False, "The axis is $n=3$, not $n=4$"),
-                ]),
-                lambda: axis_n == 4,
-            ),
-            C(
-                "A linear model fitted to the first two samples predicts $s_{4}$ correctly.",
-                False,
-                pack("E", False, [
-                    "The unique line through the first two samples has slope $s_1-s_0$ and intercept $s_0$.",
-                    D(rf"s_n={vals[0]}+({vals[1]-vals[0]})n"),
-                    D(rf"s_4^{{\text{{lin}}}}={vals[0]+(vals[1]-vals[0])*4}"),
-                    "The table's quadratic rule gives a different value at $n=4$.",
-                    D(rf"s_4={vals[4]}"),
-                    close(False, "The linear extrapolation misses $s_4$"),
-                ]),
-                lambda: vals[0] + (vals[1] - vals[0]) * 4 == vals[4],
-            ),
-        ]
-    elif cycle == 1:
-        a, b, c = 1, -4, 1
-        ns = list(range(0, 6))
-        vals = seq_from(a, b, c, ns)
-        name, title = "IceRink", "IceRink readings"
-        ntrue = 3
-        s6 = a * 36 + b * 6 + c
-        axis_n = Rational(-b, 2 * a)
-        d2 = second_diffs(vals)[0]
-        d1 = first_diffs(vals)
-        claims = [
-            C(
-                "Diagnosing the table by successive differences, the leading coefficient is $1$.",
-                True,
-                pack("A", True, [
-                    "Compute successive differences from the raw row.",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in d1)})"),
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{\Delta^{{(2)}}}}{{2}}={F(Rational(d2, 2))}"),
-                    close(True, "The leading coefficient is $1$"),
-                ]),
-                lambda: d2 == 2,
-            ),
-            C(
-                "The rebuilt discrete quadratic has its axis at $n=3$.",
-                False,
-                pack("B", False, [
-                    "From $2a=2$ and $a+b=s_1-s_0$ the linear coefficient follows, and then the axis.",
-                    D(rf"a=1,\quad b={b}"),
-                    D(rf"n=-\frac{{{b}}}{{2\cdot 1}}={F(axis_n)}"),
-                    close(False, "The axis is $n=2$, not $n=3$"),
-                ]),
-                lambda: axis_n == 3,
-            ),
-            C(
-                f"Extrapolating one step beyond the table gives $s_{{6}}={s6}$.",
-                True,
-                pack("C", True, [
-                    "The rebuilt rule is $s_n=n^{2}-4n+1$. One further index is then a substitution.",
-                    D(rf"s_6=6^{{2}}-4\cdot 6+1={s6}"),
-                    close(True, "The extrapolated term is $13$"),
-                ]),
-                lambda: s6 == 13,
-            ),
-            C(
-                "The first differences grow by $2$ at each step, confirming that the sequence has degree $2$.",
-                True,
-                pack("D", True, [
-                    "Degree is read from the first order at which differences become constant. Here the first differences themselves form an arithmetic progression with common difference $2$.",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in d1)})"),
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    close(True, "Constant second differences are the fingerprint of a quadratic"),
-                ]),
-                lambda: d2 == 2,
-            ),
-            C(
-                "A linear model through the first two samples predicts $s_{4}$ correctly.",
-                False,
-                pack("E", False, [
-                    "The line through $(0,s_0)$ and $(1,s_1)$ is",
-                    D(rf"s_n={vals[0]}+({d1[0]})n"),
-                    D(rf"s_4^{{\text{{lin}}}}={vals[0]+d1[0]*4}"),
-                    D(rf"s_4={vals[4]}"),
-                    close(False, "The linear forecast misses the quadratic value at $n=4$"),
-                ]),
-                lambda: vals[0] + d1[0] * 4 == vals[4],
-            ),
-        ]
-    else:
-        a, b, c = -1, 4, 1
-        ns = list(range(0, 7))
-        vals = seq_from(a, b, c, ns)
-        name, title = "SolarTrack", "SolarTrack samples"
-        ntrue = 4
-        s7 = a * 49 + b * 7 + c
-        s_m1 = a * 1 + b * (-1) + c
-        axis_n = Rational(-b, 2 * a)
-        d2 = second_diffs(vals)[0]
-        claims = [
-            C(
-                "Diagnosing the table by successive differences, the leading coefficient is $-1$.",
-                True,
-                pack("A", True, [
-                    "Second differences of $an^{2}+bn+c$ equal $2a$. From the raw row",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{{d2}}}{{2}}={a}"),
-                    close(True, "The leading coefficient is $-1$"),
-                ]),
-                lambda: d2 == -2 and a == -1,
-            ),
-            C(
-                "The sequence is cubic, because the later values fall.",
-                False,
-                pack("B", False, [
-                    "A cubic would have constant third differences and non-constant second differences. Here the second differences are already constant.",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    "A downward-opening quadratic falls on both sides of its axis; the drop in the tail is that geometry, not a change of degree.",
-                    close(False, "Constant second differences keep the degree at $2$"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                f"Extrapolating one step beyond the table gives $s_{{7}}={s7}$.",
-                True,
-                pack("C", True, [
-                    "With $a=-1$ and $a+b=s_1-s_0$ the remaining coefficients are $b=4$ and $c=1$.",
-                    D(rf"s_n=-n^{{2}}+4n+1"),
-                    D(rf"s_7=-7^{{2}}+4\cdot 7+1={s7}"),
-                    close(True, "The next term is $-20$"),
-                ]),
-                lambda: s7 == -20,
-            ),
-            C(
-                f"The axis of the rebuilt quadratic is $n={F(axis_n)}$.",
-                True,
-                pack("D", True, [
-                    "The axis formula uses only the first two rebuilt coefficients.",
-                    D(rf"n=-\frac{{{b}}}{{2\cdot ({a})}}={F(axis_n)}"),
-                    "The table itself mirrors about that index: $s_0=s_4$ and $s_1=s_3$.",
-                    close(True, "The axis is $n=2$"),
-                ]),
-                lambda: axis_n == 2,
-            ),
-            C(
-                f"Stepping one index to the left of the table gives $s_{{-1}}={s_m1}$.",
-                True,
-                pack("E", True, [
-                    "The same rebuilt rule is valid at $n=-1$.",
-                    D(rf"s_{{-1}}=-(-1)^{{2}}+4(-1)+1={s_m1}"),
-                    close(True, "The backward extrapolation is $-4$"),
-                ]),
-                lambda: s_m1 == -4,
-            ),
-        ]
-    assert all(abs(v) <= 20 for v in vals)
-    assert sum(c.truth for c in claims) == ntrue
-    ctx = (
-        f"{name} logs discrete readings $s_n$ for $n=0,1,2,\\ldots$ in the table. "
-        f"No closed form is supplied. {TAIL}"
-    )
-    ov = (
-        f"Only the raw row is given. Constant second differences $\\Delta^{{(2)}}={d2}$ "
-        f"rebuild $s_n={a}n^{{2}}{b:+d}n{c:+d}$, with axis $n={F(axis_n)}$."
-    )
-    spec = TaskSpec(
-        f"Mixed exam — {title}",
-        ctx,
-        "table",
-        claims,
-        ov,
-        tables_markdown=raw_table(ns, vals),
-    )
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# APPLIED — story + table OR figure as sole numeric source
-# ---------------------------------------------------------------------------
-
-def build_applied(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(3 * x + 2, x**2 - 6 * x + 5)
-        xs = [0, 1, 2, 3, 4]
-        fv = [int(M.f_at(v)) for v in xs]
-        gv = [int(M.g_at(v)) for v in xs]
-        name, title = "HarborCrane", "HarborCrane operations"
-        ntrue = 3
-        d2 = second_diffs(gv)[0]
-        slope = first_diffs(fv)[0]
-        claims = [
-            C(
-                "The clearance row is quadratic with leading coefficient $1$.",
-                True,
-                pack("A", True, [
-                    "Second differences of a quadratic row equal $2a$. From the clearance values",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in first_diffs(gv))})"),
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{{d2}}}{{2}}=1"),
-                    close(True, "Clearance is quadratic with leading coefficient $1$"),
-                ]),
-                lambda: d2 == 2,
-            ),
-            C(
-                "The fare row is linear with slope $4$.",
-                False,
-                pack("B", False, [
-                    "A linear row has constant first differences, and that constant is the slope.",
-                    D(rf"\Delta^{{(1)}}_{{\text{{fare}}}}=({','.join(str(v) for v in first_diffs(fv))})"),
-                    D(rf"m={slope}"),
-                    close(False, "The fare slope is $3$, not $4$"),
-                ]),
-                lambda: slope == 4,
-            ),
-            C(
-                "Among the integer loads in the table, clearance is lowest at $x=3$.",
-                True,
-                pack("C", True, [
-                    "The axis of the rebuilt clearance parabola is $x=-b/(2a)$. With $a=1$ and $a+b$ equal to the opening clearance step",
-                    D(rf"b={M.b},\quad x={F(M.h)}"),
-                    "That axis is an integer column of the table, and the vertex of an upward parabola is its lowest point.",
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    close(True, "The sampled minimum sits at $x=3$"),
-                ]),
-                lambda: M.h == 3 and M.a > 0,
-            ),
-            C(
-                "If the same linear fare and quadratic clearance continue off the table, they meet twice.",
-                True,
-                pack("D", True, [
-                    "Meetings are the real zeros of the rebuilt difference.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "At the axis of clearance, clearance exceeds fare.",
-                False,
-                pack("E", False, [
-                    "Evaluate both rebuilt models on the clearance axis $x=3$.",
-                    D(rf"f(3)={F(M.f_at(3))}"),
-                    D(rf"g(3)={F(M.g_at(3))}"),
-                    close(False, "Fare $11$ exceeds clearance $-4$ on that axis"),
-                ]),
-                lambda: M.g_at(M.h) > M.f_at(M.h),
-            ),
-        ]
-        tbl = xy_table(xs, fv, gv, "fare", "clearance")
-        fig = None
-        ctx = (
-            f"{name} logs fare (euros) and bridge clearance (metres) against load $x$ (tonnes) "
-            f"in the table. No closed form is on file. {TAIL}"
-        )
-        ov = (
-            f"The table is the only numeric source. Fitting gives $f(x)={L(M.f)}$ and "
-            f"$g(x)={L(M.g)}$; axis $x={F(M.h)}$, {M.meet} meetings."
-        )
-    elif cycle == 1:
-        M = FG(x - 1, -(x**2) + 4 * x + 2)
-        xmin, xmax = -1, 6
-        name, title = "RiverFerry", "RiverFerry altitude track"
-        ntrue = 4
-        y_ok(M.g, xmin, xmax)
-        y_ok(M.f, xmin, xmax)
-        claims = [
-            C(
-                "The altitude curve and the linear track meet in exactly two points.",
-                True,
-                pack("A", True, [
-                    "Count the crossings on the figure, then confirm with the discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "Two crossings match a positive discriminant"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The peak of the altitude curve lies above the linear track.",
-                True,
-                pack("B", True, [
-                    "The peak is the turning point of the solid curve.",
-                    D(rf"x={F(M.h)}"),
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    D(rf"f\left({F(M.h)}\right)={F(M.f_at(M.h))}"),
-                    close(True, "The peak height $6$ sits above the track height $1$"),
-                ]),
-                lambda: M.kv > M.f_at(M.h),
-            ),
-            C(
-                "The altitude curve opens downwards.",
-                True,
-                pack("C", True, [
-                    "Opening is the sign of the leading coefficient of the reconstructed altitude.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(True, "A negative leading coefficient opens the curve downwards"),
-                ]),
-                lambda: M.a < 0,
-            ),
-            C(
-                "At $x=0$ the linear track sits above the altitude curve.",
-                False,
-                pack("D", False, [
-                    "Compare the two intercepts on the vertical axis.",
-                    D(rf"g(0)={F(M.g_at(0))}"),
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    close(False, "Altitude $2$ sits above the track intercept $-1$"),
-                ]),
-                lambda: M.f_at(0) > M.g_at(0),
-            ),
-            C(
-                "At the integer mark $x=1$ the altitude curve sits above the linear track.",
-                True,
-                pack("E", True, [
-                    "Read both heights at the tick $x=1$, then confirm by substituting into the reconstructed models.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"g(1)={F(M.g_at(1))}"),
-                    D(rf"f(x)={L(M.f)}"),
-                    D(rf"f(1)={F(M.f_at(1))}"),
-                    close(True, "Altitude $5$ sits above the track height $0$"),
-                ]),
-                lambda: M.g_at(1) > M.f_at(1),
-            ),
-        ]
-        tbl = None
-        fig = make_figure(M.g, M.f, f"{name} altitude", xmin, xmax)
-        ctx = (
-            f"{name} overlays a linear service track on a quadratic altitude cap "
-            f"(figure). No formulae are printed. {TAIL}"
-        )
-        ov = (
-            f"The figure is the only numeric source. The models are $f(x)={L(M.f)}$ and "
-            f"$g(x)={L(M.g)}$; vertex $\\left({F(M.h)},{F(M.kv)}\\right)$, {M.meet} meetings."
-        )
-    else:
-        M = FG(2 * x - 4, x**2 - 5 * x + 4)
-        xs = [0, 1, 2, 3, 4, 5]
-        fv = [int(M.f_at(v)) for v in xs]
-        gv = [int(M.g_at(v)) for v in xs]
-        name, title = "Greenhouse", "Greenhouse climate log"
-        ntrue = 5
-        d2 = second_diffs(gv)[0]
-        slope = first_diffs(fv)[0]
-        g6 = int(M.g_at(6))
-        claims = [
-            C(
-                "The temperature row is quadratic with leading coefficient $1$.",
-                True,
-                pack("A", True, [
-                    "Second differences diagnose degree and leading coefficient.",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{{d2}}}{{2}}=1"),
-                    close(True, "Temperature is quadratic with leading coefficient $1$"),
-                ]),
-                lambda: d2 == 2,
-            ),
-            C(
-                "The target row is linear with slope $2$.",
-                True,
-                pack("B", True, [
-                    "Constant first differences of the target row are the slope.",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in first_diffs(fv))})"),
-                    D(rf"m={slope}"),
-                    close(True, "The target slope is $2$"),
-                ]),
-                lambda: slope == 2,
-            ),
-            C(
-                "If both fitted models continue, they meet twice.",
-                True,
-                pack("C", True, [
-                    "Form the difference of the rebuilt models and read its discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                f"Extrapolating the temperature row one step gives the value ${g6}$ at $x=6$.",
-                True,
-                pack("D", True, [
-                    "The rebuilt temperature rule is $g(x)=x^{2}-5x+4$.",
-                    D(rf"g(6)=6^{{2}}-5\cdot 6+4={g6}"),
-                    close(True, "The next temperature reading is $10$"),
-                ]),
-                lambda: g6 == 10,
-            ),
-            C(
-                "The axis of the temperature parabola sits halfway between the two equal samples at $x=2$ and $x=3$.",
-                True,
-                pack("E", True, [
-                    "A parabola is symmetric about its axis, so two equal heights at integer inputs force the axis to their midpoint.",
-                    D(rf"g(2)=g(3)={gv[2]}"),
-                    D(rf"x=\frac{{2+3}}{{2}}={F(M.h)}"),
-                    "The coefficient formula agrees.",
-                    D(rf"x=-\frac{{{F(M.b)}}}{{2\cdot {F(M.a)}}}={F(M.h)}"),
-                    close(True, "The axis is $x=\\frac{5}{2}$"),
-                ]),
-                lambda: M.h == Rational(5, 2),
-            ),
-        ]
-        tbl = xy_table(xs, fv, gv, "target", "temperature")
-        fig = None
-        ctx = (
-            f"{name} logs a linear target and a quadratic temperature against hour $x$ "
-            f"in the table. No closed form is supplied. {TAIL}"
-        )
-        ov = (
-            f"Fitting the two rows gives $f(x)={L(M.f)}$ and $g(x)={L(M.g)}$; "
-            f"axis $x={F(M.h)}$, {M.meet} meetings."
-        )
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(
-        f"Mixed exam — {title}",
-        ctx,
-        "applied",
-        claims,
-        ov,
-        figure=fig,
-        tables_markdown=tbl,
-    )
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# SYMBOLIC — no numeric data
-# ---------------------------------------------------------------------------
-
-def build_symbolic(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        ntrue = 4
-        ctx = (
-            "A non-constant line $f$ and a quadratic $g$ with nonzero leading coefficient "
-            f"meet through the difference $d(x)=g(x)-f(x)$. No numeric data are supplied. {TAIL}"
-        )
-        title = "symbolic reasoning 1"
-        claims = [
-            C(
-                "Unless the slope of $f$ vanishes, the axis of $d$ differs from the axis of $g$.",
-                True,
-                pack("A", True, [
-                    "Subtracting a slanted line leaves the square term of $g$ untouched but shifts the linear coefficient.",
-                    D(r"d(x)=ax^{2}+(b-m)x+(c-k)"),
-                    "An axis depends only on the first two coefficients, so the two axes split by a term proportional to the slope.",
-                    D(r"x_{d}-x_{g}=\frac{m}{2a}"),
-                    close(True, "A nonzero slope moves the axis of the difference"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "The coefficient of $x^{2}$ in $d$ equals the leading coefficient of $g$.",
-                True,
-                pack("B", True, [
-                    "A line has no square term to contribute, so the subtraction cannot change the leading coefficient of $g$.",
-                    D(r"d(x)=ax^{2}+(b-m)x+(c-k)"),
-                    close(True, "The square-term coefficient of $d$ is still $a$"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "If the graphs of $f$ and $g$ are tangent, the vertex of $d$ lies on the horizontal axis.",
-                True,
-                pack("C", True, [
-                    "Tangency means $g=f$ has a repeated root, so $d$ has a double zero. A double zero of a parabola sits at its vertex, and the value there is zero.",
-                    D(r"d(x)=a\left(x-x_{0}\right)^{2}"),
-                    D(r"d\left(x_{0}\right)=0"),
-                    close(True, "A vertex of height zero lies on the horizontal axis"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "Nesting always adds the degrees: the highest power of $g(f(x))$ equals the sum of the degrees of $g$ and $f$.",
-                False,
-                pack("D", False, [
-                    "Degrees add under multiplication and multiply under substitution. Putting a line inside a parabola squares a linear expression and stops at the second power.",
-                    D(r"g(f(x))=a(mx+k)^{2}+b(mx+k)+c"),
-                    D(r"a(mx+k)^{2}=am^{2}x^{2}+\cdots"),
-                    close(False, "The highest power is $x^{2}$, the product of the two degrees, not their sum"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "The function $d$ has a smallest value exactly when $a>0$.",
-                True,
-                pack("E", True, [
-                    "The difference inherits the leading coefficient of $g$, so it opens the same way $g$ does. An upward parabola is bounded below by its vertex; a downward one is not bounded below at all.",
-                    D(r"a>0\Rightarrow d(x)\geq d\left(x_{d}\right)"),
-                    close(True, "A smallest value exists precisely when the leading coefficient is positive"),
-                ]),
-                lambda: True,
-            ),
-        ]
-        ov = "Pure line–parabola reasoning: $d=g-f$ keeps the square term of $g$, shifts the axis when the slope is nonzero, and has a minimum exactly when it opens upwards."
-    elif cycle == 1:
-        ntrue = 5
-        ctx = (
-            "A line $f$ and a parabola $g$ are compared with the mirrored pair "
-            "$\\tilde f(x)=f(-x)$, $\\tilde g(x)=g(-x)$. No coordinates are given. "
-            + TAIL
-        )
-        title = "symbolic reasoning 2"
-        claims = [
-            C(
-                "The graphs of $\\tilde f$ and $\\tilde g$ meet exactly as often as those of $f$ and $g$.",
-                True,
-                pack("A", True, [
-                    "The map $x\\mapsto -x$ is a bijection of the real line, and it sends a meeting of $f$ and $g$ to a meeting of the mirrors.",
-                    D(r"g(x)=f(x)\iff \tilde g(-x)=\tilde f(-x)"),
-                    close(True, "The meeting count is preserved"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "If $f$ and $g$ are tangent, then so are $\\tilde f$ and $\\tilde g$.",
-                True,
-                pack("B", True, [
-                    "Tangency is a double root of $g-f$. Replacing $x$ by $-x$ sends a double root to a double root.",
-                    D(r"\Delta(g-f)=0\Rightarrow \Delta(\tilde g-\tilde f)=0"),
-                    close(True, "Tangency survives mirroring"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "The difference $\\tilde g-\\tilde f$ stays quadratic, so the mirrored graphs meet in at most two points.",
-                True,
-                pack("C", True, [
-                    "Mirroring does not raise the highest power: $\\tilde g$ is still a parabola and $\\tilde f$ is still a line.",
-                    D(r"\tilde g(x)-\tilde f(x)=a x^{2}-(b-m)x+(c-k)"),
-                    close(True, "A quadratic equation has at most two real roots"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "$\\tilde g$ opens in the same direction as $g$.",
-                True,
-                pack("D", True, [
-                    "Replacing $x$ by $-x$ leaves the leading coefficient untouched, and opening is that sign alone.",
-                    D(r"a_{\tilde g}=a"),
-                    close(True, "The opening direction is preserved"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "The axis of $\\tilde g$ is the reflection of the axis of $g$.",
-                True,
-                pack("E", True, [
-                    "The axis $x=h$ of $g$ is sent to $x=-h$ under $x\\mapsto -x$, which is precisely the axis of the mirrored parabola.",
-                    D(r"x_{\tilde g}=-x_{g}"),
-                    close(True, "The axis is reflected"),
-                ]),
-                lambda: True,
-            ),
-        ]
-        ov = "Mirroring $x\\mapsto -x$ preserves meeting count, tangency, degree and opening, and reflects the axis."
-    else:
-        ntrue = 1
-        ctx = (
-            "A quadratic $g(x)=ax^{2}+bx+c$ with $a\\neq 0$ has two distinct real roots; write $S$ "
-            f"for their sum and $P$ for their product. No numbers are supplied. {TAIL}"
-        )
-        title = "symbolic reasoning 3"
-        claims = [
-            C(
-                "If $P<0$, the two roots have opposite signs.",
-                True,
-                pack("A", True, [
-                    "The product of the roots is $P$. A negative product means one factor is positive and the other is negative.",
-                    D(r"r_{1}r_{2}=P<0"),
-                    close(True, "Opposite signs follow from a negative product"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "If $P>0$, both roots must be positive.",
-                False,
-                pack("B", False, [
-                    "A positive product only forces the two roots to share a sign. Combined with a negative sum they are both negative.",
-                    D(r"P>0,\quad S<0\Rightarrow r_{1},r_{2}<0"),
-                    close(False, "A positive product does not force both roots to be positive"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "If $S=0$, the product $P$ must be positive.",
-                False,
-                pack("C", False, [
-                    "A vanishing sum means the roots are opposites $r$ and $-r$, so their product is $-r^{2}$. For two distinct real roots that quantity is strictly negative.",
-                    D(r"S=0\Rightarrow P=-r^{2}<0"),
-                    close(False, "The product is negative, not positive"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "If $P>0$ and $S<0$, both roots are positive.",
-                False,
-                pack("D", False, [
-                    "Equal signs come from the product; the shared sign is read from the sum. A negative sum puts both roots to the left of the origin.",
-                    D(r"P>0,\ S<0\Rightarrow r_{1}<0,\ r_{2}<0"),
-                    close(False, "Both roots are negative, not positive"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "If $P<0$ and $a>0$, then $g(0)>0$.",
-                False,
-                pack("E", False, [
-                    "The constant term is $g(0)=c=aP$. A positive leading coefficient times a negative product makes $c$ negative.",
-                    D(r"g(0)=aP<0"),
-                    close(False, "The origin lies below the graph, so $g(0)$ is negative"),
-                ]),
-                lambda: False,
-            ),
-        ]
-        ov = "Vieta: $S=-b/a$ and $P=c/a$. Sign patterns of the roots follow from $S$ and $P$ alone; $g(0)=aP$."
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "symbolic", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# PARAMETRIC
-# ---------------------------------------------------------------------------
-
-def build_parametric(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        f = 2 * x - 1
-        gt = x**2 - 2 * t_sym * x + t_sym
-        disc_t = expand(discriminant(Poly(expand(gt - f), x)))
-        # Δ = 4t(t+1)
-        t_val = Rational(2)
-        g_inst = expand(gt.subs(t_sym, t_val))
-        M = FG(f, g_inst)
-        delta_inst = Rational(simplify(disc_t.subs(t_sym, t_val)))
-        delta3 = Rational(simplify(disc_t.subs(t_sym, 3)))
-        name, title = "ArenaLights", "ArenaLights parameter sweep"
-        ntrue = 5
-        claims = [
-            C(
-                f"With $t={F(t_val)}$, the graphs meet in two distinct points (they are not tangent).",
-                True,
-                pack("A", True, [
-                    "Tangency is a vanishing discriminant of $g_t-f$. Expanding that discriminant as a function of $t$ gives",
-                    D(rf"\Delta(t)={L(disc_t)}"),
-                    D(rf"\Delta\left({F(t_val)}\right)={F(delta_inst)}"),
-                    close(True, "A positive value means two distinct meetings, not a tangency"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "Tangency occurs at $t=0$.",
-                True,
-                pack("B", True, [
-                    "The discriminant factors as $4t(t+1)$, so it vanishes at $t=0$ and at $t=-1$.",
-                    D(rf"\Delta(t)={L(disc_t)}"),
-                    D(r"\Delta(0)=0"),
-                    close(True, "The value $t=0$ is a tangency parameter"),
-                ]),
-                lambda: Rational(simplify(disc_t.subs(t_sym, 0))) == 0,
-            ),
-            C(
-                "For $t=3$ the graphs meet twice.",
-                True,
-                pack("C", True, [
-                    "Substitute $t=3$ into the same discriminant.",
-                    D(rf"\Delta(3)={F(delta3)}"),
-                    close(True, "A positive discriminant at $t=3$ gives two meetings"),
-                ]),
-                lambda: delta3 > 0,
-            ),
-            C(
-                "For every real $t$ the difference $g_t-f$ is quadratic in $x$, so there are at most two intersection points.",
-                True,
-                pack("D", True, [
-                    "The parameter $t$ sits in the linear and constant terms, never in a cube.",
-                    D(r"g_t(x)-f(x)=x^{2}-(2t+2)x+(t+1)"),
-                    close(True, "A quadratic in $x$ has at most two real zeros for any $t$"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "There exists a real $t$ making $\\Delta(t)=0$.",
-                True,
-                pack("E", True, [
-                    "The factored discriminant $4t(t+1)$ has two real roots.",
-                    D(r"t=0\quad\text{and}\quad t=-1"),
-                    close(True, "Tangency occurs for at least one real parameter"),
-                ]),
-                lambda: True,
-            ),
-        ]
-        ctx = (
-            f"{name} tests clearance families $g_t(x)=x^{{2}}-2tx+t$ against "
-            f"$f(x)={L(f)}$. Take $t={F(t_val)}$ for the run under review, and study "
-            f"how $\\Delta(t)$ changes with $t$. {TAIL}"
-        )
-        ov = rf"Family $g_t$ versus $f(x)={L(f)}$. Discriminant $\Delta(t)={L(disc_t)}$; at $t=2$ there are two meetings."
-    elif cycle == 1:
-        f = x + 1
-        ga = a_sym * x**2 + 2 * x - 3
-        delta_a = expand(discriminant(Poly(expand(ga - f), x)))
-        # Δ = 1 + 16a
-        name, title = "CargoDrone", "CargoDrone leading-coefficient sweep"
-        ntrue = 1
-        claims = [
-            C(
-                "There is a value of $a\\neq 0$ for which the line is tangent to the parabola.",
-                True,
-                pack("A", True, [
-                    "Tangency is $\\Delta(a)=0$. Expanding the discriminant of $g_a-f$ gives a linear equation in $a$.",
-                    D(rf"\Delta(a)={L(delta_a)}"),
-                    D(rf"a=-\frac{{1}}{{16}}"),
-                    close(True, "A nonzero parameter produces a double root"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "For every $a>1$ the graphs miss entirely.",
-                False,
-                pack("B", False, [
-                    "The discriminant $\\Delta(a)=1+16a$ is positive once $a$ exceeds $-1/16$, so in particular every $a>1$ yields two meetings, not a miss.",
-                    D(rf"\Delta(a)={L(delta_a)}"),
-                    D(r"a>1\Rightarrow \Delta(a)>0"),
-                    close(False, "Those parameters meet twice rather than miss"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "The axis of $g_a$ is independent of $a$.",
-                False,
-                pack("C", False, [
-                    "The axis formula $x=-b/(2a)$ still involves the leading coefficient.",
-                    D(r"x=-\frac{1}{a}"),
-                    close(False, "The axis moves when $a$ changes"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "Every parabola in the family crosses the vertical axis at $3$.",
-                False,
-                pack("D", False, [
-                    "The constant term of $g_a$ does not involve $a$, but that constant is $-3$, not $3$.",
-                    D(r"g_a(0)=-3"),
-                    close(False, "The intercept is $-3$ for every $a$"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "For every real $a\\neq 0$ the graphs meet at least once.",
-                False,
-                pack("E", False, [
-                    "On the side $a<-1/16$ the discriminant is negative, so the graphs miss.",
-                    D(rf"\Delta\left(-1\right)={F(Rational(simplify(delta_a.subs(a_sym, -1))))}"),
-                    close(False, "Some admissible leading coefficients produce no meeting"),
-                ]),
-                lambda: False,
-            ),
-        ]
-        ctx = (
-            f"A one-parameter family $g_a(x)=ax^{{2}}+2x-3$ with $a\\neq 0$ is tested against "
-            f"$f(x)={L(f)}$. Study how $a$ changes meetings via $\\Delta(a)$. {TAIL}"
-        )
-        ov = rf"Family $g_a$ versus $f(x)={L(f)}$. Discriminant $\Delta(a)={L(delta_a)}$; tangency at $a=-1/16$."
-    else:
-        g = x**2 - 4 * x + 3
-        fk = 2 * x + k_sym
-        delta_k = expand(discriminant(Poly(expand(g - fk), x)))
-        # Δ = 4(k+6)
-        k_star = Rational(-6)
-        name, title = "FilmSet", "FilmSet sliding line"
-        ntrue = 2
-        claims = [
-            C(
-                f"Exactly one value of $k$ gives tangency, namely $k={F(k_star)}$.",
-                True,
-                pack("A", True, [
-                    "The discriminant of $g-f_k$ is linear in $k$, so it has exactly one root.",
-                    D(rf"\Delta(k)={L(delta_k)}"),
-                    D(rf"k={F(k_star)}"),
-                    close(True, "Tangency occurs at the unique root $k=-6$"),
-                ]),
-                lambda: Rational(simplify(delta_k.subs(k_sym, k_star))) == 0,
-            ),
-            C(
-                f"Whenever $k>{F(k_star)}$, the line meets the parabola twice.",
-                True,
-                pack("B", True, [
-                    "The leading coefficient of $\\Delta(k)$ is positive, so $\\Delta$ is positive to the right of its root.",
-                    D(rf"\Delta(k)={L(delta_k)}"),
-                    D(rf"k>{F(k_star)}\Rightarrow \Delta(k)>0"),
-                    close(True, "That half-line is exactly the two-meeting zone"),
-                ]),
-                lambda: True,
-            ),
-            C(
-                "Whenever $k<-7$, the line meets the parabola twice.",
-                False,
-                pack("C", False, [
-                    "For $k<-6$ the discriminant is negative. The stricter inequality $k<-7$ sits inside that miss region.",
-                    D(rf"\Delta(-8)={F(Rational(simplify(delta_k.subs(k_sym, -8))))}"),
-                    close(False, "Those shifts miss the parabola"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "When $k=0$ the line misses the parabola.",
-                False,
-                pack("D", False, [
-                    "Substitute $k=0$ into the discriminant.",
-                    D(rf"\Delta(0)={F(Rational(simplify(delta_k.subs(k_sym, 0))))}"),
-                    close(False, "A positive discriminant at $k=0$ gives two meetings"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "For every real $k$ the line meets the parabola.",
-                False,
-                pack("E", False, [
-                    "Pushing $k$ past $-6$ into the negative-$\\Delta$ region makes the graphs miss.",
-                    D(rf"\Delta(k)={L(delta_k)}"),
-                    close(False, "Some vertical shifts miss the parabola"),
-                ]),
-                lambda: False,
-            ),
-        ]
-        ctx = (
-            f"Lines $f_k(x)=2x+k$ slide vertically against $g(x)=x^{{2}}-4x+3$ at {name}. "
-            f"Decide which inequalities on $k$ force two meetings, tangency, or a miss. {TAIL}"
-        )
-        ov = rf"Sliding lines $f_k=2x+k$ versus $g=x^{{2}}-4x+3$. Discriminant $\Delta(k)={L(delta_k)}$; tangency at $k=-6$."
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "parametric", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# REBUILD
-# ---------------------------------------------------------------------------
-
-def build_rebuild(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(3 * x - 1, x**2 - 4 * x + 1)
-        pt = (1, 2)
-        ntrue = 1
-        name, title = "Aqueduct", "Aqueduct reconstruction"
-        claims = [
-            C(
-                rf"The rebuilt line is $f(x)={L(M.f)}$.",
-                True,
-                pack("A", True, [
-                    "Point-slope form uses the given slope and the given point.",
-                    D(rf"f(x)={F(M.m)}\left(x-{pt[0]}\right)+{pt[1]}"),
-                    D(rf"f(x)={L(M.f)}"),
-                    close(True, "The reconstructed line matches the data"),
-                ]),
-                lambda: expand(M.f - (3 * x - 1)) == 0,
-            ),
-            C(
-                rf"The rebuilt parabola is $g(x)=x^{{2}}-4x+3$.",
-                False,
-                pack("B", False, [
-                    "Vertex form with the given turning point and leading coefficient $1$ is",
-                    D(rf"g(x)=\left(x-{F(M.h)}\right)^{{2}}+{F(M.kv)}"),
-                    D(rf"g(x)={L(M.g)}"),
-                    close(False, "The constant term is $1$, not $3$"),
-                ]),
-                lambda: False,
-            ),
-            C(
-                "The rebuilt curves meet in exactly one point.",
-                False,
-                pack("C", False, [
-                    "Meetings are the real zeros of $g-f$.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "A positive discriminant gives two meetings, not one"),
-                ]),
-                lambda: M.meet == 1,
-            ),
-            C(
-                "The axis of the rebuilt parabola is $x=3$.",
-                False,
-                pack("D", False, [
-                    "The axis is the abscissa of the given vertex, equivalently $-b/(2a)$ after expansion.",
-                    D(rf"x={F(M.h)}"),
-                    close(False, "The axis is $x=2$, not $x=3$"),
-                ]),
-                lambda: M.h == 3,
-            ),
-            C(
-                "The vertex height is $0$.",
-                False,
-                pack("E", False, [
-                    "The vertex height is the value of $g$ on its axis, which was part of the given turning point.",
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    close(False, "The vertex height is $-3$, not $0$"),
-                ]),
-                lambda: M.kv == 0,
-            ),
-        ]
-        ctx = (
-            f"A line through $({pt[0]},{pt[1]})$ with slope ${F(M.m)}$ meets a parabola whose "
-            f"vertex is $({F(M.h)},{F(M.kv)})$ and whose leading coefficient is ${F(M.a)}$. "
-            f"Rebuild both formulas for {name}, then judge each claim. {TAIL}"
-        )
-    elif cycle == 1:
-        M = FG(2 * x - 4, x**2 - 6 * x + 5)
-        pt = (0, -4)
-        r1, r2 = 1, 5
-        ntrue = 2
-        name, title = "SkiLift", "SkiLift reconstruction"
-        claims = [
-            C(
-                rf"The rebuilt line is $f(x)={L(M.f)}$.",
-                True,
-                pack("A", True, [
-                    "Slope $2$ through the intercept $(0,-4)$ is already slope-intercept form.",
-                    D(rf"f(x)={L(M.f)}"),
-                    close(True, "The line matches the sparse data"),
-                ]),
-                lambda: expand(M.f - (2 * x - 4)) == 0,
-            ),
-            C(
-                rf"The rebuilt parabola is $g(x)={L(M.g)}$.",
-                True,
-                pack("B", True, [
-                    "A monic parabola with the two given roots expands by Vieta.",
-                    D(rf"g(x)=(x-{r1})(x-{r2})"),
-                    D(rf"g(x)={L(M.g)}"),
-                    close(True, "The expanded parabola matches the root data"),
-                ]),
-                lambda: expand(M.g - (x**2 - 6 * x + 5)) == 0,
-            ),
-            C(
-                "Rewriting $g$ in powers of the rebuilt line gives leading coefficient $A=1$.",
-                False,
-                pack("C", False, [
-                    "Matching $g=A f^{2}+B f+C$ starts with the square-term quotient $a/m^{2}$.",
-                    D(rf"A=\frac{{{F(M.a)}}}{{{F(M.m)}^{{2}}}}={F(M.A)}"),
-                    close(False, "The rewrite coefficient is $1/4$, not $1$"),
-                ]),
-                lambda: M.A == 1,
-            ),
-            C(
-                "The rebuilt curves miss each other.",
-                False,
-                pack("D", False, [
-                    "The discriminant of $g-f$ decides.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "A positive discriminant means two meetings"),
-                ]),
-                lambda: M.meet == 0,
-            ),
-            C(
-                "The axis of the rebuilt parabola is $x=2$.",
-                False,
-                pack("E", False, [
-                    "The axis is the midpoint of the two given roots, equivalently $-b/(2a)$ after expanding $g(x)=(x-1)(x-5)=x^{2}-6x+5$.",
-                    D(rf"x=\frac{{{r1}+{r2}}}{{2}}={F(M.h)}"),
-                    D(rf"x=-\frac{{-6}}{{2\cdot 1}}={F(M.h)}"),
-                    close(False, "The axis is $x=3$, not $x=2$"),
-                ]),
-                lambda: M.h == 2,
-            ),
-        ]
-        ctx = (
-            f"Engineers at {name} know a service line has slope ${F(M.m)}$ and passes through "
-            f"$({pt[0]},{pt[1]})$. The parabola has roots ${r1}$ and ${r2}$ and leading coefficient "
-            f"${F(M.a)}$. Recover $f$ and $g$, then decide. {TAIL}"
-        )
-    else:
-        M = FG(-x + 5, -(x**2) + 2 * x + 3)
-        pt = (2, 3)
-        ntrue = 3
-        name, title = "MineCart", "MineCart reconstruction"
-        claims = [
-            C(
-                rf"The rebuilt line is $f(x)={L(M.f)}$.",
-                True,
-                pack("A", True, [
-                    "Point-slope with slope $-1$ through $(2,3)$ expands to",
-                    D(rf"f(x)=-1\cdot (x-2)+3"),
-                    D(rf"f(x)={L(M.f)}"),
-                    close(True, "The line matches the given slope and point"),
-                ]),
-                lambda: expand(M.f - (-x + 5)) == 0,
-            ),
-            C(
-                rf"The rebuilt parabola is $g(x)={L(M.g)}$.",
-                True,
-                pack("B", True, [
-                    "Vertex form with axis $x=1$, height $4$, and leading coefficient $-1$ expands to",
-                    D(rf"g(x)=-\left(x-1\right)^{{2}}+4"),
-                    D(rf"g(x)={L(M.g)}"),
-                    close(True, "The expanded parabola matches the vertex data"),
-                ]),
-                lambda: expand(M.g - (-(x**2) + 2 * x + 3)) == 0,
-            ),
-            C(
-                "The rebuilt curves meet in exactly two points.",
-                True,
-                pack("C", True, [
-                    "Form the difference and read the discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The vertex height is $2$.",
-                False,
-                pack("D", False, [
-                    "The vertex height was part of the given data and can be rechecked by substitution.",
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    close(False, "The vertex height is $4$, not $2$"),
-                ]),
-                lambda: M.kv == 2,
-            ),
-            C(
-                "The rewrite $g=A f^{2}+B f+C$ has $A=1$.",
-                False,
-                pack("E", False, [
-                    "The leading rewrite coefficient is the quotient of the two leading coefficients, with the line's slope squared in the denominator.",
-                    D(rf"A=\frac{{{F(M.a)}}}{{{F(M.m)}^{{2}}}}={F(M.A)}"),
-                    close(False, "The coefficient $A$ is $-1$, not $1$"),
-                ]),
-                lambda: M.A == 1,
-            ),
-        ]
-        ctx = (
-            f"Rebuild for {name}: line slope ${F(M.m)}$, point $({pt[0]},{pt[1]})$; "
-            f"parabola axis $x={F(M.h)}$, vertex height ${F(M.kv)}$, leading coefficient ${F(M.a)}$. {TAIL}"
-        )
-    ov = (
-        f"Rebuilt $f(x)={L(M.f)}$, $g(x)={L(M.g)}$; vertex $\\left({F(M.h)},{F(M.kv)}\\right)$; "
-        f"{M.meet} meetings; rewrite $A={F(M.A)}$."
-    )
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "rebuild", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# NESTED
-# ---------------------------------------------------------------------------
-
-def build_nested(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(2 * x - 1, x**2 - 4 * x + 1)
-        ntrue = 2
-        name, title = "Orchard", "Orchard compositions"
-        gf_axis = Rational(
-            -Poly(M.gf, x).nth(1) / (2 * Poly(M.gf, x).nth(2))
-        )
-        claims = [
-            C(
-                rf"$g(f(x))={L(M.gf)}$.",
-                True,
-                pack("A", True, [
-                    "Substitute the line into the parabola and expand, term by term.",
-                    D(rf"g(f(x))=g\left({L(M.f)}\right)"),
-                    D(rf"({L(M.f)})^{{2}}-4({L(M.f)})+1"),
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    close(True, "The expanded composition matches the claim"),
-                ]),
-                lambda: expand(M.gf - (4 * x**2 - 12 * x + 6)) == 0,
-            ),
-            C(
-                "The highest power of $f(g(x))$ equals the highest power of $g(f(x))$.",
-                True,
-                pack("B", True, [
-                    "Highest powers multiply under substitution. Both orders use degrees $1$ and $2$, so both close at $x^{2}$. Expanding the other order confirms it.",
-                    D(rf"f(g(x))={L(M.fg)}"),
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    close(True, "Both compositions are quadratic"),
-                ]),
-                lambda: Poly(M.gf, x).degree() == Poly(M.fg, x).degree() == 2,
-            ),
-            C(
-                "The highest power of $g(f(x))$ is $x^{3}$.",
-                False,
-                pack("C", False, [
-                    "Squaring a linear expression reaches $x^{2}$ and stops; the remaining terms of $g$ are linear or constant in $f$.",
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    close(False, "The highest power is $x^{2}$, not $x^{3}$"),
-                ]),
-                lambda: Poly(M.gf, x).degree() == 3,
-            ),
-            C(
-                "The axis of $g(f)$ equals the axis of $g$.",
-                False,
-                pack("D", False, [
-                    "Each parabola has its own axis, computed from its own first two coefficients.",
-                    D(rf"x_{{g(f)}}={F(gf_axis)}"),
-                    D(rf"x_g={F(M.h)}"),
-                    close(False, "The axes are $\\frac{3}{2}$ and $2$, which are not equal"),
-                ]),
-                lambda: gf_axis == M.h,
-            ),
-            C(
-                "$f(g(1))$ equals $g(f(1))$.",
-                False,
-                pack("E", False, [
-                    "The two orders of substitution are different functions. Evaluate each at $1$.",
-                    D(rf"g(1)={F(M.g_at(1))}"),
-                    D(rf"f(g(1))={F(M.at(M.fg, 1))}"),
-                    D(rf"g(f(1))={F(M.at(M.gf, 1))}"),
-                    close(False, "The two values are $-5$ and $-2$"),
-                ]),
-                lambda: M.at(M.fg, 1) == M.at(M.gf, 1),
-            ),
-        ]
-        ctx = (
-            f"Composition drills for {name}: $f(x)={L(M.f)}$, $g(x)={L(M.g)}$. "
-            f"Expand before trusting degree shortcuts. {TAIL}"
-        )
-    elif cycle == 1:
-        M = FG(x + 2, -(x**2) + 2 * x + 3)
-        ntrue = 3
-        name, title = "BridgeDeck", "BridgeDeck nested maps"
-        gf_axis = Rational(
-            -Poly(M.gf, x).nth(1) / (2 * Poly(M.gf, x).nth(2))
-        )
-        claims = [
-            C(
-                rf"$g(f(x))={L(M.gf)}$.",
-                True,
-                pack("A", True, [
-                    "Replace $x$ by $x+2$ in $g$ and expand.",
-                    D(rf"g(x+2)=-(x+2)^{{2}}+2(x+2)+3"),
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    close(True, "The expanded composition matches"),
-                ]),
-                lambda: expand(M.gf - (-(x**2) - 2 * x + 3)) == 0,
-            ),
-            C(
-                "The highest power of $f(g(x))$ is $x^{2}$.",
-                True,
-                pack("B", True, [
-                    "The outer map $f$ is linear, so it cannot raise the highest power of $g$. Expanding confirms a quadratic.",
-                    D(rf"f(g(x))={L(M.fg)}"),
-                    close(True, "The composition $f(g(x))$ is quadratic"),
-                ]),
-                lambda: Poly(M.fg, x).degree() == 2,
-            ),
-            C(
-                rf"The axis of $g(f)$ is $x={F(gf_axis)}$.",
-                True,
-                pack("C", True, [
-                    "Apply $-b/(2a)$ to the expanded composition $g(f)$.",
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    D(rf"x={F(gf_axis)}"),
-                    close(True, "The axis of the composition is $x=-1$"),
-                ]),
-                lambda: gf_axis == -1,
-            ),
-            C(
-                "The axis of $g(f)$ equals the axis of $g$.",
-                False,
-                pack("D", False, [
-                    "The axis of a parabola is $-b/(2a)$ computed from that parabola's own coefficients, not inherited from an inner map. Expand $g(f)$ first.",
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    D(rf"x_{{g(f)}}={F(gf_axis)}"),
-                    "The inner parabola $g$ has a different linear coefficient, so its axis is different.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"x_g={F(M.h)}"),
-                    close(False, "The axes are $-1$ and $1$"),
-                ]),
-                lambda: gf_axis == M.h,
-            ),
-            C(
-                "$g(f(0))$ equals $f(g(0))$.",
-                False,
-                pack("E", False, [
-                    "The two orders of substitution are different functions. Evaluate each at the origin by first computing the inner value.",
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    D(rf"g(f(0))=g\left({F(M.f_at(0))}\right)={F(M.at(M.gf, 0))}"),
-                    D(rf"g(0)={F(M.g_at(0))}"),
-                    D(rf"f(g(0))=f\left({F(M.g_at(0))}\right)={F(M.at(M.fg, 0))}"),
-                    close(False, "The values are $3$ and $5$"),
-                ]),
-                lambda: M.at(M.gf, 0) == M.at(M.fg, 0),
-            ),
-        ]
-        ctx = (
-            f"{name} control software nests $f$ and $g$ ($f(x)={L(M.f)}$, "
-            f"$g(x)={L(M.g)}$). Compare highest powers, axes, and a sample value. {TAIL}"
-        )
-    else:
-        M = FG(3 * x + 1, x**2 - 2 * x)
-        ntrue = 4
-        name, title = "FloodGate", "FloodGate nested maps"
-        gf_axis = Rational(0)  # 9x^2 - 1, no linear term
-        gg = expand(M.g.subs(x, M.g))
-        claims = [
-            C(
-                rf"$g(f(x))={L(M.gf)}$.",
-                True,
-                pack("A", True, [
-                    "Substitute the line into $g(x)=x^{2}-2x$ and expand.",
-                    D(rf"(3x+1)^{{2}}-2(3x+1)"),
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    close(True, "The composition simplifies to $9x^{2}-1$"),
-                ]),
-                lambda: expand(M.gf - (9 * x**2 - 1)) == 0,
-            ),
-            C(
-                rf"$f(g(x))={L(M.fg)}$.",
-                True,
-                pack("B", True, [
-                    "The other order applies the line to $g$ itself.",
-                    D(rf"f(g(x))=3(x^{{2}}-2x)+1"),
-                    D(rf"f(g(x))={L(M.fg)}"),
-                    close(True, "The expanded $f(g(x))$ matches"),
-                ]),
-                lambda: expand(M.fg - (3 * x**2 - 6 * x + 1)) == 0,
-            ),
-            C(
-                "The axis of $g(f)$ is the vertical axis.",
-                True,
-                pack("C", True, [
-                    "After expansion $g(f)$ has no linear term, so $-b/(2a)$ is zero.",
-                    D(rf"g(f(x))={L(M.gf)}"),
-                    D(rf"x={F(gf_axis)}"),
-                    close(True, "The axis of $g(f)$ is $x=0$"),
-                ]),
-                lambda: gf_axis == 0,
-            ),
-            C(
-                "The graph of $g(f)$ meets the horizontal axis in two real points.",
-                True,
-                pack("D", True, [
-                    "Set the expanded composition equal to zero.",
-                    D(rf"9x^{{2}}-1=0"),
-                    D(rf"x=\pm\frac{{1}}{{3}}"),
-                    close(True, "Two distinct real zeros sit on the horizontal axis"),
-                ]),
-                lambda: discriminant(Poly(M.gf, x)) > 0,
-            ),
-            C(
-                "The highest power of $g(g(x))$ is $x^{2}$.",
-                False,
-                pack("E", False, [
-                    "Nesting a quadratic in itself multiplies the degrees: $2\\cdot 2=4$. Expanding makes the fourth power visible.",
-                    D(rf"g(g(x))={L(gg)}"),
-                    close(False, "The highest power is $x^{4}$, not $x^{2}$"),
-                ]),
-                lambda: Poly(gg, x).degree() == 2,
-            ),
-        ]
-        ctx = (
-            f"A line $f(x)={L(M.f)}$ and parabola $g(x)={L(M.g)}$ are nested in both orders at {name}. "
-            f"Track highest powers, axes, and meetings with the horizontal axis. {TAIL}"
-        )
-    ov = (
-        f"Compositions $g(f(x))={L(M.gf)}$ and $f(g(x))={L(M.fg)}$. "
-        f"Highest powers multiply; axes of $g(f)$ and $g$ need not agree."
-    )
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "nested", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# FACTORED
-# ---------------------------------------------------------------------------
-
-def build_factored(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        r1, r2 = 1, 5
-        M = FG(2 * x - 2, (x - r1) * (x - r2))
-        ntrue = 3
-        name, title = "RaceTrack", "RaceTrack factored parabola"
-        fact = rf"(x-{r1})(x-{r2})"
-        claims = [
-            C(
-                rf"The axis is the midpoint of the roots, so $x={F(M.h)}$.",
-                True,
-                pack("A", True, [
-                    "A factored monic parabola $g(x)=(x-r_1)(x-r_2)$ has axis at the midpoint of the roots, which is also $-b/(2a)$ after expansion.",
-                    D(rf"x=\frac{{{r1}+{r2}}}{{2}}={F(M.h)}"),
-                    D(rf"g(x)={L(M.g)}"),
-                    close(True, "The axis is $x=3$"),
-                ]),
-                lambda: M.h == 3,
-            ),
-            C(
-                rf"The product of the roots is ${F(M.p)}$.",
-                True,
-                pack("B", True, [
-                    "Vieta reads the product from the constant term of a monic quadratic, and also as the product of the displayed roots.",
-                    D(rf"P={r1}\cdot {r2}={F(M.p)}"),
-                    D(rf"P=\frac{{c}}{{a}}={F(M.p)}"),
-                    close(True, "The product is $5$"),
-                ]),
-                lambda: M.p == 5,
-            ),
-            C(
-                rf"The vertex height is ${F(M.kv)}$.",
-                True,
-                pack("C", True, [
-                    "The axis is already the midpoint $x=3$. Evaluate the factored form there, then cross-check against the expansion.",
-                    D(rf"g\left({F(M.h)}\right)=({F(M.h)}-{r1})({F(M.h)}-{r2})={F(M.kv)}"),
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"g(3)=9-18+5={F(M.kv)}"),
-                    close(True, "The vertex height is $-4$"),
-                ]),
-                lambda: M.kv == -4,
-            ),
-            C(
-                "The line and the parabola meet in exactly one point.",
-                False,
-                pack("D", False, [
-                    "The difference $g-f$ is still quadratic. Its discriminant decides the meeting count.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 1,
-            ),
-            C(
-                "The factored parabola opens downwards.",
-                False,
-                pack("E", False, [
-                    "The leading coefficient of $(x-1)(x-5)$ is $+1$.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(False, "A positive leading coefficient opens the parabola upwards"),
-                ]),
-                lambda: M.a < 0,
-            ),
-        ]
-        ctx = (
-            f"At {name} the parabola is given in factored form $g(x)={fact}$ and the line is "
-            f"$f(x)={L(M.f)}$. Use Vieta, the axis, and the discriminant of $g-f$. {TAIL}"
-        )
-    elif cycle == 1:
-        r1, r2 = -1, 3
-        M = FG(x - 1, -((x - r1) * (x - r2)))
-        ntrue = 4
-        name, title = "Observatory", "Observatory factored parabola"
-        fact = rf"-(x+1)(x-3)"
-        claims = [
-            C(
-                rf"The axis is $x={F(M.h)}$.",
-                True,
-                pack("A", True, [
-                    "The axis is still the midpoint of the displayed roots; the overall minus sign does not move it.",
-                    D(rf"x=\frac{{({F(r1)})+{r2}}}{{2}}={F(M.h)}"),
-                    close(True, "The axis is $x=1$"),
-                ]),
-                lambda: M.h == 1,
-            ),
-            C(
-                rf"The product of the roots is ${F(M.p)}$.",
-                True,
-                pack("B", True, [
-                    "The displayed roots multiply to $-3$. Vieta on the expanded form $g(x)=-x^{2}+2x+3$ agrees, because $P=c/a$.",
-                    D(rf"({F(r1)})\cdot {r2}={F(M.p)}"),
-                    D(rf"P=\frac{{{F(M.c)}}}{{{F(M.a)}}}={F(M.p)}"),
-                    close(True, "The product is $-3$"),
-                ]),
-                lambda: M.p == -3,
-            ),
-            C(
-                rf"The vertex height is ${F(M.kv)}$.",
-                True,
-                pack("C", True, [
-                    "Evaluate the factored form on the axis $x=1$, then confirm from the expanded rule $g(x)=-x^{2}+2x+3$.",
-                    D(rf"g(1)=-(1+1)(1-3)={F(M.kv)}"),
-                    D(rf"g(1)=-1+2+3={F(M.kv)}"),
-                    close(True, "The vertex height is $4$"),
-                ]),
-                lambda: M.kv == 4,
-            ),
-            C(
-                "The line and the parabola meet twice.",
-                True,
-                pack("D", True, [
-                    "Expand, subtract the line, and read the discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The line passes through both roots of $g$.",
-                False,
-                pack("E", False, [
-                    "A line through both roots would be the zero function on those two abscissae, hence would have to be the zero line after two hits on a parabola's roots only if it were $y=0$. Check the given line at a root.",
-                    D(rf"g({r2})=0"),
-                    D(rf"f({r2})={F(M.f_at(r2))}"),
-                    close(False, "The line misses the root $x=3$"),
-                ]),
-                lambda: M.f_at(r1) == 0 and M.f_at(r2) == 0,
-            ),
-        ]
-        ctx = (
-            f"At {name} the parabola is $g(x)={fact}$ and the line is $f(x)={L(M.f)}$. "
-            f"Use the displayed roots together with Vieta and the discriminant. {TAIL}"
-        )
-    else:
-        r1, r2 = 1, 4
-        M = FG(2 * x - 3, (x - r1) * (x - r2))
-        ntrue = 5
-        name, title = "Harvester", "Harvester factored parabola"
-        fact = rf"(x-{r1})(x-{r2})"
-        claims = [
-            C(
-                rf"The axis is the midpoint $x={F(M.h)}$.",
-                True,
-                pack("A", True, [
-                    "The midpoint of the displayed roots is the axis.",
-                    D(rf"x=\frac{{{r1}+{r2}}}{{2}}={F(M.h)}"),
-                    close(True, "The axis is $x=\\frac{5}{2}$"),
-                ]),
-                lambda: M.h == Rational(5, 2),
-            ),
-            C(
-                rf"The product of the roots is ${F(M.p)}$.",
-                True,
-                pack("B", True, [
-                    "Vieta: for a monic quadratic the product equals the constant term.",
-                    D(rf"P={r1}\cdot {r2}={F(M.p)}"),
-                    close(True, "The product is $4$"),
-                ]),
-                lambda: M.p == 4,
-            ),
-            C(
-                rf"The sum of the roots is ${F(M.s)}$.",
-                True,
-                pack("C", True, [
-                    "Vieta: the sum is $-b/a$, which for a monic quadratic is the unsigned linear coefficient.",
-                    D(rf"S={r1}+{r2}={F(M.s)}"),
-                    D(rf"S=-\frac{{{F(M.b)}}}{{{F(M.a)}}}={F(M.s)}"),
-                    close(True, "The sum is $5$"),
-                ]),
-                lambda: M.s == 5,
-            ),
-            C(
-                "The discriminant of $g-f$ is positive, so the graphs meet twice.",
-                True,
-                pack("D", True, [
-                    "Expand $g$, subtract the line, and compute the discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The value $g(0)$ equals the product of the roots.",
-                True,
-                pack("E", True, [
-                    "For a monic quadratic, $g(0)=c$ and Vieta says $P=c$. Directly from the factors",
-                    D(rf"g(0)=(-{r1})(-{r2})={F(M.g_at(0))}"),
-                    D(rf"P={F(M.p)}"),
-                    close(True, "Both quantities equal $4$"),
-                ]),
-                lambda: M.g_at(0) == M.p,
-            ),
-        ]
-        ctx = (
-            f"At {name} the parabola is $g(x)={fact}$ and the line is $f(x)={L(M.f)}$. "
-            f"Combine Vieta with the discriminant of $g-f$. {TAIL}"
-        )
-    ov = (
-        f"Factored $g(x)={fact}$; roots ${F(r1)},{F(r2)}$; axis $x={F(M.h)}$; "
-        f"$P={F(M.p)}$; {M.meet} meetings."
-    )
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "factored", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# HYBRID — figure + table, no printed formulae
-# ---------------------------------------------------------------------------
-
-def build_hybrid(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(x - 2, -(x**2) + 6 * x - 5)
-        xmin, xmax = 0, 7
-        ns = [0, 1, 2, 3, 4]
-        vals = M.seq(ns)
-        s5 = int(M.g_at(5))
-        d2 = second_diffs(vals)[0]
-        ntrue = 4
-        name, title = "ZipLine", "ZipLine hybrid check"
-        claims = [
-            C(
-                "From the figure, the solid curve opens downwards.",
-                True,
-                pack("A", True, [
-                    "Opening is visible on the sketch as a peak rather than a trough, and it matches the reconstructed leading coefficient.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(True, "A negative leading coefficient opens the solid curve downwards"),
-                ]),
-                lambda: M.a < 0,
-            ),
-            C(
-                "From the figure, the graphs meet in exactly two points.",
-                True,
-                pack("B", True, [
-                    "Count the crossings of the solid stroke against the dashed stroke, then confirm with the discriminant.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "Two visible crossings match a positive discriminant"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "From the table, successive differences show that the sampled sequence is quadratic with leading coefficient $-1$.",
-                True,
-                pack("C", True, [
-                    "Build differences from the raw $s_n$ row (the figure is not needed for this letter).",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{{d2}}}{{2}}={F(M.a)}"),
-                    close(True, "The table rebuilds leading coefficient $-1$"),
-                ]),
-                lambda: d2 == -2,
-            ),
-            C(
-                f"From the table, extrapolating one step gives $s_{{5}}={s5}$.",
-                True,
-                pack("D", True, [
-                    "The same rebuilt rule $s_n=-n^{2}+6n-5$ is evaluated at the first missing index.",
-                    D(rf"s_5=-5^{{2}}+6\cdot 5-5={s5}"),
-                    close(True, "The next term is $0$"),
-                ]),
-                lambda: s5 == 0,
-            ),
-            C(
-                "After fitting the table, the axis is $x=4$.",
-                False,
-                pack("E", False, [
-                    "With $a=-1$ and $a+b$ equal to the opening first difference, $b=6$ and the axis is",
-                    D(rf"x=-\frac{{6}}{{2\cdot (-1)}}={F(M.h)}"),
-                    close(False, "The axis is $x=3$, not $x=4$"),
-                ]),
-                lambda: M.h == 4,
-            ),
-        ]
-    elif cycle == 1:
-        M = FG(2 * x - 6, x**2 - 4 * x)
-        xmin, xmax = -1, 5
-        ns = [0, 1, 2, 3, 4]
-        vals = M.seq(ns)
-        s5 = int(M.g_at(5))
-        d2 = second_diffs(vals)[0]
-        ntrue = 5
-        name, title = "CanalLock", "CanalLock hybrid check"
-        claims = [
-            C(
-                "From the figure, the solid curve opens upwards.",
-                True,
-                pack("A", True, [
-                    "The sketch shows a trough. The reconstructed leading coefficient confirms it.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(True, "A positive leading coefficient opens the curve upwards"),
-                ]),
-                lambda: M.a > 0,
-            ),
-            C(
-                "From the figure, the turning point of the solid curve lies below the dashed line.",
-                True,
-                pack("B", True, [
-                    "Compare the two heights on the axis of the solid curve.",
-                    D(rf"x={F(M.h)}"),
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    D(rf"f\left({F(M.h)}\right)={F(M.f_at(M.h))}"),
-                    close(True, "The trough height $-4$ sits below the dashed height $-2$"),
-                ]),
-                lambda: M.kv < M.f_at(M.h),
-            ),
-            C(
-                "From the table, successive differences show that the sampled sequence is quadratic with leading coefficient $1$.",
-                True,
-                pack("C", True, [
-                    "Differences of the raw $s_n$ row give",
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    D(rf"a=\frac{{{d2}}}{{2}}={F(M.a)}"),
-                    close(True, "The table rebuilds leading coefficient $1$"),
-                ]),
-                lambda: d2 == 2,
-            ),
-            C(
-                f"From the table, extrapolating one step gives $s_{{5}}={s5}$.",
-                True,
-                pack("D", True, [
-                    "The rebuilt rule $s_n=n^{2}-4n$ at the next index is",
-                    D(rf"s_5=5^{{2}}-4\cdot 5={s5}"),
-                    close(True, "The next term is $5$"),
-                ]),
-                lambda: s5 == 5,
-            ),
-            C(
-                f"After fitting the table, the axis is $x={F(M.h)}$.",
-                True,
-                pack("E", True, [
-                    "With $a=1$ and $b=-4$ the axis formula gives",
-                    D(rf"x=-\frac{{-4}}{{2\cdot 1}}={F(M.h)}"),
-                    close(True, "The fitted axis is $x=2$"),
-                ]),
-                lambda: M.h == 2,
-            ),
-        ]
-    else:
-        M = FG(x + 1, -(x**2) + 2 * x + 4)
-        xmin, xmax = -2, 4
-        ns = [0, 1, 2, 3]
-        vals = M.seq(ns)
-        s4 = int(M.g_at(4))
-        d2 = second_diffs(vals)[0]
-        ntrue = 1
-        name, title = "DockCrane", "DockCrane hybrid check"
-        claims = [
-            C(
-                "From the figure, the solid curve opens upwards.",
-                False,
-                pack("A", False, [
-                    "The sketch shows a peak. The reconstructed leading coefficient is negative.",
-                    D(rf"g(x)={L(M.g)}"),
-                    D(rf"a={F(M.a)}"),
-                    close(False, "The solid curve opens downwards"),
-                ]),
-                lambda: M.a > 0,
-            ),
-            C(
-                "From the figure, the graphs meet in exactly three points.",
-                False,
-                pack("B", False, [
-                    "A line and a parabola cannot meet three times. The discriminant of the difference confirms the actual count.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "Two meetings occur, not three"),
-                ]),
-                lambda: M.meet == 3,
-            ),
-            C(
-                "From the table, the first differences are constant, so $s_n$ is linear.",
-                False,
-                pack("C", False, [
-                    "The first differences of the raw row are not constant.",
-                    D(rf"\Delta^{{(1)}}=({','.join(str(v) for v in first_diffs(vals))})"),
-                    D(rf"\Delta^{{(2)}}={d2}"),
-                    close(False, "Constant second differences keep the sequence quadratic"),
-                ]),
-                lambda: len(set(first_diffs(vals))) == 1,
-            ),
-            C(
-                f"From the table, extrapolating one step gives $s_{{4}}={s4}$.",
-                True,
-                pack("D", True, [
-                    "Rebuild $s_n=-n^{2}+2n+4$ from $\\Delta^{{(2)}}=-2$ together with the opening step and $s_0$, then substitute $n=4$.",
-                    D(rf"s_4=-4^{{2}}+2\cdot 4+4={s4}"),
-                    close(True, "The next term is $-4$"),
-                ]),
-                lambda: s4 == -4,
-            ),
-            C(
-                "After fitting the table, the axis is $x=0$.",
-                False,
-                pack("E", False, [
-                    "Second differences of the raw row recover $2a=-2$, so $a=-1$. The opening first difference is $a+b=s_1-s_0=1$, hence $b=2$.",
-                    D(rf"a=-1,\quad b=2"),
-                    D(rf"x=-\frac{{2}}{{2\cdot (-1)}}={F(M.h)}"),
-                    "An axis at $x=0$ would have required a vanishing linear coefficient.",
-                    close(False, "The axis is $x=1$, not $x=0$"),
-                ]),
-                lambda: M.h == 0,
-            ),
-        ]
-    y_ok(M.g, xmin, xmax)
-    y_ok(M.f, xmin, xmax)
-    assert sum(c.truth for c in claims) == ntrue
-    ctx = (
-        f"{name} supplies a figure (solid brown parabola, dashed green line) and a raw table of "
-        f"the solid curve's integer samples. No closed form is printed. {TAIL}"
-    )
-    ov = (
-        f"Figure plus table, no printed formulae. Reconstructing gives $f(x)={L(M.f)}$ and "
-        f"$g(x)={L(M.g)}$; axis $x={F(M.h)}$, {M.meet} meetings."
-    )
-    spec = TaskSpec(
-        f"Mixed exam — {title}",
-        ctx,
-        "hybrid",
-        claims,
-        ov,
-        figure=make_figure(M.g, M.f, f"{name} hybrid", xmin, xmax),
-        tables_markdown=raw_table(ns, vals),
-    )
-    assert_claims(spec)
-    return spec
-
-
-# ---------------------------------------------------------------------------
-# TEXT DENSE — one paragraph is the sole source
-# ---------------------------------------------------------------------------
-
-def build_text_dense(cycle: int) -> TaskSpec:
-    if cycle == 0:
-        M = FG(4 * x - 3, (x - 1) * (x - 3))
-        ntrue = 5
-        name, title = "Velodrome", "Velodrome dense briefing"
-        ctx = (
-            f"At {name} a line of slope $4$ through $(0,-3)$ is used together with a monic parabola "
-            f"whose roots are $1$ and $3$. Recover both models from that sentence, then test each claim. {TAIL}"
-        )
-        claims = [
-            C(
-                rf"The axis of the parabola is $x={F(M.h)}$.",
-                True,
-                pack("A", True, [
-                    "A monic parabola with roots $1$ and $3$ expands to $g(x)=x^{2}-4x+3$. The axis is both the midpoint of the roots and $-b/(2a)$.",
-                    D(rf"g(x)=(x-1)(x-3)=x^{{2}}-4x+3"),
-                    D(rf"x=\frac{{1+3}}{{2}}={F(M.h)}"),
-                    D(rf"x=-\frac{{-4}}{{2\cdot 1}}={F(M.h)}"),
-                    close(True, "Both routes give axis $x=2$"),
-                ]),
-                lambda: M.h == 2,
-            ),
-            C(
-                rf"The vertex height is ${F(M.kv)}$.",
-                True,
-                pack("B", True, [
-                    "Evaluate the monic factored form on the axis already recovered as $x=2$.",
-                    D(rf"g(x)=(x-1)(x-3)"),
-                    D(rf"g(2)=(2-1)(2-3)={F(M.kv)}"),
-                    "The same height comes from substituting into the expansion $x^{2}-4x+3$.",
-                    D(rf"g(2)=4-8+3={F(M.kv)}"),
-                    close(True, "The vertex height is $-1$"),
-                ]),
-                lambda: M.kv == -1,
-            ),
-            C(
-                "The line and the parabola meet twice.",
-                True,
-                pack("C", True, [
-                    "The line through $(0,-3)$ with slope $4$ is $f(x)=4x-3$. Subtract from $g(x)=x^{2}-4x+3$.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(True, "A positive discriminant gives two meetings"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                rf"The product of the roots is ${F(M.p)}$.",
-                True,
-                pack("D", True, [
-                    "The two given roots multiply to $3$, and Vieta on the expansion agrees.",
-                    D(rf"P=1\cdot 3={F(M.p)}"),
-                    close(True, "The product is $3$"),
-                ]),
-                lambda: M.p == 3,
-            ),
-            C(
-                "The $y$-intercept of the line is $-3$.",
-                True,
-                pack("E", True, [
-                    "A line of slope $4$ through $(0,-3)$ already displays its intercept.",
-                    D(rf"f(x)={L(M.f)}"),
-                    D(rf"f(0)={F(M.f_at(0))}"),
-                    close(True, "The intercept is $-3$"),
-                ]),
-                lambda: M.f_at(0) == -3,
-            ),
-        ]
-        ov = (
-            f"The dense sentence rebuilds $f(x)={L(M.f)}$ and $g(x)={L(M.g)}$; "
-            f"axis $x={F(M.h)}$, vertex height ${F(M.kv)}$, {M.meet} meetings."
-        )
-    elif cycle == 1:
-        M = FG(x - 4, x**2 - x - 2)
-        ntrue = 1
-        name, title = "BalloonFest", "BalloonFest dense briefing"
-        ctx = (
-            f"A briefing at {name} states: a line of slope $1$ through $(4,0)$ is drawn against a monic "
-            f"parabola with roots $-1$ and $2$. Recover both models from that sentence. {TAIL}"
-        )
-        claims = [
-            C(
-                "The line and the parabola meet twice.",
-                False,
-                pack("A", False, [
-                    "The line through $(4,0)$ with slope $1$ is $f(x)=x-4$. The monic parabola with those roots is $g(x)=(x+1)(x-2)=x^{2}-x-2$. Their difference has discriminant",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "A negative discriminant means the graphs miss"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The axis of the parabola is $x=1$.",
-                False,
-                pack("B", False, [
-                    "The midpoint of the given roots is",
-                    D(rf"x=\frac{{-1+2}}{{2}}={F(M.h)}"),
-                    close(False, "The axis is $x=\\frac{1}{2}$, not $x=1$"),
-                ]),
-                lambda: M.h == 1,
-            ),
-            C(
-                "The product of the roots is $2$.",
-                False,
-                pack("C", False, [
-                    "The given roots multiply to $-2$. Vieta on the expansion $g(x)=x^{2}-x-2$ agrees.",
-                    D(rf"P=(-1)\cdot 2={F(M.p)}"),
-                    close(False, "The product is $-2$, not $2$"),
-                ]),
-                lambda: M.p == 2,
-            ),
-            C(
-                "The slope of the line is $1$.",
-                True,
-                pack("D", True, [
-                    "The briefing states the slope directly, and point-slope through $(4,0)$ reproduces it.",
-                    D(rf"f(x)=1\cdot (x-4)+0"),
-                    D(rf"f(x)={L(M.f)}"),
-                    close(True, "The slope is $1$"),
-                ]),
-                lambda: M.m == 1,
-            ),
-            C(
-                "The vertex height is $0$.",
-                False,
-                pack("E", False, [
-                    "Evaluate $g$ on its axis.",
-                    D(rf"g\left({F(M.h)}\right)={F(M.kv)}"),
-                    close(False, "The vertex height is $-\\frac{9}{4}$, not $0$"),
-                ]),
-                lambda: M.kv == 0,
-            ),
-        ]
-        ov = (
-            f"The sentence rebuilds $f(x)={L(M.f)}$ and $g(x)={L(M.g)}$. "
-            f"The discriminant of $g-f$ is negative, so the graphs miss; axis $x={F(M.h)}$."
-        )
-    else:
-        M = FG(2 * x + 1, -(x**2) + 6 * x - 5)
-        ntrue = 2
-        name, title = "PortPilot", "PortPilot dense briefing"
-        ctx = (
-            f"PortPilot's note reads: a line of slope $2$ through $(0,1)$ is set against a parabola that "
-            f"opens downwards, has roots $1$ and $5$, and leading coefficient $-1$. Recover both models. {TAIL}"
-        )
-        claims = [
-            C(
-                rf"The axis of the parabola is $x={F(M.h)}$.",
-                True,
-                pack("A", True, [
-                    "The axis is the midpoint of the given roots, independent of the leading-coefficient sign.",
-                    D(rf"x=\frac{{1+5}}{{2}}={F(M.h)}"),
-                    close(True, "The axis is $x=3$"),
-                ]),
-                lambda: M.h == 3,
-            ),
-            C(
-                "The parabola opens downwards.",
-                True,
-                pack("B", True, [
-                    "The briefing names leading coefficient $-1$, which is the opening test.",
-                    D(rf"g(x)=-(x-1)(x-5)"),
-                    D(rf"a={F(M.a)}"),
-                    close(True, "A negative leading coefficient opens the parabola downwards"),
-                ]),
-                lambda: M.a < 0,
-            ),
-            C(
-                "The line and the parabola meet twice.",
-                False,
-                pack("C", False, [
-                    "The line through $(0,1)$ with slope $2$ is $f(x)=2x+1$. Subtract from the expanded $g$.",
-                    D(rf"g(x)-f(x)={L(M.diff)}"),
-                    D(rf"\Delta={F(M.delta)}"),
-                    close(False, "A negative discriminant means the graphs miss"),
-                ]),
-                lambda: M.meet == 2,
-            ),
-            C(
-                "The vertex height is $0$.",
-                False,
-                pack("D", False, [
-                    "The axis is the midpoint $x=3$ of the given roots. Evaluate the factored form $g(x)=-(x-1)(x-5)$ there.",
-                    D(rf"g(3)=-(3-1)(3-5)={F(M.kv)}"),
-                    "The expansion $-x^{2}+6x-5$ returns the same height.",
-                    D(rf"g(3)=-9+18-5={F(M.kv)}"),
-                    close(False, "The vertex height is $4$, not $0$"),
-                ]),
-                lambda: M.kv == 0,
-            ),
-            C(
-                "The product of the roots is $-5$.",
-                False,
-                pack("E", False, [
-                    "The displayed roots multiply to $5$. Vieta on $g(x)=-x^{2}+6x-5$ gives $P=c/a=(-5)/(-1)=5$ as well.",
-                    D(rf"P=1\cdot 5={F(M.p)}"),
-                    close(False, "The product is $5$, not $-5$"),
-                ]),
-                lambda: M.p == -5,
-            ),
-        ]
-        ov = (
-            f"The note rebuilds $f(x)={L(M.f)}$ and $g(x)={L(M.g)}$; axis $x={F(M.h)}$, "
-            f"vertex height ${F(M.kv)}$, {M.meet} meetings."
-        )
-    assert sum(c.truth for c in claims) == ntrue
-    spec = TaskSpec(f"Mixed exam — {title}", ctx, "text_dense", claims, ov)
-    assert_claims(spec)
-    return spec
-
-
-BUILDERS = {
-    "graph": build_graph,
-    "table": build_table,
-    "applied": build_applied,
-    "symbolic": build_symbolic,
-    "parametric": build_parametric,
-    "rebuild": build_rebuild,
-    "nested": build_nested,
-    "factored": build_factored,
-    "hybrid": build_hybrid,
-    "text_dense": build_text_dense,
-}
-
-
-def build_task(idx: int) -> TaskSpec:
-    kind = STEM_KINDS[idx % 10]
-    cycle = idx // 10
-    return BUILDERS[kind](cycle)
-
-
-def render(spec: TaskSpec, idx: int) -> dict:
-    n = idx + 1
-    task = {
-        "id": f"math-7-e{n}",
-        "case_id": f"MATH 7.E{str(n).zfill(2)}",
-        "title": spec.title,
+def task(
+    idx: int,
+    kind: str,
+    title: str,
+    context: str,
+    statements: list[str],
+    key: list[bool],
+    expls: list[str],
+    overview: str,
+    figure_uri: str | None = None,
+    table: str | None = None,
+) -> dict:
+    assert kind in STEMS
+    assert len(statements) == 5 == len(key) == len(expls)
+    ctx = context.strip()
+    if TAIL not in ctx:
+        ctx = ctx.rstrip(".") + ". " + TAIL
+    d = {
+        "id": f"math-7-e{idx}",
+        "case_id": f"MATH 7.E{idx:02d}",
+        "title": title,
         "subsection": "7.5",
-        "context": spec.context,
-        "statements": [c.text for c in spec.claims],
-        "answer_key": [bool(c.truth) for c in spec.claims],
-        "tactical_explanations": [c.explanation for c in spec.claims],
+        "context": ctx,
+        "statements": statements,
+        "answer_key": key,
+        "tactical_explanations": expls,
         "difficulty_level": "5/5",
-        "sort_order": 100 + n,
-        "solution_overview": spec.overview,
+        "sort_order": 100 + idx,
+        "solution_overview": overview.strip(),
         "placeholder": False,
-        "stem_kind": spec.stem_kind,
+        "stem_kind": kind,
     }
-    if spec.figure:
-        task["figure"] = spec.figure
-    if spec.tables_markdown:
-        task["tables_markdown"] = spec.tables_markdown
-    return task
+    if figure_uri:
+        d["figure"] = figure_uri
+    if table:
+        d["tables_markdown"] = table
+    return d
+
+
+# ---------------------------------------------------------------------------
+# Tasks
+# ---------------------------------------------------------------------------
+
+def build_all() -> list[dict]:
+    tasks: list[dict] = []
+    n = 0
+
+    def add(**kw):
+        nonlocal n
+        n += 1
+        t = task(n, **kw)
+        assert sum(t["answer_key"]) == PLANNED_TRUTHS[n - 1], (
+            n,
+            sum(t["answer_key"]),
+            PLANNED_TRUTHS[n - 1],
+        )
+        tasks.append(t)
+
+    # ======================================================================
+    # 1. GRAPH  (2 true)  g=-x^2+4, f=-x+2
+    # Vertex (0,4); roots ±2; meetings x=-1 and x=2.
+    # ======================================================================
+    g1 = expand(-(x + 2) * (x - 2))
+    f1 = expand(-(x - 2))
+    assert g1 == expand(-(x**2) + 4) and f1 == expand(-x + 2)
+    assert nmeet(f1, g1) == 2
+    assert vertex_of(g1) == (0, 4)
+    assert ev(g1, 0) > ev(f1, 0)
+    assert lead(g1) < 0
+    add(
+        kind="graph",
+        title="Clearance plot — read the axes",
+        context=(
+            "The figure shows a **solid brown parabola** $g$ and a **dashed green line** $f$. "
+            "No formulas are printed. Reason from the ticks, crossings, and relative heights only"
+        ),
+        statements=[
+            "The solid curve meets the horizontal axis at exactly two points.",
+            "The turning point of the solid curve lies below the dashed line.",
+            "The two graphs meet at exactly one real point.",
+            "On the open interval between the solid curve's two axis crossings, the solid curve stays below the dashed line.",
+            "The solid curve opens downwards.",
+        ],
+        key=[True, False, False, False, True],
+        expls=[
+            pack("A", True, [
+                "A parabola meets the horizontal axis wherever its height is zero, which on the figure is every brown crossing of that axis.",
+                "Two distinct crossings are marked, one on each side of the origin.",
+                D(r"g(x)=-x^{2}+4=0"),
+                D(r"x=\pm 2"),
+                close(True, "Two crossings are visible and the hidden rule confirms the count"),
+            ]),
+            pack("B", False, [
+                "The turning point is the unique marked peak on the solid curve, sitting on the vertical axis.",
+                "At that common abscissa the brown mark sits strictly above the green line.",
+                D(r"g(0)=4\qquad f(0)=2"),
+                D(r"4>2"),
+                close(False, "The turning point lies above the dashed line, not below it"),
+            ]),
+            pack("C", False, [
+                "The two traces meet where they share a height, so count the brown–green crossings.",
+                "The figure shows one crossing left of the origin and one on the positive side.",
+                D(r"g(x)-f(x)=-x^{2}+x+2=-(x-2)(x+1)"),
+                D(r"x=-1,\; x=2"),
+                close(False, "Two meetings are visible, not one"),
+            ]),
+            pack("D", False, [
+                "Between the two brown axis crossings the solid curve arches above the axis while the dashed line cuts through lower heights.",
+                "Comparing the traces on that interval, brown stays above green.",
+                D(r"g(0)=4"),
+                D(r"f(0)=2"),
+                D(r"4>2"),
+                close(False, "The solid curve is above the dashed line there, not below it"),
+            ]),
+            pack("E", True, [
+                "Whether a parabola opens downwards is read from the arms falling away from a peak.",
+                "The solid curve has exactly that shape: a peak on the vertical axis and arms sloping down to the two crossings.",
+                D(r"a=-1"),
+                D(r"a<0"),
+                close(True, "The opening is downwards"),
+            ]),
+        ],
+        overview=(
+            "Hidden models:\n\n"
+            + D(r"g(x)=-x^{2}+4\qquad f(x)=-x+2")
+            + "\n\nVertex $(0,4)$; roots $\\pm 2$; meetings at $x=-1$ and $x=2$. "
+            "Read crossings, the peak, and relative heights from the figure; the algebra only checks the reading."
+        ),
+        figure_uri=figure(
+            g1, f=f1, xmin=-3.5, xmax=3.5, ymin=-4, ymax=6,
+            title="Solid brown = parabola g; dashed green = line f",
+            flabel="f",
+        ),
+    )
+
+    # ======================================================================
+    # 2. TABLE  (3 true)  s = n^2-4n+3 on 0..5
+    # 3, -1, -3, -3, -1, 3;  Δ1 = -4,-2,0,2,4;  Δ2 = 2,2,2,2
+    # ======================================================================
+    xs2 = [0, 1, 2, 3, 4, 5]
+    ys2 = [k * k - 4 * k + 3 for k in xs2]
+    assert ys2 == [3, 0, -1, 0, 3, 8]
+    assert first_diffs(ys2) == [-3, -1, 1, 3, 5]
+    assert second_diffs(ys2) == [2, 2, 2, 2]
+    add(
+        kind="table",
+        title="Discrete samples — diagnose the degree",
+        context=(
+            "A sequence $s_n$ is recorded in the table for $n=0,1,2,3,4,5$. "
+            "No closed form is supplied. Decide each claim from the table alone"
+        ),
+        statements=[
+            "The first differences of $s_n$ are constant.",
+            "The second differences of $s_n$ are constant and equal to $2$.",
+            "A single linear rule fits every listed point.",
+            "Rebuilding a quadratic $an^{2}+bn+c$ from the second-difference constant recovers the leading coefficient $a=1$.",
+            "The listed heights satisfy $s_0=s_4$.",
+        ],
+        key=[False, True, False, True, True],
+        expls=[
+            pack("A", False, [
+                "First differences are the neighbouring gaps in the $s$-row, which the table does not print: they have to be formed by hand.",
+                D(r"s_{1}-s_{0}=0-3=-3"),
+                D(r"s_{2}-s_{1}=-1-0=-1"),
+                D(r"(-3,-1,1,3,5)"),
+                close(False, "These gaps change from step to step, so they are not constant"),
+            ]),
+            pack("B", True, [
+                "Second differences are the gaps of that first-difference row.",
+                D(r"(-1)-(-3)=2"),
+                D(r"1-(-1)=2\qquad 3-1=2\qquad 5-3=2"),
+                D(r"(2,2,2,2)"),
+                close(True, "Every second difference equals $2$"),
+            ]),
+            pack("C", False, [
+                "A linear model forces constant first differences. Here the first differences move while the second ones stand still — the signature of a quadratic, not a line.",
+                D(r"2a=2\Rightarrow a=1\neq 0"),
+                close(False, "No single line can fit every listed point"),
+            ]),
+            pack("D", True, [
+                "For unit spacing, a quadratic sequence has constant second difference $2a$.",
+                D(r"2a=2"),
+                D(r"a=1"),
+                close(True, "The rebuilt leading coefficient is $1$"),
+            ]),
+            pack("E", True, [
+                "Read the two table entries directly, without rebuilding anything.",
+                D(r"s_{0}=3\qquad s_{4}=3"),
+                close(True, "The two heights agree"),
+            ]),
+        ],
+        overview=(
+            "Hidden model:\n\n"
+            + D(r"s_n=n^{2}-4n+3")
+            + "\n\nSecond differences constantly $2$, so $a=1$; the table is symmetric about $n=2$."
+        ),
+        table=md_table(xs2, ys2, "s_n", xname="n"),
+    )
+
+    # ======================================================================
+    # 3. APPLIED  (4 true)  R = p(8-p) at p=1..5 → 7,12,15,16,15
+    # ======================================================================
+    xs3 = [1, 2, 3, 4, 5]
+    ys3 = [p * (8 - p) for p in xs3]
+    assert ys3 == [7, 12, 15, 16, 15]
+    add(
+        kind="applied",
+        title="Ticket desk — revenue table",
+        context=(
+            "A club sells tickets at price $p$ euros. The table records total revenue $R$ "
+            "(in euros) observed at five prices. No formula is printed on the desk sheet"
+        ),
+        statements=[
+            "Among the listed prices, revenue is largest at $p=4$.",
+            "Revenue at $p=3$ equals revenue at $p=5$.",
+            "Revenue increases at every step from $p=1$ to $p=5$.",
+            "The revenue at $p=2$ is $12$ euros.",
+            "Raising the price from $4$ to $5$ decreases the listed revenue.",
+        ],
+        key=[True, True, False, True, True],
+        expls=[
+            pack("A", True, [
+                "List the five recorded revenues in price order and pick out the largest.",
+                D(r"(7,12,15,16,15)"),
+                D(r"16"),
+                close(True, "The unique maximum is $16$, sitting at $p=4$"),
+            ]),
+            pack("B", True, [
+                "The two named prices are different columns of the same row.",
+                D(r"R(3)=15"),
+                D(r"R(5)=15"),
+                close(True, "The two revenues match"),
+            ]),
+            pack("C", False, [
+                "An always-increasing sequence would have every step strictly positive.",
+                D(r"R(4)=16"),
+                D(r"R(5)=15"),
+                D(r"15-16=-1"),
+                close(False, "The sequence falls on the last step, so it is not increasing throughout"),
+            ]),
+            pack("D", True, [
+                "The column headed $p=2$ holds the recorded revenue at that price.",
+                D(r"R(2)=12"),
+                D(r"12"),
+                close(True, "The listed revenue is $12$ euros"),
+            ]),
+            pack("E", True, [
+                "A price increase from $4$ to $5$ changes revenue by the difference of those two entries.",
+                D(r"R(4)=16"),
+                D(r"R(5)=15"),
+                D(r"R(5)-R(4)=15-16=-1"),
+                close(True, "Revenue falls when the price is raised from $4$ to $5$"),
+            ]),
+        ],
+        overview=(
+            "Hidden model $R(p)=p(8-p)$. Students need only the table: the unique listed "
+            "peak is $16$ at $p=4$, and the row is symmetric about that price."
+        ),
+        table=md_table(xs3, ys3, "R", xname="p"),
+    )
+
+    # ======================================================================
+    # 4. SYMBOLIC  (5 true)  f=2x+1, g=x^2-3x+1
+    # ======================================================================
+    f4 = expand(2 * x + 1)
+    g4 = expand(x**2 - 3 * x + 1)
+    assert nmeet(f4, g4) == 2
+    assert axis_of(g4) == Rational(3, 2)
+    assert vertex_of(g4)[1] == Rational(-5, 4)
+    assert vprod(g4) == 1
+    A4, B4, C4 = rewrite_ABC(f4, g4)
+    add(
+        kind="symbolic",
+        title="Line and parabola — intersection algebra",
+        context="Let $f(x)=2x+1$ and $g(x)=x^{2}-3x+1$. Work in symbols; no figure is supplied",
+        statements=[
+            "The graphs meet at exactly two real points.",
+            rf"The axis of $g$ is $x={F(Rational(3, 2))}$.",
+            rf"The vertex height of $g$ equals ${F(Rational(-5, 4))}$.",
+            "The product of the roots of $g$ equals $1$.",
+            rf"There exist real numbers $A,B,C$ such that $g(x)=A\,f(x)^{2}+B\,f(x)+C$; one such triple is $A={F(A4)}$, $B={F(B4)}$, $C={F(C4)}$.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Meetings of a line and a parabola are the real zeros of their difference.",
+                D(r"g(x)-f(x)=x^{2}-3x+1-(2x+1)=x^{2}-5x"),
+                D(r"x(x-5)=0"),
+                D(r"x=0,\; x=5"),
+                close(True, "Two distinct real roots give two meetings"),
+            ]),
+            pack("B", True, [
+                "The axis of $ax^{2}+bx+c$ is the vertical line through $-b/(2a)$.",
+                D(r"a=1\qquad b=-3"),
+                D(r"x=-\frac{-3}{2\cdot 1}=\frac{3}{2}"),
+                close(True, "The axis is $x=\\frac{3}{2}$"),
+            ]),
+            pack("C", True, [
+                "The vertex height is the value of $g$ on its axis.",
+                D(r"g\left(\frac{3}{2}\right)=\left(\frac{3}{2}\right)^{2}-3\cdot\frac{3}{2}+1"),
+                D(r"\frac{9}{4}-\frac{9}{2}+1=-\frac{5}{4}"),
+                close(True, "The vertex height is $-\\frac{5}{4}$"),
+            ]),
+            pack("D", True, [
+                "Vieta reads the product of the roots from the constant term over the leading coefficient, without solving.",
+                D(r"P=\frac{c}{a}=\frac{1}{1}=1"),
+                close(True, "The product is $1$"),
+            ]),
+            pack("E", True, [
+                "A line with nonzero slope already produces an $x^{2}$ term once it is squared, so $f^{2}$, $f$ and $1$ span every parabola.",
+                D(r"f(x)^{2}=(2x+1)^{2}=4x^{2}+4x+1"),
+                D(rf"A=\frac{{1}}{{4}}\qquad B=-2\qquad C=\frac{{11}}{{4}}"),
+                D(rf"\frac{{1}}{{4}}(2x+1)^{2}-2(2x+1)+\frac{{11}}{{4}}=x^{2}-3x+1"),
+                close(True, "The named triple reproduces $g$ exactly"),
+            ]),
+        ],
+        overview=(
+            D(r"f(x)=2x+1\qquad g(x)=x^{2}-3x+1")
+            + "\n\nMeetings at $x=0$ and $x=5$; axis $x=\\frac{3}{2}$; vertex height $-\\frac{5}{4}$; "
+            + rf"rewrite $A={F(A4)}$, $B={F(B4)}$, $C={F(C4)}$."
+        ),
+    )
+
+    # ======================================================================
+    # 5. PARAMETRIC  (1 true)  f_t = t x,  g = x^2+1,  Δ = t^2-4
+    # ======================================================================
+    add(
+        kind="parametric",
+        title="Sliding slope family",
+        context=(
+            r"For each real $t$ let $f_t(x)=tx$ and $g(x)=x^{2}+1$. "
+            "Study how the line family meets the fixed parabola"
+        ),
+        statements=[
+            "For $t=0$ the graphs share no real point.",
+            "The graphs never miss each other: every real $t$ produces at least one meeting.",
+            "Tangency occurs for exactly one real value of $t$.",
+            "When $t=3$ the graphs miss each other.",
+            "The axis of $g$ depends on $t$.",
+        ],
+        key=[True, False, False, False, False],
+        expls=[
+            pack("A", True, [
+                "For $t=0$ the line is the horizontal axis, so meetings solve $x^{2}+1=0$.",
+                D(r"g(x)-f_0(x)=x^{2}+1"),
+                D(r"x^{2}+1=0"),
+                close(True, "No real solution exists, so the graphs share no real point"),
+            ]),
+            pack("B", False, [
+                "The discriminant of the difference is a quadratic in the slope parameter.",
+                D(r"g-f_t=x^{2}-tx+1"),
+                D(r"\Delta=t^{2}-4"),
+                D(r"|t|<2\Rightarrow\Delta<0"),
+                close(False, "The graphs miss whenever $|t|<2$"),
+            ]),
+            pack("C", False, [
+                "Tangency is the boundary $\\Delta=0$.",
+                D(r"t^{2}-4=0"),
+                D(r"t=\pm 2"),
+                close(False, "Exactly two tangent slopes exist, not one"),
+            ]),
+            pack("D", False, [
+                "Substitute the named slope into the same discriminant.",
+                D(r"t=3\qquad\Delta=9-4=5>0"),
+                close(False, "A positive discriminant gives two meetings, not a miss"),
+            ]),
+            pack("E", False, [
+                "The axis of $g$ is computed from $g$ alone.",
+                D(r"g(x)=x^{2}+1\qquad x=-\frac{0}{2}=0"),
+                close(False, "The axis stays $x=0$ for every $t$"),
+            ]),
+        ],
+        overview=D(r"g(x)-f_t(x)=x^{2}-tx+1\qquad\Delta=t^{2}-4")
+        + "\n\nMiss when $|t|<2$, tangency at $t=\\pm 2$, two meetings when $|t|>2$.",
+    )
+    t_sym = Symbol("t")
+    dlt = (t_sym**2 - 4)
+    assert dlt.subs(t_sym, 0) < 0 and dlt.subs(t_sym, 3) > 0
+    assert simplify(dlt.subs(t_sym, 2)) == 0 and simplify(dlt.subs(t_sym, -2)) == 0
+
+    # ======================================================================
+    # 6. REBUILD  (3 true)  vertex (2,-3), through (0,5) → 2(x-2)^2-3
+    # ======================================================================
+    g6 = expand(2 * (x - 2)**2 - 3)
+    assert ev(g6, 0) == 5 and ev(g6, 2) == -3 and ev(g6, 4) == 5
+    assert vertex_of(g6) == (2, -3)
+    add(
+        kind="rebuild",
+        title="Rebuild from vertex and a point",
+        context=(
+            "A parabola has vertex $(2,-3)$ and passes through $(0,5)$. "
+            "It opens upwards. Rebuild its rule and test the claims"
+        ),
+        statements=[
+            r"The rule is $g(x)=2(x-2)^{2}-3$.",
+            "The $y$-intercept equals $5$.",
+            "The axis of symmetry is $x=2$.",
+            "The vertex lies above the horizontal axis.",
+            r"At $x=4$ one has $g(4)=-3$.",
+        ],
+        key=[True, True, True, False, False],
+        expls=[
+            pack("A", True, [
+                "Vertex form with the given turning point is $g(x)=a(x-2)^{2}-3$. Passing through $(0,5)$ fixes $a$.",
+                D(r"g(0)=a(0-2)^{2}-3=5"),
+                D(r"4a-3=5"),
+                D(r"a=2"),
+                D(r"g(x)=2(x-2)^{2}-3"),
+                close(True, "The rebuilt rule matches the claim"),
+            ]),
+            pack("B", True, [
+                "Passing through $(0,5)$ is exactly the claim that the graph meets the vertical axis at height $5$.",
+                D(r"g(0)=2(0-2)^{2}-3"),
+                D(r"g(0)=5"),
+                close(True, "The $y$-intercept is $5$"),
+            ]),
+            pack("C", True, [
+                "The axis is the vertical line through the vertex.",
+                D(r"x=2"),
+                D(r"g(2)=-3"),
+                close(True, "The axis is $x=2$"),
+            ]),
+            pack("D", False, [
+                "The vertex height is the number named in the stem.",
+                D(r"g(2)=-3"),
+                D(r"-3<0"),
+                close(False, "The vertex lies strictly below the horizontal axis"),
+            ]),
+            pack("E", False, [
+                "The point $x=4$ is as far to the right of the axis as $x=0$ is to the left, so the heights agree.",
+                D(r"g(4)=2(4-2)^{2}-3=8-3=5"),
+                D(r"5\neq -3"),
+                close(False, "The height at $x=4$ is $5$, not $-3$"),
+            ]),
+        ],
+        overview=D(r"g(x)=2(x-2)^{2}-3") + "\n\nVertex $(2,-3)$; $g(0)=g(4)=5$.",
+    )
+
+    # ======================================================================
+    # 7. NESTED  (2 true)  f=x+1, g=x^2
+    # ======================================================================
+    f7 = x + 1
+    g7 = x**2
+    gf7 = expand(g7.subs(x, f7))
+    fg7 = expand(f7.subs(x, g7))
+    assert gf7 == expand((x + 1)**2)
+    assert fg7 == expand(x**2 + 1)
+    assert ev(gf7, 1) == 4 and ev(fg7, 1) == 2
+    add(
+        kind="nested",
+        title="Nesting a line inside a parabola",
+        context=r"Let $f(x)=x+1$ and $g(x)=x^{2}$. Study the nested rules $g(f(x))$ and $f(g(x))$",
+        statements=[
+            r"The nested rule $g(f(x))$ expands to $x^{2}+2x+1$.",
+            r"The nested rule $f(g(x))$ expands to $x^{2}+1$.",
+            "The two nested rules are identical as functions.",
+            r"At $x=1$ one has $g(f(1))=f(g(1))$.",
+            r"The highest power in $f(g(x))$ is $x^{3}$.",
+        ],
+        key=[True, True, False, False, False],
+        expls=[
+            pack("A", True, [
+                "Substitute the line into the parabola and expand.",
+                D(r"g(f(x))=(x+1)^{2}"),
+                D(r"(x+1)^{2}=x^{2}+2x+1"),
+                close(True, "The expansion matches"),
+            ]),
+            pack("B", True, [
+                "The other order feeds the parabola into the line.",
+                D(r"f(g(x))=f(x^{2})"),
+                D(r"f(g(x))=x^{2}+1"),
+                close(True, "The expansion matches"),
+            ]),
+            pack("C", False, [
+                "The two expansions already differ by the middle term $2x$.",
+                D(r"g(f(x))=x^{2}+2x+1"),
+                D(r"f(g(x))=x^{2}+1"),
+                close(False, "The nested rules are not identical"),
+            ]),
+            pack("D", False, [
+                "Evaluate each nested rule at the named input.",
+                D(r"f(1)=2\qquad g(f(1))=4"),
+                D(r"g(1)=1\qquad f(g(1))=2"),
+                D(r"4\neq 2"),
+                close(False, "The two nested values differ at $x=1$"),
+            ]),
+            pack("E", False, [
+                "After expansion $f(g(x))=x^{2}+1$ is still quadratic.",
+                D(r"f(g(x))=x^{2}+1"),
+                D(r"x^{2}"),
+                close(False, "The highest power is $x^{2}$, not $x^{3}$"),
+            ]),
+        ],
+        overview=(
+            "Composition of a line and a parabola stays quadratic; order matters.\n\n"
+            + D(r"g(f(x))=x^{2}+2x+1\qquad f(g(x))=x^{2}+1")
+        ),
+    )
+
+    # ======================================================================
+    # 8. FACTORED  (4 true)  g=2(x-1)(x-4)
+    # ======================================================================
+    g8 = expand(2 * (x - 1) * (x - 4))
+    assert g8 == expand(2 * x**2 - 10 * x + 8)
+    assert axis_of(g8) == Rational(5, 2)
+    assert vertex_of(g8)[1] == Rational(-9, 2)
+    add(
+        kind="factored",
+        title="Factored parabola — Vieta reads",
+        context=r"Let $g(x)=2(x-1)(x-4)$. Decide each claim without expanding first if you can",
+        statements=[
+            "The roots are $1$ and $4$.",
+            rf"The axis is $x={F(Rational(5, 2))}$.",
+            "Expanded, the middle coefficient equals $-10$.",
+            "The constant term equals $8$.",
+            rf"The vertex height equals $-4$.",
+        ],
+        key=[True, True, True, True, False],
+        expls=[
+            pack("A", True, [
+                "A product $2(x-1)(x-4)$ vanishes precisely where a factor vanishes.",
+                D(r"x-1=0\qquad x-4=0"),
+                D(r"x=1,\; x=4"),
+                close(True, "The roots are $1$ and $4$"),
+            ]),
+            pack("B", True, [
+                "The axis bisects the two roots.",
+                D(r"x=\frac{1+4}{2}=\frac{5}{2}"),
+                close(True, "The axis is $x=\\frac{5}{2}$"),
+            ]),
+            pack("C", True, [
+                "Expand the product, then distribute the leading $2$.",
+                D(r"(x-1)(x-4)=x^{2}-5x+4"),
+                D(r"2(x^{2}-5x+4)=2x^{2}-10x+8"),
+                close(True, "The middle coefficient is $-10$"),
+            ]),
+            pack("D", True, [
+                "The constant term is the value at the origin, or the last term after the expansion above.",
+                D(r"g(0)=2(-1)(-4)=8"),
+                close(True, "The constant term is $8$"),
+            ]),
+            pack("E", False, [
+                "Evaluate the factored form on the axis.",
+                D(r"g\left(\frac{5}{2}\right)=2\left(\frac{5}{2}-1\right)\left(\frac{5}{2}-4\right)"),
+                D(r"2\cdot\frac{3}{2}\cdot\left(-\frac{3}{2}\right)=-\frac{9}{2}"),
+                D(r"-\frac{9}{2}\neq -4"),
+                close(False, "The vertex height is $-\\frac{9}{2}$, not $-4$"),
+            ]),
+        ],
+        overview=D(r"g(x)=2x^{2}-10x+8") + "\n\nRoots $1$ and $4$; axis $x=\\frac{5}{2}$; vertex height $-\\frac{9}{2}$.",
+    )
+
+    # ======================================================================
+    # 9. HYBRID  (5 true)  figure g=x^2-4; table y=2x+1
+    # ======================================================================
+    g9 = expand((x - 2) * (x + 2))
+    assert vertex_of(g9) == (0, -4)
+    xs9 = [0, 1, 2, 3]
+    ys9 = [2 * n + 1 for n in xs9]
+    assert ys9 == [1, 3, 5, 7] and first_diffs(ys9) == [2, 2, 2]
+    add(
+        kind="hybrid",
+        title="Figure for g, table for a line",
+        context=(
+            "The figure shows an unknown parabola $g$ (solid brown; no formula). "
+            "Separately, the table lists an unknown line $\\ell$ at four inputs. "
+            "Use the figure for claims about $g$ and the table for claims about $\\ell$"
+        ),
+        statements=[
+            "The solid curve crosses the horizontal axis twice.",
+            "The solid curve's turning point lies below the horizontal axis.",
+            "The tabled rule has constant first difference $2$.",
+            "The tabled rule is consistent with slope $2$.",
+            "At $x=0$ the tabled height equals $1$.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Count the brown meetings with the horizontal axis on the figure.",
+                "Two crossings appear, symmetric about the origin.",
+                D(r"g(x)=x^{2}-4=0\qquad x=\pm 2"),
+                close(True, "Two axis crossings are visible"),
+            ]),
+            pack("B", True, [
+                "The marked trough sits below the axis on the vertical scale.",
+                D(r"g(0)=-4"),
+                D(r"-4<0"),
+                close(True, "The turning point lies below the horizontal axis"),
+            ]),
+            pack("C", True, [
+                "Form neighbouring gaps of the $y$-row; the table does not print them.",
+                D(r"3-1=2\qquad 5-3=2\qquad 7-5=2"),
+                D(r"(2,2,2)"),
+                close(True, "The constant gap is $2$"),
+            ]),
+            pack("D", True, [
+                "For unit spacing, a constant first difference is exactly the slope of the line.",
+                D(r"m=2"),
+                D(r"2"),
+                close(True, "The table is consistent with slope $2$"),
+            ]),
+            pack("E", True, [
+                "Read the table entry under $x=0$.",
+                D(r"\ell(0)=1"),
+                D(r"1"),
+                close(True, "The tabled height is $1$"),
+            ]),
+        ],
+        overview=D(r"g(x)=x^{2}-4\qquad \ell(x)=2x+1")
+        + "\n\nTrough $(0,-4)$; roots $\\pm 2$; the table is an arithmetic sequence of step $2$.",
+        figure_uri=figure(
+            g9, xmin=-4, xmax=4, ymin=-6, ymax=10,
+            title="Solid brown = unknown parabola g (no formula printed)",
+        ),
+        table=md_table(xs9, ys9, r"\ell"),
+    )
+
+    # ======================================================================
+    # 10. TEXT_DENSE  (1 true)  vertex (1,5), roots -1 and 3, f through (0,2) slope -1
+    # ======================================================================
+    k10 = Rational(-5, 4)
+    g10 = expand(k10 * (x + 1) * (x - 3))
+    f10 = expand(-x + 2)
+    assert ev(g10, 1) == 5
+    assert nmeet(f10, g10) == 2
+    assert ev(f10, 1) == 1
+    unscaled = expand(-(x + 1) * (x - 3))
+    assert ev(unscaled, 1) == 4
+    add(
+        kind="text_dense",
+        title="Dense clearance brief",
+        context=(
+            "A dock crane's clearance is modelled by a parabola $g$ that opens downwards, "
+            "turns at $(1,5)$, and meets the deck $y=0$ at $x=-1$ and $x=3$. "
+            "A linear sensor path $f$ passes through $(0,2)$ with slope $-1$"
+        ),
+        statements=[
+            r"The rule for $g$ is $g(x)=-(x+1)(x-3)$.",
+            r"The unscaled product $-(x+1)(x-3)$ already has vertex height $5$.",
+            r"The sensor path is $f(x)=-x+3$.",
+            "The sensor path and the clearance curve meet at exactly one real point.",
+            "At $x=1$ the sensor lies below the clearance peak.",
+        ],
+        key=[False, False, False, False, True],
+        expls=[
+            pack("A", False, [
+                "Opening downwards with those roots means $g(x)=k(x+1)(x-3)$ for some $k<0$. The unscaled choice $k=-1$ must still hit height $5$ at $x=1$.",
+                D(r"-(1+1)(1-3)=-(2)(-2)=4"),
+                D(r"4\neq 5"),
+                close(False, "The unscaled factorisation misses the named vertex height"),
+            ]),
+            pack("B", False, [
+                "The same evaluation as in A is the vertex height of the unscaled product.",
+                D(r"-(x+1)(x-3)\big|_{x=1}=4"),
+                D(r"4\neq 5"),
+                close(False, "The unscaled vertex height is $4$, not $5$"),
+            ]),
+            pack("C", False, [
+                "Slope $-1$ through $(0,2)$ is point-slope with intercept $2$.",
+                D(r"f(x)=-x+2"),
+                D(r"-x+2\neq -x+3"),
+                close(False, "The intercept is $2$, not $3$"),
+            ]),
+            pack("D", False, [
+                "Scale so that $g(1)=5$: $k(2)(-2)=5$ forces $k=-\\frac{5}{4}$. Then form $g-f$.",
+                D(r"g(x)=-\frac{5}{4}(x+1)(x-3)=-\frac{5}{4}x^{2}+\frac{5}{2}x+\frac{15}{4}"),
+                D(r"g(x)-f(x)=-\frac{5}{4}x^{2}+\frac{7}{2}x+\frac{7}{4}"),
+                D(r"\Delta=\left(\frac{7}{2}\right)^{2}-4\left(-\frac{5}{4}\right)\left(\frac{7}{4}\right)=\frac{21}{1}>0"),
+                close(False, "A positive discriminant gives two meetings, not one"),
+            ]),
+            pack("E", True, [
+                "At the peak abscissa compare the sensor height with the named vertex height $5$.",
+                D(r"f(1)=-1+2=1"),
+                D(r"1<5"),
+                close(True, "The sensor lies below the clearance peak"),
+            ]),
+        ],
+        overview=(
+            "Vertex $(1,5)$ with roots $-1$ and $3$ forces the stretch $-\\frac{5}{4}$.\n\n"
+            + D(r"g(x)=-\frac{5}{4}(x+1)(x-3)\qquad f(x)=-x+2")
+            + "\n\nThe difference has positive discriminant, so two meetings."
+        ),
+    )
+
+    # ======================================================================
+    # 11. GRAPH  (3 true)  g=(x-1)(x-3), dashed y=-1  (tangent at vertex)
+    # ======================================================================
+    g11 = expand((x - 1) * (x - 3))
+    f11 = -1 + 0 * x
+    assert vertex_of(g11) == (2, -1)
+    assert nmeet(f11, g11) == 1
+    assert disc_of(g11) > 0 and lead(g11) > 0
+    add(
+        kind="graph",
+        title="Trough touching a level line",
+        context=(
+            "A **solid brown parabola** $g$ and a **dashed green horizontal line** appear on the axes. "
+            "Formulas are withheld. Decide each claim from the figure alone"
+        ),
+        statements=[
+            "The solid curve has a lowest point (not a highest point).",
+            "The solid curve crosses the horizontal axis twice.",
+            "The dashed line lies entirely above the solid curve.",
+            "The solid curve and the dashed line meet at exactly two points.",
+            "The solid curve opens upwards.",
+        ],
+        key=[True, True, False, False, True],
+        expls=[
+            pack("A", True, [
+                "Arms that rise on both sides of a marked trough mean the solid curve opens upwards, so the marked turn is a minimum.",
+                "The figure shows exactly that trough between the two axis crossings.",
+                D(r"a=1"),
+                D(r"a>0"),
+                close(True, "The turning point is a lowest point"),
+            ]),
+            pack("B", True, [
+                "Count where brown meets the horizontal axis.",
+                "Two distinct crossings are marked, both on the positive side of the origin.",
+                D(r"(x-1)(x-3)=0\qquad x=1,\; x=3"),
+                close(True, "Two crossings appear"),
+            ]),
+            pack("C", False, [
+                "Outside the roots an upward-opening parabola climbs without bound, so it eventually rises above any fixed horizontal line.",
+                "On the figure the arms already sit above the dashed line near the window edges.",
+                D(r"g(0)=3>-1\qquad g(4)=3>-1"),
+                close(False, "The dashed line is not entirely above the solid curve"),
+            ]),
+            pack("D", False, [
+                "The dashed level cuts the trough at its lowest point and nowhere else: a tangency, not a pair of crossings.",
+                D(r"g(x)+1=x^{2}-4x+4=(x-2)^{2}"),
+                D(r"(x-2)^{2}=0\qquad x=2"),
+                close(False, "There is exactly one shared point, not two"),
+            ]),
+            pack("E", True, [
+                "A trough between rising arms is the signature of an upward-opening parabola.",
+                "That is the shape of the solid curve on the figure.",
+                D(r"a=1"),
+                D(r"a>0"),
+                close(True, "The solid curve opens upwards"),
+            ]),
+        ],
+        overview=D(r"g(x)=x^{2}-4x+3\qquad y=-1")
+        + "\n\nVertex $(2,-1)$; the level is tangent at the trough; roots $1$ and $3$.",
+        figure_uri=figure(
+            g11, f=f11, xmin=-1, xmax=5, ymin=-4, ymax=8,
+            title="Solid brown = g; dashed green = horizontal line",
+            flabel="level",
+        ),
+    )
+
+    # ======================================================================
+    # 12. TABLE  (4 true)  y=3x-1 on 0..4 → -1,2,5,8,11
+    # ======================================================================
+    xs12 = [0, 1, 2, 3, 4]
+    ys12 = [3 * n - 1 for n in xs12]
+    assert ys12 == [-1, 2, 5, 8, 11]
+    assert first_diffs(ys12) == [3, 3, 3, 3]
+    assert second_diffs(ys12) == [0, 0, 0]
+    add(
+        kind="table",
+        title="Evenly spaced line samples",
+        context=(
+            "The table lists values of an unknown rule $y(x)$ at five equally spaced inputs. "
+            "No formula is printed"
+        ),
+        statements=[
+            "The first differences of the $y$-row are constant.",
+            "The constant first difference equals $2$.",
+            "The rule is consistent with a line of slope $3$.",
+            r"Extending the pattern one step gives $y(5)=14$.",
+            "The second differences of the $y$-row all vanish.",
+        ],
+        key=[True, False, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Form neighbouring gaps of the $y$-row.",
+                D(r"2-(-1)=3\qquad 5-2=3\qquad 8-5=3\qquad 11-8=3"),
+                D(r"(3,3,3,3)"),
+                close(True, "Every gap equals $3$, so the first differences are constant"),
+            ]),
+            pack("B", False, [
+                "The constant gap just computed is $3$, not $2$.",
+                D(r"\Delta^{(1)}=3"),
+                D(r"3\neq 2"),
+                close(False, "The constant first difference is $3$"),
+            ]),
+            pack("C", True, [
+                "For unit spacing, a constant first difference is exactly the slope of the line.",
+                D(r"m=3"),
+                D(r"3"),
+                close(True, "Slope $3$ matches the claim"),
+            ]),
+            pack("D", True, [
+                "One more step of size $3$ continues the arithmetic sequence.",
+                D(r"y(5)=y(4)+3=11+3=14"),
+                close(True, "The extrapolated value is $14$"),
+            ]),
+            pack("E", True, [
+                "Second differences of a line with constant first differences are all zero.",
+                D(r"3-3=0\qquad 3-3=0\qquad 3-3=0"),
+                D(r"(0,0,0)"),
+                close(True, "The second differences all vanish"),
+            ]),
+        ],
+        overview=D(r"y=3x-1") + "\n\nConstant first difference $3$; the next term is $14$.",
+        table=md_table(xs12, ys12, "y"),
+    )
+
+    # ======================================================================
+    # 13. APPLIED  (1 true)  ball toss h=-t^2+6t  (figure)
+    # ======================================================================
+    h13 = expand(-x * (x - 6))
+    assert vertex_of(h13) == (3, 9)
+    assert ev(h13, 0) == 0 and ev(h13, 6) == 0
+    assert ev(h13, 1) == ev(h13, 5) == 5
+    add(
+        kind="applied",
+        title="Ball toss — height against time",
+        context=(
+            "A ball is tossed straight up. The figure shows height $h$ (metres) against time $t$ "
+            "(seconds) as a **solid brown** curve; the horizontal axis is ground level. "
+            "No formula is printed"
+        ),
+        statements=[
+            "The ball is at ground level at exactly two times visible on the figure.",
+            "The greatest height occurs at $t=2$.",
+            "At $t=1$ the height is greater than at $t=5$.",
+            "After the peak, height keeps rising.",
+            "The greatest height on the figure is $8$ metres.",
+        ],
+        key=[True, False, False, False, False],
+        expls=[
+            pack("A", True, [
+                "Ground meetings are brown crossings of the horizontal axis.",
+                "Two crossings appear, near the origin and far to the right.",
+                D(r"h(t)=-t^{2}+6t=t(6-t)=0"),
+                D(r"t=0,\; t=6"),
+                close(True, "Exactly two ground times are visible"),
+            ]),
+            pack("B", False, [
+                "The peak is the marked turning point. Its abscissa on the time axis is $t=3$, midway between the two ground crossings.",
+                D(r"t=-\frac{6}{2(-1)}=3"),
+                D(r"3\neq 2"),
+                close(False, "The greatest height occurs at $t=3$, not at $t=2$"),
+            ]),
+            pack("C", False, [
+                "The curve is symmetric about $t=3$, so heights equally far from the peak agree.",
+                D(r"h(1)=5\qquad h(5)=5"),
+                close(False, "The heights are equal, not strictly greater"),
+            ]),
+            pack("D", False, [
+                "Past the peak the solid curve slopes down toward the second ground crossing.",
+                D(r"h(3)=9"),
+                D(r"h(4)=8"),
+                D(r"8<9"),
+                close(False, "Height falls after the peak"),
+            ]),
+            pack("E", False, [
+                "Read the peak height on the vertical scale.",
+                D(r"h(3)=-9+18=9"),
+                D(r"9\neq 8"),
+                close(False, "The greatest height is $9$ metres, not $8$"),
+            ]),
+        ],
+        overview=D(r"h(t)=-t^{2}+6t") + "\n\nPeak $(3,9)$; ground times $t=0$ and $t=6$.",
+        figure_uri=figure(
+            h13, xmin=-0.5, xmax=6.5, ymin=-2, ymax=12,
+            title="Solid brown = height against time (ground = horizontal axis)",
+            xlabel="t",
+            ylabel="h",
+        ),
+    )
+
+    # ======================================================================
+    # 14. SYMBOLIC  (2 true)  g=x^2+6x+5
+    # ======================================================================
+    g14 = expand(x**2 + 6 * x + 5)
+    assert expand((x + 3)**2 - 4) == g14
+    assert vertex_of(g14) == (-3, -4)
+    assert disc_of(g14) == 16
+    add(
+        kind="symbolic",
+        title="Completing the square with small coeffs",
+        context=r"Let $g(x)=x^{2}+6x+5$. Decide each claim",
+        statements=[
+            r"In vertex form, $g(x)=(x+3)^{2}-4$.",
+            r"The vertex is $(-3,-4)$.",
+            "Both roots are positive.",
+            "The discriminant equals $15$.",
+            "Shifting the graph up by $5$ units produces a perfect square with a double root.",
+        ],
+        key=[True, True, False, False, False],
+        expls=[
+            pack("A", True, [
+                "Complete the square by taking half the middle coefficient.",
+                D(r"x^{2}+6x+5=(x^{2}+6x+9)-9+5"),
+                D(r"(x+3)^{2}-4"),
+                close(True, "The vertex form matches"),
+            ]),
+            pack("B", True, [
+                "From the vertex form the turn is at $x=-3$ with height $-4$.",
+                D(r"x=-3\qquad g(-3)=-4"),
+                close(True, "The vertex is $(-3,-4)$"),
+            ]),
+            pack("C", False, [
+                "Factor the completed square, or read the constant and middle coefficients via Vieta.",
+                D(r"g(x)=(x+1)(x+5)"),
+                D(r"x=-1,\; x=-5"),
+                close(False, "Both roots are negative, not positive"),
+            ]),
+            pack("D", False, [
+                "The discriminant is $b^{2}-4ac$.",
+                D(r"\Delta=6^{2}-4\cdot 1\cdot 5=36-20=16"),
+                D(r"16\neq 15"),
+                close(False, "The discriminant is $16$, not $15$"),
+            ]),
+            pack("E", False, [
+                "A vertical shift of $4$, not $5$, cancels the constant in vertex form.",
+                D(r"g(x)+4=(x+3)^{2}"),
+                D(r"g(x)+5=(x+3)^{2}+1"),
+                close(False, "Shifting up by $5$ leaves a leftover $+1$, not a perfect square"),
+            ]),
+        ],
+        overview=D(r"g(x)=(x+3)^{2}-4") + "\n\nRoots $-1$ and $-5$; $\\Delta=16$.",
+    )
+
+    # ======================================================================
+    # 15. PARAMETRIC  (5 true)  g_s = x^2-4x+s
+    # ======================================================================
+    add(
+        kind="parametric",
+        title="Vertical shift of a parabola",
+        context=(
+            r"Let $g_s(x)=x^{2}-4x+s$ for a real shift $s$, and let $f(x)=0$ be the horizontal axis. "
+            "Track how $s$ changes the meetings with the axis"
+        ),
+        statements=[
+            r"For $s=3$ the graph of $g_s$ meets the axis twice.",
+            r"For $s=4$ the graph of $g_s$ touches the axis exactly once.",
+            r"For $s=5$ the graph of $g_s$ misses the axis.",
+            r"The axis of symmetry of $g_s$ is $x=2$ for every $s$.",
+            r"The vertex height of $g_s$ equals $s-4$.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Meetings with the axis are the roots of $g_s$. Their count follows the discriminant.",
+                D(r"\Delta=16-4s"),
+                D(r"s=3\Rightarrow\Delta=4>0"),
+                close(True, "A positive discriminant gives two real roots"),
+            ]),
+            pack("B", True, [
+                "Tangency with the axis is the boundary $\\Delta=0$.",
+                D(r"s=4\Rightarrow\Delta=0"),
+                D(r"g_4(x)=(x-2)^{2}"),
+                close(True, "A repeated root means a single touch"),
+            ]),
+            pack("C", True, [
+                "A negative discriminant means no real root.",
+                D(r"s=5\Rightarrow\Delta=-4<0"),
+                close(True, "The graph misses the axis"),
+            ]),
+            pack("D", True, [
+                "The axis $-b/(2a)$ uses only the $x^{2}$ and $x$ coefficients, which do not involve $s$.",
+                D(r"x=-\frac{-4}{2\cdot 1}=2"),
+                close(True, "The axis stays $x=2$ for every $s$"),
+            ]),
+            pack("E", True, [
+                "Evaluate on that fixed axis.",
+                D(r"g_s(2)=4-8+s=s-4"),
+                close(True, "The vertex height is $s-4$"),
+            ]),
+        ],
+        overview=D(r"g_s(x)=x^{2}-4x+s\qquad\Delta=16-4s")
+        + "\n\nAxis $x=2$ for every $s$; vertex height $s-4$.",
+    )
+    assert axis_of(x**2 - 4 * x + 3) == 2
+    assert disc_of(x**2 - 4 * x + 3) == 4
+    assert disc_of(x**2 - 4 * x + 4) == 0
+    assert disc_of(x**2 - 4 * x + 5) == -4
+    assert simplify((x**2 - 4 * x + Symbol("s")).subs(x, 2) - (Symbol("s") - 4)) == 0
+
+    # ======================================================================
+    # 16. REBUILD  (4 true)  line through (0,4) and (2,0)
+    # ======================================================================
+    f16 = expand(-2 * x + 4)
+    assert ev(f16, 0) == 4 and ev(f16, 2) == 0 and ev(f16, 1) == 2
+    add(
+        kind="rebuild",
+        title="Rebuild a line from two points",
+        context="A line passes through $(0,4)$ and $(2,0)$. Rebuild it and test the claims",
+        statements=[
+            "The slope equals $-2$.",
+            r"The rule is $f(x)=-2x+4$.",
+            "The line meets the horizontal axis at $x=2$.",
+            r"At $x=1$ the height equals $1$.",
+            "The line falls from left to right.",
+        ],
+        key=[True, True, True, False, True],
+        expls=[
+            pack("A", True, [
+                "Slope is rise over run between the two given points.",
+                D(r"m=\frac{0-4}{2-0}=\frac{-4}{2}=-2"),
+                close(True, "The slope is $-2$"),
+            ]),
+            pack("B", True, [
+                "Point-slope with intercept $4$ and slope $-2$ is already slope-intercept form.",
+                D(r"f(x)=-2x+4"),
+                D(r"f(0)=4"),
+                close(True, "The rebuilt rule matches"),
+            ]),
+            pack("C", True, [
+                "The given point $(2,0)$ is exactly a meeting with the horizontal axis.",
+                D(r"f(2)=-4+4"),
+                D(r"f(2)=0"),
+                close(True, "The horizontal-axis meeting is at $x=2$"),
+            ]),
+            pack("D", False, [
+                "Evaluate the rebuilt rule at the midpoint of the two given abscissas.",
+                D(r"f(1)=-2+4=2"),
+                D(r"2\neq 1"),
+                close(False, "The height is $2$, not $1$"),
+            ]),
+            pack("E", True, [
+                "A negative slope means the line falls from left to right.",
+                D(r"m=-2"),
+                D(r"m<0"),
+                close(True, "The line falls from left to right"),
+            ]),
+        ],
+        overview=D(r"f(x)=-2x+4") + "\n\nSlope $-2$; intercepts $(0,4)$ and $(2,0)$.",
+    )
+
+    # ======================================================================
+    # 17. NESTED  (3 true)  f=2x-1, g=x^2-4
+    # ======================================================================
+    f17 = 2 * x - 1
+    g17 = x**2 - 4
+    fg17 = expand(f17.subs(x, g17))
+    gf17 = expand(g17.subs(x, f17))
+    assert fg17 == expand(2 * x**2 - 9)
+    assert gf17 == expand(4 * x**2 - 4 * x - 3)
+    assert ev(fg17, 0) == -9 and ev(gf17, 0) == -3
+    add(
+        kind="nested",
+        title="Line outside a shifted parabola",
+        context=r"Let $f(x)=2x-1$ and $g(x)=x^{2}-4$. Compare $f(g(x))$ with $g(f(x))$",
+        statements=[
+            r"The nested rule $f(g(x))$ equals $2x^{2}-9$.",
+            r"The nested rule $g(f(x))$ equals $4x^{2}-4x-3$.",
+            r"Both nested rules have the same highest power of $x$.",
+            r"The nested rule $f(g(x))$ has a linear term in $x$.",
+            r"At $x=0$ one has $f(g(0))=g(f(0))$.",
+        ],
+        key=[True, True, True, False, False],
+        expls=[
+            pack("A", True, [
+                "Feed the parabola into the line.",
+                D(r"f(g(x))=2(x^{2}-4)-1"),
+                D(r"2x^{2}-8-1=2x^{2}-9"),
+                close(True, "The expansion matches"),
+            ]),
+            pack("B", True, [
+                "The other order squares the line first.",
+                D(r"g(f(x))=(2x-1)^{2}-4"),
+                D(r"4x^{2}-4x+1-4=4x^{2}-4x-3"),
+                close(True, "The expansion matches"),
+            ]),
+            pack("C", True, [
+                "Both expansions are quadratic: the highest power in each is $x^{2}$.",
+                D(r"2x^{2}-9\qquad 4x^{2}-4x-3"),
+                close(True, "The highest powers agree"),
+            ]),
+            pack("D", False, [
+                "A linear term would be a multiple of $x^{1}$.",
+                D(r"f(g(x))=2x^{2}-9"),
+                D(r"2x^{2}-9"),
+                close(False, "The rule $2x^{2}-9$ has no $x$ term"),
+            ]),
+            pack("E", False, [
+                "Evaluate each nested rule at the origin.",
+                D(r"f(g(0))=f(-4)=-9"),
+                D(r"g(f(0))=g(-1)=-3"),
+                D(r"-9\neq -3"),
+                close(False, "The two values differ"),
+            ]),
+        ],
+        overview="Order of nesting changes coefficients even when the highest power matches.\n\n"
+        + D(r"f(g(x))=2x^{2}-9\qquad g(f(x))=4x^{2}-4x-3"),
+    )
+
+    # ======================================================================
+    # 18. FACTORED  (1 true)  g=(x+3)(x-3)=x^2-9
+    # ======================================================================
+    g18 = expand((x + 3) * (x - 3))
+    assert g18 == expand(x**2 - 9)
+    assert vertex_of(g18) == (0, -9)
+    add(
+        kind="factored",
+        title="Opposite roots",
+        context=r"Let $g(x)=(x+3)(x-3)$. Decide each claim",
+        statements=[
+            "The axis of symmetry is the vertical coordinate axis.",
+            r"The function $g$ is odd: $g(-x)=-g(x)$ for every $x$.",
+            "Both roots are positive.",
+            r"The vertex is $(0,9)$.",
+            r"For every $x$ one has $g(x)\ge 0$.",
+        ],
+        key=[True, False, False, False, False],
+        expls=[
+            pack("A", True, [
+                "Roots $\\pm 3$ are symmetric about the origin, so the axis is the vertical coordinate axis.",
+                D(r"x=\frac{-3+3}{2}=0"),
+                close(True, "The axis is $x=0$"),
+            ]),
+            pack("B", False, [
+                "Oddness requires $g(-x)=-g(x)$. Expand first.",
+                D(r"g(x)=x^{2}-9"),
+                D(r"g(-x)=x^{2}-9=g(x)"),
+                D(r"g(x)\neq -g(x)"),
+                close(False, "$g$ is even, not odd"),
+            ]),
+            pack("C", False, [
+                "Read the roots from the factors.",
+                D(r"x=-3,\; x=3"),
+                close(False, "One root is negative, so not both are positive"),
+            ]),
+            pack("D", False, [
+                "The turn on the axis $x=0$ has height $g(0)$.",
+                D(r"g(0)=-9"),
+                D(r"(0,-9)\neq(0,9)"),
+                close(False, "The vertex is $(0,-9)$, not $(0,9)$"),
+            ]),
+            pack("E", False, [
+                "An upward-opening parabola is bounded below by its vertex height, which here is negative.",
+                D(r"g(0)=-9"),
+                D(r"-9<0"),
+                close(False, "$g$ takes negative values, so it is not always at least $0$"),
+            ]),
+        ],
+        overview=D(r"g(x)=x^{2}-9") + "\n\nEven; vertex $(0,-9)$; roots $\\pm 3$.",
+    )
+
+    # ======================================================================
+    # 19. HYBRID  (2 true)  figure peak parabola + table of a line
+    # ======================================================================
+    g19 = expand(-(x - 1) * (x - 5))
+    f19 = 1 + 0 * x
+    assert vertex_of(g19) == (3, 4)
+    assert nmeet(f19, g19) == 2
+    assert lead(g19) < 0
+    xs19 = [0, 1, 2, 3]
+    ys19 = [4, 1, -2, -5]  # -3x+4
+    assert first_diffs(ys19) == [-3, -3, -3]
+    add(
+        kind="hybrid",
+        title="Peak over a level, plus a line table",
+        context=(
+            "The figure shows a solid brown parabola and a dashed green horizontal line; "
+            "no formulas are printed on the sketch. Separately, the table lists an unknown "
+            "line at four inputs. Use the figure for the curve claims and the table for the line claims"
+        ),
+        statements=[
+            "The solid curve has a highest point (not a trough).",
+            "The solid curve crosses the horizontal axis twice.",
+            "The dashed line lies above the peak of the solid curve.",
+            "The tabled rule has constant first difference $3$.",
+            "The tabled rule is consistent with slope $3$.",
+        ],
+        key=[True, True, False, False, False],
+        expls=[
+            pack("A", True, [
+                "A marked peak with arms falling on both sides means a maximum.",
+                D(r"a=-1"),
+                D(r"a<0"),
+                close(True, "The solid curve has a highest point"),
+            ]),
+            pack("B", True, [
+                "Two axis crossings of brown are visible, both on the positive side of the origin.",
+                D(r"(x-1)(x-5)=0"),
+                D(r"x=1"),
+                D(r"x=5"),
+                close(True, "Two crossings appear"),
+            ]),
+            pack("C", False, [
+                "The peak sits above the dashed level on the figure. Read both heights at the trough's abscissa.",
+                D(r"g(3)=4"),
+                D(r"4>1"),
+                close(False, "The dashed line is not above the peak"),
+            ]),
+            pack("D", False, [
+                "Form neighbouring gaps of the tabled row; the table does not print them.",
+                D(r"1-4=-3"),
+                D(r"-2-1=-3"),
+                D(r"-5-(-2)=-3"),
+                D(r"(-3,-3,-3)"),
+                D(r"-3\neq 3"),
+                close(False, "The constant first difference is $-3$, not $3$"),
+            ]),
+            pack("E", False, [
+                "For unit spacing the slope equals that constant first difference.",
+                D(r"m=-3"),
+                D(r"-3\neq 3"),
+                close(False, "The table is consistent with slope $-3$, not $3$"),
+            ]),
+        ],
+        overview=D(r"g(x)=-(x-1)(x-5)\qquad y=1\qquad \ell(x)=-3x+4")
+        + "\n\nPeak $(3,4)$; the level cuts the hill twice; the table has step $-3$.",
+        figure_uri=figure(
+            g19, f=f19, xmin=0, xmax=6, ymin=-6, ymax=6,
+            title="Solid brown = g; dashed green = level line",
+            flabel="level",
+        ),
+        table=md_table(xs19, ys19, r"\ell"),
+    )
+
+    # ======================================================================
+    # 20. TEXT_DENSE  (5 true)  R=p(16-p), C=2p+20
+    # ======================================================================
+    p = x
+    R20 = expand(p * (16 - p))
+    C20 = expand(2 * p + 20)
+    Pi20 = expand(R20 - C20)
+    assert axis_of(R20) == 8
+    assert axis_of(Pi20) == 7
+    assert ev(R20, 0) == 0 and ev(C20, 0) == 20
+    assert ev(R20, 10) == 60 and ev(C20, 10) == 40
+    add(
+        kind="text_dense",
+        title="Market brief in prose",
+        context=(
+            r"Weekend ticket price $p$ euros yields revenue $R(p)=p(16-p)$. "
+            r"Staff cost for the same price experiment is logged as the line $C(p)=2p+20$"
+        ),
+        statements=[
+            "Revenue is a downward-opening parabola in $p$.",
+            r"Revenue is largest at $p=8$.",
+            r"Profit $R-C$ is largest at $p=7$.",
+            r"At $p=0$ revenue is less than cost.",
+            r"At $p=10$ revenue exceeds cost.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Expand the revenue rule and read the leading coefficient.",
+                D(r"R(p)=16p-p^{2}"),
+                D(r"a=-1"),
+                D(r"a<0"),
+                close(True, "Revenue opens downwards"),
+            ]),
+            pack("B", True, [
+                "The axis of a downward-opening parabola is the unique maximiser.",
+                D(r"p=-\frac{16}{2(-1)}=8"),
+                close(True, "Revenue is largest at $p=8$"),
+            ]),
+            pack("C", True, [
+                "Profit is a different parabola; its own axis is the profit maximiser.",
+                D(r"\Pi(p)=R(p)-C(p)=-p^{2}+14p-20"),
+                D(r"p=-\frac{14}{2(-1)}=7"),
+                close(True, "Profit is largest at $p=7$"),
+            ]),
+            pack("D", True, [
+                "Evaluate both rules at the origin.",
+                D(r"R(0)=0\qquad C(0)=20"),
+                D(r"0<20"),
+                close(True, "Revenue is less than cost at $p=0$"),
+            ]),
+            pack("E", True, [
+                "Evaluate both rules at the named price.",
+                D(r"R(10)=10\cdot 6=60"),
+                D(r"C(10)=20+20=40"),
+                D(r"60>40"),
+                close(True, "Revenue exceeds cost at $p=10$"),
+            ]),
+        ],
+        overview=D(r"R(p)=p(16-p)\qquad C(p)=2p+20\qquad\Pi(p)=-p^{2}+14p-20")
+        + "\n\nRevenue peaks at $p=8$; profit peaks at $p=7$.",
+    )
+
+    # ======================================================================
+    # 21. GRAPH  (4 true)  g=x^2-4, dashed y=-2
+    # ======================================================================
+    g21 = expand(x**2 - 4)
+    f21 = -2 + 0 * x
+    assert vertex_of(g21) == (0, -4)
+    assert nmeet(f21, g21) == 2
+    assert ev(g21, -2) == 0 and ev(g21, 2) == 0
+    assert ev(g21, 0) < ev(f21, 0)
+    add(
+        kind="graph",
+        title="Parabola against a submerged level",
+        context=(
+            "The figure shows a **solid brown parabola** and a **dashed green horizontal line**. "
+            "No closed forms are printed. Work from ticks and marked turns only"
+        ),
+        statements=[
+            "The solid curve crosses the horizontal axis once on each side of the origin.",
+            "The dashed line sits at height $0$.",
+            "The solid curve and the dashed line share exactly two points.",
+            "The turning point of the solid curve lies below the dashed line.",
+            "The solid curve opens upwards.",
+        ],
+        key=[True, False, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Brown meets the horizontal axis once left of zero and once right of zero.",
+                D(r"x^{2}-4=0\qquad x=\pm 2"),
+                close(True, "One crossing on each side of the origin is visible"),
+            ]),
+            pack("B", False, [
+                "The dashed line is the green horizontal trace. Reading its height on the vertical scale places it at $-2$, not at $0$.",
+                "Height $0$ would be the axis itself; the dashed line is strictly below it.",
+                D(r"y=-2"),
+                D(r"-2\neq 0"),
+                close(False, "The dashed line is not at height $0$"),
+            ]),
+            pack("C", True, [
+                "Brown dips to its trough and climbs again; the dashed level cuts both sides of the trough.",
+                D(r"x^{2}-4=-2\qquad x^{2}=2"),
+                D(r"x=\pm\sqrt{2}"),
+                close(True, "Exactly two shared points are visible"),
+            ]),
+            pack("D", True, [
+                "The trough of the solid curve sits below the dashed line: the lowest brown mark is lower than the green level.",
+                D(r"g(0)=-4"),
+                D(r"-4<-2"),
+                close(True, "The turning point lies below the dashed line"),
+            ]),
+            pack("E", True, [
+                "A trough between rising arms is the signature of an upward-opening parabola.",
+                D(r"a=1"),
+                D(r"a>0"),
+                close(True, "The solid curve opens upwards"),
+            ]),
+        ],
+        overview=D(r"g(x)=x^{2}-4\qquad y=-2")
+        + "\n\nVertex $(0,-4)$; roots $\\pm 2$; the level $y=-2$ cuts the trough twice.",
+        figure_uri=figure(
+            g21, f=f21, xmin=-4, xmax=4, ymin=-6, ymax=12,
+            title="Solid brown = g; dashed green = horizontal line",
+            flabel="level",
+        ),
+    )
+
+    # ======================================================================
+    # 22. TABLE  (1 true)  h=x^2-2x on 0..5 → 0,-1,0,3,8,15
+    # ======================================================================
+    xs22 = [0, 1, 2, 3, 4, 5]
+    ys22 = [n * n - 2 * n for n in xs22]
+    assert ys22 == [0, -1, 0, 3, 8, 15]
+    assert second_diffs(ys22) == [2, 2, 2, 2]
+    h6 = 6 * 6 - 2 * 6
+    assert h6 == 24
+    add(
+        kind="table",
+        title="Quadratic growth in a table",
+        context=(
+            r"An unknown function $h$ is sampled at $x=0,1,2,3,4,5$ in the table. "
+            "No algebraic expression is given"
+        ),
+        statements=[
+            "The first differences are constant.",
+            "The second differences are constant and equal to $4$.",
+            "A linear model can fit every listed point.",
+            r"Extending the second-difference pattern gives $h(6)=20$.",
+            "The second differences of the listed heights are constant.",
+        ],
+        key=[False, False, False, False, True],
+        expls=[
+            pack("A", False, [
+                "Form neighbouring gaps of the $h$-row.",
+                D(r"(-1)-0=-1\qquad 0-(-1)=1\qquad 3-0=3"),
+                D(r"(-1,1,3,5,7)"),
+                close(False, "These gaps increase, so they are not constant"),
+            ]),
+            pack("B", False, [
+                "Second differences are the gaps of that first-difference row.",
+                D(r"1-(-1)=2\qquad 3-1=2\qquad 5-3=2\qquad 7-5=2"),
+                D(r"(2,2,2,2)"),
+                D(r"2\neq 4"),
+                close(False, "The constant second difference is $2$, not $4$"),
+            ]),
+            pack("C", False, [
+                "A line would need constant first differences. Here the first differences move, so no single line fits all six points.",
+                D(r"2a=2\Rightarrow a=1\neq 0"),
+                close(False, "A linear model fails"),
+            ]),
+            pack("D", False, [
+                "One more constant second difference $2$ lifts the last first difference from $7$ to $9$.",
+                D(r"h(6)=h(5)+9=15+9=24"),
+                D(r"24\neq 20"),
+                close(False, "The extrapolated value is $24$, not $20$"),
+            ]),
+            pack("E", True, [
+                "The second-difference row computed above is $(2,2,2,2)$.",
+                D(r"(2,2,2,2)"),
+                D(r"2a=2"),
+                close(True, "The second differences are constant"),
+            ]),
+        ],
+        overview=D(r"h(x)=x^{2}-2x") + "\n\nSecond differences constantly $2$; $h(6)=24$.",
+        table=md_table(xs22, ys22, "h"),
+    )
+
+    # ======================================================================
+    # 23. APPLIED  (5 true)  C=q^2-4q+9 on 0..5 → 9,6,5,6,9,14
+    # ======================================================================
+    xs23 = [0, 1, 2, 3, 4, 5]
+    ys23 = [q * q - 4 * q + 9 for q in xs23]
+    assert ys23 == [9, 6, 5, 6, 9, 14]
+    assert second_diffs(ys23) == [2, 2, 2, 2]
+    assert ys23[5] - ys23[4] == 5
+    add(
+        kind="applied",
+        title="Workshop cost log",
+        context=(
+            "A workshop logs total cost $C$ (euros) against daily batch size $q$ in the table. "
+            "No cost formula is written in the logbook"
+        ),
+        statements=[
+            "Among the listed batches, cost is smallest at $q=2$.",
+            r"Cost at $q=0$ equals cost at $q=4$.",
+            r"Cost rises from $q=2$ to $q=3$.",
+            "The second differences of the cost row are constant.",
+            "Raising the batch from $4$ to $5$ increases cost by $5$ euros.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Compare the six cost entries.",
+                D(r"(9,6,5,6,9,14)"),
+                D(r"\min=5"),
+                close(True, "The unique listed minimum sits at $q=2$"),
+            ]),
+            pack("B", True, [
+                "Read the two columns $q=0$ and $q=4$.",
+                D(r"C(0)=9\qquad C(4)=9"),
+                close(True, "The two costs match"),
+            ]),
+            pack("C", True, [
+                "Compare the neighbouring entries at $q=2$ and $q=3$.",
+                D(r"C(2)=5"),
+                D(r"C(3)=6"),
+                D(r"6-5=1"),
+                close(True, "Cost rises from $q=2$ to $q=3$"),
+            ]),
+            pack("D", True, [
+                "Form first differences, then their gaps. The table does not print either row.",
+                D(r"(-3,-1,1,3,5)"),
+                D(r"(2,2,2,2)"),
+                close(True, "Second differences are constant"),
+            ]),
+            pack("E", True, [
+                "Subtract the neighbouring listed costs.",
+                D(r"C(5)-C(4)=14-9=5"),
+                close(True, "The increase is $5$ euros"),
+            ]),
+        ],
+        overview=D(r"C(q)=q^{2}-4q+9")
+        + "\n\nListed minimum $5$ at $q=2$; second differences constantly $2$.",
+        table=md_table(xs23, ys23, "C", xname="q"),
+    )
+
+    # ======================================================================
+    # 24. SYMBOLIC  (3 true)  f=4x-1, g=x^2+x-1
+    # ======================================================================
+    f24 = expand(4 * x - 1)
+    g24 = expand(x**2 + x - 1)
+    assert disc_of(g24 - f24) == 9
+    assert nmeet(f24, g24) == 2
+    assert axis_of(g24) == Rational(-1, 2)
+    assert ev(g24, 0) == ev(f24, 0) == -1
+    assert lead(g24 - f24) == 1
+    add(
+        kind="symbolic",
+        title="Signed gap and tangency test",
+        context=r"Let $f(x)=4x-1$ and $g(x)=x^{2}+x-1$. Decide each claim",
+        statements=[
+            r"The discriminant of $g-f$ is positive.",
+            "The graphs are tangent for this pair.",
+            rf"The axis of $g$ is $x={F(Rational(-1, 2))}$.",
+            r"At $x=0$ one has $g(0)=f(0)$.",
+            r"The leading coefficient of $g-f$ equals $2$.",
+        ],
+        key=[True, False, True, True, False],
+        expls=[
+            pack("A", True, [
+                "Form the difference and compute $b^{2}-4ac$.",
+                D(r"g-f=x^{2}+x-1-(4x-1)=x^{2}-3x"),
+                D(r"\Delta=(-3)^{2}-4\cdot 1\cdot 0=9>0"),
+                close(True, "The discriminant is positive"),
+            ]),
+            pack("B", False, [
+                "Tangency needs a repeated root, hence $\\Delta=0$.",
+                D(r"\Delta=9>0"),
+                D(r"x(x-3)=0\qquad x=0,\; x=3"),
+                close(False, "The graphs cross twice rather than touch"),
+            ]),
+            pack("C", True, [
+                "The axis uses only the coefficients of $g$.",
+                D(r"x=-\frac{1}{2\cdot 1}=-\frac{1}{2}"),
+                close(True, "The axis is $x=-\\frac{1}{2}$"),
+            ]),
+            pack("D", True, [
+                "Evaluate both rules at the origin.",
+                D(r"g(0)=-1\qquad f(0)=-1"),
+                close(True, "The values agree at the origin"),
+            ]),
+            pack("E", False, [
+                "The leading coefficient of $g-f=x^{2}-3x$ is the factor in front of $x^{2}$.",
+                D(r"a=1"),
+                D(r"1\neq 2"),
+                close(False, "The leading coefficient is $1$, not $2$"),
+            ]),
+        ],
+        overview=D(r"g(x)-f(x)=x^{2}-3x\qquad\Delta=9")
+        + "\n\nTwo meetings, at $x=0$ and $x=3$; axis of $g$ is $x=-\\frac{1}{2}$.",
+    )
+
+    # ======================================================================
+    # 25. PARAMETRIC  (2 true)  g_a = a x^2-4x+3, f=3
+    # ======================================================================
+    add(
+        kind="parametric",
+        title="Leading coefficient family",
+        context=(
+            r"Let $g_a(x)=a x^{2}-4x+3$ with $a\neq 0$, and let $f(x)=3$. "
+            "Watch how the leading coefficient changes meetings with the level $y=3$"
+        ),
+        statements=[
+            r"For every $a\neq 0$ the graphs meet at $x=0$.",
+            r"When $a=1$ there is a second meeting at $x=4$.",
+            r"When $a=2$ the second meeting is at $x=3$.",
+            r"The axis of $g_a$ is independent of $a$.",
+            r"If $a=-1$, then $g_a$ opens upwards.",
+        ],
+        key=[True, True, False, False, False],
+        expls=[
+            pack("A", True, [
+                "The shared intercept is always a meeting, because the constant term of $g_a$ equals the level.",
+                D(r"g_a(0)=3=f(0)"),
+                close(True, "The graphs meet at $x=0$ for every $a\\neq 0$"),
+            ]),
+            pack("B", True, [
+                "The remaining meetings solve $g_a(x)=3$.",
+                D(r"a=1:\quad x^{2}-4x=0"),
+                D(r"x(x-4)=0"),
+                close(True, "The second root is $x=4$"),
+            ]),
+            pack("C", False, [
+                "Repeat the same difference with $a=2$.",
+                D(r"2x^{2}-4x=0"),
+                D(r"2x(x-2)=0"),
+                D(r"x=2\neq 3"),
+                close(False, "The second meeting is at $x=2$, not $x=3$"),
+            ]),
+            pack("D", False, [
+                "The axis $-b/(2a)$ still involves the leading coefficient.",
+                D(r"x=\frac{4}{2a}=\frac{2}{a}"),
+                close(False, "The axis slides with $a$"),
+            ]),
+            pack("E", False, [
+                "The opening is the sign of the leading coefficient.",
+                D(r"a=-1"),
+                D(r"a<0"),
+                close(False, "The parabola opens downwards, not upwards"),
+            ]),
+        ],
+        overview=D(r"g_a(x)-3=ax^{2}-4x")
+        + "\n\nAlways a meeting at $x=0$; the other meeting is at $x=4/a$; axis $x=2/a$.",
+    )
+    assert expand((x**2 - 4 * x + 3) - 3) == expand(x * (x - 4))
+    assert expand((2 * x**2 - 4 * x + 3) - 3) == expand(2 * x * (x - 2))
+
+    # ======================================================================
+    # 26. REBUILD  (1 true)  monic roots -1 and 3
+    # ======================================================================
+    g26 = expand((x + 1) * (x - 3))
+    assert g26 == expand(x**2 - 2 * x - 3)
+    assert axis_of(g26) == 1
+    assert vertex_of(g26)[1] == -4
+    add(
+        kind="rebuild",
+        title="Rebuild from roots and leading coefficient",
+        context="A monic parabola has roots $x=-1$ and $x=3$. Rebuild $g$ and test the claims",
+        statements=[
+            r"The rule is $g(x)=(x+1)(x-3)$.",
+            r"Expanded, $g(x)=x^{2}-2x+3$.",
+            r"The axis is $x=0$.",
+            r"The vertex height equals $-3$.",
+            r"The constant term equals $3$.",
+        ],
+        key=[True, False, False, False, False],
+        expls=[
+            pack("A", True, [
+                "Monic with those roots means the product of the two linear factors, with leading coefficient $1$.",
+                D(r"g(x)=(x+1)(x-3)"),
+                D(r"g(x)=x^{2}-2x-3"),
+                close(True, "The rebuilt rule matches"),
+            ]),
+            pack("B", False, [
+                "Expand the product from A.",
+                D(r"(x+1)(x-3)=x^{2}-2x-3"),
+                D(r"x^{2}-2x-3\neq x^{2}-2x+3"),
+                close(False, "The constant term is $-3$, not $+3$"),
+            ]),
+            pack("C", False, [
+                "The axis is the midpoint of the roots.",
+                D(r"x=\frac{-1+3}{2}=1"),
+                D(r"1\neq 0"),
+                close(False, "The axis is $x=1$, not $x=0$"),
+            ]),
+            pack("D", False, [
+                "Evaluate on the true axis $x=1$.",
+                D(r"g(1)=1-2-3=-4"),
+                D(r"-4\neq -3"),
+                close(False, "The vertex height is $-4$, not $-3$"),
+            ]),
+            pack("E", False, [
+                "The constant term is $g(0)$.",
+                D(r"g(0)=(1)(-3)=-3"),
+                D(r"-3\neq 3"),
+                close(False, "The constant term is $-3$, not $3$"),
+            ]),
+        ],
+        overview=D(r"g(x)=x^{2}-2x-3") + "\n\nAxis $x=1$; vertex height $-4$.",
+    )
+
+    # ======================================================================
+    # 27. NESTED  (5 true)  f=x-2, g=x^2-1,  g(f^{-1})
+    # ======================================================================
+    nested27 = expand((x + 2)**2 - 1)
+    assert nested27 == expand(x**2 + 4 * x + 3)
+    assert ev(nested27, -1) == 0 and ev(nested27, -3) == 0
+    assert lead(nested27) > 0
+    add(
+        kind="nested",
+        title="Inverse line nested in a parabola",
+        context=(
+            r"Let $f(x)=x-2$ (so $f^{-1}(x)=x+2$) and $g(x)=x^{2}-1$. "
+            r"Study $g(f^{-1}(x))$"
+        ),
+        statements=[
+            r"The nested rule $g(f^{-1}(x))$ equals $(x+2)^{2}-1$.",
+            r"Expanded, that nested rule is $x^{2}+4x+3$.",
+            r"The nested rule vanishes at $x=-1$.",
+            r"The nested rule vanishes at $x=-3$.",
+            "The nested rule is a parabola that opens upwards.",
+        ],
+        key=[True, True, True, True, True],
+        expls=[
+            pack("A", True, [
+                "Substitute the inverse line into $g$.",
+                D(r"f^{-1}(x)=x+2"),
+                D(r"g(f^{-1}(x))=(x+2)^{2}-1"),
+                close(True, "The nested rule matches"),
+            ]),
+            pack("B", True, [
+                "Expand the square and combine constants.",
+                D(r"(x+2)^{2}-1=x^{2}+4x+4-1"),
+                D(r"x^{2}+4x+3"),
+                close(True, "The expansion matches"),
+            ]),
+            pack("C", True, [
+                "Substitute the named root candidate into the expansion.",
+                D(r"(-1)^{2}+4(-1)+3=1-4+3=0"),
+                close(True, "The nested rule vanishes at $x=-1$"),
+            ]),
+            pack("D", True, [
+                "The other factor of $x^{2}+4x+3=(x+1)(x+3)$ vanishes at $x=-3$.",
+                D(r"(-3)^{2}+4(-3)+3=9-12+3=0"),
+                close(True, "The nested rule vanishes at $x=-3$"),
+            ]),
+            pack("E", True, [
+                "After expansion the leading coefficient is $1$.",
+                D(r"a=1"),
+                D(r"a>0"),
+                close(True, "The nested parabola opens upwards"),
+            ]),
+        ],
+        overview="Substituting an inverse line shifts the roots of the parabola.\n\n"
+        + D(r"g(f^{-1}(x))=x^{2}+4x+3=(x+1)(x+3)"),
+    )
+
+    # ======================================================================
+    # 28. FACTORED  (2 true)  g=(x-2)^2
+    # ======================================================================
+    g28 = expand((x - 2)**2)
+    assert g28 == expand(x**2 - 4 * x + 4)
+    assert disc_of(g28) == 0
+    assert vertex_of(g28) == (2, 0)
+    add(
+        kind="factored",
+        title="Repeated root",
+        context=r"Let $g(x)=(x-2)^{2}$. Decide each claim",
+        statements=[
+            "The graph meets the horizontal axis at exactly one point.",
+            "The vertex lies on the horizontal axis.",
+            r"The axis of symmetry is $x=3$.",
+            r"Expanding gives $g(x)=x^{2}-4x+5$.",
+            r"The discriminant of $g$ equals $1$.",
+        ],
+        key=[True, True, False, False, False],
+        expls=[
+            pack("A", True, [
+                "A square $(x-2)^{2}$ has a double root at $x=2$, hence a single meeting with the axis.",
+                D(r"(x-2)^{2}=0\qquad x=2"),
+                close(True, "There is exactly one axis meeting"),
+            ]),
+            pack("B", True, [
+                "At the double root the height is $0$, so the vertex sits on the axis.",
+                D(r"g(2)=(2-2)^{2}"),
+                D(r"g(2)=0"),
+                close(True, "The vertex lies on the horizontal axis"),
+            ]),
+            pack("C", False, [
+                "The axis is the vertical line through the repeated root.",
+                D(r"x=2"),
+                D(r"2\neq 3"),
+                close(False, "The axis is $x=2$, not $x=3$"),
+            ]),
+            pack("D", False, [
+                "Expand the square.",
+                D(r"(x-2)^{2}=x^{2}-4x+4"),
+                D(r"4\neq 5"),
+                close(False, "The constant term is $4$, not $5$"),
+            ]),
+            pack("E", False, [
+                "The discriminant of a repeated-root quadratic is zero.",
+                D(r"\Delta=(-4)^{2}-4\cdot 1\cdot 4=16-16=0"),
+                D(r"0\neq 1"),
+                close(False, "The discriminant is $0$, not $1$"),
+            ]),
+        ],
+        overview="A double root is tangency with the axis.\n\n" + D(r"g(x)=x^{2}-4x+4\qquad\Delta=0"),
+    )
+
+    # ======================================================================
+    # 29. HYBRID  (3 true)  table q=(x-2)^2+1  (symmetric)
+    # ======================================================================
+    xs29 = [0, 1, 2, 3, 4]
+    ys29 = [(n - 2) ** 2 + 1 for n in xs29]
+    assert ys29 == [5, 2, 1, 2, 5]
+    assert second_diffs(ys29) == [2, 2, 2]
+    q5 = (5 - 2) ** 2 + 1
+    assert q5 == 10
+    add(
+        kind="hybrid",
+        title="Symmetric table plus a fit test",
+        context=(
+            "The table samples an unknown rule $q$. No formula is printed. "
+            "Two claims also offer candidate formulas to test against the table"
+        ),
+        statements=[
+            r"The table is symmetric about $x=2$.",
+            "The second differences are constant.",
+            r"The candidate $q(x)=(x-2)^{2}+1$ matches every listed point.",
+            r"The candidate $q(x)=|x-2|+1$ matches every listed point.",
+            r"Extending the second-difference pattern gives $q(5)=8$.",
+        ],
+        key=[True, True, True, False, False],
+        expls=[
+            pack("A", True, [
+                "Read pairs equally far from $x=2$.",
+                D(r"q(0)=q(4)=5\qquad q(1)=q(3)=2\qquad q(2)=1"),
+                close(True, "The table is symmetric about $x=2$"),
+            ]),
+            pack("B", True, [
+                "Form first differences, then their gaps.",
+                D(r"(-3,-1,1,3)"),
+                D(r"(2,2,2)"),
+                close(True, "Second differences are constant"),
+            ]),
+            pack("C", True, [
+                "Check each listed $x$ against the candidate.",
+                D(r"(0-2)^{2}+1=5\qquad (1-2)^{2}+1=2"),
+                D(r"(2-2)^{2}+1=1\qquad (3-2)^{2}+1=2\qquad (4-2)^{2}+1=5"),
+                close(True, "Every listed point matches"),
+            ]),
+            pack("D", False, [
+                "The absolute-value candidate already fails at the left endpoint.",
+                D(r"|0-2|+1=3"),
+                D(r"3\neq 5"),
+                close(False, "The candidate fails at $x=0$"),
+            ]),
+            pack("E", False, [
+                "One more constant second difference $2$ lifts the last first difference from $3$ to $5$.",
+                D(r"q(5)=q(4)+5=5+5=10"),
+                D(r"10\neq 8"),
+                close(False, "The extrapolated value is $10$, not $8$"),
+            ]),
+        ],
+        overview=D(r"q(x)=(x-2)^{2}+1")
+        + "\n\nSymmetric about $x=2$; second differences constantly $2$; $q(5)=10$.",
+        table=md_table(xs29, ys29, "q"),
+    )
+
+    # ======================================================================
+    # 30. TEXT_DENSE  (4 true)  arch g=4-(x-2)^2, trolley f=2-x/2
+    # ======================================================================
+    g30 = expand(4 - (x - 2)**2)
+    f30 = expand(2 - x / 2)
+    assert ev(g30, 0) == 0 and ev(g30, 4) == 0
+    assert ev(g30, 2) == 4 and ev(f30, 2) == 1
+    add(
+        kind="text_dense",
+        title="Bridge arch described in words",
+        context=(
+            r"A bridge arch is the part of $g(x)=4-(x-2)^{2}$ above the road $y=0$. "
+            r"A maintenance trolley follows the chord $f(x)=2-\frac12 x$ on the same interval"
+        ),
+        statements=[
+            r"The arch meets the road at $x=0$ and $x=4$.",
+            "The crown of the arch is at height $4$.",
+            rf"The trolley path has slope $-\dfrac{{1}}{{2}}$.",
+            r"At the crown abscissa the trolley is at height $1$.",
+            r"The trolley path lies above the arch at $x=2$.",
+        ],
+        key=[True, True, True, True, False],
+        expls=[
+            pack("A", True, [
+                "The arch meets the road where $g$ vanishes.",
+                D(r"4-(x-2)^{2}=0"),
+                D(r"(x-2)^{2}=4\qquad x=0,\; x=4"),
+                close(True, "The arch meets the road at $x=0$ and $x=4$"),
+            ]),
+            pack("B", True, [
+                "The crown is the vertex, at $x=2$.",
+                D(r"g(2)=4-(0)^{2}=4"),
+                close(True, "The crown height is $4$"),
+            ]),
+            pack("C", True, [
+                "The slope of a line is the coefficient of $x$.",
+                D(r"f(x)=2-\frac{1}{2}x"),
+                D(r"m=-\frac{1}{2}"),
+                close(True, "The trolley path has slope $-\\frac{1}{2}$"),
+            ]),
+            pack("D", True, [
+                "Evaluate the trolley rule at the crown abscissa $x=2$.",
+                D(r"f(2)=2-\frac{1}{2}\cdot 2=2-1=1"),
+                close(True, "The trolley is at height $1$"),
+            ]),
+            pack("E", False, [
+                "Compare the two heights at $x=2$.",
+                D(r"f(2)=1\qquad g(2)=4"),
+                D(r"1<4"),
+                close(False, "The trolley lies below the arch at $x=2$, not above it"),
+            ]),
+        ],
+        overview=D(r"g(x)=4-(x-2)^{2}\qquad f(x)=2-\frac{1}{2}x")
+        + "\n\nCrown $(2,4)$; trolley height $1$ at the same abscissa.",
+    )
+
+    assert len(tasks) == 30, len(tasks)
+    assert [t["stem_kind"] for t in tasks] == STEMS * 3
+    return tasks
 
 
 # ---------------------------------------------------------------------------
 # Validation
 # ---------------------------------------------------------------------------
 
-GRAPH_LEAK = re.compile(
-    r"(?:turns at|with height|vertex at|g\(x\)\s*=|f\(x\)\s*=|"
-    r"leading coefficient|root(?:s)? (?:at|are)|"
-    r"axis of symmetry is \$x=)",
-    re.I,
-)
-
-INT_RE = re.compile(r"(?<![A-Za-z\\])-?\d+")
-
-
-def stem_blob(task: dict) -> str:
-    parts = [task["context"], *task["statements"]]
-    if task.get("tables_markdown"):
-        parts.append(task["tables_markdown"])
-    return "\n".join(parts)
-
-
-def stem_ints(task: dict) -> list[int]:
-    blob = stem_blob(task)
-    blob = re.sub(r"\^\{?-?\d+\}?", "", blob)
-    blob = re.sub(r"E\d{2}", "", blob)
-    return [int(m.group(0)) for m in INT_RE.finditer(blob)]
-
-
-def validate(tasks: list[dict]) -> dict:
-    assert len(tasks) == 30, len(tasks)
+def validate(tasks: list[dict]) -> None:
     kinds = Counter(t["stem_kind"] for t in tasks)
-    assert kinds == Counter({k: 3 for k in STEM_KINDS}), dict(kinds)
+    print("stem_kind:", dict(kinds))
+    assert all(kinds[k] == 3 for k in STEMS), kinds
 
-    expl_lens: list[int] = []
-    all_stem_ints: list[int] = []
-    truth_hist = Counter(sum(t["answer_key"]) for t in tasks)
-    leaks: list[str] = []
+    truths = [sum(1 for v in t["answer_key"] if v) for t in tasks]
+    hist = Counter(truths)
+    print("truth histogram:", dict(sorted(hist.items())))
+    assert truths == PLANNED_TRUTHS, truths
+    assert set(hist) == {1, 2, 3, 4, 5}
 
-    for i, t in enumerate(tasks):
-        n = i + 1
-        assert t["id"] == f"math-7-e{n}"
-        assert t["case_id"] == f"MATH 7.E{str(n).zfill(2)}"
-        assert t["subsection"] == "7.5"
-        assert t["sort_order"] == 100 + n
-        assert t["difficulty_level"] == "5/5"
-        assert t["placeholder"] is False
-        assert t["stem_kind"] == STEM_KINDS[i % 10]
-        assert len(t["statements"]) == 5
-        assert len(set(t["statements"])) == 5
-        assert len(t["answer_key"]) == 5
-        assert len(t["tactical_explanations"]) == 5
-        ntrue = sum(t["answer_key"])
-        assert 1 <= ntrue <= 5, (t["case_id"], t["answer_key"])
+    expls = [e for t in tasks for e in t["tactical_explanations"]]
+    lens = sorted(len(e) for e in expls)
+    med = statistics.median(lens)
+    print(f"expl len min/med/max {lens[0]}/{med}/{lens[-1]}")
 
-        if t["stem_kind"] == "graph":
-            assert t.get("figure"), t["case_id"]
-            blob = t["context"] + " " + " ".join(t["statements"])
-            if GRAPH_LEAK.search(blob):
-                leaks.append(t["case_id"] + ": " + GRAPH_LEAK.search(blob).group(0))
+    figs = sum(1 for t in tasks if t.get("figure"))
+    tabs = sum(1 for t in tasks if t.get("tables_markdown"))
+    print(f"figures {figs} tables {tabs}")
 
-        if t["stem_kind"] == "table":
-            md = t.get("tables_markdown") or ""
-            assert md, t["case_id"]
-            assert "Delta" not in md and "\\Delta" not in md, t["case_id"]
-            ctx = t["context"]
-            assert not re.search(r"[fg]\(x\)\s*=", ctx), t["case_id"]
+    leak = 0
+    for t in tasks:
+        if t["stem_kind"] not in {"graph", "hybrid"}:
+            continue
+        blob = t["context"] + " " + " ".join(t["statements"])
+        if LEAK_RE.search(blob):
+            leak += 1
+            print("LEAK", t["id"], LEAK_RE.search(blob).group(0))
+    print("graph coordinate leaks:", leak)
+    assert leak == 0
 
-        if t["stem_kind"] == "applied":
-            assert t.get("figure") or t.get("tables_markdown"), t["case_id"]
-            assert "cm" not in t["context"].lower()
-            assert "mm" not in " ".join(t["statements"]).lower()
+    for t in tasks:
+        blob = json.dumps(t)
+        for tok in BANNED:
+            assert tok not in blob, (t["id"], tok)
+        if t.get("tables_markdown"):
+            assert "Delta" not in t["tables_markdown"]
+            assert r"\Delta" not in t["tables_markdown"]
+        if t["stem_kind"] in {"table", "graph"}:
+            # No closed form handed to the student in the stem.
+            assert not re.search(r"[fg]\(x\)\s*=\s*[-0-9x]", t["context"])
+        for i, e in enumerate(t["tactical_explanations"]):
+            letter = "ABCDE"[i]
+            verd = "True" if t["answer_key"][i] else "False"
+            assert e.startswith(f"**{letter}.** → {verd}"), (t["id"], i, e[:60])
+            assert "so the statement is" in e
+            assert e.count("$$") >= 4 and e.count("$$") % 2 == 0, (t["id"], letter, e.count("$$"))
+            # One-line displays: no raw newlines inside $$.
+            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
+                assert "\n" not in m.group(1), (t["id"], letter)
+            # No English prose stuffed into displays.
+            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
+                inner = m.group(1)
+                assert not re.search(r"\\text\{[A-Za-z]{4,}", inner), (t["id"], letter, inner)
 
-        if t["stem_kind"] == "hybrid":
-            assert t.get("figure") and t.get("tables_markdown"), t["case_id"]
-            assert not re.search(r"[fg]\(x\)\s*=", t["context"]), t["case_id"]
-            joined = " ".join(t["statements"]).lower()
-            assert "from the figure" in joined
-            assert "from the table" in joined or "fitting the table" in joined or "after fitting" in joined
+    # Cover-the-figure: graph/applied/hybrid statements must not restate a vertex pair.
+    for t in tasks:
+        if t["stem_kind"] not in {"graph", "hybrid", "applied"}:
+            continue
+        joined = " ".join(t["statements"])
+        assert "turns at" not in joined.lower()
+        assert not re.search(r"vertex is\s*\$\(", joined)
 
-        ints = stem_ints(t)
-        all_stem_ints.extend(ints)
-        if ints:
-            mx = max(abs(v) for v in ints)
-            assert mx <= 20, (t["case_id"], mx, ints)
-
-        blob_expl = " ".join(t["tactical_explanations"])
-        assert "Matching the claim" not in blob_expl
-        assert "\\deg" not in blob_expl
-        assert "\\circ" not in blob_expl
-        for j, e in enumerate(t["tactical_explanations"]):
-            assert "so the statement is" in e, (t["case_id"], j)
-            assert e.count("$$") >= 2, (t["case_id"], j, e.count("$$"))
-            for m in re.finditer(r"\$\$([^$]*)\$\$", e):
-                assert "\n" not in m.group(1), (t["case_id"], j)
-            expl_lens.append(len(e))
-
-    assert not leaks, leaks
-    median = statistics.median(expl_lens)
-    assert median >= 180, median
-    max_abs = max(abs(v) for v in all_stem_ints) if all_stem_ints else 0
-    return {
-        "stem_kind": dict(sorted(kinds.items())),
-        "truth_hist": dict(sorted(truth_hist.items())),
-        "max_abs_int": max_abs,
-        "median_expl": median,
-        "figures": sum(1 for t in tasks if t.get("figure")),
-        "tables": sum(1 for t in tasks if t.get("tables_markdown")),
-        "graph_leaks": 0,
-    }
+    print("validation OK")
 
 
 def main() -> None:
-    specs = [build_task(i) for i in range(30)]
-    tasks = [render(s, i) for i, s in enumerate(specs)]
-    for t in tasks:
-        t["context"] = normalize_displays(t["context"])
-        t["solution_overview"] = normalize_displays(t["solution_overview"])
-        t["tactical_explanations"] = [normalize_displays(e) for e in t["tactical_explanations"]]
-        t["statements"] = [normalize_displays(s) for s in t["statements"]]
-    stats = validate(tasks)
-    OUT.parent.mkdir(parents=True, exist_ok=True)
+    tasks = build_all()
+    validate(tasks)
     OUT.write_text(json.dumps({"tasks": tasks}, ensure_ascii=False, indent=2) + "\n")
     print(f"Wrote {len(tasks)} -> {OUT}")
-    for k, v in stats.items():
-        print(f"  {k}: {v}")
-    print("validation: PASSED")
 
 
 if __name__ == "__main__":
