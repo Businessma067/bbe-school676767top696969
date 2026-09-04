@@ -64,7 +64,7 @@ function ImportantFeaturesPage() {
             Product Directory
           </span>
           <h1 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Important Features
+            BBE Exam Preparation Features
           </h1>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             A curated set of premium tools engineered to sharpen every advantage you need for the WU
