@@ -1,0 +1,972 @@
+{
+  "chapter": 11,
+  "subsection": "11.5",
+  "title": "Exam-style tasks",
+  "explanation_style": "Natural tutoring: shared solution_overview once; each claim as **A.** → True/False with derived formulas (no statement echo).",
+  "tasks": [
+    {
+      "id": "math-11-161",
+      "case_id": "MATH 11.161",
+      "title": "Carpentry workshop: revenue, cost, and build time",
+      "subsection": "11.5",
+      "context": "A small carpentry workshop builds and sells wooden chairs. Let $Q$ be the number of chairs (treated as continuous). Revenue in euros is $R(Q)=-3Q^{2}+90Q$. Production cost in euros is $C(Q)=0.5Q^{3}-9Q^{2}+60Q+200$. After an assembly-bench reconfiguration the build-time function (hours) is\n$$T(Q)=\\begin{cases}0.5Q^{2}+4Q & \\text{if }Q<12\\\\ 12Q-24 & \\text{if }Q\\ge 12.\\end{cases}$$\nThe owner is comparing operating decisions, average-cost movements, and a nearby rival rather than looking at any one formula in isolation. Which of the following statements is/are correct?",
+      "statements": [
+        "Profit (revenue minus cost) reaches its highest value when $Q=15$ chairs are made and sold.",
+        "Starting from an output of $Q_{0}$ chairs, building one extra chair changes the average cost per chair by roughly $Q_{0}-9-\\dfrac{200}{Q_{0}^{2}}$.",
+        "The build-time function $T(Q)$ rises more steeply at $Q=11$ than at $Q=15$.",
+        "A rival workshop's revenue $R_{e}(Q)$ satisfies $R_{e}(6)=R(6)$, and its marginal revenue exceeds this workshop's, $R_{e}^{\\prime}(Q)>R^{\\prime}(Q)$, throughout $6\\le Q\\le 10$. It then follows that $R_{e}(9)<R(9)$.",
+        "Revenue is largest at an output exceeding $12$ chairs."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nProfit is $P=R-C=-0.5Q^{3}+6Q^{2}+30Q-200$, hence\n$$P^{\\prime}(Q)=-1.5Q^{2}+12Q+30=-1.5(Q-10)(Q+2).$$\nThe positive critical point is $Q=10$, and the derivative is already negative at $Q=15$.\n\nSo the statement is False.",
+        "**B.** → True\n\nAverage cost is $AC(Q)=C(Q)/Q=0.5Q^{2}-9Q+60+200/Q$. Therefore\n$$AC^{\\prime}(Q)=Q-9-\\dfrac{200}{Q^{2}}.$$\nThe one-unit change is approximated by $AC^{\\prime}(Q_{0})$.\n\nSo the statement is True.",
+        "**C.** → True\n\nOn the left branch, $T^{\\prime}(Q)=Q+4$, giving $T^{\\prime}(11)=15$. On the right branch $T^{\\prime}(Q)=12$, so $T^{\\prime}(15)=12$ and $15>12$.\n\nSo the statement is True.",
+        "**D.** → False\n\nIntegrate the strict marginal-revenue inequality from $6$ to $9$:\n$$R_e(9)-R_e(6)>R(9)-R(6).$$\nThe equal starting revenues therefore give $R_e(9)>R(9)$, with the inequality in the opposite direction.\n\nSo the statement is False.",
+        "**E.** → True\n\nMarginal revenue is $R^{\\prime}(Q)=-6Q+90$. It vanishes at $Q=15$, and\n$$R^{\\prime\\prime}(Q)=-6<0,$$\nso this is the revenue maximum and $15>12$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 161,
+      "solution_overview": "Quadratic revenue, cubic cost, and a piecewise build-time schedule must be separated carefully. Profit has its positive stationary point at $Q=10$, while revenue peaks at $Q=15$. Average cost is found by dividing cost by output before differentiating. The rival comparison follows by integrating marginal revenue, not by reversing the inequality.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-162",
+      "case_id": "MATH 11.162",
+      "title": "Harbour café: drinks, cost, and staffing hours",
+      "subsection": "11.5",
+      "context": "A harbour café sells specialty drinks, with daily output $Q$ treated as continuous. Its revenue is $R(Q)=40Q-\\dfrac12Q^{2}$ euros and its cost is $C(Q)=\\dfrac13Q^{3}-\\dfrac92Q^{2}+20Q+80$. During peak service, staffing hours are recorded as\n$$H(Q)=\\begin{cases}\\dfrac12Q^{2}+2Q & \\text{if }Q<20\\\\14Q-120 & \\text{if }Q\\ge20.\\end{cases}$$\nManagement wants to distinguish a profit condition from a revenue condition and to interpret a competitor's marginal figures correctly. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit $R-C$ has a critical point at $Q=10$.",
+        "At $Q=8$, marginal revenue exceeds marginal cost.",
+        "Staffing hours rise more steeply at $Q=18$ than at $Q=24$.",
+        "Average cost $C(Q)/Q$ is decreasing at $Q=5$.",
+        "If a rival café matches this café's revenue at $Q=6$ but has strictly smaller marginal revenue on $6\\le Q\\le12$, then the rival's revenue at $Q=10$ must be larger than this café's revenue at $Q=10$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nAfter subtraction, $P=-\\dfrac13Q^{3}+4Q^{2}+20Q-80$, so\n$$P^{\\prime}(Q)=-Q^{2}+8Q+20=-(Q-10)(Q+2).$$\nThus $Q=10$ is stationary.\n\nSo the statement is True.",
+        "**B.** → True\n\nThe two marginal quantities are\n$$R^{\\prime}(Q)=40-Q,\\qquad C^{\\prime}(Q)=Q^{2}-9Q+20.$$\nAt $8$ they are $32$ and $12$, respectively.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe left staffing slope is $H^{\\prime}(Q)=Q+2$, hence $H^{\\prime}(18)=20$. The later branch has slope $H^{\\prime}(24)=14$, so the first slope is larger.\n\nSo the statement is True.",
+        "**D.** → True\n\nDividing first gives $AC=\\dfrac13Q^{2}-\\dfrac92Q+20+80/Q$, so\n$$AC^{\\prime}(Q)=\\dfrac23Q-\\dfrac92-\\dfrac{80}{Q^{2}}.$$\nAt $Q=5$ this is $\\dfrac{10}{3}-\\dfrac92-\\dfrac{80}{25}<0$.\n\nSo the statement is True.",
+        "**E.** → False\n\nA smaller marginal revenue over the interval means a smaller accumulated revenue gain:\n$$R_e(10)-R_e(6)<R(10)-R(6).$$\nEqual revenue at $6$ consequently implies lower rival revenue at $10$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 162,
+      "solution_overview": "The café's profit derivative factors at $Q=10$, whereas the marginal comparison at $Q=8$ requires evaluating both $R^{\\prime}$ and $C^{\\prime}$. Its staffing rule has different local slopes on either side of $20$. Average cost and an integrated marginal-revenue comparison supply the remaining decisions.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-163",
+      "case_id": "MATH 11.163",
+      "title": "Print shop: price, demand, and elasticity",
+      "subsection": "11.5",
+      "context": "A print shop faces daily poster demand $D(p)=120-4p$ when price is $p$ euros, where $0<p<30$. Revenue is $R(p)=pD(p)$ and production cost for $Q$ posters is $C(Q)=2Q+0.05Q^{2}$. The owner is considering both the price-side graph and the output-side cost schedule, so a maximum in one representation need not be a profit maximum. Which of the following statements is/are correct?",
+      "statements": [
+        "Revenue is maximised at the price $p=15$.",
+        "At that revenue-maximising price, the price elasticity of demand equals $-1$.",
+        "At the revenue-maximising price, marginal revenue equals marginal cost, so profit is maximised there as well.",
+        "If price rises a little from $p=10$, revenue rises.",
+        "Average cost $C(Q)/Q$ is increasing for every $Q>0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$R(p)=120p-4p^{2}$, so $R^{\\prime}(p)=120-8p$. Its zero is $p=15$, and $R^{\\prime\\prime}(p)=-8<0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nPoint elasticity is\n$$\\varepsilon(p)=\\frac{D^{\\prime}(p)p}{D(p)}=\\frac{-4p}{120-4p}.$$\nAt $p=15$, this is $-60/60=-1$.\n\nSo the statement is True.",
+        "**C.** → False\n\nAt $p=15$, quantity is $60$ and revenue is at its maximum, so $MR=0$. But\n$$MC=C^{\\prime}(60)=2+0.1(60)=8,$$\nwhich rules out a profit optimum there.\n\nSo the statement is False.",
+        "**D.** → True\n\nThe price-side revenue derivative at $10$ is\n$$R^{\\prime}(10)=120-80=40>0.$$\nA sufficiently small increase therefore raises revenue.\n\nSo the statement is True.",
+        "**E.** → True\n\nAverage cost simplifies to $AC(Q)=2+0.05Q$. Thus\n$$AC^{\\prime}(Q)=0.05>0$$\nthroughout the positive-output domain.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 163,
+      "solution_overview": "Linear demand makes price elasticity especially transparent. Revenue is maximised at unit elasticity, but the positive marginal cost at that price separates revenue maximisation from profit maximisation. The remaining comparisons use the sign of a derivative.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-164",
+      "case_id": "MATH 11.164",
+      "title": "Market garden: labour, output, and wage",
+      "subsection": "11.5",
+      "context": "A market garden sells vegetables for a fixed $2$ euros per kilogram. Output from $L$ labour-hours is $Q(L)=30L-L^{2}$ for $0\\le L\\le20$, labour costs $12$ euros per hour, and fixed cost is $40$ euros. The grower must compare the value of an extra worker-hour with its wage rather than merely pursue the largest physical harvest. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit is maximised at $L=12$ hours.",
+        "At that profit-maximising labour input, the value of marginal product equals the wage.",
+        "Marginal product of labour is still positive at $L=12$.",
+        "Hiring a little more labour than $L=12$ would raise profit.",
+        "Output $Q(L)$ itself is maximised at the same labour input that maximises profit."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit is $\\pi(L)=2Q(L)-12L-40=48L-2L^{2}-40$. Therefore\n$$\\pi^{\\prime}(L)=48-4L=0$$\nat $L=12$, with $\\pi^{\\prime\\prime}=-4<0$.\n\nSo the statement is True.",
+        "**B.** → True\n\nMarginal product is $Q^{\\prime}(L)=30-2L$. At $12$ it is $6$, so\n$$VMP=2\\cdot6=12,$$\nexactly the wage.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe marginal product calculation gives\n$$Q^{\\prime}(12)=30-24=6>0.$$\nProfit can peak while physical output is still increasing because labour is costly.\n\nSo the statement is True.",
+        "**D.** → False\n\nImmediately to the right of $12$, $\\pi^{\\prime}(L)=48-4L<0$. Extra labour then lowers, rather than raises, profit.\n\nSo the statement is False.",
+        "**E.** → False\n\nPhysical output has $Q^{\\prime}(L)=0$ at $L=15$. That output maximum is later than the profit maximum at $L=12$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 164,
+      "solution_overview": "The price converts marginal product into value of marginal product. Profit peaks where $VMP$ equals the wage, at a point where output is still rising. Keeping those two objectives separate explains the contrasting labour levels.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-165",
+      "case_id": "MATH 11.165",
+      "title": "Courier fleet: routes, cost, and a threshold",
+      "subsection": "11.5",
+      "context": "A courier firm operates $x>0$ city routes each day, treated as a continuous planning quantity. Its total operating cost is\n$$C(x)=\\begin{cases}x^{2}+20x+100&\\text{if }x<25\\\\45x+100&\\text{if }x\\ge25,\\end{cases}$$\nwhile route revenue is $R(x)=60x-\\dfrac12x^{2}$. The dispatch manager is testing whether a cost level, its marginal slope, and its average are being confused at the subcontracting threshold. Which of the following statements is/are correct?",
+      "statements": [
+        "Marginal cost jumps upward when route volume crosses $x=25$.",
+        "For $x<25$, average cost is minimised at $x=10$.",
+        "On $x<25$, profit has a critical point at $x=\\dfrac{40}{3}$.",
+        "At $x=30$, marginal revenue is negative.",
+        "Because total cost is continuous at $x=25$, its left- and right-hand derivatives must be equal."
+      ],
+      "answer_key": [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → False\n\nThe left marginal cost is $2x+20$, giving $C^{\\prime}_{-}(25)=70$. The right marginal cost is $45$, so the jump is from $70$ down to $45$.\n\nSo the statement is False.",
+        "**B.** → True\n\nFor the first branch,\n$$AC(x)=x+20+\\frac{100}{x},\\qquad AC^{\\prime}(x)=1-\\frac{100}{x^{2}}.$$\nThe positive zero is $x=10$, and the derivative changes from negative to positive there.\n\nSo the statement is True.",
+        "**C.** → True\n\nOn the first branch, $P=40x-\\dfrac32x^{2}-100$. Thus\n$$P^{\\prime}(x)=40-3x,$$\nwhose zero is $x=40/3$.\n\nSo the statement is True.",
+        "**D.** → False\n\nMarginal revenue is $R^{\\prime}(x)=60-x$. At $x=30$ this equals $30$, which is positive.\n\nSo the statement is False.",
+        "**E.** → False\n\nBoth cost formulas give $1225$ at $x=25$, establishing continuity. Their one-sided slopes are nevertheless\n$$C^{\\prime}_{-}(25)=70\\ne45=C^{\\prime}_{+}(25),$$\nso continuity alone does not give differentiability.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 165,
+      "solution_overview": "This threshold preserves the cost level but changes the marginal cost. Average cost must be formed before differentiating, while profit uses the revenue-minus-cost derivative. The task also distinguishes a continuous piecewise function from a differentiable one.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-166",
+      "case_id": "MATH 11.166",
+      "title": "Gift-tube producer: volume, tax, and rival revenue",
+      "subsection": "11.5",
+      "context": "A gift-tube producer makes cylindrical packages with radius $r$ and height $h=2r$, so package volume is $V(r)=2\\pi r^{3}$. Separately, market demand implies price $p(Q)=72-Q$ for $Q$ packages, and a new per-package tax is $6$ euros. The commercial team has mixed a local packaging approximation with output and rival-revenue claims in its report. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Increasing radius from $2$ to approximately $2.02$ changes volume by about $0.48\\pi$ cubic units.",
+        "The elasticity of package volume with respect to radius is $2$.",
+        "Before tax, revenue is maximised at $Q=36$ packages.",
+        "After the $6$ euro tax, net revenue is maximised at $Q=30$ packages.",
+        "If a rival has the same revenue at $Q=10$ and strictly greater marginal revenue for every output from $10$ to $20$, its revenue at $Q=18$ is greater."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDifferentiate $V(r)=2\\pi r^{3}$:\n$$V^{\\prime}(r)=6\\pi r^{2},\\qquad V^{\\prime}(2)=24\\pi.$$\nWith $\\Delta r=0.02$, the differential estimate is $24\\pi(0.02)=0.48\\pi$.\n\nSo the statement is True.",
+        "**B.** → False\n\nElasticity is\n$$\\frac{r}{V(r)}V^{\\prime}(r)=\\frac{r}{2\\pi r^{3}}(6\\pi r^{2})=3.$$\nThe cubic radius relationship supplies elasticity $3$, not $2$.\n\nSo the statement is False.",
+        "**C.** → True\n\nRevenue is $R(Q)=Q(72-Q)=72Q-Q^{2}$. Since\n$$R^{\\prime}(Q)=72-2Q=0$$\nat $Q=36$ and $R^{\\prime\\prime}=-2<0$, that output maximises revenue.\n\nSo the statement is True.",
+        "**D.** → False\n\nTax-adjusted revenue is $(72-Q-6)Q=66Q-Q^{2}$. Its derivative $66-2Q$ vanishes at\n$$Q=33,$$\nnot at $30$.\n\nSo the statement is False.",
+        "**E.** → True\n\nIntegrating the strict derivative inequality from $10$ to $18$ yields\n$$R_e(18)-R_e(10)>R(18)-R(10).$$\nThe equal initial revenues leave the rival strictly higher at $18$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 166,
+      "solution_overview": "The packaging relation is a cubic, so its local change and elasticity both come from its derivative. The sales side has a quadratic revenue curve, and the tax shifts its linear marginal revenue. A marginal-revenue dominance statement must be integrated over the relevant interval.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-167",
+      "case_id": "MATH 11.167",
+      "title": "Bakery chain: demand, tax, and average cost",
+      "subsection": "11.5",
+      "context": "A bakery chain sells meal boxes under inverse demand $p(Q)=50-\\dfrac12Q$. Daily production cost is $C(Q)=\\dfrac14Q^{2}+12Q+180$, and a proposed city levy would add $4$ euros per box. The analyst is comparing revenue elasticity, pre-tax and post-tax profit, and cost per box for positive continuous $Q$. Which of the following statements is/are correct?",
+      "statements": [
+        "Before the levy, profit is maximised at $Q=\\dfrac{76}{3}$.",
+        "With the levy, profit is maximised at $Q=22$.",
+        "Average cost is decreasing at $Q=20$.",
+        "At the revenue-maximising price, the price elasticity of demand is $-1$.",
+        "A rival with the same revenue at $Q=10$ and lower marginal revenue throughout $10<Q<18$ finishes with higher revenue at $Q=18$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPre-tax profit is $P=38Q-\\dfrac34Q^{2}-180$, so\n$$P^{\\prime}(Q)=38-\\frac32Q.$$\nThe zero is $Q=76/3$, with negative second derivative $-3/2$.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe levy changes profit to $P_t=34Q-\\dfrac34Q^{2}-180$. Therefore\n$$P_t^{\\prime}(Q)=34-\\frac32Q=0$$\nat $Q=68/3$, not $22$.\n\nSo the statement is False.",
+        "**C.** → True\n\n$AC(Q)=\\dfrac14Q+12+180/Q$, giving\n$$AC^{\\prime}(Q)=\\frac14-\\frac{180}{Q^{2}}.$$\nAt $20$, this is $1/4-180/400=-1/5<0$.\n\nSo the statement is True.",
+        "**D.** → True\n\nDemand in price form is $Q(p)=100-2p$, and revenue is $100p-2p^{2}$. At its maximum $p=25$,\n$$\\varepsilon=\\frac{-2(25)}{100-2(25)}=-1.$$\n\nSo the statement is True.",
+        "**E.** → False\n\nLower marginal revenue makes the rival's accumulated gain smaller:\n$$R_e(18)-R_e(10)<R(18)-R(10).$$\nEqual revenue at $10$ therefore implies lower rival revenue at $18$.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 167,
+      "solution_overview": "The levy shifts the profit derivative but does not change the demand curve. Revenue maximisation occurs at unit elasticity for this linear demand. Average cost needs a quotient before differentiation, and rival levels follow from accumulated marginal revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-168",
+      "case_id": "MATH 11.168",
+      "title": "Data studio: labour, output, and marginal value",
+      "subsection": "11.5",
+      "context": "A data-visualisation studio sells completed analysis packages for $3$ euros per unit of measured output. With $L>0$ analyst-hours, output is $Q(L)=80\\sqrt{L}$; wages are $20$ euros per hour and fixed overhead is $200$ euros. The studio is deciding whether its staffing objective is output, revenue, or profit. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit is maximised at $L=36$ analyst-hours.",
+        "Doubling analyst-hours while holding all else fixed doubles output.",
+        "The output elasticity with respect to analyst-hours is $\\dfrac12$.",
+        "At the profit-maximising labour input, the value of marginal product equals the wage.",
+        "Marginal product is zero at the profit-maximising labour input."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit is $\\pi(L)=240\\sqrt L-20L-200$, so\n$$\\pi^{\\prime}(L)=\\frac{120}{\\sqrt L}-20.$$\nIt is zero at $\\sqrt L=6$, hence $L=36$, and the derivative changes from positive to negative.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe output ratio is\n$$\\frac{Q(2L)}{Q(L)}=\\frac{80\\sqrt{2L}}{80\\sqrt L}=\\sqrt2.$$\nThis is less than $2$, reflecting diminishing marginal product.\n\nSo the statement is False.",
+        "**C.** → True\n\nUsing $Q(L)=80L^{1/2}$,\n$$\\varepsilon_L=\\frac{LQ^{\\prime}(L)}{Q(L)}=\\frac12.$$\nThe exponent is the constant output elasticity.\n\nSo the statement is True.",
+        "**D.** → True\n\n$Q^{\\prime}(L)=40/\\sqrt L$. At $L=36$,\n$$VMP=3\\left(\\frac{40}{6}\\right)=20,$$\nwhich exactly equals the hourly wage.\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $L=36$ the marginal product is\n$$Q^{\\prime}(36)=\\frac{40}{6}=\\frac{20}{3}>0.$$\nProfit stops increasing because the value of this product equals the wage, not because output stops rising.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 168,
+      "solution_overview": "Square-root production produces diminishing but positive marginal product. Profit is maximised where the resulting value of marginal product equals the wage. The output elasticity describes the proportional response, so it also predicts that doubling labour does not double output.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-169",
+      "case_id": "MATH 11.169",
+      "title": "Furniture factory: a smooth production threshold",
+      "subsection": "11.5",
+      "context": "A furniture factory has revenue $R(q)=80q-q^{2}$ and cost $C(q)=\\dfrac13q^{3}-5q^{2}+32q+240$ for continuous output $q>0$. Its packing-hours schedule is\n$$H(q)=\\begin{cases}q^{2}+10q&\\text{if }q<15\\\\40q-225&\\text{if }q\\ge15.\\end{cases}$$\nThe director is checking profit, marginal conditions, and whether the packing transition actually creates a corner. Which of the following statements is/are correct?",
+      "statements": [
+        "Profit is maximised at $q=12$.",
+        "At $q=12$, marginal revenue equals marginal cost.",
+        "Packing hours are continuous at $q=15$.",
+        "Packing hours have a downward derivative jump at $q=15$.",
+        "Average cost is decreasing at $q=10$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$P=R-C$ has derivative\n$$P^{\\prime}(q)=-q^{2}+8q+48=-(q-12)(q+4).$$\nAt $q=12$, $P^{\\prime\\prime}(q)=-2q+8=-16<0$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$R^{\\prime}(q)=80-2q$ and $C^{\\prime}(q)=q^{2}-10q+32$. At $12$ both calculations give\n$$R^{\\prime}(12)=56=C^{\\prime}(12).$$\n\nSo the statement is True.",
+        "**C.** → True\n\nThe two level calculations are\n$$15^{2}+10(15)=375,\\qquad40(15)-225=375.$$\nThe piecewise schedule meets without a gap.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe left derivative is $2q+10$, so it approaches $40$ at $15$. The right derivative is also $40$, hence\n$$H^{\\prime}_{-}(15)=H^{\\prime}_{+}(15)=40.$$\nThere is no derivative jump.\n\nSo the statement is False.",
+        "**E.** → True\n\n$AC(q)=\\dfrac13q^{2}-5q+32+240/q$, so\n$$AC^{\\prime}(q)=\\frac23q-5-\\frac{240}{q^{2}}.$$\nAt $10$, this equals $20/3-5-12/5<0$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 169,
+      "solution_overview": "The factory's cubic cost creates a quadratic profit derivative whose positive maximum condition occurs at $12$. The packing formula is deliberately continuous and differentiable at its threshold. Average cost requires the fixed cost to be divided by output before taking a derivative.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-170",
+      "case_id": "MATH 11.170",
+      "title": "Ride platform: fare, commission, and profit",
+      "subsection": "11.5",
+      "context": "A ride platform faces inverse demand $p(Q)=120-2Q$ and incurs operating cost $C(Q)=\\dfrac12Q^{2}+20Q+600$. A city commission of $10$ euros per completed ride may be introduced. The platform compares its revenue peak, its operating-profit peak, fare elasticity, and the effect of the commission using continuous daily rides $Q>0$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Before the commission, profit is maximised at $Q=20$ rides.",
+        "Revenue is maximised at the same $Q=20$ rides.",
+        "At the profit-maximising output, marginal revenue equals marginal cost.",
+        "At the fare corresponding to $Q=20$, demand elasticity is $-2$.",
+        "With the commission, profit is maximised at $Q=18$ rides."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit is $P=100Q-\\dfrac52Q^{2}-600$, hence\n$$P^{\\prime}(Q)=100-5Q.$$\nIts zero is $20$ and $P^{\\prime\\prime}=-5<0$.\n\nSo the statement is True.",
+        "**B.** → False\n\nRevenue is $R=120Q-2Q^{2}$, whose derivative is $120-4Q$. It vanishes at\n$$Q=30,$$\nnot at $20$.\n\nSo the statement is False.",
+        "**C.** → True\n\nAt $Q=20$,\n$$MR=R^{\\prime}(20)=120-80=40,\\qquad MC=C^{\\prime}(20)=20+20=40.$$\nThe two marginal quantities agree.\n\nSo the statement is True.",
+        "**D.** → True\n\nDemand is $Q(p)=60-p/2$. At $Q=20$, price is $80$, so\n$$\\varepsilon=\\frac{-1}{2}\\frac{80}{20}=-2.$$\n\nSo the statement is True.",
+        "**E.** → True\n\nThe commission makes profit $P_c=90Q-\\dfrac52Q^{2}-600$. Thus\n$$P_c^{\\prime}(Q)=90-5Q=0$$\nat $Q=18$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 170,
+      "solution_overview": "The platform's revenue peak and profit peak differ because marginal cost is positive. Converting the inverse demand into $Q(p)$ permits the elasticity calculation. The fixed per-ride commission lowers the linear profit term and shifts the profit maximum inward.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-171",
+      "case_id": "MATH 11.171",
+      "title": "Greenhouse: two inputs and labour value",
+      "subsection": "11.5",
+      "context": "A greenhouse produces $Q(L,K)=12L^{1/2}K^{1/4}$ baskets of herbs, sold for $10$ euros each. Capital is fixed at $K=16$, labour costs $30$ euros per hour, and fixed greenhouse overhead is $400$. The owner is testing claims about the production exponent, marginal product, and the profit-maximising labour quantity. Which of the following statements is/are correct?",
+      "statements": [
+        "With capital fixed at $16$, profit is maximised at $L=16$ labour-hours.",
+        "Doubling labour while capital is fixed doubles output.",
+        "The output elasticity with respect to labour is $\\dfrac12$.",
+        "At $L=16$, the value of marginal product is equal to the wage.",
+        "At the profit-maximising labour input, marginal product is zero."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nWith $K=16$, output is $Q(L)=24\\sqrt L$, so\n$$\\pi(L)=240\\sqrt L-30L-400,\\qquad \\pi^{\\prime}(L)=\\frac{120}{\\sqrt L}-30.$$\nThe derivative is zero at $\\sqrt L=4$, or $L=16$.\n\nSo the statement is True.",
+        "**B.** → False\n\nHolding capital fixed,\n$$\\frac{Q(2L,16)}{Q(L,16)}=2^{1/2}=\\sqrt2.$$\nThe labour exponent prevents a doubling of output.\n\nSo the statement is False.",
+        "**C.** → True\n\nDifferentiating with respect to labour gives $Q_L=6L^{-1/2}K^{1/4}$. Thus\n$$\\frac{LQ_L}{Q}=\\frac12,$$\nthe exponent on $L$.\n\nSo the statement is True.",
+        "**D.** → True\n\nAt $K=16$, $Q_L=12/\\sqrt L$. At $L=16$,\n$$VMP=10\\left(\\frac{12}{4}\\right)=30,$$\nwhich is the wage.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe marginal product at that input is\n$$Q_L(16,16)=\\frac{12}{4}=3>0.$$\nIt is the marginal value relative to the wage that determines profit maximisation.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 171,
+      "solution_overview": "Fixing capital reduces the two-input technology to a square-root labour schedule, but the labour elasticity remains visible in the original production exponent. The wage comparison uses value of marginal product, not the condition that physical marginal product be zero.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-172",
+      "case_id": "MATH 11.172",
+      "title": "Solar maintenance: output and a smooth service rule",
+      "subsection": "11.5",
+      "context": "A solar contractor obtains daily energy output $E(m)=100m-2m^{2}$ from $m$ maintenance visits, sells energy for $0.5$ euros per unit, pays $8$ euros per visit, and has fixed cost $50$. Its booking system reports service hours as\n$$S(m)=\\begin{cases}m^{2}&\\text{if }m<10\\\\20m-100&\\text{if }m\\ge10.\\end{cases}$$\nThe operations team is deciding whether the service threshold causes a mathematical kink and whether energy and profit have the same optimum. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit is maximised at $m=21$ visits.",
+        "At $m=21$, the value of marginal product equals the visit wage.",
+        "Energy output itself is maximised at $m=21$.",
+        "The booking-hours rule is continuous but not differentiable at $m=10$.",
+        "Service hours rise more steeply at $m=8$ than at $m=12$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit is $\\pi(m)=0.5(100m-2m^{2})-8m-50=42m-m^{2}-50$. Hence\n$$\\pi^{\\prime}(m)=42-2m=0$$\nat $m=21$, with $\\pi^{\\prime\\prime}=-2<0$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$E^{\\prime}(m)=100-4m$, so at $21$ the value of marginal product is\n$$0.5E^{\\prime}(21)=0.5(16)=8.$$\nThis equals the visit wage.\n\nSo the statement is True.",
+        "**C.** → False\n\nPhysical energy is maximised when $E^{\\prime}(m)=100-4m=0$, giving\n$$m=25.$$\nThe wage makes the profit-maximising visit count lower.\n\nSo the statement is False.",
+        "**D.** → False\n\nThe two levels at $10$ are both $100$. Their slopes are\n$$S^{\\prime}_{-}(10)=2(10)=20,\\qquad S^{\\prime}_{+}(10)=20,$$\nso the rule is differentiable as well as continuous.\n\nSo the statement is False.",
+        "**E.** → False\n\nOn the first branch $S^{\\prime}(8)=16$; on the second branch $S^{\\prime}(12)=20$. Since $16<20$, the claimed ordering is reversed.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 172,
+      "solution_overview": "The solar model makes profit a concave quadratic, while physical energy alone has a different maximum. The booking rule matches both its level and its slope at ten visits, so neither continuity nor differentiability fails at the threshold.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-173",
+      "case_id": "MATH 11.173",
+      "title": "Retail launch: price elasticity and a tax",
+      "subsection": "11.5",
+      "context": "A retailer's market demand is $Q(p)=200-5p$, while production cost is $C(Q)=5Q+0.1Q^{2}+300$. The retailer may face a $3$ euros per-unit tax. The board is comparing a revenue-maximising price, a profit-maximising output, an average-cost movement, and a rival's marginal-revenue report. Which of the following statements is/are correct?",
+      "statements": [
+        "Revenue is maximised at $p=20$.",
+        "Before tax, profit is maximised at $Q=100$.",
+        "At the revenue-maximising price, demand elasticity equals $-1$.",
+        "Average cost is decreasing at $Q=50$.",
+        "If a rival has equal revenue at $Q=40$ and strictly higher marginal revenue until $Q=60$, it has higher revenue at $Q=50$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$R(p)=p(200-5p)=200p-5p^{2}$. Therefore\n$$R^{\\prime}(p)=200-10p=0$$\nat $p=20$, with negative second derivative.\n\nSo the statement is True.",
+        "**B.** → False\n\nIn output form, $p(Q)=40-0.2Q$, so\n$$P(Q)=35Q-0.3Q^{2}-300,\\qquad P^{\\prime}(Q)=35-0.6Q.$$\nThe stationary output is $Q=175/3$, not $100$.\n\nSo the statement is False.",
+        "**C.** → True\n\nAt $p=20$, quantity is $100$. The elasticity is\n$$\\varepsilon=\\frac{-5(20)}{200-5(20)}=-1.$$\n\nSo the statement is True.",
+        "**D.** → True\n\n$AC=5+0.1Q+300/Q$, so\n$$AC^{\\prime}(Q)=0.1-\\frac{300}{Q^{2}}.$$\nAt $50$ it is $0.1-300/2500=-0.02<0$.\n\nSo the statement is True.",
+        "**E.** → True\n\nOver the interval from $40$ to $50$,\n$$R_e(50)-R_e(40)>R(50)-R(40).$$\nEqual revenue at $40$ then gives strictly higher rival revenue at $50$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 173,
+      "solution_overview": "The linear demand curve gives unit elasticity at its revenue maximum. Re-expressing demand as inverse demand is useful for profit in output units. Average cost combines a rising variable component with a falling fixed-cost-per-unit component, and marginal dominance determines the rival comparison.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-174",
+      "case_id": "MATH 11.174",
+      "title": "Shipping line: capacity, cost, and a smooth loading rule",
+      "subsection": "11.5",
+      "context": "A shipping line carries $x>0$ container loads per voyage. Revenue is $R(x)=150x-3x^{2}$ and cost is $C(x)=0.5x^{3}-9x^{2}+24x+500$. Loading-hours are\n$$L(x)=\\begin{cases}x^{2}+5x&\\text{if }x<20\\\\45x-400&\\text{if }x\\ge20.\\end{cases}$$\nExecutives are comparing an output that maximises profit with an output that maximises revenue, plus a subcontractor's marginal-revenue statement. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "Profit is maximised at $x=14$ loads.",
+        "Revenue is maximised at an output above $20$ loads.",
+        "Average cost is rising at $x=10$.",
+        "The loading-hours rule has a derivative jump at $x=20$.",
+        "If a subcontractor starts with the same revenue at $x=10$ but has lower marginal revenue through $x=18$, it has lower revenue at $x=18$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit has derivative\n$$P^{\\prime}(x)=126+12x-1.5x^{2}=-1.5(x-14)(x+6).$$\nAt $14$, $P^{\\prime\\prime}=12-3(14)<0$.\n\nSo the statement is True.",
+        "**B.** → True\n\n$R^{\\prime}(x)=150-6x$ vanishes at\n$$x=25,$$\nand $R^{\\prime\\prime}=-6<0$. This is above $20$.\n\nSo the statement is True.",
+        "**C.** → False\n\n$AC=0.5x^{2}-9x+24+500/x$, hence\n$$AC^{\\prime}(x)=x-9-\\frac{500}{x^{2}}.$$\nAt $10$ the value is $10-9-5=-4<0$, so average cost is falling.\n\nSo the statement is False.",
+        "**D.** → False\n\nBoth loading levels at $20$ are $500$. Their slopes are also equal:\n$$L^{\\prime}_{-}(20)=2(20)+5=45=L^{\\prime}_{+}(20).$$\nNo derivative jump occurs.\n\nSo the statement is False.",
+        "**E.** → True\n\nLower marginal revenue accumulates to a lower increase:\n$$R_s(18)-R_s(10)<R(18)-R(10).$$\nThe equal starting revenues imply the subcontractor is lower at $18$.\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 174,
+      "solution_overview": "Cubic cost makes profit and revenue peak at different load counts. The average-cost derivative includes the declining fixed-cost share. The loading rule is designed to match both value and slope at twenty, while the subcontractor conclusion follows from integrating the marginal-revenue ordering.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-175",
+      "case_id": "MATH 11.175",
+      "title": "Festival stalls: demand, levy, and setup time",
+      "subsection": "11.5",
+      "context": "A festival operator faces demand $Q(p)=90-3p$, or inverse demand $p(Q)=30-\\dfrac13Q$. Total stall cost is $C(Q)=\\dfrac16Q^{2}+6Q+120$, and the council charges a $4$ euros per-stall levy. Setup time is\n$$S(Q)=\\begin{cases}\\dfrac12Q^{2}+Q&\\text{if }Q<20\\\\21Q-200&\\text{if }Q\\ge20.\\end{cases}$$\nThe operator is assessing profit, elasticity, average cost, and the operational transition. Which of the following statements is/are correct?",
+      "statements": [
+        "Before the levy, marginal revenue equals marginal cost at $Q=24$.",
+        "With the $4$ euro levy, profit is maximised at $Q=20$.",
+        "At the price $p=10$, demand elasticity is $-1$.",
+        "The setup-time rule is both continuous and differentiable at $Q=20$.",
+        "Average cost is falling at $Q=30$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$MR=30-\\dfrac23Q$ and $MC=\\dfrac13Q+6$. At $Q=24$,\n$$MR=30-16=14=8+6=MC.$$\n\nSo the statement is True.",
+        "**B.** → True\n\nTax-adjusted profit is\n$$P_t(Q)=20Q-\\frac12Q^{2}-120.$$\nThus $P_t^{\\prime}(Q)=20-Q$, which is zero at $Q=20$ with negative second derivative.\n\nSo the statement is True.",
+        "**C.** → False\n\nAt $p=10$, demand is $Q=90-30=60$. Thus\n$$\\varepsilon=\\frac{-3(10)}{60}=-\\frac12,$$\nnot $-1$.\n\nSo the statement is False.",
+        "**D.** → True\n\nAt $20$, the first formula approaches $\\frac12(400)+20=220$, while the second gives $420-200=220$. The one-sided slopes are\n$$20+1=21=21,$$\nso both continuity and differentiability hold.\n\nSo the statement is True.",
+        "**E.** → False\n\n$AC=Q/6+6+120/Q$, hence\n$$AC^{\\prime}(Q)=\\frac16-\\frac{120}{Q^{2}}.$$\nAt $30$ this is $1/6-120/900=1/30>0$, so average cost is rising.\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 175,
+      "solution_overview": "Inverse demand supplies marginal revenue, while the levy shifts the profit derivative. Elasticity is evaluated in the price-demand representation. The setup branches agree in both their values and slopes at twenty, and average cost is assessed from its own derivative.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-176",
+      "case_id": "MATH 11.176",
+      "title": "Podcast studio: advertising spend and listeners",
+      "subsection": "11.5",
+      "context": "A podcast studio buys $a$ euros of advertising ($a>0$). Weekly listenership is $Q(a)=20\\sqrt{a}$. Each listener generates $5$ euros of sponsorship revenue, so revenue is $R(a)=5Q(a)$. Advertising is the only variable cost, and there is a fixed cost of $40$, giving total cost $C(a)=a+40$. Which of the following statements is/are correct?",
+      "statements": [
+        "Profit is maximised at an advertising budget of $a=2500$ euros.",
+        "At that budget, the marginal revenue from one extra euro of advertising equals $1$.",
+        "Doubling the budget from $a=100$ to $a=400$ doubles listenership.",
+        "At $a=100$, an extra euro of advertising still raises profit.",
+        "Because $Q'(a)$ is decreasing, profit cannot have an interior maximum."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nProfit is $\\pi(a)=100\\sqrt{a}-a-40$. Differentiating,\n$$\\pi'(a)=\\dfrac{50}{\\sqrt{a}}-1.$$\nSetting $\\pi'=0$ gives $\\sqrt{a}=50$, so $a=2500$. Also $\\pi''<0$ there\n\nSo the statement is True.",
+        "**B.** → True\n\nMarginal revenue of advertising is $R'(a)=5Q'(a)=\\dfrac{50}{\\sqrt{a}}$. At $a=2500$ this equals $1$, matching the marginal cost of one more euro spent\n\nSo the statement is True.",
+        "**C.** → False\n\n$Q(100)=200$ and $Q(400)=400$, so listenership doubles when advertising is multiplied by four, not by two. Under a square-root response, doubling $a$ multiplies $Q$ by $\\sqrt{2}$ only\n\nSo the statement is False.",
+        "**D.** → True\n\nAt $a=100$, $\\pi'(100)=\\dfrac{50}{10}-1=4>0$, so a little more advertising still raises profit\n\nSo the statement is True.",
+        "**E.** → False\n\nA decreasing marginal product does not forbid an interior profit max; it is exactly what makes $\\pi'$ cross from $+$ to $-$ once\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 176,
+      "solution_overview": "Chain-rule revenue $R=100\\sqrt{a}$ against linear advertising cost peaks at $a=2500$, where $R'=1$. Square-root response is concave, so doubling spend does not double listeners. Positive $\\pi'$ at small $a$ means advertising is still worthwhile there.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-177",
+      "case_id": "MATH 11.177",
+      "title": "Riverside market: three-sided stall enclosure",
+      "subsection": "11.5",
+      "context": "A riverside market builds a rectangular stall enclosure using the river as one long side, so only three sides of fencing are needed. Total fencing length is $120$ metres: two widths $x$ and one length $y$, so $2x+y=120$. Area is $A=xy$. Which of the following statements is/are correct?",
+      "statements": [
+        "After eliminating $y$, area is $A(x)=120x-2x^{2}$ for $0<x<60$.",
+        "Area is maximised at $x=30$ metres.",
+        "At that maximum the length parallel to the river is $y=60$ metres.",
+        "The second-derivative test fails at the critical point, so the maximum is inconclusive.",
+        "Using a little less than $30$ metres for each width would raise the enclosed area."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom $y=120-2x$ one has $A=x(120-2x)=120x-2x^{2}$ on $(0,60)$\n\nSo the statement is True.",
+        "**B.** → True\n\n$A'(x)=120-4x=0$ at $x=30$. Also $A''=-4<0$, so this is a maximum\n\nSo the statement is True.",
+        "**C.** → True\n\n$y=120-2\\cdot30=60$\n\nSo the statement is True.",
+        "**D.** → False\n\n$A''(30)=-4<0$, so the second-derivative test confirms a strict local maximum\n\nSo the statement is False.",
+        "**E.** → False\n\nJust left of $x=30$, $A'>0$, so decreasing the width a little lowers area rather than raising it\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 177,
+      "solution_overview": "Reduce to one variable with the fencing constraint, maximise $A=120x-2x^{2}$ at $x=30$, $y=60$. The second derivative is negative, and the sign of $A'$ shows area still rises as one approaches $30$ from the left.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-178",
+      "case_id": "MATH 11.178",
+      "title": "Pharmacy warehouse: order quantity and holding cost",
+      "subsection": "11.5",
+      "context": "A pharmacy warehouse faces steady annual demand of $D=400$ cartons. Each order costs $K=50$ euros, and holding cost is $h=4$ euros per carton per year. With order size $Q>0$, annual ordering-plus-holding cost is modelled by\n$$TC(Q)=\\dfrac{KD}{Q}+\\dfrac{hQ}{2}=\\dfrac{20000}{Q}+2Q.$$\nWhich of the following statements is/are correct?",
+      "statements": [
+        "The cost-minimising order quantity is $Q=100$.",
+        "At that quantity, marginal ordering cost equals marginal holding cost in absolute value.",
+        "Average inventory in the model is $Q/2$, so holding cost at $Q=100$ equals $200$ euros per year.",
+        "Ordering $Q=50$ instead of $Q=100$ would cut total ordering-plus-holding cost.",
+        "$TC''(Q)>0$ for every $Q>0$, so the critical point is a minimum."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$TC'(Q)=-\\dfrac{20000}{Q^{2}}+2=0$ gives $Q^{2}=10000$, so $Q=100$\n\nSo the statement is True.",
+        "**B.** → True\n\nThe two terms in $TC'$ balance when $\\dfrac{20000}{Q^{2}}=2$; that is the EOQ first-order condition equating the magnitudes of the two marginal cost pieces\n\nSo the statement is True.",
+        "**C.** → True\n\nHolding cost is $\\dfrac{hQ}{2}=2Q$; at $Q=100$ this is $200$\n\nSo the statement is True.",
+        "**D.** → False\n\n$TC(100)=200+200=400$ while $TC(50)=400+100=500>400$, so halving the order raises total cost\n\nSo the statement is False.",
+        "**E.** → True\n\n$TC''(Q)=\\dfrac{40000}{Q^{3}}>0$ for $Q>0$, confirming a minimum\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 178,
+      "solution_overview": "EOQ calculus: set $TC'=-KD/Q^{2}+h/2=0$ to get $Q=100$. Holding cost is $hQ/2$. The second derivative is positive, and nearby order sizes cost more.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-179",
+      "case_id": "MATH 11.179",
+      "title": "Artisan soap: inverse demand and revenue",
+      "subsection": "11.5",
+      "context": "An artisan soap maker faces inverse demand $p=36-3Q$ euros per batch when $Q$ batches are sold ($0<Q<12$). Revenue is the product $R(Q)=p(Q)\\cdot Q$. Unit production cost is constant at $6$ euros. Which of the following statements is/are correct?",
+      "statements": [
+        "Revenue is maximised at $Q=6$ batches.",
+        "At that output, price elasticity of demand equals $-1$.",
+        "Profit is maximised at the same output that maximises revenue.",
+        "Marginal revenue at $Q=4$ equals $12$.",
+        "Because price falls as $Q$ rises, revenue must be decreasing for every $Q>0$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$R(Q)=36Q-3Q^{2}$, so $R'=36-6Q=0$ at $Q=6$, and $R''=-6<0$\n\nSo the statement is True.",
+        "**B.** → True\n\nDemand is $Q=(36-p)/3$, so $D'(p)=-1/3$. At $Q=6$ one has $p=18$, and\n$$El_{Q}(p)=\\dfrac{D'(p)\\cdot p}{Q}=\\dfrac{(-1/3)\\cdot18}{6}=-1$$\n\nSo the statement is True.",
+        "**C.** → False\n\nProfit $P=R-6Q=30Q-3Q^{2}$ has $P'=30-6Q=0$ at $Q=5$, not at the revenue max $Q=6$\n\nSo the statement is False.",
+        "**D.** → True\n\n$R'(4)=36-24=12$\n\nSo the statement is True.",
+        "**E.** → False\n\nFalling price does not force falling revenue while $MR>0$; here $R'>0$ on $(0,6)$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 179,
+      "solution_overview": "Product-rule revenue from inverse demand peaks at $Q=6$ with unit elasticity. Constant MC shifts the profit max to $Q=5$. Positive MR on $(0,6)$ means revenue still rises there despite a falling price.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-180",
+      "case_id": "MATH 11.180",
+      "title": "Founder's wealth utility: risk attitude",
+      "subsection": "11.5",
+      "context": "A founder evaluates wealth $w$ (in thousands of euros) with utility $U(w)=20w-0.05w^{2}$ on $0<w<200$. Which of the following statements is/are correct?",
+      "statements": [
+        "Marginal utility is positive throughout $0<w<200$.",
+        "The founder is risk-averse on this interval because $U''(w)<0$.",
+        "Utility itself is maximised at $w=200$.",
+        "At $w=50$, marginal utility equals $15$.",
+        "A mean-preserving spread of wealth around $w=80$ would raise expected utility."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$U'(w)=20-0.1w>0$ on $(0,200)$ because $0.1w<20$ there\n\nSo the statement is True.",
+        "**B.** → True\n\n$U''(w)=-0.1<0$, so $U$ is strictly concave — the usual calculus signature of risk aversion\n\nSo the statement is True.",
+        "**C.** → False\n\n$U'=0$ at $w=200$, which is the right endpoint of the open interval; on $(0,200)$ utility is still strictly increasing, so there is no interior maximum below $200$\n\nSo the statement is False.",
+        "**D.** → True\n\n$U'(50)=20-5=15$\n\nSo the statement is True.",
+        "**E.** → False\n\nFor a strictly concave $U$, Jensen's inequality goes the other way: a mean-preserving spread lowers expected utility\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 180,
+      "solution_overview": "Positive but decreasing marginal utility ($U'>0$, $U''<0$) means risk aversion. Utility keeps rising on $(0,200)$. A mean-preserving spread reduces expected utility under concavity.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-181",
+      "case_id": "MATH 11.181",
+      "title": "Design duo: two inputs under a budget",
+      "subsection": "11.5",
+      "context": "A design duo spends a budget of $M=40$ euros on hours of illustration $x$ and hours of typesetting $y$, with prices $p_{x}=2$ and $p_{y}=4$, so $2x+4y=40$. Creative output is $U(x,y)=xy$. Reduce the problem to one free variable and treat it as an ordinary single-variable optimisation. Which of the following statements is/are correct?",
+      "statements": [
+        "Eliminating $y$ gives $U(x)=10x-\\dfrac12 x^{2}$ for $0<x<20$.",
+        "Output is maximised at $x=10$ illustration hours.",
+        "At that point the duo buys $y=5$ typesetting hours.",
+        "At the optimum one has $\\dfrac{y}{x}=\\dfrac{p_{y}}{p_{x}}$.",
+        "Spending the entire budget on illustration alone ($y=0$) maximises $U$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nFrom $2x+4y=40$ one has $y=10-\\frac12 x$, so $U=x(10-\\frac12 x)=10x-\\frac12 x^{2}$\n\nSo the statement is True.",
+        "**B.** → True\n\n$U'(x)=10-x=0$ at $x=10$, and $U''=-1<0$\n\nSo the statement is True.",
+        "**C.** → True\n\n$y=10-5=5$\n\nSo the statement is True.",
+        "**D.** → False\n\nThe correct price ratio in the MRS condition is $p_{x}/p_{y}$. Here $y/x=\\frac12=p_{x}/p_{y}$, not $p_{y}/p_{x}=2$\n\nSo the statement is False.",
+        "**E.** → False\n\nWith $y=0$ one has $U=0$, far below the interior maximum $U=50$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 181,
+      "solution_overview": "Budget reduction yields $U=10x-\\frac12 x^{2}$, maximised at $x=10$, $y=5$. The MRS matches $p_x/p_y$, not the reciprocal. Corner solutions with $y=0$ kill the product utility.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-182",
+      "case_id": "MATH 11.182",
+      "title": "Bike workshop: read expand/contract from a P′ graph",
+      "subsection": "11.5",
+      "context": "A bike workshop's weekly profit $P(Q)$ is not printed as a formula. Instead the figure shows marginal profit $P'(Q)$. Zeros are marked at $Q=2$ and $Q=8$. Use only the figure (and the usual sign reading of $P'$). Which of the following statements is/are correct?",
+      "statements": [
+        "On $(2,8)$ the workshop should expand a little: marginal profit is positive there.",
+        "Profit has a local maximum at $Q=8$.",
+        "Profit has a local minimum at $Q=2$.",
+        "At $Q=5$, reading the scale, $P'$ is greater than $6$.",
+        "Because $P'$ peaks somewhere near $Q=5$, that output maximises profit itself."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nBetween the marked zeros the curve sits above the axis, so $P'>0$ on $(2,8)$: a little more output raises profit\n\nSo the statement is True.",
+        "**B.** → True\n\nAt $Q=8$, $P'$ changes from $+$ to $-$, which is a local maximum of $P$\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $Q=2$, $P'$ changes from $-$ to $+$, which is a local minimum of $P$\n\nSo the statement is True.",
+        "**D.** → True\n\nThe midpoint peak of this downward-opening parabola has height $-(5-2)(5-8)=9>6$\n\nSo the statement is True.",
+        "**E.** → False\n\nA peak of $P'$ is where profit climbs fastest, not where profit is largest. Profit peaks where $P'$ crosses down through zero\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 182,
+      "solution_overview": "Read signs and crossings of $P'$ only. Expand on $(2,8)$, local min at $2$, local max at $8$. The peak of $P'$ is steepest climb, not the profit maximum.",
+      "placeholder": false,
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22334%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EMarginal%20profit%20P%E2%80%B2%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-1319429%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22564%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22164.8%22%20y1%3D%2244%22%20x2%3D%22164.8%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22277.6%22%20y1%3D%2244%22%20x2%3D%22277.6%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22390.4%22%20y1%3D%2244%22%20x2%3D%22390.4%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22503.2%22%20y1%3D%2244%22%20x2%3D%22503.2%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22616.0%22%20y1%3D%2244%22%20x2%3D%22616.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22316.7%22%20x2%3D%22616%22%20y2%3D%22316.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22262.2%22%20x2%3D%22616%22%20y2%3D%22262.2%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22207.6%22%20x2%3D%22616%22%20y2%3D%22207.6%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22153.1%22%20x2%3D%22616%22%20y2%3D%22153.1%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2298.5%22%20x2%3D%22616%22%20y2%3D%2298.5%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22207.6%22%20x2%3D%22616%22%20y2%3D%22207.6%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22616%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22164.8%22%20y1%3D%22344%22%20x2%3D%22164.8%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22164.8%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22277.6%22%20y1%3D%22344%22%20x2%3D%22277.6%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22277.6%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22390.4%22%20y1%3D%22344%22%20x2%3D%22390.4%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22390.4%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%22503.2%22%20y1%3D%22344%22%20x2%3D%22503.2%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22503.2%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cline%20x1%3D%22616.0%22%20y1%3D%22344%22%20x2%3D%22616.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22616.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E10%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22316.7%22%20x2%3D%2252%22%20y2%3D%22316.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22320.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22262.2%22%20x2%3D%2252%22%20y2%3D%22262.2%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22266.2%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22207.6%22%20x2%3D%2252%22%20y2%3D%22207.6%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22211.6%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22153.1%22%20x2%3D%2252%22%20y2%3D%22153.1%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22157.1%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2298.5%22%20x2%3D%2252%22%20y2%3D%2298.5%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22102.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C425.8%2053.8%2C421.6%2055.5%2C417.3%2057.3%2C413.2%2059.0%2C409.0%2060.8%2C404.8%2062.6%2C400.7%2064.3%2C396.6%2066.1%2C392.6%2067.9%2C388.5%2069.6%2C384.5%2071.4%2C380.6%2073.2%2C376.6%2074.9%2C372.7%2076.7%2C368.8%2078.4%2C364.9%2080.2%2C361.0%2082.0%2C357.2%2083.7%2C353.4%2085.5%2C349.7%2087.2%2C345.9%2089.0%2C342.2%2090.8%2C338.5%2092.5%2C334.9%2094.3%2C331.2%2096.1%2C327.6%2097.8%2C324.0%2099.6%2C320.5%20101.3%2C316.9%20103.1%2C313.4%20104.9%2C310.0%20106.6%2C306.5%20108.4%2C303.1%20110.2%2C299.7%20111.9%2C296.3%20113.7%2C293.0%20115.5%2C289.7%20117.2%2C286.4%20119.0%2C283.1%20120.7%2C279.9%20122.5%2C276.7%20124.3%2C273.5%20126.0%2C270.3%20127.8%2C267.2%20129.6%2C264.1%20131.3%2C261.0%20133.1%2C258.0%20134.8%2C255.0%20136.6%2C252.0%20138.4%2C249.0%20140.1%2C246.0%20141.9%2C243.1%20143.7%2C240.2%20145.4%2C237.4%20147.2%2C234.5%20148.9%2C231.7%20150.7%2C228.9%20152.5%2C226.2%20154.2%2C223.5%20156.0%2C220.8%20157.8%2C218.1%20159.5%2C215.4%20161.3%2C212.8%20163.0%2C210.2%20164.8%2C207.6%20166.6%2C205.1%20168.3%2C202.6%20170.1%2C200.1%20171.8%2C197.6%20173.6%2C195.2%20175.4%2C192.8%20177.1%2C190.4%20178.9%2C188.0%20180.7%2C185.7%20182.4%2C183.4%20184.2%2C181.1%20185.9%2C178.9%20187.7%2C176.6%20189.5%2C174.5%20191.2%2C172.3%20193.0%2C170.1%20194.8%2C168.0%20196.5%2C165.9%20198.3%2C163.9%20200.1%2C161.8%20201.8%2C159.8%20203.6%2C157.8%20205.3%2C155.9%20207.1%2C153.9%20208.9%2C152.0%20210.6%2C150.2%20212.4%2C148.3%20214.1%2C146.5%20215.9%2C144.7%20217.7%2C142.9%20219.4%2C141.2%20221.2%2C139.5%20223.0%2C137.8%20224.7%2C136.1%20226.5%2C134.5%20228.2%2C132.8%20230.0%2C131.3%20231.8%2C129.7%20233.5%2C128.2%20235.3%2C126.7%20237.1%2C125.2%20238.8%2C123.7%20240.6%2C122.3%20242.4%2C120.9%20244.1%2C119.5%20245.9%2C118.2%20247.6%2C116.9%20249.4%2C115.6%20251.2%2C114.3%20252.9%2C113.1%20254.7%2C111.9%20256.4%2C110.7%20258.2%2C109.5%20260.0%2C108.4%20261.7%2C107.3%20263.5%2C106.2%20265.3%2C105.2%20267.0%2C104.1%20268.8%2C103.1%20270.6%2C102.2%20272.3%2C101.2%20274.1%2C100.3%20275.8%2C99.4%20277.6%2C98.5%20279.4%2C97.7%20281.1%2C96.9%20282.9%2C96.1%20284.6%2C95.3%20286.4%2C94.6%20288.2%2C93.9%20289.9%2C93.2%20291.7%2C92.6%20293.5%2C92.0%20295.2%2C91.4%20297.0%2C90.8%20298.8%2C90.2%20300.5%2C89.7%20302.3%2C89.2%20304.0%2C88.8%20305.8%2C88.3%20307.6%2C87.9%20309.3%2C87.5%20311.1%2C87.2%20312.9%2C86.8%20314.6%2C86.5%20316.4%2C86.2%20318.1%2C86.0%20319.9%2C85.8%20321.7%2C85.6%20323.4%2C85.4%20325.2%2C85.2%20326.9%2C85.1%20328.7%2C85.0%20330.5%2C85.0%20332.2%2C84.9%20334.0%2C84.9%20335.8%2C84.9%20337.5%2C85.0%20339.3%2C85.0%20341.0%2C85.1%20342.8%2C85.2%20344.6%2C85.4%20346.3%2C85.6%20348.1%2C85.8%20349.9%2C86.0%20351.6%2C86.2%20353.4%2C86.5%20355.1%2C86.8%20356.9%2C87.2%20358.7%2C87.5%20360.4%2C87.9%20362.2%2C88.3%20364.0%2C88.8%20365.7%2C89.2%20367.5%2C89.7%20369.2%2C90.2%20371.0%2C90.8%20372.8%2C91.4%20374.5%2C92.0%20376.3%2C92.6%20378.1%2C93.2%20379.8%2C93.9%20381.6%2C94.6%20383.4%2C95.3%20385.1%2C96.1%20386.9%2C96.9%20388.6%2C97.7%20390.4%2C98.5%20392.2%2C99.4%20393.9%2C100.3%20395.7%2C101.2%20397.5%2C102.2%20399.2%2C103.1%20401.0%2C104.1%20402.7%2C105.2%20404.5%2C106.2%20406.3%2C107.3%20408.0%2C108.4%20409.8%2C109.5%20411.5%2C110.7%20413.3%2C111.9%20415.1%2C113.1%20416.8%2C114.3%20418.6%2C115.6%20420.4%2C116.9%20422.1%2C118.2%20423.9%2C119.5%20425.6%2C120.9%20427.4%2C122.3%20429.2%2C123.7%20430.9%2C125.2%20432.7%2C126.7%20434.5%2C128.2%20436.2%2C129.7%20438.0%2C131.3%20439.8%2C132.8%20441.5%2C134.5%20443.3%2C136.1%20445.0%2C137.8%20446.8%2C139.5%20448.6%2C141.2%20450.3%2C142.9%20452.1%2C144.7%20453.9%2C146.5%20455.6%2C148.3%20457.4%2C150.2%20459.1%2C152.0%20460.9%2C153.9%20462.7%2C155.9%20464.4%2C157.8%20466.2%2C159.8%20468.0%2C161.8%20469.7%2C163.9%20471.5%2C165.9%20473.2%2C168.0%20475.0%2C170.1%20476.8%2C172.3%20478.5%2C174.5%20480.3%2C176.6%20482.0%2C178.9%20483.8%2C181.1%20485.6%2C183.4%20487.3%2C185.7%20489.1%2C188.0%20490.9%2C190.4%20492.6%2C192.8%20494.4%2C195.2%20496.1%2C197.6%20497.9%2C200.1%20499.7%2C202.6%20501.4%2C205.1%20503.2%2C207.6%20505.0%2C210.2%20506.7%2C212.8%20508.5%2C215.4%20510.2%2C218.1%20512.0%2C220.8%20513.8%2C223.5%20515.5%2C226.2%20517.3%2C228.9%20519.1%2C231.7%20520.8%2C234.5%20522.6%2C237.4%20524.4%2C240.2%20526.1%2C243.1%20527.9%2C246.0%20529.6%2C249.0%20531.4%2C252.0%20533.2%2C255.0%20534.9%2C258.0%20536.7%2C261.0%20538.5%2C264.1%20540.2%2C267.2%20542.0%2C270.3%20543.7%2C273.5%20545.5%2C276.7%20547.3%2C279.9%20549.0%2C283.1%20550.8%2C286.4%20552.5%2C289.7%20554.3%2C293.0%20556.1%2C296.3%20557.8%2C299.7%20559.6%2C303.1%20561.4%2C306.5%20563.1%2C310.0%20564.9%2C313.4%20566.6%2C316.9%20568.4%2C320.5%20570.2%2C324.0%20571.9%2C327.6%20573.7%2C331.2%20575.5%2C334.9%20577.2%2C338.5%20579.0%2C342.2%20580.8%2C345.9%20582.5%2C349.7%20584.3%2C353.4%20586.0%2C357.2%20587.8%2C361.0%20589.6%2C364.9%20591.3%2C368.8%20593.1%2C372.7%20594.9%2C376.6%20596.6%2C380.6%20598.4%2C384.5%20600.1%2C388.5%20601.9%2C392.6%20603.7%2C396.6%20605.4%2C400.7%20607.2%2C404.8%20609.0%2C409.0%20610.7%2C413.2%20612.5%2C417.3%20614.2%2C421.6%20616.0%2C425.8%22%20clip-path%3D%22url%28%23clip-1319429%29%22%2F%3E%0A%3Ccircle%20cx%3D%22164.8%22%20cy%3D%22207.6%22%20r%3D%223.4%22%20fill%3D%22%238B5A2B%22%2F%3E%0A%3Ccircle%20cx%3D%22503.2%22%20cy%3D%22207.6%22%20r%3D%223.4%22%20fill%3D%22%238B5A2B%22%2F%3E%0A%3Ctext%20x%3D%22334%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EQ%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-11-183",
+      "case_id": "MATH 11.183",
+      "title": "Candle maker: MR and MC on shared axes",
+      "subsection": "11.5",
+      "context": "A candle maker's marginal revenue (brown) and marginal cost (green) are plotted on the same axes in the figure. The curves meet near $Q=9$. No algebraic formulas are supplied in the stem — reason from the picture and standard MR/MC logic. Which of the following statements is/are correct?",
+      "statements": [
+        "At outputs a little below $Q=9$, marginal revenue lies above marginal cost, so expanding raises profit.",
+        "The profit-maximising interior candidate is where the two curves cross.",
+        "At $Q=15$, marginal cost exceeds marginal revenue.",
+        "Because MR slopes down and MC slopes up, their crossing is a profit maximum rather than a minimum.",
+        "The height of the crossing is the maximised profit level $P(9)$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nLeft of the marked crossing, brown sits above green, so $MR>MC$ and a little more output raises profit\n\nSo the statement is True.",
+        "**B.** → True\n\nThe standard first-order condition is $MR=MC$, which is the intersection on the shared plane\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $Q=15$, green is clearly above brown on the figure\n\nSo the statement is True.",
+        "**D.** → True\n\nWith falling MR and rising MC, $MR-MC$ changes from $+$ to $-$ at the cross, so profit has a local maximum there\n\nSo the statement is True.",
+        "**E.** → False\n\nThe crossing height is the common value of $MR$ and $MC$, not the level of total profit $P$\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 183,
+      "solution_overview": "Shared-plane MR/MC: expand while brown is above green, stop at the cross. The cross is a max because MR falls and MC rises. Its height is a marginal value, not total profit.",
+      "placeholder": false,
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EMR%20and%20MC%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-8100054%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22319.0%22%20x2%3D%22506%22%20y2%3D%22319.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22256.5%22%20x2%3D%22506%22%20y2%3D%22256.5%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22131.5%22%20x2%3D%22506%22%20y2%3D%22131.5%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2269.0%22%20x2%3D%22506%22%20y2%3D%2269.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22319.0%22%20x2%3D%22506%22%20y2%3D%22319.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E9%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E12%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E15%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E18%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22319.0%22%20x2%3D%2252%22%20y2%3D%22319.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22323.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22256.5%22%20x2%3D%2252%22%20y2%3D%22256.5%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22260.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22194.0%22%20x2%3D%2252%22%20y2%3D%22194.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22198.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E10%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22131.5%22%20x2%3D%2252%22%20y2%3D%22131.5%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22135.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E15%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2269.0%22%20x2%3D%2252%22%20y2%3D%2269.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2273.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E20%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C69.0%2053.4%2C69.7%2054.8%2C70.4%2056.3%2C71.1%2057.7%2C71.8%2059.1%2C72.5%2060.5%2C73.2%2061.9%2C73.9%2063.4%2C74.6%2064.8%2C75.3%2066.2%2C76.0%2067.6%2C76.7%2069.0%2C77.4%2070.4%2C78.1%2071.9%2C78.8%2073.3%2C79.5%2074.7%2C80.2%2076.1%2C81.0%2077.5%2C81.7%2079.0%2C82.4%2080.4%2C83.1%2081.8%2C83.8%2083.2%2C84.5%2084.6%2C85.2%2086.1%2C85.9%2087.5%2C86.6%2088.9%2C87.3%2090.3%2C88.0%2091.7%2C88.7%2093.1%2C89.4%2094.6%2C90.1%2096.0%2C90.8%2097.4%2C91.5%2098.8%2C92.2%20100.2%2C92.9%20101.7%2C93.6%20103.1%2C94.3%20104.5%2C95.0%20105.9%2C95.7%20107.3%2C96.4%20108.8%2C97.1%20110.2%2C97.8%20111.6%2C98.5%20113.0%2C99.2%20114.4%2C99.9%20115.8%2C100.6%20117.3%2C101.3%20118.7%2C102.0%20120.1%2C102.8%20121.5%2C103.5%20122.9%2C104.2%20124.4%2C104.9%20125.8%2C105.6%20127.2%2C106.3%20128.6%2C107.0%20130.0%2C107.7%20131.4%2C108.4%20132.9%2C109.1%20134.3%2C109.8%20135.7%2C110.5%20137.1%2C111.2%20138.5%2C111.9%20140.0%2C112.6%20141.4%2C113.3%20142.8%2C114.0%20144.2%2C114.7%20145.6%2C115.4%20147.1%2C116.1%20148.5%2C116.8%20149.9%2C117.5%20151.3%2C118.2%20152.7%2C118.9%20154.1%2C119.6%20155.6%2C120.3%20157.0%2C121.0%20158.4%2C121.7%20159.8%2C122.4%20161.2%2C123.1%20162.7%2C123.8%20164.1%2C124.5%20165.5%2C125.2%20166.9%2C126.0%20168.3%2C126.7%20169.8%2C127.4%20171.2%2C128.1%20172.6%2C128.8%20174.0%2C129.5%20175.4%2C130.2%20176.9%2C130.9%20178.3%2C131.6%20179.7%2C132.3%20181.1%2C133.0%20182.5%2C133.7%20183.9%2C134.4%20185.4%2C135.1%20186.8%2C135.8%20188.2%2C136.5%20189.6%2C137.2%20191.0%2C137.9%20192.5%2C138.6%20193.9%2C139.3%20195.3%2C140.0%20196.7%2C140.7%20198.1%2C141.4%20199.5%2C142.1%20201.0%2C142.8%20202.4%2C143.5%20203.8%2C144.2%20205.2%2C144.9%20206.6%2C145.6%20208.1%2C146.3%20209.5%2C147.0%20210.9%2C147.8%20212.3%2C148.5%20213.7%2C149.2%20215.2%2C149.9%20216.6%2C150.6%20218.0%2C151.3%20219.4%2C152.0%20220.8%2C152.7%20222.2%2C153.4%20223.7%2C154.1%20225.1%2C154.8%20226.5%2C155.5%20227.9%2C156.2%20229.3%2C156.9%20230.8%2C157.6%20232.2%2C158.3%20233.6%2C159.0%20235.0%2C159.7%20236.4%2C160.4%20237.9%2C161.1%20239.3%2C161.8%20240.7%2C162.5%20242.1%2C163.2%20243.5%2C163.9%20245.0%2C164.6%20246.4%2C165.3%20247.8%2C166.0%20249.2%2C166.7%20250.6%2C167.4%20252.0%2C168.1%20253.5%2C168.8%20254.9%2C169.5%20256.3%2C170.2%20257.7%2C171.0%20259.1%2C171.7%20260.6%2C172.4%20262.0%2C173.1%20263.4%2C173.8%20264.8%2C174.5%20266.2%2C175.2%20267.6%2C175.9%20269.1%2C176.6%20270.5%2C177.3%20271.9%2C178.0%20273.3%2C178.7%20274.7%2C179.4%20276.2%2C180.1%20277.6%2C180.8%20279.0%2C181.5%20280.4%2C182.2%20281.8%2C182.9%20283.3%2C183.6%20284.7%2C184.3%20286.1%2C185.0%20287.5%2C185.7%20288.9%2C186.4%20290.3%2C187.1%20291.8%2C187.8%20293.2%2C188.5%20294.6%2C189.2%20296.0%2C189.9%20297.4%2C190.6%20298.9%2C191.3%20300.3%2C192.0%20301.7%2C192.8%20303.1%2C193.5%20304.5%2C194.2%20306.0%2C194.9%20307.4%2C195.6%20308.8%2C196.3%20310.2%2C197.0%20311.6%2C197.7%20313.0%2C198.4%20314.5%2C199.1%20315.9%2C199.8%20317.3%2C200.5%20318.7%2C201.2%20320.1%2C201.9%20321.6%2C202.6%20323.0%2C203.3%20324.4%2C204.0%20325.8%2C204.7%20327.2%2C205.4%20328.7%2C206.1%20330.1%2C206.8%20331.5%2C207.5%20332.9%2C208.2%20334.3%2C208.9%20335.8%2C209.6%20337.2%2C210.3%20338.6%2C211.0%20340.0%2C211.7%20341.4%2C212.4%20342.8%2C213.1%20344.3%2C213.8%20345.7%2C214.5%20347.1%2C215.2%20348.5%2C216.0%20349.9%2C216.7%20351.4%2C217.4%20352.8%2C218.1%20354.2%2C218.8%20355.6%2C219.5%20357.0%2C220.2%20358.5%2C220.9%20359.9%2C221.6%20361.3%2C222.3%20362.7%2C223.0%20364.1%2C223.7%20365.5%2C224.4%20367.0%2C225.1%20368.4%2C225.8%20369.8%2C226.5%20371.2%2C227.2%20372.6%2C227.9%20374.1%2C228.6%20375.5%2C229.3%20376.9%2C230.0%20378.3%2C230.7%20379.7%2C231.4%20381.2%2C232.1%20382.6%2C232.8%20384.0%2C233.5%20385.4%2C234.2%20386.8%2C234.9%20388.2%2C235.6%20389.7%2C236.3%20391.1%2C237.0%20392.5%2C237.8%20393.9%2C238.5%20395.3%2C239.2%20396.8%2C239.9%20398.2%2C240.6%20399.6%2C241.3%20401.0%2C242.0%20402.4%2C242.7%20403.8%2C243.4%20405.3%2C244.1%20406.7%2C244.8%20408.1%2C245.5%20409.5%2C246.2%20410.9%2C246.9%20412.4%2C247.6%20413.8%2C248.3%20415.2%2C249.0%20416.6%2C249.7%20418.0%2C250.4%20419.5%2C251.1%20420.9%2C251.8%20422.3%2C252.5%20423.7%2C253.2%20425.1%2C253.9%20426.5%2C254.6%20428.0%2C255.3%20429.4%2C256.0%20430.8%2C256.7%20432.2%2C257.4%20433.6%2C258.1%20435.1%2C258.8%20436.5%2C259.5%20437.9%2C260.2%20439.3%2C261.0%20440.7%2C261.7%20442.2%2C262.4%20443.6%2C263.1%20445.0%2C263.8%20446.4%2C264.5%20447.8%2C265.2%20449.2%2C265.9%20450.7%2C266.6%20452.1%2C267.3%20453.5%2C268.0%20454.9%2C268.7%20456.3%2C269.4%20457.8%2C270.1%20459.2%2C270.8%20460.6%2C271.5%20462.0%2C272.2%20463.4%2C272.9%20464.9%2C273.6%20466.3%2C274.3%20467.7%2C275.0%20469.1%2C275.7%20470.5%2C276.4%20471.9%2C277.1%20473.4%2C277.8%20474.8%2C278.5%20476.2%2C279.2%20477.6%2C279.9%20479.0%2C280.6%20480.5%2C281.3%20481.9%2C282.0%20483.3%2C282.8%20484.7%2C283.5%20486.1%2C284.2%20487.6%2C284.9%20489.0%2C285.6%20490.4%2C286.3%20491.8%2C287.0%20493.2%2C287.7%20494.7%2C288.4%20496.1%2C289.1%20497.5%2C289.8%20498.9%2C290.5%20500.3%2C291.2%20501.7%2C291.9%20503.2%2C292.6%20504.6%2C293.3%20506.0%2C294.0%22%20clip-path%3D%22url%28%23clip-8100054%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C294.0%2053.4%2C293.3%2054.8%2C292.6%2056.3%2C291.9%2057.7%2C291.2%2059.1%2C290.5%2060.5%2C289.8%2061.9%2C289.1%2063.4%2C288.4%2064.8%2C287.7%2066.2%2C287.0%2067.6%2C286.3%2069.0%2C285.6%2070.4%2C284.9%2071.9%2C284.2%2073.3%2C283.5%2074.7%2C282.8%2076.1%2C282.0%2077.5%2C281.3%2079.0%2C280.6%2080.4%2C279.9%2081.8%2C279.2%2083.2%2C278.5%2084.6%2C277.8%2086.1%2C277.1%2087.5%2C276.4%2088.9%2C275.7%2090.3%2C275.0%2091.7%2C274.3%2093.1%2C273.6%2094.6%2C272.9%2096.0%2C272.2%2097.4%2C271.5%2098.8%2C270.8%20100.2%2C270.1%20101.7%2C269.4%20103.1%2C268.7%20104.5%2C268.0%20105.9%2C267.3%20107.3%2C266.6%20108.8%2C265.9%20110.2%2C265.2%20111.6%2C264.5%20113.0%2C263.8%20114.4%2C263.1%20115.8%2C262.4%20117.3%2C261.7%20118.7%2C261.0%20120.1%2C260.2%20121.5%2C259.5%20122.9%2C258.8%20124.4%2C258.1%20125.8%2C257.4%20127.2%2C256.7%20128.6%2C256.0%20130.0%2C255.3%20131.4%2C254.6%20132.9%2C253.9%20134.3%2C253.2%20135.7%2C252.5%20137.1%2C251.8%20138.5%2C251.1%20140.0%2C250.4%20141.4%2C249.7%20142.8%2C249.0%20144.2%2C248.3%20145.6%2C247.6%20147.1%2C246.9%20148.5%2C246.2%20149.9%2C245.5%20151.3%2C244.8%20152.7%2C244.1%20154.1%2C243.4%20155.6%2C242.7%20157.0%2C242.0%20158.4%2C241.3%20159.8%2C240.6%20161.2%2C239.9%20162.7%2C239.2%20164.1%2C238.5%20165.5%2C237.8%20166.9%2C237.0%20168.3%2C236.3%20169.8%2C235.6%20171.2%2C234.9%20172.6%2C234.2%20174.0%2C233.5%20175.4%2C232.8%20176.9%2C232.1%20178.3%2C231.4%20179.7%2C230.7%20181.1%2C230.0%20182.5%2C229.3%20183.9%2C228.6%20185.4%2C227.9%20186.8%2C227.2%20188.2%2C226.5%20189.6%2C225.8%20191.0%2C225.1%20192.5%2C224.4%20193.9%2C223.7%20195.3%2C223.0%20196.7%2C222.3%20198.1%2C221.6%20199.5%2C220.9%20201.0%2C220.2%20202.4%2C219.5%20203.8%2C218.8%20205.2%2C218.1%20206.6%2C217.4%20208.1%2C216.7%20209.5%2C216.0%20210.9%2C215.2%20212.3%2C214.5%20213.7%2C213.8%20215.2%2C213.1%20216.6%2C212.4%20218.0%2C211.7%20219.4%2C211.0%20220.8%2C210.3%20222.2%2C209.6%20223.7%2C208.9%20225.1%2C208.2%20226.5%2C207.5%20227.9%2C206.8%20229.3%2C206.1%20230.8%2C205.4%20232.2%2C204.7%20233.6%2C204.0%20235.0%2C203.3%20236.4%2C202.6%20237.9%2C201.9%20239.3%2C201.2%20240.7%2C200.5%20242.1%2C199.8%20243.5%2C199.1%20245.0%2C198.4%20246.4%2C197.7%20247.8%2C197.0%20249.2%2C196.3%20250.6%2C195.6%20252.0%2C194.9%20253.5%2C194.2%20254.9%2C193.5%20256.3%2C192.8%20257.7%2C192.0%20259.1%2C191.3%20260.6%2C190.6%20262.0%2C189.9%20263.4%2C189.2%20264.8%2C188.5%20266.2%2C187.8%20267.6%2C187.1%20269.1%2C186.4%20270.5%2C185.7%20271.9%2C185.0%20273.3%2C184.3%20274.7%2C183.6%20276.2%2C182.9%20277.6%2C182.2%20279.0%2C181.5%20280.4%2C180.8%20281.8%2C180.1%20283.3%2C179.4%20284.7%2C178.7%20286.1%2C178.0%20287.5%2C177.3%20288.9%2C176.6%20290.3%2C175.9%20291.8%2C175.2%20293.2%2C174.5%20294.6%2C173.8%20296.0%2C173.1%20297.4%2C172.4%20298.9%2C171.7%20300.3%2C171.0%20301.7%2C170.2%20303.1%2C169.5%20304.5%2C168.8%20306.0%2C168.1%20307.4%2C167.4%20308.8%2C166.7%20310.2%2C166.0%20311.6%2C165.3%20313.0%2C164.6%20314.5%2C163.9%20315.9%2C163.2%20317.3%2C162.5%20318.7%2C161.8%20320.1%2C161.1%20321.6%2C160.4%20323.0%2C159.7%20324.4%2C159.0%20325.8%2C158.3%20327.2%2C157.6%20328.7%2C156.9%20330.1%2C156.2%20331.5%2C155.5%20332.9%2C154.8%20334.3%2C154.1%20335.8%2C153.4%20337.2%2C152.7%20338.6%2C152.0%20340.0%2C151.3%20341.4%2C150.6%20342.8%2C149.9%20344.3%2C149.2%20345.7%2C148.5%20347.1%2C147.8%20348.5%2C147.0%20349.9%2C146.3%20351.4%2C145.6%20352.8%2C144.9%20354.2%2C144.2%20355.6%2C143.5%20357.0%2C142.8%20358.5%2C142.1%20359.9%2C141.4%20361.3%2C140.7%20362.7%2C140.0%20364.1%2C139.3%20365.5%2C138.6%20367.0%2C137.9%20368.4%2C137.2%20369.8%2C136.5%20371.2%2C135.8%20372.6%2C135.1%20374.1%2C134.4%20375.5%2C133.7%20376.9%2C133.0%20378.3%2C132.3%20379.7%2C131.6%20381.2%2C130.9%20382.6%2C130.2%20384.0%2C129.5%20385.4%2C128.8%20386.8%2C128.1%20388.2%2C127.4%20389.7%2C126.7%20391.1%2C126.0%20392.5%2C125.2%20393.9%2C124.5%20395.3%2C123.8%20396.8%2C123.1%20398.2%2C122.4%20399.6%2C121.7%20401.0%2C121.0%20402.4%2C120.3%20403.8%2C119.6%20405.3%2C118.9%20406.7%2C118.2%20408.1%2C117.5%20409.5%2C116.8%20410.9%2C116.1%20412.4%2C115.4%20413.8%2C114.7%20415.2%2C114.0%20416.6%2C113.3%20418.0%2C112.6%20419.5%2C111.9%20420.9%2C111.2%20422.3%2C110.5%20423.7%2C109.8%20425.1%2C109.1%20426.5%2C108.4%20428.0%2C107.7%20429.4%2C107.0%20430.8%2C106.3%20432.2%2C105.6%20433.6%2C104.9%20435.1%2C104.2%20436.5%2C103.5%20437.9%2C102.8%20439.3%2C102.0%20440.7%2C101.3%20442.2%2C100.6%20443.6%2C99.9%20445.0%2C99.2%20446.4%2C98.5%20447.8%2C97.8%20449.2%2C97.1%20450.7%2C96.4%20452.1%2C95.7%20453.5%2C95.0%20454.9%2C94.3%20456.3%2C93.6%20457.8%2C92.9%20459.2%2C92.2%20460.6%2C91.5%20462.0%2C90.8%20463.4%2C90.1%20464.9%2C89.4%20466.3%2C88.7%20467.7%2C88.0%20469.1%2C87.3%20470.5%2C86.6%20471.9%2C85.9%20473.4%2C85.2%20474.8%2C84.5%20476.2%2C83.8%20477.6%2C83.1%20479.0%2C82.4%20480.5%2C81.7%20481.9%2C81.0%20483.3%2C80.2%20484.7%2C79.5%20486.1%2C78.8%20487.6%2C78.1%20489.0%2C77.4%20490.4%2C76.7%20491.8%2C76.0%20493.2%2C75.3%20494.7%2C74.6%20496.1%2C73.9%20497.5%2C73.2%20498.9%2C72.5%20500.3%2C71.8%20501.7%2C71.1%20503.2%2C70.4%20504.6%2C69.7%20506.0%2C69.0%22%20clip-path%3D%22url%28%23clip-8100054%29%22%2F%3E%0A%3Ccircle%20cx%3D%22279.0%22%20cy%3D%22181.5%22%20r%3D%223.4%22%20fill%3D%22%23444444%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EMR%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EMC%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EQ%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-11-184",
+      "case_id": "MATH 11.184",
+      "title": "Clinic throughput: match a level curve to its slope",
+      "subsection": "11.5",
+      "context": "A clinic tracks a throughput index $f$ (brown) and its derivative $f'$ (green) on one shared figure. Which of the following statements is/are correct?",
+      "statements": [
+        "Turning points of brown line up with zeros of green.",
+        "Where green is positive, brown is rising.",
+        "The highest point of green is a local maximum of brown.",
+        "At $x=3$, green is near its peak height, matching the steepest climb of brown.",
+        "Brown has a local maximum near $x=1$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nCritical points of $f$ are zeros of $f'$; the marked green crossings sit under brown's turning points\n\nSo the statement is True.",
+        "**B.** → True\n\nPositive $f'$ means $f$ is increasing: brown climbs wherever green is above the axis\n\nSo the statement is True.",
+        "**C.** → False\n\nThe peak of green is where brown's slope is steepest, not where brown peaks. Brown peaks where green crosses from $+$ to $-$ near $x=5$\n\nSo the statement is False.",
+        "**D.** → True\n\nBetween the zeros, green's height is about $4$ at $x=3$, matching brown's steep middle climb\n\nSo the statement is True.",
+        "**E.** → False\n\nAt $x=1$, green changes $-$ to $+$, so brown has a local minimum there, not a maximum\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 184,
+      "solution_overview": "Consistency between $f$ and $f'$ on one plane: zeros of green mark turns of brown; the peak of green is steepest slope, not a peak of brown.",
+      "placeholder": false,
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%20and%20f%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-5741605%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22506%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22289.5%22%20x2%3D%22506%22%20y2%3D%22289.5%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22234.9%22%20x2%3D%22506%22%20y2%3D%22234.9%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22180.4%22%20x2%3D%22506%22%20y2%3D%22180.4%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22125.8%22%20x2%3D%22506%22%20y2%3D%22125.8%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2271.3%22%20x2%3D%22506%22%20y2%3D%2271.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22180.4%22%20x2%3D%22506%22%20y2%3D%22180.4%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-12%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22289.5%22%20x2%3D%2252%22%20y2%3D%22289.5%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22293.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22234.9%22%20x2%3D%2252%22%20y2%3D%22234.9%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22238.9%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22180.4%22%20x2%3D%2252%22%20y2%3D%22180.4%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22184.4%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22125.8%22%20x2%3D%2252%22%20y2%3D%22125.8%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22129.8%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2271.3%22%20x2%3D%2252%22%20y2%3D%2271.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2275.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C180.4%2053.4%2C181.6%2054.8%2C182.9%2056.3%2C184.1%2057.7%2C185.2%2059.1%2C186.4%2060.5%2C187.5%2061.9%2C188.6%2063.4%2C189.7%2064.8%2C190.7%2066.2%2C191.7%2067.6%2C192.7%2069.0%2C193.7%2070.4%2C194.6%2071.9%2C195.5%2073.3%2C196.4%2074.7%2C197.3%2076.1%2C198.1%2077.5%2C198.9%2079.0%2C199.7%2080.4%2C200.4%2081.8%2C201.1%2083.2%2C201.8%2084.6%2C202.5%2086.0%2C203.2%2087.5%2C203.8%2088.9%2C204.4%2090.3%2C205.0%2091.7%2C205.5%2093.1%2C206.1%2094.6%2C206.6%2096.0%2C207.1%2097.4%2C207.5%2098.8%2C208.0%20100.2%2C208.4%20101.7%2C208.8%20103.1%2C209.1%20104.5%2C209.5%20105.9%2C209.8%20107.3%2C210.1%20108.8%2C210.4%20110.2%2C210.7%20111.6%2C210.9%20113.0%2C211.1%20114.4%2C211.3%20115.8%2C211.5%20117.3%2C211.7%20118.7%2C211.8%20120.1%2C211.9%20121.5%2C212.0%20122.9%2C212.1%20124.4%2C212.1%20125.8%2C212.2%20127.2%2C212.2%20128.6%2C212.2%20130.0%2C212.2%20131.4%2C212.1%20132.9%2C212.1%20134.3%2C212.0%20135.7%2C211.9%20137.1%2C211.8%20138.5%2C211.6%20140.0%2C211.5%20141.4%2C211.3%20142.8%2C211.1%20144.2%2C210.9%20145.6%2C210.7%20147.1%2C210.5%20148.5%2C210.2%20149.9%2C209.9%20151.3%2C209.7%20152.7%2C209.4%20154.2%2C209.0%20155.6%2C208.7%20157.0%2C208.4%20158.4%2C208.0%20159.8%2C207.6%20161.2%2C207.2%20162.7%2C206.8%20164.1%2C206.4%20165.5%2C205.9%20166.9%2C205.5%20168.3%2C205.0%20169.8%2C204.5%20171.2%2C204.0%20172.6%2C203.5%20174.0%2C203.0%20175.4%2C202.5%20176.8%2C201.9%20178.3%2C201.3%20179.7%2C200.8%20181.1%2C200.2%20182.5%2C199.6%20183.9%2C199.0%20185.4%2C198.3%20186.8%2C197.7%20188.2%2C197.1%20189.6%2C196.4%20191.0%2C195.7%20192.5%2C195.0%20193.9%2C194.3%20195.3%2C193.6%20196.7%2C192.9%20198.1%2C192.2%20199.6%2C191.5%20201.0%2C190.7%20202.4%2C190.0%20203.8%2C189.2%20205.2%2C188.4%20206.6%2C187.6%20208.1%2C186.8%20209.5%2C186.0%20210.9%2C185.2%20212.3%2C184.4%20213.7%2C183.6%20215.2%2C182.7%20216.6%2C181.9%20218.0%2C181.0%20219.4%2C180.2%20220.8%2C179.3%20222.2%2C178.4%20223.7%2C177.6%20225.1%2C176.7%20226.5%2C175.8%20227.9%2C174.9%20229.3%2C174.0%20230.8%2C173.0%20232.2%2C172.1%20233.6%2C171.2%20235.0%2C170.3%20236.4%2C169.3%20237.9%2C168.4%20239.3%2C167.4%20240.7%2C166.5%20242.1%2C165.5%20243.5%2C164.6%20244.9%2C163.6%20246.4%2C162.6%20247.8%2C161.6%20249.2%2C160.7%20250.6%2C159.7%20252.0%2C158.7%20253.5%2C157.7%20254.9%2C156.7%20256.3%2C155.7%20257.7%2C154.7%20259.1%2C153.7%20260.6%2C152.7%20262.0%2C151.7%20263.4%2C150.7%20264.8%2C149.7%20266.2%2C148.6%20267.6%2C147.6%20269.1%2C146.6%20270.5%2C145.6%20271.9%2C144.6%20273.3%2C143.5%20274.7%2C142.5%20276.2%2C141.5%20277.6%2C140.5%20279.0%2C139.5%20280.4%2C138.4%20281.8%2C137.4%20283.3%2C136.4%20284.7%2C135.4%20286.1%2C134.3%20287.5%2C133.3%20288.9%2C132.3%20290.4%2C131.3%20291.8%2C130.3%20293.2%2C129.3%20294.6%2C128.2%20296.0%2C127.2%20297.4%2C126.2%20298.9%2C125.2%20300.3%2C124.2%20301.7%2C123.2%20303.1%2C122.2%20304.5%2C121.2%20306.0%2C120.2%20307.4%2C119.2%20308.8%2C118.3%20310.2%2C117.3%20311.6%2C116.3%20313.1%2C115.3%20314.5%2C114.4%20315.9%2C113.4%20317.3%2C112.4%20318.7%2C111.5%20320.1%2C110.5%20321.6%2C109.6%20323.0%2C108.6%20324.4%2C107.7%20325.8%2C106.8%20327.2%2C105.9%20328.7%2C104.9%20330.1%2C104.0%20331.5%2C103.1%20332.9%2C102.2%20334.3%2C101.3%20335.8%2C100.5%20337.2%2C99.6%20338.6%2C98.7%20340.0%2C97.9%20341.4%2C97.0%20342.8%2C96.2%20344.3%2C95.3%20345.7%2C94.5%20347.1%2C93.7%20348.5%2C92.9%20349.9%2C92.1%20351.4%2C91.3%20352.8%2C90.5%20354.2%2C89.7%20355.6%2C88.9%20357.0%2C88.2%20358.4%2C87.4%20359.9%2C86.7%20361.3%2C86.0%20362.7%2C85.3%20364.1%2C84.6%20365.5%2C83.9%20367.0%2C83.2%20368.4%2C82.5%20369.8%2C81.9%20371.2%2C81.2%20372.6%2C80.6%20374.1%2C79.9%20375.5%2C79.3%20376.9%2C78.7%20378.3%2C78.1%20379.7%2C77.6%20381.1%2C77.0%20382.6%2C76.5%20384.0%2C75.9%20385.4%2C75.4%20386.8%2C74.9%20388.2%2C74.4%20389.7%2C73.9%20391.1%2C73.4%20392.5%2C73.0%20393.9%2C72.5%20395.3%2C72.1%20396.8%2C71.7%20398.2%2C71.3%20399.6%2C70.9%20401.0%2C70.6%20402.4%2C70.2%20403.9%2C69.9%20405.3%2C69.6%20406.7%2C69.3%20408.1%2C69.0%20409.5%2C68.7%20410.9%2C68.4%20412.4%2C68.2%20413.8%2C68.0%20415.2%2C67.8%20416.6%2C67.6%20418.0%2C67.4%20419.5%2C67.3%20420.9%2C67.1%20422.3%2C67.0%20423.7%2C66.9%20425.1%2C66.9%20426.6%2C66.8%20428.0%2C66.8%20429.4%2C66.7%20430.8%2C66.7%20432.2%2C66.7%20433.6%2C66.8%20435.1%2C66.8%20436.5%2C66.9%20437.9%2C67.0%20439.3%2C67.1%20440.7%2C67.3%20442.2%2C67.4%20443.6%2C67.6%20445.0%2C67.8%20446.4%2C68.0%20447.8%2C68.2%20449.2%2C68.5%20450.7%2C68.8%20452.1%2C69.1%20453.5%2C69.4%20454.9%2C69.8%20456.3%2C70.1%20457.8%2C70.5%20459.2%2C70.9%20460.6%2C71.4%20462.0%2C71.8%20463.4%2C72.3%20464.9%2C72.8%20466.3%2C73.4%20467.7%2C73.9%20469.1%2C74.5%20470.5%2C75.1%20471.9%2C75.7%20473.4%2C76.4%20474.8%2C77.1%20476.2%2C77.8%20477.6%2C78.5%20479.0%2C79.2%20480.5%2C80.0%20481.9%2C80.8%20483.3%2C81.6%20484.7%2C82.5%20486.1%2C83.4%20487.6%2C84.3%20489.0%2C85.2%20490.4%2C86.2%20491.8%2C87.2%20493.2%2C88.2%20494.6%2C89.2%20496.1%2C90.3%20497.5%2C91.4%20498.9%2C92.5%20500.3%2C93.7%20501.7%2C94.8%20503.2%2C96.0%20504.6%2C97.3%20506.0%2C98.5%22%20clip-path%3D%22url%28%23clip-5741605%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C248.5%2053.4%2C247.0%2054.8%2C245.5%2056.3%2C244.0%2057.7%2C242.5%2059.1%2C241.0%2060.5%2C239.5%2061.9%2C238.0%2063.4%2C236.6%2064.8%2C235.1%2066.2%2C233.7%2067.6%2C232.3%2069.0%2C230.8%2070.4%2C229.4%2071.9%2C228.0%2073.3%2C226.6%2074.7%2C225.2%2076.1%2C223.9%2077.5%2C222.5%2079.0%2C221.1%2080.4%2C219.8%2081.8%2C218.4%2083.2%2C217.1%2084.6%2C215.8%2086.0%2C214.5%2087.5%2C213.2%2088.9%2C211.9%2090.3%2C210.6%2091.7%2C209.3%2093.1%2C208.1%2094.6%2C206.8%2096.0%2C205.6%2097.4%2C204.4%2098.8%2C203.1%20100.2%2C201.9%20101.7%2C200.7%20103.1%2C199.5%20104.5%2C198.3%20105.9%2C197.2%20107.3%2C196.0%20108.8%2C194.9%20110.2%2C193.7%20111.6%2C192.6%20113.0%2C191.4%20114.4%2C190.3%20115.8%2C189.2%20117.3%2C188.1%20118.7%2C187.0%20120.1%2C186.0%20121.5%2C184.9%20122.9%2C183.8%20124.4%2C182.8%20125.8%2C181.7%20127.2%2C180.7%20128.6%2C179.7%20130.0%2C178.7%20131.4%2C177.7%20132.9%2C176.7%20134.3%2C175.7%20135.7%2C174.7%20137.1%2C173.8%20138.5%2C172.8%20140.0%2C171.9%20141.4%2C170.9%20142.8%2C170.0%20144.2%2C169.1%20145.6%2C168.2%20147.1%2C167.3%20148.5%2C166.4%20149.9%2C165.5%20151.3%2C164.6%20152.7%2C163.8%20154.2%2C162.9%20155.6%2C162.1%20157.0%2C161.3%20158.4%2C160.5%20159.8%2C159.6%20161.2%2C158.8%20162.7%2C158.1%20164.1%2C157.3%20165.5%2C156.5%20166.9%2C155.7%20168.3%2C155.0%20169.8%2C154.2%20171.2%2C153.5%20172.6%2C152.8%20174.0%2C152.1%20175.4%2C151.4%20176.8%2C150.7%20178.3%2C150.0%20179.7%2C149.3%20181.1%2C148.6%20182.5%2C148.0%20183.9%2C147.3%20185.4%2C146.7%20186.8%2C146.1%20188.2%2C145.5%20189.6%2C144.8%20191.0%2C144.2%20192.5%2C143.7%20193.9%2C143.1%20195.3%2C142.5%20196.7%2C141.9%20198.1%2C141.4%20199.6%2C140.9%20201.0%2C140.3%20202.4%2C139.8%20203.8%2C139.3%20205.2%2C138.8%20206.6%2C138.3%20208.1%2C137.8%20209.5%2C137.3%20210.9%2C136.9%20212.3%2C136.4%20213.7%2C136.0%20215.2%2C135.5%20216.6%2C135.1%20218.0%2C134.7%20219.4%2C134.3%20220.8%2C133.9%20222.2%2C133.5%20223.7%2C133.1%20225.1%2C132.7%20226.5%2C132.4%20227.9%2C132.0%20229.3%2C131.7%20230.8%2C131.4%20232.2%2C131.0%20233.6%2C130.7%20235.0%2C130.4%20236.4%2C130.1%20237.9%2C129.8%20239.3%2C129.6%20240.7%2C129.3%20242.1%2C129.1%20243.5%2C128.8%20244.9%2C128.6%20246.4%2C128.4%20247.8%2C128.1%20249.2%2C127.9%20250.6%2C127.7%20252.0%2C127.5%20253.5%2C127.4%20254.9%2C127.2%20256.3%2C127.0%20257.7%2C126.9%20259.1%2C126.8%20260.6%2C126.6%20262.0%2C126.5%20263.4%2C126.4%20264.8%2C126.3%20266.2%2C126.2%20267.6%2C126.1%20269.1%2C126.1%20270.5%2C126.0%20271.9%2C125.9%20273.3%2C125.9%20274.7%2C125.9%20276.2%2C125.8%20277.6%2C125.8%20279.0%2C125.8%20280.4%2C125.8%20281.8%2C125.8%20283.3%2C125.9%20284.7%2C125.9%20286.1%2C125.9%20287.5%2C126.0%20288.9%2C126.1%20290.4%2C126.1%20291.8%2C126.2%20293.2%2C126.3%20294.6%2C126.4%20296.0%2C126.5%20297.4%2C126.6%20298.9%2C126.8%20300.3%2C126.9%20301.7%2C127.0%20303.1%2C127.2%20304.5%2C127.4%20306.0%2C127.5%20307.4%2C127.7%20308.8%2C127.9%20310.2%2C128.1%20311.6%2C128.4%20313.1%2C128.6%20314.5%2C128.8%20315.9%2C129.1%20317.3%2C129.3%20318.7%2C129.6%20320.1%2C129.8%20321.6%2C130.1%20323.0%2C130.4%20324.4%2C130.7%20325.8%2C131.0%20327.2%2C131.4%20328.7%2C131.7%20330.1%2C132.0%20331.5%2C132.4%20332.9%2C132.7%20334.3%2C133.1%20335.8%2C133.5%20337.2%2C133.9%20338.6%2C134.3%20340.0%2C134.7%20341.4%2C135.1%20342.8%2C135.5%20344.3%2C136.0%20345.7%2C136.4%20347.1%2C136.9%20348.5%2C137.3%20349.9%2C137.8%20351.4%2C138.3%20352.8%2C138.8%20354.2%2C139.3%20355.6%2C139.8%20357.0%2C140.3%20358.4%2C140.9%20359.9%2C141.4%20361.3%2C141.9%20362.7%2C142.5%20364.1%2C143.1%20365.5%2C143.7%20367.0%2C144.2%20368.4%2C144.8%20369.8%2C145.5%20371.2%2C146.1%20372.6%2C146.7%20374.1%2C147.3%20375.5%2C148.0%20376.9%2C148.6%20378.3%2C149.3%20379.7%2C150.0%20381.1%2C150.7%20382.6%2C151.4%20384.0%2C152.1%20385.4%2C152.8%20386.8%2C153.5%20388.2%2C154.2%20389.7%2C155.0%20391.1%2C155.7%20392.5%2C156.5%20393.9%2C157.3%20395.3%2C158.1%20396.8%2C158.8%20398.2%2C159.6%20399.6%2C160.5%20401.0%2C161.3%20402.4%2C162.1%20403.9%2C162.9%20405.3%2C163.8%20406.7%2C164.6%20408.1%2C165.5%20409.5%2C166.4%20410.9%2C167.3%20412.4%2C168.2%20413.8%2C169.1%20415.2%2C170.0%20416.6%2C170.9%20418.0%2C171.9%20419.5%2C172.8%20420.9%2C173.8%20422.3%2C174.7%20423.7%2C175.7%20425.1%2C176.7%20426.6%2C177.7%20428.0%2C178.7%20429.4%2C179.7%20430.8%2C180.7%20432.2%2C181.7%20433.6%2C182.8%20435.1%2C183.8%20436.5%2C184.9%20437.9%2C186.0%20439.3%2C187.0%20440.7%2C188.1%20442.2%2C189.2%20443.6%2C190.3%20445.0%2C191.4%20446.4%2C192.6%20447.8%2C193.7%20449.2%2C194.9%20450.7%2C196.0%20452.1%2C197.2%20453.5%2C198.3%20454.9%2C199.5%20456.3%2C200.7%20457.8%2C201.9%20459.2%2C203.1%20460.6%2C204.4%20462.0%2C205.6%20463.4%2C206.8%20464.9%2C208.1%20466.3%2C209.3%20467.7%2C210.6%20469.1%2C211.9%20470.5%2C213.2%20471.9%2C214.5%20473.4%2C215.8%20474.8%2C217.1%20476.2%2C218.4%20477.6%2C219.8%20479.0%2C221.1%20480.5%2C222.5%20481.9%2C223.9%20483.3%2C225.2%20484.7%2C226.6%20486.1%2C228.0%20487.6%2C229.4%20489.0%2C230.8%20490.4%2C232.3%20491.8%2C233.7%20493.2%2C235.1%20494.6%2C236.6%20496.1%2C238.0%20497.5%2C239.5%20498.9%2C241.0%20500.3%2C242.5%20501.7%2C244.0%20503.2%2C245.5%20504.6%2C247.0%20506.0%2C248.5%22%20clip-path%3D%22url%28%23clip-5741605%29%22%2F%3E%0A%3Ccircle%20cx%3D%22127.7%22%20cy%3D%22180.4%22%20r%3D%223.4%22%20fill%3D%22%232F5D50%22%2F%3E%0A%3Ccircle%20cx%3D%22430.3%22%20cy%3D%22180.4%22%20r%3D%223.4%22%20fill%3D%22%232F5D50%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-11-185",
+      "case_id": "MATH 11.185",
+      "title": "Ceramic kiln: cost inflection and marginal cost",
+      "subsection": "11.5",
+      "context": "A ceramic kiln has weekly cost $C(Q)=Q^{3}-6Q^{2}+40Q+10$ for output $Q\\ge0$. Which of the following statements is/are correct?",
+      "statements": [
+        "Marginal cost is $C'(Q)=3Q^{2}-12Q+40$.",
+        "$C$ has an inflection point at $Q=2$.",
+        "On $(0,2)$, marginal cost is decreasing.",
+        "Average cost equals marginal cost at every inflection point of $C$.",
+        "At $Q=0$, fixed cost is $10$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nDifferentiate term by term: $C'=3Q^{2}-12Q+40$\n\nSo the statement is True.",
+        "**B.** → True\n\n$C''(Q)=6Q-12=0$ at $Q=2$, and $C''$ changes sign there, so $Q=2$ is an inflection of $C$\n\nSo the statement is True.",
+        "**C.** → True\n\n$C''(Q)<0$ on $(0,2)$, so $C'$ is decreasing there\n\nSo the statement is True.",
+        "**D.** → False\n\nInflection of $C$ is about $C''=0$; it need not solve $AC=MC$. Those meet where $AC'=0$, a different condition\n\nSo the statement is False.",
+        "**E.** → True\n\n$C(0)=10$ is the fixed cost\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 185,
+      "solution_overview": "Read $C'$, $C''$, and fixed cost separately. The inflection $C''=0$ at $Q=2$ marks where MC stops falling; it is not the $AC=MC$ point.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-186",
+      "case_id": "MATH 11.186",
+      "title": "Pop-up shop: Newton quotient for weekend profit",
+      "subsection": "11.5",
+      "context": "A pop-up shop models weekend profit (hundreds of euros) by $P(x)=x^{2}-6x+20$, where $x$ is the number of staffed hours. Which of the following statements is/are correct?",
+      "statements": [
+        "The Newton quotient $\\dfrac{P(a+h)-P(a)}{h}$ simplifies to $2a+h-6$.",
+        "$P'(4)=2$.",
+        "The tangent line at $x=4$ is $y=2x$.",
+        "Profit is decreasing for all $x>3$.",
+        "$x=3$ is a local minimum of $P$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nExpand $P(a+h)=(a+h)^{2}-6(a+h)+20$ and subtract $P(a)$; dividing by $h$ leaves $2a+h-6$\n\nSo the statement is True.",
+        "**B.** → True\n\n$P'(x)=2x-6$, so $P'(4)=2$\n\nSo the statement is True.",
+        "**C.** → False\n\n$P(4)=16-24+20=12$, so the tangent is $y-12=2(x-4)$, i.e. $y=2x+4$, not $y=2x$\n\nSo the statement is False.",
+        "**D.** → False\n\n$P'<0$ on $(-\\infty,3)$ and $P'>0$ on $(3,\\infty)$, so profit is increasing for $x>3$\n\nSo the statement is False.",
+        "**E.** → True\n\n$P'$ changes $-$ to $+$ at $x=3$, and $P''(3)=2>0$, so $x=3$ is a local minimum\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 186,
+      "solution_overview": "Simplify the Newton quotient to recover $P'=2x-6$. Evaluate the tangent carefully with the point-slope form. The critical point $x=3$ is a minimum; profit rises afterward.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-187",
+      "case_id": "MATH 11.187",
+      "title": "App studio: square-root learning cost",
+      "subsection": "11.5",
+      "context": "An app studio's cumulative production cost for $Q>0$ releases is $C(Q)=80\\sqrt{Q}$. Which of the following statements is/are correct?",
+      "statements": [
+        "Marginal cost is $C'(Q)=40/\\sqrt{Q}$.",
+        "Average cost is decreasing for every $Q>0$.",
+        "Marginal cost equals half of average cost at every $Q>0$.",
+        "Doubling cumulative output doubles total cost.",
+        "At $Q=16$, marginal cost equals $10$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nPower rule: $C'(Q)=80\\cdot\\frac12 Q^{-1/2}=40/\\sqrt{Q}$\n\nSo the statement is True.",
+        "**B.** → True\n\n$AC(Q)=80/\\sqrt{Q}$ has derivative $-40 Q^{-3/2}<0$ for $Q>0$\n\nSo the statement is True.",
+        "**C.** → True\n\n$AC=80/\\sqrt{Q}$ and $MC=40/\\sqrt{Q}$, so $MC=\\frac12 AC$ identically\n\nSo the statement is True.",
+        "**D.** → False\n\n$C(2Q)=80\\sqrt{2Q}=\\sqrt{2}\\,C(Q)$, so cost rises by factor $\\sqrt{2}$, not $2$\n\nSo the statement is False.",
+        "**E.** → True\n\n$C'(16)=40/4=10$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 187,
+      "solution_overview": "Square-root total cost yields falling average cost and $MC=\\frac12 AC$. Scaling $Q$ by $2$ scales $C$ by $\\sqrt{2}$ only.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-188",
+      "case_id": "MATH 11.188",
+      "title": "Summer festival: campaign weeks and ticket profit",
+      "subsection": "11.5",
+      "context": "A summer festival sells tickets over a campaign of $t$ weeks ($0\\le t\\le16$). Ticket volume is $D(t)=16t-t^{2}$. Net profit (after a fixed setup of $10$) is $\\pi(t)=D(t)-10=16t-t^{2}-10$ when each ticket contributes $1$ euro of margin. Which of the following statements is/are correct?",
+      "statements": [
+        "Profit is maximised at $t=8$ weeks.",
+        "Ticket volume $D(t)$ is maximised at the same $t$ that maximises profit.",
+        "At $t=4$, profit is still increasing.",
+        "The campaign's profit is negative at $t=0$.",
+        "Extending the campaign from $t=8$ to $t=12$ raises total ticket volume but lowers profit."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$\\pi'(t)=16-2t=0$ at $t=8$, and $\\pi''=-2<0$\n\nSo the statement is True.",
+        "**B.** → True\n\n$D$ and $\\pi$ differ by the constant $10$, so they share the same maximiser $t=8$\n\nSo the statement is True.",
+        "**C.** → True\n\n$\\pi'(4)=16-8=8>0$\n\nSo the statement is True.",
+        "**D.** → True\n\n$\\pi(0)=-10<0$\n\nSo the statement is True.",
+        "**E.** → False\n\n$D(12)=16\\cdot12-144=48$ and $D(8)=64$, so volume falls from $8$ to $12$, not rises. Profit also falls because one is past the max\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 188,
+      "solution_overview": "Margin-per-ticket profit tracks volume up to a constant, so both peak at $t=8$. Past the peak both volume and profit decline.",
+      "placeholder": false
+    },
+    {
+      "id": "math-11-189",
+      "case_id": "MATH 11.189",
+      "title": "Coffee subscription: read marginal utility from a graph",
+      "subsection": "11.5",
+      "context": "A coffee subscription service models a subscriber's marginal utility of cups $c$ per month by the figure (labelled MU). No formula is printed. Which of the following statements is/are correct?",
+      "statements": [
+        "Marginal utility is positive on $(0,30)$ and negative afterward.",
+        "Utility of cups is increasing on $(0,30)$.",
+        "Utility has a local maximum at $c=30$.",
+        "At $c=10$, MU is greater than $6$.",
+        "Because MU is linear and falling, the subscriber prefers a 50–50 gamble over its average for sure."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe MU graph crosses from above the axis to below at $c=30$\n\nSo the statement is True.",
+        "**B.** → True\n\nPositive MU means utility rises with $c$ on that interval\n\nSo the statement is True.",
+        "**C.** → True\n\nMU changes $+$ to $-$ at $c=30$, so utility has a local maximum there\n\nSo the statement is True.",
+        "**D.** → True\n\nThe intercept is $12$ and the line falls gently; at $c=10$ the height is near $8>6$\n\nSo the statement is True.",
+        "**E.** → False\n\nFalling MU means concave utility (risk aversion): the subscriber prefers the average for sure over a mean-preserving gamble, not the other way around\n\nSo the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 189,
+      "solution_overview": "Read MU signs for monotonicity of utility and the $+$ to $-$ crossing for a utility peak. Declining MU is risk aversion, not risk loving.",
+      "placeholder": false,
+      "figure": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22334%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EMarginal%20utility%20MU%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-5687814%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22564%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22193.0%22%20y1%3D%2244%22%20x2%3D%22193.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22334.0%22%20y1%3D%2244%22%20x2%3D%22334.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22475.0%22%20y1%3D%2244%22%20x2%3D%22475.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22616.0%22%20y1%3D%2244%22%20x2%3D%22616.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22616%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22277.3%22%20x2%3D%22616%22%20y2%3D%22277.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22210.7%22%20x2%3D%22616%22%20y2%3D%22210.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22144.0%22%20x2%3D%22616%22%20y2%3D%22144.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2277.3%22%20x2%3D%22616%22%20y2%3D%2277.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22277.3%22%20x2%3D%22616%22%20y2%3D%22277.3%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22616%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22193.0%22%20y1%3D%22344%22%20x2%3D%22193.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22193.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E10%3C%2Ftext%3E%0A%3Cline%20x1%3D%22334.0%22%20y1%3D%22344%22%20x2%3D%22334.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22334.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E20%3C%2Ftext%3E%0A%3Cline%20x1%3D%22475.0%22%20y1%3D%22344%22%20x2%3D%22475.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22475.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E30%3C%2Ftext%3E%0A%3Cline%20x1%3D%22616.0%22%20y1%3D%22344%22%20x2%3D%22616.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22616.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E40%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22277.3%22%20x2%3D%2252%22%20y2%3D%22277.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22281.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22210.7%22%20x2%3D%2252%22%20y2%3D%22210.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22214.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22144.0%22%20x2%3D%2252%22%20y2%3D%22144.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22148.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2277.3%22%20x2%3D%2252%22%20y2%3D%2277.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2281.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E12%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C77.3%2053.8%2C78.2%2055.5%2C79.0%2057.3%2C79.8%2059.0%2C80.7%2060.8%2C81.5%2062.6%2C82.3%2064.3%2C83.2%2066.1%2C84.0%2067.9%2C84.8%2069.6%2C85.7%2071.4%2C86.5%2073.2%2C87.3%2074.9%2C88.2%2076.7%2C89.0%2078.4%2C89.8%2080.2%2C90.7%2082.0%2C91.5%2083.7%2C92.3%2085.5%2C93.2%2087.2%2C94.0%2089.0%2C94.8%2090.8%2C95.7%2092.5%2C96.5%2094.3%2C97.3%2096.1%2C98.2%2097.8%2C99.0%2099.6%2C99.8%20101.3%2C100.7%20103.1%2C101.5%20104.9%2C102.3%20106.6%2C103.2%20108.4%2C104.0%20110.2%2C104.8%20111.9%2C105.7%20113.7%2C106.5%20115.5%2C107.3%20117.2%2C108.2%20119.0%2C109.0%20120.7%2C109.8%20122.5%2C110.7%20124.3%2C111.5%20126.0%2C112.3%20127.8%2C113.2%20129.6%2C114.0%20131.3%2C114.8%20133.1%2C115.7%20134.8%2C116.5%20136.6%2C117.3%20138.4%2C118.2%20140.1%2C119.0%20141.9%2C119.8%20143.7%2C120.7%20145.4%2C121.5%20147.2%2C122.3%20148.9%2C123.2%20150.7%2C124.0%20152.5%2C124.8%20154.2%2C125.7%20156.0%2C126.5%20157.8%2C127.3%20159.5%2C128.2%20161.3%2C129.0%20163.0%2C129.8%20164.8%2C130.7%20166.6%2C131.5%20168.3%2C132.3%20170.1%2C133.2%20171.8%2C134.0%20173.6%2C134.8%20175.4%2C135.7%20177.1%2C136.5%20178.9%2C137.3%20180.7%2C138.2%20182.4%2C139.0%20184.2%2C139.8%20185.9%2C140.7%20187.7%2C141.5%20189.5%2C142.3%20191.2%2C143.2%20193.0%2C144.0%20194.8%2C144.8%20196.5%2C145.7%20198.3%2C146.5%20200.1%2C147.3%20201.8%2C148.2%20203.6%2C149.0%20205.3%2C149.8%20207.1%2C150.7%20208.9%2C151.5%20210.6%2C152.3%20212.4%2C153.2%20214.1%2C154.0%20215.9%2C154.8%20217.7%2C155.7%20219.4%2C156.5%20221.2%2C157.3%20223.0%2C158.2%20224.7%2C159.0%20226.5%2C159.8%20228.2%2C160.7%20230.0%2C161.5%20231.8%2C162.3%20233.5%2C163.2%20235.3%2C164.0%20237.1%2C164.8%20238.8%2C165.7%20240.6%2C166.5%20242.4%2C167.3%20244.1%2C168.2%20245.9%2C169.0%20247.6%2C169.8%20249.4%2C170.7%20251.2%2C171.5%20252.9%2C172.3%20254.7%2C173.2%20256.4%2C174.0%20258.2%2C174.8%20260.0%2C175.7%20261.7%2C176.5%20263.5%2C177.3%20265.3%2C178.2%20267.0%2C179.0%20268.8%2C179.8%20270.6%2C180.7%20272.3%2C181.5%20274.1%2C182.3%20275.8%2C183.2%20277.6%2C184.0%20279.4%2C184.8%20281.1%2C185.7%20282.9%2C186.5%20284.6%2C187.3%20286.4%2C188.2%20288.2%2C189.0%20289.9%2C189.8%20291.7%2C190.7%20293.5%2C191.5%20295.2%2C192.3%20297.0%2C193.2%20298.8%2C194.0%20300.5%2C194.8%20302.3%2C195.7%20304.0%2C196.5%20305.8%2C197.3%20307.6%2C198.2%20309.3%2C199.0%20311.1%2C199.8%20312.9%2C200.7%20314.6%2C201.5%20316.4%2C202.3%20318.1%2C203.2%20319.9%2C204.0%20321.7%2C204.8%20323.4%2C205.7%20325.2%2C206.5%20326.9%2C207.3%20328.7%2C208.2%20330.5%2C209.0%20332.2%2C209.8%20334.0%2C210.7%20335.8%2C211.5%20337.5%2C212.3%20339.3%2C213.2%20341.0%2C214.0%20342.8%2C214.8%20344.6%2C215.7%20346.3%2C216.5%20348.1%2C217.3%20349.9%2C218.2%20351.6%2C219.0%20353.4%2C219.8%20355.1%2C220.7%20356.9%2C221.5%20358.7%2C222.3%20360.4%2C223.2%20362.2%2C224.0%20364.0%2C224.8%20365.7%2C225.7%20367.5%2C226.5%20369.2%2C227.3%20371.0%2C228.2%20372.8%2C229.0%20374.5%2C229.8%20376.3%2C230.7%20378.1%2C231.5%20379.8%2C232.3%20381.6%2C233.2%20383.4%2C234.0%20385.1%2C234.8%20386.9%2C235.7%20388.6%2C236.5%20390.4%2C237.3%20392.2%2C238.2%20393.9%2C239.0%20395.7%2C239.8%20397.5%2C240.7%20399.2%2C241.5%20401.0%2C242.3%20402.7%2C243.2%20404.5%2C244.0%20406.3%2C244.8%20408.0%2C245.7%20409.8%2C246.5%20411.5%2C247.3%20413.3%2C248.2%20415.1%2C249.0%20416.8%2C249.8%20418.6%2C250.7%20420.4%2C251.5%20422.1%2C252.3%20423.9%2C253.2%20425.6%2C254.0%20427.4%2C254.8%20429.2%2C255.7%20430.9%2C256.5%20432.7%2C257.3%20434.5%2C258.2%20436.2%2C259.0%20438.0%2C259.8%20439.8%2C260.7%20441.5%2C261.5%20443.3%2C262.3%20445.0%2C263.2%20446.8%2C264.0%20448.6%2C264.8%20450.3%2C265.7%20452.1%2C266.5%20453.9%2C267.3%20455.6%2C268.2%20457.4%2C269.0%20459.1%2C269.8%20460.9%2C270.7%20462.7%2C271.5%20464.4%2C272.3%20466.2%2C273.2%20468.0%2C274.0%20469.7%2C274.8%20471.5%2C275.7%20473.2%2C276.5%20475.0%2C277.3%20476.8%2C278.2%20478.5%2C279.0%20480.3%2C279.8%20482.0%2C280.7%20483.8%2C281.5%20485.6%2C282.3%20487.3%2C283.2%20489.1%2C284.0%20490.9%2C284.8%20492.6%2C285.7%20494.4%2C286.5%20496.1%2C287.3%20497.9%2C288.2%20499.7%2C289.0%20501.4%2C289.8%20503.2%2C290.7%20505.0%2C291.5%20506.7%2C292.3%20508.5%2C293.2%20510.2%2C294.0%20512.0%2C294.8%20513.8%2C295.7%20515.5%2C296.5%20517.3%2C297.3%20519.1%2C298.2%20520.8%2C299.0%20522.6%2C299.8%20524.4%2C300.7%20526.1%2C301.5%20527.9%2C302.3%20529.6%2C303.2%20531.4%2C304.0%20533.2%2C304.8%20534.9%2C305.7%20536.7%2C306.5%20538.5%2C307.3%20540.2%2C308.2%20542.0%2C309.0%20543.7%2C309.8%20545.5%2C310.7%20547.3%2C311.5%20549.0%2C312.3%20550.8%2C313.2%20552.5%2C314.0%20554.3%2C314.8%20556.1%2C315.7%20557.8%2C316.5%20559.6%2C317.3%20561.4%2C318.2%20563.1%2C319.0%20564.9%2C319.8%20566.6%2C320.7%20568.4%2C321.5%20570.2%2C322.3%20571.9%2C323.2%20573.7%2C324.0%20575.5%2C324.8%20577.2%2C325.7%20579.0%2C326.5%20580.8%2C327.3%20582.5%2C328.2%20584.3%2C329.0%20586.0%2C329.8%20587.8%2C330.7%20589.6%2C331.5%20591.3%2C332.3%20593.1%2C333.2%20594.9%2C334.0%20596.6%2C334.8%20598.4%2C335.7%20600.1%2C336.5%20601.9%2C337.3%20603.7%2C338.2%20605.4%2C339.0%20607.2%2C339.8%20609.0%2C340.7%20610.7%2C341.5%20612.5%2C342.3%20614.2%2C343.2%20616.0%2C344.0%22%20clip-path%3D%22url%28%23clip-5687814%29%22%2F%3E%0A%3Ccircle%20cx%3D%22475.0%22%20cy%3D%22277.3%22%20r%3D%223.4%22%20fill%3D%22%238B5A2B%22%2F%3E%0A%3Ctext%20x%3D%22334%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ec%3C%2Ftext%3E%0A%3C%2Fsvg%3E"
+    },
+    {
+      "id": "math-11-190",
+      "case_id": "MATH 11.190",
+      "title": "Cold-chain: spoilage index over delivery hours",
+      "subsection": "11.5",
+      "context": "A cold-chain delivery records a spoilage index $S(t)=t^{3}-6t^{2}+9t$ over $0\\le t\\le4$ hours after loading. Which of the following statements is/are correct?",
+      "statements": [
+        "$S'(t)=3(t-1)(t-3)$.",
+        "Spoilage has a local maximum at $t=1$.",
+        "Spoilage has a local minimum at $t=3$.",
+        "Among the critical points in $(0,4)$, the global maximum of $S$ on $[0,4]$ is at $t=1$.",
+        "$S''(1)<0$ and $S''(3)>0$, matching the local max / local min reading."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\n$S'=3t^{2}-12t+9=3(t^{2}-4t+3)=3(t-1)(t-3)$\n\nSo the statement is True.",
+        "**B.** → True\n\nAt $t=1$, $S'$ changes $+$ to $-$ (for $t<1$ both factors negative so $S'>0$; between $1$ and $3$, $S'<0$)\n\nSo the statement is True.",
+        "**C.** → True\n\nAt $t=3$, $S'$ changes $-$ to $+$\n\nSo the statement is True.",
+        "**D.** → False\n\nCompare values: $S(0)=0$, $S(1)=1-6+9=4$, $S(3)=27-54+27=0$, $S(4)=64-96+36=4$. So $t=1$ and $t=4$ tie at height $4$; the global max on the closed interval is not uniquely at $t=1$\n\nSo the statement is False.",
+        "**E.** → True\n\n$S''=6t-12$, so $S''(1)=-6<0$ and $S''(3)=6>0$\n\nSo the statement is True."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 190,
+      "solution_overview": "Factor $S'$ to locate $t=1$ (local max) and $t=3$ (local min). Endpoint comparison shows $S(4)=S(1)=4$, so the closed-interval global max is not unique to $t=1$.",
+      "placeholder": false
+    }
+  ]
+}
