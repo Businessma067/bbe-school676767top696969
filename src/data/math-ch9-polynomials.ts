@@ -23,5 +23,10 @@ const MATH_CH9_CORE: MathTask[] = (ch9.tasks as MathTask[]).map((task, i) => ({
 
 export const MATH_CH9_POLYNOMIALS: MathTask[] = [
   ...MATH_CH9_CORE,
-  ...(ch9Exam.tasks as MathTask[]),
+  ...(ch9Exam.tasks as MathTask[]).map((task, i) => ({
+    ...task,
+    subsection: task.subsection ?? "9.5",
+    sort_order: task.sort_order ?? 201 + i,
+    placeholder: false,
+  })),
 ];

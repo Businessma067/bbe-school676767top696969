@@ -23,5 +23,10 @@ const MATH_CH7_CORE: MathTask[] = (ch7.tasks as MathTask[]).map((task, i) => ({
 
 export const MATH_CH7_LINEAR_QUADRATIC: MathTask[] = [
   ...MATH_CH7_CORE,
-  ...(ch7Exam.tasks as MathTask[]),
+  ...(ch7Exam.tasks as MathTask[]).map((task, i) => ({
+    ...task,
+    subsection: task.subsection ?? "7.5",
+    sort_order: task.sort_order ?? 101 + i,
+    placeholder: false,
+  })),
 ];
