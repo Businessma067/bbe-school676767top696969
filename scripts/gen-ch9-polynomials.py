@@ -991,7 +991,7 @@ def d3_rest() -> list[Spec]:
         ),
         S(
             title="Nested Polynomials Without Cancelling the Top Power",
-            context=r"Let $p(x)=x^{2}+1$ and $q(x)=x^{3}-x$. Write $r=q\circ p$. Evaluate each statement. Mark it TRUE or FALSE.",
+            context=r"Let $p(x)=x^{2}+1$ and $q(x)=x^{3}-x$. Write $r(x)=q(p(x))$. Evaluate each statement. Mark it TRUE or FALSE.",
             difficulty=3, stem_kind="formula",
             overview=r"$r(x)=(x^{2}+1)^{3}-(x^{2}+1)$. The highest power is $x^{6}$.",
             claims=[
@@ -1214,7 +1214,7 @@ def d4() -> list[Spec]:
                 "with $n,m\\ge 1$. Evaluate each statement. Mark it TRUE or FALSE."
             ),
             difficulty=4, stem_kind="symbolic",
-            overview="The highest power of $q\\circ p$ is $x^{nm}$, not $x^{n+m}$.",
+            overview="The highest power of $q(p(x))$ is $x^{nm}$, not $x^{n+m}$.",
             claims=[
                 C("The highest power of $x$ in $q(p(x))$ is $x^{nm}$.", True, pack("A", True, [
                     "If $p$ behaves like $ax^{n}$ and $q$ like $b u^{m}$, then $q(p(x))$ behaves like $b a^{m} x^{nm}$.",
@@ -1228,11 +1228,11 @@ def d4() -> list[Spec]:
                     "The same count with the roles reversed still multiplies $n$ by $m$.",
                     close(True, "Both orders give highest power $x^{nm}$"),
                 ])),
-                C("$p\\circ q$ and $q\\circ p$ are always the same polynomial.", False, pack("D", False, [
+                C("$p(q(x))$ and $q(p(x))$ are always the same polynomial.", False, pack("D", False, [
                     r"$p(x)=x+1$, $q(x)=x^{2}$ give $x^{2}+1$ versus $(x+1)^{2}$.",
-                    close(False, "Composition does not commute"),
+                    close(False, "Nesting does not commute"),
                 ])),
-                C("If $p$ is non-constant, then $q\\circ p$ cannot be a non-zero constant.", True, pack("E", True, [
+                C("If $p$ is non-constant, then $q(p(x))$ cannot be a non-zero constant.", True, pack("E", True, [
                     "A non-constant polynomial takes infinitely many values, and a non-constant $q$ cannot crush all of them to one number.",
                     close(True, "The composition stays non-constant"),
                 ])),

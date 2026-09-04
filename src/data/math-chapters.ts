@@ -3,10 +3,10 @@
  * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
  * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
  * 7 (Linear and quadratic functions), 8 (Power functions),
- * 9 (Polynomial functions),
+ * 9 (Polynomial functions, incl. Mixed exam 9.5),
  * 11 (Differentiation and single-variable optimization),
  * 12 (Elementary probability), and 13 (Binomial) are populated;
- * chapter 10 is marked coming soon; others use placeholders.
+ * chapter 7 also exposes Mixed exam 7.5; chapter 10 is coming soon.
  */
 
 import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
@@ -16,8 +16,8 @@ import {
   MATH_CH5_LINEAR_EQUATIONS,
   MATH_CH5_SUBSECTIONS,
 } from "@/data/math-ch5-linear-equations";
-import { MATH_CH7_LINEAR_QUADRATIC } from "@/data/math-ch7-linear-quadratic"; // Lovable sync: ch7 practice bank
-import { MATH_CH9_POLYNOMIALS } from "@/data/math-ch9-polynomials";
+import { MATH_CH7_LINEAR_QUADRATIC, MATH_CH7_SUBSECTIONS } from "@/data/math-ch7-linear-quadratic";
+import { MATH_CH9_POLYNOMIALS, MATH_CH9_SUBSECTIONS } from "@/data/math-ch9-polynomials";
 import {
   MATH_CH8_POWER_FUNCTIONS,
   MATH_CH8_SUBSECTIONS,
@@ -86,15 +86,15 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   4: { "4.1": 10, "4.2": 5, "4.3": 5, "4.4": 5 },
   5: { "5": 10 },
   6: { "6.1": 10, "6.2": 5, "6.3": 5, "6.4": 5, "6.5": 4 },
+  7: { "7": 10 },
   8: { "8": 10 },
+  9: { "9": 10 },
   11: { "11.1": 10, "11.2": 10, "11.3": 10, "11.4": 10 },
 };
 
 /** Demo unlocks for chapters without a subsection map (overall first N tasks). */
 export const DEMO_MATH_CHAPTER_FREE: Partial<Record<number, number>> = {
-  /** Chapter 7 has no book subtopics — unlock the first N tasks at chapter level. */
-  7: 10,
-  9: 10,
+  /** Chapters 7 and 9 use subsection maps above; this remains the fallback. */
 };
 
 function localIndexInSubsection(
@@ -213,7 +213,9 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
   4: MATH_CH4_SUBSECTIONS,
   5: MATH_CH5_SUBSECTIONS,
   6: MATH_CH6_SUBSECTIONS,
+  7: MATH_CH7_SUBSECTIONS,
   8: MATH_CH8_SUBSECTIONS,
+  9: MATH_CH9_SUBSECTIONS,
   11: MATH_CH11_DIFF_SUBSECTIONS,
   12: MATH_CH12_SUBSECTIONS,
   13: MATH_CH13_SUBSECTIONS,

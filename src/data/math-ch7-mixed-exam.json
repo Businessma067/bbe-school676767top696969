@@ -1,0 +1,969 @@
+{
+  "tasks": [
+    {
+      "id": "math-7-e1",
+      "case_id": "MATH 7.E01",
+      "title": "Mixed exam — MetroLink",
+      "subsection": "7.5",
+      "context": "MetroLink a city tram charges a base fare plus a per-kilometre rate. The linear model is $f(x)=2 x - 3$ and the quadratic profile is $g(x)=- x^{2} - 4 x + 2$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest point on the graph of $g$ is $\\left(-2,6\\right)$.",
+        "The axis of symmetry of $g$ is $x=-2$.",
+        "The axis of symmetry of $g$ is the horizontal line $y=7$.",
+        "Completing the square gives $g(x)=-1\\left(x--2\\right)^2+6$.",
+        "The graphs of $f$ and $g$ intersect in exactly 0 real points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=- x^{2} - 4 x + 2$$\n\nThat is the working rule for this letter.\n\nThe turning point lies on the axis of symmetry; read its abscissa from the coefficients and evaluate $g$ there.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=6$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=2 x - 3$$\n\nThat is the working rule for this letter.\n\nFor $g(x)=ax^{2}+bx+c$ the vertical axis is $x=-b/(2a)$.\n\n$$g(x)=- x^{2} - 4 x + 2$$\n\n$$x=-\\frac{-4}{2\\cdot -1}=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 4 x + 2$$\n\nThat is the working rule for this letter.\n\nThe axis of symmetry is a vertical line $x=\\text{constant}$, not a horizontal height.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=6$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=2 x - 3$$\n\nThat is the working rule for this letter.\n\nShift the parabola to vertex form $a(x-h)^{2}+k$.\n\n$$g(x)=- x^{2} - 4 x + 2$$\n\n$$g(x)=-1\\left(x--2\\right)^2+6$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 4 x + 2$$\n\nThat is the working rule for this letter.\n\nIntersections solve $g(x)=f(x)$; the difference is at most quadratic.\n\n$$g(x)-f(x)=- x^{2} - 6 x + 5$$\n\n$$\\Delta=56$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 101,
+      "solution_overview": "Models: $f(x)=2 x - 3$, $g(x)=- x^{2} - 4 x + 2$. Vertex $\\left(-2,6\\right)$, axis $x=-2$, Vieta $S=-4$, $P=-2$, meetings=2. Topics: vertex, axis, axis_trap, complete_square, meetings.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e2",
+      "case_id": "MATH 7.E02",
+      "title": "Mixed exam — SkyLift",
+      "subsection": "7.5",
+      "context": "SkyLift a cable-car operator models altitude with a quadratic clearance profile. The linear model is $f(x)=3 x - 2$ and the quadratic profile is $g(x)=x^{2} - 5 x + 3$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "By Vieta, the sum of the roots of $g$ equals $5$.",
+        "The product of the roots of $g$ equals $3$.",
+        "By Vieta, the sum of the roots of $g$ equals $-5$.",
+        "The discriminant of $g$ equals $13$.",
+        "The axis of symmetry of $g$ is $x=5$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=3 x - 2$$\n\nThat is the working rule for this letter.\n\nVieta gives $S=-b/a$ without solving.\n\n$$g(x)=x^{2} - 5 x + 3$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=3 x - 2$$\n\nThat is the working rule for this letter.\n\nVieta gives $P=c/a$.\n\n$$g(x)=x^{2} - 5 x + 3$$\n\n$$P=\\frac{3}{1}=3$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=3 x - 2$$\n\nThat is the working rule for this letter.\n\nThe sign in $S=-b/a$ is a common trap.\n\n$$g(x)=x^{2} - 5 x + 3$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=3 x - 2$$\n\nThat is the working rule for this letter.\n\nCompute $\\Delta=b^{2}-4ac$.\n\n$$g(x)=x^{2} - 5 x + 3$$\n\n$$\\Delta=-5^2-4\\cdot 1\\cdot 3=13$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=3 x - 2$$\n\nThat is the working rule for this letter.\n\nThe axis is the midpoint of the roots: $x=S/2$, not $x=S$.\n\n$$g(x)=x^{2} - 5 x + 3$$\n\n$$x=\\frac{S}{2}=\\frac{5}{2}=\\frac{5}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 102,
+      "solution_overview": "Models: $f(x)=3 x - 2$, $g(x)=x^{2} - 5 x + 3$. Vertex $\\left(\\frac{5}{2},-\\frac{13}{4}\\right)$, axis $x=\\frac{5}{2}$, Vieta $S=5$, $P=3$, meetings=2. Topics: vieta_sum, vieta_prod, vieta_trap, discriminant, tangency.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e3",
+      "case_id": "MATH 7.E03",
+      "title": "Mixed exam — HarborCrane",
+      "subsection": "7.5",
+      "context": "HarborCrane a port crane tracks hook height against horizontal travel. The linear model is $f(x)=4 x - 1$ and the quadratic profile is $g(x)=x^{2} - 6 x + 4$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exist reals $A,B,C$ with $g(x)=A f(x)^2+B f(x)+C$ and $A=\\frac{1}{16}$.",
+        "With $f(x)=4 x - 1$, the nested map $g(f(x))$ has highest power $x^{3}$ because the exponents $1$ and $2$ are added.",
+        "The nested map $f(g(x))$ is a parabola (highest power $x^2$).",
+        "$g(f(1))=-5$.",
+        "$f(g(0))$ equals $g(f(0))$ for every linear $f$ and quadratic $g$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=x^{2} - 6 x + 4$$\n\nThat is the working rule for this letter.\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{4^2}=\\frac{1}{16}$$\n\n$$B=-\\frac{11}{8},\\quad C=\\frac{41}{16}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=4 x - 1$$\n\nThat is the working rule for this letter.\n\nUnder nesting, the highest powers multiply: $2\\cdot 1=2$, they are not added.\n\n$$g(x)=x^{2} - 6 x + 4$$\n\n$$g(f(x))=16 x^{2} - 32 x + 11$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=4 x - 1$$\n\nThat is the working rule for this letter.\n\nSubstituting a quadratic into a line keeps highest power $x^{2}$.\n\n$$g(x)=x^{2} - 6 x + 4$$\n\n$$f(g(x))=4 x^{2} - 24 x + 15$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 4$$\n\nThat is the working rule for this letter.\n\nEvaluate the inner map first, then apply $g$.\n\n$$f(1)=3$$\n\n$$g(f(1))=-5$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 4$$\n\nThat is the working rule for this letter.\n\nA single coincidence does not make a general law.\n\n$$f(g(0))=15$$\n\n$$g(f(0))=11$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 103,
+      "solution_overview": "Models: $f(x)=4 x - 1$, $g(x)=x^{2} - 6 x + 4$. Vertex $\\left(3,-5\\right)$, axis $x=3$, Vieta $S=6$, $P=4$, meetings=2. Topics: rewrite, rewrite_trap, compose_deg, compose_eval, compose_trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e4",
+      "case_id": "MATH 7.E04",
+      "title": "Mixed exam — ArenaLights",
+      "subsection": "7.5",
+      "context": "ArenaLights a stadium lighting rig follows a parabolic beam envelope. The linear model is $f(x)=5 x$ and the quadratic profile is $g(x)=- x^{2} - 7 x + 5$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $-\\frac{139}{4}$.",
+        "$f(0)=0$.",
+        "$g(0)=5$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "Revenue $R(x)=x\\,f(x)$ is maximised at the same $x$ as the vertex of $g$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 5$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=-\\frac{7}{2}$$\n\n$$f\\left(-\\frac{7}{2}\\right)=-\\frac{35}{2}$$\n\n$$g\\left(-\\frac{7}{2}\\right)=\\frac{69}{4}$$\n\n$$f-g=-\\frac{139}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=5 x$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the fare line.\n\n$$g(x)=- x^{2} - 7 x + 5$$\n\n$$f(0)=0$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=5 x$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the quadratic profile.\n\n$$g(x)=- x^{2} - 7 x + 5$$\n\n$$g(0)=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 7 x + 5$$\n\nThat is the working rule for this letter.\n\nSolve $g(x)=f(x)$ and read the discriminant.\n\n$$g(x)-f(x)=- x^{2} - 12 x + 5$$\n\n$$\\Delta=164$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 5$$\n\nThat is the working rule for this letter.\n\nDifferentiate $R(x)=x(mx+k)$; the critical point is $x=-k/(2m)$, not the parabola axis.\n\n$$R(x)=5 x^{2}$$\n\n$$R'(x)=0\\Rightarrow x=-\\frac{0}{2\\cdot 5}$$\n\n$$\\text{axis of }g:\\ x=-\\frac{7}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 104,
+      "solution_overview": "Models: $f(x)=5 x$, $g(x)=- x^{2} - 7 x + 5$. Vertex $\\left(-\\frac{7}{2},\\frac{69}{4}\\right)$, axis $x=-\\frac{7}{2}$, Vieta $S=-7$, $P=-5$, meetings=2. Topics: gap_axis, f0_g0, nested_order, meet_count, revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e5",
+      "case_id": "MATH 7.E05",
+      "title": "Mixed exam — RiverFerry",
+      "subsection": "7.5",
+      "context": "RiverFerry logs a discrete clearance reading $s_n$ for $n=0,1,2,\\ldots$ (table below). Engineers also track a continuous line $f(x)=6 x + 1$ and parabola $g(x)=x^{2} - 8 x + 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The second differences of $(s_n)$ are constantly $2$.",
+        "The second differences of $(s_n)$ are constantly $3$.",
+        "The axis of $g$ is $x=4$.",
+        "At $n=3$ the table value $s_3$ equals $-9$.",
+        "The first differences of $(s_n)$ are constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=6 x + 1$$\n\nThat is the working rule for this letter.\n\nA quadratic sequence has constant second differences $2a$ when $s_n=an^{2}+bn+c$.\n\n$$s_n=1n^2+-8n+6$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=6 x + 1$$\n\nThat is the working rule for this letter.\n\nDo not confuse the middle coefficient with twice the second difference.\n\n$$g(x)=x^{2} - 8 x + 6$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=6 x + 1$$\n\nThat is the working rule for this letter.\n\nRead $x=-b/(2a)$ from the continuous model.\n\n$$g(x)=x^{2} - 8 x + 6$$\n\n$$x=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=6 x + 1$$\n\nThat is the working rule for this letter.\n\nSubstitute $n=3$ into the quadratic rule.\n\n$$g(x)=x^{2} - 8 x + 6$$\n\n$$s_3=1\\cdot 9+-8\\cdot 3+6=-9$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=6 x + 1$$\n\nThat is the working rule for this letter.\n\nOnly the second differences of a quadratic sequence are constant.\n\n$$g(x)=x^{2} - 8 x + 6$$\n\n$$\\Delta^{(1)}_n=21n+(-6)$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 105,
+      "solution_overview": "Models: $f(x)=6 x + 1$, $g(x)=x^{2} - 8 x + 6$. Vertex $\\left(4,-10\\right)$, axis $x=4$, Vieta $S=8$, $P=6$, meetings=2. Topics: table_quad, table_trap, param_tangent, param_roots, height_proj.",
+      "placeholder": false,
+      "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 6 | -1 | -6 | -9 | -10 | -9 | -6 |\n| $\\Delta^{(1)}$ | -7 | -5 | -3 | -1 | 1 | 3 | — |\n| $\\Delta^{(2)}$ | 2 | 2 | 2 | 2 | 2 | — | — |"
+    },
+    {
+      "id": "math-7-e6",
+      "case_id": "MATH 7.E06",
+      "title": "Mixed exam — Greenhouse",
+      "subsection": "7.5",
+      "context": "Greenhouse reviews clearance models $f(x)=2 x + 2$ and $g(x)=x^{2} - 9 x + 2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $\\frac{117}{4}$.",
+        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
+        "The axis of symmetry of $g$ is $x=5$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "By Vieta, the sum of the roots of $g$ equals $-9$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=x^{2} - 9 x + 2$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=\\frac{9}{2}$$\n\n$$f-g=\\frac{117}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=2 x + 2$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 2$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=2 x + 2$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 2$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=2 x + 2$$\n\nThat is the working rule for this letter.\n\n$$\\Delta=121$$\n\n$$g(x)=x^{2} - 9 x + 2$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=2 x + 2$$\n\nThat is the working rule for this letter.\n\n$$S=9$$\n\n$$g(x)=x^{2} - 9 x + 2$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 106,
+      "solution_overview": "Models: $f(x)=2 x + 2$, $g(x)=x^{2} - 9 x + 2$. Vertex $\\left(\\frac{9}{2},-\\frac{73}{4}\\right)$, axis $x=\\frac{9}{2}$, Vieta $S=9$, $P=2$, meetings=2. Topics: fare_model, fare_trap, diff_second, line_slope, vertex_max.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e7",
+      "case_id": "MATH 7.E07",
+      "title": "Mixed exam — WindFarm",
+      "subsection": "7.5",
+      "context": "WindFarm a turbine blade tip height is modelled against rotor angle. The linear model is $f(x)=3 x + 3$ and the quadratic profile is $g(x)=- x^{2} - 4 x + 3$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest point on the graph of $g$ is $\\left(-2,7\\right)$.",
+        "The axis of symmetry of $g$ is $x=-2$.",
+        "The axis of symmetry of $g$ is the horizontal line $y=6$.",
+        "Completing the square gives $g(x)=-1\\left(x--2\\right)^2+7$.",
+        "The graphs of $f$ and $g$ intersect in exactly 0 real points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=- x^{2} - 4 x + 3$$\n\nThat is the working rule for this letter.\n\nThe turning point lies on the axis of symmetry; read its abscissa from the coefficients and evaluate $g$ there.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=7$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=3 x + 3$$\n\nThat is the working rule for this letter.\n\nFor $g(x)=ax^{2}+bx+c$ the vertical axis is $x=-b/(2a)$.\n\n$$g(x)=- x^{2} - 4 x + 3$$\n\n$$x=-\\frac{-4}{2\\cdot -1}=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 4 x + 3$$\n\nThat is the working rule for this letter.\n\nThe axis of symmetry is a vertical line $x=\\text{constant}$, not a horizontal height.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=7$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=3 x + 3$$\n\nThat is the working rule for this letter.\n\nShift the parabola to vertex form $a(x-h)^{2}+k$.\n\n$$g(x)=- x^{2} - 4 x + 3$$\n\n$$g(x)=-1\\left(x--2\\right)^2+7$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 4 x + 3$$\n\nThat is the working rule for this letter.\n\nIntersections solve $g(x)=f(x)$; the difference is at most quadratic.\n\n$$g(x)-f(x)=x \\left(- x - 7\\right)$$\n\n$$\\Delta=49$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 107,
+      "solution_overview": "Models: $f(x)=3 x + 3$, $g(x)=- x^{2} - 4 x + 3$. Vertex $\\left(-2,7\\right)$, axis $x=-2$, Vieta $S=-4$, $P=-3$, meetings=2. Topics: vertex, axis, axis_trap, complete_square, meetings.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e8",
+      "case_id": "MATH 7.E08",
+      "title": "Mixed exam — IceRink",
+      "subsection": "7.5",
+      "context": "IceRink a resurfacing machine's blade pressure varies quadratically. The linear model is $f(x)=4 x - 3$ and the quadratic profile is $g(x)=x^{2} - 5 x + 4$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "By Vieta, the sum of the roots of $g$ equals $5$.",
+        "The product of the roots of $g$ equals $4$.",
+        "By Vieta, the sum of the roots of $g$ equals $-5$.",
+        "The discriminant of $g$ equals $9$.",
+        "The axis of symmetry of $g$ is $x=5$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=4 x - 3$$\n\nThat is the working rule for this letter.\n\nVieta gives $S=-b/a$ without solving.\n\n$$g(x)=x^{2} - 5 x + 4$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=4 x - 3$$\n\nThat is the working rule for this letter.\n\nVieta gives $P=c/a$.\n\n$$g(x)=x^{2} - 5 x + 4$$\n\n$$P=\\frac{4}{1}=4$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=4 x - 3$$\n\nThat is the working rule for this letter.\n\nThe sign in $S=-b/a$ is a common trap.\n\n$$g(x)=x^{2} - 5 x + 4$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=4 x - 3$$\n\nThat is the working rule for this letter.\n\nCompute $\\Delta=b^{2}-4ac$.\n\n$$g(x)=x^{2} - 5 x + 4$$\n\n$$\\Delta=-5^2-4\\cdot 1\\cdot 4=9$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=4 x - 3$$\n\nThat is the working rule for this letter.\n\nThe axis is the midpoint of the roots: $x=S/2$, not $x=S$.\n\n$$g(x)=x^{2} - 5 x + 4$$\n\n$$x=\\frac{S}{2}=\\frac{5}{2}=\\frac{5}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 108,
+      "solution_overview": "Models: $f(x)=4 x - 3$, $g(x)=x^{2} - 5 x + 4$. Vertex $\\left(\\frac{5}{2},-\\frac{9}{4}\\right)$, axis $x=\\frac{5}{2}$, Vieta $S=5$, $P=4$, meetings=2. Topics: vieta_sum, vieta_prod, vieta_trap, discriminant, tangency.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e9",
+      "case_id": "MATH 7.E09",
+      "title": "Mixed exam — SolarTrack",
+      "subsection": "7.5",
+      "context": "SolarTrack a tracker panel elevation is quadratic in clock time. The linear model is $f(x)=5 x - 2$ and the quadratic profile is $g(x)=x^{2} - 6 x + 5$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exist reals $A,B,C$ with $g(x)=A f(x)^2+B f(x)+C$ and $A=\\frac{1}{25}$.",
+        "With $f(x)=5 x - 2$, the nested map $g(f(x))$ has highest power $x^{3}$ because the exponents $1$ and $2$ are added.",
+        "The nested map $f(g(x))$ is a parabola (highest power $x^2$).",
+        "$g(f(1))=-4$.",
+        "$g(f(1))$ and $f(g(1))$ are always equal for these models."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\nThat is the working rule for this letter.\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{5^2}=\\frac{1}{25}$$\n\n$$B=-\\frac{26}{25},\\quad C=\\frac{69}{25}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=5 x - 2$$\n\nThat is the working rule for this letter.\n\nUnder nesting, the highest powers multiply: $2\\cdot 1=2$, they are not added.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\n$$g(f(x))=25 x^{2} - 50 x + 21$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=5 x - 2$$\n\nThat is the working rule for this letter.\n\nSubstituting a quadratic into a line keeps highest power $x^{2}$.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\n$$f(g(x))=5 x^{2} - 30 x + 23$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\nThat is the working rule for this letter.\n\nEvaluate the inner map first, then apply $g$.\n\n$$f(1)=3$$\n\n$$g(f(1))=-4$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 5$$\n\nThat is the working rule for this letter.\n\nComposition is not commutative; compute both orders.\n\n$$f(g(1))=-2$$\n\n$$g(f(1))=-4$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 109,
+      "solution_overview": "Models: $f(x)=5 x - 2$, $g(x)=x^{2} - 6 x + 5$. Vertex $\\left(3,-4\\right)$, axis $x=3$, Vieta $S=6$, $P=5$, meetings=2. Topics: rewrite, rewrite_trap, compose_deg, compose_eval, compose_trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e10",
+      "case_id": "MATH 7.E10",
+      "title": "Mixed exam — CargoDrone",
+      "subsection": "7.5",
+      "context": "CargoDrone a delivery drone's altitude clearance is quadratic in range. The linear model is $f(x)=6 x - 1$ and the quadratic profile is $g(x)=- x^{2} - 7 x + 6$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $-\\frac{161}{4}$.",
+        "$f(0)=-1$.",
+        "$g(0)=6$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "Revenue $R(x)=x\\,f(x)$ is maximised at the same $x$ as the vertex of $g$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 6$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=-\\frac{7}{2}$$\n\n$$f\\left(-\\frac{7}{2}\\right)=-22$$\n\n$$g\\left(-\\frac{7}{2}\\right)=\\frac{73}{4}$$\n\n$$f-g=-\\frac{161}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=6 x - 1$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the fare line.\n\n$$g(x)=- x^{2} - 7 x + 6$$\n\n$$f(0)=-1$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=6 x - 1$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the quadratic profile.\n\n$$g(x)=- x^{2} - 7 x + 6$$\n\n$$g(0)=6$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 7 x + 6$$\n\nThat is the working rule for this letter.\n\nSolve $g(x)=f(x)$ and read the discriminant.\n\n$$g(x)-f(x)=- x^{2} - 13 x + 7$$\n\n$$\\Delta=197$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 6$$\n\nThat is the working rule for this letter.\n\nDifferentiate $R(x)=x(mx+k)$; the critical point is $x=-k/(2m)$, not the parabola axis.\n\n$$R(x)=x \\left(6 x - 1\\right)$$\n\n$$R'(x)=0\\Rightarrow x=-\\frac{-1}{2\\cdot 6}$$\n\n$$\\text{axis of }g:\\ x=-\\frac{7}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 110,
+      "solution_overview": "Models: $f(x)=6 x - 1$, $g(x)=- x^{2} - 7 x + 6$. Vertex $\\left(-\\frac{7}{2},\\frac{73}{4}\\right)$, axis $x=-\\frac{7}{2}$, Vieta $S=-7$, $P=-6$, meetings=2. Topics: gap_axis, f0_g0, nested_order, meet_count, revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e11",
+      "case_id": "MATH 7.E11",
+      "title": "Mixed exam — CoastGuard",
+      "subsection": "7.5",
+      "context": "CoastGuard logs a discrete clearance reading $s_n$ for $n=0,1,2,\\ldots$ (table below). Engineers also track a continuous line $f(x)=2 x$ and parabola $g(x)=x^{2} - 8 x + 2$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The second differences of $(s_n)$ are constantly $2$.",
+        "The second differences of $(s_n)$ are constantly $3$.",
+        "The axis of $g$ is $x=4$.",
+        "At $n=3$ the table value $s_3$ equals $-13$.",
+        "The first differences of $(s_n)$ are constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=2 x$$\n\nThat is the working rule for this letter.\n\nA quadratic sequence has constant second differences $2a$ when $s_n=an^{2}+bn+c$.\n\n$$s_n=1n^2+-8n+2$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=2 x$$\n\nThat is the working rule for this letter.\n\nDo not confuse the middle coefficient with twice the second difference.\n\n$$g(x)=x^{2} - 8 x + 2$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=2 x$$\n\nThat is the working rule for this letter.\n\nRead $x=-b/(2a)$ from the continuous model.\n\n$$g(x)=x^{2} - 8 x + 2$$\n\n$$x=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=2 x$$\n\nThat is the working rule for this letter.\n\nSubstitute $n=3$ into the quadratic rule.\n\n$$g(x)=x^{2} - 8 x + 2$$\n\n$$s_3=1\\cdot 9+-8\\cdot 3+2=-13$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=2 x$$\n\nThat is the working rule for this letter.\n\nOnly the second differences of a quadratic sequence are constant.\n\n$$g(x)=x^{2} - 8 x + 2$$\n\n$$\\Delta^{(1)}_n=21n+(-6)$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 111,
+      "solution_overview": "Models: $f(x)=2 x$, $g(x)=x^{2} - 8 x + 2$. Vertex $\\left(4,-14\\right)$, axis $x=4$, Vieta $S=8$, $P=2$, meetings=2. Topics: table_quad, table_trap, param_tangent, param_roots, height_proj.",
+      "placeholder": false,
+      "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 2 | -5 | -10 | -13 | -14 | -13 | -10 |\n| $\\Delta^{(1)}$ | -7 | -5 | -3 | -1 | 1 | 3 | — |\n| $\\Delta^{(2)}$ | 2 | 2 | 2 | 2 | 2 | — | — |"
+    },
+    {
+      "id": "math-7-e12",
+      "case_id": "MATH 7.E12",
+      "title": "Mixed exam — FilmSet",
+      "subsection": "7.5",
+      "context": "FilmSet reviews clearance models $f(x)=3 x + 1$ and $g(x)=x^{2} - 9 x + 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $\\frac{127}{4}$.",
+        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
+        "The axis of symmetry of $g$ is $x=3$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "By Vieta, the sum of the roots of $g$ equals $-9$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=x^{2} - 9 x + 3$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=\\frac{9}{2}$$\n\n$$f-g=\\frac{127}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=3 x + 1$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 3$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=3 x + 1$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 3$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=3 x + 1$$\n\nThat is the working rule for this letter.\n\n$$\\Delta=136$$\n\n$$g(x)=x^{2} - 9 x + 3$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=3 x + 1$$\n\nThat is the working rule for this letter.\n\n$$S=9$$\n\n$$g(x)=x^{2} - 9 x + 3$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 112,
+      "solution_overview": "Models: $f(x)=3 x + 1$, $g(x)=x^{2} - 9 x + 3$. Vertex $\\left(\\frac{9}{2},-\\frac{69}{4}\\right)$, axis $x=\\frac{9}{2}$, Vieta $S=9$, $P=3$, meetings=2. Topics: fare_model, fare_trap, diff_second, line_slope, vertex_max.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e13",
+      "case_id": "MATH 7.E13",
+      "title": "Mixed exam — Aqueduct",
+      "subsection": "7.5",
+      "context": "Aqueduct a water-main pressure head is quadratic in pipe length. The linear model is $f(x)=4 x + 2$ and the quadratic profile is $g(x)=- x^{2} - 4 x + 4$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest point on the graph of $g$ is $\\left(-2,8\\right)$.",
+        "The axis of symmetry of $g$ is $x=-2$.",
+        "The axis of symmetry of $g$ is the horizontal line $y=-8$.",
+        "Completing the square gives $g(x)=-1\\left(x--2\\right)^2+8$.",
+        "The graphs of $f$ and $g$ intersect in exactly 0 real points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=- x^{2} - 4 x + 4$$\n\nThat is the working rule for this letter.\n\nThe turning point lies on the axis of symmetry; read its abscissa from the coefficients and evaluate $g$ there.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=8$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=4 x + 2$$\n\nThat is the working rule for this letter.\n\nFor $g(x)=ax^{2}+bx+c$ the vertical axis is $x=-b/(2a)$.\n\n$$g(x)=- x^{2} - 4 x + 4$$\n\n$$x=-\\frac{-4}{2\\cdot -1}=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 4 x + 4$$\n\nThat is the working rule for this letter.\n\nThe axis of symmetry is a vertical line $x=\\text{constant}$, not a horizontal height.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=8$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=4 x + 2$$\n\nThat is the working rule for this letter.\n\nShift the parabola to vertex form $a(x-h)^{2}+k$.\n\n$$g(x)=- x^{2} - 4 x + 4$$\n\n$$g(x)=-1\\left(x--2\\right)^2+8$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 4 x + 4$$\n\nThat is the working rule for this letter.\n\nIntersections solve $g(x)=f(x)$; the difference is at most quadratic.\n\n$$g(x)-f(x)=- x^{2} - 8 x + 2$$\n\n$$\\Delta=72$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 113,
+      "solution_overview": "Models: $f(x)=4 x + 2$, $g(x)=- x^{2} - 4 x + 4$. Vertex $\\left(-2,8\\right)$, axis $x=-2$, Vieta $S=-4$, $P=-4$, meetings=2. Topics: vertex, axis, axis_trap, complete_square, meetings.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e14",
+      "case_id": "MATH 7.E14",
+      "title": "Mixed exam — SkiLift",
+      "subsection": "7.5",
+      "context": "SkiLift a chair-lift clearance above terrain is modelled quadratically. The linear model is $f(x)=5 x + 3$ and the quadratic profile is $g(x)=x^{2} - 5 x + 5$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "By Vieta, the sum of the roots of $g$ equals $5$.",
+        "The product of the roots of $g$ equals $5$.",
+        "By Vieta, the sum of the roots of $g$ equals $-5$.",
+        "The discriminant of $g$ equals $5$.",
+        "The axis of symmetry of $g$ is $x=5$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=5 x + 3$$\n\nThat is the working rule for this letter.\n\nVieta gives $S=-b/a$ without solving.\n\n$$g(x)=x^{2} - 5 x + 5$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=5 x + 3$$\n\nThat is the working rule for this letter.\n\nVieta gives $P=c/a$.\n\n$$g(x)=x^{2} - 5 x + 5$$\n\n$$P=\\frac{5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=5 x + 3$$\n\nThat is the working rule for this letter.\n\nThe sign in $S=-b/a$ is a common trap.\n\n$$g(x)=x^{2} - 5 x + 5$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=5 x + 3$$\n\nThat is the working rule for this letter.\n\nCompute $\\Delta=b^{2}-4ac$.\n\n$$g(x)=x^{2} - 5 x + 5$$\n\n$$\\Delta=-5^2-4\\cdot 1\\cdot 5=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=5 x + 3$$\n\nThat is the working rule for this letter.\n\nThe axis is the midpoint of the roots: $x=S/2$, not $x=S$.\n\n$$g(x)=x^{2} - 5 x + 5$$\n\n$$x=\\frac{S}{2}=\\frac{5}{2}=\\frac{5}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 114,
+      "solution_overview": "Models: $f(x)=5 x + 3$, $g(x)=x^{2} - 5 x + 5$. Vertex $\\left(\\frac{5}{2},-\\frac{5}{4}\\right)$, axis $x=\\frac{5}{2}$, Vieta $S=5$, $P=5$, meetings=2. Topics: vieta_sum, vieta_prod, vieta_trap, discriminant, tangency.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e15",
+      "case_id": "MATH 7.E15",
+      "title": "Mixed exam — MineCart",
+      "subsection": "7.5",
+      "context": "MineCart an underground hauler's ceiling clearance is quadratic in tunnel position. The linear model is $f(x)=6 x - 3$ and the quadratic profile is $g(x)=x^{2} - 6 x + 6$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exist reals $A,B,C$ with $g(x)=A f(x)^2+B f(x)+C$ and $A=\\frac{1}{36}$.",
+        "With $f(x)=6 x - 3$, the nested map $g(f(x))$ has highest power $x^{3}$ because the exponents $1$ and $2$ are added.",
+        "The nested map $f(g(x))$ is a parabola (highest power $x^2$).",
+        "$g(f(1))=-3$.",
+        "$g(f(1))$ and $f(g(1))$ are always equal for these models."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=x^{2} - 6 x + 6$$\n\nThat is the working rule for this letter.\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{6^2}=\\frac{1}{36}$$\n\n$$B=-\\frac{5}{6},\\quad C=\\frac{13}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=6 x - 3$$\n\nThat is the working rule for this letter.\n\nUnder nesting, the highest powers multiply: $2\\cdot 1=2$, they are not added.\n\n$$g(x)=x^{2} - 6 x + 6$$\n\n$$g(f(x))=36 x^{2} - 72 x + 33$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=6 x - 3$$\n\nThat is the working rule for this letter.\n\nSubstituting a quadratic into a line keeps highest power $x^{2}$.\n\n$$g(x)=x^{2} - 6 x + 6$$\n\n$$f(g(x))=6 x^{2} - 36 x + 33$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 6$$\n\nThat is the working rule for this letter.\n\nEvaluate the inner map first, then apply $g$.\n\n$$f(1)=3$$\n\n$$g(f(1))=-3$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 6$$\n\nThat is the working rule for this letter.\n\nComposition is not commutative; compute both orders.\n\n$$f(g(1))=3$$\n\n$$g(f(1))=-3$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 115,
+      "solution_overview": "Models: $f(x)=6 x - 3$, $g(x)=x^{2} - 6 x + 6$. Vertex $\\left(3,-3\\right)$, axis $x=3$, Vieta $S=6$, $P=6$, meetings=2. Topics: rewrite, rewrite_trap, compose_deg, compose_eval, compose_trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e16",
+      "case_id": "MATH 7.E16",
+      "title": "Mixed exam — Orchard",
+      "subsection": "7.5",
+      "context": "Orchard a sprayer boom height follows a quadratic field profile. The linear model is $f(x)=2 x - 2$ and the quadratic profile is $g(x)=- x^{2} - 7 x + 2$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $-\\frac{93}{4}$.",
+        "$f(0)=-2$.",
+        "$g(0)=2$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "Revenue $R(x)=x\\,f(x)$ is maximised at the same $x$ as the vertex of $g$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 2$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=-\\frac{7}{2}$$\n\n$$f\\left(-\\frac{7}{2}\\right)=-9$$\n\n$$g\\left(-\\frac{7}{2}\\right)=\\frac{57}{4}$$\n\n$$f-g=-\\frac{93}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=2 x - 2$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the fare line.\n\n$$g(x)=- x^{2} - 7 x + 2$$\n\n$$f(0)=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=2 x - 2$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the quadratic profile.\n\n$$g(x)=- x^{2} - 7 x + 2$$\n\n$$g(0)=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 7 x + 2$$\n\nThat is the working rule for this letter.\n\nSolve $g(x)=f(x)$ and read the discriminant.\n\n$$g(x)-f(x)=- x^{2} - 9 x + 4$$\n\n$$\\Delta=97$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 2$$\n\nThat is the working rule for this letter.\n\nDifferentiate $R(x)=x(mx+k)$; the critical point is $x=-k/(2m)$, not the parabola axis.\n\n$$R(x)=2 x \\left(x - 1\\right)$$\n\n$$R'(x)=0\\Rightarrow x=-\\frac{-2}{2\\cdot 2}$$\n\n$$\\text{axis of }g:\\ x=-\\frac{7}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 116,
+      "solution_overview": "Models: $f(x)=2 x - 2$, $g(x)=- x^{2} - 7 x + 2$. Vertex $\\left(-\\frac{7}{2},\\frac{57}{4}\\right)$, axis $x=-\\frac{7}{2}$, Vieta $S=-7$, $P=-2$, meetings=2. Topics: gap_axis, f0_g0, nested_order, meet_count, revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e17",
+      "case_id": "MATH 7.E17",
+      "title": "Mixed exam — BridgeDeck",
+      "subsection": "7.5",
+      "context": "BridgeDeck logs a discrete clearance reading $s_n$ for $n=0,1,2,\\ldots$ (table below). Engineers also track a continuous line $f(x)=3 x - 1$ and parabola $g(x)=x^{2} - 8 x + 3$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The second differences of $(s_n)$ are constantly $2$.",
+        "The second differences of $(s_n)$ are constantly $3$.",
+        "The axis of $g$ is $x=4$.",
+        "At $n=3$ the table value $s_3$ equals $-12$.",
+        "The first differences of $(s_n)$ are constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=3 x - 1$$\n\nThat is the working rule for this letter.\n\nA quadratic sequence has constant second differences $2a$ when $s_n=an^{2}+bn+c$.\n\n$$s_n=1n^2+-8n+3$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=3 x - 1$$\n\nThat is the working rule for this letter.\n\nDo not confuse the middle coefficient with twice the second difference.\n\n$$g(x)=x^{2} - 8 x + 3$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=3 x - 1$$\n\nThat is the working rule for this letter.\n\nRead $x=-b/(2a)$ from the continuous model.\n\n$$g(x)=x^{2} - 8 x + 3$$\n\n$$x=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=3 x - 1$$\n\nThat is the working rule for this letter.\n\nSubstitute $n=3$ into the quadratic rule.\n\n$$g(x)=x^{2} - 8 x + 3$$\n\n$$s_3=1\\cdot 9+-8\\cdot 3+3=-12$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=3 x - 1$$\n\nThat is the working rule for this letter.\n\nOnly the second differences of a quadratic sequence are constant.\n\n$$g(x)=x^{2} - 8 x + 3$$\n\n$$\\Delta^{(1)}_n=21n+(-6)$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 117,
+      "solution_overview": "Models: $f(x)=3 x - 1$, $g(x)=x^{2} - 8 x + 3$. Vertex $\\left(4,-13\\right)$, axis $x=4$, Vieta $S=8$, $P=3$, meetings=2. Topics: table_quad, table_trap, param_tangent, param_roots, height_proj.",
+      "placeholder": false,
+      "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 3 | -4 | -9 | -12 | -13 | -12 | -9 |\n| $\\Delta^{(1)}$ | -7 | -5 | -3 | -1 | 1 | 3 | — |\n| $\\Delta^{(2)}$ | 2 | 2 | 2 | 2 | 2 | — | — |"
+    },
+    {
+      "id": "math-7-e18",
+      "case_id": "MATH 7.E18",
+      "title": "Mixed exam — FloodGate",
+      "subsection": "7.5",
+      "context": "FloodGate reviews clearance models $f(x)=4 x$ and $g(x)=x^{2} - 9 x + 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $\\frac{137}{4}$.",
+        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
+        "The axis of symmetry of $g$ is $x=-4$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "By Vieta, the sum of the roots of $g$ equals $-9$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=x^{2} - 9 x + 4$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=\\frac{9}{2}$$\n\n$$f-g=\\frac{137}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=4 x$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 4$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=4 x$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 4$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=4 x$$\n\nThat is the working rule for this letter.\n\n$$\\Delta=153$$\n\n$$g(x)=x^{2} - 9 x + 4$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=4 x$$\n\nThat is the working rule for this letter.\n\n$$S=9$$\n\n$$g(x)=x^{2} - 9 x + 4$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 118,
+      "solution_overview": "Models: $f(x)=4 x$, $g(x)=x^{2} - 9 x + 4$. Vertex $\\left(\\frac{9}{2},-\\frac{65}{4}\\right)$, axis $x=\\frac{9}{2}$, Vieta $S=9$, $P=4$, meetings=2. Topics: fare_model, fare_trap, diff_second, line_slope, vertex_max.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e19",
+      "case_id": "MATH 7.E19",
+      "title": "Mixed exam — RaceTrack",
+      "subsection": "7.5",
+      "context": "RaceTrack a kart circuit's banking angle is quadratic in lap distance. The linear model is $f(x)=5 x + 1$ and the quadratic profile is $g(x)=- x^{2} - 4 x + 5$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest point on the graph of $g$ is $\\left(-2,9\\right)$.",
+        "The axis of symmetry of $g$ is $x=-2$.",
+        "The axis of symmetry of $g$ is the horizontal line $y=18$.",
+        "Completing the square gives $g(x)=-1\\left(x--2\\right)^2+9$.",
+        "The graphs of $f$ and $g$ intersect in exactly 0 real points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=- x^{2} - 4 x + 5$$\n\nThat is the working rule for this letter.\n\nThe turning point lies on the axis of symmetry; read its abscissa from the coefficients and evaluate $g$ there.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=9$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=5 x + 1$$\n\nThat is the working rule for this letter.\n\nFor $g(x)=ax^{2}+bx+c$ the vertical axis is $x=-b/(2a)$.\n\n$$g(x)=- x^{2} - 4 x + 5$$\n\n$$x=-\\frac{-4}{2\\cdot -1}=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 4 x + 5$$\n\nThat is the working rule for this letter.\n\nThe axis of symmetry is a vertical line $x=\\text{constant}$, not a horizontal height.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=9$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=5 x + 1$$\n\nThat is the working rule for this letter.\n\nShift the parabola to vertex form $a(x-h)^{2}+k$.\n\n$$g(x)=- x^{2} - 4 x + 5$$\n\n$$g(x)=-1\\left(x--2\\right)^2+9$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 4 x + 5$$\n\nThat is the working rule for this letter.\n\nIntersections solve $g(x)=f(x)$; the difference is at most quadratic.\n\n$$g(x)-f(x)=- x^{2} - 9 x + 4$$\n\n$$\\Delta=97$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 119,
+      "solution_overview": "Models: $f(x)=5 x + 1$, $g(x)=- x^{2} - 4 x + 5$. Vertex $\\left(-2,9\\right)$, axis $x=-2$, Vieta $S=-4$, $P=-5$, meetings=2. Topics: vertex, axis, axis_trap, complete_square, meetings.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e20",
+      "case_id": "MATH 7.E20",
+      "title": "Mixed exam — Observatory",
+      "subsection": "7.5",
+      "context": "Observatory a dome shutter gap height is quadratic in azimuth. The linear model is $f(x)=6 x + 2$ and the quadratic profile is $g(x)=x^{2} - 5 x + 6$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "By Vieta, the sum of the roots of $g$ equals $5$.",
+        "The product of the roots of $g$ equals $6$.",
+        "By Vieta, the sum of the roots of $g$ equals $-5$.",
+        "The discriminant of $g$ equals $1$.",
+        "The axis of symmetry of $g$ is $x=5$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=6 x + 2$$\n\nThat is the working rule for this letter.\n\nVieta gives $S=-b/a$ without solving.\n\n$$g(x)=x^{2} - 5 x + 6$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=6 x + 2$$\n\nThat is the working rule for this letter.\n\nVieta gives $P=c/a$.\n\n$$g(x)=x^{2} - 5 x + 6$$\n\n$$P=\\frac{6}{1}=6$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=6 x + 2$$\n\nThat is the working rule for this letter.\n\nThe sign in $S=-b/a$ is a common trap.\n\n$$g(x)=x^{2} - 5 x + 6$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=6 x + 2$$\n\nThat is the working rule for this letter.\n\nCompute $\\Delta=b^{2}-4ac$.\n\n$$g(x)=x^{2} - 5 x + 6$$\n\n$$\\Delta=-5^2-4\\cdot 1\\cdot 6=1$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=6 x + 2$$\n\nThat is the working rule for this letter.\n\nThe axis is the midpoint of the roots: $x=S/2$, not $x=S$.\n\n$$g(x)=x^{2} - 5 x + 6$$\n\n$$x=\\frac{S}{2}=\\frac{5}{2}=\\frac{5}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 120,
+      "solution_overview": "Models: $f(x)=6 x + 2$, $g(x)=x^{2} - 5 x + 6$. Vertex $\\left(\\frac{5}{2},-\\frac{1}{4}\\right)$, axis $x=\\frac{5}{2}$, Vieta $S=5$, $P=6$, meetings=2. Topics: vieta_sum, vieta_prod, vieta_trap, discriminant, tangency.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e21",
+      "case_id": "MATH 7.E21",
+      "title": "Mixed exam — Harvester",
+      "subsection": "7.5",
+      "context": "Harvester a combine's cut height is quadratic across the field width. The linear model is $f(x)=2 x + 3$ and the quadratic profile is $g(x)=x^{2} - 6 x + 2$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exist reals $A,B,C$ with $g(x)=A f(x)^2+B f(x)+C$ and $A=\\frac{1}{4}$.",
+        "With $f(x)=2 x + 3$, the nested map $g(f(x))$ has highest power $x^{3}$ because the exponents $1$ and $2$ are added.",
+        "The nested map $f(g(x))$ is a parabola (highest power $x^2$).",
+        "$g(f(1))=-3$.",
+        "$f(g(0))$ equals $g(f(0))$ for every linear $f$ and quadratic $g$."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=x^{2} - 6 x + 2$$\n\nThat is the working rule for this letter.\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{2^2}=\\frac{1}{4}$$\n\n$$B=-\\frac{9}{2},\\quad C=\\frac{53}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=2 x + 3$$\n\nThat is the working rule for this letter.\n\nUnder nesting, the highest powers multiply: $2\\cdot 1=2$, they are not added.\n\n$$g(x)=x^{2} - 6 x + 2$$\n\n$$g(f(x))=4 x^{2} - 7$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=2 x + 3$$\n\nThat is the working rule for this letter.\n\nSubstituting a quadratic into a line keeps highest power $x^{2}$.\n\n$$g(x)=x^{2} - 6 x + 2$$\n\n$$f(g(x))=2 x^{2} - 12 x + 7$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 2$$\n\nThat is the working rule for this letter.\n\nEvaluate the inner map first, then apply $g$.\n\n$$f(1)=5$$\n\n$$g(f(1))=-3$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 2$$\n\nThat is the working rule for this letter.\n\nA single coincidence does not make a general law.\n\n$$f(g(0))=7$$\n\n$$g(f(0))=-7$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 121,
+      "solution_overview": "Models: $f(x)=2 x + 3$, $g(x)=x^{2} - 6 x + 2$. Vertex $\\left(3,-7\\right)$, axis $x=3$, Vieta $S=6$, $P=2$, meetings=2. Topics: rewrite, rewrite_trap, compose_deg, compose_eval, compose_trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e22",
+      "case_id": "MATH 7.E22",
+      "title": "Mixed exam — ZipLine",
+      "subsection": "7.5",
+      "context": "ZipLine a zip-line rider height is quadratic in cable position. The linear model is $f(x)=3 x - 3$ and the quadratic profile is $g(x)=- x^{2} - 7 x + 3$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $-\\frac{115}{4}$.",
+        "$f(0)=-3$.",
+        "$g(0)=3$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "Revenue $R(x)=x\\,f(x)$ is maximised at the same $x$ as the vertex of $g$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 3$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=-\\frac{7}{2}$$\n\n$$f\\left(-\\frac{7}{2}\\right)=-\\frac{27}{2}$$\n\n$$g\\left(-\\frac{7}{2}\\right)=\\frac{61}{4}$$\n\n$$f-g=-\\frac{115}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=3 x - 3$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the fare line.\n\n$$g(x)=- x^{2} - 7 x + 3$$\n\n$$f(0)=-3$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=3 x - 3$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the quadratic profile.\n\n$$g(x)=- x^{2} - 7 x + 3$$\n\n$$g(0)=3$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 7 x + 3$$\n\nThat is the working rule for this letter.\n\nSolve $g(x)=f(x)$ and read the discriminant.\n\n$$g(x)-f(x)=- x^{2} - 10 x + 6$$\n\n$$\\Delta=124$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 3$$\n\nThat is the working rule for this letter.\n\nDifferentiate $R(x)=x(mx+k)$; the critical point is $x=-k/(2m)$, not the parabola axis.\n\n$$R(x)=3 x \\left(x - 1\\right)$$\n\n$$R'(x)=0\\Rightarrow x=-\\frac{-3}{2\\cdot 3}$$\n\n$$\\text{axis of }g:\\ x=-\\frac{7}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 122,
+      "solution_overview": "Models: $f(x)=3 x - 3$, $g(x)=- x^{2} - 7 x + 3$. Vertex $\\left(-\\frac{7}{2},\\frac{61}{4}\\right)$, axis $x=-\\frac{7}{2}$, Vieta $S=-7$, $P=-3$, meetings=2. Topics: gap_axis, f0_g0, nested_order, meet_count, revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e23",
+      "case_id": "MATH 7.E23",
+      "title": "Mixed exam — CanalLock",
+      "subsection": "7.5",
+      "context": "CanalLock logs a discrete clearance reading $s_n$ for $n=0,1,2,\\ldots$ (table below). Engineers also track a continuous line $f(x)=4 x - 2$ and parabola $g(x)=x^{2} - 8 x + 4$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The second differences of $(s_n)$ are constantly $2$.",
+        "The second differences of $(s_n)$ are constantly $3$.",
+        "The axis of $g$ is $x=4$.",
+        "At $n=3$ the table value $s_3$ equals $-11$.",
+        "The first differences of $(s_n)$ are constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=4 x - 2$$\n\nThat is the working rule for this letter.\n\nA quadratic sequence has constant second differences $2a$ when $s_n=an^{2}+bn+c$.\n\n$$s_n=1n^2+-8n+4$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=4 x - 2$$\n\nThat is the working rule for this letter.\n\nDo not confuse the middle coefficient with twice the second difference.\n\n$$g(x)=x^{2} - 8 x + 4$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=4 x - 2$$\n\nThat is the working rule for this letter.\n\nRead $x=-b/(2a)$ from the continuous model.\n\n$$g(x)=x^{2} - 8 x + 4$$\n\n$$x=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=4 x - 2$$\n\nThat is the working rule for this letter.\n\nSubstitute $n=3$ into the quadratic rule.\n\n$$g(x)=x^{2} - 8 x + 4$$\n\n$$s_3=1\\cdot 9+-8\\cdot 3+4=-11$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=4 x - 2$$\n\nThat is the working rule for this letter.\n\nOnly the second differences of a quadratic sequence are constant.\n\n$$g(x)=x^{2} - 8 x + 4$$\n\n$$\\Delta^{(1)}_n=21n+(-6)$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 123,
+      "solution_overview": "Models: $f(x)=4 x - 2$, $g(x)=x^{2} - 8 x + 4$. Vertex $\\left(4,-12\\right)$, axis $x=4$, Vieta $S=8$, $P=4$, meetings=2. Topics: table_quad, table_trap, param_tangent, param_roots, height_proj.",
+      "placeholder": false,
+      "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 4 | -3 | -8 | -11 | -12 | -11 | -8 |\n| $\\Delta^{(1)}$ | -7 | -5 | -3 | -1 | 1 | 3 | — |\n| $\\Delta^{(2)}$ | 2 | 2 | 2 | 2 | 2 | — | — |"
+    },
+    {
+      "id": "math-7-e24",
+      "case_id": "MATH 7.E24",
+      "title": "Mixed exam — RooftopBar",
+      "subsection": "7.5",
+      "context": "RooftopBar reviews clearance models $f(x)=5 x - 1$ and $g(x)=x^{2} - 9 x + 5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $\\frac{147}{4}$.",
+        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
+        "The axis of symmetry of $g$ is $x=8$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "By Vieta, the sum of the roots of $g$ equals $-9$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=x^{2} - 9 x + 5$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=\\frac{9}{2}$$\n\n$$f-g=\\frac{147}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=5 x - 1$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 5$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=5 x - 1$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 5$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=5 x - 1$$\n\nThat is the working rule for this letter.\n\n$$\\Delta=172$$\n\n$$g(x)=x^{2} - 9 x + 5$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=5 x - 1$$\n\nThat is the working rule for this letter.\n\n$$S=9$$\n\n$$g(x)=x^{2} - 9 x + 5$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 124,
+      "solution_overview": "Models: $f(x)=5 x - 1$, $g(x)=x^{2} - 9 x + 5$. Vertex $\\left(\\frac{9}{2},-\\frac{61}{4}\\right)$, axis $x=\\frac{9}{2}$, Vieta $S=9$, $P=5$, meetings=2. Topics: fare_model, fare_trap, diff_second, line_slope, vertex_max.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e25",
+      "case_id": "MATH 7.E25",
+      "title": "Mixed exam — Substation",
+      "subsection": "7.5",
+      "context": "Substation a power-line sag height is quadratic between pylons. The linear model is $f(x)=6 x$ and the quadratic profile is $g(x)=- x^{2} - 4 x + 6$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The highest point on the graph of $g$ is $\\left(-2,10\\right)$.",
+        "The axis of symmetry of $g$ is $x=-2$.",
+        "The axis of symmetry of $g$ is the horizontal line $y=12$.",
+        "Completing the square gives $g(x)=-1\\left(x--2\\right)^2+10$.",
+        "The graphs of $f$ and $g$ intersect in exactly 0 real points."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=- x^{2} - 4 x + 6$$\n\nThat is the working rule for this letter.\n\nThe turning point lies on the axis of symmetry; read its abscissa from the coefficients and evaluate $g$ there.\n\n$$x=-\\frac{b}{2a}=-\\frac{-4}{2\\cdot -1}=-2$$\n\n$$g\\left(-2\\right)=10$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=6 x$$\n\nThat is the working rule for this letter.\n\nFor $g(x)=ax^{2}+bx+c$ the vertical axis is $x=-b/(2a)$.\n\n$$g(x)=- x^{2} - 4 x + 6$$\n\n$$x=-\\frac{-4}{2\\cdot -1}=-2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 4 x + 6$$\n\nThat is the working rule for this letter.\n\nThe axis of symmetry is a vertical line $x=\\text{constant}$, not a horizontal height.\n\n$$x=-2$$\n\n$$g\\left(-2\\right)=10$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=6 x$$\n\nThat is the working rule for this letter.\n\nShift the parabola to vertex form $a(x-h)^{2}+k$.\n\n$$g(x)=- x^{2} - 4 x + 6$$\n\n$$g(x)=-1\\left(x--2\\right)^2+10$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 4 x + 6$$\n\nThat is the working rule for this letter.\n\nIntersections solve $g(x)=f(x)$; the difference is at most quadratic.\n\n$$g(x)-f(x)=- x^{2} - 10 x + 6$$\n\n$$\\Delta=124$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 125,
+      "solution_overview": "Models: $f(x)=6 x$, $g(x)=- x^{2} - 4 x + 6$. Vertex $\\left(-2,10\\right)$, axis $x=-2$, Vieta $S=-4$, $P=-6$, meetings=2. Topics: vertex, axis, axis_trap, complete_square, meetings.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e26",
+      "case_id": "MATH 7.E26",
+      "title": "Mixed exam — Velodrome",
+      "subsection": "7.5",
+      "context": "Velodrome a track barrier height is quadratic in straight length. The linear model is $f(x)=2 x + 1$ and the quadratic profile is $g(x)=x^{2} - 5 x + 2$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "By Vieta, the sum of the roots of $g$ equals $5$.",
+        "The product of the roots of $g$ equals $2$.",
+        "By Vieta, the sum of the roots of $g$ equals $-5$.",
+        "The discriminant of $g$ equals $17$.",
+        "The axis of symmetry of $g$ is $x=5$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=2 x + 1$$\n\nThat is the working rule for this letter.\n\nVieta gives $S=-b/a$ without solving.\n\n$$g(x)=x^{2} - 5 x + 2$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=2 x + 1$$\n\nThat is the working rule for this letter.\n\nVieta gives $P=c/a$.\n\n$$g(x)=x^{2} - 5 x + 2$$\n\n$$P=\\frac{2}{1}=2$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=2 x + 1$$\n\nThat is the working rule for this letter.\n\nThe sign in $S=-b/a$ is a common trap.\n\n$$g(x)=x^{2} - 5 x + 2$$\n\n$$S=-\\frac{-5}{1}=5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**D.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=2 x + 1$$\n\nThat is the working rule for this letter.\n\nCompute $\\Delta=b^{2}-4ac$.\n\n$$g(x)=x^{2} - 5 x + 2$$\n\n$$\\Delta=-5^2-4\\cdot 1\\cdot 2=17$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=2 x + 1$$\n\nThat is the working rule for this letter.\n\nThe axis is the midpoint of the roots: $x=S/2$, not $x=S$.\n\n$$g(x)=x^{2} - 5 x + 2$$\n\n$$x=\\frac{S}{2}=\\frac{5}{2}=\\frac{5}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 126,
+      "solution_overview": "Models: $f(x)=2 x + 1$, $g(x)=x^{2} - 5 x + 2$. Vertex $\\left(\\frac{5}{2},-\\frac{17}{4}\\right)$, axis $x=\\frac{5}{2}$, Vieta $S=5$, $P=2$, meetings=2. Topics: vieta_sum, vieta_prod, vieta_trap, discriminant, tangency.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e27",
+      "case_id": "MATH 7.E27",
+      "title": "Mixed exam — DockCrane",
+      "subsection": "7.5",
+      "context": "DockCrane a container stacker's hook path is quadratic in trolley position. The linear model is $f(x)=3 x + 2$ and the quadratic profile is $g(x)=x^{2} - 6 x + 3$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "There exist reals $A,B,C$ with $g(x)=A f(x)^2+B f(x)+C$ and $A=\\frac{1}{9}$.",
+        "With $f(x)=3 x + 2$, the nested map $g(f(x))$ has highest power $x^{3}$ because the exponents $1$ and $2$ are added.",
+        "The nested map $f(g(x))$ is a parabola (highest power $x^2$).",
+        "$g(f(1))=-2$.",
+        "$g(f(1))$ and $f(g(1))$ are always equal for these models."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$g(x)=x^{2} - 6 x + 3$$\n\nThat is the working rule for this letter.\n\nMatch coefficients in $A(mx+k)^{2}+B(mx+k)+C$.\n\n$$A=\\frac{1}{3^2}=\\frac{1}{9}$$\n\n$$B=-\\frac{22}{9},\\quad C=\\frac{67}{9}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=3 x + 2$$\n\nThat is the working rule for this letter.\n\nUnder nesting, the highest powers multiply: $2\\cdot 1=2$, they are not added.\n\n$$g(x)=x^{2} - 6 x + 3$$\n\n$$g(f(x))=9 x^{2} - 6 x - 5$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$f(x)=3 x + 2$$\n\nThat is the working rule for this letter.\n\nSubstituting a quadratic into a line keeps highest power $x^{2}$.\n\n$$g(x)=x^{2} - 6 x + 3$$\n\n$$f(g(x))=3 x^{2} - 18 x + 11$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 3$$\n\nThat is the working rule for this letter.\n\nEvaluate the inner map first, then apply $g$.\n\n$$f(1)=5$$\n\n$$g(f(1))=-2$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nNesting substitutes the inner formula for the outer variable. Highest powers multiply under nesting; they do not add.\n\n$$g(x)=x^{2} - 6 x + 3$$\n\nThat is the working rule for this letter.\n\nComposition is not commutative; compute both orders.\n\n$$f(g(1))=-4$$\n\n$$g(f(1))=-2$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 127,
+      "solution_overview": "Models: $f(x)=3 x + 2$, $g(x)=x^{2} - 6 x + 3$. Vertex $\\left(3,-6\\right)$, axis $x=3$, Vieta $S=6$, $P=3$, meetings=2. Topics: rewrite, rewrite_trap, compose_deg, compose_eval, compose_trap.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e28",
+      "case_id": "MATH 7.E28",
+      "title": "Mixed exam — GlacierTour",
+      "subsection": "7.5",
+      "context": "GlacierTour a snowcat's cabin height is quadratic on a glacier traverse. The linear model is $f(x)=4 x + 3$ and the quadratic profile is $g(x)=- x^{2} - 7 x + 4$, where $x$ is the control variable in metres. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $-\\frac{109}{4}$.",
+        "$f(0)=3$.",
+        "$g(0)=4$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "Revenue $R(x)=x\\,f(x)$ is maximised at the same $x$ as the vertex of $g$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 4$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=-\\frac{7}{2}$$\n\n$$f\\left(-\\frac{7}{2}\\right)=-11$$\n\n$$g\\left(-\\frac{7}{2}\\right)=\\frac{65}{4}$$\n\n$$f-g=-\\frac{109}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=4 x + 3$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the fare line.\n\n$$g(x)=- x^{2} - 7 x + 4$$\n\n$$f(0)=3$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**C.** → True\n\nThe claim is a multi-step reading of the stem: isolate the relevant rule, carry out the algebra carefully, and only then compare with the named number or shape. A rushed glance at one coefficient is not enough here.\n\n$$f(x)=4 x + 3$$\n\nThat is the working rule for this letter.\n\nSubstitute $x=0$ into the quadratic profile.\n\n$$g(x)=- x^{2} - 7 x + 4$$\n\n$$g(0)=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$g(x)=- x^{2} - 7 x + 4$$\n\nThat is the working rule for this letter.\n\nSolve $g(x)=f(x)$ and read the discriminant.\n\n$$g(x)-f(x)=- x^{2} - 11 x + 1$$\n\n$$\\Delta=125$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=- x^{2} - 7 x + 4$$\n\nThat is the working rule for this letter.\n\nDifferentiate $R(x)=x(mx+k)$; the critical point is $x=-k/(2m)$, not the parabola axis.\n\n$$R(x)=x \\left(4 x + 3\\right)$$\n\n$$R'(x)=0\\Rightarrow x=-\\frac{3}{2\\cdot 4}$$\n\n$$\\text{axis of }g:\\ x=-\\frac{7}{2}$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 128,
+      "solution_overview": "Models: $f(x)=4 x + 3$, $g(x)=- x^{2} - 7 x + 4$. Vertex $\\left(-\\frac{7}{2},\\frac{65}{4}\\right)$, axis $x=-\\frac{7}{2}$, Vieta $S=-7$, $P=-4$, meetings=2. Topics: gap_axis, f0_g0, nested_order, meet_count, revenue.",
+      "placeholder": false
+    },
+    {
+      "id": "math-7-e29",
+      "case_id": "MATH 7.E29",
+      "title": "Mixed exam — BalloonFest",
+      "subsection": "7.5",
+      "context": "BalloonFest logs a discrete clearance reading $s_n$ for $n=0,1,2,\\ldots$ (table below). Engineers also track a continuous line $f(x)=5 x - 3$ and parabola $g(x)=x^{2} - 8 x + 5$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "The second differences of $(s_n)$ are constantly $2$.",
+        "The second differences of $(s_n)$ are constantly $3$.",
+        "The axis of $g$ is $x=4$.",
+        "At $n=3$ the table value $s_3$ equals $-10$.",
+        "The first differences of $(s_n)$ are constant."
+      ],
+      "answer_key": [
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=5 x - 3$$\n\nThat is the working rule for this letter.\n\nA quadratic sequence has constant second differences $2a$ when $s_n=an^{2}+bn+c$.\n\n$$s_n=1n^2+-8n+5$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=5 x - 3$$\n\nThat is the working rule for this letter.\n\nDo not confuse the middle coefficient with twice the second difference.\n\n$$g(x)=x^{2} - 8 x + 5$$\n\n$$\\Delta^{(2)}=2\\cdot 1=2$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False.",
+        "**C.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=5 x - 3$$\n\nThat is the working rule for this letter.\n\nRead $x=-b/(2a)$ from the continuous model.\n\n$$g(x)=x^{2} - 8 x + 5$$\n\n$$x=4$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**D.** → True\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=5 x - 3$$\n\nThat is the working rule for this letter.\n\nSubstitute $n=3$ into the quadratic rule.\n\n$$g(x)=x^{2} - 8 x + 5$$\n\n$$s_3=1\\cdot 9+-8\\cdot 3+5=-10$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**E.** → False\n\nA table gives interval rates as first differences; acceleration is the derivative of a cubic speed. Convert units only after the pure m/s arithmetic is finished.\n\n$$f(x)=5 x - 3$$\n\nThat is the working rule for this letter.\n\nOnly the second differences of a quadratic sequence are constant.\n\n$$g(x)=x^{2} - 8 x + 5$$\n\n$$\\Delta^{(1)}_n=21n+(-6)$$\n\nThe same algebra produces a different number or shape from the one named, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 129,
+      "solution_overview": "Models: $f(x)=5 x - 3$, $g(x)=x^{2} - 8 x + 5$. Vertex $\\left(4,-11\\right)$, axis $x=4$, Vieta $S=8$, $P=5$, meetings=2. Topics: table_quad, table_trap, param_tangent, param_roots, height_proj.",
+      "placeholder": false,
+      "tables_markdown": "| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $s_n$ | 5 | -2 | -7 | -10 | -11 | -10 | -7 |\n| $\\Delta^{(1)}$ | -7 | -5 | -3 | -1 | 1 | 3 | — |\n| $\\Delta^{(2)}$ | 2 | 2 | 2 | 2 | 2 | — | — |"
+    },
+    {
+      "id": "math-7-e30",
+      "case_id": "MATH 7.E30",
+      "title": "Mixed exam — PortPilot",
+      "subsection": "7.5",
+      "context": "PortPilot reviews clearance models $f(x)=6 x - 2$ and $g(x)=x^{2} - 9 x + 6$. Evaluate each statement. Mark it TRUE or FALSE.",
+      "statements": [
+        "At the axis of $g$, the vertical gap $f-g$ equals $\\frac{157}{4}$.",
+        "The axis of symmetry of $g$ is $x=\\frac{9}{2}$.",
+        "The axis of symmetry of $g$ is $x=6$.",
+        "The graphs of $f$ and $g$ meet at exactly 2 distinct real points.",
+        "By Vieta, the sum of the roots of $g$ equals $-9$."
+      ],
+      "answer_key": [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      "tactical_explanations": [
+        "**A.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$g(x)=x^{2} - 9 x + 6$$\n\nThat is the working rule for this letter.\n\nEvaluate both models on the axis abscissa.\n\n$$x=\\frac{9}{2}$$\n\n$$f-g=\\frac{157}{4}$$\n\nThe algebra lines up with the wording of the claim after those steps, so the statement is True.",
+        "**B.** → True\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=6 x - 2$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 6$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**C.** → False\n\nA parabola's turning point sits on its axis of symmetry. The abscissa comes from the first two coefficients alone; the height is the value of the rule at that abscissa.\n\n$$f(x)=6 x - 2$$\n\nThat is the working rule for this letter.\n\n$$x=\\frac{9}{2}$$\n\n$$g(x)=x^{2} - 9 x + 6$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False.",
+        "**D.** → True\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=6 x - 2$$\n\nThat is the working rule for this letter.\n\n$$\\Delta=193$$\n\n$$g(x)=x^{2} - 9 x + 6$$\n\nThe algebra lines up with the wording of the claim after those steps\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is True.",
+        "**E.** → False\n\nRoots and meetings are zeros of a polynomial (or of a difference of two polynomials). Factor, expand, or compute a discriminant before counting.\n\n$$f(x)=6 x - 2$$\n\nThat is the working rule for this letter.\n\n$$S=9$$\n\n$$g(x)=x^{2} - 9 x + 6$$\n\nThe same algebra produces a different number or shape from the one named\n\nKeep the intermediate number on the page rather than jumping to the verdict: expand, substitute, or differentiate once more, then read the claim against that result.\n\nThis comparison decides the letter, so the statement is False."
+      ],
+      "difficulty_level": "5/5",
+      "sort_order": 130,
+      "solution_overview": "Models: $f(x)=6 x - 2$, $g(x)=x^{2} - 9 x + 6$. Vertex $\\left(\\frac{9}{2},-\\frac{57}{4}\\right)$, axis $x=\\frac{9}{2}$, Vieta $S=9$, $P=6$, meetings=2. Topics: fare_model, fare_trap, diff_second, line_slope, vertex_max.",
+      "placeholder": false
+    }
+  ]
+}
