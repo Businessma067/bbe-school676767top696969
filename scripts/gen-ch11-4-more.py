@@ -640,28 +640,43 @@ def build() -> list[dict]:
         yticks=[-4, -2, 0, 2, 4],
     )
     add(
-        title="Three firms at x=3: who should expand?",
+        title="Three firms' marginal profits: signs, peaks, and advice",
         difficulty_level="5/5",
         context=(
             "Brown, green, and purple are three firms' marginal profits on shared axes. "
             "Decide TRUE or FALSE."
         ),
         statements=[
-            "At $x=3$, brown is positive, so firm A should expand a little.",
-            "At $x=3$, green is negative, so firm B should not expand.",
-            "At $x=3$, purple is positive, so firm C should expand a little.",
-            "Firm A has a local profit peak near $x=5$.",
+            "At $x=3$, brown and purple are above the axis while green is below it.",
+            "Firm A (brown) has a local profit peak near $x=5$.",
+            "At $x=0$, brown is already positive.",
+            "Purple crosses from positive to negative somewhere in $(4,5)$.",
             "All three firms have the same expand/contract recommendation at every $x$ in $(0,6)$.",
         ],
-        answer_key=[True, True, True, True, False],
+        answer_key=[True, True, False, True, False],
         tactical_explanations=[
-            expl("A", True, "Brown is above the axis at $x=3$."),
-            expl("B", True, "Green is below the axis at $x=3$."),
-            expl("C", True, "Purple is still above the axis at $x=3$."),
-            expl("D", True, "Brown crosses from $+$ to $-$ near $x=5$."),
-            expl("E", False, "At $x=3$ already A and C want to expand while B does not."),
+            expl("A", True, "At $x=3$, brown and purple sit above the axis; green sits below."),
+            expl(
+                "B",
+                True,
+                "Brown crosses from $+$ to $-$ near $x=5$, so firm A's profit has a local peak there.",
+            ),
+            expl(
+                "C",
+                False,
+                "At $x=0$, brown is below the axis (it only becomes positive after $x=1$).",
+            ),
+            expl("D", True, "Purple falls through the axis between $x=4$ and $x=5$."),
+            expl(
+                "E",
+                False,
+                "At $x=3$, brown and purple recommend expand while green recommends contract.",
+            ),
         ],
-        solution_overview="Read each colour's sign at $x=3$; opposite signs mean opposite advice.",
+        solution_overview=(
+            "Compare signs across colours at chosen $x$; locate brown's $+$ to $-$ crossing "
+            "and purple's zero."
+        ),
         figure=fig,
     )
 
