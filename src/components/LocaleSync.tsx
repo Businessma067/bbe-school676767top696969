@@ -11,6 +11,9 @@ import {
  * URL is the source of truth on marketing pages:
  * `/` and English paths → en; `/de/...` → de; `/uk/...` → uk.
  * App routes keep the stored language preference for chrome translation.
+ *
+ * Depends only on pathname so the language switcher can setLang before
+ * navigate without being overwritten while the URL is still catching up.
  */
 export function LocaleSync() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
