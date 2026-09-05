@@ -29,27 +29,45 @@ const MATH_CH5_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is today's North holding.
+In the shared two-unknown system, the overview already solved for today's North holding. State that recovered value before testing the claim:
 
 $$
 x=360
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=360
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is today's South holding.
+In the shared two-unknown system, the overview already solved for today's South holding. State that recovered value before testing the claim:
 
 $$
 y=260
 $$
 
-The claim names $240$. Against the recovered value, the statement is False.
+The claim asserts
+
+$$
+y = 240
+$$
+
+Comparing with the recovered value shows they do not agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
+
+Use the recovered holdings from the overview; do not rebuild the original transfer system.
 
 This is not the overview's equalizing transfer. North starts at the recovered $x=360$ and receives $30$ crates from South:
 
@@ -57,29 +75,43 @@ $$360 + 30 = 390$$
 
 The claim is $390$.
 
+The computed figure matches the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $x=360$ and $y=260$. Today's gap is
+The recovered values are $x=360$ and $y=260$.
+
+Today's gap is
 
 $$360 - 260 = 100$$
 
 The claim is $120$.
 
+The computed figure does not match the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $x=360$ and $y=260$. Moving $50$ crates from North to South gives
+The recovered values are $x=360$ and $y=260$.
+
+Moving $50$ crates from North to South gives
 
 $$360 - 50 = 310$$
 
 $$260 + 50 = 310$$
 
 Both sides are $310$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -135,38 +167,56 @@ $$y = 620 - 360 = 260$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the notebook price.
+In the shared two-unknown system, the overview already solved for the notebook price. State that recovered value before testing the claim:
 
 $$
 x=3.50
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=3.50
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is the pen price.
+In the shared two-unknown system, the overview already solved for the pen price. State that recovered value before testing the claim:
 
 $$
 y=1.80
 $$
 
-The claim names \\$2.10. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
 
-This letter only checks the recovered figure against the claim.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Invoice #101 is printed at \\$185.00.
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
 
-The claim names that same total. Comparing those figures shows the statement is True.
+Invoice #101 is printed at \\$185.
+
+The claim names that same total. The invoice total and the claim agree.
 
 So the statement is True.`,
       `**D.** → True
 
-The overview recovered $x=3.50$ and $y=1.80$. Ten of each costs
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=3.50$ and $y=1.80$.
+
+Ten of each costs
 
 $$10 \\times 3.50 = 35$$
 
@@ -181,11 +231,13 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**E.** → False
 
-Compare the claim with the value recovered in the overview.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
 
-Invoice #102 is printed at \\$160.50.
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
 
-The claim names \\$172.50. Comparing those figures shows the statement is False.
+Invoice #102 is printed at \\$160.
+
+The claim names \\$172. The invoice total and the claim do not agree.
 
 So the statement is False.`,
     ],
@@ -251,49 +303,71 @@ $$x = 10.70 - 7.20 = 3.50$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the adult ticket price.
+In the shared two-unknown system, the overview already solved for the adult ticket price. State that recovered value before testing the claim:
 
 $$
 a=12
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+a=12
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the child ticket price.
+In the shared two-unknown system, the overview already solved for the child ticket price. State that recovered value before testing the claim:
 
 $$
 c=7
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+c=7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
 
-The shared elimination is done; only the claim-specific check remains.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
 
 The Saturday matinee is printed at \\$2,130.
 
-The claim names \\$2,050.00 Those two totals do not agree.
+The claim names \\$2,050. The printed figure and the claim do not agree.
 
 So the statement is False.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
 
 The Saturday evening session is printed at \\$2,200.
 
-The claim names \\$2,300.00 Those two totals do not agree.
+The claim names \\$2,300. The printed figure and the claim do not agree.
 
 So the statement is False.`,
       `**E.** → False
 
-The overview recovered $a=12$ and $c=7$. Fifty of each would generate
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $a=12$ and $c=7$.
+
+Fifty of each would generate
 
 $$50 \\times 12 = 600$$
 
@@ -365,31 +439,45 @@ $$c = 55 - 48 = 7$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the sandwich price.
+In the shared two-unknown system, the overview already solved for the sandwich price. State that recovered value before testing the claim:
 
 $$
 x=7
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the wrap price.
+In the shared two-unknown system, the overview already solved for the wrap price. State that recovered value before testing the claim:
 
 $$
 y=5
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+y=5
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 62
@@ -397,12 +485,16 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
 
 Receipt B is printed at \\$74.00 including the delivery fee.
 
@@ -410,8 +502,6 @@ The claim names that same total Those two totals agree.
 
 So the statement is True.`,
       `**E.** → True
-
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
 
 This is a pickup, so there is no delivery fee. The overview recovered $x=7$ and $y=5$. Five of each costs
 
@@ -422,6 +512,10 @@ $$5 \\times 5 = 25$$
 $$35 + 25 = 60$$
 
 The claim is \\$60.00.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -485,27 +579,37 @@ $$x = 7$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the quantity this claim names. Here that quantity is the amount in Account A.
+In the shared two-unknown system, the overview already solved for the amount in Account A. State that recovered value before testing the claim:
 
 $$
 x=6000
 $$
 
-The claim names \\$6,500. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is the amount in Account B.
+In the shared two-unknown system, the overview already solved for the amount in Account B. State that recovered value before testing the claim:
 
 $$
 y=4000
 $$
 
-The claim names \\$4,500. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=6000$ in Account A. Interest on that principal at $4\\%$ is
 
@@ -515,8 +619,12 @@ The claim is \\$260.00
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=4000$ in Account B. Interest on that principal at $7\\%$ is
 
@@ -526,16 +634,22 @@ The claim is \\$210.00
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The whole \\$10,000 would sit in Account B at $7\\%$:
 
 $$0.07 \\times 10000 = 700$$
 
 The claim is \\$700.00.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -589,27 +703,41 @@ $$x = 10000 - 4000 = 6000$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the Standard price.
+In the shared two-unknown system, the overview already solved for the Standard price. State that recovered value before testing the claim:
 
 $$
 x=304
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=304
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is the Premium price.
+In the shared two-unknown system, the overview already solved for the Premium price. State that recovered value before testing the claim:
 
 $$
 y=349
 $$
 
-The claim names \\$354.00. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
 
@@ -619,19 +747,27 @@ The claim is \\$4,188.00
 
 Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The catalogue gap is already equation (1): $y = x + 45$. The claim is that same \\$45.00.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $x=304$ and $y=349$. Five of each costs
+The recovered values are $x=304$ and $y=349$.
+
+Five of each costs
 
 $$5 \\times 304 = 1520$$
 
@@ -640,6 +776,8 @@ $$5 \\times 349 = 1745$$
 $$1520 + 1745 = 3265$$
 
 Then $3265 > 3000$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -693,31 +831,49 @@ $$y = 304 + 45 = 349$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the fixed monthly fee.
+In the shared two-unknown system, the overview already solved for the fixed monthly fee. State that recovered value before testing the claim:
 
 $$
 f=17
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+f=17
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the extra-minute rate.
+In the shared two-unknown system, the overview already solved for the extra-minute rate. State that recovered value before testing the claim:
 
 $$
 r=0.30
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+r=0.30
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview recovered $f=17$ and $r=0.30$. Two hundred extra minutes would cost
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $f=17$ and $r=0.30$.
+
+Two hundred extra minutes would cost
 
 $$200 \\times 0.30 = 60$$
 
@@ -730,20 +886,28 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim is \\$0.00.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**E.** → False
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Double the rival rate of \\$0.20 is
 
 $$2 \\times 0.20 = 0.40$$
 
 The recovered extra-minute rate is $r=0.30$. Then $0.30 < 0.40$.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
     ],
@@ -803,7 +967,7 @@ $$f = 17$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 s=75
@@ -811,10 +975,14 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 d=55
@@ -822,10 +990,14 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-That does not match the claimed figure.
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $s=75$ Standard ovens at 4 hours each:
 
@@ -833,8 +1005,12 @@ $$75 \\times 4 = 300$$
 
 The claim is $300$ assembly hours. Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
@@ -842,8 +1018,12 @@ $$55 \\times 9 = 495$$
 
 The claim is $500$ assembly hours. The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $s=75$ Standard ovens at \\$120 each:
 
@@ -852,6 +1032,8 @@ $$75 \\times 120 = 9000$$
 The claim is \\$9,000.00
 
 Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -909,31 +1091,45 @@ $$s = 130 - 55 = 75$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the sofa price.
+In the shared two-unknown system, the overview already solved for the sofa price. State that recovered value before testing the claim:
 
 $$
 x=350
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=350
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the armchair price.
+In the shared two-unknown system, the overview already solved for the armchair price. State that recovered value before testing the claim:
 
 $$
 y=200
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+y=200
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 9300
@@ -941,27 +1137,35 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
 
 Hillcrest's gross sales are printed at \\$9,300. The claim is that same total.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
 
 Riverside's gross sales are printed at \\$9,760. With zero returns,
 
 $$9760 - 0 = 9760$$
 
 Gross and net would both equal \\$9,760.00.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -1027,29 +1231,41 @@ $$y = 900 - 700 = 200$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the quantity this claim names. Here that quantity is PrintFast's setup fee.
+In the shared two-unknown system, the overview already solved for PrintFast's setup fee. State that recovered value before testing the claim:
 
 $$
 f=9
 $$
 
-The claim names \\$12.00. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is PrintFast's per-page rate.
+In the shared two-unknown system, the overview already solved for PrintFast's per-page rate. State that recovered value before testing the claim:
 
 $$
 r=0.20
 $$
 
-The claim names \\$0.25. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → False
 
-The overview recovered $f=9$ and $r=0.20$. A 250-page PrintFast order costs
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $f=9$ and $r=0.20$.
+
+A 250-page PrintFast order costs
 
 $$250 \\times 0.20 = 50$$
 
@@ -1062,7 +1278,11 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**D.** → False
 
-The overview recovered $f=9$ and $r=0.20$. A 350-page PrintFast order costs
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $f=9$ and $r=0.20$.
+
+A 350-page PrintFast order costs
 
 $$350 \\times 0.20 = 70$$
 
@@ -1070,10 +1290,16 @@ $$9 + 70 = 79$$
 
 QuickCopy's flat fee is \\$60. Then $79 > 60$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
+Use the recovered values from the overview for this claim-specific check.
+
 Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The overview already recovered that pair as $f=9$ and $r=0.20$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -1129,7 +1355,7 @@ $$f = 9$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. Ben's 5 burritos alone cost
 
@@ -1137,21 +1363,31 @@ $$5 \\times 6 = 30$$
 
 Ana's entire order was \\$32.00. Then $30 < 32$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $x=3.50$ and $y=6$. The gap is
+The recovered values are $x=3.50$ and $y=6$.
+
+The gap is
 
 $$6 - 3.50 = 2.50$$
 
 The claim is \\$2.50.
 
+The computed figure matches the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
@@ -1159,10 +1395,14 @@ $$32 - 6 = 26$$
 
 Then $26 < 28$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 37
@@ -1170,12 +1410,18 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-That does not match the claimed figure.
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**E.** → True
 
-The overview recovered $x=3.50$ and $y=6$. Six of each costs
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=3.50$ and $y=6$.
+
+Six of each costs
 
 $$6 \\times 3.50 = 21$$
 
@@ -1256,29 +1502,41 @@ $$x = 3.50$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the paperback price, and equation (1) is the \\$5 gap rule.
+In the shared two-unknown system, the overview already solved for the paperback price, and equation (1) is the \\$5 gap rule. State that recovered value before testing the claim:
 
 $$
 x=12
 $$
 
-The claim names that same pair. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x=12
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the hardcover price.
+In the shared two-unknown system, the overview already solved for the hardcover price. State that recovered value before testing the claim:
 
 $$
 y=17
 $$
 
-That recovered value does not match the claim.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=12$. One hundred extra paperbacks add
 
@@ -1286,10 +1544,16 @@ $$100 \\times 12 = 1200$$
 
 The claim is \\$1,200 higher. Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered $x=12$ and $y=17$. Three hardcovers and two paperbacks cost
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=12$ and $y=17$.
+
+Three hardcovers and two paperbacks cost
 
 $$3 \\times 17 = 51$$
 
@@ -1304,13 +1568,15 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**E.** → False
 
+Read the figure already produced by the shared solve, then compare it with the claim.
+
 The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
 $$310 \\times 17 = 5270$$
 
 The reported total is \\$8,540. Then $5270 \\ne 8540$.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
     ],
@@ -1368,31 +1634,45 @@ $$y = 12 + 5 = 17$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the quantity this claim names. Here that quantity is Standard's base fee.
+In the shared two-unknown system, the overview already solved for Standard's base fee. State that recovered value before testing the claim:
 
 $$
 x=38
 $$
 
-That recovered value does not match the claim.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is Standard's overage rate.
+In the shared two-unknown system, the overview already solved for Standard's overage rate. State that recovered value before testing the claim:
 
 $$
 y=3
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+y=3
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview recovered $x=38$ and $y=3$. Ten GB of overage on Standard costs
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=38$ and $y=3$.
+
+Ten GB of overage on Standard costs
 
 $$10 \\times 3 = 30$$
 
@@ -1413,10 +1693,14 @@ $$38 + 15 = 53$$
 
 Premium is \\$40 unlimited. Then $40 < 53$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 At 8 GB of overage, Basic costs
 
@@ -1425,6 +1709,10 @@ $$8 \\times 2 = 16$$
 $$15 + 16 = 31$$
 
 Standard's March bill at 8 GB is the recovered \\$62. Then $31 < 62$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -1484,7 +1772,7 @@ $$x = 38$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 2240
@@ -1492,19 +1780,33 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $x=140$ and $y=210$. The Suite premium is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=140$ and $y=210$.
+
+The Suite premium is
 
 $$210 - 140 = 70$$
 
 The claim is \\$200 more. The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → False
 
-The overview recovered $x=140$ and $y=210$. Six Standard rooms cost
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=140$ and $y=210$.
+
+Six Standard rooms cost
 
 $$6 \\times 140 = 840$$
 
@@ -1517,7 +1819,13 @@ The two bookings match, so six Standard rooms are not cheaper.
 So the statement is False.`,
       `**D.** → True
 
-The overview recovered $y=210$ as the pre-tax Suite rate. Including $8\\%$ tax:
+The shared elimination already recovered the pre-tax Suite rate. State that value in its own display before testing the claim:
+
+$$
+y=210
+$$
+
+Including $8\\%$ tax:
 
 $$210 \\times 1.08 = 226.80$$
 
@@ -1525,16 +1833,26 @@ The claim is \\$226.80
 
 Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Compare the claim with the value recovered in the overview. Here that quantity is the pre-tax Suite rate.
+In the shared two-unknown system, the overview already solved for the pre-tax Suite rate. State that recovered value before testing the claim:
 
 $$
 y=210
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+y=210
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -1611,29 +1929,45 @@ $$y = 210$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is Component A's unit cost.
+In the shared two-unknown system, the overview already solved for Component A's unit cost. State that recovered value before testing the claim:
 
 $$
 x=12
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=12
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Read the recovered value from the shared solve. Here that quantity is Component B's unit cost.
+In the shared two-unknown system, the overview already solved for Component B's unit cost. State that recovered value before testing the claim:
 
 $$
 y=15
 $$
 
-The claim names \\$18. Against the recovered value, the statement is False.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
 
-The overview recovered $x=12$ and $y=15$. March's forecast quantities at those actual costs would be
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=12$ and $y=15$.
+
+March's forecast quantities at those actual costs would be
 
 $$200 \\times 12 = 2400$$
 
@@ -1643,10 +1977,16 @@ $$2400 + 1500 = 3900$$
 
 The March forecast total is \\$4,700. Then $4700 > 3900$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered $x=12$ and $y=15$. March's forecast quantities at those actual costs would be
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=12$ and $y=15$.
+
+March's forecast quantities at those actual costs would be
 
 $$200 \\times 12 = 2400$$
 
@@ -1656,16 +1996,22 @@ $$2400 + 1500 = 3900$$
 
 The claim is \\$4,700. Then $3900 \\ne 4700$.
 
+The computed figure does not match the claim.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 January's actual value is \\$3,150 and February's is \\$3,660:
 
 $$3150 + 3660 = 6810$$
 
 The claim is \\$6,810.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -1739,7 +2085,7 @@ $$y = 15$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 y=24
@@ -1747,20 +2093,28 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-That does not match the claimed figure.
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the regular hourly wage.
+In the shared two-unknown system, the overview already solved for the regular hourly wage. State that recovered value before testing the claim:
 
 $$
 x=14
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+x=14
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -1773,10 +2127,16 @@ The claim is \\$6.00
 
 Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → True
 
-The overview recovered $x=14$ and $y=24$. Forty regular hours plus 4 overtime hours at those actual rates:
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=14$ and $y=24$.
+
+Forty regular hours plus 4 overtime hours at those actual rates:
 
 $$40 \\times 14 = 560$$
 
@@ -1798,6 +2158,10 @@ $$4 \\times 21 = 84$$
 $$560 + 84 = 644$$
 
 The claim is \\$644.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -1859,31 +2223,41 @@ $$1.5 \\times 14 = 21$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the quantity this claim names. Here that quantity is the fixed monthly charge.
+In the shared two-unknown system, the overview already solved for the fixed monthly charge. State that recovered value before testing the claim:
 
 $$
 x=15
 $$
 
-That recovered value does not match the claim.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
-
-Read the recovered value from the shared solve. Here that quantity is the rate per cubic metre.
+In the shared two-unknown system, the overview already solved for the rate per cubic metre. State that recovered value before testing the claim:
 
 $$
 y=2
 $$
 
-That is exactly the figure named in the claim.
+The claim asserts
+
+$$
+y=2
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 51
@@ -1891,12 +2265,18 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered $x=15$ and $y=2$. Forty cubic metres would be billed
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=15$ and $y=2$.
+
+Forty cubic metres would be billed
 
 $$40 \\times 2 = 80$$
 
@@ -1909,13 +2289,17 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 June's printed bill is \\$65.00. A 10% late penalty on that total is
 
 $$65 \\times 1.10 = 71.50$$
 
 The claim is \\$71.50.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -1973,9 +2357,11 @@ $$x = 15$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $C(d)=6+d$ and $M(d)=6+1.5d$. At $10$ km:
+The recovered values are $C(d)=6+d$ and $M(d)=6+1.5d$.
+
+At $10$ km:
 
 $$C(10) = 6 + 10 = 16$$
 
@@ -1985,10 +2371,12 @@ $$M(10) = 6 + 15 = 21$$
 
 Then $16 < 21$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 x_1=6
@@ -1996,12 +2384,18 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview recovered $C(d)=6+d$ and $M(d)=6+1.5d$. At $3$ km, which is under $4$ km:
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $C(d)=6+d$ and $M(d)=6+1.5d$.
+
+At $3$ km, which is under $4$ km:
 
 $$C(3) = 6 + 3 = 9$$
 
@@ -2011,10 +2405,12 @@ $$M(3) = 6 + 4.50 = 10.50$$
 
 Then $10.50 > 9$, so MetroX is not cheaper.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. At $30$ km:
 
@@ -2024,14 +2420,20 @@ The claim is \\$36.00
 
 Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
 $$C(5) = 6 + 5 = 11$$
 
 The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
     ],
@@ -2111,7 +2513,7 @@ $$M(d) = 6 + 1.5d$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 x_A=9
@@ -2119,10 +2521,14 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 y_B=16
@@ -2130,7 +2536,9 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -2152,6 +2560,8 @@ $$30 \\times 16 = 480$$
 $$440 + 480 = 920$$
 
 Then $900 < 920$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -2179,15 +2589,19 @@ Switching to Vendor B raises the cost by $20$, it does not reduce it.
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $y_A=18$ and $y_B=16$. Sixty units of Y only:
+The recovered values are $y_A=18$ and $y_B=16$.
+
+Sixty units of Y only:
 
 $$60 \\times 18 = 1080$$
 
 $$60 \\times 16 = 960$$
 
 Then $960 < 1080$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -2265,7 +2679,7 @@ $$y_B = \\frac{92 - 44}{3} = 16$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 x=50
@@ -2273,16 +2687,24 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Use the recovered values from the overview for this claim-specific check.
 
 $$
 A=13100
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -2305,6 +2727,8 @@ $$0.10 \\times 13100 = 1310$$
 
 The increase is $750$, not $1310$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → False
 
@@ -2318,10 +2742,16 @@ $$8250 + 5600 = 13850$$
 
 Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
-The overview recovered $x=50$ and $y=70$. Beta's Service Q revenue is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x=50$ and $y=70$.
+
+Beta's Service Q revenue is
 
 $$130 \\times 70 = 9100$$
 
@@ -2330,6 +2760,8 @@ Alpha's Product P revenue is
 $$150 \\times 50 = 7500$$
 
 Then $9100 > 7500$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -2417,25 +2849,39 @@ $$x = 50$$
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the quantity this claim names. Here that quantity is the signup fee members are actually charged.
+In the shared two-unknown system, the overview already solved for the signup fee members are actually charged. State that recovered value before testing the claim:
 
 $$
 x = 38
 $$
 
-That recovered value does not match the claim.
+That recovered value is not the figure named in the claim.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**B.** → True
 
-The overview recovered $y = 41$ as the actual monthly rate. The flyer advertised \\$45 per month.
+The shared elimination already recovered the actual monthly rate. State that value in its own display before testing the claim:
+
+$$
+y = 41
+$$
+
+The flyer advertised \\$45 per month.
 
 $$41 < 45$$
 
 Members pay less per month than the flyer states.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Maria actually paid \\$284 over 6 months. The flyer would have charged a \\$30 signup plus \\$45 per month:
 
@@ -2447,10 +2893,12 @@ $$284 < 300$$
 
 Her actual total does not exceed the flyer figure.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Jason's printed total after his 10th payment is \\$448.
 
@@ -2458,16 +2906,22 @@ $$448 > 400$$
 
 He paid more than \\$400.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 This member pays no signup fee, only the recovered monthly rate $y = 41$ for 12 months:
 
 $$12 \\times 41 = 492$$
 
 The claim is \\$492.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -2527,29 +2981,43 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the Basic monthly price.
+In the shared two-unknown system, the overview already solved for the Basic monthly price. State that recovered value before testing the claim:
 
 $$
 x = 19
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 19
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 31$ as the Premium monthly price. The claim writes \\$35.
+The shared elimination already recovered the Premium monthly price. State that value in its own display before testing the claim:
+
+$$
+y = 31
+$$
+
+The claim writes \\$35.
 
 $$31 \\ne 35$$
 
 The mismatch with the claim settles the verdict.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → False
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Household 1 billed \\$169. Household 2 billed \\$255. Double Household 1:
 
@@ -2559,8 +3027,14 @@ $$255 < 338$$
 
 Household 2 is not more than double Household 1.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Equal cost for $n$ months of only Basic and $n$ months of only Premium would require $nx = ny$ with $n > 0$, hence $x = y$. The overview recovered $x = 19$ and $y = 31$.
 
@@ -2571,8 +3045,6 @@ The two flat plans never match for a positive run of months.
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
-
 This mix is 5 months of Basic and 5 months of Premium at the recovered prices $x = 19$ and $y = 31$:
 
 $$5 \\times 19 = 95$$
@@ -2582,6 +3054,10 @@ $$5 \\times 31 = 155$$
 $$95 + 155 = 250$$
 
 The claim is \\$250.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -2649,18 +3125,26 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the apple price per pound.
+In the shared two-unknown system, the overview already solved for the apple price per pound. State that recovered value before testing the claim:
 
 $$
 x = 4.80
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 4.80
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.
 
@@ -2668,10 +3152,14 @@ $$6 > 4.80$$
 
 Milk is the dearer unit.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Five pounds of apples and four cartons of milk, at the recovered prices:
 
@@ -2683,10 +3171,12 @@ $$24 = 24$$
 
 The two baskets match.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Neither printed receipt received the 5% loyalty discount. Applied to Receipt 1's \\$50:
 
@@ -2696,10 +3186,12 @@ $$47.50 > 47$$
 
 The discounted total is not less than \\$47.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → False
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Ten pounds of apples and two cartons of milk, at the recovered prices:
 
@@ -2710,6 +3202,8 @@ $$2 \\times 6 = 12$$
 $$48 + 12 = 60$$
 
 The mix equals \\$60, so it is not more than \\$60.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -2769,27 +3263,43 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the fixed connection fee.
+In the shared two-unknown system, the overview already solved for the fixed connection fee. State that recovered value before testing the claim:
 
 $$
 x = 33
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 33
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 0.21$ as the standard-plan rate. Customer service claimed \\$0.24 per unit.
+The shared elimination already recovered the standard-plan rate. State that value in its own display before testing the claim:
+
+$$
+y = 0.21
+$$
+
+Customer service claimed \\$0.24 per unit.
 
 $$0.21 \\ne 0.24$$
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The standard plan at 280 units uses the recovered fee $x = 33$ and rate $y = 0.21$:
 
@@ -2798,6 +3308,8 @@ $$280 \\times 0.21 = 58.80$$
 $$33 + 58.80 = 91.80$$
 
 $$91.80 < 95$$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -2810,10 +3322,12 @@ $$33 = 0.08u \\Rightarrow u = 412.5$$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → False
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 At 500 units, Solar and the standard plan are
 
@@ -2824,6 +3338,10 @@ $$33 + 0.21 \\times 500 = 33 + 105 = 138$$
 $$145 > 138$$
 
 Solar is not cheaper at 500 units.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
     ],
@@ -2879,18 +3397,26 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the pasta price.
+In the shared two-unknown system, the overview already solved for the pasta price. State that recovered value before testing the claim:
 
 $$
 x = 19
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 19
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
 
@@ -2898,10 +3424,14 @@ $$15 < 19$$
 
 An appetizer costs less than a pasta dish.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Table 8's food subtotal, after stripping the 10% peak charge, is \\$200. Table 5's total is \\$174.
 
@@ -2909,10 +3439,14 @@ $$200 - 174 = 26$$
 
 The pre-service-charge gap is exactly \\$26.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Table 5's off-peak total is \\$174. Adding the 10% peak-hour service fee:
 
@@ -2920,8 +3454,14 @@ $$174 \\times 1.10 = 191.40$$
 
 The claim is \\$191.40.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Four pasta dishes and four appetizers at the recovered prices, then the 10% service charge:
 
@@ -2934,6 +3474,8 @@ $$76 + 60 = 136$$
 $$136 \\times 1.10 = 149.60$$
 
 $$149.60 < 150$$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -2989,27 +3531,43 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is Item M's unit cost.
+In the shared two-unknown system, the overview already solved for Item M's unit cost. State that recovered value before testing the claim:
 
 $$
 x = 21
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 21
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+The shared elimination already recovered Item N's unit cost. State that value in its own display before testing the claim:
 
-The overview recovered $y = 27$ as Item N's unit cost. The claim writes \\$30.
+$$
+y = 27
+$$
+
+The claim writes \\$30.
 
 $$27 \\ne 30$$
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Shipment 1 moved $110 + 80 = 190$ units for \\$4,470. Shipment 2 moved $70 + 150 = 220$ units for \\$5,520.
 
@@ -3019,16 +3577,22 @@ $$\\frac{5520}{220} = 25.09$$
 
 The per-unit averages are not equal.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 One hundred fifty units of Item N at the recovered $y = 27$:
 
 $$150 \\times 27 = 4050$$
 
 The claim is \\$4,050.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**E.** → False
@@ -3105,36 +3669,54 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the Standard unit price.
+In the shared two-unknown system, the overview already solved for the Standard unit price. State that recovered value before testing the claim:
 
 $$
 x = 29
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 29
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+The shared elimination already recovered the Premium unit price. State that value in its own display before testing the claim:
 
-The overview recovered $y = 44$ as the Premium unit price. The claim writes \\$50.
+$$
+y = 44
+$$
+
+The claim writes \\$50.
 
 $$44 \\ne 50$$
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Job 1's Premium slice at the recovered $y = 44$, compared with Job 2's whole total of \\$1,301:
 
@@ -3142,10 +3724,14 @@ $$35 \\times 44 = 1540$$
 
 $$1540 > 1301$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The new quotation is 8 Standard and 19 Premium at the recovered prices:
 
@@ -3156,6 +3742,8 @@ $$19 \\times 44 = 836$$
 $$232 + 836 = 1068$$
 
 The quoted \\$1,068 matches.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -3216,29 +3804,43 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is the per diem.
+In the shared two-unknown system, the overview already solved for the per diem. State that recovered value before testing the claim:
 
 $$
 x = 55
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 55
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 0.32$ as the mileage rate. Finance claimed \\$0.40 per mile.
+The shared elimination already recovered the mileage rate. State that value in its own display before testing the claim:
+
+$$
+y = 0.32
+$$
+
+Finance claimed \\$0.40 per mile.
 
 $$0.32 \\ne 0.40$$
 
 The mismatch with the claim settles the verdict.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Seven meal days at the recovered per diem $x = 55$, before any mileage:
 
@@ -3248,10 +3850,14 @@ $$385 > 120$$
 
 Report 3's \\$120 cannot cover even the meal days.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Report 1 reimbursed \\$323. Report 2 reimbursed \\$245.
 
@@ -3261,10 +3867,14 @@ $$78 < 80$$
 
 The gap is not more than \\$80.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Reports 1 and 2 together:
 
@@ -3272,7 +3882,9 @@ $$323 + 245 = 568$$
 
 $$568 \\ge 550$$.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -3333,31 +3945,49 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is Widget A's assembly time.
+In the shared two-unknown system, the overview already solved for Widget A's assembly time. State that recovered value before testing the claim:
 
 $$
 x = 7
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 10$ as Widget B's assembly time. The claim writes 12 hours.
+The shared elimination already recovered Widget B's assembly time. State that value in its own display before testing the claim:
+
+$$
+y = 10
+$$
+
+The claim writes 12 hours.
 
 $$10 \\ne 12$$
 
 The mismatch with the claim settles the verdict.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → False
@@ -3370,16 +4000,20 @@ $$445 + 49 = 494$$
 
 A 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The week rises by 49 hours, not 20%.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and $y = 10$:
 
 $$7A + 10(15) = 290$$
 
 $$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3444,47 +4078,67 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the quantity this claim names. Here that quantity is Product X's price.
+In the shared two-unknown system, the overview already solved for Product X's price. State that recovered value before testing the claim:
 
 $$
 x = 29
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True.
+The claim asserts
+
+$$
+x = 29
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+The shared elimination already recovered Product Y's price. State that value in its own display before testing the claim:
 
-The overview recovered $y = 24$ as Product Y's price. The claim writes \\$28.
+$$
+y = 24
+$$
+
+The claim writes \\$28.
 
 $$24 \\ne 28$$
 
 The mismatch with the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → False
 
-The shared elimination is done; only the claim-specific check remains.
+Once the unit prices are recovered from the shared solve, this stem total is fixed. Read the printed figure and compare it with the claim.
+
+Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
 $$3085 \\ne 3200$$.
 
-That does not match the claimed figure.
-
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. The claim is that corrected total.
 
-That matches the claimed figure.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 North reported \\$4,145. South and East reported \\$3,875 and \\$3,200.
 
@@ -3494,7 +4148,7 @@ $$4145 < 7075$$
 
 North does not exceed the other two combined.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
     ],
@@ -3562,7 +4216,13 @@ East reported \\$3,200, so that row does not reconcile.
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $x = 18.45$ as Type A's case price. Rounding up to the next whole dollar:
+The shared elimination already recovered Type A's case price. State that value in its own display before testing the claim:
+
+$$
+x = 18.45
+$$
+
+Rounding up to the next whole dollar:
 
 $$\\lceil 18.45 \\rceil = 19$$
 
@@ -3570,21 +4230,27 @@ The claim is \\$19.00.
 
 Matching these figures to the claim settles the verdict.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $x = 18.45$ and $y = 27.80$. The gap is
+The recovered values are $x = 18.45$ and $y = 27.80$.
+
+The gap is
 
 $$27.80 - 18.45 = 9.35$$
 
 $$9 < 9.35 < 10$$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Invoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:
 
@@ -3592,8 +4258,14 @@ $$\\frac{657.35}{26} = 25.28$$
 
 $$25.28 > 24$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Swap Invoice 1's counts and cost it at the recovered prices:
 
@@ -3607,14 +4279,20 @@ $$490.05 \\ne 527.45$$
 
 The total changes.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Placing both invoices together is just the sum of the two printed totals:
 
 $$527.45 + 657.35 = 1184.80$$
 
 That is the same as placing them separately, so the combined order is not strictly more.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -3684,16 +4362,28 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $x = 145.50$ as the dispatch fee. Halfway between \\$145 and \\$146 is
+The shared elimination already recovered the dispatch fee. State that value in its own display before testing the claim:
+
+$$
+x = 145.50
+$$
+
+Halfway between \\$145 and \\$146 is
 
 $$\\frac{145 + 146}{2} = 145.50$$
 
 The recovered fee is that midpoint.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 1.85$ as Swift Cargo's per-mile rate.
+The shared elimination already recovered Swift Cargo's per-mile rate. State that value in its own display before testing the claim:
+
+$$
+y = 1.85
+$$
 
 $$1.85 - 1.50 = 0.35$$
 
@@ -3703,8 +4393,12 @@ $$0.15 < 0.35$$
 
 The rate is closer to \\$2.00 than to \\$1.50.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 A 250-mile Swift haul at the recovered fee $x = 145.50$ and rate $y = 1.85$:
 
@@ -3714,8 +4408,12 @@ $$145.50 + 462.50 = 608.00$$
 
 Five cents under \\$608 would be \\$607.95. The haul is exactly \\$608.00.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A 250-mile Swift haul at the recovered $x = 145.50$ and $y = 1.85$:
 
@@ -3731,6 +4429,8 @@ $$608.00 - 337.50 = 270.50$$
 
 $$270.50 > 270$$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -3741,6 +4441,8 @@ $$145.50 + 1.85m = 1.35m$$
 $$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$
 
 The crossing is at $-291$ miles, a meaningless haul but a real intersection.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3796,7 +4498,13 @@ $$
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered $x = 6.35$ as the Specialty Drink price. Tripled:
+The shared elimination already recovered the Specialty Drink price. State that value in its own display before testing the claim:
+
+$$
+x = 6.35
+$$
+
+Tripled:
 
 $$3 \\times 6.35 = 19.05$$
 
@@ -3804,10 +4512,14 @@ $$19.05 < 20$$
 
 That product does not clear twenty dollars.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Use the recovered values from the overview for this claim-specific check.
 
 Four pastries versus one drink and one pastry, at the recovered prices:
 
@@ -3817,15 +4529,23 @@ $$6.35 + 3.80 = 10.15$$
 
 $$15.20 > 10.15$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**C.** → False
 
 The calorie totals 6,100 and 5,400 are printed for reference only. They are not coefficients of $x$ or $y$, so they cannot replace the item counts in (1) and (2). The prices are recovered from quantities and dollar totals.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Receipt 1 totals \\$78.65 across $7 + 9 = 16$ items:
 
@@ -3833,10 +4553,14 @@ $$\\frac{78.65}{16} = 4.915625$$
 
 $$4.915625 > 4.90$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 A daily 2-drink 2-pastry order at the recovered prices, for seven days:
 
@@ -3847,6 +4571,8 @@ $$7 \\times 20.30 = 142.10$$
 $$150 - 142.10 = 7.90$$
 
 $$7.90 < 8$$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3912,7 +4638,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
@@ -3920,17 +4646,29 @@ $$4 \\times 13.85 = 55.40$$
 
 $$55.40 > 55$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered $x = 13.85$ and $y = 9.40$. The per-dozen gap is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 13.85$ and $y = 9.40$.
+
+The per-dozen gap is
 
 $$13.85 - 9.40 = 4.45$$
 
 Distance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Ten dozen of each at the recovered prices:
 
@@ -3944,8 +4682,12 @@ $$\\frac{138.50}{232.50} \\approx 0.596 < \\frac{3}{5}$$
 
 Croissants do not account for more than three-fifths.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Email 1 has 25 dozen-items for \\$297.30. Email 2 has 29 dozen-items for \\$299.30.
 
@@ -3957,10 +4699,12 @@ $$11.892 - 10.321 = 1.571$$
 
 Email 1 is pricier per dozen-item, but the gap does not clear two dollars.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Raise Email 2's baguette price by \\$3 and keep croissants at $x = 13.85$:
 
@@ -3969,6 +4713,8 @@ $$9.40 + 3 = 12.40$$
 $$6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20 = 368.30$$
 
 The cents digit is 30.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4038,18 +4784,30 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+The shared elimination already recovered the Fabric Roll margin. State that value in its own display before testing the claim:
 
-The overview recovered $x = 27.35$ as the Fabric Roll margin.
+$$
+x = 27.35
+$$
 
 $$27 < 27.35 < 27.50$$
 
 It clears \\$27 but not \\$27.50.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $y = 19.80$ as the Yarn Spool margin. Doubled:
+The shared elimination already recovered the Yarn Spool margin. State that value in its own display before testing the claim:
+
+$$
+y = 19.80
+$$
+
+Doubled:
 
 $$2 \\times 19.80 = 39.60$$
 
@@ -4057,10 +4815,12 @@ $$39.60 < 40$$
 
 That product does not clear forty dollars.
 
-That does not match the claimed figure.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Two hundred Fabric Rolls and 150 Yarn Spools at the recovered margins:
 
@@ -4074,10 +4834,12 @@ $$8440 > 8400$$
 
 The mix clears \\$8,400 by \\$40.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Q2 profit minus Q1 profit:
 
@@ -4089,16 +4851,24 @@ $$231.50 - 100 = 131.50$$
 
 $131.50$ is still a three-digit number.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Five hundred Fabric Rolls and no Yarn Spools, at the recovered $x = 27.35$:
 
 $$500 \\times 27.35 = 13675$$
 
 The profit is exactly \\$13,675.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -4169,14 +4939,22 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $x = 16.40$ as the Nitrogen price.
+The shared elimination already recovered the Nitrogen price. State that value in its own display before testing the claim:
+
+$$
+x = 16.40
+$$
 
 $$16.40 - 16.00 = 0.40$$
 
@@ -4186,10 +4964,12 @@ $$0.40 < 0.60$$
 
 Nitrogen is closer to \\$16.00 than to \\$17.00.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Four Oxygen cylinders versus six Nitrogen cylinders, at the recovered prices:
 
@@ -4199,10 +4979,14 @@ $$6 \\times 16.40 = 98.40$$
 
 $$90.60 < 98.40$$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Double Invoice 3's total of \\$326.45:
 
@@ -4212,8 +4996,14 @@ $$652.90 < 655$$
 
 The doubled bill does not land above \\$655.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Blend Invoices 1 and 3, dollars and cylinders:
 
@@ -4226,6 +5016,8 @@ $$\\frac{1025.45}{53} \\approx 19.35$$
 $$19.35 < 20$$
 
 The blended per-cylinder price fails to reach \\$20.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4297,7 +5089,7 @@ $$
     tactical_explanations: [
       `**A.** → False
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 Alvarez's solo time is the reciprocal of the recovered $x = 0.085$:
 
@@ -4305,8 +5097,14 @@ $$\\frac{1}{0.085} \\approx 11.76$$
 
 Rounded to the nearest whole hour that is 12, not 11.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**B.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Bianchi alone, and Alvarez on two jobs, at the recovered rates:
 
@@ -4318,14 +5116,20 @@ $$22.22 < 23.53$$
 
 Bianchi's one job is not longer than Alvarez's two.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 Combined hourly output is the sum of the recovered rates:
 
 $$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**D.** → True
@@ -4340,6 +5144,8 @@ $$\\left|0.15 - \\frac{1}{7}\\right| \\approx 0.0071, \\qquad \\left|0.15 - \\fr
 
 The slice is closer to $\\frac{1}{7}$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -4350,6 +5156,10 @@ $$0.655 + 0.900 = 1.555$$
 $$\\frac{1.555}{23} \\approx 0.0676$$
 
 That average is about $6.76\\%$, which does not clear seven percent.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -4415,7 +5225,11 @@ $$
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered $x = 11.65$ as the T-Shirt margin.
+The shared elimination already recovered the T-Shirt margin. State that value in its own display before testing the claim:
+
+$$
+x = 11.65
+$$
 
 $$11.65 - 11 = 0.65$$
 
@@ -4425,10 +5239,16 @@ $$0.35 < 0.65$$
 
 The margin sits closer to twelve dollars than to eleven.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**B.** → True
 
-The overview recovered $y = 18.40$ as the Hoodie margin.
+The shared elimination already recovered the Hoodie margin. State that value in its own display before testing the claim:
+
+$$
+y = 18.40
+$$
 
 $$18.40 - 18 = 0.40$$
 
@@ -4438,10 +5258,12 @@ $$0.40 < 0.60$$
 
 The margin sits closer to eighteen than to nineteen.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → False
 
-The shared elimination is done; only the claim-specific check remains.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered Season 3's T-Shirt count as $T = 245$.
 
@@ -4449,8 +5271,14 @@ $$245 = 24 \\times 10 + 5$$
 
 $245$ is not a multiple of ten.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Season 2 minus Season 1, versus 52 Hoodies at the recovered $y = 18.40$:
 
@@ -4462,10 +5290,12 @@ $$954.25 < 956.80$$
 
 The earnings gap just fails to cover 52 Hoodies.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Replace the recovered $T = 245$ with 260 T-Shirts, keeping 310 Hoodies:
 
@@ -4476,6 +5306,8 @@ $$310 \\times 18.40 = 5704$$
 $$3029 + 5704 = 8733$$
 
 $$8733 > 8700$$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4556,7 +5388,13 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $x = 94.60$ as the handling fee. Knock off \\$5.40:
+The shared elimination already recovered the handling fee. State that value in its own display before testing the claim:
+
+$$
+x = 94.60
+$$
+
+Knock off \\$5.40:
 
 $$94.60 - 5.40 = 89.20$$
 
@@ -4566,10 +5404,12 @@ $$\\frac{94.60}{89} - 1 \\approx 0.063$$
 
 the real fee overshoots \\$89 by about 6%.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y = 3.15$ per kilogram. Tripled:
 
@@ -4579,8 +5419,14 @@ $$9.45 < 9.50$$
 
 That product lands just shy of \\$9.50.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Convert Shipment 3's 99 lb and apply the recovered model:
 
@@ -4595,7 +5441,7 @@ The billed total is \\$239.80, and $239.80 - 236.35 = 3.45$, which is within fou
 So the statement is True.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Ninety-nine pounds converted at 2.2 lb per kilogram:
 
@@ -4605,10 +5451,14 @@ $$45 = 7 \\times 6 + 3$$
 
 $45$ is not divisible by seven.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 At 400 kg with the recovered fee $x = 94.60$ and rate $y = 3.15$:
 
@@ -4617,6 +5467,10 @@ $$400 \\times 3.15 = 1260$$
 $$94.60 + 1260 = 1354.60$$
 
 $$1354.60 > 1350$$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -4680,20 +5534,26 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10 by \\$15.30.
 
 $$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Consistency would require Client B to be exactly double Client A, so Client A would have to be half of \\$952.10:
 
 $$\\frac{952.10}{2} = 476.05$$
 
 The actual Client A total is \\$483.70, not \\$476.05. The statement names that consistency requirement.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -4706,8 +5566,12 @@ $$\\frac{1}{60} \\approx 0.01667, \\qquad \\frac{1}{50} = 0.02$$
 
 $0.01607$ is nearer to $\\frac{1}{60}$ than to $\\frac{1}{50}$.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Those hypothetical unit prices on Client A's 11 compute and 7 storage units:
 
@@ -4720,6 +5584,8 @@ $$156.20 + 222.25 = 378.45$$
 $$378.45 > 375$$
 
 The total is not shy of \\$375.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -4735,6 +5601,8 @@ $$|967.40 - 952.10| = 15.30$$
 $$|725.55 - 952.10| = 226.55$$
 
 Doubling is closer.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4813,6 +5681,8 @@ $$324 + 510 = 834$$
 
 Since $834 > 800$, the combined return would rise above \\$800.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
 
@@ -4824,8 +5694,14 @@ $$\\frac{762}{18400} = 0.041413\\ldots$$
 
 That blended rate is about $4.14\\%$, which is more than $4\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 An even split of the recovered total $18400$ puts \\$9,200 in each fund at the original rates.
 
@@ -4839,6 +5715,8 @@ $$|828 - 762| = 66$$
 
 The even-split return is \\$66 from the actual \\$762, not within \\$5.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
@@ -4847,6 +5725,10 @@ The overview recovered the two balances $4800$ (smaller) and $13600$. The relati
 $$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$
 
 about $183.3\\%$, which exceeds $180\\%$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -4911,13 +5793,15 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Use the recovered values from the overview for this claim-specific check.
 
 Batch 1 printed $144$ g of salt and Batch 2 printed $184$ g. Pouring them together does not create or destroy salt.
 
 $$144 + 184 = 328$$
 
 Since $328 > 300$, the combined salt exceeds $300$ g.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**B.** → True
@@ -4927,6 +5811,10 @@ The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 $$\\frac{12}{16} = 0.75$$
 
 Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -4938,6 +5826,8 @@ $$\\frac{5}{12} \\approx 0.4167$$
 $$6 + 0.4167 \\approx 6.417$$
 
 The distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -4952,6 +5842,8 @@ $$\\frac{130}{15} \\approx 8.667$$
 
 which is not $7.5$ L.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
 
@@ -4962,6 +5854,8 @@ $$\\frac{3}{5} = 0.60$$
 $$\\frac{5}{6} \\approx 0.833$$
 
 Since $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5039,6 +5933,10 @@ $$0.10 \\times 65 = 6.50$$
 
 Since $6.50 > 6$, the bonus exceeds \\$6.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5049,6 +5947,10 @@ $$7 \\times 26 = 182$$
 $$\\frac{182}{882} \\approx 0.2063$$
 
 About $20.6\\%$ is not more than $40\\%$.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**C.** → True
@@ -5061,6 +5963,8 @@ $$2 \\times 45 \\times 17.50 = 1575$$
 
 Since $1647 > 1575$, the actual combined gross is larger.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -5070,8 +5974,12 @@ $$42.5 \\times 20.125 = 855.3125$$
 
 Compared with A's actual \\$765, the new gross increases rather than decreases.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Employee B had $7$ overtime hours and \\$882 gross; Employee A had $2.5$ overtime hours and \\$765 gross.
 
@@ -5080,6 +5988,8 @@ $$\\frac{7}{2.5} = 2.8$$
 $$\\frac{882}{765} \\approx 1.153$$
 
 Since $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5160,6 +6070,8 @@ $$540 + 440 = 980$$
 
 Since $980 > 950$, the total would exceed \\$950.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5171,8 +6083,14 @@ $$\\frac{16}{11} \\approx 1.4545$$
 
 Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
@@ -5182,10 +6100,12 @@ $$750 + 710 = 1460$$
 
 The combined project costs the same as the two projects separately, not less.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → False
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Project 1 has $24$ m of wire. A \\$2 per-meter rise on that wire, as a share of the printed \\$750, is
 
@@ -5195,8 +6115,12 @@ $$\\frac{48}{750} = 0.064$$
 
 $6.4\\%$ is not more than $15\\%$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Project 3 installed $10 + 40 = 50$ m for \\$710. Project 1 installed $18 + 24 = 42$ m for \\$750.
 
@@ -5205,6 +6129,8 @@ $$\\frac{710}{50} = 14.20$$
 $$\\frac{750}{42} \\approx 17.86$$
 
 Since $14.20 < 17.86$, Project 3's cost per meter is lower, not higher.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -5276,8 +6202,14 @@ $$\\frac{356}{48} \\approx 7.4167$$
 
 about $7$ hours $25$ minutes, which is more than $7$ hours.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 They meet after $2$ hours on the $250$ km stretch. Distances at the recovered speeds $48$ and $77$ km/h are
 
@@ -5289,6 +6221,8 @@ $$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
 
 Since $58 < 125$, the difference is less than half the gap.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → False
 
@@ -5297,6 +6231,10 @@ Combined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each b
 $$\\frac{250}{150} \\approx 1.667$$
 
 Since $1.667 > 1.5$, the new time does not fall below $1.5$ hours.
+
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**D.** → True
@@ -5309,6 +6247,10 @@ $$3 \\times 125 = 375$$
 
 Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
@@ -5319,6 +6261,10 @@ $$77 - 48 = 29$$
 $$\\frac{29}{48} \\approx 0.60417$$
 
 about $60.4\\%$, which is more than $60\\%$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -5385,14 +6331,22 @@ $$260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900$$
 
 Since $43900 < 44000$, the total would not exceed \\$44,000.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**B.** → True
 
-The overview recovered $x = 95$ and $y = 120$. Barley's advantage as a share of Wheat's profit per tonne is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 95$ and $y = 120$.
+
+Barley's advantage as a share of Wheat's profit per tonne is
 
 $$\\frac{120 - 95}{95} = \\frac{25}{95} \\approx 0.2632$$
 
 about $26.3\\%$, which is more than $25\\%$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -5403,6 +6357,10 @@ $$180 + 300 = 480$$
 
 Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → True
 
@@ -5412,8 +6370,14 @@ $$40 \\times 95 = 3800$$
 
 That understatement of \\$3,800 is more than \\$3,500.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Season 2 printed \\$48,300 on $180 + 260 = 440$ t. Season 1 printed \\$42,000 on $240 + 160 = 400$ t.
 
@@ -5422,6 +6386,8 @@ $$\\frac{48300}{440} \\approx 109.77$$
 $$\\frac{42000}{400} = 105$$
 
 Season 2's profit per tonne of total output is higher.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5503,16 +6469,26 @@ $$2 \\times 34 = 68$$
 
 Since $62 < 68$, the elder will be less than double the younger at that time.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered $x = 47$ and $y = 19$. The current gap as a share of the elder's age is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 47$ and $y = 19$.
+
+The current gap as a share of the elder's age is
 
 $$47 - 19 = 28$$
 
 $$\\frac{28}{47} \\approx 0.5957$$
 
 about $59.6\\%$, which is more than $45\\%$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -5523,8 +6499,14 @@ $$\\frac{51.5}{23.5} \\approx 2.191$$
 
 Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.
 
@@ -5532,7 +6514,9 @@ $$37 + 9 = 46$$
 
 Since $46 > 40$, the sum was not less than $40$.
 
-That does not match the claimed figure.
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
       `**E.** → True
@@ -5544,6 +6528,10 @@ $$47 - t = 3(19 - t)$$
 $$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$
 
 Since $5 > 4$, such a time exists.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
@@ -5616,10 +6604,16 @@ $$3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90$$
 
 Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**B.** → True
 
-The overview recovered $x = 55$ and $y = 80$. Dollar markups are $0.32x$ and $0.18y$.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 55$ and $y = 80$.
+
+Dollar markups are $0.32x$ and $0.18y$.
 
 $$0.32 \\times 55 = 17.60$$
 
@@ -5629,14 +6623,22 @@ $$\\frac{14.40}{17.60} = 0.8181\\ldots$$
 
 Since $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
 
-The overview recovered $x = 55$ and $y = 80$. Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 55$ and $y = 80$.
+
+Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
 $$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → True
@@ -5647,16 +6649,24 @@ $$3 \\times 94.40 = 283.20$$
 
 Since $283.20 > 280$, the retail total would increase by more than \\$280.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
 
-The overview recovered $x = 55$ and $y = 80$. Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 55$ and $y = 80$.
+
+Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
 
 $$\\frac{80}{55} \\approx 1.4545$$
 
 $$\\frac{94.40}{72.60} \\approx 1.3003$$
 
 The wholesale ratio is larger than the retail ratio.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5734,6 +6744,10 @@ $$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$
 
 Since $77 > 75$, their total would increase.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5743,10 +6757,14 @@ $$\\frac{18}{67} \\approx 0.2687$$
 
 About $26.9\\%$ is not more than $45\\%$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 Under $2$ points per win and $1$ per draw, the two records become
 
@@ -5755,6 +6773,8 @@ $$9 \\times 2 + 4 \\times 1 = 22$$
 $$7 \\times 2 + 6 \\times 1 = 20$$
 
 The Falcons would still have more points.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -5765,10 +6785,14 @@ $$\\frac{63}{12} = 5.25$$
 
 The win-to-draw ratio is $5.25$, which is not greater than $15$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → False
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 Converting three of the Falcons' draws into wins leaves $12$ wins and $1$ draw.
 
@@ -5777,6 +6801,8 @@ $$12 \\times 7 + 1 \\times 3 = 87$$
 $$87 - 75 = 12$$
 
 The increase is $12$ points, not more than $20$.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -5853,14 +6879,24 @@ $$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
-The overview recovered $x = 7.6$ and $y = 11.4$. The relative density advantage of B over A is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 7.6$ and $y = 11.4$.
+
+The relative density advantage of B over A is
 
 $$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
 
 That is $50\\%$ greater, not more than $50\\%$.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → True
@@ -5871,8 +6907,14 @@ $$\\frac{6.4}{147.0} \\approx 0.04354$$
 
 about $4.35\\%$, which is more than $4\\%$ of the recorded mass.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
@@ -5882,16 +6924,20 @@ $$|144.4 - 147.0| = 2.6$$
 
 The gap is $2.6$ kg, which is not within $2$ kg of $147.0$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+Use the recovered values from the overview for this claim-specific check.
 
 At fixed densities, combining two batches is linear. The combined mass is the sum of the printed masses.
 
 $$182.4 + 209.0 = 391.4$$
 
 That equals the sum of the individual masses.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5969,10 +7015,12 @@ $$\\frac{14800}{850000} \\approx 0.017412$$
 
 about $1.741\\%$, which is less than $1.75\\%$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair without rebuilding the invoices or transfer rules.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
@@ -5980,8 +7028,12 @@ $$\\frac{1200}{10800} \\approx 0.1111$$
 
 about $11.1\\%$, which is more than $10\\%$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
@@ -5989,8 +7041,12 @@ $$750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900$$
 
 Since $12900 < 13200$, Client 1's fee would decrease.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Client 1's effective rate and Client 2's effective rate are
 
@@ -6000,8 +7056,12 @@ $$0.018 - 0.0176 = 0.0004$$
 
 That is $0.04$ percentage points, which is not more than $0.05$.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Triple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is
 
@@ -6010,6 +7070,8 @@ $$1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000$$
 $$3 \\times 10800 = 32400$$
 
 Since $30000 < 32400$, the fee is not more than triple.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -6074,6 +7136,10 @@ $$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4} \\approx 0.8571$$
 
 about $85.7\\%$, which is more than $85\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6083,19 +7149,29 @@ $$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$
 
 about $0.0825\\%$, which is not more than $1\\%$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
 
-The overview recovered $A = 8.4$ and $B = 15.6$. Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $A = 8.4$ and $B = 15.6$.
+
+Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
 $$500(8.4) + 600(15.6) = 4200 + 9360 = 13560$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
+Use the recovered values from the overview for this claim-specific check.
 
 Pooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.
 
@@ -6103,8 +7179,12 @@ $$8880 + 12600 = 21480$$
 
 Since $21480 < 25200$, the pooled total is less than twice Batch 2.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Batch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B out of $320 + 450 = 770$ mL.
 
@@ -6113,6 +7193,8 @@ $$\\frac{700}{900} \\approx 0.7778$$
 $$\\frac{450}{770} \\approx 0.5844$$
 
 Batch 2's B-share is higher.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6188,14 +7270,22 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered $x = 4.50$ and $y = 38$. Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 4.50$ and $y = 38$.
+
+Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
 $$24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564$$
 
 Since $564 < 700$, the waste-related cost does not exceed \\$700.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Invoice 2 ordered $175 \\times 1.08 = 189$ drywall sheets. Cutting the allowance from $8\\%$ to $5\\%$ removes $175 \\times 0.03 = 5.25$ sheets at \\$38 each.
 
@@ -6203,8 +7293,12 @@ $$5.25 \\times 38 = 199.50$$
 
 Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
@@ -6214,6 +7308,8 @@ $$\\frac{8225}{8946} \\approx 0.9194$$
 
 about $91.9\\%$, which is more than $90\\%$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → True
 
@@ -6222,6 +7318,10 @@ The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 $$\\frac{38}{4.50} \\approx 8.444$$
 
 Since $8.444 > 8$, the drywall price is more than $8$ times the stud price.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**E.** → True
@@ -6239,6 +7339,8 @@ $$\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545$$
 $$\\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766$$
 
 Job 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6315,14 +7417,24 @@ $$\\frac{3.50 - 3.4}{3.4} = \\frac{0.10}{3.4} \\approx 0.02941$$
 
 about $2.94\\%$, which is more than $2.5\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered $x = 3.50$ and $y = 13.50$. Doubling the offset gives $27$, so at reading $20$
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 3.50$ and $y = 13.50$.
+
+Doubling the offset gives $27$, so at reading $20$
 
 $$3.50 \\times 20 + 27 = 70 + 27 = 97$$
 
 Since $97 > 95$, the predicted true value would exceed $95$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -6333,8 +7445,14 @@ $$\\frac{|171.00 - 172.20|}{172.20} = \\frac{1.20}{172.20} \\approx 0.00697$$
 
 about $0.70\\%$ of the recorded value, which is not more than $1\\%$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Point 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is
 
@@ -6342,14 +7460,20 @@ $$\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90} \\approx 1.1868$$
 
 about $118.7\\%$, which is more than $100\\%$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 At reading $8.0$, the recovered calibration gives
 
 $$3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50$$
 
 Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -6419,8 +7543,14 @@ $$\\frac{6.20 - 4.85}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$$
 
 about $27.8\\%$, which is more than $25\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Shipment 1 has $312$ kg of Coffee at \\$6.20/kg, against a printed total of \\$2,943.20.
 
@@ -6430,8 +7560,12 @@ $$\\frac{1934.40}{2943.20} \\approx 0.6572$$
 
 about $65.7\\%$, which is more than $65\\%$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 
@@ -6439,8 +7573,12 @@ $$400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420$$
 
 Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Cocoa across both shipments is $208 + 300 = 508$ kg. Coffee is $312 + 500 = 812$ kg.
 
@@ -6450,14 +7588,22 @@ $$812 \\times 6.20 = 5034.40$$
 
 Cocoa's dollar total is smaller, not larger.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**E.** → True
 
-The overview recovered $x = 6.20$ and $y = 4.85$. The gap as a share of Coffee's price is
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+
+The recovered values are $x = 6.20$ and $y = 4.85$.
+
+The gap as a share of Coffee's price is
 
 $$\\frac{6.20 - 4.85}{6.20} = \\frac{1.35}{6.20} \\approx 0.2177$$
 
 about $21.8\\%$, which is less than $30\\%$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6534,6 +7680,10 @@ $$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$
 
 about $77.8\\%$, which is more than $75\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6543,8 +7693,14 @@ $$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155} \\approx 0.01935$$
 
 about $1.94\\%$ below the recorded value, which is not more than $2\\%$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 1 currently uses $383.6$ L with $620$ km of van. Replacing that van distance by $900$ km adds $280$ km at the recovered van rate $18.0$ L/100km.
 
@@ -6554,8 +7710,12 @@ $$383.6 + 50.4 = 434.0$$
 
 Since $434.0 > 430$, total fuel would exceed $430$ L.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 2 covers $500 + 900 = 1400$ km on $322.0$ L, so the fleet average in L/100km is
 
@@ -6563,8 +7723,12 @@ $$\\frac{322.0}{14} = 23.0$$
 
 Distances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 1's combined distance is $850 + 620 = 1470$ km. Each type covering that whole distance at its own recovered rate would use
 
@@ -6575,6 +7739,8 @@ $$14.7 \\times 18.0 = 264.6$$
 $$470.4 + 264.6 = 735.0$$
 
 Actual Route 1 fuel $383.6$ L is less than that sum.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6654,10 +7820,14 @@ $$\\frac{6.6 - 5.4}{5.4} = \\frac{1.2}{5.4} \\approx 0.2222$$
 
 about $22.2\\%$, which is more than $20\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The current allocation returns \\$2,646 on \\$45,000.
 
@@ -6665,8 +7835,14 @@ $$\\frac{2646}{45000} = 0.0588$$
 
 $5.88\\%$ is less than $6\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 All \\$45,000 in equities at $6.6\\%$ would return
 
@@ -6674,8 +7850,12 @@ $$45000 \\times 0.066 = 2970$$
 
 The combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total.
 
+The mismatch with the claim settles the verdict.
+
 So the statement is False.`,
       `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A $\\frac{50}{50}$ split puts \\$22,500 in each portfolio.
 
@@ -6687,16 +7867,20 @@ $$\\frac{2646 + 2754}{2} = 2700$$
 
 The two figures match.
 
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
 
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
+The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
 
-The overview recovered $5.4\\%$ and $6.6\\%$.
+The recovered values are $5.4\\%$ and $6.6\\%$.
 
 $$\\frac{5.4}{6.6} \\approx 0.8182$$
 
 about $81.8\\%$, which is more than $80\\%$.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6769,9 +7953,13 @@ Then $y = 5.4 + 1.2 = 6.6$.
     tactical_explanations: [
       `**A.** → True
 
-The overview already solved the two-unknown system; this letter reads that solution.
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -6782,14 +7970,22 @@ $$\\frac{214.70}{612.50} \\approx 0.3505$$
 
 about $35.1\\%$, which is not more than $60\\%$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A $10\\%$ increase in the recovered rate $y = 4.68$ adds $0.468$ per \\$1,000. Home has $210$ thousands of coverage.
 
 $$210 \\times 0.468 = 98.28$$
 
 Since $98.28 > 75$, the Home premium would increase by more than \\$75.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -6802,8 +7998,14 @@ $$\\frac{612.50}{85} \\approx 7.206$$
 
 Home's $5.702$ is not more than twice Auto's $7.206$.
 
+The mismatch with the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is False.`,
       `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
@@ -6812,6 +8014,8 @@ $$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$
 $$612.50 + 1197.50 = 1810.00$$
 
 The combined policy costs less than the sum of the separate premiums.
+
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6881,8 +8085,14 @@ $$898 - 874 = 24$$
 
 Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 If Species B also grew at $72$ per year, combined growth from Year 2 to Year 6 would be $4(72 + 72) = 576$.
 
@@ -6892,16 +8102,20 @@ $$1916 - 1772 = 144$$
 
 The excess over the actual $1772$ is $144$, which is more than $140$.
 
+Matching these figures to the claim settles the verdict.
+
 So the statement is True.`,
       `**C.** → False
 
-The shared elimination is done; only the claim-specific check remains.
+Use the recovered values from the overview for this claim-specific check.
 
 From Year 2 to Year 6, Species A grows by $4 \\times 72 = 288$ and Species B by $4 \\times 36 = 144$.
 
 $$\\frac{288}{144} = 2$$
 
 The growth ratio is $2:1$, which is not greater than $2.5:1$.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -6913,6 +8127,10 @@ $$610 + 72t = 730 + 36t$$
 $$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
 
 That is Year $5.333$, which lies between Year 2 and Year 6.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**E.** → False
@@ -6928,6 +8146,8 @@ $$610 + 3(72) = 826$$
 $$730 + 3(36) = 838$$
 
 A is still behind at Year 5, and equality comes after Year 5.
+
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -6996,6 +8216,10 @@ $$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$
 
 about $48.0\\%$, which is more than $45\\%$.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -7004,6 +8228,10 @@ The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 $$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002815$$
 
 about $0.28\\%$, which is less than $0.3\\%$.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -7017,24 +8245,28 @@ The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8
 So the statement is False.`,
       `**D.** → True
 
-Read the recovered unit prices or counts, then test the named figure.
-
 The combined output rate is $145 + 98 = 243$ MWh/hr.
 
 $$\\frac{243}{98} \\approx 2.4796$$
 
 which is more than $2.4$ times Plant B's rate.
 
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
 So the statement is True.`,
       `**E.** → True
-
-Start from the overview answer line and apply only the extra arithmetic the claim needs.
 
 The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 
 $$3990 + 4072 + 3553 = 11615$$
 
 Since $11615 > 11600$, combined production exceeds $11600$ MWh.
+
+Matching these figures to the claim settles the verdict.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
     ],
