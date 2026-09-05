@@ -158,6 +158,16 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       ]),
     ),
     toChapterToc(
+      10,
+      "Exponential and logarithmic functions",
+      "Chapter 10",
+      subs(10, [
+        { id: "10.1", title: "Exponential functions" },
+        { id: "10.2", title: "Logarithmic functions" },
+        { id: "10.3", title: "Mixed exam" },
+      ]),
+    ),
+    toChapterToc(
       11,
       "Differentiation and single-variable optimization",
       "Chapter 11",
