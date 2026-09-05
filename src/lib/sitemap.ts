@@ -9,9 +9,12 @@ import {
 const SITEMAP_LANGS = ["en", ...LOCALE_PREFIXES] as const;
 
 /**
- * Auth, account, payment, gated study tools, and other non-indexable prefixes.
+ * Auth, account, payment, and other non-indexable prefixes.
  * New public pages in LOCALIZABLE_PATHS are included automatically unless they
  * match one of these prefixes.
+ *
+ * Study hubs (/flashcards, /matching, /tutor-exam, /mock-exams) are public
+ * landing pages and stay in the sitemap; paid task URLs under products/ are not.
  */
 const PRIVATE_PATH_PREFIXES = [
   "/admin",
@@ -28,10 +31,6 @@ const PRIVATE_PATH_PREFIXES = [
   "/payment-result",
   "/practice",
   "/bbe-entrance-exam-guide",
-  "/flashcards",
-  "/matching",
-  "/tutor-exam",
-  "/mock-exams",
   "/products/full-course-subjects",
   "/products/full-course-math",
   "/products/full-course-english",
@@ -43,14 +42,23 @@ const PRIVATE_PATH_PREFIXES = [
   "/products/lite-bbe-course-economics",
 ] as const;
 
-/**
- * Public English-only pages (no `/de` or `/uk` counterpart).
- * Add a path here when a new indexable English page is not in LOCALIZABLE_PATHS.
- */
 export const ENGLISH_ONLY_INDEXABLE_PATHS = [
   "/demo-practice/economics",
   "/demo-practice/math",
   "/demo-practice/english",
+  "/mock-exams",
+  "/flashcards",
+  "/flashcards/economics",
+  "/flashcards/math",
+  "/flashcards/english",
+  "/matching",
+  "/matching/economics",
+  "/matching/math",
+  "/matching/english",
+  "/tutor-exam",
+  "/tutor-exam/economics",
+  "/tutor-exam/math",
+  "/tutor-exam/english",
 ] as const;
 
 type SitemapEntry = {
@@ -76,6 +84,21 @@ function priorityFor(englishPath: string): string {
   }
   if (englishPath === "/parents") return "0.7";
   if (englishPath.startsWith("/demo-practice/")) return "0.7";
+  if (
+    englishPath === "/mock-exams" ||
+    englishPath === "/flashcards" ||
+    englishPath === "/matching" ||
+    englishPath === "/tutor-exam"
+  ) {
+    return "0.6";
+  }
+  if (
+    englishPath.startsWith("/flashcards/") ||
+    englishPath.startsWith("/matching/") ||
+    englishPath.startsWith("/tutor-exam/")
+  ) {
+    return "0.5";
+  }
   return "0.8";
 }
 
@@ -135,7 +158,7 @@ export function renderSitemapXml(): string {
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated from src/lib/sitemap.ts. The live host serves this public file ahead of the Worker. -->
+<!-- Generated from src/lib/sitemap.ts on 2026-09-05. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls}
 </urlset>
