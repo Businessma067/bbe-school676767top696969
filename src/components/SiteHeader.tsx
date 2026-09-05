@@ -1,12 +1,13 @@
-import { Link } from "@tanstack/react-router";
 import { useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { AuthNav } from "@/components/AuthNav";
 import { DesktopNav } from "@/components/DesktopNav";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { MobileNav } from "@/components/MobileNav";
 import { navItemsForAccess, shouldShowSiteNav } from "@/config/site-nav";
 import { useAccountNavTier } from "@/hooks/use-account-nav-tier";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
 type SiteHeaderProps = {
@@ -27,7 +28,7 @@ type SiteHeaderProps = {
 
 function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <Link to="/" className="group flex min-w-0 shrink items-center gap-2 sm:gap-3">
+    <LocalizedLink to="/" className="group flex min-w-0 shrink items-center gap-2 sm:gap-3">
       <div
         className={cn(
           "relative grid shrink-0 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30 transition-transform group-hover:scale-105",
@@ -58,7 +59,7 @@ function BrandMark({ compact = false }: { compact?: boolean }) {
 
         </div>
       )}
-    </Link>
+    </LocalizedLink>
   );
 }
 
@@ -75,9 +76,10 @@ export function SiteHeader({
   compact = false,
 }: SiteHeaderProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const pathForNav = stripLocalePrefix(pathname);
   const { hasLite, hasFull } = useAccountNavTier();
   const navItems = navItemsForAccess({ hasLite, hasFull });
-  const navVisible = shouldShowSiteNav(pathname, showNav);
+  const navVisible = shouldShowSiteNav(pathForNav, showNav);
   const mobileVisible = navVisible && showMobileNav !== false;
 
   return (

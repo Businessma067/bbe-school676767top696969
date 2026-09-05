@@ -5,6 +5,13 @@ import {
   BBE_EXAM_HUB_SEGMENTS,
 } from "@/config/bbe-exam-hub";
 import { FLASHCARD_SUBJECTS } from "@/data/flashcards";
+import type { Lang } from "@/lib/i18n/dictionary";
+import {
+  getLocaleFromPath,
+  localizePath,
+  stripLocalePrefix,
+  type LocalePrefix,
+} from "@/lib/i18n/locale-path";
 import { getExamById } from "@/lib/mock-exams";
 
 /** Known URL segment → label. Extend when adding new sections. */
@@ -101,6 +108,11 @@ function labelForSegment(segment: string, ctx: BreadcrumbContext): string {
   return prettifySegment(decoded);
 }
 
+function withLocale(to: string | null, locale: LocalePrefix | null): string | null {
+  if (!to || !locale) return to;
+  return localizePath(to, locale as Lang);
+}
+
 /**
  * Standard hierarchical breadcrumbs from the URL (not click history).
  * Home is rendered separately in the component.
@@ -109,7 +121,8 @@ export function buildBreadcrumbs(
   pathname: string,
   ctx: BreadcrumbContext = {},
 ): BreadcrumbCrumb[] {
-  const path = normalizePathname(pathname);
+  const locale = getLocaleFromPath(pathname);
+  const path = stripLocalePrefix(normalizePathname(pathname));
   if (path === "/") return [];
 
   const customMock = path.match(/^\/mock-exams\/([^/]+)(?:\/(take|review))?$/);
@@ -118,8 +131,8 @@ export function buildBreadcrumbs(
     const action = customMock[2];
     const mockLabel = ctx.customMockTitle ?? "Custom Mock";
     const trail: Omit<BreadcrumbCrumb, "isLast">[] = [
-      { label: "Products", to: "/products" },
-      { label: "Custom Mock Builder", to: "/products/custom-mock-builder" },
+      { label: "Products", to: withLocale("/products", locale) },
+      { label: "Custom Mock Builder", to: withLocale("/products/custom-mock-builder", locale) },
       {
         label: mockLabel,
         to: action ? `/mock-exams/${examId}/take` : null,
@@ -154,7 +167,7 @@ export function buildBreadcrumbs(
     const seg = segments[0]!;
     const pageLabel = BBE_EXAM_BREADCRUMB_LABELS[seg] ?? labelForSegment(seg, ctx);
     return withLastFlags([
-      { label: "BBE Exam", to: BBE_EXAM_HUB_PATH },
+      { label: "BBE Exam", to: withLocale(BBE_EXAM_HUB_PATH, locale) },
       { label: pageLabel, to: null },
     ]);
   }
@@ -165,7 +178,7 @@ export function buildBreadcrumbs(
       to:
         i === segments.length - 1
           ? null
-          : `/${segments.slice(0, i + 1).join("/")}`,
+          : withLocale(`/${segments.slice(0, i + 1).join("/")}`, locale),
     })),
   );
 }

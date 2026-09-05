@@ -2,11 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 
 export const Route = createFileRoute("/important-features")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/important-features" }],
+    links: [...hreflangLinks("/important-features"), { rel: "canonical", href: "https://bbe-school.com/important-features" }],
     meta: [
       { title: "Important Features — BBE School" },
       {
@@ -43,18 +45,18 @@ const features: Feature[] = [
   },
 ];
 
-function ImportantFeaturesPage() {
+export function ImportantFeaturesPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Home
-          </Link>
+          </LocalizedLink>
         }
       />
 

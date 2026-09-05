@@ -9,13 +9,15 @@ import slide3 from "@/assets/demo-slide-3.png.asset.json";
 import slide4 from "@/assets/demo-slide-4.png.asset.json";
 import slide5 from "@/assets/demo-slide-5.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/products/demo-practice")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(demoFaqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/products/demo-practice" }],
+    links: [...hreflangLinks("/products/demo-practice"), { rel: "canonical", href: "https://bbe-school.com/products/demo-practice" }],
     meta: [
       { title: "Demo-Practice Package — BBE School" },
       {
@@ -98,7 +100,7 @@ function Star({ fill }: { fill: "full" | "half" | "empty" }) {
   );
 }
 
-function DemoPracticeProduct() {
+export function DemoPracticeProduct() {
   const [idx, setIdx] = useState(0);
   const go = (n: number) => setIdx((n + slides.length) % slides.length);
 
@@ -107,12 +109,12 @@ function DemoPracticeProduct() {
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
-          </Link>
+          </LocalizedLink>
         }
       />
 

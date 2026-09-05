@@ -10,13 +10,15 @@ import { FaqAccordion, homepageFaqs } from "@/components/FaqAccordion";
 import { buildFaqPageJsonLd } from "@/components/SeoFaq";
 import { PrepJourneyRoadmap } from "@/components/PrepJourneyRoadmap";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 const PracticeSimulator = lazy(() => import("@/components/PracticeSimulator"));
 const MockBuilderSimulator = lazy(() => import("@/components/MockBuilderSimulator"));
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/" }],
+    links: [...hreflangLinks("/"), { rel: "canonical", href: "https://bbe-school.com/" }],
     meta: [
       { title: "WU Vienna BBE Exam Prep — Practice Simulator | BBE School" },
       {
@@ -41,7 +43,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function Index() {
+export function Index() {
   const [demoSubject, setDemoSubject] = useState<"economics" | "math" | "english">("economics");
   const [demoMode, setDemoMode] = useState<"practice" | "mock">("practice");
 
@@ -88,7 +90,7 @@ function Index() {
                     50+ tasks for start
                   </span>
                 </Link>
-                <Link
+                <LocalizedLink
                   to="/products"
                   id="explore-courses"
                   className="inline-flex flex-col items-center justify-center rounded-sm border border-[#161616] px-6 py-3.5 text-sm font-semibold transition-colors hover:bg-[#2a2a2a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
@@ -98,7 +100,7 @@ function Index() {
                   <span className="mt-0.5 text-[11px] font-medium text-[#F2F1ED]/70">
                     See all BBE School products
                   </span>
-                </Link>
+                </LocalizedLink>
               </div>
 
               <div
@@ -247,13 +249,13 @@ function Index() {
         {/* CTA below snap slider */}
         <section className="relative bg-why-us-bg px-6 py-16 lg:px-8">
           <div className="mx-auto flex max-w-6xl justify-center">
-            <Link
+            <LocalizedLink
               to="/products"
               className="inline-flex items-center justify-center gap-2 rounded-sm border border-white/25 px-8 py-4 text-sm font-semibold transition-colors hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
               style={{ backgroundColor: "#F2F1ED", color: "#161616" }}
             >
               View Preparation Products
-            </Link>
+            </LocalizedLink>
           </div>
         </section>
 
@@ -295,7 +297,7 @@ function Index() {
               <div className="pointer-events-none absolute inset-x-0 top-[30%] bottom-0 bg-gradient-to-b from-transparent via-background/85 to-background" />
 
               <div className="relative z-10 flex justify-center py-4">
-                <Link
+                <LocalizedLink
                   to="/parents"
                   className="group inline-flex flex-col items-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold transition-colors hover:bg-[#2a2a2a]"
                   style={{ backgroundColor: "#161616", color: "#F2F1ED" }}
@@ -313,7 +315,7 @@ function Index() {
                   >
                     <path d="M6 9l6 6 6-6" />
                   </svg>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>

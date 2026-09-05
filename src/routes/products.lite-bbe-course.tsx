@@ -8,13 +8,15 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PaymentModal } from "@/components/PaymentModal";
 import { AuthModal } from "@/components/AuthModal";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/products/lite-bbe-course")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(liteFaqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/products/lite-bbe-course" }],
+    links: [...hreflangLinks("/products/lite-bbe-course"), { rel: "canonical", href: "https://bbe-school.com/products/lite-bbe-course" }],
     meta: [
       { title: "Light BBE Course — BBE School" },
       {
@@ -168,7 +170,7 @@ function Star({ fill }: { fill: "full" | "almost" | "empty" }) {
   );
 }
 
-function LiteBbeCourseProduct() {
+export function LiteBbeCourseProduct() {
   const { signedIn } = useFullCourseAccess();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
@@ -186,12 +188,12 @@ function LiteBbeCourseProduct() {
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
-          </Link>
+          </LocalizedLink>
         }
       />
 

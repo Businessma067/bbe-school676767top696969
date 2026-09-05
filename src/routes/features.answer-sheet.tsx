@@ -3,10 +3,12 @@ import { Clock, ClipboardCheck, Focus, ArrowLeft } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import examHallImg from "@/assets/exam-hall-real.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/features/answer-sheet")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/features/answer-sheet" }],
+    links: [...hreflangLinks("/features/answer-sheet"), { rel: "canonical", href: "https://bbe-school.com/features/answer-sheet" }],
     meta: [
       { title: "Official Answer Sheet Simulator — BBE School" },
       {
@@ -47,19 +49,19 @@ const highlights = [
   },
 ];
 
-function AnswerSheetFeaturePage() {
+export function AnswerSheetFeaturePage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/important-features"
             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
             Features
-          </Link>
+          </LocalizedLink>
         }
       />
 
@@ -298,13 +300,13 @@ function AnswerSheetFeaturePage() {
         </section>
 
         <div className="mt-10 flex justify-center">
-          <Link
+          <LocalizedLink
             to="/important-features"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Important Features
-          </Link>
+          </LocalizedLink>
         </div>
       </main>
     </div>

@@ -1,3 +1,4 @@
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import {
@@ -20,7 +21,7 @@ export const Route = createFileRoute("/bbe-mathematics")({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-mathematics" }],
+    links: [...hreflangLinks("/bbe-mathematics"), { rel: "canonical", href: "https://bbe-school.com/bbe-mathematics" }],
     meta: [
       {
         title: "WU Vienna BBE Mathematics: Topics, Syllabus & Practice | BBE School",
@@ -72,7 +73,7 @@ const faqs = [
   },
 ];
 
-function BbeMathematicsPage() {
+export function BbeMathematicsPage() {
   return (
     <BbeExamShell
       h1="WU Vienna BBE Mathematics: Topics, Syllabus & Practice"

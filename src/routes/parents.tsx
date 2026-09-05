@@ -5,10 +5,12 @@ import clockAsset from "@/assets/parents-clock.jpg.asset.json";
 import moneyAsset from "@/assets/parents-money.jpg.asset.json";
 import wuAsset from "@/assets/wu-vienna.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/parents")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/parents" }],
+    links: [...hreflangLinks("/parents"), { rel: "canonical", href: "https://bbe-school.com/parents" }],
     meta: [
       { title: "A Frank Audit for Parents — The Real Cost of WU Vienna Admission | BBE School" },
       {
@@ -40,18 +42,18 @@ export const Route = createFileRoute("/parents")({
   component: ParentsPage,
 });
 
-function ParentsPage() {
+export function ParentsPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-5xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/"
             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             <ArrowLeft className="h-3.5 w-3.5" /> Back
-          </Link>
+          </LocalizedLink>
         }
       />
 
@@ -264,7 +266,7 @@ function ParentsPage() {
               constraints and secure a seat on a free, world-class program. The choice is yours.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link
+              <LocalizedLink
                 to="/products/full-course"
                 className="inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110"
                 style={{
@@ -273,7 +275,7 @@ function ParentsPage() {
                 }}
               >
                 See the Full BBE Course →
-              </Link>
+              </LocalizedLink>
               <Link
                 to="/demo-practice"
                 className="inline-flex items-center justify-center rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"

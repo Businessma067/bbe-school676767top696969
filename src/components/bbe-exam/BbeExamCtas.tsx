@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
+import { isLocalizablePath } from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
 const PRIMARY_BTN =
@@ -14,6 +16,33 @@ const PRIMARY_STYLE = {
 const GHOST_BTN =
   "inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-secondary";
 
+function ExamHubLink({
+  to,
+  params,
+  className,
+  style,
+  children,
+}: {
+  to: string;
+  params?: Record<string, string>;
+  className?: string;
+  style?: CSSProperties;
+  children: ReactNode;
+}) {
+  if (!params && isLocalizablePath(to)) {
+    return (
+      <LocalizedLink to={to} className={className} style={style}>
+        {children}
+      </LocalizedLink>
+    );
+  }
+  return (
+    <Link to={to} params={params} className={className} style={style}>
+      {children}
+    </Link>
+  );
+}
+
 export function BbePrimaryButton({
   to,
   children,
@@ -24,9 +53,9 @@ export function BbePrimaryButton({
   className?: string;
 }) {
   return (
-    <Link to={to} className={cn(PRIMARY_BTN, className)} style={PRIMARY_STYLE}>
+    <ExamHubLink to={to} className={cn(PRIMARY_BTN, className)} style={PRIMARY_STYLE}>
       {children}
-    </Link>
+    </ExamHubLink>
   );
 }
 
@@ -40,9 +69,9 @@ export function BbeGhostButton({
   className?: string;
 }) {
   return (
-    <Link to={to} className={cn(GHOST_BTN, className)}>
+    <ExamHubLink to={to} className={cn(GHOST_BTN, className)}>
       {children}
-    </Link>
+    </ExamHubLink>
   );
 }
 
@@ -58,7 +87,7 @@ export function BbeTextLink({
   className?: string;
 }) {
   return (
-    <Link
+    <ExamHubLink
       to={to}
       params={params}
       className={cn(
@@ -68,7 +97,7 @@ export function BbeTextLink({
     >
       {children}
       <ArrowRight className="h-4 w-4" />
-    </Link>
+    </ExamHubLink>
   );
 }
 

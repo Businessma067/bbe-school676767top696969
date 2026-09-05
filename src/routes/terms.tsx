@@ -1,10 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/terms")({
   component: TermsPage,
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/terms" }],
+    links: [...hreflangLinks("/terms"), { rel: "canonical", href: "https://bbe-school.com/terms" }],
     meta: [
       { title: "Terms of Service & Privacy Policy · BBE School" },
       { name: "description", content: "Terms of Service and Privacy Policy for BBE School." },
@@ -12,16 +14,16 @@ export const Route = createFileRoute("/terms")({
   }),
 });
 
-function TermsPage() {
+export function TermsPage() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-3xl"
         compact
         actions={
-          <Link to="/" className="text-sm text-primary hover:underline">
+          <LocalizedLink to="/" className="text-sm text-primary hover:underline">
             ← Back to home
-          </Link>
+          </LocalizedLink>
         }
       />
       <div className="mx-auto max-w-3xl px-6 py-16">
@@ -64,9 +66,9 @@ function TermsPage() {
         </section>
 
         <div className="mt-12">
-          <Link to="/" className="text-sm text-primary hover:underline">
+          <LocalizedLink to="/" className="text-sm text-primary hover:underline">
             ← Back to home
-          </Link>
+          </LocalizedLink>
         </div>
       </div>
     </div>

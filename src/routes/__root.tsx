@@ -18,6 +18,7 @@ import { ActivityTracker } from "../components/ActivityTracker";
 import { SiteAccessGuard } from "../components/SiteAccessGuard";
 import { PracticeCaseProvider } from "../lib/practice-case-context";
 import { LanguageProvider } from "../lib/i18n/context";
+import { LocaleSync } from "../components/LocaleSync";
 import { PageTranslator } from "../components/PageTranslator";
 import { DeferredChrome, lazyNamed } from "../components/DeferredChrome";
 
@@ -170,6 +171,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <PracticeCaseProvider>
+          <LocaleSync />
           <PageTranslator />
           <IntroSplash />
           <HashScrollOnLoad />

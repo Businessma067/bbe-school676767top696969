@@ -12,16 +12,22 @@ import {
   readCachedCustomMock,
 } from "@/lib/custom-mock-builder/client";
 import { buildBreadcrumbs } from "@/lib/breadcrumbs";
+import { useLanguage } from "@/lib/i18n/context";
+import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
 export function Breadcrumbs() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { lang } = useLanguage();
+  const pathForCrumbs = stripLocalePrefix(pathname);
+  const effective = effectiveLangFromLocation(pathname, lang);
   const [customTitle, setCustomTitle] = useState<string | null>(null);
 
   const customMockId = useMemo(() => {
-    const m = pathname.match(/^\/mock-exams\/([^/]+)(?:\/(?:take|review))?\/?$/);
+    const m = pathForCrumbs.match(/^\/mock-exams\/([^/]+)(?:\/(?:take|review))?\/?$/);
     if (!m || !isCustomExamId(m[1]!)) return null;
     return parseCustomMockId(decodeURIComponent(m[1]!));
-  }, [pathname]);
+  }, [pathForCrumbs]);
 
   useEffect(() => {
     if (!customMockId) {
@@ -51,7 +57,9 @@ export function Breadcrumbs() {
     [pathname, customTitle],
   );
 
-  if (pathname === "/" || pathname === "") return null;
+  if (pathForCrumbs === "/" || pathForCrumbs === "") return null;
+
+  const home = getLocaleLinkProps("/", effective);
 
   return (
     <nav
@@ -67,7 +75,8 @@ export function Breadcrumbs() {
             </span>
           ) : (
             <Link
-              to="/"
+              to={home.to as never}
+              params={home.params as never}
               className="inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground"
             >
               <Home className="h-3.5 w-3.5" />
@@ -75,13 +84,15 @@ export function Breadcrumbs() {
             </Link>
           )}
         </li>
-        {crumbs.map((c, i) => (
+        {crumbs.map((c, i) => {
+          const crumbLink = c.to ? getLocaleLinkProps(c.to, effective) : null;
+          return (
           <li key={`${c.label}-${i}`} className="flex items-center gap-1.5">
             <ChevronRight
               className="h-3 w-3 text-muted-foreground/60"
               aria-hidden="true"
             />
-            {c.isLast || !c.to ? (
+            {c.isLast || !crumbLink ? (
               <span
                 className={
                   c.isLast
@@ -94,14 +105,16 @@ export function Breadcrumbs() {
               </span>
             ) : (
               <Link
-                to={c.to}
+                to={crumbLink.to as never}
+                params={crumbLink.params as never}
                 className="text-muted-foreground transition-colors hover:text-foreground"
               >
                 {c.label}
               </Link>
             )}
           </li>
-        ))}
+          );
+        })}
       </ol>
     </nav>
   );
