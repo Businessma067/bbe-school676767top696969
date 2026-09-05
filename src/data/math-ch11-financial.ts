@@ -53,14 +53,12 @@ $$
 i_m=0.60\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Compound the recovered periodic rate through one full year of credits to obtain the effective annual rate:
 
 $$
 R = (1+i)^{n} - 1
@@ -98,7 +96,7 @@ The claim is \\$6,446.54.
 So the statement is True.`,
       `**D.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Write the effective annual rate from the periodic rate and the compounding count:
 
 $$
 R = (1+i)^{n} - 1
@@ -119,7 +117,7 @@ The claim needs $R_{\\mathrm{ann}} > R$. We have $7.20\\% < 7.44\\%$.
 So the statement is False.`,
       `**E.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -192,12 +190,12 @@ $$
 i=2.00\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
+
+A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
 
 The number of compounding periods is frequency times holding time:
 
@@ -217,14 +215,10 @@ $$
 nt=24
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Six years of quarterly credits apply the recovered $i=0.02$ through $24$ periods:
 
@@ -257,8 +251,6 @@ The claim needs $S(3)=\\frac{S(6)}{2}$. We have $7{,}609.45 \\ne 4{,}825.31$.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Total percentage growth is the six-year dollar gain over the original deposit:
 
@@ -321,8 +313,6 @@ $$R_i \\approx 0.065533 \\approx 6.55\\%$$
 
 The claim is about $6.55\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -337,8 +327,6 @@ $$(1.0325)^{2} = 1.066056$$
 $$R_{ii} = 0.066056 \\approx 6.61\\%$$
 
 The claim is about $6.61\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -369,7 +357,7 @@ Offer (i) compounds more often, but $6.55\\% < 6.61\\%$. Frequency alone does no
 So the statement is False.`,
       `**E.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -424,18 +412,16 @@ $$R = \\left(1+\\frac{r}{n}\\right)^{n} - 1, \\qquad I = P R$$`,
     tactical_explanations: [
       `**A.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%$$
 
-The claim is $22.00\\%$. We have $21.00\\% \\ne 22.00\\%$.
+Compare the computed value with the claim ($22.00\\%$. We have $21.00\\% \\ne 22.00\\%$). The two sides do not agree.
 
 So the statement is False.`,
       `**B.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Compound the recovered periodic rate through one full year of credits to obtain the effective annual rate:
 
 $$
 R = (1+i)^{n} - 1
@@ -475,7 +461,7 @@ The claim is \\$2,420.00. We have $2{,}462.86 \\ne 2{,}420.00$.
 So the statement is False.`,
       `**D.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Write the effective annual rate from the periodic rate and the compounding count:
 
 $$
 R = (1+i)^{n} - 1
@@ -496,7 +482,7 @@ The claim needs more than $2.00$ percentage points. We have $2.14 > 2.00$.
 So the statement is True.`,
       `**E.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -567,14 +553,12 @@ $$
 i=1.40\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Compound the recovered periodic rate through one full year of credits to obtain the effective annual rate:
 
 $$
 R = (1+i)^{n} - 1
@@ -625,7 +609,7 @@ The claim needs $R_{\\mathrm{mon}} < R_{\\mathrm{q}}$. We have $5.75\\% > 5.72\\
 So the statement is False.`,
       `**E.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -698,9 +682,7 @@ $$
 i_m=0.60\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -719,8 +701,6 @@ $$
 
 The claim is $108$ months. We have $115.87 \\ne 108$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -734,9 +714,7 @@ Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 2}{\\ln(1.006)} \\approx 115.87
-$$
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. The claim is $58$ months. We have $115.87 \\ne 58$.
+$$The claim is $58$ months. We have $115.87 \\ne 58$.
 
 So the statement is False.`,
       `**D.** → False
@@ -818,8 +796,6 @@ The claim is about $15.56\\%$.
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
 $$i = \\frac{0.15}{4} = 0.0375$$
@@ -834,8 +810,6 @@ The claim is about $15.87\\%$.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Monthly compounding splits the quote in twelve, then raises to the twelfth:
 
@@ -861,8 +835,6 @@ $$R_4 = (1.0375)^{4}-1 \\approx 15.87\\%$$
 $$R_{12} = (1.0125)^{12}-1 \\approx 16.08\\%$$
 
 These satisfy $15.56\\% < 15.87\\% < 16.08\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -934,12 +906,12 @@ $$
 i_m=0.50\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
+
+A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
 
 The number of compounding periods is frequency times holding time:
 
@@ -959,14 +931,10 @@ $$
 nt=120
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Ten years of monthly credits apply the recovered $i_m=0.005$ through $120$ periods:
 
@@ -976,18 +944,18 @@ $$(1.005)^{120} \\approx 1.8194$$
 
 $$S(10) \\approx 7{,}277.60$$
 
-The claim is \\$7,277.60.
+Compare the computed value with the claim (\\$7,277.60). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
+
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Doubling would require a growth factor of $2$. Monthly compounding for ten years gives
 
 $$(1.005)^{120} \\approx 1.8194$$
 
 Since $1.8194 < 2$, the deposit has not doubled.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -1062,9 +1030,7 @@ $$1+\\frac{r}{4} = (1.6)^{\\frac{1}{32}} \\approx 1.014796$$
 
 $$\\frac{r}{4} \\approx 0.014796 \\approx 1.48\\%$$
 
-The claim is about $1.48\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $1.48\\%$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -1095,15 +1061,13 @@ The claim needs $r_{\\mathrm{mon}} > r_{\\mathrm{q}}$. We have $5.89\\% < 5.92\\
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Expand or simplify with the governing identity, then match the printed claim.
 
 Dollar growth relative to the opening investment is
 
 $$\\frac{80{,}000-50{,}000}{50{,}000} = 0.60 = 60\\%$$
 
 The claim needs more than $65\\%$. We have $60\\% < 65\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -1157,8 +1121,6 @@ The claim needs $R_a > R_b$. We have $10.80\\% < 10.81\\%$.
 So the statement is False.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Option (b) splits $10.40\\%$ across four quarters, then compounds:
 
 $$i_b = \\frac{0.104}{4} = 0.026$$
@@ -1174,7 +1136,7 @@ The claim is about $10.81\\%$.
 So the statement is True.`,
       `**C.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+One year of compounding turns the periodic rate into an effective annual rate via:
 
 $$
 R = (1+i)^{n} - 1
@@ -1193,7 +1155,7 @@ Option (b) quotes the lower nominal rate, but $10.81\\% > 10.80\\%$. It is not t
 So the statement is False.`,
       `**D.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Write the effective annual rate from the periodic rate and the compounding count:
 
 $$
 R = (1+i)^{n} - 1
@@ -1212,7 +1174,7 @@ The claim needs $R_a > R_b$. We have $10.80\\% < 10.81\\%$.
 So the statement is False.`,
       `**E.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -1265,13 +1227,11 @@ $$R = \\left(1+\\frac{r}{n}\\right)^{n} - 1$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The six-year growth factor is the annual growth factor raised to $t=6$:
 
 $$(1.045)^{6} \\approx 1.302253$$
 
-The claim is about $1.302253$.
+Compare the computed value with the claim (about $1.302253$). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -1282,22 +1242,18 @@ $$(1.045)^{6} \\approx 1.302253$$
 
 $$S_0 = \\frac{40{,}000}{1.302253} \\approx 30{,}715.86$$
 
-The claim is \\$30,715.86.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$30,715.86). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 The required deposit is
 
 $$S_0 = \\frac{40{,}000}{(1.045)^{6}} \\approx 30{,}715.86$$
 
 The claim needs $S_0 < 32{,}000$. We have $30{,}715.86 < 32{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -1312,8 +1268,6 @@ $$S_0' \\approx 29{,}009.83$$
 
 The $4.5\\%$ deposit was about \\$30,715.86. The claim needs $S_0' > 30{,}715.86$. We have $29{,}009.83 < 30{,}715.86$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -1323,9 +1277,7 @@ $$S_0 = \\frac{40{,}000}{(1.045)^{6}} \\approx 30{,}715.86$$
 
 $$40{,}000 - 30{,}715.86 = 9{,}284.14$$
 
-The claim is \\$9,284.14.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$9,284.14). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -1372,12 +1324,12 @@ $$
 t = \\frac{\\ln 1.5}{\\ln 1.005}
 $$
 
-The claim is about $81.30$ months. 
+The claim is about $81.30$ months.
 
 So the statement is True.`,
       `**B.** → False
 
-Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
+Take logarithms to isolate time in the growth equation.
 
 $$
 t = \frac{\ln M}{\ln(1+i)}
@@ -1387,14 +1339,12 @@ Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. The claim is $6.00$ years exactly. We have $6.78 \\ne 6.00$.
+$$The claim is $6.00$ years exactly. We have $6.78 \\ne 6.00$.
 
 So the statement is False.`,
       `**C.** → False
 
-Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
+Solve for $t$ by applying $\ln$ to both sides of the growth identity.
 
 $$
 t = \frac{\ln M}{\ln(1+i)}
@@ -1404,9 +1354,7 @@ Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. The claim is $48$ months. We have $81.30 \\ne 48$.
+$$The claim is $48$ months. We have $81.30 \\ne 48$.
 
 So the statement is False.`,
       `**D.** → False
@@ -1421,12 +1369,10 @@ $$\\frac{t_2}{2} \\approx 69.49$$
 
 The claim needs $t_{1.5} < \\frac{t_2}{2}$. We have $81.30 > 69.49$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → False
 
-Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
+Isolate time with logarithms, then substitute the recovered rates.
 
 $$
 t = \frac{\ln M}{\ln(1+i)}
@@ -1436,9 +1382,7 @@ Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. The claim is exactly $100$ months. We have $81.30 \\ne 100$.
+$$The claim is exactly $100$ months. We have $81.30 \\ne 100$.
 
 So the statement is False.`,
     ],
@@ -1497,9 +1441,7 @@ $$
 i \\approx 0.011644\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -1598,18 +1540,16 @@ $$R = \\left(1+\\frac{r}{n}\\right)^{n} - 1, \\qquad FV = P\\left(1+\\frac{r}{n}
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The nominal annual rate annualizes the monthly quote without compounding:
 
 $$r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%$$
 
-The claim is $22.80\\%$.
+Compare the computed value with the claim ($22.80\\%$). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Compound the recovered periodic rate through one full year of credits to obtain the effective annual rate:
 
 $$
 R = (1+i)^{n} - 1
@@ -1630,7 +1570,7 @@ The claim is about $25.34\\%$.
 So the statement is True.`,
       `**C.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+One year of compounding turns the periodic rate into an effective annual rate via:
 
 $$
 R = (1+i)^{n} - 1
@@ -1668,7 +1608,7 @@ The claim is \\$3,684.00. We have $3{,}760.20 \\ne 3{,}684.00$.
 So the statement is False.`,
       `**E.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Annualize the recovered periodic rate with the usual effective-rate formula:
 
 $$
 R = (1+i)^{n} - 1
@@ -1743,8 +1683,6 @@ The claim is about $10.25\\%$.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Quarterly compounding splits the quote in four, then raises to the fourth:
 
@@ -1846,22 +1784,16 @@ $$50^{\\frac{1}{80}} \\approx 1.050116$$
 
 $$r \\approx 0.050116 \\approx 5.01\\%$$
 
-The claim is about $5.01\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $5.01\\%$). The two sides agree.
 
 So the statement is True.`,
       `**B.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 The same inversion gives
 
 $$r = 50^{\\frac{1}{80}} - 1 \\approx 5.01\\%$$
 
-The claim is about $6.25\\%$. We have $5.01\\% \\ne 6.25\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $6.25\\%$. We have $5.01\\% \\ne 6.25\\%$). The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -1879,8 +1811,6 @@ The claim needs $r_{50}=\\frac{1}{2} r_{100}$. We have $5.01\\% \\ne 2.96\\%$.
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Extending the horizon from $80$ years to $160$ years at the same rate squares the original growth factor:
 
 $$(1.050116)^{160} = \\bigl(50^{\\frac{1}{80}}\\bigr)^{160} = 50^{2} = 2{,}500$$
@@ -1895,8 +1825,6 @@ The same $50$-fold target in only $40$ years requires
 $$r_{40} = 50^{\\frac{1}{40}} - 1 \\approx 0.1027 \\approx 10.27\\%$$
 
 The $80$-year rate is about $5.01\\%$. The claim needs $r_{40} < 5.01\\%$. We have $10.27\\% > 5.01\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -1929,8 +1857,6 @@ $$r = M^{\\frac{1}{t}} - 1$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Account X has $nt=84$ monthly periods. Discounting the target by that growth factor gives
 
 $$\\left(1+\\frac{0.05}{12}\\right)^{84} \\approx 1.418038$$
@@ -1941,8 +1867,6 @@ The claim is \\$17,629.99.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Account Y has $nt=28$ quarterly periods. Discounting the target by that growth factor gives
 
@@ -1962,8 +1886,6 @@ $$S_{0,X} = \\frac{25{,}000}{\\bigl(1+\\frac{0.05}{12}\\bigr)^{84}} \\approx 17{
 $$S_{0,Y} = \\frac{25{,}000}{\\bigl(1+\\frac{0.051}{4}\\bigr)^{28}} \\approx 17{,}534.28$$
 
 The claim needs $S_{0,X} < S_{0,Y}$. We have $17{,}629.99 > 17{,}534.28$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -2051,22 +1973,18 @@ $$G = (1.011)^{36} \\approx 1.482660$$
 
 $$S_0 = \\frac{60{,}000}{1.482660} \\approx 40{,}467.83$$
 
-The claim is \\$40,467.83.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$40,467.83). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 The required original investment is
 
 $$S_0 = \\frac{60{,}000}{(1.011)^{36}} \\approx 40{,}467.83$$
 
 The claim needs $S_0 > 45{,}000$. We have $40{,}467.83 < 45{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**D.** → False
@@ -2091,8 +2009,6 @@ $$S_0 = \\frac{60{,}000}{(1.011)^{36}} \\approx 40{,}467.83$$
 $$60{,}000 - 40{,}467.83 = 19{,}532.17$$
 
 The claim needs more than \\$20,000. We have $19{,}532.17 < 20{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -2135,8 +2051,6 @@ $$G = (1+i)^{nt}, \\qquad S_0 = \\frac{T}{G}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 CD1 splits the monthly quote, then compounds twelve times:
 
 $$i_1 = \\frac{0.063}{12} = 0.00525$$
@@ -2151,8 +2065,6 @@ The claim is about $6.49\\%$.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 CD2 splits the quarterly quote, then compounds four times:
 
@@ -2169,7 +2081,7 @@ The claim is about $6.55\\%$.
 So the statement is True.`,
       `**C.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+One year of compounding turns the periodic rate into an effective annual rate via:
 
 $$
 R = (1+i)^{n} - 1
@@ -2192,7 +2104,7 @@ CD2 gave $R_2 \\approx 6.55\\%$ as well. The two effective rates agree to two hu
 So the statement is True.`,
       `**D.** → True
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Write the effective annual rate from the periodic rate and the compounding count:
 
 $$
 R = (1+i)^{n} - 1
@@ -2315,7 +2227,7 @@ Account Q compounds less often but reaches \\$22,000 sooner.
 So the statement is False.`,
       `**D.** → False
 
-The effective annual rate compounds the periodic rate across every compounding date in one year:
+Write the effective annual rate from the periodic rate and the compounding count:
 
 $$
 R = (1+i)^{n} - 1
@@ -2333,8 +2245,6 @@ The claim needs $R_M > R_Q$. We have $6.17\\% < 6.29\\%$.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Reaching \\$30,000 instead of \\$22,000 changes the target ratio from $\\frac{22}{15}$ to $2$:
 
@@ -2385,8 +2295,6 @@ $$t = \\frac{\\ln\\bigl(\\frac{T}{S_0}\\bigr)}{\\ln\\bigl(1+\\frac{r}{n}\\bigr)}
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 One year of continuous growth applies the recovered $r=0.05$:
 
 $$S(1) = 4{,}500 \\times e^{0.05}$$
@@ -2395,7 +2303,7 @@ $$e^{0.05} \\approx 1.051271$$
 
 $$S(1) \\approx 4{,}730.72$$
 
-The claim is \\$4,730.72.
+Compare the computed value with the claim (\\$4,730.72). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -2406,9 +2314,7 @@ $$S(1) = 4{,}500 \\times e^{0.05} \\approx 4{,}730.72$$
 
 $$4{,}730.72 - 4{,}500 = 230.72$$
 
-The claim is \\$230.72.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$230.72). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -2417,9 +2323,7 @@ Annual compounding at the same 5% nominal rate uses $n=1$:
 
 $$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$
 
-The claim is \\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -2432,14 +2336,12 @@ $$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$
 
 $$4{,}730.72 - 4{,}725.00 = 5.72$$
 
-The claim is \\$5.72.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$5.72). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Expand or simplify with the governing identity, then match the printed claim.
 
 The one-year continuous growth factor is
 
@@ -2478,8 +2380,6 @@ $$S(t) = S_0 e^{rt}, \\qquad S_{\\mathrm{ann}} = S_0(1+r)^{t}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Six years of continuous $8\\%$ carry the exponent $0.48$:
 
 $$S(6) = 3{,}200 \\times e^{0.08 \\times 6} = 3{,}200 \\times e^{0.48}$$
@@ -2488,7 +2388,7 @@ $$e^{0.48} \\approx 1.616074$$
 
 $$S(6) \\approx 5{,}171.44$$
 
-The claim is approximately \\$5,171.44.
+Compare the computed value with the claim (approximately \\$5,171.44). The two sides agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -2518,8 +2418,6 @@ $$5{,}171.44 - 3{,}200 = 1{,}971.44$$
 
 The claim is approximately \\$2,000.00. We have $1{,}971.44 \\ne 2{,}000.00$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -2547,8 +2445,6 @@ $$S(6) = 3{,}200 \\times e^{0.48} \\approx 5{,}171.44$$
 $$2 \\times S(6) \\approx 10{,}342.88$$
 
 The claim needs $S(12)<2\\,S(6)$. We have $8{,}357.43 < 10{,}342.88$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -2589,14 +2485,10 @@ $$e^{0.09} \\approx 1.094174$$
 
 $$R \\approx 0.094174 \\approx 9.42\\%$$
 
-The claim is about $9.42\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $9.42\\%$). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 One year of continuous $9\\%$ grows the \\$15,000 investment by $e^{0.09}$:
 
@@ -2606,7 +2498,7 @@ $$e^{0.09} \\approx 1.094174$$
 
 $$S(1) \\approx 16{,}412.61$$
 
-The claim is \\$16,412.61.
+Compare the computed value with the claim (\\$16,412.61). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -2643,15 +2535,13 @@ The claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At the $18\\%$ continuous quote,
 
 $$R_{18} = e^{0.18} - 1 \\approx 0.197217 \\approx 19.72\\%$$
 
 The claim needs $R_{18}>19.5\\%$. We have $19.72\\% > 19.5\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -2684,15 +2574,11 @@ $$R = e^{r} - 1, \\qquad S(t) = S_0 e^{rt}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Yearly compounding grows one dollar by one plus the quote:
 
 $$K_{\\mathrm{y}} = 1 + 0.10 = 1.1000$$
 
-The claim is $1.1000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($1.1000$). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -2701,9 +2587,7 @@ Semi-annual compounding splits the quote in two, then squares:
 
 $$K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2} = (1.05)^{2} = 1.1025$$
 
-The claim is $1.1025$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($1.1025$). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -2714,14 +2598,10 @@ $$K_{\\mathrm{c}} = e^{0.10}$$
 
 $$e^{0.10} \\approx 1.105171 \\approx 1.1052$$
 
-The claim is about $1.1052$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $1.1052$). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 On \\$75,000 the continuous-minus-semi-annual gap is
 
@@ -2779,8 +2659,6 @@ $$K_{\\mathrm{y}} = 1+i, \\qquad K_{\\mathrm{s}} = \\left(1+\\frac{i}{2}\\right)
     tactical_explanations: [
       `**A.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 One year of continuous $4.5\\%$ multiplies the principal by $e^{0.045}$:
 
 $$S(1) = 95{,}000 \\times e^{0.045}$$
@@ -2793,8 +2671,6 @@ The claim is approximately \\$98,500.00. We have $99{,}372.65 \\ne 98{,}500.00$.
 
 So the statement is False.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Two years of continuous $4.5\\%$ carry the exponent $0.09$:
 
@@ -2824,15 +2700,13 @@ The claim needs $4{,}372.65 > 4{,}573.91$. We have $4{,}372.65 < 4{,}573.91$.
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Each year multiplies the current balance by the same continuous factor
 
 $$e^{r} = e^{0.045} \\approx 1.046028$$
 
 That factor does not change from year to year.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -2846,8 +2720,6 @@ Double the original factor would be
 $$2 \\times e^{0.045} \\approx 2 \\times 1.046028 = 2.092056$$
 
 The claim needs $e^{0.09}=2e^{0.045}$. We have $1.094174 \\ne 2.092056$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -2880,8 +2752,6 @@ $$S(t) = S_0 e^{rt}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Four years of continuous $10\\%$ depreciation carry the exponent $-0.40$:
 
 $$v(4) = 60{,}000 \\times e^{-0.10 \\times 4} = 60{,}000 \\times e^{-0.40}$$
@@ -2894,8 +2764,6 @@ The claim is approximately \\$40,219.20.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Seven years of continuous $10\\%$ depreciation carry the exponent $-0.70$:
 
@@ -2916,14 +2784,10 @@ $$v(4) = 60{,}000 \\times e^{-0.40} \\approx 40{,}219.20$$
 
 $$\\frac{40{,}219.20}{60{,}000} \\approx 0.6703 = 67.03\\%$$
 
-The claim is about $67.03\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $67.03\\%$). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a doubled $20\\%$ depreciation rate the four-year value is
 
@@ -3002,8 +2866,6 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At the rounded doubling time $t=12.60$ years,
 
 $$S(12.60) = 18{,}000 \\times e^{0.055 \\times 12.60} = 18{,}000 \\times e^{0.693}$$
@@ -3012,12 +2874,12 @@ $$e^{0.693} \\approx 1.9997$$
 
 $$S(12.60) \\approx 35{,}994.70$$
 
-The claim is approximately \\$36,000.00.
+Compare the computed value with the claim (approximately \\$36,000.00). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 At an $11\\%$ continuous rate the doubling time is
 
@@ -3025,25 +2887,19 @@ $$t_2' = \\frac{\\ln 2}{0.11} \\approx 6.30$$
 
 The original wait was $t_2 \\approx 12.60$. The claim needs $t_2' \\approx 12.60$. We have $6.30 \\ne 12.60$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Each doubling multiplies the balance by $2$. Three full doubling periods therefore multiply by
 
 $$2^{3} = 8$$
 
-The claim is a factor of $6$. We have $8 \\ne 6$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (a factor of $6$. We have $8 \\ne 6$). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+State what the overview already settled, then test whether the claim matches that result.
 
 The doubling time $t_2=\\frac{\\ln 2}{r}$ falls when $r$ rises. A higher interest rate shortens the wait, it does not lengthen it.
 
@@ -3080,14 +2936,12 @@ $$t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Name the rule behind the claim, then match the recovered expression or number to the printed figure.
 
 The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Substituting the recovered $\\delta=0.18$ into the isolated time gives
 
@@ -3097,25 +2951,21 @@ $$\\ln 2.5 \\approx 0.916291$$
 
 $$t \\approx 5.09$$
 
-The claim is about $5.09$ years.
+Compare the computed value with the claim (about $5.09$ years). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Retaining $40\\%$ of the original \\$120,000 leaves
 
 $$0.40 \\times 120{,}000 = 48{,}000$$
 
-The claim is approximately \\$48,000.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (approximately \\$48,000.00). The two sides agree.
 
 So the statement is True.`,
       `**D.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Halving the depreciation rate to $9\\%$ doubles the isolated wait:
 
@@ -3131,8 +2981,6 @@ Losing $80\\%$ of value means retaining $20\\%$, so
 $$t_{80} = \\frac{\\ln\\bigl(\\frac{1}{0.20}\\bigr)}{0.18} = \\frac{\\ln 5}{0.18} \\approx 8.94$$
 
 The time to lose $60\\%$ was $t_{60}=\\frac{\\ln 2.5}{0.18} \\approx 5.09$. The claim needs $t_{80}>t_{60}$. We have $8.94 > 5.09$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -3165,8 +3013,6 @@ $$t = \\frac{\\ln\\bigl(\\frac{1}{0.40}\\bigr)}{\\delta} = \\frac{\\ln 2.5}{\\de
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $3\\%$ for one year the continuous-minus-annual gap is
 
 $$G(0.03,1) = 25{,}000\\bigl(e^{0.03} - 1.03\\bigr)$$
@@ -3175,12 +3021,10 @@ $$e^{0.03} \\approx 1.030455$$
 
 $$G(0.03,1) \\approx 11.36$$
 
-The claim is approximately \\$11.36.
+Compare the computed value with the claim (approximately \\$11.36). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $15\\%$ for one year the continuous-minus-annual gap is
 
@@ -3190,7 +3034,7 @@ $$e^{0.15} \\approx 1.161834$$
 
 $$G(0.15,1) \\approx 295.86$$
 
-The claim is approximately \\$295.86.
+Compare the computed value with the claim (approximately \\$295.86). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -3205,12 +3049,8 @@ $$\\frac{295.86}{11.36} \\approx 26.04$$
 
 The claim needs a ratio greater than $30$. We have $26.04 < 30$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Extending the $3\\%$ comparison to eight years gives
 
@@ -3232,8 +3072,6 @@ $$G(0.03,1) \\approx 11.36$$
 $$G(0.03,8) \\approx 111.98$$
 
 The continuous advantage widens as $t$ grows. The claim needs it to become less advantageous over longer holding periods. We have $111.98 > 11.36$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -3268,8 +3106,6 @@ $$G(r,t) = P\\bigl(e^{rt} - (1+r)^{t}\\bigr)$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Fund A's continuous year-end value is
 
 $$S_A = 400{,}000 \\times e^{0.095}$$
@@ -3278,7 +3114,7 @@ $$e^{0.095} \\approx 1.099659$$
 
 $$S_A \\approx 439{,}863.54$$
 
-The claim is approximately \\$439,863.54.
+Compare the computed value with the claim (approximately \\$439,863.54). The two sides agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -3293,8 +3129,6 @@ $$S_B \\approx 439{,}699.03$$
 
 The claim is approximately \\$439,750.00. We have $439{,}699.03 \\ne 439{,}750.00$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -3302,9 +3136,7 @@ The continuous compounding ceiling at this $9.5\\%$ quote is
 
 $$R_{\\mathrm{c}} = e^{0.095} - 1 \\approx 0.099659 \\approx 9.97\\%$$
 
-The claim is about $9.50\\%$, equal to the nominal rate. We have $9.97\\% \\ne 9.50\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $9.50\\%$, equal to the nominal rate. We have $9.97\\% \\ne 9.50\\%$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -3389,9 +3221,7 @@ $$
 r \\approx 6.67\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -3417,25 +3247,17 @@ $$34{,}200 + 2 \\times 2{,}066.67 = 38{,}333.33$$
 
 The exponential projection was $S(5) \\approx 39{,}078.52$. The claim needs these to match. We have $38{,}333.33 \\ne 39{,}078.52$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 Doubling the original \\$28,000 at the recovered rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.06667} \\approx 10.40$$
 
-The claim is about $12.40$ years. We have $10.40 \\ne 12.40$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $12.40$ years. We have $10.40 \\ne 12.40$). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 If the implied rate had been $6.00\\%$, the three-year value would be
 
@@ -3482,8 +3304,6 @@ A later value at time $T$ is $S(T)=S_0 e^{rT}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Bank X compounds continuously at $6.8\\%$ for two years:
 
 $$S_X = 60{,}000 \\times e^{0.068 \\times 2} = 60{,}000 \\times e^{0.136}$$
@@ -3492,12 +3312,10 @@ $$e^{0.136} \\approx 1.145682$$
 
 $$S_X \\approx 68{,}740.91$$
 
-The claim is approximately \\$68,740.91.
+Compare the computed value with the claim (approximately \\$68,740.91). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Bank Y compounds monthly at $6.9\\%$ for $24$ periods:
 
@@ -3511,8 +3329,6 @@ The claim is approximately \\$68,851.32.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Bank Z compounds quarterly at $7.0\\%$ for $8$ periods:
 
@@ -3615,8 +3431,6 @@ $$
 
 those values do not agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**B.** → False
 
@@ -3630,20 +3444,14 @@ $$S(6) \\approx 3{,}043{,}923.11$$
 
 The claim is approximately \\$3,100,000.00. We have $3{,}043{,}923.11 \\ne 3{,}100{,}000.00$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 Doubling at the recovered $7\\%$ net rate takes
 
 $$t_2 = \\frac{\\ln 2}{0.07} \\approx 9.90$$
 
-The claim is about $7.00$ years. We have $9.90 \\ne 7.00$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $7.00$ years. We have $9.90 \\ne 7.00$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -3664,8 +3472,6 @@ At the original $7\\%$ net rate, $t_2=\\frac{\\ln 2}{0.07}\\approx 9.90$. The wa
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Raising the fee lowers $r_{\\mathrm{net}}=r-f$ and therefore lowers $S(t)=S_0 e^{r_{\\mathrm{net}} t}$ at every $t>0$. A higher fee reduces both the net growth rate and the cumulative value.
 
@@ -3702,7 +3508,7 @@ Net asset value then follows $S(t)=S_0 e^{r_{\\mathrm{net}} t}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Name the rule behind the claim, then match the recovered expression or number to the printed figure.
 
 The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation.
 
@@ -3737,6 +3543,8 @@ The claim needs $A(10)>B(10)$. We have $74{,}591.23 < 75{,}298.55$.
 So the statement is False.`,
       `**D.** → False
 
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
 $$
@@ -3747,14 +3555,10 @@ Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 5}{0.16} \\approx 10.06
-$$
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. 
+$$.
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 For $t$ larger than the crossover $t_*\\approx 10.06$, the exponent $(r_A+\\delta_B)(t-t_*)$ is positive, so $A(t)>B(t)$ stays in force. Asset A remains ahead after the crossing.
 
@@ -3795,9 +3599,7 @@ Annual compounding is a single $7\\%$ credit:
 
 $$S_1 = 40{,}000 \\times 1.07 = 42{,}800.00$$
 
-The claim is \\$42,800.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$42,800.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -3844,8 +3646,6 @@ $$S_{\\mathrm{c}} - S_{12} \\approx 42{,}900.33 - 42{,}891.60 = 8.73$$
 
 The claim needs $17.24 < 8.73$. We have $17.24 > 8.73$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -3854,8 +3654,6 @@ Continuous compounding at this $7\\%$ quote is the ceiling:
 $$S_{\\mathrm{c}} = 40{,}000 \\times e^{0.07} \\approx 42{,}900.33$$
 
 Every finite $m$ gives $S_m < S_{\\mathrm{c}}$. No schedule can exceed \\$42,900.33 at this same nominal rate.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -3890,8 +3688,6 @@ $$S_m = P\\left(1+\\frac{i}{m}\\right)^{m}, \\qquad S_{\\mathrm{c}} = P e^{i}$$`
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Option 1 discounts \\$100,000 continuously at $4.5\\%$ for eight years:
 
 $$S_{0,1} = 100{,}000 \\times e^{-0.045 \\times 8} = 100{,}000 \\times e^{-0.36}$$
@@ -3904,8 +3700,6 @@ The claim is approximately \\$69,767.63.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Option 2 discounts \\$100,000 continuously at $6.0\\%$ for eight years:
 
@@ -3928,8 +3722,6 @@ $$S_{0,2} = 100{,}000 \\times e^{-0.48} \\approx 61{,}878.34$$
 
 The claim needs $S_{0,2}>S_{0,1}$. We have $61{,}878.34 < 69{,}767.63$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -3938,8 +3730,6 @@ The gap in required deposits is
 $$S_{0,1} - S_{0,2} \\approx 69{,}767.63 - 61{,}878.34 = 7{,}889.29$$
 
 Option 2 requires the smaller deposit. The claim is about \\$9,000.00 with Option 2 larger. We have $7{,}889.29 \\ne 9{,}000.00$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -3991,8 +3781,6 @@ $$S_0 = T e^{-rt}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Four years of continuous $10\\%$ carry the exponent $0.40$:
 
 $$S(4) = 1{,}800{,}000 \\times e^{0.10 \\times 4} = 1{,}800{,}000 \\times e^{0.40}$$
@@ -4023,12 +3811,12 @@ The single constant rate matching the seven-year outcome is the time-weighted av
 
 $$r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7} = \\frac{0.52}{7} \\approx 0.07429 = 7.43\\%$$
 
-The claim is about $7.43\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $7.43\\%$). The two sides agree.
 
 So the statement is True.`,
       `**D.** → True
+
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is
 
@@ -4036,12 +3824,8 @@ $$\\frac{0.10+0.04}{2} = 0.07 = 7\\%$$
 
 The claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Reversing the phases adds the same exponents:
 
@@ -4086,8 +3870,6 @@ $$S(t_1+t_2) = S_0 e^{r_1 t_1 + r_2 t_2}, \\qquad r_* = \\frac{r_1 t_1 + r_2 t_2
 
 The overview isolated $\\delta=\\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)$. The claim writes $\\ln\\bigl(\\frac{v(t)}{v_0}\\bigr)$ in the numerator. That ratio is less than $1$ and would make $\\delta$ negative. We have $\\frac{v_0}{v(t)} \\ne \\frac{v(t)}{v_0}$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**B.** → True
 
@@ -4118,12 +3900,10 @@ $$v_2(6) \\approx 34{,}558.42$$
 
 The claim is approximately \\$36,000.00. We have $34{,}558.42 \\ne 36{,}000.00$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 After six years the two remaining values are
 
@@ -4133,8 +3913,6 @@ $$v_2(6) = 85{,}000 \\times e^{-0.90} \\approx 34{,}558.42$$
 
 The claim needs $v_1(6)>v_2(6)$. We have $32{,}000 < 34{,}558.42$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -4143,8 +3921,6 @@ A \\$40,000 target after the same six years would imply
 $$\\delta' = \\frac{1}{6}\\ln\\bigl(\\frac{85{,}000}{40{,}000}\\bigr) \\approx 0.1256 = 12.56\\%$$
 
 The original implied rate was $16.28\\%$. The claim needs $\\delta'>16.28\\%$. We have $12.56\\% < 16.28\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -4181,8 +3957,6 @@ The second crane uses a known $\\delta=0.15$ over the same six years.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 Doubling is the multiple $M=2$:
 
 $$t_2 = \\frac{\\ln 2}{0.065}$$
@@ -4191,12 +3965,10 @@ $$\\ln 2 \\approx 0.693147$$
 
 $$t_2 \\approx 10.66$$
 
-The claim is about $10.66$ years.
+Compare the computed value with the claim (about $10.66$ years). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Tripling is the multiple $M=3$:
 
@@ -4206,14 +3978,10 @@ $$\\ln 3 \\approx 1.098612$$
 
 $$t_3 \\approx 16.90$$
 
-The claim is about $16.90$ years.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $16.90$ years). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Quadrupling is the multiple $M=4=2^{2}$:
 
@@ -4228,15 +3996,13 @@ The quadrupling time is about $21.33$ years and equals twice the doubling time.
 So the statement is True.`,
       `**D.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Quadrupling the \\$12,000 deposit gives
 
 $$4 \\times 12{,}000 = 48{,}000$$
 
 At the quadrupling time the fund is worth exactly \\$48,000.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -4250,8 +4016,6 @@ $$t_2 = \\frac{\\ln 2}{0.065} \\approx 10.66$$
 $$1.5 \\times t_2 \\approx 15.99$$
 
 The claim needs $t_3=1.5\\,t_2$. We have $16.90 \\ne 15.99$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -4284,8 +4048,6 @@ $$t_M = \\frac{\\ln M}{r}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Asset A grows continuously at $6\\%$ for five years:
 
 $$A(5) = 150{,}000 \\times e^{0.06 \\times 5} = 150{,}000 \\times e^{0.30}$$
@@ -4294,12 +4056,10 @@ $$e^{0.30} \\approx 1.349859$$
 
 $$A(5) \\approx 202{,}478.82$$
 
-The claim is approximately \\$202,478.82.
+Compare the computed value with the claim (approximately \\$202,478.82). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Asset B depreciates continuously at $9\\%$ for five years:
 
@@ -4351,8 +4111,6 @@ $$e^{0.45} \\approx 1.568312$$
 $$B^{+}(5) \\approx 345{,}028.68$$
 
 The claim needs $B^{+}(5)>340{,}000$. We have $345{,}028.68 > 340{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -4439,8 +4197,6 @@ $$\\mathrm{PDV}=\\frac{8{,}000}{1.10}\\approx 7{,}272.73$$
 
 The overview recovered $\\mathrm{PDV}\\approx 7{,}619.05$ at $5\\%$. We have $7{,}272.73<7{,}619.05$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -4450,22 +4206,16 @@ The overview recovered $\\mathrm{PDV}\\approx 7{,}619.05$. Face value minus pres
 
 $$8{,}000-7{,}619.05=380.95$$
 
-The claim is \\$423.81
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim is \\$423.81.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $r=0$ the discount factor is $1$:
 
 $$\\mathrm{PDV}=8{,}000\\times 1=8{,}000$$
 
-The claim is \\$7,500.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$7,500). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -4544,15 +4294,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 \\mathrm{PDV}\\approx 10{,}023.24
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
@@ -4561,14 +4309,10 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 10{,}075.43$ and $
 
 $$10{,}075.43-10{,}023.24=52.19$$
 
-The claim is \\$60.00
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$60.00). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 If the payment is due in $6$ years instead,
 
@@ -4663,15 +4407,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 \\mathrm{PDV}_{\\mathrm{cont}}\\approx 25{,}704.41
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
@@ -4680,22 +4422,16 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26{,}190.41$ and $
 
 $$26{,}190.41-25{,}704.41=486.00$$
 
-The claim is \\$650.00
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$650.00). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $r=0$ both discount factors equal $1$:
 
 $$\\mathrm{PDV}=45{,}000\\times 1=45{,}000$$
 
-The claim is \\$40,000.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$40,000). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -4742,15 +4478,13 @@ $$\\mathrm{PDV}_{\\mathrm{cont}} = 45{,}000e^{-0.56} \\approx 25{,}704.41$$`,
     tactical_explanations: [
       `**A.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Write the general identity, insert the claim's symbols, and simplify before comparing.
 
 $$
 e^{-0.225}\\approx 0.7985
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**B.** → True
@@ -4774,18 +4508,16 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+
 A deposit of \\$110,000 grows by the reciprocal factor $e^{0.225}$:
 
 $$110{,}000\\times e^{0.225}\\approx 110{,}000\\times 1.2523\\approx 137{,}755.50$$
 
 That balance is below \\$150,000.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Under annual compounding at the same $4.5\\%$ quote,
 
@@ -4795,8 +4527,6 @@ The overview recovered the continuous deposit $A\\approx 119{,}777.40$. We have 
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a $10$-year horizon,
 
@@ -4881,7 +4611,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 At a purchase price of \\$20,000,
 
@@ -4889,33 +4619,27 @@ $$\\frac{25{,}000}{20{,}000}=1.25, \\qquad t=\\frac{\\ln(1.25)}{\\ln(1.06)}\\app
 
 The overview recovered $t\\approx 5.17$ at \\$18,500. We have $3.83<5.17$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
     ],
@@ -5004,14 +4728,10 @@ The overview recovered $r\\approx 0.0665$. At a $6$-year horizon,
 
 $$\\mathrm{PDV}=60{,}000\\,e^{-0.0665\\times 6}=60{,}000\\,e^{-0.399}\\approx 40{,}249.20$$
 
-The claim is \\$40,249.20
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$40,249.20). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a purchase price of \\$30,000,
 
@@ -5022,15 +4742,11 @@ The overview recovered $6.65\\%$ at \\$27,000. We have $5.78\\%<6.65\\%$.
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At a $24$-year horizon with the same discount factor $0.45$,
 
 $$r=-\\frac{\\ln(0.45)}{24}=\\frac{0.798508}{24}\\approx 0.0333=3.33\\%$$
 
-The claim is $3.33\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($3.33\\%$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -5088,7 +4804,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Each payment discounts through:
+Every payment discounts through:
 
 $$
 \mathrm{PDV} = K(1+r)^{-t}
@@ -5107,7 +4823,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Each payment discounts through:
+For each dated amount, payment discounts through:
 
 $$
 \\mathrm{PDV} = K(1+r)^{-t}
@@ -5126,15 +4842,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_2\\approx 50{,}930.87
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
@@ -5148,8 +4862,6 @@ $$\\mathrm{PDV}_2=65{,}000\\,e^{-0.25}\\approx 50{,}622.05$$
 $$\\mathrm{PDV}\\approx 86{,}815.55$$
 
 The claim needs a combined value below \\$86,000. We have $86{,}815.55>86{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -5211,7 +4923,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 Option A is worth \$22,000 today. The overview recovered $\mathrm{PDV}_B \approx 21{,}410.30$. Comparing the two present values:
 
@@ -5222,33 +4934,27 @@ Option A is larger at the $6\%$ rate.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $r=0.03$,
 
 $$(1.03)^{3}\\approx 1.092727$$
 
 $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.092727}\\approx 23{,}336.02$$
 
-The claim is \\$22,780.00.
+Compare the computed value with the claim (\\$22,780.00). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_B\\approx 21{,}410.30
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $r=0.05$,
 
@@ -5256,7 +4962,7 @@ $$(1.05)^{3}=1.157625$$
 
 $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.157625}\\approx 22{,}027.86$$
 
-The claim is \\$23,500.00.
+Compare the computed value with the claim (\\$23,500.00). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -5327,41 +5033,35 @@ The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equa
 So the statement is False.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 f(23)\\approx 496{,}304.46
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 t^{*}=\\frac{2}{r}-2
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At $t=25$,
 
 $$f(25)=5{,}000(27)^{2}e^{-0.08\\times 25}=3{,}645{,}000\\,e^{-2}\\approx 493{,}297.11$$
 
 The overview recovered $f(23)\\approx 496{,}304.46$. We have $493{,}297.11<496{,}304.46$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -5423,7 +5123,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Each obligation discounts through:
+Every obligation discounts through:
 
 $$
 \mathrm{PDV} = K e^{-rt}
@@ -5442,7 +5142,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Each obligation discounts through:
+For each dated amount, obligation discounts through:
 
 $$
 \\mathrm{PDV} = Ke^{-rt}
@@ -5461,28 +5161,22 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_2\\approx 18{,}287.13
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $r=0$ each discount factor is $1$:
 
 $$\\mathrm{PDV}=18{,}000+30{,}000=48{,}000$$
 
-The claim is \\$48,000.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$48,000). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -5529,41 +5223,35 @@ $$\\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47$$`,
     tactical_explanations: [
       `**A.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Write the general identity, insert the claim's symbols, and simplify before comparing.
 
 $$
 \\mathrm{PDV}\\approx 35{,}234.40
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 r_a\\approx 5.13\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 r_a\\approx 5.13\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → True
@@ -5572,9 +5260,7 @@ The overview recovered $1+r_a=e^{0.05}$. At a $3$-year horizon the two clocks ag
 
 $$\\mathrm{PDV}=50{,}000\\,e^{-0.05\\times 3}=50{,}000\\,e^{-0.15}\\approx 43{,}035.40$$
 
-The claim is \\$43,035.40
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$43,035.40). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -5586,8 +5272,6 @@ The overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote 
 $$5.13\\%-5.00\\%=0.13$$
 
 The claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -5649,7 +5333,7 @@ The claim names \$42,000. The computed figure and the claim agree.
 So the statement is True.`,
       `**B.** → True
 
-Annual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is:
+Annual PDV uses $\mathrm{PDV}=K(1+r)^{-t}$ with the recovered inputs.
 
 $$
 \mathrm{PDV} = K(1+r)^{-t}
@@ -5668,7 +5352,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Annual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is:
+Write $\mathrm{PDV}=K(1+r)^{-t}$ before substituting.
 
 $$
 K_2 = \\bigl(\\mathrm{PDV}_{\\mathrm{target}}-\\mathrm{PV}_1\\bigr)(1+r)^{t_2}
@@ -5698,9 +5382,7 @@ The overview recovered that the second receivable must contribute $\\mathrm{PV}_
 
 $$K_2=64{,}735.99\\times(1.08)^{6}\\approx 102{,}727.88$$
 
-The claim is \\$102,727.88.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$102,727.88). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -5745,44 +5427,40 @@ $$K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24$$`,
     tactical_explanations: [
       `**A.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Write the general identity, insert the claim's symbols, and simplify before comparing.
 
 $$
 e^{-0.26}\\approx 0.7711
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 K\\approx 45{,}392.55
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
+
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 The overview recovered $K\\approx 45{,}392.55$. The excess over the immediate option is
 
 $$45{,}392.55-35{,}000=10{,}392.55$$
 
-The claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At $r=0.09$ the four-year factor changes:
 
@@ -5790,12 +5468,8 @@ $$K=35{,}000\\,e^{0.09\\times 4}=35{,}000\\,e^{0.36}\\approx 50{,}166.53$$
 
 The overview recovered $K\\approx 45{,}392.55$ at $6.5\\%$. We have $50{,}166.53\\neq 45{,}392.55$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a $2$-year horizon with the original $6.5\\%$ rate,
 
@@ -5860,37 +5534,27 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $t=10$,
 
 $$f(10)=40{,}000e^{-0.03\\times 10}=40{,}000e^{-0.3}\\approx 29{,}632.73$$
 
-The claim is \\$29,632.73.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$29,632.73). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 f(t)=40{,}000e^{-0.03t}
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
-At $r=0.04$,
+The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:At $r=0.04$,
 
 $$f(t)=40{,}000e^{(0.05-0.04)t}=40{,}000e^{0.01t}$$
 
@@ -5963,7 +5627,7 @@ The claim names \$1,092. The computed figure and the claim agree.
 So the statement is True.`,
       `**C.** → True
 
-An interior harvest optimum sets marginal stumpage growth equal to the discounted stumpage value:
+At an interior harvest optimum, marginal stumpage growth equals the discount rate.
 
 $$
 \\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
@@ -5980,20 +5644,16 @@ The claim names -476.19. The computed figure and the claim agree.
 So the statement is True.`,
       `**D.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
-$$
+The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:$$
 \\frac{dt^{*}}{dr}\\approx -476.19<0
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → True
 
-An interior harvest optimum sets marginal stumpage growth equal to the discounted stumpage value:
+The Faustmann-style first-order condition equates marginal growth with $r$.
 
 $$
 \\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
@@ -6075,36 +5735,32 @@ The overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$. Discounting to the p
 
 $$f(t^{*})=1{,}481{,}481.48\\,e^{-0.09\\times 18.22}\\approx 287{,}377.84$$
 
-The claim is \\$250,000.00
+The claim is \\$250,000.00.
 
 So the statement is False.`,
       `**C.** → False
 
-At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
-$$
+At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.$$
 P''(t^{*})-rP'(t^{*})=-6{,}000
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+Write overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
 The overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$ and denominator $-6{,}000$:
 
 $$\\frac{dt^{*}}{dr}=\\frac{1{,}481{,}481.48}{-6{,}000}\\approx -246.91$$
 
-The claim is $+246.91$. 
+The claim is $+246.91$.
 
 So the statement is False.`,
       `**E.** → False
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
+Using the same setup, the overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -6197,15 +5853,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 \\mathrm{PDV}\\approx 227{,}406.98
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
@@ -6221,15 +5875,11 @@ The claim needs a haircut above $10\\%$. We have $6.2\\%<10\\%$.
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $r=0$ each discount factor is $1$:
 
 $$\\mathrm{PDV}=250{,}000+40{,}000=290{,}000$$
 
-The claim is \\$290,000.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$290,000). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -6312,7 +5962,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 At a \\$3,600,000 payout,
 
@@ -6320,12 +5970,10 @@ $$r=-\\frac{\\ln\\!\\left(\\frac{2{,}000{,}000}{3{,}600{,}000}\\right)}{4.5}\\ap
 
 The overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At a $3$-year horizon with the original discount factor $0.625$,
 
@@ -6336,15 +5984,11 @@ The overview recovered $10.44\\%$ at $4.5$ years. We have $15.67\\%>10.44\\%$.
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At a $9$-year horizon with the same discount factor $0.625$,
 
 $$r=-\\frac{\\ln(0.625)}{9}=\\frac{0.470004}{9}\\approx 0.0522=5.22\\%$$
 
-The claim is $5.22\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($5.22\\%$). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -6421,15 +6065,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At the overview's $t^{*}\\approx 21.67$,
 
 $$P(t^{*})=1{,}200\\left(\\frac{2}{0.075}\\right)^{2}\\approx 853{,}333.33$$
 
 $$f(t^{*})=853{,}333.33\\,e^{-0.075\\times 21.67}\\approx 168{,}031.30$$
 
-The claim is \\$195,500.00.
+Compare the computed value with the claim (\\$195,500.00). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -6534,41 +6176,35 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 \\mathrm{PV}_1\\approx 20{,}109.60
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PV}_2\\approx 24{,}713.09
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 $$
 \\mathrm{PDV}\\approx 44{,}822.69
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
     ],
@@ -6617,20 +6253,14 @@ $$\\mathrm{PDV} = 20{,}109.60+24{,}713.09 \\approx 44{,}822.69$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year 2 is one growth step past the opening term:
 
 $$a_2 = 50 \\times 1.10 = 55.00$$
 
-The claim is \\$55.00 million.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$55.00 million). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Year 5 carries four growth steps past the opening term:
 
@@ -6640,7 +6270,7 @@ $$(1.10)^4 = 1.4641$$
 
 $$a_5 = 50 \\times 1.4641 = 73.205 \\approx 73.21$$
 
-The claim is about \\$73.21 million.
+Compare the computed value with the claim (about \\$73.21 million). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -6663,9 +6293,7 @@ $$
 s_5 \\approx 305.26
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -6680,20 +6308,16 @@ $$305.26 - 250 = 55.26$$
 
 The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 $$
 s_5 \\approx 305.26
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
     ],
@@ -6928,12 +6552,12 @@ Their share is
 
 $$\\frac{5{,}210.57}{8{,}000} \\approx 0.6513 \\approx 65\\%$$
 
-The claim is about $65\\%$. 
+The claim is about $65\\%$.
 
 So the statement is True.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At the hypothetical quotient $k=1.10$,
 
@@ -6990,48 +6614,38 @@ $$= 800 \\times 6.513215599 = 5{,}210.57$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At a constant $300{,}000$ tons per year, the exhaustion time is
 
 $$t = \\frac{18{,}000{,}000}{300{,}000} = 60$$
 
-The claim is $60$ years.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($60$ years). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a constant $500{,}000$ tons per year, the exhaustion time is
 
 $$t = \\frac{18{,}000{,}000}{500{,}000} = 36$$
 
-The claim is $36$ years.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($36$ years). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Compare the claim with the isolation or sign pattern settled in the overview.
 
 The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
 
 So the statement is True.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 s_{10}\\approx 3{,}773{,}368
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
@@ -7087,15 +6701,11 @@ $$300{,}000 \\times 10 = 3{,}000{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year 2 is one decline step past this year's output:
 
 $$a_2 = 180 \\times 0.97 = 174.6$$
 
-The claim is $174.6$ million tons.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($174.6$ million tons). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -7244,25 +6854,19 @@ $$s_4 = 4{,}000-2{,}000+1{,}000-500 = 2{,}500$$
 
 The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 |k|=0.5<1
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $k=-1$ the terms alternate between $4{,}000$ and $-4{,}000$. The partial sums are then
 
@@ -7311,8 +6915,6 @@ $$s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} \\approx 2{,}66
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The equal-payment plan is the $k=1$ case already written in the overview, so the $15$-year total is $a\\times n$. The claim is that identity.
 
 So the statement is True.`,
@@ -7337,18 +6939,18 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 15
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
+
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered \\$240.28 million under growth and \\$180.00 million with no growth. The extra is
 
@@ -7357,8 +6959,6 @@ $$240.28-180.00 = 60.28$$
 $$60.28 < 65.00$$
 
 The extra is not more than \\$65.00 million.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -7420,13 +7020,11 @@ $$s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236 \\approx 240.28$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The second payment is one decay step past the first:
 
 $$a_2 = 15{,}000 \\times 0.88 = 13{,}200$$
 
-The claim is \\$13,200.00.
+Compare the computed value with the claim (\\$13,200.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -7444,15 +7042,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 s_{\\infty}=125{,}000
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
@@ -7473,8 +7069,6 @@ The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At the slower decay $k=0.95$,
 
@@ -7529,20 +7123,16 @@ $$
 
 The finite-sum formula needs $k\\ne 1$. Here $k=1.08\\ne 1$, so $s_{12}$ is well-defined. The claim is that this $12$-year total exists.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**B.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 s_{12}\\approx 170{,}794.15
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
@@ -7562,15 +7152,13 @@ so that formula does not apply, and a growing royalty stream has no finite infin
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year $12$ uses eleven growth steps:
 
 $$1.08^{11} \\approx 2.331639$$
 
 $$a_{12} = 9{,}000 \\times 2.331639 \\approx 20{,}984.75$$
 
-The claim is about \\$20,715.85. The year-$12$ royalty is about \\$20,984.75.
+Compare the computed value with the claim (about \\$20,715.85. The year-$12$ royalty is about \\$20,984.75). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
@@ -7579,9 +7167,7 @@ The overview recovered \\$170,794.15 under $8\\%$ growth and \\$108,000 with no 
 
 $$170{,}794.15-108{,}000 = 62{,}794.15$$
 
-The claim is that the flat total sits \\$62,794.15 below the growing total.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (that the flat total sits \\$62,794.15 below the growing total). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -7669,9 +7255,7 @@ The overview recovered $a_6\\approx 9.95328$. Treating that as the first termina
 
 $$T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15} \\approx 66.36$$
 
-The claim is about \\$66.36 million.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about \\$66.36 million). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -7729,15 +7313,11 @@ $$1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328 \\approx 9.95$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 If month $1$ were \\$1,000, month $2$ would be one growth step later:
 
 $$1{,}000 \\times 1.15 = 1{,}150$$
 
-The claim is \\$1,150.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$1,150.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -7761,20 +7341,16 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Month $6$ uses five growth steps past the recovered $a\\approx 6{,}625.74$:
 
 $$1.15^5 = 2.011357188$$
 
 $$a_6 = 6{,}625.74 \\times 2.011357188 \\approx 13{,}326.73$$
 
-The claim is about \\$13,326.73.
+Compare the computed value with the claim (about \\$13,326.73). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Months $4$ through $6$ are $a k^3$, $a k^4$, and $a k^5$:
 
@@ -7786,8 +7362,6 @@ The claim is about \\$37,930.00. The three-month total is about \\$34,992.12.
 
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Spreading \\$58,000 evenly over six months gives
 
@@ -7834,15 +7408,11 @@ $$a = 58{,}000\\frac{0.15}{2.313060766-1} = \\frac{8{,}700}{1.313060766} \\appro
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year 2 is one decline step past this year's payout:
 
 $$a_2 = 500{,}000 \\times 0.98 = 490{,}000$$
 
-The claim is \\$490,000.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$490,000.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -7864,15 +7434,13 @@ The claim names \$25,000,000.00. The computed figure and the claim agree.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 s_{10}\\approx 4{,}573{,}179.83
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → True
@@ -7885,7 +7453,7 @@ The share is
 
 $$\\frac{4{,}573{,}179.83}{25{,}000{,}000} \\approx 0.1829 \\approx 18\\%$$
 
-The claim is about $18\\%$. 
+The claim is about $18\\%$.
 
 So the statement is True.`,
       `**E.** → False
@@ -7943,15 +7511,11 @@ $$s_{10} = 500{,}000\\frac{1-0.817072807}{0.02} = 500{,}000 \\times 9.146360 \\a
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year 2 is one growth step past the opening budget:
 
 $$a_2 = 200{,}000 \\times 1.12 = 224{,}000$$
 
-The claim is \\$224,000.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$224,000.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -7964,38 +7528,30 @@ $$2{,}955{,}131.26 < 3{,}000{,}000$$
 
 nine years remain below the target.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 s_{10}\\approx 3{,}509{,}747.01
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 s_9\\approx 2{,}955{,}131.26
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $8\\%$ growth,
 
@@ -8048,13 +7604,11 @@ $$s_{10} = 200{,}000\\frac{3.105848289-1}{0.12} = 200{,}000 \\times 17.548736 \\
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The second grant is one decline step past the first:
 
 $$a_2 = 50{,}000 \\times 0.96 = 48{,}000$$
 
-The claim is \\$48,000.00.
+Compare the computed value with the claim (\\$48,000.00). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -8114,8 +7668,6 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $k=0.90$,
 
 $$s_{\\infty} = \\frac{50{,}000}{1-0.90} = \\frac{50{,}000}{0.10} = 500{,}000$$
@@ -8169,15 +7721,11 @@ $$s_{15} = 50{,}000\\frac{1-0.542086380}{0.04} = 50{,}000 \\times 11.447840 \\ap
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Quarter $2$ is one decline step past the first quarter:
 
 $$a_2 = 10{,}000 \\times 0.98 = 9{,}800$$
 
-The claim is $9{,}800.00$ lbs.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim ($9{,}800.00$ lbs). The two sides agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -8200,9 +7748,7 @@ $$
 s_{20}=166{,}196.01
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -8218,20 +7764,16 @@ That figure is the first five quarters, not five years. Five years are $20$ quar
 So the statement is False.`,
       `**D.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Quarter $20$ uses $19$ decline steps:
 
 $$0.98^{19} \\approx 0.681230$$
 
 $$a_{20} = 10{,}000 \\times 0.681230 \\approx 6{,}812.33$$
 
-The claim is about $6{,}812.33$ lbs.
+Compare the computed value with the claim (about $6{,}812.33$ lbs). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 If the decline continued forever,
 
@@ -8397,8 +7939,6 @@ $$s_{B,8} = 95{,}000\\frac{1.171659381-1}{0.02} = 95{,}000 \\times 8.582969 \\ap
     tactical_explanations: [
       `**A.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At $p=1.5$ the fourth batch is
 
 $$a_4 = \\frac{5{,}000}{4^{1.5}}$$
@@ -8407,10 +7947,12 @@ $$4^{1.5} = 4 \\times \\sqrt{4} = 8$$
 
 $$a_4 = \\frac{5{,}000}{8} = 625$$
 
-The claim is about \\$650.00. The fourth benefit is \\$625.00.
+Compare the computed value with the claim (about \\$650.00. The fourth benefit is \\$625.00). The two sides do not agree.
 
 So the statement is False.`,
       `**B.** → True
+
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 The overview's test requires $p>1$. Here $p=1.5$, and
 
@@ -8418,12 +7960,8 @@ $$1.5 > 1$$
 
 so $\\sum \\frac{5{,}000}{n^{1.5}}$ converges to a finite total. The claim is that convergence.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $p=1$ the model is a constant multiple of the harmonic series:
 
@@ -8443,15 +7981,13 @@ so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for conv
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At $p=0.5$,
 
 $$0.5 \\le 1$$
 
 so $\\sum \\frac{5{,}000}{n^{0.5}}$ diverges by the $p$-series test, even though $a_n\\to 0$. The claim is that divergence.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -8616,15 +8152,13 @@ The claim names \$40,000,000.00. The computed figure and the claim agree.
 So the statement is True.`,
       `**B.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 s_{15}\\approx 24{,}188{,}328.05
 $$
 
-That recovered value is not the figure named in the claim.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
@@ -8655,15 +8189,13 @@ The overview recovered a recession infinite total of \\$40,000,000. Since $20{,}
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Year $7$ of the recovery uses six growth steps:
 
 $$1.06^6 \\approx 1.418519$$
 
 $$a_7 = 2{,}400{,}000 \\times 1.418519 \\approx 3{,}404{,}445.87$$
 
-The claim is about \\$2,900,000.00. Year-$7$ cash flow is about \\$3,404,445.87.
+Compare the computed value with the claim (about \\$2,900,000.00. Year-$7$ cash flow is about \\$3,404,445.87). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -8821,9 +8353,7 @@ $$
 x\\approx 4{,}081.49
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -8836,20 +8366,14 @@ $$x_{5\\%} = \\frac{5{,}000}{1.157625} \\approx 4{,}319.19$$
 
 The claim needs $4{,}319.19 < 4{,}081.49$. We have $4{,}319.19 > 4{,}081.49$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 Interest is the \\$5,000 target minus the recovered deposit:
 
 $$5{,}000 - 4{,}081.49 = 918.51$$
 
-The claim is \\$928.51. We have $918.51 \\ne 928.51$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$928.51. We have $918.51 \\ne 928.51$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -8858,9 +8382,7 @@ Present value is linear in the target. The overview recovered $x\\approx 4{,}081
 
 $$2 \\times 4{,}081.49 = 8{,}162.98$$
 
-The claim is \\$8,162.98.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$8,162.98). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -8874,8 +8396,6 @@ Half of the three-year deposit is
 $$\\frac{4{,}081.49}{2} = 2{,}040.75$$
 
 The claim needs $x_6 = 2{,}040.75$. We have $3{,}331.71 \\ne 2{,}040.75$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -8932,9 +8452,7 @@ $$
 F(5)\\approx 8{,}698.47
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -8943,9 +8461,7 @@ Interest over the first five years is the recovered five-year balance minus the 
 
 $$8{,}698.47 - 6{,}500 = 2{,}198.47$$
 
-The claim is \\$2,198.47.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$2,198.47). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -8975,8 +8491,6 @@ The claim needs $2{,}942.04 < 2{,}198.47$. We have $2{,}942.04 > 2{,}198.47$.
 
 So the statement is False.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At 3% the same \\$6,500 deposit grows for five years by
 
@@ -9049,14 +8563,10 @@ $$
 F_6\\approx 13{,}603.84
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 Interest is the recovered future value minus the six deposits of \\$2,000:
 
@@ -9064,18 +8574,16 @@ $$2{,}000 \\times 6 = 12{,}000$$
 
 $$13{,}603.84 - 12{,}000 = 1{,}603.84$$
 
-The claim is \\$1,703.84. We have $1{,}603.84 \\ne 1{,}703.84$.
+Compare the computed value with the claim (\\$1,703.84. We have $1{,}603.84 \\ne 1{,}703.84$). The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 The present-value equivalent discounts the recovered $F_6\\approx 13{,}603.84$:
 
 $$P_6 = \\frac{13{,}603.84}{(1.05)^6} \\approx 10{,}151.40$$
 
-The claim is \\$18,230.45. We have $10{,}151.40 \\ne 18{,}230.45$.
+Compare the computed value with the claim (\\$18,230.45. We have $10{,}151.40 \\ne 18{,}230.45$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9085,8 +8593,6 @@ Future value is linear in the annual deposit. The overview recovered $F_6\\appro
 $$13{,}603.84 \\times 1.5 = 20{,}405.76$$
 
 The claim is \\$21,405.76. We have $20{,}405.76 \\ne 21{,}405.76$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -9100,8 +8606,6 @@ Double the six-year future value is
 $$2 \\times 13{,}603.84 = 27{,}207.68$$
 
 The claim needs $F_{12} < 27{,}207.68$. We have $31{,}834.24 > 27{,}207.68$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -9158,9 +8662,7 @@ $$
 F_{10}\\approx 50{,}702.97
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -9171,9 +8673,7 @@ $$3{,}500 \\times 10 = 35{,}000$$
 
 $$50{,}702.97 - 35{,}000 = 15{,}702.97$$
 
-The claim is \\$15,702.97.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$15,702.97). The two sides agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -9188,8 +8688,6 @@ $$2 \\times 50{,}702.97 = 101{,}405.94$$
 
 The claim needs $F_{20} < 101{,}405.94$. We have $160{,}166.87 > 101{,}405.94$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -9199,20 +8697,16 @@ $$50{,}702.97 - 35{,}000 = 15{,}702.97$$
 
 The claim needs $15{,}702.97 > 35{,}000$. We have $15{,}702.97 < 35{,}000$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At 10% the same ten deposits give
 
 $$F_{10}^{10\\%} = \\frac{3{,}500}{0.10}\\left[(1.10)^{10}-1\\right] \\approx 55{,}780.97$$
 
 The claim needs $F_{10}^{10\\%} > 55{,}000$. We have $55{,}780.97 > 55{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -9269,22 +8763,18 @@ $$
 P_{15}=25{,}775.15
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 Fifteen withdrawals of \\$2,400 total
 
 $$2{,}400 \\times 15 = 36{,}000$$
 
 The overview recovered $P_{15}=25{,}775.15$. Then $36{,}000 > 25{,}775.15$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -9298,8 +8788,6 @@ Double the fifteen-year present value is
 $$2 \\times 25{,}775.15 = 51{,}550.30$$
 
 The claim needs $P_{30}=51{,}550.30$. We have $39{,}091.65 \\ne 51{,}550.30$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**D.** → False
@@ -9322,8 +8810,6 @@ A higher rate discounts the same withdrawals more, so less is needed today. At 6
 $$P_{15}^{6\\%} = \\frac{2{,}400}{0.06}\\left[1-\\frac{1}{(1.06)^{15}}\\right] = 23{,}309.40$$
 
 The claim needs $23{,}309.40 > 25{,}775.15$. We have $23{,}309.40 < 25{,}775.15$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -9380,9 +8866,7 @@ $$
 P_{20}=57{,}349.67
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -9406,20 +8890,14 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The 20-year share of the perpetuity is
 
 $$\\frac{57{,}349.67}{83{,}333.33} \\approx 0.6882 = 68.82\\%$$
 
-The claim is about $72.82\\%$. We have $68.82\\% \\ne 72.82\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (about $72.82\\%$. We have $68.82\\% \\ne 72.82\\%$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Forty years of the same scholarships give
 
@@ -9432,15 +8910,13 @@ The claim needs a share above $95\\%$. We have $90.28\\% < 95\\%$.
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 In the annuity formula, let $n\\to\\infty$. Then $(1.06)^n\\to\\infty$, so
 
 $$\\frac{1}{(1.06)^n}\\to 0$$
 
 $$P_n \\to \\frac{5{,}000}{0.06} = 83{,}333.33$$
 
-The claim is that same limit.
+Compare the computed value with the claim (that same limit). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -9504,14 +8980,12 @@ The overview recovered $P_9=16{,}288.18$. That is less than Option 1's \\$18,000
 
 $$18{,}000 - 16{,}288.18 = 1{,}711.82$$
 
-The claim is a saving of \\$1,811.82. We have $1{,}711.82 \\ne 1{,}811.82$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (a saving of \\$1,811.82. We have $1{,}711.82 \\ne 1{,}811.82$). The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 At 4% the same nine payments are worth
 
@@ -9519,12 +8993,8 @@ $$P_9^{4\\%} = \\frac{2{,}500}{0.04}\\left[1-\\frac{1}{(1.04)^9}\\right] = 18{,}
 
 The claim needs $18{,}588.31 < 16{,}288.18$. We have $18{,}588.31 > 16{,}288.18$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Nine payments of \\$2,500 total
 
@@ -9534,14 +9004,12 @@ The excess over Option 1 is
 
 $$22{,}500 - 18{,}000 = 4{,}500$$
 
-The claim is \\$4,600. We have $4{,}500 \\ne 4{,}600$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$4,600. We have $4{,}500 \\ne 4{,}600$). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 Growing Option 1's \\$18,000 for nine years at 7% gives
 
@@ -9552,8 +9020,6 @@ $$(1.07)^9 \\approx 1.838459$$
 $$F \\approx 33{,}092.26$$
 
 The claim needs $F>34{,}000$. We have $33{,}092.26 < 34{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -9610,9 +9076,7 @@ $$
 F_A=19{,}126.18
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -9653,7 +9117,7 @@ The claim is a gap of \\$5,769.72. We have $5{,}269.72 \\ne 5{,}769.72$.
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Strategy B commits eight deposits of \\$1,400:
 
@@ -9661,12 +9125,8 @@ $$1{,}400 \\times 8 = 11{,}200$$
 
 The claim needs $11{,}200 > 12{,}000$. We have $11{,}200 < 12{,}000$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Raising Strategy B to \\$1,500 a year uses the same eight-year factor at the new deposit:
 
@@ -9733,7 +9193,7 @@ $$
 F_{\\mathrm{due}}=21{,}426.05
 $$
 
-The recovered value and the claim agree.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -9751,15 +9211,11 @@ The claim names \$3,000. The computed figure and the claim agree.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The dollar gap is the due pile minus the ordinary pile:
 
 $$21{,}426.05 - 20{,}405.76 = 1{,}020.29$$
 
-The claim is \\$1,120.29. We have $1{,}020.29 \\ne 1{,}120.29$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$1,120.29. We have $1{,}020.29 \\ne 1{,}120.29$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9850,7 +9306,7 @@ $$
 P_{\\mathrm{due}}=107{,}162.61
 $$
 
-The recovered value and the claim agree.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -9872,13 +9328,11 @@ The claim names \$24,000. The computed figure and the claim agree.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The dollar gap is the due present value minus the ordinary present value:
 
 $$107{,}162.61 - 101{,}096.80 = 6{,}065.81$$
 
-The claim is \\$7,065.81. We have $6{,}065.81 \\ne 7{,}065.81$.
+Compare the computed value with the claim (\\$7,065.81. We have $6{,}065.81 \\ne 7{,}065.81$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
@@ -9905,8 +9359,6 @@ $$P_4 = \\frac{24{,}000}{0.06}\\left[1-\\frac{1}{(1.06)^4}\\right] = 83{,}162.40
 $$24{,}000 + 83{,}162.40 = 107{,}162.40$$
 
 That matches the recovered $P_{\\mathrm{due}}=107{,}162.61$ within rounding.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -9980,14 +9432,10 @@ $$
 PV_0=132{,}015.61
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 If the first payment begins at the end of year 1, the perpetuity is worth $\\frac{a}{r}$ today:
 
@@ -10011,13 +9459,11 @@ The claim needs $PV_0' < 66{,}007.81$. We have $104{,}568.80 > 66{,}007.81$.
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The ratio of today's deferred value to the year-4 perpetuity value is the four-year discount factor:
 
 $$\\frac{PV_0}{V} = \\frac{1}{(1.06)^4} \\approx 0.7921$$
 
-The claim is $0.8321$. We have $0.7921 \\ne 0.8321$.
+Compare the computed value with the claim ($0.8321$. We have $0.7921 \\ne 0.8321$). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -10074,14 +9520,12 @@ $$
 P\\approx 60.71
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 The market price is \\$65.00. The overview recovered a fair value of \\$60.71:
 
@@ -10089,25 +9533,19 @@ $$65.00 > 60.71$$
 
 The claim needs the stock to be undervalued. We have $65.00 > 60.71$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a 4% required return,
 
 $$P' = \\frac{4.25}{0.04} = 106.25$$
 
-The claim is \\$116.25. We have $106.25 \\ne 116.25$.
+Compare the computed value with the claim (\\$116.25. We have $106.25 \\ne 116.25$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:
 
@@ -10118,15 +9556,11 @@ The claim needs an increase of more than $75\\%$. We have exactly $75\\%$.
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 A 20% dividend cut leaves $a'=4.25\\times 0.80=3.40$. At the same 7%,
 
 $$P'' = \\frac{3.40}{0.07} \\approx 48.57$$
 
-The claim is \\$50.57. We have $48.57 \\ne 50.57$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$50.57. We have $48.57 \\ne 50.57$). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -10181,9 +9615,7 @@ $$
 P=333{,}333.33
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -10203,15 +9635,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 At 6% the perpetuity falls and the renovation is unchanged:
 
 $$P' = \\frac{15{,}000}{0.06} = 250{,}000$$
 
 $$50{,}000 + 250{,}000 = 300{,}000$$
 
-The claim is \\$300,000.00.
+Compare the computed value with the claim (\\$300,000.00). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -10224,20 +9654,16 @@ $$\\frac{83{,}333.33}{383{,}333.33} \\approx 0.2174 = 21.74\\%$$
 
 The claim needs more than $25\\%$. We have $21.74\\% < 25\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 At 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is
 
 $$\\frac{383{,}333.33}{2} = 191{,}666.67$$
 
 The claim needs $250{,}000 < 191{,}666.67$. We have $250{,}000 > 191{,}666.67$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -10290,14 +9716,12 @@ $$
 P=436{,}363.64
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 With no growth the same first cash flow is a level perpetuity at 8%:
 
@@ -10305,12 +9729,10 @@ $$P_{g=0} = \\frac{24{,}000}{0.08} = 300{,}000$$
 
 The claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 At 4% growth,
 
@@ -10322,27 +9744,19 @@ $$2 \\times 436{,}363.64 = 872{,}727.28$$
 
 The claim needs $P'>872{,}727.28$. We have $600{,}000 < 872{,}727.28$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At a 6% required return,
 
 $$P'' = \\frac{24{,}000}{0.06-0.025} = \\frac{24{,}000}{0.035} = 685{,}714.29$$
 
-The claim is \\$715,714.29. We have $685{,}714.29 \\ne 715{,}714.29$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$715,714.29. We have $685{,}714.29 \\ne 715{,}714.29$). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
 
 The growing-perpetuity formula uses the denominator $r-g$. When $g\\ge 8\\%$ that denominator is zero or negative, so the constant-growth model does not apply. The claim is that restriction.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -10418,12 +9832,8 @@ $$
 
 those values do not agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Using the just-paid dividend by mistake gives
 
@@ -10433,14 +9843,10 @@ The understatement is
 
 $$51.50 - 50.00 = 1.50$$
 
-The claim is \\$2.50. We have $1.50 \\ne 2.50$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$2.50. We have $1.50 \\ne 2.50$). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At 5% growth, next year's dividend is $D_1'=3.00\\times 1.05=3.15$, so
 
@@ -10451,11 +9857,7 @@ Double the original \\$51.50 is $103.00$. The claim needs $P'>103.00$. We have $
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 If $g=r$, the denominator $r-g$ is zero and the growing-perpetuity formula is undefined. The present value does not become $0$. The claim is \\$0.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -10492,38 +9894,34 @@ $$P = \\frac{3.09}{0.09-0.03} = \\frac{3.09}{0.06} = 51.50$$`,
     tactical_explanations: [
       `**A.** → True
 
+Write the general identity, insert the claim's symbols, and simplify before comparing.
+
 The overview recovered $P_1=180{,}000$. A fair buy at a \\$170,000 asking price needs fair value at least that price:
 
 $$180{,}000 > 170{,}000$$
 
 Deal 1 is a good buy.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**B.** → True
+
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 The overview recovered $P_2=233{,}333.33$. The margin over the asking price is
 
 $$233{,}333.33 - 170{,}000 = 63{,}333.33$$
 
-The claim needs more than \\$60,000. We have $63{,}333.33 > 60{,}000$
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim needs more than \\$60,000. We have $63{,}333.33 > 60{,}000$.
 
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Deal 1's margin is $180{,}000-170{,}000=10{,}000$. Deal 2's margin is $63{,}333.33$. The claim needs Deal 1's cushion to be larger. We have $10{,}000 < 63{,}333.33$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
       `**D.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At 1% growth, Deal 2 is worth
 
@@ -10531,20 +9929,16 @@ $$P_2' = \\frac{14{,}000}{0.10-0.01} = \\frac{14{,}000}{0.09} \\approx 155{,}555
 
 The claim needs $P_2' < 170{,}000$. We have $155{,}555.56 < 170{,}000$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 $$
 P_1=180{,}000
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
     ],
@@ -10599,22 +9993,18 @@ $$
 S_0=129{,}213.75
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 S_0=129{,}213.75
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
@@ -10642,8 +10032,6 @@ $$\\frac{129{,}213.75}{2} = 64{,}606.88$$
 
 The claim needs $S_0' < 64{,}606.88$. We have $179{,}731.00 > 64{,}606.88$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -10653,9 +10041,7 @@ $$e^{-0.055} \\approx 0.9465$$
 
 $$1-0.9465 = 0.0535 = 5.35\\%$$
 
-The claim is that same factor and that same one-year loss.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (that same factor and that same one-year loss). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -10714,7 +10100,7 @@ $$
 S_{\\mathrm{cont}}=131{,}629.13
 $$
 
-The recovered value and the claim agree.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -10732,7 +10118,7 @@ The claim names \$75,000. The computed figure and the claim agree.
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 The lump-sum lead is
 
@@ -10740,19 +10126,13 @@ $$131{,}629.13 - 96{,}757.60 = 34{,}871.53$$
 
 The claim needs more than \\$30,000. We have $34{,}871.53 > 30{,}000$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**D.** → True
 
 The lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Discrete annual compounding of the full \\$75,000 for nine years gives
 
@@ -10815,7 +10195,7 @@ $$
 P_{\\mathrm{due}}=18{,}110.94
 $$
 
-The recovered value and the claim agree.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -10824,9 +10204,7 @@ The due future value scales the ordinary future value by one extra period:
 
 $$F_{\\mathrm{due}} = \\frac{4{,}200}{0.08}\\left[(1.08)^5-1\\right](1.08) = 26{,}610.90$$
 
-The claim is \\$27,610.90. We have $26{,}610.90 \\ne 27{,}610.90$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$27,610.90. We have $26{,}610.90 \\ne 27{,}610.90$). The two sides do not agree.
 
 So the statement is False.`,
       `**C.** → False
@@ -10851,8 +10229,6 @@ $$
 
 those values do not agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -10873,15 +10249,13 @@ The claim needs $37{,}500 < 36{,}221.88$. We have $37{,}500 > 36{,}221.88$.
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 $$
 S=30{,}439.24
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
     ],
@@ -10944,9 +10318,7 @@ $$
 S=247{,}308.20
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -10974,7 +10346,7 @@ those values do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Present value discounts the future cash amount by the recovered accumulation factor:
+Discount the future cash amount with the recovered factor.
 
 $$
 PV = \frac{FV}{(1+i)^{nt}}
@@ -10992,14 +10364,12 @@ $$
 P_{12}=79{,}429.40
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**D.** → True
 
-Present value discounts the future cash amount by the recovered accumulation factor:
+Write the present-value formula before substituting.
 
 $$
 PV = \frac{FV}{(1+i)^{nt}}
@@ -11017,9 +10387,7 @@ $$
 P=100{,}000
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -11079,6 +10447,8 @@ $$P = \\frac{5{,}000}{0.07-0.02} = 100{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
+A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+
 The periodic rate splits the nominal annual quote by the compounding frequency:
 
 $$
@@ -11097,9 +10467,7 @@ $$
 r=0.12
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -11122,9 +10490,7 @@ $$
 a \\approx 14{,}593.54
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -11134,8 +10500,6 @@ Interest in year 1 is the opening balance times the periodic rate, independent o
 $$I_1 = 60{,}000 \times 0.12 = 7{,}200$$
 
 The overview recovered that same first-year interest figure. The claim is \$7,200.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -11147,8 +10511,6 @@ The overview recovered first-year principal as $7{,}393.54$. Half the payment is
 $$\\frac{14{,}593.54}{2} = 7{,}296.77$$
 
 Then $7{,}393.54 > 7{,}296.77$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -11247,38 +10609,28 @@ $$
 a \\approx 597.24
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Total paid is the recovered monthly payment times $48$:
 
 $$597.24 \\times 48 \\approx 28{,}667.57$$
 
-The claim is \\$29,500.00. We have about \\$28,667.57.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$29,500.00. We have about \\$28,667.57). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Total interest is total paid minus principal. Using the $48$-payment outlay about \\$28,667.57,
 
 $$28{,}667.57 - 24{,}000 = 4{,}667.57$$
 
-The claim is \\$4,667.57.
+Compare the computed value with the claim (\\$4,667.57). The two sides agree.
 
 So the statement is True.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Four equal annual instalments at the same nominal $9\\%$ use $r=0.09$ and $n=4$:
 
@@ -11349,9 +10701,7 @@ $$
 a \\approx 11{,}870.89
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -11374,12 +10724,10 @@ $$
 
 The claim is \$5,000.00. We have \$4,500.00, so the figures do not agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 After payment 3 the overview already carried the outstanding balance forward. That recovered figure is
 
@@ -11392,6 +10740,8 @@ The claim names \$20{,}602.37. The recovered balance and the claim agree.
 So the statement is True.`,
       `**D.** → False
 
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+
 The overview recovered the year-3 closing balance as \\$20,602.37. Year-4 interest and principal are
 
 $$0.10 \\times 20{,}602.37 = 2{,}060.24$$
@@ -11403,11 +10753,9 @@ Then $2{,}060.24 < 9{,}810.65$.
 So the statement is False.`,
       `**E.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+State what the overview already settled, then test whether the claim matches that result.
 
 Principal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -11492,7 +10840,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 End-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$. Then
 
@@ -11518,15 +10866,11 @@ The computed figure and the claim agree.
 So the statement is True.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Total cash outlay is ten copies of the recovered due payment:
 
 $$22{,}946.14 \\times 10 \\approx 229{,}461.39$$
 
-The claim is \\$220,000.00. We have about \\$229,461.39.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$220,000.00. We have about \\$229,461.39). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -11594,13 +10938,11 @@ Each display above isolates one arithmetic step so the claim check is transparen
 So the statement is True.`,
       `**B.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The first four payments are the committed \\$10,000 each:
 
 $$4 \\times 10{,}000 = 40{,}000$$
 
-The claim is that same total.
+Compare the computed value with the claim (that same total). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -11609,33 +10951,25 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**D.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Total paid is four full payments plus the recovered final instalment:
 
 $$40{,}000 + 9{,}682.53 = 49{,}682.53$$
 
-The claim is \\$49,682.53.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$49,682.53). The two sides agree.
 
 So the statement is True.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 Total interest is total paid minus principal:
 
 $$49{,}682.53 - 35{,}000 = 14{,}682.53$$
 
 Then $14{,}682.53 < 35{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -11699,26 +11033,24 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+
 The overview recovered $PV_{\\mathrm{B}} \\approx 535{,}526.07$ at $10\\%$. Option A is \\$500,000 today. Then
 
 $$535{,}526.07 > 500{,}000$$
 
 Option A is cheaper at $10\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**C.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 $$
 14\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**D.** → True
@@ -11731,12 +11063,8 @@ $$488{,}866.75 < 500{,}000$$
 
 Option B is cheaper at $14\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**E.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $10\\%$ Option B costs about \\$535,526, above cash. At $14\\%$ it costs about \\$488,867, below cash. The cheaper choice depends on the rate.
 
@@ -11825,15 +11153,11 @@ The claim is about \$4,700.00. We have about \$4,641.30, so the figures do not a
 So the statement is False.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Three years of the recovered \\$1,030 equivalent at $8\\%$ is
 
 $$F_3 = \\frac{1{,}030}{0.08}\\bigl[(1.08)^{3}-1\\bigr] \\approx 3{,}343.79$$
 
-The claim is \\$3,500.00. We have about \\$3,343.79.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$3,500.00. We have about \\$3,343.79). The two sides do not agree.
 
 So the statement is False.`,
       `**D.** → True
@@ -11950,8 +11274,6 @@ $$\\frac{30{,}200.80}{200{,}000} = 0.1510 = 15.10\\%$$
 
 The claim needs more than $25\\%$. We have about $15.10\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -11968,15 +11290,11 @@ which rounds to the claimed \\$55,770.92.
 So the statement is True.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Lifetime interest is total paid minus principal:
 
 $$240 \\times 1{,}432.86 - 200{,}000 \\approx 143{,}886.91$$
 
-The claim is \\$120,000.00. We have about \\$143,886.91.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$120,000.00. We have about \\$143,886.91). The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -12044,12 +11362,8 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Eight full payments plus the recovered final instalment total
 
@@ -12064,28 +11378,22 @@ The claim is \\$105,000.00. We have about \\$93,100.16.
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Total paid is eight full payments plus the recovered final instalment:
 
 $$200{,}000 + 13{,}100.16 = 213{,}100.16$$
 
-The claim is \\$210,000.00. We have about \\$213,100.16.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$210,000.00. We have about \\$213,100.16). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 Nine full payments would be \\$225,000. Against the recovered total \\$213,100.16,
 
 $$225{,}000 - 213{,}100.16 = 11{,}899.84$$
 
 Then $11{,}899.84 > 10{,}000$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
     ],
@@ -12153,12 +11461,8 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 After the second payment, principal of $16{,}176.12-8{,}858.87=7{,}317.25$ leaves balance $73{,}823.88-7{,}317.25=66{,}506.63$. Interest before the third payment is
 
@@ -12182,15 +11486,13 @@ Both claimed figures match those recovered values.
 So the statement is True.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 Three due loan payments total
 
 $$3 \\times 16{,}176.12 = 48{,}528.36$$
 
 The reserve after three years is about \\$4,066.48. Then $48{,}528.36 > 4{,}066.48$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -12262,15 +11564,13 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 9\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → True
@@ -12393,7 +11693,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Present value discounts a future payment through the accumulation factor:
+Discount the future cash amount with the recovered factor.
 
 $$
 \mathrm{PDV} = K(1+r)^{-t}
@@ -12427,7 +11727,7 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-Present value discounts a future payment through the accumulation factor:
+Write the present-value formula before substituting.
 
 $$
 \mathrm{PDV} = K(1+r)^{-t}
@@ -12530,18 +11830,18 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 7.5\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → True
+
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. Schedule I is \\$2,400,000. Then
 
@@ -12549,31 +11849,27 @@ $$2{,}400{,}000 < 2{,}508{,}822$$
 
 Schedule I is cheaper than Schedule II at $7.5\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**D.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 11.5\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**E.** → False
+
+Expand or simplify with the governing identity, then match the printed claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. Then
 
 $$2{,}186{,}562 < 2{,}400{,}000$$
 
 Schedule I is no longer cheaper than Schedule II.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -12645,11 +11941,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
-Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
+Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive.Fifteen percent sits below the recovered $20\\%$ IRR. NPV at $15\\%$ is
 
 $$A = -8{,}000 + \\frac{9{,}600}{1.15} = -8{,}000 + 8{,}347.83 = 347.83$$
 
@@ -12658,7 +11950,7 @@ Then $347.83 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
@@ -12669,7 +11961,7 @@ Then $-320 < 0$. The claim needs a positive NPV.
 So the statement is False.`,
       `**D.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 With payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is
 
@@ -12677,12 +11969,8 @@ $$r = \\frac{10{,}000}{8{,}000} - 1 = 0.25 = 25\\%$$
 
 Then $25\\% > 24\\%$.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
-
 So the statement is True.`,
       `**E.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 One negative outlay followed by one positive return is a cash-flow polynomial $-8{,}000 + 9{,}600 s$ with a single sign change, hence a unique $r > -1$. The recovered $20\\%$ is that unique admissible root.
 
@@ -12742,7 +12030,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 Eight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is
 
@@ -12755,8 +12043,6 @@ Then $482.85 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Twelve percent sits above the recovered $10.92\\%$ IRR. NPV at $12\\%$ is
 
 $$-12{,}000 + \\frac{7{,}000}{1.12} + \\frac{7{,}000}{1.2544}$$
@@ -12767,8 +12053,6 @@ Then $-169.64 < 0$. The claim needs a positive NPV.
 
 So the statement is False.`,
       `**D.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 With Year 2 raised to \\$8,000, the new quadratic is $8s^{2} + 7s - 12 = 0$:
 
@@ -12788,8 +12072,6 @@ $$s = \\frac{-7 + \\sqrt{217}}{14} \\approx 0.5522$$
 $$r = \\frac{1}{0.5522} - 1 \\approx 0.811 \\approx 81\\%$$
 
 The claim is $21.84\\%$, twice the original rate. We have about $81\\%$.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -12849,7 +12131,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 Ten percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is
 
@@ -12862,8 +12144,6 @@ Then $578.51 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Fourteen percent sits above the recovered $11.98\\%$ IRR. NPV at $14\\%$ is
 
 $$-20{,}000 + \\frac{9{,}000}{1.14} + \\frac{15{,}000}{1.2996}$$
@@ -12874,8 +12154,6 @@ Then $-563.25 < 0$. The claim needs a positive NPV.
 
 So the statement is False.`,
       `**D.** → True
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 With Year 1 raised to \\$18,000, the new quadratic is $15s^{2} + 18s - 20 = 0$:
 
@@ -12888,15 +12166,11 @@ Then $42.6\\% > 30\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The undiscounted sum of the three cash flows is
 
 $$-20{,}000 + 9{,}000 + 15{,}000 = 4{,}000$$
 
-The claim is \\$4,000.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$4,000). The two sides agree.
 
 So the statement is True.`,
     ],
@@ -12988,8 +12262,6 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is False.`,
       `**D.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Eleven percent sits below both recovered IRRs. NPV at $11\\%$ is
 
 $$NPV_X = -15{,}000 + \\frac{17{,}250}{1.11} = 540.54$$
@@ -13001,7 +12273,7 @@ Both are positive. The claim needs Y negative.
 So the statement is False.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Expand or simplify with the governing identity, then match the printed claim.
 
 With Y's payoff raised to \\$25,000,
 
@@ -13067,20 +12339,16 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 $$
 12\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 NPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$.
 
@@ -13106,11 +12374,9 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**E.** → False
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+State what the overview already settled, then test whether the claim matches that result.
 
 Year 1 is an installation outflow, so $a_1 = -3{,}000$. The later cash flows are not all positive.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -13157,20 +12423,16 @@ $$A = -45{,}000 - \\frac{3{,}000}{1.15} + \\frac{28{,}000}{1.3225} + \\frac{35{,
     tactical_explanations: [
       `**A.** → False
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Write the general identity, insert the claim's symbols, and simplify before comparing.
 
 $$
 10.78\\%
 $$
 
-That recovered value is not the figure named in the claim.
+That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**B.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Nine percent sits below the recovered $10.78\\%$ IRR. NPV at $9\\%$ is
 
@@ -13183,8 +12445,6 @@ Then $879.22 > 0$. The claim needs a negative NPV.
 So the statement is False.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
-
 Thirteen percent sits above the recovered $10.78\\%$ IRR. NPV at $13\\%$ is
 
 $$-34{,}000 + \\frac{16{,}000}{1.13} + \\frac{24{,}000}{1.2769}$$
@@ -13195,8 +12455,6 @@ Then $-1{,}045.19 < 0$.
 
 So the statement is True.`,
       `**D.** → False
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Cutting Year 2 to \\$20,000 gives the new quadratic $10s^{2} + 8s - 17 = 0$:
 
@@ -13216,8 +12474,6 @@ $$12s^{2} + 8s - 15 = 0$$
 $$s = \\frac{-8 + 28}{24} = \\frac{5}{6}, \\qquad r = 20\\%$$
 
 Then $20\\% > 10.78\\%$. The IRR rises, it does not fall.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
     ],
@@ -13270,14 +12526,14 @@ $$
 15\\%
 $$
 
-The claim names \$0,. The computed figure and the claim agree.
+The claim names \$0. The computed figure and the claim agree.
 
 Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
 
 Ten percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is
 
@@ -13290,7 +12546,7 @@ Then $2{,}809.92 > 0$.
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
 
 Twenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is
 
@@ -13303,20 +12559,16 @@ Then $-2{,}500 < 0$.
 So the statement is True.`,
       `**D.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
 The undiscounted sum of the three cash flows is
 
 $$-40{,}000 + 22{,}000 + 27{,}600 = 9{,}600$$
 
-The claim is \\$9,600.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (\\$9,600). The two sides agree.
 
 So the statement is True.`,
       `**E.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+State what the overview already settled, then test whether the claim matches that result.
 
 The cash-flow signs are $-,+,+$, one sign change, hence a unique $r > -1$. The recovered $15\\%$ is that unique admissible root.
 
@@ -13369,12 +12621,14 @@ $$
 r \\approx 10.69\\%
 $$
 
-The claim names that same figure. The recovered value and the claim agree.
+The claim names that same figure. 
+
+Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
 
-Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive.
+NPV subtracts the upfront outlay from the discounted inflow total.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $9\\%$:
 
@@ -13391,7 +12645,7 @@ The claim needs $NPV > 0$. We have $1{,}543.22 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Net present value is the discounted cash inflow total minus the initial outlay. The decision rule accepts the project when that difference is positive.
+Form NPV as discounted inflows minus the initial cost.
 
 Net present value at the named rate uses the overview's cash-flow formula. At $12\\%$:
 
@@ -13525,7 +12779,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**B.** → True
 
-Option 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives:
+Treat Option 1 as a level perpetuity with the stated annual payment.
 
 $$
 a_0 + \\frac{a}{r} = 0
@@ -13544,7 +12798,7 @@ Keep the periodic rate, the holding time, and the money units aligned with the c
 So the statement is True.`,
       `**C.** → True
 
-Option 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives:
+Option 1 pays a constant annual amount forever.
 
 $$
 a_0 + \\frac{a}{r} = 0
@@ -13567,9 +12821,7 @@ The overview recovered Option 2's cash flows $a_0=-50{,}000$ and $a_1=a_2=6{,}00
 
 $$-50{,}000 + 6{,}000 + 6{,}000 = -38{,}000$$
 
-The claim is -\\$40,000. We have -\\$38,000
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Compare the computed value with the claim (-\\$40,000. We have -\\$38,000). The two sides do not agree.
 
 So the statement is False.`,
       `**E.** → True
@@ -13681,13 +12933,13 @@ Each display above isolates one arithmetic step so the claim check is transparen
 So the statement is True.`,
       `**C.** → True
 
+Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+
 The internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.
 
 $$16\\% > 11.04\\%$$
 
 Design B has the higher internal rate.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
       `**D.** → True

@@ -37,21 +37,42 @@ CLOSER_RE = re.compile(
     r"\n*\s*So the statement is (True|False)\.?\s*$", re.I
 )
 
-# Generic openers that force identical first lines across letters.
+# Generic openers / coaching lines that force identical first lines or pad.
 GENERIC_OPENER_RES = [
     re.compile(
         r"^Name the financial rule behind the claim, then substitute "
-        r"(?:the concrete numbers|the recovered inputs)\.\s*\n+",
+        r"(?:the concrete numbers|the recovered inputs)\.\s*\n*",
+        re.I,
+    ),
+    re.compile(
+        r"^Name the financial quantity in the claim, substitute the recovered "
+        r"inputs, and compare the result with the stated figure\.\s*\n*",
         re.I,
     ),
     re.compile(
         r"^Name the governing exponent law first, then substitute "
-        r"the concrete letters or numbers\.\s*\n+",
+        r"the concrete letters(?: or numbers)?\.\s*\n*",
         re.I,
     ),
     re.compile(
         r"^Name the governing (?:algebra|identity|rule) first, then "
-        r"substitute the concrete letters or numbers\.\s*\n+",
+        r"substitute the concrete letters(?: or numbers)?\.\s*\n*",
+        re.I,
+    ),
+    # Mid-body leftovers of the same stubs
+    re.compile(
+        r"\n*Name the financial rule behind the claim, then substitute "
+        r"(?:the concrete numbers|the recovered inputs)\.\s*",
+        re.I,
+    ),
+    re.compile(
+        r"\n*Name the financial quantity in the claim, substitute the recovered "
+        r"inputs, and compare the result with the stated figure\.\s*",
+        re.I,
+    ),
+    re.compile(
+        r"\n*Name the governing exponent law first, then substitute "
+        r"the concrete letters(?: or numbers)?\.\s*",
         re.I,
     ),
 ]
@@ -107,9 +128,24 @@ SHARED_LOOKUP = re.compile(
     r"The claim asserts\s*"
     r"\$\$\s*(?P<claim>.+?)\s*\$\$\s*"
     r"(?:The recovered value and the claim agree\.|"
-    r"Comparing with the recovered value shows they do not agree\.)\s*"
+    r"Comparing with the recovered value shows they do not agree\.|"
+    r"Those two (?:displays|figures) (?:do not )?agree\.)\s*"
     r"(?:Do not rebuild the original system; use the overview's recovered "
     r"unknowns for this comparison\.\s*)?"
+    r"(?:So the statement is (?P<verd>True|False)\.?)?\s*$",
+    re.S | re.I,
+)
+
+# False lookup without a printed claim display.
+SHARED_LOOKUP_SHORT = re.compile(
+    r"(?:^|\n)In the shared two-unknown system, the overview already solved for "
+    r"(?P<role>.+?)\.\s*"
+    r"State that recovered value before testing the claim:\s*"
+    r"\$\$\s*(?P<rec>.+?)\s*\$\$\s*"
+    r"(?:That recovered value is not the figure (?:on the card|named in the claim)\.|"
+    r"The recovered value and the claim agree\.|"
+    r"Those two (?:displays|figures) (?:do not )?agree\.)\s*"
+    r"(?:Do not rebuild[^\n]*\.\s*)?"
     r"(?:So the statement is (?P<verd>True|False)\.?)?\s*$",
     re.S | re.I,
 )
@@ -246,11 +282,77 @@ def vary_formula_opener(body: str, letter_idx: int) -> str:
     return body
 
 
+def deepen_thin_body(body: str, truth: bool, letter_idx: int) -> str:
+    """Add missing teaching steps for short letters without stub padding."""
+    body = strip_closer(body).strip()
+    if len(body) >= 240:
+        return body
+
+    # Pattern: recovered display + claim asserts display + agree/disagree
+    m = re.match(
+        r"(?P<lead>.+?):\s*"
+        r"\$\$\s*(?P<rec>.+?)\s*\$\$\s*"
+        r"The claim asserts\s*"
+        r"\$\$\s*(?P<claim>.+?)\s*\$\$\s*"
+        r"(?P<cmp>Those two (?:displays|figures) (?:do not )?agree\.)\s*$",
+        body,
+        re.S,
+    )
+    if m:
+        lead = m.group("lead").strip()
+        rec = m.group("rec").strip()
+        claim = m.group("claim").strip()
+        cmp_ = m.group("cmp").strip()
+        rule = (
+            "A True/False claim about a recovered unknown is checked by "
+            "reading that value from the shared solve and comparing it with "
+            "the figure printed on the card."
+        )
+        return (
+            f"{rule}\n\n{lead}:\n\n$$\n{rec}\n$$\n\n"
+            f"The claim asserts\n\n$$\n{claim}\n$$\n\n{cmp_}"
+        )
+
+    # Pattern: one named rule sentence + displays + "The claim is ..."
+    m2 = re.match(
+        r"(?P<head>[^\n]+)\n\n"
+        r"(?P<math>(?:\$\$[\s\S]+?\$\$\n*)+)\n*"
+        r"The claim is (?P<claim>.+?)\.\s*$",
+        body,
+        re.S,
+    )
+    if m2 and body.count("$$") <= 6:
+        head = m2.group("head").strip()
+        math = m2.group("math").strip()
+        claim = m2.group("claim").strip()
+        compare = (
+            f"Compare the computed value with the claim ({claim}). "
+            f"The two sides {'agree' if truth else 'do not agree'}."
+        )
+        return f"{head}\n\n{math}\n\n{compare}"
+
+    # Pattern: short exponent / identity checks
+    if body.count("$$") >= 1 and len(body) < 220:
+        tips = [
+            "Write the general identity, insert the claim's symbols, and simplify before comparing.",
+            "Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.",
+            "Apply the relevant algebra rule, keep one simplification per display, then match the claim.",
+            "State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.",
+            "Expand or simplify with the governing identity, then match the printed claim.",
+        ]
+        tip = tips[letter_idx % len(tips)]
+        if not body.lower().startswith(("write the", "start from", "apply the", "state the", "expand")):
+            return f"{tip}\n\n{body}"
+
+    return body
+
+
 def deepen_letter(expl: str, truth: bool, letter_idx: int) -> str:
     m = HDR_RE.match(expl.strip())
     if not m:
         return expl
-    hdr, letter, verd_hdr, body = m.group(1), m.group(2), m.group(3), m.group(4)
+    letter = m.group(2)
+    body = m.group(4)
     verd = "True" if truth else "False"
     # Force header verdict to answer_key
     hdr = f"**{letter}.** → {verd}"
@@ -258,7 +360,9 @@ def deepen_letter(expl: str, truth: bool, letter_idx: int) -> str:
     # Ch5 shared lookup rewrite first (full template)
     rewritten = rewrite_shared_lookup(body, truth, letter_idx)
     if rewritten:
-        return f"{hdr}\n\n{rewritten}"
+        body = deepen_thin_body(strip_closer(rewritten), truth, letter_idx)
+        body = ensure_closer(body, truth)
+        return f"{hdr}\n\n{body}"
 
     body = scrub_set_beside(body)
     body = scrub_generic_openers(body)
@@ -279,7 +383,14 @@ def deepen_letter(expl: str, truth: bool, letter_idx: int) -> str:
         body,
         flags=re.I,
     )
+    body = re.sub(
+        r"\n*That recovered value is not the figure named in the claim\.\s*",
+        "\n\nThat recovered value is not the figure on the card.\n\n",
+        body,
+        flags=re.I,
+    )
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
+    body = deepen_thin_body(body, truth, letter_idx)
     body = ensure_closer(body, truth)
     return f"{hdr}\n\n{body}"
 

@@ -70,6 +70,7 @@ BANNED_PHRASES = (
     "settles the verdict",
     "Set beside the claim, the computed result is",
     "Name the financial rule behind the claim",
+    "Name the financial quantity in the claim",
     "Name the governing exponent law first",
     "Do not rebuild the original system",
     "Keep the periodic rate, the number of periods, and the money units explicit",
