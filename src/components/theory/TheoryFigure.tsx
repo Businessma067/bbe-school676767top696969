@@ -1953,6 +1953,184 @@ function IneqCompoundIntersection() {
   );
 }
 
+/** Shared axes helper for differentiation teaching figures. */
+function DiffAxes({
+  children,
+  title,
+  xLabel = "x",
+  yLabel,
+}: {
+  children: ReactNode;
+  title: string;
+  xLabel?: string;
+  yLabel: string;
+}) {
+  return (
+    <ChartFrame title={title} height="h-[280px] sm:h-[320px]">
+      <svg viewBox="0 0 520 300" className="h-full w-full" role="img" aria-label={title}>
+        <rect x="0" y="0" width="520" height="300" fill="#fff" />
+        {/* axes */}
+        <line x1="50" y1="150" x2="500" y2="150" stroke={INK} strokeWidth="1.5" />
+        <line x1="50" y1="20" x2="50" y2="280" stroke={INK} strokeWidth="1.5" />
+        <polygon points="500,150 492,146 492,154" fill={INK} />
+        <polygon points="50,20 46,28 54,28" fill={INK} />
+        <text x="505" y="154" fontSize="13" fill={MUTED}>
+          {xLabel}
+        </text>
+        <text x="18" y="28" fontSize="13" fill={MUTED}>
+          {yLabel}
+        </text>
+        {children}
+      </svg>
+    </ChartFrame>
+  );
+}
+
+/** Graph of f′ with zeros at 1 and 5; positive between — teaches reading f from f′. */
+function DiffFprimeSign() {
+  // cubic-ish f' path: below left of 1, above on (1,5), below right of 5
+  const d =
+    "M 70,210 C 95,230 115,200 130,150 C 145,95 170,70 210,95 C 260,130 300,40 340,70 C 380,100 410,140 450,210";
+  return (
+    <DiffAxes title="Reading the graph of f′" yLabel="f′">
+      <path d={d} fill="none" stroke={ACCENT} strokeWidth="2.8" />
+      {/* zeros */}
+      <circle cx="130" cy="150" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <circle cx="390" cy="150" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <text x="122" y="172" fontSize="12" fill={MUTED}>
+        1
+      </text>
+      <text x="382" y="172" fontSize="12" fill={MUTED}>
+        5
+      </text>
+      {/* sign labels */}
+      <text x="78" y="128" fontSize="14" fontWeight="700" fill={MUTED}>
+        −
+      </text>
+      <text x="250" y="55" fontSize="14" fontWeight="700" fill={ACCENT}>
+        +
+      </text>
+      <text x="430" y="128" fontSize="14" fontWeight="700" fill={MUTED}>
+        −
+      </text>
+      <text x="145" y="250" fontSize="12" fill={INK}>
+        f has a local min
+      </text>
+      <text x="300" y="250" fontSize="12" fill={INK}>
+        f has a local max
+      </text>
+      <line x1="130" y1="230" x2="130" y2="160" stroke={MUTED} strokeDasharray="3 3" />
+      <line x1="390" y1="230" x2="390" y2="160" stroke={MUTED} strokeDasharray="3 3" />
+    </DiffAxes>
+  );
+}
+
+/** Graph of f itself: local max, local min, inflection. */
+function DiffFExtrema() {
+  const d = "M 70,220 C 110,220 130,60 180,60 C 230,60 250,200 300,200 C 360,200 400,90 470,50";
+  return (
+    <DiffAxes title="Reading the graph of f" yLabel="f">
+      <path d={d} fill="none" stroke={ACCENT} strokeWidth="2.8" />
+      <circle cx="180" cy="60" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <circle cx="300" cy="200" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
+      <circle cx="240" cy="130" r="4" fill={MUTED} />
+      <text x="160" y="48" fontSize="12" fill={INK}>
+        local max
+      </text>
+      <text x="268" y="228" fontSize="12" fill={INK}>
+        local min
+      </text>
+      <text x="248" y="120" fontSize="11" fill={MUTED}>
+        inflection
+      </text>
+      <text x="175" y="280" fontSize="12" fill={MUTED}>
+        a
+      </text>
+      <text x="295" y="280" fontSize="12" fill={MUTED}>
+        b
+      </text>
+    </DiffAxes>
+  );
+}
+
+/** MC rising vs flat/sloping MR — profit max at crossing. */
+function DiffMcMr() {
+  const data = Array.from({ length: 13 }, (_, i) => {
+    const q = i;
+    return { q, mc: 8 + 0.9 * q + 0.08 * q * q, mr: 28 - 1.2 * q };
+  });
+  return (
+    <>
+      <ChartFrame title="Profit rule on a figure — MR against MC" height="h-[280px] sm:h-[320px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={data} margin={{ top: 12, right: 16, left: 8, bottom: 20 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
+            <XAxis
+              dataKey="q"
+              type="number"
+              domain={[0, 12]}
+              tick={{ fontSize: 11, fill: INK }}
+              label={{ value: "Output Q", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+            />
+            <YAxis
+              type="number"
+              domain={[0, 40]}
+              tick={{ fontSize: 11, fill: INK }}
+              label={{ value: "€ / unit", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
+            />
+            <ReferenceLine y={0} stroke={MUTED} />
+            <Line type="monotone" dataKey="mr" name="MR" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
+            <Line type="monotone" dataKey="mc" name="MC" stroke={MUTED} strokeWidth={2.5} dot={false} isAnimationActive={false} />
+            <ReferenceDot x={8} y={18.4} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "MR = MC", position: "top", fill: ACCENT, fontSize: 11 }} />
+            <Legend />
+          </LineChart>
+        </ResponsiveContainer>
+      </ChartFrame>
+      <Hint>Expand while MR &gt; MC. The crossing with rising MC is the profit candidate.</Hint>
+    </>
+  );
+}
+
+/** AC U-shape cut by rising MC at the AC minimum. */
+function DiffAcMc() {
+  const data = Array.from({ length: 15 }, (_, i) => {
+    const q = i + 2;
+    const ac = 40 / q + 2 + 0.35 * q;
+    const mc = 2 + 0.7 * q;
+    return { q, ac, mc };
+  });
+  // AC min near where MC = AC: 40/q + 2 + 0.35q = 2 + 0.7q ⇒ 40/q = 0.35q ⇒ q² = 40/0.35 ≈ 114 ⇒ q ≈ 10.7
+  return (
+    <>
+      <ChartFrame title="Average cost against marginal cost" height="h-[280px] sm:h-[320px]">
+        <ResponsiveContainer width="100%" height="100%">
+          <LineChart data={data} margin={{ top: 12, right: 16, left: 8, bottom: 20 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
+            <XAxis
+              dataKey="q"
+              type="number"
+              domain={[2, 16]}
+              tick={{ fontSize: 11, fill: INK }}
+              label={{ value: "Output Q", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+            />
+            <YAxis
+              type="number"
+              domain={[0, 28]}
+              tick={{ fontSize: 11, fill: INK }}
+              label={{ value: "€ / unit", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
+            />
+            <Line type="monotone" dataKey="ac" name="AC" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
+            <Line type="monotone" dataKey="mc" name="MC" stroke={MUTED} strokeWidth={2.5} dot={false} isAnimationActive={false} />
+            <ReferenceDot x={10.7} y={9.5} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "AC min", position: "top", fill: ACCENT, fontSize: 11 }} />
+            <Legend />
+          </LineChart>
+        </ResponsiveContainer>
+      </ChartFrame>
+      <Hint>MC cuts AC from below at an interior average-cost minimum. That point is not automatically a profit maximum.</Hint>
+    </>
+  );
+}
+
 /** Northline opening BS — distinct from the Fuhrmann 49,000 Tina/Steve set. */
 const FIGURES: Record<string, () => ReactNode> = {
 
@@ -2001,6 +2179,10 @@ const FIGURES: Record<string, () => ReactNode> = {
   "ineq-wavy-four-roots": IneqWavyCurveFourRoots,
   "ineq-wavy-even-power": IneqWavyCurveEvenPower,
   "ineq-compound-intersection": IneqCompoundIntersection,
+  "diff-fprime-sign": DiffFprimeSign,
+  "diff-f-extrema": DiffFExtrema,
+  "diff-mc-mr": DiffMcMr,
+  "diff-ac-mc": DiffAcMc,
 
 };
 

@@ -168,7 +168,7 @@ const MdBlock = memo(function MdBlock({
         ul: ({ children }) => (
           <ul
             className={cn(
-              "mb-4 list-disc space-y-1.5 pl-5 marker:text-primary",
+              "mb-4 list-outside list-disc space-y-1.5 pl-8 marker:text-primary sm:pl-9",
               dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-[17px] sm:leading-8",
             )}
           >
@@ -178,14 +178,15 @@ const MdBlock = memo(function MdBlock({
         ol: ({ children }) => (
           <ol
             className={cn(
-              "mb-4 list-decimal space-y-1.5 pl-5 marker:font-semibold marker:text-primary",
+              // Keep markers fully inside the article: bold decimals need more room than pl-5.
+              "mb-4 ml-1 list-outside list-decimal space-y-1.5 pl-10 marker:font-semibold marker:text-primary sm:ml-2 sm:pl-12",
               dense ? "text-[14px] leading-6" : "text-[15px] leading-7 sm:text-[17px] sm:leading-8",
             )}
           >
             {children}
           </ol>
         ),
-        li: ({ children }) => <li className="break-words pl-0.5">{children}</li>,
+        li: ({ children }) => <li className="break-words pl-1.5">{children}</li>,
         blockquote: ({ children }) => (
           <blockquote
             className={cn(
@@ -614,10 +615,10 @@ export function TheoryReader({
       >
         <article
           className={cn(
-            "mx-auto w-full max-w-[78rem] [&>h1+p]:text-foreground/75 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden",
+            "mx-auto w-full max-w-[78rem] overflow-visible [&>h1+p]:text-foreground/75 [&_.katex]:text-[1.03em] [&_.katex-display]:my-5 [&_.katex-display]:overflow-x-auto [&_.katex-display]:overflow-y-hidden [&_ol]:overflow-visible [&_ul]:overflow-visible",
             readerMode
-              ? "px-4 py-4 pb-20 sm:px-6 sm:py-8 sm:pb-10 md:px-8 lg:px-12 xl:px-14"
-              : "px-4 py-5 sm:px-6 sm:py-8 md:px-8 lg:px-12 xl:px-14",
+              ? "px-5 py-4 pb-20 sm:px-6 sm:py-8 sm:pb-10 md:px-8 lg:px-12 xl:px-14"
+              : "px-5 py-5 sm:px-6 sm:py-8 md:px-8 lg:px-12 xl:px-14",
           )}
         >
           {body}
