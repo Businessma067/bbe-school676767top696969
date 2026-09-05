@@ -1034,23 +1034,6 @@ function AllExplanationsPanel({
   onRequestAi: (i: number) => void;
 }) {
   const letters = "ABCDEF";
-  const body = [
-    ...task.statements.flatMap((_, i) => {
-      const letter = letters[i] ?? String(i + 1);
-      const verdict = task.answer_key[i] ? "True" : "False";
-      const expl = (task.tactical_explanations[i] ?? "").trim();
-      if (expl) {
-        return [`**${letter}.** → ${verdict}\n\n${expl}`, ""];
-      }
-      return [
-        `**${letter}.** → ${verdict}\n\n${scrubStatementHints(task.statements[i])}`,
-        "",
-      ];
-    }),
-  ]
-    .join("\n")
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
 
   return (
     <div className="practice-fade-in flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm" data-practice-surface>
@@ -1071,19 +1054,33 @@ function AllExplanationsPanel({
       </div>
       <div className="practice-scroll min-h-0 flex-1 overflow-y-auto bg-white px-7 py-7 sm:px-9 sm:py-8">
         <EconAnswerKeyTable answerKey={task.answer_key} />
-        <div className="mb-6 flex flex-wrap gap-2">
-          {task.statements.map((_, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => onRequestAi(i)}
-              className={practiceInlineAiButtonClass(false)}
-            >
-              AI · {letters[i] ?? i + 1}
-            </button>
-          ))}
+        <div className="space-y-8">
+          {task.statements.map((_, i) => {
+            const letter = letters[i] ?? String(i + 1);
+            const verdict = task.answer_key[i] ? "True" : "False";
+            const expl = (task.tactical_explanations[i] ?? "").trim();
+            const prose = expl || scrubStatementHints(task.statements[i]);
+
+            return (
+              <section key={i} className="min-w-0">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                  <p className="font-expl text-[15.5px] font-bold leading-snug text-[#111] sm:text-[16.5px]">
+                    {letter}. → {verdict}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => onRequestAi(i)}
+                    className={practiceInlineAiButtonClass(false)}
+                    aria-label={`AI explanation for statement ${letter}`}
+                  >
+                    AI explanation
+                  </button>
+                </div>
+                <ExplanationProse text={prose} />
+              </section>
+            );
+          })}
         </div>
-        <ExplanationProse text={body} />
       </div>
     </div>
   );
