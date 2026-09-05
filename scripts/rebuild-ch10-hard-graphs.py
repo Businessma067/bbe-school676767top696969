@@ -24,52 +24,79 @@ def true_count(raw: dict) -> int:
     return sum(1 for x in raw["answer_key"] if x)
 
 
-def deepen_if_short(body: str, statement: str, truth: bool, overview_hint: str) -> str:
-    """Ensure letter bodies meet length/step style without inventing fake arithmetic."""
+BAN_LINE_RES = [
+    re.compile(p, re.I | re.M)
+    for p in [
+        r"^Name the growth law that the claim depends on[^\n]*\n+",
+        r"^Read the recovered parameters from the overview[^\n]*\n+",
+        r"^Convert the claim into one equation in the shared model[^\n]*\n+",
+        r"^Keep the continuous-versus-discrete distinction[^\n]*\n+",
+        r"^Translate the wording into a threshold comparison[^\n]*\n+",
+        r"^Isolate the exact inequality the claim asserts[^\n]*\n+",
+        r"^Work letter-locally from the shared recoveries[^\n]*\n+",
+        r"^Check units and the initial level first[^\n]*\n+",
+        r"^Rewrite the claim as a one-line test[^\n]*\n+",
+        r"^Use logs only if the claim forces[^\n]*\n+",
+        r"^Begin from the governing rule for this claim[^\n]*\n+",
+        r"^The live claim says:[^\n]*\n+",
+        r"^Matching those displays with the wording of the claim[^\n]*\n+",
+        r"^Set beside the claim, the recovered figures decide[^\n]*\n+",
+        r"^Reading the inequality against the recovered value shows[^\n]*\n+",
+        r"^Therefore the claim is (?:True|False) under the shared model\.?\n+",
+        r"^The wording of the claim was flipped relative to that comparison[^\n]*\n+",
+        r"^Reuse the overview's recovered values for the remaining arithmetic[^\n]*\n+",
+        r"^The recovered figures (?:fail to support|support):[^\n]*\n+",
+    ]
+]
+BAN_BLOCK_RES = [
+    re.compile(r"\$\$\\text\{compare against the claim\}\$\$", re.I),
+    re.compile(r"\$\$\\text\{final comparison complete\}\$\$", re.I),
+    re.compile(r"\$\$\\text\{recovered setup applies\}\$\$", re.I),
+    re.compile(r"\$\$\\text\{claim verdict target:[^$]*\}\$\$", re.I),
+]
+
+
+def scrub_body(body: str) -> str:
+    """Remove template coaching / pad lines; keep the mathematical teacher prose."""
     body = body.strip()
-    verd = "True" if truth else "False"
-    openers = [
-        "Name the growth law that the claim depends on, then substitute the recovered values.",
-        "Read the recovered parameters from the overview and test only this comparison.",
-        "Convert the claim into one equation in the shared model and solve it step by step.",
-        "Keep the continuous-versus-discrete distinction explicit while checking the claim.",
-        "Translate the wording into a threshold comparison against the recovered level.",
-    ]
-    closer_opts = [
-        f"Matching those displays with the wording of the claim gives verdict {verd}.",
-        f"The comparison above is exactly what the statement asks, so the statement is {verd}.",
-        f"Set beside the claim, the recovered figures decide that the statement is {verd}.",
-        f"Therefore the claim is {verd} under the shared model.",
-        f"Reading the inequality against the recovered value shows the statement is {verd}.",
-    ]
-    opener = openers[sum(map(ord, statement)) % len(openers)]
-    closer = closer_opts[(sum(map(ord, statement)) // 7) % len(closer_opts)]
-    # Always give a calm teacher framing when thin or sparse on displays.
-    if len(body) < 280 or body.count("$$") < 2:
-        framed = f"{opener}\n\n{body}"
-        if "$$" not in body:
-            framed += (
-                f"\n\n$$\\text{{compare against the claim}}$$\n\n"
-                f"Work from the recovered overview quantities only for this letter."
-            )
-        if closer.lower() not in framed.lower() and "so the statement is" not in framed.lower():
-            framed += f"\n\n{closer}"
-        body = framed
-    if len(body) < 250:
-        body += (
-            f"\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. "
-            f"Keep each substitution in its own display before locking verdict {verd}."
-            f"\n\n$$\\text{{final comparison complete}}$$"
-        )
+    for pat in BAN_LINE_RES:
+        body = pat.sub("", body)
+    for pat in BAN_BLOCK_RES:
+        body = pat.sub("", body)
+    body = re.sub(
+        r"(?is)\n*So the statement is (?:True|False)\.?\s*$",
+        "",
+        body,
+    )
+    body = re.sub(
+        r"(?im)^The comparison above is exactly what the statement asks, so the statement is (?:True|False)\.?\s*",
+        "",
+        body,
+    )
+    body = re.sub(r"\n{3,}", "\n\n", body).strip()
     return body
 
 
-def finalize_raw(raw: dict) -> dict:
+def finish_letter(body: str, statement: str, truth: bool) -> str:
+    """Chapter-13 closer: math first, then one plain verdict. No rotating openers."""
+    del statement  # live wording already drives the math in the builder body
+    verd = "True" if truth else "False"
+    body = scrub_body(body)
+    if "so the statement is" not in body.lower():
+        body = body.rstrip(".") + f".\n\nSo the statement is {verd}."
+    return body
+
+
+def finalize_raw(raw: dict, *, finish: bool = False) -> dict:
+    """Scrub bodies; optionally attach final Ch13 closers after truth is fixed."""
     stmts = raw["statements"]
     key = list(raw["answer_key"])
     bodies = []
     for i, body in enumerate(raw["bodies"]):
-        bodies.append(deepen_if_short(body, stmts[i], key[i], raw["overview"]))
+        if finish:
+            bodies.append(finish_letter(body, stmts[i], key[i]))
+        else:
+            bodies.append(scrub_body(body))
     out = dict(raw)
     out["bodies"] = bodies
     out["answer_key"] = key
@@ -92,6 +119,12 @@ def allocate_true_counts(n_tasks: int) -> list[int]:
 def flip_statement_threshold(stmt: str, currently_true: bool) -> tuple[str, bool]:
     """Flip by rewriting comparison direction — keeps math honest relative to the new claim."""
     pairs = [
+        ("lies strictly below", "does not lie strictly below"),
+        ("does not lie strictly below", "lies strictly below"),
+        ("lies strictly above", "does not lie strictly above"),
+        ("does not lie strictly above", "lies strictly above"),
+        ("a factor strictly larger than", "a factor that is not strictly larger than"),
+        ("a factor that is not strictly larger than", "a factor strictly larger than"),
         ("strictly less than", "not strictly less than"),
         ("strictly greater than", "not strictly greater than"),
         ("strictly larger than", "not strictly larger than"),
@@ -158,7 +191,7 @@ def adjust_to_target(raw: dict, target: int) -> dict:
     bodies = list(raw["bodies"])
     cur = sum(1 for x in key if x)
     if cur == target:
-        return raw
+        return finalize_raw(raw, finish=True)
     # Prefer flipping non-identity statements (indices that are not always-true structural facts)
     order = [0, 1, 2, 4, 3]
     if cur > target:
@@ -169,11 +202,8 @@ def adjust_to_target(raw: dict, target: int) -> dict:
                 stmts[i], new_t = flip_statement_threshold(stmts[i], True)
                 assert new_t is False
                 key[i] = False
-                bodies[i] = (
-                    bodies[i].rstrip()
-                    + "\n\nThe wording of the claim was flipped relative to that comparison, "
-                    "so the same recovered numbers now make the statement False."
-                )
+                # Keep the math; finish_letter will close against the live wording.
+                bodies[i] = scrub_body(bodies[i])
                 cur -= 1
     else:
         for i in order:
@@ -183,18 +213,14 @@ def adjust_to_target(raw: dict, target: int) -> dict:
                 stmts[i], new_t = flip_statement_threshold(stmts[i], False)
                 assert new_t is True
                 key[i] = True
-                bodies[i] = (
-                    bodies[i].rstrip()
-                    + "\n\nThe wording of the claim was flipped relative to that comparison, "
-                    "so the same recovered numbers now make the statement True."
-                )
+                bodies[i] = scrub_body(bodies[i])
                 cur += 1
     out = dict(raw)
     out["answer_key"] = key
     out["statements"] = stmts
     out["bodies"] = bodies
     assert sum(1 for x in key if x) == target, (target, key)
-    return out
+    return finalize_raw(out, finish=True)
 
 
 def difficulties_for(n: int, subsection: str) -> list[str]:
@@ -247,10 +273,12 @@ def build_section(
         if i in fig_slots:
             # regenerate same builder family with figure
             b = builders[i % len(builders)]
-            with_fig = finalize_raw(b(i + 17, True))
+            with_fig = finalize_raw(b(i + 17, True), finish=False)
             # preserve truth target
             with_fig = adjust_to_target(with_fig, tgt)
             chosen = with_fig
+        else:
+            chosen = finalize_raw(chosen, finish=True)
         out.append((chosen, diffs[i]))
     return out
 
@@ -349,7 +377,7 @@ def main() -> None:
     med = statistics.median(lens)
     assert figs >= 35, figs
     assert len(kinds) >= 15, kinds
-    assert med >= 240, med
+    assert med >= 120, med  # Ch13 allows short letters when the claim is a one-step check
     for k in range(1, 6):
         assert 20 <= tc[k] <= 30, tc
 

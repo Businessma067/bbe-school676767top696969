@@ -949,8 +949,6 @@ Compare the computed value with the claim (\\$7,277.60). The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 Doubling would require a growth factor of $2$. Monthly compounding for ten years gives
 
 $$(1.005)^{120} \\approx 1.8194$$
@@ -1060,8 +1058,6 @@ The claim needs $r_{\\mathrm{mon}} > r_{\\mathrm{q}}$. We have $5.89\\% < 5.92\\
 
 So the statement is False.`,
       `**E.** → False
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Dollar growth relative to the opening investment is
 
@@ -1246,8 +1242,6 @@ Compare the computed value with the claim (\\$30,715.86). The two sides agree.
 
 So the statement is True.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The required deposit is
 
@@ -1978,8 +1972,6 @@ Compare the computed value with the claim (\\$40,467.83). The two sides agree.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 The required original investment is
 
 $$S_0 = \\frac{60{,}000}{(1.011)^{36}} \\approx 40{,}467.83$$
@@ -2341,8 +2333,6 @@ Compare the computed value with the claim (\\$5.72). The two sides agree.
 So the statement is True.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 The one-year continuous growth factor is
 
 $$e^{0.05} \\approx 1.051271$$
@@ -2535,8 +2525,6 @@ The claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 At the $18\\%$ continuous quote,
 
 $$R_{18} = e^{0.18} - 1 \\approx 0.197217 \\approx 19.72\\%$$
@@ -2699,8 +2687,6 @@ The claim needs $4{,}372.65 > 4{,}573.91$. We have $4{,}372.65 < 4{,}573.91$.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Each year multiplies the current balance by the same continuous factor
 
@@ -2877,8 +2863,6 @@ Compare the computed value with the claim (approximately \\$36,000.00). The two 
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 At an $11\\%$ continuous rate the doubling time is
 
 $$t_2' = \\frac{\\ln 2}{0.11} \\approx 6.30$$
@@ -2896,8 +2880,6 @@ Compare the computed value with the claim (a factor of $6$. We have $8 \\ne 6$).
 
 So the statement is False.`,
       `**E.** → False
-
-State what the overview already settled, then test whether the claim matches that result.
 
 The doubling time $t_2=\\frac{\\ln 2}{r}$ falls when $r$ rises. A higher interest rate shortens the wait, it does not lengthen it.
 
@@ -2934,8 +2916,6 @@ $$t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the rule behind the claim, then match the recovered expression or number to the printed figure.
-
 The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation.
 
 So the statement is True.`,
@@ -2962,8 +2942,6 @@ Compare the computed value with the claim (approximately \\$48,000.00). The two 
 
 So the statement is True.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Halving the depreciation rate to $9\\%$ doubles the isolated wait:
 
@@ -3506,8 +3484,6 @@ Net asset value then follows $S(t)=S_0 e^{r_{\\mathrm{net}} t}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the rule behind the claim, then match the recovered expression or number to the printed figure.
-
 The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation.
 
 So the statement is True.`,
@@ -3540,8 +3516,6 @@ The claim needs $A(10)>B(10)$. We have $74{,}591.23 < 75{,}298.55$.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
@@ -3814,8 +3788,6 @@ Compare the computed value with the claim (about $7.43\\%$). The two sides agree
 So the statement is True.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is
 
 $$\\frac{0.10+0.04}{2} = 0.07 = 7\\%$$
@@ -3900,8 +3872,6 @@ The claim is approximately \\$36,000.00. We have $34{,}558.42 \\ne 36{,}000.00$.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 After six years the two remaining values are
 
@@ -3993,8 +3963,6 @@ The quadrupling time is about $21.33$ years and equals twice the doubling time.
 
 So the statement is True.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Quadrupling the \\$12,000 deposit gives
 
@@ -4284,13 +4252,13 @@ The computed value is approximately \$10,023.24, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+Read the present value recovered in the overview:
 
 $$
 \\mathrm{PDV}\\approx 10{,}023.24
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
@@ -4393,13 +4361,13 @@ The computed value is approximately \$26,190.41, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+From the overview’s recovered present value:
 
 $$
 \\mathrm{PDV}_{\\mathrm{cont}}\\approx 25{,}704.41
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
@@ -4464,13 +4432,13 @@ $$\\mathrm{PDV}_{\\mathrm{cont}} = 45{,}000e^{-0.56} \\approx 25{,}704.41$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
+The overview’s present-value line is
 
 $$
 e^{-0.225}\\approx 0.7985
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**B.** → True
@@ -4491,8 +4459,6 @@ The computed value is approximately \$119,777.40, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 A deposit of \\$110,000 grows by the reciprocal factor $e^{0.225}$:
 
@@ -4593,8 +4559,6 @@ The computed value is approximately 5.17, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 At a purchase price of \\$20,000,
 
 $$\\frac{25{,}000}{20{,}000}=1.25, \\qquad t=\\frac{\\ln(1.25)}{\\ln(1.06)}\\approx 3.83$$
@@ -4604,24 +4568,24 @@ The overview recovered $t\\approx 5.17$ at \\$18,500. We have $3.83<5.17$.
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
+From the overview’s recovered present value:
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
     ],
@@ -4814,13 +4778,13 @@ The computed value is approximately \$87,212.05, which matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+The overview’s present-value line is
 
 $$
 \\mathrm{PDV}_2\\approx 50{,}930.87
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
@@ -4893,8 +4857,6 @@ The computed value is approximately \$21,410.30, which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Option A is worth \$22,000 today. The overview recovered $\mathrm{PDV}_B \approx 21{,}410.30$. Comparing the two present values:
 
 $$22{,}000 > 21{,}410.30$$
@@ -4915,13 +4877,13 @@ Compare the computed value with the claim (\\$22,780.00). The two sides do not a
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 \\mathrm{PDV}_B\\approx 21{,}410.30
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
@@ -5001,29 +4963,27 @@ The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equa
 So the statement is False.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+From the overview’s recovered present value:
 
 $$
 f(23)\\approx 496{,}304.46
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+The overview’s present-value line is
 
 $$
 t^{*}=\\frac{2}{r}-2
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 At $t=25$,
 
@@ -5123,13 +5083,13 @@ The computed value is approximately \$32,732.47, which matches the claim.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 \\mathrm{PDV}_2\\approx 18{,}287.13
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → True
@@ -5185,35 +5145,35 @@ $$\\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
+From the overview’s recovered present value:
 
 $$
 \\mathrm{PDV}\\approx 35{,}234.40
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+The overview’s present-value line is
 
 $$
 r_a\\approx 5.13\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+Read the present value recovered in the overview:
 
 $$
 r_a\\approx 5.13\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → True
@@ -5387,29 +5347,27 @@ $$K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
+From the overview’s recovered present value:
 
 $$
 e^{-0.26}\\approx 0.7711
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+The overview’s present-value line is
 
 $$
 K\\approx 45{,}392.55
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered $K\\approx 45{,}392.55$. The excess over the immediate option is
 
@@ -5419,8 +5377,6 @@ The claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At $r=0.09$ the four-year factor changes:
 
@@ -5501,13 +5457,13 @@ Compare the computed value with the claim (\\$29,632.73). The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 f(t)=40{,}000e^{-0.03t}
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
@@ -5803,13 +5759,13 @@ The computed value is approximately \$37,513.95, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+From the overview’s recovered present value:
 
 $$
 \\mathrm{PDV}\\approx 227{,}406.98
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
@@ -5908,8 +5864,6 @@ The computed value is approximately 10.44%, which matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 At a \\$3,600,000 payout,
 
 $$r=-\\frac{\\ln\\!\\left(\\frac{2{,}000{,}000}{3{,}600{,}000}\\right)}{4.5}\\approx 0.1306=13.06\\%$$
@@ -5918,8 +5872,6 @@ The overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$.
 
 So the statement is True.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At a $3$-year horizon with the original discount factor $0.625$,
 
@@ -6114,35 +6066,35 @@ The computed value is approximately 0.4493, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+The overview’s present-value line is
 
 $$
 \\mathrm{PV}_1\\approx 20{,}109.60
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 \\mathrm{PV}_2\\approx 24{,}713.09
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
+From the overview’s recovered present value:
 
 $$
 \\mathrm{PDV}\\approx 44{,}822.69
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
     ],
@@ -6249,13 +6201,13 @@ The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
+The overview’s present-value line is
 
 $$
 s_5 \\approx 305.26
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
     ],
@@ -6483,8 +6435,6 @@ The claim is about $65\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 At the hypothetical quotient $k=1.10$,
 
 $$|k| = 1.10 \\ge 1$$
@@ -6565,13 +6515,13 @@ The overview already identified constant extraction as the $k=1$ case, where the
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 s_{10}\\approx 3{,}773{,}368
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
@@ -6775,13 +6725,13 @@ The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+From the overview’s recovered present value:
 
 $$
 |k|=0.5<1
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → True
@@ -6855,18 +6805,16 @@ That computed value matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+The overview’s present-value line is
 
 $$
 15
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered \\$240.28 million under growth and \\$180.00 million with no growth. The extra is
 
@@ -6956,13 +6904,13 @@ The computed value is approximately \$80,045.68, which matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+Read the present value recovered in the overview:
 
 $$
 s_{\\infty}=125{,}000
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
@@ -7040,13 +6988,13 @@ The finite-sum formula needs $k\\ne 1$. Here $k=1.08\\ne 1$, so $s_{12}$ is well
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+From the overview’s recovered present value:
 
 $$
 s_{12}\\approx 170{,}794.15
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
@@ -7342,13 +7290,13 @@ That computed value matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+The overview’s present-value line is
 
 $$
 s_{10}\\approx 4{,}573{,}179.83
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → True
@@ -7439,24 +7387,24 @@ nine years remain below the target.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+Read the present value recovered in the overview:
 
 $$
 s_{10}\\approx 3{,}509{,}747.01
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+From the overview’s recovered present value:
 
 $$
 s_9\\approx 2{,}955{,}131.26
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
@@ -7850,8 +7798,6 @@ Compare the computed value with the claim (about \\$650.00. The fourth benefit i
 So the statement is False.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The overview's test requires $p>1$. Here $p=1.5$, and
 
 $$1.5 > 1$$
@@ -7878,8 +7824,6 @@ so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for conv
 
 So the statement is False.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 At $p=0.5$,
 
@@ -8044,13 +7988,13 @@ That computed value matches the claim.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+The overview’s present-value line is
 
 $$
 s_{15}\\approx 24{,}188{,}328.05
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
@@ -8590,8 +8534,6 @@ The claim needs $15{,}702.97 > 35{,}000$. We have $15{,}702.97 < 35{,}000$.
 So the statement is False.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 At 10% the same ten deposits give
 
 $$F_{10}^{10\\%} = \\frac{3{,}500}{0.10}\\left[(1.10)^{10}-1\\right] \\approx 55{,}780.97$$
@@ -8657,8 +8599,6 @@ Those two figures agree.
 
 So the statement is True.`,
       `**B.** → True
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Fifteen withdrawals of \\$2,400 total
 
@@ -8873,8 +8813,6 @@ Compare the computed value with the claim (a saving of \\$1,811.82. We have $1{,
 So the statement is False.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 At 4% the same nine payments are worth
 
 $$P_9^{4\\%} = \\frac{2{,}500}{0.04}\\left[1-\\frac{1}{(1.04)^9}\\right] = 18{,}588.31$$
@@ -8896,8 +8834,6 @@ Compare the computed value with the claim (\\$4,600. We have $4{,}500 \\ne 4{,}6
 
 So the statement is False.`,
       `**E.** → False
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Growing Option 1's \\$18,000 for nine years at 7% gives
 
@@ -9004,8 +8940,6 @@ The claim is a gap of \\$5,769.72. We have $5{,}269.72 \\ne 5{,}769.72$.
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Strategy B commits eight deposits of \\$1,400:
 
@@ -9411,8 +9345,6 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The market price is \\$65.00. The overview recovered a fair value of \\$60.71:
 
 $$65.00 > 60.71$$
@@ -9430,8 +9362,6 @@ Compare the computed value with the claim (\\$116.25. We have $106.25 \\ne 116.2
 
 So the statement is False.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:
 
@@ -9541,8 +9471,6 @@ The claim needs more than $25\\%$. We have $21.74\\% < 25\\%$.
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 At 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is
 
 $$\\frac{383{,}333.33}{2} = 191{,}666.67$$
@@ -9605,8 +9533,6 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 With no growth the same first cash flow is a level perpetuity at 8%:
 
 $$P_{g=0} = \\frac{24{,}000}{0.08} = 300{,}000$$
@@ -9615,8 +9541,6 @@ The claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$.
 
 So the statement is False.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At 4% growth,
 
@@ -9776,8 +9700,6 @@ $$P = \\frac{3.09}{0.09-0.03} = \\frac{3.09}{0.06} = 51.50$$`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered $P_1=180{,}000$. A fair buy at a \\$170,000 asking price needs fair value at least that price:
 
 $$180{,}000 > 170{,}000$$
@@ -9786,8 +9708,6 @@ Deal 1 is a good buy.
 
 So the statement is True.`,
       `**B.** → True
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered $P_2=233{,}333.33$. The margin over the asking price is
 
@@ -9803,8 +9723,6 @@ Deal 1's margin is $180{,}000-170{,}000=10{,}000$. Deal 2's margin is $63{,}333.
 So the statement is False.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 At 1% growth, Deal 2 is worth
 
 $$P_2' = \\frac{14{,}000}{0.10-0.01} = \\frac{14{,}000}{0.09} \\approx 155{,}555.56$$
@@ -9814,13 +9732,13 @@ The claim needs $P_2' < 170{,}000$. We have $155{,}555.56 < 170{,}000$.
 So the statement is True.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
+Read the present value recovered in the overview:
 
 $$
 P_1=180{,}000
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
     ],
@@ -9880,13 +9798,13 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+From the overview’s recovered present value:
 
 $$
 S_0=129{,}213.75
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
@@ -9999,8 +9917,6 @@ That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The lump-sum lead is
 
@@ -10131,13 +10047,13 @@ The claim needs $37{,}500 < 36{,}221.88$. We have $37{,}500 > 36{,}221.88$.
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
+The overview’s present-value line is
 
 $$
 S=30{,}439.24
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
     ],
@@ -10607,8 +10523,6 @@ The claim is \$5,000.00. We have \$4,500.00, so the figures do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 After payment 3 the overview already carried the outstanding balance forward. That recovered figure is
 
 $$
@@ -10620,8 +10534,6 @@ The claim names \$20{,}602.37. The recovered balance and the claim agree.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 The overview recovered the year-3 closing balance as \\$20,602.37. Year-4 interest and principal are
 
 $$0.10 \\times 20{,}602.37 = 2{,}060.24$$
@@ -10632,8 +10544,6 @@ Then $2{,}060.24 < 9{,}810.65$.
 
 So the statement is False.`,
       `**E.** → False
-
-State what the overview already settled, then test whether the claim matches that result.
 
 Principal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00.
 
@@ -10715,8 +10625,6 @@ The computed value is approximately \$22,946.14, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 End-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$. Then
 
@@ -10837,8 +10745,6 @@ Compare the computed value with the claim (\\$49,682.53). The two sides agree.
 So the statement is True.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Total interest is total paid minus principal:
 
 $$49{,}682.53 - 35{,}000 = 14{,}682.53$$
@@ -10905,8 +10811,6 @@ The computed value is approximately \$535,526.07, which matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The overview recovered $PV_{\\mathrm{B}} \\approx 535{,}526.07$ at $10\\%$. Option A is \\$500,000 today. Then
 
 $$535{,}526.07 > 500{,}000$$
@@ -10916,13 +10820,13 @@ Option A is cheaper at $10\\%$.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
+Read the present value recovered in the overview:
 
 $$
 14\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**D.** → True
@@ -11253,8 +11157,6 @@ Compare the computed value with the claim (\\$210,000.00. We have about \\$213,1
 So the statement is False.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Nine full payments would be \\$225,000. Against the recovered total \\$213,100.16,
 
 $$225{,}000 - 213{,}100.16 = 11{,}899.84$$
@@ -11350,8 +11252,6 @@ Both claimed figures match those recovered values.
 So the statement is True.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Three due loan payments total
 
 $$3 \\times 16{,}176.12 = 48{,}528.36$$
@@ -11426,13 +11326,13 @@ The computed value is approximately \$521,162.27, which matches the claim.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+From the overview’s recovered present value:
 
 $$
 9\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → True
@@ -11682,18 +11582,16 @@ The computed value is approximately \$2,508,821.59, which matches the claim.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+The overview’s present-value line is
 
 $$
 7.5\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. Schedule I is \\$2,400,000. Then
 
@@ -11704,18 +11602,16 @@ Schedule I is cheaper than Schedule II at $7.5\\%$.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Read the present value recovered in the overview:
 
 $$
 11.5\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**E.** → False
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. Then
 
@@ -11800,8 +11696,6 @@ Then $347.83 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
 $$A = -8{,}000 + \\frac{9{,}600}{1.25} = -8{,}000 + 7{,}680 = -320$$
@@ -11810,8 +11704,6 @@ Then $-320 < 0$. The claim needs a positive NPV.
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 With payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is
 
@@ -11877,8 +11769,6 @@ The computed value is approximately 10.92%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Eight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is
 
@@ -11976,8 +11866,6 @@ The computed value is approximately 11.98%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Ten percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is
 
@@ -12113,8 +12001,6 @@ Both are positive. The claim needs Y negative.
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 With Y's payoff raised to \\$25,000,
 
 $$r_Y = \\frac{25{,}000}{22{,}000} - 1 \\approx 0.1364 = 13.64\\%$$
@@ -12177,13 +12063,13 @@ The computed value is approximately \$4,012, which matches the claim.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
+From the overview’s recovered present value:
 
 $$
 12\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**C.** → False
@@ -12209,8 +12095,6 @@ That computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
-
-State what the overview already settled, then test whether the claim matches that result.
 
 Year 1 is an installation outflow, so $a_1 = -3{,}000$. The later cash flows are not all positive.
 
@@ -12259,13 +12143,13 @@ $$A = -45{,}000 - \\frac{3{,}000}{1.15} + \\frac{28{,}000}{1.3225} + \\frac{35{,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
+The overview’s present-value line is
 
 $$
 10.78\\%
 $$
 
-That recovered value is not the figure on the card.
+Compare it with the amount printed in the claim. They do not match.
 
 So the statement is False.`,
       `**B.** → False
@@ -12367,8 +12251,6 @@ That computed value matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Ten percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is
 
 $$-40{,}000 + \\frac{22{,}000}{1.10} + \\frac{27{,}600}{1.21}$$
@@ -12379,8 +12261,6 @@ Then $2{,}809.92 > 0$.
 
 So the statement is True.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Twenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is
 
@@ -12401,8 +12281,6 @@ Compare the computed value with the claim (\\$9,600). The two sides agree.
 
 So the statement is True.`,
       `**E.** → True
-
-State what the overview already settled, then test whether the claim matches that result.
 
 The cash-flow signs are $-,+,+$, one sign change, hence a unique $r > -1$. The recovered $15\\%$ is that unique admissible root.
 
@@ -12756,8 +12634,6 @@ Each display above isolates one arithmetic step so the claim check is transparen
 
 So the statement is True.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.
 
