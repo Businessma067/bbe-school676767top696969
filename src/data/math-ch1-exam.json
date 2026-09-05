@@ -21,11 +21,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied, so the statement is True.",
-        "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim, so the statement is True.",
+        "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
         "**C.** → True\n\nEliminate each implication until both formulas have the same disjunctive form.\n\n$$p\\rightarrow(q\\rightarrow r)\\equiv\\neg p\\vee(\\neg q\\vee r)$$\n\n$$(p\\wedge q)\\rightarrow r\\equiv\\neg(p\\wedge q)\\vee r$$\n\n$$\\neg(p\\wedge q)\\vee r\\equiv\\neg p\\vee\\neg q\\vee r$$\n\nBoth formulas reduce to $\\neg p\\vee\\neg q\\vee r$, so the statement is True.",
-        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$,\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members,\n\nComparing the computed figure with the printed claim, so the statement is False."
+        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$,\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members,\n\nComparing the computed figure with the printed claim,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 109,
@@ -53,10 +53,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D|=52+41-18=75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel, so the statement is False.",
-        "**B.** → False\n\nOne truth assignment is enough to disprove a proposed logical equivalence.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q=F\\rightarrow T=T$$\n\n$$q\\rightarrow p=T\\rightarrow F=F$$\n\nThe original implication and its converse disagree, so the statement is False.",
-        "**C.** → False\n\nThe existential witness must stay fixed while the universal variable changes.\n\n$$x=1\\Longrightarrow y=3$$\n\n$$x=2\\Longrightarrow y=2$$\n\n$$3\\ne2$$\n\nNo single $y$ satisfies both required equations, so the statement is False.",
-        "**D.** → True\n\nFixing required and forbidden delegates leaves a free include-or-omit choice for everyone else.\n\n$$8-1-2=5$$\n\n$$\\#\\{\\text{admissible committees}\\}=2^5$$\n\n$$2^5=32$$\n\nExactly $32$ committees are possible, so the statement is True.",
+        "**A.** → False\n\nInclusion-exclusion counts the union before its complement in the conference.\n\n$$|L\\cup D|=|L|+|D|-|L\\cap D|$$\n\n$$|L\\cup D|=52+41-18=75$$\n\n$$90-75=15\\ne17$$\n\nExactly $15$ people attended neither panel,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
+        "**B.** → False\n\nOne truth assignment is enough to disprove a proposed logical equivalence.\n\n$$(p,q)=(F,T)$$\n\n$$p\\rightarrow q=F\\rightarrow T=T$$\n\n$$q\\rightarrow p=T\\rightarrow F=F$$\n\nThe original implication and its converse disagree,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe existential witness must stay fixed while the universal variable changes.\n\n$$x=1\\Longrightarrow y=3$$\n\n$$x=2\\Longrightarrow y=2$$\n\n$$3\\ne2$$\n\nNo single $y$ satisfies both required equations,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nFixing required and forbidden delegates leaves a free include-or-omit choice for everyone else.\n\n$$8-1-2=5$$\n\n$$\\#\\{\\text{admissible committees}\\}=2^5$$\n\n$$2^5=32$$\n\nExactly $32$ committees are possible,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is True.",
         "**E.** → True\n\nAn element outside a union must be outside each set separately.\n\n$$x\\in(A\\cup B)^c\\Longleftrightarrow x\\notin A\\cup B$$\n\n$$x\\notin A\\cup B\\Longleftrightarrow(x\\notin A)\\wedge(x\\notin B)$$\n\n$$(x\\notin A)\\wedge(x\\notin B)\\Longleftrightarrow x\\in A^c\\cap B^c$$\n\nBoth sides have the same elements, so the statement is True."
       ],
       "difficulty_level": "4/5",
@@ -85,10 +85,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law, so the statement is True.",
-        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness,\n\nComparing the computed figure with the printed claim, so the statement is True.",
+        "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness,\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
         "**C.** → False\n\nRepeated roster entries do not create new elements of a set.\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2\\ne3$$\n\nThe equality is correct but the claimed cardinality is not, so the statement is False.",
-        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B|=18-5=13$$\n\n$$|B\\setminus A|=14-5=9$$\n\n$$|A\\triangle B|=13+9=22\\ne23$$\n\nThe symmetric difference has size $22$, so the statement is False.",
+        "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B|=18-5=13$$\n\n$$|B\\setminus A|=14-5=9$$\n\n$$|A\\triangle B|=13+9=22\\ne23$$\n\nThe symmetric difference has size $22$,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
         "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p=T\\Longrightarrow p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false, so the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -117,9 +117,9 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness, so the statement is False.",
-        "**B.** → True\n\nApply the power-set cardinality rule once at each level.\n\n$$|X|=3$$\n\n$$|\\mathcal P(X)|=2^3=8$$\n\n$$|\\mathcal P(\\mathcal P(X))|=2^8=256$$\n\nThe second power set has the claimed size, so the statement is True.",
-        "**C.** → True\n\nThree-set inclusion-exclusion removes pairwise double counts and restores the triple overlap.\n\n$$|A\\cup D\\cup M|=46+39+31-17-12-10+4$$\n\n$$|A\\cup D\\cup M|=116-39+4$$\n\n$$|A\\cup D\\cup M|=81$$\n\nThe at-least-one count is $81$, so the statement is True.",
+        "**A.** → False\n\nAny proposed greatest integer has a strictly larger successor.\n\n$$g\\in\\mathbb Z$$\n\n$$n=g+1\\in\\mathbb Z$$\n\n$$g+1\\le g\\Longleftrightarrow1\\le0$$\n\nThe successor $g+1$ defeats every proposed witness,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**B.** → True\n\nApply the power-set cardinality rule once at each level.\n\n$$|X|=3$$\n\n$$|\\mathcal P(X)|=2^3=8$$\n\n$$|\\mathcal P(\\mathcal P(X))|=2^8=256$$\n\nThe second power set has the claimed size,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is True.",
+        "**C.** → True\n\nThree-set inclusion-exclusion removes pairwise double counts and restores the triple overlap.\n\n$$|A\\cup D\\cup M|=46+39+31-17-12-10+4$$\n\n$$|A\\cup D\\cup M|=116-39+4$$\n\n$$|A\\cup D\\cup M|=81$$\n\nThe at-least-one count is $81$,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
         "**D.** → True\n\nThe last two conjuncts force values that make the first conjunct false.\n\n$$\\neg p\\wedge\\neg q=T\\Longrightarrow(p,q)=(F,F)$$\n\n$$(p,q)=(F,F)\\Longrightarrow p\\vee q=F$$\n\n$$(p\\vee q)\\wedge\\neg p\\wedge\\neg q=F$$\n\nThe formula is false on every assignment, so the statement is True.",
         "**E.** → True\n\nMove the negation inward by switching each quantifier in order.\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\neg[\\exists y\\ R(x,y)]$$\n\n$$\\neg[\\exists y\\ R(x,y)]\\equiv\\forall y\\ \\neg R(x,y)$$\n\n$$\\neg[\\forall x\\ \\exists y\\ R(x,y)]\\equiv\\exists x\\ \\forall y\\ \\neg R(x,y)$$\n\nThe displayed sentence is the correct negation, so the statement is True."
       ],
@@ -149,8 +149,8 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions,\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants, so the statement is False.",
+        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions,\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
         "**C.** → True\n\nThe formula requires at least one true proposition but forbids both from being true.\n\n$$(p,q)=(T,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)=(F,T)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(T,T),(F,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=F$$\n\nExactly the two mixed rows satisfy the formula, so the statement is True.",
         "**D.** → True\n\nFollowing one arbitrary novelist through the two premises forces the negated property.\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nThe universal conclusion follows, so the statement is True.",
         "**E.** → True\n\nThe empty set can be listed as an element and is also a subset of every set.\n\n$$\\emptyset\\in\\{\\emptyset,\\{\\emptyset\\}\\}$$\n\n$$\\forall z\\,(z\\in\\emptyset\\Longrightarrow z\\in E)$$\n\n$$\\emptyset\\subseteq E$$\n\nBoth uses of the empty set are valid, so the statement is True."
@@ -181,10 +181,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct, so the statement is True.",
+        "**A.** → True\n\nList the coded sets, form their union, and then retain the unused universal elements.\n\n$$A=\\{3,6,9,12,15\\}$$\n\n$$A\\cup B=\\{1,2,3,4,6,9,12,15\\}$$\n\n$$U\\setminus(A\\cup B)=\\{5,7,8,10,11,13,14\\}$$\n\nThe complement roster is correct,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
         "**B.** → True\n\nA biconditional is true exactly when its two propositions agree.\n\n$$(p,q)=(T,T)\\Longrightarrow p\\wedge q=T$$\n\n$$(p,q)=(F,F)\\Longrightarrow\\neg p\\wedge\\neg q=T$$\n\n$$p\\leftrightarrow q\\equiv(p\\wedge q)\\vee(\\neg p\\wedge\\neg q)$$\n\nThe right side selects exactly the agreement rows, so the statement is True.",
-        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$V(\\mathrm{Lee})=F,\\quad M(\\mathrm{Lee})=T$$\n\nThe last line is a countermodel to the conclusion, so the statement is False.",
-        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible, so the statement is False.",
+        "**C.** → False\n\nMembership in the larger class does not force membership in its subclass.\n\n$$\\forall x\\,(V(x)\\rightarrow M(x))$$\n\n$$M(\\mathrm{Lee})=T$$\n\n$$V(\\mathrm{Lee})=F,\\quad M(\\mathrm{Lee})=T$$\n\nThe last line is a countermodel to the conclusion,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**D.** → False\n\nStrict inclusion forces bounds on the middle cardinality but does not select one value.\n\n$$|A|<|B|<|C|$$\n\n$$2<|B|<5$$\n\n$$|B|\\in\\{3,4\\}$$\n\nA three-element middle set is also possible,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
         "**E.** → True\n\nSubtract the triple intersection from each pairwise count before adding the disjoint regions.\n\n$$|A\\cap B\\text{ only}|=15-5=10$$\n\n$$|A\\cap C\\text{ only}|=13-5=8,\\qquad|B\\cap C\\text{ only}|=11-5=6$$\n\n$$10+8+6=24$$\n\nThe exactly-two total is $24$, so the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -214,10 +214,10 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nCompare the formulas on an assignment where the antecedent holds and the consequent fails.\n\n$$(p,q)=(T,F)$$\n\n$$p\\rightarrow q=T\\rightarrow F=F$$\n\n$$\\neg p\\rightarrow\\neg q=F\\rightarrow T=T$$\n\nThe inverse can differ from the original implication, so the statement is False.",
-        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$, so the statement is False.",
-        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$|\\mathcal P(S)|=2^5=32$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets, so the statement is False.",
+        "**B.** → False\n\nA negative input supplies a counterexample because real squares are nonnegative.\n\n$$x=-1\\in\\mathbb R$$\n\n$$\\forall y\\in\\mathbb R,\\quad y^2\\ge0$$\n\n$$y^2=-1\\ \\text{has no real solution}$$\n\nThe universal claim fails at $x=-1$,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**C.** → False\n\nEven and odd subset sizes split the full power set into equal halves.\n\n$$|\\mathcal P(S)|=2^5=32$$\n\n$$\\#\\{\\text{even subsets}\\}=\\frac{32}{2}$$\n\n$$\\frac{32}{2}=16\\ne15$$\n\nThere are $16$ even-cardinality subsets,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is False.",
         "**D.** → False\n\nEvaluating both sides reveals that the proposed placement of the intersection is not distributive.\n\n$$B\\cap C=\\emptyset\\Longrightarrow A\\cup(B\\cap C)=\\{1\\}$$\n\n$$A\\cup B=\\{1,2\\}$$\n\n$$(A\\cup B)\\cap C=\\emptyset\\ne\\{1\\}$$\n\nThe two sides are different, so the statement is False.",
-        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent, so the statement is False."
+        "**E.** → False\n\nA counterexample isolates the missing factor of $p\\vee r$ in the proposed expression.\n\n$$(p,q,r)=(T,F,F)$$\n\n$$p\\vee(q\\wedge r)=T\\vee(F\\wedge F)=T$$\n\n$$(p\\vee q)\\wedge r=(T\\vee F)\\wedge F=F$$\n\nThe formulas are not equivalent,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 115,
@@ -245,9 +245,9 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence, so the statement is True.",
+        "**A.** → True\n\nThe additive identity is one fixed witness that works for every integer input.\n\n$$x=0$$\n\n$$x+y=0+y$$\n\n$$0+y=y\\quad\\text{for every }y\\in\\mathbb Z$$\n\nThe witness $x=0$ proves the sentence,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nSolving the defining equation identifies elements before any membership claim is checked.\n\n$$n^2=16\\Longleftrightarrow n\\in\\{-4,4\\}$$\n\n$$A=\\{-4,4\\}$$\n\n$$4\\in A\\quad\\text{but}\\quad\\{4\\}\\notin A$$\n\nThe singleton $\\{4\\}$ is not one of the integer elements, so the statement is False.",
-        "**C.** → False\n\nA union cannot contain more people than the survey population.\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=70+50-10=110$$\n\n$$110>|U|=100$$\n\nThe three reported figures are inconsistent, so the statement is False.",
+        "**C.** → False\n\nA union cannot contain more people than the survey population.\n\n$$|A\\cup B|=|A|+|B|-|A\\cap B|$$\n\n$$|A\\cup B|=70+50-10=110$$\n\n$$110>|U|=100$$\n\nThe three reported figures are inconsistent,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
         "**D.** → True\n\nAn implication is false only when its antecedent is true and its consequent is false.\n\n$$p\\rightarrow(q\\vee r)=F\\Longleftrightarrow p=T\\ \\text{and}\\ q\\vee r=F$$\n\n$$q\\vee r=F\\Longleftrightarrow(q,r)=(F,F)$$\n\n$$(p,q,r)=(T,F,F)$$\n\nThere is exactly one falsifying assignment, so the statement is True.",
         "**E.** → False\n\nDifferent domain elements may satisfy different sides of the disjunction.\n\n$$D=\\{1,2\\},\\quad P(x)\\Longleftrightarrow x=1,\\quad Q(x)\\Longleftrightarrow x=2$$\n\n$$\\forall x\\in D\\,(P(x)\\vee Q(x))=T$$\n\n$$(\\forall x\\in D\\,P(x))\\vee(\\forall x\\in D\\,Q(x))=F\\vee F=F$$\n\nThe countermodel separates the two formulas, so the statement is False."
       ],
@@ -277,11 +277,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$, so the statement is True.",
-        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$$\n\nThe proposed identity follows, so the statement is True.",
+        "**A.** → True\n\nThe excluded endpoints are two distinct members of the power set.\n\n$$|\\mathcal P(S)|=2^4=16$$\n\n$$\\#\\{\\text{nonempty proper subsets}\\}=16-2$$\n\n$$16-2=14$$\n\nThe remaining subset count is $14$,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is True.",
+        "**B.** → True\n\nRewrite difference as an intersection before applying De Morgan's law.\n\n$$A\\setminus B=A\\cap B^c$$\n\n$$(A\\setminus B)^c=(A\\cap B^c)^c$$\n\n$$(A\\cap B^c)^c=A^c\\cup(B^c)^c=A^c\\cup B$$\n\nThe proposed identity follows,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
         "**C.** → False\n\nRewrite the implication as a disjunction before applying negation.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg(p\\rightarrow q)\\equiv\\neg(\\neg p\\vee q)$$\n\n$$\\neg(\\neg p\\vee q)\\equiv p\\wedge\\neg q$$\n\nThe claimed formula reverses both required truth values, so the statement is False.",
         "**D.** → True\n\nA witness for the disjunction witnesses at least one side, and either side supplies a witness for the disjunction.\n\n$$\\exists x\\,(P(x)\\vee Q(x))\\Longrightarrow(\\exists x\\,P(x))\\vee(\\exists x\\,Q(x))$$\n\n$$\\exists x\\,P(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\n$$\\exists x\\,Q(x)\\Longrightarrow\\exists x\\,(P(x)\\vee Q(x))$$\n\nBoth directions of the equivalence hold, so the statement is True.",
-        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B,\\qquad g\\in B\\setminus A,\\qquad g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$, so the statement is True."
+        "**E.** → True\n\nEach ground element has three possible locations in a nested ordered pair.\n\n$$g\\notin B,\\qquad g\\in B\\setminus A,\\qquad g\\in A$$\n\n$$\\#\\{(A,B):A\\subseteq B\\subseteq G\\}=3^{|G|}$$\n\n$$3^4=81$$\n\nThe ordered-pair count is $81$,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 117,
@@ -312,8 +312,8 @@
         "**A.** → True\n\nSymmetric difference records unequal membership, so its complement records equal membership.\n\n$$A\\triangle B=(A\\cap B^c)\\cup(A^c\\cap B)$$\n\n$$x\\notin A\\triangle B\\Longleftrightarrow[x\\in A\\Longleftrightarrow x\\in B]$$\n\n$$(A\\triangle B)^c=(A\\cap B)\\cup(A^c\\cap B^c)$$\n\nThe description matches the complement, so the statement is True.",
         "**B.** → True\n\nImplication elimination puts the original and contrapositive into the same disjunction.\n\n$$p\\rightarrow q\\equiv\\neg p\\vee q$$\n\n$$\\neg q\\rightarrow\\neg p\\equiv\\neg(\\neg q)\\vee\\neg p$$\n\n$$q\\vee\\neg p\\equiv\\neg p\\vee q$$\n\nThe two formulas are logically equivalent, so the statement is True.",
         "**C.** → True\n\nApply the universal implication to the witness supplied by the existential premise.\n\n$$\\forall x\\,(M(x)\\rightarrow L(x))$$\n\n$$\\exists x\\,M(x)\\Longrightarrow M(a)$$\n\n$$M(a)\\rightarrow L(a)\\Longrightarrow\\exists x\\,L(x)$$\n\nA licensed witness is forced, so the statement is True.",
-        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails, so the statement is False.",
-        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$|D\\setminus C|=28-11=17$$\n\n$$|C\\setminus D|=24-11=13$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group, so the statement is False."
+        "**D.** → False\n\nMembers of a power set are subsets of the original set, not its bare symbols.\n\n$$\\{r\\}\\subseteq S\\Longrightarrow\\{r\\}\\in\\mathcal P(S)$$\n\n$$r\\in S$$\n\n$$r\\notin\\mathcal P(S)$$\n\nThe second membership assertion fails,\n\nThe power-set count doubles with each additional ground-set element.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe just-one total is the sum of the two exclusive regions.\n\n$$|D\\setminus C|=28-11=17$$\n\n$$|C\\setminus D|=24-11=13$$\n\n$$17+13=30\\ne35$$\n\nExactly $30$ animals are in just one group,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 118,
@@ -341,11 +341,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nRead the morning and evening rosters from the stem and keep only the names that appear in both:\n\n$$M=\\{Ada,Cleo,Eli,Finn\\}$$\n\n$$E=\\{Ben,Cleo,Dara,Finn\\}$$\n\n$$M\\cap E=\\{Cleo,Finn\\}$$\n\nThat roster is exactly the claimed intersection.\n\nso the statement is True.",
-        "**B.** → False\n\nForm the union by listing every name that appears in $M$ or in $E$ (or both):\n\n$$M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$$\n\n$$|M\\cup E|=6$$\n\nThe claim says the union has size $7$, but the computed size is $6$.\n\nso the statement is False.",
-        "**C.** → True\n\nRemove from the prize shortlist every name that already sits in the morning team:\n\n$$P=\\{Ada,Dara,Finn,Gia\\}$$\n\n$$P\\setminus M=\\{Dara,Gia\\}$$\n\nThe remaining roster matches the claim.\n\nso the statement is True.",
+        "**A.** → True\n\nRead the morning and evening rosters from the stem and keep only the names that appear in both:\n\n$$M=\\{Ada,Cleo,Eli,Finn\\}$$\n\n$$E=\\{Ben,Cleo,Dara,Finn\\}$$\n\n$$M\\cap E=\\{Cleo,Finn\\}$$\n\nThat roster is exactly the claimed intersection.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**B.** → False\n\nForm the union by listing every name that appears in $M$ or in $E$ (or both):\n\n$$M\\cup E=\\{Ada,Ben,Cleo,Dara,Eli,Finn\\}$$\n\n$$|M\\cup E|=6$$\n\nThe claim says the union has size $7$, but the computed size is $6$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**C.** → True\n\nRemove from the prize shortlist every name that already sits in the morning team:\n\n$$P=\\{Ada,Dara,Finn,Gia\\}$$\n\n$$P\\setminus M=\\{Dara,Gia\\}$$\n\nThe remaining roster matches the claim.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
         "**D.** → False\n\nElements of $P$ are individual names. The object $\\{Ada,Finn\\}$ is a two-element set of names, not one of those names:\n\n$$Ada\\in P,\\qquad Finn\\in P$$\n\n$$\\{Ada,Finn\\}\\notin P$$\n\nMembership fails, even though both people appear separately in $P$.\n\nso the statement is False.",
-        "**E.** → False\n\nSymmetric difference is the disjoint union of the two exclusive regions:\n\n$$M\\setminus E=\\{Ada,Eli\\}$$\n\n$$E\\setminus M=\\{Ben,Dara\\}$$\n\n$$|M\\triangle E|=2+2=4\\neq 3$$\n\nThe size is $4$, not $3$.\n\nso the statement is False."
+        "**E.** → False\n\nSymmetric difference is the disjoint union of the two exclusive regions:\n\n$$M\\setminus E=\\{Ada,Eli\\}$$\n\n$$E\\setminus M=\\{Ben,Dara\\}$$\n\n$$|M\\triangle E|=2+2=4\\neq 3$$\n\nThe size is $4$, not $3$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 119,
@@ -373,11 +373,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThree-set inclusion-exclusion recovers the union first:\n\n$$|A\\cup B\\cup C|=105+92+80-48-41-36+20$$\n\n$$|A\\cup B\\cup C|=172$$\n\nThe outside region is then\n\n$$180-172=8$$\n\nExactly $8$ participants take none of the three courses.\n\nso the statement is True.",
-        "**B.** → False\n\nOnly-analytics removes the two pairwise overlaps and restores the triple count once:\n\n$$|A\\setminus(B\\cup C)|=105-48-41+20$$\n\n$$=36\\neq 56$$\n\nThe analytics-only region is $36$, not $56$.\n\nso the statement is False.",
+        "**A.** → True\n\nThree-set inclusion-exclusion recovers the union first:\n\n$$|A\\cup B\\cup C|=105+92+80-48-41-36+20$$\n\n$$|A\\cup B\\cup C|=172$$\n\nThe outside region is then\n\n$$180-172=8$$\n\nExactly $8$ participants take none of the three courses.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
+        "**B.** → False\n\nOnly-analytics removes the two pairwise overlaps and restores the triple count once:\n\n$$|A\\setminus(B\\cup C)|=105-48-41+20$$\n\n$$=36\\neq 56$$\n\nThe analytics-only region is $36$, not $56$.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
         "**C.** → True\n\nExactly two courses means the three pairwise-only regions.\n\nSubtract the triple from each pairwise overlap, then add:\n\n$$(48-20)+(41-20)+(36-20)$$\n\n$$=28+21+16$$\n\n$$=65$$\n\nExactly $65$ participants take exactly two courses, matching the claim. So the statement is True.",
-        "**D.** → False\n\nAt least two courses counts exactly-two participants together with the triple overlap.\n\nExactly-two was recovered as $65$, and the triple has size $20$, so\n\n$$65+20=85$$\n\nThe claim asserts $65$, which omits the all-three participants. So the statement is False.",
-        "**E.** → True\n\nOnly-compliance removes the compliance pairwise overlaps and restores the triple once.\n\n$$|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$=80-41-36+20$$\n\n$$=23$$\n\nExactly $23$ take only compliance, matching the claim. So the statement is True."
+        "**D.** → False\n\nAt least two courses counts exactly-two participants together with the triple overlap.\n\nExactly-two was recovered as $65$, and the triple has size $20$, so\n\n$$65+20=85$$\n\nThe claim asserts $65$, which omits the all-three participants.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False.",
+        "**E.** → True\n\nOnly-compliance removes the compliance pairwise overlaps and restores the triple once.\n\n$$|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$=80-41-36+20$$\n\n$$=23$$\n\nExactly $23$ take only compliance, matching the claim.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 120,
@@ -405,11 +405,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute a valid badge with current training into the door formula:\n\n$$(p,q,r)=(T,T,*)$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=(T\\wedge T)\\vee(T\\wedge *)=T$$\n\nThe first disjunct already opens the door.\n\nso the statement is True.",
-        "**B.** → False\n\nAn invalid badge forces both opening conjuncts to fail:\n\n$$p=F$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=F$$\n\nA supervisor cannot open the door when $p$ is false.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**C.** → True\n\nFactor the common badge proposition out of the door formula.\n\nStart from the given disjunction:\n\n$$(p\\wedge q)\\vee(p\\wedge r)$$\n\nPull out $p$:\n\n$$\\equiv p\\wedge(q\\vee r)$$\n\nThat is exactly the claimed equivalent form. So the statement is True.",
-        "**D.** → False\n\nWith $p=T$, the pair $(q,r)$ must be one of $(T,T)$, $(T,F)$, or $(F,T)$:\n\n$$\\#\\{(p,q,r):p\\wedge(q\\vee r)\\}=3\\neq 4$$\n\nOnly three of the eight assignments open the door.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**E.** → False\n\nThe alarm lives on the single assignment $(T,F,F)$. On that row:\n\n$$q\\vee r=F$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nSo the door is closed whenever the alarm sounds.\n\nComparing the computed figure with the printed claim, so the statement is False."
+        "**A.** → True\n\nSubstitute a valid badge with current training into the door formula:\n\n$$(p,q,r)=(T,T,*)$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=(T\\wedge T)\\vee(T\\wedge *)=T$$\n\nThe first disjunct already opens the door.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**B.** → False\n\nAn invalid badge forces both opening conjuncts to fail:\n\n$$p=F$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=F$$\n\nA supervisor cannot open the door when $p$ is false.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**C.** → True\n\nFactor the common badge proposition out of the door formula.\n\nStart from the given disjunction:\n\n$$(p\\wedge q)\\vee(p\\wedge r)$$\n\nPull out $p$:\n\n$$\\equiv p\\wedge(q\\vee r)$$\n\nThat is exactly the claimed equivalent form.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**D.** → False\n\nWith $p=T$, the pair $(q,r)$ must be one of $(T,T)$, $(T,F)$, or $(F,T)$:\n\n$$\\#\\{(p,q,r):p\\wedge(q\\vee r)\\}=3\\neq 4$$\n\nOnly three of the eight assignments open the door.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe alarm lives on the single assignment $(T,F,F)$. On that row:\n\n$$q\\vee r=F$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nSo the door is closed whenever the alarm sounds.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 121,
@@ -437,11 +437,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nCheck every priority parcel against the scanned set:\n\n$$P=\\{a,c\\},\\qquad S=\\{a,b,c\\}$$\n\n$$a\\in S,\\qquad c\\in S$$\n\nEvery priority parcel is scanned, so the universal implication holds.\n\nso the statement is True.",
-        "**B.** → True\n\nA single witness is enough for an existential claim. Parcel $c$ lies in both sets:\n\n$$c\\in P\\cap L=\\{c\\}$$\n\n$$P(c)\\wedge L(c)$$\n\nThe required joint witness exists.\n\nso the statement is True.",
-        "**C.** → False\n\nUniversal claims fail from one counterexample. Parcel $c$ is scanned and late:\n\n$$c\\in S\\cap L$$\n\n$$S(c)\\wedge L(c)$$\n\nSo scanned does not imply not-late.\n\nso the statement is False.",
-        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$S\\cup L=\\{a,b,c,d\\}=D$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**E.** → True\n\nAn existential claim needs one late parcel that is not priority.\n\nThe late roster is $L=\\{c,d\\}$. Check priority:\n\n$$c\\in P$$\n\n$$d\\notin P$$\n\nParcel $d$ is late and not priority, so $\\exists x\\,(L(x)\\wedge\\neg P(x))$ holds. So the statement is True."
+        "**A.** → True\n\nCheck every priority parcel against the scanned set:\n\n$$P=\\{a,c\\},\\qquad S=\\{a,b,c\\}$$\n\n$$a\\in S,\\qquad c\\in S$$\n\nEvery priority parcel is scanned, so the universal implication holds.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nA single witness is enough for an existential claim. Parcel $c$ lies in both sets:\n\n$$c\\in P\\cap L=\\{c\\}$$\n\n$$P(c)\\wedge L(c)$$\n\nThe required joint witness exists.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**C.** → False\n\nUniversal claims fail from one counterexample. Parcel $c$ is scanned and late:\n\n$$c\\in S\\cap L$$\n\n$$S(c)\\wedge L(c)$$\n\nSo scanned does not imply not-late.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
+        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$S\\cup L=\\{a,b,c,d\\}=D$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**E.** → True\n\nAn existential claim needs one late parcel that is not priority.\n\nThe late roster is $L=\\{c,d\\}$. Check priority:\n\n$$c\\in P$$\n\n$$d\\notin P$$\n\nParcel $d$ is late and not priority, so $\\exists x\\,(L(x)\\wedge\\neg P(x))$ holds.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 122,
@@ -469,11 +469,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIntersect the core and elective rosters label by label:\n\n$$C=\\{a,b,d,f\\}$$\n\n$$E=\\{b,c,e,f,g\\}$$\n\n$$C\\cap E=\\{b,f\\}$$\n\nThe shared labels match the claim.\n\nso the statement is True.",
-        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**C.** → False\n\nRemove audited labels from the core set:\n\n$$C\\setminus A=\\{b,d\\}$$\n\nThe claim listed $\\{b,d,f\\}$, but $f$ is audited and must leave. The true difference is $\\{b,d\\}$.\n\nso the statement is False.",
-        "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$=9-4=5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False.\n\nSo the statement is False."
+        "**A.** → True\n\nIntersect the core and elective rosters label by label:\n\n$$C=\\{a,b,d,f\\}$$\n\n$$E=\\{b,c,e,f,g\\}$$\n\n$$C\\cap E=\\{b,f\\}$$\n\nThe shared labels match the claim.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**C.** → False\n\nRemove audited labels from the core set:\n\n$$C\\setminus A=\\{b,d\\}$$\n\nThe claim listed $\\{b,d,f\\}$, but $f$ is audited and must leave. The true difference is $\\{b,d\\}$.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$=9-4=5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -501,11 +501,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply three-set inclusion-exclusion to the service totals:\n\n$$|M\\cup I\\cup S|=138+124+96-68-52-46+28$$\n\n$$=220$$\n\n$$240-220=20$$\n\nExactly $20$ customers use none of the services.\n\nso the statement is True.",
+        "**A.** → True\n\nApply three-set inclusion-exclusion to the service totals:\n\n$$|M\\cup I\\cup S|=138+124+96-68-52-46+28$$\n\n$$=220$$\n\n$$240-220=20$$\n\nExactly $20$ customers use none of the services.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
         "**B.** → True\n\nExactly one service is the sum of the three only-one regions.\n\nOnly-mobile: $138-68-52+28=46$.\n\nOnly-internet: $124-68-46+28=38$.\n\nOnly-streaming: $96-52-46+28=26$.\n\nAdd them:\n\n$$46+38+26=110$$\n\nExactly $110$ customers use exactly one service. So the statement is True.",
-        "**C.** → False\n\nMobile and internet only means the pairwise overlap minus the all-three customers.\n\n$$|M\\cap I\\setminus S|=68-28=40$$\n\nThe claim asserts $68$, which is the raw pairwise count before removing the triple. So the statement is False.",
-        "**D.** → False\n\nAt least two services is the sum of the three pair-only regions and the triple:\n\n$$(68-28)+(52-28)+(46-28)+28$$\n\n$$=40+24+18+28=110\\neq 82$$\n\nThe correct at-least-two total is $110$.\n\nso the statement is False.",
-        "**E.** → False\n\nOnly streaming removes the streaming pairwise overlaps and restores the triple.\n\n$$96-52-46+28=26$$\n\nThe claim asserts $34$. Since $26\\ne34$, the statement is False.\n\nSo the statement is False."
+        "**C.** → False\n\nMobile and internet only means the pairwise overlap minus the all-three customers.\n\n$$|M\\cap I\\setminus S|=68-28=40$$\n\nThe claim asserts $68$, which is the raw pairwise count before removing the triple.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
+        "**D.** → False\n\nAt least two services is the sum of the three pair-only regions and the triple:\n\n$$(68-28)+(52-28)+(46-28)+28$$\n\n$$=40+24+18+28=110\\neq 82$$\n\nThe correct at-least-two total is $110$.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**E.** → False\n\nOnly streaming removes the streaming pairwise overlaps and restores the triple.\n\n$$96-52-46+28=26$$\n\nThe claim asserts $34$. Since $26\\ne34$, the statement is False.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 124,
@@ -533,11 +533,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute the given assignment into the shipping rule:\n\n$$(p,q,r)=(T,F,T)$$\n\n$$q\\vee r=F\\vee T=T$$\n\n$$p\\wedge(q\\vee r)=T$$\n\nThe override alone is enough to ship when inventory matches.\n\nso the statement is True.",
-        "**B.** → True\n\nShipping needs $q\\vee r=T$, while holding needs $q=r=F$:\n\n$$S=p\\wedge(q\\vee r)$$\n\n$$H=p\\wedge\\neg q\\wedge\\neg r$$\n\nThose conditions on $(q,r)$ cannot hold together, so $S$ and $H$ are disjoint.\n\nso the statement is True.",
-        "**C.** → False\n\nFalse inventory forces the shipping conjunction to fail regardless of payment or override:\n\n$$(p,q,r)=(F,T,T)$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nThe order does not ship.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**D.** → False\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**E.** → False\n\nHolding requires matching inventory, while rejection requires a mismatch:\n\n$$H\\Longrightarrow p=T$$\n\n$$J=\\neg p\\Longrightarrow p=F$$\n\nNo assignment can be both held and rejected.\n\nso the statement is False."
+        "**A.** → True\n\nSubstitute the given assignment into the shipping rule:\n\n$$(p,q,r)=(T,F,T)$$\n\n$$q\\vee r=F\\vee T=T$$\n\n$$p\\wedge(q\\vee r)=T$$\n\nThe override alone is enough to ship when inventory matches.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nShipping needs $q\\vee r=T$, while holding needs $q=r=F$:\n\n$$S=p\\wedge(q\\vee r)$$\n\n$$H=p\\wedge\\neg q\\wedge\\neg r$$\n\nThose conditions on $(q,r)$ cannot hold together, so $S$ and $H$ are disjoint.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nFalse inventory forces the shipping conjunction to fail regardless of payment or override:\n\n$$(p,q,r)=(F,T,T)$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nThe order does not ship.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**D.** → False\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**E.** → False\n\nHolding requires matching inventory, while rejection requires a mismatch:\n\n$$H\\Longrightarrow p=T$$\n\n$$J=\\neg p\\Longrightarrow p=F$$\n\nNo assignment can be both held and rejected.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 125,
@@ -565,11 +565,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nUniversal claims fail from one counterexample. Cy is a team lead outside the certified set:\n\n$$L=\\{Ava,Cy\\},\\qquad C=\\{Ava,Bo,Di\\}$$\n\n$$Cy\\in L,\\qquad Cy\\notin C$$\n\nSo not every team lead is certified.\n\nso the statement is False.",
-        "**B.** → True\n\nBo belongs to both the certified and remote rosters:\n\n$$Bo\\in C\\cap R=\\{Bo\\}$$\n\nThat single witness makes the existential claim true.\n\nso the statement is True.",
-        "**C.** → False\n\nBo is remote but is not listed as a team lead:\n\n$$Bo\\in R,\\qquad Bo\\notin L$$\n\nRemote does not universally imply lead.\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**D.** → False\n\nForm the union of certified and remote employees:\n\n$$C\\cup R=\\{Ava,Bo,Cy,Di\\}$$\n\nThat union is the whole four-person domain, so\n\n$$|\\{x:\\neg C(x)\\wedge\\neg R(x)\\}|=0\\neq 1$$\n\nNobody is outside both sets.\n\nso the statement is False.",
-        "**E.** → True\n\nAn existential claim needs one team lead outside the remote set.\n\nLeads are $L=\\{Ava,Cy\\}$. Check remote membership:\n\n$$Ava\\notin R$$\n\n$$Cy\\in R$$\n\nAva is a non-remote lead, so $\\exists x\\,(L(x)\\wedge\\neg R(x))$ holds. So the statement is True."
+        "**A.** → False\n\nUniversal claims fail from one counterexample. Cy is a team lead outside the certified set:\n\n$$L=\\{Ava,Cy\\},\\qquad C=\\{Ava,Bo,Di\\}$$\n\n$$Cy\\in L,\\qquad Cy\\notin C$$\n\nSo not every team lead is certified.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**B.** → True\n\nBo belongs to both the certified and remote rosters:\n\n$$Bo\\in C\\cap R=\\{Bo\\}$$\n\nThat single witness makes the existential claim true.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**C.** → False\n\nBo is remote but is not listed as a team lead:\n\n$$Bo\\in R,\\qquad Bo\\notin L$$\n\nRemote does not universally imply lead.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
+        "**D.** → False\n\nForm the union of certified and remote employees:\n\n$$C\\cup R=\\{Ava,Bo,Cy,Di\\}$$\n\nThat union is the whole four-person domain, so\n\n$$|\\{x:\\neg C(x)\\wedge\\neg R(x)\\}|=0\\neq 1$$\n\nNobody is outside both sets.\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**E.** → True\n\nAn existential claim needs one team lead outside the remote set.\n\nLeads are $L=\\{Ava,Cy\\}$. Check remote membership:\n\n$$Ava\\notin R$$\n\n$$Cy\\in R$$\n\nAva is a non-remote lead, so $\\exists x\\,(L(x)\\wedge\\neg R(x))$ holds.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 126,
@@ -597,10 +597,10 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nIntersect the express and night route lists:\n\n$$X=\\{1,3,4,7\\}$$\n\n$$N=\\{2,3,5,7,8\\}$$\n\n$$X\\cap N=\\{3,7\\}$$\n\nThe shared routes match the claim.\n\nso the statement is True.",
-        "**B.** → True\n\nComplement $N^c$ keeps routes in $U$ that miss the night list $N=\\{2,3,5,7,8\\}$.\n\nList $U\\setminus N$:\n\n$$\\{1,2,3,4,5,6,7,8\\}\\setminus\\{2,3,5,7,8\\}=\\{1,4,6\\}$$\n\nSo $N^c=\\{1,4,6\\}$, matching the claim. So the statement is True.",
-        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nComparing the computed figure with the printed claim, so the statement is False.",
-        "**D.** → False\n\nAccessible routes outside the night list are\n\n$$A\\setminus N=\\{1,6\\}$$\n\n$$|A\\setminus N|=2\\neq 3$$\n\nOnly two routes meet the description.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**A.** → True\n\nIntersect the express and night route lists:\n\n$$X=\\{1,3,4,7\\}$$\n\n$$N=\\{2,3,5,7,8\\}$$\n\n$$X\\cap N=\\{3,7\\}$$\n\nThe shared routes match the claim.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is True.",
+        "**B.** → True\n\nComplement $N^c$ keeps routes in $U$ that miss the night list $N=\\{2,3,5,7,8\\}$.\n\nList $U\\setminus N$:\n\n$$\\{1,2,3,4,5,6,7,8\\}\\setminus\\{2,3,5,7,8\\}=\\{1,4,6\\}$$\n\nSo $N^c=\\{1,4,6\\}$, matching the claim.\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is False.",
+        "**D.** → False\n\nAccessible routes outside the night list are\n\n$$A\\setminus N=\\{1,6\\}$$\n\n$$|A\\setminus N|=2\\neq 3$$\n\nOnly two routes meet the description.\n\nComparing the computed figure with the printed claim,\n\nThe intermediate displays already decide the verdict once they are stacked against the claim.\n\nSo the statement is False.",
         "**E.** → False\n\nA set is a member of a power set precisely when it is a subset of the ground set.\n\nCheck $\\{3,7\\}\\subseteq X=\\{1,3,4,7\\}$:\n\n$$3\\in X,\\quad 7\\in X$$\n\nHence $\\{3,7\\}\\in\\mathcal P(X)$. The claim says that membership is false, which is wrong. So the statement is False."
       ],
       "difficulty_level": "4/5",
@@ -629,11 +629,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F|=80-35=45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.\n\nSo the statement is False.",
-        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.\n\nSo the statement is False.",
-        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False.\n\nSo the statement is False."
+        "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
+        "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nComparing the computed figure with the printed claim,\n\nEach candidate element is kept when it appears in at least one of the listed sets.\n\nSo the statement is True.",
+        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F|=80-35=45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.\n\nEach candidate element is kept only when it appears in every listed set under the intersection.\n\nSo the statement is False.",
+        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False.",
+        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False.\n\nPairwise overlaps are subtracted once; a triple overlap is added back once.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 128,
