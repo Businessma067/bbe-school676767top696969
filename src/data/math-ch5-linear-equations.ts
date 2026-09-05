@@ -729,8 +729,6 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
@@ -887,8 +885,6 @@ With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim i
 So the statement is False.`,
       `**E.** → False
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 Double the rival rate of \\$0.20 is
@@ -974,8 +970,6 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Use the recovered values from the overview for this claim-specific check.
 
 $$
@@ -986,8 +980,6 @@ That recovered value is not the figure on the card.
 
 So the statement is False.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1000,8 +992,6 @@ The claim is $300$ assembly hours.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
@@ -1012,8 +1002,6 @@ The claim is $500$ assembly hours.
 
 So the statement is False.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1351,8 +1339,6 @@ $$f = 9$$
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. Ben's 5 burritos alone cost
@@ -1385,8 +1371,6 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**C.** → True
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
@@ -1397,8 +1381,6 @@ Then $26 < 28$.
 
 So the statement is True.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -1531,8 +1513,6 @@ The claim names a different figure, so the displays do not agree.
 
 So the statement is False.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1683,8 +1663,6 @@ The computed figure and the claim agree.
 So the statement is True.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 The overview recovered Standard as $x=38$ and $y=3$. Five GB of overage on Standard costs
 
 $$5 \\times 3 = 15$$
@@ -1695,8 +1673,6 @@ Premium is \\$40 unlimited. Then $40 < 53$.
 
 So the statement is True.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2009,8 +1985,6 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 January's actual value is \\$3,150 and February's is \\$3,660:
@@ -2090,8 +2064,6 @@ $$y = 15$$
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
       `**A.** → False
-
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2295,8 +2267,6 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 June's printed bill is \\$65.00. A 10% late penalty on that total is
@@ -2419,8 +2389,6 @@ The computed figure does not match the claim.
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -2910,8 +2878,6 @@ Her actual total does not exceed the flyer figure.
 So the statement is False.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 Jason's printed total after his 10th payment is \\$448.
@@ -3007,8 +2973,6 @@ Those two displays agree.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered the Premium monthly price. State that value in its own display before testing the claim:
 
@@ -3142,8 +3106,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.
@@ -3272,8 +3234,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The shared elimination already recovered the standard-plan rate. State that value in its own display before testing the claim:
 
 $$
@@ -3396,8 +3356,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
@@ -3419,8 +3377,6 @@ The pre-service-charge gap is exactly \\$26.
 
 So the statement is True.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3520,8 +3476,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The shared elimination already recovered Item N's unit cost. State that value in its own display before testing the claim:
 
 $$
@@ -3547,8 +3501,6 @@ The per-unit averages are not equal.
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3652,8 +3604,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The shared elimination already recovered the Premium unit price. State that value in its own display before testing the claim:
 
 $$
@@ -3673,8 +3623,6 @@ The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim
 
 So the statement is True.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3777,8 +3725,6 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The shared elimination already recovered the mileage rate. State that value in its own display before testing the claim:
 
 $$
@@ -3805,8 +3751,6 @@ Report 3's \\$120 cannot cover even the meal days.
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 Report 1 reimbursed \\$323. Report 2 reimbursed \\$245.
@@ -3819,8 +3763,6 @@ The gap is not more than \\$80.
 
 So the statement is False.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3907,8 +3849,6 @@ Those two displays agree.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered Widget B's assembly time. State that value in its own display before testing the claim:
 
@@ -4030,8 +3970,6 @@ Those two displays agree.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered Product Y's price. State that value in its own display before testing the claim:
 
@@ -4175,8 +4113,6 @@ The shared elimination already fixed the unique pair; this letter only tests the
 
 So the statement is True.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4425,8 +4361,6 @@ That product does not clear twenty dollars.
 So the statement is False.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 Use the recovered values from the overview for this claim-specific check.
 
 Four pastries versus one drink and one pastry, at the recovered prices:
@@ -4444,8 +4378,6 @@ The calorie totals 6,100 and 5,400 are printed for reference only. They are not 
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4533,8 +4465,6 @@ $$
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
       `**A.** → True
-
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -4676,8 +4606,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The shared elimination already recovered the Fabric Roll margin. State that value in its own display before testing the claim:
 
 $$
@@ -4739,8 +4667,6 @@ $131.50$ is still a three-digit number.
 
 So the statement is True.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4855,8 +4781,6 @@ $$90.60 < 98.40$$.
 
 So the statement is True.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -5003,8 +4927,6 @@ The slice is closer to $\\frac{1}{7}$.
 So the statement is True.`,
       `**E.** → True
 
-Use the governing identity to expand or simplify, then match the printed claim.
-
 Total work across both days, divided by the 23 hours logged:
 
 $$0.655 + 0.900 = 1.555$$
@@ -5110,8 +5032,6 @@ The margin sits closer to eighteen than to nineteen.
 
 So the statement is True.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -5277,8 +5197,6 @@ The billed total is \\$239.80, and $239.80 - 236.35 = 3.45$, which is within fou
 So the statement is True.`,
       `**D.** → False
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 Use the recovered values from the overview for this claim-specific check.
 
 Ninety-nine pounds converted at 2.2 lb per kilogram:
@@ -5291,8 +5209,6 @@ $45$ is not divisible by seven.
 
 So the statement is False.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -5614,8 +5530,6 @@ Since $328 > 300$, the combined salt exceeds $300$ g.
 So the statement is True.`,
       `**B.** → True
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 
 $$\\frac{12}{16} = 0.75$$
@@ -5735,8 +5649,6 @@ Since $6.50 > 6$, the bonus exceeds \\$6.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered overtime at \\$26 per hour. Employee B worked $7$ overtime hours on a \\$882 gross.
 
@@ -5972,8 +5884,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km stretch is
 
 $$\\frac{356}{48} \\approx 7.4167$$
@@ -6017,8 +5927,6 @@ Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
 
 So the statement is True.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 The overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is
 
@@ -6111,8 +6019,6 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
-
 The overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.
 
 $$180 + 300 = 480$$
@@ -6121,8 +6027,6 @@ Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.
 
@@ -6217,8 +6121,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered current ages $47$ and $19$. Fifteen years from now those ages are $62$ and $34$.
 
 $$2 \\times 34 = 68$$
@@ -6248,8 +6150,6 @@ The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered current ages $47$ and $19$. After $4.5$ years the ages are $51.5$ and $23.5$.
 
@@ -6499,8 +6399,6 @@ Since $77 > 75$, their total would increase.
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with $6 \\times 3 = 18$ from draws.
 
 $$\\frac{18}{67} \\approx 0.2687$$
@@ -6522,8 +6420,6 @@ The Falcons would still have more points.
 
 So the statement is True.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.
 
@@ -6613,8 +6509,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
 $$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$
@@ -6638,8 +6532,6 @@ The computed figure does not match the claim.
 
 So the statement is False.`,
       `**C.** → True
-
-Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.4$ kg discrepancy.
 
@@ -6852,8 +6744,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is
 
 $$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4} \\approx 0.8571$$
@@ -6862,8 +6752,6 @@ about $85.7\\%$, which is more than $85\\%$.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 
@@ -7029,8 +6917,6 @@ about $91.9\\%$, which is more than $90\\%$.
 So the statement is True.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 
 $$\\frac{38}{4.50} \\approx 8.444$$
@@ -7122,8 +7008,6 @@ $$
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
-
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is
 
@@ -7242,8 +7126,6 @@ versus recorded 172.20, a $1.20$ discrepancy.
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
       `**A.** → True
-
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered Coffee $x = 6.20$ and Cocoa $y = 4.85$. Coffee's premium over Cocoa is
 
@@ -7376,8 +7258,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.
 
 $$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$
@@ -7386,8 +7266,6 @@ about $77.8\\%$, which is more than $75\\%$.
 
 So the statement is True.`,
       `**B.** → False
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.
 
@@ -7505,8 +7383,6 @@ versus 155 L recorded, a 3 L discrepancy.
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
       `**A.** → True
-
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered bond $5.4\\%$ and equity $6.6\\%$. The relative gap of equity over bonds is
 
@@ -7644,8 +7520,6 @@ The overview reconstructed Renters coverage at \\$25,000. That is less than \\$3
 So the statement is True.`,
       `**B.** → False
 
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
-
 The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 
 $$\\frac{214.70}{612.50} \\approx 0.3505$$
@@ -7665,8 +7539,6 @@ Since $98.28 > 75$, the Home premium would increase by more than \\$75.
 
 So the statement is True.`,
       `**D.** → False
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Premium per \\$1,000 is the printed premium divided by coverage in thousands.
 
@@ -7751,8 +7623,6 @@ that is \\$25,000 of coverage.
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered Year 6 populations $A = 898$ and $B = 874$.
 
 $$898 - 874 = 24$$
@@ -7785,8 +7655,6 @@ The growth ratio is $2:1$, which is not greater than $2.5:1$.
 
 So the statement is False.`,
       `**D.** → True
-
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The populations are equal $t$ years after Year 2 when
 
@@ -7872,8 +7740,6 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim’s symbols, and simplify before comparing.
-
 The overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.
 
 $$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$
@@ -7882,8 +7748,6 @@ about $48.0\\%$, which is more than $45\\%$.
 
 So the statement is True.`,
       `**B.** → True
-
-Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 
@@ -7903,8 +7767,6 @@ The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8
 So the statement is False.`,
       `**D.** → True
 
-Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
-
 The combined output rate is $145 + 98 = 243$ MWh/hr.
 
 $$\\frac{243}{98} \\approx 2.4796$$
@@ -7913,8 +7775,6 @@ which is more than $2.4$ times Plant B's rate.
 
 So the statement is True.`,
       `**E.** → True
-
-Use the governing identity to expand or simplify, then match the printed claim.
 
 The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 
