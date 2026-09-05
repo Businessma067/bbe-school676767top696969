@@ -5,13 +5,12 @@ Graph / table / hybrid / applied stems name the medium and withhold formulas.
 Statements are bare claims: covering the figure or table must make those
 letters unsolvable. Textual styles stay fully algebraic.
 
-Small integers; hard 5/5 multi-step work. Shared solution_overview fields and
-letter explanations are supplied by scripts/enrich-ch7-mixed-overviews.py
-(applied at the end of build_all) so regenerating keeps the Chapter 7 core
-style: a detailed shared solution first, then letter write-ups that reuse
-those facts. Every answer key is sympy-checked before export.
+Small integers; hard 5/5 multi-step work.
 
-Run: python3 scripts/gen-ch7-mixed-medium-first.py
+Retired as a JSON writer: long shared overviews are no longer used.
+Rebuild Chapter 7.5 with scripts/gen-ch7-mixed-hard.py.
+
+Run: python3 scripts/gen-ch7-mixed-hard.py
 """
 from __future__ import annotations
 
@@ -2102,11 +2101,15 @@ def build_all() -> list[dict]:
 
     assert len(tasks) == 30, len(tasks)
     assert [t["stem_kind"] for t in tasks] == STEMS * 3
-    _apply_shared_solutions(tasks)
+    # Retired: do not call enrich-ch7-mixed-overviews.py (long shared overviews).
     return tasks
 
 
 def _apply_shared_solutions(tasks: list[dict]) -> None:
+    """Retired: long shared overviews. Use gen-ch7-mixed-hard.py instead."""
+    raise RuntimeError(
+        "Long shared overviews are retired. Rebuild with scripts/gen-ch7-mixed-hard.py"
+    )
     """Replace short stub overviews/explanations with Ch7-core shared solutions."""
     import importlib.util
 
@@ -2198,6 +2201,10 @@ def validate(tasks: list[dict]) -> None:
 
 
 def main() -> None:
+    raise SystemExit(
+        "Retired: this generator wrote long shared overviews. "
+        "Use scripts/gen-ch7-mixed-hard.py to rebuild src/data/math-ch7-mixed-exam.json"
+    )
     tasks = build_all()
     validate(tasks)
     OUT.write_text(json.dumps({"tasks": tasks}, ensure_ascii=False, indent=2) + "\n")

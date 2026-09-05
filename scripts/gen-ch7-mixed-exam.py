@@ -1822,6 +1822,10 @@ def validate(tasks: list[dict]) -> None:
 
 
 def main() -> None:
+    raise SystemExit(
+        "Retired: this generator is not the Chapter 7.5 writer. "
+        "Use scripts/gen-ch7-mixed-hard.py to rebuild src/data/math-ch7-mixed-exam.json"
+    )
     specs = [build_task(i) for i in range(30)]
     specs = [retarget_spec(s, truth_target(i)) for i, s in enumerate(specs)]
     for s in specs:
