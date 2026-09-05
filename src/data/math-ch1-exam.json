@@ -24,8 +24,8 @@
         "**A.** → True\n\nMembership checks a listed object, while subset checks every member of the smaller set.\n\n$$R=\\{0,\\{0\\},\\{\\{0\\}\\}\\}$$\n\n$$\\{0\\}\\in R$$\n\n$$\\{0\\}\\in R\\Longrightarrow \\{\\{0\\}\\}\\subseteq R$$\n\nBoth relations are satisfied, so the statement is True.",
         "**B.** → True\n\nPerform the inner intersection before adding the members of the third set.\n\n$$A\\cap B=\\{2,4\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4\\}\\cup\\{4,5,8\\}$$\n\n$$(A\\cap B)\\cup C=\\{2,4,5,8\\}$$\n\nThe computed roster matches the claim, so the statement is True.",
         "**C.** → True\n\nEliminate each implication until both formulas have the same disjunctive form.\n\n$$p\\rightarrow(q\\rightarrow r)\\equiv\\neg p\\vee(\\neg q\\vee r)$$\n\n$$(p\\wedge q)\\rightarrow r\\equiv\\neg(p\\wedge q)\\vee r$$\n\n$$\\neg(p\\wedge q)\\vee r\\equiv\\neg p\\vee\\neg q\\vee r$$\n\nBoth formulas reduce to $\\neg p\\vee\\neg q\\vee r$, so the statement is True.",
-        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$, so the statement is True.",
-        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members, so the statement is False."
+        "**D.** → True\n\nA witness may depend on the universally chosen value of $x$.\n\n$$x\\in D$$\n\n$$y=6-x\\in\\{1,2,3,4,5\\}=D$$\n\n$$x+y=x+(6-x)=6$$\n\nThe choice $y=6-x$ works for every $x$,\n\nComparing the computed figure with the printed claim, so the statement is True.",
+        "**E.** → False\n\nEach catalog code may be included or omitted independently.\n\n$$|C|=5$$\n\n$$|\\mathcal P(C)|=2^{|C|}$$\n\n$$2^5=32\\ne31$$\n\nThe power set has $32$ members,\n\nComparing the computed figure with the printed claim, so the statement is False."
       ],
       "difficulty_level": "3/5",
       "sort_order": 109,
@@ -86,7 +86,7 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nA conjunction fails precisely when at least one of its parts fails.\n\n$$\\neg(p\\wedge q)$$\n\n$$\\equiv\\neg p\\vee\\neg q$$\n\n$$\\neg(p\\wedge q)\\leftrightarrow(\\neg p\\vee\\neg q)\\equiv T$$\n\nThis is the conjunction form of De Morgan's law, so the statement is True.",
-        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness, so the statement is True.",
+        "**B.** → True\n\nAdding one gives a valid integer witness above any selected integer.\n\n$$n\\in\\mathbb Z$$\n\n$$m=n+1\\in\\mathbb Z$$\n\n$$m-n=(n+1)-n=1>0$$\n\nEvery integer has a larger integer witness,\n\nComparing the computed figure with the printed claim, so the statement is True.",
         "**C.** → False\n\nRepeated roster entries do not create new elements of a set.\n\n$$\\{\\alpha,\\beta,\\alpha\\}=\\{\\alpha,\\beta\\}$$\n\n$$\\{\\alpha,\\beta\\}=\\{\\beta,\\alpha\\}$$\n\n$$|\\{\\alpha,\\beta,\\alpha\\}|=2\\ne3$$\n\nThe equality is correct but the claimed cardinality is not, so the statement is False.",
         "**D.** → False\n\nThe intersection is removed once from each set's exclusive part.\n\n$$|A\\setminus B|=18-5=13$$\n\n$$|B\\setminus A|=14-5=9$$\n\n$$|A\\triangle B|=13+9=22\\ne23$$\n\nThe symmetric difference has size $22$, so the statement is False.",
         "**E.** → True\n\nAn implication can fail only when its antecedent is true and its consequent is false.\n\n$$(p\\rightarrow q)\\wedge p=T\\Longrightarrow p=T$$\n\n$$p=T\\ \\text{and}\\ p\\rightarrow q=T\\Longrightarrow q=T$$\n\n$$((p\\rightarrow q)\\wedge p)\\rightarrow q=T$$\n\nNo truth assignment makes the formula false, so the statement is True."
@@ -149,7 +149,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions, so the statement is False.",
+        "**A.** → False\n\nAfter fixing $x$, the second symbol must come from the unrestricted symbols.\n\n$$6-2=4$$\n\n$$\\binom{4}{1}=4$$\n\n$$4\\ne5$$\n\nOnly four subsets meet the conditions,\n\nComparing the computed figure with the printed claim, so the statement is False.",
         "**B.** → False\n\nThe red-only region is obtained by removing the overlap from the red total.\n\n$$R=(R\\setminus F)\\mathbin{\\dot\\cup}(R\\cap F)$$\n\n$$|R\\setminus F|=|R|-|R\\cap F|$$\n\n$$|R\\setminus F|=30-9=21\\ne19$$\n\nThere are $21$ red nonfragrant plants, so the statement is False.",
         "**C.** → True\n\nThe formula requires at least one true proposition but forbids both from being true.\n\n$$(p,q)=(T,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(p,q)=(F,T)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=T$$\n\n$$(T,T),(F,F)\\Longrightarrow(p\\vee q)\\wedge\\neg(p\\wedge q)=F$$\n\nExactly the two mixed rows satisfy the formula, so the statement is True.",
         "**D.** → True\n\nFollowing one arbitrary novelist through the two premises forces the negated property.\n\n$$\\forall x\\,(N(x)\\rightarrow O(x))$$\n\n$$\\forall x\\,(O(x)\\rightarrow\\neg C(x))$$\n\n$$N(a)\\Longrightarrow O(a)\\Longrightarrow\\neg C(a)$$\n\nThe universal conclusion follows, so the statement is True.",
@@ -375,9 +375,9 @@
       "tactical_explanations": [
         "**A.** → True\n\nThree-set inclusion-exclusion recovers the union first:\n\n$$|A\\cup B\\cup C|=105+92+80-48-41-36+20$$\n\n$$|A\\cup B\\cup C|=172$$\n\nThe outside region is then\n\n$$180-172=8$$\n\nExactly $8$ participants take none of the three courses.\n\nso the statement is True.",
         "**B.** → False\n\nOnly-analytics removes the two pairwise overlaps and restores the triple count once:\n\n$$|A\\setminus(B\\cup C)|=105-48-41+20$$\n\n$$=36\\neq 56$$\n\nThe analytics-only region is $36$, not $56$.\n\nso the statement is False.",
-        "**C.** → True\n\nEach pair-only region is the pairwise overlap minus the triple:\n\n$$|A\\cap B\\setminus C|=48-20=28$$\n\n$$|A\\cap C\\setminus B|=41-20=21$$\n\n$$|B\\cap C\\setminus A|=36-20=16$$\n\n$$28+21+16=65$$\n\nExactly two courses total $65$.\n\nso the statement is True.",
-        "**D.** → False\n\nAt least two courses means the exactly-two total plus the triple region:\n\n$$65+20=85\\neq 65$$\n\nThe claim reused the exactly-two figure and missed the $20$ people in all three.\n\nso the statement is False.",
-        "**E.** → True\n\nOnly-compliance is the compliance total after removing its two pairwise overlaps and restoring the triple:\n\n$$|C\\setminus(A\\cup B)|=80-41-36+20$$\n\n$$=23$$\n\nThat matches the claimed only-compliance count.\n\nso the statement is True."
+        "**C.** → True\n\nExactly two courses means the three pairwise-only regions.\n\nSubtract the triple from each pairwise overlap, then add:\n\n$$(48-20)+(41-20)+(36-20)$$\n\n$$=28+21+16$$\n\n$$=65$$\n\nExactly $65$ participants take exactly two courses, matching the claim. So the statement is True.",
+        "**D.** → False\n\nAt least two courses counts exactly-two participants together with the triple overlap.\n\nExactly-two was recovered as $65$, and the triple has size $20$, so\n\n$$65+20=85$$\n\nThe claim asserts $65$, which omits the all-three participants. So the statement is False.",
+        "**E.** → True\n\nOnly-compliance removes the compliance pairwise overlaps and restores the triple once.\n\n$$|C\\setminus(A\\cup B)|=|C|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|$$\n\n$$=80-41-36+20$$\n\n$$=23$$\n\nExactly $23$ take only compliance, matching the claim. So the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 120,
@@ -406,10 +406,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute a valid badge with current training into the door formula:\n\n$$(p,q,r)=(T,T,*)$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=(T\\wedge T)\\vee(T\\wedge *)=T$$\n\nThe first disjunct already opens the door.\n\nso the statement is True.",
-        "**B.** → False\n\nAn invalid badge forces both opening conjuncts to fail:\n\n$$p=F$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=F$$\n\nA supervisor cannot open the door when $p$ is false.\n\nso the statement is False.",
-        "**C.** → True\n\nFactor the common proposition out of the two opening disjuncts:\n\n$$(p\\wedge q)\\vee(p\\wedge r)\\equiv p\\wedge(q\\vee r)$$\n\nThe rewritten formula is logically equivalent to the original door rule.\n\nso the statement is True.",
-        "**D.** → False\n\nWith $p=T$, the pair $(q,r)$ must be one of $(T,T)$, $(T,F)$, or $(F,T)$:\n\n$$\\#\\{(p,q,r):p\\wedge(q\\vee r)\\}=3\\neq 4$$\n\nOnly three of the eight assignments open the door.\n\nso the statement is False.",
-        "**E.** → False\n\nThe alarm lives on the single assignment $(T,F,F)$. On that row:\n\n$$q\\vee r=F$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nSo the door is closed whenever the alarm sounds.\n\nso the statement is False."
+        "**B.** → False\n\nAn invalid badge forces both opening conjuncts to fail:\n\n$$p=F$$\n\n$$(p\\wedge q)\\vee(p\\wedge r)=F$$\n\nA supervisor cannot open the door when $p$ is false.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**C.** → True\n\nFactor the common badge proposition out of the door formula.\n\nStart from the given disjunction:\n\n$$(p\\wedge q)\\vee(p\\wedge r)$$\n\nPull out $p$:\n\n$$\\equiv p\\wedge(q\\vee r)$$\n\nThat is exactly the claimed equivalent form. So the statement is True.",
+        "**D.** → False\n\nWith $p=T$, the pair $(q,r)$ must be one of $(T,T)$, $(T,F)$, or $(F,T)$:\n\n$$\\#\\{(p,q,r):p\\wedge(q\\vee r)\\}=3\\neq 4$$\n\nOnly three of the eight assignments open the door.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**E.** → False\n\nThe alarm lives on the single assignment $(T,F,F)$. On that row:\n\n$$q\\vee r=F$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nSo the door is closed whenever the alarm sounds.\n\nComparing the computed figure with the printed claim, so the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 121,
@@ -440,8 +440,8 @@
         "**A.** → True\n\nCheck every priority parcel against the scanned set:\n\n$$P=\\{a,c\\},\\qquad S=\\{a,b,c\\}$$\n\n$$a\\in S,\\qquad c\\in S$$\n\nEvery priority parcel is scanned, so the universal implication holds.\n\nso the statement is True.",
         "**B.** → True\n\nA single witness is enough for an existential claim. Parcel $c$ lies in both sets:\n\n$$c\\in P\\cap L=\\{c\\}$$\n\n$$P(c)\\wedge L(c)$$\n\nThe required joint witness exists.\n\nso the statement is True.",
         "**C.** → False\n\nUniversal claims fail from one counterexample. Parcel $c$ is scanned and late:\n\n$$c\\in S\\cap L$$\n\n$$S(c)\\wedge L(c)$$\n\nSo scanned does not imply not-late.\n\nso the statement is False.",
-        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$S\\cup L=\\{a,b,c,d\\}=D$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nso the statement is False.",
-        "**E.** → True\n\nParcel $d$ is late but not priority:\n\n$$d\\in L,\\qquad d\\notin P$$\n\n$$L(d)\\wedge\\neg P(d)$$\n\nThat witness makes the existential claim true.\n\nso the statement is True."
+        "**D.** → False\n\nForm the union of scanned and late parcels inside $D$:\n\n$$S\\cup L=\\{a,b,c,d\\}=D$$\n\n$$|D\\setminus(S\\cup L)|=0\\neq 1$$\n\nNo parcel is outside both sets.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**E.** → True\n\nAn existential claim needs one late parcel that is not priority.\n\nThe late roster is $L=\\{c,d\\}$. Check priority:\n\n$$c\\in P$$\n\n$$d\\notin P$$\n\nParcel $d$ is late and not priority, so $\\exists x\\,(L(x)\\wedge\\neg P(x))$ holds. So the statement is True."
       ],
       "difficulty_level": "4/5",
       "sort_order": 122,
@@ -470,10 +470,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nIntersect the core and elective rosters label by label:\n\n$$C=\\{a,b,d,f\\}$$\n\n$$E=\\{b,c,e,f,g\\}$$\n\n$$C\\cap E=\\{b,f\\}$$\n\nThe shared labels match the claim.\n\nso the statement is True.",
-        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nso the statement is False.",
+        "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nComparing the computed figure with the printed claim, so the statement is False.",
         "**C.** → False\n\nRemove audited labels from the core set:\n\n$$C\\setminus A=\\{b,d\\}$$\n\nThe claim listed $\\{b,d,f\\}$, but $f$ is audited and must leave. The true difference is $\\{b,d\\}$.\n\nso the statement is False.",
-        "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nso the statement is True.",
-        "**E.** → False\n\nSymmetric difference adds the two exclusive regions:\n\n$$C\\setminus E=\\{a,d\\}$$\n\n$$E\\setminus C=\\{c,e,g\\}$$\n\n$$|C\\triangle E|=2+3=5\\neq 4$$\n\nThe size is $5$, not $4$.\n\nso the statement is False."
+        "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nComparing the computed figure with the printed claim, so the statement is True.",
+        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$=9-4=5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -502,10 +502,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nApply three-set inclusion-exclusion to the service totals:\n\n$$|M\\cup I\\cup S|=138+124+96-68-52-46+28$$\n\n$$=220$$\n\n$$240-220=20$$\n\nExactly $20$ customers use none of the services.\n\nso the statement is True.",
-        "**B.** → True\n\nCompute each only-one region, restoring the triple once:\n\n$$|M\\text{ only}|=138-68-52+28=46$$\n\n$$|I\\text{ only}|=124-68-46+28=38$$\n\n$$|S\\text{ only}|=96-52-46+28=26$$\n\n$$46+38+26=110$$\n\nExactly one service totals $110$.\n\nso the statement is True.",
-        "**C.** → False\n\nMobile-and-internet only is the pairwise count with the triple removed:\n\n$$|M\\cap I\\setminus S|=68-28=40\\neq 68$$\n\nLeaving the pairwise figure unadjusted overstates the only-two region.\n\nso the statement is False.",
+        "**B.** → True\n\nExactly one service is the sum of the three only-one regions.\n\nOnly-mobile: $138-68-52+28=46$.\n\nOnly-internet: $124-68-46+28=38$.\n\nOnly-streaming: $96-52-46+28=26$.\n\nAdd them:\n\n$$46+38+26=110$$\n\nExactly $110$ customers use exactly one service. So the statement is True.",
+        "**C.** → False\n\nMobile and internet only means the pairwise overlap minus the all-three customers.\n\n$$|M\\cap I\\setminus S|=68-28=40$$\n\nThe claim asserts $68$, which is the raw pairwise count before removing the triple. So the statement is False.",
         "**D.** → False\n\nAt least two services is the sum of the three pair-only regions and the triple:\n\n$$(68-28)+(52-28)+(46-28)+28$$\n\n$$=40+24+18+28=110\\neq 82$$\n\nThe correct at-least-two total is $110$.\n\nso the statement is False.",
-        "**E.** → False\n\nStreaming only removes both pairwise overlaps and restores the triple:\n\n$$|S\\text{ only}|=96-52-46+28=26\\neq 34$$\n\nThe streaming-only region is $26$.\n\nso the statement is False."
+        "**E.** → False\n\nOnly streaming removes the streaming pairwise overlaps and restores the triple.\n\n$$96-52-46+28=26$$\n\nThe claim asserts $34$. Since $26\\ne34$, the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 124,
@@ -535,8 +535,8 @@
       "tactical_explanations": [
         "**A.** → True\n\nSubstitute the given assignment into the shipping rule:\n\n$$(p,q,r)=(T,F,T)$$\n\n$$q\\vee r=F\\vee T=T$$\n\n$$p\\wedge(q\\vee r)=T$$\n\nThe override alone is enough to ship when inventory matches.\n\nso the statement is True.",
         "**B.** → True\n\nShipping needs $q\\vee r=T$, while holding needs $q=r=F$:\n\n$$S=p\\wedge(q\\vee r)$$\n\n$$H=p\\wedge\\neg q\\wedge\\neg r$$\n\nThose conditions on $(q,r)$ cannot hold together, so $S$ and $H$ are disjoint.\n\nso the statement is True.",
-        "**C.** → False\n\nFalse inventory forces the shipping conjunction to fail regardless of payment or override:\n\n$$(p,q,r)=(F,T,T)$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nThe order does not ship.\n\nso the statement is False.",
-        "**D.** → False\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nso the statement is False.",
+        "**C.** → False\n\nFalse inventory forces the shipping conjunction to fail regardless of payment or override:\n\n$$(p,q,r)=(F,T,T)$$\n\n$$p\\wedge(q\\vee r)=F$$\n\nThe order does not ship.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**D.** → False\n\nWith $p=T$, the pairs $(q,r)\\in\\{(T,T),(T,F),(F,T)\\}$ are the only shipping rows:\n\n$$\\#\\{(p,q,r):S\\}=3\\neq 4$$\n\nExactly three assignments ship, not four.\n\nComparing the computed figure with the printed claim, so the statement is False.",
         "**E.** → False\n\nHolding requires matching inventory, while rejection requires a mismatch:\n\n$$H\\Longrightarrow p=T$$\n\n$$J=\\neg p\\Longrightarrow p=F$$\n\nNo assignment can be both held and rejected.\n\nso the statement is False."
       ],
       "difficulty_level": "4/5",
@@ -567,9 +567,9 @@
       "tactical_explanations": [
         "**A.** → False\n\nUniversal claims fail from one counterexample. Cy is a team lead outside the certified set:\n\n$$L=\\{Ava,Cy\\},\\qquad C=\\{Ava,Bo,Di\\}$$\n\n$$Cy\\in L,\\qquad Cy\\notin C$$\n\nSo not every team lead is certified.\n\nso the statement is False.",
         "**B.** → True\n\nBo belongs to both the certified and remote rosters:\n\n$$Bo\\in C\\cap R=\\{Bo\\}$$\n\nThat single witness makes the existential claim true.\n\nso the statement is True.",
-        "**C.** → False\n\nBo is remote but is not listed as a team lead:\n\n$$Bo\\in R,\\qquad Bo\\notin L$$\n\nRemote does not universally imply lead.\n\nso the statement is False.",
+        "**C.** → False\n\nBo is remote but is not listed as a team lead:\n\n$$Bo\\in R,\\qquad Bo\\notin L$$\n\nRemote does not universally imply lead.\n\nComparing the computed figure with the printed claim, so the statement is False.",
         "**D.** → False\n\nForm the union of certified and remote employees:\n\n$$C\\cup R=\\{Ava,Bo,Cy,Di\\}$$\n\nThat union is the whole four-person domain, so\n\n$$|\\{x:\\neg C(x)\\wedge\\neg R(x)\\}|=0\\neq 1$$\n\nNobody is outside both sets.\n\nso the statement is False.",
-        "**E.** → True\n\nAva is a team lead who is not remote:\n\n$$Ava\\in L,\\qquad Ava\\notin R$$\n\nThat witness makes the existential claim true.\n\nso the statement is True."
+        "**E.** → True\n\nAn existential claim needs one team lead outside the remote set.\n\nLeads are $L=\\{Ava,Cy\\}$. Check remote membership:\n\n$$Ava\\notin R$$\n\n$$Cy\\in R$$\n\nAva is a non-remote lead, so $\\exists x\\,(L(x)\\wedge\\neg R(x))$ holds. So the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 126,
@@ -598,10 +598,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nIntersect the express and night route lists:\n\n$$X=\\{1,3,4,7\\}$$\n\n$$N=\\{2,3,5,7,8\\}$$\n\n$$X\\cap N=\\{3,7\\}$$\n\nThe shared routes match the claim.\n\nso the statement is True.",
-        "**B.** → True\n\nComplement night routes relative to the eight-route universe:\n\n$$U=\\{1,2,3,4,5,6,7,8\\}$$\n\n$$N^c=U\\setminus N=\\{1,4,6\\}$$\n\nThe complement roster is exactly as claimed.\n\nso the statement is True.",
-        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nso the statement is False.",
-        "**D.** → False\n\nAccessible routes outside the night list are\n\n$$A\\setminus N=\\{1,6\\}$$\n\n$$|A\\setminus N|=2\\neq 3$$\n\nOnly two routes meet the description.\n\nso the statement is False.",
-        "**E.** → False\n\nBoth $3$ and $7$ lie in $X$, so the two-element set is a subset of $X$:\n\n$$\\{3,7\\}\\subseteq X$$\n\n$$\\{3,7\\}\\in\\mathcal P(X)$$\n\nThe claim that this membership is false is itself false.\n\nso the statement is False."
+        "**B.** → True\n\nComplement $N^c$ keeps routes in $U$ that miss the night list $N=\\{2,3,5,7,8\\}$.\n\nList $U\\setminus N$:\n\n$$\\{1,2,3,4,5,6,7,8\\}\\setminus\\{2,3,5,7,8\\}=\\{1,4,6\\}$$\n\nSo $N^c=\\{1,4,6\\}$, matching the claim. So the statement is True.",
+        "**C.** → False\n\nForm the union of express and accessible routes:\n\n$$X\\cup A=\\{1,2,3,4,6,7,8\\}$$\n\nRoute $5$ is missing, so\n\n$$X\\cup A\\neq U$$\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**D.** → False\n\nAccessible routes outside the night list are\n\n$$A\\setminus N=\\{1,6\\}$$\n\n$$|A\\setminus N|=2\\neq 3$$\n\nOnly two routes meet the description.\n\nComparing the computed figure with the printed claim, so the statement is False.",
+        "**E.** → False\n\nA set is a member of a power set precisely when it is a subset of the ground set.\n\nCheck $\\{3,7\\}\\subseteq X=\\{1,3,4,7\\}$:\n\n$$3\\in X,\\quad 7\\in X$$\n\nHence $\\{3,7\\}\\in\\mathcal P(X)$. The claim says that membership is false, which is wrong. So the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 127,
@@ -629,11 +629,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nso the statement is True.",
-        "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nso the statement is True.",
-        "**C.** → False\n\nJazz-and-theater only removes the triple overlap from the pairwise count:\n\n$$|J\\cap T\\setminus F|=80-35=45\\neq 50$$\n\nThe pair-only region is $45$, not $50$.\n\nso the statement is False.",
-        "**D.** → False\n\nSum the three pair-only regions:\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26=108\\neq 100$$\n\nExactly two programs total $108$.\n\nso the statement is False.",
-        "**E.** → False\n\nJazz only restores the triple after removing both jazz pairwise overlaps:\n\n$$|J\\text{ only}|=170-80-72+35=53\\neq 72$$\n\nThe jazz-only region is $53$.\n\nso the statement is False."
+        "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nComparing the computed figure with the printed claim, so the statement is True.",
+        "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nComparing the computed figure with the printed claim, so the statement is True.",
+        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F|=80-35=45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.",
+        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.",
+        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 128,
