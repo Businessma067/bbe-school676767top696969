@@ -10,13 +10,14 @@ import {
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
 import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/bbe-economics-english")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-economics-english" }],
+    links: [...hreflangLinks("/bbe-economics-english"), { rel: "canonical", href: "https://bbe-school.com/bbe-economics-english" }],
     meta: [
       {
         title: "WU Vienna BBE Economics & English: What to Study | BBE School",
@@ -64,7 +65,7 @@ const faqs = [
   },
 ];
 
-function BbeEconomicsEnglishPage() {
+export function BbeEconomicsEnglishPage() {
   return (
     <BbeExamShell
       h1="WU Vienna BBE Economics & English: What to Study"

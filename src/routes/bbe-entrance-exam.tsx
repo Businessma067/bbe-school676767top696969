@@ -24,13 +24,15 @@ import {
   BBE_PRACTICE_ROUTES,
 } from "@/config/bbe-exam-hub";
 import { cn } from "@/lib/utils";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/bbe-entrance-exam")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-entrance-exam" }],
+    links: [...hreflangLinks("/bbe-entrance-exam"), { rel: "canonical", href: "https://bbe-school.com/bbe-entrance-exam" }],
     meta: [
       {
         title: "WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide | BBE School",
@@ -120,12 +122,12 @@ const glanceRows: { field: string; detail: ReactNode }[] = [
     detail: (
       <>
         Multiple-choice with partial credit. See{" "}
-        <Link
+        <LocalizedLink
           to="/bbe-exam-scoring"
           className="font-semibold text-foreground underline-offset-4 hover:underline"
         >
           BBE Exam Scoring Explained
-        </Link>
+        </LocalizedLink>
       </>
     ),
   },
@@ -198,7 +200,7 @@ const mistakes = [
   "Not reviewing mistakes after practice sessions, which lets the same error type repeat across multiple sets.",
 ];
 
-function BbeEntranceExamHubPage() {
+export function BbeEntranceExamHubPage() {
   return (
     <BbeExamShell
       h1="WU Vienna BBE Entrance Exam: Format, Topics & Preparation Guide"

@@ -10,13 +10,14 @@ import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
 import { BBE_EXAM_FORMAT, BBE_FORMAT_NOTE, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { cn } from "@/lib/utils";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/bbe-admission")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-admission" }],
+    links: [...hreflangLinks("/bbe-admission"), { rel: "canonical", href: "https://bbe-school.com/bbe-admission" }],
     meta: [
       {
         title:
@@ -83,7 +84,7 @@ const cycleDates: { field: string; detail: string }[] = [
   { field: "Program start", detail: "Winter semester only" },
 ];
 
-function BbeAdmissionPage() {
+export function BbeAdmissionPage() {
   return (
     <BbeExamShell
       h1="WU Vienna BBE Admission & Application: Requirements, OSA & Entrance Exam"

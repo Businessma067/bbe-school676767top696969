@@ -1,11 +1,21 @@
 import { Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate, useRouterState } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n/context";
 import { LANGUAGES, type Lang } from "@/lib/i18n/dictionary";
+import { getLocaleLinkProps } from "@/lib/i18n/locale-nav";
+import {
+  isLocalizablePath,
+  localizePath,
+  stripLocalePrefix,
+} from "@/lib/i18n/locale-path";
 import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher({ className }: { className?: string }) {
   const { lang, setLang } = useLanguage();
+  const navigate = useNavigate();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const hash = useRouterState({ select: (s) => s.location.hash });
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -19,6 +29,28 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   }, [open]);
 
   const active = LANGUAGES.find((l) => l.code === lang) ?? LANGUAGES[0];
+
+  const switchLanguage = (next: Lang) => {
+    setOpen(false);
+    const withHash = hash
+      ? `${pathname}${hash.startsWith("#") ? hash : `#${hash}`}`
+      : pathname;
+    const target = localizePath(withHash, next);
+    const onLocalizable = isLocalizablePath(stripLocalePrefix(pathname));
+
+    if (onLocalizable && target !== withHash) {
+      // Navigate first; LocaleSync sets lang from the new URL (avoids EN reset race).
+      const link = getLocaleLinkProps(withHash, next);
+      void navigate({
+        to: link.to as never,
+        params: link.params as never,
+        hash: link.hash,
+      });
+      return;
+    }
+
+    setLang(next);
+  };
 
   return (
     <div ref={ref} className={cn("relative", className)} data-no-i18n>
@@ -44,10 +76,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
                 type="button"
                 role="option"
                 aria-selected={option.code === lang}
-                onClick={() => {
-                  setLang(option.code as Lang);
-                  setOpen(false);
-                }}
+                onClick={() => switchLanguage(option.code as Lang)}
                 className={cn(
                   "flex w-full items-center justify-between px-3 py-2 text-left text-sm transition-colors hover:bg-secondary",
                   option.code === lang ? "font-semibold text-primary" : "text-foreground",

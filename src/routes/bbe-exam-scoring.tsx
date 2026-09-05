@@ -15,13 +15,14 @@ import {
 import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
 import { SCORING_CONFIG } from "@/config/scoring-config";
 import { calculateTaskScore, type StatementResult } from "@/lib/scoring";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/bbe-exam-scoring")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-scoring" }],
+    links: [...hreflangLinks("/bbe-exam-scoring"), { rel: "canonical", href: "https://bbe-school.com/bbe-exam-scoring" }],
     meta: [
       {
         title: "WU Vienna BBE Exam Scoring Explained: Points & Partial Credit | BBE School",
@@ -111,7 +112,7 @@ const workedExamples: ScoringExample[] = [
   return { ...ex, score, statements };
 });
 
-function BbeExamScoringPage() {
+export function BbeExamScoringPage() {
   const r = EXAMPLE_TRUTHS.filter(Boolean).length;
   const f = EXAMPLE_TRUTHS.length - r;
   const perCorrect = MAX_EXAMPLE / r;

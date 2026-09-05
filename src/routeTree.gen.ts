@@ -36,6 +36,7 @@ import { Route as BbeAdmissionRouteImport } from './routes/bbe-admission'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
+import { Route as LangRouteImport } from './routes/$lang'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as TutorExamIndexRouteImport } from './routes/tutor-exam.index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
@@ -44,6 +45,7 @@ import { Route as MatchingIndexRouteImport } from './routes/matching.index'
 import { Route as FlashcardsIndexRouteImport } from './routes/flashcards.index'
 import { Route as DemoPracticeIndexRouteImport } from './routes/demo-practice.index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
+import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as TutorExamSubjectRouteImport } from './routes/tutor-exam.$subject'
 import { Route as ProductsLiteBbeCourseSubjectsRouteImport } from './routes/products.lite-bbe-course-subjects'
 import { Route as ProductsLiteBbeCourseMathRouteImport } from './routes/products.lite-bbe-course-math'
@@ -68,6 +70,7 @@ import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as AdminUsersRouteImport } from './routes/admin.users'
 import { Route as AdminPromocodesRouteImport } from './routes/admin.promocodes'
 import { Route as AdminEconomicsRouteImport } from './routes/admin.economics'
+import { Route as LangSplatRouteImport } from './routes/$lang.$'
 import { Route as AdminUsersIndexRouteImport } from './routes/admin.users.index'
 import { Route as MockExamsExamIdTakeRouteImport } from './routes/mock-exams.$examId.take'
 import { Route as MockExamsExamIdReviewRouteImport } from './routes/mock-exams.$examId.review'
@@ -210,6 +213,11 @@ const AccountRoute = AccountRouteImport.update({
   path: '/account',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LangRoute = LangRouteImport.update({
+  id: '/$lang',
+  path: '/$lang',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -249,6 +257,11 @@ const AdminIndexRoute = AdminIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => AdminRoute,
+} as any)
+const LangIndexRoute = LangIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LangRoute,
 } as any)
 const TutorExamSubjectRoute = TutorExamSubjectRouteImport.update({
   id: '/$subject',
@@ -377,6 +390,11 @@ const AdminEconomicsRoute = AdminEconomicsRouteImport.update({
   path: '/economics',
   getParentRoute: () => AdminRoute,
 } as any)
+const LangSplatRoute = LangSplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => LangRoute,
+} as any)
 const AdminUsersIndexRoute = AdminUsersIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -411,6 +429,7 @@ const ApiPublicPaymentWebhookRoute = ApiPublicPaymentWebhookRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
@@ -438,6 +457,7 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
+  '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
@@ -462,6 +482,7 @@ export interface FileRoutesByFullPath {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/$lang/': typeof LangIndexRoute
   '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
@@ -498,6 +519,7 @@ export interface FileRoutesByTo {
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
+  '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/api/chat': typeof ApiChatRoute
@@ -521,6 +543,7 @@ export interface FileRoutesByTo {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/$lang': typeof LangIndexRoute
   '/admin': typeof AdminIndexRoute
   '/demo-practice': typeof DemoPracticeIndexRoute
   '/flashcards': typeof FlashcardsIndexRoute
@@ -538,6 +561,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
   '/account': typeof AccountRoute
   '/admin': typeof AdminRouteWithChildren
   '/auth': typeof AuthRoute
@@ -565,6 +589,7 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
+  '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
   '/admin/promocodes': typeof AdminPromocodesRoute
   '/admin/users': typeof AdminUsersRouteWithChildren
@@ -589,6 +614,7 @@ export interface FileRoutesById {
   '/products/lite-bbe-course-math': typeof ProductsLiteBbeCourseMathRoute
   '/products/lite-bbe-course-subjects': typeof ProductsLiteBbeCourseSubjectsRoute
   '/tutor-exam/$subject': typeof TutorExamSubjectRoute
+  '/$lang/': typeof LangIndexRoute
   '/admin/': typeof AdminIndexRoute
   '/demo-practice/': typeof DemoPracticeIndexRoute
   '/flashcards/': typeof FlashcardsIndexRoute
@@ -607,6 +633,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$lang'
     | '/account'
     | '/admin'
     | '/auth'
@@ -634,6 +661,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/tutor-exam'
+    | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
     | '/admin/users'
@@ -658,6 +686,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/$lang/'
     | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
@@ -694,6 +723,7 @@ export interface FileRouteTypes {
     | '/reset-password'
     | '/signup'
     | '/terms'
+    | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
     | '/api/chat'
@@ -717,6 +747,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/$lang'
     | '/admin'
     | '/demo-practice'
     | '/flashcards'
@@ -733,6 +764,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/$lang'
     | '/account'
     | '/admin'
     | '/auth'
@@ -760,6 +792,7 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/tutor-exam'
+    | '/$lang/$'
     | '/admin/economics'
     | '/admin/promocodes'
     | '/admin/users'
@@ -784,6 +817,7 @@ export interface FileRouteTypes {
     | '/products/lite-bbe-course-math'
     | '/products/lite-bbe-course-subjects'
     | '/tutor-exam/$subject'
+    | '/$lang/'
     | '/admin/'
     | '/demo-practice/'
     | '/flashcards/'
@@ -801,6 +835,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LangRoute: typeof LangRouteWithChildren
   AccountRoute: typeof AccountRoute
   AdminRoute: typeof AdminRouteWithChildren
   AuthRoute: typeof AuthRoute
@@ -1027,6 +1062,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AccountRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$lang': {
+      id: '/$lang'
+      path: '/$lang'
+      fullPath: '/$lang'
+      preLoaderRoute: typeof LangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -1082,6 +1124,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/admin/'
       preLoaderRoute: typeof AdminIndexRouteImport
       parentRoute: typeof AdminRoute
+    }
+    '/$lang/': {
+      id: '/$lang/'
+      path: '/'
+      fullPath: '/$lang/'
+      preLoaderRoute: typeof LangIndexRouteImport
+      parentRoute: typeof LangRoute
     }
     '/tutor-exam/$subject': {
       id: '/tutor-exam/$subject'
@@ -1251,6 +1300,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminEconomicsRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/$lang/$': {
+      id: '/$lang/$'
+      path: '/$'
+      fullPath: '/$lang/$'
+      preLoaderRoute: typeof LangSplatRouteImport
+      parentRoute: typeof LangRoute
+    }
     '/admin/users/': {
       id: '/admin/users/'
       path: '/'
@@ -1295,6 +1351,18 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface LangRouteChildren {
+  LangSplatRoute: typeof LangSplatRoute
+  LangIndexRoute: typeof LangIndexRoute
+}
+
+const LangRouteChildren: LangRouteChildren = {
+  LangSplatRoute: LangSplatRoute,
+  LangIndexRoute: LangIndexRoute,
+}
+
+const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
 
 interface AdminUsersRouteChildren {
   AdminUsersUserIdRoute: typeof AdminUsersUserIdRoute
@@ -1438,6 +1506,7 @@ const TutorExamRouteWithChildren = TutorExamRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LangRoute: LangRouteWithChildren,
   AccountRoute: AccountRoute,
   AdminRoute: AdminRouteWithChildren,
   AuthRoute: AuthRoute,

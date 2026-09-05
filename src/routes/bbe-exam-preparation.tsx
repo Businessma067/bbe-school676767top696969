@@ -8,13 +8,14 @@ import {
 import { BbeFaqAccordion, buildFaqJsonLd } from "@/components/bbe-exam/BbeFaq";
 import { BbeExamShell, BbeSection } from "@/components/bbe-exam/BbeExamShell";
 import { BBE_EXAM_FORMAT, BBE_PRACTICE_ROUTES } from "@/config/bbe-exam-hub";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/bbe-exam-preparation")({
   head: () => ({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(faqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/bbe-exam-preparation" }],
+    links: [...hreflangLinks("/bbe-exam-preparation"), { rel: "canonical", href: "https://bbe-school.com/bbe-exam-preparation" }],
     meta: [
       {
         title: "How to Prepare for the WU Vienna BBE Entrance Exam | BBE School",
@@ -96,7 +97,7 @@ const steps = [
   },
 ];
 
-function BbeExamPreparationPage() {
+export function BbeExamPreparationPage() {
   return (
     <BbeExamShell
       h1="How to Prepare for the WU Vienna BBE Entrance Exam"

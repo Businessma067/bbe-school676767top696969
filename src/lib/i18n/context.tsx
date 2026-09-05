@@ -28,17 +28,8 @@ export function useLanguage() {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
+  // Default stays English for SSR; LocaleSync applies URL / storage after mount.
   const [lang, setLangState] = useState<Lang>("en");
-
-  // Read the stored preference after hydration so SSR markup stays stable.
-  useEffect(() => {
-    try {
-      const stored = window.localStorage.getItem(STORAGE_KEY) as Lang | null;
-      if (stored === "de" || stored === "uk" || stored === "en") setLangState(stored);
-    } catch {
-      /* storage unavailable */
-    }
-  }, []);
 
   useEffect(() => {
     if (typeof document !== "undefined") document.documentElement.lang = lang;
@@ -59,4 +50,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   );
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
+}
+
+export function readStoredLang(): Lang | null {
+  try {
+    const stored = window.localStorage.getItem(STORAGE_KEY) as Lang | null;
+    if (stored === "de" || stored === "uk" || stored === "en") return stored;
+  } catch {
+    /* storage unavailable */
+  }
+  return null;
 }

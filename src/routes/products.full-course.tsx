@@ -20,6 +20,8 @@ import fullAsset from "@/assets/full-course-product.png.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF } from "@/lib/full-course-access";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 const FULL_COURSE_PRICE = 479;
 
@@ -28,7 +30,7 @@ export const Route = createFileRoute("/products/full-course")({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqPageJsonLd(fullCourseFaqs)) },
     ],
-    links: [{ rel: "canonical", href: "https://bbe-school.com/products/full-course" }],
+    links: [...hreflangLinks("/products/full-course"), { rel: "canonical", href: "https://bbe-school.com/products/full-course" }],
     meta: [
       { title: "Full BBE Course — Unlock Full Access" },
       {
@@ -222,7 +224,7 @@ function CtaButton({
   );
 }
 
-function FullCourseProduct() {
+export function FullCourseProduct() {
   const { ready, signedIn, ownsFullCourse } = useFullCourseAccess();
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
@@ -240,12 +242,12 @@ function FullCourseProduct() {
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/products"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Products
-          </Link>
+          </LocalizedLink>
         }
       />
 

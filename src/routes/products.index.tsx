@@ -6,6 +6,8 @@ import fullAsset from "@/assets/full-course-product.png.asset.json";
 import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 const PROVIDER = {
   "@type": "Organization",
@@ -67,7 +69,7 @@ const courseListJsonLd = [
 
 export const Route = createFileRoute("/products/")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/products" }],
+    links: [...hreflangLinks("/products"), { rel: "canonical", href: "https://bbe-school.com/products" }],
     meta: [
       { title: "Products — BBE School" },
       {
@@ -136,19 +138,19 @@ const products: Product[] = [
   },
 ];
 
-function ProductsPage() {
+export function ProductsPage() {
   const { ready, ownsFullCourse } = useFullCourseAccess();
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         actions={
-          <Link
+          <LocalizedLink
             to="/"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
-          </Link>
+          </LocalizedLink>
         }
       />
 
