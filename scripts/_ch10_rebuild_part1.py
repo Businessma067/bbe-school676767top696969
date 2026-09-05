@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import random
 import statistics
 import sys
@@ -28,6 +29,46 @@ LETTERS = "ABCDE"
 TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
 
 
+def vary_config(base: dict, v: int) -> dict:
+    """Distinct cosmetic/name + light safe jitter. Do not rescale targets (breaks stem text)."""
+    c = dict(base)
+    names = [
+        "Orion", "Polar", "Quill", "Raven", "Sable", "Thorn", "Umbra", "Vesper",
+        "Warden", "Yale", "Zephyr", "Atlas", "Boreal", "Cobalt", "Drift", "Ember",
+        "Fjord", "Granite", "Harbor", "Ivory", "Jasper", "Keel", "Lumen", "Mirror",
+        "Nimbus", "Onyx", "Prism", "Quartz", "Ridge", "Solace", "Tide", "Ulrich",
+        "Axiom", "Bright", "Cedar", "Delta", "Eden", "Flux", "Grove", "Helix",
+    ]
+    name_keys = ("city", "fund", "name", "iso", "sample", "label", "site")
+    for nk in name_keys:
+        if nk in c and isinstance(c[nk], str):
+            root = re.sub(r"-\d+$", "", c[nk])
+            c[nk] = names[(hash(root) + v) % len(names)]
+    # Light jitter only on rates/times — never on absolute levels/targets.
+    shift = [-0.004, -0.002, 0.0, 0.002, 0.004, 0.006][v % 6]
+    tshift = [-1, 0, 0, 1, 1, 2][v % 6]
+    for key, val in list(c.items()):
+        if key in name_keys:
+            continue
+        if key in {"k", "k1", "k2", "g", "p", "r", "kA", "kB"} and isinstance(val, float):
+            nv = val + shift
+            # keep sign / positivity for growth-like rates when original was positive
+            if val > 0:
+                nv = max(0.002, nv)
+            c[key] = round(nv, 6)
+        elif key in {"T", "t", "n", "tmax", "half", "t1", "t2"} and isinstance(val, (int, float)):
+            nv = val + tshift
+            if nv <= 0:
+                nv = abs(val) + 1
+            c[key] = int(nv) if isinstance(val, int) else float(nv)
+    return c
+
+
+def pick_config(configs: list[dict], v: int) -> dict:
+    return vary_config(configs[v % len(configs)], v)
+
+
+
 def ln(x: float) -> float:
     return math.log(x)
 
@@ -44,8 +85,24 @@ def verd(truth: bool) -> str:
 
 def expl(letter: str, truth: bool, body: str) -> str:
     body = body.strip()
-    if "so the statement is" not in body.lower():
-        body = body.rstrip(".") + f".\n\nSo the statement is {verd(truth)}."
+    body = re.sub(
+        r"(?is)\n*Under that arithmetic the claim .+? is (?:true|false)\.?\s*$",
+        "",
+        body,
+    )
+    body = re.sub(r"(?i),\s*so the claim is (?:true|false)\.?\s*$", ".", body)
+    body = re.sub(
+        r"(?is)\n*(?:The claim|That claim).{0,200}? is (?:true|false)\.?\s*$",
+        "",
+        body,
+    )
+    body = re.sub(
+        r"(?i)\n*(?:Therefore|Thus|Hence) the statement is (?:True|False)\.?\s*$",
+        "",
+        body,
+    )
+    body = re.sub(r"(?i)\n*So the statement is (?:True|False)\.?\s*$", "", body)
+    body = body.strip().rstrip(".") + f".\n\nSo the statement is {verd(truth)}."
     return f"**{letter}.** → {verd(truth)}\n\n{body}"
 
 
@@ -104,7 +161,7 @@ def build_cont_vs_disc(v: int, want_fig: bool) -> dict[str, Any]:
         dict(city="Sorn", P0=6.0, unit="million", k=0.04, t=12, level=9.5),
         dict(city="Kestrel", P0=15.0, unit="million", k=0.018, t=22, level=22.0),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P0, k, t = c["P0"], c["k"], c["t"]
     cont = P0 * math.exp(k * t)
     disc = P0 * (1 + k) ** t
@@ -207,7 +264,7 @@ def build_gdp(v: int, want_fig: bool) -> dict[str, Any]:
         dict(name="Ember", Y0=480, g=0.022, N0=9, p=0.006, t=22),
         dict(name="Frost", Y0=550, g=0.04, N0=11, p=0.018, t=12),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     Y0, g, N0, p, t = c["Y0"], c["g"], c["N0"], c["p"], c["t"]
     # Y0 in billions, N0 in millions → y0 in thousands
     y0 = Y0 / N0
@@ -305,7 +362,7 @@ def build_piecewise(v: int, want_fig: bool) -> dict[str, Any]:
         dict(fund="Sable", P0=1200, k1=0.055, T=3, k2=0.015, target=1600),
         dict(fund="Thorn", P0=2500, k1=0.02, T=10, k2=0.035, target=4000),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P0, k1, T, k2, target = c["P0"], c["k1"], c["T"], c["k2"], c["target"]
     fT = P0 * math.exp(k1 * T)
     # solve fT * e^{k2(t-T)} = target for t > T (if possible)
@@ -420,7 +477,7 @@ def build_decay(v: int, want_fig: bool) -> dict[str, Any]:
         dict(iso="Sample-D", m0=120.0, half=5.0, t=20, claim=6),
         dict(iso="Sample-E", m0=90.0, half=9.0, t=27, claim=10),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     m0, half, t = c["m0"], c["half"], c["t"]
     k = ln(2) / half
     n_half = t / half
@@ -503,7 +560,7 @@ def build_compound(v: int, want_fig: bool) -> dict[str, Any]:
         dict(P=15000, r=0.03, n=365, t=10),
         dict(P=9000, r=0.07, n=12, t=3),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P, r, n, t = c["P"], c["r"], c["n"], c["t"]
     disc = P * (1 + r / n) ** (n * t)
     cont = P * math.exp(r * t)
@@ -592,7 +649,7 @@ def build_compare_models(v: int, want_fig: bool) -> dict[str, Any]:
         dict(P=120, k=0.025, a=1.02, t=12),
         dict(P=80, k=0.06, a=1.055, t=5),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P, k, a, t = c["P"], c["k"], c["a"], c["t"]
     cont = P * math.exp(k * t)
     disc = P * (a ** t)
@@ -671,7 +728,7 @@ def build_cooling(v: int, want_fig: bool) -> dict[str, Any]:
         dict(T0=100, Ta=20, k=0.07, t=20, claim=50),
         dict(T0=75, Ta=15, k=0.045, t=35, claim=30),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     T0, Ta, k, t = c["T0"], c["Ta"], c["k"], c["t"]
     Tt = Ta + (T0 - Ta) * math.exp(-k * t)
     t_to = -ln((c["claim"] - Ta) / (T0 - Ta)) / k
@@ -772,7 +829,7 @@ def build_bacteria(v: int, want_fig: bool) -> dict[str, Any]:
         dict(N0=1500, factor=2, period=4, t=16, claim=25000),
         dict(N0=600, factor=5, period=5, t=15, claim=80000),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     N0, fac, per, t, claim = c["N0"], c["factor"], c["period"], c["t"], c["claim"]
     nper = t / per
     Nt = N0 * (fac ** nper)
@@ -847,7 +904,7 @@ def build_investment_solve_t(v: int, want_fig: bool) -> dict[str, Any]:
         dict(P=12000, r=0.04, goal=18000),
         dict(P=6000, r=0.055, goal=10000),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P, r, goal = c["P"], c["r"], c["goal"]
     t_cont = ln(goal / P) / r
     t_disc = ln(goal / P) / ln(1 + r)
@@ -926,7 +983,7 @@ def build_unit_trap(v: int, want_fig: bool) -> dict[str, Any]:
         dict(city="Marina", P0=2.2, k=0.028, t=9),
         dict(city="Narrows", P0=5.0, k=0.012, t=20),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P0, k, t = c["P0"], c["k"], c["t"]
     ft = P0 * math.exp(k * t)
     # trap: claim "exceeds 10" meaning 10 people vs 10 million
@@ -1014,7 +1071,7 @@ def build_doubling(v: int, want_fig: bool) -> dict[str, Any]:
         dict(base=1.06, claim_t=14),
         dict(base=1.03, claim_t=25),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     a = c["base"]
     r = a - 1
     t_double = ln(2) / ln(a)
@@ -1086,7 +1143,7 @@ def build_semi_log(v: int, want_fig: bool) -> dict[str, Any]:
         dict(P0=150, k=0.025, t1=8, t2=16),
         dict(P0=120, k=0.035, t1=5, t2=15),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P0, k, t1, t2 = c["P0"], c["k"], c["t1"], c["t2"]
     slope = k  # d/dt ln f = k
     # chord slope on semi-log between t1 and t2

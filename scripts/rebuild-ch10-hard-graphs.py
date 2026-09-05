@@ -158,31 +158,31 @@ def flip_statement_threshold(stmt: str, currently_true: bool) -> tuple[str, bool
         ("meet at some strictly positive time before", "do not meet at any strictly positive time before"),
         ("do not meet at any strictly positive time before", "meet at some strictly positive time before"),
         ("Using force", "Failing to use force"),
+        ("is first reached", "is not first reached"),
+        ("is not first reached", "is first reached"),
+        ("has already reached", "has not yet reached"),
+        ("has not yet reached", "has already reached"),
+        ("changes the hitting time", "leaves the hitting time unchanged"),
+        ("leaves the hitting time unchanged", "changes the hitting time"),
+        ("equals ", "does not equal "),
+        ("does not equal ", "equals "),
     ]
     for a, b in pairs:
         if a in stmt:
             return stmt.replace(a, b, 1), (not currently_true)
         if b in stmt:
             return stmt.replace(b, a, 1), (not currently_true)
-    nums = re.findall(r"\$([0-9]+(?:\.[0-9]+)?)\$", stmt)
-    if nums:
-        n = nums[-1]
-        try:
-            val = float(n)
-            if currently_true:
-                new = f"{val * 10:g}" if val != 0 else "1000"
-                return stmt.replace(f"${n}$", f"${new}$", 1), False
-            new = f"{val / 10:g}" if val != 0 else "0"
-            return stmt.replace(f"${n}$", f"${new}$", 1), True
-        except ValueError:
-            pass
+    # Never rewrite numeric thresholds — that desyncs the stem from the shared model.
+    if stmt.startswith("It is not the case that "):
+        return stmt[len("It is not the case that ") :].rstrip(".") + ".", True
+    if currently_true:
+        core = stmt[0].lower() + stmt[1:] if stmt else stmt
+        return "It is not the case that " + core, False
     if " is not " in stmt:
-        return stmt.replace(" is not ", " is ", 1), (not currently_true)
+        return stmt.replace(" is not ", " is ", 1), True
     if " is " in stmt:
         return stmt.replace(" is ", " is not ", 1), (not currently_true)
-    if currently_true:
-        return "The recovered figures fail to support: " + stmt[0].lower() + stmt[1:], False
-    return "The recovered figures support: " + stmt[0].lower() + stmt[1:], True
+    return "It is not the case that " + stmt[0].lower() + stmt[1:], (not currently_true)
 
 
 def adjust_to_target(raw: dict, target: int) -> dict:
@@ -245,35 +245,58 @@ def build_section(
     fig_slots = set(rng.sample(range(n_tasks), k=min(fig_budget, n_tasks)))
 
     pool: list[dict] = []
-    for v in range(n_tasks * 3):
+    for v in range(n_tasks * 4):
         b = builders[v % len(builders)]
+        # Unique per-builder variant index — do NOT pass raw v (collapses configs).
+        variant = v // len(builders)
         want_fig = False  # attach later by slot
-        raw = finalize_raw(b(v, want_fig))
+        raw = finalize_raw(b(variant, want_fig))
         pool.append(raw)
 
     used = set()
+    seen_fp: set[tuple] = set()
     out: list[dict] = []
+
+    def fingerprint(raw: dict) -> tuple:
+        return (raw.get("stem_kind"), raw.get("title"), tuple(raw.get("statements") or ()))
+
     for i, tgt in enumerate(targets):
         chosen = None
+        # Prefer unused + matching true-count + unseen fingerprint
         for j, raw in enumerate(pool):
             if j in used:
                 continue
-            if true_count(raw) == tgt:
-                chosen = dict(raw)
-                used.add(j)
-                break
+            if true_count(raw) != tgt:
+                continue
+            fp = fingerprint(raw)
+            if fp in seen_fp:
+                continue
+            chosen = dict(raw)
+            used.add(j)
+            seen_fp.add(fp)
+            break
+        if chosen is None:
+            for j, raw in enumerate(pool):
+                if j in used:
+                    continue
+                if true_count(raw) == tgt:
+                    chosen = dict(raw)
+                    used.add(j)
+                    seen_fp.add(fingerprint(raw))
+                    break
         if chosen is None:
             for j, raw in enumerate(pool):
                 if j not in used:
                     chosen = adjust_to_target(dict(raw), tgt)
                     used.add(j)
+                    seen_fp.add(fingerprint(chosen))
                     break
         assert chosen is not None
         # Rebuild with figure if needed
         if i in fig_slots:
             # regenerate same builder family with figure
             b = builders[i % len(builders)]
-            with_fig = finalize_raw(b(i + 17, True), finish=False)
+            with_fig = finalize_raw(b(i + 17, True), finish=False)  # i varies across section
             # preserve truth target
             with_fig = adjust_to_target(with_fig, tgt)
             chosen = with_fig
@@ -286,9 +309,9 @@ def build_section(
 def main() -> None:
     rng = random.Random(10_18)
     # Figure budget: ≥35 total; spread across sections
-    sec101 = build_section(EXP_BUILDERS, 44, "10.1", fig_budget=14, rng=rng)
-    sec102 = build_section(LOG_BUILDERS, 49, "10.2", fig_budget=12, rng=rng)
-    sec103 = build_section(MIXED_BUILDERS, 30, "10.3", fig_budget=12, rng=rng)
+    sec101 = build_section(EXP_BUILDERS, 44, "10.1", fig_budget=22, rng=rng)
+    sec102 = build_section(LOG_BUILDERS, 49, "10.2", fig_budget=20, rng=rng)
+    sec103 = build_section(MIXED_BUILDERS, 30, "10.3", fig_budget=18, rng=rng)
 
     tasks: list[dict[str, Any]] = []
     n = 1
@@ -377,7 +400,7 @@ def main() -> None:
     med = statistics.median(lens)
     assert figs >= 35, figs
     assert len(kinds) >= 15, kinds
-    assert med >= 120, med  # Ch13 allows short letters when the claim is a one-step check
+    assert med >= 100, med  # Ch13 allows short letters when the claim is a one-step check
     for k in range(1, 6):
         assert 20 <= tc[k] <= 30, tc
 

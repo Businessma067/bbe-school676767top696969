@@ -6190,7 +6190,9 @@ $$R'(6)=30-12=18,\\qquad C'(6)=12+6=18.$$
 
 Both equal $18$ euros at six boxes, matching the claim
 
-Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough., so the statement is True.`,
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough..
+
+So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
@@ -8685,7 +8687,9 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 
 The elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue
 
-Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough., so the statement is True.`,
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough..
+
+So the statement is True.`,
       `**E.** → True
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.

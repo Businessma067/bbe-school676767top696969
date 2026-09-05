@@ -18,7 +18,6 @@ export const MATH_CH12_SUBSECTIONS = [
   { id: "12.6", title: "Exam-style tasks" },
 ] as const;
 
-
 export const MATH_CH12_PROBABILITY: MathTask[] = [
   ...(ch12.tasks as MathTask[]),
   ...(ch12Exam.tasks as MathTask[]),

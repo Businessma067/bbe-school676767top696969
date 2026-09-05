@@ -1018,9 +1018,7 @@ $$\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$
 
 $$\\{A\\}$$
 
-The first has $3$ blocks and the second has $1$ block. The claim that every partition must have exactly $n$ blocks is false.
-
-So the statement is False.`,
+The first has $3$ blocks and the second has $1$ block. So the statement is false.`,
       `**C.** → False
 
 The blocks of $Q=\\{\\{1,2,3\\},\\{3,4,5,6\\}\\}$ overlap at $3$:
@@ -3752,18 +3750,14 @@ Then negate that result:
 
 $$\\neg(P\\land Q)=\\neg\\mathrm{F}=\\mathrm{T}$$
 
-The claim says the conjunction is not true, and the negated expression is true.
-
-So the statement is True.`,
+So the statement is true.`,
       `**D.** → False
 
 "Neither prime nor even" means that both propositions are false. The overview recovered $P$ true and $Q$ false, so
 
 $$\\neg P\\land\\neg Q=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The claim says this expression is true, but its value is false.
-
-So the statement is False.`,
+So the statement is false.`,
       `**E.** → False
 
 Negation reverses the truth value of the complete disjunction. First evaluate the disjunction:
@@ -3774,9 +3768,7 @@ Then negate that result:
 
 $$\\neg(P\\lor Q)=\\neg\\mathrm{T}=\\mathrm{F}$$
 
-The claim says the negated disjunction is true, but its value is false.
-
-So the statement is False.`,
+So the statement is false.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -8549,145 +8541,7 @@ The negation is $\\exists t\\,(P(t) \\land \\neg Q(t))$. The converse is $Q \\Ri
   {
     id: `math-1-97`,
     case_id: `MATH 1.97`,
-    title: `A number-theory theorem states : "If a number is a perfect square, the`,
-    subsection: `1.4`,
-    context: `A number-theory theorem states: "If a number is a perfect square, then it has an odd number of positive divisors."`,
-    statements: [
-      `The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."`,
-      `36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.`,
-      `The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.`,
-      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.`,
-      `The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.`,
-    ],
-    answer_key: [true, true, true, false, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Treat the theorem as universal over positive integers. Negate the quantifier and implication:
-
-$$\\neg\\forall n\\,(S(n)\\Rightarrow O(n))
-\\equiv
-\\exists n\\,(S(n)\\land\\neg O(n))$$
-
-Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form.
-
-So the statement is True.`,
-      `**B.** → True
-
-$36$ is $6^{2}$, so the hypothesis holds. The listed divisors are
-
-$$\\{1,2,3,4,6,9,12,18,36\\}$$
-
-nine numbers, and nine is odd. Hypothesis true and conclusion true: $36$ supports the theorem and is not a counterexample.
-
-That matches the claim.
-
-So the statement is True.`,
-      `**C.** → True
-
-If the divisor count is odd, a leftover self-partner must exist, so $d^{2} = n$ and $n$ is a square. That is the converse: odd count $\\Rightarrow$ square. Sample $36$ has nine divisors and is a square. Sample $20$ has six divisors and is not a square. Both directions hold by the same pairing.
-
-So the statement is True.`,
-      `**D.** → False
-
-The theorem speaks only about perfect squares. $20$ sits between $4^{2} = 16$ and $5^{2} = 25$, so $20$ is not a square and the hypothesis $S$ is false. An implication with a false "if" is not refuted by $20$. A counterexample would need a square with an even divisor count.
-
-So the statement is False.`,
-      `**E.** → True
-
-The inverse is "not a square, therefore even divisor count," equivalent to the converse. With no leftover square-root partner, every divisor has a distinct mate and the count is even. Sample $20$ is not a square and has $6$ divisors, even. The inverse holds because the converse does.
-
-So the statement is True.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 19,
-    solution_overview: `Divisors pair as $d$ with $n/d$. A divisor is its own partner only when $d^{2} = n$, that is when $n$ is a perfect square. So a square has an odd divisor count, and a non-square has an even count.
-
-The theorem is $S \\Rightarrow O$: perfect square, therefore odd divisor count. The converse is odd count $\\Rightarrow$ square.
-
-Sample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $20$ has listed divisors $\\{1,2,4,5,10,20\\}$.`,
-  },
-  {
-    id: `math-1-98`,
-    case_id: `MATH 1.98`,
-    title: `Four friends and their jobs`,
-    subsection: `1.4`,
-    context: `Four friends - Emma, Felix, Grace, and Hugo - each have a different job: Doctor, Engineer, Teacher, or Lawyer.
-
-(1) Emma is a doctor if and only if Felix is not an engineer.
-
-(2) Felix is an engineer if and only if Grace is a teacher.
-
-(3) Grace is not a teacher.
-
-(4) Hugo is a lawyer.`,
-    statements: [
-      `Emma is a doctor.`,
-      `Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.`,
-      `Grace is an engineer.`,
-      `Clue (3) is redundant - the full job assignment could be determined without it.`,
-      `If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.`,
-    ],
-    answer_key: [true, false, true, true, true],
-    tactical_explanations: [
-      `**A.** → True
-
-Use the biconditionals as equal-truth constraints. Clue (3) gives $\\neg G$. From clue (2), $F\\Leftrightarrow G$, so
-
-$$\\neg G\\quad\\Longrightarrow\\quad\\neg F$$
-
-Clue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,
-
-$$\\neg F\\quad\\Longrightarrow\\quad E$$
-
-Therefore Emma is the doctor.
-
-So the statement is True.`,
-      `**B.** → False
-
-Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails.
-
-So the statement is False.`,
-      `**C.** → True
-
-First, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
-
-$$\\{\\text{Engineer},\\text{Teacher}\\}$$
-
-But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace.
-
-So the statement is True.`,
-      `**D.** → True
-
-Drop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant.
-
-So the statement is True.`,
-      `**E.** → True
-
-The chain to Emma used only (3), (2), and (1): Grace not teacher, therefore Felix not engineer, therefore Emma is the doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher. Remove clue (4) and Emma is still the doctor.
-
-So the statement is True.`,
-    ],
-    difficulty_level: `3/5`,
-    sort_order: 20,
-    solution_overview: `**Part 1: Setup.**
-
-Write $E$ for Emma being a doctor, $F$ for Felix being an engineer, $G$ for Grace being a teacher, and $H$ for Hugo being a lawyer. Four distinct jobs means each job is held by exactly one person. The clues are
-
-$$(1)\\ E \\Leftrightarrow \\neg F, \\qquad (2)\\ F \\Leftrightarrow G$$
-
-$$(3)\\ \\neg G, \\qquad (4)\\ H$$
-
-A biconditional forces matching truth values.
-
-**Part 2: Solve.**
-
-From (3), $G$ is false, so (2) forces $F$ false. Then (1) forces $E$ true: Emma is the doctor. From (4), Hugo is the lawyer. The remaining jobs are Engineer and Teacher for Felix and Grace, and Felix is already barred from Engineer, so Felix is the teacher and Grace is the engineer.`,
-  },
-  {
-    id: `math-1-99`,
-    case_id: `MATH 1.99`,
-    title: `A real-analysis theorem states : "If a sequence converges, then it is`,
+    title: `A number-theory theorem states : "If a number is a perfect square, the`,\n    subsection: `1.4`,\n    context: `A number-theory theorem states: "If a number is a perfect square, then it has an odd number of positive divisors."`,\n    statements: [\n      `The correctly formed negation of the theorem is: "A number is a perfect square and it has an even number of divisors."`,\n      `36 is a perfect square with divisors $\\{1,2,3,4,6,9,12,18,36\\}$ - 9 divisors (odd), which is consistent with the theorem and not a counterexample to it.`,\n      `The converse, "If a number has an odd number of divisors, then it is a perfect square," is also a true statement, so both directions of the implication hold here.`,\n      `Since 20 is not a perfect square and has divisors $\\{1,2,4,5,10,20\\} (6$ divisors, even), 20 is a valid counterexample disproving the original theorem.`,\n      `The inverse, "If a number is not a perfect square, it has an even number of divisors," is also true in this case, since the converse is true.`,\n    ],\n    answer_key: [true, true, true, false, true],\n    tactical_explanations: [\n      `**A.** → True\n\nTreat the theorem as universal over positive integers. Negate the quantifier and implication:\n\n$$\\neg\\forall n\\,(S(n)\\Rightarrow O(n))\n\\equiv\n\\exists n\\,(S(n)\\land\\neg O(n))$$\n\nBecause a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form.\n\nSo the statement is True.`,\n      `**B.** → True\n\n$36$ is $6^{2}$, so the hypothesis holds. The listed divisors are\n\n$$\\{1,2,3,4,6,9,12,18,36\\}$$\n\nnine numbers, and nine is odd. Hypothesis true and conclusion true: $36$ supports the theorem and is not a counterexample.\n\nThat matches the claim.\n\nSo the statement is True.`,\n      `**C.** → True\n\nIf the divisor count is odd, a leftover self-partner must exist, so $d^{2} = n$ and $n$ is a square. That is the converse: odd count $\\Rightarrow$ square. Sample $36$ has nine divisors and is a square. Sample $20$ has six divisors and is not a square. Both directions hold by the same pairing.\n\nSo the statement is True.`,\n      `**D.** → False\n\nThe theorem speaks only about perfect squares. $20$ sits between $4^{2} = 16$ and $5^{2} = 25$, so $20$ is not a square and the hypothesis $S$ is false. An implication with a false "if" is not refuted by $20$. A counterexample would need a square with an even divisor count.\n\nSo the statement is False.`,\n      `**E.** → True\n\nThe inverse is "not a square, therefore even divisor count," equivalent to the converse. With no leftover square-root partner, every divisor has a distinct mate and the count is even. Sample $20$ is not a square and has $6$ divisors, even. The inverse holds because the converse does.\n\nSo the statement is True.`,\n    ],\n    difficulty_level: `3/5`,\n    sort_order: 19,\n    solution_overview: `Divisors pair as $d$ with $n/d$. A divisor is its own partner only when $d^{2} = n$, that is when $n$ is a perfect square. So a square has an odd divisor count, and a non-square has an even count.\n\nThe theorem is $S \\Rightarrow O$: perfect square, therefore odd divisor count. The converse is odd count $\\Rightarrow$ square.\n\nSample $36 = 6^{2}$ with listed divisors $\\{1,2,3,4,6,9,12,18,36\\}$. Sample $20$ has listed divisors $\\{1,2,4,5,10,20\\}$.`,\n  },\n  {\n    id: `math-1-98`,\n    case_id: `MATH 1.98`,\n    title: `Four friends and their jobs`,\n    subsection: `1.4`,\n    context: `Four friends - Emma, Felix, Grace, and Hugo - each have a different job: Doctor, Engineer, Teacher, or Lawyer.\n\n(1) Emma is a doctor if and only if Felix is not an engineer.\n\n(2) Felix is an engineer if and only if Grace is a teacher.\n\n(3) Grace is not a teacher.\n\n(4) Hugo is a lawyer.`,\n    statements: [\n      `Emma is a doctor.`,\n      `Felix is a teacher, and this can be determined directly from clue (2) alone, without needing any other clues.`,\n      `Grace is an engineer.`,\n      `Clue (3) is redundant - the full job assignment could be determined without it.`,\n      `If clue (4) were removed entirely, we could still determine that Emma is a doctor from clues (1)-(3) alone.`,\n    ],\n    answer_key: [true, false, true, true, true],\n    tactical_explanations: [\n      `**A.** → True\n\nUse the biconditionals as equal-truth constraints. Clue (3) gives $\\neg G$. From clue (2), $F\\Leftrightarrow G$, so\n\n$$\\neg G\\quad\\Longrightarrow\\quad\\neg F$$\n\nClue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,\n\n$$\\neg F\\quad\\Longrightarrow\\quad E$$\n\nTherefore Emma is the doctor.\n\nSo the statement is True.`,\n      `**B.** → False\n\nClue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails.\n\nSo the statement is False.`,\n      `**C.** → True\n\nFirst, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore\n\n$$\\{\\text{Engineer},\\text{Teacher}\\}$$\n\nBut $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace.\n\nSo the statement is True.`,\n      `**D.** → True\n\nDrop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant.\n\nSo the statement is True.`,\n      `**E.** → True\n\nThe chain to Emma used only (3), (2), and (1): Grace not teacher, therefore Felix not engineer, therefore Emma is the doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher. Remove clue (4) and Emma is still the doctor.\n\nSo the statement is True.`,\n    ],\n    difficulty_level: `3/5`,\n    sort_order: 20,\n    solution_overview: `**Part 1: Setup.**\n\nWrite $E$ for Emma being a doctor, $F$ for Felix being an engineer, $G$ for Grace being a teacher, and $H$ for Hugo being a lawyer. Four distinct jobs means each job is held by exactly one person. The clues are\n\n$$(1)\\ E \\Leftrightarrow \\neg F, \\qquad (2)\\ F \\Leftrightarrow G$$\n\n$$(3)\\ \\neg G, \\qquad (4)\\ H$$\n\nA biconditional forces matching truth values.\n\n**Part 2: Solve.**\n\nFrom (3), $G$ is false, so (2) forces $F$ false. Then (1) forces $E$ true: Emma is the doctor. From (4), Hugo is the lawyer. The remaining jobs are Engineer and Teacher for Felix and Grace, and Felix is already barred from Engineer, so Felix is the teacher and Grace is the engineer.`,\n  },\n  {\n    id: `math-1-99`,\n    case_id: `MATH 1.99`,\n    title: `A real-analysis theorem states : "If a sequence converges, then it is`,
     subsection: `1.4`,
     context: `A real-analysis theorem states: "If a sequence converges, then it is bounded."`,
     statements: [

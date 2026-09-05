@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import math
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -13,6 +14,47 @@ from ch10_svg import competing_populations, log_curve, semi_log_exp, two_models,
 # Import shared helpers from part1 by exec? Better: duplicate tiny helpers.
 def ln(x: float) -> float:
     return math.log(x)
+
+
+
+
+def vary_config(base: dict, v: int) -> dict:
+    """Distinct cosmetic/name + light safe jitter. Do not rescale targets (breaks stem text)."""
+    c = dict(base)
+    names = [
+        "Orion", "Polar", "Quill", "Raven", "Sable", "Thorn", "Umbra", "Vesper",
+        "Warden", "Yale", "Zephyr", "Atlas", "Boreal", "Cobalt", "Drift", "Ember",
+        "Fjord", "Granite", "Harbor", "Ivory", "Jasper", "Keel", "Lumen", "Mirror",
+        "Nimbus", "Onyx", "Prism", "Quartz", "Ridge", "Solace", "Tide", "Ulrich",
+        "Axiom", "Bright", "Cedar", "Delta", "Eden", "Flux", "Grove", "Helix",
+    ]
+    name_keys = ("city", "fund", "name", "iso", "sample", "label", "site")
+    for nk in name_keys:
+        if nk in c and isinstance(c[nk], str):
+            root = re.sub(r"-\d+$", "", c[nk])
+            c[nk] = names[(hash(root) + v) % len(names)]
+    # Light jitter only on rates/times — never on absolute levels/targets.
+    shift = [-0.004, -0.002, 0.0, 0.002, 0.004, 0.006][v % 6]
+    tshift = [-1, 0, 0, 1, 1, 2][v % 6]
+    for key, val in list(c.items()):
+        if key in name_keys:
+            continue
+        if key in {"k", "k1", "k2", "g", "p", "r", "kA", "kB"} and isinstance(val, float):
+            nv = val + shift
+            # keep sign / positivity for growth-like rates when original was positive
+            if val > 0:
+                nv = max(0.002, nv)
+            c[key] = round(nv, 6)
+        elif key in {"T", "t", "n", "tmax", "half", "t1", "t2"} and isinstance(val, (int, float)):
+            nv = val + tshift
+            if nv <= 0:
+                nv = abs(val) + 1
+            c[key] = int(nv) if isinstance(val, int) else float(nv)
+    return c
+
+
+def pick_config(configs: list[dict], v: int) -> dict:
+    return vary_config(configs[v % len(configs)], v)
 
 
 def fmt(x: float, digs: int = 4) -> str:
@@ -30,7 +72,7 @@ def build_change_of_base(v: int, want_fig: bool) -> dict[str, Any]:
         dict(a=32, b=2, rhs=6),
         dict(a=125, b=5, rhs=3),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     a, b, rhs = c["a"], c["b"], c["rhs"]
     # solve a^x = b^rhs  → x = rhs * log_a(b) = rhs / log_b(a)
     log_b_a = math.log(a, b)
@@ -106,7 +148,7 @@ def build_log_quadratic(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=2, c2=1, c1=-4, c0=3),  # u=1,3
         dict(b=5, c2=1, c1=-5, c0=6),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, c2, c1, c0 = c["b"], c["c2"], c["c1"], c["c0"]
     # roots of c2 u^2 + c1 u + c0 = 0
     disc = c1 * c1 - 4 * c2 * c0
@@ -186,7 +228,7 @@ def build_elasticity(v: int, want_fig: bool) -> dict[str, Any]:
         dict(a=5.5, b=1.0, P=math.e, claim_Q=15),
         dict(a=4.5, b=1.25, P=4.0, claim_Q=6),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     a, b, P = c["a"], c["b"], c["P"]
     lnQ = a - b * ln(P)
     Q = math.exp(lnQ)
@@ -267,7 +309,7 @@ def build_log_of_growth(v: int, want_fig: bool) -> dict[str, Any]:
         dict(P0=800, Pt=1600, t=7),
         dict(P0=3000, Pt=4500, t=12),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     P0, Pt, t = c["P0"], c["Pt"], c["t"]
     k = ln(Pt / P0) / t
     t_double = ln(2) / k
@@ -406,7 +448,7 @@ def build_inverse_exp_log(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=5, x=2),
         dict(b=2, x=5),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, x = c["b"], c["x"]
     bdisp = "e" if abs(b - math.e) < 1e-9 else fmt(b)
     y = b ** x
@@ -489,7 +531,7 @@ def build_nested_log(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=2, inner=64),
         dict(b=5, inner=125),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, inner = c["b"], c["inner"]
     # log_b(log_b(inner^2)) style applied: compute log_b(inner)
     u = math.log(inner, b)
@@ -573,7 +615,7 @@ def build_richter_ph(v: int, want_fig: bool) -> dict[str, Any]:
         dict(kind="richter", m1=6.0, m2=8.1),
         dict(kind="ph", h1=1e-4, h2=1e-7),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     if c["kind"] == "richter":
         m1, m2 = c["m1"], c["m2"]
         amp_ratio = 10 ** (m2 - m1)
@@ -696,7 +738,7 @@ def build_log_product(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=3, x=9, y=27, z=3),
         dict(b=2, x=8, y=4, z=16),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, x, y, z = c["b"], c["x"], c["y"], c["z"]
     bdisp = "e" if abs(b - math.e) < 1e-9 else fmt(b)
     lhs = math.log(x * y / z) / math.log(b)
@@ -766,7 +808,7 @@ def build_log_domain(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=3, expr="x/2", cut=0, test=2, test2=-2),
         dict(b=2, expr="3x-6", cut=2, test=3, test2=1),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, cut, test, test2 = c["b"], c["cut"], c["test"], c["test2"]
     bdisp = "e" if abs(b - math.e) < 1e-9 else fmt(b)
     # domain: argument > 0. For expr patterns:
@@ -862,7 +904,7 @@ def build_log_solve_linear(v: int, want_fig: bool) -> dict[str, Any]:
         dict(b=10, rhs=2),
         dict(b=2, rhs=8),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     b, rhs = c["b"], c["rhs"]
     bdisp = "e" if abs(b - math.e) < 1e-9 else fmt(b)
     # solve log_b(x) + log_b(x-3) = rhs  → log_b(x(x-3))=rhs → x(x-3)=b^rhs
@@ -933,7 +975,7 @@ def build_mixed_exam(v: int, want_fig: bool) -> dict[str, Any]:
         dict(mode="elastic_growth", a=5.0, b=1.4, Pprice=3.0, P0=200, k=0.04, t=10),
         dict(mode="piece_log", P0=1000, k1=0.05, T=4, k2=0.02, target=1800),
     ]
-    c = configs[v % len(configs)]
+    c = pick_config(configs, v)
     mode = c["mode"]
 
     if mode == "gdp_piece":

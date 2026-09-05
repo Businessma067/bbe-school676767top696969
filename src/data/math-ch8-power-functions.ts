@@ -3859,9 +3859,7 @@ Setting the two recovered score laws equal yields a single positive crossing:
 
 $$x=8$$
 
-One equation of this type cannot have two distinct positive ties. The claim that they meet at two different positive loads is false.
-
-So the statement is False.`,
+One equation of this type cannot have two distinct positive ties. So the statement is false.`,
     `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
