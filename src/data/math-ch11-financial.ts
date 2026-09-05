@@ -2094,9 +2094,13 @@ $$S_0 = \\frac{T}{\\bigl(1+\\frac{r}{n}\\bigr)^{nt}}, \\qquad R = \\left(1+\\fra
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The compound growth factor raises one plus the periodic rate across every period:
 
-The recovered values are $i=0.011$ and $nt=36$.
+$$
+G = (1+i)^{nt}
+$$
+
+Using the recovered solution values $i=0.011$ and $nt=36$ as inputs for this claim:
 
 The nine-year growth factor is
 
@@ -2104,7 +2108,7 @@ $$G = (1.011)^{36} \\approx 1.482660$$
 
 Rounded to four decimals this is $1.4827$.
 
-Matching these figures to the claim settles the verdict.
+The claim names 1.4827. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -3091,17 +3095,21 @@ $$v(t) = v_0 e^{-\\delta t}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The balance follows $S(t)=S_0 e^{rt}$. Doubling means $e^{rt}=2$, so the doubling time is:
 
 $$
-t_2 \\approx 12.60
+t_2 = \\frac{\\ln 2}{r}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 12.60. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -4253,21 +4261,19 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is False.`,
       `**B.** → True
 
-The overview already recovered the first crane's implied rate. State that figure in its own display:
+The model $v(t)=v_0 e^{-\\delta t}$ isolates the implied rate as:
 
 $$
-\\delta \\approx 16.28\\%
+\\delta = \\frac{1}{t}\\ln\\bigl(\\frac{v_0}{v(t)}\\bigr)
 $$
 
-The claim asserts
+Substitute the stem numbers:
 
 $$
-\\delta \\approx 16.28\\%
+\\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85{,}000}{32{,}000}\\bigr) \\approx 0.1628 = 16.28\\%
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 16.28\%. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -4571,32 +4577,40 @@ $$A(5)=A_0 e^{r_A t}, \\qquad B(5)=B_0 e^{-\\delta_B t}, \\qquad C(5)=C_0 e^{r_{
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+A single future payment discounts through the annual growth factor:
 
 $$
-(1.05)^{-1}\\approx 0.9524
+(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+(1.05)^{-1} = \\frac{1}{1.05} \\approx 0.9524
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 0.9524. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+A single future payment discounts through the annual growth factor:
 
 $$
-\\mathrm{PDV}\\approx 7{,}619.05
+\\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV} = \\frac{8{,}000}{1.05} \\approx 7{,}619.05
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$8,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -4678,32 +4692,42 @@ $$\\mathrm{PDV} = \\frac{8{,}000}{1.05} \\approx 7{,}619.05$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Annual compounding at the same rate uses:
 
 $$
-e^{-0.18}\\approx 0.8353
+e^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+e^{-0.18} \\approx 0.8353
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 0.8353. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous present value multiplies the future payment by the discount factor:
 
 $$
-\\mathrm{PDV}\\approx 10{,}023.24
+\\mathrm{PDV} = Ke^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV} = 12{,}000e^{-0.18} \\approx 10{,}023.24
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$12,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -4797,32 +4821,40 @@ $$\\mathrm{PDV}_{\\mathrm{ann}} = \\frac{12{,}000}{1.191016} \\approx 10{,}075.4
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Discrete discounting raises the growth factor to the negative holding time:
 
 $$
-(1.07)^{-8}\\approx 0.5820
+(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+(1.07)^{8} \\approx 1.718186, \\qquad (1.07)^{-8} \\approx 0.5820
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 0.5820. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous present value multiplies the future payment by the discount factor:
 
 $$
-\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26{,}190.41
+\\mathrm{PDV}_{\\mathrm{ann}} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_{\\mathrm{ann}} = 45{,}000 \\times (1.07)^{-8} \\approx 26{,}190.41
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$26,190.41. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -4935,17 +4967,21 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is False.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The deposit required today is the continuously discounted target:
 
 $$
-A\\approx 119{,}777.40
+A = Ke^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+A = 150{,}000e^{-0.225} \\approx 119{,}777.40
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$119,777.40. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -5025,32 +5061,38 @@ $$A = 150{,}000e^{-0.225} \\approx 119{,}777.40$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Present value discounts a future payment through the accumulation factor:
 
 $$
-\\frac{K}{\\mathrm{PDV}}\\approx 1.3514
+t = \\frac{\\ln\\!\\left(\\frac{K}{\\mathrm{PDV}}\\right)}{\\ln(1+r)}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\frac{K}{\\mathrm{PDV}} = \\frac{25{,}000}{18{,}500} \\approx 1.3514
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 1.3514. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Back out the implied rate from the observed discount factor and holding time:
 
 $$
-t\\approx 5.17
+t = \\frac{\\ln\\!\\left(\\frac{K}{\\mathrm{PDV}}\\right)}{\\ln(1+r)}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+t = \\frac{0.3011}{0.05827} \\approx 5.17
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 5.17. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -5144,32 +5186,40 @@ $$t_{\\mathrm{cont}} = \\frac{0.3011}{0.06} \\approx 5.02$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous discounting solves:
 
 $$
-\\frac{\\mathrm{PDV}}{K}=0.45
+r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\frac{\\mathrm{PDV}}{K} = \\frac{27{,}000}{60{,}000} = 0.45
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 0.45. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous discounting solves:
 
 $$
-r\\approx 6.65\\%
+r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12} \\approx 0.0665 = 6.65\\%
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 6.65\%. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -5247,47 +5297,59 @@ $$r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12} \\approx 0.0665 = 6.65\\%$$
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each payment discounts through:
 
 $$
-\\mathrm{PDV}_1\\approx 36{,}281.18
+\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_1 = \\frac{40{,}000}{(1.05)^{2}} = \\frac{40{,}000}{1.1025} \\approx 36{,}281.18
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$40,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each payment discounts through:
 
 $$
-\\mathrm{PDV}_2\\approx 50{,}930.87
+\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_2 = \\frac{65{,}000}{(1.05)^{5}} \\approx \\frac{65{,}000}{1.276282} \\approx 50{,}930.87
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$65,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each payment discounts through:
 
 $$
-\\mathrm{PDV}\\approx 87{,}212.05
+\\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV} = 36{,}281.18+50{,}930.87 \\approx 87{,}212.05
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$87,212.05. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
@@ -5362,17 +5424,21 @@ $$\\mathrm{PDV} = 36{,}281.18+50{,}930.87 \\approx 87{,}212.05$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An immediate payment has present value equal to its face:
 
 $$
-\\mathrm{PDV}_B\\approx 21{,}410.30
+\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_B = \\frac{25{,}500}{1.191016} \\approx 21{,}410.30
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$21,410.30. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -5479,19 +5545,21 @@ $$\\mathrm{PDV}_B = \\frac{25{,}500}{1.191016} \\approx 21{,}410.30$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Harvest present value is $f(t)=P(t)e^{-rt}$. An interior optimum satisfies:
 
 $$
-t^{*}=23
+P'(t^{*})=rP(t^{*})
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+10{,}000=400(t+2), \\qquad t+2=\\frac{2}{r}=25, \\qquad t^{*}=23
+$$
+
+The claim names 23. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -5590,47 +5658,59 @@ $$f(23)=5{,}000(25)^{2}e^{-0.08\\times 23}=3{,}125{,}000\\,e^{-1.84}\\approx 496
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each obligation discounts through:
 
 $$
-\\mathrm{PDV}_1\\approx 14{,}445.34
+\mathrm{PDV} = K e^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_1 = 18{,}000e^{-0.22} \\approx 14{,}445.34
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$18,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each obligation discounts through:
 
 $$
-\\mathrm{PDV}_2\\approx 18{,}287.13
+\mathrm{PDV} = K e^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV}_2 = 30{,}000e^{-0.495} \\approx 18{,}287.13
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$30,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each obligation discounts through:
 
 $$
-\\mathrm{PDV}\\approx 32{,}732.47
+\\mathrm{PDV} = Ke^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$32,732.47. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
@@ -5822,47 +5902,55 @@ $$1+r_a = e^{0.05} \\approx 1.051271, \\qquad r_a \\approx 0.0513 = 5.13\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Annual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is:
 
 $$
-\\mathrm{PV}_1\\approx 35{,}264.01
+K_2 = \\bigl(\\mathrm{PDV}_{\\mathrm{target}}-\\mathrm{PV}_1\\bigr)(1+r)^{t_2}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PV}_1 = \\frac{42{,}000}{(1.06)^{3}} = \\frac{42{,}000}{1.191016} \\approx 35{,}264.01
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$42,000. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Annual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is:
 
 $$
-\\mathrm{PV}_2\\approx 64{,}735.99
+\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PV}_2 = 100{,}000-35{,}264.01 = 64{,}735.99
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$64,735.99. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Annual present value is $\\mathrm{PDV}=K(1+r)^{-t}$. The unknown face is:
 
 $$
-K_2\\approx 91{,}829.24
+K_2 = \\bigl(\\mathrm{PDV}_{\\mathrm{target}}-\\mathrm{PV}_1\\bigr)(1+r)^{t_2}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$91,829.24. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -6041,17 +6129,15 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The interior condition would need $0.05P(t^{*})=0.08P(t^{*})$, which is impossible for $P>0$. The exponent $-0.03t$ makes $f$ strictly decreasing for $t\\ge 0$, so the maximum is at the boundary:
 
 $$
-f(0)=40{,}000
+t^{*}=0, \\qquad f(0)=P(0)=40{,}000
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$40,000. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -6150,32 +6236,36 @@ The overview checked $0.09\\times 520{,}000=46{,}800$, which matches $P'(t^{*})$
 So the statement is True.`,
       `**B.** → True
 
-At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior harvest optimum sets marginal stumpage growth equal to the discounted stumpage value:
 
 $$
-P''(t^{*})-rP'(t^{*})=-1{,}092
+\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+P''(t^{*})-rP'(t^{*})=3{,}120-0.09\\times 46{,}800=3{,}120-4{,}212=-1{,}092
+$$
+
+The claim names \$1,092. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior harvest optimum sets marginal stumpage growth equal to the discounted stumpage value:
 
 $$
-\\frac{dt^{*}}{dr}\\approx -476.19
+\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\frac{dt^{*}}{dr}=\\frac{520{,}000}{-1{,}092}\\approx -476.19
+$$
+
+The claim names -476.19. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -6195,17 +6285,21 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**E.** → True
 
-At an interior optimum the derivative of the objective must vanish. Check the overview's first-order condition against the claimed stationarity figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior harvest optimum sets marginal stumpage growth equal to the discounted stumpage value:
 
 $$
-P''(t^{*})-rP'(t^{*})=-1{,}092<0
+\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+P''(t^{*})-rP'(t^{*})=3{,}120-0.09\\times 46{,}800=3{,}120-4{,}212=-1{,}092
+$$
+
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
     ],
@@ -6248,17 +6342,21 @@ $$\\frac{dt^{*}}{dr}=\\frac{520{,}000}{-1{,}092}\\approx -476.19$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior optimum satisfies $P'(t^{*})=rP(t^{*})$. Sensitivity uses:
 
 $$
-t^{*}\\approx 18.22
+\\frac{dt^{*}}{dr}=\\frac{P(t^{*})}{P''(t^{*})-rP'(t^{*})}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+t+4=\\frac{2}{r}\\approx 22.22, \\qquad t^{*}=\\frac{2}{r}-4\\approx 18.22
+$$
+
+The claim names 18.22. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -6357,32 +6455,40 @@ $$P''(t^{*})-rP'(t^{*})=6{,}000-0.09\\times 133{,}333.33=-6{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Each payment discounts through $\\mathrm{PDV}=Ke^{-rt}$:
 
 $$
-\\mathrm{PV}_1\\approx 189{,}893.03
+\mathrm{PDV} = K e^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PV}_1 = 250{,}000 \\times 0.759572 \\approx 189{,}893.03
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$250,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous present value multiplies the future payment by the discount factor:
 
 $$
-\\mathrm{PV}_2\\approx 37{,}513.95
+\mathrm{PDV} = K e^{-rt}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\mathrm{PV}_2 = 40{,}000 \\times 0.937849 \\approx 37{,}513.95
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$40,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -6470,32 +6576,40 @@ $$\\mathrm{PDV} = 189{,}893.03+37{,}513.95 \\approx 227{,}406.98$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous discounting solves:
 
 $$
-\\frac{\\mathrm{PDV}}{K}=0.625
+r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+\\frac{\\mathrm{PDV}}{K} = \\frac{2{,}000{,}000}{3{,}200{,}000} = 0.625
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 0.625. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Continuous discounting solves:
 
 $$
-r\\approx 10.44\\%
+r = -\\frac{\\ln\\!\\left(\\frac{\\mathrm{PDV}}{K}\\right)}{t}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5} \\approx 0.1044 = 10.44\\%
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 10.44\%. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -6573,32 +6687,40 @@ $$r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5} \\approx 0.1044 = 10.44\
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior optimum satisfies $P'(t^{*})=rP(t^{*})$:
 
 $$
 t^{*}=\\frac{2}{r}-k
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+t^{*}=\\frac{2}{0.075}-5=26.67-5\\approx 21.67
+$$
+
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-The overview recovered the critical holding time $t^{*}$ from the first-order condition. Compare that time with half of the original optimum:
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An interior optimum satisfies $P'(t^{*})=rP(t^{*})$:
 
 $$
-t^{*}\\approx 21.67
+t^{*}=\\frac{2}{r}-k
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+t^{*}=\\frac{2}{0.075}-5=26.67-5\\approx 21.67
+$$
+
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -6680,32 +6802,40 @@ $$t^{*}=\\frac{2}{0.075}-5=26.67-5\\approx 21.67$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Discrete discounting raises the growth factor to the negative holding time:
+
+$$
+(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 e^{-0.4}\\approx 0.6703
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 0.6703. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Discrete discounting raises the growth factor to the negative holding time:
+
+$$
+(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 e^{-0.8}\\approx 0.4493
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 0.4493. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -6936,60 +7066,70 @@ $$= 50 \\times 6.1051 = 305.255 \\approx 305.26$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite sum and the sum of the first $n$ terms are:
 
 $$
-|k|=0.5<1
+|k| = 0.5 < 1
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite sum and the sum of the first $n$ terms are:
 
 $$
-s_{\\infty}=4{,}000
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{2{,}000}{1-0.5} = \\frac{2{,}000}{0.5} = 4{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$4,000.00. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_4=3{,}750
+s_n = a\frac{1-k^n}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_4 = 2{,}000+1{,}000+500+250 = 3{,}750
+$$
+
+The claim names \$3,750.00. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_4=3{,}750$ and $s_{\\infty}=4{,}000$.
+Using the recovered solution values $s_4=3{,}750$ and $s_{\\infty}=4{,}000$ as inputs for this claim:
 
 Comparing those totals:
 
 $$3{,}750 < 4{,}000$$
 
 The four-month sum does not exceed the infinite sum.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is False.`,
       `**E.** → False
@@ -7049,54 +7189,68 @@ $$s_4 = 2{,}000+1{,}000+500+250 = 3{,}750$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite sum and the sum of the first $n$ terms are:
 
 $$
-|k|=0.90<1
+|k| < 1
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+|k| = 0.90 < 1
+$$
+
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite sum and the sum of the first $n$ terms are:
 
 $$
-s_{\\infty}=8{,}000
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{800}{1-0.90} = \\frac{800}{0.10} = 8{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$8,000.00. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_{10}\\approx 5{,}210.57
+s_n = a\frac{1-k^n}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{10} = 800\\frac{1-0.3486784401}{0.10}
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$5,210.57. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{10}\\approx 5{,}210.57$ and $s_{\\infty}=8{,}000$.
+Using the recovered solution values $s_{10}\\approx 5{,}210.57$ and $s_{\\infty}=8{,}000$ as inputs for this claim:
 
 Their share is
 
@@ -7290,32 +7444,38 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\\infty}=6{,}000
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names 6,000. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 6{,}000
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**D.** → False
@@ -7388,32 +7548,36 @@ $$9{,}000-6{,}000 = 3{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The adjustments form an infinite geometric series:
 
 $$
-|k|=0.5<1
+|k| = |-0.5| = 0.5 < 1
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The adjustments form an infinite geometric series:
 
 $$
-s_{\\infty}\\approx 2{,}666.67
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} \\approx 2{,}666.67
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$2,666.67. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -7510,17 +7674,21 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**B.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{15}=180
+s_{\infty} = \frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236 \\approx 240.28
+$$
+
+The claim names \$12. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -7629,17 +7797,15 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
 
 $$
-s_8\\approx 80{,}045.68
+s_8 = 15{,}000\\frac{1-0.359635}{0.12} = 15{,}000 \\times 5.336379 \\approx 80{,}045.68
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$80,045.68. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -7659,9 +7825,9 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_8\\approx 80{,}045.68$ and $s_{\\infty}=125{,}000$.
+Using the recovered solution values $s_8\\approx 80{,}045.68$ and $s_{\\infty}=125{,}000$ as inputs for this claim:
 
 The share is
 
@@ -7671,7 +7837,7 @@ $$64\\% < 75\\%$$
 
 The eight-payment total is not more than $75\\%$ of the infinite total.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -7840,32 +8006,30 @@ $$9{,}000 \\times 12 = 108{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-s_6=39.72
+s_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$39.72. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k_T|<1$, the terminal perpetuity is $T=\\frac{a_6}{1-k_T}$:
 
 $$
-a_6\\approx 9.95
+1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328 \\approx 9.95
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$9.95. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -7964,17 +8128,21 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The geometric total is $s_n=a\\frac{k^n-1}{k-1}$, so:
 
 $$
-a\\approx 6{,}625.74
+a = s_n\\frac{k-1}{k^n-1}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+a = 58{,}000\\frac{0.15}{2.313060766-1} = \\frac{8{,}700}{1.313060766} \\approx 6{,}625.74
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$6,625.74. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -8073,17 +8241,19 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An infinite geometric series of profits converges only when the common ratio is strictly less than one in absolute value:
 
 $$
-s_{\\infty}=25{,}000{,}000
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{500{,}000}{1-0.98} = \\frac{500{,}000}{0.02} = 25{,}000{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$25,000,000.00. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -8105,9 +8275,9 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is False.`,
       `**D.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{10}\\approx 4{,}573{,}179.83$ and $s_{\\infty}=25{,}000{,}000$.
+Using the recovered solution values $s_{10}\\approx 4{,}573{,}179.83$ and $s_{\\infty}=25{,}000{,}000$ as inputs for this claim:
 
 The share is
 
@@ -8305,39 +8475,47 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\\infty}=1{,}250{,}000
+s_{\\infty} = \\frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{50{,}000}{1-0.96} = \\frac{50{,}000}{0.04} = 1{,}250{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$1,250,000.00. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_{15}\\approx 572{,}392.03
+s_n = a\frac{1-k^n}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{15} = 50{,}000\\frac{1-0.542086380}{0.04} = 50{,}000 \\times 11.447840 \\approx 572{,}392.03
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$572,392.03. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{15}\\approx 572{,}392.03$ and $s_{\\infty}=1{,}250{,}000$.
+Using the recovered solution values $s_{15}\\approx 572{,}392.03$ and $s_{\\infty}=1{,}250{,}000$ as inputs for this claim:
 
 The share is
 
@@ -8347,7 +8525,7 @@ $$46\\% > 40\\%$$
 
 The first $15$ grants are not less than $40\\%$ of the infinite total.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -8524,39 +8702,47 @@ $$s_{20} = 10{,}000\\frac{1-0.667607972}{0.02} = 10{,}000 \\times 16.619601 = 16
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{A,8}\\approx 791{,}797.43
+s_{\infty} = \frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{A,8} = 80{,}000\\frac{1.593848075-1}{0.06} = 80{,}000 \\times 9.897468 \\approx 791{,}797.43
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$791,797.43. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{B,8}\\approx 815{,}382.06
+s_{\infty} = \frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{B,8} = 95{,}000\\frac{1.171659381-1}{0.02} = 95{,}000 \\times 8.582969 \\approx 815{,}382.06
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$815,382.06. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{A,8}\\approx 791{,}797.43$ and $s_{B,8}\\approx 815{,}382.06$.
+Using the recovered solution values $s_{A,8}\\approx 791{,}797.43$ and $s_{B,8}\\approx 815{,}382.06$ as inputs for this claim:
 
 Comparing those totals:
 
@@ -8582,9 +8768,9 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**E.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{B,8}\\approx 815{,}382.06$ and $s_{A,8}\\approx 791{,}797.43$.
+Using the recovered solution values $s_{B,8}\\approx 815{,}382.06$ and $s_{A,8}\\approx 791{,}797.43$ as inputs for this claim:
 
 Territory B's lead is
 
@@ -8594,7 +8780,7 @@ $$23{,}584.63 < 30{,}000$$
 
 The lead is not more than \\$30,000.
 
-The mismatch with the claim settles the verdict.
+The claim names \$30,000. The computed figure does not match the claim.
 
 So the statement is False.`,
     ],
@@ -8738,47 +8924,53 @@ A necessary condition for any series to converge is $a_n\\to 0$, but that condit
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{R,12}\\approx 1{,}902{,}375.45
+s_{\infty} = \frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{R,12} = 150{,}000\\frac{1.01^{12}-1}{0.01} \\approx 1{,}902{,}375.45
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$1,902,375.45. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{C,12}\\approx 1{,}703{,}043.55
+s_{\infty} = \frac{a}{1-k}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{C,12} = 120{,}000\\frac{1.03^{12}-1}{0.03} \\approx 1{,}703{,}043.55
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$1,703,043.55. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
 
 $$
-\\Pi_{12}=199{,}331.90
+\\Pi_{12} = 1{,}902{,}375.45-1{,}703{,}043.55 = 199{,}331.90
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$199,331.90. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → True
@@ -8849,17 +9041,19 @@ $$\\Pi_{12} = 1{,}902{,}375.45-1{,}703{,}043.55 = 199{,}331.90$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+An infinite geometric series of profits converges only when the common ratio is strictly less than one in absolute value:
 
 $$
-s_{\\infty}=40{,}000{,}000
+|k| < 1
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94} = \\frac{2{,}400{,}000}{0.06} = 40{,}000{,}000
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$40,000,000.00. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**B.** → False
@@ -8881,9 +9075,9 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is False.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $s_{15}\\approx 24{,}188{,}328.05$ and $s_{\\infty}=40{,}000{,}000$.
+Using the recovered solution values $s_{15}\\approx 24{,}188{,}328.05$ and $s_{\\infty}=40{,}000{,}000$ as inputs for this claim:
 
 The share is
 
@@ -8960,47 +9154,43 @@ $$s_{15} = 2{,}400{,}000\\frac{1-0.395291799}{0.06} = 2{,}400{,}000 \\times 10.0
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+For $k=1$, $s_n=an$. For finite $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-s_1=225{,}000
+s_1 = 25{,}000 \\times 9 = 225{,}000
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$225,000.00. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+For $k=1$, $s_n=an$. For finite $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-s_2\\approx 215{,}603.80
+s_2 = 18{,}000\\frac{1.07^9-1}{0.07} \\approx 215{,}603.80
 $$
 
-That recovered value is exactly the figure named in the claim.
-
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$215,603.80. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-s_3=375{,}000
+P = \frac{D_1}{r-g}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s_3 = \\frac{30{,}000}{1-0.92} = \\frac{30{,}000}{0.08} = 375{,}000
+$$
+
+The claim names \$375,000.00. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**D.** → False
@@ -9216,9 +9406,9 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $F(5)\\approx 8{,}698.47$ and $F(10)\\approx 11{,}640.51$.
+Using the recovered solution values $F(5)\\approx 8{,}698.47$ and $F(10)\\approx 11{,}640.51$ as inputs for this claim:
 
 Double the five-year balance is
 
@@ -9657,9 +9847,13 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Present value discounts a future payment through the accumulation factor:
 
-The recovered values are $P=83{,}333.33$ and $P_{20}=57{,}349.67$.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Using the recovered solution values $P=83{,}333.33$ and $P_{20}=57{,}349.67$ as inputs for this claim:
 
 The extra cost of the perpetuity is
 
@@ -9749,21 +9943,21 @@ $$P = \\frac{5{,}000}{0.06} = 83{,}333.33$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered Option 2's present-value cost. State that figure in its own display:
+Discounting Option 2 at 7% gives:
 
 $$
-P_9=16{,}288.18
+\mathrm{PDV} = K(1+r)^{-t}
 $$
 
-The claim asserts
+Substitute the stem numbers:
 
 $$
-P_9=16{,}288.18
+P_9 = \\frac{2{,}500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]
 $$
 
-The recovered value and the claim agree.
+The claim names \$16,288.18. The computed figure and the claim agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -9908,9 +10102,9 @@ those values do not agree.
 So the statement is False.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $F_A=19{,}126.18$ and $F_B=13{,}856.46$.
+Using the recovered solution values $F_A=19{,}126.18$ and $F_B=13{,}856.46$ as inputs for this claim:
 
 Strategy A finishes ahead. The gap is
 
@@ -10006,15 +10200,15 @@ The recovered value and the claim agree.
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $F_{\\mathrm{ordinary}}=20{,}405.76$ and $F_{\\mathrm{due}}=21{,}426.05$.
+Using the recovered solution values $F_{\\mathrm{ordinary}}=20{,}405.76$ and $F_{\\mathrm{due}}=21{,}426.05$ as inputs for this claim:
 
 End-of-year deposits finish lower:
 
 $$20{,}405.76 < 21{,}426.05$$.
 
-Matching these figures to the claim settles the verdict.
+The claim names \$3,000. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -10047,17 +10241,21 @@ The claim needs $F_{\\mathrm{due}}(12)=42{,}852.10$. We have $50{,}138.93 \\ne 4
 So the statement is False.`,
       `**E.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The ordinary-annuity future value and the due scale are:
 
 $$
-F_{\\mathrm{due}}=F_{\\mathrm{ordinary}}(1+r)
+F_{\\mathrm{due}} = F_n(1+r)
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
     ],
@@ -10119,15 +10317,19 @@ The recovered value and the claim agree.
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Present value discounts a future payment through the accumulation factor:
 
-The recovered values are $P_{\\mathrm{ordinary}}=101{,}096.80$ and $P_{\\mathrm{due}}=107{,}162.61$.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Using the recovered solution values $P_{\\mathrm{ordinary}}=101{,}096.80$ and $P_{\\mathrm{due}}=107{,}162.61$ as inputs for this claim:
 
 End-of-year rent is worth less today:
 
 $$101{,}096.80 < 107{,}162.61$$.
 
-Matching these figures to the claim settles the verdict.
+The claim names \$24,000. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → False
@@ -10205,21 +10407,19 @@ $$P_{\\mathrm{due}} = 101{,}096.80 \\times 1.06 = 107{,}162.61$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the perpetuity's value at the end of year 4. Read that valuation figure directly:
+A level perpetuity is worth $V=\\frac{a}{r}$ one period before its first payment, so the valuation date is the end of year 4. Discounting that value to today uses:
 
 $$
-V=166{,}666.67
+PV_0 = \\frac{V}{(1+r)^4}
 $$
 
-The claim asserts
+Substitute the stem numbers:
 
 $$
-V=166{,}666.67
+V = \\frac{10{,}000}{0.06} = 166{,}666.67
 $$
 
-The recovered value and the claim agree.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$166,666.67. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**B.** → True
@@ -10450,17 +10650,17 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
+
+From the shared elimination in the overview:
 
 $$
 383{,}333.33
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$50,000. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
@@ -10645,21 +10845,21 @@ $$P = \\frac{24{,}000}{0.08-0.025} = \\frac{24{,}000}{0.055} = 436{,}363.64$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered next year's dividend. Read that valuation figure directly:
+Next year's dividend and the growing-perpetuity value are:
 
 $$
-D_1=3.09
+D_1 = D_0(1+g)
 $$
 
-The claim asserts
+Substitute the stem numbers:
 
 $$
-D_1=3.09
+D_1 = 3.00 \\times 1.03 = 3.09
 $$
 
-The recovered value and the claim agree.
+The claim names \$3.09. The computed figure and the claim agree.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -10997,15 +11197,15 @@ The recovered value and the claim agree.
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $F_9=96{,}757.60$ and $S_{\\mathrm{cont}}=131{,}629.13$.
+Using the recovered solution values $F_9=96{,}757.60$ and $S_{\\mathrm{cont}}=131{,}629.13$ as inputs for this claim:
 
 Both strategies commit \\$75,000 in total, and
 
 $$96{,}757.60 < 131{,}629.13$$.
 
-Matching these figures to the claim settles the verdict.
+The claim names \$75,000. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**C.** → True
@@ -11136,9 +11336,13 @@ Keep the periodic rate, the number of periods, and the money units explicit whil
 So the statement is False.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Present value discounts a future payment through the accumulation factor:
 
-The recovered values are $P_{\\mathrm{perp}}=37{,}500$ and $P_{\\mathrm{due}}=18{,}110.94$.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Using the recovered solution values $P_{\\mathrm{perp}}=37{,}500$ and $P_{\\mathrm{due}}=18{,}110.94$ as inputs for this claim:
 
 Double the lease present value is
 
@@ -11494,17 +11698,19 @@ leaving balance $52{,}606.46$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
+
+From the shared elimination in the overview:
 
 $$
 0.0075 = 0.75\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -11742,32 +11948,40 @@ Year 3: interest \\$2,952.11, principal \\$8,918.77, balance \\$20,602.37.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 6.537048
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 6.537048. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The first payment is immediate and the remaining nine form an ordinary annuity, so:
 
 $$
-a \\approx 22{,}946.14
+K = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+a = \\frac{150{,}000}{6.537048} \\approx 22{,}946.14
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$22,946.14. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -11785,9 +11999,9 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**D.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$ and $a \\approx 22{,}946.14$.
+Using the recovered solution values $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$ and $a \\approx 22{,}946.14$ as inputs for this claim:
 
 Their difference is
 
@@ -11795,7 +12009,7 @@ $$25{,}470.21 - 22{,}946.14 \\approx 2{,}524.08$$
 
 The claim is \\$2,524.08
 
-Matching these figures to the claim settles the verdict.
+The computed figure and the claim agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -11859,17 +12073,19 @@ $$a_{\\mathrm{ordinary}} \\approx 25{,}470.21$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 4.9663
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -11968,17 +12184,21 @@ $$8{,}568.61 \\times 1.13 = 9{,}682.53$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 10\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$535,526.07. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -12147,17 +12367,15 @@ The claim is about \$4,506.11. The simplified balance and the claim agree.
 So the statement is True.`,
       `**E.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $F_4 \\approx 4{,}641.30$ and $F_4^{\\mathrm{simp}} \\approx 4{,}506.11$.
+Using the recovered solution values $F_4 \\approx 4{,}641.30$ and $F_4^{\\mathrm{simp}} \\approx 4{,}506.11$ as inputs for this claim:
 
 Their difference is
 
 $$4{,}641.30 - 4{,}506.11 \\approx 135.18$$
 
-The claim is \\$200.00. We have about \\$135.18
-
-The mismatch with the claim settles the verdict.
+The claim is \\$200.00. We have about \\$135.18.
 
 So the statement is False.`,
     ],
@@ -12204,32 +12422,36 @@ $$F_4^{\\mathrm{simp}} = \\frac{1{,}000}{0.08}\\bigl[(1.08)^{4}-1\\bigr] \\appro
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+The level monthly payment is:
 
 $$
-a \\approx 1{,}432.86
+a = \\frac{rK}{1-(1+r)^{-n}}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+a = \\frac{0.005 \\times 200{,}000}{1-(1.005)^{-240}} = \\frac{1{,}000}{1-(1.005)^{-240}} \\approx 1{,}432.86
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names \$1,432.86. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 60
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$169,799.20. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -12317,17 +12539,19 @@ $$B_{60} = \\frac{1{,}432.86}{0.005}\\bigl[1-(1.005)^{-180}\\bigr] \\approx 169{
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 8.508
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
@@ -12426,17 +12650,21 @@ $$11{,}491.37 \\times 1.14 \\approx 13{,}100.16$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
+
+$$
+K = a + \\frac{a}{r}\\bigl[1-(1+r)^{-(n-1)}\\bigr]
+$$
+
+Substitute the stem numbers:
 
 $$
 a \\approx 16{,}176.12
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$16,176.12. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -12543,17 +12771,21 @@ $$F_3 = \\frac{1{,}240.50}{0.09}\\bigl[(1.09)^{3}-1\\bigr] \\approx 4{,}066.48$$
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 9\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$521,162.27. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -12573,9 +12805,9 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $PV_{\\mathrm{II}} \\approx 521{,}162$ and $PV_{\\mathrm{III}} \\approx 535{,}059$ at $9\\%$.
+Using the recovered solution values $PV_{\\mathrm{II}} \\approx 521{,}162$ and $PV_{\\mathrm{III}} \\approx 535{,}059$ at $9\\%$ as inputs for this claim:
 
 Schedule I is \\$500,000. Then
 
@@ -12583,29 +12815,33 @@ $$500{,}000 < 521{,}162 < 535{,}059$$
 
 Schedule I is cheapest at $9\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**D.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 13\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$474,767.23. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**E.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $PV_{\\mathrm{II}} \\approx 474{,}767$ and $PV_{\\mathrm{III}} \\approx 475{,}575$ at $13\\%$.
+Using the recovered solution values $PV_{\\mathrm{II}} \\approx 474{,}767$ and $PV_{\\mathrm{III}} \\approx 475{,}575$ at $13\\%$ as inputs for this claim:
 
 Then
 
@@ -12613,7 +12849,7 @@ $$474{,}767 < 475{,}575 < 500{,}000$$
 
 Schedule II is cheapest at $13\\%$, not III.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
     ],
@@ -12668,39 +12904,47 @@ $$PV_{\\mathrm{III}} = 150{,}000 + \\frac{60{,}000}{0.13}\\bigl[1-(1.13)^{-10}\\
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 8\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$944,529.45. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 8\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$871,117.14. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $PV_{\\mathrm{II}} \\approx 944{,}529$ and $PV_{\\mathrm{III}} \\approx 871{,}117$ at $8\\%$.
+Using the recovered solution values $PV_{\\mathrm{II}} \\approx 944{,}529$ and $PV_{\\mathrm{III}} \\approx 871{,}117$ at $8\\%$ as inputs for this claim:
 
 Schedule I is \\$850,000. Then
 
@@ -12708,29 +12952,33 @@ $$850{,}000 < 871{,}117 < 944{,}529$$
 
 Schedule I is cheapest at $8\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**D.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 12\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$775,015.93. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**E.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Apply the financial identity that produces the quantity named in the claim:
 
-The recovered values are $PV_{\\mathrm{III}} \\approx 775{,}016$ and $PV_{\\mathrm{II}} \\approx 835{,}470$ at $12\\%$.
+Using the recovered solution values $PV_{\\mathrm{III}} \\approx 775{,}016$ and $PV_{\\mathrm{II}} \\approx 835{,}470$ at $12\\%$ as inputs for this claim:
 
 Then
 
@@ -12738,7 +12986,7 @@ $$775{,}016 < 835{,}470 < 850{,}000$$
 
 Schedule III is cheapest at $12\\%$, not II.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
     ],
@@ -12793,17 +13041,21 @@ $$PV_{\\mathrm{III}} = 300{,}000 + \\frac{80{,}000}{0.12}\\bigl[1-(1.12)^{-11}\\
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 7.5\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$2,508,821.59. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -12914,17 +13166,21 @@ $$PV_{\\mathrm{II}} = 340{,}000 + \\frac{340{,}000}{0.115}\\bigl[1-(1.115)^{-9}\
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+For a one-year project with outlay $a$ and return $b$, the internal rate makes net present value zero:
 
 $$
-r=20\\%
+r = \\frac{b}{a} - 1
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = \\frac{9{,}600}{8{,}000} - 1 = 0.20 = 20\\%
+$$
+
+The claim names 20\%. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -13019,17 +13275,17 @@ $$A = a_0 + \\frac{a_1}{1+r}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 10.92\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 10.92\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -13132,17 +13388,17 @@ $$r = \\frac{1}{0.90153} - 1 \\approx 0.10922 \\approx 10.92\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 11.98\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 11.98\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -13243,39 +13499,43 @@ $$r = \\frac{1}{0.89304} - 1 \\approx 0.11978 \\approx 11.98\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 15\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 15\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Apply the financial identity that produces the quantity named in the claim:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+From the shared elimination in the overview:
 
 $$
 12.5\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 12.5\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The internal rate of return is the discount rate that drives net present value to zero:
 
-The recovered values are $r_X = 15\\%$ and $r_Y = 12.5\\%$.
+Using the recovered solution values $r_X = 15\\%$ and $r_Y = 12.5\\%$ as inputs for this claim:
 
 Then
 
@@ -13283,7 +13543,9 @@ $$15\\% > 12.5\\%$$
 
 The IRR criterion prefers X, not Y.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is False.`,
       `**D.** → False
@@ -13354,17 +13616,21 @@ $$r_Y = \\frac{24{,}750}{22{,}000} - 1 = 0.125 = 12.5\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 8\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$4,012. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → False
@@ -13393,17 +13659,21 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**D.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 15\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$3,424. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**E.** → False
@@ -13574,17 +13844,21 @@ $$r = \\frac{1}{0.90270} - 1 \\approx 0.10778 \\approx 10.78\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
+Present value discounts a future payment through the accumulation factor:
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+$$
+\mathrm{PDV} = K(1+r)^{-t}
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 15\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$0,. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
@@ -13830,47 +14104,59 @@ $$r = \\frac{1}{0.90346} - 1 \\approx 0.10685 \\approx 10.69\\%$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
-
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Option 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives:
 
 $$
-r=12\\%
+a_0 + \\frac{a}{r} = 0
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
+$$
+
+The claim names 12. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Option 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives:
 
 $$
-r \\approx -58.84\\%
+a_0 + \\frac{a}{r} = 0
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The claim names -58.84\%. The computed figure and the claim agree.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Option 1 is a level perpetuity with annual payment $a=6{,}000$. Zero NPV gives:
 
 $$
-r \\approx -58.84\\%
+a_0 + \\frac{a}{r} = 0
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
+$$
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+The computed figure matches the claim.
+
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
@@ -13969,32 +14255,30 @@ The other root has $r < -1$ and is discarded.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
 
 $$
-r_A \\approx 11.04\\%
+r_A = \\frac{1}{0.90057} - 1 \\approx 0.1104 \\approx 11.04\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 11.04\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**B.** → True
 
-Name the financial rule behind the claim, then substitute the recovered inputs.
+Apply the financial identity that produces the quantity named in the claim:
 
 $$
-r_B = 16\\%
+r_B = \\frac{81{,}200}{70{,}000} - 1 = 0.16 = 16\\%
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names 16\%. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
+Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
-Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
+Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**C.** → True

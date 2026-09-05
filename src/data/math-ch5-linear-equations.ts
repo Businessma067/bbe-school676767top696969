@@ -82,9 +82,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The gap between the two recovered unknowns is their difference:
 
-The recovered values are $x=360$ and $y=260$.
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
 
 Today's gap is
 
@@ -94,14 +98,18 @@ The claim is $120$.
 
 The computed figure does not match the claim.
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is False.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+A transfer shifts one recovered holding into the other by the stated amount:
 
-The recovered values are $x=360$ and $y=260$.
+$$
+x' = x - t,\quad y' = y + t
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
 
 Moving $50$ crates from North to South gives
 
@@ -111,7 +119,7 @@ $$260 + 50 = 310$$
 
 Both sides are $310$.
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
     ],
@@ -212,9 +220,13 @@ The claim names that same total. The invoice total and the claim agree.
 So the statement is True.`,
       `**D.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=3.50$ and $y=1.80$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=1.80$ as inputs for this claim:
 
 Ten of each costs
 
@@ -226,7 +238,7 @@ $$35 + 18 = 53$$
 
 The claim is \\$53.00
 
-Matching these figures to the claim settles the verdict.
+The computed figure and the claim agree.
 
 So the statement is True.`,
       `**E.** → False
@@ -363,9 +375,13 @@ The claim names \\$2,300. The printed figure and the claim do not agree.
 So the statement is False.`,
       `**E.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $a=12$ and $c=7$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $a=12$ and $c=7$ as inputs for this claim:
 
 Fifty of each would generate
 
@@ -377,7 +393,7 @@ $$600 + 350 = 950$$
 
 The claim is \\$1,000.00
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
     ],
@@ -477,17 +493,21 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 62
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$8.00. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**D.** → True
@@ -763,9 +783,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=304$ and $y=349$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=304$ and $y=349$ as inputs for this claim:
 
 Five of each costs
 
@@ -777,7 +801,7 @@ $$1520 + 1745 = 3265$$
 
 Then $3265 > 3000$.
 
-Matching these figures to the claim settles the verdict.
+The claim names \$3,000.00. The computed figure and the claim agree.
 
 So the statement is True.`,
     ],
@@ -869,9 +893,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $f=17$ and $r=0.30$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=17$ and $r=0.30$ as inputs for this claim:
 
 Two hundred extra minutes would cost
 
@@ -881,7 +909,7 @@ $$17 + 60 = 77$$
 
 The claim is \\$80.00
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**D.** → False
@@ -967,17 +995,21 @@ $$f = 17$$
     tactical_explanations: [
       `**A.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
 $$
-s=75
+y=\frac{\Delta_y}{\Delta}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+s = 130 - 55 = 75
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**B.** → False
@@ -1129,17 +1161,21 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
-9300
+x=\frac{\Delta_x}{\Delta}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+9300 - 300 = 9000
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The claim names \$9,300.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**D.** → True
@@ -1261,9 +1297,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is False.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $f=9$ and $r=0.20$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 250-page PrintFast order costs
 
@@ -1273,14 +1313,18 @@ $$9 + 50 = 59$$
 
 The claim is \\$60.00
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $f=9$ and $r=0.20$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
 
 A 350-page PrintFast order costs
 
@@ -1290,16 +1334,22 @@ $$9 + 70 = 79$$
 
 QuickCopy's flat fee is \\$60. Then $79 > 60$.
 
-The mismatch with the claim settles the verdict.
+The claim names \$60.00. The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The gap between the two recovered unknowns is their difference:
 
-Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The overview already recovered that pair as $f=9$ and $r=0.20$.
+$$
+d = x - y
+$$
 
-Matching these figures to the claim settles the verdict.
+Substitute the stem numbers recovered in the overview:
+
+Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The that pair as $f=9$ and $r=0.20$.
+
+The computed figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -1370,9 +1420,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is False.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+A mixed purchase is the linear combination of the recovered unit prices:
 
-The recovered values are $x=3.50$ and $y=6$.
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 The gap is
 
@@ -1382,7 +1436,7 @@ The claim is \\$2.50.
 
 The computed figure matches the claim.
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**C.** → True
@@ -1417,9 +1471,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is False.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=3.50$ and $y=6$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
 
 Six of each costs
 
@@ -1431,7 +1489,7 @@ $$21 + 36 = 57$$
 
 The claim is \\$57.00
 
-Matching these figures to the claim settles the verdict.
+The computed figure and the claim agree.
 
 So the statement is True.`,
     ],
@@ -1549,9 +1607,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=12$ and $y=17$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=17$ as inputs for this claim:
 
 Three hardcovers and two paperbacks cost
 
@@ -1561,9 +1623,7 @@ $$2 \\times 12 = 24$$
 
 $$51 + 24 = 75$$
 
-The claim needs a total less than \\$75. We have equality
-
-The mismatch with the claim settles the verdict.
+The claim needs a total less than \\$75. We have equality.
 
 So the statement is False.`,
       `**E.** → False
@@ -1668,9 +1728,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=38$ and $y=3$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=38$ and $y=3$ as inputs for this claim:
 
 Ten GB of overage on Standard costs
 
@@ -1680,7 +1744,7 @@ $$38 + 30 = 68$$
 
 The claim is \\$68.00
 
-Matching these figures to the claim settles the verdict.
+The computed figure and the claim agree.
 
 So the statement is True.`,
       `**D.** → True
@@ -1772,24 +1836,32 @@ $$x = 38$$
     tactical_explanations: [
       `**A.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y' = y + t
+$$
+
+Substitute the stem numbers recovered in the overview:
 
 $$
 2240
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$2,240.00. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**B.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+A mixed purchase is the linear combination of the recovered unit prices:
 
-The recovered values are $x=140$ and $y=210$.
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
 
 The Suite premium is
 
@@ -1797,14 +1869,18 @@ $$210 - 140 = 70$$
 
 The claim is \\$200 more. The mismatch with the claim settles the verdict.
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is False.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=140$ and $y=210$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
 
 Six Standard rooms cost
 
@@ -1963,9 +2039,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is False.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=12$ and $y=15$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
@@ -1977,14 +2057,18 @@ $$2400 + 1500 = 3900$$
 
 The March forecast total is \\$4,700. Then $4700 > 3900$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=12$ and $y=15$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
 
 March's forecast quantities at those actual costs would be
 
@@ -2132,9 +2216,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**D.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=14$ and $y=24$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=14$ and $y=24$ as inputs for this claim:
 
 Forty regular hours plus 4 overtime hours at those actual rates:
 
@@ -2257,24 +2345,32 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+A transfer shifts one recovered holding into the other by the stated amount:
 
 $$
-51
+x' = x - t,\quad y' = y + t
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers recovered in the overview:
 
-Matching these figures to the claim settles the verdict.
+$$
+y = 51
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The claim names \$51.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**D.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=15$ and $y=2$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim:
 
 Forty cubic metres would be billed
 
@@ -2284,7 +2380,7 @@ $$15 + 80 = 95$$
 
 The claim is \\$85.00
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -2357,9 +2453,13 @@ $$x = 15$$
     tactical_explanations: [
       `**A.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $C(d)=6+d$ and $M(d)=6+1.5d$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
 
 At $10$ km:
 
@@ -2371,29 +2471,31 @@ $$M(10) = 6 + 15 = 21$$
 
 Then $16 < 21$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
-x_1=6
+x_1 = 6
 $$
 
-That recovered value is exactly the figure named in the claim.
+The claim names \$6.00. The computed figure and the claim agree.
 
-Matching these figures to the claim settles the verdict.
-
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**C.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $C(d)=6+d$ and $M(d)=6+1.5d$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
 
 At $3$ km, which is under $4$ km:
 
@@ -2405,7 +2507,7 @@ $$M(3) = 6 + 4.50 = 10.50$$
 
 Then $10.50 > 9$, so MetroX is not cheaper.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -2513,32 +2615,34 @@ $$M(d) = 6 + 1.5d$$
     tactical_explanations: [
       `**A.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
-x_A=9
+y_A = 30 - \\frac{4}{3}x_A
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+x_A = 9
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
 $$
-y_B=16
+y_B = \\frac{92 - 44}{3} = 16
 $$
 
-That recovered value is exactly the figure named in the claim.
+The computed figure matches the claim.
 
-Matching these figures to the claim settles the verdict.
-
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**C.** → True
@@ -2589,9 +2693,13 @@ Switching to Vendor B raises the cost by $20$, it does not reduce it.
 So the statement is False.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $y_A=18$ and $y_B=16$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $y_A=18$ and $y_B=16$ as inputs for this claim:
 
 Sixty units of Y only:
 
@@ -2601,7 +2709,7 @@ $$60 \\times 16 = 960$$
 
 Then $960 < 1080$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -2679,32 +2787,40 @@ $$y_B = \\frac{92 - 44}{3} = 16$$
     tactical_explanations: [
       `**A.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
-x=50
+x=\frac{\Delta_x}{\Delta}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+x = 50
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The claim names \$50. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
 $$
-A=13100
+x=\frac{\Delta_x}{\Delta}
 $$
 
-That recovered value is exactly the figure named in the claim.
+Substitute the stem numbers:
 
-Matching these figures to the claim settles the verdict.
+$$
+A = 27200 - 14100 = 13100
+$$
 
-Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**C.** → False
@@ -2747,9 +2863,13 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x=50$ and $y=70$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=50$ and $y=70$ as inputs for this claim:
 
 Beta's Service Q revenue is
 
@@ -2761,7 +2881,7 @@ $$150 \\times 50 = 7500$$
 
 Then $9100 > 7500$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -4235,9 +4355,9 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-The recovered values are $x = 18.45$ and $y = 27.80$.
+Using the recovered solution values $x = 18.45$ and $y = 27.80$ as inputs for this claim:
 
 The gap is
 
@@ -4245,7 +4365,9 @@ $$27.80 - 18.45 = 9.35$$
 
 $$9 < 9.35 < 10$$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
       `**C.** → True
@@ -4653,9 +4775,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The gap between the two recovered unknowns is their difference:
 
-The recovered values are $x = 13.85$ and $y = 9.40$.
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 13.85$ and $y = 9.40$ as inputs for this claim:
 
 The per-dozen gap is
 
@@ -4663,7 +4789,7 @@ $$13.85 - 9.40 = 4.45$$
 
 Distance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -6336,9 +6462,9 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-The recovered values are $x = 95$ and $y = 120$.
+Using the recovered solution values $x = 95$ and $y = 120$ as inputs for this claim:
 
 Barley's advantage as a share of Wheat's profit per tonne is
 
@@ -6346,7 +6472,7 @@ $$\\frac{120 - 95}{95} = \\frac{25}{95} \\approx 0.2632$$
 
 about $26.3\\%$, which is more than $25\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -6476,9 +6602,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The gap between the two recovered unknowns is their difference:
 
-The recovered values are $x = 47$ and $y = 19$.
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 47$ and $y = 19$ as inputs for this claim:
 
 The current gap as a share of the elder's age is
 
@@ -6488,7 +6618,7 @@ $$\\frac{28}{47} \\approx 0.5957$$
 
 about $59.6\\%$, which is more than $45\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -6609,9 +6739,13 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x = 55$ and $y = 80$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Dollar markups are $0.32x$ and $0.18y$.
 
@@ -6623,14 +6757,18 @@ $$\\frac{14.40}{17.60} = 0.8181\\ldots$$
 
 Since $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x = 55$ and $y = 80$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
@@ -6638,7 +6776,7 @@ $$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
 
-Matching these figures to the claim settles the verdict.
+The claim names \$150.00. The computed figure and the claim agree.
 
 So the statement is True.`,
       `**D.** → True
@@ -6654,9 +6792,13 @@ Matching these figures to the claim settles the verdict.
 So the statement is True.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+A mixed purchase is the linear combination of the recovered unit prices:
 
-The recovered values are $x = 55$ and $y = 80$.
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
 
 Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
 
@@ -6665,8 +6807,6 @@ $$\\frac{80}{55} \\approx 1.4545$$
 $$\\frac{94.40}{72.60} \\approx 1.3003$$
 
 The wholesale ratio is larger than the retail ratio.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6886,9 +7026,9 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**B.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-The recovered values are $x = 7.6$ and $y = 11.4$.
+Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this claim:
 
 The relative density advantage of B over A is
 
@@ -6896,7 +7036,7 @@ $$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
 
 That is $50\\%$ greater, not more than $50\\%$.
 
-The mismatch with the claim settles the verdict.
+The computed figure does not match the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -7156,9 +7296,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is False.`,
       `**C.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+A mixed purchase is the linear combination of the recovered unit prices:
 
-The recovered values are $A = 8.4$ and $B = 15.6$.
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this claim:
 
 Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
@@ -7166,7 +7310,7 @@ $$500(8.4) + 600(15.6) = 4200 + 9360 = 13560$$
 
 Since $13560 > 13500$, the new total would exceed $13500$ mg.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -7270,17 +7414,19 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     tactical_explanations: [
       `**A.** → False
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x = 4.50$ and $y = 38$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this claim:
 
 Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
 $$24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564$$
 
 Since $564 < 700$, the waste-related cost does not exceed \\$700.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**B.** → True
@@ -7424,9 +7570,13 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**B.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
 
-The recovered values are $x = 3.50$ and $y = 13.50$.
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for this claim:
 
 Doubling the offset gives $27$, so at reading $20$
 
@@ -7434,7 +7584,7 @@ $$3.50 \\times 20 + 27 = 70 + 27 = 97$$
 
 Since $97 > 95$, the predicted true value would exceed $95$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -7593,9 +7743,13 @@ The mismatch with the claim settles the verdict.
 So the statement is False.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+The gap between the two recovered unknowns is their difference:
 
-The recovered values are $x = 6.20$ and $y = 4.85$.
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 6.20$ and $y = 4.85$ as inputs for this claim:
 
 The gap as a share of Coffee's price is
 
@@ -7603,7 +7757,7 @@ $$\\frac{6.20 - 4.85}{6.20} = \\frac{1.35}{6.20} \\approx 0.2177$$
 
 about $21.8\\%$, which is less than $30\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
 
 So the statement is True.`,
     ],
@@ -7872,15 +8026,17 @@ Do not rebuild the original system; use the overview's recovered unknowns for th
 So the statement is True.`,
       `**E.** → True
 
-The overview already recovered the pair from the shared elimination. This letter only applies the extra arithmetic the claim needs.
+Start from the recovered solution pair and apply the claim's extra arithmetic:
 
-The recovered values are $5.4\\%$ and $6.6\\%$.
+Using the recovered solution values $5.4\\%$ and $6.6\\%$ as inputs for this claim:
 
 $$\\frac{5.4}{6.6} \\approx 0.8182$$
 
 about $81.8\\%$, which is more than $80\\%$.
 
-Matching these figures to the claim settles the verdict.
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
 So the statement is True.`,
     ],
