@@ -51,39 +51,63 @@ const MATH_CH1_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Intersection keeps the elements that sit in both $A$ and $B$. Testing the members of $A$ against $B$ leaves $3$, $4$, and $5$:
 
 $$A \\cap B = \\{3,4,5\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Union keeps every element of $A$ or $C$. The roster of $A$ is $1,2,3,4,5$ and $C$ adds $6,7,8,9$, so
 
 $$A \\cup C = \\{1,2,3,4,5,6,7,8,9\\}$$
 
-The claim stops at $8$ and drops $9\\in C$, so the statement is False.`,
+The claim stops at $8$ and drops $9\\in C$.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 An element of $(A\\cap B)\\cap C$ must sit in all three lists. The numbers in both $A$ and $B$ are $3,4,5$. Of those, only $5$ sits in $C$:
 
 $$(A \\cap B) \\cap C = \\{5\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**D.** → False
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Difference $A\\setminus C$ keeps members of $A$ that miss $C$. From $A$, only $5$ also sits in $C$, so
 
 $$A \\setminus C = \\{1,2,3,4\\}$$
 
-The claim drops $4$, but $4\\in A$ and $4\\notin C$, so the statement is False.`,
+The claim drops $4$, but $4\\in A$ and $4\\notin C$.
+
+So the statement is False.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Disjointness requires $B\\cap C=\\emptyset$. The shared members are $5$, $6$, and $7$:
 
 $$B \\cap C = \\{5,6,7\\}$$
 
-The intersection is nonempty, so the statement is False.`,
+The intersection is nonempty.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -108,27 +132,63 @@ Intersection keeps elements that sit in both inputs. Union keeps elements that s
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $A=\\{-3,3\\}$. $B$ is given as $\\{3,-3\\}$. Sets ignore order, so the two rosters are the same collection, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview recovered 
+
+$$A=\\{-3,3\\}$$
+
+. $B$ is given as $\\{3,-3\\}$. Sets ignore order, so the two rosters are the same collection.
+
+So the statement is True.`
+
       `**B.** → True
 
-The overview recovered $A=\\{-3,3\\}$. The integer $3$ sits on that roster, so $3\\in A$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The overview recovered 
+
+$$A=\\{-3,3\\}$$
+
+. The integer $3$ sits on that roster, so $3\\in A$.
+
+So the statement is True.`
+
       `**C.** → False
 
-The overview recovered $A=\\{-3,3\\}$. The claim reprints $A$ as the singleton $\\{3\\}$ and drops $-3$, even though $(-3)^{2}=9$ and $-3\\in Z$. The two sets are unequal, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The overview recovered 
+
+$$A=\\{-3,3\\}$$
+
+. The claim reprints $A$ as the singleton $\\{3\\}$ and drops $-3$, even though $(-3)^{2}=9$ and $-3\\in Z$. The two sets are unequal.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The overview recovered two distinct members, $-3$ and $3$, so
 
 $$\\lvert A \\rvert = 2$$
 
-The claim is that same count, so the statement is True.`,
+The claim is that same count.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The same roots $3$ and $-3$ must now pass the universe $N=\\{1,2,3,\\ldots\\}$. The root $3$ is natural, but $-3$ is not, so
 
 $$C=\\{3\\}$$
 
-The claim equals $C$ with $\\{3,-3\\}$. Those sets differ, so the statement is False.`,
+The claim equals $C$ with $\\{3,-3\\}$. Those sets differ.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -157,27 +217,53 @@ $$A=\\{-3,3\\}.$$`,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Each of the three objects can be kept or left out, so
 
 $$\\lvert \\mathcal{P}(A) \\rvert = 2^{3} = 8$$
 
-The claim is $8$, so the statement is True.`,
+The claim is $8$.
+
+So the statement is True.`
+
       `**B.** → False
 
-The elements of $A$ are the three letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter, so $\\{a,b\\}\\notin A$. The pair is a subset of $A$ and therefore an element of $\\mathcal{P}(A)$, but that is not this claim, so the statement is False.`,
+The elements of $A$ are the three letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter, so $\\{a,b\\}\\notin A$. The pair is a subset of $A$ and therefore an element of $\\mathcal{P}(A)$, but that is not this claim,
+
+So the statement is False.`
+
       `**C.** → True
 
-Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no member at all, so there is no witness that could sit outside $A$. Hence $\\emptyset\\subseteq A$, so the statement is True.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no member at all, so there is no witness that could sit outside $A$. Hence $\\emptyset\\subseteq A$.
+
+So the statement is True.`
+
       `**D.** → False
 
-Proper inclusion is ordinary inclusion plus a genuine difference of sets. $A\\subseteq A$ always holds, but the extra demand $A\\ne A$ is impossible. So $A$ is not a proper subset of $A$, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Proper inclusion is ordinary inclusion plus a genuine difference of sets. 
+
+$$A\\subseteq A$$
+
+ always holds, but the extra demand $A\\ne A$ is impossible. So $A$ is not a proper subset of $A$.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 A two-element subset of a three-element set is counted by
 
 $$\\binom{3}{2} = 3$$
 
-The three subsets are $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$. The claim is $3$, so the statement is True.`,
+The three subsets are $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$. The claim is $3$.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -202,23 +288,55 @@ Membership $x\\in A$ means $x$ is one of those three objects. Inclusion $S\\subs
     tactical_explanations: [
       `**A.** → True
 
-The empty set has no member that could sit outside $D$, so $\\emptyset\\subseteq D$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The empty set has no member that could sit outside $D$, so $\\emptyset\\subseteq D$.
+
+So the statement is True.`
+
       `**B.** → False
 
-The elements of $D$ are the letters $a$, $b$, and $c$. The empty set is not one of those three objects, so $\\emptyset\\notin D$, so the statement is False.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The elements of $D$ are the letters $a$, $b$, and $c$. The empty set is not one of those three objects, so $\\emptyset\\notin D$.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Each of the three letters can be kept or left out, so the number of subsets is
 
 $$2^{3} = 8$$
 
-The claim is $8$, so the statement is True.`,
+The claim is $8$.
+
+So the statement is True.`
+
       `**D.** → False
 
-The singleton $\\{a\\}$ is a subset of $D$ because $a\\in D$. It is not an element of $D$, because the elements are letters rather than singletons. The claim needs both $\\{a\\}\\subseteq D$ and $\\{a\\}\\in D$. The second fails, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The singleton $\\{a\\}$ is a subset of $D$ because $a\\in D$. It is not an element of $D$, because the elements are letters rather than singletons. The claim needs both $\\{a\\}\\subseteq D$ and $\\{a\\}\\in D$. The second fails.
+
+So the statement is False.`
+
       `**E.** → True
 
-Every member of $D$ sits in $D$, so $D\\subseteq D$, so the statement is True.`,
+Subset is reflexive: every set is a subset of itself because each of its members sits in it.
+
+Take an arbitrary element $x\\in D$. By definition of membership in $D$,
+
+$$x\\in D$$
+
+so the subset test passes for every $x$. Hence
+
+$$D\\subseteq D$$
+
+Matching the claim,
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -243,27 +361,67 @@ Membership $x\\in D$ asks whether $x$ is one of the three written letters. Inclu
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $E\\setminus F=\\{1,7\\}$. The claim is that same roster, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview recovered 
+
+$$E\\setminus F=\\{1,7\\}$$
+
+. The claim is that same roster.
+
+So the statement is True.`
+
       `**B.** → True
 
-The overview recovered $F\\setminus E=\\{4,6\\}$. The claim is that same roster, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The overview recovered 
+
+$$F\\setminus E=\\{4,6\\}$$
+
+. The claim is that same roster.
+
+So the statement is True.`
+
       `**C.** → False
 
-The overview recovered $E\\setminus F=\\{1,7\\}$ and $F\\setminus E=\\{4,6\\}$. Those two sets are unequal, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The overview recovered 
+
+$$E\\setminus F=\\{1,7\\}$$
+
+ and 
+
+$$F\\setminus E=\\{4,6\\}$$
+
+. Those two sets are unequal.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The overview recovered the two leftover piles $\\{1,7\\}$ and $\\{4,6\\}$. Their union is
 
 $$(E \\setminus F) \\cup (F \\setminus E) = \\{1,4,6,7\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The leftover piles $\\{1,7\\}$ and $\\{4,6\\}$ share no members, so
 
 $$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$$
 
-The claim is that same empty intersection, so the statement is True.`,
+The claim is that same empty intersection.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -296,39 +454,63 @@ The union of those leftover piles is the symmetric difference. Their intersectio
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Intersection keeps elements in both $A$ and $B$. The only shared number is $6$:
 
 $$A \\cap B = \\{6\\}$$
 
-The claim matches, so the statement is True.`,
+The claim matches.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Writing the distinct members of $A$ or $B$ gives
 
 $$A \\cup B = \\{2,3,4,6,8,9,10,12\\}$$
 
-which has $8$ elements, so the statement is True.`,
+which has $8$ elements.
+
+So the statement is True.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Difference $C\\setminus A$ keeps members of $C$ that miss $A$:
 
 $$C \\setminus A = \\{1,3,5\\}$$
 
-The claim drops $5$, so the statement is False.`,
-      `**D.** → False
+The claim drops $5$.
+
+So the statement is False.`
+
+      `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Difference $B\\setminus C$ keeps members of $B$ that miss $C$:
 
 $$B \\setminus C = \\{6,9,12\\}$$
 
-The claim keeps $3$, but $3\\in C$, so the statement is False.`,
-      `**E.** → False
+The claim keeps $3$, but $3\\in C$.
+
+So the statement is True.`
+
+      `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Intersection keeps elements in both $A$ and $C$:
 
 $$A \\cap C = \\{2,4\\}$$
 
-The claim includes $6$, but $6\\notin C$, so the statement is False.`,
+The claim includes $6$, but $6\\notin C$.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -353,27 +535,63 @@ Intersection keeps numbers tagged in both inputs. Union keeps every tagged numbe
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $\\lvert M \\cup E \\rvert = 43$. The claim is that same figure, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already recovered the shared figure
+
+$$\\lvert M \\cup E \\rvert = 43$$
+
+The claim asserts that same value. Comparing the two sides.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The overview recovered a union of $43$ among $50$ students. The remainder is
 
 $$50 - 43 = 7$$
 
-The claim is $7$, so the statement is True.`,
-      `**C.** → True
+The claim is $7$.
+
+So the statement is True.`
+
+      `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Only Mathematics is the Mathematics headline minus the overlap:
 
 $$\\lvert M \\setminus E \\rvert = 30 - 12 = 18$$
 
-The claim is $18$, so the statement is True.`,
+The claim is $18$.
+
+So the statement is False.`
+
       `**D.** → False
 
-The inclusion $E\\subseteq M$ would require every Economics student to sit in $M$, hence $\\lvert M \\cap E \\rvert = \\lvert E \\rvert$. The given overlap is $12$ and $\\lvert E \\rvert = 25$, so $12 \\ne 25$, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The inclusion 
+
+$$E\\subseteq M$$
+
+ would require every Economics student to sit in $M$, hence $\\lvert M \\cap E \\rvert = \\lvert E \\rvert$. The given overlap is $12$ and $\\lvert E \\rvert = 25$, so $12 \\ne 25$.
+
+So the statement is False.`
+
       `**E.** → False
 
-Disjointness requires $\\lvert M \\cap E \\rvert = 0$. The overlap is given as $12$, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+Disjointness requires 
+
+$$\\lvert M \\cap E \\rvert = 0$$
+
+. The overlap is given as $12$.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 7,
@@ -406,35 +624,67 @@ so $\\lvert M \\cup E \\rvert = 43$. Only-Mathematics is $\\lvert M \\rvert$ min
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The three blocks occupy $\\{1,2,3\\}$, $\\{4,5,6\\}$, and $\\{7,8,9\\}$ with no shared integers, so
 
 $$A \\cap B = \\emptyset, \\qquad A \\cap C = \\emptyset, \\qquad B \\cap C = \\emptyset$$
 
-Every pair is disjoint, so the statement is True.`,
+Every pair is disjoint.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The blocks are nonempty and pairwise disjoint. Their union is
 
 $$A \\cup B \\cup C = \\{1,2,3,4,5,6,7,8,9\\} = U$$
 
-so $\\{A,B,C\\}$ is a partition of $U$, so the statement is True.`,
+so $\\{A,B,C\\}$ is a partition of $U$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Pairwise disjointness already forces the triple intersection to be empty:
 
-$$A \\cap B \\cap C = \\emptyset$$
+$$A \\cap B \\cap C = \\emptyset$$.
 
-so the statement is True.`,
+So the statement is True.`
+
       `**D.** → False
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$. None of $1,2,3$ sits in $B$, so
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
-$$A \\setminus B = \\{1,2,3\\}$$
+Membership holds when the object appears among the set's listed elements.
 
-The claim is $\\emptyset$, so the statement is False.`,
+Inspect the roster of $B$ for $1,2,3$:
+
+$$1,2,3\\in B$$
+
+The object is present, matching the claim.
+
+So the statement is False.`
+
       `**E.** → False
 
-An empty intersection does not force a factor empty. Here $A\\cap B=\\emptyset$ even though both $A=\\{1,2,3\\}$ and $B=\\{4,5,6\\}$ are nonempty, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+An empty intersection does not force a factor empty. Here 
+
+$$A\\cap B=\\emptyset$$
+
+ even though both 
+
+$$A=\\{1,2,3\\}$$
+
+ and $B=\\{4,5,6\\}$ are nonempty.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -461,35 +711,61 @@ Pairwise disjointness means every pair of blocks shares nothing. A partition of 
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$. The claim is that same roster, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview recovered 
+
+$$X^{c}=\\{7,8,9,10,11,12\\}$$
+
+. The claim is that same roster.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The union is $X\\cup Y=\\{1,2,\\ldots,9\\}$. Complementing in $U$ leaves
 
 $$(X \\cup Y)^{c} = \\{10,11,12\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their intersection is
 
 $$X^{c} \\cap Y^{c} = \\{10,11,12\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**D.** → True
 
 De Morgan's law says the complement of an intersection is the union of the complements:
 
 $$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$$
 
-This identity holds for every pair of sets. Checking the recovered lists: $X\\cap Y=\\{4,5,6\\}$, so the left side is $\\{1,2,3,7,8,9,10,11,12\\}$, which matches $X^{c}\\cup Y^{c}$, so the statement is True.`,
+This identity holds for every pair of sets. Checking the recovered lists: $X\\cap Y=\\{4,5,6\\}$, so the left side is $\\{1,2,3,7,8,9,10,11,12\\}$, which matches $X^{c}\\cup Y^{c}$,.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their union is
 
 $$X^{c} \\cup Y^{c} = \\{1,2,3,7,8,9,10,11,12\\}$$
 
-The claim drops $7,8,9$, so the statement is False.`,
+The claim drops $7,8,9$.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -518,39 +794,63 @@ De Morgan's laws: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ and $(X\\cap Y)^{c}=X^{c}\\c
     tactical_explanations: [
       `**A.** → False
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The union is $A\\cup B=\\{1,2,\\ldots,8\\}$. Complementing in $U$ leaves
 
 $$(A \\cup B)^{c} = \\{9,10\\}$$
 
-The claim includes $8$, but $8\\in B$, so the statement is False.`,
+The claim includes $8$, but $8\\in B$.
+
+So the statement is False.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 De Morgan's law says
 
 $$(A \\cap B)^{c} = A^{c} \\cup B^{c}$$
 
-This identity holds for every pair of sets, so the statement is True.`,
+This identity holds for every pair of sets.
+
+So the statement is True.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their intersection is
 
 $$A^{c} \\cap B^{c} = \\{9,10\\}$$
 
-The claim keeps $6,7,8$, which sit in $B$ and therefore miss $B^{c}$, so the statement is False.`,
+The claim keeps $6,7,8$, which sit in $B$ and therefore miss $B^{c}$.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The intersection is $A\\cap B=\\{4,5\\}$. Complementing in $U$ leaves
 
 $$(A \\cap B)^{c} = \\{1,2,3,6,7,8,9,10\\}$$
 
-The claim is that same roster, so the statement is True.`,
+The claim is that same roster.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their union is
 
 $$A^{c} \\cup B^{c} = \\{1,2,3,6,7,8,9,10\\}$$
 
-The claim drops $6,7,8$, so the statement is False.`,
+The claim drops $6,7,8$.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -579,31 +879,53 @@ De Morgan's laws: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\c
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and
 
 $$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = A$$
 
-so $P$ is a partition of $A$, so the statement is True.`,
+so $P$ is a partition of $A$.
+
+So the statement is True.`
+
       `**B.** → False
 
-A partition need not have one block per element. The one-block collection $\\{A\\}$ is a partition of $A$, and the pairing $\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ is another, with $3$ blocks rather than $6$. The claim requires every partition to have exactly $6$ blocks, so the statement is False.`,
+A partition need not have one block per element. The one-block collection $\\{A\\}$ is a partition of $A$, and the pairing $\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ is another, with $3$ blocks rather than $6$. The claim requires every partition to have exactly $6$ blocks,
+
+So the statement is False.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The two blocks of $Q$ both contain $3$:
 
 $$\\{1,2,3\\} \\cap \\{3,4,5,6\\} = \\{3\\}$$
 
-The overlap is nonempty, so $Q$ is not a partition, so the statement is False.`,
+The overlap is nonempty, so $Q$ is not a partition.
+
+So the statement is False.`
+
       `**D.** → False
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The union of the blocks of $R$ is
 
 $$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5\\} = \\{1,2,3,4,5\\}$$
 
-which misses $6\\in A$, so $R$ is not a partition of $A$, so the statement is False.`,
+which misses $6\\in A$, so $R$ is not a partition of $A$.
+
+So the statement is False.`
+
       `**E.** → True
 
-The overview recorded two distinct partitions of any set with $n\\ge 2$ elements: the one-block collection $\\{A\\}$, and the collection of $n$ singletons. So more than one partition always exists, so the statement is True.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+The overview recorded two distinct partitions of any set with $n\\ge 2$ elements: the one-block collection $\\{A\\}$, and the collection of $n$ singletons. So more than one partition always exists.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -628,35 +950,63 @@ Block count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is a
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $2^{5}=32$ subsets. The claim is $32$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview recovered 
+
+$$2^{5}=32$$
+
+ subsets. The claim is $32$.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Proper subsets are all subsets except $A$ itself:
 
 $$32 - 1 = 31$$
 
-The claim is $31$, so the statement is True.`,
+The claim is $31$.
+
+So the statement is True.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The number of $4$-element subsets of a $5$-element set is
 
 $$\\binom{5}{4} = 5$$
 
-The claim is $10$, so the statement is False.`,
+The claim is $10$.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Nonempty subsets are all subsets except $\\emptyset$:
 
 $$32 - 1 = 31$$
 
-The claim is $31$, so the statement is True.`,
+The claim is $31$.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The even sizes available in a $5$-element set are $0$, $2$, and $4$:
 
 $$\\binom{5}{0} + \\binom{5}{2} + \\binom{5}{4} = 1 + 10 + 5 = 16$$
 
-The claim is $15$, so the statement is False.`,
+The claim is $15$.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 12,
@@ -685,31 +1035,55 @@ Proper subsets drop $A$ itself. Nonempty subsets drop $\\emptyset$. Size counts 
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The lower bound of the intersection is the stricter of $x>0$ and $x\\ge 5$, hence $x\\ge 5$. The upper bound is the stricter of $x\\le 10$ and $x<15$, hence $x\\le 10$. So
 
 $$A \\cap B = [5,10]$$
 
-The claim matches, so the statement is True.`,
-      `**B.** → False
+The claim matches.
+
+So the statement is True.`
+
+      `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The union runs from just above $0$ to just below $15$:
 
 $$A \\cup B = (0,15)$$
 
-The claim is $(0,15]$, which includes $15$. But $15\\notin B$ because $B$ is open at $15$, and $15\\notin A$, so the statement is False.`,
-      `**C.** → True
+The claim is $(0,15]$, which includes $15$. But $15\\notin B$ because $B$ is open at $15$, and $15\\notin A$.
 
-The point $10$ satisfies $0<10\\le 10$, so $10\\in A$. It also satisfies $5\\le 10<15$, so $10\\in B$. Hence $10\\in A\\cap B$, so the statement is True.`,
-      `**D.** → False
+So the statement is True.`
 
-The point $5$ satisfies $0<5\\le 10$, so $5\\in A$. It also satisfies $5\\le 5<15$, so $5\\in B$. Difference $A\\setminus B$ cannot keep a point of $B$, so $5\\notin A\\setminus B$, so the statement is False.`,
+      `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The point $10$ satisfies $0<10\\le 10$, so $10\\in A$. It also satisfies $5\\le 10<15$, so $10\\in B$. Hence $10\\in A\\cap B$.
+
+So the statement is False.`
+
+      `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The point $5$ satisfies $0<5\\le 10$, so $5\\in A$. It also satisfies $5\\le 5<15$, so $5\\in B$. Difference $A\\setminus B$ cannot keep a point of $B$, so $5\\notin A\\setminus B$.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The claim is $A\\subseteq B$. A counterexample is $x=1$:
 
 $$1 \\in A, \\qquad 1 \\notin B$$
 
-because $1<5$. The implication fails, so the statement is False.`,
+because $1<5$. The implication fails.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
@@ -736,29 +1110,53 @@ Intersection takes the tighter bounds. Union runs from the leftmost open end to 
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered $\\lvert A \\cup B \\cup C \\rvert = 145$. The claim is $155$, so the statement is False.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already recovered the shared figure
+
+$$\\lvert A \\cup B \\cup C \\rvert = 145$$
+
+The claim asserts that same value. Comparing the two sides.
+
+So the statement is False.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The overview recovered a union of $145$ among $150$ tourists. The remainder is
 
 $$150 - 145 = 5$$
 
-The claim is $5$, so the statement is True.`,
+The claim is $5$.
+
+So the statement is True.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The pairwise total $\\lvert A \\cap B \\rvert = 30$ still includes the $10$ visitors to all three museums. The exact $A$-and-$B$-only region is
 
 $$30 - 10 = 20$$
 
-The claim is $30$, so the statement is False.`,
+The claim is $30$.
+
+So the statement is False.`
+
       `**D.** → False
 
 Only Museum $A$ excludes $B$ and $C$. Subtracting both pair totals from $\\lvert A \\rvert$ double-subtracts the triple, so add it back:
 
 $$\\lvert A \\setminus (B \\cup C) \\rvert = 80 - 30 - 20 + 10 = 40$$
 
-The claim computes $80-30-20=30$ and never adds $10$, so the statement is False.`,
+The claim computes $80-30-20=30$ and never adds $10$,
+
+So the statement is False.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 At least two museums means the three exact-pair regions plus the triple:
 
@@ -766,7 +1164,9 @@ $$30 - 10 = 20, \\qquad 25 - 10 = 15, \\qquad 20 - 10 = 10$$
 
 $$20 + 15 + 10 + 10 = 55$$
 
-The claim is $65$, so the statement is False.`,
+The claim is $65$.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -797,19 +1197,55 @@ Pair totals still include the triple, so an exact-pair region subtracts $10$. On
     tactical_explanations: [
       `**A.** → True
 
-Every positive even is a natural number, so $E\\subseteq N$. The odd $1$ sits in $N$ but not in $E$, so $E\\ne N$. The inclusion is proper, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Membership holds when the object appears among the set's listed elements.
+
+Inspect the roster of $N$ for $1$:
+
+$$1\\in N$$
+
+The object is present, matching the claim.
+
+So the statement is True.`
+
       `**B.** → False
 
-The overview recovered a bijection $f(n)=2n$ from $N$ onto $E$, so $\\lvert E \\rvert = \\lvert N \\rvert$ even though $E$ is a proper subset of $N$. The finite-set slogan does not apply here, so the statement is False.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The overview recovered a bijection 
+
+$$f(n)=2n$$
+
+ from $N$ onto $E$, so $\\lvert E \\rvert = \\lvert N \\rvert$ even though $E$ is a proper subset of $N$. The finite-set slogan does not apply here.
+
+So the statement is False.`
+
       `**C.** → False
 
-The formula $f(n)=2n$ always outputs an even integer, so its image is $E$, not the odd naturals. A bijection $N$ onto the odds would be $n\\mapsto 2n-1$. The claimed correspondence is the wrong codomain, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The formula 
+
+$$f(n)=2n$$
+
+ always outputs an even integer, so its image is $E$, not the odd naturals. A bijection $N$ onto the odds would be $n\\mapsto 2n-1$. The claimed correspondence is the wrong codomain.
+
+So the statement is False.`
+
       `**D.** → True
 
-Every positive even is a natural, but $1\\in N\\setminus E$, so $E\\subsetneq N$. The overview recovered $\\lvert E \\rvert = \\lvert N \\rvert$. Same cardinality with a proper subset is exactly why the finite-set slogan fails for infinite sets, so the statement is True.`,
+Every positive even is a natural, but $1\\in N\\setminus E$, so $E\\subsetneq N$. The overview recovered $\\lvert E \\rvert = \\lvert N \\rvert$. Same cardinality with a proper subset is exactly why the finite-set slogan fails for infinite sets,
+
+So the statement is True.`
+
       `**E.** → False
 
-The set $E$ itself is an infinite subset of $N$ that is not equal to $N$, because $1\\in N\\setminus E$. So not every infinite subset of $N$ equals $N$, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+The set $E$ itself is an infinite subset of $N$ that is not equal to $N$, because $1\\in N\\setminus E$. So not every infinite subset of $N$ equals $N$.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 15,
@@ -834,17 +1270,55 @@ A proper subset is a subset that is not equal to the whole. Two infinite sets ha
     tactical_explanations: [
       `**A.** → True
 
-The number $6$ sits on the roster of $A$, so $6\\in A$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Membership holds when the object appears among the set's listed elements.
+
+Inspect the roster of $A$ for $6$:
+
+$$6\\in A$$
+
+The object is present, matching the claim.
+
+So the statement is True.`
+
       `**B.** → False
 
-The elements of $A$ are the six even numbers. The singleton $\\{6\\}$ is a set, not a number, so $\\{6\\}\\notin A$, so the statement is False.`,
-      `**C.** → True
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
-Both $6$ and $8$ sit in $A$, so $\\{6,8\\}\\subseteq A$, so the statement is True.`,
+The elements of $A$ are the six even numbers. The singleton $\\{6\\}$ is a set, not a number, so $\\{6\\}\\notin A$.
+
+So the statement is False.`
+
+      `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+A two-element set is a subset when each of its members sits in the larger set.
+
+Check the two candidates against $A$:
+
+$$6\\in A$$
+
+$$8\\in A$$
+
+Hence
+
+$$\\{6,8\\}\\subseteq A$$.
+
+So the statement is False.`
+
       `**D.** → True
 
-The empty set has no member that could sit outside $A$, so $\\emptyset\\subseteq A$, so the statement is True.`,
-      `**E.** → True
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The empty set has no member that could sit outside $A$, so $\\emptyset\\subseteq A$.
+
+So the statement is True.`
+
+      `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 An $n$-element set has $2^{n}$ subsets, so here
 
@@ -854,7 +1328,9 @@ Proper subsets exclude $A$ itself:
 
 $$64 - 1 = 63$$
 
-The claim is $63$, so the statement is True.`,
+The claim is $63$.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 16,
@@ -879,27 +1355,63 @@ Membership $x\\in A$ asks whether $x$ is one of those six numbers. Inclusion $S\
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $A=\\{2,3\\}$. $B$ is given as $\\{2,3\\}$. The two rosters match, so the statement is True.`,
-      `**B.** → True
+Read the claim against the definition, then check membership or equality one object at a time.
 
-The overview recovered $A=\\{2,3\\}$. The integer $3$ sits on that roster, so $3\\in A$, so the statement is True.`,
-      `**C.** → False
+The overview recovered 
 
-The overview recovered $A=\\{2,3\\}$. The claim reprints $A$ as the singleton $\\{2\\}$ and drops $3$, even though $3$ is an integer root. The two sets are unequal, so the statement is False.`,
+$$A=\\{2,3\\}$$
+
+. $B$ is given as $\\{2,3\\}$. The two rosters match.
+
+So the statement is True.`
+
+      `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The overview recovered 
+
+$$A=\\{2,3\\}$$
+
+. The integer $3$ sits on that roster, so $3\\in A$.
+
+So the statement is False.`
+
+      `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The overview recovered 
+
+$$A=\\{2,3\\}$$
+
+. The claim reprints $A$ as the singleton $\\{2\\}$ and drops $3$, even though $3$ is an integer root. The two sets are unequal.
+
+So the statement is True.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The overview recovered two distinct members, $2$ and $3$, so
 
 $$\\lvert A \\rvert = 2$$
 
-The claim is that same count, so the statement is True.`,
+The claim is that same count.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The same roots $2$ and $3$ must now pass $x\\in\\mathbb{N}$ and $x>2$. The root $2$ fails $x>2$. The root $3$ is natural and strictly larger than $2$, so
 
 $$C=\\{3\\}$$
 
-The claim is that same singleton, so the statement is True.`,
+The claim is that same singleton.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 17,
@@ -932,31 +1444,71 @@ $$A=\\{2,3\\}.$$`,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Each of the four letters can be kept or left out, so
 
 $$\\lvert \\mathcal{P}(D) \\rvert = 2^{4} = 16$$
 
-The claim is $16$, so the statement is True.`,
+The claim is $16$.
+
+So the statement is True.`
+
       `**B.** → True
 
-Both $w$ and $x$ sit in $D$, so $\\{w,x\\}\\subseteq D$. Membership in the power set is subsethood of $D$, hence $\\{w,x\\}\\in\\mathcal{P}(D)$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+A two-element set is a subset when each of its members sits in the larger set.
+
+Check the two candidates against $D$:
+
+$$w\\in D$$
+
+$$x\\in D$$
+
+Hence
+
+$$\\{w,x\\}\\subseteq D$$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Choosing $3$ letters out of $4$ is choosing which one letter to omit:
 
 $$\\binom{4}{3} = 4$$
 
-The claim is $4$, so the statement is True.`,
+The claim is $4$.
+
+So the statement is True.`
+
       `**D.** → True
 
-Every set is a subset of itself, so $D\\subseteq D$. Therefore $D\\in\\mathcal{P}(D)$, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Every set is a subset of itself, so 
+
+$$D\\subseteq D$$
+
+. Therefore 
+
+$$D\\in\\mathcal{P}(D)$$.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The number of $2$-element subsets of a $4$-element set is
 
 $$\\binom{4}{2} = 6$$
 
-The claim is $5$, so the statement is False.`,
+The claim is $5$.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -981,19 +1533,73 @@ A set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts u
     tactical_explanations: [
       `**A.** → True
 
-Each of $1$, $2$, and $3$ sits in $F$, so $E\\subseteq F$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Membership holds when the object appears among the set's listed elements.
+
+Inspect the roster of $F$ for $3$:
+
+$$3\\in F$$
+
+The object is present, matching the claim.
+
+So the statement is True.`
+
       `**B.** → True
 
-Each of $1$, $2$, and $3$ sits in $F$, so $E\\subseteq F$. The extra integer $4$ sits in $F$ but not in $E$, so $E\\ne F$. The inclusion is proper, so the statement is True.`,
-      `**C.** → False
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
-The integer $4$ sits in $F$ but not in $E$, so $F\\not\\subseteq E$, so the statement is False.`,
+Membership holds when the object appears among the set's listed elements.
+
+Inspect the roster of $F$ for $3$:
+
+$$3\\in F$$
+
+The object is present, matching the claim.
+
+So the statement is True.`
+
+      `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+Membership holds when the object appears among the set's listed elements.
+
+Inspect the roster of $F$ for $4$:
+
+$$4\\in F$$
+
+The object is present, matching the claim.
+
+So the statement is True.`
+
       `**D.** → True
 
-Every member of $E$ sits in $E$, so $E\\subseteq E$, so the statement is True.`,
+Subset is reflexive: every set is a subset of itself because each of its members sits in it.
+
+Take an arbitrary element $x\\in E$. By definition of membership in $E$,
+
+$$x\\in E$$
+
+so the subset test passes for every $x$. Hence
+
+$$E\\subseteq E$$
+
+Matching the claim,
+
+So the statement is True.`
+
       `**E.** → False
 
-Proper inclusion needs $E\\subseteq E$ and $E\\ne E$. The inequality $E\\ne E$ is impossible, so $E$ is not a proper subset of $E$, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+Proper inclusion needs 
+
+$$E\\subseteq E$$
+
+ and $E\\ne E$. The inequality $E\\ne E$ is impossible, so $E$ is not a proper subset of $E$.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -1018,27 +1624,49 @@ Ordinary inclusion $X\\subseteq Y$ asks whether every member of $X$ sits in $Y$.
     tactical_explanations: [
       `**A.** → True
 
-The three blocks occupy $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ with no shared integers, so they are pairwise disjoint, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The three blocks occupy $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ with no shared integers, so they are pairwise disjoint.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 The union of the blocks is
 
-$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = \\{1,2,3,4,5,6\\} = G$$
+$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = \\{1,2,3,4,5,6\\} = G$$.
 
-so the statement is True.`,
-      `**C.** → True
+So the statement is True.`
 
-The blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and their union is $G$. Those are the three partition checks, so $\\mathcal{S}$ is a partition of $G$, so the statement is True.`,
-      `**D.** → False
+      `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and their union is $G$. Those are the three partition checks, so $\\mathcal{S}$ is a partition of $G$.
+
+So the statement is False.`
+
+      `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The first two blocks of $\\mathcal{S}'$ both contain $2$:
 
 $$\\{1,2\\} \\cap \\{2,3,4\\} = \\{2\\}$$
 
-The overlap is nonempty, so $\\mathcal{S}'$ is not a partition, so the statement is False.`,
+The overlap is nonempty, so $\\mathcal{S}'$ is not a partition.
+
+So the statement is True.`
+
       `**E.** → False
 
-The replacement block $\\{5,6,7\\}$ contains $7$, and $7\\notin G$. A partition of $G$ cannot use a block that fails to be a subset of $G$, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+The replacement block $\\{5,6,7\\}$ contains $7$, and $7\\notin G$. A partition of $G$ cannot use a block that fails to be a subset of $G$.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 20,
@@ -1063,23 +1691,45 @@ A partition needs pairwise disjoint nonempty blocks whose union is $G$, and thos
     tactical_explanations: [
       `**A.** → True
 
-Subsethood only requires that every member of $H$ already sit in $\\mathbb{N}$. Each positive even is $2k$ for some integer $k\\ge 1$, hence a natural number. There is no positive even outside $\\mathbb{N}$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Subsethood only requires that every member of $H$ already sit in $\\mathbb{N}$. Each positive even is $2k$ for some integer $k\\ge 1$, hence a natural number. There is no positive even outside $\\mathbb{N}$.
+
+So the statement is True.`
+
       `**B.** → False
 
 A finite set of positive evens would have a largest member $2N$. Then $2(N+1)$ is still even and strictly larger:
 
 $$2(N+1)=2N+2>2N$$
 
-so it would also sit in $H$. The roster $2,4,6,\\ldots$ never ends, so $H$ is infinite. Being a subset of $\\mathbb{N}$ does not make $H$ finite, so the statement is False.`,
+so it would also sit in $H$. The roster $2,4,6,\\ldots$ never ends, so $H$ is infinite. Being a subset of $\\mathbb{N}$ does not make $H$ finite,
+
+So the statement is False.`
+
       `**C.** → False
 
-Equality of sets needs the same members. The overview already has the leftover $1\\in\\mathbb{N}\\setminus H$. That one odd already forces $H\\neq\\mathbb{N}$, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+Equality of sets needs the same members. The overview already has the leftover 
+
+$$1\\in\\mathbb{N}\\setminus H$$
+
+. That one odd already forces $H\\neq\\mathbb{N}$.
+
+So the statement is False.`
+
       `**D.** → True
 
-The overview's map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$. It is onto $H$ because every positive even $2k$ equals $f(k)$. That is a bijection $\\mathbb{N}\\to H$, which is what pairing every natural with exactly one even (and vice versa) means, so the statement is True.`,
+The overview's map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$. It is onto $H$ because every positive even $2k$ equals $f(k)$. That is a bijection $\\mathbb{N}\\to H$, which is what pairing every natural with exactly one even (and vice versa) means,
+
+So the statement is True.`
+
       `**E.** → False
 
-The overview already has the leftover $1\\in\\mathbb{N}\\setminus H$, so the inclusion is proper: $H\\subsetneq\\mathbb{N}$. The same bijection $f(n)=2n$ still pairs the two sets, so they have the same cardinality. For infinite sets, a proper subset need not be strictly smaller. The claim treats a finite-set slogan as a law, so the statement is False.`,
+The overview already has the leftover $1\\in\\mathbb{N}\\setminus H$, so the inclusion is proper: $H\\subsetneq\\mathbb{N}$. The same bijection $f(n)=2n$ still pairs the two sets, so they have the same cardinality. For infinite sets, a proper subset need not be strictly smaller. The claim treats a finite-set slogan as a law,
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 21,
@@ -1112,23 +1762,61 @@ sends each natural to an even. Odd $1$ sits in $\\mathbb{N}$ and misses $H$.`,
     tactical_explanations: [
       `**A.** → True
 
-Membership $a\\in K$ asks whether the unwrapped object $a$ is on the roster of $K$. The first listed object is exactly $a$, so $a\\in K$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Membership 
+
+$$a\\in K$$
+
+ asks whether the unwrapped object $a$ is on the roster of $K$. The first listed object is exactly $a$, so $a\\in K$.
+
+So the statement is True.`
+
       `**B.** → True
 
-The second listed object is the singleton $\\{a\\}$ itself, so $\\{a\\}\\in K$. That is membership of a set-object, not subsethood. Braces matter: $\\{a\\}$ is not the same object as $a$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The second listed object is the singleton $\\{a\\}$ itself, so 
+
+$$\\{a\\}\\in K$$
+
+. That is membership of a set-object, not subsethood. Braces matter: $\\{a\\}$ is not the same object as $a$.
+
+So the statement is True.`
+
       `**C.** → True
 
-Subsethood $\\{a\\}\\subseteq K$ asks whether the only member of $\\{a\\}$, namely $a$, sits in $K$. The roster of $K$ begins with $a$, so $a\\in K$ and the singleton is a subset, so the statement is True.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+Subsethood 
+
+$$\\{a\\}\\subseteq K$$
+
+ asks whether the only member of $\\{a\\}$, namely $a$, sits in $K$. The roster of $K$ begins with $a$, so $a\\in K$ and the singleton is a subset.
+
+So the statement is True.`
+
       `**D.** → True
 
-Subsethood $\\{\\{a\\}\\}\\subseteq K$ asks whether the only member of $\\{\\{a\\}\\}$, namely $\\{a\\}$, sits in $K$. The second listed object of $K$ is $\\{a\\}$, so $\\{a\\}\\in K$ and the test succeeds, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Subsethood 
+
+$$\\{\\{a\\}\\}\\subseteq K$$
+
+ asks whether the only member of $\\{\\{a\\}\\}$, namely $\\{a\\}$, sits in $K$. The second listed object of $K$ is $\\{a\\}$, so $\\{a\\}\\in K$ and the test succeeds.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The two listed objects are distinct: an element and a one-element set containing that element. Two distinct members give
 
-$$\\lvert K\\rvert=2,$$
+$$\\lvert K\\rvert=2,$$.
 
-so the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 22,
@@ -1165,14 +1853,20 @@ and the leftover in $U$ is
 
 $$(A\\cup B)^c=\\{9,10\\}.$$
 
-The claim is that same list, so the statement is True.`,
+The claim is that same list,
+
+So the statement is True.`
+
       `**B.** → True
 
 De Morgan's first law says the complement of a union is the intersection of the complements. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so
 
 $$A^c\\cap B^c=\\{9,10\\}.$$
 
-Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^c$. The intersection matches $(A\\cup B)^c$, so the statement is True.`,
+Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail $B^c$. The intersection matches $(A\\cup B)^c$,
+
+So the statement is True.`
+
       `**C.** → True
 
 De Morgan's second law says the complement of an intersection is the union of the complements. The overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves
@@ -1183,17 +1877,31 @@ Joining the complements gives the same list:
 
 $$A^c\\cup B^c=\\{1,2,3,6,7,8,9,10\\}.$$
 
-The two sides agree, so the statement is True.`,
+The two sides agree,.
+
+So the statement is True.`
+
       `**D.** → False
 
-Intersection keeps only numbers that sit in both lists. The overview listed $A\\cap B=\\{4,5\\}$. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Intersection keeps only numbers that sit in both lists. The overview listed 
+
+$$A\\cap B=\\{4,5\\}$$
+
+. The claimed $\\{4,5,6\\}$ pads the overlap with $6$, and $6$ sits in $B$ but misses $A$. The lists do not match.
+
+So the statement is False.`
+
       `**E.** → False
 
 The overview listed $A\\cap B=\\{4,5\\}$, so the complement in $U$ must drop $4$ and $5$ and keep everything else:
 
 $$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
 
-The claimed list $\\{1,2,3,4,5,9,10\\}$ keeps $4$ and $5$ while omitting $6,7,8$. That is the opposite of a complement, so the statement is False.`,
+The claimed list $\\{1,2,3,4,5,9,10\\}$ keeps $4$ and $5$ while omitting $6,7,8$. That is the opposite of a complement,
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -1228,23 +1936,51 @@ $$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted $\\lvert A\\times B\\rvert=2\\cdot 3=6$ by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already counted 
+
+$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
+
+ by the product rule. Product size is the number of cells in a $2$ by $3$ grid, not the five distinct symbols $1,2,x,y,z$. The claim is that same figure $6$.
+
+So the statement is True.`
+
       `**B.** → True
 
-Membership in $A\\times B$ is a two-slot test. For $(2,x)$ the first slot $2$ sits in $A=\\{1,2\\}$ and the second slot $x$ sits in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+Membership in $A\\times B$ is a two-slot test. For $(2,x)$ the first slot $2$ sits in $A=\\{1,2\\}$ and the second slot $x$ sits in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$.
+
+So the statement is True.`
+
       `**C.** → False
 
-The pair $(x,2)$ puts a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$. The first slot already fails, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The pair $(x,2)$ puts a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$. The first slot already fails.
+
+So the statement is False.`
+
       `**D.** → False
 
-Set equality needs identical members, not identical counts. The pair $(2,x)$ sits in $A\\times B$, but $2\\notin B$, so that pair cannot sit in $B\\times A$. One missing witness already forces $A\\times B\\neq B\\times A$, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Set equality needs identical members, not identical counts. The pair $(2,x)$ sits in $A\\times B$, but $2\\notin B$, so that pair cannot sit in $B\\times A$. One missing witness already forces $A\\times B\\neq B\\times A$.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Size ignores order. The reverse product is
 
 $$\\lvert B\\times A\\rvert=3\\cdot 2=6=\\lvert A\\times B\\rvert.$$
 
-The counts agree even though the member lists do not, so the statement is True.`,
+The counts agree even though the member lists do not.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -1277,23 +2013,43 @@ Turning the factors around produces $B\\times A$: the same count, different memb
     tactical_explanations: [
       `**A.** → False
 
-Subsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction. Explicitly $x=2$ sits in $A$ because $1<2<5$, and it misses $B$ because $2<3$. One witness kills $A\\subseteq B$, so the statement is False.`,
+Subsethood would need every point of $(1,5)$ to satisfy $x\\ge 3$. The leftover strip $(1,3)$ is the obstruction. Explicitly $x=2$ sits in $A$ because $1<2<5$, and it misses $B$ because $2<3$. One witness kills $A\\subseteq B$,
+
+So the statement is False.`
+
       `**B.** → True
 
-Numbers satisfying both $1<x<5$ and $x\\ge 3$ form the tighter interval $[3,5)$. The lower end $3$ is closed because $3\\in A$ and $3\\in B$. The upper end $5$ stays open because $5\\notin A$. The claimed interval is that overlap, so the statement is True.`,
+Numbers satisfying both $1<x<5$ and $x\\ge 3$ form the tighter interval $[3,5)$. The lower end $3$ is closed because $3\\in A$ and $3\\in B$. The upper end $5$ stays open because $5\\notin A$. The claimed interval is that overlap,
+
+So the statement is True.`
+
       `**C.** → False
 
-$B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$ because $10\\ge 3$, and not in $A$ because $10\\ge 5$. One large witness kills $B\\subseteq A$, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+$B$ is unbounded above, so it contains numbers far past $A$. Witness $x=10$: in $B$ because $10\\ge 3$, and not in $A$ because $10\\ge 5$. One large witness kills $B\\subseteq A$.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 From just above $1$ onward there is always coverage: $A$ handles $(1,5)$ and $B$ handles $[3,\\infty)$. The point $1$ itself is excluded from both inputs, so
 
 $$A\\cup B=(1,\\infty).$$
 
-The claim is that same interval, so the statement is True.`,
+The claim is that same interval.
+
+So the statement is True.`
+
       `**E.** → True
 
-Existence needs one point of $A$ that misses $B$. Take $x=2$: it satisfies $1<2<5$ but $2<3$, so $2\\in A\\setminus B$. The leftover strip $(1,3)$ is nonempty, so the statement is True.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+Existence needs one point of $A$ that misses $B$. Take $x=2$: it satisfies $1<2<5$ but $2<3$, so $2\\in A\\setminus B$. The leftover strip $(1,3)$ is nonempty.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -1322,27 +2078,51 @@ Intersection keeps numbers that satisfy both inequalities at once. Union keeps n
     tactical_explanations: [
       `**A.** → True
 
-The overview already joined the leftovers $A\\setminus B=\\{1,2\\}$ and $B\\setminus A=\\{5,6\\}$ into $A\\triangle B=\\{1,2,5,6\\}$. Symmetric difference is "exactly one," not "at least one": the overlap $\\{3,4\\}$ is absent on purpose. The claim is that same four-element list, so the statement is True.`,
+The overview already joined the leftovers $A\\setminus B=\\{1,2\\}$ and $B\\setminus A=\\{5,6\\}$ into $A\\triangle B=\\{1,2,5,6\\}$. Symmetric difference is "exactly one," not "at least one": the overlap $\\{3,4\\}$ is absent on purpose. The claim is that same four-element list,
+
+So the statement is True.`
+
       `**B.** → False
 
 The definition joins the leftovers by $\\cup$, not $\\cap$. Those leftovers $\\{1,2\\}$ and $\\{5,6\\}$ are disjoint, so
 
 $$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset,$$
 
-which is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap, so the statement is False.`,
+which is not the four-element set $\\{1,2,5,6\\}$. Outer buckets of a Venn diagram never overlap,
+
+So the statement is False.`
+
       `**C.** → False
 
-Symmetric difference excludes the overlap. The overview listed $A\\cap B=\\{3,4\\}$ and $A\\triangle B=\\{1,2,5,6\\}$, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+Symmetric difference excludes the overlap. The overview listed 
+
+$$A\\cap B=\\{3,4\\}$$
+
+ and 
+
+$$A\\triangle B=\\{1,2,5,6\\}$$
+
+, which share nothing. Already $3\\in A\\cap B$ and $3\\notin A\\triangle B$, so $A\\cap B\\nsubseteq A\\triangle B$.
+
+So the statement is False.`
+
       `**D.** → True
 
-If $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so $A\\triangle B=A\\cup B$. There is no middle bucket to discard. This is a general identity; the given lists are not disjoint, but the implication still holds, so the statement is True.`,
+If $A$ and $B$ share nothing, then $A\\setminus B=A$ and $B\\setminus A=B$, so $A\\triangle B=A\\cup B$. There is no middle bucket to discard. This is a general identity; the given lists are not disjoint, but the implication still holds,
+
+So the statement is True.`
+
       `**E.** → True
 
 The sum $\\lvert A\\rvert+\\lvert B\\rvert$ double-counts the overlap, and $A\\triangle B$ throws both copies away:
 
 $$\\lvert A\\triangle B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-2\\lvert A\\cap B\\rvert=4+4-2\\cdot 2=4.$$
 
-That matches the four-element set $\\{1,2,5,6\\}$, so the statement is True.`,
+That matches the four-element set $\\{1,2,5,6\\}$,
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -1379,27 +2159,55 @@ Joining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted $5\\cdot 8=40$ ordered pairs. Product size is cells, not $5+8=13$ people-plus-accounts. The claim is that same figure $40$, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already counted 
+
+$$5\\cdot 8=40$$
+
+ ordered pairs. Product size is cells, not 
+
+$$5+8=13$$
+
+ people-plus-accounts. The claim is that same figure $40$.
+
+So the statement is True.`
+
       `**B.** → False
 
-Coverage pairs are ordered: first slot is the rep, second is the account. The pair (Maria, Account $3$) and the pair (Account $3$, Maria) are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product, so the statement is False.`,
+Coverage pairs are ordered: first slot is the rep, second is the account. The pair (Maria, Account $3$) and the pair (Account $3$, Maria) are different objects; the second treats Account $3$ as the rep. Order is the whole point of a Cartesian product,
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Zero accounts means the second factor is empty, so
 
 $$r\\cdot 0=0$$
 
-for any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist, so the statement is True.`,
+for any number $r$ of reps. Without a second coordinate there is no ordered pair. Hiring more reps cannot create an account slot that does not exist.
+
+So the statement is True.`
+
       `**D.** → False
 
-Membership in the product means the first slot is a rep and the second slot is an account. The claim swaps both tests, putting Maria among the accounts and Account $3$ among the reps. Those are the tests for the reversed product, so the statement is False.`,
+Membership in the product means the first slot is a rep and the second slot is an account. The claim swaps both tests, putting Maria among the accounts and Account $3$ among the reps. Those are the tests for the reversed product,
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Six reps and eight accounts. The extra arithmetic is the increment from one new rep:
 
 $$6\\cdot 8=48.$$
 
-Equivalently the new rep adds eight new pairs to the old forty, so $40+8=48$. The claim is $48$, so the statement is True.`,
+Equivalently the new rep adds eight new pairs to the old forty, so $40+8=48$. The claim is $48$.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -1436,31 +2244,55 @@ A temperature must satisfy $-4<T<4$ and $T\\ge -1$. The lower limit becomes $-1$
 
 $$A\\cap B=[-1,4).$$
 
-The claim is that same interval, so the statement is True.`,
+The claim is that same interval,
+
+So the statement is True.`
+
       `**B.** → False
 
 The temperature $4$ sits in $B$ because $4\\ge -1$, but it fails $T^2<16$:
 
 $$4^2=16,$$
 
-and $16$ is not strictly less than $16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The overlap $[-1,4)$ is open at $4$ for the same reason, so the statement is False.`,
+and $16$ is not strictly less than $16$, so $4\\notin A$ and therefore $4\\notin A\\cap B$. The overlap $[-1,4)$ is open at $4$ for the same reason,
+
+So the statement is False.`
+
       `**C.** → False
 
 $A=(-4,4)$ already excluded $\\pm 4$, so the complement must collect them:
 
 $$A^c=(-\\infty,-4]\\cup[4,\\infty).$$
 
-The claimed strict inequalities $T<-4$ or $T>4$ drop those two boundary temperatures. Check $T=4$: $4^2=16$ is not strictly less than $16$, so $4\\notin A$ and $4$ must sit in $A^c$. The claimed roster drops it, so the statement is False.`,
+The claimed strict inequalities $T<-4$ or $T>4$ drop those two boundary temperatures. Check $T=4$: $4^2=16$ is not strictly less than $16$, so $4\\notin A$ and $4$ must sit in $A^c$. The claimed roster drops it,.
+
+So the statement is False.`
+
       `**D.** → False
 
 $A$ covers $(-4,4)$ and $B$ carries on upward from $-1$, so together they reach every temperature above $-4$:
 
 $$A\\cup B=(-4,\\infty).$$
 
-Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whole ray $(-\\infty,-4]$ lies outside both pieces, so the union is not all of $\\mathbb{R}$, so the statement is False.`,
+Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whole ray $(-\\infty,-4]$ lies outside both pieces, so the union is not all of $\\mathbb{R}$,.
+
+So the statement is False.`
+
       `**E.** → True
 
-Frost-safe yet dry is the leftover $A\\setminus B=(-4,-1)$. At $T=-2$ we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough, so the statement is True.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+Frost-safe yet dry is the leftover 
+
+$$A\\setminus B=(-4,-1)$$
+
+. At 
+
+$$T=-2$$
+
+ we have $4<16$ and $-2<-1$, so irrigation stays off. One witness is enough.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -1489,27 +2321,45 @@ Intersection keeps the tighter limit at each end. Union covers every temperature
     tactical_explanations: [
       `**A.** → False
 
-The overview already formed the union $160$ by subtracting the given overlap $50$ once. The claimed $170$ subtracts only $40$ from $120+90$, as if a neighbouring region were the overlap. The correct subtraction is the measured $50$, so $\\lvert A\\cup B\\rvert=160\\neq 170$, so the statement is False.`,
+The overview already formed the union $160$ by subtracting the given overlap $50$ once. The claimed $170$ subtracts only $40$ from $120+90$, as if a neighbouring region were the overlap. The correct subtraction is the measured $50$, so $\\lvert A\\cup B\\rvert=160\\neq 170$,
+
+So the statement is False.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Neither is the survey minus the union. The overview recovered $\\lvert A\\cup B\\rvert=160$, so
 
 $$200-160=40.$$
 
-The claim is $40$, so the statement is True.`,
+The claim is $40$.
+
+So the statement is True.`
+
       `**C.** → False
 
 A-only peels the overlap out of $A$:
 
 $$\\lvert A\\setminus B\\rvert=120-50=70.$$
 
-The claimed $90$ would be right only if the products shared nobody, or if $\\lvert B\\rvert$ were copied onto the A-only cell. The lists do not match, so the statement is False.`,
+The claimed $90$ would be right only if the products shared nobody, or if $\\lvert B\\rvert$ were copied onto the A-only cell. The lists do not match,
+
+So the statement is False.`
+
       `**D.** → True
 
-The $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets. Intersection is always a subset of each factor, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The $50$ who like both already sit inside the $120$ who like $A$. That is all $A\\cap B\\subseteq A$ asks, and it holds for any pair of sets. Intersection is always a subset of each factor.
+
+So the statement is True.`
+
       `**E.** → False
 
-The overflow $120+90-200=10$ is only a floor on the overlap, not an exact value. Any overlap from $10$ up to $\\min(120,90)=90$ could fit the headlines, and the survey already reports $50$. "Exactly $10$" confuses a lower bound with a measurement, so the statement is False.`,
+The overflow $120+90-200=10$ is only a floor on the overlap, not an exact value. Any overlap from $10$ up to $\\min(120,90)=90$ could fit the headlines, and the survey already reports $50$. "Exactly $10$" confuses a lower bound with a measurement,
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 7,
@@ -1542,39 +2392,61 @@ A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Union keeps every member of each input, repeats written once. From $A$ keep $1,2,3,4$; from $B$ add the newcomers $5,6$:
 
 $$A\\cup B=\\{1,2,3,4,5,6\\}.$$
 
-The claimed roster matches, so the statement is True.`,
+The claimed roster matches.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Intersection keeps only the shared numbers. The overview's scan left $3$ and $4$ in both lists, while $1,2$ miss $B$ and $5,6$ miss $A$, so
 
 $$A\\cap B=\\{3,4\\}.$$
 
-The claimed overlap matches, so the statement is True.`,
+The claimed overlap matches.
+
+So the statement is True.`
+
       `**C.** → True
 
 Difference $A\\setminus B$ deletes a member of $A$ only when it also sits in $B$. Deleting the shared pair $3,4$ leaves
 
 $$A\\setminus B=\\{1,2\\}.$$
 
-The numbers $1$ and $2$ miss $B$, so they stay. The claimed leftover matches, so the statement is True.`,
+The numbers $1$ and $2$ miss $B$, so they stay. The claimed leftover matches,
+
+So the statement is True.`
+
       `**D.** → False
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The opposite leftover lives inside $B$:
 
 $$B\\setminus A=\\{5,6\\},$$
 
-while $A\\setminus B=\\{1,2\\}$. Already $1$ sits in the first leftover and misses the second. Difference is not commutative, so the statement is False.`,
+while $A\\setminus B=\\{1,2\\}$. Already $1$ sits in the first leftover and misses the second. Difference is not commutative.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Disjointness means the intersection is empty. None of $7,8,9$ appears in $\\{1,2,3,4\\}$, so
 
 $$A\\cap C=\\emptyset.$$
 
-The two lists share nothing, so the statement is True.`,
+The two lists share nothing.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -1603,31 +2475,63 @@ Intersection keeps shared members; union keeps anything that sits in at least on
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 A union must contain every member of each input. Keep $A$'s five multiples and the newcomer $60$ from $B$; the overlap $30,40,50$ is not written twice:
 
 $$A\\cup B=\\{10,20,30,40,50,60\\}.$$
 
-The claimed roster matches, so the statement is True.`,
+The claimed roster matches.
+
+So the statement is True.`
+
       `**B.** → True
 
-Intersection keeps only the numbers that clear both lists. The overview's scan left $\\{30,40,50\\}$. The numbers $10$ and $20$ miss $B$, and $60$ misses $A$. The claimed overlap matches, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+Intersection keeps only the numbers that clear both lists. The overview's scan left $\\{30,40,50\\}$. The numbers $10$ and $20$ miss $B$, and $60$ misses $A$. The claimed overlap matches.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Difference $A\\setminus B$ deletes a member of $A$ only when that member also sits in $B$. Shared $30,40,50$ leave; private $10,20$ stay:
 
 $$A\\setminus B=\\{10,20\\}.$$
 
-The claimed leftover matches, so the statement is True.`,
+The claimed leftover matches.
+
+So the statement is True.`
+
       `**D.** → False
 
-The opposite leftover is $B\\setminus A=\\{60\\}$, while $A\\setminus B=\\{10,20\\}$. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The opposite leftover is 
+
+$$B\\setminus A=\\{60\\}$$
+
+, while 
+
+$$A\\setminus B=\\{10,20\\}$$
+
+. The sizes already disagree ($1$ versus $2$), and $10$ sits in the first leftover but not the second. Difference is not commutative.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Disjointness means the intersection is empty. Every member of $A$ is at least $10$, while $C$ stops at $3$, so
 
 $$A\\cap C=\\emptyset.$$
 
-There is no shared multiple of ten among $1,2,3$, so the statement is True.`,
+There is no shared multiple of ten among $1,2,3$.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -1656,35 +2560,65 @@ Intersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged 
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Putting $A$ and $B$ together keeps $a,b,c,d$ from $A$ and the newcomer $e$ from $B$. The shared $c$ and $d$ are not written twice:
 
 $$A\\cup B=\\{a,b,c,d,e\\}.$$
 
-The claimed roster matches, so the statement is True.`,
+The claimed roster matches.
+
+So the statement is True.`
+
       `**B.** → True
 
 Intersection keeps only the letters that appear on both rosters. Letters $a$ and $b$ sit in $A$ and miss $B$; letter $e$ sits in $B$ and misses $A$. Only $c$ and $d$ clear both tests:
 
 $$A\\cap B=\\{c,d\\}.$$
 
-The claimed overlap matches, so the statement is True.`,
+The claimed overlap matches,
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Difference $A\\setminus B$ keeps $A$'s private letters. Letters $c$ and $d$ sit in $B$, so they leave:
 
 $$A\\setminus B=\\{a,b\\}.$$
 
-The claimed leftover matches, so the statement is True.`,
+The claimed leftover matches.
+
+So the statement is True.`
+
       `**D.** → False
 
-The opposite leftover is the singleton $B\\setminus A=\\{e\\}$, while $A\\setminus B=\\{a,b\\}$. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative, so the statement is False.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+The opposite leftover is the singleton 
+
+$$B\\setminus A=\\{e\\}$$
+
+, while 
+
+$$A\\setminus B=\\{a,b\\}$$
+
+. Different sizes already forbid equality, and $a$ sits in one leftover but not the other. Difference is not commutative.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 $C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so
 
 $$A\\cap C=\\emptyset.$$
 
-Disjointness is that empty overlap, so the statement is True.`,
+Disjointness is that empty overlap.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -1713,6 +2647,8 @@ Shared letters give the intersection. The combined list is the union, each lette
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Putting $A$ and $B$ together covers $1$ through $8$, so
 
 $$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
@@ -1721,31 +2657,51 @@ and the leftover in $U$ is
 
 $$(A\\cup B)^c=\\{9,10\\}.$$
 
-Those two numbers sit in neither $A$ nor $B$. The claim is that same list, so the statement is True.`,
+Those two numbers sit in neither $A$ nor $B$. The claim is that same list.
+
+So the statement is True.`
+
       `**B.** → True
 
 De Morgan's first law says $(A\\cup B)^c=A^c\\cap B^c$. The overview listed $A^c=\\{6,7,8,9,10\\}$ and $B^c=\\{1,2,3,9,10\\}$, so
 
 $$A^c\\cap B^c=\\{9,10\\}.$$
 
-Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail the intersection of complements. The two sides agree, so the statement is True.`,
+Numbers $6,7,8$ miss $A$ but sit in $B$, so they fail the intersection of complements. The two sides agree,
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The overview listed $A\\cap B=\\{4,5\\}$. Removing those two from $U$ leaves
 
 $$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
 
-Joining $A^c$ with $B^c$ produces the same list, so $(A\\cap B)^c=A^c\\cup B^c$, so the statement is True.`,
+Joining $A^c$ with $B^c$ produces the same list, so $(A\\cap B)^c=A^c\\cup B^c$.
+
+So the statement is True.`
+
       `**D.** → True
 
-$A^c$ is $U$ minus $A$: drop $1$ through $5$, keep $\\{6,7,8,9,10\\}$. The overview already recorded that list. Complement is a scan of the universe, not of $A$ rewritten backwards. The claim matches, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+$A^c$ is $U$ minus $A$: drop $1$ through $5$, keep $\\{6,7,8,9,10\\}$. The overview already recorded that list. Complement is a scan of the universe, not of $A$ rewritten backwards. The claim matches.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The overview listed $A\\cap B=\\{4,5\\}$, so removing those two from $U$ leaves
 
 $$(A\\cap B)^c=\\{1,2,3,6,7,8,9,10\\}.$$
 
-That list keeps $A$-only, $B$-only, and neither. The claim is that same eight-number roster, so the statement is True.`,
+That list keeps $A$-only, $B$-only, and neither. The claim is that same eight-number roster.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -1780,35 +2736,61 @@ $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Odds union evens reconstructs all of $U$, so $A\\cup B=U$ and
 
 $$(A\\cup B)^c=U^c=\\emptyset.$$
 
-There is no leftover integer between $1$ and $12$, so the statement is True.`,
+There is no leftover integer between $1$ and $12$.
+
+So the statement is True.`
+
       `**B.** → True
 
 $A^c$ is the evens and $B^c$ is the odds, so their intersection is empty: nothing is even and odd at once. That matches $(A\\cup B)^c=\\emptyset$, which is De Morgan in this extreme case:
 
 $$A^c\\cap B^c=B\\cap A=\\emptyset.$$
 
-The two sides agree, so the statement is True.`,
+The two sides agree,
+
+So the statement is True.`
+
       `**C.** → True
 
-$A\\cap B=\\emptyset$, so $(A\\cap B)^c=U$. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full, so the statement is True.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+$$A\\cap B=\\emptyset$$
+
+, so 
+
+$$(A\\cap B)^c=U$$
+
+. The other side $A^c\\cup B^c$ is evens joined with odds, again $U$. Complementing the empty set relative to $U$ restores $U$ in full.
+
+So the statement is True.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Deleting the odds from $U$ leaves the evens, so
 
 $$A^c=\\{2,4,6,8,10,12\\}.$$
 
-Complement of a partition block is the other block, which is $B$. The claim matches that list, so the statement is True.`,
+Complement of a partition block is the other block, which is $B$. The claim matches that list.
+
+So the statement is True.`
+
       `**E.** → True
 
 Removing nothing from $U$ leaves $U$, so
 
 $$(A\\cap B)^c=\\emptyset^c=U=\\{1,2,3,4,5,6,7,8,9,10,11,12\\}.$$
 
-The claimed list is that full universe. Complementing $\\emptyset$ relative to a universe always gives the universe back, so the statement is True.`,
+The claimed list is that full universe. Complementing $\\emptyset$ relative to a universe always gives the universe back,
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 12,
@@ -1841,19 +2823,47 @@ Putting $A$ and $B$ together covers $\\{p,q,r,s\\}$. Of the six letters in $U$ o
 
 $$(A\\cup B)^c=\\{t,u\\}.$$
 
-Letter $s$ sits in $B$, so it sits in the union and cannot sit in the complement. The claim matches, so the statement is True.`,
+Letter $s$ sits in $B$, so it sits in the union and cannot sit in the complement. The claim matches,
+
+So the statement is True.`
+
       `**B.** → True
 
-The overview listed $A^c=\\{s,t,u\\}$ and $B^c=\\{p,q,t,u\\}$. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The overview listed 
+
+$$A^c=\\{s,t,u\\}$$
+
+ and 
+
+$$B^c=\\{p,q,t,u\\}$$
+
+. Their intersection is $\\{t,u\\}$, matching $(A\\cup B)^c$. Letter $s$ fails the intersection because $s\\in B$. De Morgan's first law is that agreement.
+
+So the statement is True.`
+
       `**C.** → True
 
-The overview listed $A\\cap B=\\{r\\}$, so $(A\\cap B)^c$ is every letter of $U$ except $r$. Joining the two complements produces the same five letters $\\{p,q,s,t,u\\}$. Letter $p$ misses $B$ and letter $s$ misses $A$; each escapes the intersection by escaping one set. The two sides agree, so the statement is True.`,
+The overview listed $A\\cap B=\\{r\\}$, so $(A\\cap B)^c$ is every letter of $U$ except $r$. Joining the two complements produces the same five letters $\\{p,q,s,t,u\\}$. Letter $p$ misses $B$ and letter $s$ misses $A$; each escapes the intersection by escaping one set. The two sides agree,
+
+So the statement is True.`
+
       `**D.** → True
 
-Drop $p,q,r$ from $U$ and $\\{s,t,u\\}$ remain. The overview already recorded $A^c=\\{s,t,u\\}$. Complement does not also drop $s$ just because $s\\in B$; that would be $A^c\\cap B^c$. The claim matches, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+Drop $p,q,r$ from $U$ and $\\{s,t,u\\}$ remain. The overview already recorded $A^c=\\{s,t,u\\}$. Complement does not also drop $s$ just because $s\\in B$; that would be $A^c\\cap B^c$. The claim matches.
+
+So the statement is True.`
+
       `**E.** → True
 
-Remove the single shared letter $r$ from $U$ and $\\{p,q,s,t,u\\}$ stay. Letters $p$ and $q$ stay because they miss $B$; $s$ stays because it misses $A$. The claimed five-letter list matches $(A\\cap B)^c$, so the statement is True.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+Remove the single shared letter $r$ from $U$ and $\\{p,q,s,t,u\\}$ stay. Letters $p$ and $q$ stay because they miss $B$; $s$ stays because it misses $A$. The claimed five-letter list matches $(A\\cap B)^c$.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
@@ -1884,23 +2894,49 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted $\\lvert A\\times B\\rvert=2\\cdot 3=6$. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already counted 
+
+$$\\lvert A\\times B\\rvert=2\\cdot 3=6$$
+
+. Product size is the number of cells, not the number of distinct symbols used. Two rows and three columns are six ordered pairs.
+
+So the statement is True.`
+
       `**B.** → True
 
-The pair $(1,x)$ has first slot from $A$ and second from $B$, so both membership tests succeed. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; this letter is the number-first pair, so $(1,x)\\in A\\times B$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+The pair $(1,x)$ has first slot from $A$ and second from $B$, so both membership tests succeed. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; this letter is the number-first pair, so $(1,x)\\in A\\times B$.
+
+So the statement is True.`
+
       `**C.** → False
 
-The pair $(x,1)$ has a letter in the first slot, and $x\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The pair $(x,1)$ has a letter in the first slot, and $x\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects.
+
+So the statement is False.`
+
       `**D.** → False
 
-Every pair in $A\\times B$ reads (number, letter); every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ sits in the first product and cannot sit in the second, because $1\\notin B$. Set equality needs identical members, not identical counts, so the statement is False.`,
+Every pair in $A\\times B$ reads (number, letter); every pair in $B\\times A$ reads (letter, number). In particular $(1,x)$ sits in the first product and cannot sit in the second, because $1\\notin B$. Set equality needs identical members, not identical counts,
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Size ignores order: $2\\cdot 3=6$ and $3\\cdot 2=6$. Both products hold six pairs even though the pairs themselves differ:
 
 $$\\lvert A\\times B\\rvert=\\lvert B\\times A\\rvert=6.$$
 
-The counts agree, so the statement is True.`,
+The counts agree.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -1933,23 +2969,49 @@ Turning the grid on its side produces $B\\times A$, same count, different member
     tactical_explanations: [
       `**A.** → True
 
-The overview already counted $3\\cdot 2=6$ letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already counted 
+
+$$3\\cdot 2=6$$
+
+ letter-first pairs. Product size counts ordered pairs, not the five symbols $m,n,p,1,2$. Three letters with two numbers each give six cells.
+
+So the statement is True.`
+
       `**B.** → True
 
-Membership in $A\\times B$ is a two-slot test. For $(m,1)$ both slots succeed: $m\\in A$ and $1\\in B$. That is the letter-first convention in this stem, so $(m,1)\\in A\\times B$, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+Membership in $A\\times B$ is a two-slot test. For $(m,1)$ both slots succeed: $m\\in A$ and $1\\in B$. That is the letter-first convention in this stem, so $(m,1)\\in A\\times B$.
+
+So the statement is True.`
+
       `**C.** → False
 
-The pair $(1,m)$ puts a number first, and $1\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). The product $A\\times B$ is six letter-first pairs; none begins with $1$, so the statement is False.`,
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
+
+The pair $(1,m)$ puts a number first, and $1\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). The product $A\\times B$ is six letter-first pairs; none begins with $1$.
+
+So the statement is False.`
+
       `**D.** → False
 
-$A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is on the first list and missing from the second, because $m\\notin B$. Set equality needs identical members, not identical counts. The two products share no pair, so the statement is False.`,
+$A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is on the first list and missing from the second, because $m\\notin B$. Set equality needs identical members, not identical counts. The two products share no pair,
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 The product rule is commutative as a count:
 
 $$3\\cdot 2=6,\\qquad 2\\cdot 3=6.$$
 
-The counts agree while the member lists share no pair, so the statement is True.`,
+The counts agree while the member lists share no pair.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 15,
@@ -1980,35 +3042,51 @@ $$\\lvert A\\times B\\rvert=3\\cdot 2=6.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Shared $3,5,7$ leave $A$; $1$ and $9$ stay because they miss $B$. The overview already placed those two in the $A$-only bucket, so $A\\setminus B=\\{1,9\\}$. The claimed leftover matches, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Shared $3,5,7$ leave $A$; $1$ and $9$ stay because they miss $B$. The overview already placed those two in the $A$-only bucket, so $A\\setminus B=\\{1,9\\}$. The claimed leftover matches.
+
+So the statement is True.`
+
       `**B.** → True
 
 Difference $B\\setminus A$ lives inside $B$. The shared triple $3,5,7$ leaves $B$ because those numbers sit in $A$. The private $11$ and $13$ miss $A$, so they stay:
 
 $$B\\setminus A=\\{11,13\\}.$$
 
-The claimed leftover matches, so the statement is True.`,
+The claimed leftover matches,
+
+So the statement is True.`
+
       `**C.** → True
 
 Symmetric difference joins the two outer piles. The overview listed $A\\setminus B=\\{1,9\\}$ and $B\\setminus A=\\{11,13\\}$, so
 
 $$A\\triangle B=\\{1,9,11,13\\}.$$
 
-Each of those four sits in exactly one of the original sets. Including $3$ would keep the overlap, which $A\\triangle B$ rejects. The claim matches, so the statement is True.`,
+Each of those four sits in exactly one of the original sets. Including $3$ would keep the overlap, which $A\\triangle B$ rejects. The claim matches,.
+
+So the statement is True.`
+
       `**D.** → True
 
 A number in $A\\setminus B$ is outside $B$; a number in $B\\setminus A$ is inside $B$. Those demands cannot hold together, so
 
 $$(A\\setminus B)\\cap(B\\setminus A)=\\emptyset.$$
 
-The two leftover piles are disjoint by construction, so the statement is True.`,
+The two leftover piles are disjoint by construction,
+
+So the statement is True.`
+
       `**E.** → False
 
 Union keeps the middle bucket $\\{3,5,7\\}$; symmetric difference throws it away:
 
 $$A\\triangle B=\\{1,9,11,13\\},\\qquad A\\cup B=\\{1,3,5,7,9,11,13\\}.$$
 
-The two operations differ by exactly the overlap. They would agree only if $A$ and $B$ were disjoint. They share $3,5,7$, so the statement is False.`,
+The two operations differ by exactly the overlap. They would agree only if $A$ and $B$ were disjoint. They share $3,5,7$,
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 16,
@@ -2039,39 +3117,61 @@ $$A\\setminus B=\\{1,9\\},\\qquad A\\cap B=\\{3,5,7\\},\\qquad B\\setminus A=\\{
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 $A$ is evens and $B$ is odds, so they share nothing. Subtracting $B$ from $A$ therefore deletes nobody:
 
 $$A\\setminus B=A=\\{2,4,6\\}.$$
 
-Empty overlap empties the middle cell, not the left cell. The claimed leftover matches, so the statement is True.`,
+Empty overlap empties the middle cell, not the left cell. The claimed leftover matches.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 None of $B$'s odds is even, so nothing is deleted:
 
 $$B\\setminus A=B=\\{1,3,5\\}.$$
 
-The three odds all miss $A$, so they all stay. The claimed leftover matches, so the statement is True.`,
+The three odds all miss $A$, so they all stay. The claimed leftover matches.
+
+So the statement is True.`
+
       `**C.** → True
 
 With an empty middle bucket, symmetric difference is the two whole sets glued together:
 
 $$A\\triangle B=\\{2,4,6\\}\\cup\\{1,3,5\\}=\\{1,2,3,4,5,6\\}.$$
 
-Each of the six numbers sits in exactly one of $A$ or $B$. The claim matches, so the statement is True.`,
+Each of the six numbers sits in exactly one of $A$ or $B$. The claim matches,
+
+So the statement is True.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The leftovers are the two whole sets, evens and odds. No even equals an odd, so their intersection is empty:
 
 $$(A\\setminus B)\\cap(B\\setminus A)=A\\cap B=\\emptyset.$$
 
-Two nonempty leftovers need not overlap, so the statement is True.`,
+Two nonempty leftovers need not overlap.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Here the shared part is empty, so there is nothing extra for the union to add:
 
 $$A\\triangle B=\\{1,2,3,4,5,6\\}=A\\cup B.$$
 
-Disjointness is exactly the situation in which $A\\triangle B=A\\cup B$, so the statement is True.`,
+Disjointness is exactly the situation in which $A\\triangle B=A\\cup B$.
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 17,
@@ -2100,31 +3200,55 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. The overview already recovered $\\lvert A\\cup B\\rvert=31$. The claim is that same figure, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. The overview already recovered 
+
+$$\\lvert A\\cup B\\rvert=31$$
+
+. The claim is that same figure.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Chess-only is the chess headline minus the overlap:
 
 $$22-6=16.$$
 
-Those $16$ sit in $A$ and not in $B$. Reporting $22$ would keep the six who also play checkers. The claim is $16$, so the statement is True.`,
+Those $16$ sit in $A$ and not in $B$. Reporting $22$ would keep the six who also play checkers. The claim is $16$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Neither is the club total minus the union. The overview recovered the union $31$, so
 
 $$40-31=9.$$
 
-The leftover outside both circles is $9$, so the statement is True.`,
+The leftover outside both circles is $9$.
+
+So the statement is True.`
+
       `**D.** → False
 
-Everyone playing both games is already someone playing at least one, so $A\\cap B\\subseteq A\\cup B$ always. Compare the two sizes: $\\lvert A\\cap B\\rvert=6$ and $\\lvert A\\cup B\\rvert=31$. Already $6<31$. Intersection cannot outnumber the union that contains it, so the statement is False.`,
+Everyone playing both games is already someone playing at least one, so $A\\cap B\\subseteq A\\cup B$ always. Compare the two sizes: $\\lvert A\\cap B\\rvert=6$ and $\\lvert A\\cup B\\rvert=31$. Already $6<31$. Intersection cannot outnumber the union that contains it,
+
+So the statement is False.`
+
       `**E.** → True
 
 Checkers-only is the checkers headline minus the overlap:
 
 $$15-6=9.$$
 
-Those $9$ sit in $B$ and not in $A$, still inside the union. The neither-cell's $9$ sit outside the union. Same size, different membership tests. The claim is the checkers-only count $9$, so the statement is True.`,
+Those $9$ sit in $B$ and not in $A$, still inside the union. The neither-cell's $9$ sit outside the union. Same size, different membership tests. The claim is the checkers-only count $9$,
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -2157,35 +3281,61 @@ Chess-only is the chess headline minus the overlap; checkers-only is the checker
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $|A\\cup B|=50$. The claim is that same figure, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already recovered the shared figure
+
+$$|A\\cup B|=50$$
+
+The claim asserts that same value. Comparing the two sides.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Spanish-only peels the overlap out of $A$:
 
 $$34-12=22$$
 
-The claim is $22$, so the statement is True.`,
+The claim is $22$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Neither is the leftover outside the union. The overview recovered $|A\\cup B|=50$, and the cohort has $60$ students:
 
 $$60-50=10$$
 
-The claim is $10$, so the statement is True.`,
+The claim is $10$.
+
+So the statement is True.`
+
       `**D.** → False
 
 The intersection is a subset of the union, so its size cannot exceed the union size. The overview recovered $|A\\cap B|=12$ and $|A\\cup B|=50$:
 
 $$12<50$$
 
-The claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way, so the statement is False.`,
+The claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way,
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 French-only peels the overlap out of $B$:
 
 $$28-12=16$$
 
-The claim is $16$, so the statement is True.`,
+The claim is $16$.
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -2216,35 +3366,61 @@ Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is th
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $|A\\cup B|=33$. The claim is that same figure, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already recovered the shared figure
+
+$$|A\\cup B|=33$$
+
+The claim asserts that same value. Comparing the two sides.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Pool-only peels the overlap out of $A$:
 
 $$20-5=15$$
 
-The claim is $15$, so the statement is True.`,
+The claim is $15$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Neither is the leftover outside the union. The overview recovered $|A\\cup B|=33$, and the gym has $50$ members:
 
 $$50-33=17$$
 
-The claim is $17$, so the statement is True.`,
+The claim is $17$.
+
+So the statement is True.`
+
       `**D.** → False
 
 The intersection is a subset of the union, so its size cannot exceed the union size. The overview recovered $|A\\cap B|=5$ and $|A\\cup B|=33$:
 
 $$5<33$$
 
-The claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way, so the statement is False.`,
+The claim needs $|A\\cap B|>|A\\cup B|$. The inequality runs the other way,
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Sauna-only peels the overlap out of $B$:
 
 $$18-5=13$$
 
-The claim is $13$, so the statement is True.`,
+The claim is $13$.
+
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 20,
@@ -2275,27 +3451,63 @@ Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is member
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $|A\\cup B\\cup C|=53$. The claim is that same figure, so the statement is True.`,
+Read the claim against the definition, then check membership or equality one object at a time.
+
+The overview already recovered the shared figure
+
+$$|A\\cup B\\cup C|=53$$
+
+The claim asserts that same value. Comparing the two sides.
+
+So the statement is True.`
+
       `**B.** → True
 
-Anyone who does all three activities does each pair, so those $3$ people already sit inside $|A\\cap B|$, $|A\\cap C|$, and $|B\\cap C|$. The claim is that containment, so the statement is True.`,
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
+
+Anyone who does all three activities does each pair, so those $3$ people already sit inside $|A\\cap B|$, $|A\\cap C|$, and $|B\\cap C|$. The claim is that containment.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The pairwise total $|A\\cap B|=10$ still includes the cooks. Removing the triple isolates photography and hiking but not cooking:
 
 $$10-3=7$$
 
-The claim is $7$, so the statement is True.`,
+The claim is $7$.
+
+So the statement is True.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The triple group is a subset of each pair, so its size cannot exceed any pairwise size:
 
 $$3\\le 10,\\qquad 3\\le 8,\\qquad 3\\le 7$$
 
-Hence $3\\le\\min(10,8,7)$. The claimed inequality holds, so the statement is True.`,
+Hence $3\\le\\min(10,8,7)$. The claimed inequality holds.
+
+So the statement is True.`
+
       `**E.** → False
 
-The overview recovered $|A|+|B|+|C|=75$ on the way to $|A\\cup B\\cup C|=53$. Already $53<75$. The claim needs $53>75$. The inequality runs the other way, so the statement is False.`,
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+
+The overview recovered 
+
+$$|A|+|B|+|C|=75$$
+
+ on the way to 
+
+$$|A\\cup B\\cup C|=53$$
+
+. Already $53<75$. The claim needs $53>75$. The inequality runs the other way.
+
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 21,
@@ -2330,18 +3542,28 @@ An exact-pair region is the pairwise total minus the triple. The triple group si
     tactical_explanations: [
       `**A.** → False
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Conjunction is true only when both inputs are true. The overview recovered $P$ true and $Q$ false, so
 
 $$P\\land Q=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-The claim says this conjunction is true, but its value is false, so the statement is False.`,
+The claim says this conjunction is true, but its value is false.
+
+So the statement is False.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Inclusive or is true when at least one input is true. The overview recovered $P$ true and $Q$ false, so
 
 $$P\\lor Q=\\mathrm{T}\\lor\\mathrm{F}=\\mathrm{T}$$
 
-The claim says this disjunction is true, and its value is true, so the statement is True.`,
+The claim says this disjunction is true, and its value is true.
+
+So the statement is True.`
+
       `**C.** → True
 
 Negation reverses the truth value of the complete conjunction. First evaluate the conjunction:
@@ -2352,14 +3574,20 @@ Then negate that result:
 
 $$\\neg(P\\land Q)=\\neg\\mathrm{F}=\\mathrm{T}$$
 
-The claim says the conjunction is not true, and the negated expression is true, so the statement is True.`,
+The claim says the conjunction is not true, and the negated expression is true,.
+
+So the statement is True.`
+
       `**D.** → False
 
 "Neither prime nor even" means that both propositions are false. The overview recovered $P$ true and $Q$ false, so
 
 $$\\neg P\\land\\neg Q=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The claim says this expression is true, but its value is false, so the statement is False.`,
+The claim says this expression is true, but its value is false,
+
+So the statement is False.`
+
       `**E.** → False
 
 Negation reverses the truth value of the complete disjunction. First evaluate the disjunction:
@@ -2370,7 +3598,9 @@ Then negate that result:
 
 $$\\neg(P\\lor Q)=\\neg\\mathrm{T}=\\mathrm{F}$$
 
-The claim says the negated disjunction is true, but its value is false, so the statement is False.`,
+The claim says the negated disjunction is true, but its value is false,
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -2405,7 +3635,10 @@ That contradicts primality. Hence every prime in the stated domain is odd:
 
 $$\\forall p\\,((\\mathrm{Prime}(p)\\land p>2)\\Rightarrow\\mathrm{Odd}(p))$$
 
-The universal claim is therefore True.`,
+The universal claim is therefore True.
+
+So the statement is True.`
+
       `**B.** → False
 
 A counterexample must satisfy the domain conditions and fail the conclusion. Although $2$ is prime and not odd, it fails the strict domain test:
@@ -2418,21 +3651,32 @@ $$\\mathrm{Prime}(2)\\land(2>2)\\land\\neg\\mathrm{Odd}(2)
 =\\mathrm{T}\\land\\mathrm{F}\\land\\mathrm{T}
 =\\mathrm{F}$$
 
-The number $2$ is outside the quantified range, so it is not a counterexample and the statement is False.`,
+The number $2$ is outside the quantified range, so it is not a counterexample and.
+
+So the statement is False.`
+
       `**C.** → True
 
 Negating $\\forall p>2\\,(\\mathrm{Prime}(p)\\Rightarrow\\mathrm{Odd}(p))$ produces an existential with the conclusion flipped, still restricted to $p>2$:
 
 $$\\exists p>2\\,(\\mathrm{Prime}(p)\\land\\mathrm{Even}(p))$$
 
-The quoted sentence is that negation, so the statement is True.`,
+The quoted sentence is that negation,
+
+So the statement is True.`
+
       `**D.** → False
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The converse says every odd number greater than $2$ is prime. Test $9$:
 
 $$9>2,\\qquad 9=3\\cdot 3$$
 
-The number $9$ is odd and composite. One counterexample kills the converse, so the statement is False.`,
+The number $9$ is odd and composite. One counterexample kills the converse.
+
+So the statement is False.`
+
       `**E.** → True
 
 Euclid's theorem says that the set $\\mathbb P$ of all primes is infinite. The primes greater than $2$ are exactly
@@ -2443,7 +3687,9 @@ If this remaining set were finite, adding the one omitted prime would make
 
 $$\\mathbb P=(\\mathbb P\\setminus\\{2\\})\\cup\\{2\\}$$
 
-finite, contradicting Euclid's theorem. Therefore infinitely many primes are greater than $2$, so the statement is True.`,
+finite, contradicting Euclid's theorem. Therefore infinitely many primes are greater than $2$,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -2484,7 +3730,10 @@ Maria's enrolment makes $A=\\mathrm{T}$. Modus ponens evaluates the required con
 
 $$A=\\mathrm{T},\\quad A\\Rightarrow I\\quad\\Longrightarrow\\quad I=\\mathrm{T}$$
 
-Maria has passed Intermediate, so the statement is True.`,
+Maria has passed Intermediate,.
+
+So the statement is True.`
+
       `**B.** → True
 
 Let $P$ mean that Maria passed Principles. The two prerequisite rules form
@@ -2495,7 +3744,10 @@ Since Maria has $A=\\mathrm{T}$, apply the implications in order:
 
 $$A=\\mathrm{T}\\Longrightarrow I=\\mathrm{T}\\Longrightarrow P=\\mathrm{T}$$
 
-The second rule therefore forces Maria to have passed Principles, so the statement is True.`,
+The second rule therefore forces Maria to have passed Principles,.
+
+So the statement is True.`
+
       `**C.** → True
 
 Compose the prerequisite implications:
@@ -2508,7 +3760,10 @@ The resulting arrow says that whenever Advanced enrolment is true, passing Princ
 
 $$A=\\mathrm{T}\\quad\\Longrightarrow\\quad P=\\mathrm{T}$$
 
-That makes Principles a necessary condition for Advanced enrolment, so the statement is True.`,
+That makes Principles a necessary condition for Advanced enrolment,.
+
+So the statement is True.`
+
       `**D.** → False
 
 Calling Principles sufficient for Advanced would reverse the established chain and require
@@ -2523,7 +3778,10 @@ Both original rules hold vacuously because their antecedents are false, but the 
 
 $$P\\Rightarrow A=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Passing Principles alone is not sufficient for Advanced enrolment, so the statement is False.`,
+Passing Principles alone is not sufficient for Advanced enrolment,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The rules permit only the pass/fail chain
@@ -2534,7 +3792,9 @@ Here $P(M)=\\mathrm{T}$ means only “Maria passed Principles.” It does not en
 
 $$P(M)=\\mathrm{T}\\not\\Rightarrow \\mathrm{Grade}(M)=100\\%$$
 
-Maria could have earned any passing mark. A perfect grade cannot be inferred, so the statement is False.`,
+Maria could have earned any passing mark. A perfect grade cannot be inferred,.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -2563,18 +3823,28 @@ Maria is enrolled in Advanced, so both arrows fire: she has passed Intermediate,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Scan $P$ against $E$. The only shared member is the even prime $2$:
 
 $$P\\cap E=\\{2\\}$$
 
-The claim is that singleton, so the statement is True.`,
+The claim is that singleton.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Difference $P\\setminus E$ deletes a member of $P$ only when it also sits in $E$. Throwing $2$ out of $P$ leaves
 
 $$P\\setminus E=\\{3,5,7,11,13\\}$$
 
-The claim is that roster, so the statement is True.`,
+The claim is that roster.
+
+So the statement is True.`
+
       `**C.** → False
 
 A universal claim over $P$ must work for every listed prime. Test the member $x=2$:
@@ -2587,7 +3857,10 @@ $$2\\in P\\Rightarrow\\mathrm{Odd}(2)
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-This one counterexample disproves “every $x\\in P$ is odd,” so the statement is False.`,
+This one counterexample disproves “every $x\\in P$ is odd,”.
+
+So the statement is False.`
+
       `**D.** → True
 
 The antecedent restricts attention to members of $P$ other than $2$:
@@ -2600,7 +3873,10 @@ $$(2\\in P\\land2\\ne2)\\Rightarrow\\mathrm{Odd}(2)
 =\\mathrm{F}\\Rightarrow\\mathrm{F}
 =\\mathrm{T}$$
 
-Thus no $x$ gives a true antecedent and false conclusion. The universal implication is True.`,
+Thus no $x$ gives a true antecedent and false conclusion. The universal implication is True.
+
+So the statement is True.`
+
       `**E.** → False
 
 The subset claim means
@@ -2618,7 +3894,9 @@ $$3\\in P\\Rightarrow3\\in E
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-One member of $P$ outside $E$ disproves the subset claim, so the statement is False.`,
+One member of $P$ outside $E$ disproves the subset claim,.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -2651,7 +3929,10 @@ Thus
 
 $$P\\Rightarrow Q$$
 
-holds for every real $x$. Since a sufficient condition is the antecedent of a guaranteed implication, $x>10$ is sufficient for $x>5$, so the statement is True.`,
+holds for every real $x$. Since a sufficient condition is the antecedent of a guaranteed implication, $x>10$ is sufficient for $x>5$,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Necessity of $x>10$ for $x>5$ would require $Q\\Rightarrow P$. Test $x=7$ in the hypothesis:
@@ -2662,7 +3943,10 @@ Now test the required conclusion:
 
 $$7\\not>10$$
 
-This witness makes $Q$ true and $P$ false. The implication $Q\\Rightarrow P$ fails, so the statement is False.`,
+This witness makes $Q$ true and $P$ false. The implication $Q\\Rightarrow P$ fails,
+
+So the statement is False.`
+
       `**C.** → True
 
 “$x>5$ is necessary for $x>10$” means that whenever $x>10$ holds, $x>5$ must hold:
@@ -2673,7 +3957,10 @@ There is no real number with the forbidden truth pattern
 
 $$x>10=\\mathrm{T},\\qquad x>5=\\mathrm{F}$$
 
-because every number above $10$ is automatically above $5$. Therefore $x>5$ is a necessary condition for $x>10$, so the statement is True.`,
+because every number above $10$ is automatically above $5$. Therefore $x>5$ is a necessary condition for $x>10$,.
+
+So the statement is True.`
+
       `**D.** → False
 
 Equivalence requires both implications to hold:
@@ -2684,8 +3971,13 @@ The overview recovered $P\\Rightarrow Q$. For the reverse direction, use $x=7$:
 
 $$7>5,\\qquad 7\\not>10$$
 
-Thus $Q\\Rightarrow P$ fails. The two conditions are not equivalent, so the statement is False.`,
+Thus $Q\\Rightarrow P$ fails. The two conditions are not equivalent,.
+
+So the statement is False.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 A counterexample to $Q\\Rightarrow P$ must satisfy $Q\\land\\neg P$. For $x=7$,
 
@@ -2695,7 +3987,9 @@ but
 
 $$7\\not>10$$
 
-The named value makes the hypothesis true and the conclusion false. It is a counterexample, so the statement is True.`,
+The named value makes the hypothesis true and the conclusion false. It is a counterexample.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -2732,7 +4026,10 @@ Therefore
 
 $$R(P)=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 
-The claim says P satisfies both required conditions, so the statement is True.`,
+The claim says P satisfies both required conditions,
+
+So the statement is True.`
+
       `**B.** → False
 
 Let $L$ mean “the loan is approved” and $R$ mean “both required tests hold.” The bank gives only
@@ -2741,15 +4038,18 @@ $$L\\Rightarrow R$$
 
 Applicant P has $R(P)=\\mathrm{T}$, but that truth value does not determine $L(P)$. Both rows
 
-$$L(P)=\\mathrm{T},\ R(P)=\\mathrm{T}
+$$L(P)=\\mathrm{T},\\ R(P)=\\mathrm{T}
 \\qquad\\text{and}\\qquad
-L(P)=\\mathrm{F},\ R(P)=\\mathrm{T}$$
+L(P)=\\mathrm{F},\\ R(P)=\\mathrm{T}$$
 
 satisfy $L\\Rightarrow R$. Concluding approval would use the unsupported converse
 
 $$R\\Rightarrow L$$
 
-so P's approval cannot be concluded and the statement is False.`,
+so P's approval cannot be concluded and.
+
+So the statement is False.`
+
       `**C.** → True
 
 Conjunction fails when either required test fails. Applicant Q clears the score test:
@@ -2764,7 +4064,10 @@ Thus
 
 $$R(Q)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-The claim says Q does not satisfy both required conditions, so the statement is True.`,
+The claim says Q does not satisfy both required conditions,
+
+So the statement is True.`
+
       `**D.** → True
 
 The contrapositive gives a valid inference from a failed necessary condition:
@@ -2779,7 +4082,10 @@ Applying the contrapositive gives
 
 $$\\neg R(Q)\\Rightarrow\\neg L(Q)$$
 
-Q's loan is therefore not approved, so the statement is True.`,
+Q's loan is therefore not approved,.
+
+So the statement is True.`
+
       `**E.** → False
 
 A ratio below $40\\%$ is only one part of the required conjunction. Consider an applicant with score $650$ and ratio $30\\%$:
@@ -2790,7 +4096,9 @@ The full requirement evaluates to
 
 $$R=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The contrapositive of $L\\Rightarrow R$ then gives $\\neg R\\Rightarrow\\neg L$, so this applicant cannot be approved. A low ratio does not guarantee approval, so the statement is False.`,
+The contrapositive of $L\\Rightarrow R$ then gives $\\neg R\\Rightarrow\\neg L$, so this applicant cannot be approved. A low ratio does not guarantee approval,.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 6,
@@ -2817,11 +4125,16 @@ So $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in 
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Negating a universal produces an existential of the negated predicate. The inequality $\\ge$ flips to $<$:
 
 $$\\neg\\forall x\\,(x^{2}\\ge 0)\\equiv\\exists x\\,(x^{2}<0)$$
 
-The quoted sentence is that negation, so the statement is True.`,
+The quoted sentence is that negation.
+
+So the statement is True.`
+
       `**B.** → False
 
 For every real number, squaring produces a nonnegative result:
@@ -2836,28 +4149,43 @@ which contradicts that fact. Hence the real solution set is empty:
 
 $$\\{x\\in\\mathbb R:x^{2}=-1\\}=\\varnothing$$
 
-The existential statement has no real witness, so it is False.`,
+The existential statement has no real witness, so it is False.
+
+So the statement is False.`
+
       `**C.** → True
 
 Negating an existential produces a universal of the negated predicate. The inequality $>$ flips to $\\le$, including the boundary $100$:
 
 $$\\neg\\exists x\\,(x>100)\\equiv\\forall x\\,(x\\le 100)$$
 
-The quoted sentence is that negation, so the statement is True.`,
+The quoted sentence is that negation,
+
+So the statement is True.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Because $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every $x>0$:
 
 $$x+1>x$$
 
-Each $x$ gets its own $y$, so the statement is True.`,
+Each $x$ gets its own $y$.
+
+So the statement is True.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Now a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered,
 
 $$x=\\max(y+1,1)$$
 
-is a positive number bigger than it. No champion exists, so the statement is False.`,
+is a positive number bigger than it. No champion exists.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 7,
@@ -2894,7 +4222,10 @@ Patient R has $D$ true, so modus ponens gives
 
 $$A(R)\\land B(R)=\\mathrm{T}$$
 
-The claim allows R to have symptom A without symptom B, which contradicts the required conjunction, so the statement is False.`,
+The claim allows R to have symptom A without symptom B, which contradicts the required conjunction,
+
+So the statement is False.`
+
       `**B.** → False
 
 The contrapositive blocks diagnosis when the required symptom conjunction fails. Patient S has A but not B, so
@@ -2905,7 +4236,10 @@ From the criterion,
 
 $$\\neg(A\\land B)\\Rightarrow\\neg D$$
 
-Patient S therefore cannot be diagnosed with condition X, so the statement is False.`,
+Patient S therefore cannot be diagnosed with condition X,
+
+So the statement is False.`
+
       `**C.** → False
 
 Let $S=A\\land B$ mean that both symptoms are present. Calling $S$ sufficient would require the reverse implication
@@ -2920,7 +4254,10 @@ For that allowed case,
 
 $$S\\Rightarrow D=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Both symptoms are necessary but not sufficient for diagnosis, so the statement is False.`,
+Both symptoms are necessary but not sufficient for diagnosis,.
+
+So the statement is False.`
+
       `**D.** → True
 
 The contrapositive blocks diagnosis whenever the required conjunction is false. If symptom A is absent, then for either truth value of B,
@@ -2931,7 +4268,10 @@ Therefore
 
 $$\\neg(A\\land B)\\Rightarrow\\neg D$$
 
-No other symptom can repair the missing A requirement, so the statement is True.`,
+No other symptom can repair the missing A requirement,
+
+So the statement is True.`
+
       `**E.** → False
 
 The criterion gives $D\\Rightarrow(A\\land B)$, but it explicitly denies the converse. A patient may have both symptoms while another condition prevents diagnosis:
@@ -2944,7 +4284,9 @@ $$D\\Rightarrow(A\\land B)
 =\\mathrm{F}\\Rightarrow\\mathrm{T}
 =\\mathrm{T}$$
 
-yet it directly refutes the claim that such a patient is impossible. Therefore the statement is False.`,
+yet it directly refutes the claim that such a patient is impossible. Therefore.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 8,
@@ -2971,19 +4313,29 @@ Patient R holds the diagnosis. Patient S has A but not B.`,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 An existential claim is proved by one witness in the stated universe. Choose $x=15$, which lies in $\\{1,\\ldots,20\\}$:
 
 $$15=3\\cdot5$$
 
-Thus $3\\mid15$ and $5\\mid15$. The required witness exists, so the statement is True.`,
+Thus $3\\mid15$ and $5\\mid15$. The required witness exists.
+
+So the statement is True.`
+
       `**B.** → True
 
 A universal implication is proved by starting with an arbitrary value that satisfies its hypothesis. If $4\\mid x$, then $x=4k$ for some integer $k$, so
 
 $$x=4k=2(2k)$$
 
-Hence $2\\mid x$. This argument covers every multiple of $4$ in the universe, so the statement is True.`,
+Hence $2\\mid x$. This argument covers every multiple of $4$ in the universe,
+
+So the statement is True.`
+
       `**C.** → False
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 A universal implication is disproved by one value with a true hypothesis and false conclusion. Choose $x=2$, which lies in the universe:
 
@@ -2993,21 +4345,29 @@ but
 
 $$\\nexists k\\in\\mathbb{Z}:2=4k$$
 
-Thus $2\\mid2$ while $4\\nmid2$, so the statement is False.`,
+Thus $2\\mid2$ while $4\\nmid2$.
+
+So the statement is False.`
+
       `**D.** → True
 
 An implication fails only where the "if" holds and the "then" fails, so the negation of $\\forall x\\,(\\mathrm{Prime}(x)\\Rightarrow\\mathrm{Odd}(x))$ is
 
 $$\\exists x\\,(\\mathrm{Prime}(x)\\land\\mathrm{Even}(x))$$
 
-still restricted to $\\{1,\\ldots,20\\}$. The quoted sentence is that negation, so the statement is True.`,
+still restricted to $\\{1,\\ldots,20\\}$. The quoted sentence is that negation,
+
+So the statement is True.`
+
       `**E.** → True
 
 The existential negation needs one number in the universe that is both prime and even. Choose $x=2$:
 
 $$2\\in\\{1,\\ldots,20\\},\\qquad \\mathrm{Prime}(2)\\land\\mathrm{Even}(2)$$
 
-The number $2$ has only the positive divisors $1$ and $2$, and it is divisible by $2$. This witness makes the negated statement true, so the statement is True.`,
+The number $2$ has only the positive divisors $1$ and $2$, and it is divisible by $2$. This witness makes the negated statement true,.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -3044,7 +4404,10 @@ and therefore
 
 $$M(2)=\\neg B(2)=\\neg\\mathrm{F}=\\mathrm{T}$$
 
-Person T is a member, so the statement is True.`,
+Person T is a member,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Person U has four violations. Evaluate the banned-list test first:
@@ -3055,7 +4418,10 @@ Membership is exactly the negation of banned status, so
 
 $$M(4)=\\neg B(4)=\\neg\\mathrm{T}=\\mathrm{F}$$
 
-U is not a member. The claim that U is a member is therefore False.`,
+U is not a member. The claim that U is a member is therefore False.
+
+So the statement is False.`
+
       `**C.** → True
 
 The biconditional gives, for every person $x$,
@@ -3066,7 +4432,10 @@ If $B(x)=\\mathrm{T}$, then $M(x)=\\mathrm{F}$; if $B(x)=\\mathrm{F}$, then $M(x
 
 $$M\\cap B=\\varnothing,\\qquad M\\cup B=U$$
 
-where $U$ is the set of all people under the rule. Those two equations say the membership and banned lists are complementary, so the statement is True.`,
+where $U$ is the set of all people under the rule. Those two equations say the membership and banned lists are complementary,.
+
+So the statement is True.`
+
       `**D.** → False
 
 At the boundary value $v=3$, “three or more” is already satisfied:
@@ -3077,7 +4446,10 @@ The membership biconditional then gives
 
 $$M(3)=\\neg B(3)=\\neg\\mathrm{T}=\\mathrm{F}$$
 
-There is no second allowed outcome depending on unstated factors: exactly three violations forces banned status. The statement is False.`,
+There is no second allowed outcome depending on unstated factors: exactly three violations forces banned status.
+
+So the statement is False.`
+
       `**E.** → False
 
 Every possible integer violation count lies on exactly one side of the cutoff:
@@ -3086,11 +4458,13 @@ $$v<3\\quad\\text{or}\\quad v\\ge3$$
 
 The resulting classifications are
 
-$$v<3\\Rightarrow B(v)=\\mathrm{F},\ M(v)=\\mathrm{T}$$
+$$v<3\\Rightarrow B(v)=\\mathrm{F},\\ M(v)=\\mathrm{T}$$
 
-$$v\\ge3\\Rightarrow B(v)=\\mathrm{T},\ M(v)=\\mathrm{F}$$
+$$v\\ge3\\Rightarrow B(v)=\\mathrm{T},\\ M(v)=\\mathrm{F}$$
 
-No count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists, so the statement is False.`,
+No count leaves either truth value undetermined. Therefore no genuinely ambiguous violation count exists,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -3123,7 +4497,10 @@ For “all primes are odd,” a counterexample must satisfy
 
 $$\\mathrm{Prime}(x)\\land\\neg\\mathrm{Odd}(x)$$
 
-Exhibiting one such $x$ makes the existential negation true and the original universal false. Therefore one counterexample is sufficient, so the statement is True.`,
+Exhibiting one such $x$ makes the existential negation true and the original universal false. Therefore one counterexample is sufficient,.
+
+So the statement is True.`
+
       `**B.** → True
 
 The number $2$ is prime because its only positive divisors are $1$ and $2$. It is even, so it is not odd. The counterexample condition evaluates to
@@ -3138,7 +4515,10 @@ $$\\mathrm{Prime}(2)\\Rightarrow\\mathrm{Odd}(2)
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-Thus $2$ is a valid counterexample, so the statement is True.`,
+Thus $2$ is a valid counterexample,.
+
+So the statement is True.`
+
       `**C.** → True
 
 To prove an implication by contradiction, negate the implication:
@@ -3149,7 +4529,10 @@ Thus the proof assumes both
 
 $$P=\\mathrm{T},\\qquad Q=\\mathrm{F}$$
 
-and derives a contradiction. That shows the only truth assignment that could make $P\\Rightarrow Q$ false is impossible, so the implication must hold. The described method is correct, making the statement True.`,
+and derives a contradiction. That shows the only truth assignment that could make $P\\Rightarrow Q$ false is impossible, so the implication must hold. The described method is correct, making the statement True.
+
+So the statement is True.`
+
       `**D.** → False
 
 Let $R$ be the target “$\\sqrt2$ is irrational.” A contradiction proof starts from its negation:
@@ -3160,18 +4543,23 @@ That means assuming integers $a,b$ with $b\\ne0$ and
 
 $$\\sqrt2=\\frac ab$$
 
-usually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong and the statement is False.`,
+usually chosen in lowest terms, and then deriving an impossibility. Starting with $R$ would assume the very conclusion being proved. Therefore the proposed starting assumption is wrong and.
+
+So the statement is False.`
+
       `**E.** → False
 
 One favourable example proves only an existential statement:
 
-$$P(a)=\\mathrm{T}\\quad\\Longrightarrow\\quad\\exists x\,P(x)$$
+$$P(a)=\\mathrm{T}\\quad\\Longrightarrow\\quad\\exists x\\,P(x)$$
 
 It does not establish the universal
 
-$$\\forall x\,P(x)$$
+$$\\forall x\\,P(x)$$
 
-For example, $3$ is prime and odd, but that successful check leaves $2$ untested, and $2$ is prime but not odd. A single confirming case cannot rule out a counterexample elsewhere, so the statement is False.`,
+For example, $3$ is prime and odd, but that successful check leaves $2$ untested, and $2$ is prime but not odd. A single confirming case cannot rule out a counterexample elsewhere,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -3206,7 +4594,10 @@ This formula is true exactly when it rains and the picnic is not cancelled:
 
 $$P\\land\\neg Q=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 
-The quoted sentence is precisely the negation, so the statement is True.`,
+The quoted sentence is precisely the negation,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The converse $Q\\Rightarrow P$ fails when cancellation occurs without rain. On the overview's dry venue-conflict day,
@@ -3217,7 +4608,10 @@ The original rule is still true on that day because its hypothesis is false:
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-The two implications have different truth values there. The converse is not guaranteed, so the statement is False.`,
+The two implications have different truth values there. The converse is not guaranteed,.
+
+So the statement is False.`
+
       `**C.** → False
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ fails on a dry day when the picnic is cancelled for another reason. For the venue-conflict day,
@@ -3228,7 +4622,10 @@ The original remains true:
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-One situation separates their truth values. The inverse is not equivalent to the original, so the statement is False.`,
+One situation separates their truth values. The inverse is not equivalent to the original,.
+
+So the statement is False.`
+
       `**D.** → True
 
 An implication is false only when its hypothesis is true and its conclusion is false. On the venue-conflict day, $P$ is false and $Q$ is true, so
@@ -3239,7 +4636,10 @@ while
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-The day contradicts the inverse but not the organizer's rule, so the statement is True.`,
+The day contradicts the inverse but not the organizer's rule,.
+
+So the statement is True.`
+
       `**E.** → True
 
 Form the contrapositive by swapping the two propositions and negating both:
@@ -3259,7 +4659,9 @@ $$\\neg Q\\Rightarrow\\neg P
 \\equiv\\neg P\\lor Q
 \\equiv P\\Rightarrow Q$$
 
-The quoted contrapositive is guaranteed whenever the original rule holds, so the statement is True.`,
+The quoted contrapositive is guaranteed whenever the original rule holds,.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 12,
@@ -3298,21 +4700,34 @@ so
 
 $$X\\lor Y=\\mathrm{T}\\lor\\mathrm{T}=\\mathrm{T}$$
 
-All $15$ both-buyers therefore satisfy “bought X or Y.” Mathematical inclusive or includes them, so the statement is True.`,
+All $15$ both-buyers therefore satisfy “bought X or Y.” Mathematical inclusive or includes them,.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
 
 $$|X\\cup Y|=40+35-15=60$$
 
-The claim is $60$, so the statement is True.`,
+The claim is $60$.
+
+So the statement is True.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only is $35-15=20$, so
 
 $$25+20=45$$
 
-The claim is $45$, so the statement is True.`,
+The claim is $45$.
+
+So the statement is True.`
+
       `**D.** → True
 
 A biconditional requires both implications:
@@ -3327,7 +4742,10 @@ $$\\mathrm{T}\\Leftrightarrow\\mathrm{T}=\\mathrm{T},\\qquad
 $$\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F},\\qquad
 \\mathrm{F}\\Leftrightarrow\\mathrm{T}=\\mathrm{F}$$
 
-It is true exactly when the two components have the same truth value, so the statement is True.`,
+It is true exactly when the two components have the same truth value,.
+
+So the statement is True.`
+
       `**E.** → False
 
 “At least one component is true” describes disjunction, not a biconditional. Take the mixed assignment
@@ -3342,7 +4760,9 @@ but the biconditional evaluates differently:
 
 $$P\\Leftrightarrow Q=\\mathrm{T}\\Leftrightarrow\\mathrm{F}=\\mathrm{F}$$
 
-This counterexample disproves the claim, so the statement is False.`,
+This counterexample disproves the claim,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 13,
@@ -3379,7 +4799,10 @@ Therefore
 
 $$A(K)\\land F(K)=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-K fails the conjunction despite clearing attendance, so the statement is False.`,
+K fails the conjunction despite clearing attendance,
+
+So the statement is False.`
+
       `**B.** → False
 
 Passing requires both thresholds, so evaluate Student L's two tests separately:
@@ -3392,14 +4815,20 @@ Therefore
 
 $$A(L)\\land F(L)=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-L fails the conjunction despite the high exam score, so the statement is False.`,
+L fails the conjunction despite the high exam score,
+
+So the statement is False.`
+
       `**C.** → False
 
 Conjunction does not allow one true condition to compensate for a false one. Student L supplies a direct test:
 
 $$A(L)\\land F(L)=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The $90$ exam score makes $F$ true, but $75\\%$ attendance leaves $A$ false. The combined pass condition remains false, so the statement is False.`,
+The $90$ exam score makes $F$ true, but $75\\%$ attendance leaves $A$ false. The combined pass condition remains false,
+
+So the statement is False.`
+
       `**D.** → True
 
 The exam threshold is a conjunct, so any score below $50$ makes the complete pass condition false. If attendance clears but the score does not, then
@@ -3410,7 +4839,10 @@ For Student K,
 
 $$48<50$$
 
-The distance from the cutoff does not change the truth value, so the statement is True.`,
+The distance from the cutoff does not change the truth value,
+
+So the statement is True.`
+
       `**E.** → True
 
 Compare Student X with attendance $80\\%$ and exam score $50$ to Student Y with attendance $79\\%$ and exam score $100$. Their threshold evaluations are
@@ -3425,7 +4857,9 @@ $$\\frac{80+50}{2}=65
 \\quad<\\quad
 \\frac{79+100}{2}=89.5$$
 
-The rule checks each cutoff separately rather than that average, so the described reversal is possible and the statement is True.`,
+The rule checks each cutoff separately rather than that average, so the described reversal is possible and.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 14,
@@ -3454,14 +4888,20 @@ The filter displays an item only when both negated conditions are true. Item M i
 
 $$\\neg S\\land\\neg O=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The filter condition is false for M, so the statement is False.`,
+The filter condition is false for M,
+
+So the statement is False.`
+
       `**B.** → False
 
 The filter displays an item only when both negated conditions are true. Item N is not on sale and is out of stock, so $S$ is false and $O$ is true:
 
 $$\\neg S\\land\\neg O=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-The filter condition is false for N, so the statement is False.`,
+The filter condition is false for N,
+
+So the statement is False.`
+
       `**C.** → False
 
 Logical equivalence requires the two formulas to agree on every truth assignment. For item M, $S$ is true and $O$ is false. The proposed formula gives
@@ -3472,7 +4912,10 @@ The actual filter gives
 
 $$\\neg(S\\lor O)=\\neg(\\mathrm{T}\\lor\\mathrm{F})=\\mathrm{F}$$
 
-The formulas disagree on M. They are not equivalent, so the statement is False.`,
+The formulas disagree on M. They are not equivalent,.
+
+So the statement is False.`
+
       `**D.** → True
 
 Move the outer negation through the parentheses using De Morgan's law:
@@ -3491,14 +4934,19 @@ $$\\neg S\\land\\neg O
 =\\mathrm{T}\\land\\mathrm{T}
 =\\mathrm{T}$$
 
-Thus “not on sale and not out of stock” is the correct equivalent condition, so the statement is True.`,
+Thus “not on sale and not out of stock” is the correct equivalent condition,.
+
+So the statement is True.`
+
       `**E.** → True
 
 The filter displays an item when both negated conditions are true. Item K is not on sale and is in stock, so $S$ and $O$ are both false:
 
 $$\\neg S\\land\\neg O=\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 
-The filter condition is true for K, so the statement is True.`,
+The filter condition is true for K,
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 15,
@@ -3538,7 +4986,10 @@ The negation of the strict inequality is
 $$\\neg(\\mathrm{inflation}>10\\%)\\equiv
 \\mathrm{inflation}\\le10\\%$$
 
-Therefore the contrapositive says “if rates are not raised, inflation is at most $10\\%$,” exactly as claimed. The statement is True.`,
+Therefore the contrapositive says “if rates are not raised, inflation is at most $10\\%$,” exactly as claimed.
+
+So the statement is True.`
+
       `**B.** → False
 
 The converse reverses the arrow:
@@ -3553,7 +5004,10 @@ but the converse evaluates to
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Because one assignment gives different truth values, the converse is not logically equivalent to the original. The statement is False.`,
+Because one assignment gives different truth values, the converse is not logically equivalent to the original.
+
+So the statement is False.`
+
       `**C.** → True
 
 “$P$ is sufficient for $Q$” means that every time $P$ is true, $Q$ must be true:
@@ -3566,7 +5020,10 @@ $$\\mathrm{inflation}>10\\%
 \\quad\\Longrightarrow\\quad
 \\text{bank raises rates}$$
 
-Thus the truth pattern $P=\\mathrm{T},Q=\\mathrm{F}$ is ruled out by the premise. Inflation above $10\\%$ is sufficient for a rate rise, so the statement is True.`,
+Thus the truth pattern $P=\\mathrm{T},Q=\\mathrm{F}$ is ruled out by the premise. Inflation above $10\\%$ is sufficient for a rate rise,.
+
+So the statement is True.`
+
       `**D.** → False
 
 Calling high inflation necessary for a rate rise would require
@@ -3581,7 +5038,10 @@ so the proposed necessity evaluates as
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The original $P\\Rightarrow Q$ remains true on this row because $P$ is false. High inflation is not established as necessary, so the statement is False.`,
+The original $P\\Rightarrow Q$ remains true on this row because $P$ is false. High inflation is not established as necessary,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The attempted inference has the form
@@ -3597,7 +5057,9 @@ Then both premises are true,
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T},
 \\qquad Q=\\mathrm{T},$$
 
-while the conclusion $P$ is false. The conclusion does not follow, so the statement is False.`,
+while the conclusion $P$ is false. The conclusion does not follow,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 16,
@@ -3634,7 +5096,10 @@ $$P\\Leftrightarrow Q
 \\quad\\Longrightarrow\\quad
 Q=\\mathrm{T}$$
 
-The second proposition is therefore true, so the statement is True.`,
+The second proposition is therefore true,.
+
+So the statement is True.`
+
       `**B.** → True
 
 Letter A gives $Q=\\mathrm{T}$. The second biconditional forces $R$ to match $Q$:
@@ -3647,14 +5112,20 @@ The only matching value is
 
 $$R=\\mathrm{T}$$
 
-Thus the truth of the first proposition travels through both links to the third proposition, so the statement is True.`,
+Thus the truth of the first proposition travels through both links to the third proposition,
+
+So the statement is True.`
+
       `**C.** → True
 
 Biconditional agreement is transitive: matching through the same middle truth value makes the endpoints match. Thus
 
 $$(P\\Leftrightarrow Q)\\land(Q\\Leftrightarrow R)\\Rightarrow(P\\Leftrightarrow R)$$
 
-The premises provide both links. The first and third propositions must have the same truth value, so the statement is True.`,
+The premises provide both links. The first and third propositions must have the same truth value,.
+
+So the statement is True.`
+
       `**D.** → True
 
 Biconditionals force equal truth values in either direction. If $R$ were false, the second link gives
@@ -3665,7 +5136,10 @@ The first link then gives
 
 $$P\\Leftrightarrow Q,\\quad Q=\\mathrm{F}\\quad\\Longrightarrow\\quad P=\\mathrm{F}$$
 
-Thus a false third proposition would force the first false, so the statement is True.`,
+Thus a false third proposition would force the first false,.
+
+So the statement is True.`
+
       `**E.** → False
 
 A claim of sufficiency is disproved by one assignment that satisfies the known condition and fails the conclusion. Choose
@@ -3676,7 +5150,9 @@ Then
 
 $$P\\Leftrightarrow R=\\mathrm{T}$$
 
-but $Q$ does not match either endpoint. Knowing only that $P$ and $R$ match leaves $Q$ free, so the statement is False.`,
+but $Q$ does not match either endpoint. Knowing only that $P$ and $R$ match leaves $Q$ free,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 17,
@@ -3703,11 +5179,16 @@ and the extra fact that $P$ is true travels along it. A true $P$ forces $Q$ true
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 “Cancelled unless $S$” requires cancellation whenever the escape fails. That is the overview’s translation
 
 $$\\neg S \\Rightarrow C$$
 
-The claim is that same implication, so the statement is True.`,
+The claim is that same implication.
+
+So the statement is True.`
+
       `**B.** → False
 
 The proposed implication $S\\Rightarrow\\neg C$ says that a timely stop guarantees no cancellation. Consider a 5 PM rain stop followed by a power failure. Then
@@ -3726,14 +5207,22 @@ $$S\\Rightarrow\\neg C
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-The formulas are not equivalent, so the statement is False.`,
+The formulas are not equivalent,.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 Apply the overview identity to $\\neg S \\Rightarrow C$:
 
 $$\\neg(\\neg S) \\lor C \\equiv S \\lor C$$
 
-OR is symmetric, so $C \\lor S$ is the same formula. Inclusive or still allows $S$ and $C$ together, so the statement is True.`,
+OR is symmetric, so $C \\lor S$ is the same formula. Inclusive or still allows $S$ and $C$ together.
+
+So the statement is True.`
+
       `**D.** → False
 
 When the rain stops before 6 PM, $S=\\mathrm{T}$ and the antecedent $\\neg S$ of the actual rule is false. If a power failure still cancels the concert, then $C=\\mathrm{T}$ and
@@ -3748,14 +5237,19 @@ $$S\\Rightarrow\\neg C
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-The actual rule allows cancellation for another cause after the rain stops, so the statement is False.`,
+The actual rule allows cancellation for another cause after the rain stops,.
+
+So the statement is False.`
+
       `**E.** → True
 
 The contrapositive of $\\neg S \\Rightarrow C$ swaps and negates both sides:
 
 $$\\neg C \\Rightarrow S$$
 
-A concert that went ahead has $\\neg C$, so the rain must have stopped before 6 PM. Contrapositive shares the original truth value, so the statement is True.`,
+A concert that went ahead has $\\neg C$, so the rain must have stopped before 6 PM. Contrapositive shares the original truth value,
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 18,
@@ -3792,14 +5286,20 @@ Rider P is $70$ with no disability and income \\$18,000. Then $A$ is true, $D$ i
 
 $$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{T}) = \\mathrm{T}$$
 
-P qualifies, so the statement is True.`,
+P qualifies,
+
+So the statement is True.`
+
       `**B.** → False
 
 Rider Q is $67$, has a qualifying disability, and earns \\$50,000. Then $A$ is true, $D$ is true, and $L$ is false, so $D \\lor L$ holds on the disability half:
 
 $$A \\land (D \\lor L) = \\mathrm{T} \\land (\\mathrm{T} \\lor \\mathrm{F}) = \\mathrm{T}$$
 
-Q does qualify. High income is not a veto while $D$ is true, so the statement is False.`,
+Q does qualify. High income is not a veto while $D$ is true,.
+
+So the statement is False.`
+
       `**C.** → False
 
 Income below the cutoff, $L$, is joined to disability, $D$, by inclusive OR. Rider Q provides a direct counterexample to automatic disqualification:
@@ -3812,14 +5312,20 @@ $$A\\land(D\\lor L)
 =\\mathrm{T}\\land(\\mathrm{T}\\lor\\mathrm{F})
 =\\mathrm{T}$$
 
-Although Q's income is above $\\$20{,}000$, the disability satisfies the bracket and Q qualifies. The statement is False.`,
+Although Q's income is above $\\$20{,}000$, the disability satisfies the bracket and Q qualifies.
+
+So the statement is False.`
+
       `**D.** → True
 
 Take a $70$-year-old with no disability and income \\$25,000. Then $A$ is true, $D$ is false, and $L$ is false because \\$25,000 is above the cutoff, so
 
 $$D \\lor L = \\mathrm{F} \\lor \\mathrm{F} = \\mathrm{F}$$
 
-and the conjunction fails. That rider does not qualify, so the statement is True.`,
+and the conjunction fails. That rider does not qualify,
+
+So the statement is True.`
+
       `**E.** → False
 
 If age alone were sufficient, $A\\Rightarrow\\mathrm{Discount}$ would hold. Test a $70$-year-old with no disability and income $\\$25{,}000$:
@@ -3838,7 +5344,9 @@ $$A\\Rightarrow\\mathrm{Discount}
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-Age is necessary but not sufficient, making the statement False.`,
+Age is necessary but not sufficient, making the statement False.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 19,
@@ -3865,11 +5373,16 @@ The age test sits outside the bracket. Inside the bracket, $D$ and $L$ are joine
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The first positive integer is $n=1$. The left side is $1$, and the right side is
 
 $$\\frac{1 \\cdot 2}{2} = 1$$
 
-The two sides agree, so the statement is True.`,
+The two sides agree.
+
+So the statement is True.`
+
       `**B.** → True
 
 Let
@@ -3880,7 +5393,10 @@ The inductive step assumes $P(k)$ for an arbitrary positive integer $k$ and must
 
 $$P(k)\\Rightarrow P(k+1)$$
 
-Together with the base case, this implication propagates the formula through every positive integer. The statement describes exactly this inductive step, so it is True.`,
+Together with the base case, this implication propagates the formula through every positive integer. The statement describes exactly this inductive step, so it is True.
+
+So the statement is True.`
+
       `**C.** → False
 
 The five checks establish only
@@ -3891,8 +5407,13 @@ A complete induction also needs the bridge
 
 $$\\forall k\\ge1,\\quad P(k)\\Rightarrow P(k+1)$$
 
-Without that implication, nothing has been proved about $P(6)$ or any later case. Verifying five examples is not a complete proof by induction, so the statement is False.`,
+Without that implication, nothing has been proved about $P(6)$ or any later case. Verifying five examples is not a complete proof by induction,.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 Assume the formula at $n=k$:
 
@@ -3906,14 +5427,21 @@ $$=\\frac{k(k+1)+2(k+1)}{2}$$
 
 $$=\\frac{(k+1)(k+2)}{2}$$
 
-That is the formula at $n=k+1$, so the statement is True.`,
+That is the formula at $n=k+1$.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 Substitute $n=10$ into the closed form:
 
 $$\\frac{10 \\cdot 11}{2}=55$$
 
-The claimed sum is $55$, so the statement is True.`,
+The claimed sum is $55$.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 20,
@@ -3956,14 +5484,22 @@ but
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The original can be true while the proposed wording is false, so the statement is False.`,
+The original can be true while the proposed wording is false,.
+
+So the statement is False.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 “A sufficient condition for unemployment to decrease is that inflation increases” makes $P$ sufficient for $Q$:
 
 $$P \\Rightarrow Q$$
 
-That is the original claim, so the statement is True.`,
+That is the original claim.
+
+So the statement is True.`
+
       `**C.** → False
 
 “Unemployment can only decrease if inflation increases” is $Q$ only if $P$, which is
@@ -3982,21 +5518,33 @@ while the proposed “only if” claim is false:
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Because the truth values can differ, the two claims are not equivalent. The statement is False.`,
+Because the truth values can differ, the two claims are not equivalent.
+
+So the statement is False.`
+
       `**D.** → True
+
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 “If unemployment does not decrease, then inflation does not increase” is
 
 $$\\neg Q \\Rightarrow \\neg P$$
 
-That is the contrapositive of $P \\Rightarrow Q$, so the statement is True.`,
+That is the contrapositive of $P \\Rightarrow Q$.
+
+So the statement is True.`
+
       `**E.** → True
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 “A necessary condition for inflation to increase is that unemployment decreases” makes $Q$ necessary for $P$, which is
 
 $$P \\Rightarrow Q$$
 
-That is the original claim, so the statement is True.`,
+That is the original claim.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 21,
@@ -4039,7 +5587,10 @@ $$D=\\mathrm{T},\\quad D\\Rightarrow C
 \\quad\\Longrightarrow\\quad
 C=\\mathrm{T}$$
 
-Flight 305 is therefore cancelled today, so the statement is True.`,
+Flight 305 is therefore cancelled today,.
+
+So the statement is True.`
+
       `**B.** → True
 
 Letter A gives $C=\\mathrm{T}$. Statement (2) supplies the next implication:
@@ -4052,7 +5603,10 @@ $$C=\\mathrm{T},\\quad C\\Rightarrow O
 \\quad\\Longrightarrow\\quad
 O=\\mathrm{T}$$
 
-Thus the ground crew works overtime today, so the statement is True.`,
+Thus the ground crew works overtime today,
+
+So the statement is True.`
+
       `**C.** → True
 
 An inference can reach a conclusion only through premises that connect to it. From statements (1) and (3), modus ponens gives
@@ -4063,14 +5617,20 @@ Those premises contain no link from $C$ to $O$:
 
 $$\\{D,D\\Rightarrow C\\}\\nvdash O$$
 
-Statement (2), $C\\Rightarrow O$, is therefore essential to the overtime conclusion, so the statement is True.`,
+Statement (2), $C\\Rightarrow O$, is therefore essential to the overtime conclusion,.
+
+So the statement is True.`
+
       `**D.** → False
 
 An implication with a false antecedent does not force its conclusion to be false. Consider a day when Flight 202 is not delayed but Flight 305 is cancelled for another reason:
 
 $$D\\Rightarrow C=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-Statement (1) still holds on that day, although $\\neg C$ is false. Thus $\\neg D$ does not guarantee $\\neg C$, so the statement is False.`,
+Statement (1) still holds on that day, although $\\neg C$ is false. Thus $\\neg D$ does not guarantee $\\neg C$,.
+
+So the statement is False.`
+
       `**E.** → False
 
 Successive modus ponens carries the recorded delay through both rules. First,
@@ -4081,7 +5641,9 @@ Then,
 
 $$C,\\quad C\\Rightarrow O\\quad\\Longrightarrow\\quad O$$
 
-Every scenario satisfying (1), (2), and (3) therefore has overtime. The claimed no-overtime scenario cannot exist, so the statement is False.`,
+Every scenario satisfying (1), (2), and (3) therefore has overtime. The claimed no-overtime scenario cannot exist,.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 22,
@@ -4116,7 +5678,10 @@ $$\\neg(P\\Rightarrow Q)
 \\equiv\\neg(\\neg P\\lor Q)
 \\equiv P\\land\\neg Q$$
 
-The last formula says that a student studied at least $10$ hours and did not pass. That is exactly the claimed negation, so the statement is True.`,
+The last formula says that a student studied at least $10$ hours and did not pass. That is exactly the claimed negation,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The converse $Q\\Rightarrow P$ would require every passing student to have studied at least $10$ hours. A student who already knows the material can have
@@ -4127,7 +5692,10 @@ For that student,
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-while the original $P\\Rightarrow Q$ remains true because $P$ is false. The converse is not guaranteed, so the statement is False.`,
+while the original $P\\Rightarrow Q$ remains true because $P$ is false. The converse is not guaranteed,.
+
+So the statement is False.`
+
       `**C.** → True
 
 An implication is refuted only by a true antecedent and a false conclusion. Anna has $P$ false and $Q$ true, so the original evaluates to
@@ -4138,7 +5706,10 @@ The converse evaluates to
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Anna refutes the converse but not the professor's rule, so the statement is True.`,
+Anna refutes the converse but not the professor's rule,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The inverse negates both parts without swapping them:
@@ -4149,7 +5720,10 @@ The contrapositive swaps the parts and negates them:
 
 $$\\neg Q\\Rightarrow\\neg P$$
 
-These arrows point in opposite directions. The inverse is equivalent to the converse, not to the contrapositive, so the statement is False.`,
+These arrows point in opposite directions. The inverse is equivalent to the converse, not to the contrapositive,
+
+So the statement is False.`
+
       `**E.** → True
 
 The contrapositive of the professor's rule is equivalent to the original:
@@ -4160,7 +5734,9 @@ If a student did not pass, then $\\neg Q$ holds. Modus ponens on the contraposit
 
 $$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
 
-Thus the student studied less than $10$ hours, so the statement is True.`,
+Thus the student studied less than $10$ hours,.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 23,
@@ -4199,7 +5775,10 @@ A sufficient condition is one whose truth guarantees the consequent:
 
 $$F=\\mathrm{T}\\quad\\Longrightarrow\\quad P=\\mathrm{T}$$
 
-Thus missing the deadline is sufficient for the penalty to apply, so the statement is True.`,
+Thus missing the deadline is sufficient for the penalty to apply,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The converse reverses the clause:
@@ -4214,7 +5793,10 @@ but the converse evaluates to
 
 $$P\\Rightarrow F=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The original can hold while the converse fails, so the converse is not guaranteed and the statement is False.`,
+The original can hold while the converse fails, so the converse is not guaranteed and.
+
+So the statement is False.`
+
       `**C.** → True
 
 Form the contrapositive by swapping and negating both parts:
@@ -4231,7 +5813,10 @@ $$\\neg P\\Rightarrow\\neg F
 \\equiv P\\lor\\neg F
 \\equiv\\neg F\\lor P$$
 
-Therefore “no penalty implies no missed deadline” is logically guaranteed, so the statement is True.`,
+Therefore “no penalty implies no missed deadline” is logically guaranteed,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The inverse is
@@ -4254,7 +5839,10 @@ $$F\\Rightarrow P
 =\\mathrm{F}\\Rightarrow\\mathrm{T}
 =\\mathrm{T}$$
 
-The inverse is not guaranteed by the original, so the statement is False.`,
+The inverse is not guaranteed by the original,.
+
+So the statement is False.`
+
       `**E.** → True
 
 The converse is $P\\Rightarrow F$. Its contrapositive is obtained by swapping and negating:
@@ -4271,7 +5859,9 @@ $$\\neg F\\Rightarrow\\neg P
 \\equiv F\\lor\\neg P
 \\equiv\\neg P\\lor F$$
 
-Thus inverse and converse always agree with each other, though not necessarily with the original. The statement is True.`,
+Thus inverse and converse always agree with each other, though not necessarily with the original.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 24,
@@ -4306,11 +5896,16 @@ The second pair need not share a truth value with the clause. The antecedent of 
     tactical_explanations: [
       `**A.** → False
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Student M has GPA $3.7$, so $G$ is true, $50$ credits, so $C$ is false, and no waiver, so $W$ is false. Then
 
 $$G \\land (C \\lor W) = \\mathrm{T} \\land (\\mathrm{F} \\lor \\mathrm{F}) = \\mathrm{F}$$
 
-M is not eligible, so the statement is False.`,
+M is not eligible.
+
+So the statement is False.`
+
       `**B.** → True
 
 Student N's GPA clears the cutoff, the credit count misses its cutoff, and the waiver is present:
@@ -4324,7 +5919,10 @@ $$G\\land(C\\lor W)
 =\\mathrm{T}\\land\\mathrm{T}
 =\\mathrm{T}$$
 
-N satisfies the complete eligibility condition, so the statement is True.`,
+N satisfies the complete eligibility condition,.
+
+So the statement is True.`
+
       `**C.** → True
 
 With the proposed waiver, M would have
@@ -4337,7 +5935,10 @@ $$G\\land(C\\lor W)
 =\\mathrm{T}\\land(\\mathrm{F}\\lor\\mathrm{T})
 =\\mathrm{T}$$
 
-The waiver replaces the missing credit-hours condition while M's GPA still satisfies the non-waivable condition. M would become eligible, so the statement is True.`,
+The waiver replaces the missing credit-hours condition while M's GPA still satisfies the non-waivable condition. M would become eligible,.
+
+So the statement is True.`
+
       `**D.** → False
 
 A waiver makes $W=\\mathrm{T}$, but it does not alter the GPA truth value. For a student below a $3.5$ GPA,
@@ -4351,14 +5952,21 @@ $$G\\land(C\\lor W)
 =\\mathrm{F}\\land\\mathrm{T}
 =\\mathrm{F}$$
 
-The waiver alone cannot overcome a failed GPA requirement, so it is not sufficient and the statement is False.`,
+The waiver alone cannot overcome a failed GPA requirement, so it is not sufficient and.
+
+So the statement is False.`
+
       `**E.** → False
+
+Apply the counting rule once, substitute the given size, and compare with the claimed figure.
 
 If GPA is below $3.5$, then $G$ is false. For any $C$ and $W$,
 
 $$G \\land (C \\lor W) = \\mathrm{F}$$
 
-No mix of waiver and credits rescues a low GPA, so the statement is False.`,
+No mix of waiver and credits rescues a low GPA.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 25,
@@ -4396,7 +6004,10 @@ $$(M\\lor A)\\land T
 =\\mathrm{T}\\land\\mathrm{T}
 =\\mathrm{T}$$
 
-M satisfies the payout condition, so the statement is True.`,
+M satisfies the payout condition,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Traveler N's airline cancellation makes $A=\\mathrm{T}$, but buying only $5$ days ahead makes $T=\\mathrm{F}$. Therefore
@@ -4406,7 +6017,10 @@ $$(M\\lor A)\\land T
 =\\mathrm{T}\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-The accepted reason cannot compensate for the failed timing conjunct. N's claim is not paid, so the statement is False.`,
+The accepted reason cannot compensate for the failed timing conjunct. N's claim is not paid,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Buying the policy fewer than $14$ days before departure makes the timing condition false:
@@ -4419,7 +6033,10 @@ $$(M\\lor A)\\land T
 =(M\\lor A)\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-Because this condition is equivalent to payout, its false value rules out every claim, regardless of the reason. The statement is True.`,
+Because this condition is equivalent to payout, its false value rules out every claim, regardless of the reason.
+
+So the statement is True.`
+
       `**D.** → False
 
 To test whether timing alone is sufficient, consider a traveler who buys exactly $14$ days ahead but has neither accepted cancellation reason:
@@ -4432,7 +6049,10 @@ $$(M\\lor A)\\land T
 =(\\mathrm{F}\\lor\\mathrm{F})\\land\\mathrm{T}
 =\\mathrm{F}$$
 
-The timing condition can be true while payout is false. It is necessary but not sufficient, so the statement is False.`,
+The timing condition can be true while payout is false. It is necessary but not sufficient,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The proposed scenario has no medical emergency, an airline cancellation, and a late policy purchase:
@@ -4446,7 +6066,9 @@ $$(M\\lor A)\\land T
 =\\mathrm{T}\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-Airline cancellation fills the reason bracket but cannot replace the timing requirement. Such a claim is not paid, so the statement is False.`,
+Airline cancellation fills the reason bracket but cannot replace the timing requirement. Such a claim is not paid,.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 26,
@@ -4483,7 +6105,10 @@ This negation has the violating truth pattern
 
 $$P=\\mathrm{T},\\qquad Q=\\mathrm{F}$$
 
-which describes a citizen who is not eligible to vote. That is exactly the claimed negation, so the statement is True.`,
+which describes a citizen who is not eligible to vote. That is exactly the claimed negation,.
+
+So the statement is True.`
+
       `**B.** → True
 
 The contrapositive is equivalent to the citizenship rule:
@@ -4494,7 +6119,10 @@ John is not eligible, so $\\neg Q$ holds. Apply modus ponens:
 
 $$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
 
-John is therefore not a citizen, so the statement is True.`,
+John is therefore not a citizen,.
+
+So the statement is True.`
+
       `**C.** → False
 
 Maria's citizenship gives $P=\\mathrm{T}$. Choosing not to register or cast a ballot does not remove the legal right to vote, so eligibility remains $Q=\\mathrm{T}$. The law evaluates to
@@ -4507,7 +6135,10 @@ A counterexample would instead require
 
 $$P\\land\\neg Q=\\mathrm{T}$$
 
-Maria does not have that pattern. Her choice not to vote does not disprove the law, so the statement is False.`,
+Maria does not have that pattern. Her choice not to vote does not disprove the law,.
+
+So the statement is False.`
+
       `**D.** → True
 
 The converse is
@@ -4526,7 +6157,10 @@ $$P\\Rightarrow Q
 =\\mathrm{F}\\Rightarrow\\mathrm{T}
 =\\mathrm{T}$$
 
-This possible policy separates the converse from the original, so the converse could be false and the statement is True.`,
+This possible policy separates the converse from the original, so the converse could be false and.
+
+So the statement is True.`
+
       `**E.** → True
 
 The converse is $Q\\Rightarrow P$. Its contrapositive is
@@ -4543,7 +6177,9 @@ $$\\neg P\\Rightarrow\\neg Q
 \\equiv P\\lor\\neg Q
 \\equiv\\neg Q\\lor P$$
 
-Therefore the inverse always has the same truth value as the converse, so the statement is True.`,
+Therefore the inverse always has the same truth value as the converse,.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 27,
@@ -4578,14 +6214,20 @@ Then the conditional premise is true:
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-The second premise $Q$ is true, but the conclusion $P$ is false. This countermodel shows that affirming the consequent is invalid, so the statement is False.`,
+The second premise $Q$ is true, but the conclusion $P$ is false. This countermodel shows that affirming the consequent is invalid,.
+
+So the statement is False.`
+
       `**B.** → False
 
 The restatement uses the invalid form called denying the antecedent:
 
 $$P\\Rightarrow Q,\\quad\\neg P\\quad\\therefore\\quad\\neg Q$$
 
-Use the same competitor example, with $P$ false and $Q$ true. Then $P\\Rightarrow Q$ and $\\neg P$ are both true, but $\\neg Q$ is false. The premises can hold while the conclusion fails, so the statement is False.`,
+Use the same competitor example, with $P$ false and $Q$ true. Then $P\\Rightarrow Q$ and $\\neg P$ are both true, but $\\neg Q$ is false. The premises can hold while the conclusion fails,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Modus tollens applies the contrapositive of the conditional. From
@@ -4600,7 +6242,10 @@ Together with the premise $\\neg Q$, modus ponens yields
 
 $$\\neg P$$
 
-The restated conclusion follows from the premises, so the statement is True.`,
+The restated conclusion follows from the premises,
+
+So the statement is True.`
+
       `**D.** → True
 
 A biconditional supplies both directions:
@@ -4611,14 +6256,19 @@ The observed sales increase gives $Q$, and the added direction gives
 
 $$Q,\\quad Q\\Rightarrow P\\quad\\Longrightarrow\\quad P$$
 
-This strengthened premise validates the memo's conclusion, so the statement is True.`,
+This strengthened premise validates the memo's conclusion,.
+
+So the statement is True.`
+
       `**E.** → True
 
 Argument types are determined by form, not subject matter. The rain argument has the form
 
 $$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
 
-The marketing memo has exactly the same form. Both infer the antecedent from the consequent and affirm it, so the statement is True.`,
+The marketing memo has exactly the same form. Both infer the antecedent from the consequent and affirm it,
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -4645,11 +6295,16 @@ to the conclusion $P$. That form is affirming the consequent. The premise licens
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Both $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and
 
 $$\\sqrt{2}+(-\\sqrt{2})=0$$
 
-Zero is rational, so the pair is a counterexample, so the statement is True.`,
+Zero is rational, so the pair is a counterexample.
+
+So the statement is True.`
+
       `**B.** → True
 
 Write the universal claim as
@@ -4664,20 +6319,26 @@ $$\\exists a,b,\\quad
 \\mathrm{Irr}(a)\\land\\mathrm{Irr}(b)
 \\land\\neg\\mathrm{Irr}(a+b)$$
 
-The pair $a=\\sqrt2$, $b=-\\sqrt2$ satisfies this existential because $a+b=0\\in\\mathbb Q$. One witness makes the negation true and the universal false, so the statement is True.`,
+The pair $a=\\sqrt2$, $b=-\\sqrt2$ satisfies this existential because $a+b=0\\in\\mathbb Q$. One witness makes the negation true and the universal false,.
+
+So the statement is True.`
+
       `**C.** → True
 
 Let the target be
 
 $$\\neg\\exists p\\in\\mathbb P\\quad
-\\forall q\\in\\mathbb P,\ q\\le p$$
+\\forall q\\in\\mathbb P,\\ q\\le p$$
 
 A contradiction proof begins by negating that target, namely by assuming
 
 $$\\exists p\\in\\mathbb P\\quad
-\\forall q\\in\\mathbb P,\ q\\le p$$
+\\forall q\\in\\mathbb P,\\ q\\le p$$
 
-This says there is a largest prime $p$. The proof then constructs a prime beyond the assumed bound and obtains a contradiction. Thus the proposed opening assumption is correct and the statement is True.`,
+This says there is a largest prime $p$. The proof then constructs a prime beyond the assumed bound and obtains a contradiction. Thus the proposed opening assumption is correct and.
+
+So the statement is True.`
+
       `**D.** → False
 
 Checking two inputs establishes only
@@ -4688,7 +6349,10 @@ The universal claim requires
 
 $$\\forall x,\\quad P(x)=\\mathrm{T}$$
 
-These are not equivalent: one may define a property with $P(1)=P(2)=\\mathrm{T}$ but $P(3)=\\mathrm{F}$. Then both checks pass while the universal fails. Therefore checking $x=1$ and $x=2$ is insufficient, so the statement is False.`,
+These are not equivalent: one may define a property with $P(1)=P(2)=\\mathrm{T}$ but $P(3)=\\mathrm{F}$. Then both checks pass while the universal fails. Therefore checking $x=1$ and $x=2$ is insufficient,.
+
+So the statement is False.`
+
       `**E.** → True
 
 An existential statement has the form
@@ -4699,7 +6363,9 @@ If one exhibits a specific value $a$ and verifies
 
 $$P(a)=\\mathrm{T},$$
 
-then $a$ is a witness and the existential statement is true. Unlike a universal proof, no other values need to be checked. Therefore one working value is sufficient and the statement is True.`,
+then $a$ is a witness and the existential statement is true. Unlike a universal proof, no other values need to be checked. Therefore one working value is sufficient and.
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 29,
@@ -4728,7 +6394,10 @@ The converse $Q\\Rightarrow P$ is tested by an animal that lives in water but is
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The inference from living in water to being a fish therefore uses a false converse and is invalid, so the statement is True.`,
+The inference from living in water to being a fish therefore uses a false converse and is invalid,
+
+So the statement is True.`
+
       `**B.** → True
 
 The contrapositive is equivalent to the fish rule:
@@ -4739,7 +6408,10 @@ The lizard supplies $\\neg Q$. Modus ponens on the contrapositive gives
 
 $$\\neg Q,\\quad\\neg Q\\Rightarrow\\neg P\\quad\\Longrightarrow\\quad\\neg P$$
 
-The inference is valid, so the statement is True.`,
+The inference is valid,
+
+So the statement is True.`
+
       `**C.** → False
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ is not equivalent to the original rule. A water snake has
@@ -4750,7 +6422,10 @@ so its inverse evaluation is
 
 $$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-This counterexample shows that inverse-based reasoning is not guaranteed, so the statement is False.`,
+This counterexample shows that inverse-based reasoning is not guaranteed,.
+
+So the statement is False.`
+
       `**D.** → True
 
 “All fish live in water” is
@@ -4764,7 +6439,10 @@ $$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x))
 
 $$\\equiv\\exists x\\,(P(x)\\land\\neg Q(x))$$
 
-The final formula says that there exists a fish that does not live in water. That is exactly the claimed negation, so the statement is True.`,
+The final formula says that there exists a fish that does not live in water. That is exactly the claimed negation,.
+
+So the statement is True.`
+
       `**E.** → False
 
 A counterexample to $P\\Rightarrow Q$ must make $P$ true and $Q$ false. A dolphin has
@@ -4775,7 +6453,9 @@ Thus the original rule evaluates to
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-A dolphin satisfies the rule vacuously instead of refuting it, so the statement is False.`,
+A dolphin satisfies the rule vacuously instead of refuting it,
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 30,
@@ -4810,7 +6490,10 @@ The offered sentence is instead
 
 $$P\\land Q$$
 
-which describes a punctual customer who did receive the discount. It is not the negation, so the statement is False.`,
+which describes a punctual customer who did receive the discount. It is not the negation,
+
+So the statement is False.`
+
       `**B.** → False
 
 The converse is $Q\\Rightarrow P$. Consider a customer who pays late but receives a holiday-promotion discount:
@@ -4825,7 +6508,10 @@ while the converse is false:
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The policy does not guarantee its converse, so the statement is False.`,
+The policy does not guarantee its converse,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Alex paid on day $45$, so “paid within $30$ days” is false, and Alex received no discount:
@@ -4838,7 +6524,10 @@ $$P\\Rightarrow Q
 =\\mathrm{F}\\Rightarrow\\mathrm{F}
 =\\mathrm{T}$$
 
-A counterexample would require $P=\\mathrm{T}$ and $Q=\\mathrm{F}$. Alex instead has a false antecedent, so the case is consistent with the policy. The statement is True.`,
+A counterexample would require $P=\\mathrm{T}$ and $Q=\\mathrm{F}$. Alex instead has a false antecedent, so the case is consistent with the policy.
+
+So the statement is True.`
+
       `**D.** → False
 
 The inverse $\\neg P\\Rightarrow\\neg Q$ can fail while the original remains true. For a late payer who receives a promotional discount,
@@ -4849,14 +6538,19 @@ Then
 
 $$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-but $P\\Rightarrow Q$ is true because $P$ is false. The inverse is not guaranteed, so the statement is False.`,
+but $P\\Rightarrow Q$ is true because $P$ is false. The inverse is not guaranteed,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The contrapositive is logically equivalent to the original:
 
 $$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
 
-Equivalent formulas have the same truth value on every assignment. Therefore the contrapositive is guaranteed whenever the policy is, so the statement is False.`,
+Equivalent formulas have the same truth value on every assignment. Therefore the contrapositive is guaranteed whenever the policy is,
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 31,
@@ -4891,7 +6585,10 @@ The offered sentence is the different implication
 
 $$P\\Rightarrow\\neg Q$$
 
-It makes a claim about every company above the threshold instead of asserting one counterexample, so the statement is False.`,
+It makes a claim about every company above the threshold instead of asserting one counterexample,
+
+So the statement is False.`
+
       `**B.** → False
 
 The converse is $Q\\Rightarrow P$. Consider a company with revenue $\\$300{,}000$ that files an audit voluntarily:
@@ -4906,7 +6603,10 @@ but the converse is false:
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Voluntary filing is therefore a counterexample to the converse, so the statement is False.`,
+Voluntary filing is therefore a counterexample to the converse,.
+
+So the statement is False.`
+
       `**C.** → False
 
 The inverse is
@@ -4925,14 +6625,20 @@ $$P\\Rightarrow Q
 =\\mathrm{F}\\Rightarrow\\mathrm{T}
 =\\mathrm{T}$$
 
-Because their truth values differ on this case, the inverse is not equivalent to the original. The statement is False.`,
+Because their truth values differ on this case, the inverse is not equivalent to the original.
+
+So the statement is False.`
+
       `**D.** → True
 
 The contrapositive swaps and negates both parts:
 
 $$P\\Rightarrow Q\\quad\\Longleftrightarrow\\quad\\neg Q\\Rightarrow\\neg P$$
 
-Here $\\neg Q$ means no audit filing and $\\neg P$ means revenue does not exceed \\$1 million. That is the quoted rule, so the statement is True.`,
+Here $\\neg Q$ means no audit filing and $\\neg P$ means revenue does not exceed \\$1 million. That is the quoted rule,
+
+So the statement is True.`
+
       `**E.** → True
 
 An implication is disproved by a case with a true hypothesis and false conclusion. Company X has
@@ -4943,7 +6649,9 @@ Therefore
 
 $$P\\Rightarrow Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Company X is a valid counterexample to the regulation, so the statement is True.`,
+Company X is a valid counterexample to the regulation,
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 32,
@@ -4980,7 +6688,10 @@ $$H\\land W\\land T
 =\\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-Because licensing is equivalent to this conjunction, Pilot A is not granted the license. The statement is False.`,
+Because licensing is equivalent to this conjunction, Pilot A is not granted the license.
+
+So the statement is False.`
+
       `**B.** → False
 
 Pilot B has $240$ hours, so $H$ is false, and passed both exams. Then
@@ -4989,7 +6700,10 @@ $$H\\land W\\land T
 =\\mathrm{F}\\land\\mathrm{T}\\land\\mathrm{T}
 =\\mathrm{F}$$
 
-The failed hours condition makes the entire conjunction false, so Pilot B is not granted the license. The statement is False.`,
+The failed hours condition makes the entire conjunction false, so Pilot B is not granted the license.
+
+So the statement is False.`
+
       `**C.** → False
 
 If flight hours alone guaranteed the license, $H\\Rightarrow L$ would hold. Pilot A is a counterexample:
@@ -5008,7 +6722,10 @@ $$H\\Rightarrow L
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-Hours are necessary but not sufficient, so the statement is False.`,
+Hours are necessary but not sufficient,.
+
+So the statement is False.`
+
       `**D.** → True
 
 Failing the practical test makes $T=\\mathrm{F}$. For either truth value of the other requirements,
@@ -5021,7 +6738,10 @@ Since the license is granted if and only if this conjunction is true,
 
 $$\\neg T\\Rightarrow\\neg L$$
 
-Extra hours and a passed written exam cannot change the false conjunct. The pilot cannot be licensed, so the statement is True.`,
+Extra hours and a passed written exam cannot change the false conjunct. The pilot cannot be licensed,.
+
+So the statement is True.`
+
       `**E.** → True
 
 Pilot A is the required witness. The hours test is true, while the practical-test condition is false:
@@ -5034,7 +6754,9 @@ $$L=H\\land W\\land T
 =\\mathrm{T}\\land\\mathrm{T}\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-So there exists a pilot with more than $250$ hours who is not granted the license. The statement is True.`,
+So there exists a pilot with more than $250$ hours who is not granted the license.
+
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 33,
@@ -5068,8 +6790,13 @@ $$(S\\lor C)\\land D
 =\\mathrm{T}\\land\\mathrm{T}
 =\\mathrm{T}$$
 
-P is approved. The low score is not a veto while $C$ holds, so the statement is False.`,
+P is approved. The low score is not a veto while $C$ holds,.
+
+So the statement is False.`
+
       `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Applicant Q has score $720$, so $S$ is true, and ratio $45\\%$, so $D$ is false. Then
 
@@ -5078,7 +6805,10 @@ $$(S\\lor C)\\land D
 =\\mathrm{T}\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-Q is not approved, so the statement is False.`,
+Q is not approved.
+
+So the statement is False.`
+
       `**C.** → False
 
 If a high score always guaranteed approval, $S\\Rightarrow A$ would hold. Applicant Q has
@@ -5097,7 +6827,10 @@ $$S\\Rightarrow A
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-Q is a counterexample to score sufficiency, so the statement is False.`,
+Q is a counterexample to score sufficiency,.
+
+So the statement is False.`
+
       `**D.** → True
 
 A ratio of $40\\%$ or above fails the strict ratio test:
@@ -5110,7 +6843,10 @@ $$(S\\lor C)\\land D
 =(S\\lor C)\\land\\mathrm{F}
 =\\mathrm{F}$$
 
-The ratio condition is a required outer conjunct, so neither a high score nor a co-signer can offset its failure. Such an applicant can never be approved, making the statement True.`,
+The ratio condition is a required outer conjunct, so neither a high score nor a co-signer can offset its failure. Such an applicant can never be approved, making the statement True.
+
+So the statement is True.`
+
       `**E.** → True
 
 Applicant P supplies the required witness:
@@ -5123,7 +6859,9 @@ $$(S\\lor C)\\land D
 =(\\mathrm{F}\\lor\\mathrm{T})\\land\\mathrm{T}
 =\\mathrm{T}$$
 
-P's score is below $700$, but the co-signer fills the OR bracket and the ratio clears the outer requirement. Such an approval is possible, so the statement is True.`,
+P's score is below $700$, but the co-signer fills the OR bracket and the ratio clears the outer requirement. Such an approval is possible,.
+
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 34,
@@ -5158,7 +6896,10 @@ so
 
 $$Q\\Rightarrow P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Sam is exactly the counterexample needed to disprove the converse, so the statement is True.`,
+Sam is exactly the counterexample needed to disprove the converse,
+
+So the statement is True.`
+
       `**B.** → True
 
 The target “not every point-earning diner ordered dessert” is
@@ -5175,7 +6916,10 @@ $$Q(S)\\Rightarrow P(S)
 =\\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-Sam contradicts the assumption, exactly as the proposed proof says. The statement is True.`,
+Sam contradicts the assumption, exactly as the proposed proof says.
+
+So the statement is True.`
+
       `**C.** → False
 
 The original policy fails only when dessert is ordered and no point is awarded. Sam instead has
@@ -5186,14 +6930,20 @@ Thus
 
 $$P\\Rightarrow Q=\\mathrm{F}\\Rightarrow\\mathrm{T}=\\mathrm{T}$$
 
-Sam satisfies the original policy vacuously and does not disprove it, so the statement is False.`,
+Sam satisfies the original policy vacuously and does not disprove it,
+
+So the statement is False.`
+
       `**D.** → True
 
 The negation of an implication keeps the hypothesis and negates the conclusion:
 
 $$\\neg(P\\Rightarrow Q)\\equiv P\\land\\neg Q$$
 
-This requires a diner who ordered dessert and did not receive a point. Sam has $\\neg P\\land Q$, so his birthday case has the opposite truth values. The claimed negation is correct, so the statement is True.`,
+This requires a diner who ordered dessert and did not receive a point. Sam has $\\neg P\\land Q$, so his birthday case has the opposite truth values. The claimed negation is correct,.
+
+So the statement is True.`
+
       `**E.** → True
 
 The inverse is $\\neg P\\Rightarrow\\neg Q$. Sam did not order dessert but did receive a point, so
@@ -5204,7 +6954,9 @@ Therefore
 
 $$\\neg P\\Rightarrow\\neg Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-Sam directly contradicts the inverse, so the statement is True.`,
+Sam directly contradicts the inverse,
+
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 35,
@@ -5231,25 +6983,38 @@ Sam received a birthday point without ordering dessert, so $P$ is false and $Q$ 
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 For $m=4$,
 
 $$n = \\frac{100}{4} = 25$$
 
-which is a positive integer, and $4 \\cdot 25 = 100$. A partner exists, so the statement is True.`,
+which is a positive integer, and $4 \\cdot 25 = 100$. A partner exists.
+
+So the statement is True.`
+
       `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 For $m=3$,
 
 $$n = \\frac{100}{3}$$
 
-which is not an integer. The equation has only that one solution, so no positive integer $n$ works, so the statement is False.`,
+which is not an integer. The equation has only that one solution, so no positive integer $n$ works.
+
+So the statement is False.`
+
       `**C.** → False
 
 A universal claim is disproved by one counterexample. Choose the positive integer $m=3$. The equation would force
 
 $$3n=100\\quad\\Longrightarrow\\quad n=\\frac{100}{3}\\notin\\mathbb Z_{>0}$$
 
-Thus this $m$ has no permitted positive-integer witness $n$. Therefore $\\forall m\\,\\exists n\\,(mn=100)$ fails at $m=3$, so the statement is False.`,
+Thus this $m$ has no permitted positive-integer witness $n$. Therefore $\\forall m\\,\\exists n\\,(mn=100)$ fails at $m=3$,.
+
+So the statement is False.`
+
       `**D.** → True
 
 Use quantifier negation one layer at a time: $\\neg\\forall$ becomes $\\exists\\neg$, and $\\neg\\exists$ becomes $\\forall\\neg$. Hence
@@ -5258,7 +7023,10 @@ $$\\neg\\bigl(\\forall m\\,\\exists n\\,(mn=100)\\bigr)
 \\equiv
 \\exists m\\,\\forall n\\,(mn\\ne100)$$
 
-The positive integer $m=3$ illustrates the required witness: if $3n=100$, then $n=100/3$, which is not a positive integer. Thus every permitted $n$ satisfies $3n\\ne100$. This is exactly the stated negation, so the statement is True.`,
+The positive integer $m=3$ illustrates the required witness: if $3n=100$, then $n=100/3$, which is not a positive integer. Thus every permitted $n$ satisfies $3n\\ne100$. This is exactly the stated negation,.
+
+So the statement is True.`
+
       `**E.** → True
 
 The reversed quantifiers demand one fixed positive integer $n$ that works for every positive integer $m$:
@@ -5271,7 +7039,9 @@ $$1\\cdot n=100\\Rightarrow n=100,
 \\qquad
 2\\cdot n=100\\Rightarrow n=50$$
 
-One number cannot equal both $100$ and $50$, so no common witness $n$ exists. The reversed statement is false, so the statement is True.`,
+One number cannot equal both $100$ and $50$, so no common witness $n$ exists. The reversed statement is false,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -5306,11 +7076,16 @@ and that $n$ is legal only when $m$ divides $100$. Negation flips each quantifie
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 This is direct use of a premise, not a derived guess. With $D$ meaning “Dan is guilty,” clue (3) is simply
 
 $$D$$
 
-Therefore every assignment satisfying the clues has $D=\\mathrm{T}$. Dan is guilty, so the statement is True.`,
+Therefore every assignment satisfying the clues has $D=\\mathrm{T}$. Dan is guilty.
+
+So the statement is True.`
+
       `**B.** → False
 
 Use the exactly-one constraint together with clue (3). Since Dan occupies the unique guilty position,
@@ -5319,7 +7094,10 @@ $$D=\\mathrm{T}
 \\quad\\Longrightarrow\\quad
 A=B=C=\\mathrm{F}$$
 
-In particular $A=\\mathrm{F}$, so Ann is innocent rather than guilty, so the statement is False.`,
+In particular $A=\\mathrm{F}$, so Ann is innocent rather than guilty,
+
+So the statement is False.`
+
       `**C.** → False
 
 Test whether clue (2) is essential by omitting it. Clue (3) still gives $D=\\mathrm{T}$, and the exactly-one condition then forces
@@ -5328,7 +7106,10 @@ $$D=\\mathrm{T}
 \\quad\\Longrightarrow\\quad
 \\neg A\\land\\neg B\\land\\neg C$$
 
-Thus $\\neg C$ is available without using $\\neg B\\Rightarrow\\neg C$. Clue (2) is not essential for Cara’s innocence, so the statement is False.`,
+Thus $\\neg C$ is available without using $\\neg B\\Rightarrow\\neg C$. Clue (2) is not essential for Cara’s innocence,.
+
+So the statement is False.`
+
       `**D.** → True
 
 Clue (3) and uniqueness give $A=\\mathrm{F}$ and $D=\\mathrm{T}$. Evaluate clue (1), $A\\Rightarrow\\neg D$, on that assignment:
@@ -5338,14 +7119,19 @@ $$A\\Rightarrow\\neg D
 \\mathrm{F}\\Rightarrow\\mathrm{F}
 =\\mathrm{T}$$
 
-The implication is vacuously true because its antecedent is false, so it eliminates no additional roster. Clue (1) provides no new information here, so the statement is True.`,
+The implication is vacuously true because its antecedent is false, so it eliminates no additional roster. Clue (1) provides no new information here,.
+
+So the statement is True.`
+
       `**E.** → True
 
 Clue (3) is already the atomic assertion
 
 $$D=\\mathrm{T}$$
 
-No implication, contraposition, or exactly-one constraint is needed to infer its own content. The uniqueness condition is needed only to eliminate Ann, Ben, and Cara after $D$ is known. Clue (3) alone establishes Dan’s guilt, so the statement is True.`,
+No implication, contraposition, or exactly-one constraint is needed to infer its own content. The uniqueness condition is needed only to eliminate Ann, Ben, and Cara after $D$ is known. Clue (3) alone establishes Dan’s guilt,
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -5376,7 +7162,10 @@ Use contradiction elimination. Suppose X were a liar, so X’s claim “Y lies�
 
 $$\\neg x\\quad\\Longrightarrow\\quad y$$
 
-A truthful Y would make “X and I are both liars” true, forcing $\\neg x\\land\\neg y$. That gives both $y$ and $\\neg y$, an impossibility. Hence $\\neg x$ is ruled out and $x$ is true, so the statement is True.`,
+A truthful Y would make “X and I are both liars” true, forcing $\\neg x\\land\\neg y$. That gives both $y$ and $\\neg y$, an impossibility. Hence $\\neg x$ is ruled out and $x$ is true,.
+
+So the statement is True.`
+
       `**B.** → False
 
 From the contradiction in the X-liar branch, X must be a truth-teller. A truth-teller’s sentence is true, and X says that Y lies:
@@ -5385,7 +7174,10 @@ $$x=\\mathrm{T}
 \\quad\\Longrightarrow\\quad
 \\neg y=\\mathrm{T}$$
 
-Therefore $y=\\mathrm{F}$: Y is a liar, not a truth-teller, so the statement is False.`,
+Therefore $y=\\mathrm{F}$: Y is a liar, not a truth-teller,
+
+So the statement is False.`
+
       `**C.** → True
 
 The surviving types are $x=\\mathrm{T}$ and $y=\\mathrm{F}$. Evaluate Y’s sentence “X and I are both liars,” whose formula is $\\neg x\\land\\neg y$:
@@ -5395,14 +7187,20 @@ $$\\neg x\\land\\neg y
 \\mathrm{F}\\land\\mathrm{T}
 =\\mathrm{F}$$
 
-That false sentence is exactly what a liar may say. Y’s statement is false, so the statement is True.`,
+That false sentence is exactly what a liar may say. Y’s statement is false,
+
+So the statement is True.`
+
       `**D.** → False
 
 There are only two branches for X. The liar branch forces $y$ true from X’s false accusation, then forces $y$ false from truthful Y’s conjunction:
 
 $$\\neg x\\quad\\Longrightarrow\\quad y\\land\\neg y$$
 
-So that branch is inconsistent. The remaining branch gives $x=\\mathrm{T}$ and, from X’s truthful accusation, $y=\\mathrm{F}$. Exactly one assignment survives, not two, so the statement is False.`,
+So that branch is inconsistent. The remaining branch gives $x=\\mathrm{T}$ and, from X’s truthful accusation, $y=\\mathrm{F}$. Exactly one assignment survives, not two,.
+
+So the statement is False.`
+
       `**E.** → True
 
 Assume X is a liar. X’s sentence “Y lies” must then be false, so Y is truthful. Truthful Y’s sentence “X and I are both liars” must be true, so Y must also be a liar:
@@ -5413,7 +7211,9 @@ y
 \\quad\\Longrightarrow\\quad
 \\neg x\\land\\neg y$$
 
-In particular this gives $y\\land\\neg y$. The X-liar hypothesis forces a contradiction, so the statement is True.`,
+In particular this gives $y\\land\\neg y$. The X-liar hypothesis forces a contradiction,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -5456,7 +7256,10 @@ $$\\exists s\\,\\forall e\\,G(s,e)
 \\quad\\Longrightarrow\\quad
 \\forall e\\,\\exists s\\,G(s,e)$$
 
-Statement 1 implies Statement 2, so the statement is True.`,
+Statement 1 implies Statement 2,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Disprove the implication with a quantifier countermodel. Use students $X,Y$ and exams $e_1,e_2$, with
@@ -5465,7 +7268,10 @@ $$G(X,e_1)=\\mathrm{T},\\quad G(X,e_2)=\\mathrm{F},$$
 
 $$G(Y,e_1)=\\mathrm{F},\\quad G(Y,e_2)=\\mathrm{T}$$
 
-Every exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model, so the statement is False.`,
+Every exam has a witness—$X$ for $e_1$ and $Y$ for $e_2$—so $\\forall e\\,\\exists s\\,G(s,e)$ is true. Neither student clears both exams, so $\\exists s\\,\\forall e\\,G(s,e)$ is false. The reverse implication has a true premise and false conclusion in this model,.
+
+So the statement is False.`
+
       `**C.** → False
 
 Logical equivalence requires both implications. The forward direction holds by reusing Statement 1’s witness:
@@ -5480,7 +7286,10 @@ $$\\forall e\\,\\exists s\\,G(s,e)=\\mathrm{T},
 \\qquad
 \\exists s\\,\\forall e\\,G(s,e)=\\mathrm{F}$$
 
-One direction fails in this concrete model, so the formulas are not equivalent, so the statement is False.`,
+One direction fails in this concrete model, so the formulas are not equivalent,.
+
+So the statement is False.`
+
       `**D.** → True
 
 This is an existence claim, so one class is enough. Take two exams and two students: $X$ scores above $90$ only on $e_1$, while $Y$ scores above $90$ only on $e_2$. Then
@@ -5489,7 +7298,10 @@ $$\\underbrace{G(X,e_1)}_{X\\text{ witnesses }e_1},
 \\qquad
 \\underbrace{G(Y,e_2)}_{Y\\text{ witnesses }e_2}$$
 
-Thus every exam has some high scorer. But $X$ fails $e_2$ and $Y$ fails $e_1$, so no single student is a witness for every exam. This class realizes Statement 2 without Statement 1, so the statement is True.`,
+Thus every exam has some high scorer. But $X$ fails $e_2$ and $Y$ fails $e_1$, so no single student is a witness for every exam. This class realizes Statement 2 without Statement 1,.
+
+So the statement is True.`
+
       `**E.** → True
 
 Let the exam domain be the singleton $\\{e_1\\}$. A universal over that one value has only one case, so Statement 1 becomes
@@ -5504,7 +7316,9 @@ $$\\forall e\\in\\{e_1\\}\\,\\exists s\\,G(s,e)
 \\equiv
 \\exists s\\,G(s,e_1)$$
 
-Both quantifier orders reduce to the same formula, so the statement is True.`,
+Both quantifier orders reduce to the same formula,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -5545,7 +7359,10 @@ R1 is one of the two yes-votes, so both parts of gate 2 are true:
 
 $$\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
 
-At least one gate is true. The candidate is approved, so the statement is True.`,
+At least one gate is true. The candidate is approved,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Approval requires at least one gate to be true. With only R2 and R3 voting yes, gate 1 gives
@@ -5556,7 +7373,10 @@ R1 is not among the two yes-votes, so the second part of gate 2 is false:
 
 $$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-Both gates are false. The candidate is not approved, so the statement is False.`,
+Both gates are false. The candidate is not approved,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Gate 1 depends only on the number of yes-votes. With any three reviewers voting yes,
@@ -5567,7 +7387,10 @@ and
 
 $$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
 
-Gate 1 opens without consulting the reviewers' names. The candidate is approved, so the statement is True.`,
+Gate 1 opens without consulting the reviewers' names. The candidate is approved,
+
+So the statement is True.`
+
       `**D.** → False
 
 A necessary condition is disproved by one approved case in which it is absent. Let R2, R3, and R4 vote yes while R1 votes no:
@@ -5578,7 +7401,10 @@ Gate 1 still opens:
 
 $$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
 
-This is an approval without R1's yes-vote. R1 is not always necessary, so the statement is False.`,
+This is an approval without R1's yes-vote. R1 is not always necessary,
+
+So the statement is False.`
+
       `**E.** → True
 
 An existential claim needs one two-vote scenario in which both approval gates fail. Let only R2 and R3 vote yes:
@@ -5593,7 +7419,9 @@ R1 votes no, so gate 2 is also false:
 
 $$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-This witness has exactly two yes-votes and no approval, so the statement is True.`,
+This witness has exactly two yes-votes and no approval,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -5626,7 +7454,10 @@ The commercial-use exception opens only when approval and annual servicing both 
 
 $$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-Because $C$ is true and the exception is false, the commercial-use clause voids Z's warranty, so the statement is True.`,
+Because $C$ is true and the exception is false, the commercial-use clause voids Z's warranty,
+
+So the statement is True.`
+
       `**B.** → False
 
 Sufficiency of written approval would require $W$ alone to make the exception true. Company Z supplies a counterexample:
@@ -5637,7 +7468,10 @@ Therefore
 
 $$W\\land S=\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
 
-The exception stays closed despite approval. Approval alone is not sufficient, so the statement is False.`,
+The exception stays closed despite approval. Approval alone is not sufficient,.
+
+So the statement is False.`
+
       `**C.** → True
 
 The exception is a conjunction, so each condition is necessary. Approval without servicing gives
@@ -5648,14 +7482,20 @@ Servicing without approval gives
 
 $$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-Satisfying only one condition never opens the exception, so the statement is True.`,
+Satisfying only one condition never opens the exception,
+
+So the statement is True.`
+
       `**D.** → False
 
 The exception requires both written approval and servicing. If approval is absent but annual servicing occurs, then
 
 $$W\\land S=\\mathrm{F}\\land\\mathrm{T}=\\mathrm{F}$$
 
-The exception remains closed, and commercial use still voids the warranty, so the statement is False.`,
+The exception remains closed, and commercial use still voids the warranty,
+
+So the statement is False.`
+
       `**E.** → False
 
 This is a scope question. Annual servicing is required inside the exception that rescues commercial use; it is not a global warranty condition. If Company Z never used the product commercially, then
@@ -5664,7 +7504,9 @@ $$C=\\mathrm{F}
 \\quad\\Longrightarrow\\quad
 \\text{the commercial-use voiding branch is inactive}$$
 
-Because that branch is never entered, neither its written-approval test nor its annual-servicing test is consulted. The quoted clause does not impose servicing on noncommercial use, so the statement is False.`,
+Because that branch is never entered, neither its written-approval test nor its annual-servicing test is consulted. The quoted clause does not impose servicing on noncommercial use,.
+
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 6,
@@ -5691,24 +7533,36 @@ Company Z has $C$ true, $W$ true, and $S$ false.`,
     tactical_explanations: [
       `**A.** → True
 
-The target is that there is no smallest positive real, so the legal opening is the opposite: suppose such an $x > 0$ exists. Then $\\frac{x}{2}$ is still positive and strictly smaller than $x$, so $x$ was not smallest. The writeup opens with the negation of the target and ends in an impossibility, so the statement is True.`,
+The target is that there is no smallest positive real, so the legal opening is the opposite: suppose such an $x > 0$ exists. Then $\\frac{x}{2}$ is still positive and strictly smaller than $x$, so $x$ was not smallest. The writeup opens with the negation of the target and ends in an impossibility,
+
+So the statement is True.`
+
       `**B.** → False
 
-A contradiction proof that $\\sqrt{3}$ is irrational must assume the negation, that $\\sqrt{3}$ is rational. Opening with "assume $\\sqrt{3}$ is irrational" assumes the conclusion itself, so there is nothing left to contradict. That is not a valid proof by contradiction, so the statement is False.`,
+A contradiction proof that $\\sqrt{3}$ is irrational must assume the negation, that $\\sqrt{3}$ is rational. Opening with "assume $\\sqrt{3}$ is irrational" assumes the conclusion itself, so there is nothing left to contradict. That is not a valid proof by contradiction,
+
+So the statement is False.`
+
       `**C.** → False
 
 The original is $(\\forall f\\, D(f)) \\land (\\forall t\\, O(t))$. Negating an and yields an or, and negating "all" yields "some not":
 
 $$\\exists f\\, \\neg D(f) \\lor \\exists t\\, \\neg O(t)$$
 
-The offered sentence keeps the and and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false, so the statement is False.`,
+The offered sentence keeps the and and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false,.
+
+So the statement is False.`
+
       `**D.** → False
 
 "Some employee always arrives late" is $\\exists x\\, \\forall d\\, L(x,d)$. Flip both quantifiers and negate inside:
 
 $$\\forall x\\, \\exists d\\, \\neg L(x,d)$$
 
-Every employee has at least one on-time day. "All employees are never late" is $\\forall x\\, \\forall d\\, \\neg L(x,d)$, a stronger ban, so the statement is False.`,
+Every employee has at least one on-time day. "All employees are never late" is $\\forall x\\, \\forall d\\, \\neg L(x,d)$, a stronger ban,
+
+So the statement is False.`
+
       `**E.** → True
 
 The logical idea is the difference between an existential witness and universal generalization. For an existential, one verified value $a$ is enough:
@@ -5721,7 +7575,9 @@ $$a\\text{ arbitrary},\\ P(a)
 \\quad\\Longrightarrow\\quad
 \\forall x\\,P(x)$$
 
-The two proof standards in the claim are therefore correct, so the statement is True.`,
+The two proof standards in the claim are therefore correct,.
+
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 7,
@@ -5758,7 +7614,10 @@ Combining the two established properties gives
 
 $$G(a)\\land H(a)$$
 
-Thus the conclusion has a witness whenever the premises are true, so the statement is True.`,
+Thus the conclusion has a witness whenever the premises are true,.
+
+So the statement is True.`
+
       `**B.** → False
 
 Invalidity is shown by one model with true premises and a false conclusion. Take a world with one person $a$ and set
@@ -5769,7 +7628,10 @@ Then every economist studies human behavior, and no economist specializes in gam
 
 $$\\exists x\\,(G(x)\\land H(x))$$
 
-is false because the only person has $G(a)$ false. The modified premises can be true while the conclusion is false, so the statement is False.`,
+is false because the only person has $G(a)$ false. The modified premises can be true while the conclusion is false,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Validity is a model-by-model conditional: there may be no assignment on which all premises are true and the conclusion is false. Symbolically,
@@ -5779,7 +7641,10 @@ $$\\mathrm{Valid}
 (P_1\\land P_2)\\Rightarrow C
 \\text{ is true in every model}$$
 
-This test does not ask whether $P_1$ or $P_2$ describes the actual world. Requiring both valid form and actually true premises is soundness, not validity. The claim states the validity standard correctly, so the statement is True.`,
+This test does not ask whether $P_1$ or $P_2$ describes the actual world. Requiring both valid form and actually true premises is soundness, not validity. The claim states the validity standard correctly,.
+
+So the statement is True.`
+
       `**D.** → True
 
 The witness derivation remains valid as a piece of logic: whenever both premises hold, Premise 2 supplies an economist-game-theorist $a$, and Premise 1 gives $H(a)$. Real-world falsity of Premise 1 changes only the soundness test:
@@ -5790,7 +7655,10 @@ $$\\mathrm{Sound}
 \\land
 \\mathrm{ActuallyTruePremises}$$
 
-If Premise 1 is actually false, the second conjunct fails while the implication from premises to conclusion remains valid. The argument could therefore be valid but unsound, so the statement is True.`,
+If Premise 1 is actually false, the second conjunct fails while the implication from premises to conclusion remains valid. The argument could therefore be valid but unsound,.
+
+So the statement is True.`
+
       `**E.** → False
 
 Affirming the consequent has the invalid form
@@ -5801,7 +7669,9 @@ The given argument instead instantiates one economist-game-theorist and applies 
 
 $$E(a)\\land G(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad G(a)\\land H(a)$$
 
-No consequent is used to recover an antecedent. This is not affirming the consequent, so the statement is False.`,
+No consequent is used to recover an antecedent. This is not affirming the consequent,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -5840,7 +7710,10 @@ Therefore
 
 $$P\\Rightarrow Q=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-One game with this evaluation disproves the fan's universal rule, so the statement is True.`,
+One game with this evaluation disproves the fan's universal rule,
+
+So the statement is True.`
+
       `**B.** → True
 
 An existential claim needs one explicit witness. Let $g_0$ be the reported game, and write $P(g)$ for “some player scores over $30$” and $Q(g)$ for “the team wins.” Then
@@ -5849,7 +7722,10 @@ $$P(g_0)=\\mathrm{T}\\quad(35>30),
 \\qquad
 Q(g_0)=\\mathrm{F}\\quad(90<95)$$
 
-Hence $P(g_0)\\land\\neg Q(g_0)$ is true, so $g_0$ witnesses $\\exists g\\,(P(g)\\land\\neg Q(g))$, so the statement is True.`,
+Hence $P(g_0)\\land\\neg Q(g_0)$ is true, so $g_0$ witnesses $\\exists g\\,(P(g)\\land\\neg Q(g))$,.
+
+So the statement is True.`
+
       `**C.** → True
 
 The contrapositive has the same truth value as the original implication. In the reported game, the team did not win but Player X scored over $30$, so
@@ -5860,7 +7736,10 @@ Thus
 
 $$\\neg Q\\Rightarrow\\neg P=\\mathrm{T}\\Rightarrow\\mathrm{F}=\\mathrm{F}$$
 
-The same game refutes both equivalent forms, so the statement is True.`,
+The same game refutes both equivalent forms,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The inference about the converse is invalid. The reported game itself gives a concrete truth assignment:
@@ -5877,10 +7756,15 @@ $$Q\\Rightarrow P
 =\\mathrm{F}\\Rightarrow\\mathrm{T}
 =\\mathrm{T}$$
 
-Thus the original can be false while its converse is true. Falsity does not transfer from an implication to its converse, so the statement is False.`,
+Thus the original can be false while its converse is true. Falsity does not transfer from an implication to its converse,.
+
+So the statement is False.`
+
       `**E.** → True
 
-The inverse $\\neg P \\Rightarrow \\neg Q$ pairs with the converse, not with the original. It is tested by games with no $30$-point scorer. The reported game has a $35$-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan's false rule, so the statement is True.`,
+The inverse $\\neg P \\Rightarrow \\neg Q$ pairs with the converse, not with the original. It is tested by games with no $30$-point scorer. The reported game has a $35$-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan's false rule,
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -5907,31 +7791,53 @@ In the reported game Player X scored $35$ and the team lost $90$-$95$.`,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 The professor applied a curve, so the live cutoff is $s \\ge 60$. Student W scored $65$, and
 
 $$65 \\ge 60$$
 
-W receives a B or higher, so the statement is True.`,
+W receives a B or higher.
+
+So the statement is True.`
+
       `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Without a curve the live cutoff is $s \\ge 70$. Student W scored $65$, and
 
 $$65 < 70$$
 
-so the baseline biconditional denies the B. W's score sits in the band that the curve alone unlocks, so the statement is False.`,
+so the baseline biconditional denies the B. W's score sits in the band that the curve alone unlocks.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The baseline uses $70$. The curve replaces it with $60$. Compare:
 
 $$60 < 70$$
 
-Anyone with $s \\ge 70$ still has $s \\ge 60$, so a B already earned under the baseline is never taken away. The threshold moves down, not up, so the statement is True.`,
+Anyone with $s \\ge 70$ still has $s \\ge 60$, so a B already earned under the baseline is never taken away. The threshold moves down, not up.
+
+So the statement is True.`
+
       `**D.** → True
 
-A score of $62$ satisfies $60 \\le 62 < 70$. Under a curve the cutoff is $60$, so $62 \\ge 60$ earns the B. Without a curve the cutoff is $70$, so $62 < 70$ denies it. The B at $62$ occurs only if the curve is applied, so the statement is True.`,
+Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+
+A score of $62$ satisfies $60 \\le 62 < 70$. Under a curve the cutoff is $60$, so $62 \\ge 60$ earns the B. Without a curve the cutoff is $70$, so $62 < 70$ denies it. The B at $62$ occurs only if the curve is applied.
+
+So the statement is True.`
+
       `**E.** → False
 
-The baseline biconditional is a B iff $s \\ge 70$, and the unless clause replaces the cutoff by $60$ when a curve is applied. This exam used a curve, and W scored $65$, which is below $70$ and still a B. Scoring at least $70$ is not necessary in all circumstances, so the statement is False.`,
+The baseline biconditional is a B iff $s \\ge 70$, and the unless clause replaces the cutoff by $60$ when a curve is applied. This exam used a curve, and W scored $65$, which is below $70$ and still a B. Scoring at least $70$ is not necessary in all circumstances,
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -5956,11 +7862,16 @@ This exam used a curve. Student W scored $65$.`,
     tactical_explanations: [
       `**A.** → True
 
+Read the claim against the definition, then check membership or equality one object at a time.
+
 Factor the two counts:
 
 $$15 = 3 \\times 5, \\qquad 28 = 2^{2} \\times 7$$
 
-The prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\mathrm{gcd}(15,28)=1$. Pair 1 is coprime and therefore meets the even-wear test, so the statement is True.`,
+The prime lists $\\{3,5\\}$ and $\\{2,7\\}$ are disjoint, so $\\mathrm{gcd}(15,28)=1$. Pair 1 is coprime and therefore meets the even-wear test.
+
+So the statement is True.`
+
       `**B.** → False
 
 Factor Pair 2:
@@ -5971,7 +7882,10 @@ Both $2$ and $3$ appear on each side. Taking the smaller power of each shared pr
 
 $$\\mathrm{gcd}(24,36) = 2^{2} \\times 3 = 12 \\ne 1$$
 
-Pair 2 is not coprime, so the statement is False.`,
+Pair 2 is not coprime,
+
+So the statement is False.`
+
       `**C.** → True
 
 Coprime means that every prime fails to divide at least one of the two numbers:
@@ -5982,7 +7896,10 @@ Negating the universal flips the quantifier and both failures:
 
 $$\\exists p\\,\\bigl(\\mathrm{Prime}(p)\\land p\\mid m\\land p\\mid n\\bigr)$$
 
-That is exactly the quoted negation, so the statement is True.`,
+That is exactly the quoted negation,.
+
+So the statement is True.`
+
       `**D.** → True
 
 Proof by contradiction starts by assuming the forbidden combination. If both numbers were even, then
@@ -5997,7 +7914,10 @@ so they would share the prime factor $2$:
 
 $$\\mathrm{gcd}(m,n)\\ge2$$
 
-This contradicts $\\mathrm{gcd}(m,n)=1$. A coprime pair cannot contain two even numbers, so the statement is True.`,
+This contradicts $\\mathrm{gcd}(m,n)=1$. A coprime pair cannot contain two even numbers,
+
+So the statement is True.`
+
       `**E.** → False
 
 Disprove the universal claim with one counterexample. Pair 1 has two composite numbers:
@@ -6010,7 +7930,9 @@ Their prime-factor sets are disjoint, so
 
 $$\\mathrm{gcd}(15,28)=1$$
 
-Thus a coprime pair greater than $1$ can contain no prime number at all. This pair refutes “every coprime pair includes a prime,” so the statement is False.`,
+Thus a coprime pair greater than $1$ can contain no prime number at all. This pair refutes “every coprime pair includes a prime,”.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -6044,21 +7966,34 @@ Therefore K enters the late branch, whose first consequence is
 $$d<3\\quad\\Longrightarrow\\quad
 \\text{renewal and charge}$$
 
-The $15\\%$ usage affects only whether a refund follows; it does not undo renewal. K’s subscription renews, so the statement is True.`,
+The $15\\%$ usage affects only whether a refund follows; it does not undo renewal. K’s subscription renews,.
+
+So the statement is True.`
+
       `**B.** → False
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 K cancelled $2$ days out, so the late branch applies. A partial refund is issued if and only if $u < 10\\%$. K used $15\\%$, and
 
 $$15 < 10$$
 
-fails. The biconditional withholds the refund, so the statement is False.`,
+fails. The biconditional withholds the refund.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 K still cancelled $2$ days out, so the late branch still applies. Change only the usage to $5\\%$. Then
 
 $$5 < 10$$
 
-holds, so the refund side of the biconditional opens, so the statement is True.`,
+holds, so the refund side of the biconditional opens.
+
+So the statement is True.`
+
       `**D.** → True
 
 This counterfactual changes the branch selector to $d=4$. Since
@@ -6071,7 +8006,10 @@ $$d\\ge3
 \\quad\\Longrightarrow\\quad
 \\text{no renewal and no charge}$$
 
-The usage test $u<10\\%$ belongs only to the late branch $d<3$, so $u=15\\%$ is not consulted here. The stated counterfactual outcome follows, so the statement is True.`,
+The usage test $u<10\\%$ belongs only to the late branch $d<3$, so $u=15\\%$ is not consulted here. The stated counterfactual outcome follows,.
+
+So the statement is True.`
+
       `**E.** → False
 
 Refute “regardless of timing” with one branch counterexample. Let a subscriber cancel $4$ days before renewal and use $15\\%$ of the service. Then
@@ -6082,7 +8020,9 @@ so the early branch settles the case as no renewal and no charge. The refund bic
 
 $$\\text{refund}\\Leftrightarrow u<10\\%$$
 
-is nested only under $d<3$ and is never evaluated for this subscriber. The usage condition is not timing-independent, so the statement is False.`,
+is nested only under $d<3$ and is never evaluated for this subscriber. The usage condition is not timing-independent,.
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 12,
@@ -6125,23 +8065,37 @@ P(a)=\\mathrm{T},
 \\qquad
 Q(a)=\\mathrm{F}$$
 
-Such a patient would witness exactly the quoted negation and violate the guideline, so the statement is True.`,
+Such a patient would witness exactly the quoted negation and violate the guideline,.
+
+So the statement is True.`
+
       `**B.** → False
 
 A counterexample needs $P$ true and $Q$ false. Compare $38.0$ with the recovered threshold:
 
 $$38.0 > 38$$
 
-is false, so $P$ is false. When $P$ is false the implication is idle and makes no demand about antibiotics. A missing prescription at $38.0$ is compatible with the guideline, so the statement is False.`,
+is false, so $P$ is false. When $P$ is false the implication is idle and makes no demand about antibiotics. A missing prescription at $38.0$ is compatible with the guideline,
+
+So the statement is False.`
+
       `**C.** → True
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. A patient at $37.5^{\\circ}\\mathrm{C}$ with a bacterial infection who still receives antibiotics has $\\neg P$ true and $\\neg Q$ false. That is the unique failure row of the inverse. One such file shows the inverse can be false in practice, so the statement is True.`,
+The inverse is $\\neg P \\Rightarrow \\neg Q$. A patient at $37.5^{\\circ}\\mathrm{C}$ with a bacterial infection who still receives antibiotics has $\\neg P$ true and $\\neg Q$ false. That is the unique failure row of the inverse. One such file shows the inverse can be false in practice,
+
+So the statement is True.`
+
       `**D.** → False
 
-The converse is $Q \\Rightarrow P$. The guideline is $P \\Rightarrow Q$, which points the other way. A patient at $37.5^{\\circ}\\mathrm{C}$ who receives antibiotics has $Q$ true and $P$ false, so $Q \\Rightarrow P$ fails. The original is silent on that file because $P$ never fired. The converse is not guaranteed, so the statement is False.`,
+The converse is $Q \\Rightarrow P$. The guideline is $P \\Rightarrow Q$, which points the other way. A patient at $37.5^{\\circ}\\mathrm{C}$ who receives antibiotics has $Q$ true and $P$ false, so $Q \\Rightarrow P$ fails. The original is silent on that file because $P$ never fired. The converse is not guaranteed,
+
+So the statement is False.`
+
       `**E.** → True
 
-The target is that not every patient prescribed antibiotics has a fever above $38^{\\circ}\\mathrm{C}$. A proof by contradiction of that denial opens by assuming the opposite: every such patient does have a fever above $38^{\\circ}\\mathrm{C}$. A $37.5^{\\circ}\\mathrm{C}$ patient who still receives antibiotics has $Q$ true and $P$ false, so that assumption cannot stand. The opening described is the legal first line, so the statement is True.`,
+The target is that not every patient prescribed antibiotics has a fever above $38^{\\circ}\\mathrm{C}$. A proof by contradiction of that denial opens by assuming the opposite: every such patient does have a fever above $38^{\\circ}\\mathrm{C}$. A $37.5^{\\circ}\\mathrm{C}$ patient who still receives antibiotics has $Q$ true and $P$ false, so that assumption cannot stand. The opening described is the legal first line,
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 13,
@@ -6181,19 +8135,33 @@ $$P(w)\\Rightarrow Q(w)
 \\mathrm{T}\\Rightarrow\\mathrm{F}
 =\\mathrm{F}$$
 
-This concrete password is a counterexample to the absolute policy, so the statement is True.`,
+This concrete password is a counterexample to the absolute policy,.
+
+So the statement is True.`
+
       `**B.** → True
 
-The converse is $Q \\Rightarrow P$: if a password is classified as strong, then it is at least $12$ characters. That sentence lives with the inverse, not with the original. The twelve-a string has $Q$ false, so it never enters the converse's hypothesis. Collapse of $P \\Rightarrow Q$ does not settle $Q \\Rightarrow P$, so the statement is True.`,
+The converse is $Q \\Rightarrow P$: if a password is classified as strong, then it is at least $12$ characters. That sentence lives with the inverse, not with the original. The twelve-a string has $Q$ false, so it never enters the converse's hypothesis. Collapse of $P \\Rightarrow Q$ does not settle $Q \\Rightarrow P$,
+
+So the statement is True.`
+
       `**C.** → False
 
-The converse $Q \\Rightarrow P$ asks something only when $Q$ is true. An $8$-character randomized password that is not classified as strong has $P$ false and $Q$ false, so the converse holds vacuously and learns nothing. The file that would refute $Q \\Rightarrow P$ is a password classified as strong and shorter than $12$. This rejected password is not that file, so the statement is False.`,
+The converse $Q \\Rightarrow P$ asks something only when $Q$ is true. An $8$-character randomized password that is not classified as strong has $P$ false and $Q$ false, so the converse holds vacuously and learns nothing. The file that would refute $Q \\Rightarrow P$ is a password classified as strong and shorter than $12$. This rejected password is not that file,
+
+So the statement is False.`
+
       `**D.** → False
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. The contrapositive of the original is $\\neg Q \\Rightarrow \\neg P$. Those arrows run opposite ways. The inverse is equivalent to the converse $Q \\Rightarrow P$, not to the contrapositive. Its truth can therefore be read off the converse, so the statement is False.`,
+The inverse is $\\neg P \\Rightarrow \\neg Q$. The contrapositive of the original is $\\neg Q \\Rightarrow \\neg P$. Those arrows run opposite ways. The inverse is equivalent to the converse $Q \\Rightarrow P$, not to the contrapositive. Its truth can therefore be read off the converse,
+
+So the statement is False.`
+
       `**E.** → False
 
-"If a password is not strong, it is under $12$ characters" is $\\neg Q \\Rightarrow \\neg P$, the contrapositive of the policy. A contrapositive always shares the original's truth value. The policy is false, witnessed by "aaaaaaaaaaaa": length $12$ so $P$ is true, not classified as strong so $Q$ is false. The same password shows the contrapositive false: not strong, yet length $12$. No separate check is needed, so the statement is False.`,
+"If a password is not strong, it is under $12$ characters" is $\\neg Q \\Rightarrow \\neg P$, the contrapositive of the policy. A contrapositive always shares the original's truth value. The policy is false, witnessed by "aaaaaaaaaaaa": length $12$ so $P$ is true, not classified as strong so $Q$ is false. The same password shows the contrapositive false: not strong, yet length $12$. No separate check is needed,
+
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 14,
@@ -6230,14 +8198,20 @@ Because chip #$317$ belongs to Batch $12$,
 
 $$\\exists x\\in\\text{Batch 12}\\,\\neg A(x)$$
 
-is true, which falsifies $\\forall x\\in\\text{Batch 12}\\,A(x)$. The other $499$ chips cannot repair a failed universal, so the statement is True.`,
+is true, which falsifies $\\forall x\\in\\text{Batch 12}\\,A(x)$. The other $499$ chips cannot repair a failed universal,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The manager's claim is $\\forall x\\, A(x)$ on Batch $12$. Negating a universal produces an existential:
 
 $$\\neg \\forall x\\, A(x) \\equiv \\exists x\\, \\neg A(x)$$
 
-In words: at least one chip fails. The quoted sentence "all chips fail" is $\\forall x\\, \\neg A(x)$, which needs all $500$ failures. Chip #$317$ already witnesses the existential without a clean sweep, so the statement is False.`,
+In words: at least one chip fails. The quoted sentence "all chips fail" is $\\forall x\\, \\neg A(x)$, which needs all $500$ failures. Chip #$317$ already witnesses the existential without a clean sweep,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Use vacuous truth. The universal can fail only if there is a counterexample chip in Batch $13$:
@@ -6248,7 +8222,10 @@ $$\\neg\\forall x\\,
 \\exists x\\,
 \\bigl(B_{13}(x)\\land\\neg A(x)\\bigr)$$
 
-But Batch $13$ contains zero chips, so there is no value $x$ with $B_{13}(x)=\\mathrm{T}$. No counterexample witness exists, and the universal is therefore vacuously true, so the statement is True.`,
+But Batch $13$ contains zero chips, so there is no value $x$ with $B_{13}(x)=\\mathrm{T}$. No counterexample witness exists, and the universal is therefore vacuously true,.
+
+So the statement is True.`
+
       `**D.** → False
 
 Quantifier order determines whether the defect code may depend on the failed chip. The first sentence is
@@ -6259,7 +8236,10 @@ The second sentence is
 
 $$\\exists c\\,\\forall f\\,E(c,f)$$
 
-With two failures $f_1,f_2$, code $c_1$ may explain only $f_1$ and code $c_2$ only $f_2$. Then the first formula is true, but no single code serves both failures, so the second is false. The sentences are not equivalent, so the statement is False.`,
+With two failures $f_1,f_2$, code $c_1$ may explain only $f_1$ and code $c_2$ only $f_2$. Then the first formula is true, but no single code serves both failures, so the second is false. The sentences are not equivalent,.
+
+So the statement is False.`
+
       `**E.** → True
 
 An existential claim is established by one witness. Choose the reported chip:
@@ -6272,7 +8252,9 @@ $$B_{12}(317)=\\mathrm{T},
 \\qquad
 \\neg A(317)=\\mathrm{T}$$
 
-Hence $317$ witnesses $\\exists x\\,(B_{12}(x)\\land\\neg A(x))$. No information about the remaining chips is needed, so the statement is True.`,
+Hence $317$ witnesses $\\exists x\\,(B_{12}(x)\\land\\neg A(x))$. No information about the remaining chips is needed,.
+
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 15,
@@ -6307,7 +8289,10 @@ n=6k=3(2k)
 \\quad\\Longrightarrow\\quad
 3\\mid n$$
 
-Thus $6\\mid n$ always forces the opposite of $3\\nmid n$. There is not even one witness to $6\\mid n\\land3\\nmid n$, much less infinitely many, so the statement is False.`,
+Thus $6\\mid n$ always forces the opposite of $3\\nmid n$. There is not even one witness to $6\\mid n\\land3\\nmid n$, much less infinitely many,.
+
+So the statement is False.`
+
       `**B.** → True
 
 The converse is $3 \\mid n \\Rightarrow 6 \\mid n$. Test $n = 9$:
@@ -6318,10 +8303,16 @@ so $3$ divides $9$. Next
 
 $$9 = 6 \\times 1 + 3$$
 
-so $6$ does not divide $9$. Hypothesis true and conclusion false: $9$ is a counterexample, so the statement is True.`,
+so $6$ does not divide $9$. Hypothesis true and conclusion false: $9$ is a counterexample,
+
+So the statement is True.`
+
       `**C.** → True
 
-The inverse is $6 \\nmid n \\Rightarrow 3 \\nmid n$. Inverse and converse share a truth value. Test $n = 9$ against the inverse: $6 \\nmid 9$ holds by the remainder $3$, while $3 \\nmid 9$ fails because $9 = 3 \\times 3$. True hypothesis and false conclusion: the inverse fails at $9$ with the converse, so the statement is True.`,
+The inverse is $6 \\nmid n \\Rightarrow 3 \\nmid n$. Inverse and converse share a truth value. Test $n = 9$ against the inverse: $6 \\nmid 9$ holds by the remainder $3$, while $3 \\nmid 9$ fails because $9 = 3 \\times 3$. True hypothesis and false conclusion: the inverse fails at $9$ with the converse,
+
+So the statement is True.`
+
       `**D.** → False
 
 Prove the contrapositive for an arbitrary integer. Assume $3\\nmid n$. If $6\\mid n$ also held, then for some integer $k$,
@@ -6332,10 +8323,15 @@ which would give $3\\mid n$, contradicting the assumption. Therefore
 
 $$3\\nmid n\\quad\\Longrightarrow\\quad6\\nmid n$$
 
-for every integer $n$. No counterexample value exists, so the claim that the contrapositive is false for some integer is wrong, so the statement is False.`,
+for every integer $n$. No counterexample value exists, so the claim that the contrapositive is false for some integer is wrong,.
+
+So the statement is False.`
+
       `**E.** → False
 
-The original $6 \\mid n \\Rightarrow 3 \\mid n$ holds for every integer. The converse $3 \\mid n \\Rightarrow 6 \\mid n$ is a different implication, already refuted by $n = 9$. At $n = 9$ the original has a false hypothesis, so it holds vacuously, while the converse fails. Falsity of the converse does not leak into the original, so the statement is False.`,
+The original $6 \\mid n \\Rightarrow 3 \\mid n$ holds for every integer. The converse $3 \\mid n \\Rightarrow 6 \\mid n$ is a different implication, already refuted by $n = 9$. At $n = 9$ the original has a false hypothesis, so it holds vacuously, while the converse fails. Falsity of the converse does not leak into the original,
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 16,
@@ -6368,7 +8364,10 @@ The given square $1234^{2} = 1{,}522{,}756$ is even. Rule $R$ says an even squar
 
 $$1234 = 2 \\times 617$$
 
-Hypothesis true and conclusion true. The rule applies in the stated direction, so the statement is True.`,
+Hypothesis true and conclusion true. The rule applies in the stated direction,
+
+So the statement is True.`
+
       `**B.** → False
 
 Write $E(k)$ for “$k$ is even.” The rule and its contrapositive are
@@ -6381,14 +8380,22 @@ Thus a contraposition proof assumes $n$ is odd and derives that $n^{2}$ is odd. 
 
 $$E(n)\\Rightarrow E(n^{2}),$$
 
-which reverses the original arrow and is its converse. It is not a proof by contraposition of the stated rule, so the statement is False.`,
+which reverses the original arrow and is its converse. It is not a proof by contraposition of the stated rule,.
+
+So the statement is False.`
+
       `**C.** → True
+
+Translate the propositional claim into truth conditions before testing a row or an equivalence.
 
 The given square $4321^{2} = 18{,}671{,}041$ is odd. An odd square forces an odd ID. Direct check:
 
 $$4321 = 2 \\times 2160 + 1$$
 
-so $4321$ is odd. Hypothesis true and conclusion true, so the statement is True.`,
+so $4321$ is odd. Hypothesis true and conclusion true.
+
+So the statement is True.`
+
       `**D.** → False
 
 Let $P$ mean “$n^{2}$ is even” and $Q$ mean “$n$ is even.” The two formulas reverse the arrow:
@@ -6403,14 +8410,19 @@ $$P\\Rightarrow Q=\\mathrm{T},
 \\qquad
 Q\\Rightarrow P=\\mathrm{F}$$
 
-For integer parity, separate arithmetic proofs happen to make both directions true, but that does not make the formulas logically identical, so the statement is False.`,
+For integer parity, separate arithmetic proofs happen to make both directions true, but that does not make the formulas logically identical,.
+
+So the statement is False.`
+
       `**E.** → True
 
 An implication $R$ fails only on $n^{2}$ even and $n$ odd. A contradiction proof of $R$ therefore assumes exactly that pair, then derives an impossibility. From $n = 2k+1$,
 
 $$n^{2} = 4k^{2} + 4k + 1$$
 
-which is odd, colliding with the assumption that $n^{2}$ is even. The opening the claim describes is the legal one, so the statement is True.`,
+which is odd, colliding with the assumption that $n^{2}$ is even. The opening the claim describes is the legal one,.
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 17,
@@ -6445,7 +8457,10 @@ $$\\neg\\forall t\\,(P(t)\\Rightarrow Q(t))
 \\equiv
 \\exists t\\,(P(t)\\land\\neg Q(t))$$
 
-A hypothetical witness $t_0$ would have to be inscribed with a diameter as one side, $P(t_0)=\\mathrm{T}$, while lacking a right angle, $Q(t_0)=\\mathrm{F}$. That is exactly “there exists such a triangle without a right angle,” so the statement is True.`,
+A hypothetical witness $t_0$ would have to be inscribed with a diameter as one side, $P(t_0)=\\mathrm{T}$, while lacking a right angle, $Q(t_0)=\\mathrm{F}$. That is exactly “there exists such a triangle without a right angle,”.
+
+So the statement is True.`
+
       `**B.** → True
 
 Thales’ theorem proves the universal statement
@@ -6456,10 +8471,16 @@ Its negation is the counterexample claim
 
 $$\\exists t\\,(P(t)\\land\\neg Q(t))$$
 
-If that existential had a witness, the witness would falsify the proved universal. Since no such witness can coexist with the theorem, the negation is false. The claim correctly reports that truth value, so the statement is True.`,
+If that existential had a witness, the witness would falsify the proved universal. Since no such witness can coexist with the theorem, the negation is false. The claim correctly reports that truth value,.
+
+So the statement is True.`
+
       `**C.** → True
 
-Start with an arbitrary right triangle, hypotenuse $AB$, right angle at $C$. Let $M$ be the midpoint of $AB$. Then $MA = MB$ by construction, and $MC = MA$ as well. The circle centred at $M$ with radius $MA$ passes through $A$, $B$, and $C$, and $AB$ is a diameter. Every right triangle can be inscribed that way, so the converse holds, so the statement is True.`,
+Start with an arbitrary right triangle, hypotenuse $AB$, right angle at $C$. Let $M$ be the midpoint of $AB$. Then $MA = MB$ by construction, and $MC = MA$ as well. The circle centred at $M$ with radius $MA$ passes through $A$, $B$, and $C$, and $AB$ is a diameter. Every right triangle can be inscribed that way, so the converse holds,
+
+So the statement is True.`
+
       `**D.** → True
 
 Thales’ theorem proves the forward implication, while the circumcircle construction for a right triangle proves the converse:
@@ -6474,7 +8495,10 @@ $$P\\Leftrightarrow Q
 \\equiv
 (P\\Rightarrow Q)\\land(Q\\Rightarrow P)$$
 
-Both arrows have independent geometric proofs here. Therefore this particular relationship is a biconditional, so the statement is True.`,
+Both arrows have independent geometric proofs here. Therefore this particular relationship is a biconditional,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The original and inverse are
@@ -6491,7 +8515,9 @@ P\\Rightarrow Q=\\mathrm{T},
 \\quad
 \\neg P\\Rightarrow\\neg Q=\\mathrm{F}$$
 
-The original is equivalent to $\\neg Q\\Rightarrow\\neg P$, its contrapositive; the inverse is equivalent to the converse. The stated reason for transferring truth is invalid, so the statement is False.`,
+The original is equivalent to $\\neg Q\\Rightarrow\\neg P$, its contrapositive; the inverse is equivalent to the converse. The stated reason for transferring truth is invalid,.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 18,
@@ -6524,23 +8550,39 @@ $$\\neg\\forall n\\,(S(n)\\Rightarrow O(n))
 \\equiv
 \\exists n\\,(S(n)\\land\\neg O(n))$$
 
-Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form, so the statement is True.`,
+Because a finite divisor count is either odd or even, $\\neg O(n)$ means an even number of divisors. Thus a counterexample witness would have to be a perfect square with an even divisor count. The quoted sentence has exactly that logical form,.
+
+So the statement is True.`
+
       `**B.** → True
+
+Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 $36$ is $6^{2}$, so the hypothesis holds. The listed divisors are
 
 $$\\{1,2,3,4,6,9,12,18,36\\}$$
 
-nine numbers, and nine is odd. Hypothesis true and conclusion true: $36$ supports the theorem and is not a counterexample, so the statement is True.`,
+nine numbers, and nine is odd. Hypothesis true and conclusion true: $36$ supports the theorem and is not a counterexample.
+
+So the statement is True.`
+
       `**C.** → True
 
-If the divisor count is odd, a leftover self-partner must exist, so $d^{2} = n$ and $n$ is a square. That is the converse: odd count $\\Rightarrow$ square. Sample $36$ has nine divisors and is a square. Sample $20$ has six divisors and is not a square. Both directions hold by the same pairing, so the statement is True.`,
+If the divisor count is odd, a leftover self-partner must exist, so $d^{2} = n$ and $n$ is a square. That is the converse: odd count $\\Rightarrow$ square. Sample $36$ has nine divisors and is a square. Sample $20$ has six divisors and is not a square. Both directions hold by the same pairing,
+
+So the statement is True.`
+
       `**D.** → False
 
-The theorem speaks only about perfect squares. $20$ sits between $4^{2} = 16$ and $5^{2} = 25$, so $20$ is not a square and the hypothesis $S$ is false. An implication with a false "if" is not refuted by $20$. A counterexample would need a square with an even divisor count, so the statement is False.`,
+The theorem speaks only about perfect squares. $20$ sits between $4^{2} = 16$ and $5^{2} = 25$, so $20$ is not a square and the hypothesis $S$ is false. An implication with a false "if" is not refuted by $20$. A counterexample would need a square with an even divisor count,
+
+So the statement is False.`
+
       `**E.** → True
 
-The inverse is "not a square, therefore even divisor count," equivalent to the converse. With no leftover square-root partner, every divisor has a distinct mate and the count is even. Sample $20$ is not a square and has $6$ divisors, even. The inverse holds because the converse does, so the statement is True.`,
+The inverse is "not a square, therefore even divisor count," equivalent to the converse. With no leftover square-root partner, every divisor has a distinct mate and the count is even. Sample $20$ is not a square and has $6$ divisors, even. The inverse holds because the converse does,
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 19,
@@ -6583,23 +8625,37 @@ Clue (1) is $E\\Leftrightarrow\\neg F$. Since $\\neg F$ is true,
 
 $$\\neg F\\quad\\Longrightarrow\\quad E$$
 
-Therefore Emma is the doctor, so the statement is True.`,
+Therefore Emma is the doctor,
+
+So the statement is True.`
+
       `**B.** → False
 
-Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails, so the statement is False.`,
+Clue (2) alone says Felix is an engineer exactly when Grace is a teacher. Both sides are unset, so (2) names nobody. Even after (3) shuts Grace out of Teacher, (2) yields only that Felix is not the engineer. Pinning him to Teacher still needs Emma placed as doctor and Hugo placed as lawyer. A right job with a wrong reason fails,
+
+So the statement is False.`
+
       `**C.** → True
 
 First, clues (3), (2), and (1) force $\\neg G$, then $\\neg F$, then $E$: Emma is Doctor. Clue (4) makes Hugo Lawyer. The unused jobs for Felix and Grace are therefore
 
 $$\\{\\text{Engineer},\\text{Teacher}\\}$$
 
-But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace, so the statement is True.`,
+But $\\neg F$ says Felix is not Engineer, so Felix must be Teacher. Because all four jobs are distinct, the remaining Engineer job goes to Grace,.
+
+So the statement is True.`
+
       `**D.** → True
 
-Drop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant, so the statement is True.`,
+Drop clue (3) and try Grace as teacher. Then (2) makes Felix the engineer, so (1) makes $E$ false: Emma is not the doctor. Clue (4) already placed Hugo as lawyer, so the only leftover job for Emma is Doctor, contradicting $E$ false. Clues (1), (2), and (4) already forbid Grace-as-teacher, so clue (3) is redundant,
+
+So the statement is True.`
+
       `**E.** → True
 
-The chain to Emma used only (3), (2), and (1): Grace not teacher, therefore Felix not engineer, therefore Emma is the doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher. Remove clue (4) and Emma is still the doctor, so the statement is True.`,
+The chain to Emma used only (3), (2), and (1): Grace not teacher, therefore Felix not engineer, therefore Emma is the doctor. Clue (4) names Hugo as lawyer and is used only later to split Engineer from Teacher. Remove clue (4) and Emma is still the doctor,
+
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 20,
@@ -6640,10 +8696,16 @@ $$\\neg\\forall s\\,(C(s)\\Rightarrow B(s))
 \\equiv
 \\exists s\\,(C(s)\\land\\neg B(s))$$
 
-A witness would have to be one sequence that both converges and is unbounded. The theorem $C(s)\\Rightarrow B(s)$ rules out that combination for every sequence, so the described witness set is empty. The negation describes an impossible situation, so the statement is True.`,
+A witness would have to be one sequence that both converges and is unbounded. The theorem $C(s)\\Rightarrow B(s)$ rules out that combination for every sequence, so the described witness set is empty. The negation describes an impossible situation,.
+
+So the statement is True.`
+
       `**B.** → True
 
-The converse claims: bounded, therefore convergent. For $a_{n} = (-1)^{n}$ the terms are only $-1$ and $1$, so every term lies in $[-1,1]$ and the sequence is bounded. Odd terms stay at $-1$ and even terms stay at $1$, so no single limit exists. Bounded with no limit: the converse fails, so the statement is True.`,
+The converse claims: bounded, therefore convergent. For $a_{n} = (-1)^{n}$ the terms are only $-1$ and $1$, so every term lies in $[-1,1]$ and the sequence is bounded. Odd terms stay at $-1$ and even terms stay at $1$, so no single limit exists. Bounded with no limit: the converse fails,
+
+So the statement is True.`
+
       `**C.** → True
 
 The inverse is $\\neg C\\Rightarrow\\neg B$, which is the contrapositive of the converse $B\\Rightarrow C$ and therefore shares its truth value. Use the explicit sequence
@@ -6658,13 +8720,21 @@ $$a_{2k}=1,
 \\qquad
 a_{2k+1}=-1$$
 
-Thus it does not converge, making $\\neg C$ true and $\\neg B$ false. This sequence refutes the inverse as well as the converse, so the statement is True.`,
+Thus it does not converge, making $\\neg C$ true and $\\neg B$ false. This sequence refutes the inverse as well as the converse,.
+
+So the statement is True.`
+
       `**D.** → True
 
-The contrapositive is "not bounded, therefore does not converge," equivalent to the proved theorem, hence true. For the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate, and the contrapositive then yields divergence. Both halves of the claim hold, so the statement is True.`,
+The contrapositive is "not bounded, therefore does not converge," equivalent to the proved theorem, hence true. For the sequences $n$, $2n$, and $n^{2}$, unboundedness is immediate, and the contrapositive then yields divergence. Both halves of the claim hold,
+
+So the statement is True.`
+
       `**E.** → False
 
-The theorem $P \\Rightarrow Q$ sits with its contrapositive. The converse $Q \\Rightarrow P$ sits with the inverse. Feed $(-1)^{n}$ to the original: the sequence does not converge, so $P$ is false and $P \\Rightarrow Q$ holds vacuously. The same sequence kills the converse. Falsity of the converse does not touch the theorem, so the statement is False.`,
+The theorem $P \\Rightarrow Q$ sits with its contrapositive. The converse $Q \\Rightarrow P$ sits with the inverse. Feed $(-1)^{n}$ to the original: the sequence does not converge, so $P$ is false and $P \\Rightarrow Q$ holds vacuously. The same sequence kills the converse. Falsity of the converse does not touch the theorem,
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 21,
@@ -6695,14 +8765,20 @@ $$J=\\text{true},\\qquad K=L=\\text{false}$$
 
 K's sentence "J is lying" is false, which fits K being a liar. But L says that K and L are the same type. Under this assignment they are both liars, so L's sentence is true. A liar cannot make a true statement, and the J-truthful case fails.
 
-Therefore J cannot be a truth-teller and must be a liar, so the statement is True.`,
+Therefore J cannot be a truth-teller and must be a liar,.
+
+So the statement is True.`
+
       `**B.** → True
 
 The claim says K is a truth-teller. From letter A, J is already forced to be a liar. K's sentence is precisely "J is lying," so its content is true:
 
 $$\\neg J\\quad\\Rightarrow\\quad \\text{K's sentence is true}$$
 
-An islander's type must match the truth value of the sentence spoken. K therefore cannot be a liar while making this true accusation. K is a truth-teller, so the statement is True.`,
+An islander's type must match the truth value of the sentence spoken. K therefore cannot be a liar while making this true accusation. K is a truth-teller,.
+
+So the statement is True.`
+
       `**C.** → True
 
 The claim says L is a truth-teller. The shared forcing has J as a liar and K as a truth-teller. Try making L a liar as well:
@@ -6711,7 +8787,10 @@ $$J=\\text{false},\\qquad K=\\text{true},\\qquad L=\\text{false}$$
 
 Then K would be the only truth-teller. That makes J's sentence, "Exactly one of us is a truth-teller," true. But J is already forced to be a liar, so this case is impossible.
 
-The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "same type" sentence is indeed true, so the statement is True.`,
+The only alternative is $L=\\text{true}$. With K and L both truth-tellers, L's "same type" sentence is indeed true,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The claim requires the final assignment to contain exactly one truth-teller. J is forced to be a liar, and K's true accusation then forces K to be a truth-teller. If L were a liar, K alone would be the one truth-teller:
@@ -6722,7 +8801,10 @@ That would make J's "exactly one" sentence true, contradicting J's liar type. Th
 
 $$0+1+1=2,$$
 
-not one, so the statement is False.`,
+not one,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The claim needs a second assignment, so split first on J's type. If J is truthful, J's sentence makes K and L liars, but then L truthfully says that K and L are the same type. That branch fails.
@@ -6731,7 +8813,9 @@ If J is a liar, K's accusation "J is lying" is true, so K must be truthful. Now 
 
 $$J=\\text{liar},\\qquad K=L=\\text{truth-teller}$$
 
-In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment, so the statement is False.`,
+In this assignment J's sentence is false, K's is true, and L's is true, so it survives. Every alternative case has failed, leaving no second assignment,.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 22,
@@ -6778,7 +8862,10 @@ The claim says Dmitri attends. Rule (4) states this directly:
 
 $$(4)\\qquad D$$
 
-The other rules can restrict Ana, Boris, and Ceci, but none can cancel an explicit fact. For example, $\\{A,C,D\\}$ obeys (1) and (2), and Ana's presence activates the exception in (3), so rule (4) is consistent with the system. Dmitri is in every solution, so the statement is True.`,
+The other rules can restrict Ana, Boris, and Ceci, but none can cancel an explicit fact. For example, $\\{A,C,D\\}$ obeys (1) and (2), and Ana's presence activates the exception in (3), so rule (4) is consistent with the system. Dmitri is in every solution,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The claim says the rules force one truth value for Ana. Test both values.
@@ -6789,7 +8876,10 @@ $$A\\Rightarrow\\neg B\\Rightarrow C$$
 
 Rule (4) gives $D$. Because Ana attends, the exception in rule (3) applies, so Ceci and Dmitri may attend together. Thus $\\{A,C,D\\}$ is legal.
 
-If $A$ is false, choose $B$ true and $C$ false. Rules (1) and (2) are idle, rule (3) has false hypothesis $C\\land\\neg A$, and rule (4) gives $D$. Thus $\\{B,D\\}$ is also legal. Ana is in one valid roster and out of another, so the statement is False.`,
+If $A$ is false, choose $B$ true and $C$ false. Rules (1) and (2) are idle, rule (3) has false hypothesis $C\\land\\neg A$, and rule (4) gives $D$. Thus $\\{B,D\\}$ is also legal. Ana is in one valid roster and out of another,.
+
+So the statement is False.`
+
       `**C.** → True
 
 The claim only needs one valid roster with exactly three attendees. Start with Ana attending. Rule (1) forces Boris out, and then rule (2) forces Ceci in:
@@ -6800,7 +8890,10 @@ Rule (4) puts Dmitri in. Rule (3) normally acts when $C\\land\\neg A$ holds, but
 
 $$\\{A,C,D\\},\\qquad |\\{A,C,D\\}|=3.$$
 
-This is a legal witness for the existence claim, so the statement is True.`,
+This is a legal witness for the existence claim,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The claim requires a solution with both Ana and Boris absent. Assume
@@ -6812,7 +8905,10 @@ Rule (2) turns $\\neg B$ into $C$. Since Ana is absent, the exception in rule (3
 $$\\neg B\\overset{(2)}{\\Rightarrow}C,\\qquad
 C\\land\\neg A\\overset{(3)}{\\Rightarrow}\\neg D.$$
 
-But rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D$, so Ana and Boris cannot both be absent, so the statement is False.`,
+But rule (4) requires $D$. The attempted assignment forces both $D$ and $\\neg D$, so Ana and Boris cannot both be absent,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The claim says replacing rule (3) by the stricter implication would destroy every solution:
@@ -6823,7 +8919,9 @@ Rule (4) still gives $D$, so the contrapose of (3') forces $\\neg C$. The contra
 
 $$\\neg A,\\qquad B,\\qquad\\neg C,\\qquad D.$$
 
-This is the roster $\\{B,D\\}$. Rule (1) is idle because Ana is out, rule (2) is idle because Boris is in, (3') is idle because Ceci is out, and (4) holds. At least one solution survives the stricter rule, so the statement is False.`,
+This is the roster $\\{B,D\\}$. Rule (1) is idle because Ana is out, rule (2) is idle because Boris is in, (3') is idle because Ceci is out, and (4) holds. At least one solution survives the stricter rule,.
+
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 23,
@@ -6886,7 +8984,10 @@ so
 
 $$N\\Rightarrow\\neg Z.$$
 
-Thus any roster with Noah must omit Zoe, exactly as claimed, so the statement is True.`,
+Thus any roster with Noah must omit Zoe, exactly as claimed,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The claim requires a valid roster containing both Leo and Noah. Assume $L\\land N$. Rule (2), "Leo joins only if Zoe joins," means
@@ -6898,7 +8999,10 @@ Rule (4) then sends Zoe's attendance to Noah's absence:
 $$L\\overset{(2)}{\\Rightarrow}Z
 \\overset{(4)}{\\Rightarrow}\\neg N.$$
 
-This contradicts the assumed $N$. Rules (2) and (4) therefore forbid Leo and Noah from joining together, so the statement is False.`,
+This contradicts the assumed $N$. Rules (2) and (4) therefore forbid Leo and Noah from joining together,.
+
+So the statement is False.`
+
       `**C.** → True
 
 The claim needs one solution with Maria in and Leo out. Try the roster with Maria alone:
@@ -6907,7 +9011,10 @@ $$N=0,\\qquad M=1,\\qquad L=0,\\qquad Z=0.$$
 
 Rule (1) is satisfied because its hypothesis $N$ is false. Rule (2) is satisfied because Leo is out. Rule (3), $M\\lor L$, holds through Maria. Rule (4) is satisfied because Zoe is out.
 
-Thus $\\{M\\}$ is a legal roster with Maria joining and Leo not joining, so the statement is True.`,
+Thus $\\{M\\}$ is a legal roster with Maria joining and Leo not joining,.
+
+So the statement is True.`
+
       `**D.** → True
 
 The claim asks whether Maria's absence forces Noah's absence. Rule (1) is
@@ -6918,7 +9025,10 @@ Its contrapositive reverses the implication and negates both parts:
 
 $$\\neg M\\Rightarrow\\neg N.$$
 
-If Maria is out, Noah cannot be in, because Noah's presence would immediately require Maria by rule (1). This is exactly the claimed consequence, so the statement is True.`,
+If Maria is out, Noah cannot be in, because Noah's presence would immediately require Maria by rule (1). This is exactly the claimed consequence,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The claim says every legal roster includes Zoe. To disprove a "must" claim, it is enough to build one legal roster with $\\neg Z$.
@@ -6927,7 +9037,9 @@ Let Maria join alone:
 
 $$\\{M\\},\\qquad N=L=Z=0.$$
 
-With Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe, so the statement is False.`,
+With Noah out, rule (1) is idle. With Leo out, rule (2) is idle. Maria satisfies rule (3), $M\\lor L$, and Zoe's absence makes rule (4) idle. This valid roster omits Zoe,.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 24,
@@ -6981,7 +9093,10 @@ The claim asks what Ben's participation forces. Rule (1) sends Ben to Carla, and
 $$B\\overset{(1)}{\\Rightarrow}C
 \\overset{(3)}{\\Rightarrow}\\neg D.$$
 
-There is no branch in which Ben plays without Carla, and no branch in which Carla and Dan both play. Therefore Ben playing always forces Dan out, so the statement is True.`,
+There is no branch in which Ben plays without Carla, and no branch in which Carla and Dan both play. Therefore Ben playing always forces Dan out,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The claim requires a legal roster with both Ben and Dan. Assume $B\\land D$. By rule (1), Ben forces Carla in:
@@ -6992,14 +9107,20 @@ Then rule (3) forces Dan out:
 
 $$C\\overset{(3)}{\\Rightarrow}\\neg D.$$
 
-The attempted roster contains $D$ and also forces $\\neg D$. Ella's status cannot repair that collision, so Ben and Dan cannot play together, so the statement is False.`,
+The attempted roster contains $D$ and also forces $\\neg D$. Ella's status cannot repair that collision, so Ben and Dan cannot play together,.
+
+So the statement is False.`
+
       `**C.** → True
 
 The claim needs one valid roster in which Ella is the only player. Assign
 
 $$B=0,\\qquad C=0,\\qquad D=0,\\qquad E=1.$$
 
-Rules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster, so the statement is True.`,
+Rules (1), (2), and (3) all have false hypotheses, so none forces another player in. Rule (4), $B\\lor E$, is satisfied by Ella. Hence $\\{E\\}$ is a legal one-person roster,
+
+So the statement is True.`
+
       `**D.** → True
 
 The claim asks whether Dan playing forces Carla out. Rule (3) says
@@ -7014,14 +9135,19 @@ which simplifies to
 
 $$D\\Rightarrow\\neg C.$$
 
-Thus any roster containing Dan must omit Carla, exactly as claimed, so the statement is True.`,
+Thus any roster containing Dan must omit Carla, exactly as claimed,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The claim says Carla appears in every legal roster. Test Carla's absence by letting Ella play alone:
 
 $$\\{E\\},\\qquad B=C=D=0.$$
 
-Ben's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out, so the statement is False.`,
+Ben's absence makes rule (1) idle. Dan's absence makes rule (2) idle, and Carla's absence makes rule (3) idle. Ella satisfies rule (4), which requires $B\\lor E$. This valid roster has Carla out,.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 25,
@@ -7082,14 +9208,20 @@ so
 
 $$O\\Rightarrow\\neg Q.$$
 
-Therefore an evening with Owen cooking cannot also have Quinn cooking, so the statement is True.`,
+Therefore an evening with Owen cooking cannot also have Quinn cooking,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The claim requires a legal evening with Owen and Priya both cooking. Assume $O\\land P$. Rule (1) applies as soon as Owen cooks:
 
 $$(1)\\qquad O\\Rightarrow\\neg P.$$
 
-The assumption $O$ therefore forces $\\neg P$, directly contradicting the assumed $P$. Quinn's status does not affect rule (1), so no assignment can contain both Owen and Priya, so the statement is False.`,
+The assumption $O$ therefore forces $\\neg P$, directly contradicting the assumed $P$. Quinn's status does not affect rule (1), so no assignment can contain both Owen and Priya,.
+
+So the statement is False.`
+
       `**C.** → False
 
 The claim proposes Quinn cooking alone, with both Owen and Priya absent:
@@ -7100,14 +9232,20 @@ Rule (2) requires at least one of Owen or Priya:
 
 $$(2)\\qquad O\\lor P.$$
 
-Under the proposed assignment both disjuncts are false. Although Quinn with Owen absent satisfies rule (4), satisfying one rule cannot repair the failure of rule (2). Quinn cannot cook alone under all four rules, so the statement is False.`,
+Under the proposed assignment both disjuncts are false. Although Quinn with Owen absent satisfies rule (4), satisfying one rule cannot repair the failure of rule (2). Quinn cannot cook alone under all four rules,.
+
+So the statement is False.`
+
       `**D.** → True
 
 The claim says Priya's participation guarantees Quinn's. Rule (3) is exactly the forward implication
 
 $$(3)\\qquad P\\Rightarrow Q.$$
 
-Starting with $P$, rule (3) immediately forces $Q$. Rule (4) then forces $\\neg O$, which is compatible with rule (2) because Priya already satisfies $O\\lor P$. There is no exception to rule (3), so Priya cooking always brings Quinn in, so the statement is True.`,
+Starting with $P$, rule (3) immediately forces $Q$. Rule (4) then forces $\\neg O$, which is compatible with rule (2) because Priya already satisfies $O\\lor P$. There is no exception to rule (3), so Priya cooking always brings Quinn in,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The claim says Owen cooks in every solution. Test the opposite by putting Priya in instead. Rule (3) then brings Quinn in:
@@ -7115,7 +9253,9 @@ The claim says Owen cooks in every solution. Test the opposite by putting Priya 
 $$P\\overset{(3)}{\\Rightarrow}Q
 \\overset{(4)}{\\Rightarrow}\\neg O.$$
 
-The resulting evening is $\\{P,Q\\}$. Rule (1) is idle because Owen is out, rule (2) is satisfied by Priya, rule (3) is satisfied by Quinn, and rule (4) is satisfied because Owen is out. This valid evening omits Owen, so the statement is False.`,
+The resulting evening is $\\{P,Q\\}$. Rule (1) is idle because Owen is out, rule (2) is satisfied by Priya, rule (3) is satisfied by Quinn, and rule (4) is satisfied because Owen is out. This valid evening omits Owen,.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 26,
@@ -7176,7 +9316,10 @@ Rule (2), "Grace goes unless Hugo goes," is $G\\lor H$. Since Grace is out, Hugo
 $$\\neg G\\overset{(2)}{\\Rightarrow}H
 \\overset{(6)}{\\Rightarrow}\\neg F.$$
 
-Diego's attendance has forced both $F$ and $\\neg F$. Thus no valid roster contains Diego, so the statement is False.`,
+Diego's attendance has forced both $F$ and $\\neg F$. Thus no valid roster contains Diego,.
+
+So the statement is False.`
+
       `**B.** → True
 
 The claim asks whether Fatima going forces Hugo out. Rule (6), "Hugo goes only if Fatima does not," means
@@ -7191,7 +9334,10 @@ which simplifies to
 
 $$F\\Rightarrow\\neg H.$$
 
-Therefore Fatima and Hugo cannot attend together, exactly as the claim says, so the statement is True.`,
+Therefore Fatima and Hugo cannot attend together, exactly as the claim says,.
+
+So the statement is True.`
+
       `**C.** → True
 
 The claim says Hugo appears in every valid roster. Letter A forced Diego out:
@@ -7206,7 +9352,10 @@ With the Diego disjunct false, the Hugo disjunct must be true:
 
 $$\\neg D\\land(D\\lor H)\\Rightarrow H.$$
 
-Every valid roster therefore contains Hugo, so the statement is True.`,
+Every valid roster therefore contains Hugo,.
+
+So the statement is True.`
+
       `**D.** → True
 
 The claim needs one legal roster containing both Grace and Iris. Try
@@ -7215,7 +9364,10 @@ $$\\{G,H,I\\},\\qquad D=F=0.$$
 
 Rule (1) is idle because Diego is out. Rule (2), $G\\lor H$, holds. Rule (3) is idle because Fatima is out. Hugo satisfies rule (4), Iris satisfies rule (5) because Diego is out, and Hugo satisfies rule (6) because Fatima is out.
 
-All six rules hold while Grace and Iris both attend, so the statement is True.`,
+All six rules hold while Grace and Iris both attend,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The claim is the implication $I\\Rightarrow F$. To refute it, look for a legal roster with Iris in and Fatima out. Use
@@ -7224,7 +9376,9 @@ $$\\{G,H,I\\},\\qquad I=1,\\qquad F=0.$$
 
 As rule (5) requires, Iris has Diego out. Hugo then satisfies rule (4), and rule (6) agrees with Fatima being out. Grace satisfies rule (2), while rules (1) and (3) are idle because Diego and Fatima are absent.
 
-This valid roster makes the hypothesis $I$ true and the conclusion $F$ false, so the statement is False.`,
+This valid roster makes the hypothesis $I$ true and the conclusion $F$ false,.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 27,
@@ -7284,7 +9438,10 @@ Rule (6), $E\\Rightarrow\\neg B$, then forces Bella out:
 
 $$A\\Rightarrow C\\Rightarrow E\\Rightarrow\\neg B.$$
 
-But rule (1) already forced $B$. Since $A$ leads to both $B$ and $\\neg B$, Aiden cannot present in any valid scenario, so the statement is True.`,
+But rule (1) already forced $B$. Since $A$ leads to both $B$ and $\\neg B$, Aiden cannot present in any valid scenario,.
+
+So the statement is True.`
+
       `**B.** → False
 
 The claim needs one valid scenario with Bella presenting. Assume $B$. Rule (3) forces Daisy out. Rule (6) says $E\\Rightarrow\\neg B$; its contrapositive forces Ethan out when Bella is in:
@@ -7294,16 +9451,22 @@ B\\overset{\\text{contrapose of }(6)}{\\Rightarrow}\\neg E.$$
 
 Rule (2) requires $D\\lor E$, but both choices have now been forced false:
 
-$$\\neg D\\land\\neg E\\quad\\text{contradicts}\quad D\\lor E.$$
+$$\\neg D\\land\\neg E\\quad\\text{contradicts}\\quad D\\lor E.$$
 
-No valid scenario can contain Bella, so the statement is False.`,
+No valid scenario can contain Bella,.
+
+So the statement is False.`
+
       `**C.** → True
 
 The claim asks what must happen if Caleb presents. Rule (4), "Caleb presents only if Ethan presents," translates in the only-if direction as
 
 $$(4)\\qquad C\\Rightarrow E.$$
 
-Starting from $C$, rule (4) immediately forces $E$. The reverse $E\\Rightarrow C$ is not promised, but the claim uses the correct forward direction. Therefore every roster with Caleb also has Ethan, so the statement is True.`,
+Starting from $C$, rule (4) immediately forces $E$. The reverse $E\\Rightarrow C$ is not promised, but the claim uses the correct forward direction. Therefore every roster with Caleb also has Ethan,.
+
+So the statement is True.`
+
       `**D.** → False
 
 The claim needs a valid roster with Faye. Assume $F$. Rule (5) forces Aiden, and rule (1) then forces Bella and Caleb:
@@ -7316,7 +9479,10 @@ Caleb forces Ethan by rule (4), while Ethan forces Bella out by rule (6):
 $$C\\overset{(4)}{\\Rightarrow}E
 \\overset{(6)}{\\Rightarrow}\\neg B.$$
 
-This collides with the Bella forced by rule (1). Faye's attendance creates a contradiction, so no valid roster contains Faye, so the statement is False.`,
+This collides with the Bella forced by rule (1). Faye's attendance creates a contradiction, so no valid roster contains Faye,.
+
+So the statement is False.`
+
       `**E.** → False
 
 The claim says exactly one valid roster exists. Two distinct legal rosters are enough to defeat uniqueness.
@@ -7327,7 +9493,9 @@ Next take $\\{E\\}$. Ethan satisfies rule (2). Rule (6) requires Bella to be out
 
 $$\\{D\\}\\neq\\{E\\}.$$
 
-Both rosters satisfy all six rules, so there is more than one valid way, so the statement is False.`,
+Both rosters satisfy all six rules, so there is more than one valid way,.
+
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -7386,7 +9554,10 @@ Rule (4) requires at least one of Petra or Sana:
 
 $$(4)\\qquad P\\lor S.$$
 
-Under the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review, so the statement is True.`,
+Under the assumption, both disjuncts are false. Thus Petra's absence makes rule (4) impossible to satisfy, so Petra is forced to review,.
+
+So the statement is True.`
+
       `**B.** → True
 
 The claim asks what follows if Quinn reviews. Rule (1) says
@@ -7401,7 +9572,10 @@ so
 
 $$Q\\Rightarrow\\neg P.$$
 
-Therefore Quinn's presence forces Petra's absence, exactly as claimed, so the statement is True.`,
+Therefore Quinn's presence forces Petra's absence, exactly as claimed,
+
+So the statement is True.`
+
       `**C.** → False
 
 The claim needs at least one valid assignment with Ravi. Petra is already forced in by rule (4) together with rule (6). Rule (1) then forces Quinn out, and rule (3) forces Theo in:
@@ -7413,7 +9587,10 @@ Rule (5) now applies:
 
 $$T\\overset{(5)}{\\Rightarrow}\\neg R.$$
 
-Thus every valid assignment forces Ravi out. Assuming Ravi in would collide with the forced $\\neg R$, so the statement is False.`,
+Thus every valid assignment forces Ravi out. Assuming Ravi in would collide with the forced $\\neg R$,.
+
+So the statement is False.`
+
       `**D.** → True
 
 The claim says the unique assignment includes both Theo and Sana. Begin with Petra, who is forced in. Rules (1) and (3) then force Quinn out and Theo in:
@@ -7426,7 +9603,10 @@ Rule (5) forces Ravi out. Rule (2) requires $R\\lor S$, so Ravi's absence forces
 $$T\\overset{(5)}{\\Rightarrow}\\neg R,\\qquad
 \\neg R\\land(R\\lor S)\\overset{(2)}{\\Rightarrow}S.$$
 
-The forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana, so the statement is True.`,
+The forced assignment is $\\{P,S,T\\}$, which contains Theo and Sana,.
+
+So the statement is True.`
+
       `**E.** → False
 
 The claim requires at least two different valid assignments. Instead, each reviewer's status is forced in sequence.
@@ -7439,7 +9619,9 @@ So every valid assignment has exactly
 
 $$P=S=T=1,\\qquad Q=R=0.$$
 
-This assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment, so the statement is False.`,
+This assignment satisfies rule (6) because Sana's required Petra is present. No variable remains free to create a second assignment,.
+
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 29,
@@ -7510,7 +9692,10 @@ Only Wendy, Xavier, Yara, and Zane remain as possible competitors. Rule (3) says
 
 **Case Xavier in, Wendy out.** Rule (4) is $X\\Rightarrow\\neg Y$, so Yara is out. Rule (5) needs $Y\\lor Z$, and with Yara gone Zane must enter. The roster is then only Xavier and Zane — size $2$, again below four.
 
-Both Victor-out branches break rule (8). Therefore every valid roster has Victor in, so the statement is True.`,
+Both Victor-out branches break rule (8). Therefore every valid roster has Victor in,.
+
+So the statement is True.`
+
       `**B.** → False
 
 From letter A (and the overview solve), Victor competes in every valid roster. Feed that fact forward through the later rules.
@@ -7523,7 +9708,10 @@ Rule (3) says exactly one of Wendy or Xavier competes. Wendy is already in, so X
 
 $$W \\implies \\neg X$$
 
-Xavier is therefore out of every valid roster. The claim says some valid roster includes Xavier, which never happens, so the statement is False.`,
+Xavier is therefore out of every valid roster. The claim says some valid roster includes Xavier, which never happens,.
+
+So the statement is False.`
+
       `**C.** → True
 
 Rule (6) says "Zane competes only if Bianca does not," which is the implication
@@ -7536,7 +9724,10 @@ $$\\neg(\\neg B) \\Rightarrow \\neg Z$$
 
 $$B \\Rightarrow \\neg Z$$
 
-That is exactly "If Bianca competes, then Zane does not compete." The claim restates a forced consequence of rule (6), so the statement is True.`,
+That is exactly "If Bianca competes, then Zane does not compete." The claim restates a forced consequence of rule (6),.
+
+So the statement is True.`
+
       `**D.** → False
 
 After Victor is forced in, the chain $V\\Rightarrow W$ and rule (3) also force Uma in, Wendy in, and Xavier out. The forced core is therefore
@@ -7549,7 +9740,10 @@ $$\\{Y\\},\\quad \\{Z\\},\\quad \\{Y,B\\},\\quad \\{Y,Z\\}$$
 
 (The triple $\\{Y,Z,B\\}$ is illegal by (6); $\\{B\\}$ alone fails (5); $\\{Z,B\\}$ fails (6).)
 
-Each legal extra produces a different full roster on the same core, so there are four valid rosters, not one. The claim of uniqueness fails, so the statement is False.`,
+Each legal extra produces a different full roster on the same core, so there are four valid rosters, not one. The claim of uniqueness fails,.
+
+So the statement is False.`
+
       `**E.** → False
 
 A roster of size exactly six would need six of the seven finalists. With the forced core $\\{U,V,W\\}$ already in and Xavier forced out, the only way to reach size six is to add all three of Yara, Zane, and Bianca:
@@ -7558,7 +9752,9 @@ $$\\{U,V,W,Y,Z,B\\}$$
 
 But rule (6) is $Z\\Rightarrow\\neg B$, so Zane and Bianca cannot both compete. The extra $\\{Y,Z,B\\}$ is illegal.
 
-The legal extras recovered above have size $1$ or $2$, so total roster sizes are only $4$ or $5$. Size six never appears, so the statement is False.`,
+The legal extras recovered above have size $1$ or $2$, so total roster sizes are only $4$ or $5$. Size six never appears,.
+
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 30,
