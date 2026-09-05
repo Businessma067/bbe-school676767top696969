@@ -31,8 +31,6 @@ const MATH_CH8_CORE: MathTask[] = [
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The mass at a named side is the coefficient times the cube of that side:
 
 $$M(2)=5\\cdot 2^{3}$$
@@ -45,8 +43,6 @@ The claimed mass is $40$ grams.
 
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -80,8 +76,6 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-Start from the calibrated closed form in the overview.
-
 At side $1$ the cube is $1$, so the coefficient is the mass itself:
 
 $$M(1)=5\\cdot 1^{3}$$
@@ -94,8 +88,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -249,8 +241,6 @@ As $x\\to\\infty$ that denominator grows without bound while the numerator stays
 
 Signal strength tends to $0$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -264,12 +254,8 @@ Near the mast a small positive $x$ makes the denominator $x^{3}$ arbitrarily sma
 
 Strength grows without bound as $x\\to 0^{+}$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
 
 The $2$ in $T(x)=2x^{\\frac{1}{2}}$ multiplies the power; it does not cap the output. After four minutes:
 
@@ -280,6 +266,8 @@ $$=2\\cdot 2$$
 $$=4$$
 
 Already $4>2$, and a positive exponent keeps climbing. There is no finite ceiling.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -386,8 +374,6 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-Start from the calibrated closed form in the overview.
-
 Divide the fixed overhead by eight units:
 
 $$U(8)=\\frac{600}{8}$$
@@ -447,7 +433,7 @@ The positive exponent $\\frac{2}{3}$ keeps finishing hours in a numerator. The s
 
 Name the recovered power rule, then substitute the claimed input.
 
-The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{.
+The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1.
 
 The claim asserts
 
@@ -460,7 +446,7 @@ So the statement is True.`,
 
 Form the ratio so the unknown positive coefficient cancels.
 
-The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{.
+The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1.
 
 The overview recovered $A=8$. At $100$ staff the square root is $10$:
 
@@ -475,10 +461,6 @@ The output is $80$ crates per hour.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{.
-
 A staffing scale factor is fixed by the exponent alone, because $A$ cancels:
 
 $$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}$$
@@ -489,12 +471,10 @@ $$=2$$
 
 Quadrupling the staffing doubles the output.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{.
 
 A doubled coefficient appears once above and once below in the ratio, so it cancels:
 
@@ -506,12 +486,14 @@ $$=2$$
 
 The ratio stays $2$. Doubling $A$ would double every output, not this scale factor.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → False
 
 Check the claim against the recovered scale factor only.
 
-The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1}{.
+The overview already recovered The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ multiplies output by $k^{\\frac{1.
 
 The overview recovered $A=8$. At four staff the square root is $2$:
 
@@ -587,8 +569,6 @@ The cubic index exceeds the quadratic one for every $n>2$.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
 On $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
 $$F(1)=2, \\qquad G(1)$$
@@ -597,10 +577,10 @@ $$F(1)=1$$
 
 The quadratic index leads throughout $0<n<2$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
 
 The overview simplified the ratio to $\\frac{n}{2}$. As $n$ grows without bound, so does $\\frac{n}{2}$. Already at $n=20$:
 
@@ -610,10 +590,10 @@ $$\\frac{G(20)}{F(20)}=10$$
 
 The ratio tends to infinity, not to $1$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -707,8 +687,6 @@ $$M(-8)=-2$$
 
 The cube root of $-8$ is $-2$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -724,8 +702,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 A negative exponent puts the root in the denominator:
 
@@ -790,8 +766,6 @@ On $x>0$ the numerator stays at $12$ while $\\sqrt{x}$ grows with $x$, so the qu
 
 The drop is strictly decreasing on $x>0$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -822,8 +796,6 @@ The drop grows without bound rather than settling.
 
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -899,10 +871,6 @@ The panel needs $180$ litres.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered primer is $y(r)=5r^{2}$. Multiplying the radius by $k$ multiplies the requirement by $k^{2}$, b.
-
 A fifty percent increase in radius is the width multiplier $k=1.5$. For a square power the coefficient cancels:
 
 $$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{A r^{2}}$$
@@ -912,6 +880,8 @@ $$=1.5^{2}$$
 $$=2.25$$
 
 The primer is multiplied by $2.25$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -992,8 +962,6 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
 Raising the speed from $10$ to $20$ is the multiplier $k=2$. The coefficient cancels in the ratio:
 
 $$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$
@@ -1003,6 +971,8 @@ $$=2^{2}$$
 $$=4$$
 
 Doubling the speed multiplies the index by $4$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1039,8 +1009,6 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
-
 A ten percent overspeed is the speed multiplier $k=1.1$, and the exponent acts on the whole multiplier:
 
 $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
@@ -1048,6 +1016,8 @@ $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
 $$\\frac{E(1.1v)}{E(v)}=1.21$$
 
 The index is multiplied by $1.21$, a twenty-one percent rise rather than ten.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -1079,8 +1049,6 @@ Levels keep the scale factor $A$. Scale comparisons cancel $A$ and leave only th
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered harvest is $Y(h)=2h^{\\frac{1}{3}}$..
 
 The overview recovered $r=\\frac{1}{3}$. An exponent smaller than one means that multiplying hours by $k$ multiplies harvest only by $k^{r}$, a smaller factor.
@@ -1105,10 +1073,6 @@ The factor is about $1.26$, not $2$.
 So the statement is False.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered harvest is $Y(h)=2h^{\\frac{1}{3}}$..
-
 The overview recovered $Y(h)=2h^{\\frac{1}{3}}$. Doubling the logged $4$ kg harvest means $Y=8$:
 
 $$2h^{\\frac{1}{3}}=8$$
@@ -1118,6 +1082,8 @@ $$h^{\\frac{1}{3}}=4$$
 $$h=64$$
 
 Sixty-four hours is eight times the logged $8$ hours, which is more than a doubling.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -1261,10 +1227,6 @@ Sixty-four agents exceed the cap of $50$.
 So the statement is True.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered wait is $W(n)=48 n^{-\\frac{1}{2}}$. The cap $n\\le 50$ constrains inversions..
-
 Doubling the team is the multiplier $k=2$, and the exponent $-\\frac{1}{2}$ acts on that whole factor:
 
 $$\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}$$
@@ -1272,6 +1234,8 @@ $$\\frac{W(2n)}{W(n)}=2^{-\\frac{1}{2}}$$
 $$=\\frac{1}{\\sqrt{2}}\\approx 0.707$$
 
 Wait falls to about $0.707$ of its former value, not to $\\frac{1}{2}$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -1339,8 +1303,6 @@ So the statement is True.`,
 
 Read the exponent from the overview before comparing growth rates.
 
-Read the exponent from the overview before comparing growth rates.
-
 The overview recovered $\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$. Past $d=8$ that leftover factor exceeds $1$ and keeps climbing, because it is a positive power of $d$. A second crossing would need the ratio to return through $1$, which a strictly increasing leftover cannot do.
 
 Omar stays ahead at every greater depth.
@@ -1348,18 +1310,16 @@ Omar stays ahead at every greater depth.
 So the statement is True.`,
       `**D.** → False
 
-Start from the calibrated closed form in the overview.
-
 The joint flow is the sum of two powers with distinct exponents:
 
 $$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$
 
 A sum of two powers is a power only when the exponents match. These exponents are $\\frac{1}{2}$ and $\\frac{3}{2}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -1407,8 +1367,6 @@ The recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered bill is $C(n)=50+50\\sqrt{n}$..
 
 The overview recovered $F=50$ and $A=50$, so $C(n)=50+50\\sqrt{n}$. A power of the run cannot carry a leftover constant. The setup of $50$ euros kills that shape.
@@ -1436,8 +1394,6 @@ $$\\frac{C(n)}{n}=\\frac{50}{n}+50 n^{-\\frac{1}{2}}$$
 Both pieces decline as $n$ grows: the setup is spread over more copies, and the leftover exponent on the variable term is negative.
 
 A longer run is cheaper per copy.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -1511,8 +1467,6 @@ Then $F+4\\cdot 50=250$, so $F=50$. The recovered bill is $C(n)=50+50\\sqrt{n}$.
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=296$$.
 
 The overview recovered $S(u)=2u$. The inner exponent $\\frac{3}{2}$ and the outer exponent $\\frac{2}{3}$ multiply to $1$, so strength is a linear monomial in purity.
@@ -1540,8 +1494,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -1623,8 +1575,6 @@ $$S(u)=2u$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered load is $L(x)=\\frac{1}{2}x^{2}$..
 
 The overview recovered $r=2$. An exponent of $2$ sits above one, so multiplying jobs by $k$ multiplies load by $k^{2}$, a larger factor.
@@ -1662,10 +1612,6 @@ The leftover exponent is positive, so that average climbs with the job count.
 So the statement is True.`,
       `**D.** → False
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered load is $L(x)=\\frac{1}{2}x^{2}$..
-
 The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $16$ jobs:
 
 $$L(16)=\\frac{1}{2}\\cdot 16^{2}$$
@@ -1675,6 +1621,8 @@ $$=\\frac{1}{2}\\cdot 256$$
 $$=128$$
 
 One hundred and twenty-eight sits below $200$, so the alarm has not yet tripped.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -1860,8 +1808,6 @@ So the statement is True.`,
 
 Form the ratio so the unknown positive coefficient cancels.
 
-Form the ratio so the unknown positive coefficient cancels.
-
 The overview already recovered The recovered costs are $C(n)=n^{2}$ and $D(n)=16n$. Their difference factors as $n(n-16)$..
 
 The overview recovered $C(n)-D(n)=n(n-16)$. For $n>16$ that factor is positive, so $C>D$. The quadratic automated bill is the more expensive one past the meeting, not the cheaper one.
@@ -1951,9 +1897,7 @@ The recovered costs are $C(n)=n^{2}$ and $D(n)=16n$. Their difference factors as
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s).
+The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H.
 
 The overview recovered exponent $\\frac{1}{2}$. An exponent smaller than one means that multiplying staff by $k$ multiplies throughput only by $k^{\\frac{1}{2}}$, a smaller factor.
 
@@ -1964,7 +1908,7 @@ So the statement is True.`,
 
 Form the ratio so the unknown positive coefficient cancels.
 
-The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s).
+The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H.
 
 Doubling headcount is the multiplier $k=2$, and the exponent $\\frac{1}{2}$ acts on that whole factor:
 
@@ -1979,9 +1923,7 @@ So the statement is False.`,
 
 Read the exponent from the overview before comparing growth rates.
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s).
+The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H.
 
 The overview recovered billed throughput $B(s)=\\min\\bigl(H(s),\\,80\\bigr)$. Once the cap binds, that rule is constant in $s$, not a monomial. A power of staff cannot switch from $8s^{\\frac{1}{2}}$ to a flat $80$.
 
@@ -1992,7 +1934,7 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s).
+The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H.
 
 The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $64$ staff:
 
@@ -2009,7 +1951,7 @@ So the statement is False.`,
 
 Check the claim against the recovered scale factor only.
 
-The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H(s).
+The overview already recovered The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the two-piece rule $B(s)=\\min\\bigl(H.
 
 The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $81$ staff:
 
@@ -2096,8 +2038,6 @@ $$\\frac{W(2k)}{W(k)}=2^{-\\frac{3}{2}}$$
 $$=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$
 
 Wait falls to about $0.354$ of its former value, not to $\\frac{1}{2}$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**D.** → False
@@ -2283,8 +2223,6 @@ $$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
 A power of $n$ cannot carry a leftover constant. The overview recovered $F=200\\neq 0$, so
 
 $$C(n)=200+30\\sqrt{n}$$
@@ -2330,8 +2268,6 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-Start from the calibrated closed form in the overview.
-
 The overview recovered $C(n)=200+30\\sqrt{n}$. At $900$ accounts:
 
 $$C(900)=200+30\\cdot 30$$
@@ -2350,8 +2286,6 @@ $$C(200)=200+30\\sqrt{200}$$
 $$C(200)=200+300\\sqrt{2}$$
 
 Since $\\sqrt{2}<1.5$, this sits below $650$. Directly, $300\\cdot 1.414\\approx 424$ plus the $200$ setup is about $624$, which is not more than $750$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -2395,8 +2329,6 @@ $$C(n)=200+30\\sqrt{n}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview recovered $E(t)=240 t^{\\frac{1}{4}}$. That is a monomial in elapsed time, so total fleet emissions are a power of $t$.
 
 Compare that figure with the threshold or value named in the claim.
@@ -2412,12 +2344,8 @@ $$\\frac{E(2t)}{E(t)}=2^{\\frac{1}{4}}$$
 
 Now $2^{\\frac{1}{4}}<2$, so doubling time does not double emissions.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
 
 The overview recovered $e(a)=120 a^{-\\frac{1}{2}}$. The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
@@ -2429,10 +2357,10 @@ $$e(16)=15$$
 
 and $15<30$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
 
 Start from the calibrated closed form in the overview.
 
@@ -2448,8 +2376,6 @@ The claim compares this with $400$. We have $480>400$.
 
 So the statement is True.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -2599,8 +2525,6 @@ $$Q(d)=2 d^{\\frac{5}{2}}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=3$$.
 
 The overview recovered $S(t)=9\\pi t$. That is a constant times elapsed time, so the covered area is proportional to $t$.
@@ -2642,8 +2566,6 @@ So the statement is True.`,
 
 Start from the calibrated closed form in the overview.
 
-Start from the calibrated closed form in the overview.
-
 The overview already recovered A=3$$.
 
 The overview recovered $S(t)=9\\pi t$. After $4$ hours:
@@ -2654,8 +2576,6 @@ The claim compares this with $30\\pi$. We have $36\\pi>30\\pi$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -2717,8 +2637,6 @@ $$5\\cdot 64=320$$
 
 Both sit under $400$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -2750,8 +2668,6 @@ $$\\sqrt{u}=10, \\qquad u$$
 $$\\sqrt{u}=100$$
 
 For every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -2834,8 +2750,6 @@ So the statement is True.`,
 
 Form the ratio so the unknown positive coefficient cancels.
 
-Form the ratio so the unknown positive coefficient cancels.
-
 Quadrupling cumulative output is two doublings:
 
 $$\\frac{c(4N)}{c(N)}=(0.8)^{2}$$
@@ -2847,18 +2761,16 @@ The claim is that unit cost halves. A factor of $0.64$ is not $\\frac{1}{2}$.
 So the statement is False.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
 A simple reciprocal would double-and-halve: $2^{-1}=\\frac{1}{2}$. The recovered doubling factor is $0.8$:
 
 $$0.8>\\frac{1}{2}$$
 
 so each doubling cuts cost by less than a reciprocal would, and unit cost falls more slowly than $\\frac{1}{N}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
 
 Start from the calibrated closed form in the overview.
 
@@ -2872,8 +2784,6 @@ The claim compares this with $520$. We have $512<520$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -2960,8 +2870,6 @@ Factor the recovered net gain:
 $$N(x)=\\sqrt{x}\\,(90-6\\sqrt{x})$$
 
 This is negative precisely when $\\sqrt{x}>15$, that is $x>225$. For every larger spend the factor $(90-6\\sqrt{x})$ stays negative and grows in size, so once net gain turns negative it stays negative.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3080,8 +2988,6 @@ $$L=\\left(\\frac{g}{16}\\right)^{\\frac{4}{3}}$$
 
 That is a monomial in the finished count.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -3149,8 +3055,6 @@ $$p=\\left(\\frac{2000}{R}\\right)^{2}$$
 
 That is a monomial in revenue.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → False
 
@@ -3167,10 +3071,6 @@ Now $\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$, so doubling price doe
 So the statement is False.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=250\\cdot 8=2000$$.
-
 The overview recovered $R(p)=2000 p^{-\\frac{1}{2}}$. The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
 $$R(4)=1000, \\qquad R(16)$$
@@ -3178,6 +3078,8 @@ $$R(4)=1000, \\qquad R(16)$$
 $$R(4)=500$$
 
 and $500<1000$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3196,10 +3098,6 @@ The claim compares this with $450$. We have $400<450$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=250\\cdot 8=2000$$.
 
 The charge is covered when $R(p)\\ge 400$:
 
@@ -3289,8 +3187,6 @@ $$18\\cdot 8^{-\\frac{1}{3}}=6$$
 
 and $6<9$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -3309,21 +3205,17 @@ The claim compares this with $150$. We have $162>150$.
 So the statement is True.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=90, \\qquad A=18$$.
-
 The $250$-item order needs
 
 $$18 h^{\\frac{2}{3}}=250$$
 
 $$h^{\\frac{2}{3}}=\\frac{125}{9}$$
 
-$$h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}$$
-
-$$h=\\frac{625\\sqrt{5}}{27}$$
+$$h=\\left(\\frac{125}{9}\\right)^{\\frac{3}{2}}=\\frac{625\\sqrt{5}}{27}$$
 
 Now $\\sqrt{5}\\approx 2.236$, so $h\\approx 51.8$, which is not under $40$ hours.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -3365,8 +3257,6 @@ $$N(h)=18 h^{\\frac{2}{3}}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=2$$.
 
 The overview recovered $P(v)=2 v^{\\frac{5}{2}}$. That is a monomial in airspeed, so absorbed power is a power function of airspeed.
@@ -3386,8 +3276,6 @@ $$2^{\\frac{3}{2}}=2\\sqrt{2}$$
 
 Now $2\\sqrt{2}\\approx 2.83$, which is not more than $3$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**C.** → True
 
@@ -3401,14 +3289,8 @@ $$v=\\left(\\frac{F}{2}\\right)^{\\frac{2}{3}}$$
 
 That is a monomial in drag.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=2$$.
 
 The mounting rating $F=250$ needs
 
@@ -3500,8 +3382,6 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 still rises in $p$ because the exponent $-\\frac{1}{2}+1$ is positive. From $p=16$ to $p=25$, quantity falls $300\\to 240$ while revenue rises $4800\\to 6000$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**C.** → True
 
@@ -3514,8 +3394,6 @@ The overview recovered $q(p)=1200 p^{-\\frac{1}{2}}$. Solving for the positive p
 $$p=\\left(\\frac{1200}{q}\\right)^{2}$$
 
 That is a monomial in monthly quantity.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -3534,8 +3412,6 @@ The claim compares this with $250$. We have $240<250$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -3614,8 +3490,6 @@ $$4\\cdot 8^{\\frac{1}{3}}=12$$
 
 and $12>8$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -3650,8 +3524,6 @@ The claim compares this with $50$. We have $64>50$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -3705,8 +3577,6 @@ Shipped output is $\\min(y(x),1024)$.`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=9$$.
 
 The overview recovered $g(f(x))=x$. Applying reporting after calibration returns the original reading.
@@ -3718,8 +3588,6 @@ So the statement is True.`,
 
 Form the ratio so the unknown positive coefficient cancels.
 
-Form the ratio so the unknown positive coefficient cancels.
-
 The overview already recovered A=9$$.
 
 The overview recovered $g(f(x))=x$, the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
@@ -3728,8 +3596,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3756,10 +3622,6 @@ The claim compares this with $140$. We have $144>140$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=9$$.
 
 The overview recovered $f(x)=9 x^{\\frac{2}{3}}$. A raw reading of $125$ is sent out with
 
@@ -3815,8 +3677,6 @@ $$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=y$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview recovered a single positive crossing at load $x=8$. Two distinct positive loads cannot both be ties.
 
 Compare that figure with the threshold or value named in the claim.
@@ -3837,8 +3697,6 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**C.** → False
 
-Read the exponent from the overview before comparing growth rates.
-
 The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the benchmark and at the crossing:
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
@@ -3851,8 +3709,6 @@ Those are not the same.
 
 So the statement is False.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
 
 Start from the calibrated closed form in the overview.
 
@@ -3915,18 +3771,12 @@ On $x>0$, setting $S=T$ gives the unique positive crossing $x=8$.`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=5$$.
 
 The overview recovered $C(m)=5 m^{\\frac{4}{5}}$. The exponent $\\frac{4}{5}>0$, so $C$ is strictly increasing on $m>0$. Adding machines therefore raises sustained capacity.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3951,10 +3801,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=5$$.
 
 The overview recovered $C(m)=5 m^{\\frac{4}{5}}$. A fleet of $243=3^{5}$ machines sustains
 
@@ -4032,10 +3878,6 @@ The overview recovered $\\Pi(L)=120 L^{\\frac{1}{2}}-6L$. That is a difference o
 So the statement is False.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=1200, \\qquad A=120$$.
-
 Net gain is maximised where $\\Pi'(L)=0$:
 
 $$60 L^{-\\frac{1}{2}}=6, \\qquad L$$
@@ -4050,16 +3892,14 @@ $$120 L^{\\frac{1}{2}}=400$$
 
 Those hours are not the same.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-Read the exponent from the overview before comparing growth rates.
+The wage bill is $6L=6 L^{1}$. That is a monomial in hours hired.
 
 The overview already recovered A=1200, \\qquad A=120$$.
-
-The wage bill is $6L=6 L^{1}$. That is a monomial in hours hired.
 
 Compare that figure with the threshold or value named in the claim.
 
@@ -4169,8 +4009,6 @@ $$\\frac{1}{4}\\cdot 20=10$$
 
 and $10>5$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -4237,10 +4075,6 @@ $$C_1(q)=\\frac{1}{2} q^{2}, \\qquad C_2(q)=\\frac{1}{4} q^{2}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=3$$.
-
 Both fitted points sit on the recovered law:
 
 $$3\\cdot 4^{\\frac{3}{2}}=3\\cdot 8$$
@@ -4303,8 +4137,6 @@ So the statement is True.`,
 
 Check the claim against the recovered scale factor only.
 
-Check the claim against the recovered scale factor only.
-
 The overview already recovered A=3$$.
 
 The fitted response at $x=9$ is
@@ -4357,8 +4189,6 @@ $$y=3 x^{\\frac{3}{2}}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered demand is $q(p)=6400 p^{-2}$. Isolating price takes the reciprocal square root:.
 
 The overview recovered $p=80 q^{-\\frac{1}{2}}$. That is a monomial in $q$, coefficient $80$ and exponent $-\\frac{1}{2}$. There is no leftover constant and no logarithm.
@@ -4403,8 +4233,6 @@ $$100^{\\frac{1}{2}}=10$$
 $$R(100)=800$$
 
 Eight hundred sits above $750$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -4514,14 +4342,8 @@ $$L=36$$
 
 Hours must go from $9$ to $36$, which is more than a doubling.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered output is $Y(L)=20 L^{\\frac{1}{2}}$. Average product then lowers the exponent by one:.
 
 This is a level of average product at $25$ hours. The overview recovered $\\frac{Y}{L}=20 L^{-\\frac{1}{2}}$.
 
@@ -4532,6 +4354,8 @@ $$25^{-\\frac{1}{2}}=\\frac{1}{5}$$
 $$\\frac{Y(25)}{25}=4$$
 
 Four sits below $5$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -4573,18 +4397,12 @@ $$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered revenue is $R(q)=60 q^{\\frac{1}{2}}$, and profit is.
 
 Break-even is $\\Pi(q)=0$. The overview recovered the two positive roots $q=100$ and $q=400$. Those are two different positive outputs.
 
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered revenue is $R(q)=60 q^{\\frac{1}{2}}$, and profit is.
 
 This is a level of profit at $25$ units. The overview recovered $\\Pi(q)=60 q^{\\frac{1}{2}}-2q-400$.
 
@@ -4594,12 +4412,10 @@ $$\\Pi(25)=-150$$
 
 Minus one hundred and fifty sits more than $100$ euros below zero.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered revenue is $R(q)=60 q^{\\frac{1}{2}}$, and profit is.
 
 The overview recovered break-evens at $q=100$ and $q=400$. Past the larger root the linear charge dominates the square-root revenue. At $q=625$:
 
@@ -4609,10 +4425,10 @@ $$\\Pi(625)=-150$$
 
 Profit turns negative again.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
 
 Start from the calibrated closed form in the overview.
 
@@ -4685,10 +4501,6 @@ The positive roots square to $q=100$ and $q=400$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=72$$.
-
 Benefit and cost meet where $B(x)=C(x)$. The overview recovered $B(x)=18 x^{\\frac{1}{2}}$ and $C(x)=\\frac{1}{2} x^{\\frac{3}{2}}$.
 
 $$18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}$$
@@ -4696,6 +4508,8 @@ $$18 x^{\\frac{1}{2}}=\\frac{1}{2} x^{\\frac{3}{2}}$$
 $$36=x$$
 
 The only positive solution is $x=36$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4745,8 +4559,6 @@ $$C(9)=13.5$$
 $$B(9)-C(9)=40.5$$
 
 Forty point five does not exceed $42$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -4820,10 +4632,6 @@ Throughput grows more slowly than the gas feed.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered law is $T(g)=4 g^{\\frac{2}{3}}$..
-
 The licensed ceiling is $T=32$. The overview recovered $T(g)=4 g^{\\frac{2}{3}}$, so
 
 $$4 g^{\\frac{2}{3}}=32$$
@@ -4837,6 +4645,8 @@ $$g=16\\sqrt{2}$$
 $$16\\sqrt{2}\\approx 22.63$$
 
 That feed sits below $24$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -4931,11 +4741,9 @@ The recovered law is $T(g)=4 g^{\\frac{2}{3}}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
+The overview recovered $V(d)=4 d^{2}$. The exponent on depth is $2$.
 
 The overview already recovered The recovered storage is $V(d)=4 d^{2}$..
-
-The overview recovered $V(d)=4 d^{2}$. The exponent on depth is $2$.
 
 $$2>1$$
 
@@ -4946,11 +4754,9 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
+This is a level of storage at $6$ metres. The overview recovered $V(d)=4 d^{2}$.
 
 The overview already recovered The recovered storage is $V(d)=4 d^{2}$..
-
-This is a level of storage at $6$ metres. The overview recovered $V(d)=4 d^{2}$.
 
 $$V(6)=4\\cdot 36$$
 
@@ -4958,12 +4764,10 @@ $$V(6)=144$$
 
 One hundred and forty-four sits above $140$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered storage is $V(d)=4 d^{2}$..
 
 Doubling stored volume inverts the square law. The overview recovered $V(d)=4 d^{2}$, so
 
@@ -4977,12 +4781,10 @@ $$\\sqrt{2}<2$$
 
 Depth scales by $\\sqrt{2}$, which is not more than a doubling.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered storage is $V(d)=4 d^{2}$..
 
 A pure power with a positive exponent has no horizontal asymptote. The overview recovered $V(d)=4 d^{2}$. As $d\\to\\infty$,
 
@@ -4990,12 +4792,10 @@ $$V(d)\\to\\infty$$
 
 Tapering changes the coefficient, not the fact that volume grows without a cap.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered storage is $V(d)=4 d^{2}$..
 
 The added volume from $4$ metres to $8$ metres is a difference of two levels. The overview recovered $V(d)=4 d^{2}$.
 
@@ -5010,6 +4810,8 @@ $$V(4)=64$$
 $$V(8)-V(4)=192$$
 
 One hundred and ninety-two is not more than $200$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -5092,15 +4894,13 @@ Two different averages.
 So the statement is False.`,
       `**D.** → True
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered index is $E(v)=\\frac{1}{20} v^{2}$..
-
 The speed that produces a given index is the inverse of $E(v)=\\frac{1}{20} v^{2}$. The overview recovered that law, so
 
 $$v=(20E)^{\\frac{1}{2}}$$
 
 The inverse exponent $\\frac{1}{2}$ sits below one, so speed grows more slowly than the index.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -5153,24 +4953,20 @@ The recovered index is $E(v)=\\frac{1}{20} v^{2}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$..
-
 Steel and capacity are both powers of height. The overview recovered steel exponent $2$ and capacity exponent $3$.
 
 $$2<3$$
 
 The smaller exponent is on steel, so steel use grows more slowly than capacity as height rises.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
+This is a level of capacity at $4$ metres. The overview recovered $V(h)=h^{3}$.
 
 The overview already recovered The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$..
-
-This is a level of capacity at $4$ metres. The overview recovered $V(h)=h^{3}$.
 
 $$V(4)=64$$
 
@@ -5181,10 +4977,6 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$..
-
 Steel as a function of capacity eliminates the common height. The overview recovered $S(h)=3 h^{2}$ and $V(h)=h^{3}$, so $h=V^{\\frac{1}{3}}$ and
 
 $$S=3\\bigl(V^{\\frac{1}{3}}\\bigr)^{2}$$
@@ -5192,6 +4984,8 @@ $$S=3\\bigl(V^{\\frac{1}{3}}\\bigr)^{2}$$
 $$S=3 V^{\\frac{2}{3}}$$
 
 That is a monomial in $V$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -5215,17 +5009,17 @@ Twenty-four is not forty-eight.
 So the statement is False.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
+This is a level of steel at $8$ metres. The overview recovered $S(h)=3 h^{2}$.
 
 The overview already recovered The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$..
-
-This is a level of steel at $8$ metres. The overview recovered $S(h)=3 h^{2}$.
 
 $$S(8)=3\\cdot 64$$
 
 $$S(8)=192$$
 
 One hundred and ninety-two does not sit above $200$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -5267,24 +5061,20 @@ The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$.`,
     tactical_explanations: [
       `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered The recovered time is $T(n)=4 n^{\\frac{1}{2}}$..
-
 Proportionality would need exponent $1$. The overview recovered $T(n)=4 n^{\\frac{1}{2}}$, so the exponent is $\\frac{1}{2}$.
 
 $$\\frac{1}{2}\\neq 1$$
 
 Total inspection time is not proportional to the number of shipments.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
+The $40$-hour ceiling inverts the recovered time $T(n)=4 n^{\\frac{1}{2}}$.
 
 The overview already recovered The recovered time is $T(n)=4 n^{\\frac{1}{2}}$..
-
-The $40$-hour ceiling inverts the recovered time $T(n)=4 n^{\\frac{1}{2}}$.
 
 $$4 n^{\\frac{1}{2}}=40$$
 
@@ -5293,6 +5083,8 @@ $$n^{\\frac{1}{2}}=10$$
 $$n=100$$
 
 One hundred sits below $110$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -5386,17 +5178,17 @@ Illuminance is cut to one quarter.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
+This is a level of illuminance at $5$ metres. The overview recovered $I(d)=800 d^{-2}$.
 
 The overview already recovered The recovered illuminance is $I(d)=800 d^{-2}$..
-
-This is a level of illuminance at $5$ metres. The overview recovered $I(d)=800 d^{-2}$.
 
 $$I(5)=\\frac{800}{25}$$
 
 $$I(5)=32$$
 
 Thirty-two sits under $40$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -5422,16 +5214,12 @@ $$d=\\sqrt{800}\\, I^{-\\frac{1}{2}}$$
 
 Distance as a function of illuminance is still a monomial in $I$. Falling illuminance does not introduce a logarithm.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
+This is a level of illuminance at $3$ metres. The overview recovered $I(d)=800 d^{-2}$.
 
 The overview already recovered The recovered illuminance is $I(d)=800 d^{-2}$..
-
-This is a level of illuminance at $3$ metres. The overview recovered $I(d)=800 d^{-2}$.
 
 $$I(3)=\\frac{800}{9}$$
 
@@ -5477,22 +5265,16 @@ The recovered illuminance is $I(d)=800 d^{-2}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$..
-
 The overview recovered exponent $\\frac{3}{4}$. An exponent smaller than one means the bill still rises with the book, yet it lags the account count.
 
 $$\\frac{3}{4}<1$$
 
 The bill grows more slowly than the number of accounts.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$..
 
 Doubling the number of accounts would double the bill only if the exponent were $1$. The overview recovered $r=\\frac{3}{4}$, so
 
@@ -5502,12 +5284,10 @@ $$2^{\\frac{3}{4}}\\approx 1.682$$
 
 That is not $2$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$..
 
 This is a level of the bill at $81$ accounts. The overview recovered $C(n)=100 n^{\\frac{3}{4}}$.
 
@@ -5518,6 +5298,8 @@ $$81^{\\frac{3}{4}}=27$$
 $$C(81)=2700$$
 
 Two thousand seven hundred sits above $2500$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -5539,10 +5321,6 @@ Because $25<\\frac{75}{2}$, an extra account adds less after eighty-one than aft
 So the statement is False.`,
       `**E.** → True
 
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$..
-
 This letter inverts a bill of $12500$. The overview recovered $C(n)=100 n^{\\frac{3}{4}}$.
 
 $$100 n^{\\frac{3}{4}}=12500$$
@@ -5556,6 +5334,8 @@ $$n=5^{4}$$
 $$n=625$$
 
 Six hundred and twenty-five sits above $600$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
     ],
@@ -5604,22 +5384,16 @@ The doubling factor is then $2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.3
 So the statement is True.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$..
-
 Concentration per metre is the intensity $c(x)/x$. The overview recovered $c(x)=400 x^{-\\frac{3}{2}}$, so
 
 $$\\frac{c(x)}{x}=400 x^{-\\frac{5}{2}}$$
 
 The leftover exponent is not $0$, so the intensity still depends on range.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$..
 
 This is a level of concentration at $100$ metres. The overview recovered $c(x)=400 x^{-\\frac{3}{2}}$.
 
@@ -5630,6 +5404,8 @@ $$100^{-\\frac{3}{2}}=\\frac{1}{1000}$$
 $$c(100)=0.4$$
 
 Four tenths sits below one half.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -5697,8 +5473,6 @@ The recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$.`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview recovered $L(w)=4 w^{\\frac{3}{2}}$. A monomial in $w$ is a power of wind speed. There is no leftover constant and no logarithm.
 
 Compare that figure with the threshold or value named in the claim.
@@ -5716,12 +5490,8 @@ $$2^{\\frac{3}{2}}=2\\sqrt{2}\\approx 2.828$$
 
 That is not $2$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
 
 This is a level of the composed loss at wind speed $64$. The overview recovered $L(w)=4 w^{\\frac{3}{2}}$.
 
@@ -5733,12 +5503,10 @@ $$L(64)=2048$$
 
 Two thousand and forty-eight sits above $2000$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
-
-Start from the calibrated closed form in the overview.
 
 The overview recovered composed exponent $\\frac{3}{2}$.
 
@@ -5750,8 +5518,6 @@ Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 A loss of $1000$ inverts the recovered composition $L(w)=4 w^{\\frac{3}{2}}$.
 
@@ -5814,10 +5580,6 @@ Impact grows more slowly than order size.
 So the statement is True.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. The scaled charge is then.
-
 The scaled impact charge is $vI(v)$. The overview recovered $vI(v)=60 v^{\\frac{3}{2}}$, so doubling order size multiplies the scaled charge by
 
 $$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}$$
@@ -5825,6 +5587,8 @@ $$\\frac{(2v)I(2v)}{vI(v)}=2^{\\frac{3}{2}}$$
 $$2^{\\frac{3}{2}}\\approx 2.828$$
 
 That is not $2$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -5857,10 +5621,6 @@ The leftover exponent on the scaled charge is $\\frac{3}{2}>1$, so past $v=\\fra
 So the statement is True.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered impact is $I(v)=60 v^{\\frac{1}{2}}$. The scaled charge is then.
-
 This is a level of the scaled charge at $0.25$ ADV. The overview recovered $vI(v)=60 v^{\\frac{3}{2}}$.
 
 $$0.25\\cdot I(0.25)=60\\cdot 0.25^{\\frac{3}{2}}$$
@@ -5870,6 +5630,8 @@ $$0.25^{\\frac{3}{2}}=0.125$$
 $$60\\cdot 0.125=7.5$$
 
 Seven point five does not sit above $10$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -5909,22 +5671,16 @@ $$vI(v)=60 v^{\\frac{3}{2}}.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$..
-
 A nonzero power inverts to another power. The overview recovered $E=10 m^{\\frac{2}{3}}$, so isolating mass gives
 
 $$m=\\left(\\frac{E}{10}\\right)^{\\frac{3}{2}}$$
 
 Body mass as a function of daily energy is still a monomial in $E$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$..
 
 Energy use per kilogram is the average $E/m$. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$, so
 
@@ -5932,14 +5688,14 @@ $$\\frac{E(m)}{m}=10 m^{-\\frac{1}{3}}$$
 
 The leftover exponent is negative, so energy use per kilogram falls as body mass rises.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
+This is a level of energy at $64$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.
 
 The overview already recovered The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$..
-
-This is a level of energy at $64$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.
 
 $$E(64)=10\\cdot 64^{\\frac{2}{3}}$$
 
@@ -5952,10 +5708,6 @@ One hundred and sixty sits above $150$.
 So the statement is True.`,
       `**D.** → False
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$..
-
 Two equal animals use $2E(m)$. One animal of twice the mass uses $E(2m)$. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$, so
 
 $$\\frac{E(2m)}{E(m)}=2^{\\frac{2}{3}}$$
@@ -5964,14 +5716,14 @@ $$2^{\\frac{2}{3}}<2$$
 
 Combining the two animals cuts total energy use.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → True
 
-Check the claim against the recovered scale factor only.
+This is a level of energy at $216$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.
 
 The overview already recovered The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$..
-
-This is a level of energy at $216$ kg. The overview recovered $E(m)=10 m^{\\frac{2}{3}}$.
 
 $$E(216)=10\\cdot 216^{\\frac{2}{3}}$$
 
@@ -6019,8 +5771,6 @@ The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$.`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered footfall is $f(d)=3200 d^{-1.5}$..
 
 The overview recovered $f(d)=3200 d^{-1.5}$. The exponent is negative, so $f$ is strictly decreasing for $d>0$. A farther zone always supplies fewer visitors than a nearer zone.
@@ -6028,11 +5778,9 @@ The overview recovered $f(d)=3200 d^{-1.5}$. The exponent is negative, so $f$ is
 So the statement is True.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
+An inverse-square law would carry exponent $-2$. The overview recovered exponent $-1.5$.
 
 The overview already recovered The recovered footfall is $f(d)=3200 d^{-1.5}$..
-
-An inverse-square law would carry exponent $-2$. The overview recovered exponent $-1.5$.
 
 $$-1.5\\neq -2$$
 
@@ -6040,10 +5788,6 @@ Footfall is steeper than inverse-linear and shallower than inverse-square.
 
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered footfall is $f(d)=3200 d^{-1.5}$..
 
 This is a level of footfall at $9$ kilometres. The overview recovered $f(d)=3200 d^{-1.5}$.
 
@@ -6054,6 +5798,8 @@ $$9^{1.5}=27$$
 $$f(9)=\\frac{3200}{27}\\approx 118.5$$
 
 One hundred and eighteen sits above $100$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -6132,10 +5878,6 @@ Output grows more slowly than the installed area.
 So the statement is True.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered The recovered output is $y(a)=24 a^{\\frac{1}{2}}$..
-
 Expanding $225$ m² to $450$ m² is a level of the recovered output $y(a)=24 a^{\\frac{1}{2}}$.
 
 $$y(450)=24\\cdot 450^{\\frac{1}{2}}$$
@@ -6146,12 +5888,10 @@ $$y(450)\\approx 509.1$$
 
 Five hundred and nine does not sit above $520$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered output is $y(a)=24 a^{\\frac{1}{2}}$..
 
 Output per square metre is the average $y/a$. The overview recovered $y(a)=24 a^{\\frac{1}{2}}$, so
 
@@ -6159,12 +5899,10 @@ $$\\frac{y(a)}{a}=24 a^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so output per square metre falls as the array grows.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered output is $y(a)=24 a^{\\frac{1}{2}}$..
 
 Doubling the $240$ kWh output means $y(a)=480$. The overview recovered $y(a)=24 a^{\\frac{1}{2}}$, so
 
@@ -6176,20 +5914,22 @@ $$a=400$$
 
 Area must go from $100$ to $400$, which is more than a doubling.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**E.** → True
 
-Check the claim against the recovered scale factor only.
+This is a level of output at $400$ m². The overview recovered $y(a)=24 a^{\\frac{1}{2}}$.
 
 The overview already recovered The recovered output is $y(a)=24 a^{\\frac{1}{2}}$..
-
-This is a level of output at $400$ m². The overview recovered $y(a)=24 a^{\\frac{1}{2}}$.
 
 $$y(400)=24\\cdot 20$$
 
 $$y(400)=480$$
 
 Four hundred and eighty sits above $470$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
     ],
@@ -6261,10 +6001,6 @@ Spend rises while unit cost falls.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered The recovered unit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Cumulative spend is then.
-
 This is a level of unit cost at $1600$ thousand cells. The overview recovered $c(N)=800 N^{-\\frac{1}{2}}$.
 
 $$c(1600)=800\\cdot 1600^{-\\frac{1}{2}}$$
@@ -6275,12 +6011,10 @@ $$c(1600)=20$$
 
 Twenty sits below $25$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered unit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Cumulative spend is then.
 
 Cumulative spend is $S=N\\,c(N)$. The overview recovered $S(N)=800 N^{\\frac{1}{2}}$, so quadrupling volume multiplies spend by
 
@@ -6290,12 +6024,10 @@ $$\\frac{S(4N)}{S(N)}=2$$
 
 Spend doubles, it does not more than double.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered The recovered unit cost is $c(N)=800 N^{-\\frac{1}{2}}$. Cumulative spend is then.
 
 This is a level of unit cost at $25$ thousand cells. The overview recovered $c(N)=800 N^{-\\frac{1}{2}}$.
 
@@ -6306,6 +6038,8 @@ $$25^{-\\frac{1}{2}}=\\frac{1}{5}$$
 $$c(25)=160$$
 
 One hundred and sixty sits above $150$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
     ],
@@ -6367,8 +6101,6 @@ That factor sits above $2$.
 
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6465,8 +6197,6 @@ $$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}=0.625 q^{1.5}.$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered The recovered demand is $q(p)=4000 p^{-3}$. Revenue along the curve is then.
 
 Revenue is price times quantity. The overview recovered $R(p)=4000 p^{-2}$. A monomial in $p$ is a power of price. There is no leftover constant and no logarithm.
@@ -6504,10 +6234,6 @@ Six hundred and forty sits below $700$.
 So the statement is True.`,
       `**D.** → True
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered The recovered demand is $q(p)=4000 p^{-3}$. Revenue along the curve is then.
-
 A $10\\%$ price rise is the multiplier $k=1.1$. The overview recovered demand exponent $-3$, so
 
 $$\\frac{q(1.1p)}{q(p)}=1.1^{-3}$$
@@ -6516,10 +6242,10 @@ $$1.1^{-3}\\approx 0.7513$$
 
 Quantity falls by about $24.9\\%$, which is more than $20\\%$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -6578,10 +6304,6 @@ A current factor $c>1$ then multiplies strength by $c^{\\frac{3}{2}}$, which exc
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=40$$.
-
 This is a level at $16$ A. The overview recovered $S(p)=5p^{\\frac{3}{2}}$, so
 
 $$16^{\\frac{3}{2}}=(\\sqrt{16})^{3}$$
@@ -6602,8 +6324,6 @@ A nonzero power inverts to another power. The overview recovered $S=5p^{\\frac{3
 $$p=\\left(\\frac{S}{5}\\right)^{\\frac{2}{3}}$$
 
 Current needed for a given strength is still a power of that strength.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -6629,10 +6349,6 @@ The claim needs $S'(4)>S'(9)$. We have $15<\\frac{45}{2}$.
 So the statement is False.`,
       `**E.** → False
 
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=40$$.
-
 The $400$ N reject line is inverted from the recovered law:
 
 $$5p^{\\frac{3}{2}}=400$$
@@ -6642,6 +6358,8 @@ $$p^{\\frac{3}{2}}=80$$
 $$p=80^{\\frac{2}{3}}\\approx 18.57$$
 
 The smallest clearing current is about $18.57$ A, which is not below $18$ A.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -6714,10 +6432,6 @@ The claim needs $48>96$. We have $48<96$.
 So the statement is False.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=24$$.
-
 This is a level at $125$ kg. The overview recovered $H(m)=6m^{\\frac{2}{3}}$, so
 
 $$125^{\\frac{2}{3}}=(5^{3})^{\\frac{2}{3}}$$
@@ -6752,8 +6466,6 @@ $$m=\\left(\\frac{H}{6}\\right)^{\\frac{3}{2}}$$
 
 Mass needed for a given holding power is still a power of that holding power.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -6773,11 +6485,7 @@ $$600t^{\\frac{2}{3}}=150$$
 
 $$t^{\\frac{2}{3}}=\\frac{1}{4}$$
 
-$$t=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}$$
-
-$$t=\\frac{1}{8}$$
-
-$$t=0.125$$
+$$t=\\left(\\frac{1}{4}\\right)^{\\frac{3}{2}}=\\frac{1}{8}=0.125$$
 
 Reaching $150$ kN takes $0.125$ tonnes.
 
@@ -6833,22 +6541,16 @@ $$H(t)=600t^{\\frac{2}{3}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=800$$.
-
 A nonzero power inverts to another power. The overview recovered $T=\\frac{800}{d^{2}}$. Isolating distance gives
 
 $$d=\\sqrt{800}\\, T^{-\\frac{1}{2}}$$
 
 Hop distance needed for a given throughput is still a power of that throughput.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=800$$.
 
 The reliability floor $T\\ge 8$ is inverted from the recovered law. Because the exponent is negative, that floor is a maximum hop:
 
@@ -6859,6 +6561,8 @@ $$d^{2}=100$$
 $$d=10$$
 
 The farthest reliable hop is $10$ m, which is already under $12$ m.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -6951,22 +6655,16 @@ $$T(d)=\\frac{800}{d^{2}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=\\frac{512}{64}=8$$.
-
 The overview recovered exponent $\\frac{3}{4}$. Gill area grows more slowly than body mass when that exponent is smaller than one:
 
 $$\\frac{3}{4}<1$$
 
 A mass factor $c>1$ then multiplies area by $c^{\\frac{3}{4}}$, which is less than $c$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=\\frac{512}{64}=8$$.
 
 This is a level at $16$ g. The overview recovered $G(m)=8m^{\\frac{3}{4}}$, so
 
@@ -6982,8 +6680,6 @@ The claim needs more than $50$ cm$^{2}$. We have $64>50$.
 
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7217,10 +6913,6 @@ The claim needs more than $155$ mm. We have $162>155$.
 So the statement is True.`,
       `**C.** → False
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=2$$.
-
 Doubling the free span multiplies deflection by $2$ only if the exponent is $1$. The recovered exponent is $2$, so
 
 $$\\frac{y(2L)}{y(L)}=2^{2}$$
@@ -7228,6 +6920,8 @@ $$\\frac{y(2L)}{y(L)}=2^{2}$$
 $$\\frac{y(2L)}{y(L)}=4$$
 
 Doubling the span quadruples the tip deflection.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**D.** → True
@@ -7248,12 +6942,8 @@ $$162-150=12$$
 
 The shortfall is $12$ mm, which is more than $10$ mm.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -7439,8 +7129,6 @@ $$\\frac{I(2d)}{I(d)}=\\frac{1}{4}$$
 
 Doubling the distance cuts intensity to one quarter.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -7459,10 +7147,6 @@ The claim needs under $0.2$ W/m$^{2}$. We have $0.18<0.2$.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=2.
-
 An extra metre is the derivative of the recovered law $I(d)=2.88d^{-2}$:
 
 $$I'(d)=-5.76\\, d^{-3}$$
@@ -7479,12 +7163,10 @@ $$|I'(6)|=\\frac{5.76}{216}\\approx 0.0267$$
 
 The cut is larger at $2$ m than at $6$ m.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=2.
 
 This is a level at $6$ metres. The overview recovered $I(d)=\\frac{2.88}{d^{2}}$, so
 
@@ -7494,12 +7176,10 @@ $$I(6)=0.08$$
 
 The night cap is $0.08$ W/m$^{2}$. Intensity at $6$ m equals the cap, which is not still above it.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=2.
 
 The night cap $I\\le 0.08$ is inverted from the recovered law. Because the exponent is negative, that cap is a minimum standing distance:
 
@@ -7510,6 +7190,8 @@ $$d^{2}=36$$
 $$d=6$$
 
 The cap is met at $d=6$ m, a finite distance.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -7550,8 +7232,6 @@ $$I(d)=\\frac{2.88}{d^{2}}$$`,
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
       `**A.** → True
-
-Name the recovered power rule, then substitute the claimed input.
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -7604,8 +7284,6 @@ $$q=10$$
 
 Ten cubic metres per hour is still under $12$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -7618,8 +7296,6 @@ Eliminating $q$ between the recovered stages uses $v=4\\sqrt{H}$:
 $$H=\\frac{v^{2}}{16}$$
 
 Head is proportional to the square of jet speed, not to jet speed itself.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -7728,12 +7404,8 @@ $$s=56.25$$
 
 The safety cap is $36$ drivers, and $56.25>36$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -7791,8 +7463,6 @@ The overview recovered $r=-\\frac{3}{2}$. Subscribers fall faster than price ris
 
 $$-\\frac{3}{2}<-1$$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -7810,8 +7480,6 @@ The claim needs under $600$ thousand euros. We have $500<600$.
 
 So the statement is True.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7835,8 +7503,6 @@ $$2000p^{-\\frac{1}{2}}=2000$$
 $$p=1$$
 
 The price factor is $\\frac{1}{4}$, not $\\frac{1}{2}$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -7903,8 +7569,6 @@ $$R(p)=2000p^{-\\frac{1}{2}}$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=700$$.
 
 The overview recovered a nonzero retainer $F=400$. A power function of $n$ would be a single monomial $An^{r}$. Adding a positive constant means $C$ is not a power of the branch count.
@@ -7964,8 +7628,6 @@ $$C(36)=400+30\\cdot 6$$
 $$C(36)=580$$
 
 The $100$-branch invoice is $700$ euros, and $580<700$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
     ],
@@ -8143,20 +7805,12 @@ $$T(q)=\\frac{4800}{q}+3q$$`,
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered A=96$$.
 
 The overview recovered average product $12L^{-\\frac{1}{4}}$. That is a power of labour hours, but its exponent is $-\\frac{1}{4}$, not the output exponent $\\frac{3}{4}$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=96$$.
 
 Average product at $16$ hours is a level of the recovered intensity:
 
@@ -8186,18 +7840,12 @@ So the statement is False.`,
 
 Start from the calibrated closed form in the overview.
 
-Start from the calibrated closed form in the overview.
-
 The overview already recovered A=96$$.
 
 The overview recovered average product $12L^{-\\frac{1}{4}}$. The leftover exponent is negative, so average product falls as labour hours rise. The claim is that ranking.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered A=96$$.
 
 Average product at $81$ hours is a level of the recovered intensity:
 
@@ -8265,10 +7913,6 @@ $$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=50$$.
-
 The overview recovered floor $F=8$. As $n\\to\\infty$ the learning term $50n^{-\\frac{1}{2}}$ tends to $0$, so
 
 $$\\lim_{n\\to\\infty}t(n)=8$$
@@ -8277,10 +7921,6 @@ For every finite $n\\ge 1$ that learning term is still positive. Unit time appro
 
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=50$$.
 
 This is a level after $900$ cumulative units. The overview recovered $t(n)=8+50n^{-\\frac{1}{2}}$, so
 
@@ -8293,22 +7933,16 @@ The claim needs under $10$ minutes. We have $9.67<10$.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=50$$.
-
 The learning component is $50n^{-\\frac{1}{2}}$. Quadrupling cumulative output multiplies that term by $4^{-\\frac{1}{2}}$:
 
 $$\\frac{50(4n)^{-\\frac{1}{2}}}{50n^{-\\frac{1}{2}}}=\\frac{1}{2}$$
 
 Quadrupling halves the learning component.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=50$$.
 
 Quadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:
 
@@ -8319,6 +7953,8 @@ $$t(25)=13$$
 $$\\frac{13}{18}\\approx 0.722$$
 
 Modelled unit time is multiplied by about $0.722$, not by $\\frac{1}{2}$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -8381,15 +8017,13 @@ $$t(n)=8+50n^{-\\frac{1}{2}}$$`,
     tactical_explanations: [
       `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered A=360$$.
-
 Revenue is proportional to feed only if the exponent is $1$. The given exponent is $\\frac{2}{3}$, so
 
 $$\\frac{R(2x)}{R(x)}=2^{\\frac{2}{3}}\\approx 1.587$$
 
 not $2$. Revenue is not proportional to the tonnes of feed used.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -8434,10 +8068,6 @@ The claim needs $R'(27)>R'(8)$. We have $20<30$.
 So the statement is False.`,
       `**D.** → True
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=360$$.
-
 Cost overtakes revenue where $R(x)=C(x)$:
 
 $$90x^{\\frac{2}{3}}=30x$$
@@ -8447,6 +8077,8 @@ $$x^{\\frac{1}{3}}=3$$
 $$x=27$$
 
 For $x>27$ the ratio $\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}$ stays below $1$ and keeps falling. Extra feed cannot restore a surplus.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**E.** → True
@@ -8516,8 +8148,6 @@ $$\\frac{f(4x)}{f(x)}=4^{\\frac{3}{2}}$$
 $$\\frac{f(4x)}{f(x)}=8$$
 
 A factor of $4$ on the index multiplies handling cost by $8$, not by $4$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -8629,8 +8259,6 @@ $$s=\\left(\\frac{W}{5}\\right)^{\\frac{2}{3}}$$
 
 Scale needed for a given load is still a power of that load.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -8651,28 +8279,24 @@ The largest admissible scale is $16$, which is already below $20$.
 So the statement is True.`,
       `**C.** → False
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=135$$.
-
 Doubling the permit ceiling multiplies admissible scale by $2$ only if the inverse exponent is $1$. From $s\\propto W^{\\frac{2}{3}}$,
 
 $$\\frac{s(2W)}{s(W)}=2^{\\frac{2}{3}}\\approx 1.587$$
 
 The scale index is multiplied by about $1.587$, not by $2$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered A=135$$.
 
 If the coefficient doubled, admissible scale under the same ceiling would change by the factor $2^{-\\frac{2}{3}}$, because $s=(W/A)^{\\frac{2}{3}}$:
 
 $$2^{-\\frac{2}{3}}\\approx 0.630$$
 
 The new scale is about $0.630$ times the old one, not half.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -8856,10 +8480,6 @@ Compare that figure with the threshold or value named in the claim.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered A=240$$.
-
 This is a level at height $1.5$ m. The overview recovered $M(h)=240h^{3}$, so
 
 $$(1.5)^{3}=\\frac{27}{8}$$
@@ -8875,10 +8495,6 @@ The claim needs more than $700$ kg. We have $810>700$.
 So the statement is True.`,
       `**C.** → False
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered A=240$$.
-
 Doubling height multiplies mass by $2$ only if the exponent is $1$. The given exponent is $3$, so
 
 $$\\frac{M(2h)}{M(h)}=2^{3}$$
@@ -8886,6 +8502,8 @@ $$\\frac{M(2h)}{M(h)}=2^{3}$$
 $$\\frac{M(2h)}{M(h)}=8$$
 
 Doubling a bell's height multiplies its mass by $8$, not by $2$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**D.** → False
@@ -8900,12 +8518,8 @@ $$\\frac{M(h)}{h}=240h^{2}$$
 
 That quantity still depends on $h$. It is not the same at every height.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
 
 Check the claim against the recovered scale factor only.
 
@@ -8966,8 +8580,6 @@ $$3>1$$
 A proportional law would have carried exponent $1$. Drag itself only has exponent $2$; multiplying by speed raises that to $3$.
 
 The leftover exponent is $3$.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -9089,11 +8701,9 @@ The recovered laws are $F(v)=\\frac{1}{2}v^{2}$ and $P(v)=\\frac{1}{2}v^{3}$.
     tactical_explanations: [
       `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
+Inverse proportionality would mean exponent $-1$. The overview recovered $r=-3$.
 
 The overview already recovered $r=-3$ | $A=400$ | $S(x)=400x^{-3}$.
-
-Inverse proportionality would mean exponent $-1$. The overview recovered $r=-3$.
 
 $$-3\\neq -1$$
 
@@ -9104,10 +8714,6 @@ The exponent is $-3$.
 So the statement is False.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $r=-3$ | $A=400$ | $S(x)=400x^{-3}$.
-
 The overview recovered $r=-3$. Doubling burial depth multiplies the signal by
 
 $$2^{-3}=\\frac{1}{8}$$
@@ -9115,6 +8721,8 @@ $$2^{-3}=\\frac{1}{8}$$
 The claim is a factor of $\\frac{1}{2}$, which would have needed $r=-1$.
 
 Doubling depth leaves one eighth of the signal, not one half.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -9144,10 +8752,6 @@ The claim is that this already sits under $7$. We have $6.25<7$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered $r=-3$ | $A=400$ | $S(x)=400x^{-3}$.
 
 The overview recovered $S=400x^{-3}$. A reading of $3.2$ millivolts inverts by
 
@@ -9213,10 +8817,6 @@ The recovered law is $S(x)=400x^{-3}$.
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered $A=5$ | $B=3$ | $D(m)=5m^{\\frac{3}{4}}$ | $G(m)=3m^{\\frac{2}{3}}$.
-
 The overview recovered demand exponent $\\frac{3}{4}$. Demand lags mass when that exponent sits below $1$.
 
 $$\\frac{3}{4}<1$$
@@ -9224,6 +8824,8 @@ $$\\frac{3}{4}<1$$
 A proportional law would have carried exponent $1$.
 
 The leftover exponent is $\\frac{3}{4}$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -9235,8 +8837,6 @@ $$\\frac{D(m)}{G(m)}=\\frac{5}{3}m^{\\frac{1}{12}}$$
 The leftover exponent $\\frac{1}{12}$ is positive, so intensity rises as the fish grows, rather than falling.
 
 Demand per unit gill area climbs.
-
-Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → False
@@ -9276,10 +8876,6 @@ The claim is that this already sits above $300$. We have $320>300$.
 
 So the statement is True.`,
       `**E.** → False
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered $A=5$ | $B=3$ | $D(m)=5m^{\\frac{3}{4}}$ | $G(m)=3m^{\\frac{2}{3}}$.
 
 A tank total adds individual demands. Sixteen fish of $16$ g each demand
 
@@ -9459,10 +9055,6 @@ The recovered law is $Q(r)=3r^{4}$.
     tactical_explanations: [
       `**A.** → False
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered $r=-2$ | $A=720$ | $H(d)=720d^{-2}$.
-
 The overview recovered $r=-2$. Doubling the distance multiplies the dose rate by
 
 $$2^{-2}=\\frac{1}{4}$$
@@ -9470,6 +9062,8 @@ $$2^{-2}=\\frac{1}{4}$$
 The claim is a factor of $\\frac{1}{2}$, which would have needed $r=-1$.
 
 Doubling the distance quarters the dose rate, not halves it.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -9494,10 +9088,6 @@ An extra metre cuts more dose where the derivative is more negative. We have $-\
 
 So the statement is True.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered $r=-2$ | $A=720$ | $H(d)=720d^{-2}$.
 
 A nonzero power inverts to another power. The overview recovered $H=720d^{-2}$, so isolating distance leaves
 
@@ -9593,8 +9183,6 @@ The recovered law is $H(d)=720d^{-2}$.
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered $A=15$ | $r(t)=15t^{\\frac{2}{3}}$ | $S(t)=225\\pi t^{\\frac{4}{3}}$.
 
 The overview recovered $S(t)=225\\pi t^{\\frac{4}{3}}$. That is a monomial in elapsed time, coefficient $225\\pi$ and exponent $\\frac{4}{3}$.
@@ -9604,10 +9192,6 @@ The stained area is a power of elapsed time.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=15$ | $r(t)=15t^{\\frac{2}{3}}$ | $S(t)=225\\pi t^{\\frac{4}{3}}$.
-
 The overview recovered area exponent $\\frac{4}{3}$. Area outruns elapsed time when that exponent exceeds $1$.
 
 $$\\frac{4}{3}>1$$
@@ -9616,12 +9200,10 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is $\\frac{4}{3}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered $A=15$ | $r(t)=15t^{\\frac{2}{3}}$ | $S(t)=225\\pi t^{\\frac{4}{3}}$.
 
 The overview recovered area exponent $\\frac{4}{3}$. Doubling elapsed time multiplies stained area by
 
@@ -9716,10 +9298,6 @@ The inverse is a power of discharge.
 So the statement is True.`,
       `**B.** → True
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=16$ | $Q(h)=16h^{\\frac{3}{2}}$.
-
 The overview recovered discharge exponent $\\frac{3}{2}$. Discharge outruns head when that exponent exceeds $1$.
 
 $$\\frac{3}{2}>1$$
@@ -9728,12 +9306,10 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is $\\frac{3}{2}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**C.** → False
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered $A=16$ | $Q(h)=16h^{\\frac{3}{2}}$.
 
 The overview recovered exponent $\\frac{3}{2}$. Doubling the head multiplies discharge by
 
@@ -9838,8 +9414,6 @@ The claim is a factor of $2$, which would have needed $r=1$. A $300\\%$ rise is 
 
 Doubling the batch multiplies fuel by $4$, not by $2$.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -9941,8 +9515,6 @@ The recovered law is $F(x)=3x^{2}$.
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$.
 
 The overview recovered the composition $P\\circ m=t^{2}$. That is a monomial in the throttle setting, coefficient $1$ and exponent $2$.
@@ -9952,10 +9524,6 @@ The composed index is a power of the throttle.
 So the statement is True.`,
       `**B.** → False
 
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$.
-
 The overview recovered composed exponent $2$. Proportionality to the throttle would have needed leftover exponent $1$.
 
 $$2\\neq 1$$
@@ -9964,12 +9532,10 @@ The composed index is $t^{2}$, a square, not a linear rule.
 
 The leftover exponent is $2$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is False.`,
       `**C.** → True
-
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered $A=2$ | $m(t)=2t^{\\frac{1}{2}}$ | $P\\circ m=t^{2}$.
 
 Mass flow per unit of throttle is the recovered law divided by $t$:
 
@@ -9978,6 +9544,8 @@ $$\\frac{m(t)}{t}=2t^{-\\frac{1}{2}}$$
 The leftover exponent is negative, so that ratio falls as the throttle rises.
 
 Mass flow per unit throttle falls.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -10073,10 +9641,6 @@ After App L is shorter, App Q stays longer.
 So the statement is True.`,
       `**C.** → True
 
-Read the exponent from the overview before comparing growth rates.
-
-The overview already recovered $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$.
-
 App L's wait per kilometre is the recovered law divided by distance:
 
 $$\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$$
@@ -10084,6 +9648,8 @@ $$\\frac{L(d)}{d}=4d^{-\\frac{1}{2}}$$
 The leftover exponent is negative, so that ratio falls as the trip gets longer.
 
 Wait per kilometre on App L falls.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -10100,10 +9666,6 @@ App L cannot serve trips longer than $30$ kilometres under the cap.
 
 So the statement is False.`,
       `**E.** → True
-
-Check the claim against the recovered scale factor only.
-
-The overview already recovered $a=4$ | $k=\\frac{1}{5}$ | $L(d)=4d^{\\frac{1}{2}}$ | $Q(d)=\\frac{1}{5}d$.
 
 The overview recovered $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. At $400$ kilometres:
 
@@ -10159,10 +9721,6 @@ The recovered waits are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$.
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered $A=20$ | $r=\\frac{1}{2}$ | $E(h)=20h^{\\frac{1}{2}}$.
-
 The overview recovered $r=\\frac{1}{2}$. Evaporation lags the humidity deficit when that exponent sits below $1$.
 
 $$\\frac{1}{2}<1$$
@@ -10171,12 +9729,10 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is $\\frac{1}{2}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=20$ | $r=\\frac{1}{2}$ | $E(h)=20h^{\\frac{1}{2}}$.
 
 The overview recovered $r=\\frac{1}{2}$. Doubling the humidity deficit multiplies evaporation by
 
@@ -10201,10 +9757,6 @@ She must more than double the humidity deficit.
 
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered $A=20$ | $r=\\frac{1}{2}$ | $E(h)=20h^{\\frac{1}{2}}$.
 
 The overview recovered $E(h)=20h^{\\frac{1}{2}}$. Differentiating gives
 
@@ -10279,8 +9831,6 @@ The recovered law is $E(h)=20h^{\\frac{1}{2}}$. The third reading matches: $E(9)
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered $A=12$ | $k=2$ | $N(n)=12n^{\\frac{1}{2}}-2n$.
 
 The overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. That is a difference of two distinct powers of $n$, not a single monomial $cn^{p}$.
@@ -10317,10 +9867,6 @@ The net stays negative after upkeep overtakes benefit.
 
 So the statement is False.`,
       `**D.** → True
-
-Start from the calibrated closed form in the overview.
-
-The overview already recovered $A=12$ | $k=2$ | $N(n)=12n^{\\frac{1}{2}}-2n$.
 
 The overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. Differentiating gives
 
@@ -10407,14 +9953,8 @@ Price needed for a given weekly demand is still a monomial in $q$.
 
 The inverse is a power function of demand.
 
-Compare that figure with the threshold or value named in the claim.
-
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=2000$ | $q(p)=2000p^{-2}$.
 
 The overview recovered exponent $-2$. Doubling the five-euro price multiplies demand by
 
@@ -10423,6 +9963,8 @@ $$2^{-2}=\\frac{1}{4}$$
 The claim is a factor of $\\frac{1}{2}$, which would have needed exponent $-1$.
 
 Doubling the price quarters demand, not halves it.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -10513,8 +10055,6 @@ The recovered law is $q(p)=2000p^{-2}$.
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered $A=3200$ | $B=4$ | $q\\circ p=\\frac{400}{s}$.
 
 The overview recovered the composition $q\\circ p=\\frac{400}{s}$. That is a monomial in the subsidy index, coefficient $400$ and exponent $-1$.
@@ -10523,10 +10063,6 @@ Composed demand is a power function of the subsidy index.
 
 So the statement is True.`,
       `**B.** → False
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=3200$ | $B=4$ | $q\\circ p=\\frac{400}{s}$.
 
 The overview recovered composed exponent $-1$. Tripling the subsidy index multiplies composed demand by
 
@@ -10551,8 +10087,6 @@ The claim is that this already sits above $40$. We have $50>40$.
 
 So the statement is True.`,
       `**D.** → False
-
-Start from the calibrated closed form in the overview.
 
 Start from the calibrated closed form in the overview.
 
@@ -10629,8 +10163,6 @@ $$=\\frac{400}{s}$$
 
 Name the recovered power rule, then substitute the claimed input.
 
-Name the recovered power rule, then substitute the claimed input.
-
 The overview already recovered $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$.
 
 The cheaper line is line 2, because $b=\\frac{1}{4}<a=1$. The overview recovered the cheaper-line corner at $225$ and the equal-marginal split at $180$.
@@ -10657,8 +10189,6 @@ So the statement is True.`,
 
 Read the exponent from the overview before comparing growth rates.
 
-Read the exponent from the overview before comparing growth rates.
-
 The overview already recovered $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$.
 
 The overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split $q_{2}=4q_{1}$, hence $q_{2}=24$ and $q_{1}=6$. Line 2 is the cheaper line and takes the larger share.
@@ -10668,10 +10198,6 @@ The cheaper line takes $24$ thousand loaves against $6$ on line 1.
 So the statement is True.`,
       `**D.** → False
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered $a=1$ | $b=\\frac{1}{4}$ | split $(6,24)$ | corner $225$ | split cost $180$.
-
 Line 1's average cost index is the recovered $C_{1}(q)=q^{2}$ divided by output:
 
 $$\\frac{C_{1}(q)}{q}=q$$
@@ -10679,6 +10205,8 @@ $$\\frac{C_{1}(q)}{q}=q$$
 The leftover exponent $1$ is positive, so that average rises as line 1's own output rises, rather than falling.
 
 Average cost on line 1 climbs.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -10741,10 +10269,6 @@ $$C_{2}(30)=225, \\qquad C_{1}(6)+C_{2}(24)=180$$
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered $A=4000$ | $q(p)=4000p^{-2}$.
-
 For a power $q=Ap^{r}$, point elasticity equals the exponent at every price. The overview recovered $r=-2$, so
 
 $$\\varepsilon=-2$$
@@ -10752,6 +10276,8 @@ $$\\varepsilon=-2$$
 at every $p>0$. Demand is equally elastic at every price.
 
 Elasticity is constantly $-2$.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -10788,10 +10314,6 @@ The shortcut overstates the exact drop.
 So the statement is True.`,
       `**D.** → False
 
-Start from the calibrated closed form in the overview.
-
-The overview already recovered $A=4000$ | $q(p)=4000p^{-2}$.
-
 Weekly revenue is $R=pq$. Substituting the recovered demand gives
 
 $$R(p)=4000p^{-1}$$
@@ -10799,6 +10321,8 @@ $$R(p)=4000p^{-1}$$
 The leftover exponent is negative, so raising the price lowers revenue rather than maximizing it.
 
 Revenue is $\\frac{4000}{p}$, which falls as $p$ grows.
+
+Compare that figure with the threshold or value named in the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -10853,10 +10377,6 @@ The recovered law is $q(p)=4000p^{-2}$.
     tactical_explanations: [
       `**A.** → True
 
-Name the recovered power rule, then substitute the claimed input.
-
-The overview already recovered $A=8$ | $T(e)=8e^{\\frac{3}{2}}$.
-
 The overview recovered exponent $\\frac{3}{2}$. Throughput outruns the belt setting when that exponent exceeds $1$.
 
 $$\\frac{3}{2}>1$$
@@ -10865,12 +10385,10 @@ A proportional law would have carried exponent $1$.
 
 The leftover exponent is $\\frac{3}{2}$.
 
+Compare that figure with the threshold or value named in the claim.
+
 So the statement is True.`,
       `**B.** → True
-
-Form the ratio so the unknown positive coefficient cancels.
-
-The overview already recovered $A=8$ | $T(e)=8e^{\\frac{3}{2}}$.
 
 The overview recovered $T(e)=8e^{\\frac{3}{2}}$. Differentiating gives
 

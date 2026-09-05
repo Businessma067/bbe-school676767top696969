@@ -136,16 +136,27 @@ def deepen_letter(
     core = scrub_text_commands(core)
     core = split_chained_displays(core)
 
+    # Drop accidental consecutive duplicate paragraphs
+    paras = [p.strip() for p in core.split("\n\n") if p.strip()]
+    deduped: list[str] = []
+    for p in paras:
+        if deduped and p == deduped[-1]:
+            continue
+        deduped.append(p)
+    core = "\n\n".join(deduped)
+
     recovered = extract_recovered_line(overview)
     n_disp = len(re.findall(r"\$\$", core)) // 2
+    first = deduped[0] if deduped else ""
+    already_has_opener = first in OPENERS_CH8 or first.endswith(".") and len(first) < 90
 
     # Thin / shallow: add named-formula framing from overview recovery
-    if len(core) < 260 or n_disp < 1:
+    if (len(core) < 220 or n_disp < 1) and not already_has_opener:
         lead = OPENERS_CH8[idx % len(OPENERS_CH8)]
         bits = [lead]
         if recovered and "overview already" not in core.lower():
+            # Recovered line may contain doubled backslashes from TS source
             bits.append(f"The overview already recovered {recovered}.")
-        # Try to show the statement’s main inline equation as a display
         m = re.search(r"\$([^$]{3,80})\$", statement)
         if m and n_disp < 1:
             bits.append("The claim asserts")
@@ -153,16 +164,31 @@ def deepen_letter(
         bits.append(core)
         core = join(*bits)
         n_disp = len(re.findall(r"\$\$", core)) // 2
+    elif len(core) < 220 and already_has_opener and recovered and "overview already" not in core.lower():
+        # Keep existing opener; insert recovery pointer after it
+        paras = [p.strip() for p in core.split("\n\n") if p.strip()]
+        paras.insert(1, f"The overview already recovered {recovered}.")
+        core = "\n\n".join(paras)
 
     if core.lstrip().startswith("$$"):
-        core = f"{OPENERS_CH8[(idx + 2) % len(OPENERS_CH8)]}\n\n{core}"
+        lead = OPENERS_CH8[(idx + 2) % len(OPENERS_CH8)]
+        if not core.startswith(lead):
+            core = f"{lead}\n\n{core}"
 
-    # Ensure an explicit comparison sentence before closer when still short
-    if len(core) < 280 and "claim" not in core.lower()[-120:]:
+    if len(core) < 260 and "claim" not in core.lower()[-120:]:
         core = join(
             core,
             "Compare that figure with the threshold or value named in the claim.",
         )
+
+    # Final dedupe
+    paras = [p.strip() for p in core.split("\n\n") if p.strip()]
+    deduped = []
+    for p in paras:
+        if deduped and p == deduped[-1]:
+            continue
+        deduped.append(p)
+    core = "\n\n".join(deduped)
 
     core = strip_closer(core)
     core = re.sub(r"\.\.+$", ".", core.rstrip())
