@@ -27,35 +27,101 @@ const MATH_CH5_CORE: MathTask[] = [
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) The North depot currently holds 360 crates.**  (true)
+      `**A.** → True
 
-The overview recovered $x=360$ as today's North holding. The claim is that same figure, so the statement is True.`,
-      `**B) The South depot currently holds 240 crates.**  (false)
+In the shared two-unknown system, the overview already solved for today's North holding. State that recovered value before testing the claim:
 
-The overview recovered $y=260$ as today's South holding. The claim is $240$, so the statement is False.`,
-      `**C) If 30 crates were moved from South to North instead, North would then hold 390 crates.**  (true)
+$$
+x=360
+$$
+
+The claim asserts
+
+$$
+x=360
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for today's South holding. State that recovered value before testing the claim:
+
+$$
+y=260
+$$
+
+The claim asserts
+
+$$
+y = 240
+$$
+
+Comparing with the recovered value shows they do not agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered holdings from the overview; do not rebuild the original transfer system.
 
 This is not the overview's equalizing transfer. North starts at the recovered $x=360$ and receives $30$ crates from South:
 
 $$360 + 30 = 390$$
 
-The claim is $390$, so the statement is True.`,
-      `**D) The difference between the two depots today is 120 crates.**  (false)
+The claim is $390$.
 
-The overview recovered $x=360$ and $y=260$. Today's gap is
+The computed figure matches the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
+
+Today's gap is
 
 $$360 - 260 = 100$$
 
-The claim is $120$, so the statement is False.`,
-      `**E) Moving 50 crates from North to South would leave both depots holding 310 crates each.**  (true)
+The claim is $120$.
 
-The overview recovered $x=360$ and $y=260$. Moving $50$ crates from North to South gives
+The computed figure does not match the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is False.`,
+      `**E.** → True
+
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y' = y + t
+$$
+
+Using the recovered solution values $x=360$ and $y=260$ as inputs for this claim:
+
+Moving $50$ crates from North to South gives
 
 $$360 - 50 = 310$$
 
 $$260 + 50 = 310$$
 
-Both sides are $310$, so the statement is True.`,
+Both sides are $310$.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 1,
@@ -107,18 +173,60 @@ $$y = 620 - 360 = 260$$
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A) A notebook costs \\$3.50.**  (true)
+      `**A.** → True
 
-The overview recovered $x=3.50$ as the notebook price. The claim is that same figure, so the statement is True.`,
-      `**B) A pen costs \\$2.10.**  (false)
+In the shared two-unknown system, the overview already solved for the notebook price. State that recovered value before testing the claim:
 
-The overview recovered $y=1.80$ as the pen price. The claim is \\$2.10, so the statement is False.`,
-      `**C) Invoice #101 totals \\$185.00.**  (true)
+$$
+x=3.50
+$$
 
-Invoice #101 is printed at \\$185.00. The claim is that same total, so the statement is True.`,
-      `**D) 10 notebooks and 10 pens purchased together would cost \\$53.00.**  (true)
+The claim asserts
 
-The overview recovered $x=3.50$ and $y=1.80$. Ten of each costs
+$$
+x=3.50
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for the pen price. State that recovered value before testing the claim:
+
+$$
+y=1.80
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
+
+Invoice #101 is printed at \\$185.
+
+The claim names that same total. The invoice total and the claim agree.
+
+So the statement is True.`,
+      `**D.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=1.80$ as inputs for this claim:
+
+Ten of each costs
 
 $$10 \\times 3.50 = 35$$
 
@@ -126,10 +234,22 @@ $$10 \\times 1.80 = 18$$
 
 $$35 + 18 = 53$$
 
-The claim is \\$53.00, so the statement is True.`,
-      `**E) Invoice #102 totals \\$172.50.**  (false)
+The claim is \\$53.00
 
-Invoice #102 is printed at \\$160.50. The claim is \\$172.50, so the statement is False.`,
+The computed figure and the claim agree.
+
+So the statement is True.`,
+      `**E.** → False
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once the unit prices are recovered, each stem invoice total is fixed. Read the printed total for this claim:
+
+Invoice #102 is printed at \\$160.
+
+The claim names \\$172. The invoice total and the claim do not agree.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 2,
@@ -191,21 +311,77 @@ $$x = 10.70 - 7.20 = 3.50$$
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A) An adult ticket costs \\$12.00.**  (true)
+      `**A.** → True
 
-The overview recovered $a=12$ as the adult ticket price. The claim is that same figure, so the statement is True.`,
-      `**B) A child ticket costs \\$7.00.**  (true)
+In the shared two-unknown system, the overview already solved for the adult ticket price. State that recovered value before testing the claim:
 
-The overview recovered $c=7$ as the child ticket price. The claim is that same figure, so the statement is True.`,
-      `**C) The Saturday matinee generated \\$2,050.00 in revenue.**  (false)
+$$
+a=12
+$$
 
-The Saturday matinee is printed at \\$2,130. The claim is \\$2,050.00, so the statement is False.`,
-      `**D) The Saturday evening session generated \\$2,300.00 in revenue.**  (false)
+The claim asserts
 
-The Saturday evening session is printed at \\$2,200. The claim is \\$2,300.00, so the statement is False.`,
-      `**E) 50 adult tickets and 50 child tickets together would generate \\$1,000.00.**  (false)
+$$
+a=12
+$$
 
-The overview recovered $a=12$ and $c=7$. Fifty of each would generate
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the child ticket price. State that recovered value before testing the claim:
+
+$$
+c=7
+$$
+
+The claim asserts
+
+$$
+c=7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
+
+The Saturday matinee is printed at \\$2,130.
+
+The claim names \\$2,050. The printed figure and the claim do not agree.
+
+So the statement is False.`,
+      `**D.** → False
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Once unit prices are recovered, the stem total for this session is fixed. Read that printed total:
+
+The Saturday evening session is printed at \\$2,200.
+
+The claim names \\$2,300. The printed figure and the claim do not agree.
+
+So the statement is False.`,
+      `**E.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $a=12$ and $c=7$ as inputs for this claim:
+
+Fifty of each would generate
 
 $$50 \\times 12 = 600$$
 
@@ -213,7 +389,11 @@ $$50 \\times 7 = 350$$
 
 $$600 + 350 = 950$$
 
-The claim is \\$1,000.00, so the statement is False.`,
+The claim is \\$1,000.00
+
+The computed figure does not match the claim.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 3,
@@ -271,19 +451,75 @@ $$c = 55 - 48 = 7$$
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      `**A) A sandwich costs \\$7.00.**  (true)
+      `**A.** → True
 
-The overview recovered $x=7$ as the sandwich price. The claim is that same figure, so the statement is True.`,
-      `**B) A wrap costs \\$5.00.**  (true)
+In the shared two-unknown system, the overview already solved for the sandwich price. State that recovered value before testing the claim:
 
-The overview recovered $y=5$ as the wrap price. The claim is that same figure, so the statement is True.`,
-      `**C) Receipt A's food subtotal, before the \\$8.00 delivery fee is added, is \\$62.00.**  (true)
+$$
+x=7
+$$
 
-The overview recovered Receipt A's food subtotal as $62$ after peeling the \\$8.00 fee. The claim is that same figure, so the statement is True.`,
-      `**D) Receipt B's total, including the \\$8.00 delivery fee, is \\$74.00.**  (true)
+The claim asserts
 
-Receipt B is printed at \\$74.00 including the delivery fee. The claim is that same total, so the statement is True.`,
-      `**E) A pickup order of 5 sandwiches and 5 wraps would cost \\$60.00.**  (true)
+$$
+x=7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the wrap price. State that recovered value before testing the claim:
+
+$$
+y=5
+$$
+
+The claim asserts
+
+$$
+y=5
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Substitute the stem numbers recovered in the overview:
+
+$$
+62
+$$
+
+The claim names \$8.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**D.** → True
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
+
+Receipt B is printed at \\$74.00 including the delivery fee.
+
+The claim names that same total Those two totals agree.
+
+So the statement is True.`,
+      `**E.** → True
 
 This is a pickup, so there is no delivery fee. The overview recovered $x=7$ and $y=5$. Five of each costs
 
@@ -293,7 +529,11 @@ $$5 \\times 5 = 25$$
 
 $$35 + 25 = 60$$
 
-The claim is \\$60.00, so the statement is True.`,
+The claim is \\$60.00.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 4,
@@ -353,33 +593,71 @@ $$x = 7$$
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A) \\$6,500 was placed in Account A.**  (false)
+      `**A.** → False
 
-The overview recovered $x=6000$ as the amount in Account A. The claim is \\$6,500, so the statement is False.`,
-      `**B) \\$4,500 was placed in Account B.**  (false)
+In the shared two-unknown system, the overview already solved for the amount in Account A. State that recovered value before testing the claim:
 
-The overview recovered $y=4000$ as the amount in Account B. The claim is \\$4,500, so the statement is False.`,
-      `**C) Account A earned \\$260.00 in interest over the year.**  (false)
+$$
+x=6000
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for the amount in Account B. State that recovered value before testing the claim:
+
+$$
+y=4000
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=6000$ in Account A. Interest on that principal at $4\\%$ is
 
 $$0.04 \\times 6000 = 240$$
 
-The claim is \\$260.00, so the statement is False.`,
-      `**D) Account B earned \\$210.00 in interest over the year.**  (false)
+The claim is \\$260.00
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=4000$ in Account B. Interest on that principal at $7\\%$ is
 
 $$0.07 \\times 4000 = 280$$
 
-The claim is \\$210.00, so the statement is False.`,
-      `**E) Had the entire \\$10,000 been placed in Account B alone, total interest for the year would have been \\$700.00.**  (true)
+The claim is \\$210.00
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The whole \\$10,000 would sit in Account B at $7\\%$:
 
 $$0.07 \\times 10000 = 700$$
 
-The claim is \\$700.00, so the statement is True.`,
+The claim is \\$700.00.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 5,
@@ -429,25 +707,71 @@ $$x = 10000 - 4000 = 6000$$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) A Standard chair is priced at \\$304.00.**  (true)
+      `**A.** → True
 
-The overview recovered $x=304$ as the Standard price. The claim is that same figure, so the statement is True.`,
-      `**B) A Premium chair is priced at \\$354.00.**  (false)
+In the shared two-unknown system, the overview already solved for the Standard price. State that recovered value before testing the claim:
 
-The overview recovered $y=349$ as the Premium price. The claim is \\$354.00, so the statement is False.`,
-      `**C) The 12 Premium chairs in the shipment are worth \\$4,188.00 in total.**  (true)
+$$
+x=304
+$$
+
+The claim asserts
+
+$$
+x=304
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for the Premium price. State that recovered value before testing the claim:
+
+$$
+y=349
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=349$. Twelve Premium chairs are worth
 
 $$12 \\times 349 = 4188$$
 
-The claim is \\$4,188.00, so the statement is True.`,
-      `**D) The price gap between one Premium chair and one Standard chair is \\$45.00.**  (true)
+The claim is \\$4,188.00
 
-The catalogue gap is already equation (1): $y = x + 45$. The claim is that same \\$45.00, so the statement is True.`,
-      `**E) A smaller order of 5 Standard chairs and 5 Premium chairs would cost more than \\$3,000.00.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $x=304$ and $y=349$. Five of each costs
+So the statement is True.`,
+      `**D.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
+
+The catalogue gap is already equation (1): $y = x + 45$. The claim is that same \\$45.00.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=304$ and $y=349$ as inputs for this claim:
+
+Five of each costs
 
 $$5 \\times 304 = 1520$$
 
@@ -455,7 +779,11 @@ $$5 \\times 349 = 1745$$
 
 $$1520 + 1745 = 3265$$
 
-Then $3265 > 3000$, so the statement is True.`,
+Then $3265 > 3000$.
+
+The claim names \$3,000.00. The computed figure and the claim agree.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 6,
@@ -505,31 +833,87 @@ $$y = 304 + 45 = 349$$
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A) ByteMobile's fixed monthly fee is \\$17.00.**  (true)
+      `**A.** → True
 
-The overview recovered $f=17$ as the fixed monthly fee. The claim is that same figure, so the statement is True.`,
-      `**B) The extra-minute rate advertised is \\$0.30 per minute.**  (true)
+In the shared two-unknown system, the overview already solved for the fixed monthly fee. State that recovered value before testing the claim:
 
-The overview recovered $r=0.30$ as the extra-minute rate. The claim is that same figure, so the statement is True.`,
-      `**C) A customer using 200 extra minutes in a month would pay \\$80.00.**  (false)
+$$
+f=17
+$$
 
-The overview recovered $f=17$ and $r=0.30$. Two hundred extra minutes would cost
+The claim asserts
+
+$$
+f=17
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the extra-minute rate. State that recovered value before testing the claim:
+
+$$
+r=0.30
+$$
+
+The claim asserts
+
+$$
+r=0.30
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=17$ and $r=0.30$ as inputs for this claim:
+
+Two hundred extra minutes would cost
 
 $$200 \\times 0.30 = 60$$
 
 $$17 + 60 = 77$$
 
-The claim is \\$80.00, so the statement is False.`,
-      `**D) A customer using 0 extra minutes would pay \\$0.00 that month.**  (false)
+The claim is \\$80.00
 
-With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim is \\$0.00, so the statement is False.`,
-      `**E) The advertised extra-minute rate is more than double a rival plan's rate of \\$0.20 per minute.**  (false)
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**D.** → False
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
+
+With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim is \\$0.00.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Double the rival rate of \\$0.20 is
 
 $$2 \\times 0.20 = 0.40$$
 
-The recovered extra-minute rate is $r=0.30$. Then $0.30 < 0.40$, so the statement is False.`,
+The recovered extra-minute rate is $r=0.30$. Then $0.30 < 0.40$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{1}{5}`,
     sort_order: 7,
@@ -585,33 +969,77 @@ $$f = 17$$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) The division built 75 Standard ovens this week.**  (true)
+      `**A.** → True
 
-The overview recovered $s=75$ Standard ovens. The claim is that same figure, so the statement is True.`,
-      `**B) The division built 45 Deluxe ovens this week.**  (false)
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
 
-The overview recovered $d=55$ Deluxe ovens. The claim is $45$, so the statement is False.`,
-      `**C) Standard ovens accounted for 300 assembly hours this week.**  (true)
+$$
+y=\frac{\Delta_y}{\Delta}
+$$
+
+Substitute the stem numbers:
+
+$$
+s = 130 - 55 = 75
+$$
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**B.** → False
+
+Use the recovered values from the overview for this claim-specific check.
+
+$$
+d=55
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $s=75$ Standard ovens at 4 hours each:
 
 $$75 \\times 4 = 300$$
 
-The claim is $300$ assembly hours, so the statement is True.`,
-      `**D) Deluxe ovens accounted for 500 assembly hours this week.**  (false)
+The claim is $300$ assembly hours. 
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
 $$55 \\times 9 = 495$$
 
-The claim is $500$ assembly hours, so the statement is False.`,
-      `**E) The total material cost of all Standard ovens built this week is \\$9,000.00.**  (true)
+The claim is $500$ assembly hours. 
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $s=75$ Standard ovens at \\$120 each:
 
 $$75 \\times 120 = 9000$$
 
-The claim is \\$9,000.00, so the statement is True.`,
+The claim is \\$9,000.00
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 8,
@@ -665,25 +1093,85 @@ $$s = 130 - 55 = 75$$
     ],
     answer_key: [true, true, true, true, true],
     tactical_explanations: [
-      `**A) A sofa sells for \\$350.00.**  (true)
+      `**A.** → True
 
-The overview recovered $x=350$ as the sofa price. The claim is that same figure, so the statement is True.`,
-      `**B) An armchair sells for \\$200.00.**  (true)
+In the shared two-unknown system, the overview already solved for the sofa price. State that recovered value before testing the claim:
 
-The overview recovered $y=200$ as the armchair price. The claim is that same figure, so the statement is True.`,
-      `**C) Riverside's net sales were \\$9,300.00.**  (true)
+$$
+x=350
+$$
 
-The overview recovered Riverside's net sales as $9300$ after subtracting returns. The claim is that same figure, so the statement is True.`,
-      `**D) Hillcrest's gross sales were \\$9,300.00.**  (true)
+The claim asserts
 
-Hillcrest's gross sales are printed at \\$9,300. The claim is that same total, so the statement is True.`,
-      `**E) Had Riverside recorded zero returns that month, its gross and net sales would both have equalled \\$9,760.00.**  (true)
+$$
+x=350
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the armchair price. State that recovered value before testing the claim:
+
+$$
+y=200
+$$
+
+The claim asserts
+
+$$
+y=200
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
+
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
+Substitute the stem numbers:
+
+$$
+9300 - 300 = 9000
+$$
+
+The claim names \$9,300.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**D.** → True
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
+
+Hillcrest's gross sales are printed at \\$9,300. The claim is that same total.
+
+So the statement is True.`,
+      `**E.** → True
+
+Once the unit prices are recovered, this session total is fixed by the stem quantities. Read the printed total, then compare it with the claim.
+
+Use the recovered values from the overview for this claim-specific check.
 
 Riverside's gross sales are printed at \\$9,760. With zero returns,
 
 $$9760 - 0 = 9760$$
 
-Gross and net would both equal \\$9,760.00, so the statement is True.`,
+Gross and net would both equal \\$9,760.00.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 9,
@@ -745,33 +1233,89 @@ $$y = 900 - 700 = 200$$
     ],
     answer_key: [false, false, false, false, true],
     tactical_explanations: [
-      `**A) PrintFast's setup fee is \\$12.00.**  (false)
+      `**A.** → False
 
-The overview recovered $f=9$ as PrintFast's setup fee. The claim is \\$12.00, so the statement is False.`,
-      `**B) PrintFast's per-page rate is \\$0.25.**  (false)
+In the shared two-unknown system, the overview already solved for PrintFast's setup fee. State that recovered value before testing the claim:
 
-The overview recovered $r=0.20$ as PrintFast's per-page rate. The claim is \\$0.25, so the statement is False.`,
-      `**C) A 250-page order at PrintFast would cost \\$60.00.**  (false)
+$$
+f=9
+$$
 
-The overview recovered $f=9$ and $r=0.20$. A 250-page PrintFast order costs
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for PrintFast's per-page rate. State that recovered value before testing the claim:
+
+$$
+r=0.20
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
+
+A 250-page PrintFast order costs
 
 $$250 \\times 0.20 = 50$$
 
 $$9 + 50 = 59$$
 
-The claim is \\$60.00, so the statement is False.`,
-      `**D) For a 350-page order, PrintFast would be cheaper than QuickCopy Center's flat \\$60.00 fee.**  (false)
+The claim is \\$60.00
 
-The overview recovered $f=9$ and $r=0.20$. A 350-page PrintFast order costs
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**D.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $f=9$ and $r=0.20$ as inputs for this claim:
+
+A 350-page PrintFast order costs
 
 $$350 \\times 0.20 = 70$$
 
 $$9 + 70 = 79$$
 
-QuickCopy's flat fee is \\$60. Then $79 > 60$, so the statement is False.`,
-      `**E) Because Order #58 and Order #96 involve different page counts at different total prices, these two invoices pin down one, and only one, possible combination of setup fee and per-page rate.**  (true)
+QuickCopy's flat fee is \\$60. Then $79 > 60$.
 
-Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The overview already recovered that pair as $f=9$ and $r=0.20$, so the statement is True.`,
+The claim names \$60.00. The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**E.** → True
+
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Substitute the stem numbers recovered in the overview:
+
+Two independent PrintFast bills give two linear equations in the setup fee and the per-page rate. Different page counts make the equations independent, so they determine a unique pair. The that pair as $f=9$ and $r=0.20$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 10,
@@ -823,33 +1367,77 @@ $$f = 9$$
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A) Ben paid more for his 5 burritos alone than Ana paid for her entire order.**  (false)
+      `**A.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. Ben's 5 burritos alone cost
 
 $$5 \\times 6 = 30$$
 
-Ana's entire order was \\$32.00. Then $30 < 32$, so the statement is False.`,
-      `**B) A burrito costs \\$2.50 more than a taco.**  (true)
+Ana's entire order was \\$32.00. Then $30 < 32$.
 
-The overview recovered $x=3.50$ and $y=6$. The gap is
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
+
+The gap is
 
 $$6 - 3.50 = 2.50$$
 
-The claim is \\$2.50, so the statement is True.`,
-      `**C) Had Ana ordered one fewer burrito, she would have paid less than \\$28.00.**  (true)
+The claim is \\$2.50.
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
 $$32 - 6 = 26$$
 
-Then $26 < 28$, so the statement is True.`,
-      `**D) Ben's total order price exceeds \\$40.00.**  (false)
+Then $26 < 28$.
 
-The overview recovered Ben's total as $37$. Then $37 < 40$, so the statement is False.`,
-      `**E) Buying 6 tacos and 6 burritos together would cost \\$57.00.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $x=3.50$ and $y=6$. Six of each costs
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
+
+$$
+37
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=3.50$ and $y=6$ as inputs for this claim:
+
+Six of each costs
 
 $$6 \\times 3.50 = 21$$
 
@@ -857,7 +1445,11 @@ $$6 \\times 6 = 36$$
 
 $$21 + 36 = 57$$
 
-The claim is \\$57.00, so the statement is True.`,
+The claim is \\$57.00
+
+The computed figure and the claim agree.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 11,
@@ -924,22 +1516,62 @@ $$x = 3.50$$
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A) A paperback price of \\$12 is consistent with the pricing desk's \\$5 gap rule.**  (true)
+      `**A.** → True
 
-The overview recovered $x=12$ as the paperback price, and equation (1) is the \\$5 gap rule. The claim is that same pair, so the statement is True.`,
-      `**B) Hardcover editions are priced above \\$18.**  (false)
+In the shared two-unknown system, the overview already solved for the paperback price, and equation (1) is the \\$5 gap rule. State that recovered value before testing the claim:
 
-The overview recovered $y=17$ as the hardcover price. Then $17 < 18$, so the statement is False.`,
-      `**C) Had 500 paperbacks been sold instead of 400, revenue would have been \\$1,200 higher.**  (true)
+$$
+x=12
+$$
+
+The claim asserts
+
+$$
+x=12
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for the hardcover price. State that recovered value before testing the claim:
+
+$$
+y=17
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x=12$. One hundred extra paperbacks add
 
 $$100 \\times 12 = 1200$$
 
-The claim is \\$1,200 higher, so the statement is True.`,
-      `**D) A customer buying 3 hardcovers and 2 paperbacks would pay less than \\$75.**  (false)
+The claim is \\$1,200 higher. 
 
-The overview recovered $x=12$ and $y=17$. Three hardcovers and two paperbacks cost
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=17$ as inputs for this claim:
+
+Three hardcovers and two paperbacks cost
 
 $$3 \\times 17 = 51$$
 
@@ -947,14 +1579,22 @@ $$2 \\times 12 = 24$$
 
 $$51 + 24 = 75$$
 
-The claim needs a total less than \\$75. We have equality, so the statement is False.`,
-      `**E) The reported \\$8,540 total could also have come from selling 310 hardcovers alone.**  (false)
+The claim needs a total less than \\$75. We have equality.
+
+So the statement is False.`,
+      `**E.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
 $$310 \\times 17 = 5270$$
 
-The reported total is \\$8,540. Then $5270 \\ne 8540$, so the statement is False.`,
+The reported total is \\$8,540. Then $5270 \\ne 8540$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 12,
@@ -1008,22 +1648,60 @@ $$y = 12 + 5 = 17$$
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
-      `**A) The Standard plan has a lower base fee than the advertised Basic plan.**  (false)
+      `**A.** → False
 
-The overview recovered $x=38$ as Standard's base fee. Basic's advertised base is \\$15. Then $38 > 15$, so the statement is False.`,
-      `**B) The overage rate on the Standard plan is \\$3.00 per GB.**  (true)
+In the shared two-unknown system, the overview already solved for Standard's base fee. State that recovered value before testing the claim:
 
-The overview recovered $y=3$ as Standard's overage rate. The claim is that same figure, so the statement is True.`,
-      `**C) A Standard customer using 10 GB of overage in May would be billed \\$68.00.**  (true)
+$$
+x=38
+$$
 
-The overview recovered $x=38$ and $y=3$. Ten GB of overage on Standard costs
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for Standard's overage rate. State that recovered value before testing the claim:
+
+$$
+y=3
+$$
+
+The claim asserts
+
+$$
+y=3
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=38$ and $y=3$ as inputs for this claim:
+
+Ten GB of overage on Standard costs
 
 $$10 \\times 3 = 30$$
 
 $$38 + 30 = 68$$
 
-The claim is \\$68.00, so the statement is True.`,
-      `**D) Switching from Standard to Premium would save money for a customer who typically uses 5 GB of overage per month.**  (true)
+The claim is \\$68.00
+
+The computed figure and the claim agree.
+
+So the statement is True.`,
+      `**D.** → True
 
 The overview recovered Standard as $x=38$ and $y=3$. Five GB of overage on Standard costs
 
@@ -1031,8 +1709,14 @@ $$5 \\times 3 = 15$$
 
 $$38 + 15 = 53$$
 
-Premium is \\$40 unlimited. Then $40 < 53$, so the statement is True.`,
-      `**E) For a customer using 8 GB of overage, the Basic plan works out cheaper than the Standard plan.**  (true)
+Premium is \\$40 unlimited. Then $40 < 53$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 At 8 GB of overage, Basic costs
 
@@ -1040,7 +1724,11 @@ $$8 \\times 2 = 16$$
 
 $$15 + 16 = 31$$
 
-Standard's March bill at 8 GB is the recovered \\$62. Then $31 < 62$, so the statement is True.`,
+Standard's March bill at 8 GB is the recovered \\$62. Then $31 < 62$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 13,
@@ -1096,19 +1784,55 @@ $$x = 38$$
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      `**A) After removing the occupancy tax, Weekend 1's booking revenue was \\$2,240.00.**  (true)
+      `**A.** → True
 
-The overview recovered Weekend 1's pre-tax revenue as $2240$. The claim is that same figure, so the statement is True.`,
-      `**B) A Suite costs \\$200 more per night than a Standard room.**  (false)
+A transfer shifts one recovered holding into the other by the stated amount:
 
-The overview recovered $x=140$ and $y=210$. The Suite premium is
+$$
+x' = x - t,\quad y' = y + t
+$$
+
+Substitute the stem numbers recovered in the overview:
+
+$$
+2240
+$$
+
+The claim names \$2,240.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**B.** → False
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
+
+The Suite premium is
 
 $$210 - 140 = 70$$
 
-The claim is \\$200 more, so the statement is False.`,
-      `**C) Booking 6 Standard rooms for one night costs less than booking 4 Suites.**  (false)
+The claim is \\$200 more. 
 
-The overview recovered $x=140$ and $y=210$. Six Standard rooms cost
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is False.`,
+      `**C.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=140$ and $y=210$ as inputs for this claim:
+
+Six Standard rooms cost
 
 $$6 \\times 140 = 840$$
 
@@ -1116,17 +1840,45 @@ Four Suites cost
 
 $$4 \\times 210 = 840$$
 
-The two bookings match, so six Standard rooms are not cheaper, so the statement is False.`,
-      `**D) Including the 8% tax, a single Suite night costs \\$226.80.**  (true)
+The two bookings match, so six Standard rooms are not cheaper.
 
-The overview recovered $y=210$ as the pre-tax Suite rate. Including $8\\%$ tax:
+So the statement is False.`,
+      `**D.** → True
+
+The shared elimination already recovered the pre-tax Suite rate. State that value in its own display before testing the claim:
+
+$$
+y=210
+$$
+
+Including $8\\%$ tax:
 
 $$210 \\times 1.08 = 226.80$$
 
-The claim is \\$226.80, so the statement is True.`,
-      `**E) Had Weekend 2 booked 10 Suites instead of 9, pre-tax revenue would have risen by \\$210.**  (true)
+The claim is \\$226.80
 
-The overview recovered $y=210$ as the pre-tax Suite rate. One extra Suite on Weekend 2 adds $210$ to pre-tax revenue, so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+In the shared two-unknown system, the overview already solved for the pre-tax Suite rate. State that recovered value before testing the claim:
+
+$$
+y=210
+$$
+
+The claim asserts
+
+$$
+y=210
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 14,
@@ -1199,15 +1951,49 @@ $$y = 210$$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) Component A's unit cost is \\$12.**  (true)
+      `**A.** → True
 
-The overview recovered $x=12$ as Component A's unit cost. The claim is that same figure, so the statement is True.`,
-      `**B) Component B's unit cost is \\$18.**  (false)
+In the shared two-unknown system, the overview already solved for Component A's unit cost. State that recovered value before testing the claim:
 
-The overview recovered $y=15$ as Component B's unit cost. The claim is \\$18, so the statement is False.`,
-      `**C) The March forecast assumes higher unit prices than what actually applied in January and February.**  (true)
+$$
+x=12
+$$
 
-The overview recovered $x=12$ and $y=15$. March's forecast quantities at those actual costs would be
+The claim asserts
+
+$$
+x=12
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+In the shared two-unknown system, the overview already solved for Component B's unit cost. State that recovered value before testing the claim:
+
+$$
+y=15
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
+
+March's forecast quantities at those actual costs would be
 
 $$200 \\times 12 = 2400$$
 
@@ -1215,10 +2001,22 @@ $$100 \\times 15 = 1500$$
 
 $$2400 + 1500 = 3900$$
 
-The March forecast total is \\$4,700. Then $4700 > 3900$, so the statement is True.`,
-      `**D) If March's forecast quantities were valued at the actual January/February unit costs, the result would be \\$4,700.**  (false)
+The March forecast total is \\$4,700. Then $4700 > 3900$.
 
-The overview recovered $x=12$ and $y=15$. March's forecast quantities at those actual costs would be
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**D.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=12$ and $y=15$ as inputs for this claim:
+
+March's forecast quantities at those actual costs would be
 
 $$200 \\times 12 = 2400$$
 
@@ -1226,14 +2024,24 @@ $$100 \\times 15 = 1500$$
 
 $$2400 + 1500 = 3900$$
 
-The claim is \\$4,700. Then $3900 \\ne 4700$, so the statement is False.`,
-      `**E) The combined actual inventory value recorded for January and February is \\$6,810.**  (true)
+The claim is \\$4,700. Then $3900 \\ne 4700$.
+
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 January's actual value is \\$3,150 and February's is \\$3,660:
 
 $$3150 + 3660 = 6810$$
 
-The claim is \\$6,810, so the statement is True.`,
+The claim is \\$6,810.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 15,
@@ -1303,22 +2111,60 @@ $$y = 15$$
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
-      `**A) The overtime rate actually paid matches the contractual $1.5\\times$ regular-rate rule.**  (false)
+      `**A.** → False
 
-The overview recovered an actual overtime rate of $y=24$ and a contract rate of \\$21. Then $24 \\ne 21$, so the statement is False.`,
-      `**B) The regular hourly wage is \\$14.**  (true)
+Use the recovered values from the overview for this claim-specific check.
 
-The overview recovered $x=14$ as the regular hourly wage. The claim is that same figure, so the statement is True.`,
-      `**C) Relative to the $1.5\\times$ contract rule, Worker 2 was overpaid by exactly \\$6.00 on their overtime hours.**  (true)
+$$
+y=24
+$$
+
+That recovered value is not the figure named in the claim.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the regular hourly wage. State that recovered value before testing the claim:
+
+$$
+x=14
+$$
+
+The claim asserts
+
+$$
+x=14
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
 
 The overview recovered actual overtime $y=24$ and contract overtime \\$21. Worker 2 had 2 overtime hours, so the overpayment is
 
 $$2 \\times (24 - 21) = 6$$
 
-The claim is \\$6.00, so the statement is True.`,
-      `**D) A third worker completing 40 regular + 4 overtime hours, paid at the rates actually used this week, would earn \\$656.**  (true)
+The claim is \\$6.00
 
-The overview recovered $x=14$ and $y=24$. Forty regular hours plus 4 overtime hours at those actual rates:
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=14$ and $y=24$ as inputs for this claim:
+
+Forty regular hours plus 4 overtime hours at those actual rates:
 
 $$40 \\times 14 = 560$$
 
@@ -1326,8 +2172,10 @@ $$4 \\times 24 = 96$$
 
 $$560 + 96 = 656$$
 
-The claim is \\$656, so the statement is True.`,
-      `**E) That same third worker, paid strictly under the $1.5\\times$ contract rule instead, would earn \\$644.**  (true)
+The claim is \\$656. 
+
+So the statement is True.`,
+      `**E.** → True
 
 The overview recovered $x=14$ and contract overtime \\$21. Forty regular hours plus 4 overtime hours under the contract rule:
 
@@ -1337,7 +2185,11 @@ $$4 \\times 21 = 84$$
 
 $$560 + 84 = 644$$
 
-The claim is \\$644, so the statement is True.`,
+The claim is \\$644.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 16,
@@ -1395,31 +2247,91 @@ $$1.5 \\times 14 = 21$$
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A) The billing office's claim of an \\$18.00 fixed monthly charge is correct.**  (false)
+      `**A.** → False
 
-The overview recovered $x=15$ as the fixed monthly charge. The office's claim is \\$18.00, so the statement is False.`,
-      `**B) The rate charged is \\$2.00 per cubic metre.**  (true)
+In the shared two-unknown system, the overview already solved for the fixed monthly charge. State that recovered value before testing the claim:
 
-The overview recovered $y=2$ as the rate per cubic metre. The claim is that same figure, so the statement is True.`,
-      `**C) After removing the late penalty, May's actual water charge was \\$51.00.**  (true)
+$$
+x=15
+$$
 
-The overview recovered May's charge without the late penalty as $51$. The claim is that same figure, so the statement is True.`,
-      `**D) A customer using 40 m³ in a month would be billed \\$85.00.**  (false)
+That recovered value is not the figure named in the claim.
 
-The overview recovered $x=15$ and $y=2$. Forty cubic metres would be billed
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+In the shared two-unknown system, the overview already solved for the rate per cubic metre. State that recovered value before testing the claim:
+
+$$
+y=2
+$$
+
+The claim asserts
+
+$$
+y=2
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
+
+A transfer shifts one recovered holding into the other by the stated amount:
+
+$$
+x' = x - t,\quad y' = y + t
+$$
+
+Substitute the stem numbers recovered in the overview:
+
+$$
+y = 51
+$$
+
+The claim names \$51.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**D.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=15$ and $y=2$ as inputs for this claim:
+
+Forty cubic metres would be billed
 
 $$40 \\times 2 = 80$$
 
 $$15 + 80 = 95$$
 
-The claim is \\$85.00, so the statement is False.`,
-      `**E) Had the same 10% late penalty been applied to June's \\$65.00 bill, the total would have been \\$71.50.**  (true)
+The claim is \\$85.00
+
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 June's printed bill is \\$65.00. A 10% late penalty on that total is
 
 $$65 \\times 1.10 = 71.50$$
 
-The claim is \\$71.50, so the statement is True.`,
+The claim is \\$71.50.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 17,
@@ -1473,9 +2385,17 @@ $$x = 15$$
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A) For a 10 km ride, CityCab works out cheaper than MetroX.**  (true)
+      `**A.** → True
 
-The overview recovered $C(d)=6+d$ and $M(d)=6+1.5d$. At $10$ km:
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
+
+At $10$ km:
 
 $$C(10) = 6 + 10 = 16$$
 
@@ -1483,13 +2403,35 @@ $$1.5 \\times 10 = 15$$
 
 $$M(10) = 6 + 15 = 21$$
 
-Then $16 < 21$, so the statement is True.`,
-      `**B) Both companies charge the same base fare of \\$6.00.**  (true)
+Then $16 < 21$.
 
-The overview recovered $x_1=6$ and $x_2=6$. Both bases are \\$6.00, so the statement is True.`,
-      `**C) For distances under 4 km, MetroX would be cheaper than CityCab.**  (false)
+The computed figure matches the claim.
 
-The overview recovered $C(d)=6+d$ and $M(d)=6+1.5d$. At $3$ km, which is under $4$ km:
+So the statement is True.`,
+      `**B.** → True
+
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x_1 = 6
+$$
+
+The claim names \$6.00. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**C.** → False
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $C(d)=6+d$ and $M(d)=6+1.5d$ as inputs for this claim:
+
+At $3$ km, which is under $4$ km:
 
 $$C(3) = 6 + 3 = 9$$
 
@@ -1497,21 +2439,37 @@ $$1.5 \\times 3 = 4.50$$
 
 $$M(3) = 6 + 4.50 = 10.50$$
 
-Then $10.50 > 9$, so MetroX is not cheaper, so the statement is False.`,
-      `**D) A 30 km CityCab ride costs \\$36.00.**  (true)
+Then $10.50 > 9$, so MetroX is not cheaper.
+
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**D.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. At $30$ km:
 
 $$C(30) = 6 + 30 = 36$$
 
-The claim is \\$36.00, so the statement is True.`,
-      `**E) There is a distance of 5 km at which both companies charge exactly the same fare.**  (false)
+The claim is \\$36.00
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
 $$C(5) = 6 + 5 = 11$$
 
-The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$, so the statement is False.`,
+The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 18,
@@ -1587,13 +2545,39 @@ $$M(d) = 6 + 1.5d$$
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A) Vendor A charges less than Vendor B for Product X.**  (true)
+      `**A.** → True
 
-The overview recovered $x_A=9$ and $x_B=11$. Then $9 < 11$, so the statement is True.`,
-      `**B) Vendor B charges less than Vendor A for Product Y.**  (true)
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
-The overview recovered $y_B=16$ and $y_A=18$. Then $16 < 18$, so the statement is True.`,
-      `**C) For the upcoming order of 40 units X and 30 units Y, Vendor A is the cheaper overall choice.**  (true)
+$$
+y_A = 30 - \\frac{4}{3}x_A
+$$
+
+Substitute the stem numbers:
+
+$$
+x_A = 9
+$$
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**B.** → True
+
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the second recovered coordinate:
+
+$$
+y_B = \\frac{92 - 44}{3} = 16
+$$
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**C.** → True
 
 The overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For 40 of X and 30 of Y, Vendor A costs
 
@@ -1611,8 +2595,10 @@ $$30 \\times 16 = 480$$
 
 $$440 + 480 = 920$$
 
-Then $900 < 920$, so the statement is True.`,
-      `**D) Switching the entire upcoming order to Vendor B would reduce Bramble's total cost by \\$20.**  (false)
+Then $900 < 920$.
+
+So the statement is True.`,
+      `**D.** → False
 
 The overview recovered Vendor A at $x_A=9$, $y_A=18$ and Vendor B at $x_B=11$, $y_B=16$. For the upcoming 40 of X and 30 of Y, Vendor A costs
 
@@ -1632,16 +2618,30 @@ $$440 + 480 = 920$$
 
 $$920 - 900 = 20$$
 
-Switching to Vendor B raises the cost by $20$, it does not reduce it, so the statement is False.`,
-      `**E) If the upcoming order changed to 60 units of Y only, Vendor B would work out cheaper than Vendor A.**  (true)
+Switching to Vendor B raises the cost by $20$, it does not reduce it.
 
-The overview recovered $y_A=18$ and $y_B=16$. Sixty units of Y only:
+So the statement is False.`,
+      `**E.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $y_A=18$ and $y_B=16$ as inputs for this claim:
+
+Sixty units of Y only:
 
 $$60 \\times 18 = 1080$$
 
 $$60 \\times 16 = 960$$
 
-Then $960 < 1080$, so the statement is True.`,
+Then $960 < 1080$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 19,
@@ -1715,13 +2715,45 @@ $$y_B = \\frac{92 - 44}{3} = 16$$
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A) Product P is priced at \\$50 and Service Q at \\$70, identically for both companies.**  (true)
+      `**A.** → True
 
-The overview recovered $x=50$ and $y=70$, used identically by both companies. The claim is that same pair, so the statement is True.`,
-      `**B) Beta generated more Q1 revenue than Alpha.**  (true)
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
 
-The overview recovered Alpha's revenue $A=13100$ and Beta's revenue $B=14100$. Then $14100 > 13100$, so the statement is True.`,
-      `**C) If Alpha raises Product P's price by 10% next quarter, its total revenue would increase by exactly 10%.**  (false)
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
+Substitute the stem numbers:
+
+$$
+x = 50
+$$
+
+The claim names \$50. The computed figure and the claim agree.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**B.** → True
+
+Elimination on two independent linear equations recovers a unique value for each unknown. The claim names the first recovered coordinate:
+
+$$
+x=\frac{\Delta_x}{\Delta}
+$$
+
+Substitute the stem numbers:
+
+$$
+A = 27200 - 14100 = 13100
+$$
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**C.** → False
 
 The overview recovered Alpha's revenue $A=13100$ with Product P at $x=50$. Product P currently contributes
 
@@ -1739,8 +2771,10 @@ A $10\\%$ increase of the whole revenue would be
 
 $$0.10 \\times 13100 = 1310$$
 
-The increase is $750$, not $1310$, so the statement is False.`,
-      `**D) Alpha's projected revenue after that 10% Product P price increase would surpass Beta's current Q1 revenue.**  (false)
+The increase is $750$, not $1310$.
+
+So the statement is False.`,
+      `**D.** → False
 
 The overview recovered Alpha at $A=13100$ with $x=50$ and $y=70$. After a $10\\%$ increase on Product P the new P price is $55$:
 
@@ -1750,10 +2784,20 @@ $$80 \\times 70 = 5600$$
 
 $$8250 + 5600 = 13850$$
 
-Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$, so the statement is False.`,
-      `**E) Beta's revenue from Service Q subscriptions alone exceeds Alpha's entire Q1 revenue from Product P.**  (true)
+Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$.
 
-The overview recovered $x=50$ and $y=70$. Beta's Service Q revenue is
+So the statement is False.`,
+      `**E.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x=50$ and $y=70$ as inputs for this claim:
+
+Beta's Service Q revenue is
 
 $$130 \\times 70 = 9100$$
 
@@ -1761,7 +2805,11 @@ Alpha's Product P revenue is
 
 $$150 \\times 50 = 7500$$
 
-Then $9100 > 7500$, so the statement is True.`,
+Then $9100 > 7500$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{2}{5}`,
     sort_order: 20,
@@ -1845,23 +2893,37 @@ $$x = 50$$
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A) The flyer's advertised \\$30 signup fee matches what members are actually being charged.**  (false)
+      `**A.** → False
 
-The overview recovered $x = 38$ as the signup fee members are actually charged. The flyer claimed \\$30.
+In the shared two-unknown system, the overview already solved for the signup fee members are actually charged. State that recovered value before testing the claim:
 
-Those two figures are not the same.
+$$
+x = 38
+$$
 
-so the statement is False.`,
-      `**B) The monthly rate members are actually paying is lower than the advertised \\$45/month.**  (true)
+That recovered value is not the figure named in the claim.
 
-The overview recovered $y = 41$ as the actual monthly rate. The flyer advertised \\$45 per month.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+The shared elimination already recovered the actual monthly rate. State that value in its own display before testing the claim:
+
+$$
+y = 41
+$$
+
+The flyer advertised \\$45 per month.
 
 $$41 < 45$$
 
 Members pay less per month than the flyer states.
 
-so the statement is True.`,
-      `**C) Maria's actual 6-month total exceeds what the flyer's advertised rates would have produced over the same 6 months.**  (false)
+So the statement is True.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Maria actually paid \\$284 over 6 months. The flyer would have charged a \\$30 signup plus \\$45 per month:
 
@@ -1873,8 +2935,10 @@ $$284 < 300$$
 
 Her actual total does not exceed the flyer figure.
 
-so the statement is False.`,
-      `**D) Jason paid more than \\$400 in total by his 10th payment.**  (true)
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Jason's printed total after his 10th payment is \\$448.
 
@@ -1882,8 +2946,12 @@ $$448 > 400$$
 
 He paid more than \\$400.
 
-so the statement is True.`,
-      `**E) A member who negotiated away the signup fee entirely and paid only the monthly rate for a full 12 months would pay \\$492.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 This member pays no signup fee, only the recovered monthly rate $y = 41$ for 12 months:
 
@@ -1891,7 +2959,7 @@ $$12 \\times 41 = 492$$
 
 The claim is \\$492.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 21,
@@ -1947,19 +3015,43 @@ $$
     ],
     answer_key: [true, false, false, false, true],
     tactical_explanations: [
-      `**A) The Basic plan costs \\$19 per month.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 19$ as the Basic monthly price. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the Basic monthly price. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) The Premium plan costs \\$35 per month.**  (false)
+$$
+x = 19
+$$
 
-The overview recovered $y = 31$ as the Premium monthly price. The claim writes \\$35.
+The claim asserts
+
+$$
+x = 19
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the Premium monthly price. State that value in its own display before testing the claim:
+
+$$
+y = 31
+$$
+
+The claim writes \\$35.
 
 $$31 \\ne 35$$
 
-so the statement is False.`,
-      `**C) Household 2's combined total is more than double Household 1's combined total.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Household 1 billed \\$169. Household 2 billed \\$255. Double Household 1:
 
@@ -1969,8 +3061,12 @@ $$255 < 338$$
 
 Household 2 is not more than double Household 1.
 
-so the statement is False.`,
-      `**D) There exists some positive number of months at which paying only for Basic would cost the same as paying only for Premium for that many months.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Equal cost for $n$ months of only Basic and $n$ months of only Premium would require $nx = ny$ with $n > 0$, hence $x = y$. The overview recovered $x = 19$ and $y = 31$.
 
@@ -1978,8 +3074,8 @@ $$19 \\ne 31$$
 
 The two flat plans never match for a positive run of months.
 
-so the statement is False.`,
-      `**E) A household billed for 5 months of Basic and 5 months of Premium would owe a combined \\$250.**  (true)
+So the statement is False.`,
+      `**E.** → True
 
 This mix is 5 months of Basic and 5 months of Premium at the recovered prices $x = 19$ and $y = 31$:
 
@@ -1991,7 +3087,9 @@ $$95 + 155 = 250$$
 
 The claim is \\$250.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 22,
@@ -2055,12 +3153,28 @@ $$
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A) Organic apples cost \\$4.80 per pound.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 4.80$ as the apple price per pound. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the apple price per pound. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Almond milk costs less than organic apples, per unit.**  (false)
+$$
+x = 4.80
+$$
+
+The claim asserts
+
+$$
+x = 4.80
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of milk.
 
@@ -2068,8 +3182,12 @@ $$6 > 4.80$$
 
 Milk is the dearer unit.
 
-so the statement is False.`,
-      `**C) Five pounds of apples costs exactly the same as four cartons of almond milk.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Five pounds of apples and four cartons of milk, at the recovered prices:
 
@@ -2081,8 +3199,12 @@ $$24 = 24$$
 
 The two baskets match.
 
-so the statement is True.`,
-      `**D) If the store's 5% loyalty discount had applied to Receipt 1's total, the customer would have paid less than \\$47.00.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Neither printed receipt received the 5% loyalty discount. Applied to Receipt 1's \\$50:
 
@@ -2092,8 +3214,10 @@ $$47.50 > 47$$
 
 The discounted total is not less than \\$47.
 
-so the statement is False.`,
-      `**E) Buying 10 lb of apples and 2 cartons of milk together costs more than \\$60.**  (false)
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Ten pounds of apples and two cartons of milk, at the recovered prices:
 
@@ -2105,7 +3229,7 @@ $$48 + 12 = 60$$
 
 The mix equals \\$60, so it is not more than \\$60.
 
-so the statement is False.`,
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 23,
@@ -2161,19 +3285,43 @@ $$
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A) The fixed connection fee is \\$33.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 33$ as the fixed connection fee. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the fixed connection fee. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Customer service's claimed rate of \\$0.24 per unit is correct.**  (false)
+$$
+x = 33
+$$
 
-The overview recovered $y = 0.21$ as the standard-plan rate. Customer service claimed \\$0.24 per unit.
+The claim asserts
+
+$$
+x = 33
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the standard-plan rate. State that value in its own display before testing the claim:
+
+$$
+y = 0.21
+$$
+
+Customer service claimed \\$0.24 per unit.
 
 $$0.21 \\ne 0.24$$
 
-so the statement is False.`,
-      `**C) At 280 units of usage, the standard plan costs less than \\$95.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The standard plan at 280 units uses the recovered fee $x = 33$ and rate $y = 0.21$:
 
@@ -2181,10 +3329,10 @@ $$280 \\times 0.21 = 58.80$$
 
 $$33 + 58.80 = 91.80$$
 
-$$91.80 < 95$$
+$$91.80 < 95$$.
 
-so the statement is True.`,
-      `**D) The Solar Offset Plan is cheaper than the standard plan at every usage level above 0 units.**  (false)
+So the statement is True.`,
+      `**D.** → False
 
 The Solar Offset Plan is $0.29u$ with no connection fee. The standard plan is $33 + 0.21u$. Set them equal:
 
@@ -2194,8 +3342,10 @@ $$33 = 0.08u \\Rightarrow u = 412.5$$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
 
-so the statement is False.`,
-      `**E) At 500 units of usage, the Solar Offset Plan would be cheaper than the standard plan.**  (false)
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 At 500 units, Solar and the standard plan are
 
@@ -2207,7 +3357,9 @@ $$145 > 138$$
 
 Solar is not cheaper at 500 units.
 
-so the statement is False.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 24,
@@ -2259,12 +3411,28 @@ $$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) A pasta dish costs \\$19.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 19$ as the pasta price. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the pasta price. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) An appetizer costs more than a pasta dish.**  (false)
+$$
+x = 19
+$$
+
+The claim asserts
+
+$$
+x = 19
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
 
@@ -2272,8 +3440,12 @@ $$15 < 19$$
 
 An appetizer costs less than a pasta dish.
 
-so the statement is False.`,
-      `**C) Table 8's pre-service-charge subtotal exceeds Table 5's total by exactly \\$26.00.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Table 8's food subtotal, after stripping the 10% peak charge, is \\$200. Table 5's total is \\$174.
 
@@ -2281,8 +3453,12 @@ $$200 - 174 = 26$$
 
 The pre-service-charge gap is exactly \\$26.
 
-so the statement is True.`,
-      `**D) If Table 5 had also been charged the 10% peak-hour service fee, its total would have been \\$191.40.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Table 5's off-peak total is \\$174. Adding the 10% peak-hour service fee:
 
@@ -2290,8 +3466,12 @@ $$174 \\times 1.10 = 191.40$$
 
 The claim is \\$191.40.
 
-so the statement is True.`,
-      `**E) Buying 4 pasta dishes and 4 appetizers, with the 10% service charge applied, would cost less than \\$150.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Four pasta dishes and four appetizers at the recovered prices, then the 10% service charge:
 
@@ -2303,9 +3483,9 @@ $$76 + 60 = 136$$
 
 $$136 \\times 1.10 = 149.60$$
 
-$$149.60 < 150$$
+$$149.60 < 150$$.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 25,
@@ -2357,19 +3537,43 @@ $$
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A) Item M costs \\$21 per unit.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 21$ as Item M's unit cost. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for Item M's unit cost. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Item N costs \\$30 per unit.**  (false)
+$$
+x = 21
+$$
 
-The overview recovered $y = 27$ as Item N's unit cost. The claim writes \\$30.
+The claim asserts
+
+$$
+x = 21
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered Item N's unit cost. State that value in its own display before testing the claim:
+
+$$
+y = 27
+$$
+
+The claim writes \\$30.
 
 $$27 \\ne 30$$
 
-so the statement is False.`,
-      `**C) Shipment 1's per-unit average cost equals Shipment 2's per-unit average cost.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Shipment 1 moved $110 + 80 = 190$ units for \\$4,470. Shipment 2 moved $70 + 150 = 220$ units for \\$5,520.
 
@@ -2379,8 +3583,10 @@ $$\\frac{5520}{220} = 25.09$$
 
 The per-unit averages are not equal.
 
-so the statement is False.`,
-      `**D) 150 units of Item N alone would cost \\$4,050.**  (true)
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 One hundred fifty units of Item N at the recovered $y = 27$:
 
@@ -2388,8 +3594,10 @@ $$150 \\times 27 = 4050$$
 
 The claim is \\$4,050.
 
-so the statement is True.`,
-      `**E) Shipment 1's lower total cost, compared with Shipment 2, is explained by its lower total weight of goods.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → False
 
 The recovered prices come from unit counts, not from the logged weights. Shipment 1 weighs
 
@@ -2409,7 +3617,7 @@ $$168 + 255 = 423$$
 
 kilograms. Those weights do not set the dollar totals; the cheaper mix of Item M does.
 
-so the statement is False.`,
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 26,
@@ -2461,33 +3669,65 @@ $$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) Standard planting costs \\$29 per unit.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 29$ as the Standard unit price. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the Standard unit price. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Premium planting costs \\$50 per unit.**  (false)
+$$
+x = 29
+$$
 
-The overview recovered $y = 44$ as the Premium unit price. The claim writes \\$50.
+The claim asserts
+
+$$
+x = 29
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the Premium unit price. State that value in its own display before testing the claim:
+
+$$
+y = 44
+$$
+
+The claim writes \\$50.
 
 $$44 \\ne 50$$
 
-so the statement is False.`,
-      `**C) Job 1 actually consisted of 14 Standard units and 35 Premium units once its bundles are expanded.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.
 
-so the statement is True.`,
-      `**D) The Premium portion alone of Job 1 cost more than the entirety of Job 2.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Job 1's Premium slice at the recovered $y = 44$, compared with Job 2's whole total of \\$1,301:
 
 $$35 \\times 44 = 1540$$
 
-$$1540 > 1301$$
+$$1540 > 1301$$.
 
-so the statement is True.`,
-      `**E) The new quotation of \\$1,068 is mathematically consistent with the confirmed rates.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The new quotation is 8 Standard and 19 Premium at the recovered prices:
 
@@ -2499,7 +3739,9 @@ $$232 + 836 = 1068$$
 
 The quoted \\$1,068 matches.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 27,
@@ -2556,19 +3798,43 @@ $$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) The per diem is \\$55 per day.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 55$ as the per diem. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for the per diem. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Finance's belief that the mileage rate is \\$0.40/mile is correct.**  (false)
+$$
+x = 55
+$$
 
-The overview recovered $y = 0.32$ as the mileage rate. Finance claimed \\$0.40 per mile.
+The claim asserts
+
+$$
+x = 55
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the mileage rate. State that value in its own display before testing the claim:
+
+$$
+y = 0.32
+$$
+
+Finance claimed \\$0.40 per mile.
 
 $$0.32 \\ne 0.40$$
 
-so the statement is False.`,
-      `**C) Report 3 is impossible, since 7 meal days alone would require at least \\$385 at the confirmed per-diem rate  -  far more than its reported \\$120 total.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Seven meal days at the recovered per diem $x = 55$, before any mileage:
 
@@ -2578,8 +3844,12 @@ $$385 > 120$$
 
 Report 3's \\$120 cannot cover even the meal days.
 
-so the statement is True.`,
-      `**D) Report 1's total exceeds Report 2's total by more than \\$80.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Report 1 reimbursed \\$323. Report 2 reimbursed \\$245.
 
@@ -2589,16 +3859,22 @@ $$78 < 80$$
 
 The gap is not more than \\$80.
 
-so the statement is False.`,
-      `**E) Reports 1 and 2 combined reimbursed at least \\$550.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Reports 1 and 2 together:
 
 $$323 + 245 = 568$$
 
-$$568 \\ge 550$$
+$$568 \\ge 550$$.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 28,
@@ -2655,24 +3931,50 @@ $$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) Widget A requires 7 hours of labor to assemble.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 7$ as Widget A's assembly time. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for Widget A's assembly time. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Widget B requires 12 hours of labor to assemble.**  (false)
+$$
+x = 7
+$$
 
-The overview recovered $y = 10$ as Widget B's assembly time. The claim writes 12 hours.
+The claim asserts
+
+$$
+x = 7
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered Widget B's assembly time. State that value in its own display before testing the claim:
+
+$$
+y = 10
+$$
+
+The claim writes 12 hours.
 
 $$10 \\ne 12$$
 
-so the statement is False.`,
-      `**C) Week 2 actually produced 25 Widget A units and 33 Widget B units.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.
 
-so the statement is True.`,
-      `**D) If Widget A's assembly time increased by 20%, Week 1's total labor-hours would also increase by 20%.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
 
 Widget A's recovered time is $7$ hours, so a 20% increase affects only those hours. Week 1 currently uses $35 \\times 7 = 245$ hours on Widget A:
 
@@ -2682,16 +3984,18 @@ $$445 + 49 = 494$$
 
 A 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The week rises by 49 hours, not 20%.
 
-so the statement is False.`,
-      `**E) The illegible Week 3 entry can be reconstructed as 20 Widget A units.**  (true)
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and $y = 10$:
 
 $$7A + 10(15) = 290$$
 
-$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$
+$$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 29,
@@ -2752,31 +4056,65 @@ $$
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A) Product X is priced at \\$29.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 29$ as Product X's price. The claim is that same figure.
+In the shared two-unknown system, the overview already solved for Product X's price. State that recovered value before testing the claim:
 
-so the statement is True.`,
-      `**B) Product Y is priced at \\$28.**  (false)
+$$
+x = 29
+$$
 
-The overview recovered $y = 24$ as Product Y's price. The claim writes \\$28.
+The claim asserts
+
+$$
+x = 29
+$$
+
+The recovered value and the claim agree.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered Product Y's price. State that value in its own display before testing the claim:
+
+$$
+y = 24
+$$
+
+The claim writes \\$28.
 
 $$24 \\ne 28$$
 
-so the statement is False.`,
-      `**C) The East branch's reported revenue is fully consistent with the derived prices.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → False
+
+Once the unit prices are recovered from the shared solve, this stem total is fixed. Read the printed figure and compare it with the claim.
+
+Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
-$$3085 \\ne 3200$$
+$$3085 \\ne 3200$$.
 
-so the statement is False.`,
-      `**D) If the East branch's reported revenue were corrected to reflect the derived prices, it should read \\$3,085.**  (true)
+So the statement is False.`,
+      `**D.** → True
+
+Reprice the reported basket at the recovered unit costs from the overview, then compare that corrected total with the claim.
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. The claim is that corrected total.
 
-so the statement is True.`,
-      `**E) North's reported revenue exceeds South's and East's reported revenues combined.**  (false)
+So the statement is True.`,
+      `**E.** → False
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 North reported \\$4,145. South and East reported \\$3,875 and \\$3,200.
 
@@ -2786,7 +4124,9 @@ $$4145 < 7075$$
 
 North does not exceed the other two combined.
 
-so the statement is False.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 30,
@@ -2850,34 +4190,56 @@ East reported \\$3,200, so that row does not reconcile.
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A) Rounding Type A's case price up to the next whole dollar lands on exactly \\$19.00.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 18.45$ as Type A's case price. Rounding up to the next whole dollar:
+The shared elimination already recovered Type A's case price. State that value in its own display before testing the claim:
+
+$$
+x = 18.45
+$$
+
+Rounding up to the next whole dollar:
 
 $$\\lceil 18.45 \\rceil = 19$$
 
 The claim is \\$19.00.
 
-so the statement is True.`,
-      `**B) A warehouse clerk insists Type B's case price exceeds Type A's by more than nine dollars but less than ten.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $x = 18.45$ and $y = 27.80$. The gap is
+So the statement is True.`,
+      `**B.** → True
+
+Start from the recovered solution pair and apply the claim's extra arithmetic:
+
+Using the recovered solution values $x = 18.45$ and $y = 27.80$ as inputs for this claim:
+
+The gap is
 
 $$27.80 - 18.45 = 9.35$$
 
-$$9 < 9.35 < 10$$
+$$9 < 9.35 < 10$$.
 
-so the statement is True.`,
-      `**C) If Invoice 2's total were split evenly across its 26 cases regardless of fastener type, each case's implied share would clear the \\$24 mark.**  (true)
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Invoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:
 
 $$\\frac{657.35}{26} = 25.28$$
 
-$$25.28 > 24$$
+$$25.28 > 24$$.
 
-so the statement is True.`,
-      `**D) Swapping which quantity applies to which fastener type in Invoice 1 leaves the total unchanged.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Swap Invoice 1's counts and cost it at the recovered prices:
 
@@ -2891,8 +4253,12 @@ $$490.05 \\ne 527.45$$
 
 The total changes.
 
-so the statement is False.`,
-      `**E) The combined order must cost strictly more than placing both invoices separately.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Placing both invoices together is just the sum of the two printed totals:
 
@@ -2900,7 +4266,7 @@ $$527.45 + 657.35 = 1184.80$$
 
 That is the same as placing them separately, so the combined order is not strictly more.
 
-so the statement is False.`,
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 31,
@@ -2966,18 +4332,28 @@ $$
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      `**A) The dispatch fee sits exactly halfway between \\$145 and \\$146.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 145.50$ as the dispatch fee. Halfway between \\$145 and \\$146 is
+The shared elimination already recovered the dispatch fee. State that value in its own display before testing the claim:
+
+$$
+x = 145.50
+$$
+
+Halfway between \\$145 and \\$146 is
 
 $$\\frac{145 + 146}{2} = 145.50$$
 
 The recovered fee is that midpoint.
 
-so the statement is True.`,
-      `**B) Per mile, Swift Cargo's rate is closer to \\$1.50 than to \\$2.00.**  (false)
+So the statement is True.`,
+      `**B.** → False
 
-The overview recovered $y = 1.85$ as Swift Cargo's per-mile rate.
+The shared elimination already recovered Swift Cargo's per-mile rate. State that value in its own display before testing the claim:
+
+$$
+y = 1.85
+$$
 
 $$1.85 - 1.50 = 0.35$$
 
@@ -2987,8 +4363,10 @@ $$0.15 < 0.35$$
 
 The rate is closer to \\$2.00 than to \\$1.50.
 
-so the statement is False.`,
-      `**C) A 250-mile haul comes in five cents under six hundred and eight dollars.**  (false)
+So the statement is False.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 A 250-mile Swift haul at the recovered fee $x = 145.50$ and rate $y = 1.85$:
 
@@ -2998,8 +4376,10 @@ $$145.50 + 462.50 = 608.00$$
 
 Five cents under \\$608 would be \\$607.95. The haul is exactly \\$608.00.
 
-so the statement is False.`,
-      `**D) At that same 250-mile mark, choosing the flat-rate competitor over Swift Cargo pockets a savings north of \\$270.**  (true)
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A 250-mile Swift haul at the recovered $x = 145.50$ and $y = 1.85$:
 
@@ -3013,10 +4393,10 @@ $$250 \\times 1.35 = 337.50$$
 
 $$608.00 - 337.50 = 270.50$$
 
-$$270.50 > 270$$
+$$270.50 > 270$$.
 
-so the statement is True.`,
-      `**E) Because the two pricing formulas have different slopes, they are mathematically guaranteed to intersect somewhere on the number line  -  even though that intersection falls at a negative, and therefore meaningless, mileage.**  (true)
+So the statement is True.`,
+      `**E.** → True
 
 Swift is $145.50 + 1.85m$. The competitor is $1.35m$. The slopes $1.85$ and $1.35$ differ, so the lines meet:
 
@@ -3026,7 +4406,7 @@ $$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$
 
 The crossing is at $-291$ miles, a meaningless haul but a real intersection.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 32,
@@ -3078,9 +4458,15 @@ $$
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A) A Specialty Drink's price, tripled, would clear twenty dollars.**  (false)
+      `**A.** → False
 
-The overview recovered $x = 6.35$ as the Specialty Drink price. Tripled:
+The shared elimination already recovered the Specialty Drink price. State that value in its own display before testing the claim:
+
+$$
+x = 6.35
+$$
+
+Tripled:
 
 $$3 \\times 6.35 = 19.05$$
 
@@ -3088,8 +4474,12 @@ $$19.05 < 20$$
 
 That product does not clear twenty dollars.
 
-so the statement is False.`,
-      `**B) Buy four Pastries and you'll spend more than a single Specialty Drink and a single Pastry combined  -  quite a bit more, in fact.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Four pastries versus one drink and one pastry, at the recovered prices:
 
@@ -3097,24 +4487,34 @@ $$4 \\times 3.80 = 15.20$$
 
 $$6.35 + 3.80 = 10.15$$
 
-$$15.20 > 10.15$$
+$$15.20 > 10.15$$.
 
-so the statement is True.`,
-      `**C) Cross-reference the calorie counts against the dollar totals and you can, in principle, pin down both prices without the item quantities at all.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
 
 The calorie totals 6,100 and 5,400 are printed for reference only. They are not coefficients of $x$ or $y$, so they cannot replace the item counts in (1) and (2). The prices are recovered from quantities and dollar totals.
 
-so the statement is False.`,
-      `**D) Split Receipt 1's total evenly across its 16 items and the resulting per-item figure just barely creeps past \\$4.90.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Receipt 1 totals \\$78.65 across $7 + 9 = 16$ items:
 
 $$\\frac{78.65}{16} = 4.915625$$
 
-$$4.915625 > 4.90$$
+$$4.915625 > 4.90$$.
 
-so the statement is True.`,
-      `**E) A week of daily 2-Drink-2-Pastry orders costs enough that, left over from \\$150, you'd have less than \\$8 in change.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A daily 2-drink 2-pastry order at the recovered prices, for seven days:
 
@@ -3124,9 +4524,9 @@ $$7 \\times 20.30 = 142.10$$
 
 $$150 - 142.10 = 7.90$$
 
-$$7.90 < 8$$
+$$7.90 < 8$$.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 33,
@@ -3188,25 +4588,41 @@ $$
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A) Reading between the lines of Email 1, croissants are priced at a level where four dozen would already blow past fifty-five dollars.**  (true)
+      `**A.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
 $$4 \\times 13.85 = 55.40$$
 
-$$55.40 > 55$$
+$$55.40 > 55$$.
 
-so the statement is True.`,
-      `**B) The per-dozen gap between croissants and baguettes is closer to four dollars than to five.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $x = 13.85$ and $y = 9.40$. The per-dozen gap is
+So the statement is True.`,
+      `**B.** → True
+
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 13.85$ and $y = 9.40$ as inputs for this claim:
+
+The per-dozen gap is
 
 $$13.85 - 9.40 = 4.45$$
 
 Distance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars.
 
-so the statement is True.`,
-      `**C) Order ten dozen of each pastry, and croissants alone would already account for more than three-fifths of the combined bill.**  (false)
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Ten dozen of each at the recovered prices:
 
@@ -3220,8 +4636,10 @@ $$\\frac{138.50}{232.50} \\approx 0.596 < \\frac{3}{5}$$
 
 Croissants do not account for more than three-fifths.
 
-so the statement is False.`,
-      `**D) Per dozen-item ordered, Email 1 runs pricier than Email 2  -  and the gap clears two dollars.**  (false)
+So the statement is False.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Email 1 has 25 dozen-items for \\$297.30. Email 2 has 29 dozen-items for \\$299.30.
 
@@ -3233,8 +4651,10 @@ $$11.892 - 10.321 = 1.571$$
 
 Email 1 is pricier per dozen-item, but the gap does not clear two dollars.
 
-so the statement is False.`,
-      `**E) Tack three extra dollars onto every dozen baguettes in Email 2's order, leave the croissant price untouched, and the new invoice total lands on a figure whose cents digit is exactly thirty.**  (true)
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Raise Email 2's baguette price by \\$3 and keep croissants at $x = 13.85$:
 
@@ -3244,7 +4664,7 @@ $$6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20 = 368.30$$
 
 The cents digit is 30.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{3}{5}`,
     sort_order: 34,
@@ -3310,18 +4730,30 @@ $$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) Fabric Roll margins clear the \\$27 line, though not by enough to also clear \\$27.50.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 27.35$ as the Fabric Roll margin.
+The shared elimination already recovered the Fabric Roll margin. State that value in its own display before testing the claim:
+
+$$
+x = 27.35
+$$
 
 $$27 < 27.35 < 27.50$$
 
 It clears \\$27 but not \\$27.50.
 
-so the statement is True.`,
-      `**B) Yarn Spool's per-unit margin, doubled, would just clear forty dollars.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $y = 19.80$ as the Yarn Spool margin. Doubled:
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the Yarn Spool margin. State that value in its own display before testing the claim:
+
+$$
+y = 19.80
+$$
+
+Doubled:
 
 $$2 \\times 19.80 = 39.60$$
 
@@ -3329,8 +4761,12 @@ $$39.60 < 40$$
 
 That product does not clear forty dollars.
 
-so the statement is False.`,
-      `**C) Shift the product mix to 200 Fabric Rolls and 150 Yarn Spools, and the resulting profit clears \\$8,400  -  but only by a slender margin.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Two hundred Fabric Rolls and 150 Yarn Spools at the recovered margins:
 
@@ -3344,8 +4780,10 @@ $$8440 > 8400$$
 
 The mix clears \\$8,400 by \\$40.
 
-so the statement is True.`,
-      `**D) The gap between Q2's and Q1's total profit, in dollars, would still be a three-digit number even if you dropped the smallest hundred from it.**  (true)
+So the statement is True.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Q2 profit minus Q1 profit:
 
@@ -3357,8 +4795,12 @@ $$231.50 - 100 = 131.50$$
 
 $131.50$ is still a three-digit number.
 
-so the statement is True.`,
-      `**E) Five hundred Fabric Rolls, and not a single Yarn Spool, would land the total profit on a suspiciously round \\$13,675  -  no cents required.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Five hundred Fabric Rolls and no Yarn Spools, at the recovered $x = 27.35$:
 
@@ -3366,7 +4808,9 @@ $$500 \\times 27.35 = 13675$$
 
 The profit is exactly \\$13,675.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 35,
@@ -3433,14 +4877,22 @@ $$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) Invoice 2 does nothing more than restate Invoice 1's pricing information at 60% scale, rather than corroborating it with independent evidence.**  (true)
+      `**A.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.
 
-so the statement is True.`,
-      `**B) Nitrogen-type cylinders are priced closer to \\$17.00 than to \\$16.00.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
-The overview recovered $x = 16.40$ as the Nitrogen price.
+So the statement is True.`,
+      `**B.** → False
+
+The shared elimination already recovered the Nitrogen price. State that value in its own display before testing the claim:
+
+$$
+x = 16.40
+$$
 
 $$16.40 - 16.00 = 0.40$$
 
@@ -3450,8 +4902,10 @@ $$0.40 < 0.60$$
 
 Nitrogen is closer to \\$16.00 than to \\$17.00.
 
-so the statement is False.`,
-      `**C) Four Oxygen-type cylinders cost less than six Nitrogen-type cylinders bought in that same bulk.**  (true)
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Four Oxygen cylinders versus six Nitrogen cylinders, at the recovered prices:
 
@@ -3459,10 +4913,14 @@ $$4 \\times 22.65 = 90.60$$
 
 $$6 \\times 16.40 = 98.40$$
 
-$$90.60 < 98.40$$
+$$90.60 < 98.40$$.
 
-so the statement is True.`,
-      `**D) Double Invoice 3's order exactly, and the resulting bill would land above \\$655.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Double Invoice 3's total of \\$326.45:
 
@@ -3472,8 +4930,12 @@ $$652.90 < 655$$
 
 The doubled bill does not land above \\$655.
 
-so the statement is False.`,
-      `**E) Blend Invoices 1 and 3 together, cylinders and dollars alike, and the resulting per-cylinder price fails to reach the \\$20 mark.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Blend Invoices 1 and 3, dollars and cylinders:
 
@@ -3487,7 +4949,7 @@ $$19.35 < 20$$
 
 The blended per-cylinder price fails to reach \\$20.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 36,
@@ -3555,7 +5017,9 @@ $$
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
-      `**A) Working alone, Alvarez's solo completion time, rounded to the nearest whole hour, would round down to 11 hours rather than up to 12.**  (false)
+      `**A.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Alvarez's solo time is the reciprocal of the recovered $x = 0.085$:
 
@@ -3563,8 +5027,12 @@ $$\\frac{1}{0.085} \\approx 11.76$$
 
 Rounded to the nearest whole hour that is 12, not 11.
 
-so the statement is False.`,
-      `**B) Bianchi, working entirely alone, would take longer to finish one job than it would take Alvarez, working entirely alone, to finish two.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**B.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Bianchi alone, and Alvarez on two jobs, at the recovered rates:
 
@@ -3576,15 +5044,19 @@ $$22.22 < 23.53$$
 
 Bianchi's one job is not longer than Alvarez's two.
 
-so the statement is False.`,
-      `**C) Their combined hourly output, expressed as a fraction, reduces to exactly $\\frac{13}{100}$  -  no more, no less.**  (true)
+So the statement is False.`,
+      `**C.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 Combined hourly output is the sum of the recovered rates:
 
-$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$
+$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$.
 
-so the statement is True.`,
-      `**D) Bianchi's slice of Tuesday's finished work, as a fraction, is closer to $\\frac{1}{7}$ than to $\\frac{1}{8}$.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → True
 
 Bianchi's Tuesday hours are 3 at $y = 0.045$, out of Tuesday's $0.900$:
 
@@ -3596,8 +5068,8 @@ $$\\left|0.15 - \\frac{1}{7}\\right| \\approx 0.0071, \\qquad \\left|0.15 - \\fr
 
 The slice is closer to $\\frac{1}{7}$.
 
-so the statement is True.`,
-      `**E) Tally every hour either technician logged across both days  -  23 in all  -  and divide it into the total work finished; the resulting hourly average doesn't quite clear seven percent.**  (true)
+So the statement is True.`,
+      `**E.** → True
 
 Total work across both days, divided by the 23 hours logged:
 
@@ -3607,7 +5079,9 @@ $$\\frac{1.555}{23} \\approx 0.0676$$
 
 That average is about $6.76\\%$, which does not clear seven percent.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 37,
@@ -3669,9 +5143,13 @@ $$
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A) T-Shirt margins, it turns out, sit closer to eleven dollars than to twelve.**  (false)
+      `**A.** → False
 
-The overview recovered $x = 11.65$ as the T-Shirt margin.
+The shared elimination already recovered the T-Shirt margin. State that value in its own display before testing the claim:
+
+$$
+x = 11.65
+$$
 
 $$11.65 - 11 = 0.65$$
 
@@ -3681,10 +5159,14 @@ $$0.35 < 0.65$$
 
 The margin sits closer to twelve dollars than to eleven.
 
-so the statement is False.`,
-      `**B) Hoodie margins, by contrast, sit closer to eighteen dollars than to nineteen.**  (true)
+So the statement is False.`,
+      `**B.** → True
 
-The overview recovered $y = 18.40$ as the Hoodie margin.
+The shared elimination already recovered the Hoodie margin. State that value in its own display before testing the claim:
+
+$$
+y = 18.40
+$$
 
 $$18.40 - 18 = 0.40$$
 
@@ -3694,8 +5176,10 @@ $$0.40 < 0.60$$
 
 The margin sits closer to eighteen than to nineteen.
 
-so the statement is True.`,
-      `**C) Whatever the water damage erased, the missing Season 3 T-Shirt count reconstructs to a number that's a multiple of ten.**  (false)
+So the statement is True.`,
+      `**C.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered Season 3's T-Shirt count as $T = 245$.
 
@@ -3703,8 +5187,12 @@ $$245 = 24 \\times 10 + 5$$
 
 $245$ is not a multiple of ten.
 
-so the statement is False.`,
-      `**D) Season 2 outearned Season 1 by an amount that would just barely fail to cover exactly 52 Hoodies' worth of margin.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Season 2 minus Season 1, versus 52 Hoodies at the recovered $y = 18.40$:
 
@@ -3716,8 +5204,10 @@ $$954.25 < 956.80$$
 
 The earnings gap just fails to cover 52 Hoodies.
 
-so the statement is True.`,
-      `**E) Rewrite Season 3's history so that it produced 260 T-Shirts instead of the reconstructed count, and the profit crosses \\$8,700.**  (true)
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Replace the recovered $T = 245$ with 260 T-Shirts, keeping 310 Hoodies:
 
@@ -3727,9 +5217,9 @@ $$310 \\times 18.40 = 5704$$
 
 $$3029 + 5704 = 8733$$
 
-$$8733 > 8700$$
+$$8733 > 8700$$.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 38,
@@ -3806,9 +5296,15 @@ $$
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A) Knock five dollars and forty cents off the flat handling fee and you'd land on an even \\$89.20  -  implying the real fee currently overshoots \\$89 by roughly six percent.**  (true)
+      `**A.** → True
 
-The overview recovered $x = 94.60$ as the handling fee. Knock off \\$5.40:
+The shared elimination already recovered the handling fee. State that value in its own display before testing the claim:
+
+$$
+x = 94.60
+$$
+
+Knock off \\$5.40:
 
 $$94.60 - 5.40 = 89.20$$
 
@@ -3818,8 +5314,10 @@ $$\\frac{94.60}{89} - 1 \\approx 0.063$$
 
 the real fee overshoots \\$89 by about 6%.
 
-so the statement is True.`,
-      `**B) The per-kilogram rate, tripled, would land just shy of \\$9.50.**  (true)
+So the statement is True.`,
+      `**B.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered $y = 3.15$ per kilogram. Tripled:
 
@@ -3829,8 +5327,12 @@ $$9.45 < 9.50$$
 
 That product lands just shy of \\$9.50.
 
-so the statement is True.`,
-      `**C) Convert Shipment 3's weight properly, apply the derived model, and the predicted charge comes within four dollars of what was actually billed  -  but doesn't match it exactly.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Convert Shipment 3's 99 lb and apply the recovered model:
 
@@ -3842,8 +5344,10 @@ $$94.60 + 141.75 = 236.35$$
 
 The billed total is \\$239.80, and $239.80 - 236.35 = 3.45$, which is within four dollars but not an exact match.
 
-so the statement is True.`,
-      `**D) Ninety-nine pounds, run through the standard 2.2-per-kilogram conversion, comes out to a number divisible by seven.**  (false)
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Ninety-nine pounds converted at 2.2 lb per kilogram:
 
@@ -3853,8 +5357,12 @@ $$45 = 7 \\times 6 + 3$$
 
 $45$ is not divisible by seven.
 
-so the statement is False.`,
-      `**E) Push the shipment weight up to 400 kilograms and the resulting charge just barely creeps past thirteen hundred fifty dollars.**  (true)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 At 400 kg with the recovered fee $x = 94.60$ and rate $y = 3.15$:
 
@@ -3862,9 +5370,11 @@ $$400 \\times 3.15 = 1260$$
 
 $$94.60 + 1260 = 1354.60$$
 
-$$1354.60 > 1350$$
+$$1354.60 > 1350$$.
 
-so the statement is True.`,
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 39,
@@ -3924,14 +5434,18 @@ $$
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A) Doubling every line of Client A's invoice implies Client B should owe \\$967.40  -  a figure that overshoots what was actually billed by a hair over 1.6% of the real total.**  (true)
+      `**A.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10 by \\$15.30.
 
-$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$
+$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
 
-so the statement is True.`,
-      `**B) For the two invoices to describe one consistent pricing scheme, Client A alone would have needed to account for exactly half of Client B's \\$952.10 billed amount.**  (true)
+So the statement is True.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Consistency would require Client B to be exactly double Client A, so Client A would have to be half of \\$952.10:
 
@@ -3939,8 +5453,8 @@ $$\\frac{952.10}{2} = 476.05$$
 
 The actual Client A total is \\$483.70, not \\$476.05. The statement names that consistency requirement.
 
-so the statement is True.`,
-      `**C) The discrepancy uncovered here sits nearer to a 1-in-60 error rate than to a 1-in-50 one.**  (true)
+So the statement is True.`,
+      `**C.** → True
 
 The invoices disagree by \\$15.30 on a \\$952.10 bill:
 
@@ -3950,8 +5464,12 @@ $$\\frac{1}{60} \\approx 0.01667, \\qquad \\frac{1}{50} = 0.02$$
 
 $0.01607$ is nearer to $\\frac{1}{60}$ than to $\\frac{1}{50}$.
 
-so the statement is True.`,
-      `**D) Plugging in a purely hypothetical \\$14.20 per compute-unit and \\$31.75 per storage-unit  -  numbers with no basis in the real contract  -  Client A's invoice would compute to a figure just shy of \\$375.**  (false)
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Those hypothetical unit prices on Client A's 11 compute and 7 storage units:
 
@@ -3965,8 +5483,8 @@ $$378.45 > 375$$
 
 The total is not shy of \\$375.
 
-so the statement is False.`,
-      `**E) The doubling-of-Client-A hypothesis for Client B's bill lands closer to the real figure than the 50%-heavier-surcharge hypothesis.**  (true)
+So the statement is False.`,
+      `**E.** → True
 
 The doubling hypothesis prices Client B at \\$967.40. A 50% surcharge on Client A would price Client B at
 
@@ -3980,7 +5498,7 @@ $$|725.55 - 952.10| = 226.55$$
 
 Doubling is closer.
 
-so the statement is True.`,
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 40,
@@ -4030,7 +5548,7 @@ The left-hand sides are proportional while the totals are not, so the two invoic
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A) The dollar interest earned by Fund B is more than triple the dollar interest earned by Fund A.**  (false)
+      `**A.** → False
 
 The overview recovered Fund A at $4800$ and Fund B at $13600$. Dollar interest is principal times the stated simple rate.
 
@@ -4042,8 +5560,10 @@ Triple of Fund A's interest is
 
 $$3 \\times 252 = 756$$
 
-Since $510 < 756$, Fund B does not earn more than triple Fund A's dollars, so the statement is False.`,
-      `**B) If Fund A's rate were raised by 1.5 percentage points while Fund B's rate stayed the same, the combined annual return would rise above \\$800.00.**  (true)
+Since $510 < 756$, Fund B does not earn more than triple Fund A's dollars.
+
+So the statement is False.`,
+      `**B.** → True
 
 The overview recovered $A = 4800$ and $B = 13600$. Raising Fund A's rate by $1.5$ percentage points makes that rate $6.75\\%$, while Fund B stays at $3.75\\%$.
 
@@ -4053,8 +5573,10 @@ $$13600 \\times 0.0375 = 510$$
 
 $$324 + 510 = 834$$
 
-Since $834 > 800$, the combined return would rise above \\$800, so the statement is True.`,
-      `**C) The combined annual return represents more than 4% of the total trust value.**  (true)
+Since $834 > 800$, the combined return would rise above \\$800.
+
+So the statement is True.`,
+      `**C.** → True
 
 The overview recovered balances $4800$ and $13600$, and the stem gives combined return \\$762.
 
@@ -4062,8 +5584,14 @@ $$4800 + 13600 = 18400$$
 
 $$\\frac{762}{18400} = 0.041413\\ldots$$
 
-That blended rate is about $4.14\\%$, which is more than $4\\%$, so the statement is True.`,
-      `**D) Had the trust instead been split evenly at the original rates, the total return would have come within \\$5.00 of the actual \\$762.00.**  (false)
+That blended rate is about $4.14\\%$, which is more than $4\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 An even split of the recovered total $18400$ puts \\$9,200 in each fund at the original rates.
 
@@ -4075,14 +5603,20 @@ $$483 + 345 = 828$$
 
 $$|828 - 762| = 66$$
 
-The even-split return is \\$66 from the actual \\$762, not within \\$5, so the statement is False.`,
-      `**E) The percentage difference between the two fund balances, taken relative to the smaller balance, exceeds 180%.**  (true)
+The even-split return is \\$66 from the actual \\$762, not within \\$5.
+
+So the statement is False.`,
+      `**E.** → True
 
 The overview recovered the two balances $4800$ (smaller) and $13600$. The relative gap versus the smaller balance is
 
 $$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$
 
-about $183.3\\%$, which exceeds $180\\%$, so the statement is True.`,
+about $183.3\\%$, which exceeds $180\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 41,
@@ -4143,21 +5677,29 @@ $$
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A) The combined salt content of Batch 1 and Batch 2, if poured together into one container, would exceed 300 g.**  (true)
+      `**A.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Batch 1 printed $144$ g of salt and Batch 2 printed $184$ g. Pouring them together does not create or destroy salt.
 
 $$144 + 184 = 328$$
 
-Since $328 > 300$, the combined salt exceeds $300$ g, so the statement is True.`,
-      `**B) Solution B's concentration is more than 70% of Solution A's concentration.**  (true)
+Since $328 > 300$, the combined salt exceeds $300$ g.
+
+So the statement is True.`,
+      `**B.** → True
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 
 $$\\frac{12}{16} = 0.75$$
 
-Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's, so the statement is True.`,
-      `**C) If Batch 3's entire 5 g discrepancy were attributed only to an error in the recorded volume of Solution B, the true volume of Solution B used would be closer to 6.4 L than to 6.0 L.**  (true)
+Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → True
 
 The overview predicted $104$ g for Batch 3 against $109$ g recorded, a $5$ g discrepancy, with recovered $B = 12$ g/L. Batch 3's logged split is $2$ L of A and $6$ L of B. If the extra $5$ g sits only in B,
 
@@ -4165,8 +5707,10 @@ $$\\frac{5}{12} \\approx 0.4167$$
 
 $$6 + 0.4167 \\approx 6.417$$
 
-The distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L, so the statement is True.`,
-      `**D) Using the reconstructed concentrations, a batch mixed in a 3:1 ratio of A:B that must contain exactly 130 g of salt would need a total volume of 7.5 L.**  (false)
+The distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L.
+
+So the statement is True.`,
+      `**D.** → False
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L. A $3:1$ mix of A:B is $75\\%$ A and $25\\%$ B, so the blend concentration in g/L is
 
@@ -4176,8 +5720,12 @@ The volume that holds $130$ g is then
 
 $$\\frac{130}{15} \\approx 8.667$$
 
-which is not $7.5$ L, so the statement is False.`,
-      `**E) Batch 2 used a higher proportion of Solution A, by volume, than Batch 1 did.**  (true)
+which is not $7.5$ L.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
 
 This comparison uses the mixing ratios, not the recovered concentrations. Batch 1 is mixed $3:2$, and Batch 2 is mixed $5:1$.
 
@@ -4185,7 +5733,9 @@ $$\\frac{3}{5} = 0.60$$
 
 $$\\frac{5}{6} \\approx 0.833$$
 
-Since $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A, so the statement is True.`,
+Since $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 42,
@@ -4251,7 +5801,7 @@ versus 109 g recorded, a 5 g discrepancy.
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) If Employee A had instead worked 40 regular hours with no overtime, and then received a one-time bonus equal to 10% of what her actual 2.5 hours of overtime pay was, the bonus would exceed \\$6.00.**  (true)
+      `**A.** → True
 
 The overview recovered overtime pay at \\$26 per hour. Employee A's actual overtime pay for $2.5$ hours, and then $10\\%$ of that, is
 
@@ -4259,8 +5809,12 @@ $$2.5 \\times 26 = 65$$
 
 $$0.10 \\times 65 = 6.50$$
 
-Since $6.50 > 6$, the bonus exceeds \\$6, so the statement is True.`,
-      `**B) Employee B's overtime pay is more than 40% of his total gross pay.**  (false)
+Since $6.50 > 6$, the bonus exceeds \\$6.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
 
 The overview recovered overtime at \\$26 per hour. Employee B worked $7$ overtime hours on a \\$882 gross.
 
@@ -4268,8 +5822,12 @@ $$7 \\times 26 = 182$$
 
 $$\\frac{182}{882} \\approx 0.2063$$
 
-About $20.6\\%$ is not more than $40\\%$, so the statement is False.`,
-      `**C) The combined gross pay of both employees exceeds what they would have earned had both worked exactly 45 hours at the base rate with no overtime premium at all.**  (true)
+About $20.6\\%$ is not more than $40\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
 
 Combined actual gross is the sum of the two printed totals. The counterfactual is both employees at $45$ hours of the recovered base \\$17.50, with no premium.
 
@@ -4277,15 +5835,21 @@ $$765 + 882 = 1647$$
 
 $$2 \\times 45 \\times 17.50 = 1575$$
 
-Since $1647 > 1575$, the actual combined gross is larger, so the statement is True.`,
-      `**D) If the overtime premium were eliminated but the base wage simultaneously rose by 15%, Employee A's gross pay for the same 42.5 hours would decrease compared to her actual earnings.**  (false)
+Since $1647 > 1575$, the actual combined gross is larger.
+
+So the statement is True.`,
+      `**D.** → False
 
 The overview recovered base $x = 17.50$. Raising that base by $15\\%$ and dropping the premium gives a new rate of $17.50 \\times 1.15 = 20.125$ on all $42.5$ hours.
 
 $$42.5 \\times 20.125 = 855.3125$$
 
-Compared with A's actual \\$765, the new gross increases rather than decreases, so the statement is False.`,
-      `**E) The ratio of Employee B's overtime hours to Employee A's is greater than the ratio of their gross pay amounts.**  (true)
+Compared with A's actual \\$765, the new gross increases rather than decreases.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Employee B had $7$ overtime hours and \\$882 gross; Employee A had $2.5$ overtime hours and \\$765 gross.
 
@@ -4293,7 +5857,9 @@ $$\\frac{7}{2.5} = 2.8$$
 
 $$\\frac{882}{765} \\approx 1.153$$
 
-Since $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio, so the statement is True.`,
+Since $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 43,
@@ -4360,7 +5926,7 @@ $$
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A) If Project 3 had instead used 20 m of wood, its total cost would have exceeded \\$950.00.**  (true)
+      `**A.** → True
 
 The overview recovered wood at \\$27 per m and wire at \\$11 per m. Project 3 with $20$ m of wood and $40$ m of wire costs
 
@@ -4370,8 +5936,10 @@ $$40 \\times 11 = 440$$
 
 $$540 + 440 = 980$$
 
-Since $980 > 950$, the total would exceed \\$950, so the statement is True.`,
-      `**B) The per-meter price gap between wood and wire is more than 145% of the wire price per meter.**  (true)
+Since $980 > 950$, the total would exceed \\$950.
+
+So the statement is True.`,
+      `**B.** → True
 
 The overview recovered wood $x = 27$ and wire $y = 11$. The per-meter gap as a share of the wire price is
 
@@ -4379,8 +5947,14 @@ $$27 - 11 = 16$$
 
 $$\\frac{16}{11} \\approx 1.4545$$
 
-Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price, so the statement is True.`,
-      `**C) Combining Project 1 and Project 3's materials into one hypothetical project would cost less than the sum of their individual costs.**  (false)
+Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
@@ -4388,8 +5962,12 @@ $$28(27) + 64(11) = 756 + 704 = 1460$$
 
 $$750 + 710 = 1460$$
 
-The combined project costs the same as the two projects separately, not less, so the statement is False.`,
-      `**D) If wire fencing rose by \\$2.00 per meter, Project 1's total cost would increase by more than 15%.**  (false)
+The combined project costs the same as the two projects separately, not less.
+
+So the statement is False.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Project 1 has $24$ m of wire. A \\$2 per-meter rise on that wire, as a share of the printed \\$750, is
 
@@ -4397,8 +5975,12 @@ $$24 \\times 2 = 48$$
 
 $$\\frac{48}{750} = 0.064$$
 
-$6.4\\%$ is not more than $15\\%$, so the statement is False.`,
-      `**E) Project 3's cost per total meter installed is higher than Project 1's cost per total meter installed.**  (false)
+$6.4\\%$ is not more than $15\\%$.
+
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Project 3 installed $10 + 40 = 50$ m for \\$710. Project 1 installed $18 + 24 = 42$ m for \\$750.
 
@@ -4406,7 +5988,9 @@ $$\\frac{710}{50} = 14.20$$
 
 $$\\frac{750}{42} \\approx 17.86$$
 
-Since $14.20 < 17.86$, Project 3's cost per meter is lower, not higher, so the statement is False.`,
+Since $14.20 < 17.86$, Project 3's cost per meter is lower, not higher.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 44,
@@ -4468,14 +6052,20 @@ $$
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A) The time it would take Boat A alone to travel the full 356 km stretch is more than 7 hours.**  (true)
+      `**A.** → True
 
 The overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km stretch is
 
 $$\\frac{356}{48} \\approx 7.4167$$
 
-about $7$ hours $25$ minutes, which is more than $7$ hours, so the statement is True.`,
-      `**B) In the 250 km scenario, the difference in distance covered by the two boats when they meet is less than half of the total 250 km gap.**  (true)
+about $7$ hours $25$ minutes, which is more than $7$ hours.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 They meet after $2$ hours on the $250$ km stretch. Distances at the recovered speeds $48$ and $77$ km/h are
 
@@ -4485,15 +6075,21 @@ $$2 \\times 77 = 154$$
 
 $$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
 
-Since $58 < 125$, the difference is less than half the gap, so the statement is True.`,
-      `**C) If both boats' speeds were each increased by 20%, the time to close the original 250 km gap would fall below 1.5 hours.**  (false)
+Since $58 < 125$, the difference is less than half the gap.
+
+So the statement is True.`,
+      `**C.** → False
 
 Combined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each boat, combined speed is $1.2 \\times 125 = 150$ km/h.
 
 $$\\frac{250}{150} \\approx 1.667$$
 
-Since $1.667 > 1.5$, the new time does not fall below $1.5$ hours, so the statement is False.`,
-      `**D) The combined distance both boats would cover in 3 hours at their actual speeds exceeds the 356 km stretch length.**  (true)
+Since $1.667 > 1.5$, the new time does not fall below $1.5$ hours.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → True
 
 The overview recovered speeds $48$ and $77$ km/h. Three hours of simultaneous travel at those speeds covers
 
@@ -4501,8 +6097,12 @@ $$48 + 77 = 125$$
 
 $$3 \\times 125 = 375$$
 
-Since $375 > 356$, the combined distance exceeds the $356$ km stretch, so the statement is True.`,
-      `**E) Boat B's speed is more than 60% higher than Boat A's speed.**  (true)
+Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
 
 The overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is
 
@@ -4510,7 +6110,11 @@ $$77 - 48 = 29$$
 
 $$\\frac{29}{48} \\approx 0.60417$$
 
-about $60.4\\%$, which is more than $60\\%$, so the statement is True.`,
+about $60.4\\%$, which is more than $60\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 45,
@@ -4567,35 +6171,55 @@ $$
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A) If Season 1's Wheat output had instead been 260 tonnes, total profit would have exceeded \\$44,000.**  (false)
+      `**A.** → False
 
 The overview recovered Wheat at \\$95/t and Barley at \\$120/t. Season 1 with Wheat raised to $260$ t, Barley still $160$ t, would earn
 
 $$260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900$$
 
-Since $43900 < 44000$, the total would not exceed \\$44,000, so the statement is False.`,
-      `**B) Barley's profit-per-tonne advantage over Wheat represents more than 25% of Wheat's profit per tonne.**  (true)
+Since $43900 < 44000$, the total would not exceed \\$44,000.
 
-The overview recovered $x = 95$ and $y = 120$. Barley's advantage as a share of Wheat's profit per tonne is
+So the statement is False.`,
+      `**B.** → True
+
+Start from the recovered solution pair and apply the claim's extra arithmetic:
+
+Using the recovered solution values $x = 95$ and $y = 120$ as inputs for this claim:
+
+Barley's advantage as a share of Wheat's profit per tonne is
 
 $$\\frac{120 - 95}{95} = \\frac{25}{95} \\approx 0.2632$$
 
-about $26.3\\%$, which is more than $25\\%$, so the statement is True.`,
-      `**C) Season 3's total tonnage is less than Season 2's total tonnage.**  (false)
+about $26.3\\%$, which is more than $25\\%$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**C.** → False
 
 The overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.
 
 $$180 + 300 = 480$$
 
-Since $480 > 440$, Season 3's total tonnage is not less than Season 2's, so the statement is False.`,
-      `**D) Had Season 3 actually produced 220 tonnes of Wheat rather than the reconstructed 180 tonnes, the recorded total profit of \\$53,100 would have been understated by more than \\$3,500.**  (true)
+Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → True
 
 The overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.
 
 $$40 \\times 95 = 3800$$
 
-That understatement of \\$3,800 is more than \\$3,500, so the statement is True.`,
-      `**E) Season 2's profit per tonne of total output exceeds Season 1's profit per tonne of total output.**  (true)
+That understatement of \\$3,800 is more than \\$3,500.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Season 2 printed \\$48,300 on $180 + 260 = 440$ t. Season 1 printed \\$42,000 on $240 + 160 = 400$ t.
 
@@ -4603,7 +6227,9 @@ $$\\frac{48300}{440} \\approx 109.77$$
 
 $$\\frac{42000}{400} = 105$$
 
-Season 2's profit per tonne of total output is higher, so the statement is True.`,
+Season 2's profit per tonne of total output is higher.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 46,
@@ -4675,37 +6301,63 @@ $$
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A) Fifteen years from now, the elder employee's age will be less than double the younger employee's age at that time.**  (true)
+      `**A.** → True
 
 The overview recovered current ages $47$ and $19$. Fifteen years from now those ages are $62$ and $34$.
 
 $$2 \\times 34 = 68$$
 
-Since $62 < 68$, the elder will be less than double the younger at that time, so the statement is True.`,
-      `**B) The current age gap is more than 45% of the elder employee's current age.**  (true)
+Since $62 < 68$, the elder will be less than double the younger at that time.
 
-The overview recovered $x = 47$ and $y = 19$. The current gap as a share of the elder's age is
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 47$ and $y = 19$ as inputs for this claim:
+
+The current gap as a share of the elder's age is
 
 $$47 - 19 = 28$$
 
 $$\\frac{28}{47} \\approx 0.5957$$
 
-about $59.6\\%$, which is more than $45\\%$, so the statement is True.`,
-      `**C) Exactly 4.5 years from now, the elder employee will be more than 2.5 times the younger employee's age.**  (false)
+about $59.6\\%$, which is more than $45\\%$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**C.** → False
 
 The overview recovered current ages $47$ and $19$. After $4.5$ years the ages are $51.5$ and $23.5$.
 
 $$\\frac{51.5}{23.5} \\approx 2.191$$
 
-Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger, so the statement is False.`,
-      `**D) Ten years ago, the sum of their ages was less than 40.**  (false)
+Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → False
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered current ages $47$ and $19$. Ten years ago the ages were $37$ and $9$.
 
 $$37 + 9 = 46$$
 
-Since $46 > 40$, the sum was not less than $40$, so the statement is False.`,
-      `**E) There was a point in time, more than 4 years ago, when the elder employee was exactly three times the younger employee's age.**  (true)
+Since $46 > 40$, the sum was not less than $40$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
 
 Let $t$ be years ago. The claim is that $x - t = 3(y - t)$ for some $t > 4$. Using the recovered ages $47$ and $19$,
 
@@ -4713,7 +6365,11 @@ $$47 - t = 3(19 - t)$$
 
 $$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$
 
-Since $5 > 4$, such a time exists, so the statement is True.`,
+Since $5 > 4$, such a time exists.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{4}{5}`,
     sort_order: 47,
@@ -4776,16 +6432,26 @@ $$
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
-      `**A) If the two markup percentages were swapped, Order 3's retail total would decrease compared to its actual \\$1,350.60.**  (false)
+      `**A.** → False
 
 The overview recovered wholesale $x = 55$ and $y = 80$. Swapping the markups puts $18\\%$ on A and $32\\%$ on B. Order 3 would then be
 
 $$3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90$$
 
-Compared with the actual \\$1,350.60, the swapped total increases rather than decreases, so the statement is False.`,
-      `**B) The dollar markup on Product B is more than 80% of the dollar markup on Product A.**  (true)
+Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
 
-The overview recovered $x = 55$ and $y = 80$. Dollar markups are $0.32x$ and $0.18y$.
+So the statement is False.`,
+      `**B.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
+
+Dollar markups are $0.32x$ and $0.18y$.
 
 $$0.32 \\times 55 = 17.60$$
 
@@ -4793,30 +6459,58 @@ $$0.18 \\times 80 = 14.40$$
 
 $$\\frac{14.40}{17.60} = 0.8181\\ldots$$
 
-Since $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's, so the statement is True.`,
-      `**C) Order 1's total retail markup exceeds \\$150.00.**  (true)
+Since $0.818 > 0.80$, B's dollar markup is more than $80\\%$ of A's.
 
-The overview recovered $x = 55$ and $y = 80$. Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**C.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
+
+Unit markups are $0.32 \\times 55 = 17.60$ and $0.18 \\times 80 = 14.40$, so Order 1's total markup is
 
 $$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$
 
-Since $212.80 > 150$, the markup exceeds \\$150, so the statement is True.`,
-      `**D) If Order 3's Product B quantity rose from 12 to 15 units, the retail total would increase by more than \\$280.00.**  (true)
+Since $212.80 > 150$, the markup exceeds \\$150.
+
+The claim names \$150.00. The computed figure and the claim agree.
+
+So the statement is True.`,
+      `**D.** → True
 
 The overview recovered $y = 80$, so retail B is $1.18 \\times 80 = 94.40$. Raising Order 3's B quantity from $12$ to $15$ adds three units.
 
 $$3 \\times 94.40 = 283.20$$
 
-Since $283.20 > 280$, the retail total would increase by more than \\$280, so the statement is True.`,
-      `**E) The wholesale cost ratio of Product B to Product A is greater than the retail price ratio of Product B to Product A.**  (true)
+Since $283.20 > 280$, the retail total would increase by more than \\$280.
 
-The overview recovered $x = 55$ and $y = 80$. Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
+So the statement is True.`,
+      `**E.** → True
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $x = 55$ and $y = 80$ as inputs for this claim:
+
+Retail prices are $1.32x = 72.60$ and $1.18y = 94.40$.
 
 $$\\frac{80}{55} \\approx 1.4545$$
 
 $$\\frac{94.40}{72.60} \\approx 1.3003$$
 
-The wholesale ratio is larger than the retail ratio, so the statement is True.`,
+The wholesale ratio is larger than the retail ratio.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 48,
@@ -4884,21 +6578,31 @@ $$
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A) If a draw were worth exactly half of what a win is worth, the Falcons' total points would increase compared to their actual 75.**  (true)
+      `**A.** → True
 
 The overview recovered $x = 7$ points per win. If a draw were worth half of that, a draw would be $3.5$ points. The Falcons would then have
 
 $$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$
 
-Since $77 > 75$, their total would increase, so the statement is True.`,
-      `**B) The Ravens earned more than 45% of their total points from draws alone.**  (false)
+Since $77 > 75$, their total would increase.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
 
 The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with $6 \\times 3 = 18$ from draws.
 
 $$\\frac{18}{67} \\approx 0.2687$$
 
-About $26.9\\%$ is not more than $45\\%$, so the statement is False.`,
-      `**C) Under a halved scoring system (2 points per win, 1 point per draw), the Falcons would still have finished with more points than the Ravens.**  (true)
+About $26.9\\%$ is not more than $45\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Under $2$ points per win and $1$ per draw, the two records become
 
@@ -4906,15 +6610,23 @@ $$9 \\times 2 + 4 \\times 1 = 22$$
 
 $$7 \\times 2 + 6 \\times 1 = 20$$
 
-The Falcons would still have more points, so the statement is True.`,
-      `**D) The Falcons' win-to-draw point contribution ratio exceeds 15.**  (false)
+The Falcons would still have more points.
+
+So the statement is True.`,
+      `**D.** → False
 
 The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.
 
 $$\\frac{63}{12} = 5.25$$
 
-The win-to-draw ratio is $5.25$, which is not greater than $15$, so the statement is False.`,
-      `**E) A hypothetical team with the Falcons' record but 3 additional wins converted from draws would score more than 20 points higher than the Falcons' actual total.**  (false)
+The win-to-draw ratio is $5.25$, which is not greater than $15$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Converting three of the Falcons' draws into wins leaves $12$ wins and $1$ draw.
 
@@ -4922,7 +6634,9 @@ $$12 \\times 7 + 1 \\times 3 = 87$$
 
 $$87 - 75 = 12$$
 
-The increase is $12$ points, not more than $20$, so the statement is False.`,
+The increase is $12$ points, not more than $20$.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 49,
@@ -4989,28 +6703,46 @@ $$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) If Batch 1's Metal B volume had been 10 L instead of 8 L, the total mass would have exceeded 200 kg.**  (true)
+      `**A.** → True
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
 $$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$
 
-Since $205.2 > 200$, the total would exceed $200$ kg, so the statement is True.`,
-      `**B) Metal B's density is more than 50% greater than Metal A's density.**  (false)
+Since $205.2 > 200$, the total would exceed $200$ kg.
 
-The overview recovered $x = 7.6$ and $y = 11.4$. The relative density advantage of B over A is
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
+
+Start from the recovered solution pair and apply the claim's extra arithmetic:
+
+Using the recovered solution values $x = 7.6$ and $y = 11.4$ as inputs for this claim:
+
+The relative density advantage of B over A is
 
 $$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
 
-That is $50\\%$ greater, not more than $50\\%$, so the statement is False.`,
-      `**C) The mass discrepancy found in Batch 3 represents more than 4% of its recorded total mass.**  (true)
+That is $50\\%$ greater, not more than $50\\%$.
+
+The computed figure does not match the claim.
+
+So the statement is False.`,
+      `**C.** → True
 
 The overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.4$ kg discrepancy.
 
 $$\\frac{6.4}{147.0} \\approx 0.04354$$
 
-about $4.35\\%$, which is more than $4\\%$ of the recorded mass, so the statement is True.`,
-      `**D) If Batch 3's actual Metal A volume were 10 L rather than the converted 9.5 L, the predicted mass would come within 2 kg of the recorded 147.0 kg.**  (false)
+about $4.35\\%$, which is more than $4\\%$ of the recorded mass.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
@@ -5018,14 +6750,20 @@ $$10(7.6) + 6(11.4) = 76 + 68.4 = 144.4$$
 
 $$|144.4 - 147.0| = 2.6$$
 
-The gap is $2.6$ kg, which is not within $2$ kg of $147.0$, so the statement is False.`,
-      `**E) Combining Batch 1 and Batch 2 into a single hypothetical batch would yield a total mass equal to the sum of their individual masses.**  (true)
+The gap is $2.6$ kg, which is not within $2$ kg of $147.0$.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 At fixed densities, combining two batches is linear. The combined mass is the sum of the printed masses.
 
 $$182.4 + 209.0 = 391.4$$
 
-That equals the sum of the individual masses, so the statement is True.`,
+That equals the sum of the individual masses.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 50,
@@ -5091,7 +6829,7 @@ versus 147.0 kg recorded, a 6.4 kg discrepancy.
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A) A client with AUM of \\$850,000 would pay a fee representing less than 1.75% of their AUM.**  (true)
+      `**A.** → True
 
 The overview recovered rate $x = 0.016$ and retainer $y = 1200$. A client with AUM \\$850,000 pays
 
@@ -5099,22 +6837,34 @@ $$850000 \\times 0.016 + 1200 = 13600 + 1200 = 14800$$
 
 $$\\frac{14800}{850000} \\approx 0.017412$$
 
-about $1.741\\%$, which is less than $1.75\\%$, so the statement is True.`,
-      `**B) The flat retainer accounts for more than 10% of Client 2's total fee.**  (true)
+about $1.741\\%$, which is less than $1.75\\%$.
+
+So the statement is True.`,
+      `**B.** → True
+
+Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
 $$\\frac{1200}{10800} \\approx 0.1111$$
 
-about $11.1\\%$, which is more than $10\\%$, so the statement is True.`,
-      `**C) If the fee rate were reduced by 0.2 percentage points while the retainer doubled, Client 1's total fee would decrease compared to its actual amount.**  (true)
+about $11.1\\%$, which is more than $10\\%$.
+
+So the statement is True.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
 $$750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900$$
 
-Since $12900 < 13200$, Client 1's fee would decrease, so the statement is True.`,
-      `**D) The percentage-point difference in effective fee rate between Client 1 and Client 2 is more than 0.05 percentage points.**  (false)
+Since $12900 < 13200$, Client 1's fee would decrease.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Client 1's effective rate and Client 2's effective rate are
 
@@ -5122,8 +6872,12 @@ $$\\frac{13200}{750000} = 0.0176, \\qquad \\frac{10800}{600000} = 0.018$$
 
 $$0.018 - 0.0176 = 0.0004$$
 
-That is $0.04$ percentage points, which is not more than $0.05$, so the statement is False.`,
-      `**E) A client whose AUM is exactly triple Client 2's AUM would pay a total fee more than triple Client 2's fee.**  (false)
+That is $0.04$ percentage points, which is not more than $0.05$.
+
+So the statement is False.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Triple of Client 2's AUM is \\$1,800,000. That client's fee, versus triple of Client 2's \\$10,800, is
 
@@ -5131,7 +6885,9 @@ $$1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000$$
 
 $$3 \\times 10800 = 32400$$
 
-Since $30000 < 32400$, the fee is not more than triple, so the statement is False.`,
+Since $30000 < 32400$, the fee is not more than triple.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 51,
@@ -5186,35 +6942,61 @@ $$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) Suspension B's concentration is more than 85% higher than Suspension A's concentration.**  (true)
+      `**A.** → True
 
 The overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is
 
 $$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4} \\approx 0.8571$$
 
-about $85.7\\%$, which is more than $85\\%$, so the statement is True.`,
-      `**B) Batch 3's predicted total content, once its volume is correctly converted to milliliters, differs from the recorded value by more than 1% of the recorded value.**  (false)
+about $85.7\\%$, which is more than $85\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
 
 The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 
 $$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$
 
-about $0.0825\\%$, which is not more than $1\\%$, so the statement is False.`,
-      `**C) If Batch 1's Suspension B volume were doubled, the new total content would exceed 13,500 mg.**  (true)
+about $0.0825\\%$, which is not more than $1\\%$.
 
-The overview recovered $A = 8.4$ and $B = 15.6$. Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+A mixed purchase is the linear combination of the recovered unit prices:
+
+$$
+C = n_x x + n_y y
+$$
+
+Using the recovered solution values $A = 8.4$ and $B = 15.6$ as inputs for this claim:
+
+Doubling Batch 1's Suspension B volume from $300$ mL to $600$ mL gives
 
 $$500(8.4) + 600(15.6) = 4200 + 9360 = 13560$$
 
-Since $13560 > 13500$, the new total would exceed $13500$ mg, so the statement is True.`,
-      `**D) The combined total content of Batch 1 and Batch 2, if pooled, would be less than twice Batch 2's total content alone.**  (true)
+Since $13560 > 13500$, the new total would exceed $13500$ mg.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Pooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.
 
 $$8880 + 12600 = 21480$$
 
-Since $21480 < 25200$, the pooled total is less than twice Batch 2, so the statement is True.`,
-      `**E) Batch 2 used a higher proportion of Suspension B, by volume, than Batch 3 did.**  (true)
+Since $21480 < 25200$, the pooled total is less than twice Batch 2.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Batch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B out of $320 + 450 = 770$ mL.
 
@@ -5222,7 +7004,9 @@ $$\\frac{700}{900} \\approx 0.7778$$
 
 $$\\frac{450}{770} \\approx 0.5844$$
 
-Batch 2's B-share is higher, so the statement is True.`,
+Batch 2's B-share is higher.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 52,
@@ -5294,21 +7078,37 @@ versus 9,700 mg recorded, an 8 mg discrepancy.
     ],
     answer_key: [false, true, true, true, true],
     tactical_explanations: [
-      `**A) The total waste-related cost on Invoice 1 exceeds \\$700.00.**  (false)
+      `**A.** → False
 
-The overview recovered $x = 4.50$ and $y = 38$. Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 4.50$ and $y = 38$ as inputs for this claim:
+
+Invoice 1's waste is $200 \\times 0.12 = 24$ studs and $150 \\times 0.08 = 12$ sheets.
 
 $$24 \\times 4.50 + 12 \\times 38 = 108 + 456 = 564$$
 
-Since $564 < 700$, the waste-related cost does not exceed \\$700, so the statement is False.`,
-      `**B) If the drywall waste allowance were reduced from 8% to 5%, Invoice 2's total would decrease by more than \\$150.00.**  (true)
+Since $564 < 700$, the waste-related cost does not exceed \\$700.
+
+So the statement is False.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Invoice 2 ordered $175 \\times 1.08 = 189$ drywall sheets. Cutting the allowance from $8\\%$ to $5\\%$ removes $175 \\times 0.03 = 5.25$ sheets at \\$38 each.
 
 $$5.25 \\times 38 = 199.50$$
 
-Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150, so the statement is True.`,
-      `**C) Job 2's usable-material cost is more than 90% of Invoice 2's actual as-ordered total.**  (true)
+Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150.
+
+So the statement is True.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
@@ -5316,15 +7116,21 @@ $$350 \\times 4.50 + 175 \\times 38 = 1575 + 6650 = 8225$$
 
 $$\\frac{8225}{8946} \\approx 0.9194$$
 
-about $91.9\\%$, which is more than $90\\%$, so the statement is True.`,
-      `**D) The drywall price is more than 8 times the stud price.**  (true)
+about $91.9\\%$, which is more than $90\\%$.
+
+So the statement is True.`,
+      `**D.** → True
 
 The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 
 $$\\frac{38}{4.50} \\approx 8.444$$
 
-Since $8.444 > 8$, the drywall price is more than $8$ times the stud price, so the statement is True.`,
-      `**E) Job 1's waste allowance added a smaller percentage to its usable-cost total than Job 2's waste allowance added to its usable-cost total.**  (true)
+Since $8.444 > 8$, the drywall price is more than $8$ times the stud price.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
 
 Job 1 usable cost and Job 2 usable cost at the recovered prices $x = 4.50$ and $y = 38$ are
 
@@ -5338,7 +7144,9 @@ $$\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545$$
 
 $$\\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766$$
 
-Job 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$, so the statement is True.`,
+Job 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 53,
@@ -5405,41 +7213,69 @@ $$
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A) The scale factor exceeds 3.4 by more than 2.5%.**  (true)
+      `**A.** → True
 
 The overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is
 
 $$\\frac{3.50 - 3.4}{3.4} = \\frac{0.10}{3.4} \\approx 0.02941$$
 
-about $2.94\\%$, which is more than $2.5\\%$, so the statement is True.`,
-      `**B) If the offset were doubled, the predicted true value at a reading of 20 would exceed 95.**  (true)
+about $2.94\\%$, which is more than $2.5\\%$.
 
-The overview recovered $x = 3.50$ and $y = 13.50$. Doubling the offset gives $27$, so at reading $20$
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+An extended bill adds the recovered per-unit charge on top of the recovered fee:
+
+$$
+B = f + t\cdot r
+$$
+
+Using the recovered solution values $x = 3.50$ and $y = 13.50$ as inputs for this claim:
+
+Doubling the offset gives $27$, so at reading $20$
 
 $$3.50 \\times 20 + 27 = 70 + 27 = 97$$
 
-Since $97 > 95$, the predicted true value would exceed $95$, so the statement is True.`,
-      `**C) The verification check at a reading of 45.0 shows the calibration curve's predicted value exceeding the recorded reference value by more than 1% of the recorded value.**  (false)
+Since $97 > 95$, the predicted true value would exceed $95$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
+      `**C.** → False
 
 The overview predicted $171.00$ at reading $45.0$ against recorded $172.20$.
 
 $$\\frac{|171.00 - 172.20|}{172.20} = \\frac{1.20}{172.20} \\approx 0.00697$$
 
-about $0.70\\%$ of the recorded value, which is not more than $1\\%$, so the statement is False.`,
-      `**D) The percentage increase in true value between Point 1 and Point 2 is more than 100%.**  (true)
+about $0.70\\%$ of the recorded value, which is not more than $1\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Point 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is
 
 $$\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90} \\approx 1.1868$$
 
-about $118.7\\%$, which is more than $100\\%$, so the statement is True.`,
-      `**E) A reading of 8.0 would produce a predicted true value that is less than half of Point 1's true value.**  (false)
+about $118.7\\%$, which is more than $100\\%$.
+
+So the statement is True.`,
+      `**E.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 At reading $8.0$, the recovered calibration gives
 
 $$3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50$$
 
-Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1, so the statement is False.`,
+Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 54,
@@ -5499,14 +7335,20 @@ versus recorded 172.20, a $1.20$ discrepancy.
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A) Coffee costs more than 25% more per kilogram than Cocoa.**  (true)
+      `**A.** → True
 
 The overview recovered Coffee $x = 6.20$ and Cocoa $y = 4.85$. Coffee's premium over Cocoa is
 
 $$\\frac{6.20 - 4.85}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$$
 
-about $27.8\\%$, which is more than $25\\%$, so the statement is True.`,
-      `**B) Shipment 1's cost attributable to Coffee represents more than 65% of Shipment 1's total cost.**  (true)
+about $27.8\\%$, which is more than $25\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Shipment 1 has $312$ kg of Coffee at \\$6.20/kg, against a printed total of \\$2,943.20.
 
@@ -5514,15 +7356,23 @@ $$312 \\times 6.20 = 1934.40$$
 
 $$\\frac{1934.40}{2943.20} \\approx 0.6572$$
 
-about $65.7\\%$, which is more than $65\\%$, so the statement is True.`,
-      `**C) If Shipment 2's ratio had instead been 1:1 rather than 5:3, its total cost would have been lower than the actual \\$4,555.00.**  (true)
+about $65.7\\%$, which is more than $65\\%$.
+
+So the statement is True.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 
 $$400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420$$
 
-Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555, so the statement is True.`,
-      `**D) The total Cocoa cost across both shipments combined exceeds the total Coffee cost across both shipments combined.**  (false)
+Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
+
+So the statement is True.`,
+      `**D.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 Cocoa across both shipments is $208 + 300 = 508$ kg. Coffee is $312 + 500 = 812$ kg.
 
@@ -5530,14 +7380,28 @@ $$508 \\times 4.85 = 2463.80$$
 
 $$812 \\times 6.20 = 5034.40$$
 
-Cocoa's dollar total is smaller, not larger, so the statement is False.`,
-      `**E) The price gap between Coffee and Cocoa is less than 30% of Coffee's price.**  (true)
+Cocoa's dollar total is smaller, not larger.
 
-The overview recovered $x = 6.20$ and $y = 4.85$. The gap as a share of Coffee's price is
+So the statement is False.`,
+      `**E.** → True
+
+The gap between the two recovered unknowns is their difference:
+
+$$
+d = x - y
+$$
+
+Using the recovered solution values $x = 6.20$ and $y = 4.85$ as inputs for this claim:
+
+The gap as a share of Coffee's price is
 
 $$\\frac{6.20 - 4.85}{6.20} = \\frac{1.35}{6.20} \\approx 0.2177$$
 
-about $21.8\\%$, which is less than $30\\%$, so the statement is True.`,
+about $21.8\\%$, which is less than $30\\%$.
+
+The computed figure matches the claim.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 55,
@@ -5604,21 +7468,31 @@ $$
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A) Truck fuel consumption is more than 75% higher than Van fuel consumption.**  (true)
+      `**A.** → True
 
 The overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.
 
 $$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$
 
-about $77.8\\%$, which is more than $75\\%$, so the statement is True.`,
-      `**B) Route 3's predicted fuel use, once its distance is correctly converted to kilometers, is more than 2% below its recorded value.**  (false)
+about $77.8\\%$, which is more than $75\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
 
 The overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.
 
 $$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155} \\approx 0.01935$$
 
-about $1.94\\%$ below the recorded value, which is not more than $2\\%$, so the statement is False.`,
-      `**C) If Route 1's Van distance had instead been 900 km, total fuel would have exceeded 430 L.**  (true)
+about $1.94\\%$ below the recorded value, which is not more than $2\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 1 currently uses $383.6$ L with $620$ km of van. Replacing that van distance by $900$ km adds $280$ km at the recovered van rate $18.0$ L/100km.
 
@@ -5626,15 +7500,23 @@ $$2.8 \\times 18.0 = 50.4$$
 
 $$383.6 + 50.4 = 434.0$$
 
-Since $434.0 > 430$, total fuel would exceed $430$ L, so the statement is True.`,
-      `**D) Route 2's fleet-wide average fuel efficiency is closer to the Van's individual rate than to the Truck's individual rate.**  (true)
+Since $434.0 > 430$, total fuel would exceed $430$ L.
+
+So the statement is True.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 2 covers $500 + 900 = 1400$ km on $322.0$ L, so the fleet average in L/100km is
 
 $$\\frac{322.0}{14} = 23.0$$
 
-Distances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate, so the statement is True.`,
-      `**E) Route 1's total fuel use is less than the sum of what each vehicle type would use if it alone covered the full combined distance at its own rate.**  (true)
+Distances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate.
+
+So the statement is True.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 Route 1's combined distance is $850 + 620 = 1470$ km. Each type covering that whole distance at its own recovered rate would use
 
@@ -5644,7 +7526,9 @@ $$14.7 \\times 18.0 = 264.6$$
 
 $$470.4 + 264.6 = 735.0$$
 
-Actual Route 1 fuel $383.6$ L is less than that sum, so the statement is True.`,
+Actual Route 1 fuel $383.6$ L is less than that sum.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 56,
@@ -5714,28 +7598,44 @@ versus 155 L recorded, a 3 L discrepancy.
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A) The equity rate exceeds the bond rate by more than 20% of the bond rate, in relative terms.**  (true)
+      `**A.** → True
 
 The overview recovered bond $5.4\\%$ and equity $6.6\\%$. The relative gap of equity over bonds is
 
 $$\\frac{6.6 - 5.4}{5.4} = \\frac{1.2}{5.4} \\approx 0.2222$$
 
-about $22.2\\%$, which is more than $20\\%$, so the statement is True.`,
-      `**B) Under the current allocation, the blended rate is less than 6%.**  (true)
+about $22.2\\%$, which is more than $20\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The current allocation returns \\$2,646 on \\$45,000.
 
 $$\\frac{2646}{45000} = 0.0588$$
 
-$5.88\\%$ is less than $6\\%$, so the statement is True.`,
-      `**C) If the entire \\$45,000 were placed in Equities alone, the return would exceed the combined total of both described allocations' returns.**  (false)
+$5.88\\%$ is less than $6\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 All \\$45,000 in equities at $6.6\\%$ would return
 
 $$45000 \\times 0.066 = 2970$$
 
-The combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total, so the statement is False.`,
-      `**D) A $\\frac{50}{50}$ split would produce a blended return exactly equal to the average of the two described allocations' returns.**  (true)
+The combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total.
+
+So the statement is False.`,
+      `**D.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A $\\frac{50}{50}$ split puts \\$22,500 in each portfolio.
 
@@ -5745,14 +7645,26 @@ The average of the two described returns is
 
 $$\\frac{2646 + 2754}{2} = 2700$$
 
-The two figures match, so the statement is True.`,
-      `**E) The bond rate is more than 80% of the equity rate.**  (true)
+The two figures match.
 
-The overview recovered $5.4\\%$ and $6.6\\%$.
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
+
+Start from the recovered solution pair and apply the claim's extra arithmetic:
+
+Using the recovered solution values $5.4\\%$ and $6.6\\%$ as inputs for this claim:
 
 $$\\frac{5.4}{6.6} \\approx 0.8182$$
 
-about $81.8\\%$, which is more than $80\\%$, so the statement is True.`,
+about $81.8\\%$, which is more than $80\\%$.
+
+The computed figure matches the claim.
+
+The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 57,
@@ -5821,24 +7733,38 @@ Then $y = 5.4 + 1.2 = 6.6$.
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A) The reconstructed Renters coverage amount is less than \\$30,000.**  (true)
+      `**A.** → True
 
-The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000, so the statement is True.`,
-      `**B) The fixed administrative fee represents more than 60% of the Auto policy's total premium.**  (false)
+Read the figure already produced by the shared solve, then compare it with the claim.
+
+The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → False
 
 The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 
 $$\\frac{214.70}{612.50} \\approx 0.3505$$
 
-about $35.1\\%$, which is not more than $60\\%$, so the statement is False.`,
-      `**C) If the rate per \\$1,000 of coverage increased by 10%, the Home policy's premium would increase by more than \\$75.00.**  (true)
+about $35.1\\%$, which is not more than $60\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**C.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A $10\\%$ increase in the recovered rate $y = 4.68$ adds $0.468$ per \\$1,000. Home has $210$ thousands of coverage.
 
 $$210 \\times 0.468 = 98.28$$
 
-Since $98.28 > 75$, the Home premium would increase by more than \\$75, so the statement is True.`,
-      `**D) The Home policy's premium per \\$1,000 of coverage is more than twice the Auto policy's premium per \\$1,000 of coverage.**  (false)
+Since $98.28 > 75$, the Home premium would increase by more than \\$75.
+
+So the statement is True.`,
+      `**D.** → False
 
 Premium per \\$1,000 is the printed premium divided by coverage in thousands.
 
@@ -5846,8 +7772,14 @@ $$\\frac{1197.50}{210} \\approx 5.702$$
 
 $$\\frac{612.50}{85} \\approx 7.206$$
 
-Home's $5.702$ is not more than twice Auto's $7.206$, so the statement is False.`,
-      `**E) Combining the Auto and Home coverage into a single hypothetical policy would cost less than the sum of their separate premiums.**  (true)
+Home's $5.702$ is not more than twice Auto's $7.206$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is False.`,
+      `**E.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
@@ -5855,7 +7787,9 @@ $$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$
 
 $$612.50 + 1197.50 = 1810.00$$
 
-The combined policy costs less than the sum of the separate premiums, so the statement is True.`,
+The combined policy costs less than the sum of the separate premiums.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 58,
@@ -5915,14 +7849,20 @@ that is \\$25,000 of coverage.
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A) By Year 6, Species A's population exceeds Species B's population by more than 20 individuals.**  (true)
+      `**A.** → True
 
 The overview recovered Year 6 populations $A = 898$ and $B = 874$.
 
 $$898 - 874 = 24$$
 
-Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals, so the statement is True.`,
-      `**B) If Species B's growth rate were instead equal to Species A's actual rate, the combined population at Year 6 would exceed the actual combined 1,772 by more than 140 individuals.**  (true)
+Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
+
+Use the recovered values from the overview for this claim-specific check.
 
 If Species B also grew at $72$ per year, combined growth from Year 2 to Year 6 would be $4(72 + 72) = 576$.
 
@@ -5930,15 +7870,21 @@ $$1340 + 576 = 1916$$
 
 $$1916 - 1772 = 144$$
 
-The excess over the actual $1772$ is $144$, which is more than $140$, so the statement is True.`,
-      `**C) The ratio of the two species' total population growth from Year 2 to Year 6 is greater than 2.5: 1.**  (false)
+The excess over the actual $1772$ is $144$, which is more than $140$.
+
+So the statement is True.`,
+      `**C.** → False
+
+Use the recovered values from the overview for this claim-specific check.
 
 From Year 2 to Year 6, Species A grows by $4 \\times 72 = 288$ and Species B by $4 \\times 36 = 144$.
 
 $$\\frac{288}{144} = 2$$
 
-The growth ratio is $2:1$, which is not greater than $2.5:1$, so the statement is False.`,
-      `**D) At some point between Year 2 and Year 6, the two species had equal populations.**  (true)
+The growth ratio is $2:1$, which is not greater than $2.5:1$.
+
+So the statement is False.`,
+      `**D.** → True
 
 The populations are equal $t$ years after Year 2 when
 
@@ -5946,8 +7892,12 @@ $$610 + 72t = 730 + 36t$$
 
 $$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
 
-That is Year $5.333$, which lies between Year 2 and Year 6, so the statement is True.`,
-      `**E) Species A overtakes Species B in total population size before Year 5.**  (false)
+That is Year $5.333$, which lies between Year 2 and Year 6.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → False
 
 Set $610 + 72t = 730 + 36t$ to find when A catches B:
 
@@ -5959,7 +7909,9 @@ $$610 + 3(72) = 826$$
 
 $$730 + 3(36) = 838$$
 
-A is still behind at Year 5, and equality comes after Year 5, so the statement is False.`,
+A is still behind at Year 5, and equality comes after Year 5.
+
+So the statement is False.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 59,
@@ -6018,41 +7970,59 @@ $$
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A) Plant A's output rate exceeds Plant B's by more than 45%.**  (true)
+      `**A.** → True
 
 The overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.
 
 $$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$
 
-about $48.0\\%$, which is more than $45\\%$, so the statement is True.`,
-      `**B) Day 3's predicted total energy, once its operating time is correctly converted to hours, differs from the recorded value by less than 0.3% of the recorded value.**  (true)
+about $48.0\\%$, which is more than $45\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**B.** → True
 
 The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 
 $$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002815$$
 
-about $0.28\\%$, which is less than $0.3\\%$, so the statement is True.`,
-      `**C) If Plant A had operated for the combined time Plant B actually operated across Days 1–2, while Plant B operated for the combined time Plant A actually did, the grand total would exceed the actual combined Day 1 + Day 2 total.**  (false)
+about $0.28\\%$, which is less than $0.3\\%$.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**C.** → False
 
 Across Days 1 and 2, Plant B operated $20 + 9 = 29$ hours and Plant A operated $14 + 22 = 36$ hours. Swapping those totals at the recovered rates gives
 
 $$29 \\times 145 + 36 \\times 98 = 4205 + 3528 = 7733$$
 
-The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total, so the statement is False.`,
-      `**D) The combined output rate of both plants together is more than 2.4 times Plant B's rate alone.**  (true)
+The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8062$, the swapped grand total does not exceed the actual combined total.
+
+So the statement is False.`,
+      `**D.** → True
 
 The combined output rate is $145 + 98 = 243$ MWh/hr.
 
 $$\\frac{243}{98} \\approx 2.4796$$
 
-which is more than $2.4$ times Plant B's rate, so the statement is True.`,
-      `**E) Across all three days combined, total energy production exceeds 11,600 MWh.**  (true)
+which is more than $2.4$ times Plant B's rate.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
+      `**E.** → True
 
 The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 
 $$3990 + 4072 + 3553 = 11615$$
 
-Since $11615 > 11600$, combined production exceeds $11600$ MWh, so the statement is True.`,
+Since $11615 > 11600$, combined production exceeds $11600$ MWh.
+
+Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
+
+So the statement is True.`,
     ],
     difficulty_level: `\\frac{5}{5}`,
     sort_order: 60,
