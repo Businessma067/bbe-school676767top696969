@@ -39,7 +39,9 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     const onLocalizable = isLocalizablePath(stripLocalePrefix(pathname));
 
     if (onLocalizable && target !== withHash) {
-      // Navigate first; LocaleSync sets lang from the new URL (avoids EN reset race).
+      // Set language immediately so PageTranslator re-runs as soon as the
+      // remounted English source is in the DOM (LocaleSync will confirm from URL).
+      setLang(next);
       const link = getLocaleLinkProps(withHash, next);
       void navigate({
         to: link.to as never,
