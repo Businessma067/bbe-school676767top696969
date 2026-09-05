@@ -4,6 +4,10 @@
 Each stem style forces solving FROM that medium (figure, raw table, story data,
 or algebra). Integers in −20…20 (prefer 1–10). Writes
 src/data/math-ch9-mixed-exam.json.
+
+Shared solution_overview fields and letter explanations that build on them
+are rewritten afterwards by scripts/enrich-ch9-mixed-overviews.py (Ch7-core
+tutoring depth). Re-run that enricher after regenerating this bank.
 """
 
 from __future__ import annotations
