@@ -275,11 +275,11 @@
       "subsection": "9.5",
       "context": "The figure shows a polynomial (solid) and a dashed companion; a raw sample table of the solid graph is also given. Letters A–C are to be decided from the figure alone; letters D–E from the table alone. No closed form is printed. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "From the figure: the solid graph meets the horizontal axis at exactly three distinct points in the window.",
-        "From the figure: the solid graph is that of an odd function.",
-        "From the figure: the solid curve meets the dashed companion at exactly three distinct points in the window.",
-        "From the table: the sample at $x=-1$ equals $3$.",
-        "From the table: the factor $x-1$ divides the unknown polynomial."
+        "The solid graph meets the horizontal axis at exactly three distinct points in the window.",
+        "The solid graph is that of an odd function.",
+        "The solid curve meets the dashed companion at exactly three distinct points in the window.",
+        "The sample at $x=-1$ equals $3$.",
+        "The factor $x-1$ divides the unknown polynomial."
       ],
       "answer_key": [
         true,
@@ -610,11 +610,11 @@
       "subsection": "9.5",
       "context": "The figure shows a polynomial (solid) and a constant dashed mark; a raw sample table of the solid graph is also given. Letters A–C are to be decided from the figure alone; letters D–E from the table alone. No closed form is printed. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "From the figure: the solid graph meets the horizontal axis at exactly two distinct points in the window.",
-        "From the figure: the $y$-intercept of the solid graph is negative.",
-        "From the figure: the solid graph is that of an odd function.",
-        "From the table: the factor $x+1$ divides the unknown polynomial.",
-        "From the table: the factor $x$ divides the unknown polynomial."
+        "The solid graph meets the horizontal axis at exactly two distinct points in the window.",
+        "The $y$-intercept of the solid graph is negative.",
+        "The solid graph is that of an odd function.",
+        "The factor $x+1$ divides the unknown polynomial.",
+        "The factor $x$ divides the unknown polynomial."
       ],
       "answer_key": [
         true,
@@ -945,11 +945,11 @@
       "subsection": "9.5",
       "context": "The figure shows a polynomial (solid) and a constant dashed mark; a raw sample table of the solid graph is also given. Letters A–C are to be decided from the figure alone; letters D–E from the table alone. No closed form is printed. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "From the figure: the solid graph meets the horizontal axis at exactly three distinct points in the window.",
-        "From the figure: the $y$-intercept of the solid graph is positive.",
-        "From the figure: the solid curve meets the dashed mark at exactly three distinct points in the window.",
-        "From the table: the factor $x-1$ divides the unknown polynomial.",
-        "From the table: the factor $x-2$ divides the unknown polynomial."
+        "The solid graph meets the horizontal axis at exactly three distinct points in the window.",
+        "The $y$-intercept of the solid graph is positive.",
+        "The solid curve meets the dashed mark at exactly three distinct points in the window.",
+        "The factor $x-1$ divides the unknown polynomial.",
+        "The factor $x-2$ divides the unknown polynomial."
       ],
       "answer_key": [
         true,

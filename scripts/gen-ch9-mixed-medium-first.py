@@ -2167,7 +2167,7 @@ def build_hybrid(variant: int) -> TaskSpec:
         )
         claims = [
             C(
-                "From the figure: the solid graph meets the horizontal axis at exactly three distinct points in the window.",
+                "The solid graph meets the horizontal axis at exactly three distinct points in the window.",
                 True,
                 pack("A", True, [
                     "Read only the solid curve against the horizontal axis. Three simple crossings are visible, aligned with the integer ticks $-2$, $0$ and $2$.",
@@ -2178,7 +2178,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: n_z == 3,
             ),
             C(
-                "From the figure: the solid graph is that of an odd function.",
+                "The solid graph is that of an odd function.",
                 True,
                 pack("B", True, [
                     "The figure is origin-symmetric: a half-turn about the origin carries the solid curve onto itself, and the intercept is $0$.",
@@ -2189,7 +2189,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: is_odd(p),
             ),
             C(
-                "From the figure: the solid curve meets the dashed companion at exactly three distinct points in the window.",
+                "The solid curve meets the dashed companion at exactly three distinct points in the window.",
                 True,
                 pack("C", True, [
                     "Count solid–dashed intersections, not axis crossings. One meeting is at the origin; two further meetings sit near $x=\\pm 2.2$, still inside the window.",
@@ -2200,7 +2200,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: n_m == 3,
             ),
             C(
-                "From the table: the sample at $x=-1$ equals $3$.",
+                "The sample at $x=-1$ equals $3$.",
                 True,
                 pack("D", True, [
                     "Read the $x=-1$ column of the table; do not use the figure for this letter.",
@@ -2210,7 +2210,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: ys[xs.index(-1)] == 3,
             ),
             C(
-                "From the table: the factor $x-1$ divides the unknown polynomial.",
+                "The factor $x-1$ divides the unknown polynomial.",
                 False,
                 pack("E", False, [
                     "The factor theorem is a table-lookup at $x=1$.",
@@ -2251,7 +2251,7 @@ def build_hybrid(variant: int) -> TaskSpec:
         )
         claims = [
             C(
-                "From the figure: the solid graph meets the horizontal axis at exactly two distinct points in the window.",
+                "The solid graph meets the horizontal axis at exactly two distinct points in the window.",
                 True,
                 pack("A", True, [
                     "One meeting is a touch (flattening on the axis) and one is a simple crossing. The touch still counts as a single distinct zero.",
@@ -2262,7 +2262,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: n_z == 2,
             ),
             C(
-                "From the figure: the $y$-intercept of the solid graph is negative.",
+                "The $y$-intercept of the solid graph is negative.",
                 False,
                 pack("B", False, [
                     "Read the height at $x=0$ on the vertical axis. The solid curve cuts above the origin.",
@@ -2273,7 +2273,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: p0 < 0,
             ),
             C(
-                "From the figure: the solid graph is that of an odd function.",
+                "The solid graph is that of an odd function.",
                 False,
                 pack("C", False, [
                     "Oddness requires a zero intercept and half-turn symmetry. The intercept is $+4$, and the touch at $x=2$ has no matching touch at $x=-2$.",
@@ -2283,7 +2283,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: is_odd(p),
             ),
             C(
-                "From the table: the factor $x+1$ divides the unknown polynomial.",
+                "The factor $x+1$ divides the unknown polynomial.",
                 True,
                 pack("D", True, [
                     "Read the $x=-1$ column.",
@@ -2294,7 +2294,7 @@ def build_hybrid(variant: int) -> TaskSpec:
                 lambda: ys[xs.index(-1)] == 0,
             ),
             C(
-                "From the table: the factor $x$ divides the unknown polynomial.",
+                "The factor $x$ divides the unknown polynomial.",
                 False,
                 pack("E", False, [
                     "The factor theorem at $x=0$ is the intercept column of the table.",
@@ -2335,7 +2335,7 @@ def build_hybrid(variant: int) -> TaskSpec:
     )
     claims = [
         C(
-            "From the figure: the solid graph meets the horizontal axis at exactly three distinct points in the window.",
+            "The solid graph meets the horizontal axis at exactly three distinct points in the window.",
             True,
             pack("A", True, [
                 "Three simple crossings are visible: one left of the origin and two to its right.",
@@ -2346,7 +2346,7 @@ def build_hybrid(variant: int) -> TaskSpec:
             lambda: n_z == 3,
         ),
         C(
-            "From the figure: the $y$-intercept of the solid graph is positive.",
+            "The $y$-intercept of the solid graph is positive.",
             True,
             pack("B", True, [
                 "The solid curve cuts the vertical axis above the origin, at the same height as the dashed mark.",
@@ -2357,7 +2357,7 @@ def build_hybrid(variant: int) -> TaskSpec:
             lambda: p0 > 0,
         ),
         C(
-            "From the figure: the solid curve meets the dashed mark at exactly three distinct points in the window.",
+            "The solid curve meets the dashed mark at exactly three distinct points in the window.",
             True,
             pack("C", True, [
                 "The dashed mark is the horizontal through the intercept. One meeting is at $x=0$. Two further meetings lie inside the window, near $x=-0.4$ and $x=2.4$.",
@@ -2369,7 +2369,7 @@ def build_hybrid(variant: int) -> TaskSpec:
             lambda: n_m == 3,
         ),
         C(
-            "From the table: the factor $x-1$ divides the unknown polynomial.",
+            "The factor $x-1$ divides the unknown polynomial.",
             True,
             pack("D", True, [
                 "Read the $x=1$ column.",
@@ -2379,7 +2379,7 @@ def build_hybrid(variant: int) -> TaskSpec:
             lambda: ys[xs.index(1)] == 0,
         ),
         C(
-            "From the table: the factor $x-2$ divides the unknown polynomial.",
+            "The factor $x-2$ divides the unknown polynomial.",
             True,
             pack("E", True, [
                 "Read the $x=2$ column.",

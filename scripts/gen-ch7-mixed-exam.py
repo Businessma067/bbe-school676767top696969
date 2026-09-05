@@ -443,7 +443,7 @@ def build_graph(idx: int, cycle: int) -> TaskSpec:
     coincide = meet_mid == ax
     claims = balance([
         C(
-            f"From the plot, the parabola turns at $x={F(ax)}$ with height ${F(kv)}$, and by "
+            f"The parabola turns at $x={F(ax)}$ with height ${F(kv)}$, and by "
             f"Vieta the root-sum of $g$ is ${F(s_vieta)}$ so the midpoint of the zeros also "
             f"equals ${F(ax)}$.",
             True,
@@ -1501,7 +1501,7 @@ def build_hybrid(idx: int, cycle: int) -> TaskSpec:
         g2 = Rational(g.subs(x, 2))
         claims = balance([
             C(
-                f"From the table, $g(2)={F(g2)}$, matching the printed parabola.",
+                f"The table value $g(2)={F(g2)}$, matching the printed parabola.",
                 True,
                 enrich(pack("A", True, [
                     "Read the $x=2$ column, then substitute into $g$ as a cross-check.",
