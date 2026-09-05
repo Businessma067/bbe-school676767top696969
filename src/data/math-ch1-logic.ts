@@ -51,63 +51,69 @@ const MATH_CH1_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Intersection keeps only the elements that sit in both sets. Walk the roster of $A$ and keep a number only when it also sits in $B$:
 
-Intersection keeps the elements that sit in both $A$ and $B$. Testing the members of $A$ against $B$ leaves $3$, $4$, and $5$:
+$$1\\in A,\\ 1\\notin B$$
 
-$$A \\cap B = \\{3,4,5\\}$$
+$$2\\in A,\\ 2\\notin B$$
 
-The claim is that same roster.
+$$3\\in A,\\ 3\\in B$$
 
-So the statement is True.`
+$$4\\in A,\\ 4\\in B$$
 
+$$5\\in A,\\ 5\\in B$$
+
+Collecting the keepers:
+
+$$A\\cap B=\\{3,4,5\\}$$
+
+That matches the claimed roster, so the statement is True.`,
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Union keeps every element that sits in $A$ or in $C$ (or both). Start from $A$ and attach whatever $C$ adds:
 
-Union keeps every element of $A$ or $C$. The roster of $A$ is $1,2,3,4,5$ and $C$ adds $6,7,8,9$, so
+$$A=\\{1,2,3,4,5\\}$$
 
-$$A \\cup C = \\{1,2,3,4,5,6,7,8,9\\}$$
+$$C=\\{5,6,7,8,9\\}$$
 
-The claim stops at $8$ and drops $9\\in C$.
+$$A\\cup C=\\{1,2,3,4,5,6,7,8,9\\}$$
 
-So the statement is False.`
-
+The claim stops at $8$ and drops $9$. Since $9\\in C$, the claimed roster is incomplete, so the statement is False.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+An element of $(A\\cap B)\\cap C$ must sit in all three lists. First form the pairwise intersection:
 
-An element of $(A\\cap B)\\cap C$ must sit in all three lists. The numbers in both $A$ and $B$ are $3,4,5$. Of those, only $5$ sits in $C$:
+$$A\\cap B=\\{3,4,5\\}$$
 
-$$(A \\cap B) \\cap C = \\{5\\}$$
+Now test those three against $C$:
 
-The claim is that same roster.
+$$3\\notin C,\\quad 4\\notin C,\\quad 5\\in C$$
 
-So the statement is True.`
+$$(A\\cap B)\\cap C=\\{5\\}$$
 
+The claim is that same singleton, so the statement is True.`,
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Difference $A\\setminus C$ keeps members of $A$ that miss $C$. Check each member of $A$:
 
-Difference $A\\setminus C$ keeps members of $A$ that miss $C$. From $A$, only $5$ also sits in $C$, so
+$$1\\notin C,\\quad 2\\notin C,\\quad 3\\notin C,\\quad 4\\notin C,\\quad 5\\in C$$
 
-$$A \\setminus C = \\{1,2,3,4\\}$$
+So only $5$ is removed:
 
-The claim drops $4$, but $4\\in A$ and $4\\notin C$.
+$$A\\setminus C=\\{1,2,3,4\\}$$
 
-So the statement is False.`
-
+The claim drops $4$, but $4\\in A$ and $4\\notin C$, so the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Disjointness requires an empty intersection. Compute the shared roster:
 
-Disjointness requires $B\\cap C=\\emptyset$. The shared members are $5$, $6$, and $7$:
+$$B=\\{3,4,5,6,7\\}$$
 
-$$B \\cap C = \\{5,6,7\\}$$
+$$C=\\{5,6,7,8,9\\}$$
 
-The intersection is nonempty.
+$$B\\cap C=\\{5,6,7\\}$$
 
-So the statement is False.`
+The intersection is nonempty, so $B$ and $C$ are not disjoint. So the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -132,73 +138,63 @@ Intersection keeps elements that sit in both inputs. Union keeps elements that s
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
-
-The overview recovered 
+The overview recovered
 
 $$A=\\{-3,3\\}$$
 
-. $B$ is given as $\\{3,-3\\}$. Sets ignore order, so the two rosters are the same collection.
+and $B$ is given as $\\{3,-3\\}$. Sets ignore order and repetition, so the two rosters name the same collection:
 
-So the statement is True.`
+$$A=B$$
 
+So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+The overview recovered $A=\\{-3,3\\}$. Membership asks whether the object sits on that roster:
 
-The overview recovered 
+$$3\\in\\{-3,3\\}$$
 
-$$A=\\{-3,3\\}$$
-
-. The integer $3$ sits on that roster, so $3\\in A$.
-
-So the statement is True.`
-
+Yes, so $3\\in A$. So the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+The overview recovered $A=\\{-3,3\\}$. The claim reprints $A$ as the singleton $\\{3\\}$. Check the discarded root:
 
-The overview recovered 
+$$(-3)^{2}=9,\\qquad -3\\in Z$$
+
+so $-3$ belongs in $A$. Then
+
+$$A=\\{-3,3\\}\\ne\\{3\\}$$
+
+So the statement is False.`,
+      `**D.** → True
+
+The overview recovered two distinct members:
 
 $$A=\\{-3,3\\}$$
 
-. The claim reprints $A$ as the singleton $\\{3\\}$ and drops $-3$, even though $(-3)^{2}=9$ and $-3\\in Z$. The two sets are unequal.
+Cardinality counts distinct members:
 
-So the statement is False.`
+$$\\lvert A\\rvert=2$$
 
-      `**D.** → True
-
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
-
-The overview recovered two distinct members, $-3$ and $3$, so
-
-$$\\lvert A \\rvert = 2$$
-
-The claim is that same count.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+The same equation $x^{2}=9$ is now filtered by the universe $N=\\{1,2,3,\\ldots\\}$. The candidates are still $\\pm 3$, but
 
-The same roots $3$ and $-3$ must now pass the universe $N=\\{1,2,3,\\ldots\\}$. The root $3$ is natural, but $-3$ is not, so
+$$3\\in N,\\qquad -3\\notin N$$
+
+so
 
 $$C=\\{3\\}$$
 
-The claim equals $C$ with $\\{3,-3\\}$. Those sets differ.
-
-So the statement is False.`
+The claim equates $C$ with $\\{3,-3\\}$. Those sets differ by $-3$, so the statement is False.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
-    solution_overview: `The set-builder $A=\\{x\\in Z:x^{2}=9\\}$ keeps the integer solutions of $x^{2}=9$. $B$ is given as $\\{3,-3\\}$.
+    solution_overview: `The set-builder $A=\\{x\\in Z:x^{2}=9\\}$ keeps the integer solutions of $x^{2}=9$. Solving gives $x=\\pm 3$, both integers, so
 
-A set-builder is a membership test against a named universe. Equality of sets is equality of members, ignoring order. Cardinality counts distinct members. Changing the universe produces a different set.
+$$A=\\{-3,3\\}.$$
 
-The equation $x^{2}=9$ has roots $x=3$ and $x=-3$. Both are integers, so
-
-$$A=\\{-3,3\\}.$$`,
+$B$ is given as $\\{3,-3\\}$. A set-builder is a membership test against a named universe. Equality of sets is equality of membership, independent of order or how the set was written.`,
   },
   {
     id: `math-1-3`,
@@ -217,53 +213,49 @@ $$A=\\{-3,3\\}.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Each of the three objects in $A=\\{a,b,c\\}$ may be kept or left out when building a subset. That gives $2$ choices per object:
 
-Each of the three objects can be kept or left out, so
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{3}$$
 
-$$\\lvert \\mathcal{P}(A) \\rvert = 2^{3} = 8$$
+$$2^{3}=8$$
 
-The claim is $8$.
-
-So the statement is True.`
-
+The claim is $8$, so the statement is True.`,
       `**B.** → False
 
-The elements of $A$ are the three letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a set of letters, not a letter, so $\\{a,b\\}\\notin A$. The pair is a subset of $A$ and therefore an element of $\\mathcal{P}(A)$, but that is not this claim,
+The elements of $A$ are the three letters $a$, $b$, and $c$. The object $\\{a,b\\}$ is a two-element set of letters, not a letter:
 
-So the statement is False.`
+$$\\{a,b\\}\\notin A$$
 
+It is a subset of $A$, so it sits in the power set
+
+$$\\{a,b\\}\\in\\mathcal{P}(A)$$
+
+but that is not this claim. So the statement is False.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all, so there is no witness that could sit outside $A$:
 
-Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no member at all, so there is no witness that could sit outside $A$. Hence $\\emptyset\\subseteq A$.
+$$\\emptyset\\subseteq A$$
 
-So the statement is True.`
-
+always holds. So the statement is True.`,
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Proper inclusion needs ordinary inclusion plus a genuine difference of sets:
 
-Proper inclusion is ordinary inclusion plus a genuine difference of sets. 
+$$X\\subsetneq Y\\iff(X\\subseteq Y)\\wedge(X\\neq Y)$$
 
-$$A\\subseteq A$$
-
- always holds, but the extra demand $A\\ne A$ is impossible. So $A$ is not a proper subset of $A$.
-
-So the statement is False.`
-
+$A\\subseteq A$ always holds, but $A\\neq A$ is impossible. Hence $A$ is not a proper subset of $A$. So the statement is False.`,
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+A two-element subset of a three-element set is counted by the binomial coefficient:
 
-A two-element subset of a three-element set is counted by
+$$\\binom{3}{2}=3$$
 
-$$\\binom{3}{2} = 3$$
+The three subsets are
 
-The three subsets are $\\{a,b\\}$, $\\{a,c\\}$, and $\\{b,c\\}$. The claim is $3$.
+$$\\{a,b\\},\\quad\\{a,c\\},\\quad\\{b,c\\}$$
 
-So the statement is True.`
+The claim is $3$, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 3,
@@ -288,55 +280,47 @@ Membership $x\\in A$ means $x$ is one of those three objects. Inclusion $S\\subs
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Subsethood asks whether every member of the left-hand set sits in $D$. The empty set has no members, so no witness can sit outside $D$:
 
-The empty set has no member that could sit outside $D$, so $\\emptyset\\subseteq D$.
+$$\\emptyset\\subseteq D$$
 
-So the statement is True.`
-
+So the statement is True.`,
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Membership asks whether the object is one of the listed elements. The roster is
 
-The elements of $D$ are the letters $a$, $b$, and $c$. The empty set is not one of those three objects, so $\\emptyset\\notin D$.
+$$D=\\{a,b,c\\}$$
 
-So the statement is False.`
+The empty set is not the letter $a$, nor $b$, nor $c$:
 
+$$\\emptyset\\notin D$$
+
+So the statement is False.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Each of the three letters may be kept or left out independently when building a subset:
 
-Each of the three letters can be kept or left out, so the number of subsets is
+$$\\lvert\\mathcal{P}(D)\\rvert=2^{3}=8$$
 
-$$2^{3} = 8$$
-
-The claim is $8$.
-
-So the statement is True.`
-
+So $D$ has exactly $8$ subsets. So the statement is True.`,
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Check the two relations separately. Because $a\\in D$,
 
-The singleton $\\{a\\}$ is a subset of $D$ because $a\\in D$. It is not an element of $D$, because the elements are letters rather than singletons. The claim needs both $\\{a\\}\\subseteq D$ and $\\{a\\}\\in D$. The second fails.
+$$\\{a\\}\\subseteq D$$
 
-So the statement is False.`
+holds. But the elements of $D$ are letters, not singletons:
 
+$$\\{a\\}\\notin D$$
+
+The claim needs both relations. The second fails, so the statement is False.`,
       `**E.** → True
 
-Subset is reflexive: every set is a subset of itself because each of its members sits in it.
-
-Take an arbitrary element $x\\in D$. By definition of membership in $D$,
-
-$$x\\in D$$
-
-so the subset test passes for every $x$. Hence
+Every member of $D$ sits in $D$ by the definition of the same set:
 
 $$D\\subseteq D$$
 
-Matching the claim,
-
-So the statement is True.`
+Inclusion is reflexive. So the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 4,
@@ -361,67 +345,61 @@ Membership $x\\in D$ asks whether $x$ is one of the three written letters. Inclu
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Difference keeps members of $E$ that miss $F$. Check each member of $E=\\{1,3,5,7\\}$:
 
-The overview recovered 
+$$1\\notin F,\\quad 3\\in F,\\quad 5\\in F,\\quad 7\\notin F$$
+
+So
 
 $$E\\setminus F=\\{1,7\\}$$
 
-. The claim is that same roster.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Difference keeps members of $F$ that miss $E$. Check each member of $F=\\{3,4,5,6\\}$:
 
-The overview recovered 
+$$3\\in E,\\quad 4\\notin E,\\quad 5\\in E,\\quad 6\\notin E$$
+
+So
 
 $$F\\setminus E=\\{4,6\\}$$
 
-. The claim is that same roster.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
-
-The overview recovered 
+The overview (and the two differences above) give
 
 $$E\\setminus F=\\{1,7\\}$$
 
- and 
+$$F\\setminus E=\\{4,6\\}$$
+
+Those rosters are unequal:
+
+$$\\{1,7\\}\\neq\\{4,6\\}$$
+
+so the two differences are not the same set. So the statement is False.`,
+      `**D.** → True
+
+Symmetric-difference style union of the two leftover piles:
+
+$$E\\setminus F=\\{1,7\\}$$
 
 $$F\\setminus E=\\{4,6\\}$$
 
-. Those two sets are unequal.
+$$(E\\setminus F)\\cup(F\\setminus E)=\\{1,4,6,7\\}$$
 
-So the statement is False.`
-
-      `**D.** → True
-
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
-
-The overview recovered the two leftover piles $\\{1,7\\}$ and $\\{4,6\\}$. Their union is
-
-$$(E \\setminus F) \\cup (F \\setminus E) = \\{1,4,6,7\\}$$
-
-The claim is that same roster.
-
-So the statement is True.`
-
+That matches the claimed roster, so the statement is True.`,
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+The leftover piles share no members:
 
-The leftover piles $\\{1,7\\}$ and $\\{4,6\\}$ share no members, so
+$$\\{1,7\\}\\cap\\{4,6\\}=\\emptyset$$
 
-$$(E \\setminus F) \\cap (F \\setminus E) = \\emptyset$$
+so
 
-The claim is that same empty intersection.
+$$(E\\setminus F)\\cap(F\\setminus E)=\\emptyset$$
 
-So the statement is True.`
+That matches the claim, so the statement is True.`,
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -454,63 +432,49 @@ The union of those leftover piles is the symmetric difference. Their intersectio
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Intersection keeps numbers tagged in both $A$ and $B$. Walk $A=\\{2,4,6,8,10\\}$ against $B=\\{3,6,9,12\\}$:
 
-Intersection keeps elements in both $A$ and $B$. The only shared number is $6$:
+$$2\\notin B,\\ 4\\notin B,\\ 6\\in B,\\ 8\\notin B,\\ 10\\notin B$$
 
-$$A \\cap B = \\{6\\}$$
+$$A\\cap B=\\{6\\}$$
 
-The claim matches.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Union size is the count of distinct tags in either list:
 
-Writing the distinct members of $A$ or $B$ gives
+$$\\lvert A\\cup B\\rvert=\\lvert A\\rvert+\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
 
-$$A \\cup B = \\{2,3,4,6,8,9,10,12\\}$$
+$$=5+4-1=8$$
 
-which has $8$ elements.
-
-So the statement is True.`
-
+So $A\\cup B$ has $8$ elements. So the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Difference $C\\setminus A$ keeps members of $C$ that miss $A$. From $C=\\{1,2,3,4,5\\}$:
 
-Difference $C\\setminus A$ keeps members of $C$ that miss $A$:
+$$1\\notin A,\\ 2\\in A,\\ 3\\notin A,\\ 4\\in A,\\ 5\\notin A$$
 
-$$C \\setminus A = \\{1,3,5\\}$$
+$$C\\setminus A=\\{1,3,5\\}$$
 
-The claim drops $5$.
+The claim drops $5$, so the statement is False.`,
+      `**D.** → False
 
-So the statement is False.`
+Difference $B\\setminus C$ removes from $B$ whatever also sits in $C$. From $B=\\{3,6,9,12\\}$:
 
-      `**D.** → True
+$$3\\in C,\\ 6\\notin C,\\ 9\\notin C,\\ 12\\notin C$$
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+$$B\\setminus C=\\{6,9,12\\}$$
 
-Difference $B\\setminus C$ keeps members of $B$ that miss $C$:
+The claim keeps $3$, but $3$ was removed. So the statement is False.`,
+      `**E.** → False
 
-$$B \\setminus C = \\{6,9,12\\}$$
+Intersection $A\\cap C$ keeps shared members. From $A=\\{2,4,6,8,10\\}$ and $C=\\{1,2,3,4,5\\}$:
 
-The claim keeps $3$, but $3\\in C$.
+$$2\\in C,\\ 4\\in C,\\ 6\\notin C,\\ 8\\notin C,\\ 10\\notin C$$
 
-So the statement is True.`
+$$A\\cap C=\\{2,4\\}$$
 
-      `**E.** → True
-
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
-
-Intersection keeps elements in both $A$ and $C$:
-
-$$A \\cap C = \\{2,4\\}$$
-
-The claim includes $6$, but $6\\notin C$.
-
-So the statement is True.`
+The claim inserts $6$, which is not in $C$. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -535,63 +499,45 @@ Intersection keeps numbers tagged in both inputs. Union keeps every tagged numbe
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Two-set inclusion-exclusion recovers the union:
 
-The overview already recovered the shared figure
+$$\\lvert M\\cup E\\rvert=\\lvert M\\rvert+\\lvert E\\rvert-\\lvert M\\cap E\\rvert$$
 
-$$\\lvert M \\cup E \\rvert = 43$$
+$$=30+25-12=43$$
 
-The claim asserts that same value. Comparing the two sides.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Students in neither course are the cohort total minus the union:
 
-The overview recovered a union of $43$ among $50$ students. The remainder is
+$$\\lvert U\\setminus(M\\cup E)\\rvert=50-\\lvert M\\cup E\\rvert$$
 
-$$50 - 43 = 7$$
+$$=50-43=7$$
 
-The claim is $7$.
+So exactly $7$ take neither course. So the statement is True.`,
+      `**C.** → True
 
-So the statement is True.`
+Only-Mathematics is the Mathematics total after removing the overlap:
 
-      `**C.** → False
+$$\\lvert M\\setminus E\\rvert=\\lvert M\\rvert-\\lvert M\\cap E\\rvert$$
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+$$=30-12=18$$
 
-Only Mathematics is the Mathematics headline minus the overlap:
-
-$$\\lvert M \\setminus E \\rvert = 30 - 12 = 18$$
-
-The claim is $18$.
-
-So the statement is False.`
-
+That matches the claim, so the statement is True.`,
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Subsethood $E\\subseteq M$ would require every Economics student also sit in $M$, i.e. $\\lvert E\\setminus M\\rvert=0$. But
 
-The inclusion 
+$$\\lvert E\\setminus M\\rvert=\\lvert E\\rvert-\\lvert M\\cap E\\rvert=25-12=13$$
 
-$$E\\subseteq M$$
-
- would require every Economics student to sit in $M$, hence $\\lvert M \\cap E \\rvert = \\lvert E \\rvert$. The given overlap is $12$ and $\\lvert E \\rvert = 25$, so $12 \\ne 25$.
-
-So the statement is False.`
-
+Thirteen Economics-only students sit outside $M$, so $E\\not\\subseteq M$. So the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Disjointness requires $\\lvert M\\cap E\\rvert=0$. The stem gives
 
-Disjointness requires 
+$$\\lvert M\\cap E\\rvert=12\\neq 0$$
 
-$$\\lvert M \\cap E \\rvert = 0$$
-
-. The overlap is given as $12$.
-
-So the statement is False.`
+so the courses are not disjoint. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 7,
@@ -624,67 +570,47 @@ so $\\lvert M \\cup E \\rvert = 43$. Only-Mathematics is $\\lvert M \\rvert$ min
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Pairwise disjointness means every pair of blocks shares nothing. Check the three pairs:
 
-The three blocks occupy $\\{1,2,3\\}$, $\\{4,5,6\\}$, and $\\{7,8,9\\}$ with no shared integers, so
+$$A\\cap B=\\{1,2,3\\}\\cap\\{4,5,6\\}=\\emptyset$$
 
-$$A \\cap B = \\emptyset, \\qquad A \\cap C = \\emptyset, \\qquad B \\cap C = \\emptyset$$
+$$A\\cap C=\\{1,2,3\\}\\cap\\{7,8,9\\}=\\emptyset$$
 
-Every pair is disjoint.
+$$B\\cap C=\\{4,5,6\\}\\cap\\{7,8,9\\}=\\emptyset$$
 
-So the statement is True.`
-
+All three intersections are empty, so the blocks are pairwise disjoint. So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+A partition needs pairwise disjoint nonempty blocks whose union is $U$. Pairwise disjointness was checked in A. The union is
 
-The blocks are nonempty and pairwise disjoint. Their union is
+$$A\\cup B\\cup C=\\{1,2,3,4,5,6,7,8,9\\}=U$$
 
-$$A \\cup B \\cup C = \\{1,2,3,4,5,6,7,8,9\\} = U$$
-
-so $\\{A,B,C\\}$ is a partition of $U$.
-
-So the statement is True.`
-
+and each block is nonempty. So $\\{A,B,C\\}$ partitions $U$. So the statement is True.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+The triple intersection sits inside every pairwise intersection. Since $A\\cap B=\\emptyset$,
 
-Pairwise disjointness already forces the triple intersection to be empty:
+$$A\\cap B\\cap C\\subseteq A\\cap B=\\emptyset$$
 
-$$A \\cap B \\cap C = \\emptyset$$.
+so
 
-So the statement is True.`
+$$A\\cap B\\cap C=\\emptyset$$
 
+So the statement is True.`,
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Difference $A\\setminus B$ keeps members of $A$ that miss $B$. Since $A$ and $B$ are disjoint, nothing is removed:
 
-Membership holds when the object appears among the set's listed elements.
+$$A\\setminus B=A=\\{1,2,3\\}\\neq\\emptyset$$
 
-Inspect the roster of $B$ for $1,2,3$:
-
-$$1,2,3\\in B$$
-
-The object is present, matching the claim.
-
-So the statement is False.`
-
+The claim asserts the empty set. So the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Disjointness of two nonempty sets is allowed. Here
 
-An empty intersection does not force a factor empty. Here 
+$$A=\\{1,2,3\\}\\neq\\emptyset,\\qquad B=\\{4,5,6\\}\\neq\\emptyset$$
 
-$$A\\cap B=\\emptyset$$
-
- even though both 
-
-$$A=\\{1,2,3\\}$$
-
- and $B=\\{4,5,6\\}$ are nonempty.
-
-So the statement is False.`
+yet $A\\cap B=\\emptyset$. Empty intersection does not force either factor to be empty. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -711,61 +637,59 @@ Pairwise disjointness means every pair of blocks shares nothing. A partition of 
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+The complement of $X$ in $U=\\{1,2,\\ldots,12\\}$ is everyone $X$ leaves out:
 
-The overview recovered 
+$$X=\\{1,2,3,4,5,6\\}$$
 
 $$X^{c}=\\{7,8,9,10,11,12\\}$$
 
-. The claim is that same roster.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+First form the union of skill sets:
 
-The union is $X\\cup Y=\\{1,2,\\ldots,9\\}$. Complementing in $U$ leaves
+$$X\\cup Y=\\{1,2,3,4,5,6,7,8,9\\}$$
 
-$$(X \\cup Y)^{c} = \\{10,11,12\\}$$
+Its complement in $U$ is
 
-The claim is that same roster.
+$$(X\\cup Y)^{c}=\\{10,11,12\\}$$
 
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+De Morgan says the complement of a union is the intersection of complements. Compute each complement:
 
-The overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their intersection is
+$$X^{c}=\\{7,8,9,10,11,12\\}$$
 
-$$X^{c} \\cap Y^{c} = \\{10,11,12\\}$$
+$$Y^{c}=\\{1,2,3,10,11,12\\}$$
 
-The claim is that same roster.
+$$X^{c}\\cap Y^{c}=\\{10,11,12\\}$$
 
-So the statement is True.`
-
+Same roster as $(X\\cup Y)^{c}$. So the statement is True.`,
       `**D.** → True
 
-De Morgan's law says the complement of an intersection is the union of the complements:
+De Morgan's second law equates the complement of an intersection with the union of complements. One side:
 
-$$(X \\cap Y)^{c} = X^{c} \\cup Y^{c}$$
+$$X\\cap Y=\\{4,5,6\\}$$
 
-This identity holds for every pair of sets. Checking the recovered lists: $X\\cap Y=\\{4,5,6\\}$, so the left side is $\\{1,2,3,7,8,9,10,11,12\\}$, which matches $X^{c}\\cup Y^{c}$,.
+$$(X\\cap Y)^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
 
-So the statement is True.`
+The other side:
 
+$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
+
+The two sides agree, so the identity holds. So the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Form the union of complements:
 
-The overview recovered $X^{c}=\\{7,8,9,10,11,12\\}$ and $Y^{c}=\\{1,2,3,10,11,12\\}$. Their union is
+$$X^{c}=\\{7,8,9,10,11,12\\}$$
 
-$$X^{c} \\cup Y^{c} = \\{1,2,3,7,8,9,10,11,12\\}$$
+$$Y^{c}=\\{1,2,3,10,11,12\\}$$
 
-The claim drops $7,8,9$.
+$$X^{c}\\cup Y^{c}=\\{1,2,3,7,8,9,10,11,12\\}$$
 
-So the statement is False.`
+The claim drops $7,8,9$ and is therefore incomplete. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 9,
@@ -794,63 +718,51 @@ De Morgan's laws: $(X\\cup Y)^{c}=X^{c}\\cap Y^{c}$ and $(X\\cap Y)^{c}=X^{c}\\c
     tactical_explanations: [
       `**A.** → False
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Form the union first:
 
-The union is $A\\cup B=\\{1,2,\\ldots,8\\}$. Complementing in $U$ leaves
+$$A\\cup B=\\{1,2,3,4,5,6,7,8\\}$$
 
-$$(A \\cup B)^{c} = \\{9,10\\}$$
+Its complement in $U=\\{1,2,\\ldots,10\\}$ is
 
-The claim includes $8$, but $8\\in B$.
+$$(A\\cup B)^{c}=\\{9,10\\}$$
 
-So the statement is False.`
-
+The claim inserts $8$, but $8\\in A\\cup B$. So the statement is False.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+De Morgan's law says the complement of an intersection is the union of complements:
 
-De Morgan's law says
+$$(A\\cap B)^{c}=A^{c}\\cup B^{c}$$
 
-$$(A \\cap B)^{c} = A^{c} \\cup B^{c}$$
-
-This identity holds for every pair of sets.
-
-So the statement is True.`
-
+This is an identity for any sets $A,B$ in a fixed universe. So the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Compute each complement, then intersect:
 
-The overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their intersection is
+$$A^{c}=\\{6,7,8,9,10\\}$$
 
-$$A^{c} \\cap B^{c} = \\{9,10\\}$$
+$$B^{c}=\\{1,2,3,9,10\\}$$
 
-The claim keeps $6,7,8$, which sit in $B$ and therefore miss $B^{c}$.
+$$A^{c}\\cap B^{c}=\\{9,10\\}$$
 
-So the statement is False.`
-
+The claim keeps $6,7,8$, which sit in $A^{c}$ but not in $B^{c}$. So the statement is False.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+First form the intersection:
 
-The intersection is $A\\cap B=\\{4,5\\}$. Complementing in $U$ leaves
+$$A\\cap B=\\{4,5\\}$$
 
-$$(A \\cap B)^{c} = \\{1,2,3,6,7,8,9,10\\}$$
+Its complement in $U$ is everyone else:
 
-The claim is that same roster.
+$$(A\\cap B)^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Form the union of complements:
 
-The overview recovered $A^{c}=\\{6,7,8,9,10\\}$ and $B^{c}=\\{1,2,3,9,10\\}$. Their union is
+$$A^{c}\\cup B^{c}=\\{1,2,3,6,7,8,9,10\\}$$
 
-$$A^{c} \\cup B^{c} = \\{1,2,3,6,7,8,9,10\\}$$
-
-The claim drops $6,7,8$.
-
-So the statement is False.`
+The claim drops $6,7,8$. So the statement is False.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -879,53 +791,39 @@ De Morgan's laws: $(A\\cup B)^{c}=A^{c}\\cap B^{c}$ and $(A\\cap B)^{c}=A^{c}\\c
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Check the three partition axioms for $P=\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ on $A=\\{1,2,3,4,5,6\\}$:
 
-The blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and
+$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset,\\quad\\{1,2\\}\\cap\\{5,6\\}=\\emptyset,\\quad\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$
 
-$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = A$$
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=A$$
 
-so $P$ is a partition of $A$.
-
-So the statement is True.`
-
+Each block is nonempty. All three axioms hold, so $P$ partitions $A$. So the statement is True.`,
       `**B.** → False
 
-A partition need not have one block per element. The one-block collection $\\{A\\}$ is a partition of $A$, and the pairing $\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$ is another, with $3$ blocks rather than $6$. The claim requires every partition to have exactly $6$ blocks,
+Block count is free. The one-block collection $\\{A\\}$ partitions $A$, and so does any other valid splitting. For $|A|=6$, both of the following are partitions:
 
-So the statement is False.`
+$$\\{\\{1,2\\},\\{3,4\\},\\{5,6\\}\\}$$
 
+$$\\{A\\}$$
+
+The first has $3$ blocks and the second has $1$ block. The claim that every partition must have exactly $n$ blocks is false. So the statement is False.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+The blocks of $Q$ overlap at $3$:
 
-The two blocks of $Q$ both contain $3$:
+$$\\{1,2,3\\}\\cap\\{3,4,5,6\\}=\\{3\\}\\neq\\emptyset$$
 
-$$\\{1,2,3\\} \\cap \\{3,4,5,6\\} = \\{3\\}$$
-
-The overlap is nonempty, so $Q$ is not a partition.
-
-So the statement is False.`
-
+Pairwise disjointness fails, so $Q$ is not a partition. So the statement is False.`,
       `**D.** → False
-
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
 
 The union of the blocks of $R$ is
 
-$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5\\} = \\{1,2,3,4,5\\}$$
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5\\}=\\{1,2,3,4,5\\}$$
 
-which misses $6\\in A$, so $R$ is not a partition of $A$.
-
-So the statement is False.`
-
+which misses $6\\in A$. Covering fails, so $R$ is not a partition. So the statement is False.`,
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
-
-The overview recorded two distinct partitions of any set with $n\\ge 2$ elements: the one-block collection $\\{A\\}$, and the collection of $n$ singletons. So more than one partition always exists.
-
-So the statement is True.`
+For $n\\ge 2$, at least two partitions exist: the trivial one-block partition $\\{A\\}$, and any split into a singleton and its complement (among others). So more than one partition always exists. So the statement is True.`,
     ],
     difficulty_level: `2/5`,
     sort_order: 11,
@@ -950,63 +848,39 @@ Block count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is a
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Each of the five elements may be included or omitted independently:
 
-The overview recovered 
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}=32$$
 
-$$2^{5}=32$$
-
- subsets. The claim is $32$.
-
-So the statement is True.`
-
+So $A$ has $32$ subsets. So the statement is True.`,
       `**B.** → True
-
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
 
 Proper subsets are all subsets except $A$ itself:
 
-$$32 - 1 = 31$$
+$$2^{5}-1=32-1=31$$
 
-The claim is $31$.
-
-So the statement is True.`
-
+So there are $31$ proper subsets. So the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Four-element subsets are counted by the binomial coefficient:
 
-The number of $4$-element subsets of a $5$-element set is
+$$\\binom{5}{4}=5$$
 
-$$\\binom{5}{4} = 5$$
-
-The claim is $10$.
-
-So the statement is False.`
-
+not $10$. (Note $\\binom{5}{2}=10$ counts two-element subsets instead.) So the statement is False.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Nonempty subsets drop only the empty set:
 
-Nonempty subsets are all subsets except $\\emptyset$:
+$$2^{5}-1=31$$
 
-$$32 - 1 = 31$$
-
-The claim is $31$.
-
-So the statement is True.`
-
+So there are $31$ nonempty subsets. So the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Even-cardinality subsets for $|A|=5$:
 
-The even sizes available in a $5$-element set are $0$, $2$, and $4$:
+$$\\binom{5}{0}+\\binom{5}{2}+\\binom{5}{4}=1+10+5=16$$
 
-$$\\binom{5}{0} + \\binom{5}{2} + \\binom{5}{4} = 1 + 10 + 5 = 16$$
-
-The claim is $15$.
-
-So the statement is False.`
+Exactly half of $2^{5}=32$ subsets have even size. The claim asserts $15$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 12,
@@ -1035,55 +909,53 @@ Proper subsets drop $A$ itself. Nonempty subsets drop $\\emptyset$. Size counts 
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Translate brackets into inequalities, then take the tighter bounds:
 
-The lower bound of the intersection is the stricter of $x>0$ and $x\\ge 5$, hence $x\\ge 5$. The upper bound is the stricter of $x\\le 10$ and $x<15$, hence $x\\le 10$. So
+$$A=(0,10]\\iff 0<x\\le 10$$
 
-$$A \\cap B = [5,10]$$
+$$B=[5,15)\\iff 5\\le x<15$$
 
-The claim matches.
+Intersection requires both:
 
-So the statement is True.`
+$$5\\le x\\le 10$$
 
-      `**B.** → True
+which is the closed interval $[5,10]$. So the statement is True.`,
+      `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Union runs from the leftmost open end to the rightmost open end:
 
-The union runs from just above $0$ to just below $15$:
+$$0<x<15$$
 
-$$A \\cup B = (0,15)$$
+so
 
-The claim is $(0,15]$, which includes $15$. But $15\\notin B$ because $B$ is open at $15$, and $15\\notin A$.
+$$A\\cup B=(0,15)$$
 
-So the statement is True.`
+The claim closes the right end as $(0,15]$. But $15\\notin B$ and $15\\notin A$, so $15$ is excluded. So the statement is False.`,
+      `**C.** → True
 
-      `**C.** → False
+Check $10$ against both intervals:
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+$$10\\in A\\iff 0<10\\le 10\\quad\\text{(true)}$$
 
-The point $10$ satisfies $0<10\\le 10$, so $10\\in A$. It also satisfies $5\\le 10<15$, so $10\\in B$. Hence $10\\in A\\cap B$.
+$$10\\in B\\iff 5\\le 10<15\\quad\\text{(true)}$$
 
-So the statement is False.`
+so $10\\in A\\cap B$. So the statement is True.`,
+      `**D.** → False
 
-      `**D.** → True
+Difference $A\\setminus B$ needs $x\\in A$ and $x\\notin B$. For $x=5$:
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+$$5\\in A\\iff 0<5\\le 10\\quad\\text{(true)}$$
 
-The point $5$ satisfies $0<5\\le 10$, so $5\\in A$. It also satisfies $5\\le 5<15$, so $5\\in B$. Difference $A\\setminus B$ cannot keep a point of $B$, so $5\\notin A\\setminus B$.
+$$5\\in B\\iff 5\\le 5<15\\quad\\text{(true)}$$
 
-So the statement is True.`
-
+so $5\\in B$, hence $5\\notin A\\setminus B$. So the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+The implication $x\\in A\\Rightarrow x\\in B$ fails at any point of $A$ outside $B$. Take $x=1$:
 
-The claim is $A\\subseteq B$. A counterexample is $x=1$:
+$$1\\in A,\\qquad 1\\notin B$$
 
-$$1 \\in A, \\qquad 1 \\notin B$$
-
-because $1<5$. The implication fails.
-
-So the statement is False.`
+so the implication is not true for all $x$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 13,
@@ -1110,63 +982,51 @@ Intersection takes the tighter bounds. Union runs from the leftmost open end to 
     tactical_explanations: [
       `**A.** → False
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Three-set inclusion-exclusion:
 
-The overview already recovered the shared figure
+$$\\lvert A\\cup B\\cup C\\rvert=80+70+60-30-25-20+10$$
 
-$$\\lvert A \\cup B \\cup C \\rvert = 145$$
+$$=145$$
 
-The claim asserts that same value. Comparing the two sides.
+The claim asserts $155$. Since $145\\neq 155$, the statement is False.
 
-So the statement is False.`
-
+So the statement is False.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Tourists who visited none of the three:
 
-The overview recovered a union of $145$ among $150$ tourists. The remainder is
+$$150-\\lvert A\\cup B\\cup C\\rvert=150-145=5$$
 
-$$150 - 145 = 5$$
-
-The claim is $5$.
-
-So the statement is True.`
-
+So exactly $5$ visited none. So the statement is True.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Exactly A-and-B (not C) is the pairwise total minus the triple:
 
-The pairwise total $\\lvert A \\cap B \\rvert = 30$ still includes the $10$ visitors to all three museums. The exact $A$-and-$B$-only region is
+$$\\lvert A\\cap B\\setminus C\\rvert=\\lvert A\\cap B\\rvert-\\lvert A\\cap B\\cap C\\rvert$$
 
-$$30 - 10 = 20$$
+$$=30-10=20$$
 
-The claim is $30$.
-
-So the statement is False.`
-
+The claim reuses the pairwise total $30$ and forgets to remove the triple. So the statement is False.`,
       `**D.** → False
 
-Only Museum $A$ excludes $B$ and $C$. Subtracting both pair totals from $\\lvert A \\rvert$ double-subtracts the triple, so add it back:
+Only-A removes both pairwise overlaps and restores the triple once:
 
-$$\\lvert A \\setminus (B \\cup C) \\rvert = 80 - 30 - 20 + 10 = 40$$
+$$\\lvert A\\setminus(B\\cup C)\\rvert=80-30-20+10=40$$
 
-The claim computes $80-30-20=30$ and never adds $10$,
-
-So the statement is False.`
-
+The claim computes $80-30-20=30$ and forgets to add back the triple. So the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+At least two museums means the three pair-only regions plus the triple:
 
-At least two museums means the three exact-pair regions plus the triple:
+$$\\lvert A\\cap B\\setminus C\\rvert=20$$
 
-$$30 - 10 = 20, \\qquad 25 - 10 = 15, \\qquad 20 - 10 = 10$$
+$$\\lvert B\\cap C\\setminus A\\rvert=25-10=15$$
 
-$$20 + 15 + 10 + 10 = 55$$
+$$\\lvert A\\cap C\\setminus B\\rvert=20-10=10$$
 
-The claim is $65$.
+$$20+15+10+10=55$$
 
-So the statement is False.`
+The claim asserts $65$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 14,
@@ -1197,55 +1057,31 @@ Pair totals still include the triple, so an exact-pair region subtracts $10$. On
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Every even natural is a natural, so $E\\subseteq N$. Equality fails because $1\\in N$ and $1\\notin E$:
 
-Membership holds when the object appears among the set's listed elements.
+$$E\\subsetneq N$$
 
-Inspect the roster of $N$ for $1$:
-
-$$1\\in N$$
-
-The object is present, matching the claim.
-
-So the statement is True.`
-
+So $E$ is a proper subset of $N$. So the statement is True.`,
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+For infinite sets, a proper subset can have the same cardinality as the whole. The map $n\\mapsto 2n$ is a bijection $N\\to E$, so
 
-The overview recovered a bijection 
+$$\\lvert E\\rvert=\\lvert N\\rvert$$
 
-$$f(n)=2n$$
-
- from $N$ onto $E$, so $\\lvert E \\rvert = \\lvert N \\rvert$ even though $E$ is a proper subset of $N$. The finite-set slogan does not apply here.
-
-So the statement is False.`
-
+even though $E\\subsetneq N$. "Proper subset $\\Rightarrow$ strictly fewer" is a finite-set intuition. So the statement is False.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+The map $f(n)=2n$ sends naturals to even naturals:
 
-The formula 
+$$f(N)=\\{2,4,6,\\ldots\\}=E$$
 
-$$f(n)=2n$$
-
- always outputs an even integer, so its image is $E$, not the odd naturals. A bijection $N$ onto the odds would be $n\\mapsto 2n-1$. The claimed correspondence is the wrong codomain.
-
-So the statement is False.`
-
+not to the odds $\\{1,3,5,\\ldots\\}$. So $f$ is not a bijection onto the odds. So the statement is False.`,
       `**D.** → True
 
-Every positive even is a natural, but $1\\in N\\setminus E$, so $E\\subsetneq N$. The overview recovered $\\lvert E \\rvert = \\lvert N \\rvert$. Same cardinality with a proper subset is exactly why the finite-set slogan fails for infinite sets,
-
-So the statement is True.`
-
+We have both $E\\subsetneq N$ and a bijection $n\\mapsto 2n$ between them. That pair of facts is exactly the standard counterexample showing finite-set size intuition fails for infinite sets. So the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
-
-The set $E$ itself is an infinite subset of $N$ that is not equal to $N$, because $1\\in N\\setminus E$. So not every infinite subset of $N$ equals $N$.
-
-So the statement is False.`
+Many infinite subsets of $N$ are proper. The evens $E=\\{2,4,6,\\ldots\\}$ are infinite and miss $1$. So not every infinite subset equals $N$. So the statement is False.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 15,
@@ -1270,67 +1106,43 @@ A proper subset is a subset that is not equal to the whole. Two infinite sets ha
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Membership asks whether the number sits on the roster
 
-Membership holds when the object appears among the set's listed elements.
+$$A=\\{2,4,6,8,10,12\\}$$
 
-Inspect the roster of $A$ for $6$:
-
-$$6\\in A$$
-
-The object is present, matching the claim.
-
-So the statement is True.`
-
+Yes, $6$ is listed, so $6\\in A$. So the statement is True.`,
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+The elements of $A$ are numbers, not singletons. The object $\\{6\\}$ is a one-element set:
 
-The elements of $A$ are the six even numbers. The singleton $\\{6\\}$ is a set, not a number, so $\\{6\\}\\notin A$.
+$$\\{6\\}\\notin A$$
 
-So the statement is False.`
+even though $6\\in A$. (The singleton is a subset, hence sits in the power set.) So the statement is False.`,
+      `**C.** → True
 
-      `**C.** → False
+Subsethood asks whether every member of $\\{6,8\\}$ sits in $A$:
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+$$6\\in A,\\qquad 8\\in A$$
 
-A two-element set is a subset when each of its members sits in the larger set.
+so
 
-Check the two candidates against $A$:
+$$\\{6,8\\}\\subseteq A$$
 
-$$6\\in A$$
-
-$$8\\in A$$
-
-Hence
-
-$$\\{6,8\\}\\subseteq A$$.
-
-So the statement is False.`
-
+So the statement is True.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+The empty set has no member that could sit outside $A$:
 
-The empty set has no member that could sit outside $A$, so $\\emptyset\\subseteq A$.
+$$\\emptyset\\subseteq A$$
 
-So the statement is True.`
+always. So the statement is True.`,
+      `**E.** → True
 
-      `**E.** → False
+Total subsets: $2^{6}=64$. Proper subsets drop $A$ itself:
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+$$64-1=63$$
 
-An $n$-element set has $2^{n}$ subsets, so here
-
-$$2^{6} = 64$$
-
-Proper subsets exclude $A$ itself:
-
-$$64 - 1 = 63$$
-
-The claim is $63$.
-
-So the statement is False.`
+So $A$ has exactly $63$ proper subsets. So the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 16,
@@ -1355,77 +1167,57 @@ Membership $x\\in A$ asks whether $x$ is one of those six numbers. Inclusion $S\
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+The overview recovered $A=\\{2,3\\}$ and $B$ is given as $\\{2,3\\}$. The rosters match:
 
-The overview recovered 
+$$A=B$$
 
-$$A=\\{2,3\\}$$
+So the statement is True.`,
+      `**B.** → True
 
-. $B$ is given as $\\{2,3\\}$. The two rosters match.
+The overview recovered $A=\\{2,3\\}$. The integer $3$ sits on that roster:
 
-So the statement is True.`
+$$3\\in A$$
 
-      `**B.** → False
+So the statement is True.`,
+      `**C.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+The overview recovered $A=\\{2,3\\}$. The claim drops the root $3$:
 
-The overview recovered 
+$$3^{2}-5\\cdot 3+6=0,\\qquad 3\\in\\mathbb{Z}$$
 
-$$A=\\{2,3\\}$$
+so $3\\in A$. Then
 
-. The integer $3$ sits on that roster, so $3\\in A$.
+$$A=\\{2,3\\}\\ne\\{2\\}$$
 
-So the statement is False.`
-
-      `**C.** → True
-
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
-
-The overview recovered 
-
-$$A=\\{2,3\\}$$
-
-. The claim reprints $A$ as the singleton $\\{2\\}$ and drops $3$, even though $3$ is an integer root. The two sets are unequal.
-
-So the statement is True.`
-
+So the statement is False.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Two distinct integer roots were recovered:
 
-The overview recovered two distinct members, $2$ and $3$, so
+$$A=\\{2,3\\}$$
 
-$$\\lvert A \\rvert = 2$$
+$$\\lvert A\\rvert=2$$
 
-The claim is that same count.
-
-So the statement is True.`
-
+That matches the claim, so the statement is True.`,
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
-
-The same roots $2$ and $3$ must now pass $x\\in\\mathbb{N}$ and $x>2$. The root $2$ fails $x>2$. The root $3$ is natural and strictly larger than $2$, so
+Restrict to natural numbers with the extra filter $x>2$. The candidates from the quadratic are $2$ and $3$; only $3$ satisfies $x>2$:
 
 $$C=\\{3\\}$$
 
-The claim is that same singleton.
-
-So the statement is True.`
+That matches the claim, so the statement is True.`,
     ],
     difficulty_level: `3/5`,
     sort_order: 17,
-    solution_overview: `The set-builder $A=\\{x\\in\\mathbb{Z}:x^{2}-5x+6=0\\}$ keeps the integer solutions of the quadratic. $B$ is given as $\\{2,3\\}$.
+    solution_overview: `The set-builder $A=\\{x\\in\\mathbb{Z}:x^{2}-5x+6=0\\}$ keeps the integer solutions of the quadratic. Factoring gives
 
-A set-builder keeps those members of the named universe that satisfy the stated equation. Changing the universe, or adding an extra inequality, produces a different set.
+$$(x-2)(x-3)=0$$
 
-Factor the quadratic:
+so $x=2$ or $x=3$, both integers:
 
-$$x^{2} - 5x + 6 = (x-2)(x-3) = 0.$$
+$$A=\\{2,3\\}.$$
 
-The roots are $x=2$ and $x=3$. Both are integers, so
-
-$$A=\\{2,3\\}.$$`,
+$B$ is given as $\\{2,3\\}$. A set-builder keeps those members of the named universe that satisfy the stated condition.`,
   },
   {
     id: `math-1-18`,
@@ -1444,71 +1236,47 @@ $$A=\\{2,3\\}.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Four letters mean each is in or out independently:
 
-Each of the four letters can be kept or left out, so
+$$\\lvert\\mathcal{P}(D)\\rvert=2^{4}=16$$
 
-$$\\lvert \\mathcal{P}(D) \\rvert = 2^{4} = 16$$
-
-The claim is $16$.
-
-So the statement is True.`
-
+So the power set has $16$ elements. So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+A set belongs to the power set precisely when it is a subset of $D$. Check
 
-A two-element set is a subset when each of its members sits in the larger set.
+$$\\{w,x\\}\\subseteq\\{w,x,y,z\\}$$
 
-Check the two candidates against $D$:
+Yes, so
 
-$$w\\in D$$
+$$\\{w,x\\}\\in\\mathcal{P}(D)$$
 
-$$x\\in D$$
-
-Hence
-
-$$\\{w,x\\}\\subseteq D$$.
-
-So the statement is True.`
-
+So the statement is True.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Three-element subsets of a four-element set:
 
-Choosing $3$ letters out of $4$ is choosing which one letter to omit:
+$$\\binom{4}{3}=4$$
 
-$$\\binom{4}{3} = 4$$
-
-The claim is $4$.
-
-So the statement is True.`
-
+The four subsets are the ways to leave out exactly one letter. So the statement is True.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
-
-Every set is a subset of itself, so 
+Every set is a subset of itself:
 
 $$D\\subseteq D$$
 
-. Therefore 
+hence
 
-$$D\\in\\mathcal{P}(D)$$.
+$$D\\in\\mathcal{P}(D)$$
 
-So the statement is True.`
-
+So the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Two-element subsets:
 
-The number of $2$-element subsets of a $4$-element set is
+$$\\binom{4}{2}=6$$
 
-$$\\binom{4}{2} = 6$$
-
-The claim is $5$.
-
-So the statement is False.`
+not $5$. So the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -1533,73 +1301,39 @@ A set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts u
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$:
 
-Membership holds when the object appears among the set's listed elements.
+$$1\\in F,\\ 2\\in F,\\ 3\\in F$$
 
-Inspect the roster of $F$ for $3$:
-
-$$3\\in F$$
-
-The object is present, matching the claim.
-
-So the statement is True.`
-
+so $E\\subseteq F$. So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Ordinary inclusion $E\\subseteq F$ holds, and the sets differ because $4\\in F$ while $4\\notin E$:
 
-Membership holds when the object appears among the set's listed elements.
+$$E\\subsetneq F$$
 
-Inspect the roster of $F$ for $3$:
+So $E$ is a proper subset of $F$. So the statement is True.`,
+      `**C.** → False
 
-$$3\\in F$$
+Subsethood $F\\subseteq E$ would require $4\\in E$. But
 
-The object is present, matching the claim.
+$$4\\notin\\{1,2,3\\}$$
 
-So the statement is True.`
-
-      `**C.** → True
-
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
-
-Membership holds when the object appears among the set's listed elements.
-
-Inspect the roster of $F$ for $4$:
-
-$$4\\in F$$
-
-The object is present, matching the claim.
-
-So the statement is True.`
-
+so $F\\not\\subseteq E$. So the statement is False.`,
       `**D.** → True
 
-Subset is reflexive: every set is a subset of itself because each of its members sits in it.
-
-Take an arbitrary element $x\\in E$. By definition of membership in $E$,
-
-$$x\\in E$$
-
-so the subset test passes for every $x$. Hence
+Inclusion is reflexive: every member of $E$ sits in $E$:
 
 $$E\\subseteq E$$
 
-Matching the claim,
-
-So the statement is True.`
-
+So the statement is True.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Proper inclusion also needs $E\\neq E$, which is impossible:
 
-Proper inclusion needs 
+$$E\\subsetneq E$$
 
-$$E\\subseteq E$$
-
- and $E\\ne E$. The inequality $E\\ne E$ is impossible, so $E$ is not a proper subset of $E$.
-
-So the statement is False.`
+fails. So the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -1624,49 +1358,35 @@ Ordinary inclusion $X\\subseteq Y$ asks whether every member of $X$ sits in $Y$.
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Check pairwise intersections of the blocks of $\\mathcal{S}$:
 
-The three blocks occupy $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ with no shared integers, so they are pairwise disjoint.
+$$\\{1,2\\}\\cap\\{3,4\\}=\\emptyset$$
 
-So the statement is True.`
+$$\\{1,2\\}\\cap\\{5,6\\}=\\emptyset$$
 
+$$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$
+
+All three are empty, so the blocks are pairwise disjoint. So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+The union of the three blocks is
 
-The union of the blocks is
+$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}=G$$
 
-$$\\{1,2\\} \\cup \\{3,4\\} \\cup \\{5,6\\} = \\{1,2,3,4,5,6\\} = G$$.
+So the union equals $G$. So the statement is True.`,
+      `**C.** → True
 
-So the statement is True.`
+A partition needs nonempty pairwise-disjoint blocks whose union is $G$. The blocks are nonempty, pairwise disjoint (A), and cover $G$ (B). Therefore $\\mathcal{S}$ partitions $G$. So the statement is True.`,
+      `**D.** → False
 
-      `**C.** → False
+In $\\mathcal{S}'$ the first two blocks overlap:
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+$$\\{1,2\\}\\cap\\{2,3,4\\}=\\{2\\}\\neq\\emptyset$$
 
-The blocks $\\{1,2\\}$, $\\{3,4\\}$, and $\\{5,6\\}$ are nonempty and pairwise disjoint, and their union is $G$. Those are the three partition checks, so $\\mathcal{S}$ is a partition of $G$.
-
-So the statement is False.`
-
-      `**D.** → True
-
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
-
-The first two blocks of $\\mathcal{S}'$ both contain $2$:
-
-$$\\{1,2\\} \\cap \\{2,3,4\\} = \\{2\\}$$
-
-The overlap is nonempty, so $\\mathcal{S}'$ is not a partition.
-
-So the statement is True.`
-
+Pairwise disjointness fails, so $\\mathcal{S}'$ is not a partition. So the statement is False.`,
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
-
-The replacement block $\\{5,6,7\\}$ contains $7$, and $7\\notin G$. A partition of $G$ cannot use a block that fails to be a subset of $G$.
-
-So the statement is False.`
+Replacing $\\{5,6\\}$ with $\\{5,6,7\\}$ introduces $7\\notin G$. A partition's blocks must be subsets of $G$, and the union would no longer equal $G$ alone as the ambient set. So the modified collection is not a partition of $G$. So the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 20,
@@ -1691,45 +1411,37 @@ A partition needs pairwise disjoint nonempty blocks whose union is $G$, and thos
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Every positive even integer is a natural number:
 
-Subsethood only requires that every member of $H$ already sit in $\\mathbb{N}$. Each positive even is $2k$ for some integer $k\\ge 1$, hence a natural number. There is no positive even outside $\\mathbb{N}$.
+$$H=\\{2,4,6,\\ldots\\}\\subseteq\\{1,2,3,\\ldots\\}=\\mathbb{N}$$
 
-So the statement is True.`
-
+So $H\\subseteq\\mathbb{N}$. So the statement is True.`,
       `**B.** → False
 
-A finite set of positive evens would have a largest member $2N$. Then $2(N+1)$ is still even and strictly larger:
-
-$$2(N+1)=2N+2>2N$$
-
-so it would also sit in $H$. The roster $2,4,6,\\ldots$ never ends, so $H$ is infinite. Being a subset of $\\mathbb{N}$ does not make $H$ finite,
-
-So the statement is False.`
-
+$H$ contains infinitely many distinct elements $2,4,6,\\ldots$ with no last term. An infinite listing is not a finite set. So the statement is False.`,
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+Equality fails because odd naturals sit in $\\mathbb{N}$ but not in $H$:
 
-Equality of sets needs the same members. The overview already has the leftover 
+$$1\\in\\mathbb{N},\\qquad 1\\notin H$$
 
-$$1\\in\\mathbb{N}\\setminus H$$
-
-. That one odd already forces $H\\neq\\mathbb{N}$.
-
-So the statement is False.`
-
+so $H\\neq\\mathbb{N}$. So the statement is False.`,
       `**D.** → True
 
-The overview's map $f(n)=2n$ is one-to-one because $2n=2m$ forces $n=m$. It is onto $H$ because every positive even $2k$ equals $f(k)$. That is a bijection $\\mathbb{N}\\to H$, which is what pairing every natural with exactly one even (and vice versa) means,
+Define $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Every natural maps to a unique even, and every even $2k$ is $f(k)$:
 
-So the statement is True.`
+$$f(n)=f(m)\\implies 2n=2m\\implies n=m$$
 
+$$h=2k\\in H\\implies f(k)=h$$
+
+so $f$ is a bijection. So the statement is True.`,
       `**E.** → False
 
-The overview already has the leftover $1\\in\\mathbb{N}\\setminus H$, so the inclusion is proper: $H\\subsetneq\\mathbb{N}$. The same bijection $f(n)=2n$ still pairs the two sets, so they have the same cardinality. For infinite sets, a proper subset need not be strictly smaller. The claim treats a finite-set slogan as a law,
+Proper inclusion $H\\subsetneq\\mathbb{N}$ holds, but the bijection $n\\mapsto 2n$ shows
 
-So the statement is False.`
+$$\\lvert H\\rvert=\\lvert\\mathbb{N}\\rvert$$
+
+"Proper subset $\\Rightarrow$ strictly fewer" fails for infinite sets. So the statement is False.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 21,
@@ -1762,61 +1474,43 @@ sends each natural to an even. Odd $1$ sits in $\\mathbb{N}$ and misses $H$.`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+The roster lists two objects:
 
-Membership 
+$$K=\\{a,\\{a\\}\\}$$
+
+The bare object $a$ is the first listed member, so
 
 $$a\\in K$$
 
- asks whether the unwrapped object $a$ is on the roster of $K$. The first listed object is exactly $a$, so $a\\in K$.
-
-So the statement is True.`
-
+So the statement is True.`,
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
-
-The second listed object is the singleton $\\{a\\}$ itself, so 
+The second listed member is the singleton set $\\{a\\}$:
 
 $$\\{a\\}\\in K$$
 
-. That is membership of a set-object, not subsethood. Braces matter: $\\{a\\}$ is not the same object as $a$.
-
-So the statement is True.`
-
+Membership holds because that set appears as an element of the roster. So the statement is True.`,
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
-
-Subsethood 
+Subsethood asks whether every member of $\\{a\\}$ sits in $K$. The only member is $a$, and $a\\in K$, so
 
 $$\\{a\\}\\subseteq K$$
 
- asks whether the only member of $\\{a\\}$, namely $a$, sits in $K$. The roster of $K$ begins with $a$, so $a\\in K$ and the singleton is a subset.
-
-So the statement is True.`
-
+So the statement is True.`,
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+The singleton $\\{\\{a\\}\\}$ has one member, namely the set $\\{a\\}$. That member sits in $K$:
 
-Subsethood 
+$$\\{a\\}\\in K\\implies\\{\\{a\\}\\}\\subseteq K$$
 
-$$\\{\\{a\\}\\}\\subseteq K$$
-
- asks whether the only member of $\\{\\{a\\}\\}$, namely $\\{a\\}$, sits in $K$. The second listed object of $K$ is $\\{a\\}$, so $\\{a\\}\\in K$ and the test succeeds.
-
-So the statement is True.`
-
+So the statement is True.`,
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+The two listed objects $a$ and $\\{a\\}$ are distinct (an element versus a set containing it):
 
-The two listed objects are distinct: an element and a one-element set containing that element. Two distinct members give
+$$\\lvert K\\rvert=2$$
 
-$$\\lvert K\\rvert=2,$$.
-
-So the statement is True.`
+So the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 22,
@@ -1936,7 +1630,7 @@ $$(A\\cup B)^c=A^c\\cap B^c,\\qquad (A\\cap B)^c=A^c\\cup B^c.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 The overview already counted 
 
@@ -1948,7 +1642,7 @@ So the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Membership in $A\\times B$ is a two-slot test. For $(2,x)$ the first slot $2$ sits in $A=\\{1,2\\}$ and the second slot $x$ sits in $B=\\{x,y,z\\}$. Both tests succeed, so $(2,x)\\in A\\times B$.
 
@@ -1956,7 +1650,7 @@ So the statement is True.`
 
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 The pair $(x,2)$ puts a letter in the first slot, and $x\\notin A$. Ordered pairs treat $(2,x)$ and $(x,2)$ as different objects; the second lives in $B\\times A$, not in $A\\times B$. The first slot already fails.
 
@@ -1964,7 +1658,7 @@ So the statement is False.`
 
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 Set equality needs identical members, not identical counts. The pair $(2,x)$ sits in $A\\times B$, but $2\\notin B$, so that pair cannot sit in $B\\times A$. One missing witness already forces $A\\times B\\neq B\\times A$.
 
@@ -1972,7 +1666,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Size ignores order. The reverse product is
 
@@ -2094,7 +1788,7 @@ So the statement is False.`
 
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 Symmetric difference excludes the overlap. The overview listed 
 
@@ -2280,7 +1974,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Frost-safe yet dry is the leftover 
 
@@ -2392,7 +2086,7 @@ A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Union keeps every member of each input, repeats written once. From $A$ keep $1,2,3,4$; from $B$ add the newcomers $5,6$:
 
@@ -2404,7 +2098,7 @@ So the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Intersection keeps only the shared numbers. The overview's scan left $3$ and $4$ in both lists, while $1,2$ miss $B$ and $5,6$ miss $A$, so
 
@@ -2426,7 +2120,7 @@ So the statement is True.`
 
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 The opposite leftover lives inside $B$:
 
@@ -2438,7 +2132,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Disjointness means the intersection is empty. None of $7,8,9$ appears in $\\{1,2,3,4\\}$, so
 
@@ -2560,7 +2254,7 @@ Intersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged 
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Putting $A$ and $B$ together keeps $a,b,c,d$ from $A$ and the newcomer $e$ from $B$. The shared $c$ and $d$ are not written twice:
 
@@ -2582,7 +2276,7 @@ So the statement is True.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 Difference $A\\setminus B$ keeps $A$'s private letters. Letters $c$ and $d$ sit in $B$, so they leave:
 
@@ -2594,7 +2288,7 @@ So the statement is True.`
 
       `**D.** → False
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 The opposite leftover is the singleton 
 
@@ -2610,7 +2304,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 $C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so
 
@@ -2736,7 +2430,7 @@ $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Odds union evens reconstructs all of $U$, so $A\\cup B=U$ and
 
@@ -2758,7 +2452,7 @@ So the statement is True.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 $$A\\cap B=\\emptyset$$
 
@@ -2772,7 +2466,7 @@ So the statement is True.`
 
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 Deleting the odds from $U$ leaves the evens, so
 
@@ -2894,7 +2588,7 @@ $$A\\cup B=\\{p,q,r,s\\},\\qquad A\\cap B=\\{r\\},\\qquad A^c=\\{s,t,u\\},\\qqua
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 The overview already counted 
 
@@ -2906,7 +2600,7 @@ So the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 The pair $(1,x)$ has first slot from $A$ and second from $B$, so both membership tests succeed. Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects; this letter is the number-first pair, so $(1,x)\\in A\\times B$.
 
@@ -2914,7 +2608,7 @@ So the statement is True.`
 
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 The pair $(x,1)$ has a letter in the first slot, and $x\\notin A$. The first slot already fails, so the pair is out of $A\\times B$ (it does sit in $B\\times A$). Ordered pairs treat $(1,x)$ and $(x,1)$ as different objects.
 
@@ -2928,7 +2622,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Size ignores order: $2\\cdot 3=6$ and $3\\cdot 2=6$. Both products hold six pairs even though the pairs themselves differ:
 
@@ -3042,7 +2736,7 @@ $$\\lvert A\\times B\\rvert=3\\cdot 2=6.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Shared $3,5,7$ leave $A$; $1$ and $9$ stay because they miss $B$. The overview already placed those two in the $A$-only bucket, so $A\\setminus B=\\{1,9\\}$. The claimed leftover matches.
 
@@ -3200,7 +2894,7 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. The overview already recovered 
 
@@ -3212,7 +2906,7 @@ So the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Chess-only is the chess headline minus the overlap:
 
@@ -3224,7 +2918,7 @@ So the statement is True.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 Neither is the club total minus the union. The overview recovered the union $31$, so
 
@@ -3281,15 +2975,11 @@ Chess-only is the chess headline minus the overlap; checkers-only is the checker
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
-
 The overview already recovered the shared figure
 
 $$|A\\cup B|=50$$
 
-The claim asserts that same value. Comparing the two sides.
-
-So the statement is True.`
+The claim asserts that same value. Comparing the two sides, so the statement is True.`
 
       `**B.** → True
 
@@ -3366,19 +3056,15 @@ Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is th
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
-
 The overview already recovered the shared figure
 
 $$|A\\cup B|=33$$
 
-The claim asserts that same value. Comparing the two sides.
-
-So the statement is True.`
+The claim asserts that same value. Comparing the two sides, so the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Pool-only peels the overlap out of $A$:
 
@@ -3390,7 +3076,7 @@ So the statement is True.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 Neither is the leftover outside the union. The overview recovered $|A\\cup B|=33$, and the gym has $50$ members:
 
@@ -3412,7 +3098,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Sauna-only peels the overlap out of $B$:
 
@@ -3451,15 +3137,11 @@ Pool-only is $|A|-|A\\cap B|$. Sauna-only is $|B|-|A\\cap B|$. Neither is member
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
-
 The overview already recovered the shared figure
 
 $$|A\\cup B\\cup C|=53$$
 
-The claim asserts that same value. Comparing the two sides.
-
-So the statement is True.`
+The claim asserts that same value. Comparing the two sides, so the statement is True.`
 
       `**B.** → True
 
@@ -3542,7 +3224,7 @@ An exact-pair region is the pairwise total minus the triple. The triple group si
     tactical_explanations: [
       `**A.** → False
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Conjunction is true only when both inputs are true. The overview recovered $P$ true and $Q$ false, so
 
@@ -3554,7 +3236,7 @@ So the statement is False.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Inclusive or is true when at least one input is true. The overview recovered $P$ true and $Q$ false, so
 
@@ -3977,7 +3659,7 @@ So the statement is False.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 A counterexample to $Q\\Rightarrow P$ must satisfy $Q\\land\\neg P$. For $x=7$,
 
@@ -4125,7 +3807,7 @@ So $R$ is necessary for approval; the reverse arrow $R\\Rightarrow L$ is not in 
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Negating a universal produces an existential of the negated predicate. The inequality $\\ge$ flips to $<$:
 
@@ -4165,7 +3847,7 @@ So the statement is True.`
 
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 Because $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every $x>0$:
 
@@ -4177,7 +3859,7 @@ So the statement is True.`
 
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 Now a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered,
 
@@ -4313,7 +3995,7 @@ Patient R holds the diagnosis. Patient S has A but not B.`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 An existential claim is proved by one witness in the stated universe. Choose $x=15$, which lies in $\\{1,\\ldots,20\\}$:
 
@@ -4335,7 +4017,7 @@ So the statement is True.`
 
       `**C.** → False
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 A universal implication is disproved by one value with a true hypothesis and false conclusion. Choose $x=2$, which lies in the universe:
 
@@ -4706,7 +4388,7 @@ So the statement is True.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Adding $40$ and $35$ counts the $15$ both-buyers twice, so subtract them once:
 
@@ -4718,7 +4400,7 @@ So the statement is True.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 Exclusive or keeps only the two outer regions. X-only is $40-15=25$ and Y-only is $35-15=20$, so
 
@@ -5490,7 +5172,7 @@ So the statement is False.`
 
       `**B.** → True
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 “A sufficient condition for unemployment to decrease is that inflation increases” makes $P$ sufficient for $Q$:
 
@@ -5524,7 +5206,7 @@ So the statement is False.`
 
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 “If unemployment does not decrease, then inflation does not increase” is
 
@@ -5536,7 +5218,7 @@ So the statement is True.`
 
       `**E.** → True
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 “A necessary condition for inflation to increase is that unemployment decreases” makes $Q$ necessary for $P$, which is
 
@@ -5896,7 +5578,7 @@ The second pair need not share a truth value with the clause. The antecedent of 
     tactical_explanations: [
       `**A.** → False
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Student M has GPA $3.7$, so $G$ is true, $50$ credits, so $C$ is false, and no waiver, so $W$ is false. Then
 
@@ -5958,7 +5640,7 @@ So the statement is False.`
 
       `**E.** → False
 
-Apply the counting rule once, substitute the given size, and compare with the claimed figure.
+Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.
 
 If GPA is below $3.5$, then $G$ is false. For any $C$ and $W$,
 
@@ -6295,7 +5977,7 @@ to the conclusion $P$. That form is affirming the consequent. The premise licens
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 Both $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and
 
@@ -7076,7 +6758,7 @@ and that $n$ is legal only when $m$ divides $100$. Negation flips each quantifie
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 This is direct use of a premise, not a derived guess. With $D$ meaning “Dan is guilty,” clue (3) is simply
 
@@ -7791,7 +7473,7 @@ In the reported game Player X scored $35$ and the team lost $90$-$95$.`,
     tactical_explanations: [
       `**A.** → True
 
-Read the claim against the definition, then check membership or equality one object at a time.
+Start from the recovered overview figure and do only the extra check this claim needs.
 
 The professor applied a curve, so the live cutoff is $s \\ge 60$. Student W scored $65$, and
 
@@ -7803,7 +7485,7 @@ So the statement is True.`
 
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 Without a curve the live cutoff is $s \\ge 70$. Student W scored $65$, and
 
@@ -7815,7 +7497,7 @@ So the statement is False.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 The baseline uses $70$. The curve replaces it with $60$. Compare:
 
@@ -7827,7 +7509,7 @@ So the statement is True.`
 
       `**D.** → True
 
-Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.
+Clear the set-builder condition against the stated universe before comparing rosters.
 
 A score of $62$ satisfies $60 \\le 62 < 70$. Under a curve the cutoff is $60$, so $62 \\ge 60$ earns the B. Without a curve the cutoff is $70$, so $62 < 70$ denies it. The B at $62$ occurs only if the curve is applied.
 
@@ -7972,7 +7654,7 @@ So the statement is True.`
 
       `**B.** → False
 
-Name the set operation in force, form the resulting roster, and compare it with the printed set.
+Expand the logical connective from its truth table before judging the printed formula.
 
 K cancelled $2$ days out, so the late branch applies. A partial refund is issued if and only if $u < 10\\%$. K used $15\\%$, and
 
@@ -7984,7 +7666,7 @@ So the statement is False.`
 
       `**C.** → True
 
-Translate the propositional claim into truth conditions before testing a row or an equivalence.
+List the relevant elements explicitly, then decide membership, subset, or equality.
 
 K still cancelled $2$ days out, so the late branch still applies. Change only the usage to $5\\%$. Then
 
