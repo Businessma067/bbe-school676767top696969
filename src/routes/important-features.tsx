@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Lock } from "lucide-react";
 import { AnswerSheetPreviewFill } from "@/components/AnswerSheetPreview";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -98,13 +98,13 @@ function FeatureCard({ feature }: { feature: Feature }) {
         <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
 
         <div className="mt-auto flex flex-col items-start gap-2 pt-2">
-          <Link
+          <LocalizedLink
             to={feature.to}
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground transition-colors hover:text-primary"
           >
             View More
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </Link>
+          </LocalizedLink>
 
           <div className="flex flex-wrap gap-1.5">
             {feature.tags.map((tag) => (

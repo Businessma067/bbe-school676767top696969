@@ -72,6 +72,35 @@ export function isLocalizablePath(pathname: string): pathname is LocalizablePath
 }
 
 /**
+ * Course study surfaces that must stay in English (exam content + study tools).
+ * Marketing pages like `/products/full-course` are not included.
+ */
+export const STUDY_CONTENT_PATH_PREFIXES = [
+  "/products/full-course-subjects",
+  "/products/full-course-math",
+  "/products/full-course-english",
+  "/products/full-course-economics",
+  "/products/lite-bbe-course-subjects",
+  "/products/lite-bbe-course-math",
+  "/products/lite-bbe-course-english",
+  "/products/lite-bbe-course-economics",
+  "/products/custom-mock-builder",
+  "/mock-exams",
+  "/flashcards",
+  "/matching",
+  "/tutor-exam",
+  "/practice",
+] as const;
+
+/** True for full/lite course study, games, mock builder, and mock exams. */
+export function isStudyContentPath(pathname: string): boolean {
+  const path = stripLocalePrefix(pathname);
+  return STUDY_CONTENT_PATH_PREFIXES.some(
+    (prefix) => path === prefix || path.startsWith(`${prefix}/`),
+  );
+}
+
+/**
  * Map a path to the URL for a given language.
  * Non-localizable paths (subject practice, admin, etc.) stay unprefixed.
  */

@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { useRouterState } from "@tanstack/react-router";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
+import { isStudyContentPath } from "@/lib/i18n/locale-path";
 
 const SKIP_TAGS = new Set([
   "SCRIPT",
@@ -17,9 +19,14 @@ const SKIP_TAGS = new Set([
  * Translates rendered marketing copy in place. English is the source of
  * truth: originals are cached per text node (across language changes) and
  * restored when switching back to English or re-translated into DE/UK.
+ *
+ * Study surfaces (full/lite course, games, mock builder, mock exams) always
+ * stay in English so exam content is never rewritten.
  */
 export function PageTranslator() {
   const { lang } = useLanguage();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const effectiveLang = isStudyContentPath(pathname) ? "en" : lang;
   // Persist across lang changes so DE↔UK can re-translate from English,
   // not from already-translated DOM text.
   const originalsRef = useRef(new WeakMap<Text, string>());
@@ -59,7 +66,8 @@ export function PageTranslator() {
           originals.set(node, source);
         }
 
-        const next = lang === "en" ? source : (translate(source, lang) ?? source);
+        const next =
+          effectiveLang === "en" ? source : (translate(source, effectiveLang) ?? source);
         if (next !== value) node.nodeValue = next;
       }
     };
@@ -83,7 +91,7 @@ export function PageTranslator() {
     });
 
     return () => observer.disconnect();
-  }, [lang]);
+  }, [effectiveLang]);
 
   return null;
 }
