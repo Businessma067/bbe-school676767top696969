@@ -2186,7 +2186,7 @@ function DiffFExtrema() {
       <SvgHaloText x={300} y={252} fontSize={12} fill={INK} anchor="middle">
         local min
       </SvgHaloText>
-      <SvgHaloText x={255} y={92} fontSize={11} fill={MUTED} anchor="middle">
+      <SvgHaloText x={280} y={110} fontSize={11} fill={MUTED} anchor="middle">
         inflection
       </SvgHaloText>
       <text x="175" y="280" fontSize="12" fill={MUTED}>
@@ -2234,7 +2234,7 @@ function DiffMcMr() {
               fill="#fff"
               stroke={ACCENT}
               strokeWidth={2}
-              label={haloDotLabel("MR = MC", { dx: -56, dy: -30 })}
+              label={haloDotLabel("MR = MC", { dx: -70, dy: -38 })}
             />
             <Legend {...LEGEND_TOP} />
           </LineChart>
@@ -2282,7 +2282,7 @@ function DiffAcMc() {
               fill="#fff"
               stroke={ACCENT}
               strokeWidth={2}
-              label={haloDotLabel("AC min", { dx: -36, dy: -32 })}
+              label={haloDotLabel("AC min", { dx: -40, dy: -42 })}
             />
             <Legend {...LEGEND_TOP} />
           </LineChart>
