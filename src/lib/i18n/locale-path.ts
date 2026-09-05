@@ -6,7 +6,8 @@ export type LocalePrefix = (typeof LOCALE_PREFIXES)[number];
 
 const LOCALE_SET = new Set<string>(LOCALE_PREFIXES);
 
-/** Marketing / SEO / app chrome pages that have dedicated DE and UK URLs. */
+/** Marketing / SEO / app chrome pages that have dedicated DE and UK URLs.
+ *  Public entries here are included in the generated sitemap automatically. */
 export const LOCALIZABLE_PATHS = [
   "/",
   "/bbe-entrance-exam",
