@@ -22,6 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+from common import statements_are_independent  # noqa: E402
 from s21 import TASKS as T21  # noqa: E402
 from s22 import TASKS as T22  # noqa: E402
 from s23 import TASKS as T23  # noqa: E402
@@ -257,20 +258,6 @@ def format_ch13_explanation(i: int, truth: bool, raw: str, style: str) -> str:
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
     body = finish(body, verdict, style)
     return f"**{letter}.** → {verdict}\n\n{body}"
-
-
-def statements_are_independent(context: str) -> bool:
-    """True when there is no shared stem condition — only a domain prompt.
-
-    In that case ``solution_overview`` must stay empty; each claim’s reasoning
-    lives entirely in its tactical explanation.
-    """
-    ctx = (context or "").strip()
-    if re.match(r"^Evaluate each statement\.?\s*Mark it TRUE or FALSE\.?\s*$", ctx, re.I):
-        return True
-    if ctx.startswith("Let $") and "Which of the following" in ctx:
-        return True
-    return False
 
 
 def bind_explanations(task: dict) -> dict:

@@ -653,8 +653,6 @@ The claimed fraction is upside down. Verdict: **False**.
 
 ### Frequent False slogans (checklist)
 
-In the tables below, absolute values are written with `\lvert … \rvert` so the `|` character cannot break the table columns.
-
 | Slogan | Why it fails |
 | --- | --- |
 | $(a+b)^2 = a^2 + b^2$ | Missing $2ab$. |
@@ -669,122 +667,286 @@ In the tables below, absolute values are written with `\lvert … \rvert` so the
 
 ## 2.6 Exam-style tasks with full solutions
 
-The Chapter 2 bank uses five independent True/False claims. Work each claim alone. Below are four short exam-style tasks with every verdict explained.
+Subsection 2.5 on the site mixes several algebra skills in one stem, then asks five independent True/False claims. The three tasks below follow that exam format. Each claim is judged alone. The worked solutions use the same rhythm as the practice bank: name the rule, write the algebra, then give the verdict.
 
-### Exam task 1 — Expanding and identities
+### Exam task 1 — Mixed identities, radicals, and absolute value
 
-Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?
+Evaluate each statement. Mark it True or False.
 
-**A.** $(a+b)^2 = a^2 + 2ab + b^2$ for every real pair $(a,b)$.
+**A.** For $u>0$ and $v>0$, it holds that $\left(u^{2}v\right)^{3}=u^{6}v^{3}$.
 
-**B.** $(a-b)^2 = a^2 - b^2$ for every real pair $(a,b)$.
+**B.** If $a+b+c=0$ and $abc\neq 0$, then $\dfrac{1}{ab}+\dfrac{1}{bc}+\dfrac{1}{ca}=0$.
 
-**C.** $a^2 - b^2 = (a-b)(a+b)$ for every real pair $(a,b)$.
+**C.** For $x\ge 0$, it holds that $\sqrt{x}+\sqrt{x+2\sqrt{x}+1}=2\sqrt{x}+1$.
 
-**D.** $(2a)^2 = 2a^2$ for every real $a$.
+**D.** For real $x$, the inequality $\lvert 2x-1\rvert<3$ is equivalent to the open interval $-1<x<2$.
 
-**E.** $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$ for every real pair $(a,b)$.
+**E.** For every positive integer $n$, the polynomial $u^{n}-1$ is divisible by $u-1$.
 
-**Solution.**
+**Complete solution.**
 
-- **A True.** This is the square-of-a-sum identity. Expand: $(a+b)^2 = a^2 + 2ab + b^2$.
-- **B False.** Expand correctly: $(a-b)^2 = a^2 - 2ab + b^2$. The claim drops $-2ab$ and also confuses the square with a difference of squares. Counter-example: $a=2$, $b=1$ gives left side $1$ and right side $3$.
-- **C True.** Difference of squares.
-- **D False.** $(2a)^2 = 4a^2$, not $2a^2$. Counter-example: $a=1$ gives $4$ versus $2$.
-- **E True.** Difference-of-cubes factorisation.
+**A.** → True
 
-**Answers:** A True, B False, C True, D False, E True.
+Distribute an outer exponent across a product, then multiply exponents on matching bases.
 
-### Exam task 2 — Rational expressions and domain
-
-Let $x$ be a real number with $x\neq 4$. Define
+Start from $\left(u^{2}v\right)^{3}$ with $u,v>0$:
 
 $$
-R(x) = \frac{x^2 - 16}{x - 4}.
+\left(u^{2}v\right)^{3}=(u^{2})^{3}\,v^{3}=u^{6}v^{3}.
 $$
+
+The exponents on $u$ multiply as $2\cdot 3=6$, and the factor $v$ contributes $v^{3}$. That matches the claim.
+
+**B.** → True
+
+Clear a common denominator and use the hypothesis that the sum of the variables is zero.
+
+$$
+\frac{1}{ab}+\frac{1}{bc}+\frac{1}{ca}
+=\frac{c+a+b}{abc}
+=\frac{a+b+c}{abc}.
+$$
+
+The numerator vanishes by hypothesis, so the sum is $0$.
+
+**C.** → True
+
+Complete the square under the radical before taking the principal square root.
+
+For $x\ge 0$,
+
+$$
+x+2\sqrt{x}+1=(\sqrt{x}+1)^{2},
+$$
+
+so
+
+$$
+\sqrt{x+2\sqrt{x}+1}=\sqrt{x}+1.
+$$
+
+Add $\sqrt{x}$:
+
+$$
+\sqrt{x}+\sqrt{x+2\sqrt{x}+1}=2\sqrt{x}+1.
+$$
+
+**D.** → True
+
+Rewrite the absolute-value inequality as a two-sided bound, then isolate $x$.
+
+$$
+\lvert 2x-1\rvert<3
+\quad\Longleftrightarrow\quad
+-3<2x-1<3.
+$$
+
+Add $1$ throughout:
+
+$$
+-2<2x<4.
+$$
+
+Divide by the positive coefficient $2$:
+
+$$
+-1<x<2.
+$$
+
+That open interval is exactly the claimed solution set.
+
+**E.** → True
+
+Factor $u^{n}-1$ by the geometric-sum identity (or apply the factor theorem at $u=1$).
+
+For every positive integer $n$,
+
+$$
+u^{n}-1=(u-1)\bigl(u^{n-1}+u^{n-2}+\cdots+u+1\bigr).
+$$
+
+The second factor is a polynomial, so $u-1$ divides $u^{n}-1$. Equivalently, substituting $u=1$ gives $1^{n}-1=0$, and the factor theorem yields the same conclusion.
+
+**Answers:** A True, B True, C True, D True, E True.
+
+### Exam task 2 — Symmetric archive data
+
+An algebra archive stores two real numbers $a$ and $b$ only through the records $a+b=11$ and $ab=18$. The original order was not recorded, so every conclusion must follow from symmetric identities or from the quadratic having roots $a$ and $b$.
 
 Which of the following statements is/are correct?
 
-**A.** $R(x) = x + 4$ for every $x\neq 4$.
+**A.** $a^{2}+b^{2}=85$.
 
-**B.** $R(4) = 8$.
+**B.** $(a-b)^{2}=49$.
 
-**C.** For $x\neq 0$ and $x\neq -1$, $\dfrac{1}{x} + \dfrac{1}{x+1} = \dfrac{2x+1}{x(x+1)}$.
+**C.** $a^{3}+b^{3}=738$.
 
-**D.** For $m,n\neq 0$, $\dfrac{1}{m} + \dfrac{1}{n} = \dfrac{1}{m+n}$.
+**D.** $\{a,b\}=\{2,9\}$.
 
-**E.** For $t\neq 2$, $\dfrac{t^2 - 4}{t - 2} = t + 2$.
+**E.** $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{18}{11}$.
 
-**Solution.**
+**Complete solution.**
 
-- **A True.** Factor $x^2-16=(x-4)(x+4)$ and cancel $x-4$ on the stated domain.
-- **B False.** $x=4$ is excluded from the domain of $R$, so $R(4)$ is undefined. You may not plug the cancelled hole back into the simplified formula.
-- **C True.** Common denominator $x(x+1)$ gives $\dfrac{x+1+x}{x(x+1)} = \dfrac{2x+1}{x(x+1)}$.
-- **D False.** The correct sum is $\dfrac{m+n}{mn}$. Counter-example: $m=n=1$ gives left side $2$ and right side $\tfrac12$.
-- **E True.** Same cancellation pattern as A, now with $t^2-4=(t-2)(t+2)$.
+Standing identities for this stem:
 
-**Answers:** A True, B False, C True, D False, E True.
+$$
+a^{2}+b^{2}=(a+b)^{2}-2ab,
+\qquad
+(a-b)^{2}=(a+b)^{2}-4ab,
+$$
 
-### Exam task 3 — Powers and roots
+$$
+a^{3}+b^{3}=(a+b)^{3}-3ab(a+b),
+\qquad
+\frac{1}{a}+\frac{1}{b}=\frac{a+b}{ab}.
+$$
 
-Let $u>0$. Which of the following statements is/are correct?
+**A.** → True
 
-**A.** $(u^3)^4 = u^{12}$.
+Sum of squares follows from the square of the sum after the mixed product is removed.
 
-**B.** $(u^3)^4 = u^{7}$.
+$$
+a^{2}+b^{2}=(a+b)^{2}-2ab=11^{2}-2\cdot 18=121-36=85.
+$$
 
-**C.** $\sqrt{u}\cdot\sqrt{u} = u$.
+**B.** → True
 
-**D.** $\sqrt{u}\cdot\sqrt{u} = \sqrt{2u}$.
+The squared gap is another elementary identity in $a+b$ and $ab$.
 
-**E.** $\dfrac{u^{-2}}{u^{3}} = u^{-5}$.
+$$
+(a-b)^{2}=(a+b)^{2}-4ab=121-72=49.
+$$
 
-**Solution.**
+**C.** → False
 
-- **A True.** Power of a power multiplies exponents: $3\cdot 4=12$.
-- **B False.** Adding exponents would give $7$, but that law is for a product $u^3\cdot u^4$, not for $(u^3)^4$.
-- **C True.** $\sqrt{u}\cdot\sqrt{u} = u^{1/2}\cdot u^{1/2} = u^{1} = u$ for $u>0$.
-- **D False.** $\sqrt{2u}$ is a different expression. For $u=1$, left side $1$ and right side $\sqrt{2}$.
-- **E True.** Quotient of powers subtracts exponents: $-2-3=-5$.
+Cubes expand through the same sum and product; the middle term is $3ab(a+b)$.
 
-**Answers:** A True, B False, C True, D False, E True.
+$$
+a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)=11^{3}-3\cdot 18\cdot 11=1331-594=737.
+$$
 
-### Exam task 4 — Absolute value and symmetric data
+The claim asserts $738$, but the identity produces $737$. Since $737\neq 738$, the statement is False.
 
-Let $x$ be real, and let $a$, $b$ be nonzero reals with $a+b=11$ and $ab=18$. Which of the following statements is/are correct?
+**D.** → True
 
-**A.** $\lvert 2x-5\rvert = 7$ if and only if $x=6$ or $x=-1$.
+The unordered pair $\{a,b\}$ is the root set of the monic quadratic with those coefficients.
 
-**B.** $\lvert 2x-5\rvert = 7$ if and only if $x=6$.
+$$
+t^{2}-(a+b)t+ab=0
+\quad\Longrightarrow\quad
+t^{2}-11t+18=0.
+$$
 
-**C.** $\lvert x+3\rvert = \lvert x\rvert + 3$ for every real $x$.
+Factor:
 
-**D.** $a^2 + b^2 = 85$.
+$$
+t^{2}-11t+18=(t-2)(t-9).
+$$
 
-**E.** $\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{18}{11}$.
+The roots are $t=2$ and $t=9$, so $\{a,b\}=\{2,9\}$.
 
-**Solution.**
+**E.** → False
 
-- **A True.** Split $\lvert 2x-5\rvert=7$ into $2x-5=7$ or $2x-5=-7$, so $x=6$ or $x=-1$.
-- **B False.** It misses the second root $x=-1$.
-- **C False.** The identity $\lvert x+3\rvert=\lvert x\rvert+3$ fails when $x$ is negative enough. For $x=-4$, left side $1$ and right side $7$.
-- **D True.** $a^2+b^2=(a+b)^2-2ab=121-36=85$.
-- **E False.** $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{a+b}{ab}=\dfrac{11}{18}$. The claimed fraction is upside down.
+The sum of reciprocals is the ratio of the sum to the product, not the reverse.
 
-**Answers:** A True, B False, C False, D True, E False.
+$$
+\frac{1}{a}+\frac{1}{b}=\frac{a+b}{ab}=\frac{11}{18}.
+$$
 
-### How to mark a full task quickly
+The claim prints $\dfrac{18}{11}$ instead of $\dfrac{11}{18}$.
 
-1. Read the domain line once and keep it in mind for every claim.
-2. For each claim, rewrite or expand before you decide.
-3. If a claim looks like a familiar slogan, test one cheap number.
-4. Mark the five verdicts independently. Do not let one True answer “pull” the next claim along.
+**Answers:** A True, B True, C False, D True, E False.
+
+### Exam task 3 — Rational calculator with domains
+
+A symbolic calculator studies
+
+$$
+R(x)=\dfrac{x^{2}-16}{x-4}
+\qquad\text{and}\qquad
+S(x)=\dfrac{1}{x-4}+\dfrac{1}{x+4}.
+$$
+
+The first expression is defined for $x\neq 4$, while the second also excludes $x=-4$. Simplifications must retain these original domain restrictions even after factors cancel.
+
+Which of the following statements is/are correct?
+
+**A.** $R(x)=x+4$ on its domain.
+
+**B.** $R(4)=8$.
+
+**C.** $S(x)=\dfrac{2x}{x^{2}-16}$.
+
+**D.** $S(0)=0$.
+
+**E.** $S(x)=0$ has exactly one real solution.
+
+**Complete solution.**
+
+Work on the stated domains: $R$ excludes $x=4$, and $S$ excludes $x=\pm 4$.
+
+**A.** → True
+
+On the domain $x\neq 4$, factor the difference of squares and cancel the shared linear factor.
+
+$$
+R(x)=\frac{(x-4)(x+4)}{x-4}=x+4\qquad(x\neq 4).
+$$
+
+**B.** → False
+
+$R$ is undefined at the excluded point $x=4$, so $R(4)$ is not defined by the formula.
+
+$$
+R(4)=\frac{4^{2}-16}{4-4}
+$$
+
+has vanishing denominator. The claim asserts $R(4)=8$, which would require evaluating past a hole in the domain. Therefore the statement is False.
+
+**C.** → True
+
+Combine the two reciprocal terms over the product of the linear factors.
+
+$$
+S(x)=\frac{1}{x-4}+\frac{1}{x+4}
+=\frac{(x+4)+(x-4)}{(x-4)(x+4)}
+=\frac{2x}{x^{2}-16}.
+$$
+
+**D.** → True
+
+Evaluate the simplified form at the origin.
+
+$$
+S(0)=\frac{2\cdot 0}{0-16}=0.
+$$
+
+**E.** → True
+
+Solve $S(x)=0$ on the domain $x\neq\pm 4$.
+
+$$
+\frac{2x}{x^{2}-16}=0
+\quad\Longleftrightarrow\quad
+2x=0\text{ and }x^{2}-16\neq 0
+\quad\Longleftrightarrow\quad
+x=0.
+$$
+
+Since $0\neq\pm 4$, the root is admissible. No other numerator root exists, so there is exactly one real solution.
+
+**Answers:** A True, B False, C True, D True, E True.
+
+### How to mark a full exam-style task
+
+1. Read the stem once: note every domain restriction and every given symmetric datum.
+2. For each claim, rewrite with an identity, a common denominator, or an absolute-value split before deciding.
+3. If a claim looks like a familiar slogan, either expand it fully or test one cheap counter-example.
+4. Mark the five verdicts independently. One True answer does not pull the next claim along.
 
 ---
 
 ## 2.7 Summary reference
-
-Use `\lvert … \rvert` in table cells (not raw `|`) so markdown does not split the row.
 
 | Task | Method |
 | --- | --- |
