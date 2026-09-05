@@ -7,6 +7,7 @@
 import ch1 from "./math-theory/ch1.md?raw";
 import ch2 from "./math-theory/ch2.md?raw";
 import ch3 from "./math-theory/ch3.md?raw";
+import ch4 from "./math-theory/ch4.md?raw";
 import ch5 from "./math-theory/ch5.md?raw";
 import ch6 from "./math-theory/ch6.md?raw";
 import ch8 from "./math-theory/ch8.md?raw";
@@ -39,6 +40,11 @@ export const MATH_COURSE_THEORY: Record<number, MathCourseTheoryChapter> = {
     num: 3,
     title: "Financial mathematics",
     markdown: ch3,
+  },
+  4: {
+    num: 4,
+    title: "Equations",
+    markdown: ch4,
   },
   5: {
     num: 5,
