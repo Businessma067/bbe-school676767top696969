@@ -69,6 +69,29 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "The Real Cost of WU Vienna Admission": "Die wahren Kosten der WU-Wien-Zulassung",
     "Read the full letter": "Den ganzen Brief lesen",
 
+    // How it works
+    Course: "Kurs",
+    "Mock exams": "Probeprüfungen",
+    "Guides, tasks, and AI explanations": "Leitfäden, Aufgaben und KI-Erklärungen",
+    "Open a chapter guide, see how many tasks sit behind it, then jump into a case. Submit your answers, scroll the explanation, and tap AI when you want a second pass on a statement.":
+      "Öffne einen Kapitel-Leitfaden, sieh, wie viele Aufgaben dahinterliegen, und spring dann in einen Fall. Reiche deine Antworten ein, scrolle die Erklärung und tippe auf KI, wenn du eine zweite Sicht auf eine Aussage willst.",
+    "Explore Economics": "Wirtschaft entdecken",
+    "Timed drills with the exam calculator": "Timed Mode mit dem Prüfungsrechner",
+    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
+      "Starte beim Leitfaden, öffne eine Frage, schalte den Timed Mode ein und nutze den Rechner. Reiche ein und scrolle dann die volle Lösung, bis die Methode sitzt.",
+    "Explore Math": "Mathematik entdecken",
+    "Passages with show-in-text": "Texte mit „Show in text“",
+    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
+      "Öffne den Leitfaden, bearbeite einen Text mit Aussagen und reiche ein. Mit Show in text springst du von jeder Erklärung zurück zu den genauen Zeilen im Text.",
+    "Explore English": "Englisch entdecken",
+    "Full-length exam simulations": "Vollständige Prüfungssimulationen",
+    "Build a mock around your weak spots": "Baue eine Probeprüfung um deine Schwachstellen",
+    "Flashcards, matching, and drills": "Karteikarten, Matching und Drills",
+    "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.":
+      "Diese Tour folgt als Nächstes. Unter Kurs siehst du, wie sich Wirtschaft, Mathematik und Englisch in der Praxis anfühlen.",
+    "Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.":
+      "Die Tour folgt als Nächstes. Wechsle zurück zu Kurs, um Wirtschaft, Mathematik und Englisch zu sehen.",
+
     // Products
     "Demo-Practice Package": "Demo-Übungspaket",
     "A free trial with 50+ starter cases across all three subjects and step by step explanations, so you can see what the real exam feels like before committing to anything.":
@@ -198,6 +221,29 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     "Almost free education.": "Майже безкоштовна освіта.",
     "The Real Cost of WU Vienna Admission": "Справжня ціна вступу до WU Vienna",
     "Read the full letter": "Читати лист повністю",
+
+    // How it works
+    Course: "Курс",
+    "Mock exams": "Пробні іспити",
+    "Guides, tasks, and AI explanations": "Гайди, завдання та пояснення ШІ",
+    "Open a chapter guide, see how many tasks sit behind it, then jump into a case. Submit your answers, scroll the explanation, and tap AI when you want a second pass on a statement.":
+      "Відкрий гайд розділу, подивись, скільки завдань за ним, і перейди до кейсу. Надішли відповіді, прогорни пояснення й натисни ШІ, якщо потрібен другий погляд на твердження.",
+    "Explore Economics": "До економіки",
+    "Timed drills with the exam calculator": "Режим таймера з калькулятором іспиту",
+    "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
+      "Почни з гайду, відкрий питання, увімкни таймер і скористайся калькулятором. Надішли відповідь, тоді прогорни повний розв’язок, щоб метод закріпився.",
+    "Explore Math": "До математики",
+    "Passages with show-in-text": "Тексти з Show in text",
+    "Open the guide, work a passage with statements, and submit. Then use Show in text to jump from each explanation back to the exact lines in the passage.":
+      "Відкрий гайд, розбери текст із твердженнями й надішли відповідь. Show in text повертає з кожного пояснення до точних рядків у тексті.",
+    "Explore English": "До англійської",
+    "Full-length exam simulations": "Повноформатні симуляції іспиту",
+    "Build a mock around your weak spots": "Збери пробний іспит під свої слабкі місця",
+    "Flashcards, matching, and drills": "Картки, matching і тренування",
+    "This walkthrough is next. Use Course to see how Economics, Math, and English practice actually feels.":
+      "Цей огляд буде наступним. У вкладці Курс видно, як насправді виглядає практика з економіки, математики та англійської.",
+    "Walkthrough coming next. Switch back to Course to watch Economics, Math, and English.":
+      "Огляд буде наступним. Повернись до Курсу, щоб подивитись економіку, математику та англійську.",
 
     // Products
     "Demo-Practice Package": "Пакет демо-практики",
