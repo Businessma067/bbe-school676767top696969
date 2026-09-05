@@ -27,7 +27,7 @@ const MATH_CH8_CORE: MathTask[] = [
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -42,7 +42,7 @@ $$=40$$
 The claimed mass is $40$ grams.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -57,7 +57,7 @@ $$M(3)=135$$
 The claimed $125$ is $5^{3}$, cubing the coefficient instead of the side. The two figures disagree.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -74,7 +74,7 @@ Doubling the side multiplies the mass by $8$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -89,7 +89,7 @@ The mass is $5$ grams.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -105,7 +105,7 @@ The claimed $240$ does not equal $320$
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 1,
@@ -129,7 +129,7 @@ $$\\frac{M(ks)}{M(s)}=k^{3}$$`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -146,7 +146,7 @@ The load rule returns a real value at $t=0$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -159,7 +159,7 @@ At $t=0$ that denominator is zero, and division by zero is undefined. The turbid
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -174,7 +174,7 @@ $$t=-4$$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -191,7 +191,7 @@ The reading is $3.125$ units.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -207,7 +207,7 @@ The load is $18$ kilograms.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `1/5`,
     sort_order: 2,
@@ -233,7 +233,7 @@ and needs $t>0$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -248,7 +248,7 @@ Signal strength tends to $0$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -259,7 +259,7 @@ Strength grows without bound as $x\\to 0^{+}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -276,7 +276,7 @@ Already $4>2$, and a positive exponent keeps climbing. There is no finite ceilin
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -293,7 +293,7 @@ The strength is $10$ millivolts.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -303,7 +303,7 @@ The count approaches $0$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 3,
@@ -333,7 +333,7 @@ The two extremes are governed by those exponents alone.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -346,7 +346,7 @@ A larger positive $q$ makes a strictly smaller quotient. Overhead spread is stri
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -357,7 +357,7 @@ The spread is never negative.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -368,7 +368,7 @@ Finishing hours are strictly increasing for $q>0$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -383,7 +383,7 @@ The claimed $80$ is not this value
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -403,7 +403,7 @@ The finishing labour is $12$ hours.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 4,
@@ -429,7 +429,7 @@ The positive exponent $\\frac{2}{3}$ keeps finishing hours in a numerator. The s
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Calibrate the scale factor against the audited shift named in the overview:
 
@@ -446,7 +446,7 @@ $$A=8$$
 The claim asserts that same coefficient $A=8$.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $A=8$. At $100$ staff the square root is $10$:
 
@@ -461,7 +461,7 @@ The output is $80$ crates per hour.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -478,7 +478,7 @@ Quadrupling the staffing doubles the output.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -495,7 +495,7 @@ The ratio stays $2$. Doubling $A$ would double every output, not this scale fact
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -509,7 +509,7 @@ $$=16$$
 
 The claimed $20$ is not $16$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 5,
@@ -539,7 +539,7 @@ The recovered output is $Q(s)=8s^{\\frac{1}{2}}$. A staffing multiplier $k$ mult
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -558,7 +558,7 @@ $$G(2)=8$$
 The claim wants $8$ and $6$. The first figure matches, but $G(2)=8$, not $6$.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview factored
 
@@ -571,7 +571,7 @@ The cubic index exceeds the quadratic one for every $n>2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -584,7 +584,7 @@ The quadratic index leads throughout $0<n<2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview simplified the ratio to $\\frac{n}{2}$. As $n$ grows without bound, so does $\\frac{n}{2}$. Already at $n=20$:
 
@@ -597,7 +597,7 @@ The ratio tends to infinity, not to $1$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -615,7 +615,7 @@ $$G(3)=27$$
 
 The quadratic figure matches, but the cubic index is $27$, not the claimed $24$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 6,
@@ -645,7 +645,7 @@ On $n>0$ the square $n^{2}$ is positive, so the sign of $G-F$ is the sign of $n-
     ],
     answer_key: [true, false, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -662,7 +662,7 @@ The transform returns $0$ at a raw reading of zero.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -677,7 +677,7 @@ $$x=-4$$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -694,7 +694,7 @@ The cube root of $-8$ is $-2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -713,7 +713,7 @@ $$x=0$$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -727,7 +727,7 @@ $$=\\frac{1}{2}$$
 
 The claimed $2$ is $\\sqrt{4}$, which drops the minus in the exponent. The transform returns $\\frac{1}{2}$, not $2$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 7,
@@ -753,7 +753,7 @@ so $L$ is defined for $x\\ge 0$, $M$ is defined for all real $x$, and $N$ needs 
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -770,7 +770,7 @@ The drop is $6$ kilopascals.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -785,7 +785,7 @@ The drop is strictly decreasing on $x>0$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -796,7 +796,7 @@ The drop approaches $0$ without reaching it.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -815,7 +815,7 @@ The drop grows without bound rather than settling.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -831,7 +831,7 @@ The drop is $4$ kilopascals.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `2/5`,
     sort_order: 8,
@@ -857,9 +857,9 @@ The negative sign makes the drop fall on $x>0$, and the even root closes the dom
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Keep the stated domain in force while you evaluate the model.
 
 The overview recovered $A=5$ from
 
@@ -868,9 +868,9 @@ $$9A=45$$
 The claimed $15$ is $\\frac{45}{3}$, which divides by the radius instead of by its square. The coefficient is $5$, not $15$.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Compare the recovered figure with the value named in the claim.
 
 The overview recovered $A=5$. At radius $6$ metres:
 
@@ -883,7 +883,7 @@ $$=180$$
 The panel needs $180$ litres.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -900,9 +900,9 @@ The primer is multiplied by $2.25$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Use the recovered constants; do not rebuild the calibration.
 
 The overview recovered
 
@@ -917,7 +917,7 @@ $$y(1)=5$$
 A one-metre panel needs $5$ litres.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -935,7 +935,7 @@ The primer is multiplied by $0.25$, not by $0.5$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `1/5`,
     sort_order: 9,
@@ -965,7 +965,7 @@ The recovered primer is $y(r)=5r^{2}$. Multiplying the radius by $k$ multiplies 
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -982,7 +982,7 @@ The index at $v=10$ is $50$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -999,7 +999,7 @@ Doubling the speed multiplies the index by $4$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -1016,7 +1016,7 @@ The index reads $200$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -1027,7 +1027,7 @@ The index is never negative.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -1045,7 +1045,7 @@ The index is multiplied by $1.21$, a twenty-one percent rise rather than ten.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 10,
@@ -1069,7 +1069,7 @@ $$\\frac{E(kv)}{E(v)}=k^{2}$$`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -1082,7 +1082,7 @@ Harvest grows more slowly than watering time.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered $r=\\frac{1}{3}$. Doubling hours multiplies harvest by $2^{r}$:
 
@@ -1095,7 +1095,7 @@ The factor is about $1.26$, not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered $Y(h)=2h^{\\frac{1}{3}}$. Doubling the logged $4$ kg harvest means $Y=8$:
 
@@ -1110,7 +1110,7 @@ Sixty-four hours is eight times the logged $8$ hours, which is more than a doubl
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $Y(h)=2h^{\\frac{1}{3}}$. The slope is
 
@@ -1131,7 +1131,7 @@ Because $\\frac{1}{6}>\\frac{2}{27}$, an extra hour adds less after $27$ hours t
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -1145,7 +1145,7 @@ Watering time is a monomial in harvest.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 11,
@@ -1185,7 +1185,7 @@ The recovered harvest is $Y(h)=2h^{\\frac{1}{3}}$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered $A=48$. At nine agents the square root is $3$:
 
@@ -1200,7 +1200,7 @@ Sixteen minutes is less than $20$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -1217,7 +1217,7 @@ The agent count is a monomial in the wait.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered $W(n)=48 n^{-\\frac{1}{2}}$. The slope is
 
@@ -1238,7 +1238,7 @@ An extra agent cuts less wait after $16$ agents than after $4$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered $W(n)=48 n^{-\\frac{1}{2}}$. A six-minute wait inverts that rule:
 
@@ -1253,7 +1253,7 @@ Sixty-four agents exceed the cap of $50$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -1267,7 +1267,7 @@ Wait falls to about $0.707$ of its former value, not to $\\frac{1}{2}$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 12,
@@ -1297,7 +1297,7 @@ The recovered wait is $W(n)=48 n^{-\\frac{1}{2}}$. The cap $n\\le 50$ constrains
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered $a=4$. At $4$ metres the square root is $2$:
 
@@ -1312,7 +1312,7 @@ Eight litres a minute is more than $7$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered the ratio $\\frac{Q_{O}(d)}{Q_{L}(d)}=\\frac{d}{8}$. They meet when that ratio equals $1$:
 
@@ -1327,7 +1327,7 @@ Eight metres is shallower than $10$
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -1340,7 +1340,7 @@ Omar stays ahead at every greater depth.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -1351,7 +1351,7 @@ $$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$
 A sum of two powers is a power only when the exponents match. These exponents are $\\frac{1}{2}$ and $\\frac{3}{2}$.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview recovered Omar's exponent $\\frac{3}{2}$. Flow outruns depth whenever the exponent exceeds one: multiplying depth by $k$ multiplies Omar's flow by $k^{\\frac{3}{2}}$, a larger factor than $k$.
 
@@ -1359,7 +1359,7 @@ Omar's flow grows faster than depth.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 13,
@@ -1395,7 +1395,7 @@ The recovered flows are $Q_{L}(d)=4d^{\\frac{1}{2}}$ and $Q_{O}(d)=\\frac{1}{2}d
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered $F=50$ and
 
@@ -1410,7 +1410,7 @@ A power of the run cannot carry a leftover constant. The setup of $50$ euros kil
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -1425,7 +1425,7 @@ which stays positive for every $n>0$. Printing more copies never turns the total
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -1440,7 +1440,7 @@ A longer run is cheaper per copy.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -1455,7 +1455,7 @@ $$=300$$
 Three hundred sits above $280$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered $C(n)=50+50\\sqrt{n}$. Thirty-six is a perfect square:
 
@@ -1469,7 +1469,7 @@ Three hundred and fifty does not sit above $400$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 14,
@@ -1503,7 +1503,7 @@ Then $F+4\\cdot 50=250$, so $F=50$. The recovered bill is $C(n)=50+50\\sqrt{n}$.
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -1516,9 +1516,9 @@ That is proportionality.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Compare the recovered figure with the value named in the claim.
 
 The overview recovered $S(u)=2u$. Set that equal to the rival quote:
 
@@ -1531,7 +1531,7 @@ $$u=25$$
 The quotes meet at purity $25$.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -1540,9 +1540,9 @@ The rival quote is $1.8u+5$. At purity zero the rival still equals $5$, so there
 The rival is affine, not a power.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Use the recovered constants; do not rebuild the calibration.
 
 The overview recovered
 
@@ -1557,9 +1557,9 @@ $$S(36)=72$$
 Seventy-two sits above $70$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Form the comparison so only this claim’s extra arithmetic remains.
 
 The overview recovered
 
@@ -1573,7 +1573,7 @@ $$S(9)=18$$
 
 Eighteen does not sit above $20$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 15,
@@ -1607,7 +1607,7 @@ $$S(u)=2u$$`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -1620,7 +1620,7 @@ Peak load grows faster than the job count.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered $r=2$. Halving jobs is the multiplier $k=\\frac{1}{2}$:
 
@@ -1633,7 +1633,7 @@ Load drops to a quarter, not to a half.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -1648,7 +1648,7 @@ The leftover exponent is positive, so that average climbs with the job count.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $16$ jobs:
 
@@ -1663,7 +1663,7 @@ One hundred and twenty-eight sits below $200$, so the alarm has not yet tripped.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -1677,7 +1677,7 @@ $$=50$$
 
 Fifty sits above $40$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 16,
@@ -1713,7 +1713,7 @@ The recovered load is $L(x)=\\frac{1}{2}x^{2}$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered $Q(x)=12x^{\\frac{1}{2}}$. The slope is
 
@@ -1734,7 +1734,7 @@ An extra unit adds more at $25$ than at $100$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -1749,7 +1749,7 @@ Responses multiply by $\\sqrt{2}$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -1764,7 +1764,7 @@ The leftover exponent is negative, so that average falls as outreach rises.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $Q(x)=12x^{\\frac{1}{2}}$. At the intensity cap:
 
@@ -1779,7 +1779,7 @@ Two hundred and forty is not a ceiling of $200$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview recovered $Q(x)=12x^{\\frac{1}{2}}$. Eighty-one is a perfect square:
 
@@ -1793,7 +1793,7 @@ One hundred and eight sits above $100$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 17,
@@ -1825,9 +1825,9 @@ The recovered yield is $Q(x)=12x^{\\frac{1}{2}}$. The cap constrains $x\\le 400$
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Keep the stated domain in force while you evaluate the model.
 
 The overview recovered
 
@@ -1844,7 +1844,7 @@ $$n=16$$
 They meet only at sixteen documents.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -1857,9 +1857,9 @@ Automated is not cheaper above $16$ documents.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Start from the calibrated closed form, then evaluate at the claimed point.
 
 The overview recovered
 
@@ -1872,7 +1872,7 @@ $$\\frac{C(n)}{n}=n$$
 The leftover exponent is positive, so unit cost rises with the batch.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:
 
@@ -1885,9 +1885,9 @@ Two hundred and twenty-five is not less than $100$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Form the comparison so only this claim’s extra arithmetic remains.
 
 The overview recovered
 
@@ -1901,7 +1901,7 @@ $$C(9)=81$$
 
 Eighty-one sits under $100$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 18,
@@ -1935,7 +1935,7 @@ The recovered costs are $C(n)=n^{2}$ and $D(n)=16n$. Their difference factors as
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered exponent $\\frac{1}{2}$. An exponent smaller than one means that multiplying staff by $k$ multiplies throughput only by $k^{\\frac{1}{2}}$, a smaller factor.
 
@@ -1944,7 +1944,7 @@ Throughput grows more slowly than headcount.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -1959,7 +1959,7 @@ Throughput multiplies by $\\sqrt{2}$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered billed throughput
 
@@ -1972,7 +1972,7 @@ Billed throughput is then no longer a power function of staff.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $64$ staff:
 
@@ -1987,7 +1987,7 @@ Sixty-four sits below the cap of $80$, so the ceiling is not yet reached.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -2001,7 +2001,7 @@ $$=72$$
 
 Seventy-two sits above $70$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -2031,7 +2031,7 @@ The recovered throughput is $H(s)=8s^{\\frac{1}{2}}$. Billed throughput is the t
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. The slope is
 
@@ -2056,7 +2056,7 @@ An extra server cuts more wait at $4$ servers than at $9$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2073,7 +2073,7 @@ The server count is a monomial in the wait.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2088,7 +2088,7 @@ Wait falls to about $0.354$ of its former value, not to $\\frac{1}{2}$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At nine servers:
 
@@ -2103,7 +2103,7 @@ Eight milliseconds is not more than $10$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview recovered $W(k)=216 k^{-\\frac{3}{2}}$. At four servers:
 
@@ -2117,7 +2117,7 @@ Twenty-seven sits above $25$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 20,
@@ -2149,7 +2149,7 @@ The recovered wait is $W(k)=216 k^{-\\frac{3}{2}}$.`,
     ],
     answer_key: [true, true, false, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -2170,7 +2170,7 @@ $$|q'(20)|=2.5$$
 The claim needs a larger cut at five euros than at twenty. We have $160>2.5$.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2185,7 +2185,7 @@ That is a monomial in the subscription count.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2204,7 +2204,7 @@ $$q(10)=100, \\qquad q(5)=400$$
 and $100$ is a quarter of $400$, not a half. The claim is that demand halves.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -2220,10 +2220,10 @@ $$R(16)=625$$
 
 The claim compares this with $700$. Compare with the claim:
 
-$$625<700$$
+$$625<700$$.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -2239,9 +2239,9 @@ $$q(20)=25$$
 
 The claim compares this with $30$. Compare with the claim:
 
-$$25<30$$
+$$25<30$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 21,
@@ -2275,7 +2275,7 @@ $$q(p)=10000 p^{-2}, \\qquad R(p)=10000 p^{-1}$$`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -2286,7 +2286,7 @@ $$C(n)=200+30\\sqrt{n}$$
 is a translate of a power, not a power. The claim is that the bill is not a power of the account count.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2303,7 +2303,7 @@ and $2<5$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2324,7 +2324,7 @@ $$C'(400)=0.75$$
 The claim needs a larger add-on at one hundred accounts than at four hundred. We have $1.5>0.75$.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -2340,10 +2340,10 @@ $$C(900)=1100$$
 
 The claim compares this with $1000$. Compare with the claim:
 
-$$1100>1000$$
+$$1100>1000$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered
 
@@ -2359,7 +2359,7 @@ Since $\\sqrt{2}<1.5$, this sits below $650$. Directly, $300\\cdot 1.414\\approx
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 22,
@@ -2397,9 +2397,9 @@ $$C(n)=200+30\\sqrt{n}$$`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Keep the stated domain in force while you evaluate the model.
 
 The overview recovered
 
@@ -2408,7 +2408,7 @@ $$E(t)=240 t^{\\frac{1}{4}}$$
 That is a monomial in elapsed time, so total fleet emissions are a power of $t$.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2421,7 +2421,7 @@ Now $2^{\\frac{1}{4}}<2$, so doubling time does not double emissions.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered
 
@@ -2438,9 +2438,9 @@ and $15<30$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Use the recovered constants; do not rebuild the calibration.
 
 The overview recovered
 
@@ -2456,12 +2456,12 @@ $$E(16)=480$$
 
 The claim compares this with $400$. Compare with the claim:
 
-$$480>400$$
+$$480>400$$.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Form the comparison so only this claim’s extra arithmetic remains.
 
 The overview recovered
 
@@ -2473,9 +2473,9 @@ $$E(1)=240$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$240<250$$
+$$240<250$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 23,
@@ -2509,7 +2509,7 @@ $$e(a)=120 a^{-\\frac{1}{2}}, \\qquad E(t)=240 t^{\\frac{1}{4}}$$`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -2524,7 +2524,7 @@ For every $k>1$ this factor exceeds $k$. Capacity therefore grows faster than di
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2539,7 +2539,7 @@ Now $2^{\\frac{2}{5}}<2$, so the diameter need not more than double.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -2554,7 +2554,7 @@ That is a monomial in capacity.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -2569,7 +2569,7 @@ $$d=5\\cdot 5^{\\frac{1}{5}}$$
 Since $5^{\\frac{1}{5}}\\approx 1.38$, we have $d\\approx 6.90$, which is not above $10$ cm.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -2583,7 +2583,7 @@ Now $4\\sqrt{2}\\approx 5.66>5$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 24,
@@ -2617,9 +2617,9 @@ $$Q(d)=2 d^{\\frac{5}{2}}$$`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Keep the stated domain in force while you evaluate the model.
 
 The overview recovered
 
@@ -2628,7 +2628,7 @@ $$S(t)=9\\pi t$$
 That is a constant times elapsed time, so the covered area is proportional to $t$.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2641,9 +2641,9 @@ Doubling time therefore doubles the area.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Start from the calibrated closed form, then evaluate at the claimed point.
 
 The overview recovered
 
@@ -2656,9 +2656,9 @@ $$t=\\frac{S}{9\\pi}$$
 That is a monomial in the area.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Use the recovered constants; do not rebuild the calibration.
 
 The overview recovered
 
@@ -2670,12 +2670,12 @@ $$S(4)=36\\pi$$
 
 The claim compares this with $30\\pi$. Compare with the claim:
 
-$$36\\pi>30\\pi$$
+$$36\\pi>30\\pi$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
-Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+Form the comparison so only this claim’s extra arithmetic remains.
 
 The overview recovered
 
@@ -2687,9 +2687,9 @@ $$S(9)=81\\pi$$
 
 The claim is $100\\pi$. Compare with the claim:
 
-$$81\\pi\\neq 100\\pi$$
+$$81\\pi\\neq 100\\pi$$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 25,
@@ -2723,7 +2723,7 @@ $$r(t)=3 t^{\\frac{1}{2}}, \\qquad S(t)=9\\pi t$$`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -2742,7 +2742,7 @@ Both sit under $400$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2761,7 +2761,7 @@ and $180<240$, so Plan B is cheaper below the crossing.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2774,7 +2774,7 @@ For every larger ticket volume the billed amount stays $400$ rather than $40\\sq
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -2791,7 +2791,7 @@ and $5<\\frac{20}{3}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -2805,7 +2805,7 @@ The cap clips this to $400$, which is not more than $450$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 26,
@@ -2839,7 +2839,7 @@ $$C_A(u)=\\min\\bigl(40\\sqrt{u},\\,400\\bigr), \\qquad C_B(u)=5u$$`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -2856,7 +2856,7 @@ and $8^{b+1}>1$, so the cut is larger after the first unit than after eight unit
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2869,7 +2869,7 @@ $$\\frac{c(4N)}{c(N)}=0.64$$
 The claim is that unit cost halves. A factor of $0.64$ is not $\\frac{1}{2}$.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2886,7 +2886,7 @@ so each doubling cuts cost by less than a reciprocal would, and unit cost falls 
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -2898,10 +2898,10 @@ $$c(8)=512$$
 
 The claim compares this with $520$. Compare with the claim:
 
-$$512<520$$
+$$512<520$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -2913,7 +2913,7 @@ $$c(16)=409.6$$
 
 The claim is that this already sits under the materials floor of $400$. We have $409.6>400$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 27,
@@ -2949,7 +2949,7 @@ so after $k$ doublings, $c(2^{k})=1000\\cdot(0.8)^{k}$.`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -2964,7 +2964,7 @@ Now $\\sqrt{2}<2$, so doubling spend does not double revenue.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -2983,7 +2983,7 @@ and $4.5<9$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -2996,7 +2996,7 @@ This is negative precisely when $\\sqrt{x}>15$, that is $x>225$. For every large
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3012,10 +3012,10 @@ $$N(100)=300$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$300>250$$
+$$300>250$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered
 
@@ -3031,7 +3031,7 @@ $$N(256)=-96$$
 
 The claim is that net gain is still positive. We have $-96<0$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 28,
@@ -3065,7 +3065,7 @@ $$R(x)=90\\sqrt{x}, \\qquad N(x)=90\\sqrt{x}-6x$$`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -3078,7 +3078,7 @@ $$2^{\\frac{1}{2}}<2$$
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3091,7 +3091,7 @@ Now $2^{\\frac{3}{4}}<2$, so doubling labour does not double finished output.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3108,7 +3108,7 @@ and $\\frac{16}{3}<8$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered
 
@@ -3123,7 +3123,7 @@ That is a monomial in the finished count.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3141,9 +3141,9 @@ $$g(81)=432$$
 
 The claim compares this with $400$. Compare with the claim:
 
-$$432>400$$
+$$432>400$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 29,
@@ -3181,7 +3181,7 @@ $$m(L)=4 L^{\\frac{1}{2}}, \\qquad g=16 L^{\\frac{3}{4}}$$`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3196,7 +3196,7 @@ $$p=\\left(\\frac{2000}{R}\\right)^{2}$$
 That is a monomial in revenue.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3209,7 +3209,7 @@ Now $\\frac{1}{\\sqrt{2}}\\approx 0.707\\neq\\frac{1}{2}$, so doubling price doe
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -3224,7 +3224,7 @@ and $500<1000$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3240,10 +3240,10 @@ $$R(25)=400$$
 
 The claim compares this with $450$. Compare with the claim:
 
-$$400<450$$
+$$400<450$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -3255,7 +3255,7 @@ $$\\sqrt{p}\\le 5, \\qquad p\\le 25$$
 
 The claim is that the charge is covered only at prices below $16$. The recovered cutoff is $p=25$, which is not $16$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 30,
@@ -3289,7 +3289,7 @@ $$q(p)=2000 p^{-\\frac{3}{2}}, \\qquad R(p)=2000 p^{-\\frac{1}{2}}$$`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -3310,7 +3310,7 @@ $$N'(27)=4$$
 The claim needs a smaller add-on after twenty-seven hours than after eight. We have $4<6$.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3323,7 +3323,7 @@ Now $2^{\\frac{2}{3}}<2$, so doubling a shift does not double the item count.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3340,7 +3340,7 @@ and $6<9$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3356,10 +3356,10 @@ $$N(27)=162$$
 
 The claim compares this with $150$. Compare with the claim:
 
-$$162>150$$
+$$162>150$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -3377,7 +3377,7 @@ Now $\\sqrt{5}\\approx 2.236$, so $h\\approx 51.8$, which is not under $40$ hour
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 31,
@@ -3413,7 +3413,7 @@ $$N(h)=18 h^{\\frac{2}{3}}$$`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3424,7 +3424,7 @@ $$P(v)=2 v^{\\frac{5}{2}}$$
 That is a monomial in airspeed, so absorbed power is a power function of airspeed.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3437,7 +3437,7 @@ Now $2\\sqrt{2}\\approx 2.83$, which is not more than $3$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -3452,7 +3452,7 @@ That is a monomial in drag.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -3467,7 +3467,7 @@ $$v^{\\frac{3}{2}}=25$$
 The claim is that the rating is first reached above $30$ m/s. We have $v=25$.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3485,9 +3485,9 @@ $$P(16)=2048$$
 
 Two kilowatts is $2000$ watts. Compare with the claim:
 
-$$2048>2000$$
+$$2048>2000$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 32,
@@ -3525,7 +3525,7 @@ $$F(v)=2 v^{\\frac{3}{2}}, \\qquad P(v)=2 v^{\\frac{5}{2}}$$`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -3540,7 +3540,7 @@ and $6000>4800$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3553,7 +3553,7 @@ still rises in $p$ because the exponent $-\\frac{1}{2}+1$ is positive. From $p=1
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered
 
@@ -3568,7 +3568,7 @@ That is a monomial in monthly quantity.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3584,10 +3584,10 @@ $$q(25)=240$$
 
 The claim compares this with $250$. Compare with the claim:
 
-$$240<250$$
+$$240<250$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -3599,7 +3599,7 @@ $$\\sqrt{p}=6, \\qquad p=36$$
 
 The claim is a price above $40$. We have $p=36$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 33,
@@ -3633,7 +3633,7 @@ $$q(p)=1200 p^{-\\frac{1}{2}}, \\qquad R(p)=1200 p^{\\frac{1}{2}}$$`,
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -3648,7 +3648,7 @@ Now $2^{\\frac{3}{4}}<2$, so the feed need not more than double.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3665,7 +3665,7 @@ and $12>8$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3678,7 +3678,7 @@ Past that feed, daily shipped output is the constant $1024$, which is not a mono
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3696,10 +3696,10 @@ $$y(8)=64$$
 
 The claim compares this with $50$. Compare with the claim:
 
-$$64>50$$
+$$64>50$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -3715,7 +3715,7 @@ $$64>50$$
 
 The binding feed sits above $50$, not before it. The claim fails.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 34,
@@ -3751,7 +3751,7 @@ Shipped output is $\\min(y(x),1024)$.`,
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Composition in the stated order cancels stage by stage. From the shared solve, the identity
 
@@ -3760,7 +3760,7 @@ $$g(f(x))=x$$
 So applying the two stages in that order returns the original input. The claim matches this cancellation.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -3771,7 +3771,7 @@ $$g(f(x))=x$$
 , the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Composition in the stated order cancels stage by stage. From the shared solve, the identity
 
@@ -3780,7 +3780,7 @@ $$f(g(y))=y$$
 Applying the stages recovers the original index. The claim that the composition fails therefore disagrees with the recovery.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered
 
@@ -3797,7 +3797,7 @@ $$f(64)=144$$
 The claim compares this with $140$. We have $144>140$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered
 
@@ -3813,7 +3813,7 @@ $$f(125)=225$$
 
 The claim is an index under $200$. We have $225>200$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 35,
@@ -3853,7 +3853,7 @@ $$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=y$$`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Setting the two recovered score laws equal yields a single positive crossing:
 
@@ -3862,7 +3862,7 @@ $$x=8$$
 One equation of this type cannot have two distinct positive ties. The claim that they meet at two different positive loads is false.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3875,7 +3875,7 @@ For every $x>8$ this ratio exceeds $1$ and keeps rising, so T's lead cannot reve
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3890,7 +3890,7 @@ Those are not the same.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 From the shared solve, the unique positive crossing of the two scores by setting them equal:
 
@@ -3903,7 +3903,7 @@ $$8>6$$
 The first meeting sits above $6$, matching the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview recovered $S(x)=8 x^{\frac{1}{2}}$ and $T(x)=x^{\frac{3}{2}}$. At load $16$:
 
@@ -3913,7 +3913,7 @@ $$T(16)-S(16)=32$$
 
 The claim compares this lead with $30$. We have $32>30$, matching the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 36,
@@ -3951,7 +3951,7 @@ On $x>0$, setting $S=T$ gives the unique positive crossing $x=8$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -3962,7 +3962,7 @@ The exponent $\\frac{4}{5}>0$, so $C$ is strictly increasing on $m>0$. Adding ma
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -3971,7 +3971,7 @@ An exponent below $1$ still tends to infinity whenever it is positive. The recov
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -3984,7 +3984,7 @@ That is a straight line in the coordinates $(\\ln m,\\ln C)$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered
 
@@ -4001,7 +4001,7 @@ $$C(243)=405$$
 The claim compares this with $400$. We have $405>400$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4015,7 +4015,7 @@ $$m=100\\sqrt{10}\\approx 316$$
 
 The claim is that it binds before $250$ machines. We have $316>250$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 37,
@@ -4049,7 +4049,7 @@ $$C(m)=5 m^{\\frac{4}{5}}$$`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 The overview recovered
 
@@ -4060,7 +4060,7 @@ That is a difference of two powers with different exponents, not a single monomi
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4077,7 +4077,7 @@ Those hours are not the same.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4092,7 +4092,7 @@ That is a monomial in hours hired.
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered
 
@@ -4109,7 +4109,7 @@ $$\\Pi(900)=-1800$$
 The claim compares this with $-1000$. We have $-1800<-1000$.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4119,7 +4119,7 @@ $$120\\sqrt{L}=6L, \\qquad L=400$$
 
 The claim is a crossing after more than $300$ hours. We have $400>300$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 38,
@@ -4153,7 +4153,7 @@ $$R(L)=120 L^{\\frac{1}{2}}, \\qquad \\Pi(L)=120 L^{\\frac{1}{2}}-6L$$`,
     ],
     answer_key: [false, false, true, true, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -4174,7 +4174,7 @@ and $600<900$, so sending every unit to one plant is not cheapest.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4187,7 +4187,7 @@ The $20$-$40$ split costs $600$, while concentrating in plant 2 costs $900$. Tho
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4204,7 +4204,7 @@ and $10>5$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -4217,7 +4217,7 @@ $$C_2(60)=900$$
 The claim compares this with $800$. We have $900>800$.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4231,7 +4231,7 @@ $$C_1(30)+C_2(30)=675$$
 
 The claim compares this with $700$. We have $675<700$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 39,
@@ -4267,7 +4267,7 @@ $$C_1(q)=\\frac{1}{2} q^{2}, \\qquad C_2(q)=\\frac{1}{4} q^{2}$$`,
     ],
     answer_key: [true, false, false, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -4286,7 +4286,7 @@ so the first two measurements are consistent with a single power.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4299,7 +4299,7 @@ The observed ratio from (1) is $8$, not $16$. The recovered $r=\\frac{3}{2}$ is 
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4312,7 +4312,7 @@ $$3\\cdot 9^{\\frac{3}{2}}=81$$
 That matches the recorded $81$, so the measurement does not contradict the fitted law.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -4325,7 +4325,7 @@ $$3\\cdot 25^{\\frac{3}{2}}=375$$
 The claim compares this with $350$. We have $375>350$.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4339,7 +4339,7 @@ $$81>70$$
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 40,
@@ -4379,7 +4379,7 @@ $$y=3 x^{\\frac{3}{2}}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -4390,7 +4390,7 @@ That is a monomial in $q$, coefficient $80$ and exponent $-\\frac{1}{2}$. There 
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4407,7 +4407,7 @@ Sixteen sits under $20$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4422,7 +4422,7 @@ Revenue falls.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -4439,7 +4439,7 @@ Eight hundred sits above $750$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4453,7 +4453,7 @@ Revenue rises with quantity.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 41,
@@ -4493,7 +4493,7 @@ $$R(q)=80 q^{\\frac{1}{2}}, \\qquad R(p)=6400 p^{-1}.$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -4508,7 +4508,7 @@ The later average is smaller.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4525,7 +4525,7 @@ One hundred and twenty sits above $100$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4546,7 +4546,7 @@ An extra hour adds less after $36$ hours than after $9$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -4563,7 +4563,7 @@ Hours must go from $9$ to $36$, which is more than a doubling.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4579,7 +4579,7 @@ Four sits below $5$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 42,
@@ -4615,7 +4615,7 @@ $$\\frac{Y}{L}=20 L^{-\\frac{1}{2}}.$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -4632,7 +4632,7 @@ Those are two different positive outputs.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4647,7 +4647,7 @@ Minus one hundred and fifty sits more than $100$ euros below zero.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered break-evens at $q=100$ and $q=400$. Past the larger root the linear charge dominates the square-root revenue. At $q=625$:
 
@@ -4660,7 +4660,7 @@ Profit turns negative again.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered $R(q)=60 q^{\\frac{1}{2}}$ and
 
@@ -4673,7 +4673,7 @@ A leftover intercept or a second exponent kills the power-function shape.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4687,7 +4687,7 @@ Fifty does not sit above $80$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 43,
@@ -4733,7 +4733,7 @@ The positive roots square to $q=100$ and $q=400$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -4748,7 +4748,7 @@ The only positive solution is $x=36$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4765,7 +4765,7 @@ Thirty-two sits above $30$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4784,7 +4784,7 @@ Cost has overtaken.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -4805,7 +4805,7 @@ Forty point five does not exceed $42$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4821,7 +4821,7 @@ Three different ratios.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 44,
@@ -4861,7 +4861,7 @@ $$B(x)=18 x^{\\frac{1}{2}}, \\qquad C(x)=\\frac{1}{2} x^{\\frac{3}{2}}.$$`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -4876,7 +4876,7 @@ Throughput grows more slowly than the gas feed.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -4897,7 +4897,7 @@ That feed sits below $24$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -4912,7 +4912,7 @@ That is not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -4929,7 +4929,7 @@ The leftover exponent is negative, so the average falls as the feed rises.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -4945,7 +4945,7 @@ Sixty-four sits above $60$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 45,
@@ -4991,7 +4991,7 @@ The recovered law is $T(g)=4 g^{\\frac{2}{3}}$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -5006,7 +5006,7 @@ $$2>1$$
 Stored volume grows faster than depth.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5021,7 +5021,7 @@ One hundred and forty-four sits above $140$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5040,7 +5040,7 @@ Depth scales by $\\sqrt{2}$, which is not more than a doubling.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -5057,7 +5057,7 @@ Tapering changes the coefficient, not the fact that volume grows without a cap.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5077,7 +5077,7 @@ One hundred and ninety-two is not more than $200$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 46,
@@ -5111,7 +5111,7 @@ The recovered storage is $V(d)=4 d^{2}$.`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -5128,7 +5128,7 @@ The later increment adds more.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5143,7 +5143,7 @@ Eighty sits above $70$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5160,7 +5160,7 @@ Two different averages.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -5177,7 +5177,7 @@ The inverse exponent $\\frac{1}{2}$ sits below one, so speed grows more slowly t
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5191,7 +5191,7 @@ Three hundred and twenty does not sit under $300$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 47,
@@ -5225,7 +5225,7 @@ The recovered index is $E(v)=\\frac{1}{20} v^{2}$.`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -5238,7 +5238,7 @@ The smaller exponent is on steel, so steel use grows more slowly than capacity a
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5251,7 +5251,7 @@ Sixty-four sits above $60$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5266,7 +5266,7 @@ That is a monomial in $V$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -5285,7 +5285,7 @@ Twenty-four is not forty-eight.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5299,7 +5299,7 @@ One hundred and ninety-two does not sit above $200$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 48,
@@ -5337,7 +5337,7 @@ The recovered laws are $S(h)=3 h^{2}$ and $V(h)=h^{3}$.`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -5350,7 +5350,7 @@ Total inspection time is not proportional to the number of shipments.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5367,7 +5367,7 @@ One hundred sits below $110$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5382,7 +5382,7 @@ An extra shipment still adds $0.2$ hours and pushes the total past $40$. A modes
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -5401,7 +5401,7 @@ Inspection time is multiplied by two.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5415,7 +5415,7 @@ Twenty-eight is not more than $30$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 49,
@@ -5449,7 +5449,7 @@ The recovered time is $T(n)=4 n^{\\frac{1}{2}}$.`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -5468,7 +5468,7 @@ Illuminance is cut to one quarter.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5483,7 +5483,7 @@ Thirty-two sits under $40$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5500,7 +5500,7 @@ An extra metre cuts less illuminance at $4$ metres than at $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -5517,7 +5517,7 @@ Distance as a function of illuminance is still a monomial in $I$. Falling illumi
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5531,7 +5531,7 @@ That reading does not sit above $90$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 50,
@@ -5567,7 +5567,7 @@ The recovered illuminance is $I(d)=800 d^{-2}$.`,
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered exponent $\\frac{3}{4}$. An exponent smaller than one means the bill still rises with the book, yet it lags the account count.
 
@@ -5578,7 +5578,7 @@ The bill grows more slowly than the number of accounts.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5593,7 +5593,7 @@ That is not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5610,7 +5610,7 @@ Two thousand seven hundred sits above $2500$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -5631,7 +5631,7 @@ Because $25<\\frac{75}{2}$, an extra account adds less after eighty-one than aft
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5651,7 +5651,7 @@ Six hundred and twenty-five sits above $600$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 51,
@@ -5687,7 +5687,7 @@ The recovered bill is $C(n)=100 n^{\\frac{3}{4}}$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -5704,7 +5704,7 @@ $$2^{-\\frac{3}{2}}=\\frac{1}{2\\sqrt{2}}\\approx 0.354$$
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5721,7 +5721,7 @@ The leftover exponent is not $0$, so the intensity still depends on range.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5738,7 +5738,7 @@ Four tenths sits below one half.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -5755,7 +5755,7 @@ Distance needed for a given concentration is still a monomial in $c$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5771,7 +5771,7 @@ Fifty is not under forty-five.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 52,
@@ -5807,7 +5807,7 @@ The recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -5818,7 +5818,7 @@ $$L(w)=4 w^{\\frac{3}{2}}$$
 A monomial in $w$ is a power of wind speed. There is no leftover constant and no logarithm.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5833,7 +5833,7 @@ That is not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5850,7 +5850,7 @@ Two thousand and forty-eight sits above $2000$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered composed exponent $\\frac{3}{2}$.
 
@@ -5863,7 +5863,7 @@ Losses accelerate as the wind strengthens.
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5879,7 +5879,7 @@ That wind speed does not sit above $50$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 53,
@@ -5913,7 +5913,7 @@ The recovered composition is a monomial in wind speed, coefficient $4$ and expon
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -5928,7 +5928,7 @@ $$\\frac{1}{2}<1$$
 Impact grows more slowly than order size.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -5943,7 +5943,7 @@ That is not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -5960,7 +5960,7 @@ Twenty-four sits above $20$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -5975,7 +5975,7 @@ The leftover exponent on the scaled charge is $\\frac{3}{2}>1$, so past $v=\\fra
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -5991,7 +5991,7 @@ Seven point five does not sit above $10$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 54,
@@ -6027,7 +6027,7 @@ $$vI(v)=60 v^{\\frac{3}{2}}.$$`,
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -6044,7 +6044,7 @@ Body mass as a function of daily energy is still a monomial in $E$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6061,7 +6061,7 @@ The leftover exponent is negative, so energy use per kilogram falls as body mass
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6078,7 +6078,7 @@ One hundred and sixty sits above $150$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -6093,7 +6093,7 @@ Combining the two animals cuts total energy use.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6109,7 +6109,7 @@ Three hundred and sixty sits under $400$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 55,
@@ -6143,7 +6143,7 @@ The recovered energy is $E(m)=10 m^{\\frac{2}{3}}$.`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -6154,7 +6154,7 @@ The exponent is negative, so $f$ is strictly decreasing for $d>0$. A farther zon
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6167,7 +6167,7 @@ Footfall is steeper than inverse-linear and shallower than inverse-square.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6184,7 +6184,7 @@ One hundred and eighteen sits above $100$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -6201,7 +6201,7 @@ That boundary sits before $11$ kilometres.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6217,7 +6217,7 @@ The leftover exponent on $\\lvert f'(d)\\rvert$ is negative, so the cut is large
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 56,
@@ -6253,7 +6253,7 @@ The recovered footfall is $f(d)=3200 d^{-1.5}$.`,
     ],
     answer_key: [true, false, true, true, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -6268,7 +6268,7 @@ Output grows more slowly than the installed area.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6285,7 +6285,7 @@ Five hundred and nine does not sit above $520$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6302,7 +6302,7 @@ The leftover exponent is negative, so output per square metre falls as the array
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -6319,7 +6319,7 @@ Area must go from $100$ to $400$, which is more than a doubling.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6335,7 +6335,7 @@ Four hundred and eighty sits above $470$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 57,
@@ -6377,7 +6377,7 @@ The recovered output is $y(a)=24 a^{\\frac{1}{2}}$.`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -6392,7 +6392,7 @@ That is not $\\frac{1}{2}$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $c(N)=800 N^{-\\frac{1}{2}}$ and
 
@@ -6407,7 +6407,7 @@ Spend rises while unit cost falls.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6424,7 +6424,7 @@ Twenty sits below $25$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -6447,7 +6447,7 @@ Spend doubles, it does not more than double.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6463,7 +6463,7 @@ One hundred and sixty sits above $150$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 58,
@@ -6507,7 +6507,7 @@ $$S(N)=800 N^{\\frac{1}{2}}.$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -6522,7 +6522,7 @@ That factor sits above $2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -6533,7 +6533,7 @@ $$S(q)=0.625 q^{1.5}$$
 A monomial in $q$ is a power of discharge. There is no leftover constant and no logarithm.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6550,7 +6550,7 @@ Five thousand sits above $4500$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -6569,7 +6569,7 @@ That is not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6585,7 +6585,7 @@ Three hundred and twenty does not sit under $300$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 59,
@@ -6621,7 +6621,7 @@ $$S(q)=5\\left(\\frac{q^{0.5}}{2}\\right)^{3}=0.625 q^{1.5}.$$`,
     ],
     answer_key: [true, true, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -6634,7 +6634,7 @@ A monomial in $p$ is a power of price. There is no leftover constant and no loga
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered
 
@@ -6649,7 +6649,7 @@ Revenue always falls as the price rises.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6666,7 +6666,7 @@ Six hundred and forty sits below $700$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -6681,7 +6681,7 @@ Quantity falls by about $24.9\\%$, which is more than $20\\%$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6693,7 +6693,7 @@ The leftover exponent is negative, so a price rise cuts $pq$. Elastic demand of 
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 60,
@@ -6729,7 +6729,7 @@ $$R(p)=4000 p^{-2}.$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -6744,7 +6744,7 @@ A current factor $c>1$ then multiplies strength by $c^{\\frac{3}{2}}$, which exc
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6761,7 +6761,7 @@ $$S(16)=320$$
 The claim needs more than $300$ N. We have $320>300$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6778,7 +6778,7 @@ Current needed for a given strength is still a power of that strength.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -6801,7 +6801,7 @@ $$S'(9)=\\frac{45}{2}$$
 The claim needs $S'(4)>S'(9)$. We have $15<\\frac{45}{2}$.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6817,7 +6817,7 @@ The smallest clearing current is about $18.57$ A, which is not below $18$ A.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 61,
@@ -6869,7 +6869,7 @@ $$S(p)=5p^{\\frac{3}{2}}$$`,
     ],
     answer_key: [false, true, false, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -6888,7 +6888,7 @@ $$H(64)=96$$
 The claim needs $48>96$. We have $48<96$.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -6905,7 +6905,7 @@ $$H(125)=150$$
 The claim needs more than $140$ kN. We have $150>140$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -6918,7 +6918,7 @@ The factor is about $1.587$, not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -6935,7 +6935,7 @@ Mass needed for a given holding power is still a power of that holding power.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -6965,7 +6965,7 @@ Reaching $150$ kN takes $0.125$ tonnes.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 62,
@@ -7015,7 +7015,7 @@ $$H(t)=600t^{\\frac{2}{3}}$$`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -7032,7 +7032,7 @@ Hop distance needed for a given throughput is still a power of that throughput.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7049,7 +7049,7 @@ The farthest reliable hop is $10$ m, which is already under $12$ m.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7064,7 +7064,7 @@ Doubling a hop quarters throughput.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -7077,7 +7077,7 @@ $$T(11)=\\frac{800}{121}\\approx 6.61$$
 The claim needs $T(11)\\ge 8$. We have $6.61<8$.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7099,7 +7099,7 @@ $$|T'(8)|=3.125$$
 
 The claim needs a larger cut at $8$ m than at $4$ m. We have $3.125<25$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 63,
@@ -7137,7 +7137,7 @@ $$T(d)=\\frac{800}{d^{2}}$$`,
     ],
     answer_key: [true, true, false, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered exponent $\\frac{3}{4}$. Gill area grows more slowly than body mass when that exponent is smaller than one:
 
@@ -7148,7 +7148,7 @@ A mass factor $c>1$ then multiplies area by $c^{\\frac{3}{4}}$, which is less th
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7165,14 +7165,14 @@ $$G(16)=64$$
 The claim needs more than $50$ cm$^{2}$. We have $64>50$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered intensity $8m^{-\\frac{1}{4}}$. The leftover exponent is negative, so intensity falls as mass grows on $m>0$. It is not constant across body masses.
 
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -7185,7 +7185,7 @@ The factor is about $1.682$, not $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7203,7 +7203,7 @@ $$G(64)=128\\sqrt{2}\\approx 181.02$$
 
 The claim needs more than $200$ cm$^{2}$. We have $181.02<200$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 64,
@@ -7245,7 +7245,7 @@ $$\\frac{G(m)}{m}=8m^{-\\frac{1}{4}}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -7260,7 +7260,7 @@ The multiplier is exactly $2$ at every starting day.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7275,7 +7275,7 @@ $$S(4)=10$$
 The claim needs more than $8$ MPa. We have $10>8$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7298,7 +7298,7 @@ $$S'(9)=\\frac{5}{6}$$
 The claim needs $S'(9)>S'(4)$. We have $\\frac{5}{6}<\\frac{5}{4}$.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -7315,7 +7315,7 @@ Thirty-six days is still under $40$ days.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7329,7 +7329,7 @@ Day $9$ carries $15$ MPa, not the $5$ MPa rise.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 65,
@@ -7367,7 +7367,7 @@ $$S(t)=5\\sqrt{t}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -7382,7 +7382,7 @@ A span factor $c>1$ then multiplies deflection by $c^{2}$, which exceeds $c$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7395,7 +7395,7 @@ $$y(9)=162$$
 The claim needs more than $155$ mm. We have $162>155$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7410,7 +7410,7 @@ Doubling the span quadruples the tip deflection.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -7429,7 +7429,7 @@ The shortfall is $12$ mm, which is more than $10$ mm.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7437,7 +7437,7 @@ A point sits on the trusted power law only when it matches the recovered quadrat
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 66,
@@ -7483,7 +7483,7 @@ $$y(L)=2L^{2}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -7498,7 +7498,7 @@ A height factor $c>1$ then multiplies mass by $c^{3}$, which exceeds $c$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7511,7 +7511,7 @@ $$M(12)=864$$
 The claim needs more than $800$ kg. We have $864>800$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7524,7 +7524,7 @@ That equation fixes $k=3$ and contains no level, so it cannot select $A$. The co
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -7539,7 +7539,7 @@ Mass rises by $33.1\\%$, which is more than $30\\%$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7551,7 +7551,7 @@ Mass rises by $72.8\\%$, not by $20\\%$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 67,
@@ -7599,7 +7599,7 @@ $$M(h)=\\frac{1}{2}h^{3}$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -7614,7 +7614,7 @@ Doubling the distance cuts intensity to one quarter.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7627,7 +7627,7 @@ $$I(4)=0.18$$
 The claim needs under $0.2$ W/m$^{2}$. We have $0.18<0.2$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7650,7 +7650,7 @@ The cut is larger at $2$ m than at $6$ m.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -7663,7 +7663,7 @@ $$I(6)=0.08$$
 The night cap is $0.08$ W/m$^{2}$. Intensity at $6$ m equals the cap, which is not still above it.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7679,7 +7679,7 @@ The cap is met at $d=6$ m, a finite distance.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 68,
@@ -7717,7 +7717,7 @@ $$I(d)=\\frac{2.88}{d^{2}}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -7728,7 +7728,7 @@ $$v(q)=4\\sqrt{2}\\, q$$
 After both stages the exponent on flow is $1$. Jet speed is proportional to flow.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7747,7 +7747,7 @@ $$v(5)=20\\sqrt{2}\\approx 28.28$$
 The claim needs more than $28$ m/s. We have $28.28>28$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7762,7 +7762,7 @@ Doubling the flow quadruples the head.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -7777,7 +7777,7 @@ Ten cubic metres per hour is still under $12$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7789,7 +7789,7 @@ Head is proportional to the square of jet speed, not to jet speed itself.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 69,
@@ -7835,7 +7835,7 @@ $$v(q)=4\\sqrt{2}\\, q$$`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -7852,7 +7852,7 @@ The logged crew is $16$ drivers, and $64=4\\cdot 16$, which is more than a doubl
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7873,7 +7873,7 @@ $$T(36)=120$$
 The claim needs more than $110$ pallets per hour. We have $120>110$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -7886,7 +7886,7 @@ The leftover exponent is negative, so intensity falls as the crew grows. It does
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -7903,7 +7903,7 @@ The safety cap is $36$ drivers, and $56.25>36$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -7911,7 +7911,7 @@ The recovered exponent $0.5$ is positive, so $T(s)$ rises with $s$. The largest 
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 70,
@@ -7951,7 +7951,7 @@ $$T(s)=20\\sqrt{s}$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -7961,10 +7961,10 @@ $$r=-\\frac{3}{2}$$
 
 Subscribers fall faster than price rises when that exponent is smaller than minus one:
 
-$$-\\frac{3}{2}<-1$$
+$$-\\frac{3}{2}<-1$$.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -7985,7 +7985,7 @@ $$R(16)=500$$
 The claim needs under $600$ thousand euros. We have $500<600$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -7996,7 +7996,7 @@ $$R(p)=2000p^{-\\frac{1}{2}}$$
 That is a power of price, with exponent $-\\frac{1}{2}$.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8011,7 +8011,7 @@ The price factor is $\\frac{1}{4}$, not $\\frac{1}{2}$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8029,7 +8029,7 @@ $$R(9)=\\frac{2000}{3}\\approx 666.67$$
 
 The claim needs under $600$ thousand euros. We have $666.67>600$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 71,
@@ -8077,7 +8077,7 @@ $$R(p)=2000p^{-\\frac{1}{2}}$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered a nonzero retainer
 
@@ -8088,7 +8088,7 @@ A power function of $n$ would be a single monomial $An^{r}$. Adding a positive c
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8109,7 +8109,7 @@ $$C(900)=1300$$
 The claim needs more than $1200$ euros. We have $1300>1200$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8122,7 +8122,7 @@ Both terms fall as $n$ grows. A larger network is cheaper per branch.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8135,7 +8135,7 @@ The whole bill is multiplied by about $1.429$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8157,7 +8157,7 @@ The $100$-branch invoice is $700$ euros, and $580<700$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 72,
@@ -8201,7 +8201,7 @@ $$C(n)=400+30n^{\\frac{1}{2}}$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -8226,7 +8226,7 @@ which is positive for $q>0$, so the critical point is a minimum. That point is t
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8247,7 +8247,7 @@ $$T(60)=260$$
 The claim needs more than $250$ euros. We have $260>250$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8266,7 +8266,7 @@ The annual total changes from $240$ to $300$. It is not unchanged.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -8285,7 +8285,7 @@ Cutting the batch from $40$ to $20$ raises $T$ by $60$ euros, and raising it fro
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8297,7 +8297,7 @@ $$O(80)=60$$
 
 The claim needs more than $200$ euros. We have $60<200$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 73,
@@ -8337,14 +8337,14 @@ $$T(q)=\\frac{4800}{q}+3q$$`,
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered average product $12L^{-\\frac{1}{4}}$. That is a power of labour hours, but its exponent is $-\\frac{1}{4}$, not the output exponent $\\frac{3}{4}$.
 
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8359,7 +8359,7 @@ $$\\frac{Q(16)}{16}=6$$
 The claim needs under $7$ units an hour. We have $6<7$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8372,14 +8372,14 @@ She must more than double the labour hours.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered average product $12L^{-\\frac{1}{4}}$. The leftover exponent is negative, so average product falls as labour hours rise. The claim is that ranking
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8393,7 +8393,7 @@ $$\\frac{Q(81)}{81}=4$$
 
 The claim needs more than $5$ units an hour. We have $4<5$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 74,
@@ -8447,7 +8447,7 @@ $$\\frac{Q(L)}{L}=12L^{-\\frac{1}{4}}$$`,
     ],
     answer_key: [true, true, true, false, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered floor
 
@@ -8462,7 +8462,7 @@ For every finite $n\\ge 1$ that learning term is still positive. Unit time appro
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8479,7 +8479,7 @@ $$t(900)=\\frac{29}{3}\\approx 9.67$$
 The claim needs under $10$ minutes. We have $9.67<10$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8492,7 +8492,7 @@ Quadrupling halves the learning component.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8507,7 +8507,7 @@ Modelled unit time is multiplied by about $0.722$, not by $\\frac{1}{2}$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8519,7 +8519,7 @@ $$t(4)=33$$
 
 The claim needs under $30$ minutes. We have $33>30$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 75,
@@ -8563,7 +8563,7 @@ $$t(n)=8+50n^{-\\frac{1}{2}}$$`,
     ],
     answer_key: [false, true, false, true, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -8576,7 +8576,7 @@ not $2$. Revenue is not proportional to the tonnes of feed used.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8595,7 +8595,7 @@ Cost $1920$ already exceeds revenue $1440$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8618,7 +8618,7 @@ $$R'(27)=20$$
 The claim needs $R'(27)>R'(8)$. We have $20<30$.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -8635,7 +8635,7 @@ For $x>27$ the ratio $\\frac{R(x)}{C(x)}=\\frac{3}{x^{\\frac{1}{3}}}$ stays belo
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8649,7 +8649,7 @@ The season clears $120$ thousand euros, which is more than $100$.
 
 The computed figure agrees with the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 76,
@@ -8691,7 +8691,7 @@ $$C(x)=30x$$`,
     ],
     answer_key: [false, true, true, false, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -8706,7 +8706,7 @@ A factor of $4$ on the index multiplies handling cost by $8$, not by $4$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8719,7 +8719,7 @@ $$f(9)=162$$
 The claim needs more than $150$ euros. We have $162>150$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered exponent $\\frac{3}{2}$. Handling cost grows faster than the index when that exponent is larger than one:
 
@@ -8730,7 +8730,7 @@ $$\\frac{3}{2}>1$$
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8749,7 +8749,7 @@ The gaps are not equal.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8767,7 +8767,7 @@ The added cost is $588$ euros, which is not under $500$.
 
 The computed figure disagrees with the claim.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 77,
@@ -8807,7 +8807,7 @@ $$f(x)=6x^{\\frac{3}{2}}$$`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -8824,7 +8824,7 @@ Scale needed for a given load is still a power of that load.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8841,7 +8841,7 @@ The largest admissible scale is $16$, which is already below $20$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8854,7 +8854,7 @@ The scale index is multiplied by about $1.587$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8867,7 +8867,7 @@ The new scale is about $0.630$ times the old one, not half.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8879,7 +8879,7 @@ $$W(4)=40$$
 
 The claim needs under $50$ kilograms. We have $40<50$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 78,
@@ -8919,7 +8919,7 @@ $$W(s)=5s^{\\frac{3}{2}}$$`,
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -8938,7 +8938,7 @@ $$\\left(\\frac{5}{4}\\right)^{-2}=0.64$$
 Exact demand falls by $36\\%$, not by $50\\%$. The two routes do not agree.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -8955,7 +8955,7 @@ $$q(3.75)=2560$$
 The claim needs more than $2500$ occupied spaces. We have $2560>2500$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -8974,7 +8974,7 @@ The shortcut's $50\\%$ loss is larger than the exact $36\\%$ loss.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -8987,7 +8987,7 @@ Demand rises by about $77.8\\%$. A $25\\%$ rise cuts demand by $36\\%$, and $77.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -8999,7 +8999,7 @@ $$q(2)=9000$$
 
 The claim needs more than $8000$ occupied spaces. We have $9000>8000$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 79,
@@ -9037,7 +9037,7 @@ $$q(p)=36000p^{-2}$$`,
     ],
     answer_key: [true, true, false, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -9048,7 +9048,7 @@ $$3>1$$
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -9065,7 +9065,7 @@ $$M(1.5)=810$$
 The claim needs more than $700$ kg. We have $810>700$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -9080,7 +9080,7 @@ Doubling a bell's height multiplies its mass by $8$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -9093,7 +9093,7 @@ That quantity still depends on $h$. It is not the same at every height.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -9103,7 +9103,7 @@ $$M(1)=240$$
 
 The claim needs more than $200$ kg. We have $240>200$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 80,
@@ -9143,7 +9143,7 @@ $$M(h)=240h^{3}$$`,
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -9160,7 +9160,7 @@ The leftover exponent is $3$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered power exponent $3$. Doubling speed multiplies absorbed power by
 
@@ -9173,7 +9173,7 @@ Power rises eightfold, not twofold.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered $P(v)=\\frac{1}{2}v^{3}$. Differentiating gives
 
@@ -9194,7 +9194,7 @@ $$P'(12)=216$$
 The claim needs $P'(12)>P'(8)$. We have $216>96$.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9210,10 +9210,10 @@ $$P(8)=256$$
 
 The claim is that this sits under $300$. Compare with the claim:
 
-$$256<300$$
+$$256<300$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9229,9 +9229,9 @@ $$P(12)=864$$
 
 The claim is that this sits under $800$. Compare with the claim:
 
-$$864>800$$
+$$864>800$$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 81,
@@ -9287,7 +9287,7 @@ The recovered laws are $F(v)=\\frac{1}{2}v^{2}$ and $P(v)=\\frac{1}{2}v^{3}$.
     ],
     answer_key: [false, false, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -9306,7 +9306,7 @@ The exponent is $-3$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -9323,7 +9323,7 @@ $$r=-1$$
 Doubling depth leaves one eighth of the signal, not one half.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -9342,7 +9342,7 @@ The inverse is a power function of the reading.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9358,10 +9358,10 @@ $$S(4)=6.25$$
 
 The claim is that this already sits under $7$. Compare with the claim:
 
-$$6.25<7$$
+$$6.25<7$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered $S=400x^{-3}$. A reading of $3.2$ millivolts inverts by
 
@@ -9375,7 +9375,7 @@ $$x=5$$
 
 The claim is a depth of more than $8$ metres. We have $5<8$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 82,
@@ -9425,7 +9425,7 @@ The recovered law is $S(x)=400x^{-3}$.
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered demand exponent $\\frac{3}{4}$. Demand lags mass when that exponent sits below $1$.
 
@@ -9438,7 +9438,7 @@ The leftover exponent is $\\frac{3}{4}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 Form the ratio so the unknown positive coefficient cancels.
 
@@ -9453,7 +9453,7 @@ Demand per unit gill area climbs.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered $G(m)=3m^{\\frac{2}{3}}$. Two $16$ g fish have total gill area
 
@@ -9474,7 +9474,7 @@ Two $16$ g fish out-area one $32$ g fish.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered
 
@@ -9491,7 +9491,7 @@ $$D(256)=320$$
 The claim is that this already sits above $300$. We have $320>300$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -9505,7 +9505,7 @@ $$16\\cdot D(16)=640$$
 
 The claim is that this still sits under $600$. We have $640>600$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 83,
@@ -9553,7 +9553,7 @@ The recovered laws are $D(m)=5m^{\\frac{3}{4}}$ and $G(m)=3m^{\\frac{2}{3}}$.
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered flow exponent $4$. Flow outruns radius when that exponent exceeds $1$.
 
@@ -9566,7 +9566,7 @@ The leftover exponent is $4$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -9581,7 +9581,7 @@ The claim is a factor of $2$, which would have needed $k=1$.
 Doubling the radius multiplies flow by $16$, not by $2$.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -9600,7 +9600,7 @@ The velocity index is not the same in every tube.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9616,10 +9616,10 @@ $$Q(3)=243$$
 
 The claim is that this already sits above $200$. Compare with the claim:
 
-$$243>200$$
+$$243>200$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9635,9 +9635,9 @@ $$Q(1)=3$$
 
 The claim is that this still sits above $10$. Compare with the claim:
 
-$$3<10$$
+$$3<10$$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 84,
@@ -9685,7 +9685,7 @@ The recovered law is $Q(r)=3r^{4}$.
     ],
     answer_key: [false, true, true, true, false],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 The overview recovered
 
@@ -9702,7 +9702,7 @@ $$r=-1$$
 Doubling the distance quarters the dose rate, not halves it.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $H(d)=720d^{-2}$. Differentiating gives
 
@@ -9723,7 +9723,7 @@ $$H'(6)=-\\frac{20}{3}$$
 An extra metre cuts more dose where the derivative is more negative. We have $-\\frac{160}{3}<-\\frac{20}{3}$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -9742,7 +9742,7 @@ The inverse is a power of the dose rate.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9758,10 +9758,10 @@ $$H(6)=20$$
 
 The claim is that this already sits under $25$. Compare with the claim:
 
-$$20<25$$
+$$20<25$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -9775,7 +9775,7 @@ $$d=12$$
 
 The claim is a barrier farther than $15$ metres. We have $12<15$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `2/5`,
     sort_order: 85,
@@ -9825,7 +9825,7 @@ The recovered law is $H(d)=720d^{-2}$.
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -9838,7 +9838,7 @@ The stained area is a power of elapsed time.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered area exponent $\\frac{4}{3}$. Area outruns elapsed time when that exponent exceeds $1$.
 
@@ -9851,7 +9851,7 @@ The leftover exponent is $\\frac{4}{3}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered area exponent $\\frac{4}{3}$. Doubling elapsed time multiplies stained area by
 
@@ -9862,7 +9862,7 @@ which is not $2$. The claim would have needed leftover exponent $1$ on $S$.
 Doubling time does not double the stained area.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9878,10 +9878,10 @@ $$r(8)=60$$
 
 The claim is that this already sits above $50$. Compare with the claim:
 
-$$60>50$$
+$$60>50$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered $r(t)=15t^{\\frac{2}{3}}$. A radius of $240$ metres inverts by
 
@@ -9893,7 +9893,7 @@ $$t=64$$
 
 The claim is that this happens in under $50$ hours. We have $64>50$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 86,
@@ -9933,7 +9933,7 @@ $$S(t)=225\\pi t^{\\frac{4}{3}}$$
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -9952,7 +9952,7 @@ The inverse is a power of discharge.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered discharge exponent $\\frac{3}{2}$. Discharge outruns head when that exponent exceeds $1$.
 
@@ -9965,7 +9965,7 @@ The leftover exponent is $\\frac{3}{2}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 The overview recovered exponent $\\frac{3}{2}$. Doubling the head multiplies discharge by
 
@@ -9976,7 +9976,7 @@ which is not $2$. The claim would have needed leftover exponent $1$.
 Doubling the head does not double the discharge.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -9992,10 +9992,10 @@ $$Q(1)=16$$
 
 The claim is that this still sits under $20$. Compare with the claim:
 
-$$16<20$$
+$$16<20$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 The overview recovered
 
@@ -10011,7 +10011,7 @@ $$Q(4)=128$$
 
 The claim is that this still sits under $100$. We have $128>100$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 87,
@@ -10049,7 +10049,7 @@ The recovered law is $Q(h)=16h^{\\frac{3}{2}}$.
     ],
     answer_key: [true, false, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered fuel exponent $2$. Fuel use outruns batch mass when that exponent exceeds $1$.
 
@@ -10062,7 +10062,7 @@ The leftover exponent is $2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -10079,7 +10079,7 @@ Doubling the batch multiplies fuel by $4$, not by $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -10094,7 +10094,7 @@ Fuel use per tonne climbs.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10110,10 +10110,10 @@ $$F(10)=300$$
 
 The claim is that this already sits above $250$. Compare with the claim:
 
-$$300>250$$
+$$300>250$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10129,9 +10129,9 @@ $$F(6)=108$$
 
 The claim is that this still sits under $100$. Compare with the claim:
 
-$$108>100$$
+$$108>100$$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `3/5`,
     sort_order: 88,
@@ -10183,7 +10183,7 @@ The recovered law is $F(x)=3x^{2}$.
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered the composition
 
@@ -10196,7 +10196,7 @@ The composed index is a power of the throttle.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered composed exponent $2$. Proportionality to the throttle would have needed leftover exponent $1$.
 
@@ -10209,7 +10209,7 @@ The leftover exponent is $2$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -10224,7 +10224,7 @@ Mass flow per unit throttle falls.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10240,10 +10240,10 @@ $$m(25)=10$$
 
 The claim is that this already sits above $8$. Compare with the claim:
 
-$$10>8$$
+$$10>8$$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -10255,7 +10255,7 @@ $$t=9$$
 
 The claim is a throttle setting above $20$. We have $9<20$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `5/5`,
     sort_order: 89,
@@ -10291,7 +10291,7 @@ $$P\\bigl(m(t)\\bigr)=\\frac{\\bigl(2t^{\\frac{1}{2}}\\bigr)^{4}}{16}=\\frac{16t
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -10310,7 +10310,7 @@ They do not quote the same wait at two different positive distances.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $L(d)=4d^{\\frac{1}{2}}$ and
 
@@ -10327,7 +10327,7 @@ After App L is shorter, App Q stays longer.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -10342,7 +10342,7 @@ Wait per kilometre on App L falls.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -10359,7 +10359,7 @@ App L cannot serve trips longer than $30$ kilometres under the cap.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview recovered $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$. At $400$ kilometres:
 
@@ -10373,7 +10373,7 @@ $$Q(400)=80$$
 
 The claim is that both already sit above $70$. We have $80>70$ on each app.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `3/5`,
     sort_order: 90,
@@ -10413,7 +10413,7 @@ The recovered waits are $L(d)=4d^{\\frac{1}{2}}$ and $Q(d)=\\frac{1}{5}d$.
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -10430,7 +10430,7 @@ The leftover exponent is $\\frac{1}{2}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered
 
@@ -10445,7 +10445,7 @@ which is not $2$. The claim would have needed leftover exponent $1$.
 Doubling the deficit does not double evaporation.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -10462,7 +10462,7 @@ She must more than double the humidity deficit.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered $E(h)=20h^{\\frac{1}{2}}$. Differentiating gives
 
@@ -10479,7 +10479,7 @@ $$E'(4)=5$$
 The claim needs $E'(4)>E'(1)$. We have $5<10$.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10495,9 +10495,9 @@ $$E(25)=100$$
 
 The claim is that this already sits above $90$. Compare with the claim:
 
-$$100>90$$
+$$100>90$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 91,
@@ -10537,7 +10537,7 @@ The recovered law is $E(h)=20h^{\\frac{1}{2}}$. The third reading matches: $E(9)
     ],
     answer_key: [true, true, false, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered
 
@@ -10552,7 +10552,7 @@ The net is not a power of $n$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10568,10 +10568,10 @@ $$N(9)=18$$
 
 The claim is that this already sits above $15$. Compare with the claim:
 
-$$18>15$$
+$$18>15$$.
 
 So the statement is True.`,
-      `**C.** → False
+    `**C.** → False
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -10598,7 +10598,7 @@ The net stays negative after upkeep overtakes benefit.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**D.** → True
+    `**D.** → True
 
 The overview recovered $N(n)=12n^{\\frac{1}{2}}-2n$. Differentiating gives
 
@@ -10619,7 +10619,7 @@ $$N'(9)=0$$
 The claim needs $N'(4)>N'(9)$. We have $1>0$.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10635,9 +10635,9 @@ $$N(4)=16$$
 
 The claim is that this already sits above $20$. Compare with the claim:
 
-$$16<20$$
+$$16<20$$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 92,
@@ -10679,7 +10679,7 @@ $$N(n)=12n^{\\frac{1}{2}}-2n$$
     ],
     answer_key: [true, false, true, true, false],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -10698,7 +10698,7 @@ The inverse is a power function of demand.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered exponent $-2$. Doubling the five-euro price multiplies demand by
 
@@ -10709,7 +10709,7 @@ The claim is a factor of $\\frac{1}{2}$, which would have needed exponent $-1$.
 Doubling the price quarters demand, not halves it.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10725,10 +10725,10 @@ $$q(10)=20$$
 
 The claim is that this already sits under $25$. Compare with the claim:
 
-$$20<25$$
+$$20<25$$.
 
 So the statement is True.`,
-      `**D.** → True
+    `**D.** → True
 
 Start from the calibrated closed form in the overview.
 
@@ -10747,7 +10747,7 @@ Revenue is $\\frac{2000}{p}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**E.** → False
+    `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -10763,7 +10763,7 @@ $$p=4$$
 
 The claim is a price above $5$ euros. We have $4<5$.
 
-So the statement is False.`,
+So the statement is False.`
     ],
     difficulty_level: `4/5`,
     sort_order: 93,
@@ -10799,7 +10799,7 @@ The recovered law is $q(p)=2000p^{-2}$.
     ],
     answer_key: [true, false, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered the composition
 
@@ -10812,7 +10812,7 @@ Composed demand is a power function of the subsidy index.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → False
+    `**B.** → False
 
 The overview recovered composed exponent $-1$. Tripling the subsidy index multiplies composed demand by
 
@@ -10823,7 +10823,7 @@ The claim is a factor of $3$, which would have needed leftover exponent $1$.
 Tripling $s$ divides demand by $3$.
 
 So the statement is False.`,
-      `**C.** → True
+    `**C.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10837,10 +10837,10 @@ $$\\frac{400}{8}=50$$
 
 The claim is that this already sits above $40$. Compare with the claim:
 
-$$50>40$$
+$$50>40$$.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 The overview recovered
 
@@ -10853,7 +10853,7 @@ Composed demand falls in $s$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -10867,9 +10867,9 @@ $$\\frac{400}{27}\\approx 14.81$$
 
 The claim is that this stays under $16$. Compare with the claim:
 
-$$14.81<16$$
+$$14.81<16$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 94,
@@ -10919,7 +10919,7 @@ $$=\\frac{400}{s}$$
     ],
     answer_key: [false, true, true, false, true],
     tactical_explanations: [
-      `**A.** → False
+    `**A.** → False
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -10938,7 +10938,7 @@ Concentrating on the cheaper line is not the cheapest plan.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview already scored the named plan. That plan sending all thirty thousand loaves to line 2 scores
 
@@ -10951,7 +10951,7 @@ $$225>200$$
 The score sits above $200$, matching the claim.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 The overview recovered $a=1>b=\\frac{1}{4}$ and the equal-marginal split
 
@@ -10968,7 +10968,7 @@ The cheaper line takes $24$ thousand loaves against $6$ on line 1.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -10983,7 +10983,7 @@ Average cost on line 1 climbs.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 The overview already scored the six-and-twenty-four bread split. That named plan scores
 
@@ -10995,7 +10995,7 @@ $$180 < 200$$
 
 The score sits below $200$, matching the claim.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 95,
@@ -11041,7 +11041,7 @@ $$C_{2}(30)=225, \\qquad C_{1}(6)+C_{2}(24)=180$$
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 Name the recovered power rule, then substitute the claimed input.
 
@@ -11064,7 +11064,7 @@ Elasticity is constantly $-2$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $q(p)=4000p^{-2}$. Raising the price from $10$ to $12$ euros takes demand from $40$ to
 
@@ -11079,7 +11079,7 @@ $$40-\\frac{250}{9}=\\frac{110}{9}\\approx 12.22$$
 The claim is a cut of more than $10$ tickets. We have $12.22>10$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Read the exponent from the overview before comparing growth rates.
 
@@ -11100,7 +11100,7 @@ The shortcut overstates the exact drop.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -11119,7 +11119,7 @@ Revenue is $\\frac{4000}{p}$, which falls as $p$ grows.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -11135,9 +11135,9 @@ $$q(5)=160$$
 
 The claim is that this already sits above $150$. Compare with the claim:
 
-$$160>150$$
+$$160>150$$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `5/5`,
     sort_order: 96,
@@ -11173,7 +11173,7 @@ The recovered law is $q(p)=4000p^{-2}$.
     ],
     answer_key: [true, true, true, false, true],
     tactical_explanations: [
-      `**A.** → True
+    `**A.** → True
 
 The overview recovered exponent $\\frac{3}{2}$. Throughput outruns the belt setting when that exponent exceeds $1$.
 
@@ -11186,7 +11186,7 @@ The leftover exponent is $\\frac{3}{2}$.
 The computed figure agrees with the claim.
 
 So the statement is True.`,
-      `**B.** → True
+    `**B.** → True
 
 The overview recovered $T(e)=8e^{\\frac{3}{2}}$. Differentiating gives
 
@@ -11207,7 +11207,7 @@ $$T'(9)=36$$
 The claim needs $T'(9)>T'(4)$. We have $36>24$.
 
 So the statement is True.`,
-      `**C.** → True
+    `**C.** → True
 
 Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
@@ -11223,10 +11223,10 @@ $$T(9)=216$$
 
 The claim is that this already sits above $200$. Compare with the claim:
 
-$$216>200$$
+$$216>200$$.
 
 So the statement is True.`,
-      `**D.** → False
+    `**D.** → False
 
 Start from the calibrated closed form in the overview.
 
@@ -11241,7 +11241,7 @@ The doubling factor is independent of $A$.
 The computed figure disagrees with the claim.
 
 So the statement is False.`,
-      `**E.** → True
+    `**E.** → True
 
 Keep the stated domain in force while you evaluate the model.
 
@@ -11253,7 +11253,7 @@ $$T(9)=270$$
 
 The claim is that this already exceeds $250$. We have $270>250$.
 
-So the statement is True.`,
+So the statement is True.`
     ],
     difficulty_level: `4/5`,
     sort_order: 97,
