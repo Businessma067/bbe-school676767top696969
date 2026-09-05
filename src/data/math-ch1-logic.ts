@@ -1241,11 +1241,13 @@ which is not what the statement asserts.
 So the statement is False.`,
       `**D.** → True
 
-Nonempty subsets drop only the empty set from the power set. First
+Nonempty subsets are the full power set with the empty set removed. For $|A|=5$,
 
-$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}=32$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}$$
 
-Then remove $\\emptyset$:
+$$2^{5}=32$$
+
+Drop only $\\emptyset$:
 
 $$32-1=31$$
 
@@ -1590,15 +1592,15 @@ A proper subset is a subset that is not equal to the whole. Two infinite sets ha
     tactical_explanations: [
       `**A.** → True
 
-Membership asks whether the number sits on the roster. Write the full list
+Membership asks whether the object appears among the listed elements. The roster is
 
 $$A=\\{2,4,6,8,10,12\\}$$
 
-and test the claimed element against it:
+Scan that list for $6$. It occupies the third place, so
 
-$$6\\in\\{2,4,6,8,10,12\\}$$
+$$6\\in A$$
 
-Yes, so $6\\in A$. So the statement is True.`,
+The claim asserts exactly that membership. So the statement is True.`,
       `**B.** → False
 
 The elements of $A$ are numbers, not singletons. The object $\\{6\\}$ is a one-element set:
@@ -1608,13 +1610,17 @@ $$\\{6\\}\\notin A$$
 even though $6\\in A$. The singleton is a subset of $A$, hence an element of $\\mathcal{P}(A)$, but that is not this claim. So the statement is False.`,
       `**C.** → True
 
-Subsethood asks whether every member of $\\{6,8\\}$ sits in $A=\\{2,4,6,8,10,12\\}$. Check each:
+A two-element set is a subset when each of its members sits in the larger set. Against
+
+$$A=\\{2,4,6,8,10,12\\}$$
+
+check both candidates:
 
 $$6\\in A$$
 
 $$8\\in A$$
 
-Both hold, so
+Both succeed, therefore
 
 $$\\{6,8\\}\\subseteq A$$
 
@@ -1891,7 +1897,11 @@ A set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts u
     tactical_explanations: [
       `**A.** → True
 
-Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$. Check each:
+Ordinary inclusion asks whether every member of the smaller set sits in the larger one. With
+
+$$E=\\{1,2,3\\},\\qquad F=\\{1,2,3,4\\}$$
+
+test each member of $E$:
 
 $$1\\in F$$
 
@@ -1899,7 +1909,7 @@ $$2\\in F$$
 
 $$3\\in F$$
 
-so
+All three succeed, so
 
 $$E\\subseteq F$$
 
@@ -1917,7 +1927,13 @@ $$E\\subsetneq F$$
 So the statement is True.`,
       `**C.** → False
 
-Subsethood $F\\subseteq E$ would require every member of $F=\\{1,2,3,4\\}$ to sit in $E=\\{1,2,3\\}$. But
+Ordinary inclusion $F\\subseteq E$ would require every member of $F$ to sit in $E$. Write the two rosters:
+
+$$F=\\{1,2,3,4\\}$$
+
+$$E=\\{1,2,3\\}$$
+
+The element $4$ sits in $F$ but not in $E$:
 
 $$4\\in F$$
 
