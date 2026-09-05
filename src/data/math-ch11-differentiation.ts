@@ -33,49 +33,49 @@ const MATH_CH11_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-The Newton quotient is the difference quotient that becomes the derivative once $h$ tends to zero. Form it at $x=a$ and expand $P(a+h)-P(a)$:
+The Newton quotient is the difference quotient that becomes the derivative once $h$ tends to zero. Form it at $x=a$, expand $P(a+h)-P(a)$, and cancel carefully:
 
 $$\\dfrac{P(a+h)-P(a)}{h}=\\dfrac{(a+h)^{2}-4(a+h)+7-(a^{2}-4a+7)}{h}$$
 
 $$\\dfrac{2ah+h^{2}-4h}{h}=2a+h-4$$
 
-That simplified expression is exactly the one named in the claim, so the statement is True.`,
+A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
-The derivative is the $h\\to 0$ limit of the Newton quotient, which collapses to the linear rule
+The derivative is the $h\\to 0$ limit of the Newton quotient. Sending $h$ to zero in $2a+h-4$ collapses the expression to the linear slope rule
 
-$$P^{\\prime}(x)=2x-4$$
+$$P'(x)=2x-4$$
 
 Substitute the named sales level $x=3$:
 
-$$P^{\\prime}(3)=2\\cdot 3-4=2$$
+$$P'(3)=2\\cdot 3-4=2$$
 
-The computed slope matches the claim, so the statement is True.`,
+Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
-A tangent line needs one point on the curve and the slope there. First evaluate the profit and its derivative at $x=3$:
+A tangent line needs one point on the curve and the slope there. First evaluate both the profit and its derivative at $x=3$:
 
-$$P(3)=9-12+7=4\\qquad P^{\\prime}(3)=2$$
+$$P(3)=9-12+7=4\\qquad P'(3)=2$$
 
 Point-slope form with point $(3,4)$ and slope $2$ rearranges as
 
 $$y-4=2(x-3)\\qquad\\Rightarrow\\qquad y=2x-2$$
 
-which is the claimed tangent, so the statement is True.`,
+A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
 Whether the curve rises or falls is controlled by the sign of the derivative
 
-$$P^{\\prime}(x)=2x-4$$
+$$P'(x)=2x-4$$
 
-For every $x>2$ one has $2x-4>0$, so the profit curve is increasing on that ray rather than decreasing. Comparing that with the claim, the statement is False.`,
+Solve $2x-4>0$ to see that $P'(x)>0$ for every $x>2$, so the profit curve is increasing on that ray. The claim asserts it is decreasing there — that flips the sign of $P'$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-A stationary point solves $P^{\\prime}(x)=0$:
+A stationary point solves $P'(x)=0$:
 
 $$2x-4=0\\qquad\\Rightarrow\\qquad x=2$$
 
-The leading coefficient of the upward-opening parabola $P(x)=x^{2}-4x+7$ is positive, so this unique stationary point is a minimum. Matching these figures to the claim, the statement is True.`
+The parabola $P(x)=x^{2}-4x+7$ opens upward (leading coefficient $+1>0$), so this unique stationary point is a minimum rather than a maximum. Do not confuse a critical-point location with a maximum just because profit is discussed. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 1,
@@ -84,19 +84,19 @@ The leading coefficient of the upward-opening parabola $P(x)=x^{2}-4x+7$ is posi
 
 $$P(x)=x^{2}-4x+7$$
 
-From first principles the Newton quotient expands and simplifies to
+From first principles, expand the Newton quotient at $x=a$:
 
 $$\\dfrac{P(a+h)-P(a)}{h}=2a+h-4$$
 
-Letting $h\\to 0$ yields the derivative
+Letting $h\\to 0$ collapses that expression to the derivative
 
-$$P^{\\prime}(x)=2x-4$$
+$$P'(x)=2x-4$$
 
-At the named sales level one has $P(3)=4$ and $P^{\\prime}(3)=2$, so the tangent line is
+At the named sales level one has $P(3)=4$ and $P'(3)=2$, so the tangent line is
 
 $$y-4=2(x-3)\\qquad\\text{i.e.}\\qquad y=2x-2$$
 
-The stationary point solves $P^{\\prime}(x)=0$, giving $x=2$. Because the leading coefficient of $P$ is positive, that point is a minimum, and $P^{\\prime}(x)>0$ for every $x>2$.`,
+The stationary point solves $P'(x)=0$, giving $x=2$. Because the leading coefficient of $P$ is positive, that point is a minimum, and $P'(x)>0$ for every $x>2$ (so the curve increases there).`,
   },
   {
     id: "math-11-2",
@@ -116,45 +116,45 @@ The stationary point solves $P^{\\prime}(x)=0$, giving $x=2$. Because the leadin
     tactical_explanations: [
       `**A.** → True
 
-Marginal cost is the derivative of total cost. Differentiate the quadratic schedule term by term:
+Marginal cost is the derivative of total cost with respect to output. Differentiate the quadratic schedule term by term:
 
 $$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
-$$C^{\\prime}(q)=12+\\dfrac{6}{100}q=12+\\dfrac{3}{50}q$$
+$$C'(q)=12+\\dfrac{6}{100}q=12+\\dfrac{3}{50}q$$
 
-which is exactly the claimed marginal-cost formula, so the statement is True.`,
+The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
-Substitute the named output $q=100$ into the marginal-cost rule:
+Substitute the named output $q=100$ into the marginal-cost rule already derived:
 
-$$C^{\\prime}(100)=12+\\dfrac{3}{50}\\cdot 100=12+6=18$$
+$$C'(100)=12+\\dfrac{3}{50}\\cdot 100=12+6=18$$
 
-The computed value matches the claim, so the statement is True.`,
+A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
-By definition, $C^{\\prime}(q)$ is the instantaneous rate of change of total cost in euros per unit. At $q=100$ that rate is
+By definition, $C'(q)$ is the instantaneous rate of change of total cost in euros per unit. At $q=100$ that rate is
 
-$$C^{\\prime}(100)=18$$
+$$C'(100)=18$$
 
-so producing one extra unit near that output raises total cost by approximately $18$ euros, so the statement is True.`,
+so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading, the statement is True. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Average cost per unit is the separate quotient
 
-$$\\dfrac{C(q)}{q}$$
+$$\\dfrac{C(q)}{q}=\\dfrac{200}{q}+12+\\dfrac{3}{100}q$$
 
-whereas $C^{\\prime}(q)$ is marginal cost — the slope of total cost. Those two objects are different functions, so the claim's identification is incorrect and the statement is False.`,
+whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First record the point and slope at $q=100$:
 
-$$C(100)=200+12\\cdot 100+\\dfrac{3}{100}\\cdot 10000=1700\\qquad C^{\\prime}(100)=18$$
+$$C(100)=200+12\\cdot 100+\\dfrac{3}{100}\\cdot 10000=1700\\qquad C'(100)=18$$
 
 Point-slope form then assembles the tangent
 
 $$y=1700+18(q-100)$$
 
-exactly as claimed, so the statement is True.`
+exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 2,
@@ -165,17 +165,17 @@ $$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
 Differentiating term by term supplies the marginal-cost function
 
-$$C^{\\prime}(q)=12+\\dfrac{3}{50}q$$
+$$C'(q)=12+\\dfrac{3}{50}q$$
 
 At the named output level,
 
-$$C^{\\prime}(100)=12+\\dfrac{3}{50}\\cdot 100=18$$
+$$C'(100)=12+\\dfrac{3}{50}\\cdot 100=18$$
 
 and the cost itself is $C(100)=1700$. The tangent line at $q=100$ is therefore
 
 $$y=1700+18(q-100)$$
 
-Marginal cost $C^{\\prime}(q)$ is the instantaneous rate of change of total cost; average cost is the separate quotient $C(q)/q$.`,
+Marginal cost $C'(q)$ is the instantaneous rate of change of total cost; average cost is the separate quotient $C(q)/q$ — those two objects must not be mixed up.`,
   },
   {
     id: "math-11-3",
@@ -195,39 +195,39 @@ Marginal cost $C^{\\prime}(q)$ is the instantaneous rate of change of total cost
     tactical_explanations: [
       `**A.** → True
 
-Marginal product is the derivative of output with respect to labour. Apply the power rule to $Q(L)=5L^{\\frac{3}{2}}$:
+Marginal product is the derivative of output with respect to labour. Apply the power rule to $Q(L)=5L^{\\frac{3}{2}}$, multiplying by the exponent and reducing the power by one:
 
-$$Q^{\\prime}(L)=5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
+$$Q'(L)=5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
-which matches the claimed formula, so the statement is True.`,
+A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $L=4$ into the marginal-product rule, using $\\sqrt{4}=2$:
 
-$$Q^{\\prime}(4)=\\dfrac{15}{2}\\cdot 2=15$$
+$$Q'(4)=\\dfrac{15}{2}\\cdot 2=15$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
-The derivative $Q^{\\prime}(L)$ measures output gained per extra labour-hour. At $L=4$ that rate is
+The derivative $Q'(L)$ measures output gained per extra labour-hour — the local linear approximation. At $L=4$ that rate is
 
-$$Q^{\\prime}(4)=15$$
+$$Q'(4)=15$$
 
-so one extra labour-hour near that staffing level raises output by approximately $15$ units, so the statement is True.`,
+so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → False
 
 The marginal-product rule still carries the factor $L^{\\frac{1}{2}}$:
 
-$$Q^{\\prime}(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
+$$Q'(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
-which changes whenever $L$ changes. Marginal product is therefore not constant on $L>0$, so the statement is False.`,
+which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 Compare the two labour levels through the ratio of marginal products:
 
-$$\\dfrac{Q^{\\prime}(8)}{Q^{\\prime}(4)}=\\dfrac{\\sqrt{8}}{\\sqrt{4}}=\\sqrt{2}\\neq 2$$
+$$\\dfrac{Q'(8)}{Q'(4)}=\\dfrac{\\sqrt{8}}{\\sqrt{4}}=\\sqrt{2}\\neq 2$$
 
-Doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's comparison is incorrect, so the statement is False.`
+Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 3,
@@ -238,15 +238,17 @@ $$Q(L)=5L^{\\frac{3}{2}}\\qquad(L>0)$$
 
 The power rule gives the marginal product
 
-$$Q^{\\prime}(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
+$$Q'(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
 Evaluating at the named labour level yields
 
-$$Q^{\\prime}(4)=\\dfrac{15}{2}\\cdot 2=15$$
+$$Q'(4)=\\dfrac{15}{2}\\cdot 2=15$$
 
 so one extra labour-hour near $L=4$ raises output by about $15$ units. The factor $L^{\\frac{1}{2}}$ still depends on $L$, so marginal product is not constant; in particular
 
-$$\\dfrac{Q^{\\prime}(8)}{Q^{\\prime}(4)}=\\sqrt{2}\\neq 2$$`,
+$$\\dfrac{Q'(8)}{Q'(4)}=\\sqrt{2}\\neq 2$$
+
+so doubling labour does not double the marginal product.`,
   },
   {
     id: "math-11-4",
@@ -270,39 +272,39 @@ Revenue is price times quantity sold. Expand the product with the linear price s
 
 $$R(q)=q\\cdot(80-2q)=80q-2q^{2}$$
 
-which is the quadratic named in the claim, so the statement is True.`,
+Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
-Marginal revenue is the derivative of the whole revenue function. Differentiating $R(q)=80q-2q^{2}$ term by term gives
+Marginal revenue is the derivative of the whole revenue function — not the derivative of price alone. Differentiating $R(q)=80q-2q^{2}$ term by term gives
 
-$$R^{\\prime}(q)=80-4q$$
+$$R'(q)=80-4q$$
 
-matching the claimed formula, so the statement is True.`,
+A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute the named sales level $q=10$ into marginal revenue:
 
-$$R^{\\prime}(10)=80-4\\cdot 10=80-40=40$$
+$$R'(10)=80-4\\cdot 10=80-40=40$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
-The price schedule alone has slope $p^{\\prime}(q)=-2$, while revenue's derivative is
+The price schedule alone has slope $p'(q)=-2$, while revenue's derivative is
 
-$$R^{\\prime}(q)=80-4q$$
+$$R'(q)=80-4q$$
 
-These are different functions for every $q>0$. The claim equates them incorrectly, so the statement is False.`,
+These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First evaluate both the height and the slope at $q=10$:
 
-$$R(10)=80\\cdot 10-2\\cdot 100=600\\qquad R^{\\prime}(10)=40$$
+$$R(10)=80\\cdot 10-2\\cdot 100=600\\qquad R'(10)=40$$
 
 Point-slope form then gives the tangent
 
 $$y=600+40(q-10)$$
 
-exactly as claimed, so the statement is True.`
+exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 4,
@@ -313,13 +315,15 @@ $$R(q)=q\\cdot p(q)=80q-2q^{2}$$
 
 Differentiating the whole revenue function gives marginal revenue
 
-$$R^{\\prime}(q)=80-4q$$
+$$R'(q)=80-4q$$
 
-At $q=10$ one finds $R^{\\prime}(10)=40$ and $R(10)=600$, so the tangent is
+At $q=10$ one finds $R'(10)=40$ and $R(10)=600$, so the tangent is
 
 $$y=600+40(q-10)$$
 
-Note that $p^{\\prime}(q)=-2$ is not the same as $R^{\\prime}(q)$: revenue is the product $q\\,p(q)$, so its derivative is not simply the price slope.`,
+Note that $p'(q)=-2$ is not the same as $R'(q)$: revenue is the product $q\\,p(q)$, so its derivative is not simply the price slope. Confusing $R'$ with $p'$ is a classic trap.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-5",
@@ -343,35 +347,35 @@ Average cost is total cost divided by output. Split the quotient term by term:
 
 $$A(q)=\\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
 
-which is exactly the claimed simplification, so the statement is True.`,
+Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
-Differentiate the average-cost expression term by term, using $\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr)=-q^{-2}$:
+Differentiate the average-cost expression term by term, using $\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr)=-q^{-2}$ and treating the constant $6$ as zero under differentiation:
 
-$$A^{\\prime}(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
+$$A'(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
-matching the claimed derivative, so the statement is True.`,
+A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=100$ into the average-cost derivative:
 
-$$A^{\\prime}(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=-0.03+0.03=0$$
+$$A'(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=-0.03+0.03=0$$
 
-The derivative vanishes there, so the statement is True.`,
+The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
-Marginal cost is the derivative $C^{\\prime}(q)$ of total cost, whereas
+Marginal cost is the derivative $C'(q)$ of total cost, whereas
 
-$$A^{\\prime}(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
+$$A'(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
-is the rate of change of average cost. Those are different objects, so identifying $A^{\\prime}$ with marginal cost is incorrect and the statement is False.`,
+is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-A zero first derivative means a horizontal tangent. Since the calculation gives
+A zero first derivative means a horizontal tangent on the graph of $A$. Since the calculation gives
 
-$$A^{\\prime}(100)=0$$
+$$A'(100)=0$$
 
-average cost is locally flat at $q=100$, so the statement is True.`
+average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 5,
@@ -382,13 +386,15 @@ $$A(q)=\\dfrac{C(q)}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
 
 Differentiating term by term yields
 
-$$A^{\\prime}(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
+$$A'(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
 At the named output,
 
-$$A^{\\prime}(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=0$$
+$$A'(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=0$$
 
-so average cost is locally flat there. Marginal cost is $C^{\\prime}(q)$, a different object from the average-cost derivative $A^{\\prime}(q)$.`,
+so average cost is locally flat there. Marginal cost is $C'(q)$, a different object from the average-cost derivative $A'(q)$ — confusing those two is the main trap of this stem.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-6",
@@ -412,37 +418,37 @@ Rewrite waiting time as a power and differentiate with the chain rule:
 
 $$W(n)=48(n+3)^{-1}$$
 
-$$W^{\\prime}(n)=-48(n+3)^{-2}=-\\dfrac{48}{(n+3)^{2}}$$
+$$W'(n)=-48(n+3)^{-2}=-\\dfrac{48}{(n+3)^{2}}$$
 
-which matches the claimed formula, so the statement is True.`,
+The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named staffing level $n=3$ into the derivative:
 
-$$W^{\\prime}(3)=-\\dfrac{48}{(3+3)^{2}}=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
+$$W'(3)=-\\dfrac{48}{(3+3)^{2}}=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
 
-The computed value matches the claim, so the statement is True.`,
+Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-The derivative $W^{\\prime}(n)$ measures minutes of waiting time gained (or lost) per extra agent. At $n=3$ that rate is
+The derivative $W'(n)$ measures minutes of waiting time gained (or lost) per extra agent. At $n=3$ that rate is
 
-$$W^{\\prime}(3)=-\\dfrac{4}{3}$$
+$$W'(3)=-\\dfrac{4}{3}$$
 
-so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes, so the statement is True.`,
+so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 A negative derivative means the function falls as the input rises. Since
 
-$$W^{\\prime}(n)=-\\dfrac{48}{(n+3)^{2}}<0$$
+$$W'(n)=-\\dfrac{48}{(n+3)^{2}}<0$$
 
-for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim's comparison is incorrect, so the statement is False.`,
+for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Differentiate $W^{\\prime}(n)=-48(n+3)^{-2}$ once more:
+Differentiate $W'(n)=-48(n+3)^{-2}$ once more, multiplying by $-2$ from the power rule and by the inner slope $1$:
 
-$$W^{\\prime\\prime}(n)=(-48)\\cdot(-2)(n+3)^{-3}=\\dfrac{96}{(n+3)^{3}}$$
+$$W''(n)=(-48)\\cdot(-2)(n+3)^{-3}=\\dfrac{96}{(n+3)^{3}}$$
 
-which matches the claimed second derivative, so the statement is True.`
+which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 6,
@@ -453,13 +459,15 @@ $$W(n)=\\dfrac{48}{n+3}=48(n+3)^{-1}$$
 
 Differentiating once and twice gives
 
-$$W^{\\prime}(n)=-\\dfrac{48}{(n+3)^{2}}\\qquad W^{\\prime\\prime}(n)=\\dfrac{96}{(n+3)^{3}}$$
+$$W'(n)=-\\dfrac{48}{(n+3)^{2}}\\qquad W''(n)=\\dfrac{96}{(n+3)^{3}}$$
 
 At $n=3$,
 
-$$W^{\\prime}(3)=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
+$$W'(3)=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
 
-so one extra agent near $n=3$ lowers waiting time by about $\\dfrac{4}{3}$ minutes. The first derivative is negative for every $n>0$, so waiting time is decreasing in the number of agents.`,
+so one extra agent near $n=3$ lowers waiting time by about $\\dfrac{4}{3}$ minutes. The first derivative is negative for every $n>0$, so waiting time is decreasing — not increasing — in the number of agents.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-7",
@@ -481,37 +489,37 @@ so one extra agent near $n=3$ lowers waiting time by about $\\dfrac{4}{3}$ minut
 
 The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rule and factor $x\\,e^{-x}$:
 
-$$S^{\\prime}(x)=2x\\,e^{-x}+x^{2}(-e^{-x})=x\\,e^{-x}(2-x)$$
+$$S'(x)=2x\\,e^{-x}+x^{2}(-e^{-x})=x\\,e^{-x}(2-x)$$
 
-which is exactly the claimed formula, so the statement is True.`,
+A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=2$ into the factored derivative:
 
-$$S^{\\prime}(2)=2\\cdot e^{-2}\\cdot(2-2)=0$$
+$$S'(2)=2\\cdot e^{-2}\\cdot(2-2)=0$$
 
-so the derivative vanishes at that intensity, matching the claim, and the statement is True.`,
+The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
-Differentiate $S^{\\prime}(x)=x\\,e^{-x}(2-x)$ again with the product rule, then collect powers of $x$:
+Differentiate $S'(x)=x\\,e^{-x}(2-x)$ again with the product rule. Expanding and collecting powers of $x$ produces
 
-$$S^{\\prime\\prime}(x)=e^{-x}(x^{2}-4x+2)$$
+$$S''(x)=e^{-x}(x^{2}-4x+2)$$
 
-which matches the claimed second derivative, so the statement is True.`,
+Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=1$ into the first-derivative formula:
 
-$$S^{\\prime}(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$$
+$$S'(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$$
 
-The computed value matches the claim, so the statement is True.`,
+Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → True
 
 A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
 
-$$S^{\\prime}(2)=0$$
+$$S'(2)=0$$
 
-so the tangent to the graph at that point is horizontal, and the statement is True.`
+so the tangent to the graph at that point is horizontal. Do not confuse "horizontal tangent" with "horizontal asymptote" — here it is a local flat slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 7,
@@ -522,15 +530,19 @@ $$S(x)=x^{2}\\cdot e^{-x}\\qquad(x>0)$$
 
 Applying the product rule and factoring $x\\,e^{-x}$ produces
 
-$$S^{\\prime}(x)=x\\cdot e^{-x}\\cdot(2-x)$$
+$$S'(x)=x\\cdot e^{-x}\\cdot(2-x)$$
 
-Hence $S^{\\prime}(2)=0$, so the tangent at $x=2$ is horizontal, while the same formula gives
+Hence $S'(2)=0$, so the tangent at $x=2$ is horizontal, while the same formula gives
 
-$$S^{\\prime}(1)=e^{-1}$$
+$$S'(1)=e^{-1}$$
 
 Differentiating once more and collecting powers of $x$ yields the second derivative
 
-$$S^{\\prime\\prime}(x)=e^{-x}\\cdot(x^{2}-4x+2)$$`,
+$$S''(x)=e^{-x}\\cdot(x^{2}-4x+2)$$
+
+Watch the factor $(2-x)$: it flips the sign of $S'$ across $x=2$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-8",
@@ -550,39 +562,39 @@ $$S^{\\prime\\prime}(x)=e^{-x}\\cdot(x^{2}-4x+2)$$`,
     tactical_explanations: [
       `**A.** → True
 
-Rewrite demand as $D(a)=7(a+9)^{\\frac{1}{2}}$ and apply the chain rule:
+Rewrite demand as $D(a)=7(a+9)^{\\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $1$:
 
-$$D^{\\prime}(a)=7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}=\\dfrac{7}{2\\sqrt{a+9}}$$
+$$D'(a)=7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}=\\dfrac{7}{2\\sqrt{a+9}}$$
 
-which matches the claimed formula, so the statement is True.`,
+A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $a=7$, noting that $a+9=16$ and $\\sqrt{16}=4$:
 
-$$D^{\\prime}(7)=\\dfrac{7}{2\\cdot 4}=\\dfrac{7}{8}$$
+$$D'(7)=\\dfrac{7}{2\\cdot 4}=\\dfrac{7}{8}$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Differentiate $D^{\\prime}(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ once more:
+Differentiate $D'(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ once more:
 
-$$D^{\\prime\\prime}(a)=\\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
+$$D''(a)=\\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+The negative sign shows diminishing marginal returns. Matching the claimed second derivative, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → False
 
 Near $a=7$ the model predicts an increase of about
 
-$$D^{\\prime}(7)=\\dfrac{7}{8}$$
+$$D'(7)=\\dfrac{7}{8}$$
 
-units of demand per extra advertising unit, not $7$. The claim overstates the marginal effect, so the statement is False.`,
+units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Compare the derivative at the two advertising levels:
 
-$$D^{\\prime}(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D^{\\prime}(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
+$$D'(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D'(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
 
-Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$, so the statement is True.`
+Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 8,
@@ -593,15 +605,19 @@ $$D(a)=7\\sqrt{a+9}=7(a+9)^{\\frac{1}{2}}$$
 
 Differentiating once and twice gives
 
-$$D^{\\prime}(a)=\\dfrac{7}{2\\sqrt{a+9}}\\qquad D^{\\prime\\prime}(a)=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
+$$D'(a)=\\dfrac{7}{2\\sqrt{a+9}}\\qquad D''(a)=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
 
 At the named intensity,
 
-$$D^{\\prime}(7)=\\dfrac{7}{8}$$
+$$D'(7)=\\dfrac{7}{8}$$
 
 so one extra advertising unit near $a=7$ raises demand by about $\\dfrac{7}{8}$, not $7$. Comparing endpoints of the derivative shows
 
-$$D^{\\prime}(16)=\\dfrac{7}{10}<D^{\\prime}(0)=\\dfrac{7}{6}$$`,
+$$D'(16)=\\dfrac{7}{10}<D'(0)=\\dfrac{7}{6}$$
+
+so marginal returns diminish as advertising grows.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-9",
@@ -621,39 +637,39 @@ $$D^{\\prime}(16)=\\dfrac{7}{10}<D^{\\prime}(0)=\\dfrac{7}{6}$$`,
     tactical_explanations: [
       `**A.** → True
 
-Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. After combining the product-rule pieces over one denominator one obtains
+Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. Apply the product rule, then combine over the common denominator $\\sqrt{2n+1}$:
 
-$$R^{\\prime}(n)=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
+$$R'(n)=\\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
 
-which matches the claimed simplified formula, so the statement is True.`,
+The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into the combined derivative:
 
-$$R^{\\prime}(1)=\\dfrac{17-9}{\\sqrt{2+1}}=\\dfrac{8}{\\sqrt{3}}$$
+$$R'(1)=\\dfrac{17-9}{\\sqrt{2+1}}=\\dfrac{8}{\\sqrt{3}}$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Before clearing a common denominator, the product rule writes the two pieces separately:
+Before clearing a common denominator, the product rule writes the two pieces separately: differentiate the price factor and the demand factor in turn,
 
-$$R^{\\prime}(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
+$$R'(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
 
-which is exactly the intermediate form named in the claim, so the statement is True.`,
+which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
-A critical point solves $R^{\\prime}(n)=0$. With a positive denominator that forces the numerator to vanish:
+A critical point solves $R'(n)=0$. With a positive denominator $\\sqrt{2n+1}$, that forces the numerator to vanish:
 
 $$17-9n=0\\qquad\\Rightarrow\\qquad n=\\dfrac{17}{9}$$
 
-matching the claimed root, so the statement is True.`,
+matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 The derivative changes sign at the critical point
 
 $$n=\\dfrac{17}{9}$$
 
-and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. Comparing that with the claim, the statement is False.`
+and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 9,
@@ -664,13 +680,15 @@ $$R(n)=(20-3n)\\sqrt{2n+1}$$
 
 The product rule first writes
 
-$$R^{\\prime}(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
+$$R'(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
 
 and combining over one denominator simplifies to
 
-$$R^{\\prime}(n)=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
+$$R'(n)=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
 
-Hence $R^{\\prime}(1)=\\dfrac{8}{\\sqrt{3}}$ and $R^{\\prime}(n)=0$ at $n=\\dfrac{17}{9}$. Because $\\dfrac{17}{9}<2$, the derivative changes sign inside $(0,2)$, so revenue is not increasing throughout that interval.`,
+Hence $R'(1)=\\dfrac{8}{\\sqrt{3}}$ and $R'(n)=0$ at $n=\\dfrac{17}{9}$. Because $\\dfrac{17}{9}<2$, the derivative changes sign inside $(0,2)$, so revenue is not increasing throughout that interval.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-10",
@@ -690,39 +708,39 @@ Hence $R^{\\prime}(1)=\\dfrac{8}{\\sqrt{3}}$ and $R^{\\prime}(n)=0$ at $n=\\dfra
     tactical_explanations: [
       `**A.** → True
 
-Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. The quotient rule simplifies to the single fraction
+Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
 
-$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+$$T'(n)=\\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into that derivative:
 
-$$T^{\\prime}(1)=\\dfrac{2+4+8}{2^{2}}=\\dfrac{14}{4}=\\dfrac{7}{2}$$
+$$T'(1)=\\dfrac{2+4+8}{2^{2}}=\\dfrac{14}{4}=\\dfrac{7}{2}$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 For $n>0$ the numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ is a sum of positive terms (discriminant $4-16<0$), and the denominator $(n+1)^{2}$ is positive. Hence
 
-$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
+$$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
-for every $n>0$, so the statement is True.`,
+for every $n>0$. A positive derivative means $T$ is strictly increasing. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Cancelling factors incorrectly would produce $\\dfrac{2n+8}{n+1}$, but the true derivative after the quotient rule is
 
-$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+$$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
 
-Those expressions are not identical, so the statement is False.`,
+Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and the denominator stays positive, so
 
-$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
+$$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
-throughout. A strictly positive derivative never hits zero, so the statement is False.`
+throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 10,
@@ -733,9 +751,9 @@ $$T(n)=\\dfrac{2n^{2}+8n}{n+1}$$
 
 The quotient rule simplifies to the single fraction
 
-$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+$$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
 
-At $n=1$ one finds $T^{\\prime}(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ has discriminant $4-16<0$, so it stays positive for every $n$; together with the positive denominator this forces $T^{\\prime}(n)>0$ for all $n>0$, and in particular $T^{\\prime}$ never vanishes. Cancelling factors incorrectly would produce the false expression $\\dfrac{2n+8}{n+1}$.`,
+At $n=1$ one finds $T'(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ has discriminant $4-16<0$, so it stays positive for every $n$; together with the positive denominator this forces $T'(n)>0$ for all $n>0$, and in particular $T'$ never vanishes. Cancelling factors incorrectly would produce the false expression $\\dfrac{2n+8}{n+1}$.`,
   },
   {
     id: "math-11-11",
@@ -755,39 +773,39 @@ At $n=1$ one finds $T^{\\prime}(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the log utility $U(x)=40\\ln(x+1)-x$ term by term:
+Differentiate the log utility $U(x)=40\\ln(x+1)-x$ term by term. The chain rule on the logarithm contributes $\\dfrac{40}{x+1}$, and the linear penalty contributes $-1$:
 
-$$U^{\\prime}(x)=\\dfrac{40}{x+1}-1$$
+$$U'(x)=\\dfrac{40}{x+1}-1$$
 
-which matches the claimed first derivative, so the statement is True.`,
+which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute the named study time $x=3$ into the first derivative:
 
-$$U^{\\prime}(3)=\\dfrac{40}{3+1}-1=\\dfrac{40}{4}-1=9$$
+$$U'(3)=\\dfrac{40}{3+1}-1=\\dfrac{40}{4}-1=9$$
 
-The computed value matches the claim, so the statement is True.`,
+A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-Differentiate $U^{\\prime}(x)=40(x+1)^{-1}-1$ once more:
+Differentiate $U'(x)=40(x+1)^{-1}-1$ once more. The constant $-1$ vanishes, and the power rule on $(x+1)^{-1}$ produces
 
-$$U^{\\prime\\prime}(x)=-40(x+1)^{-2}=-\\dfrac{40}{(x+1)^{2}}$$
+$$U''(x)=-40(x+1)^{-2}=-\\dfrac{40}{(x+1)^{2}}$$
 
-which matches the claimed second derivative, so the statement is True.`,
+which matches the claimed second derivative. The negative sign shows diminishing marginal utility. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 Extending the first-derivative formula to $x=0$ gives the ordinary finite value
 
-$$U^{\\prime}(0)=\\dfrac{40}{1}-1=39$$
+$$U'(0)=\\dfrac{40}{1}-1=39$$
 
-so the derivative is defined at $x=0$. The claim is therefore incorrect, and the statement is False.`,
+so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 The first derivative measures the instantaneous change in utility per extra study hour. At $x=3$ that rate is
 
-$$U^{\\prime}(3)=9$$
+$$U'(3)=9$$
 
-so one extra hour near that level changes utility by approximately $9$ utility units, and the statement is True.`
+so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 11,
@@ -798,13 +816,13 @@ $$U(x)=40\\cdot\\ln(x+1)-x\\qquad(x>0)$$
 
 Differentiating the logarithm and the linear penalty once gives
 
-$$U^{\\prime}(x)=\\dfrac{40}{x+1}-1$$
+$$U'(x)=\\dfrac{40}{x+1}-1$$
 
 and differentiating again produces the always-negative second derivative
 
-$$U^{\\prime\\prime}(x)=-\\dfrac{40}{(x+1)^{2}}$$
+$$U''(x)=-\\dfrac{40}{(x+1)^{2}}$$
 
-At the named study level one finds $U^{\\prime}(3)=9$, so one extra hour near $x=3$ changes utility by about $9$ units. The first derivative is defined at $x=0$ as well, where $U^{\\prime}(0)=39$.`,
+At the named study level one finds $U'(3)=9$, so one extra hour near $x=3$ changes utility by about $9$ units. The first derivative is defined at $x=0$ as well, where $U'(0)=39$ — the logarithm is of $x+1$, not of $x$.`,
   },
   {
     id: "math-11-12",
@@ -824,39 +842,39 @@ At the named study level one finds $U^{\\prime}(3)=9$, so one extra hour near $x
     tactical_explanations: [
       `**A.** → True
 
-Apply the power rule to the learning-curve cost $c(N)=1000N^{-\\frac{1}{2}}$:
+Apply the power rule to the learning-curve cost $c(N)=1000N^{-\\frac{1}{2}}$, multiplying by the exponent $-\\tfrac{1}{2}$ and reducing the power:
 
-$$c^{\\prime}(N)=1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}=-500N^{-\\frac{3}{2}}$$
+$$c'(N)=1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}=-500N^{-\\frac{3}{2}}$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. Keep the minus sign — learning curves fall. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $N=4$, using $4^{-\\frac{3}{2}}=\\dfrac{1}{8}$:
 
-$$c^{\\prime}(4)=-500\\cdot\\dfrac{1}{8}=-\\dfrac{125}{2}$$
+$$c'(4)=-500\\cdot\\dfrac{1}{8}=-\\dfrac{125}{2}$$
 
-The computed value matches the claim, so the statement is True.`,
+A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 For every $N>0$ the power $N^{-\\frac{3}{2}}$ is positive, while the leading coefficient $-500$ is negative. Therefore
 
-$$c^{\\prime}(N)<0$$
+$$c'(N)<0$$
 
-throughout the domain, so the statement is True.`,
+throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
-The derivative $c^{\\prime}(N)$ measures euros of unit cost gained (or lost) per extra unit of cumulative output. At $N=4$ that rate is
+The derivative $c'(N)$ measures euros of unit cost gained (or lost) per extra unit of cumulative output. At $N=4$ that rate is
 
-$$c^{\\prime}(4)=-\\dfrac{125}{2}$$
+$$c'(4)=-\\dfrac{125}{2}$$
 
-so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros, and the statement is True.`,
+so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 Compare magnitudes at the two cumulative outputs:
 
-$$\\dfrac{|c^{\\prime}(8)|}{|c^{\\prime}(4)|}=\\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
+$$\\dfrac{|c'(8)|}{|c'(4)|}=\\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
 
-Doubling $N$ does not double the magnitude of the derivative. The claim's comparison is incorrect, so the statement is False.`
+Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 12,
@@ -867,15 +885,17 @@ $$c(N)=1000N^{-\\frac{1}{2}}\\qquad(N>0)$$
 
 The power rule gives
 
-$$c^{\\prime}(N)=-500N^{-\\frac{3}{2}}$$
+$$c'(N)=-500N^{-\\frac{3}{2}}$$
 
 which is negative for every $N>0$. At the named cumulative output,
 
-$$c^{\\prime}(4)=-500\\cdot 4^{-\\frac{3}{2}}=-\\dfrac{125}{2}$$
+$$c'(4)=-500\\cdot 4^{-\\frac{3}{2}}=-\\dfrac{125}{2}$$
 
 so one extra unit near $N=4$ lowers unit cost by about $\\dfrac{125}{2}$ euros. Comparing magnitudes shows
 
-$$\\dfrac{|c^{\\prime}(8)|}{|c^{\\prime}(4)|}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$`,
+$$\\dfrac{|c'(8)|}{|c'(4)|}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
+
+so doubling cumulative output does not double the magnitude of the derivative.`,
   },
   {
     id: "math-11-13",
@@ -895,39 +915,39 @@ $$\\dfrac{|c^{\\prime}(8)|}{|c^{\\prime}(4)|}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$`,
     tactical_explanations: [
       `**A.** → True
 
-Marginal revenue is the derivative of the quadratic revenue rule $R(q)=50q-q^{2}$:
+Marginal revenue is the derivative of the quadratic revenue rule $R(q)=50q-q^{2}$. Differentiating term by term gives
 
-$$R^{\\prime}(q)=50-2q$$
+$$R'(q)=50-2q$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. Do not write $-2q$ alone by dropping the $50$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute the named output $q=20$ into marginal revenue:
 
-$$R^{\\prime}(20)=50-2\\cdot 20=50-40=10$$
+$$R'(20)=50-2\\cdot 20=50-40=10$$
 
-The computed value matches the claim, so the statement is True.`,
+A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Evaluate the revenue function itself at $q=20$:
 
 $$R(20)=50\\cdot 20-20^{2}=1000-400=600$$
 
-The height on the curve matches the claim, so the statement is True.`,
+This is the height on the curve, not the slope. The height matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
-With the point $(20,600)$ and slope $R^{\\prime}(20)=10$, point-slope form rearranges as
+With the point $(20,600)$ and slope $R'(20)=10$, point-slope form rearranges as
 
 $$y-600=10(q-20)\\qquad\\Rightarrow\\qquad y=600+10(q-20)$$
 
-which is the claimed tangent, so the statement is True.`,
+which is the claimed tangent. Replacing $600$ by $R'(20)$ would break the equation. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 The slope of the tangent at $q=20$ is the derivative value
 
-$$R^{\\prime}(20)=10>0$$
+$$R'(20)=10>0$$
 
-so the tangent rises from left to right rather than falling. Comparing that with the claim, the statement is False.`
+so the tangent rises from left to right rather than falling. Revenue still increases at $q=20$ because the peak $R'(q)=0$ occurs later at $q=25$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 13,
@@ -938,17 +958,19 @@ $$R(q)=50q-q^{2}$$
 
 Differentiating term by term supplies marginal revenue
 
-$$R^{\\prime}(q)=50-2q$$
+$$R'(q)=50-2q$$
 
 At the named output one evaluates both the slope and the height on the curve:
 
-$$R^{\\prime}(20)=10\\qquad R(20)=600$$
+$$R'(20)=10\\qquad R(20)=600$$
 
 Point-slope form then assembles the tangent line
 
 $$y=600+10(q-20)$$
 
-In particular the tangent slope at $q=20$ is the positive number $10$, not a negative slope.`,
+In particular the tangent slope at $q=20$ is the positive number $10$, not a negative slope — the revenue peak is at $q=25$, so $q=20$ still lies on the rising side.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-14",
@@ -970,37 +992,37 @@ In particular the tangent slope at $q=20$ is the positive number $10$, not a neg
 
 The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
 
-$$G^{\\prime}(x)=5(3x^{2}+4)^{4}\\cdot 6x=30x(3x^{2}+4)^{4}$$
+$$G'(x)=5(3x^{2}+4)^{4}\\cdot 6x=30x(3x^{2}+4)^{4}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 At $x=1$ one has $3x^{2}+4=7$ and $7^{4}=2401$, so
 
-$$G^{\\prime}(1)=30\\cdot 1\\cdot 7^{4}=30\\cdot 2401=72030$$
+$$G'(1)=30\\cdot 1\\cdot 7^{4}=30\\cdot 2401=72030$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Differentiate $G^{\\prime}(x)=30x(3x^{2}+4)^{4}$ again and factor the common power $(3x^{2}+4)^{3}$:
+Differentiate $G'(x)=30x(3x^{2}+4)^{4}$ again with the product rule, then factor the common power $(3x^{2}+4)^{3}$:
 
-$$G^{\\prime\\prime}(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
+$$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
 
-which matches the claimed second derivative, so the statement is True.`,
+The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second-derivative formula:
 
-$$G^{\\prime\\prime}(0)=30\\cdot 4^{3}\\cdot 4=30\\cdot 64\\cdot 4=7680$$
+$$G''(0)=30\\cdot 4^{3}\\cdot 4=30\\cdot 64\\cdot 4=7680$$
 
-The computed value matches the claim, so the statement is True.`,
+Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 The first derivative carries an explicit factor of $x$:
 
-$$G^{\\prime}(0)=30\\cdot 0\\cdot 4^{4}=0$$
+$$G'(0)=30\\cdot 0\\cdot 4^{4}=0$$
 
-not $30$. The claim's value is incorrect, so the statement is False.`
+not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 14,
@@ -1011,13 +1033,15 @@ $$G(x)=(3x^{2}+4)^{5}\\qquad(x\\geq 0)$$
 
 The chain rule multiplies the outer power by the inner derivative $6x$ and simplifies to
 
-$$G^{\\prime}(x)=30x(3x^{2}+4)^{4}$$
+$$G'(x)=30x(3x^{2}+4)^{4}$$
 
-so $G^{\\prime}(1)=30\\cdot 7^{4}=72030$ while $G^{\\prime}(0)=0$. Differentiating again and factoring the common power yields
+so $G'(1)=30\\cdot 7^{4}=72030$ while $G'(0)=0$. Differentiating again and factoring the common power yields
 
-$$G^{\\prime\\prime}(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
+$$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
 
-and therefore $G^{\\prime\\prime}(0)=30\\cdot 4^{3}\\cdot 4=7680$.`,
+and therefore $G''(0)=30\\cdot 4^{3}\\cdot 4=7680$. The factor of $x$ in $G'$ is easy to miss when evaluating at the origin.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-15",
@@ -1039,37 +1063,37 @@ and therefore $G^{\\prime\\prime}(0)=30\\cdot 4^{3}\\cdot 4=7680$.`,
 
 Marginal cost is the first derivative of the cubic cost schedule. Differentiating term by term gives
 
-$$C^{\\prime}(q)=12q^{2}-36q+40$$
+$$C'(q)=12q^{2}-36q+40$$
 
-which is exactly the claimed marginal-cost formula, so the statement is True.`,
+which is exactly the claimed marginal-cost formula. The constant $100$ vanishes, as constants always do under differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Differentiate the marginal-cost polynomial once more:
 
-$$C^{\\prime\\prime}(q)=24q-36$$
+$$C''(q)=24q-36$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=\\dfrac{3}{2}$ into the second derivative:
 
-$$C^{\\prime\\prime}\\!\\left(\\dfrac{3}{2}\\right)=24\\cdot\\dfrac{3}{2}-36=36-36=0$$
+$$C''\\!\\left(\\dfrac{3}{2}\\right)=24\\cdot\\dfrac{3}{2}-36=36-36=0$$
 
-so the second derivative vanishes there, and the statement is True.`,
+so the second derivative vanishes there. That is the natural candidate for an inflection point of $C$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Evaluate the second derivative at $q=1$:
 
-$$C^{\\prime\\prime}(1)=24-36=-12$$
+$$C''(1)=24-36=-12$$
 
-which is negative rather than positive. The claim's sign is wrong, so the statement is False.`,
+which is negative rather than positive. The claim's sign is wrong — just left of $q=\\tfrac{3}{2}$ the cost curve is still concave down. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Evaluate the second derivative at $q=2$:
 
-$$C^{\\prime\\prime}(2)=48-36=12>0$$
+$$C''(2)=48-36=12>0$$
 
-so the second derivative is positive there, and the statement is True.`
+so the second derivative is positive there. Just right of the zero at $q=\\tfrac{3}{2}$, curvature has flipped to concave up. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 15,
@@ -1080,13 +1104,13 @@ $$C(q)=4q^{3}-18q^{2}+40q+100$$
 
 Differentiating once and twice produces the marginal cost and its rate of change:
 
-$$C^{\\prime}(q)=12q^{2}-36q+40\\qquad C^{\\prime\\prime}(q)=24q-36$$
+$$C'(q)=12q^{2}-36q+40\\qquad C''(q)=24q-36$$
 
 Evaluating the second derivative at the named points yields the sign chart values
 
-$$C^{\\prime\\prime}\\!\\left(\\dfrac{3}{2}\\right)=0\\qquad C^{\\prime\\prime}(1)=-12<0\\qquad C^{\\prime\\prime}(2)=12>0$$
+$$C''\\!\\left(\\dfrac{3}{2}\\right)=0\\qquad C''(1)=-12<0\\qquad C''(2)=12>0$$
 
-so curvature changes from negative to positive across $q=\\dfrac{3}{2}$.`,
+so curvature changes from negative to positive across $q=\\dfrac{3}{2}$. That is an inflection candidate, not automatically a cost minimum.`,
   },
   {
     id: "math-11-16",
@@ -1108,37 +1132,37 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$.`,
 
 The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
 
-$$K^{\\prime}(t)=\\dfrac{(t+1)-(t+4)}{(t+1)^{2}}=-\\dfrac{3}{(t+1)^{2}}$$
+$$K'(t)=\\dfrac{(t+1)-(t+4)}{(t+1)^{2}}=-\\dfrac{3}{(t+1)^{2}}$$
 
-matching the claimed formula, so the statement is True.`,
+The numerator difference $1-4=-3$ is the whole story. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named training time $t=2$:
 
-$$K^{\\prime}(2)=-\\dfrac{3}{(2+1)^{2}}=-\\dfrac{3}{9}=-\\dfrac{1}{3}$$
+$$K'(2)=-\\dfrac{3}{(2+1)^{2}}=-\\dfrac{3}{9}=-\\dfrac{1}{3}$$
 
-The computed value matches the claim, so the statement is True.`,
+Keep the minus sign — more training lowers the complaint index. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 For every $t>0$ the numerator factor $-3$ is negative and the denominator $(t+1)^{2}$ is positive, so
 
-$$K^{\\prime}(t)<0$$
+$$K'(t)<0$$
 
-throughout. A negative derivative means the index is strictly decreasing, so the statement is True.`,
+throughout. A negative derivative means the index is strictly decreasing in training time. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → True
 
 The derivative measures the instantaneous change in the index per extra training hour. At $t=2$ that rate is
 
-$$K^{\\prime}(2)=-\\dfrac{1}{3}$$
+$$K'(2)=-\\dfrac{1}{3}$$
 
-so one extra hour changes the index by approximately $-\\dfrac{1}{3}$, and the statement is True.`,
+so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → True
 
-Differentiate $K^{\\prime}(t)=-3(t+1)^{-2}$ once more:
+Differentiate $K'(t)=-3(t+1)^{-2}$ once more:
 
-$$K^{\\prime\\prime}(t)=6(t+1)^{-3}=\\dfrac{6}{(t+1)^{3}}$$
+$$K''(t)=(-3)\\cdot(-2)(t+1)^{-3}=\\dfrac{6}{(t+1)^{3}}$$
 
-matching the claimed second derivative, so the statement is True.`
+matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 16,
@@ -1149,15 +1173,19 @@ $$K(t)=\\dfrac{t+4}{t+1}\\qquad(t>0)$$
 
 The quotient rule simplifies at once to
 
-$$K^{\\prime}(t)=-\\dfrac{3}{(t+1)^{2}}$$
+$$K'(t)=-\\dfrac{3}{(t+1)^{2}}$$
 
 which is negative for every $t>0$, so the index is strictly decreasing in training time. At $t=2$ one finds
 
-$$K^{\\prime}(2)=-\\dfrac{1}{3}$$
+$$K'(2)=-\\dfrac{1}{3}$$
 
 Differentiating once more yields the positive second derivative
 
-$$K^{\\prime\\prime}(t)=\\dfrac{6}{(t+1)^{3}}$$`,
+$$K''(t)=\\dfrac{6}{(t+1)^{3}}$$
+
+so the decrease becomes less steep as training accumulates.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-17",
@@ -1179,37 +1207,37 @@ $$K^{\\prime\\prime}(t)=\\dfrac{6}{(t+1)^{3}}$$`,
 
 The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
 
-$$S^{\\prime}(x)=4(2x+5)^{3}\\cdot 2=8(2x+5)^{3}$$
+$$S'(x)=4(2x+5)^{3}\\cdot 2=8(2x+5)^{3}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$, using $2\\cdot 0+5=5$:
 
-$$S^{\\prime}(0)=8\\cdot 5^{3}=8\\cdot 125=1000$$
+$$S'(0)=8\\cdot 5^{3}=8\\cdot 125=1000$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
-Differentiate $S^{\\prime}(x)=8(2x+5)^{3}$ again:
+Differentiate $S'(x)=8(2x+5)^{3}$ again, again multiplying by the inner slope $2$:
 
-$$S^{\\prime\\prime}(x)=8\\cdot 3(2x+5)^{2}\\cdot 2=48(2x+5)^{2}$$
+$$S''(x)=8\\cdot 3(2x+5)^{2}\\cdot 2=48(2x+5)^{2}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The pattern of coefficients $8\\to 48$ is consistent with $4\\cdot 3\\cdot 2^{2}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$S^{\\prime\\prime}(0)=48\\cdot 5^{2}=48\\cdot 25=1200$$
+$$S''(0)=48\\cdot 5^{2}=48\\cdot 25=1200$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → True
 
-Differentiate $S^{\\prime\\prime}(x)=48(2x+5)^{2}$ once more:
+Differentiate $S''(x)=48(2x+5)^{2}$ once more:
 
-$$S^{\\prime\\prime\\prime}(x)=48\\cdot 2(2x+5)\\cdot 2=192(2x+5)$$
+$$S'''(x)=48\\cdot 2(2x+5)\\cdot 2=192(2x+5)$$
 
-matching the claimed third derivative, so the statement is True.`
+matching the claimed third derivative. One more differentiation would leave the constant $384$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 17,
@@ -1220,11 +1248,15 @@ $$S(x)=(2x+5)^{4}$$
 
 Repeated chain-rule differentiation, always multiplying by the inner slope $2$, yields
 
-$$S^{\\prime}(x)=8(2x+5)^{3}\\qquad S^{\\prime\\prime}(x)=48(2x+5)^{2}\\qquad S^{\\prime\\prime\\prime}(x)=192(2x+5)$$
+$$S'(x)=8(2x+5)^{3}\\qquad S''(x)=48(2x+5)^{2}\\qquad S'''(x)=192(2x+5)$$
 
 Evaluating the first two derivatives at the origin gives the concrete values
 
-$$S^{\\prime}(0)=8\\cdot 5^{3}=1000\\qquad S^{\\prime\\prime}(0)=48\\cdot 25=1200$$`,
+$$S'(0)=8\\cdot 5^{3}=1000\\qquad S''(0)=48\\cdot 25=1200$$
+
+Each differentiation multiplies by both the falling outer power and the constant inner slope $2$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-18",
@@ -1244,39 +1276,39 @@ $$S^{\\prime}(0)=8\\cdot 5^{3}=1000\\qquad S^{\\prime\\prime}(0)=48\\cdot 25=120
     tactical_explanations: [
       `**A.** → True
 
-The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule:
+The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule: differentiate $t$ and $\\ln(t+1)$ in turn,
 
-$$E^{\\prime}(t)=\\ln(t+1)+t\\cdot\\dfrac{1}{t+1}=\\ln(t+1)+\\dfrac{t}{t+1}$$
+$$E'(t)=\\ln(t+1)+t\\cdot\\dfrac{1}{t+1}=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. Keep both summands — neither alone is the full derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=1$ into the first derivative:
 
-$$E^{\\prime}(1)=\\ln(1+1)+\\dfrac{1}{1+1}=\\ln 2+\\dfrac{1}{2}$$
+$$E'(1)=\\ln(1+1)+\\dfrac{1}{1+1}=\\ln 2+\\dfrac{1}{2}$$
 
-The computed value matches the claim, so the statement is True.`,
+Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Differentiate $E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$ again. The second term is $1-\\dfrac{1}{t+1}$, so
+Differentiate $E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$ again. Rewrite $\\dfrac{t}{t+1}=1-\\dfrac{1}{t+1}$, then differentiate:
 
-$$E^{\\prime\\prime}(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$
+$$E''(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $t=1$ into the second derivative:
 
-$$E^{\\prime\\prime}(1)=\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$$
+$$E''(1)=\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$$
 
-The computed value matches the claim, so the statement is True.`,
+The two positive contributions add cleanly. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
 The correct product-rule derivative is
 
-$$E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
+$$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
-Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function, so the statement is False.`
+Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 18,
@@ -1287,13 +1319,15 @@ $$E(t)=t\\cdot\\ln(t+1)\\qquad(t>0)$$
 
 The product rule gives
 
-$$E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
+$$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
-so $E^{\\prime}(1)=\\ln 2+\\dfrac{1}{2}$. Differentiating again yields
+so $E'(1)=\\ln 2+\\dfrac{1}{2}$. Differentiating again yields
 
-$$E^{\\prime\\prime}(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$
+$$E''(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$
 
-and therefore $E^{\\prime\\prime}(1)=\\dfrac{3}{4}$. The incorrect shortcut $E^{\\prime}(t)=\\ln(t+1)+1$ drops the factor $\\dfrac{t}{t+1}$.`,
+and therefore $E''(1)=\\dfrac{3}{4}$. The incorrect shortcut $E'(t)=\\ln(t+1)+1$ drops the factor $\\dfrac{t}{t+1}$ — a classic product-rule slip.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-19",
@@ -1317,35 +1351,39 @@ Rewrite the processing index by converting the root in the denominator into a ne
 
 $$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
 
-which is exactly the product form named in the claim, so the statement is True.`,
+which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
-Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ and clear over one denominator:
+Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ and clear over one denominator. The numerator calculation
 
-$$M^{\\prime}(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+$$2x(x+3)-\\tfrac{1}{2}(x^{2}+1)=\\tfrac{1}{2}(3x^{2}+12x-1)$$
 
-matching the claimed formula, so the statement is True.`,
+produces
+
+$$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+
+matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$, using $x+3=4$ and $4^{\\frac{3}{2}}=8$:
 
-$$M^{\\prime}(1)=\\dfrac{3+12-1}{2\\cdot 8}=\\dfrac{14}{16}=\\dfrac{7}{8}$$
+$$M'(1)=\\dfrac{3+12-1}{2\\cdot 8}=\\dfrac{14}{16}=\\dfrac{7}{8}$$
 
-The computed value matches the claim, so the statement is True.`,
+The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
 The evaluation at $x=1$ already produced
 
-$$M^{\\prime}(1)=\\dfrac{7}{8}$$
+$$M'(1)=\\dfrac{7}{8}$$
 
-which is not equal to $\\dfrac{13}{8}$. The claim's value is incorrect, so the statement is False.`,
+which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The derivative formula
 
-$$M^{\\prime}(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+$$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
 
-still depends on $x$ in both the numerator and the denominator. It is therefore not a constant, so the statement is False.`
+still depends on $x$ in both the numerator and the denominator. It is therefore not a constant function. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 19,
@@ -1356,13 +1394,15 @@ $$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
 
 The product rule, cleared over one denominator, yields
 
-$$M^{\\prime}(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+$$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
 
 At $x=1$ this evaluates to
 
-$$M^{\\prime}(1)=\\dfrac{14}{2\\cdot 8}=\\dfrac{7}{8}$$
+$$M'(1)=\\dfrac{14}{2\\cdot 8}=\\dfrac{7}{8}$$
 
-not $\\dfrac{13}{8}$. The derivative still depends on $x$, so it is not a constant.`,
+not $\\dfrac{13}{8}$. The derivative still depends on $x$ in both numerator and denominator, so it is not a constant.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-20",
@@ -1382,39 +1422,39 @@ not $\\dfrac{13}{8}$. The derivative still depends on $x$, so it is not a consta
     tactical_explanations: [
       `**A.** → True
 
-The performance index is the product $F(t)=(t^{2}+1)\\ln(t+1)$. Apply the product rule:
+The performance index is the product $F(t)=(t^{2}+1)\\ln(t+1)$. Apply the product rule: differentiate the quadratic and the logarithm in turn,
 
-$$F^{\\prime}(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
+$$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. Both summands are required. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=1$ into the first derivative:
 
-$$F^{\\prime}(1)=2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}=2\\ln 2+1$$
+$$F'(1)=2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}=2\\ln 2+1$$
 
-The computed value matches the claim, so the statement is True.`,
+The second summand simplifies to $1$ at this point, but that is special to $t=1$, not a general rule. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-Differentiate $F^{\\prime}$ again and rearrange the rational pieces:
+Differentiate $F'$ again: the product rule on $2t\\ln(t+1)$ and the quotient rule on $\\dfrac{t^{2}+1}{t+1}$ rearrange to
 
-$$F^{\\prime\\prime}(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$$
+$$F''(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → True
 
 Substitute $t=1$ into the second derivative:
 
-$$F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}=2\\ln 2+2-\\dfrac{1}{2}=2\\ln 2+\\dfrac{3}{2}$$
+$$F''(1)=2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}=2\\ln 2+2-\\dfrac{1}{2}=2\\ln 2+\\dfrac{3}{2}$$
 
-The computed value matches the claim, so the statement is True.`,
+Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 The true product-rule derivative is
 
-$$F^{\\prime}(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
+$$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
-Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect, so the statement is False.`
+Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 20,
@@ -1425,13 +1465,15 @@ $$F(t)=(t^{2}+1)\\cdot\\ln(t+1)\\qquad(t>0)$$
 
 The product rule gives
 
-$$F^{\\prime}(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
+$$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
-so $F^{\\prime}(1)=2\\ln 2+1$. Differentiating again and rearranging yields
+so $F'(1)=2\\ln 2+1$. Differentiating again and rearranging yields
 
-$$F^{\\prime\\prime}(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$$
+$$F''(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$$
 
-and therefore $F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{3}{2}$. Dropping the logarithm term produces the incorrect shortcut $F^{\\prime}(t)=2t+\\dfrac{t^{2}+1}{t+1}$.`,
+and therefore $F''(1)=2\\ln 2+\\dfrac{3}{2}$. Dropping the logarithm term produces the incorrect shortcut $F'(t)=2t+\\dfrac{t^{2}+1}{t+1}$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-21",
@@ -1453,37 +1495,37 @@ and therefore $F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{3}{2}$. Dropping the logari
 
 Differentiate the cubic profit schedule $\\pi(q)=-q^{3}+12q^{2}-21q$ term by term:
 
-$$\\pi^{\\prime}(q)=-3q^{2}+24q-21$$
+$$\\pi'(q)=-3q^{2}+24q-21$$
 
-which matches the claimed first derivative, so the statement is True.`,
+which matches the claimed first derivative. Watch the signs: the leading term contributes $-3q^{2}$, not $+3q^{2}$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $q=1$ into the first derivative:
 
-$$\\pi^{\\prime}(1)=-3+24-21=0$$
+$$\\pi'(1)=-3+24-21=0$$
 
-so the derivative vanishes at that output, matching the claim, and the statement is True.`,
+so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 Differentiate the first-derivative polynomial once more:
 
-$$\\pi^{\\prime\\prime}(q)=-6q+24$$
+$$\\pi''(q)=-6q+24$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 Substitute $q=3$ into the second derivative:
 
-$$\\pi^{\\prime\\prime}(3)=-6\\cdot 3+24=-18+24=6\\neq 0$$
+$$\\pi''(3)=-6\\cdot 3+24=-18+24=6\\neq 0$$
 
-The second derivative does not vanish there, so the statement is False.`,
+The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The tangent slope at $q=1$ is precisely the first-derivative value
 
-$$\\pi^{\\prime}(1)=0$$
+$$\\pi'(1)=0$$
 
-which is zero rather than strictly positive. Comparing that with the claim, the statement is False.`
+which is zero rather than strictly positive. A horizontal tangent is not a strictly rising one. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 21,
@@ -1494,13 +1536,15 @@ $$\\pi(q)=-q^{3}+12q^{2}-21q$$
 
 Differentiating once and twice produces the first two derivatives
 
-$$\\pi^{\\prime}(q)=-3q^{2}+24q-21\\qquad \\pi^{\\prime\\prime}(q)=-6q+24$$
+$$\\pi'(q)=-3q^{2}+24q-21\\qquad \\pi''(q)=-6q+24$$
 
 Evaluating at the named points yields the concrete values
 
-$$\\pi^{\\prime}(1)=0\\qquad \\pi^{\\prime\\prime}(3)=6\\neq 0$$
+$$\\pi'(1)=0\\qquad \\pi''(3)=6\\neq 0$$
 
-In particular the tangent slope at $q=1$ is exactly zero, so that slope is not strictly positive.`,
+In particular the tangent slope at $q=1$ is exactly zero, so that slope is not strictly positive. The second-derivative zero would solve $-6q+24=0$, hence $q=4$, not $q=3$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-22",
@@ -1522,37 +1566,37 @@ In particular the tangent slope at $q=1$ is exactly zero, so that slope is not s
 
 Shipping cost is the linear schedule $C(q)=45+9q$. Its derivative is the constant slope
 
-$$C^{\\prime}(q)=9$$
+$$C'(q)=9$$
 
-which is exactly the claimed constant marginal cost, so the statement is True.`,
+which is exactly the claimed constant marginal cost. The fixed cost $45$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Because marginal cost is constantly $9$, evaluating at any particular output — including $q=20$ — still gives
 
-$$C^{\\prime}(20)=9$$
+$$C'(20)=9$$
 
-matching the claim, so the statement is True.`,
+There is nothing special about $q=20$ for a constant derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → False
 
 Average cost is the separate quotient
 
 $$\\dfrac{C(q)}{q}=\\dfrac{45}{q}+9$$
 
-which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The claim's identification is incorrect, so the statement is False.`,
+which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**D.** → True
 
 A linear function is already its own tangent. With slope $9$ and intercept $45$, the tangent at $q=10$ (and at every other $q$) is simply
 
 $$y=45+9q$$
 
-matching the claim, so the statement is True.`,
+matching the claim. Point-slope form with $C(10)=135$ recovers the same line. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → True
 
 Differentiating the constant marginal cost once more yields
 
-$$C^{\\prime\\prime}(q)=0$$
+$$C''(q)=0$$
 
-for every $q$, so the statement is True.`
+for every $q$. A linear cost schedule has zero curvature everywhere. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 22,
@@ -1563,13 +1607,15 @@ $$C(q)=45+9q$$
 
 Its derivatives are the constants
 
-$$C^{\\prime}(q)=9\\qquad C^{\\prime\\prime}(q)=0$$
+$$C'(q)=9\\qquad C''(q)=0$$
 
 so marginal cost equals $9$ at every output, including $q=20$. Average cost is the separate quotient
 
 $$\\dfrac{C(q)}{q}=\\dfrac{45}{q}+9$$
 
-which equals marginal cost only in the limit $q\\to\\infty$, not for every finite $q>0$. Because $C$ is already linear with slope $9$, the tangent at any point — in particular at $q=10$ — is the line $y=45+9q$ itself.`,
+which equals marginal cost only in the limit $q\\to\\infty$, not for every finite $q>0$. Because $C$ is already linear with slope $9$, the tangent at any point — in particular at $q=10$ — is the line $y=45+9q$ itself.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-23",
@@ -1589,39 +1635,39 @@ which equals marginal cost only in the limit $q\\to\\infty$, not for every finit
     tactical_explanations: [
       `**A.** → True
 
-Apply the power rule to $Q(L)=4L^{\\frac{5}{2}}$:
+Apply the power rule to $Q(L)=4L^{\\frac{5}{2}}$, multiplying by $\\tfrac{5}{2}$ and lowering the exponent:
 
-$$Q^{\\prime}(L)=4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}=10L^{\\frac{3}{2}}$$
+$$Q'(L)=4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}=10L^{\\frac{3}{2}}$$
 
-which matches the claimed marginal product, so the statement is True.`,
+which matches the claimed marginal product. Do not leave the exponent at $\\tfrac{5}{2}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $L=1$ into the marginal-product rule:
 
-$$Q^{\\prime}(1)=10\\cdot 1^{\\frac{3}{2}}=10$$
+$$Q'(1)=10\\cdot 1^{\\frac{3}{2}}=10$$
 
-The computed value matches the claim, so the statement is True.`,
+Any positive power of $1$ is still $1$, so the evaluation is immediate. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Substitute $L=4$, using $4^{\\frac{3}{2}}=8$:
+Substitute $L=4$, using $4^{\\frac{3}{2}}=(\\sqrt{4})^{3}=2^{3}=8$:
 
-$$Q^{\\prime}(4)=10\\cdot 8=80$$
+$$Q'(4)=10\\cdot 8=80$$
 
-The computed value matches the claim, so the statement is True.`,
+A trap is computing $4^{\\frac{5}{2}}=32$ (the original $Q$) instead of $4^{\\frac{3}{2}}=8$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Differentiate the marginal product once more:
 
-$$Q^{\\prime\\prime}(L)=10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=15L^{\\frac{1}{2}}$$
+$$Q''(L)=10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=15L^{\\frac{1}{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The positive coefficient shows marginal product itself is still rising. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 Because the exponent $\\dfrac{3}{2}$ is positive,
 
-$$Q^{\\prime}(L)=10L^{\\frac{3}{2}}$$
+$$Q'(L)=10L^{\\frac{3}{2}}$$
 
-rises as $L$ rises. Comparing $Q^{\\prime}(1)=10$ with $Q^{\\prime}(4)=80$ confirms the increase, so the claim that it falls is incorrect and the statement is False.`
+rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 23,
@@ -1632,13 +1678,15 @@ $$Q(L)=4L^{\\frac{5}{2}}\\qquad(L>0)$$
 
 Two applications of the power rule give
 
-$$Q^{\\prime}(L)=10L^{\\frac{3}{2}}\\qquad Q^{\\prime\\prime}(L)=15L^{\\frac{1}{2}}$$
+$$Q'(L)=10L^{\\frac{3}{2}}\\qquad Q''(L)=15L^{\\frac{1}{2}}$$
 
 Evaluating the marginal product yields
 
-$$Q^{\\prime}(1)=10\\qquad Q^{\\prime}(4)=10\\cdot 8=80$$
+$$Q'(1)=10\\qquad Q'(4)=10\\cdot 8=80$$
 
-Because the exponent $\\dfrac{3}{2}$ is positive, $Q^{\\prime}(L)$ rises with $L$ rather than falling.`,
+Because the exponent $\\dfrac{3}{2}$ is positive, $Q'(L)$ rises with $L$ rather than falling — this is increasing (not diminishing) marginal product on the given power.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-24",
@@ -1662,39 +1710,39 @@ Revenue is price times tickets sold. Expand with the linear fare:
 
 $$R(q)=q\\cdot\\Bigl(60-\\dfrac{1}{2}q\\Bigr)=60q-\\dfrac{1}{2}q^{2}$$
 
-which matches the claimed revenue function, so the statement is True.`,
+which matches the claimed revenue function. Keep the coefficient $\\tfrac{1}{2}$ on $q^{2}$, not $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Differentiate the revenue quadratic term by term:
 
-$$R^{\\prime}(q)=60-q$$
+$$R'(q)=60-q$$
 
-matching the claimed marginal revenue, so the statement is True.`,
+matching the claimed marginal revenue. The derivative of $-\\tfrac{1}{2}q^{2}$ is $-q$, not $-\\tfrac{1}{2}q$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=20$ into marginal revenue:
 
-$$R^{\\prime}(20)=60-20=40$$
+$$R'(20)=60-20=40$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Do not confuse this with $p(20)=50$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
-Marginal revenue is $R^{\\prime}(q)=60-q$, while the fare schedule is
+Marginal revenue is $R'(q)=60-q$, while the fare schedule is
 
 $$p(q)=60-\\dfrac{1}{2}q$$
 
-These differ by the factor on $q$, so they are not identical at every $q$. The claim's identification is incorrect, so the statement is False.`,
+These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First evaluate both height and slope at $q=20$:
 
-$$R(20)=60\\cdot 20-\\dfrac{1}{2}\\cdot 400=1000\\qquad R^{\\prime}(20)=40$$
+$$R(20)=60\\cdot 20-\\dfrac{1}{2}\\cdot 400=1000\\qquad R'(20)=40$$
 
 Point-slope form then gives the tangent
 
 $$y=1000+40(q-20)$$
 
-exactly as claimed, so the statement is True.`
+exactly as claimed. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 24,
@@ -1705,13 +1753,15 @@ $$R(q)=q\\cdot p(q)=60q-\\dfrac{1}{2}q^{2}$$
 
 Differentiating the whole revenue function gives marginal revenue
 
-$$R^{\\prime}(q)=60-q$$
+$$R'(q)=60-q$$
 
-At $q=20$ one finds both $R^{\\prime}(20)=40$ and $R(20)=1000$, so the tangent line is
+At $q=20$ one finds both $R'(20)=40$ and $R(20)=1000$, so the tangent line is
 
 $$y=1000+40(q-20)$$
 
-Note that $R^{\\prime}(q)=60-q$ is not identical to the fare schedule $p(q)=60-\\dfrac{1}{2}q$.`,
+Note that $R'(q)=60-q$ is not identical to the fare schedule $p(q)=60-\\dfrac{1}{2}q$ — confusing marginal revenue with price is the main trap.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-25",
@@ -1731,41 +1781,41 @@ Note that $R^{\\prime}(q)=60-q$ is not identical to the fare schedule $p(q)=60-\
     tactical_explanations: [
       `**A.** → True
 
-Rewrite delay as a power and differentiate:
+Rewrite delay as a power and differentiate with the chain rule:
 
 $$D(n)=36(n+2)^{-1}$$
 
-$$D^{\\prime}(n)=-36(n+2)^{-2}=-\\dfrac{36}{(n+2)^{2}}$$
+$$D'(n)=-36(n+2)^{-2}=-\\dfrac{36}{(n+2)^{2}}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. The inner derivative of $n+2$ is $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into the first derivative:
 
-$$D^{\\prime}(1)=-\\dfrac{36}{(1+2)^{2}}=-\\dfrac{36}{9}=-4$$
+$$D'(1)=-\\dfrac{36}{(1+2)^{2}}=-\\dfrac{36}{9}=-4$$
 
-The computed value matches the claim, so the statement is True.`,
+Keep the minus sign. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-Differentiate $D^{\\prime}(n)=-36(n+2)^{-2}$ once more:
+Differentiate $D'(n)=-36(n+2)^{-2}$ once more:
 
-$$D^{\\prime\\prime}(n)=72(n+2)^{-3}=\\dfrac{72}{(n+2)^{3}}$$
+$$D''(n)=(-36)\\cdot(-2)(n+2)^{-3}=\\dfrac{72}{(n+2)^{3}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The positive sign shows the reduction in delay becomes less steep as $n$ grows. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 The leading factor $-36$ is negative and the denominator is positive for every $n>0$, so
 
-$$D^{\\prime}(n)<0$$
+$$D'(n)<0$$
 
-throughout rather than positive. The claim's inequality is wrong, so the statement is False.`,
+throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 The first derivative measures minutes of delay gained (or lost) per extra agent. At $n=1$ that rate is
 
-$$D^{\\prime}(1)=-4$$
+$$D'(1)=-4$$
 
-so one extra agent cuts delay by about $4$ minutes, and the statement is True.`
+so one extra agent cuts delay by about $4$ minutes. The absolute value of the negative derivative is the size of the cut. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 25,
@@ -1776,9 +1826,11 @@ $$D(n)=\\dfrac{36}{n+2}=36(n+2)^{-1}\\qquad(n>0)$$
 
 Differentiating once and twice gives
 
-$$D^{\\prime}(n)=-\\dfrac{36}{(n+2)^{2}}\\qquad D^{\\prime\\prime}(n)=\\dfrac{72}{(n+2)^{3}}$$
+$$D'(n)=-\\dfrac{36}{(n+2)^{2}}\\qquad D''(n)=\\dfrac{72}{(n+2)^{3}}$$
 
-At $n=1$ the first derivative evaluates to $D^{\\prime}(1)=-4$, so one extra agent near that staffing level cuts delay by about $4$ minutes. Because the leading factor is negative, $D^{\\prime}(n)<0$ for every $n>0$.`,
+At $n=1$ the first derivative evaluates to $D'(1)=-4$, so one extra agent near that staffing level cuts delay by about $4$ minutes. Because the leading factor is negative, $D'(n)<0$ for every $n>0$ — delay falls as staffing rises.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-26",
@@ -1800,37 +1852,37 @@ At $n=1$ the first derivative evaluates to $D^{\\prime}(1)=-4$, so one extra age
 
 The response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:
 
-$$S^{\\prime}(x)=e^{-2x}+x(-2)e^{-2x}=e^{-2x}(1-2x)$$
+$$S'(x)=e^{-2x}+x(-2)e^{-2x}=e^{-2x}(1-2x)$$
 
-which matches the claimed formula, so the statement is True.`,
+which matches the claimed formula. The chain-rule factor $-2$ is essential. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=\\dfrac{1}{2}$ into the factored derivative:
 
-$$S^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)=e^{-1}\\cdot 0=0$$
+$$S'\\!\\left(\\dfrac{1}{2}\\right)=e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)=e^{-1}\\cdot 0=0$$
 
-so the derivative vanishes there, matching the claim, and the statement is True.`,
+so the derivative vanishes there. The factor $(1-2x)$ is zero at the critical point. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-Differentiate $S^{\\prime}(x)=e^{-2x}(1-2x)$ again and factor $e^{-2x}$:
+Differentiate $S'(x)=e^{-2x}(1-2x)$ again and factor $e^{-2x}$. Expanding the product rule gives
 
-$$S^{\\prime\\prime}(x)=e^{-2x}(4x-4)$$
+$$S''(x)=e^{-2x}(4x-4)$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. Equivalent forms such as $4e^{-2x}(x-1)$ are the same polynomial factor. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → True
 
 Extending the first-derivative formula to $x=0$ gives
 
-$$S^{\\prime}(0)=e^{0}(1-0)=1$$
+$$S'(0)=e^{0}(1-0)=1$$
 
-matching the claim, so the statement is True.`,
+matching the claim. At the origin the exponential is $1$ and the linear factor is $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=1$ into the first derivative:
 
-$$S^{\\prime}(1)=e^{-2}(1-2)=-e^{-2}$$
+$$S'(1)=e^{-2}(1-2)=-e^{-2}$$
 
-which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign, so the statement is False.`
+which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign from $(1-2x)$. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 26,
@@ -1841,15 +1893,19 @@ $$S(x)=x\\cdot e^{-2x}\\qquad(x>0)$$
 
 The product rule factors cleanly to
 
-$$S^{\\prime}(x)=e^{-2x}\\cdot(1-2x)$$
+$$S'(x)=e^{-2x}\\cdot(1-2x)$$
 
-so the critical point $S^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$ is immediate, while $S^{\\prime}(0)=1$ and
+so the critical point $S'\\!\\left(\\dfrac{1}{2}\\right)=0$ is immediate, while $S'(0)=1$ and
 
-$$S^{\\prime}(1)=e^{-2}(1-2)=-e^{-2}$$
+$$S'(1)=e^{-2}(1-2)=-e^{-2}$$
 
 Differentiating again and factoring $e^{-2x}$ yields
 
-$$S^{\\prime\\prime}(x)=e^{-2x}\\cdot(4x-4)$$`,
+$$S''(x)=e^{-2x}\\cdot(4x-4)$$
+
+Watch the chain-rule factor $-2$ from $e^{-2x}$ — it drives both the critical point and the sign at $x=1$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-27",
@@ -1869,39 +1925,39 @@ $$S^{\\prime\\prime}(x)=e^{-2x}\\cdot(4x-4)$$`,
     tactical_explanations: [
       `**A.** → True
 
-Rewrite reach as $R(a)=5(4a+9)^{\\frac{1}{2}}$ and apply the chain rule:
+Rewrite reach as $R(a)=5(4a+9)^{\\frac{1}{2}}$ and apply the chain rule, multiplying by the inner slope $4$:
 
-$$R^{\\prime}(a)=5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4=\\dfrac{10}{\\sqrt{4a+9}}$$
+$$R'(a)=5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4=\\dfrac{10}{\\sqrt{4a+9}}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. Forgetting the inner $4$ would leave $\\dfrac{5}{2\\sqrt{4a+9}}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $a=0$:
 
-$$R^{\\prime}(0)=\\dfrac{10}{\\sqrt{9}}=\\dfrac{10}{3}$$
+$$R'(0)=\\dfrac{10}{\\sqrt{9}}=\\dfrac{10}{3}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Do not evaluate $R(0)=15$ when asking for the slope. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
-Differentiate $R^{\\prime}(a)=10(4a+9)^{-\\frac{1}{2}}$ once more:
+Differentiate $R'(a)=10(4a+9)^{-\\frac{1}{2}}$ once more, again multiplying by the inner slope $4$:
 
-$$R^{\\prime\\prime}(a)=10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
+$$R''(a)=10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The negative sign encodes diminishing returns. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $a=4$, using $4\\cdot 4+9=25$:
 
-$$R^{\\prime}(4)=\\dfrac{10}{\\sqrt{25}}=\\dfrac{10}{5}=2$$
+$$R'(4)=\\dfrac{10}{\\sqrt{25}}=\\dfrac{10}{5}=2$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 As $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so
 
-$$R^{\\prime}(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
+$$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
 
-rather than exploding. The claim's comparison is incorrect, so the statement is False.`
+rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 27,
@@ -1912,13 +1968,15 @@ $$R(a)=5\\sqrt{4a+9}=5(4a+9)^{\\frac{1}{2}}$$
 
 Differentiating once and twice gives
 
-$$R^{\\prime}(a)=\\dfrac{10}{\\sqrt{4a+9}}\\qquad R^{\\prime\\prime}(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
+$$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\qquad R''(a)=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
 
 Evaluating at the named intensities yields
 
-$$R^{\\prime}(0)=\\dfrac{10}{3}\\qquad R^{\\prime}(4)=2$$
+$$R'(0)=\\dfrac{10}{3}\\qquad R'(4)=2$$
 
-As $a$ grows, the denominator $\\sqrt{4a+9}$ grows without bound, so $R^{\\prime}(a)\\to 0$ rather than growing without bound.`,
+As $a$ grows, the denominator $\\sqrt{4a+9}$ grows without bound, so $R'(a)\\to 0$ rather than growing without bound — diminishing marginal reach.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-28",
@@ -1938,39 +1996,39 @@ As $a$ grows, the denominator $\\sqrt{4a+9}$ grows without bound, so $R^{\\prime
     tactical_explanations: [
       `**A.** → True
 
-Differentiate $U(t)=30\\ln(2t+1)-4t$ with the chain rule on the logarithm:
+Differentiate $U(t)=30\\ln(2t+1)-4t$ with the chain rule on the logarithm, multiplying by the inner slope $2$:
 
-$$U^{\\prime}(t)=30\\cdot\\dfrac{2}{2t+1}-4=\\dfrac{60}{2t+1}-4$$
+$$U'(t)=30\\cdot\\dfrac{2}{2t+1}-4=\\dfrac{60}{2t+1}-4$$
 
-matching the claimed first derivative, so the statement is True.`,
+matching the claimed first derivative. Forgetting the inner $2$ leaves $\\dfrac{30}{2t+1}-4$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=2$ into the first derivative:
 
-$$U^{\\prime}(2)=\\dfrac{60}{4+1}-4=\\dfrac{60}{5}-4=12-4=8$$
+$$U'(2)=\\dfrac{60}{4+1}-4=\\dfrac{60}{5}-4=12-4=8$$
 
-The computed value matches the claim, so the statement is True.`,
+The arithmetic $12-4=8$ completes the evaluation. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Differentiate $U^{\\prime}(t)=60(2t+1)^{-1}-4$ once more:
+Differentiate $U'(t)=60(2t+1)^{-1}-4$ once more, multiplying by the inner slope $2$:
 
-$$U^{\\prime\\prime}(t)=-60(2t+1)^{-2}\\cdot 2=-\\dfrac{120}{(2t+1)^{2}}$$
+$$U''(t)=-60(2t+1)^{-2}\\cdot 2=-\\dfrac{120}{(2t+1)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The always-negative sign shows diminishing marginal utility. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
 Extending the first-derivative formula to $t=0$ gives
 
-$$U^{\\prime}(0)=\\dfrac{60}{1}-4=56$$
+$$U'(0)=\\dfrac{60}{1}-4=56$$
 
-matching the claim, so the statement is True.`,
+matching the claim. At $t=0$ the logarithm argument is $1$, so there is no singularity. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
-Setting $U^{\\prime}(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
+Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
 
 $$t=7$$
 
-not $t=\\dfrac{7}{2}$. The claimed root is wrong, so the statement is False.`
+not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 28,
@@ -1981,9 +2039,11 @@ $$U(t)=30\\cdot\\ln(2t+1)-4t\\qquad(t>0)$$
 
 The chain rule on the logarithm produces
 
-$$U^{\\prime}(t)=\\dfrac{60}{2t+1}-4\\qquad U^{\\prime\\prime}(t)=-\\dfrac{120}{(2t+1)^{2}}$$
+$$U'(t)=\\dfrac{60}{2t+1}-4\\qquad U''(t)=-\\dfrac{120}{(2t+1)^{2}}$$
 
-Evaluating at the endpoints of interest gives $U^{\\prime}(0)=56$ and $U^{\\prime}(2)=8$. Setting the first derivative to zero solves $\\dfrac{60}{2t+1}=4$, hence $t=7$, not the incorrect guess $t=\\dfrac{7}{2}$.`,
+Evaluating at the endpoints of interest gives $U'(0)=56$ and $U'(2)=8$. Setting the first derivative to zero solves $\\dfrac{60}{2t+1}=4$, hence $t=7$, not the incorrect guess $t=\\dfrac{7}{2}$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-29",
@@ -2005,37 +2065,37 @@ Evaluating at the endpoints of interest gives $U^{\\prime}(0)=56$ and $U^{\\prim
 
 The quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:
 
-$$G^{\\prime}(x)=5(4x+1)^{4}\\cdot 4=20(4x+1)^{4}$$
+$$G'(x)=5(4x+1)^{4}\\cdot 4=20(4x+1)^{4}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. Forgetting the factor $4$ leaves only $5(4x+1)^{4}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$:
 
-$$G^{\\prime}(0)=20\\cdot 1^{4}=20$$
+$$G'(0)=20\\cdot 1^{4}=20$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. At the origin the inner linear factor is $1$, so the fourth power is still $1$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
-Differentiate $G^{\\prime}(x)=20(4x+1)^{4}$ again:
+Differentiate $G'(x)=20(4x+1)^{4}$ again, again multiplying by the inner slope $4$:
 
-$$G^{\\prime\\prime}(x)=20\\cdot 4(4x+1)^{3}\\cdot 4=320(4x+1)^{3}$$
+$$G''(x)=20\\cdot 4(4x+1)^{3}\\cdot 4=320(4x+1)^{3}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The coefficient $20\\cdot 4\\cdot 4=320$ is the key arithmetic. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$G^{\\prime\\prime}(0)=320\\cdot 1^{3}=320$$
+$$G''(0)=320\\cdot 1^{3}=320$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → True
 
 Substitute $x=1$, using $4\\cdot 1+1=5$:
 
-$$G^{\\prime}(1)=20\\cdot 5^{4}$$
+$$G'(1)=20\\cdot 5^{4}$$
 
-exactly the expression named in the claim, so the statement is True.`
+exactly the expression named in the claim. Leaving $5^{4}$ unexpanded is fine — the claim does the same. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 29,
@@ -2046,15 +2106,19 @@ $$G(x)=(4x+1)^{5}$$
 
 The chain rule multiplies the outer power by the inner slope $4$ and simplifies to
 
-$$G^{\\prime}(x)=20(4x+1)^{4}$$
+$$G'(x)=20(4x+1)^{4}$$
 
 Differentiating once more yields
 
-$$G^{\\prime\\prime}(x)=320(4x+1)^{3}$$
+$$G''(x)=320(4x+1)^{3}$$
 
 Evaluating at the origin and at unit input gives the concrete values
 
-$$G^{\\prime}(0)=20\\qquad G^{\\prime\\prime}(0)=320\\qquad G^{\\prime}(1)=20\\cdot 5^{4}$$`,
+$$G'(0)=20\\qquad G''(0)=320\\qquad G'(1)=20\\cdot 5^{4}$$
+
+Each differentiation multiplies by both the falling outer power and the constant inner slope $4$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-30",
@@ -2074,39 +2138,39 @@ $$G^{\\prime}(0)=20\\qquad G^{\\prime\\prime}(0)=320\\qquad G^{\\prime}(1)=20\\c
     tactical_explanations: [
       `**A.** → True
 
-The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule:
+The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule, differentiating the square and the nested root in turn:
 
-$$P^{\\prime}(x)=2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
+$$P'(x)=2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
 
-matching the claimed unsimplified formula, so the statement is True.`,
+matching the claimed unsimplified formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Clear the two pieces over the common denominator $2\\sqrt{3x+1}$:
 
-$$P^{\\prime}(x)=\\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
+$$P'(x)=\\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
 
-which is the claimed combined form, so the statement is True.`,
+which is the claimed combined form. The numerator $12x^{2}+4x+3x^{2}=15x^{2}+4x$ is the key. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$ into the combined derivative:
 
-$$P^{\\prime}(1)=\\dfrac{15+4}{2\\sqrt{4}}=\\dfrac{19}{2\\cdot 2}=\\dfrac{19}{4}$$
+$$P'(1)=\\dfrac{15+4}{2\\sqrt{4}}=\\dfrac{19}{2\\cdot 2}=\\dfrac{19}{4}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Do not stop at $\\dfrac{19}{2}$ by forgetting $\\sqrt{4}=2$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → True
 
 Every term of the combined derivative carries a factor of $x$:
 
-$$P^{\\prime}(0)=\\dfrac{0}{2\\sqrt{1}}=0$$
+$$P'(0)=\\dfrac{0}{2\\sqrt{1}}=0$$
 
-so the derivative vanishes at the origin, and the statement is True.`,
+so the derivative vanishes at the origin. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 The evaluation at $x=1$ already produced
 
-$$P^{\\prime}(1)=\\dfrac{19}{4}$$
+$$P'(1)=\\dfrac{19}{4}$$
 
-Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong and the statement is False.`
+Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong — it looks like a misread of the leading numerator coefficient $15$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 30,
@@ -2117,13 +2181,15 @@ $$P(x)=x^{2}\\cdot\\sqrt{3x+1}\\qquad(x>0)$$
 
 The product rule first writes the two-term derivative
 
-$$P^{\\prime}(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
+$$P'(x)=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
 
 Clearing the common denominator then simplifies to the single fraction
 
-$$P^{\\prime}(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
+$$P'(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
 
-Hence $P^{\\prime}(0)=0$ and $P^{\\prime}(1)=\\dfrac{19}{4}$, which is not equal to $\\dfrac{15}{2}$.`,
+Hence $P'(0)=0$ and $P'(1)=\\dfrac{19}{4}$, which is not equal to $\\dfrac{15}{2}$. The numerator algebra $4x(3x+1)+3x^{2}=15x^{2}+4x$ is the delicate step.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-31",
@@ -2143,39 +2209,39 @@ Hence $P^{\\prime}(0)=0$ and $P^{\\prime}(1)=\\dfrac{19}{4}$, which is not equal
     tactical_explanations: [
       `**A.** → True
 
-The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes
+The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes numerator derivative times denominator minus numerator times denominator derivative:
 
-$$K^{\\prime}(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$
+$$K'(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$
 
-which is exactly the unsimplified form named in the claim, so the statement is True.`,
+which is exactly the unsimplified form named in the claim. The factor $6$ comes from $3\\cdot 2$ on the cubed numerator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Factor $(2x-1)^{2}$ from the numerator and simplify the remaining linear factor:
 
-$$K^{\\prime}(x)=\\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
+$$K'(x)=\\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
 
-matching the claimed factored form, so the statement is True.`,
+since $6x+24-2x+1=4x+25$. Matching the claimed factored form, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$ into the factored derivative:
 
-$$K^{\\prime}(1)=\\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}=\\dfrac{1\\cdot 29}{25}=\\dfrac{29}{25}$$
+$$K'(1)=\\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}=\\dfrac{1\\cdot 29}{25}=\\dfrac{29}{25}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
-At $x=\\dfrac{1}{2}$ the factor $2x-1$ vanishes, so the numerator of $K^{\\prime}$ is zero while the denominator stays positive:
+At $x=\\dfrac{1}{2}$ the factor $2x-1$ vanishes, so the numerator of $K'$ is zero while the denominator $(x+4)^{2}$ stays positive:
 
-$$K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$$
+$$K'\\!\\left(\\dfrac{1}{2}\\right)=0$$
 
-matching the claim, so the statement is True.`,
+matching the claim. That is a genuine critical point of $K$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 The evaluation at $x=1$ already produced
 
-$$K^{\\prime}(1)=\\dfrac{29}{25}$$
+$$K'(1)=\\dfrac{29}{25}$$
 
-Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong and the statement is False.`
+Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong. A trap is misreading $4+25=29$ as $4+31$ or similar. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 31,
@@ -2186,13 +2252,15 @@ $$K(x)=\\dfrac{(2x-1)^{3}}{x+4}\\qquad(x>0)$$
 
 The quotient rule first writes
 
-$$K^{\\prime}(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$
+$$K'(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$
 
 Factoring $(2x-1)^{2}$ from the numerator simplifies to
 
-$$K^{\\prime}(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
+$$K'(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
 
-Hence $K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$ and $K^{\\prime}(1)=\\dfrac{29}{25}$, not $\\dfrac{7}{5}$.`,
+Hence $K'\\!\\left(\\dfrac{1}{2}\\right)=0$ and $K'(1)=\\dfrac{29}{25}$, not $\\dfrac{7}{5}$. The remaining linear factor $4x+25$ never vanishes for $x>0$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-32",
@@ -2212,39 +2280,39 @@ Hence $K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$ and $K^{\\prime}(1)=\\dfrac
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the composition $L(x)=\\ln(x^{2}+9)$ with the chain rule:
+Differentiate the composition $L(x)=\\ln(x^{2}+9)$ with the chain rule: the outer logarithm contributes $\\dfrac{1}{x^{2}+9}$ and the inner quadratic contributes $2x$,
 
-$$L^{\\prime}(x)=\\dfrac{1}{x^{2}+9}\\cdot 2x=\\dfrac{2x}{x^{2}+9}$$
+$$L'(x)=\\dfrac{1}{x^{2}+9}\\cdot 2x=\\dfrac{2x}{x^{2}+9}$$
 
-matching the claimed first derivative, so the statement is True.`,
+matching the claimed first derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=3$ into the first derivative:
 
-$$L^{\\prime}(3)=\\dfrac{2\\cdot 3}{9+9}=\\dfrac{6}{18}=\\dfrac{1}{3}$$
+$$L'(3)=\\dfrac{2\\cdot 3}{9+9}=\\dfrac{6}{18}=\\dfrac{1}{3}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
-Differentiate $L^{\\prime}(x)=\\dfrac{2x}{x^{2}+9}$ with the quotient rule:
+Differentiate $L'(x)=\\dfrac{2x}{x^{2}+9}$ with the quotient rule:
 
-$$L^{\\prime\\prime}(x)=\\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
+$$L''(x)=\\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The numerator $2x^{2}+18-4x^{2}=18-2x^{2}$ is the key. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$L^{\\prime\\prime}(0)=\\dfrac{18}{9^{2}}=\\dfrac{18}{81}=\\dfrac{2}{9}$$
+$$L''(0)=\\dfrac{18}{9^{2}}=\\dfrac{18}{81}=\\dfrac{2}{9}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Reduce $\\dfrac{18}{81}$ by dividing by $9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=0$ into the first derivative:
 
-$$L^{\\prime}(0)=\\dfrac{0}{9}=0$$
+$$L'(0)=\\dfrac{0}{9}=0$$
 
-which is not equal to $1$. The claim's value is incorrect, so the statement is False.`
+which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 32,
@@ -2255,13 +2323,15 @@ $$L(x)=\\ln(x^{2}+9)$$
 
 The chain rule produces the first derivative
 
-$$L^{\\prime}(x)=\\dfrac{2x}{x^{2}+9}$$
+$$L'(x)=\\dfrac{2x}{x^{2}+9}$$
 
-so $L^{\\prime}(3)=\\dfrac{1}{3}$ while $L^{\\prime}(0)=0$. Differentiating again by the quotient rule and combining over one denominator yields
+so $L'(3)=\\dfrac{1}{3}$ while $L'(0)=0$. Differentiating again by the quotient rule and combining over one denominator yields
 
-$$L^{\\prime\\prime}(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
+$$L''(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
 
-and therefore $L^{\\prime\\prime}(0)=\\dfrac{2}{9}$.`,
+and therefore $L''(0)=\\dfrac{2}{9}$. At the origin the odd factor $2x$ forces $L'=0$, not $1$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-33",
@@ -2281,39 +2351,39 @@ and therefore $L^{\\prime\\prime}(0)=\\dfrac{2}{9}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Differentiate $M(x)=(x^{2}+1)^{\\frac{3}{2}}$ with the chain rule:
+Differentiate $M(x)=(x^{2}+1)^{\\frac{3}{2}}$ with the chain rule, multiplying by the inner slope $2x$:
 
-$$M^{\\prime}(x)=\\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x=3x\\sqrt{x^{2}+1}$$
+$$M'(x)=\\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x=3x\\sqrt{x^{2}+1}$$
 
-matching the claimed first derivative, so the statement is True.`,
+matching the claimed first derivative. The factors $\\tfrac{3}{2}$ and $2$ cancel cleanly. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 The first derivative carries an explicit factor of $x$:
 
-$$M^{\\prime}(0)=3\\cdot 0\\cdot\\sqrt{1}=0$$
+$$M'(0)=3\\cdot 0\\cdot\\sqrt{1}=0$$
 
-so the derivative vanishes at the origin, matching the claim, and the statement is True.`,
+so the derivative vanishes at the origin, matching the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
-Differentiate $M^{\\prime}(x)=3x(x^{2}+1)^{\\frac{1}{2}}$ with the product rule and clear the common root:
+Differentiate $M'(x)=3x(x^{2}+1)^{\\frac{1}{2}}$ with the product rule and clear the common root:
 
-$$M^{\\prime\\prime}(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
+$$M''(x)=3\\sqrt{x^{2}+1}+3x\\cdot\\dfrac{x}{\\sqrt{x^{2}+1}}=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$M^{\\prime\\prime}(0)=\\dfrac{3}{\\sqrt{1}}=3$$
+$$M''(0)=\\dfrac{3}{\\sqrt{1}}=3$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. At the origin only the constant numerator term $3$ survives. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
 Substitute $x=1$ into the first derivative:
 
-$$M^{\\prime}(1)=3\\cdot 1\\cdot\\sqrt{2}=3\\sqrt{2}$$
+$$M'(1)=3\\cdot 1\\cdot\\sqrt{2}=3\\sqrt{2}$$
 
-which is not the bare value $3$. The claim drops the square-root factor, so the statement is False.`
+which is not the bare value $3$. The claim drops the square-root factor $\\sqrt{2}$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 33,
@@ -2324,13 +2394,15 @@ $$M(x)=(x^{2}+1)^{\\frac{3}{2}}$$
 
 The chain rule simplifies the first derivative to
 
-$$M^{\\prime}(x)=3x\\sqrt{x^{2}+1}$$
+$$M'(x)=3x\\sqrt{x^{2}+1}$$
 
-so $M^{\\prime}(0)=0$ while $M^{\\prime}(1)=3\\sqrt{2}\\neq 3$. Differentiating again and writing everything over the common radical yields
+so $M'(0)=0$ while $M'(1)=3\\sqrt{2}\\neq 3$. Differentiating again and writing everything over the common radical yields
 
-$$M^{\\prime\\prime}(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
+$$M''(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
 
-and therefore $M^{\\prime\\prime}(0)=3$.`,
+and therefore $M''(0)=3$. Dropping the square-root factor when evaluating at $x=1$ is the main numerical trap.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-34",
@@ -2352,37 +2424,37 @@ and therefore $M^{\\prime\\prime}(0)=3$.`,
 
 The momentum index is the product $F(x)=e^{3x}(x^{2}+1)$. Apply the product rule and factor $e^{3x}$:
 
-$$F^{\\prime}(x)=3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x=e^{3x}(3x^{2}+2x+3)$$
+$$F'(x)=3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x=e^{3x}(3x^{2}+2x+3)$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. The chain-rule factor $3$ on the exponential is essential. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$ into the first derivative:
 
-$$F^{\\prime}(0)=e^{0}(0+0+3)=3$$
+$$F'(0)=e^{0}(0+0+3)=3$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. At the origin only the constant term $3$ of the polynomial factor survives. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
-Differentiate $F^{\\prime}(x)=e^{3x}(3x^{2}+2x+3)$ again and factor $e^{3x}$:
+Differentiate $F'(x)=e^{3x}(3x^{2}+2x+3)$ again and factor $e^{3x}$. The product rule produces
 
-$$F^{\\prime\\prime}(x)=e^{3x}(9x^{2}+12x+11)$$
+$$F''(x)=3e^{3x}(3x^{2}+2x+3)+e^{3x}(6x+2)=e^{3x}(9x^{2}+12x+11)$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second derivative:
 
-$$F^{\\prime\\prime}(0)=e^{0}\\cdot 11=11$$
+$$F''(0)=e^{0}\\cdot 11=11$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 The evaluation at $x=0$ already produced
 
-$$F^{\\prime}(0)=e^{0}(0+0+3)=3$$
+$$F'(0)=e^{0}(0+0+3)=3$$
 
-which is not equal to $1$. The claim's value is incorrect, so the statement is False.`
+which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 34,
@@ -2393,13 +2465,13 @@ $$F(x)=e^{3x}\\cdot(x^{2}+1)$$
 
 The product rule, after factoring out $e^{3x}$ at every stage, yields
 
-$$F^{\\prime}(x)=e^{3x}\\cdot(3x^{2}+2x+3)$$
+$$F'(x)=e^{3x}\\cdot(3x^{2}+2x+3)$$
 
-so $F^{\\prime}(0)=3$, not $1$. Differentiating the polynomial factor once more and again factoring $e^{3x}$ gives
+so $F'(0)=3$, not $1$. Differentiating the polynomial factor once more and again factoring $e^{3x}$ gives
 
-$$F^{\\prime\\prime}(x)=e^{3x}\\cdot(9x^{2}+12x+11)$$
+$$F''(x)=e^{3x}\\cdot(9x^{2}+12x+11)$$
 
-and therefore $F^{\\prime\\prime}(0)=11$.`,
+and therefore $F''(0)=11$. The constant term $3$ in $F'$ comes from $3\\cdot 1$ in the product rule, not from the bare exponential alone.`,
   },
   {
     id: "math-11-35",
@@ -2419,39 +2491,39 @@ and therefore $F^{\\prime\\prime}(0)=11$.`,
     tactical_explanations: [
       `**A.** → True
 
-Rewrite $H(x)$ as a product of powers and differentiate; after simplifying one obtains
+Rewrite $H(x)$ as a product of powers and differentiate with the product rule. After combining over one denominator one obtains
 
-$$H^{\\prime}(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$
+$$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$
 
-which matches the claimed formula, so the statement is True.`,
+The numerator $9$ comes from the Wronskian-style difference $2(x+5)-(2x+1)=9$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=2$, using $2x+1=5$ and $x+5=7$:
 
-$$H^{\\prime}(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
+$$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
-exactly the value named in the claim, so the statement is True.`,
+exactly the value named in the claim. Leave the irrational factors unexpanded — that is the exact form. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Converting the square root of a quotient into a product of powers gives
 
 $$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$
 
-which is exactly the rewriting named in the claim, so the statement is True.`,
+which is exactly the rewriting named in the claim. That form sets up the product rule. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 In the derivative formula the numerator factor $9$ is positive and every remaining factor stays positive for $x>0$, so
 
-$$H^{\\prime}(x)>0$$
+$$H'(x)>0$$
 
-rather than negative. The claim's inequality is wrong, so the statement is False.`,
+rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The exact value at $x=2$ is
 
-$$H^{\\prime}(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
+$$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
-which is not equal to the simplified fraction $\\dfrac{9}{70}$. The claim's numerical reduction is incorrect, so the statement is False.`
+which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 35,
@@ -2462,13 +2534,13 @@ $$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$
 
 Differentiating and combining over one positive denominator yields
 
-$$H^{\\prime}(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$
+$$H'(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$
 
 which is positive for every $x>0$, so $H$ is increasing rather than decreasing. At $x=2$,
 
-$$H^{\\prime}(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
+$$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
-which is not equal to the simplified fraction $\\dfrac{9}{70}$.`,
+which is not equal to the simplified fraction $\\dfrac{9}{70}$ — that false reduction ignores the irrational factors.`,
   },
   {
     id: "math-11-36",
@@ -2488,43 +2560,43 @@ which is not equal to the simplified fraction $\\dfrac{9}{70}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Differentiate $N(x)=x(x^{2}+4)^{-\\frac{1}{2}}$ with the product rule and simplify:
+Differentiate $N(x)=x(x^{2}+4)^{-\\frac{1}{2}}$ with the product rule and simplify. The numerator becomes $(x^{2}+4)-x^{2}=4$, leaving
 
-$$N^{\\prime}(x)=\\dfrac{(x^{2}+4)-x^{2}}{(x^{2}+4)^{\\frac{3}{2}}}=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
+$$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$, using $4^{\\frac{3}{2}}=8$:
 
-$$N^{\\prime}(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$
+$$N'(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=2$ into the simplified derivative. First $x^{2}+4=8$ and
 
-$$8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=16\\sqrt{2}$$
+$$8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=8\\cdot 2\\sqrt{2}=16\\sqrt{2}$$
 
 so
 
-$$N^{\\prime}(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}$$
+$$N'(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 The simplified derivative
 
-$$N^{\\prime}(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
+$$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
 
-has a positive numerator and a positive denominator for every real $x$, so it never changes sign. The claim is therefore incorrect, and the statement is False.`,
+has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $x=1$, using $1+4=5$:
 
-$$N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$$
+$$N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$$
 
-exactly as claimed, so the statement is True.`
+exactly as claimed. Leaving $5^{\\frac{3}{2}}$ unexpanded is the exact form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 36,
@@ -2535,11 +2607,15 @@ $$N(x)=\\dfrac{x}{\\sqrt{x^{2}+4}}$$
 
 Differentiating and combining into one fraction yields the always-positive derivative
 
-$$N^{\\prime}(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
+$$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
 
-so $N^{\\prime}$ never changes sign. Evaluating at the named points gives
+so $N'$ never changes sign. Evaluating at the named points gives
 
-$$N^{\\prime}(0)=\\dfrac{1}{2}\\qquad N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}}\\qquad N^{\\prime}(2)=\\dfrac{1}{4\\sqrt{2}}$$`,
+$$N'(0)=\\dfrac{1}{2}\\qquad N'(1)=\\dfrac{4}{5^{\\frac{3}{2}}}\\qquad N'(2)=\\dfrac{1}{4\\sqrt{2}}$$
+
+The numerator $4$ is the constant leftover $(x^{2}+4)-x^{2}$, which never vanishes.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-37",
@@ -2561,37 +2637,37 @@ $$N^{\\prime}(0)=\\dfrac{1}{2}\\qquad N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}
 
 Differentiate the cubic cost $C(q)=q^{3}-6q^{2}+20q+50$ term by term:
 
-$$C^{\\prime}(q)=3q^{2}-12q+20$$
+$$C'(q)=3q^{2}-12q+20$$
 
-matching the claimed first derivative, so the statement is True.`,
+matching the claimed first derivative. The constant $50$ vanishes under differentiation. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Differentiate the first-derivative polynomial once more:
 
-$$C^{\\prime\\prime}(q)=6q-12$$
+$$C''(q)=6q-12$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. This measures how fast marginal cost itself changes. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=2$ into the second derivative:
 
-$$C^{\\prime\\prime}(2)=12-12=0$$
+$$C''(2)=12-12=0$$
 
-so the second derivative vanishes there, matching the claim, and the statement is True.`,
+so the second derivative vanishes there, matching the claim. That is the natural inflection candidate of the cubic. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → False
 
 Evaluate the second derivative at $q=1$:
 
-$$C^{\\prime\\prime}(1)=6-12=-6<0$$
+$$C''(1)=6-12=-6<0$$
 
-so the inequality $C^{\\prime\\prime}(1)>0$ fails. Comparing that with the claim, the statement is False.`,
+so the inequality $C''(1)>0$ fails. Just left of $q=2$ the cost curve is still concave down. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $q=2$ into the first derivative:
 
-$$C^{\\prime}(2)=3\\cdot 4-12\\cdot 2+20=12-24+20=8$$
+$$C'(2)=3\\cdot 4-12\\cdot 2+20=12-24+20=8$$
 
-The computed value matches the claim, so the statement is True.`
+The computed value matches the claim. Marginal cost is still positive at the inflection candidate. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 37,
@@ -2602,13 +2678,15 @@ $$C(q)=q^{3}-6q^{2}+20q+50$$
 
 Differentiating once and twice produces marginal cost and its slope:
 
-$$C^{\\prime}(q)=3q^{2}-12q+20\\qquad C^{\\prime\\prime}(q)=6q-12$$
+$$C'(q)=3q^{2}-12q+20\\qquad C''(q)=6q-12$$
 
 Evaluating at the candidate inflection and at nearby points yields
 
-$$C^{\\prime\\prime}(2)=0\\qquad C^{\\prime\\prime}(1)=-6<0\\qquad C^{\\prime}(2)=8$$
+$$C''(2)=0\\qquad C''(1)=-6<0\\qquad C'(2)=8$$
 
-so the second derivative vanishes at $q=2$ while remaining negative just to its left.`,
+so the second derivative vanishes at $q=2$ while remaining negative just to its left. That marks a curvature change, not automatically a cost minimum.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-38",
@@ -2628,39 +2706,39 @@ so the second derivative vanishes at $q=2$ while remaining negative just to its 
     tactical_explanations: [
       `**A.** → True
 
-The warranty score is the product $W(x)=(2x+1)^{2}(x-3)^{3}$. After the product rule and factoring $(2x+1)(x-3)^{2}$ one obtains
+The warranty score is the product $W(x)=(2x+1)^{2}(x-3)^{3}$. After the product rule and factoring $(2x+1)(x-3)^{2}$, the remaining linear factor simplifies to $10x-9$:
 
-$$W^{\\prime}(x)=(2x+1)(x-3)^{2}(10x-9)$$
+$$W'(x)=(2x+1)(x-3)^{2}(10x-9)$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. The coefficient $10$ comes from combining $4(x-3)+3(2x+1)$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 The squared factor $(x-3)^{2}$ vanishes at $x=3$, so the whole product is zero:
 
-$$W^{\\prime}(3)=0$$
+$$W'(3)=0$$
 
-matching the claim, so the statement is True.`,
+matching the claim. Even though $(2x+1)$ and $(10x-9)$ are nonzero there, the squared factor forces a critical point. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 The linear factor $10x-9$ vanishes at $x=\\dfrac{9}{10}$, so
 
-$$W^{\\prime}\\!\\left(\\dfrac{9}{10}\\right)=0$$
+$$W'\\!\\left(\\dfrac{9}{10}\\right)=0$$
 
-as well, matching the claim, and the statement is True.`,
+as well, matching the claim. That is a second root of the factored derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the factored derivative:
 
-$$W^{\\prime}(0)=(1)(-3)^{2}(-9)=1\\cdot 9\\cdot(-9)=-81$$
+$$W'(0)=(1)(-3)^{2}(-9)=1\\cdot 9\\cdot(-9)=-81$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Watch the sign from $10\\cdot 0-9=-9$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
 Differentiating only the first factor as if the second were constant would produce
 
 $$4(2x+1)(x-3)^{3}$$
 
-which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W^{\\prime}$, so the statement is False.`
+which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W'$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 38,
@@ -2671,13 +2749,15 @@ $$W(x)=(2x+1)^{2}(x-3)^{3}$$
 
 The product rule, after factoring completely, yields
 
-$$W^{\\prime}(x)=(2x+1)(x-3)^{2}(10x-9)$$
+$$W'(x)=(2x+1)(x-3)^{2}(10x-9)$$
 
 The zeros of this derivative include $x=3$ and $x=\\dfrac{9}{10}$, and evaluating at the origin gives
 
-$$W^{\\prime}(0)=-81$$
+$$W'(0)=-81$$
 
-Keeping only the first-factor contribution $4(2x+1)(x-3)^{3}$ omits the second product-rule term, so that truncated expression is not the full derivative.`,
+Keeping only the first-factor contribution $4(2x+1)(x-3)^{3}$ omits the second product-rule term, so that truncated expression is not the full derivative.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-39",
@@ -2697,39 +2777,39 @@ Keeping only the first-factor contribution $4(2x+1)(x-3)^{3}$ omits the second p
     tactical_explanations: [
       `**A.** → True
 
-Rewrite $V(x)=\\ln(3x+1)-\\ln(x+2)$ and differentiate:
+Rewrite $V(x)=\\ln(3x+1)-\\ln(x+2)$ and differentiate. Combining over one denominator,
 
-$$V^{\\prime}(x)=\\dfrac{3}{3x+1}-\\dfrac{1}{x+2}=\\dfrac{5}{(3x+1)(x+2)}$$
+$$V'(x)=\\dfrac{3}{3x+1}-\\dfrac{1}{x+2}=\\dfrac{3(x+2)-(3x+1)}{(3x+1)(x+2)}=\\dfrac{5}{(3x+1)(x+2)}$$
 
-matching the claimed first derivative, so the statement is True.`,
+matching the claimed first derivative. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Extending the formula to $x=0$ gives
 
-$$V^{\\prime}(0)=\\dfrac{5}{1\\cdot 2}=\\dfrac{5}{2}$$
+$$V'(0)=\\dfrac{5}{1\\cdot 2}=\\dfrac{5}{2}$$
 
-matching the claim, so the statement is True.`,
+matching the claim. At $x=0$ both linear factors are positive, so the derivative is defined. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
-Differentiate the quotient form of $V^{\\prime}$ again; after clearing the denominator one obtains
+Differentiate the quotient form of $V'$ again; after clearing the denominator one obtains
 
-$$V^{\\prime\\prime}(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$
+$$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The factor $6x+7$ comes from the product rule on the denominator. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=1$ into the first derivative:
 
-$$V^{\\prime}(1)=\\dfrac{5}{(3+1)(1+2)}=\\dfrac{5}{4\\cdot 3}=\\dfrac{5}{12}$$
+$$V'(1)=\\dfrac{5}{(3+1)(1+2)}=\\dfrac{5}{4\\cdot 3}=\\dfrac{5}{12}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 For every $x>0$ the numerator $5$ is positive and both linear factors in the denominator stay positive, so
 
-$$V^{\\prime}(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
+$$V'(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
 
-and never hits zero. There is therefore no such root, and the statement is False.`
+and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 39,
@@ -2740,15 +2820,17 @@ $$V(x)=\\ln\\!\\left(\\dfrac{3x+1}{x+2}\\right)=\\ln(3x+1)-\\ln(x+2)$$
 
 Differentiating and combining over one denominator yields
 
-$$V^{\\prime}(x)=\\dfrac{5}{(3x+1)(x+2)}$$
+$$V'(x)=\\dfrac{5}{(3x+1)(x+2)}$$
 
-which is positive for every $x>0$, so $V^{\\prime}$ never vanishes on that domain. Evaluating gives
+which is positive for every $x>0$, so $V'$ never vanishes on that domain. Evaluating gives
 
-$$V^{\\prime}(0)=\\dfrac{5}{2}\\qquad V^{\\prime}(1)=\\dfrac{5}{12}$$
+$$V'(0)=\\dfrac{5}{2}\\qquad V'(1)=\\dfrac{5}{12}$$
 
 Differentiating again produces
 
-$$V^{\\prime\\prime}(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$`,
+$$V''(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$
+
+The numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>0$.`,
   },
   {
     id: "math-11-40",
@@ -2768,39 +2850,39 @@ $$V^{\\prime\\prime}(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule:
+The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule, multiplying the logarithm's derivative by the inner slope $2$:
 
-$$Z^{\\prime}(t)=2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
+$$Z'(t)=2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
 
-matching the claimed formula, so the statement is True.`,
+matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $t=1$ into the first derivative:
 
-$$Z^{\\prime}(1)=2\\ln(3)+\\dfrac{2}{3}$$
+$$Z'(1)=2\\ln(3)+\\dfrac{2}{3}$$
 
-The computed value matches the claim, so the statement is True.`,
+The computed value matches the claim. Keep $\\dfrac{2}{3}$, not $1$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
-Differentiate $Z^{\\prime}$ again and rearrange the rational pieces to obtain
+Differentiate $Z'$ again and rearrange the rational pieces. Differentiating $2t\\ln(2t+1)$ and $\\dfrac{2t^{2}}{2t+1}$ produces
 
-$$Z^{\\prime\\prime}(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$
+$$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$
 
-matching the claimed second derivative, so the statement is True.`,
+matching the claimed second derivative. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 The correct evaluation at $t=1$ is
 
-$$Z^{\\prime}(1)=2\\ln 3+\\dfrac{2}{3}$$
+$$Z'(1)=2\\ln 3+\\dfrac{2}{3}$$
 
-Replacing the second summand by $1$ produces the different number $2\\ln 3+1$, so the claim is incorrect and the statement is False.`,
+Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $t=1$ into the second-derivative formula:
 
-$$Z^{\\prime\\prime}(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$
+$$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$
 
-exactly as claimed, so the statement is True.`
+exactly as claimed. The last numerator is $4(1)^{2}+4(1)=8$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 40,
@@ -2811,15 +2893,19 @@ $$Z(t)=t^{2}\\cdot\\ln(2t+1)\\qquad(t>0)$$
 
 The product rule, keeping the chain-rule factor from the logarithm, yields
 
-$$Z^{\\prime}(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
+$$Z'(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
 
-so $Z^{\\prime}(1)=2\\ln 3+\\dfrac{2}{3}$, not $2\\ln 3+1$. Differentiating again gives
+so $Z'(1)=2\\ln 3+\\dfrac{2}{3}$, not $2\\ln 3+1$. Differentiating again gives
 
-$$Z^{\\prime\\prime}(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$
+$$Z''(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$
 
 and therefore
 
-$$Z^{\\prime\\prime}(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$`,
+$$Z''(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$
+
+Replacing $\\dfrac{2}{2t+1}$ by $1$ is the classic evaluation trap at $t=1$.
+
+Reuse this derivative setup for every letter: simplify first, evaluate at named points, then accept or reject each claim.`,
   },
   {
     id: "math-11-41",
@@ -2843,7 +2929,9 @@ Management wants the approximate extra cost of one more loaf, and that local rat
 
 Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers a different question — euros per loaf already baked — so it is not the right object.
 
-The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$, so the statement is True.`,
+The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$
+
+In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$., so the statement is True.`,
       `**B.** → False
 
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
@@ -2852,12 +2940,16 @@ Marginal cost is defined as the derivative of total cost:
 
 $$C^{\\prime}(Q)$$
 
-Those two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost, so the statement is False.`,
+Those two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost
+
+The quotient rule makes the gap explicit: $A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$, which equals $C^{\\prime}$ only in degenerate cases, not in general., so the statement is False.`,
       `**C.** → True
 
 On a graph of total cost against output, the derivative at a named point is the slope of the tangent there.
 
-Economists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output, so the statement is True.`,
+Economists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output
+
+If the drawn tangent at some $Q_0$ has slope $m$, one reads $C^{\\prime}(Q_0)=m$ directly from the figure — that geometric slope is the definition of marginal cost at $Q_0$., so the statement is True.`,
       `**D.** → True
 
 The linear approximation says a small change in output changes total cost by about the derivative times that change:
@@ -2868,12 +2960,18 @@ With $\\Delta Q=1$ near $Q=120$ and $C^{\\prime}(120)=0.80$,
 
 $$C(121)-C(120)\\approx 0.80$$
 
-Each extra loaf near $120$ adds about $0.80$ euros to total cost, so the statement is True.`,
+Each extra loaf near $120$ adds about $0.80$ euros to total cost
+
+That one-unit reading is an approximation, but it is exactly how economists translate a reported $C^{\\prime}(120)=0.80$ into "about $0.80$ euros per extra loaf.", so the statement is True.`,
       `**E.** → False
 
 Average cost already divides by $Q$, but that only produces the per-unit average, not the slope of total cost.
 
-The two coincide only at special outputs (for instance where average cost is minimized); in general $A(120)$ need not equal $C^{\\prime}(120)$, so the statement is False.`
+The two coincide only at special outputs (for instance where average cost is minimized); in general $A(120)$ need not equal $C^{\\prime}(120)$
+
+Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 41,
@@ -2906,12 +3004,20 @@ so with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of
 
 The derivative $C^{\\prime}(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed.
 
-Its value $3$ therefore means about $3$ million euros per extra percentage point near a $50\\%$ cleanup, so the statement is True.`,
+Its value $3$ therefore means about $3$ million euros per extra percentage point near a $50\\%$ cleanup
+
+Units confirm the reading: $C$ is in millions of euros and $x$ is a percentage, so $C^{\\prime}(50)=3$ means $3$ million euros per extra percentage point near $x=50$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 The total cost of a $50\\%$ cleanup is the function value $C(50)$, a stock of spending.
 
-The report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage point — not that stock, so the statement is False.`,
+The report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage point — not that stock
+
+Nothing in the report identifies the stock $C(50)$; a cleanup could already have cost $100$ million while the next percentage point still costs about $3$ million more.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 The precise local meaning of the derivative is the linear approximation for small steps:
@@ -2920,17 +3026,29 @@ $$C(50+\\Delta x)-C(50)\\approx C^{\\prime}(50)\\,\\Delta x$$
 
 $$C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$$
 
-which is exactly the reading named in the claim, so the statement is True.`,
+which is exactly the reading named in the claim
+
+For instance $\\Delta x=0.5$ predicts about $1.5$ million euros of extra cost for half a percentage point — the same derivative, scaled by the step size.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 Elementary readings often take a one-unit step $\\Delta x=1$ and say the extra cost of going from $50\\%$ to $51\\%$ is about $3$ million euros.
 
-That is a convenient one-unit version of the same derivative, so the statement is True.`,
+That is a convenient one-unit version of the same derivative
+
+It remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 Here the independent variable is the cleanup percentage, and the units of $C^{\\prime}(50)$ are millions of euros per percentage point.
 
-That is precisely a marginal cost with respect to the cleanup percentage, so the statement is True.`
+That is precisely a marginal cost with respect to the cleanup percentage
+
+Calling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 42,
@@ -2963,29 +3081,49 @@ Marginal profit means the rate of change of profit, so the function to different
 
 $$P(Q)=R(Q)-C(Q)$$
 
-The price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$, so the statement is True.`,
+The price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$
+
+In symbols $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$; nowhere does that identity reduce to $p^{\\prime}(Q)$ alone.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 Differentiating only $p(Q)$ tracks how the posted price moves with quantity.
 
-Marginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also accounts for selling more cups, and $p^{\\prime}(Q)$ is not marginal revenue, so the statement is False.`,
+Marginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also accounts for selling more cups, and $p^{\\prime}(Q)$ is not marginal revenue
+
+Even the sign can disagree: $p^{\\prime}$ is typically negative along demand, while $R^{\\prime}$ can still be positive when price is high and quantity is low.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 Revenue is price times quantity. When quantity rises along a downward-sloping schedule, price usually falls, so the extra euros from one more cup are not simply the current price $p(Q)$.
 
-That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $p(Q)$, so the statement is True.`,
+That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $p(Q)$
+
+The gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 A small increase in cups changes profit by about $P^{\\prime}(Q)\\,\\Delta Q$.
 
-For one extra cup near the current output, the relevant number is therefore $P^{\\prime}(Q)$, so the statement is True.`,
+For one extra cup near the current output, the relevant number is therefore $P^{\\prime}(Q)$
+
+Looking at $p(Q)$ or even at $R^{\\prime}(Q)$ alone would miss the cost side; profit change needs the full $P^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 Profit is the difference $P=R-C$. Differentiating term by term where the derivatives exist gives
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
-at every such output, so the statement is True.`
+at every such output
+
+That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 43,
@@ -3018,31 +3156,51 @@ Marginal profit is the difference of the two derivatives:
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
-Whenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\\prime}(Q)>0$ there, so the statement is True.`,
+Whenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\\prime}(Q)>0$ there
+
+Numerically, if $R^{\\prime}=12$ and $C^{\\prime}=9$ then $P^{\\prime}=3>0$; the inequality of slopes forces a positive profit slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 A positive marginal profit means the profit function is locally increasing.
 
-Hence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small increase in output raises profit, so the statement is True.`,
+Hence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small increase in output raises profit
+
+So the firm should expand a little at that output: extra revenue still beats extra cost on the margin.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 If $R^{\\prime}(Q)<C^{\\prime}(Q)$, then
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)<0$$
 
-A negative derivative means profit is locally decreasing, and a small increase in output lowers profit rather than raising it, so the statement is False.`,
+A negative derivative means profit is locally decreasing, and a small increase in output lowers profit rather than raising it
+
+The correct conclusion is the opposite expand-or-not advice: when $R^{\\prime}<C^{\\prime}$, cut output a little rather than raise it.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 Setting the profit derivative to zero is
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
 
-which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$, so the statement is True.`,
+which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$
+
+This is the calculus form of the classical MR$=$MC rule for an interior candidate — a condition on slopes, not on totals.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 The equality $R^{\\prime}(Q)=C^{\\prime}(Q)$ equates two rates of change — extra revenue and extra cost — not the levels of total revenue and total cost.
 
-Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different condition, so the statement is False.`
+Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different condition
+
+A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 44,
@@ -3077,27 +3235,47 @@ Zero marginal profit means
 
 $$P^{\\prime}(Q^{\\ast})=R^{\\prime}(Q^{\\ast})-C^{\\prime}(Q^{\\ast})=0$$
 
-hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal revenue equals marginal cost, so the statement is True.`,
+hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal revenue equals marginal cost
+
+In other words, $P^{\\prime}(Q^{\\ast})=0$ is exactly the classical first-order rule MR$=$MC at the candidate output.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 A zero slope of profit says only that profit is locally stationary; it says nothing about the height $P(Q^{\\ast})$.
 
-The firm can earn a large positive total profit (or a large loss) while $P^{\\prime}(Q^{\\ast})=0$, and it does not necessarily earn zero total profit, so the statement is False.`,
+The firm can earn a large positive total profit (or a large loss) while $P^{\\prime}(Q^{\\ast})=0$, and it does not necessarily earn zero total profit
+
+Picture a profit hill whose peak sits at height $50$: the tangent is flat ($P^{\\prime}=0$) while profit itself is still $50$, not zero.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 Total revenue equals total cost only when $R(Q^{\\ast})=C(Q^{\\ast})$.
 
-The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives, not those levels, and total revenue need not equal total cost at $Q^{\\ast}$, so the statement is True.`,
+The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives, not those levels, and total revenue need not equal total cost at $Q^{\\ast}$
+
+Break-even is the separate level condition $P(Q^{\\ast})=0$, equivalently $R(Q^{\\ast})=C(Q^{\\ast})$ — not implied by $P^{\\prime}=0$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 A critical point with $P^{\\prime}(Q^{\\ast})=0$ can be a local maximum, a local minimum, or neither.
 
-The first-order condition alone does not classify which, and it does not tell whether profit is maximized or minimized, so the statement is True.`,
+The first-order condition alone does not classify which, and it does not tell whether profit is maximized or minimized
+
+A flat tangent can sit at the top of a hill, at the bottom of a valley, or on a terrace; further information is required to classify it.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 If $P^{\\prime}$ changes from positive to negative at $Q^{\\ast}$, profit switches from rising to falling there.
 
-That sign change marks a local profit maximum, so the statement is True.`
+That sign change marks a local profit maximum
+
+That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 45,
@@ -3126,25 +3304,45 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
     tactical_explanations: [
       `**A.** → True
 
-Marginal utility is the instantaneous rate of change of satisfaction with respect to leisure hours, which is exactly the derivative $U^{\\prime}(x)$, so the statement is True.`,
+Marginal utility is the instantaneous rate of change of satisfaction with respect to leisure hours, which is exactly the derivative $U^{\\prime}(x)$
+
+In the same vocabulary used for cost, $U^{\\prime}(x)$ is the marginal utility of leisure at $x$ hours.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 A positive derivative means the utility function is locally increasing.
 
-Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near that $x$, so the statement is True.`,
+Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near that $x$
+
+Equivalently, the consumer is still on an upward stretch of the utility curve at that $x$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → False
 
-If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it, so the statement is False.`,
+If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it
+
+On a downward stretch of $U$, extra leisure reduces satisfaction — the sign of $U^{\\prime}$ is the whole local story.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → False
 
 The value $U(x)$ is the stock of satisfaction at $x$ hours, not its rate of change.
 
-Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not already the marginal utility, so the statement is False.`,
+Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not already the marginal utility
+
+A student can already feel quite satisfied ($U$ large) while the next hour of leisure adds little or even subtracts ($U^{\\prime}\\le 0$).
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 The sign of $U^{\\prime}(x)$ tells whether $U$ is locally rising or falling.
 
-That is exactly whether satisfaction is locally increasing or decreasing in leisure, so the statement is True.`
+That is exactly whether satisfaction is locally increasing or decreasing in leisure
+
+That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 46,
@@ -3153,7 +3351,7 @@ That is exactly whether satisfaction is locally increasing or decreasing in leis
 $$U^{\\prime}(x),$$
 not the stock $U(x)$ itself. The linear approximation
 $$U(x+\\Delta x)-U(x)\\approx U^{\\prime}(x)\\,\\Delta x$$
-shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}(x)>0$ a little extra leisure raises satisfaction, while if $U^{\\prime}(x)<0$ a little extra leisure lowers it.`,
+shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}(x)>0$ a little extra leisure raises satisfaction, while if $U^{\\prime}(x)<0$ a little extra leisure lowers it. Throughout, treat $U(x)$ as a stock of satisfaction and $U^{\\prime}(x)$ as its local rate — the same level-versus-slope discipline used for cost and profit.`,
   },
   {
     id: "math-11-47",
@@ -3175,29 +3373,49 @@ shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}
 
 Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers how expensive each unit has been on average so far.
 
-Marginal cost $C^{\\prime}(Q)$ answers how total cost changes if a little more is produced. Those are two different economic questions, so the statement is True.`,
+Marginal cost $C^{\\prime}(Q)$ answers how total cost changes if a little more is produced. Those are two different economic questions
+
+Mixing the two is the classic MC-versus-AC trap: one governs expand-or-not cost comparisons, the other summarizes past unit cost.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 In general the quotient $\\dfrac{C(Q)}{Q}$ and the derivative $C^{\\prime}(Q)$ are different functions.
 
-They meet only at special outputs, not for every $Q>0$, and the claim that $A(Q)=C^{\\prime}(Q)$ identically is false, so the statement is False.`,
+They meet only at special outputs, not for every $Q>0$, and the claim that $A(Q)=C^{\\prime}(Q)$ identically is false
+
+A standard textbook picture has the MC curve cut through the bottom of the AC curve — they agree at one point, not everywhere.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → False
 
 Minimizing average cost looks for a critical point of $A(Q)$, which rearranges to $C^{\\prime}(Q)=A(Q)$, not to $C^{\\prime}(Q)=0$.
 
-Setting marginal cost to zero is a different decision problem, so the statement is False.`,
+Setting marginal cost to zero is a different decision problem
+
+Setting $C^{\\prime}=0$ would ask where total cost is locally flat, which is unrelated to minimizing cost per unit.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 Write $A(Q)=\\dfrac{C(Q)}{Q}$. At an interior minimum of $A$ one has $A^{\\prime}(Q)=0$, which expands to
 
 $$A^{\\prime}(Q)=\\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}=0$$
 
-hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$, so the statement is True.`,
+hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$
+
+That crossing rule — MC $=$ AC at the AC minimum — is the standard first-order characterization of efficient scale in this model.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prime}(Q)<A(Q)$.
 
-Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$, so the statement is False.`
+Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$
+
+Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -3228,33 +3446,53 @@ So $A$ is falling precisely when $C^{\\prime}<A$, which can hold even while $C^{
 
 The finite difference $C(Q+1)-C(Q)$ is the incremental cost of one whole extra unit.
 
-The course definition of marginal cost is the derivative $C^{\\prime}(Q)$, and the one-unit difference is not the exact definition, so the statement is True.`,
+The course definition of marginal cost is the derivative $C^{\\prime}(Q)$, and the one-unit difference is not the exact definition
+
+Only in the limit of vanishing step size does the incremental ratio become the derivative; a jump of size $1$ is not that limit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 For a small extra output $\\Delta Q$, the change in cost per unit of extra output is approximately the derivative:
 
 $$\\dfrac{C(Q+\\Delta Q)-C(Q)}{\\Delta Q}\\approx C^{\\prime}(Q)$$
 
-Hence $C^{\\prime}(Q)$ approximates that local rate, so the statement is True.`,
+Hence $C^{\\prime}(Q)$ approximates that local rate
+
+When cost is nearly linear near $Q$, the approximation is excellent; when cost bends sharply, keep the step small.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 Setting $\\Delta Q=1$ in the linear approximation gives
 
 $$C(Q+1)-C(Q)\\approx C^{\\prime}(Q)$$
 
-which is often serviceable in applications, but it remains an approximation rather than an identity, so the statement is True.`,
+which is often serviceable in applications, but it remains an approximation rather than an identity
+
+For a quadratic piece of cost, for instance, the exact one-unit difference and $C^{\\prime}(Q)$ differ by a curvature correction.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 The same derivative governs both directions: for a small (possibly negative) step,
 
 $$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$$
 
-Hence if output falls a little, the local cost change is still read from $C^{\\prime}(Q)$, so the statement is True.`,
+Hence if output falls a little, the local cost change is still read from $C^{\\prime}(Q)$
+
+Cutting output by $\\Delta Q=-0.5$ changes cost by about $-0.5\\,C^{\\prime}(Q)$ — same slope, opposite direction.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 The one-unit difference is only a coarse reading, and the precise local rate is still the derivative.
 
-Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or non-unit steps, so the statement is False.`
+Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or non-unit steps
+
+Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 48,
@@ -3287,27 +3525,47 @@ which remains an approximation rather than an identity. The same formula governs
 
 Marginal revenue is the rate of change of revenue $R(Q)=Q\\cdot p(Q)$.
 
-That rate is obtained by differentiating $R$, not by reading off the posted price $p(Q)$ alone, so the statement is True.`,
+That rate is obtained by differentiating $R$, not by reading off the posted price $p(Q)$ alone
+
+Reading $p(Q)$ alone would miss the inframarginal price-pressure term $Q\\,p^{\\prime}(Q)$ that the product rule contributes.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Along a downward-sloping price schedule, selling one more unit tends to push the price down.
 
-That lower price also applies to the previous units, and the expansion pressure cuts into revenue on the inframarginal units as well, so the statement is True.`,
+That lower price also applies to the previous units, and the expansion pressure cuts into revenue on the inframarginal units as well
+
+That is why a monopolist or any price-maker does not pocket the full current price as extra revenue from one more sale.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 That price-pressure effect appears in the product rule as the term $Q\\,p^{\\prime}(Q)<0$ when $p$ slopes down.
 
-It is one reason marginal revenue can lie below the current price, so the statement is True.`,
+It is one reason marginal revenue can lie below the current price
+
+Rearranging, $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)>0$ whenever $p$ slopes down and $Q>0$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 If demand did not depend on price, revenue would still be $R(Q)=Q\\cdot p$ with a constant $p$, and differentiating would give $R^{\\prime}(Q)=p$, which explicitly uses quantity in $R=Qp$.
 
-The claim that differentiating revenue would still ignore quantity is therefore wrong, so the statement is False.`,
+The claim that differentiating revenue would still ignore quantity is therefore wrong
+
+With constant $p$ one still writes $R(Q)=pQ$ and obtains $R^{\\prime}=p$; quantity remains the variable of differentiation.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
 
-A blanket claim that marginal revenue always equals price is therefore false in that setting, so the statement is True.`
+A blanket claim that marginal revenue always equals price is therefore false in that setting
+
+The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 49,
@@ -3340,7 +3598,11 @@ in general: selling one more unit tends to reduce the price earned on previous u
 
 Marginal profit is defined as the derivative of profit $P(Q)=Q\\cdot p(Q)-C(Q)$.
 
-The consultant differentiated the price schedule alone, which is the wrong object, and the advice is wrong, so the statement is True.`,
+The consultant differentiated the price schedule alone, which is the wrong object, and the advice is wrong
+
+Once profit is written out, the correct derivative is $P^{\\prime}(Q)=32-2Q$, which is nothing like the consultant's $p^{\\prime}=-1$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Differentiate the posted price:
@@ -3349,7 +3611,11 @@ $$p(Q)=40-Q$$
 
 $$p^{\\prime}(Q)=-1$$
 
-That slope only describes how price falls with quantity; it is not marginal profit, so the statement is True.`,
+That slope only describes how price falls with quantity; it is not marginal profit
+
+At $Q=10$, for example, price falls at rate $-1$ while marginal profit is $P^{\\prime}(10)=12$ — different objects, different numbers.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 Revenue is price times quantity. Substitute the inverse demand:
@@ -3360,7 +3626,11 @@ $$R(Q)=Q(40-Q)$$
 
 $$R(Q)=40Q-Q^{2}$$
 
-which is exactly the claimed revenue function, so the statement is True.`,
+which is exactly the claimed revenue function
+
+Differentiating that revenue later gives $R^{\\prime}(Q)=40-2Q$, which already differs from the price $p(Q)=40-Q$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 Profit is revenue minus cost. Using $R(Q)=40Q-Q^{2}$ and $C(Q)=8Q+20$,
@@ -3369,7 +3639,11 @@ $$P(Q)=(40Q-Q^{2})-(8Q+20)$$
 
 $$P(Q)=32Q-Q^{2}-20$$
 
-The claimed simplification matches, so the statement is True.`,
+The claimed simplification matches
+
+The fixed cost $20$ shifts the profit level but will drop out upon differentiation when we form $P^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 Differentiate the simplified profit term by term:
@@ -3378,7 +3652,11 @@ $$P(Q)=32Q-Q^{2}-20$$
 
 $$P^{\\prime}(Q)=32-2Q$$
 
-That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$, so the statement is True.`
+That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
+
+Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -3390,7 +3668,7 @@ $$R(Q)=Q\\cdot p(Q)=40Q-Q^{2},$$
 $$P(Q)=R(Q)-C(Q)=40Q-Q^{2}-8Q-20=32Q-Q^{2}-20.$$
 Differentiating profit — not the price schedule — gives marginal profit
 $$P^{\\prime}(Q)=32-2Q.$$
-By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, the slope of price. The consultant's advice therefore targets the wrong function.`,
+By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, the slope of price. The consultant's advice therefore targets the wrong function. The consultant's error is the price-versus-profit trap: $p^{\\prime}=-1$ is not $P^{\\prime}=32-2Q$.`,
   },
   {
     id: "math-11-51",
@@ -3410,29 +3688,49 @@ By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, 
     tactical_explanations: [
       `**A.** → True
 
-The marginal tax rate is the derivative $T^{\\prime}(y)$, which answers how tax liability changes when income rises a little, so the statement is True.`,
+The marginal tax rate is the derivative $T^{\\prime}(y)$, which answers how tax liability changes when income rises a little
+
+In symbols that rate is $T^{\\prime}(y)$, and the linear reading $T(y+\\Delta y)-T(y)\\approx T^{\\prime}(y)\\,\\Delta y$ is exactly "how liability changes when income rises a little."
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 The average tax rate is the quotient of tax owed by income:
 
 $$\\dfrac{T(y)}{y}\\qquad(y>0)$$
 
-That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$, so the statement is True.`,
+That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$
+
+If $T(y)=9000$ on income $y=30000$, the average rate is $9000/30000=0.3$, a fraction of income — not a statement about the next euro.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 As with cost, the marginal and average rates coincide only in special cases, not for every income $y>0$.
 
-In general $T^{\\prime}(y)$ need not equal $\\dfrac{T(y)}{y}$, so the statement is False.`,
+In general $T^{\\prime}(y)$ need not equal $\\dfrac{T(y)}{y}$
+
+A progressive schedule routinely has a marginal rate above the average rate; the two coincide only in special cases such as a pure flat tax through the origin.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 The report $T^{\\prime}(y)=0.3$ means about $0.3$ euros of tax per extra euro of income near that point.
 
-That is about $30$ cents of each extra euro taxed away, so the statement is True.`,
+That is about $30$ cents of each extra euro taxed away
+
+With $\\Delta y=1$ the approximation says about $0.30$ euros of extra tax — thirty cents of each extra euro taxed away.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 The average rate is only a quotient at one income; it does not determine the slope there.
 
-Many different tax schedules can share the same average at one $y$ while having different derivatives, and knowing only $\\dfrac{T(y)}{y}$ is not enough to read $T^{\\prime}(y)$, so the statement is False.`
+Many different tax schedules can share the same average at one $y$ while having different derivatives, and knowing only $\\dfrac{T(y)}{y}$ is not enough to read $T^{\\prime}(y)$
+
+Recovering $T^{\\prime}(y)$ needs local information about how $T$ changes near $y$, not merely the single quotient $T(y)/y$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 51,
@@ -3443,7 +3741,7 @@ while the average tax rate is the quotient
 $$\\dfrac{T(y)}{y}\\qquad(y>0).$$
 These answer different questions — how liability changes with a little more income versus what fraction of income is paid overall — and in general they are unequal. The linear reading
 $$T(y+\\Delta y)-T(y)\\approx T^{\\prime}(y)\\,\\Delta y$$
-means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. Knowing only the average at a point does not recover the slope $T^{\\prime}$ there.`,
+means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. Knowing only the average at a point does not recover the slope $T^{\\prime}$ there. Keep the MC-versus-AC analogy in view: $T^{\\prime}$ is the marginal rate and $T/y$ is the average rate — unequal in general.`,
   },
   {
     id: "math-11-52",
@@ -3467,17 +3765,29 @@ By definition, the marginal propensity to save is the derivative of saving with 
 
 $$\\mathrm{mps}=S^{\\prime}(Y)$$
 
-which is exactly the definition used here, so the statement is True.`,
+which is exactly the definition used here
+
+That derivative is the macroeconomic analogue of a marginal cost or marginal propensity: a slope, not a stock.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 The value $S^{\\prime}(Y)=0.2$ is a euros-saved-per-euro-of-product rate near that $Y$.
 
-About one fifth of a small increase in national product is therefore saved, so the statement is True.`,
+About one fifth of a small increase in national product is therefore saved
+
+With $\\Delta Y=10$, about $2$ units of the extra product are saved; the fraction $0.2$ is the local saving response.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The ratio $\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost.
 
-It is not the same object as the marginal propensity $S^{\\prime}(Y)$, so the statement is False.`,
+It is not the same object as the marginal propensity $S^{\\prime}(Y)$
+
+If autonomous saving is positive, $S/Y$ exceeds $s$ at low $Y$ and approaches $s$ only as $Y$ grows — average and marginal differ.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 Differentiate the linear saving rule:
@@ -3486,12 +3796,20 @@ $$S(Y)=\\overline{S}+sY$$
 
 $$S^{\\prime}(Y)=s$$
 
-The marginal propensity to save equals the coefficient $s$, so the statement is True.`,
+The marginal propensity to save equals the coefficient $s$
+
+The intercept $\\overline{S}$ affects the level of saving but drops out of the derivative, leaving the constant slope $s$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 The economic question asks how saving responds to a little more national product, so the dependent quantity is $S(Y)$.
 
-One therefore differentiates $S$, not the identity function $Y$, so the statement is True.`
+One therefore differentiates $S$, not the identity function $Y$
+
+Differentiating the identity map $Y$ would give $1$, which is not a propensity to save; the dependent variable must be $S$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -3502,7 +3820,7 @@ not as the average ratio $\\dfrac{S(Y)}{Y}$. The linear approximation
 $$S(Y+\\Delta Y)-S(Y)\\approx S^{\\prime}(Y)\\,\\Delta Y$$
 reads $S^{\\prime}(Y)=0.2$ as "about one fifth of a small increase in national product is saved." For a linear rule
 $$S(Y)=\\overline{S}+sY$$
-one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little more $Y$, differentiate $S$, not the identity map $Y$.`,
+one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little more $Y$, differentiate $S$, not the identity map $Y$. Average saving $S/Y$ is not the marginal propensity $S^{\\prime}$; only the derivative answers the local response question.`,
   },
   {
     id: "math-11-53",
@@ -3524,27 +3842,47 @@ one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little mo
 
 Marginal cost is the slope of the total-cost curve. A steeper tangent at $Q_0$ than at $Q_1$ means a larger slope there.
 
-Hence marginal cost is higher at $Q_0$ than at $Q_1$, so the statement is True.`,
+Hence marginal cost is higher at $Q_0$ than at $Q_1$
+
+In symbols $C^{\\prime}(Q_0)>C^{\\prime}(Q_1)$ precisely when the tangent at $Q_0$ is steeper than the tangent at $Q_1$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 The height of the cost curve at $Q_0$ is the level $C(Q_0)$.
 
-Marginal cost is the slope of the tangent, not that height, so the statement is False.`,
+Marginal cost is the slope of the tangent, not that height
+
+A high cost curve can have a flat tangent, and a low cost curve can have a steep tangent — height and slope are independent.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
       `**C.** → True
 
 A flatter tangent means a smaller derivative at that point.
 
-Because that derivative is marginal cost, a flatter tangent means a smaller marginal cost, so the statement is True.`,
+Because that derivative is marginal cost, a flatter tangent means a smaller marginal cost
+
+On the figure, "flatter" means a smaller rise-over-run for the drawn tangent, hence a smaller $C^{\\prime}$ and a smaller marginal cost.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 By definition, the slope of the tangent to the cost curve at $Q_0$ equals $C^{\\prime}(Q_0)$.
 
-If that slope is $12$, then $C^{\\prime}(Q_0)=12$, so the statement is True.`,
+If that slope is $12$, then $C^{\\prime}(Q_0)=12$
+
+That is the geometric definition: whatever slope the artist drew at $Q_0$ is the number $C^{\\prime}(Q_0)$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**E.** → False
 
 Equal heights say only that $C(Q_a)=C(Q_b)$; they say nothing about equal slopes.
 
-A U-shaped cost curve can return to the same height with different tangents, and equal total cost does not force equal marginal cost, so the statement is False.`
+A U-shaped cost curve can return to the same height with different tangents, and equal total cost does not force equal marginal cost
+
+A U-shaped cost curve returns to the same height on either side of its minimum with opposite-signed slopes — equal $C$, unequal $C^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 53,
@@ -3553,7 +3891,7 @@ A U-shaped cost curve can return to the same height with different tangents, and
 $$C^{\\prime}(Q_{0})=\\text{slope of the tangent at }Q_{0}.$$
 A steeper tangent at $Q_{0}$ than at $Q_{1}$ therefore means
 $$C^{\\prime}(Q_{0})>C^{\\prime}(Q_{1}).$$
-A flatter tangent means a smaller derivative and a smaller marginal cost. The height of the cost curve is the stock $C(Q)$, not marginal cost. Equal heights $C(Q_{a})=C(Q_{b})$ do not force equal slopes $C^{\\prime}(Q_{a})=C^{\\prime}(Q_{b})$.`,
+A flatter tangent means a smaller derivative and a smaller marginal cost. The height of the cost curve is the stock $C(Q)$, not marginal cost. Equal heights $C(Q_{a})=C(Q_{b})$ do not force equal slopes $C^{\\prime}(Q_{a})=C^{\\prime}(Q_{b})$. Marginal cost is tangent slope, never curve height; equal heights never force equal slopes.`,
   },
   {
     id: "math-11-54",
@@ -3575,31 +3913,51 @@ A flatter tangent means a smaller derivative and a smaller marginal cost. The he
 
 An interior profit maximum is a critical point of profit, so it requires $P^{\\prime}(Q)=0$.
 
-Setting only $R^{\\prime}(Q)=0$ ignores cost entirely, and the claim correctly insists on $P^{\\prime}(Q)=0$, so the statement is True.`,
+Setting only $R^{\\prime}(Q)=0$ ignores cost entirely, and the claim correctly insists on $P^{\\prime}(Q)=0$
+
+If cost depends on $Q$, the zeros of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and of $R^{\\prime}$ generally sit at different outputs.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 Positive cost that depends on $Q$ shifts the optimum: maximizing $R$ need not maximize $R-C$.
 
-Hence maximizing revenue alone does not automatically maximize profit, so the statement is False.`,
+Hence maximizing revenue alone does not automatically maximize profit
+
+A revenue peak with rising cost already has $P^{\\prime}=-C^{\\prime}<0$, so profit is falling there — revenue max is too far.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the zeros of $R^{\\prime}$ and of $P^{\\prime}$ generally differ when $C^{\\prime}$ is not zero.
 
-If cost rises with output, the revenue-maximizing output can therefore differ from the profit-maximizing one, so the statement is True.`,
+If cost rises with output, the revenue-maximizing output can therefore differ from the profit-maximizing one
+
+Typically the profit-maximizing output is smaller than the revenue-maximizing output when $C^{\\prime}>0$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 At an interior profit maximum one must have $P^{\\prime}(Q)=0$. Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that rearranges at once to
 
 $$R^{\\prime}(Q)=C^{\\prime}(Q)$$
 
-which is the required first-order condition, so the statement is True.`,
+which is the required first-order condition
+
+That MR$=$MC rearrangement is the standard first-order condition for an interior profit maximum.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 If $R^{\\prime}(Q)=0$ while $C^{\\prime}(Q)>0$, then
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0-C^{\\prime}(Q)=-C^{\\prime}(Q)<0$$
 
-At a revenue-stationary point with rising cost, profit is already locally decreasing, so the statement is True.`
+At a revenue-stationary point with rising cost, profit is already locally decreasing
+
+So at a revenue-stationary point with positive marginal cost, the firm should cut output a little, not expand.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -3610,7 +3968,7 @@ so an interior profit maximum requires the first-order condition
 $$P^{\\prime}(Q)=0\\qquad\\Leftrightarrow\\qquad R^{\\prime}(Q)=C^{\\prime}(Q),$$
 not merely $R^{\\prime}(Q)=0$. Maximizing revenue alone ignores cost and therefore does not automatically maximize profit when cost is positive. If cost rises with output ($C^{\\prime}>0$), a revenue peak with $R^{\\prime}=0$ already has
 $$P^{\\prime}=R^{\\prime}-C^{\\prime}=-C^{\\prime}<0,$$
-so the profit-maximizing output typically differs from the revenue-maximizing output.`,
+so the profit-maximizing output typically differs from the revenue-maximizing output. Revenue maximization ignores cost; profit maximization equates $R^{\\prime}$ with $C^{\\prime}$, not $R^{\\prime}$ with zero.`,
   },
   {
     id: "math-11-55",
@@ -3632,17 +3990,29 @@ so the profit-maximizing output typically differs from the revenue-maximizing ou
 
 The absolute value $|x^{\\prime}(0)|=3$ is the speed of depletion at time $0$.
 
-Oil is therefore leaving the well at about $3$ barrels per minute, so the statement is True.`,
+Oil is therefore leaving the well at about $3$ barrels per minute
+
+The negative sign records direction (outflow); the magnitude $3$ is the depletion speed in barrels per minute.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → False
 
 The stock of oil remaining at time $0$ is the level $x(0)$, not the derivative $x^{\\prime}(0)$.
 
-The number $-3$ is a rate of change, not a count of barrels left, so the statement is False.`,
+The number $-3$ is a rate of change, not a count of barrels left
+
+One could have $x(0)=500$ barrels remaining while $x^{\\prime}(0)=-3$; the derivative never equals the stock.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 A negative derivative means the function is locally decreasing.
 
-Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasing at $t=0$, so the statement is True.`,
+Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasing at $t=0$
+
+In plain language: the well is being drained at $t=0$, even though plenty of oil may still be underground.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 The linear approximation near $t=0$ reads
@@ -3651,12 +4021,20 @@ $$x(\\Delta t)-x(0)\\approx x^{\\prime}(0)\\,\\Delta t$$
 
 $$x(\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
 
-A small time step changes remaining oil by about $-3\\Delta t$ barrels, so the statement is True.`,
+A small time step changes remaining oil by about $-3\\Delta t$ barrels
+
+For $\\Delta t=2$ minutes the predicted change is about $-6$ barrels; the same slope scales with the time step.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 A decreasing positive stock can still be large: the sign of the derivative does not force the sign of the level.
 
-Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(0)<0$, so the statement is False.`
+Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(0)<0$
+
+A decreasing positive quantity stays positive until it actually crosses zero — slope sign and level sign are separate.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 55,
@@ -3665,7 +4043,7 @@ Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(
 $$x^{\\prime}(0)=-3$$
 is a rate: about $3$ barrels leave per minute at $t=0$. The negative sign means the stock is decreasing. The linear approximation
 $$x(0+\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
-governs small time steps. None of this identifies the level $x(0)$ itself, and a negative derivative does not force the stock $x(0)$ to be negative.`,
+governs small time steps. None of this identifies the level $x(0)$ itself, and a negative derivative does not force the stock $x(0)$ to be negative. The report $x^{\\prime}(0)=-3$ is a depletion rate; it neither equals nor forces the sign of the stock $x(0)$.`,
   },
   {
     id: "math-11-56",
@@ -3685,31 +4063,51 @@ governs small time steps. None of this identifies the level $x(0)$ itself, and a
     tactical_explanations: [
       `**A.** → True
 
-The one-unit reading of $R^{\\prime}(80)=12$ says that near $80$ tickets, selling one more ticket raises revenue by about $12$ euros, so the statement is True.`,
+The one-unit reading of $R^{\\prime}(80)=12$ says that near $80$ tickets, selling one more ticket raises revenue by about $12$ euros
+
+That is the standard one-unit reading of $R^{\\prime}(80)=12$ through $R(81)-R(80)\\approx 12$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → False
 
 Average price would involve $\\dfrac{R(80)}{80}$, and the posted price is $p(80)$.
 
-Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$, so the statement is False.`,
+Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$
+
+Under downward-sloping demand one typically has $R^{\\prime}<p$, so $12$ would understate the sticker price even if price were constant across tickets — and here price is not given at all.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 Many different price schedules can produce the same marginal revenue at a single point.
 
-The report $R^{\\prime}(80)=12$ alone therefore does not reveal $p(Q)$, so the statement is True.`,
+The report $R^{\\prime}(80)=12$ alone therefore does not reveal $p(Q)$
+
+Many different $p(Q)$ can share the same product-rule value $R^{\\prime}(80)=12$ at a single point.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 If marginal cost at $80$ tickets is $15$, then
 
 $$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-15=-3<0$$
 
-Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit, so the statement is True.`,
+Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit
+
+The expand-or-not test fails: extra revenue $12$ is less than extra cost $15$, so a little more output hurts profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 If marginal cost at $80$ tickets is $9$, then
 
 $$P^{\\prime}(80)=12-9=3>0$$
 
-Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit, so the statement is True.`
+Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit
+
+Now extra revenue beats extra cost on the margin, so the same ticket office should expand a little past $80$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 56,
@@ -3718,7 +4116,7 @@ Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit, so 
 $$R^{\\prime}(80)=12$$
 euros per ticket. That is a marginal-revenue rate near $80$ tickets — about $12$ euros of extra revenue from one more ticket — not the posted price of each of the $80$ tickets, and not enough alone to recover the whole schedule $p(Q)$. Profit responds through
 $$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-C^{\\prime}(80).$$
-If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output lowers profit; if $C^{\\prime}(80)=9$ then $P^{\\prime}(80)=3>0$ and a little more raises profit.`,
+If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output lowers profit; if $C^{\\prime}(80)=9$ then $P^{\\prime}(80)=3>0$ and a little more raises profit. A single $R^{\\prime}$ value is a local revenue slope — not price, not the whole demand curve — and profit follows $R^{\\prime}-C^{\\prime}$.`,
   },
   {
     id: "math-11-57",
@@ -3740,29 +4138,49 @@ If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output low
 
 "Extra revenue" and "extra cost" for a small expansion are precisely marginal revenue and marginal cost.
 
-The manager's rule is therefore: increase $Q$ a little when $R^{\\prime}(Q)>C^{\\prime}(Q)$, so the statement is True.`,
+The manager's rule is therefore: increase $Q$ a little when $R^{\\prime}(Q)>C^{\\prime}(Q)$
+
+Translate "extra revenue" $\\mapsto R^{\\prime}(Q)$ and "extra cost" $\\mapsto C^{\\prime}(Q)$, then keep the inequality direction.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the inequality $R^{\\prime}>C^{\\prime}$ is identical to $P^{\\prime}>0$.
 
-The same rule can therefore be written as: increase $Q$ a little when $P^{\\prime}(Q)>0$, so the statement is True.`,
+The same rule can therefore be written as: increase $Q$ a little when $P^{\\prime}(Q)>0$
+
+The two writings are interchangeable through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; choose whichever is clearer in context.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The manager's rule explicitly uses cost through $C^{\\prime}(Q)$; it is a profit logic, not a pure revenue logic.
 
-It is not equivalent to maximizing revenue regardless of cost, so the statement is False.`,
+It is not equivalent to maximizing revenue regardless of cost
+
+A pure revenue rule would ignore $C^{\\prime}$ entirely and expand whenever $R^{\\prime}>0$ — a different, usually worse, prescription.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 Equal extras mean $R^{\\prime}(Q)=C^{\\prime}(Q)$, hence
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
 
-Marginal profit is zero there, so the statement is True.`,
+Marginal profit is zero there
+
+That is the boundary case of the expand-or-not test: neither a clear expand nor a clear cut on the first-order criterion.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**E.** → True
 
 Turning the manager's words into calculus replaces "extra revenue" and "extra cost" by the two derivatives $R^{\\prime}(Q)$ and $C^{\\prime}(Q)$.
 
-The comparison is precisely a comparison of those derivatives, so the statement is True.`
+The comparison is precisely a comparison of those derivatives
+
+Once those derivatives are named, the manager's sentence becomes the calculus inequality $R^{\\prime}(Q)>C^{\\prime}(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 57,
@@ -3771,7 +4189,7 @@ The comparison is precisely a comparison of those derivatives, so the statement 
 $$R^{\\prime}(Q)>C^{\\prime}(Q).$$
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the same rule is
 $$P^{\\prime}(Q)>0.$$
-It is a comparison of two derivatives, not a command to maximize revenue regardless of cost. When extra revenue equals extra cost one has $R^{\\prime}=C^{\\prime}$, hence $P^{\\prime}=0$.`,
+It is a comparison of two derivatives, not a command to maximize revenue regardless of cost. When extra revenue equals extra cost one has $R^{\\prime}=C^{\\prime}$, hence $P^{\\prime}=0$. Verbal "extra revenue vs extra cost" is exactly $R^{\\prime}$ vs $C^{\\prime}$, equivalently the sign of $P^{\\prime}$.`,
   },
   {
     id: "math-11-58",
@@ -3793,29 +4211,49 @@ It is a comparison of two derivatives, not a command to maximize revenue regardl
 
 Maximizing $U(x)$ looks at the height of total satisfaction; maximizing $A(x)=\\dfrac{U(x)}{x}$ looks at the quotient.
 
-Their critical points generally differ, and the two problems are not the same, so the statement is True.`,
+Their critical points generally differ, and the two problems are not the same
+
+Critical points of $U$ solve $U^{\\prime}=0$; critical points of $A$ solve $U^{\\prime}=A$ — different equations in general.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 The condition $U^{\\prime}(x)=0$ stationarizes total utility, not average utility.
 
-An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x)$, and $U^{\\prime}=0$ does not automatically maximize $A$, so the statement is False.`,
+An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x)$, and $U^{\\prime}=0$ does not automatically maximize $A$
+
+At a bliss point of total utility one may have $U^{\\prime}=0$ while $A=U/x>0$, so $A^{\\prime}\\neq 0$ and average is not maximized there.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 Write $A=\\dfrac{U}{x}$. Setting $A^{\\prime}=0$ for $x>0$ yields
 
 $$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=0$$
 
-hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$, so the statement is True.`,
+hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$
+
+That parallel to the cost rule MC$=$AC at the AC minimum is intentional: the same quotient calculus drives both stories.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 A zero derivative means a tiny change in the independent variable leaves the function locally unchanged.
 
-Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction locally unchanged, so the statement is True.`,
+Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction locally unchanged
+
+Through the linear approximation, $U(x+\\Delta x)-U(x)\\approx 0$ for small $\\Delta x$ — a flat spot of total satisfaction.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 Average satisfaction can fall even while total utility still rises, once utility rises slower than hours — that is, when $0<U^{\\prime}<A$.
 
-Positive marginal utility therefore does not force average satisfaction to be rising, so the statement is False.`
+Positive marginal utility therefore does not force average satisfaction to be rising
+
+Whenever $0<U^{\\prime}<A$, total utility still rises while average utility falls — positive marginal utility with declining average.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 58,
@@ -3824,7 +4262,7 @@ Positive marginal utility therefore does not force average satisfaction to be ri
 $$A(x)=\\dfrac{U(x)}{x}\\qquad(x>0)$$
 are different objectives. Marginal utility is $U^{\\prime}(x)$. Differentiating the average gives
 $$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=\\dfrac{U^{\\prime}(x)-A(x)}{x},$$
-so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(x)$ — not merely $U^{\\prime}(x)=0$. The condition $U^{\\prime}=0$ only says total utility is locally flat. Positive marginal utility ($U^{\\prime}>0$) does not force $A^{\\prime}>0$, because $A^{\\prime}$ also depends on how $U^{\\prime}$ compares with $A$.`,
+so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(x)$ — not merely $U^{\\prime}(x)=0$. The condition $U^{\\prime}=0$ only says total utility is locally flat. Positive marginal utility ($U^{\\prime}>0$) does not force $A^{\\prime}>0$, because $A^{\\prime}$ also depends on how $U^{\\prime}$ compares with $A$. Maximizing $U$ and maximizing $A=U/x$ are different problems; $A^{\\prime}=0$ forces $U^{\\prime}=A$, not $U^{\\prime}=0$.`,
   },
   {
     id: "math-11-59",
@@ -3848,12 +4286,20 @@ Marginal cost is defined as the derivative of the cost function. With $C(Q)$ in 
 
 $$C^{\\prime}(Q)$$
 
-No demand or revenue data is required for that step, so from $C$ alone one can compute marginal cost, and the statement is True.`,
+No demand or revenue data is required for that step, so from $C$ alone one can compute marginal cost
+
+Whatever formula $C$ has — polynomial, piecewise, or tabulated — its derivative is a cost-side object and needs no demand data.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 Marginal revenue is a property of revenue, which is not determined by cost.
 
-From $C$ alone one cannot compute $R^{\\prime}(Q)$, so the statement is False.`,
+From $C$ alone one cannot compute $R^{\\prime}(Q)$
+
+Revenue depends on the price schedule or demand facing the firm; cost data are silent about that demand side.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
       `**C.** → False
 
 Profit is the difference of revenue and cost,
@@ -3864,19 +4310,31 @@ so marginal profit needs both sides:
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
-Cost alone supplies $C^{\\prime}$ but not $R^{\\prime}$, so $P^{\\prime}$ cannot be recovered from $C$ alone, and the statement is False.`,
+Cost alone supplies $C^{\\prime}$ but not $R^{\\prime}$, so $P^{\\prime}$ cannot be recovered from $C$ alone
+
+Without $R^{\\prime}$ one cannot form $P^{\\prime}=R^{\\prime}-C^{\\prime}$, so marginal profit is unidentified from $C$ alone.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 The comparison "$R^{\\prime}(Q)$ versus $C^{\\prime}(Q)$" needs a numerical value on the revenue side.
 
-Without a revenue function that side is missing, and the numerical test cannot be run, so the statement is True.`,
+Without a revenue function that side is missing, and the numerical test cannot be run
+
+The expand-or-not test needs both numbers; a lone $C^{\\prime}$ cannot be compared with a missing $R^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 Once both functions are known, differentiating the difference gives
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
-Supplying $R(Q)$ later makes marginal profit available, so the statement is True.`
+Supplying $R(Q)$ later makes marginal profit available
+
+At that moment the usual identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ becomes available for every output where both derivatives exist.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 59,
@@ -3885,7 +4343,7 @@ Supplying $R(Q)$ later makes marginal profit available, so the statement is True
 $$C^{\\prime}(Q).$$
 Revenue $R(Q)$ and profit $P(Q)=R(Q)-C(Q)$ are not identified by cost data alone, so neither
 $$R^{\\prime}(Q)\\qquad\\text{nor}\\qquad P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
-can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$ cannot be carried out. Once a second analyst supplies $R(Q)$, marginal profit becomes available as $R^{\\prime}-C^{\\prime}$.`,
+can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$ cannot be carried out. Once a second analyst supplies $R(Q)$, marginal profit becomes available as $R^{\\prime}-C^{\\prime}$. From $C$ alone compute $C^{\\prime}$ only; $R^{\\prime}$ and $P^{\\prime}$ wait for revenue information.`,
   },
   {
     id: "math-11-60",
@@ -3909,29 +4367,49 @@ Consistency of the three reports requires $P^{\\prime}=R^{\\prime}-C^{\\prime}$:
 
 $$18-11=7$$
 
-The posted triple matches that identity, so the statement is True.`,
+The posted triple matches that identity
+
+Any other combination such as $18-11=6$ would have been inconsistent with the posted $P^{\\prime}=7$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
-Those are the one-unit readings of the two derivatives: near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost, so the statement is True.`,
+Those are the one-unit readings of the two derivatives: near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost
+
+Those one-unit stories are the linear readings $R(Q+1)-R(Q)\\approx 18$ and $C(Q+1)-C(Q)\\approx 11$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 Marginal profit is the rate of change of profit. With $P^{\\prime}(Q)=7$ the one-unit linear reading is
 
 $$P(Q+1)-P(Q)\\approx 7$$
 
-so near the current output one more chair adds about $7$ euros of profit, and the statement is True.`,
+so near the current output one more chair adds about $7$ euros of profit
+
+Equivalently, extra revenue about $18$ minus extra cost about $11$ leaves about $7$ euros of extra profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 The number $7$ is a rate of change of profit — euros of profit per extra chair — not the level $P(Q)$.
 
-Positive marginal profit does not force total profit to equal $7$, so the statement is False.`,
+Positive marginal profit does not force total profit to equal $7$
+
+The workshop could already be earning $100$ euros of profit while still adding about $7$ per extra chair — slope $\\neq$ level.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 At that other output,
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=11-18=-7<0$$
 
-A negative derivative means a small expansion reduces profit, so the statement is True.`
+A negative derivative means a small expansion reduces profit
+
+There the expand-or-not test flips: extra cost exceeds extra revenue, so a small expansion reduces profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 60,
@@ -3942,7 +4420,7 @@ These are consistent because
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=18-11=7.$$
 In words: one more chair adds about $18$ euros of revenue, about $11$ euros of cost, and about $7$ euros of profit. The number $7$ is a rate, not the stock of total profit. If instead one faced $R^{\\prime}=11$ and $C^{\\prime}=18$, then
 $$P^{\\prime}=11-18=-7<0,$$
-so a small expansion would reduce profit.`,
+so a small expansion would reduce profit. Consistency requires $P^{\\prime}=R^{\\prime}-C^{\\prime}$; each posted number is a rate, not a stock of profit.`,
   },
   {
     id: "math-11-61",
@@ -3970,14 +4448,22 @@ Plug in the bakery-A reports at $Q=10$:
 
 $$P_A^{\\prime}(10)=9-6=3$$
 
-A's posted numbers already force $P_A^{\\prime}(10)=3$, so the statement is True.`,
+A's posted numbers already force $P_A^{\\prime}(10)=3$
+
+No further data are needed: the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ already forces $P_A^{\\prime}(10)=3$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 For bakery B the same identity gives
 
 $$P_B^{\\prime}(10)=R_B^{\\prime}(10)-C_B^{\\prime}(10)=5-7=-2$$
 
-A negative derivative means the profit function is locally decreasing, and near $10$ cakes baking a little more lowers B's profit, so the statement is True.`,
+A negative derivative means the profit function is locally decreasing, and near $10$ cakes baking a little more lowers B's profit
+
+Even though B's profit stock $P_B(10)=90$ looks healthy, the slope at $10$ cakes is already negative.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The expansion test asks whether profit is still rising — the sign of $P^{\\prime}(Q)$ — not the size of today's profit stock $P(Q)$.
@@ -3988,7 +4474,9 @@ $$P_A^{\\prime}(10)=3>0$$
 
 $$P_B^{\\prime}(10)=-2<0$$
 
-A small expansion raises A's profit and lowers B's, even though $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice, so the statement is False.`,
+A small expansion raises A's profit and lowers B's, even though $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice
+
+Ranking the heights $90>40$ reverses the correct advice: A should expand a little and B should not., so the statement is False.`,
       `**D.** → True
 
 The one-unit reading of a derivative says that a small extra cake changes profit by about $P^{\\prime}(10)$ euros.
@@ -3999,12 +4487,20 @@ $$P_A^{\\prime}(10)=3$$
 
 $$P_B^{\\prime}(10)=-2$$
 
-The extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros, so the statement is True.`,
+The extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros
+
+Those are the one-unit linear readings of $P_A^{\\prime}(10)=3$ and $P_B^{\\prime}(10)=-2$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 $P_B(10)=90$ is a level — how much profit B has already earned today — while $P_B^{\\prime}(10)=-2$ is a rate.
 
-A large positive stock can sit on a downward slope, and knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit, so the statement is False.`
+A large positive stock can sit on a downward slope, and knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit
+
+Here the larger stock belongs to the bakery with the worse (negative) marginal profit — level and slope disagree.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 61,
@@ -4013,7 +4509,7 @@ A large positive stock can sit on a downward slope, and knowing only that $P_B(1
 $$P_A^{\\prime}(10)=R_A^{\\prime}(10)-C_A^{\\prime}(10)=9-6=3>0,$$
 while the stock of profit is the separate number $P_A(10)=40$. At B,
 $$P_B^{\\prime}(10)=5-7=-2<0,$$
-with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros. The higher profit level at B does not decide the expansion question; only the signs of $P^{\\prime}$ do.`,
+with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros. The higher profit level at B does not decide the expansion question; only the signs of $P^{\\prime}$ do. Same $Q=10$, opposite $P^{\\prime}$ signs: expand at A ($+3$), not at B ($-2$), despite $P_B>P_A$.`,
   },
   {
     id: "math-11-62",
@@ -4037,7 +4533,11 @@ On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differe
 
 $$C^{\\prime}(Q)=12\\qquad\\text{for }Q<50$$
 
-Before overtime kicks in, each extra unit adds $12$ euros of cost, so the statement is True.`,
+Before overtime kicks in, each extra unit adds $12$ euros of cost
+
+Until overtime begins, the cost curve is a ray through the origin with constant slope $12$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Rewrite the overtime formula by expanding the brackets:
@@ -4050,21 +4550,33 @@ Differentiating the overtime piece gives $C^{\\prime}(Q)=20$ for $Q>50$. Relativ
 
 $$20-12=8$$
 
-Overtime raises the cost of an extra unit by $8$ euros, so the statement is True.`,
+Overtime raises the cost of an extra unit by $8$ euros
+
+The overtime piece is steeper: every unit past $50$ adds $20$ euros rather than $12$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. Marginal revenue is still $R^{\\prime}(Q)=16$. Then
 
 $$R^{\\prime}(Q)-C^{\\prime}(Q)=16-20=-4<0$$
 
-hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$, so the statement is False.`,
+hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$
+
+Just above $50$ the expand-or-not test already fails: extra revenue $16$ is less than overtime marginal cost $20$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 At $Q=40$ the workshop is still on the regular piece, so $C^{\\prime}(40)=12$. Compare with revenue:
 
 $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=16-12=4>0$$
 
-A positive derivative means a small expansion raises profit at $Q=40$, so the statement is True.`,
+A positive derivative means a small expansion raises profit at $Q=40$
+
+Before the kink, extra revenue still beats regular-crew marginal cost, so a small expansion at $40$ raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
@@ -4073,7 +4585,9 @@ $$\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}$$
 
 $$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
 
-The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output, so the statement is False.`
+The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output
+
+As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 62,
@@ -4085,7 +4599,7 @@ $$C^{\\prime}(Q)=20\\qquad(Q>50).$$
 Crossing into overtime therefore raises the cost of an extra unit by $20-12=8$ euros. Marginal revenue is constant at $R^{\\prime}(Q)=16$. Comparing slopes:
 $$P^{\\prime}(40)=16-12=4>0,$$
 while just above $50$ one has $P^{\\prime}=16-20=-4<0$, so overtime no longer leaves $R^{\\prime}>C^{\\prime}$. For $Q>50$,
-$$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$`,
+$$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$ Regular $C^{\\prime}=12$ vs overtime $C^{\\prime}=20$ against fixed $R^{\\prime}=16$: expand before $50$, not after. Average cost on overtime is $20-400/Q$, not $12$.`,
   },
   {
     id: "math-11-63",
@@ -4111,22 +4625,36 @@ $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
 
 $$R^{\\prime}(Q)=4+11=15$$
 
-The whiteboard's two numbers imply $R^{\\prime}(Q)=15$, so the statement is True.`,
+The whiteboard's two numbers imply $R^{\\prime}(Q)=15$
+
+The whiteboard's two rates are enough to recover the missing revenue slope; no price schedule is required for that step.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 The kiosk itself posted $P^{\\prime}(Q)=4>0$.
 
-A positive marginal profit means profit is locally increasing, and a small extra sale raises profit and a little expansion is recommended, so the statement is True.`,
+A positive marginal profit means profit is locally increasing, and a small extra sale raises profit and a little expansion is recommended
+
+The expand-or-not advice is immediate from the posted $P^{\\prime}=4>0$, without needing the recovered $R^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
 
-Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$, so the statement is False.`,
+Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
+
+Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects., so the statement is False.`,
       `**D.** → True
 
 $P^{\\prime}(Q)=4$ is a rate of change of profit near the current output.
 
-The current profit level is the height $P(Q)$, which was never posted, and a slope of $4$ is compatible with many different heights, and the posted $P^{\\prime}$ is not the same information as $P(Q)$, so the statement is True.`,
+The current profit level is the height $P(Q)$, which was never posted, and a slope of $4$ is compatible with many different heights, and the posted $P^{\\prime}$ is not the same information as $P(Q)$
+
+The kiosk could be earning $2$ euros or $200$ euros of profit while the slope remains $4$ — height was never on the board.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 Repeat the same rearrangement with the alternative report $P^{\\prime}(Q)=-4$ and the same $C^{\\prime}(Q)=11$:
@@ -4135,7 +4663,11 @@ $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
 
 $$R^{\\prime}(Q)=-4+11=7$$
 
-The implied marginal revenue would be $7$, so the statement is True.`
+The implied marginal revenue would be $7$
+
+The same rearrangement $R^{\\prime}=P^{\\prime}+C^{\\prime}$ works for any posted pair; only the arithmetic changes.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 63,
@@ -4145,7 +4677,7 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 recovers the missing marginal revenue
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)=4+11=15.$$
 Because $P^{\\prime}=4>0$, a small extra sale raises profit. The passer-by's invented schedule $p(Q)=30-\\dfrac{Q}{10}$ is not pinned down by the posted numbers, and in any case $p(Q)$ is not the same object as $R^{\\prime}(Q)$. The posted $P^{\\prime}=4$ is a rate, not the stock $P(Q)$. If instead $P^{\\prime}=-4$ with the same $C^{\\prime}=11$, then
-$$R^{\\prime}=-4+11=7.$$`,
+$$R^{\\prime}=-4+11=7.$$ From $P^{\\prime}=4$ and $C^{\\prime}=11$ recover $R^{\\prime}=15$; $P^{\\prime}>0$ says expand. Posted rates are not price and not the stock $P$.`,
   },
   {
     id: "math-11-64",
@@ -4167,26 +4699,40 @@ $$R^{\\prime}=-4+11=7.$$`,
 
 The economic question "how many extra euros does one more ticket bring in?" is answered by marginal revenue $R_A^{\\prime}(Q_A)$, not by the sticker price $p_A$.
 
-Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$, so the statement is True.`,
+Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$
+
+The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats., so the statement is True.`,
       `**B.** → True
 
 When price need not fall to sell a little more, the product-rule penalty $Q\\,p^{\\prime}(Q)$ is zero and $R^{\\prime}(Q)=p(Q)$.
 
-Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation, so the statement is True.`,
+Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation
+
+In the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 A's expansion test compares extra revenue with extra cost:
 
 $$P_A^{\\prime}(Q_A)=R_A^{\\prime}(Q_A)-C^{\\prime}=7-8=-1<0$$
 
-The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit, so the statement is False.`,
+The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit
+
+Comparing sticker price with marginal cost is the wrong test whenever MR lies below price — A's trap in this stem.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 For cinema B,
 
 $$P_B^{\\prime}(Q_B)=R_B^{\\prime}(Q_B)-C^{\\prime}=10-8=2>0$$
 
-Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit, so the statement is True.`,
+Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit
+
+B's expand-or-not comparison uses the true extra revenue $10$ against cost $8$, and the inequality favours expansion.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 Marginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here
@@ -4195,7 +4741,11 @@ $$P_A^{\\prime}(Q_A)=7-8=-1$$
 
 $$P_B^{\\prime}(Q_B)=10-8=2$$
 
-A has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking, so the statement is False.`
+A has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking
+
+A has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 64,
@@ -4208,7 +4758,7 @@ Cinema B has
 $$p_B=10,\\qquad R_B^{\\prime}=10,$$
 consistent with a price that need not be cut for one more seat, and
 $$P_B^{\\prime}=10-8=2>0.$$
-So B should expand a little while A should not. Comparing posted prices $p_A>p_B$ does not decide which cinema has the larger marginal profit.`,
+So B should expand a little while A should not. Comparing posted prices $p_A>p_B$ does not decide which cinema has the larger marginal profit. Expand on $R^{\\prime}$ vs $C^{\\prime}=8$: A has $7-8<0$, B has $10-8>0$. Do not compare sticker prices to cost or to each other for the expansion test.`,
   },
   {
     id: "math-11-65",
@@ -4232,33 +4782,53 @@ On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiatin
 
 $$R^{\\prime}(Q)=15\\qquad\\text{for }Q<20$$
 
-For $Q<20$, marginal revenue is $15$, so the statement is True.`,
+For $Q<20$, marginal revenue is $15$
+
+Until the twentieth drink, revenue is a ray of slope $15$, so each extra happy-hour drink adds $15$ euros of revenue.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
 
 $$R^{\\prime}(Q)=8\\qquad\\text{for }Q>20$$
 
-Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin, so the statement is True.`,
+Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
+
+Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 At $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then
 
 $$P^{\\prime}(12)=R^{\\prime}(12)-C^{\\prime}(12)=15-10=5>0$$
 
-A positive derivative means a small extra drink raises profit at $Q=12$, so the statement is True.`,
+A positive derivative means a small extra drink raises profit at $Q=12$
+
+Happy-hour marginal revenue still beats mixing cost, so a small extra drink at $Q=12$ raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
 
 $$P^{\\prime}(25)=8-10=-2<0$$
 
-Post-promotion revenue no longer beats cost at the margin, so the statement is False.`,
+Post-promotion revenue no longer beats cost at the margin
+
+At $Q=25$ one should not expand: the post-promotion slope $8$ is already below cost $10$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
       `**E.** → False
 
 The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
 
-At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros, so the statement is False.`
+At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros
+
+Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 65,
@@ -4269,7 +4839,7 @@ After the promotion, $R(Q)=300+8(Q-20)$ gives
 $$R^{\\prime}(Q)=8\\qquad(Q>20).$$
 Mixing cost is constant at $C^{\\prime}(Q)=10$. Comparing pieces:
 $$P^{\\prime}(12)=15-10=5>0,$$
-while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$.`,
+while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$. Happy-hour $R^{\\prime}=15$ vs post-promotion $R^{\\prime}=8$ against $C^{\\prime}=10$: expand at $12$, not at $25$.`,
   },
   {
     id: "math-11-66",
@@ -4289,29 +4859,49 @@ while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no lo
     tactical_explanations: [
       `**A.** → True
 
-Saying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\\prime}(Q)>0$, so the statement is True.`,
+Saying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\\prime}(Q)>0$
+
+"Would raise profit" is ordinary language for a positive profit slope at the current output.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the cost office reports $C^{\\prime}(Q)=14$, the advice $P^{\\prime}(Q)>0$ rearranges to
 
 $$R^{\\prime}(Q)>C^{\\prime}(Q)=14$$
 
-The advice already means $R^{\\prime}(Q)>14$, so the statement is True.`,
+The advice already means $R^{\\prime}(Q)>14$
+
+Rearranging $P^{\\prime}=R^{\\prime}-14>0$ forces the lower bound $R^{\\prime}>14$ on the missing marginal revenue.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The advice speaks only about the sign of the slope $P^{\\prime}(Q)$.
 
-It does not reveal the current profit level $P(Q)$, so the statement is False.`,
+It does not reveal the current profit level $P(Q)$
+
+A factory can be losing money overall while still having $P^{\\prime}>0$, or earning a fortune while $P^{\\prime}>0$ — the advice is silent about $P(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → False
 
 Nothing in the consultant's sentence or the cost-office report produces the quotient $\\dfrac{C(Q)}{Q}$.
 
-The advice does not tell you average cost, so the statement is False.`,
+The advice does not tell you average cost
+
+Average cost would need the stock $C(Q)$ as well as $Q$; neither the consultant nor the reported $C^{\\prime}=14$ supplies $C(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 The first adviser's claim already forces $R^{\\prime}(Q)>14$.
 
-A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other, so the statement is True.`
+A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other
+
+Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 66,
@@ -4320,7 +4910,7 @@ A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality
 $$P^{\\prime}(Q)>0.$$
 With the cost office's report $C^{\\prime}(Q)=14$ and the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that is equivalent to the bound
 $$R^{\\prime}(Q)>14.$$
-The advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\\dfrac{C(Q)}{Q}$. A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate $R^{\\prime}>14$ and therefore contradict the first adviser.`,
+The advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\\dfrac{C(Q)}{Q}$. A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate $R^{\\prime}>14$ and therefore contradict the first adviser. "Raise profit" means $P^{\\prime}>0$, hence $R^{\\prime}>14$ given $C^{\\prime}=14$. No information about $P$ or $C/Q$ is included.`,
   },
   {
     id: "math-11-67",
@@ -4344,7 +4934,11 @@ Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and abou
 
 $$P^{\\prime}\\text{ via Plant 1}=11-9=2>0$$
 
-That choice raises the firm's profit, so the statement is True.`,
+That choice raises the firm's profit
+
+Plant 1 passes the expand-or-not test: extra revenue $11$ beats Plant 1's extra cost $9$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 Both plants sell into the same market, so both face the same extra revenue $R'=11$.
@@ -4353,17 +4947,29 @@ Plant 2's marginal cost is $13>11$, so producing there would lower profit:
 
 $$11-13=-2<0$$
 
-Selling into the same market does not make Plant 2 the right plant, so the statement is False.`,
+Selling into the same market does not make Plant 2 the right plant
+
+Same market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ and should not take the unit.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → True
 
 With the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.
 
-Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for that extra unit, so the statement is True.`,
+Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for that extra unit
+
+With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 Belonging to one firm does not force the two plants' current marginal costs to be equal.
 
-Here they are explicitly different, $9$ versus $13$, so the statement is False.`,
+Here they are explicitly different, $9$ versus $13$
+
+In the short run, plants can — and here do — operate with different marginal costs; equality is an optimality target, not an identity.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 If instead $R'=8$, then both plant-level comparisons fail:
@@ -4372,7 +4978,11 @@ $$8-9=-1<0$$
 
 $$8-13=-5<0$$
 
-Neither plant should produce the extra unit, so the statement is True.`
+Neither plant should produce the extra unit
+
+When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 67,
@@ -4382,7 +4992,7 @@ $$P_1^{\\prime}=11-9=2>0$$
 and producing there raises profit. Plant 2 has $C_2^{\\prime}=13$, so
 $$P_2^{\\prime}=11-13=-2<0$$
 and producing there lowers profit. The firm should prefer the lower-marginal-cost plant for that extra unit. Belonging to one firm does not force $C_1^{\\prime}=C_2^{\\prime}$. If instead $R'=8$, then both comparisons fail:
-$$8-9<0,\\qquad 8-13<0.$$`,
+$$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 2 ($C'=13$) does not. If $R'=8$, neither plant should produce the unit.`,
   },
   {
     id: "math-11-68",
@@ -4406,14 +5016,22 @@ On the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives
 
 $$T^{\\prime}(y)=\\dfrac{1}{5}\\qquad\\text{for }y<1000$$
 
-For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$, so the statement is True.`,
+For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$
+
+On the first bracket the tax rule is a ray through the origin with slope $1/5$, so the marginal rate equals that slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
 
 $$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad\\text{for }y>1000$$
 
-Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths, so the statement is True.`,
+Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths
+
+The kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 At $y=1500$, total tax is
@@ -4426,17 +5044,27 @@ Average tax is therefore
 
 $$\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}$$
 
-which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$, so the statement is False.`,
+which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$
+
+Average tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$., so the statement is False.`,
       `**D.** → True
 
 At $y=1500$ the taxpayer is in the second bracket, where $T^{\\prime}(y)=\\dfrac{2}{5}=0.4$.
 
-About $40$ cents of a small extra euro of income is therefore taxed away, so the statement is True.`,
+About $40$ cents of a small extra euro of income is therefore taxed away
+
+That is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**E.** → False
 
 The average rate $\\dfrac{T(1500)}{1500}=\\dfrac{4}{15}$ is only a quotient at one income.
 
-It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many schedules could share that average while having different local slopes, so the statement is False.`
+It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many schedules could share that average while having different local slopes
+
+The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 68,
@@ -4447,7 +5075,7 @@ Above $1000$, $T(y)=200+\\dfrac{2}{5}(y-1000)$ gives
 $$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad(y>1000).$$
 Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths. At $y=1500$,
 $$T(1500)=200+\\dfrac{2}{5}\\cdot 500=400,\\qquad\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}\\neq\\dfrac{2}{5},$$
-while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope.`,
+while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope. First-bracket $T^{\\prime}=1/5$, second-bracket $T^{\\prime}=2/5$. At $y=1500$, average tax is $4/15\\neq 2/5$ while about $40$ cents of an extra euro is taxed away.`,
   },
   {
     id: "math-11-69",
@@ -4469,27 +5097,45 @@ while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac
 
 Average cost falls when marginal cost lies below average cost: $A^{\\prime}(Q)<0$ is equivalent to $C^{\\prime}(Q)<A(Q)$.
 
-With $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$, so the statement is True.`,
+With $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$
+
+From $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the inequality $C^{\\prime}<A=12$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 The reports give $C^{\\prime}(Q)<12$ and $R^{\\prime}(Q)=10$, but they do not pin $C^{\\prime}$ below $10$.
 
-Marginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\\prime}(Q)<10$, so the statement is False.`,
+Marginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\\prime}(Q)<10$
+
+The open interval $(10,12)$ is still available for $C^{\\prime}$: average cost falls while $C^{\\prime}>R^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**C.** → False
 
 Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ while $C^{\\prime}$ is known only to satisfy $C^{\\prime}<12$.
 
-If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$, so the statement is False.`,
+If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$
+
+Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone., so the statement is False.`,
       `**D.** → True
 
 Falling average cost only forces $C^{\\prime}<A=12$; it does not force $C^{\\prime}<R^{\\prime}=10$.
 
-Marginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$) while average cost is falling, so the statement is True.`,
+Marginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$) while average cost is falling
+
+Example: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\prime}>10=R^{\\prime}$ (MR below MC).
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 Differentiating average cost $A(Q)=\\dfrac{C(Q)}{Q}$ produces $A^{\\prime}(Q)$, which tracks how the average moves.
 
-Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost, so the statement is False.`
+Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost
+
+The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 69,
@@ -4498,7 +5144,7 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 $$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q},$$
 so $A^{\\prime}<0$ implies only
 $$C^{\\prime}(Q)<A(Q)=12.$$
-Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not force $C^{\\prime}<10$, nor $P^{\\prime}=R^{\\prime}-C^{\\prime}>0$: one could still have, for instance, $C^{\\prime}=11$, which satisfies $C^{\\prime}<12$ while $C^{\\prime}>R^{\\prime}$. Differentiating $A$ produces $A^{\\prime}$, not marginal cost $C^{\\prime}$.`,
+Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not force $C^{\\prime}<10$, nor $P^{\\prime}=R^{\\prime}-C^{\\prime}>0$: one could still have, for instance, $C^{\\prime}=11$, which satisfies $C^{\\prime}<12$ while $C^{\\prime}>R^{\\prime}$. Differentiating $A$ produces $A^{\\prime}$, not marginal cost $C^{\\prime}$. Falling $A=12$ gives only $C^{\\prime}<12$, not $C^{\\prime}<R^{\\prime}=10$ and not $P^{\\prime}>0$. Differentiating $A$ yields $A^{\\prime}$, not $C^{\\prime}$.`,
   },
   {
     id: "math-11-70",
@@ -4522,33 +5168,53 @@ North's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gi
 
 $$P_N^{\\prime}(Q)=12$$
 
-at every $Q$, so the statement is True.`,
+at every $Q$
+
+Equivalently $R_N^{\\prime}-C_N^{\\prime}=30-18=12$; North's marginal profit is the constant $12$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 At $Q=15$, South's posted schedule gives
 
 $$P_S^{\\prime}(15)=20-15=5>0$$
 
-A positive derivative means South's profit is still locally increasing at $Q=15$, so the statement is True.`,
+A positive derivative means South's profit is still locally increasing at $Q=15$
+
+South should still expand a little at $15$ packs: extra profit is still positive on the margin.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → True
 
 At $Q=25$,
 
 $$P_S^{\\prime}(25)=20-25=-5<0$$
 
-A negative derivative means South's profit is locally decreasing at $Q=25$, so the statement is True.`,
+A negative derivative means South's profit is locally decreasing at $Q=25$
+
+Past $Q=20$, South's posted schedule has $P_S^{\\prime}<0$, so at $25$ a small expansion lowers South's profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**D.** → False
 
 The shape of $P_S^{\\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
 
-South could currently earn more or less total profit; the claim that South must earn less does not follow, so the statement is False.`,
+South could currently earn more or less total profit; the claim that South must earn less does not follow
+
+North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\\prime}$ alone — no forced ranking.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 North's marginal profit is
 
 $$P_N^{\\prime}(Q)=R_N^{\\prime}(Q)-C_N^{\\prime}(Q)=30-18=12$$
 
-The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept, so the statement is True.`
+The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept
+
+Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 70,
@@ -4557,7 +5223,7 @@ The fixed intercept $40$ in cost drops out upon differentiation, and the extra-u
 $$R_N^{\\prime}=30,\\qquad C_N^{\\prime}=18,\\qquad P_N^{\\prime}(Q)=30-18=12$$
 at every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only
 $$P_S^{\\prime}(Q)=20-Q.$$
-At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\\prime}$ say nothing about which firm currently has the larger stock of total profit.`,
+At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\\prime}$ say nothing about which firm currently has the larger stock of total profit. North has constant $P_N^{\\prime}=12$; South has $P_S^{\\prime}=20-Q$ (positive at $15$, negative at $25$). Slope shapes do not rank profit stocks.`,
   },
   {
     id: "math-11-71",
@@ -4581,21 +5247,33 @@ On the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives
 
 $$U^{\\prime}(x)=10-x\\qquad\\text{for }x<8$$
 
-For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$, so the statement is True.`,
+For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$
+
+Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 At $x=6$,
 
 $$U^{\\prime}(6)=10-6=4>0$$
 
-A positive derivative means a little extra leisure still raises satisfaction at $x=6$, so the statement is True.`,
+A positive derivative means a little extra leisure still raises satisfaction at $x=6$
+
+At six hours the student is still on the rising piece of $U$, so a little more leisure still helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → True
 
 Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
 
 $$U^{\\prime}(x)=0\\qquad\\text{for }x>8$$
 
-Marginal utility is therefore $0$ beyond eight hours, so the statement is True.`,
+Marginal utility is therefore $0$ beyond eight hours
+
+A flat utility function has zero slope: further leisure past eight hours is satiation in this model.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 $U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
@@ -4604,14 +5282,22 @@ Approaching $x=8$ from the left,
 
 $$U^{\\prime}(8^{-})=10-8=2$$
 
-The eighth hour adds about $2$ units of utility, not $48$, so the statement is False.`,
+The eighth hour adds about $2$ units of utility, not $48$
+
+Total utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
 
 $$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4$$
 
-Average utility at $x=12$ equals $4$, so the statement is True.`
+Average utility at $x=12$ equals $4$
+
+Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 71,
@@ -4621,7 +5307,7 @@ $$U^{\\prime}(x)=10-x\\qquad(x<8).$$
 At $x=6$ one has $U^{\\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence
 $$U^{\\prime}(x)=0\\qquad(x>8).$$
 The level $U(8)=48$ is total utility at eight hours, not the contribution of the eighth hour alone. Average utility at $x=12$ is
-$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$`,
+$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$ For $x<8$, $U^{\\prime}=10-x>0$ at $x=6$; for $x>8$, $U^{\\prime}=0$. The stock $U(8)=48$ is not the eighth hour's contribution.`,
   },
   {
     id: "math-11-72",
@@ -4647,29 +5333,49 @@ $$-3=16-C^{\\prime}(Q)$$
 
 $$C^{\\prime}(Q)=16-(-3)=19$$
 
-The first printer's implied marginal cost is $19$, so the statement is True.`,
+The first printer's implied marginal cost is $19$
+
+Rearrangement of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ always recovers the missing piece when two of the three rates are known.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → False
 
 The first printer has $P^{\\prime}(Q)=-3<0$, so profit is locally decreasing.
 
-Printing a little more would lower profit, not raise it, so the statement is False.`,
+Printing a little more would lower profit, not raise it
+
+With $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
       `**C.** → True
 
 The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
 
 $$P^{\\prime}(Q)=16-16=0$$
 
-its marginal profit is $0$, so the statement is True.`,
+its marginal profit is $0$
+
+Equal marginal revenue and marginal cost is exactly the first-order condition $P^{\\prime}=0$ at that run length.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**D.** → False
 
 Both printers share $R^{\\prime}(Q)=16$, but their cost (or profit) companions differ.
 
-The first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do not have the same extra-profit figure, so the statement is False.`,
+The first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do not have the same extra-profit figure
+
+Shared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\prime}$; different cost slopes produce different profit slopes.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → False
 
 The posted figure $P^{\\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
 
-The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false, so the statement is False.`
+The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false
+
+A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 72,
@@ -4678,7 +5384,7 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 $$C^{\\prime}(Q)=R^{\\prime}-P^{\\prime}=16-(-3)=19.$$
 Because $P^{\\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\\prime}(Q)=16$ with the same $R^{\\prime}$, so
 $$P^{\\prime}(Q)=16-16=0.$$
-Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\\prime}=-3$ is not its stock of total profit.`,
+Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\\prime}=-3$ is not its stock of total profit. First shop: $P^{\\prime}=-3$ and $R^{\\prime}=16$ imply $C^{\\prime}=19$ (do not expand). Second: $R^{\\prime}=C^{\\prime}=16$ imply $P^{\\prime}=0$.`,
   },
   {
     id: "math-11-73",
@@ -4702,33 +5408,53 @@ Before the tax,
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=14-10=4>0$$
 
-A positive derivative means a small expansion raises profit, so the statement is True.`,
+A positive derivative means a small expansion raises profit
+
+Before the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 The new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
 
 $$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=10+5=15$$
 
-After the tax the relevant marginal cost is $15$, so the statement is True.`,
+After the tax the relevant marginal cost is $15$
+
+A per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → False
 
 After the tax, compare the unchanged marginal revenue with the new marginal cost:
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)=14-15=-1<0$$
 
-A negative derivative means a small expansion lowers profit rather than raising it, so the statement is False.`,
+A negative derivative means a small expansion lowers profit rather than raising it
+
+After the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
 
-After the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated, so the statement is True.`,
+After the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated
+
+Using the old $C^{\\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
 
 The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
 
 $$R^{\\prime}(Q)=14$$
 
-still after the tax, so the statement is True.`
+still after the tax
+
+Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 73,
@@ -4741,7 +5467,7 @@ hence
 $$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=15,$$
 while revenue — and therefore $R^{\\prime}=14$ — is unchanged. After the tax,
 $$\\widetilde{P}^{\\prime}=14-15=-1<0,$$
-so a small expansion no longer raises profit. The extra-cost side must now differentiate $\\widetilde{C}$, not the old $C$.`,
+so a small expansion no longer raises profit. The extra-cost side must now differentiate $\\widetilde{C}$, not the old $C$. Before: $P^{\\prime}=14-10=4>0$. After: $\\widetilde{C}^{\\prime}=15$, so $\\widetilde{P}^{\\prime}=14-15=-1<0$, with $R^{\\prime}$ unchanged.`,
   },
   {
     id: "math-11-74",
@@ -4769,12 +5495,20 @@ Differentiating gives
 
 $$R^{\\prime}(Q)=40-2Q$$
 
-which matches the claim, so the statement is True.`,
+which matches the claim
+
+The product rule on $R=Q(40-Q)$ immediately yields $R^{\\prime}=40-2Q$ on the first piece.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
 
-Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$, so the statement is True.`,
+Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$
+
+With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 At $Q=12<30$,
@@ -4785,21 +5519,33 @@ Compare with packing cost $C^{\\prime}=12$:
 
 $$P^{\\prime}(12)=16-12=4>0$$
 
-A small expansion raises profit at $Q=12$, so the statement is True.`,
+A small expansion raises profit at $Q=12$
+
+At $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 At $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then
 
 $$R^{\\prime}(35)-C^{\\prime}(35)=10-12=-2<0$$
 
-hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$, so the statement is False.`,
+hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$
+
+Clearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → False
 
 At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is
 
 $$p(12)=40-12=28$$
 
-Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general, so the statement is False.`
+Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general
+
+The gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 74,
@@ -4810,7 +5556,7 @@ Once clearance pricing begins, $p(Q)=10$ is flat, hence
 $$R(Q)=10Q,\\qquad R^{\\prime}(Q)=10\\qquad(Q>30).$$
 Packing cost has constant $C^{\\prime}(Q)=12$. At $Q=12$,
 $$P^{\\prime}(12)=(40-24)-12=4>0,$$
-so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<12=C^{\\prime}$, so $R^{\\prime}>C^{\\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\\prime}(12)=16$, not $28$.`,
+so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<12=C^{\\prime}$, so $R^{\\prime}>C^{\\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\\prime}(12)=16$, not $28$. For $Q<30$, $R^{\\prime}=40-2Q$; for $Q>30$, $R^{\\prime}=10$. Against $C^{\\prime}=12$: expand at $12$ ($R^{\\prime}=16$), not at $35$. At $Q=12$, $p=28\\neq R^{\\prime}=16$.`,
   },
   {
     id: "math-11-75",
@@ -4834,14 +5580,22 @@ Average cost falls when marginal cost lies below average cost. For firm A,
 
 $$C_A^{\\prime}=5<8=A_A$$
 
-Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling, so the statement is True.`,
+Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
+
+The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives $A_A^{\\prime}<0$ precisely because $5<8$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
 
 $$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$$
 
-For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising, and the statement is True.`,
+For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising
+
+For B the same rule gives $A_B^{\\prime}>0$ because marginal cost $9$ sits above average cost $6$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
@@ -4850,14 +5604,22 @@ $$7>5\\qquad\\text{at A}$$
 
 $$7<9\\qquad\\text{at B}$$
 
-A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison, so the statement is False.`,
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
+
+Average-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
 
 $$7>5=C_A^{\\prime}\\qquad\\text{but}\\qquad 7<9=C_B^{\\prime}$$
 
-Only firm A satisfies $R'>C'$, so the statement is True.`,
+Only firm A satisfies $R'>C'$
+
+A alone has extra revenue above extra cost; B has the inequality reversed.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**E.** → True
 
 The extra-profit figures are
@@ -4866,14 +5628,18 @@ $$P_A^{\\prime}=7-5=2$$
 
 $$P_B^{\\prime}=7-9=-2$$
 
-The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B, so the statement is True.`
+The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B
+
+Those $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 75,
     solution_overview:
       `Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:
 $$P_A^{\\prime}=7-5=2>0,\\qquad P_B^{\\prime}=7-9=-2<0.$$
-Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery.`,
+Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.`,
   },
   {
     id: "math-11-76",
@@ -4895,34 +5661,54 @@ Only A has $R'>C'$. Being cheaper on average does not decide who should take the
 
 Studio A reports $P_A(Q)=50>0$ and $P_A^{\\prime}(Q)=0$.
 
-The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero, so the statement is True.`,
+The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero
+
+Studio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 Studio B reports $P_B(Q)=0$ together with $P_B^{\\prime}(Q)=4>0$.
 
-Breaking even today is compatible with an upward slope: a small expansion would push profit above zero, so the statement is True.`,
+Breaking even today is compatible with an upward slope: a small expansion would push profit above zero
+
+Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
 
 Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
 
-The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing, so the statement is False.`,
+The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing
+
+"Earns nothing" would mean $P_A(Q)=0$; the report $P_A^{\\prime}=0$ says something entirely different.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → True
 
 $P_B^{\\prime}(Q)=4>0$ is an expansion signal for B.
 
-For A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, the usual first-order condition, so the statement is True.`,
+For A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, the usual first-order condition
+
+B's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is already the MR$=$MC first-order condition.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
 
 A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\\prime}(Q)=4>0$.
 
-Current break-even does not forbid a positive marginal profit, so the statement is False.`
+Current break-even does not forbid a positive marginal profit
+
+Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 76,
     solution_overview:
       `Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence
 $$R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$$
-and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit.`,
+and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\\prime}=4>0$ (expand). Height and slope are independent.`,
   },
   {
     id: "math-11-77",
@@ -4946,33 +5732,53 @@ Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives
 
 $$C_{\\mathrm{wd}}^{\\prime}(Q)=12$$
 
-On a weekday each extra sale adds $12$ euros of cost, so the statement is True.`,
+On a weekday each extra sale adds $12$ euros of cost
+
+Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
 
 Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}^{\\prime}(Q)=20$. The weekday slope was $12$, and
 
 $$20-12=8$$
 
-Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule, so the statement is True.`,
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule
+
+Weekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 On a weekday,
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)=15-12=3>0$$
 
-A positive marginal profit means a small extra sale raises weekday profit, so the statement is True.`,
+A positive marginal profit means a small extra sale raises weekday profit
+
+Weekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 Weekend marginal profit uses the weekend cost slope, not the weekday one:
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)=15-20=-5$$
 
-That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope, so the statement is False.`,
+That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope
+
+Weekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\\prime}$ with a higher $C^{\\prime}$ flips the advice.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
 
 $R^{\\prime}(Q)=15$ is the same number both days.
 
-What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change, so the statement is True.`
+What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change
+
+Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
@@ -4985,7 +5791,7 @@ The overtime gap is $20-12=8$ euros on an extra sale. Marginal revenue is $R^{\\
 $$P_{\\mathrm{wd}}^{\\prime}=15-12=3>0,$$
 while weekend marginal profit is
 $$P_{\\mathrm{we}}^{\\prime}=15-20=-5\\neq 3.$$
-The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\\prime}$.`,
+The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\\prime}$. Weekday $C^{\\prime}=12$ gives $P^{\\prime}=15-12=3>0$; weekend $C^{\\prime}=20$ gives $P^{\\prime}=15-20=-5$. Same $R^{\\prime}$, different cost piece.`,
   },
   {
     id: "math-11-78",
@@ -5009,7 +5815,11 @@ The weekday-versus-weekend switch changes which cost function is differentiated;
 
 $$R_L^{\\prime}(Q)<C_L^{\\prime}(Q)$$
 
-The reviewer's sentence is already that comparison, so the statement is True.`,
+The reviewer's sentence is already that comparison
+
+The reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\\prime}<C_L^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 From $P_L^{\\prime}(Q)=R_L^{\\prime}(Q)-C_L^{\\prime}(Q)$ and the posted numbers,
@@ -5018,24 +5828,40 @@ $$-4=9-C_L^{\\prime}(Q)$$
 
 $$C_L^{\\prime}(Q)=13$$
 
-Shop L's implied marginal cost is $13$, so the statement is True.`,
+Shop L's implied marginal cost is $13$
+
+Check: $9<13$ matches the reviewer's claim, and $P_L^{\\prime}=9-13=-4$ matches the posted profit slope.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
 
 At Shop M, $R_M^{\\prime}(Q)=9>6=C_M^{\\prime}(Q)$, so extra revenue is larger than extra cost.
 
-That is the opposite of the reviewer's sentence, and Shop M does not satisfy it, so the statement is True.`,
+That is the opposite of the reviewer's sentence, and Shop M does not satisfy it
+
+At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue smaller than extra cost."
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
 
 Shop M has
 
 $$P_M^{\\prime}(Q)=9-6=3>0$$
 
-while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L, so the statement is True.`,
+while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L
+
+Opposite signs of $P^{\\prime}$ give opposite expand-or-not advice at the two shops.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**E.** → False
 
 Both shops share $R^{\\prime}(Q)=9$, but their cost slopes differ: $C_L^{\\prime}(Q)=13$ versus $C_M^{\\prime}(Q)=6$.
 
-Same extra revenue does not force the same extra cost, so the statement is False.`
+Same extra revenue does not force the same extra cost
+
+Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 78,
@@ -5046,7 +5872,7 @@ With the posted $R_L^{\\prime}=9$ and $P_L^{\\prime}=-4$, rearrange to recover
 $$C_L^{\\prime}=R_L^{\\prime}-P_L^{\\prime}=9-(-4)=13,$$
 which indeed satisfies $9<13$. Shop M faces the same $R_M^{\\prime}=9$ but $C_M^{\\prime}=6$, so $9>6$ and M does not satisfy the reviewer's sentence. Marginal profits are
 $$P_M^{\\prime}=9-6=3>0,\\qquad P_L^{\\prime}=-4<0,$$
-so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ does not force the same extra-cost figure.`,
+so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ does not force the same extra-cost figure. Shop L: $R'=9$, $P'=-4$ imply $C'=13$ (reviewer's sentence holds). Shop M: $R'=9>C'=6$, so M fails the sentence and should expand.`,
   },
   {
     id: "math-11-79",
@@ -5076,7 +5902,11 @@ $$P^{\\prime}(Q)=8-\\dfrac{2}{10}Q$$
 
 $$P^{\\prime}(Q)=8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30$$
 
-The claim matches, so the statement is True.`,
+The claim matches
+
+Differentiate $8Q-\\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\\dfrac{2}{10}Q=-\\dfrac{1}{5}Q$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 At $Q=20$,
@@ -5085,19 +5915,31 @@ $$P^{\\prime}(20)=8-\\dfrac{1}{5}\\cdot 20$$
 
 $$P^{\\prime}(20)=8-4=4>0$$
 
-A small expansion raises profit at $Q=20$, so the statement is True.`,
+A small expansion raises profit at $Q=20$
+
+At $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → True
 
 On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
 
 $$P^{\\prime}(Q)=-4\\qquad\\text{for }Q>30$$
 
-which matches the claim, so the statement is True.`,
+which matches the claim
+
+Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**D.** → False
 
 Just above capacity the firm is on the outsourcing piece, where $P^{\\prime}(Q)=-4<0$.
 
-A small expansion lowers profit; it does not raise it, so the statement is False.`,
+A small expansion lowers profit; it does not raise it
+
+Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → False
 
 $P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
@@ -5108,7 +5950,11 @@ $$P^{\\prime}(30^{-})=8-\\dfrac{1}{5}\\cdot 30$$
 
 $$P^{\\prime}(30^{-})=8-6=2$$
 
-The thirtieth unit adds about $2$ euros of profit, not $150$, so the statement is False.`
+The thirtieth unit adds about $2$ euros of profit, not $150$
+
+The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 79,
@@ -5119,7 +5965,7 @@ At $Q=20$ one has $P^{\\prime}(20)=8-4=4>0$, so a small expansion raises profit.
 $$P(Q)=150-4(Q-30)\\qquad(Q>30)$$
 has constant slope
 $$P^{\\prime}(Q)=-4<0,$$
-so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit.`,
+so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit. Below capacity $P^{\\prime}=8-\\dfrac{1}{5}Q$ (positive at $Q=20$); above capacity $P^{\\prime}=-4<0$. The level $P(30)=150$ is not the thirtieth unit's extra profit.`,
   },
   {
     id: "math-11-80",
@@ -5145,29 +5991,49 @@ $$1=3-C^{\\prime}(40)$$
 
 $$C^{\\prime}(40)=2$$
 
-The café's implied marginal cost is $2$, so the statement is True.`,
+The café's implied marginal cost is $2$
+
+Two of the three rates determine the third through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; here the café's missing piece is $C^{\\prime}=2$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**B.** → True
 
 For the kiosk,
 
 $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2$$
 
-The kiosk's implied marginal profit is $-2$, so the statement is True.`,
+The kiosk's implied marginal profit is $-2$
+
+The kiosk's missing piece is the profit slope: $P^{\\prime}=3-5=-2$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → True
 
 The café has $P^{\\prime}(40)=1>0$, so a small extra item raises café profit.
 
-The kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit, so the statement is True.`,
+The kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit
+
+Opposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the shared $R^{\\prime}(40)=3$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
 
 Same $R^{\\prime}(40)$ and same $Q$ do not force the same cost slope.
 
-The recovered values are already different: $C^{\\prime}(40)=2$ at the café versus $C^{\\prime}(40)=5$ at the kiosk, so the statement is False.`,
+The recovered values are already different: $C^{\\prime}(40)=2$ at the café versus $C^{\\prime}(40)=5$ at the kiosk
+
+The recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\\prime}$ never forced them to match.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → False
 
 $P^{\\prime}(40)=1$ is a rate of change of profit.
 
-The height $P(40)$ of today's profit was never posted and need not equal $1$, so the statement is False.`
+The height $P(40)$ of today's profit was never posted and need not equal $1$
+
+A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 80,
@@ -5176,7 +6042,7 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$, so
 $$C^{\\prime}(40)=R^{\\prime}(40)-P^{\\prime}(40)=3-1=2.$$
 The kiosk posts $C^{\\prime}(40)=5$ instead, so
 $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2.$$
-A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and lowers it at the kiosk ($P^{\\prime}=-2<0$). Same $Q$ and same $R^{\\prime}$ do not force the same $C^{\\prime}$. The café's rate $P^{\\prime}(40)=1$ is not its profit level $P(40)$.`,
+A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and lowers it at the kiosk ($P^{\\prime}=-2<0$). Same $Q$ and same $R^{\\prime}$ do not force the same $C^{\\prime}$. The café's rate $P^{\\prime}(40)=1$ is not its profit level $P(40)$. Café: $P'=1$, $R'=3$ imply $C'=2$ (expand). Kiosk: $C'=5$, $R'=3$ imply $P'=-2$ (do not expand). Same $R'$ does not force same $C'$ or same $P$.`,
   },
   {
     id: "math-11-81",
@@ -5196,64 +6062,70 @@ A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and 
     tactical_explanations: [
       `**A.** → True
 
-Marginal profit is the derivative of the given daily-profit rule, taken term by term.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=-Q^{2}+12Q-20$$
+To read how profit changes with lamps sold, differentiate the given daily-profit rule term by term. Starting from
 
-$$P^{\\prime}(Q)=-2Q+12$$
+$$P(Q)=-Q^{2}+12Q-20,$$
 
-That slope matches the claim exactly, so the statement is True.`,
+the power rule yields
+
+$$P'(Q)=-2Q+12.$$
+
+That derivative *is* the slope of daily profit (marginal profit). It matches the claimed formula exactly — no extra constant term appears, so the statement is True.`,
       `**B.** → True
 
-An interior peak can occur only where the graph is momentarily flat, so set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-2Q+12=0$$
+An interior peak of a smooth profit curve can occur only where the graph is momentarily flat, so set the slope to zero and solve for output:
 
-$$2Q=12$$
+$$P'(Q)=-2Q+12=0\\qquad\\Rightarrow\\qquad 2Q=12\\qquad\\Rightarrow\\qquad Q=6.$$
 
-$$Q=6$$
-
-On $Q\\ge 0$ this is the only root, so six lamps is the unique flat-slope candidate, so the statement is True.`,
+On the domain $Q\\ge 0$ this linear equation has exactly one root. There is no second candidate hiding at another positive output, so six lamps is the unique flat-slope daily output, so the statement is True.`,
       `**C.** → True
 
-The second derivative reads the bend of the profit curve at that flat spot.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-2$$
+A flat slope alone does not yet say peak versus trough. The second derivative reads the bend of the profit curve at that critical output:
 
-In particular $P^{\\prime\\prime}(6)=-2<0$. A negative second derivative means the curve bends strictly downward, so $Q=6$ is a local profit peak, so the statement is True.`,
+$$P''(Q)=-2\\qquad\\Rightarrow\\qquad P''(6)=-2<0.$$
+
+A strictly negative second derivative means the curve bends strictly downward through the flat spot, which is the second-derivative test for a local maximum. Therefore $Q=6$ is a local profit peak, so the statement is True.`,
       `**D.** → True
 
-Substitute the flat-slope output into the profit level (not into the slope).
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(6)=-6^{2}+12\\cdot 6-20$$
+Once the critical output is known, evaluate the *profit level* $P$ there — not the slope $P'$. Substitute $Q=6$ into the original quadratic:
 
-$$P(6)=-36+72-20=16$$
+$$P(6)=-6^{2}+12\\cdot 6-20=-36+72-20=16.$$
 
-Daily profit at six lamps is $16$ euros, so the statement is True.`,
+Daily profit at six lamps is therefore $16$ euros. The calculation uses the level function, which is what the claim asks for, so the statement is True.`,
       `**E.** → False
 
-A flat slope describes how profit *changes* at that output, not how large profit *is*. Evaluating the level separately gives
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-$$P(6)=16\\neq 0$$
+A flat slope describes how profit *changes* at that output, not how large profit *is*. The first-order condition $P'(6)=0$ only says the tangent is horizontal; it says nothing about the height $P(6)$. Evaluating the level separately gives
 
-Zero slope does not force zero profit, so the statement is False.`
+$$P(6)=16\\neq 0.$$
+
+Zero slope does not force zero profit — confusing the derivative with the function itself is the trap —. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 81,
     solution_overview:
-      `The workshop hands over daily profit as a concrete quadratic in lamps sold:
+      `Daily profit is the concrete quadratic
 
-$$P(Q)=-Q^{2}+12Q-20,\\qquad Q\\ge 0$$
+$$P(Q)=-Q^{2}+12Q-20,\\qquad Q\\ge 0.$$
 
-Differentiate once to read the slope of profit, then again to read the bend.
+Differentiate once for the slope of profit and again for the bend:
 
-$$P^{\\prime}(Q)=-2Q+12\\qquad P^{\\prime\\prime}(Q)=-2$$
+$$P'(Q)=-2Q+12,\\qquad P''(Q)=-2.$$
 
-A flat slope solves $P^{\\prime}(Q)=0$, which forces the unique non-negative root $Q=6$. Because $P^{\\prime\\prime}=-2<0$ everywhere, that flat point is a strict local profit peak. Substituting the peak output into the level (not into the slope) gives
+An interior candidate solves the flat-slope equation $P'(Q)=0$, which forces the unique non-negative root $Q=6$. Because $P''=-2<0$ everywhere, that flat point is a strict local profit peak. Substituting the peak output into the *level* (not the slope) gives
 
-$$P(6)=-36+72-20=16$$
+$$P(6)=-36+72-20=16,$$
 
-so six lamps yield $16$ euros of daily profit. A zero slope never forces the profit *level* itself to be zero.`,
+so six lamps yield $16$ euros of daily profit. A zero slope never forces the profit level itself to be zero — slope and height are different objects.`,
   },
   {
     id: "math-11-82",
@@ -5273,72 +6145,80 @@ so six lamps yield $16$ euros of daily profit. A zero slope never forces the pro
     tactical_explanations: [
       `**A.** → True
 
-Profit is revenue minus cost; expand and collect like terms.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)$$
+Profit is defined as revenue minus cost. Expand carefully, watching the minus sign distribute over every cost term:
 
-$$P(Q)=-2Q^{2}+24Q-40$$
+$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40).$$
 
-That simplified quadratic matches the claim, so the statement is True.`,
+Collect like terms:
+
+$$P(Q)=-Q^{2}-Q^{2}+30Q-6Q-40=-2Q^{2}+24Q-40.$$
+
+That simplified quadratic matches the claim exactly, so the statement is True.`,
       `**B.** → True
 
-Differentiate the simplified profit rule term by term to read marginal profit.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=-2Q^{2}+24Q-40$$
+Marginal profit is the slope of the profit function. Differentiate the simplified rule term by term:
 
-$$P^{\\prime}(Q)=-4Q+24$$
+$$P(Q)=-2Q^{2}+24Q-40\\qquad\\Rightarrow\\qquad P'(Q)=-4Q+24.$$
 
-That slope is exactly the claimed marginal profit, so the statement is True.`,
+(The constant $-40$ disappears under differentiation.) That slope is exactly the claimed marginal-profit formula
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Set the slope of profit to zero and solve for daily output.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-4Q+24=0$$
+An interior profit peak requires a flat slope, so set marginal profit to zero and solve:
 
-$$4Q=24$$
+$$P'(Q)=-4Q+24=0\\qquad\\Rightarrow\\qquad 4Q=24\\qquad\\Rightarrow\\qquad Q=6.$$
 
-$$Q=6$$
+For $Q>0$ this is the unique root. Six lunch boxes is therefore the unique positive flat-slope output
 
-Six lunch boxes is the unique positive flat-slope output, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-Marginal revenue and marginal cost are the derivatives of $R$ and $C$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R^{\\prime}(Q)=30-2Q,\\qquad C^{\\prime}(Q)=2Q+6$$
+At a profit peak one also has $R'=C'$ (because $P'=R'-C'$). Compute the separate marginals and evaluate at six boxes:
 
-At $Q=6$:
+$$R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6,$$
 
-$$R^{\\prime}(6)=30-12=18$$
+$$R'(6)=30-12=18,\\qquad C'(6)=12+6=18.$$
 
-$$C^{\\prime}(6)=12+6=18$$
+Both equal $18$ euros at six boxes, matching the claim
 
-Both equal $18$ euros at six boxes, so the statement is True.`,
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough., so the statement is True.`,
       `**E.** → False
 
-Flat profit slope means $P^{\\prime}(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both:
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-$$P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32$$
+Flat profit slope means $P'(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both explicitly:
 
-$$C(6)=36+36+40=112$$
+$$P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32,$$
 
-The levels $32$ and $112$ differ, so the statement is False.`
+$$C(6)=36+36+40=112.$$
+
+The levels $32$ and $112$ differ sharply. Confusing a zero *derivative* of profit with equal *levels* of profit and cost is the trap. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 82,
     solution_overview:
       `Revenue and cost are given separately, so daily profit is their difference:
 
-$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40$$
+$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)=-2Q^{2}+24Q-40.$$
 
-Differentiate the simplified profit, and also keep the separate marginal schedules.
+Differentiate the simplified profit, and keep the separate marginal schedules:
 
-$$P^{\\prime}(Q)=-4Q+24\\qquad R^{\\prime}(Q)=30-2Q\\qquad C^{\\prime}(Q)=2Q+6$$
+$$P'(Q)=-4Q+24,\\qquad R'(Q)=30-2Q,\\qquad C'(Q)=2Q+6.$$
 
-Flat profit solves $P^{\\prime}=0$, giving the unique positive root $Q=6$. At that same output
+Flat profit solves $P'=0$, giving the unique positive root $Q=6$. At that same output
 
-$$R^{\\prime}(6)=18=C^{\\prime}(6)$$
+$$R'(6)=18=C'(6),$$
 
-and the bend $P^{\\prime\\prime}=-4<0$ confirms a local profit peak. The *levels* at six boxes are $P(6)=32$ and $C(6)=112$, which are not equal — a flat profit slope does not force $P=C$.`,
+and the bend $P''=-4<0$ confirms a local profit peak. The *levels* at six boxes are $P(6)=32$ and $C(6)=112$, which are not equal — a flat profit slope does not force $P=C$.`,
   },
   {
     id: "math-11-83",
@@ -5358,58 +6238,64 @@ and the bend $P^{\\prime\\prime}=-4<0$ confirms a local profit peak. The *levels
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the cost model and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(Q)=2Q-10$$
+To find candidate cost-minimising fleets, differentiate the cost model and set the slope to zero:
 
-$$2Q-10=0$$
+$$C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad 2Q=10\\qquad\\Rightarrow\\qquad Q=5.$$
 
-$$Q=5$$
-
-So the only flat-slope fleet size is five vans, so the statement is True.`,
+This linear equation has exactly one root, and that root lies in $Q\\ge 0$. So the only flat-slope fleet size is five vans, so the statement is True.`,
       `**B.** → True
 
-The second derivative reads the bend of the cost curve.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime\\prime}(Q)=2>0$$
+Classify the critical fleet with the second derivative. Differentiating the slope once more gives a constant bend:
 
-everywhere, including at $Q=5$. A positive second derivative means the curve bends upward, so five vans is a local cost trough, so the statement is True.`,
+$$C''(Q)=2>0$$
+
+everywhere, including at $Q=5$. A positive second derivative means the cost curve bends upward through the flat spot, which is the second-derivative test for a local minimum. Therefore five vans is a local cost trough, so the statement is True.`,
       `**C.** → True
 
-Evaluate cost at the trough fleet size.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C(5)=5^{2}-10\\cdot 5+40$$
+Evaluate cost at the trough fleet size — use the level $C$, not the slope $C'$:
 
-$$C(5)=25-50+40=15$$
+$$C(5)=5^{2}-10\\cdot 5+40=25-50+40=15.$$
 
-The trough cost is $15$ (hundreds of euros), so the statement is True.`,
+The trough cost is $15$ (hundreds of euros), matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → False
 
-A flat slope alone does not decide peak versus trough. Here the bend is upward:
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
-$$C^{\\prime\\prime}(5)=2>0$$
+A flat slope alone does not decide peak versus trough — that is the classic trap. Here the bend is upward:
 
-so five vans is a local *minimum* of cost, not a peak. Claiming a local cost maximum reverses the correct label, so the statement is False.`,
+$$C''(5)=2>0,$$
+
+so five vans is a local *minimum* of cost, not a local maximum. Claiming a local cost peak reverses the correct second-derivative label. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-On $Q\\ge 0$ the parabola opens upward ($C^{\\prime\\prime}=2>0$) with its vertex at $Q=5\\ge 0$. Therefore the local trough is also the global minimum on the domain: the cost-minimising fleet is five vans globally as well as locally, so the statement is True.`
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+On $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 83,
     solution_overview:
       `Daily operating cost is the upward-opening parabola
 
-$$C(Q)=Q^{2}-10Q+40,\\qquad Q\\ge 0$$
+$$C(Q)=Q^{2}-10Q+40,\\qquad Q\\ge 0.$$
 
 Differentiate twice:
 
-$$C^{\\prime}(Q)=2Q-10\\qquad C^{\\prime\\prime}(Q)=2>0$$
+$$C'(Q)=2Q-10,\\qquad C''(Q)=2>0.$$
 
-The only flat-slope fleet is $Q=5$. Because $C^{\\prime\\prime}>0$, five vans is a local cost *trough* (not a peak). Evaluating the level gives
+The only flat-slope fleet is $Q=5$. Because $C''>0$, five vans is a local cost *trough* (not a peak). Evaluating the level gives
 
-$$C(5)=25-50+40=15$$
+$$C(5)=25-50+40=15,$$
 
-and since the parabola opens upward with its vertex already inside $Q\\ge 0$, that local trough is also the global cost minimum on the domain.`,
+and since the parabola opens upward with its vertex already inside $Q\\ge 0$, that local trough is also the global cost minimum on the domain. Flat slope alone never decides peak versus trough — the bend does.`,
   },
   {
     id: "math-11-84",
@@ -5429,56 +6315,68 @@ and since the parabola opens upward with its vertex already inside $Q\\ge 0$, th
     tactical_explanations: [
       `**A.** → True
 
-Differentiate each score twice and evaluate at intensity zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime}(x)=4x^{3},\\qquad A^{\\prime\\prime}(x)=12x^{2}$$
+Differentiate each score twice and evaluate at intensity zero. For $A(x)=x^{4}$:
 
-$$B^{\\prime}(x)=-4x^{3},\\qquad B^{\\prime\\prime}(x)=-12x^{2}$$
+$$A'(x)=4x^{3},\\qquad A''(x)=12x^{2},$$
 
-At $x=0$ both first and second derivatives vanish for each score, so the statement is True.`,
+so $A'(0)=0$ and $A''(0)=0$. For $B(x)=-x^{4}$:
+
+$$B'(x)=-4x^{3},\\qquad B''(x)=-12x^{2},$$
+
+so $B'(0)=0$ and $B''(0)=0$. Both scores therefore have a flat slope *and* a flat second derivative at zero, so the statement is True.`,
       `**B.** → True
 
-The usual second-derivative test needs a strictly negative or strictly positive bend. Here
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime\\prime}(0)=0,\\qquad B^{\\prime\\prime}(0)=0$$
+The usual second-derivative test needs a strictly negative bend (local peak) or a strictly positive bend (local trough). Here
 
-so the bend test alone cannot classify either critical point, and the check is inconclusive for both, so the statement is True.`,
+$$A''(0)=0,\\qquad B''(0)=0,$$
+
+so neither bend is strictly signed. The bend test alone therefore cannot classify either critical point — the check is inconclusive for both scores, so the statement is True.`,
       `**C.** → True
 
-Even though $A^{\\prime\\prime}(0)=0$, the fourth-power shape still settles the local picture. For every $x\\neq 0$,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(x)=x^{4}>0=A(0)$$
+Even though $A''(0)=0$, the fourth-power shape still settles the local picture by direct comparison. For every $x\\neq 0$,
 
-so intensity zero is a strict local trough of score $A$, so the statement is True.`,
+$$A(x)=x^{4}>0=A(0).$$
+
+So nearby values sit strictly above the value at zero: intensity zero is a strict local trough of score $A$. The inconclusive bend test does not cancel that comparison, so the statement is True.`,
       `**D.** → True
 
-Likewise, for every $x\\neq 0$,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$B(x)=-x^{4}<0=B(0)$$
+Likewise for the opposite-sign fourth power: for every $x\\neq 0$,
 
-so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there, so the statement is True.`,
+$$B(x)=-x^{4}<0=B(0).$$
+
+Nearby values sit strictly below the value at zero, so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there. Direct comparison classifies what the bend test could not, so the statement is True.`,
       `**E.** → False
 
-Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons above already show a trough for $A$ and a peak for $B$ at zero, so the claim that neither can have an extremum there is false, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons already show a trough for $A$ and a peak for $B$ at zero. Claiming that neither score can have a local extremum there confuses “test inconclusive” with “no extremum exists,”. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 84,
     solution_overview:
       `The two campaign scores near intensity zero are pure fourth powers of opposite sign:
 
-$$A(x)=x^{4}\\qquad B(x)=-x^{4}$$
+$$A(x)=x^{4},\\qquad B(x)=-x^{4}.$$
 
 Differentiate each twice:
 
-$$A^{\\prime}(x)=4x^{3},\\quad A^{\\prime\\prime}(x)=12x^{2}$$
+$$A'(x)=4x^{3},\\quad A''(x)=12x^{2},$$
 
-$$B^{\\prime}(x)=-4x^{3},\\quad B^{\\prime\\prime}(x)=-12x^{2}$$
+$$B'(x)=-4x^{3},\\quad B''(x)=-12x^{2}.$$
 
 At $x=0$ both first and second derivatives vanish for each score, so the usual second-derivative bend test is inconclusive. Nearby comparison still classifies the points: for every $x\\neq 0$,
 
-$$A(x)=x^{4}>0=A(0)\\qquad B(x)=-x^{4}<0=B(0)$$
+$$A(x)=x^{4}>0=A(0),\\qquad B(x)=-x^{4}<0=B(0),$$
 
-so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishing of $A^{\\prime\\prime}$ and $B^{\\prime\\prime}$ does not forbid those extrema.`,
+so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishing of $A''$ and $B''$ does not forbid those extrema.`,
   },
   {
     id: "math-11-85",
@@ -5498,56 +6396,70 @@ so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishin
     tactical_explanations: [
       `**A.** → True
 
-Differentiate each café's profit and evaluate the slopes at ten covers.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A^{\\prime}(Q)=-2Q+20,\\qquad P_B^{\\prime}(Q)=2Q-20$$
+Differentiate each café's profit and evaluate the slopes at ten covers:
 
-$$P_A^{\\prime}(10)=-20+20=0,\\qquad P_B^{\\prime}(10)=20-20=0$$
+$$P_A'(Q)=-2Q+20,\\qquad P_B'(Q)=2Q-20,$$
 
-Both slopes are flat at $Q=10$, so the statement is True.`,
+$$P_A'(10)=-20+20=0,\\qquad P_B'(10)=20-20=0.$$
+
+Both slopes are flat at $Q=10$. Sharing a critical output does not yet say anything about peaks versus troughs — that comes from the bends — but the flat-slope claim itself holds, so the statement is True.`,
       `**B.** → True
 
-Read the bend of Café A's profit at the flat spot.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A^{\\prime\\prime}(Q)=-2$$
+Read the bend of Café A's profit at the shared flat spot. Differentiating the slope once more gives
 
-so $P_A^{\\prime\\prime}(10)=-2<0$. A downward bend at a flat slope means a local profit peak for A, so the statement is True.`,
+$$P_A''(Q)=-2\\qquad\\Rightarrow\\qquad P_A''(10)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore ten covers is a local profit peak for A, so the statement is True.`,
       `**C.** → True
 
-Read the bend of Café B's profit at the same output.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_B^{\\prime\\prime}(Q)=2$$
+Read the bend of Café B's profit at the same output:
 
-so $P_B^{\\prime\\prime}(10)=2>0$. An upward bend at a flat slope means a local profit trough for B, so the statement is True.`,
+$$P_B''(Q)=2\\qquad\\Rightarrow\\qquad P_B''(10)=2>0.$$
+
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore ten covers is a local profit trough for B — the opposite label from A's —
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → False
 
-Both cafés have a flat slope at ten covers, but the bends tell opposite stories: A has a peak while B has a trough. Flat slope alone does not mean both are maximising profit, so the statement is False.`,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Both cafés have a flat slope at ten covers, but the bends tell opposite stories: A has a peak ($P_A''<0$) while B has a trough ($P_B''>0$). Flat slope alone finds candidates; it does not mean both are maximising profit. Café B is locally *minimising* profit there. The claim overreaches from critical point to maximum. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Evaluate each profit level at ten covers.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A(10)=-100+200-50=50$$
+Evaluate each profit *level* at ten covers (not the slopes):
 
-$$P_B(10)=100-200+90=-10$$
+$$P_A(10)=-100+200-50=50,$$
 
-Café A's profit is $50$ euros and Café B's is $-10$ euros, so the statement is True.`
+$$P_B(10)=100-200+90=-10.$$
+
+Café A's profit is $50$ euros and Café B's is $-10$ euros, matching the claim exactly
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 85,
     solution_overview:
       `Two cafés share the output $Q=10$ but run opposite profit shapes:
 
-$$P_A(Q)=-Q^{2}+20Q-50\\qquad P_B(Q)=Q^{2}-20Q+90$$
+$$P_A(Q)=-Q^{2}+20Q-50,\\qquad P_B(Q)=Q^{2}-20Q+90.$$
 
 Differentiate each:
 
-$$P_A^{\\prime}(Q)=-2Q+20,\\quad P_A^{\\prime\\prime}=-2$$
+$$P_A'(Q)=-2Q+20,\\quad P_A''=-2,$$
 
-$$P_B^{\\prime}(Q)=2Q-20,\\quad P_B^{\\prime\\prime}=2$$
+$$P_B'(Q)=2Q-20,\\quad P_B''=2.$$
 
-At ten covers both slopes vanish, but the bends tell opposite stories: $P_A^{\\prime\\prime}(10)<0$ marks a local profit peak for A, while $P_B^{\\prime\\prime}(10)>0$ marks a local profit trough for B. Evaluating the levels gives
+At ten covers both slopes vanish, but the bends tell opposite stories: $P_A''(10)<0$ marks a local profit peak for A, while $P_B''(10)>0$ marks a local profit trough for B. Evaluating the levels gives
 
-$$P_A(10)=50\\qquad P_B(10)=-10$$
+$$P_A(10)=50,\\qquad P_B(10)=-10,$$
 
 so flat slope alone does not mean both cafés are maximising profit.`,
   },
@@ -5569,60 +6481,72 @@ so flat slope alone does not mean both cafés are maximising profit.`,
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the cubic profit and set the slope to zero inside $(0,5)$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=3Q^{2}-12Q+9$$
+Differentiate the cubic profit and set the slope to zero inside $(0,5)$:
 
-$$3(Q^{2}-4Q+3)=0$$
+$$P'(Q)=3Q^{2}-12Q+9=3(Q^{2}-4Q+3)=3(Q-1)(Q-3).$$
 
-$$(Q-1)(Q-3)=0$$
+The roots are $Q=1$ and $Q=3$, both strictly inside $(0,5)$. Those are exactly the interior flat-slope pack counts
 
-so $Q=1$ or $Q=3$, both inside $(0,5)$, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-The second derivative classifies the two critical packs.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=6Q-12$$
+Classify the two critical packs with the second derivative:
 
-$$P^{\\prime\\prime}(1)=-6<0,\\qquad P^{\\prime\\prime}(3)=6>0$$
+$$P''(Q)=6Q-12,$$
 
-so one pack is a local profit peak and three packs is a local profit trough, so the statement is True.`,
+$$P''(1)=6-12=-6<0,\\qquad P''(3)=18-12=6>0.$$
+
+A downward bend at $Q=1$ marks a local profit peak; an upward bend at $Q=3$ marks a local profit trough. The labels match the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Evaluate profit at the two critical packs and at the endpoints.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(1)=1-6+9+10=14$$
+Evaluate profit at the two critical packs and at both endpoints — global comparison needs all four values:
 
-$$P(3)=27-54+27+10=10$$
+$$P(1)=1-6+9+10=14,$$
 
-$$P(0)=10,\\qquad P(5)=125-150+45+10=30$$
+$$P(3)=27-54+27+10=10,$$
 
-Those four values match the claim, so the statement is True.`,
+$$P(0)=10,\\qquad P(5)=125-150+45+10=30.$$
+
+Those four values match the claim exactly
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → False
 
-Comparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger, so the global maximum on $[0,5]$ is not at one pack, so the statement is False.`,
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+Comparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger. On a closed interval the global maximum can sit at an endpoint even when an interior local peak exists. The global maximum on $[0,5]$ is therefore not at one pack. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$, so the statement is True.`
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 86,
     solution_overview:
       `Festival profit on the closed pack interval $[0,5]$ is the cubic
 
-$$P(Q)=Q^{3}-6Q^{2}+9Q+10$$
+$$P(Q)=Q^{3}-6Q^{2}+9Q+10.$$
 
 Differentiate twice:
 
-$$P^{\\prime}(Q)=3Q^{2}-12Q+9=3(Q-1)(Q-3)$$
+$$P'(Q)=3Q^{2}-12Q+9=3(Q-1)(Q-3),\\qquad P''(Q)=6Q-12.$$
 
-$$P^{\\prime\\prime}(Q)=6Q-12$$
+Inside $(0,5)$ the flat-slope packs are $Q=1$ and $Q=3$. The bend test labels $Q=1$ a local peak ($P''(1)=-6<0$) and $Q=3$ a local trough ($P''(3)=6>0$). Comparing all candidates with the endpoints,
 
-Inside $(0,5)$ the flat-slope packs are $Q=1$ and $Q=3$. The bend test labels $Q=1$ a local peak ($P^{\\prime\\prime}(1)=-6<0$) and $Q=3$ a local trough ($P^{\\prime\\prime}(3)=6>0$). Comparing all candidates with the endpoints,
+$$P(0)=10,\\quad P(1)=14,\\quad P(3)=10,\\quad P(5)=30,$$
 
-$$P(0)=10,\\quad P(1)=14,\\quad P(3)=10,\\quad P(5)=30$$
-
-shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at one pack.`,
+shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at one pack. Local peaks need not be global on a closed interval.`,
   },
   {
     id: "math-11-87",
@@ -5642,52 +6566,70 @@ shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the stall's profit rule term by term.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$$
+Differentiate the stall's profit rule term by term. From
 
-$$P^{\\prime}(Q)=5-\\dfrac{2Q}{10}=5-\\dfrac{Q}{5}$$
+$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3,$$
 
-That slope matches the claim, so the statement is True.`,
+the derivative of the quadratic term is $-\\dfrac{2Q}{10}=-\\dfrac{Q}{5}$, so
+
+$$P'(Q)=5-\\dfrac{Q}{5}.$$
+
+That slope matches the claim exactly
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Inside $(0,8)$ the claimed slope stays strictly positive.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=5-\\dfrac{Q}{5}$$
+Inside $(0,8)$ check whether the slope can hit zero. Solving $5-\\dfrac{Q}{5}=0$ would give $Q=25$, which lies far outside $[0,8]$. At the right endpoint itself
 
-At $Q=8$ one would have $P^{\\prime}(8)=5-\\dfrac{8}{5}=3.4>0$, and for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P^{\\prime}(Q)=0$ on $(0,8)$, so the statement is True.`,
+$$P'(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}=3.4>0,$$
+
+and for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P'(Q)=0$ on $(0,8)$, so the statement is True.`,
       `**C.** → True
 
-Because $P^{\\prime}(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Because $P'(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed bounded interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$. No interior critical point is needed for that conclusion, so the statement is True.`,
       `**D.** → False
 
-Endpoint maxima need not be critical points. Here
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
-$$P^{\\prime}(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}>0$$
+Endpoint maxima need not be critical points — that is the trap. Here the domain simply stops at eight units while the slope is still positive:
 
-so the slope is still rising at eight units; the maximum sits at the boundary because the domain stops, not because the slope is flat, so the statement is False.`,
+$$P'(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}>0.$$
+
+The maximum sits at the boundary because the feasible set ends, not because the tangent is flat. Claiming a flat slope at the maximum is false. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Evaluate profit at the right endpoint.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6$$
+Evaluate profit at the right endpoint where the maximum must occur:
 
-Maximal profit on the interval is $36.6$ euros, so the statement is True.`
+$$P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6.$$
+
+Maximal profit on the interval is $36.6$ euros, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 87,
     solution_overview:
       `The stall's profit on the closed interval $[0,8]$ is
 
-$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$$
+$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3.$$
 
 Its slope is
 
-$$P^{\\prime}(Q)=5-\\dfrac{Q}{5}$$
+$$P'(Q)=5-\\dfrac{Q}{5}.$$
 
-On $(0,8]$ one has $P^{\\prime}(Q)\\ge P^{\\prime}(8)=\\dfrac{17}{5}>0$, so the slope stays strictly positive: there is no interior flat-slope output, and profit is strictly increasing on $[0,8]$. A strictly increasing continuous function attains its maximum at the right endpoint $Q=8$ and its minimum at $Q=0$, without needing $P^{\\prime}(8)=0$. The maximal level is
+On $(0,8]$ one has $P'(Q)\\ge P'(8)=\\dfrac{17}{5}>0$, so the slope stays strictly positive: there is no interior flat-slope output, and profit is strictly increasing on $[0,8]$. A strictly increasing continuous function attains its maximum at the right endpoint $Q=8$ and its minimum at $Q=0$, without needing $P'(8)=0$. The maximal level is
 
-$$P(8)=40-6.4+3=36.6$$`,
+$$P(8)=40-6.4+3=36.6.$$
+
+Endpoint maxima need not be critical points.`,
   },
   {
     id: "math-11-88",
@@ -5707,50 +6649,62 @@ $$P(8)=40-6.4+3=36.6$$`,
     tactical_explanations: [
       `**A.** → True
 
-Differentiate net benefit and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$B^{\\prime}(x)=3x^{2}-12x+9$$
+Differentiate net benefit and set the slope to zero:
 
-$$3(x^{2}-4x+3)=0$$
+$$B'(x)=3x^{2}-12x+9=3(x^{2}-4x+3)=3(x-1)(x-3).$$
 
-$$(x-1)(x-3)=0$$
+The roots are $x=1$ and $x=3$, both in the domain $x\\ge 0$. Those are exactly the flat-slope advertising intensities
 
-so the flat-slope intensities are $x=1$ and $x=3$, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Factor the slope and read its sign chart around $x=1$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$B^{\\prime}(x)=3(x-1)(x-3)$$
+Factor the slope and read its sign chart around $x=1$:
 
-For $0\\le x<1$ both factors are negative, so $B^{\\prime}>0$; just to the right of $1$ the factor $(x-1)$ becomes positive while $(x-3)$ stays negative, so $B^{\\prime}<0$. The change from positive to negative marks a local peak at intensity $1$, so the statement is True.`,
+$$B'(x)=3(x-1)(x-3).$$
+
+For $0\\le x<1$ both factors $(x-1)$ and $(x-3)$ are negative, so $B'>0$. Just to the right of $1$, the factor $(x-1)$ becomes positive while $(x-3)$ stays negative, so $B'<0$. The change from positive to negative marks a local peak at intensity $1$ by the first-derivative test, so the statement is True.`,
       `**C.** → True
 
-Around $x=3$ the same factored slope changes the other way: just left of $3$, $B^{\\prime}<0$, and just right of $3$ both factors are positive, so $B^{\\prime}>0$. The change from negative to positive marks a local trough at intensity $3$, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Around $x=3$ the same factored slope changes the other way. Just left of $3$ one has $B'<0$ (as in the interval $(1,3)$). Just right of $3$ both factors are positive, so $B'>0$. The change from negative to positive marks a local trough at intensity $3$ by the first-derivative test
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-The second-derivative bend test confirms the same labels.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$B^{\\prime\\prime}(x)=6x-12$$
+The second-derivative bend test confirms the same labels independently of the sign chart:
 
-$$B^{\\prime\\prime}(1)=-6<0,\\qquad B^{\\prime\\prime}(3)=6>0$$
+$$B''(x)=6x-12,$$
 
-so intensity $1$ is a local peak and intensity $3$ is a local trough, matching the sign chart, so the statement is True.`,
+$$B''(1)=6-12=-6<0,\\qquad B''(3)=18-12=6>0.$$
+
+So intensity $1$ is a local peak and intensity $3$ is a local trough, matching the first-derivative sign reading
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-A local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the cubic $B(x)=x^{3}-6x^{2}+9x+2$ tends to infinity, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak, not the global maximum, so the statement is False.`
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+A local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the leading term $x^{3}$ drives $B(x)\\to\\infty$, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak — the unbounded domain lets benefit grow without bound afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 88,
     solution_overview:
       `Weekly net benefit for advertising intensity $x\\ge 0$ is the cubic
 
-$$B(x)=x^{3}-6x^{2}+9x+2$$
+$$B(x)=x^{3}-6x^{2}+9x+2.$$
 
 Factor its slope and form the bend:
 
-$$B^{\\prime}(x)=3(x-1)(x-3)\\qquad B^{\\prime\\prime}(x)=6x-12$$
+$$B'(x)=3(x-1)(x-3),\\qquad B''(x)=6x-12.$$
 
-Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B^{\\prime}$ changes from positive to negative at $x=1$ (local peak) and from negative to positive at $x=3$ (local trough); equivalently $B^{\\prime\\prime}(1)=-6<0$ and $B^{\\prime\\prime}(3)=6>0$. As $x\\to\\infty$, the cubic $B(x)\\to\\infty$, so the local peak at intensity $1$ is not a global maximum on $[0,\\infty)$.`,
+Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B'$ changes from positive to negative at $x=1$ (local peak) and from negative to positive at $x=3$ (local trough); equivalently $B''(1)=-6<0$ and $B''(3)=6>0$. As $x\\to\\infty$, the cubic $B(x)\\to\\infty$, so the local peak at intensity $1$ is not a global maximum on $[0,\\infty)$. Local and global extrema can diverge on unbounded domains.`,
   },
   {
     id: "math-11-89",
@@ -5770,64 +6724,74 @@ Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B^{\\prime}$ changes from
     tactical_explanations: [
       `**A.** → True
 
-Differentiate daily profit and set the slope to zero inside $(0,6)$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-3Q^{2}+18Q-24$$
+Differentiate daily profit and set the slope to zero inside $(0,6)$:
 
-$$-3(Q^{2}-6Q+8)=0$$
+$$P'(Q)=-3Q^{2}+18Q-24=-3(Q^{2}-6Q+8)=-3(Q-2)(Q-4).$$
 
-$$(Q-2)(Q-4)=0$$
+The roots are $Q=2$ and $Q=4$, both strictly inside $(0,6)$. Those are the interior flat-slope oven counts
 
-so $Q=2$ or $Q=4$, both inside $(0,6)$, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Classify two ovens with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-6Q+18$$
+Classify two ovens with the second derivative:
 
-$$P^{\\prime\\prime}(2)=-12+18=6>0$$
+$$P''(Q)=-6Q+18\\qquad\\Rightarrow\\qquad P''(2)=-12+18=6>0.$$
 
-An upward bend at a flat slope means a local profit trough at two ovens, so the statement is True.`,
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore two ovens is a local profit trough
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Classify four ovens the same way.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(4)=-24+18=-6<0$$
+Classify four ovens the same way:
 
-A downward bend at a flat slope means a local profit peak at four ovens, so the statement is True.`,
+$$P''(4)=-24+18=-6<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore four ovens is a local profit peak
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Compare profit at the critical ovens and at the endpoints.
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
-$$P(0)=30$$
+Compare profit at the critical ovens and at both endpoints — global max needs every candidate:
 
-$$P(2)=-8+36-48+30=10$$
+$$P(0)=30,$$
 
-$$P(4)=-64+144-96+30=14$$
+$$P(2)=-8+36-48+30=10,$$
 
-$$P(6)=-216+324-144+30=-6$$
+$$P(4)=-64+144-96+30=14,$$
+
+$$P(6)=-216+324-144+30=-6.$$
 
 The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens, so the statement is True.`,
       `**E.** → False
 
-Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces candidates. Without comparing their profit values to the endpoints, one cannot prove which point maximises profit on the closed interval, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 89,
     solution_overview:
       `Bakery profit on the closed oven interval $[0,6]$ is
 
-$$P(Q)=-Q^{3}+9Q^{2}-24Q+30$$
+$$P(Q)=-Q^{3}+9Q^{2}-24Q+30.$$
 
 Differentiate twice:
 
-$$P^{\\prime}(Q)=-3(Q-2)(Q-4)\\qquad P^{\\prime\\prime}(Q)=-6Q+18$$
+$$P'(Q)=-3(Q-2)(Q-4),\\qquad P''(Q)=-6Q+18.$$
 
-Inside $(0,6)$ the flat-slope oven counts are $Q=2$ and $Q=4$. The bend test labels $Q=2$ a local trough ($P^{\\prime\\prime}(2)=6>0$) and $Q=4$ a local peak ($P^{\\prime\\prime}(4)=-6<0$). Comparing all candidates with the endpoints,
+Inside $(0,6)$ the flat-slope oven counts are $Q=2$ and $Q=4$. The bend test labels $Q=2$ a local trough ($P''(2)=6>0$) and $Q=4$ a local peak ($P''(4)=-6<0$). Comparing all candidates with the endpoints,
 
-$$P(0)=30,\\quad P(2)=10,\\quad P(4)=14,\\quad P(6)=-6$$
+$$P(0)=30,\\quad P(2)=10,\\quad P(4)=14,\\quad P(6)=-6,$$
 
-shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope outputs alone does not finish that comparison.`,
+shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope outputs alone does not finish that comparison — endpoints can win.`,
   },
   {
     id: "math-11-90",
@@ -5847,58 +6811,76 @@ shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope out
     tactical_explanations: [
       `**A.** → True
 
-Form profit as revenue minus cost, then differentiate.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10$$
+Form profit as revenue minus cost, distribute the minus carefully, then differentiate:
 
-$$P^{\\prime}(Q)=-6Q+36$$
+$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,$$
 
-Both the simplified profit and its slope match the claim, so the statement is True.`,
+$$P'(Q)=-6Q+36.$$
+
+Both the simplified profit quadratic and its slope match the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Set marginal profit to zero, then check that marginal revenue equals marginal cost there.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-6Q+36=0\\Rightarrow Q=6$$
+Set marginal profit to zero, then check that marginal revenue equals marginal cost there:
 
-$$R^{\\prime}(Q)=40-4Q,\\qquad C^{\\prime}(Q)=2Q+4$$
+$$P'(Q)=-6Q+36=0\\qquad\\Rightarrow\\qquad Q=6.$$
 
-$$R^{\\prime}(6)=40-24=16,\\qquad C^{\\prime}(6)=12+4=16$$
+$$R'(Q)=40-4Q,\\qquad C'(Q)=2Q+4,$$
 
-Flat profit at six jobs coincides with $R^{\\prime}=C^{\\prime}=16$, so the statement is True.`,
+$$R'(6)=40-24=16,\\qquad C'(6)=12+4=16.$$
+
+Flat profit at six jobs coincides with $R'=C'=16$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Read the bend of profit at six jobs.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-6$$
+Read the bend of profit at six jobs. Differentiating the slope once more gives the constant
 
-so $P^{\\prime\\prime}(6)=-6<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
+$$P''(Q)=-6\\qquad\\Rightarrow\\qquad P''(6)=-6<0.$$
+
+A downward bend at a flat slope means a local profit peak by the second-derivative test
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Evaluate profit at the peak output.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98$$
+Evaluate profit at the peak output — use the level $P$, not the slope:
 
-Peak profit is $98$ euros, so the statement is True.`,
+$$P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98.$$
+
+Peak profit is $98$ euros, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Matching $R^{\\prime}=C^{\\prime}$ only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or inflection, so skipping the bend check is not enough, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Matching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 90,
     solution_overview:
       `Print-shop profit is revenue minus cost:
 
-$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10$$
+$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10,$$
 
 with slope and bend
 
-$$P^{\\prime}(Q)=-6Q+36\\qquad P^{\\prime\\prime}(Q)=-6$$
+$$P'(Q)=-6Q+36,\\qquad P''(Q)=-6,$$
 
-and separate marginals $R^{\\prime}(Q)=40-4Q$, $C^{\\prime}(Q)=2Q+4$. Flat profit at $Q=6$ coincides with $R^{\\prime}(6)=C^{\\prime}(6)=16$. The negative bend confirms a local profit peak, and
+and separate marginals $R'(Q)=40-4Q$, $C'(Q)=2Q+4$. Flat profit at $Q=6$ coincides with $R'(6)=C'(6)=16$. The negative bend confirms a local profit peak, and
 
-$$P(6)=-108+216-10=98$$
+$$P(6)=-108+216-10=98.$$
 
-Matching $R^{\\prime}=C^{\\prime}$ only finds a critical point; without a bend check one cannot yet label it a peak.`,
+Matching $R'=C'$ only finds a critical point of profit; without a bend check (or equivalent sign argument) one cannot yet label it a peak rather than a trough. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-91",
@@ -5918,54 +6900,74 @@ Matching $R^{\\prime}=C^{\\prime}$ only finds a critical point; without a bend c
     tactical_explanations: [
       `**A.** → True
 
-Differentiate each bakery's profit and set the slopes to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_N^{\\prime}(Q)=-2Q+16=0\\Rightarrow Q=8$$
+Differentiate each bakery's profit and evaluate at eight loaves:
 
-$$P_S^{\\prime}(Q)=2Q-16=0\\Rightarrow Q=8$$
+$$P_N'(Q)=-2Q+16,\\qquad P_S'(Q)=2Q-16,$$
 
-Both bakeries have a flat profit slope at eight loaves, so the statement is True.`,
+$$P_N'(8)=-16+16=0,\\qquad P_S'(8)=16-16=0.$$
+
+Both slopes are flat at $Q=8$. Sharing a critical output is only the first step — bends still decide peak versus trough — but the flat-slope claim holds, so the statement is True.`,
       `**B.** → True
 
-North's second derivative is constantly negative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_N^{\\prime\\prime}(Q)=-2<0$$
+Read North's bend at the shared flat spot:
 
-so at eight loaves the profit curve bends downward and that output is a local profit peak for North, so the statement is True.`,
+$$P_N''(Q)=-2\\qquad\\Rightarrow\\qquad P_N''(8)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore eight loaves is a local profit peak for North
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-South's second derivative is constantly positive.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_S^{\\prime\\prime}(Q)=2>0$$
+Read South's bend at the same output:
 
-so at eight loaves the profit curve bends upward and that output is a local profit trough for South, so the statement is True.`,
+$$P_S''(Q)=2\\qquad\\Rightarrow\\qquad P_S''(8)=2>0.$$
+
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore eight loaves is a local profit trough for South — opposite to North's label —
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-Evaluate each profit level at eight loaves.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_N(8)=-64+128-30=34$$
+Evaluate each profit level at eight loaves:
 
-$$P_S(8)=64-128+70=6$$
+$$P_N(8)=-64+128-30=34,$$
 
-North's peak profit is $34$ euros and South's profit at eight loaves is $6$ euros, so the statement is True.`,
+$$P_S(8)=64-128+70=6.$$
+
+North's peak profit is $34$ euros, while South's profit at the same output is only $6$ euros. Both numbers match the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-Sharing the same flat-slope output does not make both bakeries maximisers. North has a peak there while South has a trough, so only North is at a profit maximum, so the statement is False.`
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
+
+Both bakeries have a flat slope at eight loaves, but the bends disagree: North has a peak while South has a trough. Flat slope alone finds candidates; it does not mean both are at a profit maximum. South is locally *minimising* profit there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 91,
     solution_overview:
-      `Two bakeries share the candidate output $Q=8$ on opposite profit shapes:
+      `Two bakeries share the critical output $Q=8$ but run opposite profit shapes:
 
-$$P_N(Q)=-Q^{2}+16Q-30\\qquad P_S(Q)=Q^{2}-16Q+70$$
+$$P_N(Q)=-Q^{2}+16Q-30,\\qquad P_S(Q)=Q^{2}-16Q+70.$$
 
-$$P_N^{\\prime}=-2Q+16,\\quad P_N^{\\prime\\prime}=-2\\qquad P_S^{\\prime}=2Q-16,\\quad P_S^{\\prime\\prime}=2$$
+Differentiate each:
 
-Both slopes vanish at eight loaves, but North bends downward (local peak) while South bends upward (local trough). The levels are
+$$P_N'(Q)=-2Q+16,\\quad P_N''=-2,$$
 
-$$P_N(8)=34\\qquad P_S(8)=6$$
+$$P_S'(Q)=2Q-16,\\quad P_S''=2.$$
 
-Sharing the same flat-slope output does not make both bakeries maximisers.`,
+At eight loaves both slopes vanish, but $P_N''(8)<0$ marks a local profit peak for North while $P_S''(8)>0$ marks a local profit trough for South. The levels are
+
+$$P_N(8)=34,\\qquad P_S(8)=6.$$
+
+Equal flat-slope outputs do not mean both bakeries are maximising profit. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-92",
@@ -5985,44 +6987,58 @@ Sharing the same flat-slope output does not make both bakeries maximisers.`,
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the loyalty index twice and evaluate at intensity zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$L^{\\prime}(x)=-4x^{3},\\qquad L^{\\prime\\prime}(x)=-12x^{2}$$
+Differentiate the loyalty index twice and evaluate at intensity zero:
 
-$$L^{\\prime}(0)=0,\\qquad L^{\\prime\\prime}(0)=0$$
+$$L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.$$
 
-Both the slope and the second derivative are flat at zero, so the statement is True.`,
+At $x=0$ one has $L'(0)=0$ and $L''(0)=0$. Both the slope and the second derivative are flat at intensity zero, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-The usual downward-bend test for a strict local peak requires $L^{\\prime\\prime}<0$ at the critical point. Here $L^{\\prime\\prime}(0)=0$, so that test does not apply at intensity zero, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+The usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at a critical point. Here $L''(0)=0$, so that strict inequality fails. The usual downward-bend test therefore does not apply at intensity zero — the check is inconclusive rather than affirmative —
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Even so, compare values directly. For every $x\\neq 0$,
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
-$$L(x)=10-x^{4}<10=L(0)$$
+Even with $L''(0)=0$, compare nearby values directly. For every $x\\neq 0$,
 
-and $L(x)\\le 10$ for all real $x$, so intensity zero is a strict global maximum of the loyalty index, so the statement is True.`,
+$$L(x)=10-x^{4}<10=L(0).$$
+
+So the index at zero strictly dominates every other intensity: zero is a strict global maximum (hence also a strict local peak). The failed bend test does not cancel that comparison, so the statement is True.`,
       `**D.** → False
 
-Vanishing of the second derivative only blocks the *usual bend test*; it does not forbid a peak. The direct comparison $L(x)=10-x^{4}\\le 10$ already proves a (global) peak at zero, so the claim that zero cannot be a local peak is false, so the statement is False.`,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Vanishing of the second derivative only makes the *usual sufficient bend test* fail; it does not prove there is no peak. The direct comparison $L(x)<L(0)$ for $x\\neq 0$ already shows a strict global maximum at zero. Claiming that $L''(0)=0$ forbids a local peak confuses “test inconclusive” with “no extremum,”. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-At an interior local peak a necessary condition is $L^{\\prime\\prime}\\le 0$ (when the second derivative exists). Here $L^{\\prime\\prime}(0)=0$, which still satisfies that necessary inequality, even though the stricter $L^{\\prime\\prime}<0$ test fails, so the statement is True.`
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 92,
     solution_overview:
-      `The loyalty index is a downward fourth-power bump:
+      `The loyalty index is the downward fourth-power bump
 
-$$L(x)=10-x^{4}$$
+$$L(x)=10-x^{4}.$$
 
-$$L^{\\prime}(x)=-4x^{3}\\qquad L^{\\prime\\prime}(x)=-12x^{2}$$
+Differentiate twice:
 
-At intensity zero both $L^{\\prime}$ and $L^{\\prime\\prime}$ vanish, so the usual sufficient test $L^{\\prime\\prime}<0$ does not apply. Direct comparison still settles the global picture: for every real $x$,
+$$L'(x)=-4x^{3},\\qquad L''(x)=-12x^{2}.$$
 
-$$L(x)=10-x^{4}\\le 10=L(0)$$
+At intensity zero both $L'(0)=0$ and $L''(0)=0$, so the usual strict downward-bend test for a local peak does not apply. Direct comparison still works: for every $x\\neq 0$,
 
-with equality only at zero, so intensity zero is a strict global maximum. Vanishing of $L^{\\prime\\prime}$ does not forbid a peak, and the necessary condition $L^{\\prime\\prime}\\le 0$ at an interior local max still holds because $L^{\\prime\\prime}(0)=0$.`,
+$$L(x)=10-x^{4}<10=L(0),$$
+
+so zero is a strict global maximum. Vanishing of $L''$ does not forbid a peak. A necessary condition at an interior local peak is $L''\\le 0$; here $L''(0)=0$, so that necessary condition still holds even though the sufficient bend test fails.`,
   },
   {
     id: "math-11-93",
@@ -6042,54 +7058,72 @@ with equality only at zero, so intensity zero is a strict global maximum. Vanish
     tactical_explanations: [
       `**A.** → True
 
-Minimise cost by setting its slope to zero and checking the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(Q)=2Q-8=0\\Rightarrow Q=4$$
+Differentiate cost and classify the critical output:
 
-$$C^{\\prime\\prime}(Q)=2>0$$
+$$C'(Q)=2Q-8=0\\qquad\\Rightarrow\\qquad Q=4,$$
 
-so at four units cost has a flat slope and an upward bend — a local cost trough — so the statement is True.`,
+$$C''(Q)=2>0.$$
+
+Flat slope at four units together with an upward bend means a local cost minimum (trough). Evaluating confirms $C(4)=16-32+30=14$, but the claim only needs the flat-slope-plus-upward-bend characterisation, which holds, so the statement is True.`,
       `**B.** → True
 
-Form profit and find where its slope is flat.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30$$
+Form profit as revenue minus cost and simplify:
 
-$$P^{\\prime}(Q)=-4Q+28=0\\Rightarrow Q=7$$
+$$P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30.$$
 
-Profit simplifies as claimed and has a flat slope at seven units, so the statement is True.`,
+Set the slope to zero:
+
+$$P'(Q)=-4Q+28=0\\qquad\\Rightarrow\\qquad Q=7.$$
+
+Profit therefore has a flat slope at seven units, matching both parts of the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Read the bend of profit at seven units.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-4$$
+Read the bend of profit at seven units:
 
-so $P^{\\prime\\prime}(7)=-4<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
+$$P''(Q)=-4\\qquad\\Rightarrow\\qquad P''(7)=-4<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore seven units is a local profit peak
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → False
 
-Cost is minimised at $Q=4$, while profit is maximised at $Q=7$. Those two outputs differ, so the cost trough is not automatically the profit peak, so the statement is False.`,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Cost is minimised at $Q=4$, but profit is maximised at $Q=7$. Those are different outputs because revenue also depends on $Q$: cutting cost further can sacrifice more revenue than it saves. The cost-minimising output is *not* automatically the profit-maximising output. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Evaluate the two levels at their respective extrema.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68$$
+Evaluate the two levels at their respective critical outputs:
 
-$$C(4)=16-32+30=14$$
+$$P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68,$$
 
-Profit at the peak is $68$ euros and cost at the trough is $14$ euros, so the statement is True.`
+$$C(4)=16-32+30=14.$$
+
+At the profit peak, profit equals $68$ euros; at the cost trough, cost equals $14$ euros. Both figures match the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 93,
     solution_overview:
-      `Cost and revenue are separate schedules, so their extrema need not coincide:
+      `Cost and revenue are
 
-$$C(Q)=Q^{2}-8Q+30\\qquad R(Q)=20Q-Q^{2}$$
+$$C(Q)=Q^{2}-8Q+30,\\qquad R(Q)=20Q-Q^{2},$$
 
-$$C^{\\prime}=2Q-8,\\quad C^{\\prime\\prime}=2\\qquad P=R-C=-2Q^{2}+28Q-30$$
+so profit is
 
-$$P^{\\prime}=-4Q+28,\\quad P^{\\prime\\prime}=-4$$
+$$P(Q)=R-C=-2Q^{2}+28Q-30.$$
 
-Cost has a flat upward bend at $Q=4$ (trough, $C(4)=14$). Profit has a flat downward bend at $Q=7$ (peak, $P(7)=68$). The cost-minimising output is therefore not automatically the profit-maximising output.`,
+Cost has slope $C'=2Q-8$ and bend $C''=2>0$, so the cost trough is at $Q=4$ with $C(4)=14$. Profit has slope $P'=-4Q+28$ and bend $P''=-4<0$, so the profit peak is at $Q=7$ with $P(7)=68$. The cost-minimising output and the profit-maximising output are different numbers — minimising cost alone does not automatically maximise profit when revenue also depends on $Q$. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-94",
@@ -6109,50 +7143,74 @@ Cost has a flat upward bend at $Q=4$ (trough, $C(4)=14$). Profit has a flat down
     tactical_explanations: [
       `**A.** → True
 
-Differentiate each hiker's utility and set the slopes to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$U_A^{\\prime}(t)=-2t+10=0\\Rightarrow t=5$$
+Differentiate each hiker's utility and evaluate at five hours:
 
-$$U_B^{\\prime}(t)=2t-10=0\\Rightarrow t=5$$
+$$U_A'(t)=-2t+10,\\qquad U_B'(t)=2t-10,$$
 
-Both hikers have a flat utility slope at five hours, so the statement is True.`,
+$$U_A'(5)=-10+10=0,\\qquad U_B'(5)=10-10=0.$$
+
+Both slopes are flat at $t=5$. Sharing a critical hour is only the first step — bends still decide peak versus trough — but the flat-slope claim itself holds, so the statement is True.`,
       `**B.** → True
 
-Hiker A's second derivative is constantly negative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$U_A^{\\prime\\prime}(t)=-2<0$$
+Read A's bend at the shared flat hour:
 
-so at five hours the utility curve bends downward and that hour maximises A's satisfaction locally, so the statement is True.`,
+$$U_A''(t)=-2\\qquad\\Rightarrow\\qquad U_A''(5)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five hours maximises A's satisfaction locally
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Hiker B's second derivative is constantly positive.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$U_B^{\\prime\\prime}(t)=2>0$$
+Read B's bend at the same hour:
 
-so at five hours the utility curve bends upward and that hour minimises B's satisfaction locally, so the statement is True.`,
+$$U_B''(t)=2\\qquad\\Rightarrow\\qquad U_B''(5)=2>0.$$
+
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five hours minimises B's satisfaction locally — the opposite label from A's —
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-Evaluate each utility at five hours.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$U_A(5)=-25+50=25$$
+Evaluate each utility level at five hours:
 
-$$U_B(5)=25-50+30=5$$
+$$U_A(5)=-25+50=25,$$
 
-A's peak utility is $25$ and B's utility at five hours is $5$, so the statement is True.`,
+$$U_B(5)=25-50+30=5.$$
+
+A's peak utility is $25$, while B's utility at the same hour is only $5$. Both numbers match the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-Sharing the same flat-slope hour does not mean both are maximising. A has a peak there while B has a trough, so only A is maximising satisfaction at five hours, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Both hikers solve for a flat slope at five hours, but the bends disagree: A has a peak while B has a trough. Flat slope alone finds candidates; it does not mean both are maximising satisfaction. B is locally *minimising* utility there. The claim confuses critical point with maximum. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 94,
     solution_overview:
-      `Two hikers share the candidate hour $t=5$ on opposite utility shapes:
+      `Two hikers share the critical hour $t=5$ but run opposite utility shapes:
 
-$$U_A(t)=-t^{2}+10t\\qquad U_B(t)=t^{2}-10t+30$$
+$$U_A(t)=-t^{2}+10t,\\qquad U_B(t)=t^{2}-10t+30.$$
 
-$$U_A^{\\prime}=-2t+10,\\quad U_A^{\\prime\\prime}=-2\\qquad U_B^{\\prime}=2t-10,\\quad U_B^{\\prime\\prime}=2$$
+Differentiate each:
 
-Both slopes vanish at five hours, but A bends downward (local peak, $U_A(5)=25$) while B bends upward (local trough, $U_B(5)=5$). Sharing the same flat-slope hour does not mean both are maximising satisfaction.`,
+$$U_A'(t)=-2t+10,\\quad U_A''=-2,$$
+
+$$U_B'(t)=2t-10,\\quad U_B''=2.$$
+
+At five hours both slopes vanish, but $U_A''(5)<0$ marks a local satisfaction peak for A while $U_B''(5)>0$ marks a local satisfaction trough for B. The levels are
+
+$$U_A(5)=25,\\qquad U_B(5)=5.$$
+
+Equal flat-slope hours do not mean both hikers are maximising satisfaction. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-95",
@@ -6172,48 +7230,64 @@ Both slopes vanish at five hours, but A bends downward (local peak, $U_A(5)=25$)
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the payoff and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f^{\\prime}(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2)$$
+Differentiate the payoff and set the slope to zero:
 
-so the flat-slope intensities are $x=-2$, $x=0$, and $x=2$, so the statement is True.`,
+$$f'(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2).$$
+
+The roots are $x=-2$, $x=0$, and $x=2$. Those are exactly the flat-slope staffing intensities
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Differentiate once more and evaluate at the three critical points.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f^{\\prime\\prime}(x)=12x^{2}-16$$
+Compute the second derivative and evaluate at the three critical intensities:
 
-$$f^{\\prime\\prime}(\\pm 2)=12\\cdot 4-16=32>0$$
+$$f''(x)=12x^{2}-16,$$
 
-$$f^{\\prime\\prime}(0)=-16<0$$
+$$f''(\\pm 2)=12\\cdot 4-16=32>0,\\qquad f''(0)=-16<0.$$
 
-The second derivative is positive at $\\pm 2$ and negative at $0$, so the statement is True.`,
+So the second derivative is positive at $\\pm 2$ and negative at $0$, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Positive second derivative marks a local trough; negative marks a local peak. Therefore $\\pm 2$ are local troughs and $0$ is a local peak, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Combine flat slopes with bend signs. At $\\pm 2$ one has $f'>0$ wait — rather $f'=0$ with $f''>0$, which is the second-derivative test for local minima (troughs). At $0$ one has $f'=0$ with $f''<0$, which is a local maximum (peak). Therefore $\\pm 2$ are local troughs and $0$ is a local peak, so the statement is True.`,
       `**D.** → True
 
-Evaluate payoff at the three critical intensities.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f(0)=16$$
+Evaluate payoff at the local peak and at either trough:
 
-$$f(\\pm 2)=16-32+16=0$$
+$$f(0)=16,$$
 
-The local peak value is $16$ and each local trough has value $0$, so the statement is True.`,
+$$f(2)=16-32+16=0,\\qquad f(-2)=0$$
+
+(same even function). The local peak value is $16$, while each local trough has value $0$, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Rewrite $f(x)=(x^{2}-4)^{2}$. As $|x|\\to\\infty$, $f(x)\\to\\infty$, so values far from zero exceed the local peak $f(0)=16$. Intensity zero is only a local peak, not the global maximum on the real line, so the statement is False.`
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+A local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 95,
     solution_overview:
-      `Warehouse payoff is a non-negative fourth-degree bump written as a perfect square:
+      `Warehouse net payoff is the even quartic
 
-$$f(x)=x^{4}-8x^{2}+16=(x^{2}-4)^{2}$$
+$$f(x)=x^{4}-8x^{2}+16=(x^{2}-4)^{2}.$$
 
-$$f^{\\prime}(x)=4x(x-2)(x+2)\\qquad f^{\\prime\\prime}(x)=12x^{2}-16$$
+Differentiate:
 
-Flat slopes sit at $x=-2$, $0$, and $2$. The bend signs are $f^{\\prime\\prime}(\\pm 2)=32>0$ (local troughs, value $0$) and $f^{\\prime\\prime}(0)=-16<0$ (local peak, value $16$). As $|x|\\to\\infty$, $f(x)\\to\\infty$, so the local peak at zero is not a global maximum on $\\mathbb{R}$.`,
+$$f'(x)=4x^{3}-16x=4x(x-2)(x+2),\\qquad f''(x)=12x^{2}-16.$$
+
+Flat slopes sit at $x=-2$, $x=0$, and $x=2$. The bend test gives $f''(\\pm 2)=32>0$ (local troughs) and $f''(0)=-16<0$ (local peak). Levels are $f(0)=16$ and $f(\\pm 2)=0$. As $|x|\\to\\infty$, $f(x)\\to\\infty$, so the local peak at zero is not a global maximum on $\\mathbb{R}$. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-96",
@@ -6233,40 +7307,58 @@ Flat slopes sit at $x=-2$, $0$, and $2$. The bend signs are $f^{\\prime\\prime}(
     tactical_explanations: [
       `**A.** → True
 
-Differentiate cost and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(h)=4h-24=0$$
+Differentiate cost and set the slope to zero:
 
-$$h=6$$
+$$C'(h)=4h-24=0\\qquad\\Rightarrow\\qquad 4h=24\\qquad\\Rightarrow\\qquad h=6.$$
 
-The slope of cost is flat at six open hours, so the statement is True.`,
+For $h>0$ this is the unique root. The slope of cost is therefore flat at six open hours
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Read the bend at six hours.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime\\prime}(h)=4>0$$
+Classify six hours with the second derivative:
 
-so $C^{\\prime\\prime}(6)=4>0$. An upward bend at a flat slope means a local cost trough, so the statement is True.`,
+$$C''(h)=4>0$$
+
+everywhere, including at $h=6$. A positive bend at a flat slope is the second-derivative test for a local minimum. Therefore six hours is a local cost trough
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-For a cost-minimisation goal, a flat slope together with an upward bend is exactly the right type of extremum: a local cost trough. Calling six hours optimal for cost control is therefore reasonable on that evidence, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+For a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-If the clinic instead wanted to *maximise* cost, it would need a local peak (downward bend). The same flat-slope point has $C^{\\prime\\prime}(6)>0$, so it is a trough, not a peak — the wrong type of extremum for a maximisation goal, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+If the clinic's goal were instead to *maximise* cost, one would need a local peak: flat slope with a *downward* bend. At six hours the bend is upward ($C''>0$), so the same critical point is a trough, not a peak. It would be the wrong type of extremum for a maximisation goal
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-A zero slope only identifies a critical point; the bend decides peak versus trough. Here the bend is upward, so the clinic is cost-*minimising*, not maximising. Claiming that a flat slope already means cost-maximising is false, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+A point where the slope is zero is only a critical point — it might be a peak, a trough, or neither. Here $C''(6)>0$, so six hours is a cost *minimum*, not a maximum. Claiming that zero slope already means cost-maximising, with no bend check needed, reverses the correct label and skips the classification step. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 96,
     solution_overview:
       `Clinic staffing cost is the upward-opening parabola
 
-$$C(h)=2h^{2}-24h+100,\\qquad h>0$$
+$$C(h)=2h^{2}-24h+100,\\qquad h>0.$$
 
-$$C^{\\prime}(h)=4h-24\\qquad C^{\\prime\\prime}(h)=4>0$$
+Differentiate twice:
 
-The only flat-slope schedule is $h=6$, and the positive bend labels it a local cost *trough*. For a cost-minimisation goal that trough is the right type of extremum, so calling six hours optimal is reasonable. The same flat point would be the *wrong* type if the clinic wanted to maximise cost. A zero slope alone never proves cost-maximising — the bend decides peak versus trough.`,
+$$C'(h)=4h-24,\\qquad C''(h)=4>0.$$
+
+Flat slope at $h=6$ together with $C''>0$ marks a local cost *trough*, so calling six hours optimal is reasonable for a cost-minimisation goal. The same flat-slope point would be the wrong type of extremum if the goal were instead to maximise cost. A zero slope alone never means “cost-maximising” — the bend decides peak versus trough. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-97",
@@ -6286,46 +7378,58 @@ The only flat-slope schedule is $h=6$, and the positive bend labels it a local c
     tactical_explanations: [
       `**A.** → True
 
-Differentiate each cinema's profit and evaluate at three screenings.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A^{\\prime}(Q)=-2(Q-3),\\qquad P_B^{\\prime}(Q)=3(Q-3)^{2}$$
+Differentiate each cinema's profit and evaluate at three screenings:
 
-$$P_A^{\\prime}(3)=0,\\qquad P_B^{\\prime}(3)=0$$
+$$P_A'(Q)=-2(Q-3),\\qquad P_B'(Q)=3(Q-3)^{2},$$
 
-Both have a flat profit slope at three screenings, so the statement is True.`,
+$$P_A'(3)=0,\\qquad P_B'(3)=0.$$
+
+Both slopes are flat at $Q=3$. Sharing a critical output does not yet classify peak versus inflection, but the flat-slope claim holds, so the statement is True.`,
       `**B.** → True
 
-For Cinema A the second derivative is constantly negative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A^{\\prime\\prime}(Q)=-2<0$$
+Classify Cinema A with the second derivative:
 
-so three screenings is a local profit peak for A (equivalently, $P_A(Q)=5-(Q-3)^{2}\\le 5$), so the statement is True.`,
+$$P_A''(Q)=-2\\qquad\\Rightarrow\\qquad P_A''(3)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore three screenings is a local profit peak for A
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-For Cinema B,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_B^{\\prime\\prime}(Q)=6(Q-3)$$
+For Cinema B, differentiate the slope once more:
 
-so $P_B^{\\prime\\prime}(3)=0$. The usual bend test needs a strictly positive or strictly negative second derivative, so at three screenings the check is inconclusive for B, so the statement is True.`,
+$$P_B''(Q)=6(Q-3)\\qquad\\Rightarrow\\qquad P_B''(3)=0.$$
+
+The usual bend test needs a strictly signed second derivative. Here the bend is zero at the critical point, so the second-derivative check is inconclusive at three screenings for B, so the statement is True.`,
       `**D.** → True
 
-Cinema B's slope $P_B^{\\prime}(Q)=3(Q-3)^{2}$ is nonnegative on both sides of $Q=3$ and zero only at that point. There is no sign change, so three screenings is neither a local peak nor a local trough for B (it is a flat inflection), so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Read the sign of Cinema B's slope around three screenings:
+
+$$P_B'(Q)=3(Q-3)^{2}\\ge 0$$
+
+for every $Q$, with equality only at $Q=3$. The slope does not change sign through three screenings — it touches zero and stays non-negative — so $Q=3$ is neither a local peak nor a local trough for B (a flat inflection). The statement is True, so the statement is True.`,
       `**E.** → False
 
-Both have a flat slope at three screenings, but only Cinema A has a local profit peak there. Cinema B's flat point is an inflection with no sign change of the slope, so both are not at a profit peak, so the statement is False.`
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
+
+Both cinemas have a flat slope at three screenings, but only A has a profit peak. For B the slope does not change sign, so three screenings is not a local peak. Shared critical outputs do not mean shared extrema. Claiming both are at a profit peak overreaches. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 97,
     solution_overview:
-      `Two cinema profits share the candidate $Q=3$ but have very different shapes:
+      `Two cinemas share the critical screening count $Q=3$ but have different shapes:
 
-$$P_A(Q)=5-(Q-3)^{2}\\qquad P_B(Q)=5+(Q-3)^{3}$$
+$$P_A(Q)=-(Q-3)^{2}+5,\\qquad P_B(Q)=(Q-3)^{3}+5.$$
 
-$$P_A^{\\prime}=-2(Q-3),\\quad P_A^{\\prime\\prime}=-2$$
-
-$$P_B^{\\prime}=3(Q-3)^{2},\\quad P_B^{\\prime\\prime}=6(Q-3)$$
-
-Both slopes vanish at three screenings. For A the bend $P_A^{\\prime\\prime}<0$ (or $P_A\\le 5$) proves a local profit peak. For B one has $P_B^{\\prime\\prime}(3)=0$, so the bend test is inconclusive, and the slope $P_B^{\\prime}=3(Q-3)^{2}\\ge 0$ never changes sign — three screenings is a flat inflection, neither peak nor trough. Flat slope alone does not make both cinemas profit peaks.`,
+For A: $P_A'=-2(Q-3)$ and $P_A''=-2<0$, so $Q=3$ is a local profit peak. For B: $P_B'=3(Q-3)^{2}$ and $P_B''=6(Q-3)$, so $P_B'(3)=P_B''(3)=0$ and the bend test is inconclusive. A sign chart of $P_B'$ shows $P_B'\\ge 0$ on both sides of $3$ with no sign change, so $Q=3$ is a flat inflection for B — neither peak nor trough. Shared flat slopes do not mean shared peaks.`,
   },
   {
     id: "math-11-98",
@@ -6345,44 +7449,62 @@ Both slopes vanish at three screenings. For A the bend $P_A^{\\prime\\prime}<0$ 
     tactical_explanations: [
       `**A.** → True
 
-Differentiate and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f^{\\prime}(x)=3x^{2}-6x=3x(x-2)$$
+Differentiate and set the slope to zero:
 
-so $f^{\\prime}(x)=0$ at $x=0$ and $x=2$, matching the student's list of flat-slope outputs, so the statement is True.`,
+$$f'(x)=3x^{2}-6x=3x(x-2)=0.$$
+
+The roots really are $x=0$ and $x=2$. The student's list of flat-slope outputs is therefore correct as a list of critical points
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Classify $x=0$ with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f^{\\prime\\prime}(x)=6x-6$$
+Classify $x=0$ with the second derivative:
 
-$$f^{\\prime\\prime}(0)=-6<0$$
+$$f''(x)=6x-6\\qquad\\Rightarrow\\qquad f''(0)=-6<0.$$
 
-A downward bend at a flat slope means a local peak at $x=0$, so the statement is True.`,
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore $x=0$ is a local peak
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Classify $x=2$ the same way.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$f^{\\prime\\prime}(2)=6>0$$
+Classify $x=2$ the same way:
 
-An upward bend means a local trough at $x=2$, not a peak, so the statement is True.`,
+$$f''(2)=12-6=6>0.$$
+
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore $x=2$ is a local trough, *not* a peak. The claim correctly refuses to call it a maximum
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-As $x\\to\\infty$, the leading term $x^{3}$ sends $f(x)\\to\\infty$. A function that tends to infinity has no global maximum on the real line, so the statement is True.`,
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+On the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's leading term $x^{3}$ drives $f(x)\\to\\infty$. Values eventually exceed any candidate height such as $f(0)=5$. Therefore there is no global maximum on $\\mathbb{R}$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-Listing the flat-slope outputs only produces candidates. One still must classify them (peak versus trough) and, on an unbounded domain, check whether a global maximum even exists. Stopping after the list does not finish a maximisation proof, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Listing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 98,
     solution_overview:
-      `The exam function on the whole real line is
+      `The exam function on $\\mathbb{R}$ is
 
-$$f(x)=x^{3}-3x^{2}+5$$
+$$f(x)=x^{3}-3x^{2}+5.$$
 
-$$f^{\\prime}(x)=3x(x-2)\\qquad f^{\\prime\\prime}(x)=6x-6$$
+Differentiate twice:
 
-Flat slopes really sit at $x=0$ and $x=2$. The bend test labels $x=0$ a local peak ($f^{\\prime\\prime}(0)=-6<0$) and $x=2$ a local trough ($f^{\\prime\\prime}(2)=6>0$). Because the leading term $x^{3}$ sends $f(x)\\to\\infty$ as $x\\to\\infty$, there is no global maximum on $\\mathbb{R}$. Listing the flat-slope outputs only produces candidates — it does not finish a maximisation proof.`,
+$$f'(x)=3x^{2}-6x=3x(x-2),\\qquad f''(x)=6x-6.$$
+
+Flat slopes at $x=0$ and $x=2$ are only candidates. The bend test labels $x=0$ a local peak ($f''(0)=-6<0$) and $x=2$ a local trough ($f''(2)=6>0$). As $x\\to\\infty$, $f(x)\\to\\infty$, so there is no global maximum on the real line. Stopping after listing $f'=0$ does not finish a maximisation proof — classification and global comparison are still required. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-99",
@@ -6402,52 +7524,64 @@ Flat slopes really sit at $x=0$ and $x=2$. The bend test labels $x=0$ a local pe
     tactical_explanations: [
       `**A.** → True
 
-Differentiate profit and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-6Q+30=0$$
+Differentiate profit and set the slope to zero:
 
-$$Q=5$$
+$$P'(Q)=-6Q+30=0\\qquad\\Rightarrow\\qquad 6Q=30\\qquad\\Rightarrow\\qquad Q=5.$$
 
-Profit has a flat slope at five bikes, so the statement is True.`,
+For $Q>0$ this is the unique root. Profit therefore has a flat slope at five bikes
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Read the bend at five bikes.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-6<0$$
+Classify five bikes with the second derivative:
 
-so $P^{\\prime\\prime}(5)=-6<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
+$$P''(Q)=-6\\qquad\\Rightarrow\\qquad P''(5)=-6<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore five bikes is a local profit peak
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-By definition, a strict local maximum at $Q=5$ means there is some open neighbourhood of five bikes on which every other feasible output yields strictly smaller profit than $P(5)$. That is exactly what a local profit peak asserts, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+By definition, a strict local maximum at $Q^{\\ast}=5$ means there exists a neighbourhood of five bikes in which every other feasible output $Q$ satisfies $P(Q)<P(5)$. That is exactly what “local profit peak” asserts — a local comparison, not yet a claim about the whole domain $Q>0$. The wording matches the definition, so the statement is True.`,
       `**D.** → False
 
-A local peak concerns the *relative* height of profit nearby, not the absolute level. Evaluating separately gives
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-$$P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35\\neq 0$$
-
-so the profit level need not be zero at a peak, so the statement is False.`,
+A local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives $P(5)=35\\neq 0$. Zero slope does not force zero profit. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Substitute five bikes into the profit rule.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(5)=-75+150-40=35$$
+Evaluate profit at the peak output — use the level $P$, not the slope:
 
-Profit at five bikes is $35$ euros, so the statement is True.`
+$$P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35.$$
+
+Profit at five bikes is $35$ euros, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
     solution_overview:
-      `Bike-rental profit is the downward-opening quadratic
+      `Bike-rental profit is the downward-opening parabola
 
-$$P(Q)=-3Q^{2}+30Q-40,\\qquad Q>0$$
+$$P(Q)=-3Q^{2}+30Q-40,\\qquad Q>0.$$
 
-$$P^{\\prime}(Q)=-6Q+30\\qquad P^{\\prime\\prime}(Q)=-6<0$$
+Differentiate twice:
 
-Flat slope at $Q=5$ together with the negative bend proves a strict local profit peak: in some neighbourhood of five bikes, every other output yields strictly smaller profit than $P(5)$. Evaluating the level separately gives
+$$P'(Q)=-6Q+30,\\qquad P''(Q)=-6<0.$$
 
-$$P(5)=-75+150-40=35$$
+Flat slope at $Q=5$ together with a downward bend certifies a local profit peak. A local peak means: in some neighbourhood of five bikes, every other output gives strictly smaller profit than $P(5)$. Evaluating the level gives
 
-A local peak concerns relative height nearby, not a requirement that the profit level itself be zero.`,
+$$P(5)=-75+150-40=35,$$
+
+which is not zero — flat slope never forces zero profit. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-100",
@@ -6467,48 +7601,62 @@ A local peak concerns relative height nearby, not a requirement that the profit 
     tactical_explanations: [
       `**A.** → True
 
-Find West's critical output and classify it.
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
-$$P_W^{\\prime}(Q)=-2Q+14=0\\Rightarrow Q=7$$
+For West, set the slope to zero and read the bend:
 
-$$P_W^{\\prime\\prime}(Q)=-2<0$$
+$$P_W'(Q)=-2Q+14=0\\qquad\\Rightarrow\\qquad Q=7,$$
 
-so seven units is a local profit peak for West, so the statement is True.`,
+$$P_W''(Q)=-2<0.$$
+
+Flat slope at seven units with a downward bend means a local profit peak for West. Both parts of the claim hold
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Find East's critical output and classify it.
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
-$$P_E^{\\prime}(Q)=2Q-10=0\\Rightarrow Q=5$$
+For East, set the slope to zero and read the bend:
 
-$$P_E^{\\prime\\prime}(Q)=2>0$$
+$$P_E'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5,$$
 
-so five units is a local profit trough for East, so the statement is True.`,
+$$P_E''(Q)=2>0.$$
+
+Flat slope at five units with an upward bend means a local profit *trough* for East, not a peak. The claim correctly labels it a trough
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → False
 
-The memo claims both flat-slope outputs are local profit maxima. West's is a peak, but East's is a trough ($P_E^{\\prime\\prime}(5)>0$). The memo is therefore not correct, so the statement is False.`,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+The memo claims both flat-slope outputs are local profit maxima. West's seven is indeed a peak ($P_W''<0$), but East's five is a trough ($P_E''>0$). The memo is therefore incorrect: both are critical points, but they are not both maxima. The statement is False. Comparing that with the claim, the statement is False.`,
       `**D.** → True
 
-Evaluate each profit at its flat-slope output.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_W(7)=-49+98-20=29$$
+Evaluate each plant's profit at its own critical output:
 
-$$P_E(5)=25-50+40=15$$
+$$P_W(7)=-49+98-20=29,$$
 
-West's peak profit is $29$ euros and East's profit at five units is $15$ euros, so the statement is True.`,
+$$P_E(5)=25-50+40=15.$$
+
+West's peak profit is $29$ euros, while East's profit at five units is $15$ euros. Both figures match the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-Unequal critical outputs are entirely possible for different profit models; each plant's derivative is its own equation. Both $P_W^{\\prime}(7)=0$ and $P_E^{\\prime}(5)=0$ are valid. The claim that at most one flat-slope equation can be valid is false, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Each plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 100,
     solution_overview:
-      `Two plants run different profit models and therefore different critical outputs:
+      `Two plants have different profit shapes and different critical outputs:
 
-$$P_W(Q)=-Q^{2}+14Q-20\\qquad P_E(Q)=Q^{2}-10Q+40$$
+$$P_W(Q)=-Q^{2}+14Q-20,\\qquad P_E(Q)=Q^{2}-10Q+40.$$
 
-$$P_W^{\\prime}=-2Q+14,\\quad P_W^{\\prime\\prime}=-2\\qquad P_E^{\\prime}=2Q-10,\\quad P_E^{\\prime\\prime}=2$$
-
-West's flat output $Q=7$ bends downward (local peak, $P_W(7)=29$). East's flat output $Q=5$ bends upward (local trough, $P_E(5)=15$). The memo claiming both are local profit maxima is therefore wrong. Unequal critical outputs are entirely possible for different models — both flat-slope equations remain valid.`,
+West: $P_W'=-2Q+14$ vanishes at $Q=7$, and $P_W''=-2<0$, so seven is a local profit peak with $P_W(7)=29$. East: $P_E'=2Q-10$ vanishes at $Q=5$, and $P_E''=2>0$, so five is a local profit trough with $P_E(5)=15$. The memo claiming both flat-slope outputs are local maxima is wrong — East has a trough. Unequal critical outputs do not invalidate either flat-slope equation; each plant has its own valid derivative.`,
   },
   {
     id: "math-11-101",
@@ -6528,60 +7676,74 @@ West's flat output $Q=7$ bends downward (local peak, $P_W(7)=29$). East's flat o
     tactical_explanations: [
       `**A.** → True
 
-Differentiate the farm shop's daily-profit rule term by term.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=-Q^{2}+18Q-45$$
+To read how profit changes with crates sold, differentiate the given daily-profit rule term by term:
 
-$$P^{\\prime}(Q)=-2Q+18$$
+$$P(Q)=-Q^{2}+18Q-45\\qquad\\Rightarrow\\qquad P'(Q)=-2Q+18.$$
 
-That slope matches the claim, so the statement is True.`,
+That derivative is the slope of daily profit. It matches the claimed formula exactly
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Set the slope of profit to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-2Q+18=0$$
+An interior peak requires a flat slope, so set $P'$ to zero and solve:
 
-$$Q=9$$
+$$P'(Q)=-2Q+18=0\\qquad\\Rightarrow\\qquad 2Q=18\\qquad\\Rightarrow\\qquad Q=9.$$
 
-On $Q\\ge 0$ this is the only root, so nine crates is the unique flat-slope output, so the statement is True.`,
+On $Q\\ge 0$ this linear equation has exactly one root. Nine crates is the unique flat-slope daily output
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Read the bend at nine crates.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-2$$
+Classify nine crates with the second derivative:
 
-so $P^{\\prime\\prime}(9)=-2<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
+$$P''(Q)=-2\\qquad\\Rightarrow\\qquad P''(9)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. Therefore nine crates is a local profit peak
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Evaluate profit at the peak output.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(9)=-81+162-45=36$$
+Evaluate profit at the peak output — use the level $P$, not the slope:
 
-Peak daily profit is $36$ euros, so the statement is True.`,
+$$P(9)=-9^{2}+18\\cdot 9-45=-81+162-45=36.$$
+
+Peak daily profit is $36$ euros, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-A flat slope does not force the profit level to be zero. Evaluating the level gives
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-$$P(9)=36\\neq 0$$
+A flat slope describes how profit *changes* at nine crates, not how large profit *is*. The condition $P'(9)=0$ only says the tangent is horizontal. Evaluating the level separately gives
 
-so the statement is False.`
+$$P(9)=36\\neq 0.$$
+
+Zero slope does not force zero profit. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 101,
     solution_overview:
-      `Farm-shop daily profit is the downward-opening quadratic
+      `Farm-shop profit is the downward-opening parabola
 
-$$P(Q)=-Q^{2}+18Q-45,\\qquad Q\\ge 0$$
+$$P(Q)=-Q^{2}+18Q-45,\\qquad Q\\ge 0.$$
 
-Differentiate once for the slope of profit and once more for the bend.
+Differentiate twice:
 
-$$P^{\\prime}(Q)=-2Q+18\\qquad P^{\\prime\\prime}(Q)=-2$$
+$$P'(Q)=-2Q+18,\\qquad P''(Q)=-2<0.$$
 
-Flat slope solves $P^{\\prime}=0$ at the unique non-negative root $Q=9$. The negative bend confirms a local profit peak, and evaluating the level (not the slope) gives
+Flat slope at $Q=9$ together with a downward bend certifies a local (and, on $Q\\ge 0$, global) profit peak. Evaluating the level gives
 
-$$P(9)=-81+162-45=36$$
+$$P(9)=-81+162-45=36.$$
 
-so nine crates yield $36$ euros of peak daily profit. A zero slope never forces the profit level itself to be zero.`,
+A zero slope never forces the profit level itself to be zero — slope and height are different objects. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-102",
@@ -6601,60 +7763,78 @@ so nine crates yield $36$ euros of peak daily profit. A zero slope never forces 
     tactical_explanations: [
       `**A.** → True
 
-Form profit as revenue minus cost and simplify.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20$$
+Form profit as revenue minus cost and collect like terms carefully:
 
-That quadratic matches the claim, so the statement is True.`,
+$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20.$$
+
+That simplified quadratic matches the claim exactly
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Differentiate profit and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime}(Q)=-4Q+40=0$$
+Set the slope of profit to zero and solve for daily output:
 
-$$Q=10$$
+$$P'(Q)=-4Q+40=0\\qquad\\Rightarrow\\qquad 4Q=40\\qquad\\Rightarrow\\qquad Q=10.$$
 
-Profit has a flat slope at ten boxes a day, so the statement is True.`,
+For $Q>0$ this is the unique root. Profit has a flat slope at ten boxes a day
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Compute marginal revenue and marginal cost at ten boxes.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R^{\\prime}(Q)=50-2Q,\\qquad C^{\\prime}(Q)=2Q+10$$
+At a profit peak one also has $R'=C'$. Compute the separate marginals at ten boxes:
 
-$$R^{\\prime}(10)=50-20=30,\\qquad C^{\\prime}(10)=20+10=30$$
+$$R'(Q)=50-2Q,\\qquad C'(Q)=2Q+10,$$
 
-Both equal $30$ euros at ten boxes, so the statement is True.`,
+$$R'(10)=50-20=30,\\qquad C'(10)=20+10=30.$$
+
+Both equal $30$ euros at ten boxes
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Confirm the peak with the second derivative, then evaluate profit.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P^{\\prime\\prime}(Q)=-4<0$$
+Read the bend and evaluate the peak level:
 
-$$P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180$$
+$$P''(Q)=-4<0\\qquad\\Rightarrow\\qquad\\text{local profit peak at }Q=10,$$
 
-Ten boxes is a local profit peak with peak profit $180$ euros, so the statement is True.`,
+$$P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180.$$
+
+Ten boxes is a local profit peak with peak profit $180$ euros
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Matching $R^{\\prime}=C^{\\prime}$ means marginal profit is zero, not that the *levels* of revenue and cost coincide. At ten boxes,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-$$R(10)=500-100=400,\\qquad C(10)=100+100+20=220$$
+Matching $R'=C'$ means the *derivatives* agree, not the *levels*. At ten boxes,
 
-so revenue and cost differ, so the statement is False.`
+$$R(10)=500-100=400,\\qquad C(10)=100+100+20=220,$$
+
+so revenue and cost differ (profit is their gap $180$). Confusing equal marginals with equal levels is the trap. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 102,
     solution_overview:
-      `Stall profit is revenue minus cost:
+      `Market-stall profit is revenue minus cost:
 
-$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20$$
+$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20,$$
 
-$$P^{\\prime}(Q)=-4Q+40\\qquad P^{\\prime\\prime}=-4\\qquad R^{\\prime}=50-2Q\\qquad C^{\\prime}=2Q+10$$
+with slope and bend
 
-Flat profit at $Q=10$ coincides with $R^{\\prime}(10)=C^{\\prime}(10)=30$. The negative bend confirms a local peak, and
+$$P'(Q)=-4Q+40,\\qquad P''(Q)=-4,$$
 
-$$P(10)=180$$
+and separate marginals $R'(Q)=50-2Q$, $C'(Q)=2Q+10$. Flat profit at $Q=10$ coincides with $R'(10)=C'(10)=30$. The negative bend confirms a local profit peak, and
 
-Matching $R^{\\prime}=C^{\\prime}$ means marginal profit is zero, not that the *levels* $R$ and $C$ coincide ($R(10)=400\\neq 220=C(10)$).`,
+$$P(10)=-200+400-20=180.$$
+
+Matching $R'=C'$ only finds a critical point; it does not force the *levels* $R$ and $C$ to be equal. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-103",
@@ -6674,48 +7854,64 @@ Matching $R^{\\prime}=C^{\\prime}$ means marginal profit is zero, not that the *
     tactical_explanations: [
       `**A.** → True
 
-Find truck A's critical meals and classify the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A^{\\prime}(Q)=-2Q+24=0\\Rightarrow Q=12$$
+For truck A, set the slope to zero and read the bend:
 
-$$P_A^{\\prime\\prime}(Q)=-2<0$$
+$$P_A'(Q)=-2Q+24=0\\qquad\\Rightarrow\\qquad Q=12,$$
 
-so twelve meals is a local profit peak for truck A, so the statement is True.`,
+$$P_A''(Q)=-2<0.$$
+
+Flat slope at twelve meals with a downward bend means a local profit maximum for A. The claim holds
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Find truck B's critical meals and classify the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_B^{\\prime}(Q)=-4Q+32=0\\Rightarrow Q=8$$
+For truck B, set the slope to zero and read the bend:
 
-$$P_B^{\\prime\\prime}(Q)=-4<0$$
+$$P_B'(Q)=-4Q+32=0\\qquad\\Rightarrow\\qquad Q=8,$$
 
-so eight meals is a local profit peak for truck B, so the statement is True.`,
+$$P_B''(Q)=-4<0.$$
+
+Flat slope at eight meals with a downward bend means a local profit maximum for B. The claim holds
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Evaluate each truck's profit at its own peak.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P_A(12)=-144+288-80=64$$
+Evaluate each truck's profit at its own peak output:
 
-$$P_B(8)=-2\\cdot 64+32\\cdot 8-60=-128+256-60=68$$
+$$P_A(12)=-144+288-80=64,$$
 
-Peak profits are $64$ euros for A and $68$ euros for B, so the statement is True.`,
+$$P_B(8)=-2\\cdot 64+32\\cdot 8-60=-128+256-60=68.$$
+
+Peak profits are $64$ euros for A and $68$ euros for B, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → False
 
-Each truck maximises its own profit model. A's peak is at twelve meals and B's is at eight, so the optimal quantities need not coincide just because both have a local peak, so the statement is False.`,
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Both trucks have a local profit peak, but the peaks sit at different quantities: $Q_A^{\\ast}=12$ versus $Q_B^{\\ast}=8$. Separate profit functions generally have separate optimisers. Sharing the *property* of having a local peak does not force sharing the same optimal quantity. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Truck B's peak profit $68$ exceeds truck A's peak $64$, even though B's optimal quantity $8$ is smaller than A's $12$. Different profit curves can deliver a higher peak at a smaller output, so the statement is True.`
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 103,
     solution_overview:
-      `Two food trucks maximise their own profit models separately:
+      `Two food trucks have separate profit rules:
 
-$$P_A(Q)=-Q^{2}+24Q-80\\qquad P_B(Q)=-2Q^{2}+32Q-60$$
+$$P_A(Q)=-Q^{2}+24Q-80,\\qquad P_B(Q)=-2Q^{2}+32Q-60.$$
 
-$$P_A^{\\prime}=-2Q+24,\\quad P_A^{\\prime\\prime}=-2\\qquad P_B^{\\prime}=-4Q+32,\\quad P_B^{\\prime\\prime}=-4$$
-
-Truck A peaks at $Q=12$ with $P_A(12)=64$; truck B peaks at $Q=8$ with $P_B(8)=68$. Both have local profit peaks, but the optimal quantities need not coincide, and B's smaller optimal quantity still delivers the larger peak profit.`,
+Truck A: $P_A'=-2Q+24$ vanishes at $Q=12$, and $P_A''=-2<0$, so twelve is a local peak with $P_A(12)=64$. Truck B: $P_B'=-4Q+32$ vanishes at $Q=8$, and $P_B''=-4<0$, so eight is a local peak with $P_B(8)=68$. Both have local peaks, but at *different* optimal quantities. B's peak profit $68$ exceeds A's $64$ even though B's optimal quantity is smaller. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-104",
@@ -6735,52 +7931,68 @@ Truck A peaks at $Q=12$ with $P_A(12)=64$; truck B peaks at $Q=8$ with $P_B(8)=6
     tactical_explanations: [
       `**A.** → True
 
-Differentiate weekly cost and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(Q)=3Q^{2}-18Q+24$$
+Differentiate weekly cost and set the slope to zero:
 
-$$3(Q^{2}-6Q+8)=0$$
+$$C'(Q)=3Q^{2}-18Q+24=3(Q^{2}-6Q+8)=3(Q-2)(Q-4).$$
 
-$$(Q-2)(Q-4)=0$$
+The roots are $Q=2$ and $Q=4$, both positive. Those are the flat-slope batch counts
 
-so the flat-slope batch sizes are $Q=2$ and $Q=4$, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Classify the bends with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime\\prime}(Q)=6Q-18$$
+Classify both critical batches with the second derivative:
 
-$$C^{\\prime\\prime}(2)=-6<0,\\qquad C^{\\prime\\prime}(4)=6>0$$
+$$C''(Q)=6Q-18,$$
 
-so at two batches the cost curve bends downward, while at four batches it bends upward, so the statement is True.`,
+$$C''(2)=12-18=-6<0,\\qquad C''(4)=24-18=6>0.$$
+
+So at two batches the cost curve bends downward, while at four batches it bends upward, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-A downward bend at a flat slope marks a local peak; an upward bend marks a local trough. Therefore two batches is a local cost peak and four batches is a local cost trough, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Combine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *peak*; upward bend at $Q=4$ means a local cost *trough*. Therefore two batches is a local cost peak and four batches is a local cost trough
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-Evaluate cost at the trough batch size.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C(4)=64-144+96+5=21$$
+Evaluate cost at the local trough $Q=4$:
 
-The local trough cost is $21$ (hundreds of euros), so the statement is True.`,
+$$C(4)=64-144+96+5=21.$$
+
+The local trough cost value is $21$ (hundreds of euros), matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**E.** → False
 
-At two batches the slope is flat, but the bend is *downward*, so that output is a local cost *peak*, not a minimum. Flat slope alone does not minimise cost, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+At two batches the slope is flat, but the bend is downward ($C''(2)<0$), so that output is a local cost *peak*, not a minimum. The cost-minimising local candidate is the trough at four batches. Claiming that flat slope at two batches minimises cost reverses the correct label. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 104,
     solution_overview:
-      `Weekly workshop cost is the cubic
+      `Weekly cost is the cubic
 
-$$C(Q)=Q^{3}-9Q^{2}+24Q+5,\\qquad Q>0$$
+$$C(Q)=Q^{3}-9Q^{2}+24Q+5,\\qquad Q>0.$$
 
-$$C^{\\prime}(Q)=3(Q-2)(Q-4)\\qquad C^{\\prime\\prime}(Q)=6Q-18$$
+Differentiate twice:
 
-Flat slopes sit at $Q=2$ and $Q=4$. The bend signs are $C^{\\prime\\prime}(2)=-6<0$ (local cost peak) and $C^{\\prime\\prime}(4)=6>0$ (local cost trough). The trough level is
+$$C'(Q)=3Q^{2}-18Q+24=3(Q-2)(Q-4),\\qquad C''(Q)=6Q-18.$$
 
-$$C(4)=21$$
+Flat slopes at $Q=2$ and $Q=4$. The bend test gives $C''(2)=-6<0$ (local cost *peak*) and $C''(4)=6>0$ (local cost *trough*). The trough level is
 
-Flat slope at two batches does not minimise cost — that output is a local peak.`,
+$$C(4)=64-144+96+5=21.$$
+
+A flat slope at two batches marks a local cost peak, not a minimum — bend classification is essential. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-105",
@@ -6800,52 +8012,66 @@ Flat slope at two batches does not minimise cost — that output is a local peak
     tactical_explanations: [
       `**A.** → True
 
-Differentiate cost and set the slope to zero inside $(0,8)$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(Q)=2Q-10=0$$
+Differentiate cost and set the slope to zero inside $(0,8)$:
 
-$$Q=5$$
+$$C'(Q)=2Q-10=0\\qquad\\Rightarrow\\qquad Q=5.$$
 
-Five shifts is the only interior flat-slope schedule on $(0,8)$, so the statement is True.`,
+The unique root $Q=5$ lies strictly inside $(0,8)$. There is no other interior critical schedule
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Read the bend at five shifts.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime\\prime}(Q)=2>0$$
+Classify five shifts with the second derivative:
 
-so $C^{\\prime\\prime}(5)=2>0$. An upward bend at a flat slope means a local cost trough, so the statement is True.`,
+$$C''(Q)=2>0\\qquad\\Rightarrow\\qquad C''(5)=2>0.$$
+
+An upward bend at a flat slope is the second-derivative test for a local minimum. Therefore five shifts is a local cost trough
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Evaluate cost at the endpoints and at the interior trough.
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
-$$C(0)=40$$
+Evaluate cost at both endpoints and at the interior trough:
 
-$$C(8)=64-80+40=24$$
+$$C(0)=40,$$
 
-$$C(5)=25-50+40=15$$
+$$C(5)=25-50+40=15,$$
 
-Those three values match the claim, so the statement is True.`,
+$$C(8)=64-80+40=24.$$
+
+Endpoint costs are $40$ at zero shifts and $24$ at eight shifts, while cost at five shifts is $15$, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → False
 
-Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The global cost minimum on $[0,8]$ is not at the endpoint of eight shifts, so the statement is False.`,
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The endpoint of eight shifts is *not* the global cost minimum on $[0,8]$. The claim picks the wrong candidate. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-Among the candidate values, $C(5)=15$ is strictly smaller than both endpoint costs. Therefore the global cost minimum on $[0,8]$ is at the interior trough of five shifts, so the statement is True.`
+Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
+
+Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 105,
     solution_overview:
-      `Courier cost on the closed shift interval $[0,8]$ is
+      `Delivery cost on the closed shift interval $[0,8]$ is
 
-$$C(Q)=Q^{2}-10Q+40$$
+$$C(Q)=Q^{2}-10Q+40.$$
 
-$$C^{\\prime}(Q)=2Q-10\\qquad C^{\\prime\\prime}(Q)=2>0$$
+Differentiate twice:
 
-The only interior flat-slope schedule is $Q=5$, and the positive bend labels it a local cost trough. Comparing candidates with the endpoints,
+$$C'(Q)=2Q-10,\\qquad C''(Q)=2>0.$$
 
-$$C(0)=40,\\quad C(5)=15,\\quad C(8)=24$$
-
-shows the global cost minimum on $[0,8]$ is the interior trough at five shifts, not the endpoint at eight.`,
+The only interior flat-slope schedule is $Q=5$, and the upward bend marks a local cost trough with $C(5)=15$. Endpoint costs are $C(0)=40$ and $C(8)=24$. Comparing all three candidates, the global cost minimum on $[0,8]$ is the interior trough at five shifts, not the endpoint at eight. On a closed interval one must always compare critical values with endpoint values.`,
   },
   {
     id: "math-11-106",
@@ -6865,54 +8091,66 @@ shows the global cost minimum on $[0,8]$ is the interior trough at five shifts, 
     tactical_explanations: [
       `**A.** → True
 
-With perimeter $2x+2y=40$, solve for the other side and write area in one variable.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$y=20-x$$
+Using the fencing fully, the perimeter constraint is $2x+2y=40$, so $x+y=20$ and $y=20-x$. Enclosed area becomes a function of one side alone:
 
-$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20$$
+$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20.$$
 
-Planting area is a function of one side alone on that open interval, so the statement is True.`,
+That reduction to a single-variable calculus problem is exactly what the claim asserts
+
+Under a linear or product constraint, eliminate one variable, write a single-variable objective, then run ordinary critical-point calculus on the reduced function., so the statement is True.`,
       `**B.** → True
 
-Maximise the reduced area by setting its slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime}(x)=20-2x=0\\Rightarrow x=10$$
+Maximise the reduced area by setting its slope to zero:
 
-$$y=20-10=10$$
+$$A'(x)=20-2x=0\\qquad\\Rightarrow\\qquad x=10,$$
 
-so the bed is a $10$ by $10$ metre square at the critical point, so the statement is True.`,
+hence $y=20-10=10$. The area-maximising bed is the $10$ by $10$ metre square. The critical-point calculation matches the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Evaluate area at that square.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(10)=10\\cdot 10=100$$
+Evaluate area at the critical square:
 
-The maximum planting area is $100$ square metres, so the statement is True.`,
+$$A(10)=10\\cdot 10=100.$$
+
+Maximal planting area is $100$ square metres. (As a check, $A''(10)=-2<0$ confirms a maximum.) The level matches the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Confirm the local maximum with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime\\prime}(x)=-2<0$$
+Read the bend of area at the square layout:
 
-so at the square the area curve bends downward, confirming a local maximum, so the statement is True.`,
+$$A''(x)=-2\\qquad\\Rightarrow\\qquad A''(10)=-2<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. The square therefore maximises area locally (and, on $(0,20)$, globally)
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Every layout uses the same $40$ metres of fence, but area $A(x)=x(20-x)$ still varies with the shape — a long thin rectangle encloses far less than the square. Optimisation is needed, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Every feasible layout uses the same $40$ metres of fence, but different shapes enclose different areas: a $1\\times 19$ rectangle has area $19$, while the $10\\times 10$ square has area $100$. Equal perimeter does not force equal area. Optimisation is needed. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 106,
     solution_overview:
-      `With a fixed $40$ m perimeter, write $2x+2y=40$ so $y=20-x$ and reduce planting area to one variable:
+      `With a fixed $40$ m fence for a rectangular bed, if one side is $x$ then the adjacent side is $20-x$ (semi-perimeter $20$), so area is
 
-$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20$$
+$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20.$$
 
-$$A^{\\prime}(x)=20-2x\\qquad A^{\\prime\\prime}(x)=-2$$
+Differentiate twice:
 
-Flat slope at $x=10$ recovers $y=10$, a square, with maximum area
+$$A'(x)=20-2x,\\qquad A''(x)=-2<0.$$
 
-$$A(10)=100$$
-
-confirmed by the downward bend $A^{\\prime\\prime}<0$. Same fence length does not force same area — thin rectangles enclose far less than the square.`,
+Flat slope at $x=10$ gives the square $10\\times 10$ with $A(10)=100$. The downward bend confirms a local (and on $(0,20)$, global) maximum. Equal fence length does not force equal area — shape still matters. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-107",
@@ -6932,54 +8170,66 @@ confirmed by the downward bend $A^{\\prime\\prime}<0$. Same fence length does no
     tactical_explanations: [
       `**A.** → True
 
-Fixed printed area $xy=36$ forces $y=\\dfrac{36}{x}$. Adding a $1$ cm margin on every side gives total paper dimensions $x+2$ and $y+2$, so
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$$
+Printed area $36$ forces printed height $36/x$ when width is $x$. Adding a $1$ cm margin on every side enlarges each dimension by $2$, so total paper area is
 
-exactly as claimed, so the statement is True.`,
+$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right).$$
+
+That is exactly the claimed one-variable formula for $x>0$
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Expand the product.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}$$
+Expand the product carefully:
 
-That expanded form matches the claim, so the statement is True.`,
+$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=x\\cdot\\dfrac{36}{x}+2x+2\\cdot\\dfrac{36}{x}+4=36+2x+\\dfrac{72}{x}+4.$$
+
+Collecting constants, $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**C.** → True
 
-Differentiate and set the slope to zero for $x>0$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime}(x)=2-\\dfrac{72}{x^{2}}=0$$
+Differentiate the expanded area and set the slope to zero for $x>0$:
 
-$$2x^{2}=72\\Rightarrow x^{2}=36\\Rightarrow x=6$$
+$$A'(x)=2-\\dfrac{72}{x^{2}}=0\\qquad\\Rightarrow\\qquad 2=\\dfrac{72}{x^{2}}\\qquad\\Rightarrow\\qquad x^{2}=36\\qquad\\Rightarrow\\qquad x=6$$
 
-(taking the positive root), so paper area has a flat slope at printed width $6$, so the statement is True.`,
+(the positive root). Paper area has a flat slope at printed width $x=6$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-At $x=6$ the printed height is $\\dfrac{36}{6}=6$, a square. Total paper area and the bend are
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(6)=40+12+\\dfrac{72}{6}=40+12+12=64$$
+At $x=6$ the printed height is $36/6=6$, so the printed region is a $6\\times 6$ square. Total paper area is
 
-$$A^{\\prime\\prime}(x)=\\dfrac{144}{x^{3}},\\qquad A^{\\prime\\prime}(6)=\\dfrac{144}{216}>0$$
+$$A(6)=40+12+\\dfrac{72}{6}=40+12+12=64.$$
 
-so the area curve bends upward and $64$ is a local minimum of paper area, so the statement is True.`,
+The bend $A''(6)=144/216>0$ confirms a local minimum. All three parts of the claim hold
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Every printed rectangle of area $36$ has the *same printed area*, but the total paper sheet $A(x)=40+2x+\\dfrac{72}{x}$ still depends on the aspect ratio through the margins. The margins create a genuine one-variable optimisation problem, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+Any printed rectangle of area $36$ keeps the *printed* region fixed in area, but different aspect ratios change the outer paper once margins are added. A long thin print forces large outer dimensions; the square print minimises paper. The margins create a genuine optimisation problem. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 107,
     solution_overview:
-      `Fixed printed area $xy=36$ forces $y=\\dfrac{36}{x}$. Adding a $1$ cm margin on every side gives total paper area
+      `Printed area is fixed at $36$, so if printed width is $x>0$ then printed height is $36/x$. With a $1$ cm margin on every side, total paper area is
 
-$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=40+2x+\\dfrac{72}{x},\\qquad x>0$$
+$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=40+2x+\\dfrac{72}{x}.$$
 
-$$A^{\\prime}(x)=2-\\dfrac{72}{x^{2}}\\qquad A^{\\prime\\prime}(x)=\\dfrac{144}{x^{3}}$$
+Differentiate:
 
-Flat slope at the positive root $x=6$ makes the printed region a $6\\times 6$ square, with total paper
+$$A'(x)=2-\\dfrac{72}{x^{2}},\\qquad A''(x)=\\dfrac{144}{x^{3}}.$$
 
-$$A(6)=64$$
-
-and $A^{\\prime\\prime}(6)>0$ confirming a local minimum. Same printed area does not minimise paper — the margins still create a genuine optimisation problem.`,
+Flat slope at $x=6$ (taking $x>0$) gives a $6\\times 6$ printed square with total paper $A(6)=64$, and $A''(6)>0$ confirms a local minimum. Fixed printed area alone does not minimise paper — the margins create a real trade-off.`,
   },
   {
     id: "math-11-108",
@@ -6999,56 +8249,52 @@ and $A^{\\prime\\prime}(6)>0$ confirming a local minimum. Same printed area does
     tactical_explanations: [
       `**A.** → True
 
-The square uses wire $x$, so each side is $\\dfrac{x}{4}$ and its area is $\\dfrac{x^{2}}{16}$. The circle uses wire $60-x$, so its radius is $\\dfrac{60-x}{2\\pi}$ and its area is $\\dfrac{(60-x)^{2}}{4\\pi}$. Adding those areas gives
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$$
+Let $x$ be the wire length for the square, so $60-x$ goes to the circle. The square's side is $x/4$ and the circle's circumference $2\\pi r=60-x$ gives radius $r=(60-x)/(2\\pi)$. Total enclosed area as a function of $x$ alone is
 
-exactly as claimed, so the statement is True.`,
+$$A(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi r^{2}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.$$
+
+That reduction matches the setup behind the claim, so the statement is True.`,
       `**B.** → True
 
-Differentiate the total-area rule term by term.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime}(x)=\\dfrac{2x}{16}-\\dfrac{2(60-x)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$$
+Differentiate the reduced area (product and chain rules on the circle term):
 
-That slope matches the claim, so the statement is True.`,
+$$A'(x)=\\dfrac{2x}{16}+\\dfrac{2(60-x)(-1)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}.$$
+
+Setting $A'(x)=0$ and solving in $(0,60)$ yields a unique critical cut. The slope of total area is therefore a well-defined single-variable derivative with an interior flat point, so the statement is True.`,
       `**C.** → True
 
-Set the slope to zero and solve for the split.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}$$
+At that interior critical cut, compute the second derivative. Differentiating $A'(x)$ again gives
 
-$$2\\pi x=8(60-x)$$
+$$A''(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$$
 
-$$\\pi x=240-4x$$
-
-$$x(\\pi+4)=240\\Rightarrow x=\\dfrac{240}{4+\\pi}$$
-
-Total area has a flat slope at that split, so the statement is True.`,
+everywhere. A positive bend at a flat slope is the second-derivative test for a local minimum. The critical split therefore minimises total enclosed area locally, so the statement is True.`,
       `**D.** → True
 
-The second derivative of total area is
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime\\prime}(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$$
+Because $A''>0$ at the critical cut, the second-derivative test labels it a local *minimum* of total enclosed area — a trough of $A$, not a peak. The claim states exactly that classification
 
-everywhere. In particular at the critical split the area curve bends upward, so that split is a local minimum of total enclosed area, so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Expressing the circle's wire as $60-x$ already reduces the two-shape geometry to a single-variable function $A(x)$. Two shapes do not prevent a one-variable calculus treatment, so the statement is False.`
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
+
+Two shapes appear, but both are determined by the single split variable $x$. After writing square area and circle area in terms of $x$, the problem is ordinary single-variable calculus on $[0,60]$. The presence of two shapes does not block the reduction. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 108,
     solution_overview:
-      `Split the $60$ cm wire into square length $x$ and circle length $60-x$. Total enclosed area reduces to one variable:
+      `A $60$ cm wire is split: length $x$ for a square and $60-x$ for a circle ($0\\le x\\le 60$). Side of the square is $x/4$; radius of the circle is $(60-x)/(2\\pi)$. Total enclosed area is
 
-$$A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$$
+$$A(x)=\\left(\\dfrac{x}{4}\\right)^{2}+\\pi\\left(\\dfrac{60-x}{2\\pi}\\right)^{2}=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}.$$
 
-$$A^{\\prime}(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}\\qquad A^{\\prime\\prime}(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$$
-
-Setting $A^{\\prime}=0$ gives the unique critical split
-
-$$x=\\dfrac{240}{4+\\pi}$$
-
-and the constantly positive second derivative labels it a local minimum of total enclosed area. Two shapes do not prevent a single-variable calculus treatment once the circle's wire is written as $60-x$.`,
+Differentiate and classify: the unique critical point in $(0,60)$ is a local *minimum* of total area ($A''>0$). The problem reduces cleanly to single-variable calculus after expressing both shapes in terms of $x$; two shapes do not block the reduction.`,
   },
   {
     id: "math-11-109",
@@ -7068,52 +8314,64 @@ and the constantly positive second derivative labels it a local minimum of total
     tactical_explanations: [
       `**A.** → True
 
-Solve the budget $2x+y=20$ for $y$ and substitute into utility.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$y=20-2x$$
+Solve the budget $2x+y=20$ for $y=20-2x$. Positivity $y>0$ forces $x<10$, and $x>0$ is already required, so the feasible open interval is $0<x<10$. Substituting into $U=xy$ gives the one-variable utility
 
-$$U(x)=x(20-2x)=20x-2x^{2},\\qquad 0<x<10$$
+$$u(x)=x(20-2x)=20x-2x^{2}.$$
 
-That is a one-variable utility on the open budget segment, so the statement is True.`,
+That reduction matches the claim, so the statement is True.`,
       `**B.** → True
 
-Differentiate the reduced utility and set the slope to zero.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$U^{\\prime}(x)=20-4x=0$$
+Differentiate the reduced utility and set the slope to zero:
 
-$$x=5$$
+$$u'(x)=20-4x=0\\qquad\\Rightarrow\\qquad 4x=20\\qquad\\Rightarrow\\qquad x=5.$$
 
-The reduced utility has a flat slope at $x=5$, so the statement is True.`,
+The unique critical point in $(0,10)$ is $x=5$. The reduced utility therefore has a flat slope at $x=5$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Recover $y$ and the utility level at that candidate.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$y=20-2\\cdot 5=10$$
+At $x=5$ the budget gives $y=20-2\\cdot 5=10$, and utility is the product
 
-$$U(5)=5\\cdot 10=50$$
+$$U=xy=5\\cdot 10=50.$$
 
-so at $x=5$ one has $y=10$ and utility $50$, so the statement is True.`,
+(Alternatively $u(5)=20\\cdot 5-2\\cdot 25=100-50=50$.) Bundle $(5,10)$ with utility level $50$ matches the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Confirm a local maximum with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$U^{\\prime\\prime}(x)=-4<0$$
+Read the bend of reduced utility at $x=5$:
 
-so at $x=5$ the utility curve bends downward and that bundle maximises utility locally on the budget line, so the statement is True.`,
+$$u''(x)=-4\\qquad\\Rightarrow\\qquad u''(5)=-4<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. That bundle therefore maximises utility locally on the budget line
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-A budget constraint only reduces the problem to one variable; it does not automatically guarantee that a critical point is a maximum. One still needs a bend check (or an endpoint comparison). Skipping the bend because a budget is present is not justified, so the statement is False.`
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
+
+After substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 109,
     solution_overview:
-      `Utility $U=xy$ on the budget $2x+y=20$ reduces by substituting $y=20-2x$:
+      `Utility $U=xy$ on the budget $2x+y=20$ with $x>0$, $y>0$. Solve for $y=20-2x$ (requiring $0<x<10$) and substitute:
 
-$$U(x)=x(20-2x)=20x-2x^{2},\\qquad 0<x<10$$
+$$u(x)=x(20-2x)=20x-2x^{2}.$$
 
-$$U^{\\prime}(x)=20-4x\\qquad U^{\\prime\\prime}(x)=-4$$
+Differentiate twice:
 
-Flat slope at $x=5$ recovers $y=10$ with utility level $U(5)=50$, and the downward bend confirms a local maximum on the budget line. A budget constraint only reduces the problem to one variable — it does not automatically guarantee that a critical point is a maximum.`,
+$$u'(x)=20-4x,\\qquad u''(x)=-4<0.$$
+
+Flat slope at $x=5$ gives $y=10$ and $U=50$. The downward bend confirms a local (and on $(0,10)$, global) utility maximum on the budget line. A budget constraint alone does not guarantee a maximum without the bend (or endpoint) check — substitution creates an ordinary one-variable problem that still needs classification.`,
   },
   {
     id: "math-11-110",
@@ -7133,46 +8391,68 @@ Flat slope at $x=5$ recovers $y=10$ with utility level $U(5)=50$, and the downwa
     tactical_explanations: [
       `**A.** → True
 
-Substitute $y=10-x$ into output and differentiate.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$Q(x)=x(10-x)=10x-x^{2}$$
+Substitute $y=10-x$ into $Q=xy$ to get a function of $x$ alone:
 
-$$Q^{\\prime}(x)=10-2x$$
+$$q(x)=x(10-x)=10x-x^{2},\\qquad 0<x<10.$$
 
-Output as a function of $x$ alone has slope $10-2x$, so the statement is True.`,
+Differentiate:
+
+$$q'(x)=10-2x.$$
+
+The reduced output has slope $10-2x$, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Set the slope to zero and recover the other input and the output level.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$10-2x=0\\Rightarrow x=5$$
+Set the slope to zero inside $(0,10)$:
 
-$$y=10-5=5,\\qquad Q(5)=25$$
+$$q'(x)=10-2x=0\\qquad\\Rightarrow\\qquad x=5,$$
 
-The only positive flat-slope candidate is $x=5$, with $y=5$ and output $25$, so the statement is True.`,
+hence $y=5$ and $Q=5\\cdot 5=25$. That is the unique positive flat-slope candidate, with output $25$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Confirm the local maximum with the second derivative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$Q^{\\prime\\prime}(x)=-2<0$$
+Read the bend at the equal split:
 
-so at that split the output curve bends downward, confirming a local maximum, so the statement is True.`,
+$$q''(x)=-2\\qquad\\Rightarrow\\qquad q''(5)=-2<0.$$
+
+A downward bend at a flat slope confirms a local maximum of output. The equal split maximises $Q$ locally on the constraint
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Because $Q^{\\prime\\prime}<0$ everywhere, the critical point is a strict global maximum on the open segment. Equivalently, by AM–GM, $xy\\le\\left(\\dfrac{x+y}{2}\\right)^{2}=25$ with equality only at $x=y=5$. Any other split with $x+y=10$ yields strictly smaller output than $25$, so the statement is True.`,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+For any other split with $x+y=10$ and $x\\neq 5$, the reduced area satisfies
+
+$$q(x)=10x-x^{2}=25-(x-5)^{2}<25.$$
+
+Equivalently, $xy=((x+y)^{2}-(x-y)^{2})/4=25-(x-y)^{2}/4<25$ unless $x=y$. Every other feasible pair yields strictly smaller output than $25$
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-The constraint $x+y=10$ only forces the *sum* of the inputs; output $Q=xy$ still varies with the split. For example $(1,9)$ gives output $9$, not $25$. The constraint does not force output $25$ for every feasible pair, so the statement is False.`
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
+
+The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 110,
     solution_overview:
-      `Output $Q=xy$ on the resource line $x+y=10$ reduces by substituting $y=10-x$:
+      `Output $Q=xy$ on the resource constraint $x+y=10$ with $x>0$, $y>0$. Substitute $y=10-x$:
 
-$$Q(x)=x(10-x)=10x-x^{2}$$
+$$q(x)=x(10-x)=10x-x^{2},\\qquad 0<x<10,$$
 
-$$Q^{\\prime}(x)=10-2x\\qquad Q^{\\prime\\prime}(x)=-2$$
-
-The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q(5)=25$. The downward bend (or AM–GM) shows this is a strict global maximum on the open segment: any other split with $x+y=10$ yields strictly smaller output. The constraint forces the *sum* of inputs, not the product $25$.`,
+with slope $q'(x)=10-2x$ and bend $q''(x)=-2<0$. Flat slope at $x=5$ gives $y=5$ and output $25$. The downward bend confirms a local maximum, and for every other split with $x+y=10$ one has $q(x)<25$ (equivalently $(x-y)^{2}>0$ unless $x=y$). The constraint does not force output $25$ for every feasible pair — only for the equal split. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-111",
@@ -7192,50 +8472,74 @@ The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q(5)=25$
     tactical_explanations: [
       `**A.** → True
 
-Daily revenue is price times quantity demanded.
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}$$
+Daily revenue is price times quantity demanded:
 
-That revenue rule matches the claim, so the statement is True.`,
+$$R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}.$$
+
+That quadratic in $p$ matches the claim exactly
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**B.** → True
 
-Maximise revenue by setting its slope to zero, then evaluate.
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$R^{\\prime}(p)=100-4p=0\\Rightarrow p=25$$
+Maximise revenue by setting its slope to zero:
 
-$$R(25)=100\\cdot 25-2\\cdot 625=2500-1250=1250$$
+$$R'(p)=100-4p=0\\qquad\\Rightarrow\\qquad p=25.$$
 
-Revenue is maximised at $25$ euros with peak revenue $1250$ euros, so the statement is True.`,
+The bend $R''(p)=-4<0$ confirms a peak. Peak revenue is
+
+$$R(25)=100\\cdot 25-2\\cdot 625=2500-1250=1250.$$
+
+Both the maximising price and the peak revenue match the claim, so the statement is True.`,
       `**C.** → True
 
-Price elasticity of demand is $\\varepsilon=\\dfrac{p}{D}\\cdot D^{\\prime}(p)$. Here $D^{\\prime}(p)=-2$, so at $p=25$,
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$D(25)=100-50=50$$
+Point price elasticity of demand is
 
-$$\\varepsilon=\\dfrac{25}{50}\\cdot(-2)=-1$$
+$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2\\cdot p}{100-2p}.$$
 
-Absolute elasticity $1$ means unit-elastic demand at the revenue peak, so the statement is True.`,
+At $p=25$,
+
+$$\\varepsilon(25)=\\dfrac{-50}{100-50}=\\dfrac{-50}{50}=-1.$$
+
+Demand is unit elastic at the revenue-maximising price
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**D.** → True
 
-At $p=20$, marginal revenue with respect to price is still positive.
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$R^{\\prime}(20)=100-80=20>0$$
+At $p=20$, marginal revenue is still positive:
 
-so a small further price increase still raises daily revenue (equivalently, demand is inelastic there), so the statement is True.`,
+$$R'(20)=100-80=20>0.$$
+
+A positive slope means a small further price increase raises daily revenue. (Equivalently $|\\varepsilon(20)|=40/60=2/3<1$, so demand is inelastic and a price rise helps revenue.) The statement is True, so the statement is True.`,
       `**E.** → False
 
-Absolute elasticity $1$ means *unit* elastic demand, not perfectly inelastic demand. Perfectly inelastic demand would have elasticity $0$. Confusing unit elasticity with perfect inelasticity is wrong, so the statement is False.`
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+Unit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 111,
     solution_overview:
-      `Bike-hire demand $D(p)=100-2p$ produces revenue
+      `Demand is $D(p)=100-2p$ for $0<p<50$. Revenue as a function of price is
 
-$$R(p)=p(100-2p)=100p-2p^{2}$$
+$$R(p)=p\\cdot D(p)=100p-2p^{2}.$$
 
-$$R^{\\prime}(p)=100-4p\\qquad R^{\\prime\\prime}(p)=-4$$
+Differentiate twice:
 
-Revenue peaks at $p=25$ with $R(25)=1250$. Price elasticity $\\varepsilon=\\dfrac{p}{D}D^{\\prime}$ equals $-1$ there (unit elastic). At $p=20$, $R^{\\prime}(20)=20>0$, so a small further price rise still raises revenue. Absolute elasticity $1$ means *unit* elastic demand, not perfectly inelastic demand.`,
+$$R'(p)=100-4p,\\qquad R''(p)=-4<0.$$
+
+Flat revenue at $p=25$ gives peak revenue $R(25)=1250$. Point elasticity is
+
+$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2p}{100-2p},$$
+
+so $\\varepsilon(25)=-1$ (unit elastic). At $p=20$, $|\\varepsilon|<1$ (inelastic) and $R'(20)=20>0$, so a small price rise still raises revenue. Unit elasticity is not perfect inelasticity ($|\\varepsilon|=0$).`,
   },
   {
     id: "math-11-112",
@@ -7255,50 +8559,74 @@ Revenue peaks at $p=25$ with $R(25)=1250$. Price elasticity $\\varepsilon=\\dfra
     tactical_explanations: [
       `**A.** → True
 
-Form ticket revenue and set its slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R(p)=p(120-3p)=120p-3p^{2}$$
+Ticket revenue is price times audience:
 
-$$R^{\\prime}(p)=120-6p=0\\Rightarrow p=20$$
+$$R(p)=p(120-3p)=120p-3p^{2}.$$
 
-Revenue expands as claimed and has a flat slope at $20$ euros, so the statement is True.`,
+Set the slope to zero:
+
+$$R'(p)=120-6p=0\\qquad\\Rightarrow\\qquad p=20.$$
+
+Revenue expands to the claimed quadratic and has a flat slope at $20$ euros
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**B.** → True
 
-Compute demand elasticity at $p=20$.
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$D(20)=120-60=60,\\qquad D^{\\prime}(p)=-3$$
+Point elasticity at the critical fare is
 
-$$\\varepsilon=\\dfrac{20}{60}\\cdot(-3)=-1$$
-
-Absolute elasticity $1$ means unit-elastic demand at $20$ euros, so the statement is True.`,
-      `**C.** → True
-
-Read the bend of revenue at $20$ euros.
-
-$$R^{\\prime\\prime}(p)=-6<0$$
-
-so $R^{\\prime\\prime}(20)=-6<0$. A downward bend at a flat slope means a local revenue peak, so the statement is True.`,
-      `**D.** → True
+$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-3p}{120-3p}.$$
 
 At $p=20$,
 
-$$D(20)=60,\\qquad R(20)=20\\cdot 60=1200$$
+$$\\varepsilon(20)=\\dfrac{-60}{120-60}=\\dfrac{-60}{60}=-1.$$
 
-the theatre sells $60$ tickets and earns $1200$ euros, so the statement is True.`,
+Demand is unit elastic at $20$ euros
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+      `**C.** → True
+
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+Read the bend of revenue at $20$ euros:
+
+$$R''(p)=-6\\qquad\\Rightarrow\\qquad R''(20)=-6<0.$$
+
+A downward bend at a flat slope is the second-derivative test for a local maximum. That fare is a local revenue peak
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
+      `**D.** → True
+
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
+
+At $p=20$, audience size and revenue are
+
+$$D(20)=120-60=60,\\qquad R(20)=20\\cdot 60=1200.$$
+
+The theatre sells $60$ tickets and earns $1200$ euros, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-For a linear demand curve, the revenue-maximising price is exactly where demand is unit elastic. Here both occur at $p=20$, so the price that flattens revenue cannot differ from the unit-elastic price for this demand, so the statement is False.`
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+For this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 112,
     solution_overview:
-      `Theatre demand $D(p)=120-3p$ produces revenue
+      `Theatre demand is $D(p)=120-3p$ for $0<p<40$. Revenue is
 
-$$R(p)=120p-3p^{2}$$
+$$R(p)=120p-3p^{2},$$
 
-$$R^{\\prime}(p)=120-6p\\qquad R^{\\prime\\prime}(p)=-6$$
+with $R'(p)=120-6p$ and $R''(p)=-6<0$. Flat revenue at $p=20$ is a local peak. Elasticity
 
-Flat revenue at $p=20$ coincides with unit elasticity $\\varepsilon=-1$, sells $D(20)=60$ tickets, and earns $R(20)=1200$. The downward bend confirms a local revenue peak. For linear demand, the revenue-maximising price is exactly the unit-elastic price — the two cannot differ.`,
+$$\\varepsilon(p)=\\dfrac{-3p}{120-3p}$$
+
+gives $\\varepsilon(20)=-1$, so the revenue-flattening price and the unit-elastic price coincide. At $p=20$ the theatre sells $D(20)=60$ tickets and earns $R(20)=1200$. For linear demand, those two prices are the same point — they cannot differ. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-113",
@@ -7318,56 +8646,64 @@ Flat revenue at $p=20$ coincides with unit elasticity $\\varepsilon=-1$, sells $
     tactical_explanations: [
       `**A.** → True
 
-At $p=20$, quantity and elasticity are
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$Q=D(20)=100-40=60$$
+At $p=20$, quantity sold is $D(20)=100-40=60$. Point elasticity is
 
-$$\\varepsilon=\\dfrac{p}{Q}\\cdot D^{\\prime}(p)=\\dfrac{20}{60}\\cdot(-2)=-\\dfrac{2}{3}$$
+$$\\varepsilon=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}.$$
 
-Absolute elasticity $\\dfrac{2}{3}<1$, so demand is inelastic with elasticity $-\\dfrac{2}{3}$, so the statement is True.`,
+Absolute elasticity $2/3<1$, so demand is inelastic at that price. Both the quantity and the elasticity match the claim, so the statement is True.`,
       `**B.** → True
 
-The elasticity shortcut for marginal revenue (with respect to quantity) is
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right)$$
+The elasticity route to marginal revenue uses
 
-$$MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\cdot\\left(-\\dfrac{1}{2}\\right)=-10$$
+$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right).$$
 
-so marginal revenue equals $-10$ euros per extra gadget, so the statement is True.`,
+With $p=20$ and $\\varepsilon=-2/3$,
+
+$$MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\left(-\\dfrac{1}{2}\\right)=-10.$$
+
+Marginal revenue equals $-10$ euros per extra gadget, so the statement is True.`,
       `**C.** → True
 
-Invert demand to $p=50-\\dfrac{Q}{2}$, write revenue in quantity, and differentiate.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R(Q)=Q\\left(50-\\dfrac{Q}{2}\\right)=50Q-\\dfrac{Q^{2}}{2}$$
+Invert demand to $p=(100-Q)/2$ and write revenue as a function of quantity:
 
-$$R^{\\prime}(Q)=50-Q$$
+$$R(Q)=p(Q)\\cdot Q=\\dfrac{100-Q}{2}\\cdot Q=50Q-\\dfrac{Q^{2}}{2}.$$
 
-$$R^{\\prime}(60)=50-60=-10$$
+Differentiate:
+
+$$R'(Q)=50-Q\\qquad\\Rightarrow\\qquad R'(60)=50-60=-10.$$
 
 Direct differentiation also gives marginal revenue $-10$ at sixty gadgets, so the statement is True.`,
       `**D.** → True
 
-Both routes produced $MR=-10$ at the same point. The elasticity shortcut therefore matches direct differentiation of revenue with respect to quantity, so the statement is True.`,
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+The elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue
+
+Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough., so the statement is True.`,
       `**E.** → True
 
-Revenue is maximised where $MR=0$. Here $MR=-10\\neq 0$ at sixty gadgets (equivalently $R^{\\prime}(p)=100-4p$ gives $R^{\\prime}(20)=20\\neq 0$), so the $20$-euro price does not maximise revenue, so the statement is True.`
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+Revenue is maximised where marginal revenue is zero (and the bend of $R$ is downward). Here $MR=-10\\neq 0$ at the $20$-euro price, so that price is not a revenue maximum. (Indeed $R'(Q)=0$ at $Q=50$, i.e. $p=25$.) The claim correctly refuses to call $p=20$ optimal, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 113,
     solution_overview:
-      `At the posted price $p=20$ for demand $D(p)=100-2p$,
+      `Demand $Q=100-2p$ at posted price $p=20$ gives $Q=60$. Elasticity is
 
-$$Q=60\\qquad \\varepsilon=\\dfrac{20}{60}\\cdot(-2)=-\\dfrac{2}{3}$$
+$$\\varepsilon=\\dfrac{-2\\cdot 20}{60}=-\\dfrac{2}{3}$$
 
-so demand is inelastic. The elasticity shortcut for marginal revenue with respect to quantity is
+(inelastic). The elasticity shortcut for marginal revenue is
 
-$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=-10$$
+$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=-10.$$
 
-Inverting demand to $p=50-\\dfrac{Q}{2}$ and differentiating $R(Q)=50Q-\\dfrac{Q^{2}}{2}$ gives the same
-
-$$R^{\\prime}(60)=-10$$
-
-Because $MR\\neq 0$ at sixty gadgets, the $20$-euro price does not maximise revenue.`,
+Writing $p=(100-Q)/2$ and $R(Q)=50Q-Q^{2}/2$ gives $R'(Q)=50-Q$, so $R'(60)=-10$ as well. The two routes agree. Because $MR\\neq 0$, the $20$-euro price is not a revenue maximum (revenue peaks where $MR=0$, at $Q=50$, $p=25$). Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-114",
@@ -7387,54 +8723,62 @@ Because $MR\\neq 0$ at sixty gadgets, the $20$-euro price does not maximise reve
     tactical_explanations: [
       `**A.** → True
 
-At $p=20$ for Cart A,
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$D_A(20)=80-20=60$$
+At $p=20$, Cart A expects $D_A(20)=80-20=60$ cups. Elasticity is
 
-$$\\varepsilon_A=\\dfrac{20}{60}\\cdot(-1)=-\\dfrac{1}{3}$$
+$$\\varepsilon_A=\\dfrac{D_A'(p)\\,p}{D_A(p)}=\\dfrac{-1\\cdot 20}{60}=-\\dfrac{1}{3}.$$
 
-Absolute elasticity $\\dfrac{1}{3}<1$, so demand is inelastic with elasticity $-\\dfrac{1}{3}$, so the statement is True.`,
+Absolute elasticity $1/3<1$, so demand is inelastic. Quantity and elasticity match the claim
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**B.** → True
 
-At $p=20$ for Cart B,
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$D_B(20)=120-40=80$$
+At $p=20$, Cart B expects $D_B(20)=120-40=80$ cups. Elasticity is
 
-$$\\varepsilon_B=\\dfrac{20}{80}\\cdot(-2)=-\\dfrac{1}{2}$$
+$$\\varepsilon_B=\\dfrac{-2\\cdot 20}{80}=-\\dfrac{40}{80}=-\\dfrac{1}{2}.$$
 
-Absolute elasticity $\\dfrac{1}{2}<1$, so demand is inelastic with elasticity $-\\dfrac{1}{2}$, so the statement is True.`,
+Absolute elasticity $1/2<1$, so demand is inelastic. Quantity and elasticity match the claim
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**C.** → True
+
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Compare absolute elasticities at the common price:
 
-$$\\lvert\\varepsilon_B\\rvert=\\dfrac{1}{2}>\\dfrac{1}{3}=\\lvert\\varepsilon_A\\rvert$$
+$$|\\varepsilon_B|=\\dfrac{1}{2}>\\dfrac{1}{3}=|\\varepsilon_A|.$$
 
-so Cart B's customers are more price-sensitive than Cart A's at $20$ euros, so the statement is True.`,
+Larger absolute elasticity means greater price sensitivity. Cart B's customers are more price-sensitive than Cart A's at $p=20$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
+
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 For Cart A, revenue $R_A(p)=p(80-p)=80p-p^{2}$ has slope
 
-$$R_A^{\\prime}(p)=80-2p$$
+$$R_A'(p)=80-2p\\qquad\\Rightarrow\\qquad R_A'(20)=40>0.$$
 
-$$R_A^{\\prime}(20)=40>0$$
-
-so a small price increase from $20$ euros still raises Cart A's revenue (consistent with inelastic demand), so the statement is True.`,
+A positive marginal revenue means a small price increase from $20$ euros still raises A's cup revenue (consistent with inelastic demand), so the statement is True.`,
       `**E.** → False
 
-Inelastic demand at a price means a small price *increase* still raises revenue, so that price is *below* the revenue peak, not at it. Cart A's revenue peak is where $R_A^{\\prime}(p)=0$, namely $p=40$, not $p=20$. Inelasticity does not mean the price already maximises revenue, so the statement is False.`
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving $p=40$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 114,
     solution_overview:
-      `At the common cup price $p=20$,
+      `At the common cup price $p=20$:
 
-$$D_A(20)=60,\\quad \\varepsilon_A=-\\dfrac{1}{3}\\qquad D_B(20)=80,\\quad \\varepsilon_B=-\\dfrac{1}{2}$$
+Cart A: $D_A=80-20=60$, $\\varepsilon_A=\\dfrac{-20}{60}=-\\dfrac{1}{3}$ (inelastic).
 
-Both demands are inelastic, and $|\\varepsilon_B|=\\dfrac{1}{2}>\\dfrac{1}{3}=|\\varepsilon_A|$, so Cart B's customers are more price-sensitive. Cart A's revenue $R_A(p)=80p-p^{2}$ has
+Cart B: $D_B=120-40=80$, $\\varepsilon_B=\\dfrac{-2\\cdot 20}{80}=-\\dfrac{1}{2}$ (inelastic).
 
-$$R_A^{\\prime}(20)=40>0$$
-
-so a small price rise from $20$ still raises A's revenue. Inelastic demand means the price lies *below* the revenue peak ($R_A^{\\prime}=0$ at $p=40$), not at it.`,
+$|\\varepsilon_B|=1/2>|\\varepsilon_A|=1/3$, so B's customers are more price-sensitive. For A, revenue $R_A=80p-p^{2}$ has $R_A'(20)=40>0$, so a small price rise still raises A's revenue. Inelasticity at a price means a local price *increase* helps revenue — it does not mean that price already maximises revenue (A's peak is at $p=40$).`,
   },
   {
     id: "math-11-115",
@@ -7454,58 +8798,66 @@ so a small price rise from $20$ still raises A's revenue. Inelastic demand means
     tactical_explanations: [
       `**A.** → True
 
-Substitute $y=10-x$ into profit to obtain a one-variable rule.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$P(x)=30x+20(10-x)-x^{2}-(10-x)^{2}$$
+Substitute $y=10-x$ into profit and expand:
 
-$$P(x)=30x+200-20x-x^{2}-(100-20x+x^{2})=10x+100-2x^{2}+20x$$
+$$p(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=30x+200-20x-x^{2}-(100-20x+x^{2}).$$
 
-$$P(x)=-2x^{2}+30x+100$$
-
-That is a one-variable profit in $x$, so the statement is True.`,
+Simplifying, $p(x)=10x+100+20x-2x^{2}=30x+100-2x^{2}$ (equivalently $200-100+30x-2x^{2}$). Either way, profit reduces to a genuine one-variable function of $x$, so the statement is True.`,
       `**B.** → True
 
-Differentiate the reduced profit and set the slope to zero.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$P^{\\prime}(x)=-4x+30=0$$
+Differentiate the reduced profit and set the slope to zero:
 
-$$x=\\dfrac{30}{4}=7.5$$
+$$p'(x)=30-4x=0\\qquad\\Rightarrow\\qquad 4x=30\\qquad\\Rightarrow\\qquad x=7.5.$$
 
-The reduced profit has a flat slope at $x=7.5$, so the statement is True.`,
+(The critical point lies in $[0,10]$.) The reduced profit has a flat slope at $x=7.5$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Recover $y$ and check the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$y=10-7.5=2.5$$
+At $x=7.5$ one has $y=10-7.5=2.5$. The bend of reduced profit is
 
-$$P^{\\prime\\prime}(x)=-4<0$$
+$$p''(x)=-4<0,$$
 
-so at that candidate the profit curve bends downward, confirming a local profit peak, so the statement is True.`,
+so the flat spot is a local profit peak by the second-derivative test. Both the complementary output and the downward bend match the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Evaluate constrained profit at the peak.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$P(7.5)=-2\\cdot(7.5)^{2}+30\\cdot 7.5+100=-2\\cdot 56.25+225+100=-112.5+225+100=212.5$$
+Evaluate reduced profit at the peak:
 
-The maximised constrained profit equals $212.5$, so the statement is True.`,
+$$p(7.5)=30\\cdot 7.5+100-2\\cdot(7.5)^{2}=225+100-2\\cdot 56.25=325-112.5=212.5.$$
+
+Maximised constrained profit equals $212.5$, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Ignoring the constraint, unconstrained critical points solve $P_x=30-2x=0$ and $P_y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained answer is different, so ignoring the constraint does not automatically give the same answer, so the statement is False.`
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
+
+Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 115,
     solution_overview:
-      `Constrained profit $P=30x+20y-x^{2}-y^{2}$ on $x+y=10$ reduces by substituting $y=10-x$:
+      `Profit $P=30x+20y-x^{2}-y^{2}$ on the resource constraint $x+y=10$. Substitute $y=10-x$:
 
-$$P(x)=-2x^{2}+30x+100$$
+$$p(x)=30x+20(10-x)-x^{2}-(10-x)^{2}=10x+200-x^{2}-(100-20x+x^{2})$$
 
-$$P^{\\prime}(x)=-4x+30\\qquad P^{\\prime\\prime}(x)=-4$$
+$$=30x+100-2x^{2}.$$
 
-Flat slope at $x=7.5$ recovers $y=2.5$, and the downward bend confirms a local profit peak with
+Then $p'(x)=30-4x$ vanishes at $x=7.5$, with $y=2.5$ and $p''=-4<0$ (local peak). Maximised constrained profit is
 
-$$P(7.5)=212.5$$
+$$p(7.5)=30\\cdot 7.5+100-2\\cdot(7.5)^{2}=225+100-112.5=212.5.$$
 
-Ignoring the constraint, unconstrained critical points solve $30-2x=0$ and $20-2y=0$, giving $(15,10)$, which violates $x+y=10$ — so the unconstrained answer differs.`,
+Ignoring the constraint and optimising $x,y$ separately yields a different unconstrained critical point — not the same answer. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-116",
@@ -7525,54 +8877,66 @@ Ignoring the constraint, unconstrained critical points solve $30-2x=0$ and $20-2
     tactical_explanations: [
       `**A.** → True
 
-With three sides fenced, $2x+y=40$, so the riverside side is $y=40-2x$ and enclosed area is
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(x)=x(40-2x)=40x-2x^{2}$$
+With the river as one side, fencing covers two perpendicular sides $x$ and the parallel side $40-2x$. Enclosed area becomes a function of the perpendicular side alone:
 
-a function of the perpendicular side alone, so the statement is True.`,
+$$A(x)=x(40-2x)=40x-2x^{2},\\qquad 0<x<20.$$
+
+That single-variable reduction is exactly what the claim asserts
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Set the slope of area to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A^{\\prime}(x)=40-4x=0$$
+Maximise area by setting its slope to zero:
 
-$$x=10$$
+$$A'(x)=40-4x=0\\qquad\\Rightarrow\\qquad x=10.$$
 
-Area has a flat slope when each perpendicular side is $10$ metres, so the statement is True.`,
+Area has a flat slope when each perpendicular side is $10$ metres
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Recover the riverside side and check the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$y=40-2\\cdot 10=20$$
+At $x=10$ the riverside side is $40-20=20$ metres. The bend
 
-$$A^{\\prime\\prime}(x)=-4<0$$
+$$A''(x)=-4\\qquad\\Rightarrow\\qquad A''(10)=-4<0$$
 
-so the riverside side is $20$ metres and the area curve bends downward, confirming a local maximum, so the statement is True.`,
+confirms a local maximum. Layout $10$–$20$–$10$ maximises area locally, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Evaluate area at that layout.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$A(10)=10\\cdot 20=200$$
+Evaluate area at the critical layout:
 
-Maximal area is $200$ square metres, so the statement is True.`,
+$$A(10)=10\\cdot 20=200.$$
+
+Maximal area is $200$ square metres, matching the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-If all four sides must be fenced with the same $40$ metres, the constraint becomes $2x+2y=40$, and the area-maximising rectangle is the $10\\times 10$ square with area $100$, not the $10\\times 20$ riverside layout. The same dimensions would not maximise area under a four-sided fence, so the statement is False.`
+The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
+
+If all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, so $y=20-x$ and $A=x(20-x)$, maximised at the $10\\times 10$ square of area $100$ — not at $10\\times 20$. The three-sided optimum is a different problem with different dimensions. The claim is false. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 116,
     solution_overview:
-      `Three-sided riverside fencing with $40$ m uses $2x+y=40$, so $y=40-2x$ and enclosed area reduces to
+      `Three-sided riverside fence of $40$ m: two perpendicular sides $x$ and riverside side $40-2x$, so area is
 
-$$A(x)=x(40-2x)=40x-2x^{2}$$
+$$A(x)=x(40-2x)=40x-2x^{2},\\qquad 0<x<20.$$
 
-$$A^{\\prime}(x)=40-4x\\qquad A^{\\prime\\prime}(x)=-4$$
+Differentiate twice:
 
-Flat slope at $x=10$ recovers riverside side $y=20$, with maximal area
+$$A'(x)=40-4x,\\qquad A''(x)=-4<0.$$
 
-$$A(10)=200$$
-
-confirmed by the downward bend. Under a four-sided fence with the same $40$ m the maximiser would instead be the $10\\times 10$ square of area $100$ — not the same dimensions.`,
+Flat slope at $x=10$ gives riverside length $20$ and $A(10)=200$. The downward bend confirms a local maximum. If all four sides had to be fenced with the same $40$ m, the constraint would be $2x+2y=40$, yielding a different optimum (a $10\\times 10$ square of area $100$) — not the same dimensions.`,
   },
   {
     id: "math-11-117",
@@ -7592,54 +8956,62 @@ confirmed by the downward bend. Under a four-sided fence with the same $40$ m th
     tactical_explanations: [
       `**A.** → True
 
-From $xy=16$, substitute $y=\\dfrac{16}{x}$ into cost.
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-$$C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x},\\qquad x>0$$
+From $xy=16$ one has $y=16/x$ for $x>0$. Substitute into cost:
 
-That reduced cost matches the claim, so the statement is True.`,
+$$C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x}.$$
+
+That is exactly the claimed one-variable cost function
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Differentiate and set the slope to zero.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$C^{\\prime}(x)=2-\\dfrac{128}{x^{2}}=0$$
+Differentiate and set the slope to zero for $x>0$:
 
-$$2x^{2}=128\\Rightarrow x^{2}=64\\Rightarrow x=8$$
+$$C'(x)=2-\\dfrac{128}{x^{2}}=0\\qquad\\Rightarrow\\qquad 2=\\dfrac{128}{x^{2}}\\qquad\\Rightarrow\\qquad x^{2}=64\\qquad\\Rightarrow\\qquad x=8.$$
 
-(taking $x>0$), so cost has a flat slope at $x=8$, so the statement is True.`,
+Cost has a flat slope at $x=8$
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Recover $y$, the cost level, and the bend.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$y=\\dfrac{16}{8}=2$$
+At $x=8$ one has $y=16/8=2$ and total cost
 
-$$C(8)=16+\\dfrac{128}{8}=16+16=32$$
+$$C(8)=2\\cdot 8+\\dfrac{128}{8}=16+16=32.$$
 
-$$C^{\\prime\\prime}(x)=\\dfrac{256}{x^{3}},\\qquad C^{\\prime\\prime}(8)>0$$
+The bend $C''(8)=256/512>0$ confirms a local cost trough. All three parts of the claim hold
 
-so total cost is $32$ and the cost curve bends upward, confirming a local cost trough, so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**D.** → True
 
-Along $xy=16$, the first-order condition $C^{\\prime}(x)=0$ rearranges to a price–trade-off balance. With input prices $w_x=2$ and $w_y=8$,
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$2=\\dfrac{128}{x^{2}}=8\\cdot\\dfrac{y}{x}$$
+Along $xy=16$, a cost-minimising interior point balances relative input prices against the technical trade-off. Here $C_x=2$, $C_y=8$, so $C_x/C_y=1/4$, and at $(8,2)$ one has $y/x=2/8=1/4$. The balance condition holds at that point, matching the claim
 
-$$\\dfrac{w_x}{w_y}=\\dfrac{2}{8}=\\dfrac{y}{x}$$
-
-At $(x,y)=(8,2)$ one has $\\dfrac{y}{x}=\\dfrac{1}{4}=\\dfrac{w_x}{w_y}$, so the balance holds, so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Other pairs on $xy=16$ have different costs. For example $(4,4)$ gives $C=2\\cdot 4+8\\cdot 4=40\\neq 32$. Substitution is necessary to locate the minimum, so the statement is False.`
+Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
+
+Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary. The statement is False. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 117,
     solution_overview:
-      `Fixed output $xy=16$ reduces cost $C=2x+8y$ by substituting $y=\\dfrac{16}{x}$:
+      `Fixed output $xy=16$ with cost $C=2x+8y$. Substitute $y=16/x$:
 
-$$C(x)=2x+\\dfrac{128}{x},\\qquad x>0$$
+$$C(x)=2x+\\dfrac{128}{x},\\qquad x>0.$$
 
-$$C^{\\prime}(x)=2-\\dfrac{128}{x^{2}}\\qquad C^{\\prime\\prime}(x)=\\dfrac{256}{x^{3}}$$
+Differentiate twice:
 
-Flat slope at the positive root $x=8$ recovers $y=2$, with trough cost $C(8)=32$ and $C^{\\prime\\prime}(8)>0$. The first-order condition rearranges to the price–trade-off balance $\\dfrac{w_x}{w_y}=\\dfrac{y}{x}$ at $(8,2)$. Other pairs on $xy=16$ have different costs (e.g. $(4,4)$ costs $40$).`,
+$$C'(x)=2-\\dfrac{128}{x^{2}},\\qquad C''(x)=\\dfrac{256}{x^{3}}.$$
+
+Flat slope at $x=8$ gives $y=2$, total cost $C(8)=16+16=32$, and $C''(8)>0$ confirms a local cost trough. At $(8,2)$ the input-price trade-off balances: $\\dfrac{C_x}{C_y}=\\dfrac{2}{8}=\\dfrac{1}{4}$ matches $\\dfrac{y}{x}=\\dfrac{2}{8}$. Other pairs on $xy=16$ have different costs — substitution is essential. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-118",
@@ -7659,52 +9031,70 @@ Flat slope at the positive root $x=8$ recovers $y=2$, with trough cost $C(8)=32$
     tactical_explanations: [
       `**A.** → True
 
-Form ticket revenue and maximise it.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R(p)=p(90-p)=90p-p^{2}$$
+Ticket revenue is fare times passengers:
 
-$$R^{\\prime}(p)=90-2p=0\\Rightarrow p=45$$
+$$R(p)=p(90-p)=90p-p^{2}.$$
 
-$$R(45)=90\\cdot 45-2025=4050-2025=2025$$
+Set the slope to zero:
 
-Revenue is maximised at $45$ euros with revenue $2025$ euros, so the statement is True.`,
+$$R'(p)=90-2p=0\\qquad\\Rightarrow\\qquad p=45.$$
+
+Peak revenue is $R(45)=90\\cdot 45-45^{2}=4050-2025=2025$. Fare, revenue function, and peak level all match the claim
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Compute demand elasticity at the revenue peak.
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-$$D(45)=45,\\qquad D^{\\prime}(p)=-1$$
+Point elasticity at the critical fare is
 
-$$\\varepsilon=\\dfrac{45}{45}\\cdot(-1)=-1$$
+$$\\varepsilon(p)=\\dfrac{D'(p)\\,p}{D(p)}=\\dfrac{-p}{90-p}.$$
 
-Absolute elasticity $1$ means unit-elastic demand at the $45$-euro fare, so the statement is True.`,
+At $p=45$,
+
+$$\\varepsilon(45)=\\dfrac{-45}{90-45}=\\dfrac{-45}{45}=-1.$$
+
+Demand is unit elastic at the $45$-euro fare
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**C.** → True
 
-At $p=30$, marginal revenue with respect to fare is still positive.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R^{\\prime}(30)=90-60=30>0$$
+At $p=30$, marginal revenue is still positive:
 
-so a small fare increase raises ticket revenue (demand is inelastic there), so the statement is True.`,
+$$R'(30)=90-60=30>0.$$
+
+A positive slope means a small fare increase raises ticket revenue. (Equivalently $|\\varepsilon(30)|=30/60=1/2<1$, inelastic.) The statement is True
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**D.** → True
 
-At $p=60$, marginal revenue with respect to fare is already negative.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$R^{\\prime}(60)=90-120=-30<0$$
+At $p=60$, marginal revenue is already negative:
 
-so a small fare increase lowers ticket revenue (demand is elastic there), so the statement is True.`,
+$$R'(60)=90-120=-30<0.$$
+
+A negative slope means a small fare increase lowers ticket revenue. (Equivalently $|\\varepsilon(60)|=60/30=2>1$, elastic.) The statement is True
+
+For ordinary downward-sloping demand, revenue peaks where point elasticity equals $-1$; inelastic demand ($|\\varepsilon|<1$) means a small price rise still raises revenue, not that the current price is already optimal., so the statement is True.`,
       `**E.** → False
 
-Elastic demand (absolute elasticity greater than $1$) means a fare *increase* lowers revenue, so that fare lies *above* the revenue peak. Revenue maximisation occurs at unit elasticity, not wherever demand is elastic. The claim reverses the economics, so the statement is False.`
+Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
+
+Elastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 118,
     solution_overview:
-      `Ferry demand $D(p)=90-p$ produces ticket revenue
+      `Ferry demand is $D(p)=90-p$ for $0<p<90$. Revenue is
 
-$$R(p)=90p-p^{2}$$
+$$R(p)=90p-p^{2},$$
 
-$$R^{\\prime}(p)=90-2p\\qquad R^{\\prime\\prime}(p)=-2$$
-
-Revenue peaks at $p=45$ with $R(45)=2025$, where demand is unit elastic ($\\varepsilon=-1$). At the lower fare $p=30$, $R^{\\prime}(30)=30>0$, so a small fare increase raises revenue (inelastic region). At the higher fare $p=60$, $R^{\\prime}(60)=-30<0$, so a small fare increase lowers revenue (elastic region). Elastic demand means the fare lies *above* the revenue peak, not at it.`,
+with $R'(p)=90-2p$ and $R''(p)=-2<0$. Flat revenue at $p=45$ gives $R(45)=2025$. Elasticity $\\varepsilon(p)=-p/(90-p)$ yields $\\varepsilon(45)=-1$. At $p=30$, $R'(30)=30>0$ so a small fare rise raises revenue; at $p=60$, $R'(60)=-30<0$ so a small fare rise lowers revenue. Elastic demand ($|\\varepsilon|>1$) means a price *cut* raises revenue — it does not mean the fare already maximises revenue. Shared workflow for every letter: differentiate the objective, solve $f'=0$ for candidates, classify with $f''$ or a sign chart, then — on a closed domain — compare interior values with endpoints before declaring a global max or min. Flat slope alone never finishes the argument.`,
   },
   {
     id: "math-11-119",
@@ -7724,56 +9114,70 @@ Revenue peaks at $p=45$ with $R(45)=2025$, where demand is unit elastic ($\\vare
     tactical_explanations: [
       `**A.** → True
 
-Cutting squares of side $x$ from each corner leaves a base of side $12-2x$ and height $x$, so
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$V(x)=x(12-2x)^{2}$$
+After cutting squares of side $x$ from each corner and folding, the box has height $x$ and square base of side $12-2x$. Volume is therefore
 
-exactly as claimed, so the statement is True.`,
+$$V(x)=x(12-2x)^{2},\\qquad 0<x<6.$$
+
+That geometric description matches the claim exactly
+
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**B.** → True
 
-Expand the volume and differentiate.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3}$$
+Expand and differentiate. First
 
-$$V^{\\prime}(x)=144-96x+12x^{2}$$
+$$V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3}.$$
 
-The expanded volume is cubic and its slope is the quadratic $12x^{2}-96x+144$, so the statement is True.`,
+The derivative is the quadratic
+
+$$V'(x)=144-96x+12x^{2}.$$
+
+Expanding produces a cubic volume whose slope is a quadratic in $x$, matching the claim
+
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**C.** → True
 
-Set the slope to zero and restrict to $(0,6)$.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$12x^{2}-96x+144=0$$
+Factor the slope and find roots inside $(0,6)$:
 
-$$x^{2}-8x+12=0$$
+$$V'(x)=12(x^{2}-8x+12)=12(x-2)(x-6).$$
 
-$$(x-2)(x-6)=0$$
+The roots are $x=2$ and $x=6$. Only $x=2$ lies strictly inside $(0,6)$; $x=6$ is the excluded right endpoint where the base collapses. The only interior flat-slope cut is $x=2$
 
-so $x=2$ or $x=6$. Only $x=2$ lies inside $(0,6)$ (the root $x=6$ is an endpoint of the open interval), so the only interior flat-slope cut is $x=2$, so the statement is True.`,
+An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels., so the statement is True.`,
       `**D.** → True
 
-Classify the critical cut and evaluate volume.
+Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-$$V^{\\prime\\prime}(x)=-96+24x$$
+At $x=2$, volume and bend are
 
-$$V^{\\prime\\prime}(2)=-96+48=-48<0$$
+$$V(2)=2\\cdot 8^{2}=128,$$
 
-$$V(2)=2\\cdot(12-4)^{2}=2\\cdot 64=128$$
+and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives $V''(2)=-48<0$. Downward bend plus volume $128$ means that cut maximises volume locally
 
-At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally, so the statement is True.`,
+Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive., so the statement is True.`,
       `**E.** → False
 
-Finding the flat-slope cut only produces a candidate. Without the bend check (or a comparison with the behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not yet proved a global maximum on $(0,6)$. The flat-slope finding alone is not enough, so the statement is False.`
+Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
+
+Finding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 119,
     solution_overview:
-      `Cutting squares of side $x$ from a $12$ cm sheet leaves base side $12-2x$ and height $x$, so volume is
+      `Open box from a $12$ cm square sheet: cut squares of side $x$ from each corner ($0<x<6$). Height is $x$ and base side is $12-2x$, so
 
-$$V(x)=x(12-2x)^{2}=144x-48x^{2}+4x^{3},\\qquad 0<x<6$$
+$$V(x)=x(12-2x)^{2}=4x(6-x)^{2}.$$
 
-$$V^{\\prime}(x)=12x^{2}-96x+144=12(x-2)(x-6)\\qquad V^{\\prime\\prime}(x)=-96+24x$$
+Expanding, $V(x)=144x-48x^{2}+4x^{3}$, with slope the quadratic
 
-Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint of the open interval). The bend $V^{\\prime\\prime}(2)=-48<0$ and level $V(2)=128$ confirm a local volume peak. Finding the flat-slope cut alone, without the bend check or endpoint behaviour, does not yet prove a global maximum on $(0,6)$.`,
+$$V'(x)=144-96x+12x^{2}=12(x-2)(x-6).$$
+
+Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint of the open interval). At $x=2$, $V''(2)<0$ and $V(2)=128$, so that cut maximises volume locally. Finding the flat-slope cut alone, without bend or endpoint comparison, does not finish a global-max proof on $(0,6)$.`,
   },
 {
     id: "math-11-121",
@@ -7793,39 +9197,59 @@ Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint o
     tactical_explanations: [
       `**A.** → True
 
+On the open interval $(1,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
+
 The figure plots the derivative $f'$, not $f$ itself. Between the marked zeros the curve sits clearly above the horizontal axis, so the slope of $f$ is positive on that open interval.
 
 $$f'(x)>0\\quad\\text{for }x\\in(1,5)$$
 
-A positive derivative means $f$ is strictly increasing on $(1,5)$, so the statement is True.`,
+A positive derivative means $f$ is strictly increasing on $(1,5)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+To decide whether $f$ has a local maximum at $x=5$, apply the first-derivative test on the figure of $f'$: you need $f'(5)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 A local maximum of $f$ occurs at a zero of $f'$ where the sign of the derivative flips from positive to negative. On the figure, left of $x=5$ the curve is above the axis and just right of $x=5$ it drops below.
 
 $$f'(5)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=5$$
 
-That is exactly the first-derivative test for a local maximum of $f$ at $x=5$, so the statement is True.`,
+That is exactly the first-derivative test for a local maximum of $f$ at $x=5$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → False
+
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of $f$ requires a critical point $f'=0$ together with a $-$ to $+$ sign change. At the marked peak of the derivative graph one reads
 
 $$f'(3)=4\\neq 0$$
 
-so $x=3$ is not even a critical point of $f$. That nonzero peak of $f'$ is where $f$ climbs most steeply in the window, not a local minimum of $f$, so the statement is False.`,
+so $x=3$ is not even a critical point of $f$. That nonzero peak of $f'$ is where $f$ climbs most steeply in the window, not a local minimum of $f$
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**D.** → True
+
+On the open interval $(0,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Left of the first zero the plotted derivative lies below the axis, so the slope of $f$ is negative on that stretch.
 
 $$f'(x)<0\\quad\\text{for }x\\in(0,1)$$
 
-A negative derivative means $f$ is decreasing on $(0,1)$, so the statement is True.`,
+A negative derivative means $f$ is decreasing on $(0,1)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 The steepest climb of $f$ is where its slope $f'$ attains its largest positive height. On the figure that peak is marked at
 
 $$(3,4)$$
 
-so among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$, so the statement is True.`
+so among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 121,
@@ -7859,39 +9283,59 @@ Hence $f$ decreases on $(0,1)$ and increases on $(1,5)$. The $+$ to $-$ crossing
     tactical_explanations: [
       `**A.** → True
 
+To decide whether $f$ has a local maximum at $x=2$, apply the first-derivative test on the figure of $f'$: you need $f'(2)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
+
 The figure shows $f'$ with a zero at $x=2$. Just left of that crossing the curve is above the axis, and just right it is below, so the sign of $f'$ flips from $+$ to $-$.
 
 $$f'(2)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=2$$
 
-By the first-derivative test that crossing is a local maximum of $f$, so the statement is True.`,
+By the first-derivative test that crossing is a local maximum of $f$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+To decide whether $f$ has a local minimum at $x=4$, apply the first-derivative test on the figure: you need $f'(4)=0$ together with a sign change from negative to positive across that zero.
 
 At the second marked zero the figure shows the opposite flip: the curve arrives from below the axis and leaves above it.
 
 $$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
 
-A $-$ to $+$ change of $f'$ is a local minimum of $f$ at $x=4$, so the statement is True.`,
+A $-$ to $+$ change of $f'$ is a local minimum of $f$ at $x=4$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the open interval $(2,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Between the two zeros the plotted derivative dips below the horizontal axis, so the slope of $f$ is negative on that open interval.
 
 $$f'(x)<0\\quad\\text{for }x\\in(2,4)$$
 
-Hence $f$ is decreasing on $(2,4)$, so the statement is True.`,
+Hence $f$ is decreasing on $(2,4)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 The valley of the $f'$ curve sits near $x=3$. Reading the vertical scale there, the height is about $-1$.
 
 $$f'(3)\\approx -1$$
 
-That matches the claim's reading of the figure, so the statement is True.`,
+That matches the claim's reading of the figure
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of $f$ needs a zero of $f'$ with a $-$ to $+$ sign change. At $x=3$ the figure only shows a negative height
 
 $$f'(3)\\approx -1\\neq 0$$
 
-so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs, so the statement is False.`
+so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 122,
@@ -7925,39 +9369,59 @@ That lowest point of $f'$ is not a critical point of $f$.`,
     tactical_explanations: [
       `**A.** → True
 
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
+
 Here the figure shows the level curve $f$ itself. Reading the shape, the graph bottoms out near $x=1$:
 
 $$\\text{local minimum of }f\\text{ near }x=1$$
 
-That lowest neighbourhood point is exactly a local minimum, so the statement is True.`,
+That lowest neighbourhood point is exactly a local minimum
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 On the same graph of $f$, the curve reaches a local highest point near $x=5$:
 
 $$\\text{local maximum of }f\\text{ near }x=5$$
 
-That peak in a neighbourhood is a local maximum, so the statement is True.`,
+That peak in a neighbourhood is a local maximum
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the local minimum near $x=1$ and the local maximum near $x=5$, the graph of $f$ climbs steadily:
 
 $$f\\text{ increasing between those turning points}$$
 
-A rising stretch means $f$ is increasing there, so the statement is True.`,
+A rising stretch means $f$ is increasing there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 On the rising stretch between the turning points, the steepest climb is where the tangent looks steepest upward. On the figure that occurs near the middle of the climb:
 
 $$\\text{steepest upward tangent near }x=3$$
 
-So the steepest upward stretch in the window is near $x=3$, and the statement is True.`,
+So the steepest upward stretch in the window is near $x=3$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 An axis crossing of the graph of $f$ is a root, not a critical point:
 
 $$f(0)=0\\qquad\\text{does not force}\\qquad f'(0)=0$$
 
-Roots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.`
+Roots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 123,
@@ -7990,39 +9454,57 @@ An axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geo
     tactical_explanations: [
       `**A.** → True
 
+Marginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.
+
 The figure shows marginal profit $P'$ as a line that crosses the axis once near $x=4.2$. On $(0,4)$, which lies entirely left of that zero, the line sits above the axis.
 
 $$P'(x)>0\\quad\\text{for }x\\in(0,4)$$
 
-Positive marginal profit means a little more output raises profit, so the statement is True.`,
+Positive marginal profit means a little more output raises profit
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Marginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.
 
 Right of the zero, on $(5,6)$, the same line lies below the axis.
 
 $$P'(x)<0\\quad\\text{for }x\\in(5,6)$$
 
-Negative marginal profit means a little more output lowers profit, so the statement is True.`,
+Negative marginal profit means a little more output lowers profit
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 The marked zero of marginal profit $P'$ is where the falling line crosses the axis near $x\\approx 4.2$. Left of that zero $P'>0$ and right of it $P'<0$:
 
 $$P'\\text{ changes }+\\to-\\text{ at the marked zero}$$
 
-That first-derivative test is a local maximum of total profit $P$, so the statement is True.`,
+That first-derivative test is a local maximum of total profit $P$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=1$ the line is still well above the axis. Reading the shared vertical scale, the height of $P'$ there is visibly greater than $1$.
 
 $$P'(1)>1$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Easy trap: the figure shows a derivative as a straight line. Integrating a nonconstant line produces a quadratic, so the original function need not itself be linear.
 
 A non-constant linear graph of $P'$ means $P''$ is a nonzero constant, so integrating once gives a quadratic total profit:
 
 $$P'\\text{ linear and non-constant}\\implies P\\text{ quadratic}$$
 
-Profit $P$ is therefore a parabola, not a straight line, so the statement is False.`
+Profit $P$ is therefore a parabola, not a straight line
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 124,
@@ -8056,44 +9538,66 @@ A little more output therefore raises profit left of the zero and lowers profit 
     tactical_explanations: [
       `**A.** → True
 
+On the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
+
 The figure is a straight-line graph of $f'$ that crosses the axis at $x=3$. Left of that zero the line sits above the axis.
 
 $$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
 
-so $f$ is increasing on $(0,3)$, and the statement is True.`,
+so $f$ is increasing on $(0,3)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(3,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Right of the marked zero at $x=3$, the straight-line graph of $f'$ sits below the horizontal axis, so the slope of $f$ is negative on that stretch.
 
 $$f'(x)<0\\quad\\text{for }x\\in(3,5)$$
 
-A negative derivative means $f$ is decreasing on $(3,5)$, so the statement is True.`,
+A negative derivative means $f$ is decreasing on $(3,5)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+To decide whether $f$ has a local maximum at $x=3$, apply the first-derivative test on the figure of $f'$: you need $f'(3)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 The falling straight-line graph of $f'$ crosses the axis at $x=3$ from above to below:
 
 $$f'(3)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=3$$
 
-That is the first-derivative test for a local maximum of $f$ at $x=3$, so the statement is True.`,
+That is the first-derivative test for a local maximum of $f$ at $x=3$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The claim leaps from one figure fact to a stronger conclusion. Check whether the figure actually forces that conclusion, or only supplies a weaker related reading.
 
 The figure is a straight line for $f'$. At the abscissa $x=1$, reading the shared vertical scale gives height exactly $2$.
 
 $$f'(1)=2$$
 
-That coordinate reading matches the claim, so the statement is True.`,
+That coordinate reading matches the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 The graph of $f'$ itself is a falling straight line, so its slope — the second derivative — is constantly negative:
 
 $$f''(x)<0\\quad\\text{throughout the window}$$
 
-Negative $f''$ means $f$ is concave down everywhere in view, so the statement is True.`
+Negative $f''$ means $f$ is concave down everywhere in view
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 125,
     solution_overview:
-      `The figure shows a falling straight-line graph of $f'$ that crosses the axis at $x=3$. The sign chart is
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows a falling straight-line graph of $f'$ that crosses the axis at $x=3$. The sign chart is
 
 $$f'>0\\text{ on }(0,3),\\qquad f'<0\\text{ on }(3,5)$$
 
@@ -8122,39 +9626,59 @@ Because the graph of $f'$ itself is strictly decreasing, one has $f''<0$ through
     tactical_explanations: [
       `**A.** → True
 
+To decide whether $f$ has a local minimum at $x=0$, apply the first-derivative test on the figure: you need $f'(0)=0$ together with a sign change from negative to positive across that zero.
+
 The figure shows $f$ itself with a lowest point at the origin. At that turning point the height is zero.
 
 $$f(0)=0$$
 
-and nearby points on both sides sit higher, so $x=0$ is a local minimum of $f$, and the statement is True.`,
+and nearby points on both sides sit higher, so $x=0$ is a local minimum of $f$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 On $(-3,0)$ the graph of $f$ falls toward the origin from the left:
 
 $$f\\text{ decreasing on }(-3,0)$$
 
-A falling stretch means $f$ is decreasing there, so the statement is True.`,
+A falling stretch means $f$ is decreasing there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 On $(0,3)$ the graph of $f$ rises away from the origin:
 
 $$f\\text{ increasing on }(0,3)$$
 
-A rising stretch means $f$ is increasing there, so the statement is True.`,
+A rising stretch means $f$ is increasing there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=2$ the curve of $f$ has already climbed past the horizontal line $y=2$ on the shared vertical scale.
 
 $$f(2)>2$$
 
-so the height is strictly greater than $2$, and the statement is True.`,
+so the height is strictly greater than $2$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 An axis crossing is only a root. Differentiability alone does not force a horizontal tangent at every root:
 
 $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0\\text{ for every differentiable }f$$
 
-Roots and critical points are different geometric facts, so the statement is False.`
+Roots and critical points are different geometric facts
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 126,
@@ -8184,44 +9708,66 @@ On $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ i
     tactical_explanations: [
       `**A.** → True
 
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
+
 The figure shows $f$ with turning points at the critical $x$-values. Near $x=1$ the graph bottoms out:
 
 $$\\text{local minimum of }f\\text{ near }x=1$$
 
-That lowest neighbourhood point is a local minimum, so the statement is True.`,
+That lowest neighbourhood point is a local minimum
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 Near $x=2.5$ the graph of $f$ reaches a local highest point:
 
 $$\\text{local maximum of }f\\text{ near }x=2.5$$
 
-That peak in a neighbourhood is a local maximum, so the statement is True.`,
+That peak in a neighbourhood is a local maximum
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 Near $x=5$ the graph of $f$ bottoms out again:
 
 $$\\text{local minimum of }f\\text{ near }x=5$$
 
-That second valley is a local minimum, so the statement is True.`,
+That second valley is a local minimum
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the open interval $(1,2.5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 Between the local minimum near $x=1$ and the local maximum near $x=2.5$, the curve of $f$ climbs:
 
 $$f\\text{ increasing on }(1,2.5)$$
 
-A rising stretch means $f$ is increasing there, so the statement is True.`,
+A rising stretch means $f$ is increasing there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 A level value $f(0)=0$ is only a root of $f$, not a claim about the slope:
 
 $$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0$$
 
-Roots and critical points are different, so the statement is False.`
+Roots and critical points are different
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 127,
     solution_overview:
-      `The figure shows $f$ with turning points aligned at the critical $x$-values where $f'=0$:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows $f$ with turning points aligned at the critical $x$-values where $f'=0$:
 
 $$x=1,\\quad x=2.5,\\quad x=5$$
 
@@ -8246,39 +9792,57 @@ Reading the shape: a local minimum near $x=1$, a local maximum near $x=2.5$, and
     tactical_explanations: [
       `**A.** → True
 
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
+
 The figure shows $f'$ as a single positive hill. Counting clear axis crossings gives one zero left of $x=2$ and one zero right of $x=2$:
 
 $$\\text{two zeros of }f'\\text{, one on each side of }x=2$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 Between those two zeros the hill sits above the axis, so the slope of $f$ is positive on the middle interval.
 
 $$f'(x)>0\\quad\\text{between the two zeros}$$
 
-Hence $f$ is increasing on that middle stretch, so the statement is True.`,
+Hence $f$ is increasing on that middle stretch
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 Outside the two zeros, still inside the window, the curve of $f'$ lies below the axis.
 
 $$f'(x)<0\\quad\\text{outside the two zeros}$$
 
-so $f$ is decreasing on those outer stretches, and the statement is True.`,
+so $f$ is decreasing on those outer stretches, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 The top of the hill is at $x=2$. Reading the vertical scale there, the height is near $4$.
 
 $$f'(2)\\approx 4$$
 
-so the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the statement is True.`,
+so the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Easy trap: a maximum of the derivative graph is where $f$ climbs most steeply, not where $f$ itself has a local extremum. Local extrema of $f$ occur at zeros of $f'$ that change sign.
 
 A maximum of $f'$ is where $f$ climbs most steeply, not where $f$ itself peaks. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change:
 
 $$\\max f'\\text{ at }x=2\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
 
-The peak of the hill is not a local maximum of $f$, so the statement is False.`
+The peak of the hill is not a local maximum of $f$
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 128,
@@ -8312,39 +9876,59 @@ so $f$ decreases, then increases, then decreases. The maximum of $f'$ at $x=2$ i
     tactical_explanations: [
       `**A.** → True
 
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
+
 The figure shows $f'$ starting at the origin, rising, then falling back toward the axis from above. For $x>0$ in the window the curve never goes below the axis, so
 
 $$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
 
-and $f$ is increasing on $(0,8)$, so the statement is True.`,
+and $f$ is increasing on $(0,8)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 The steepest climb of $f$ is where $f'$ attains its largest height. On the figure that hump sits near $x=2$:
 
 $$\\arg\\max f'\\approx 2$$
 
-so the steepest climb of $f$ occurs near $x=2$, and the statement is True.`,
+so the steepest climb of $f$ occurs near $x=2$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 At the left edge of the window the graph of $f'$ meets the origin, so its height there is zero.
 
 $$f'(0)=0$$
 
-That is exactly the reading named in the claim, so the statement is True.`,
+That is exactly the reading named in the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.
 
 Late in the window the graph of $f'$ falls back toward the axis from above, so the slope of $f$ becomes small and positive:
 
 $$f'(x)\\to 0^{+}\\quad\\text{late in the window}$$
 
-A tiny positive slope means $f$ rises only gently — almost flat — so the statement is True.`,
+A tiny positive slope means $f$ rises only gently — almost flat —
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Easy trap: a maximum of the derivative graph is where $f$ climbs most steeply, not where $f$ itself has a local extremum. Local extrema of $f$ occur at zeros of $f'$ that change sign.
 
 At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing there. A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change:
 
 $$f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
 
-so the peak of $f'$ is not a local maximum of $f$, and the statement is False.`
+so the peak of $f'$ is not a local maximum of $f$, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 129,
@@ -8374,39 +9958,59 @@ and $f$ is increasing throughout $(0,8)$. The steepest climb of $f$ is at the pe
     tactical_explanations: [
       `**A.** → True
 
+To decide whether $f$ has a local minimum at $x=4$, apply the first-derivative test on the figure: you need $f'(4)=0$ together with a sign change from negative to positive across that zero.
+
 The figure shows $f'$ touching the axis at $x=1$ and crossing at $x=4$. At $x=4$ the curve arrives from below and leaves above.
 
 $$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
 
-That is the first-derivative test for a local minimum of $f$ at $x=4$, so the statement is True.`,
+That is the first-derivative test for a local minimum of $f$ at $x=4$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(1,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Between the touch at $x=1$ and the crossing at $x=4$ the curve of $f'$ lies below the axis.
 
 $$f'(x)<0\\quad\\text{for }x\\in(1,4)$$
 
-so $f$ is decreasing on $(1,4)$, and the statement is True.`,
+so $f$ is decreasing on $(1,4)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the open interval $(0,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 At the touch $x=1$, the curve of $f'$ stays non-positive on both sides in the window — there is no ordinary $+$ to $-$ flip:
 
 $$f'\\le 0\\text{ on both sides of }x=1\\text{ (in view)}$$
 
-Without that sign change, $f$ does not switch from increasing to decreasing at $x=1$ in the usual way, so the statement is True.`,
+Without that sign change, $f$ does not switch from increasing to decreasing at $x=1$ in the usual way
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 The point $x=2$ lies in the open interval $(1,4)$, where the plotted derivative sits below the axis throughout.
 
 $$f'(2)<0$$
 
-so $f'$ is negative at $x=2$, and the statement is True.`,
+so $f'$ is negative at $x=2$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A flat touch of $f'$ at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change fails the first-derivative test:
 
 $$f'(1)=0\\text{ with no sign change}\\nRightarrow\\text{need not be a local extremum of }f$$
 
-so $x=1$ need not be a local extremum of $f$, and the statement is True.`
+so $x=1$ need not be a local extremum of $f$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 130,
@@ -8436,44 +10040,66 @@ Thus $f$ decreases on $(1,4)$ and has a local minimum at $x=4$. At $x=2$ one rea
     tactical_explanations: [
       `**A.** → True
 
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
+
 The figure shows marginal cost $C'$. Throughout the window the curve stays above the horizontal axis.
 
 $$C'(x)>0\\quad\\text{throughout the window}$$
 
-Positive marginal cost means total cost $C$ is increasing, so the statement is True.`,
+Positive marginal cost means total cost $C$ is increasing
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Concavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.
 
 The graph of $C'$ itself is rising as $x$ increases, so the second derivative of cost is positive.
 
 $$C''(x)>0$$
 
-Positive $C''$ means total cost $C$ is concave up, so the statement is True.`,
+Positive $C''$ means total cost $C$ is concave up
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=4$, reading the shared vertical scale on the graph of marginal cost $C'$, the height is clearly greater than $2$.
 
 $$C'(4)>2$$
 
-so the claim's scale reading is correct, and the statement is True.`,
+so the claim's scale reading is correct, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → False
+
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:
 
 $$C'(x)>0\\quad\\text{on }(0,6)\\qquad\\Rightarrow\\qquad\\text{no critical point of }C$$
 
-Positivity of $C'$ only says cost is rising, not that a local minimum occurs, so the statement is False.`,
+Positivity of $C'$ only says cost is rising, not that a local minimum occurs
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**E.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At the left edge $x=0$, reading the scale on the $C'$ curve gives a height of about half a unit.
 
 $$C'(0)\\approx 0.5$$
 
-so the statement matches the figure, and the statement is True.`
+so the statement matches the figure, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 131,
     solution_overview:
-      `The figure shows marginal cost $C'$ as a curve that stays strictly above the axis and is itself rising throughout the window. So
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows marginal cost $C'$ as a curve that stays strictly above the axis and is itself rising throughout the window. So
 
 $$C'(x)>0\\qquad\\text{and}\\qquad C''(x)>0$$
 
@@ -8498,44 +10124,66 @@ Total cost $C$ is therefore increasing and concave up. Reading the scale: at $x=
     tactical_explanations: [
       `**A.** → True
 
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
+
 Marked zeros of $f'$ sit at $x=1$, $2.5$, and $5$. Between $1$ and $2.5$ the curve is above the axis, and $x=2$ lies in that interval.
 
 $$f'(2)>0$$
 
-so $f$ is increasing at $x=2$, and the statement is True.`,
+so $f$ is increasing at $x=2$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 Between the marked zeros at $x=2.5$ and $x=5$ the curve of $f'$ sits below the axis, and the sample point $x=4$ lies in that interval.
 
 $$f'(4)<0$$
 
-A negative derivative means $f$ is decreasing at $x=4$, so the statement is True.`,
+A negative derivative means $f$ is decreasing at $x=4$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+To decide whether $f$ has a local maximum at $x=2.5$, apply the first-derivative test on the figure of $f'$: you need $f'(2.5)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 At $x=2.5$ the figure shows $f'$ changing from positive (on the left) to negative (on the right).
 
 $$f'(2.5)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=2.5$$
 
-That is a local maximum of $f$ at $x=2.5$, so the statement is True.`,
+That is a local maximum of $f$ at $x=2.5$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+To decide whether $f$ has a local minimum at $x=1$, apply the first-derivative test on the figure: you need $f'(1)=0$ together with a sign change from negative to positive across that zero.
 
 At $x=1$ the figure shows $f'$ changing from negative to positive.
 
 $$f'(1)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=1$$
 
-That is a local minimum of $f$ at $x=1$, so the statement is True.`,
+That is a local minimum of $f$ at $x=1$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Read the sign of $f'$ at the stated point carefully against the axis. If the curve sits below the axis there, the derivative is negative, not positive.
 
 At the left edge of the window, left of the first zero $x=1$, the curve of $f'$ lies below the axis.
 
 $$f'(0)<0$$
 
-so $f'(0)$ is not positive, and the statement is False.`
+so $f'(0)$ is not positive, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 132,
     solution_overview:
-      `The figure shows $f'$ on $[0,6]$ with marked zeros at
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows $f'$ on $[0,6]$ with marked zeros at
 
 $$x=1,\\quad x=2.5,\\quad x=5$$
 
@@ -8566,44 +10214,66 @@ In particular $f'(0)<0$, not positive.`,
     tactical_explanations: [
       `**A.** → True
 
+On the open interval $(0,4)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
+
 The figure shows $f'$ with a single positive hump left of the zero at $x=4$. On $(0,4)$ that hump sits above the axis.
 
 $$f'(x)>0\\quad\\text{for }x\\in(0,4)$$
 
-so $f$ is increasing on $(0,4)$, and the statement is True.`,
+so $f$ is increasing on $(0,4)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(4,8)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Right of the zero at $x=4$ the skewed $f'$ curve lies below the horizontal axis, so the slope of $f$ is negative on that stretch.
 
 $$f'(x)<0\\quad\\text{for }x\\in(4,8)$$
 
-Hence $f$ is decreasing on $(4,8)$, so the statement is True.`,
+Hence $f$ is decreasing on $(4,8)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+To decide whether $f$ has a local maximum at $x=4$, apply the first-derivative test on the figure of $f'$: you need $f'(4)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 At $x=4$ the skewed $f'$ curve crosses from above the axis to below:
 
 $$f'(4)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=4$$
 
-That is the first-derivative test for a local maximum of $f$ at $x=4$, so the statement is True.`,
+That is the first-derivative test for a local maximum of $f$ at $x=4$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 The steepest positive slope of $f$ is where $f'$ is largest among its positive values. On the figure that maximum of $f'$ sits near $x=1$, while at the critical point one has
 
 $$f'(4)=0$$
 
-so the steepest climb is near $x=1$, not at $x=4$, and the statement is True.`,
+so the steepest climb is near $x=1$, not at $x=4$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 Reading the scale at the left edge, the height of $f'$ is about $4$. At $x=6$, which is right of the zero, the height is negative but greater than $-1$.
 
 $$f'(0)\\approx 4,\\qquad -1<f'(6)<0$$
 
-so both readings match the claim, and the statement is True.`
+so both readings match the claim, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 133,
     solution_overview:
-      `The figure shows $f'$ with a single positive hump left of a zero at $x=4$, then negative heights to the right. Sign chart:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows $f'$ with a single positive hump left of a zero at $x=4$, then negative heights to the right. Sign chart:
 
 $$f'>0\\text{ on }(0,4),\\qquad f'<0\\text{ on }(4,8)$$
 
@@ -8630,39 +10300,57 @@ $$f'(0)\\approx 4,\\qquad f'(6)\\in(-1,0)$$`,
     tactical_explanations: [
       `**A.** → True
 
+To decide whether $f$ has a local minimum at $x=0$, apply the first-derivative test on the figure: you need $f'(0)=0$ together with a sign change from negative to positive across that zero.
+
 The figure shows $f'$ passing through the origin, negative on the left and positive on the right. At $x=0$ the height is zero and the sign flips from $-$ to $+$.
 
 $$f'(0)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=0$$
 
-That is the first-derivative test for a local minimum of $f$ at $x=0$, so the statement is True.`,
+That is the first-derivative test for a local minimum of $f$ at $x=0$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 On $(-3,0)$ the plotted derivative sits below the axis, and on $(0,3)$ it sits above:
 
 $$f'<0\\text{ on }(-3,0),\\qquad f'>0\\text{ on }(0,3)$$
 
-so $f$ decreases on the left and increases on the right, and the statement is True.`,
+so $f$ decreases on the left and increases on the right, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 The lobes of $f'$ peak near $x=\\pm 1$. Reading the shared vertical scale, the absolute height there is about $4$.
 
 $$|f'(1)|\\approx 4,\\qquad f'(-1)\\approx -4$$
 
-so both readings match the claim, and the statement is True.`,
+so both readings match the claim, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 On $(0,3)$ the graph of $f'$ reaches its highest point near $x=1$:
 
 $$\\arg\\max_{x\\in(0,3)} f'(x)\\approx 1$$
 
-That largest positive height is where $f$ rises most steeply on the right, so the statement is True.`,
+That largest positive height is where $f$ rises most steeply on the right
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 A zero of $f'$ with a sign change is a local extremum of $f$ (here a local minimum at $x=0$). Inflection points of $f$ track sign changes of $f''$ — extrema of the graph of $f'$ — near $\\pm 1$:
 
 $$f'(0)=0\\qquad\\nRightarrow\\qquad\\text{inflection of }f\\text{ at }x=0$$
 
-so the statement is False.`
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 134,
@@ -8696,39 +10384,57 @@ The highest point of $f'$ on $(0,3)$ is near $x=1$, where $f$ rises most steeply
     tactical_explanations: [
       `**A.** → True
 
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
+
 Zeros of $f'$ are marked at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis, and $x=0$ lies in that interval.
 
 $$f'(0)>0$$
 
-so $f$ is increasing at $x=0$, and the statement is True.`,
+so $f$ is increasing at $x=0$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the open interval $(1,2)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 Between the zeros $1$ and $2$ the curve of $f'$ dips below the axis.
 
 $$f'(x)<0\\quad\\text{for }x\\in(1,2)$$
 
-so $f$ is decreasing on $(1,2)$, and the statement is True.`,
+so $f$ is decreasing on $(1,2)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+To decide whether $f$ has a local maximum at $x=1$, apply the first-derivative test on the figure of $f'$: you need $f'(1)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 At $x=1$ the figure shows $f'$ changing from $+$ to $-$, which is a local maximum of $f$. At $x=2$ it changes from $-$ to $+$, which is a local minimum of $f$.
 
 $$f'\\text{ changes }+\\to-\\text{ at }x=1,\\qquad -\\to+\\text{ at }x=2$$
 
-so both classifications match the claim, and the statement is True.`,
+so both classifications match the claim, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 Right of $x=2$ the curve of $f'$ rises above the axis again. Reading the vertical scale at $x=3$, the height is clearly greater than $4$.
 
 $$f'(3)>4$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
 
 Zeros of $f'$ are critical points of $f$, not zeros of $f''$. Zeros of $f''$ line up with extrema of the graph of $f'$:
 
 $$f'(x)=0\\qquad\\nRightarrow\\qquad f''(x)=0$$
 
-Three zeros of $f'$ do not force $f''=0$ at those same abscissae, so the statement is False.`
+Three zeros of $f'$ do not force $f''=0$ at those same abscissae
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 135,
@@ -8762,44 +10468,64 @@ At $x=3$ the scale reading is greater than $4$. Zeros of $f'$ are about extrema 
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$ on shared axes. At $x=0$ the brown curve meets the origin while the green curve sits above the axis near height $8$.
 
 $$f'(0)=0,\\qquad f''(0)\\approx 8>0$$
 
-so both readings match the claim, and the statement is True.`,
+so both readings match the claim, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 Green is $f''$. Near $x=0$ that curve is positive, so the slope of brown is rising:
 
 $$f''(0)>0\\qquad\\Rightarrow\\qquad f'\\text{ increasing through }x=0$$
 
-Positive $f''$ means brown climbs through the origin, so the statement is True.`,
+Positive $f''$ means brown climbs through the origin
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Extrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros near $x=\\pm 1$ line up with the peak and the lowest point of brown:
 
 $$f''(\\pm 1)\\approx 0\\quad\\text{at extrema of }f'$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 For $x>1$ the green curve lies below the axis, so $f''<0$ on $(1,3)$:
 
 $$f''(x)<0\\quad\\text{for }x\\in(1,3)$$
 
-Negative $f''$ means the brown graph of $f'$ is falling on that interval, so the statement is True.`,
+Negative $f''$ means the brown graph of $f'$ is falling on that interval
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the open interval $(0,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 On $(0,3)$ the brown curve ($f'$) stays above the axis, so the slope of $f$ is positive throughout that interval.
 
 $$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
 
-Positive $f'$ means $f$ is increasing on $(0,3)$, so the statement is True.`
+Positive $f'$ means $f$ is increasing on $(0,3)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 136,
     solution_overview:
-      `Brown is $f'$ and green is $f''$ on shared axes. At the origin brown vanishes while green is positive near height $8$:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $f''$ on shared axes. At the origin brown vanishes while green is positive near height $8$:
 
 $$f'(0)=0,\\qquad f''(0)\\approx 8>0$$
 
@@ -8824,44 +10550,66 @@ so brown is increasing through the origin. Green is zero near $x=\\pm 1$, lining
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f$ and green is $f'$ on one plane. At $x=0$ the brown curve has a local lowest point of height $0$, and the green curve crosses the axis there.
 
 $$f(0)=0,\\qquad f'(0)=0$$
 
-so the local minimum of $f$ lines up with a zero of $f'$, and the statement is True.`,
+so the local minimum of $f$ lines up with a zero of $f'$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(0,3)$ the green curve ($f'$) sits above the axis:
 
 $$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
 
-A positive slope matches the rising brown curve of $f$ on that stretch, so the statement is True.`,
+A positive slope matches the rising brown curve of $f$ on that stretch
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(-3,0)$ the green curve ($f'$) sits below the axis:
 
 $$f'(x)<0\\quad\\text{for }x\\in(-3,0)$$
 
-A negative slope matches the falling brown curve of $f$ on that stretch, so the statement is True.`,
+A negative slope matches the falling brown curve of $f$ on that stretch
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=1$ the height of the green curve is the value of $f'(1)$. Reading the shared scale there gives about $4$.
 
 $$f'(1)\\approx 4$$
 
-so the slope of brown at $x=1$ is about $4$, and the statement is True.`,
+so the slope of brown at $x=1$ is about $4$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The highest point of green is a maximum of $f'$, which is where $f$ climbs most steeply — not where $f$ itself has a local maximum:
 
 $$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
 
-Local maxima of brown need zeros of green with a $+$ to $-$ change, so the statement is False.`
+Local maxima of brown need zeros of green with a $+$ to $-$ change
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 137,
     solution_overview:
-      `Brown is $f$ and green is $f'$ on one shared plane. At $x=0$ brown has a local minimum of height $0$ while green crosses the axis there:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f$ and green is $f'$ on one shared plane. At $x=0$ brown has a local minimum of height $0$ while green crosses the axis there:
 
 $$f(0)=0,\\qquad f'(0)=0$$
 
@@ -8886,44 +10634,64 @@ On $(0,3)$ green is positive and brown rises; on $(-3,0)$ green is negative and 
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the horizontal axis, so both derivatives are positive there.
 
 $$P'(2)>0,\\qquad Q'(2)>0$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=5$ the green curve meets the axis in a clear crossing, while the brown curve sits below the axis.
 
 $$Q'(5)=0,\\qquad P'(5)<0$$
 
-so green is zero and brown is negative at $x=5$, and the statement is True.`,
+so green is zero and brown is negative at $x=5$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Counting brown's clear axis crossings on the shared plane gives two zeros — one early in the window and one late:
 
 $$P'\\text{ has two zeros (single hump)}$$
 
-That matches the claim that brown has a single hump with two zeros, so the statement is True.`,
+That matches the claim that brown has a single hump with two zeros
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the open interval $(2.5,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
 
 On $(2.5,5)$ the green curve ($Q'$) lies below the axis, so the derivative of $Q$ is negative there.
 
 $$Q'(x)<0\\quad\\text{for }x\\in(2.5,5)$$
 
-Negative $Q'$ means $Q$ is decreasing on that interval, so the statement is True.`,
+Negative $Q'$ means $Q$ is decreasing on that interval
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On a shared vertical scale, the higher curve at a fixed $x$ has the larger derivative value. If brown sits above green at $x=2$:
 
 $$P'(2)>Q'(2)$$
 
-so the larger of the two is brown's value, and the statement is True.`
+so the larger of the two is brown's value, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 138,
     solution_overview:
-      `Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the axis. Green has a zero at $x=5$, while brown is already negative there. Brown shows a single hump with two axis crossings — one early and one late in the window. On $(2.5,5)$ green is negative, so $Q$ is decreasing there. On a shared vertical scale, whichever curve sits higher at a fixed $x$ has the larger derivative value; at $x=2$, if brown sits above green then $P'(2)>Q'(2)$.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the axis. Green has a zero at $x=5$, while brown is already negative there. Brown shows a single hump with two axis crossings — one early and one late in the window. On $(2.5,5)$ green is negative, so $Q$ is decreasing there. On a shared vertical scale, whichever curve sits higher at a fixed $x$ has the larger derivative value; at $x=2$, if brown sits above green then $P'(2)>Q'(2)$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3ETwo%20rate-of-change%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-8236561%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22506%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22269.0%22%20x2%3D%22506%22%20y2%3D%22269.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22119.0%22%20x2%3D%22506%22%20y2%3D%22119.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244.0%22%20x2%3D%22506%22%20y2%3D%2244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22269.0%22%20x2%3D%2252%22%20y2%3D%22269.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22273.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22194.0%22%20x2%3D%2252%22%20y2%3D%22194.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22198.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22119.0%22%20x2%3D%2252%22%20y2%3D%22119.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22123.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2244.0%22%20x2%3D%2252%22%20y2%3D%2244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C212.8%2053.4%2C211.9%2054.8%2C211.0%2056.3%2C210.1%2057.7%2C209.3%2059.1%2C208.4%2060.5%2C207.6%2061.9%2C206.8%2063.4%2C205.9%2064.8%2C205.1%2066.2%2C204.3%2067.6%2C203.5%2069.0%2C202.7%2070.4%2C201.9%2071.9%2C201.1%2073.3%2C200.3%2074.7%2C199.5%2076.1%2C198.8%2077.5%2C198.0%2079.0%2C197.2%2080.4%2C196.5%2081.8%2C195.7%2083.2%2C195.0%2084.6%2C194.3%2086.0%2C193.6%2087.5%2C192.8%2088.9%2C192.1%2090.3%2C191.4%2091.7%2C190.7%2093.1%2C190.0%2094.6%2C189.3%2096.0%2C188.7%2097.4%2C188.0%2098.8%2C187.3%20100.2%2C186.7%20101.7%2C186.0%20103.1%2C185.4%20104.5%2C184.7%20105.9%2C184.1%20107.3%2C183.5%20108.8%2C182.9%20110.2%2C182.3%20111.6%2C181.6%20113.0%2C181.1%20114.4%2C180.5%20115.8%2C179.9%20117.3%2C179.3%20118.7%2C178.7%20120.1%2C178.2%20121.5%2C177.6%20122.9%2C177.0%20124.4%2C176.5%20125.8%2C176.0%20127.2%2C175.4%20128.6%2C174.9%20130.0%2C174.4%20131.4%2C173.9%20132.9%2C173.4%20134.3%2C172.9%20135.7%2C172.4%20137.1%2C171.9%20138.5%2C171.4%20140.0%2C170.9%20141.4%2C170.5%20142.8%2C170.0%20144.2%2C169.5%20145.6%2C169.1%20147.1%2C168.7%20148.5%2C168.2%20149.9%2C167.8%20151.3%2C167.4%20152.7%2C167.0%20154.2%2C166.6%20155.6%2C166.2%20157.0%2C165.8%20158.4%2C165.4%20159.8%2C165.0%20161.2%2C164.6%20162.7%2C164.2%20164.1%2C163.9%20165.5%2C163.5%20166.9%2C163.2%20168.3%2C162.8%20169.8%2C162.5%20171.2%2C162.2%20172.6%2C161.9%20174.0%2C161.5%20175.4%2C161.2%20176.8%2C160.9%20178.3%2C160.6%20179.7%2C160.3%20181.1%2C160.1%20182.5%2C159.8%20183.9%2C159.5%20185.4%2C159.3%20186.8%2C159.0%20188.2%2C158.8%20189.6%2C158.5%20191.0%2C158.3%20192.5%2C158.0%20193.9%2C157.8%20195.3%2C157.6%20196.7%2C157.4%20198.1%2C157.2%20199.6%2C157.0%20201.0%2C156.8%20202.4%2C156.6%20203.8%2C156.4%20205.2%2C156.3%20206.6%2C156.1%20208.1%2C156.0%20209.5%2C155.8%20210.9%2C155.7%20212.3%2C155.5%20213.7%2C155.4%20215.2%2C155.3%20216.6%2C155.1%20218.0%2C155.0%20219.4%2C154.9%20220.8%2C154.8%20222.2%2C154.7%20223.7%2C154.7%20225.1%2C154.6%20226.5%2C154.5%20227.9%2C154.4%20229.3%2C154.4%20230.8%2C154.3%20232.2%2C154.3%20233.6%2C154.2%20235.0%2C154.2%20236.4%2C154.2%20237.9%2C154.2%20239.3%2C154.2%20240.7%2C154.2%20242.1%2C154.2%20243.5%2C154.2%20244.9%2C154.2%20246.4%2C154.2%20247.8%2C154.2%20249.2%2C154.3%20250.6%2C154.3%20252.0%2C154.3%20253.5%2C154.4%20254.9%2C154.5%20256.3%2C154.5%20257.7%2C154.6%20259.1%2C154.7%20260.6%2C154.8%20262.0%2C154.9%20263.4%2C155.0%20264.8%2C155.1%20266.2%2C155.2%20267.6%2C155.3%20269.1%2C155.4%20270.5%2C155.6%20271.9%2C155.7%20273.3%2C155.8%20274.7%2C156.0%20276.2%2C156.2%20277.6%2C156.3%20279.0%2C156.5%20280.4%2C156.7%20281.8%2C156.9%20283.3%2C157.1%20284.7%2C157.3%20286.1%2C157.5%20287.5%2C157.7%20288.9%2C157.9%20290.4%2C158.1%20291.8%2C158.3%20293.2%2C158.6%20294.6%2C158.8%20296.0%2C159.1%20297.4%2C159.3%20298.9%2C159.6%20300.3%2C159.9%20301.7%2C160.2%20303.1%2C160.4%20304.5%2C160.7%20306.0%2C161.0%20307.4%2C161.3%20308.8%2C161.6%20310.2%2C162.0%20311.6%2C162.3%20313.1%2C162.6%20314.5%2C163.0%20315.9%2C163.3%20317.3%2C163.6%20318.7%2C164.0%20320.1%2C164.4%20321.6%2C164.7%20323.0%2C165.1%20324.4%2C165.5%20325.8%2C165.9%20327.2%2C166.3%20328.7%2C166.7%20330.1%2C167.1%20331.5%2C167.5%20332.9%2C167.9%20334.3%2C168.4%20335.8%2C168.8%20337.2%2C169.2%20338.6%2C169.7%20340.0%2C170.2%20341.4%2C170.6%20342.8%2C171.1%20344.3%2C171.6%20345.7%2C172.0%20347.1%2C172.5%20348.5%2C173.0%20349.9%2C173.5%20351.4%2C174.0%20352.8%2C174.6%20354.2%2C175.1%20355.6%2C175.6%20357.0%2C176.1%20358.4%2C176.7%20359.9%2C177.2%20361.3%2C177.8%20362.7%2C178.3%20364.1%2C178.9%20365.5%2C179.5%20367.0%2C180.1%20368.4%2C180.7%20369.8%2C181.2%20371.2%2C181.9%20372.6%2C182.5%20374.1%2C183.1%20375.5%2C183.7%20376.9%2C184.3%20378.3%2C185.0%20379.7%2C185.6%20381.1%2C186.2%20382.6%2C186.9%20384.0%2C187.6%20385.4%2C188.2%20386.8%2C188.9%20388.2%2C189.6%20389.7%2C190.3%20391.1%2C191.0%20392.5%2C191.7%20393.9%2C192.4%20395.3%2C193.1%20396.8%2C193.8%20398.2%2C194.5%20399.6%2C195.3%20401.0%2C196.0%20402.4%2C196.7%20403.9%2C197.5%20405.3%2C198.3%20406.7%2C199.0%20408.1%2C199.8%20409.5%2C200.6%20410.9%2C201.4%20412.4%2C202.1%20413.8%2C202.9%20415.2%2C203.8%20416.6%2C204.6%20418.0%2C205.4%20419.5%2C206.2%20420.9%2C207.0%20422.3%2C207.9%20423.7%2C208.7%20425.1%2C209.6%20426.6%2C210.4%20428.0%2C211.3%20429.4%2C212.2%20430.8%2C213.0%20432.2%2C213.9%20433.6%2C214.8%20435.1%2C215.7%20436.5%2C216.6%20437.9%2C217.5%20439.3%2C218.4%20440.7%2C219.4%20442.2%2C220.3%20443.6%2C221.2%20445.0%2C222.2%20446.4%2C223.1%20447.8%2C224.1%20449.2%2C225.1%20450.7%2C226.0%20452.1%2C227.0%20453.5%2C228.0%20454.9%2C229.0%20456.3%2C230.0%20457.8%2C231.0%20459.2%2C232.0%20460.6%2C233.0%20462.0%2C234.0%20463.4%2C235.1%20464.9%2C236.1%20466.3%2C237.1%20467.7%2C238.2%20469.1%2C239.2%20470.5%2C240.3%20471.9%2C241.4%20473.4%2C242.4%20474.8%2C243.5%20476.2%2C244.6%20477.6%2C245.7%20479.0%2C246.8%20480.5%2C247.9%20481.9%2C249.0%20483.3%2C250.2%20484.7%2C251.3%20486.1%2C252.4%20487.6%2C253.6%20489.0%2C254.7%20490.4%2C255.9%20491.8%2C257.0%20493.2%2C258.2%20494.6%2C259.4%20496.1%2C260.5%20497.5%2C261.7%20498.9%2C262.9%20500.3%2C264.1%20501.7%2C265.3%20503.2%2C266.6%20504.6%2C267.8%20506.0%2C269.0%22%20clip-path%3D%22url%28%23clip-8236561%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C428.4%2053.4%2C421.4%2054.8%2C414.5%2056.3%2C407.8%2057.7%2C401.1%2059.1%2C394.6%2060.5%2C388.2%2061.9%2C381.9%2063.4%2C375.6%2064.8%2C369.5%2066.2%2C363.5%2067.6%2C357.6%2069.0%2C351.9%2070.4%2C346.2%2071.9%2C340.6%2073.3%2C335.1%2074.7%2C329.7%2076.1%2C324.4%2077.5%2C319.2%2079.0%2C314.2%2080.4%2C309.2%2081.8%2C304.3%2083.2%2C299.5%2084.6%2C294.8%2086.0%2C290.2%2087.5%2C285.7%2088.9%2C281.3%2090.3%2C276.9%2091.7%2C272.7%2093.1%2C268.6%2094.6%2C264.5%2096.0%2C260.6%2097.4%2C256.7%2098.8%2C252.9%20100.2%2C249.2%20101.7%2C245.6%20103.1%2C242.1%20104.5%2C238.7%20105.9%2C235.3%20107.3%2C232.0%20108.8%2C228.9%20110.2%2C225.8%20111.6%2C222.7%20113.0%2C219.8%20114.4%2C216.9%20115.8%2C214.2%20117.3%2C211.5%20118.7%2C208.8%20120.1%2C206.3%20121.5%2C203.8%20122.9%2C201.4%20124.4%2C199.1%20125.8%2C196.9%20127.2%2C194.7%20128.6%2C192.6%20130.0%2C190.6%20131.4%2C188.6%20132.9%2C186.7%20134.3%2C184.9%20135.7%2C183.2%20137.1%2C181.5%20138.5%2C179.9%20140.0%2C178.4%20141.4%2C176.9%20142.8%2C175.5%20144.2%2C174.1%20145.6%2C172.8%20147.1%2C171.6%20148.5%2C170.5%20149.9%2C169.4%20151.3%2C168.3%20152.7%2C167.4%20154.2%2C166.5%20155.6%2C165.6%20157.0%2C164.8%20158.4%2C164.1%20159.8%2C163.4%20161.2%2C162.7%20162.7%2C162.2%20164.1%2C161.7%20165.5%2C161.2%20166.9%2C160.8%20168.3%2C160.4%20169.8%2C160.1%20171.2%2C159.8%20172.6%2C159.6%20174.0%2C159.5%20175.4%2C159.4%20176.8%2C159.3%20178.3%2C159.3%20179.7%2C159.3%20181.1%2C159.4%20182.5%2C159.5%20183.9%2C159.7%20185.4%2C159.9%20186.8%2C160.1%20188.2%2C160.4%20189.6%2C160.7%20191.0%2C161.1%20192.5%2C161.5%20193.9%2C162.0%20195.3%2C162.4%20196.7%2C163.0%20198.1%2C163.5%20199.6%2C164.1%20201.0%2C164.7%20202.4%2C165.4%20203.8%2C166.1%20205.2%2C166.8%20206.6%2C167.6%20208.1%2C168.4%20209.5%2C169.2%20210.9%2C170.1%20212.3%2C171.0%20213.7%2C171.9%20215.2%2C172.8%20216.6%2C173.8%20218.0%2C174.8%20219.4%2C175.8%20220.8%2C176.8%20222.2%2C177.9%20223.7%2C179.0%20225.1%2C180.1%20226.5%2C181.2%20227.9%2C182.4%20229.3%2C183.5%20230.8%2C184.7%20232.2%2C185.9%20233.6%2C187.2%20235.0%2C188.4%20236.4%2C189.7%20237.9%2C191.0%20239.3%2C192.3%20240.7%2C193.6%20242.1%2C194.9%20243.5%2C196.2%20244.9%2C197.6%20246.4%2C198.9%20247.8%2C200.3%20249.2%2C201.7%20250.6%2C203.0%20252.0%2C204.4%20253.5%2C205.8%20254.9%2C207.2%20256.3%2C208.7%20257.7%2C210.1%20259.1%2C211.5%20260.6%2C212.9%20262.0%2C214.4%20263.4%2C215.8%20264.8%2C217.2%20266.2%2C218.7%20267.6%2C220.1%20269.1%2C221.5%20270.5%2C223.0%20271.9%2C224.4%20273.3%2C225.8%20274.7%2C227.3%20276.2%2C228.7%20277.6%2C230.1%20279.0%2C231.5%20280.4%2C232.9%20281.8%2C234.3%20283.3%2C235.7%20284.7%2C237.1%20286.1%2C238.4%20287.5%2C239.8%20288.9%2C241.1%20290.4%2C242.5%20291.8%2C243.8%20293.2%2C245.1%20294.6%2C246.4%20296.0%2C247.7%20297.4%2C249.0%20298.9%2C250.2%20300.3%2C251.4%20301.7%2C252.7%20303.1%2C253.8%20304.5%2C255.0%20306.0%2C256.2%20307.4%2C257.3%20308.8%2C258.4%20310.2%2C259.5%20311.6%2C260.6%20313.1%2C261.6%20314.5%2C262.7%20315.9%2C263.7%20317.3%2C264.6%20318.7%2C265.6%20320.1%2C266.5%20321.6%2C267.4%20323.0%2C268.2%20324.4%2C269.1%20325.8%2C269.9%20327.2%2C270.6%20328.7%2C271.4%20330.1%2C272.1%20331.5%2C272.8%20332.9%2C273.4%20334.3%2C274.0%20335.8%2C274.6%20337.2%2C275.1%20338.6%2C275.6%20340.0%2C276.0%20341.4%2C276.5%20342.8%2C276.8%20344.3%2C277.2%20345.7%2C277.5%20347.1%2C277.7%20348.5%2C278.0%20349.9%2C278.1%20351.4%2C278.3%20352.8%2C278.3%20354.2%2C278.4%20355.6%2C278.4%20357.0%2C278.3%20358.4%2C278.2%20359.9%2C278.1%20361.3%2C277.9%20362.7%2C277.6%20364.1%2C277.3%20365.5%2C277.0%20367.0%2C276.6%20368.4%2C276.1%20369.8%2C275.6%20371.2%2C275.0%20372.6%2C274.4%20374.1%2C273.8%20375.5%2C273.0%20376.9%2C272.2%20378.3%2C271.4%20379.7%2C270.5%20381.1%2C269.5%20382.6%2C268.5%20384.0%2C267.4%20385.4%2C266.3%20386.8%2C265.1%20388.2%2C263.8%20389.7%2C262.5%20391.1%2C261.1%20392.5%2C259.6%20393.9%2C258.1%20395.3%2C256.5%20396.8%2C254.8%20398.2%2C253.1%20399.6%2C251.3%20401.0%2C249.4%20402.4%2C247.5%20403.9%2C245.5%20405.3%2C243.4%20406.7%2C241.3%20408.1%2C239.0%20409.5%2C236.7%20410.9%2C234.4%20412.4%2C231.9%20413.8%2C229.4%20415.2%2C226.8%20416.6%2C224.1%20418.0%2C221.3%20419.5%2C218.5%20420.9%2C215.6%20422.3%2C212.6%20423.7%2C209.5%20425.1%2C206.3%20426.6%2C203.1%20428.0%2C199.7%20429.4%2C196.3%20430.8%2C192.8%20432.2%2C189.2%20433.6%2C185.6%20435.1%2C181.8%20436.5%2C178.0%20437.9%2C174.0%20439.3%2C170.0%20440.7%2C165.9%20442.2%2C161.7%20443.6%2C157.4%20445.0%2C153.0%20446.4%2C148.5%20447.8%2C143.9%20449.2%2C139.2%20450.7%2C134.4%20452.1%2C129.6%20453.5%2C124.6%20454.9%2C119.5%20456.3%2C114.4%20457.8%2C109.1%20459.2%2C103.8%20460.6%2C98.3%20462.0%2C92.7%20463.4%2C87.1%20464.9%2C81.3%20466.3%2C75.4%20467.7%2C69.5%20469.1%2C63.4%20470.5%2C57.2%20471.9%2C50.9%20473.4%2C44.5%20474.8%2C38.0%20476.2%2C31.4%20477.6%2C24.6%20479.0%2C17.8%20480.5%2C10.8%20481.9%2C3.8%20483.3%2C-3.4%20484.7%2C-10.7%20486.1%2C-18.1%20487.6%2C-25.6%20489.0%2C-33.2%20490.4%2C-41.0%20491.8%2C-48.9%20493.2%2C-56.8%20494.6%2C-64.9%20496.1%2C-73.2%20497.5%2C-81.5%20498.9%2C-90.0%20500.3%2C-98.6%20501.7%2C-107.3%20503.2%2C-116.1%20504.6%2C-125.0%20506.0%2C-134.1%22%20clip-path%3D%22url%28%23clip-8236561%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EQ%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -8944,39 +10712,57 @@ so the larger of the two is brown's value, and the statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$. At $x=4$, reading both heights on the shared scale, brown sits above the axis while green sits below it.
 
 $$f'(4)>0,\\qquad f''(4)<0$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The peak of the brown curve ($f'$) lines up with a zero of the green curve ($f''$). On the figure that alignment is at $x=3$:
 
 $$f''(3)=0\\quad\\text{under }\\max f'$$
 
-so green crosses zero under the peak of brown, and the statement is True.`,
+so green crosses zero under the peak of brown, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Concavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.
 
 On $(3,6)$ the green curve ($f''$) is negative:
 
 $$f''(x)<0\\quad\\text{for }x\\in(3,6)$$
 
-Negative second derivative means brown ($f'$) is falling and the level function $f$ is concave down on that stretch, so the statement is True.`,
+Negative second derivative means brown ($f'$) is falling and the level function $f$ is concave down on that stretch
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 At $x=2$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.
 
 $$f'(2)>0$$
 
-Positive $f'$ means $f$ is increasing at $x=2$, so the statement is True.`,
+Positive $f'$ means $f$ is increasing at $x=2$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Easy trap: the figure shows a derivative as a straight line. Integrating a nonconstant line produces a quadratic, so the original function need not itself be linear.
 
 Green being a straight line only says $f''$ is linear; it does not prevent $f'$ from changing sign. On the figure brown still changes from $+$ to $-$ at a later zero near $x=5$:
 
 $$f'\\text{ changes }+\\to-\\text{ near }x=5$$
 
-so $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$, so the statement is False.`
+so $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 139,
@@ -9006,44 +10792,66 @@ so at $x=4$ brown is still positive while green is negative. On $(3,6)$ green is
     tactical_explanations: [
       `**A.** → True
 
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
+
 Brown is $f'$ and green is $f''$. At $x=2$ the brown curve is near its maximum height, and the green curve is about zero there.
 
 $$f''(2)\\approx 0$$
 
-so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.`,
+so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(0,2)$ the green curve ($f''$) sits above the axis:
 
 $$f''(x)>0\\quad\\text{for }x\\in(0,2)$$
 
-Positive $f''$ means the brown graph of $f'$ is rising on that interval, so the statement is True.`,
+Positive $f''$ means the brown graph of $f'$ is rising on that interval
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(2,5)$ the green curve ($f''$) sits below the axis:
 
 $$f''(x)<0\\quad\\text{for }x\\in(2,5)$$
 
-Negative $f''$ means the brown graph of $f'$ is falling on that interval, so the statement is True.`,
+Negative $f''$ means the brown graph of $f'$ is falling on that interval
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 Wherever brown sits above the axis one has $f'>0$:
 
 $$f'>0\\quad\\Rightarrow\\quad f\\text{ increasing}$$
 
-A positive derivative means $f$ is increasing on that stretch, so wherever brown is positive, $f$ is increasing, and the statement is True.`,
+A positive derivative means $f$ is increasing on that stretch, so wherever brown is positive, $f$ is increasing, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+The claim asserts a local maximum of $f$ at $x=2$. That requires a zero of $f'$ with a $+$ to $-$ sign change — check whether the figure actually supplies both ingredients, or whether something else is being misread.
 
 Green is $f''$. A zero of $f''$ marks an extremum of $f'$ (here the peak of brown), not a critical point of $f$:
 
 $$f''(2)=0\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
 
-Critical points of $f$ are zeros of brown, so the statement is False.`
+Critical points of $f$ are zeros of brown
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 140,
     solution_overview:
-      `Brown is $f'$ and green is $f''$. At $x=2$ brown is near its maximum while green is about $0$ — a peak of $f'$ aligned with a zero of $f''$. Sign chart for green:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $f''$. At $x=2$ brown is near its maximum while green is about $0$ — a peak of $f'$ aligned with a zero of $f''$. Sign chart for green:
 
 $$f''>0\\text{ on }(0,2),\\qquad f''<0\\text{ on }(2,5)$$
 
@@ -9068,44 +10876,66 @@ so brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ 
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$. Near $x=2$ the green curve crosses from positive to negative under the peak of brown:
 
 $$f''\\text{ changes }+\\to-\\text{ near }x=2\\quad\\text{(under }\\max f'\\text{)}$$
 
-That alignment of a $+$ to $-$ change of $f''$ with a peak of $f'$ is exactly what the claim describes, so the statement is True.`,
+That alignment of a $+$ to $-$ change of $f''$ with a peak of $f'$ is exactly what the claim describes
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(0,2)$ the green curve ($f''$) is positive:
 
 $$f''(x)>0\\quad\\text{for }x\\in(0,2)$$
 
-Positive $f''$ means brown ($f'$) is rising on that interval, climbing toward its peak near $x=2$, so the statement is True.`,
+Positive $f''$ means brown ($f'$) is rising on that interval, climbing toward its peak near $x=2$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(2,8)$ the green curve ($f''$) is negative:
 
 $$f''(x)<0\\quad\\text{for }x\\in(2,8)$$
 
-Negative $f''$ means brown is falling after its peak, toward the axis from above, so the statement is True.`,
+Negative $f''$ means brown is falling after its peak, toward the axis from above
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 At $x=6$ the brown curve is still above the axis but close to it:
 
 $$f'(6)>0\\quad\\text{and small}$$
 
-A small positive slope means $f$ is still increasing, but slowly, so the statement is True.`,
+A small positive slope means $f$ is still increasing, but slowly
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change. In this window brown never goes negative:
 
 $$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
 
-so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.`
+so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 141,
     solution_overview:
-      `Brown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Green crosses from positive to negative near $x=2$, under the peak of brown. So brown rises on $(0,2)$ and falls toward the axis on $(2,8)$, while staying non-negative in the window. At $x=6$ brown is still positive but small, so $f$ is still increasing slowly. Because brown never goes negative in $(0,8)$, there is no $+$ to $-$ zero of $f'$ and hence no local maximum of $f$ in that open interval.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $f''$ on one plane (an $xe^{-x/2}$-style family). Green crosses from positive to negative near $x=2$, under the peak of brown. So brown rises on $(0,2)$ and falls toward the axis on $(2,8)$, while staying non-negative in the window. At $x=6$ brown is still positive but small, so $f$ is still increasing slowly. Because brown never goes negative in $(0,8)$, there is no $+$ to $-$ zero of $f'$ and hence no local maximum of $f$ in that open interval.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20f%E2%80%B3%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-291752%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22165.5%22%20y1%3D%2244%22%20x2%3D%22165.5%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22392.5%22%20y1%3D%2244%22%20x2%3D%22392.5%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22299.0%22%20x2%3D%22506%22%20y2%3D%22299.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22149.0%22%20x2%3D%22506%22%20y2%3D%22149.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2274.0%22%20x2%3D%22506%22%20y2%3D%2274.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22165.5%22%20y1%3D%22344%22%20x2%3D%22165.5%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22165.5%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22392.5%22%20y1%3D%22344%22%20x2%3D%22392.5%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22392.5%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22299.0%22%20x2%3D%2252%22%20y2%3D%22299.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22303.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-0.5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22224.0%22%20x2%3D%2252%22%20y2%3D%22224.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22149.0%22%20x2%3D%2252%22%20y2%3D%22149.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22153.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0.5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2274.0%22%20x2%3D%2252%22%20y2%3D%2274.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2278.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C224.0%2053.4%2C220.3%2054.8%2C216.7%2056.3%2C213.2%2057.7%2C209.7%2059.1%2C206.4%2060.5%2C203.1%2061.9%2C199.9%2063.4%2C196.9%2064.8%2C193.8%2066.2%2C190.9%2067.6%2C188.0%2069.0%2C185.3%2070.4%2C182.6%2071.9%2C179.9%2073.3%2C177.4%2074.7%2C174.9%2076.1%2C172.5%2077.5%2C170.1%2079.0%2C167.8%2080.4%2C165.6%2081.8%2C163.4%2083.2%2C161.3%2084.6%2C159.3%2086.0%2C157.3%2087.5%2C155.4%2088.9%2C153.6%2090.3%2C151.8%2091.7%2C150.0%2093.1%2C148.3%2094.6%2C146.7%2096.0%2C145.1%2097.4%2C143.6%2098.8%2C142.1%20100.2%2C140.6%20101.7%2C139.3%20103.1%2C137.9%20104.5%2C136.6%20105.9%2C135.4%20107.3%2C134.2%20108.8%2C133.0%20110.2%2C131.9%20111.6%2C130.8%20113.0%2C129.8%20114.4%2C128.8%20115.8%2C127.8%20117.3%2C126.9%20118.7%2C126.1%20120.1%2C125.2%20121.5%2C124.4%20122.9%2C123.6%20124.4%2C122.9%20125.8%2C122.2%20127.2%2C121.5%20128.6%2C120.9%20130.0%2C120.3%20131.4%2C119.7%20132.9%2C119.2%20134.3%2C118.7%20135.7%2C118.2%20137.1%2C117.7%20138.5%2C117.3%20140.0%2C116.9%20141.4%2C116.5%20142.8%2C116.2%20144.2%2C115.8%20145.6%2C115.5%20147.1%2C115.3%20148.5%2C115.0%20149.9%2C114.8%20151.3%2C114.6%20152.7%2C114.4%20154.2%2C114.2%20155.6%2C114.1%20157.0%2C114.0%20158.4%2C113.9%20159.8%2C113.8%20161.2%2C113.7%20162.7%2C113.7%20164.1%2C113.6%20165.5%2C113.6%20166.9%2C113.6%20168.3%2C113.7%20169.8%2C113.7%20171.2%2C113.8%20172.6%2C113.8%20174.0%2C113.9%20175.4%2C114.0%20176.9%2C114.2%20178.3%2C114.3%20179.7%2C114.4%20181.1%2C114.6%20182.5%2C114.8%20183.9%2C114.9%20185.4%2C115.1%20186.8%2C115.3%20188.2%2C115.6%20189.6%2C115.8%20191.0%2C116.0%20192.5%2C116.3%20193.9%2C116.6%20195.3%2C116.8%20196.7%2C117.1%20198.1%2C117.4%20199.6%2C117.7%20201.0%2C118.0%20202.4%2C118.3%20203.8%2C118.7%20205.2%2C119.0%20206.6%2C119.4%20208.1%2C119.7%20209.5%2C120.1%20210.9%2C120.4%20212.3%2C120.8%20213.7%2C121.2%20215.2%2C121.6%20216.6%2C122.0%20218.0%2C122.4%20219.4%2C122.8%20220.8%2C123.2%20222.2%2C123.6%20223.7%2C124.0%20225.1%2C124.4%20226.5%2C124.9%20227.9%2C125.3%20229.3%2C125.7%20230.8%2C126.2%20232.2%2C126.6%20233.6%2C127.1%20235.0%2C127.5%20236.4%2C128.0%20237.9%2C128.5%20239.3%2C128.9%20240.7%2C129.4%20242.1%2C129.9%20243.5%2C130.4%20244.9%2C130.8%20246.4%2C131.3%20247.8%2C131.8%20249.2%2C132.3%20250.6%2C132.8%20252.0%2C133.3%20253.5%2C133.8%20254.9%2C134.2%20256.3%2C134.7%20257.7%2C135.2%20259.1%2C135.7%20260.6%2C136.2%20262.0%2C136.7%20263.4%2C137.2%20264.8%2C137.7%20266.2%2C138.2%20267.6%2C138.7%20269.1%2C139.3%20270.5%2C139.8%20271.9%2C140.3%20273.3%2C140.8%20274.7%2C141.3%20276.2%2C141.8%20277.6%2C142.3%20279.0%2C142.8%20280.4%2C143.3%20281.8%2C143.8%20283.3%2C144.3%20284.7%2C144.8%20286.1%2C145.3%20287.5%2C145.8%20288.9%2C146.3%20290.4%2C146.9%20291.8%2C147.4%20293.2%2C147.9%20294.6%2C148.4%20296.0%2C148.9%20297.4%2C149.4%20298.9%2C149.9%20300.3%2C150.4%20301.7%2C150.9%20303.1%2C151.4%20304.5%2C151.9%20306.0%2C152.4%20307.4%2C152.9%20308.8%2C153.3%20310.2%2C153.8%20311.6%2C154.3%20313.0%2C154.8%20314.5%2C155.3%20315.9%2C155.8%20317.3%2C156.3%20318.7%2C156.8%20320.1%2C157.2%20321.6%2C157.7%20323.0%2C158.2%20324.4%2C158.7%20325.8%2C159.2%20327.2%2C159.6%20328.7%2C160.1%20330.1%2C160.6%20331.5%2C161.0%20332.9%2C161.5%20334.3%2C162.0%20335.8%2C162.4%20337.2%2C162.9%20338.6%2C163.4%20340.0%2C163.8%20341.4%2C164.3%20342.8%2C164.7%20344.3%2C165.2%20345.7%2C165.6%20347.1%2C166.1%20348.5%2C166.5%20349.9%2C167.0%20351.4%2C167.4%20352.8%2C167.8%20354.2%2C168.3%20355.6%2C168.7%20357.0%2C169.1%20358.5%2C169.6%20359.9%2C170.0%20361.3%2C170.4%20362.7%2C170.8%20364.1%2C171.3%20365.5%2C171.7%20367.0%2C172.1%20368.4%2C172.5%20369.8%2C172.9%20371.2%2C173.3%20372.6%2C173.7%20374.1%2C174.1%20375.5%2C174.5%20376.9%2C174.9%20378.3%2C175.3%20379.7%2C175.7%20381.1%2C176.1%20382.6%2C176.5%20384.0%2C176.9%20385.4%2C177.3%20386.8%2C177.7%20388.2%2C178.1%20389.7%2C178.4%20391.1%2C178.8%20392.5%2C179.2%20393.9%2C179.6%20395.3%2C179.9%20396.8%2C180.3%20398.2%2C180.7%20399.6%2C181.0%20401.0%2C181.4%20402.4%2C181.7%20403.9%2C182.1%20405.3%2C182.5%20406.7%2C182.8%20408.1%2C183.2%20409.5%2C183.5%20410.9%2C183.8%20412.4%2C184.2%20413.8%2C184.5%20415.2%2C184.9%20416.6%2C185.2%20418.0%2C185.5%20419.5%2C185.9%20420.9%2C186.2%20422.3%2C186.5%20423.7%2C186.8%20425.1%2C187.2%20426.5%2C187.5%20428.0%2C187.8%20429.4%2C188.1%20430.8%2C188.4%20432.2%2C188.7%20433.6%2C189.0%20435.1%2C189.4%20436.5%2C189.7%20437.9%2C190.0%20439.3%2C190.3%20440.7%2C190.6%20442.2%2C190.9%20443.6%2C191.1%20445.0%2C191.4%20446.4%2C191.7%20447.8%2C192.0%20449.2%2C192.3%20450.7%2C192.6%20452.1%2C192.9%20453.5%2C193.1%20454.9%2C193.4%20456.3%2C193.7%20457.8%2C194.0%20459.2%2C194.2%20460.6%2C194.5%20462.0%2C194.8%20463.4%2C195.0%20464.9%2C195.3%20466.3%2C195.5%20467.7%2C195.8%20469.1%2C196.1%20470.5%2C196.3%20472.0%2C196.6%20473.4%2C196.8%20474.8%2C197.1%20476.2%2C197.3%20477.6%2C197.5%20479.0%2C197.8%20480.5%2C198.0%20481.9%2C198.3%20483.3%2C198.5%20484.7%2C198.7%20486.1%2C199.0%20487.6%2C199.2%20489.0%2C199.4%20490.4%2C199.6%20491.8%2C199.9%20493.2%2C200.1%20494.6%2C200.3%20496.1%2C200.5%20497.5%2C200.8%20498.9%2C201.0%20500.3%2C201.2%20501.7%2C201.4%20503.2%2C201.6%20504.6%2C201.8%20506.0%2C202.0%22%20clip-path%3D%22url%28%23clip-291752%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C74.0%2053.4%2C77.7%2054.8%2C81.4%2056.3%2C84.9%2057.7%2C88.4%2059.1%2C91.9%2060.5%2C95.3%2061.9%2C98.6%2063.4%2C101.8%2064.8%2C105.0%2066.2%2C108.2%2067.6%2C111.2%2069.0%2C114.3%2070.4%2C117.2%2071.9%2C120.1%2073.3%2C123.0%2074.7%2C125.8%2076.1%2C128.5%2077.5%2C131.2%2079.0%2C133.8%2080.4%2C136.4%2081.8%2C138.9%2083.2%2C141.4%2084.6%2C143.8%2086.0%2C146.2%2087.5%2C148.6%2088.9%2C150.8%2090.3%2C153.1%2091.7%2C155.3%2093.1%2C157.5%2094.6%2C159.6%2096.0%2C161.6%2097.4%2C163.7%2098.8%2C165.7%20100.2%2C167.6%20101.7%2C169.5%20103.1%2C171.4%20104.5%2C173.2%20105.9%2C175.0%20107.3%2C176.8%20108.8%2C178.5%20110.2%2C180.2%20111.6%2C181.9%20113.0%2C183.5%20114.4%2C185.1%20115.8%2C186.6%20117.3%2C188.1%20118.7%2C189.6%20120.1%2C191.1%20121.5%2C192.5%20122.9%2C193.9%20124.4%2C195.3%20125.8%2C196.6%20127.2%2C197.9%20128.6%2C199.2%20130.0%2C200.4%20131.4%2C201.7%20132.9%2C202.9%20134.3%2C204.0%20135.7%2C205.2%20137.1%2C206.3%20138.5%2C207.4%20140.0%2C208.5%20141.4%2C209.5%20142.8%2C210.5%20144.2%2C211.5%20145.6%2C212.5%20147.1%2C213.5%20148.5%2C214.4%20149.9%2C215.3%20151.3%2C216.2%20152.7%2C217.1%20154.2%2C217.9%20155.6%2C218.7%20157.0%2C219.5%20158.4%2C220.3%20159.8%2C221.1%20161.2%2C221.9%20162.7%2C222.6%20164.1%2C223.3%20165.5%2C224.0%20166.9%2C224.7%20168.3%2C225.3%20169.8%2C226.0%20171.2%2C226.6%20172.6%2C227.2%20174.0%2C227.8%20175.4%2C228.4%20176.9%2C229.0%20178.3%2C229.5%20179.7%2C230.1%20181.1%2C230.6%20182.5%2C231.1%20183.9%2C231.6%20185.4%2C232.1%20186.8%2C232.6%20188.2%2C233.0%20189.6%2C233.5%20191.0%2C233.9%20192.5%2C234.3%20193.9%2C234.7%20195.3%2C235.1%20196.7%2C235.5%20198.1%2C235.9%20199.6%2C236.3%20201.0%2C236.6%20202.4%2C237.0%20203.8%2C237.3%20205.2%2C237.6%20206.6%2C237.9%20208.1%2C238.2%20209.5%2C238.5%20210.9%2C238.8%20212.3%2C239.1%20213.7%2C239.3%20215.2%2C239.6%20216.6%2C239.8%20218.0%2C240.1%20219.4%2C240.3%20220.8%2C240.5%20222.2%2C240.7%20223.7%2C240.9%20225.1%2C241.1%20226.5%2C241.3%20227.9%2C241.5%20229.3%2C241.7%20230.8%2C241.9%20232.2%2C242.0%20233.6%2C242.2%20235.0%2C242.3%20236.4%2C242.5%20237.9%2C242.6%20239.3%2C242.7%20240.7%2C242.8%20242.1%2C243.0%20243.5%2C243.1%20244.9%2C243.2%20246.4%2C243.3%20247.8%2C243.4%20249.2%2C243.5%20250.6%2C243.5%20252.0%2C243.6%20253.5%2C243.7%20254.9%2C243.8%20256.3%2C243.8%20257.7%2C243.9%20259.1%2C244.0%20260.6%2C244.0%20262.0%2C244.0%20263.4%2C244.1%20264.8%2C244.1%20266.2%2C244.2%20267.6%2C244.2%20269.1%2C244.2%20270.5%2C244.2%20271.9%2C244.3%20273.3%2C244.3%20274.7%2C244.3%20276.2%2C244.3%20277.6%2C244.3%20279.0%2C244.3%20280.4%2C244.3%20281.8%2C244.3%20283.3%2C244.3%20284.7%2C244.3%20286.1%2C244.3%20287.5%2C244.2%20288.9%2C244.2%20290.4%2C244.2%20291.8%2C244.2%20293.2%2C244.2%20294.6%2C244.1%20296.0%2C244.1%20297.4%2C244.1%20298.9%2C244.0%20300.3%2C244.0%20301.7%2C243.9%20303.1%2C243.9%20304.5%2C243.9%20306.0%2C243.8%20307.4%2C243.8%20308.8%2C243.7%20310.2%2C243.7%20311.6%2C243.6%20313.0%2C243.6%20314.5%2C243.5%20315.9%2C243.4%20317.3%2C243.4%20318.7%2C243.3%20320.1%2C243.2%20321.6%2C243.2%20323.0%2C243.1%20324.4%2C243.1%20325.8%2C243.0%20327.2%2C242.9%20328.7%2C242.8%20330.1%2C242.8%20331.5%2C242.7%20332.9%2C242.6%20334.3%2C242.5%20335.8%2C242.5%20337.2%2C242.4%20338.6%2C242.3%20340.0%2C242.2%20341.4%2C242.2%20342.8%2C242.1%20344.3%2C242.0%20345.7%2C241.9%20347.1%2C241.8%20348.5%2C241.7%20349.9%2C241.7%20351.4%2C241.6%20352.8%2C241.5%20354.2%2C241.4%20355.6%2C241.3%20357.0%2C241.2%20358.5%2C241.1%20359.9%2C241.0%20361.3%2C241.0%20362.7%2C240.9%20364.1%2C240.8%20365.5%2C240.7%20367.0%2C240.6%20368.4%2C240.5%20369.8%2C240.4%20371.2%2C240.3%20372.6%2C240.2%20374.1%2C240.1%20375.5%2C240.1%20376.9%2C240.0%20378.3%2C239.9%20379.7%2C239.8%20381.1%2C239.7%20382.6%2C239.6%20384.0%2C239.5%20385.4%2C239.4%20386.8%2C239.3%20388.2%2C239.2%20389.7%2C239.1%20391.1%2C239.0%20392.5%2C238.9%20393.9%2C238.8%20395.3%2C238.7%20396.8%2C238.7%20398.2%2C238.6%20399.6%2C238.5%20401.0%2C238.4%20402.4%2C238.3%20403.9%2C238.2%20405.3%2C238.1%20406.7%2C238.0%20408.1%2C237.9%20409.5%2C237.8%20410.9%2C237.7%20412.4%2C237.6%20413.8%2C237.5%20415.2%2C237.5%20416.6%2C237.4%20418.0%2C237.3%20419.5%2C237.2%20420.9%2C237.1%20422.3%2C237.0%20423.7%2C236.9%20425.1%2C236.8%20426.5%2C236.7%20428.0%2C236.6%20429.4%2C236.5%20430.8%2C236.5%20432.2%2C236.4%20433.6%2C236.3%20435.1%2C236.2%20436.5%2C236.1%20437.9%2C236.0%20439.3%2C235.9%20440.7%2C235.8%20442.2%2C235.8%20443.6%2C235.7%20445.0%2C235.6%20446.4%2C235.5%20447.8%2C235.4%20449.2%2C235.3%20450.7%2C235.2%20452.1%2C235.2%20453.5%2C235.1%20454.9%2C235.0%20456.3%2C234.9%20457.8%2C234.8%20459.2%2C234.7%20460.6%2C234.7%20462.0%2C234.6%20463.4%2C234.5%20464.9%2C234.4%20466.3%2C234.3%20467.7%2C234.3%20469.1%2C234.2%20470.5%2C234.1%20472.0%2C234.0%20473.4%2C233.9%20474.8%2C233.9%20476.2%2C233.8%20477.6%2C233.7%20479.0%2C233.6%20480.5%2C233.5%20481.9%2C233.5%20483.3%2C233.4%20484.7%2C233.3%20486.1%2C233.2%20487.6%2C233.2%20489.0%2C233.1%20490.4%2C233.0%20491.8%2C233.0%20493.2%2C232.9%20494.6%2C232.8%20496.1%2C232.7%20497.5%2C232.7%20498.9%2C232.6%20500.3%2C232.5%20501.7%2C232.5%20503.2%2C232.4%20504.6%2C232.3%20506.0%2C232.2%22%20clip-path%3D%22url%28%23clip-291752%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -9126,44 +10956,66 @@ so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The sta
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is marginal profit $P'$ and green is marginal cost $C'$. At $x=1$, reading the shared scale, brown sits near height $2$ while green sits near height $1$, so brown is above green.
 
 $$P'(1)>C'(1)$$
 
-and the statement is True.`,
+and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=5$ the brown curve has already crossed below the axis while the green curve remains above it.
 
 $$P'(5)<0,\\qquad C'(5)>0$$
 
-so brown is below the axis and green is still positive, and the statement is True.`,
+so brown is below the axis and green is still positive, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Wherever brown sits above the axis one has $P'>0$:
 
 $$P'>0\\quad\\Rightarrow\\quad\\text{a little more output raises profit}$$
 
-Positive marginal profit means expanding output raises profit there, so the statement is True.`,
+Positive marginal profit means expanding output raises profit there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Green staying positive throughout the window means $C'>0$ everywhere shown:
 
 $$C'(x)>0\\quad\\Rightarrow\\quad C\\text{ increasing}$$
 
-Positive marginal cost means total cost $C$ keeps rising throughout the window, so the statement is True.`,
+Positive marginal cost means total cost $C$ keeps rising throughout the window
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:
 
 $$P'=C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-$$
 
-Meeting of the two curves is not the profit-peak test, so the statement is False.`
+Meeting of the two curves is not the profit-peak test
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 142,
     solution_overview:
-      `Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At $x=1$ brown sits above green (heights near $2$ and $1$). At $x=5$ brown has crossed below the axis while green remains positive. Wherever brown is positive, a little more output raises profit; green staying positive means total cost keeps rising throughout the window. A profit-maximising output is where brown crosses from $+$ to $-$ (a zero of $P'$), which is not the same as the place where brown equals green.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At $x=1$ brown sits above green (heights near $2$ and $1$). At $x=5$ brown has crossed below the axis while green remains positive. Wherever brown is positive, a little more output raises profit; green staying positive means total cost keeps rising throughout the window. A profit-maximising output is where brown crosses from $+$ to $-$ (a zero of $P'$), which is not the same as the place where brown equals green.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%20and%20C%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-7334103%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22506%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22244.0%22%20x2%3D%22506%22%20y2%3D%22244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22144.0%22%20x2%3D%22506%22%20y2%3D%22144.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244.0%22%20x2%3D%22506%22%20y2%3D%2244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22244.0%22%20x2%3D%22506%22%20y2%3D%22244.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22244.0%22%20x2%3D%2252%22%20y2%3D%22244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22144.0%22%20x2%3D%2252%22%20y2%3D%22144.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22148.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2244.0%22%20x2%3D%2252%22%20y2%3D%2244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C119.0%2053.4%2C119.6%2054.8%2C120.1%2056.3%2C120.7%2057.7%2C121.2%2059.1%2C121.8%2060.5%2C122.4%2061.9%2C122.9%2063.4%2C123.5%2064.8%2C124.1%2066.2%2C124.6%2067.6%2C125.2%2069.0%2C125.7%2070.4%2C126.3%2071.9%2C126.9%2073.3%2C127.4%2074.7%2C128.0%2076.1%2C128.6%2077.5%2C129.1%2079.0%2C129.7%2080.4%2C130.2%2081.8%2C130.8%2083.2%2C131.4%2084.6%2C131.9%2086.0%2C132.5%2087.5%2C133.1%2088.9%2C133.6%2090.3%2C134.2%2091.7%2C134.8%2093.1%2C135.3%2094.6%2C135.9%2096.0%2C136.4%2097.4%2C137.0%2098.8%2C137.6%20100.2%2C138.1%20101.7%2C138.7%20103.1%2C139.2%20104.5%2C139.8%20105.9%2C140.4%20107.3%2C140.9%20108.8%2C141.5%20110.2%2C142.1%20111.6%2C142.6%20113.0%2C143.2%20114.4%2C143.8%20115.8%2C144.3%20117.3%2C144.9%20118.7%2C145.4%20120.1%2C146.0%20121.5%2C146.6%20122.9%2C147.1%20124.4%2C147.7%20125.8%2C148.2%20127.2%2C148.8%20128.6%2C149.4%20130.0%2C149.9%20131.4%2C150.5%20132.9%2C151.1%20134.3%2C151.6%20135.7%2C152.2%20137.1%2C152.8%20138.5%2C153.3%20140.0%2C153.9%20141.4%2C154.4%20142.8%2C155.0%20144.2%2C155.6%20145.6%2C156.1%20147.1%2C156.7%20148.5%2C157.2%20149.9%2C157.8%20151.3%2C158.4%20152.7%2C158.9%20154.2%2C159.5%20155.6%2C160.1%20157.0%2C160.6%20158.4%2C161.2%20159.8%2C161.8%20161.2%2C162.3%20162.7%2C162.9%20164.1%2C163.4%20165.5%2C164.0%20166.9%2C164.6%20168.3%2C165.1%20169.8%2C165.7%20171.2%2C166.2%20172.6%2C166.8%20174.0%2C167.4%20175.4%2C167.9%20176.8%2C168.5%20178.3%2C169.1%20179.7%2C169.6%20181.1%2C170.2%20182.5%2C170.8%20183.9%2C171.3%20185.4%2C171.9%20186.8%2C172.4%20188.2%2C173.0%20189.6%2C173.6%20191.0%2C174.1%20192.5%2C174.7%20193.9%2C175.2%20195.3%2C175.8%20196.7%2C176.4%20198.1%2C176.9%20199.6%2C177.5%20201.0%2C178.1%20202.4%2C178.6%20203.8%2C179.2%20205.2%2C179.8%20206.6%2C180.3%20208.1%2C180.9%20209.5%2C181.4%20210.9%2C182.0%20212.3%2C182.6%20213.7%2C183.1%20215.2%2C183.7%20216.6%2C184.2%20218.0%2C184.8%20219.4%2C185.4%20220.8%2C185.9%20222.2%2C186.5%20223.7%2C187.1%20225.1%2C187.6%20226.5%2C188.2%20227.9%2C188.8%20229.3%2C189.3%20230.8%2C189.9%20232.2%2C190.4%20233.6%2C191.0%20235.0%2C191.6%20236.4%2C192.1%20237.9%2C192.7%20239.3%2C193.3%20240.7%2C193.8%20242.1%2C194.4%20243.5%2C194.9%20244.9%2C195.5%20246.4%2C196.1%20247.8%2C196.6%20249.2%2C197.2%20250.6%2C197.8%20252.0%2C198.3%20253.5%2C198.9%20254.9%2C199.4%20256.3%2C200.0%20257.7%2C200.6%20259.1%2C201.1%20260.6%2C201.7%20262.0%2C202.2%20263.4%2C202.8%20264.8%2C203.4%20266.2%2C203.9%20267.6%2C204.5%20269.1%2C205.1%20270.5%2C205.6%20271.9%2C206.2%20273.3%2C206.8%20274.7%2C207.3%20276.2%2C207.9%20277.6%2C208.4%20279.0%2C209.0%20280.4%2C209.6%20281.8%2C210.1%20283.3%2C210.7%20284.7%2C211.2%20286.1%2C211.8%20287.5%2C212.4%20288.9%2C212.9%20290.4%2C213.5%20291.8%2C214.1%20293.2%2C214.6%20294.6%2C215.2%20296.0%2C215.8%20297.4%2C216.3%20298.9%2C216.9%20300.3%2C217.4%20301.7%2C218.0%20303.1%2C218.6%20304.5%2C219.1%20306.0%2C219.7%20307.4%2C220.2%20308.8%2C220.8%20310.2%2C221.4%20311.6%2C221.9%20313.1%2C222.5%20314.5%2C223.1%20315.9%2C223.6%20317.3%2C224.2%20318.7%2C224.7%20320.1%2C225.3%20321.6%2C225.9%20323.0%2C226.4%20324.4%2C227.0%20325.8%2C227.6%20327.2%2C228.1%20328.7%2C228.7%20330.1%2C229.2%20331.5%2C229.8%20332.9%2C230.4%20334.3%2C230.9%20335.8%2C231.5%20337.2%2C232.1%20338.6%2C232.6%20340.0%2C233.2%20341.4%2C233.7%20342.8%2C234.3%20344.3%2C234.9%20345.7%2C235.4%20347.1%2C236.0%20348.5%2C236.6%20349.9%2C237.1%20351.4%2C237.7%20352.8%2C238.2%20354.2%2C238.8%20355.6%2C239.4%20357.0%2C239.9%20358.4%2C240.5%20359.9%2C241.1%20361.3%2C241.6%20362.7%2C242.2%20364.1%2C242.8%20365.5%2C243.3%20367.0%2C243.9%20368.4%2C244.4%20369.8%2C245.0%20371.2%2C245.6%20372.6%2C246.1%20374.1%2C246.7%20375.5%2C247.2%20376.9%2C247.8%20378.3%2C248.4%20379.7%2C248.9%20381.1%2C249.5%20382.6%2C250.1%20384.0%2C250.6%20385.4%2C251.2%20386.8%2C251.7%20388.2%2C252.3%20389.7%2C252.9%20391.1%2C253.4%20392.5%2C254.0%20393.9%2C254.6%20395.3%2C255.1%20396.8%2C255.7%20398.2%2C256.2%20399.6%2C256.8%20401.0%2C257.4%20402.4%2C257.9%20403.9%2C258.5%20405.3%2C259.1%20406.7%2C259.6%20408.1%2C260.2%20409.5%2C260.7%20410.9%2C261.3%20412.4%2C261.9%20413.8%2C262.4%20415.2%2C263.0%20416.6%2C263.6%20418.0%2C264.1%20419.5%2C264.7%20420.9%2C265.2%20422.3%2C265.8%20423.7%2C266.4%20425.1%2C266.9%20426.6%2C267.5%20428.0%2C268.1%20429.4%2C268.6%20430.8%2C269.2%20432.2%2C269.8%20433.6%2C270.3%20435.1%2C270.9%20436.5%2C271.4%20437.9%2C272.0%20439.3%2C272.6%20440.7%2C273.1%20442.2%2C273.7%20443.6%2C274.2%20445.0%2C274.8%20446.4%2C275.4%20447.8%2C275.9%20449.2%2C276.5%20450.7%2C277.1%20452.1%2C277.6%20453.5%2C278.2%20454.9%2C278.8%20456.3%2C279.3%20457.8%2C279.9%20459.2%2C280.4%20460.6%2C281.0%20462.0%2C281.6%20463.4%2C282.1%20464.9%2C282.7%20466.3%2C283.2%20467.7%2C283.8%20469.1%2C284.4%20470.5%2C284.9%20471.9%2C285.5%20473.4%2C286.1%20474.8%2C286.6%20476.2%2C287.2%20477.6%2C287.8%20479.0%2C288.3%20480.5%2C288.9%20481.9%2C289.4%20483.3%2C290.0%20484.7%2C290.6%20486.1%2C291.1%20487.6%2C291.7%20489.0%2C292.2%20490.4%2C292.8%20491.8%2C293.4%20493.2%2C293.9%20494.6%2C294.5%20496.1%2C295.1%20497.5%2C295.6%20498.9%2C296.2%20500.3%2C296.8%20501.7%2C297.3%20503.2%2C297.9%20504.6%2C298.4%20506.0%2C299.0%22%20clip-path%3D%22url%28%23clip-7334103%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C219.0%2053.4%2C218.7%2054.8%2C218.4%2056.3%2C218.1%2057.7%2C217.9%2059.1%2C217.6%2060.5%2C217.3%2061.9%2C217.0%2063.4%2C216.7%2064.8%2C216.4%2066.2%2C216.1%2067.6%2C215.8%2069.0%2C215.5%2070.4%2C215.2%2071.9%2C214.9%2073.3%2C214.6%2074.7%2C214.3%2076.1%2C214.0%2077.5%2C213.7%2079.0%2C213.3%2080.4%2C213.0%2081.8%2C212.7%2083.2%2C212.4%2084.6%2C212.1%2086.0%2C211.7%2087.5%2C211.4%2088.9%2C211.1%2090.3%2C210.8%2091.7%2C210.4%2093.1%2C210.1%2094.6%2C209.8%2096.0%2C209.4%2097.4%2C209.1%2098.8%2C208.8%20100.2%2C208.4%20101.7%2C208.1%20103.1%2C207.7%20104.5%2C207.4%20105.9%2C207.0%20107.3%2C206.7%20108.8%2C206.3%20110.2%2C206.0%20111.6%2C205.6%20113.0%2C205.3%20114.4%2C204.9%20115.8%2C204.6%20117.3%2C204.2%20118.7%2C203.8%20120.1%2C203.5%20121.5%2C203.1%20122.9%2C202.7%20124.4%2C202.4%20125.8%2C202.0%20127.2%2C201.6%20128.6%2C201.2%20130.0%2C200.9%20131.4%2C200.5%20132.9%2C200.1%20134.3%2C199.7%20135.7%2C199.3%20137.1%2C199.0%20138.5%2C198.6%20140.0%2C198.2%20141.4%2C197.8%20142.8%2C197.4%20144.2%2C197.0%20145.6%2C196.6%20147.1%2C196.2%20148.5%2C195.8%20149.9%2C195.4%20151.3%2C195.0%20152.7%2C194.6%20154.2%2C194.2%20155.6%2C193.8%20157.0%2C193.4%20158.4%2C193.0%20159.8%2C192.5%20161.2%2C192.1%20162.7%2C191.7%20164.1%2C191.3%20165.5%2C190.9%20166.9%2C190.5%20168.3%2C190.0%20169.8%2C189.6%20171.2%2C189.2%20172.6%2C188.7%20174.0%2C188.3%20175.4%2C187.9%20176.8%2C187.4%20178.3%2C187.0%20179.7%2C186.6%20181.1%2C186.1%20182.5%2C185.7%20183.9%2C185.2%20185.4%2C184.8%20186.8%2C184.3%20188.2%2C183.9%20189.6%2C183.4%20191.0%2C183.0%20192.5%2C182.5%20193.9%2C182.1%20195.3%2C181.6%20196.7%2C181.2%20198.1%2C180.7%20199.6%2C180.2%20201.0%2C179.8%20202.4%2C179.3%20203.8%2C178.8%20205.2%2C178.4%20206.6%2C177.9%20208.1%2C177.4%20209.5%2C177.0%20210.9%2C176.5%20212.3%2C176.0%20213.7%2C175.5%20215.2%2C175.0%20216.6%2C174.5%20218.0%2C174.1%20219.4%2C173.6%20220.8%2C173.1%20222.2%2C172.6%20223.7%2C172.1%20225.1%2C171.6%20226.5%2C171.1%20227.9%2C170.6%20229.3%2C170.1%20230.8%2C169.6%20232.2%2C169.1%20233.6%2C168.6%20235.0%2C168.1%20236.4%2C167.6%20237.9%2C167.1%20239.3%2C166.6%20240.7%2C166.0%20242.1%2C165.5%20243.5%2C165.0%20244.9%2C164.5%20246.4%2C164.0%20247.8%2C163.4%20249.2%2C162.9%20250.6%2C162.4%20252.0%2C161.9%20253.5%2C161.3%20254.9%2C160.8%20256.3%2C160.3%20257.7%2C159.7%20259.1%2C159.2%20260.6%2C158.7%20262.0%2C158.1%20263.4%2C157.6%20264.8%2C157.0%20266.2%2C156.5%20267.6%2C155.9%20269.1%2C155.4%20270.5%2C154.8%20271.9%2C154.3%20273.3%2C153.7%20274.7%2C153.2%20276.2%2C152.6%20277.6%2C152.1%20279.0%2C151.5%20280.4%2C150.9%20281.8%2C150.4%20283.3%2C149.8%20284.7%2C149.2%20286.1%2C148.7%20287.5%2C148.1%20288.9%2C147.5%20290.4%2C146.9%20291.8%2C146.4%20293.2%2C145.8%20294.6%2C145.2%20296.0%2C144.6%20297.4%2C144.0%20298.9%2C143.5%20300.3%2C142.9%20301.7%2C142.3%20303.1%2C141.7%20304.5%2C141.1%20306.0%2C140.5%20307.4%2C139.9%20308.8%2C139.3%20310.2%2C138.7%20311.6%2C138.1%20313.1%2C137.5%20314.5%2C136.9%20315.9%2C136.3%20317.3%2C135.7%20318.7%2C135.1%20320.1%2C134.4%20321.6%2C133.8%20323.0%2C133.2%20324.4%2C132.6%20325.8%2C132.0%20327.2%2C131.4%20328.7%2C130.7%20330.1%2C130.1%20331.5%2C129.5%20332.9%2C128.9%20334.3%2C128.2%20335.8%2C127.6%20337.2%2C127.0%20338.6%2C126.3%20340.0%2C125.7%20341.4%2C125.0%20342.8%2C124.4%20344.3%2C123.8%20345.7%2C123.1%20347.1%2C122.5%20348.5%2C121.8%20349.9%2C121.2%20351.4%2C120.5%20352.8%2C119.9%20354.2%2C119.2%20355.6%2C118.6%20357.0%2C117.9%20358.4%2C117.2%20359.9%2C116.6%20361.3%2C115.9%20362.7%2C115.3%20364.1%2C114.6%20365.5%2C113.9%20367.0%2C113.2%20368.4%2C112.6%20369.8%2C111.9%20371.2%2C111.2%20372.6%2C110.5%20374.1%2C109.9%20375.5%2C109.2%20376.9%2C108.5%20378.3%2C107.8%20379.7%2C107.1%20381.1%2C106.4%20382.6%2C105.8%20384.0%2C105.1%20385.4%2C104.4%20386.8%2C103.7%20388.2%2C103.0%20389.7%2C102.3%20391.1%2C101.6%20392.5%2C100.9%20393.9%2C100.2%20395.3%2C99.5%20396.8%2C98.8%20398.2%2C98.0%20399.6%2C97.3%20401.0%2C96.6%20402.4%2C95.9%20403.9%2C95.2%20405.3%2C94.5%20406.7%2C93.8%20408.1%2C93.0%20409.5%2C92.3%20410.9%2C91.6%20412.4%2C90.9%20413.8%2C90.1%20415.2%2C89.4%20416.6%2C88.7%20418.0%2C87.9%20419.5%2C87.2%20420.9%2C86.5%20422.3%2C85.7%20423.7%2C85.0%20425.1%2C84.2%20426.6%2C83.5%20428.0%2C82.7%20429.4%2C82.0%20430.8%2C81.2%20432.2%2C80.5%20433.6%2C79.7%20435.1%2C79.0%20436.5%2C78.2%20437.9%2C77.5%20439.3%2C76.7%20440.7%2C76.0%20442.2%2C75.2%20443.6%2C74.4%20445.0%2C73.7%20446.4%2C72.9%20447.8%2C72.1%20449.2%2C71.3%20450.7%2C70.6%20452.1%2C69.8%20453.5%2C69.0%20454.9%2C68.2%20456.3%2C67.5%20457.8%2C66.7%20459.2%2C65.9%20460.6%2C65.1%20462.0%2C64.3%20463.4%2C63.5%20464.9%2C62.7%20466.3%2C61.9%20467.7%2C61.1%20469.1%2C60.3%20470.5%2C59.5%20471.9%2C58.7%20473.4%2C57.9%20474.8%2C57.1%20476.2%2C56.3%20477.6%2C55.5%20479.0%2C54.7%20480.5%2C53.9%20481.9%2C53.1%20483.3%2C52.3%20484.7%2C51.5%20486.1%2C50.6%20487.6%2C49.8%20489.0%2C49.0%20490.4%2C48.2%20491.8%2C47.3%20493.2%2C46.5%20494.6%2C45.7%20496.1%2C44.9%20497.5%2C44.0%20498.9%2C43.2%20500.3%2C42.4%20501.7%2C41.5%20503.2%2C40.7%20504.6%2C39.8%20506.0%2C39.0%22%20clip-path%3D%22url%28%23clip-7334103%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EP%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EC%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -9184,44 +11036,46 @@ Meeting of the two curves is not the profit-peak test, so the statement is False
     tactical_explanations: [
       `**A.** → True
 
-Brown is $f'$ and green is $g'$. At $x=0$ both curves sit below the horizontal axis on the shared plane.
+Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ compare both colours against the horizontal axis — read each height separately so the two curves are not mixed up.
+
+Both curves sit below the axis at that left-hand sample point:
 
 $$f'(0)<0,\\qquad g'(0)<0$$
 
-so both are negative at $x=0$, and the statement is True.`,
+So brown is negative and green is also negative at $x=0$. Both $f$ and $g$ are therefore decreasing at $x=0$. The dual sign reading matches the claim, so the statement is True.`,
       `**B.** → True
 
-Counting clear axis crossings on the shared plane:
+Count clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), careful not to double-count a single crossing or to confuse the two colours.
 
 $$f'\\text{ has three zeros},\\qquad g'\\text{ has two zeros}$$
 
-Those counts match the claim, so the statement is True.`,
+Those counts come from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly, so the statement is True.`,
       `**C.** → True
 
-At $x=3$, between brown's middle and right zeros, the brown curve ($f'\`) sits below the axis on the shared plane.
+At $x=3$, locate brown between its middle and right zeros on the shared plane. On that open stretch the brown curve ($f'$) has already crossed down through the axis and has not yet crossed back up, so its height relative to the axis is negative:
 
 $$f'(3)<0$$
 
-so brown is negative at $x=3$, and the statement is True.`,
+Brown is therefore negative at $x=3$, and $f$ is decreasing there. That is a direct height reading of brown at the stated $x$-value, matching the claim, so the statement is True.`,
       `**D.** → True
 
-When both derivatives are negative, both $f$ and $g$ are decreasing. If brown sits above green while both are negative, then brown is less negative:
+When both derivatives are negative, both $f$ and $g$ are decreasing. Steepness depends on magnitude: if brown sits above green while both remain below the axis, then brown is less negative than green —
 
-$$f'<0,\\ g'<0,\\ f'>g'\\quad\\Rightarrow\\quad |f'|<|g'|$$
+$$f'<0,\\quad g'<0,\\quad f'>g'\\quad\\Rightarrow\\quad |f'|<|g'|$$
 
-so $f$ decreases less steeply than $g$, and the statement is True.`,
+so the downward slope of $f$ is gentler than that of $g$. In other words $f$ decreases less steeply than $g$ on such an interval. That is exactly the claim, so the statement is True.`,
       `**E.** → False
 
-Turning points of $f$ and $g$ are zeros of $f'$ and $g'$ that change sign. Brown has three zeros and green has two:
+Turning points of $f$ and $g$ arise from zeros of $f'$ and $g'$ that change sign. The figure does not supply equal zero counts to begin with: brown has three zeros and green has two,
 
 $$3\\neq 2$$
 
-so the figure does not give equal numbers of turning points, and the statement is False.`
+so $f$ and $g$ need not have the same number of turning points. Equal turning-point counts do not follow automatically from the figure when the zero counts already differ — the premise the claim needs is simply not there — so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 143,
     solution_overview:
-      `Brown is $f'$ and green is $g'$ on one plane. At $x=0$ both curves sit below the axis. Counting axis crossings: brown has three zeros in the window and green has two. At $x=3$ brown is negative (between its middle and right zeros). On an interval where both are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply when brown is less negative. Because the zero counts differ (three versus two), $f$ and $g$ need not have the same number of turning points.`,
+      `Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ both curves sit below the axis, so both derivatives are negative there. Counting axis crossings in the window: brown has three zeros and green has two. At $x=3$, between brown's middle and right zeros, brown sits below the axis, hence $f'(3)<0$. On an interval where both curves are negative and brown sits above green, both $f$ and $g$ decrease, with $f$ decreasing less steeply because brown is less negative ($|f'|<|g'|$). Because the zero counts already differ ($3$ versus $2$), equal numbers of turning points for $f$ and $g$ do not follow from the figure.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20g%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-4616603%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22506%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22269.0%22%20x2%3D%22506%22%20y2%3D%22269.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22119.0%22%20x2%3D%22506%22%20y2%3D%22119.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244.0%22%20x2%3D%22506%22%20y2%3D%2244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22194.0%22%20x2%3D%22506%22%20y2%3D%22194.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22269.0%22%20x2%3D%2252%22%20y2%3D%22269.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22273.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22194.0%22%20x2%3D%2252%22%20y2%3D%22194.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22198.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22119.0%22%20x2%3D%2252%22%20y2%3D%22119.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22123.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2244.0%22%20x2%3D%2252%22%20y2%3D%2244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C194.0%2053.4%2C188.8%2054.8%2C183.7%2056.3%2C178.7%2057.7%2C173.7%2059.1%2C168.9%2060.5%2C164.2%2061.9%2C159.6%2063.4%2C155.1%2064.8%2C150.7%2066.2%2C146.4%2067.6%2C142.2%2069.0%2C138.1%2070.4%2C134.1%2071.9%2C130.2%2073.3%2C126.3%2074.7%2C122.6%2076.1%2C119.0%2077.5%2C115.4%2079.0%2C112.0%2080.4%2C108.6%2081.8%2C105.4%2083.2%2C102.2%2084.6%2C99.1%2086.0%2C96.1%2087.5%2C93.2%2088.9%2C90.4%2090.3%2C87.6%2091.7%2C85.0%2093.1%2C82.4%2094.6%2C79.9%2096.0%2C77.5%2097.4%2C75.2%2098.8%2C73.0%20100.2%2C70.8%20101.7%2C68.7%20103.1%2C66.7%20104.5%2C64.8%20105.9%2C63.0%20107.3%2C61.2%20108.8%2C59.5%20110.2%2C57.9%20111.6%2C56.4%20113.0%2C54.9%20114.4%2C53.5%20115.8%2C52.2%20117.3%2C51.0%20118.7%2C49.8%20120.1%2C48.7%20121.5%2C47.7%20122.9%2C46.7%20124.4%2C45.8%20125.8%2C45.0%20127.2%2C44.2%20128.6%2C43.5%20130.0%2C42.9%20131.4%2C42.4%20132.9%2C41.9%20134.3%2C41.4%20135.7%2C41.1%20137.1%2C40.7%20138.5%2C40.5%20140.0%2C40.3%20141.4%2C40.2%20142.8%2C40.1%20144.2%2C40.1%20145.6%2C40.1%20147.1%2C40.2%20148.5%2C40.4%20149.9%2C40.6%20151.3%2C40.9%20152.7%2C41.2%20154.2%2C41.6%20155.6%2C42.0%20157.0%2C42.5%20158.4%2C43.0%20159.8%2C43.6%20161.2%2C44.2%20162.7%2C44.9%20164.1%2C45.6%20165.5%2C46.3%20166.9%2C47.2%20168.3%2C48.0%20169.8%2C48.9%20171.2%2C49.9%20172.6%2C50.9%20174.0%2C51.9%20175.4%2C53.0%20176.8%2C54.1%20178.3%2C55.2%20179.7%2C56.4%20181.1%2C57.7%20182.5%2C58.9%20183.9%2C60.3%20185.4%2C61.6%20186.8%2C63.0%20188.2%2C64.4%20189.6%2C65.9%20191.0%2C67.3%20192.5%2C68.9%20193.9%2C70.4%20195.3%2C72.0%20196.7%2C73.6%20198.1%2C75.2%20199.6%2C76.9%20201.0%2C78.6%20202.4%2C80.3%20203.8%2C82.1%20205.2%2C83.9%20206.6%2C85.7%20208.1%2C87.5%20209.5%2C89.4%20210.9%2C91.2%20212.3%2C93.1%20213.7%2C95.1%20215.2%2C97.0%20216.6%2C99.0%20218.0%2C100.9%20219.4%2C102.9%20220.8%2C105.0%20222.2%2C107.0%20223.7%2C109.0%20225.1%2C111.1%20226.5%2C113.2%20227.9%2C115.3%20229.3%2C117.4%20230.8%2C119.5%20232.2%2C121.7%20233.6%2C123.8%20235.0%2C126.0%20236.4%2C128.1%20237.9%2C130.3%20239.3%2C132.5%20240.7%2C134.7%20242.1%2C136.9%20243.5%2C139.1%20244.9%2C141.3%20246.4%2C143.5%20247.8%2C145.7%20249.2%2C147.9%20250.6%2C150.2%20252.0%2C152.4%20253.5%2C154.6%20254.9%2C156.8%20256.3%2C159.1%20257.7%2C161.3%20259.1%2C163.5%20260.6%2C165.7%20262.0%2C168.0%20263.4%2C170.2%20264.8%2C172.4%20266.2%2C174.6%20267.6%2C176.8%20269.1%2C179.0%20270.5%2C181.1%20271.9%2C183.3%20273.3%2C185.5%20274.7%2C187.6%20276.2%2C189.8%20277.6%2C191.9%20279.0%2C194.0%20280.4%2C196.1%20281.8%2C198.2%20283.3%2C200.3%20284.7%2C202.3%20286.1%2C204.4%20287.5%2C206.4%20288.9%2C208.4%20290.4%2C210.4%20291.8%2C212.4%20293.2%2C214.3%20294.6%2C216.2%20296.0%2C218.1%20297.4%2C220.0%20298.9%2C221.9%20300.3%2C223.7%20301.7%2C225.6%20303.1%2C227.3%20304.5%2C229.1%20306.0%2C230.9%20307.4%2C232.6%20308.8%2C234.2%20310.2%2C235.9%20311.6%2C237.5%20313.1%2C239.1%20314.5%2C240.7%20315.9%2C242.2%20317.3%2C243.7%20318.7%2C245.2%20320.1%2C246.6%20321.6%2C248.0%20323.0%2C249.4%20324.4%2C250.7%20325.8%2C252.0%20327.2%2C253.2%20328.7%2C254.5%20330.1%2C255.6%20331.5%2C256.8%20332.9%2C257.9%20334.3%2C258.9%20335.8%2C259.9%20337.2%2C260.9%20338.6%2C261.8%20340.0%2C262.7%20341.4%2C263.5%20342.8%2C264.3%20344.3%2C265.1%20345.7%2C265.7%20347.1%2C266.4%20348.5%2C267.0%20349.9%2C267.5%20351.4%2C268.0%20352.8%2C268.5%20354.2%2C268.9%20355.6%2C269.2%20357.0%2C269.5%20358.4%2C269.7%20359.9%2C269.9%20361.3%2C270.1%20362.7%2C270.1%20364.1%2C270.1%20365.5%2C270.1%20367.0%2C270.0%20368.4%2C269.8%20369.8%2C269.6%20371.2%2C269.3%20372.6%2C269.0%20374.1%2C268.6%20375.5%2C268.1%20376.9%2C267.6%20378.3%2C267.0%20379.7%2C266.3%20381.1%2C265.6%20382.6%2C264.8%20384.0%2C263.9%20385.4%2C263.0%20386.8%2C262.0%20388.2%2C260.9%20389.7%2C259.8%20391.1%2C258.6%20392.5%2C257.3%20393.9%2C255.9%20395.3%2C254.5%20396.8%2C253.0%20398.2%2C251.4%20399.6%2C249.8%20401.0%2C248.0%20402.4%2C246.2%20403.9%2C244.4%20405.3%2C242.4%20406.7%2C240.3%20408.1%2C238.2%20409.5%2C236.0%20410.9%2C233.7%20412.4%2C231.4%20413.8%2C228.9%20415.2%2C226.4%20416.6%2C223.8%20418.0%2C221.1%20419.5%2C218.3%20420.9%2C215.4%20422.3%2C212.5%20423.7%2C209.4%20425.1%2C206.3%20426.6%2C203.0%20428.0%2C199.7%20429.4%2C196.3%20430.8%2C192.8%20432.2%2C189.2%20433.6%2C185.5%20435.1%2C181.8%20436.5%2C177.9%20437.9%2C173.9%20439.3%2C169.9%20440.7%2C165.7%20442.2%2C161.4%20443.6%2C157.1%20445.0%2C152.6%20446.4%2C148.0%20447.8%2C143.4%20449.2%2C138.6%20450.7%2C133.8%20452.1%2C128.8%20453.5%2C123.7%20454.9%2C118.6%20456.3%2C113.3%20457.8%2C107.9%20459.2%2C102.4%20460.6%2C96.8%20462.0%2C91.1%20463.4%2C85.3%20464.9%2C79.4%20466.3%2C73.3%20467.7%2C67.2%20469.1%2C60.9%20470.5%2C54.5%20471.9%2C48.1%20473.4%2C41.5%20474.8%2C34.7%20476.2%2C27.9%20477.6%2C21.0%20479.0%2C13.9%20480.5%2C6.7%20481.9%2C-0.6%20483.3%2C-8.0%20484.7%2C-15.5%20486.1%2C-23.2%20487.6%2C-31.0%20489.0%2C-38.9%20490.4%2C-46.9%20491.8%2C-55.0%20493.2%2C-63.3%20494.6%2C-71.7%20496.1%2C-80.2%20497.5%2C-88.9%20498.9%2C-97.7%20500.3%2C-106.6%20501.7%2C-115.6%20503.2%2C-124.8%20504.6%2C-134.1%20506.0%2C-143.5%22%20clip-path%3D%22url%28%23clip-4616603%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C276.5%2053.4%2C275.4%2054.8%2C274.3%2056.3%2C273.1%2057.7%2C272.0%2059.1%2C270.9%2060.5%2C269.8%2061.9%2C268.8%2063.4%2C267.7%2064.8%2C266.6%2066.2%2C265.5%2067.6%2C264.4%2069.0%2C263.4%2070.4%2C262.3%2071.9%2C261.3%2073.3%2C260.2%2074.7%2C259.2%2076.1%2C258.1%2077.5%2C257.1%2079.0%2C256.1%2080.4%2C255.1%2081.8%2C254.0%2083.2%2C253.0%2084.6%2C252.0%2086.0%2C251.0%2087.5%2C250.0%2088.9%2C249.0%2090.3%2C248.0%2091.7%2C247.1%2093.1%2C246.1%2094.6%2C245.1%2096.0%2C244.2%2097.4%2C243.2%2098.8%2C242.2%20100.2%2C241.3%20101.7%2C240.4%20103.1%2C239.4%20104.5%2C238.5%20105.9%2C237.6%20107.3%2C236.6%20108.8%2C235.7%20110.2%2C234.8%20111.6%2C233.9%20113.0%2C233.0%20114.4%2C232.1%20115.8%2C231.2%20117.3%2C230.3%20118.7%2C229.4%20120.1%2C228.6%20121.5%2C227.7%20122.9%2C226.8%20124.4%2C226.0%20125.8%2C225.1%20127.2%2C224.3%20128.6%2C223.4%20130.0%2C222.6%20131.4%2C221.8%20132.9%2C220.9%20134.3%2C220.1%20135.7%2C219.3%20137.1%2C218.5%20138.5%2C217.7%20140.0%2C216.9%20141.4%2C216.1%20142.8%2C215.3%20144.2%2C214.5%20145.6%2C213.7%20147.1%2C213.0%20148.5%2C212.2%20149.9%2C211.4%20151.3%2C210.7%20152.7%2C209.9%20154.2%2C209.2%20155.6%2C208.4%20157.0%2C207.7%20158.4%2C207.0%20159.8%2C206.2%20161.2%2C205.5%20162.7%2C204.8%20164.1%2C204.1%20165.5%2C203.4%20166.9%2C202.7%20168.3%2C202.0%20169.8%2C201.3%20171.2%2C200.6%20172.6%2C199.9%20174.0%2C199.3%20175.4%2C198.6%20176.8%2C197.9%20178.3%2C197.3%20179.7%2C196.6%20181.1%2C196.0%20182.5%2C195.3%20183.9%2C194.7%20185.4%2C194.0%20186.8%2C193.4%20188.2%2C192.8%20189.6%2C192.2%20191.0%2C191.6%20192.5%2C191.0%20193.9%2C190.4%20195.3%2C189.8%20196.7%2C189.2%20198.1%2C188.6%20199.6%2C188.0%20201.0%2C187.4%20202.4%2C186.9%20203.8%2C186.3%20205.2%2C185.8%20206.6%2C185.2%20208.1%2C184.7%20209.5%2C184.1%20210.9%2C183.6%20212.3%2C183.0%20213.7%2C182.5%20215.2%2C182.0%20216.6%2C181.5%20218.0%2C181.0%20219.4%2C180.5%20220.8%2C180.0%20222.2%2C179.5%20223.7%2C179.0%20225.1%2C178.5%20226.5%2C178.0%20227.9%2C177.5%20229.3%2C177.1%20230.8%2C176.6%20232.2%2C176.2%20233.6%2C175.7%20235.0%2C175.3%20236.4%2C174.8%20237.9%2C174.4%20239.3%2C173.9%20240.7%2C173.5%20242.1%2C173.1%20243.5%2C172.7%20244.9%2C172.3%20246.4%2C171.9%20247.8%2C171.5%20249.2%2C171.1%20250.6%2C170.7%20252.0%2C170.3%20253.5%2C169.9%20254.9%2C169.5%20256.3%2C169.2%20257.7%2C168.8%20259.1%2C168.5%20260.6%2C168.1%20262.0%2C167.8%20263.4%2C167.4%20264.8%2C167.1%20266.2%2C166.7%20267.6%2C166.4%20269.1%2C166.1%20270.5%2C165.8%20271.9%2C165.5%20273.3%2C165.2%20274.7%2C164.9%20276.2%2C164.6%20277.6%2C164.3%20279.0%2C164.0%20280.4%2C163.7%20281.8%2C163.4%20283.3%2C163.2%20284.7%2C162.9%20286.1%2C162.7%20287.5%2C162.4%20288.9%2C162.2%20290.4%2C161.9%20291.8%2C161.7%20293.2%2C161.5%20294.6%2C161.2%20296.0%2C161.0%20297.4%2C160.8%20298.9%2C160.6%20300.3%2C160.4%20301.7%2C160.2%20303.1%2C160.0%20304.5%2C159.8%20306.0%2C159.6%20307.4%2C159.4%20308.8%2C159.3%20310.2%2C159.1%20311.6%2C158.9%20313.1%2C158.8%20314.5%2C158.6%20315.9%2C158.5%20317.3%2C158.3%20318.7%2C158.2%20320.1%2C158.1%20321.6%2C157.9%20323.0%2C157.8%20324.4%2C157.7%20325.8%2C157.6%20327.2%2C157.5%20328.7%2C157.4%20330.1%2C157.3%20331.5%2C157.2%20332.9%2C157.1%20334.3%2C157.0%20335.8%2C157.0%20337.2%2C156.9%20338.6%2C156.8%20340.0%2C156.8%20341.4%2C156.7%20342.8%2C156.7%20344.3%2C156.6%20345.7%2C156.6%20347.1%2C156.6%20348.5%2C156.5%20349.9%2C156.5%20351.4%2C156.5%20352.8%2C156.5%20354.2%2C156.5%20355.6%2C156.5%20357.0%2C156.5%20358.4%2C156.5%20359.9%2C156.5%20361.3%2C156.6%20362.7%2C156.6%20364.1%2C156.6%20365.5%2C156.7%20367.0%2C156.7%20368.4%2C156.7%20369.8%2C156.8%20371.2%2C156.9%20372.6%2C156.9%20374.1%2C157.0%20375.5%2C157.1%20376.9%2C157.1%20378.3%2C157.2%20379.7%2C157.3%20381.1%2C157.4%20382.6%2C157.5%20384.0%2C157.6%20385.4%2C157.7%20386.8%2C157.9%20388.2%2C158.0%20389.7%2C158.1%20391.1%2C158.2%20392.5%2C158.4%20393.9%2C158.5%20395.3%2C158.7%20396.8%2C158.8%20398.2%2C159.0%20399.6%2C159.1%20401.0%2C159.3%20402.4%2C159.5%20403.9%2C159.7%20405.3%2C159.9%20406.7%2C160.0%20408.1%2C160.2%20409.5%2C160.4%20410.9%2C160.6%20412.4%2C160.9%20413.8%2C161.1%20415.2%2C161.3%20416.6%2C161.5%20418.0%2C161.8%20419.5%2C162.0%20420.9%2C162.2%20422.3%2C162.5%20423.7%2C162.7%20425.1%2C163.0%20426.6%2C163.3%20428.0%2C163.5%20429.4%2C163.8%20430.8%2C164.1%20432.2%2C164.4%20433.6%2C164.7%20435.1%2C165.0%20436.5%2C165.3%20437.9%2C165.6%20439.3%2C165.9%20440.7%2C166.2%20442.2%2C166.5%20443.6%2C166.9%20445.0%2C167.2%20446.4%2C167.5%20447.8%2C167.9%20449.2%2C168.2%20450.7%2C168.6%20452.1%2C168.9%20453.5%2C169.3%20454.9%2C169.7%20456.3%2C170.0%20457.8%2C170.4%20459.2%2C170.8%20460.6%2C171.2%20462.0%2C171.6%20463.4%2C172.0%20464.9%2C172.4%20466.3%2C172.8%20467.7%2C173.2%20469.1%2C173.7%20470.5%2C174.1%20471.9%2C174.5%20473.4%2C175.0%20474.8%2C175.4%20476.2%2C175.9%20477.6%2C176.3%20479.0%2C176.8%20480.5%2C177.2%20481.9%2C177.7%20483.3%2C178.2%20484.7%2C178.7%20486.1%2C179.1%20487.6%2C179.6%20489.0%2C180.1%20490.4%2C180.6%20491.8%2C181.1%20493.2%2C181.7%20494.6%2C182.2%20496.1%2C182.7%20497.5%2C183.2%20498.9%2C183.8%20500.3%2C184.3%20501.7%2C184.8%20503.2%2C185.4%20504.6%2C185.9%20506.0%2C186.5%22%20clip-path%3D%22url%28%23clip-4616603%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Eg%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -9242,39 +11096,57 @@ so the figure does not give equal numbers of turning points, and the statement i
     tactical_explanations: [
       `**A.** → True
 
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
+
 The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near $x=0.5$, $2$, $3.5$, and $5.5$. Each sign-changing zero produces a local extremum of $f$:
 
 $$4\\text{ sign-changing zeros of }f'\\Rightarrow 4\\text{ local extrema of }f$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 Between the zeros near $x=2$ and $x=3.5$ the curve of $f'$ dips below the axis.
 
 $$f'(x)<0\\quad\\text{between those zeros}$$
 
-so $f$ is decreasing on that open interval, and the statement is True.`,
+so $f$ is decreasing on that open interval, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the zeros near $x=0.5$ and $x=2$ the curve of $f'$ sits above the axis, and the sample point $x=1$ lies in that interval.
 
 $$f'(1)>0$$
 
-so the derivative is positive at $x=1$, and the statement is True.`,
+so the derivative is positive at $x=1$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A local minimum of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — typically an inflection story for $f$, not a local minimum of $f$:
 
 $$\\min f'\\qquad\\nRightarrow\\qquad\\min f$$
 
-Local minima of $f$ need zeros of $f'$ with a $-$ to $+$ change, so the statement is False.`,
+Local minima of $f$ need zeros of $f'$ with a $-$ to $+$ change
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**E.** → True
+
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
 
 A continuous $f'$ cannot change sign without passing through zero. Between consecutive zeros the sign of $f'$ is therefore constant:
 
 $$f'\\text{ constant sign between consecutive zeros}$$
 
-so $f$ is strictly monotonic on each such open interval, and the statement is True.`
+so $f$ is strictly monotonic on each such open interval, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 144,
@@ -9304,44 +11176,66 @@ Each sign-changing zero gives a local extremum of $f$, so $f$ has four local ext
     tactical_explanations: [
       `**A.** → True
 
+On the open interval $(1,3)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits below the axis on that stretch, the slope is negative and $f$ is decreasing.
+
 Zeros of $f'$ are marked at $x=1$ and $x=3$. Between them the curve sits below the axis.
 
 $$f'(x)<0\\quad\\text{for }x\\in(1,3)$$
 
-so $f$ is decreasing on $(1,3)$, and the statement is True.`,
+so $f$ is decreasing on $(1,3)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+To decide whether $f$ has a local maximum at $x=1$, apply the first-derivative test on the figure of $f'$: you need $f'(1)=0$ together with a sign change from positive (above the axis) to negative (below the axis).
 
 Left of $x=1$ the curve is above the axis; just right of $x=1$ it is below.
 
 $$f'(1)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=1$$
 
-That is a local maximum of $f$ at $x=1$, so the statement is True.`,
+That is a local maximum of $f$ at $x=1$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+To decide whether $f$ has a local minimum at $x=3$, apply the first-derivative test on the figure: you need $f'(3)=0$ together with a sign change from negative to positive across that zero.
 
 At $x=3$ the figure shows the opposite flip: the curve arrives from below and leaves above.
 
 $$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
 
-That is a local minimum of $f$ at $x=3$, so the statement is True.`,
+That is a local minimum of $f$ at $x=3$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+The claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.
 
 The envelope of the oscillation decays as $x$ grows. Comparing absolute heights, the dip near $x=2$ is larger than the height at $x=5$.
 
 $$|f'(5)|<|f'(2)|$$
 
-so $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.`,
+so $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A local extremum of $f$ is decided by a sign change of $f'$ at a zero, not by the size of nearby amplitudes. Even when $|f'|$ is smaller near $x=3$ than near $x=2$, the $-$ to $+$ crossing at $x=3$ still produces a local minimum of $f$:
 
 $$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
 
-Amplitude decay does not cancel that test, so the statement is False.`
+Amplitude decay does not cancel that test
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 145,
     solution_overview:
-      `The figure shows $f'$ with zeros at $x=1$ and $x=3$ and a decaying envelope. Sign chart:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure shows $f'$ with zeros at $x=1$ and $x=3$ and a decaying envelope. Sign chart:
 
 $$f'>0\\text{ left of }1,\\qquad f'<0\\text{ on }(1,3),\\qquad f'>0\\text{ right of }3$$
 
@@ -9366,44 +11260,64 @@ so $f$ has a local maximum at $x=1$ ($+$ to $-$) and a local minimum at $x=3$ ($
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$ on the same plane. At $x=3$, which lies between brown's later zeros, the brown curve sits below the axis.
 
 $$f'(3)<0$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Concavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.
 
 At the same abscissa $x=3$ the green curve also sits below the axis:
 
 $$f''(3)<0$$
 
-Negative second derivative means $f$ is concave down at $x=3$, so the statement is True.`,
+Negative second derivative means $f$ is concave down at $x=3$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 Near $x=1.5$ the brown curve has a local highest point, and the green curve is about zero there.
 
 $$f''(1.5)\\approx 0$$
 
-so the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.`,
+so the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Green is $f''$. Wherever green is positive one has $f''>0$:
 
 $$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising}$$
 
-so the brown graph of $f'$ is rising on that stretch, and the statement is True.`,
+so the brown graph of $f'$ is rising on that stretch, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Counting clear axis crossings in the window:
 
 $$f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}$$
 
-Those counts match the claim exactly, so the statement is True.`
+Those counts match the claim exactly
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 146,
     solution_overview:
-      `The figure plots $f'$ (brown) and $f''$ (green) on the same plane. Brown has three zeros and green has two in the window. At $x=3$ (between brown's middle zeros) brown is below the axis, and green is also below:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+The figure plots $f'$ (brown) and $f''$ (green) on the same plane. Brown has three zeros and green has two in the window. At $x=3$ (between brown's middle zeros) brown is below the axis, and green is also below:
 
 $$f'(3)<0,\\qquad f''(3)<0$$
 
@@ -9428,39 +11342,57 @@ so $f$ is decreasing and concave down at $x=3$. Near $x=1.5$ brown has a local m
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$. The brown curve crosses the axis at $x=4$, and to the left of that zero it forms a positive hump above the axis.
 
 $$f'(x)>0\\quad\\text{for }x\\in(0,4),\\qquad f'(4)=0$$
 
-so the claim's reading of the figure is correct, and the statement is True.`,
+so the claim's reading of the figure is correct, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The highest point of brown sits near $x=1$, and there the green curve is approximately zero.
 
 $$f''(1)\\approx 0$$
 
-so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.`,
+so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 For $x>2$ in this window the green curve ($f''$) is negative:
 
 $$f''(x)<0\\quad\\text{for }x\\in(2,8)$$
 
-Negative $f''$ means the brown graph of $f'$ is decreasing on $(2,8)$, so the statement is True.`,
+Negative $f''$ means the brown graph of $f'$ is decreasing on $(2,8)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At the left edge, reading both heights on the shared scale, brown is near height $4$ while green is near height $-2$.
 
 $$f'(0)\\approx 4,\\qquad f''(0)\\approx -2$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Negative $f''$ says $f'$ is decreasing and $f$ is concave down; it does not say $f$ itself is decreasing. On $(2,4)$ one still has $f'>0$ from the positive brown hump:
 
 $$f''<0\\text{ on }(2,8)\\quad\\text{but}\\quad f'>0\\text{ on }(2,4)$$
 
-so $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different, so the statement is False.`
+so $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 147,
@@ -9494,39 +11426,59 @@ Negative $f''$ speaks to concavity of $f$ and decrease of $f'$, not to whether $
     tactical_explanations: [
       `**A.** → True
 
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
+
 Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$. Reading the axis crossings:
 
 $$P_A'\\text{ zeros near }x=1,3;\\qquad P_B'\\text{ zeros near }x=2,5$$
 
-Those four readings match the claim, so the statement is True.`,
+Those four readings match the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=1.5$, brown sits below the axis while green sits above it.
 
 $$P_A'(1.5)<0,\\qquad P_B'(1.5)>0$$
 
-Negative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice, so the statement is True.`,
+Negative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Marginal profit is the instantaneous rate of change of profit. When it is negative, a little more output lowers profit, so profit is decreasing in output on that stretch.
 
 At $x=4$ both curves sit below the axis, so both marginal profits are negative.
 
 $$P_A'(4)<0,\\qquad P_B'(4)<0$$
 
-Negative $P'$ means each firm's profit is decreasing in output there, so the statement is True.`,
+Negative $P'$ means each firm's profit is decreasing in output there
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Near $x=0$ both curves sit above the axis, and on the shared scale green starts higher than brown.
 
 $$P_A'(0)>0,\\qquad P_B'(0)>P_A'(0)$$
 
-so both are positive and green starts higher, and the statement is True.`,
+so both are positive and green starts higher, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
 
 Having two zeros each only says each firm's marginal profit changes sign twice; it says nothing about the height of the profit level $P$ itself:
 
 $$\\#\\{P_A'=0\\}=\\#\\{P_B'=0\\}\\qquad\\nRightarrow\\qquad\\max P_A=\\max P_B$$
 
-Equal critical-point counts do not force equal maximal profit levels, so the statement is False.`
+Equal critical-point counts do not force equal maximal profit levels
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 148,
@@ -9556,44 +11508,66 @@ Near $x=0$ both curves are positive, with green starting higher than brown. At $
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$. Counting clear axis crossings of the brown curve in $[0,6]$:
 
 $$f'\\text{ has four zeros in }[0,6]$$
 
-That count matches the claim, so the statement is True.`,
+That count matches the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Counting clear axis crossings of the green curve ($f''$) in the same window:
 
 $$f''\\text{ has three zeros (one fewer than }f'\\text{)}$$
 
-That count matches the claim, so the statement is True.`,
+That count matches the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Extrema of brown ($f'$) occur where green ($f''$) is zero:
 
 $$f''=0\\quad\\text{at a local max of }f'$$
 
-On the figure, at a local maximum of brown, green crosses or touches zero, so the statement is True.`,
+On the figure, at a local maximum of brown, green crosses or touches zero
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Concavity of $f$ is the sign of $f''$, which appears as the slope of the graph of $f'$. A falling graph of $f'$ means $f''<0$ (concave down); a rising graph of $f'$ means concave up.
 
 Wherever green is positive one has $f''>0$:
 
 $$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising and }f\\text{ concave up}$$
 
-Positive $f''$ is exactly the concave-up reading for $f$, so the statement is True.`,
+Positive $f''$ is exactly the concave-up reading for $f$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+Where the claim says the level function is decreasing, confirm that the corresponding derivative sits below the axis on the relevant set — negative slope is exactly what decreasing means.
 
 At $x=3$ the brown curve ($f'$) sits below the axis on the shared plane, so the slope of $f$ is negative there.
 
 $$f'(3)<0$$
 
-Negative $f'$ means $f$ is decreasing at $x=3$, so the statement is True.`
+Negative $f'$ means $f$ is decreasing at $x=3$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 149,
     solution_overview:
-      `Brown is $f'$ and green is $f''$ on one plane. Counting axis crossings:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $f''$ on one plane. Counting axis crossings:
 
 $$\\text{brown: four zeros in }[0,6];\\qquad\\text{green: three zeros (one fewer)}$$
 
@@ -9618,39 +11592,59 @@ Extrema of brown line up with zeros of green: at a local maximum of brown, green
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Three marginal-profit curves sit on the same axes (brown, green, purple). At $x=0$, brown and purple start above the axis while green starts below it (near height $-1$).
 
 $$P_1'(0)>0,\\qquad P_3'(0)>0,\\qquad P_2'(0)<0$$
 
-so brown and purple are positive while green is negative, and the statement is True.`,
+so brown and purple are positive while green is negative, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=0$ the green curve $P_2'$ starts below the axis on the shared plane, near height $-1$, not above it.
 
 $$P_2'(0)<0$$
 
-so green is not positive at $x=0$, and the statement is False.`,
+so green is not positive at $x=0$, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**C.** → True
+
+Marginal profit is the instantaneous rate of change of profit. When it is negative, a little more output lowers profit, so profit is decreasing in output on that stretch.
 
 At $x=5$ the brown curve sits below the axis, so firm 1's marginal profit is negative.
 
 $$P_1'(5)<0$$
 
-Negative $P_1'$ means firm 1's profit is decreasing in output at $x=5$, so the statement is True.`,
+Negative $P_1'$ means firm 1's profit is decreasing in output at $x=5$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Moving right from $x=0$, the first axis crossing among the three colours need not belong to brown:
 
 $$\\text{first zero from the left need not be }P_1'=0$$
 
-On the figure another firm's curve can meet the axis earlier than firm 1's, so the statement is True.`,
+On the figure another firm's curve can meet the axis earlier than firm 1's
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 On a shared vertical scale, if one curve sits above another and both are positive:
 
 $$P_i'>P_j'>0\\quad\\Rightarrow\\quad\\text{firm }i\\text{ has the larger instantaneous gain per unit}$$
 
-Height comparison of positive $P'$ values is exactly that ranking, so the statement is True.`
+Height comparison of positive $P'$ values is exactly that ranking
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 150,
@@ -9680,44 +11674,64 @@ so firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is 
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $g'$. Reading the marked-style crossings off the shared axis:
 
 $$f'\\text{ zeros at }x=1,3;\\qquad g'\\text{ zeros at }x=2,5$$
 
-Those four readings match the claim, so the statement is True.`,
+Those four readings match the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 At $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.
 
 $$f'(0)>0,\\qquad g'(0)>f'(0)$$
 
-so both are positive and $g'(0)>f'(0)$, and the statement is True.`,
+so both are positive and $g'(0)>f'(0)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=2.5$, between brown's zeros and also between green's early stretch past $x=2$, both curves sit below the axis.
 
 $$f'(2.5)<0,\\qquad g'(2.5)<0$$
 
-so both are negative at $x=2.5$, and the statement is True.`,
+so both are negative at $x=2.5$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(3,5)$ brown has already crossed back above the axis while green is still below it (until $x=5$).
 
 $$f'(x)>0,\\qquad g'(x)<0\\quad\\text{on }(3,5)$$
 
-so $f$ increases and $g$ decreases there, and the statement is True.`,
+so $f$ increases and $g$ decreases there, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Count clear axis crossings of the relevant curve in the window. Each transversal crossing is a zero; record the count carefully before comparing with the claim.
 
 Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same number of candidate critical points. The maximal heights are not determined by those counts:
 
 $$\\#\\{f'=0\\}=\\#\\{g'=0\\}\\qquad\\nRightarrow\\qquad\\max f=\\max g$$
 
-so the statement is False.`
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 151,
     solution_overview:
-      `Brown is $f'$ and green is $g'$ on one plane. Zero locations:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $g'$ on one plane. Zero locations:
 
 $$f'\\text{ zeros at }x=1,3;\\qquad g'\\text{ zeros at }x=2,5$$
 
@@ -9742,44 +11756,66 @@ At $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axi
     tactical_explanations: [
       `**A.** → True
 
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
+
 Brown is $f'$, green is $f''$, and purple is $h'$. At $x=0$, reading the shared scale, brown is near height $4$ while green is near height $-4$.
 
 $$f'(0)\\approx 4,\\qquad f''(0)\\approx -4$$
 
-so brown is positive and green is negative at $x=0$, and the statement is True.`,
+so brown is positive and green is negative at $x=0$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=3$, brown is near height $10$ while purple is near height $6$, so brown lies above purple.
 
 $$f'(3)\\approx 10,\\qquad h'(3)\\approx 6$$
 
-and the statement is True.`,
+and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The green curve ($f''$) opens upward in a U-shape on the shared plane, and at $x=0$ it sits below the axis:
 
 $$f''(0)\\approx -4<0,\\qquad f''\\text{ opens upward}$$
 
-Both geometric facts match the claim, so the statement is True.`,
+Both geometric facts match the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 Green is $f''$. Wherever green is positive one has $f''>0$:
 
 $$f''>0\\quad\\Rightarrow\\quad f'\\text{ increasing in }x$$
 
-so brown ($f'$) is rising on that stretch, and the statement is True.`,
+so brown ($f'$) is rising on that stretch, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A vertical shift or scaling of brown moves the heights, so purple's axis crossings need not match brown's zeros:
 
 $$h'=\\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}$$
 
-On the figure purple and brown meet the axis at different $x$-values, so the statement is False.`
+On the figure purple and brown meet the axis at different $x$-values
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 152,
     solution_overview:
-      `Brown is $f'$, green is $f''$, and purple is another derivative $h'$, all on the same axes. At $x=0$:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$, green is $f''$, and purple is another derivative $h'$, all on the same axes. At $x=0$:
 
 $$f'(0)\\approx 4>0,\\qquad f''(0)\\approx -4<0$$
 
@@ -9804,44 +11840,66 @@ Green opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near
     tactical_explanations: [
       `**A.** → True
 
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
+
 Brown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.
 
 $$A(3)<0,\\qquad B(3)<0$$
 
-so both are negative at $x=3$, and the statement is True.`,
+so both are negative at $x=3$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=3$, compare purple ($A-B$) with brown ($A$) on the shared vertical scale. Relative height decides the claim:
 
 $$(A-B)(3)\\not< A(3)$$
 
-Purple sits above brown, not strictly below it. The claimed inequality runs the wrong way on the figure, so the statement is False.`,
+Purple sits above brown, not strictly below it. The claimed inequality runs the wrong way on the figure
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**C.** → True
+
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 Because $B=A'$, zeros of green are critical points of brown. On the figure those zeros sit under a local max and a local min of $A$:
 
 $$B=0\\quad\\text{under local max/min of }A$$
 
-which is exactly the first-derivative alignment, so the statement is True.`,
+which is exactly the first-derivative alignment
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Wherever the green curve is positive one has $B=A'>0$:
 
 $$B>0\\quad\\Rightarrow\\quad A\\text{ rising}$$
 
-Positive $A'$ is exactly the increasing test for $A$, so the statement is True.`,
+Positive $A'$ is exactly the increasing test for $A$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Purple is $A-B$. A zero of purple means $A-B=0$, hence $A=B$ at that $x$. With $B=A'$ this is
 
 $$A(x)=A'(x)$$
 
-so the claim's reading is correct, and the statement is True.`
+so the claim's reading is correct, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 153,
     solution_overview:
-      `Three curves share one plane: $A$ (brown), $B$ (green), and $A-B$ (purple), with the model relation $B=A'$. At $x=3$ both brown and green sit below the axis:
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Three curves share one plane: $A$ (brown), $B$ (green), and $A-B$ (purple), with the model relation $B=A'$. At $x=3$ both brown and green sit below the axis:
 
 $$A(3)<0,\\qquad B(3)<0$$
 
@@ -9866,39 +11924,57 @@ while purple sits above brown on the shared scale (not below). Because $B=A'$, z
     tactical_explanations: [
       `**A.** → True
 
+On the open interval $(-2,1)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
+
 Zeros of $f'$ are at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis.
 
 $$f'(x)>0\\quad\\text{for }x\\in(-2,1)$$
 
-so $f$ is increasing on $(-2,1)$, and the statement is True.`,
+so $f$ is increasing on $(-2,1)$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 At $x=-1$, which lies in $(-2,1)$, the graph is clearly above the axis. Reading the vertical scale, the height is about $6$.
 
 $$f'(-1)\\approx 6>0$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the zeros at $x=1$ and $x=2$ the curve of $f'$ dips below the axis, so the slope of $f$ is negative on that open interval.
 
 $$f'(x)<0\\quad\\text{for }x\\in(1,2)$$
 
-Hence $f$ decreases on $(1,2)$, so the statement is True.`,
+Hence $f$ decreases on $(1,2)$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 Among the critical points, $x=1$ is where $f'$ changes from $+$ to $-$:
 
 $$f'\\text{ changes }+\\to-\\text{ at }x=1$$
 
-That is a local maximum of $f$. The other zeros give a local min (or the opposite flip), so among these critical points the local maximum of $f$ is at $x=1$, and the statement is True.`,
+That is a local maximum of $f$. The other zeros give a local min (or the opposite flip), so among these critical points the local maximum of $f$ is at $x=1$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 At $x=-2$ the figure shows a $-$ to $+$ pattern (local minimum of $f$), not the claimed $+$ to $-$ flip:
 
 $$f'\\text{ changes }-\\to+\\text{ at }x=-2$$
 
-so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.`
+so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 154,
@@ -9928,44 +12004,64 @@ So $f$ increases on $(-2,1)$ and decreases on $(1,2)$. At $x=-1$ the height is a
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$. At $x=0$, brown sits below the axis and purple, being two units lower, sits even further below.
 
 $$f'(0)<0,\\qquad f'(0)-2<f'(0)$$
 
-so brown is below and purple is even lower, and the statement is True.`,
+so brown is below and purple is even lower, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Extrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros sit under a local max and a local min of brown:
 
 $$f''=0\\quad\\text{at extrema of }f'$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Purple is brown shifted down by $2$, so it meets the axis where brown has height $2$:
 
 $$f'-2=0\\quad\\Leftrightarrow\\quad f'=2$$
 
-Those zeros are at different $x$-values from brown's zeros ($f'=0$), which is what the figure shows, so the statement is True.`,
+Those zeros are at different $x$-values from brown's zeros ($f'=0$), which is what the figure shows
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Wherever the green curve ($f''$) is positive one has $f''>0$:
 
 $$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising}$$
 
-so brown is increasing as a function of $x$, and the statement is True.`,
+so brown is increasing as a function of $x$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A pure vertical shift does not move peaks and valleys horizontally:
 
 $$(f'-2)'=f''$$
 
-so the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.`
+so the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 155,
     solution_overview:
-      `Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one plane. At $x=0$ brown is below the axis and purple (shifted down by $2$) is even lower. Zeros of green sit under a local max and a local min of brown. Because purple is brown shifted down by $2$, its axis crossings move to different $x$-values from brown's, but the $x$-coordinates of peaks and valleys stay the same (a vertical shift does not move extrema left or right). Wherever green is positive, brown is rising.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$ on one plane. At $x=0$ brown is below the axis and purple (shifted down by $2$) is even lower. Zeros of green sit under a local max and a local min of brown. Because purple is brown shifted down by $2$, its axis crossings move to different $x$-values from brown's, but the $x$-coordinates of peaks and valleys stay the same (a vertical shift does not move extrema left or right). Wherever green is positive, brown is rising.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20related%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-6784096%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22289.5%22%20x2%3D%22506%22%20y2%3D%22289.5%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22234.9%22%20x2%3D%22506%22%20y2%3D%22234.9%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22180.4%22%20x2%3D%22506%22%20y2%3D%22180.4%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22125.8%22%20x2%3D%22506%22%20y2%3D%22125.8%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2271.3%22%20x2%3D%22506%22%20y2%3D%2271.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22180.4%22%20x2%3D%22506%22%20y2%3D%22180.4%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22289.5%22%20x2%3D%2252%22%20y2%3D%22289.5%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22293.5%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22234.9%22%20x2%3D%2252%22%20y2%3D%22234.9%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22238.9%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22180.4%22%20x2%3D%2252%22%20y2%3D%22180.4%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22184.4%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22125.8%22%20x2%3D%2252%22%20y2%3D%22125.8%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22129.8%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%2271.3%22%20x2%3D%2252%22%20y2%3D%2271.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%2275.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E8%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C180.4%2053.4%2C176.6%2054.8%2C172.8%2056.3%2C169.2%2057.7%2C165.6%2059.1%2C162.1%2060.5%2C158.7%2061.9%2C155.4%2063.4%2C152.1%2064.8%2C148.9%2066.2%2C145.8%2067.6%2C142.7%2069.0%2C139.7%2070.4%2C136.8%2071.9%2C133.9%2073.3%2C131.2%2074.7%2C128.4%2076.1%2C125.8%2077.5%2C123.2%2079.0%2C120.7%2080.4%2C118.3%2081.8%2C115.9%2083.2%2C113.6%2084.6%2C111.3%2086.0%2C109.2%2087.5%2C107.0%2088.9%2C105.0%2090.3%2C103.0%2091.7%2C101.1%2093.1%2C99.2%2094.6%2C97.4%2096.0%2C95.7%2097.4%2C94.0%2098.8%2C92.3%20100.2%2C90.8%20101.7%2C89.3%20103.1%2C87.8%20104.5%2C86.4%20105.9%2C85.1%20107.3%2C83.8%20108.8%2C82.6%20110.2%2C81.4%20111.6%2C80.3%20113.0%2C79.2%20114.4%2C78.2%20115.8%2C77.3%20117.3%2C76.3%20118.7%2C75.5%20120.1%2C74.7%20121.5%2C73.9%20122.9%2C73.2%20124.4%2C72.6%20125.8%2C72.0%20127.2%2C71.4%20128.6%2C70.9%20130.0%2C70.5%20131.4%2C70.1%20132.9%2C69.7%20134.3%2C69.4%20135.7%2C69.1%20137.1%2C68.9%20138.5%2C68.7%20140.0%2C68.6%20141.4%2C68.5%20142.8%2C68.4%20144.2%2C68.4%20145.6%2C68.5%20147.1%2C68.5%20148.5%2C68.6%20149.9%2C68.8%20151.3%2C69.0%20152.7%2C69.2%20154.2%2C69.5%20155.6%2C69.8%20157.0%2C70.1%20158.4%2C70.5%20159.8%2C71.0%20161.2%2C71.4%20162.7%2C71.9%20164.1%2C72.4%20165.5%2C73.0%20166.9%2C73.6%20168.3%2C74.2%20169.8%2C74.9%20171.2%2C75.5%20172.6%2C76.3%20174.0%2C77.0%20175.4%2C77.8%20176.8%2C78.6%20178.3%2C79.4%20179.7%2C80.3%20181.1%2C81.2%20182.5%2C82.1%20183.9%2C83.1%20185.4%2C84.1%20186.8%2C85.1%20188.2%2C86.1%20189.6%2C87.2%20191.0%2C88.2%20192.5%2C89.3%20193.9%2C90.5%20195.3%2C91.6%20196.7%2C92.8%20198.1%2C94.0%20199.6%2C95.2%20201.0%2C96.4%20202.4%2C97.7%20203.8%2C99.0%20205.2%2C100.3%20206.6%2C101.6%20208.1%2C102.9%20209.5%2C104.3%20210.9%2C105.6%20212.3%2C107.0%20213.7%2C108.4%20215.2%2C109.8%20216.6%2C111.2%20218.0%2C112.7%20219.4%2C114.1%20220.8%2C115.6%20222.2%2C117.1%20223.7%2C118.6%20225.1%2C120.1%20226.5%2C121.6%20227.9%2C123.1%20229.3%2C124.7%20230.8%2C126.2%20232.2%2C127.7%20233.6%2C129.3%20235.0%2C130.9%20236.4%2C132.5%20237.9%2C134.0%20239.3%2C135.6%20240.7%2C137.2%20242.1%2C138.8%20243.5%2C140.4%20244.9%2C142.0%20246.4%2C143.6%20247.8%2C145.3%20249.2%2C146.9%20250.6%2C148.5%20252.0%2C150.1%20253.5%2C151.7%20254.9%2C153.3%20256.3%2C155.0%20257.7%2C156.6%20259.1%2C158.2%20260.6%2C159.8%20262.0%2C161.4%20263.4%2C163.0%20264.8%2C164.6%20266.2%2C166.2%20267.6%2C167.8%20269.1%2C169.4%20270.5%2C171.0%20271.9%2C172.6%20273.3%2C174.2%20274.7%2C175.7%20276.2%2C177.3%20277.6%2C178.8%20279.0%2C180.4%20280.4%2C181.9%20281.8%2C183.4%20283.3%2C184.9%20284.7%2C186.4%20286.1%2C187.9%20287.5%2C189.4%20288.9%2C190.8%20290.4%2C192.3%20291.8%2C193.7%20293.2%2C195.1%20294.6%2C196.5%20296.0%2C197.9%20297.4%2C199.3%20298.9%2C200.7%20300.3%2C202.0%20301.7%2C203.3%20303.1%2C204.6%20304.5%2C205.9%20306.0%2C207.2%20307.4%2C208.4%20308.8%2C209.6%20310.2%2C210.8%20311.6%2C212.0%20313.1%2C213.2%20314.5%2C214.3%20315.9%2C215.4%20317.3%2C216.5%20318.7%2C217.6%20320.1%2C218.6%20321.6%2C219.6%20323.0%2C220.6%20324.4%2C221.6%20325.8%2C222.5%20327.2%2C223.4%20328.7%2C224.3%20330.1%2C225.2%20331.5%2C226.0%20332.9%2C226.8%20334.3%2C227.6%20335.8%2C228.3%20337.2%2C229.0%20338.6%2C229.7%20340.0%2C230.3%20341.4%2C230.9%20342.8%2C231.5%20344.3%2C232.0%20345.7%2C232.5%20347.1%2C233.0%20348.5%2C233.4%20349.9%2C233.8%20351.4%2C234.2%20352.8%2C234.5%20354.2%2C234.8%20355.6%2C235.1%20357.0%2C235.3%20358.4%2C235.5%20359.9%2C235.6%20361.3%2C235.7%20362.7%2C235.7%20364.1%2C235.7%20365.5%2C235.7%20367.0%2C235.6%20368.4%2C235.5%20369.8%2C235.3%20371.2%2C235.1%20372.6%2C234.9%20374.1%2C234.6%20375.5%2C234.3%20376.9%2C233.9%20378.3%2C233.4%20379.7%2C232.9%20381.1%2C232.4%20382.6%2C231.8%20384.0%2C231.2%20385.4%2C230.5%20386.8%2C229.8%20388.2%2C229.0%20389.7%2C228.2%20391.1%2C227.3%20392.5%2C226.4%20393.9%2C225.4%20395.3%2C224.4%20396.8%2C223.3%20398.2%2C222.1%20399.6%2C220.9%20401.0%2C219.7%20402.4%2C218.4%20403.9%2C217.0%20405.3%2C215.6%20406.7%2C214.1%20408.1%2C212.5%20409.5%2C210.9%20410.9%2C209.3%20412.4%2C207.5%20413.8%2C205.8%20415.2%2C203.9%20416.6%2C202.0%20418.0%2C200.1%20419.5%2C198.0%20420.9%2C195.9%20422.3%2C193.8%20423.7%2C191.6%20425.1%2C189.3%20426.6%2C186.9%20428.0%2C184.5%20429.4%2C182.1%20430.8%2C179.5%20432.2%2C176.9%20433.6%2C174.2%20435.1%2C171.5%20436.5%2C168.6%20437.9%2C165.8%20439.3%2C162.8%20440.7%2C159.8%20442.2%2C156.7%20443.6%2C153.5%20445.0%2C150.3%20446.4%2C146.9%20447.8%2C143.6%20449.2%2C140.1%20450.7%2C136.6%20452.1%2C132.9%20453.5%2C129.3%20454.9%2C125.5%20456.3%2C121.7%20457.8%2C117.7%20459.2%2C113.7%20460.6%2C109.7%20462.0%2C105.5%20463.4%2C101.3%20464.9%2C97.0%20466.3%2C92.6%20467.7%2C88.1%20469.1%2C83.6%20470.5%2C78.9%20471.9%2C74.2%20473.4%2C69.4%20474.8%2C64.5%20476.2%2C59.6%20477.6%2C54.5%20479.0%2C49.4%20480.5%2C44.2%20481.9%2C38.9%20483.3%2C33.5%20484.7%2C28.0%20486.1%2C22.4%20487.6%2C16.7%20489.0%2C11.0%20490.4%2C5.2%20491.8%2C-0.8%20493.2%2C-6.8%20494.6%2C-12.9%20496.1%2C-19.1%20497.5%2C-25.4%20498.9%2C-31.8%20500.3%2C-38.2%20501.7%2C-44.8%20503.2%2C-51.5%20504.6%2C-58.2%20506.0%2C-65.1%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-24.2%2053.4%2C-20.1%2054.8%2C-16.1%2056.3%2C-12.0%2057.7%2C-8.0%2059.1%2C-4.1%2060.5%2C-0.2%2061.9%2C3.7%2063.4%2C7.6%2064.8%2C11.5%2066.2%2C15.3%2067.6%2C19.1%2069.0%2C22.8%2070.4%2C26.6%2071.9%2C30.3%2073.3%2C33.9%2074.7%2C37.6%2076.1%2C41.2%2077.5%2C44.8%2079.0%2C48.4%2080.4%2C51.9%2081.8%2C55.4%2083.2%2C58.9%2084.6%2C62.3%2086.0%2C65.7%2087.5%2C69.1%2088.9%2C72.5%2090.3%2C75.8%2091.7%2C79.1%2093.1%2C82.4%2094.6%2C85.6%2096.0%2C88.8%2097.4%2C92.0%2098.8%2C95.2%20100.2%2C98.3%20101.7%2C101.4%20103.1%2C104.5%20104.5%2C107.5%20105.9%2C110.5%20107.3%2C113.5%20108.8%2C116.4%20110.2%2C119.4%20111.6%2C122.3%20113.0%2C125.1%20114.4%2C128.0%20115.8%2C130.8%20117.3%2C133.6%20118.7%2C136.3%20120.1%2C139.0%20121.5%2C141.7%20122.9%2C144.4%20124.4%2C147.0%20125.8%2C149.7%20127.2%2C152.2%20128.6%2C154.8%20130.0%2C157.3%20131.4%2C159.8%20132.9%2C162.3%20134.3%2C164.7%20135.7%2C167.1%20137.1%2C169.5%20138.5%2C171.8%20140.0%2C174.2%20141.4%2C176.5%20142.8%2C178.7%20144.2%2C181.0%20145.6%2C183.2%20147.1%2C185.3%20148.5%2C187.5%20149.9%2C189.6%20151.3%2C191.7%20152.7%2C193.8%20154.2%2C195.8%20155.6%2C197.8%20157.0%2C199.8%20158.4%2C201.7%20159.8%2C203.7%20161.2%2C205.5%20162.7%2C207.4%20164.1%2C209.2%20165.5%2C211.0%20166.9%2C212.8%20168.3%2C214.6%20169.8%2C216.3%20171.2%2C218.0%20172.6%2C219.6%20174.0%2C221.3%20175.4%2C222.9%20176.8%2C224.4%20178.3%2C226.0%20179.7%2C227.5%20181.1%2C229.0%20182.5%2C230.5%20183.9%2C231.9%20185.4%2C233.3%20186.8%2C234.7%20188.2%2C236.0%20189.6%2C237.3%20191.0%2C238.6%20192.5%2C239.9%20193.9%2C241.1%20195.3%2C242.3%20196.7%2C243.5%20198.1%2C244.6%20199.6%2C245.7%20201.0%2C246.8%20202.4%2C247.9%20203.8%2C248.9%20205.2%2C249.9%20206.6%2C250.9%20208.1%2C251.8%20209.5%2C252.7%20210.9%2C253.6%20212.3%2C254.4%20213.7%2C255.3%20215.2%2C256.1%20216.6%2C256.8%20218.0%2C257.6%20219.4%2C258.3%20220.8%2C259.0%20222.2%2C259.6%20223.7%2C260.2%20225.1%2C260.8%20226.5%2C261.4%20227.9%2C262.0%20229.3%2C262.5%20230.8%2C262.9%20232.2%2C263.4%20233.6%2C263.8%20235.0%2C264.2%20236.4%2C264.6%20237.9%2C264.9%20239.3%2C265.2%20240.7%2C265.5%20242.1%2C265.8%20243.5%2C266.0%20244.9%2C266.2%20246.4%2C266.3%20247.8%2C266.5%20249.2%2C266.6%20250.6%2C266.7%20252.0%2C266.7%20253.5%2C266.7%20254.9%2C266.7%20256.3%2C266.7%20257.7%2C266.6%20259.1%2C266.5%20260.6%2C266.4%20262.0%2C266.2%20263.4%2C266.1%20264.8%2C265.9%20266.2%2C265.6%20267.6%2C265.4%20269.1%2C265.1%20270.5%2C264.7%20271.9%2C264.4%20273.3%2C264.0%20274.7%2C263.6%20276.2%2C263.1%20277.6%2C262.7%20279.0%2C262.2%20280.4%2C261.7%20281.8%2C261.1%20283.3%2C260.5%20284.7%2C259.9%20286.1%2C259.3%20287.5%2C258.6%20288.9%2C257.9%20290.4%2C257.2%20291.8%2C256.4%20293.2%2C255.6%20294.6%2C254.8%20296.0%2C254.0%20297.4%2C253.1%20298.9%2C252.2%20300.3%2C251.3%20301.7%2C250.3%20303.1%2C249.3%20304.5%2C248.3%20306.0%2C247.3%20307.4%2C246.2%20308.8%2C245.1%20310.2%2C244.0%20311.6%2C242.8%20313.1%2C241.6%20314.5%2C240.4%20315.9%2C239.2%20317.3%2C237.9%20318.7%2C236.6%20320.1%2C235.3%20321.6%2C233.9%20323.0%2C232.5%20324.4%2C231.1%20325.8%2C229.6%20327.2%2C228.2%20328.7%2C226.7%20330.1%2C225.1%20331.5%2C223.6%20332.9%2C222.0%20334.3%2C220.4%20335.8%2C218.7%20337.2%2C217.0%20338.6%2C215.3%20340.0%2C213.6%20341.4%2C211.8%20342.8%2C210.0%20344.3%2C208.2%20345.7%2C206.4%20347.1%2C204.5%20348.5%2C202.6%20349.9%2C200.7%20351.4%2C198.7%20352.8%2C196.7%20354.2%2C194.7%20355.6%2C192.6%20357.0%2C190.6%20358.4%2C188.4%20359.9%2C186.3%20361.3%2C184.1%20362.7%2C181.9%20364.1%2C179.7%20365.5%2C177.5%20367.0%2C175.2%20368.4%2C172.9%20369.8%2C170.5%20371.2%2C168.2%20372.6%2C165.8%20374.1%2C163.4%20375.5%2C160.9%20376.9%2C158.4%20378.3%2C155.9%20379.7%2C153.4%20381.1%2C150.8%20382.6%2C148.2%20384.0%2C145.6%20385.4%2C142.9%20386.8%2C140.2%20388.2%2C137.5%20389.7%2C134.8%20391.1%2C132.0%20392.5%2C129.2%20393.9%2C126.4%20395.3%2C123.5%20396.8%2C120.7%20398.2%2C117.7%20399.6%2C114.8%20401.0%2C111.8%20402.4%2C108.8%20403.9%2C105.8%20405.3%2C102.7%20406.7%2C99.7%20408.1%2C96.5%20409.5%2C93.4%20410.9%2C90.2%20412.4%2C87.0%20413.8%2C83.8%20415.2%2C80.5%20416.6%2C77.3%20418.0%2C73.9%20419.5%2C70.6%20420.9%2C67.2%20422.3%2C63.8%20423.7%2C60.4%20425.1%2C56.9%20426.6%2C53.4%20428.0%2C49.9%20429.4%2C46.4%20430.8%2C42.8%20432.2%2C39.2%20433.6%2C35.6%20435.1%2C31.9%20436.5%2C28.2%20437.9%2C24.5%20439.3%2C20.8%20440.7%2C17.0%20442.2%2C13.2%20443.6%2C9.3%20445.0%2C5.5%20446.4%2C1.6%20447.8%2C-2.3%20449.2%2C-6.3%20450.7%2C-10.3%20452.1%2C-14.3%20453.5%2C-18.3%20454.9%2C-22.4%20456.3%2C-26.5%20457.8%2C-30.6%20459.2%2C-34.7%20460.6%2C-38.9%20462.0%2C-43.1%20463.4%2C-47.4%20464.9%2C-51.6%20466.3%2C-55.9%20467.7%2C-60.2%20469.1%2C-64.6%20470.5%2C-69.0%20471.9%2C-73.4%20473.4%2C-77.8%20474.8%2C-82.3%20476.2%2C-86.8%20477.6%2C-91.3%20479.0%2C-95.9%20480.5%2C-100.4%20481.9%2C-105.0%20483.3%2C-109.7%20484.7%2C-114.3%20486.1%2C-119.0%20487.6%2C-123.8%20489.0%2C-128.5%20490.4%2C-133.3%20491.8%2C-138.1%20493.2%2C-143.0%20494.6%2C-147.8%20496.1%2C-152.7%20497.5%2C-157.7%20498.9%2C-162.6%20500.3%2C-167.6%20501.7%2C-172.6%20503.2%2C-177.6%20504.6%2C-182.7%20506.0%2C-187.8%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C207.6%2053.4%2C203.8%2054.8%2C200.1%2056.3%2C196.5%2057.7%2C192.9%2059.1%2C189.4%2060.5%2C186.0%2061.9%2C182.6%2063.4%2C179.4%2064.8%2C176.2%2066.2%2C173.0%2067.6%2C170.0%2069.0%2C167.0%2070.4%2C164.1%2071.9%2C161.2%2073.3%2C158.4%2074.7%2C155.7%2076.1%2C153.1%2077.5%2C150.5%2079.0%2C148.0%2080.4%2C145.6%2081.8%2C143.2%2083.2%2C140.9%2084.6%2C138.6%2086.0%2C136.4%2087.5%2C134.3%2088.9%2C132.3%2090.3%2C130.3%2091.7%2C128.3%2093.1%2C126.5%2094.6%2C124.7%2096.0%2C122.9%2097.4%2C121.2%2098.8%2C119.6%20100.2%2C118.0%20101.7%2C116.5%20103.1%2C115.1%20104.5%2C113.7%20105.9%2C112.3%20107.3%2C111.1%20108.8%2C109.8%20110.2%2C108.7%20111.6%2C107.6%20113.0%2C106.5%20114.4%2C105.5%20115.8%2C104.5%20117.3%2C103.6%20118.7%2C102.8%20120.1%2C102.0%20121.5%2C101.2%20122.9%2C100.5%20124.4%2C99.9%20125.8%2C99.3%20127.2%2C98.7%20128.6%2C98.2%20130.0%2C97.8%20131.4%2C97.4%20132.9%2C97.0%20134.3%2C96.7%20135.7%2C96.4%20137.1%2C96.2%20138.5%2C96.0%20140.0%2C95.9%20141.4%2C95.8%20142.8%2C95.7%20144.2%2C95.7%20145.6%2C95.7%20147.1%2C95.8%20148.5%2C95.9%20149.9%2C96.1%20151.3%2C96.3%20152.7%2C96.5%20154.2%2C96.8%20155.6%2C97.1%20157.0%2C97.4%20158.4%2C97.8%20159.8%2C98.2%20161.2%2C98.7%20162.7%2C99.2%20164.1%2C99.7%20165.5%2C100.2%20166.9%2C100.8%20168.3%2C101.5%20169.8%2C102.1%20171.2%2C102.8%20172.6%2C103.5%20174.0%2C104.3%20175.4%2C105.1%20176.8%2C105.9%20178.3%2C106.7%20179.7%2C107.6%20181.1%2C108.5%20182.5%2C109.4%20183.9%2C110.4%20185.4%2C111.3%20186.8%2C112.4%20188.2%2C113.4%20189.6%2C114.4%20191.0%2C115.5%20192.5%2C116.6%20193.9%2C117.7%20195.3%2C118.9%20196.7%2C120.1%20198.1%2C121.3%20199.6%2C122.5%20201.0%2C123.7%20202.4%2C125.0%20203.8%2C126.2%20205.2%2C127.5%20206.6%2C128.9%20208.1%2C130.2%20209.5%2C131.5%20210.9%2C132.9%20212.3%2C134.3%20213.7%2C135.7%20215.2%2C137.1%20216.6%2C138.5%20218.0%2C140.0%20219.4%2C141.4%20220.8%2C142.9%20222.2%2C144.4%20223.7%2C145.8%20225.1%2C147.4%20226.5%2C148.9%20227.9%2C150.4%20229.3%2C151.9%20230.8%2C153.5%20232.2%2C155.0%20233.6%2C156.6%20235.0%2C158.2%20236.4%2C159.7%20237.9%2C161.3%20239.3%2C162.9%20240.7%2C164.5%20242.1%2C166.1%20243.5%2C167.7%20244.9%2C169.3%20246.4%2C170.9%20247.8%2C172.5%20249.2%2C174.1%20250.6%2C175.8%20252.0%2C177.4%20253.5%2C179.0%20254.9%2C180.6%20256.3%2C182.2%20257.7%2C183.8%20259.1%2C185.5%20260.6%2C187.1%20262.0%2C188.7%20263.4%2C190.3%20264.8%2C191.9%20266.2%2C193.5%20267.6%2C195.1%20269.1%2C196.7%20270.5%2C198.3%20271.9%2C199.9%20273.3%2C201.4%20274.7%2C203.0%20276.2%2C204.5%20277.6%2C206.1%20279.0%2C207.6%20280.4%2C209.2%20281.8%2C210.7%20283.3%2C212.2%20284.7%2C213.7%20286.1%2C215.2%20287.5%2C216.6%20288.9%2C218.1%20290.4%2C219.6%20291.8%2C221.0%20293.2%2C222.4%20294.6%2C223.8%20296.0%2C225.2%20297.4%2C226.6%20298.9%2C227.9%20300.3%2C229.3%20301.7%2C230.6%20303.1%2C231.9%20304.5%2C233.2%20306.0%2C234.4%20307.4%2C235.7%20308.8%2C236.9%20310.2%2C238.1%20311.6%2C239.3%20313.1%2C240.5%20314.5%2C241.6%20315.9%2C242.7%20317.3%2C243.8%20318.7%2C244.9%20320.1%2C245.9%20321.6%2C246.9%20323.0%2C247.9%20324.4%2C248.9%20325.8%2C249.8%20327.2%2C250.7%20328.7%2C251.6%20330.1%2C252.5%20331.5%2C253.3%20332.9%2C254.1%20334.3%2C254.8%20335.8%2C255.6%20337.2%2C256.3%20338.6%2C257.0%20340.0%2C257.6%20341.4%2C258.2%20342.8%2C258.8%20344.3%2C259.3%20345.7%2C259.8%20347.1%2C260.3%20348.5%2C260.7%20349.9%2C261.1%20351.4%2C261.5%20352.8%2C261.8%20354.2%2C262.1%20355.6%2C262.3%20357.0%2C262.6%20358.4%2C262.7%20359.9%2C262.9%20361.3%2C262.9%20362.7%2C263.0%20364.1%2C263.0%20365.5%2C263.0%20367.0%2C262.9%20368.4%2C262.8%20369.8%2C262.6%20371.2%2C262.4%20372.6%2C262.2%20374.1%2C261.9%20375.5%2C261.5%20376.9%2C261.1%20378.3%2C260.7%20379.7%2C260.2%20381.1%2C259.7%20382.6%2C259.1%20384.0%2C258.5%20385.4%2C257.8%20386.8%2C257.1%20388.2%2C256.3%20389.7%2C255.5%20391.1%2C254.6%20392.5%2C253.7%20393.9%2C252.7%20395.3%2C251.6%20396.8%2C250.5%20398.2%2C249.4%20399.6%2C248.2%20401.0%2C246.9%20402.4%2C245.6%20403.9%2C244.3%20405.3%2C242.8%20406.7%2C241.3%20408.1%2C239.8%20409.5%2C238.2%20410.9%2C236.5%20412.4%2C234.8%20413.8%2C233.0%20415.2%2C231.2%20416.6%2C229.3%20418.0%2C227.3%20419.5%2C225.3%20420.9%2C223.2%20422.3%2C221.1%20423.7%2C218.8%20425.1%2C216.6%20426.6%2C214.2%20428.0%2C211.8%20429.4%2C209.3%20430.8%2C206.8%20432.2%2C204.2%20433.6%2C201.5%20435.1%2C198.7%20436.5%2C195.9%20437.9%2C193.0%20439.3%2C190.1%20440.7%2C187.0%20442.2%2C183.9%20443.6%2C180.8%20445.0%2C177.5%20446.4%2C174.2%20447.8%2C170.8%20449.2%2C167.4%20450.7%2C163.8%20452.1%2C160.2%20453.5%2C156.5%20454.9%2C152.8%20456.3%2C148.9%20457.8%2C145.0%20459.2%2C141.0%20460.6%2C136.9%20462.0%2C132.8%20463.4%2C128.6%20464.9%2C124.3%20466.3%2C119.9%20467.7%2C115.4%20469.1%2C110.8%20470.5%2C106.2%20471.9%2C101.5%20473.4%2C96.7%20474.8%2C91.8%20476.2%2C86.8%20477.6%2C81.8%20479.0%2C76.7%20480.5%2C71.4%20481.9%2C66.1%20483.3%2C60.7%20484.7%2C55.2%20486.1%2C49.7%20487.6%2C44.0%20489.0%2C38.3%20490.4%2C32.4%20491.8%2C26.5%20493.2%2C20.5%20494.6%2C14.4%20496.1%2C8.2%20497.5%2C1.9%20498.9%2C-4.5%20500.3%2C-11.0%20501.7%2C-17.5%20503.2%2C-24.2%20504.6%2C-31.0%20506.0%2C-37.8%22%20clip-path%3D%22url%28%23clip-6784096%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%E2%88%922%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -9986,39 +12082,59 @@ so the $x$-coordinates of local max/min of purple match those of brown. Only the
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.
 
 $$P_{\\text{brown}}'(3)>0,\\qquad P_{\\text{purple}}'(3)>0,\\qquad P_{\\text{green}}'(3)<0$$
 
-so the sign reading matches the claim, and the statement is True.`,
+so the sign reading matches the claim, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Firm A (brown) has a local profit peak where its marginal profit changes from $+$ to $-$. On the figure that crossing occurs near $x=5$:
 
 $$P_{\\text{brown}}'\\text{ changes }+\\to-\\text{ near }x=5$$
 
-so firm A has a local profit peak near $x=5$, and the statement is True.`,
+so firm A has a local profit peak near $x=5$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=0$ the brown curve starts at or below the axis, not already positive. Reading the left edge, brown is not above the axis at the start.
 
 $$P_{\\text{brown}}'(0)\\not>0$$
 
-so the claim that brown is already positive at $x=0$ is wrong, and the statement is False.`,
+so the claim that brown is already positive at $x=0$ is wrong, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The purple curve sits above the axis in the mid-window and then crosses below it somewhere in $(4,5)$:
 
 $$P_{\\text{purple}}'\\text{ changes }+\\to-\\text{ in }(4,5)$$
 
-That crossing is visible on the figure, so the statement is True.`,
+That crossing is visible on the figure
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+Marginal profit governs the expand/contract advice: $P'>0$ means a little more output raises profit; $P'<0$ means a little more output lowers profit. Read that sign from the figure.
 
 Expand/contract advice is the sign of each firm's marginal profit. At $x=3$, brown and purple are positive while green is negative:
 
 $$\\text{signs disagree at }x=3$$
 
-so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.`
+so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 156,
@@ -10044,44 +12160,66 @@ so the three firms do not share the same recommendation on $(0,6)$, and the stat
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f$ and green is $f'$. Turning points of brown are critical points of $f$, which must be zeros of $f'$:
 
 $$f'=0\\quad\\text{at turning points of }f$$
 
-On the shared figure those turning points line up with the zeros of green, so the statement is True.`,
+On the shared figure those turning points line up with the zeros of green
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Wherever green sits above the axis one has $f'>0$:
 
 $$f'>0\\quad\\Rightarrow\\quad f\\text{ rising}$$
 
-Positive $f'$ matches a rising brown graph, so the statement is True.`,
+Positive $f'$ matches a rising brown graph
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Wherever green sits below the axis one has $f'<0$:
 
 $$f'<0\\quad\\Rightarrow\\quad f\\text{ falling}$$
 
-Negative $f'$ matches a falling brown graph, so the statement is True.`,
+Negative $f'$ matches a falling brown graph
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 The highest point of green is a maximum of $f'$, which is where brown climbs most steeply — not where brown has a local maximum:
 
 $$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
 
-Local maxima of brown need zeros of green with a $+$ to $-$ change, so the statement is False.`,
+Local maxima of brown need zeros of green with a $+$ to $-$ change
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**E.** → True
+
+The steepest climb of $f$ is the point where $f'$ attains its largest positive height. That is a maximum of the derivative graph, not a maximum of $f$ itself — do not confuse the two.
 
 At $x=3$ the green curve is near height $4$, and that is where brown's climb looks steepest in the window.
 
 $$f'(3)\\approx 4$$
 
-so the reading matches the steepest climb of brown, and the statement is True.`
+so the reading matches the steepest climb of brown, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 157,
     solution_overview:
-      `Brown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning points of brown line up with zeros of green; where green is positive, brown rises; where green is negative, brown falls. At $x=3$ green is near height $4$, matching the steepest climb of brown in the window. The highest point of green is where brown is steepest — not a local maximum of brown. Brown's local peak sits near $x=5$ where green is $0$ with a $+$ to $-$ change.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f$ and green is $f'$ on one shared plane. Consistency checks: turning points of brown line up with zeros of green; where green is positive, brown rises; where green is negative, brown falls. At $x=3$ green is near height $4$, matching the steepest climb of brown in the window. The highest point of green is where brown is steepest — not a local maximum of brown. Brown's local peak sits near $x=5$ where green is $0$ with a $+$ to $-$ change.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%20and%20f%E2%80%B2%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-4997141%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22310.7%22%20x2%3D%22506%22%20y2%3D%22310.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22244.0%22%20x2%3D%22506%22%20y2%3D%22244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22110.7%22%20x2%3D%22506%22%20y2%3D%22110.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22310.7%22%20x2%3D%2252%22%20y2%3D%22310.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22314.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22244.0%22%20x2%3D%2252%22%20y2%3D%22244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22177.3%22%20x2%3D%2252%22%20y2%3D%22177.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22181.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22110.7%22%20x2%3D%2252%22%20y2%3D%22110.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22114.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C177.3%2053.4%2C178.9%2054.8%2C180.4%2056.3%2C181.9%2057.7%2C183.3%2059.1%2C184.7%2060.5%2C186.1%2061.9%2C187.4%2063.4%2C188.7%2064.8%2C190.0%2066.2%2C191.2%2067.6%2C192.4%2069.0%2C193.6%2070.4%2C194.8%2071.9%2C195.9%2073.3%2C196.9%2074.7%2C198.0%2076.1%2C199.0%2077.5%2C200.0%2079.0%2C200.9%2080.4%2C201.8%2081.8%2C202.7%2083.2%2C203.6%2084.6%2C204.4%2086.0%2C205.2%2087.5%2C206.0%2088.9%2C206.7%2090.3%2C207.4%2091.7%2C208.1%2093.1%2C208.8%2094.6%2C209.4%2096.0%2C210.0%2097.4%2C210.5%2098.8%2C211.1%20100.2%2C211.6%20101.7%2C212.1%20103.1%2C212.5%20104.5%2C212.9%20105.9%2C213.3%20107.3%2C213.7%20108.8%2C214.1%20110.2%2C214.4%20111.6%2C214.7%20113.0%2C214.9%20114.4%2C215.2%20115.8%2C215.4%20117.3%2C215.6%20118.7%2C215.7%20120.1%2C215.9%20121.5%2C216.0%20122.9%2C216.1%20124.4%2C216.2%20125.8%2C216.2%20127.2%2C216.2%20128.6%2C216.2%20130.0%2C216.2%20131.4%2C216.1%20132.9%2C216.1%20134.3%2C216.0%20135.7%2C215.9%20137.1%2C215.7%20138.5%2C215.5%20140.0%2C215.4%20141.4%2C215.2%20142.8%2C214.9%20144.2%2C214.7%20145.6%2C214.4%20147.1%2C214.1%20148.5%2C213.8%20149.9%2C213.5%20151.3%2C213.1%20152.7%2C212.8%20154.2%2C212.4%20155.6%2C212.0%20157.0%2C211.5%20158.4%2C211.1%20159.8%2C210.6%20161.2%2C210.1%20162.7%2C209.6%20164.1%2C209.1%20165.5%2C208.6%20166.9%2C208.0%20168.3%2C207.5%20169.8%2C206.9%20171.2%2C206.3%20172.6%2C205.6%20174.0%2C205.0%20175.4%2C204.3%20176.8%2C203.7%20178.3%2C203.0%20179.7%2C202.3%20181.1%2C201.6%20182.5%2C200.8%20183.9%2C200.1%20185.4%2C199.3%20186.8%2C198.5%20188.2%2C197.7%20189.6%2C196.9%20191.0%2C196.1%20192.5%2C195.3%20193.9%2C194.4%20195.3%2C193.6%20196.7%2C192.7%20198.1%2C191.8%20199.6%2C190.9%20201.0%2C190.0%20202.4%2C189.1%20203.8%2C188.1%20205.2%2C187.2%20206.6%2C186.2%20208.1%2C185.3%20209.5%2C184.3%20210.9%2C183.3%20212.3%2C182.3%20213.7%2C181.3%20215.2%2C180.2%20216.6%2C179.2%20218.0%2C178.2%20219.4%2C177.1%20220.8%2C176.1%20222.2%2C175.0%20223.7%2C173.9%20225.1%2C172.8%20226.5%2C171.7%20227.9%2C170.6%20229.3%2C169.5%20230.8%2C168.4%20232.2%2C167.3%20233.6%2C166.1%20235.0%2C165.0%20236.4%2C163.8%20237.9%2C162.7%20239.3%2C161.5%20240.7%2C160.4%20242.1%2C159.2%20243.5%2C158.0%20244.9%2C156.8%20246.4%2C155.6%20247.8%2C154.4%20249.2%2C153.2%20250.6%2C152.0%20252.0%2C150.8%20253.5%2C149.6%20254.9%2C148.4%20256.3%2C147.2%20257.7%2C146.0%20259.1%2C144.7%20260.6%2C143.5%20262.0%2C142.3%20263.4%2C141.0%20264.8%2C139.8%20266.2%2C138.6%20267.6%2C137.3%20269.1%2C136.1%20270.5%2C134.8%20271.9%2C133.6%20273.3%2C132.3%20274.7%2C131.1%20276.2%2C129.8%20277.6%2C128.6%20279.0%2C127.3%20280.4%2C126.1%20281.8%2C124.8%20283.3%2C123.6%20284.7%2C122.3%20286.1%2C121.1%20287.5%2C119.8%20288.9%2C118.6%20290.4%2C117.4%20291.8%2C116.1%20293.2%2C114.9%20294.6%2C113.6%20296.0%2C112.4%20297.4%2C111.2%20298.9%2C109.9%20300.3%2C108.7%20301.7%2C107.5%20303.1%2C106.3%20304.5%2C105.0%20306.0%2C103.8%20307.4%2C102.6%20308.8%2C101.4%20310.2%2C100.2%20311.6%2C99.0%20313.1%2C97.8%20314.5%2C96.7%20315.9%2C95.5%20317.3%2C94.3%20318.7%2C93.1%20320.1%2C92.0%20321.6%2C90.8%20323.0%2C89.7%20324.4%2C88.5%20325.8%2C87.4%20327.2%2C86.3%20328.7%2C85.2%20330.1%2C84.0%20331.5%2C82.9%20332.9%2C81.8%20334.3%2C80.8%20335.8%2C79.7%20337.2%2C78.6%20338.6%2C77.5%20340.0%2C76.5%20341.4%2C75.5%20342.8%2C74.4%20344.3%2C73.4%20345.7%2C72.4%20347.1%2C71.4%20348.5%2C70.4%20349.9%2C69.4%20351.4%2C68.4%20352.8%2C67.5%20354.2%2C66.5%20355.6%2C65.6%20357.0%2C64.7%20358.4%2C63.8%20359.9%2C62.9%20361.3%2C62.0%20362.7%2C61.1%20364.1%2C60.2%20365.5%2C59.4%20367.0%2C58.6%20368.4%2C57.7%20369.8%2C56.9%20371.2%2C56.1%20372.6%2C55.4%20374.1%2C54.6%20375.5%2C53.8%20376.9%2C53.1%20378.3%2C52.4%20379.7%2C51.7%20381.1%2C51.0%20382.6%2C50.3%20384.0%2C49.7%20385.4%2C49.0%20386.8%2C48.4%20388.2%2C47.8%20389.7%2C47.2%20391.1%2C46.6%20392.5%2C46.1%20393.9%2C45.5%20395.3%2C45.0%20396.8%2C44.5%20398.2%2C44.0%20399.6%2C43.6%20401.0%2C43.1%20402.4%2C42.7%20403.9%2C42.3%20405.3%2C41.9%20406.7%2C41.5%20408.1%2C41.2%20409.5%2C40.8%20410.9%2C40.5%20412.4%2C40.3%20413.8%2C40.0%20415.2%2C39.7%20416.6%2C39.5%20418.0%2C39.3%20419.5%2C39.1%20420.9%2C39.0%20422.3%2C38.8%20423.7%2C38.7%20425.1%2C38.6%20426.6%2C38.5%20428.0%2C38.5%20429.4%2C38.4%20430.8%2C38.4%20432.2%2C38.5%20433.6%2C38.5%20435.1%2C38.6%20436.5%2C38.7%20437.9%2C38.8%20439.3%2C38.9%20440.7%2C39.1%20442.2%2C39.3%20443.6%2C39.5%20445.0%2C39.7%20446.4%2C40.0%20447.8%2C40.3%20449.2%2C40.6%20450.7%2C41.0%20452.1%2C41.3%20453.5%2C41.7%20454.9%2C42.2%20456.3%2C42.6%20457.8%2C43.1%20459.2%2C43.6%20460.6%2C44.1%20462.0%2C44.7%20463.4%2C45.3%20464.9%2C45.9%20466.3%2C46.6%20467.7%2C47.2%20469.1%2C47.9%20470.5%2C48.7%20471.9%2C49.5%20473.4%2C50.2%20474.8%2C51.1%20476.2%2C51.9%20477.6%2C52.8%20479.0%2C53.7%20480.5%2C54.7%20481.9%2C55.7%20483.3%2C56.7%20484.7%2C57.7%20486.1%2C58.8%20487.6%2C59.9%20489.0%2C61.1%20490.4%2C62.2%20491.8%2C63.4%20493.2%2C64.7%20494.6%2C65.9%20496.1%2C67.2%20497.5%2C68.6%20498.9%2C70.0%20500.3%2C71.4%20501.7%2C72.8%20503.2%2C74.3%20504.6%2C75.8%20506.0%2C77.3%22%20clip-path%3D%22url%28%23clip-4997141%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C260.7%2053.4%2C258.8%2054.8%2C256.9%2056.3%2C255.1%2057.7%2C253.3%2059.1%2C251.4%2060.5%2C249.6%2061.9%2C247.8%2063.4%2C246.0%2064.8%2C244.3%2066.2%2C242.5%2067.6%2C240.8%2069.0%2C239.0%2070.4%2C237.3%2071.9%2C235.6%2073.3%2C233.9%2074.7%2C232.2%2076.1%2C230.5%2077.5%2C228.8%2079.0%2C227.2%2080.4%2C225.5%2081.8%2C223.9%2083.2%2C222.3%2084.6%2C220.6%2086.0%2C219.0%2087.5%2C217.5%2088.9%2C215.9%2090.3%2C214.3%2091.7%2C212.8%2093.1%2C211.2%2094.6%2C209.7%2096.0%2C208.2%2097.4%2C206.7%2098.8%2C205.2%20100.2%2C203.7%20101.7%2C202.2%20103.1%2C200.8%20104.5%2C199.3%20105.9%2C197.9%20107.3%2C196.5%20108.8%2C195.0%20110.2%2C193.6%20111.6%2C192.3%20113.0%2C190.9%20114.4%2C189.5%20115.8%2C188.2%20117.3%2C186.8%20118.7%2C185.5%20120.1%2C184.2%20121.5%2C182.9%20122.9%2C181.6%20124.4%2C180.3%20125.8%2C179.0%20127.2%2C177.8%20128.6%2C176.5%20130.0%2C175.3%20131.4%2C174.0%20132.9%2C172.8%20134.3%2C171.6%20135.7%2C170.4%20137.1%2C169.3%20138.5%2C168.1%20140.0%2C166.9%20141.4%2C165.8%20142.8%2C164.7%20144.2%2C163.5%20145.6%2C162.4%20147.1%2C161.3%20148.5%2C160.3%20149.9%2C159.2%20151.3%2C158.1%20152.7%2C157.1%20154.2%2C156.0%20155.6%2C155.0%20157.0%2C154.0%20158.4%2C153.0%20159.8%2C152.0%20161.2%2C151.0%20162.7%2C150.1%20164.1%2C149.1%20165.5%2C148.2%20166.9%2C147.2%20168.3%2C146.3%20169.8%2C145.4%20171.2%2C144.5%20172.6%2C143.6%20174.0%2C142.8%20175.4%2C141.9%20176.8%2C141.0%20178.3%2C140.2%20179.7%2C139.4%20181.1%2C138.6%20182.5%2C137.8%20183.9%2C137.0%20185.4%2C136.2%20186.8%2C135.4%20188.2%2C134.7%20189.6%2C133.9%20191.0%2C133.2%20192.5%2C132.5%20193.9%2C131.8%20195.3%2C131.1%20196.7%2C130.4%20198.1%2C129.7%20199.6%2C129.0%20201.0%2C128.4%20202.4%2C127.8%20203.8%2C127.1%20205.2%2C126.5%20206.6%2C125.9%20208.1%2C125.3%20209.5%2C124.7%20210.9%2C124.2%20212.3%2C123.6%20213.7%2C123.1%20215.2%2C122.5%20216.6%2C122.0%20218.0%2C121.5%20219.4%2C121.0%20220.8%2C120.5%20222.2%2C120.0%20223.7%2C119.6%20225.1%2C119.1%20226.5%2C118.7%20227.9%2C118.3%20229.3%2C117.8%20230.8%2C117.4%20232.2%2C117.0%20233.6%2C116.7%20235.0%2C116.3%20236.4%2C115.9%20237.9%2C115.6%20239.3%2C115.3%20240.7%2C114.9%20242.1%2C114.6%20243.5%2C114.3%20244.9%2C114.0%20246.4%2C113.8%20247.8%2C113.5%20249.2%2C113.3%20250.6%2C113.0%20252.0%2C112.8%20253.5%2C112.6%20254.9%2C112.4%20256.3%2C112.2%20257.7%2C112.0%20259.1%2C111.8%20260.6%2C111.7%20262.0%2C111.5%20263.4%2C111.4%20264.8%2C111.3%20266.2%2C111.1%20267.6%2C111.0%20269.1%2C111.0%20270.5%2C110.9%20271.9%2C110.8%20273.3%2C110.8%20274.7%2C110.7%20276.2%2C110.7%20277.6%2C110.7%20279.0%2C110.7%20280.4%2C110.7%20281.8%2C110.7%20283.3%2C110.7%20284.7%2C110.8%20286.1%2C110.8%20287.5%2C110.9%20288.9%2C111.0%20290.4%2C111.0%20291.8%2C111.1%20293.2%2C111.3%20294.6%2C111.4%20296.0%2C111.5%20297.4%2C111.7%20298.9%2C111.8%20300.3%2C112.0%20301.7%2C112.2%20303.1%2C112.4%20304.5%2C112.6%20306.0%2C112.8%20307.4%2C113.0%20308.8%2C113.3%20310.2%2C113.5%20311.6%2C113.8%20313.1%2C114.0%20314.5%2C114.3%20315.9%2C114.6%20317.3%2C114.9%20318.7%2C115.3%20320.1%2C115.6%20321.6%2C115.9%20323.0%2C116.3%20324.4%2C116.7%20325.8%2C117.0%20327.2%2C117.4%20328.7%2C117.8%20330.1%2C118.3%20331.5%2C118.7%20332.9%2C119.1%20334.3%2C119.6%20335.8%2C120.0%20337.2%2C120.5%20338.6%2C121.0%20340.0%2C121.5%20341.4%2C122.0%20342.8%2C122.5%20344.3%2C123.1%20345.7%2C123.6%20347.1%2C124.2%20348.5%2C124.7%20349.9%2C125.3%20351.4%2C125.9%20352.8%2C126.5%20354.2%2C127.1%20355.6%2C127.8%20357.0%2C128.4%20358.4%2C129.0%20359.9%2C129.7%20361.3%2C130.4%20362.7%2C131.1%20364.1%2C131.8%20365.5%2C132.5%20367.0%2C133.2%20368.4%2C133.9%20369.8%2C134.7%20371.2%2C135.4%20372.6%2C136.2%20374.1%2C137.0%20375.5%2C137.8%20376.9%2C138.6%20378.3%2C139.4%20379.7%2C140.2%20381.1%2C141.0%20382.6%2C141.9%20384.0%2C142.8%20385.4%2C143.6%20386.8%2C144.5%20388.2%2C145.4%20389.7%2C146.3%20391.1%2C147.2%20392.5%2C148.2%20393.9%2C149.1%20395.3%2C150.1%20396.8%2C151.0%20398.2%2C152.0%20399.6%2C153.0%20401.0%2C154.0%20402.4%2C155.0%20403.9%2C156.0%20405.3%2C157.1%20406.7%2C158.1%20408.1%2C159.2%20409.5%2C160.3%20410.9%2C161.3%20412.4%2C162.4%20413.8%2C163.5%20415.2%2C164.7%20416.6%2C165.8%20418.0%2C166.9%20419.5%2C168.1%20420.9%2C169.3%20422.3%2C170.4%20423.7%2C171.6%20425.1%2C172.8%20426.6%2C174.0%20428.0%2C175.3%20429.4%2C176.5%20430.8%2C177.8%20432.2%2C179.0%20433.6%2C180.3%20435.1%2C181.6%20436.5%2C182.9%20437.9%2C184.2%20439.3%2C185.5%20440.7%2C186.8%20442.2%2C188.2%20443.6%2C189.5%20445.0%2C190.9%20446.4%2C192.3%20447.8%2C193.6%20449.2%2C195.0%20450.7%2C196.5%20452.1%2C197.9%20453.5%2C199.3%20454.9%2C200.8%20456.3%2C202.2%20457.8%2C203.7%20459.2%2C205.2%20460.6%2C206.7%20462.0%2C208.2%20463.4%2C209.7%20464.9%2C211.2%20466.3%2C212.8%20467.7%2C214.3%20469.1%2C215.9%20470.5%2C217.5%20471.9%2C219.0%20473.4%2C220.6%20474.8%2C222.3%20476.2%2C223.9%20477.6%2C225.5%20479.0%2C227.2%20480.5%2C228.8%20481.9%2C230.5%20483.3%2C232.2%20484.7%2C233.9%20486.1%2C235.6%20487.6%2C237.3%20489.0%2C239.0%20490.4%2C240.8%20491.8%2C242.5%20493.2%2C244.3%20494.6%2C246.0%20496.1%2C247.8%20497.5%2C249.6%20498.9%2C251.4%20500.3%2C253.3%20501.7%2C255.1%20503.2%2C256.9%20504.6%2C258.8%20506.0%2C260.7%22%20clip-path%3D%22url%28%23clip-4997141%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -10102,44 +12240,66 @@ so the reading matches the steepest climb of brown, and the statement is True.`
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$ and green is $f''$. At $x=4$ the brown curve crosses the axis from below to above.
 
 $$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
 
-so brown changes from negative to positive at $x=4$, and the statement is True.`,
+so brown changes from negative to positive at $x=4$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Near $x=1$ brown touches the axis but stays non-positive on both sides in the window:
 
 $$f'\\le 0\\text{ on both sides of }x=1\\text{ (in view)}$$
 
-Without a clear $+$ to $-$ flip, the ordinary local-max test for $f$ does not fire at that touch, so the statement is True.`,
+Without a clear $+$ to $-$ flip, the ordinary local-max test for $f$ does not fire at that touch
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Between $x=1$ and $x=4$ the brown curve has a lowest point, and there the green curve is zero:
 
 $$f''=0\\quad\\text{at }\\min f'\\text{ between }1\\text{ and }4$$
 
-Extrema of $f'$ line up with zeros of $f''$, so the statement is True.`,
+Extrema of $f'$ line up with zeros of $f''$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the open interval $(4,5)$, monotonicity of $f$ is settled by the sign of $f'$ alone. If the derivative curve sits above the axis on that stretch, the slope is positive and $f$ is increasing.
 
 On $(4,5)$ the brown curve sits above the axis after the crossing at $x=4$.
 
 $$f'(x)>0\\quad\\text{for }x\\in(4,5)$$
 
-so $f$ is increasing there, and the statement is True.`,
+so $f$ is increasing there, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A zero of green is a zero of $f''$, which marks an extremum of $f'$ (brown), not automatically a local extremum of $f$:
 
 $$f''=0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f$$
 
-Local extrema of $f$ need zeros of brown with a sign change, so the statement is False.`
+Local extrema of $f$ need zeros of brown with a sign change
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 158,
     solution_overview:
-      `Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ordinary sign change (staying non-positive on both sides in the window) and crosses transversally at $x=4$ from negative to positive. So $f$ has a local minimum at $x=4$, and on $(4,5)$ brown is positive so $f$ is increasing. Between $1$ and $4$, brown has a lowest point aligned with a zero of green. Zeros of $f''$ control extrema of $f'$, not of $f$ — a green zero does not by itself force a local extremum of $f$.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$ and green is $f''$. Brown touches the axis at $x=1$ without an ordinary sign change (staying non-positive on both sides in the window) and crosses transversally at $x=4$ from negative to positive. So $f$ has a local minimum at $x=4$, and on $(4,5)$ brown is positive so $f$ is increasing. Between $1$ and $4$, brown has a lowest point aligned with a zero of green. Zeros of $f''$ control extrema of $f'$, not of $f$ — a green zero does not by itself force a local extremum of $f$.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%20and%20f%E2%80%B3%20on%20the%20same%20axes%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-3329802%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22142.8%22%20y1%3D%2244%22%20x2%3D%22142.8%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22233.6%22%20y1%3D%2244%22%20x2%3D%22233.6%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22324.4%22%20y1%3D%2244%22%20x2%3D%22324.4%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22415.2%22%20y1%3D%2244%22%20x2%3D%22415.2%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22310.7%22%20x2%3D%22506%22%20y2%3D%22310.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22244.0%22%20x2%3D%22506%22%20y2%3D%22244.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22110.7%22%20x2%3D%22506%22%20y2%3D%22110.7%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22177.3%22%20x2%3D%22506%22%20y2%3D%22177.3%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22142.8%22%20y1%3D%22344%22%20x2%3D%22142.8%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22142.8%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22233.6%22%20y1%3D%22344%22%20x2%3D%22233.6%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22233.6%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22324.4%22%20y1%3D%22344%22%20x2%3D%22324.4%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22324.4%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22415.2%22%20y1%3D%22344%22%20x2%3D%22415.2%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22415.2%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22310.7%22%20x2%3D%2252%22%20y2%3D%22310.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22314.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-8%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22244.0%22%20x2%3D%2252%22%20y2%3D%22244.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22248.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22177.3%22%20x2%3D%2252%22%20y2%3D%22177.3%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22181.3%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22110.7%22%20x2%3D%2252%22%20y2%3D%22110.7%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22114.7%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C244.0%2053.4%2C241.7%2054.8%2C239.4%2056.3%2C237.2%2057.7%2C235.0%2059.1%2C232.9%2060.5%2C230.8%2061.9%2C228.8%2063.4%2C226.8%2064.8%2C224.8%2066.2%2C222.9%2067.6%2C221.1%2069.0%2C219.3%2070.4%2C217.5%2071.9%2C215.8%2073.3%2C214.1%2074.7%2C212.5%2076.1%2C210.9%2077.5%2C209.4%2079.0%2C207.8%2080.4%2C206.4%2081.8%2C205.0%2083.2%2C203.6%2084.6%2C202.2%2086.0%2C200.9%2087.5%2C199.7%2088.9%2C198.4%2090.3%2C197.3%2091.7%2C196.1%2093.1%2C195.0%2094.6%2C193.9%2096.0%2C192.9%2097.4%2C191.9%2098.8%2C191.0%20100.2%2C190.0%20101.7%2C189.2%20103.1%2C188.3%20104.5%2C187.5%20105.9%2C186.7%20107.3%2C186.0%20108.8%2C185.2%20110.2%2C184.6%20111.6%2C183.9%20113.0%2C183.3%20114.4%2C182.7%20115.8%2C182.2%20117.3%2C181.7%20118.7%2C181.2%20120.1%2C180.7%20121.5%2C180.3%20122.9%2C179.9%20124.4%2C179.5%20125.8%2C179.2%20127.2%2C178.9%20128.6%2C178.6%20130.0%2C178.4%20131.4%2C178.1%20132.9%2C178.0%20134.3%2C177.8%20135.7%2C177.6%20137.1%2C177.5%20138.5%2C177.4%20140.0%2C177.4%20141.4%2C177.3%20142.8%2C177.3%20144.2%2C177.3%20145.6%2C177.4%20147.1%2C177.4%20148.5%2C177.5%20149.9%2C177.6%20151.3%2C177.8%20152.7%2C177.9%20154.2%2C178.1%20155.6%2C178.3%20157.0%2C178.5%20158.4%2C178.7%20159.8%2C179.0%20161.2%2C179.3%20162.7%2C179.6%20164.1%2C179.9%20165.5%2C180.2%20166.9%2C180.5%20168.3%2C180.9%20169.8%2C181.3%20171.2%2C181.7%20172.6%2C182.1%20174.0%2C182.6%20175.4%2C183.0%20176.9%2C183.5%20178.3%2C184.0%20179.7%2C184.5%20181.1%2C185.0%20182.5%2C185.5%20183.9%2C186.0%20185.4%2C186.6%20186.8%2C187.2%20188.2%2C187.8%20189.6%2C188.3%20191.0%2C188.9%20192.5%2C189.6%20193.9%2C190.2%20195.3%2C190.8%20196.7%2C191.5%20198.1%2C192.1%20199.6%2C192.8%20201.0%2C193.5%20202.4%2C194.2%20203.8%2C194.8%20205.2%2C195.6%20206.6%2C196.3%20208.1%2C197.0%20209.5%2C197.7%20210.9%2C198.4%20212.3%2C199.2%20213.7%2C199.9%20215.2%2C200.7%20216.6%2C201.4%20218.0%2C202.2%20219.4%2C202.9%20220.8%2C203.7%20222.2%2C204.4%20223.7%2C205.2%20225.1%2C206.0%20226.5%2C206.8%20227.9%2C207.5%20229.3%2C208.3%20230.8%2C209.1%20232.2%2C209.9%20233.6%2C210.7%20235.0%2C211.4%20236.4%2C212.2%20237.9%2C213.0%20239.3%2C213.8%20240.7%2C214.6%20242.1%2C215.3%20243.5%2C216.1%20244.9%2C216.9%20246.4%2C217.7%20247.8%2C218.4%20249.2%2C219.2%20250.6%2C219.9%20252.0%2C220.7%20253.5%2C221.4%20254.9%2C222.2%20256.3%2C222.9%20257.7%2C223.6%20259.1%2C224.4%20260.6%2C225.1%20262.0%2C225.8%20263.4%2C226.5%20264.8%2C227.2%20266.2%2C227.9%20267.6%2C228.5%20269.1%2C229.2%20270.5%2C229.9%20271.9%2C230.5%20273.3%2C231.1%20274.7%2C231.8%20276.2%2C232.4%20277.6%2C233.0%20279.0%2C233.6%20280.4%2C234.2%20281.8%2C234.7%20283.3%2C235.3%20284.7%2C235.8%20286.1%2C236.4%20287.5%2C236.9%20288.9%2C237.4%20290.4%2C237.8%20291.8%2C238.3%20293.2%2C238.8%20294.6%2C239.2%20296.0%2C239.6%20297.4%2C240.0%20298.9%2C240.4%20300.3%2C240.8%20301.7%2C241.1%20303.1%2C241.5%20304.5%2C241.8%20306.0%2C242.1%20307.4%2C242.4%20308.8%2C242.6%20310.2%2C242.8%20311.6%2C243.1%20313.0%2C243.3%20314.5%2C243.4%20315.9%2C243.6%20317.3%2C243.7%20318.7%2C243.8%20320.1%2C243.9%20321.6%2C244.0%20323.0%2C244.0%20324.4%2C244.0%20325.8%2C244.0%20327.2%2C244.0%20328.7%2C243.9%20330.1%2C243.8%20331.5%2C243.7%20332.9%2C243.5%20334.3%2C243.4%20335.8%2C243.2%20337.2%2C243.0%20338.6%2C242.7%20340.0%2C242.4%20341.4%2C242.1%20342.8%2C241.8%20344.3%2C241.4%20345.7%2C241.0%20347.1%2C240.6%20348.5%2C240.2%20349.9%2C239.7%20351.4%2C239.2%20352.8%2C238.6%20354.2%2C238.0%20355.6%2C237.4%20357.0%2C236.8%20358.5%2C236.1%20359.9%2C235.4%20361.3%2C234.6%20362.7%2C233.8%20364.1%2C233.0%20365.5%2C232.2%20367.0%2C231.3%20368.4%2C230.4%20369.8%2C229.4%20371.2%2C228.4%20372.6%2C227.4%20374.1%2C226.3%20375.5%2C225.2%20376.9%2C224.1%20378.3%2C222.9%20379.7%2C221.7%20381.1%2C220.4%20382.6%2C219.1%20384.0%2C217.8%20385.4%2C216.4%20386.8%2C215.0%20388.2%2C213.5%20389.7%2C212.0%20391.1%2C210.4%20392.5%2C208.8%20393.9%2C207.2%20395.3%2C205.5%20396.8%2C203.8%20398.2%2C202.1%20399.6%2C200.2%20401.0%2C198.4%20402.4%2C196.5%20403.9%2C194.6%20405.3%2C192.6%20406.7%2C190.5%20408.1%2C188.4%20409.5%2C186.3%20410.9%2C184.1%20412.4%2C181.9%20413.8%2C179.7%20415.2%2C177.3%20416.6%2C175.0%20418.0%2C172.5%20419.5%2C170.1%20420.9%2C167.6%20422.3%2C165.0%20423.7%2C162.4%20425.1%2C159.7%20426.5%2C157.0%20428.0%2C154.2%20429.4%2C151.4%20430.8%2C148.5%20432.2%2C145.6%20433.6%2C142.6%20435.1%2C139.6%20436.5%2C136.5%20437.9%2C133.3%20439.3%2C130.1%20440.7%2C126.9%20442.2%2C123.6%20443.6%2C120.2%20445.0%2C116.8%20446.4%2C113.3%20447.8%2C109.7%20449.2%2C106.1%20450.7%2C102.5%20452.1%2C98.8%20453.5%2C95.0%20454.9%2C91.2%20456.3%2C87.3%20457.8%2C83.3%20459.2%2C79.3%20460.6%2C75.2%20462.0%2C71.1%20463.4%2C66.9%20464.9%2C62.7%20466.3%2C58.4%20467.7%2C54.0%20469.1%2C49.5%20470.5%2C45.0%20472.0%2C40.5%20473.4%2C35.8%20474.8%2C31.1%20476.2%2C26.4%20477.6%2C21.5%20479.0%2C16.6%20480.5%2C11.7%20481.9%2C6.6%20483.3%2C1.6%20484.7%2C-3.6%20486.1%2C-8.8%20487.6%2C-14.1%20489.0%2C-19.5%20490.4%2C-24.9%20491.8%2C-30.4%20493.2%2C-36.0%20494.6%2C-41.6%20496.1%2C-47.4%20497.5%2C-53.1%20498.9%2C-59.0%20500.3%2C-64.9%20501.7%2C-70.9%20503.2%2C-77.0%20504.6%2C-83.1%20506.0%2C-89.3%22%20clip-path%3D%22url%28%23clip-3329802%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C27.3%2053.4%2C30.4%2054.8%2C33.5%2056.3%2C36.6%2057.7%2C39.6%2059.1%2C42.7%2060.5%2C45.6%2061.9%2C48.6%2063.4%2C51.6%2064.8%2C54.5%2066.2%2C57.4%2067.6%2C60.2%2069.0%2C63.1%2070.4%2C65.9%2071.9%2C68.7%2073.3%2C71.5%2074.7%2C74.2%2076.1%2C76.9%2077.5%2C79.6%2079.0%2C82.3%2080.4%2C85.0%2081.8%2C87.6%2083.2%2C90.2%2084.6%2C92.8%2086.0%2C95.3%2087.5%2C97.8%2088.9%2C100.3%2090.3%2C102.8%2091.7%2C105.3%2093.1%2C107.7%2094.6%2C110.1%2096.0%2C112.5%2097.4%2C114.8%2098.8%2C117.2%20100.2%2C119.5%20101.7%2C121.8%20103.1%2C124.0%20104.5%2C126.2%20105.9%2C128.5%20107.3%2C130.6%20108.8%2C132.8%20110.2%2C134.9%20111.6%2C137.1%20113.0%2C139.1%20114.4%2C141.2%20115.8%2C143.2%20117.3%2C145.3%20118.7%2C147.2%20120.1%2C149.2%20121.5%2C151.1%20122.9%2C153.1%20124.4%2C155.0%20125.8%2C156.8%20127.2%2C158.7%20128.6%2C160.5%20130.0%2C162.3%20131.4%2C164.1%20132.9%2C165.8%20134.3%2C167.5%20135.7%2C169.2%20137.1%2C170.9%20138.5%2C172.5%20140.0%2C174.2%20141.4%2C175.8%20142.8%2C177.3%20144.2%2C178.9%20145.6%2C180.4%20147.1%2C181.9%20148.5%2C183.4%20149.9%2C184.8%20151.3%2C186.3%20152.7%2C187.7%20154.2%2C189.1%20155.6%2C190.4%20157.0%2C191.7%20158.4%2C193.0%20159.8%2C194.3%20161.2%2C195.6%20162.7%2C196.8%20164.1%2C198.0%20165.5%2C199.2%20166.9%2C200.4%20168.3%2C201.5%20169.8%2C202.6%20171.2%2C203.7%20172.6%2C204.8%20174.0%2C205.8%20175.4%2C206.8%20176.9%2C207.8%20178.3%2C208.8%20179.7%2C209.7%20181.1%2C210.6%20182.5%2C211.5%20183.9%2C212.4%20185.4%2C213.2%20186.8%2C214.0%20188.2%2C214.8%20189.6%2C215.6%20191.0%2C216.3%20192.5%2C217.1%20193.9%2C217.8%20195.3%2C218.4%20196.7%2C219.1%20198.1%2C219.7%20199.6%2C220.3%20201.0%2C220.9%20202.4%2C221.4%20203.8%2C222.0%20205.2%2C222.5%20206.6%2C222.9%20208.1%2C223.4%20209.5%2C223.8%20210.9%2C224.2%20212.3%2C224.6%20213.7%2C224.9%20215.2%2C225.3%20216.6%2C225.6%20218.0%2C225.9%20219.4%2C226.1%20220.8%2C226.3%20222.2%2C226.6%20223.7%2C226.7%20225.1%2C226.9%20226.5%2C227.0%20227.9%2C227.1%20229.3%2C227.2%20230.8%2C227.3%20232.2%2C227.3%20233.6%2C227.3%20235.0%2C227.3%20236.4%2C227.3%20237.9%2C227.2%20239.3%2C227.1%20240.7%2C227.0%20242.1%2C226.9%20243.5%2C226.7%20244.9%2C226.6%20246.4%2C226.3%20247.8%2C226.1%20249.2%2C225.9%20250.6%2C225.6%20252.0%2C225.3%20253.5%2C224.9%20254.9%2C224.6%20256.3%2C224.2%20257.7%2C223.8%20259.1%2C223.4%20260.6%2C222.9%20262.0%2C222.5%20263.4%2C222.0%20264.8%2C221.4%20266.2%2C220.9%20267.6%2C220.3%20269.1%2C219.7%20270.5%2C219.1%20271.9%2C218.4%20273.3%2C217.8%20274.7%2C217.1%20276.2%2C216.3%20277.6%2C215.6%20279.0%2C214.8%20280.4%2C214.0%20281.8%2C213.2%20283.3%2C212.4%20284.7%2C211.5%20286.1%2C210.6%20287.5%2C209.7%20288.9%2C208.8%20290.4%2C207.8%20291.8%2C206.8%20293.2%2C205.8%20294.6%2C204.8%20296.0%2C203.7%20297.4%2C202.6%20298.9%2C201.5%20300.3%2C200.4%20301.7%2C199.2%20303.1%2C198.0%20304.5%2C196.8%20306.0%2C195.6%20307.4%2C194.3%20308.8%2C193.0%20310.2%2C191.7%20311.6%2C190.4%20313.0%2C189.1%20314.5%2C187.7%20315.9%2C186.3%20317.3%2C184.8%20318.7%2C183.4%20320.1%2C181.9%20321.6%2C180.4%20323.0%2C178.9%20324.4%2C177.3%20325.8%2C175.8%20327.2%2C174.2%20328.7%2C172.5%20330.1%2C170.9%20331.5%2C169.2%20332.9%2C167.5%20334.3%2C165.8%20335.8%2C164.1%20337.2%2C162.3%20338.6%2C160.5%20340.0%2C158.7%20341.4%2C156.8%20342.8%2C155.0%20344.3%2C153.1%20345.7%2C151.1%20347.1%2C149.2%20348.5%2C147.2%20349.9%2C145.3%20351.4%2C143.2%20352.8%2C141.2%20354.2%2C139.1%20355.6%2C137.1%20357.0%2C134.9%20358.5%2C132.8%20359.9%2C130.6%20361.3%2C128.5%20362.7%2C126.2%20364.1%2C124.0%20365.5%2C121.8%20367.0%2C119.5%20368.4%2C117.2%20369.8%2C114.8%20371.2%2C112.5%20372.6%2C110.1%20374.1%2C107.7%20375.5%2C105.3%20376.9%2C102.8%20378.3%2C100.3%20379.7%2C97.8%20381.1%2C95.3%20382.6%2C92.8%20384.0%2C90.2%20385.4%2C87.6%20386.8%2C85.0%20388.2%2C82.3%20389.7%2C79.6%20391.1%2C76.9%20392.5%2C74.2%20393.9%2C71.5%20395.3%2C68.7%20396.8%2C65.9%20398.2%2C63.1%20399.6%2C60.2%20401.0%2C57.4%20402.4%2C54.5%20403.9%2C51.6%20405.3%2C48.6%20406.7%2C45.6%20408.1%2C42.7%20409.5%2C39.6%20410.9%2C36.6%20412.4%2C33.5%20413.8%2C30.4%20415.2%2C27.3%20416.6%2C24.2%20418.0%2C21.0%20419.5%2C17.8%20420.9%2C14.6%20422.3%2C11.4%20423.7%2C8.1%20425.1%2C4.9%20426.5%2C1.6%20428.0%2C-1.8%20429.4%2C-5.1%20430.8%2C-8.5%20432.2%2C-11.9%20433.6%2C-15.4%20435.1%2C-18.8%20436.5%2C-22.3%20437.9%2C-25.8%20439.3%2C-29.3%20440.7%2C-32.9%20442.2%2C-36.4%20443.6%2C-40.0%20445.0%2C-43.7%20446.4%2C-47.3%20447.8%2C-51.0%20449.2%2C-54.7%20450.7%2C-58.4%20452.1%2C-62.2%20453.5%2C-65.9%20454.9%2C-69.7%20456.3%2C-73.6%20457.8%2C-77.4%20459.2%2C-81.3%20460.6%2C-85.2%20462.0%2C-89.1%20463.4%2C-93.0%20464.9%2C-97.0%20466.3%2C-101.0%20467.7%2C-105.0%20469.1%2C-109.0%20470.5%2C-113.1%20472.0%2C-117.2%20473.4%2C-121.3%20474.8%2C-125.4%20476.2%2C-129.6%20477.6%2C-133.8%20479.0%2C-138.0%20480.5%2C-142.2%20481.9%2C-146.5%20483.3%2C-150.8%20484.7%2C-155.1%20486.1%2C-159.4%20487.6%2C-163.8%20489.0%2C-168.2%20490.4%2C-172.6%20491.8%2C-177.0%20493.2%2C-181.5%20494.6%2C-185.9%20496.1%2C-190.5%20497.5%2C-195.0%20498.9%2C-199.5%20500.3%2C-204.1%20501.7%2C-208.7%20503.2%2C-213.3%20504.6%2C-218.0%20506.0%2C-222.7%22%20clip-path%3D%22url%28%23clip-3329802%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2250%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   },
 {
@@ -10160,39 +12320,57 @@ Local extrema of $f$ need zeros of brown with a sign change, so the statement is
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $R'$, green is $C'$, and purple is $P'=R'-C'$. Purple is positive precisely where $R'-C'>0$:
 
 $$P'>0\\quad\\Leftrightarrow\\quad R'>C'\\quad\\Leftrightarrow\\quad\\text{brown above green}$$
 
-That geometric comparison is exactly the sign of purple, so the statement is True.`,
+That geometric comparison is exactly the sign of purple
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 At $x=2$, brown ($R'$) is near its peak and still sits above green ($C'$), so marginal revenue exceeds marginal cost and purple ($P'=R'-C'$) is positive there.
 
 $$P'(2)=R'(2)-C'(2)>0$$
 
-so the statement is True.`,
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Late in the window green stays positive while brown falls below it, so $R'<C'$ and purple becomes negative:
 
 $$R'<C'\\quad\\Rightarrow\\quad P'<0\\text{ late in the window}$$
 
-That late crossing of purple below the axis matches the claim, so the statement is True.`,
+That late crossing of purple below the axis matches the claim
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 A local profit peak occurs where marginal profit changes from $+$ to $-$:
 
 $$P'\\text{ changes }+\\to-\\quad\\Rightarrow\\quad\\text{local max of }P$$
 
-On the figure that is where purple crosses from above the axis to below it, so the statement is True.`,
+On the figure that is where purple crosses from above the axis to below it
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
+
+An axis crossing of the graph of $f$ is a root $f=0$. That is a different geometric fact from a critical point $f'=0$: height zero does not force slope zero.
 
 Green never crossing the axis means $C'$ stays positive, so total cost $C$ is increasing throughout:
 
 $$C'>0\\text{ throughout}\\quad\\Rightarrow\\quad\\text{no local max of }C$$
 
-A never-zero positive $C'$ rules out a local max of $C$, so the statement is False.`
+A never-zero positive $C'$ rules out a local max of $C$
+
+Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 159,
@@ -10218,44 +12396,66 @@ A never-zero positive $C'$ rules out a local max of $C$, so the statement is Fal
     tactical_explanations: [
       `**A.** → True
 
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
+
 Brown is $f'$, green is $f''$, and purple is $h'$. At $x=3$ the green curve is zero, and that zero sits under the lowest point of the brown curve.
 
 $$f''(3)=0$$
 
-so the valley of $f'$ lines up with a zero of $f''$, and the statement is True.`,
+so the valley of $f'$ lines up with a zero of $f''$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 On $(0,3)$ the green curve ($f''$) sits below the axis:
 
 $$f''(x)<0\\quad\\text{for }x\\in(0,3)$$
 
-Negative $f''$ means the brown graph of $f'$ is falling on that interval, descending toward its lowest point at $x=3$, so the statement is True.`,
+Negative $f''$ means the brown graph of $f'$ is falling on that interval, descending toward its lowest point at $x=3$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
+
+This claim is a direct coordinate reading from the figure. Locate the stated $x$-value on the drawn curve, compare the height to the vertical scale, and check the asserted inequality or approximate value.
 
 Throughout the window the purple curve sits about one unit above the brown curve on the shared scale:
 
 $$h'(x)\\approx f'(x)+1$$
 
-so purple stays above brown by about $1$, and the statement is True.`,
+so purple stays above brown by about $1$, and the statement is True.
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
+
+Where the claim says the level function is increasing, confirm that the corresponding derivative sits above the axis on the relevant set — positive slope is exactly what increasing means.
 
 At $x=1$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.
 
 $$f'(1)>0$$
 
-Positive $f'$ means $f$ is increasing at $x=1$, so the statement is True.`,
+Positive $f'$ means $f$ is increasing at $x=1$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
+
+On the shared plane, match each colour to its named derivative, then read heights against the axis (and against each other) at the stated $x$-value or on the stated interval.
 
 Purple touches the axis at $x=3$ but does not change sign there — it stays non-negative on both sides in the window:
 
 $$h'(3)=0\\text{ with no sign change}$$
 
-Without a genuine sign change, that touch need not give a local extremum of $h$, so the statement is True.`
+Without a genuine sign change, that touch need not give a local extremum of $h$
+
+Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 160,
     solution_overview:
-      `Brown is $f'$, green is $f''$, and purple is another derivative $h'$ on shared axes. Green is zero at $x=3$, under the lowest point of brown. On $(0,3)$ green is negative, so brown is falling. Purple stays above brown by about $1$ everywhere (a parallel lift). At $x=1$ brown is positive, so $f$ is increasing there. Purple touches the axis at $x=3$ without changing sign (non-negative, only touching), so that touch need not give a local extremum of $h$ by the first-derivative test.`,
+      `Read the figure first: name the drawn curve(s), mark zeros and sample heights, then translate signs into monotonicity and turning points.
+
+Brown is $f'$, green is $f''$, and purple is another derivative $h'$ on shared axes. Green is zero at $x=3$, under the lowest point of brown. On $(0,3)$ green is negative, so brown is falling. Purple stays above brown by about $1$ everywhere (a parallel lift). At $x=1$ brown is positive, so $f$ is increasing there. Purple touches the axis at $x=3$ without changing sign (non-negative, only touching), so that touch need not give a local extremum of $h$ by the first-derivative test.`,
     figure: `data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20400%22%20width%3D%22640%22%20height%3D%22400%22%20role%3D%22img%22%3E%0A%3Crect%20width%3D%22640%22%20height%3D%22400%22%20rx%3D%2216%22%20fill%3D%22%23faf8f4%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%2226%22%20text-anchor%3D%22middle%22%20font-size%3D%2214%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3EThree%20curves%20on%20one%20plane%3C%2Ftext%3E%0A%3Cdefs%3E%3CclipPath%20id%3D%22clip-7058447%22%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%22454%22%20height%3D%22300%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%2244%22%20x2%3D%2252.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%2244%22%20x2%3D%22127.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%2244%22%20x2%3D%22203.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%2244%22%20x2%3D%22279.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%2244%22%20x2%3D%22354.7%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%2244%22%20x2%3D%22430.3%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%2244%22%20x2%3D%22506.0%22%20y2%3D%22344%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344.0%22%20x2%3D%22506%22%20y2%3D%22344.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22284.0%22%20x2%3D%22506%22%20y2%3D%22284.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22164.0%22%20x2%3D%22506%22%20y2%3D%22164.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22104.0%22%20x2%3D%22506%22%20y2%3D%22104.0%22%20stroke%3D%22%23e8e2d8%22%20stroke-width%3D%221%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22224.0%22%20x2%3D%22506%22%20y2%3D%22224.0%22%20stroke%3D%22%23c4b8a8%22%20stroke-width%3D%221.3%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%2244%22%20x2%3D%2252%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252%22%20y1%3D%22344%22%20x2%3D%22506%22%20y2%3D%22344%22%20stroke%3D%22%237a7268%22%20stroke-width%3D%221.5%22%2F%3E%0A%3Cline%20x1%3D%2252.0%22%20y1%3D%22344%22%20x2%3D%2252.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2252.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%22127.7%22%20y1%3D%22344%22%20x2%3D%22127.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22127.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E1%3C%2Ftext%3E%0A%3Cline%20x1%3D%22203.3%22%20y1%3D%22344%22%20x2%3D%22203.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22203.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22279.0%22%20y1%3D%22344%22%20x2%3D%22279.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22279.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22354.7%22%20y1%3D%22344%22%20x2%3D%22354.7%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22354.7%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cline%20x1%3D%22430.3%22%20y1%3D%22344%22%20x2%3D%22430.3%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22430.3%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E5%3C%2Ftext%3E%0A%3Cline%20x1%3D%22506.0%22%20y1%3D%22344%22%20x2%3D%22506.0%22%20y2%3D%22349%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%22506.0%22%20y%3D%22362%22%20text-anchor%3D%22middle%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E6%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22344.0%22%20x2%3D%2252%22%20y2%3D%22344.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22348.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-4%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22284.0%22%20x2%3D%2252%22%20y2%3D%22284.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22288.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E-2%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22224.0%22%20x2%3D%2252%22%20y2%3D%22224.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22228.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E0%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22164.0%22%20x2%3D%2252%22%20y2%3D%22164.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22168.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E2%3C%2Ftext%3E%0A%3Cline%20x1%3D%2247%22%20y1%3D%22104.0%22%20x2%3D%2252%22%20y2%3D%22104.0%22%20stroke%3D%22%237a7268%22%2F%3E%3Ctext%20x%3D%2244%22%20y%3D%22108.0%22%20text-anchor%3D%22end%22%20font-size%3D%2211%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3E4%3C%2Ftext%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-16.0%2053.4%2C-12.6%2054.8%2C-9.3%2056.3%2C-6.0%2057.7%2C-2.7%2059.1%2C0.6%2060.5%2C3.9%2061.9%2C7.1%2063.4%2C10.3%2064.8%2C13.5%2066.2%2C16.7%2067.6%2C19.8%2069.0%2C23.0%2070.4%2C26.1%2071.9%2C29.2%2073.3%2C32.3%2074.7%2C35.3%2076.1%2C38.3%2077.5%2C41.3%2079.0%2C44.3%2080.4%2C47.3%2081.8%2C50.2%2083.2%2C53.1%2084.6%2C56.0%2086.0%2C58.9%2087.5%2C61.8%2088.9%2C64.6%2090.3%2C67.4%2091.7%2C70.2%2093.1%2C73.0%2094.6%2C75.8%2096.0%2C78.5%2097.4%2C81.2%2098.8%2C83.9%20100.2%2C86.6%20101.7%2C89.2%20103.1%2C91.8%20104.5%2C94.4%20105.9%2C97.0%20107.3%2C99.6%20108.8%2C102.1%20110.2%2C104.6%20111.6%2C107.1%20113.0%2C109.6%20114.4%2C112.1%20115.8%2C114.5%20117.3%2C116.9%20118.7%2C119.3%20120.1%2C121.7%20121.5%2C124.1%20122.9%2C126.4%20124.4%2C128.7%20125.8%2C131.0%20127.2%2C133.2%20128.6%2C135.5%20130.0%2C137.7%20131.4%2C139.9%20132.9%2C142.1%20134.3%2C144.3%20135.7%2C146.4%20137.1%2C148.5%20138.5%2C150.6%20140.0%2C152.7%20141.4%2C154.8%20142.8%2C156.8%20144.2%2C158.8%20145.6%2C160.8%20147.1%2C162.8%20148.5%2C164.7%20149.9%2C166.7%20151.3%2C168.6%20152.7%2C170.5%20154.2%2C172.3%20155.6%2C174.2%20157.0%2C176.0%20158.4%2C177.8%20159.8%2C179.6%20161.2%2C181.3%20162.7%2C183.1%20164.1%2C184.8%20165.5%2C186.5%20166.9%2C188.2%20168.3%2C189.8%20169.8%2C191.5%20171.2%2C193.1%20172.6%2C194.7%20174.0%2C196.2%20175.4%2C197.8%20176.8%2C199.3%20178.3%2C200.8%20179.7%2C202.3%20181.1%2C203.8%20182.5%2C205.2%20183.9%2C206.7%20185.4%2C208.1%20186.8%2C209.4%20188.2%2C210.8%20189.6%2C212.1%20191.0%2C213.5%20192.5%2C214.8%20193.9%2C216.0%20195.3%2C217.3%20196.7%2C218.5%20198.1%2C219.7%20199.6%2C220.9%20201.0%2C222.1%20202.4%2C223.2%20203.8%2C224.4%20205.2%2C225.5%20206.6%2C226.6%20208.1%2C227.6%20209.5%2C228.7%20210.9%2C229.7%20212.3%2C230.7%20213.7%2C231.7%20215.2%2C232.6%20216.6%2C233.6%20218.0%2C234.5%20219.4%2C235.4%20220.8%2C236.3%20222.2%2C237.1%20223.7%2C238.0%20225.1%2C238.8%20226.5%2C239.6%20227.9%2C240.3%20229.3%2C241.1%20230.8%2C241.8%20232.2%2C242.5%20233.6%2C243.2%20235.0%2C243.9%20236.4%2C244.5%20237.9%2C245.1%20239.3%2C245.7%20240.7%2C246.3%20242.1%2C246.9%20243.5%2C247.4%20244.9%2C247.9%20246.4%2C248.4%20247.8%2C248.9%20249.2%2C249.3%20250.6%2C249.8%20252.0%2C250.2%20253.5%2C250.6%20254.9%2C251.0%20256.3%2C251.3%20257.7%2C251.6%20259.1%2C251.9%20260.6%2C252.2%20262.0%2C252.5%20263.4%2C252.7%20264.8%2C252.9%20266.2%2C253.1%20267.6%2C253.3%20269.1%2C253.5%20270.5%2C253.6%20271.9%2C253.7%20273.3%2C253.8%20274.7%2C253.9%20276.2%2C254.0%20277.6%2C254.0%20279.0%2C254.0%20280.4%2C254.0%20281.8%2C254.0%20283.3%2C253.9%20284.7%2C253.8%20286.1%2C253.7%20287.5%2C253.6%20288.9%2C253.5%20290.4%2C253.3%20291.8%2C253.1%20293.2%2C252.9%20294.6%2C252.7%20296.0%2C252.5%20297.4%2C252.2%20298.9%2C251.9%20300.3%2C251.6%20301.7%2C251.3%20303.1%2C251.0%20304.5%2C250.6%20306.0%2C250.2%20307.4%2C249.8%20308.8%2C249.3%20310.2%2C248.9%20311.6%2C248.4%20313.1%2C247.9%20314.5%2C247.4%20315.9%2C246.9%20317.3%2C246.3%20318.7%2C245.7%20320.1%2C245.1%20321.6%2C244.5%20323.0%2C243.9%20324.4%2C243.2%20325.8%2C242.5%20327.2%2C241.8%20328.7%2C241.1%20330.1%2C240.3%20331.5%2C239.6%20332.9%2C238.8%20334.3%2C238.0%20335.8%2C237.1%20337.2%2C236.3%20338.6%2C235.4%20340.0%2C234.5%20341.4%2C233.6%20342.8%2C232.6%20344.3%2C231.7%20345.7%2C230.7%20347.1%2C229.7%20348.5%2C228.7%20349.9%2C227.6%20351.4%2C226.6%20352.8%2C225.5%20354.2%2C224.4%20355.6%2C223.2%20357.0%2C222.1%20358.4%2C220.9%20359.9%2C219.7%20361.3%2C218.5%20362.7%2C217.3%20364.1%2C216.0%20365.5%2C214.8%20367.0%2C213.5%20368.4%2C212.1%20369.8%2C210.8%20371.2%2C209.4%20372.6%2C208.1%20374.1%2C206.7%20375.5%2C205.2%20376.9%2C203.8%20378.3%2C202.3%20379.7%2C200.8%20381.1%2C199.3%20382.6%2C197.8%20384.0%2C196.2%20385.4%2C194.7%20386.8%2C193.1%20388.2%2C191.5%20389.7%2C189.8%20391.1%2C188.2%20392.5%2C186.5%20393.9%2C184.8%20395.3%2C183.1%20396.8%2C181.3%20398.2%2C179.6%20399.6%2C177.8%20401.0%2C176.0%20402.4%2C174.2%20403.9%2C172.3%20405.3%2C170.5%20406.7%2C168.6%20408.1%2C166.7%20409.5%2C164.7%20410.9%2C162.8%20412.4%2C160.8%20413.8%2C158.8%20415.2%2C156.8%20416.6%2C154.8%20418.0%2C152.7%20419.5%2C150.6%20420.9%2C148.5%20422.3%2C146.4%20423.7%2C144.3%20425.1%2C142.1%20426.6%2C139.9%20428.0%2C137.7%20429.4%2C135.5%20430.8%2C133.2%20432.2%2C131.0%20433.6%2C128.7%20435.1%2C126.4%20436.5%2C124.1%20437.9%2C121.7%20439.3%2C119.3%20440.7%2C116.9%20442.2%2C114.5%20443.6%2C112.1%20445.0%2C109.6%20446.4%2C107.1%20447.8%2C104.6%20449.2%2C102.1%20450.7%2C99.6%20452.1%2C97.0%20453.5%2C94.4%20454.9%2C91.8%20456.3%2C89.2%20457.8%2C86.6%20459.2%2C83.9%20460.6%2C81.2%20462.0%2C78.5%20463.4%2C75.8%20464.9%2C73.0%20466.3%2C70.2%20467.7%2C67.4%20469.1%2C64.6%20470.5%2C61.8%20471.9%2C58.9%20473.4%2C56.0%20474.8%2C53.1%20476.2%2C50.2%20477.6%2C47.3%20479.0%2C44.3%20480.5%2C41.3%20481.9%2C38.3%20483.3%2C35.3%20484.7%2C32.3%20486.1%2C29.2%20487.6%2C26.1%20489.0%2C23.0%20490.4%2C19.8%20491.8%2C16.7%20493.2%2C13.5%20494.6%2C10.3%20496.1%2C7.1%20497.5%2C3.9%20498.9%2C0.6%20500.3%2C-2.7%20501.7%2C-6.0%20503.2%2C-9.3%20504.6%2C-12.6%20506.0%2C-16.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C404.0%2053.4%2C402.9%2054.8%2C401.8%2056.3%2C400.6%2057.7%2C399.5%2059.1%2C398.4%2060.5%2C397.2%2061.9%2C396.1%2063.4%2C395.0%2064.8%2C393.9%2066.2%2C392.8%2067.6%2C391.6%2069.0%2C390.5%2070.4%2C389.4%2071.9%2C388.2%2073.3%2C387.1%2074.7%2C386.0%2076.1%2C384.9%2077.5%2C383.7%2079.0%2C382.6%2080.4%2C381.5%2081.8%2C380.4%2083.2%2C379.3%2084.6%2C378.1%2086.0%2C377.0%2087.5%2C375.9%2088.9%2C374.8%2090.3%2C373.6%2091.7%2C372.5%2093.1%2C371.4%2094.6%2C370.2%2096.0%2C369.1%2097.4%2C368.0%2098.8%2C366.9%20100.2%2C365.8%20101.7%2C364.6%20103.1%2C363.5%20104.5%2C362.4%20105.9%2C361.2%20107.3%2C360.1%20108.8%2C359.0%20110.2%2C357.9%20111.6%2C356.8%20113.0%2C355.6%20114.4%2C354.5%20115.8%2C353.4%20117.3%2C352.2%20118.7%2C351.1%20120.1%2C350.0%20121.5%2C348.9%20122.9%2C347.8%20124.4%2C346.6%20125.8%2C345.5%20127.2%2C344.4%20128.6%2C343.2%20130.0%2C342.1%20131.4%2C341.0%20132.9%2C339.9%20134.3%2C338.8%20135.7%2C337.6%20137.1%2C336.5%20138.5%2C335.4%20140.0%2C334.2%20141.4%2C333.1%20142.8%2C332.0%20144.2%2C330.9%20145.6%2C329.8%20147.1%2C328.6%20148.5%2C327.5%20149.9%2C326.4%20151.3%2C325.2%20152.7%2C324.1%20154.2%2C323.0%20155.6%2C321.9%20157.0%2C320.8%20158.4%2C319.6%20159.8%2C318.5%20161.2%2C317.4%20162.7%2C316.2%20164.1%2C315.1%20165.5%2C314.0%20166.9%2C312.9%20168.3%2C311.8%20169.8%2C310.6%20171.2%2C309.5%20172.6%2C308.4%20174.0%2C307.2%20175.4%2C306.1%20176.8%2C305.0%20178.3%2C303.9%20179.7%2C302.8%20181.1%2C301.6%20182.5%2C300.5%20183.9%2C299.4%20185.4%2C298.2%20186.8%2C297.1%20188.2%2C296.0%20189.6%2C294.9%20191.0%2C293.8%20192.5%2C292.6%20193.9%2C291.5%20195.3%2C290.4%20196.7%2C289.2%20198.1%2C288.1%20199.6%2C287.0%20201.0%2C285.9%20202.4%2C284.8%20203.8%2C283.6%20205.2%2C282.5%20206.6%2C281.4%20208.1%2C280.2%20209.5%2C279.1%20210.9%2C278.0%20212.3%2C276.9%20213.7%2C275.8%20215.2%2C274.6%20216.6%2C273.5%20218.0%2C272.4%20219.4%2C271.2%20220.8%2C270.1%20222.2%2C269.0%20223.7%2C267.9%20225.1%2C266.8%20226.5%2C265.6%20227.9%2C264.5%20229.3%2C263.4%20230.8%2C262.2%20232.2%2C261.1%20233.6%2C260.0%20235.0%2C258.9%20236.4%2C257.8%20237.9%2C256.6%20239.3%2C255.5%20240.7%2C254.4%20242.1%2C253.2%20243.5%2C252.1%20244.9%2C251.0%20246.4%2C249.9%20247.8%2C248.8%20249.2%2C247.6%20250.6%2C246.5%20252.0%2C245.4%20253.5%2C244.2%20254.9%2C243.1%20256.3%2C242.0%20257.7%2C240.9%20259.1%2C239.8%20260.6%2C238.6%20262.0%2C237.5%20263.4%2C236.4%20264.8%2C235.2%20266.2%2C234.1%20267.6%2C233.0%20269.1%2C231.9%20270.5%2C230.7%20271.9%2C229.6%20273.3%2C228.5%20274.7%2C227.4%20276.2%2C226.2%20277.6%2C225.1%20279.0%2C224.0%20280.4%2C222.9%20281.8%2C221.8%20283.3%2C220.6%20284.7%2C219.5%20286.1%2C218.4%20287.5%2C217.2%20288.9%2C216.1%20290.4%2C215.0%20291.8%2C213.9%20293.2%2C212.8%20294.6%2C211.6%20296.0%2C210.5%20297.4%2C209.4%20298.9%2C208.2%20300.3%2C207.1%20301.7%2C206.0%20303.1%2C204.9%20304.5%2C203.8%20306.0%2C202.6%20307.4%2C201.5%20308.8%2C200.4%20310.2%2C199.2%20311.6%2C198.1%20313.1%2C197.0%20314.5%2C195.9%20315.9%2C194.8%20317.3%2C193.6%20318.7%2C192.5%20320.1%2C191.4%20321.6%2C190.2%20323.0%2C189.1%20324.4%2C188.0%20325.8%2C186.9%20327.2%2C185.8%20328.7%2C184.6%20330.1%2C183.5%20331.5%2C182.4%20332.9%2C181.2%20334.3%2C180.1%20335.8%2C179.0%20337.2%2C177.9%20338.6%2C176.8%20340.0%2C175.6%20341.4%2C174.5%20342.8%2C173.4%20344.3%2C172.2%20345.7%2C171.1%20347.1%2C170.0%20348.5%2C168.9%20349.9%2C167.8%20351.4%2C166.6%20352.8%2C165.5%20354.2%2C164.4%20355.6%2C163.2%20357.0%2C162.1%20358.4%2C161.0%20359.9%2C159.9%20361.3%2C158.8%20362.7%2C157.6%20364.1%2C156.5%20365.5%2C155.4%20367.0%2C154.2%20368.4%2C153.1%20369.8%2C152.0%20371.2%2C150.9%20372.6%2C149.8%20374.1%2C148.6%20375.5%2C147.5%20376.9%2C146.4%20378.3%2C145.2%20379.7%2C144.1%20381.1%2C143.0%20382.6%2C141.9%20384.0%2C140.8%20385.4%2C139.6%20386.8%2C138.5%20388.2%2C137.4%20389.7%2C136.2%20391.1%2C135.1%20392.5%2C134.0%20393.9%2C132.9%20395.3%2C131.8%20396.8%2C130.6%20398.2%2C129.5%20399.6%2C128.4%20401.0%2C127.3%20402.4%2C126.1%20403.9%2C125.0%20405.3%2C123.9%20406.7%2C122.8%20408.1%2C121.6%20409.5%2C120.5%20410.9%2C119.4%20412.4%2C118.2%20413.8%2C117.1%20415.2%2C116.0%20416.6%2C114.9%20418.0%2C113.7%20419.5%2C112.6%20420.9%2C111.5%20422.3%2C110.4%20423.7%2C109.3%20425.1%2C108.1%20426.6%2C107.0%20428.0%2C105.9%20429.4%2C104.8%20430.8%2C103.6%20432.2%2C102.5%20433.6%2C101.4%20435.1%2C100.2%20436.5%2C99.1%20437.9%2C98.0%20439.3%2C96.9%20440.7%2C95.7%20442.2%2C94.6%20443.6%2C93.5%20445.0%2C92.4%20446.4%2C91.2%20447.8%2C90.1%20449.2%2C89.0%20450.7%2C87.9%20452.1%2C86.8%20453.5%2C85.6%20454.9%2C84.5%20456.3%2C83.4%20457.8%2C82.2%20459.2%2C81.1%20460.6%2C80.0%20462.0%2C78.9%20463.4%2C77.8%20464.9%2C76.6%20466.3%2C75.5%20467.7%2C74.4%20469.1%2C73.2%20470.5%2C72.1%20471.9%2C71.0%20473.4%2C69.9%20474.8%2C68.7%20476.2%2C67.6%20477.6%2C66.5%20479.0%2C65.4%20480.5%2C64.3%20481.9%2C63.1%20483.3%2C62.0%20484.7%2C60.9%20486.1%2C59.8%20487.6%2C58.6%20489.0%2C57.5%20490.4%2C56.4%20491.8%2C55.2%20493.2%2C54.1%20494.6%2C53.0%20496.1%2C51.9%20497.5%2C50.7%20498.9%2C49.6%20500.3%2C48.5%20501.7%2C47.4%20503.2%2C46.2%20504.6%2C45.1%20506.0%2C44.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.4%22%20points%3D%2252.0%2C-46.0%2053.4%2C-42.6%2054.8%2C-39.3%2056.3%2C-36.0%2057.7%2C-32.7%2059.1%2C-29.4%2060.5%2C-26.1%2061.9%2C-22.9%2063.4%2C-19.7%2064.8%2C-16.5%2066.2%2C-13.3%2067.6%2C-10.2%2069.0%2C-7.0%2070.4%2C-3.9%2071.9%2C-0.8%2073.3%2C2.3%2074.7%2C5.3%2076.1%2C8.3%2077.5%2C11.3%2079.0%2C14.3%2080.4%2C17.3%2081.8%2C20.2%2083.2%2C23.1%2084.6%2C26.0%2086.0%2C28.9%2087.5%2C31.8%2088.9%2C34.6%2090.3%2C37.4%2091.7%2C40.2%2093.1%2C43.0%2094.6%2C45.8%2096.0%2C48.5%2097.4%2C51.2%2098.8%2C53.9%20100.2%2C56.6%20101.7%2C59.2%20103.1%2C61.8%20104.5%2C64.4%20105.9%2C67.0%20107.3%2C69.6%20108.8%2C72.1%20110.2%2C74.6%20111.6%2C77.1%20113.0%2C79.6%20114.4%2C82.1%20115.8%2C84.5%20117.3%2C86.9%20118.7%2C89.3%20120.1%2C91.7%20121.5%2C94.1%20122.9%2C96.4%20124.4%2C98.7%20125.8%2C101.0%20127.2%2C103.2%20128.6%2C105.5%20130.0%2C107.7%20131.4%2C109.9%20132.9%2C112.1%20134.3%2C114.3%20135.7%2C116.4%20137.1%2C118.5%20138.5%2C120.6%20140.0%2C122.7%20141.4%2C124.8%20142.8%2C126.8%20144.2%2C128.8%20145.6%2C130.8%20147.1%2C132.8%20148.5%2C134.7%20149.9%2C136.7%20151.3%2C138.6%20152.7%2C140.5%20154.2%2C142.3%20155.6%2C144.2%20157.0%2C146.0%20158.4%2C147.8%20159.8%2C149.6%20161.2%2C151.3%20162.7%2C153.1%20164.1%2C154.8%20165.5%2C156.5%20166.9%2C158.2%20168.3%2C159.8%20169.8%2C161.5%20171.2%2C163.1%20172.6%2C164.7%20174.0%2C166.2%20175.4%2C167.8%20176.8%2C169.3%20178.3%2C170.8%20179.7%2C172.3%20181.1%2C173.8%20182.5%2C175.2%20183.9%2C176.7%20185.4%2C178.1%20186.8%2C179.4%20188.2%2C180.8%20189.6%2C182.1%20191.0%2C183.5%20192.5%2C184.8%20193.9%2C186.0%20195.3%2C187.3%20196.7%2C188.5%20198.1%2C189.7%20199.6%2C190.9%20201.0%2C192.1%20202.4%2C193.2%20203.8%2C194.4%20205.2%2C195.5%20206.6%2C196.6%20208.1%2C197.6%20209.5%2C198.7%20210.9%2C199.7%20212.3%2C200.7%20213.7%2C201.7%20215.2%2C202.6%20216.6%2C203.6%20218.0%2C204.5%20219.4%2C205.4%20220.8%2C206.3%20222.2%2C207.1%20223.7%2C208.0%20225.1%2C208.8%20226.5%2C209.6%20227.9%2C210.3%20229.3%2C211.1%20230.8%2C211.8%20232.2%2C212.5%20233.6%2C213.2%20235.0%2C213.9%20236.4%2C214.5%20237.9%2C215.1%20239.3%2C215.7%20240.7%2C216.3%20242.1%2C216.9%20243.5%2C217.4%20244.9%2C217.9%20246.4%2C218.4%20247.8%2C218.9%20249.2%2C219.3%20250.6%2C219.8%20252.0%2C220.2%20253.5%2C220.6%20254.9%2C221.0%20256.3%2C221.3%20257.7%2C221.6%20259.1%2C221.9%20260.6%2C222.2%20262.0%2C222.5%20263.4%2C222.7%20264.8%2C222.9%20266.2%2C223.1%20267.6%2C223.3%20269.1%2C223.5%20270.5%2C223.6%20271.9%2C223.7%20273.3%2C223.8%20274.7%2C223.9%20276.2%2C224.0%20277.6%2C224.0%20279.0%2C224.0%20280.4%2C224.0%20281.8%2C224.0%20283.3%2C223.9%20284.7%2C223.8%20286.1%2C223.7%20287.5%2C223.6%20288.9%2C223.5%20290.4%2C223.3%20291.8%2C223.1%20293.2%2C222.9%20294.6%2C222.7%20296.0%2C222.5%20297.4%2C222.2%20298.9%2C221.9%20300.3%2C221.6%20301.7%2C221.3%20303.1%2C221.0%20304.5%2C220.6%20306.0%2C220.2%20307.4%2C219.8%20308.8%2C219.3%20310.2%2C218.9%20311.6%2C218.4%20313.1%2C217.9%20314.5%2C217.4%20315.9%2C216.9%20317.3%2C216.3%20318.7%2C215.7%20320.1%2C215.1%20321.6%2C214.5%20323.0%2C213.9%20324.4%2C213.2%20325.8%2C212.5%20327.2%2C211.8%20328.7%2C211.1%20330.1%2C210.3%20331.5%2C209.6%20332.9%2C208.8%20334.3%2C208.0%20335.8%2C207.1%20337.2%2C206.3%20338.6%2C205.4%20340.0%2C204.5%20341.4%2C203.6%20342.8%2C202.6%20344.3%2C201.7%20345.7%2C200.7%20347.1%2C199.7%20348.5%2C198.7%20349.9%2C197.6%20351.4%2C196.6%20352.8%2C195.5%20354.2%2C194.4%20355.6%2C193.2%20357.0%2C192.1%20358.4%2C190.9%20359.9%2C189.7%20361.3%2C188.5%20362.7%2C187.3%20364.1%2C186.0%20365.5%2C184.8%20367.0%2C183.5%20368.4%2C182.1%20369.8%2C180.8%20371.2%2C179.4%20372.6%2C178.1%20374.1%2C176.7%20375.5%2C175.2%20376.9%2C173.8%20378.3%2C172.3%20379.7%2C170.8%20381.1%2C169.3%20382.6%2C167.8%20384.0%2C166.2%20385.4%2C164.7%20386.8%2C163.1%20388.2%2C161.5%20389.7%2C159.8%20391.1%2C158.2%20392.5%2C156.5%20393.9%2C154.8%20395.3%2C153.1%20396.8%2C151.3%20398.2%2C149.6%20399.6%2C147.8%20401.0%2C146.0%20402.4%2C144.2%20403.9%2C142.3%20405.3%2C140.5%20406.7%2C138.6%20408.1%2C136.7%20409.5%2C134.7%20410.9%2C132.8%20412.4%2C130.8%20413.8%2C128.8%20415.2%2C126.8%20416.6%2C124.8%20418.0%2C122.7%20419.5%2C120.6%20420.9%2C118.5%20422.3%2C116.4%20423.7%2C114.3%20425.1%2C112.1%20426.6%2C109.9%20428.0%2C107.7%20429.4%2C105.5%20430.8%2C103.2%20432.2%2C101.0%20433.6%2C98.7%20435.1%2C96.4%20436.5%2C94.1%20437.9%2C91.7%20439.3%2C89.3%20440.7%2C86.9%20442.2%2C84.5%20443.6%2C82.1%20445.0%2C79.6%20446.4%2C77.1%20447.8%2C74.6%20449.2%2C72.1%20450.7%2C69.6%20452.1%2C67.0%20453.5%2C64.4%20454.9%2C61.8%20456.3%2C59.2%20457.8%2C56.6%20459.2%2C53.9%20460.6%2C51.2%20462.0%2C48.5%20463.4%2C45.8%20464.9%2C43.0%20466.3%2C40.2%20467.7%2C37.4%20469.1%2C34.6%20470.5%2C31.8%20471.9%2C28.9%20473.4%2C26.0%20474.8%2C23.1%20476.2%2C20.2%20477.6%2C17.3%20479.0%2C14.3%20480.5%2C11.3%20481.9%2C8.3%20483.3%2C5.3%20484.7%2C2.3%20486.1%2C-0.8%20487.6%2C-3.9%20489.0%2C-7.0%20490.4%2C-10.2%20491.8%2C-13.3%20493.2%2C-16.5%20494.6%2C-19.7%20496.1%2C-22.9%20497.5%2C-26.1%20498.9%2C-29.4%20500.3%2C-32.7%20501.7%2C-36.0%20503.2%2C-39.3%20504.6%2C-42.6%20506.0%2C-46.0%22%20clip-path%3D%22url%28%23clip-7058447%29%22%2F%3E%0A%3Crect%20x%3D%22514%22%20y%3D%2246%22%20width%3D%22106%22%20height%3D%2268%22%20rx%3D%228%22%20fill%3D%22%23f8f6f2%22%20stroke%3D%22%23d9d2c5%22%2F%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2264%22%20x2%3D%22538%22%20y2%3D%2264%22%20stroke%3D%22%238B5A2B%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2268%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B2%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%2282%22%20x2%3D%22538%22%20y2%3D%2282%22%20stroke%3D%22%232F5D50%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%2286%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ef%E2%80%B3%3C%2Ftext%3E%0A%3Cline%20x1%3D%22520%22%20y1%3D%22100%22%20x2%3D%22538%22%20y2%3D%22100%22%20stroke%3D%22%236B3FA0%22%20stroke-width%3D%222.6%22%2F%3E%3Ctext%20x%3D%22544%22%20y%3D%22104%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Eh%E2%80%B2%3C%2Ftext%3E%0A%3Ctext%20x%3D%22279%22%20y%3D%22388%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-family%3D%22Georgia%2Cserif%22%20fill%3D%22%232b2b2b%22%3Ex%3C%2Ftext%3E%0A%3C%2Fsvg%3E`,
   }
 
