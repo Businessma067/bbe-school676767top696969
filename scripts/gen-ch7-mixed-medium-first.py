@@ -5,8 +5,11 @@ Graph / table / hybrid / applied stems name the medium and withhold formulas.
 Statements are bare claims: covering the figure or table must make those
 letters unsolvable. Textual styles stay fully algebraic.
 
-Small integers; hard 5/5 multi-step work; Chapter 4 tutor explanations.
-Every answer key is sympy-checked before export.
+Small integers; hard 5/5 multi-step work. Shared solution_overview fields and
+letter explanations are supplied by scripts/enrich-ch7-mixed-overviews.py
+(applied at the end of build_all) so regenerating keeps the Chapter 7 core
+style: a detailed shared solution first, then letter write-ups that reuse
+those facts. Every answer key is sympy-checked before export.
 
 Run: python3 scripts/gen-ch7-mixed-medium-first.py
 """
@@ -2099,7 +2102,20 @@ def build_all() -> list[dict]:
 
     assert len(tasks) == 30, len(tasks)
     assert [t["stem_kind"] for t in tasks] == STEMS * 3
+    _apply_shared_solutions(tasks)
     return tasks
+
+
+def _apply_shared_solutions(tasks: list[dict]) -> None:
+    """Replace short stub overviews/explanations with Ch7-core shared solutions."""
+    import importlib.util
+
+    path = Path(__file__).resolve().parent / "enrich-ch7-mixed-overviews.py"
+    spec = importlib.util.spec_from_file_location("enrich_ch7_mixed_overviews", path)
+    mod = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(mod)
+    mod.apply_overviews(tasks)
 
 
 # ---------------------------------------------------------------------------
@@ -2116,6 +2132,11 @@ def validate(tasks: list[dict]) -> None:
     print("truth histogram:", dict(sorted(hist.items())))
     assert truths == PLANNED_TRUTHS, truths
     assert set(hist) == {1, 2, 3, 4, 5}
+
+    ov_lens = sorted(len(t["solution_overview"]) for t in tasks)
+    ov_med = statistics.median(ov_lens)
+    print(f"overview len min/med/max {ov_lens[0]}/{ov_med}/{ov_lens[-1]}")
+    assert ov_med >= 500, ov_med
 
     expls = [e for t in tasks for e in t["tactical_explanations"]]
     lens = sorted(len(e) for e in expls)
@@ -2151,15 +2172,19 @@ def validate(tasks: list[dict]) -> None:
             letter = "ABCDE"[i]
             verd = "True" if t["answer_key"][i] else "False"
             assert e.startswith(f"**{letter}.** → {verd}"), (t["id"], i, e[:60])
+            assert e.rstrip().endswith(f"so the statement is {verd}."), (t["id"], letter)
             assert "so the statement is" in e
-            assert e.count("$$") >= 4 and e.count("$$") % 2 == 0, (t["id"], letter, e.count("$$"))
-            # One-line displays: no raw newlines inside $$.
-            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
-                assert "\n" not in m.group(1), (t["id"], letter)
-            # No English prose stuffed into displays.
+            assert e.count("$$") >= 2 and e.count("$$") % 2 == 0, (t["id"], letter, e.count("$$"))
+            n_disp = e.count("$$") // 2
+            assert 1 <= n_disp <= 6, (t["id"], letter, n_disp)
+            # One-line displays: no raw newlines or empty bodies inside $$.
             for m in re.finditer(r"\$\$([\s\S]*?)\$\$", e):
                 inner = m.group(1)
+                assert inner.strip(), (t["id"], letter, "empty $$")
+                assert "\n" not in inner, (t["id"], letter)
                 assert not re.search(r"\\text\{[A-Za-z]{4,}", inner), (t["id"], letter, inner)
+            for m in re.finditer(r"\$\$([\s\S]*?)\$\$", t["solution_overview"]):
+                assert m.group(1).strip(), (t["id"], "empty overview $$")
 
     # Cover-the-figure: graph/applied/hybrid statements must not restate a vertex pair.
     for t in tasks:
