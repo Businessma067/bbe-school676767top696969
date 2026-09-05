@@ -325,7 +325,7 @@
       "case_id": "MATH 12.209",
       "title": "Exam-style tasks - 11",
       "subsection": "12.6",
-      "context": "A jar contains 5 red, 4 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{12}2=66$ equally likely pairs, and color events may overlap only through the two selected tokens.",
+      "context": "A jar contains 5 red, 4 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{12}{2}=66$ equally likely pairs, and color events may overlap only through the two selected tokens.",
       "statements": [
         "The probability of two red tokens is $\\dfrac{5}{33}$.",
         "The probability of one red and one blue is $\\dfrac{10}{33}$.",
@@ -341,15 +341,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\binom{5}2/66=\\dfrac{5}{33}$.\n\nThe claim is True.",
+        "**A.** → True\n\n$\\binom{5}{2}/66=\\dfrac{5}{33}$.\n\nThe claim is True.",
         "**B.** → True\n\n$5\\cdot4/66=\\dfrac{10}{33}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{9}2/66=\\dfrac{6}{11}$.\n\nThe claim is True.",
+        "**C.** → True\n\n$\\binom{9}{2}/66=\\dfrac{6}{11}$.\n\nThe claim is True.",
         "**D.** → False\n\nUse the complement: $1-\\dfrac{6}{11}=\\dfrac{5}{11}$.\n\nThe claim is False.",
         "**E.** → False\n\nSampling without replacement changes the color proportions after the first draw.\n\nThe claim is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 209,
-      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{5}2/66=\\dfrac{5}{33}$.\n5. A: The computed result makes this claim True.\n6. B: $5\\cdot4/66=\\dfrac{10}{33}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{9}2/66=\\dfrac{6}{11}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{6}{11}=\\dfrac{5}{11}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{5}{2}/66=\\dfrac{5}{33}$.\n5. A: The computed result makes this claim True.\n6. B: $5\\cdot4/66=\\dfrac{10}{33}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{9}{2}/66=\\dfrac{6}{11}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{6}{11}=\\dfrac{5}{11}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
       "placeholder": false
     },
     {
@@ -485,7 +485,7 @@
       "case_id": "MATH 12.214",
       "title": "Exam-style tasks - 16",
       "subsection": "12.6",
-      "context": "A jar contains 6 red, 5 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{14}2=91$ equally likely pairs, and color events may overlap only through the two selected tokens.",
+      "context": "A jar contains 6 red, 5 blue, and 3 green tokens. Two tokens are selected together, uniformly and without replacement, so unordered pairs form the sample space. There are $\\binom{14}{2}=91$ equally likely pairs, and color events may overlap only through the two selected tokens.",
       "statements": [
         "The probability of two red tokens is $\\dfrac{15}{91}$.",
         "The probability of one red and one blue is $\\dfrac{30}{91}$.",
@@ -501,15 +501,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$\\binom{6}2/91=\\dfrac{15}{91}$.\n\nThe claim is True.",
+        "**A.** → True\n\n$\\binom{6}{2}/91=\\dfrac{15}{91}$.\n\nThe claim is True.",
         "**B.** → True\n\n$6\\cdot5/91=\\dfrac{30}{91}$.\n\nThe claim is True.",
-        "**C.** → True\n\n$\\binom{11}2/91=\\dfrac{55}{91}$.\n\nThe claim is True.",
+        "**C.** → True\n\n$\\binom{11}{2}/91=\\dfrac{55}{91}$.\n\nThe claim is True.",
         "**D.** → False\n\nUse the complement: $1-\\dfrac{55}{91}=\\dfrac{36}{91}$.\n\nThe claim is False.",
         "**E.** → False\n\nSampling without replacement changes the color proportions after the first draw.\n\nThe claim is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 214,
-      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{6}2/91=\\dfrac{15}{91}$.\n5. A: The computed result makes this claim True.\n6. B: $6\\cdot5/91=\\dfrac{30}{91}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{11}2/91=\\dfrac{55}{91}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{55}{91}=\\dfrac{36}{91}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
+      "solution_overview": "Shared context topic 12.1.\n\nShared solution:\n1. Use the single shared stem for topic 12.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared urn experiment is counted with a common sample space.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $\\binom{6}{2}/91=\\dfrac{15}{91}$.\n5. A: The computed result makes this claim True.\n6. B: $6\\cdot5/91=\\dfrac{30}{91}$.\n7. B: The computed result makes this claim True.\n8. C: $\\binom{11}{2}/91=\\dfrac{55}{91}$.\n9. C: The computed result makes this claim True.\n10. D: Use the complement: $1-\\dfrac{55}{91}=\\dfrac{36}{91}$.\n11. D: The computed result makes this claim False.\n12. E: Sampling without replacement changes the color proportions after the first draw.\n13. E: The computed result makes this claim False.",
       "placeholder": false
     },
     {

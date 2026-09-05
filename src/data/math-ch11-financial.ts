@@ -38,7 +38,7 @@ const MATH_CH11_CORE: MathTask[] = [
 The monthly periodic rate is the nominal annual quote divided by twelve compounding dates:
 
 $$
-i_m = \frac{r}{12}
+i_m = \\frac{r}{12}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -175,7 +175,7 @@ $$R = (1+i_m)^{n} - 1, \\qquad FV = P(1+i_m)^{n}$$`,
 The quarterly periodic rate is the nominal annual quote divided by four compounding dates:
 
 $$
-i = \frac{r}{4}
+i = \\frac{r}{4}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -416,7 +416,7 @@ The nominal annual rate annualizes the monthly quote without compounding:
 
 $$r_{\\mathrm{nom}} = 12 \\times 1.75\\% = 21.00\\%$$
 
-Compare the computed value with the claim ($22.00\\%$. We have $21.00\\% \\ne 22.00\\%$). The two sides do not agree.
+Compare the computed value with the claim ($22.00\\%). We have $21.00\\% \\ne 22.00\\%$. The two sides do not agree.
 
 So the statement is False.`,
       `**B.** → False
@@ -538,7 +538,7 @@ $$R = (1+i_m)^{12} - 1, \\qquad FV = P(1+i_m)^{12}$$`,
 The quarterly periodic rate is the nominal annual quote divided by four compounding dates:
 
 $$
-i = \frac{r}{4}
+i = \\frac{r}{4}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -667,7 +667,7 @@ $$R = (1+i)^{n} - 1, \\qquad FV = P(1+i)^{n}$$`,
 The monthly periodic rate is the nominal annual quote divided by twelve compounding dates:
 
 $$
-i_m = \frac{r}{12}
+i_m = \\frac{r}{12}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -690,7 +690,7 @@ So the statement is True.`,
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
@@ -707,14 +707,16 @@ So the statement is False.`,
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 2}{\\ln(1.006)} \\approx 115.87
-$$The claim is $58$ months. We have $115.87 \\ne 58$.
+$$
+
+The claim is $58$ months. We have $115.87 \\ne 58$.
 
 So the statement is False.`,
       `**D.** → False
@@ -891,7 +893,7 @@ $$R = \\left(1+\\frac{r}{n}\\right)^{n} - 1$$`,
 The monthly periodic rate is the nominal annual quote divided by twelve compounding dates:
 
 $$
-i_m = \frac{r}{12}
+i_m = \\frac{r}{12}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -1309,7 +1311,7 @@ $$S(t) = S_0(1+r)^{t}, \\qquad S_0 = \\frac{S(t)}{(1+r)^{t}}$$`,
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
@@ -1326,29 +1328,33 @@ So the statement is True.`,
 Take logarithms to isolate time in the growth equation.
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$The claim is $6.00$ years exactly. We have $6.78 \\ne 6.00$.
+$$
+
+The claim is $6.00$ years exactly. We have $6.78 \\ne 6.00$.
 
 So the statement is False.`,
       `**C.** → False
 
-Solve for $t$ by applying $\ln$ to both sides of the growth identity.
+Solve for $t$ by applying $\\ln$ to both sides of the growth identity.
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$The claim is $48$ months. We have $81.30 \\ne 48$.
+$$
+
+The claim is $48$ months. We have $81.30 \\ne 48$.
 
 So the statement is False.`,
       `**D.** → False
@@ -1369,14 +1375,16 @@ So the statement is False.`,
 Isolate time with logarithms, then substitute the recovered rates.
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
 
 $$
 t = \\frac{\\ln 1.5}{\\ln 1.005} \\approx 81.30
-$$The claim is exactly $100$ months. We have $81.30 \\ne 100$.
+$$
+
+The claim is exactly $100$ months. We have $81.30 \\ne 100$.
 
 So the statement is False.`,
     ],
@@ -1420,7 +1428,7 @@ $$t = \\frac{\\ln\\bigl(\\frac{S(t)}{S_0}\\bigr)}{\\ln(1+i_m)}$$`,
 The daily periodic rate is the nominal annual quote divided by 365 compounding dates:
 
 $$
-i_d = \frac{r}{365}
+i_d = \\frac{r}{365}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -3520,7 +3528,7 @@ So the statement is False.`,
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
 $$
-t = \frac{\ln M}{\ln(1+i)}
+t = \\frac{\\ln M}{\\ln(1+i)}
 $$
 
 Substitute the recovered rate:
@@ -6287,7 +6295,7 @@ So the statement is True.`,
 The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_n = a\frac{1-k^n}{1-k}
+s_n = a\\frac{1-k^n}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -6408,7 +6416,7 @@ So the statement is True.`,
 The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_n = a\frac{1-k^n}{1-k}
+s_n = a\\frac{1-k^n}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -6791,7 +6799,7 @@ So the statement is True.`,
 When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\infty} = \frac{a}{1-k}
+s_{\infty} = \\frac{a}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -6830,7 +6838,7 @@ So the statement is False.`,
 A geometric series of payments has a closed finite-sum formula only when the common ratio differs from $1$:
 
 $$
-s_n = a\frac{k^{n}-1}{k-1}, \qquad k \ne 1
+s_n = a\\frac{k^{n}-1}{k-1}, \qquad k \\ne 1
 $$
 
 The general finite-sum formula divides by $k-1$. At $k=1$,
@@ -6980,7 +6988,7 @@ $$s_{\\infty} = \\frac{15{,}000}{1-0.88} = \\frac{15{,}000}{0.12} = 125{,}000$$`
 A geometric series of payments has a closed finite-sum formula only when the common ratio differs from $1$:
 
 $$
-s_n = a\frac{k^{n}-1}{k-1}, \qquad k \ne 1
+s_n = a\\frac{k^{n}-1}{k-1}, \qquad k \\ne 1
 $$
 
 The finite-sum formula needs $k\\ne 1$. Here $k=1.08\\ne 1$, so $s_{12}$ is well-defined. The claim is that this $12$-year total exists.
@@ -7002,7 +7010,7 @@ So the statement is False.`,
 A geometric series of payments has a closed finite-sum formula only when the common ratio differs from $1$:
 
 $$
-s_n = a\frac{k^{n}-1}{k-1}, \qquad k \ne 1
+s_n = a\\frac{k^{n}-1}{k-1}, \qquad k \\ne 1
 $$
 
 The infinite-sum formula requires $|k|<1$. Here
@@ -7101,7 +7109,7 @@ So the statement is True.`,
 A geometric series of payments has a closed finite-sum formula only when the common ratio differs from $1$:
 
 $$
-s_n = a\frac{k^{n}-1}{k-1}, \qquad k \ne 1
+s_n = a\\frac{k^{n}-1}{k-1}, \qquad k \\ne 1
 $$
 
 The finite-sum formula needs $k\\ne 1$. Here $k=1.20\\ne 1$, so $s_6$ is well-defined. The claim says the six-year series has no valid finite sum.
@@ -7489,7 +7497,7 @@ So the statement is True.`,
 The partial sum of the first $n$ terms of a geometric series is:
 
 $$
-s_n = a\frac{1-k^n}{1-k}
+s_n = a\\frac{1-k^n}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -7673,7 +7681,7 @@ $$s_{20} = 10{,}000\\frac{1-0.667607972}{0.02} = 10{,}000 \\times 16.619601 = 16
 When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\infty} = \frac{a}{1-k}
+s_{\infty} = \\frac{a}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -7690,7 +7698,7 @@ So the statement is True.`,
 When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\infty} = \frac{a}{1-k}
+s_{\infty} = \\frac{a}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -7867,7 +7875,7 @@ A necessary condition for any series to converge is $a_n\\to 0$, but that condit
 When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\infty} = \frac{a}{1-k}
+s_{\infty} = \\frac{a}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -7884,7 +7892,7 @@ So the statement is True.`,
 When $|k|<1$, the infinite geometric sum is:
 
 $$
-s_{\infty} = \frac{a}{1-k}
+s_{\infty} = \\frac{a}{1-k}
 $$
 
 Substitute the stem numbers:
@@ -8099,7 +8107,7 @@ So the statement is True.`,
 $k\\ne 1$, $s_n=a\\frac{k^n-1}{k-1}$. When $|k|<1$, $s_{\\infty}=\\frac{a}{1-k}$. Terms tending to $0$ are necessary but not sufficient for convergence:
 
 $$
-P = \frac{D_1}{r-g}
+P = \\frac{D_1}{r-g}
 $$
 
 Substitute the stem numbers:
@@ -8172,7 +8180,7 @@ $$s_3 = \\frac{30{,}000}{1-0.92} = \\frac{30{,}000}{0.08} = 375{,}000$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -8580,7 +8588,7 @@ $$= 43{,}750 \\times 1.158925 \\approx 50{,}702.97$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -8681,7 +8689,7 @@ $$= 53{,}333.33 \\times 0.483284 = 25{,}775.15$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9111,7 +9119,7 @@ $$F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9237,7 +9245,7 @@ So the statement is True.`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9283,7 +9291,7 @@ The ratio of today's deferred value to the year-4 perpetuity value is the four-y
 
 $$\\frac{PV_0}{V} = \\frac{1}{(1.06)^4} \\approx 0.7921$$
 
-Compare the computed value with the claim ($0.8321$. We have $0.7921 \\ne 0.8321$). The two sides do not agree.
+Compare the computed value with the claim ($0.8321$). We have $0.7921 \\ne 0.8321$. The two sides do not agree.
 
 So the statement is False.`,
     ],
@@ -9325,7 +9333,7 @@ $$PV_0 = \\frac{166{,}666.67}{(1.06)^4} = \\frac{166{,}666.67}{1.262477} = 132{,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9416,7 +9424,7 @@ $$P = \\frac{4.25}{0.07} = 60.714286 \\approx 60.71$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9513,7 +9521,7 @@ $$50{,}000 + 333{,}333.33 = 383{,}333.33$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9621,7 +9629,7 @@ So the statement is True.`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9778,7 +9786,7 @@ $$P_2 = \\frac{14{,}000}{0.10-0.04} = \\frac{14{,}000}{0.06} = 233{,}333.33$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -9978,7 +9986,7 @@ $$F_9 = \\frac{8{,}333.33}{0.0625}\\left[(1.0625)^9-1\\right] = 96{,}757.60$$`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10124,7 +10132,7 @@ So the statement is True.`,
 Present value discounts the future cash amount by the recovered accumulation factor:
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10147,7 +10155,7 @@ So the statement is False.`,
 Discount the future cash amount with the recovered factor.
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10170,7 +10178,7 @@ So the statement is True.`,
 Write the present-value formula before substituting.
 
 $$
-PV = \frac{FV}{(1+i)^{nt}}
+PV = \\frac{FV}{(1+i)^{nt}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10250,7 +10258,7 @@ A recovered unknown is checked by reading it from the shared solve and comparing
 The periodic rate splits the nominal annual quote by the compounding frequency:
 
 $$
-i = \frac{r}{n}
+i = \\frac{r}{n}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10273,7 +10281,7 @@ So the statement is True.`,
 The annuity payment uses the recovered rate and term from the overview:
 
 $$
-a = \frac{rK}{1-(1+r)^{-n}}
+a = \\frac{rK}{1-(1+r)^{-n}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10295,7 +10303,7 @@ So the statement is True.`,
 
 Interest in year 1 is the opening balance times the periodic rate, independent of the instalment size:
 
-$$I_1 = 60{,}000 \times 0.12 = 7{,}200$$
+$$I_1 = 60{,}000 \\times 0.12 = 7{,}200$$
 
 The overview recovered that same first-year interest figure. The claim is \$7,200.00.
 
@@ -10390,7 +10398,7 @@ So the statement is True.`,
 The annuity payment uses the recovered rate and term from the overview:
 
 $$
-a = \frac{rK}{1-(1+r)^{-n}}
+a = \\frac{rK}{1-(1+r)^{-n}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10482,7 +10490,7 @@ $$a \\approx 597.24$$`,
 The annuity payment uses the recovered rate and term from the overview:
 
 $$
-a = \frac{rK}{1-(1+r)^{-n}}
+a = \\frac{rK}{1-(1+r)^{-n}}
 $$
 
 Substituting the stem inputs recovered in the overview gives
@@ -10511,7 +10519,7 @@ $$
 Substitute $r = 0.10$ and $K = 45{,}000$:
 
 $$
-I_1 = 0.10 \times 45{,}000
+I_1 = 0.10 \\times 45{,}000
 $$
 
 $$
@@ -10896,11 +10904,11 @@ $$
 Substitute $D = 250$ and $r = 0.08$:
 
 $$
-a = 250(4 + 1.5 \times 0.08)
+a = 250(4 + 1.5 \\times 0.08)
 $$
 
 $$
-a = 250 \times 4.12 = 1{,}030
+a = 250 \\times 4.12 = 1{,}030
 $$
 
 The claim is \$1,100.00. We have \$1,030, so the figures do not agree.
@@ -10911,13 +10919,13 @@ So the statement is False.`,
 Once the year-end equivalent $a = 1{,}030$ is known, its four-year future value is the ordinary annuity accumulation:
 
 $$
-F_4 = \frac{a}{r}\bigl[(1+r)^{4}-1\bigr]
+F_4 = \\frac{a}{r}\bigl[(1+r)^{4}-1\bigr]
 $$
 
 Substitute $a = 1{,}030$ and $r = 0.08$:
 
 $$
-F_4 = \frac{1{,}030}{0.08}\bigl[(1.08)^{4}-1\bigr]
+F_4 = \\frac{1{,}030}{0.08}\bigl[(1.08)^{4}-1\bigr]
 $$
 
 $$
@@ -10941,7 +10949,7 @@ So the statement is False.`,
 Treating the four deposits as a flat \$1,000 year-end deposit replaces $a$ by $1{,}000$ in the same annuity formula:
 
 $$
-F_4^{\mathrm{simp}} = \frac{1{,}000}{0.08}\bigl[(1.08)^{4}-1\bigr]
+F_4^{\mathrm{simp}} = \\frac{1{,}000}{0.08}\bigl[(1.08)^{4}-1\bigr]
 $$
 
 $$

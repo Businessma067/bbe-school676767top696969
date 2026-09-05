@@ -3705,7 +3705,7 @@ Keep the stated domain in force while you evaluate the model.
 
 From the shared solve, the feed level where the licence binds:
 
-$$4 x^{\frac{4}{3}}=1024$$
+$$4 x^{\\frac{4}{3}}=1024$$
 
 $$x=64$$
 
@@ -3903,7 +3903,7 @@ The first meeting sits above $6$, matching the claim.
 So the statement is True.`,
     `**E.** → True
 
-The overview recovered $S(x)=8 x^{\frac{1}{2}}$ and $T(x)=x^{\frac{3}{2}}$. At load $16$:
+The overview recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:
 
 $$S(16)=32, \qquad T(16)=64$$
 

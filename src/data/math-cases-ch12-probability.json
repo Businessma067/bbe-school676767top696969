@@ -1366,7 +1366,7 @@
     {
       "id": "math-12-44",
       "case_id": "MATH 12.44",
-      "title": "A market research firm found that 55% of surveyed households subscribe to",
+      "title": "A market research firm found that 55% of surveyed households subscribe to Streaming Service X, and 40% subscribe to Streaming Service Y",
       "context": "A market research firm found that 55% of surveyed households subscribe to Streaming Service X, and 40% subscribe to Streaming Service Y. 25% of households subscribe to both. One household is selected at random from the survey.",
       "statements": [
         "The probability that the household subscribes to at least one service is above 72%.",
@@ -2767,7 +2767,7 @@
     {
       "id": "math-12-89",
       "case_id": "MATH 12.89",
-      "title": "An airline audited baggage handling across three flight categories over the",
+      "title": "An airline audited baggage handling across three flight categories over the past year",
       "context": "An airline audited baggage handling across three flight categories over the past year. Domestic flights carried 40,000 checked bags, and 800 of those were mishandled. International flights carried 15,000 checked bags, with 450 mishandled. Connecting flights carried 5,000 checked bags, with 250 mishandled. Auditors randomly select one checked bag from the full dataset.",
       "statements": [
         "The probability that the bag was mishandled is greater than 2.4%.",
@@ -2953,7 +2953,7 @@
     {
       "id": "math-12-95",
       "case_id": "MATH 12.95",
-      "title": "A mobile carrier sampled call quality across its two network types over a",
+      "title": "A mobile carrier sampled call quality across its two network types over a single day",
       "context": "A mobile carrier sampled call quality across its two network types over a single day. Of 60,000 calls placed on its 4G network, 900 were dropped. Of 40,000 calls placed on its 5G network, 200 were dropped. One call is selected at random from the full sample.",
       "statements": [
         "The probability that the call was dropped is greater than 1.05%.",
@@ -3452,7 +3452,7 @@
     {
       "id": "math-12-111",
       "case_id": "MATH 12.111",
-      "title": "A hospital tracked 30-day readmissions across three discharge units over the",
+      "title": "A hospital tracked 30-day readmissions across three discharge units over the past year",
       "context": "A hospital tracked 30-day readmissions across three discharge units over the past year. The ICU discharged 4,000 patients, of whom 640 were readmitted within 30 days. The General Ward discharged 12,000 patients, of whom 960 were readmitted. The Outpatient unit discharged 8,000 patients, of whom 240 were readmitted. One discharge record is pulled at random.",
       "statements": [
         "The probability that the patient was readmitted is greater than 8%.",
@@ -3897,7 +3897,7 @@
       "id": "math-12-125",
       "case_id": "MATH 12.125",
       "title": "A Charity Raffle",
-      "context": "A charity raffle ticket pays out X dollars: $0 with probability 0.70, $10 with probability 0.25, and \\$50 with probability 0.05.",
+      "context": "A charity raffle ticket pays out X dollars: \\$0 with probability 0.70, \\$10 with probability 0.25, and \\$50 with probability 0.05.",
       "statements": [
         "The mean μ equals \\$5.",
         "The variance σ² equals 125.",
@@ -3996,7 +3996,7 @@
       "id": "math-12-128",
       "case_id": "MATH 12.128",
       "title": "A Lottery Ticket",
-      "context": "A lottery ticket pays X dollars: $0 with probability 0.94, $5 with probability 0.05, and \\$1000 with probability 0.01.",
+      "context": "A lottery ticket pays X dollars: \\$0 with probability 0.94, \\$5 with probability 0.05, and \\$1000 with probability 0.01.",
       "statements": [
         "The mean μ equals \\$10.",
         "The variance σ² is approximately 9,896.19.",
@@ -4029,7 +4029,7 @@
       "id": "math-12-129",
       "case_id": "MATH 12.129",
       "title": "A Game Show Wheel",
-      "context": "A contestant spins a wheel and wins X dollars, where X = $0 with probability 0.50, X = $100 with probability 0.35, and X = \\$500 with probability 0.15.",
+      "context": "A contestant spins a wheel and wins X dollars, where X = \\$0 with probability 0.50, X = \\$100 with probability 0.35, and X = \\$500 with probability 0.15.",
       "statements": [
         "The expected value of X equals 110.",
         "The variance of X equals 28,900.",
@@ -4095,7 +4095,7 @@
       "id": "math-12-131",
       "case_id": "MATH 12.131",
       "title": "A Vending Machine",
-      "context": "A vending machine sells snacks at three prices. The price X paid by the next customer is $1 with probability 0.20, $2 with probability 0.50, and \\$3 with probability 0.30.",
+      "context": "A vending machine sells snacks at three prices. The price X paid by the next customer is \\$1 with probability 0.20, \\$2 with probability 0.50, and \\$3 with probability 0.30.",
       "statements": [
         "The expected value of X equals \\$2.10.",
         "The variance of X equals 0.49.",
@@ -4194,7 +4194,7 @@
       "id": "math-12-134",
       "case_id": "MATH 12.134",
       "title": "An Insurance Policy",
-      "context": "An insurance policy pays out a claim of X dollars: $0 with probability 0.90, $200 with probability 0.08, and \\$5,000 with probability 0.02.",
+      "context": "An insurance policy pays out a claim of X dollars: \\$0 with probability 0.90, \\$200 with probability 0.08, and \\$5,000 with probability 0.02.",
       "statements": [
         "The expected value of X equals \\$100.",
         "The variance of X is approximately 489,744.",
@@ -4227,7 +4227,7 @@
       "id": "math-12-135",
       "case_id": "MATH 12.135",
       "title": "A Charity Raffle",
-      "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability 0.60, $50 with probability 0.30, and \\$250 with probability 0.10.",
+      "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability 0.60, \\$50 with probability 0.30, and \\$250 with probability 0.10.",
       "statements": [
         "The expected value of X equals \\$40.",
         "The variance of X equals 5,400.",
@@ -4392,7 +4392,7 @@
       "id": "math-12-140",
       "case_id": "MATH 12.140",
       "title": "An Extended Warranty",
-      "context": "An extended warranty pays out a claim of X dollars on the next filed claim: $0 with probability 0.85, $150 with probability 0.12, and \\$4,000 with probability 0.03.",
+      "context": "An extended warranty pays out a claim of X dollars on the next filed claim: \\$0 with probability 0.85, \\$150 with probability 0.12, and \\$4,000 with probability 0.03.",
       "statements": [
         "The expected value of X equals \\$150.",
         "The variance of X is approximately 463,656.",
@@ -4518,7 +4518,7 @@
       "id": "math-12-144",
       "case_id": "MATH 12.144",
       "title": "The Vending Machine Puzzle",
-      "context": "A vending machine dispenses a prize X worth $0, $5, or $10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning $0 is less likely than winning \\$10.",
+      "context": "A vending machine dispenses a prize X worth \\$0, \\$5, or \\$10, with X equals 0 with probability p, X equals 5 with probability 0.4, and X equals 10 with probability 0.6 minus p, for some unknown p. It is given that the variance of X equals 10, and separately that winning \\$0 is less likely than winning \\$10.",
       "statements": [
         "The unknown value p equals 0.4.",
         "The quadratic condition that the variance of X equals 10 has a second mathematically valid root, p ≈ 0.5236, which is rejected here only because it would make the probability that X equals 0 greater than the probability that X equals 10.",
@@ -4613,7 +4613,7 @@
       "id": "math-12-147",
       "case_id": "MATH 12.147",
       "title": "A Charity Raffle (Unknown Probabilities)",
-      "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are $0 with probability p, $50 with probability q, and $250 with probability 0.10. It is known that the expected value of X equals $40.",
+      "context": "A charity raffle sells tickets. The winnings X for the next ticket drawn are \\$0 with probability p, \\$50 with probability q, and \\$250 with probability 0.10. It is known that the expected value of X equals \\$40.",
       "statements": [
         "The unknown value p equals 0.55.",
         "The variance of X equals 5,400.",
@@ -4776,7 +4776,7 @@
       "id": "math-12-152",
       "case_id": "MATH 12.152",
       "title": "An Extended Warranty (Two Independent Policies)",
-      "context": "An extended warranty pays out a claim of X dollars on a single policy: $0 with probability 0.85, $150 with probability 0.12, and \\$4,000 with probability 0.03. An insurer holds two such policies, written on unrelated customers so that the claims are independent. Let Y = X₁ + X₂ be the insurer's total payout across both policies.",
+      "context": "An extended warranty pays out a claim of X dollars on a single policy: \\$0 with probability 0.85, \\$150 with probability 0.12, and \\$4,000 with probability 0.03. An insurer holds two such policies, written on unrelated customers so that the claims are independent. Let Y = X₁ + X₂ be the insurer's total payout across both policies.",
       "statements": [
         "The expected value of Y equals \\$276.",
         "The variance of Y equals 927,312.",

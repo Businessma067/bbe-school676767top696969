@@ -728,7 +728,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 22,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nDifferentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.0004t^{3}-0.036t^{2}+0.9t$$\n\nDifferentiate $v$ for acceleration. Interval speeds of the table are $\\Delta s/8$.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1228,7 +1228,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 37,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=0.00001t^{3}-0.003t^{2}+0.24t$$\n\nDifferentiate $v$; convert the second rider's $900/90$ into km/h.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1695,7 +1695,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 51,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\nDifferentiate the cubic speed for acceleration; interval speeds are $\\Delta s/10$.\n\nOn equally spaced samples, a frozen difference layer diagnoses the degree.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$v(t)=\\frac{1}{2500}t^{3}-\\frac{9}{100}t^{2}+\\frac{9}{10}t$$\n\nDifferentiate the cubic speed for acceleration; interval speeds are $\\Delta s/10$.\n\nOn equally spaced samples, a frozen difference layer diagnoses the degree.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied",
@@ -1863,7 +1863,7 @@
       ],
       "difficulty_level": "3/5",
       "sort_order": 56,
-      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nEvaluate $h$ and $h'$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The model is a named polynomial of time, quantity, or cost; later claims are substitutions, derivatives, or tabled increments.\n\n$$h(t)=\\frac{1}{500}t^{3}-\\frac{9}{100}t^{2}+t$$\n\nEvaluate $h$ and $h'$ at the named times.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "applied"
@@ -2330,7 +2330,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 70,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2663,7 +2663,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 80,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -2896,7 +2896,7 @@
       ],
       "difficulty_level": "4/5",
       "sort_order": 87,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 6 x^{2} + 5=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 5 x^{2} + 4$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 6 x^{2} + 5=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3466,7 +3466,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 104,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 7 x^{2} + 6=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{4} - 6 x^{2} + 5$$\n\nMeetings solve $p-\\ell=0$, i.e. $x^{4} - 7 x^{2} + 6=0$.\n\nA value is obtained by substituting the named number and collecting powers.\n\nParity is a coefficient reading: only odd powers make an odd map, only even powers make an even map.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3631,7 +3631,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 109,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 2 x + 3$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3730,7 +3730,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 112,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} + x + 1$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"
@@ -3829,7 +3829,7 @@
       ],
       "difficulty_level": "5/5",
       "sort_order": 115,
-      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
+      "solution_overview": "The stem names the polynomial that every later computation refers to.\n\n$$p(x)=x^{2} - 3 x + 5$$\n\n$r=p^{2}-p=p(p-1)$.\n\nDegree and the leading coefficient are read from the highest written power whose coefficient is not zero.\n\nA value is obtained by substituting the named number and collecting powers.",
       "subsection": "9",
       "placeholder": false,
       "stem_kind": "formula"

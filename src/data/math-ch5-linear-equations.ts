@@ -71,9 +71,7 @@ This is not the overview's equalizing transfer. North starts at the recovered $x
 
 $$360 + 30 = 390$$
 
-Compare the computed value with the claim ($390$.
-
-The computed figure matches the claim). The two sides agree.
+Compare the computed value with the claim ($390$). The two sides agree.
 
 So the statement is True.`,
       `**D.** → False

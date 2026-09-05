@@ -24,7 +24,7 @@
         "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000$$.\n\nSo the statement is False.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(3)^{t/4}=e^{(t/4)\\ln(3)}=e^{kt}$$\n\nwith $k=\\ln(3)/4\\approx0.274653$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
         "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3$$.\n\nSo the statement is False.",
-        "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so.\n\nSo the statement is False.",
+        "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim fails.\n\nSo the statement is False.",
         "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$.\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
@@ -90,7 +90,7 @@
         "**A.** → False\n\n$$N(12)=500\\cdot(3)^{3}=13500$$\n\n$$13500 \\le 40000$$.\n\nSo the statement is False.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(3)^{t/4}=e^{(t/4)\\ln(3)}=e^{kt}$$\n\nwith $k=\\ln(3)/4\\approx0.274653$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
         "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{12}{4}=3$$\n\n$$3 \\le 3$$.\n\nSo the statement is False.",
-        "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so.\n\nSo the statement is False.",
+        "**D.** → False\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim fails.\n\nSo the statement is False.",
         "**E.** → False\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$.\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
@@ -153,7 +153,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=10\\,e^{0.016\\cdot24}$$\n\n$$=10\\,e^{0.384}$$\n\n$$\\approx14.6815$$\n\nCompare with.\n\nSo the statement is False.",
+        "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=10\\,e^{0.016\\cdot24}$$\n\n$$=10\\,e^{0.384}$$\n\n$$\\approx14.6815$$\n\nCompare with the claim.\n\nSo the statement is False.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.016=1.016$$\n\n$$e^{0.016}\\approx1.016129$$\n\nSince $1.016\\neq e^{0.016}$, the discrete replacement $(1+0.016)^{t}$ is not identical to $e^{0.016t}$. At the concrete horizon $t=24$ the values already differ (14.6369 versus 14.6815).\n\nSo the statement is False.",
         "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.016}-1\\approx0.016129$$\n\n$$1+0.016=1.016$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.016$.\n\n$$1.016129 > 1.016$$.\n\nSo the statement is True.",
         "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.016}$$\n\n$$t\\approx43.3217$$\n\nCompare with $40$:\n\n$$43.3217 \\ge 40$$.\n\nSo the statement is False.",
@@ -257,7 +257,7 @@
         "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000$$.\n\nSo the statement is False.",
         "**B.** → False\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/3}=e^{(t/3)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/3\\approx0.231049$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is False.",
         "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so.\n\nSo the statement is True.",
+        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
         "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11$$.\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=11$, after $3.6667$ growth periods, $N\\approx12699.2084$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
@@ -421,7 +421,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with.\n\nSo the statement is False.",
+        "**A.** → False\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with the claim.\n\nSo the statement is False.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.024=1.024$$\n\n$$e^{0.024}\\approx1.02429$$\n\nSince $1.024\\neq e^{0.024}$, the discrete replacement $(1+0.024)^{t}$ is not identical to $e^{0.024t}$. At the concrete horizon $t=24$ the values already differ (26.5027 versus 26.6836).\n\nSo the statement is False.",
         "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024$$.\n\nSo the statement is True.",
         "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40$$.\n\nSo the statement is True.",
@@ -623,7 +623,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(31)=12\\,e^{0.017\\cdot31}$$\n\n$$=12\\,e^{0.527}$$\n\n$$\\approx20.3261$$\n\nCompare with.\n\nSo the statement is True.",
+        "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(31)=12\\,e^{0.017\\cdot31}$$\n\n$$=12\\,e^{0.527}$$\n\n$$\\approx20.3261$$\n\nCompare with the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.017=1.017$$\n\n$$e^{0.017}\\approx1.017145$$\n\nSince $1.017\\neq e^{0.017}$, the discrete replacement $(1+0.017)^{t}$ is not identical to $e^{0.017t}$. At the concrete horizon $t=31$ the values already differ (20.2363 versus 20.3261).\n\nSo the statement is False.",
         "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.017}-1\\approx0.017145$$\n\n$$1+0.017=1.017$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.017$.\n\n$$1.017145 > 1.017$$.\n\nSo the statement is True.",
         "**D.** → False\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.017}$$\n\n$$t\\approx40.7734$$\n\nCompare with $40$:\n\n$$40.7734 \\ge 40$$.\n\nSo the statement is False.",
@@ -824,7 +824,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with.\n\nSo the statement is True.",
+        "**A.** → True\n\nSubstitute the recovered force into the continuous level formula.\n\n$$f(24)=15\\,e^{0.024\\cdot24}$$\n\n$$=15\\,e^{0.576}$$\n\n$$\\approx26.6836$$\n\nCompare with the claim.\n\nSo the statement is True.",
         "**B.** → False\n\nTwo closed forms agree for all $t$ only when their one-year multipliers match.\n\n$$1+0.024=1.024$$\n\n$$e^{0.024}\\approx1.02429$$\n\nSince $1.024\\neq e^{0.024}$, the discrete replacement $(1+0.024)^{t}$ is not identical to $e^{0.024t}$. At the concrete horizon $t=24$ the values already differ (26.5027 versus 26.6836).\n\nSo the statement is False.",
         "**C.** → True\n\nUnder continuous force $k$, the exact one-year multiplier is $e^{k}$, not $1+k$.\n\n$$e^{0.024}-1\\approx0.02429$$\n\n$$1+0.024=1.024$$\n\nFor $k>0$ the inequality $e^{k}>1+k$ holds, so the continuous year-over-year growth factor exceeds $1+0.024$.\n\n$$1.02429 > 1.024$$.\n\nSo the statement is True.",
         "**D.** → True\n\nDoubling means $f(t)=2f(0)$, which forces $e^{kt}=2$.\n\n$$t=\\frac{\\ln 2}{0.024}$$\n\n$$t\\approx28.8811$$\n\nCompare with $40$:\n\n$$28.8811 < 40$$.\n\nSo the statement is True.",
@@ -962,7 +962,7 @@
         "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000$$.\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/5}=e^{(t/5)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/5\\approx0.138629$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
         "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so.\n\nSo the statement is True.",
+        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
         "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20$$.\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=2000\\cdot(2)^{t/5}$. Equivalent continuous force $k=\\ln(2)/5\\approx0.138629$. At $t=20$, after $4$ growth periods, $N\\approx32000$. Time to reach $30000$ is $t=\\ln(30000/2000)/k\\approx19.5345$.",
@@ -1096,7 +1096,7 @@
         "**A.** → True\n\n$$N(20)=2000\\cdot(2)^{4}=32000$$\n\n$$32000 > 30000$$.\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/5}=e^{(t/5)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/5\\approx0.138629$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
         "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{20}{5}=4$$\n\n$$4 > 3$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so.\n\nSo the statement is True.",
+        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
         "**E.** → True\n\nSolve $N(t)=30000$:\n\n$$t=\\frac{\\ln(30000/2000)}{k}\\approx19.5345$$\n\n$$19.5345 < 20$$.\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=2000\\cdot(2)^{t/5}$. Equivalent continuous force $k=\\ln(2)/5\\approx0.138629$. At $t=20$, after $4$ growth periods, $N\\approx32000$. Time to reach $30000$ is $t=\\ln(30000/2000)/k\\approx19.5345$.",
@@ -1163,7 +1163,7 @@
         "**A.** → True\n\n$$N(17)=1500\\cdot(2)^{4.25}=28540.9708$$\n\n$$28540.9708 > 25000$$.\n\nSo the statement is True.",
         "**B.** → True\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/4}=e^{(t/4)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/4\\approx0.173287$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is True.",
         "**C.** → True\n\n$$\\frac{t}{\\text{period}}=\\frac{17}{4}=4.25$$\n\n$$4.25 > 3$$.\n\nSo the statement is True.",
-        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so.\n\nSo the statement is True.",
+        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
         "**E.** → True\n\nSolve $N(t)=25000$:\n\n$$t=\\frac{\\ln(25000/1500)}{k}\\approx16.2356$$\n\n$$16.2356 < 17$$.\n\nSo the statement is True."
       ],
       "solution_overview": "$N(t)=1500\\cdot(2)^{t/4}$. Equivalent continuous force $k=\\ln(2)/4\\approx0.173287$. At $t=17$, after $4.25$ growth periods, $N\\approx28540.9708$. Time to reach $25000$ is $t=\\ln(25000/1500)/k\\approx16.2356$.",
@@ -1228,7 +1228,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{37}{13}=2.8462$$\n\n$$m(37)=48\\cdot\\left(\\tfrac12\\right)^{2.8462}=6.6752$$\n\n$$6.6752 < 15$$.\n\nSo the statement is True.",
         "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{13}\\approx0.053319.$$.\n\nSo the statement is True.",
-        "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=2.8462$$\n\nand $m_0/8=6$. The actual remainder is $6.6752$, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=2.8462$$\n\nand $m_0/8=6$. The actual remainder is $6.6752$, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\nFrom the overview, $m(37)=6.6752$. Compare with $5$:\n\n$$6.6752 > 5$$.\n\nSo the statement is True.",
         "**E.** → False\n\nSolve $m(t)=5$ under the recovered $k$.\n\n$$48\\,e^{-kt}=5$$\n\n$$t=\\frac{\\ln(48/5)}{k}\\approx42.4194$$\n\n$$42.4194 \\ge 37$$.\n\nSo the statement is False."
       ],
@@ -1295,7 +1295,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{18}{6}=3$$\n\n$$m(18)=64\\cdot\\left(\\tfrac12\\right)^{3}=8$$\n\n$$8 < 15$$.\n\nSo the statement is True.",
         "**B.** → True\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{6}\\approx0.115525.$$.\n\nSo the statement is True.",
-        "**C.** → True\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=8$. The actual remainder is $8$, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=8$. The actual remainder is $8$, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\nFrom the overview, $m(18)=8$. Compare with $6$:\n\n$$8 > 6$$.\n\nSo the statement is True.",
         "**E.** → False\n\nSolve $m(t)=6$ under the recovered $k$.\n\n$$64\\,e^{-kt}=6$$\n\n$$t=\\frac{\\ln(64/6)}{k}\\approx20.4902$$\n\n$$20.4902 \\ge 18$$.\n\nSo the statement is False."
       ],
@@ -1328,7 +1328,7 @@
       "tactical_explanations": [
         "**A.** → False\n\nCount half-lives and apply the geometric decay formula.\n\n$$\\frac{30}{10}=3$$\n\n$$m(30)=100\\cdot\\left(\\tfrac12\\right)^{3}=12.5$$\n\n$$12.5 < 15$$.\n\nSo the statement is False.",
         "**B.** → False\n\nBy definition of half-life under $m(t)=m_0 e^{-kt}$,\n\n$$m(T_{1/2})=\\tfrac12 m_0\\implies e^{-k T_{1/2}}=\\tfrac12$$\n\n$$k=\\frac{\\ln 2}{T_{1/2}}=\\frac{\\ln 2}{10}\\approx0.069315.$$.\n\nSo the statement is False.",
-        "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=12.5$. The actual remainder is $12.5$, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nOne eighth remains after exactly three half-lives. Here\n\n$$\\frac{t}{T_{1/2}}=3$$\n\nand $m_0/8=12.5$. The actual remainder is $12.5$, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\nFrom the overview, $m(30)=12.5$. Compare with $10$:\n\n$$12.5 > 10$$.\n\nSo the statement is True.",
         "**E.** → False\n\nSolve $m(t)=10$ under the recovered $k$.\n\n$$100\\,e^{-kt}=10$$\n\n$$t=\\frac{\\ln(100/10)}{k}\\approx33.2193$$\n\n$$33.2193 \\ge 30$$.\n\nSo the statement is False."
       ],
@@ -1464,7 +1464,7 @@
         "**A.** → False\n\n$$N(11)=1000\\cdot(2)^{3.6667}=12699.2084$$\n\n$$12699.2084 \\le 20000$$.\n\nSo the statement is False.",
         "**B.** → False\n\nRewrite the period model as an exponential:\n\n$$(2)^{t/3}=e^{(t/3)\\ln(2)}=e^{kt}$$\n\nwith $k=\\ln(2)/3\\approx0.231049$. Thus the continuous force reproduces $N(t)$ identically.\n\nSo the statement is False.",
         "**C.** → False\n\n$$\\frac{t}{\\text{period}}=\\frac{11}{3}=3.6667$$\n\n$$3.6667 > 3$$.\n\nSo the statement is False.",
-        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so.\n\nSo the statement is True.",
+        "**D.** → True\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim holds.\n\nSo the statement is True.",
         "**E.** → False\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 11$$.\n\nSo the statement is False."
       ],
       "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=11$, after $3.6667$ growth periods, $N\\approx12699.2084$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
@@ -1495,7 +1495,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so.\n\nSo the statement is False.",
+        "**A.** → False\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so the claim fails.\n\nSo the statement is False.",
         "**B.** → False\n\nTake $\\log_{5}$ of both sides of $125^{x}=5^{3}$:\n\n$$x\\log_{5} a=3$$\n\n$$x=\\frac{3}{\\log_{5} a}.$$\n\nWith $\\log_{5} a=3$ this is $x=1$.\n\nSo the statement is False.",
         "**C.** → False\n\n$$x=1$$\n\n$$1 < 3$$.\n\nSo the statement is False.",
         "**D.** → True\n\n$$a^{x}=125^{1}\\approx125$$\n\n$$b^{3}=5^{3}=125$$\n\nThe sides match within numerical tolerance.\n\nSo the statement is True.",
@@ -1631,7 +1631,7 @@
       "tactical_explanations": [
         "**A.** → False\n\n$$f(2)=\\log_{2} 2=\\frac{\\ln 2}{\\ln(2)}\\approx1$$\n\n$$1 \\ge 1$$\n\n(Equivalently, $f(2)<1$ iff the base exceeds $2$.).\n\nSo the statement is False.",
         "**B.** → False\n\nBy definition $\\log_{2} 1=0$, so the graph meets $y=0$ at $x=1$. That intercept is visible on the figure and required by the logarithm identity.\n\nSo the statement is False.",
-        "**C.** → False\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\n$$\\log_{2}(2)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nSo the statement is True.",
         "**E.** → False\n\n$$f(4)=\\log_{2}(2^{2})=2\\log_{2} 2=2f(2).$$\n\nNumerically $f(4)\\approx2$ and $2f(2)\\approx2$.\n\nSo the statement is False."
       ],
@@ -1963,7 +1963,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{2}(2^{3})=3.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 2^{\\log_{2}(8)}=8$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe left side equals $3$, while $2^{3}=8$. Those are equal only in special cases; here $3\\neq8$, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe left side equals $3$, while $2^{3}=8$. Those are equal only in special cases; here $3\\neq8$, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\nSame identity as statement A, evaluated at $x=3$:\n\n$$\\log_{2}(2^{3})=3.$$.\n\nSo the statement is True.",
         "**E.** → False\n\n$$8 \\le 10$$.\n\nSo the statement is False."
       ],
@@ -2128,7 +2128,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ e^{\\log_{e}(4.4817)}=4.4817$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$.\n\nSo the statement is True.",
         "**E.** → False\n\n$$4.481689 \\le 10$$.\n\nSo the statement is False."
       ],
@@ -2394,7 +2394,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ e^{\\log_{e}(4.4817)}=4.4817$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
-        "**C.** → True\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe left side equals $1.5$, while $e^{1.5}=4.481689$. Those are equal only in special cases; here $1.5\\neq4.481689$, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$.\n\nSo the statement is True.",
         "**E.** → False\n\n$$4.481689 \\le 10$$.\n\nSo the statement is False."
       ],
@@ -2428,7 +2428,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{10}(10^{2})=2.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 10^{\\log_{10}(100)}=100$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
-        "**C.** → False\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2.$$.\n\nSo the statement is True.",
         "**E.** → True\n\n$$100 > 10$$.\n\nSo the statement is True."
       ],
@@ -2693,7 +2693,7 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$f(2)=\\log_{e} 2=\\frac{\\ln 2}{\\ln(e)}\\approx0.6931$$\n\n$$0.6931 < 1$$\n\n(Equivalently, $f(2)<1$ iff the base exceeds $2$.).\n\nSo the statement is True.",
         "**B.** → True\n\nBy definition $\\log_{e} 1=0$, so the graph meets $y=0$ at $x=1$. That intercept is visible on the figure and required by the logarithm identity.\n\nSo the statement is True.",
-        "**C.** → True\n\nFor base $e>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{e} x_1<\\log_{e} x_2$. The base exceeds 1, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor base $e>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{e} x_1<\\log_{e} x_2$. The base exceeds 1, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\n$$\\log_{e}(e)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nSo the statement is True.",
         "**E.** → True\n\n$$f(4)=\\log_{e}(2^{2})=2\\log_{e} 2=2f(2).$$\n\nNumerically $f(4)\\approx1.3863$ and $2f(2)\\approx1.3863$.\n\nSo the statement is True."
       ],
@@ -2726,7 +2726,7 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$f(2)=\\log_{2} 2=\\frac{\\ln 2}{\\ln(2)}\\approx1$$\n\n$$1 \\ge 1$$\n\n(Equivalently, $f(2)<1$ iff the base exceeds $2$.).\n\nSo the statement is True.",
         "**B.** → True\n\nBy definition $\\log_{2} 1=0$, so the graph meets $y=0$ at $x=1$. That intercept is visible on the figure and required by the logarithm identity.\n\nSo the statement is True.",
-        "**C.** → True\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\n$$\\log_{2}(2)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nSo the statement is True.",
         "**E.** → True\n\n$$f(4)=\\log_{2}(2^{2})=2\\log_{2} 2=2f(2).$$\n\nNumerically $f(4)\\approx2$ and $2f(2)\\approx2$.\n\nSo the statement is True."
       ],
@@ -2760,7 +2760,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply the inverse identity directly:\n\n$$\\log_{10}(10^{2})=2.$$\n\nNo extra arithmetic is required beyond recognising the inverse pair.\n\nSo the statement is True.",
         "**B.** → True\n\n$$ 10^{\\log_{10}(100)}=100$$\n\nby the inverse relationship on the positive reals.\n\nSo the statement is True.",
-        "**C.** → True\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe left side equals $2$, while $10^{2}=100$. Those are equal only in special cases; here $2\\neq100$, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{10}(10^{2})=2.$$.\n\nSo the statement is True.",
         "**E.** → True\n\n$$100 > 10$$.\n\nSo the statement is True."
       ],
@@ -2794,7 +2794,7 @@
       "tactical_explanations": [
         "**A.** → True\n\n$$f(2)=\\log_{5} 2=\\frac{\\ln 2}{\\ln(5)}\\approx0.4307$$\n\n$$0.4307 < 1$$\n\n(Equivalently, $f(2)<1$ iff the base exceeds $2$.).\n\nSo the statement is True.",
         "**B.** → True\n\nBy definition $\\log_{5} 1=0$, so the graph meets $y=0$ at $x=1$. That intercept is visible on the figure and required by the logarithm identity.\n\nSo the statement is True.",
-        "**C.** → True\n\nFor base $5>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{5} x_1<\\log_{5} x_2$. The base exceeds 1, so.\n\nSo the statement is True.",
+        "**C.** → True\n\nFor base $5>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{5} x_1<\\log_{5} x_2$. The base exceeds 1, so the claim holds.\n\nSo the statement is True.",
         "**D.** → True\n\n$$\\log_{5}(5)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nSo the statement is True.",
         "**E.** → True\n\n$$f(4)=\\log_{5}(2^{2})=2\\log_{5} 2=2f(2).$$\n\nNumerically $f(4)\\approx0.8614$ and $2f(2)\\approx0.8614$.\n\nSo the statement is True."
       ],
@@ -2825,7 +2825,7 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so.\n\nSo the statement is True.",
+        "**A.** → True\n\n$$\\log_{5}(125)=\\frac{\\ln 125}{\\ln 5}=3$$\n\nAn integer check: distance to nearest integer is $0$, so the claim holds.\n\nSo the statement is True.",
         "**B.** → True\n\nTake $\\log_{5}$ of both sides of $125^{x}=5^{3}$:\n\n$$x\\log_{5} a=3$$\n\n$$x=\\frac{3}{\\log_{5} a}.$$\n\nWith $\\log_{5} a=3$ this is $x=1$.\n\nSo the statement is True.",
         "**C.** → True\n\n$$x=1$$\n\n$$1 < 3$$.\n\nSo the statement is True.",
         "**D.** → True\n\n$$a^{x}=125^{1}\\approx125$$\n\n$$b^{3}=5^{3}=125$$\n\nThe sides match within numerical tolerance.\n\nSo the statement is True.",
@@ -3094,7 +3094,7 @@
       "tactical_explanations": [
         "**A.** → False\n\n$$f(2)=\\log_{2} 2=\\frac{\\ln 2}{\\ln(2)}\\approx1$$\n\n$$1 \\ge 1$$\n\n(Equivalently, $f(2)<1$ iff the base exceeds $2$.).\n\nSo the statement is False.",
         "**B.** → False\n\nBy definition $\\log_{2} 1=0$, so the graph meets $y=0$ at $x=1$. That intercept is visible on the figure and required by the logarithm identity.\n\nSo the statement is False.",
-        "**C.** → False\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so.\n\nSo the statement is False.",
+        "**C.** → False\n\nFor base $2>1$ the logarithm is strictly increasing: if $0<x_1<x_2$ then $\\log_{2} x_1<\\log_{2} x_2$. The base exceeds 1, so the claim fails.\n\nSo the statement is False.",
         "**D.** → True\n\n$$\\log_{2}(2)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nSo the statement is True.",
         "**E.** → False\n\n$$f(4)=\\log_{2}(2^{2})=2\\log_{2} 2=2f(2).$$\n\nNumerically $f(4)\\approx2$ and $2f(2)\\approx2$.\n\nSo the statement is False."
       ],
