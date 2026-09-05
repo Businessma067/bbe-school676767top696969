@@ -208,6 +208,8 @@ def audit_task(bank: str, t: dict) -> list[str]:
             "overview already recovered",
             "already recovered the quantity",
             "exactly the figure named in the claim",
+            "Matching these figures to the claim",
+            "settles the verdict",
         ):
             if bad in expl:
                 issues.append(f"{bank}/{cid}/{letter}: banned phrase {bad!r}")
