@@ -250,13 +250,32 @@ def patch_ch7_mixed() -> dict:
         for i, built in enumerate(expls):
             verd = "True" if t["answer_key"][i] else "False"
             letter = LETTERS[i]
-            bm = re.match(r"\*\*[A-E]\.\*\* → (True|False)", built.strip())
-            built_verd = bm.group(1) if bm else None
-            if built_verd == verd:
-                e = deepen_thin_letter(scrub(built), ov, i)
-            else:
-                # Live key diverged from the retired builder; keep the live letter.
-                e = deepen_thin_letter(scrub(t["tactical_explanations"][i]), ov, i)
+            # Always keep the live letter text: retired builders can match the
+            # True/False bit while explaining a different claim. Overview alone
+            # comes from the builder (shared recoveries).
+            live = t["tactical_explanations"][i]
+            e = deepen_thin_letter(scrub(live), ov, i)
+            # Drop length-floor recall padding when the letter already has displays.
+            if e.count("$$") >= 2:
+                e2 = re.sub(
+                    r"\n\nRecall the recovered relation:\n\n\$\$[^$]+\$\$", "", e
+                )
+                e2 = re.sub(
+                    r"\n\nCompare that recovered figure with the threshold or value named in the claim\.",
+                    "",
+                    e2,
+                )
+                e2 = re.sub(
+                    r"\n\nWorking from that display,.*?claim\.",
+                    "",
+                    e2,
+                    flags=re.S,
+                )
+                try:
+                    header, _, verd2, head = split_letter(e2)
+                    e = pack(header, verd2, head)
+                except ValueError:
+                    pass
             if not e.startswith(f"**{letter}.** → {verd}"):
                 raise SystemExit(f"{t['case_id']} {letter}: header mismatch after deepen")
             if not re.search(
