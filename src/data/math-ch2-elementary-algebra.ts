@@ -8,6 +8,10 @@
  * Explanations follow MATH 13.18: letter header bound to each statement,
  * a named rule, display algebra of mixed length (short conceptual B, or
  * stepped A/D), then the verdict. Lengths vary inside a task.
+ * Independent claims (no shared stem condition) omit solution_overview;
+ * shared-setup tasks keep one overview, then per-statement bodies.
+ * Full-solution UI also skips independent/catalog overviews so the panel
+ * opens on **A.** → … without tip/context/"A checks" preamble.
  */
 
 import type { MathTask } from "@/data/math-chapters";

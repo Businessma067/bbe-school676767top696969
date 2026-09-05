@@ -5,6 +5,10 @@ a named-rule sentence, display math as its own ``$$...$$`` paragraph,
 and a verdict closer. Lengths vary inside each task — one short
 conceptual block (13.18 B), the rest compact or stepped (13.18 A/D/E).
 No padding prelude; no identical five-block template.
+
+When statements are independent (no shared stem condition),
+``solution_overview`` is cleared so every claim’s reasoning lives only in
+its tactical explanation. Shared-setup stems keep one overview.
 """
 
 from __future__ import annotations
@@ -18,6 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
+from common import statements_are_independent  # noqa: E402
 from s21 import TASKS as T21  # noqa: E402
 from s22 import TASKS as T22  # noqa: E402
 from s23 import TASKS as T23  # noqa: E402
@@ -266,6 +271,8 @@ def bind_explanations(task: dict) -> dict:
         format_ch13_explanation(i, bool(keys[i]), expls[i], styles[i])
         for i in range(len(keys))
     ]
+    if statements_are_independent(task.get("context", "")):
+        task["solution_overview"] = ""
     return task
 
 
@@ -328,6 +335,12 @@ def lint(tasks: list[dict]) -> list[str]:
                 errs.append(f"{t['title']} {letter}: generic prelude")
             if "$$" in expl and not _display_is_isolated(expl):
                 errs.append(f"{t['title']} {letter}: $$ not isolated")
+        if statements_are_independent(t.get("context", "")) and (
+            t.get("solution_overview") or ""
+        ).strip():
+            errs.append(
+                f"{t['title']}: independent statements must not have solution_overview"
+            )
     if len(titles) != len(set(titles)):
         errs.append("duplicate titles")
     return errs
