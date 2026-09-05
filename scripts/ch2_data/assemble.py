@@ -197,7 +197,12 @@ def finish(body: str, verdict: str, style: str) -> str:
     if style == "short" or (style == "match" and already_matches):
         return f"{body}\n\nSo the statement is {verdict}."
     if style == "match":
-        return f"{body}\n\nMatching these figures to the claim, the statement is {verdict}."
+        return (
+            f"{body}\n\n"
+            f"The derived form agrees with the claim, so the statement is {verdict}."
+            if verdict == "True"
+            else f"{body}\n\nThe derived form disagrees with the claim, so the statement is False."
+        )
     if style == "against":
         if verdict == "False":
             return (

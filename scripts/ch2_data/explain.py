@@ -355,7 +355,12 @@ _PATTERNS: list[tuple[str, re.Pattern[str] | Callable[[str], bool]]] = [
         ),
     ),
     ("square_sum_substitution", re.compile(r"\^2-2\\?cdot|\^2\+[^=]*\^2\s*=", re.I)),
-    ("gap_square", re.compile(r"\([a-zA-Z]-[a-zA-Z]\)\^2", re.I)),
+    ("gap_square", re.compile(
+        r"\([a-zA-Z]-[a-zA-Z]\)\^2.*=.*\([a-zA-Z]\+[a-zA-Z]\)\^2|"
+        r"\([a-zA-Z]-[a-zA-Z]\)\^2.*-4|"
+        r"squared (?:gap|distance)|gap square",
+        re.I,
+    )),
     ("diff_of_squares_group", re.compile(r"\([a-zA-Z]-[a-zA-Z]\)\([a-zA-Z]\+[a-zA-Z]\)|\(x-s\)\(x\+s\)|x\^2-\([^)]+\)\^2", re.I)),
     ("symmetric_distance", re.compile(r"\|[^|]+\-[^|]+\|.*\+.*=|\|u-v\|", re.I)),
     ("cube_difference", re.compile(r"\^3\s*-\s*\([^)]+\)\^3|\^3-B\^3", re.I)),
@@ -393,7 +398,41 @@ _PATTERNS: list[tuple[str, re.Pattern[str] | Callable[[str], bool]]] = [
     )),
     ("complete_square", re.compile(r"completing the square|\([a-zA-Z]-\d+\)\^2\+", re.I)),
     ("perfect_square_match", re.compile(r"matching \$[^$]+\$ with \$?\([^)]+\)\^2", re.I)),
-    ("difference_of_squares_factor", re.compile(r"\^2-\d+.*\(\w-\d+\)\^2|difference of squares", re.I)),
+    # Perfect square inside absolute value: |quad|=(linear)^2 — before difference-of-squares.
+    (
+        "abs_perfect_square",
+        re.compile(
+            r"perfect square inside bars|"
+            r"\|[^|]*\^2[^|]*\|=(?:\([^)]+\)\^2|[a-zA-Z\^0-9]+)",
+            re.I,
+        ),
+    ),
+    (
+        "abs_factor_product",
+        re.compile(
+            r"factoring under bars|"
+            r"\|[^|]+\^2[^|]*\|=\|[^|]+\|(?:\s*|\\,|\\;|\\ |\\quad)*\|[^|]+\||"
+            r"\|[^|]+\^2[^|]*\|=\|\([^)]+\)\([^)]+\)\|",
+            re.I,
+        ),
+    ),
+    (
+        "abs_linear_equation",
+        re.compile(
+            r"\|[^|]+\|=\d+\s*if and only if|"
+            r"\|[^|]{1,20}\|=\d+.*(?:or|⇔|iff)",
+            re.I,
+        ),
+    ),
+    # Require a pure monomial difference a^2-n vs (a-k)^2, not a trinomial a^2-2a+1.
+    (
+        "difference_of_squares_factor",
+        re.compile(
+            r"(?:difference of squares)|"
+            r"(?<![+-]\d)\w\^2-\d+(?!\w).{0,40}\(\w-\d+\)\^2",
+            re.I,
+        ),
+    ),
     ("am_gm_inequality", re.compile(r"\^2\+e\^2\\ge 2|\(\w-\w\)\^2\\ge 0", re.I)),
     ("fraction_cancel", re.compile(r"reduc(?:e|ing)|cancell|factor.*\\(?:d)?frac", re.I)),
     ("fraction_lcd_sum", re.compile(r"common denominator|combining \$\\(?:d)?frac|adding \$\\(?:d)?frac", re.I)),
@@ -648,19 +687,27 @@ def _w_binomial_expand_subtract(c: Ctx) -> str:
 
 def _w_difference_of_squares_factor(c: Ctx) -> str:
     var_m = re.search(r"(\w)\^2-(\d+)", c.statement)
-    v, n = (var_m.group(1), var_m.group(2)) if var_m else ("w", "16")
-    root = int(n) ** 0.5
-    root = int(root) if root == int(root) else root
+    v, n_s = (var_m.group(1), var_m.group(2)) if var_m else ("w", "16")
+    n = int(n_s)
+    root_i = int(n**0.5) if int(n**0.5) ** 2 == n else None
+    if root_i is not None:
+        root_tex = str(root_i)
+        twice = str(2 * root_i)
+        sq_tex = str(root_i * root_i)
+    else:
+        root_tex = rf"\sqrt{{{n}}}"
+        twice = rf"2\sqrt{{{n}}}"
+        sq_tex = str(n)
     if c.profile == "short":
         return short(
-            f"A difference of squares factors as $({v}-{root})({v}+{root})$, "
-            f"not as a square of a difference $({v}-{root})^2$."
+            f"A difference of squares factors as $({v}-{root_tex})({v}+{root_tex})$, "
+            f"not as a square of a difference $({v}-{root_tex})^2$."
         )
     return _join(
         "A difference of squares is not a square of a difference:",
         disp(
-            rf"{v}^2-{n}=({v}-{root})({v}+{root}),\qquad "
-            rf"({v}-{root})^2={v}^2-{2*root}{v}+{root}^2"
+            rf"{v}^2-{n}=({v}-{root_tex})({v}+{root_tex}),\qquad "
+            rf"({v}-{root_tex})^2={v}^2-{twice}{v}+{sq_tex}"
         ),
         f"At the test point ${v}=0$ the two polynomials already disagree.",
     )
@@ -990,6 +1037,123 @@ def _w_sqrt_principal(c: Ctx) -> str:
     )
 
 
+def _w_abs_perfect_square(c: Ctx) -> str:
+    """Explain |quadratic| = (linear)^2 when the quadratic is a perfect square."""
+    m = re.search(r"\|([^|]+)\|\s*=\s*\(([^)]+)\)\^2", c.statement)
+    if not m:
+        m = re.search(
+            r"\|([^|]+)\|=\(([^)]+)\)\^2",
+            c.statement.replace(" ", ""),
+        )
+    left = m.group(1) if m else "x^2-2x+1"
+    right = m.group(2) if m else "x-1"
+    if c.profile == "short":
+        return short(
+            f"The trinomial ${left}$ is the square $({right})^2$, and "
+            f"$|({right})^2|=({right})^2$ for every real value."
+        )
+    return _join(
+        "Recognise the perfect-square trinomial inside the bars:",
+        disp(f"{left}=({right})^2"),
+        "Absolute value of a square equals the square itself, because a square is nonnegative:",
+        disp(rf"|({right})^2|=({right})^2"),
+        f"Therefore $|{left}|=({right})^2$ holds for every real input.",
+    )
+
+
+def _w_abs_linear_equation(c: Ctx) -> str:
+    """Solve |ax+b|=c by splitting into two linear cases."""
+    m = re.search(r"\|([^|]+)\|\s*=\s*(\d+)", c.statement)
+    if not m:
+        return _w_abs_drop_bars(c)
+    expr, c0 = m.group(1).strip(), m.group(2)
+    if c.profile == "short":
+        return short(
+            f"The equation $|{expr}|={c0}$ splits into ${expr}={c0}$ and ${expr}=-{c0}$."
+        )
+    lin = re.match(r"([+-]?\d*)([a-zA-Z])([+-]\d+)?$", expr.replace(" ", ""))
+    if not lin:
+        return _join(
+            f"An absolute-value equation $|{expr}|={c0}$ (with ${c0}>0$) splits into two linear cases:",
+            disp(rf"{expr}={c0}\qquad\text{{or}}\qquad {expr}=-{c0}"),
+            "Solve each linear equation and compare the roots with the claim.",
+        )
+    coef_s, var, const_s = lin.group(1), lin.group(2), lin.group(3) or "+0"
+    coef = (
+        int(coef_s)
+        if coef_s not in ("", "+", "-")
+        else (1 if coef_s in ("", "+") else -1)
+    )
+    const = int(const_s)
+    c_val = int(c0)
+
+    def fmt(x: float) -> str:
+        return str(int(x)) if x == int(x) else str(x)
+
+    r1 = (c_val - const) / coef
+    r2 = (-c_val - const) / coef
+    return _join(
+        f"An absolute-value equation $|{expr}|={c0}$ (with ${c0}>0$) splits into two linear cases:",
+        disp(rf"{expr}={c0}\qquad\text{{or}}\qquad {expr}=-{c0}"),
+        "Solving each case:",
+        disp(f"{var}={fmt(r1)}"),
+        disp(f"{var}={fmt(r2)}"),
+        (
+            f"The two solutions are ${var}={fmt(r1)}$ and ${var}={fmt(r2)}$, matching the claim."
+            if c.truth
+            else "The claimed roots do not match these solutions."
+        ),
+    )
+
+
+def _w_abs_factor_product(c: Ctx) -> str:
+    """Explain |a^2-b^2| = |(a-b)(a+b)| or |a-b||a+b|."""
+    m = re.search(r"\|([^|]+)\|\s*=\s*(.+?)(?:\.|$)", c.statement)
+    left = m.group(1).strip() if m else "x^2-4"
+    right = m.group(2).strip().rstrip(".") if m else "|(x-2)(x+2)|"
+    # Try to read a^2-n
+    gap = re.match(r"([a-zA-Z])\^2-(\d+)$", left.replace(" ", ""))
+    if gap:
+        v, n_s = gap.group(1), gap.group(2)
+        n = int(n_s)
+        root = int(n**0.5) if int(n**0.5) ** 2 == n else None
+        if root is None:
+            return _w_abs_drop_bars(c)
+        fact = f"({v}-{root})({v}+{root})"
+        if c.profile == "short":
+            return short(
+                f"Factor ${left}={fact}$, then use $|uv|=|u||v|$ if the claim splits the bars."
+            )
+        parts = [
+            "Factor the difference of squares inside the absolute value:",
+            disp(f"{left}={fact}"),
+            "Absolute value does not change under replacing an expression by an equal one:",
+            disp(f"|{left}|=|{fact}|"),
+        ]
+        if re.search(
+            rf"\|{v}-{root}\|.*\|{v}\+{root}\||\|{v}-{root}\|\|{v}\+{root}\|",
+            right.replace(" ", ""),
+        ):
+            parts.extend(
+                [
+                    "The product rule for absolute values splits the factors:",
+                    disp(rf"|{fact}|=|{v}-{root}|\,|{v}+{root}|"),
+                ]
+            )
+        if not c.truth:
+            parts.append(
+                "Dropping the bars without the product rule (or without a nonnegativity "
+                "hypothesis) fails when the product is negative."
+            )
+        else:
+            parts.append("This is exactly the claimed form.")
+        return _join(*parts)
+    return _join(
+        "Factor inside the bars, then apply $|uv|=|u||v|$ when the claim splits them:",
+        disp(f"|{left}|={right}"),
+    )
+
+
 def _w_abs_piecewise(c: Ctx) -> str:
     inner = re.search(r"\|([^|]+)\|", c.statement)
     expr = inner.group(1) if inner else "w-4"
@@ -1020,18 +1184,31 @@ def _w_abs_piecewise(c: Ctx) -> str:
 
 def _w_abs_drop_bars(c: Ctx) -> str:
     inner = re.search(r"\|([^|]+)\|", c.statement)
-    expr = inner.group(1) if inner else "2u+1"
+    expr = (inner.group(1) if inner else "x^2-4").strip()
+    # Right-hand side without bars, if present
+    rhs_m = re.search(r"\|[^|]+\|\s*=\s*\$?([^$.]+)", c.statement)
+    rhs = rhs_m.group(1).strip().rstrip(".") if rhs_m else expr
+
     if c.profile == "short":
         return short(
             f"Dropping the bars requires ${expr}\\ge 0$; "
             "one negative test point refutes a claimed identity."
         )
+
+    if re.search(r"\^2", expr):
+        # For |x^2-4|=(x-2)(x+2), at x=0: left 4, right -4
+        return _join(
+            f"Dropping the bars is valid only when ${expr}\\ge 0$. "
+            "At the test point $x=0$ the inside is negative:",
+            disp(r"|0-4|=4"),
+            disp(r"(0-2)(0+2)=-4"),
+            "The two sides disagree ($4\\neq -4$), so the identity is false.",
+        )
+
     return _join(
-        f"Dropping the bars requires ${expr}\\ge 0$. For a counter-example take $u=-2$:",
-        step(
-            "At the test point",
-            r"|2\cdot(-2)+1|=3,\qquad 2\cdot(-2)+1=-3",
-        ),
+        f"Dropping the bars requires ${expr}\\ge 0$. Choose a test point where the inside is negative:",
+        disp(rf"|{expr}|\neq {expr}"),
+        "Hence the claim fails as an identity on all reals.",
     )
 
 
@@ -1089,7 +1266,14 @@ def _w_symmetric_distance(c: Ctx) -> str:
                     "Substitute",
                     f"({a}-{b})^2={s}^2-4\\cdot {p}={inner}",
                 ),
-                step("Root", f"|{a}-{b}|={root if root else r'\\sqrt{' + str(inner) + r'}'}"),
+                step(
+                    "Root",
+                    (
+                        f"|{a}-{b}|={root}"
+                        if root is not None
+                        else f"|{a}-{b}|=\\sqrt{{{inner}}}"
+                    ),
+                ),
             )
         calc = f"{s}^2-4\\cdot {p}={inner}"
         if root is not None:
@@ -1163,14 +1347,110 @@ def _w_counterexample_at_point(c: Ctx) -> str:
 
 
 def _w_expanding_generic(c: Ctx) -> str:
+    """Claim-specific expand/factor when no specialised writer matched."""
+    eqs = [
+        m
+        for m in _LATEX.findall(c.statement)
+        if "=" in m and len(m) >= 5
+    ]
+    eqs.sort(key=len, reverse=True)
+    claim = eqs[0] if eqs else None
+
+    # Prose: "Squaring $x+1$ yields $x^2+2x+1$"
+    prose = re.search(
+        r"(?:Squaring|Expanding)\s+\$([^$]+)\$\s+yields\s+\$([^$]+)\$",
+        c.statement,
+        re.I,
+    )
+    if prose:
+        left, rhs = prose.group(1).strip(), prose.group(2).strip()
+        claim = f"({left})^2={rhs}" if not left.startswith("(") else f"{left}^2={rhs}"
+        if not left.startswith("("):
+            # left is like x+1
+            claim = f"({left})^2={rhs}"
+
+    claim_compact = claim.replace(" ", "") if claim else ""
+
+    sq = re.match(r"\(([^()]+)\)\^2=(.+)$", claim_compact)
+    if sq:
+        inner, rhs = sq.group(1), sq.group(2)
+        parts = re.split(r"(?<=[\w)}])([+-])", inner, maxsplit=1)
+        if len(parts) == 3:
+            a, op, b = parts[0], parts[1], parts[2]
+            if op == "+":
+                correct = f"{a}^2+2{a}{b}+{b}^2"
+                rule = f"({a}+{b})^2={a}^2+2{a}{b}+{b}^2"
+            else:
+                correct = f"{a}^2-2{a}{b}+{b}^2"
+                rule = f"({a}-{b})^2={a}^2-2{a}{b}+{b}^2"
+            if c.profile == "short":
+                return short(
+                    f"The square identity is ${rule}$. "
+                    f"The claim prints ${claim}$, which "
+                    f"{'matches' if c.truth else 'does not match'}."
+                )
+            return _join(
+                "Expand the square by distributing:",
+                disp(f"({inner})^2=({inner})({inner})"),
+                disp(rule),
+                (
+                    f"This recovers the claimed right-hand side ${rhs}$."
+                    if c.truth
+                    else f"The claimed right-hand side ${rhs}$ is not ${correct}$."
+                ),
+            )
+
+    # Monomial square: (2t)^2=4t^2
+    mono = re.match(r"\((\d+)([a-zA-Z])\)\^2=(\d+)\2\^2$", claim_compact)
+    if mono:
+        k, v, k2 = mono.group(1), mono.group(2), mono.group(3)
+        return _join(
+            "Square a product by squaring each factor:",
+            disp(rf"({k}{v})^2={k}^2\cdot {v}^2={k2}{v}^2"),
+            (
+                "This matches the claim."
+                if c.truth
+                else "The claimed coefficient is wrong."
+            ),
+        )
+
+    dos = re.match(
+        r"(.+)\^2-(.+)\^2=\((.+)\)\((.+)\)$",
+        claim_compact,
+    )
+    if dos:
+        a, b = dos.group(1), dos.group(2)
+        if c.profile == "short":
+            return short(
+                f"The difference-of-squares identity is ${a}^2-{b}^2=({a}-{b})({a}+{b})$."
+            )
+        return _join(
+            "Factor the difference of squares:",
+            disp(f"{a}^2-{b}^2=({a}-{b})({a}+{b})"),
+            (
+                "The factored form matches the claim."
+                if c.truth
+                else "The claim’s factorisation does not match this identity."
+            ),
+        )
+
     if c.profile == "short":
         return short(
-            "Expand or factor with the named elementary identity; "
-            "compare the result to the printed claim."
+            "Apply the matching binomial or factor identity, then compare both sides."
+        )
+    if claim:
+        return _join(
+            "Work the printed identity directly:",
+            disp(claim),
+            (
+                "Both sides agree for every admissible value."
+                if c.truth
+                else "A counter-example or coefficient mismatch shows the sides disagree."
+            ),
         )
     return _join(
-        "Apply the relevant binomial or factor identity:",
-        disp(r"(a+b)^2=a^2+2ab+b^2"),
+        "Apply the relevant binomial or factor identity to the claim, "
+        "then compare the simplified form with the printed statement."
     )
 
 
@@ -1219,6 +1499,9 @@ _WRITERS: dict[str, Writer] = {
     "sqrt_product": _w_sqrt_product,
     "sqrt_sum_no_split": _w_sqrt_sum_no_split,
     "sqrt_principal": _w_sqrt_principal,
+    "abs_perfect_square": _w_abs_perfect_square,
+    "abs_factor_product": _w_abs_factor_product,
+    "abs_linear_equation": _w_abs_linear_equation,
     "abs_piecewise": _w_abs_piecewise,
     "abs_drop_bars": _w_abs_drop_bars,
     "abs_quotient": _w_abs_quotient,
