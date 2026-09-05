@@ -33,7 +33,13 @@ const MATH_CH11_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-The Newton quotient is the difference quotient that becomes the derivative once $h$ tends to zero. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+The Newton quotient is the difference quotient that becomes the derivative once $h$ tends to zero. Form it at $x=a$, expand $P(a+h)-P(a)$, and cancel carefully:
+
+$$\\dfrac{P(a+h)-P(a)}{h}=\\dfrac{(a+h)^{2}-4(a+h)+7-(a^{2}-4a+7)}{h}$$
+
+$$\\dfrac{2ah+h^{2}-4h}{h}=2a+h-4$$
+
+A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 The derivative is the $h\\to 0$ limit of the Newton quotient. Sending $h$ to zero in $2a+h-4$ collapses the expression to the linear slope rule
@@ -44,10 +50,18 @@ Substitute the named sales level $x=3$:
 
 $$P'(3)=2\\cdot 3-4=2$$
 
-Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+Do not confuse the derivative value with the height $P(3)=4$ on the curve — the claim asks only for the slope. The computed slope matches. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
-A tangent line needs one point on the curve and the slope there. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+A tangent line needs one point on the curve and the slope there. First evaluate both the profit and its derivative at $x=3$:
+
+$$P(3)=9-12+7=4\\qquad P'(3)=2$$
+
+Point-slope form with point $(3,4)$ and slope $2$ rearranges as
+
+$$y-4=2(x-3)\\qquad\\Rightarrow\\qquad y=2x-2$$
+
+A trap is writing $y=2x+4$ from the point alone; the algebra above confirms the claimed tangent. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
 Whether the curve rises or falls is controlled by the sign of the derivative
@@ -108,28 +122,28 @@ $$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
 $$C'(q)=12+\\dfrac{6}{100}q=12+\\dfrac{3}{50}q$$
 
-The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+The constant $200$ vanishes under differentiation, and $\\dfrac{6}{100}$ reduces to $\\dfrac{3}{50}$. That is exactly the claimed marginal-cost formula. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named output $q=100$ into the marginal-cost rule already derived:
 
 $$C'(100)=12+\\dfrac{3}{50}\\cdot 100=12+6=18$$
 
-A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+A trap here is evaluating total cost $C(100)=1700$ by mistake when the claim asks for the derivative. The slope computation matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 By definition, $C'(q)$ is the instantaneous rate of change of total cost in euros per unit. At $q=100$ that rate is
 
 $$C'(100)=18$$
 
-so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+so producing one extra unit near that output raises total cost by approximately $18$ euros. The word "approximately" matters: the derivative is the local linear estimate, not an exact finite difference. Matching that reading, the statement is True. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Average cost per unit is the separate quotient
 
 $$\\dfrac{C(q)}{q}=\\dfrac{200}{q}+12+\\dfrac{3}{100}q$$
 
-whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
+whereas $C'(q)=12+\\dfrac{3}{50}q$ is marginal cost — the slope of total cost. Those two functions agree only at special points, not identically. The claim's identification of $C'$ with average cost is incorrect. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First record the point and slope at $q=100$:
@@ -140,7 +154,7 @@ Point-slope form then assembles the tangent
 
 $$y=1700+18(q-100)$$
 
-exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
+exactly as claimed. Do not replace the intercept $1700$ by the fixed cost $200$. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 2,
@@ -185,35 +199,35 @@ Marginal product is the derivative of output with respect to labour. Apply the p
 
 $$Q'(L)=5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
-A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+A trap is writing $5\\cdot\\dfrac{3}{2}L^{\\frac{3}{2}}$ without lowering the exponent. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $L=4$ into the marginal-product rule, using $\\sqrt{4}=2$:
 
 $$Q'(4)=\\dfrac{15}{2}\\cdot 2=15$$
 
-Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+Do not confuse this slope with the output level $Q(4)=5\\cdot 8=40$. The claim asks only for $Q'(4)$, and that value equals $15$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 The derivative $Q'(L)$ measures output gained per extra labour-hour — the local linear approximation. At $L=4$ that rate is
 
 $$Q'(4)=15$$
 
-so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+so one extra labour-hour near that staffing level raises output by approximately $15$ units. The approximation language is intentional: the derivative is not an exact finite jump. Matching that reading, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → False
 
 The marginal-product rule still carries the factor $L^{\\frac{1}{2}}$:
 
 $$Q'(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
-which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`,
+which changes whenever $L$ changes. Only a constant function would stay flat for all $L>0$; here the square-root factor grows with labour. Marginal product is therefore not constant. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 Compare the two labour levels through the ratio of marginal products:
 
 $$\\dfrac{Q'(8)}{Q'(4)}=\\dfrac{\\sqrt{8}}{\\sqrt{4}}=\\sqrt{2}\\neq 2$$
 
-Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
+Because $Q'$ scales like $\\sqrt{L}$, doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's "exactly doubles" comparison is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 3,
@@ -258,28 +272,28 @@ Revenue is price times quantity sold. Expand the product with the linear price s
 
 $$R(q)=q\\cdot(80-2q)=80q-2q^{2}$$
 
-Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+Do not leave the expression as $q(80-2q)$ when the claim asks for the expanded quadratic. That expanded form is exactly what is named. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Marginal revenue is the derivative of the whole revenue function — not the derivative of price alone. Differentiating $R(q)=80q-2q^{2}$ term by term gives
 
 $$R'(q)=80-4q$$
 
-A trap is writing $R'(q)=-2$ from the price slope. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+A trap is writing $R'(q)=-2$ from the price slope. The claimed formula matches the correct differentiation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute the named sales level $q=10$ into marginal revenue:
 
 $$R'(10)=80-4\\cdot 10=80-40=40$$
 
-Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+Do not confuse this with price $p(10)=60$ or with revenue $R(10)=600$. The slope computation matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
 The price schedule alone has slope $p'(q)=-2$, while revenue's derivative is
 
 $$R'(q)=80-4q$$
 
-These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+These are different functions for every $q>0$. Equating $R'$ with $p'$ forgets that revenue is the product $q\\,p(q)$. The claim's identification is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First evaluate both the height and the slope at $q=10$:
@@ -290,7 +304,7 @@ Point-slope form then gives the tangent
 
 $$y=600+40(q-10)$$
 
-exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`
+exactly as claimed. Replacing $600$ by $p(10)$ would break the tangent equation. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 4,
@@ -333,35 +347,35 @@ Average cost is total cost divided by output. Split the quotient term by term:
 
 $$A(q)=\\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
 
-Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+Each term of $C$ contributes separately: the fixed cost becomes $\\dfrac{300}{q}$, the linear piece stays $6$, and the quadratic becomes proportional to $q$. That is the claimed simplification. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
 Differentiate the average-cost expression term by term, using $\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr)=-q^{-2}$ and treating the constant $6$ as zero under differentiation:
 
 $$A'(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
-A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+A trap is differentiating $\\dfrac{3}{100}q$ as $\\dfrac{3}{100}q^{2}$. The claimed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=100$ into the average-cost derivative:
 
 $$A'(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=-0.03+0.03=0$$
 
-The two contributions cancel exactly at this output. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+The two contributions cancel exactly at this output. The derivative vanishes there, matching the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Marginal cost is the derivative $C'(q)$ of total cost, whereas
 
 $$A'(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
-is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+is the rate of change of average cost. Those are different objects: one tracks the slope of $C$, the other the slope of $C/q$. Identifying $A'$ with marginal cost is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 A zero first derivative means a horizontal tangent on the graph of $A$. Since the calculation gives
 
 $$A'(100)=0$$
 
-average cost is locally flat at $q=100$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
+average cost is locally flat at $q=100$. That does not by itself say whether the flat point is a min or max — but local flatness is exactly what the claim asserts. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 5,
@@ -406,35 +420,35 @@ $$W(n)=48(n+3)^{-1}$$
 
 $$W'(n)=-48(n+3)^{-2}=-\\dfrac{48}{(n+3)^{2}}$$
 
-The inner derivative of $n+3$ is $1$, so no extra factor appears. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+The inner derivative of $n+3$ is $1$, so no extra factor appears. That matches the claimed formula. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute the named staffing level $n=3$ into the derivative:
 
 $$W'(3)=-\\dfrac{48}{(3+3)^{2}}=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
 
-Keep the minus sign: adding agents reduces waiting time. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+Keep the minus sign: adding agents reduces waiting time. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 The derivative $W'(n)$ measures minutes of waiting time gained (or lost) per extra agent. At $n=3$ that rate is
 
 $$W'(3)=-\\dfrac{4}{3}$$
 
-so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes. The negative sign is the reduction; the claim's wording matches that reading. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 A negative derivative means the function falls as the input rises. Since
 
 $$W'(n)=-\\dfrac{48}{(n+3)^{2}}<0$$
 
-for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
+for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim flips the meaning of $W'<0$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Differentiate $W'(n)=-48(n+3)^{-2}$ once more, multiplying by $-2$ from the power rule and by the inner slope $1$:
 
 $$W''(n)=(-48)\\cdot(-2)(n+3)^{-3}=\\dfrac{96}{(n+3)^{3}}$$
 
-which matches the claimed second derivative. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
+which matches the claimed second derivative. The positive sign shows the decrease in waiting time becomes less steep as $n$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 6,
@@ -477,28 +491,28 @@ The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rul
 
 $$S'(x)=2x\\,e^{-x}+x^{2}(-e^{-x})=x\\,e^{-x}(2-x)$$
 
-A trap is forgetting the chain-rule minus from $e^{-x}$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+A trap is forgetting the chain-rule minus from $e^{-x}$. The factored form matches the claim exactly. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=2$ into the factored derivative:
 
 $$S'(2)=2\\cdot e^{-2}\\cdot(2-2)=0$$
 
-The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+The factor $(2-x)$ vanishes, so the whole product is zero even though $e^{-2}\\neq 0$. The derivative vanishes at that intensity, matching the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 Differentiate $S'(x)=x\\,e^{-x}(2-x)$ again with the product rule. Expanding and collecting powers of $x$ produces
 
 $$S''(x)=e^{-x}(x^{2}-4x+2)$$
 
-Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+Do not stop at an unsimplified three-term product — the claimed compact polynomial factor is what matters. Matching that form, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=1$ into the first-derivative formula:
 
 $$S'(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$$
 
-Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+Here the factor $(2-x)$ equals $1$, so the derivative reduces cleanly to $e^{-1}$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**E.** → True
 
 A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
@@ -552,35 +566,35 @@ Rewrite demand as $D(a)=7(a+9)^{\\frac{1}{2}}$ and apply the chain rule, multipl
 
 $$D'(a)=7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}=\\dfrac{7}{2\\sqrt{a+9}}$$
 
-A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+A trap is forgetting the factor $\\dfrac{1}{2}$ from the square-root power. The simplified formula matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**B.** → True
 
 Substitute $a=7$, noting that $a+9=16$ and $\\sqrt{16}=4$:
 
 $$D'(7)=\\dfrac{7}{2\\cdot 4}=\\dfrac{7}{8}$$
 
-Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+Do not evaluate $D(7)=7\\cdot 4=28$ when the claim asks for the derivative. The slope matches. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $D'(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ once more:
 
 $$D''(a)=\\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
 
-The negative sign shows diminishing marginal returns. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+The negative sign shows diminishing marginal returns. Matching the claimed second derivative, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → False
 
 Near $a=7$ the model predicts an increase of about
 
 $$D'(7)=\\dfrac{7}{8}$$
 
-units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`,
+units of demand per extra advertising unit, not $7$. Confusing the coefficient $7$ in $D(a)$ with the marginal effect at $a=7$ overstates the slope badly. The claim overstates the marginal effect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Compare the derivative at the two advertising levels:
 
 $$D'(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D'(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
 
-Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
+Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$. That is diminishing returns in action. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 8,
@@ -627,35 +641,35 @@ Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. Apply the product rule, then 
 
 $$R'(n)=\\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
 
-The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+The numerator algebra $ -6n-3+20-3n=17-9n $ is the delicate step. Matching the claimed simplified formula, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into the combined derivative:
 
 $$R'(1)=\\dfrac{17-9}{\\sqrt{2+1}}=\\dfrac{8}{\\sqrt{3}}$$
 
-Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+Do not rationalise away from $\\dfrac{8}{\\sqrt{3}}$ unless asked — the claim keeps that form. The computed value matches. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Before clearing a common denominator, the product rule writes the two pieces separately: differentiate the price factor and the demand factor in turn,
 
 $$R'(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
 
-which is exactly the intermediate form named in the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+which is exactly the intermediate form named in the claim. Leaving it uncombined is intentional here. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**D.** → True
 
 A critical point solves $R'(n)=0$. With a positive denominator $\\sqrt{2n+1}$, that forces the numerator to vanish:
 
 $$17-9n=0\\qquad\\Rightarrow\\qquad n=\\dfrac{17}{9}$$
 
-matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+matching the claimed root. Do not set $17-9n=\\sqrt{2n+1}$ by mistake. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → False
 
 The derivative changes sign at the critical point
 
 $$n=\\dfrac{17}{9}$$
 
-and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
+and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. The claim overstates the monotonicity. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 9,
@@ -694,35 +708,39 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
     tactical_explanations: [
       `**A.** → True
 
-Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
+
+$$T'(n)=\\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+
+which matches the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute $n=1$ into that derivative:
 
 $$T'(1)=\\dfrac{2+4+8}{2^{2}}=\\dfrac{14}{4}=\\dfrac{7}{2}$$
 
-Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+Do not evaluate $T(1)=\\dfrac{10}{2}=5$ when the claim asks for the slope. The computed derivative matches. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 For $n>0$ the numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ is a sum of positive terms (discriminant $4-16<0$), and the denominator $(n+1)^{2}$ is positive. Hence
 
 $$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
-for every $n>0$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+for every $n>0$. A positive derivative means $T$ is strictly increasing. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**D.** → False
 
 Cancelling factors incorrectly would produce $\\dfrac{2n+8}{n+1}$, but the true derivative after the quotient rule is
 
 $$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
 
-Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
+Those expressions are not identical — the false one drops both the quadratic numerator structure and the squared denominator. The statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and the denominator stays positive, so
 
 $$T'(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
 
-throughout. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
+throughout. A strictly positive derivative never hits zero, so no such root exists and the statement is False. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 10,
@@ -759,35 +777,35 @@ Differentiate the log utility $U(x)=40\\ln(x+1)-x$ term by term. The chain rule 
 
 $$U'(x)=\\dfrac{40}{x+1}-1$$
 
-which matches the claimed first derivative. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+which matches the claimed first derivative. Do not write $\\dfrac{40}{x}$ by forgetting the $+1$ shift. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**B.** → True
 
 Substitute the named study time $x=3$ into the first derivative:
 
 $$U'(3)=\\dfrac{40}{3+1}-1=\\dfrac{40}{4}-1=9$$
 
-A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+A trap is stopping at $\\dfrac{40}{4}=10$ and forgetting to subtract $1$. The full computation matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Differentiate $U'(x)=40(x+1)^{-1}-1$ once more. The constant $-1$ vanishes, and the power rule on $(x+1)^{-1}$ produces
 
 $$U''(x)=-40(x+1)^{-2}=-\\dfrac{40}{(x+1)^{2}}$$
 
-which matches the claimed second derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+which matches the claimed second derivative. The negative sign shows diminishing marginal utility. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 Extending the first-derivative formula to $x=0$ gives the ordinary finite value
 
 $$U'(0)=\\dfrac{40}{1}-1=39$$
 
-so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
+so the derivative is defined at $x=0$. The argument of the logarithm is $x+1$, which equals $1$ at $x=0$ — there is no division by zero. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 The first derivative measures the instantaneous change in utility per extra study hour. At $x=3$ that rate is
 
 $$U'(3)=9$$
 
-so one extra hour near that level changes utility by approximately $9$ utility units. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
+so one extra hour near that level changes utility by approximately $9$ utility units. The approximation language matches the derivative interpretation. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 11,
@@ -835,28 +853,28 @@ Substitute $N=4$, using $4^{-\\frac{3}{2}}=\\dfrac{1}{8}$:
 
 $$c'(4)=-500\\cdot\\dfrac{1}{8}=-\\dfrac{125}{2}$$
 
-A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+A trap is computing $4^{-\\frac{1}{2}}=\\tfrac{1}{2}$ instead of $4^{-\\frac{3}{2}}=\\tfrac{1}{8}$. The correct value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 For every $N>0$ the power $N^{-\\frac{3}{2}}$ is positive, while the leading coefficient $-500$ is negative. Therefore
 
 $$c'(N)<0$$
 
-throughout the domain. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+throughout the domain. A negative derivative means unit cost keeps falling as cumulative output rises. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**D.** → True
 
 The derivative $c'(N)$ measures euros of unit cost gained (or lost) per extra unit of cumulative output. At $N=4$ that rate is
 
 $$c'(4)=-\\dfrac{125}{2}$$
 
-so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros. The absolute value of the negative derivative is the size of the reduction. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → False
 
 Compare magnitudes at the two cumulative outputs:
 
 $$\\dfrac{|c'(8)|}{|c'(4)|}=\\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
 
-Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
+Because $c'$ scales like $N^{-\\frac{3}{2}}$, doubling $N$ multiplies the magnitude by $2^{-\\frac{3}{2}}$, not by $2$. The claim is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 12,
@@ -908,14 +926,14 @@ Substitute the named output $q=20$ into marginal revenue:
 
 $$R'(20)=50-2\\cdot 20=50-40=10$$
 
-A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+A trap is computing $50-20=30$ by forgetting the factor $2$ on $q$. The correct slope is $10$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Evaluate the revenue function itself at $q=20$:
 
 $$R(20)=50\\cdot 20-20^{2}=1000-400=600$$
 
-This is the height on the curve, not the slope. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+This is the height on the curve, not the slope. The height matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 With the point $(20,600)$ and slope $R'(20)=10$, point-slope form rearranges as
@@ -976,35 +994,35 @@ The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain
 
 $$G'(x)=5(3x^{2}+4)^{4}\\cdot 6x=30x(3x^{2}+4)^{4}$$
 
-matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+matching the claimed formula. Forgetting the inner $6x$ is the classic chain-rule trap here. Comparing with the claim, the statement is True. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**B.** → True
 
 At $x=1$ one has $3x^{2}+4=7$ and $7^{4}=2401$, so
 
 $$G'(1)=30\\cdot 1\\cdot 7^{4}=30\\cdot 2401=72030$$
 
-Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+Do not compute $7^{5}$ by mistake — the outer power has already been reduced to $4$. The computed value matches the claim. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $G'(x)=30x(3x^{2}+4)^{4}$ again with the product rule, then factor the common power $(3x^{2}+4)^{3}$:
 
 $$G''(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
 
-The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+The factor $27x^{2}+4$ comes from combining the two product-rule pieces. Matching the claimed second derivative, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → True
 
 Substitute $x=0$ into the second-derivative formula:
 
 $$G''(0)=30\\cdot 4^{3}\\cdot 4=30\\cdot 64\\cdot 4=7680$$
 
-Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+Here $3(0)^{2}+4=4$ and $27(0)^{2}+4=4$. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 The first derivative carries an explicit factor of $x$:
 
 $$G'(0)=30\\cdot 0\\cdot 4^{4}=0$$
 
-not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
+not $30$. A trap is reading off the leading coefficient $30$ and ignoring the vanishing $x$. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 14,
@@ -1054,7 +1072,7 @@ Differentiate the marginal-cost polynomial once more:
 
 $$C''(q)=24q-36$$
 
-matching the claimed second derivative. This measures how fast marginal cost itself is changing. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+matching the claimed second derivative. This measures how fast marginal cost itself is changing. Comparing with the claim, the statement is True. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**C.** → True
 
 Substitute $q=\\dfrac{3}{2}$ into the second derivative:
@@ -1123,7 +1141,7 @@ Substitute the named training time $t=2$:
 
 $$K'(2)=-\\dfrac{3}{(2+1)^{2}}=-\\dfrac{3}{9}=-\\dfrac{1}{3}$$
 
-Keep the minus sign — more training lowers the complaint index. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+Keep the minus sign — more training lowers the complaint index. The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**C.** → True
 
 For every $t>0$ the numerator factor $-3$ is negative and the denominator $(t+1)^{2}$ is positive, so
@@ -1137,14 +1155,14 @@ The derivative measures the instantaneous change in the index per extra training
 
 $$K'(2)=-\\dfrac{1}{3}$$
 
-so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+so one extra hour changes the index by approximately $-\\dfrac{1}{3}$. The signed rate is exactly what the claim reports. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**E.** → True
 
 Differentiate $K'(t)=-3(t+1)^{-2}$ once more:
 
 $$K''(t)=(-3)\\cdot(-2)(t+1)^{-3}=\\dfrac{6}{(t+1)^{3}}$$
 
-matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`
+matching the claimed second derivative. The positive sign means the decrease in $K$ flattens as $t$ grows. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 16,
@@ -1191,14 +1209,14 @@ The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule mu
 
 $$S'(x)=4(2x+5)^{3}\\cdot 2=8(2x+5)^{3}$$
 
-matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+matching the claimed formula. Forgetting the factor $2$ from the inner linear term is the usual trap. Comparing with the claim, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**B.** → True
 
 Substitute $x=0$, using $2\\cdot 0+5=5$:
 
 $$S'(0)=8\\cdot 5^{3}=8\\cdot 125=1000$$
 
-Do not confuse this with $S(0)=5^{4}=625$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+Do not confuse this with $S(0)=5^{4}=625$. The derivative value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
 Differentiate $S'(x)=8(2x+5)^{3}$ again, again multiplying by the inner slope $2$:
@@ -1212,7 +1230,7 @@ Substitute $x=0$ into the second derivative:
 
 $$S''(0)=48\\cdot 5^{2}=48\\cdot 25=1200$$
 
-The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+The computed value matches the claim. Keep $5^{2}=25$, not $5^{3}$. Comparing with the claim, the statement is True. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**E.** → True
 
 Differentiate $S''(x)=48(2x+5)^{2}$ once more:
@@ -1269,7 +1287,7 @@ Substitute $t=1$ into the first derivative:
 
 $$E'(1)=\\ln(1+1)+\\dfrac{1}{1+1}=\\ln 2+\\dfrac{1}{2}$$
 
-Do not replace $\\dfrac{1}{2}$ by $1$. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
+Do not replace $\\dfrac{1}{2}$ by $1$. The computed value matches the claim. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Differentiate $E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$ again. Rewrite $\\dfrac{t}{t+1}=1-\\dfrac{1}{t+1}$, then differentiate:
@@ -1283,14 +1301,14 @@ Substitute $t=1$ into the second derivative:
 
 $$E''(1)=\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$$
 
-The two positive contributions add cleanly. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+The two positive contributions add cleanly. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**E.** → False
 
 The correct product-rule derivative is
 
 $$E'(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
-Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
+Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function. That shortcut is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 18,
@@ -1336,21 +1354,29 @@ $$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
 which is exactly the product form named in the claim. That rewriting sets up the product rule cleanly. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**B.** → True
 
-Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ and clear over one denominator. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ and clear over one denominator. The numerator calculation
+
+$$2x(x+3)-\\tfrac{1}{2}(x^{2}+1)=\\tfrac{1}{2}(3x^{2}+12x-1)$$
+
+produces
+
+$$M'(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+
+matching the claimed formula. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$, using $x+3=4$ and $4^{\\frac{3}{2}}=8$:
 
 $$M'(1)=\\dfrac{3+12-1}{2\\cdot 8}=\\dfrac{14}{16}=\\dfrac{7}{8}$$
 
-The numerator $14$ and denominator $16$ cancel by $2$. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+The numerator $14$ and denominator $16$ cancel by $2$. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope, so the statement is True.`,
       `**D.** → False
 
 The evaluation at $x=1$ already produced
 
 $$M'(1)=\\dfrac{7}{8}$$
 
-which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+which is not equal to $\\dfrac{13}{8}$. A trap is miscomputing the numerator as $3+12+1=16$ or $12-1=11$. The claim's value is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The derivative formula
@@ -1421,14 +1447,14 @@ Substitute $t=1$ into the second derivative:
 
 $$F''(1)=2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}=2\\ln 2+2-\\dfrac{1}{2}=2\\ln 2+\\dfrac{3}{2}$$
 
-Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+Watch the arithmetic $2-\\tfrac{1}{2}=\\tfrac{3}{2}$. The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**E.** → False
 
 The true product-rule derivative is
 
 $$F'(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
-Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`
+Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 20,
@@ -1485,14 +1511,14 @@ Differentiate the first-derivative polynomial once more:
 
 $$\\pi''(q)=-6q+24$$
 
-matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
+matching the claimed second derivative. This tracks how the marginal profit itself changes with output. Comparing with the claim, the statement is True. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 Substitute $q=3$ into the second derivative:
 
 $$\\pi''(3)=-6\\cdot 3+24=-18+24=6\\neq 0$$
 
-The second derivative vanishes at $q=4$, not at $q=3$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
+The second derivative vanishes at $q=4$, not at $q=3$. The claim's evaluation is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The tangent slope at $q=1$ is precisely the first-derivative value
@@ -1556,7 +1582,7 @@ Average cost is the separate quotient
 
 $$\\dfrac{C(q)}{q}=\\dfrac{45}{q}+9$$
 
-which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
+which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The fixed-cost contribution $\\dfrac{45}{q}$ keeps them apart. The claim's identification is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**D.** → True
 
 A linear function is already its own tangent. With slope $9$ and intercept $45$, the tangent at $q=10$ (and at every other $q$) is simply
@@ -1641,7 +1667,7 @@ Because the exponent $\\dfrac{3}{2}$ is positive,
 
 $$Q'(L)=10L^{\\frac{3}{2}}$$
 
-rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
+rises as $L$ rises. Comparing $Q'(1)=10$ with $Q'(4)=80$ confirms the increase. The claim that it falls is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 23,
@@ -1705,7 +1731,7 @@ Marginal revenue is $R'(q)=60-q$, while the fare schedule is
 
 $$p(q)=60-\\dfrac{1}{2}q$$
 
-These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
+These differ by the factor on $q$: $R'$ falls twice as steeply as $p$. Equating them forgets that revenue is the product $q\\,p(q)$. The claim is incorrect. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 First evaluate both height and slope at $q=20$:
@@ -1768,7 +1794,7 @@ Substitute $n=1$ into the first derivative:
 
 $$D'(1)=-\\dfrac{36}{(1+2)^{2}}=-\\dfrac{36}{9}=-4$$
 
-Keep the minus sign. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
+Keep the minus sign. The computed value matches the claim. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Differentiate $D'(n)=-36(n+2)^{-2}$ once more:
@@ -1782,7 +1808,7 @@ The leading factor $-36$ is negative and the denominator is positive for every $
 
 $$D'(n)<0$$
 
-throughout rather than positive. A negative derivative means delay falls when agents are added. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+throughout rather than positive. A negative derivative means delay falls when agents are added. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 The first derivative measures minutes of delay gained (or lost) per extra agent. At $n=1$ that rate is
@@ -1931,7 +1957,7 @@ As $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so
 
 $$R'(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
 
-rather than exploding. Marginal reach shrinks toward zero. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
+rather than exploding. Marginal reach shrinks toward zero. The claim's comparison is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 27,
@@ -2002,7 +2028,7 @@ Setting $U'(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
 
 $$t=7$$
 
-not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
+not $t=\\dfrac{7}{2}$. Halving $7$ by mistake (perhaps from the inner coefficient $2$) produces the wrong root. The claimed root is wrong. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 28,
@@ -2194,7 +2220,7 @@ Factor $(2x-1)^{2}$ from the numerator and simplify the remaining linear factor:
 
 $$K'(x)=\\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
 
-since $6x+24-2x+1=4x+25$. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
+since $6x+24-2x+1=4x+25$. Matching the claimed factored form, the statement is True. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter, so the statement is True.`,
       `**C.** → True
 
 Substitute $x=1$ into the factored derivative:
@@ -2286,7 +2312,7 @@ Substitute $x=0$ into the first derivative:
 
 $$L'(0)=\\dfrac{0}{9}=0$$
 
-which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. Comparing that with the claim, the statement is False.`
+which is not equal to $1$. The odd factor $2x$ vanishes at the origin, so the slope is zero there. The claim's value is incorrect. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 32,
@@ -2428,7 +2454,7 @@ The evaluation at $x=0$ already produced
 
 $$F'(0)=e^{0}(0+0+3)=3$$
 
-which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
+which is not equal to $1$. Confusing $F'(0)$ with $e^{0}=1$ drops the polynomial factor. The claim's value is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 34,
@@ -2490,14 +2516,14 @@ In the derivative formula the numerator factor $9$ is positive and every remaini
 
 $$H'(x)>0$$
 
-rather than negative. The balance index is increasing, not decreasing. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+rather than negative. The balance index is increasing, not decreasing. The claim's inequality is wrong. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → False
 
 The exact value at $x=2$ is
 
 $$H'(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
 
-which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
+which is not equal to the simplified fraction $\\dfrac{9}{70}$. That false reduction pretends $\\sqrt{5}\\cdot 7^{\\frac{3}{2}}=35$, which is wrong. The claim's numerical reduction is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 35,
@@ -2548,14 +2574,22 @@ $$N'(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$
 The computed value matches the claim. The stem's formula is enough; no outside identity is required for the check. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical, so the statement is True.`,
       `**C.** → True
 
-Substitute $x=2$ into the simplified derivative. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion. Writing every intermediate line keeps the comparison with the claim mechanical. The stem's formula is enough; no outside identity is required for the check, so the statement is True.`,
+Substitute $x=2$ into the simplified derivative. First $x^{2}+4=8$ and
+
+$$8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=8\\cdot 2\\sqrt{2}=16\\sqrt{2}$$
+
+so
+
+$$N'(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}$$
+
+The computed value matches the claim. Substituting only after the general expression is finished avoids mixing height with slope. Coefficient and sign agreement with the claim is what decides the letter. The same checklist — differentiate, simplify, evaluate — settles the assertion, so the statement is True.`,
       `**D.** → False
 
 The simplified derivative
 
 $$N'(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
 
-has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Rephrasing the claim cannot repair an algebraic contradiction. Comparing that with the claim, the statement is False.`,
+has a positive numerator and a positive denominator for every real $x$, so it never changes sign. Crossing $x=0$ does not flip $N'$. The claim is incorrect. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $x=1$, using $1+4=5$:
@@ -2775,7 +2809,7 @@ For every $x>0$ the numerator $5$ is positive and both linear factors in the den
 
 $$V'(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
 
-and never hits zero. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. That mismatch alone is enough to reject the letter. Comparing that with the claim, the statement is False.`
+and never hits zero. There is therefore no such root on $x>0$, and the statement is False. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 39,
@@ -2841,7 +2875,7 @@ The correct evaluation at $t=1$ is
 
 $$Z'(1)=2\\ln 3+\\dfrac{2}{3}$$
 
-Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
+Replacing the second summand by $1$ produces the different number $2\\ln 3+1$. That slip pretends $\\dfrac{2t^{2}}{2t+1}=1$ at $t=1$, but $\\dfrac{2}{3}\\neq 1$. The claim is incorrect. Rephrasing the claim cannot repair an algebraic contradiction. The named evaluation already serves as a counter-example. Holding both formulas in view makes the failure obvious. The derived expression and the asserted one disagree at a checkable place. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
 Substitute $t=1$ into the second-derivative formula:
@@ -2891,16 +2925,14 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Management wants the approximate extra cost of one more loaf, and that local rate of change is exactly the derivative of total cost.
 
 Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers a different question — euros per loaf already baked — so it is not the right object.
 
-The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$, so the statement is True.`,
-      `**B.** → False
+The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$
 
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
+In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$., so the statement is True.`,
+      `**B.** → False
 
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
 
@@ -2910,19 +2942,15 @@ $$C^{\\prime}(Q)$$
 
 Those two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
+The quotient rule makes the gap explicit: $A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$, which equals $C^{\\prime}$ only in degenerate cases, not in general., so the statement is False.`,
       `**C.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 On a graph of total cost against output, the derivative at a named point is the slope of the tangent there.
 
 Economists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
+If the drawn tangent at some $Q_0$ has slope $m$, one reads $C^{\\prime}(Q_0)=m$ directly from the figure — that geometric slope is the definition of marginal cost at $Q_0$., so the statement is True.`,
       `**D.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 The linear approximation says a small change in output changes total cost by about the derivative times that change:
 
@@ -2934,16 +2962,16 @@ $$C(121)-C(120)\\approx 0.80$$
 
 Each extra loaf near $120$ adds about $0.80$ euros to total cost
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
+That one-unit reading is an approximation, but it is exactly how economists translate a reported $C^{\\prime}(120)=0.80$ into "about $0.80$ euros per extra loaf.", so the statement is True.`,
       `**E.** → False
-
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
 
 Average cost already divides by $Q$, but that only produces the per-unit average, not the slope of total cost.
 
 The two coincide only at special outputs (for instance where average cost is minimized); in general $A(120)$ need not equal $C^{\\prime}(120)$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$; away from that point the average and the marginal routinely disagree.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 41,
@@ -2974,25 +3002,23 @@ so with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of
     tactical_explanations: [
       `**A.** → True
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
-
 The derivative $C^{\\prime}(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed.
 
 Its value $3$ therefore means about $3$ million euros per extra percentage point near a $50\\%$ cleanup
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**B.** → False
+Units confirm the reading: $C$ is in millions of euros and $x$ is a percentage, so $C^{\\prime}(50)=3$ means $3$ million euros per extra percentage point near $x=50$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 The total cost of a $50\\%$ cleanup is the function value $C(50)$, a stock of spending.
 
 The report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage point — not that stock
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`,
-      `**C.** → True
+Nothing in the report identifies the stock $C(50)$; a cleanup could already have cost $100$ million while the next percentage point still costs about $3$ million more.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 The precise local meaning of the derivative is the linear approximation for small steps:
 
@@ -3002,25 +3028,27 @@ $$C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$$
 
 which is exactly the reading named in the claim
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**D.** → True
+For instance $\\Delta x=0.5$ predicts about $1.5$ million euros of extra cost for half a percentage point — the same derivative, scaled by the step size.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 Elementary readings often take a one-unit step $\\Delta x=1$ and say the extra cost of going from $50\\%$ to $51\\%$ is about $3$ million euros.
 
 That is a convenient one-unit version of the same derivative
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**E.** → True
+It remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 Here the independent variable is the cleanup percentage, and the units of $C^{\\prime}(50)$ are millions of euros per percentage point.
 
 That is precisely a marginal cost with respect to the cleanup percentage
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`
+Calling that rate a marginal cost simply names the economic role of $C^{\\prime}$ with respect to the cleanup percentage.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 42,
@@ -3049,45 +3077,43 @@ for small $\\Delta x$. Taking the convenient one-unit step $\\Delta x=1$ says it
     tactical_explanations: [
       `**A.** → True
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
-
 Marginal profit means the rate of change of profit, so the function to differentiate is
 
 $$P(Q)=R(Q)-C(Q)$$
 
 The price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → False
+In symbols $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$; nowhere does that identity reduce to $p^{\\prime}(Q)$ alone.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 Differentiating only $p(Q)$ tracks how the posted price moves with quantity.
 
 Marginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also accounts for selling more cups, and $p^{\\prime}(Q)$ is not marginal revenue
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**C.** → True
+Even the sign can disagree: $p^{\\prime}$ is typically negative along demand, while $R^{\\prime}$ can still be positive when price is high and quantity is low.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 Revenue is price times quantity. When quantity rises along a downward-sloping schedule, price usually falls, so the extra euros from one more cup are not simply the current price $p(Q)$.
 
 That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $p(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → True
+The gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 A small increase in cups changes profit by about $P^{\\prime}(Q)\\,\\Delta Q$.
 
 For one extra cup near the current output, the relevant number is therefore $P^{\\prime}(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → True
+Looking at $p(Q)$ or even at $R^{\\prime}(Q)$ alone would miss the cost side; profit change needs the full $P^{\\prime}$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 Profit is the difference $P=R-C$. Differentiating term by term where the derivatives exist gives
 
@@ -3095,9 +3121,9 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
 at every such output
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+That is why the expand-or-not test can be written either as $P^{\\prime}>0$ or as $R^{\\prime}>C^{\\prime}$ — same identity.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 43,
@@ -3126,29 +3152,25 @@ Marginal profit is $P^{\\prime}$, not $p^{\\prime}$. Differentiating $p$ alone o
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal profit is the difference of the two derivatives:
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
 Whenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\\prime}(Q)>0$ there
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+Numerically, if $R^{\\prime}=12$ and $C^{\\prime}=9$ then $P^{\\prime}=3>0$; the inequality of slopes forces a positive profit slope.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 A positive marginal profit means the profit function is locally increasing.
 
 Hence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small increase in output raises profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+So the firm should expand a little at that output: extra revenue still beats extra cost on the margin.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 If $R^{\\prime}(Q)<C^{\\prime}(Q)$, then
 
@@ -3156,10 +3178,10 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)<0$$
 
 A negative derivative means profit is locally decreasing, and a small increase in output lowers profit rather than raising it
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**D.** → True
+The correct conclusion is the opposite expand-or-not advice: when $R^{\\prime}<C^{\\prime}$, cut output a little rather than raise it.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 Setting the profit derivative to zero is
 
@@ -3167,16 +3189,18 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
 
 which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → False
+This is the calculus form of the classical MR$=$MC rule for an interior candidate — a condition on slopes, not on totals.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 The equality $R^{\\prime}(Q)=C^{\\prime}(Q)$ equates two rates of change — extra revenue and extra cost — not the levels of total revenue and total cost.
 
 Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different condition
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`
+A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $R<C$ (a loss); the slope condition is silent about break-even.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 44,
@@ -3207,51 +3231,51 @@ is exactly $P^{\\prime}(Q)=0$; it says nothing about whether the levels $R(Q)$ a
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Zero marginal profit means
 
 $$P^{\\prime}(Q^{\\ast})=R^{\\prime}(Q^{\\ast})-C^{\\prime}(Q^{\\ast})=0$$
 
 hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal revenue equals marginal cost
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → False
+In other words, $P^{\\prime}(Q^{\\ast})=0$ is exactly the classical first-order rule MR$=$MC at the candidate output.
 
-Separate zero profit (the level $P=0$) from zero marginal profit (the slope $P^{\\prime}=0$). Those are different conditions on different objects.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 A zero slope of profit says only that profit is locally stationary; it says nothing about the height $P(Q^{\\ast})$.
 
 The firm can earn a large positive total profit (or a large loss) while $P^{\\prime}(Q^{\\ast})=0$, and it does not necessarily earn zero total profit
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
-      `**C.** → True
+Picture a profit hill whose peak sits at height $50$: the tangent is flat ($P^{\\prime}=0$) while profit itself is still $50$, not zero.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 Total revenue equals total cost only when $R(Q^{\\ast})=C(Q^{\\ast})$.
 
 The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives, not those levels, and total revenue need not equal total cost at $Q^{\\ast}$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**D.** → True
+Break-even is the separate level condition $P(Q^{\\ast})=0$, equivalently $R(Q^{\\ast})=C(Q^{\\ast})$ — not implied by $P^{\\prime}=0$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 A critical point with $P^{\\prime}(Q^{\\ast})=0$ can be a local maximum, a local minimum, or neither.
 
 The first-order condition alone does not classify which, and it does not tell whether profit is maximized or minimized
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**E.** → True
+A flat tangent can sit at the top of a hill, at the bottom of a valley, or on a terrace; further information is required to classify it.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 If $P^{\\prime}$ changes from positive to negative at $Q^{\\ast}$, profit switches from rising to falling there.
 
 That sign change marks a local profit maximum
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 45,
@@ -3280,45 +3304,45 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal utility is the instantaneous rate of change of satisfaction with respect to leisure hours, which is exactly the derivative $U^{\\prime}(x)$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**B.** → True
+In the same vocabulary used for cost, $U^{\\prime}(x)$ is the marginal utility of leisure at $x$ hours.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**B.** → True
 
 A positive derivative means the utility function is locally increasing.
 
 Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near that $x$
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**C.** → False
+Equivalently, the consumer is still on an upward stretch of the utility curve at that $x$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**C.** → False
 
 If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is False.`,
-      `**D.** → False
+On a downward stretch of $U$, extra leisure reduces satisfaction — the sign of $U^{\\prime}$ is the whole local story.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → False
 
 The value $U(x)$ is the stock of satisfaction at $x$ hours, not its rate of change.
 
 Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not already the marginal utility
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`,
-      `**E.** → True
+A student can already feel quite satisfied ($U$ large) while the next hour of leisure adds little or even subtracts ($U^{\\prime}\\le 0$).
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → True
 
 The sign of $U^{\\prime}(x)$ tells whether $U$ is locally rising or falling.
 
 That is exactly whether satisfaction is locally increasing or decreasing in leisure
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`
+That is the same increase/decrease test used for cost, revenue, and profit — only the economic label on $U$ has changed.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 46,
@@ -3327,9 +3351,7 @@ Write the comparison on the page before judging the wording: name the relevant f
 $$U^{\\prime}(x),$$
 not the stock $U(x)$ itself. The linear approximation
 $$U(x+\\Delta x)-U(x)\\approx U^{\\prime}(x)\\,\\Delta x$$
-shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}(x)>0$ a little extra leisure raises satisfaction, while if $U^{\\prime}(x)<0$ a little extra leisure lowers it.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}(x)>0$ a little extra leisure raises satisfaction, while if $U^{\\prime}(x)<0$ a little extra leisure lowers it. Throughout, treat $U(x)$ as a stock of satisfaction and $U^{\\prime}(x)$ as its local rate — the same level-versus-slope discipline used for cost and profit.`,
   },
   {
     id: "math-11-47",
@@ -3349,34 +3371,32 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
-
 Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers how expensive each unit has been on average so far.
 
 Marginal cost $C^{\\prime}(Q)$ answers how total cost changes if a little more is produced. Those are two different economic questions
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → False
+Mixing the two is the classic MC-versus-AC trap: one governs expand-or-not cost comparisons, the other summarizes past unit cost.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 In general the quotient $\\dfrac{C(Q)}{Q}$ and the derivative $C^{\\prime}(Q)$ are different functions.
 
 They meet only at special outputs, not for every $Q>0$, and the claim that $A(Q)=C^{\\prime}(Q)$ identically is false
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**C.** → False
+A standard textbook picture has the MC curve cut through the bottom of the AC curve — they agree at one point, not everywhere.
 
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → False
 
 Minimizing average cost looks for a critical point of $A(Q)$, which rearranges to $C^{\\prime}(Q)=A(Q)$, not to $C^{\\prime}(Q)=0$.
 
 Setting marginal cost to zero is a different decision problem
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**D.** → True
+Setting $C^{\\prime}=0$ would ask where total cost is locally flat, which is unrelated to minimizing cost per unit.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 Write $A(Q)=\\dfrac{C(Q)}{Q}$. At an interior minimum of $A$ one has $A^{\\prime}(Q)=0$, which expands to
 
@@ -3384,16 +3404,18 @@ $$A^{\\prime}(Q)=\\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}=0$$
 
 hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+That crossing rule — MC $=$ AC at the AC minimum — is the standard first-order characterization of efficient scale in this model.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prime}(Q)<A(Q)$.
 
 Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -3422,16 +3444,14 @@ So $A$ is falling precisely when $C^{\\prime}<A$, which can hold even while $C^{
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 The finite difference $C(Q+1)-C(Q)$ is the incremental cost of one whole extra unit.
 
 The course definition of marginal cost is the derivative $C^{\\prime}(Q)$, and the one-unit difference is not the exact definition
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**B.** → True
+Only in the limit of vanishing step size does the incremental ratio become the derivative; a jump of size $1$ is not that limit.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 For a small extra output $\\Delta Q$, the change in cost per unit of extra output is approximately the derivative:
 
@@ -3439,10 +3459,10 @@ $$\\dfrac{C(Q+\\Delta Q)-C(Q)}{\\Delta Q}\\approx C^{\\prime}(Q)$$
 
 Hence $C^{\\prime}(Q)$ approximates that local rate
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → True
+When cost is nearly linear near $Q$, the approximation is excellent; when cost bends sharply, keep the step small.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 Setting $\\Delta Q=1$ in the linear approximation gives
 
@@ -3450,10 +3470,10 @@ $$C(Q+1)-C(Q)\\approx C^{\\prime}(Q)$$
 
 which is often serviceable in applications, but it remains an approximation rather than an identity
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**D.** → True
+For a quadratic piece of cost, for instance, the exact one-unit difference and $C^{\\prime}(Q)$ differ by a curvature correction.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 The same derivative governs both directions: for a small (possibly negative) step,
 
@@ -3461,16 +3481,18 @@ $$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$$
 
 Hence if output falls a little, the local cost change is still read from $C^{\\prime}(Q)$
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**E.** → False
+Cutting output by $\\Delta Q=-0.5$ changes cost by about $-0.5\\,C^{\\prime}(Q)$ — same slope, opposite direction.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 The one-unit difference is only a coarse reading, and the precise local rate is still the derivative.
 
 Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or non-unit steps
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is False.`
+Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with derivatives; a single one-unit difference cannot replace that language.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 48,
@@ -3501,49 +3523,49 @@ which remains an approximation rather than an identity. The same formula governs
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal revenue is the rate of change of revenue $R(Q)=Q\\cdot p(Q)$.
 
 That rate is obtained by differentiating $R$, not by reading off the posted price $p(Q)$ alone
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+Reading $p(Q)$ alone would miss the inframarginal price-pressure term $Q\\,p^{\\prime}(Q)$ that the product rule contributes.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Along a downward-sloping price schedule, selling one more unit tends to push the price down.
 
 That lower price also applies to the previous units, and the expansion pressure cuts into revenue on the inframarginal units as well
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**C.** → True
+That is why a monopolist or any price-maker does not pocket the full current price as extra revenue from one more sale.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 That price-pressure effect appears in the product rule as the term $Q\\,p^{\\prime}(Q)<0$ when $p$ slopes down.
 
 It is one reason marginal revenue can lie below the current price
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → False
+Rearranging, $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)>0$ whenever $p$ slopes down and $Q>0$.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 If demand did not depend on price, revenue would still be $R(Q)=Q\\cdot p$ with a constant $p$, and differentiating would give $R^{\\prime}(Q)=p$, which explicitly uses quantity in $R=Qp$.
 
 The claim that differentiating revenue would still ignore quantity is therefore wrong
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**E.** → True
+With constant $p$ one still writes $R(Q)=pQ$ and obtains $R^{\\prime}=p$; quantity remains the variable of differentiation.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → True
 
 When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
 
 A blanket claim that marginal revenue always equals price is therefore false in that setting
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`
+The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 49,
@@ -3574,16 +3596,14 @@ in general: selling one more unit tends to reduce the price earned on previous u
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal profit is defined as the derivative of profit $P(Q)=Q\\cdot p(Q)-C(Q)$.
 
 The consultant differentiated the price schedule alone, which is the wrong object, and the advice is wrong
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+Once profit is written out, the correct derivative is $P^{\\prime}(Q)=32-2Q$, which is nothing like the consultant's $p^{\\prime}=-1$.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Differentiate the posted price:
 
@@ -3593,12 +3613,10 @@ $$p^{\\prime}(Q)=-1$$
 
 That slope only describes how price falls with quantity; it is not marginal profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+At $Q=10$, for example, price falls at rate $-1$ while marginal profit is $P^{\\prime}(10)=12$ — different objects, different numbers.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Revenue is price times quantity. Substitute the inverse demand:
 
@@ -3610,12 +3628,10 @@ $$R(Q)=40Q-Q^{2}$$
 
 which is exactly the claimed revenue function
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Differentiating that revenue later gives $R^{\\prime}(Q)=40-2Q$, which already differs from the price $p(Q)=40-Q$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Profit is revenue minus cost. Using $R(Q)=40Q-Q^{2}$ and $C(Q)=8Q+20$,
 
@@ -3625,12 +3641,10 @@ $$P(Q)=32Q-Q^{2}-20$$
 
 The claimed simplification matches
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+The fixed cost $20$ shifts the profit level but will drop out upon differentiation when we form $P^{\\prime}$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Differentiate the simplified profit term by term:
 
@@ -3640,9 +3654,9 @@ $$P^{\\prime}(Q)=32-2Q$$
 
 That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Setting $P^{\\prime}(Q)=0$ would give the candidate $Q=16$; the consultant's $p^{\\prime}=-1$ never even produces a critical point of profit.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -3654,9 +3668,7 @@ $$R(Q)=Q\\cdot p(Q)=40Q-Q^{2},$$
 $$P(Q)=R(Q)-C(Q)=40Q-Q^{2}-8Q-20=32Q-Q^{2}-20.$$
 Differentiating profit — not the price schedule — gives marginal profit
 $$P^{\\prime}(Q)=32-2Q.$$
-By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, the slope of price. The consultant's advice therefore targets the wrong function.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, the slope of price. The consultant's advice therefore targets the wrong function. The consultant's error is the price-versus-profit trap: $p^{\\prime}=-1$ is not $P^{\\prime}=32-2Q$.`,
   },
   {
     id: "math-11-51",
@@ -3676,14 +3688,12 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 The marginal tax rate is the derivative $T^{\\prime}(y)$, which answers how tax liability changes when income rises a little
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → True
+In symbols that rate is $T^{\\prime}(y)$, and the linear reading $T(y+\\Delta y)-T(y)\\approx T^{\\prime}(y)\\,\\Delta y$ is exactly "how liability changes when income rises a little."
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 The average tax rate is the quotient of tax owed by income:
 
@@ -3691,34 +3701,36 @@ $$\\dfrac{T(y)}{y}\\qquad(y>0)$$
 
 That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → False
+If $T(y)=9000$ on income $y=30000$, the average rate is $9000/30000=0.3$, a fraction of income — not a statement about the next euro.
 
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 As with cost, the marginal and average rates coincide only in special cases, not for every income $y>0$.
 
 In general $T^{\\prime}(y)$ need not equal $\\dfrac{T(y)}{y}$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**D.** → True
+A progressive schedule routinely has a marginal rate above the average rate; the two coincide only in special cases such as a pure flat tax through the origin.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 The report $T^{\\prime}(y)=0.3$ means about $0.3$ euros of tax per extra euro of income near that point.
 
 That is about $30$ cents of each extra euro taxed away
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+With $\\Delta y=1$ the approximation says about $0.30$ euros of extra tax — thirty cents of each extra euro taxed away.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 The average rate is only a quotient at one income; it does not determine the slope there.
 
 Many different tax schedules can share the same average at one $y$ while having different derivatives, and knowing only $\\dfrac{T(y)}{y}$ is not enough to read $T^{\\prime}(y)$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+Recovering $T^{\\prime}(y)$ needs local information about how $T$ changes near $y$, not merely the single quotient $T(y)/y$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 51,
@@ -3729,7 +3741,7 @@ while the average tax rate is the quotient
 $$\\dfrac{T(y)}{y}\\qquad(y>0).$$
 These answer different questions — how liability changes with a little more income versus what fraction of income is paid overall — and in general they are unequal. The linear reading
 $$T(y+\\Delta y)-T(y)\\approx T^{\\prime}(y)\\,\\Delta y$$
-means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. Knowing only the average at a point does not recover the slope $T^{\\prime}$ there.`,
+means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. Knowing only the average at a point does not recover the slope $T^{\\prime}$ there. Keep the MC-versus-AC analogy in view: $T^{\\prime}$ is the marginal rate and $T/y$ is the average rate — unequal in general.`,
   },
   {
     id: "math-11-52",
@@ -3749,36 +3761,34 @@ means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. 
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 By definition, the marginal propensity to save is the derivative of saving with respect to national product:
 
 $$\\mathrm{mps}=S^{\\prime}(Y)$$
 
 which is exactly the definition used here
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**B.** → True
+That derivative is the macroeconomic analogue of a marginal cost or marginal propensity: a slope, not a stock.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 The value $S^{\\prime}(Y)=0.2$ is a euros-saved-per-euro-of-product rate near that $Y$.
 
 About one fifth of a small increase in national product is therefore saved
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**C.** → False
+With $\\Delta Y=10$, about $2$ units of the extra product are saved; the fraction $0.2$ is the local saving response.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 The ratio $\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost.
 
 It is not the same object as the marginal propensity $S^{\\prime}(Y)$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is False.`,
-      `**D.** → True
+If autonomous saving is positive, $S/Y$ exceeds $s$ at low $Y$ and approaches $s$ only as $Y$ grows — average and marginal differ.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 Differentiate the linear saving rule:
 
@@ -3788,16 +3798,18 @@ $$S^{\\prime}(Y)=s$$
 
 The marginal propensity to save equals the coefficient $s$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**E.** → True
+The intercept $\\overline{S}$ affects the level of saving but drops out of the derivative, leaving the constant slope $s$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 The economic question asks how saving responds to a little more national product, so the dependent quantity is $S(Y)$.
 
 One therefore differentiates $S$, not the identity function $Y$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Differentiating the identity map $Y$ would give $1$, which is not a propensity to save; the dependent variable must be $S$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -3808,7 +3820,7 @@ not as the average ratio $\\dfrac{S(Y)}{Y}$. The linear approximation
 $$S(Y+\\Delta Y)-S(Y)\\approx S^{\\prime}(Y)\\,\\Delta Y$$
 reads $S^{\\prime}(Y)=0.2$ as "about one fifth of a small increase in national product is saved." For a linear rule
 $$S(Y)=\\overline{S}+sY$$
-one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little more $Y$, differentiate $S$, not the identity map $Y$.`,
+one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little more $Y$, differentiate $S$, not the identity map $Y$. Average saving $S/Y$ is not the marginal propensity $S^{\\prime}$; only the derivative answers the local response question.`,
   },
   {
     id: "math-11-53",
@@ -3828,49 +3840,49 @@ one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little mo
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal cost is the slope of the total-cost curve. A steeper tangent at $Q_0$ than at $Q_1$ means a larger slope there.
 
 Hence marginal cost is higher at $Q_0$ than at $Q_1$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**B.** → False
+In symbols $C^{\\prime}(Q_0)>C^{\\prime}(Q_1)$ precisely when the tangent at $Q_0$ is steeper than the tangent at $Q_1$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 The height of the cost curve at $Q_0$ is the level $C(Q_0)$.
 
 Marginal cost is the slope of the tangent, not that height
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`,
-      `**C.** → True
+A high cost curve can have a flat tangent, and a low cost curve can have a steep tangent — height and slope are independent.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+      `**C.** → True
 
 A flatter tangent means a smaller derivative at that point.
 
 Because that derivative is marginal cost, a flatter tangent means a smaller marginal cost
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**D.** → True
+On the figure, "flatter" means a smaller rise-over-run for the drawn tangent, hence a smaller $C^{\\prime}$ and a smaller marginal cost.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 By definition, the slope of the tangent to the cost curve at $Q_0$ equals $C^{\\prime}(Q_0)$.
 
 If that slope is $12$, then $C^{\\prime}(Q_0)=12$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**E.** → False
+That is the geometric definition: whatever slope the artist drew at $Q_0$ is the number $C^{\\prime}(Q_0)$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**E.** → False
 
 Equal heights say only that $C(Q_a)=C(Q_b)$; they say nothing about equal slopes.
 
 A U-shaped cost curve can return to the same height with different tangents, and equal total cost does not force equal marginal cost
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`
+A U-shaped cost curve returns to the same height on either side of its minimum with opposite-signed slopes — equal $C$, unequal $C^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 53,
@@ -3879,7 +3891,7 @@ Do not confuse a stock with a rate: the function value (total cost, total profit
 $$C^{\\prime}(Q_{0})=\\text{slope of the tangent at }Q_{0}.$$
 A steeper tangent at $Q_{0}$ than at $Q_{1}$ therefore means
 $$C^{\\prime}(Q_{0})>C^{\\prime}(Q_{1}).$$
-A flatter tangent means a smaller derivative and a smaller marginal cost. The height of the cost curve is the stock $C(Q)$, not marginal cost. Equal heights $C(Q_{a})=C(Q_{b})$ do not force equal slopes $C^{\\prime}(Q_{a})=C^{\\prime}(Q_{b})$. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+A flatter tangent means a smaller derivative and a smaller marginal cost. The height of the cost curve is the stock $C(Q)$, not marginal cost. Equal heights $C(Q_{a})=C(Q_{b})$ do not force equal slopes $C^{\\prime}(Q_{a})=C^{\\prime}(Q_{b})$. Marginal cost is tangent slope, never curve height; equal heights never force equal slopes.`,
   },
   {
     id: "math-11-54",
@@ -3899,34 +3911,32 @@ A flatter tangent means a smaller derivative and a smaller marginal cost. The he
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 An interior profit maximum is a critical point of profit, so it requires $P^{\\prime}(Q)=0$.
 
 Setting only $R^{\\prime}(Q)=0$ ignores cost entirely, and the claim correctly insists on $P^{\\prime}(Q)=0$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → False
+If cost depends on $Q$, the zeros of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and of $R^{\\prime}$ generally sit at different outputs.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 Positive cost that depends on $Q$ shifts the optimum: maximizing $R$ need not maximize $R-C$.
 
 Hence maximizing revenue alone does not automatically maximize profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**C.** → True
+A revenue peak with rising cost already has $P^{\\prime}=-C^{\\prime}<0$, so profit is falling there — revenue max is too far.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the zeros of $R^{\\prime}$ and of $P^{\\prime}$ generally differ when $C^{\\prime}$ is not zero.
 
 If cost rises with output, the revenue-maximizing output can therefore differ from the profit-maximizing one
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → True
+Typically the profit-maximizing output is smaller than the revenue-maximizing output when $C^{\\prime}>0$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 At an interior profit maximum one must have $P^{\\prime}(Q)=0$. Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that rearranges at once to
 
@@ -3934,10 +3944,10 @@ $$R^{\\prime}(Q)=C^{\\prime}(Q)$$
 
 which is the required first-order condition
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → True
+That MR$=$MC rearrangement is the standard first-order condition for an interior profit maximum.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 If $R^{\\prime}(Q)=0$ while $C^{\\prime}(Q)>0$, then
 
@@ -3945,7 +3955,9 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0-C^{\\prime}(Q)=-C^{\\prime}(Q)<
 
 At a revenue-stationary point with rising cost, profit is already locally decreasing
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`
+So at a revenue-stationary point with positive marginal cost, the firm should cut output a little, not expand.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -3956,7 +3968,7 @@ so an interior profit maximum requires the first-order condition
 $$P^{\\prime}(Q)=0\\qquad\\Leftrightarrow\\qquad R^{\\prime}(Q)=C^{\\prime}(Q),$$
 not merely $R^{\\prime}(Q)=0$. Maximizing revenue alone ignores cost and therefore does not automatically maximize profit when cost is positive. If cost rises with output ($C^{\\prime}>0$), a revenue peak with $R^{\\prime}=0$ already has
 $$P^{\\prime}=R^{\\prime}-C^{\\prime}=-C^{\\prime}<0,$$
-so the profit-maximizing output typically differs from the revenue-maximizing output.`,
+so the profit-maximizing output typically differs from the revenue-maximizing output. Revenue maximization ignores cost; profit maximization equates $R^{\\prime}$ with $C^{\\prime}$, not $R^{\\prime}$ with zero.`,
   },
   {
     id: "math-11-55",
@@ -3976,34 +3988,32 @@ so the profit-maximizing output typically differs from the revenue-maximizing ou
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 The absolute value $|x^{\\prime}(0)|=3$ is the speed of depletion at time $0$.
 
 Oil is therefore leaving the well at about $3$ barrels per minute
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**B.** → False
+The negative sign records direction (outflow); the magnitude $3$ is the depletion speed in barrels per minute.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**B.** → False
 
 The stock of oil remaining at time $0$ is the level $x(0)$, not the derivative $x^{\\prime}(0)$.
 
 The number $-3$ is a rate of change, not a count of barrels left
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`,
-      `**C.** → True
+One could have $x(0)=500$ barrels remaining while $x^{\\prime}(0)=-3$; the derivative never equals the stock.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 A negative derivative means the function is locally decreasing.
 
 Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasing at $t=0$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**D.** → True
+In plain language: the well is being drained at $t=0$, even though plenty of oil may still be underground.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 The linear approximation near $t=0$ reads
 
@@ -4013,16 +4023,18 @@ $$x(\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
 
 A small time step changes remaining oil by about $-3\\Delta t$ barrels
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**E.** → False
+For $\\Delta t=2$ minutes the predicted change is about $-6$ barrels; the same slope scales with the time step.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 A decreasing positive stock can still be large: the sign of the derivative does not force the sign of the level.
 
 Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(0)<0$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`
+A decreasing positive quantity stays positive until it actually crosses zero — slope sign and level sign are separate.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 55,
@@ -4031,9 +4043,7 @@ Do not confuse a stock with a rate: the function value (total cost, total profit
 $$x^{\\prime}(0)=-3$$
 is a rate: about $3$ barrels leave per minute at $t=0$. The negative sign means the stock is decreasing. The linear approximation
 $$x(0+\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
-governs small time steps. None of this identifies the level $x(0)$ itself, and a negative derivative does not force the stock $x(0)$ to be negative.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+governs small time steps. None of this identifies the level $x(0)$ itself, and a negative derivative does not force the stock $x(0)$ to be negative. The report $x^{\\prime}(0)=-3$ is a depletion rate; it neither equals nor forces the sign of the stock $x(0)$.`,
   },
   {
     id: "math-11-56",
@@ -4053,36 +4063,30 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 The one-unit reading of $R^{\\prime}(80)=12$ says that near $80$ tickets, selling one more ticket raises revenue by about $12$ euros
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+That is the standard one-unit reading of $R^{\\prime}(80)=12$ through $R(81)-R(80)\\approx 12$.
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 Average price would involve $\\dfrac{R(80)}{80}$, and the posted price is $p(80)$.
 
 Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**C.** → True
+Under downward-sloping demand one typically has $R^{\\prime}<p$, so $12$ would understate the sticker price even if price were constant across tickets — and here price is not given at all.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 Many different price schedules can produce the same marginal revenue at a single point.
 
 The report $R^{\\prime}(80)=12$ alone therefore does not reveal $p(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Many different $p(Q)$ can share the same product-rule value $R^{\\prime}(80)=12$ at a single point.
 
-Differentiating the price schedule $p(Q)$ alone only tracks how the sticker price moves. Marginal profit requires differentiating profit $P=R-C$, and marginal revenue requires differentiating $R=Qp$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 If marginal cost at $80$ tickets is $15$, then
 
@@ -4090,12 +4094,10 @@ $$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-15=-3<0$$
 
 Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+The expand-or-not test fails: extra revenue $12$ is less than extra cost $15$, so a little more output hurts profit.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 If marginal cost at $80$ tickets is $9$, then
 
@@ -4103,9 +4105,9 @@ $$P^{\\prime}(80)=12-9=3>0$$
 
 Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Now extra revenue beats extra cost on the margin, so the same ticket office should expand a little past $80$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 56,
@@ -4114,7 +4116,7 @@ The expand-or-not test compares slopes, not levels: raise output a little when $
 $$R^{\\prime}(80)=12$$
 euros per ticket. That is a marginal-revenue rate near $80$ tickets — about $12$ euros of extra revenue from one more ticket — not the posted price of each of the $80$ tickets, and not enough alone to recover the whole schedule $p(Q)$. Profit responds through
 $$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-C^{\\prime}(80).$$
-If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output lowers profit; if $C^{\\prime}(80)=9$ then $P^{\\prime}(80)=3>0$ and a little more raises profit.`,
+If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output lowers profit; if $C^{\\prime}(80)=9$ then $P^{\\prime}(80)=3>0$ and a little more raises profit. A single $R^{\\prime}$ value is a local revenue slope — not price, not the whole demand curve — and profit follows $R^{\\prime}-C^{\\prime}$.`,
   },
   {
     id: "math-11-57",
@@ -4134,34 +4136,32 @@ If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output low
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 "Extra revenue" and "extra cost" for a small expansion are precisely marginal revenue and marginal cost.
 
 The manager's rule is therefore: increase $Q$ a little when $R^{\\prime}(Q)>C^{\\prime}(Q)$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**B.** → True
+Translate "extra revenue" $\\mapsto R^{\\prime}(Q)$ and "extra cost" $\\mapsto C^{\\prime}(Q)$, then keep the inequality direction.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the inequality $R^{\\prime}>C^{\\prime}$ is identical to $P^{\\prime}>0$.
 
 The same rule can therefore be written as: increase $Q$ a little when $P^{\\prime}(Q)>0$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**C.** → False
+The two writings are interchangeable through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; choose whichever is clearer in context.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 The manager's rule explicitly uses cost through $C^{\\prime}(Q)$; it is a profit logic, not a pure revenue logic.
 
 It is not equivalent to maximizing revenue regardless of cost
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
-      `**D.** → True
+A pure revenue rule would ignore $C^{\\prime}$ entirely and expand whenever $R^{\\prime}>0$ — a different, usually worse, prescription.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 Equal extras mean $R^{\\prime}(Q)=C^{\\prime}(Q)$, hence
 
@@ -4169,16 +4169,18 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
 
 Marginal profit is zero there
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**E.** → True
+That is the boundary case of the expand-or-not test: neither a clear expand nor a clear cut on the first-order criterion.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**E.** → True
 
 Turning the manager's words into calculus replaces "extra revenue" and "extra cost" by the two derivatives $R^{\\prime}(Q)$ and $C^{\\prime}(Q)$.
 
 The comparison is precisely a comparison of those derivatives
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Once those derivatives are named, the manager's sentence becomes the calculus inequality $R^{\\prime}(Q)>C^{\\prime}(Q)$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 57,
@@ -4187,9 +4189,7 @@ The expand-or-not test compares slopes, not levels: raise output a little when $
 $$R^{\\prime}(Q)>C^{\\prime}(Q).$$
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the same rule is
 $$P^{\\prime}(Q)>0.$$
-It is a comparison of two derivatives, not a command to maximize revenue regardless of cost. When extra revenue equals extra cost one has $R^{\\prime}=C^{\\prime}$, hence $P^{\\prime}=0$.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+It is a comparison of two derivatives, not a command to maximize revenue regardless of cost. When extra revenue equals extra cost one has $R^{\\prime}=C^{\\prime}$, hence $P^{\\prime}=0$. Verbal "extra revenue vs extra cost" is exactly $R^{\\prime}$ vs $C^{\\prime}$, equivalently the sign of $P^{\\prime}$.`,
   },
   {
     id: "math-11-58",
@@ -4209,25 +4209,23 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Maximizing $U(x)$ looks at the height of total satisfaction; maximizing $A(x)=\\dfrac{U(x)}{x}$ looks at the quotient.
 
 Their critical points generally differ, and the two problems are not the same
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → False
+Critical points of $U$ solve $U^{\\prime}=0$; critical points of $A$ solve $U^{\\prime}=A$ — different equations in general.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 The condition $U^{\\prime}(x)=0$ stationarizes total utility, not average utility.
 
 An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x)$, and $U^{\\prime}=0$ does not automatically maximize $A$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**C.** → True
+At a bliss point of total utility one may have $U^{\\prime}=0$ while $A=U/x>0$, so $A^{\\prime}\\neq 0$ and average is not maximized there.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 Write $A=\\dfrac{U}{x}$. Setting $A^{\\prime}=0$ for $x>0$ yields
 
@@ -4235,25 +4233,27 @@ $$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=0$$
 
 hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**D.** → True
+That parallel to the cost rule MC$=$AC at the AC minimum is intentional: the same quotient calculus drives both stories.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 A zero derivative means a tiny change in the independent variable leaves the function locally unchanged.
 
 Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction locally unchanged
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+Through the linear approximation, $U(x+\\Delta x)-U(x)\\approx 0$ for small $\\Delta x$ — a flat spot of total satisfaction.
 
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 Average satisfaction can fall even while total utility still rises, once utility rises slower than hours — that is, when $0<U^{\\prime}<A$.
 
 Positive marginal utility therefore does not force average satisfaction to be rising
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+Whenever $0<U^{\\prime}<A$, total utility still rises while average utility falls — positive marginal utility with declining average.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 58,
@@ -4262,7 +4262,7 @@ Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while margin
 $$A(x)=\\dfrac{U(x)}{x}\\qquad(x>0)$$
 are different objectives. Marginal utility is $U^{\\prime}(x)$. Differentiating the average gives
 $$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=\\dfrac{U^{\\prime}(x)-A(x)}{x},$$
-so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(x)$ — not merely $U^{\\prime}(x)=0$. The condition $U^{\\prime}=0$ only says total utility is locally flat. Positive marginal utility ($U^{\\prime}>0$) does not force $A^{\\prime}>0$, because $A^{\\prime}$ also depends on how $U^{\\prime}$ compares with $A$.`,
+so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(x)$ — not merely $U^{\\prime}(x)=0$. The condition $U^{\\prime}=0$ only says total utility is locally flat. Positive marginal utility ($U^{\\prime}>0$) does not force $A^{\\prime}>0$, because $A^{\\prime}$ also depends on how $U^{\\prime}$ compares with $A$. Maximizing $U$ and maximizing $A=U/x$ are different problems; $A^{\\prime}=0$ forces $U^{\\prime}=A$, not $U^{\\prime}=0$.`,
   },
   {
     id: "math-11-59",
@@ -4282,29 +4282,25 @@ so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Marginal cost is defined as the derivative of the cost function. With $C(Q)$ in hand one simply differentiates:
 
 $$C^{\\prime}(Q)$$
 
 No demand or revenue data is required for that step, so from $C$ alone one can compute marginal cost
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → False
+Whatever formula $C$ has — polynomial, piecewise, or tabulated — its derivative is a cost-side object and needs no demand data.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 Marginal revenue is a property of revenue, which is not determined by cost.
 
 From $C$ alone one cannot compute $R^{\\prime}(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Revenue depends on the price schedule or demand facing the firm; cost data are silent about that demand side.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
       `**C.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 Profit is the difference of revenue and cost,
 
@@ -4316,19 +4312,19 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
 Cost alone supplies $C^{\\prime}$ but not $R^{\\prime}$, so $P^{\\prime}$ cannot be recovered from $C$ alone
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**D.** → True
+Without $R^{\\prime}$ one cannot form $P^{\\prime}=R^{\\prime}-C^{\\prime}$, so marginal profit is unidentified from $C$ alone.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 The comparison "$R^{\\prime}(Q)$ versus $C^{\\prime}(Q)$" needs a numerical value on the revenue side.
 
 Without a revenue function that side is missing, and the numerical test cannot be run
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → True
+The expand-or-not test needs both numbers; a lone $C^{\\prime}$ cannot be compared with a missing $R^{\\prime}$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 Once both functions are known, differentiating the difference gives
 
@@ -4336,9 +4332,9 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 
 Supplying $R(Q)$ later makes marginal profit available
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+At that moment the usual identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ becomes available for every output where both derivatives exist.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 59,
@@ -4347,9 +4343,7 @@ The expand-or-not test compares slopes, not levels: raise output a little when $
 $$C^{\\prime}(Q).$$
 Revenue $R(Q)$ and profit $P(Q)=R(Q)-C(Q)$ are not identified by cost data alone, so neither
 $$R^{\\prime}(Q)\\qquad\\text{nor}\\qquad P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
-can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$ cannot be carried out. Once a second analyst supplies $R(Q)$, marginal profit becomes available as $R^{\\prime}-C^{\\prime}$.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$ cannot be carried out. Once a second analyst supplies $R(Q)$, marginal profit becomes available as $R^{\\prime}-C^{\\prime}$. From $C$ alone compute $C^{\\prime}$ only; $R^{\\prime}$ and $P^{\\prime}$ wait for revenue information.`,
   },
   {
     id: "math-11-60",
@@ -4369,29 +4363,23 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Consistency of the three reports requires $P^{\\prime}=R^{\\prime}-C^{\\prime}$:
 
 $$18-11=7$$
 
 The posted triple matches that identity
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Any other combination such as $18-11=6$ would have been inconsistent with the posted $P^{\\prime}=7$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Those are the one-unit readings of the two derivatives: near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Those one-unit stories are the linear readings $R(Q+1)-R(Q)\\approx 18$ and $C(Q+1)-C(Q)\\approx 11$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Marginal profit is the rate of change of profit. With $P^{\\prime}(Q)=7$ the one-unit linear reading is
 
@@ -4399,21 +4387,19 @@ $$P(Q+1)-P(Q)\\approx 7$$
 
 so near the current output one more chair adds about $7$ euros of profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → False
+Equivalently, extra revenue about $18$ minus extra cost about $11$ leaves about $7$ euros of extra profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 The number $7$ is a rate of change of profit — euros of profit per extra chair — not the level $P(Q)$.
 
 Positive marginal profit does not force total profit to equal $7$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+The workshop could already be earning $100$ euros of profit while still adding about $7$ per extra chair — slope $\\neq$ level.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 At that other output,
 
@@ -4421,9 +4407,9 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=11-18=-7<0$$
 
 A negative derivative means a small expansion reduces profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+There the expand-or-not test flips: extra cost exceeds extra revenue, so a small expansion reduces profit.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 60,
@@ -4434,9 +4420,7 @@ These are consistent because
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=18-11=7.$$
 In words: one more chair adds about $18$ euros of revenue, about $11$ euros of cost, and about $7$ euros of profit. The number $7$ is a rate, not the stock of total profit. If instead one faced $R^{\\prime}=11$ and $C^{\\prime}=18$, then
 $$P^{\\prime}=11-18=-7<0,$$
-so a small expansion would reduce profit.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+so a small expansion would reduce profit. Consistency requires $P^{\\prime}=R^{\\prime}-C^{\\prime}$; each posted number is a rate, not a stock of profit.`,
   },
   {
     id: "math-11-61",
@@ -4456,8 +4440,6 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Profit is revenue minus cost, so marginal profit is the difference of the two derivatives:
 
 $$P_A^{\\prime}(Q)=R_A^{\\prime}(Q)-C_A^{\\prime}(Q)$$
@@ -4468,10 +4450,10 @@ $$P_A^{\\prime}(10)=9-6=3$$
 
 A's posted numbers already force $P_A^{\\prime}(10)=3$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+No further data are needed: the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$ already forces $P_A^{\\prime}(10)=3$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 For bakery B the same identity gives
 
@@ -4479,10 +4461,10 @@ $$P_B^{\\prime}(10)=R_B^{\\prime}(10)-C_B^{\\prime}(10)=5-7=-2$$
 
 A negative derivative means the profit function is locally decreasing, and near $10$ cakes baking a little more lowers B's profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**C.** → False
+Even though B's profit stock $P_B(10)=90$ looks healthy, the slope at $10$ cakes is already negative.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 The expansion test asks whether profit is still rising — the sign of $P^{\\prime}(Q)$ — not the size of today's profit stock $P(Q)$.
 
@@ -4494,10 +4476,8 @@ $$P_B^{\\prime}(10)=-2<0$$
 
 A small expansion raises A's profit and lowers B's, even though $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
+Ranking the heights $90>40$ reverses the correct advice: A should expand a little and B should not., so the statement is False.`,
       `**D.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 The one-unit reading of a derivative says that a small extra cake changes profit by about $P^{\\prime}(10)$ euros.
 
@@ -4509,16 +4489,18 @@ $$P_B^{\\prime}(10)=-2$$
 
 The extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → False
+Those are the one-unit linear readings of $P_A^{\\prime}(10)=3$ and $P_B^{\\prime}(10)=-2$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 $P_B(10)=90$ is a level — how much profit B has already earned today — while $P_B^{\\prime}(10)=-2$ is a rate.
 
 A large positive stock can sit on a downward slope, and knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`
+Here the larger stock belongs to the bakery with the worse (negative) marginal profit — level and slope disagree.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 61,
@@ -4527,9 +4509,7 @@ Pause on the trap: under a downward-sloping inverse demand the product rule give
 $$P_A^{\\prime}(10)=R_A^{\\prime}(10)-C_A^{\\prime}(10)=9-6=3>0,$$
 while the stock of profit is the separate number $P_A(10)=40$. At B,
 $$P_B^{\\prime}(10)=5-7=-2<0,$$
-with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros. The higher profit level at B does not decide the expansion question; only the signs of $P^{\\prime}$ do.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros. The higher profit level at B does not decide the expansion question; only the signs of $P^{\\prime}$ do. Same $Q=10$, opposite $P^{\\prime}$ signs: expand at A ($+3$), not at B ($-2$), despite $P_B>P_A$.`,
   },
   {
     id: "math-11-62",
@@ -4549,18 +4529,16 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
 
 $$C^{\\prime}(Q)=12\\qquad\\text{for }Q<50$$
 
 Before overtime kicks in, each extra unit adds $12$ euros of cost
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → True
+Until overtime begins, the cost curve is a ray through the origin with constant slope $12$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Rewrite the overtime formula by expanding the brackets:
 
@@ -4574,10 +4552,10 @@ $$20-12=8$$
 
 Overtime raises the cost of an extra unit by $8$ euros
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → False
+The overtime piece is steeper: every unit past $50$ adds $20$ euros rather than $12$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. Marginal revenue is still $R^{\\prime}(Q)=16$. Then
 
@@ -4585,10 +4563,10 @@ $$R^{\\prime}(Q)-C^{\\prime}(Q)=16-20=-4<0$$
 
 hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**D.** → True
+Just above $50$ the expand-or-not test already fails: extra revenue $16$ is less than overtime marginal cost $20$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 At $Q=40$ the workshop is still on the regular piece, so $C^{\\prime}(40)=12$. Compare with revenue:
 
@@ -4596,10 +4574,10 @@ $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=16-12=4>0$$
 
 A positive derivative means a small expansion raises profit at $Q=40$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+Before the kink, extra revenue still beats regular-crew marginal cost, so a small expansion at $40$ raises profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
 
@@ -4607,7 +4585,9 @@ $$\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}$$
 
 $$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
 
-The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output, so the statement is False.`
+The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output
+
+As $Q\\to\\infty$ average cost approaches $20$ from below; it equals $12$ only at the handover $Q=50$, not throughout overtime., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 62,
@@ -4619,7 +4599,7 @@ $$C^{\\prime}(Q)=20\\qquad(Q>50).$$
 Crossing into overtime therefore raises the cost of an extra unit by $20-12=8$ euros. Marginal revenue is constant at $R^{\\prime}(Q)=16$. Comparing slopes:
 $$P^{\\prime}(40)=16-12=4>0,$$
 while just above $50$ one has $P^{\\prime}=16-20=-4<0$, so overtime no longer leaves $R^{\\prime}>C^{\\prime}$. For $Q>50$,
-$$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$`,
+$$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$ Regular $C^{\\prime}=12$ vs overtime $C^{\\prime}=20$ against fixed $R^{\\prime}=16$: expand before $50$, not after. Average cost on overtime is $20-400/Q$, not $12$.`,
   },
   {
     id: "math-11-63",
@@ -4639,8 +4619,6 @@ $$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$`,
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 By definition $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$. Rearrange to recover the missing marginal revenue:
 
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
@@ -4649,39 +4627,35 @@ $$R^{\\prime}(Q)=4+11=15$$
 
 The whiteboard's two numbers imply $R^{\\prime}(Q)=15$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+The whiteboard's two rates are enough to recover the missing revenue slope; no price schedule is required for that step.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 The kiosk itself posted $P^{\\prime}(Q)=4>0$.
 
 A positive marginal profit means profit is locally increasing, and a small extra sale raises profit and a little expansion is recommended
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+The expand-or-not advice is immediate from the posted $P^{\\prime}=4>0$, without needing the recovered $R^{\\prime}$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**C.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
 
 Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
+Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects., so the statement is False.`,
       `**D.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 $P^{\\prime}(Q)=4$ is a rate of change of profit near the current output.
 
 The current profit level is the height $P(Q)$, which was never posted, and a slope of $4$ is compatible with many different heights, and the posted $P^{\\prime}$ is not the same information as $P(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → True
+The kiosk could be earning $2$ euros or $200$ euros of profit while the slope remains $4$ — height was never on the board.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 Repeat the same rearrangement with the alternative report $P^{\\prime}(Q)=-4$ and the same $C^{\\prime}(Q)=11$:
 
@@ -4691,7 +4665,9 @@ $$R^{\\prime}(Q)=-4+11=7$$
 
 The implied marginal revenue would be $7$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`
+The same rearrangement $R^{\\prime}=P^{\\prime}+C^{\\prime}$ works for any posted pair; only the arithmetic changes.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 63,
@@ -4701,7 +4677,7 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
 recovers the missing marginal revenue
 $$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)=4+11=15.$$
 Because $P^{\\prime}=4>0$, a small extra sale raises profit. The passer-by's invented schedule $p(Q)=30-\\dfrac{Q}{10}$ is not pinned down by the posted numbers, and in any case $p(Q)$ is not the same object as $R^{\\prime}(Q)$. The posted $P^{\\prime}=4$ is a rate, not the stock $P(Q)$. If instead $P^{\\prime}=-4$ with the same $C^{\\prime}=11$, then
-$$R^{\\prime}=-4+11=7.$$`,
+$$R^{\\prime}=-4+11=7.$$ From $P^{\\prime}=4$ and $C^{\\prime}=11$ recover $R^{\\prime}=15$; $P^{\\prime}>0$ says expand. Posted rates are not price and not the stock $P$.`,
   },
   {
     id: "math-11-64",
@@ -4721,25 +4697,21 @@ $$R^{\\prime}=-4+11=7.$$`,
     tactical_explanations: [
       `**A.** → True
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
-
 The economic question "how many extra euros does one more ticket bring in?" is answered by marginal revenue $R_A^{\\prime}(Q_A)$, not by the sticker price $p_A$.
 
 Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
+The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats., so the statement is True.`,
       `**B.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 When price need not fall to sell a little more, the product-rule penalty $Q\\,p^{\\prime}(Q)$ is zero and $R^{\\prime}(Q)=p(Q)$.
 
 Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**C.** → False
+In the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 A's expansion test compares extra revenue with extra cost:
 
@@ -4747,10 +4719,10 @@ $$P_A^{\\prime}(Q_A)=R_A^{\\prime}(Q_A)-C^{\\prime}=7-8=-1<0$$
 
 The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**D.** → True
+Comparing sticker price with marginal cost is the wrong test whenever MR lies below price — A's trap in this stem.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 For cinema B,
 
@@ -4758,12 +4730,10 @@ $$P_B^{\\prime}(Q_B)=R_B^{\\prime}(Q_B)-C^{\\prime}=10-8=2>0$$
 
 Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+B's expand-or-not comparison uses the true extra revenue $10$ against cost $8$, and the inequality favours expansion.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**E.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 Marginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here
 
@@ -4773,7 +4743,9 @@ $$P_B^{\\prime}(Q_B)=10-8=2$$
 
 A has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`
+A has the higher price but the lower marginal profit ($-1$ versus $+2$); price rankings do not decide $P^{\\prime}$ rankings.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 64,
@@ -4786,9 +4758,7 @@ Cinema B has
 $$p_B=10,\\qquad R_B^{\\prime}=10,$$
 consistent with a price that need not be cut for one more seat, and
 $$P_B^{\\prime}=10-8=2>0.$$
-So B should expand a little while A should not. Comparing posted prices $p_A>p_B$ does not decide which cinema has the larger marginal profit.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+So B should expand a little while A should not. Comparing posted prices $p_A>p_B$ does not decide which cinema has the larger marginal profit. Expand on $R^{\\prime}$ vs $C^{\\prime}=8$: A has $7-8<0$, B has $10-8>0$. Do not compare sticker prices to cost or to each other for the expansion test.`,
   },
   {
     id: "math-11-65",
@@ -4808,18 +4778,16 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives
 
 $$R^{\\prime}(Q)=15\\qquad\\text{for }Q<20$$
 
 For $Q<20$, marginal revenue is $15$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+Until the twentieth drink, revenue is a ray of slope $15$, so each extra happy-hour drink adds $15$ euros of revenue.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
 
@@ -4827,10 +4795,10 @@ $$R^{\\prime}(Q)=8\\qquad\\text{for }Q>20$$
 
 Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**C.** → True
+Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 At $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then
 
@@ -4838,10 +4806,10 @@ $$P^{\\prime}(12)=R^{\\prime}(12)-C^{\\prime}(12)=15-10=5>0$$
 
 A positive derivative means a small extra drink raises profit at $Q=12$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**D.** → False
+Happy-hour marginal revenue still beats mixing cost, so a small extra drink at $Q=12$ raises profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
 
@@ -4849,16 +4817,18 @@ $$P^{\\prime}(25)=8-10=-2<0$$
 
 Post-promotion revenue no longer beats cost at the margin
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is False.`,
-      `**E.** → False
+At $Q=25$ one should not expand: the post-promotion slope $8$ is already below cost $10$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+      `**E.** → False
 
 The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
 
 At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is False.`
+Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 65,
@@ -4869,9 +4839,7 @@ After the promotion, $R(Q)=300+8(Q-20)$ gives
 $$R^{\\prime}(Q)=8\\qquad(Q>20).$$
 Mixing cost is constant at $C^{\\prime}(Q)=10$. Comparing pieces:
 $$P^{\\prime}(12)=15-10=5>0,$$
-while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no longer beats cost at the margin. The extra drink at $Q=25$ adds $8$ euros of revenue, not the happy-hour figure $15$. Happy-hour $R^{\\prime}=15$ vs post-promotion $R^{\\prime}=8$ against $C^{\\prime}=10$: expand at $12$, not at $25$.`,
   },
   {
     id: "math-11-66",
@@ -4891,16 +4859,12 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Saying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\\prime}(Q)>0$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$.
+"Would raise profit" is ordinary language for a positive profit slope at the current output.
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the cost office reports $C^{\\prime}(Q)=14$, the advice $P^{\\prime}(Q)>0$ rearranges to
 
@@ -4908,38 +4872,36 @@ $$R^{\\prime}(Q)>C^{\\prime}(Q)=14$$
 
 The advice already means $R^{\\prime}(Q)>14$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**C.** → False
+Rearranging $P^{\\prime}=R^{\\prime}-14>0$ forces the lower bound $R^{\\prime}>14$ on the missing marginal revenue.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 The advice speaks only about the sign of the slope $P^{\\prime}(Q)$.
 
 It does not reveal the current profit level $P(Q)$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+A factory can be losing money overall while still having $P^{\\prime}>0$, or earning a fortune while $P^{\\prime}>0$ — the advice is silent about $P(Q)$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**D.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 Nothing in the consultant's sentence or the cost-office report produces the quotient $\\dfrac{C(Q)}{Q}$.
 
 The advice does not tell you average cost
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum.
+Average cost would need the stock $C(Q)$ as well as $Q$; neither the consultant nor the reported $C^{\\prime}=14$ supplies $C(Q)$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 The first adviser's claim already forces $R^{\\prime}(Q)>14$.
 
 A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting the consultant's expand advice.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 66,
@@ -4948,9 +4910,7 @@ The expand-or-not test compares slopes, not levels: raise output a little when $
 $$P^{\\prime}(Q)>0.$$
 With the cost office's report $C^{\\prime}(Q)=14$ and the identity $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that is equivalent to the bound
 $$R^{\\prime}(Q)>14.$$
-The advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\\dfrac{C(Q)}{Q}$. A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate $R^{\\prime}>14$ and therefore contradict the first adviser.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+The advice constrains the slope of profit, not the stock $P(Q)$ and not the average cost $\\dfrac{C(Q)}{Q}$. A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate $R^{\\prime}>14$ and therefore contradict the first adviser. "Raise profit" means $P^{\\prime}>0$, hence $R^{\\prime}>14$ given $C^{\\prime}=14$. No information about $P$ or $C/Q$ is included.`,
   },
   {
     id: "math-11-67",
@@ -4970,18 +4930,16 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
-
 Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and about $C_1^{\\prime}=9$ euros of cost:
 
 $$P^{\\prime}\\text{ via Plant 1}=11-9=2>0$$
 
 That choice raises the firm's profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → False
+Plant 1 passes the expand-or-not test: extra revenue $11$ beats Plant 1's extra cost $9$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 Both plants sell into the same market, so both face the same extra revenue $R'=11$.
 
@@ -4991,30 +4949,28 @@ $$11-13=-2<0$$
 
 Selling into the same market does not make Plant 2 the right plant
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**C.** → True
+Same market revenue does not erase a cost disadvantage; Plant 2 fails $R'>C_2'$ and should not take the unit.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → True
 
 With the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.
 
 Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for that extra unit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → False
+With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 Belonging to one firm does not force the two plants' current marginal costs to be equal.
 
 Here they are explicitly different, $9$ versus $13$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+In the short run, plants can — and here do — operate with different marginal costs; equality is an optimality target, not an identity.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
       `**E.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 If instead $R'=8$, then both plant-level comparisons fail:
 
@@ -5024,9 +4980,9 @@ $$8-13=-5<0$$
 
 Neither plant should produce the extra unit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+When $R'=8$ lies below both plants' marginal costs, the expand-or-not test fails everywhere and the unit should not be produced.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 67,
@@ -5036,9 +4992,7 @@ $$P_1^{\\prime}=11-9=2>0$$
 and producing there raises profit. Plant 2 has $C_2^{\\prime}=13$, so
 $$P_2^{\\prime}=11-13=-2<0$$
 and producing there lowers profit. The firm should prefer the lower-marginal-cost plant for that extra unit. Belonging to one firm does not force $C_1^{\\prime}=C_2^{\\prime}$. If instead $R'=8$, then both comparisons fail:
-$$8-9<0,\\qquad 8-13<0.$$
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+$$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 2 ($C'=13$) does not. If $R'=8$, neither plant should produce the unit.`,
   },
   {
     id: "math-11-68",
@@ -5058,18 +5012,16 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 On the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives
 
 $$T^{\\prime}(y)=\\dfrac{1}{5}\\qquad\\text{for }y<1000$$
 
 For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**B.** → True
+On the first bracket the tax rule is a ray through the origin with slope $1/5$, so the marginal rate equals that slope.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
 
@@ -5077,10 +5029,10 @@ $$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad\\text{for }y>1000$$
 
 Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**C.** → False
+The kink at $y=1000$ is a jump in the marginal rate from $0.2$ to $0.4$, while the tax level $T$ itself stays continuous.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 At $y=1500$, total tax is
 
@@ -5094,25 +5046,25 @@ $$\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}$$
 
 which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
+Average tax blends the cheap first bracket with the dearer second; it lies strictly between $1/5$ and $2/5$ at $y=1500$., so the statement is False.`,
       `**D.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 At $y=1500$ the taxpayer is in the second bracket, where $T^{\\prime}(y)=\\dfrac{2}{5}=0.4$.
 
 About $40$ cents of a small extra euro of income is therefore taxed away
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is True.`,
-      `**E.** → False
+That is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**E.** → False
 
 The average rate $\\dfrac{T(1500)}{1500}=\\dfrac{4}{15}$ is only a quotient at one income.
 
 It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many schedules could share that average while having different local slopes
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 68,
@@ -5123,7 +5075,7 @@ Above $1000$, $T(y)=200+\\dfrac{2}{5}(y-1000)$ gives
 $$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad(y>1000).$$
 Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths. At $y=1500$,
 $$T(1500)=200+\\dfrac{2}{5}\\cdot 500=400,\\qquad\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}\\neq\\dfrac{2}{5},$$
-while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope.`,
+while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac{2}{5}$. Knowing only that average does not recover the second-bracket slope. First-bracket $T^{\\prime}=1/5$, second-bracket $T^{\\prime}=2/5$. At $y=1500$, average tax is $4/15\\neq 2/5$ while about $40$ cents of an extra euro is taxed away.`,
   },
   {
     id: "math-11-69",
@@ -5143,49 +5095,47 @@ while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Average cost falls when marginal cost lies below average cost: $A^{\\prime}(Q)<0$ is equivalent to $C^{\\prime}(Q)<A(Q)$.
 
 With $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → False
+From $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the inequality $C^{\\prime}<A=12$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 The reports give $C^{\\prime}(Q)<12$ and $R^{\\prime}(Q)=10$, but they do not pin $C^{\\prime}$ below $10$.
 
 Marginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\\prime}(Q)<10$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**C.** → False
+The open interval $(10,12)$ is still available for $C^{\\prime}$: average cost falls while $C^{\\prime}>R^{\\prime}$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**C.** → False
 
 Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ while $C^{\\prime}$ is known only to satisfy $C^{\\prime}<12$.
 
 If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
+Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone., so the statement is False.`,
       `**D.** → True
-
-The claim mixes — or correctly separates — average and marginal ideas. Average is a quotient of totals; marginal is a derivative (a slope).
 
 Falling average cost only forces $C^{\\prime}<A=12$; it does not force $C^{\\prime}<R^{\\prime}=10$.
 
 Marginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$) while average cost is falling
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+Example: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\prime}>10=R^{\\prime}$ (MR below MC).
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 Differentiating average cost $A(Q)=\\dfrac{C(Q)}{Q}$ produces $A^{\\prime}(Q)$, which tracks how the average moves.
 
 Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 69,
@@ -5194,7 +5144,7 @@ Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while margin
 $$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q},$$
 so $A^{\\prime}<0$ implies only
 $$C^{\\prime}(Q)<A(Q)=12.$$
-Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not force $C^{\\prime}<10$, nor $P^{\\prime}=R^{\\prime}-C^{\\prime}>0$: one could still have, for instance, $C^{\\prime}=11$, which satisfies $C^{\\prime}<12$ while $C^{\\prime}>R^{\\prime}$. Differentiating $A$ produces $A^{\\prime}$, not marginal cost $C^{\\prime}$.`,
+Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not force $C^{\\prime}<10$, nor $P^{\\prime}=R^{\\prime}-C^{\\prime}>0$: one could still have, for instance, $C^{\\prime}=11$, which satisfies $C^{\\prime}<12$ while $C^{\\prime}>R^{\\prime}$. Differentiating $A$ produces $A^{\\prime}$, not marginal cost $C^{\\prime}$. Falling $A=12$ gives only $C^{\\prime}<12$, not $C^{\\prime}<R^{\\prime}=10$ and not $P^{\\prime}>0$. Differentiating $A$ yields $A^{\\prime}$, not $C^{\\prime}$.`,
   },
   {
     id: "math-11-70",
@@ -5214,18 +5164,16 @@ Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not fo
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 North's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gives
 
 $$P_N^{\\prime}(Q)=12$$
 
 at every $Q$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**B.** → True
+Equivalently $R_N^{\\prime}-C_N^{\\prime}=30-18=12$; North's marginal profit is the constant $12$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**B.** → True
 
 At $Q=15$, South's posted schedule gives
 
@@ -5233,10 +5181,10 @@ $$P_S^{\\prime}(15)=20-15=5>0$$
 
 A positive derivative means South's profit is still locally increasing at $Q=15$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**C.** → True
+South should still expand a little at $15$ packs: extra profit is still positive on the margin.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**C.** → True
 
 At $Q=25$,
 
@@ -5244,19 +5192,19 @@ $$P_S^{\\prime}(25)=20-25=-5<0$$
 
 A negative derivative means South's profit is locally decreasing at $Q=25$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**D.** → False
+Past $Q=20$, South's posted schedule has $P_S^{\\prime}<0$, so at $25$ a small expansion lowers South's profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**D.** → False
 
 The shape of $P_S^{\\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
 
 South could currently earn more or less total profit; the claim that South must earn less does not follow
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
-      `**E.** → True
+North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified from $P_S^{\\prime}$ alone — no forced ranking.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → True
 
 North's marginal profit is
 
@@ -5264,7 +5212,9 @@ $$P_N^{\\prime}(Q)=R_N^{\\prime}(Q)-C_N^{\\prime}(Q)=30-18=12$$
 
 The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Fixed costs shift profit levels but cancel in every marginal comparison — a recurring theme in these stems.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 70,
@@ -5273,7 +5223,7 @@ The expand-or-not test compares slopes, not levels: raise output a little when $
 $$R_N^{\\prime}=30,\\qquad C_N^{\\prime}=18,\\qquad P_N^{\\prime}(Q)=30-18=12$$
 at every $Q$. The intercept $40$ is a fixed cost and does not enter the marginal comparison. South posts only
 $$P_S^{\\prime}(Q)=20-Q.$$
-At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\\prime}$ say nothing about which firm currently has the larger stock of total profit. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), while at $Q=25$ one has $P_S^{\\prime}(25)=-5<0$ (locally decreasing). Different shapes of $P^{\\prime}$ say nothing about which firm currently has the larger stock of total profit. North has constant $P_N^{\\prime}=12$; South has $P_S^{\\prime}=20-Q$ (positive at $15$, negative at $25$). Slope shapes do not rank profit stocks.`,
   },
   {
     id: "math-11-71",
@@ -5293,18 +5243,16 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 On the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives
 
 $$U^{\\prime}(x)=10-x\\qquad\\text{for }x<8$$
 
 For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**B.** → True
+Marginal utility declines linearly from $10$ at $x=0$ toward $2$ as $x$ approaches $8$ from the left.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 At $x=6$,
 
@@ -5312,10 +5260,10 @@ $$U^{\\prime}(6)=10-6=4>0$$
 
 A positive derivative means a little extra leisure still raises satisfaction at $x=6$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**C.** → True
+At six hours the student is still on the rising piece of $U$, so a little more leisure still helps.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**C.** → True
 
 Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
 
@@ -5323,10 +5271,10 @@ $$U^{\\prime}(x)=0\\qquad\\text{for }x>8$$
 
 Marginal utility is therefore $0$ beyond eight hours
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is True.`,
-      `**D.** → False
+A flat utility function has zero slope: further leisure past eight hours is satiation in this model.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 $U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
 
@@ -5336,10 +5284,10 @@ $$U^{\\prime}(8^{-})=10-8=2$$
 
 The eighth hour adds about $2$ units of utility, not $48$
 
-Write the comparison on the page before judging the wording: name the relevant function, differentiate if needed, and only then match the claim's numbers or inequalities., so the statement is False.`,
-      `**E.** → True
+Total utility $48$ accumulates over all eight hours; the last hour's contribution is the marginal figure near $2$, not the stock $48$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → True
 
 For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
 
@@ -5347,7 +5295,9 @@ $$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4$$
 
 Average utility at $x=12$ equals $4$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`
+Once utility has flattened, stretching leisure to $12$ hours dilutes the same $48$ utils over more hours, giving average $4$.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 71,
@@ -5357,9 +5307,7 @@ $$U^{\\prime}(x)=10-x\\qquad(x<8).$$
 At $x=6$ one has $U^{\\prime}(6)=4>0$, so a little extra leisure still raises satisfaction. For $x>8$ the rule flattens to the constant $U(x)=48$, hence
 $$U^{\\prime}(x)=0\\qquad(x>8).$$
 The level $U(8)=48$ is total utility at eight hours, not the contribution of the eighth hour alone. Average utility at $x=12$ is
-$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$ For $x<8$, $U^{\\prime}=10-x>0$ at $x=6$; for $x>8$, $U^{\\prime}=0$. The stock $U(8)=48$ is not the eighth hour's contribution.`,
   },
   {
     id: "math-11-72",
@@ -5379,8 +5327,6 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 From $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the first shop's reports,
 
 $$-3=16-C^{\\prime}(Q)$$
@@ -5389,19 +5335,19 @@ $$C^{\\prime}(Q)=16-(-3)=19$$
 
 The first printer's implied marginal cost is $19$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**B.** → False
+Rearrangement of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ always recovers the missing piece when two of the three rates are known.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → False
 
 The first printer has $P^{\\prime}(Q)=-3<0$, so profit is locally decreasing.
 
 Printing a little more would lower profit, not raise it
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
-      `**C.** → True
+With $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more would reduce profit.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`,
+      `**C.** → True
 
 The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
 
@@ -5409,25 +5355,27 @@ $$P^{\\prime}(Q)=16-16=0$$
 
 its marginal profit is $0$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**D.** → False
+Equal marginal revenue and marginal cost is exactly the first-order condition $P^{\\prime}=0$ at that run length.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**D.** → False
 
 Both printers share $R^{\\prime}(Q)=16$, but their cost (or profit) companions differ.
 
 The first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do not have the same extra-profit figure
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`,
-      `**E.** → False
+Shared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\prime}$; different cost slopes produce different profit slopes.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → False
 
 The posted figure $P^{\\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
 
 The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`
+A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 72,
@@ -5436,7 +5384,7 @@ Pause on the trap: under a downward-sloping inverse demand the product rule give
 $$C^{\\prime}(Q)=R^{\\prime}-P^{\\prime}=16-(-3)=19.$$
 Because $P^{\\prime}=-3<0$, the first printer should not print a little more. The second shop posts $C^{\\prime}(Q)=16$ with the same $R^{\\prime}$, so
 $$P^{\\prime}(Q)=16-16=0.$$
-Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\\prime}=-3$ is not its stock of total profit. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+Same extra-revenue figure does not force the same extra-profit figure, and the first shop's rate $P^{\\prime}=-3$ is not its stock of total profit. First shop: $P^{\\prime}=-3$ and $R^{\\prime}=16$ imply $C^{\\prime}=19$ (do not expand). Second: $R^{\\prime}=C^{\\prime}=16$ imply $P^{\\prime}=0$.`,
   },
   {
     id: "math-11-73",
@@ -5456,20 +5404,16 @@ Same extra-revenue figure does not force the same extra-profit figure, and the f
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Before the tax,
 
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=14-10=4>0$$
 
 A positive derivative means a small expansion raises profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Before the tax the expand-or-not test passes: extra revenue $14$ beats extra cost $10$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
-
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
 
 The new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
 
@@ -5477,12 +5421,10 @@ $$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=10+5=15$$
 
 After the tax the relevant marginal cost is $15$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+A per-unit tax of $5$ shifts marginal cost up by exactly $5$, from $10$ to $15$.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 After the tax, compare the unchanged marginal revenue with the new marginal cost:
 
@@ -5490,19 +5432,19 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)=14-15=-1<0$$
 
 A negative derivative means a small expansion lowers profit rather than raising it
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**D.** → True
+After the tax the test fails: extra revenue $14$ no longer covers the taxed marginal cost $15$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
 
 After the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**E.** → True
+Using the old $C^{\\prime}=10$ after the tax would understate extra cost and wrongly recommend expansion.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → True
 
 The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
 
@@ -5510,9 +5452,9 @@ $$R^{\\prime}(Q)=14$$
 
 still after the tax
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Only the cost side of the ledger changed; the revenue schedule and its derivative are untouched by the tax.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 73,
@@ -5525,9 +5467,7 @@ hence
 $$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=15,$$
 while revenue — and therefore $R^{\\prime}=14$ — is unchanged. After the tax,
 $$\\widetilde{P}^{\\prime}=14-15=-1<0,$$
-so a small expansion no longer raises profit. The extra-cost side must now differentiate $\\widetilde{C}$, not the old $C$.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+so a small expansion no longer raises profit. The extra-cost side must now differentiate $\\widetilde{C}$, not the old $C$. Before: $P^{\\prime}=14-10=4>0$. After: $\\widetilde{C}^{\\prime}=15$, so $\\widetilde{P}^{\\prime}=14-15=-1<0$, with $R^{\\prime}$ unchanged.`,
   },
   {
     id: "math-11-74",
@@ -5547,8 +5487,6 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 For $Q<30$, price is $p(Q)=40-Q$, so revenue is
 
 $$R(Q)=Q(40-Q)=40Q-Q^{2}$$
@@ -5559,19 +5497,19 @@ $$R^{\\prime}(Q)=40-2Q$$
 
 which matches the claim
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → True
+The product rule on $R=Q(40-Q)$ immediately yields $R^{\\prime}=40-2Q$ on the first piece.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**B.** → True
 
 Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
 
 Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → True
+With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 At $Q=12<30$,
 
@@ -5583,10 +5521,10 @@ $$P^{\\prime}(12)=16-12=4>0$$
 
 A small expansion raises profit at $Q=12$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**D.** → False
+At $Q=12$, extra revenue $16$ beats packing cost $12$, so a small expansion raises profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 At $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then
 
@@ -5594,10 +5532,10 @@ $$R^{\\prime}(35)-C^{\\prime}(35)=10-12=-2<0$$
 
 hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**E.** → False
+Clearance MR $10$ lies below packing cost $12$, so the expand-or-not test fails at $Q=35$.
 
-Watch the MR-versus-price distinction carefully here: extra revenue from one more unit is $R^{\\prime}$, which need not equal the posted price $p$.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → False
 
 At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is
 
@@ -5605,7 +5543,9 @@ $$p(12)=40-12=28$$
 
 Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+The gap $28-16=12$ equals $-Q\\,p^{\\prime}(Q)$ at $Q=12$ with $p^{\\prime}=-1$ — the usual MR-versus-price wedge.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 74,
@@ -5616,7 +5556,7 @@ Once clearance pricing begins, $p(Q)=10$ is flat, hence
 $$R(Q)=10Q,\\qquad R^{\\prime}(Q)=10\\qquad(Q>30).$$
 Packing cost has constant $C^{\\prime}(Q)=12$. At $Q=12$,
 $$P^{\\prime}(12)=(40-24)-12=4>0,$$
-so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<12=C^{\\prime}$, so $R^{\\prime}>C^{\\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\\prime}(12)=16$, not $28$. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<12=C^{\\prime}$, so $R^{\\prime}>C^{\\prime}$ fails. At $Q=12$ the posted price is $p(12)=28$, while extra revenue is $R^{\\prime}(12)=16$, not $28$. For $Q<30$, $R^{\\prime}=40-2Q$; for $Q>30$, $R^{\\prime}=10$. Against $C^{\\prime}=12$: expand at $12$ ($R^{\\prime}=16$), not at $35$. At $Q=12$, $p=28\\neq R^{\\prime}=16$.`,
   },
   {
     id: "math-11-75",
@@ -5636,18 +5576,16 @@ so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<1
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Average cost falls when marginal cost lies below average cost. For firm A,
 
 $$C_A^{\\prime}=5<8=A_A$$
 
 Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → True
+The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives $A_A^{\\prime}<0$ precisely because $5<8$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
 
@@ -5655,10 +5593,10 @@ $$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$$
 
 For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → False
+For B the same rule gives $A_B^{\\prime}>0$ because marginal cost $9$ sits above average cost $6$.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
 
@@ -5668,10 +5606,10 @@ $$7<9\\qquad\\text{at B}$$
 
 A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**D.** → True
+Average-cost rankings are the wrong input to the expand-or-not test; B's lower average does not license taking the extra delivery.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
 
@@ -5679,10 +5617,10 @@ $$7>5=C_A^{\\prime}\\qquad\\text{but}\\qquad 7<9=C_B^{\\prime}$$
 
 Only firm A satisfies $R'>C'$
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → True
+A alone has extra revenue above extra cost; B has the inequality reversed.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**E.** → True
 
 The extra-profit figures are
 
@@ -5692,16 +5630,16 @@ $$P_B^{\\prime}=7-9=-2$$
 
 The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`
+Those $\\pm 2$ figures are exactly $R'-C'$ at each firm — the one-unit profit consequences of taking the delivery.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 75,
     solution_overview:
       `Both firms face $R'=7$. Average-cost movement is read from $C^{\\prime}$ versus $A$: Firm A has $C_A^{\\prime}=5<A_A=8$, so $A_A$ is falling; Firm B has $C_B^{\\prime}=9>A_B=6$, so $A_B$ is rising. The extra-unit test uses $R'$ versus $C^{\\prime}$, not average cost:
 $$P_A^{\\prime}=7-5=2>0,\\qquad P_B^{\\prime}=7-9=-2<0.$$
-Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+Only A has $R'>C'$. Being cheaper on average does not decide who should take the extra delivery. A: $C'=5<A=8$ (AC falling), $P'=7-5=2>0$. B: $C'=9>A=6$ (AC rising), $P'=7-9=-2<0$. Average rankings do not decide expansion.`,
   },
   {
     id: "math-11-76",
@@ -5721,56 +5659,56 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Studio A reports $P_A(Q)=50>0$ and $P_A^{\\prime}(Q)=0$.
 
 The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**B.** → True
+Studio A sits on a flat spot of the profit graph at height $50$: positive stock, zero slope.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 Studio B reports $P_B(Q)=0$ together with $P_B^{\\prime}(Q)=4>0$.
 
 Breaking even today is compatible with an upward slope: a small expansion would push profit above zero
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**C.** → False
+Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → False
 
 Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
 
 The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`,
-      `**D.** → True
+"Earns nothing" would mean $P_A(Q)=0$; the report $P_A^{\\prime}=0$ says something entirely different.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**D.** → True
 
 $P_B^{\\prime}(Q)=4>0$ is an expansion signal for B.
 
 For A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, the usual first-order condition
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is True.`,
-      `**E.** → False
+B's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is already the MR$=$MC first-order condition.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**E.** → False
 
 A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\\prime}(Q)=4>0$.
 
 Current break-even does not forbid a positive marginal profit
 
-Pause on the trap: average cost is a stock-per-unit quotient $C/Q$, while marginal cost is the slope $C^{\\prime}$. Dividing by $Q$ never turns one into the other except at special points such as an average-cost minimum., so the statement is False.`
+Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 76,
     solution_overview:
       `Studio A reports stock $P_A(Q)=50$ with slope $P_A^{\\prime}(Q)=0$, hence
 $$R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$$
-and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+and a tiny output change leaves profit locally unchanged even though the firm is already earning a solid profit. Studio B reports stock $P_B(Q)=0$ with slope $P_B^{\\prime}(Q)=4>0$, so it is currently breaking even yet a small expansion would start to create profit. Height and slope are independent: $P^{\\prime}=0$ does not mean the firm earns nothing, and $P=0$ does not forbid a positive marginal profit. A: stock $P=50$ with slope $P^{\\prime}=0$ (MR$=$MC). B: stock $P=0$ with slope $P^{\\prime}=4>0$ (expand). Height and slope are independent.`,
   },
   {
     id: "math-11-77",
@@ -5790,20 +5728,16 @@ and a tiny output change leaves profit locally unchanged even though the firm is
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives
 
 $$C_{\\mathrm{wd}}^{\\prime}(Q)=12$$
 
 On a weekday each extra sale adds $12$ euros of cost
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Weekday cost is a ray of slope $12$, so each extra weekday sale adds $12$ euros of cost.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**B.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}^{\\prime}(Q)=20$. The weekday slope was $12$, and
 
@@ -5811,10 +5745,10 @@ $$20-12=8$$
 
 Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**C.** → True
+Weekend overtime steepens the cost ray from slope $12$ to slope $20$ — an $8$-euro marginal penalty.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 On a weekday,
 
@@ -5822,12 +5756,10 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)=15-12=3>0$$
 
 A positive marginal profit means a small extra sale raises weekday profit
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$.
+Weekday expand-or-not: extra revenue $15$ beats weekday extra cost $12$, so a small extra sale raises profit.
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
       `**D.** → False
-
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
 
 Weekend marginal profit uses the weekend cost slope, not the weekday one:
 
@@ -5835,16 +5767,18 @@ $$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)=15-20=-5$$
 
 That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**E.** → True
+Weekend marginal profit is $15-20=-5$, not the weekday $3$; same $R^{\\prime}$ with a higher $C^{\\prime}$ flips the advice.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → True
 
 $R^{\\prime}(Q)=15$ is the same number both days.
 
 What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`
+Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
+
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
@@ -5857,7 +5791,7 @@ The overtime gap is $20-12=8$ euros on an extra sale. Marginal revenue is $R^{\\
 $$P_{\\mathrm{wd}}^{\\prime}=15-12=3>0,$$
 while weekend marginal profit is
 $$P_{\\mathrm{we}}^{\\prime}=15-20=-5\\neq 3.$$
-The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\\prime}$.`,
+The weekday-versus-weekend switch changes which cost function is differentiated; it does not change the meaning of $R^{\\prime}$. Weekday $C^{\\prime}=12$ gives $P^{\\prime}=15-12=3>0$; weekend $C^{\\prime}=20$ gives $P^{\\prime}=15-20=-5$. Same $R^{\\prime}$, different cost piece.`,
   },
   {
     id: "math-11-78",
@@ -5877,18 +5811,16 @@ The weekday-versus-weekend switch changes which cost function is differentiated;
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 "Extra revenue smaller than extra cost" is precisely the inequality of derivatives
 
 $$R_L^{\\prime}(Q)<C_L^{\\prime}(Q)$$
 
 The reviewer's sentence is already that comparison
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**B.** → True
+The reviewer's sentence is ordinary language for the inequality of derivatives $R_L^{\\prime}<C_L^{\\prime}$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 From $P_L^{\\prime}(Q)=R_L^{\\prime}(Q)-C_L^{\\prime}(Q)$ and the posted numbers,
 
@@ -5898,19 +5830,19 @@ $$C_L^{\\prime}(Q)=13$$
 
 Shop L's implied marginal cost is $13$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**C.** → True
+Check: $9<13$ matches the reviewer's claim, and $P_L^{\\prime}=9-13=-4$ matches the posted profit slope.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**C.** → True
 
 At Shop M, $R_M^{\\prime}(Q)=9>6=C_M^{\\prime}(Q)$, so extra revenue is larger than extra cost.
 
 That is the opposite of the reviewer's sentence, and Shop M does not satisfy it
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**D.** → True
+At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue smaller than extra cost."
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → True
 
 Shop M has
 
@@ -5918,16 +5850,18 @@ $$P_M^{\\prime}(Q)=9-6=3>0$$
 
 while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is True.`,
-      `**E.** → False
+Opposite signs of $P^{\\prime}$ give opposite expand-or-not advice at the two shops.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**E.** → False
 
 Both shops share $R^{\\prime}(Q)=9$, but their cost slopes differ: $C_L^{\\prime}(Q)=13$ versus $C_M^{\\prime}(Q)=6$.
 
 Same extra revenue does not force the same extra cost
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$., so the statement is False.`
+Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 78,
@@ -5938,7 +5872,7 @@ With the posted $R_L^{\\prime}=9$ and $P_L^{\\prime}=-4$, rearrange to recover
 $$C_L^{\\prime}=R_L^{\\prime}-P_L^{\\prime}=9-(-4)=13,$$
 which indeed satisfies $9<13$. Shop M faces the same $R_M^{\\prime}=9$ but $C_M^{\\prime}=6$, so $9>6$ and M does not satisfy the reviewer's sentence. Marginal profits are
 $$P_M^{\\prime}=9-6=3>0,\\qquad P_L^{\\prime}=-4<0,$$
-so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ does not force the same extra-cost figure.`,
+so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ does not force the same extra-cost figure. Shop L: $R'=9$, $P'=-4$ imply $C'=13$ (reviewer's sentence holds). Shop M: $R'=9>C'=6$, so M fails the sentence and should expand.`,
   },
   {
     id: "math-11-79",
@@ -5958,8 +5892,6 @@ so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ d
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 On the pre-capacity piece,
 
 $$P(Q)=8Q-\\dfrac{1}{10}Q^{2}$$
@@ -5972,10 +5904,10 @@ $$P^{\\prime}(Q)=8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30$$
 
 The claim matches
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**B.** → True
+Differentiate $8Q-\\dfrac{1}{10}Q^{2}$ term by term: the quadratic term contributes $-\\dfrac{2}{10}Q=-\\dfrac{1}{5}Q$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 At $Q=20$,
 
@@ -5985,10 +5917,10 @@ $$P^{\\prime}(20)=8-4=4>0$$
 
 A small expansion raises profit at $Q=20$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**C.** → True
+At $Q=20$ the firm is still below capacity on an upward stretch of profit, so a small expansion helps.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**C.** → True
 
 On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
 
@@ -5996,19 +5928,19 @@ $$P^{\\prime}(Q)=-4\\qquad\\text{for }Q>30$$
 
 which matches the claim
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is True.`,
-      `**D.** → False
+Beyond capacity every extra lamp subtracts $4$ euros of profit — a constant negative marginal profit.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
+      `**D.** → False
 
 Just above capacity the firm is on the outsourcing piece, where $P^{\\prime}(Q)=-4<0$.
 
 A small expansion lowers profit; it does not raise it
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`,
-      `**E.** → False
+Just above $30$ the outsourcing piece is already in force, so the expand-or-not test fails immediately past capacity.
 
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → False
 
 $P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
 
@@ -6020,7 +5952,9 @@ $$P^{\\prime}(30^{-})=8-6=2$$
 
 The thirtieth unit adds about $2$ euros of profit, not $150$
 
-Pause on the trap: under a downward-sloping inverse demand the product rule gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)$, so marginal revenue generally lies below the sticker price $p(Q)$., so the statement is False.`
+The stock $P(30)=150$ accumulates all infra-capacity profit; the thirtieth unit's contribution is the marginal figure near $2$.
+
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 79,
@@ -6031,9 +5965,7 @@ At $Q=20$ one has $P^{\\prime}(20)=8-4=4>0$, so a small expansion raises profit.
 $$P(Q)=150-4(Q-30)\\qquad(Q>30)$$
 has constant slope
 $$P^{\\prime}(Q)=-4<0,$$
-so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit.
-
-Shared setup for every letter: identify whether the claim is about a level (stock), a slope (marginal), or an expand-or-not comparison $R^{\\prime}$ versus $C^{\\prime}$. Derive the relevant derivative on the page before matching True/False. Average quantities such as $C/Q$ are not substitutes for $C^{\\prime}$, and a posted price $p(Q)$ is not automatically marginal revenue.`,
+so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is the stock of profit at capacity, not the extra profit from the thirtieth unit. Below capacity $P^{\\prime}=8-\\dfrac{1}{5}Q$ (positive at $Q=20$); above capacity $P^{\\prime}=-4<0$. The level $P(30)=150$ is not the thirtieth unit's extra profit.`,
   },
   {
     id: "math-11-80",
@@ -6053,8 +5985,6 @@ Shared setup for every letter: identify whether the claim is about a level (stoc
     tactical_explanations: [
       `**A.** → True
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
-
 For the café, $P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)$ gives
 
 $$1=3-C^{\\prime}(40)$$
@@ -6063,10 +5993,10 @@ $$C^{\\prime}(40)=2$$
 
 The café's implied marginal cost is $2$
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**B.** → True
+Two of the three rates determine the third through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; here the café's missing piece is $C^{\\prime}=2$.
 
-Name the right economic object first — which function's derivative answers the question — then check the claim against that definition and the given numbers.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**B.** → True
 
 For the kiosk,
 
@@ -6074,36 +6004,36 @@ $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2$$
 
 The kiosk's implied marginal profit is $-2$
 
-The expand-or-not test compares slopes, not levels: raise output a little when $R^{\\prime}>C^{\\prime}$ (equivalently $P^{\\prime}>0$), and avoid expanding when $R^{\\prime}<C^{\\prime}$.
+The kiosk's missing piece is the profit slope: $P^{\\prime}=3-5=-2$.
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is True.`,
       `**C.** → True
-
-This is an expand-or-not reading: decide from the sign of $P^{\\prime}=R^{\\prime}-C^{\\prime}$, not from how large today's profit stock already looks.
 
 The café has $P^{\\prime}(40)=1>0$, so a small extra item raises café profit.
 
 The kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is True.`,
-      `**D.** → False
+Opposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the shared $R^{\\prime}(40)=3$.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view., so the statement is True.`,
+      `**D.** → False
 
 Same $R^{\\prime}(40)$ and same $Q$ do not force the same cost slope.
 
 The recovered values are already different: $C^{\\prime}(40)=2$ at the café versus $C^{\\prime}(40)=5$ at the kiosk
 
-The linear approximation $f(x+\\Delta x)-f(x)\\approx f^{\\prime}(x)\\,\\Delta x$ is the precise local reading of any derivative; the convenient one-unit step $\\Delta x=1$ is only a rough special case of that same idea., so the statement is False.`,
-      `**E.** → False
+The recovered cost slopes already differ ($2$ versus $5$); shared $Q$ and shared $R^{\\prime}$ never forced them to match.
 
-The wording sounds close to a standard rule, but it points at the wrong function or confuses a level with a slope. Track the definitions carefully.
+Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view., so the statement is False.`,
+      `**E.** → False
 
 $P^{\\prime}(40)=1$ is a rate of change of profit.
 
 The height $P(40)$ of today's profit was never posted and need not equal $1$
 
-Do not confuse a stock with a rate: the function value (total cost, total profit, total utility) is a height on the graph, while the derivative is the slope of the tangent — euros per extra unit, not euros already earned., so the statement is False.`
+A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
+
+Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs., so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 80,
@@ -6112,7 +6042,7 @@ Do not confuse a stock with a rate: the function value (total cost, total profit
 $$C^{\\prime}(40)=R^{\\prime}(40)-P^{\\prime}(40)=3-1=2.$$
 The kiosk posts $C^{\\prime}(40)=5$ instead, so
 $$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2.$$
-A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and lowers it at the kiosk ($P^{\\prime}=-2<0$). Same $Q$ and same $R^{\\prime}$ do not force the same $C^{\\prime}$. The café's rate $P^{\\prime}(40)=1$ is not its profit level $P(40)$. Throughout, keep the three traps in view: average versus marginal, marginal revenue versus price, and expand-or-not ($P^{\\prime}$ sign) versus the stock of profit.`,
+A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and lowers it at the kiosk ($P^{\\prime}=-2<0$). Same $Q$ and same $R^{\\prime}$ do not force the same $C^{\\prime}$. The café's rate $P^{\\prime}(40)=1$ is not its profit level $P(40)$. Café: $P'=1$, $R'=3$ imply $C'=2$ (expand). Kiosk: $C'=5$, $R'=3$ imply $P'=-2$ (do not expand). Same $R'$ does not force same $C'$ or same $P$.`,
   },
   {
     id: "math-11-81",
@@ -9289,7 +9219,7 @@ That is exactly the first-derivative test for a local maximum of $f$ at $x=5$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → False
 
-The claim says: At $x=3$, $f'(3)=4$, so $x=3$ is a local minimum of $f$. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of $f$ requires a critical point $f'=0$ together with a $-$ to $+$ sign change. At the marked peak of the derivative graph one reads
 
@@ -9397,7 +9327,7 @@ That matches the claim's reading of the figure
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
 
-The claim says: Because $f'(3)<0$, the point $x=3$ is a local minimum of $f$. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of $f$ needs a zero of $f'$ with a $-$ to $+$ sign change. At $x=3$ the figure only shows a negative height
 
@@ -9439,7 +9369,7 @@ That lowest point of $f'$ is not a critical point of $f$.`,
     tactical_explanations: [
       `**A.** → True
 
-The claim says: The graph has a local minimum near $x=1$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 Here the figure shows the level curve $f$ itself. Reading the shape, the graph bottoms out near $x=1$:
 
@@ -9450,7 +9380,7 @@ That lowest neighbourhood point is exactly a local minimum
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
 
-The claim says: The graph has a local maximum near $x=5$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 On the same graph of $f$, the curve reaches a local highest point near $x=5$:
 
@@ -9461,7 +9391,7 @@ That peak in a neighbourhood is a local maximum
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
 
-The claim says: Between those turning points the graph is rising. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the local minimum near $x=1$ and the local maximum near $x=5$, the graph of $f$ climbs steadily:
 
@@ -9546,7 +9476,7 @@ Negative marginal profit means a little more output lowers profit
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
 
-The claim says: A local profit peak occurs at the marked zero of $P'$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 The marked zero of marginal profit $P'$ is where the falling line crosses the axis near $x\\approx 4.2$. Left of that zero $P'>0$ and right of it $P'<0$:
 
@@ -9641,7 +9571,7 @@ That is the first-derivative test for a local maximum of $f$ at $x=3$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: At $x=1$, $f'$ equals $2$ on the scale. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+The claim leaps from one figure fact to a stronger conclusion. Check whether the figure actually forces that conclusion, or only supplies a weaker related reading.
 
 The figure is a straight line for $f'$. At the abscissa $x=1$, reading the shared vertical scale gives height exactly $2$.
 
@@ -9778,7 +9708,7 @@ On $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ i
     tactical_explanations: [
       `**A.** → True
 
-The claim says: Near $x=1$ the graph has a local minimum (a lowest point in a neighbourhood). Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 The figure shows $f$ with turning points at the critical $x$-values. Near $x=1$ the graph bottoms out:
 
@@ -9789,7 +9719,7 @@ That lowest neighbourhood point is a local minimum
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
 
-The claim says: Near $x=2.5$ the graph has a local maximum. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 Near $x=2.5$ the graph of $f$ reaches a local highest point:
 
@@ -9800,7 +9730,7 @@ That peak in a neighbourhood is a local maximum
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
 
-The claim says: Near $x=5$ the graph has a local minimum. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 Near $x=5$ the graph of $f$ bottoms out again:
 
@@ -9979,7 +9909,7 @@ That is exactly the reading named in the claim
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: Because $f'$ approaches $0$ late in the window, $f$ becomes almost flat there. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+The claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.
 
 Late in the window the graph of $f'$ falls back toward the axis from above, so the slope of $f$ becomes small and positive:
 
@@ -10061,7 +9991,7 @@ Without that sign change, $f$ does not switch from increasing to decreasing at $
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: At $x=2$, $f'$ is negative. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 The point $x=2$ lies in the open interval $(1,4)$, where the plotted derivative sits below the axis throughout.
 
@@ -10072,7 +10002,7 @@ so $f'$ is negative at $x=2$, and the statement is True.
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
 
-The claim says: Touching the axis at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change means $x=1$ need not be a local extremum of $f$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A flat touch of $f'$ at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change fails the first-derivative test:
 
@@ -10143,7 +10073,7 @@ so the claim's scale reading is correct, and the statement is True.
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → False
 
-The claim says: A local minimum of cost occurs somewhere in $(0,6)$ because $C'$ is positive. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 A local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:
 
@@ -10238,7 +10168,7 @@ That is a local minimum of $f$ at $x=1$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
 
-The claim says: The value $f'(0)$ is positive. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+Read the sign of $f'$ at the stated point carefully against the axis. If the curve sits below the axis there, the derivative is negative, not positive.
 
 At the left edge of the window, left of the first zero $x=1$, the curve of $f'$ lies below the axis.
 
@@ -11070,7 +11000,7 @@ Positive marginal cost means total cost $C$ keeps rising throughout the window
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
 
-The claim says: The two curves meet at the profit-maximising output. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:
 
@@ -11106,7 +11036,7 @@ Brown is marginal profit $P'$ and green is marginal cost $C'$ on shared axes. At
     tactical_explanations: [
       `**A.** → True
 
-Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ the claim compares both colours against the horizontal axis — read each height separately, without mixing the curves up.
+Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ compare both colours against the horizontal axis — read each height separately so the two curves are not mixed up.
 
 Both curves sit below the axis at that left-hand sample point:
 
@@ -11115,21 +11045,21 @@ $$f'(0)<0,\\qquad g'(0)<0$$
 So brown is negative and green is also negative at $x=0$. Both $f$ and $g$ are therefore decreasing at $x=0$. The dual sign reading matches the claim, so the statement is True.`,
       `**B.** → True
 
-Count clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), without double-counting touches.
+Count clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), careful not to double-count a single crossing or to confuse the two colours.
 
 $$f'\\text{ has three zeros},\\qquad g'\\text{ has two zeros}$$
 
-Those counts are read from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly, Re-check the axis comparison at the stated location before accepting the verdict — the figure's heights and crossings are the only evidence needed. So the statement is True.`,
+Those counts come from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly, so the statement is True.`,
       `**C.** → True
 
-At $x=3$, locate brown between its middle and right zeros on the shared plane. On that open stretch the brown curve ($f'$) has already crossed down through the axis and has not yet crossed back up, so its height is negative:
+At $x=3$, locate brown between its middle and right zeros on the shared plane. On that open stretch the brown curve ($f'$) has already crossed down through the axis and has not yet crossed back up, so its height relative to the axis is negative:
 
 $$f'(3)<0$$
 
-Brown is therefore negative at $x=3$, and $f$ is decreasing there. That is a direct height reading of brown at the stated $x$-value, matching the claim, Re-check the axis comparison at the stated location before accepting the verdict — the figure's heights and crossings are the only evidence needed. So the statement is True.`,
+Brown is therefore negative at $x=3$, and $f$ is decreasing there. That is a direct height reading of brown at the stated $x$-value, matching the claim, so the statement is True.`,
       `**D.** → True
 
-When both derivatives are negative, both $f$ and $g$ are decreasing. Steepness is about magnitude: if brown sits above green while both remain below the axis, then brown is less negative than green —
+When both derivatives are negative, both $f$ and $g$ are decreasing. Steepness depends on magnitude: if brown sits above green while both remain below the axis, then brown is less negative than green —
 
 $$f'<0,\\quad g'<0,\\quad f'>g'\\quad\\Rightarrow\\quad |f'|<|g'|$$
 
@@ -11140,7 +11070,7 @@ Turning points of $f$ and $g$ arise from zeros of $f'$ and $g'$ that change sign
 
 $$3\\neq 2$$
 
-so $f$ and $g$ need not have the same number of turning points. One cannot read off “equal numbers of turning points” automatically when the zero counts already differ, so the statement is False.`
+so $f$ and $g$ need not have the same number of turning points. Equal turning-point counts do not follow automatically from the figure when the zero counts already differ — the premise the claim needs is simply not there — so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 143,
@@ -11186,7 +11116,7 @@ so $f$ is decreasing on that open interval, and the statement is True.
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
 
-The claim says: At $x=1$, the graph of $f'$ is above the axis, so $f'(1)>0$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the zeros near $x=0.5$ and $x=2$ the curve of $f'$ sits above the axis, and the sample point $x=1$ lies in that interval.
 
@@ -11279,7 +11209,7 @@ That is a local minimum of $f$ at $x=3$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: At $x=5$, $|f'(5)|$ is smaller than $|f'(2)|$ because of the decay of the envelope. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+The claim gives a reason that does not entail the stated conclusion. Separate what the figure shows from what would be needed for the stronger assertion.
 
 The envelope of the oscillation decays as $x$ grows. Comparing absolute heights, the dip near $x=2$ is larger than the height at $x=5$.
 
@@ -11290,7 +11220,7 @@ so $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
 
-The claim says: Since the curve's amplitude is smaller near $x=3$ than near $x=2$, the point $x=3$ cannot be a local extremum of $f$. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 A local extremum of $f$ is decided by a sign change of $f'$ at a zero, not by the size of nearby amplitudes. Even when $|f'|$ is smaller near $x=3$ than near $x=2$, the $-$ to $+$ crossing at $x=3$ still produces a local minimum of $f$:
 
@@ -11695,7 +11625,7 @@ Negative $P_1'$ means firm 1's profit is decreasing in output at $x=5$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: The first firm to hit a zero of marginal profit when moving right from $x=0$ is not necessarily firm 1. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Moving right from $x=0$, the first axis crossing among the three colours need not belong to brown:
 
@@ -11706,7 +11636,7 @@ On the figure another firm's curve can meet the axis earlier than firm 1's
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → True
 
-The claim says: If at some $x$ one curve is above another and both are positive, that firm has the larger instantaneous profit gain per unit. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 On a shared vertical scale, if one curve sits above another and both are positive:
 
@@ -11755,7 +11685,7 @@ Those four readings match the claim
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**B.** → True
 
-The claim says: At $x=0$, both $f'(0)$ and $g'(0)$ are positive, and $g'(0)>f'(0)$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 At $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.
 
@@ -11910,7 +11840,7 @@ Green opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near
     tactical_explanations: [
       `**A.** → True
 
-The claim says: At $x=3$, $A(3)<0$ and $B(3)<0$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Brown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.
 
@@ -11932,7 +11862,7 @@ Purple sits above brown, not strictly below it. The claimed inequality runs the 
 Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes, the statement is False.`,
       `**C.** → True
 
-The claim says: Zeros of $B$ occur under a local max and a local min of $A$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ flips from $-$ to $+$. A negative height of $f'$ alone only says $f$ is decreasing — watch for that trap on the figure.
 
 Because $B=A'$, zeros of green are critical points of brown. On the figure those zeros sit under a local max and a local min of $A$:
 
@@ -12014,7 +11944,7 @@ $$f'(-1)\\approx 6>0$$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**C.** → True
 
-The claim says: On $(1,2)$ one has $f'<0$, so $f$ decreases on $(1,2)$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+Compare each piece of the claim with the figure. The False verdict comes from a concrete mismatch between the assertion and the axis reading — not from a vague rule of thumb.
 
 Between the zeros at $x=1$ and $x=2$ the curve of $f'$ dips below the axis, so the slope of $f$ is negative on that open interval.
 
@@ -12025,7 +11955,7 @@ Hence $f$ decreases on $(1,2)$
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**D.** → True
 
-The claim says: The local maximum of $f$ among these critical points is at $x=1$. Verify it by reading the figure at the stated location, using only the visible zeros, signs, and heights.
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 Among the critical points, $x=1$ is where $f'$ changes from $+$ to $-$:
 
@@ -12036,7 +11966,7 @@ That is a local maximum of $f$. The other zeros give a local min (or the opposit
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show, so the statement is True.`,
       `**E.** → False
 
-The claim says: At $x=-2$, $f'$ changes from positive to negative, so $x=-2$ is a local maximum of $f$. Check each piece against the figure — the False verdict comes from a specific mismatch, not from a general rule of thumb.
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ sign change. Peaks of the derivative graph are about steepness of $f$, not turning points of $f$ — keep those separate.
 
 At $x=-2$ the figure shows a $-$ to $+$ pattern (local minimum of $f$), not the claimed $+$ to $-$ flip:
 
