@@ -141,6 +141,32 @@ function ChartHaloLabel({
   );
 }
 
+/** Recharts 3 ReferenceDot label content: reads the dot viewBox and draws a halo label. */
+function haloDotLabel(
+  text: string,
+  opts: { dx?: number; dy?: number; fill?: string; fontSize?: number } = {},
+) {
+  return (props: {
+    viewBox?: { x?: number; y?: number; width?: number; height?: number };
+  }) => {
+    const vb = props.viewBox;
+    if (!vb || vb.x == null || vb.y == null) return null;
+    const x = vb.x + (vb.width ?? 0) / 2;
+    const y = vb.y + (vb.height ?? 0) / 2;
+    return (
+      <ChartHaloLabel
+        x={x}
+        y={y}
+        value={text}
+        fill={opts.fill ?? ACCENT}
+        dx={opts.dx ?? 0}
+        dy={opts.dy ?? -16}
+        fontSize={opts.fontSize}
+      />
+    );
+  };
+}
+
 /** SVG text with the same white halo (for hand-drawn differentiation figures). */
 function SvgHaloText({
   x,
@@ -360,8 +386,8 @@ function SupplyCurve() {
             label={{ value: "Price (EUR/h)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
           />
           <Line type="linear" dataKey="p" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-          <ReferenceDot x={12} y={80} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={<ChartHaloLabel value="A" fill={ACCENT} dy={-14} />} />
-          <ReferenceDot x={34} y={190} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={<ChartHaloLabel value="B" fill={ACCENT} dy={-14} />} />
+          <ReferenceDot x={12} y={80} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={haloDotLabel("A")} />
+          <ReferenceDot x={34} y={190} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={haloDotLabel("B")} />
         </LineChart>
       </ResponsiveContainer>
     </ChartFrame>
@@ -425,7 +451,7 @@ function Equilibrium() {
             fill="#fff"
             stroke={ACCENT}
             strokeWidth={2}
-            label={<ChartHaloLabel value="E" fill={ACCENT} dy={-14} />}
+            label={haloDotLabel("E")}
           />
           <Legend {...LEGEND_TOP} />
         </LineChart>
@@ -993,7 +1019,7 @@ function BreakEven() {
             fill="#fff"
             stroke={ACCENT}
             strokeWidth={2}
-            label={<ChartHaloLabel value="BEP" fill={ACCENT} dx={28} dy={-8} />}
+            label={haloDotLabel("BEP", { dx: 28, dy: -8 })}
           />
           <Legend {...LEGEND_TOP} />
         </LineChart>
@@ -2117,10 +2143,10 @@ function DiffFprimeSign() {
       {/* zeros */}
       <circle cx="130" cy="150" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
       <circle cx="390" cy="150" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
-      <text x="122" y="172" fontSize="12" fill={MUTED}>
+      <text x="108" y="172" fontSize="12" fill={MUTED}>
         1
       </text>
-      <text x="382" y="172" fontSize="12" fill={MUTED}>
+      <text x="402" y="172" fontSize="12" fill={MUTED}>
         5
       </text>
       {/* sign labels — kept clear of the curve */}
@@ -2154,13 +2180,13 @@ function DiffFExtrema() {
       <circle cx="180" cy="60" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
       <circle cx="300" cy="200" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
       <circle cx="240" cy="130" r="4" fill={MUTED} />
-      <SvgHaloText x={180} y={42} fontSize={12} fill={INK} anchor="middle">
+      <SvgHaloText x={180} y={38} fontSize={12} fill={INK} anchor="middle">
         local max
       </SvgHaloText>
-      <SvgHaloText x={300} y={236} fontSize={12} fill={INK} anchor="middle">
+      <SvgHaloText x={300} y={252} fontSize={12} fill={INK} anchor="middle">
         local min
       </SvgHaloText>
-      <SvgHaloText x={268} y={112} fontSize={11} fill={MUTED} anchor="start">
+      <SvgHaloText x={198} y={112} fontSize={11} fill={MUTED} anchor="middle">
         inflection
       </SvgHaloText>
       <text x="175" y="280" fontSize="12" fill={MUTED}>
@@ -2208,7 +2234,7 @@ function DiffMcMr() {
               fill="#fff"
               stroke={ACCENT}
               strokeWidth={2}
-              label={<ChartHaloLabel value="MR = MC" fill={ACCENT} dx={42} dy={-6} />}
+              label={haloDotLabel("MR = MC", { dx: 54, dy: -22 })}
             />
             <Legend {...LEGEND_TOP} />
           </LineChart>
@@ -2256,7 +2282,7 @@ function DiffAcMc() {
               fill="#fff"
               stroke={ACCENT}
               strokeWidth={2}
-              label={<ChartHaloLabel value="AC min" fill={ACCENT} dx={0} dy={-18} />}
+              label={haloDotLabel("AC min", { dx: -8, dy: -28 })}
             />
             <Legend {...LEGEND_TOP} />
           </LineChart>
