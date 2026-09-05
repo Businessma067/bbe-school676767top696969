@@ -23,6 +23,7 @@ import { useSetPracticeCase } from "@/lib/practice-case-context";
 import { recordTaskAttempt } from "@/lib/user-progress";
 import { trackEvent } from "@/lib/activity-tracker";
 import { Collapse } from "@/components/Collapse";
+import { ZoomableImage } from "@/components/ZoomableImage";
 import {
   MATH_CHAPTERS,
   demoMathLockDistance,
@@ -2001,10 +2002,11 @@ const MathTaskCard = memo(function MathTaskCard({
       <div className="mt-3 space-y-3 text-sm leading-relaxed text-foreground/90">
         <MathProse text={task.context} className="text-sm" />
         {task.figure ? (
-          <img
+          <ZoomableImage
             src={task.figure}
-            alt=""
-            className="mx-auto mt-3 max-h-80 w-full max-w-lg rounded-xl border border-border bg-white object-contain p-2"
+            alt="Task figure"
+            wrapperClassName="mx-auto mt-3 w-full max-w-lg"
+            className="max-h-80 w-full rounded-xl border border-border bg-white object-contain p-2"
           />
         ) : null}
         {task.tables_markdown ? (

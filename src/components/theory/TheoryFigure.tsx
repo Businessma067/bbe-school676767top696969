@@ -17,6 +17,7 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
+import { ZoomableImage } from "@/components/ZoomableImage";
 import { cn } from "@/lib/utils";
 
 const ACCENT = "#C45C1A";
@@ -1911,9 +1912,12 @@ function StaticTheoryImage({
   alt: string;
 }) {
   return (
-    <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-lg border border-border/50 bg-white">
-      <img src={src} alt={alt} className="mx-auto h-auto w-full object-contain" loading="lazy" />
-    </div>
+    <ZoomableImage
+      src={src}
+      alt={alt}
+      wrapperClassName="mx-auto w-full max-w-3xl overflow-hidden rounded-lg border border-border/50 bg-white"
+      className="mx-auto h-auto w-full object-contain"
+    />
   );
 }
 
