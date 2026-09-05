@@ -1,15 +1,19 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError, getCurrentAuthState } from "@/lib/auth-ui";
 import { signInWithGoogle } from "@/lib/google-auth";
 import { Eye, EyeOff } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { useLanguage } from "@/lib/i18n/context";
+import { hreflangLinks, localizePath } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/signup")({
   component: SignupPage,
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/signup" }],
+    links: [...hreflangLinks("/signup"), { rel: "canonical", href: "https://bbe-school.com/signup" }],
     meta: [
       { title: "Sign up · BBE School" },
       { name: "description", content: "Create your BBE School account to start practicing." },
@@ -18,8 +22,9 @@ export const Route = createFileRoute("/signup")({
   }),
 });
 
-function SignupPage() {
-  const navigate = useNavigate();
+export function SignupPage() {
+  const navigate = useLocalizedNavigate();
+  const { lang } = useLanguage();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
@@ -68,11 +73,11 @@ function SignupPage() {
     if (!last) return setError("Please enter your last name.");
     if (!phoneClean || phoneClean.replace(/\D/g, "").length < 7)
       return setError("Please enter a valid phone number.");
-    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Введите корректный email.");
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email address.");
     if (password.length < 8)
-      return setError("Пароль минимум 8 символов (лучше буквы + цифры).");
+      return setError("Password must be at least 8 characters.");
     if (!agree)
-      return setError("Примите Terms of Service и Privacy Policy.");
+      return setError("Please accept the Terms of Service and Privacy Policy.");
 
     const displayName = `${first} ${last}`;
     const emailNorm = email.trim().toLowerCase();
@@ -83,7 +88,7 @@ function SignupPage() {
         email: emailNorm,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}/account`,
+          emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}`,
           data: {
             display_name: displayName,
             first_name: first,
@@ -95,7 +100,7 @@ function SignupPage() {
       if (err) throw err;
 
       if (data.user && (data.user.identities?.length ?? 0) === 0) {
-        setError("Этот email уже зарегистрирован. Войдите через Sign in.");
+        setError("This email is already registered. Sign in instead.");
         return;
       }
 
@@ -112,7 +117,7 @@ function SignupPage() {
       setInfo("Check your email to confirm your account, then sign in.");
     } catch (err: any) {
       console.error("Signup failed", err);
-      setError(friendlyAuthError(err, "Не удалось создать аккаунт."));
+      setError(friendlyAuthError(err, "Could not create account."));
     } finally {
       setLoading(false);
     }
@@ -124,7 +129,7 @@ function SignupPage() {
     const pending =
       email.trim().toLowerCase() || sessionStorage.getItem("bbe.pendingConfirmEmail") || "";
     if (!/^\S+@\S+\.\S+$/.test(pending)) {
-      setError("Введите email, на который отправить письмо снова.");
+      setError("Enter a valid email address.");
       return;
     }
     setLoading(true);
@@ -132,12 +137,12 @@ function SignupPage() {
       const { error: err } = await supabase.auth.resend({
         type: "signup",
         email: pending,
-        options: { emailRedirectTo: `${window.location.origin}/account` },
+        options: { emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}` },
       });
       if (err) throw err;
-      setInfo(`Письмо отправлено повторно на ${pending}. Проверьте Inbox и Spam.`);
+      setInfo("Check your email to confirm your account, then sign in.");
     } catch (err) {
-      setError(friendlyAuthError(err, "Не удалось отправить письмо."));
+      setError(friendlyAuthError(err, "Could not create account."));
     } finally {
       setLoading(false);
     }
@@ -182,7 +187,7 @@ function SignupPage() {
           label="Password"
           value={password}
           onChange={setPassword}
-          placeholder="Минимум 8 символов, не слишком простой"
+          placeholder="At least 8 characters"
           show={showPassword}
           onToggle={() => setShowPassword((v) => !v)}
         />
@@ -196,9 +201,9 @@ function SignupPage() {
           />
           <span>
             I agree to the{" "}
-            <Link to="/terms" className="font-medium text-primary hover:underline">
+            <LocalizedLink to="/terms" className="font-medium text-primary hover:underline">
               Terms of Service &amp; Privacy Policy
-            </Link>
+            </LocalizedLink>
             .
           </span>
         </label>
@@ -227,9 +232,9 @@ function SignupPage() {
       </form>
       <p className="mt-6 text-center text-sm text-muted-foreground">
         Already have an account?{" "}
-        <Link to="/login" className="font-semibold text-primary hover:underline">
+        <LocalizedLink to="/login" className="font-semibold text-primary hover:underline">
           Sign in
-        </Link>
+        </LocalizedLink>
       </p>
     </AuthShell>
   );
@@ -248,7 +253,7 @@ export function AuthShell({
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader compact maxWidthClassName="max-w-md" showNav={false} showMobileNav={false} />
       <div className="mx-auto flex min-h-[calc(100vh-4.5rem)] max-w-md flex-col justify-center px-6 py-16">
-        <Link to="/" className="mb-8 flex items-center gap-3">
+        <LocalizedLink to="/" className="mb-8 flex items-center gap-3">
           <div className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-primary via-accent to-primary shadow-md ring-1 ring-primary/30">
             <span className="font-display text-sm font-bold leading-none text-primary-foreground tracking-tight">
               BBE
@@ -260,7 +265,7 @@ export function AuthShell({
               WU Vienna · Prep
             </span>
           </div>
-        </Link>
+        </LocalizedLink>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
           <h1 className="font-display text-2xl font-bold tracking-tight">{title}</h1>
           {subtitle && <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>}

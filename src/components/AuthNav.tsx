@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
 import { ChevronDown } from "lucide-react";
+import { LocalizedLink } from "@/components/LocalizedLink";
 
 export function AuthNav() {
   const [auth, setAuth] = useState<AuthState | null>(null);
@@ -49,20 +50,20 @@ export function AuthNav() {
   if (!auth) {
     return (
       <div className="flex items-center gap-1 sm:gap-2">
-        <Link
+        <LocalizedLink
           to="/login"
           className="rounded-md border border-border bg-card px-2 py-2 text-xs font-semibold hover:bg-secondary sm:px-3 sm:py-1.5"
         >
           <span className="sm:hidden">In</span>
           <span className="hidden sm:inline">Sign in</span>
-        </Link>
-        <Link
+        </LocalizedLink>
+        <LocalizedLink
           to="/signup"
           className="inline-flex min-h-9 items-center justify-center rounded-md bg-primary px-2.5 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 sm:px-4 sm:py-2"
         >
           <span className="sm:hidden">Join</span>
           <span className="hidden sm:inline">Sign up</span>
-        </Link>
+        </LocalizedLink>
       </div>
     );
   }
@@ -105,22 +106,22 @@ export function AuthNav() {
               : "pointer-events-none -translate-y-2 scale-95 opacity-0"
           }`}
         >
-          <Link
+          <LocalizedLink
             to="/dashboard"
             onClick={() => setOpen(false)}
             tabIndex={open ? 0 : -1}
             className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
           >
             Dashboard
-          </Link>
-          <Link
+          </LocalizedLink>
+          <LocalizedLink
             to="/account"
             onClick={() => setOpen(false)}
             tabIndex={open ? 0 : -1}
             className="block rounded-md px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary"
           >
             Settings
-          </Link>
+          </LocalizedLink>
           {auth.role === "admin" && (
             <Link
               to="/admin"

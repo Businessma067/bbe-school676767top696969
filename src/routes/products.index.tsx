@@ -7,7 +7,7 @@ import liteAsset from "@/assets/lite-bbe-course.png.asset.json";
 import { useFullCourseAccess } from "@/hooks/use-full-course-access";
 import { FULL_COURSE_HREF, FULL_COURSE_PRODUCT_HREF } from "@/lib/full-course-access";
 import { LocalizedLink } from "@/components/LocalizedLink";
-import { hreflangLinks } from "@/lib/i18n/locale-path";
+import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 
 const PROVIDER = {
   "@type": "Organization",
@@ -229,16 +229,29 @@ export function ProductsPage() {
                         aria-hidden
                       />
                     ) : to && !p.disabled ? (
-                      <Link
-                        to={to}
-                        className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
-                        style={{
-                          backgroundColor: ORANGE,
-                          boxShadow: `0 4px 14px -4px ${ORANGE}80`,
-                        }}
-                      >
-                        {cta} →
-                      </Link>
+                      isLocalizablePath(to) ? (
+                        <LocalizedLink
+                          to={to}
+                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                          style={{
+                            backgroundColor: ORANGE,
+                            boxShadow: `0 4px 14px -4px ${ORANGE}80`,
+                          }}
+                        >
+                          {cta} →
+                        </LocalizedLink>
+                      ) : (
+                        <Link
+                          to={to}
+                          className="mt-5 inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background"
+                          style={{
+                            backgroundColor: ORANGE,
+                            boxShadow: `0 4px 14px -4px ${ORANGE}80`,
+                          }}
+                        >
+                          {cta} →
+                        </Link>
+                      )
                     ) : (
                       <button
                         disabled

@@ -6,7 +6,7 @@ export type LocalePrefix = (typeof LOCALE_PREFIXES)[number];
 
 const LOCALE_SET = new Set<string>(LOCALE_PREFIXES);
 
-/** Marketing / SEO pages that have dedicated DE and UK URLs. */
+/** Marketing / SEO / app chrome pages that have dedicated DE and UK URLs. */
 export const LOCALIZABLE_PATHS = [
   "/",
   "/bbe-entrance-exam",
@@ -23,6 +23,14 @@ export const LOCALIZABLE_PATHS = [
   "/products/demo-practice",
   "/products/full-course",
   "/products/lite-bbe-course",
+  "/demo-practice",
+  "/login",
+  "/signup",
+  "/reset-password",
+  "/account",
+  "/dashboard",
+  "/payment/success",
+  "/payment/failed",
 ] as const;
 
 export type LocalizablePath = (typeof LOCALIZABLE_PATHS)[number];
@@ -64,7 +72,7 @@ export function isLocalizablePath(pathname: string): pathname is LocalizablePath
 
 /**
  * Map a path to the URL for a given language.
- * Non-localizable paths (dashboard, practice, etc.) stay unprefixed.
+ * Non-localizable paths (subject practice, admin, etc.) stay unprefixed.
  */
 export function localizePath(pathname: string, lang: Lang): string {
   const hashIndex = pathname.indexOf("#");

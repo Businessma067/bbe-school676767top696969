@@ -1,5 +1,6 @@
 import { generatedDe, generatedUk } from "./generated";
 import { extraDe, extraUk } from "./extra";
+import { uiExtraDe, uiExtraUk } from "./ui-extra";
 
 export type Lang = "en" | "de" | "uk";
 
@@ -278,8 +279,8 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
 
 /** Hand-written entries win over auto-generated page copy. */
 export const dictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
-  de: { ...generatedDe, ...extraDe, ...baseDictionary.de },
-  uk: { ...generatedUk, ...extraUk, ...baseDictionary.uk },
+  de: { ...generatedDe, ...extraDe, ...uiExtraDe, ...baseDictionary.de },
+  uk: { ...generatedUk, ...extraUk, ...uiExtraUk, ...baseDictionary.uk },
 };
 
 /** Same tables keyed by whitespace-collapsed text, for multi-line JSX nodes. */

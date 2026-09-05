@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { LocalizedLink } from "@/components/LocalizedLink";
 import { useEffect, useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import {
@@ -12,6 +12,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { signInWithGoogle } from "@/lib/google-auth";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/lib/i18n/context";
+import { localizePath } from "@/lib/i18n/locale-path";
 
 type Mode = "signin" | "signup";
 
@@ -29,6 +31,7 @@ export function AuthModal({
   onSignedIn,
   defaultMode = "signin",
 }: AuthModalProps) {
+  const { lang } = useLanguage();
   const [mode, setMode] = useState<Mode>(defaultMode);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -107,7 +110,7 @@ export function AuthModal({
           email: emailNorm,
           password,
           options: {
-            emailRedirectTo: `${window.location.origin}/account`,
+            emailRedirectTo: `${window.location.origin}${localizePath("/account", lang)}`,
             data: {
               display_name: displayName,
               first_name: first,
@@ -296,9 +299,9 @@ export function AuthModal({
               />
               <span>
                 I agree to the{" "}
-                <Link to="/terms" className="font-medium text-primary hover:underline">
+                <LocalizedLink to="/terms" className="font-medium text-primary hover:underline">
                   Terms of Service &amp; Privacy Policy
-                </Link>
+                </LocalizedLink>
                 .
               </span>
             </label>

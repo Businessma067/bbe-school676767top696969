@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getCurrentAuthState, type AuthState } from "@/lib/auth-ui";
@@ -41,6 +41,8 @@ import {
   Wand2,
   Layers,
 } from "lucide-react";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export type DashboardTab = "courses" | "mocks" | "custom" | "games";
 
@@ -51,17 +53,16 @@ function parseDashboardTab(raw: unknown): DashboardTab {
 }
 
 export const Route = createFileRoute("/dashboard")({
-  component: () => (
-    <RequireFullCourse minTier="none">
-      <DashboardPage />
-    </RequireFullCourse>
-  ),
+  component: DashboardRoutePage,
   validateSearch: (search: Record<string, unknown>): { tab?: DashboardTab } => {
     if (search.tab == null || search.tab === "") return {};
     return { tab: parseDashboardTab(search.tab) };
   },
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/dashboard" }],
+    links: [
+      ...hreflangLinks("/dashboard"),
+      { rel: "canonical", href: "https://bbe-school.com/dashboard" },
+    ],
     meta: [
       { title: "Dashboard · BBE School" },
       { name: "description", content: "Your BBE School practice dashboard." },
@@ -69,6 +70,14 @@ export const Route = createFileRoute("/dashboard")({
     ],
   }),
 });
+
+export function DashboardRoutePage() {
+  return (
+    <RequireFullCourse minTier="none">
+      <DashboardPage />
+    </RequireFullCourse>
+  );
+}
 
 const SUBJECT_COLORS: Record<string, string> = {
   economics: "#c8763a",
@@ -83,13 +92,15 @@ const SUBJECT_LABEL: Record<string, string> = {
 };
 
 function DashboardPage() {
-  const navigate = useNavigate();
-  const { tab: tabParam } = Route.useSearch();
-  const tab = tabParam ?? "courses";
+  const navigateHome = useLocalizedNavigate();
+  const tabParam = useRouterState({
+    select: (s) => parseDashboardTab((s.location.search as { tab?: unknown }).tab),
+  });
+  const tab = tabParam;
   const [auth, setAuth] = useState<AuthState | null | undefined>(undefined);
 
   const setTab = (next: DashboardTab) => {
-    void navigate({ to: "/dashboard", search: { tab: next }, replace: true });
+    void navigateHome({ to: "/dashboard", search: { tab: next }, replace: true });
   };
   const [enrollments, setEnrollments] = useState<Enrollment[] | null>(null);
   const [tasks, setTasks] = useState<TaskAttempt[] | null>(null);
@@ -103,7 +114,7 @@ function DashboardPage() {
       const next = await getCurrentAuthState();
       if (cancelled) return;
       if (!next) {
-        navigate({ to: "/login" });
+        navigateHome({ to: "/login" });
         return;
       }
       setAuth(next);
@@ -124,7 +135,7 @@ function DashboardPage() {
     return () => {
       cancelled = true;
     };
-  }, [navigate]);
+  }, [navigateHome]);
 
   if (auth === undefined || auth === null) {
     return (
@@ -144,7 +155,7 @@ function DashboardPage() {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    navigate({ to: "/" });
+    navigateHome({ to: "/" });
   };
 
   return (

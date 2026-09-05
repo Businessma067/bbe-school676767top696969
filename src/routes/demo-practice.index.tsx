@@ -3,10 +3,12 @@ import economicsAsset from "@/assets/economics-bw.jpg.asset.json";
 import mathAsset from "@/assets/math-bw.jpg.asset.json";
 import englishAsset from "@/assets/english-bw-v2.jpg.asset.json";
 import { SiteHeader } from "@/components/SiteHeader";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/demo-practice/")({
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/demo-practice" }],
+    links: [...hreflangLinks("/demo-practice"), { rel: "canonical", href: "https://bbe-school.com/demo-practice" }],
     meta: [
       { title: "Demo Practice — BBE School" },
       {
@@ -53,18 +55,18 @@ const subjects = [
   },
 ];
 
-function DemoPractice() {
+export function DemoPractice() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground antialiased">
       <SiteHeader
         maxWidthClassName="max-w-7xl"
         actions={
-          <Link
+          <LocalizedLink
             to="/"
             className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground transition-all hover:bg-secondary"
           >
             ← Back
-          </Link>
+          </LocalizedLink>
         }
       />
 

@@ -1,10 +1,12 @@
-import { Link, useRouterState, type LinkProps } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
+import type { ComponentPropsWithoutRef } from "react";
 import { useLanguage } from "@/lib/i18n/context";
 import { effectiveLangFromLocation, getLocaleLinkProps } from "@/lib/i18n/locale-nav";
 
-type LocalizedLinkProps = Omit<LinkProps, "to" | "params"> & {
+type LocalizedLinkProps = {
   to: string;
-};
+  hash?: string;
+} & Omit<ComponentPropsWithoutRef<typeof Link>, "to" | "params" | "hash">;
 
 /**
  * Link that stays on `/de/...` or `/uk/...` while browsing a translated site,

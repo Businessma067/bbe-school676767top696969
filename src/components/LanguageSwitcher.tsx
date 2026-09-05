@@ -16,6 +16,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   const navigate = useNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const hash = useRouterState({ select: (s) => s.location.hash });
+  const search = useRouterState({ select: (s) => s.location.search });
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -47,6 +48,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
         to: link.to as never,
         params: link.params as never,
         hash: link.hash,
+        search: search as never,
       });
       return;
     }

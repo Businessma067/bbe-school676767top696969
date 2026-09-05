@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode, Suspense, lazy } from "react";
 
 import { Flame, ChevronLeft, ChevronRight } from "lucide-react";
@@ -80,7 +80,7 @@ export function Index() {
                 id="full-course"
                 className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row"
               >
-                <Link
+                <LocalizedLink
                   to="/demo-practice"
                   className="inline-flex flex-col items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#9c3125] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
                   style={{ backgroundColor: "#B3392A" }}
@@ -89,7 +89,7 @@ export function Index() {
                   <span className="mt-0.5 text-[11px] font-medium text-white/80">
                     50+ tasks for start
                   </span>
-                </Link>
+                </LocalizedLink>
                 <LocalizedLink
                   to="/products"
                   id="explore-courses"

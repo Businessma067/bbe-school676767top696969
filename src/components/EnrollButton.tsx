@@ -1,8 +1,10 @@
-import { useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { enrollInCourse, COURSE_CATALOG, type CourseSlug } from "@/lib/user-progress";
 import { supabase } from "@/integrations/supabase/client";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { isLocalizablePath } from "@/lib/i18n/locale-path";
+import { useNavigate } from "@tanstack/react-router";
 
 /**
  * CTA that records the enrollment on the user's profile, then continues
@@ -21,7 +23,8 @@ export function EnrollButton({
   className?: string;
   style?: React.CSSProperties;
 }) {
-  const navigate = useNavigate();
+  const navigateLocalized = useLocalizedNavigate();
+  const navigatePlain = useNavigate();
   const [busy, setBusy] = useState(false);
   const target = to ?? COURSE_CATALOG[slug].href;
 
@@ -31,11 +34,15 @@ export function EnrollButton({
     try {
       const { data } = await supabase.auth.getSession();
       if (!data.session) {
-        navigate({ to: "/login" });
+        navigateLocalized({ to: "/login" });
         return;
       }
       await enrollInCourse(slug);
-      navigate({ to: target });
+      if (isLocalizablePath(target)) {
+        navigateLocalized({ to: target });
+      } else {
+        navigatePlain({ to: target });
+      }
     } finally {
       setBusy(false);
     }

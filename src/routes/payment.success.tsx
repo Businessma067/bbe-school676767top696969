@@ -1,5 +1,8 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { CheckCircle2 } from "lucide-react";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { hreflangLinks, isLocalizablePath } from "@/lib/i18n/locale-path";
 
 type SuccessSearch = {
   product?: string;
@@ -7,15 +10,19 @@ type SuccessSearch = {
   promo?: boolean;
 };
 
-export const Route = createFileRoute("/payment/success")({
-  validateSearch: (search: Record<string, unknown>): SuccessSearch => ({
+function parseSuccessSearch(search: Record<string, unknown>): SuccessSearch {
+  return {
     product: typeof search.product === "string" ? search.product : undefined,
     href: typeof search.href === "string" ? search.href : undefined,
     promo:
       search.promo === true || search.promo === "1" || search.promo === "true" ? true : undefined,
-  }),
+  };
+}
+
+export const Route = createFileRoute("/payment/success")({
+  validateSearch: (search: Record<string, unknown>): SuccessSearch => parseSuccessSearch(search),
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/payment/success" }],
+    links: [...hreflangLinks("/payment/success"), { rel: "canonical", href: "https://bbe-school.com/payment/success" }],
     meta: [
       { name: "robots", content: "noindex, nofollow" },
       { title: "Purchase confirmed — BBE School" },
@@ -38,9 +45,12 @@ export const Route = createFileRoute("/payment/success")({
 
 const ORANGE = "#C2643A";
 
-function PaymentSuccessPage() {
-  const navigate = useNavigate();
-  const { product, href, promo } = Route.useSearch();
+export function PaymentSuccessPage() {
+  const navigate = useLocalizedNavigate();
+  const { product, href, promo } = useRouterState({
+    select: (s) => parseSuccessSearch(s.location.search as Record<string, unknown>),
+  });
+  const startHref = href ?? "/dashboard";
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -55,18 +65,24 @@ function PaymentSuccessPage() {
         </p>
         <button
           type="button"
-          onClick={() => navigate({ to: href ?? "/dashboard" })}
+          onClick={() => {
+            if (isLocalizablePath(startHref)) {
+              navigate({ to: startHref });
+            } else {
+              window.location.assign(startHref);
+            }
+          }}
           className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white"
           style={{ backgroundColor: ORANGE }}
         >
           Start the course →
         </button>
-        <Link
+        <LocalizedLink
           to="/dashboard"
           className="mt-3 inline-flex w-full items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground"
         >
           Go to dashboard
-        </Link>
+        </LocalizedLink>
       </div>
     </div>
   );
