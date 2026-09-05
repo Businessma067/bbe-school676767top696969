@@ -653,19 +653,138 @@ The claimed fraction is upside down. Verdict: **False**.
 
 ### Frequent False slogans (checklist)
 
+In the tables below, absolute values are written with `\lvert … \rvert` so the `|` character cannot break the table columns.
+
 | Slogan | Why it fails |
 | --- | --- |
 | $(a+b)^2 = a^2 + b^2$ | Missing $2ab$. |
 | $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1}{a+b}$ | Wrong common denominator. |
 | $(a^m)^n = a^{m+n}$ | Should be $a^{mn}$. |
 | $\sqrt{p}+\sqrt{q}=\sqrt{p+q}$ or $\sqrt{p}\sqrt{q}=\sqrt{p+q}$ | Roots do not add that way. |
-| $|x+y|=|x|+|y|$ always | Fails for opposite signs. |
+| $\lvert x+y\rvert=\lvert x\rvert+\lvert y\rvert$ always | Fails for opposite signs. |
 | Cancelled hole may be substituted | Domain of the original expression remains. |
-| $\sqrt{w^2}=w$ for every real $w$ | Should be $|w|$. |
+| $\sqrt{w^2}=w$ for every real $w$ | Should be $\lvert w\rvert$. |
 
 ---
 
-## 2.6 Summary reference
+## 2.6 Exam-style tasks with full solutions
+
+The Chapter 2 bank uses five independent True/False claims. Work each claim alone. Below are four short exam-style tasks with every verdict explained.
+
+### Exam task 1 — Expanding and identities
+
+Let $a$ and $b$ be real numbers. Which of the following statements is/are correct?
+
+**A.** $(a+b)^2 = a^2 + 2ab + b^2$ for every real pair $(a,b)$.
+
+**B.** $(a-b)^2 = a^2 - b^2$ for every real pair $(a,b)$.
+
+**C.** $a^2 - b^2 = (a-b)(a+b)$ for every real pair $(a,b)$.
+
+**D.** $(2a)^2 = 2a^2$ for every real $a$.
+
+**E.** $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$ for every real pair $(a,b)$.
+
+**Solution.**
+
+- **A True.** This is the square-of-a-sum identity. Expand: $(a+b)^2 = a^2 + 2ab + b^2$.
+- **B False.** Expand correctly: $(a-b)^2 = a^2 - 2ab + b^2$. The claim drops $-2ab$ and also confuses the square with a difference of squares. Counter-example: $a=2$, $b=1$ gives left side $1$ and right side $3$.
+- **C True.** Difference of squares.
+- **D False.** $(2a)^2 = 4a^2$, not $2a^2$. Counter-example: $a=1$ gives $4$ versus $2$.
+- **E True.** Difference-of-cubes factorisation.
+
+**Answers:** A True, B False, C True, D False, E True.
+
+### Exam task 2 — Rational expressions and domain
+
+Let $x$ be a real number with $x\neq 4$. Define
+
+$$
+R(x) = \frac{x^2 - 16}{x - 4}.
+$$
+
+Which of the following statements is/are correct?
+
+**A.** $R(x) = x + 4$ for every $x\neq 4$.
+
+**B.** $R(4) = 8$.
+
+**C.** For $x\neq 0$ and $x\neq -1$, $\dfrac{1}{x} + \dfrac{1}{x+1} = \dfrac{2x+1}{x(x+1)}$.
+
+**D.** For $m,n\neq 0$, $\dfrac{1}{m} + \dfrac{1}{n} = \dfrac{1}{m+n}$.
+
+**E.** For $t\neq 2$, $\dfrac{t^2 - 4}{t - 2} = t + 2$.
+
+**Solution.**
+
+- **A True.** Factor $x^2-16=(x-4)(x+4)$ and cancel $x-4$ on the stated domain.
+- **B False.** $x=4$ is excluded from the domain of $R$, so $R(4)$ is undefined. You may not plug the cancelled hole back into the simplified formula.
+- **C True.** Common denominator $x(x+1)$ gives $\dfrac{x+1+x}{x(x+1)} = \dfrac{2x+1}{x(x+1)}$.
+- **D False.** The correct sum is $\dfrac{m+n}{mn}$. Counter-example: $m=n=1$ gives left side $2$ and right side $\tfrac12$.
+- **E True.** Same cancellation pattern as A, now with $t^2-4=(t-2)(t+2)$.
+
+**Answers:** A True, B False, C True, D False, E True.
+
+### Exam task 3 — Powers and roots
+
+Let $u>0$. Which of the following statements is/are correct?
+
+**A.** $(u^3)^4 = u^{12}$.
+
+**B.** $(u^3)^4 = u^{7}$.
+
+**C.** $\sqrt{u}\cdot\sqrt{u} = u$.
+
+**D.** $\sqrt{u}\cdot\sqrt{u} = \sqrt{2u}$.
+
+**E.** $\dfrac{u^{-2}}{u^{3}} = u^{-5}$.
+
+**Solution.**
+
+- **A True.** Power of a power multiplies exponents: $3\cdot 4=12$.
+- **B False.** Adding exponents would give $7$, but that law is for a product $u^3\cdot u^4$, not for $(u^3)^4$.
+- **C True.** $\sqrt{u}\cdot\sqrt{u} = u^{1/2}\cdot u^{1/2} = u^{1} = u$ for $u>0$.
+- **D False.** $\sqrt{2u}$ is a different expression. For $u=1$, left side $1$ and right side $\sqrt{2}$.
+- **E True.** Quotient of powers subtracts exponents: $-2-3=-5$.
+
+**Answers:** A True, B False, C True, D False, E True.
+
+### Exam task 4 — Absolute value and symmetric data
+
+Let $x$ be real, and let $a$, $b$ be nonzero reals with $a+b=11$ and $ab=18$. Which of the following statements is/are correct?
+
+**A.** $\lvert 2x-5\rvert = 7$ if and only if $x=6$ or $x=-1$.
+
+**B.** $\lvert 2x-5\rvert = 7$ if and only if $x=6$.
+
+**C.** $\lvert x+3\rvert = \lvert x\rvert + 3$ for every real $x$.
+
+**D.** $a^2 + b^2 = 85$.
+
+**E.** $\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{18}{11}$.
+
+**Solution.**
+
+- **A True.** Split $\lvert 2x-5\rvert=7$ into $2x-5=7$ or $2x-5=-7$, so $x=6$ or $x=-1$.
+- **B False.** It misses the second root $x=-1$.
+- **C False.** The identity $\lvert x+3\rvert=\lvert x\rvert+3$ fails when $x$ is negative enough. For $x=-4$, left side $1$ and right side $7$.
+- **D True.** $a^2+b^2=(a+b)^2-2ab=121-36=85$.
+- **E False.** $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{a+b}{ab}=\dfrac{11}{18}$. The claimed fraction is upside down.
+
+**Answers:** A True, B False, C False, D True, E False.
+
+### How to mark a full task quickly
+
+1. Read the domain line once and keep it in mind for every claim.
+2. For each claim, rewrite or expand before you decide.
+3. If a claim looks like a familiar slogan, test one cheap number.
+4. Mark the five verdicts independently. Do not let one True answer “pull” the next claim along.
+
+---
+
+## 2.7 Summary reference
+
+Use `\lvert … \rvert` in table cells (not raw `|`) so markdown does not split the row.
 
 | Task | Method |
 | --- | --- |
@@ -678,8 +797,8 @@ The claimed fraction is upside down. Verdict: **False**.
 | Power of a power | Multiply exponents. |
 | Product of powers | Add exponents. |
 | Nested square root | Use $u^{1/4}$, not half of $\sqrt{u}$. |
-| Absolute value equation $|A|=c>0$ | Solve $A=c$ and $A=-c$. |
-| Absolute value inequality $|A|<c$ | Rewrite $-c<A<c$. |
+| Absolute value equation $\lvert A\rvert=c>0$ | Solve $A=c$ and $A=-c$. |
+| Absolute value inequality $\lvert A\rvert<c$ | Rewrite $-c<A<c$. |
 | Symmetric $a+b$, $ab$ data | Use $a^2+b^2$, $a^3+b^3$, and reciprocal-sum identities. |
 
 ### Key formulas
@@ -705,7 +824,7 @@ a^m a^n = a^{m+n},\quad (a^m)^n=a^{mn},\quad a^{-n}=\frac{1}{a^n},
 $$
 
 $$
-\sqrt{w^2}=|w|,\quad |xy|=|x||y|.
+\sqrt{w^2}=\lvert w\rvert,\quad \lvert xy\rvert=\lvert x\rvert\,\lvert y\rvert.
 $$
 
 ### Working order on an exam statement
@@ -720,5 +839,5 @@ $$
 - Can you expand $(2x-3)^2$ without dropping the middle term?
 - Why is $\dfrac{x^2-16}{x-4}=x+4$ True on its domain but $R(4)=8$ False?
 - What is $(u^3)^4$, and why is $u^7$ wrong?
-- Why does $\sqrt{(x-1)^2}$ equal $|x-1|$ rather than $x-1$?
+- Why does $\sqrt{(x-1)^2}$ equal $\lvert x-1\rvert$ rather than $x-1$?
 - If $a+b=11$ and $ab=18$, what is $\dfrac{1}{a}+\dfrac{1}{b}$?
