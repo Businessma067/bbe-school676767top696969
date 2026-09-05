@@ -1749,6 +1749,17 @@ function MathPracticeAside({
   );
 }
 
+/** Shared setup only — skip independent-stem catalogs and legacy "A checks:" dumps. */
+function sharedSolutionOverview(task: MathTask): string {
+  const overview = task.solution_overview?.trim() ?? "";
+  if (!overview) return "";
+  if (/^[A-E] checks:/m.test(overview)) return "";
+  const ctx = task.context?.trim() ?? "";
+  if (/^Evaluate each statement/i.test(ctx)) return "";
+  if (ctx.startsWith("Let $") && ctx.includes("Which of the following")) return "";
+  return overview;
+}
+
 function AllExplanationsPanel({
   task,
   index,
@@ -1760,7 +1771,7 @@ function AllExplanationsPanel({
 }) {
   const letters = "ABCDEF";
   const body = [
-    task.solution_overview?.trim() ?? "",
+    sharedSolutionOverview(task),
     "",
     ...task.statements.flatMap((_, i) => {
       const letter = letters[i] ?? String(i + 1);
