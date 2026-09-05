@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLanguage } from "@/lib/i18n/context";
 import { translate } from "@/lib/i18n/dictionary";
 
@@ -15,14 +15,18 @@ const SKIP_TAGS = new Set([
 
 /**
  * Translates rendered marketing copy in place. English is the source of
- * truth: originals are cached per text node and restored when switching back.
+ * truth: originals are cached per text node (across language changes) and
+ * restored when switching back to English or re-translated into DE/UK.
  */
 export function PageTranslator() {
   const { lang } = useLanguage();
+  // Persist across lang changes so DE↔UK can re-translate from English,
+  // not from already-translated DOM text.
+  const originalsRef = useRef(new WeakMap<Text, string>());
 
   useEffect(() => {
     if (typeof document === "undefined") return;
-    const originals = new WeakMap<Text, string>();
+    const originals = originalsRef.current;
 
     const shouldSkip = (node: Text) => {
       let el = node.parentElement;
@@ -47,12 +51,16 @@ export function PageTranslator() {
       for (const node of nodes) {
         const value = node.nodeValue ?? "";
         if (!value.trim() || shouldSkip(node)) continue;
-        const source = originals.get(node) ?? value;
-        const next = lang === "en" ? source : (translate(source, lang) ?? source);
-        if (next !== value) {
-          if (!originals.has(node)) originals.set(node, source);
-          node.nodeValue = next;
+
+        let source = originals.get(node);
+        if (source === undefined) {
+          // First sight of this node: React rendered English source copy.
+          source = value;
+          originals.set(node, source);
         }
+
+        const next = lang === "en" ? source : (translate(source, lang) ?? source);
+        if (next !== value) node.nodeValue = next;
       }
     };
 
