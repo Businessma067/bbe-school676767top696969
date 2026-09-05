@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TutorExamRouteImport } from './routes/tutor-exam'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ProductsRouteImport } from './routes/products'
@@ -86,6 +87,11 @@ const TutorExamRoute = TutorExamRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SignupRoute = SignupRouteImport.update({
@@ -455,6 +461,7 @@ export interface FileRoutesByFullPath {
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/$lang/$': typeof LangSplatRoute
@@ -518,6 +525,7 @@ export interface FileRoutesByTo {
   '/practice': typeof PracticeRoute
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/$lang/$': typeof LangSplatRoute
   '/admin/economics': typeof AdminEconomicsRoute
@@ -587,6 +595,7 @@ export interface FileRoutesById {
   '/products': typeof ProductsRouteWithChildren
   '/reset-password': typeof ResetPasswordRoute
   '/signup': typeof SignupRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/tutor-exam': typeof TutorExamRouteWithChildren
   '/$lang/$': typeof LangSplatRoute
@@ -659,6 +668,7 @@ export interface FileRouteTypes {
     | '/products'
     | '/reset-password'
     | '/signup'
+    | '/sitemap.xml'
     | '/terms'
     | '/tutor-exam'
     | '/$lang/$'
@@ -722,6 +732,7 @@ export interface FileRouteTypes {
     | '/practice'
     | '/reset-password'
     | '/signup'
+    | '/sitemap.xml'
     | '/terms'
     | '/$lang/$'
     | '/admin/economics'
@@ -790,6 +801,7 @@ export interface FileRouteTypes {
     | '/products'
     | '/reset-password'
     | '/signup'
+    | '/sitemap.xml'
     | '/terms'
     | '/tutor-exam'
     | '/$lang/$'
@@ -861,6 +873,7 @@ export interface RootRouteChildren {
   ProductsRoute: typeof ProductsRouteWithChildren
   ResetPasswordRoute: typeof ResetPasswordRoute
   SignupRoute: typeof SignupRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   TutorExamRoute: typeof TutorExamRouteWithChildren
   ApiChatRoute: typeof ApiChatRoute
@@ -885,6 +898,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/signup': {
@@ -1532,6 +1552,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProductsRoute: ProductsRouteWithChildren,
   ResetPasswordRoute: ResetPasswordRoute,
   SignupRoute: SignupRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   TutorExamRoute: TutorExamRouteWithChildren,
   ApiChatRoute: ApiChatRoute,
