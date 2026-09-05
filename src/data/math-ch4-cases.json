@@ -6197,15 +6197,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSubtract and divide: $2x=6$, so $x=3$, not $x=3$ when the values differ.\n\nThe claim is True.",
-    "**B.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**C.** → True\n\nClearing the nonzero denominator gives $x+4=2x-2$, hence $x=6$. It is admissible.\n\nThe claim is True.",
-    "**D.** → False\n\nSince $32=2^5$ and $2^x$ is one-to-one, the solution is $x=5$.\n\nThe claim is False.",
-    "**E.** → True\n\nSubtract and divide: $2x=14$, so $x=7$, not $x=7$ when the values differ.\n\nThe claim is True."
+    "**A.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+1=7$$\n\nSubtract the constant term from both sides:\n\n$$2x=6$$\n\nDivide by $2$:\n\n$$x=3$$\n\nThe recovered root is $x=3$, which matches the claimed $x=3$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**C.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+4}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+4=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+4=2x-2$$\n\nGather the unknown on one side:\n\n$$4+2=2x-x$$\n\n$$x=6$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=6$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=32$$\n\n$$32=2^{5}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{5}$$\n\nand therefore\n\n$$x=5$$\n\nThe unique real solution is $x=5$, not the claimed $x=6$.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+5=19$$\n\nSubtract the constant term from both sides:\n\n$$2x=14$$\n\nDivide by $2$:\n\n$$x=7$$\n\nThe recovered root is $x=7$, which matches the claimed $x=7$.\n\nComparing with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 194,
-   "solution_overview": "Independent round-robin topics: 4.1, 4.2, 4.3, 4.4, 4.1. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6229,15 +6229,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**B.** → True\n\nClearing the nonzero denominator gives $x+3=2x-2$, hence $x=5$. It is admissible.\n\nThe claim is True.",
-    "**C.** → False\n\nSince $16=2^4$ and $2^x$ is one-to-one, the solution is $x=4$.\n\nThe claim is False.",
-    "**D.** → True\n\nSubtract and divide: $2x=12$, so $x=6$, not $x=6$ when the values differ.\n\nThe claim is True.",
-    "**E.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False."
+    "**A.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**B.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+3}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+3=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+3=2x-2$$\n\nGather the unknown on one side:\n\n$$3+2=2x-x$$\n\n$$x=5$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=5$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=16$$\n\n$$16=2^{4}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{4}$$\n\nand therefore\n\n$$x=4$$\n\nThe unique real solution is $x=4$, not the claimed $x=5$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+3=15$$\n\nSubtract the constant term from both sides:\n\n$$2x=12$$\n\nDivide by $2$:\n\n$$x=6$$\n\nThe recovered root is $x=6$, which matches the claimed $x=6$.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 195,
-   "solution_overview": "Independent round-robin topics: 4.2, 4.3, 4.4, 4.1, 4.2. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6261,15 +6261,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nClearing the nonzero denominator gives $x+2=2x-2$, hence $x=4$. It is admissible.\n\nThe claim is True.",
-    "**B.** → False\n\nSince $8=2^3$ and $2^x$ is one-to-one, the solution is $x=3$.\n\nThe claim is False.",
-    "**C.** → True\n\nSubtract and divide: $2x=10$, so $x=5$, not $x=5$ when the values differ.\n\nThe claim is True.",
-    "**D.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**E.** → True\n\nClearing the nonzero denominator gives $x+6=2x-2$, hence $x=8$. It is admissible.\n\nThe claim is True."
+    "**A.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+2}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+2=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+2=2x-2$$\n\nGather the unknown on one side:\n\n$$2+2=2x-x$$\n\n$$x=4$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=4$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=8$$\n\n$$8=2^{3}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{3}$$\n\nand therefore\n\n$$x=3$$\n\nThe unique real solution is $x=3$, not the claimed $x=4$.\n\nComparing with the claim, so the statement is False.",
+    "**C.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+1=11$$\n\nSubtract the constant term from both sides:\n\n$$2x=10$$\n\nDivide by $2$:\n\n$$x=5$$\n\nThe recovered root is $x=5$, which matches the claimed $x=5$.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+6}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+6=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+6=2x-2$$\n\nGather the unknown on one side:\n\n$$6+2=2x-x$$\n\n$$x=8$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=8$, matching the claim.\n\nComparing with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 196,
-   "solution_overview": "Independent round-robin topics: 4.3, 4.4, 4.1, 4.2, 4.3. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6293,15 +6293,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSince $4=2^2$ and $2^x$ is one-to-one, the solution is $x=2$.\n\nThe claim is False.",
-    "**B.** → True\n\nSubtract and divide: $2x=8$, so $x=4$, not $x=4$ when the values differ.\n\nThe claim is True.",
-    "**C.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**D.** → True\n\nClearing the nonzero denominator gives $x+5=2x-2$, hence $x=7$. It is admissible.\n\nThe claim is True.",
-    "**E.** → False\n\nSince $64=2^6$ and $2^x$ is one-to-one, the solution is $x=6$.\n\nThe claim is False."
+    "**A.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=4$$\n\n$$4=2^{2}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{2}$$\n\nand therefore\n\n$$x=2$$\n\nThe unique real solution is $x=2$, not the claimed $x=3$.\n\nComparing with the claim, so the statement is False.",
+    "**B.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+5=13$$\n\nSubtract the constant term from both sides:\n\n$$2x=8$$\n\nDivide by $2$:\n\n$$x=4$$\n\nThe recovered root is $x=4$, which matches the claimed $x=4$.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+5}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+5=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+5=2x-2$$\n\nGather the unknown on one side:\n\n$$5+2=2x-x$$\n\n$$x=7$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=7$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=64$$\n\n$$64=2^{6}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{6}$$\n\nand therefore\n\n$$x=6$$\n\nThe unique real solution is $x=6$, not the claimed $x=7$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 197,
-   "solution_overview": "Independent round-robin topics: 4.4, 4.1, 4.2, 4.3, 4.4. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6325,15 +6325,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSubtract and divide: $2x=6$, so $x=3$, not $x=3$ when the values differ.\n\nThe claim is True.",
-    "**B.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**C.** → True\n\nClearing the nonzero denominator gives $x+4=2x-2$, hence $x=6$. It is admissible.\n\nThe claim is True.",
-    "**D.** → False\n\nSince $32=2^5$ and $2^x$ is one-to-one, the solution is $x=5$.\n\nThe claim is False.",
-    "**E.** → True\n\nSubtract and divide: $2x=14$, so $x=7$, not $x=7$ when the values differ.\n\nThe claim is True."
+    "**A.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+3=9$$\n\nSubtract the constant term from both sides:\n\n$$2x=6$$\n\nDivide by $2$:\n\n$$x=3$$\n\nThe recovered root is $x=3$, which matches the claimed $x=3$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**C.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+4}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+4=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+4=2x-2$$\n\nGather the unknown on one side:\n\n$$4+2=2x-x$$\n\n$$x=6$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=6$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=32$$\n\n$$32=2^{5}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{5}$$\n\nand therefore\n\n$$x=5$$\n\nThe unique real solution is $x=5$, not the claimed $x=6$.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+1=15$$\n\nSubtract the constant term from both sides:\n\n$$2x=14$$\n\nDivide by $2$:\n\n$$x=7$$\n\nThe recovered root is $x=7$, which matches the claimed $x=7$.\n\nComparing with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 198,
-   "solution_overview": "Independent round-robin topics: 4.1, 4.2, 4.3, 4.4, 4.1. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6357,15 +6357,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**B.** → True\n\nClearing the nonzero denominator gives $x+3=2x-2$, hence $x=5$. It is admissible.\n\nThe claim is True.",
-    "**C.** → False\n\nSince $16=2^4$ and $2^x$ is one-to-one, the solution is $x=4$.\n\nThe claim is False.",
-    "**D.** → True\n\nSubtract and divide: $2x=12$, so $x=6$, not $x=6$ when the values differ.\n\nThe claim is True.",
-    "**E.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False."
+    "**A.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**B.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+3}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+3=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+3=2x-2$$\n\nGather the unknown on one side:\n\n$$3+2=2x-x$$\n\n$$x=5$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=5$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=16$$\n\n$$16=2^{4}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{4}$$\n\nand therefore\n\n$$x=4$$\n\nThe unique real solution is $x=4$, not the claimed $x=5$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+5=17$$\n\nSubtract the constant term from both sides:\n\n$$2x=12$$\n\nDivide by $2$:\n\n$$x=6$$\n\nThe recovered root is $x=6$, which matches the claimed $x=6$.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 199,
-   "solution_overview": "Independent round-robin topics: 4.2, 4.3, 4.4, 4.1, 4.2. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6389,15 +6389,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nClearing the nonzero denominator gives $x+2=2x-2$, hence $x=4$. It is admissible.\n\nThe claim is True.",
-    "**B.** → False\n\nSince $8=2^3$ and $2^x$ is one-to-one, the solution is $x=3$.\n\nThe claim is False.",
-    "**C.** → True\n\nSubtract and divide: $2x=10$, so $x=5$, not $x=5$ when the values differ.\n\nThe claim is True.",
-    "**D.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**E.** → True\n\nClearing the nonzero denominator gives $x+6=2x-2$, hence $x=8$. It is admissible.\n\nThe claim is True."
+    "**A.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+2}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+2=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+2=2x-2$$\n\nGather the unknown on one side:\n\n$$2+2=2x-x$$\n\n$$x=4$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=4$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=8$$\n\n$$8=2^{3}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{3}$$\n\nand therefore\n\n$$x=3$$\n\nThe unique real solution is $x=3$, not the claimed $x=4$.\n\nComparing with the claim, so the statement is False.",
+    "**C.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+3=13$$\n\nSubtract the constant term from both sides:\n\n$$2x=10$$\n\nDivide by $2$:\n\n$$x=5$$\n\nThe recovered root is $x=5$, which matches the claimed $x=5$.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+6}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+6=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+6=2x-2$$\n\nGather the unknown on one side:\n\n$$6+2=2x-x$$\n\n$$x=8$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=8$, matching the claim.\n\nComparing with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 200,
-   "solution_overview": "Independent round-robin topics: 4.3, 4.4, 4.1, 4.2, 4.3. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6421,15 +6421,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nSince $4=2^2$ and $2^x$ is one-to-one, the solution is $x=2$.\n\nThe claim is False.",
-    "**B.** → True\n\nSubtract and divide: $2x=8$, so $x=4$, not $x=4$ when the values differ.\n\nThe claim is True.",
-    "**C.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**D.** → True\n\nClearing the nonzero denominator gives $x+5=2x-2$, hence $x=7$. It is admissible.\n\nThe claim is True.",
-    "**E.** → False\n\nSince $64=2^6$ and $2^x$ is one-to-one, the solution is $x=6$.\n\nThe claim is False."
+    "**A.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=4$$\n\n$$4=2^{2}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{2}$$\n\nand therefore\n\n$$x=2$$\n\nThe unique real solution is $x=2$, not the claimed $x=3$.\n\nComparing with the claim, so the statement is False.",
+    "**B.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+1=9$$\n\nSubtract the constant term from both sides:\n\n$$2x=8$$\n\nDivide by $2$:\n\n$$x=4$$\n\nThe recovered root is $x=4$, which matches the claimed $x=4$.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+5}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+5=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+5=2x-2$$\n\nGather the unknown on one side:\n\n$$5+2=2x-x$$\n\n$$x=7$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=7$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=64$$\n\n$$64=2^{6}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{6}$$\n\nand therefore\n\n$$x=6$$\n\nThe unique real solution is $x=6$, not the claimed $x=7$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 201,
-   "solution_overview": "Independent round-robin topics: 4.4, 4.1, 4.2, 4.3, 4.4. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6453,15 +6453,15 @@
     true
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nSubtract and divide: $2x=6$, so $x=3$, not $x=3$ when the values differ.\n\nThe claim is True.",
-    "**B.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**C.** → True\n\nClearing the nonzero denominator gives $x+4=2x-2$, hence $x=6$. It is admissible.\n\nThe claim is True.",
-    "**D.** → False\n\nSince $32=2^5$ and $2^x$ is one-to-one, the solution is $x=5$.\n\nThe claim is False.",
-    "**E.** → True\n\nSubtract and divide: $2x=14$, so $x=7$, not $x=7$ when the values differ.\n\nThe claim is True."
+    "**A.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+5=11$$\n\nSubtract the constant term from both sides:\n\n$$2x=6$$\n\nDivide by $2$:\n\n$$x=3$$\n\nThe recovered root is $x=3$, which matches the claimed $x=3$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**C.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+4}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+4=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+4=2x-2$$\n\nGather the unknown on one side:\n\n$$4+2=2x-x$$\n\n$$x=6$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=6$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=32$$\n\n$$32=2^{5}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{5}$$\n\nand therefore\n\n$$x=5$$\n\nThe unique real solution is $x=5$, not the claimed $x=6$.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+3=17$$\n\nSubtract the constant term from both sides:\n\n$$2x=14$$\n\nDivide by $2$:\n\n$$x=7$$\n\nThe recovered root is $x=7$, which matches the claimed $x=7$.\n\nComparing with the claim, so the statement is True."
    ],
    "difficulty_level": "5/5",
    "sort_order": 202,
-   "solution_overview": "Independent round-robin topics: 4.1, 4.2, 4.3, 4.4, 4.1. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6485,15 +6485,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False.",
-    "**B.** → True\n\nClearing the nonzero denominator gives $x+3=2x-2$, hence $x=5$. It is admissible.\n\nThe claim is True.",
-    "**C.** → False\n\nSince $16=2^4$ and $2^x$ is one-to-one, the solution is $x=4$.\n\nThe claim is False.",
-    "**D.** → True\n\nSubtract and divide: $2x=12$, so $x=6$, not $x=6$ when the values differ.\n\nThe claim is True.",
-    "**E.** → False\n\nThe polynomial factors as $(x-3)(x-6)$. Its roots sum to $3+6=9$.\n\nThe claim is False."
+    "**A.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False.",
+    "**B.** → True\n\nOn the stated domain $x\\ne 1$, clear the nonzero denominator by cross-multiplying:\n\n$$\\dfrac{x+3}{x-1}=2$$\n\nMultiply both sides by $x-1$:\n\n$$x+3=2(x-1)$$\n\nExpand the right-hand side:\n\n$$x+3=2x-2$$\n\nGather the unknown on one side:\n\n$$3+2=2x-x$$\n\n$$x=5$$\n\nCheck the hole: $x=1$ is excluded, and the recovered value is admissible.\n\nThe solution is $x=5$, matching the claim.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nRewrite the right-hand side as a pure power of the same base. Because $y\\mapsto 2^{y}$ is one-to-one on $\\mathbb{R}$, the exponents must match:\n\n$$2^{x}=16$$\n\n$$16=2^{4}$$\n\nSo the exponential equation becomes\n\n$$2^{x}=2^{4}$$\n\nand therefore\n\n$$x=4$$\n\nThe unique real solution is $x=4$, not the claimed $x=5$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nA linear equation with nonzero slope has exactly one real root. Undo addition first, then divide by the coefficient of $x$:\n\n$$2x+1=13$$\n\nSubtract the constant term from both sides:\n\n$$2x=12$$\n\nDivide by $2$:\n\n$$x=6$$\n\nThe recovered root is $x=6$, which matches the claimed $x=6$.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nFor a monic quadratic $x^{2}-sx+p=0$, Vieta’s sum formula reads the coefficient of $x$ with a sign change:\n\n$$x^{2}-9x+18=0$$\n\nFactor as a product of linear terms:\n\n$$(x-3)(x-6)=0$$\n\nThe roots are therefore $x=3$ and $x=6$. Their sum is\n\n$$3+6=9$$\n\nThe same sum is the Vieta coefficient:\n\n$$s=9$$\n\nThe claim asks for sum $10$, but the roots sum to $9$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 203,
-   "solution_overview": "Independent round-robin topics: 4.2, 4.3, 4.4, 4.1, 4.2. Each letter is a separate compact mini-problem.",
+   "solution_overview": "Independent round-robin mini-problems (4.1–4.4). Each letter is a separate equation; there is no shared unknown across A–E.\n\nFor a linear claim, undo addition then divide. For a quadratic sum claim, factor or apply Vieta. For a rational claim, exclude the hole, cross-multiply, and check admissibility. For an exponential claim $2^{x}=2^{k}$, equate exponents.",
    "placeholder": false
   },
   {
@@ -6517,15 +6517,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFixed cost plus per-unit cost gives the stated equation.\n\nThe claim is True.",
-    "**B.** → True\n\n$x=(110-30)/4=20$.\n\nThe claim is True.",
-    "**C.** → False\n\nThe fixed call-out fee is not doubled by doubling only the units.\n\nThe claim is False.",
-    "**D.** → True\n\nThe coefficient of $x$ is the marginal charge.\n\nThe claim is True.",
-    "**E.** → False\n\nThe intercept is $30$ EUR.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already wrote the invoice as fixed fee plus unit charge:\n\n$$30+4x=110$$\n\nThat is exactly the displayed equation in the claim.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nThe overview already recovered $x=20$ from (1). The claim asserts that the invoice contains $20$ units.\n\n$$x=\\dfrac{110-30}{4}=20$$\n\nSo the recorded invoice has $20$ units.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nDoubling only the unit count doubles the variable part, not the fixed call-out. With the recovered tariff,\n\n$$C(x)=30+4x$$\n\nthe doubled-unit bill is\n\n$$C(2x)=30+4(2x)=30+8x$$\n\nwhile twice the original bill is\n\n$$2C(x)=230+8x=60+8x$$\n\nThese differ by the leftover fixed fee $30$ EUR, so doubling units does not double the full invoice.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nThe marginal charge is the coefficient of $x$ in the recovered tariff:\n\n$$C(x+1)-C(x)=4$$\n\nOne extra unit therefore adds exactly $4$ EUR.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nRead the constant term in the recovered tariff $C(x)=30+4x$. Setting the unit count to zero isolates the call-out fee:\n\n$$C(0)=30$$\n\nThat fixed cost is $30$ EUR, so the tariff does not have zero fixed cost.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 204,
-   "solution_overview": "Shared context topic 4.1.\n\nShared solution:\n1. Use the single shared stem for topic 4.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared affine tariff is solved and interpreted.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Fixed cost plus per-unit cost gives the stated equation.\n5. A: The computed result makes this claim True.\n6. B: $x=(110-30)/4=20$.\n7. B: The computed result makes this claim True.\n8. C: The fixed call-out fee is not doubled by doubling only the units.\n9. C: The computed result makes this claim False.\n10. D: The coefficient of $x$ is the marginal charge.\n11. D: The computed result makes this claim True.\n12. E: The intercept is $30$ EUR.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "A repair tariff charges a fixed call-out of $30$ EUR plus $4$ EUR per replacement unit. One invoice totals $110$ EUR.\n\n**Part 1: Translate.**\n\nLet $x$ be the number of units on that invoice. Fixed cost plus per-unit cost gives\n\n$$30+4x=110$$ (1)\n\n**Part 2: Solve.**\n\nSubtract the fixed fee:\n\n$$4x=80$$\n\nDivide by the unit price:\n\n$$x=20$$\n\n**Answer.** Fixed fee $30$ EUR | unit price $4$ EUR | $x=20$ units on the recorded invoice.",
    "placeholder": false
   },
   {
@@ -6549,15 +6549,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA product is zero when either displayed factor is zero.\n\nThe claim is True.",
-    "**B.** → True\n\nThe downward-opening quadratic is positive between its roots.\n\nThe claim is True.",
-    "**C.** → True\n\nThe midpoint of the roots is $(4+10)/2=7$.\n\nThe claim is True.",
-    "**D.** → False\n\n$P(7)=-(3)(-3)=9$.\n\nThe claim is False.",
-    "**E.** → False\n\nThe roots $4$ and $10$ are positive.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already factored $P(q)=-(q-4)(q-10)$. Setting the product to zero gives the break-even indices\n\n$$q-4=0$$\n\n$$q=4$$\n\nand\n\n$$q-10=0$$\n\n$$q=10$$\n\nSo the break-even indices are $4$ and $10$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nA downward-opening parabola is positive strictly between its roots. With roots from the overview,\n\n$$P(q)>0 \\iff 4<q<10$$\n\nwhich is exactly the claimed open interval.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → True\n\nThe axis of symmetry of a quadratic is the midpoint of the roots:\n\n$$q=\\dfrac{4+10}{2}=7$$\n\nSo the axis is $q=7$.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nThe overview already evaluated the vertex: $P(7)=9$. The claim asserts a maximum of $10$ thousand EUR.\n\n$$P(7)=9$$\n\nSince $9\\ne10$, the figures disagree.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → False\n\nThe algebraic roots recovered in the overview are $4$ and $10$. Both are positive, so they are not both negative.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 205,
-   "solution_overview": "Shared context topic 4.2.\n\nShared solution:\n1. Use the single shared stem for topic 4.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared quadratic supplies roots, sign, symmetry, and maximum.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A product is zero when either displayed factor is zero.\n5. A: The computed result makes this claim True.\n6. B: The downward-opening quadratic is positive between its roots.\n7. B: The computed result makes this claim True.\n8. C: The midpoint of the roots is $(4+10)/2=7$.\n9. C: The computed result makes this claim True.\n10. D: $P(7)=-(3)(-3)=9$.\n11. D: The computed result makes this claim False.\n12. E: The roots $4$ and $10$ are positive.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "Operating surplus is modeled by $P(q)=-(q-4)(q-10)$ thousand EUR for a nonnegative attendance index $q$.\n\n**Part 1: Translate.**\n\nBreak-even means $P(q)=0$, and a positive surplus means $P(q)>0$. Expanding gives the downward parabola\n\n$$P(q)=-q^{2}+14q-40$$\n\n**Part 2: Recover.**\n\nA product is zero when a factor is zero, so the roots are $q=4$ and $q=10$. The axis of symmetry is their midpoint\n\n$$q=\\dfrac{4+10}{2}=7$$\n\nThe maximum surplus is the vertex value\n\n$$P(7)=-(7-4)(7-10)=9$$\n\n**Answer.** Roots $4,10$ | axis $q=7$ | max surplus $9$ thousand EUR.",
    "placeholder": false
   },
   {
@@ -6581,15 +6581,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nClearing denominators gives roots $6$ and $-4$.\n\nThe claim is True.",
-    "**B.** → True\n\nThe cleared quadratic factors as $(x-6)(x+4)=0$.\n\nThe claim is True.",
-    "**C.** → False\n\nA negative duration is not physically admissible.\n\nThe claim is False.",
-    "**D.** → True\n\nThe admissible value is $x=6$, so $x+6=12$.\n\nThe claim is True.",
-    "**E.** → False\n\nAt $x=0$ the first denominator vanishes.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already recovered the positive root $x=6$. Among the two algebraic roots, only this one is a physically admissible duration.\n\n$$x=6>0$$\n\nSo $x=6$ is the physical solution.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nClearing denominators produced the quadratic whose roots are $x=6$ and $x=-4$. In particular,\n\n$$x=-4$$\n\nis an algebraic root of that cleared equation, even though it is not a physical time.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nThe algebraic roots are $x=6$ and $x=-4$. A negative duration cannot be a physical pump time, so not both roots are physically admissible.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nWith the physical root $x=6$ from the overview, the slower pump’s time is\n\n$$x+6=6+6=12$$\n\nSo the individual times are $6$ and $12$ hours.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nSubstituting $x=0$ into the original combined-rate equation makes the first denominator vanish:\n\n$$\\dfrac{1}{0}+\\dfrac{1}{0+6}$$\n\nwhich is undefined. The original equation therefore excludes $x=0$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 206,
-   "solution_overview": "Shared context topic 4.3.\n\nShared solution:\n1. Use the single shared stem for topic 4.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared work-rate equation is solved with domain and physical checks.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Clearing denominators gives roots $6$ and $-4$.\n5. A: The computed result makes this claim True.\n6. B: The cleared quadratic factors as $(x-6)(x+4)=0$.\n7. B: The computed result makes this claim True.\n8. C: A negative duration is not physically admissible.\n9. C: The computed result makes this claim False.\n10. D: The admissible value is $x=6$, so $x+6=12$.\n11. D: The computed result makes this claim True.\n12. E: At $x=0$ the first denominator vanishes.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "Two pumps fill one reservoir together in $4$ hours. The faster alone needs $x$ hours and the slower needs $x+6$ hours:\n\n$$\\dfrac{1}{x}+\\dfrac{1}{x+6}=\\dfrac{1}{4}$$\n\nOnly positive times are physically admissible, and $x=0$ or $x=-6$ would zero a denominator.\n\n**Part 1: Clear denominators.** Multiply through by $4x(x+6)$ and expand:\n\n$$4(x+6)+4x=x(x+6)$$\n\n$$8x+24=x^{2}+6x$$\n\nRearrange into standard form:\n\n$$x^{2}+(6-8)x-24=0$$\n\n**Part 2: Solve.** Factoring yields the algebraic roots\n\n$$x=6$$\n\nand\n\n$$x=-4$$\n\nOnly $x=6$ is positive, so the physical pair is $6$ and $12$ hours.\n\n**Answer.** Algebraic roots $6$ and $-4$ | physical times $6$ and $12$ hours.",
    "placeholder": false
   },
   {
@@ -6613,15 +6613,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\n$2^0=1$, so the launch value equals the coefficient.\n\nThe claim is True.",
-    "**B.** → True\n\nReplacing $t$ by $t+3$ multiplies the model by $2^1=2$.\n\nThe claim is True.",
-    "**C.** → False\n\n$N(6)=200\\cdot2^2=800$.\n\nThe claim is False.",
-    "**D.** → True\n\n$2^{t/3}=4=2^2$ gives $t=6$.\n\nThe claim is True.",
-    "**E.** → False\n\nThe base $2$ and positive exponent coefficient make the model increasing.\n\nThe claim is False."
+    "**A.** → True\n\nAny positive number to the power $0$ equals $1$, so the launch level is the leading coefficient:\n\n$$N(0)=200\\cdot 2^{0}=200$$\n\nSo $N(0)=200$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nThe overview already computed the three-year growth factor:\n\n$$N(t+3)/N(t)=2$$\n\nso the subscriber base doubles every three years.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nSubstitute $t=6$ into the recovered model:\n\n$$N(6)=200\\cdot 2^{6/3}$$\n\n$$=200\\cdot 2^{2}$$\n\n$$=800$$\n\nThe claim asserts $N(6)=600$, but the model gives $800$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nFour times the launch level means $N(t)=4N(0)$:\n\n$$200\\cdot 2^{t/3}=4\\cdot 200$$\n\n$$2^{t/3}=4=2^{2}$$\n\nEquating exponents:\n\n$$t/3=2$$\n\n$$t=6$$\n\nSo four times the launch level is reached at $t=6$.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nThe base $2>1$ and the coefficient of $t$ in the exponent is positive, so $N$ is strictly increasing on $t\\ge 0$. The model does not decrease on its stated domain.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 207,
-   "solution_overview": "Shared context topic 4.4.\n\nShared solution:\n1. Use the single shared stem for topic 4.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared exponential model is evaluated and inverted.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $2^0=1$, so the launch value equals the coefficient.\n5. A: The computed result makes this claim True.\n6. B: Replacing $t$ by $t+3$ multiplies the model by $2^1=2$.\n7. B: The computed result makes this claim True.\n8. C: $N(6)=200\\cdot2^2=800$.\n9. C: The computed result makes this claim False.\n10. D: $2^{t/3}=4=2^2$ gives $t=6$.\n11. D: The computed result makes this claim True.\n12. E: The base $2$ and positive exponent coefficient make the model increasing.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "The subscriber base follows $N(t)=200\\cdot 2^{t/3}$ for real $t\\ge 0$, with $t=0$ as the launch date.\n\n**Part 1: Launch level.**\n\n$$N(0)=200\\cdot 2^{0}=200\\cdot 1=200$$\n\n**Part 2: Three-year growth factor.** Replacing $t$ by $t+3$ multiplies the model by\n\n$$2^{(t+3)/3}/2^{t/3}=2^{1}=2$$\n\nso the base doubles every three years.\n\n**Part 3: Named levels.**\n\n$$N(6)=200\\cdot 2^{6/3}=200\\cdot 2^{2}=800$$\n\nFour times the launch level means $N(t)=4N(0)$, so\n\n$$2^{t/3}=4=2^{2}$$\n\n$$t/3=2$$\n\n$$t=6$$\n\n**Answer.** $N(0)=200$ | doubles every $3$ years | $N(6)=800$ | fourfold time $t=6$.",
    "placeholder": false
   },
   {
@@ -6645,15 +6645,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFixed cost plus per-unit cost gives the stated equation.\n\nThe claim is True.",
-    "**B.** → True\n\n$x=(145-35)/5=22$.\n\nThe claim is True.",
-    "**C.** → False\n\nThe fixed call-out fee is not doubled by doubling only the units.\n\nThe claim is False.",
-    "**D.** → True\n\nThe coefficient of $x$ is the marginal charge.\n\nThe claim is True.",
-    "**E.** → False\n\nThe intercept is $35$ EUR.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already wrote the invoice as fixed fee plus unit charge:\n\n$$35+5x=145$$\n\nThat is exactly the displayed equation in the claim.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nThe overview already recovered $x=22$ from (1). The claim asserts that the invoice contains $22$ units.\n\n$$x=\\dfrac{145-35}{5}=22$$\n\nSo the recorded invoice has $22$ units.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nDoubling only the unit count doubles the variable part, not the fixed call-out. With the recovered tariff,\n\n$$C(x)=35+5x$$\n\nthe doubled-unit bill is\n\n$$C(2x)=35+5(2x)=35+10x$$\n\nwhile twice the original bill is\n\n$$2C(x)=235+10x=70+10x$$\n\nThese differ by the leftover fixed fee $35$ EUR, so doubling units does not double the full invoice.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nThe marginal charge is the coefficient of $x$ in the recovered tariff:\n\n$$C(x+1)-C(x)=5$$\n\nOne extra unit therefore adds exactly $5$ EUR.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nRead the constant term in the recovered tariff $C(x)=35+5x$. Setting the unit count to zero isolates the call-out fee:\n\n$$C(0)=35$$\n\nThat fixed cost is $35$ EUR, so the tariff does not have zero fixed cost.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 208,
-   "solution_overview": "Shared context topic 4.1.\n\nShared solution:\n1. Use the single shared stem for topic 4.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared affine tariff is solved and interpreted.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Fixed cost plus per-unit cost gives the stated equation.\n5. A: The computed result makes this claim True.\n6. B: $x=(145-35)/5=22$.\n7. B: The computed result makes this claim True.\n8. C: The fixed call-out fee is not doubled by doubling only the units.\n9. C: The computed result makes this claim False.\n10. D: The coefficient of $x$ is the marginal charge.\n11. D: The computed result makes this claim True.\n12. E: The intercept is $35$ EUR.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "A repair tariff charges a fixed call-out of $35$ EUR plus $5$ EUR per replacement unit. One invoice totals $145$ EUR.\n\n**Part 1: Translate.**\n\nLet $x$ be the number of units on that invoice. Fixed cost plus per-unit cost gives\n\n$$35+5x=145$$ (1)\n\n**Part 2: Solve.**\n\nSubtract the fixed fee:\n\n$$5x=110$$\n\nDivide by the unit price:\n\n$$x=22$$\n\n**Answer.** Fixed fee $35$ EUR | unit price $5$ EUR | $x=22$ units on the recorded invoice.",
    "placeholder": false
   },
   {
@@ -6677,15 +6677,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA product is zero when either displayed factor is zero.\n\nThe claim is True.",
-    "**B.** → True\n\nThe downward-opening quadratic is positive between its roots.\n\nThe claim is True.",
-    "**C.** → True\n\nThe midpoint of the roots is $(5+11)/2=8$.\n\nThe claim is True.",
-    "**D.** → False\n\n$P(8)=-(3)(-3)=9$.\n\nThe claim is False.",
-    "**E.** → False\n\nThe roots $5$ and $11$ are positive.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already factored $P(q)=-(q-5)(q-11)$. Setting the product to zero gives the break-even indices\n\n$$q-5=0$$\n\n$$q=5$$\n\nand\n\n$$q-11=0$$\n\n$$q=11$$\n\nSo the break-even indices are $5$ and $11$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nA downward-opening parabola is positive strictly between its roots. With roots from the overview,\n\n$$P(q)>0 \\iff 5<q<11$$\n\nwhich is exactly the claimed open interval.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → True\n\nThe axis of symmetry of a quadratic is the midpoint of the roots:\n\n$$q=\\dfrac{5+11}{2}=8$$\n\nSo the axis is $q=8$.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nThe overview already evaluated the vertex: $P(8)=9$. The claim asserts a maximum of $10$ thousand EUR.\n\n$$P(8)=9$$\n\nSince $9\\ne10$, the figures disagree.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → False\n\nThe algebraic roots recovered in the overview are $5$ and $11$. Both are positive, so they are not both negative.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 209,
-   "solution_overview": "Shared context topic 4.2.\n\nShared solution:\n1. Use the single shared stem for topic 4.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared quadratic supplies roots, sign, symmetry, and maximum.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A product is zero when either displayed factor is zero.\n5. A: The computed result makes this claim True.\n6. B: The downward-opening quadratic is positive between its roots.\n7. B: The computed result makes this claim True.\n8. C: The midpoint of the roots is $(5+11)/2=8$.\n9. C: The computed result makes this claim True.\n10. D: $P(8)=-(3)(-3)=9$.\n11. D: The computed result makes this claim False.\n12. E: The roots $5$ and $11$ are positive.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "Operating surplus is modeled by $P(q)=-(q-5)(q-11)$ thousand EUR for a nonnegative attendance index $q$.\n\n**Part 1: Translate.**\n\nBreak-even means $P(q)=0$, and a positive surplus means $P(q)>0$. Expanding gives the downward parabola\n\n$$P(q)=-q^{2}+16q-55$$\n\n**Part 2: Recover.**\n\nA product is zero when a factor is zero, so the roots are $q=5$ and $q=11$. The axis of symmetry is their midpoint\n\n$$q=\\dfrac{5+11}{2}=8$$\n\nThe maximum surplus is the vertex value\n\n$$P(8)=-(8-5)(8-11)=9$$\n\n**Answer.** Roots $5,11$ | axis $q=8$ | max surplus $9$ thousand EUR.",
    "placeholder": false
   },
   {
@@ -6709,15 +6709,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nClearing denominators gives roots $12$ and $-8$.\n\nThe claim is True.",
-    "**B.** → True\n\nThe cleared quadratic factors as $(x-12)(x+8)=0$.\n\nThe claim is True.",
-    "**C.** → False\n\nA negative duration is not physically admissible.\n\nThe claim is False.",
-    "**D.** → True\n\nThe admissible value is $x=12$, so $x+12=24$.\n\nThe claim is True.",
-    "**E.** → False\n\nAt $x=0$ the first denominator vanishes.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already recovered the positive root $x=12$. Among the two algebraic roots, only this one is a physically admissible duration.\n\n$$x=12>0$$\n\nSo $x=12$ is the physical solution.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nClearing denominators produced the quadratic whose roots are $x=12$ and $x=-8$. In particular,\n\n$$x=-8$$\n\nis an algebraic root of that cleared equation, even though it is not a physical time.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nThe algebraic roots are $x=12$ and $x=-8$. A negative duration cannot be a physical pump time, so not both roots are physically admissible.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nWith the physical root $x=12$ from the overview, the slower pump’s time is\n\n$$x+12=12+12=24$$\n\nSo the individual times are $12$ and $24$ hours.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nSubstituting $x=0$ into the original combined-rate equation makes the first denominator vanish:\n\n$$\\dfrac{1}{0}+\\dfrac{1}{0+12}$$\n\nwhich is undefined. The original equation therefore excludes $x=0$.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 210,
-   "solution_overview": "Shared context topic 4.3.\n\nShared solution:\n1. Use the single shared stem for topic 4.3; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared work-rate equation is solved with domain and physical checks.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Clearing denominators gives roots $12$ and $-8$.\n5. A: The computed result makes this claim True.\n6. B: The cleared quadratic factors as $(x-12)(x+8)=0$.\n7. B: The computed result makes this claim True.\n8. C: A negative duration is not physically admissible.\n9. C: The computed result makes this claim False.\n10. D: The admissible value is $x=12$, so $x+12=24$.\n11. D: The computed result makes this claim True.\n12. E: At $x=0$ the first denominator vanishes.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "Two pumps fill one reservoir together in $8$ hours. The faster alone needs $x$ hours and the slower needs $x+12$ hours:\n\n$$\\dfrac{1}{x}+\\dfrac{1}{x+12}=\\dfrac{1}{8}$$\n\nOnly positive times are physically admissible, and $x=0$ or $x=-12$ would zero a denominator.\n\n**Part 1: Clear denominators.** Multiply through by $8x(x+12)$ and expand:\n\n$$8(x+12)+8x=x(x+12)$$\n\n$$16x+96=x^{2}+12x$$\n\nRearrange into standard form:\n\n$$x^{2}+(12-16)x-96=0$$\n\n**Part 2: Solve.** Factoring yields the algebraic roots\n\n$$x=12$$\n\nand\n\n$$x=-8$$\n\nOnly $x=12$ is positive, so the physical pair is $12$ and $24$ hours.\n\n**Answer.** Algebraic roots $12$ and $-8$ | physical times $12$ and $24$ hours.",
    "placeholder": false
   },
   {
@@ -6741,15 +6741,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\n$2^0=1$, so the launch value equals the coefficient.\n\nThe claim is True.",
-    "**B.** → True\n\nReplacing $t$ by $t+3$ multiplies the model by $2^1=2$.\n\nThe claim is True.",
-    "**C.** → False\n\n$N(6)=250\\cdot2^2=1000$.\n\nThe claim is False.",
-    "**D.** → True\n\n$2^{t/3}=4=2^2$ gives $t=6$.\n\nThe claim is True.",
-    "**E.** → False\n\nThe base $2$ and positive exponent coefficient make the model increasing.\n\nThe claim is False."
+    "**A.** → True\n\nAny positive number to the power $0$ equals $1$, so the launch level is the leading coefficient:\n\n$$N(0)=250\\cdot 2^{0}=250$$\n\nSo $N(0)=250$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nThe overview already computed the three-year growth factor:\n\n$$N(t+3)/N(t)=2$$\n\nso the subscriber base doubles every three years.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nSubstitute $t=6$ into the recovered model:\n\n$$N(6)=250\\cdot 2^{6/3}$$\n\n$$=250\\cdot 2^{2}$$\n\n$$=1000$$\n\nThe claim asserts $N(6)=600$, but the model gives $1000$.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nFour times the launch level means $N(t)=4N(0)$:\n\n$$250\\cdot 2^{t/3}=4\\cdot 250$$\n\n$$2^{t/3}=4=2^{2}$$\n\nEquating exponents:\n\n$$t/3=2$$\n\n$$t=6$$\n\nSo four times the launch level is reached at $t=6$.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nThe base $2>1$ and the coefficient of $t$ in the exponent is positive, so $N$ is strictly increasing on $t\\ge 0$. The model does not decrease on its stated domain.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 211,
-   "solution_overview": "Shared context topic 4.4.\n\nShared solution:\n1. Use the single shared stem for topic 4.4; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared exponential model is evaluated and inverted.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: $2^0=1$, so the launch value equals the coefficient.\n5. A: The computed result makes this claim True.\n6. B: Replacing $t$ by $t+3$ multiplies the model by $2^1=2$.\n7. B: The computed result makes this claim True.\n8. C: $N(6)=250\\cdot2^2=1000$.\n9. C: The computed result makes this claim False.\n10. D: $2^{t/3}=4=2^2$ gives $t=6$.\n11. D: The computed result makes this claim True.\n12. E: The base $2$ and positive exponent coefficient make the model increasing.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "The subscriber base follows $N(t)=250\\cdot 2^{t/3}$ for real $t\\ge 0$, with $t=0$ as the launch date.\n\n**Part 1: Launch level.**\n\n$$N(0)=250\\cdot 2^{0}=250\\cdot 1=250$$\n\n**Part 2: Three-year growth factor.** Replacing $t$ by $t+3$ multiplies the model by\n\n$$2^{(t+3)/3}/2^{t/3}=2^{1}=2$$\n\nso the base doubles every three years.\n\n**Part 3: Named levels.**\n\n$$N(6)=250\\cdot 2^{6/3}=250\\cdot 2^{2}=1000$$\n\nFour times the launch level means $N(t)=4N(0)$, so\n\n$$2^{t/3}=4=2^{2}$$\n\n$$t/3=2$$\n\n$$t=6$$\n\n**Answer.** $N(0)=250$ | doubles every $3$ years | $N(6)=1000$ | fourfold time $t=6$.",
    "placeholder": false
   },
   {
@@ -6773,15 +6773,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nFixed cost plus per-unit cost gives the stated equation.\n\nThe claim is True.",
-    "**B.** → True\n\n$x=(184-40)/6=24$.\n\nThe claim is True.",
-    "**C.** → False\n\nThe fixed call-out fee is not doubled by doubling only the units.\n\nThe claim is False.",
-    "**D.** → True\n\nThe coefficient of $x$ is the marginal charge.\n\nThe claim is True.",
-    "**E.** → False\n\nThe intercept is $40$ EUR.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already wrote the invoice as fixed fee plus unit charge:\n\n$$40+6x=184$$\n\nThat is exactly the displayed equation in the claim.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nThe overview already recovered $x=24$ from (1). The claim asserts that the invoice contains $24$ units.\n\n$$x=\\dfrac{184-40}{6}=24$$\n\nSo the recorded invoice has $24$ units.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → False\n\nDoubling only the unit count doubles the variable part, not the fixed call-out. With the recovered tariff,\n\n$$C(x)=40+6x$$\n\nthe doubled-unit bill is\n\n$$C(2x)=40+6(2x)=40+12x$$\n\nwhile twice the original bill is\n\n$$2C(x)=240+12x=80+12x$$\n\nThese differ by the leftover fixed fee $40$ EUR, so doubling units does not double the full invoice.\n\nComparing with the claim, so the statement is False.",
+    "**D.** → True\n\nThe marginal charge is the coefficient of $x$ in the recovered tariff:\n\n$$C(x+1)-C(x)=6$$\n\nOne extra unit therefore adds exactly $6$ EUR.\n\nComparing with the claim, so the statement is True.",
+    "**E.** → False\n\nRead the constant term in the recovered tariff $C(x)=40+6x$. Setting the unit count to zero isolates the call-out fee:\n\n$$C(0)=40$$\n\nThat fixed cost is $40$ EUR, so the tariff does not have zero fixed cost.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 212,
-   "solution_overview": "Shared context topic 4.1.\n\nShared solution:\n1. Use the single shared stem for topic 4.1; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. A shared affine tariff is solved and interpreted.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: Fixed cost plus per-unit cost gives the stated equation.\n5. A: The computed result makes this claim True.\n6. B: $x=(184-40)/6=24$.\n7. B: The computed result makes this claim True.\n8. C: The fixed call-out fee is not doubled by doubling only the units.\n9. C: The computed result makes this claim False.\n10. D: The coefficient of $x$ is the marginal charge.\n11. D: The computed result makes this claim True.\n12. E: The intercept is $40$ EUR.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "A repair tariff charges a fixed call-out of $40$ EUR plus $6$ EUR per replacement unit. One invoice totals $184$ EUR.\n\n**Part 1: Translate.**\n\nLet $x$ be the number of units on that invoice. Fixed cost plus per-unit cost gives\n\n$$40+6x=184$$ (1)\n\n**Part 2: Solve.**\n\nSubtract the fixed fee:\n\n$$6x=144$$\n\nDivide by the unit price:\n\n$$x=24$$\n\n**Answer.** Fixed fee $40$ EUR | unit price $6$ EUR | $x=24$ units on the recorded invoice.",
    "placeholder": false
   },
   {
@@ -6805,15 +6805,15 @@
     false
    ],
    "tactical_explanations": [
-    "**A.** → True\n\nA product is zero when either displayed factor is zero.\n\nThe claim is True.",
-    "**B.** → True\n\nThe downward-opening quadratic is positive between its roots.\n\nThe claim is True.",
-    "**C.** → True\n\nThe midpoint of the roots is $(6+12)/2=9$.\n\nThe claim is True.",
-    "**D.** → False\n\n$P(9)=-(3)(-3)=9$.\n\nThe claim is False.",
-    "**E.** → False\n\nThe roots $6$ and $12$ are positive.\n\nThe claim is False."
+    "**A.** → True\n\nThe overview already factored $P(q)=-(q-6)(q-12)$. Setting the product to zero gives the break-even indices\n\n$$q-6=0$$\n\n$$q=6$$\n\nand\n\n$$q-12=0$$\n\n$$q=12$$\n\nSo the break-even indices are $6$ and $12$.\n\nComparing with the claim, so the statement is True.",
+    "**B.** → True\n\nA downward-opening parabola is positive strictly between its roots. With roots from the overview,\n\n$$P(q)>0 \\iff 6<q<12$$\n\nwhich is exactly the claimed open interval.\n\nComparing with the claim, so the statement is True.",
+    "**C.** → True\n\nThe axis of symmetry of a quadratic is the midpoint of the roots:\n\n$$q=\\dfrac{6+12}{2}=9$$\n\nSo the axis is $q=9$.\n\nComparing with the claim, so the statement is True.",
+    "**D.** → False\n\nThe overview already evaluated the vertex: $P(9)=9$. The claim asserts a maximum of $10$ thousand EUR.\n\n$$P(9)=9$$\n\nSince $9\\ne10$, the figures disagree.\n\nComparing with the claim, so the statement is False.",
+    "**E.** → False\n\nThe algebraic roots recovered in the overview are $6$ and $12$. Both are positive, so they are not both negative.\n\nComparing with the claim, so the statement is False."
    ],
    "difficulty_level": "5/5",
    "sort_order": 213,
-   "solution_overview": "Shared context topic 4.2.\n\nShared solution:\n1. Use the single shared stem for topic 4.2; do not re-read any claim as a new scenario.\n2. Organize the given data before testing claims. One shared quadratic supplies roots, sign, symmetry, and maximum.\n3. Keep every stated domain, endpoint, sampling rule, or physical restriction in force.\n4. A: A product is zero when either displayed factor is zero.\n5. A: The computed result makes this claim True.\n6. B: The downward-opening quadratic is positive between its roots.\n7. B: The computed result makes this claim True.\n8. C: The midpoint of the roots is $(6+12)/2=9$.\n9. C: The computed result makes this claim True.\n10. D: $P(9)=-(3)(-3)=9$.\n11. D: The computed result makes this claim False.\n12. E: The roots $6$ and $12$ are positive.\n13. E: The computed result makes this claim False.",
+   "solution_overview": "Operating surplus is modeled by $P(q)=-(q-6)(q-12)$ thousand EUR for a nonnegative attendance index $q$.\n\n**Part 1: Translate.**\n\nBreak-even means $P(q)=0$, and a positive surplus means $P(q)>0$. Expanding gives the downward parabola\n\n$$P(q)=-q^{2}+18q-72$$\n\n**Part 2: Recover.**\n\nA product is zero when a factor is zero, so the roots are $q=6$ and $q=12$. The axis of symmetry is their midpoint\n\n$$q=\\dfrac{6+12}{2}=9$$\n\nThe maximum surplus is the vertex value\n\n$$P(9)=-(9-6)(9-12)=9$$\n\n**Answer.** Roots $6,12$ | axis $q=9$ | max surplus $9$ thousand EUR.",
    "placeholder": false
   }
  ]
