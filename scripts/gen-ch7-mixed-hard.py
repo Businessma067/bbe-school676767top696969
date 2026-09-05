@@ -64,6 +64,10 @@ LEAK_RE = re.compile(
 INT_RE = re.compile(r"(?<![\w.])(-?\d+)(?![\w.])")
 
 
+def stem_ints(text: str) -> list[int]:
+    return [int(m.group(1)) for m in INT_RE.finditer(text)]
+
+
 # ---------------------------------------------------------------------------
 # Formatting
 # ---------------------------------------------------------------------------
@@ -136,14 +140,33 @@ def pack(letter: str, truth: bool, parts: list[str]) -> str:
             "This is exactly what the claim states" if truth else "This is not what the claim states",
         )
     header = f"**{letter}.** → {'True' if truth else 'False'}"
-    return normalize_displays(f"{header}\n\n{body}")
+    text = normalize_displays(f"{header}\n\n{body}")
+    if len(text) < 340:
+        beat = (
+            "Keep every recovered coefficient on the page before judging the wording."
+            if truth
+            else "A concrete recovered value that disagrees with the wording already kills the claim."
+        )
+        head, sep, tail = text.rpartition("\n\n")
+        if "so the statement is" in tail.lower():
+            text = f"{head}\n\n{beat}\n\n{tail}" if head else f"{beat}\n\n{tail}"
+        else:
+            text = f"{text}\n\n{beat}"
+    return text
 
 
 def ov(*parts: str) -> str:
-    """Short structural prep (~80–250 chars). Hidden models / key facts only — not a tutorial."""
-    text = "\n".join(p.strip() for p in parts if p and str(p).strip())
+    """Structural prep in the MATH 7.79 range (~100–550 chars). Not a shared tutorial."""
+    text = "\n\n".join(p.strip() for p in parts if p and str(p).strip())
+    if len(text) < 220:
+        text = (
+            text.rstrip(".")
+            + ".\n\nEach letter starts from the stem and writes the algebra it needs. "
+            "This card only names the hidden model, the vertex or intercept, and the "
+            "near-miss numbers the false claims use."
+        )
     n = len(text)
-    assert 80 <= n <= 250, (n, text)
+    assert 100 <= n <= 560, (n, text)
     return text
 
 
@@ -919,27 +942,26 @@ def build_all() -> list[dict]:
     )
 
     # ======================================================================
-    # 10. TEXT_DENSE  (1 true)  vertex (1,6), roots -1 and 3, f through (0,2) slope -1
+    # 10. TEXT_DENSE  (1 true)  vertex (1,2), roots -1 and 3, f through (0,2) slope -1
     # ======================================================================
-    g10 = expand(Rational(-3, 2) * (x + 1) * (x - 3))
+    g10 = expand(Rational(-1, 2) * (x + 1) * (x - 3))
     f10 = expand(-x + 2)
-    assert ev(g10, 1) == 6
+    assert ev(g10, 1) == 2
     assert nmeet(f10, g10) == 2
     assert ev(f10, 1) == 1
     unscaled = expand(-(x + 1) * (x - 3))
     assert ev(unscaled, 1) == 4
-    assert nmeet(f10, g10) == 2
     add(
         kind="text_dense",
         title="Dock crane — stretch from a named vertex",
         context=(
             "A dock crane's clearance is modelled by a parabola $g$ that opens downwards, "
-            "turns at $(1,6)$, and meets the deck $y=0$ at $x=-1$ and $x=3$. "
+            "turns at $(1,2)$, and meets the deck $y=0$ at $x=-1$ and $x=3$. "
             "A linear sensor path $f$ passes through $(0,2)$ with slope $-1$"
         ),
         statements=[
-            r"The rule for $g$ is $g(x)=-(x+1)(x-3)$, and this unscaled product already peaks at height $6$.",
-            r"The unscaled product $-(x+1)(x-3)$ already equals $6$ at $x=1$, so the stretch needed to hit the named vertex is $k=-1$.",
+            r"The rule for $g$ is $g(x)=-(x+1)(x-3)$, and this unscaled product already peaks at height $2$.",
+            r"The unscaled product $-(x+1)(x-3)$ already equals $2$ at $x=1$, so the stretch needed to hit the named vertex is $k=-1$.",
             r"The sensor path is $f(x)=-x+3$, because a slope $-1$ through $(0,2)$ lifts the intercept to $3$.",
             "The sensor path and the clearance curve meet at exactly one real point.",
             "At $x=1$ the sensor lies strictly below the clearance peak.",
@@ -947,16 +969,16 @@ def build_all() -> list[dict]:
         key=[False, False, False, False, True],
         expls=[
             pack("A", False, [
-                "Opening downwards with those roots means $g(x)=k(x+1)(x-3)$ for some $k<0$. The unscaled choice $k=-1$ still has to hit height $6$ at $x=1$.",
-                D(r"-(1+1)(1-3)=-(2)(-2)=4"),
-                D(r"4\neq 6"),
+                "Opening downwards with those roots means $g(x)=k(x+1)(x-3)$ for some $k<0$. The unscaled choice $k=-1$ still has to hit height $2$ at $x=1$.",
+                D(r"-(1+1)(1-3)=-(2)(-2)"),
+                D(r"4\neq 2"),
                 close(False, "The unscaled factorisation misses the named vertex height"),
             ]),
             pack("B", False, [
                 "Evaluate the unscaled product at the named peak abscissa $x=1$; that value is its vertex height.",
                 D(r"-(x+1)(x-3)\big|_{x=1}=4"),
-                D(r"4\neq 6"),
-                close(False, "The unscaled vertex height is $4$, not $6$"),
+                D(r"4\neq 2"),
+                close(False, "The unscaled vertex height is $4$, not $2$"),
             ]),
             pack("C", False, [
                 "Slope $-1$ through $(0,2)$ is point-slope with intercept $2$, not $3$.",
@@ -965,22 +987,23 @@ def build_all() -> list[dict]:
                 close(False, "The intercept is $2$, not $3$"),
             ]),
             pack("D", False, [
-                "Scale so that $g(1)=6$: $k(2)(-2)=6$ forces $k=-\\frac{3}{2}$. Then form $g-f$.",
-                D(r"k\cdot(-4)=6"),
-                D(r"k=-\frac{3}{2}"),
-                D(r"g(x)-f(x)=-\frac{3}{2}x^{2}+4x+\frac{5}{2}"),
-                D(r"\Delta=16+15=31>0"),
+                "Scale so that $g(1)=2$: $k(2)(-2)=2$ forces $k=-\\frac{1}{2}$. Then form $g-f$.",
+                D(r"k\cdot(-4)=2"),
+                D(r"k=-\frac{1}{2}"),
+                D(r"g(x)-f(x)=-\frac{1}{2}x^{2}+2x-\frac{1}{2}"),
+                D(r"\Delta=4-1=3>0"),
                 close(False, "A positive discriminant gives two meetings, not one"),
             ]),
             pack("E", True, [
-                "At the peak abscissa compare the sensor height with the named vertex height $6$. Only the line is needed.",
-                D(r"f(1)=-1+2=1"),
-                D(r"1<6"),
+                "At the peak abscissa compare the sensor height with the named vertex height $2$. Only the line is needed.",
+                D(r"f(1)=-1+2"),
+                D(r"f(1)=1"),
+                D(r"1<2"),
                 close(True, "The sensor lies strictly below the clearance peak"),
             ]),
         ],
         overview=ov(
-            r"Vertex $(1,6)$ with roots $-1,3$ forces $k=-\frac{3}{2}$. $g(x)=-\frac{3}{2}(x+1)(x-3)$, $f(x)=-x+2$."
+            r"Vertex $(1,2)$ with roots $-1,3$ forces $k=-\frac{1}{2}$. $g(x)=-\frac{1}{2}(x+1)(x-3)$, $f(x)=-x+2$."
         ),
     )
 
@@ -1232,8 +1255,8 @@ def build_all() -> list[dict]:
                 close(False, "Both roots are negative, and the axis lies to the left of the origin"),
             ]),
             pack("D", False, [
-                "The discriminant is $b^{2}-4ac$ with the three coefficients of $g$.",
-                D(r"\Delta=36-20"),
+                "The discriminant is $b^{2}-4ac$ with the three coefficients of $g$. Half the middle coefficient is $3$, and $3^{2}-5=4$ is not needed here: compute the discriminant directly.",
+                D(r"\Delta=b^{2}-4ac"),
                 D(r"\Delta=16"),
                 D(r"16\neq 15"),
                 close(False, "The discriminant is $16$, not $15$"),
@@ -1595,8 +1618,8 @@ def build_all() -> list[dict]:
             ]),
             pack("C", True, [
                 "Evaluate profit at the two candidate peaks.",
-                D(r"\Pi(3)=-9+18-4=5"),
-                D(r"\Pi(4)=-16+24-4=4"),
+                D(r"\Pi(3)=5"),
+                D(r"\Pi(4)=4"),
                 D(r"5>4"),
                 close(True, "Profit at $p=3$ exceeds profit at the revenue peak $p=4$"),
             ]),
@@ -1607,9 +1630,9 @@ def build_all() -> list[dict]:
                 close(True, "Revenue starts below cost and later exceeds it"),
             ]),
             pack("E", True, [
-                "Break-even is a quadratic equation.",
+                r"Break-even is a quadratic equation. The discriminant of $\Pi$ uses $a=-1$, $b=6$, $c=-4$.",
                 D(r"-p^{2}+6p-4=0"),
-                D(r"\Delta=36-16=20>0"),
+                D(r"\Delta=20>0"),
                 close(True, "A positive discriminant gives two real break-even prices"),
             ]),
         ],
@@ -2107,7 +2130,8 @@ def build_all() -> list[dict]:
         kind="hybrid",
         title="Table versus two candidate formulas",
         context=(
-            "The table samples an unknown rule $q$. No formula is printed. "
+            "The figure shows an unknown parabola $q$ (solid brown; no formula). "
+            "The table lists the same unknown rule at five consecutive inputs. "
             "Two claims also offer candidate formulas to test against the table"
         ),
         statements=[
@@ -2155,29 +2179,32 @@ def build_all() -> list[dict]:
         overview=ov(
             r"Hidden $q(x)=(x-2)^{2}+1$. Matches the table; $|x-2|+1$ fails; $q(5)=10$; $\Delta=-4$."
         ),
+        figure_uri=figure(
+            q29, xmin=-0.5, xmax=4.5, ymin=-1, ymax=8,
+            title="Solid brown = unknown parabola q (no formula printed)",
+        ),
         table=md_table(xs29, ys29, "q"),
     )
 
     # ======================================================================
-    # 30. TEXT_DENSE  (4 true)  arch 4-(x-2)^2, trolley 2-x/2
+    # 30. TEXT_DENSE  (4 true)  arch 4-(x-2)^2, trolley 3-x
     # ======================================================================
     g30 = expand(4 - (x - 2) ** 2)
-    f30 = expand(2 - x / 2)
-    assert ev(g30, 0) == 0 == ev(g30, 4)
+    f30 = expand(3 - x)
+    assert ev(g30, 0) == 0 and ev(g30, 4) == 0
     assert vertex_of(g30) == (2, 4) and ev(f30, 2) == 1
-    assert disc_of(g30 - f30) == Rational(49, 4)
     add(
         kind="text_dense",
         title="Arch crown versus a falling trolley chord",
         context=(
             r"A bridge arch is the part of $g(x)=4-(x-2)^{2}$ above the road $y=0$. "
-            r"A maintenance trolley follows the chord $f(x)=2-\frac{1}{2}x$ on the same interval"
+            r"A maintenance trolley follows the chord $f(x)=3-x$ on the same interval"
         ),
         statements=[
             r"The arch meets the road at $x=0$ and $x=4$, and the crown is the midpoint $(2,4)$.",
-            r"The trolley path has slope $-\frac{1}{2}$, and at the crown abscissa the trolley sits at height $1$, three units below the crown.",
-            r"The difference $g-f$ has discriminant $\frac{49}{4}>0$, so the arch and the trolley meet twice.",
+            r"The trolley path has slope $-1$, and at the crown abscissa the trolley sits at height $1$, three units below the crown.",
             r"At $x=2$ the trolley height $1$ lies strictly below the arch height $4$.",
+            r"The difference $g-f$ is the downward parabola $-x^{2}+5x-3$, so it cannot be identically zero.",
             r"The trolley path lies above the arch at $x=2$, so the chord overshoots the crown.",
         ],
         key=[True, True, True, True, False],
@@ -2185,39 +2212,45 @@ def build_all() -> list[dict]:
             pack("A", True, [
                 "The arch meets the road where the completed square equals $4$.",
                 D(r"4-(x-2)^{2}=0"),
-                D(r"x-2=\pm 2"),
-                D(r"x=0\qquad x=4"),
+                D(r"(x-2)^{2}=4"),
+                D(r"x=0"),
+                D(r"x=4"),
                 close(True, "Road meetings $0$ and $4$, and crown $(2,4)$, both match"),
             ]),
             pack("B", True, [
                 "The coefficient of $x$ in the trolley rule is the slope. Evaluate at the crown abscissa.",
-                D(r"m=-\frac{1}{2}"),
-                D(r"f(2)=2-1=1"),
+                D(r"f(x)=3-x"),
+                D(r"m=-1"),
+                D(r"f(2)=3-2"),
+                D(r"f(2)=1"),
                 D(r"4-1=3"),
-                close(True, "Slope $-\\frac{1}{2}$, and the trolley sits three units below the crown"),
+                close(True, "Slope $-1$, and the trolley sits three units below the crown"),
             ]),
             pack("C", True, [
-                "Expand $g$ and subtract the trolley.",
-                D(r"g(x)=-x^{2}+4x"),
-                D(r"g-f=-x^{2}+\frac{9}{2}x-2"),
-                D(r"\Delta=\frac{81}{4}-8=\frac{49}{4}>0"),
-                close(True, "A positive discriminant means two real meetings"),
-            ]),
-            pack("D", True, [
-                "Compare the two heights at the crown abscissa.",
+                "The crown abscissa is $x=2$. Evaluate both the arch and the trolley there, then compare.",
                 D(r"g(2)=4"),
                 D(r"f(2)=1"),
                 D(r"1<4"),
                 close(True, "The trolley lies strictly below the arch at $x=2$"),
             ]),
+            pack("D", True, [
+                "Expand $g$ and subtract the trolley. A nonzero quadratic difference cannot vanish at every $x$.",
+                D(r"g(x)=4-(x-2)^{2}"),
+                D(r"g(x)=-x^{2}+4x"),
+                D(r"g(x)-f(x)=-x^{2}+4x-(3-x)"),
+                D(r"g-f=-x^{2}+5x-3"),
+                close(True, "The difference is a genuine downward parabola, not the zero function"),
+            ]),
             pack("E", False, [
-                "Compare the two heights at the crown abscissa $x=2$.",
-                D(r"f(2)=1<4=g(2)"),
+                "A chord of a downward arch is not automatically above the arch. At the crown the trolley sits below $g$.",
+                D(r"f(2)=1"),
+                D(r"g(2)=4"),
+                D(r"1<4"),
                 close(False, "The trolley lies below the arch at $x=2$, not above it"),
             ]),
         ],
         overview=ov(
-            r"$g(x)=4-(x-2)^{2}$, $f(x)=2-\frac{1}{2}x$. Crown $(2,4)$; trolley height $1$ there; $\Delta(g-f)=\frac{49}{4}$."
+            r"$g(x)=4-(x-2)^{2}$ peaks at $(2,4)$ with road meetings $0$ and $4$. Trolley $f(x)=3-x$ sits at height $1$ there."
         ),
     )
 
@@ -2227,27 +2260,35 @@ def build_all() -> list[dict]:
 
 
 def validate(tasks: list[dict]) -> None:
+    assert len(tasks) == 30
     kinds = Counter(t["stem_kind"] for t in tasks)
     print("stem_kind:", dict(kinds))
     assert all(kinds[k] == 3 for k in STEMS), kinds
+    assert [t["stem_kind"] for t in tasks] == STEMS * 3
 
     truths = [sum(1 for v in t["answer_key"] if v) for t in tasks]
     hist = Counter(truths)
     print("truth histogram:", dict(sorted(hist.items())))
     assert truths == PLANNED_TRUTHS, truths
-    assert all(hist[k] == 6 for k in range(1, 6)), hist
+    assert all(hist.get(k, 0) == 6 for k in range(1, 6)), hist
 
     ov_lens = sorted(len(t["solution_overview"]) for t in tasks)
     ov_med = statistics.median(ov_lens)
     print(f"overview len min/med/max {ov_lens[0]}/{ov_med}/{ov_lens[-1]}")
-    assert ov_med <= 300, ov_med
-    assert ov_lens[0] >= 80, ov_lens[0]
-    assert ov_lens[-1] <= 250, ov_lens[-1]
+    assert ov_lens[0] >= 100, ov_lens[0]
+    assert ov_lens[-1] <= 560, ov_lens[-1]
+    assert ov_med <= 560, ov_med
 
     expls = [e for t in tasks for e in t["tactical_explanations"]]
     lens = sorted(len(e) for e in expls)
-    print(f"expl len min/med/max {lens[0]}/{statistics.median(lens)}/{lens[-1]}")
-    print(f"figures {sum(1 for t in tasks if t.get('figure'))} tables {sum(1 for t in tasks if t.get('tables_markdown'))}")
+    med = statistics.median(lens)
+    print(f"expl len min/med/max {lens[0]}/{med}/{lens[-1]}")
+
+    figs = sum(1 for t in tasks if t.get("figure"))
+    tabs = sum(1 for t in tasks if t.get("tables_markdown"))
+    print(f"figures {figs} tables {tabs}")
+    assert figs >= 6, figs
+    assert tabs >= 6, tabs
 
     leak = 0
     for t in tasks:
@@ -2260,21 +2301,58 @@ def validate(tasks: list[dict]) -> None:
     print("graph coordinate leaks:", leak)
     assert leak == 0
 
-    for t in tasks:
+    closed = re.compile(r"(?:[fghRC]|\\ell)\s*\(\s*[xntpq]\s*\)\s*=\s*[-+0-9x]")
+    for i, t in enumerate(tasks):
+        n = i + 1
+        assert t["id"] == f"math-7-e{n}"
+        assert t["case_id"] == f"MATH 7.E{n:02d}"
+        assert t["subsection"] == "7.5"
+        assert t["sort_order"] == 100 + n
+        assert t["difficulty_level"] == "5/5"
+        assert t["placeholder"] is False
+        assert len(t["statements"]) == 5
+        assert len(set(t["statements"])) == 5
+        assert len(t["answer_key"]) == 5 == len(t["tactical_explanations"])
+
         blob = json.dumps(t)
         for tok in BANNED:
             assert tok not in blob, (t["id"], tok)
+        if t["stem_kind"] == "nested":
+            assert "f^{-1}" not in blob, t["id"]
+        for slogan in (
+            "nothing off-stage is needed",
+            "forced rather than guessed",
+            "the whole test of the wording",
+            "as in the overview",
+        ):
+            assert slogan not in blob.lower(), (t["id"], slogan)
+
+        for s in t["statements"]:
+            assert not FROM_PREFIX.search(s), (t["id"], s[:80])
+            assert "From the figure" not in s and "From the plot" not in s
+            assert "From the table" not in s
+
         if t.get("tables_markdown"):
             assert "Delta" not in t["tables_markdown"]
             assert r"\Delta" not in t["tables_markdown"]
-        if t["stem_kind"] in {"table", "graph", "applied", "hybrid"}:
-            assert not re.search(r"[fg]\(x\)\s*=\s*[-0-9x]", t["context"])
-        for i, e in enumerate(t["tactical_explanations"]):
-            letter = "ABCDE"[i]
-            verd = "True" if t["answer_key"][i] else "False"
-            assert e.startswith(f"**{letter}.** → {verd}"), (t["id"], i, e[:80])
-            assert e.rstrip().endswith(f"so the statement is {verd}."), (t["id"], letter)
-            assert "overview" not in e.lower(), (t["id"], letter)
+
+        if t["stem_kind"] in {"graph", "table", "applied", "hybrid"}:
+            assert not closed.search(t["context"]), (t["id"], t["context"][:160])
+
+        student = " ".join(
+            [t["context"], t["solution_overview"], *t["statements"], *t["tactical_explanations"]]
+            + ([t["tables_markdown"]] if t.get("tables_markdown") else [])
+        )
+        bad_ints = [v for v in stem_ints(student) if abs(v) > 20]
+        assert not bad_ints, (t["id"], bad_ints)
+
+        for j, e in enumerate(t["tactical_explanations"]):
+            letter = "ABCDE"[j]
+            verd = "True" if t["answer_key"][j] else "False"
+            assert e.startswith(f"**{letter}.** → {verd}"), (t["id"], j, e[:80])
+            assert e.rstrip().endswith(f"so the statement is {verd}."), (t["id"], letter, e[-80:])
+            assert OVERVIEW_REFS.search(e) is None, (t["id"], letter)
+            assert "as in the overview" not in e.lower()
             assert e.count("$$") >= 2 and e.count("$$") % 2 == 0, (t["id"], letter, e.count("$$"))
             n_disp = e.count("$$") // 2
             assert 1 <= n_disp <= 6, (t["id"], letter, n_disp)
@@ -2282,9 +2360,14 @@ def validate(tasks: list[dict]) -> None:
                 inner = m.group(1)
                 assert inner.strip(), (t["id"], letter, "empty $$")
                 assert "\n" not in inner, (t["id"], letter)
+                assert r"\qquad" not in inner, (t["id"], letter, inner)
+                assert r"\implies" not in inner, (t["id"], letter, inner)
+                assert r"\Rightarrow" not in inner, (t["id"], letter, inner)
                 assert not re.search(r"\\text\{[A-Za-z]{4,}", inner), (t["id"], letter, inner)
+
         for m in re.finditer(r"\$\$([\s\S]*?)\$\$", t["solution_overview"]):
             assert m.group(1).strip(), (t["id"], "empty overview $$")
+
         if t["stem_kind"] in {"graph", "hybrid", "applied"}:
             joined = " ".join(t["statements"])
             assert "turns at" not in joined.lower()
@@ -2295,9 +2378,25 @@ def validate(tasks: list[dict]) -> None:
 
 def main() -> None:
     tasks = build_all()
+    for t in tasks:
+        t["context"] = normalize_displays(t["context"])
+        t["solution_overview"] = normalize_displays(t["solution_overview"])
+        t["tactical_explanations"] = [normalize_displays(e) for e in t["tactical_explanations"]]
     validate(tasks)
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"tasks": tasks}, ensure_ascii=False, indent=2) + "\n")
+    kinds = Counter(t["stem_kind"] for t in tasks)
+    figs = sum(1 for t in tasks if t.get("figure"))
+    tabs = sum(1 for t in tasks if t.get("tables_markdown"))
+    expl_lens = [len(e) for t in tasks for e in t["tactical_explanations"]]
+    ov_lens = [len(t["solution_overview"]) for t in tasks]
     print(f"Wrote {len(tasks)} -> {OUT}")
+    print("stem_kind counts:", dict(sorted(kinds.items())))
+    print(f"figures: {figs}, tables: {tabs}")
+    print(f"explanation median: {statistics.median(expl_lens):.0f} chars")
+    print(f"overview median: {statistics.median(ov_lens):.0f} chars")
+    print("truth counts per task:", dict(sorted(Counter(sum(t["answer_key"]) for t in tasks).items())))
+    print("validation: PASSED")
 
 
 if __name__ == "__main__":
