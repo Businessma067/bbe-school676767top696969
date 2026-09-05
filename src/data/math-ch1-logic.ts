@@ -362,19 +362,11 @@ Membership $x\\in A$ means $x$ is one of those three objects. Inclusion $S\\subs
     tactical_explanations: [
       `**A.** → True
 
-Subsethood asks whether every member of the left-hand set sits in $D=\\{a,b,c\\}$. The empty set contributes no members to check:
+Subsethood asks whether every member of the left-hand set sits in $D$. The empty set has no members at all, so there is no witness that could sit outside $D$:
 
 $$\\emptyset\\subseteq D$$
 
-holds for every set $D$.
-
-Set beside the claim, the computed result is
-
-$$\\emptyset\\subseteq D$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+That is exactly the claimed inclusion. So the statement is True.`,
       `**B.** → False
 
 Membership asks whether the object is one of the listed elements. Write the roster:
@@ -837,21 +829,15 @@ which is exactly what the statement asserts.
 So the statement is True.`,
       `**D.** → False
 
-Difference $A\\setminus B$ keeps members of $A$ that miss $B$. Because $A\\cap B=\\emptyset$, nothing is removed:
+Difference $A\\setminus B$ keeps members of $A$ that miss $B$. The blocks are
 
-$$A\\setminus B=A=\\{1,2,3\\}$$
+$$A=\\{1,2,3\\},\\qquad B=\\{4,5,6\\}$$
 
-$$\\{1,2,3\\}\\neq\\emptyset$$
+Every element of $A$ lies outside $B$, so none is removed:
 
-The claim asserts the empty set.
+$$A\\setminus B=\\{1,2,3\\}\\ne\\emptyset$$
 
-Set beside the claim, the computed result is
-
-$$\\{1,2,3\\}\\neq\\emptyset$$
-
-which is not what the statement asserts.
-
-So the statement is False.`,
+The claim says the difference is empty. Comparing the two sides, so the statement is False.`,
       `**E.** → False
 
 Disjointness of two nonempty sets is allowed. Here both blocks are nonempty:
@@ -1229,23 +1215,15 @@ which is exactly what the statement asserts.
 So the statement is True.`,
       `**B.** → True
 
-Proper subsets are all subsets except $A$ itself. The power set has size
+Proper subsets are all subsets except $A$ itself. First count the full power set of a five-element set:
 
-$$2^{5}=32$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}=32$$
 
-Dropping $A$:
-
-$$32-1=31$$
-
-So there are $31$ proper subsets.
-
-Set beside the claim, the computed result is
+Drop $A$ from that count:
 
 $$32-1=31$$
 
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+So there are $31$ proper subsets, matching the claim. So the statement is True.`,
       `**C.** → False
 
 Four-element subsets are counted by the binomial coefficient:
@@ -1265,21 +1243,13 @@ So the statement is False.`,
 
 Nonempty subsets drop only the empty set from the power set. First
 
-$$2^{5}=32$$
+$$\\lvert\\mathcal{P}(A)\\rvert=2^{5}=32$$
 
-Then
-
-$$32-1=31$$
-
-So there are $31$ nonempty subsets.
-
-Set beside the claim, the computed result is
+Then remove $\\emptyset$:
 
 $$32-1=31$$
 
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+So there are $31$ nonempty subsets, matching the claim. So the statement is True.`,
       `**E.** → False
 
 Even-cardinality subsets for $|A|=5$:
@@ -1539,25 +1509,15 @@ Pair totals still include the triple, so an exact-pair region subtracts $10$. On
     tactical_explanations: [
       `**A.** → True
 
-Every even natural is a natural, so $E\\subseteq N$. Equality fails because an odd sits in $N$ only:
+A proper subset is a subset that is not equal to the whole. Every positive even sits in $N$, so
 
-$$1\\in N$$
+$$E\\subseteq N$$
 
-$$1\\notin E$$
-
-Hence
+But $1\\in N$ and $1\\notin E$, so $E\\ne N$. Hence
 
 $$E\\subsetneq N$$
 
-So $E$ is a proper subset of $N$.
-
-Set beside the claim, the computed result is
-
-$$E\\subsetneq N$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+That is the claimed proper inclusion. So the statement is True.`,
       `**B.** → False
 
 For infinite sets, a proper subset can have the same cardinality as the whole. The map $n\\mapsto 2n$ is a bijection $N\\to E$, so
@@ -1630,23 +1590,15 @@ A proper subset is a subset that is not equal to the whole. Two infinite sets ha
     tactical_explanations: [
       `**A.** → True
 
-Membership asks whether the number sits on the roster. Write
+Membership asks whether the number sits on the roster. Write the full list
 
 $$A=\\{2,4,6,8,10,12\\}$$
 
-and locate $6$ among the listed elements:
+and test the claimed element against it:
 
 $$6\\in\\{2,4,6,8,10,12\\}$$
 
-Yes, so $6\\in A$.
-
-Set beside the claim, the computed result is
-
-$$6\\in\\{2,4,6,8,10,12\\}$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+Yes, so $6\\in A$. So the statement is True.`,
       `**B.** → False
 
 The elements of $A$ are numbers, not singletons. The object $\\{6\\}$ is a one-element set:
@@ -1656,40 +1608,24 @@ $$\\{6\\}\\notin A$$
 even though $6\\in A$. The singleton is a subset of $A$, hence an element of $\\mathcal{P}(A)$, but that is not this claim. So the statement is False.`,
       `**C.** → True
 
-Subsethood asks whether every member of $\\{6,8\\}$ sits in $A=\\{2,4,6,8,10,12\\}$:
+Subsethood asks whether every member of $\\{6,8\\}$ sits in $A=\\{2,4,6,8,10,12\\}$. Check each:
 
 $$6\\in A$$
 
 $$8\\in A$$
 
-Both memberships hold, so
-
-$$\\{6,8\\}\\subseteq A$$.
-
-Set beside the claim, the computed result is
+Both hold, so
 
 $$\\{6,8\\}\\subseteq A$$
-
-which is exactly what the statement asserts.
 
 So the statement is True.`,
       `**D.** → True
 
-The empty set has no member that could sit outside $A$. The subset test
-
-$$\\forall x\\,(x\\in\\emptyset\\Rightarrow x\\in A)$$
-
-is vacuously true, so
-
-$$\\emptyset\\subseteq A$$.
-
-Set beside the claim, the computed result is
+Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all, so there is no witness that could sit outside $A$:
 
 $$\\emptyset\\subseteq A$$
 
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+That is the claimed inclusion. So the statement is True.`,
       `**E.** → True
 
 Total subsets of a six-element set:
@@ -1869,23 +1805,19 @@ which is exactly what the statement asserts.
 So the statement is True.`,
       `**B.** → True
 
-A set belongs to the power set precisely when it is a subset of $D=\\{w,x,y,z\\}$. Check
+A set belongs to the power set precisely when it is a subset of $D=\\{w,x,y,z\\}$. Check both letters:
 
-$$w\\in D,\\qquad x\\in D$$
+$$w\\in D$$
 
-so
+$$x\\in D$$
+
+Hence
 
 $$\\{w,x\\}\\subseteq D$$
 
-hence
-
-$$\\{w,x\\}\\in\\mathcal{P}(D)$$.
-
-Set beside the claim, the computed result is
+and therefore
 
 $$\\{w,x\\}\\in\\mathcal{P}(D)$$
-
-which is exactly what the statement asserts.
 
 So the statement is True.`,
       `**C.** → True
@@ -1959,7 +1891,7 @@ A set $S$ belongs to the power set precisely when $S\\subseteq D$. Size counts u
     tactical_explanations: [
       `**A.** → True
 
-Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$:
+Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$. Check each:
 
 $$1\\in F$$
 
@@ -1969,34 +1901,18 @@ $$3\\in F$$
 
 so
 
-$$E\\subseteq F$$.
-
-Set beside the claim, the computed result is
-
 $$E\\subseteq F$$
-
-which is exactly what the statement asserts.
 
 So the statement is True.`,
       `**B.** → True
 
-Ordinary inclusion $E\\subseteq F$ holds, and the sets differ because
+Proper inclusion needs both $E\\subseteq F$ and $E\\ne F$. Every member of $E=\\{1,2,3\\}$ sits in $F=\\{1,2,3,4\\}$, and the extra element
 
-$$4\\in F$$
+$$4\\in F,\\qquad 4\\notin E$$
 
-$$4\\notin E$$
-
-Hence
+shows the sets differ. Hence
 
 $$E\\subsetneq F$$
-
-So $E$ is a proper subset of $F$.
-
-Set beside the claim, the computed result is
-
-$$E\\subsetneq F$$
-
-which is exactly what the statement asserts.
 
 So the statement is True.`,
       `**C.** → False
@@ -2007,15 +1923,7 @@ $$4\\in F$$
 
 $$4\\notin E$$
 
-so $F\\not\\subseteq E$.
-
-Set beside the claim, the computed result is
-
-$$4\\notin E$$
-
-which is not what the statement asserts.
-
-So the statement is False.`,
+so $F\\not\\subseteq E$. So the statement is False.`,
       `**D.** → True
 
 Inclusion is reflexive. Every member of $E$ sits in $E$ by definition of the same set:
@@ -2081,21 +1989,13 @@ $$\\{3,4\\}\\cap\\{5,6\\}=\\emptyset$$
 All three are empty, so the blocks are pairwise disjoint. So the statement is True.`,
       `**B.** → True
 
-The union of the three blocks of $\\mathcal{S}$ is
+The union of the blocks of $\\mathcal{S}$ is formed one pair at a time:
 
-$$\\{1,2\\}\\cup\\{3,4\\}\\cup\\{5,6\\}$$
+$$\\{1,2\\}\\cup\\{3,4\\}=\\{1,2,3,4\\}$$
 
-$$=\\{1,2,3,4,5,6\\}$$
+$$\\{1,2,3,4\\}\\cup\\{5,6\\}=\\{1,2,3,4,5,6\\}$$
 
-which equals $G$. So the union equals $G$.
-
-Set beside the claim, the computed result is
-
-$$=\\{1,2,3,4,5,6\\}$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+That roster equals $G$. Matching the claim, so the statement is True.`,
       `**C.** → True
 
 A partition needs nonempty pairwise-disjoint blocks whose union is $G$. The blocks are nonempty, pairwise disjoint (letter A), and cover $G$ (letter B). Therefore $\\mathcal{S}$ partitions $G$.
@@ -4010,7 +3910,7 @@ which is exactly what the statement asserts.
 So the statement is True.`,
       `**B.** → True
 
-Spanish-only peels the overlap out of the Spanish total:
+Spanish-only peels the overlap out of the Spanish total. The overview recovered $|A\\cap B|=12$, so
 
 $$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
 
@@ -4018,15 +3918,7 @@ $$=34-12$$
 
 $$=22$$
 
-That matches the claim.
-
-Set beside the claim, the computed result is
-
-$$=22$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+The claim is $22$. Matching that count, so the statement is True.`,
       `**C.** → True
 
 Students in neither language are the cohort total minus the union:
@@ -4059,7 +3951,7 @@ $$12<50$$
 The claim needs $\\lvert A\\cap B\\rvert>\\lvert A\\cup B\\rvert$. The inequality runs the other way. So the statement is False.`,
       `**E.** → True
 
-French-only peels the overlap out of the French total:
+French-only peels the overlap out of the French total. The overview recovered $|A\\cap B|=12$, so
 
 $$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
 
@@ -4067,15 +3959,7 @@ $$=28-12$$
 
 $$=16$$
 
-That matches the claim.
-
-Set beside the claim, the computed result is
-
-$$=16$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+The claim is $16$. Matching that count, so the statement is True.`,
     ],
     difficulty_level: `4/5`,
     sort_order: 19,
@@ -4125,7 +4009,7 @@ which is exactly what the statement asserts.
 So the statement is True.`,
       `**B.** → True
 
-Pool-only peels the overlap out of the pool total:
+Pool-only peels the overlap out of the pool total. The overview recovered $|A\\cap B|=5$, so
 
 $$\\lvert A\\setminus B\\rvert=\\lvert A\\rvert-\\lvert A\\cap B\\rvert$$
 
@@ -4133,15 +4017,7 @@ $$=20-5$$
 
 $$=15$$
 
-That matches the claim.
-
-Set beside the claim, the computed result is
-
-$$=15$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+The claim is $15$. Matching that count, so the statement is True.`,
       `**C.** → True
 
 Members using neither facility are the gym total minus the union:
@@ -4182,7 +4058,7 @@ which is not what the statement asserts.
 So the statement is False.`,
       `**E.** → True
 
-Sauna-only peels the overlap out of the sauna total:
+Sauna-only peels the overlap out of the sauna total. The overview recovered $|A\\cap B|=5$, so
 
 $$\\lvert B\\setminus A\\rvert=\\lvert B\\rvert-\\lvert A\\cap B\\rvert$$
 
@@ -4190,15 +4066,7 @@ $$=18-5$$
 
 $$=13$$
 
-That matches the claim.
-
-Set beside the claim, the computed result is
-
-$$=13$$
-
-which is exactly what the statement asserts.
-
-So the statement is True.`,
+The claim is $13$. Matching that count, so the statement is True.`,
     ],
     difficulty_level: `5/5`,
     sort_order: 20,
