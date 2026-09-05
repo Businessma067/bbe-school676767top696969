@@ -7,6 +7,7 @@ import { ExplanationText } from "@/components/ExplanationText";
 import { FlashcardMath } from "@/components/FlashcardMath";
 import { scrubStatementHints } from "@/lib/case-context";
 import type { ExamQuestion } from "@/lib/mock-exams";
+import { ZoomableImage } from "@/components/ZoomableImage";
 import { cn } from "@/lib/utils";
 
 function MathText({ text, className }: { text: string; className?: string }) {
@@ -45,10 +46,11 @@ export function ExamQuestionBody({
             <MathText text={q.stem} />
           </p>
           {q.figure ? (
-            <img
+            <ZoomableImage
               src={q.figure}
-              alt=""
-              className="mx-auto mt-3 max-h-80 w-full max-w-lg rounded-xl border border-border bg-white object-contain p-2"
+              alt="Question figure"
+              wrapperClassName="mx-auto mt-3 w-full max-w-lg"
+              className="max-h-80 w-full rounded-xl border border-border bg-white object-contain p-2"
             />
           ) : null}
           {q.tablesMarkdown ? (
