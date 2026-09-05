@@ -473,7 +473,7 @@
         "**B.** → False\n\nList every label that appears in $E$ or in $A$:\n\n$$E\\cup A=\\{a,b,c,e,f,g,h\\}$$\n\n$$|E\\cup A|=7\\neq 8$$\n\nThe union omits $d$, so it is not the full eight-module universe.\n\nComparing the computed figure with the printed claim, so the statement is False.",
         "**C.** → False\n\nRemove audited labels from the core set:\n\n$$C\\setminus A=\\{b,d\\}$$\n\nThe claim listed $\\{b,d,f\\}$, but $f$ is audited and must leave. The true difference is $\\{b,d\\}$.\n\nso the statement is False.",
         "**D.** → True\n\nFirst form the core-audited intersection, then test the proposed subset:\n\n$$C\\cap A=\\{a,f\\}$$\n\n$$\\{a,f\\}\\subseteq\\{a,f\\}$$\n\nThe inclusion holds.\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$=9-4=5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False."
+        "**E.** → False\n\nSymmetric difference size is $|C|+|E|-2|C\\cap E|$.\n\nSubstitute the recovered figures $|C|=4$, $|E|=5$, $|C\\cap E|=2$:\n\n$$|C\\triangle E|=4+5-2\\cdot2$$\n\n$$=9-4=5$$\n\nThe claim asserts $4$. Since $5\\ne4$, the statement is False.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 123,
@@ -505,7 +505,7 @@
         "**B.** → True\n\nExactly one service is the sum of the three only-one regions.\n\nOnly-mobile: $138-68-52+28=46$.\n\nOnly-internet: $124-68-46+28=38$.\n\nOnly-streaming: $96-52-46+28=26$.\n\nAdd them:\n\n$$46+38+26=110$$\n\nExactly $110$ customers use exactly one service. So the statement is True.",
         "**C.** → False\n\nMobile and internet only means the pairwise overlap minus the all-three customers.\n\n$$|M\\cap I\\setminus S|=68-28=40$$\n\nThe claim asserts $68$, which is the raw pairwise count before removing the triple. So the statement is False.",
         "**D.** → False\n\nAt least two services is the sum of the three pair-only regions and the triple:\n\n$$(68-28)+(52-28)+(46-28)+28$$\n\n$$=40+24+18+28=110\\neq 82$$\n\nThe correct at-least-two total is $110$.\n\nso the statement is False.",
-        "**E.** → False\n\nOnly streaming removes the streaming pairwise overlaps and restores the triple.\n\n$$96-52-46+28=26$$\n\nThe claim asserts $34$. Since $26\\ne34$, the statement is False."
+        "**E.** → False\n\nOnly streaming removes the streaming pairwise overlaps and restores the triple.\n\n$$96-52-46+28=26$$\n\nThe claim asserts $34$. Since $26\\ne34$, the statement is False.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 124,
@@ -631,9 +631,9 @@
       "tactical_explanations": [
         "**A.** → True\n\nApply three-set inclusion-exclusion to the festival totals:\n\n$$|J\\cup T\\cup F|=170+145+130-80-72-61+35$$\n\n$$=267$$\n\nThe three-program union has size $267$.\n\nComparing the computed figure with the printed claim, so the statement is True.",
         "**B.** → True\n\nSubtract the union from the survey size:\n\n$$300-267=33$$\n\nExactly $33$ visitors chose no program.\n\nComparing the computed figure with the printed claim, so the statement is True.",
-        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F|=80-35=45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.",
-        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.",
-        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False."
+        "**C.** → False\n\nJazz and theater only is the pairwise overlap minus the triple.\n\n$$|J\\cap T\\setminus F|=80-35=45$$\n\nThe claim asserts $50$. Since $45\\ne50$, the statement is False.\n\nSo the statement is False.",
+        "**D.** → False\n\nExactly two programs is the sum of the three pairwise-only regions.\n\n$$(80-35)+(72-35)+(61-35)$$\n\n$$=45+37+26$$\n\n$$=108$$\n\nThe claim asserts $100$. Since $108\\ne100$, the statement is False.\n\nSo the statement is False.",
+        "**E.** → False\n\nOnly jazz removes the jazz pairwise overlaps and restores the triple.\n\n$$170-80-72+35=53$$\n\nThe claim asserts $72$. Since $53\\ne72$, the statement is False.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 128,
