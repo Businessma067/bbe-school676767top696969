@@ -42,10 +42,40 @@ HEADER_PAREN_RE = re.compile(
 CLOSE_RE = re.compile(
     r"so the statement is\s+(True|False)\.?\s*$", re.I | re.M
 )
-ENGLISH_IN_MATH_RE = re.compile(
-    r"\$\$[^$]*\b[A-Za-z]{3,}(?:\s+[A-Za-z]{3,})+[^$]*\$\$"
+# True English-in-$$: two consecutive English words *inside one* display block.
+# Do not match prose sitting between adjacent $$...$$ pairs.
+DISPLAY_BLOCK_RE = re.compile(r"\$\$(.+?)\$\$", re.S)
+ENGLISH_WORD_PAIR_RE = re.compile(
+    r"\b[A-Za-z]{3,}(?:\s+[A-Za-z]{3,})+"
+)
+# KaTeX tags that may contain short English labels without being prose.
+KATEX_TAG_RE = re.compile(
+    r"\\(?:mathrm|text|operatorname|textbf|textit)\{[^}]*\}"
 )
 OPENER_RE = re.compile(r"^\*\*[A-E]\.\*\*.*?\n\n([^\n]+)", re.S)
+
+BANNED_PHRASES = (
+    "Assumption:",
+    "How to solve",
+    "**Trap",
+    "**Watch",
+    "A solver who",
+    "It is important to note",
+    "From the figure:",
+    "From the table:",
+    "overview already recovered",
+    "already recovered the quantity",
+    "exactly the figure named in the claim",
+    "Matching these figures to the claim",
+    "settles the verdict",
+    "Set beside the claim, the computed result is",
+    "Name the financial rule behind the claim",
+    "Name the governing exponent law first",
+    "Do not rebuild the original system",
+    "Keep the periodic rate, the number of periods, and the money units explicit",
+    "In the shared two-unknown system, the overview already solved",
+    "State that recovered value before testing the claim:",
+)
 
 
 def load_json(path: Path) -> list[dict]:
@@ -122,17 +152,31 @@ def load_ts_tasks(path: Path) -> list[dict]:
 
 
 def dollar_balance(s: str) -> tuple[int, int]:
-    """Return (single_dollar_count_mod_2, display_dollar_pair_issues)."""
-    # Remove display math first
-    displays = re.findall(r"\$\$(.+?)\$\$", s, re.S)
+    """Return (single_dollar_count_mod_2, display_dollar_pair_issues).
+
+    Currency escapes (\\$) are ignored so financial banks do not false-positive.
+    """
+    s = s.replace("\\$", "")
     rest = re.sub(r"\$\$.+?\$\$", "", s, flags=re.S)
     singles = rest.count("$")
-    # odd singles => imbalance
-    unpaired_display = 0
-    # leftover $$ markers
-    if "$$" in rest:
-        unpaired_display = rest.count("$$")
+    unpaired_display = rest.count("$$")
     return singles % 2, unpaired_display
+
+
+def has_english_in_display(expl: str) -> bool:
+    """True when a $$...$$ block itself holds consecutive English words."""
+    for body in DISPLAY_BLOCK_RE.findall(expl):
+        cleaned = KATEX_TAG_RE.sub("", body)
+        if ENGLISH_WORD_PAIR_RE.search(cleaned):
+            return True
+    return False
+
+
+def frac_outside_math(st: str) -> bool:
+    """True when \\frac / \\dfrac appears outside $ / $$ spans."""
+    outside = re.sub(r"\$\$.+?\$\$", "", st, flags=re.S)
+    outside = re.sub(r"\$.+?\$", "", outside, flags=re.S)
+    return bool(re.search(r"\\(?:d?frac)\{", outside))
 
 
 def first_opener(expl: str) -> str:
@@ -155,9 +199,7 @@ def audit_task(bank: str, t: dict) -> list[str]:
         return issues
     if len(stmts) == 5:
         for i, st in enumerate(stmts):
-            if re.search(r"(?<!\$)\\frac\{", st) or re.search(
-                r"(?<!\$)\\dfrac\{", st
-            ):
+            if frac_outside_math(st):
                 issues.append(f"{bank}/{cid}: bare \\frac in statement {i}")
 
     openers: list[str] = []
@@ -192,25 +234,11 @@ def audit_task(bank: str, t: dict) -> list[str]:
             issues.append(f"{bank}/{cid}/{letter}: unbalanced $")
         if disp:
             issues.append(f"{bank}/{cid}/{letter}: stray $$")
-        if ENGLISH_IN_MATH_RE.search(expl):
+        if has_english_in_display(expl):
             issues.append(f"{bank}/{cid}/{letter}: possible English-in-$$")
         if len(expl) < 180:
             issues.append(f"{bank}/{cid}/{letter}: thin ({len(expl)} chars)")
-        for bad in (
-            "Assumption:",
-            "How to solve",
-            "**Trap",
-            "**Watch",
-            "A solver who",
-            "It is important to note",
-            "From the figure:",
-            "From the table:",
-            "overview already recovered",
-            "already recovered the quantity",
-            "exactly the figure named in the claim",
-            "Matching these figures to the claim",
-            "settles the verdict",
-        ):
+        for bad in BANNED_PHRASES:
             if bad in expl:
                 issues.append(f"{bank}/{cid}/{letter}: banned phrase {bad!r}")
         openers.append(first_opener(expl))
