@@ -101,7 +101,9 @@ $$=5\\cdot 64$$
 
 $$=320$$
 
-The claimed $240$ does not equal $320$.
+The claimed $240$ does not equal $320$
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is False.`,
     ],
@@ -376,7 +378,9 @@ $$U(8)=\\frac{600}{8}$$
 
 $$U(8)=75$$
 
-The claimed $80$ is not this value.
+The claimed $80$ is not this value
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is False.`,
       `**E.** → True
@@ -427,11 +431,19 @@ The positive exponent $\\frac{2}{3}$ keeps finishing hours in a numerator. The s
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered $A=8$ from the audited shift
+Calibrate the scale factor against the audited shift named in the overview:
 
 $$Q(25)=40$$
 
-The claim is that same coefficient.
+Solve that level for the unknown coefficient $A$:
+
+$$25^{1/2}=5$$
+
+$$A\cdot 5=40$$
+
+$$A=8$$
+
+The claim asserts that same coefficient $A=8$.
 
 So the statement is True.`,
       `**B.** → True
@@ -484,6 +496,8 @@ The computed figure disagrees with the claim.
 
 So the statement is False.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered $A=8$. At four staff the square root is $2$:
 
@@ -563,9 +577,7 @@ Read the exponent from the overview before comparing growth rates.
 
 On $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
-$$F(1)=2, \\qquad G(1)$$
-
-$$F(1)=1$$
+$$F(1)=2, \\qquad G(1)=1$$
 
 The quadratic index leads throughout $0<n<2$.
 
@@ -847,6 +859,8 @@ The negative sign makes the drop fall on $x>0$, and the even root closes the dom
     tactical_explanations: [
       `**A.** → False
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered $A=5$ from
 
 $$9A=45$$
@@ -855,6 +869,8 @@ The claimed $15$ is $\\frac{45}{3}$, which divides by the radius instead of by i
 
 So the statement is False.`,
       `**B.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered $A=5$. At radius $6$ metres:
 
@@ -865,8 +881,6 @@ $$=5\\cdot 36$$
 $$=180$$
 
 The panel needs $180$ litres.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -887,6 +901,8 @@ The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -1304,7 +1320,11 @@ $$\\frac{d}{8}=1$$
 
 $$d=8$$
 
-Eight metres is shallower than $10$.
+Eight metres is shallower than $10$
+
+Matching these figures to the claim shows agreement.
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
       `**C.** → True
@@ -1422,6 +1442,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered $C(n)=50+50\\sqrt{n}$. Twenty-five is a perfect square:
 
 $$C(25)=50+50\\cdot 5$$
@@ -1431,8 +1453,6 @@ $$=50+250$$
 $$=300$$
 
 Three hundred sits above $280$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -1498,6 +1518,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**B.** → False
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered $S(u)=2u$. Set that equal to the rival quote:
 
 $$2u=1.8u+5$$
@@ -1520,6 +1542,8 @@ The rival is affine, not a power.
 So the statement is False.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$S(u)=2u$$
@@ -1532,10 +1556,10 @@ $$S(36)=72$$
 
 Seventy-two sits above $70$.
 
-The computed figure agrees with the claim.
-
 So the statement is True.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -1548,8 +1572,6 @@ $$S(9)=2\\cdot 9$$
 $$S(9)=18$$
 
 Eighteen does not sit above $20$.
-
-The computed figure disagrees with the claim.
 
 So the statement is False.`,
     ],
@@ -1643,6 +1665,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $10$ jobs:
 
 $$L(10)=\\frac{1}{2}\\cdot 10^{2}$$
@@ -1652,8 +1676,6 @@ $$=\\frac{1}{2}\\cdot 100$$
 $$=50$$
 
 Fifty sits above $40$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
     ],
@@ -1805,6 +1827,8 @@ The recovered yield is $Q(x)=12x^{\\frac{1}{2}}$. The cap constrains $x\\le 400$
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$C(n)-D(n)=n(n-16)$$
@@ -1818,8 +1842,6 @@ $$n=0$$
 $$n=16$$
 
 They meet only at sixteen documents.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -1837,6 +1859,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$C(n)=n^{2}$$
@@ -1847,16 +1871,12 @@ $$\\frac{C(n)}{n}=n$$
 
 The leftover exponent is positive, so unit cost rises with the batch.
 
-The computed figure agrees with the claim.
-
 So the statement is True.`,
       `**D.** → False
 
 The overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:
 
-$$C(25)=625, \\qquad D(25)$$
-
-$$C(25)=400$$
+$$C(25)=625, \\qquad D(25)=400$$
 
 $$625-400=225$$
 
@@ -1866,6 +1886,8 @@ The computed figure disagrees with the claim.
 
 So the statement is False.`,
       `**E.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -1878,8 +1900,6 @@ $$C(9)=9^{2}$$
 $$C(9)=81$$
 
 Eighty-one sits under $100$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
     ],
@@ -1969,6 +1989,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered $H(s)=8s^{\\frac{1}{2}}$. At $81$ staff:
 
 $$H(81)=8\\cdot 81^{\\frac{1}{2}}$$
@@ -1978,8 +2000,6 @@ $$=8\\cdot 9$$
 $$=72$$
 
 Seventy-two sits above $70$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
     ],
@@ -2179,14 +2199,14 @@ At the recorded pair,
 
 $$q(10)=\\frac{10000}{100}$$
 
-$$q(10)=100, \\qquad q(5)$$
-
-$$q(10)=400$$
+$$q(10)=100, \\qquad q(5)=400$$
 
 and $100$ is a quarter of $400$, not a half. The claim is that demand halves.
 
 So the statement is False.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2198,10 +2218,14 @@ $$R(16)=\\frac{10000}{16}$$
 
 $$R(16)=625$$
 
-The claim compares this with $700$. We have $625<700$.
+The claim compares this with $700$. Compare with the claim:
+
+$$625<700$$
 
 So the statement is True.`,
       `**E.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2213,7 +2237,9 @@ $$q(20)=\\frac{10000}{400}$$
 
 $$q(20)=25$$
 
-The claim compares this with $30$. We have $25<30$.
+The claim compares this with $30$. Compare with the claim:
+
+$$25<30$$
 
 So the statement is True.`,
     ],
@@ -2270,9 +2296,7 @@ $$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$
 
 Both leftover exponents are negative, so the average falls as the book grows. At the two invoices:
 
-$$\\frac{C(100)}{100}=5, \\qquad \\frac{C(400)}{400}$$
-
-$$\\frac{C(100)}{100}=2$$
+$$\\frac{C(100)}{100}=5, \\qquad \\frac{C(400)}{400}=2$$
 
 and $2<5$.
 
@@ -2302,6 +2326,8 @@ The claim needs a larger add-on at one hundred accounts than at four hundred. We
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$C(n)=200+30\\sqrt{n}$$
@@ -2312,7 +2338,9 @@ $$C(900)=200+30\\cdot 30$$
 
 $$C(900)=1100$$
 
-The claim compares this with $1000$. We have $1100>1000$.
+The claim compares this with $1000$. Compare with the claim:
+
+$$1100>1000$$
 
 So the statement is True.`,
       `**E.** → False
@@ -2371,13 +2399,13 @@ $$C(n)=200+30\\sqrt{n}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$E(t)=240 t^{\\frac{1}{4}}$$
 
 That is a monomial in elapsed time, so total fleet emissions are a power of $t$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -2401,9 +2429,7 @@ $$e(a)=120 a^{-\\frac{1}{2}}$$
 
 The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
-$$e(16)=30, \\qquad e(64)$$
-
-$$e(16)=\\frac{120}{8}$$
+$$e(16)=30, \\qquad e(64)=\\frac{120}{8}$$
 
 $$e(16)=15$$
 
@@ -2413,6 +2439,8 @@ The computed figure disagrees with the claim.
 
 So the statement is False.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2426,10 +2454,14 @@ $$E(16)=240\\cdot 2$$
 
 $$E(16)=480$$
 
-The claim compares this with $400$. We have $480>400$.
+The claim compares this with $400$. Compare with the claim:
+
+$$480>400$$
 
 So the statement is True.`,
       `**E.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2439,7 +2471,9 @@ After $1$ year:
 
 $$E(1)=240$$
 
-The claim compares this with $250$. We have $240<250$.
+The claim compares this with $250$. Compare with the claim:
+
+$$240<250$$
 
 So the statement is True.`,
     ],
@@ -2585,13 +2619,13 @@ $$Q(d)=2 d^{\\frac{5}{2}}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$S(t)=9\\pi t$$
 
 That is a constant times elapsed time, so the covered area is proportional to $t$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -2609,6 +2643,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$S(t)=9\\pi t$$
@@ -2619,10 +2655,10 @@ $$t=\\frac{S}{9\\pi}$$
 
 That is a monomial in the area.
 
-The computed figure agrees with the claim.
-
 So the statement is True.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2632,10 +2668,14 @@ After $4$ hours:
 
 $$S(4)=36\\pi$$
 
-The claim compares this with $30\\pi$. We have $36\\pi>30\\pi$.
+The claim compares this with $30\\pi$. Compare with the claim:
+
+$$36\\pi>30\\pi$$
 
 So the statement is True.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -2645,7 +2685,9 @@ After $9$ hours:
 
 $$S(9)=81\\pi$$
 
-The claim is $100\\pi$. We have $81\\pi\\neq 100\\pi$.
+The claim is $100\\pi$. Compare with the claim:
+
+$$81\\pi\\neq 100\\pi$$
 
 So the statement is False.`,
     ],
@@ -2708,15 +2750,11 @@ The plans cross where the uncapped square-root bill equals the linear bill:
 
 $$40\\sqrt{u}=5u$$
 
-$$8=\\sqrt{u}, \\qquad u$$
-
-$$8=64$$
+$$8=\\sqrt{u}, \\qquad u=64$$
 
 Below that crossing, at the recorded $36$ tickets:
 
-$$C_A(36)=240, \\qquad C_B(36)$$
-
-$$C_A(36)=180$$
+$$C_A(36)=240, \\qquad C_B(36)=180$$
 
 and $180<240$, so Plan B is cheaper below the crossing.
 
@@ -2729,9 +2767,7 @@ Read the exponent from the overview before comparing growth rates.
 
 Plan A's cap binds once $40\\sqrt{u}=400$:
 
-$$\\sqrt{u}=10, \\qquad u$$
-
-$$\\sqrt{u}=100$$
+$$\\sqrt{u}=10, \\qquad u=100$$
 
 For every larger ticket volume the billed amount stays $400$ rather than $40\\sqrt{u}$, so the cap eventually binds.
 
@@ -2748,9 +2784,7 @@ $$\\frac{C_A(u)}{u}=40 u^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as volume rises. Past the cap it is $\\frac{400}{u}$, which also falls. At the invoice and at $64$ tickets:
 
-$$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}$$
-
-$$\\frac{240}{36}=5$$
+$$\\frac{240}{36}=\\frac{20}{3}, \\qquad \\frac{320}{64}=5$$
 
 and $5<\\frac{20}{3}$.
 
@@ -2862,7 +2896,9 @@ $$c(8)=1000\\cdot(0.8)^{3}$$
 
 $$c(8)=512$$
 
-The claim compares this with $520$. We have $512<520$.
+The claim compares this with $520$. Compare with the claim:
+
+$$512<520$$
 
 So the statement is True.`,
       `**E.** → False
@@ -2938,9 +2974,7 @@ $$\\frac{R(x)}{x}=90 x^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so the average falls as the campaign grows. At the recorded spend and at $400$:
 
-$$\\frac{R(100)}{100}=9, \\qquad \\frac{R(400)}{400}$$
-
-$$\\frac{R(100)}{100}=\\frac{90\\cdot 20}{400}$$
+$$\\frac{R(100)}{100}=9, \\qquad \\frac{R(400)}{400}=\\frac{90\\cdot 20}{400}$$
 
 $$\\frac{R(100)}{100}=4.5$$
 
@@ -2964,6 +2998,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$N(x)=90\\sqrt{x}-6x$$
@@ -2974,7 +3010,9 @@ $$N(100)=90\\cdot 10-600$$
 
 $$N(100)=300$$
 
-The claim compares this with $250$. We have $300>250$.
+The claim compares this with $250$. Compare with the claim:
+
+$$300>250$$
 
 So the statement is True.`,
       `**E.** → False
@@ -3063,9 +3101,7 @@ $$\\frac{g}{L}=16 L^{-\\frac{1}{4}}$$
 
 The leftover exponent is negative, so the average falls as labour rises. At $L=16$ and $L=81$:
 
-$$16\\cdot 16^{-\\frac{1}{4}}=8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}$$
-
-$$16\\cdot 16^{-\\frac{1}{4}}=\\frac{16}{3}$$
+$$16\\cdot 16^{-\\frac{1}{4}}=8, \\qquad 16\\cdot 81^{-\\frac{1}{4}}=\\frac{16}{3}$$
 
 and $\\frac{16}{3}<8$.
 
@@ -3089,6 +3125,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$g=16 L^{\\frac{3}{4}}$$
@@ -3101,7 +3139,9 @@ $$g(81)=16\\cdot 27$$
 
 $$g(81)=432$$
 
-The claim compares this with $400$. We have $432>400$.
+The claim compares this with $400$. Compare with the claim:
+
+$$432>400$$
 
 So the statement is True.`,
     ],
@@ -3143,6 +3183,8 @@ $$m(L)=4 L^{\\frac{1}{2}}, \\qquad g=16 L^{\\frac{3}{4}}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$R(p)=2000 p^{-\\frac{1}{2}}$$
@@ -3152,8 +3194,6 @@ Solving for the positive price,
 $$p=\\left(\\frac{2000}{R}\\right)^{2}$$
 
 That is a monomial in revenue.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3177,9 +3217,7 @@ $$R(p)=2000 p^{-\\frac{1}{2}}$$
 
 The leftover exponent is negative, so revenue falls as the price rises. At the recorded price and at $16$:
 
-$$R(4)=1000, \\qquad R(16)$$
-
-$$R(4)=500$$
+$$R(4)=1000, \\qquad R(16)=500$$
 
 and $500<1000$.
 
@@ -3187,6 +3225,8 @@ The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -3198,7 +3238,9 @@ $$R(25)=\\frac{2000}{5}$$
 
 $$R(25)=400$$
 
-The claim compares this with $450$. We have $400<450$.
+The claim compares this with $450$. Compare with the claim:
+
+$$400<450$$
 
 So the statement is True.`,
       `**E.** → False
@@ -3291,9 +3333,7 @@ $$\\frac{N(h)}{h}=18 h^{-\\frac{1}{3}}$$
 
 The leftover exponent is negative, so the average falls as the shift lengthens. At $8$ and $27$ hours:
 
-$$18\\cdot 8^{-\\frac{1}{3}}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}$$
-
-$$18\\cdot 8^{-\\frac{1}{3}}=6$$
+$$18\\cdot 8^{-\\frac{1}{3}}=9, \\qquad 18\\cdot 27^{-\\frac{1}{3}}=6$$
 
 and $6<9$.
 
@@ -3301,6 +3341,8 @@ The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -3312,7 +3354,9 @@ $$N(27)=18\\cdot 9$$
 
 $$N(27)=162$$
 
-The claim compares this with $150$. We have $162>150$.
+The claim compares this with $150$. Compare with the claim:
+
+$$162>150$$
 
 So the statement is True.`,
       `**E.** → False
@@ -3371,13 +3415,13 @@ $$N(h)=18 h^{\\frac{2}{3}}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$P(v)=2 v^{\\frac{5}{2}}$$
 
 That is a monomial in airspeed, so absorbed power is a power function of airspeed.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -3416,9 +3460,7 @@ The mounting rating $F=250$ needs
 
 $$2 v^{\\frac{3}{2}}=250$$
 
-$$v^{\\frac{3}{2}}=125, \\qquad v$$
-
-$$v^{\\frac{3}{2}}=125^{\\frac{2}{3}}$$
+$$v^{\\frac{3}{2}}=125, \\qquad v=125^{\\frac{2}{3}}$$
 
 $$v^{\\frac{3}{2}}=25$$
 
@@ -3426,6 +3468,8 @@ The claim is that the rating is first reached above $30$ m/s. We have $v=25$.
 
 So the statement is False.`,
       `**E.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -3439,7 +3483,9 @@ $$P(16)=2\\cdot 1024$$
 
 $$P(16)=2048$$
 
-Two kilowatts is $2000$ watts. We have $2048>2000$.
+Two kilowatts is $2000$ watts. Compare with the claim:
+
+$$2048>2000$$
 
 So the statement is True.`,
     ],
@@ -3487,9 +3533,7 @@ $$R(p)=1200 p^{\\frac{1}{2}}$$
 
 The leftover exponent is positive, so revenue rises as the price rises. At $16$ and $25$:
 
-$$R(16)=4800, \\qquad R(25)$$
-
-$$R(16)=6000$$
+$$R(16)=4800, \\qquad R(25)=6000$$
 
 and $6000>4800$.
 
@@ -3526,6 +3570,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$q(p)=1200 p^{-\\frac{1}{2}}$$
@@ -3536,7 +3582,9 @@ $$q(25)=\\frac{1200}{5}$$
 
 $$q(25)=240$$
 
-The claim compares this with $250$. We have $240<250$.
+The claim compares this with $250$. Compare with the claim:
+
+$$240<250$$
 
 So the statement is True.`,
       `**E.** → False
@@ -3547,9 +3595,7 @@ Cutting quantity to $200$ needs
 
 $$1200 p^{-\\frac{1}{2}}=200$$
 
-$$\\sqrt{p}=6, \\qquad p$$
-
-$$\\sqrt{p}=36$$
+$$\\sqrt{p}=6, \\qquad p=36$$
 
 The claim is a price above $40$. We have $p=36$.
 
@@ -3612,9 +3658,7 @@ $$\\frac{y(x)}{x}=4 x^{\\frac{1}{3}}$$
 
 The leftover exponent is positive, so the average rises as the feed increases. At $8$ and $27$:
 
-$$4\\cdot 8^{\\frac{1}{3}}=8, \\qquad 4\\cdot 27^{\\frac{1}{3}}$$
-
-$$4\\cdot 8^{\\frac{1}{3}}=12$$
+$$4\\cdot 8^{\\frac{1}{3}}=8, \\qquad 4\\cdot 27^{\\frac{1}{3}}=12$$
 
 and $12>8$.
 
@@ -3627,9 +3671,7 @@ Read the exponent from the overview before comparing growth rates.
 
 The licence binds once $4 x^{\\frac{4}{3}}=1024$:
 
-$$x^{\\frac{4}{3}}=256, \\qquad x$$
-
-$$x^{\\frac{4}{3}}=64$$
+$$x^{\\frac{4}{3}}=256, \\qquad x=64$$
 
 Past that feed, daily shipped output is the constant $1024$, which is not a monomial in $x$.
 
@@ -3637,6 +3679,8 @@ The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**D.** → True
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -3650,20 +3694,26 @@ $$y(8)=4\\cdot 16$$
 
 $$y(8)=64$$
 
-The claim compares this with $50$. We have $64>50$.
+The claim compares this with $50$. Compare with the claim:
+
+$$64>50$$
 
 So the statement is True.`,
       `**E.** → False
 
 Keep the stated domain in force while you evaluate the model.
 
-The licence binds when
+The overview already recovered the feed level where the licence binds:
 
-$$4 x^{\\frac{4}{3}}=1024, \\qquad x$$
+$$4 x^{\frac{4}{3}}=1024$$
 
-$$4 x^{\\frac{4}{3}}=64$$
+$$x=64$$
 
-The claim is that it binds before a feed of $50$. We have $64>50$.
+The claim asserts that the licence binds before a feed of $50$. Compare:
+
+$$64>50$$
+
+The binding feed sits above $50$, not before it. The claim fails.
 
 So the statement is False.`,
     ],
@@ -3703,16 +3753,16 @@ Shipped output is $\\min(y(x),1024)$.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovered
+Composition in the stated order cancels stage by stage. The overview already recovered the identity
 
 $$g(f(x))=x$$
 
-Applying reporting after calibration returns the original reading.
-
-The computed figure agrees with the claim.
+So applying the two stages in that order returns the original input. The claim matches this cancellation.
 
 So the statement is True.`,
       `**B.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -3720,16 +3770,14 @@ $$g(f(x))=x$$
 
 , the identity power $x^{1}$. That grows at the same rate as the raw reading, not more slowly.
 
-The computed figure disagrees with the claim.
-
 So the statement is False.`,
       `**C.** → False
 
-The overview recovered
+Composition in the stated order cancels stage by stage. The overview already recovered the identity
 
 $$f(g(y))=y$$
 
-Applying the stages in the other order recovers the original index, so the claim that it fails is false.
+Applying the stages recovers the original index. The claim that the composition fails therefore disagrees with the recovery.
 
 So the statement is False.`,
       `**D.** → True
@@ -3807,13 +3855,11 @@ $$f(g(y))=9\\left(\\frac{y^{\\frac{3}{2}}}{27}\\right)^{\\frac{2}{3}}=y$$`,
     tactical_explanations: [
       `**A.** → False
 
-The overview recovered a single positive crossing at load
+Setting the two recovered score laws equal yields a single positive crossing:
 
 $$x=8$$
 
-Two distinct positive loads cannot both be ties.
-
-The computed figure disagrees with the claim.
+One equation of this type cannot have two distinct positive ties. The claim that they meet at two different positive loads is false.
 
 So the statement is False.`,
       `**B.** → True
@@ -3837,9 +3883,7 @@ The same ratio $\\frac{T(x)}{S(x)}=\\frac{x}{8}$ depends on the load. At the ben
 
 $$\\frac{T(4)}{S(4)}=\\frac{8}{16}$$
 
-$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}$$
-
-$$\\frac{T(4)}{S(4)}=1$$
+$$\\frac{T(4)}{S(4)}=\\frac{1}{2}, \\qquad \\frac{T(8)}{S(8)}=1$$
 
 Those are not the same.
 
@@ -3848,24 +3892,26 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**D.** → True
 
-The overview recovered the unique crossing at
+The overview already recovered the unique positive crossing of the two scores by setting them equal:
 
 $$x=8$$
 
-The claim compares this with $6$. We have $8>6$.
+Compare that load with the threshold named in the claim:
+
+$$8>6$$
+
+The first meeting sits above $6$, matching the claim.
 
 So the statement is True.`,
       `**E.** → True
 
-The overview recovered $S(x)=8 x^{\\frac{1}{2}}$ and $T(x)=x^{\\frac{3}{2}}$. At load $16$:
+The overview recovered $S(x)=8 x^{\frac{1}{2}}$ and $T(x)=x^{\frac{3}{2}}$. At load $16$:
 
-$$S(16)=32, \\qquad T(16)$$
-
-$$S(16)=64$$
+$$S(16)=32, \qquad T(16)=64$$
 
 $$T(16)-S(16)=32$$
 
-The claim compares this lead with $30$. We have $32>30$.
+The claim compares this lead with $30$. We have $32>30$, matching the claim.
 
 So the statement is True.`,
     ],
@@ -4020,15 +4066,11 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Net gain is maximised where $\\Pi'(L)=0$:
 
-$$60 L^{-\\frac{1}{2}}=6, \\qquad L$$
-
-$$60 L^{-\\frac{1}{2}}=100$$
+$$60 L^{-\\frac{1}{2}}=6, \\qquad L=100$$
 
 Net gain is zero where $\\Pi(L)=0$ on $L>0$:
 
-$$120 L^{\\frac{1}{2}}=6L, \\qquad L$$
-
-$$120 L^{\\frac{1}{2}}=400$$
+$$120 L^{\\frac{1}{2}}=6L, \\qquad L=400$$
 
 Those hours are not the same.
 
@@ -4045,7 +4087,9 @@ $$6L=6 L^{1}$$
 
 That is a monomial in hours hired.
 
-The computed figure agrees with the claim.
+Matching these figures to the claim shows agreement.
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
       `**D.** → True
@@ -4071,9 +4115,7 @@ Keep the stated domain in force while you evaluate the model.
 
 Net gain crosses zero on $L>0$ where
 
-$$120\\sqrt{L}=6L, \\qquad L$$
-
-$$120\\sqrt{L}=400$$
+$$120\\sqrt{L}=6L, \\qquad L=400$$
 
 The claim is a crossing after more than $300$ hours. We have $400>300$.
 
@@ -4155,9 +4197,7 @@ $$\\frac{C_2(q)}{q}=\\frac{1}{4} q$$
 
 The leftover exponent is positive, so unit cost rises as plant 2 produces more. At $20$ and $40$ units:
 
-$$\\frac{1}{4}\\cdot 20=5, \\qquad \\frac{1}{4}\\cdot 40$$
-
-$$\\frac{1}{4}\\cdot 20=10$$
+$$\\frac{1}{4}\\cdot 20=5, \\qquad \\frac{1}{4}\\cdot 40=10$$
 
 and $10>5$.
 
@@ -4293,7 +4333,11 @@ The fitted response at $x=9$ is
 
 $$3\\cdot 9^{\\frac{3}{2}}=81$$
 
-The claim compares this with $70$. We have $81>70$.
+The claim compares this with $70$. Compare with the claim:
+
+$$81>70$$
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
     ],
@@ -4771,11 +4815,7 @@ $$\\frac{B(x)}{C(x)}=\\frac{18 x^{\\frac{1}{2}}}{\\frac{1}{2} x^{\\frac{3}{2}}}=
 
 That leftover power of $x$ is not constant. At the cost trial, the benefit trial, and the meeting:
 
-$$\\frac{B(4)}{C(4)}=9, \\qquad \\frac{B(16)}{C(16)}$$
-
-$$\\frac{B(4)}{C(4)}=2.25, \\qquad \\frac{B(36)}{C(36)}$$
-
-$$\\frac{B(4)}{C(4)}=1$$
+$$\\frac{B(4)}{C(4)}=9, \\qquad \\frac{B(16)}{C(16)}=2.25, \\qquad \\frac{B(36)}{C(36)}=1$$
 
 Three different ratios.
 
@@ -4953,6 +4993,8 @@ The recovered law is $T(g)=4 g^{\\frac{2}{3}}$.`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$V(d)=4 d^{2}$$
@@ -4962,8 +5004,6 @@ The exponent on depth is $2$.
 $$2>1$$
 
 Stored volume grows faster than depth.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -5081,9 +5121,7 @@ $$E'(v)=\\frac{v}{10}$$
 
 The leftover power is positive, so the slope itself rises with speed. At the two survey speeds:
 
-$$E'(30)=3, \\qquad E'(50)$$
-
-$$E'(30)=5$$
+$$E'(30)=3, \\qquad E'(50)=5$$
 
 The later increment adds more.
 
@@ -5115,9 +5153,7 @@ $$\\frac{E(v)}{v}=\\frac{v}{20}$$
 
 The leftover exponent is positive, so that average is not the same at every speed. At the two survey speeds:
 
-$$\\frac{E(30)}{30}=1.5, \\qquad \\frac{E(50)}{50}$$
-
-$$\\frac{E(30)}{30}=2.5$$
+$$\\frac{E(30)}{30}=1.5, \\qquad \\frac{E(50)}{50}=2.5$$
 
 Two different averages.
 
@@ -5457,9 +5493,7 @@ $$I'(d)=-1600 d^{-3}$$
 
 The cut is larger nearer the lamp. At the two named distances:
 
-$$\\lvert I'(2)\\rvert=200, \\qquad \\lvert I'(4)\\rvert$$
-
-$$\\lvert I'(2)\\rvert=25$$
+$$\\lvert I'(2)\\rvert=200, \\qquad \\lvert I'(4)\\rvert=25$$
 
 An extra metre cuts less illuminance at $4$ metres than at $2$.
 
@@ -5775,13 +5809,13 @@ The recovered concentration is $c(x)=400 x^{-\\frac{3}{2}}$.`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$L(w)=4 w^{\\frac{3}{2}}$$
 
 A monomial in $w$ is a power of wind speed. There is no leftover constant and no logarithm.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -5824,7 +5858,9 @@ $$\\frac{3}{2}>1$$
 
 Losses accelerate as the wind strengthens.
 
-The computed figure agrees with the claim.
+Matching these figures to the claim shows agreement.
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
       `**E.** → False
@@ -5879,6 +5915,8 @@ The recovered composition is a monomial in wind speed, coefficient $4$ and expon
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$I(v)=60 v^{\\frac{1}{2}}$$
@@ -5888,8 +5926,6 @@ The exponent on order size is $\\frac{1}{2}$.
 $$\\frac{1}{2}<1$$
 
 Impact grows more slowly than order size.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -6364,9 +6400,7 @@ $$S(N)=800 N^{\\frac{1}{2}}$$
 
 The leftover exponent on unit cost is negative, so unit cost falls. The leftover exponent on spend is positive, so cumulative spend still rises. At the two milestones:
 
-$$S(100)=8000, \\qquad S(400)$$
-
-$$S(100)=16000$$
+$$S(100)=8000, \\qquad S(400)=16000$$
 
 Spend rises while unit cost falls.
 
@@ -6490,13 +6524,13 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**B.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$S(q)=0.625 q^{1.5}$$
 
 A monomial in $q$ is a power of discharge. There is no leftover constant and no logarithm.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -7685,13 +7719,13 @@ $$I(d)=\\frac{2.88}{d^{2}}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$v(q)=4\\sqrt{2}\\, q$$
 
 After both stages the exponent on flow is $1$. Jet speed is proportional to flow.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7919,6 +7953,8 @@ $$T(s)=20\\sqrt{s}$$`,
     tactical_explanations: [
       `**A.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$r=-\\frac{3}{2}$$
@@ -7926,8 +7962,6 @@ $$r=-\\frac{3}{2}$$
 Subscribers fall faster than price rises when that exponent is smaller than minus one:
 
 $$-\\frac{3}{2}<-1$$
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7953,13 +7987,13 @@ The claim needs under $600$ thousand euros. We have $500<600$.
 So the statement is True.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$R(p)=2000p^{-\\frac{1}{2}}$$
 
 That is a power of price, with exponent $-\\frac{1}{2}$.
-
-The computed figure agrees with the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -8340,7 +8374,9 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**D.** → True
 
-The overview recovered average product $12L^{-\\frac{1}{4}}$. The leftover exponent is negative, so average product falls as labour hours rise. The claim is that ranking.
+The overview recovered average product $12L^{-\\frac{1}{4}}$. The leftover exponent is negative, so average product falls as labour hours rise. The claim is that ranking
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
       `**E.** → False
@@ -8462,9 +8498,7 @@ Start from the calibrated closed form in the overview.
 
 Quadrupling the first recorded point sends $n=25$ to $n=100$, the second recorded point:
 
-$$t(25)=18, \\qquad t(100)$$
-
-$$t(25)=13$$
+$$t(25)=18, \\qquad t(100)=13$$
 
 $$\\frac{13}{18}\\approx 0.722$$
 
@@ -8691,7 +8725,9 @@ The overview recovered exponent $\\frac{3}{2}$. Handling cost grows faster than 
 
 $$\\frac{3}{2}>1$$
 
-The computed figure agrees with the claim.
+Matching these figures to the claim shows agreement.
+
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
 So the statement is True.`,
       `**D.** → False
@@ -9009,6 +9045,8 @@ The given exponent is $3$. Mass grows faster than height when that exponent is l
 
 $$3>1$$
 
+Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -9158,6 +9196,8 @@ The claim needs $P'(12)>P'(8)$. We have $216>96$.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$P(v)=\\frac{1}{2}v^{3}$$
@@ -9168,10 +9208,14 @@ $$P(8)=\\frac{1}{2}\\cdot 512$$
 
 $$P(8)=256$$
 
-The claim is that this sits under $300$. We have $256<300$.
+The claim is that this sits under $300$. Compare with the claim:
+
+$$256<300$$
 
 So the statement is True.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -9183,7 +9227,9 @@ $$P(12)=\\frac{1}{2}\\cdot 1728$$
 
 $$P(12)=864$$
 
-The claim is that this sits under $800$. We have $864>800$.
+The claim is that this sits under $800$. Compare with the claim:
+
+$$864>800$$
 
 So the statement is False.`,
     ],
@@ -9298,6 +9344,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$S(x)=400x^{-3}$$
@@ -9308,7 +9356,9 @@ $$S(4)=\\frac{400}{64}$$
 
 $$S(4)=6.25$$
 
-The claim is that this already sits under $7$. We have $6.25<7$.
+The claim is that this already sits under $7$. Compare with the claim:
+
+$$6.25<7$$
 
 So the statement is True.`,
       `**E.** → False
@@ -9552,6 +9602,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$Q(r)=3r^{4}$$
@@ -9562,10 +9614,14 @@ $$Q(3)=3\\cdot 81$$
 
 $$Q(3)=243$$
 
-The claim is that this already sits above $200$. We have $243>200$.
+The claim is that this already sits above $200$. Compare with the claim:
+
+$$243>200$$
 
 So the statement is True.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -9577,7 +9633,9 @@ $$Q(1)=3\\cdot 1$$
 
 $$Q(1)=3$$
 
-The claim is that this still sits above $10$. We have $3<10$.
+The claim is that this still sits above $10$. Compare with the claim:
+
+$$3<10$$
 
 So the statement is False.`,
     ],
@@ -9686,6 +9744,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$H(d)=720d^{-2}$$
@@ -9696,7 +9756,9 @@ $$H(6)=\\frac{720}{36}$$
 
 $$H(6)=20$$
 
-The claim is that this already sits under $25$. We have $20<25$.
+The claim is that this already sits under $25$. Compare with the claim:
+
+$$20<25$$
 
 So the statement is True.`,
       `**E.** → False
@@ -9802,6 +9864,8 @@ Doubling time does not double the stained area.
 So the statement is False.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$r(t)=15t^{\\frac{2}{3}}$$
@@ -9812,7 +9876,9 @@ $$r(8)=15\\cdot 4$$
 
 $$r(8)=60$$
 
-The claim is that this already sits above $50$. We have $60>50$.
+The claim is that this already sits above $50$. Compare with the claim:
+
+$$60>50$$
 
 So the statement is True.`,
       `**E.** → False
@@ -9912,6 +9978,8 @@ Doubling the head does not double the discharge.
 So the statement is False.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$Q(h)=16h^{\\frac{3}{2}}$$
@@ -9922,7 +9990,9 @@ $$Q(1)=16\\cdot 1$$
 
 $$Q(1)=16$$
 
-The claim is that this still sits under $20$. We have $16<20$.
+The claim is that this still sits under $20$. Compare with the claim:
+
+$$16<20$$
 
 So the statement is True.`,
       `**E.** → False
@@ -10026,6 +10096,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$F(x)=3x^{2}$$
@@ -10036,10 +10108,14 @@ $$F(10)=3\\cdot 100$$
 
 $$F(10)=300$$
 
-The claim is that this already sits above $250$. We have $300>250$.
+The claim is that this already sits above $250$. Compare with the claim:
+
+$$300>250$$
 
 So the statement is True.`,
       `**E.** → False
+
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
 
 The overview recovered
 
@@ -10051,7 +10127,9 @@ $$F(6)=3\\cdot 36$$
 
 $$F(6)=108$$
 
-The claim is that this still sits under $100$. We have $108>100$.
+The claim is that this still sits under $100$. Compare with the claim:
+
+$$108>100$$
 
 So the statement is False.`,
     ],
@@ -10148,6 +10226,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**D.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$m(t)=2t^{\\frac{1}{2}}$$
@@ -10158,7 +10238,9 @@ $$m(25)=2\\cdot 5$$
 
 $$m(25)=10$$
 
-The claim is that this already sits above $8$. We have $10>8$.
+The claim is that this already sits above $8$. Compare with the claim:
+
+$$10>8$$
 
 So the statement is True.`,
       `**E.** → False
@@ -10399,6 +10481,8 @@ The claim needs $E'(4)>E'(1)$. We have $5<10$.
 So the statement is False.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$E(h)=20h^{\\frac{1}{2}}$$
@@ -10409,7 +10493,9 @@ $$E(25)=20\\cdot 5$$
 
 $$E(25)=100$$
 
-The claim is that this already sits above $90$. We have $100>90$.
+The claim is that this already sits above $90$. Compare with the claim:
+
+$$100>90$$
 
 So the statement is True.`,
     ],
@@ -10468,6 +10554,8 @@ The computed figure agrees with the claim.
 So the statement is True.`,
       `**B.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$N(n)=12n^{\\frac{1}{2}}-2n$$
@@ -10478,7 +10566,9 @@ $$N(9)=12\\cdot 3-18$$
 
 $$N(9)=18$$
 
-The claim is that this already sits above $15$. We have $18>15$.
+The claim is that this already sits above $15$. Compare with the claim:
+
+$$18>15$$
 
 So the statement is True.`,
       `**C.** → False
@@ -10531,6 +10621,8 @@ The claim needs $N'(4)>N'(9)$. We have $1>0$.
 So the statement is True.`,
       `**E.** → False
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$N(n)=12n^{\\frac{1}{2}}-2n$$
@@ -10541,7 +10633,9 @@ $$N(4)=12\\cdot 2-8$$
 
 $$N(4)=16$$
 
-The claim is that this already sits above $20$. We have $16<20$.
+The claim is that this already sits above $20$. Compare with the claim:
+
+$$16<20$$
 
 So the statement is False.`,
     ],
@@ -10617,6 +10711,8 @@ Doubling the price quarters demand, not halves it.
 So the statement is False.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$q(p)=2000p^{-2}$$
@@ -10627,7 +10723,9 @@ $$q(10)=\\frac{2000}{100}$$
 
 $$q(10)=20$$
 
-The claim is that this already sits under $25$. We have $20<25$.
+The claim is that this already sits under $25$. Compare with the claim:
+
+$$20<25$$
 
 So the statement is True.`,
       `**D.** → True
@@ -10727,6 +10825,8 @@ Tripling $s$ divides demand by $3$.
 So the statement is False.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$q\\circ p=\\frac{400}{s}$$
@@ -10735,7 +10835,9 @@ At subsidy index $8$:
 
 $$\\frac{400}{8}=50$$
 
-The claim is that this already sits above $40$. We have $50>40$.
+The claim is that this already sits above $40$. Compare with the claim:
+
+$$50>40$$
 
 So the statement is True.`,
       `**D.** → False
@@ -10753,6 +10855,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$q\\circ p=\\frac{400}{s}$$
@@ -10761,7 +10865,9 @@ At subsidy index $27$:
 
 $$\\frac{400}{27}\\approx 14.81$$
 
-The claim is that this stays under $16$. We have $14.81<16$.
+The claim is that this stays under $16$. Compare with the claim:
+
+$$14.81<16$$
 
 So the statement is True.`,
     ],
@@ -10834,7 +10940,15 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**B.** → True
 
-The overview recovered that sending all thirty thousand loaves to line 2 scores $225$. The claim is that this sits above $200$. We have $225>200$.
+The overview already scored the named plan. That plan sending all thirty thousand loaves to line 2 scores
+
+$$225$$
+
+Compare this score with the threshold $200$:
+
+$$225>200$$
+
+The score sits above $200$, matching the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -10871,7 +10985,15 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**E.** → True
 
-The overview recovered that the six-and-twenty-four split scores $180$. The claim is that this sits under $200$. We have $180<200$.
+The overview already scored the six-and-twenty-four bread split. That named plan scores
+
+$$180$$
+
+Compare this score with the threshold $200$ named in the claim:
+
+$$180 < 200$$
+
+The score sits below $200$, matching the claim.
 
 So the statement is True.`,
     ],
@@ -10999,6 +11121,8 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**E.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$q(p)=4000p^{-2}$$
@@ -11009,7 +11133,9 @@ $$q(5)=\\frac{4000}{25}$$
 
 $$q(5)=160$$
 
-The claim is that this already sits above $150$. We have $160>150$.
+The claim is that this already sits above $150$. Compare with the claim:
+
+$$160>150$$
 
 So the statement is True.`,
     ],
@@ -11083,6 +11209,8 @@ The claim needs $T'(9)>T'(4)$. We have $36>24$.
 So the statement is True.`,
       `**C.** → True
 
+Start from the calibrated closed form recovered in the overview, then substitute only the input named in the claim.
+
 The overview recovered
 
 $$T(e)=8e^{\\frac{3}{2}}$$
@@ -11093,7 +11221,9 @@ $$T(9)=8\\cdot 27$$
 
 $$T(9)=216$$
 
-The claim is that this already sits above $200$. We have $216>200$.
+The claim is that this already sits above $200$. Compare with the claim:
+
+$$216>200$$
 
 So the statement is True.`,
       `**D.** → False
