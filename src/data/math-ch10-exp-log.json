@@ -129,7 +129,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nFrom the overview, $m(18)=8$. Compare with $6$:\n\n$$8 > 6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: After $18$ hours more than $6$ grams remain.\n\nSo the statement is True.",
         "**E.** → False\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nSolve $m(t)=6$ under the recovered $k$.\n\n$$64\\,e^{-kt}=6$$\n\n$$t=\\frac{\\ln(64/6)}{k}\\approx20.4902$$\n\n$$20.4902 \\ge 18$$\n\nThe live claim says: The mass falls below $6$ grams at some time strictly before $t=18$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Half-life $T_{1/2}=6$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{6}\\approx0.115525$$\n\nand\n\n$$m(t)=64\\,e^{-kt}=64\\left(\\tfrac12\\right)^{t/6}.$$\n\nAt $t=18$, the sample has lived $3$ half-lives, so $m(18)=8$.",
+      "solution_overview": "Half-life $T_{1/2}=6$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{6}\\approx0.115525$$\n\nand\n\n$$m(t)=64\\,e^{-kt}=64\\left(\\tfrac12\\right)^{t/6}.$$\n\nAt $t=18$, the sample has lived $3$ half-lives, so $m(18)=8$.\n\nShared recoveries for this radioactive decay stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 4,
       "placeholder": false,
@@ -229,7 +229,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\nSolve $T(t)=30$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{30-15}{75-15}\\approx30.8065$$\n\n$$30.8065 < 35$$\n\nThe live claim says: The temperature reaches $30$ at some time strictly before $t=35$.\n\nSo the statement is True.",
         "**E.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=35$ the right-hand side equals $12.4205$, matching $T(35)-T_a$.\n\nThe live claim says: The deviation from ambient at $t=35$ equals $(T_0-T_a)e^{-0.045\\cdot35}$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=75$, $T_a=15$, $k=0.045$.\n\n$$T(35)=15+(75-15)e^{-0.045\\cdot35}\\approx27.4205.$$\n\nTime to reach $30$ solves $t=-\\ln\\frac{30-T_a}{T_0-T_a}/k\\approx30.8065$.",
+      "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=75$, $T_a=15$, $k=0.045$.\n\n$$T(35)=15+(75-15)e^{-0.045\\cdot35}\\approx27.4205.$$\n\nTime to reach $30$ solves $t=-\\ln\\frac{30-T_a}{T_0-T_a}/k\\approx30.8065$.\n\nShared recoveries for this newton cooling stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 7,
       "placeholder": false,
@@ -263,7 +263,7 @@
         "**D.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim is true.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The culture doubles in every single growth period of length $3$.\n\nSo the statement is True.",
         "**E.** → False\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 12$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The culture reaches $20000$ individuals at some time strictly before $t=12$.\n\nSo the statement is False."
       ],
-      "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=12$, after $4$ growth periods, $N\\approx16000$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
+      "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=12$, after $4$ growth periods, $N\\approx16000$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.\n\nShared recoveries for this bacteria period growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 8,
       "placeholder": false,
@@ -730,7 +730,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nFrom the overview, $m(36)=6$. Compare with $5$:\n\n$$6 > 5$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: After $36$ hours more than $5$ grams remain.\n\nSo the statement is True.",
         "**E.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\nSolve $m(t)=5$ under the recovered $k$.\n\n$$48\\,e^{-kt}=5$$\n\n$$t=\\frac{\\ln(48/5)}{k}\\approx39.1564$$\n\n$$39.1564 \\ge 36$$\n\nThe live claim says: The mass falls below $5$ grams at some time strictly before $t=36$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Half-life $T_{1/2}=12$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{12}\\approx0.057762$$\n\nand\n\n$$m(t)=48\\,e^{-kt}=48\\left(\\tfrac12\\right)^{t/12}.$$\n\nAt $t=36$, the sample has lived $3$ half-lives, so $m(36)=6$.",
+      "solution_overview": "Half-life $T_{1/2}=12$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{12}\\approx0.057762$$\n\nand\n\n$$m(t)=48\\,e^{-kt}=48\\left(\\tfrac12\\right)^{t/12}.$$\n\nAt $t=36$, the sample has lived $3$ half-lives, so $m(36)=6$.\n\nShared recoveries for this radioactive decay stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 22,
       "placeholder": false,
@@ -796,7 +796,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nSolve $T(t)=40$:\n\n$$t=-\\frac{1}{k}\\ln\\frac{40-20}{90-20}\\approx25.0553$$\n\n$$25.0553 < 30$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The temperature reaches $40$ at some time strictly before $t=30$.\n\nSo the statement is True.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nRearrange the model:\n\n$$T(t)-T_a=(T_0-T_a)e^{-kt}.$$\n\nAt $t=30$ the right-hand side equals $15.6191$, matching $T(30)-T_a$.\n\nThe live claim says: The deviation from ambient at $t=30$ equals $(T_0-T_a)e^{-0.05\\cdot30}$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=90$, $T_a=20$, $k=0.05$.\n\n$$T(30)=20+(90-20)e^{-0.05\\cdot30}\\approx35.6191.$$\n\nTime to reach $40$ solves $t=-\\ln\\frac{40-T_a}{T_0-T_a}/k\\approx25.0553$.",
+      "solution_overview": "Newton cooling: $T(t)=T_a+(T_0-T_a)e^{-kt}$ with $T_0=90$, $T_a=20$, $k=0.05$.\n\n$$T(30)=20+(90-20)e^{-0.05\\cdot30}\\approx35.6191.$$\n\nTime to reach $40$ solves $t=-\\ln\\frac{40-T_a}{T_0-T_a}/k\\approx25.0553$.\n\nShared recoveries for this newton cooling stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 24,
       "placeholder": false,
@@ -1296,7 +1296,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nFrom the overview, $m(36)=6$. Compare with $5$:\n\n$$6 > 5$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: After $36$ hours more than $5$ grams remain.\n\nSo the statement is True.",
         "**E.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nSolve $m(t)=5$ under the recovered $k$.\n\n$$48\\,e^{-kt}=5$$\n\n$$t=\\frac{\\ln(48/5)}{k}\\approx39.1564$$\n\n$$39.1564 \\ge 36$$\n\nThe live claim says: The mass falls below $5$ grams at some time strictly before $t=36$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Half-life $T_{1/2}=12$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{12}\\approx0.057762$$\n\nand\n\n$$m(t)=48\\,e^{-kt}=48\\left(\\tfrac12\\right)^{t/12}.$$\n\nAt $t=36$, the sample has lived $3$ half-lives, so $m(36)=6$.",
+      "solution_overview": "Half-life $T_{1/2}=12$ forces continuous decay constant\n\n$$k=\\frac{\\ln 2}{12}\\approx0.057762$$\n\nand\n\n$$m(t)=48\\,e^{-kt}=48\\left(\\tfrac12\\right)^{t/12}.$$\n\nAt $t=36$, the sample has lived $3$ half-lives, so $m(36)=6$.\n\nShared recoveries for this radioactive decay stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 39,
       "placeholder": false,
@@ -1363,7 +1363,7 @@
         "**D.** → False\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim is false.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The culture doubles in every single growth period of length $4$.\n\nSo the statement is False.",
         "**E.** → False\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The culture reaches $40000$ individuals at some time strictly before $t=12$.\n\nSo the statement is False."
       ],
-      "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
+      "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.\n\nShared recoveries for this bacteria period growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 41,
       "placeholder": false,
@@ -1430,7 +1430,7 @@
         "**D.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\nEach period multiplies by $3$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $3$, so the claim is false.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The culture doubles in every single growth period of length $4$.\n\nSo the statement is False.",
         "**E.** → False\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nSolve $N(t)=40000$:\n\n$$t=\\frac{\\ln(40000/500)}{k}\\approx15.9548$$\n\n$$15.9548 \\ge 12$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The culture reaches $40000$ individuals at some time strictly before $t=12$.\n\nSo the statement is False."
       ],
-      "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.",
+      "solution_overview": "$N(t)=500\\cdot(3)^{t/4}$. Equivalent continuous force $k=\\ln(3)/4\\approx0.274653$. At $t=12$, after $3$ growth periods, $N\\approx13500$. Time to reach $40000$ is $t=\\ln(40000/500)/k\\approx15.9548$.\n\nShared recoveries for this bacteria period growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 43,
       "placeholder": false,
@@ -1463,7 +1463,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nEach period multiplies by $2$, not necessarily by $2$. Doubling every period would require factor $2$. Here the factor is $2$, so the claim is true.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The culture doubles in every single growth period of length $3$.\n\nSo the statement is True.",
         "**E.** → False\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nSolve $N(t)=20000$:\n\n$$t=\\frac{\\ln(20000/1000)}{k}\\approx12.9658$$\n\n$$12.9658 \\ge 12$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The culture reaches $20000$ individuals at some time strictly before $t=12$.\n\nSo the statement is False."
       ],
-      "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=12$, after $4$ growth periods, $N\\approx16000$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.",
+      "solution_overview": "$N(t)=1000\\cdot(2)^{t/3}$. Equivalent continuous force $k=\\ln(2)/3\\approx0.231049$. At $t=12$, after $4$ growth periods, $N\\approx16000$. Time to reach $20000$ is $t=\\ln(20000/1000)/k\\approx12.9658$.\n\nShared recoveries for this bacteria period growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 44,
       "placeholder": false,
@@ -1497,7 +1497,7 @@
         "**D.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$a^{x}=8^{1.6667}\\approx32$$\n\n$$b^{5}=2^{5}=32$$\n\nThe sides match within numerical tolerance.\n\nThe live claim says: Substituting the solved $x$ recovers equality of the two exponential sides.\n\nSo the statement is True.",
         "**E.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$3 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: $\\log_{2}(8)$ is not strictly larger than $2$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Change-of-base identity: $\\log_{2}(8)=\\ln a/\\ln b=3$. The equation $8^{x}=2^{5}$ becomes\n\n$$x\\log_{2} a=5\\implies x=\\frac{5}{\\log_{2}(8)}=1.6667.$$\n\nSubstitution recovers $8^{x}=2^{5}$.",
+      "solution_overview": "Change-of-base identity: $\\log_{2}(8)=\\ln a/\\ln b=3$. The equation $8^{x}=2^{5}$ becomes\n\n$$x\\log_{2} a=5\\implies x=\\frac{5}{\\log_{2}(8)}=1.6667.$$\n\nSubstitution recovers $8^{x}=2^{5}$.\n\nShared recoveries for this change of base solve stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 45,
       "placeholder": false,
@@ -1530,7 +1530,7 @@
         "**D.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\nThe logarithm $\\log_{2} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is an admissible solution of the original logarithmic equation.\n\nSo the statement is False.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The product of the logarithmic roots $u$ equals $6$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Set $u=\\log_{2} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=2^{2}=4$ and $x=2^{3}=8$. Domain requires $x>0$.",
+      "solution_overview": "Set $u=\\log_{2} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=2^{2}=4$ and $x=2^{3}=8$. Domain requires $x>0$.\n\nShared recoveries for this log equations quadratic stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 46,
       "placeholder": false,
@@ -1630,7 +1630,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$\\log_{5}(5)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: At $x=5$ the graph reads exactly $1$.\n\nSo the statement is True.",
         "**E.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$f(4)=\\log_{5}(2^{2})=2\\log_{5} 2=2f(2).$$\n\nNumerically $f(4)\\approx0.8614$ and $2f(2)\\approx0.8614$.\n\nThe live claim says: The vertical reading at $x=4$ is not exactly twice the reading at $x=2$.\n\nSo the statement is False."
       ],
-      "solution_overview": "The figure shows $f(x)=\\log_{5}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(5)=1$, and $f(2)\\approx0.4307$. Because $\\log_{5}(x^{2})=2\\log_{5} x$, $f(4)=2f(2)\\approx0.8614$.",
+      "solution_overview": "The figure shows $f(x)=\\log_{5}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(5)=1$, and $f(2)\\approx0.4307$. Because $\\log_{5}(x^{2})=2\\log_{5} x$, $f(4)=2f(2)\\approx0.8614$.\n\nShared recoveries for this graph of log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 49,
       "placeholder": false,
@@ -1696,7 +1696,7 @@
         "**D.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0.$$\n\nThe live claim says: Adding $\\log_{e} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → False\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.",
+      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 51,
       "placeholder": false,
@@ -1762,7 +1762,7 @@
         "**D.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The first solution has more than $100$ times the hydrogen-ion concentration of the second.\n\nSo the statement is False.",
         "**E.** → False\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The second solution has pH strictly above $6$.\n\nSo the statement is False."
       ],
-      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.",
+      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.\n\nShared recoveries for this ph log concentration stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 53,
       "placeholder": false,
@@ -1795,7 +1795,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nSubstitute $x=-2$ into $x+2$ to get $0$, which is exactly the singularity of the logarithm.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: At $x=-2$ the logarithm's argument is exactly $0$.\n\nSo the statement is True.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nFrom the overview, $x=0$ has argument $2$ (> $0$) while $x=-3$ has argument $-1$ (≤ $0$). The claim that the first is in and the second is out is correct.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is in the domain while $x=-3$ is not.\n\nSo the statement is True."
       ],
-      "solution_overview": "For $f(x)=\\log_{e}(x+2)$ the domain requires $x+2>0$. The boundary $x+2=0$ occurs at $x=-2$ and is excluded. At the test point $x=0$, the argument equals $2$; at $x=-3$ it equals $-1$.",
+      "solution_overview": "For $f(x)=\\log_{e}(x+2)$ the domain requires $x+2>0$. The boundary $x+2=0$ occurs at $x=-2$ and is excluded. At the test point $x=0$, the argument equals $2$; at $x=-3$ it equals $-1$.\n\nShared recoveries for this log domain stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 54,
       "placeholder": false,
@@ -1828,7 +1828,7 @@
         "**D.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0.$$\n\nThe live claim says: Adding $\\log_{e} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.",
+      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 55,
       "placeholder": false,
@@ -1861,7 +1861,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$a^{x}=32^{1.2}\\approx64$$\n\n$$b^{6}=2^{6}=64$$\n\nThe sides match within numerical tolerance.\n\nThe live claim says: Substituting the solved $x$ recovers equality of the two exponential sides.\n\nSo the statement is True.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$5 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{2}(32)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Change-of-base identity: $\\log_{2}(32)=\\ln a/\\ln b=5$. The equation $32^{x}=2^{6}$ becomes\n\n$$x\\log_{2} a=6\\implies x=\\frac{6}{\\log_{2}(32)}=1.2.$$\n\nSubstitution recovers $32^{x}=2^{6}$.",
+      "solution_overview": "Change-of-base identity: $\\log_{2}(32)=\\ln a/\\ln b=5$. The equation $32^{x}=2^{6}$ becomes\n\n$$x\\log_{2} a=6\\implies x=\\frac{6}{\\log_{2}(32)}=1.2.$$\n\nSubstitution recovers $32^{x}=2^{6}$.\n\nShared recoveries for this change of base solve stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 56,
       "placeholder": false,
@@ -1895,7 +1895,7 @@
         "**D.** → False\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$\\frac{h_1}{h_2}=100$$\n\n$$100 \\le 100$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The first solution has more than $100$ times the hydrogen-ion concentration of the second.\n\nSo the statement is False.",
         "**E.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$\\mathrm{pH}_2=5$$\n\n$$5 \\le 6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The second solution has pH strictly above $6$.\n\nSo the statement is False."
       ],
-      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.",
+      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-03$ and $1e-05$,\n\n$$\\mathrm{pH}_1=3,\\quad \\mathrm{pH}_2=5.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=100$. pH gap equals $\\log_{10}(h_1/h_2)=2$.\n\nShared recoveries for this ph log concentration stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 57,
       "placeholder": false,
@@ -1961,7 +1961,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nSubstitute $x=5$ into $5-x$ to get $0$, which is exactly the singularity of the logarithm.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: At $x=5$ the logarithm's argument is exactly $0$.\n\nSo the statement is True.",
         "**E.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nFrom the overview, $x=1$ has argument $4$ (> $0$) while $x=6$ has argument $-1$ (≤ $0$). The claim that the first is in and the second is out is correct.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=1$ is in the domain while $x=6$ is not.\n\nSo the statement is True."
       ],
-      "solution_overview": "For $f(x)=\\log_{10}(5-x)$ the domain requires $5-x>0$. The boundary $5-x=0$ occurs at $x=5$ and is excluded. At the test point $x=1$, the argument equals $4$; at $x=6$ it equals $-1$.",
+      "solution_overview": "For $f(x)=\\log_{10}(5-x)$ the domain requires $5-x>0$. The boundary $5-x=0$ occurs at $x=5$ and is excluded. At the test point $x=1$, the argument equals $4$; at $x=6$ it equals $-1$.\n\nShared recoveries for this log domain stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 59,
       "placeholder": false,
@@ -1994,7 +1994,7 @@
         "**D.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nSubstitute $x=-2$ into $x+2$ to get $0$, which is exactly the singularity of the logarithm.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: At $x=-2$ the logarithm's argument is exactly $0$.\n\nSo the statement is True.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nFrom the overview, $x=0$ has argument $2$ (> $0$) while $x=-3$ has argument $-1$ (≤ $0$). The claim that the first is in and the second is out is correct.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is in the domain while $x=-3$ is not.\n\nSo the statement is True."
       ],
-      "solution_overview": "For $f(x)=\\log_{e}(x+2)$ the domain requires $x+2>0$. The boundary $x+2=0$ occurs at $x=-2$ and is excluded. At the test point $x=0$, the argument equals $2$; at $x=-3$ it equals $-1$.",
+      "solution_overview": "For $f(x)=\\log_{e}(x+2)$ the domain requires $x+2>0$. The boundary $x+2=0$ occurs at $x=-2$ and is excluded. At the test point $x=0$, the argument equals $2$; at $x=-3$ it equals $-1$.\n\nShared recoveries for this log domain stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 60,
       "placeholder": false,
@@ -2027,7 +2027,7 @@
         "**D.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nPower rule:\n\n$$\\log_{2}(64^{2})=2\\log_{2}(64)=2\\cdot6=12.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: $\\log_{2}(64^{2})$ equals $2\\log_{2}(64)$.\n\nSo the statement is True.",
         "**E.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$6 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{2}(64)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Let $u=\\log_{2}(64)=6$. Then $\\log_{2}(64^{2})=2u=12$. The nested value $\\log_{2}(u)\\approx2.585$ is defined because $u>0$.",
+      "solution_overview": "Let $u=\\log_{2}(64)=6$. Then $\\log_{2}(64^{2})=2u=12$. The nested value $\\log_{2}(u)\\approx2.585$ is defined because $u>0$.\n\nShared recoveries for this nested logs stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 61,
       "placeholder": false,
@@ -2060,7 +2060,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{10} z\\approx1.20412\\neq 0.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: Adding $\\log_{10} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$\\frac{xy}{z}=2.5$$\n\n$$2.5 > 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Product/quotient rule base $10$:\n\n$$\\log_{10}\\frac{xy}{z}=\\log_{10} x+\\log_{10} y-\\log_{10} z.$$\n\nWith $x=2$, $y=5$, $z=4$, both sides equal $0.39794$.",
+      "solution_overview": "Product/quotient rule base $10$:\n\n$$\\log_{10}\\frac{xy}{z}=\\log_{10} x+\\log_{10} y-\\log_{10} z.$$\n\nWith $x=2$, $y=5$, $z=4$, both sides equal $0.39794$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 62,
       "placeholder": false,
@@ -2093,7 +2093,7 @@
         "**D.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\nSubstitute $x=-0.5$ into $2x+1$ to get $0$, which is exactly the singularity of the logarithm.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: At $x=-0.5$ the logarithm's argument is exactly $0$.\n\nSo the statement is True.",
         "**E.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nFrom the overview, $x=0$ has argument $1$ (> $0$) while $x=-1$ has argument $-1$ (≤ $0$). The claim that the first is in and the second is out is correct.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is in the domain while $x=-1$ is not.\n\nSo the statement is True."
       ],
-      "solution_overview": "For $f(x)=\\log_{2}(2x+1)$ the domain requires $2x+1>0$. The boundary $2x+1=0$ occurs at $x=-0.5$ and is excluded. At the test point $x=0$, the argument equals $1$; at $x=-1$ it equals $-1$.",
+      "solution_overview": "For $f(x)=\\log_{2}(2x+1)$ the domain requires $2x+1>0$. The boundary $2x+1=0$ occurs at $x=-0.5$ and is excluded. At the test point $x=0$, the argument equals $1$; at $x=-1$ it equals $-1$.\n\nShared recoveries for this log domain stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 63,
       "placeholder": false,
@@ -2126,7 +2126,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The identity $\\log_{e}(e^{x})=x$ holds at the given $x$.\n\nSo the statement is True.",
         "**E.** → False\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$4.481689 \\le 10$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The value $e^{1.5}$ exceeds $10$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.",
+      "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.\n\nShared recoveries for this inverse exp log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 64,
       "placeholder": false,
@@ -2159,7 +2159,7 @@
         "**D.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nPower rule:\n\n$$\\log_{10}(100^{2})=2\\log_{10}(100)=2\\cdot2=4.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: $\\log_{10}(100^{2})$ equals $2\\log_{10}(100)$.\n\nSo the statement is True.",
         "**E.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$2 \\le 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{10}(100)$ is strictly larger than $2$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Let $u=\\log_{10}(100)=2$. Then $\\log_{10}(100^{2})=2u=4$. The nested value $\\log_{10}(u)\\approx0.301$ is defined because $u>0$.",
+      "solution_overview": "Let $u=\\log_{10}(100)=2$. Then $\\log_{10}(100^{2})=2u=4$. The nested value $\\log_{10}(u)\\approx0.301$ is defined because $u>0$.\n\nShared recoveries for this nested logs stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 65,
       "placeholder": false,
@@ -2192,7 +2192,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx8\\neq 0.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Adding $\\log_{2} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$\\frac{xy}{z}=2$$\n\n$$2 > 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=8$, $y=4$, $z=16$, both sides equal $1$.",
+      "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=8$, $y=4$, $z=16$, both sides equal $1$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 66,
       "placeholder": false,
@@ -2225,7 +2225,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\nSubstitute $x=3$ into $x-3$ to get $0$, which is exactly the singularity of the logarithm.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: At $x=3$ the logarithm's argument is exactly $0$.\n\nSo the statement is True.",
         "**E.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nFrom the overview, $x=5$ has argument $2$ (> $0$) while $x=2$ has argument $-1$ (≤ $0$). The claim that the first is in and the second is out is correct.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=5$ is in the domain while $x=2$ is not.\n\nSo the statement is True."
       ],
-      "solution_overview": "For $f(x)=\\log_{10}(x-3)$ the domain requires $x-3>0$. The boundary $x-3=0$ occurs at $x=3$ and is excluded. At the test point $x=5$, the argument equals $2$; at $x=2$ it equals $-1$.",
+      "solution_overview": "For $f(x)=\\log_{10}(x-3)$ the domain requires $x-3>0$. The boundary $x-3=0$ occurs at $x=3$ and is excluded. At the test point $x=5$, the argument equals $2$; at $x=2$ it equals $-1$.\n\nShared recoveries for this log domain stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 67,
       "placeholder": false,
@@ -2258,7 +2258,7 @@
         "**D.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nSame identity as statement A, evaluated at $x=5$:\n\n$$\\log_{2}(2^{5})=5.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The identity $\\log_{2}(2^{x})=x$ holds at the given $x$.\n\nSo the statement is True.",
         "**E.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$32 > 10$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The value $2^{5}$ exceeds $10$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Exponential and logarithm base $2$ are inverses:\n\n$$\\log_{2}(2^{x})=x,\\qquad 2^{\\log_{2} y}=y\\ (y>0).$$\n\nHere $x=5$ gives $y=2^{5}=32$.",
+      "solution_overview": "Exponential and logarithm base $2$ are inverses:\n\n$$\\log_{2}(2^{x})=x,\\qquad 2^{\\log_{2} y}=y\\ (y>0).$$\n\nHere $x=5$ gives $y=2^{5}=32$.\n\nShared recoveries for this inverse exp log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 68,
       "placeholder": false,
@@ -2325,7 +2325,7 @@
         "**D.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nThe root is $x=49.5$, while the RHS is $2$. Equating them would skip the exponentiation step $2x+1=10^{2}$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The root equals the right-hand side $2$ itself.\n\nSo the statement is False.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$49.5 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The recovered root is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Solve $\\log_{10}(2x+1)=2$. Exponentiate base $10$:\n\n$$2x+1=10^{2}=100$$\n\n$$x=\\frac{100-1}{2}=49.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.",
+      "solution_overview": "Solve $\\log_{10}(2x+1)=2$. Exponentiate base $10$:\n\n$$2x+1=10^{2}=100$$\n\n$$x=\\frac{100-1}{2}=49.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.\n\nShared recoveries for this log equations linear stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 70,
       "placeholder": false,
@@ -2358,7 +2358,7 @@
         "**D.** → False\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nThe logarithm $\\log_{10} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is an admissible solution of the original logarithmic equation.\n\nSo the statement is False.",
         "**E.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The product of the logarithmic roots $u$ equals $6$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=10^{2}=100$ and $x=10^{3}=1000$. Domain requires $x>0$.",
+      "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=10^{2}=100$ and $x=10^{3}=1000$. Domain requires $x>0$.\n\nShared recoveries for this log equations quadratic stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 71,
       "placeholder": false,
@@ -2391,7 +2391,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nSame identity as statement A, evaluated at $x=1.5$:\n\n$$\\log_{e}(e^{1.5})=1.5.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The identity $\\log_{e}(e^{x})=x$ holds at the given $x$.\n\nSo the statement is True.",
         "**E.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$4.481689 \\le 10$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The value $e^{1.5}$ exceeds $10$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.",
+      "solution_overview": "Exponential and logarithm base $e$ are inverses:\n\n$$\\log_{e}(e^{x})=x,\\qquad e^{\\log_{e} y}=y\\ (y>0).$$\n\nHere $x=1.5$ gives $y=e^{1.5}=4.481689$.\n\nShared recoveries for this inverse exp log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 72,
       "placeholder": false,
@@ -2425,7 +2425,7 @@
         "**D.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\nSame identity as statement A, evaluated at $x=2$:\n\n$$\\log_{5}(5^{2})=2.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The identity $\\log_{5}(5^{x})=x$ holds at the given $x$.\n\nSo the statement is True.",
         "**E.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$25 > 10$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The value $5^{2}$ exceeds $10$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Exponential and logarithm base $5$ are inverses:\n\n$$\\log_{5}(5^{x})=x,\\qquad 5^{\\log_{5} y}=y\\ (y>0).$$\n\nHere $x=2$ gives $y=5^{2}=25$.",
+      "solution_overview": "Exponential and logarithm base $5$ are inverses:\n\n$$\\log_{5}(5^{x})=x,\\qquad 5^{\\log_{5} y}=y\\ (y>0).$$\n\nHere $x=2$ gives $y=5^{2}=25$.\n\nShared recoveries for this inverse exp log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 73,
       "placeholder": false,
@@ -2458,7 +2458,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nPower rule:\n\n$$\\log_{5}(125^{2})=2\\log_{5}(125)=2\\cdot3=6.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{5}(125^{2})$ equals $2\\log_{5}(125)$.\n\nSo the statement is True.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$3 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{5}(125)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Let $u=\\log_{5}(125)=3$. Then $\\log_{5}(125^{2})=2u=6$. The nested value $\\log_{5}(u)\\approx0.6826$ is defined because $u>0$.",
+      "solution_overview": "Let $u=\\log_{5}(125)=3$. Then $\\log_{5}(125^{2})=2u=6$. The nested value $\\log_{5}(u)\\approx0.6826$ is defined because $u>0$.\n\nShared recoveries for this nested logs stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 74,
       "placeholder": false,
@@ -2524,7 +2524,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{2} z\\approx2\\neq 0.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Adding $\\log_{2} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$\\frac{xy}{z}=16$$\n\n$$16 > 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=4$, $y=8$, $z=2$, both sides equal $4$.",
+      "solution_overview": "Product/quotient rule base $2$:\n\n$$\\log_{2}\\frac{xy}{z}=\\log_{2} x+\\log_{2} y-\\log_{2} z.$$\n\nWith $x=4$, $y=8$, $z=2$, both sides equal $4$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 76,
       "placeholder": false,
@@ -2557,7 +2557,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$a^{x}=125^{1}\\approx125$$\n\n$$b^{3}=5^{3}=125$$\n\nThe sides match within numerical tolerance.\n\nThe live claim says: Substituting the solved $x$ recovers equality of the two exponential sides.\n\nSo the statement is True.",
         "**E.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$3 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{5}(125)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Change-of-base identity: $\\log_{5}(125)=\\ln a/\\ln b=3$. The equation $125^{x}=5^{3}$ becomes\n\n$$x\\log_{5} a=3\\implies x=\\frac{3}{\\log_{5}(125)}=1.$$\n\nSubstitution recovers $125^{x}=5^{3}$.",
+      "solution_overview": "Change-of-base identity: $\\log_{5}(125)=\\ln a/\\ln b=3$. The equation $125^{x}=5^{3}$ becomes\n\n$$x\\log_{5} a=3\\implies x=\\frac{3}{\\log_{5}(125)}=1.$$\n\nSubstitution recovers $125^{x}=5^{3}$.\n\nShared recoveries for this change of base solve stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 77,
       "placeholder": false,
@@ -2590,7 +2590,7 @@
         "**D.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$|\\varepsilon|=b=2$$\n\n$$2 > 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: Demand is price-elastic in the sense $|\\varepsilon|>1$.\n\nSo the statement is True.",
         "**E.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$\\frac{Q(2P)}{Q(P)}=\\frac{e^{a-b\\ln(2P)}}{e^{a-b\\ln P}}=2^{-b}\\approx0.25.$$\n\nThe constant-elasticity structure forces exactly that factor.\n\nThe live claim says: Doubling the price multiplies quantity by exactly $2^{-2}$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Log-linear demand $\\ln Q=4-2\\ln P$. At $P=2$,\n\n$$\\ln Q=4-2\\ln(2)\\approx2.6137\\implies Q\\approx13.6495.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-2$. Doubling price multiplies $Q$ by $2^{-2}\\approx0.25$.",
+      "solution_overview": "Log-linear demand $\\ln Q=4-2\\ln P$. At $P=2$,\n\n$$\\ln Q=4-2\\ln(2)\\approx2.6137\\implies Q\\approx13.6495.$$\n\nPrice elasticity is the constant $d\\ln Q/d\\ln P=-2$. Doubling price multiplies $Q$ by $2^{-2}\\approx0.25$.\n\nShared recoveries for this elasticity log linear stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 78,
       "placeholder": false,
@@ -2623,7 +2623,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nThe logarithm $\\log_{10} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is not an admissible solution of the original logarithmic equation.\n\nSo the statement is True.",
         "**E.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The product of the logarithmic roots $u$ equals $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=10^{1}=10$ and $x=10^{2}=100$. Domain requires $x>0$.",
+      "solution_overview": "Set $u=\\log_{10} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=10^{1}=10$ and $x=10^{2}=100$. Domain requires $x>0$.\n\nShared recoveries for this log equations quadratic stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 79,
       "placeholder": false,
@@ -2657,7 +2657,7 @@
         "**D.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$a^{x}=32^{1.2}\\approx64$$\n\n$$b^{6}=2^{6}=64$$\n\nThe sides match within numerical tolerance.\n\nThe live claim says: Substituting the solved $x$ recovers equality of the two exponential sides.\n\nSo the statement is True.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$5 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{2}(32)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Change-of-base identity: $\\log_{2}(32)=\\ln a/\\ln b=5$. The equation $32^{x}=2^{6}$ becomes\n\n$$x\\log_{2} a=6\\implies x=\\frac{6}{\\log_{2}(32)}=1.2.$$\n\nSubstitution recovers $32^{x}=2^{6}$.",
+      "solution_overview": "Change-of-base identity: $\\log_{2}(32)=\\ln a/\\ln b=5$. The equation $32^{x}=2^{6}$ becomes\n\n$$x\\log_{2} a=6\\implies x=\\frac{6}{\\log_{2}(32)}=1.2.$$\n\nSubstitution recovers $32^{x}=2^{6}$.\n\nShared recoveries for this change of base solve stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 80,
       "placeholder": false,
@@ -2723,7 +2723,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$\\log_{2}(2)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: At $x=2$ the graph reads exactly $1$.\n\nSo the statement is True.",
         "**E.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$f(4)=\\log_{2}(2^{2})=2\\log_{2} 2=2f(2).$$\n\nNumerically $f(4)\\approx2$ and $2f(2)\\approx2$.\n\nThe live claim says: The vertical reading at $x=4$ is exactly twice the reading at $x=2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "The figure shows $f(x)=\\log_{2}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(2)=1$, and $f(2)\\approx1$. Because $\\log_{2}(x^{2})=2\\log_{2} x$, $f(4)=2f(2)\\approx2$.",
+      "solution_overview": "The figure shows $f(x)=\\log_{2}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(2)=1$, and $f(2)\\approx1$. Because $\\log_{2}(x^{2})=2\\log_{2} x$, $f(4)=2f(2)\\approx2$.\n\nShared recoveries for this graph of log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 82,
       "placeholder": false,
@@ -2790,7 +2790,7 @@
         "**D.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$\\log_{10}(10)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: At $x=10$ the graph reads exactly $1$.\n\nSo the statement is True.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$f(4)=\\log_{10}(2^{2})=2\\log_{10} 2=2f(2).$$\n\nNumerically $f(4)\\approx0.6021$ and $2f(2)\\approx0.6021$.\n\nThe live claim says: The vertical reading at $x=4$ is exactly twice the reading at $x=2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "The figure shows $f(x)=\\log_{10}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(10)=1$, and $f(2)\\approx0.301$. Because $\\log_{10}(x^{2})=2\\log_{10} x$, $f(4)=2f(2)\\approx0.6021$.",
+      "solution_overview": "The figure shows $f(x)=\\log_{10}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(10)=1$, and $f(2)\\approx0.301$. Because $\\log_{10}(x^{2})=2\\log_{10} x$, $f(4)=2f(2)\\approx0.6021$.\n\nShared recoveries for this graph of log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 84,
       "placeholder": false,
@@ -2823,7 +2823,7 @@
         "**D.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$a^{x}=27^{1.3333}\\approx81$$\n\n$$b^{4}=3^{4}=81$$\n\nThe sides match within numerical tolerance.\n\nThe live claim says: Substituting the solved $x$ recovers equality of the two exponential sides.\n\nSo the statement is True.",
         "**E.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$3 > 2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: $\\log_{3}(27)$ is strictly larger than $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Change-of-base identity: $\\log_{3}(27)=\\ln a/\\ln b=3$. The equation $27^{x}=3^{4}$ becomes\n\n$$x\\log_{3} a=4\\implies x=\\frac{4}{\\log_{3}(27)}=1.3333.$$\n\nSubstitution recovers $27^{x}=3^{4}$.",
+      "solution_overview": "Change-of-base identity: $\\log_{3}(27)=\\ln a/\\ln b=3$. The equation $27^{x}=3^{4}$ becomes\n\n$$x\\log_{3} a=4\\implies x=\\frac{4}{\\log_{3}(27)}=1.3333.$$\n\nSubstitution recovers $27^{x}=3^{4}$.\n\nShared recoveries for this change of base solve stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 85,
       "placeholder": false,
@@ -2856,7 +2856,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{3} z\\approx2\\neq 0.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Adding $\\log_{3} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$\\frac{xy}{z}=81$$\n\n$$81 > 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Product/quotient rule base $3$:\n\n$$\\log_{3}\\frac{xy}{z}=\\log_{3} x+\\log_{3} y-\\log_{3} z.$$\n\nWith $x=9$, $y=27$, $z=3$, both sides equal $4$.",
+      "solution_overview": "Product/quotient rule base $3$:\n\n$$\\log_{3}\\frac{xy}{z}=\\log_{3} x+\\log_{3} y-\\log_{3} z.$$\n\nWith $x=9$, $y=27$, $z=3$, both sides equal $4$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "2/5",
       "sort_order": 86,
       "placeholder": false,
@@ -2889,7 +2889,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$(\\log x+\\log y+\\log z)-(\\log x+\\log y-\\log z)=2\\log_{e} z\\approx3.583519\\neq 0.$$\n\nThe live claim says: Adding $\\log_{e} z$ instead of subtracting it changes the value.\n\nSo the statement is True.",
         "**E.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$\\frac{xy}{z}=1$$\n\n$$1 \\le 1$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The argument $xy/z$ is strictly larger than $1$.\n\nSo the statement is False."
       ],
-      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.",
+      "solution_overview": "Product/quotient rule base $e$:\n\n$$\\log_{e}\\frac{xy}{z}=\\log_{e} x+\\log_{e} y-\\log_{e} z.$$\n\nWith $x=2$, $y=3$, $z=6$, both sides equal $0$.\n\nShared recoveries for this log product quotient stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 87,
       "placeholder": false,
@@ -2922,7 +2922,7 @@
         "**D.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\nThe root is $x=499.5$, while the RHS is $3$. Equating them would skip the exponentiation step $2x+1=10^{3}$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The root equals the right-hand side $3$ itself.\n\nSo the statement is False.",
         "**E.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$499.5 > 3$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The recovered root is strictly larger than $3$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Solve $\\log_{10}(2x+1)=3$. Exponentiate base $10$:\n\n$$2x+1=10^{3}=1000$$\n\n$$x=\\frac{1000-1}{2}=499.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.",
+      "solution_overview": "Solve $\\log_{10}(2x+1)=3$. Exponentiate base $10$:\n\n$$2x+1=10^{3}=1000$$\n\n$$x=\\frac{1000-1}{2}=499.5.$$\n\nDomain requires $2x+1>0$, i.e. $x>-1/2$; the recovered root satisfies it.\n\nShared recoveries for this log equations linear stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 88,
       "placeholder": false,
@@ -2955,7 +2955,7 @@
         "**D.** → False\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nThe logarithm $\\log_{5} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is an admissible solution of the original logarithmic equation.\n\nSo the statement is False.",
         "**E.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nVieta: $u_1 u_2=c_0/c_2=6$.\n\n$$(2)(3)=6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The product of the logarithmic roots $u$ equals $6$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Set $u=\\log_{5} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=5^{2}=25$ and $x=5^{3}=125$. Domain requires $x>0$.",
+      "solution_overview": "Set $u=\\log_{5} x$. The equation becomes\n\n$$1u^{2}+(-5)u+(6)=0$$\n\nwith roots $u=2$ and $u=3$. Hence $x=5^{2}=25$ and $x=5^{3}=125$. Domain requires $x>0$.\n\nShared recoveries for this log equations quadratic stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 89,
       "placeholder": false,
@@ -2988,7 +2988,7 @@
         "**D.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nThe logarithm $\\log_{e} x$ is defined only for $x>0$. Therefore $x=0$ is not in the domain and cannot be a solution.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: $x=0$ is an admissible solution of the original logarithmic equation.\n\nSo the statement is False.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nVieta: $u_1 u_2=c_0/c_2=2$.\n\n$$(1)(2)=2$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The product of the logarithmic roots $u$ equals $2$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Set $u=\\log_{e} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=e^{1}=2.718282$ and $x=e^{2}=7.389056$. Domain requires $x>0$.",
+      "solution_overview": "Set $u=\\log_{e} x$. The equation becomes\n\n$$1u^{2}+(-3)u+(2)=0$$\n\nwith roots $u=1$ and $u=2$. Hence $x=e^{1}=2.718282$ and $x=e^{2}=7.389056$. Domain requires $x>0$.\n\nShared recoveries for this log equations quadratic stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "1/5",
       "sort_order": 90,
       "placeholder": false,
@@ -3056,7 +3056,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$\\frac{h_1}{h_2}=1000$$\n\n$$1000 > 100$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The first solution has more than $100$ times the hydrogen-ion concentration of the second.\n\nSo the statement is True.",
         "**E.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$\\mathrm{pH}_2=7$$\n\n$$7 > 6$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The second solution has pH not strictly above $6$.\n\nSo the statement is False."
       ],
-      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-04$ and $1e-07$,\n\n$$\\mathrm{pH}_1=4,\\quad \\mathrm{pH}_2=7.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=1000$. pH gap equals $\\log_{10}(h_1/h_2)=3$.",
+      "solution_overview": "pH $= -\\log_{10}[H^{+}]$. For $[H^{+}]=1e-04$ and $1e-07$,\n\n$$\\mathrm{pH}_1=4,\\quad \\mathrm{pH}_2=7.$$\n\nThe hydrogen-ion ratio is $h_1/h_2=1000$. pH gap equals $\\log_{10}(h_1/h_2)=3$.\n\nShared recoveries for this ph log concentration stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "3/5",
       "sort_order": 92,
       "placeholder": false,
@@ -3089,7 +3089,7 @@
         "**D.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$\\log_{2}(2)=1$$\n\nexactly, which is the standard normalisation of the logarithm.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: At $x=2$ the graph reads exactly $1$.\n\nSo the statement is True.",
         "**E.** → False\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$f(4)=\\log_{2}(2^{2})=2\\log_{2} 2=2f(2).$$\n\nNumerically $f(4)\\approx2$ and $2f(2)\\approx2$.\n\nThe live claim says: The vertical reading at $x=4$ is not exactly twice the reading at $x=2$.\n\nSo the statement is False."
       ],
-      "solution_overview": "The figure shows $f(x)=\\log_{2}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(2)=1$, and $f(2)\\approx1$. Because $\\log_{2}(x^{2})=2\\log_{2} x$, $f(4)=2f(2)\\approx2$.",
+      "solution_overview": "The figure shows $f(x)=\\log_{2}(x)$ for $x>0$. Key calibrations: $f(1)=0$, $f(2)=1$, and $f(2)\\approx1$. Because $\\log_{2}(x^{2})=2\\log_{2} x$, $f(4)=2f(2)\\approx2$.\n\nShared recoveries for this graph of log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "4/5",
       "sort_order": 93,
       "placeholder": false,
@@ -3190,7 +3190,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 96,
       "placeholder": false,
@@ -3223,7 +3223,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 97,
       "placeholder": false,
@@ -3257,7 +3257,7 @@
         "**D.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is False.",
         "**E.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 98,
       "placeholder": false,
@@ -3290,7 +3290,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx11.6336.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: That constant-$k_1$ formula differs from the true piecewise hitting time by more than $0.1$.\n\nSo the statement is True.",
         "**E.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$f(4)\\approx1221.4028 < 1800$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: At the switch the level is still not strictly below the target.\n\nSo the statement is False."
       ],
-      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.",
+      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.\n\nShared recoveries for this mixed piecewise log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 99,
       "placeholder": false,
@@ -3323,7 +3323,7 @@
         "**D.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx11.6336.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: That constant-$k_1$ formula differs from the true piecewise hitting time by more than $0.1$.\n\nSo the statement is True.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$f(4)\\approx1221.4028 < 1800$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: At the switch the level is still strictly below the target.\n\nSo the statement is True."
       ],
-      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.",
+      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.\n\nShared recoveries for this mixed piecewise log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 100,
       "placeholder": false,
@@ -3357,7 +3357,7 @@
         "**D.** → False\n\nTranslate the wording into a threshold comparison against the recovered level.\n\nHitting times $20.2733$ versus $20.4753$ are unequal.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Both models share the same hitting time for target $1500$.\n\nSo the statement is False.",
         "**E.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$P e^{k t}= 1000 e^{0.02\\cdot20.2733}\\approx1500.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Substituting the continuous hitting time recovers the target balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.",
+      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.\n\nShared recoveries for this mixed cont disc log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 101,
       "placeholder": false,
@@ -3390,7 +3390,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 102,
       "placeholder": false,
@@ -3423,7 +3423,7 @@
         "**D.** → False\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is False.",
         "**E.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 103,
       "placeholder": false,
@@ -3456,7 +3456,7 @@
         "**D.** → False\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is False.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 104,
       "placeholder": false,
@@ -3489,7 +3489,7 @@
         "**D.** → False\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\nElasticity $1.4$ and force $0.04$ are unrelated parameters from different models.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The demand elasticity equals the stock's continuous force $0.04$.\n\nSo the statement is False.",
         "**E.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$\\frac{1}{t}\\ln\\frac{N(10)}{N_0}=0.04.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The stock's force recovered from $N(10)/N_0$ equals $0.04$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.",
+      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.\n\nShared recoveries for this mixed elasticity growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 105,
       "placeholder": false,
@@ -3522,7 +3522,7 @@
         "**D.** → True\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx11.6336.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: That constant-$k_1$ formula differs from the true piecewise hitting time by more than $0.1$.\n\nSo the statement is True.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$f(4)\\approx1221.4028 < 1800$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: At the switch the level is still strictly below the target.\n\nSo the statement is True."
       ],
-      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.",
+      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.\n\nShared recoveries for this mixed piecewise log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 106,
       "placeholder": false,
@@ -3556,7 +3556,7 @@
         "**D.** → False\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is False.",
         "**E.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 107,
       "placeholder": false,
@@ -3622,7 +3622,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 109,
       "placeholder": false,
@@ -3689,7 +3689,7 @@
         "**D.** → False\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is False.",
         "**E.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 111,
       "placeholder": false,
@@ -3722,7 +3722,7 @@
         "**D.** → False\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\nHitting times $20.2733$ versus $20.4753$ are unequal.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Both models share the same hitting time for target $1500$.\n\nSo the statement is False.",
         "**E.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$P e^{k t}= 1000 e^{0.02\\cdot20.2733}\\approx1500.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Substituting the continuous hitting time recovers the target balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.",
+      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.\n\nShared recoveries for this mixed cont disc log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 112,
       "placeholder": false,
@@ -3789,7 +3789,7 @@
         "**D.** → False\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\nElasticity $1.4$ and force $0.04$ are unrelated parameters from different models.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The demand elasticity equals the stock's continuous force $0.04$.\n\nSo the statement is False.",
         "**E.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$\\frac{1}{t}\\ln\\frac{N(10)}{N_0}=0.04.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The stock's force recovered from $N(10)/N_0$ equals $0.04$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.",
+      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.\n\nShared recoveries for this mixed elasticity growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 114,
       "placeholder": false,
@@ -3822,7 +3822,7 @@
         "**D.** → True\n\nRewrite the claim as a one-line test against the recovered continuous or discrete path.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 115,
       "placeholder": false,
@@ -3856,7 +3856,7 @@
         "**D.** → False\n\nUse logs only if the claim forces a solve-for-time step; otherwise compare levels directly.\n\nHitting times $20.2733$ versus $20.4753$ are unequal.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Both models share the same hitting time for target $1500$.\n\nSo the statement is False.",
         "**E.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$P e^{k t}= 1000 e^{0.02\\cdot20.2733}\\approx1500.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Substituting the continuous hitting time recovers the target balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.",
+      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.\n\nShared recoveries for this mixed cont disc log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 116,
       "placeholder": false,
@@ -3889,7 +3889,7 @@
         "**D.** → True\n\nName the growth law that the claim depends on, then substitute the recovered values.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → False\n\nRead the recovered parameters from the overview and test only this comparison.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ exceeds twice the combined initial population.\n\nSo the statement is False."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 117,
       "placeholder": false,
@@ -3922,7 +3922,7 @@
         "**D.** → True\n\nRead the recovered parameters from the overview and test only this comparison.\n\nElasticity $1.4$ and force $0.04$ are unrelated parameters from different models.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: The demand elasticity does not equal the stock's continuous force $0.04$.\n\nSo the statement is True.",
         "**E.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$\\frac{1}{t}\\ln\\frac{N(10)}{N_0}=0.04.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The stock's force recovered from $N(10)/N_0$ equals $0.04$.\n\nSo the statement is True."
       ],
-      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.",
+      "solution_overview": "Demand $\\ln Q=5-1.4\\ln P$ at $P=3$ gives $Q\\approx31.8789$ with $|\\varepsilon|=1.4$. A separate stock $N(t)=200e^{0.04t}$ reaches $N(10)\\approx298.3649$.\n\nShared recoveries for this mixed elasticity growth stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 118,
       "placeholder": false,
@@ -3955,7 +3955,7 @@
         "**D.** → True\n\nConvert the claim into one equation in the shared model and solve it step by step.\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx11.6336.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: That constant-$k_1$ formula differs from the true piecewise hitting time by more than $0.1$.\n\nSo the statement is True.",
         "**E.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\n$$f(4)\\approx1221.4028 < 1800$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: At the switch the level is still strictly below the target.\n\nSo the statement is True."
       ],
-      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.",
+      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.\n\nShared recoveries for this mixed piecewise log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 119,
       "placeholder": false,
@@ -3988,7 +3988,7 @@
         "**D.** → True\n\nKeep the continuous-versus-discrete distinction explicit while checking the claim.\n\nHitting times $20.2733$ versus $20.4753$ are unequal.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Both models share the same hitting time for target $150$.\n\nSo the statement is True.",
         "**E.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$P e^{k t}= 1000 e^{0.02\\cdot20.2733}\\approx1500.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: Substituting the continuous hitting time recovers the target balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.",
+      "solution_overview": "Continuous $Pe^{kt}$ with $k=0.02$ hits $1500$ at $t=\\ln(1500/1000)/k\\approx20.2733$. Discrete $P(1.02)^{t}$ hits at $t=\\ln(1500/1000)/\\ln(1.02)\\approx20.4753$. Note $e^{k}\\approx1.020201\\neq1.02$.\n\nShared recoveries for this mixed cont disc log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 120,
       "placeholder": false,
@@ -4021,7 +4021,7 @@
         "**D.** → True\n\nTranslate the wording into a threshold comparison against the recovered level.\n\n$$0.03 > 0.01$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: The continuous force of $A$ exceeds that of $B$.\n\nSo the statement is True.",
         "**E.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$A+B\\approx4043.0381$$ vs $5000$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The combined population at $t=25$ does not exceed twice the combined initial population.\n\nSo the statement is True."
       ],
-      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.",
+      "solution_overview": "$A(t)=1000e^{0.03t}$, $B(t)=1500e^{0.01t}$. At $t=25$: $A\\approx2117$, $B\\approx1926.0381$. Meeting time $t^*=\\ln(B_0/A_0)/(k_A-k_B)\\approx20.2733$.\n\nShared recoveries for this mixed two populations stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 121,
       "placeholder": false,
@@ -4055,7 +4055,7 @@
         "**D.** → True\n\nIsolate the exact inequality the claim asserts, then plug in the recovered figures.\n\n$$3T_{1/2}=24$$ vs $t_{\\mathrm{goal}}\\approx6.7294$.\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict False.\n\n$$\\text{final comparison complete}$$\n\nThe live claim says: The recovered figures support: three half-lives elapse in less calendar time than the investment needs to hit its goal.\n\nSo the statement is True.",
         "**E.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\nBy construction of $t_{\\mathrm{goal}}$, $Pe^{rt}$ recovers $7000$.\n\n$$\\text{compare against the claim}$$\n\nWork from the recovered overview quantities only for this letter.\n\nThe live claim says: Substituting the investment hitting time recovers the goal balance.\n\nSo the statement is True."
       ],
-      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.",
+      "solution_overview": "Decay: half-life $8$ so $k_{\\mathrm{dec}}=\\ln 2/8\\approx0.086643$. After three half-lives ($t=24$), mass is $10$. Investment: $P=5000$ at force $r=0.05$ hits $7000$ at $t=\\ln(7000/5000)/r\\approx6.7294$.\n\nShared recoveries for this mixed decay invest stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 122,
       "placeholder": false,
@@ -4088,7 +4088,7 @@
         "**D.** → True\n\nWork letter-locally from the shared recoveries; do not rebuild the whole stem model.\n\n$$|t_{\\mathrm{hit}}-t_{k_1}|\\approx11.6336.$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: That constant-$k_1$ formula differs from the true piecewise hitting time by more than $0.1$.\n\nSo the statement is True.",
         "**E.** → True\n\nCheck units and the initial level first, then finish the claim's numerical comparison.\n\n$$f(4)\\approx1221.4028 < 1800$$\n\nReuse the overview's recovered values for the remaining arithmetic on this claim. Keep each substitution in its own display before locking verdict True.\n\n$$\\text{final comparison complete}$$.\n\nThe live claim says: At the switch the level is still strictly below the target.\n\nSo the statement is True."
       ],
-      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.",
+      "solution_overview": "Piecewise forces $0.05$ then $0.02$ after $t=4$. $f(4)\\approx1221.4028$. Hitting $1800$ at $t\\approx23.3893$ with path-average force $\\bar k\\approx0.025131$.\n\nShared recoveries for this mixed piecewise log stem live here once. Each letter A–E reuses those recovered levels, rates, or log identities and only adds the comparison the claim needs.",
       "difficulty_level": "5/5",
       "sort_order": 123,
       "placeholder": false,
