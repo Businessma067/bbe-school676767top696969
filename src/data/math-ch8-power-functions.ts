@@ -3703,7 +3703,7 @@ So the statement is True.`,
 
 Keep the stated domain in force while you evaluate the model.
 
-The overview already recovered the feed level where the licence binds:
+From the shared solve, the feed level where the licence binds:
 
 $$4 x^{\frac{4}{3}}=1024$$
 
@@ -3753,7 +3753,7 @@ Shipped output is $\\min(y(x),1024)$.`,
     tactical_explanations: [
       `**A.** → True
 
-Composition in the stated order cancels stage by stage. The overview already recovered the identity
+Composition in the stated order cancels stage by stage. From the shared solve, the identity
 
 $$g(f(x))=x$$
 
@@ -3773,7 +3773,7 @@ $$g(f(x))=x$$
 So the statement is False.`,
       `**C.** → False
 
-Composition in the stated order cancels stage by stage. The overview already recovered the identity
+Composition in the stated order cancels stage by stage. From the shared solve, the identity
 
 $$f(g(y))=y$$
 
@@ -3892,7 +3892,7 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
       `**D.** → True
 
-The overview already recovered the unique positive crossing of the two scores by setting them equal:
+From the shared solve, the unique positive crossing of the two scores by setting them equal:
 
 $$x=8$$
 

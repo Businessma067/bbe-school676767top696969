@@ -3814,7 +3814,7 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. The overview already recovered 
+Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve, 
 
 $$\\lvert A\\cup B\\rvert=31$$
 
