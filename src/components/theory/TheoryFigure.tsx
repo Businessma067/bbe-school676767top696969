@@ -81,6 +81,106 @@ function ChartFrame({ title, children, height = "h-[260px] sm:h-[300px]" }: { ti
   );
 }
 
+/** Recharts legend kept above the plot so it never collides with x-axis titles. */
+const LEGEND_TOP = {
+  verticalAlign: "top" as const,
+  align: "center" as const,
+  height: 28,
+  iconType: "line" as const,
+  wrapperStyle: { paddingBottom: 4, fontSize: 12 },
+};
+
+/** Plot margins when a top legend + bottom axis title are both present. */
+const MARGIN_LEGEND_AXIS = { top: 8, right: 20, left: 14, bottom: 36 };
+
+type HaloLabelProps = {
+  x?: number;
+  y?: number;
+  value?: string | number;
+  fill?: string;
+  dx?: number;
+  dy?: number;
+  fontSize?: number;
+};
+
+/** Point annotation with a white halo so curve strokes cannot cut through the text. */
+function ChartHaloLabel({
+  x = 0,
+  y = 0,
+  value,
+  fill = ACCENT,
+  dx = 0,
+  dy = -16,
+  fontSize = 11,
+}: HaloLabelProps) {
+  const text = String(value ?? "");
+  if (!text) return null;
+  const width = Math.max(36, text.length * 6.8 + 10);
+  const height = fontSize + 6;
+  return (
+    <g transform={`translate(${x + dx}, ${y + dy})`} pointerEvents="none">
+      <rect
+        x={-width / 2}
+        y={-height + 4}
+        width={width}
+        height={height}
+        rx={3}
+        fill="#fff"
+        fillOpacity={0.94}
+      />
+      <text
+        textAnchor="middle"
+        fill={fill}
+        fontSize={fontSize}
+        fontWeight={600}
+        dominantBaseline="alphabetic"
+      >
+        {text}
+      </text>
+    </g>
+  );
+}
+
+/** SVG text with the same white halo (for hand-drawn differentiation figures). */
+function SvgHaloText({
+  x,
+  y,
+  fill = INK,
+  fontSize = 12,
+  fontWeight,
+  anchor = "start",
+  children,
+}: {
+  x: number;
+  y: number;
+  fill?: string;
+  fontSize?: number;
+  fontWeight?: number | string;
+  anchor?: "start" | "middle" | "end";
+  children: string;
+}) {
+  const width = Math.max(28, children.length * (fontSize * 0.58) + 10);
+  const height = fontSize + 6;
+  const left =
+    anchor === "middle" ? x - width / 2 : anchor === "end" ? x - width : x;
+  return (
+    <g pointerEvents="none">
+      <rect
+        x={left}
+        y={y - fontSize + 1}
+        width={width}
+        height={height}
+        rx={3}
+        fill="#fff"
+        fillOpacity={0.94}
+      />
+      <text x={x} y={y} fontSize={fontSize} fontWeight={fontWeight} fill={fill} textAnchor={anchor}>
+        {children}
+      </text>
+    </g>
+  );
+}
+
 /**
  * Circular flow — strict orthogonal layout, rebuilt from scratch.
  *
@@ -260,8 +360,8 @@ function SupplyCurve() {
             label={{ value: "Price (EUR/h)", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
           />
           <Line type="linear" dataKey="p" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-          <ReferenceDot x={12} y={80} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "A", position: "top", fill: ACCENT }} />
-          <ReferenceDot x={34} y={190} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "B", position: "top", fill: ACCENT }} />
+          <ReferenceDot x={12} y={80} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={<ChartHaloLabel value="A" fill={ACCENT} dy={-14} />} />
+          <ReferenceDot x={34} y={190} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={<ChartHaloLabel value="B" fill={ACCENT} dy={-14} />} />
         </LineChart>
       </ResponsiveContainer>
     </ChartFrame>
@@ -310,16 +410,24 @@ function Equilibrium() {
     { q: 42, s: 230, d: 45 },
   ];
   return (
-    <ChartFrame title="Market equilibrium">
+    <ChartFrame title="Market equilibrium" height="h-[280px] sm:h-[320px]">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={supply} margin={{ top: 12, right: 16, left: 4, bottom: 16 }}>
+        <LineChart data={supply} margin={{ top: 8, right: 16, left: 8, bottom: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
           <XAxis dataKey="q" type="number" domain={[0, 45]} tick={{ fontSize: 11, fill: INK }} />
           <YAxis type="number" domain={[0, 250]} tick={{ fontSize: 11, fill: INK }} />
           <Line type="linear" dataKey="s" name="Supply" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
           <Line type="linear" dataKey="d" name="Demand" stroke={MUTED} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-          <ReferenceDot x={22} y={130} r={6} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "E", position: "top", fill: ACCENT }} />
-          <Legend />
+          <ReferenceDot
+            x={22}
+            y={130}
+            r={6}
+            fill="#fff"
+            stroke={ACCENT}
+            strokeWidth={2}
+            label={<ChartHaloLabel value="E" fill={ACCENT} dy={-14} />}
+          />
+          <Legend {...LEGEND_TOP} />
         </LineChart>
       </ResponsiveContainer>
     </ChartFrame>
@@ -744,16 +852,16 @@ function ProductLifeCycle() {
     { stage: "Decline", sales: 35, profit: 5 },
   ];
   return (
-    <ChartFrame title="Product life cycle — sales vs profit">
+    <ChartFrame title="Product life cycle — sales vs profit" height="h-[280px] sm:h-[320px]">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
+        <LineChart data={data} margin={{ top: 8, right: 12, left: 4, bottom: 12 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
           <XAxis dataKey="stage" tick={{ fontSize: 11, fill: ACCENT, fontWeight: 700 }} />
           <YAxis tick={{ fontSize: 11, fill: INK }} />
           <ReferenceLine y={0} stroke={MUTED} strokeDasharray="3 3" />
           <Line type="monotone" dataKey="sales" name="Sales" stroke={ACCENT} strokeWidth={2.5} dot={{ r: 3 }} isAnimationActive={false} />
           <Line type="monotone" dataKey="profit" name="Profit" stroke={MUTED} strokeWidth={2} strokeDasharray="4 3" dot={{ r: 3 }} isAnimationActive={false} />
-          <Legend />
+          <Legend {...LEGEND_TOP} />
         </LineChart>
       </ResponsiveContainer>
     </ChartFrame>
@@ -865,21 +973,29 @@ function BreakEven() {
     };
   });
   return (
-    <ChartFrame title="Break-even — North Harbor dock clocks (€90 price, €54 VC, €72k fixed)" height="h-[280px] sm:h-[320px]">
+    <ChartFrame title="Break-even — North Harbor dock clocks (€90 price, €54 VC, €72k fixed)" height="h-[300px] sm:h-[340px]">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 8, right: 12, left: 8, bottom: 16 }}>
+        <LineChart data={data} margin={MARGIN_LEGEND_AXIS}>
           <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
           <XAxis
             dataKey="q"
             tick={{ fontSize: 10, fill: INK }}
-            label={{ value: "Clocks sold", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+            label={{ value: "Clocks sold", position: "insideBottom", offset: -2, fontSize: 11, fill: MUTED }}
           />
           <YAxis tick={{ fontSize: 10, fill: INK }} tickFormatter={(v) => `${Math.round(v / 1000)}k`} />
           <Line type="linear" dataKey="fixed" name="Fixed costs" stroke="#A67C52" strokeWidth={1.5} strokeDasharray="4 3" dot={false} isAnimationActive={false} />
           <Line type="linear" dataKey="total" name="Total costs" stroke={MUTED} strokeWidth={2} dot={false} isAnimationActive={false} />
           <Line type="linear" dataKey="revenue" name="Revenues" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-          <ReferenceDot x={bep} y={price * bep} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} />
-          <Legend />
+          <ReferenceDot
+            x={bep}
+            y={price * bep}
+            r={5}
+            fill="#fff"
+            stroke={ACCENT}
+            strokeWidth={2}
+            label={<ChartHaloLabel value="BEP" fill={ACCENT} dx={28} dy={-8} />}
+          />
+          <Legend {...LEGEND_TOP} />
         </LineChart>
       </ResponsiveContainer>
       <Hint>Break-even at 2,000 clocks (contribution €36 covers €72,000 fixed costs).</Hint>
@@ -2007,24 +2123,24 @@ function DiffFprimeSign() {
       <text x="382" y="172" fontSize="12" fill={MUTED}>
         5
       </text>
-      {/* sign labels */}
-      <text x="78" y="128" fontSize="14" fontWeight="700" fill={MUTED}>
+      {/* sign labels — kept clear of the curve */}
+      <SvgHaloText x={88} y={118} fontSize={14} fontWeight={700} fill={MUTED} anchor="middle">
         −
-      </text>
-      <text x="250" y="55" fontSize="14" fontWeight="700" fill={ACCENT}>
+      </SvgHaloText>
+      <SvgHaloText x={255} y={42} fontSize={14} fontWeight={700} fill={ACCENT} anchor="middle">
         +
-      </text>
-      <text x="430" y="128" fontSize="14" fontWeight="700" fill={MUTED}>
+      </SvgHaloText>
+      <SvgHaloText x={435} y={118} fontSize={14} fontWeight={700} fill={MUTED} anchor="middle">
         −
-      </text>
-      <text x="145" y="250" fontSize="12" fill={INK}>
+      </SvgHaloText>
+      <SvgHaloText x={130} y={268} fontSize={12} fill={INK} anchor="middle">
         f has a local min
-      </text>
-      <text x="300" y="250" fontSize="12" fill={INK}>
+      </SvgHaloText>
+      <SvgHaloText x={390} y={268} fontSize={12} fill={INK} anchor="middle">
         f has a local max
-      </text>
-      <line x1="130" y1="230" x2="130" y2="160" stroke={MUTED} strokeDasharray="3 3" />
-      <line x1="390" y1="230" x2="390" y2="160" stroke={MUTED} strokeDasharray="3 3" />
+      </SvgHaloText>
+      <line x1="130" y1="248" x2="130" y2="160" stroke={MUTED} strokeDasharray="3 3" />
+      <line x1="390" y1="248" x2="390" y2="160" stroke={MUTED} strokeDasharray="3 3" />
     </DiffAxes>
   );
 }
@@ -2038,15 +2154,15 @@ function DiffFExtrema() {
       <circle cx="180" cy="60" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
       <circle cx="300" cy="200" r="5" fill="#fff" stroke={ACCENT} strokeWidth="2" />
       <circle cx="240" cy="130" r="4" fill={MUTED} />
-      <text x="160" y="48" fontSize="12" fill={INK}>
+      <SvgHaloText x={180} y={42} fontSize={12} fill={INK} anchor="middle">
         local max
-      </text>
-      <text x="268" y="228" fontSize="12" fill={INK}>
+      </SvgHaloText>
+      <SvgHaloText x={300} y={236} fontSize={12} fill={INK} anchor="middle">
         local min
-      </text>
-      <text x="248" y="120" fontSize="11" fill={MUTED}>
+      </SvgHaloText>
+      <SvgHaloText x={268} y={112} fontSize={11} fill={MUTED} anchor="start">
         inflection
-      </text>
+      </SvgHaloText>
       <text x="175" y="280" fontSize="12" fill={MUTED}>
         a
       </text>
@@ -2065,28 +2181,36 @@ function DiffMcMr() {
   });
   return (
     <>
-      <ChartFrame title="Profit rule on a figure — MR against MC" height="h-[280px] sm:h-[320px]">
+      <ChartFrame title="Profit rule on a figure — MR against MC" height="h-[300px] sm:h-[340px]">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 12, right: 16, left: 8, bottom: 20 }}>
+          <LineChart data={data} margin={MARGIN_LEGEND_AXIS}>
             <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
             <XAxis
               dataKey="q"
               type="number"
               domain={[0, 12]}
               tick={{ fontSize: 11, fill: INK }}
-              label={{ value: "Output Q", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+              label={{ value: "Output Q", position: "insideBottom", offset: -2, fontSize: 11, fill: MUTED }}
             />
             <YAxis
               type="number"
               domain={[0, 40]}
               tick={{ fontSize: 11, fill: INK }}
-              label={{ value: "€ / unit", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
+              label={{ value: "€ / unit", angle: -90, position: "insideLeft", offset: 8, fontSize: 11, fill: MUTED }}
             />
             <ReferenceLine y={0} stroke={MUTED} />
             <Line type="monotone" dataKey="mr" name="MR" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
             <Line type="monotone" dataKey="mc" name="MC" stroke={MUTED} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-            <ReferenceDot x={8} y={18.4} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "MR = MC", position: "top", fill: ACCENT, fontSize: 11 }} />
-            <Legend />
+            <ReferenceDot
+              x={8}
+              y={18.4}
+              r={5}
+              fill="#fff"
+              stroke={ACCENT}
+              strokeWidth={2}
+              label={<ChartHaloLabel value="MR = MC" fill={ACCENT} dx={42} dy={-6} />}
+            />
+            <Legend {...LEGEND_TOP} />
           </LineChart>
         </ResponsiveContainer>
       </ChartFrame>
@@ -2106,27 +2230,35 @@ function DiffAcMc() {
   // AC min near where MC = AC: 40/q + 2 + 0.35q = 2 + 0.7q ⇒ 40/q = 0.35q ⇒ q² = 40/0.35 ≈ 114 ⇒ q ≈ 10.7
   return (
     <>
-      <ChartFrame title="Average cost against marginal cost" height="h-[280px] sm:h-[320px]">
+      <ChartFrame title="Average cost against marginal cost" height="h-[300px] sm:h-[340px]">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 12, right: 16, left: 8, bottom: 20 }}>
+          <LineChart data={data} margin={MARGIN_LEGEND_AXIS}>
             <CartesianGrid strokeDasharray="3 3" stroke={GRID} />
             <XAxis
               dataKey="q"
               type="number"
               domain={[2, 16]}
               tick={{ fontSize: 11, fill: INK }}
-              label={{ value: "Output Q", position: "insideBottom", offset: -6, fontSize: 11, fill: MUTED }}
+              label={{ value: "Output Q", position: "insideBottom", offset: -2, fontSize: 11, fill: MUTED }}
             />
             <YAxis
               type="number"
               domain={[0, 28]}
               tick={{ fontSize: 11, fill: INK }}
-              label={{ value: "€ / unit", angle: -90, position: "insideLeft", fontSize: 11, fill: MUTED }}
+              label={{ value: "€ / unit", angle: -90, position: "insideLeft", offset: 8, fontSize: 11, fill: MUTED }}
             />
             <Line type="monotone" dataKey="ac" name="AC" stroke={ACCENT} strokeWidth={2.5} dot={false} isAnimationActive={false} />
             <Line type="monotone" dataKey="mc" name="MC" stroke={MUTED} strokeWidth={2.5} dot={false} isAnimationActive={false} />
-            <ReferenceDot x={10.7} y={9.5} r={5} fill="#fff" stroke={ACCENT} strokeWidth={2} label={{ value: "AC min", position: "top", fill: ACCENT, fontSize: 11 }} />
-            <Legend />
+            <ReferenceDot
+              x={10.7}
+              y={9.5}
+              r={5}
+              fill="#fff"
+              stroke={ACCENT}
+              strokeWidth={2}
+              label={<ChartHaloLabel value="AC min" fill={ACCENT} dx={0} dy={-18} />}
+            />
+            <Legend {...LEGEND_TOP} />
           </LineChart>
         </ResponsiveContainer>
       </ChartFrame>
