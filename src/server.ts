@@ -78,7 +78,10 @@ export default {
     }
 
     const url = new URL(request.url);
-    if (url.pathname === "/sitemap.xml" && (request.method === "GET" || request.method === "HEAD")) {
+    if (
+      (url.pathname === "/sitemap.xml" || url.pathname === "/pages-sitemap.xml") &&
+      (request.method === "GET" || request.method === "HEAD")
+    ) {
       return sitemapXmlResponse(request.method);
     }
 

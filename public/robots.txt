@@ -12,4 +12,5 @@ Disallow: /forgot-password
 Disallow: /confirm-email
 Disallow: /api/
 
+Sitemap: https://bbe-school.com/pages-sitemap.xml
 Sitemap: https://bbe-school.com/sitemap.xml

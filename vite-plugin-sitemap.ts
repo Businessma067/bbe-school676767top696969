@@ -6,9 +6,12 @@ import { renderSitemapXml } from "./src/lib/sitemap";
 /** Writes the generated sitemap where the host actually serves `/sitemap.xml` from. */
 export function writeSitemapXml(cwd = process.cwd()): string {
   const xml = renderSitemapXml();
-  const dest = resolve(cwd, "public/sitemap.xml");
-  mkdirSync(dirname(dest), { recursive: true });
-  writeFileSync(dest, xml);
+  mkdirSync(resolve(cwd, "public"), { recursive: true });
+  for (const name of ["sitemap.xml", "pages-sitemap.xml"]) {
+    const dest = resolve(cwd, "public", name);
+    mkdirSync(dirname(dest), { recursive: true });
+    writeFileSync(dest, xml);
+  }
   return xml;
 }
 
@@ -26,11 +29,9 @@ export function sitemapPlugin(): Plugin {
       writeSitemapXml();
     },
     generateBundle() {
-      this.emitFile({
-        type: "asset",
-        fileName: "sitemap.xml",
-        source: renderSitemapXml(),
-      });
+      const xml = renderSitemapXml();
+      this.emitFile({ type: "asset", fileName: "sitemap.xml", source: xml });
+      this.emitFile({ type: "asset", fileName: "pages-sitemap.xml", source: xml });
     },
   };
 }
