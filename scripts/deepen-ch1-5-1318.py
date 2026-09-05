@@ -283,9 +283,12 @@ def vary_formula_opener(body: str, letter_idx: int) -> str:
 
 
 def deepen_thin_body(body: str, truth: bool, letter_idx: int) -> str:
-    """Add missing teaching steps for short letters without stub padding."""
+    """Add missing teaching steps for short letters without stub padding.
+
+    DISABLED_TIP_PAD: do not prepend generic tip openers; pass2 handles depth.
+    """
     body = strip_closer(body).strip()
-    if len(body) >= 240:
+    if len(body) >= 180:
         return body
 
     # Pattern: recovered display + claim asserts display + agree/disagree
@@ -331,19 +334,7 @@ def deepen_thin_body(body: str, truth: bool, letter_idx: int) -> str:
         )
         return f"{head}\n\n{math}\n\n{compare}"
 
-    # Pattern: short exponent / identity checks
-    if body.count("$$") >= 1 and len(body) < 220:
-        tips = [
-            "Write the general identity, insert the claim's symbols, and simplify before comparing.",
-            "Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.",
-            "Apply the relevant algebra rule, keep one simplification per display, then match the claim.",
-            "State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.",
-            "Expand or simplify with the governing identity, then match the printed claim.",
-        ]
-        tip = tips[letter_idx % len(tips)]
-        if not body.lower().startswith(("write the", "start from", "apply the", "state the", "expand")):
-            return f"{tip}\n\n{body}"
-
+    # Tip prepending removed — use deepen-ch1-5-1318-pass2.py for depth.
     return body
 
 

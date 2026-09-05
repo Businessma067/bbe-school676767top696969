@@ -167,7 +167,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered
 
@@ -199,7 +199,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Cardinality counts distinct members. The overview recovered
 
@@ -484,7 +484,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Form each leftover pile, then take the union:
 
@@ -501,7 +501,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The leftover piles are $\\{1,7\\}$ and $\\{4,6\\}$. Their intersection is
 
@@ -661,7 +661,7 @@ That matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Only-Mathematics peels the overlap out of the Mathematics total:
 
@@ -687,7 +687,7 @@ Thirteen students take Economics but not Mathematics, so $E\\not\\subseteq M$.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Disjointness requires an empty intersection. The stem gives a positive overlap:
 
@@ -756,7 +756,7 @@ That matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The triple intersection sits inside every pairwise intersection. From $A\\cap B=\\emptyset$,
 
@@ -819,7 +819,7 @@ Pairwise disjointness means every pair of blocks shares nothing. A partition of 
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The complement of $X$ in $U=\\{1,2,\\ldots,12\\}$ is everyone $X$ leaves out. With
 
@@ -877,7 +877,7 @@ The other side $X^{c}\\cup Y^{c}$ yields the same roster. So the identity holds.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Form the union of complements:
 
@@ -935,7 +935,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 De Morgan's law for intersection says
 
@@ -963,7 +963,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 First form the intersection:
 
@@ -980,7 +980,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Form the union of complements from
 
@@ -1104,7 +1104,7 @@ Block count is free: $\\{A\\}$ is a $1$-block partition, and $n$ singletons is a
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Each of the five elements may be included or omitted independently when building a subset:
 
@@ -1132,7 +1132,7 @@ So there are $31$ proper subsets, matching the claim.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Four-element subsets are counted by the binomial coefficient:
 
@@ -1160,7 +1160,7 @@ So there are $31$ nonempty subsets, matching the claim.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Even-cardinality subsets for $|A|=5$:
 
@@ -1233,7 +1233,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Check $10$ against both intervals. For $A=(0,10]$:
 
@@ -1263,7 +1263,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The implication $x\\in A\\Rightarrow x\\in B$ fails at any point of $A$ outside $B$. Take $x=1$:
 
@@ -1302,7 +1302,7 @@ Intersection takes the tighter bounds. Union runs from the leftmost open end to 
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Three-set inclusion-exclusion:
 
@@ -1439,7 +1439,7 @@ Record the verdict against the live claim after the calculation above is complet
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Many infinite subsets of $N$ are proper. The evens
 
@@ -1500,7 +1500,7 @@ even though $6\\in A$. The singleton is a subset of $A$, hence an element of $\\
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 A two-element set is a subset when each of its members sits in the larger set. Against
 
@@ -1519,7 +1519,7 @@ $$\\{6,8\\}\\subseteq A$$.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Subsethood asks whether every member of the left-hand set sits in $A$. The empty set has no members at all, so there is no witness that could sit outside $A$:
 
@@ -1530,7 +1530,7 @@ That is the claimed inclusion.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Total subsets of a six-element set:
 
@@ -1582,7 +1582,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered
 
@@ -1614,7 +1614,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Two distinct integer roots were recovered:
 
@@ -1631,7 +1631,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Restrict to natural numbers with the extra filter $x>2$. The quadratic candidates are $2$ and $3$; only $3$ satisfies $x>2$:
 
@@ -1674,7 +1674,7 @@ $B$ is given as $\\{2,3\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Four letters mean each is in or out independently when building a subset:
 
@@ -1689,7 +1689,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 A set belongs to the power set precisely when it is a subset of $D=\\{w,x,y,z\\}$. Check both letters:
 
@@ -1708,7 +1708,7 @@ $$\\{w,x\\}\\in\\mathcal{P}(D)$$.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Three-element subsets of a four-element set are counted by
 
@@ -1721,7 +1721,7 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Every set is a subset of itself:
 
@@ -1736,7 +1736,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Two-element subsets of a four-element set:
 
@@ -1818,7 +1818,7 @@ so $F\\not\\subseteq E$.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Inclusion is reflexive. Every member of $E$ sits in $E$ by definition of the same set:
 
@@ -1831,7 +1831,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Proper inclusion also needs inequality of the two sets:
 
@@ -1879,7 +1879,7 @@ All three are empty, so the blocks are pairwise disjoint.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The union of the blocks of $\\mathcal{S}$ is formed one pair at a time:
 
@@ -1961,7 +1961,7 @@ Record the verdict against the live claim after the calculation above is complet
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Equality fails because odd naturals sit in $\\mathbb{N}$ but not in $H$:
 
@@ -1976,7 +1976,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Define $f:\\mathbb{N}\\to H$ by $f(n)=2n$. Injectivity:
 
@@ -2030,7 +2030,7 @@ sends each natural to an even. Odd $1$ sits in $\\mathbb{N}$ and misses $H$.`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The roster lists two objects:
 
@@ -2045,7 +2045,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The second listed member of
 
@@ -2062,7 +2062,7 @@ That matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Subsethood asks whether every member of $\\{a\\}$ sits in $K=\\{a,\\{a\\}\\}$. The only member is $a$, and $a\\in K$, so
 
@@ -2073,7 +2073,7 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The singleton $\\{\\{a\\}\\}$ has one member, namely the set $\\{a\\}$. That member sits in $K$:
 
@@ -2086,7 +2086,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The two listed objects $a$ and $\\{a\\}$ are distinct — an element versus a set containing it:
 
@@ -2244,7 +2244,7 @@ Record the verdict against the live claim after the calculation above is complet
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Size ignores order. The reverse product is
 
@@ -2429,7 +2429,7 @@ Joining the leftovers gives $A\\triangle B=\\{1,2,5,6\\}$.`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview already counted 
 
@@ -2546,7 +2546,7 @@ Take $T=-5$: not frost-safe ($25\\ge 16$) and not irrigating ($-5<-1$). The whol
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Frost-safe yet dry is the leftover 
 
@@ -2658,7 +2658,7 @@ A-only is $\\lvert A\\rvert-\\lvert A\\cap B\\rvert$. Neither is the survey size
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Union keeps every member of each input, repeats written once. From $A$ keep $1,2,3,4$; from $B$ add the newcomers $5,6$:
 
@@ -2671,7 +2671,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Intersection keeps only the shared numbers. The overview's scan left $3$ and $4$ in both lists, while $1,2$ miss $B$ and $5,6$ miss $A$, so
 
@@ -2706,7 +2706,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Disjointness means the intersection is empty. None of $7,8,9$ appears in $\\{1,2,3,4\\}$, so
 
@@ -2789,7 +2789,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Disjointness means the intersection is empty. Every member of $A$ is at least $10$, while $C$ stops at $3$, so
 
@@ -2828,7 +2828,7 @@ Intersection keeps numbers tagged in both $A$ and $B$. Union keeps every tagged 
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Putting $A$ and $B$ together keeps $a,b,c,d$ from $A$ and the newcomer $e$ from $B$. The shared $c$ and $d$ are not written twice:
 
@@ -2850,7 +2850,7 @@ The claimed overlap matches.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Difference $A\\setminus B$ keeps $A$'s private letters. Letters $c$ and $d$ sit in $B$, so they leave:
 
@@ -2878,7 +2878,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $C=\\{x,y\\}$ shares no letter with $A=\\{a,b,c,d\\}$, so
 
@@ -3002,7 +3002,7 @@ $$A\\cap B=\\{4,5\\},\\qquad A^c=\\{6,7,8,9,10\\},\\qquad B^c=\\{1,2,3,9,10\\}.$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Odds union evens reconstructs all of $U$, so $A\\cup B=U$ and
 
@@ -3024,7 +3024,7 @@ The two sides agree.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$A\\cap B=\\emptyset$$
 
@@ -3039,7 +3039,7 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Deleting the odds from $U$ leaves the evens, so
 
@@ -3231,7 +3231,7 @@ Turning the grid on its side produces $B\\times A$, same count, different member
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview already counted 
 
@@ -3263,7 +3263,7 @@ $A\\times B$ is letter-first; $B\\times A$ is number-first. Witness: $(m,1)$ is 
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The product rule is commutative as a count:
 
@@ -3390,7 +3390,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 None of $B$'s odds is even, so nothing is deleted:
 
@@ -3462,7 +3462,7 @@ Disjointness makes the subtractions do nothing: there is no shared member to del
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Adding $22+15$ counts the six two-game players twice. Subtracting once restores a single copy. From the shared solve, 
 
@@ -3475,7 +3475,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Chess-only is the chess headline minus the overlap:
 
@@ -3488,7 +3488,7 @@ That matches the claim.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Neither is the club total minus the union. The overview recovered the union $31$, so
 
@@ -3573,7 +3573,7 @@ Compare the computed value with the claim ($22$. Matching that count,). The two 
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Students in neither language are the cohort total minus the union:
 
@@ -3644,7 +3644,7 @@ Spanish-only is $|A|-|A\\cap B|$. French-only is $|B|-|A\\cap B|$. Neither is th
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Two-set inclusion-exclusion recovers the union:
 
@@ -3674,7 +3674,7 @@ Compare the computed value with the claim ($15$. Matching that count,). The two 
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Members using neither facility are the gym total minus the union:
 
@@ -3788,7 +3788,7 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The triple group is a subset of each pair, so its size cannot exceed any pairwise size:
 
@@ -3966,7 +3966,7 @@ The quoted sentence is that negation.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The converse says every odd number greater than $2$ is prime. Test $9$:
 
@@ -4452,7 +4452,7 @@ That matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Because $x$ is announced first, $y$ may be built from it. The recipe $y=x+1$ works for every $x>0$:
 
@@ -4465,7 +4465,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Now a single $y$ must be fixed first and then outrank every positive $x$. Whatever $y$ is offered,
 
@@ -5687,7 +5687,7 @@ which is exactly $P(k+1)$. So the inductive step holds.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Substitute $n=10$ into the closed form:
 
@@ -5747,7 +5747,7 @@ The original can be true while the proposed wording is false.
 So the statement is False.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 “A sufficient condition for unemployment to decrease is that inflation increases” makes $P$ sufficient for $Q$:
 
@@ -5781,7 +5781,7 @@ Because the truth values can differ, the two claims are not equivalent.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 “If unemployment does not decrease, then inflation does not increase” is
 
@@ -5794,7 +5794,7 @@ That matches the claim.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 “A necessary condition for inflation to increase is that unemployment decreases” makes $Q$ necessary for $P$, which is
 
@@ -6206,7 +6206,7 @@ The waiver alone cannot overcome a failed GPA requirement, so it is not sufficie
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 If GPA is below $3.5$, then $G$ is false. For any $C$ and $W$,
 
@@ -6541,7 +6541,7 @@ to the conclusion $P$. That form is affirming the consequent. The premise licens
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Both $\\sqrt{2}$ and $-\\sqrt{2}$ are irrational, and
 
@@ -7207,7 +7207,7 @@ Sam received a birthday point without ordering dessert, so $P$ is false and $Q$ 
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 For $m=4$,
 
@@ -7220,7 +7220,7 @@ That matches the claim.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 For $m=3$,
 
@@ -7988,7 +7988,7 @@ In the reported game Player X scored $35$ and the team lost $90$-$95$.`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The professor applied a curve, so the live cutoff is $s \\ge 60$. Student W scored $65$, and
 
@@ -8173,7 +8173,7 @@ That conflicts with the claim.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 K still cancelled $2$ days out, so the late branch still applies. Change only the usage to $5\\%$. Then
 
@@ -8563,7 +8563,7 @@ which reverses the original arrow and is its converse. It is not a proof by cont
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The given square $4321^{2} = 18{,}671{,}041$ is odd. An odd square forces an odd ID. Direct check:
 

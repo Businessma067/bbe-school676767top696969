@@ -195,7 +195,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 The number of compounding periods is frequency times holding time:
 
@@ -911,7 +911,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 The number of compounding periods is frequency times holding time:
 
@@ -949,7 +949,7 @@ Compare the computed value with the claim (\\$7,277.60). The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Doubling would require a growth factor of $2$. Monthly compounding for ten years gives
 
@@ -1061,7 +1061,7 @@ The claim needs $r_{\\mathrm{mon}} > r_{\\mathrm{q}}$. We have $5.89\\% < 5.92\\
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Dollar growth relative to the opening investment is
 
@@ -1247,7 +1247,7 @@ Compare the computed value with the claim (\\$30,715.86). The two sides agree.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The required deposit is
 
@@ -1962,7 +1962,7 @@ $$G = (1.011)^{36} \\approx 1.482660$$
 
 Rounded to four decimals this is $1.4827$.
 
-The claim names 1.4827. The computed figure and the claim agree.
+The computed value is approximately 1.4827, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -1978,7 +1978,7 @@ Compare the computed value with the claim (\\$40,467.83). The two sides agree.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The required original investment is
 
@@ -2341,7 +2341,7 @@ Compare the computed value with the claim (\\$5.72). The two sides agree.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The one-year continuous growth factor is
 
@@ -2535,7 +2535,7 @@ The claim needs $R_{18} > 2R$. We have $19.72\\% > 18.84\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At the $18\\%$ continuous quote,
 
@@ -2700,7 +2700,7 @@ The claim needs $4{,}372.65 > 4{,}573.91$. We have $4{,}372.65 < 4{,}573.91$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Each year multiplies the current balance by the same continuous factor
 
@@ -2859,9 +2859,7 @@ $$
 t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60
 $$
 
-The claim names 12.60. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 12.60, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -2879,7 +2877,7 @@ Compare the computed value with the claim (approximately \\$36,000.00). The two 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At an $11\\%$ continuous rate the doubling time is
 
@@ -2965,7 +2963,7 @@ Compare the computed value with the claim (approximately \\$48,000.00). The two 
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Halving the depreciation rate to $9\\%$ doubles the isolated wait:
 
@@ -3543,7 +3541,7 @@ The claim needs $A(10)>B(10)$. We have $74{,}591.23 < 75{,}298.55$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Solve the growth equation for time by taking logarithms. With periodic rate $i$ and target multiple $M$:
 
@@ -3816,7 +3814,7 @@ Compare the computed value with the claim (about $7.43\\%$). The two sides agree
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of the two phase rates is
 
@@ -3885,7 +3883,7 @@ $$
 \\delta = \\frac{1}{6}\\ln\\bigl(\\frac{85{,}000}{32{,}000}\\bigr) \\approx 0.1628 = 16.28\\%
 $$
 
-The claim names 16.28\%. The computed figure and the claim agree.
+The computed value is approximately 16.28%, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -3903,7 +3901,7 @@ The claim is approximately \\$36,000.00. We have $34{,}558.42 \\ne 36{,}000.00$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 After six years the two remaining values are
 
@@ -3996,7 +3994,7 @@ The quadrupling time is about $21.33$ years and equals twice the doubling time.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Quadrupling the \\$12,000 deposit gives
 
@@ -4165,9 +4163,7 @@ $$
 (1.05)^{-1} = \\frac{1}{1.05} \\approx 0.9524
 $$
 
-The claim names 0.9524. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.9524, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4184,9 +4180,7 @@ $$
 \\mathrm{PDV} = \\frac{8{,}000}{1.05} \\approx 7{,}619.05
 $$
 
-The claim names \$8,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$7,619.05, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -4266,9 +4260,7 @@ $$
 e^{-0.18} \\approx 0.8353
 $$
 
-The claim names 0.8353. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.8353, which matches the claim.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -4287,14 +4279,12 @@ $$
 \\mathrm{PDV} = 12{,}000e^{-0.18} \\approx 10{,}023.24
 $$
 
-The claim names \$12,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$10,023.24, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 \\mathrm{PDV}\\approx 10{,}023.24
@@ -4381,9 +4371,7 @@ $$
 (1.07)^{8} \\approx 1.718186, \\qquad (1.07)^{-8} \\approx 0.5820
 $$
 
-The claim names 0.5820. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.5820, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4400,14 +4388,12 @@ $$
 \\mathrm{PDV}_{\\mathrm{ann}} = 45{,}000 \\times (1.07)^{-8} \\approx 26{,}190.41
 $$
 
-The claim names \$26,190.41. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$26,190.41, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 \\mathrm{PDV}_{\\mathrm{cont}}\\approx 25{,}704.41
@@ -4478,7 +4464,7 @@ $$\\mathrm{PDV}_{\\mathrm{cont}} = 45{,}000e^{-0.56} \\approx 25{,}704.41$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 $$
 e^{-0.225}\\approx 0.7985
@@ -4501,14 +4487,12 @@ $$
 A = 150{,}000e^{-0.225} \\approx 119{,}777.40
 $$
 
-The claim names \$119,777.40. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$119,777.40, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 A deposit of \\$110,000 grows by the reciprocal factor $e^{0.225}$:
 
@@ -4587,7 +4571,7 @@ $$
 \\frac{K}{\\mathrm{PDV}} = \\frac{25{,}000}{18{,}500} \\approx 1.3514
 $$
 
-The claim names 1.3514. The computed figure and the claim agree.
+The computed value is approximately 1.3514, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4604,14 +4588,12 @@ $$
 t = \\frac{0.3011}{0.05827} \\approx 5.17
 $$
 
-The claim names 5.17. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 5.17, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At a purchase price of \\$20,000,
 
@@ -4622,7 +4604,7 @@ The overview recovered $t\\approx 5.17$ at \\$18,500. We have $3.83<5.17$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
@@ -4633,7 +4615,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $$
 t_{\\mathrm{cont}}\\approx 5.02
@@ -4698,9 +4680,7 @@ $$
 \\frac{\\mathrm{PDV}}{K} = \\frac{27{,}000}{60{,}000} = 0.45
 $$
 
-The claim names 0.45. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.45, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4717,9 +4697,7 @@ $$
 r = -\\frac{\\ln(0.45)}{12} = \\frac{0.798508}{12} \\approx 0.0665 = 6.65\\%
 $$
 
-The claim names 6.65\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 6.65%, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4797,9 +4775,7 @@ $$
 \\mathrm{PDV}_1 = \\frac{40{,}000}{(1.05)^{2}} = \\frac{40{,}000}{1.1025} \\approx 36{,}281.18
 $$
 
-The claim names \$40,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$36,281.18, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -4816,9 +4792,7 @@ $$
 \\mathrm{PDV}_2 = \\frac{65{,}000}{(1.05)^{5}} \\approx \\frac{65{,}000}{1.276282} \\approx 50{,}930.87
 $$
 
-The claim names \$65,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$50,930.87, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -4835,14 +4809,12 @@ $$
 \\mathrm{PDV} = 36{,}281.18+50{,}930.87 \\approx 87{,}212.05
 $$
 
-The claim names \$87,212.05. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$87,212.05, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_2\\approx 50{,}930.87
@@ -4916,14 +4888,12 @@ $$
 \\mathrm{PDV}_B = \\frac{25{,}500}{1.191016} \\approx 21{,}410.30
 $$
 
-The claim names \$21,410.30. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$21,410.30, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Option A is worth \$22,000 today. The overview recovered $\mathrm{PDV}_B \approx 21{,}410.30$. Comparing the two present values:
 
@@ -4945,7 +4915,7 @@ Compare the computed value with the claim (\\$22,780.00). The two sides do not a
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_B\\approx 21{,}410.30
@@ -5017,9 +4987,7 @@ $$
 10{,}000=400(t+2), \\qquad t+2=\\frac{2}{r}=25, \\qquad t^{*}=23
 $$
 
-The claim names 23. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 23, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -5033,7 +5001,7 @@ The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equa
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 f(23)\\approx 496{,}304.46
@@ -5044,7 +5012,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 t^{*}=\\frac{2}{r}-2
@@ -5055,7 +5023,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At $t=25$,
 
@@ -5116,9 +5084,7 @@ $$
 \\mathrm{PDV}_1 = 18{,}000e^{-0.22} \\approx 14{,}445.34
 $$
 
-The claim names \$18,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$14,445.34, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -5135,9 +5101,7 @@ $$
 \\mathrm{PDV}_2 = 30{,}000e^{-0.495} \\approx 18{,}287.13
 $$
 
-The claim names \$30,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$18,287.13, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -5154,14 +5118,12 @@ $$
 \\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47
 $$
 
-The claim names \$32,732.47. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$32,732.47, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PDV}_2\\approx 18{,}287.13
@@ -5223,7 +5185,7 @@ $$\\mathrm{PDV} = 14{,}445.34+18{,}287.13 \\approx 32{,}732.47$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 $$
 \\mathrm{PDV}\\approx 35{,}234.40
@@ -5234,7 +5196,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 r_a\\approx 5.13\\%
@@ -5245,7 +5207,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 r_a\\approx 5.13\\%
@@ -5328,7 +5290,7 @@ $$
 \\mathrm{PV}_1 = \\frac{42{,}000}{(1.06)^{3}} = \\frac{42{,}000}{1.191016} \\approx 35{,}264.01
 $$
 
-The claim names \$42,000. The computed figure and the claim agree.
+The computed value is approximately \$35,264.01, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -5345,9 +5307,7 @@ $$
 \\mathrm{PV}_2 = 100{,}000-35{,}264.01 = 64{,}735.99
 $$
 
-The claim names \$64,735.99. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$64,735.99, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -5364,7 +5324,7 @@ $$
 K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24
 $$
 
-The claim names \$91,829.24. The computed figure and the claim agree.
+The computed value is approximately \$91,829.24, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -5427,7 +5387,7 @@ $$K_2 = 64{,}735.99 \\times 1.418519 \\approx 91{,}829.24$$`,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 $$
 e^{-0.26}\\approx 0.7711
@@ -5438,7 +5398,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 K\\approx 45{,}392.55
@@ -5449,7 +5409,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered $K\\approx 45{,}392.55$. The excess over the immediate option is
 
@@ -5460,7 +5420,7 @@ The claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At $r=0.09$ the four-year factor changes:
 
@@ -5527,9 +5487,7 @@ $$
 t^{*}=0, \\qquad f(0)=P(0)=40{,}000
 $$
 
-The claim names \$40,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$40,000, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -5543,7 +5501,7 @@ Compare the computed value with the claim (\\$29,632.73). The two sides agree.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 f(t)=40{,}000e^{-0.03t}
@@ -5622,7 +5580,7 @@ $$
 P''(t^{*})-rP'(t^{*})=3{,}120-0.09\\times 46{,}800=3{,}120-4{,}212=-1{,}092
 $$
 
-The claim names \$1,092. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -5639,7 +5597,7 @@ $$
 \\frac{dt^{*}}{dr}=\\frac{520{,}000}{-1{,}092}\\approx -476.19
 $$
 
-The claim names -476.19. The computed figure and the claim agree.
+The computed value is approximately -476.19, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -5666,8 +5624,6 @@ P''(t^{*})-rP'(t^{*})=3{,}120-0.09\\times 46{,}800=3{,}120-4{,}212=-1{,}092
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
     ],
@@ -5722,9 +5678,7 @@ $$
 t+4=\\frac{2}{r}\\approx 22.22, \\qquad t^{*}=\\frac{2}{r}-4\\approx 18.22
 $$
 
-The claim names 18.22. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 18.22, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -5827,9 +5781,7 @@ $$
 \\mathrm{PV}_1 = 250{,}000 \\times 0.759572 \\approx 189{,}893.03
 $$
 
-The claim names \$250,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$189,893.03, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -5846,14 +5798,12 @@ $$
 \\mathrm{PV}_2 = 40{,}000 \\times 0.937849 \\approx 37{,}513.95
 $$
 
-The claim names \$40,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$37,513.95, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 \\mathrm{PDV}\\approx 227{,}406.98
@@ -5936,9 +5886,7 @@ $$
 \\frac{\\mathrm{PDV}}{K} = \\frac{2{,}000{,}000}{3{,}200{,}000} = 0.625
 $$
 
-The claim names 0.625. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.625, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -5955,14 +5903,12 @@ $$
 r = -\\frac{\\ln(0.625)}{4.5} = \\frac{0.470004}{4.5} \\approx 0.1044 = 10.44\\%
 $$
 
-The claim names 10.44\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 10.44%, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At a \\$3,600,000 payout,
 
@@ -5973,7 +5919,7 @@ The overview recovered $10.44\\%$ at \\$3,200,000. We have $13.06\\%>10.44\\%$.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At a $3$-year horizon with the original discount factor $0.625$,
 
@@ -6041,8 +5987,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -6059,8 +6003,6 @@ t^{*}=\\frac{2}{0.075}-5=26.67-5\\approx 21.67
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**C.** → False
@@ -6150,9 +6092,7 @@ $$
 e^{-0.4}\\approx 0.6703
 $$
 
-The claim names 0.6703. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.6703, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -6169,14 +6109,12 @@ $$
 e^{-0.8}\\approx 0.4493
 $$
 
-The claim names 0.4493. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 0.4493, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 \\mathrm{PV}_1\\approx 20{,}109.60
@@ -6187,7 +6125,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 \\mathrm{PV}_2\\approx 24{,}713.09
@@ -6198,7 +6136,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $$
 \\mathrm{PDV}\\approx 44{,}822.69
@@ -6311,7 +6249,7 @@ The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $$
 s_5 \\approx 305.26
@@ -6372,8 +6310,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
@@ -6391,9 +6327,7 @@ $$
 s_{\\infty} = \\frac{2{,}000}{1-0.5} = \\frac{2{,}000}{0.5} = 4{,}000
 $$
 
-The claim names \$4,000.00. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$4,000.00, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -6410,9 +6344,7 @@ $$
 s_4 = 2{,}000+1{,}000+500+250 = 3{,}750
 $$
 
-The claim names \$3,750.00. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$3,750.00, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -6427,7 +6359,7 @@ $$3{,}750 < 4{,}000$$
 
 The four-month sum does not exceed the infinite sum.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed result disagrees with the claim.
 
 So the statement is False.`,
       `**E.** → False
@@ -6499,8 +6431,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
@@ -6518,9 +6448,7 @@ $$
 s_{\\infty} = \\frac{800}{1-0.90} = \\frac{800}{0.10} = 8{,}000
 $$
 
-The claim names \$8,000.00. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$8,000.00, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -6534,12 +6462,10 @@ $$
 Substitute the stem numbers:
 
 $$
-s_{10} = 800\\frac{1-0.3486784401}{0.10}
+= 800 \\times 6.513215599 = 5{,}210.57
 $$
 
-The claim names \$5,210.57. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$5,210.57, which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -6557,7 +6483,7 @@ The claim is about $65\\%$.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At the hypothetical quotient $k=1.10$,
 
@@ -6639,7 +6565,7 @@ The overview already identified constant extraction as the $k=1$ case, where the
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 s_{10}\\approx 3{,}773{,}368
@@ -6722,9 +6648,7 @@ $$
 s_{\\infty} = \\frac{180}{1-0.97} = \\frac{180}{0.03} = 6{,}000
 $$
 
-The claim names 6,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -6738,8 +6662,6 @@ $$
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -6818,8 +6740,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
@@ -6837,9 +6757,7 @@ $$
 s_{\\infty} = \\frac{4{,}000}{1-(-0.5)} = \\frac{4{,}000}{1.5} \\approx 2{,}666.67
 $$
 
-The claim names \$2,666.67. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$2,666.67, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -6857,7 +6775,7 @@ The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 |k|=0.5<1
@@ -6932,14 +6850,12 @@ $$
 s_{15} = 12\\frac{1.800944-1}{0.04} = 12 \\times 20.0236 \\approx 240.28
 $$
 
-The claim names \$12. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 15
@@ -6950,7 +6866,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered \\$240.28 million under growth and \\$180.00 million with no growth. The extra is
 
@@ -7035,14 +6951,12 @@ $$
 s_8 = 15{,}000\\frac{1-0.359635}{0.12} = 15{,}000 \\times 5.336379 \\approx 80{,}045.68
 $$
 
-The claim names \$80,045.68. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$80,045.68, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 s_{\\infty}=125{,}000
@@ -7126,7 +7040,7 @@ The finite-sum formula needs $k\\ne 1$. Here $k=1.08\\ne 1$, so $s_{12}$ is well
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 s_{12}\\approx 170{,}794.15
@@ -7218,9 +7132,7 @@ $$
 s_6 = 4\\frac{2.985984-1}{0.20} = 4 \\times 9.92992 = 39.72
 $$
 
-The claim names \$39.72. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$39.72, which matches the claim.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -7233,9 +7145,7 @@ $$
 1.20^5 = 2.48832, \\qquad a_6 = 4 \\times 2.48832 = 9.95328 \\approx 9.95
 $$
 
-The claim names \$9.95. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$9.95, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -7334,9 +7244,7 @@ $$
 a = 58{,}000\\frac{0.15}{2.313060766-1} = \\frac{8{,}700}{1.313060766} \\approx 6{,}625.74
 $$
 
-The claim names \$6,625.74. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$6,625.74, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -7429,12 +7337,12 @@ $$
 s_{\\infty} = \\frac{500{,}000}{1-0.98} = \\frac{500{,}000}{0.02} = 25{,}000{,}000
 $$
 
-The claim names \$25,000,000.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 s_{10}\\approx 4{,}573{,}179.83
@@ -7531,7 +7439,7 @@ nine years remain below the target.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 s_{10}\\approx 3{,}509{,}747.01
@@ -7542,7 +7450,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 s_9\\approx 2{,}955{,}131.26
@@ -7625,9 +7533,7 @@ $$
 s_{\\infty} = \\frac{50{,}000}{1-0.96} = \\frac{50{,}000}{0.04} = 1{,}250{,}000
 $$
 
-The claim names \$1,250,000.00. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$1,250,000.00, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -7644,9 +7550,7 @@ $$
 s_{15} = 50{,}000\\frac{1-0.542086380}{0.04} = 50{,}000 \\times 11.447840 \\approx 572{,}392.03
 $$
 
-The claim names \$572,392.03. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$572,392.03, which matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -7830,9 +7734,7 @@ $$
 s_{A,8} = 80{,}000\\frac{1.593848075-1}{0.06} = 80{,}000 \\times 9.897468 \\approx 791{,}797.43
 $$
 
-The claim names \$791,797.43. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$791,797.43, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7849,9 +7751,7 @@ $$
 s_{B,8} = 95{,}000\\frac{1.171659381-1}{0.02} = 95{,}000 \\times 8.582969 \\approx 815{,}382.06
 $$
 
-The claim names \$815,382.06. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$815,382.06, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -7893,8 +7793,6 @@ $$815{,}382.06-791{,}797.43 = 23{,}584.63$$
 $$23{,}584.63 < 30{,}000$$
 
 The lead is not more than \\$30,000.
-
-The claim names \$30,000. The computed figure does not match the claim.
 
 So the statement is False.`,
     ],
@@ -7952,7 +7850,7 @@ Compare the computed value with the claim (about \\$650.00. The fourth benefit i
 So the statement is False.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview's test requires $p>1$. Here $p=1.5$, and
 
@@ -7981,7 +7879,7 @@ so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for conv
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At $p=0.5$,
 
@@ -8034,9 +7932,7 @@ $$
 s_{R,12} = 150{,}000\\frac{1.01^{12}-1}{0.01} \\approx 1{,}902{,}375.45
 $$
 
-The claim names \$1,902,375.45. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$1,902,375.45, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -8053,9 +7949,7 @@ $$
 s_{C,12} = 120{,}000\\frac{1.03^{12}-1}{0.03} \\approx 1{,}703{,}043.55
 $$
 
-The claim names \$1,703,043.55. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$1,703,043.55, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -8066,9 +7960,7 @@ $$
 \\Pi_{12} = 1{,}902{,}375.45-1{,}703{,}043.55 = 199{,}331.90
 $$
 
-The claim names \$199,331.90. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$199,331.90, which matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -8147,12 +8039,12 @@ $$
 s_{\\infty} = \\frac{2{,}400{,}000}{1-0.94} = \\frac{2{,}400{,}000}{0.06} = 40{,}000{,}000
 $$
 
-The claim names \$40,000,000.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 s_{15}\\approx 24{,}188{,}328.05
@@ -8244,9 +8136,7 @@ $$
 s_1 = 25{,}000 \\times 9 = 225{,}000
 $$
 
-The claim names \$225,000.00. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$225,000.00, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -8257,7 +8147,7 @@ $$
 s_2 = 18{,}000\\frac{1.07^9-1}{0.07} \\approx 215{,}603.80
 $$
 
-The claim names \$215,603.80. The computed figure and the claim agree.
+The computed value is approximately \$215,603.80, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -8274,7 +8164,7 @@ $$
 s_3 = \\frac{30{,}000}{1-0.92} = \\frac{30{,}000}{0.08} = 375{,}000
 $$
 
-The claim names \$375,000.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -8700,7 +8590,7 @@ The claim needs $15{,}702.97 > 35{,}000$. We have $15{,}702.97 < 35{,}000$.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At 10% the same ten deposits give
 
@@ -8768,7 +8658,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Fifteen withdrawals of \\$2,400 total
 
@@ -8966,12 +8856,10 @@ $$
 Substitute the stem numbers:
 
 $$
-P_9 = \\frac{2{,}500}{0.07}\\left[1-\\frac{1}{(1.07)^9}\\right]
+= 35{,}714.29 \\times 0.456069 = 16{,}288.18
 $$
 
-The claim names \$16,288.18. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$16,288.18, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8985,7 +8873,7 @@ Compare the computed value with the claim (a saving of \\$1,811.82. We have $1{,
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At 4% the same nine payments are worth
 
@@ -9009,7 +8897,7 @@ Compare the computed value with the claim (\\$4,600. We have $4{,}500 \\ne 4{,}6
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Growing Option 1's \\$18,000 for nine years at 7% gives
 
@@ -9117,7 +9005,7 @@ The claim is a gap of \\$5,769.72. We have $5{,}269.72 \\ne 5{,}769.72$.
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Strategy B commits eight deposits of \\$1,400:
 
@@ -9206,7 +9094,7 @@ End-of-year deposits finish lower:
 
 $$20{,}405.76 < 21{,}426.05$$.
 
-The claim names \$3,000. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -9248,8 +9136,6 @@ F_{\\mathrm{due}} = 20{,}405.76 \\times 1.05 = 21{,}426.05
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
     ],
@@ -9323,7 +9209,7 @@ End-of-year rent is worth less today:
 
 $$101{,}096.80 < 107{,}162.61$$.
 
-The claim names \$24,000. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -9409,7 +9295,7 @@ $$
 V = \\frac{10{,}000}{0.06} = 166{,}666.67
 $$
 
-The claim names \$166,666.67. The computed figure and the claim agree.
+The computed value is approximately \$166,666.67, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -9525,7 +9411,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The market price is \\$65.00. The overview recovered a fair value of \\$60.71:
 
@@ -9545,7 +9431,7 @@ Compare the computed value with the claim (\\$116.25. We have $106.25 \\ne 116.2
 So the statement is False.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The move from 7% to 4% raises the recovered $P\\approx 60.714286$ to $106.25$:
 
@@ -9628,9 +9514,7 @@ $$
 383{,}333.33
 $$
 
-The claim names \$50,000. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$383,333.33, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -9657,7 +9541,7 @@ The claim needs more than $25\\%$. We have $21.74\\% < 25\\%$.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 At 6% the perpetuity alone is \\$250,000. Half of the original combined 4.5% total is
 
@@ -9721,7 +9605,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 With no growth the same first cash flow is a level perpetuity at 8%:
 
@@ -9732,7 +9616,7 @@ The claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$.
 So the statement is False.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 At 4% growth,
 
@@ -9805,9 +9689,7 @@ $$
 D_1 = 3.00 \\times 1.03 = 3.09
 $$
 
-The claim names \$3.09. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$3.09, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -9894,7 +9776,7 @@ $$P = \\frac{3.09}{0.09-0.03} = \\frac{3.09}{0.06} = 51.50$$`,
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered $P_1=180{,}000$. A fair buy at a \\$170,000 asking price needs fair value at least that price:
 
@@ -9905,7 +9787,7 @@ Deal 1 is a good buy.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered $P_2=233{,}333.33$. The margin over the asking price is
 
@@ -9921,7 +9803,7 @@ Deal 1's margin is $180{,}000-170{,}000=10{,}000$. Deal 2's margin is $63{,}333.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 At 1% growth, Deal 2 is worth
 
@@ -9932,7 +9814,7 @@ The claim needs $P_2' < 170{,}000$. We have $155{,}555.56 < 170{,}000$.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $$
 P_1=180{,}000
@@ -9998,7 +9880,7 @@ Those two figures agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 S_0=129{,}213.75
@@ -10113,12 +9995,12 @@ Both strategies commit \\$75,000 in total, and
 
 $$96{,}757.60 < 131{,}629.13$$.
 
-The claim names \$75,000. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The lump-sum lead is
 
@@ -10249,7 +10131,7 @@ The claim needs $37{,}500 < 36{,}221.88$. We have $37{,}500 > 36{,}221.88$.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 $$
 S=30{,}439.24
@@ -10447,7 +10329,7 @@ $$P = \\frac{5{,}000}{0.07-0.02} = 100{,}000$$`,
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The periodic rate splits the nominal annual quote by the compounding frequency:
 
@@ -10583,8 +10465,6 @@ $$
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -10727,7 +10607,7 @@ The claim is \$5,000.00. We have \$4,500.00, so the figures do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 After payment 3 the overview already carried the outstanding balance forward. That recovered figure is
 
@@ -10740,7 +10620,7 @@ The claim names \$20{,}602.37. The recovered balance and the claim agree.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered the year-3 closing balance as \\$20,602.37. Year-4 interest and principal are
 
@@ -10814,9 +10694,7 @@ $$
 6.537048
 $$
 
-The claim names 6.537048. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 6.537048, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -10833,14 +10711,12 @@ $$
 a = \\frac{150{,}000}{6.537048} \\approx 22{,}946.14
 $$
 
-The claim names \$22,946.14. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$22,946.14, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 End-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{ordinary}} \\approx 25{,}470.21$. Then
 
@@ -10931,8 +10807,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
@@ -10963,7 +10837,7 @@ Compare the computed value with the claim (\\$49,682.53). The two sides agree.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Total interest is total paid minus principal:
 
@@ -11023,17 +10897,15 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-10\\%
+PV_{\\mathrm{B}} = 100{,}000 + \\frac{100{,}000}{0.10}\\bigl[1-(1.10)^{-6}\\bigr] \\approx 535{,}526.07
 $$
 
-The claim names \$535,526.07. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$535,526.07, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered $PV_{\\mathrm{B}} \\approx 535{,}526.07$ at $10\\%$. Option A is \\$500,000 today. Then
 
@@ -11044,7 +10916,7 @@ Option A is cheaper at $10\\%$.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 $$
 14\\%
@@ -11244,9 +11116,7 @@ $$
 a = \\frac{0.005 \\times 200{,}000}{1-(1.005)^{-240}} = \\frac{1{,}000}{1-(1.005)^{-240}} \\approx 1{,}432.86
 $$
 
-The claim names \$1,432.86. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$1,432.86, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -11256,12 +11126,10 @@ Apply the financial identity that produces the quantity named in the claim:
 From the shared elimination in the overview:
 
 $$
-60
+B_{60} = \\frac{1{,}432.86}{0.005}\\bigl[1-(1.005)^{-180}\\bigr] \\approx 169{,}799.20
 $$
 
-The claim names \$169,799.20. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$169,799.20, which matches the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -11351,8 +11219,6 @@ $$
 
 The computed figure matches the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
@@ -11387,7 +11253,7 @@ Compare the computed value with the claim (\\$210,000.00. We have about \\$213,1
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Nine full payments would be \\$225,000. Against the recovered total \\$213,100.16,
 
@@ -11450,9 +11316,7 @@ $$
 a \\approx 16{,}176.12
 $$
 
-The claim names \$16,176.12. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$16,176.12, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -11486,7 +11350,7 @@ Both claimed figures match those recovered values.
 So the statement is True.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Three due loan payments total
 
@@ -11554,17 +11418,15 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-9\\%
+PV_{\\mathrm{II}} = 95{,}000 + \\frac{95{,}000}{0.09}\\bigl[1-(1.09)^{-6}\\bigr] \\approx 521{,}162.27
 $$
 
-The claim names \$521,162.27. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$521,162.27, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 9\\%
@@ -11599,12 +11461,10 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-13\\%
+PV_{\\mathrm{II}} = 95{,}000 + \\frac{95{,}000}{0.13}\\bigl[1-(1.13)^{-6}\\bigr] \\approx 474{,}767.23
 $$
 
-The claim names \$474,767.23. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$474,767.23, which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -11683,12 +11543,10 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-8\\%
+PV_{\\mathrm{II}} = 140{,}000 + \\frac{140{,}000}{0.08}\\bigl[1-(1.08)^{-8}\\bigr] \\approx 944{,}529.45
 $$
 
-The claim names \$944,529.45. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$944,529.45, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -11702,12 +11560,10 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-8\\%
+PV_{\\mathrm{III}} = 300{,}000 + \\frac{80{,}000}{0.08}\\bigl[1-(1.08)^{-11}\\bigr] \\approx 871{,}117.14
 $$
 
-The claim names \$871,117.14. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$871,117.14, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -11736,12 +11592,10 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-12\\%
+PV_{\\mathrm{III}} = 300{,}000 + \\frac{80{,}000}{0.12}\\bigl[1-(1.12)^{-11}\\bigr] \\approx 775{,}015.93
 $$
 
-The claim names \$775,015.93. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$775,015.93, which matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -11820,17 +11674,15 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-7.5\\%
+PV_{\\mathrm{II}} = 340{,}000 + \\frac{340{,}000}{0.075}\\bigl[1-(1.075)^{-9}\\bigr] \\approx 2{,}508{,}821.59
 $$
 
-The claim names \$2,508,821.59. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$2,508,821.59, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 7.5\\%
@@ -11841,7 +11693,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. Schedule I is \\$2,400,000. Then
 
@@ -11852,7 +11704,7 @@ Schedule I is cheaper than Schedule II at $7.5\\%$.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 $$
 11.5\\%
@@ -11863,7 +11715,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. Then
 
@@ -11934,9 +11786,7 @@ $$
 r = \\frac{9{,}600}{8{,}000} - 1 = 0.20 = 20\\%
 $$
 
-The claim names 20\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 20%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -11950,7 +11800,7 @@ Then $347.83 > 0$.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
@@ -11961,7 +11811,7 @@ Then $-320 < 0$. The claim needs a positive NPV.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 With payoff \\$10,000 on the same \\$8,000 outlay, the one-year rate is
 
@@ -12023,14 +11873,12 @@ $$
 10.92\\%
 $$
 
-The claim names 10.92\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 10.92%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Eight percent sits below the recovered $10.92\\%$ IRR. NPV at $8\\%$ is
 
@@ -12124,14 +11972,12 @@ $$
 11.98\\%
 $$
 
-The claim names 11.98\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 11.98%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Ten percent sits below the recovered $11.98\\%$ IRR. NPV at $10\\%$ is
 
@@ -12219,9 +12065,7 @@ $$
 15\\%
 $$
 
-The claim names 15\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 15%, which matches the claim.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -12236,9 +12080,7 @@ $$
 12.5\\%
 $$
 
-The claim names 12.5\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 12.5%, which matches the claim.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
@@ -12257,8 +12099,6 @@ The IRR criterion prefers X, not Y.
 
 The computed figure does not match the claim.
 
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -12273,7 +12113,7 @@ Both are positive. The claim needs Y negative.
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 With Y's payoff raised to \\$25,000,
 
@@ -12329,17 +12169,15 @@ $$
 Substitute the stem numbers recovered in the overview:
 
 $$
-8\\%
+A = -45{,}000 - \\frac{3{,}000}{1.08} + \\frac{28{,}000}{1.1664} + \\frac{35{,}000}{1.259712} \\approx 4{,}011.84
 $$
 
-The claim names \$4,012. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately \$4,012, which matches the claim.
 
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 $$
 12\\%
@@ -12367,9 +12205,7 @@ $$
 15\\%
 $$
 
-The claim names \$3,424. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**E.** → False
@@ -12423,7 +12259,7 @@ $$A = -45{,}000 - \\frac{3{,}000}{1.15} + \\frac{28{,}000}{1.3225} + \\frac{35{,
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 $$
 10.78\\%
@@ -12526,14 +12362,12 @@ $$
 15\\%
 $$
 
-The claim names \$0. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Ten percent sits below the recovered $15\\%$ IRR. NPV at $10\\%$ is
 
@@ -12546,7 +12380,7 @@ Then $2{,}809.92 > 0$.
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Twenty percent sits above the recovered $15\\%$ IRR. NPV at $20\\%$ is
 
@@ -12769,12 +12603,10 @@ $$
 Substitute the stem numbers:
 
 $$
-r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
+r = \\frac{6{,}000}{50{,}000} = 0.12 = 12\\%
 $$
 
-The claim names 12. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 12%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -12791,9 +12623,7 @@ $$
 r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
 $$
 
-The claim names -58.84\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately -58.84%, which matches the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -12811,8 +12641,6 @@ r = \\frac{1}{2.4297} - 1 \\approx -0.5884 = -58.84\\%
 $$
 
 The computed figure matches the claim.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
 
 So the statement is True.`,
       `**D.** → False
@@ -12911,9 +12739,7 @@ $$
 r_A = \\frac{1}{0.90057} - 1 \\approx 0.1104 \\approx 11.04\\%
 $$
 
-The claim names 11.04\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 11.04%, which matches the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -12924,16 +12750,14 @@ $$
 r_B = \\frac{81{,}200}{70{,}000} - 1 = 0.16 = 16\\%
 $$
 
-The claim names 16\%. The computed figure and the claim agree.
-
-Keep the periodic rate, the holding time, and the money units aligned with the claim while you read the comparison.
+The computed value is approximately 16%, which matches the claim.
 
 Each display above isolates one arithmetic step so the claim check is transparent.
 
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The internal-rate criterion ranks the designs by the recovered rates. The overview recovered $r_A \\approx 11.04\\%$ and $r_B = 16\\%$.
 

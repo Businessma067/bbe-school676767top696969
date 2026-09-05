@@ -29,7 +29,7 @@ const MATH_CH5_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates today's North holding:
 
@@ -48,7 +48,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read today's South holding:
 
@@ -171,7 +171,7 @@ $$y = 620 - 360 = 260$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the notebook price:
 
@@ -190,7 +190,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the pen price:
 
@@ -309,7 +309,7 @@ $$x = 10.70 - 7.20 = 3.50$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the adult ticket price:
 
@@ -328,7 +328,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the child ticket price:
 
@@ -449,7 +449,7 @@ $$c = 55 - 48 = 7$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the sandwich price:
 
@@ -468,7 +468,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the wrap price:
 
@@ -499,7 +499,7 @@ $$
 62
 $$
 
-The claim names \$8.00. The computed figure and the claim agree.
+The computed value is approximately \$62.00, which matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -589,7 +589,7 @@ $$x = 7$$
     tactical_explanations: [
       `**A.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the amount in Account A:
 
@@ -602,7 +602,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the amount in Account B:
 
@@ -697,7 +697,7 @@ $$x = 10000 - 4000 = 6000$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the Standard price:
 
@@ -716,7 +716,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the Premium price:
 
@@ -729,7 +729,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -767,7 +767,7 @@ $$1520 + 1745 = 3265$$
 
 Then $3265 > 3000$.
 
-The claim names \$3,000.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
     ],
@@ -821,7 +821,7 @@ $$y = 304 + 45 = 349$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the fixed monthly fee:
 
@@ -840,7 +840,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the extra-minute rate:
 
@@ -887,7 +887,7 @@ With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim i
 So the statement is False.`,
       `**E.** → False
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -974,7 +974,7 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -987,7 +987,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1000,7 +1000,7 @@ The claim is $300$ assembly hours.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1013,7 +1013,7 @@ The claim is $500$ assembly hours.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1079,7 +1079,7 @@ $$s = 130 - 55 = 75$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the sofa price:
 
@@ -1098,7 +1098,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the armchair price:
 
@@ -1129,7 +1129,7 @@ $$
 9300 - 300 = 9000
 $$
 
-The claim names \$9,300.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -1219,7 +1219,7 @@ $$y = 900 - 700 = 200$$
     tactical_explanations: [
       `**A.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates PrintFast's setup fee:
 
@@ -1232,7 +1232,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read PrintFast's per-page rate:
 
@@ -1281,8 +1281,6 @@ $$350 \\times 0.20 = 70$$
 $$9 + 70 = 79$$
 
 QuickCopy's flat fee is \\$60. Then $79 > 60$.
-
-The claim names \$60.00. The computed figure does not match the claim.
 
 So the statement is False.`,
       `**E.** → True
@@ -1353,7 +1351,7 @@ $$f = 9$$
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1387,7 +1385,7 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1400,7 +1398,7 @@ Then $26 < 28$.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -1502,7 +1500,7 @@ $$x = 3.50$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the paperback price, and equation (1) is the \\$5 gap rule:
 
@@ -1521,7 +1519,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the hardcover price:
 
@@ -1534,7 +1532,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -1632,7 +1630,7 @@ $$y = 12 + 5 = 17$$
     tactical_explanations: [
       `**A.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates Standard's base fee:
 
@@ -1645,7 +1643,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read Standard's overage rate:
 
@@ -1685,7 +1683,7 @@ The computed figure and the claim agree.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered Standard as $x=38$ and $y=3$. Five GB of overage on Standard costs
 
@@ -1698,7 +1696,7 @@ Premium is \\$40 unlimited. Then $40 < 53$.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -1780,7 +1778,7 @@ $$
 2240
 $$
 
-The claim names \$2,240.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -1842,7 +1840,7 @@ Compare the computed value with the claim (\\$226.80). The two sides agree.
 So the statement is True.`,
       `**E.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Compare the overview’s recovered unknown with the figure the claim prints on the card.
 
 Read off the overview value for the pre-tax Suite rate:
 
@@ -1933,7 +1931,7 @@ $$y = 210$$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates Component A's unit cost:
 
@@ -1952,7 +1950,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read Component B's unit cost:
 
@@ -2011,7 +2009,7 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2093,7 +2091,7 @@ $$y = 15$$
     tactical_explanations: [
       `**A.** → False
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2106,7 +2104,7 @@ That recovered value is not the figure on the card.
 So the statement is False.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the regular hourly wage:
 
@@ -2225,7 +2223,7 @@ $$1.5 \\times 14 = 21$$
     tactical_explanations: [
       `**A.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the fixed monthly charge:
 
@@ -2238,7 +2236,7 @@ The claim names a different figure, so the displays do not agree.
 So the statement is False.`,
       `**B.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+Read the recovered unknown from the shared solve, then compare it with the figure printed on the card.
 
 From the overview solve, read the rate per cubic metre:
 
@@ -2269,7 +2267,7 @@ $$
 y = 51
 $$
 
-The claim names \$51.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -2297,7 +2295,7 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2392,7 +2390,7 @@ $$
 x_1 = 6
 $$
 
-The claim names \$6.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -2422,7 +2420,7 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -2703,7 +2701,7 @@ $$
 x = 50
 $$
 
-The claim names \$50. The computed figure and the claim agree.
+That computed value matches the claim.
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -2869,7 +2867,7 @@ $$x = 50$$
     tactical_explanations: [
       `**A.** → False
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the signup fee members are actually charged:
 
@@ -2897,7 +2895,7 @@ Members pay less per month than the flyer states.
 So the statement is True.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Maria actually paid \\$284 over 6 months. The flyer would have charged a \\$30 signup plus \\$45 per month:
 
@@ -2912,7 +2910,7 @@ Her actual total does not exceed the flyer figure.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -2991,7 +2989,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the Basic monthly price:
 
@@ -3010,7 +3008,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered the Premium monthly price. State that value in its own display before testing the claim:
 
@@ -3025,7 +3023,7 @@ $$31 \\ne 35$$.
 So the statement is False.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Household 1 billed \\$169. Household 2 billed \\$255. Double Household 1:
 
@@ -3038,7 +3036,7 @@ Household 2 is not more than double Household 1.
 So the statement is False.`,
       `**D.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Equal cost for $n$ months of only Basic and $n$ months of only Premium would require $nx = ny$ with $n > 0$, hence $x = y$. The overview recovered $x = 19$ and $y = 31$.
 
@@ -3125,7 +3123,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the apple price per pound:
 
@@ -3144,7 +3142,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -3157,7 +3155,7 @@ Milk is the dearer unit.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Five pounds of apples and four cartons of milk, at the recovered prices:
 
@@ -3255,7 +3253,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the fixed connection fee:
 
@@ -3274,7 +3272,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered the standard-plan rate. State that value in its own display before testing the claim:
 
@@ -3313,7 +3311,7 @@ For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every p
 So the statement is False.`,
       `**E.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 At 500 units, Solar and the standard plan are
 
@@ -3379,7 +3377,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the pasta price:
 
@@ -3398,7 +3396,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -3411,7 +3409,7 @@ An appetizer costs less than a pasta dish.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Table 8's food subtotal, after stripping the 10% peak charge, is \\$200. Table 5's total is \\$174.
 
@@ -3422,7 +3420,7 @@ The pre-service-charge gap is exactly \\$26.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3435,7 +3433,7 @@ The claim is \\$191.40.
 So the statement is True.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Four pasta dishes and four appetizers at the recovered prices, then the 10% service charge:
 
@@ -3503,7 +3501,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates Item M's unit cost:
 
@@ -3522,7 +3520,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered Item N's unit cost. State that value in its own display before testing the claim:
 
@@ -3537,7 +3535,7 @@ $$27 \\ne 30$$.
 So the statement is False.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Shipment 1 moved $110 + 80 = 190$ units for \\$4,470. Shipment 2 moved $70 + 150 = 220$ units for \\$5,520.
 
@@ -3550,7 +3548,7 @@ The per-unit averages are not equal.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3635,7 +3633,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the Standard unit price:
 
@@ -3654,7 +3652,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered the Premium unit price. State that value in its own display before testing the claim:
 
@@ -3676,7 +3674,7 @@ The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3760,7 +3758,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates the per diem:
 
@@ -3779,7 +3777,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered the mileage rate. State that value in its own display before testing the claim:
 
@@ -3794,7 +3792,7 @@ $$0.32 \\ne 0.40$$.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Seven meal days at the recovered per diem $x = 55$, before any mileage:
 
@@ -3807,7 +3805,7 @@ Report 3's \\$120 cannot cover even the meal days.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3822,7 +3820,7 @@ The gap is not more than \\$80.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -3891,7 +3889,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates Widget A's assembly time:
 
@@ -3910,7 +3908,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered Widget B's assembly time. State that value in its own display before testing the claim:
 
@@ -3943,7 +3941,7 @@ A 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The 
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and $y = 10$:
 
@@ -4014,7 +4012,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-A True/False claim about a recovered unknown is checked by reading that value from the shared solve and comparing it with the figure printed on the card.
+A recovered unknown is checked by reading it from the shared solve and comparing it with the figure on the card.
 
 The shared solve isolates Product X's price:
 
@@ -4033,7 +4031,7 @@ Those two displays agree.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The shared elimination already recovered Product Y's price. State that value in its own display before testing the claim:
 
@@ -4178,7 +4176,7 @@ The shared elimination already fixed the unique pair; this letter only tests the
 So the statement is True.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4191,7 +4189,7 @@ $$25.28 > 24$$.
 So the statement is True.`,
       `**D.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Swap Invoice 1's counts and cost it at the recovered prices:
 
@@ -4208,7 +4206,7 @@ The total changes.
 So the statement is False.`,
       `**E.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Placing both invoices together is just the sum of the two printed totals:
 
@@ -4316,7 +4314,7 @@ The rate is closer to \\$2.00 than to \\$1.50.
 So the statement is False.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 A 250-mile Swift haul at the recovered fee $x = 145.50$ and rate $y = 1.85$:
 
@@ -4329,7 +4327,7 @@ Five cents under \\$608 would be \\$607.95. The haul is exactly \\$608.00.
 So the statement is False.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 A 250-mile Swift haul at the recovered $x = 145.50$ and $y = 1.85$:
 
@@ -4427,7 +4425,7 @@ That product does not clear twenty dollars.
 So the statement is False.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4447,7 +4445,7 @@ The calorie totals 6,100 and 5,400 are printed for reference only. They are not 
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4460,7 +4458,7 @@ $$4.915625 > 4.90$$.
 So the statement is True.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 A daily 2-drink 2-pastry order at the recovered prices, for seven days:
 
@@ -4536,7 +4534,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -4568,7 +4566,7 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Ten dozen of each at the recovered prices:
 
@@ -4678,7 +4676,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The shared elimination already recovered the Fabric Roll margin. State that value in its own display before testing the claim:
 
@@ -4710,7 +4708,7 @@ That product does not clear forty dollars.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Two hundred Fabric Rolls and 150 Yarn Spools at the recovered margins:
 
@@ -4727,7 +4725,7 @@ The mix clears \\$8,400 by \\$40.
 So the statement is True.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Q2 profit minus Q1 profit:
 
@@ -4742,7 +4740,7 @@ $131.50$ is still a three-digit number.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4845,7 +4843,7 @@ Nitrogen is closer to \\$16.00 than to \\$17.00.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Four Oxygen cylinders versus six Nitrogen cylinders, at the recovered prices:
 
@@ -4858,7 +4856,7 @@ $$90.60 < 98.40$$.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -4873,7 +4871,7 @@ The doubled bill does not land above \\$655.
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Blend Invoices 1 and 3, dollars and cylinders:
 
@@ -4968,7 +4966,7 @@ Rounded to the nearest whole hour that is 12, not 11.
 So the statement is False.`,
       `**B.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Bianchi alone, and Alvarez on two jobs, at the recovered rates:
 
@@ -5005,7 +5003,7 @@ The slice is closer to $\\frac{1}{7}$.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Total work across both days, divided by the 23 hours logged:
 
@@ -5113,7 +5111,7 @@ The margin sits closer to eighteen than to nineteen.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
@@ -5126,7 +5124,7 @@ $245$ is not a multiple of ten.
 So the statement is False.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Season 2 minus Season 1, versus 52 Hoodies at the recovered $y = 18.40$:
 
@@ -5141,7 +5139,7 @@ The earnings gap just fails to cover 52 Hoodies.
 So the statement is True.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Replace the recovered $T = 245$ with 260 T-Shirts, keeping 310 Hoodies:
 
@@ -5264,7 +5262,7 @@ That product lands just shy of \\$9.50.
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Convert Shipment 3's 99 lb and apply the recovered model:
 
@@ -5279,7 +5277,7 @@ The billed total is \\$239.80, and $239.80 - 236.35 = 3.45$, which is within fou
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -5294,7 +5292,7 @@ $45$ is not divisible by seven.
 So the statement is False.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 Use the recovered values from the overview for this claim-specific check.
 
@@ -5377,7 +5375,7 @@ $$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Consistency would require Client B to be exactly double Client A, so Client A would have to be half of \\$952.10:
 
@@ -5399,7 +5397,7 @@ $0.01607$ is nearer to $\\frac{1}{60}$ than to $\\frac{1}{50}$.
 So the statement is True.`,
       `**D.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Those hypothetical unit prices on Client A's 11 compute and 7 storage units:
 
@@ -5519,7 +5517,7 @@ That blended rate is about $4.14\\%$, which is more than $4\\%$.
 So the statement is True.`,
       `**D.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 An even split of the recovered total $18400$ puts \\$9,200 in each fund at the original rates.
 
@@ -5616,7 +5614,7 @@ Since $328 > 300$, the combined salt exceeds $300$ g.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 
@@ -5738,7 +5736,7 @@ Since $6.50 > 6$, the bonus exceeds \\$6.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered overtime at \\$26 per hour. Employee B worked $7$ overtime hours on a \\$882 gross.
 
@@ -5771,7 +5769,7 @@ Compared with A's actual \\$765, the new gross increases rather than decreases.
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Employee B had $7$ overtime hours and \\$882 gross; Employee A had $2.5$ overtime hours and \\$765 gross.
 
@@ -5874,7 +5872,7 @@ Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.
 So the statement is True.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 At fixed per-meter prices, combining Project 1 and Project 3 is linear. Combined metres are $28$ m wood and $64$ m wire.
 
@@ -5974,7 +5972,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km stretch is
 
@@ -5985,7 +5983,7 @@ about $7$ hours $25$ minutes, which is more than $7$ hours.
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 They meet after $2$ hours on the $250$ km stretch. Distances at the recovered speeds $48$ and $77$ km/h are
 
@@ -6020,7 +6018,7 @@ Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The overview recovered $A = 48$ km/h and $B = 77$ km/h. The relative increase of B over A is
 
@@ -6113,7 +6111,7 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview reconstructed Season 3 Wheat at $180$ t, with $300$ t of Barley. Season 2 is $180 + 260 = 440$ t.
 
@@ -6124,7 +6122,7 @@ Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead is $40$ extra tonnes of Wheat at \\$95/t.
 
@@ -6135,7 +6133,7 @@ That understatement of \\$3,800 is more than \\$3,500.
 So the statement is True.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Season 2 printed \\$48,300 on $180 + 260 = 440$ t. Season 1 printed \\$42,000 on $240 + 160 = 400$ t.
 
@@ -6219,7 +6217,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered current ages $47$ and $19$. Fifteen years from now those ages are $62$ and $34$.
 
@@ -6251,7 +6249,7 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**C.** → False
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview recovered current ages $47$ and $19$. After $4.5$ years the ages are $51.5$ and $23.5$.
 
@@ -6392,7 +6390,7 @@ $$8 \\times 17.60 + 5 \\times 14.40 = 140.80 + 72.00 = 212.80$$
 
 Since $212.80 > 150$, the markup exceeds \\$150.
 
-The claim names \$150.00. The computed figure and the claim agree.
+That computed value matches the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -6501,7 +6499,7 @@ Since $77 > 75$, their total would increase.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with $6 \\times 3 = 18$ from draws.
 
@@ -6512,7 +6510,7 @@ About $26.9\\%$ is not more than $45\\%$.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Under $2$ points per win and $1$ per draw, the two records become
 
@@ -6525,7 +6523,7 @@ The Falcons would still have more points.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution is $4 \\times 3 = 12$.
 
@@ -6536,7 +6534,7 @@ The win-to-draw ratio is $5.25$, which is not greater than $15$.
 So the statement is False.`,
       `**E.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Converting three of the Falcons' draws into wins leaves $12$ wins and $1$ draw.
 
@@ -6615,7 +6613,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered $A = 7.6$ kg/L and $B = 11.4$ kg/L. Batch 1 with $10$ L of B instead of $8$ L would mass
 
@@ -6641,7 +6639,7 @@ The computed figure does not match the claim.
 So the statement is False.`,
       `**C.** → True
 
-Apply the relevant algebra rule, keep one simplification per display, then match the claim.
+Invoke the algebra rule the claim needs, simplify one step per display, then match the claim.
 
 The overview predicted $140.6$ kg for Batch 3 against $147.0$ kg recorded, a $6.4$ kg discrepancy.
 
@@ -6652,7 +6650,7 @@ about $4.35\\%$, which is more than $4\\%$ of the recorded mass.
 So the statement is True.`,
       `**D.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 If Batch 3 used $10$ L of A instead of $9.5$ L, with $6$ L of B still, the predicted mass at the recovered densities is
 
@@ -6665,7 +6663,7 @@ The gap is $2.6$ kg, which is not within $2$ kg of $147.0$.
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 At fixed densities, combining two batches is linear. The combined mass is the sum of the printed masses.
 
@@ -6763,7 +6761,7 @@ about $11.1\\%$, which is more than $10\\%$.
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After a $0.2$ percentage-point rate cut and a doubled retainer, the new fee is
 
@@ -6854,7 +6852,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered $A = 8.4$ mg/mL and $B = 15.6$ mg/mL. The relative increase of B over A is
 
@@ -6865,7 +6863,7 @@ about $85.7\\%$, which is more than $85\\%$.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 
@@ -6895,7 +6893,7 @@ The computed figure matches the claim.
 So the statement is True.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Pooling uses the printed contents. Twice Batch 2 is $2 \\times 12600 = 25200$.
 
@@ -6906,7 +6904,7 @@ Since $21480 < 25200$, the pooled total is less than twice Batch 2.
 So the statement is True.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 Batch 2 has $700$ mL of B out of $200 + 700 = 900$ mL. Batch 3 has $450$ mL of B out of $320 + 450 = 770$ mL.
 
@@ -7007,7 +7005,7 @@ Since $564 < 700$, the waste-related cost does not exceed \\$700.
 So the statement is False.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Invoice 2 ordered $175 \\times 1.08 = 189$ drywall sheets. Cutting the allowance from $8\\%$ to $5\\%$ removes $175 \\times 0.03 = 5.25$ sheets at \\$38 each.
 
@@ -7018,7 +7016,7 @@ Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150.
 So the statement is True.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Job 2's usable-material cost at the recovered prices, as a share of the printed \\$8,946, is
 
@@ -7031,7 +7029,7 @@ about $91.9\\%$, which is more than $90\\%$.
 So the statement is True.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 
@@ -7125,7 +7123,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered scale factor $x = 3.50$. The excess over $3.4$, relative to $3.4$, is
 
@@ -7164,7 +7162,7 @@ about $0.70\\%$ of the recorded value, which is not more than $1\\%$.
 So the statement is False.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 Point 1's true value is $56.90$ and Point 2's is $124.45$. The percentage increase is
 
@@ -7175,7 +7173,7 @@ about $118.7\\%$, which is more than $100\\%$.
 So the statement is True.`,
       `**E.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 At reading $8.0$, the recovered calibration gives
 
@@ -7245,7 +7243,7 @@ versus recorded 172.20, a $1.20$ discrepancy.
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered Coffee $x = 6.20$ and Cocoa $y = 4.85$. Coffee's premium over Cocoa is
 
@@ -7256,7 +7254,7 @@ about $27.8\\%$, which is more than $25\\%$.
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 Shipment 1 has $312$ kg of Coffee at \\$6.20/kg, against a printed total of \\$2,943.20.
 
@@ -7378,7 +7376,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.
 
@@ -7389,7 +7387,7 @@ about $77.8\\%$, which is more than $75\\%$.
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.
 
@@ -7400,7 +7398,7 @@ about $1.94\\%$ below the recorded value, which is not more than $2\\%$.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 Route 1 currently uses $383.6$ L with $620$ km of van. Replacing that van distance by $900$ km adds $280$ km at the recovered van rate $18.0$ L/100km.
 
@@ -7508,7 +7506,7 @@ versus 155 L recorded, a 3 L discrepancy.
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered bond $5.4\\%$ and equity $6.6\\%$. The relative gap of equity over bonds is
 
@@ -7530,7 +7528,7 @@ $5.88\\%$ is less than $6\\%$.
 So the statement is True.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 All \\$45,000 in equities at $6.6\\%$ would return
 
@@ -7541,7 +7539,7 @@ The combined total of the two described allocations is $2646 + 2754 = 5400$. Sin
 So the statement is False.`,
       `**D.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+The shared solve is done; only this claim’s comparison remains.
 
 A $\\frac{50}{50}$ split puts \\$22,500 in each portfolio.
 
@@ -7646,7 +7644,7 @@ The overview reconstructed Renters coverage at \\$25,000. That is less than \\$3
 So the statement is True.`,
       `**B.** → False
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 
@@ -7657,7 +7655,7 @@ about $35.1\\%$, which is not more than $60\\%$.
 So the statement is False.`,
       `**C.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 A $10\\%$ increase in the recovered rate $y = 4.68$ adds $0.468$ per \\$1,000. Home has $210$ thousands of coverage.
 
@@ -7668,7 +7666,7 @@ Since $98.28 > 75$, the Home premium would increase by more than \\$75.
 So the statement is True.`,
       `**D.** → False
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 Premium per \\$1,000 is the printed premium divided by coverage in thousands.
 
@@ -7681,7 +7679,7 @@ Home's $5.702$ is not more than twice Auto's $7.206$.
 So the statement is False.`,
       `**E.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Read the recovered pair, then run the arithmetic the claim asks for.
 
 A single combined policy has one administrative fee and $85 + 210 = 295$ thousands of coverage.
 
@@ -7753,7 +7751,7 @@ that is \\$25,000 of coverage.
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered Year 6 populations $A = 898$ and $B = 874$.
 
@@ -7764,7 +7762,7 @@ Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
 So the statement is True.`,
       `**B.** → True
 
-Use the recovered values from the overview for this claim-specific check.
+Apply only this claim’s extra arithmetic to the recovered unknowns.
 
 If Species B also grew at $72$ per year, combined growth from Year 2 to Year 6 would be $4(72 + 72) = 576$.
 
@@ -7777,7 +7775,7 @@ The excess over the actual $1772$ is $144$, which is more than $140$.
 So the statement is True.`,
       `**C.** → False
 
-Use the recovered values from the overview for this claim-specific check.
+Start from the overview’s recovered unknowns, then test the named figure.
 
 From Year 2 to Year 6, Species A grows by $4 \\times 72 = 288$ and Species B by $4 \\times 36 = 144$.
 
@@ -7788,7 +7786,7 @@ The growth ratio is $2:1$, which is not greater than $2.5:1$.
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The populations are equal $t$ years after Year 2 when
 
@@ -7874,7 +7872,7 @@ $$
     tactical_explanations: [
       `**A.** → True
 
-Write the general identity, insert the claim's symbols, and simplify before comparing.
+Write the general identity, insert the claim’s symbols, and simplify before comparing.
 
 The overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.
 
@@ -7885,7 +7883,7 @@ about $48.0\\%$, which is more than $45\\%$.
 So the statement is True.`,
       `**B.** → True
 
-Start from the identity the claim uses, substitute, and check the resulting expression against the printed right-hand side.
+Begin with the governing identity, insert the claim’s symbols, and match the simplified form to the printed side.
 
 The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 
@@ -7905,7 +7903,7 @@ The actual combined Day 1 + Day 2 total is $3990 + 4072 = 8062$. Since $7733 < 8
 So the statement is False.`,
       `**D.** → True
 
-State the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
+Recall the rule, substitute the given letters or numbers, and compare the simplified result with the claim.
 
 The combined output rate is $145 + 98 = 243$ MWh/hr.
 
@@ -7916,7 +7914,7 @@ which is more than $2.4$ times Plant B's rate.
 So the statement is True.`,
       `**E.** → True
 
-Expand or simplify with the governing identity, then match the printed claim.
+Use the governing identity to expand or simplify, then match the printed claim.
 
 The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 
