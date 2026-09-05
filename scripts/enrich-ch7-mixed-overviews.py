@@ -1551,6 +1551,10 @@ BUILDERS = [
 
 
 def apply_overviews(tasks: list[dict]) -> None:
+    """Retired: long shared overviews. Use gen-ch7-mixed-hard.py instead."""
+    raise RuntimeError(
+        "Long shared overviews are retired. Rebuild with scripts/gen-ch7-mixed-hard.py"
+    )
     """Overwrite solution_overview and tactical_explanations in place."""
     assert len(tasks) == 30, len(tasks)
     assert len(BUILDERS) == 30
@@ -1607,6 +1611,10 @@ def validate_style(tasks: list[dict]) -> None:
 
 
 def main() -> None:
+    raise SystemExit(
+        "Retired: this enricher wrote long shared overviews. "
+        "Use scripts/gen-ch7-mixed-hard.py to rebuild src/data/math-ch7-mixed-exam.json"
+    )
     data = json.loads(OUT.read_text())
     tasks = data["tasks"]
     apply_overviews(tasks)
