@@ -18,35 +18,74 @@ def _esc(s: str) -> str:
 
 
 def _tick(v: float) -> str:
-    if abs(v) < 1e-9:
+    """Human-readable axis label: integers when possible, else short decimals."""
+    if abs(v) < 1e-12:
         return "0"
+    av = abs(v)
+    # Large magnitudes: prefer whole numbers (2000, 2200, …) never 2121.11
+    if av >= 100:
+        return str(int(round(v)))
     if abs(v - round(v)) < 1e-6:
         return str(int(round(v)))
+    if av >= 10:
+        return f"{v:.1f}".rstrip("0").rstrip(".")
     if abs(10 * v - round(10 * v)) < 1e-6:
         return f"{v:.1f}"
-    return f"{v:.2f}"
+    if abs(100 * v - round(100 * v)) < 1e-6:
+        return f"{v:.2f}"
+    return f"{v:.2g}"
 
 
-def _nice_ticks(lo: float, hi: float, target: int = 6) -> list[float]:
-    if hi <= lo:
-        return [lo]
-    span = hi - lo
-    candidates = [1.0, 0.5, 2.0, 2.5, 5.0, 10.0, 0.25, 0.2, 20.0, 50.0, 0.1]
-    best = None
-    for step in candidates:
-        n = int(span / step) + 1
-        if 3 <= n <= target + 3:
-            best = step
-            break
-    if best is None:
-        best = span / max(target - 1, 1)
-    start = math.ceil(lo / best - 1e-9) * best
+def _nice_num(x: float, round_step: bool) -> float:
+    """Classic 'nice number' helper (Wilkinson / graphics pipeline)."""
+    if x <= 0 or not math.isfinite(x):
+        return 1.0
+    exp = math.floor(math.log10(x))
+    f = x / (10**exp)
+    if round_step:
+        if f < 1.5:
+            nf = 1.0
+        elif f < 3.0:
+            nf = 2.0
+        elif f < 7.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    else:
+        if f <= 1.0:
+            nf = 1.0
+        elif f <= 2.0:
+            nf = 2.0
+        elif f <= 5.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    return nf * (10**exp)
+
+
+def _nice_ticks(lo: float, hi: float, target: int = 5) -> list[float]:
+    """Even, round tick marks on [lo, hi] — never 2121.11-style junk."""
+    if not math.isfinite(lo) or not math.isfinite(hi) or hi <= lo:
+        return [lo if math.isfinite(lo) else 0.0]
+    # Expand a hair so edge data aren't clipped off the outer ticks
+    raw_span = hi - lo
+    nice_span = _nice_num(raw_span, round_step=False)
+    step = _nice_num(nice_span / max(target - 1, 1), round_step=True)
+    if step <= 0:
+        step = raw_span / max(target - 1, 1)
+    # Snap range to step grid
+    nice_lo = math.floor(lo / step) * step
+    nice_hi = math.ceil(hi / step) * step
     ticks: list[float] = []
-    v = start
-    while v <= hi + 1e-9:
-        if lo - 1e-9 <= v <= hi + 1e-9:
+    # Guard against float drift
+    n_steps = int(round((nice_hi - nice_lo) / step))
+    for i in range(n_steps + 1):
+        v = nice_lo + i * step
+        if lo - 0.25 * step <= v <= hi + 0.25 * step:
+            # Clean binary float noise (e.g. 1999.999999 → 2000)
+            if abs(v - round(v)) < 1e-9 * max(1.0, abs(v)):
+                v = float(round(v))
             ticks.append(v)
-        v += best
     return ticks or [lo, hi]
 
 
@@ -105,8 +144,13 @@ def svg_curves(
     pad = 0.08 * (y1 - y0)
     y0 -= pad
     y1 += pad
+    # Snap the vertical window onto the outer nice ticks so labels sit on-frame
+    y_ticks_preview = _nice_ticks(y0, y1, target=5)
+    if len(y_ticks_preview) >= 2:
+        y0 = min(y0, y_ticks_preview[0])
+        y1 = max(y1, y_ticks_preview[-1])
 
-    L, R, T, B = 64, 24, 48, 52
+    L, R, T, B = 76, 28, 48, 52
     pw, ph = width - L - R, height - T - B
 
     def sx(x: float) -> float:
@@ -123,16 +167,20 @@ def svg_curves(
         f'<line x1="{L}" y1="{T + ph}" x2="{L + pw}" y2="{T + ph}" stroke="#333" stroke-width="1.5"/>',
     ]
 
-    for tick in _nice_ticks(xmin, xmax):
+    for tick in _nice_ticks(xmin, xmax, target=6):
         x = sx(tick)
         parts.append(f'<line x1="{x:.1f}" y1="{T + ph}" x2="{x:.1f}" y2="{T + ph + 6}" stroke="#333"/>')
         parts.append(
             f'<text x="{x:.1f}" y="{T + ph + 20}" text-anchor="middle" font-size="12" font-family="Georgia,serif" fill="#333">{_tick(tick)}</text>'
         )
-    for tick in _nice_ticks(y0, y1):
+    for tick in _nice_ticks(y0, y1, target=5):
         y = sy(tick)
         if not (T - 2 <= y <= T + ph + 2):
             continue
+        # faint horizontal grid
+        parts.append(
+            f'<line x1="{L}" y1="{y:.1f}" x2="{L + pw}" y2="{y:.1f}" stroke="#ddd" stroke-width="1"/>'
+        )
         parts.append(f'<line x1="{L - 6}" y1="{y:.1f}" x2="{L}" y2="{y:.1f}" stroke="#333"/>')
         parts.append(
             f'<text x="{L - 10}" y="{y:.1f}" text-anchor="end" dominant-baseline="middle" font-size="12" font-family="Georgia,serif" fill="#333">{_tick(tick)}</text>'
@@ -272,7 +320,7 @@ def svg_piecewise_exp(
         return P0 * math.exp(k1 * T) * math.exp(k2 * (t - T))
 
     return svg_curves(
-        [(f, "#8B5A2B", "piecewise")],
+        [(f, "#8B5A2B", "")],
         xmin=0,
         xmax=tmax,
         title=title,

@@ -47,34 +47,57 @@ def _critical_on_interval(coeffs: list[float], xmin: float, xmax: float) -> list
     return _roots_on_interval(_deriv(coeffs), xmin, xmax)
 
 
-def _nice_ticks(lo: float, hi: float, target: int = 6) -> list[float]:
-    """Integer-preferring tick positions across [lo, hi]."""
-    if hi <= lo:
-        return [lo]
-    span = hi - lo
-    # Prefer step 1, then 0.5, 2, 5, ...
-    candidates = [1.0, 0.5, 2.0, 2.5, 5.0, 10.0, 0.25]
-    best = None
-    for step in candidates:
-        n = int(span / step) + 1
-        if 3 <= n <= target + 2:
-            best = step
-            break
-    if best is None:
-        best = span / max(target - 1, 1)
-    # Align to multiples of step
+def _nice_num(x: float, round_step: bool) -> float:
+    """Classic nice-number helper (Wilkinson / graphics pipeline)."""
     import math
 
-    start = math.ceil(lo / best - 1e-9) * best
-    ticks = []
-    v = start
-    while v <= hi + 1e-9:
-        if lo - 1e-9 <= v <= hi + 1e-9:
+    if x <= 0 or not math.isfinite(x):
+        return 1.0
+    exp = math.floor(math.log10(x))
+    f = x / (10**exp)
+    if round_step:
+        if f < 1.5:
+            nf = 1.0
+        elif f < 3.0:
+            nf = 2.0
+        elif f < 7.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    else:
+        if f <= 1.0:
+            nf = 1.0
+        elif f <= 2.0:
+            nf = 2.0
+        elif f <= 5.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    return nf * (10**exp)
+
+
+def _nice_ticks(lo: float, hi: float, target: int = 6) -> list[float]:
+    """Even, round tick marks on [lo, hi] — never 157.1-style junk."""
+    import math
+
+    if not math.isfinite(lo) or not math.isfinite(hi) or hi <= lo:
+        return [lo if math.isfinite(lo) else 0.0]
+    raw_span = hi - lo
+    nice_span = _nice_num(raw_span, round_step=False)
+    step = _nice_num(nice_span / max(target - 1, 1), round_step=True)
+    if step <= 0:
+        step = raw_span / max(target - 1, 1)
+    nice_lo = math.floor(lo / step) * step
+    nice_hi = math.ceil(hi / step) * step
+    ticks: list[float] = []
+    n_steps = int(round((nice_hi - nice_lo) / step))
+    for i in range(n_steps + 1):
+        v = nice_lo + i * step
+        if lo - 0.25 * step <= v <= hi + 0.25 * step:
+            if abs(v - round(v)) < 1e-9 * max(1.0, abs(v)):
+                v = float(round(v))
             ticks.append(v)
-        v += best
-    if not ticks:
-        ticks = [lo, hi]
-    return ticks
+    return ticks or [lo, hi]
 
 
 def svg_polynomial(
@@ -211,12 +234,18 @@ def svg_polynomial(
 def _tick(v: float) -> str:
     if abs(v) < 1e-9:
         return "0"
+    av = abs(v)
+    if av >= 100:
+        return str(int(round(v)))
     if abs(v - round(v)) < 1e-6:
         return str(int(round(v)))
-    # Prefer halves
+    if av >= 10:
+        return f"{v:.1f}".rstrip("0").rstrip(".")
     if abs(2 * v - round(2 * v)) < 1e-6:
-        return f"{v:.1f}".rstrip("0").rstrip(".") if False else f"{v:.1f}"
-    return f"{v:.1f}"
+        return f"{v:.1f}"
+    if abs(10 * v - round(10 * v)) < 1e-6:
+        return f"{v:.1f}"
+    return f"{v:.2g}"
 
 
 def _esc(s: str) -> str:

@@ -21,12 +21,69 @@ def poly(coeffs: list[float]) -> Fn:
     return lambda x, c=coeffs: _poly_eval(c, x)
 
 
+def _nice_num(x: float, round_step: bool) -> float:
+    import math
+
+    if x <= 0 or not math.isfinite(x):
+        return 1.0
+    exp = math.floor(math.log10(x))
+    f = x / (10**exp)
+    if round_step:
+        if f < 1.5:
+            nf = 1.0
+        elif f < 3.0:
+            nf = 2.0
+        elif f < 7.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    else:
+        if f <= 1.0:
+            nf = 1.0
+        elif f <= 2.0:
+            nf = 2.0
+        elif f <= 5.0:
+            nf = 5.0
+        else:
+            nf = 10.0
+    return nf * (10**exp)
+
+
+def _nice_ticks(lo: float, hi: float, target: int = 5) -> list[float]:
+    import math
+
+    if not math.isfinite(lo) or not math.isfinite(hi) or hi <= lo:
+        return [lo if math.isfinite(lo) else 0.0]
+    span = _nice_num(hi - lo, round_step=False)
+    step = _nice_num(span / max(target - 1, 1), round_step=True)
+    if step <= 0:
+        step = (hi - lo) / max(target - 1, 1)
+    nice_lo = math.floor(lo / step) * step
+    nice_hi = math.ceil(hi / step) * step
+    ticks: list[float] = []
+    n_steps = int(round((nice_hi - nice_lo) / step))
+    for i in range(n_steps + 1):
+        v = nice_lo + i * step
+        if lo - 0.25 * step <= v <= hi + 0.25 * step:
+            if abs(v - round(v)) < 1e-9 * max(1.0, abs(v)):
+                v = float(round(v))
+            ticks.append(v)
+    return ticks or [lo, hi]
+
+
 def _tick(v: float) -> str:
     if abs(v) < 1e-9:
         return "0"
+    av = abs(v)
+    if av >= 100:
+        return str(int(round(v)))
     if abs(v - round(v)) < 1e-6:
         return str(int(round(v)))
-    return f"{v:.1f}"
+    if av >= 10:
+        return f"{v:.1f}".rstrip("0").rstrip(".")
+    if abs(10 * v - round(10 * v)) < 1e-6:
+        return f"{v:.1f}"
+    return f"{v:.2g}"
 
 
 def _esc(s: str) -> str:
@@ -78,12 +135,8 @@ def svg_plane(
     def Y(y: float) -> float:
         return T + (ymax - y) / (ymax - ymin) * ph
 
-    xt = xticks if xticks is not None else [
-        xmin + (xmax - xmin) * k / 4 for k in range(5)
-    ]
-    yt = yticks if yticks is not None else [
-        ymin + (ymax - ymin) * k / 4 for k in range(5)
-    ]
+    xt = xticks if xticks is not None else _nice_ticks(xmin, xmax, target=5)
+    yt = yticks if yticks is not None else _nice_ticks(ymin, ymax, target=5)
 
     clip_id = f"clip-{abs(hash((title, xmin, xmax, ymin, ymax))) % 10_000_000}"
     parts: list[str] = []
