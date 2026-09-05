@@ -28,6 +28,7 @@ import {
   demoMathLockDistance,
   isDemoMathTaskLocked,
   lastUnlockedDemoMathIndex,
+  loadMathChapterTasks,
   type MathChapter,
   type MathTask,
 } from "@/data/math-chapters";
@@ -126,6 +127,11 @@ export function MathTasksPage({ tier }: Props) {
   const skipNextIdxResetRef = useRef(false);
   const [theoryChapter, setTheoryChapter] = useState<number | null>(null);
   const [progress, setProgress] = useState<Progress>({ passed: [], revision: [] });
+  const [loadedTasks, setLoadedTasks] = useState<Record<number, MathTask[]>>({});
+  const [loadingChapters, setLoadingChapters] = useState<Record<number, boolean>>({});
+  const [banksReady, setBanksReady] = useState(false);
+  const loadedTasksRef = useRef(loadedTasks);
+  loadedTasksRef.current = loadedTasks;
   const authGate = useAuthGate();
   const requireAuthForAnswers =
     tier === "demo" ? authGate.requireAuth : () => true;
@@ -133,6 +139,53 @@ export function MathTasksPage({ tier }: Props) {
   useEffect(() => {
     setProgress(loadProgress());
   }, []);
+
+  /** Prefetch banks gradually so the first paint stays light. */
+  useEffect(() => {
+    let cancelled = false;
+    const nums = chapters.filter((c) => !c.comingSoon).map((c) => c.num);
+    void (async () => {
+      for (const num of nums) {
+        if (cancelled) return;
+        try {
+          const tasks = await loadMathChapterTasks(num);
+          if (cancelled) return;
+          setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
+        } catch {
+          /* keep going — missing chapter should not block the shell */
+        }
+        // Yield between chapter parses so the UI stays responsive.
+        await new Promise((r) => setTimeout(r, 0));
+      }
+      if (!cancelled) setBanksReady(true);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [chapters]);
+
+  const ensureChapterLoaded = useCallback(async (num: number) => {
+    if (loadedTasksRef.current[num]) return;
+    setLoadingChapters((prev) => (prev[num] ? prev : { ...prev, [num]: true }));
+    try {
+      const tasks = await loadMathChapterTasks(num);
+      setLoadedTasks((prev) => (prev[num] ? prev : { ...prev, [num]: tasks }));
+    } finally {
+      setLoadingChapters((prev) => {
+        if (!prev[num]) return prev;
+        const next = { ...prev };
+        delete next[num];
+        return next;
+      });
+    }
+  }, []);
+
+  /** Load the active chapter immediately (before full prefetch finishes). */
+  useEffect(() => {
+    if (typeof activeChapter !== "number") return;
+    void ensureChapterLoaded(activeChapter);
+  }, [activeChapter, ensureChapterLoaded]);
+
   const [expanded, setExpanded] = useState<Record<number, boolean>>(
     () => Object.fromEntries(chapters.map((c) => [c.num, false])),
   );
@@ -162,16 +215,16 @@ export function MathTasksPage({ tier }: Props) {
 
   const byChapter = useMemo(() => {
     const map = new Map<number, MathTask[]>();
-    chapters.forEach((c) => map.set(c.num, c.tasks));
+    chapters.forEach((c) => map.set(c.num, loadedTasks[c.num] ?? []));
     return map;
-  }, [chapters]);
+  }, [chapters, loadedTasks]);
 
   const revisionCases = useMemo(
     () =>
       chapters
-        .flatMap((c) => c.tasks)
+        .flatMap((c) => loadedTasks[c.num] ?? [])
         .filter((t) => progress.revision.includes(t.id)),
-    [chapters, progress.revision],
+    [chapters, loadedTasks, progress.revision],
   );
 
   const activeList: MathTask[] =
@@ -354,9 +407,9 @@ export function MathTasksPage({ tier }: Props) {
 
   const openChapterTasks = (ch: MathChapter) => {
     setExpanded((e) => ({ ...e, [ch.num]: true }));
+    void ensureChapterLoaded(ch.num);
     // Do not setActiveChapter here — switching the main panel to that chapter's
     // first task mounts heavy KaTeX and freezes the click.
-    void ch;
   };
 
   /**
@@ -372,6 +425,7 @@ export function MathTasksPage({ tier }: Props) {
     }
     if (hasTheory) {
       setExpanded((e) => ({ ...e, [ch.num]: true }));
+      void ensureChapterLoaded(ch.num);
       startTransition(() => setTheoryChapter(ch.num));
       return;
     }
@@ -473,6 +527,7 @@ export function MathTasksPage({ tier }: Props) {
                                 // Expand task list only — do not switch activeChapter
                                 // (that would remount the main panel's KaTeX task).
                                 setExpanded((e) => ({ ...e, [ch.num]: true }));
+                                void ensureChapterLoaded(ch.num);
                               }}
                               className="grid w-9 shrink-0 place-items-center rounded-l-xl text-muted-foreground hover:bg-secondary/60"
                               aria-label={isOpen ? "Collapse chapter" : "Expand chapter"}
@@ -543,7 +598,9 @@ export function MathTasksPage({ tier }: Props) {
                         <ul className="border-t border-border/60 py-1">
                           {list.length === 0 && (
                             <li className="px-4 py-2 text-[11px] text-muted-foreground">
-                              No tasks yet.
+                              {loadingChapters[ch.num] || !banksReady
+                                ? "Loading tasks…"
+                                : "No tasks yet."}
                             </li>
                           )}
                           {ch.subsections && ch.subsections.length > 0
@@ -902,7 +959,10 @@ export function MathTasksPage({ tier }: Props) {
             <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
               {activeChapter === "revision"
                 ? "Nothing to revise — all attempted tasks are clean. Keep going."
-                : "No tasks here yet. Content will be added soon."}
+                : typeof activeChapter === "number" &&
+                    (loadingChapters[activeChapter] || !banksReady)
+                  ? "Loading chapter tasks…"
+                  : "No tasks here yet. Content will be added soon."}
             </div>
           )}
 

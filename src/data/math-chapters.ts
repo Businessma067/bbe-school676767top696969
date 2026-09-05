@@ -1,38 +1,9 @@
 /**
  * Math syllabus chapters for Demo / Lite / Full practice pages.
- * Chapters 1 (Logic), 2 (Elementary algebra), 3 (Financial mathematics),
- * 4 (Equations), 5 (Linear equations), 6 (Inequalities),
- * 7 (Linear and quadratic functions), 8 (Power functions),
- * 9 (Polynomial functions, incl. Mixed exam 9.5),
- * 11 (Differentiation and single-variable optimization),
- * 12 (Elementary probability), and 13 (Binomial) are populated;
- * chapter 7 also exposes Mixed exam 7.5; chapter 10 is coming soon.
+ * Chapter task banks are loaded on demand (dynamic import) so opening a page
+ * does not parse every chapter's explanations into one giant JS chunk.
+ * Chapters 1–9 and 11–13 are populated; chapter 10 remains coming soon.
  */
-
-import { MATH_CH1_LOGIC, MATH_CH1_SUBSECTIONS } from "@/data/math-ch1-logic";
-import { MATH_CH2_ALGEBRA, MATH_CH2_SUBSECTIONS } from "@/data/math-ch2-elementary-algebra";
-import { MATH_CH4_EQUATIONS, MATH_CH4_SUBSECTIONS } from "@/data/math-ch4-equations";
-import {
-  MATH_CH5_LINEAR_EQUATIONS,
-  MATH_CH5_SUBSECTIONS,
-} from "@/data/math-ch5-linear-equations";
-import { MATH_CH7_LINEAR_QUADRATIC, MATH_CH7_SUBSECTIONS } from "@/data/math-ch7-linear-quadratic";
-import { MATH_CH9_POLYNOMIALS, MATH_CH9_SUBSECTIONS } from "@/data/math-ch9-polynomials";
-import {
-  MATH_CH8_POWER_FUNCTIONS,
-  MATH_CH8_SUBSECTIONS,
-} from "@/data/math-ch8-power-functions";
-import { MATH_CH6_INEQUALITIES, MATH_CH6_SUBSECTIONS } from "@/data/math-ch6-inequalities";
-import {
-  MATH_CH11_DIFFERENTIATION,
-  MATH_CH11_SUBSECTIONS as MATH_CH11_DIFF_SUBSECTIONS,
-} from "@/data/math-ch11-differentiation";
-import {
-  MATH_CH11_FINANCIAL,
-  MATH_CH11_SUBSECTIONS as MATH_CH3_SUBSECTIONS,
-} from "@/data/math-ch11-financial";
-import { MATH_CH12_PROBABILITY, MATH_CH12_SUBSECTIONS } from "@/data/math-ch12-probability";
-import { MATH_CH13_BINOMIAL, MATH_CH13_SUBSECTIONS } from "@/data/math-ch13-binomial";
 
 export type MathTask = {
   id: string;
@@ -173,72 +144,202 @@ const CHAPTER_TITLES = [
   "Binomial distribution",
 ] as const;
 
-function makePlaceholders(chapterNum: number, count: number): MathTask[] {
-  return Array.from({ length: count }, (_, i) => {
-    const n = i + 1;
-    return {
-      id: `math-${chapterNum}-${n}`,
-      case_id: `MATH ${chapterNum}.${String(n).padStart(2, "0")}`,
-      title: `Task ${n}`,
-      context: "",
-      statements: [],
-      answer_key: [],
-      tactical_explanations: [],
-      difficulty_level: "—",
-      sort_order: n,
-      placeholder: true,
-    };
-  });
+/** Lightweight subsection TOC — kept here so the practice shell does not import banks. */
+const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
+  1: [
+    { id: "1.1", title: "Sets: Elements, Subsets & Power Sets" },
+    { id: "1.2", title: "Set Operations, Complements & Counting" },
+    { id: "1.3", title: "Propositional Logic & Implications" },
+    { id: "1.4", title: "Quantifiers, Validity & Deduction" },
+    { id: "1.5", title: "Exam-style tasks" },
+  ],
+  2: [
+    { id: "2.1", title: "Expanding, factoring, and identities" },
+    { id: "2.2", title: "Rational expressions and algebraic fractions" },
+    { id: "2.3", title: "Powers, roots, and negative exponents" },
+    { id: "2.4", title: "Absolute value and algebraic rewriting" },
+    { id: "2.5", title: "Mixed exam sets" },
+  ],
+  3: [
+    { id: "3.1", title: "Interest Periods and Effective Rates" },
+    { id: "3.2", title: "Continuous Compounding" },
+    { id: "3.3", title: "Present Value" },
+    { id: "3.4", title: "Geometric Series" },
+    { id: "3.5", title: "Annuities, Annuities Due & Perpetuities" },
+    { id: "3.6", title: "Mortgage Repayments" },
+    { id: "3.7", title: "Internal Rate of Return" },
+    { id: "3.8", title: "Exam-style tasks" },
+  ],
+  4: [
+    { id: "4.1", title: "Linear equations in one unknown" },
+    { id: "4.2", title: "Quadratic equations" },
+    { id: "4.3", title: "Rational, radical and absolute-value equations" },
+    { id: "4.4", title: "Exponential and logarithmic equations" },
+    { id: "4.5", title: "Mixed exam sets" },
+  ],
+  5: [
+    { id: "5", title: "Linear equations in two unknowns" },
+    { id: "5.5", title: "Exam-style tasks" },
+  ],
+  6: [
+    { id: "6.1", title: "Rational Inequalities" },
+    { id: "6.2", title: "Quadratic Sign Inequalities" },
+    { id: "6.3", title: "Compound & Special Inequalities" },
+    { id: "6.4", title: "Word Problems" },
+    { id: "6.5", title: "Exam-style tasks" },
+  ],
+  7: [
+    { id: "7", title: "Linear and quadratic functions" },
+    { id: "7.5", title: "Mixed exam" },
+  ],
+  8: [
+    { id: "8", title: "Power functions" },
+    { id: "8.5", title: "Exam-style tasks" },
+  ],
+  9: [
+    { id: "9", title: "Polynomial functions" },
+    { id: "9.5", title: "Mixed exam" },
+  ],
+  11: [
+    { id: "11.1", title: "Differentiation rules & mechanics" },
+    { id: "11.2", title: "Economic interpretation of the derivative" },
+    { id: "11.3", title: "Finding and classifying optima" },
+    { id: "11.4", title: "Interpreting graphs without algebra" },
+    { id: "11.5", title: "Exam-style tasks" },
+  ],
+  12: [
+    { id: "12.1", title: "Combinatorial Probability" },
+    { id: "12.2", title: "Inclusion–Exclusion" },
+    { id: "12.3", title: "Conditional Probability" },
+    { id: "12.4", title: "Expected Value, Variance & SD" },
+    { id: "12.5", title: "Bayes' Theorem" },
+    { id: "12.6", title: "Exam-style tasks" },
+  ],
+  13: [
+    { id: "13", title: "Binomial distribution" },
+    { id: "13.5", title: "Exam-style tasks" },
+  ],
+};
+
+/** Chapters with a real task bank module (loaded on demand). */
+const LOADABLE_CHAPTERS = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]);
+
+type ChapterBankModule = {
+  tasks: MathTask[];
+};
+
+const chapterTaskCache = new Map<number, MathTask[]>();
+const chapterTaskInflight = new Map<number, Promise<MathTask[]>>();
+
+async function importChapterBank(num: number): Promise<ChapterBankModule> {
+  switch (num) {
+    case 1: {
+      const m = await import("@/data/math-ch1-logic");
+      return { tasks: m.MATH_CH1_LOGIC };
+    }
+    case 2: {
+      const m = await import("@/data/math-ch2-elementary-algebra");
+      return { tasks: m.MATH_CH2_ALGEBRA };
+    }
+    case 3: {
+      const m = await import("@/data/math-ch11-financial");
+      return { tasks: m.MATH_CH11_FINANCIAL };
+    }
+    case 4: {
+      const m = await import("@/data/math-ch4-equations");
+      return { tasks: m.MATH_CH4_EQUATIONS };
+    }
+    case 5: {
+      const m = await import("@/data/math-ch5-linear-equations");
+      return { tasks: m.MATH_CH5_LINEAR_EQUATIONS };
+    }
+    case 6: {
+      const m = await import("@/data/math-ch6-inequalities");
+      return { tasks: m.MATH_CH6_INEQUALITIES };
+    }
+    case 7: {
+      const m = await import("@/data/math-ch7-linear-quadratic");
+      return { tasks: m.MATH_CH7_LINEAR_QUADRATIC };
+    }
+    case 8: {
+      const m = await import("@/data/math-ch8-power-functions");
+      return { tasks: m.MATH_CH8_POWER_FUNCTIONS };
+    }
+    case 9: {
+      const m = await import("@/data/math-ch9-polynomials");
+      return { tasks: m.MATH_CH9_POLYNOMIALS };
+    }
+    case 11: {
+      const m = await import("@/data/math-ch11-differentiation");
+      return { tasks: m.MATH_CH11_DIFFERENTIATION };
+    }
+    case 12: {
+      const m = await import("@/data/math-ch12-probability");
+      return { tasks: m.MATH_CH12_PROBABILITY };
+    }
+    case 13: {
+      const m = await import("@/data/math-ch13-binomial");
+      return { tasks: m.MATH_CH13_BINOMIAL };
+    }
+    default:
+      return { tasks: [] };
+  }
 }
 
-const CHAPTER_OVERRIDES: Partial<Record<number, MathTask[]>> = {
-  1: MATH_CH1_LOGIC,
-  2: MATH_CH2_ALGEBRA,
-  3: MATH_CH11_FINANCIAL,
-  4: MATH_CH4_EQUATIONS,
-  5: MATH_CH5_LINEAR_EQUATIONS,
-  6: MATH_CH6_INEQUALITIES,
-  7: MATH_CH7_LINEAR_QUADRATIC,
-  8: MATH_CH8_POWER_FUNCTIONS,
-  9: MATH_CH9_POLYNOMIALS,
-  /** Includes 11.4 graph reading (MATH 11.121–11.160) and 11.5 exam-style (MATH 11.161–11.205). */
-  11: MATH_CH11_DIFFERENTIATION,
-  12: MATH_CH12_PROBABILITY,
-  13: MATH_CH13_BINOMIAL,
-};
+/** Load one chapter's tasks (cached). Safe to call repeatedly. */
+export async function loadMathChapterTasks(num: number): Promise<MathTask[]> {
+  if (!LOADABLE_CHAPTERS.has(num)) return [];
+  const cached = chapterTaskCache.get(num);
+  if (cached) return cached;
+  const inflight = chapterTaskInflight.get(num);
+  if (inflight) return inflight;
+  const promise = importChapterBank(num)
+    .then((m) => {
+      chapterTaskCache.set(num, m.tasks);
+      chapterTaskInflight.delete(num);
+      return m.tasks;
+    })
+    .catch((err) => {
+      chapterTaskInflight.delete(num);
+      throw err;
+    });
+  chapterTaskInflight.set(num, promise);
+  return promise;
+}
 
-const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = {
-  1: MATH_CH1_SUBSECTIONS,
-  2: MATH_CH2_SUBSECTIONS,
-  3: MATH_CH3_SUBSECTIONS,
-  4: MATH_CH4_SUBSECTIONS,
-  5: MATH_CH5_SUBSECTIONS,
-  6: MATH_CH6_SUBSECTIONS,
-  7: MATH_CH7_SUBSECTIONS,
-  8: MATH_CH8_SUBSECTIONS,
-  9: MATH_CH9_SUBSECTIONS,
-  11: MATH_CH11_DIFF_SUBSECTIONS,
-  12: MATH_CH12_SUBSECTIONS,
-  13: MATH_CH13_SUBSECTIONS,
-};
+/** Load every populated chapter bank (Custom Mock / migration). */
+export async function loadAllMathChapterTasks(): Promise<
+  { num: number; tasks: MathTask[] }[]
+> {
+  const nums = [...LOADABLE_CHAPTERS].sort((a, b) => a - b);
+  const loaded = await Promise.all(
+    nums.map(async (num) => ({ num, tasks: await loadMathChapterTasks(num) })),
+  );
+  return loaded;
+}
 
-/** Syllabus chapters with structure ready but no practice content yet. */
-const COMING_SOON_CHAPTERS = new Set([10]);
+export function peekMathChapterTasks(num: number): MathTask[] | undefined {
+  return chapterTaskCache.get(num);
+}
 
+/**
+ * Syllabus shell for the practice sidebar.
+ * `tasks` stays empty until `loadMathChapterTasks` fills the page state —
+ * this keeps the initial Math route chunk small.
+ */
 export const MATH_CHAPTERS: MathChapter[] = CHAPTER_TITLES.map((title, i) => {
   const num = i + 1;
-  const comingSoon = COMING_SOON_CHAPTERS.has(num);
+  const comingSoon = !LOADABLE_CHAPTERS.has(num);
   return {
     num,
     title,
-    tasks: comingSoon
-      ? []
-      : (CHAPTER_OVERRIDES[num] ?? makePlaceholders(num, MATH_TASKS_PER_CHAPTER)),
+    tasks: [],
     subsections: CHAPTER_SUBSECTIONS[num],
     comingSoon,
   };
 });
 
+/** @deprecated Prefer loadAllMathChapterTasks — sync flatMap is empty before lazy load. */
 export function allMathTasks(): MathTask[] {
-  return MATH_CHAPTERS.flatMap((ch) => ch.tasks);
+  return [...chapterTaskCache.values()].flat();
 }

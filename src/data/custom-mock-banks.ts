@@ -1,14 +1,17 @@
 /**
  * Server-only Full Course banks for Custom Mock Builder (Math / English).
  * Keep this module off the builder page so the client does not download
- * the entire course JSON.
+ * the entire course JSON. Math banks are loaded on demand via dynamic import.
  */
 
 import {
   ENGLISH_CHAPTERS,
   type EnglishTask,
 } from "@/data/english-chapters";
-import { MATH_CHAPTERS, type MathTask } from "@/data/math-chapters";
+import {
+  loadAllMathChapterTasks,
+  type MathTask,
+} from "@/data/math-chapters";
 
 export type CustomMockBankTask = {
   id: string;
@@ -51,10 +54,13 @@ function englishTaskToBank(t: EnglishTask): CustomMockBankTask {
   };
 }
 
-export function getLocalBuilderTasks(subject: "math" | "english"): CustomMockBankTask[] {
+export async function getLocalBuilderTasks(
+  subject: "math" | "english",
+): Promise<CustomMockBankTask[]> {
   if (subject === "math") {
-    return MATH_CHAPTERS.flatMap((ch) =>
-      ch.tasks.map((t) => mathTaskToBank(ch.num, t)).filter((t): t is CustomMockBankTask => t != null),
+    const loaded = await loadAllMathChapterTasks();
+    return loaded.flatMap(({ num, tasks }) =>
+      tasks.map((t) => mathTaskToBank(num, t)).filter((t): t is CustomMockBankTask => t != null),
     );
   }
   return ENGLISH_CHAPTERS.flatMap((ch) => ch.tasks.map(englishTaskToBank));

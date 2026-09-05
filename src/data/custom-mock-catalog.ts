@@ -149,6 +149,15 @@ export function getMathBuilderChapters(): CustomMockChapterToc[] {
       ]),
     ),
     toChapterToc(
+      9,
+      "Polynomial functions",
+      "Chapter 9",
+      subs(9, [
+        { id: "9", title: "Polynomial functions" },
+        { id: "9.5", title: "Mixed exam" },
+      ]),
+    ),
+    toChapterToc(
       11,
       "Differentiation and single-variable optimization",
       "Chapter 11",

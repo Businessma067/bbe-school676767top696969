@@ -2,7 +2,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { upsertFlashcardProgress } from "@/lib/activity-tracker";
 import { cardKey, loadProgress as loadFlashProgress } from "@/lib/flashcard-progress";
 import { recordTaskAttempt } from "@/lib/user-progress";
-import { MATH_CHAPTERS } from "@/data/math-chapters";
+import { loadAllMathChapterTasks } from "@/data/math-chapters";
 
 const MATH_STORAGE = "bbe.math.progress.v1";
 const ECON_STORAGE = "bbe.economics.progress.v1";
@@ -23,10 +23,11 @@ function readLocalList(key: string): LocalListProgress {
   }
 }
 
-function findMathTask(taskId: string) {
-  for (const ch of MATH_CHAPTERS) {
-    const task = ch.tasks.find((t) => t.id === taskId);
-    if (task) return { task, chapter: ch };
+async function findMathTask(taskId: string) {
+  const loaded = await loadAllMathChapterTasks();
+  for (const { num, tasks } of loaded) {
+    const task = tasks.find((t) => t.id === taskId);
+    if (task) return { task, chapterNum: num };
   }
   return null;
 }
@@ -44,7 +45,7 @@ async function syncMathProgress(): Promise<void> {
   const existingKeys = new Set((existing ?? []).map((r) => r.task_key));
 
   for (const id of ids) {
-    const found = findMathTask(id);
+    const found = await findMathTask(id);
     if (!found) continue;
     const taskKey = `migration:${found.task.case_id || found.task.id}`;
     if (existingKeys.has(taskKey)) continue;
@@ -53,7 +54,7 @@ async function syncMathProgress(): Promise<void> {
     const stmtCount = found.task.statements.length || found.task.answer_key.length;
     await recordTaskAttempt({
       subject: "math",
-      chapter: `Chapter ${found.chapter.num}`,
+      chapter: `Chapter ${found.chapterNum}`,
       taskKey,
       taskTitle: found.task.title,
       correctCount: passed ? stmtCount : Math.max(0, stmtCount - 1),

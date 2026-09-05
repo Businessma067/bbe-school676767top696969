@@ -31,6 +31,18 @@ export default defineConfig({
             if (id.includes("node_modules/recharts") || id.includes("node_modules/d3-")) {
               return "charts";
             }
+            // Keep each math chapter bank in its own async chunk.
+            const mathCh = id.match(/[/\\]src[/\\]data[/\\]math-ch(\d+)/);
+            if (mathCh) return `math-ch${mathCh[1]}`;
+            if (id.includes("/src/data/math-cases-ch") || id.includes("\\src\\data\\math-cases-ch")) {
+              return "math-cases";
+            }
+            if (
+              id.includes("/src/data/math-ch") ||
+              id.includes("\\src\\data\\math-ch")
+            ) {
+              return "math-data";
+            }
           },
         },
       },

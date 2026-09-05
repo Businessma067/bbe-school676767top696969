@@ -141,7 +141,9 @@ export const buildCustomMock = createServerFn({ method: "POST" })
       const tagged = allRows.filter((c) => subtopics.includes(c.subsection));
       pool = tagged.length >= questionCount ? tagged : allRows;
     } else {
-      pool = getLocalBuilderTasks(subject).filter((t) => subtopics.includes(t.subsection));
+      pool = (await getLocalBuilderTasks(subject)).filter((t) =>
+        subtopics.includes(t.subsection),
+      );
     }
 
     if (pool.length === 0) {
