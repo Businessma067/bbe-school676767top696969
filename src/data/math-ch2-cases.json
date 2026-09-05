@@ -4409,8 +4409,8 @@
         "**A.** → True\n\nClear a reciprocal equation only after writing a common domain restriction.\n\nAssume $z\\ne0$ and $z\\ne1$, then\n\n$$\\dfrac{1}{z-1}=\\dfrac{1}{z}$$\n\nCross-multiply:\n\n$$z=(z-1)$$\n\n$$0=-1$$\n\nThe cleared equation is impossible, so no real $z$ works. So the statement is True.",
         "**B.** → True\n\nSquare both sides of a radical equation only after recording the domain $\\sqrt{\\cdot}\\ge0$.\n\nDomain forces $z+3\\ge0$ and $z+1\\ge0$, so $z\\ge-1$. Square:\n\n$$z+3=(z+1)^2=z^2+2z+1$$\n\n$$0=z^2+z-2=(z+2)(z-1)$$\n\nCandidate roots $z=-2$ and $z=1$; only $z=1$ lies in $z\\ge-1$.\n\nCheck: $\\sqrt{1+3}=2$ and $1+1=2$. Exactly one real solution. So the statement is True.",
         "**C.** → True\n\nSplit $|z|=z^{2}$ into the cases $z\\ge0$ and $z<0$.\n\nFor $z\\ge0$, $|z|=z$, so $z=z^{2}$ gives $z(z-1)=0$, hence $z=0$ or $z=1$.\n\nFor $z<0$, $|z|=-z$, so $-z=z^{2}$. Then $z^{2}+z=0$ and $z(z+1)=0$, so $z=0$ or $z=-1$; only $z=-1$ is negative.\n\nThe three real solutions are $z=-1,0,1$. So the statement is True.",
-        "**D.** → True\n\nA linear factor $y-1$ divides a polynomial precisely when the value at $1$ vanishes.\n\nEvaluate:\n\n$$1^3-2\\cdot1+1=1-2+1=0$$\n\nBy the factor theorem, $y-1$ divides $y^{3}-2y+1$. So the statement is True.",
-        "**E.** → False\n\nOn $(0,1)$ the reciprocal is larger than $1$, not smaller.\n\nTake $p=1/2$:\n\n$$\\dfrac{1}{p}=2>1$$\n\nThe claim asserts $\\dfrac{1}{p}<1$ throughout $(0,1)$, which fails. So the statement is False."
+        "**D.** → True\n\nA linear factor $y-1$ divides a polynomial precisely when the polynomial vanishes at $y=1$.\n\nEvaluate the cubic at the prospective root:\n\n$$1^{3}-2\\cdot1+1$$\n\n$$=1-2+1$$\n\n$$=0$$\n\nBy the factor theorem, $y-1$ divides $y^{3}-2y+1$. So the statement is True.",
+        "**E.** → False\n\nOn the open unit interval the reciprocal is larger than one, not smaller.\n\nTake the interior point $p=\\dfrac{1}{2}$:\n\n$$\\dfrac{1}{p}=2$$\n\n$$2>1$$\n\nThe claim asserts $\\dfrac{1}{p}<1$ for every $0<p<1$, which already fails at this single witness. So the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 138,
@@ -4439,10 +4439,10 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nGuess a denesting of the form $\\sqrt{c}+\\sqrt{d}$ and square to match coefficients.\n\nTry $2+\\sqrt{3}$:\n\n$$(2+\\sqrt{3})^2=4+4\\sqrt{3}+3=7+4\\sqrt{3}$$\n\nTaking principal square roots of both sides (both positive) yields\n\n$$\\sqrt{7+4\\sqrt{3}}=2+\\sqrt{3}$$\n\nSo the statement is True.",
-        "**B.** → True\n\nRewrite $|z-2|\\le1$ as a two-sided inequality.\n\n$$-1\\le z-2\\le1$$\n\nAdd $2$ throughout:\n\n$$1\\le z\\le3$$\n\nThat is the closed interval $[1,3]$. So the statement is True.",
-        "**C.** → False\n\nBring every term to one side and factor.\n\n$$q^2-q=0$$\n\n$$q(q-1)=0$$\n\nThe roots are $q=0$ and $q=1$, so there are two real solutions, not one.\n\nSo the statement is False.",
+        "**B.** → True\n\nTranslate the absolute-value inequality into a closed interval about $2$.\n\nWrite the two-sided form:\n\n$$|z-2|\\le1$$\n\n$$-1\\le z-2\\le1$$\n\nAdd $2$ to every part:\n\n$$1\\le z\\le3$$\n\nIn interval notation that is $[1,3]$, matching the claim. So the statement is True.",
+        "**C.** → False\n\nBring every term to one side and factor the resulting quadratic.\n\nStart from $q^{2}=q$:\n\n$$q^{2}-q=0$$\n\n$$q(q-1)=0$$\n\nThe roots are $q=0$ and $q=1$.\n\nTwo distinct real solutions appear, so the claim of exactly one real solution is wrong. So the statement is False.",
         "**D.** → True\n\nUnder $u+v+w=0$, each numerator $u+v$ equals $-w$.\n\nSubstitute:\n\n$$\\dfrac{u+v}{w}=\\dfrac{-w}{w}=-1$$\n\nand likewise for the other two cyclic terms.\n\nAdding the three contributions:\n\n$$-1+(-1)+(-1)=-3$$\n\nSo the identity holds on the stated domain. So the statement is True.",
-        "**E.** → True\n\nOn $t\\ge0$, square both sides of $\\sqrt{t}=t$ (both sides nonnegative).\n\n$$t=t^2$$\n\n$$t^2-t=0$$\n\n$$t(t-1)=0$$\n\nThe solutions in $t\\ge0$ are exactly $t=0$ and $t=1$. So the statement is True."
+        "**E.** → True\n\nOn $t\\ge0$ both sides of $\\sqrt{t}=t$ are nonnegative, so squaring is reversible.\n\nSquare:\n\n$$t=t^{2}$$\n\n$$t^{2}-t=0$$\n\n$$t(t-1)=0$$\n\nThe solutions are $t=0$ and $t=1$, both admissible in $t\\ge0$.\n\nNo other nonnegative root appears, so the equation holds precisely at those two values. So the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 139,
@@ -4471,8 +4471,8 @@
       ],
       "tactical_explanations": [
         "**A.** → False\n\nAbsolute value equals the raw difference only when that difference is nonnegative.\n\nIf $u<v$, then $u-v<0$, so\n\n$$|u-v|=v-u=-(u-v)\\\\ne u-v$$\n\nCounterexample: $u=1$, $v=2$ gives $|1-2|=1\\ne-1=u-v$.\n\nSo the claimed identity fails on the stated positive quadrant. The statement is False.\n\nSo the statement is False.",
-        "**B.** → True\n\nExpand $(a+b)^{3}$ and rearrange to isolate $a^{3}+b^{3}$.\n\n$$(a+b)^3=a^3+3a^2b+3ab^2+b^3=a^3+b^3+3ab(a+b)$$\n\nTherefore\n\n$$a^3+b^3=(a+b)^3-3ab(a+b)=s^3-3ps$$\n\nwhich is the claimed formula. So the statement is True.",
-        "**C.** → True\n\nSquare the given relation $x+1/x=k$.\n\n$$\\left(x+\\dfrac{1}{x}\\right)^2=k^2$$\n\n$$x^2+2+\\dfrac{1}{x^2}=k^2$$\n\nSubtract $2$:\n\n$$x^2+\\dfrac{1}{x^2}=k^2-2$$\n\nSo the statement is True.",
+        "**B.** → True\n\nExpand $(a+b)^{3}$ and rearrange to isolate the sum of cubes in terms of $s=a+b$ and $p=ab$.\n\nExpand:\n\n$$(a+b)^{3}=a^{3}+b^{3}+3ab(a+b)$$\n\nTherefore\n\n$$a^{3}+b^{3}=(a+b)^{3}-3ab(a+b)$$\n\nSubstitute $s$ and $p$:\n\n$$a^{3}+b^{3}=s^{3}-3ps$$\n\nThat is the claimed formula, so the statement is True.",
+        "**C.** → True\n\nSquare the given relation $x+\\dfrac{1}{x}=k$ and peel off the cross term.\n\nSquare both sides:\n\n$$\\left(x+\\dfrac{1}{x}\\right)^{2}=k^{2}$$\n\n$$x^{2}+2+\\dfrac{1}{x^{2}}=k^{2}$$\n\nSubtract $2$:\n\n$$x^{2}+\\dfrac{1}{x^{2}}=k^{2}-2$$\n\nThat matches the claim, so the statement is True.",
         "**D.** → False\n\nCombine the negative powers over the common denominator $z^{2}$.\n\n$$z^{-1}+z^{-2}=\\dfrac{1}{z}+\\dfrac{1}{z^2}=\\dfrac{z+1}{z^2}$$\n\nThe claim instead prints $\\dfrac{1}{z+z^{2}}=\\dfrac{1}{z(1+z)}$.\n\nThese agree only for special $z$, not for every $z\\ne0$.\n\nCounterexample $z=1$: left side $2$, right side $1/2$. So the statement is False.",
         "**E.** → True\n\nOn $x\\ge5$ the quantity $x-5$ is nonnegative, so the principal square root drops the absolute value.\n\n$$\\sqrt{(x-5)^2}=|x-5|$$\n\n$$|x-5|=x-5\\qquad(x\\ge5)$$\n\nHence $\\sqrt{(x-5)^{2}}=x-5$ on the stated domain. So the statement is True."
       ],
@@ -4502,8 +4502,8 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nSquare the relation $a+b+c=0$.\n\n$$(a+b+c)^2=0$$\n\n$$a^2+b^2+c^2+2(ab+bc+ca)=0$$\n\nRearrange:\n\n$$a^2+b^2+c^2=-2(ab+bc+ca)$$\n\nSo the statement is True.",
-        "**B.** → True\n\nClear the equation on the domain $x\\ne\\pm1$.\n\n$$\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$$\n\nCross-multiply:\n\n$$x+1=2(x-1)$$\n\n$$x+1=2x-2$$\n\n$$3=x$$\n\nThe candidate $x=3$ lies off $\\pm1$, and substitution confirms it. The solution set is $\\{3\\}$. So the statement is True.",
+        "**A.** → True\n\nSquare the linear relation $a+b+c=0$ and rearrange the mixed products.\n\nSquare both sides:\n\n$$(a+b+c)^{2}=0$$\n\nExpand:\n\n$$a^{2}+b^{2}+c^{2}+2(ab+bc+ca)=0$$\n\nIsolate the sum of squares:\n\n$$a^{2}+b^{2}+c^{2}=-2(ab+bc+ca)$$\n\nThat is the claimed identity, so the statement is True.",
+        "**B.** → True\n\nClear the fractional equation on the domain $x\\ne\\pm1$, then check the candidate.\n\nAssume $x\\ne1$ and $x\\ne-1$:\n\n$$\\dfrac{1}{x-1}=\\dfrac{2}{x+1}$$\n\nCross-multiply:\n\n$$x+1=2(x-1)$$\n\n$$x+1=2x-2$$\n\n$$3=x$$\n\nThe value $x=3$ avoids $\\pm1$. Substituting confirms both sides equal $\\dfrac{1}{2}$. The solution set is $\\{3\\}$, so the statement is True.",
         "**C.** → True\n\nFor $p>0$ the principal $n$-th root satisfies the inverse relation with the $n$-th power.\n\n$$\\bigl(p^{1/n}\\bigr)^n=p^{n\\cdot(1/n)}=p^1=p$$\n\nSo the identity holds for every positive integer $n$. So the statement is True.",
         "**D.** → True\n\nAbsolute value equals the expression or its opposite according to the sign of the inside.\n\nFor $x<3$, $x-3<0$, so $|x-3|=-(x-3)=3-x$.\n\nFor $x\\ge3$, $x-3\\ge0$, so $|x-3|=x-3$.\n\nThat is exactly the claimed piecewise form. So the statement is True.",
         "**E.** → False\n\nCompare $b^{3}$ and $b^{2}$ by factoring.\n\n$$b^3-b^2=b^2(b-1)$$\n\nAt $b=1/2$ this difference is negative:\n\n$$\\bigl(\\tfrac12\\bigr)^3=\\tfrac18<\\tfrac14=\\bigl(\\tfrac12\\bigr)^2$$\n\nSo $b^{3}\\ge b^{2}$ fails for some real $b$. The statement is False.\n\nSo the statement is False."
@@ -4534,10 +4534,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nWrite each reciprocal with common denominator $abc$.\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}$$\n\nThe hypothesis $ab+bc+ca=0$ forces the numerator to vanish, so the sum of reciprocals is $0$.\n\nSo the statement is True.",
+        "**A.** → True\n\nWrite the sum of reciprocals over the common denominator $abc$, then use $ab+bc+ca=0$.\n\nCombine:\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}+\\dfrac{1}{c}=\\dfrac{bc+ca+ab}{abc}$$\n\nThe numerator is exactly $ab+bc+ca$, which vanishes by hypothesis, and $abc\\ne0$.\n\nHence the sum of reciprocals is $0$. So the statement is True.",
         "**B.** → False\n\nCompare squares of both proposed sides for $s>0$.\n\nLeft side squared:\n\n$$\\left(\\sqrt{s+\\dfrac{1}{s}-2}\\right)^2=s+\\dfrac{1}{s}-2=\\left(\\sqrt{s}-\\dfrac{1}{\\sqrt{s}}\\right)^2$$\n\nso the left side equals $\\bigl|\\sqrt{s}-1/\\sqrt{s}\\bigr|$.\n\nRight side $\\sqrt{s}+1/\\sqrt{s}$ is strictly larger whenever $s\\ne1$.\n\nAt $s=4$: left $\\sqrt{4+1/4-2}=\\sqrt{9/4}=3/2$, right $2+1/2=5/2$. So the statement is False.",
-        "**C.** → True\n\nRewrite $|v-1|<2$ as a two-sided bound.\n\n$$-2<v-1<2$$\n\nAdd $1$:\n\n$$-1<v<3$$\n\nThat is exactly the claimed open interval. So the statement is True.",
-        "**D.** → True\n\nExpand $(s+t)^{3}$ and identify $u=s+t$.\n\n$$(s+t)^3=s^3+t^3+3st(s+t)$$\n\nReplace $s+t$ by $u$:\n\n$$u^3=s^3+t^3+3stu$$\n\nRearrangement gives $s^{3}+t^{3}+3stu=u^{3}$. So the statement is True.",
+        "**C.** → True\n\nRewrite the absolute-value inequality as a two-sided bound around the centre $1$.\n\nBy definition,\n\n$$|v-1|<2$$\n\n$$-2<v-1<2$$\n\nAdd $1$ throughout:\n\n$$-1<v<3$$\n\nThe open interval $-1<v<3$ is exactly the claimed description, so the statement is True.",
+        "**D.** → True\n\nExpand $(s+t)^{3}$ and identify the sum with the third letter $u$.\n\nCube the sum:\n\n$$(s+t)^{3}=s^{3}+3s^{2}t+3st^{2}+t^{3}$$\n\n$$(s+t)^{3}=s^{3}+t^{3}+3st(s+t)$$\n\nReplace $s+t$ by $u$:\n\n$$u^{3}=s^{3}+t^{3}+3stu$$\n\nRearrange:\n\n$$s^{3}+t^{3}+3stu=u^{3}$$\n\nSo the statement is True.",
         "**E.** → True\n\nCompare $\\dfrac{z+1}{z-1}$ with $1$ by subtracting.\n\n$$\\dfrac{z+1}{z-1}-1=\\dfrac{(z+1)-(z-1)}{z-1}=\\dfrac{2}{z-1}$$\n\nFor $z>1$ the denominator is positive, so the difference is positive.\n\nHence $\\dfrac{z+1}{z-1}>1$. So the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -4600,8 +4600,8 @@
       "tactical_explanations": [
         "**A.** → True\n\nEquality $|a+b|=|a|+|b|$ holds precisely when $a$ and $b$ do not point opposite ways.\n\nIf $ab\\ge0$, then $a$ and $b$ are both $\\ge0$ or both $\\le0$, and the identity holds.\n\nIf $ab<0$, the absolute values cancel partly and $|a+b|<|a|+|b|$.\n\nSo the iff statement with $ab\\ge0$ is correct. So the statement is True.",
         "**B.** → False\n\nA quadratic $ax^{2}+bx+c$ with $a\\ne0$ has no real root precisely when its discriminant is negative.\n\n$$\\Delta=b^2-4ac$$\n\nNo real root $\\Longleftrightarrow\\Delta<0$, i.e. $b^{2}<4ac$.\n\nThe claim writes $b^{2}>4ac$, which is the two-distinct-real-roots regime. So the statement is False.",
-        "**C.** → True\n\nClear the proportion of nonzero quantities.\n\n$$\\dfrac{x}{y}=\\dfrac{y}{z}$$\n\nCross-multiply:\n\n$$xz=y^2$$\n\nwhich rearranges to the claimed $y^{2}=xz$. So the statement is True.",
-        "**D.** → True\n\nMultiply numerator and denominator by the conjugate $\\sqrt{p}+1$.\n\n$$\\dfrac{1}{\\sqrt{p}-1}\\cdot\\dfrac{\\sqrt{p}+1}{\\sqrt{p}+1}=\\dfrac{\\sqrt{p}+1}{p-1}$$\n\nvalid for $p>0$, $p\\ne1$. So the statement is True.",
+        "**C.** → True\n\nClear a proportion of nonzero quantities by cross-multiplication.\n\nFrom $\\dfrac{x}{y}=\\dfrac{y}{z}$ with $x,y,z\\ne0$:\n\n$$xz=y\\cdot y$$\n\n$$xz=y^{2}$$\n\nRearrange to the claimed form:\n\n$$y^{2}=xz$$\n\nThe identity follows directly, so the statement is True.",
+        "**D.** → True\n\nRationalize the denominator by multiplying by the conjugate $\\sqrt{p}+1$.\n\nStart from $\\dfrac{1}{\\sqrt{p}-1}$ with $p>0$, $p\\ne1$:\n\n$$\\dfrac{1}{\\sqrt{p}-1}\\cdot\\dfrac{\\sqrt{p}+1}{\\sqrt{p}+1}$$\n\n$$=\\dfrac{\\sqrt{p}+1}{p-1}$$\n\nThe denominator is now free of the root, matching the claim. So the statement is True.",
         "**E.** → True\n\nThe expression $|x+1|-|x-1|$ is piecewise linear with critical points at $x=\\pm1$.\n\nOn $x\\ge1$ it equals $(x+1)-(x-1)=2$.\n\nOn $x\\le-1$ it equals $-(x+1)-(-(x-1))=-2$.\n\nOn $-1<x<1$ it equals $(x+1)-(1-x)=2x$, which lies in $(-2,2)$.\n\nHence the expression stays in $[-2,2]$ for every real $x$. So the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -4630,11 +4630,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nDistribute the outer exponent across the product and multiply exponents on the same base.\n\n$$\\bigl(u^2v\\bigr)^3=(u^2)^3\\,v^3=u^6v^3$$\n\nSo the identity holds for $u,v>0$. So the statement is True.",
+        "**A.** → True\n\nDistribute an outer exponent across a product, then multiply exponents on matching bases.\n\nStart from $(u^{2}v)^{3}$ with $u,v>0$:\n\n$$(u^{2}v)^{3}=(u^{2})^{3}\\,v^{3}$$\n\n$$=u^{6}v^{3}$$\n\nThe exponents on $u$ multiply as $2\\cdot3=6$, and the factor $v$ contributes $v^{3}$. That matches the claim, so the statement is True.",
         "**B.** → True\n\nWrite each term with denominator $abc$ after using $a+b+c=0$.\n\n$$\\dfrac{1}{ab}+\\dfrac{1}{bc}+\\dfrac{1}{ca}=\\dfrac{c+a+b}{abc}=\\dfrac{a+b+c}{abc}$$\n\nThe numerator vanishes by hypothesis, so the sum is $0$. So the statement is True.",
         "**C.** → True\n\nRecognize $\\sqrt{x+2\\sqrt{x}+1}$ as a perfect square for $x\\ge0$.\n\n$$x+2\\sqrt{x}+1=(\\sqrt{x}+1)^2$$\n\n$$\\sqrt{x+2\\sqrt{x}+1}=\\sqrt{x}+1$$\n\nAdd $\\sqrt{x}$:\n\n$$\\sqrt{x}+\\sqrt{x+2\\sqrt{x}+1}=2\\sqrt{x}+1$$\n\nSo the statement is True.",
-        "**D.** → True\n\nRewrite $|2x-1|<3$ as a two-sided inequality.\n\n$$-3<2x-1<3$$\n\nAdd $1$:\n\n$$-2<2x<4$$\n\nDivide by $2$:\n\n$$-1<x<2$$\n\nSo the statement is True.",
-        "**E.** → True\n\nUse the factor theorem / geometric sum factorization.\n\n$$u^n-1=(u-1)(u^{n-1}+u^{n-2}+\\cdots+1)$$\n\nfor every positive integer $n$. Hence $u-1$ divides $u^{n}-1$. So the statement is True."
+        "**D.** → True\n\nRewrite the absolute-value inequality as a two-sided bound, then isolate $x$.\n\nStart from the definition:\n\n$$|2x-1|<3$$\n\n$$-3<2x-1<3$$\n\nAdd $1$ to every part:\n\n$$-2<2x<4$$\n\nDivide through by the positive coefficient $2$:\n\n$$-1<x<2$$\n\nThat open interval is exactly the claimed solution set, so the statement is True.",
+        "**E.** → True\n\nFactor $u^{n}-1$ by the geometric-sum identity (or apply the factor theorem at $u=1$).\n\nFor every positive integer $n$,\n\n$$u^{n}-1=(u-1)(u^{n-1}+u^{n-2}+\\cdots+u+1)$$\n\nThe second factor is a polynomial, so $u-1$ divides $u^{n}-1$.\n\nAlternatively, substituting $u=1$ gives $1^{n}-1=0$, and the factor theorem yields the same conclusion. So the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 145,
@@ -4663,9 +4663,9 @@
       ],
       "tactical_explanations": [
         "**A.** → True\n\nCombine the two fractions over the common denominator $xy$.\n\n$$\\dfrac{y}{x}+\\dfrac{x}{y}=\\dfrac{y^2+x^2}{xy}=\\dfrac{x^2+y^2}{xy}$$\n\nSo the identity holds for nonzero $x,y$. So the statement is True.",
-        "**B.** → False\n\nA principal square root returns a nonnegative absolute value.\n\n$$\\sqrt{(v-2)^2}=|v-2|$$\n\nwhich equals $v-2$ only when $v\\ge2$.\n\nAt $v=0$: left side $2$, right side $-2$. So the statement is False.",
-        "**C.** → False\n\nThe difference of absolute values $|q|-|q-2|$ is not constantly $2$.\n\nAt $q=0$:\n\n$$|0|-|0-2|=-2\\\\ne2$$\n\nAt $q=3$:\n\n$$|3|-|3-2|=2$$\n\nThe constant claim fails. So the statement is False.",
-        "**D.** → True\n\nCancel a nonzero common factor $a$ from $a^{2}=ac$.\n\n$$a^2-ac=0$$\n\n$$a(a-c)=0$$\n\nWith $a\\ne0$, necessarily $a=c$. So the statement is True.",
+        "**B.** → False\n\nA principal square root returns a nonnegative absolute value, not the raw signed expression.\n\nBy definition,\n\n$$\\sqrt{(v-2)^{2}}=|v-2|$$\n\nand $|v-2|=v-2$ only when $v\\ge2$.\n\nAt $v=0$:\n\n$$\\sqrt{(0-2)^{2}}=2\\ne-2=v-2$$\n\nThe identity fails off that half-line, so the statement is False.",
+        "**C.** → False\n\nThe difference $|q|-|q-2|$ changes with $q$; it is not a constant $2$.\n\nEvaluate at $q=0$:\n\n$$|0|-|0-2|=0-2=-2$$\n\nEvaluate at $q=3$:\n\n$$|3|-|1|=2$$\n\nThe two values already disagree, so the constant claim fails. So the statement is False.",
+        "**D.** → True\n\nCancel a nonzero common factor only after moving every term to one side.\n\nStart from $a^{2}=ac$ with $a\\ne0$:\n\n$$a^{2}-ac=0$$\n\nFactor:\n\n$$a(a-c)=0$$\n\nThe product vanishes, and $a\\ne0$, so the remaining factor must vanish:\n\n$$a-c=0$$\n\n$$a=c$$\n\nThe implication holds on the stated domain, so the statement is True.",
         "**E.** → False\n\nThe sum of reciprocals is the sum over the product.\n\n$$\\dfrac{1}{a}+\\dfrac{1}{b}=\\dfrac{a+b}{ab}=\\dfrac{s}{p}$$\n\nThe claim prints $\\dfrac{p}{s}$ instead.\n\nThose ratios agree only in special cases, not in general. So the statement is False."
       ],
       "difficulty_level": "5/5",

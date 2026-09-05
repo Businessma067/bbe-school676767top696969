@@ -21,15 +21,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet $x$ represent adult admissions and $y$ represent child admissions. Translate both independent conditions before testing the claim.\n\n$$1x+1y=140$$\n\n$$18x+10y=2048$$\n\n$$\\Delta=1(10)-1(18)=-8$$\n\n$$x=\\frac{140(10)-1(2048)}{-8}=81$$\n\n$$y=\\frac{1(2048)-140(18)}{-8}=59$$\n\nThe system gives $81$ for adult admissions, not $85$, so the statement is False.",
-        "**B.** → True\n\nLet $x$ represent kilograms of high-nitrogen soil and $y$ represent kilograms of low-nitrogen soil. Translate both independent conditions before testing the claim.\n\n$$1x+1y=60$$\n\n$$20x+8y=780$$\n\n$$\\Delta=1(8)-1(20)=-12$$\n\n$$x=\\frac{60(8)-1(780)}{-12}=25$$\n\n$$y=\\frac{1(780)-60(20)}{-12}=35$$\n\nThe system gives $25$ kg for kilograms of high-nitrogen soil, exactly as claimed, so the statement is True.",
-        "**C.** → False\n\nLet $x$ represent teacher's age and $y$ represent student's age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=66$$\n\n$$1x-1y=24$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{66(-1)-1(24)}{-2}=45$$\n\n$$y=\\frac{1(24)-66(1)}{-2}=21$$\n\nThe system gives $45$ years for teacher's age, not $48$ years, so the statement is False.",
-        "**D.** → True\n\nLet $x$ represent still-air drone speed and $y$ represent wind speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=78$$\n\n$$1x-1y=54$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{78(-1)-1(54)}{-2}=66$$\n\n$$y=\\frac{1(54)-78(1)}{-2}=12$$\n\nThe system gives $66$ km/h for still-air drone speed, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nLet $x$ represent muffin trays and $y$ represent tart trays. Translate both independent conditions before testing the claim.\n\n$$1x+1y=46$$\n\n$$2x+5y=158$$\n\n$$\\Delta=1(5)-1(2)=3$$\n\n$$x=\\frac{46(5)-1(158)}{3}=24$$\n\n$$y=\\frac{1(158)-46(2)}{3}=22$$\n\nThe system gives $24$ for muffin trays, not $28$, so the statement is False."
+        "**A.** → False\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=140$$\n\n$$18x+10y=2048$$\n\n$$\\Delta=1(10)-1(18)=-8$$\n\n$$x=\\frac{140(10)-1(2048)}{-8}=81$$\n\n$$y=\\frac{1(2048)-140(18)}{-8}=59$$\n\nThe system gives $81$ for adult admissions, not $85$.\n\nSo the statement is False.",
+        "**B.** → True\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x+1y=60$$\n\n$$20x+8y=780$$\n\n$$\\Delta=1(8)-1(20)=-12$$\n\n$$x=\\frac{60(8)-1(780)}{-12}=25$$\n\n$$y=\\frac{1(780)-60(20)}{-12}=35$$\n\nThe system gives $25$ kg for kilograms of high-nitrogen soil, exactly as claimed.\n\nSo the statement is True.",
+        "**C.** → False\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=66$$\n\n$$1x-1y=24$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{66(-1)-1(24)}{-2}=45$$\n\n$$y=\\frac{1(24)-66(1)}{-2}=21$$\n\nThe system gives $45$ years for teacher's age, not $48$ years.\n\nSo the statement is False.",
+        "**D.** → True\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=78$$\n\n$$1x-1y=54$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{78(-1)-1(54)}{-2}=66$$\n\n$$y=\\frac{1(54)-78(1)}{-2}=12$$\n\nThe system gives $66$ km/h for still-air drone speed, exactly as claimed.\n\nSo the statement is True.",
+        "**E.** → False\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=46$$\n\n$$2x+5y=158$$\n\n$$\\Delta=1(5)-1(2)=3$$\n\n$$x=\\frac{46(5)-1(158)}{3}=24$$\n\n$$y=\\frac{1(158)-46(2)}{3}=22$$\n\nThe system gives $24$ for muffin trays, not $28$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 61,
-      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. solve an observatory's two-price admission record.\nB. blend greenhouse soils to a target nitrogen level.\nC. solve ages from a sum and a difference.\nD. recover drone and wind speeds.\nE. solve a bakery production system.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: tickets, mixture, ages_digits, rates_work, systems\n\nA. solve an observatory's two-price admission record.\nB. blend greenhouse soils to a target nitrogen level.\nC. solve ages from a sum and a difference.\nD. recover drone and wind speeds.\nE. solve a bakery production system.",
       "placeholder": false
     },
     {
@@ -53,15 +53,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ represent liters of 70 percent antifreeze and $y$ represent liters of 30 percent antifreeze. Translate both independent conditions before testing the claim.\n\n$$1x+1y=50$$\n\n$$70x+30y=2300$$\n\n$$\\Delta=1(30)-1(70)=-40$$\n\n$$x=\\frac{50(30)-1(2300)}{-40}=20$$\n\n$$y=\\frac{1(2300)-50(70)}{-40}=30$$\n\nThe system gives $20$ liters for liters of 70 percent antifreeze, exactly as claimed, so the statement is True.",
-        "**B.** → False\n\nLet $x$ represent architect's current age and $y$ represent intern's current age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=72$$\n\n$$1x-3y=-16$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{72(-3)-1(-16)}{-4}=50$$\n\n$$y=\\frac{1(-16)-72(1)}{-4}=22$$\n\nThe system gives $50$ years for architect's current age, not $46$ years, so the statement is False.",
-        "**C.** → True\n\nLet $x$ represent new printer rate and $y$ represent old printer rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=92$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{92(-1)-1(18)}{-2}=55$$\n\n$$y=\\frac{1(18)-92(1)}{-2}=37$$\n\nThe system gives $55$ labels/min for new printer rate, exactly as claimed, so the statement is True.",
-        "**D.** → False\n\nLet $x$ represent bronze batches and $y$ represent steel batches. Translate both independent conditions before testing the claim.\n\n$$3x+2y=94$$\n\n$$1x+4y=88$$\n\n$$\\Delta=3(4)-2(1)=10$$\n\n$$x=\\frac{94(4)-2(88)}{10}=20$$\n\n$$y=\\frac{3(88)-94(1)}{10}=17$$\n\nThe system gives $20$ for bronze batches, not $15$, so the statement is False.",
-        "**E.** → True\n\nLet $x$ represent VIP passes and $y$ represent regular passes. Translate both independent conditions before testing the claim.\n\n$$1x+1y=96$$\n\n$$45x+27y=3312$$\n\n$$\\Delta=1(27)-1(45)=-18$$\n\n$$x=\\frac{96(27)-1(3312)}{-18}=40$$\n\n$$y=\\frac{1(3312)-96(45)}{-18}=56$$\n\nThe system gives $40$ for VIP passes, exactly as claimed, so the statement is True."
+        "**A.** → True\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=50$$\n\n$$70x+30y=2300$$\n\n$$\\Delta=1(30)-1(70)=-40$$\n\n$$x=\\frac{50(30)-1(2300)}{-40}=20$$\n\n$$y=\\frac{1(2300)-50(70)}{-40}=30$$\n\nThe system gives $20$ liters for liters of 70 percent antifreeze, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x+1y=72$$\n\n$$1x-3y=-16$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{72(-3)-1(-16)}{-4}=50$$\n\n$$y=\\frac{1(-16)-72(1)}{-4}=22$$\n\nThe system gives $50$ years for architect's current age, not $46$ years.\n\nSo the statement is False.",
+        "**C.** → True\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=92$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{92(-1)-1(18)}{-2}=55$$\n\n$$y=\\frac{1(18)-92(1)}{-2}=37$$\n\nThe system gives $55$ labels/min for new printer rate, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$3x+2y=94$$\n\n$$1x+4y=88$$\n\n$$\\Delta=3(4)-2(1)=10$$\n\n$$x=\\frac{94(4)-2(88)}{10}=20$$\n\n$$y=\\frac{3(88)-94(1)}{10}=17$$\n\nThe system gives $20$ for bronze batches, not $15$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=96$$\n\n$$45x+27y=3312$$\n\n$$\\Delta=1(27)-1(45)=-18$$\n\n$$x=\\frac{96(27)-1(3312)}{-18}=40$$\n\n$$y=\\frac{1(3312)-96(45)}{-18}=56$$\n\nThe system gives $40$ for VIP passes, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 62,
-      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. mix two antifreeze strengths.\nB. translate a past age ratio and current sum.\nC. split a combined printing rate.\nD. balance foundry batches across two resources.\nE. recover a festival's VIP pass count.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: mixture, ages_digits, rates_work, systems, tickets\n\nA. mix two antifreeze strengths.\nB. translate a past age ratio and current sum.\nC. split a combined printing rate.\nD. balance foundry batches across two resources.\nE. recover a festival's VIP pass count.",
       "placeholder": false
     },
     {
@@ -85,15 +85,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet $x$ represent grandmother's present age and $y$ represent granddaughter's present age. Translate both independent conditions before testing the claim.\n\n$$1x-4y=0$$\n\n$$1x-2y=12$$\n\n$$\\Delta=1(-2)--4(1)=2$$\n\n$$x=\\frac{0(-2)--4(12)}{2}=24$$\n\n$$y=\\frac{1(12)-0(1)}{2}=6$$\n\nThe system gives $24$ years for grandmother's present age, not $30$ years, so the statement is False.",
-        "**B.** → True\n\nLet $x$ represent faster cyclist speed and $y$ represent slower cyclist speed. Translate both independent conditions before testing the claim.\n\n$$3x+3y=330$$\n\n$$1x-1y=14$$\n\n$$\\Delta=3(-1)-3(1)=-6$$\n\n$$x=\\frac{330(-1)-3(14)}{-6}=62$$\n\n$$y=\\frac{3(14)-330(1)}{-6}=48$$\n\nThe system gives $48$ km/h for slower cyclist speed, exactly as claimed, so the statement is True.",
-        "**C.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$2x+6y=48$$\n\n$$1x+3y=24$$\n\n$$\\Delta=2(3)-6(1)=0$$\n\n$$(1,3,24)=0.5(2,6,48)$$\n\n$$L_2=L_1$$\n\nThe algebra gives infinitely many solutions, not no solution, so the statement is False.",
-        "**D.** → True\n\nLet $x$ represent car fares and $y$ represent motorcycle fares. Translate both independent conditions before testing the claim.\n\n$$1x+1y=85$$\n\n$$24x+14y=1770$$\n\n$$\\Delta=1(14)-1(24)=-10$$\n\n$$x=\\frac{85(14)-1(1770)}{-10}=58$$\n\n$$y=\\frac{1(1770)-85(24)}{-10}=27$$\n\nThe system gives $58$ for car fares, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nLet $x$ represent kilograms of premium beans and $y$ represent kilograms of standard beans. Translate both independent conditions before testing the claim.\n\n$$1x+1y=40$$\n\n$$21x+12y=624$$\n\n$$\\Delta=1(12)-1(21)=-9$$\n\n$$x=\\frac{40(12)-1(624)}{-9}=16$$\n\n$$y=\\frac{1(624)-40(21)}{-9}=24$$\n\nThe system gives $16$ kg for kilograms of premium beans, not $21$ kg, so the statement is False."
+        "**A.** → False\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x-4y=0$$\n\n$$1x-2y=12$$\n\n$$\\Delta=1(-2)--4(1)=2$$\n\n$$x=\\frac{0(-2)--4(12)}{2}=24$$\n\n$$y=\\frac{1(12)-0(1)}{2}=6$$\n\nThe system gives $24$ years for grandmother's present age, not $30$ years.\n\nSo the statement is False.",
+        "**B.** → True\n\nTranslate each independent observation into a linear equation before solving.\n\n$$3x+3y=330$$\n\n$$1x-1y=14$$\n\n$$\\Delta=3(-1)-3(1)=-6$$\n\n$$x=\\frac{330(-1)-3(14)}{-6}=62$$\n\n$$y=\\frac{3(14)-330(1)}{-6}=48$$\n\nThe system gives $48$ km/h for slower cyclist speed, exactly as claimed.\n\nSo the statement is True.",
+        "**C.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$2x+6y=48$$\n\n$$1x+3y=24$$\n\n$$\\Delta=2(3)-6(1)=0$$\n\n$$(1,3,24)=0.5(2,6,48)$$\n\n$$L_2=L_1$$\n\nThe algebra gives infinitely many solutions, not no solution.\n\nSo the statement is False.",
+        "**D.** → True\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=85$$\n\n$$24x+14y=1770$$\n\n$$\\Delta=1(14)-1(24)=-10$$\n\n$$x=\\frac{85(14)-1(1770)}{-10}=58$$\n\n$$y=\\frac{1(1770)-85(24)}{-10}=27$$\n\nThe system gives $58$ for car fares, exactly as claimed.\n\nSo the statement is True.",
+        "**E.** → False\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=40$$\n\n$$21x+12y=624$$\n\n$$\\Delta=1(12)-1(21)=-9$$\n\n$$x=\\frac{40(12)-1(624)}{-9}=16$$\n\n$$y=\\frac{1(624)-40(21)}{-9}=24$$\n\nThe system gives $16$ kg for kilograms of premium beans, not $21$ kg.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 63,
-      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. combine present and future age ratios.\nB. solve opposite-direction cycling speeds.\nC. classify duplicate textile constraints.\nD. audit a ferry's mixed vehicle fares.\nE. balance coffee weights against an average cost.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. combine present and future age ratios.\nB. solve opposite-direction cycling speeds.\nC. classify duplicate textile constraints.\nD. audit a ferry's mixed vehicle fares.\nE. balance coffee weights against an average cost.",
       "placeholder": false
     },
     {
@@ -117,15 +117,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ represent still-water ferry speed and $y$ represent current speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=28$$\n\n$$1x-1y=16$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{28(-1)-1(16)}{-2}=22$$\n\n$$y=\\frac{1(16)-28(1)}{-2}=6$$\n\nThe system gives $6$ km/h for current speed, exactly as claimed, so the statement is True.",
-        "**B.** → False\n\nLet $x$ represent river sample kits and $y$ represent forest sample kits. Translate both independent conditions before testing the claim.\n\n$$4x+3y=87$$\n\n$$2x+5y=89$$\n\n$$\\Delta=4(5)-3(2)=14$$\n\n$$x=\\frac{87(5)-3(89)}{14}=12$$\n\n$$y=\\frac{4(89)-87(2)}{14}=13$$\n\nThe system gives $12$ for river sample kits, not $15$, so the statement is False.",
-        "**C.** → True\n\nLet $x$ represent color pages and $y$ represent black-and-white pages. Translate both independent conditions before testing the claim.\n\n$$1x+1y=230$$\n\n$$0.65x+0.15y=69.5$$\n\n$$\\Delta=1(0.15)-1(0.65)=-0.5$$\n\n$$x=\\frac{230(0.15)-1(69.5)}{-0.5}=70$$\n\n$$y=\\frac{1(69.5)-230(0.65)}{-0.5}=160$$\n\nThe system gives $70$ for color pages, exactly as claimed, so the statement is True.",
-        "**D.** → False\n\nLet $x$ represent tons of rich ore and $y$ represent tons of lean ore. Translate both independent conditions before testing the claim.\n\n$$1x+1y=75$$\n\n$$42x+18y=1950$$\n\n$$\\Delta=1(18)-1(42)=-24$$\n\n$$x=\\frac{75(18)-1(1950)}{-24}=25$$\n\n$$y=\\frac{1(1950)-75(42)}{-24}=50$$\n\nThe system gives $25$ tons for tons of rich ore, not $19$ tons, so the statement is False.",
-        "**E.** → True\n\nLet $x$ represent curator's current age and $y$ represent assistant's current age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=74$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{74(-1)-1(18)}{-2}=46$$\n\n$$y=\\frac{1(18)-74(1)}{-2}=28$$\n\nThe system gives $46$ years for curator's current age, exactly as claimed, so the statement is True."
+        "**A.** → True\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=28$$\n\n$$1x-1y=16$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{28(-1)-1(16)}{-2}=22$$\n\n$$y=\\frac{1(16)-28(1)}{-2}=6$$\n\nThe system gives $6$ km/h for current speed, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nTranslate each independent observation into a linear equation before solving.\n\n$$4x+3y=87$$\n\n$$2x+5y=89$$\n\n$$\\Delta=4(5)-3(2)=14$$\n\n$$x=\\frac{87(5)-3(89)}{14}=12$$\n\n$$y=\\frac{4(89)-87(2)}{14}=13$$\n\nThe system gives $12$ for river sample kits, not $15$.\n\nSo the statement is False.",
+        "**C.** → True\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=230$$\n\n$$0.65x+0.15y=69.5$$\n\n$$\\Delta=1(0.15)-1(0.65)=-0.5$$\n\n$$x=\\frac{230(0.15)-1(69.5)}{-0.5}=70$$\n\n$$y=\\frac{1(69.5)-230(0.65)}{-0.5}=160$$\n\nThe system gives $70$ for color pages, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=75$$\n\n$$42x+18y=1950$$\n\n$$\\Delta=1(18)-1(42)=-24$$\n\n$$x=\\frac{75(18)-1(1950)}{-24}=25$$\n\n$$y=\\frac{1(1950)-75(42)}{-24}=50$$\n\nThe system gives $25$ tons for tons of rich ore, not $19$ tons.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=74$$\n\n$$1x-1y=18$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{74(-1)-1(18)}{-2}=46$$\n\n$$y=\\frac{1(18)-74(1)}{-2}=28$$\n\nThe system gives $46$ years for curator's current age, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 64,
-      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. separate ferry and current speeds.\nB. solve two ecology kit constraints.\nC. separate color and monochrome pages on an invoice.\nD. construct a copper-ore shipment.\nE. use an invariant age gap with a current total.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: rates_work, systems, tickets, mixture, ages_digits\n\nA. separate ferry and current speeds.\nB. solve two ecology kit constraints.\nC. separate color and monochrome pages on an invoice.\nD. construct a copper-ore shipment.\nE. use an invariant age gap with a current total.",
       "placeholder": false
     },
     {
@@ -149,15 +149,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$3x+9y=75$$\n\n$$1x+3y=28$$\n\n$$\\Delta=3(3)-9(1)=0$$\n\n$$(1,3)=0.333333(3,9)$$\n\n$$28\\ne 0.333333(75)=25$$\n\nThe algebra gives no solution, not infinitely many solutions, so the statement is False.",
-        "**B.** → True\n\nLet $x$ represent full-day rentals and $y$ represent half-day rentals. Translate both independent conditions before testing the claim.\n\n$$1x+1y=72$$\n\n$$58x+34y=3312$$\n\n$$\\Delta=1(34)-1(58)=-24$$\n\n$$x=\\frac{72(34)-1(3312)}{-24}=36$$\n\n$$y=\\frac{1(3312)-72(58)}{-24}=36$$\n\nThe system gives $36$ for full-day rentals, exactly as claimed, so the statement is True.",
-        "**C.** → False\n\nLet $x$ represent liters of concentrated saline and $y$ represent liters of dilute saline. Translate both independent conditions before testing the claim.\n\n$$1x+1y=30$$\n\n$$12x+3y=180$$\n\n$$\\Delta=1(3)-1(12)=-9$$\n\n$$x=\\frac{30(3)-1(180)}{-9}=10$$\n\n$$y=\\frac{1(180)-30(12)}{-9}=20$$\n\nThe system gives $10$ liters for liters of concentrated saline, not $13$ liters, so the statement is False.",
-        "**D.** → True\n\nLet $x$ represent pilot's present age and $y$ represent cadet's present age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=55$$\n\n$$1x-2y=16$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{55(-2)-1(16)}{-3}=42$$\n\n$$y=\\frac{1(16)-55(1)}{-3}=13$$\n\nThe system gives $42$ years for pilot's present age, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nLet $x$ represent crew A rate and $y$ represent crew B rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=46$$\n\n$$1x-1y=8$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{46(-1)-1(8)}{-2}=27$$\n\n$$y=\\frac{1(8)-46(1)}{-2}=19$$\n\nThe system gives $27$ panels/day for crew A rate, not $31$ panels/day, so the statement is False."
+        "**A.** → False\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$3x+9y=75$$\n\n$$1x+3y=28$$\n\n$$\\Delta=3(3)-9(1)=0$$\n\n$$(1,3)=0.333333(3,9)$$\n\n$$28\\ne 0.333333(75)=25$$\n\nThe algebra gives no solution, not infinitely many solutions.\n\nSo the statement is False.",
+        "**B.** → True\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x+1y=72$$\n\n$$58x+34y=3312$$\n\n$$\\Delta=1(34)-1(58)=-24$$\n\n$$x=\\frac{72(34)-1(3312)}{-24}=36$$\n\n$$y=\\frac{1(3312)-72(58)}{-24}=36$$\n\nThe system gives $36$ for full-day rentals, exactly as claimed.\n\nSo the statement is True.",
+        "**C.** → False\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=30$$\n\n$$12x+3y=180$$\n\n$$\\Delta=1(3)-1(12)=-9$$\n\n$$x=\\frac{30(3)-1(180)}{-9}=10$$\n\n$$y=\\frac{1(180)-30(12)}{-9}=20$$\n\nThe system gives $10$ liters for liters of concentrated saline, not $13$ liters.\n\nSo the statement is False.",
+        "**D.** → True\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=55$$\n\n$$1x-2y=16$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{55(-2)-1(16)}{-3}=42$$\n\n$$y=\\frac{1(16)-55(1)}{-3}=13$$\n\nThe system gives $42$ years for pilot's present age, exactly as claimed.\n\nSo the statement is True.",
+        "**E.** → False\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=46$$\n\n$$1x-1y=8$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{46(-1)-1(8)}{-2}=27$$\n\n$$y=\\frac{1(8)-46(1)}{-2}=19$$\n\nThe system gives $27$ panels/day for crew A rate, not $31$ panels/day.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 65,
-      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. detect inconsistent shipping records.\nB. solve a ski lodge's rental mix.\nC. dilute saline to a clinical concentration.\nD. translate a future affine age relation.\nE. determine two installation crew rates.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: systems, tickets, mixture, ages_digits, rates_work\n\nA. detect inconsistent shipping records.\nB. solve a ski lodge's rental mix.\nC. dilute saline to a clinical concentration.\nD. translate a future affine age relation.\nE. determine two installation crew rates.",
       "placeholder": false
     },
     {
@@ -181,15 +181,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ represent large baskets and $y$ represent small baskets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=150$$\n\n$$22x+13y=2535$$\n\n$$\\Delta=1(13)-1(22)=-9$$\n\n$$x=\\frac{150(13)-1(2535)}{-9}=65$$\n\n$$y=\\frac{1(2535)-150(22)}{-9}=85$$\n\nThe system gives $65$ for large baskets, exactly as claimed, so the statement is True.",
-        "**B.** → False\n\nLet $x$ represent liters of stronger paint and $y$ represent liters of lighter paint. Translate both independent conditions before testing the claim.\n\n$$1x+1y=24$$\n\n$$55x+25y=900$$\n\n$$\\Delta=1(25)-1(55)=-30$$\n\n$$x=\\frac{24(25)-1(900)}{-30}=10$$\n\n$$y=\\frac{1(900)-24(55)}{-30}=14$$\n\nThe system gives $10$ liters for liters of stronger paint, not $8$ liters, so the statement is False.",
-        "**C.** → True\n\nLet $x$ represent producer's age and $y$ represent performer's age. Translate both independent conditions before testing the claim.\n\n$$1x+1y=62$$\n\n$$1x-3y=-6$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{62(-3)-1(-6)}{-4}=45$$\n\n$$y=\\frac{1(-6)-62(1)}{-4}=17$$\n\nThe system gives $17$ years for performer's age, exactly as claimed, so the statement is True.",
-        "**D.** → False\n\nLet $x$ represent still-air plane speed and $y$ represent wind speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=610$$\n\n$$1x-1y=530$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{610(-1)-1(530)}{-2}=570$$\n\n$$y=\\frac{1(530)-610(1)}{-2}=40$$\n\nThe system gives $570$ km/h for still-air plane speed, not $560$ km/h, so the statement is False.",
-        "**E.** → True\n\nLet $x$ represent chemistry kits and $y$ represent physics kits. Translate both independent conditions before testing the claim.\n\n$$1x+1y=70$$\n\n$$7x+4y=370$$\n\n$$\\Delta=1(4)-1(7)=-3$$\n\n$$x=\\frac{70(4)-1(370)}{-3}=30$$\n\n$$y=\\frac{1(370)-70(7)}{-3}=40$$\n\nThe system gives $30$ for chemistry kits, exactly as claimed, so the statement is True."
+        "**A.** → True\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=150$$\n\n$$22x+13y=2535$$\n\n$$\\Delta=1(13)-1(22)=-9$$\n\n$$x=\\frac{150(13)-1(2535)}{-9}=65$$\n\n$$y=\\frac{1(2535)-150(22)}{-9}=85$$\n\nThe system gives $65$ for large baskets, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x+1y=24$$\n\n$$55x+25y=900$$\n\n$$\\Delta=1(25)-1(55)=-30$$\n\n$$x=\\frac{24(25)-1(900)}{-30}=10$$\n\n$$y=\\frac{1(900)-24(55)}{-30}=14$$\n\nThe system gives $10$ liters for liters of stronger paint, not $8$ liters.\n\nSo the statement is False.",
+        "**C.** → True\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=62$$\n\n$$1x-3y=-6$$\n\n$$\\Delta=1(-3)-1(1)=-4$$\n\n$$x=\\frac{62(-3)-1(-6)}{-4}=45$$\n\n$$y=\\frac{1(-6)-62(1)}{-4}=17$$\n\nThe system gives $17$ years for performer's age, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=610$$\n\n$$1x-1y=530$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{610(-1)-1(530)}{-2}=570$$\n\n$$y=\\frac{1(530)-610(1)}{-2}=40$$\n\nThe system gives $570$ km/h for still-air plane speed, not $560$ km/h.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=70$$\n\n$$7x+4y=370$$\n\n$$\\Delta=1(4)-1(7)=-3$$\n\n$$x=\\frac{70(4)-1(370)}{-3}=30$$\n\n$$y=\\frac{1(370)-70(7)}{-3}=40$$\n\nThe system gives $30$ for chemistry kits, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 66,
-      "solution_overview": "Topics: tickets, mixture, ages_digits, rates_work, systems\n\nA. infer basket sizes from a market's revenue.\nB. mix mural paints by pigment percentage.\nC. solve an age relation with an offset.\nD. infer still-air aircraft speed.\nE. determine a school lab-kit mix.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: tickets, mixture, ages_digits, rates_work, systems\n\nA. infer basket sizes from a market's revenue.\nB. mix mural paints by pigment percentage.\nC. solve an age relation with an offset.\nD. infer still-air aircraft speed.\nE. determine a school lab-kit mix.",
       "placeholder": false
     },
     {
@@ -213,15 +213,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet $x$ represent thousand liters of B50 and $y$ represent thousand liters of B10. Translate both independent conditions before testing the claim.\n\n$$1x+1y=80$$\n\n$$50x+10y=2000$$\n\n$$\\Delta=1(10)-1(50)=-40$$\n\n$$x=\\frac{80(10)-1(2000)}{-40}=30$$\n\n$$y=\\frac{1(2000)-80(50)}{-40}=50$$\n\nThe system gives $30$ liters for thousand liters of B50, not $35$ liters, so the statement is False.",
-        "**B.** → True\n\nLet $x$ represent scientist's current age and $y$ represent technician's current age. Translate both independent conditions before testing the claim.\n\n$$1x-2y=-10$$\n\n$$1x+1y=74$$\n\n$$\\Delta=1(1)--2(1)=3$$\n\n$$x=\\frac{-10(1)--2(74)}{3}=46$$\n\n$$y=\\frac{1(74)--10(1)}{3}=28$$\n\nThe system gives $46$ years for scientist's current age, exactly as claimed, so the statement is True.",
-        "**C.** → False\n\nLet $x$ represent main pump rate and $y$ represent backup pump rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=150$$\n\n$$1x-2y=6$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{150(-2)-1(6)}{-3}=102$$\n\n$$y=\\frac{1(6)-150(1)}{-3}=48$$\n\nThe system gives $48$ liters/min for backup pump rate, not $51$ liters/min, so the statement is False.",
-        "**D.** → True\n\nLet $x$ represent apple rows and $y$ represent pear rows. Translate both independent conditions before testing the claim.\n\n$$5x+3y=144$$\n\n$$2x+4y=108$$\n\n$$\\Delta=5(4)-3(2)=14$$\n\n$$x=\\frac{144(4)-3(108)}{14}=18$$\n\n$$y=\\frac{5(108)-144(2)}{14}=18$$\n\nThe system gives $18$ for apple rows, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nLet $x$ represent VR wristbands and $y$ represent exhibit-only wristbands. Translate both independent conditions before testing the claim.\n\n$$1x+1y=110$$\n\n$$31x+19y=2606$$\n\n$$\\Delta=1(19)-1(31)=-12$$\n\n$$x=\\frac{110(19)-1(2606)}{-12}=43$$\n\n$$y=\\frac{1(2606)-110(31)}{-12}=67$$\n\nThe system gives $43$ for VR wristbands, not $50$, so the statement is False."
+        "**A.** → False\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=80$$\n\n$$50x+10y=2000$$\n\n$$\\Delta=1(10)-1(50)=-40$$\n\n$$x=\\frac{80(10)-1(2000)}{-40}=30$$\n\n$$y=\\frac{1(2000)-80(50)}{-40}=50$$\n\nThe system gives $30$ liters for thousand liters of B50, not $35$ liters.\n\nSo the statement is False.",
+        "**B.** → True\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x-2y=-10$$\n\n$$1x+1y=74$$\n\n$$\\Delta=1(1)--2(1)=3$$\n\n$$x=\\frac{-10(1)--2(74)}{3}=46$$\n\n$$y=\\frac{1(74)--10(1)}{3}=28$$\n\nThe system gives $46$ years for scientist's current age, exactly as claimed.\n\nSo the statement is True.",
+        "**C.** → False\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=150$$\n\n$$1x-2y=6$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{150(-2)-1(6)}{-3}=102$$\n\n$$y=\\frac{1(6)-150(1)}{-3}=48$$\n\nThe system gives $48$ liters/min for backup pump rate, not $51$ liters/min.\n\nSo the statement is False.",
+        "**D.** → True\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$5x+3y=144$$\n\n$$2x+4y=108$$\n\n$$\\Delta=5(4)-3(2)=14$$\n\n$$x=\\frac{144(4)-3(108)}{14}=18$$\n\n$$y=\\frac{5(108)-144(2)}{14}=18$$\n\nThe system gives $18$ for apple rows, exactly as claimed.\n\nSo the statement is True.",
+        "**E.** → False\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=110$$\n\n$$31x+19y=2606$$\n\n$$\\Delta=1(19)-1(31)=-12$$\n\n$$x=\\frac{110(19)-1(2606)}{-12}=43$$\n\n$$y=\\frac{1(2606)-110(31)}{-12}=67$$\n\nThe system gives $43$ for VR wristbands, not $50$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 67,
-      "solution_overview": "Topics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend two biodiesel grades.\nB. combine a past ratio with a future total.\nC. split flow between unequal pumps.\nD. solve orchard land and irrigation constraints.\nE. reconstruct a museum wristband ledger.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: mixture, ages_digits, rates_work, systems, tickets\n\nA. blend two biodiesel grades.\nB. combine a past ratio with a future total.\nC. split flow between unequal pumps.\nD. solve orchard land and irrigation constraints.\nE. reconstruct a museum wristband ledger.",
       "placeholder": false
     },
     {
@@ -245,15 +245,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ represent parent's present age and $y$ represent child's present age. Translate both independent conditions before testing the claim.\n\n$$1x-1y=27$$\n\n$$2x-5y=27$$\n\n$$\\Delta=1(-5)--1(2)=-3$$\n\n$$x=\\frac{27(-5)--1(27)}{-3}=36$$\n\n$$y=\\frac{1(27)-27(2)}{-3}=9$$\n\nThe system gives $9$ years for child's present age, exactly as claimed, so the statement is True.",
-        "**B.** → False\n\nLet $x$ represent faster courier speed and $y$ represent slower courier speed. Translate both independent conditions before testing the claim.\n\n$$0.2x+0.2y=24$$\n\n$$1x-1y=20$$\n\n$$\\Delta=0.2(-1)-0.2(1)=-0.4$$\n\n$$x=\\frac{24(-1)-0.2(20)}{-0.4}=70$$\n\n$$y=\\frac{0.2(20)-24(1)}{-0.4}=50$$\n\nThe system gives $50$ km/h for slower courier speed, not $45$ km/h, so the statement is False.",
-        "**C.** → True\n\nLet $x$ represent registered nurses and $y$ represent aides. Translate both independent conditions before testing the claim.\n\n$$1x+1y=52$$\n\n$$3x+1y=100$$\n\n$$\\Delta=1(1)-1(3)=-2$$\n\n$$x=\\frac{52(1)-1(100)}{-2}=24$$\n\n$$y=\\frac{1(100)-52(3)}{-2}=28$$\n\nThe system gives $24$ for registered nurses, exactly as claimed, so the statement is True.",
-        "**D.** → False\n\nLet $x$ represent sleeper berths and $y$ represent coach seats. Translate both independent conditions before testing the claim.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$\\Delta=1(68)-1(120)=-52$$\n\n$$x=\\frac{64(68)-1(5704)}{-52}=26$$\n\n$$y=\\frac{1(5704)-64(120)}{-52}=38$$\n\nThe system gives $26$ for sleeper berths, not $22$, so the statement is False.",
-        "**E.** → True\n\nLet $x$ represent tons of high-protein meal and $y$ represent tons of low-protein meal. Translate both independent conditions before testing the claim.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$\\Delta=1(16)-1(28)=-12$$\n\n$$x=\\frac{90(16)-1(1980)}{-12}=45$$\n\n$$y=\\frac{1(1980)-90(28)}{-12}=45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed, so the statement is True."
+        "**A.** → True\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x-1y=27$$\n\n$$2x-5y=27$$\n\n$$\\Delta=1(-5)--1(2)=-3$$\n\n$$x=\\frac{27(-5)--1(27)}{-3}=36$$\n\n$$y=\\frac{1(27)-27(2)}{-3}=9$$\n\nThe system gives $9$ years for child's present age, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nTranslate each independent observation into a linear equation before solving.\n\n$$0.2x+0.2y=24$$\n\n$$1x-1y=20$$\n\n$$\\Delta=0.2(-1)-0.2(1)=-0.4$$\n\n$$x=\\frac{24(-1)-0.2(20)}{-0.4}=70$$\n\n$$y=\\frac{0.2(20)-24(1)}{-0.4}=50$$\n\nThe system gives $50$ km/h for slower courier speed, not $45$ km/h.\n\nSo the statement is False.",
+        "**C.** → True\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=52$$\n\n$$3x+1y=100$$\n\n$$\\Delta=1(1)-1(3)=-2$$\n\n$$x=\\frac{52(1)-1(100)}{-2}=24$$\n\n$$y=\\frac{1(100)-52(3)}{-2}=28$$\n\nThe system gives $24$ for registered nurses, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=64$$\n\n$$120x+68y=5704$$\n\n$$\\Delta=1(68)-1(120)=-52$$\n\n$$x=\\frac{64(68)-1(5704)}{-52}=26$$\n\n$$y=\\frac{1(5704)-64(120)}{-52}=38$$\n\nThe system gives $26$ for sleeper berths, not $22$.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=90$$\n\n$$28x+16y=1980$$\n\n$$\\Delta=1(16)-1(28)=-12$$\n\n$$x=\\frac{90(16)-1(1980)}{-12}=45$$\n\n$$y=\\frac{1(1980)-90(28)}{-12}=45$$\n\nThe system gives $45$ tons for tons of high-protein meal, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 68,
-      "solution_overview": "Topics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: ages_digits, rates_work, systems, tickets, mixture\n\nA. solve a parent-child age system with a future ratio.\nB. solve courier speeds from meeting time.\nC. recover hospital staffing counts.\nD. separate sleeper and coach bookings.\nE. formulate animal feed at a target protein rate.",
       "placeholder": false
     },
     {
@@ -277,15 +277,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nLet $x$ represent large harvester rate and $y$ represent small harvester rate. Translate both independent conditions before testing the claim.\n\n$$1x+1y=84$$\n\n$$1x-2y=0$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{84(-2)-1(0)}{-3}=56$$\n\n$$y=\\frac{1(0)-84(1)}{-3}=28$$\n\nThe system gives $56$ rows/hour for large harvester rate, not $63$ rows/hour, so the statement is False.",
-        "**B.** → True\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$4x+2y=60$$\n\n$$6x+3y=90$$\n\n$$\\Delta=4(3)-2(6)=0$$\n\n$$(6,3,90)=1.5(4,2,60)$$\n\n$$L_2=L_1$$\n\nThe algebra classifies the system as having infinitely many solutions, matching the claim, so the statement is True.",
-        "**C.** → False\n\nLet $x$ represent gold raffle tickets and $y$ represent silver raffle tickets. Translate both independent conditions before testing the claim.\n\n$$1x+1y=200$$\n\n$$25x+8y=2450$$\n\n$$\\Delta=1(8)-1(25)=-17$$\n\n$$x=\\frac{200(8)-1(2450)}{-17}=50$$\n\n$$y=\\frac{1(2450)-200(25)}{-17}=150$$\n\nThe system gives $50$ for gold raffle tickets, not $55$, so the statement is False.",
-        "**D.** → True\n\nLet $x$ represent grams of rich gold alloy and $y$ represent grams of base gold alloy. Translate both independent conditions before testing the claim.\n\n$$1x+1y=40$$\n\n$$75x+30y=1920$$\n\n$$\\Delta=1(30)-1(75)=-45$$\n\n$$x=\\frac{40(30)-1(1920)}{-45}=16$$\n\n$$y=\\frac{1(1920)-40(75)}{-45}=24$$\n\nThe system gives $16$ grams for grams of rich gold alloy, exactly as claimed, so the statement is True.",
-        "**E.** → False\n\nLet $x$ represent older sibling's age and $y$ represent younger sibling's age. Translate both independent conditions before testing the claim.\n\n$$1x-1y=7$$\n\n$$2x-3y=-4$$\n\n$$\\Delta=1(-3)--1(2)=-1$$\n\n$$x=\\frac{7(-3)--1(-4)}{-1}=25$$\n\n$$y=\\frac{1(-4)-7(2)}{-1}=18$$\n\nThe system gives $25$ years for older sibling's age, not $28$ years, so the statement is False."
+        "**A.** → False\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$1x+1y=84$$\n\n$$1x-2y=0$$\n\n$$\\Delta=1(-2)-1(1)=-3$$\n\n$$x=\\frac{84(-2)-1(0)}{-3}=56$$\n\n$$y=\\frac{1(0)-84(1)}{-3}=28$$\n\nThe system gives $56$ rows/hour for large harvester rate, not $63$ rows/hour.\n\nSo the statement is False.",
+        "**B.** → True\n\nCompare both coefficients and constants to determine how many intersections the two constraints have.\n\n$$4x+2y=60$$\n\n$$6x+3y=90$$\n\n$$\\Delta=4(3)-2(6)=0$$\n\n$$(6,3,90)=1.5(4,2,60)$$\n\n$$L_2=L_1$$\n\nThe algebra classifies the system as having infinitely many solutions, matching the claim.\n\nSo the statement is True.",
+        "**C.** → False\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=200$$\n\n$$25x+8y=2450$$\n\n$$\\Delta=1(8)-1(25)=-17$$\n\n$$x=\\frac{200(8)-1(2450)}{-17}=50$$\n\n$$y=\\frac{1(2450)-200(25)}{-17}=150$$\n\nThe system gives $50$ for gold raffle tickets, not $55$.\n\nSo the statement is False.",
+        "**D.** → True\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+1y=40$$\n\n$$75x+30y=1920$$\n\n$$\\Delta=1(30)-1(75)=-45$$\n\n$$x=\\frac{40(30)-1(1920)}{-45}=16$$\n\n$$y=\\frac{1(1920)-40(75)}{-45}=24$$\n\nThe system gives $16$ grams for grams of rich gold alloy, exactly as claimed.\n\nSo the statement is True.",
+        "**E.** → False\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x-1y=7$$\n\n$$2x-3y=-4$$\n\n$$\\Delta=1(-3)--1(2)=-1$$\n\n$$x=\\frac{7(-3)--1(-4)}{-1}=25$$\n\n$$y=\\frac{1(-4)-7(2)}{-1}=18$$\n\nThe system gives $25$ years for older sibling's age, not $28$ years.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 69,
-      "solution_overview": "Topics: rates_work, systems, tickets, mixture, ages_digits\n\nA. divide work rates in a fixed ratio.\nB. classify proportional event-staging constraints.\nC. solve a charity raffle's ticket composition.\nD. combine jewelry alloys to a specified fineness.\nE. use an age gap and a past fractional ratio.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: rates_work, systems, tickets, mixture, ages_digits\n\nA. divide work rates in a fixed ratio.\nB. classify proportional event-staging constraints.\nC. solve a charity raffle's ticket composition.\nD. combine jewelry alloys to a specified fineness.\nE. use an age gap and a past fractional ratio.",
       "placeholder": false
     },
     {
@@ -309,15 +309,15 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nLet $x$ represent fiber nodes and $y$ represent wireless nodes. Translate both independent conditions before testing the claim.\n\n$$6x+5y=137$$\n\n$$2x+3y=63$$\n\n$$\\Delta=6(3)-5(2)=8$$\n\n$$x=\\frac{137(3)-5(63)}{8}=12$$\n\n$$y=\\frac{6(63)-137(2)}{8}=13$$\n\nThe system gives $12$ for fiber nodes, exactly as claimed, so the statement is True.",
-        "**B.** → False\n\nLet $x$ represent overnight slip rentals and $y$ represent daytime slip rentals. Translate both independent conditions before testing the claim.\n\n$$1x+1y=90$$\n\n$$75x+35y=4350$$\n\n$$\\Delta=1(35)-1(75)=-40$$\n\n$$x=\\frac{90(35)-1(4350)}{-40}=30$$\n\n$$y=\\frac{1(4350)-90(75)}{-40}=60$$\n\nThe system gives $30$ for overnight slip rentals, not $27$, so the statement is False.",
-        "**C.** → True\n\nLet $x$ represent liters of 80 percent alcohol and $y$ represent liters of 20 percent alcohol. Translate both independent conditions before testing the claim.\n\n$$1x+1y=45$$\n\n$$80x+20y=2700$$\n\n$$\\Delta=1(20)-1(80)=-60$$\n\n$$x=\\frac{45(20)-1(2700)}{-60}=30$$\n\n$$y=\\frac{1(2700)-45(80)}{-60}=15$$\n\nThe system gives $30$ liters for liters of 80 percent alcohol, exactly as claimed, so the statement is True.",
-        "**D.** → False\n\nLet $x$ represent director's age and $y$ represent actor's age. Translate both independent conditions before testing the claim.\n\n$$1x+2y=96$$\n\n$$2x-1y=57$$\n\n$$\\Delta=1(-1)-2(2)=-5$$\n\n$$x=\\frac{96(-1)-2(57)}{-5}=42$$\n\n$$y=\\frac{1(57)-96(2)}{-5}=27$$\n\nThe system gives $42$ years for director's age, not $36$ years, so the statement is False.",
-        "**E.** → True\n\nLet $x$ represent eastbound train speed and $y$ represent westbound train speed. Translate both independent conditions before testing the claim.\n\n$$1x+1y=170$$\n\n$$1x-1y=30$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{170(-1)-1(30)}{-2}=100$$\n\n$$y=\\frac{1(30)-170(1)}{-2}=70$$\n\nThe system gives $70$ km/h for westbound train speed, exactly as claimed, so the statement is True."
+        "**A.** → True\n\nIntroduce the two unknowns and write both stem conditions as equations.\n\n$$6x+5y=137$$\n\n$$2x+3y=63$$\n\n$$\\Delta=6(3)-5(2)=8$$\n\n$$x=\\frac{137(3)-5(63)}{8}=12$$\n\n$$y=\\frac{6(63)-137(2)}{8}=13$$\n\nThe system gives $12$ for fiber nodes, exactly as claimed.\n\nSo the statement is True.",
+        "**B.** → False\n\nTranslate each independent observation into a linear equation before solving.\n\n$$1x+1y=90$$\n\n$$75x+35y=4350$$\n\n$$\\Delta=1(35)-1(75)=-40$$\n\n$$x=\\frac{90(35)-1(4350)}{-40}=30$$\n\n$$y=\\frac{1(4350)-90(75)}{-40}=60$$\n\nThe system gives $30$ for overnight slip rentals, not $27$.\n\nSo the statement is False.",
+        "**C.** → True\n\nName the two unknowns, then record the two constraints from the stem.\n\n$$1x+1y=45$$\n\n$$80x+20y=2700$$\n\n$$\\Delta=1(20)-1(80)=-60$$\n\n$$x=\\frac{45(20)-1(2700)}{-60}=30$$\n\n$$y=\\frac{1(2700)-45(80)}{-60}=15$$\n\nThe system gives $30$ liters for liters of 80 percent alcohol, exactly as claimed.\n\nSo the statement is True.",
+        "**D.** → False\n\nBuild the $2\times 2$ system from the stem, then solve for the claimed unknown.\n\n$$1x+2y=96$$\n\n$$2x-1y=57$$\n\n$$\\Delta=1(-1)-2(2)=-5$$\n\n$$x=\\frac{96(-1)-2(57)}{-5}=42$$\n\n$$y=\\frac{1(57)-96(2)}{-5}=27$$\n\nThe system gives $42$ years for director's age, not $36$ years.\n\nSo the statement is False.",
+        "**E.** → True\n\nSet up both equations from the wording, then recover the value the claim names.\n\n$$1x+1y=170$$\n\n$$1x-1y=30$$\n\n$$\\Delta=1(-1)-1(1)=-2$$\n\n$$x=\\frac{170(-1)-1(30)}{-2}=100$$\n\n$$y=\\frac{1(30)-170(1)}{-2}=70$$\n\nThe system gives $70$ km/h for westbound train speed, exactly as claimed.\n\nSo the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 70,
-      "solution_overview": "Topics: systems, tickets, mixture, ages_digits, rates_work\n\nA. solve telecom node allocations.\nB. derive overnight marina rentals from receipts.\nC. prepare disinfectant from two alcohol strengths.\nD. solve a general two-age linear system.\nE. find train speeds from closing speed.",
+      "solution_overview": "Each letter is an independent two-unknown linear system. Translate the stem once for that letter, solve, and test the claim.\n\nTopics: systems, tickets, mixture, ages_digits, rates_work\n\nA. solve telecom node allocations.\nB. derive overnight marina rentals from receipts.\nC. prepare disinfectant from two alcohol strengths.\nD. solve a general two-age linear system.\nE. find train speeds from closing speed.",
       "placeholder": false
     },
     {
@@ -341,15 +341,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared variable definitions give this count equation.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared price translation gives this revenue equation.\n\nThe shared result makes the claim True.",
-        "**C.** → False\n\nThe shared solution gives $x=90$.\n\nThe shared result makes the claim False.",
-        "**D.** → False\n\nThe shared solution gives equal counts, so their difference is zero.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared 3D revenue is \\$1{,}440.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nThe patron total translates directly into a count equation. With $x$ for 3D tickets and $y$ for standard tickets,\n\n$$x + y = 180$$\n\nThe overview already recorded that as equation (1). Matching the claim.\n\nSo the statement is True.",
+        "**B.** → True\n\nRevenue at the two fixed prices translates into\n\n$$16x + 11y = 2430$$\n\nThe overview already recorded that as equation (2). Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe overview recovered $x = 90$ 3D tickets. The claim says $99$. Comparing,\n\n$$90 \\ne 99$$\n\nso the ticket count does not match.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False.",
+        "**D.** → False\n\nThe overview recovered $x = 90$ and $y = 90$. Their difference is\n\n$$x - y = 90 - 90 = 0$$\n\nThe claim says the counts differ by $10$. We have $0 \\ne 10$.\n\nThe mismatch with the claim settles the verdict.\n\nSo the statement is False.",
+        "**E.** → False\n\n3D revenue uses the recovered count:\n\n$$16 \\times 90 = 1{,}440$$\n\nThe claim is \\$1{,}600. The gap is \\$160.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 71,
-      "solution_overview": "Topics: tickets.\n\nShared solution:\n1. Let $x$ count 3D tickets.\n2. Let $y$ count standard tickets.\n3. The patron total gives $x+y=180$.\n4. The receipt total gives $16x+11y=2430$.\n5. Multiply the count equation by $11$.\n6. This gives $11x+11y=1980$.\n7. Subtract it from the revenue equation.\n8. The result is $5x=450$.\n9. Thus $x=90$.\n10. Substitute into $x+y=180$.\n11. Thus $y=90$.\n12. 3D revenue is $16(90)=\\$1{,}440$.\n13. Standard revenue is $11(90)=\\$990$.",
+      "solution_overview": "At a cinema gala, 180 patrons each bought one ticket. A 3D ticket costs \\$16 and a standard ticket costs \\$11. The box office recorded \\$2{,}430.\n\nLet $x$ = number of 3D tickets and $y$ = number of standard tickets.\n\n$$x + y = 180 \\tag{1}$$\n\n$$16x + 11y = 2430 \\tag{2}$$\n\nMultiply (1) by $11$ and subtract from (2):\n\n$$5x = 450$$\n\n$$x = 90,\\qquad y = 90$$\n\n3D revenue is $16 \\times 90 = 1{,}440$, and standard revenue is $11 \\times 90 = 990$.",
       "placeholder": false
     },
     {
@@ -373,15 +373,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared volume condition gives this equation.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared mango-content condition gives this equation.\n\nThe shared result makes the claim True.",
-        "**C.** → True\n\nThe shared solution gives $x=42$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared weaker volume is $28$, not $30$.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared source volumes are $42$ and $28$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nTotal volume is the sum of the two source amounts:\n\n$$x + y = 70$$\n\nThe overview already recorded that volume equation. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → True\n\nMango content, written in percentage points, gives\n\n$$35x + 10y = 25 \\times 70 = 1750$$\n\nThe overview already recorded that mango equation. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\nx = 42\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe overview recovered $y = 28$ liters of the weaker drink. The claim is $30$. Comparing,\n\n$$28 \\ne 30$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**E.** → False\n\nStart from the overview answer line and apply only the extra arithmetic the claim needs.\n\nThe recovered source volumes are $x = 42$ and $y = 28$. Equality would require $x = y$. Here\n\n$$42 \\ne 28$$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 72,
-      "solution_overview": "Topics: mixture.\n\nShared solution:\n1. Let $x$ be liters of $35\\%$ drink.\n2. Let $y$ be liters of $10\\%$ drink.\n3. Total volume gives $x+y=70$.\n4. Use percentage points to avoid decimals.\n5. Mango content gives $35x+10y=25(70)$.\n6. Thus $35x+10y=1750$.\n7. Multiply the volume equation by $10$.\n8. Subtract to obtain $25x=1050$.\n9. Thus $x=42$.\n10. Substitute into $x+y=70$.\n11. Thus $y=28$.\n12. The check is $35(42)+10(28)=1750$.\n13. Both source volumes are nonnegative and total $70$.",
+      "solution_overview": "A juice bar prepares 70 liters from a $35\\%$ mango drink and a $10\\%$ mango drink so the blend is $25\\%$ mango.\n\nLet $x$ = liters of the stronger drink and $y$ = liters of the weaker drink.\n\n$$x + y = 70 \\tag{1}$$\n\n$$35x + 10y = 25 \\times 70 = 1750 \\tag{2}$$\n\nMultiply (1) by $10$ and subtract from (2):\n\n$$25x = 1050$$\n\n$$x = 42,\\qquad y = 28$$",
       "placeholder": false
     },
     {
@@ -405,15 +405,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared sum equation simplifies to $x+y=11$.\n\nThe shared result makes the claim True.",
-        "**B.** → False\n\nThe shared wording gives $x-y=3$, not $4$.\n\nThe shared result makes the claim False.",
-        "**C.** → False\n\nThe shared tens digit is $7$, not $8$.\n\nThe shared result makes the claim False.",
-        "**D.** → True\n\nThe shared original code is $74$.\n\nThe shared result makes the claim True.",
-        "**E.** → False\n\nThe shared reversed code is $47$, not $48$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nDividing the sum-of-code-and-reversal identity by $11$ recovers the digit-sum equation:\n\n$$x + y = 11$$\n\nThe overview already has that as (1). Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe stem says the tens digit is $3$ greater than the units digit, so\n\n$$x - y = 3$$\n\nThe claim writes $x - y = 4$. Those differences disagree.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False.",
+        "**C.** → False\n\nThe overview recovered $x = 7$. The claim says the tens digit is $8$. Comparing,\n\n$$7 \\ne 8$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $x = 7$ and $y = 4$, the room code is\n\n$$10x + y = 10 \\times 7 + 4 = 74$$\n\nThe claim is $74$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly Matching the claim confirms the verdict.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe reversed code is\n\n$$10y + x = 10 \\times 4 + 7 = 47$$\n\nThe claim is $48$. Comparing,\n\n$$47 \\ne 48$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 73,
-      "solution_overview": "Topics: ages_digits.\n\nShared solution:\n1. Represent the code by $10x+y$.\n2. Represent its reversal by $10y+x$.\n3. Their sum is $11x+11y=121$.\n4. Divide by $11$ to get $x+y=11$.\n5. The digit difference gives $x-y=3$.\n6. Add the two simplified equations.\n7. This gives $2x=14$.\n8. Thus $x=7$.\n9. Substitute into $x+y=11$.\n10. Thus $y=4$.\n11. The original code is $10(7)+4=74$.\n12. The reversed code is $10(4)+7=47$.\n13. The check is $74+47=121$.",
+      "solution_overview": "A two-digit room code plus its digit reversal equals $121$, and the tens digit is $3$ greater than the units digit.\n\nLet $x$ = tens digit and $y$ = units digit. The code is $10x+y$ and the reversal is $10y+x$, so\n\n$$(10x+y)+(10y+x) = 121$$\n\n$$11x + 11y = 121$$\n\n$$x + y = 11 \\tag{1}$$\n\n$$x - y = 3 \\tag{2}$$\n\nAdding (1) and (2):\n\n$$2x = 14$$\n\n$$x = 7,\\qquad y = 4$$\n\nThe original code is $74$ and the reversal is $47$.",
       "placeholder": false
     },
     {
@@ -437,15 +437,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared translation gives exactly these equations.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared solution gives $x=60$.\n\nThe shared result makes the claim True.",
-        "**C.** → True\n\nThe shared solution gives $y=48$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared ratio is $1.25$, not $2$.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared two-hour output is $96$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nCombined production and the stated gap translate into\n\n$$x + y = 108$$\n\n$$x - y = 12$$\n\nThe overview already recorded both equations. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.\n\n$$\nx = 60\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\ny = 48\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nRead the recovered unit prices or counts, then test the named figure.\n\nThe recovered rate ratio is\n\n$$\\frac{x}{y} = \\frac{60}{48} = 1.25$$\n\nTwice as fast would mean ratio $2$. We have $1.25 \\ne 2$.\n\nSo the statement is False.",
+        "**E.** → False\n\nRobot Y's two-hour output uses the recovered rate:\n\n$$2 \\times 48 = 96$$\n\nThe claim is $108$. Comparing,\n\n$$96 \\ne 108$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 74,
-      "solution_overview": "Topics: rates_work.\n\nShared solution:\n1. Let $x$ be robot X's hourly rate.\n2. Let $y$ be robot Y's hourly rate.\n3. Combined production gives $x+y=108$.\n4. The stated difference gives $x-y=12$.\n5. Add the two equations.\n6. This gives $2x=120$.\n7. Thus $x=60$.\n8. Substitute into $x+y=108$.\n9. Thus $y=48$.\n10. The rate ratio is $60/48=1.25$.\n11. Robot Y's two-hour output is $2(48)=96$.\n12. The one-hour outputs sum to $108$.\n13. Their one-hour difference is $12$.",
+      "solution_overview": "Two robots produce $108$ housings per hour together, and robot X produces $12$ more per hour than robot Y.\n\nLet $x$ and $y$ be the hourly rates of X and Y.\n\n$$x + y = 108 \\tag{1}$$\n\n$$x - y = 12 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 120$$\n\n$$x = 60,\\qquad y = 48$$\n\nThe rate ratio is $60/48 = 1.25$, and robot Y's two-hour output is $2 \\times 48 = 96$.",
       "placeholder": false
     },
     {
@@ -469,15 +469,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared row comparison gives the factor $3$.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared classification is consistent and dependent.\n\nThe shared result makes the claim True.",
-        "**C.** → False\n\nThe shared classification rules out no solution.\n\nThe shared result makes the claim False.",
-        "**D.** → False\n\nThe shared first equation gives $45$, not $40$, at $(10,5)$.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared parameter form allows many values of $x$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nCompare the two coefficient rows. Multiplying the first by $3$ recovers the second:\n\n$$3(2,5,40) = (6,15,120)$$\n\nSo the second equation is three times the first. Matching the claim Matching the claim confirms the verdict.\n\nSo the statement is True.",
+        "**B.** → True\n\nBecause the rows are proportional with matching constants, the two equations describe the same line. A consistent dependent system has infinitely many real solutions. Matching the claim Matching the claim confirms the verdict.\n\nSo the statement is True.",
+        "**C.** → False\n\nA system with no solution would need proportional left-hand sides but mismatched constants. Here the constants scale by the same factor $3$, so the system is consistent. The claim says no solution The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**D.** → False\n\nTest $(10,5)$ in the first equation:\n\n$$2(10) + 5(5) = 20 + 25 = 45$$\n\nThe right-hand side is $40$, and $45 \\ne 40$, so the point fails both equations.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe parameter form $x = 20 - \\tfrac{5}{2}y$ lets $y$ vary. Different admissible $y$ values produce different $x$ values, so not every solution has $x = 20$. The claim requires every solution to have $x = 20$.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 75,
-      "solution_overview": "Topics: systems.\n\nShared solution:\n1. Write the first row as $(2,5,40)$.\n2. Write the second row as $(6,15,120)$.\n3. Multiply the first row by $3$.\n4. This gives exactly $(6,15,120)$.\n5. Therefore both equations represent one line.\n6. The determinant is $2(15)-5(6)=0$.\n7. The constants have the same scale factor.\n8. Hence the system is consistent and dependent.\n9. It has infinitely many real solutions.\n10. Solve for $x$ as $x=20-2.5y$.\n11. For $y=4$, this gives $x=10$.\n12. Thus $(10,4)$ satisfies both equations.\n13. Different choices of $y$ produce different values of $x$.",
+      "solution_overview": "Two production records are\n\n$$2x + 5y = 40 \\tag{1}$$\n\n$$6x + 15y = 120 \\tag{2}$$\n\nMultiplying (1) by $3$ yields exactly (2), so the rows are scalar multiples. The determinant is\n\n$$2 \\cdot 15 - 5 \\cdot 6 = 0$$\n\nand the constants scale by the same factor, so the system is consistent and dependent: one line, infinitely many real solutions.\n\nSolving (1) for $x$ gives the parameter form\n\n$$x = 20 - \\tfrac{5}{2}y$$\n\nIn particular, $(10,5)$ fails (1) because $2(10)+5(5)=45 \\ne 40$, while $(10,4)$ works.",
       "placeholder": false
     },
     {
@@ -501,15 +501,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared translation gives these two equations.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared solution gives $x=60$.\n\nThe shared result makes the claim True.",
-        "**C.** → True\n\nThe shared solution gives $y=100$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared express revenue is \\$1{,}260.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared local revenue is \\$60 lower.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nPass counts and register total translate into\n\n$$x + y = 160$$\n\n$$21x + 12y = 2460$$\n\nThe overview already recorded both sales equations. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.\n\n$$\nx = 60\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\ny = 100\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nExpress-pass revenue uses the recovered count:\n\n$$21 \\times 60 = 1{,}260$$\n\nThe claim is \\$1{,}200. Comparing,\n\n$$1{,}260 \\ne 1{,}200$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False.",
+        "**E.** → False\n\nExpress revenue is \\$1{,}260 and local revenue is \\$1{,}200:\n\n$$1{,}260 - 1{,}200 = 60$$\n\nLocal revenue is \\$60 lower, not higher. The claim says local exceeded express.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 76,
-      "solution_overview": "Topics: tickets.\n\nShared solution:\n1. Let $x$ count express passes.\n2. Let $y$ count local passes.\n3. The total count gives $x+y=160$.\n4. The total receipts give $21x+12y=2460$.\n5. Multiply the count equation by $12$.\n6. This gives $12x+12y=1920$.\n7. Subtract to obtain $9x=540$.\n8. Thus $x=60$.\n9. Substitute into $x+y=160$.\n10. Thus $y=100$.\n11. Express revenue is $21(60)=\\$1{,}260$.\n12. Local revenue is $12(100)=\\$1{,}200$.\n13. The revenues sum to \\$2{,}460.",
+      "solution_overview": "An airport kiosk issued $160$ transit passes. Express passes cost \\$21 and local passes cost \\$12, for a register total of \\$2{,}460.\n\nLet $x$ = express passes and $y$ = local passes.\n\n$$x + y = 160 \\tag{1}$$\n\n$$21x + 12y = 2460 \\tag{2}$$\n\nMultiply (1) by $12$ and subtract from (2):\n\n$$9x = 540$$\n\n$$x = 60,\\qquad y = 100$$\n\nExpress revenue is $21 \\times 60 = 1{,}260$, and local revenue is $12 \\times 100 = 1{,}200$.",
       "placeholder": false
     },
     {
@@ -533,15 +533,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared mass condition gives this equation.\n\nThe shared result makes the claim True.",
-        "**B.** → False\n\nThe shared total-cost equation has right side $1140$, not $1150$.\n\nThe shared result makes the claim False.",
-        "**C.** → True\n\nThe shared solution gives $x=20$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared premium cost is \\$600.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared solution gives $y=30$, not $32$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nTotal mass is the sum of the two grades:\n\n$$x + y = 50$$\n\nThe overview already recorded that mass equation. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe stem's total cost is \\$1{,}140, so the cost equation is\n\n$$30x + 18y = 1140$$\n\nThe claim writes right-hand side $1150$. Comparing,\n\n$$1140 \\ne 1150$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\nx = 20\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nPremium tea's cost contribution is\n\n$$30 \\times 20 = 600$$\n\nThe claim is \\$780. Comparing,\n\n$$600 \\ne 780$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**E.** → False\n\nThe overview recovered $y = 30$ kg of standard tea. The claim is $32$. Comparing,\n\n$$30 \\ne 32$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 77,
-      "solution_overview": "Topics: mixture.\n\nShared solution:\n1. Let $x$ be premium kilograms.\n2. Let $y$ be standard kilograms.\n3. Total mass gives $x+y=50$.\n4. Total ingredient cost is $50(22.80)=1140$.\n5. Thus $30x+18y=1140$.\n6. Multiply the mass equation by $18$.\n7. This gives $18x+18y=900$.\n8. Subtract to obtain $12x=240$.\n9. Thus $x=20$.\n10. Substitute into $x+y=50$.\n11. Thus $y=30$.\n12. Premium cost is $30(20)=\\$600$.\n13. Standard cost is $18(30)=\\$540$.",
+      "solution_overview": "A $50$ kg tea blend mixes premium tea at \\$30/kg with standard tea at \\$18/kg so the total cost is \\$1{,}140.\n\nLet $x$ = kg of premium and $y$ = kg of standard.\n\n$$x + y = 50 \\tag{1}$$\n\n$$30x + 18y = 1140 \\tag{2}$$\n\nMultiply (1) by $18$ and subtract from (2):\n\n$$12x = 240$$\n\n$$x = 20,\\qquad y = 30$$\n\nPremium cost is $30 \\times 20 = 600$.",
       "placeholder": false
     },
     {
@@ -565,15 +565,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared translation gives these equations.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared solution gives $x=8$.\n\nThe shared result makes the claim True.",
-        "**C.** → False\n\nThe shared solution gives $y=3$, not $4$.\n\nThe shared result makes the claim False.",
-        "**D.** → True\n\nThe shared original number is $83$.\n\nThe shared result makes the claim True.",
-        "**E.** → False\n\nThe shared reversal is smaller by $45$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nThe stem already supplies the two linear conditions\n\n$$4x - y = 29$$\n\n$$2x + y = 19$$\n\nThe overview uses exactly those equations. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.\n\n$$\nx = 8\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → False\n\nThe overview recovered $y = 3$. The claim says the units digit is $4$. Comparing,\n\n$$3 \\ne 4$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**D.** → True\n\nWith $x = 8$ and $y = 3$, the badge number is\n\n$$10x + y = 80 + 3 = 83$$\n\nThe claim is $83$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly Matching the claim confirms the verdict.\n\nSo the statement is True.",
+        "**E.** → False\n\nThe reversed badge is $38$. Compared with the original $83$,\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ smaller, not $38$ greater. The claim is false.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 78,
-      "solution_overview": "Topics: ages_digits.\n\nShared solution:\n1. Let $x$ be the tens digit.\n2. Let $y$ be the units digit.\n3. Translate the first rule as $4x-y=29$.\n4. Translate the second rule as $2x+y=19$.\n5. Add the two equations.\n6. This gives $6x=48$.\n7. Thus $x=8$.\n8. Substitute into $2x+y=19$.\n9. This gives $16+y=19$.\n10. Thus $y=3$.\n11. The original badge is $10x+y=83$.\n12. The reversed badge is $10y+x=38$.\n13. The reversal is $45$ less than the original.",
+      "solution_overview": "A two-digit badge number satisfies $4x - y = 29$ and $2x + y = 19$, where $x$ is the tens digit and $y$ is the units digit.\n\nAdding the two equations eliminates $y$:\n\n$$6x = 48$$\n\n$$x = 8$$\n\nFrom $2x + y = 19$,\n\n$$y = 19 - 16 = 3$$\n\nThe badge is $83$. The reversal is $38$, and\n\n$$83 - 38 = 45$$\n\nso the reversal is $45$ less than the original, not $38$ greater.",
       "placeholder": false
     },
     {
@@ -597,15 +597,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared downstream and upstream translations give these equations.\n\nThe shared result makes the claim True.",
-        "**B.** → False\n\nThe shared solution gives $x=21$, not $22$.\n\nThe shared result makes the claim False.",
-        "**C.** → True\n\nThe shared solution gives $y=4$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared tide rate is not $6$.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared upstream rate gives $3(17)=51$, not $54$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nDownstream and upstream speeds translate into\n\n$$x + y = 25$$\n\n$$x - y = 17$$\n\nThe overview already recorded both speed equations. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**B.** → False\n\nThe overview recovered still-water speed $x = 21$. The claim is $22$. Comparing,\n\n$$21 \\ne 22$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\ny = 4\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nThe overview recovered $y = 4$. The claim says the tide speed is $6$. Comparing,\n\n$$4 \\ne 6$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**E.** → False\n\nUpstream speed is $x - y = 17$, so three hours cover\n\n$$3 \\times 17 = 51$$\n\nThe claim is $54$. Comparing,\n\n$$51 \\ne 54$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 79,
-      "solution_overview": "Topics: rates_work.\n\nShared solution:\n1. Let $x$ be still-water speed.\n2. Let $y$ be tide speed.\n3. With the tide, speed is $x+y=25$.\n4. Against the tide, speed is $x-y=17$.\n5. Add the two equations.\n6. This gives $2x=42$.\n7. Thus $x=21$ knots.\n8. Substitute into $x+y=25$.\n9. Thus $y=4$ knots.\n10. The downstream check is $21+4=25$.\n11. The upstream check is $21-4=17$.\n12. Three upstream hours cover $3(17)$ miles.\n13. Thus the upstream distance is $51$ nautical miles.",
+      "solution_overview": "A boat travels downstream at $25$ knots and upstream at $17$ knots against the same tide.\n\nLet $x$ = still-water speed and $y$ = tide speed.\n\n$$x + y = 25 \\tag{1}$$\n\n$$x - y = 17 \\tag{2}$$\n\nAdd (1) and (2):\n\n$$2x = 42$$\n\n$$x = 21,\\qquad y = 4$$\n\nThree upstream hours cover $3(x-y) = 3 \\times 17 = 51$ nautical miles.",
       "placeholder": false
     },
     {
@@ -629,16 +629,17 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared elimination produces $7y=119$.\n\nThe shared result makes the claim True.",
-        "**B.** → True\n\nThe shared solution gives $x=18$.\n\nThe shared result makes the claim True.",
-        "**C.** → True\n\nThe shared solution gives $y=17$.\n\nThe shared result makes the claim True.",
-        "**D.** → False\n\nThe shared total is $35$, not $36$.\n\nThe shared result makes the claim False.",
-        "**E.** → False\n\nThe shared cod contribution is $4(18)=72$, not $70$.\n\nThe shared result makes the claim False."
+        "**A.** → True\n\nThe overview's elimination step produces\n\n$$7y = 119$$\n\nbefore solving for $y$. Matching the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly Matching the claim confirms the verdict.\n\nSo the statement is True.",
+        "**B.** → True\n\nUse the recovered pair $(x,y)$ without rebuilding the invoices or transfer rules.\n\n$$\nx = 18\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**C.** → True\n\nThe shared elimination is done; only the claim-specific check remains.\n\n$$\ny = 17\n$$\n\nThat recovered value is exactly the figure named in the claim.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is True.",
+        "**D.** → False\n\nTotal baskets are\n\n$$x + y = 18 + 17 = 35$$\n\nThe claim is $36$. Comparing,\n\n$$35 \\ne 36$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly The mismatch with the claim confirms the verdict.\n\nSo the statement is False.",
+        "**E.** → False\n\nCod baskets use $4$ units each of the first resource:\n\n$$4 \\times 18 = 72$$\n\nThe claim is $70$. Comparing,\n\n$$72 \\ne 70$$.\n\nWrite the recovered value beside the claimed figure and read the comparison directly.\n\nSo the statement is False."
       ],
       "difficulty_level": "4/5",
       "sort_order": 80,
-      "solution_overview": "Topics: systems.\n\nShared solution:\n1. Start with $4x+3y=123$.\n2. Use the second equation $2x+5y=121$.\n3. Multiply the second equation by $2$.\n4. This gives $4x+10y=242$.\n5. Subtract the first equation.\n6. The result is $7y=119$.\n7. Thus $y=17$.\n8. Substitute into $2x+5y=121$.\n9. This gives $2x+85=121$.\n10. Thus $x=18$.\n11. The total basket count is $18+17=35$.\n12. Cod baskets use $4(18)=72$ ice units.\n13. The first-resource check is $72+3(17)=123$.",
+      "solution_overview": "A packing shift uses resources\n\n$$4x + 3y = 123 \\tag{1}$$\n\n$$2x + 5y = 121 \\tag{2}$$\n\nwhere $x$ counts cod baskets and $y$ counts salmon baskets.\n\nEliminate $x$: multiply (2) by $2$ and subtract from (1),\n\n$$(4x + 3y) - (4x + 10y) = 123 - 242$$\n\n$$-7y = -119$$\n\n$$7y = 119$$\n\n$$y = 17,\\qquad x = 18$$\n\nTotal baskets: $18 + 17 = 35$. Cod's first-resource use: $4 \\times 18 = 72$.",
       "placeholder": false
     }
-  ]
+  ],
+  "explanation_style": "MATH 13.18 tutoring: shared solution_overview once when letters share a model; each claim as **A.** → True/False with formula → substitute → compare → 'So the statement is True/False.'"
 }
