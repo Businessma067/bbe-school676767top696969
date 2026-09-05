@@ -202,8 +202,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -533,8 +531,6 @@ $$35 + 25 = 60$$
 
 The claim is \\$60.00.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -607,8 +603,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -621,8 +615,6 @@ y=4000
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -637,8 +629,6 @@ $$0.04 \\times 6000 = 240$$
 
 The claim is \\$260.00
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -652,8 +642,6 @@ $$0.07 \\times 4000 = 280$$
 
 The claim is \\$210.00
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -666,8 +654,6 @@ The whole \\$10,000 would sit in Account B at $7\\%$:
 $$0.07 \\times 10000 = 700$$
 
 The claim is \\$700.00.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -750,8 +736,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -765,8 +749,6 @@ $$12 \\times 349 = 4188$$
 
 The claim is \\$4,188.00
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -775,8 +757,6 @@ So the statement is True.`,
 Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The catalogue gap is already equation (1): $y = x + 45$. The claim is that same \\$45.00.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -918,8 +898,6 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 With zero extra minutes, the bill is the recovered fixed fee $f=17$. The claim is \\$0.00.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -932,8 +910,6 @@ Double the rival rate of \\$0.20 is
 $$2 \\times 0.20 = 0.40$$
 
 The recovered extra-minute rate is $r=0.30$. Then $0.30 < 0.40$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1022,8 +998,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -1035,7 +1009,7 @@ The overview recovered $s=75$ Standard ovens at 4 hours each:
 
 $$75 \\times 4 = 300$$
 
-The claim is $300$ assembly hours. Matching these figures to the claim settles the verdict.
+The claim is $300$ assembly hours. 
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1048,7 +1022,7 @@ The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
 $$55 \\times 9 = 495$$
 
-The claim is $500$ assembly hours. The mismatch with the claim settles the verdict.
+The claim is $500$ assembly hours. 
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1062,8 +1036,6 @@ The overview recovered $s=75$ Standard ovens at \\$120 each:
 $$75 \\times 120 = 9000$$
 
 The claim is \\$9,000.00
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1186,8 +1158,6 @@ Use the recovered values from the overview for this claim-specific check.
 
 Hillcrest's gross sales are printed at \\$9,300. The claim is that same total.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -1200,8 +1170,6 @@ Riverside's gross sales are printed at \\$9,760. With zero returns,
 $$9760 - 0 = 9760$$
 
 Gross and net would both equal \\$9,760.00.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -1275,8 +1243,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -1289,8 +1255,6 @@ r=0.20
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1413,8 +1377,6 @@ $$5 \\times 6 = 30$$
 
 Ana's entire order was \\$32.00. Then $30 < 32$.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -1449,8 +1411,6 @@ $$32 - 6 = 26$$
 
 Then $26 < 28$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -1463,8 +1423,6 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1587,8 +1545,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -1600,7 +1556,7 @@ The overview recovered $x=12$. One hundred extra paperbacks add
 
 $$100 \\times 12 = 1200$$
 
-The claim is \\$1,200 higher. Matching these figures to the claim settles the verdict.
+The claim is \\$1,200 higher. 
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1702,8 +1658,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -1757,8 +1711,6 @@ $$38 + 15 = 53$$
 
 Premium is \\$40 unlimited. Then $40 < 53$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -1773,8 +1725,6 @@ $$8 \\times 2 = 16$$
 $$15 + 16 = 31$$
 
 Standard's March bill at 8 GB is the recovered \\$62. Then $31 < 62$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -1867,7 +1817,7 @@ The Suite premium is
 
 $$210 - 140 = 70$$
 
-The claim is \\$200 more. The mismatch with the claim settles the verdict.
+The claim is \\$200 more. 
 
 The shared elimination already fixed the unique pair; this letter only tests the claim's extra arithmetic.
 
@@ -1906,8 +1856,6 @@ Including $8\\%$ tax:
 $$210 \\times 1.08 = 226.80$$
 
 The claim is \\$226.80
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2032,8 +1980,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -2092,8 +2038,6 @@ January's actual value is \\$3,150 and February's is \\$3,660:
 $$3150 + 3660 = 6810$$
 
 The claim is \\$6,810.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2177,8 +2121,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -2209,8 +2151,6 @@ $$2 \\times (24 - 21) = 6$$
 
 The claim is \\$6.00
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -2232,7 +2172,7 @@ $$4 \\times 24 = 96$$
 
 $$560 + 96 = 656$$
 
-The claim is \\$656. Matching these figures to the claim settles the verdict.
+The claim is \\$656. 
 
 So the statement is True.`,
       `**E.** → True
@@ -2246,8 +2186,6 @@ $$4 \\times 21 = 84$$
 $$560 + 84 = 644$$
 
 The claim is \\$644.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2318,8 +2256,6 @@ x=15
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2392,8 +2328,6 @@ June's printed bill is \\$65.00. A 10% late penalty on that total is
 $$65 \\times 1.10 = 71.50$$
 
 The claim is \\$71.50.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2519,8 +2453,6 @@ The overview recovered $C(d)=6+d$. At $30$ km:
 $$C(30) = 6 + 30 = 36$$
 
 The claim is \\$36.00
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -2664,8 +2596,6 @@ $$30 \\times 16 = 480$$
 $$440 + 480 = 920$$
 
 Then $900 < 920$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -2843,8 +2773,6 @@ $$0.10 \\times 13100 = 1310$$
 
 The increase is $750$, not $1310$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -2857,8 +2785,6 @@ $$80 \\times 70 = 5600$$
 $$8250 + 5600 = 13850$$
 
 Beta's recovered Q1 revenue is $14100$. Then $13850 < 14100$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -2977,8 +2903,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -2996,8 +2920,6 @@ $$41 < 45$$
 
 Members pay less per month than the flyer states.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -3013,8 +2935,6 @@ $$284 < 300$$
 
 Her actual total does not exceed the flyer figure.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -3025,8 +2945,6 @@ Jason's printed total after his 10th payment is \\$448.
 $$448 > 400$$
 
 He paid more than \\$400.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3040,8 +2958,6 @@ This member pays no signup fee, only the recovered monthly rate $y = 41$ for 12 
 $$12 \\times 41 = 492$$
 
 The claim is \\$492.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3130,8 +3046,6 @@ The claim writes \\$35.
 
 $$31 \\ne 35$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3146,8 +3060,6 @@ $$2 \\times 169 = 338$$
 $$255 < 338$$
 
 Household 2 is not more than double Household 1.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3174,8 +3086,6 @@ $$5 \\times 31 = 155$$
 $$95 + 155 = 250$$
 
 The claim is \\$250.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3272,8 +3182,6 @@ $$6 > 4.80$$
 
 Milk is the dearer unit.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3306,8 +3214,6 @@ $$47.50 > 47$$
 
 The discounted total is not less than \\$47.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -3322,8 +3228,6 @@ $$2 \\times 6 = 12$$
 $$48 + 12 = 60$$
 
 The mix equals \\$60, so it is not more than \\$60.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -3412,8 +3316,6 @@ Customer service claimed \\$0.24 per unit.
 
 $$0.21 \\ne 0.24$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3429,8 +3331,6 @@ $$33 + 58.80 = 91.80$$
 
 $$91.80 < 95$$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -3441,8 +3341,6 @@ $$33 + 0.21u = 0.29u$$
 $$33 = 0.08u \\Rightarrow u = 412.5$$
 
 For $u > 412.5$ the standard plan is cheaper, so Solar is not cheaper at every positive usage.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → False
@@ -3458,8 +3356,6 @@ $$33 + 0.21 \\times 500 = 33 + 105 = 138$$
 $$145 > 138$$
 
 Solar is not cheaper at 500 units.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3544,8 +3440,6 @@ $$15 < 19$$
 
 An appetizer costs less than a pasta dish.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3559,8 +3453,6 @@ $$200 - 174 = 26$$
 
 The pre-service-charge gap is exactly \\$26.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -3573,8 +3465,6 @@ Table 5's off-peak total is \\$174. Adding the 10% peak-hour service fee:
 $$174 \\times 1.10 = 191.40$$
 
 The claim is \\$191.40.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3594,8 +3484,6 @@ $$76 + 60 = 136$$
 $$136 \\times 1.10 = 149.60$$
 
 $$149.60 < 150$$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3680,8 +3568,6 @@ The claim writes \\$30.
 
 $$27 \\ne 30$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3697,8 +3583,6 @@ $$\\frac{5520}{220} = 25.09$$
 
 The per-unit averages are not equal.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -3709,8 +3593,6 @@ One hundred fifty units of Item N at the recovered $y = 27$:
 $$150 \\times 27 = 4050$$
 
 The claim is \\$4,050.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3818,8 +3700,6 @@ The claim writes \\$50.
 
 $$44 \\ne 50$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3828,8 +3708,6 @@ So the statement is False.`,
 Start from the overview's recovered unknowns, apply only this claim's extra check, and compare with the stated figure.
 
 The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3843,8 +3721,6 @@ Job 1's Premium slice at the recovered $y = 44$, compared with Job 2's whole tot
 $$35 \\times 44 = 1540$$
 
 $$1540 > 1301$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3953,8 +3829,6 @@ Finance claimed \\$0.40 per mile.
 
 $$0.32 \\ne 0.40$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -3969,8 +3843,6 @@ $$7 \\times 55 = 385$$
 $$385 > 120$$
 
 Report 3's \\$120 cannot cover even the meal days.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -3987,8 +3859,6 @@ $$78 < 80$$
 
 The gap is not more than \\$80.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -4001,8 +3871,6 @@ Reports 1 and 2 together:
 $$323 + 245 = 568$$
 
 $$568 \\ge 550$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -4094,8 +3962,6 @@ The claim writes 12 hours.
 
 $$10 \\ne 12$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -4104,8 +3970,6 @@ So the statement is False.`,
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -4120,8 +3984,6 @@ $$445 + 49 = 494$$
 
 A 20% rise in the whole week would have been $445 \\times 0.20 = 89$ hours. The week rises by 49 hours, not 20%.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -4132,8 +3994,6 @@ Week 3 has 15 Widget B and 290 labor-hours. With the recovered times $x = 7$ and
 $$7A + 10(15) = 290$$
 
 $$7A + 150 = 290 \\Rightarrow 7A = 140 \\Rightarrow A = 20$$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4227,8 +4087,6 @@ The claim writes \\$28.
 
 $$24 \\ne 28$$
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -4252,8 +4110,6 @@ Reprice the reported basket at the recovered unit costs from the overview, then 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview priced East at \\$3,085. The claim is that corrected total.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -4348,8 +4204,6 @@ $$\\lceil 18.45 \\rceil = 19$$
 
 The claim is \\$19.00.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -4379,8 +4233,6 @@ Invoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:
 $$\\frac{657.35}{26} = 25.28$$
 
 $$25.28 > 24$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -4413,8 +4265,6 @@ Placing both invoices together is just the sum of the two printed totals:
 $$527.45 + 657.35 = 1184.80$$
 
 That is the same as placing them separately, so the combined order is not strictly more.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -4496,8 +4346,6 @@ $$\\frac{145 + 146}{2} = 145.50$$
 
 The recovered fee is that midpoint.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → False
 
@@ -4515,8 +4363,6 @@ $$0.15 < 0.35$$
 
 The rate is closer to \\$2.00 than to \\$1.50.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -4529,8 +4375,6 @@ $$250 \\times 1.85 = 462.50$$
 $$145.50 + 462.50 = 608.00$$
 
 Five cents under \\$608 would be \\$607.95. The haul is exactly \\$608.00.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -4551,8 +4395,6 @@ $$608.00 - 337.50 = 270.50$$
 
 $$270.50 > 270$$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -4563,8 +4405,6 @@ $$145.50 + 1.85m = 1.35m$$
 $$145.50 = -0.50m \\Rightarrow m = \\frac{145.50}{-0.50} = -291$$
 
 The crossing is at $-291$ miles, a meaningless haul but a real intersection.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4634,8 +4474,6 @@ $$19.05 < 20$$
 
 That product does not clear twenty dollars.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -4651,16 +4489,12 @@ $$6.35 + 3.80 = 10.15$$
 
 $$15.20 > 10.15$$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
       `**C.** → False
 
 The calorie totals 6,100 and 5,400 are printed for reference only. They are not coefficients of $x$ or $y$, so they cannot replace the item counts in (1) and (2). The prices are recovered from quantities and dollar totals.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -4674,8 +4508,6 @@ Receipt 1 totals \\$78.65 across $7 + 9 = 16$ items:
 $$\\frac{78.65}{16} = 4.915625$$
 
 $$4.915625 > 4.90$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -4693,8 +4525,6 @@ $$7 \\times 20.30 = 142.10$$
 $$150 - 142.10 = 7.90$$
 
 $$7.90 < 8$$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4768,8 +4598,6 @@ $$4 \\times 13.85 = 55.40$$
 
 $$55.40 > 55$$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -4808,8 +4636,6 @@ $$\\frac{138.50}{232.50} \\approx 0.596 < \\frac{3}{5}$$
 
 Croissants do not account for more than three-fifths.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -4825,8 +4651,6 @@ $$11.892 - 10.321 = 1.571$$
 
 Email 1 is pricier per dozen-item, but the gap does not clear two dollars.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -4839,8 +4663,6 @@ $$9.40 + 3 = 12.40$$
 $$6 \\times 13.85 + 23 \\times 12.40 = 83.10 + 285.20 = 368.30$$
 
 The cents digit is 30.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4920,8 +4742,6 @@ $$27 < 27.35 < 27.50$$
 
 It clears \\$27 but not \\$27.50.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -4960,8 +4780,6 @@ $$8440 > 8400$$
 
 The mix clears \\$8,400 by \\$40.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -4977,8 +4795,6 @@ $$231.50 - 100 = 131.50$$
 
 $131.50$ is still a three-digit number.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -4991,8 +4807,6 @@ Five hundred Fabric Rolls and no Yarn Spools, at the recovered $x = 27.35$:
 $$500 \\times 27.35 = 13675$$
 
 The profit is exactly \\$13,675.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5069,8 +4883,6 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 
 The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -5090,8 +4902,6 @@ $$0.40 < 0.60$$
 
 Nitrogen is closer to \\$16.00 than to \\$17.00.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → True
 
@@ -5104,8 +4914,6 @@ $$4 \\times 22.65 = 90.60$$
 $$6 \\times 16.40 = 98.40$$
 
 $$90.60 < 98.40$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5121,8 +4929,6 @@ $$2 \\times 326.45 = 652.90$$
 $$652.90 < 655$$
 
 The doubled bill does not land above \\$655.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5142,8 +4948,6 @@ $$\\frac{1025.45}{53} \\approx 19.35$$
 $$19.35 < 20$$
 
 The blended per-cylinder price fails to reach \\$20.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5223,8 +5027,6 @@ $$\\frac{1}{0.085} \\approx 11.76$$
 
 Rounded to the nearest whole hour that is 12, not 11.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -5242,8 +5044,6 @@ $$22.22 < 23.53$$
 
 Bianchi's one job is not longer than Alvarez's two.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → True
 
@@ -5252,8 +5052,6 @@ Start from the overview's recovered unknowns, apply only this claim's extra chec
 Combined hourly output is the sum of the recovered rates:
 
 $$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5270,8 +5068,6 @@ $$\\left|0.15 - \\frac{1}{7}\\right| \\approx 0.0071, \\qquad \\left|0.15 - \\fr
 
 The slice is closer to $\\frac{1}{7}$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -5282,8 +5078,6 @@ $$0.655 + 0.900 = 1.555$$
 $$\\frac{1.555}{23} \\approx 0.0676$$
 
 That average is about $6.76\\%$, which does not clear seven percent.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5365,8 +5159,6 @@ $$0.35 < 0.65$$
 
 The margin sits closer to twelve dollars than to eleven.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**B.** → True
 
@@ -5384,8 +5176,6 @@ $$0.40 < 0.60$$
 
 The margin sits closer to eighteen than to nineteen.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -5396,8 +5186,6 @@ The overview recovered Season 3's T-Shirt count as $T = 245$.
 $$245 = 24 \\times 10 + 5$$
 
 $245$ is not a multiple of ten.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5416,8 +5204,6 @@ $$954.25 < 956.80$$
 
 The earnings gap just fails to cover 52 Hoodies.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -5432,8 +5218,6 @@ $$310 \\times 18.40 = 5704$$
 $$3029 + 5704 = 8733$$
 
 $$8733 > 8700$$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5530,8 +5314,6 @@ $$\\frac{94.60}{89} - 1 \\approx 0.063$$
 
 the real fee overshoots \\$89 by about 6%.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -5544,8 +5326,6 @@ $$3 \\times 3.15 = 9.45$$
 $$9.45 < 9.50$$
 
 That product lands just shy of \\$9.50.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5577,8 +5357,6 @@ $$45 = 7 \\times 6 + 3$$
 
 $45$ is not divisible by seven.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -5593,8 +5371,6 @@ $$400 \\times 3.15 = 1260$$
 $$94.60 + 1260 = 1354.60$$
 
 $$1354.60 > 1350$$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5666,8 +5442,6 @@ The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10
 
 $$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -5678,8 +5452,6 @@ Consistency would require Client B to be exactly double Client A, so Client A wo
 $$\\frac{952.10}{2} = 476.05$$
 
 The actual Client A total is \\$483.70, not \\$476.05. The statement names that consistency requirement.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -5711,8 +5483,6 @@ $$378.45 > 375$$
 
 The total is not shy of \\$375.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -5727,8 +5497,6 @@ $$|967.40 - 952.10| = 15.30$$
 $$|725.55 - 952.10| = 226.55$$
 
 Doubling is closer.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -5807,8 +5575,6 @@ $$324 + 510 = 834$$
 
 Since $834 > 800$, the combined return would rise above \\$800.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -5819,8 +5585,6 @@ $$4800 + 13600 = 18400$$
 $$\\frac{762}{18400} = 0.041413\\ldots$$
 
 That blended rate is about $4.14\\%$, which is more than $4\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5841,8 +5605,6 @@ $$|828 - 762| = 66$$
 
 The even-split return is \\$66 from the actual \\$762, not within \\$5.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -5851,8 +5613,6 @@ The overview recovered the two balances $4800$ (smaller) and $13600$. The relati
 $$\\frac{13600 - 4800}{4800} = \\frac{8800}{4800} = 1.8\\overline{3}$$
 
 about $183.3\\%$, which exceeds $180\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5927,8 +5687,6 @@ $$144 + 184 = 328$$
 
 Since $328 > 300$, the combined salt exceeds $300$ g.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -5937,8 +5695,6 @@ The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 $$\\frac{12}{16} = 0.75$$
 
 Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -5952,8 +5708,6 @@ $$\\frac{5}{12} \\approx 0.4167$$
 $$6 + 0.4167 \\approx 6.417$$
 
 The distance to $6.4$ is about $0.017$, and the distance to $6.0$ is about $0.417$, so the true B volume is closer to $6.4$ L.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -5980,8 +5734,6 @@ $$\\frac{3}{5} = 0.60$$
 $$\\frac{5}{6} \\approx 0.833$$
 
 Since $0.833 > 0.60$, Batch 2 used a higher volume share of Solution A.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6059,8 +5811,6 @@ $$0.10 \\times 65 = 6.50$$
 
 Since $6.50 > 6$, the bonus exceeds \\$6.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -6073,8 +5823,6 @@ $$7 \\times 26 = 182$$
 $$\\frac{182}{882} \\approx 0.2063$$
 
 About $20.6\\%$ is not more than $40\\%$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6089,8 +5837,6 @@ $$2 \\times 45 \\times 17.50 = 1575$$
 
 Since $1647 > 1575$, the actual combined gross is larger.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -6099,8 +5845,6 @@ The overview recovered base $x = 17.50$. Raising that base by $15\\%$ and droppi
 $$42.5 \\times 20.125 = 855.3125$$
 
 Compared with A's actual \\$765, the new gross increases rather than decreases.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -6114,8 +5858,6 @@ $$\\frac{7}{2.5} = 2.8$$
 $$\\frac{882}{765} \\approx 1.153$$
 
 Since $2.8 > 1.153$, the overtime-hours ratio is greater than the gross-pay ratio.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6196,8 +5938,6 @@ $$540 + 440 = 980$$
 
 Since $980 > 950$, the total would exceed \\$950.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -6208,8 +5948,6 @@ $$27 - 11 = 16$$
 $$\\frac{16}{11} \\approx 1.4545$$
 
 Since $1.4545 > 1.45$, the gap is more than $145\\%$ of the wire price.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6226,8 +5964,6 @@ $$750 + 710 = 1460$$
 
 The combined project costs the same as the two projects separately, not less.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -6241,8 +5977,6 @@ $$\\frac{48}{750} = 0.064$$
 
 $6.4\\%$ is not more than $15\\%$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -6255,8 +5989,6 @@ $$\\frac{710}{50} = 14.20$$
 $$\\frac{750}{42} \\approx 17.86$$
 
 Since $14.20 < 17.86$, Project 3's cost per meter is lower, not higher.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -6328,8 +6060,6 @@ $$\\frac{356}{48} \\approx 7.4167$$
 
 about $7$ hours $25$ minutes, which is more than $7$ hours.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -6347,8 +6077,6 @@ $$154 - 96 = 58, \\qquad \\frac{250}{2} = 125$$
 
 Since $58 < 125$, the difference is less than half the gap.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -6357,8 +6085,6 @@ Combined speed is currently $48 + 77 = 125$ km/h. After a $20\\%$ rise on each b
 $$\\frac{250}{150} \\approx 1.667$$
 
 Since $1.667 > 1.5$, the new time does not fall below $1.5$ hours.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6373,8 +6099,6 @@ $$3 \\times 125 = 375$$
 
 Since $375 > 356$, the combined distance exceeds the $356$ km stretch.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -6387,8 +6111,6 @@ $$77 - 48 = 29$$
 $$\\frac{29}{48} \\approx 0.60417$$
 
 about $60.4\\%$, which is more than $60\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6457,8 +6179,6 @@ $$260 \\times 95 + 160 \\times 120 = 24700 + 19200 = 43900$$
 
 Since $43900 < 44000$, the total would not exceed \\$44,000.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**B.** → True
 
@@ -6483,8 +6203,6 @@ $$180 + 300 = 480$$
 
 Since $480 > 440$, Season 3's total tonnage is not less than Season 2's.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -6495,8 +6213,6 @@ The overview reconstructed Season 3 Wheat at $180$ t. An actual $220$ t instead 
 $$40 \\times 95 = 3800$$
 
 That understatement of \\$3,800 is more than \\$3,500.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6512,8 +6228,6 @@ $$\\frac{48300}{440} \\approx 109.77$$
 $$\\frac{42000}{400} = 105$$
 
 Season 2's profit per tonne of total output is higher.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -6595,8 +6309,6 @@ $$2 \\times 34 = 68$$
 
 Since $62 < 68$, the elder will be less than double the younger at that time.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -6629,8 +6341,6 @@ $$\\frac{51.5}{23.5} \\approx 2.191$$
 
 Since $2.191 < 2.5$, the elder will not be more than $2.5$ times the younger.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -6644,8 +6354,6 @@ $$37 + 9 = 46$$
 
 Since $46 > 40$, the sum was not less than $40$.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -6658,8 +6366,6 @@ $$47 - t = 3(19 - t)$$
 $$47 - t = 57 - 3t \\Rightarrow 2t = 10 \\Rightarrow t = 5$$
 
 Since $5 > 4$, such a time exists.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6734,8 +6440,6 @@ $$3(55)(1.18) + 12(80)(1.32) = 194.70 + 1267.20 = 1461.90$$
 
 Compared with the actual \\$1,350.60, the swapped total increases rather than decreases.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**B.** → True
 
@@ -6786,8 +6490,6 @@ The overview recovered $y = 80$, so retail B is $1.18 \\times 80 = 94.40$. Raisi
 $$3 \\times 94.40 = 283.20$$
 
 Since $283.20 > 280$, the retail total would increase by more than \\$280.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -6884,8 +6586,6 @@ $$9 \\times 7 + 4 \\times 3.5 = 63 + 14 = 77$$
 
 Since $77 > 75$, their total would increase.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -6896,8 +6596,6 @@ The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with 
 $$\\frac{18}{67} \\approx 0.2687$$
 
 About $26.9\\%$ is not more than $45\\%$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6914,8 +6612,6 @@ $$7 \\times 2 + 6 \\times 1 = 20$$
 
 The Falcons would still have more points.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -6924,8 +6620,6 @@ The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution 
 $$\\frac{63}{12} = 5.25$$
 
 The win-to-draw ratio is $5.25$, which is not greater than $15$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -6941,8 +6635,6 @@ $$12 \\times 7 + 1 \\times 3 = 87$$
 $$87 - 75 = 12$$
 
 The increase is $12$ points, not more than $20$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7019,8 +6711,6 @@ $$12(7.6) + 10(11.4) = 91.2 + 114 = 205.2$$
 
 Since $205.2 > 200$, the total would exceed $200$ kg.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7047,8 +6737,6 @@ $$\\frac{6.4}{147.0} \\approx 0.04354$$
 
 about $4.35\\%$, which is more than $4\\%$ of the recorded mass.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7064,8 +6752,6 @@ $$|144.4 - 147.0| = 2.6$$
 
 The gap is $2.6$ kg, which is not within $2$ kg of $147.0$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -7076,8 +6762,6 @@ At fixed densities, combining two batches is linear. The combined mass is the su
 $$182.4 + 209.0 = 391.4$$
 
 That equals the sum of the individual masses.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7155,8 +6839,6 @@ $$\\frac{14800}{850000} \\approx 0.017412$$
 
 about $1.741\\%$, which is less than $1.75\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -7168,8 +6850,6 @@ $$\\frac{1200}{10800} \\approx 0.1111$$
 
 about $11.1\\%$, which is more than $10\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -7180,8 +6860,6 @@ Client 1 has AUM \\$750,000 and actual fee $750000(0.016) + 1200 = 13200$. After
 $$750000 \\times 0.014 + 2400 = 10500 + 2400 = 12900$$
 
 Since $12900 < 13200$, Client 1's fee would decrease.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -7196,8 +6874,6 @@ $$0.018 - 0.0176 = 0.0004$$
 
 That is $0.04$ percentage points, which is not more than $0.05$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -7210,8 +6886,6 @@ $$1800000 \\times 0.016 + 1200 = 28800 + 1200 = 30000$$
 $$3 \\times 10800 = 32400$$
 
 Since $30000 < 32400$, the fee is not more than triple.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7276,8 +6950,6 @@ $$\\frac{15.6 - 8.4}{8.4} = \\frac{7.2}{8.4} \\approx 0.8571$$
 
 about $85.7\\%$, which is more than $85\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7288,8 +6960,6 @@ The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 $$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$
 
 about $0.0825\\%$, which is not more than $1\\%$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -7323,8 +6993,6 @@ $$8880 + 12600 = 21480$$
 
 Since $21480 < 25200$, the pooled total is less than twice Batch 2.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -7337,8 +7005,6 @@ $$\\frac{700}{900} \\approx 0.7778$$
 $$\\frac{450}{770} \\approx 0.5844$$
 
 Batch 2's B-share is higher.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7439,8 +7105,6 @@ $$5.25 \\times 38 = 199.50$$
 
 Since $199.50 > 150$, Invoice 2 would decrease by more than \\$150.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -7454,8 +7118,6 @@ $$\\frac{8225}{8946} \\approx 0.9194$$
 
 about $91.9\\%$, which is more than $90\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -7464,8 +7126,6 @@ The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 $$\\frac{38}{4.50} \\approx 8.444$$
 
 Since $8.444 > 8$, the drywall price is more than $8$ times the stud price.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -7485,8 +7145,6 @@ $$\\frac{7164 - 6600}{6600} = \\frac{564}{6600} \\approx 0.08545$$
 $$\\frac{8946 - 8225}{8225} = \\frac{721}{8225} \\approx 0.08766$$
 
 Job 1's $8.545\\%$ is smaller than Job 2's $8.766\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7563,8 +7221,6 @@ $$\\frac{3.50 - 3.4}{3.4} = \\frac{0.10}{3.4} \\approx 0.02941$$
 
 about $2.94\\%$, which is more than $2.5\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7595,8 +7251,6 @@ $$\\frac{|171.00 - 172.20|}{172.20} = \\frac{1.20}{172.20} \\approx 0.00697$$
 
 about $0.70\\%$ of the recorded value, which is not more than $1\\%$.
 
-The mismatch with the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is False.`,
@@ -7610,8 +7264,6 @@ $$\\frac{124.45 - 56.90}{56.90} = \\frac{67.55}{56.90} \\approx 1.1868$$
 
 about $118.7\\%$, which is more than $100\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -7622,8 +7274,6 @@ At reading $8.0$, the recovered calibration gives
 $$3.50 \\times 8.0 + 13.50 = 28 + 13.50 = 41.50$$
 
 Half of Point 1's true value $56.90$ is $28.45$. Since $41.50 > 28.45$, the prediction is not less than half of Point 1.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7693,8 +7343,6 @@ $$\\frac{6.20 - 4.85}{4.85} = \\frac{1.35}{4.85} \\approx 0.2784$$
 
 about $27.8\\%$, which is more than $25\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7710,8 +7358,6 @@ $$\\frac{1934.40}{2943.20} \\approx 0.6572$$
 
 about $65.7\\%$, which is more than $65\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -7722,8 +7368,6 @@ An $800$ kg shipment mixed $1:1$ is $400$ kg of each at the recovered prices.
 $$400 \\times 6.20 + 400 \\times 4.85 = 2480 + 1940 = 4420$$
 
 Since $4420 < 4555$, the $1:1$ mix would cost less than the actual \\$4,555.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -7737,8 +7381,6 @@ $$508 \\times 4.85 = 2463.80$$
 $$812 \\times 6.20 = 5034.40$$
 
 Cocoa's dollar total is smaller, not larger.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -7834,8 +7476,6 @@ $$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$
 
 about $77.8\\%$, which is more than $75\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7846,8 +7486,6 @@ The overview predicted $152.0$ L for Route 3 against $155.0$ L recorded.
 $$\\frac{155.0 - 152.0}{155.0} = \\frac{3}{155} \\approx 0.01935$$
 
 about $1.94\\%$ below the recorded value, which is not more than $2\\%$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -7864,8 +7502,6 @@ $$383.6 + 50.4 = 434.0$$
 
 Since $434.0 > 430$, total fuel would exceed $430$ L.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -7876,8 +7512,6 @@ Route 2 covers $500 + 900 = 1400$ km on $322.0$ L, so the fleet average in L/100
 $$\\frac{322.0}{14} = 23.0$$
 
 Distances to the two individual rates: $|23.0 - 18.0| = 5.0$ versus $|23.0 - 32.0| = 9.0$. The average is closer to the Van rate.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -7893,8 +7527,6 @@ $$14.7 \\times 18.0 = 264.6$$
 $$470.4 + 264.6 = 735.0$$
 
 Actual Route 1 fuel $383.6$ L is less than that sum.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7974,8 +7606,6 @@ $$\\frac{6.6 - 5.4}{5.4} = \\frac{1.2}{5.4} \\approx 0.2222$$
 
 about $22.2\\%$, which is more than $20\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -7989,8 +7619,6 @@ $$\\frac{2646}{45000} = 0.0588$$
 
 $5.88\\%$ is less than $6\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -8003,8 +7631,6 @@ All \\$45,000 in equities at $6.6\\%$ would return
 $$45000 \\times 0.066 = 2970$$
 
 The combined total of the two described allocations is $2646 + 2754 = 5400$. Since $2970 < 5400$, the all-equity return does not exceed that combined total.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -8113,8 +7739,6 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -8125,8 +7749,6 @@ The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 $$\\frac{214.70}{612.50} \\approx 0.3505$$
 
 about $35.1\\%$, which is not more than $60\\%$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -8141,8 +7763,6 @@ $$210 \\times 0.468 = 98.28$$
 
 Since $98.28 > 75$, the Home premium would increase by more than \\$75.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -8153,8 +7773,6 @@ $$\\frac{1197.50}{210} \\approx 5.702$$
 $$\\frac{612.50}{85} \\approx 7.206$$
 
 Home's $5.702$ is not more than twice Auto's $7.206$.
-
-The mismatch with the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -8170,8 +7788,6 @@ $$214.70 + 295 \\times 4.68 = 214.70 + 1380.60 = 1595.30$$
 $$612.50 + 1197.50 = 1810.00$$
 
 The combined policy costs less than the sum of the separate premiums.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -8241,8 +7857,6 @@ $$898 - 874 = 24$$
 
 Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -8258,8 +7872,6 @@ $$1916 - 1772 = 144$$
 
 The excess over the actual $1772$ is $144$, which is more than $140$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -8271,8 +7883,6 @@ $$\\frac{288}{144} = 2$$
 
 The growth ratio is $2:1$, which is not greater than $2.5:1$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -8283,8 +7893,6 @@ $$610 + 72t = 730 + 36t$$
 $$36t = 120 \\Rightarrow t = \\frac{10}{3} \\approx 3.333$$
 
 That is Year $5.333$, which lies between Year 2 and Year 6.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -8302,8 +7910,6 @@ $$610 + 3(72) = 826$$
 $$730 + 3(36) = 838$$
 
 A is still behind at Year 5, and equality comes after Year 5.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -8372,8 +7978,6 @@ $$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$
 
 about $48.0\\%$, which is more than $45\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -8384,8 +7988,6 @@ The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 $$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002815$$
 
 about $0.28\\%$, which is less than $0.3\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
@@ -8407,8 +8009,6 @@ $$\\frac{243}{98} \\approx 2.4796$$
 
 which is more than $2.4$ times Plant B's rate.
 
-Matching these figures to the claim settles the verdict.
-
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 
 So the statement is True.`,
@@ -8419,8 +8019,6 @@ The three recorded daily totals are $3990$, $4072$, and $3553$ MWh.
 $$3990 + 4072 + 3553 = 11615$$
 
 Since $11615 > 11600$, combined production exceeds $11600$ MWh.
-
-Matching these figures to the claim settles the verdict.
 
 Do not rebuild the original system; use the overview's recovered unknowns for this comparison.
 

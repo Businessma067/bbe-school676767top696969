@@ -1322,7 +1322,7 @@ $$d=8$$
 
 Eight metres is shallower than $10$
 
-Matching these figures to the claim shows agreement.
+ shows agreement.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
@@ -4087,7 +4087,7 @@ $$6L=6 L^{1}$$
 
 That is a monomial in hours hired.
 
-Matching these figures to the claim shows agreement.
+ shows agreement.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
@@ -5858,7 +5858,7 @@ $$\\frac{3}{2}>1$$
 
 Losses accelerate as the wind strengthens.
 
-Matching these figures to the claim shows agreement.
+ shows agreement.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 
@@ -8725,7 +8725,7 @@ The overview recovered exponent $\\frac{3}{2}$. Handling cost grows faster than 
 
 $$\\frac{3}{2}>1$$
 
-Matching these figures to the claim shows agreement.
+ shows agreement.
 
 Keep the recovered coefficient and exponent fixed; only the claimed input (or threshold) changes.
 

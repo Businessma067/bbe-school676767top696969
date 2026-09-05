@@ -76,8 +76,6 @@ $$R \\approx 0.074424 \\approx 7.44\\%$$
 
 The claim is about $7.44\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -96,8 +94,6 @@ $$(1.006)^{12} \\approx 1.074424$$
 $$FV \\approx 6{,}446.54$$
 
 The claim is \\$6,446.54.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -325,8 +321,6 @@ $$R_i \\approx 0.065533 \\approx 6.55\\%$$
 
 The claim is about $6.55\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -344,8 +338,6 @@ $$R_{ii} = 0.066056 \\approx 6.61\\%$$
 
 The claim is about $6.61\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -362,8 +354,6 @@ $$i_{ii} = \\frac{0.065}{2} = 0.0325$$
 $$R_{ii} = (1.0325)^{2}-1 \\approx 6.61\\%$$
 
 Since $6.61\\% > 6.55\\%$, Offer (ii) is the better choice.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -600,8 +590,6 @@ $$R \\approx 0.057187 \\approx 5.72\\%$$
 
 The claim is about $5.72\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -620,8 +608,6 @@ $$(1.014)^{4} \\approx 1.057187$$
 $$FV \\approx 15{,}857.81$$
 
 The claim is \\$15,857.81.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -772,8 +758,6 @@ The time equation $t=\\frac{\\ln M}{\\ln(1+i_m)}$ is defined for any growth mult
 
 The same logarithmic method therefore works for any other target growth multiple.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
     ],
     difficulty_level: `2/5`,
@@ -831,8 +815,6 @@ $$R = 0.155625 \\approx 15.56\\%$$
 
 The claim is about $15.56\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -849,8 +831,6 @@ $$(1.0375)^{4} \\approx 1.158650$$
 $$R \\approx 0.158650 \\approx 15.87\\%$$
 
 The claim is about $15.87\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -869,8 +849,6 @@ $$R \\approx 0.160755 \\approx 16.08\\%$$
 
 The claim is about $16.08\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -883,8 +861,6 @@ $$R_4 = (1.0375)^{4}-1 \\approx 15.87\\%$$
 $$R_{12} = (1.0125)^{12}-1 \\approx 16.08\\%$$
 
 These satisfy $15.56\\% < 15.87\\% < 16.08\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -1002,8 +978,6 @@ $$S(10) \\approx 7{,}277.60$$
 
 The claim is \\$7,277.60.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -1012,10 +986,6 @@ Doubling would require a growth factor of $2$. Monthly compounding for ten years
 $$(1.005)^{120} \\approx 1.8194$$
 
 Since $1.8194 < 2$, the deposit has not doubled.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -1083,8 +1053,6 @@ $$r \\approx 4 \\times 0.014796 = 0.05918 \\approx 5.92\\%$$
 
 The claim is about $5.92\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -1095,8 +1063,6 @@ $$1+\\frac{r}{4} = (1.6)^{\\frac{1}{32}} \\approx 1.014796$$
 $$\\frac{r}{4} \\approx 0.014796 \\approx 1.48\\%$$
 
 The claim is about $1.48\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -1205,8 +1171,6 @@ $$R_b \\approx 0.108127 \\approx 10.81\\%$$
 
 The claim is about $10.81\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -1225,8 +1189,6 @@ $$R_a = 10.80\\%$$
 $$R_b = (1.026)^{4}-1 \\approx 10.81\\%$$
 
 Option (b) quotes the lower nominal rate, but $10.81\\% > 10.80\\%$. It is not the cheaper option.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → False
@@ -1311,8 +1273,6 @@ $$(1.045)^{6} \\approx 1.302253$$
 
 The claim is about $1.302253$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -1323,8 +1283,6 @@ $$(1.045)^{6} \\approx 1.302253$$
 $$S_0 = \\frac{40{,}000}{1.302253} \\approx 30{,}715.86$$
 
 The claim is \\$30,715.86.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -1366,8 +1324,6 @@ $$S_0 = \\frac{40{,}000}{(1.045)^{6}} \\approx 30{,}715.86$$
 $$40{,}000 - 30{,}715.86 = 9{,}284.14$$
 
 The claim is \\$9,284.14.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -1416,7 +1372,7 @@ $$
 t = \\frac{\\ln 1.5}{\\ln 1.005}
 $$
 
-The claim is about $81.30$ months. Matching these figures to the claim settles the verdict.
+The claim is about $81.30$ months. 
 
 So the statement is True.`,
       `**B.** → False
@@ -1558,8 +1514,6 @@ $$R \\approx 0.043413 \\approx 4.34\\%$$
 
 The claim is about $4.34\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -1578,8 +1532,6 @@ $$\\left(1+\\frac{0.0425}{365}\\right)^{365} \\approx 1.043413$$
 $$FV \\approx 20{,}868.26$$
 
 The claim is \\$20,868.26.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -1654,8 +1606,6 @@ $$r_{\\mathrm{nom}} = 12 \\times 1.9\\% = 22.80\\%$$
 
 The claim is $22.80\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -1676,8 +1626,6 @@ $$(1.019)^{12} \\approx 1.253401$$
 $$R \\approx 0.253401 \\approx 25.34\\%$$
 
 The claim is about $25.34\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -1793,8 +1741,6 @@ $$R = 0.1025 = 10.25\\%$$
 
 The claim is about $10.25\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -1812,8 +1758,6 @@ $$R \\approx 0.103813 \\approx 10.38\\%$$
 
 The claim is about $10.38\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -1829,8 +1773,6 @@ $$R \\approx 0.104713 \\approx 10.47\\%$$
 
 The claim is about $10.47\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -1843,8 +1785,6 @@ $$R_4 = (1.025)^{4}-1 \\approx 10.38\\%$$
 $$R_{12} = \\left(1+\\frac{0.10}{12}\\right)^{12}-1 \\approx 10.47\\%$$
 
 These satisfy $10.25\\% < 10.38\\% < 10.47\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -1907,8 +1847,6 @@ $$50^{\\frac{1}{80}} \\approx 1.050116$$
 $$r \\approx 0.050116 \\approx 5.01\\%$$
 
 The claim is about $5.01\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2001,8 +1939,6 @@ $$S_{0,X} = \\frac{25{,}000}{1.418038} \\approx 17{,}629.99$$
 
 The claim is \\$17,629.99.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -2015,8 +1951,6 @@ $$\\left(1+\\frac{0.051}{4}\\right)^{28} \\approx 1.425964$$
 $$S_{0,Y} = \\frac{25{,}000}{1.425964} \\approx 17{,}534.28$$
 
 The claim is \\$17,534.28.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -2041,8 +1975,6 @@ $$R_X = \\left(1+\\frac{0.05}{12}\\right)^{12}-1 \\approx 0.05116 \\approx 5.12\
 $$R_Y = \\left(1+\\frac{0.051}{4}\\right)^{4}-1 \\approx 0.05198 \\approx 5.20\\%$$
 
 Since $5.20\\% > 5.12\\%$, Account Y's effective annual rate is higher.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -2120,8 +2052,6 @@ $$G = (1.011)^{36} \\approx 1.482660$$
 $$S_0 = \\frac{60{,}000}{1.482660} \\approx 40{,}467.83$$
 
 The claim is \\$40,467.83.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2219,8 +2149,6 @@ $$R_1 \\approx 0.064851 \\approx 6.49\\%$$
 
 The claim is about $6.49\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -2237,8 +2165,6 @@ $$(1.016)^{4} \\approx 1.065553$$
 $$R_2 \\approx 0.065553 \\approx 6.55\\%$$
 
 The claim is about $6.55\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -2284,8 +2210,6 @@ $$R_3 = (1.03225)^{2}-1 \\approx 6.55\\%$$
 
 CD1 also has the lowest nominal rate, $6.30\\%$. Both the nominal ranking and the effective ranking put CD1 last.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -2302,8 +2226,6 @@ $$I_2 = 20{,}000 \\times 0.065533 \\approx 1{,}310.66$$
 $$1{,}310.66 - 1{,}297.04 = 13.62$$
 
 The claim is approximately \\$13.61.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -2359,8 +2281,6 @@ $$\\ln\\bigl(\\frac{22}{15}\\bigr) \\approx 0.382992, \\qquad \\ln 1.005 \\appro
 $$t_M \\approx 76.79$$
 
 The claim is about $76.8$ months.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**B.** → False
@@ -2426,8 +2346,6 @@ $$\\frac{138.98}{76.79} \\approx 1.81$$
 
 The time ratio is about $1.81$, not $2$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
     ],
     difficulty_level: `5/5`,
@@ -2479,8 +2397,6 @@ $$S(1) \\approx 4{,}730.72$$
 
 The claim is \\$4,730.72.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -2491,8 +2407,6 @@ $$S(1) = 4{,}500 \\times e^{0.05} \\approx 4{,}730.72$$
 $$4{,}730.72 - 4{,}500 = 230.72$$
 
 The claim is \\$230.72.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2520,8 +2434,6 @@ $$4{,}730.72 - 4{,}725.00 = 5.72$$
 
 The claim is \\$5.72.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -2534,8 +2446,6 @@ The one-year continuous growth factor is
 $$e^{0.05} \\approx 1.051271$$
 
 Rounded to four decimals this is $1.0513$, not $1.0400$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -2579,8 +2489,6 @@ $$e^{0.48} \\approx 1.616074$$
 $$S(6) \\approx 5{,}171.44$$
 
 The claim is approximately \\$5,171.44.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**B.** → False
@@ -2683,8 +2591,6 @@ $$R \\approx 0.094174 \\approx 9.42\\%$$
 
 The claim is about $9.42\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -2701,8 +2607,6 @@ $$e^{0.09} \\approx 1.094174$$
 $$S(1) \\approx 16{,}412.61$$
 
 The claim is \\$16,412.61.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -2788,8 +2692,6 @@ $$K_{\\mathrm{y}} = 1 + 0.10 = 1.1000$$
 
 The claim is $1.1000$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -2800,8 +2702,6 @@ Semi-annual compounding splits the quote in two, then squares:
 $$K_{\\mathrm{s}} = \\left(1+\\frac{0.10}{2}\\right)^{2} = (1.05)^{2} = 1.1025$$
 
 The claim is $1.1025$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2815,8 +2715,6 @@ $$K_{\\mathrm{c}} = e^{0.10}$$
 $$e^{0.10} \\approx 1.105171 \\approx 1.1052$$
 
 The claim is about $1.1052$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2908,8 +2806,6 @@ $$S(2) \\approx 103{,}946.56$$
 
 The claim is approximately \\$103,946.56.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -2935,8 +2831,6 @@ Each year multiplies the current balance by the same continuous factor
 $$e^{r} = e^{0.045} \\approx 1.046028$$
 
 That factor does not change from year to year.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -2998,8 +2892,6 @@ $$v(4) \\approx 40{,}219.20$$
 
 The claim is approximately \\$40,219.20.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -3015,8 +2907,6 @@ $$v(7) \\approx 29{,}795.12$$
 
 The claim is approximately \\$29,795.12.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -3027,8 +2917,6 @@ $$v(4) = 60{,}000 \\times e^{-0.40} \\approx 40{,}219.20$$
 $$\\frac{40{,}219.20}{60{,}000} \\approx 0.6703 = 67.03\\%$$
 
 The claim is about $67.03\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -3126,8 +3014,6 @@ $$S(12.60) \\approx 35{,}994.70$$
 
 The claim is approximately \\$36,000.00.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -3160,8 +3046,6 @@ So the statement is False.`,
 Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 The doubling time $t_2=\\frac{\\ln 2}{r}$ falls when $r$ rises. A higher interest rate shortens the wait, it does not lengthen it.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -3200,8 +3084,6 @@ Name the financial quantity in the claim, substitute the recovered inputs, and c
 
 The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -3217,8 +3099,6 @@ $$t \\approx 5.09$$
 
 The claim is about $5.09$ years.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -3229,8 +3109,6 @@ Retaining $40\\%$ of the original \\$120,000 leaves
 $$0.40 \\times 120{,}000 = 48{,}000$$
 
 The claim is approximately \\$48,000.00.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -3244,8 +3122,6 @@ Halving the depreciation rate to $9\\%$ doubles the isolated wait:
 $$t' = \\frac{\\ln 2.5}{0.09} \\approx 10.18$$
 
 The original wait was $t \\approx 5.09$, and $10.18 = 2 \\times 5.09$. The claim is that doubled time.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -3301,8 +3177,6 @@ $$G(0.03,1) \\approx 11.36$$
 
 The claim is approximately \\$11.36.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -3317,8 +3191,6 @@ $$e^{0.15} \\approx 1.161834$$
 $$G(0.15,1) \\approx 295.86$$
 
 The claim is approximately \\$295.86.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -3349,8 +3221,6 @@ $$e^{0.24} \\approx 1.271249, \\qquad (1.03)^{8} \\approx 1.266770$$
 $$G(0.03,8) \\approx 111.98$$
 
 The claim is approximately \\$111.98.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -3409,8 +3279,6 @@ $$e^{0.095} \\approx 1.099659$$
 $$S_A \\approx 439{,}863.54$$
 
 The claim is approximately \\$439,863.54.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**B.** → False
@@ -3538,8 +3406,6 @@ $$S(5) \\approx 39{,}078.52$$
 
 The claim is approximately \\$39,078.52.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -3628,8 +3494,6 @@ $$S_X \\approx 68{,}740.91$$
 
 The claim is approximately \\$68,740.91.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -3644,8 +3508,6 @@ $$\\left(1.00575\\right)^{24} \\approx 1.147522$$
 $$S_Y \\approx 68{,}851.32$$
 
 The claim is approximately \\$68,851.32.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -3662,8 +3524,6 @@ $$S_Z \\approx 68{,}932.91$$
 
 The claim is approximately \\$68,932.91.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -3676,8 +3536,6 @@ $$S_Y = 60{,}000 \\times (1.00575)^{24} \\approx 68{,}851.32$$
 $$S_Z = 60{,}000 \\times (1.0175)^{8} \\approx 68{,}932.91$$
 
 These satisfy $S_X < S_Y < S_Z$. Bank X is the lowest of the three.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -3811,8 +3669,6 @@ Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Raising the fee lowers $r_{\\mathrm{net}}=r-f$ and therefore lowers $S(t)=S_0 e^{r_{\\mathrm{net}} t}$ at every $t>0$. A higher fee reduces both the net growth rate and the cumulative value.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
     ],
     difficulty_level: `4/5`,
@@ -3850,8 +3706,6 @@ Name the financial quantity in the claim, substitute the recovered inputs, and c
 
 The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -3868,8 +3722,6 @@ At that time Asset A is worth
 $$A(10.06) = 50{,}000 \\times e^{0.04 \\times 10.06} \\approx 74{,}767.44$$
 
 The claim is about $t \\approx 10.06$ years and about \\$74,767.44.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -3897,7 +3749,7 @@ $$
 t = \\frac{\\ln 5}{0.16} \\approx 10.06
 $$
 
-Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. The mismatch with the claim settles the verdict.
+Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure. 
 
 So the statement is False.`,
       `**E.** → True
@@ -3905,8 +3757,6 @@ So the statement is False.`,
 Name the financial rule behind the claim, then substitute the recovered inputs.
 
 For $t$ larger than the crossover $t_*\\approx 10.06$, the exponent $(r_A+\\delta_B)(t-t_*)$ is positive, so $A(t)>B(t)$ stays in force. Asset A remains ahead after the crossing.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -3947,8 +3797,6 @@ $$S_1 = 40{,}000 \\times 1.07 = 42{,}800.00$$
 
 The claim is \\$42,800.00.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -3970,8 +3818,6 @@ $$S_{12} \\approx 42{,}891.60$$
 
 The claim is about \\$42,874.36 and about \\$42,891.60.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -3986,8 +3832,6 @@ $$S_{12} = 40{,}000 \\times \\left(1+\\frac{0.07}{12}\\right)^{12} \\approx 42{,
 $$S_{\\mathrm{c}} = 40{,}000 \\times e^{0.07} \\approx 42{,}900.33$$
 
 These satisfy $S_1 < S_4 < S_{12} < S_{\\mathrm{c}}$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -4010,8 +3854,6 @@ Continuous compounding at this $7\\%$ quote is the ceiling:
 $$S_{\\mathrm{c}} = 40{,}000 \\times e^{0.07} \\approx 42{,}900.33$$
 
 Every finite $m$ gives $S_m < S_{\\mathrm{c}}$. No schedule can exceed \\$42,900.33 at this same nominal rate.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4060,8 +3902,6 @@ $$S_{0,1} \\approx 69{,}767.63$$
 
 The claim is approximately \\$69,767.63.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -4076,8 +3916,6 @@ $$e^{-0.48} \\approx 0.618783$$
 $$S_{0,2} \\approx 61{,}878.34$$
 
 The claim is approximately \\$61,878.34.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -4165,8 +4003,6 @@ $$S(4) \\approx 2{,}685{,}284.46$$
 
 The claim is approximately \\$2,685,284.46.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -4180,8 +4016,6 @@ $$S(7) \\approx 3{,}027{,}649.77$$
 
 The claim is approximately \\$3,027,649.77.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -4190,8 +4024,6 @@ The single constant rate matching the seven-year outcome is the time-weighted av
 $$r_* = \\frac{0.10 \\times 4 + 0.04 \\times 3}{7} = \\frac{0.52}{7} \\approx 0.07429 = 7.43\\%$$
 
 The claim is about $7.43\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4216,8 +4048,6 @@ Reversing the phases adds the same exponents:
 $$S_{\\mathrm{rev}}(7) = 1{,}800{,}000 \\times e^{0.04 \\times 3 + 0.10 \\times 4} = 1{,}800{,}000 \\times e^{0.52}$$
 
 That equals the original $S(7)$. The year-7 revenue is unchanged.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -4363,8 +4193,6 @@ $$t_2 \\approx 10.66$$
 
 The claim is about $10.66$ years.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -4379,8 +4207,6 @@ $$\\ln 3 \\approx 1.098612$$
 $$t_3 \\approx 16.90$$
 
 The claim is about $16.90$ years.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4399,8 +4225,6 @@ $$2 \\times t_2 = 2 \\times \\frac{\\ln 2}{0.065} \\approx 21.33$$
 
 The quadrupling time is about $21.33$ years and equals twice the doubling time.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -4411,8 +4235,6 @@ Quadrupling the \\$12,000 deposit gives
 $$4 \\times 12{,}000 = 48{,}000$$
 
 At the quadrupling time the fund is worth exactly \\$48,000.00.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4474,8 +4296,6 @@ $$A(5) \\approx 202{,}478.82$$
 
 The claim is approximately \\$202,478.82.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -4490,8 +4310,6 @@ $$e^{-0.45} \\approx 0.637628$$
 $$B(5) \\approx 140{,}278.19$$
 
 The claim is approximately \\$140,278.19.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → False
@@ -4634,8 +4452,6 @@ $$8{,}000-7{,}619.05=380.95$$
 
 The claim is \\$423.81
 
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -4648,10 +4464,6 @@ At $r=0$ the discount factor is $1$:
 $$\\mathrm{PDV}=8{,}000\\times 1=8{,}000$$
 
 The claim is \\$7,500.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4740,10 +4552,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -4754,10 +4562,6 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 10{,}075.43$ and $
 $$10{,}075.43-10{,}023.24=52.19$$
 
 The claim is \\$60.00
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4867,10 +4671,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -4881,10 +4681,6 @@ The overview recovered $\\mathrm{PDV}_{\\mathrm{ann}}\\approx 26{,}190.41$ and $
 $$26{,}190.41-25{,}704.41=486.00$$
 
 The claim is \\$650.00
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4898,10 +4694,6 @@ At $r=0$ both discount factors equal $1$:
 $$\\mathrm{PDV}=45{,}000\\times 1=45{,}000$$
 
 The claim is \\$40,000.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -4958,10 +4750,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -4991,10 +4779,6 @@ A deposit of \\$110,000 grows by the reciprocal factor $e^{0.225}$:
 $$110{,}000\\times e^{0.225}\\approx 110{,}000\\times 1.2523\\approx 137{,}755.50$$
 
 That balance is below \\$150,000.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5118,10 +4902,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -5134,10 +4914,6 @@ t_{\\mathrm{cont}}\\approx 5.02
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5230,8 +5006,6 @@ $$\\mathrm{PDV}=60{,}000\\,e^{-0.0665\\times 6}=60{,}000\\,e^{-0.399}\\approx 40
 
 The claim is \\$40,249.20
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -5255,8 +5029,6 @@ At a $24$-year horizon with the same discount factor $0.45$,
 $$r=-\\frac{\\ln(0.45)}{24}=\\frac{0.798508}{24}\\approx 0.0333=3.33\\%$$
 
 The claim is $3.33\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5362,10 +5134,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -5451,8 +5219,6 @@ $$22{,}000 > 21{,}410.30$$
 
 Option A is larger at the $6\%$ rate.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -5466,10 +5232,6 @@ $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.092727}\\approx 23{,}336.02$$
 
 The claim is \\$22,780.00.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -5480,10 +5242,6 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5499,10 +5257,6 @@ $$(1.05)^{3}=1.157625$$
 $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.157625}\\approx 22{,}027.86$$
 
 The claim is \\$23,500.00.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -5570,8 +5324,6 @@ At an interior optimum the derivative of the objective must vanish. Check the ov
 
 The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equal to $\\frac{P(t^{*})}{r}$.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -5582,10 +5334,6 @@ f(23)\\approx 496{,}304.46
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5601,8 +5349,6 @@ t^{*}=\\frac{2}{r}-2
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → False
@@ -5723,10 +5469,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -5739,8 +5481,6 @@ At $r=0$ each discount factor is $1$:
 $$\\mathrm{PDV}=18{,}000+30{,}000=48{,}000$$
 
 The claim is \\$48,000.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5797,10 +5537,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -5816,8 +5552,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -5831,8 +5565,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -5841,8 +5573,6 @@ The overview recovered $1+r_a=e^{0.05}$. At a $3$-year horizon the two clocks ag
 $$\\mathrm{PDV}=50{,}000\\,e^{-0.05\\times 3}=50{,}000\\,e^{-0.15}\\approx 43{,}035.40$$
 
 The claim is \\$43,035.40
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -5970,8 +5700,6 @@ $$K_2=64{,}735.99\\times(1.08)^{6}\\approx 102{,}727.88$$
 
 The claim is \\$102,727.88.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -6025,10 +5753,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -6044,8 +5768,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -6054,8 +5776,6 @@ The overview recovered $K\\approx 45{,}392.55$. The excess over the immediate op
 $$45{,}392.55-35{,}000=10{,}392.55$$
 
 The claim needs an excess above \\$11,000. We have $10{,}392.55<11{,}000$
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -6124,8 +5844,6 @@ At an interior optimum the derivative of the objective must vanish. Check the ov
 
 The overview showed that $P'(t^{*})=rP(t^{*})$ has no solution for $t^{*}>0$, and that $f$ is maximized at $t^{*}=0$. The claim is that same conclusion.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -6150,8 +5868,6 @@ $$f(10)=40{,}000e^{-0.03\\times 10}=40{,}000e^{-0.3}\\approx 29{,}632.73$$
 
 The claim is \\$29,632.73.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -6164,10 +5880,6 @@ f(t)=40{,}000e^{-0.03t}
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -6183,8 +5895,6 @@ At $r=0.04$,
 $$f(t)=40{,}000e^{(0.05-0.04)t}=40{,}000e^{0.01t}$$
 
 This rises with $t$, so the optimum is not $t^{*}=0$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -6280,8 +5990,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -6369,8 +6077,6 @@ $$f(t^{*})=1{,}481{,}481.48\\,e^{-0.09\\times 18.22}\\approx 287{,}377.84$$
 
 The claim is \\$250,000.00
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -6384,8 +6090,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -6395,7 +6099,7 @@ The overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$ and denominator $-6{,
 
 $$\\frac{dt^{*}}{dr}=\\frac{1{,}481{,}481.48}{-6{,}000}\\approx -246.91$$
 
-The claim is $+246.91$. The mismatch with the claim settles the verdict.
+The claim is $+246.91$. 
 
 So the statement is False.`,
       `**E.** → False
@@ -6501,10 +6205,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -6528,8 +6228,6 @@ At $r=0$ each discount factor is $1$:
 $$\\mathrm{PDV}=250{,}000+40{,}000=290{,}000$$
 
 The claim is \\$290,000.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -6646,8 +6344,6 @@ $$r=-\\frac{\\ln(0.625)}{9}=\\frac{0.470004}{9}\\approx 0.0522=5.22\\%$$
 
 The claim is $5.22\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -6734,8 +6430,6 @@ $$P(t^{*})=1{,}200\\left(\\frac{2}{0.075}\\right)^{2}\\approx 853{,}333.33$$
 $$f(t^{*})=853{,}333.33\\,e^{-0.075\\times 21.67}\\approx 168{,}031.30$$
 
 The claim is \\$195,500.00.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -6848,10 +6542,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -6865,10 +6555,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -6881,10 +6567,6 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -6943,8 +6625,6 @@ $$a_2 = 50 \\times 1.10 = 55.00$$
 
 The claim is \\$55.00 million.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -6961,8 +6641,6 @@ $$(1.10)^4 = 1.4641$$
 $$a_5 = 50 \\times 1.4641 = 73.205 \\approx 73.21$$
 
 The claim is about \\$73.21 million.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**C.** → True
@@ -7002,8 +6680,6 @@ $$305.26 - 250 = 55.26$$
 
 The claim is an extra of exactly \\$60.00 million. The extra is \\$55.26 million.
 
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -7018,8 +6694,6 @@ s_5 \\approx 305.26
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7140,8 +6814,6 @@ $$|k| = 1.5 \\ge 1$$
 
 so the infinite geometric formula does not apply. The terms $2{,}000$, $3{,}000$, $4{,}500$, $\\ldots$ grow without bound, and the partial sums diverge. Plugging into $\\frac{a}{1-k}$ would give $-4{,}000$, but that algebraic extension is not a sum of profits. The series does not converge.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
     ],
     difficulty_level: `1/5`,
@@ -7256,7 +6928,7 @@ Their share is
 
 $$\\frac{5{,}210.57}{8{,}000} \\approx 0.6513 \\approx 65\\%$$
 
-The claim is about $65\\%$. Matching these figures to the claim settles the verdict.
+The claim is about $65\\%$. 
 
 So the statement is True.`,
       `**E.** → True
@@ -7268,8 +6940,6 @@ At the hypothetical quotient $k=1.10$,
 $$|k| = 1.10 \\ge 1$$
 
 so the convergence test fails. Growing deposits of \\$800, \\$880, \\$968, $\\ldots$ have partial sums that run to infinity. The series diverges.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7328,8 +6998,6 @@ $$t = \\frac{18{,}000{,}000}{300{,}000} = 60$$
 
 The claim is $60$ years.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -7343,8 +7011,6 @@ $$t = \\frac{18{,}000{,}000}{500{,}000} = 36$$
 
 The claim is $36$ years.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -7353,8 +7019,6 @@ So the statement is True.`,
 Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -7366,10 +7030,6 @@ s_{10}\\approx 3{,}773{,}368
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -7383,8 +7043,6 @@ $$3{,}773{,}368-3{,}000{,}000 = 773{,}368$$
 $$773{,}368 < 1{,}000{,}000$$
 
 The extra is not more than $1{,}000{,}000$ tons.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7437,8 +7095,6 @@ $$a_2 = 180 \\times 0.97 = 174.6$$
 
 The claim is $174.6$ million tons.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -7490,8 +7146,6 @@ $$9{,}000-3{,}600 = 5{,}400$$
 
 The overview recovered $3{,}000$ million tons stranded under the $3\\%$ decline. A $5\\%$ decline strands more coal, not less.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -7502,8 +7156,6 @@ $$0.97^{20} \\approx 0.5438$$
 $$s_{20} = 180\\frac{1-0.5438}{0.03} \\approx 2{,}737.3$$
 
 The overview recovered $s_{\\infty}=6{,}000$. Since $2{,}737.3<6{,}000$, the $20$-year total does not exceed the infinite total.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7592,8 +7244,6 @@ $$s_4 = 4{,}000-2{,}000+1{,}000-500 = 2{,}500$$
 
 The claim is \\$3,000.00. The four-term sum is \\$2,500.00.
 
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -7609,8 +7259,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -7621,8 +7269,6 @@ At $k=-1$ the terms alternate between $4{,}000$ and $-4{,}000$. The partial sums
 $$s_1=4{,}000, \\qquad s_2=0, \\qquad s_3=4{,}000, \\qquad s_4=0$$
 
 Odd $n$ returns \\$4,000 and even $n$ returns \\$0, forever. The claim is that oscillation.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7669,8 +7315,6 @@ Name the financial quantity in the claim, substitute the recovered inputs, and c
 
 The equal-payment plan is the $k=1$ case already written in the overview, so the $15$-year total is $a\\times n$. The claim is that identity.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -7703,8 +7347,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -7715,10 +7357,6 @@ $$240.28-180.00 = 60.28$$
 $$60.28 < 65.00$$
 
 The extra is not more than \\$65.00 million.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -7736,8 +7374,6 @@ The general finite-sum formula divides by $k-1$. At $k=1$,
 $$k-1 = 0$$
 
 so that formula is undefined. The equal-payment case must use $s_n=an$ instead. The claim is that division by zero.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -7792,8 +7428,6 @@ $$a_2 = 15{,}000 \\times 0.88 = 13{,}200$$
 
 The claim is \\$13,200.00.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**B.** → True
 
@@ -7819,8 +7453,6 @@ s_{\\infty}=125{,}000
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → False
@@ -7849,8 +7481,6 @@ At the slower decay $k=0.95$,
 $$s_{\\infty} = \\frac{15{,}000}{1-0.95} = \\frac{15{,}000}{0.05} = 300{,}000$$
 
 The overview recovered \\$125,000 at $k=0.88$. Since $300{,}000>125{,}000$, a less steep decline makes the infinite total larger, not smaller.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -7912,10 +7542,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -7933,8 +7559,6 @@ $$|k| = 1.08 \\ge 1$$
 
 so that formula does not apply, and a growing royalty stream has no finite infinite total. The claim treats the infinite formula as legitimate.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -7948,8 +7572,6 @@ $$a_{12} = 9{,}000 \\times 2.331639 \\approx 20{,}984.75$$
 
 The claim is about \\$20,715.85. The year-$12$ royalty is about \\$20,984.75.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -7958,8 +7580,6 @@ The overview recovered \\$170,794.15 under $8\\%$ growth and \\$108,000 with no 
 $$170{,}794.15-108{,}000 = 62{,}794.15$$
 
 The claim is that the flat total sits \\$62,794.15 below the growing total.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -8051,8 +7671,6 @@ $$T = \\frac{9.95328}{1-0.85} = \\frac{9.95328}{0.15} \\approx 66.36$$
 
 The claim is about \\$66.36 million.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -8066,9 +7684,7 @@ $$106.08 > 100$$
 
 The combined value is not less than \\$100 million.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
+Comparing the computed figure with the wording of the claim shows that they disagree.
 
 So the statement is False.`,
     ],
@@ -8121,8 +7737,6 @@ $$1{,}000 \\times 1.15 = 1{,}150$$
 
 The claim is \\$1,150.00.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -8157,8 +7771,6 @@ $$a_6 = 6{,}625.74 \\times 2.011357188 \\approx 13{,}326.73$$
 
 The claim is about \\$13,326.73.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -8172,8 +7784,6 @@ $$6{,}625.74 \\times 5.281239 \\approx 34{,}992.12$$
 
 The claim is about \\$37,930.00. The three-month total is about \\$34,992.12.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → True
 
@@ -8184,8 +7794,6 @@ Spreading \\$58,000 evenly over six months gives
 $$\\frac{58{,}000}{6} \\approx 9{,}666.67$$
 
 The overview recovered $a\\approx 6{,}625.74$. Since $9{,}666.67>6{,}625.74$, the flat monthly figure exceeds the growing first-month cost.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -8234,8 +7842,6 @@ $$a_2 = 500{,}000 \\times 0.98 = 490{,}000$$
 
 The claim is \\$490,000.00.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -8266,10 +7872,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -8283,7 +7885,7 @@ The share is
 
 $$\\frac{4{,}573{,}179.83}{25{,}000{,}000} \\approx 0.1829 \\approx 18\\%$$
 
-The claim is about $18\\%$. Matching these figures to the claim settles the verdict.
+The claim is about $18\\%$. 
 
 So the statement is True.`,
       `**E.** → False
@@ -8299,8 +7901,6 @@ $$\\frac{25{,}000{,}000}{2} = 12{,}500{,}000$$
 $$10{,}000{,}000 < 12{,}500{,}000$$
 
 The steeper-decline total is not more than half of \\$25,000,000.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -8351,8 +7951,6 @@ $$a_2 = 200{,}000 \\times 1.12 = 224{,}000$$
 
 The claim is \\$224,000.00.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -8365,8 +7963,6 @@ The overview recovered $s_9\\approx 2{,}955{,}131.26$. Since
 $$2{,}955{,}131.26 < 3{,}000{,}000$$
 
 nine years remain below the target.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -8381,10 +7977,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -8397,10 +7989,6 @@ s_9\\approx 2{,}955{,}131.26
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -8418,8 +8006,6 @@ $$s_{10} = 200{,}000\\frac{2.158924997-1}{0.08} = 200{,}000 \\times 14.486562 \\
 $$2{,}897{,}312.49 < 3{,}000{,}000$$
 
 The ten-year total still misses the target.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -8469,8 +8055,6 @@ The second grant is one decline step past the first:
 $$a_2 = 50{,}000 \\times 0.96 = 48{,}000$$
 
 The claim is \\$48,000.00.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**B.** → True
@@ -8544,8 +8128,6 @@ $$500{,}000 < 625{,}000$$
 
 The steeper-decline total is less than half of \\$1,250,000.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
     ],
     difficulty_level: `4/5`,
@@ -8595,8 +8177,6 @@ $$a_2 = 10{,}000 \\times 0.98 = 9{,}800$$
 
 The claim is $9{,}800.00$ lbs.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -8635,8 +8215,6 @@ $$s_5 = 10{,}000\\frac{1-0.903920800}{0.02} = 10{,}000 \\times 4.80396 = 48{,}03
 
 That figure is the first five quarters, not five years. Five years are $20$ quarters, whose total the overview recovered as $166{,}196.01$ lbs. Using $n=5$ is not the correct five-year total.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -8650,8 +8228,6 @@ $$a_{20} = 10{,}000 \\times 0.681230 \\approx 6{,}812.33$$
 
 The claim is about $6{,}812.33$ lbs.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -8662,8 +8238,6 @@ If the decline continued forever,
 $$s_{\\infty} = \\frac{10{,}000}{1-0.98} = \\frac{10{,}000}{0.02} = 500{,}000$$
 
 The overview recovered $s_{20}=166{,}196.01$. Since $500{,}000>166{,}196.01$, the infinite total is larger than the $20$-quarter total, not smaller.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -8763,8 +8337,6 @@ $$120{,}290.42 > 109{,}125.14$$
 
 Territory A's year-$8$ payment exceeds Territory B's.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -8837,8 +8409,6 @@ $$a_4 = \\frac{5{,}000}{8} = 625$$
 
 The claim is about \\$650.00. The fourth benefit is \\$625.00.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**B.** → True
 
@@ -8847,8 +8417,6 @@ The overview's test requires $p>1$. Here $p=1.5$, and
 $$1.5 > 1$$
 
 so $\\sum \\frac{5{,}000}{n^{1.5}}$ converges to a finite total. The claim is that convergence.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -8863,8 +8431,6 @@ $$\\sum_{n=1}^{\\infty}\\frac{5{,}000}{n}$$
 
 The test requires $p>1$, and $1>1$ is false, so the series diverges. There is no finite total to compare with the $p=1.5$ case.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → False
 
@@ -8873,8 +8439,6 @@ At $p=1.5$ and $n=100$,
 $$a_{100} = \\frac{5{,}000}{100^{1.5}} = \\frac{5{,}000}{1{,}000} = 5$$
 
 so the named term \\$5.00 is correct. Terms tending to $0$ is necessary for convergence, not sufficient. The harmonic case $p=1$ also has $a_n\\to 0$ and still diverges. One small term does not guarantee a finite sum.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -8886,8 +8450,6 @@ At $p=0.5$,
 $$0.5 \\le 1$$
 
 so $\\sum \\frac{5{,}000}{n^{0.5}}$ diverges by the $p$-series test, even though $a_n\\to 0$. The claim is that divergence.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -8985,8 +8547,6 @@ $$167{,}350.25-166{,}108.06 = 1{,}242.19$$
 
 Revenue still exceeds maintenance in year $12$ by about \\$1,242.19.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -8999,8 +8559,6 @@ $$s_{C,20} = 120{,}000\\frac{1.03^{20}-1}{0.03} \\approx 3{,}224{,}444.94$$
 $$\\Pi_{20} = 3{,}302{,}850.60-3{,}224{,}444.94 = 78{,}405.66$$
 
 The overview recovered $\\Pi_{12}=199{,}331.90$. Since $78{,}405.66<199{,}331.90$, the $20$-year profit sits below the $12$-year profit.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -9066,10 +8624,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -9110,8 +8664,6 @@ $$1.06^6 \\approx 1.418519$$
 $$a_7 = 2{,}400{,}000 \\times 1.418519 \\approx 3{,}404{,}445.87$$
 
 The claim is about \\$2,900,000.00. Year-$7$ cash flow is about \\$3,404,445.87.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -9201,8 +8753,6 @@ $$225{,}000+215{,}603.80+375{,}000 = 815{,}603.80$$
 
 The claim excludes Tranche 3 and stops at \\$440,603.80. The combined portfolio is \\$815,603.80.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -9211,8 +8761,6 @@ The fee in period $100$ is
 $$f_{100} = \\frac{1{,}000}{100} = 10$$
 
 so the named term \\$10.00 is correct. The full stream is $1{,}000$ times the harmonic series, and $p=1$ fails the $p$-series test $p>1$. Terms tending to $0$ do not guarantee convergence.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -9312,8 +8860,6 @@ $$2 \\times 4{,}081.49 = 8{,}162.98$$
 
 The claim is \\$8,162.98.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -9398,8 +8944,6 @@ Interest over the first five years is the recovered five-year balance minus the 
 $$8{,}698.47 - 6{,}500 = 2{,}198.47$$
 
 The claim is \\$2,198.47.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -9629,8 +9173,6 @@ $$50{,}702.97 - 35{,}000 = 15{,}702.97$$
 
 The claim is \\$15,702.97.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -9741,8 +9283,6 @@ Fifteen withdrawals of \\$2,400 total
 $$2{,}400 \\times 15 = 36{,}000$$
 
 The overview recovered $P_{15}=25{,}775.15$. Then $36{,}000 > 25{,}775.15$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -9901,8 +9441,6 @@ $$\\frac{1}{(1.06)^n}\\to 0$$
 $$P_n \\to \\frac{5{,}000}{0.06} = 83{,}333.33$$
 
 The claim is that same limit.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -10675,8 +10213,6 @@ $$50{,}000 + 250{,}000 = 300{,}000$$
 
 The claim is \\$300,000.00.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -10806,8 +10342,6 @@ So the statement is False.`,
 
 The growing-perpetuity formula uses the denominator $r-g$. When $g\\ge 8\\%$ that denominator is zero or negative, so the constant-growth model does not apply. The claim is that restriction.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -10921,8 +10455,6 @@ Name the financial rule behind the claim, then substitute the recovered inputs.
 
 If $g=r$, the denominator $r-g$ is zero and the growing-perpetuity formula is undefined. The present value does not become $0$. The claim is \\$0.00.
 
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -10966,8 +10498,6 @@ $$180{,}000 > 170{,}000$$
 
 Deal 1 is a good buy.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -10978,8 +10508,6 @@ The overview recovered $P_2=233{,}333.33$. The margin over the asking price is
 $$233{,}333.33 - 170{,}000 = 63{,}333.33$$
 
 The claim needs more than \\$60,000. We have $63{,}333.33 > 60{,}000$
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -11017,8 +10545,6 @@ P_1=180{,}000
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -11090,8 +10616,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
@@ -11130,8 +10654,6 @@ $$e^{-0.055} \\approx 0.9465$$
 $$1-0.9465 = 0.0535 = 5.35\\%$$
 
 The claim is that same factor and that same one-year loss.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -11224,8 +10746,6 @@ So the statement is True.`,
       `**D.** → True
 
 The lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -11362,8 +10882,6 @@ S=30{,}439.24
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -11617,8 +11135,6 @@ $$I_1 = 60{,}000 \times 0.12 = 7{,}200$$
 
 The overview recovered that same first-year interest figure. The claim is \$7,200.00.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -11631,8 +11147,6 @@ The overview recovered first-year principal as $7{,}393.54$. Half the payment is
 $$\\frac{14{,}593.54}{2} = 7{,}296.77$$
 
 Then $7{,}393.54 > 7{,}296.77$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -11761,8 +11275,6 @@ $$28{,}667.57 - 24{,}000 = 4{,}667.57$$
 
 The claim is \\$4,667.57.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -11888,18 +11400,12 @@ $$11{,}870.89 - 2{,}060.24 = 9{,}810.65$$
 
 Then $2{,}060.24 < 9{,}810.65$.
 
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
 Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 Principal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -11993,8 +11499,6 @@ End-of-year timing is an ordinary annuity. The overview recovered $a_{\\mathrm{o
 $$25{,}470.21 > 22{,}946.14$$
 
 The ordinary payment is higher, not lower.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -12098,16 +11602,12 @@ $$4 \\times 10{,}000 = 40{,}000$$
 
 The claim is that same total.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
 Read the figure already produced by the shared solve, then compare it with the claim.
 
 The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -12122,8 +11622,6 @@ $$40{,}000 + 9{,}682.53 = 49{,}682.53$$
 
 The claim is \\$49,682.53.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -12136,8 +11634,6 @@ Total interest is total paid minus principal:
 $$49{,}682.53 - 35{,}000 = 14{,}682.53$$
 
 Then $14{,}682.53 < 35{,}000$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -12209,8 +11705,6 @@ $$535{,}526.07 > 500{,}000$$
 
 Option A is cheaper at $10\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -12226,8 +11720,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -12239,8 +11731,6 @@ $$488{,}866.75 < 500{,}000$$
 
 Option B is cheaper at $14\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -12249,10 +11739,6 @@ So the statement is True.`,
 Name the financial rule behind the claim, then substitute the recovered inputs.
 
 At $10\\%$ Option B costs about \\$535,526, above cash. At $14\\%$ it costs about \\$488,867, below cash. The cheaper choice depends on the rate.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -12479,8 +11965,6 @@ $$85{,}971.60 - 30{,}200.80 \\approx 55{,}770.80$$
 
 which rounds to the claimed \\$55,770.92.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -12560,8 +12044,6 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -12602,8 +12084,6 @@ Nine full payments would be \\$225,000. Against the recovered total \\$213,100.1
 $$225{,}000 - 213{,}100.16 = 11{,}899.84$$
 
 Then $11{,}899.84 > 10{,}000$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -12673,8 +12153,6 @@ Read the figure already produced by the shared solve, then compare it with the c
 
 The overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -12687,8 +12165,6 @@ After the second payment, principal of $16{,}176.12-8{,}858.87=7{,}317.25$ leave
 $$0.12 \\times 66{,}506.63 \\approx 7{,}980.80$$
 
 Then $7{,}980.80 < 8{,}858.87$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -12703,8 +12179,6 @@ $$4{,}066.48$$
 
 Both claimed figures match those recovered values.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -12715,8 +12189,6 @@ Three due loan payments total
 $$3 \\times 16{,}176.12 = 48{,}528.36$$
 
 The reserve after three years is about \\$4,066.48. Then $48{,}528.36 > 4{,}066.48$.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -12799,8 +12271,6 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → True
@@ -13070,8 +12540,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → True
 
@@ -13080,8 +12548,6 @@ The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. S
 $$2{,}400{,}000 < 2{,}508{,}822$$
 
 Schedule I is cheaper than Schedule II at $7.5\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -13098,8 +12564,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -13108,10 +12572,6 @@ The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. 
 $$2{,}186{,}562 < 2{,}400{,}000$$
 
 Schedule I is no longer cheaper than Schedule II.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -13195,8 +12655,6 @@ $$A = -8{,}000 + \\frac{9{,}600}{1.15} = -8{,}000 + 8{,}347.83 = 347.83$$
 
 Then $347.83 > 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -13207,8 +12665,6 @@ Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 $$A = -8{,}000 + \\frac{9{,}600}{1.25} = -8{,}000 + 7{,}680 = -320$$
 
 Then $-320 < 0$. The claim needs a positive NPV.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -13221,8 +12677,6 @@ $$r = \\frac{10{,}000}{8{,}000} - 1 = 0.25 = 25\\%$$
 
 Then $25\\% > 24\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -13231,8 +12685,6 @@ So the statement is True.`,
 Name the financial rule behind the claim, then substitute the recovered inputs.
 
 One negative outlay followed by one positive return is a cash-flow polynomial $-8{,}000 + 9{,}600 s$ with a single sign change, hence a unique $r > -1$. The recovered $20\\%$ is that unique admissible root.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -13300,8 +12752,6 @@ $$= -12{,}000 + 6{,}481.48 + 6{,}001.37 = 482.85$$
 
 Then $482.85 > 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -13315,8 +12765,6 @@ $$= -12{,}000 + 6{,}250.00 + 5{,}580.36 = -169.64$$
 
 Then $-169.64 < 0$. The claim needs a positive NPV.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**D.** → True
 
@@ -13329,8 +12777,6 @@ $$s = \\frac{-7 + \\sqrt{433}}{16} \\approx 0.8630$$
 $$r = \\frac{1}{0.8630} - 1 \\approx 0.1587 \\approx 15.87\\%$$
 
 Then $15.87\\% > 13\\%$.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -13413,8 +12859,6 @@ $$= -20{,}000 + 8{,}181.82 + 12{,}396.69 = 578.51$$
 
 Then $578.51 > 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → False
 
@@ -13427,8 +12871,6 @@ $$-20{,}000 + \\frac{9{,}000}{1.14} + \\frac{15{,}000}{1.2996}$$
 $$= -20{,}000 + 7{,}894.74 + 11{,}542.01 = -563.25$$
 
 Then $-563.25 < 0$. The claim needs a positive NPV.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -13443,8 +12885,6 @@ $$r = \\frac{1}{0.7013} - 1 \\approx 0.426 \\approx 42.6\\%$$
 
 Then $42.6\\% > 30\\%$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → True
 
@@ -13455,8 +12895,6 @@ The undiscounted sum of the three cash flows is
 $$-20{,}000 + 9{,}000 + 15{,}000 = 4{,}000$$
 
 The claim is \\$4,000.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -13560,8 +12998,6 @@ $$NPV_Y = -22{,}000 + \\frac{24{,}750}{1.11} = 297.30$$
 
 Both are positive. The claim needs Y negative.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -13572,10 +13008,6 @@ With Y's payoff raised to \\$25,000,
 $$r_Y = \\frac{25{,}000}{22{,}000} - 1 \\approx 0.1364 = 13.64\\%$$
 
 Then $13.64\\% < 15\\%$.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -13645,16 +13077,12 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**C.** → False
 
 Name the financial rule behind the claim, then substitute the recovered inputs.
 
 NPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → True
@@ -13681,10 +13109,6 @@ So the statement is True.`,
 Name the financial rule behind the claim, then substitute the recovered inputs.
 
 Year 1 is an installation outflow, so $a_1 = -3{,}000$. The later cash flows are not all positive.
-
-The mismatch with the claim settles the verdict.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -13743,8 +13167,6 @@ $$
 
 That recovered value is not the figure named in the claim.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**B.** → False
 
@@ -13757,8 +13179,6 @@ $$-34{,}000 + \\frac{16{,}000}{1.09} + \\frac{24{,}000}{1.1881}$$
 $$= -34{,}000 + 14{,}678.90 + 20{,}200.32 = 879.22$$
 
 Then $879.22 > 0$. The claim needs a negative NPV.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → True
@@ -13773,8 +13193,6 @@ $$= -34{,}000 + 14{,}159.29 + 18{,}795.52 = -1{,}045.19$$
 
 Then $-1{,}045.19 < 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → False
 
@@ -13788,8 +13206,6 @@ $$r = \\frac{1}{0.9638} - 1 \\approx 0.0376 \\approx 3.76\\%$$
 
 Then $3.76\\% < 10.78\\%$. The new IRR is lower, not higher.
 
-The mismatch with the claim settles the verdict.
-
 So the statement is False.`,
       `**E.** → False
 
@@ -13800,8 +13216,6 @@ $$12s^{2} + 8s - 15 = 0$$
 $$s = \\frac{-8 + 28}{24} = \\frac{5}{6}, \\qquad r = 20\\%$$
 
 Then $20\\% > 10.78\\%$. The IRR rises, it does not fall.
-
-The mismatch with the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
@@ -13873,8 +13287,6 @@ $$= -40{,}000 + 20{,}000.00 + 22{,}809.92 = 2{,}809.92$$
 
 Then $2{,}809.92 > 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**C.** → True
 
@@ -13888,8 +13300,6 @@ $$= -40{,}000 + 18{,}333.33 + 19{,}166.67 = -2{,}500$$
 
 Then $-2{,}500 < 0$.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**D.** → True
 
@@ -13901,8 +13311,6 @@ $$-40{,}000 + 22{,}000 + 27{,}600 = 9{,}600$$
 
 The claim is \\$9,600.
 
-Matching these figures to the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is True.`,
@@ -13911,8 +13319,6 @@ So the statement is True.`,
 Name the financial quantity in the claim, substitute the recovered inputs, and compare the result with the stated figure.
 
 The cash-flow signs are $-,+,+$, one sign change, hence a unique $r > -1$. The recovered $15\\%$ is that unique admissible root.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -14026,8 +13432,6 @@ $$2 \\times 10.69\\% = 21.38\\%$$
 
 Since $77.4\\% > 21.38\\%$, the new internal rate more than doubles.
 
-Matching these figures to the claim settles the verdict.
-
 So the statement is True.`,
       `**E.** → False
 
@@ -14046,8 +13450,6 @@ $$s = \\frac{-34 + 106}{84} = \\frac{72}{84} = \\frac{6}{7}$$
 $$r = \\frac{7}{6} - 1 = \\frac{1}{6} \\approx 16.67\\%$$
 
 The overview recovered the original rate $10.69\\%$. Since $16.67\\% > 10.69\\%$, the reduced-outlay rate is higher, not lower.
-
-The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
     ],
@@ -14167,8 +13569,6 @@ $$-50{,}000 + 6{,}000 + 6{,}000 = -38{,}000$$
 
 The claim is -\\$40,000. We have -\\$38,000
 
-The mismatch with the claim settles the verdict.
-
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
 So the statement is False.`,
@@ -14181,8 +13581,6 @@ $$r = \\frac{6{,}000}{50{,}000} - 1$$
 $$= 0.12 - 1 = -0.88 = -88\\%$$
 
 The overview recovered Option 2's two-year rate $r \\approx -58.84\\%$. Since $-88\\% < -58.84\\%$, the truncated project has an even lower internal rate.
-
-Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -14288,8 +13686,6 @@ The internal-rate criterion ranks the designs by the recovered rates. The overvi
 $$16\\% > 11.04\\%$$
 
 Design B has the higher internal rate.
-
-Matching these figures to the claim settles the verdict.
 
 Keep the periodic rate, the number of periods, and the money units explicit while you compare with the claim.
 
