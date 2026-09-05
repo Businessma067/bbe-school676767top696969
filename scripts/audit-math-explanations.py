@@ -31,6 +31,7 @@ BANKS = [
     ("ch8-exam", "src/data/math-ch8-exam.json", "json"),
     ("ch9-core", "src/data/math-ch9-polynomials.json", "json"),
     ("ch9-mixed", "src/data/math-ch9-mixed-exam.json", "json"),
+    ("ch10", "src/data/math-ch10-exp-log.json", "json"),
 ]
 
 HEADER_RE = re.compile(
