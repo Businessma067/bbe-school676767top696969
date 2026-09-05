@@ -16,6 +16,14 @@ import { ProductsPage } from "@/routes/products.index";
 import { DemoPracticeProduct } from "@/routes/products.demo-practice";
 import { FullCourseProduct } from "@/routes/products.full-course";
 import { LiteBbeCourseProduct } from "@/routes/products.lite-bbe-course";
+import { DemoPractice } from "@/routes/demo-practice.index";
+import { LoginPage } from "@/routes/login";
+import { SignupPage } from "@/routes/signup";
+import { ResetPasswordPage } from "@/routes/reset-password";
+import { AccountPage } from "@/routes/account";
+import { DashboardRoutePage } from "@/routes/dashboard";
+import { PaymentSuccessPage } from "@/routes/payment.success";
+import { PaymentFailedPage } from "@/routes/payment.failed";
 
 /**
  * Shared page components for English and locale-prefixed routes.
@@ -37,6 +45,14 @@ export const LOCALIZED_PAGE_COMPONENTS: Record<LocalizablePath, ComponentType> =
   "/products/demo-practice": DemoPracticeProduct,
   "/products/full-course": FullCourseProduct,
   "/products/lite-bbe-course": LiteBbeCourseProduct,
+  "/demo-practice": DemoPractice,
+  "/login": LoginPage,
+  "/signup": SignupPage,
+  "/reset-password": ResetPasswordPage,
+  "/account": AccountPage,
+  "/dashboard": DashboardRoutePage,
+  "/payment/success": PaymentSuccessPage,
+  "/payment/failed": PaymentFailedPage,
 };
 
 export function getLocalizedPage(pathname: string): ComponentType | null {

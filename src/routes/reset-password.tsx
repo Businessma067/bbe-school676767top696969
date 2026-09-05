@@ -1,13 +1,20 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { AuthShell, Field } from "./signup";
 import { friendlyAuthError } from "@/lib/auth-ui";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { useLanguage } from "@/lib/i18n/context";
+import { hreflangLinks, localizePath } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/reset-password")({
   component: ResetPasswordPage,
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/reset-password" }],
+    links: [
+      ...hreflangLinks("/reset-password"),
+      { rel: "canonical", href: "https://bbe-school.com/reset-password" },
+    ],
     meta: [
       { title: "Set new password · BBE School" },
       { name: "description", content: "Set a new password." },
@@ -16,8 +23,9 @@ export const Route = createFileRoute("/reset-password")({
   }),
 });
 
-function ResetPasswordPage() {
-  const navigate = useNavigate();
+export function ResetPasswordPage() {
+  const navigate = useLocalizedNavigate();
+  const { lang } = useLanguage();
   const [ready, setReady] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,11 +49,11 @@ function ResetPasswordPage() {
     e.preventDefault();
     setError(null);
     setInfo(null);
-    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email.");
+    if (!/^\S+@\S+\.\S+$/.test(email)) return setError("Enter a valid email address.");
     setLoading(true);
     try {
       const { error: err } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: window.location.origin + "/reset-password",
+        redirectTo: `${window.location.origin}${localizePath("/reset-password", lang)}`,
       });
       if (err) throw err;
       setInfo("If an account exists for that email, we've sent a reset link.");
@@ -78,7 +86,14 @@ function ResetPasswordPage() {
   };
 
   return (
-    <AuthShell title={ready ? "Set new password" : "Reset password"} subtitle={ready ? "Choose a new password for your account." : "Enter your email and we'll send you a reset link."}>
+    <AuthShell
+      title={ready ? "Set new password" : "Reset password"}
+      subtitle={
+        ready
+          ? "Choose a new password for your account."
+          : "Enter your email and we'll send you a reset link."
+      }
+    >
       {!ready ? (
         <form onSubmit={handleRequest} className="space-y-4">
           <Field label="Email" type="email" value={email} onChange={setEmail} placeholder="you@example.com" />
@@ -92,13 +107,27 @@ function ResetPasswordPage() {
             {loading ? "Sending…" : "Send reset link"}
           </button>
           <p className="text-center text-sm text-muted-foreground">
-            <Link to="/login" className="text-primary hover:underline">Back to sign in</Link>
+            <LocalizedLink to="/login" className="text-primary hover:underline">
+              Back to sign in
+            </LocalizedLink>
           </p>
         </form>
       ) : (
         <form onSubmit={handleUpdate} className="space-y-4">
-          <Field label="New password" type="password" value={password} onChange={setPassword} placeholder="At least 6 characters" />
-          <Field label="Confirm password" type="password" value={confirm} onChange={setConfirm} placeholder="Repeat password" />
+          <Field
+            label="New password"
+            type="password"
+            value={password}
+            onChange={setPassword}
+            placeholder="At least 6 characters"
+          />
+          <Field
+            label="Confirm password"
+            type="password"
+            value={confirm}
+            onChange={setConfirm}
+            placeholder="Repeat password"
+          />
           {error && <p className="text-sm text-destructive">{error}</p>}
           {info && <p className="text-sm text-primary">{info}</p>}
           <button

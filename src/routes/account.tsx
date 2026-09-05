@@ -1,15 +1,18 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
 import { SiteHeader } from "@/components/SiteHeader";
 import { friendlyAuthError } from "@/lib/auth-ui";
 import { isAdminEmail, resolveAppRole, type AppRole } from "@/lib/admin-access";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 export const Route = createFileRoute("/account")({
   component: AccountPage,
   head: () => ({
-  links: [{ rel: "canonical", href: "https://bbe-school.com/account" }],
+  links: [...hreflangLinks("/account"), { rel: "canonical", href: "https://bbe-school.com/account" }],
   // Private / transactional route: keep it out of the index.
     meta: [
       { name: "robots", content: "noindex, nofollow" },
@@ -22,8 +25,8 @@ export const Route = createFileRoute("/account")({
 
 type Profile = { display_name: string | null; created_at: string };
 
-function AccountPage() {
-  const navigate = useNavigate();
+export function AccountPage() {
+  const navigate = useLocalizedNavigate();
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [role, setRole] = useState<string | null>(null);
@@ -254,12 +257,12 @@ function AccountPage() {
                 Your progress and statistics live in the demo practice section.
               </p>
             </div>
-            <Link
+            <LocalizedLink
               to="/demo-practice"
               className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
             >
               Go to demo practice →
-            </Link>
+            </LocalizedLink>
           </div>
         </Card>
 

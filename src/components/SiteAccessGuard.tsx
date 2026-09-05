@@ -1,18 +1,21 @@
 import { useEffect } from "react";
-import { useNavigate, useRouterState } from "@tanstack/react-router";
+import { useRouterState } from "@tanstack/react-router";
 import { fetchAccessState, tierAtLeast } from "@/lib/entitlements";
 import { isFullSiteProtectedPath } from "@/lib/site-access";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
+import { stripLocalePrefix } from "@/lib/i18n/locale-path";
 
 /**
  * Belt-and-suspenders redirect: paid paths without a paid entitlement send the
  * visitor to login (guests) or to the free Demo Practice (signed-in free users).
  */
 export function SiteAccessGuard() {
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
-    if (!isFullSiteProtectedPath(pathname)) return;
+    const base = stripLocalePrefix(pathname);
+    if (!isFullSiteProtectedPath(base) && !isFullSiteProtectedPath(pathname)) return;
 
     let cancelled = false;
     (async () => {

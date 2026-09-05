@@ -1,14 +1,23 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, useRouterState } from "@tanstack/react-router";
 import { XCircle } from "lucide-react";
+import { LocalizedLink } from "@/components/LocalizedLink";
+import { hreflangLinks } from "@/lib/i18n/locale-path";
 
 type FailedSearch = { reason?: string };
 
-export const Route = createFileRoute("/payment/failed")({
-  validateSearch: (search: Record<string, unknown>): FailedSearch => ({
+function parseFailedSearch(search: Record<string, unknown>): FailedSearch {
+  return {
     reason: typeof search.reason === "string" ? search.reason : undefined,
-  }),
+  };
+}
+
+export const Route = createFileRoute("/payment/failed")({
+  validateSearch: (search: Record<string, unknown>): FailedSearch => parseFailedSearch(search),
   head: () => ({
-    links: [{ rel: "canonical", href: "https://bbe-school.com/payment/failed" }],
+    links: [
+      ...hreflangLinks("/payment/failed"),
+      { rel: "canonical", href: "https://bbe-school.com/payment/failed" },
+    ],
     meta: [
       { title: "Payment not completed — BBE School" },
       {
@@ -29,8 +38,10 @@ export const Route = createFileRoute("/payment/failed")({
   component: PaymentFailedPage,
 });
 
-function PaymentFailedPage() {
-  const { reason } = Route.useSearch();
+export function PaymentFailedPage() {
+  const { reason } = useRouterState({
+    select: (s) => parseFailedSearch(s.location.search as Record<string, unknown>),
+  });
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-6 py-16">
@@ -42,19 +53,19 @@ function PaymentFailedPage() {
         <p className="mt-2 text-sm text-muted-foreground">
           {reason ?? "The payment was not completed. No money has been taken for this attempt."}
         </p>
-        <Link
+        <LocalizedLink
           to="/products"
           className="mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white"
           style={{ backgroundColor: "#C2643A" }}
         >
           Try again
-        </Link>
-        <Link
+        </LocalizedLink>
+        <LocalizedLink
           to="/"
           className="mt-3 inline-flex w-full items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground"
         >
           Back to home
-        </Link>
+        </LocalizedLink>
       </div>
     </div>
   );

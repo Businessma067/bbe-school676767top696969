@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { useNavigate } from "@tanstack/react-router";
 import { fetchAccessState, tierAtLeast, type AccessTier } from "@/lib/entitlements";
+import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 
 /**
  * Gates paid study tools behind a real entitlement (paid via Monobank or
@@ -15,7 +15,7 @@ export function RequireFullCourse({
   /** "none" = any signed-in user, "lite" = Lite or Full, "full" = Full only. */
   minTier?: AccessTier;
 }) {
-  const navigate = useNavigate();
+  const navigate = useLocalizedNavigate();
   const [allowed, setAllowed] = useState(false);
 
   useEffect(() => {
@@ -30,7 +30,9 @@ export function RequireFullCourse({
         return;
       }
       if (minTier !== "none" && !tierAtLeast(state.tier, minTier)) {
-        navigate({ to: minTier === "full" ? "/products/full-course" : "/products/lite-bbe-course" });
+        navigate({
+          to: minTier === "full" ? "/products/full-course" : "/products/lite-bbe-course",
+        });
         return;
       }
       setAllowed(true);

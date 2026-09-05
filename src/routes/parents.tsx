@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import hallAsset from "@/assets/parents-hall.jpg.asset.json";
 import clockAsset from "@/assets/parents-clock.jpg.asset.json";
@@ -276,12 +276,12 @@ export function ParentsPage() {
               >
                 See the Full BBE Course →
               </LocalizedLink>
-              <Link
+              <LocalizedLink
                 to="/demo-practice"
                 className="inline-flex items-center justify-center rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
               >
                 Try the free demo first
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </article>
