@@ -132,10 +132,15 @@ OPENERS = [
     "Translate the propositional claim into truth conditions before testing a row or an equivalence.",
     "Instantiate the quantified sentence on the stated domain and look for a witness or a counterexample.",
     "Apply the counting rule once, substitute the given size, and compare with the claimed figure.",
+    "Start from the recovered overview figure and do only the extra check this claim needs.",
+    "Expand the logical connective from its truth table before judging the printed formula.",
+    "List the relevant elements explicitly, then decide membership, subset, or equality.",
+    "Clear the set-builder condition against the stated universe before comparing rosters.",
+    "Use inclusion-exclusion or a Venn region formula, then compare with the claimed count.",
 ]
 
 
-def deepen_letter(expl: str, truth: bool, letter: str, idx: int) -> str:
+def deepen_letter(expl: str, truth: bool, letter: str, idx: int, task_i: int = 0) -> str:
     m = HDR.match(expl.strip())
     body = expl.strip()[m.end() :].strip() if m else expl.strip()
     word = "True" if truth else "False"
@@ -224,7 +229,7 @@ def deepen_letter(expl: str, truth: bool, letter: str, idx: int) -> str:
 
     # Generic thin expansion: add opener + ensure displays + closer
     if len(body) < 250:
-        opener = OPENERS[idx % len(OPENERS)]
+        opener = OPENERS[(task_i * 5 + idx) % len(OPENERS)]
         # promote inline $eq$ to display if body is a single sentence with math
         if "$$" not in body:
             def promote(m):
@@ -264,10 +269,10 @@ def deepen_letter(expl: str, truth: bool, letter: str, idx: int) -> str:
     return f"**{letter}.** → {word}\n\n{body}"
 
 
-def rewrite_array(exps: list[str], keys: list[bool]) -> str:
+def rewrite_array(exps: list[str], keys: list[bool], task_i: int = 0) -> str:
     parts = []
     for i, (e, k) in enumerate(zip(exps, keys)):
-        new = deepen_letter(e, bool(k), LETTERS[i], i)
+        new = deepen_letter(e, bool(k), LETTERS[i], i, task_i=task_i)
         parts.append("      `" + escape_tpl(new) + "`")
     return "\n\n".join(parts)
 
@@ -277,25 +282,28 @@ def main() -> None:
     tasks = extract_tasks(text)
     print(f"found {len(tasks)} tasks")
     # Replace from the end so indices stay valid
-    for t in reversed(tasks):
-        new_block = rewrite_array(t["explanations"], t["answer_key"])
+    for ti, t in enumerate(reversed(tasks)):
+        task_i = len(tasks) - 1 - ti
+        new_block = rewrite_array(t["explanations"], t["answer_key"], task_i=task_i)
         text = text[: t["expl_start"]] + "\n" + new_block + "\n    " + text[t["expl_end"] :]
     PATH.write_text(text, encoding="utf-8")
 
     # Remeasure
     tasks2 = extract_tasks(text)
     lens = [len(e) for t in tasks2 for e in t["explanations"]]
-    # re-deepened content is what we wrote; parse again
-    # Actually after write, unescape gives new lengths
-    lens = []
-    for t in tasks2:
-        for e in t["explanations"]:
-            lens.append(len(e))
     sl = sorted(lens)
     print(
         f"after: n={len(lens)} median={sl[len(sl)//2]} min={sl[0]} "
         f"thin<200={sum(1 for x in lens if x<200)} thin<250={sum(1 for x in lens if x<250)}"
     )
+    # header audit with corrected keys
+    mm = 0
+    for t in tasks2:
+        for i, e in enumerate(t["explanations"]):
+            m = HDR.match(e.strip())
+            if not m or (m.group(2) == "True") != bool(t["answer_key"][i]):
+                mm += 1
+    print(f"header mismatches: {mm}")
 
 
 if __name__ == "__main__":
