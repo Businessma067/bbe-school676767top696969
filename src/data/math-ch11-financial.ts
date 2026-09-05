@@ -41,7 +41,7 @@ $$
 i_m=0.60\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -67,7 +67,7 @@ $$(1.006)^{12} \\approx 1.074424$$
 
 $$FV \\approx 6{,}446.54$$
 
-The claim is \\$6,446.54 Matching the claim confirms the verdict.
+The claim is \\$6,446.54.
 
 So the statement is True.`,
       `**D.** → False
@@ -138,7 +138,7 @@ $$
 i=2.00\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -439,7 +439,7 @@ $$
 i=1.40\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -465,7 +465,7 @@ $$(1.014)^{4} \\approx 1.057187$$
 
 $$FV \\approx 15{,}857.81$$
 
-The claim is \\$15,857.81 Matching the claim confirms the verdict.
+The claim is \\$15,857.81.
 
 So the statement is True.`,
       `**D.** → False
@@ -536,7 +536,7 @@ $$
 i_m=0.60\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -732,7 +732,7 @@ $$
 i_m=0.50\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -877,7 +877,7 @@ Dollar growth relative to the opening investment is
 
 $$\\frac{80{,}000-50{,}000}{50{,}000} = 0.60 = 60\\%$$
 
-The claim needs more than $65\\%$. We have $60\\% < 65\\%$ The mismatch with the claim confirms the verdict.
+The claim needs more than $65\\%$. We have $60\\% < 65\\%$.
 
 So the statement is False.`,
     ],
@@ -1021,7 +1021,7 @@ The six-year growth factor is the annual growth factor raised to $t=6$:
 
 $$(1.045)^{6} \\approx 1.302253$$
 
-The claim is about $1.302253$ Matching the claim confirms the verdict.
+The claim is about $1.302253$.
 
 So the statement is True.`,
       `**B.** → True
@@ -1207,7 +1207,7 @@ $$
 i \\approx 0.011644\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -1676,7 +1676,7 @@ The overview recovered $i=0.011$ and $nt=36$. The nine-year growth factor is
 
 $$G = (1.011)^{36} \\approx 1.482660$$
 
-Rounded to four decimals this is $1.4827$ Matching the claim confirms the verdict.
+Rounded to four decimals this is $1.4827$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2017,7 +2017,7 @@ Annual compounding at the same 5% nominal rate uses $n=1$:
 
 $$S_{\\mathrm{ann}} = 4{,}500 \\times 1.05 = 4{,}725.00$$
 
-The claim is \\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$ The mismatch with the claim confirms the verdict.
+The claim is \\$4,735.00. We have $4{,}725.00 \\ne 4{,}735.00$.
 
 So the statement is False.`,
       `**D.** → True
@@ -2041,7 +2041,7 @@ The one-year continuous growth factor is
 
 $$e^{0.05} \\approx 1.051271$$
 
-Rounded to four decimals this is $1.0513$, not $1.0400$ The mismatch with the claim confirms the verdict.
+Rounded to four decimals this is $1.0513$, not $1.0400$.
 
 So the statement is False.`,
     ],
@@ -2179,7 +2179,7 @@ $$e^{0.09} \\approx 1.094174$$
 
 $$R \\approx 0.094174 \\approx 9.42\\%$$
 
-The claim is about $9.42\\%$ Matching the claim confirms the verdict.
+The claim is about $9.42\\%$.
 
 So the statement is True.`,
       `**B.** → True
@@ -2294,7 +2294,7 @@ $$K_{\\mathrm{c}} = e^{0.10}$$
 
 $$e^{0.10} \\approx 1.105171 \\approx 1.1052$$
 
-The claim is about $1.1052$ Matching the claim confirms the verdict.
+The claim is about $1.1052$.
 
 So the statement is True.`,
       `**D.** → False
@@ -2626,7 +2626,7 @@ $$t_2 = \\frac{\\ln 2}{0.055} \\approx 12.60$$`,
 
 Name the financial quantity in the claim, then read it from the shared solve.
 
-The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation Matching the claim confirms the verdict.
+The overview isolated the time to a $40\\%$ remainder as $t=\\frac{\\ln 2.5}{\\delta}$. The claim is that same isolation.
 
 So the statement is True.`,
       `**B.** → True
@@ -2901,7 +2901,7 @@ $$
 r \\approx 6.67\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -3184,7 +3184,7 @@ Net asset value then follows $S(t)=S_0 e^{r_{\\mathrm{net}} t}$.`,
 
 Name the financial quantity in the claim, then read it from the shared solve.
 
-The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation Matching the claim confirms the verdict.
+The overview isolated the crossover as $t=\\frac{\\ln\\bigl(\\frac{B_0}{A_0}\\bigr)}{r_A+\\delta_B}$. The claim is that same isolation.
 
 So the statement is True.`,
       `**B.** → True
@@ -3271,7 +3271,7 @@ Annual compounding is a single $7\\%$ credit:
 
 $$S_1 = 40{,}000 \\times 1.07 = 42{,}800.00$$
 
-The claim is \\$42,800.00 Matching the claim confirms the verdict.
+The claim is \\$42,800.00.
 
 So the statement is True.`,
       `**B.** → True
@@ -3492,7 +3492,7 @@ The effective seven-year rate is $r_* \\approx 7.43\\%$. The plain average of th
 
 $$\\frac{0.10+0.04}{2} = 0.07 = 7\\%$$
 
-The claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$ Matching the claim confirms the verdict.
+The claim needs $r_* > 7\\%$. We have $7.43\\% > 7\\%$.
 
 So the statement is True.`,
       `**E.** → True
@@ -3549,7 +3549,7 @@ $$
 \\delta \\approx 16.28\\%
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -3573,7 +3573,7 @@ $$v_1(6) = 32{,}000$$
 
 $$v_2(6) = 85{,}000 \\times e^{-0.90} \\approx 34{,}558.42$$
 
-The claim needs $v_1(6)>v_2(6)$. We have $32{,}000 < 34{,}558.42$ The mismatch with the claim confirms the verdict.
+The claim needs $v_1(6)>v_2(6)$. We have $32{,}000 < 34{,}558.42$.
 
 So the statement is False.`,
       `**E.** → False
@@ -3858,7 +3858,7 @@ $$8{,}000-7{,}619.05=380.95$$
 
 The claim is \\$423.81
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → False
@@ -4485,13 +4485,11 @@ That recovered value is exactly the figure named in the claim.
 So the statement is True.`,
       `**B.** → True
 
-The overview already fixed the inputs; this letter only checks the named figure.
+Option A is worth \$22,000 today. The overview recovered $\mathrm{PDV}_B \approx 21{,}410.30$. Comparing the two present values:
 
-$$
-22,000 today. The overview recovered 
-$$
+$$22{,}000 > 21{,}410.30$$
 
-That recovered value is exactly the figure named in the claim.
+Option A is larger at the $6\%$ rate.
 
 So the statement is True.`,
       `**C.** → False
@@ -4504,7 +4502,7 @@ $$(1.03)^{3}\\approx 1.092727$$
 
 $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.092727}\\approx 23{,}336.02$$
 
-The claim is \\$22,780.00 The mismatch with the claim confirms the verdict.
+The claim is \\$22,780.00.
 
 So the statement is False.`,
       `**D.** → False
@@ -4528,7 +4526,7 @@ $$(1.05)^{3}=1.157625$$
 
 $$\\mathrm{PDV}_B=\\frac{25{,}500}{1.157625}\\approx 22{,}027.86$$
 
-The claim is \\$23,500.00 The mismatch with the claim confirms the verdict.
+The claim is \\$23,500.00.
 
 So the statement is False.`,
     ],
@@ -4579,12 +4577,14 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → False
 
 The overview already fixed the inputs; this letter only checks the named figure.
 
-The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equal to $\\frac{P(t^{*})}{r}$ The mismatch with the claim confirms the verdict.
+The overview used $P'(t^{*})=rP(t^{*})$. The claim instead sets $P'(t^{*})$ equal to $\\frac{P(t^{*})}{r}$.
 
 So the statement is False.`,
       `**C.** → False
@@ -4615,7 +4615,7 @@ At $t=25$,
 
 $$f(25)=5{,}000(27)^{2}e^{-0.08\\times 25}=3{,}645{,}000\\,e^{-2}\\approx 493{,}297.11$$
 
-The overview recovered $f(23)\\approx 496{,}304.46$. We have $493{,}297.11<496{,}304.46$ The mismatch with the claim confirms the verdict.
+The overview recovered $f(23)\\approx 496{,}304.46$. We have $493{,}297.11<496{,}304.46$.
 
 So the statement is False.`,
     ],
@@ -4803,7 +4803,7 @@ The overview recovered $r_a\\approx 5.13\\%$. The gap from the continuous quote 
 
 $$5.13\\%-5.00\\%=0.13$$
 
-The claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$ The mismatch with the claim confirms the verdict.
+The claim needs a gap above $1.00$ percentage point. We have $0.13<1.00$.
 
 So the statement is False.`,
     ],
@@ -5030,7 +5030,7 @@ $$K = \\frac{35{,}000}{0.7711} \\approx 45{,}392.55$$`,
 
 Name the financial quantity in the claim, then read it from the shared solve.
 
-The overview showed that $P'(t^{*})=rP(t^{*})$ has no solution for $t^{*}>0$, and that $f$ is maximized at $t^{*}=0$. The claim is that same conclusion Matching the claim confirms the verdict.
+The overview showed that $P'(t^{*})=rP(t^{*})$ has no solution for $t^{*}>0$, and that $f$ is maximized at $t^{*}=0$. The claim is that same conclusion.
 
 So the statement is True.`,
       `**B.** → True
@@ -5052,7 +5052,7 @@ At $t=10$,
 
 $$f(10)=40{,}000e^{-0.03\\times 10}=40{,}000e^{-0.3}\\approx 29{,}632.73$$
 
-The claim is \\$29,632.73 Matching the claim confirms the verdict.
+The claim is \\$29,632.73.
 
 So the statement is True.`,
       `**D.** → False
@@ -5074,7 +5074,7 @@ At $r=0.04$,
 
 $$f(t)=40{,}000e^{(0.05-0.04)t}=40{,}000e^{0.01t}$$
 
-This rises with $t$, so the optimum is not $t^{*}=0$ The mismatch with the claim confirms the verdict.
+This rises with $t$, so the optimum is not $t^{*}=0$.
 
 So the statement is False.`,
     ],
@@ -5119,7 +5119,7 @@ $$t^{*}=0, \\qquad f(0)=P(0)=40{,}000$$`,
 
 Name the financial quantity in the claim, then read it from the shared solve.
 
-The overview checked $0.09\\times 520{,}000=46{,}800$, which matches $P'(t^{*})$. The first-order condition holds Matching the claim confirms the verdict.
+The overview checked $0.09\\times 520{,}000=46{,}800$, which matches $P'(t^{*})$. The first-order condition holds.
 
 So the statement is True.`,
       `**B.** → True
@@ -5243,9 +5243,7 @@ The overview recovered $P(t^{*})\\approx 1{,}481{,}481.48$ and denominator $-6{,
 
 $$\\frac{dt^{*}}{dr}=\\frac{1{,}481{,}481.48}{-6{,}000}\\approx -246.91$$
 
-The claim is $+246.91$
-
-The mismatch with the claim settles the verdict.
+The claim is $+246.91$. The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → False
@@ -5254,7 +5252,7 @@ The overview recovered $t^{*}=\\frac{2}{r}-4$. At $r=0.045$,
 
 $$t^{*}=\\frac{2}{0.045}-4\\approx 44.44-4=40.44$$
 
-Double the original $18.22$ would be $36.44$. We have $40.44\\neq 36.44$ The mismatch with the claim confirms the verdict.
+Double the original $18.22$ would be $36.44$. We have $40.44\\neq 36.44$.
 
 So the statement is False.`,
     ],
@@ -5520,7 +5518,7 @@ The overview recovered $t^{*}=\\frac{2}{r}-k$. At $k=8$,
 
 $$t^{*}=\\frac{2}{0.075}-8\\approx 18.67$$
 
-The overview's original time is $t^{*}\\approx 21.67$. We have $18.67<21.67$ Matching the claim confirms the verdict.
+The overview's original time is $t^{*}\\approx 21.67$. We have $18.67<21.67$.
 
 So the statement is True.`,
       `**E.** → False
@@ -5529,7 +5527,7 @@ The overview recovered $t^{*}=\\frac{2}{r}-k$. At $r=0.15$,
 
 $$t^{*}=\\frac{2}{0.15}-5\\approx 8.33$$
 
-Half of the original $21.67$ is $10.83$. We have $8.33<10.83$ The mismatch with the claim confirms the verdict.
+Half of the original $21.67$ is $10.83$. We have $8.33<10.83$.
 
 So the statement is False.`,
     ],
@@ -5699,7 +5697,7 @@ $$
 s_5 \\approx 305.26
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**D.** → False
@@ -5724,6 +5722,8 @@ s_5 \\approx 305.26
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
     ],
@@ -5778,6 +5778,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5800,6 +5802,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -5807,7 +5811,7 @@ The overview recovered $s_4=3{,}750$ and $s_{\\infty}=4{,}000$. Comparing those 
 
 $$3{,}750 < 4{,}000$$
 
-The four-month sum does not exceed the infinite sum The mismatch with the claim confirms the verdict.
+The four-month sum does not exceed the infinite sum.
 
 So the statement is False.`,
       `**E.** → False
@@ -5873,6 +5877,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5902,9 +5908,7 @@ The overview recovered $s_{10}\\approx 5{,}210.57$ and $s_{\\infty}=8{,}000$. Th
 
 $$\\frac{5{,}210.57}{8{,}000} \\approx 0.6513 \\approx 65\\%$$
 
-The claim is about $65\\%$
-
-Matching these figures to the claim settles the verdict.
+The claim is about $65\\%$. Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -5986,7 +5990,9 @@ The claim is $36$ years.
 So the statement is True.`,
       `**C.** → True
 
-The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity Matching the claim confirms the verdict.
+The overview already identified constant extraction as the $k=1$ case, where the $n$-year total is $an$. The claim is that identity.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**D.** → False
@@ -6083,6 +6089,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -6158,6 +6166,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -6192,6 +6202,8 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**E.** → True
@@ -6269,6 +6281,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**D.** → False
 
@@ -6278,7 +6292,7 @@ $$240.28-180.00 = 60.28$$
 
 $$60.28 < 65.00$$
 
-The extra is not more than \\$65.00 million The mismatch with the claim confirms the verdict.
+The extra is not more than \\$65.00 million.
 
 So the statement is False.`,
       `**E.** → True
@@ -6520,6 +6534,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -6629,7 +6645,7 @@ $$1.15^5 = 2.011357188$$
 
 $$a_6 = 6{,}625.74 \\times 2.011357188 \\approx 13{,}326.73$$
 
-The claim is about \\$13,326.73 Matching the claim confirms the verdict.
+The claim is about \\$13,326.73.
 
 So the statement is True.`,
       `**D.** → False
@@ -6727,9 +6743,7 @@ The overview recovered $s_{10}\\approx 4{,}573{,}179.83$ and $s_{\\infty}=25{,}0
 
 $$\\frac{4{,}573{,}179.83}{25{,}000{,}000} \\approx 0.1829 \\approx 18\\%$$
 
-The claim is about $18\\%$
-
-Matching these figures to the claim settles the verdict.
+The claim is about $18\\%$. Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -6804,7 +6818,7 @@ The overview recovered $s_9\\approx 2{,}955{,}131.26$. Since
 
 $$2{,}955{,}131.26 < 3{,}000{,}000$$
 
-nine years remain below the target Matching the claim confirms the verdict.
+nine years remain below the target.
 
 So the statement is True.`,
       `**C.** → False
@@ -7180,7 +7194,7 @@ The overview's test requires $p>1$. Here $p=1.5$, and
 
 $$1.5 > 1$$
 
-so $\\sum \\frac{5{,}000}{n^{1.5}}$ converges to a finite total. The claim is that convergence Matching the claim confirms the verdict.
+so $\\sum \\frac{5{,}000}{n^{1.5}}$ converges to a finite total. The claim is that convergence.
 
 So the statement is True.`,
       `**C.** → False
@@ -7209,7 +7223,7 @@ At $p=0.5$,
 
 $$0.5 \\le 1$$
 
-so $\\sum \\frac{5{,}000}{n^{0.5}}$ diverges by the $p$-series test, even though $a_n\\to 0$. The claim is that divergence Matching the claim confirms the verdict.
+so $\\sum \\frac{5{,}000}{n^{0.5}}$ diverges by the $p$-series test, even though $a_n\\to 0$. The claim is that divergence.
 
 So the statement is True.`,
     ],
@@ -7460,6 +7474,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -7525,7 +7541,7 @@ $$
 x\\approx 4{,}081.49
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -7616,7 +7632,7 @@ $$
 F(5)\\approx 8{,}698.47
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7713,7 +7729,7 @@ $$
 F_6\\approx 13{,}603.84
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -7800,7 +7816,7 @@ $$
 F_{10}\\approx 50{,}702.97
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7889,7 +7905,7 @@ $$
 P_{15}=25{,}775.15
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7978,7 +7994,7 @@ $$
 P_{20}=57{,}349.67
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -7987,7 +8003,7 @@ The overview recovered $P=83{,}333.33$ and $P_{20}=57{,}349.67$. The extra cost 
 
 $$83{,}333.33 - 57{,}349.67 = 25{,}983.66$$
 
-The claim is that same gap Matching the claim confirms the verdict.
+The claim is that same gap.
 
 So the statement is True.`,
       `**C.** → False
@@ -8069,7 +8085,7 @@ $$
 P_9=16{,}288.18
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8160,7 +8176,7 @@ $$
 F_A=19{,}126.18
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8249,14 +8265,14 @@ $$
 F_{\\mathrm{due}}=21{,}426.05
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
 
 The overview recovered $F_{\\mathrm{ordinary}}=20{,}405.76$ and $F_{\\mathrm{due}}=21{,}426.05$. End-of-year deposits finish lower:
 
-$$20{,}405.76 < 21{,}426.05$$ Matching the claim confirms the verdict.
+$$20{,}405.76 < 21{,}426.05$$.
 
 So the statement is True.`,
       `**C.** → False
@@ -8345,7 +8361,7 @@ So the statement is True.`,
 
 The overview recovered $P_{\\mathrm{ordinary}}=101{,}096.80$ and $P_{\\mathrm{due}}=107{,}162.61$. End-of-year rent is worth less today:
 
-$$101{,}096.80 < 107{,}162.61$$ Matching the claim confirms the verdict.
+$$101{,}096.80 < 107{,}162.61$$.
 
 So the statement is True.`,
       `**C.** → False
@@ -8427,7 +8443,7 @@ $$
 V=166{,}666.67
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -8438,7 +8454,7 @@ $$
 PV_0=132{,}015.61
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -8514,7 +8530,7 @@ $$
 P\\approx 60.71
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8684,7 +8700,7 @@ $$
 P=436{,}363.64
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8693,7 +8709,7 @@ With no growth the same first cash flow is a level perpetuity at 8%:
 
 $$P_{g=0} = \\frac{24{,}000}{0.08} = 300{,}000$$
 
-The claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$ The mismatch with the claim confirms the verdict.
+The claim needs $300{,}000 > 436{,}363.64$. We have $300{,}000 < 436{,}363.64$.
 
 So the statement is False.`,
       `**C.** → False
@@ -8767,7 +8783,7 @@ $$
 D_1=3.09
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8848,7 +8864,7 @@ The overview recovered $P_1=180{,}000$. A fair buy at a \\$170,000 asking price 
 
 $$180{,}000 > 170{,}000$$
 
-Deal 1 is a good buy Matching the claim confirms the verdict.
+Deal 1 is a good buy.
 
 So the statement is True.`,
       `**B.** → True
@@ -8889,6 +8905,8 @@ P_1=180{,}000
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
     ],
@@ -8931,7 +8949,7 @@ $$
 S_0=129{,}213.75
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -8977,7 +8995,7 @@ $$e^{-0.055} \\approx 0.9465$$
 
 $$1-0.9465 = 0.0535 = 5.35\\%$$
 
-The claim is that same factor and that same one-year loss Matching the claim confirms the verdict.
+The claim is that same factor and that same one-year loss.
 
 So the statement is True.`,
     ],
@@ -9033,7 +9051,7 @@ The overview already fixed the inputs; this letter only checks the named figure.
 
 The overview recovered $F_9=96{,}757.60$ and $S_{\\mathrm{cont}}=131{,}629.13$. Both strategies commit \\$75,000 in total, and
 
-$$96{,}757.60 < 131{,}629.13$$ Matching the claim confirms the verdict.
+$$96{,}757.60 < 131{,}629.13$$.
 
 So the statement is True.`,
       `**C.** → True
@@ -9044,12 +9062,12 @@ The lump-sum lead is
 
 $$131{,}629.13 - 96{,}757.60 = 34{,}871.53$$
 
-The claim needs more than \\$30,000. We have $34{,}871.53 > 30{,}000$ Matching the claim confirms the verdict.
+The claim needs more than \\$30,000. We have $34{,}871.53 > 30{,}000$.
 
 So the statement is True.`,
       `**D.** → True
 
-The lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$ Matching the claim confirms the verdict.
+The lump sum earns 6.25% on the full \\$75,000 from day one. The annuity's later deposits sit for fewer years, so they accumulate less. That timing gap is why $S_{\\mathrm{cont}}$ exceeds $F_9$.
 
 So the statement is True.`,
       `**E.** → True
@@ -9145,6 +9163,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
     ],
     difficulty_level: `5/5`,
@@ -9194,7 +9214,7 @@ $$
 S=247{,}308.20
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -9216,7 +9236,7 @@ $$
 P_{12}=79{,}429.40
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**D.** → True
@@ -9293,7 +9313,7 @@ $$
 r=0.12
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -9304,18 +9324,16 @@ $$
 a \\approx 14{,}593.54
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
 
-Pull the recovered rate, factor, or balance and compare it with the claim.
+Interest in year 1 is the opening balance times the periodic rate, independent of the instalment size:
 
-$$
-7,200. Interest in year 1 is the opening balance times the rate, independent of the instalment size. The claim is \\
-$$
+$$I_1 = 60{,}000 \times 0.12 = 7{,}200$$
 
-That recovered value is exactly the figure named in the claim.
+The overview recovered that same first-year interest figure. The claim is \$7,200.00.
 
 So the statement is True.`,
       `**D.** → True
@@ -9326,7 +9344,7 @@ The overview recovered first-year principal as $7{,}393.54$. Half the payment is
 
 $$\\frac{14{,}593.54}{2} = 7{,}296.77$$
 
-Then $7{,}393.54 > 7{,}296.77$ Matching the claim confirms the verdict.
+Then $7{,}393.54 > 7{,}296.77$.
 
 So the statement is True.`,
       `**E.** → False
@@ -9407,7 +9425,7 @@ $$
 a \\approx 597.24
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -9416,7 +9434,9 @@ Total paid is the recovered monthly payment times $48$:
 
 $$597.24 \\times 48 \\approx 28{,}667.57$$
 
-The claim is \\$29,500.00. We have about \\$28,667.57 The mismatch with the claim confirms the verdict.
+The claim is \\$29,500.00. We have about \\$28,667.57.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**D.** → True
@@ -9425,7 +9445,7 @@ Total interest is total paid minus principal. Using the $48$-payment outlay abou
 
 $$28{,}667.57 - 24{,}000 = 4{,}667.57$$
 
-The claim is \\$4,667.57 Matching the claim confirms the verdict.
+The claim is \\$4,667.57.
 
 So the statement is True.`,
       `**E.** → False
@@ -9487,7 +9507,7 @@ $$
 a \\approx 11{,}870.89
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -9505,7 +9525,7 @@ So the statement is False.`,
 
 Pull the recovered rate, factor, or balance and compare it with the claim.
 
-The overview recovered the outstanding balance after payment 3 as \\$20,602.37. The claim is that same figure Matching the claim confirms the verdict.
+The overview recovered the outstanding balance after payment 3 as \\$20,602.37. The claim is that same figure.
 
 So the statement is True.`,
       `**D.** → False
@@ -9523,7 +9543,7 @@ So the statement is False.`,
 
 Compare the claim against the value produced by the overview formulas.
 
-Principal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00 The mismatch with the claim confirms the verdict.
+Principal portions retire the original loan and nothing else, so they sum to $K=45{,}000$. The claim is \\$46,200.00.
 
 So the statement is False.`,
     ],
@@ -9578,6 +9598,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -9618,7 +9640,7 @@ Total cash outlay is ten copies of the recovered due payment:
 
 $$22{,}946.14 \\times 10 \\approx 229{,}461.39$$
 
-The claim is \\$220,000.00. We have about \\$229,461.39 The mismatch with the claim confirms the verdict.
+The claim is \\$220,000.00. We have about \\$229,461.39.
 
 So the statement is False.`,
     ],
@@ -9677,6 +9699,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -9686,14 +9710,14 @@ The first four payments are the committed \\$10,000 each:
 
 $$4 \\times 10{,}000 = 40{,}000$$
 
-The claim is that same total Matching the claim confirms the verdict.
+The claim is that same total.
 
 So the statement is True.`,
       `**C.** → True
 
 Pull the recovered rate, factor, or balance and compare it with the claim.
 
-The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure Matching the claim confirms the verdict.
+The overview recovered the fifth and final payment as \\$9,682.53. The claim is that same figure.
 
 So the statement is True.`,
       `**D.** → True
@@ -9704,7 +9728,7 @@ Total paid is four full payments plus the recovered final instalment:
 
 $$40{,}000 + 9{,}682.53 = 49{,}682.53$$
 
-The claim is \\$49,682.53 Matching the claim confirms the verdict.
+The claim is \\$49,682.53.
 
 So the statement is True.`,
       `**E.** → True
@@ -9715,7 +9739,7 @@ Total interest is total paid minus principal:
 
 $$49{,}682.53 - 35{,}000 = 14{,}682.53$$
 
-Then $14{,}682.53 < 35{,}000$ Matching the claim confirms the verdict.
+Then $14{,}682.53 < 35{,}000$.
 
 So the statement is True.`,
     ],
@@ -9768,6 +9792,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -9775,7 +9801,7 @@ The overview recovered $PV_{\\mathrm{B}} \\approx 535{,}526.07$ at $10\\%$. Opti
 
 $$535{,}526.07 > 500{,}000$$
 
-Option A is cheaper at $10\\%$ Matching the claim confirms the verdict.
+Option A is cheaper at $10\\%$.
 
 So the statement is True.`,
       `**C.** → False
@@ -9788,6 +9814,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**D.** → True
 
@@ -9797,7 +9825,7 @@ The overview recovered $PV_{\\mathrm{B}} \\approx 488{,}866.75$ at $14\\%$. Then
 
 $$488{,}866.75 < 500{,}000$$
 
-Option B is cheaper at $14\\%$ Matching the claim confirms the verdict.
+Option B is cheaper at $14\\%$.
 
 So the statement is True.`,
       `**E.** → False
@@ -9868,6 +9896,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**C.** → False
 
@@ -9875,7 +9905,7 @@ Three years of the recovered \\$1,030 equivalent at $8\\%$ is
 
 $$F_3 = \\frac{1{,}030}{0.08}\\bigl[(1.08)^{3}-1\\bigr] \\approx 3{,}343.79$$
 
-The claim is \\$3,500.00. We have about \\$3,343.79 The mismatch with the claim confirms the verdict.
+The claim is \\$3,500.00. We have about \\$3,343.79.
 
 So the statement is False.`,
       `**D.** → True
@@ -9887,6 +9917,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → False
@@ -9962,6 +9994,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**C.** → False
@@ -10051,12 +10085,14 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
 The overview already fixed the inputs; this letter only checks the named figure.
 
-The overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure Matching the claim confirms the verdict.
+The overview recovered the ninth and final payment as about \\$13,100.16. The claim is that same figure.
 
 So the statement is True.`,
       `**C.** → False
@@ -10078,7 +10114,7 @@ Total paid is eight full payments plus the recovered final instalment:
 
 $$200{,}000 + 13{,}100.16 = 213{,}100.16$$
 
-The claim is \\$210,000.00. We have about \\$213,100.16 The mismatch with the claim confirms the verdict.
+The claim is \\$210,000.00. We have about \\$213,100.16.
 
 So the statement is False.`,
       `**E.** → True
@@ -10147,7 +10183,7 @@ So the statement is True.`,
 
 The overview already fixed the inputs; this letter only checks the named figure.
 
-The overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure Matching the claim confirms the verdict.
+The overview recovered the interest portion of the second loan payment as about \\$8,858.87. The claim is that same figure.
 
 So the statement is True.`,
       `**C.** → False
@@ -10161,13 +10197,13 @@ Then $7{,}980.80 < 8{,}858.87$.
 So the statement is False.`,
       `**D.** → True
 
-Use the shared periodic rate and accumulation factor already recovered above.
+The overview recovered the reserve's year-end equivalent and three-year balance:
 
-$$
-1,240.50 and the three-year balance as about \\
-$$
+$$1{,}240.50$$
 
-That recovered value is exactly the figure named in the claim.
+$$4{,}066.48$$
+
+Both claimed figures match those recovered values.
 
 So the statement is True.`,
       `**E.** → False
@@ -10239,6 +10275,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -10249,6 +10287,8 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → True
@@ -10269,6 +10309,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → False
@@ -10340,6 +10382,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -10350,6 +10394,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**C.** → True
@@ -10370,6 +10416,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → False
@@ -10441,6 +10489,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -10452,6 +10502,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**C.** → True
 
@@ -10459,7 +10511,7 @@ The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}508{,}822$ at $7.5\\%$. S
 
 $$2{,}400{,}000 < 2{,}508{,}822$$
 
-Schedule I is cheaper than Schedule II at $7.5\\%$ Matching the claim confirms the verdict.
+Schedule I is cheaper than Schedule II at $7.5\\%$.
 
 So the statement is True.`,
       `**D.** → False
@@ -10472,6 +10524,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**E.** → False
 
@@ -10479,7 +10533,7 @@ The overview recovered $PV_{\\mathrm{II}} \\approx 2{,}186{,}562$ at $11.5\\%$. 
 
 $$2{,}186{,}562 < 2{,}400{,}000$$
 
-Schedule I is no longer cheaper than Schedule II The mismatch with the claim confirms the verdict.
+Schedule I is no longer cheaper than Schedule II.
 
 So the statement is False.`,
     ],
@@ -10540,6 +10594,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -10558,7 +10614,7 @@ Twenty-five percent sits above the recovered $20\\%$ IRR. NPV at $25\\%$ is
 
 $$A = -8{,}000 + \\frac{9{,}600}{1.25} = -8{,}000 + 7{,}680 = -320$$
 
-Then $-320 < 0$. The claim needs a positive NPV The mismatch with the claim confirms the verdict.
+Then $-320 < 0$. The claim needs a positive NPV.
 
 So the statement is False.`,
       `**D.** → True
@@ -10624,6 +10680,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**B.** → True
@@ -10720,6 +10778,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -10762,7 +10822,7 @@ The undiscounted sum of the three cash flows is
 
 $$-20{,}000 + 9{,}000 + 15{,}000 = 4{,}000$$
 
-The claim is \\$4,000 Matching the claim confirms the verdict.
+The claim is \\$4,000.
 
 So the statement is True.`,
     ],
@@ -10811,6 +10871,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -10822,6 +10884,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**C.** → False
 
@@ -10831,7 +10895,7 @@ The overview recovered $r_X = 15\\%$ and $r_Y = 12.5\\%$. Then
 
 $$15\\% > 12.5\\%$$
 
-The IRR criterion prefers X, not Y The mismatch with the claim confirms the verdict.
+The IRR criterion prefers X, not Y.
 
 So the statement is False.`,
       `**D.** → False
@@ -10902,6 +10966,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → False
 
@@ -10913,10 +10979,12 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**C.** → False
 
-NPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$ The mismatch with the claim confirms the verdict.
+NPV is positive at $8\\%$ (about \\$4,012) and already negative at $12\\%$ (about -\\$445). The unique conventional root therefore sits between $8\\%$ and $12\\%$, not between $12\\%$ and $15\\%$.
 
 So the statement is False.`,
       `**D.** → True
@@ -10928,6 +10996,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → False
@@ -10988,6 +11058,8 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**B.** → False
@@ -11080,6 +11152,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**B.** → True
 
@@ -11111,7 +11185,7 @@ The undiscounted sum of the three cash flows is
 
 $$-40{,}000 + 22{,}000 + 27{,}600 = 9{,}600$$
 
-The claim is \\$9,600 Matching the claim confirms the verdict.
+The claim is \\$9,600.
 
 So the statement is True.`,
       `**E.** → True
@@ -11307,6 +11381,8 @@ r=12\\%
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**B.** → True

@@ -35,7 +35,7 @@ $$
 x=360
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -46,7 +46,7 @@ $$
 y=260
 $$
 
-The claim names $240$. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names $240$. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → True
@@ -55,7 +55,7 @@ This is not the overview's equalizing transfer. North starts at the recovered $x
 
 $$360 + 30 = 390$$
 
-The claim is $390$ Matching the claim confirms the verdict.
+The claim is $390$.
 
 So the statement is True.`,
       `**D.** → False
@@ -66,7 +66,7 @@ The overview recovered $x=360$ and $y=260$. Today's gap is
 
 $$360 - 260 = 100$$
 
-The claim is $120$ The mismatch with the claim confirms the verdict.
+The claim is $120$.
 
 So the statement is False.`,
       `**E.** → True
@@ -79,7 +79,7 @@ $$360 - 50 = 310$$
 
 $$260 + 50 = 310$$
 
-Both sides are $310$ Matching the claim confirms the verdict.
+Both sides are $310$.
 
 So the statement is True.`,
     ],
@@ -141,7 +141,7 @@ $$
 x=3.50
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -152,7 +152,7 @@ $$
 y=1.80
 $$
 
-The claim names \\$2.10. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$2.10. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → True
@@ -161,7 +161,7 @@ This letter only checks the recovered figure against the claim.
 
 Invoice #101 is printed at \\$185.00.
 
-The claim names that same total. Comparing those figures shows the statement is True Matching the claim confirms the verdict.
+The claim names that same total. Comparing those figures shows the statement is True.
 
 So the statement is True.`,
       `**D.** → True
@@ -185,7 +185,7 @@ Compare the claim with the value recovered in the overview.
 
 Invoice #102 is printed at \\$160.50.
 
-The claim names \\$172.50. Comparing those figures shows the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$172.50. Comparing those figures shows the statement is False.
 
 So the statement is False.`,
     ],
@@ -257,7 +257,7 @@ $$
 a=12
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -270,7 +270,7 @@ $$
 c=7
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -371,7 +371,7 @@ $$
 x=7
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -384,7 +384,7 @@ $$
 y=5
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -396,6 +396,8 @@ $$
 $$
 
 That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**D.** → True
@@ -500,7 +502,7 @@ $$
 y=4000
 $$
 
-The claim names \\$4,500. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$4,500. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → False
@@ -511,7 +513,7 @@ $$0.04 \\times 6000 = 240$$
 
 The claim is \\$260.00
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → False
@@ -522,7 +524,7 @@ $$0.07 \\times 4000 = 280$$
 
 The claim is \\$210.00
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -593,7 +595,7 @@ $$
 x=304
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -604,7 +606,7 @@ $$
 y=349
 $$
 
-The claim names \\$354.00. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$354.00. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → True
@@ -615,7 +617,7 @@ $$12 \\times 349 = 4188$$
 
 The claim is \\$4,188.00
 
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → True
@@ -637,7 +639,7 @@ $$5 \\times 349 = 1745$$
 
 $$1520 + 1745 = 3265$$
 
-Then $3265 > 3000$ Matching the claim confirms the verdict.
+Then $3265 > 3000$.
 
 So the statement is True.`,
     ],
@@ -697,7 +699,7 @@ $$
 f=17
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -710,7 +712,7 @@ $$
 r=0.30
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -723,7 +725,7 @@ $$17 + 60 = 77$$
 
 The claim is \\$80.00
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → False
@@ -818,7 +820,9 @@ $$
 d=55
 $$
 
-That recovered value is not the figure named in the claim The mismatch with the claim confirms the verdict.
+That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → True
@@ -827,9 +831,7 @@ The overview recovered $s=75$ Standard ovens at 4 hours each:
 
 $$75 \\times 4 = 300$$
 
-The claim is $300$ assembly hours
-
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+The claim is $300$ assembly hours. Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -838,9 +840,7 @@ The overview recovered $d=55$ Deluxe ovens at 9 hours each:
 
 $$55 \\times 9 = 495$$
 
-The claim is $500$ assembly hours
-
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The claim is $500$ assembly hours. The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -851,7 +851,7 @@ $$75 \\times 120 = 9000$$
 
 The claim is \\$9,000.00
 
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
     ],
@@ -915,7 +915,7 @@ $$
 x=350
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → True
@@ -928,7 +928,7 @@ $$
 y=200
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -941,12 +941,16 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**D.** → True
 
 Read the recovered unit prices or counts, then test the named figure.
 
 Hillcrest's gross sales are printed at \\$9,300. The claim is that same total.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → True
@@ -1029,7 +1033,7 @@ $$
 f=9
 $$
 
-The claim names \\$12.00. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$12.00. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**B.** → False
@@ -1040,7 +1044,7 @@ $$
 r=0.20
 $$
 
-The claim names \\$0.25. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$0.25. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → False
@@ -1053,7 +1057,7 @@ $$9 + 50 = 59$$
 
 The claim is \\$60.00
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**D.** → False
@@ -1064,7 +1068,7 @@ $$350 \\times 0.20 = 70$$
 
 $$9 + 70 = 79$$
 
-QuickCopy's flat fee is \\$60. Then $79 > 60$ The mismatch with the claim confirms the verdict.
+QuickCopy's flat fee is \\$60. Then $79 > 60$.
 
 So the statement is False.`,
       `**E.** → True
@@ -1131,7 +1135,7 @@ The overview recovered $y=6$. Ben's 5 burritos alone cost
 
 $$5 \\times 6 = 30$$
 
-Ana's entire order was \\$32.00. Then $30 < 32$ The mismatch with the claim confirms the verdict.
+Ana's entire order was \\$32.00. Then $30 < 32$.
 
 So the statement is False.`,
       `**B.** → True
@@ -1142,7 +1146,7 @@ The overview recovered $x=3.50$ and $y=6$. The gap is
 
 $$6 - 3.50 = 2.50$$
 
-The claim is \\$2.50 Matching the claim confirms the verdict.
+The claim is \\$2.50.
 
 So the statement is True.`,
       `**C.** → True
@@ -1153,7 +1157,7 @@ The overview recovered $y=6$. One fewer burrito from Ana's \\$32.00 order leaves
 
 $$32 - 6 = 26$$
 
-Then $26 < 28$ Matching the claim confirms the verdict.
+Then $26 < 28$.
 
 So the statement is True.`,
       `**D.** → False
@@ -1165,6 +1169,8 @@ $$
 $$
 
 That recovered value is not the figure named in the claim.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**E.** → True
@@ -1269,7 +1275,7 @@ $$
 y=17
 $$
 
-That recovered value does not match the claim The mismatch with the claim confirms the verdict.
+That recovered value does not match the claim.
 
 So the statement is False.`,
       `**C.** → True
@@ -1278,9 +1284,7 @@ The overview recovered $x=12$. One hundred extra paperbacks add
 
 $$100 \\times 12 = 1200$$
 
-The claim is \\$1,200 higher
-
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+The claim is \\$1,200 higher. Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → False
@@ -1304,7 +1308,9 @@ The overview recovered $y=17$. Three hundred ten hardcovers alone would be
 
 $$310 \\times 17 = 5270$$
 
-The reported total is \\$8,540. Then $5270 \\ne 8540$ The mismatch with the claim confirms the verdict.
+The reported total is \\$8,540. Then $5270 \\ne 8540$.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
     ],
@@ -1368,7 +1374,7 @@ $$
 x=38
 $$
 
-That recovered value does not match the claim The mismatch with the claim confirms the verdict.
+That recovered value does not match the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -1381,7 +1387,7 @@ $$
 y=3
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1394,7 +1400,7 @@ $$38 + 30 = 68$$
 
 The claim is \\$68.00
 
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**D.** → True
@@ -1405,7 +1411,7 @@ $$5 \\times 3 = 15$$
 
 $$38 + 15 = 53$$
 
-Premium is \\$40 unlimited. Then $40 < 53$ Matching the claim confirms the verdict.
+Premium is \\$40 unlimited. Then $40 < 53$.
 
 So the statement is True.`,
       `**E.** → True
@@ -1493,9 +1499,7 @@ The overview recovered $x=140$ and $y=210$. The Suite premium is
 
 $$210 - 140 = 70$$
 
-The claim is \\$200 more
-
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The claim is \\$200 more. The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → False
@@ -1508,7 +1512,7 @@ Four Suites cost
 
 $$4 \\times 210 = 840$$
 
-The two bookings match, so six Standard rooms are not cheaper The mismatch with the claim confirms the verdict.
+The two bookings match, so six Standard rooms are not cheaper.
 
 So the statement is False.`,
       `**D.** → True
@@ -1519,7 +1523,7 @@ $$210 \\times 1.08 = 226.80$$
 
 The claim is \\$226.80
 
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -1530,7 +1534,7 @@ $$
 y=210
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
     ],
@@ -1613,7 +1617,7 @@ $$
 x=12
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**B.** → False
@@ -1624,7 +1628,7 @@ $$
 y=15
 $$
 
-The claim names \\$18. Against the recovered value, the statement is False The mismatch with the claim confirms the verdict.
+The claim names \\$18. Against the recovered value, the statement is False.
 
 So the statement is False.`,
       `**C.** → True
@@ -1743,6 +1747,8 @@ $$
 
 That recovered value is not the figure named in the claim.
 
+That does not match the claimed figure.
+
 So the statement is False.`,
       `**B.** → True
 
@@ -1754,7 +1760,7 @@ $$
 x=14
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1778,9 +1784,7 @@ $$4 \\times 24 = 96$$
 
 $$560 + 96 = 656$$
 
-The claim is \\$656
-
-Matching these figures to the claim settles the verdict.
+The claim is \\$656. Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → True
@@ -1861,7 +1865,7 @@ $$
 x=15
 $$
 
-That recovered value does not match the claim The mismatch with the claim confirms the verdict.
+That recovered value does not match the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -1874,7 +1878,7 @@ $$
 y=2
 $$
 
-That is exactly the figure named in the claim Matching the claim confirms the verdict.
+That is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → True
@@ -1887,6 +1891,8 @@ $$
 
 That recovered value is exactly the figure named in the claim.
 
+That matches the claimed figure.
+
 So the statement is True.`,
       `**D.** → False
 
@@ -1898,7 +1904,7 @@ $$15 + 80 = 95$$
 
 The claim is \\$85.00
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**E.** → True
@@ -1977,7 +1983,7 @@ $$1.5 \\times 10 = 15$$
 
 $$M(10) = 6 + 15 = 21$$
 
-Then $16 < 21$ Matching the claim confirms the verdict.
+Then $16 < 21$.
 
 So the statement is True.`,
       `**B.** → True
@@ -1988,7 +1994,9 @@ $$
 x_1=6
 $$
 
-That recovered value is exactly the figure named in the claim Matching the claim confirms the verdict.
+That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**C.** → False
@@ -2014,7 +2022,7 @@ $$C(30) = 6 + 30 = 36$$
 
 The claim is \\$36.00
 
-Matching these figures to the claim settles the verdict Matching the claim confirms the verdict.
+Matching these figures to the claim settles the verdict.
 
 So the statement is True.`,
       `**E.** → False
@@ -2023,7 +2031,7 @@ The overview recovered $C(d)=6+d$. A 5 km CityCab ride costs
 
 $$C(5) = 6 + 5 = 11$$
 
-The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$ The mismatch with the claim confirms the verdict.
+The stem already prices a 5 km MetroX ride at \\$13.50. Then $11 \\ne 13.50$.
 
 So the statement is False.`,
     ],
@@ -2120,7 +2128,9 @@ $$
 y_B=16
 $$
 
-That recovered value is exactly the figure named in the claim Matching the claim confirms the verdict.
+That recovered value is exactly the figure named in the claim.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**C.** → True
@@ -2177,7 +2187,7 @@ $$60 \\times 18 = 1080$$
 
 $$60 \\times 16 = 960$$
 
-Then $960 < 1080$ Matching the claim confirms the verdict.
+Then $960 < 1080$.
 
 So the statement is True.`,
     ],
@@ -2272,7 +2282,7 @@ $$
 A=13100
 $$
 
-That recovered value is exactly the figure named in the claim Matching the claim confirms the verdict.
+That recovered value is exactly the figure named in the claim.
 
 So the statement is True.`,
       `**C.** → False
@@ -2319,7 +2329,7 @@ Alpha's Product P revenue is
 
 $$150 \\times 50 = 7500$$
 
-Then $9100 > 7500$ Matching the claim confirms the verdict.
+Then $9100 > 7500$.
 
 So the statement is True.`,
     ],
@@ -2413,7 +2423,7 @@ $$
 x = 38
 $$
 
-That recovered value does not match the claim The mismatch with the claim confirms the verdict.
+That recovered value does not match the claim.
 
 So the statement is False.`,
       `**B.** → True
@@ -2422,7 +2432,7 @@ The overview recovered $y = 41$ as the actual monthly rate. The flyer advertised
 
 $$41 < 45$$
 
-Members pay less per month than the flyer states Matching the claim confirms the verdict.
+Members pay less per month than the flyer states.
 
 So the statement is True.`,
       `**C.** → False
@@ -2532,7 +2542,9 @@ The overview recovered $y = 31$ as the Premium monthly price. The claim writes \
 
 $$31 \\ne 35$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → False
@@ -2654,7 +2666,7 @@ The overview recovered $x = 4.80$ per pound of apples and $y = 6$ per carton of 
 
 $$6 > 4.80$$
 
-Milk is the dearer unit The mismatch with the claim confirms the verdict.
+Milk is the dearer unit.
 
 So the statement is False.`,
       `**C.** → True
@@ -2772,7 +2784,7 @@ The overview recovered $y = 0.21$ as the standard-plan rate. Customer service cl
 
 $$0.21 \\ne 0.24$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → True
@@ -2884,7 +2896,7 @@ The overview recovered $x = 19$ for pasta and $y = 15$ for an appetizer.
 
 $$15 < 19$$
 
-An appetizer costs less than a pasta dish The mismatch with the claim confirms the verdict.
+An appetizer costs less than a pasta dish.
 
 So the statement is False.`,
       `**C.** → True
@@ -2994,7 +3006,7 @@ The overview recovered $y = 27$ as Item N's unit cost. The claim writes \\$30.
 
 $$27 \\ne 30$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → False
@@ -3110,14 +3122,14 @@ The overview recovered $y = 44$ as the Premium unit price. The claim writes \\$5
 
 $$44 \\ne 50$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → True
 
 The shared elimination is done; only the claim-specific check remains.
 
-The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts Matching the claim confirms the verdict.
+The overview expanded Job 1 to 14 Standard units and 35 Premium units. The claim is those same counts.
 
 So the statement is True.`,
       `**D.** → True
@@ -3210,7 +3222,7 @@ $$
 x = 55
 $$
 
-The claim names that same figure. Against the recovered value, the statement is True Matching the claim confirms the verdict.
+The claim names that same figure. Against the recovered value, the statement is True.
 
 So the statement is True.`,
       `**B.** → False
@@ -3219,7 +3231,9 @@ The overview recovered $y = 0.32$ as the mileage rate. Finance claimed \\$0.40 p
 
 $$0.32 \\ne 0.40$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → True
@@ -3257,6 +3271,8 @@ Reports 1 and 2 together:
 $$323 + 245 = 568$$
 
 $$568 \\ge 550$$.
+
+That matches the claimed figure.
 
 So the statement is True.`,
     ],
@@ -3332,14 +3348,16 @@ The overview recovered $y = 10$ as Widget B's assembly time. The claim writes 12
 
 $$10 \\ne 12$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → True
 
 The shared elimination is done; only the claim-specific check remains.
 
-The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair Matching the claim confirms the verdict.
+The overview recovered Week 2's counts as 25 Widget A and 33 Widget B from the sticky note. The claim is that same pair.
 
 So the statement is True.`,
       `**D.** → False
@@ -3443,7 +3461,7 @@ The overview recovered $y = 24$ as Product Y's price. The claim writes \\$28.
 
 $$24 \\ne 28$$
 
-The mismatch with the claim settles the verdict The mismatch with the claim confirms the verdict.
+The mismatch with the claim settles the verdict.
 
 So the statement is False.`,
       `**C.** → False
@@ -3452,14 +3470,18 @@ The shared elimination is done; only the claim-specific check remains.
 
 The overview priced East at \\$3,085. East reported \\$3,200.
 
-$$3085 \\ne 3200$$ The mismatch with the claim confirms the verdict.
+$$3085 \\ne 3200$$.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**D.** → True
 
 Read the recovered unit prices or counts, then test the named figure.
 
-The overview priced East at \\$3,085. The claim is that corrected total Matching the claim confirms the verdict.
+The overview priced East at \\$3,085. The claim is that corrected total.
+
+That matches the claimed figure.
 
 So the statement is True.`,
       `**E.** → False
@@ -3470,7 +3492,9 @@ $$3875 + 3200 = 7075$$
 
 $$4145 < 7075$$
 
-North does not exceed the other two combined The mismatch with the claim confirms the verdict.
+North does not exceed the other two combined.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
     ],
@@ -3555,7 +3579,7 @@ The overview recovered $x = 18.45$ and $y = 27.80$. The gap is
 
 $$27.80 - 18.45 = 9.35$$
 
-$$9 < 9.35 < 10$$ Matching the claim confirms the verdict.
+$$9 < 9.35 < 10$$.
 
 So the statement is True.`,
       `**C.** → True
@@ -3566,7 +3590,7 @@ Invoice 2 totals \\$657.35 across $7 + 19 = 26$ cases:
 
 $$\\frac{657.35}{26} = 25.28$$
 
-$$25.28 > 24$$ Matching the claim confirms the verdict.
+$$25.28 > 24$$.
 
 So the statement is True.`,
       `**D.** → False
@@ -3581,7 +3605,7 @@ $$239.85 + 250.20 = 490.05$$
 
 $$490.05 \\ne 527.45$$
 
-The total changes The mismatch with the claim confirms the verdict.
+The total changes.
 
 So the statement is False.`,
       `**E.** → False
@@ -3590,7 +3614,7 @@ Placing both invoices together is just the sum of the two printed totals:
 
 $$527.45 + 657.35 = 1184.80$$
 
-That is the same as placing them separately, so the combined order is not strictly more The mismatch with the claim confirms the verdict.
+That is the same as placing them separately, so the combined order is not strictly more.
 
 So the statement is False.`,
     ],
@@ -3664,7 +3688,7 @@ The overview recovered $x = 145.50$ as the dispatch fee. Halfway between \\$145 
 
 $$\\frac{145 + 146}{2} = 145.50$$
 
-The recovered fee is that midpoint Matching the claim confirms the verdict.
+The recovered fee is that midpoint.
 
 So the statement is True.`,
       `**B.** → False
@@ -3677,7 +3701,7 @@ $$2.00 - 1.85 = 0.15$$
 
 $$0.15 < 0.35$$
 
-The rate is closer to \\$2.00 than to \\$1.50 The mismatch with the claim confirms the verdict.
+The rate is closer to \\$2.00 than to \\$1.50.
 
 So the statement is False.`,
       `**C.** → False
@@ -3778,7 +3802,7 @@ $$3 \\times 6.35 = 19.05$$
 
 $$19.05 < 20$$
 
-That product does not clear twenty dollars The mismatch with the claim confirms the verdict.
+That product does not clear twenty dollars.
 
 So the statement is False.`,
       `**B.** → True
@@ -3894,7 +3918,7 @@ The overview recovered $x = 13.85$ per dozen croissants. Four dozen:
 
 $$4 \\times 13.85 = 55.40$$
 
-$$55.40 > 55$$ Matching the claim confirms the verdict.
+$$55.40 > 55$$.
 
 So the statement is True.`,
       `**B.** → True
@@ -3903,7 +3927,7 @@ The overview recovered $x = 13.85$ and $y = 9.40$. The per-dozen gap is
 
 $$13.85 - 9.40 = 4.45$$
 
-Distance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars Matching the claim confirms the verdict.
+Distance to 4 is $0.45$; distance to 5 is $0.55$. The gap is closer to four dollars.
 
 So the statement is True.`,
       `**C.** → False
@@ -4020,7 +4044,7 @@ The overview recovered $x = 27.35$ as the Fabric Roll margin.
 
 $$27 < 27.35 < 27.50$$
 
-It clears \\$27 but not \\$27.50 Matching the claim confirms the verdict.
+It clears \\$27 but not \\$27.50.
 
 So the statement is True.`,
       `**B.** → False
@@ -4031,7 +4055,9 @@ $$2 \\times 19.80 = 39.60$$
 
 $$39.60 < 40$$
 
-That product does not clear forty dollars The mismatch with the claim confirms the verdict.
+That product does not clear forty dollars.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**C.** → True
@@ -4145,7 +4171,7 @@ $$
 
 The overview already solved the two-unknown system; this letter reads that solution.
 
-The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy Matching the claim confirms the verdict.
+The overview found Invoice 2 is a $0.60$-scale copy of Invoice 1. The claim is that same redundancy.
 
 So the statement is True.`,
       `**B.** → False
@@ -4158,7 +4184,7 @@ $$17.00 - 16.40 = 0.60$$
 
 $$0.40 < 0.60$$
 
-Nitrogen is closer to \\$16.00 than to \\$17.00 The mismatch with the claim confirms the verdict.
+Nitrogen is closer to \\$16.00 than to \\$17.00.
 
 So the statement is False.`,
       `**C.** → True
@@ -4299,7 +4325,7 @@ The shared elimination is done; only the claim-specific check remains.
 
 Combined hourly output is the sum of the recovered rates:
 
-$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$ Matching the claim confirms the verdict.
+$$0.085 + 0.045 = 0.130 = \\frac{13}{100}$$.
 
 So the statement is True.`,
       `**D.** → True
@@ -4323,7 +4349,7 @@ $$0.655 + 0.900 = 1.555$$
 
 $$\\frac{1.555}{23} \\approx 0.0676$$
 
-That average is about $6.76\\%$, which does not clear seven percent Matching the claim confirms the verdict.
+That average is about $6.76\\%$, which does not clear seven percent.
 
 So the statement is True.`,
     ],
@@ -4397,7 +4423,7 @@ $$12 - 11.65 = 0.35$$
 
 $$0.35 < 0.65$$
 
-The margin sits closer to twelve dollars than to eleven The mismatch with the claim confirms the verdict.
+The margin sits closer to twelve dollars than to eleven.
 
 So the statement is False.`,
       `**B.** → True
@@ -4410,7 +4436,7 @@ $$19 - 18.40 = 0.60$$
 
 $$0.40 < 0.60$$
 
-The margin sits closer to eighteen than to nineteen Matching the claim confirms the verdict.
+The margin sits closer to eighteen than to nineteen.
 
 So the statement is True.`,
       `**C.** → False
@@ -4421,7 +4447,7 @@ The overview recovered Season 3's T-Shirt count as $T = 245$.
 
 $$245 = 24 \\times 10 + 5$$
 
-$245$ is not a multiple of ten The mismatch with the claim confirms the verdict.
+$245$ is not a multiple of ten.
 
 So the statement is False.`,
       `**D.** → True
@@ -4551,7 +4577,7 @@ $$3 \\times 3.15 = 9.45$$
 
 $$9.45 < 9.50$$
 
-That product lands just shy of \\$9.50 Matching the claim confirms the verdict.
+That product lands just shy of \\$9.50.
 
 So the statement is True.`,
       `**C.** → True
@@ -4658,7 +4684,7 @@ The overview already solved the two-unknown system; this letter reads that solut
 
 The overview scaled Client A to \\$967.40, which overshoots the billed \\$952.10 by \\$15.30.
 
-$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$ Matching the claim confirms the verdict.
+$$\\frac{15.30}{952.10} \\approx 0.01607 \\approx 1.61\\%$$.
 
 So the statement is True.`,
       `**B.** → True
@@ -4900,7 +4926,7 @@ The overview recovered $A = 16$ g/L and $B = 12$ g/L.
 
 $$\\frac{12}{16} = 0.75$$
 
-Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's Matching the claim confirms the verdict.
+Since $0.75 > 0.70$, Solution B's concentration is more than $70\\%$ of Solution A's.
 
 So the statement is True.`,
       `**C.** → True
@@ -5248,7 +5274,7 @@ The overview recovered Boat A's speed $x = 48$ km/h. Solo time on the $356$ km s
 
 $$\\frac{356}{48} \\approx 7.4167$$
 
-about $7$ hours $25$ minutes, which is more than $7$ hours Matching the claim confirms the verdict.
+about $7$ hours $25$ minutes, which is more than $7$ hours.
 
 So the statement is True.`,
       `**B.** → True
@@ -5292,7 +5318,7 @@ $$77 - 48 = 29$$
 
 $$\\frac{29}{48} \\approx 0.60417$$
 
-about $60.4\\%$, which is more than $60\\%$ Matching the claim confirms the verdict.
+about $60.4\\%$, which is more than $60\\%$.
 
 So the statement is True.`,
     ],
@@ -5486,7 +5512,7 @@ $$47 - 19 = 28$$
 
 $$\\frac{28}{47} \\approx 0.5957$$
 
-about $59.6\\%$, which is more than $45\\%$ Matching the claim confirms the verdict.
+about $59.6\\%$, which is more than $45\\%$.
 
 So the statement is True.`,
       `**C.** → False
@@ -5504,7 +5530,9 @@ The overview recovered current ages $47$ and $19$. Ten years ago the ages were $
 
 $$37 + 9 = 46$$
 
-Since $46 > 40$, the sum was not less than $40$ The mismatch with the claim confirms the verdict.
+Since $46 > 40$, the sum was not less than $40$.
+
+That does not match the claimed figure.
 
 So the statement is False.`,
       `**E.** → True
@@ -5713,7 +5741,7 @@ The overview recovered $x = 7$ and $y = 3$, so the Ravens have $67$ points with 
 
 $$\\frac{18}{67} \\approx 0.2687$$
 
-About $26.9\\%$ is not more than $45\\%$ The mismatch with the claim confirms the verdict.
+About $26.9\\%$ is not more than $45\\%$.
 
 So the statement is False.`,
       `**C.** → True
@@ -5735,7 +5763,7 @@ The Falcons' win contribution is $9 \\times 7 = 63$ and their draw contribution 
 
 $$\\frac{63}{12} = 5.25$$
 
-The win-to-draw ratio is $5.25$, which is not greater than $15$ The mismatch with the claim confirms the verdict.
+The win-to-draw ratio is $5.25$, which is not greater than $15$.
 
 So the statement is False.`,
       `**E.** → False
@@ -5832,7 +5860,7 @@ The overview recovered $x = 7.6$ and $y = 11.4$. The relative density advantage 
 
 $$\\frac{11.4 - 7.6}{7.6} = \\frac{3.8}{7.6} = 0.50$$
 
-That is $50\\%$ greater, not more than $50\\%$ The mismatch with the claim confirms the verdict.
+That is $50\\%$ greater, not more than $50\\%$.
 
 So the statement is False.`,
       `**C.** → True
@@ -5950,7 +5978,7 @@ The overview recovered retainer $y = 1200$ on Client 2's fee \\$10,800.
 
 $$\\frac{1200}{10800} \\approx 0.1111$$
 
-about $11.1\\%$, which is more than $10\\%$ Matching the claim confirms the verdict.
+about $11.1\\%$, which is more than $10\\%$.
 
 So the statement is True.`,
       `**C.** → True
@@ -6053,7 +6081,7 @@ The overview predicted $9708$ mg for Batch 3 against $9700$ mg recorded.
 
 $$\\frac{|9708 - 9700|}{9700} = \\frac{8}{9700} \\approx 0.000825$$
 
-about $0.0825\\%$, which is not more than $1\\%$ The mismatch with the claim confirms the verdict.
+about $0.0825\\%$, which is not more than $1\\%$.
 
 So the statement is False.`,
       `**C.** → True
@@ -6193,7 +6221,7 @@ The overview recovered drywall $y = 38$ and studs $x = 4.50$.
 
 $$\\frac{38}{4.50} \\approx 8.444$$
 
-Since $8.444 > 8$, the drywall price is more than $8$ times the stud price Matching the claim confirms the verdict.
+Since $8.444 > 8$, the drywall price is more than $8$ times the stud price.
 
 So the statement is True.`,
       `**E.** → True
@@ -6420,7 +6448,7 @@ $$508 \\times 4.85 = 2463.80$$
 
 $$812 \\times 6.20 = 5034.40$$
 
-Cocoa's dollar total is smaller, not larger The mismatch with the claim confirms the verdict.
+Cocoa's dollar total is smaller, not larger.
 
 So the statement is False.`,
       `**E.** → True
@@ -6504,7 +6532,7 @@ The overview recovered Truck $x = 32.0$ L/100km and Van $y = 18.0$ L/100km.
 
 $$\\frac{32.0 - 18.0}{18.0} = \\frac{14}{18} \\approx 0.7778$$
 
-about $77.8\\%$, which is more than $75\\%$ Matching the claim confirms the verdict.
+about $77.8\\%$, which is more than $75\\%$.
 
 So the statement is True.`,
       `**B.** → False
@@ -6668,7 +6696,7 @@ The overview recovered $5.4\\%$ and $6.6\\%$.
 
 $$\\frac{5.4}{6.6} \\approx 0.8182$$
 
-about $81.8\\%$, which is more than $80\\%$ Matching the claim confirms the verdict.
+about $81.8\\%$, which is more than $80\\%$.
 
 So the statement is True.`,
     ],
@@ -6743,7 +6771,7 @@ Then $y = 5.4 + 1.2 = 6.6$.
 
 The overview already solved the two-unknown system; this letter reads that solution.
 
-The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000 Matching the claim confirms the verdict.
+The overview reconstructed Renters coverage at \\$25,000. That is less than \\$30,000.
 
 So the statement is True.`,
       `**B.** → False
@@ -6752,7 +6780,7 @@ The overview recovered the fixed fee $x = 214.70$ on Auto's premium \\$612.50.
 
 $$\\frac{214.70}{612.50} \\approx 0.3505$$
 
-about $35.1\\%$, which is not more than $60\\%$ The mismatch with the claim confirms the verdict.
+about $35.1\\%$, which is not more than $60\\%$.
 
 So the statement is False.`,
       `**C.** → True
@@ -6851,7 +6879,7 @@ The overview recovered Year 6 populations $A = 898$ and $B = 874$.
 
 $$898 - 874 = 24$$
 
-Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals Matching the claim confirms the verdict.
+Since $24 > 20$, Species A exceeds Species B by more than $20$ individuals.
 
 So the statement is True.`,
       `**B.** → True
@@ -6966,7 +6994,7 @@ The overview recovered $A = 145$ MWh/hr and $B = 98$ MWh/hr.
 
 $$\\frac{145 - 98}{98} = \\frac{47}{98} \\approx 0.4796$$
 
-about $48.0\\%$, which is more than $45\\%$ Matching the claim confirms the verdict.
+about $48.0\\%$, which is more than $45\\%$.
 
 So the statement is True.`,
       `**B.** → True
@@ -6975,7 +7003,7 @@ The overview predicted $3543$ MWh for Day 3 against $3553$ MWh recorded.
 
 $$\\frac{|3543 - 3553|}{3553} = \\frac{10}{3553} \\approx 0.002815$$
 
-about $0.28\\%$, which is less than $0.3\\%$ Matching the claim confirms the verdict.
+about $0.28\\%$, which is less than $0.3\\%$.
 
 So the statement is True.`,
       `**C.** → False
