@@ -33,31 +33,49 @@ const MATH_CH11_CORE: MathTask[] = [
     tactical_explanations: [
       `**A.** → True
 
-The shared Newton-quotient calculation already simplifies to
+The Newton quotient is the difference quotient that becomes the derivative once $h$ tends to zero. Form it at $x=a$ and expand $P(a+h)-P(a)$:
 
-$$2a+h-4$$
+$$\\dfrac{P(a+h)-P(a)}{h}=\\dfrac{(a+h)^{2}-4(a+h)+7-(a^{2}-4a+7)}{h}$$
 
-That is exactly the claimed expression, so the statement is True.`,
+$$\\dfrac{2ah+h^{2}-4h}{h}=2a+h-4$$
+
+That simplified expression is exactly the one named in the claim, so the statement is True.`,
       `**B.** → True
 
-From the shared derivative $P^{\\prime}(x)=2x-4$, substitute $x=3$:
+The derivative is the $h\\to 0$ limit of the Newton quotient, which collapses to the linear rule
+
+$$P^{\\prime}(x)=2x-4$$
+
+Substitute the named sales level $x=3$:
 
 $$P^{\\prime}(3)=2\\cdot 3-4=2$$
 
-The value matches the claim, so the statement is True.`,
+The computed slope matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared work already records the point $(3,4)$ and slope $2$, and rearranges the point-slope equation to
+A tangent line needs one point on the curve and the slope there. First evaluate the profit and its derivative at $x=3$:
 
-$$y=2x-2$$
+$$P(3)=9-12+7=4\\qquad P^{\\prime}(3)=2$$
+
+Point-slope form with point $(3,4)$ and slope $2$ rearranges as
+
+$$y-4=2(x-3)\\qquad\\Rightarrow\\qquad y=2x-2$$
 
 which is the claimed tangent, so the statement is True.`,
       `**D.** → False
 
-From the shared derivative, for every $x>2$ one has $P^{\\prime}(x)=2x-4>0$, so the curve is increasing rather than decreasing on that interval, so the statement is False.`,
+Whether the curve rises or falls is controlled by the sign of the derivative
+
+$$P^{\\prime}(x)=2x-4$$
+
+For every $x>2$ one has $2x-4>0$, so the profit curve is increasing on that ray rather than decreasing. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-The shared stationary-point calculation gives $x=2$, and the positive leading coefficient of $P$ makes that stationary point a minimum, so the statement is True.`
+A stationary point solves $P^{\\prime}(x)=0$:
+
+$$2x-4=0\\qquad\\Rightarrow\\qquad x=2$$
+
+The leading coefficient of the upward-opening parabola $P(x)=x^{2}-4x+7$ is positive, so this unique stationary point is a minimum. Matching these figures to the claim, the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 1,
@@ -98,23 +116,41 @@ The stationary point solves $P^{\\prime}(x)=0$, giving $x=2$. Because the leadin
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already produces
+Marginal cost is the derivative of total cost. Differentiate the quadratic schedule term by term:
 
-$$C^{\\prime}(q)=12+\\dfrac{3}{50}q$$
+$$C(q)=200+12q+\\dfrac{3}{100}q^{2}$$
 
-which matches the claimed marginal-cost formula, so the statement is True.`,
+$$C^{\\prime}(q)=12+\\dfrac{6}{100}q=12+\\dfrac{3}{50}q$$
+
+which is exactly the claimed marginal-cost formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation at $q=100$ gives $C^{\\prime}(100)=18$, so the statement is True.`,
+Substitute the named output $q=100$ into the marginal-cost rule:
+
+$$C^{\\prime}(100)=12+\\dfrac{3}{50}\\cdot 100=12+6=18$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-Because $C^{\\prime}(100)=18$ is measured in euros per unit, producing one extra unit near $q=100$ raises total cost by approximately $18$ euros, so the statement is True.`,
+By definition, $C^{\\prime}(q)$ is the instantaneous rate of change of total cost in euros per unit. At $q=100$ that rate is
+
+$$C^{\\prime}(100)=18$$
+
+so producing one extra unit near that output raises total cost by approximately $18$ euros, so the statement is True.`,
       `**D.** → False
 
-Average cost per unit is the quotient $C(q)/q$, whereas $C^{\\prime}(q)$ is marginal cost; the two objects are different, so the statement is False.`,
+Average cost per unit is the separate quotient
+
+$$\\dfrac{C(q)}{q}$$
+
+whereas $C^{\\prime}(q)$ is marginal cost — the slope of total cost. Those two objects are different functions, so the claim's identification is incorrect and the statement is False.`,
       `**E.** → True
 
-The shared point $(100,1700)$ and slope $18$ assemble into the tangent
+First record the point and slope at $q=100$:
+
+$$C(100)=200+12\\cdot 100+\\dfrac{3}{100}\\cdot 10000=1700\\qquad C^{\\prime}(100)=18$$
+
+Point-slope form then assembles the tangent
 
 $$y=1700+18(q-100)$$
 
@@ -159,27 +195,39 @@ Marginal cost $C^{\\prime}(q)$ is the instantaneous rate of change of total cost
     tactical_explanations: [
       `**A.** → True
 
-The shared power-rule calculation already produces
+Marginal product is the derivative of output with respect to labour. Apply the power rule to $Q(L)=5L^{\\frac{3}{2}}$:
+
+$$Q^{\\prime}(L)=5\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
+
+which matches the claimed formula, so the statement is True.`,
+      `**B.** → True
+
+Substitute $L=4$ into the marginal-product rule, using $\\sqrt{4}=2$:
+
+$$Q^{\\prime}(4)=\\dfrac{15}{2}\\cdot 2=15$$
+
+The computed value matches the claim, so the statement is True.`,
+      `**C.** → True
+
+The derivative $Q^{\\prime}(L)$ measures output gained per extra labour-hour. At $L=4$ that rate is
+
+$$Q^{\\prime}(4)=15$$
+
+so one extra labour-hour near that staffing level raises output by approximately $15$ units, so the statement is True.`,
+      `**D.** → False
+
+The marginal-product rule still carries the factor $L^{\\frac{1}{2}}$:
 
 $$Q^{\\prime}(L)=\\dfrac{15}{2}L^{\\frac{1}{2}}$$
 
-matching the claim, so the statement is True.`,
-      `**B.** → True
-
-The shared evaluation gives $Q^{\\prime}(4)=15$, so the statement is True.`,
-      `**C.** → True
-
-With $Q^{\\prime}(4)=15$ measured in output per labour-hour, one extra labour-hour near $L=4$ raises output by approximately $15$ units, so the statement is True.`,
-      `**D.** → False
-
-The shared formula still contains the factor $L^{\\frac{1}{2}}$, which changes with $L$, so marginal product is not constant, so the statement is False.`,
+which changes whenever $L$ changes. Marginal product is therefore not constant on $L>0$, so the statement is False.`,
       `**E.** → False
 
-The shared ratio comparison shows
+Compare the two labour levels through the ratio of marginal products:
 
-$$\\dfrac{Q^{\\prime}(8)}{Q^{\\prime}(4)}=\\sqrt{2}\\neq 2$$
+$$\\dfrac{Q^{\\prime}(8)}{Q^{\\prime}(4)}=\\dfrac{\\sqrt{8}}{\\sqrt{4}}=\\sqrt{2}\\neq 2$$
 
-so doubling labour does not double the marginal product, so the statement is False.`
+Doubling labour multiplies marginal product by $\\sqrt{2}$, not by $2$. The claim's comparison is incorrect, so the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 3,
@@ -218,19 +266,39 @@ $$\\dfrac{Q^{\\prime}(8)}{Q^{\\prime}(4)}=\\sqrt{2}\\neq 2$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared expansion $R(q)=q(80-2q)$ already simplifies to $80q-2q^{2}$, so the statement is True.`,
+Revenue is price times quantity sold. Expand the product with the linear price schedule:
+
+$$R(q)=q\\cdot(80-2q)=80q-2q^{2}$$
+
+which is the quadratic named in the claim, so the statement is True.`,
       `**B.** → True
 
-The shared differentiation of revenue yields $R^{\\prime}(q)=80-4q$, so the statement is True.`,
+Marginal revenue is the derivative of the whole revenue function. Differentiating $R(q)=80q-2q^{2}$ term by term gives
+
+$$R^{\\prime}(q)=80-4q$$
+
+matching the claimed formula, so the statement is True.`,
       `**C.** → True
 
-Substituting into the shared marginal-revenue formula gives $R^{\\prime}(10)=80-40=40$, so the statement is True.`,
+Substitute the named sales level $q=10$ into marginal revenue:
+
+$$R^{\\prime}(10)=80-4\\cdot 10=80-40=40$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → False
 
-From the shared work, $p^{\\prime}(q)=-2$ while $R^{\\prime}(q)=80-4q$; the two derivatives are different functions, so the statement is False.`,
+The price schedule alone has slope $p^{\\prime}(q)=-2$, while revenue's derivative is
+
+$$R^{\\prime}(q)=80-4q$$
+
+These are different functions for every $q>0$. The claim equates them incorrectly, so the statement is False.`,
       `**E.** → True
 
-The shared point $(10,600)$ and slope $40$ assemble into
+First evaluate both the height and the slope at $q=10$:
+
+$$R(10)=80\\cdot 10-2\\cdot 100=600\\qquad R^{\\prime}(10)=40$$
+
+Point-slope form then gives the tangent
 
 $$y=600+40(q-10)$$
 
@@ -271,27 +339,39 @@ Note that $p^{\\prime}(q)=-2$ is not the same as $R^{\\prime}(q)$: revenue is th
     tactical_explanations: [
       `**A.** → True
 
-Dividing the shared total-cost formula by $q$ already produces
+Average cost is total cost divided by output. Split the quotient term by term:
 
-$$A(q)=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
+$$A(q)=\\dfrac{300+6q+\\dfrac{3}{100}q^{2}}{q}=\\dfrac{300}{q}+6+\\dfrac{3}{100}q$$
 
-so the statement is True.`,
+which is exactly the claimed simplification, so the statement is True.`,
       `**B.** → True
 
-The shared differentiation of that average-cost rule yields
+Differentiate the average-cost expression term by term, using $\\dfrac{d}{dq}\\bigl(q^{-1}\\bigr)=-q^{-2}$:
 
 $$A^{\\prime}(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
 
-matching the claim, so the statement is True.`,
+matching the claimed derivative, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation at $q=100$ gives $A^{\\prime}(100)=0$, so the statement is True.`,
+Substitute $q=100$ into the average-cost derivative:
+
+$$A^{\\prime}(100)=-\\dfrac{300}{10000}+\\dfrac{3}{100}=-0.03+0.03=0$$
+
+The derivative vanishes there, so the statement is True.`,
       `**D.** → False
 
-Marginal cost is $C^{\\prime}(q)$, whereas $A^{\\prime}(q)$ is the rate of change of average cost; the shared setup treats them as distinct, so the statement is False.`,
+Marginal cost is the derivative $C^{\\prime}(q)$ of total cost, whereas
+
+$$A^{\\prime}(q)=-\\dfrac{300}{q^{2}}+\\dfrac{3}{100}$$
+
+is the rate of change of average cost. Those are different objects, so identifying $A^{\\prime}$ with marginal cost is incorrect and the statement is False.`,
       `**E.** → True
 
-Because the shared calculation shows $A^{\\prime}(100)=0$, average cost is locally flat at that output, so the statement is True.`
+A zero first derivative means a horizontal tangent. Since the calculation gives
+
+$$A^{\\prime}(100)=0$$
+
+average cost is locally flat at $q=100$, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 5,
@@ -328,27 +408,41 @@ so average cost is locally flat there. Marginal cost is $C^{\\prime}(q)$, a diff
     tactical_explanations: [
       `**A.** → True
 
-The shared reciprocal-power derivative is already
+Rewrite waiting time as a power and differentiate with the chain rule:
 
-$$W^{\\prime}(n)=-\\dfrac{48}{(n+3)^{2}}$$
+$$W(n)=48(n+3)^{-1}$$
 
-so the statement is True.`,
+$$W^{\\prime}(n)=-48(n+3)^{-2}=-\\dfrac{48}{(n+3)^{2}}$$
+
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $W^{\\prime}(3)=-\\dfrac{4}{3}$, so the statement is True.`,
+Substitute the named staffing level $n=3$ into the derivative:
+
+$$W^{\\prime}(3)=-\\dfrac{48}{(3+3)^{2}}=-\\dfrac{48}{36}=-\\dfrac{4}{3}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-With $W^{\\prime}(3)=-\\dfrac{4}{3}$, adding one agent near $n=3$ lowers waiting time by approximately $\\dfrac{4}{3}$ minutes, so the statement is True.`,
+The derivative $W^{\\prime}(n)$ measures minutes of waiting time gained (or lost) per extra agent. At $n=3$ that rate is
+
+$$W^{\\prime}(3)=-\\dfrac{4}{3}$$
+
+so adding one more agent lowers waiting time by approximately $\\dfrac{4}{3}$ minutes, so the statement is True.`,
       `**D.** → False
 
-The shared sign $W^{\\prime}(n)<0$ means waiting time is decreasing in $n$, not increasing, so the statement is False.`,
+A negative derivative means the function falls as the input rises. Since
+
+$$W^{\\prime}(n)=-\\dfrac{48}{(n+3)^{2}}<0$$
+
+for every $n>0$, waiting time is decreasing in the number of agents, not increasing. The claim's comparison is incorrect, so the statement is False.`,
       `**E.** → True
 
-The shared second derivative is already
+Differentiate $W^{\\prime}(n)=-48(n+3)^{-2}$ once more:
 
-$$W^{\\prime\\prime}(n)=\\dfrac{96}{(n+3)^{3}}$$
+$$W^{\\prime\\prime}(n)=(-48)\\cdot(-2)(n+3)^{-3}=\\dfrac{96}{(n+3)^{3}}$$
 
-matching the claim, so the statement is True.`
+which matches the claimed second derivative, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 6,
@@ -385,27 +479,39 @@ so one extra agent near $n=3$ lowers waiting time by about $\\dfrac{4}{3}$ minut
     tactical_explanations: [
       `**A.** → True
 
-The shared product-rule calculation already simplifies to
+The response index is a product $S(x)=x^{2}\\cdot e^{-x}$. Apply the product rule and factor $x\\,e^{-x}$:
 
-$$S^{\\prime}(x)=x\\cdot e^{-x}\\cdot(2-x)$$
+$$S^{\\prime}(x)=2x\\,e^{-x}+x^{2}(-e^{-x})=x\\,e^{-x}(2-x)$$
 
-so the statement is True.`,
+which is exactly the claimed formula, so the statement is True.`,
       `**B.** → True
 
-Substituting $x=2$ into the shared first derivative gives $S^{\\prime}(2)=0$, so the statement is True.`,
+Substitute $x=2$ into the factored derivative:
+
+$$S^{\\prime}(2)=2\\cdot e^{-2}\\cdot(2-2)=0$$
+
+so the derivative vanishes at that intensity, matching the claim, and the statement is True.`,
       `**C.** → True
 
-The shared second derivative is already
+Differentiate $S^{\\prime}(x)=x\\,e^{-x}(2-x)$ again with the product rule, then collect powers of $x$:
 
-$$S^{\\prime\\prime}(x)=e^{-x}\\cdot(x^{2}-4x+2)$$
+$$S^{\\prime\\prime}(x)=e^{-x}(x^{2}-4x+2)$$
 
-matching the claim, so the statement is True.`,
+which matches the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-From the shared formula, $S^{\\prime}(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$, so the statement is True.`,
+Substitute $x=1$ into the first-derivative formula:
+
+$$S^{\\prime}(1)=1\\cdot e^{-1}\\cdot(2-1)=e^{-1}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → True
 
-Because the shared calculation shows $S^{\\prime}(2)=0$, the tangent at $x=2$ is horizontal, so the statement is True.`
+A horizontal tangent is precisely a zero slope. From the evaluation at $x=2$,
+
+$$S^{\\prime}(2)=0$$
+
+so the tangent to the graph at that point is horizontal, and the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 7,
@@ -444,27 +550,39 @@ $$S^{\\prime\\prime}(x)=e^{-x}\\cdot(x^{2}-4x+2)$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Rewrite demand as $D(a)=7(a+9)^{\\frac{1}{2}}$ and apply the chain rule:
 
-$$D^{\\prime}(a)=\\dfrac{7}{2\\sqrt{a+9}}$$
+$$D^{\\prime}(a)=7\\cdot\\dfrac{1}{2}(a+9)^{-\\frac{1}{2}}=\\dfrac{7}{2\\sqrt{a+9}}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $D^{\\prime}(7)=\\dfrac{7}{8}$, so the statement is True.`,
+Substitute $a=7$, noting that $a+9=16$ and $\\sqrt{16}=4$:
+
+$$D^{\\prime}(7)=\\dfrac{7}{2\\cdot 4}=\\dfrac{7}{8}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $D^{\\prime}(a)=\\dfrac{7}{2}(a+9)^{-\\frac{1}{2}}$ once more:
 
-$$D^{\\prime\\prime}(a)=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
+$$D^{\\prime\\prime}(a)=\\dfrac{7}{2}\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(a+9)^{-\\frac{3}{2}}=-\\dfrac{7}{4}(a+9)^{-\\frac{3}{2}}$$
 
-exactly, so the statement is True.`,
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → False
 
-The shared value $D^{\\prime}(7)=\\dfrac{7}{8}$ is the approximate one-unit lift near $a=7$, not $7$, so the statement is False.`,
+Near $a=7$ the model predicts an increase of about
+
+$$D^{\\prime}(7)=\\dfrac{7}{8}$$
+
+units of demand per extra advertising unit, not $7$. The claim overstates the marginal effect, so the statement is False.`,
       `**E.** → True
 
-The shared comparison $D^{\\prime}(16)<D^{\\prime}(0)$ confirms that the derivative is smaller at $a=16$ than at $a=0$, so the statement is True.`
+Compare the derivative at the two advertising levels:
+
+$$D^{\\prime}(16)=\\dfrac{7}{2\\sqrt{25}}=\\dfrac{7}{10}\\qquad D^{\\prime}(0)=\\dfrac{7}{2\\sqrt{9}}=\\dfrac{7}{6}$$
+
+Since $\\dfrac{7}{10}<\\dfrac{7}{6}$, the derivative is smaller at $a=16$ than at $a=0$, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 8,
@@ -503,27 +621,39 @@ $$D^{\\prime}(16)=\\dfrac{7}{10}<D^{\\prime}(0)=\\dfrac{7}{6}$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared combined derivative is already
+Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. After combining the product-rule pieces over one denominator one obtains
 
 $$R^{\\prime}(n)=\\dfrac{17-9n}{\\sqrt{2n+1}}$$
 
-so the statement is True.`,
+which matches the claimed simplified formula, so the statement is True.`,
       `**B.** → True
 
-Substituting $n=1$ into the shared formula gives $R^{\\prime}(1)=\\dfrac{8}{\\sqrt{3}}$, so the statement is True.`,
+Substitute $n=1$ into the combined derivative:
+
+$$R^{\\prime}(1)=\\dfrac{17-9}{\\sqrt{2+1}}=\\dfrac{8}{\\sqrt{3}}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared product-rule stage before clearing the denominator is exactly
+Before clearing a common denominator, the product rule writes the two pieces separately:
 
 $$R^{\\prime}(n)=-3\\sqrt{2n+1}+\\dfrac{20-3n}{\\sqrt{2n+1}}$$
 
-so the statement is True.`,
+which is exactly the intermediate form named in the claim, so the statement is True.`,
       `**D.** → True
 
-Setting the shared numerator $17-9n=0$ yields the unique critical point $n=\\dfrac{17}{9}$, so the statement is True.`,
+A critical point solves $R^{\\prime}(n)=0$. With a positive denominator that forces the numerator to vanish:
+
+$$17-9n=0\\qquad\\Rightarrow\\qquad n=\\dfrac{17}{9}$$
+
+matching the claimed root, so the statement is True.`,
       `**E.** → False
 
-Because the shared critical point $\\dfrac{17}{9}$ lies inside $(0,2)$, $R^{\\prime}$ changes from positive to negative there, so revenue is not increasing for every $0<n<2$, so the statement is False.`
+The derivative changes sign at the critical point
+
+$$n=\\dfrac{17}{9}$$
+
+and $\\dfrac{17}{9}<2$. Revenue therefore rises on part of $(0,2)$ and falls on the rest, so it is not increasing throughout that interval. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 9,
@@ -560,23 +690,39 @@ Hence $R^{\\prime}(1)=\\dfrac{8}{\\sqrt{3}}$ and $R^{\\prime}(n)=0$ at $n=\\dfra
     tactical_explanations: [
       `**A.** → True
 
-The shared quotient-rule simplification already yields
+Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. The quotient rule simplifies to the single fraction
 
 $$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $T^{\\prime}(1)=\\dfrac{7}{2}$, so the statement is True.`,
+Substitute $n=1$ into that derivative:
+
+$$T^{\\prime}(1)=\\dfrac{2+4+8}{2^{2}}=\\dfrac{14}{4}=\\dfrac{7}{2}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared sign analysis shows the numerator stays positive, so $T^{\\prime}(n)>0$ for every $n>0$, so the statement is True.`,
+For $n>0$ the numerator $2n^{2}+4n+8=2(n^{2}+2n+4)$ is a sum of positive terms (discriminant $4-16<0$), and the denominator $(n+1)^{2}$ is positive. Hence
+
+$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
+
+for every $n>0$, so the statement is True.`,
       `**D.** → False
 
-The correct shared derivative keeps the quadratic numerator over $(n+1)^{2}$; the cancelled form $\\dfrac{2n+8}{n+1}$ is not equal to $T^{\\prime}$, so the statement is False.`,
+Cancelling factors incorrectly would produce $\\dfrac{2n+8}{n+1}$, but the true derivative after the quotient rule is
+
+$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}$$
+
+Those expressions are not identical, so the statement is False.`,
       `**E.** → False
 
-Because the shared numerator never vanishes, there is no $n>0$ with $T^{\\prime}(n)=0$, so the statement is False.`
+For $n>0$ the numerator $2n^{2}+4n+8$ never vanishes (discriminant $4-16<0$) and the denominator stays positive, so
+
+$$T^{\\prime}(n)=\\dfrac{2n^{2}+4n+8}{(n+1)^{2}}>0$$
+
+throughout. A strictly positive derivative never hits zero, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 10,
@@ -609,27 +755,39 @@ At $n=1$ one finds $T^{\\prime}(1)=\\dfrac{7}{2}$. The numerator $2n^{2}+4n+8=2(
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Differentiate the log utility $U(x)=40\\ln(x+1)-x$ term by term:
 
 $$U^{\\prime}(x)=\\dfrac{40}{x+1}-1$$
 
-so the statement is True.`,
+which matches the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $U^{\\prime}(3)=9$, so the statement is True.`,
+Substitute the named study time $x=3$ into the first derivative:
+
+$$U^{\\prime}(3)=\\dfrac{40}{3+1}-1=\\dfrac{40}{4}-1=9$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $U^{\\prime}(x)=40(x+1)^{-1}-1$ once more:
 
-$$U^{\\prime\\prime}(x)=-\\dfrac{40}{(x+1)^{2}}$$
+$$U^{\\prime\\prime}(x)=-40(x+1)^{-2}=-\\dfrac{40}{(x+1)^{2}}$$
 
-exactly, so the statement is True.`,
+which matches the claimed second derivative, so the statement is True.`,
       `**D.** → False
 
-The shared formula $U^{\\prime}(x)=\\dfrac{40}{x+1}-1$ is defined at $x=0$ (where it equals $39$), so the statement is False.`,
+Extending the first-derivative formula to $x=0$ gives the ordinary finite value
+
+$$U^{\\prime}(0)=\\dfrac{40}{1}-1=39$$
+
+so the derivative is defined at $x=0$. The claim is therefore incorrect, and the statement is False.`,
       `**E.** → True
 
-With the shared value $U^{\\prime}(3)=9$, one extra hour near $x=3$ changes utility by approximately $9$ units, so the statement is True.`
+The first derivative measures the instantaneous change in utility per extra study hour. At $x=3$ that rate is
+
+$$U^{\\prime}(3)=9$$
+
+so one extra hour near that level changes utility by approximately $9$ utility units, and the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 11,
@@ -666,23 +824,39 @@ At the named study level one finds $U^{\\prime}(3)=9$, so one extra hour near $x
     tactical_explanations: [
       `**A.** → True
 
-The shared power-rule derivative is already
+Apply the power rule to the learning-curve cost $c(N)=1000N^{-\\frac{1}{2}}$:
 
-$$c^{\\prime}(N)=-500N^{-\\frac{3}{2}}$$
+$$c^{\\prime}(N)=1000\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)N^{-\\frac{3}{2}}=-500N^{-\\frac{3}{2}}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $c^{\\prime}(4)=-\\dfrac{125}{2}$, so the statement is True.`,
+Substitute $N=4$, using $4^{-\\frac{3}{2}}=\\dfrac{1}{8}$:
+
+$$c^{\\prime}(4)=-500\\cdot\\dfrac{1}{8}=-\\dfrac{125}{2}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared formula keeps a negative leading factor and a positive power of $N$, so $c^{\\prime}(N)<0$ for all $N>0$, so the statement is True.`,
+For every $N>0$ the power $N^{-\\frac{3}{2}}$ is positive, while the leading coefficient $-500$ is negative. Therefore
+
+$$c^{\\prime}(N)<0$$
+
+throughout the domain, so the statement is True.`,
       `**D.** → True
 
-The shared value $c^{\\prime}(4)=-\\dfrac{125}{2}$ means one extra unit near $N=4$ lowers unit cost by approximately $\\dfrac{125}{2}$ euros, so the statement is True.`,
+The derivative $c^{\\prime}(N)$ measures euros of unit cost gained (or lost) per extra unit of cumulative output. At $N=4$ that rate is
+
+$$c^{\\prime}(4)=-\\dfrac{125}{2}$$
+
+so one extra unit lowers unit cost by approximately $\\dfrac{125}{2}$ euros, and the statement is True.`,
       `**E.** → False
 
-The shared magnitude ratio equals $\\dfrac{1}{2\\sqrt{2}}$, not $2$, so doubling $N$ does not double the derivative magnitude, so the statement is False.`
+Compare magnitudes at the two cumulative outputs:
+
+$$\\dfrac{|c^{\\prime}(8)|}{|c^{\\prime}(4)|}=\\dfrac{8^{-\\frac{3}{2}}}{4^{-\\frac{3}{2}}}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$
+
+Doubling $N$ does not double the magnitude of the derivative. The claim's comparison is incorrect, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 12,
@@ -721,23 +895,39 @@ $$\\dfrac{|c^{\\prime}(8)|}{|c^{\\prime}(4)|}=\\dfrac{1}{2\\sqrt{2}}\\neq 2$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already produces $R^{\\prime}(q)=50-2q$, so the statement is True.`,
+Marginal revenue is the derivative of the quadratic revenue rule $R(q)=50q-q^{2}$:
+
+$$R^{\\prime}(q)=50-2q$$
+
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $R^{\\prime}(20)=10$, so the statement is True.`,
+Substitute the named output $q=20$ into marginal revenue:
+
+$$R^{\\prime}(20)=50-2\\cdot 20=50-40=10$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared height calculation is $R(20)=600$, so the statement is True.`,
+Evaluate the revenue function itself at $q=20$:
+
+$$R(20)=50\\cdot 20-20^{2}=1000-400=600$$
+
+The height on the curve matches the claim, so the statement is True.`,
       `**D.** → True
 
-Assembling the shared point $(20,600)$ with slope $10$ yields the tangent
+With the point $(20,600)$ and slope $R^{\\prime}(20)=10$, point-slope form rearranges as
 
-$$y=600+10(q-20)$$
+$$y-600=10(q-20)\\qquad\\Rightarrow\\qquad y=600+10(q-20)$$
 
-so the statement is True.`,
+which is the claimed tangent, so the statement is True.`,
       `**E.** → False
 
-The shared slope $R^{\\prime}(20)=10$ is positive, not negative, so the statement is False.`
+The slope of the tangent at $q=20$ is the derivative value
+
+$$R^{\\prime}(20)=10>0$$
+
+so the tangent rises from left to right rather than falling. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 13,
@@ -778,27 +968,39 @@ In particular the tangent slope at $q=20$ is the positive number $10$, not a neg
     tactical_explanations: [
       `**A.** → True
 
-The shared chain-rule derivative is already
+The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
 
-$$G^{\\prime}(x)=30x(3x^{2}+4)^{4}$$
+$$G^{\\prime}(x)=5(3x^{2}+4)^{4}\\cdot 6x=30x(3x^{2}+4)^{4}$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $G^{\\prime}(1)=72030$, so the statement is True.`,
+At $x=1$ one has $3x^{2}+4=7$ and $7^{4}=2401$, so
+
+$$G^{\\prime}(1)=30\\cdot 1\\cdot 7^{4}=30\\cdot 2401=72030$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $G^{\\prime}(x)=30x(3x^{2}+4)^{4}$ again and factor the common power $(3x^{2}+4)^{3}$:
 
 $$G^{\\prime\\prime}(x)=30(3x^{2}+4)^{3}(27x^{2}+4)$$
 
-exactly, so the statement is True.`,
+which matches the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $G^{\\prime\\prime}(0)=7680$, so the statement is True.`,
+Substitute $x=0$ into the second-derivative formula:
+
+$$G^{\\prime\\prime}(0)=30\\cdot 4^{3}\\cdot 4=30\\cdot 64\\cdot 4=7680$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-From the shared first derivative, $G^{\\prime}(0)=30\\cdot 0\\cdot 4^{4}=0$, not $30$, so the statement is False.`
+The first derivative carries an explicit factor of $x$:
+
+$$G^{\\prime}(0)=30\\cdot 0\\cdot 4^{4}=0$$
+
+not $30$. The claim's value is incorrect, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 14,
@@ -835,19 +1037,39 @@ and therefore $G^{\\prime\\prime}(0)=30\\cdot 4^{3}\\cdot 4=7680$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $C^{\\prime}(q)=12q^{2}-36q+40$, so the statement is True.`,
+Marginal cost is the first derivative of the cubic cost schedule. Differentiating term by term gives
+
+$$C^{\\prime}(q)=12q^{2}-36q+40$$
+
+which is exactly the claimed marginal-cost formula, so the statement is True.`,
       `**B.** → True
 
-The shared second derivative is $C^{\\prime\\prime}(q)=24q-36$, so the statement is True.`,
+Differentiate the marginal-cost polynomial once more:
+
+$$C^{\\prime\\prime}(q)=24q-36$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation $C^{\\prime\\prime}\\!\\left(\\dfrac{3}{2}\\right)=0$ matches the claim, so the statement is True.`,
+Substitute $q=\\dfrac{3}{2}$ into the second derivative:
+
+$$C^{\\prime\\prime}\\!\\left(\\dfrac{3}{2}\\right)=24\\cdot\\dfrac{3}{2}-36=36-36=0$$
+
+so the second derivative vanishes there, and the statement is True.`,
       `**D.** → False
 
-The shared value $C^{\\prime\\prime}(1)=-12$ is negative, not positive, so the statement is False.`,
+Evaluate the second derivative at $q=1$:
+
+$$C^{\\prime\\prime}(1)=24-36=-12$$
+
+which is negative rather than positive. The claim's sign is wrong, so the statement is False.`,
       `**E.** → True
 
-The shared value $C^{\\prime\\prime}(2)=12$ is positive, so the statement is True.`
+Evaluate the second derivative at $q=2$:
+
+$$C^{\\prime\\prime}(2)=48-36=12>0$$
+
+so the second derivative is positive there, and the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 15,
@@ -884,27 +1106,39 @@ so curvature changes from negative to positive across $q=\\dfrac{3}{2}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared quotient-rule derivative is already
+The complaint index is the quotient $K(t)=\\dfrac{t+4}{t+1}$. The quotient rule simplifies at once to
 
-$$K^{\\prime}(t)=-\\dfrac{3}{(t+1)^{2}}$$
+$$K^{\\prime}(t)=\\dfrac{(t+1)-(t+4)}{(t+1)^{2}}=-\\dfrac{3}{(t+1)^{2}}$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $K^{\\prime}(2)=-\\dfrac{1}{3}$, so the statement is True.`,
+Substitute the named training time $t=2$:
+
+$$K^{\\prime}(2)=-\\dfrac{3}{(2+1)^{2}}=-\\dfrac{3}{9}=-\\dfrac{1}{3}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-Because the shared derivative stays negative for all $t>0$, the index is decreasing on that domain, so the statement is True.`,
+For every $t>0$ the numerator factor $-3$ is negative and the denominator $(t+1)^{2}$ is positive, so
+
+$$K^{\\prime}(t)<0$$
+
+throughout. A negative derivative means the index is strictly decreasing, so the statement is True.`,
       `**D.** → True
 
-With $K^{\\prime}(2)=-\\dfrac{1}{3}$, one extra training hour near $t=2$ changes the index by approximately $-\\dfrac{1}{3}$, so the statement is True.`,
+The derivative measures the instantaneous change in the index per extra training hour. At $t=2$ that rate is
+
+$$K^{\\prime}(2)=-\\dfrac{1}{3}$$
+
+so one extra hour changes the index by approximately $-\\dfrac{1}{3}$, and the statement is True.`,
       `**E.** → True
 
-The shared second derivative is already
+Differentiate $K^{\\prime}(t)=-3(t+1)^{-2}$ once more:
 
-$$K^{\\prime\\prime}(t)=\\dfrac{6}{(t+1)^{3}}$$
+$$K^{\\prime\\prime}(t)=6(t+1)^{-3}=\\dfrac{6}{(t+1)^{3}}$$
 
-matching the claim, so the statement is True.`
+matching the claimed second derivative, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 16,
@@ -943,19 +1177,39 @@ $$K^{\\prime\\prime}(t)=\\dfrac{6}{(t+1)^{3}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $S^{\\prime}(x)=8(2x+5)^{3}$, so the statement is True.`,
+The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
+
+$$S^{\\prime}(x)=4(2x+5)^{3}\\cdot 2=8(2x+5)^{3}$$
+
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $S^{\\prime}(0)=1000$, so the statement is True.`,
+Substitute $x=0$, using $2\\cdot 0+5=5$:
+
+$$S^{\\prime}(0)=8\\cdot 5^{3}=8\\cdot 125=1000$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative is $S^{\\prime\\prime}(x)=48(2x+5)^{2}$, so the statement is True.`,
+Differentiate $S^{\\prime}(x)=8(2x+5)^{3}$ again:
+
+$$S^{\\prime\\prime}(x)=8\\cdot 3(2x+5)^{2}\\cdot 2=48(2x+5)^{2}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $S^{\\prime\\prime}(0)=1200$, so the statement is True.`,
+Substitute $x=0$ into the second derivative:
+
+$$S^{\\prime\\prime}(0)=48\\cdot 5^{2}=48\\cdot 25=1200$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → True
 
-The shared third derivative is already $S^{\\prime\\prime\\prime}(x)=192(2x+5)$, so the statement is True.`
+Differentiate $S^{\\prime\\prime}(x)=48(2x+5)^{2}$ once more:
+
+$$S^{\\prime\\prime\\prime}(x)=48\\cdot 2(2x+5)\\cdot 2=192(2x+5)$$
+
+matching the claimed third derivative, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 17,
@@ -990,27 +1244,39 @@ $$S^{\\prime}(0)=8\\cdot 5^{3}=1000\\qquad S^{\\prime\\prime}(0)=48\\cdot 25=120
     tactical_explanations: [
       `**A.** → True
 
-The shared product-rule derivative is already
+The engagement index is the product $E(t)=t\\cdot\\ln(t+1)$. Apply the product rule:
 
-$$E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
+$$E^{\\prime}(t)=\\ln(t+1)+t\\cdot\\dfrac{1}{t+1}=\\ln(t+1)+\\dfrac{t}{t+1}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $E^{\\prime}(1)=\\ln 2+\\dfrac{1}{2}$, so the statement is True.`,
+Substitute $t=1$ into the first derivative:
+
+$$E^{\\prime}(1)=\\ln(1+1)+\\dfrac{1}{1+1}=\\ln 2+\\dfrac{1}{2}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$ again. The second term is $1-\\dfrac{1}{t+1}$, so
 
 $$E^{\\prime\\prime}(t)=\\dfrac{1}{t+1}+\\dfrac{1}{(t+1)^{2}}$$
 
-exactly, so the statement is True.`,
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $E^{\\prime\\prime}(1)=\\dfrac{3}{4}$, so the statement is True.`,
+Substitute $t=1$ into the second derivative:
+
+$$E^{\\prime\\prime}(1)=\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-The shared first derivative keeps the term $\\dfrac{t}{t+1}$, not the constant $1$, so the claimed formula is incorrect and the statement is False.`
+The correct product-rule derivative is
+
+$$E^{\\prime}(t)=\\ln(t+1)+\\dfrac{t}{t+1}$$
+
+Replacing the second summand by the constant $1$ drops the factor $\\dfrac{t}{t+1}$ and produces a different function, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 18,
@@ -1047,23 +1313,39 @@ and therefore $E^{\\prime\\prime}(1)=\\dfrac{3}{4}$. The incorrect shortcut $E^{
     tactical_explanations: [
       `**A.** → True
 
-The shared rewriting already expresses $M$ as $(x^{2}+1)(x+3)^{-\\frac{1}{2}}$, so the statement is True.`,
+Rewrite the processing index by converting the root in the denominator into a negative power:
+
+$$M(x)=\\dfrac{x^{2}+1}{\\sqrt{x+3}}=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$$
+
+which is exactly the product form named in the claim, so the statement is True.`,
       `**B.** → True
 
-The shared derivative formula is already
+Apply the product rule to $M(x)=(x^{2}+1)(x+3)^{-\\frac{1}{2}}$ and clear over one denominator:
 
 $$M^{\\prime}(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $M^{\\prime}(1)=\\dfrac{7}{8}$, so the statement is True.`,
+Substitute $x=1$, using $x+3=4$ and $4^{\\frac{3}{2}}=8$:
+
+$$M^{\\prime}(1)=\\dfrac{3+12-1}{2\\cdot 8}=\\dfrac{14}{16}=\\dfrac{7}{8}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → False
 
-The shared correct value is $\\dfrac{7}{8}$, not $\\dfrac{13}{8}$, so the statement is False.`,
+The evaluation at $x=1$ already produced
+
+$$M^{\\prime}(1)=\\dfrac{7}{8}$$
+
+which is not equal to $\\dfrac{13}{8}$. The claim's value is incorrect, so the statement is False.`,
       `**E.** → False
 
-The shared formula still depends on $x$ through both the numerator and the denominator, so the derivative is not constant, so the statement is False.`
+The derivative formula
+
+$$M^{\\prime}(x)=\\dfrac{3x^{2}+12x-1}{2(x+3)^{\\frac{3}{2}}}$$
+
+still depends on $x$ in both the numerator and the denominator. It is therefore not a constant, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 19,
@@ -1100,23 +1382,39 @@ not $\\dfrac{13}{8}$. The derivative still depends on $x$, so it is not a consta
     tactical_explanations: [
       `**A.** → True
 
-The shared product-rule derivative already matches
+The performance index is the product $F(t)=(t^{2}+1)\\ln(t+1)$. Apply the product rule:
 
 $$F^{\\prime}(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $F^{\\prime}(1)=2\\ln 2+1$, so the statement is True.`,
+Substitute $t=1$ into the first derivative:
+
+$$F^{\\prime}(1)=2\\cdot 1\\cdot\\ln 2+\\dfrac{1+1}{2}=2\\ln 2+1$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative is exactly the claimed expression, so the statement is True.`,
+Differentiate $F^{\\prime}$ again and rearrange the rational pieces:
+
+$$F^{\\prime\\prime}(t)=2\\ln(t+1)+\\dfrac{4t}{t+1}-\\dfrac{t^{2}+1}{(t+1)^{2}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{3}{2}$, so the statement is True.`,
+Substitute $t=1$ into the second derivative:
+
+$$F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{4}{2}-\\dfrac{2}{4}=2\\ln 2+2-\\dfrac{1}{2}=2\\ln 2+\\dfrac{3}{2}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-The shared first derivative keeps the term $2t\\cdot\\ln(t+1)$; replacing it by $2t$ alone is incorrect, so the statement is False.`
+The true product-rule derivative is
+
+$$F^{\\prime}(t)=2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}$$
+
+Dropping the logarithm term produces $2t+\\dfrac{t^{2}+1}{t+1}$, which is missing the summand $2t\\ln(t+1)$. That shortcut is incorrect, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 20,
@@ -1153,19 +1451,39 @@ and therefore $F^{\\prime\\prime}(1)=2\\ln 2+\\dfrac{3}{2}$. Dropping the logari
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $\\pi^{\\prime}(q)=-3q^{2}+24q-21$, so the statement is True.`,
+Differentiate the cubic profit schedule $\\pi(q)=-q^{3}+12q^{2}-21q$ term by term:
+
+$$\\pi^{\\prime}(q)=-3q^{2}+24q-21$$
+
+which matches the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $\\pi^{\\prime}(1)=0$, so the statement is True.`,
+Substitute $q=1$ into the first derivative:
+
+$$\\pi^{\\prime}(1)=-3+24-21=0$$
+
+so the derivative vanishes at that output, matching the claim, and the statement is True.`,
       `**C.** → True
 
-The shared second derivative is $\\pi^{\\prime\\prime}(q)=-6q+24$, so the statement is True.`,
+Differentiate the first-derivative polynomial once more:
+
+$$\\pi^{\\prime\\prime}(q)=-6q+24$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → False
 
-The shared value $\\pi^{\\prime\\prime}(3)=6$ is not zero, so the statement is False.`,
+Substitute $q=3$ into the second derivative:
+
+$$\\pi^{\\prime\\prime}(3)=-6\\cdot 3+24=-18+24=6\\neq 0$$
+
+The second derivative does not vanish there, so the statement is False.`,
       `**E.** → False
 
-Because $\\pi^{\\prime}(1)=0$, the tangent slope at $q=1$ is zero rather than strictly positive, so the statement is False.`
+The tangent slope at $q=1$ is precisely the first-derivative value
+
+$$\\pi^{\\prime}(1)=0$$
+
+which is zero rather than strictly positive. Comparing that with the claim, the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 21,
@@ -1202,19 +1520,39 @@ In particular the tangent slope at $q=1$ is exactly zero, so that slope is not s
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already gives the constant marginal cost $C^{\\prime}(q)=9$, so the statement is True.`,
+Shipping cost is the linear schedule $C(q)=45+9q$. Its derivative is the constant slope
+
+$$C^{\\prime}(q)=9$$
+
+which is exactly the claimed constant marginal cost, so the statement is True.`,
       `**B.** → True
 
-Because the shared marginal cost is constantly $9$, one also has $C^{\\prime}(20)=9$, so the statement is True.`,
+Because marginal cost is constantly $9$, evaluating at any particular output — including $q=20$ — still gives
+
+$$C^{\\prime}(20)=9$$
+
+matching the claim, so the statement is True.`,
       `**C.** → False
 
-The shared average-cost formula $\\dfrac{45}{q}+9$ equals $9$ only in the limit, not for every finite $q>0$, so the statement is False.`,
+Average cost is the separate quotient
+
+$$\\dfrac{C(q)}{q}=\\dfrac{45}{q}+9$$
+
+which equals the constant marginal cost $9$ only in the limit $q\\to\\infty$, not for every finite $q>0$. The claim's identification is incorrect, so the statement is False.`,
       `**D.** → True
 
-The shared observation that $C$ is already the line of slope $9$ means the tangent at $q=10$ is $y=45+9q$, so the statement is True.`,
+A linear function is already its own tangent. With slope $9$ and intercept $45$, the tangent at $q=10$ (and at every other $q$) is simply
+
+$$y=45+9q$$
+
+matching the claim, so the statement is True.`,
       `**E.** → True
 
-The shared second derivative is the zero function, so $C^{\\prime\\prime}(q)=0$ for all $q$, so the statement is True.`
+Differentiating the constant marginal cost once more yields
+
+$$C^{\\prime\\prime}(q)=0$$
+
+for every $q$, so the statement is True.`
     ],
     difficulty_level: "1/5",
     sort_order: 22,
@@ -1251,19 +1589,39 @@ which equals marginal cost only in the limit $q\\to\\infty$, not for every finit
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $Q^{\\prime}(L)=10L^{\\frac{3}{2}}$, so the statement is True.`,
+Apply the power rule to $Q(L)=4L^{\\frac{5}{2}}$:
+
+$$Q^{\\prime}(L)=4\\cdot\\dfrac{5}{2}L^{\\frac{3}{2}}=10L^{\\frac{3}{2}}$$
+
+which matches the claimed marginal product, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $Q^{\\prime}(1)=10$, so the statement is True.`,
+Substitute $L=1$ into the marginal-product rule:
+
+$$Q^{\\prime}(1)=10\\cdot 1^{\\frac{3}{2}}=10$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $Q^{\\prime}(4)=80$, so the statement is True.`,
+Substitute $L=4$, using $4^{\\frac{3}{2}}=8$:
+
+$$Q^{\\prime}(4)=10\\cdot 8=80$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → True
 
-The shared second derivative is $Q^{\\prime\\prime}(L)=15L^{\\frac{1}{2}}$, so the statement is True.`,
+Differentiate the marginal product once more:
+
+$$Q^{\\prime\\prime}(L)=10\\cdot\\dfrac{3}{2}L^{\\frac{1}{2}}=15L^{\\frac{1}{2}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**E.** → False
 
-Because $Q^{\\prime}(L)=10L^{\\frac{3}{2}}$ increases with $L$, the marginal product does not fall as labour rises, so the statement is False.`
+Because the exponent $\\dfrac{3}{2}$ is positive,
+
+$$Q^{\\prime}(L)=10L^{\\frac{3}{2}}$$
+
+rises as $L$ rises. Comparing $Q^{\\prime}(1)=10$ with $Q^{\\prime}(4)=80$ confirms the increase, so the claim that it falls is incorrect and the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 23,
@@ -1300,19 +1658,43 @@ Because the exponent $\\dfrac{3}{2}$ is positive, $Q^{\\prime}(L)$ rises with $L
     tactical_explanations: [
       `**A.** → True
 
-The shared expansion already produces $R(q)=60q-\\dfrac{1}{2}q^{2}$, so the statement is True.`,
+Revenue is price times tickets sold. Expand with the linear fare:
+
+$$R(q)=q\\cdot\\Bigl(60-\\dfrac{1}{2}q\\Bigr)=60q-\\dfrac{1}{2}q^{2}$$
+
+which matches the claimed revenue function, so the statement is True.`,
       `**B.** → True
 
-The shared differentiation yields $R^{\\prime}(q)=60-q$, so the statement is True.`,
+Differentiate the revenue quadratic term by term:
+
+$$R^{\\prime}(q)=60-q$$
+
+matching the claimed marginal revenue, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $R^{\\prime}(20)=40$, so the statement is True.`,
+Substitute $q=20$ into marginal revenue:
+
+$$R^{\\prime}(20)=60-20=40$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → False
 
-From the shared formulas, $R^{\\prime}(q)=60-q$ while $p(q)=60-\\dfrac{1}{2}q$; the two are different, so the statement is False.`,
+Marginal revenue is $R^{\\prime}(q)=60-q$, while the fare schedule is
+
+$$p(q)=60-\\dfrac{1}{2}q$$
+
+These differ by the factor on $q$, so they are not identical at every $q$. The claim's identification is incorrect, so the statement is False.`,
       `**E.** → True
 
-The shared point $(20,1000)$ and slope $40$ assemble into the claimed tangent, so the statement is True.`
+First evaluate both height and slope at $q=20$:
+
+$$R(20)=60\\cdot 20-\\dfrac{1}{2}\\cdot 400=1000\\qquad R^{\\prime}(20)=40$$
+
+Point-slope form then gives the tangent
+
+$$y=1000+40(q-20)$$
+
+exactly as claimed, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 24,
@@ -1349,23 +1731,41 @@ Note that $R^{\\prime}(q)=60-q$ is not identical to the fare schedule $p(q)=60-\
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Rewrite delay as a power and differentiate:
 
-$$D^{\\prime}(n)=-\\dfrac{36}{(n+2)^{2}}$$
+$$D(n)=36(n+2)^{-1}$$
 
-so the statement is True.`,
+$$D^{\\prime}(n)=-36(n+2)^{-2}=-\\dfrac{36}{(n+2)^{2}}$$
+
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $D^{\\prime}(1)=-4$, so the statement is True.`,
+Substitute $n=1$ into the first derivative:
+
+$$D^{\\prime}(1)=-\\dfrac{36}{(1+2)^{2}}=-\\dfrac{36}{9}=-4$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative is $D^{\\prime\\prime}(n)=\\dfrac{72}{(n+2)^{3}}$, so the statement is True.`,
+Differentiate $D^{\\prime}(n)=-36(n+2)^{-2}$ once more:
+
+$$D^{\\prime\\prime}(n)=72(n+2)^{-3}=\\dfrac{72}{(n+2)^{3}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → False
 
-The shared formula keeps a negative leading factor, so $D^{\\prime}(n)<0$ for all $n>0$, not positive, so the statement is False.`,
+The leading factor $-36$ is negative and the denominator is positive for every $n>0$, so
+
+$$D^{\\prime}(n)<0$$
+
+throughout rather than positive. The claim's inequality is wrong, so the statement is False.`,
       `**E.** → True
 
-With $D^{\\prime}(1)=-4$, one extra agent near $n=1$ cuts delay by about $4$ minutes, so the statement is True.`
+The first derivative measures minutes of delay gained (or lost) per extra agent. At $n=1$ that rate is
+
+$$D^{\\prime}(1)=-4$$
+
+so one extra agent cuts delay by about $4$ minutes, and the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 25,
@@ -1398,23 +1798,39 @@ At $n=1$ the first derivative evaluates to $D^{\\prime}(1)=-4$, so one extra age
     tactical_explanations: [
       `**A.** → True
 
-The shared product-rule derivative is already
+The response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:
 
-$$S^{\\prime}(x)=e^{-2x}\\cdot(1-2x)$$
+$$S^{\\prime}(x)=e^{-2x}+x(-2)e^{-2x}=e^{-2x}(1-2x)$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-Substituting into the shared formula gives $S^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$, so the statement is True.`,
+Substitute $x=\\dfrac{1}{2}$ into the factored derivative:
+
+$$S^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=e^{-1}\\cdot\\Bigl(1-2\\cdot\\dfrac{1}{2}\\Bigr)=e^{-1}\\cdot 0=0$$
+
+so the derivative vanishes there, matching the claim, and the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches $S^{\\prime\\prime}(x)=e^{-2x}\\cdot(4x-4)$, so the statement is True.`,
+Differentiate $S^{\\prime}(x)=e^{-2x}(1-2x)$ again and factor $e^{-2x}$:
+
+$$S^{\\prime\\prime}(x)=e^{-2x}(4x-4)$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-From the shared formula, $S^{\\prime}(0)=e^{0}\\cdot(1-0)=1$, so the statement is True.`,
+Extending the first-derivative formula to $x=0$ gives
+
+$$S^{\\prime}(0)=e^{0}(1-0)=1$$
+
+matching the claim, so the statement is True.`,
       `**E.** → False
 
-The shared evaluation is $S^{\\prime}(1)=-e^{-2}$, not $+e^{-2}$, so the statement is False.`
+Substitute $x=1$ into the first derivative:
+
+$$S^{\\prime}(1)=e^{-2}(1-2)=-e^{-2}$$
+
+which equals $-e^{-2}$, not the positive value $e^{-2}$. The claim misses the sign, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 26,
@@ -1453,23 +1869,39 @@ $$S^{\\prime\\prime}(x)=e^{-2x}\\cdot(4x-4)$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Rewrite reach as $R(a)=5(4a+9)^{\\frac{1}{2}}$ and apply the chain rule:
 
-$$R^{\\prime}(a)=\\dfrac{10}{\\sqrt{4a+9}}$$
+$$R^{\\prime}(a)=5\\cdot\\dfrac{1}{2}(4a+9)^{-\\frac{1}{2}}\\cdot 4=\\dfrac{10}{\\sqrt{4a+9}}$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $R^{\\prime}(0)=\\dfrac{10}{3}$, so the statement is True.`,
+Substitute $a=0$:
+
+$$R^{\\prime}(0)=\\dfrac{10}{\\sqrt{9}}=\\dfrac{10}{3}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches the claimed formula, so the statement is True.`,
+Differentiate $R^{\\prime}(a)=10(4a+9)^{-\\frac{1}{2}}$ once more:
+
+$$R^{\\prime\\prime}(a)=10\\cdot\\Bigl(-\\dfrac{1}{2}\\Bigr)(4a+9)^{-\\frac{3}{2}}\\cdot 4=-\\dfrac{20}{(4a+9)^{\\frac{3}{2}}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $R^{\\prime}(4)=2$, so the statement is True.`,
+Substitute $a=4$, using $4\\cdot 4+9=25$:
+
+$$R^{\\prime}(4)=\\dfrac{10}{\\sqrt{25}}=\\dfrac{10}{5}=2$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-From the shared formula, $R^{\\prime}(a)$ tends to $0$ as $a$ grows, so it does not grow without bound, so the statement is False.`
+As $a\\to\\infty$ the denominator $\\sqrt{4a+9}$ grows without bound, so
+
+$$R^{\\prime}(a)=\\dfrac{10}{\\sqrt{4a+9}}\\to 0$$
+
+rather than exploding. The claim's comparison is incorrect, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 27,
@@ -1506,23 +1938,39 @@ As $a$ grows, the denominator $\\sqrt{4a+9}$ grows without bound, so $R^{\\prime
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Differentiate $U(t)=30\\ln(2t+1)-4t$ with the chain rule on the logarithm:
 
-$$U^{\\prime}(t)=\\dfrac{60}{2t+1}-4$$
+$$U^{\\prime}(t)=30\\cdot\\dfrac{2}{2t+1}-4=\\dfrac{60}{2t+1}-4$$
 
-so the statement is True.`,
+matching the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $U^{\\prime}(2)=8$, so the statement is True.`,
+Substitute $t=2$ into the first derivative:
+
+$$U^{\\prime}(2)=\\dfrac{60}{4+1}-4=\\dfrac{60}{5}-4=12-4=8$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches $U^{\\prime\\prime}(t)=-\\dfrac{120}{(2t+1)^{2}}$, so the statement is True.`,
+Differentiate $U^{\\prime}(t)=60(2t+1)^{-1}-4$ once more:
+
+$$U^{\\prime\\prime}(t)=-60(2t+1)^{-2}\\cdot 2=-\\dfrac{120}{(2t+1)^{2}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $U^{\\prime}(0)=56$, so the statement is True.`,
+Extending the first-derivative formula to $t=0$ gives
+
+$$U^{\\prime}(0)=\\dfrac{60}{1}-4=56$$
+
+matching the claim, so the statement is True.`,
       `**E.** → False
 
-The shared critical-point calculation yields $t=7$, not $t=\\dfrac{7}{2}$, so the statement is False.`
+Setting $U^{\\prime}(t)=0$ yields $\\dfrac{60}{2t+1}=4$, hence $2t+1=15$ and
+
+$$t=7$$
+
+not $t=\\dfrac{7}{2}$. The claimed root is wrong, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 28,
@@ -1555,19 +2003,39 @@ Evaluating at the endpoints of interest gives $U^{\\prime}(0)=56$ and $U^{\\prim
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $G^{\\prime}(x)=20(4x+1)^{4}$, so the statement is True.`,
+The quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:
+
+$$G^{\\prime}(x)=5(4x+1)^{4}\\cdot 4=20(4x+1)^{4}$$
+
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $G^{\\prime}(0)=20$, so the statement is True.`,
+Substitute $x=0$:
+
+$$G^{\\prime}(0)=20\\cdot 1^{4}=20$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative is $G^{\\prime\\prime}(x)=320(4x+1)^{3}$, so the statement is True.`,
+Differentiate $G^{\\prime}(x)=20(4x+1)^{4}$ again:
+
+$$G^{\\prime\\prime}(x)=20\\cdot 4(4x+1)^{3}\\cdot 4=320(4x+1)^{3}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $G^{\\prime\\prime}(0)=320$, so the statement is True.`,
+Substitute $x=0$ into the second derivative:
+
+$$G^{\\prime\\prime}(0)=320\\cdot 1^{3}=320$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → True
 
-Substituting $x=1$ into the shared first derivative gives $G^{\\prime}(1)=20\\cdot 5^{4}$, so the statement is True.`
+Substitute $x=1$, using $4\\cdot 1+1=5$:
+
+$$G^{\\prime}(1)=20\\cdot 5^{4}$$
+
+exactly the expression named in the claim, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 29,
@@ -1606,23 +2074,39 @@ $$G^{\\prime}(0)=20\\qquad G^{\\prime\\prime}(0)=320\\qquad G^{\\prime}(1)=20\\c
     tactical_explanations: [
       `**A.** → True
 
-The shared product-rule stage before clearing matches the claimed two-term expression, so the statement is True.`,
+The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule:
+
+$$P^{\\prime}(x)=2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}=2x\\sqrt{3x+1}+\\dfrac{3x^{2}}{2\\sqrt{3x+1}}$$
+
+matching the claimed unsimplified formula, so the statement is True.`,
       `**B.** → True
 
-The shared single-fraction form is already
+Clear the two pieces over the common denominator $2\\sqrt{3x+1}$:
 
-$$P^{\\prime}(x)=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
+$$P^{\\prime}(x)=\\dfrac{4x(3x+1)+3x^{2}}{2\\sqrt{3x+1}}=\\dfrac{15x^{2}+4x}{2\\sqrt{3x+1}}$$
 
-so the statement is True.`,
+which is the claimed combined form, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $P^{\\prime}(1)=\\dfrac{19}{4}$, so the statement is True.`,
+Substitute $x=1$ into the combined derivative:
+
+$$P^{\\prime}(1)=\\dfrac{15+4}{2\\sqrt{4}}=\\dfrac{19}{2\\cdot 2}=\\dfrac{19}{4}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → True
 
-Substituting $x=0$ into the shared formula yields $P^{\\prime}(0)=0$, so the statement is True.`,
+Every term of the combined derivative carries a factor of $x$:
+
+$$P^{\\prime}(0)=\\dfrac{0}{2\\sqrt{1}}=0$$
+
+so the derivative vanishes at the origin, and the statement is True.`,
       `**E.** → False
 
-The shared correct value is $\\dfrac{19}{4}$, not $\\dfrac{15}{2}$, so the statement is False.`
+The evaluation at $x=1$ already produced
+
+$$P^{\\prime}(1)=\\dfrac{19}{4}$$
+
+Since $\\dfrac{15}{2}=\\dfrac{30}{4}\\neq\\dfrac{19}{4}$, the claimed value is wrong and the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 30,
@@ -1659,23 +2143,39 @@ Hence $P^{\\prime}(0)=0$ and $P^{\\prime}(1)=\\dfrac{19}{4}$, which is not equal
     tactical_explanations: [
       `**A.** → True
 
-The shared unsimplified quotient-rule form matches the claim exactly, so the statement is True.`,
+The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes
+
+$$K^{\\prime}(x)=\\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}$$
+
+which is exactly the unsimplified form named in the claim, so the statement is True.`,
       `**B.** → True
 
-The shared factored form is already
+Factor $(2x-1)^{2}$ from the numerator and simplify the remaining linear factor:
 
-$$K^{\\prime}(x)=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
+$$K^{\\prime}(x)=\\dfrac{(2x-1)^{2}\\bigl(6(x+4)-(2x-1)\\bigr)}{(x+4)^{2}}=\\dfrac{(2x-1)^{2}(4x+25)}{(x+4)^{2}}$$
 
-so the statement is True.`,
+matching the claimed factored form, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $K^{\\prime}(1)=\\dfrac{29}{25}$, so the statement is True.`,
+Substitute $x=1$ into the factored derivative:
+
+$$K^{\\prime}(1)=\\dfrac{(2-1)^{2}(4+25)}{(1+4)^{2}}=\\dfrac{1\\cdot 29}{25}=\\dfrac{29}{25}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**D.** → True
 
-From the shared factored formula, the factor $(2x-1)^{2}$ vanishes at $x=\\dfrac{1}{2}$, so $K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$, so the statement is True.`,
+At $x=\\dfrac{1}{2}$ the factor $2x-1$ vanishes, so the numerator of $K^{\\prime}$ is zero while the denominator stays positive:
+
+$$K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$$
+
+matching the claim, so the statement is True.`,
       `**E.** → False
 
-The shared correct value is $\\dfrac{29}{25}$, not $\\dfrac{7}{5}$, so the statement is False.`
+The evaluation at $x=1$ already produced
+
+$$K^{\\prime}(1)=\\dfrac{29}{25}$$
+
+Since $\\dfrac{7}{5}=\\dfrac{35}{25}\\neq\\dfrac{29}{25}$, the claimed value is wrong and the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 31,
@@ -1712,23 +2212,39 @@ Hence $K^{\\prime}\\!\\left(\\dfrac{1}{2}\\right)=0$ and $K^{\\prime}(1)=\\dfrac
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $L^{\\prime}(x)=\\dfrac{2x}{x^{2}+9}$, so the statement is True.`,
+Differentiate the composition $L(x)=\\ln(x^{2}+9)$ with the chain rule:
+
+$$L^{\\prime}(x)=\\dfrac{1}{x^{2}+9}\\cdot 2x=\\dfrac{2x}{x^{2}+9}$$
+
+matching the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $L^{\\prime}(3)=\\dfrac{1}{3}$, so the statement is True.`,
+Substitute $x=3$ into the first derivative:
+
+$$L^{\\prime}(3)=\\dfrac{2\\cdot 3}{9+9}=\\dfrac{6}{18}=\\dfrac{1}{3}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $L^{\\prime}(x)=\\dfrac{2x}{x^{2}+9}$ with the quotient rule:
 
-$$L^{\\prime\\prime}(x)=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
+$$L^{\\prime\\prime}(x)=\\dfrac{2(x^{2}+9)-2x\\cdot 2x}{(x^{2}+9)^{2}}=\\dfrac{18-2x^{2}}{(x^{2}+9)^{2}}$$
 
-exactly, so the statement is True.`,
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $L^{\\prime\\prime}(0)=\\dfrac{2}{9}$, so the statement is True.`,
+Substitute $x=0$ into the second derivative:
+
+$$L^{\\prime\\prime}(0)=\\dfrac{18}{9^{2}}=\\dfrac{18}{81}=\\dfrac{2}{9}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-From the shared first derivative, $L^{\\prime}(0)=0$, not $1$, so the statement is False.`
+Substitute $x=0$ into the first derivative:
+
+$$L^{\\prime}(0)=\\dfrac{0}{9}=0$$
+
+which is not equal to $1$. The claim's value is incorrect, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 32,
@@ -1765,23 +2281,39 @@ and therefore $L^{\\prime\\prime}(0)=\\dfrac{2}{9}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $M^{\\prime}(x)=3x\\sqrt{x^{2}+1}$, so the statement is True.`,
+Differentiate $M(x)=(x^{2}+1)^{\\frac{3}{2}}$ with the chain rule:
+
+$$M^{\\prime}(x)=\\dfrac{3}{2}(x^{2}+1)^{\\frac{1}{2}}\\cdot 2x=3x\\sqrt{x^{2}+1}$$
+
+matching the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $M^{\\prime}(0)=0$, so the statement is True.`,
+The first derivative carries an explicit factor of $x$:
+
+$$M^{\\prime}(0)=3\\cdot 0\\cdot\\sqrt{1}=0$$
+
+so the derivative vanishes at the origin, matching the claim, and the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $M^{\\prime}(x)=3x(x^{2}+1)^{\\frac{1}{2}}$ with the product rule and clear the common root:
 
 $$M^{\\prime\\prime}(x)=\\dfrac{6x^{2}+3}{\\sqrt{x^{2}+1}}$$
 
-exactly, so the statement is True.`,
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $M^{\\prime\\prime}(0)=3$, so the statement is True.`,
+Substitute $x=0$ into the second derivative:
+
+$$M^{\\prime\\prime}(0)=\\dfrac{3}{\\sqrt{1}}=3$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-From the shared formula, $M^{\\prime}(1)=3\\sqrt{2}$, not $3$, so the statement is False.`
+Substitute $x=1$ into the first derivative:
+
+$$M^{\\prime}(1)=3\\cdot 1\\cdot\\sqrt{2}=3\\sqrt{2}$$
+
+which is not the bare value $3$. The claim drops the square-root factor, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 33,
@@ -1818,27 +2350,39 @@ and therefore $M^{\\prime\\prime}(0)=3$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+The momentum index is the product $F(x)=e^{3x}(x^{2}+1)$. Apply the product rule and factor $e^{3x}$:
 
-$$F^{\\prime}(x)=e^{3x}\\cdot(3x^{2}+2x+3)$$
+$$F^{\\prime}(x)=3e^{3x}(x^{2}+1)+e^{3x}\\cdot 2x=e^{3x}(3x^{2}+2x+3)$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $F^{\\prime}(0)=3$, so the statement is True.`,
+Substitute $x=0$ into the first derivative:
+
+$$F^{\\prime}(0)=e^{0}(0+0+3)=3$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches
+Differentiate $F^{\\prime}(x)=e^{3x}(3x^{2}+2x+3)$ again and factor $e^{3x}$:
 
-$$F^{\\prime\\prime}(x)=e^{3x}\\cdot(9x^{2}+12x+11)$$
+$$F^{\\prime\\prime}(x)=e^{3x}(9x^{2}+12x+11)$$
 
-exactly, so the statement is True.`,
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $F^{\\prime\\prime}(0)=11$, so the statement is True.`,
+Substitute $x=0$ into the second derivative:
+
+$$F^{\\prime\\prime}(0)=e^{0}\\cdot 11=11$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-The shared correct value is $F^{\\prime}(0)=3$, not $1$, so the statement is False.`
+The evaluation at $x=0$ already produced
+
+$$F^{\\prime}(0)=e^{0}(0+0+3)=3$$
+
+which is not equal to $1$. The claim's value is incorrect, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 34,
@@ -1875,23 +2419,39 @@ and therefore $F^{\\prime\\prime}(0)=11$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared derivative formula is already
+Rewrite $H(x)$ as a product of powers and differentiate; after simplifying one obtains
 
 $$H^{\\prime}(x)=\\dfrac{9}{2\\sqrt{2x+1}\\,(x+5)^{\\frac{3}{2}}}$$
 
-so the statement is True.`,
+which matches the claimed formula, so the statement is True.`,
       `**B.** → True
 
-Substituting $x=2$ into the shared formula reproduces the claimed expression, so the statement is True.`,
+Substitute $x=2$, using $2x+1=5$ and $x+5=7$:
+
+$$H^{\\prime}(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
+
+exactly the value named in the claim, so the statement is True.`,
       `**C.** → True
 
-The shared rewriting already expresses $H$ as $(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$, so the statement is True.`,
+Converting the square root of a quotient into a product of powers gives
+
+$$H(x)=\\sqrt{\\dfrac{2x+1}{x+5}}=(2x+1)^{\\frac{1}{2}}(x+5)^{-\\frac{1}{2}}$$
+
+which is exactly the rewriting named in the claim, so the statement is True.`,
       `**D.** → False
 
-The shared derivative stays positive for every $x>0$, so $H^{\\prime}$ is not negative, so the statement is False.`,
+In the derivative formula the numerator factor $9$ is positive and every remaining factor stays positive for $x>0$, so
+
+$$H^{\\prime}(x)>0$$
+
+rather than negative. The claim's inequality is wrong, so the statement is False.`,
       `**E.** → False
 
-The shared exact value at $x=2$ keeps the factors $\\sqrt{5}$ and $7^{\\frac{3}{2}}$; it is not equal to $\\dfrac{9}{70}$, so the statement is False.`
+The exact value at $x=2$ is
+
+$$H^{\\prime}(2)=\\dfrac{9}{2\\sqrt{5}\\cdot 7^{\\frac{3}{2}}}$$
+
+which is not equal to the simplified fraction $\\dfrac{9}{70}$. The claim's numerical reduction is incorrect, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 35,
@@ -1928,23 +2488,43 @@ which is not equal to the simplified fraction $\\dfrac{9}{70}$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared derivative is already
+Differentiate $N(x)=x(x^{2}+4)^{-\\frac{1}{2}}$ with the product rule and simplify:
+
+$$N^{\\prime}(x)=\\dfrac{(x^{2}+4)-x^{2}}{(x^{2}+4)^{\\frac{3}{2}}}=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
+
+matching the claimed formula, so the statement is True.`,
+      `**B.** → True
+
+Substitute $x=0$, using $4^{\\frac{3}{2}}=8$:
+
+$$N^{\\prime}(0)=\\dfrac{4}{8}=\\dfrac{1}{2}$$
+
+The computed value matches the claim, so the statement is True.`,
+      `**C.** → True
+
+Substitute $x=2$ into the simplified derivative. First $x^{2}+4=8$ and
+
+$$8^{\\frac{3}{2}}=(\\sqrt{8})^{3}=(2\\sqrt{2})^{3}=16\\sqrt{2}$$
+
+so
+
+$$N^{\\prime}(2)=\\dfrac{4}{16\\sqrt{2}}=\\dfrac{1}{4\\sqrt{2}}$$
+
+The computed value matches the claim, so the statement is True.`,
+      `**D.** → False
+
+The simplified derivative
 
 $$N^{\\prime}(x)=\\dfrac{4}{(x^{2}+4)^{\\frac{3}{2}}}$$
 
-so the statement is True.`,
-      `**B.** → True
-
-The shared evaluation gives $N^{\\prime}(0)=\\dfrac{1}{2}$, so the statement is True.`,
-      `**C.** → True
-
-The shared evaluation gives $N^{\\prime}(2)=\\dfrac{1}{4\\sqrt{2}}$, so the statement is True.`,
-      `**D.** → False
-
-The shared formula stays positive for every real $x$, so $N^{\\prime}$ does not change sign at $x=0$, so the statement is False.`,
+has a positive numerator and a positive denominator for every real $x$, so it never changes sign. The claim is therefore incorrect, and the statement is False.`,
       `**E.** → True
 
-The shared evaluation gives $N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$, so the statement is True.`
+Substitute $x=1$, using $1+4=5$:
+
+$$N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}}$$
+
+exactly as claimed, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 36,
@@ -1979,19 +2559,39 @@ $$N^{\\prime}(0)=\\dfrac{1}{2}\\qquad N^{\\prime}(1)=\\dfrac{4}{5^{\\frac{3}{2}}
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already $C^{\\prime}(q)=3q^{2}-12q+20$, so the statement is True.`,
+Differentiate the cubic cost $C(q)=q^{3}-6q^{2}+20q+50$ term by term:
+
+$$C^{\\prime}(q)=3q^{2}-12q+20$$
+
+matching the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared second derivative is $C^{\\prime\\prime}(q)=6q-12$, so the statement is True.`,
+Differentiate the first-derivative polynomial once more:
+
+$$C^{\\prime\\prime}(q)=6q-12$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation gives $C^{\\prime\\prime}(2)=0$, so the statement is True.`,
+Substitute $q=2$ into the second derivative:
+
+$$C^{\\prime\\prime}(2)=12-12=0$$
+
+so the second derivative vanishes there, matching the claim, and the statement is True.`,
       `**D.** → False
 
-The shared value $C^{\\prime\\prime}(1)=-6$ is negative, so $C^{\\prime\\prime}(1)>0$ fails, so the statement is False.`,
+Evaluate the second derivative at $q=1$:
+
+$$C^{\\prime\\prime}(1)=6-12=-6<0$$
+
+so the inequality $C^{\\prime\\prime}(1)>0$ fails. Comparing that with the claim, the statement is False.`,
       `**E.** → True
 
-The shared evaluation gives $C^{\\prime}(2)=8$, so the statement is True.`
+Substitute $q=2$ into the first derivative:
+
+$$C^{\\prime}(2)=3\\cdot 4-12\\cdot 2+20=12-24+20=8$$
+
+The computed value matches the claim, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 37,
@@ -2028,23 +2628,39 @@ so the second derivative vanishes at $q=2$ while remaining negative just to its 
     tactical_explanations: [
       `**A.** → True
 
-The shared fully factored derivative is already
+The warranty score is the product $W(x)=(2x+1)^{2}(x-3)^{3}$. After the product rule and factoring $(2x+1)(x-3)^{2}$ one obtains
 
 $$W^{\\prime}(x)=(2x+1)(x-3)^{2}(10x-9)$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-From the shared formula, the factor $(x-3)^{2}$ vanishes at $x=3$, so $W^{\\prime}(3)=0$, so the statement is True.`,
+The squared factor $(x-3)^{2}$ vanishes at $x=3$, so the whole product is zero:
+
+$$W^{\\prime}(3)=0$$
+
+matching the claim, so the statement is True.`,
       `**C.** → True
 
-From the shared formula, the factor $(10x-9)$ vanishes at $x=\\dfrac{9}{10}$, so $W^{\\prime}\\!\\left(\\dfrac{9}{10}\\right)=0$, so the statement is True.`,
+The linear factor $10x-9$ vanishes at $x=\\dfrac{9}{10}$, so
+
+$$W^{\\prime}\\!\\left(\\dfrac{9}{10}\\right)=0$$
+
+as well, matching the claim, and the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $W^{\\prime}(0)=-81$, so the statement is True.`,
+Substitute $x=0$ into the factored derivative:
+
+$$W^{\\prime}(0)=(1)(-3)^{2}(-9)=1\\cdot 9\\cdot(-9)=-81$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-The shared full derivative keeps three factors; the truncated expression $4(2x+1)(x-3)^{3}$ alone omits a product-rule term, so the statement is False.`
+Differentiating only the first factor as if the second were constant would produce
+
+$$4(2x+1)(x-3)^{3}$$
+
+which misses the contribution from differentiating $(x-3)^{3}$. That incomplete expression is not $W^{\\prime}$, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 38,
@@ -2081,23 +2697,39 @@ Keeping only the first-factor contribution $4(2x+1)(x-3)^{3}$ omits the second p
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative is already
+Rewrite $V(x)=\\ln(3x+1)-\\ln(x+2)$ and differentiate:
 
-$$V^{\\prime}(x)=\\dfrac{5}{(3x+1)(x+2)}$$
+$$V^{\\prime}(x)=\\dfrac{3}{3x+1}-\\dfrac{1}{x+2}=\\dfrac{5}{(3x+1)(x+2)}$$
 
-so the statement is True.`,
+matching the claimed first derivative, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $V^{\\prime}(0)=\\dfrac{5}{2}$, so the statement is True.`,
+Extending the formula to $x=0$ gives
+
+$$V^{\\prime}(0)=\\dfrac{5}{1\\cdot 2}=\\dfrac{5}{2}$$
+
+matching the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches the claimed formula exactly, so the statement is True.`,
+Differentiate the quotient form of $V^{\\prime}$ again; after clearing the denominator one obtains
+
+$$V^{\\prime\\prime}(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation gives $V^{\\prime}(1)=\\dfrac{5}{12}$, so the statement is True.`,
+Substitute $x=1$ into the first derivative:
+
+$$V^{\\prime}(1)=\\dfrac{5}{(3+1)(1+2)}=\\dfrac{5}{4\\cdot 3}=\\dfrac{5}{12}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**E.** → False
 
-Because the shared first derivative stays strictly positive for every $x>0$, it never equals zero on that domain, so the statement is False.`
+For every $x>0$ the numerator $5$ is positive and both linear factors in the denominator stay positive, so
+
+$$V^{\\prime}(x)=\\dfrac{5}{(3x+1)(x+2)}>0$$
+
+and never hits zero. There is therefore no such root, and the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 39,
@@ -2136,23 +2768,39 @@ $$V^{\\prime\\prime}(x)=-\\dfrac{5(6x+7)}{(3x+1)^{2}(x+2)^{2}}$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared first derivative already matches
+The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule:
 
-$$Z^{\\prime}(t)=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
+$$Z^{\\prime}(t)=2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}=2t\\cdot\\ln(2t+1)+\\dfrac{2t^{2}}{2t+1}$$
 
-so the statement is True.`,
+matching the claimed formula, so the statement is True.`,
       `**B.** → True
 
-The shared evaluation gives $Z^{\\prime}(1)=2\\ln 3+\\dfrac{2}{3}$, so the statement is True.`,
+Substitute $t=1$ into the first derivative:
+
+$$Z^{\\prime}(1)=2\\ln(3)+\\dfrac{2}{3}$$
+
+The computed value matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative matches the claimed three-term expression exactly, so the statement is True.`,
+Differentiate $Z^{\\prime}$ again and rearrange the rational pieces to obtain
+
+$$Z^{\\prime\\prime}(t)=2\\ln(2t+1)+\\dfrac{4t}{2t+1}+\\dfrac{4t^{2}+4t}{(2t+1)^{2}}$$
+
+matching the claimed second derivative, so the statement is True.`,
       `**D.** → False
 
-The shared correct value is $2\\ln 3+\\dfrac{2}{3}$, not $2\\ln 3+1$, so the statement is False.`,
+The correct evaluation at $t=1$ is
+
+$$Z^{\\prime}(1)=2\\ln 3+\\dfrac{2}{3}$$
+
+Replacing the second summand by $1$ produces the different number $2\\ln 3+1$, so the claim is incorrect and the statement is False.`,
       `**E.** → True
 
-The shared evaluation gives $Z^{\\prime\\prime}(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$, so the statement is True.`
+Substitute $t=1$ into the second-derivative formula:
+
+$$Z^{\\prime\\prime}(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{4+4}{9}=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$
+
+exactly as claimed, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 40,
@@ -2191,29 +2839,41 @@ $$Z^{\\prime\\prime}(1)=2\\ln 3+\\dfrac{4}{3}+\\dfrac{8}{9}$$`,
     tactical_explanations: [
       `**A.** → True
 
-From the shared setup, the local extra-cost question is answered by the derivative of total cost, not by the per-loaf average $A(Q)$.
+Management wants the approximate extra cost of one more loaf, and that local rate of change is exactly the derivative of total cost.
 
-Management therefore needs $C^{\\prime}(Q)$, not $A(Q)$, so the statement is True.`,
+Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers a different question — euros per loaf already baked — so it is not the right object.
+
+The quantity that answers the management question is therefore $C^{\\prime}(Q)$, not $A(Q)$, so the statement is True.`,
       `**B.** → False
 
-The overview already separates the two derivatives: differentiating the quotient $A$ tracks how the average moves, while marginal cost is $C^{\\prime}(Q)$.
+Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
 
-Those are different functions in general, so differentiating $A$ is not computing marginal cost, so the statement is False.`,
+Marginal cost is defined as the derivative of total cost:
+
+$$C^{\\prime}(Q)$$
+
+Those two derivatives are different functions in general, and differentiating $A$ is not the same as computing marginal cost, so the statement is False.`,
       `**C.** → True
 
-As noted in the shared solution, $C^{\\prime}(Q)$ is precisely the slope of the total-cost curve at the named output.
+On a graph of total cost against output, the derivative at a named point is the slope of the tangent there.
 
-Economists call that slope marginal cost, so the statement is True.`,
+Economists call that slope marginal cost, and marginal cost at a named output is precisely the slope of the total-cost curve at that output, so the statement is True.`,
       `**D.** → True
 
-Plug the reported numbers into the linear approximation from the overview with $\\Delta Q=1$:
-$$C(121)-C(120)\\approx 0.80.$$
-Each extra loaf near $120$ therefore adds about $0.80$ euros to total cost, so the statement is True.`,
+The linear approximation says a small change in output changes total cost by about the derivative times that change:
+
+$$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$$
+
+With $\\Delta Q=1$ near $Q=120$ and $C^{\\prime}(120)=0.80$,
+
+$$C(121)-C(120)\\approx 0.80$$
+
+Each extra loaf near $120$ adds about $0.80$ euros to total cost, so the statement is True.`,
       `**E.** → False
 
-The overview stresses that dividing by $Q$ only produces the average, not the slope. Equality $A(120)=C^{\\prime}(120)$ holds only at special outputs, not automatically.
+Average cost already divides by $Q$, but that only produces the per-unit average, not the slope of total cost.
 
-In general $A(120)$ need not equal marginal cost at $120$, so the statement is False.`
+The two coincide only at special outputs (for instance where average cost is minimized); in general $A(120)$ need not equal $C^{\\prime}(120)$, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 41,
@@ -2244,27 +2904,33 @@ so with $\\Delta Q=1$ and $C^{\\prime}(120)=0.80$ one gets about $0.80$ euros of
     tactical_explanations: [
       `**A.** → True
 
-The shared reading of $C^{\\prime}(50)=3$ is about $3$ million euros per extra percentage point near a $50\\%$ cleanup.
+The derivative $C^{\\prime}(50)$ is the instantaneous rate of change of cleanup cost with respect to the percentage removed.
 
-That is exactly the claim's wording, so the statement is True.`,
+Its value $3$ therefore means about $3$ million euros per extra percentage point near a $50\\%$ cleanup, so the statement is True.`,
       `**B.** → False
 
-The overview separates the rate $C^{\\prime}(50)$ from the stock $C(50)$. The report $3$ is millions of euros per percentage point, not the total cost of a $50\\%$ cleanup.
+The total cost of a $50\\%$ cleanup is the function value $C(50)$, a stock of spending.
 
-The claim confuses those two objects, so the statement is False.`,
+The report $C^{\\prime}(50)=3$ is a rate — millions of euros per percentage point — not that stock, so the statement is False.`,
       `**C.** → True
 
-The precise local meaning written in the overview is precisely
+The precise local meaning of the derivative is the linear approximation for small steps:
+
+$$C(50+\\Delta x)-C(50)\\approx C^{\\prime}(50)\\,\\Delta x$$
+
 $$C(50+\\Delta x)-C(50)\\approx 3\\cdot\\Delta x$$
-for small $\\Delta x$, so the statement is True.`,
+
+which is exactly the reading named in the claim, so the statement is True.`,
       `**D.** → True
 
-The one-unit reading $\\Delta x=1$ in the shared solution says the extra cost from $50\\%$ to $51\\%$ is about $3$ million euros.
+Elementary readings often take a one-unit step $\\Delta x=1$ and say the extra cost of going from $50\\%$ to $51\\%$ is about $3$ million euros.
 
-That is a rough one-unit version of the same derivative, so the statement is True.`,
+That is a convenient one-unit version of the same derivative, so the statement is True.`,
       `**E.** → True
 
-The units recorded in the overview are millions of euros per percentage point of cleanup, which is exactly a marginal cost with respect to the cleanup percentage, so the statement is True.`
+Here the independent variable is the cleanup percentage, and the units of $C^{\\prime}(50)$ are millions of euros per percentage point.
+
+That is precisely a marginal cost with respect to the cleanup percentage, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 42,
@@ -2293,27 +2959,33 @@ for small $\\Delta x$. Taking the convenient one-unit step $\\Delta x=1$ says it
     tactical_explanations: [
       `**A.** → True
 
-The overview identifies marginal profit with $P^{\\prime}(Q)$, the derivative of profit, not with the slope of the price schedule alone.
+Marginal profit means the rate of change of profit, so the function to differentiate is
 
-Marginal profit is therefore $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$, so the statement is True.`,
+$$P(Q)=R(Q)-C(Q)$$
+
+The price schedule $p(Q)$ alone is not profit, and marginal profit is $P^{\\prime}(Q)$, not $p^{\\prime}(Q)$, so the statement is True.`,
       `**B.** → False
 
-As the shared solution notes, $p^{\\prime}(Q)$ tracks only the posted price, while marginal revenue is $R^{\\prime}(Q)$ from the product $Q\\cdot p(Q)$.
+Differentiating only $p(Q)$ tracks how the posted price moves with quantity.
 
-Differentiating only $p$ does not yield marginal revenue, so the statement is False.`,
+Marginal revenue is the derivative of revenue $R(Q)=Q\\cdot p(Q)$, which also accounts for selling more cups, and $p^{\\prime}(Q)$ is not marginal revenue, so the statement is False.`,
       `**C.** → True
 
-The overview already records that under a downward-sloping schedule the combined quantity-and-price effect $R^{\\prime}(Q)$ generally differs from $p(Q)$.
+Revenue is price times quantity. When quantity rises along a downward-sloping schedule, price usually falls, so the extra euros from one more cup are not simply the current price $p(Q)$.
 
-That is exactly the claim, so the statement is True.`,
+That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $p(Q)$, so the statement is True.`,
       `**D.** → True
 
-From the shared linear reading, one extra cup changes profit by about $P^{\\prime}(Q)$, so the café should look at $P^{\\prime}(Q)$, so the statement is True.`,
+A small increase in cups changes profit by about $P^{\\prime}(Q)\\,\\Delta Q$.
+
+For one extra cup near the current output, the relevant number is therefore $P^{\\prime}(Q)$, so the statement is True.`,
       `**E.** → True
 
-Profit is $P=R-C$, and the overview already differentiates term by term to
+Profit is the difference $P=R-C$. Differentiating term by term where the derivatives exist gives
+
 $$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
-wherever the derivatives exist, so the statement is True.`
+
+at every such output, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 43,
@@ -2342,19 +3014,35 @@ Marginal profit is $P^{\\prime}$, not $p^{\\prime}$. Differentiating $p$ alone o
     tactical_explanations: [
       `**A.** → True
 
-From $P^{\\prime}=R^{\\prime}-C^{\\prime}$ in the overview, the inequality $R^{\\prime}>C^{\\prime}$ forces $P^{\\prime}>0$ at that output, so the statement is True.`,
+Marginal profit is the difference of the two derivatives:
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
+
+Whenever $R^{\\prime}(Q)>C^{\\prime}(Q)$, that difference is positive, and $P^{\\prime}(Q)>0$ there, so the statement is True.`,
       `**B.** → True
 
-The shared sign chart already says $P^{\\prime}>0$ means a small increase in output raises profit, so the statement is True.`,
+A positive marginal profit means the profit function is locally increasing.
+
+Hence if $R^{\\prime}(Q)>C^{\\prime}(Q)$, then $P^{\\prime}(Q)>0$ and a small increase in output raises profit, so the statement is True.`,
       `**C.** → False
 
-When $R^{\\prime}<C^{\\prime}$ the overview gives $P^{\\prime}<0$, so a small increase lowers profit rather than raising it, so the statement is False.`,
+If $R^{\\prime}(Q)<C^{\\prime}(Q)$, then
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)<0$$
+
+A negative derivative means profit is locally decreasing, and a small increase in output lowers profit rather than raising it, so the statement is False.`,
       `**D.** → True
 
-The overview equates $R^{\\prime}=C^{\\prime}$ with $P^{\\prime}=0$ directly from $P^{\\prime}=R^{\\prime}-C^{\\prime}$, so the statement is True.`,
+Setting the profit derivative to zero is
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
+
+which rearranges at once to $R^{\\prime}(Q)=C^{\\prime}(Q)$, and the equality of marginal revenue and marginal cost is exactly $P^{\\prime}(Q)=0$, so the statement is True.`,
       `**E.** → False
 
-That equality is about derivatives (slopes), not about the levels $R(Q)$ and $C(Q)$. Total revenue need not equal total cost when $R^{\\prime}=C^{\\prime}$, so the statement is False.`
+The equality $R^{\\prime}(Q)=C^{\\prime}(Q)$ equates two rates of change — extra revenue and extra cost — not the levels of total revenue and total cost.
+
+Total revenue equals total cost only when $R(Q)=C(Q)$, which is a different condition, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 44,
@@ -2385,19 +3073,31 @@ is exactly $P^{\\prime}(Q)=0$; it says nothing about whether the levels $R(Q)$ a
     tactical_explanations: [
       `**A.** → True
 
-The overview rewrites $P^{\\prime}(Q^{\\ast})=0$ as $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$, so the statement is True.`,
+Zero marginal profit means
+
+$$P^{\\prime}(Q^{\\ast})=R^{\\prime}(Q^{\\ast})-C^{\\prime}(Q^{\\ast})=0$$
+
+hence $R^{\\prime}(Q^{\\ast})=C^{\\prime}(Q^{\\ast})$: at $Q^{\\ast}$, marginal revenue equals marginal cost, so the statement is True.`,
       `**B.** → False
 
-The shared solution stresses that a zero slope does not force the height $P(Q^{\\ast})$ to be zero. Total profit need not vanish, so the statement is False.`,
+A zero slope of profit says only that profit is locally stationary; it says nothing about the height $P(Q^{\\ast})$.
+
+The firm can earn a large positive total profit (or a large loss) while $P^{\\prime}(Q^{\\ast})=0$, and it does not necessarily earn zero total profit, so the statement is False.`,
       `**C.** → True
 
-The overview already notes that $R(Q^{\\ast})$ need not equal $C(Q^{\\ast})$ when only $P^{\\prime}=0$ is known, so the statement is True.`,
+Total revenue equals total cost only when $R(Q^{\\ast})=C(Q^{\\ast})$.
+
+The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives, not those levels, and total revenue need not equal total cost at $Q^{\\ast}$, so the statement is True.`,
       `**D.** → True
 
-A lone critical point can be a max or a min; the overview says the first-order condition alone does not decide which, so the statement is True.`,
+A critical point with $P^{\\prime}(Q^{\\ast})=0$ can be a local maximum, a local minimum, or neither.
+
+The first-order condition alone does not classify which, and it does not tell whether profit is maximized or minimized, so the statement is True.`,
       `**E.** → True
 
-The sign-change criterion recorded in the shared solution — $P$ rises then falls at $Q^{\\ast}$ — is exactly the definition of a local profit maximum, so the statement is True.`
+If $P^{\\prime}$ changes from positive to negative at $Q^{\\ast}$, profit switches from rising to falling there.
+
+That sign change marks a local profit maximum, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 45,
@@ -2426,19 +3126,25 @@ It constrains the slope of profit, not the height: the stock $P(Q^{\\ast})$ may 
     tactical_explanations: [
       `**A.** → True
 
-The overview defines marginal utility as $U^{\\prime}(x)$, so the statement is True.`,
+Marginal utility is the instantaneous rate of change of satisfaction with respect to leisure hours, which is exactly the derivative $U^{\\prime}(x)$, so the statement is True.`,
       `**B.** → True
 
-From the shared sign reading, $U^{\\prime}(x)>0$ means a little extra leisure raises satisfaction near that $x$, so the statement is True.`,
+A positive derivative means the utility function is locally increasing.
+
+Hence if $U^{\\prime}(x)>0$, a little extra leisure raises satisfaction near that $x$, so the statement is True.`,
       `**C.** → False
 
-When $U^{\\prime}(x)<0$ the overview says satisfaction is locally decreasing, so a little extra leisure lowers satisfaction rather than raising it, so the statement is False.`,
+If $U^{\\prime}(x)<0$, utility is locally decreasing, and a little extra leisure lowers satisfaction near that $x$ rather than raising it, so the statement is False.`,
       `**D.** → False
 
-The shared solution separates the stock $U(x)$ from the rate $U^{\\prime}(x)$. The value $U(x)$ is total utility, not marginal utility, so the statement is False.`,
+The value $U(x)$ is the stock of satisfaction at $x$ hours, not its rate of change.
+
+Marginal utility is the derivative $U^{\\prime}(x)$, and $U(x)$ itself is not already the marginal utility, so the statement is False.`,
       `**E.** → True
 
-The overview's conclusion is that the sign of $U^{\\prime}(x)$ tells whether satisfaction is locally increasing or decreasing in leisure, so the statement is True.`
+The sign of $U^{\\prime}(x)$ tells whether $U$ is locally rising or falling.
+
+That is exactly whether satisfaction is locally increasing or decreasing in leisure, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 46,
@@ -2467,19 +3173,31 @@ shows that the sign of $U^{\\prime}$ answers the local question: if $U^{\\prime}
     tactical_explanations: [
       `**A.** → True
 
-The overview's opening contrast is exactly that: $A$ is cost per unit so far, while $C^{\\prime}$ is the extra cost of a little more output, so the statement is True.`,
+Average cost $A(Q)=\\dfrac{C(Q)}{Q}$ answers how expensive each unit has been on average so far.
+
+Marginal cost $C^{\\prime}(Q)$ answers how total cost changes if a little more is produced. Those are two different economic questions, so the statement is True.`,
       `**B.** → False
 
-The shared solution states outright that in general $A(Q)\\neq C^{\\prime}(Q)$ for every $Q>0$, so the statement is False.`,
+In general the quotient $\\dfrac{C(Q)}{Q}$ and the derivative $C^{\\prime}(Q)$ are different functions.
+
+They meet only at special outputs, not for every $Q>0$, and the claim that $A(Q)=C^{\\prime}(Q)$ identically is false, so the statement is False.`,
       `**C.** → False
 
-Minimizing $A$ requires $A^{\\prime}=0$, which rearranges to $C^{\\prime}=A$, not to $C^{\\prime}=0$. Those are different decision problems, so the statement is False.`,
+Minimizing average cost looks for a critical point of $A(Q)$, which rearranges to $C^{\\prime}(Q)=A(Q)$, not to $C^{\\prime}(Q)=0$.
+
+Setting marginal cost to zero is a different decision problem, so the statement is False.`,
       `**D.** → True
 
-At an interior average-cost minimum the overview derives $C^{\\prime}(Q)=A(Q)$ from $A^{\\prime}=0$, so the statement is True.`,
+Write $A(Q)=\\dfrac{C(Q)}{Q}$. At an interior minimum of $A$ one has $A^{\\prime}(Q)=0$, which expands to
+
+$$A^{\\prime}(Q)=\\dfrac{Q\\,C^{\\prime}(Q)-C(Q)}{Q^{2}}=0$$
+
+hence $C^{\\prime}(Q)=\\dfrac{C(Q)}{Q}=A(Q)$ for $Q>0$, so the statement is True.`,
       `**E.** → False
 
-From $A^{\\prime}=(C^{\\prime}-A)/Q$, falling average cost only forces $C^{\\prime}<A$, which can hold with $C^{\\prime}>0$. It does not force $C^{\\prime}<0$, so the statement is False.`
+Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prime}(Q)<A(Q)$.
+
+Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 47,
@@ -2508,19 +3226,35 @@ So $A$ is falling precisely when $C^{\\prime}<A$, which can hold even while $C^{
     tactical_explanations: [
       `**A.** → True
 
-The overview distinguishes the incremental difference $C(Q+1)-C(Q)$ from the exact definition $C^{\\prime}(Q)$, so the statement is True.`,
+The finite difference $C(Q+1)-C(Q)$ is the incremental cost of one whole extra unit.
+
+The course definition of marginal cost is the derivative $C^{\\prime}(Q)$, and the one-unit difference is not the exact definition, so the statement is True.`,
       `**B.** → True
 
-For small extra output the shared linear approximation says $C^{\\prime}(Q)$ approximates the change in cost per unit of extra output, so the statement is True.`,
+For a small extra output $\\Delta Q$, the change in cost per unit of extra output is approximately the derivative:
+
+$$\\dfrac{C(Q+\\Delta Q)-C(Q)}{\\Delta Q}\\approx C^{\\prime}(Q)$$
+
+Hence $C^{\\prime}(Q)$ approximates that local rate, so the statement is True.`,
       `**C.** → True
 
-The overview already records $C(Q+1)-C(Q)\\approx C^{\\prime}(Q)$ as a serviceable approximation, not an identity, so the statement is True.`,
+Setting $\\Delta Q=1$ in the linear approximation gives
+
+$$C(Q+1)-C(Q)\\approx C^{\\prime}(Q)$$
+
+which is often serviceable in applications, but it remains an approximation rather than an identity, so the statement is True.`,
       `**D.** → True
 
-The same display $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$ applies with $\\Delta Q<0$, so the derivative still governs a small cut in output, so the statement is True.`,
+The same derivative governs both directions: for a small (possibly negative) step,
+
+$$C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$$
+
+Hence if output falls a little, the local cost change is still read from $C^{\\prime}(Q)$, so the statement is True.`,
       `**E.** → False
 
-The shared solution stresses that the one-unit difference does not replace $C^{\\prime}(Q)$ for arbitrary small steps. The derivative remains necessary, so the statement is False.`
+The one-unit difference is only a coarse reading, and the precise local rate is still the derivative.
+
+Knowing $C(Q+1)-C(Q)$ does not make $C^{\\prime}(Q)$ unnecessary for finer or non-unit steps, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 48,
@@ -2551,19 +3285,29 @@ which remains an approximation rather than an identity. The same formula governs
     tactical_explanations: [
       `**A.** → True
 
-The overview defines marginal revenue as $R^{\\prime}(Q)$, not as the posted price alone, so the statement is True.`,
+Marginal revenue is the rate of change of revenue $R(Q)=Q\\cdot p(Q)$.
+
+That rate is obtained by differentiating $R$, not by reading off the posted price $p(Q)$ alone, so the statement is True.`,
       `**B.** → True
 
-With $p^{\\prime}<0$ the shared product-rule story says one more unit tends to cut the price on previous units as well, so the statement is True.`,
+Along a downward-sloping price schedule, selling one more unit tends to push the price down.
+
+That lower price also applies to the previous units, and the expansion pressure cuts into revenue on the inframarginal units as well, so the statement is True.`,
       `**C.** → True
 
-That negative price-pressure term is exactly why the overview concludes $R^{\\prime}(Q)<p(Q)$ in general, so the statement is True.`,
+That price-pressure effect appears in the product rule as the term $Q\\,p^{\\prime}(Q)<0$ when $p$ slopes down.
+
+It is one reason marginal revenue can lie below the current price, so the statement is True.`,
       `**D.** → False
 
-If demand did not depend on price, price would be constant in $Q$ and $R(Q)=p\\cdot Q$ would still be differentiated with respect to quantity. Differentiating revenue does not ignore quantity, so the statement is False.`,
+If demand did not depend on price, revenue would still be $R(Q)=Q\\cdot p$ with a constant $p$, and differentiating would give $R^{\\prime}(Q)=p$, which explicitly uses quantity in $R=Qp$.
+
+The claim that differentiating revenue would still ignore quantity is therefore wrong, so the statement is False.`,
       `**E.** → True
 
-The shared conclusion is that "$R^{\\prime}$ always equals $p$" fails whenever price must fall to sell more, so the statement is True.`
+When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
+
+A blanket claim that marginal revenue always equals price is therefore false in that setting, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 49,
@@ -2594,19 +3338,47 @@ in general: selling one more unit tends to reduce the price earned on previous u
     tactical_explanations: [
       `**A.** → True
 
-The overview already rejects differentiating $p$ for marginal profit: the correct target is $P(Q)$, so the consultant is wrong, so the statement is True.`,
+Marginal profit is defined as the derivative of profit $P(Q)=Q\\cdot p(Q)-C(Q)$.
+
+The consultant differentiated the price schedule alone, which is the wrong object, and the advice is wrong, so the statement is True.`,
       `**B.** → True
 
-From the shared calculation, $p^{\\prime}(Q)=-1$ is only the slope of price, not marginal profit, so the statement is True.`,
+Differentiate the posted price:
+
+$$p(Q)=40-Q$$
+
+$$p^{\\prime}(Q)=-1$$
+
+That slope only describes how price falls with quantity; it is not marginal profit, so the statement is True.`,
       `**C.** → True
 
-The overview builds $R(Q)=40Q-Q^{2}$ directly from $Q\\cdot p(Q)$, so the statement is True.`,
+Revenue is price times quantity. Substitute the inverse demand:
+
+$$R(Q)=Q\\cdot p(Q)$$
+
+$$R(Q)=Q(40-Q)$$
+
+$$R(Q)=40Q-Q^{2}$$
+
+which is exactly the claimed revenue function, so the statement is True.`,
       `**D.** → True
 
-Subtracting cost from that revenue already simplified to $P(Q)=32Q-Q^{2}-20$ in the shared solution, so the statement is True.`,
+Profit is revenue minus cost. Using $R(Q)=40Q-Q^{2}$ and $C(Q)=8Q+20$,
+
+$$P(Q)=(40Q-Q^{2})-(8Q+20)$$
+
+$$P(Q)=32Q-Q^{2}-20$$
+
+The claimed simplification matches, so the statement is True.`,
       `**E.** → True
 
-Differentiating the rebuilt profit gives $P^{\\prime}(Q)=32-2Q$, matching the claim, so the statement is True.`
+Differentiate the simplified profit term by term:
+
+$$P(Q)=32Q-Q^{2}-20$$
+
+$$P^{\\prime}(Q)=32-2Q$$
+
+That is the correct marginal profit, not the consultant's $p^{\\prime}(Q)=-1$, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 50,
@@ -2638,19 +3410,29 @@ By contrast, differentiating $p(Q)=40-Q$ alone yields only $p^{\\prime}(Q)=-1$, 
     tactical_explanations: [
       `**A.** → True
 
-The overview defines $T^{\\prime}(y)$ as the answer to how tax liability changes when income rises a little, so the statement is True.`,
+The marginal tax rate is the derivative $T^{\\prime}(y)$, which answers how tax liability changes when income rises a little, so the statement is True.`,
       `**B.** → True
 
-The shared quotient $\\dfrac{T(y)}{y}$ is precisely the fraction of income paid in tax overall, so the statement is True.`,
+The average tax rate is the quotient of tax owed by income:
+
+$$\\dfrac{T(y)}{y}\\qquad(y>0)$$
+
+That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$, so the statement is True.`,
       `**C.** → False
 
-The overview states that the marginal and average rates are unequal in general, so the statement is False.`,
+As with cost, the marginal and average rates coincide only in special cases, not for every income $y>0$.
+
+In general $T^{\\prime}(y)$ need not equal $\\dfrac{T(y)}{y}$, so the statement is False.`,
       `**D.** → True
 
-Plug $T^{\\prime}(y)=0.3$ into the linear reading: about $30$ cents of each extra euro is taxed away, so the statement is True.`,
+The report $T^{\\prime}(y)=0.3$ means about $0.3$ euros of tax per extra euro of income near that point.
+
+That is about $30$ cents of each extra euro taxed away, so the statement is True.`,
       `**E.** → False
 
-As the shared solution notes, the average alone does not determine the slope $T^{\\prime}$ at that same $y$, so the statement is False.`
+The average rate is only a quotient at one income; it does not determine the slope there.
+
+Many different tax schedules can share the same average at one $y$ while having different derivatives, and knowing only $\\dfrac{T(y)}{y}$ is not enough to read $T^{\\prime}(y)$, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 51,
@@ -2681,19 +3463,35 @@ means that $T^{\\prime}(y)=0.3$ taxes away about $30$ cents of each extra euro. 
     tactical_explanations: [
       `**A.** → True
 
-The overview defines the marginal propensity to save as $S^{\\prime}(Y)$, so the statement is True.`,
+By definition, the marginal propensity to save is the derivative of saving with respect to national product:
+
+$$\\mathrm{mps}=S^{\\prime}(Y)$$
+
+which is exactly the definition used here, so the statement is True.`,
       `**B.** → True
 
-The shared linear reading of $S^{\\prime}(Y)=0.2$ is exactly "about one fifth of a small increase in $Y$ is saved," so the statement is True.`,
+The value $S^{\\prime}(Y)=0.2$ is a euros-saved-per-euro-of-product rate near that $Y$.
+
+About one fifth of a small increase in national product is therefore saved, so the statement is True.`,
       `**C.** → False
 
-The overview separates $S^{\\prime}(Y)$ from the average ratio $\\dfrac{S(Y)}{Y}$; they are not the same object, so the statement is False.`,
+The ratio $\\dfrac{S(Y)}{Y}$ is an average saving ratio, analogous to average cost.
+
+It is not the same object as the marginal propensity $S^{\\prime}(Y)$, so the statement is False.`,
       `**D.** → True
 
-Differentiating $S(Y)=\\overline{S}+sY$ as in the shared solution gives $S^{\\prime}(Y)=s$, so the statement is True.`,
+Differentiate the linear saving rule:
+
+$$S(Y)=\\overline{S}+sY$$
+
+$$S^{\\prime}(Y)=s$$
+
+The marginal propensity to save equals the coefficient $s$, so the statement is True.`,
       `**E.** → True
 
-The overview already says one differentiates $S(Y)$, not the identity $Y$, to track the saving response, so the statement is True.`
+The economic question asks how saving responds to a little more national product, so the dependent quantity is $S(Y)$.
+
+One therefore differentiates $S$, not the identity function $Y$, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 52,
@@ -2724,19 +3522,29 @@ one has $S^{\\prime}(Y)=s$ constantly. To see how saving responds to a little mo
     tactical_explanations: [
       `**A.** → True
 
-The overview translates a steeper tangent at $Q_{0}$ into $C^{\\prime}(Q_{0})>C^{\\prime}(Q_{1})$, so marginal cost is higher at $Q_{0}$, so the statement is True.`,
+Marginal cost is the slope of the total-cost curve. A steeper tangent at $Q_0$ than at $Q_1$ means a larger slope there.
+
+Hence marginal cost is higher at $Q_0$ than at $Q_1$, so the statement is True.`,
       `**B.** → False
 
-The shared solution identifies marginal cost with the slope, not with the height of the cost curve, so the statement is False.`,
+The height of the cost curve at $Q_0$ is the level $C(Q_0)$.
+
+Marginal cost is the slope of the tangent, not that height, so the statement is False.`,
       `**C.** → True
 
-A flatter tangent means a smaller derivative and therefore a smaller marginal cost, exactly as the overview records, so the statement is True.`,
+A flatter tangent means a smaller derivative at that point.
+
+Because that derivative is marginal cost, a flatter tangent means a smaller marginal cost, so the statement is True.`,
       `**D.** → True
 
-If the tangent at $Q_{0}$ has slope $12$, the overview's reading is $C^{\\prime}(Q_{0})=12$, so the statement is True.`,
+By definition, the slope of the tangent to the cost curve at $Q_0$ equals $C^{\\prime}(Q_0)$.
+
+If that slope is $12$, then $C^{\\prime}(Q_0)=12$, so the statement is True.`,
       `**E.** → False
 
-Equal total costs are equal heights; the overview notes that equal heights do not force equal slopes, so the statement is False.`
+Equal heights say only that $C(Q_a)=C(Q_b)$; they say nothing about equal slopes.
+
+A U-shaped cost curve can return to the same height with different tangents, and equal total cost does not force equal marginal cost, so the statement is False.`
     ],
     difficulty_level: "1/5",
     sort_order: 53,
@@ -2765,19 +3573,33 @@ A flatter tangent means a smaller derivative and a smaller marginal cost. The he
     tactical_explanations: [
       `**A.** → True
 
-The overview's FOC for profit is $P^{\\prime}=0$, not merely $R^{\\prime}=0$, so the statement is True.`,
+An interior profit maximum is a critical point of profit, so it requires $P^{\\prime}(Q)=0$.
+
+Setting only $R^{\\prime}(Q)=0$ ignores cost entirely, and the claim correctly insists on $P^{\\prime}(Q)=0$, so the statement is True.`,
       `**B.** → False
 
-The shared solution stresses that maximizing revenue ignores cost and does not automatically maximize profit, so the statement is False.`,
+Positive cost that depends on $Q$ shifts the optimum: maximizing $R$ need not maximize $R-C$.
+
+Hence maximizing revenue alone does not automatically maximize profit, so the statement is False.`,
       `**C.** → True
 
-With rising cost the overview already separates the two peaks, so the revenue-maximizing output can differ from the profit-maximizing one, so the statement is True.`,
+Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the zeros of $R^{\\prime}$ and of $P^{\\prime}$ generally differ when $C^{\\prime}$ is not zero.
+
+If cost rises with output, the revenue-maximizing output can therefore differ from the profit-maximizing one, so the statement is True.`,
       `**D.** → True
 
-The FOC rewrites as $R^{\\prime}=C^{\\prime}$ at an interior profit maximum, so the statement is True.`,
+At an interior profit maximum one must have $P^{\\prime}(Q)=0$. Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, that rearranges at once to
+
+$$R^{\\prime}(Q)=C^{\\prime}(Q)$$
+
+which is the required first-order condition, so the statement is True.`,
       `**E.** → True
 
-At a revenue peak with $R^{\\prime}=0$ and $C^{\\prime}>0$ the overview computes $P^{\\prime}=-C^{\\prime}<0$, so the statement is True.`
+If $R^{\\prime}(Q)=0$ while $C^{\\prime}(Q)>0$, then
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0-C^{\\prime}(Q)=-C^{\\prime}(Q)<0$$
+
+At a revenue-stationary point with rising cost, profit is already locally decreasing, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 54,
@@ -2808,19 +3630,33 @@ so the profit-maximizing output typically differs from the revenue-maximizing ou
     tactical_explanations: [
       `**A.** → True
 
-The overview reads $x^{\\prime}(0)=-3$ as oil leaving at about $3$ barrels per minute at time $0$, so the statement is True.`,
+The absolute value $|x^{\\prime}(0)|=3$ is the speed of depletion at time $0$.
+
+Oil is therefore leaving the well at about $3$ barrels per minute, so the statement is True.`,
       `**B.** → False
 
-That equality is a rate, not the stock $x(0)$. It does not say that exactly $3$ barrels remain, so the statement is False.`,
+The stock of oil remaining at time $0$ is the level $x(0)$, not the derivative $x^{\\prime}(0)$.
+
+The number $-3$ is a rate of change, not a count of barrels left, so the statement is False.`,
       `**C.** → True
 
-The shared solution notes that the negative sign means the remaining stock is decreasing at $t=0$, so the statement is True.`,
+A negative derivative means the function is locally decreasing.
+
+Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasing at $t=0$, so the statement is True.`,
       `**D.** → True
 
-The linear approximation in the overview is exactly $x(\\Delta t)-x(0)\\approx -3\\Delta t$ near $t=0$, so the statement is True.`,
+The linear approximation near $t=0$ reads
+
+$$x(\\Delta t)-x(0)\\approx x^{\\prime}(0)\\,\\Delta t$$
+
+$$x(\\Delta t)-x(0)\\approx -3\\,\\Delta t$$
+
+A small time step changes remaining oil by about $-3\\Delta t$ barrels, so the statement is True.`,
       `**E.** → False
 
-A negative derivative constrains the slope, not the sign of the level $x(0)$. Remaining oil need not already be negative, so the statement is False.`
+A decreasing positive stock can still be large: the sign of the derivative does not force the sign of the level.
+
+Remaining oil need not already be negative at $t=0$ merely because $x^{\\prime}(0)<0$, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 55,
@@ -2849,19 +3685,31 @@ governs small time steps. None of this identifies the level $x(0)$ itself, and a
     tactical_explanations: [
       `**A.** → True
 
-The overview's one-unit reading of $R^{\\prime}(80)=12$ is about $12$ euros of extra revenue from one more ticket, so the statement is True.`,
+The one-unit reading of $R^{\\prime}(80)=12$ says that near $80$ tickets, selling one more ticket raises revenue by about $12$ euros, so the statement is True.`,
       `**B.** → False
 
-That report is a rate, not the price of each of the $80$ tickets already sold, so the statement is False.`,
+Average price would involve $\\dfrac{R(80)}{80}$, and the posted price is $p(80)$.
+
+Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$, so the statement is False.`,
       `**C.** → True
 
-The shared solution notes that $R^{\\prime}(80)$ alone does not reveal the price schedule $p(Q)$, so the statement is True.`,
+Many different price schedules can produce the same marginal revenue at a single point.
+
+The report $R^{\\prime}(80)=12$ alone therefore does not reveal $p(Q)$, so the statement is True.`,
       `**D.** → True
 
-With $C^{\\prime}(80)=15$ the overview gives $P^{\\prime}(80)=-3<0$, so selling a little more would lower profit, so the statement is True.`,
+If marginal cost at $80$ tickets is $15$, then
+
+$$P^{\\prime}(80)=R^{\\prime}(80)-C^{\\prime}(80)=12-15=-3<0$$
+
+Hence $R^{\\prime}<C^{\\prime}$ and a small increase in sales reduces profit, so the statement is True.`,
       `**E.** → True
 
-With $C^{\\prime}(80)=9$ one gets $P^{\\prime}(80)=3>0$, so selling a little more would raise profit, so the statement is True.`
+If marginal cost at $80$ tickets is $9$, then
+
+$$P^{\\prime}(80)=12-9=3>0$$
+
+Hence $R^{\\prime}>C^{\\prime}$ and a small increase in sales raises profit, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 56,
@@ -2890,19 +3738,31 @@ If $C^{\\prime}(80)=15$ then $P^{\\prime}(80)=-3<0$ and a little more output low
     tactical_explanations: [
       `**A.** → True
 
-The overview writes the verbal rule as $R^{\\prime}(Q)>C^{\\prime}(Q)$, so the statement is True.`,
+"Extra revenue" and "extra cost" for a small expansion are precisely marginal revenue and marginal cost.
+
+The manager's rule is therefore: increase $Q$ a little when $R^{\\prime}(Q)>C^{\\prime}(Q)$, so the statement is True.`,
       `**B.** → True
 
-The equivalent form $P^{\\prime}(Q)>0$ is already recorded in the shared solution, so the statement is True.`,
+Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$, the inequality $R^{\\prime}>C^{\\prime}$ is identical to $P^{\\prime}>0$.
+
+The same rule can therefore be written as: increase $Q$ a little when $P^{\\prime}(Q)>0$, so the statement is True.`,
       `**C.** → False
 
-The rule compares revenue and cost at the margin; it is not revenue maximization that ignores cost, so the statement is False.`,
+The manager's rule explicitly uses cost through $C^{\\prime}(Q)$; it is a profit logic, not a pure revenue logic.
+
+It is not equivalent to maximizing revenue regardless of cost, so the statement is False.`,
       `**D.** → True
 
-Equality of extra revenue and extra cost is $R^{\\prime}=C^{\\prime}$, which the overview rewrites as $P^{\\prime}=0$, so the statement is True.`,
+Equal extras mean $R^{\\prime}(Q)=C^{\\prime}(Q)$, hence
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=0$$
+
+Marginal profit is zero there, so the statement is True.`,
       `**E.** → True
 
-The shared translation is precisely a comparison of the two derivatives $R^{\\prime}$ and $C^{\\prime}$, so the statement is True.`
+Turning the manager's words into calculus replaces "extra revenue" and "extra cost" by the two derivatives $R^{\\prime}(Q)$ and $C^{\\prime}(Q)$.
+
+The comparison is precisely a comparison of those derivatives, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 57,
@@ -2931,19 +3791,31 @@ It is a comparison of two derivatives, not a command to maximize revenue regardl
     tactical_explanations: [
       `**A.** → True
 
-The overview treats maximizing $U$ and maximizing $A$ as distinct problems, so the statement is True.`,
+Maximizing $U(x)$ looks at the height of total satisfaction; maximizing $A(x)=\\dfrac{U(x)}{x}$ looks at the quotient.
+
+Their critical points generally differ, and the two problems are not the same, so the statement is True.`,
       `**B.** → False
 
-An average-utility maximum needs $U^{\\prime}=A$, not $U^{\\prime}=0$. The claim confuses those conditions, so the statement is False.`,
+The condition $U^{\\prime}(x)=0$ stationarizes total utility, not average utility.
+
+An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x)$, and $U^{\\prime}=0$ does not automatically maximize $A$, so the statement is False.`,
       `**C.** → True
 
-From $A^{\\prime}=0$ the shared algebra rearranges to $U^{\\prime}(x)=A(x)$, so the statement is True.`,
+Write $A=\\dfrac{U}{x}$. Setting $A^{\\prime}=0$ for $x>0$ yields
+
+$$A^{\\prime}(x)=\\dfrac{x\\,U^{\\prime}(x)-U(x)}{x^{2}}=0$$
+
+hence $xU^{\\prime}-U=0$, and $U^{\\prime}=\\dfrac{U}{x}=A$, so the statement is True.`,
       `**D.** → True
 
-$U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction locally unchanged, as the overview records, so the statement is True.`,
+A zero derivative means a tiny change in the independent variable leaves the function locally unchanged.
+
+Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction locally unchanged, so the statement is True.`,
       `**E.** → False
 
-The sign of $A^{\\prime}$ depends on $U^{\\prime}-A$, not on $U^{\\prime}$ alone. Positive marginal utility need not make average satisfaction rise, so the statement is False.`
+Average satisfaction can fall even while total utility still rises, once utility rises slower than hours — that is, when $0<U^{\\prime}<A$.
+
+Positive marginal utility therefore does not force average satisfaction to be rising, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 58,
@@ -2972,19 +3844,39 @@ so an interior maximum of $A$ requires $A^{\\prime}=0$, hence $U^{\\prime}(x)=A(
     tactical_explanations: [
       `**A.** → True
 
-The overview notes that $C$ alone is enough to compute $C^{\\prime}(Q)$, so the statement is True.`,
+Marginal cost is defined as the derivative of the cost function. With $C(Q)$ in hand one simply differentiates:
+
+$$C^{\\prime}(Q)$$
+
+No demand or revenue data is required for that step, so from $C$ alone one can compute marginal cost, and the statement is True.`,
       `**B.** → False
 
-Without revenue information, $R^{\\prime}(Q)$ cannot be computed from $C$ alone, so the statement is False.`,
+Marginal revenue is a property of revenue, which is not determined by cost.
+
+From $C$ alone one cannot compute $R^{\\prime}(Q)$, so the statement is False.`,
       `**C.** → False
 
-Marginal profit needs $R^{\\prime}-C^{\\prime}$, and $R^{\\prime}$ is missing, so $P^{\\prime}$ cannot be computed from cost alone, so the statement is False.`,
+Profit is the difference of revenue and cost,
+
+$$P(Q)=R(Q)-C(Q)$$
+
+so marginal profit needs both sides:
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
+
+Cost alone supplies $C^{\\prime}$ but not $R^{\\prime}$, so $P^{\\prime}$ cannot be recovered from $C$ alone, and the statement is False.`,
       `**D.** → True
 
-The shared solution already says the comparison $R^{\\prime}$ versus $C^{\\prime}$ cannot be carried out numerically without revenue, so the statement is True.`,
+The comparison "$R^{\\prime}(Q)$ versus $C^{\\prime}(Q)$" needs a numerical value on the revenue side.
+
+Without a revenue function that side is missing, and the numerical test cannot be run, so the statement is True.`,
       `**E.** → True
 
-Once $R$ is supplied, the overview forms $P^{\\prime}=R^{\\prime}-C^{\\prime}$, so the statement is True.`
+Once both functions are known, differentiating the difference gives
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$$
+
+Supplying $R(Q)$ later makes marginal profit available, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 59,
@@ -3013,19 +3905,33 @@ can be computed, and the numerical comparison $R^{\\prime}$ versus $C^{\\prime}$
     tactical_explanations: [
       `**A.** → True
 
-The overview checks $18-11=7$, so the three posted numbers are consistent, so the statement is True.`,
+Consistency of the three reports requires $P^{\\prime}=R^{\\prime}-C^{\\prime}$:
+
+$$18-11=7$$
+
+The posted triple matches that identity, so the statement is True.`,
       `**B.** → True
 
-Those one-unit readings of $R^{\\prime}=18$ and $C^{\\prime}=11$ are exactly the shared interpretation, so the statement is True.`,
+Those are the one-unit readings of the two derivatives: near the current output, one more chair adds about $18$ euros of revenue and about $11$ euros of cost, so the statement is True.`,
       `**C.** → True
 
-Likewise $P^{\\prime}=7$ means one more chair adds about $7$ euros of profit, so the statement is True.`,
+Marginal profit is the rate of change of profit. With $P^{\\prime}(Q)=7$ the one-unit linear reading is
+
+$$P(Q+1)-P(Q)\\approx 7$$
+
+so near the current output one more chair adds about $7$ euros of profit, and the statement is True.`,
       `**D.** → False
 
-The overview stresses that $7$ is a rate, not the level $P(Q)$. Total profit need not equal $7$ euros, so the statement is False.`,
+The number $7$ is a rate of change of profit — euros of profit per extra chair — not the level $P(Q)$.
+
+Positive marginal profit does not force total profit to equal $7$, so the statement is False.`,
       `**E.** → True
 
-With the swapped slopes the shared calculation gives $P^{\\prime}=-7<0$, so a small expansion would reduce profit, so the statement is True.`
+At that other output,
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=11-18=-7<0$$
+
+A negative derivative means a small expansion reduces profit, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 60,
@@ -3056,19 +3962,49 @@ so a small expansion would reduce profit.`,
     tactical_explanations: [
       `**A.** → True
 
-The overview already computes $P_A^{\\prime}(10)=9-6=3$, so the statement is True.`,
+Profit is revenue minus cost, so marginal profit is the difference of the two derivatives:
+
+$$P_A^{\\prime}(Q)=R_A^{\\prime}(Q)-C_A^{\\prime}(Q)$$
+
+Plug in the bakery-A reports at $Q=10$:
+
+$$P_A^{\\prime}(10)=9-6=3$$
+
+A's posted numbers already force $P_A^{\\prime}(10)=3$, so the statement is True.`,
       `**B.** → True
 
-With $P_B^{\\prime}(10)=-2<0$, bakery B's profit falls if it bakes a little more, so the statement is True.`,
+For bakery B the same identity gives
+
+$$P_B^{\\prime}(10)=R_B^{\\prime}(10)-C_B^{\\prime}(10)=5-7=-2$$
+
+A negative derivative means the profit function is locally decreasing, and near $10$ cakes baking a little more lowers B's profit, so the statement is True.`,
       `**C.** → False
 
-The shared solution expands when $P^{\\prime}>0$, not when the stock $P$ is larger. Here A should expand and B should not, despite $P_B(10)>P_A(10)$, so the statement is False.`,
+The expansion test asks whether profit is still rising — the sign of $P^{\\prime}(Q)$ — not the size of today's profit stock $P(Q)$.
+
+Here
+
+$$P_A^{\\prime}(10)=3>0$$
+
+$$P_B^{\\prime}(10)=-2<0$$
+
+A small expansion raises A's profit and lowers B's, even though $P_B(10)=90>40=P_A(10)$. Comparing the heights of profit reverses the correct advice, so the statement is False.`,
       `**D.** → True
 
-The overview's one-unit readings are $+3$ euros at A and $-2$ euros at B, so the statement is True.`,
+The one-unit reading of a derivative says that a small extra cake changes profit by about $P^{\\prime}(10)$ euros.
+
+From earlier,
+
+$$P_A^{\\prime}(10)=3$$
+
+$$P_B^{\\prime}(10)=-2$$
+
+The extra cake raises A's profit by about $3$ euros and lowers B's by about $2$ euros, so the statement is True.`,
       `**E.** → False
 
-A higher profit level does not imply a larger marginal profit; here $P_B(10)>P_A(10)$ but $P_B^{\\prime}<P_A^{\\prime}$, so the statement is False.`
+$P_B(10)=90$ is a level — how much profit B has already earned today — while $P_B^{\\prime}(10)=-2$ is a rate.
+
+A large positive stock can sit on a downward slope, and knowing only that $P_B(10)>P_A(10)$ says nothing about which bakery has the larger marginal profit, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 61,
@@ -3097,19 +4033,47 @@ with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ eu
     tactical_explanations: [
       `**A.** → True
 
-The overview records $C^{\\prime}(Q)=12$ on the regular-crew piece $Q<50$, so the statement is True.`,
+On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
+
+$$C^{\\prime}(Q)=12\\qquad\\text{for }Q<50$$
+
+Before overtime kicks in, each extra unit adds $12$ euros of cost, so the statement is True.`,
       `**B.** → True
 
-The overtime gap computed in the shared solution is $20-12=8$ euros, so the statement is True.`,
+Rewrite the overtime formula by expanding the brackets:
+
+$$C(Q)=600+20(Q-50)$$
+
+$$C(Q)=20Q-400$$
+
+Differentiating the overtime piece gives $C^{\\prime}(Q)=20$ for $Q>50$. Relative to the regular-crew slope $12$,
+
+$$20-12=8$$
+
+Overtime raises the cost of an extra unit by $8$ euros, so the statement is True.`,
       `**C.** → False
 
-Just above $50$ one has $R^{\\prime}=16<20=C^{\\prime}$, so overtime does not leave $R^{\\prime}>C^{\\prime}$, so the statement is False.`,
+Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. Marginal revenue is still $R^{\\prime}(Q)=16$. Then
+
+$$R^{\\prime}(Q)-C^{\\prime}(Q)=16-20=-4<0$$
+
+hence $R^{\\prime}(Q)<C^{\\prime}(Q)$, not $R^{\\prime}(Q)>C^{\\prime}(Q)$, so the statement is False.`,
       `**D.** → True
 
-At $Q=40$ the overview gives $P^{\\prime}=16-12=4>0$, so a small expansion raises profit, so the statement is True.`,
+At $Q=40$ the workshop is still on the regular piece, so $C^{\\prime}(40)=12$. Compare with revenue:
+
+$$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=16-12=4>0$$
+
+A positive derivative means a small expansion raises profit at $Q=40$, so the statement is True.`,
       `**E.** → False
 
-The shared average-cost calculation for $Q>50$ is $20-\\dfrac{400}{Q}$, which is not constantly $12$, so the statement is False.`
+Average cost is the quotient $\\dfrac{C(Q)}{Q}$, not the overtime slope. For $Q>50$,
+
+$$\\dfrac{C(Q)}{Q}=\\dfrac{20Q-400}{Q}$$
+
+$$\\dfrac{C(Q)}{Q}=20-\\dfrac{400}{Q}$$
+
+The term $\\dfrac{400}{Q}$ shrinks as $Q$ grows, and average cost approaches $20$ from below and equals $12$ only at the isolated handover $Q=50$, not for every overtime output, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 62,
@@ -3141,19 +4105,37 @@ $$A(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{600+20(Q-50)}{Q}=20-\\dfrac{400}{Q}\\neq 12.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovers $R^{\\prime}=4+11=15$, so the statement is True.`,
+By definition $P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)$. Rearrange to recover the missing marginal revenue:
+
+$$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
+
+$$R^{\\prime}(Q)=4+11=15$$
+
+The whiteboard's two numbers imply $R^{\\prime}(Q)=15$, so the statement is True.`,
       `**B.** → True
 
-With $P^{\\prime}=4>0$ the shared reading says a small extra sale raises profit, so the kiosk should expand a little, so the statement is True.`,
+The kiosk itself posted $P^{\\prime}(Q)=4>0$.
+
+A positive marginal profit means profit is locally increasing, and a small extra sale raises profit and a little expansion is recommended, so the statement is True.`,
       `**C.** → False
 
-The posted numbers do not force $p(Q)=R^{\\prime}(Q)$; the passer-by's claim is not guaranteed, so the statement is False.`,
+The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
+
+Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$, so the statement is False.`,
       `**D.** → True
 
-The overview separates the rate $P^{\\prime}=4$ from the level $P(Q)$, so the statement is True.`,
+$P^{\\prime}(Q)=4$ is a rate of change of profit near the current output.
+
+The current profit level is the height $P(Q)$, which was never posted, and a slope of $4$ is compatible with many different heights, and the posted $P^{\\prime}$ is not the same information as $P(Q)$, so the statement is True.`,
       `**E.** → True
 
-With $P^{\\prime}=-4$ the shared recovery gives $R^{\\prime}=7$, so the statement is True.`
+Repeat the same rearrangement with the alternative report $P^{\\prime}(Q)=-4$ and the same $C^{\\prime}(Q)=11$:
+
+$$R^{\\prime}(Q)=P^{\\prime}(Q)+C^{\\prime}(Q)$$
+
+$$R^{\\prime}(Q)=-4+11=7$$
+
+The implied marginal revenue would be $7$, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 63,
@@ -3183,19 +4165,37 @@ $$R^{\\prime}=-4+11=7.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview records $R_A^{\\prime}=7$, not the posted $12$, as the extra revenue from one more ticket, so the statement is True.`,
+The economic question "how many extra euros does one more ticket bring in?" is answered by marginal revenue $R_A^{\\prime}(Q_A)$, not by the sticker price $p_A$.
+
+Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$ euros of revenue even though the current price is $12$, so the statement is True.`,
       `**B.** → True
 
-Cinema B's $R_B^{\\prime}=p_B=10$ matches a price that need not be cut to sell one more ticket, so the statement is True.`,
+When price need not fall to sell a little more, the product-rule penalty $Q\\,p^{\\prime}(Q)$ is zero and $R^{\\prime}(Q)=p(Q)$.
+
+Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation, so the statement is True.`,
       `**C.** → False
 
-The expand test uses $R_A^{\\prime}=7$ against $C^{\\prime}=8$, giving $P_A^{\\prime}<0$. Price $12>8$ is the wrong comparison, so the statement is False.`,
+A's expansion test compares extra revenue with extra cost:
+
+$$P_A^{\\prime}(Q_A)=R_A^{\\prime}(Q_A)-C^{\\prime}=7-8=-1<0$$
+
+The tempting comparison of price $12$ with cost $8$ is the wrong test. Because $7<8$, a small expansion lowers A's profit, so the statement is False.`,
       `**D.** → True
 
-For B the overview has $R_B^{\\prime}=10>8=C^{\\prime}$, so B should expand a little, so the statement is True.`,
+For cinema B,
+
+$$P_B^{\\prime}(Q_B)=R_B^{\\prime}(Q_B)-C^{\\prime}=10-8=2>0$$
+
+Hence $R_B^{\\prime}(Q_B)>C_B^{\\prime}(Q_B)$ and a small expansion raises B's profit, so the statement is True.`,
       `**E.** → False
 
-Marginal profit compares $R^{\\prime}$ with $C^{\\prime}$, not the posted prices with each other. Here $p_A>p_B$ but $P_A^{\\prime}<P_B^{\\prime}$, so the statement is False.`
+Marginal profit is $R^{\\prime}(Q)-C^{\\prime}(Q)$, not a ranking of sticker prices. Here
+
+$$P_A^{\\prime}(Q_A)=7-8=-1$$
+
+$$P_B^{\\prime}(Q_B)=10-8=2$$
+
+A has the higher price but the lower (in fact negative) marginal profit, and $p_A>p_B$ does not decide the expansion ranking, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 64,
@@ -3228,19 +4228,37 @@ So B should expand a little while A should not. Comparing posted prices $p_A>p_B
     tactical_explanations: [
       `**A.** → True
 
-The overview records $R^{\\prime}=15$ on the happy-hour piece $Q<20$, so the statement is True.`,
+On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives
+
+$$R^{\\prime}(Q)=15\\qquad\\text{for }Q<20$$
+
+For $Q<20$, marginal revenue is $15$, so the statement is True.`,
       `**B.** → True
 
-After happy hour, $R^{\\prime}=8$ already lies below the constant $C^{\\prime}=10$, as the shared solution notes, so the statement is True.`,
+After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
+
+$$R^{\\prime}(Q)=8\\qquad\\text{for }Q>20$$
+
+Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin, so the statement is True.`,
       `**C.** → True
 
-At $Q=12$ one has $P^{\\prime}=15-10=5>0$, so a small extra drink raises profit, so the statement is True.`,
+At $Q=12$ the bar is still in happy hour, so $R^{\\prime}(12)=15$. Then
+
+$$P^{\\prime}(12)=R^{\\prime}(12)-C^{\\prime}(12)=15-10=5>0$$
+
+A positive derivative means a small extra drink raises profit at $Q=12$, so the statement is True.`,
       `**D.** → False
 
-At $Q=25$ the overview gives $R^{\\prime}=8<10=C^{\\prime}$, so post-promotion revenue does not beat cost at the margin, so the statement is False.`,
+At $Q=25$ the promotion has ended, so $R^{\\prime}(25)=8$. Then
+
+$$P^{\\prime}(25)=8-10=-2<0$$
+
+Post-promotion revenue no longer beats cost at the margin, so the statement is False.`,
       `**E.** → False
 
-Past $Q=20$ the shared marginal revenue is $8$, not the happy-hour $15$, so the statement is False.`
+The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
+
+At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 65,
@@ -3271,19 +4289,29 @@ while at $Q=25$ one has $P^{\\prime}=8-10=-2<0$, so post-promotion revenue no lo
     tactical_explanations: [
       `**A.** → True
 
-The overview translates the sentence directly into $P^{\\prime}(Q)>0$, so the statement is True.`,
+Saying that a small increase in production would raise profit is exactly the claim that profit is locally increasing, i.e. $P^{\\prime}(Q)>0$, so the statement is True.`,
       `**B.** → True
 
-Combined with $C^{\\prime}=14$, the shared bound is $R^{\\prime}(Q)>14$, so the statement is True.`,
+Because $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the cost office reports $C^{\\prime}(Q)=14$, the advice $P^{\\prime}(Q)>0$ rearranges to
+
+$$R^{\\prime}(Q)>C^{\\prime}(Q)=14$$
+
+The advice already means $R^{\\prime}(Q)>14$, so the statement is True.`,
       `**C.** → False
 
-The advice is about the sign of $P^{\\prime}$, not about the level $P(Q)$, so the statement is False.`,
+The advice speaks only about the sign of the slope $P^{\\prime}(Q)$.
+
+It does not reveal the current profit level $P(Q)$, so the statement is False.`,
       `**D.** → False
 
-Nothing in the recommendation identifies average cost $\\dfrac{C(Q)}{Q}$, so the statement is False.`,
+Nothing in the consultant's sentence or the cost-office report produces the quotient $\\dfrac{C(Q)}{Q}$.
+
+The advice does not tell you average cost, so the statement is False.`,
       `**E.** → True
 
-$R^{\\prime}=11$ contradicts the bound $R^{\\prime}>14$ from the first adviser, so the statement is True.`
+The first adviser's claim already forces $R^{\\prime}(Q)>14$.
+
+A second claim $R^{\\prime}(Q)=11$ at the same $Q$ would violate that inequality, and the two claims contradict each other, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 66,
@@ -3312,19 +4340,39 @@ The advice constrains the slope of profit, not the stock $P(Q)$ and not the aver
     tactical_explanations: [
       `**A.** → True
 
-The overview computes $P_1^{\\prime}=11-9=2>0$, so producing the extra unit in Plant 1 raises profit, so the statement is True.`,
+Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and about $C_1^{\\prime}=9$ euros of cost:
+
+$$P^{\\prime}\\text{ via Plant 1}=11-9=2>0$$
+
+That choice raises the firm's profit, so the statement is True.`,
       `**B.** → False
 
-Plant 2 has $P_2^{\\prime}=11-13<0$; sharing the same market does not overturn that test, so the statement is False.`,
+Both plants sell into the same market, so both face the same extra revenue $R'=11$.
+
+Plant 2's marginal cost is $13>11$, so producing there would lower profit:
+
+$$11-13=-2<0$$
+
+Selling into the same market does not make Plant 2 the right plant, so the statement is False.`,
       `**C.** → True
 
-Plant 1's lower marginal cost is exactly why the shared solution prefers Plant 1 for the extra unit, so the statement is True.`,
+With the same extra revenue available either way, the firm should choose the plant with the lower marginal cost.
+
+Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for that extra unit, so the statement is True.`,
       `**D.** → False
 
-The two plants currently report different marginal costs; common ownership does not force them equal, so the statement is False.`,
+Belonging to one firm does not force the two plants' current marginal costs to be equal.
+
+Here they are explicitly different, $9$ versus $13$, so the statement is False.`,
       `**E.** → True
 
-With $R'=8$ both plants have $R'<C^{\\prime}$, so neither should produce the extra unit, so the statement is True.`
+If instead $R'=8$, then both plant-level comparisons fail:
+
+$$8-9=-1<0$$
+
+$$8-13=-5<0$$
+
+Neither plant should produce the extra unit, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 67,
@@ -3354,19 +4402,41 @@ $$8-9<0,\\qquad 8-13<0.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview records $T^{\\prime}=\\dfrac{1}{5}$ on the first bracket, so the statement is True.`,
+On the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives
+
+$$T^{\\prime}(y)=\\dfrac{1}{5}\\qquad\\text{for }y<1000$$
+
+For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$, so the statement is True.`,
       `**B.** → True
 
-Crossing $1000$ raises the marginal rate from $\\dfrac{1}{5}$ to $\\dfrac{2}{5}$, as computed in the shared solution, so the statement is True.`,
+Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
+
+$$T^{\\prime}(y)=\\dfrac{2}{5}\\qquad\\text{for }y>1000$$
+
+Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths, so the statement is True.`,
       `**C.** → False
 
-At $y=1500$ the overview's average is $\\dfrac{4}{15}$, not $\\dfrac{2}{5}$, so the statement is False.`,
+At $y=1500$, total tax is
+
+$$T(1500)=200+\\dfrac{2}{5}(1500-1000)$$
+
+$$T(1500)=200+200=400$$
+
+Average tax is therefore
+
+$$\\dfrac{T(1500)}{1500}=\\dfrac{400}{1500}=\\dfrac{4}{15}$$
+
+which is strictly less than $\\dfrac{2}{5}=\\dfrac{6}{15}$, and the average rate does not equal $\\dfrac{2}{5}$, so the statement is False.`,
       `**D.** → True
 
-The second-bracket slope $\\dfrac{2}{5}$ taxes away about $40$ cents of a small extra euro at $y=1500$, so the statement is True.`,
+At $y=1500$ the taxpayer is in the second bracket, where $T^{\\prime}(y)=\\dfrac{2}{5}=0.4$.
+
+About $40$ cents of a small extra euro of income is therefore taxed away, so the statement is True.`,
       `**E.** → False
 
-The average $\\dfrac{4}{15}$ alone does not determine the marginal slope $\\dfrac{2}{5}$, so the statement is False.`
+The average rate $\\dfrac{T(1500)}{1500}=\\dfrac{4}{15}$ is only a quotient at one income.
+
+It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many schedules could share that average while having different local slopes, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 68,
@@ -3397,19 +4467,29 @@ while about $40$ cents of a small extra euro is taxed away by the slope $\\dfrac
     tactical_explanations: [
       `**A.** → True
 
-Falling average cost implies $C^{\\prime}<A=12$ from the overview's quotient derivative, so the statement is True.`,
+Average cost falls when marginal cost lies below average cost: $A^{\\prime}(Q)<0$ is equivalent to $C^{\\prime}(Q)<A(Q)$.
+
+With $A(Q)=12$, falling average cost therefore implies $C^{\\prime}(Q)<12$, so the statement is True.`,
       `**B.** → False
 
-The bound is only $C^{\\prime}<12$, which does not imply $C^{\\prime}<10$, so the statement is False.`,
+The reports give $C^{\\prime}(Q)<12$ and $R^{\\prime}(Q)=10$, but they do not pin $C^{\\prime}$ below $10$.
+
+Marginal cost could be, for example, $11$, which is still below $12$ (so average cost falls) yet above $10$, and the reports do not imply $C^{\\prime}(Q)<10$, so the statement is False.`,
       `**C.** → False
 
-Without pinning $C^{\\prime}$ below $R^{\\prime}=10$, the reports do not imply $P^{\\prime}>0$, so the statement is False.`,
+Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ while $C^{\\prime}$ is known only to satisfy $C^{\\prime}<12$.
+
+If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$, so the statement is False.`,
       `**D.** → True
 
-The shared example $C^{\\prime}=11$ has average cost still falling while $C^{\\prime}>R^{\\prime}$, so the statement is True.`,
+Falling average cost only forces $C^{\\prime}<A=12$; it does not force $C^{\\prime}<R^{\\prime}=10$.
+
+Marginal cost could still exceed marginal revenue (for instance $C^{\\prime}=11$) while average cost is falling, so the statement is True.`,
       `**E.** → False
 
-Differentiating $A$ yields $A^{\\prime}$, not $C^{\\prime}$. Marginal cost is the derivative of total cost, so the statement is False.`
+Differentiating average cost $A(Q)=\\dfrac{C(Q)}{Q}$ produces $A^{\\prime}(Q)$, which tracks how the average moves.
+
+Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ does not produce marginal cost, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 69,
@@ -3438,19 +4518,37 @@ Sales reports $R^{\\prime}(Q)=10$. That upper bound on $C^{\\prime}$ does not fo
     tactical_explanations: [
       `**A.** → True
 
-The overview computes $P_N^{\\prime}=30-18=12$ constantly, so the statement is True.`,
+North's profit is $P_N(Q)=R_N(Q)-C_N(Q)=30Q-(18Q+40)=12Q-40$. Differentiating gives
+
+$$P_N^{\\prime}(Q)=12$$
+
+at every $Q$, so the statement is True.`,
       `**B.** → True
 
-At $Q=15$, $P_S^{\\prime}=20-15=5>0$, so South's profit is still locally increasing, so the statement is True.`,
+At $Q=15$, South's posted schedule gives
+
+$$P_S^{\\prime}(15)=20-15=5>0$$
+
+A positive derivative means South's profit is still locally increasing at $Q=15$, so the statement is True.`,
       `**C.** → True
 
-At $Q=25$, $P_S^{\\prime}=20-25=-5<0$, so South's profit is locally decreasing, so the statement is True.`,
+At $Q=25$,
+
+$$P_S^{\\prime}(25)=20-25=-5<0$$
+
+A negative derivative means South's profit is locally decreasing at $Q=25$, so the statement is True.`,
       `**D.** → False
 
-Rates $P^{\\prime}$ do not determine the stock of total profit; South need not currently earn less than North, so the statement is False.`,
+The shape of $P_S^{\\prime}(Q)$ — whether it depends on $Q$ — says nothing about the height $P_S(Q)$ compared with $P_N(Q)$.
+
+South could currently earn more or less total profit; the claim that South must earn less does not follow, so the statement is False.`,
       `**E.** → True
 
-North's extra unit adds $12$ euros of profit via $R_N^{\\prime}-C_N^{\\prime}$, not via the fixed-cost intercept $40$, so the statement is True.`
+North's marginal profit is
+
+$$P_N^{\\prime}(Q)=R_N^{\\prime}(Q)-C_N^{\\prime}(Q)=30-18=12$$
+
+The fixed intercept $40$ in cost drops out upon differentiation, and the extra-unit profit of $12$ euros uses $R_N^{\\prime}-C_N^{\\prime}$, not that intercept, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 70,
@@ -3479,19 +4577,41 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
     tactical_explanations: [
       `**A.** → True
 
-Differentiating the first piece as in the overview gives $U^{\\prime}(x)=10-x$ for $x<8$, so the statement is True.`,
+On the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives
+
+$$U^{\\prime}(x)=10-x\\qquad\\text{for }x<8$$
+
+For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$, so the statement is True.`,
       `**B.** → True
 
-At $x=6$ the shared evaluation is $U^{\\prime}(6)=4>0$, so a little extra leisure still raises satisfaction, so the statement is True.`,
+At $x=6$,
+
+$$U^{\\prime}(6)=10-6=4>0$$
+
+A positive derivative means a little extra leisure still raises satisfaction at $x=6$, so the statement is True.`,
       `**C.** → True
 
-On the flat piece $x>8$ the overview records $U^{\\prime}=0$, so the statement is True.`,
+Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
+
+$$U^{\\prime}(x)=0\\qquad\\text{for }x>8$$
+
+Marginal utility is therefore $0$ beyond eight hours, so the statement is True.`,
       `**D.** → False
 
-$U(8)=48$ is the stock of utility after eight hours, not the marginal contribution of the eighth hour, so the statement is False.`,
+$U(8)=48$ is the stock of satisfaction after eight hours, not the contribution of the eighth hour alone.
+
+Approaching $x=8$ from the left,
+
+$$U^{\\prime}(8^{-})=10-8=2$$
+
+The eighth hour adds about $2$ units of utility, not $48$, so the statement is False.`,
       `**E.** → True
 
-The shared average at $x=12$ is $\\dfrac{48}{12}=4$, so the statement is True.`
+For $x=12>8$, utility has flattened at $U(12)=48$. Average utility is therefore
+
+$$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4$$
+
+Average utility at $x=12$ equals $4$, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 71,
@@ -3521,19 +4641,35 @@ $$\\dfrac{U(12)}{12}=\\dfrac{48}{12}=4.$$`,
     tactical_explanations: [
       `**A.** → True
 
-The overview recovers $C^{\\prime}=16-(-3)=19$ for the first printer, so the statement is True.`,
+From $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and the first shop's reports,
+
+$$-3=16-C^{\\prime}(Q)$$
+
+$$C^{\\prime}(Q)=16-(-3)=19$$
+
+The first printer's implied marginal cost is $19$, so the statement is True.`,
       `**B.** → False
 
-With $P^{\\prime}=-3<0$, profit falls if the first printer prints a little more, so the statement is False.`,
+The first printer has $P^{\\prime}(Q)=-3<0$, so profit is locally decreasing.
+
+Printing a little more would lower profit, not raise it, so the statement is False.`,
       `**C.** → True
 
-The second printer has $P^{\\prime}=16-16=0$, so the statement is True.`,
+The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
+
+$$P^{\\prime}(Q)=16-16=0$$
+
+its marginal profit is $0$, so the statement is True.`,
       `**D.** → False
 
-Same $R^{\\prime}$ with different companions yields $P^{\\prime}=-3$ at the first shop and $P^{\\prime}=0$ at the second, so the statement is False.`,
+Both printers share $R^{\\prime}(Q)=16$, but their cost (or profit) companions differ.
+
+The first has $P^{\\prime}=-3$ while the second has $P^{\\prime}=0$, and they do not have the same extra-profit figure, so the statement is False.`,
       `**E.** → False
 
-The posted $-3$ is a rate, not the level $P(Q)$, so the statement is False.`
+The posted figure $P^{\\prime}(Q)=-3$ is a rate — euros of profit change per extra job — not the height of the profit function.
+
+The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slope with the level makes the claim false, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 72,
@@ -3562,19 +4698,37 @@ Same extra-revenue figure does not force the same extra-profit figure, and the f
     tactical_explanations: [
       `**A.** → True
 
-Before the tax the overview has $P^{\\prime}=4>0$, so a small expansion raises profit, so the statement is True.`,
+Before the tax,
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C^{\\prime}(Q)=14-10=4>0$$
+
+A positive derivative means a small expansion raises profit, so the statement is True.`,
       `**B.** → True
 
-After the tax the relevant marginal cost is $\\widetilde{C}^{\\prime}=15$, so the statement is True.`,
+The new cost is $\\widetilde{C}(Q)=C(Q)+5Q$. Differentiating gives
+
+$$\\widetilde{C}^{\\prime}(Q)=C^{\\prime}(Q)+5=10+5=15$$
+
+After the tax the relevant marginal cost is $15$, so the statement is True.`,
       `**C.** → False
 
-After the tax $\\widetilde{P}^{\\prime}=14-15=-1<0$, so a small expansion does not raise profit, so the statement is False.`,
+After the tax, compare the unchanged marginal revenue with the new marginal cost:
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-\\widetilde{C}^{\\prime}(Q)=14-15=-1<0$$
+
+A negative derivative means a small expansion lowers profit rather than raising it, so the statement is False.`,
       `**D.** → True
 
-The shared solution switches the cost function being differentiated from $C$ to $\\widetilde{C}$, so the statement is True.`,
+The extra-cost side of the expansion test must use the cost schedule the firm actually faces.
+
+After the tax that schedule is $\\widetilde{C}$, not the old $C$, and the tax changes which function must be differentiated, so the statement is True.`,
       `**E.** → True
 
-Revenue is unchanged, so marginal revenue remains $14$ after the tax, so the statement is True.`
+The revenue schedule is left unchanged by the tax, so its derivative is unchanged:
+
+$$R^{\\prime}(Q)=14$$
+
+still after the tax, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 73,
@@ -3607,19 +4761,45 @@ so a small expansion no longer raises profit. The extra-cost side must now diffe
     tactical_explanations: [
       `**A.** → True
 
-The overview builds $R=40Q-Q^{2}$ and $R^{\\prime}=40-2Q$ on the first piece, so the statement is True.`,
+For $Q<30$, price is $p(Q)=40-Q$, so revenue is
+
+$$R(Q)=Q(40-Q)=40Q-Q^{2}$$
+
+Differentiating gives
+
+$$R^{\\prime}(Q)=40-2Q$$
+
+which matches the claim, so the statement is True.`,
       `**B.** → True
 
-Under flat clearance pricing the shared marginal revenue collapses to the flat price $10$, so the statement is True.`,
+Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
+
+Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$, so the statement is True.`,
       `**C.** → True
 
-At $Q=12$ one has $P^{\\prime}=16-12=4>0$, so a small expansion raises profit, so the statement is True.`,
+At $Q=12<30$,
+
+$$R^{\\prime}(12)=40-2\\cdot 12=40-24=16$$
+
+Compare with packing cost $C^{\\prime}=12$:
+
+$$P^{\\prime}(12)=16-12=4>0$$
+
+A small expansion raises profit at $Q=12$, so the statement is True.`,
       `**D.** → False
 
-At $Q=35$ one has $R^{\\prime}=10<12=C^{\\prime}$, so clearance pricing does not leave $R^{\\prime}>C^{\\prime}$, so the statement is False.`,
+At $Q=35$ clearance pricing is in force, so $R^{\\prime}(35)=10$. Then
+
+$$R^{\\prime}(35)-C^{\\prime}(35)=10-12=-2<0$$
+
+hence $R^{\\prime}<C^{\\prime}$, not $R^{\\prime}>C^{\\prime}$, so the statement is False.`,
       `**E.** → False
 
-Extra revenue at $Q=12$ is $R^{\\prime}(12)=16$, not the posted price $28$, so the statement is False.`
+At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the posted price is
+
+$$p(12)=40-12=28$$
+
+Those are different numbers: under a downward-sloping price, $R^{\\prime}\\neq p$ in general, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 74,
@@ -3650,19 +4830,43 @@ so a small expansion raises profit. At $Q=35$, clearance gives $R^{\\prime}=10<1
     tactical_explanations: [
       `**A.** → True
 
-Firm A has $C_A^{\\prime}<A_A$, so its average cost is currently falling, so the statement is True.`,
+Average cost falls when marginal cost lies below average cost. For firm A,
+
+$$C_A^{\\prime}=5<8=A_A$$
+
+Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling, so the statement is True.`,
       `**B.** → True
 
-Firm B has $C_B^{\\prime}>A_B$, so its average cost is currently rising, so the statement is True.`,
+Average cost rises when marginal cost sits above average cost. Differentiating $A=C/Q$ gives the sign rule
+
+$$A^{\\prime}(Q)=\\dfrac{C^{\\prime}(Q)-A(Q)}{Q}$$
+
+For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising, and the statement is True.`,
       `**C.** → False
 
-The expand test uses $R'$ versus $C^{\\prime}$, not average cost. Here A should take the unit and B should not, so the statement is False.`,
+The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
+
+$$7>5\\qquad\\text{at A}$$
+
+$$7<9\\qquad\\text{at B}$$
+
+A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison, so the statement is False.`,
       `**D.** → True
 
-Only Firm A satisfies $R'>C'$ ($7>5$), while B has $7<9$, so the statement is True.`,
+The extra-unit test compares $R'$ with each plant's marginal cost. Here $R'=7$, so
+
+$$7>5=C_A^{\\prime}\\qquad\\text{but}\\qquad 7<9=C_B^{\\prime}$$
+
+Only firm A satisfies $R'>C'$, so the statement is True.`,
       `**E.** → True
 
-The overview's one-unit profit changes are $+2$ at A and $-2$ at B, so the statement is True.`
+The extra-profit figures are
+
+$$P_A^{\\prime}=7-5=2$$
+
+$$P_B^{\\prime}=7-9=-2$$
+
+The extra unit adds about $2$ euros of profit at A and subtracts about $2$ euros at B, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 75,
@@ -3689,19 +4893,29 @@ Only A has $R'>C'$. Being cheaper on average does not decide who should take the
     tactical_explanations: [
       `**A.** → True
 
-Studio A has positive stock $50$ with $P_A^{\\prime}=0$, so a tiny output change leaves that profit locally unchanged, so the statement is True.`,
+Studio A reports $P_A(Q)=50>0$ and $P_A^{\\prime}(Q)=0$.
+
+The stock of profit is positive, while a tiny change in output leaves that stock locally unchanged because the slope is zero, so the statement is True.`,
       `**B.** → True
 
-Studio B is at $P_B=0$ with $P_B^{\\prime}=4>0$, so a small expansion would start to create profit, so the statement is True.`,
+Studio B reports $P_B(Q)=0$ together with $P_B^{\\prime}(Q)=4>0$.
+
+Breaking even today is compatible with an upward slope: a small expansion would push profit above zero, so the statement is True.`,
       `**C.** → False
 
-$P_A^{\\prime}=0$ is a flat slope, not a claim that A earns nothing; A already has $P_A=50$, so the statement is False.`,
+Zero slope is not a zero height. Studio A already earns $P_A(Q)=50$.
+
+The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that output, not that A earns nothing, so the statement is False.`,
       `**D.** → True
 
-B should expand because $P_B^{\\prime}>0$, while A's FOC is already $R_A^{\\prime}=C_A^{\\prime}$, so the statement is True.`,
+$P_B^{\\prime}(Q)=4>0$ is an expansion signal for B.
+
+For A, $P_A^{\\prime}(Q)=0$ rearranges to $R_A^{\\prime}(Q)=C_A^{\\prime}(Q)$, the usual first-order condition, so the statement is True.`,
       `**E.** → False
 
-A zero stock of profit does not forbid a positive slope; B has $P_B=0$ with $P_B^{\\prime}=4$, so the statement is False.`
+A zero height can sit on an upward slope. That is exactly studio B: $P_B(Q)=0$ while $P_B^{\\prime}(Q)=4>0$.
+
+Current break-even does not forbid a positive marginal profit, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 76,
@@ -3728,19 +4942,37 @@ and a tiny output change leaves profit locally unchanged even though the firm is
     tactical_explanations: [
       `**A.** → True
 
-The overview records $C_{\\mathrm{wd}}^{\\prime}=12$, so the statement is True.`,
+Weekday cost is $C_{\\mathrm{wd}}(Q)=12Q$. Differentiating gives
+
+$$C_{\\mathrm{wd}}^{\\prime}(Q)=12$$
+
+On a weekday each extra sale adds $12$ euros of cost, so the statement is True.`,
       `**B.** → True
 
-Weekend overtime raises the cost of an extra sale by $20-12=8$ euros relative to the weekday schedule, so the statement is True.`,
+Weekend cost is $C_{\\mathrm{we}}(Q)=20Q$, so $C_{\\mathrm{we}}^{\\prime}(Q)=20$. The weekday slope was $12$, and
+
+$$20-12=8$$
+
+Overtime therefore raises the extra-sale cost by $8$ euros relative to the weekday schedule, so the statement is True.`,
       `**C.** → True
 
-On a weekday $P^{\\prime}=15-12=3>0$, so a small extra sale raises profit, so the statement is True.`,
+On a weekday,
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{wd}}^{\\prime}(Q)=15-12=3>0$$
+
+A positive marginal profit means a small extra sale raises weekday profit, so the statement is True.`,
       `**D.** → False
 
-Weekend marginal profit is $15-20=-5$, not the weekday figure $3$, so the statement is False.`,
+Weekend marginal profit uses the weekend cost slope, not the weekday one:
+
+$$P^{\\prime}(Q)=R^{\\prime}(Q)-C_{\\mathrm{we}}^{\\prime}(Q)=15-20=-5$$
+
+That is not equal to the weekday figure $3$. Same $R^{\\prime}$ with a higher $C^{\\prime}$ changes the profit slope, so the statement is False.`,
       `**E.** → True
 
-The shared solution changes the cost function being differentiated while leaving the meaning of $R^{\\prime}$ alone, so the statement is True.`
+$R^{\\prime}(Q)=15$ is the same number both days.
+
+What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule or the weekend rule. The meaning of marginal revenue does not change, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 77,
@@ -3773,19 +5005,37 @@ The weekday-versus-weekend switch changes which cost function is differentiated;
     tactical_explanations: [
       `**A.** → True
 
-The overview translates the reviewer's sentence into $R_L^{\\prime}<C_L^{\\prime}$, so the statement is True.`,
+"Extra revenue smaller than extra cost" is precisely the inequality of derivatives
+
+$$R_L^{\\prime}(Q)<C_L^{\\prime}(Q)$$
+
+The reviewer's sentence is already that comparison, so the statement is True.`,
       `**B.** → True
 
-Shop L's implied marginal cost is $C_L^{\\prime}=9-(-4)=13$, so the statement is True.`,
+From $P_L^{\\prime}(Q)=R_L^{\\prime}(Q)-C_L^{\\prime}(Q)$ and the posted numbers,
+
+$$-4=9-C_L^{\\prime}(Q)$$
+
+$$C_L^{\\prime}(Q)=13$$
+
+Shop L's implied marginal cost is $13$, so the statement is True.`,
       `**C.** → True
 
-Shop M has $R_M^{\\prime}=9>6=C_M^{\\prime}$, so it does not satisfy the reviewer's $R'<C'$ sentence, so the statement is True.`,
+At Shop M, $R_M^{\\prime}(Q)=9>6=C_M^{\\prime}(Q)$, so extra revenue is larger than extra cost.
+
+That is the opposite of the reviewer's sentence, and Shop M does not satisfy it, so the statement is True.`,
       `**D.** → True
 
-The shared signs are $P_M^{\\prime}>0$ and $P_L^{\\prime}<0$, so expansion raises profit at M and lowers it at L, so the statement is True.`,
+Shop M has
+
+$$P_M^{\\prime}(Q)=9-6=3>0$$
+
+while Shop L has $P_L^{\\prime}(Q)=-4<0$. A small expansion raises profit at M and lowers it at L, so the statement is True.`,
       `**E.** → False
 
-Same $R^{\\prime}=9$ accompanies $C_L^{\\prime}=13$ and $C_M^{\\prime}=6$; the extra-cost figures differ, so the statement is False.`
+Both shops share $R^{\\prime}(Q)=9$, but their cost slopes differ: $C_L^{\\prime}(Q)=13$ versus $C_M^{\\prime}(Q)=6$.
+
+Same extra revenue does not force the same extra cost, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 78,
@@ -3816,19 +5066,49 @@ so a small expansion raises profit at M and lowers it at L. Same $R^{\\prime}$ d
     tactical_explanations: [
       `**A.** → True
 
-Differentiating the first piece as in the overview gives $P^{\\prime}(Q)=8-\\dfrac{1}{5}Q$ for $Q<30$, so the statement is True.`,
+On the pre-capacity piece,
+
+$$P(Q)=8Q-\\dfrac{1}{10}Q^{2}$$
+
+Differentiating term by term:
+
+$$P^{\\prime}(Q)=8-\\dfrac{2}{10}Q$$
+
+$$P^{\\prime}(Q)=8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30$$
+
+The claim matches, so the statement is True.`,
       `**B.** → True
 
-At $Q=20$ the shared evaluation is $P^{\\prime}=4>0$, so a small expansion raises profit, so the statement is True.`,
+At $Q=20$,
+
+$$P^{\\prime}(20)=8-\\dfrac{1}{5}\\cdot 20$$
+
+$$P^{\\prime}(20)=8-4=4>0$$
+
+A small expansion raises profit at $Q=20$, so the statement is True.`,
       `**C.** → True
 
-On the outsourcing piece the overview records $P^{\\prime}=-4$, so the statement is True.`,
+On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
+
+$$P^{\\prime}(Q)=-4\\qquad\\text{for }Q>30$$
+
+which matches the claim, so the statement is True.`,
       `**D.** → False
 
-Just above $30$ one has $P^{\\prime}=-4<0$, so a small expansion lowers profit rather than raising it, so the statement is False.`,
+Just above capacity the firm is on the outsourcing piece, where $P^{\\prime}(Q)=-4<0$.
+
+A small expansion lowers profit; it does not raise it, so the statement is False.`,
       `**E.** → False
 
-$P(30)=150$ is the stock at capacity, not the marginal contribution of the thirtieth unit, so the statement is False.`
+$P(30)=150$ is the profit stock at capacity, not the contribution of the thirtieth unit alone.
+
+Approaching $Q=30$ from the left,
+
+$$P^{\\prime}(30^{-})=8-\\dfrac{1}{5}\\cdot 30$$
+
+$$P^{\\prime}(30^{-})=8-6=2$$
+
+The thirtieth unit adds about $2$ euros of profit, not $150$, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 79,
@@ -3859,19 +5139,35 @@ so just above $Q=30$ a small expansion lowers profit. The level $P(30)=150$ is t
     tactical_explanations: [
       `**A.** → True
 
-The overview recovers the café's marginal cost as $C^{\\prime}(40)=3-1=2$, so the statement is True.`,
+For the café, $P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)$ gives
+
+$$1=3-C^{\\prime}(40)$$
+
+$$C^{\\prime}(40)=2$$
+
+The café's implied marginal cost is $2$, so the statement is True.`,
       `**B.** → True
 
-The kiosk's implied marginal profit is $P^{\\prime}(40)=3-5=-2$, so the statement is True.`,
+For the kiosk,
+
+$$P^{\\prime}(40)=R^{\\prime}(40)-C^{\\prime}(40)=3-5=-2$$
+
+The kiosk's implied marginal profit is $-2$, so the statement is True.`,
       `**C.** → True
 
-The shared signs are $P^{\\prime}=1>0$ at the café and $P^{\\prime}=-2<0$ at the kiosk, so the statement is True.`,
+The café has $P^{\\prime}(40)=1>0$, so a small extra item raises café profit.
+
+The kiosk has $P^{\\prime}(40)=-2<0$, and a small extra item lowers kiosk profit, so the statement is True.`,
       `**D.** → False
 
-The café has $C^{\\prime}=2$ while the kiosk has $C^{\\prime}=5$; same $R^{\\prime}$ and $Q$ do not force equal marginal costs, so the statement is False.`,
+Same $R^{\\prime}(40)$ and same $Q$ do not force the same cost slope.
+
+The recovered values are already different: $C^{\\prime}(40)=2$ at the café versus $C^{\\prime}(40)=5$ at the kiosk, so the statement is False.`,
       `**E.** → False
 
-$P^{\\prime}(40)=1$ is a rate, not the stock $P(40)$, so the statement is False.`
+$P^{\\prime}(40)=1$ is a rate of change of profit.
+
+The height $P(40)$ of today's profit was never posted and need not equal $1$, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 80,
@@ -3900,31 +5196,47 @@ A small extra item therefore raises profit at the café ($P^{\\prime}=1>0$) and 
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already produces the slope of daily profit.
+Marginal profit is the derivative of the given daily-profit rule, taken term by term.
+
+$$P(Q)=-Q^{2}+12Q-20$$
 
 $$P^{\\prime}(Q)=-2Q+12$$
 
-That matches the claimed marginal-profit formula exactly, so the statement is True.`,
+That slope matches the claim exactly, so the statement is True.`,
       `**B.** → True
 
-From the shared first-order condition, set the slope to zero.
+An interior peak can occur only where the graph is momentarily flat, so set the slope to zero.
 
-$$-2Q+12=0\\Rightarrow Q=6$$
+$$P^{\\prime}(Q)=-2Q+12=0$$
 
-On $Q\\ge 0$ this is the only root, so six lamps is the unique flat-slope output, so the statement is True.`,
+$$2Q=12$$
+
+$$Q=6$$
+
+On $Q\\ge 0$ this is the only root, so six lamps is the unique flat-slope candidate, so the statement is True.`,
       `**C.** → True
 
-The shared second derivative is constantly $P^{\\prime\\prime}=-2<0$, so at $Q=6$ the profit curve bends strictly downward and that output is a local profit peak, so the statement is True.`,
+The second derivative reads the bend of the profit curve at that flat spot.
+
+$$P^{\\prime\\prime}(Q)=-2$$
+
+In particular $P^{\\prime\\prime}(6)=-2<0$. A negative second derivative means the curve bends strictly downward, so $Q=6$ is a local profit peak, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation of the profit *level* at the peak already gives
+Substitute the flat-slope output into the profit level (not into the slope).
 
-$$P(6)=16$$
+$$P(6)=-6^{2}+12\\cdot 6-20$$
 
-so daily profit at six lamps equals $16$ euros, so the statement is True.`,
+$$P(6)=-36+72-20=16$$
+
+Daily profit at six lamps is $16$ euros, so the statement is True.`,
       `**E.** → False
 
-The shared solution separates the flat slope $P^{\\prime}(6)=0$ from the positive level $P(6)=16$. Zero slope describes how profit changes, not how large it is, so the statement is False.`
+A flat slope describes how profit *changes* at that output, not how large profit *is*. Evaluating the level separately gives
+
+$$P(6)=16\\neq 0$$
+
+Zero slope does not force zero profit, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 81,
@@ -3961,27 +5273,55 @@ so six lamps yield $16$ euros of daily profit. A zero slope never forces the pro
     tactical_explanations: [
       `**A.** → True
 
-The shared expansion of revenue minus cost already simplifies to
+Profit is revenue minus cost; expand and collect like terms.
+
+$$P(Q)=R(Q)-C(Q)=(30Q-Q^{2})-(Q^{2}+6Q+40)$$
 
 $$P(Q)=-2Q^{2}+24Q-40$$
 
-matching the claim, so the statement is True.`,
+That simplified quadratic matches the claim, so the statement is True.`,
       `**B.** → True
 
-Differentiating that shared profit rule gives marginal profit
+Differentiate the simplified profit rule term by term to read marginal profit.
+
+$$P(Q)=-2Q^{2}+24Q-40$$
 
 $$P^{\\prime}(Q)=-4Q+24$$
 
-exactly as claimed, so the statement is True.`,
+That slope is exactly the claimed marginal profit, so the statement is True.`,
       `**C.** → True
 
-The shared first-order condition $-4Q+24=0$ yields $Q=6$, so profit has a flat slope at six lunch boxes, so the statement is True.`,
+Set the slope of profit to zero and solve for daily output.
+
+$$P^{\\prime}(Q)=-4Q+24=0$$
+
+$$4Q=24$$
+
+$$Q=6$$
+
+Six lunch boxes is the unique positive flat-slope output, so the statement is True.`,
       `**D.** → True
 
-The shared marginal schedules evaluate to $R^{\\prime}(6)=C^{\\prime}(6)=18$, so both equal $18$ euros at six boxes, so the statement is True.`,
+Marginal revenue and marginal cost are the derivatives of $R$ and $C$.
+
+$$R^{\\prime}(Q)=30-2Q,\\qquad C^{\\prime}(Q)=2Q+6$$
+
+At $Q=6$:
+
+$$R^{\\prime}(6)=30-12=18$$
+
+$$C^{\\prime}(6)=12+6=18$$
+
+Both equal $18$ euros at six boxes, so the statement is True.`,
       `**E.** → False
 
-Flat profit slope means $P^{\\prime}(6)=0$, not that the levels coincide. The shared evaluation already shows $P(6)=32\\neq 112=C(6)$, so the statement is False.`
+Flat profit slope means $P^{\\prime}(6)=0$, not that the *levels* $P(6)$ and $C(6)$ coincide. Compute both:
+
+$$P(6)=-2\\cdot 36+24\\cdot 6-40=-72+144-40=32$$
+
+$$C(6)=36+36+40=112$$
+
+The levels $32$ and $112$ differ, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 82,
@@ -4018,19 +5358,41 @@ and the bend $P^{\\prime\\prime}=-4<0$ confirms a local profit peak. The *levels
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order condition $2Q-10=0$ has the unique root $Q=5$, so cost has a flat slope only at five vans, so the statement is True.`,
+Differentiate the cost model and set the slope to zero.
+
+$$C^{\\prime}(Q)=2Q-10$$
+
+$$2Q-10=0$$
+
+$$Q=5$$
+
+So the only flat-slope fleet size is five vans, so the statement is True.`,
       `**B.** → True
 
-The shared bend $C^{\\prime\\prime}=2>0$ means the cost curve bends upward at five vans, so that fleet size is a local cost trough, so the statement is True.`,
+The second derivative reads the bend of the cost curve.
+
+$$C^{\\prime\\prime}(Q)=2>0$$
+
+everywhere, including at $Q=5$. A positive second derivative means the curve bends upward, so five vans is a local cost trough, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation already gives the trough cost $C(5)=15$ (hundreds of euros), so the statement is True.`,
+Evaluate cost at the trough fleet size.
+
+$$C(5)=5^{2}-10\\cdot 5+40$$
+
+$$C(5)=25-50+40=15$$
+
+The trough cost is $15$ (hundreds of euros), so the statement is True.`,
       `**D.** → False
 
-A flat slope alone does not decide peak versus trough. The shared bend is upward ($C^{\\prime\\prime}>0$), so five vans is a trough, not a local cost peak, so the statement is False.`,
+A flat slope alone does not decide peak versus trough. Here the bend is upward:
+
+$$C^{\\prime\\prime}(5)=2>0$$
+
+so five vans is a local *minimum* of cost, not a peak. Claiming a local cost maximum reverses the correct label, so the statement is False.`,
       `**E.** → True
 
-Because $C^{\\prime\\prime}>0$ everywhere and the vertex $Q=5$ lies in $Q\\ge 0$, the local trough is also the global cost minimum on the domain, so the statement is True.`
+On $Q\\ge 0$ the parabola opens upward ($C^{\\prime\\prime}=2>0$) with its vertex at $Q=5\\ge 0$. Therefore the local trough is also the global minimum on the domain: the cost-minimising fleet is five vans globally as well as locally, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 83,
@@ -4067,19 +5429,37 @@ and since the parabola opens upward with its vertex already inside $Q\\ge 0$, th
     tactical_explanations: [
       `**A.** → True
 
-The shared derivatives already show $A^{\\prime}(0)=A^{\\prime\\prime}(0)=B^{\\prime}(0)=B^{\\prime\\prime}(0)=0$, so both scores have a flat slope and a flat second derivative at zero, so the statement is True.`,
+Differentiate each score twice and evaluate at intensity zero.
+
+$$A^{\\prime}(x)=4x^{3},\\qquad A^{\\prime\\prime}(x)=12x^{2}$$
+
+$$B^{\\prime}(x)=-4x^{3},\\qquad B^{\\prime\\prime}(x)=-12x^{2}$$
+
+At $x=0$ both first and second derivatives vanish for each score, so the statement is True.`,
       `**B.** → True
 
-Because those shared second derivatives are zero at the critical point, the usual bend test cannot classify either score, so the check is inconclusive for both, so the statement is True.`,
+The usual second-derivative test needs a strictly negative or strictly positive bend. Here
+
+$$A^{\\prime\\prime}(0)=0,\\qquad B^{\\prime\\prime}(0)=0$$
+
+so the bend test alone cannot classify either critical point, and the check is inconclusive for both, so the statement is True.`,
       `**C.** → True
 
-The shared nearby comparison $A(x)=x^{4}>A(0)$ for $x\\neq 0$ already proves a strict local trough of score $A$ at intensity zero, so the statement is True.`,
+Even though $A^{\\prime\\prime}(0)=0$, the fourth-power shape still settles the local picture. For every $x\\neq 0$,
+
+$$A(x)=x^{4}>0=A(0)$$
+
+so intensity zero is a strict local trough of score $A$, so the statement is True.`,
       `**D.** → True
 
-Likewise the shared comparison $B(x)=-x^{4}<B(0)$ for $x\\neq 0$ proves a strict local peak of score $B$ at zero, so the statement is True.`,
+Likewise, for every $x\\neq 0$,
+
+$$B(x)=-x^{4}<0=B(0)$$
+
+so intensity zero is a strict local peak of score $B$, even though the second derivative vanishes there, so the statement is True.`,
       `**E.** → False
 
-Vanishing of the second derivatives only makes the bend *test* inconclusive; the shared fourth-power comparisons already exhibit a trough for $A$ and a peak for $B$, so neither-can-be-an-extremum is false, so the statement is False.`
+Vanishing of the second derivative only makes the *usual bend test* inconclusive; it does not forbid a peak or trough. The fourth-power comparisons above already show a trough for $A$ and a peak for $B$ at zero, so the claim that neither can have an extremum there is false, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 84,
@@ -4118,19 +5498,39 @@ so zero is a strict local trough of $A$ and a strict local peak of $B$. Vanishin
     tactical_explanations: [
       `**A.** → True
 
-The shared slopes already evaluate to $P_A^{\\prime}(10)=P_B^{\\prime}(10)=0$, so both cafés have a flat profit slope at ten covers, so the statement is True.`,
+Differentiate each café's profit and evaluate the slopes at ten covers.
+
+$$P_A^{\\prime}(Q)=-2Q+20,\\qquad P_B^{\\prime}(Q)=2Q-20$$
+
+$$P_A^{\\prime}(10)=-20+20=0,\\qquad P_B^{\\prime}(10)=20-20=0$$
+
+Both slopes are flat at $Q=10$, so the statement is True.`,
       `**B.** → True
 
-Café A's shared bend $P_A^{\\prime\\prime}=-2<0$ means a downward bend at the flat spot, so ten covers is a local profit peak for A, so the statement is True.`,
+Read the bend of Café A's profit at the flat spot.
+
+$$P_A^{\\prime\\prime}(Q)=-2$$
+
+so $P_A^{\\prime\\prime}(10)=-2<0$. A downward bend at a flat slope means a local profit peak for A, so the statement is True.`,
       `**C.** → True
 
-Café B's shared bend $P_B^{\\prime\\prime}=2>0$ means an upward bend at the same output, so ten covers is a local profit trough for B, so the statement is True.`,
+Read the bend of Café B's profit at the same output.
+
+$$P_B^{\\prime\\prime}(Q)=2$$
+
+so $P_B^{\\prime\\prime}(10)=2>0$. An upward bend at a flat slope means a local profit trough for B, so the statement is True.`,
       `**D.** → False
 
-Both slopes are flat, but the shared bends are opposite: A peaks while B troughs. Flat slope alone does not make both maximisers, so the statement is False.`,
+Both cafés have a flat slope at ten covers, but the bends tell opposite stories: A has a peak while B has a trough. Flat slope alone does not mean both are maximising profit, so the statement is False.`,
       `**E.** → True
 
-The shared level evaluations already give $P_A(10)=50$ and $P_B(10)=-10$, matching the claim, so the statement is True.`
+Evaluate each profit level at ten covers.
+
+$$P_A(10)=-100+200-50=50$$
+
+$$P_B(10)=100-200+90=-10$$
+
+Café A's profit is $50$ euros and Café B's is $-10$ euros, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 85,
@@ -4169,19 +5569,41 @@ so flat slope alone does not mean both cafés are maximising profit.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation $P^{\\prime}(Q)=3(Q-1)(Q-3)$ already places flat slopes at one pack and three packs, both inside $(0,5)$, so the statement is True.`,
+Differentiate the cubic profit and set the slope to zero inside $(0,5)$.
+
+$$P^{\\prime}(Q)=3Q^{2}-12Q+9$$
+
+$$3(Q^{2}-4Q+3)=0$$
+
+$$(Q-1)(Q-3)=0$$
+
+so $Q=1$ or $Q=3$, both inside $(0,5)$, so the statement is True.`,
       `**B.** → True
 
-The shared bend signs $P^{\\prime\\prime}(1)<0$ and $P^{\\prime\\prime}(3)>0$ label one pack a local profit peak and three packs a local profit trough, so the statement is True.`,
+The second derivative classifies the two critical packs.
+
+$$P^{\\prime\\prime}(Q)=6Q-12$$
+
+$$P^{\\prime\\prime}(1)=-6<0,\\qquad P^{\\prime\\prime}(3)=6>0$$
+
+so one pack is a local profit peak and three packs is a local profit trough, so the statement is True.`,
       `**C.** → True
 
-The shared level list $P(1)=14$, $P(3)=10$, $P(0)=10$, $P(5)=30$ matches the claim exactly, so the statement is True.`,
+Evaluate profit at the two critical packs and at the endpoints.
+
+$$P(1)=1-6+9+10=14$$
+
+$$P(3)=27-54+27+10=10$$
+
+$$P(0)=10,\\qquad P(5)=125-150+45+10=30$$
+
+Those four values match the claim, so the statement is True.`,
       `**D.** → False
 
-Among those shared values, $P(1)=14$ is beaten by the endpoint $P(5)=30$, so the global maximum on $[0,5]$ is not at the local peak of one pack, so the statement is False.`,
+Comparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger, so the global maximum on $[0,5]$ is not at one pack, so the statement is False.`,
       `**E.** → True
 
-The largest shared candidate is $P(5)=30$, so the global profit maximum on $[0,5]$ is at the endpoint of five packs, so the statement is True.`
+Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 86,
@@ -4220,23 +5642,37 @@ shows the global maximum on $[0,5]$ is the endpoint $Q=5$, not the local peak at
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already produces
+Differentiate the stall's profit rule term by term.
+
+$$P(Q)=5Q-\\dfrac{Q^{2}}{10}+3$$
+
+$$P^{\\prime}(Q)=5-\\dfrac{2Q}{10}=5-\\dfrac{Q}{5}$$
+
+That slope matches the claim, so the statement is True.`,
+      `**B.** → True
+
+Inside $(0,8)$ the claimed slope stays strictly positive.
 
 $$P^{\\prime}(Q)=5-\\dfrac{Q}{5}$$
 
-matching the claim, so the statement is True.`,
-      `**B.** → True
-
-Because that shared slope stays positive through $(0,8]$, there is no interior root of $P^{\\prime}=0$, so the statement is True.`,
+At $Q=8$ one would have $P^{\\prime}(8)=5-\\dfrac{8}{5}=3.4>0$, and for every smaller positive $Q$ the slope is even larger. So there is no interior root of $P^{\\prime}(Q)=0$ on $(0,8)$, so the statement is True.`,
       `**C.** → True
 
-Strict positivity of the shared slope makes profit strictly increasing on $[0,8]$, so the maximum is at eight units and the minimum at zero, so the statement is True.`,
+Because $P^{\\prime}(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$, so the statement is True.`,
       `**D.** → False
 
-Endpoint maxima need not be critical points. The shared evaluation $P^{\\prime}(8)=\\dfrac{17}{5}>0$ shows the slope is still rising at eight units, so the statement is False.`,
+Endpoint maxima need not be critical points. Here
+
+$$P^{\\prime}(8)=5-\\dfrac{8}{5}=\\dfrac{17}{5}>0$$
+
+so the slope is still rising at eight units; the maximum sits at the boundary because the domain stops, not because the slope is flat, so the statement is False.`,
       `**E.** → True
 
-The shared endpoint evaluation already gives maximal profit $P(8)=36.6$ euros, so the statement is True.`
+Evaluate profit at the right endpoint.
+
+$$P(8)=5\\cdot 8-\\dfrac{64}{10}+3=40-6.4+3=36.6$$
+
+Maximal profit on the interval is $36.6$ euros, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 87,
@@ -4271,19 +5707,37 @@ $$P(8)=40-6.4+3=36.6$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation already places flat slopes at intensities $1$ and $3$, so the statement is True.`,
+Differentiate net benefit and set the slope to zero.
+
+$$B^{\\prime}(x)=3x^{2}-12x+9$$
+
+$$3(x^{2}-4x+3)=0$$
+
+$$(x-1)(x-3)=0$$
+
+so the flat-slope intensities are $x=1$ and $x=3$, so the statement is True.`,
       `**B.** → True
 
-The shared sign chart of $B^{\\prime}=3(x-1)(x-3)$ changes from positive to negative at intensity $1$, marking a local peak, so the statement is True.`,
+Factor the slope and read its sign chart around $x=1$.
+
+$$B^{\\prime}(x)=3(x-1)(x-3)$$
+
+For $0\\le x<1$ both factors are negative, so $B^{\\prime}>0$; just to the right of $1$ the factor $(x-1)$ becomes positive while $(x-3)$ stays negative, so $B^{\\prime}<0$. The change from positive to negative marks a local peak at intensity $1$, so the statement is True.`,
       `**C.** → True
 
-The same shared chart changes from negative to positive at intensity $3$, marking a local trough, so the statement is True.`,
+Around $x=3$ the same factored slope changes the other way: just left of $3$, $B^{\\prime}<0$, and just right of $3$ both factors are positive, so $B^{\\prime}>0$. The change from negative to positive marks a local trough at intensity $3$, so the statement is True.`,
       `**D.** → True
 
-The shared bend signs $B^{\\prime\\prime}(1)<0$ and $B^{\\prime\\prime}(3)>0$ confirm the same local peak at $1$ and local trough at $3$, so the statement is True.`,
+The second-derivative bend test confirms the same labels.
+
+$$B^{\\prime\\prime}(x)=6x-12$$
+
+$$B^{\\prime\\prime}(1)=-6<0,\\qquad B^{\\prime\\prime}(3)=6>0$$
+
+so intensity $1$ is a local peak and intensity $3$ is a local trough, matching the sign chart, so the statement is True.`,
       `**E.** → False
 
-A local peak need not be global. Because the shared cubic tends to infinity as $x\\to\\infty$, intensity $1$ is only a local peak on $[0,\\infty)$, so the statement is False.`
+A local peak need not be global on $[0,\\infty)$. As $x\\to\\infty$, the cubic $B(x)=x^{3}-6x^{2}+9x+2$ tends to infinity, so values beyond the local trough eventually exceed $B(1)$. Intensity $1$ is only a local peak, not the global maximum, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 88,
@@ -4316,19 +5770,47 @@ Flat slopes sit at $x=1$ and $x=3$. The sign chart of $B^{\\prime}$ changes from
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation already places flat slopes at two ovens and four ovens inside $(0,6)$, so the statement is True.`,
+Differentiate daily profit and set the slope to zero inside $(0,6)$.
+
+$$P^{\\prime}(Q)=-3Q^{2}+18Q-24$$
+
+$$-3(Q^{2}-6Q+8)=0$$
+
+$$(Q-2)(Q-4)=0$$
+
+so $Q=2$ or $Q=4$, both inside $(0,6)$, so the statement is True.`,
       `**B.** → True
 
-The shared bend $P^{\\prime\\prime}(2)>0$ labels two ovens a local profit trough, so the statement is True.`,
+Classify two ovens with the second derivative.
+
+$$P^{\\prime\\prime}(Q)=-6Q+18$$
+
+$$P^{\\prime\\prime}(2)=-12+18=6>0$$
+
+An upward bend at a flat slope means a local profit trough at two ovens, so the statement is True.`,
       `**C.** → True
 
-The shared bend $P^{\\prime\\prime}(4)<0$ labels four ovens a local profit peak, so the statement is True.`,
+Classify four ovens the same way.
+
+$$P^{\\prime\\prime}(4)=-24+18=-6<0$$
+
+A downward bend at a flat slope means a local profit peak at four ovens, so the statement is True.`,
       `**D.** → True
 
-Among the shared candidate values, the largest is $P(0)=30$, so the global profit maximum on $[0,6]$ is at zero ovens, so the statement is True.`,
+Compare profit at the critical ovens and at the endpoints.
+
+$$P(0)=30$$
+
+$$P(2)=-8+36-48+30=10$$
+
+$$P(4)=-64+144-96+30=14$$
+
+$$P(6)=-216+324-144+30=-6$$
+
+The largest value on $[0,6]$ is $P(0)=30$, so the global maximum is at zero ovens, so the statement is True.`,
       `**E.** → False
 
-The shared flat-slope list $Q=2,4$ only produces candidates. Without comparing levels to the endpoints one cannot prove which point maximises profit on $[0,6]$, so the statement is False.`
+Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces candidates. Without comparing their profit values to the endpoints, one cannot prove which point maximises profit on the closed interval, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 89,
@@ -4365,19 +5847,41 @@ shows the global maximum on $[0,6]$ is at zero ovens. Listing the flat-slope out
     tactical_explanations: [
       `**A.** → True
 
-The shared simplification already gives $P=-3Q^{2}+36Q-10$ with slope $P^{\\prime}=-6Q+36$, so the statement is True.`,
+Form profit as revenue minus cost, then differentiate.
+
+$$P(Q)=(40Q-2Q^{2})-(Q^{2}+4Q+10)=-3Q^{2}+36Q-10$$
+
+$$P^{\\prime}(Q)=-6Q+36$$
+
+Both the simplified profit and its slope match the claim, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition yields $Q=6$ with $R^{\\prime}(6)=C^{\\prime}(6)=16$, so the statement is True.`,
+Set marginal profit to zero, then check that marginal revenue equals marginal cost there.
+
+$$P^{\\prime}(Q)=-6Q+36=0\\Rightarrow Q=6$$
+
+$$R^{\\prime}(Q)=40-4Q,\\qquad C^{\\prime}(Q)=2Q+4$$
+
+$$R^{\\prime}(6)=40-24=16,\\qquad C^{\\prime}(6)=12+4=16$$
+
+Flat profit at six jobs coincides with $R^{\\prime}=C^{\\prime}=16$, so the statement is True.`,
       `**C.** → True
 
-The shared bend $P^{\\prime\\prime}=-6<0$ means a downward bend at six jobs, so that output is a local profit peak, so the statement is True.`,
+Read the bend of profit at six jobs.
+
+$$P^{\\prime\\prime}(Q)=-6$$
+
+so $P^{\\prime\\prime}(6)=-6<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation already gives peak profit $P(6)=98$ euros, so the statement is True.`,
+Evaluate profit at the peak output.
+
+$$P(6)=-3\\cdot 36+36\\cdot 6-10=-108+216-10=98$$
+
+Peak profit is $98$ euros, so the statement is True.`,
       `**E.** → False
 
-Matching $R^{\\prime}=C^{\\prime}$ only locates a critical point of profit. Without the shared bend check one cannot yet label it a peak rather than a trough, so skipping the bend is not enough, so the statement is False.`
+Matching $R^{\\prime}=C^{\\prime}$ only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or inflection, so skipping the bend check is not enough, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 90,
@@ -4414,19 +5918,39 @@ Matching $R^{\\prime}=C^{\\prime}$ only finds a critical point; without a bend c
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order conditions both give $Q=8$, so both bakeries have a flat profit slope at eight loaves, so the statement is True.`,
+Differentiate each bakery's profit and set the slopes to zero.
+
+$$P_N^{\\prime}(Q)=-2Q+16=0\\Rightarrow Q=8$$
+
+$$P_S^{\\prime}(Q)=2Q-16=0\\Rightarrow Q=8$$
+
+Both bakeries have a flat profit slope at eight loaves, so the statement is True.`,
       `**B.** → True
 
-North's shared bend $P_N^{\\prime\\prime}=-2<0$ means a downward bend at eight loaves, so that output is a local profit peak for North, so the statement is True.`,
+North's second derivative is constantly negative.
+
+$$P_N^{\\prime\\prime}(Q)=-2<0$$
+
+so at eight loaves the profit curve bends downward and that output is a local profit peak for North, so the statement is True.`,
       `**C.** → True
 
-South's shared bend $P_S^{\\prime\\prime}=2>0$ means an upward bend at eight loaves, so that output is a local profit trough for South, so the statement is True.`,
+South's second derivative is constantly positive.
+
+$$P_S^{\\prime\\prime}(Q)=2>0$$
+
+so at eight loaves the profit curve bends upward and that output is a local profit trough for South, so the statement is True.`,
       `**D.** → True
 
-The shared levels already give North's peak $P_N(8)=34$ and South's $P_S(8)=6$, so the statement is True.`,
+Evaluate each profit level at eight loaves.
+
+$$P_N(8)=-64+128-30=34$$
+
+$$P_S(8)=64-128+70=6$$
+
+North's peak profit is $34$ euros and South's profit at eight loaves is $6$ euros, so the statement is True.`,
       `**E.** → False
 
-Same flat-slope output does not imply both maximise. The shared bends show North peaks while South troughs, so both-at-a-maximum is false, so the statement is False.`
+Sharing the same flat-slope output does not make both bakeries maximisers. North has a peak there while South has a trough, so only North is at a profit maximum, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 91,
@@ -4461,19 +5985,29 @@ Sharing the same flat-slope output does not make both bakeries maximisers.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared derivatives already give $L^{\\prime}(0)=L^{\\prime\\prime}(0)=0$, so both the slope and the second derivative are flat at zero, so the statement is True.`,
+Differentiate the loyalty index twice and evaluate at intensity zero.
+
+$$L^{\\prime}(x)=-4x^{3},\\qquad L^{\\prime\\prime}(x)=-12x^{2}$$
+
+$$L^{\\prime}(0)=0,\\qquad L^{\\prime\\prime}(0)=0$$
+
+Both the slope and the second derivative are flat at zero, so the statement is True.`,
       `**B.** → True
 
-The usual downward-bend test needs $L^{\\prime\\prime}<0$, but the shared value $L^{\\prime\\prime}(0)=0$ blocks that test, so it does not apply at intensity zero, so the statement is True.`,
+The usual downward-bend test for a strict local peak requires $L^{\\prime\\prime}<0$ at the critical point. Here $L^{\\prime\\prime}(0)=0$, so that test does not apply at intensity zero, so the statement is True.`,
       `**C.** → True
 
-The shared comparison $L(x)\\le 10=L(0)$ for all $x$ already proves a strict global maximum at intensity zero, so the statement is True.`,
+Even so, compare values directly. For every $x\\neq 0$,
+
+$$L(x)=10-x^{4}<10=L(0)$$
+
+and $L(x)\\le 10$ for all real $x$, so intensity zero is a strict global maximum of the loyalty index, so the statement is True.`,
       `**D.** → False
 
-Vanishing of $L^{\\prime\\prime}$ only blocks the sufficient bend test; the shared global comparison still exhibits a peak at zero, so cannot-be-a-local-peak is false, so the statement is False.`,
+Vanishing of the second derivative only blocks the *usual bend test*; it does not forbid a peak. The direct comparison $L(x)=10-x^{4}\\le 10$ already proves a (global) peak at zero, so the claim that zero cannot be a local peak is false, so the statement is False.`,
       `**E.** → True
 
-A necessary condition at an interior local peak is $L^{\\prime\\prime}\\le 0$. The shared value $L^{\\prime\\prime}(0)=0$ still satisfies that inequality, so the statement is True.`
+At an interior local peak a necessary condition is $L^{\\prime\\prime}\\le 0$ (when the second derivative exists). Here $L^{\\prime\\prime}(0)=0$, which still satisfies that necessary inequality, even though the stricter $L^{\\prime\\prime}<0$ test fails, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 92,
@@ -4508,19 +6042,41 @@ with equality only at zero, so intensity zero is a strict global maximum. Vanish
     tactical_explanations: [
       `**A.** → True
 
-The shared cost analysis already places a flat upward bend at $Q=4$, so daily cost is minimised there, so the statement is True.`,
+Minimise cost by setting its slope to zero and checking the bend.
+
+$$C^{\\prime}(Q)=2Q-8=0\\Rightarrow Q=4$$
+
+$$C^{\\prime\\prime}(Q)=2>0$$
+
+so at four units cost has a flat slope and an upward bend — a local cost trough — so the statement is True.`,
       `**B.** → True
 
-The shared profit simplification $P=-2Q^{2}+28Q-30$ has flat slope at $Q=7$, matching the claim, so the statement is True.`,
+Form profit and find where its slope is flat.
+
+$$P(Q)=(20Q-Q^{2})-(Q^{2}-8Q+30)=-2Q^{2}+28Q-30$$
+
+$$P^{\\prime}(Q)=-4Q+28=0\\Rightarrow Q=7$$
+
+Profit simplifies as claimed and has a flat slope at seven units, so the statement is True.`,
       `**C.** → True
 
-The shared bend $P^{\\prime\\prime}=-4<0$ means a downward bend at seven units, so that output is a local profit peak, so the statement is True.`,
+Read the bend of profit at seven units.
+
+$$P^{\\prime\\prime}(Q)=-4$$
+
+so $P^{\\prime\\prime}(7)=-4<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
       `**D.** → False
 
-The shared extrema sit at different outputs: cost trough at $4$, profit peak at $7$. The cost-minimising output is not automatically the profit peak, so the statement is False.`,
+Cost is minimised at $Q=4$, while profit is maximised at $Q=7$. Those two outputs differ, so the cost trough is not automatically the profit peak, so the statement is False.`,
       `**E.** → True
 
-The shared levels already give $P(7)=68$ and $C(4)=14$, so the statement is True.`
+Evaluate the two levels at their respective extrema.
+
+$$P(7)=-2\\cdot 49+28\\cdot 7-30=-98+196-30=68$$
+
+$$C(4)=16-32+30=14$$
+
+Profit at the peak is $68$ euros and cost at the trough is $14$ euros, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 93,
@@ -4553,19 +6109,39 @@ Cost has a flat upward bend at $Q=4$ (trough, $C(4)=14$). Profit has a flat down
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order conditions both give $t=5$, so both hikers have a flat utility slope at five hours, so the statement is True.`,
+Differentiate each hiker's utility and set the slopes to zero.
+
+$$U_A^{\\prime}(t)=-2t+10=0\\Rightarrow t=5$$
+
+$$U_B^{\\prime}(t)=2t-10=0\\Rightarrow t=5$$
+
+Both hikers have a flat utility slope at five hours, so the statement is True.`,
       `**B.** → True
 
-A's shared bend $U_A^{\\prime\\prime}=-2<0$ means a downward bend at five hours, so that hour maximises A's satisfaction locally, so the statement is True.`,
+Hiker A's second derivative is constantly negative.
+
+$$U_A^{\\prime\\prime}(t)=-2<0$$
+
+so at five hours the utility curve bends downward and that hour maximises A's satisfaction locally, so the statement is True.`,
       `**C.** → True
 
-B's shared bend $U_B^{\\prime\\prime}=2>0$ means an upward bend at five hours, so that hour minimises B's satisfaction locally, so the statement is True.`,
+Hiker B's second derivative is constantly positive.
+
+$$U_B^{\\prime\\prime}(t)=2>0$$
+
+so at five hours the utility curve bends upward and that hour minimises B's satisfaction locally, so the statement is True.`,
       `**D.** → True
 
-The shared levels already give $U_A(5)=25$ and $U_B(5)=5$, so the statement is True.`,
+Evaluate each utility at five hours.
+
+$$U_A(5)=-25+50=25$$
+
+$$U_B(5)=25-50+30=5$$
+
+A's peak utility is $25$ and B's utility at five hours is $5$, so the statement is True.`,
       `**E.** → False
 
-Same flat-slope hour does not imply both maximise. The shared bends show A peaks while B troughs, so both-maximising is false, so the statement is False.`
+Sharing the same flat-slope hour does not mean both are maximising. A has a peak there while B has a trough, so only A is maximising satisfaction at five hours, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 94,
@@ -4596,19 +6172,37 @@ Both slopes vanish at five hours, but A bends downward (local peak, $U_A(5)=25$)
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation of $f^{\\prime}$ already places flat slopes at $-2$, $0$, and $2$, so the statement is True.`,
+Differentiate the payoff and set the slope to zero.
+
+$$f^{\\prime}(x)=4x^{3}-16x=4x(x^{2}-4)=4x(x-2)(x+2)$$
+
+so the flat-slope intensities are $x=-2$, $x=0$, and $x=2$, so the statement is True.`,
       `**B.** → True
 
-The shared bend evaluations already give $f^{\\prime\\prime}(\\pm 2)>0$ and $f^{\\prime\\prime}(0)<0$, so the statement is True.`,
+Differentiate once more and evaluate at the three critical points.
+
+$$f^{\\prime\\prime}(x)=12x^{2}-16$$
+
+$$f^{\\prime\\prime}(\\pm 2)=12\\cdot 4-16=32>0$$
+
+$$f^{\\prime\\prime}(0)=-16<0$$
+
+The second derivative is positive at $\\pm 2$ and negative at $0$, so the statement is True.`,
       `**C.** → True
 
-Those shared bend signs label $\\pm 2$ as local troughs and $0$ as a local peak, so the statement is True.`,
+Positive second derivative marks a local trough; negative marks a local peak. Therefore $\\pm 2$ are local troughs and $0$ is a local peak, so the statement is True.`,
       `**D.** → True
 
-The shared levels are $f(0)=16$ and $f(\\pm 2)=0$, matching the claim, so the statement is True.`,
+Evaluate payoff at the three critical intensities.
+
+$$f(0)=16$$
+
+$$f(\\pm 2)=16-32+16=0$$
+
+The local peak value is $16$ and each local trough has value $0$, so the statement is True.`,
       `**E.** → False
 
-Because the shared $f(x)\\to\\infty$ as $|x|\\to\\infty$, intensity zero is only a local peak, not the global maximum on the real line, so the statement is False.`
+Rewrite $f(x)=(x^{2}-4)^{2}$. As $|x|\\to\\infty$, $f(x)\\to\\infty$, so values far from zero exceed the local peak $f(0)=16$. Intensity zero is only a local peak, not the global maximum on the real line, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 95,
@@ -4639,19 +6233,29 @@ Flat slopes sit at $x=-2$, $0$, and $2$. The bend signs are $f^{\\prime\\prime}(
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order condition $4h-24=0$ yields $h=6$, so the slope of cost is flat at six open hours, so the statement is True.`,
+Differentiate cost and set the slope to zero.
+
+$$C^{\\prime}(h)=4h-24=0$$
+
+$$h=6$$
+
+The slope of cost is flat at six open hours, so the statement is True.`,
       `**B.** → True
 
-The shared bend $C^{\\prime\\prime}=4>0$ means an upward bend at six hours, so that schedule is a local cost trough, so the statement is True.`,
+Read the bend at six hours.
+
+$$C^{\\prime\\prime}(h)=4>0$$
+
+so $C^{\\prime\\prime}(6)=4>0$. An upward bend at a flat slope means a local cost trough, so the statement is True.`,
       `**C.** → True
 
-For cost minimisation, a flat slope with an upward bend is exactly the right extremum. The shared trough at six hours therefore supports calling that schedule optimal for cost control, so the statement is True.`,
+For a cost-minimisation goal, a flat slope together with an upward bend is exactly the right type of extremum: a local cost trough. Calling six hours optimal for cost control is therefore reasonable on that evidence, so the statement is True.`,
       `**D.** → True
 
-A cost-*maximum* would need a downward bend. The shared upward bend makes six hours the wrong type of extremum for maximising cost, so the statement is True.`,
+If the clinic instead wanted to *maximise* cost, it would need a local peak (downward bend). The same flat-slope point has $C^{\\prime\\prime}(6)>0$, so it is a trough, not a peak — the wrong type of extremum for a maximisation goal, so the statement is True.`,
       `**E.** → False
 
-A zero slope only identifies a critical point. The shared bend is upward, so the clinic is cost-minimising, not maximising — a bend check is still needed, so the statement is False.`
+A zero slope only identifies a critical point; the bend decides peak versus trough. Here the bend is upward, so the clinic is cost-*minimising*, not maximising. Claiming that a flat slope already means cost-maximising is false, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 96,
@@ -4682,19 +6286,33 @@ The only flat-slope schedule is $h=6$, and the positive bend labels it a local c
     tactical_explanations: [
       `**A.** → True
 
-The shared slopes already give $P_A^{\\prime}(3)=P_B^{\\prime}(3)=0$, so both have a flat profit slope at three screenings, so the statement is True.`,
+Differentiate each cinema's profit and evaluate at three screenings.
+
+$$P_A^{\\prime}(Q)=-2(Q-3),\\qquad P_B^{\\prime}(Q)=3(Q-3)^{2}$$
+
+$$P_A^{\\prime}(3)=0,\\qquad P_B^{\\prime}(3)=0$$
+
+Both have a flat profit slope at three screenings, so the statement is True.`,
       `**B.** → True
 
-Cinema A's shared bend $P_A^{\\prime\\prime}=-2<0$ (equivalently $P_A\\le 5$) proves a local profit peak at three screenings, so the statement is True.`,
+For Cinema A the second derivative is constantly negative.
+
+$$P_A^{\\prime\\prime}(Q)=-2<0$$
+
+so three screenings is a local profit peak for A (equivalently, $P_A(Q)=5-(Q-3)^{2}\\le 5$), so the statement is True.`,
       `**C.** → True
 
-Cinema B's shared second derivative vanishes at $Q=3$, so the usual bend check is inconclusive there, so the statement is True.`,
+For Cinema B,
+
+$$P_B^{\\prime\\prime}(Q)=6(Q-3)$$
+
+so $P_B^{\\prime\\prime}(3)=0$. The usual bend test needs a strictly positive or strictly negative second derivative, so at three screenings the check is inconclusive for B, so the statement is True.`,
       `**D.** → True
 
-The shared slope $P_B^{\\prime}=3(Q-3)^{2}$ stays non-negative on both sides of $Q=3$ with no sign change, so three screenings is neither a local peak nor a local trough for B, so the statement is True.`,
+Cinema B's slope $P_B^{\\prime}(Q)=3(Q-3)^{2}$ is nonnegative on both sides of $Q=3$ and zero only at that point. There is no sign change, so three screenings is neither a local peak nor a local trough for B (it is a flat inflection), so the statement is True.`,
       `**E.** → False
 
-Both slopes are flat, but only A has a peak; B's flat point is an inflection. Both-at-a-profit-peak is therefore false, so the statement is False.`
+Both have a flat slope at three screenings, but only Cinema A has a local profit peak there. Cinema B's flat point is an inflection with no sign change of the slope, so both are not at a profit peak, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 97,
@@ -4727,19 +6345,33 @@ Both slopes vanish at three screenings. For A the bend $P_A^{\\prime\\prime}<0$ 
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation $f^{\\prime}=3x(x-2)$ already places flat slopes at $x=0$ and $x=2$, so the statement is True.`,
+Differentiate and set the slope to zero.
+
+$$f^{\\prime}(x)=3x^{2}-6x=3x(x-2)$$
+
+so $f^{\\prime}(x)=0$ at $x=0$ and $x=2$, matching the student's list of flat-slope outputs, so the statement is True.`,
       `**B.** → True
 
-The shared bend $f^{\\prime\\prime}(0)<0$ labels $x=0$ a local peak, so the statement is True.`,
+Classify $x=0$ with the second derivative.
+
+$$f^{\\prime\\prime}(x)=6x-6$$
+
+$$f^{\\prime\\prime}(0)=-6<0$$
+
+A downward bend at a flat slope means a local peak at $x=0$, so the statement is True.`,
       `**C.** → True
 
-The shared bend $f^{\\prime\\prime}(2)>0$ labels $x=2$ a local trough, not a peak, so the statement is True.`,
+Classify $x=2$ the same way.
+
+$$f^{\\prime\\prime}(2)=6>0$$
+
+An upward bend means a local trough at $x=2$, not a peak, so the statement is True.`,
       `**D.** → True
 
-Because the shared cubic tends to infinity as $x\\to\\infty$, there is no global maximum on the real line, so the statement is True.`,
+As $x\\to\\infty$, the leading term $x^{3}$ sends $f(x)\\to\\infty$. A function that tends to infinity has no global maximum on the real line, so the statement is True.`,
       `**E.** → False
 
-Listing flat-slope outputs only produces candidates. One still must classify them and check whether a global maximum even exists on $\\mathbb{R}$, so stopping after the list does not finish the proof, so the statement is False.`
+Listing the flat-slope outputs only produces candidates. One still must classify them (peak versus trough) and, on an unbounded domain, check whether a global maximum even exists. Stopping after the list does not finish a maximisation proof, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 98,
@@ -4770,19 +6402,37 @@ Flat slopes really sit at $x=0$ and $x=2$. The bend test labels $x=0$ a local pe
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order condition $-6Q+30=0$ yields $Q=5$, so profit has a flat slope at five bikes, so the statement is True.`,
+Differentiate profit and set the slope to zero.
+
+$$P^{\\prime}(Q)=-6Q+30=0$$
+
+$$Q=5$$
+
+Profit has a flat slope at five bikes, so the statement is True.`,
       `**B.** → True
 
-The shared bend $P^{\\prime\\prime}=-6<0$ means a downward bend at five bikes, so that output is a local profit peak, so the statement is True.`,
+Read the bend at five bikes.
+
+$$P^{\\prime\\prime}(Q)=-6<0$$
+
+so $P^{\\prime\\prime}(5)=-6<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
       `**C.** → True
 
-By definition, a strict local maximum at five bikes means some neighbourhood where every other output gives strictly smaller profit than at five — exactly what the shared peak classification asserts, so the statement is True.`,
+By definition, a strict local maximum at $Q=5$ means there is some open neighbourhood of five bikes on which every other feasible output yields strictly smaller profit than $P(5)$. That is exactly what a local profit peak asserts, so the statement is True.`,
       `**D.** → False
 
-A local peak is about relative height, not absolute level. The shared evaluation $P(5)=35\\neq 0$ shows the profit level need not be zero, so the statement is False.`,
+A local peak concerns the *relative* height of profit nearby, not the absolute level. Evaluating separately gives
+
+$$P(5)=-3\\cdot 25+30\\cdot 5-40=-75+150-40=35\\neq 0$$
+
+so the profit level need not be zero at a peak, so the statement is False.`,
       `**E.** → True
 
-The shared evaluation already gives profit $P(5)=35$ euros at five bikes, so the statement is True.`
+Substitute five bikes into the profit rule.
+
+$$P(5)=-75+150-40=35$$
+
+Profit at five bikes is $35$ euros, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 99,
@@ -4817,19 +6467,37 @@ A local peak concerns relative height nearby, not a requirement that the profit 
     tactical_explanations: [
       `**A.** → True
 
-The shared West analysis already places a flat downward bend at $Q=7$, so seven is a local profit peak for West, so the statement is True.`,
+Find West's critical output and classify it.
+
+$$P_W^{\\prime}(Q)=-2Q+14=0\\Rightarrow Q=7$$
+
+$$P_W^{\\prime\\prime}(Q)=-2<0$$
+
+so seven units is a local profit peak for West, so the statement is True.`,
       `**B.** → True
 
-The shared East analysis already places a flat upward bend at $Q=5$, so five is a local profit trough for East, so the statement is True.`,
+Find East's critical output and classify it.
+
+$$P_E^{\\prime}(Q)=2Q-10=0\\Rightarrow Q=5$$
+
+$$P_E^{\\prime\\prime}(Q)=2>0$$
+
+so five units is a local profit trough for East, so the statement is True.`,
       `**C.** → False
 
-The memo claims both flat-slope outputs are local maxima. West's is a peak, but East's shared bend is a trough, so the memo is not correct, so the statement is False.`,
+The memo claims both flat-slope outputs are local profit maxima. West's is a peak, but East's is a trough ($P_E^{\\prime\\prime}(5)>0$). The memo is therefore not correct, so the statement is False.`,
       `**D.** → True
 
-The shared levels already give $P_W(7)=29$ and $P_E(5)=15$, so the statement is True.`,
+Evaluate each profit at its flat-slope output.
+
+$$P_W(7)=-49+98-20=29$$
+
+$$P_E(5)=25-50+40=15$$
+
+West's peak profit is $29$ euros and East's profit at five units is $15$ euros, so the statement is True.`,
       `**E.** → False
 
-Unequal critical outputs are fine for different profit models; both shared flat-slope equations $P_W^{\\prime}(7)=0$ and $P_E^{\\prime}(5)=0$ are valid, so the statement is False.`
+Unequal critical outputs are entirely possible for different profit models; each plant's derivative is its own equation. Both $P_W^{\\prime}(7)=0$ and $P_E^{\\prime}(5)=0$ are valid. The claim that at most one flat-slope equation can be valid is false, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 100,
@@ -4860,19 +6528,43 @@ West's flat output $Q=7$ bends downward (local peak, $P_W(7)=29$). East's flat o
     tactical_explanations: [
       `**A.** → True
 
-The shared differentiation already produces $P^{\\prime}(Q)=-2Q+18$, matching the claim, so the statement is True.`,
+Differentiate the farm shop's daily-profit rule term by term.
+
+$$P(Q)=-Q^{2}+18Q-45$$
+
+$$P^{\\prime}(Q)=-2Q+18$$
+
+That slope matches the claim, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition yields the unique root $Q=9$ on $Q\\ge 0$, so nine crates is the only flat-slope output, so the statement is True.`,
+Set the slope of profit to zero.
+
+$$P^{\\prime}(Q)=-2Q+18=0$$
+
+$$Q=9$$
+
+On $Q\\ge 0$ this is the only root, so nine crates is the unique flat-slope output, so the statement is True.`,
       `**C.** → True
 
-The shared bend $P^{\\prime\\prime}=-2<0$ means a downward bend at nine crates, so that output is a local profit peak, so the statement is True.`,
+Read the bend at nine crates.
+
+$$P^{\\prime\\prime}(Q)=-2$$
+
+so $P^{\\prime\\prime}(9)=-2<0$. A downward bend at a flat slope means a local profit peak, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation already gives peak daily profit $P(9)=36$ euros, so the statement is True.`,
+Evaluate profit at the peak output.
+
+$$P(9)=-81+162-45=36$$
+
+Peak daily profit is $36$ euros, so the statement is True.`,
       `**E.** → False
 
-The shared solution separates the flat slope $P^{\\prime}(9)=0$ from the positive level $P(9)=36$, so the profit level need not be zero, so the statement is False.`
+A flat slope does not force the profit level to be zero. Evaluating the level gives
+
+$$P(9)=36\\neq 0$$
+
+so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 101,
@@ -4909,19 +6601,45 @@ so nine crates yield $36$ euros of peak daily profit. A zero slope never forces 
     tactical_explanations: [
       `**A.** → True
 
-The shared expansion already simplifies to $P=-2Q^{2}+40Q-20$, matching the claim, so the statement is True.`,
+Form profit as revenue minus cost and simplify.
+
+$$P(Q)=(50Q-Q^{2})-(Q^{2}+10Q+20)=-2Q^{2}+40Q-20$$
+
+That quadratic matches the claim, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition $-4Q+40=0$ yields $Q=10$, so profit has a flat slope at ten boxes, so the statement is True.`,
+Differentiate profit and set the slope to zero.
+
+$$P^{\\prime}(Q)=-4Q+40=0$$
+
+$$Q=10$$
+
+Profit has a flat slope at ten boxes a day, so the statement is True.`,
       `**C.** → True
 
-The shared marginals already give $R^{\\prime}(10)=C^{\\prime}(10)=30$, so both equal $30$ euros at ten boxes, so the statement is True.`,
+Compute marginal revenue and marginal cost at ten boxes.
+
+$$R^{\\prime}(Q)=50-2Q,\\qquad C^{\\prime}(Q)=2Q+10$$
+
+$$R^{\\prime}(10)=50-20=30,\\qquad C^{\\prime}(10)=20+10=30$$
+
+Both equal $30$ euros at ten boxes, so the statement is True.`,
       `**D.** → True
 
-The shared bend $P^{\\prime\\prime}<0$ confirms a local peak, and the shared level is $P(10)=180$, so the statement is True.`,
+Confirm the peak with the second derivative, then evaluate profit.
+
+$$P^{\\prime\\prime}(Q)=-4<0$$
+
+$$P(10)=-2\\cdot 100+40\\cdot 10-20=-200+400-20=180$$
+
+Ten boxes is a local profit peak with peak profit $180$ euros, so the statement is True.`,
       `**E.** → False
 
-Matching $R^{\\prime}=C^{\\prime}$ does not equate the levels. The shared evaluation shows $R(10)=400\\neq 220=C(10)$, so the statement is False.`
+Matching $R^{\\prime}=C^{\\prime}$ means marginal profit is zero, not that the *levels* of revenue and cost coincide. At ten boxes,
+
+$$R(10)=500-100=400,\\qquad C(10)=100+100+20=220$$
+
+so revenue and cost differ, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 102,
@@ -4956,19 +6674,37 @@ Matching $R^{\\prime}=C^{\\prime}$ means marginal profit is zero, not that the *
     tactical_explanations: [
       `**A.** → True
 
-The shared A analysis places a flat downward bend at $Q=12$, so truck A maximises profit locally at twelve meals, so the statement is True.`,
+Find truck A's critical meals and classify the bend.
+
+$$P_A^{\\prime}(Q)=-2Q+24=0\\Rightarrow Q=12$$
+
+$$P_A^{\\prime\\prime}(Q)=-2<0$$
+
+so twelve meals is a local profit peak for truck A, so the statement is True.`,
       `**B.** → True
 
-The shared B analysis places a flat downward bend at $Q=8$, so truck B maximises profit locally at eight meals, so the statement is True.`,
+Find truck B's critical meals and classify the bend.
+
+$$P_B^{\\prime}(Q)=-4Q+32=0\\Rightarrow Q=8$$
+
+$$P_B^{\\prime\\prime}(Q)=-4<0$$
+
+so eight meals is a local profit peak for truck B, so the statement is True.`,
       `**C.** → True
 
-The shared peak levels are $P_A(12)=64$ and $P_B(8)=68$, matching the claim, so the statement is True.`,
+Evaluate each truck's profit at its own peak.
+
+$$P_A(12)=-144+288-80=64$$
+
+$$P_B(8)=-2\\cdot 64+32\\cdot 8-60=-128+256-60=68$$
+
+Peak profits are $64$ euros for A and $68$ euros for B, so the statement is True.`,
       `**D.** → False
 
-Each truck maximises its own model. The shared peaks sit at twelve versus eight meals, so sharing a local peak does not force the same optimal quantity, so the statement is False.`,
+Each truck maximises its own profit model. A's peak is at twelve meals and B's is at eight, so the optimal quantities need not coincide just because both have a local peak, so the statement is False.`,
       `**E.** → True
 
-The shared peaks already show B's $68$ exceeds A's $64$ even though B's optimal quantity $8$ is smaller than A's $12$, so the statement is True.`
+Truck B's peak profit $68$ exceeds truck A's peak $64$, even though B's optimal quantity $8$ is smaller than A's $12$. Different profit curves can deliver a higher peak at a smaller output, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 103,
@@ -4999,19 +6735,37 @@ Truck A peaks at $Q=12$ with $P_A(12)=64$; truck B peaks at $Q=8$ with $P_B(8)=6
     tactical_explanations: [
       `**A.** → True
 
-The shared factorisation already places flat slopes at two batches and four batches, so the statement is True.`,
+Differentiate weekly cost and set the slope to zero.
+
+$$C^{\\prime}(Q)=3Q^{2}-18Q+24$$
+
+$$3(Q^{2}-6Q+8)=0$$
+
+$$(Q-2)(Q-4)=0$$
+
+so the flat-slope batch sizes are $Q=2$ and $Q=4$, so the statement is True.`,
       `**B.** → True
 
-The shared bends $C^{\\prime\\prime}(2)<0$ and $C^{\\prime\\prime}(4)>0$ mean downward bend at two batches and upward bend at four, so the statement is True.`,
+Classify the bends with the second derivative.
+
+$$C^{\\prime\\prime}(Q)=6Q-18$$
+
+$$C^{\\prime\\prime}(2)=-6<0,\\qquad C^{\\prime\\prime}(4)=6>0$$
+
+so at two batches the cost curve bends downward, while at four batches it bends upward, so the statement is True.`,
       `**C.** → True
 
-Those shared bend signs label two batches a local cost peak and four batches a local cost trough, so the statement is True.`,
+A downward bend at a flat slope marks a local peak; an upward bend marks a local trough. Therefore two batches is a local cost peak and four batches is a local cost trough, so the statement is True.`,
       `**D.** → True
 
-The shared trough evaluation already gives $C(4)=21$ (hundreds of euros), so the statement is True.`,
+Evaluate cost at the trough batch size.
+
+$$C(4)=64-144+96+5=21$$
+
+The local trough cost is $21$ (hundreds of euros), so the statement is True.`,
       `**E.** → False
 
-At two batches the shared bend is downward, so that output is a local cost peak, not a minimum. Flat slope alone does not minimise cost, so the statement is False.`
+At two batches the slope is flat, but the bend is *downward*, so that output is a local cost *peak*, not a minimum. Flat slope alone does not minimise cost, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 104,
@@ -5046,19 +6800,37 @@ Flat slope at two batches does not minimise cost — that output is a local peak
     tactical_explanations: [
       `**A.** → True
 
-The shared first-order condition yields the unique interior root $Q=5$ on $(0,8)$, so the statement is True.`,
+Differentiate cost and set the slope to zero inside $(0,8)$.
+
+$$C^{\\prime}(Q)=2Q-10=0$$
+
+$$Q=5$$
+
+Five shifts is the only interior flat-slope schedule on $(0,8)$, so the statement is True.`,
       `**B.** → True
 
-The shared bend $C^{\\prime\\prime}>0$ means an upward bend at five shifts, so that schedule is a local cost trough, so the statement is True.`,
+Read the bend at five shifts.
+
+$$C^{\\prime\\prime}(Q)=2>0$$
+
+so $C^{\\prime\\prime}(5)=2>0$. An upward bend at a flat slope means a local cost trough, so the statement is True.`,
       `**C.** → True
 
-The shared levels $C(0)=40$, $C(8)=24$, and $C(5)=15$ match the claim, so the statement is True.`,
+Evaluate cost at the endpoints and at the interior trough.
+
+$$C(0)=40$$
+
+$$C(8)=64-80+40=24$$
+
+$$C(5)=25-50+40=15$$
+
+Those three values match the claim, so the statement is True.`,
       `**D.** → False
 
-Among those shared values, $C(5)=15$ beats $C(8)=24$, so the global minimum on $[0,8]$ is not at eight shifts, so the statement is False.`,
+Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The global cost minimum on $[0,8]$ is not at the endpoint of eight shifts, so the statement is False.`,
       `**E.** → True
 
-The smallest shared candidate is $C(5)=15$, so the global cost minimum on $[0,8]$ is at the interior trough of five shifts, so the statement is True.`
+Among the candidate values, $C(5)=15$ is strictly smaller than both endpoint costs. Therefore the global cost minimum on $[0,8]$ is at the interior trough of five shifts, so the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 105,
@@ -5093,19 +6865,39 @@ shows the global cost minimum on $[0,8]$ is the interior trough at five shifts, 
     tactical_explanations: [
       `**A.** → True
 
-The shared reduction already writes area as $A(x)=20x-x^{2}$ on $0<x<20$, a function of one side alone, so the statement is True.`,
+With perimeter $2x+2y=40$, solve for the other side and write area in one variable.
+
+$$y=20-x$$
+
+$$A(x)=x(20-x)=20x-x^{2},\\qquad 0<x<20$$
+
+Planting area is a function of one side alone on that open interval, so the statement is True.`,
       `**B.** → True
 
-The shared critical point $x=10$, $y=10$ is the $10$ by $10$ square that maximises area, so the statement is True.`,
+Maximise the reduced area by setting its slope to zero.
+
+$$A^{\\prime}(x)=20-2x=0\\Rightarrow x=10$$
+
+$$y=20-10=10$$
+
+so the bed is a $10$ by $10$ metre square at the critical point, so the statement is True.`,
       `**C.** → True
 
-The shared evaluation already gives maximum planting area $A(10)=100$ square metres, so the statement is True.`,
+Evaluate area at that square.
+
+$$A(10)=10\\cdot 10=100$$
+
+The maximum planting area is $100$ square metres, so the statement is True.`,
       `**D.** → True
 
-The shared bend $A^{\\prime\\prime}=-2<0$ confirms a local maximum at that square, so the statement is True.`,
+Confirm the local maximum with the second derivative.
+
+$$A^{\\prime\\prime}(x)=-2<0$$
+
+so at the square the area curve bends downward, confirming a local maximum, so the statement is True.`,
       `**E.** → False
 
-Every layout uses $40$ m of fence, but the shared area $A(x)=x(20-x)$ still varies with shape. Optimisation is needed, so the statement is False.`
+Every layout uses the same $40$ metres of fence, but area $A(x)=x(20-x)$ still varies with the shape — a long thin rectangle encloses far less than the square. Optimisation is needed, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 106,
@@ -5140,19 +6932,39 @@ confirmed by the downward bend $A^{\\prime\\prime}<0$. Same fence length does no
     tactical_explanations: [
       `**A.** → True
 
-The shared geometry already forces $y=\\dfrac{36}{x}$ and total paper $A(x)=(x+2)\\bigl(\\dfrac{36}{x}+2\\bigr)$, so the statement is True.`,
+Fixed printed area $xy=36$ forces $y=\\dfrac{36}{x}$. Adding a $1$ cm margin on every side gives total paper dimensions $x+2$ and $y+2$, so
+
+$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)$$
+
+exactly as claimed, so the statement is True.`,
       `**B.** → True
 
-The shared expansion already simplifies to $A(x)=40+2x+\\dfrac{72}{x}$, matching the claim, so the statement is True.`,
+Expand the product.
+
+$$A(x)=(x+2)\\left(\\dfrac{36}{x}+2\\right)=36+2x+\\dfrac{72}{x}+4=40+2x+\\dfrac{72}{x}$$
+
+That expanded form matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared first-order condition yields the positive root $x=6$, so paper area has a flat slope at printed width $6$, so the statement is True.`,
+Differentiate and set the slope to zero for $x>0$.
+
+$$A^{\\prime}(x)=2-\\dfrac{72}{x^{2}}=0$$
+
+$$2x^{2}=72\\Rightarrow x^{2}=36\\Rightarrow x=6$$
+
+(taking the positive root), so paper area has a flat slope at printed width $6$, so the statement is True.`,
       `**D.** → True
 
-At that shared critical width the print is a $6\\times 6$ square, $A(6)=64$, and $A^{\\prime\\prime}(6)>0$ confirms a local minimum, so the statement is True.`,
+At $x=6$ the printed height is $\\dfrac{36}{6}=6$, a square. Total paper area and the bend are
+
+$$A(6)=40+12+\\dfrac{72}{6}=40+12+12=64$$
+
+$$A^{\\prime\\prime}(x)=\\dfrac{144}{x^{3}},\\qquad A^{\\prime\\prime}(6)=\\dfrac{144}{216}>0$$
+
+so the area curve bends upward and $64$ is a local minimum of paper area, so the statement is True.`,
       `**E.** → False
 
-Printed area is fixed at $36$, but the shared total paper $A(x)$ still depends on aspect ratio through the margins. A real optimisation problem remains, so the statement is False.`
+Every printed rectangle of area $36$ has the *same printed area*, but the total paper sheet $A(x)=40+2x+\\dfrac{72}{x}$ still depends on the aspect ratio through the margins. The margins create a genuine one-variable optimisation problem, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 107,
@@ -5187,19 +6999,41 @@ and $A^{\\prime\\prime}(6)>0$ confirming a local minimum. Same printed area does
     tactical_explanations: [
       `**A.** → True
 
-The shared geometry already produces total area $A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$, matching the claim, so the statement is True.`,
+The square uses wire $x$, so each side is $\\dfrac{x}{4}$ and its area is $\\dfrac{x^{2}}{16}$. The circle uses wire $60-x$, so its radius is $\\dfrac{60-x}{2\\pi}$ and its area is $\\dfrac{(60-x)^{2}}{4\\pi}$. Adding those areas gives
+
+$$A(x)=\\dfrac{x^{2}}{16}+\\dfrac{(60-x)^{2}}{4\\pi}$$
+
+exactly as claimed, so the statement is True.`,
       `**B.** → True
 
-The shared differentiation already gives $A^{\\prime}(x)=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$, so the statement is True.`,
+Differentiate the total-area rule term by term.
+
+$$A^{\\prime}(x)=\\dfrac{2x}{16}-\\dfrac{2(60-x)}{4\\pi}=\\dfrac{x}{8}-\\dfrac{60-x}{2\\pi}$$
+
+That slope matches the claim, so the statement is True.`,
       `**C.** → True
 
-The shared first-order solution is exactly the split $x=\\dfrac{240}{4+\\pi}$, so the statement is True.`,
+Set the slope to zero and solve for the split.
+
+$$\\dfrac{x}{8}=\\dfrac{60-x}{2\\pi}$$
+
+$$2\\pi x=8(60-x)$$
+
+$$\\pi x=240-4x$$
+
+$$x(\\pi+4)=240\\Rightarrow x=\\dfrac{240}{4+\\pi}$$
+
+Total area has a flat slope at that split, so the statement is True.`,
       `**D.** → True
 
-The shared bend $A^{\\prime\\prime}>0$ everywhere means an upward bend at that split, so it is a local minimum of total enclosed area, so the statement is True.`,
+The second derivative of total area is
+
+$$A^{\\prime\\prime}(x)=\\dfrac{1}{8}+\\dfrac{1}{2\\pi}>0$$
+
+everywhere. In particular at the critical split the area curve bends upward, so that split is a local minimum of total enclosed area, so the statement is True.`,
       `**E.** → False
 
-Writing the circle's wire as $60-x$ already reduces the two-shape geometry to the shared single-variable $A(x)$. Two shapes do not block that reduction, so the statement is False.`
+Expressing the circle's wire as $60-x$ already reduces the two-shape geometry to a single-variable function $A(x)$. Two shapes do not prevent a one-variable calculus treatment, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 108,
@@ -5234,19 +7068,41 @@ and the constantly positive second derivative labels it a local minimum of total
     tactical_explanations: [
       `**A.** → True
 
-The shared substitution already produces the one-variable utility $U(x)=20x-2x^{2}$ on $0<x<10$, so the statement is True.`,
+Solve the budget $2x+y=20$ for $y$ and substitute into utility.
+
+$$y=20-2x$$
+
+$$U(x)=x(20-2x)=20x-2x^{2},\\qquad 0<x<10$$
+
+That is a one-variable utility on the open budget segment, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition $20-4x=0$ yields $x=5$, so the reduced utility has a flat slope there, so the statement is True.`,
+Differentiate the reduced utility and set the slope to zero.
+
+$$U^{\\prime}(x)=20-4x=0$$
+
+$$x=5$$
+
+The reduced utility has a flat slope at $x=5$, so the statement is True.`,
       `**C.** → True
 
-The shared recovery already gives $y=10$ and utility level $50$ at $x=5$, so the statement is True.`,
+Recover $y$ and the utility level at that candidate.
+
+$$y=20-2\\cdot 5=10$$
+
+$$U(5)=5\\cdot 10=50$$
+
+so at $x=5$ one has $y=10$ and utility $50$, so the statement is True.`,
       `**D.** → True
 
-The shared bend $U^{\\prime\\prime}=-4<0$ means a downward bend at $x=5$, so that bundle maximises utility locally on the budget line, so the statement is True.`,
+Confirm a local maximum with the second derivative.
+
+$$U^{\\prime\\prime}(x)=-4<0$$
+
+so at $x=5$ the utility curve bends downward and that bundle maximises utility locally on the budget line, so the statement is True.`,
       `**E.** → False
 
-A budget only reduces the problem to one variable. One still needs the shared bend check (or an endpoint comparison); skipping it because a budget is present is not justified, so the statement is False.`
+A budget constraint only reduces the problem to one variable; it does not automatically guarantee that a critical point is a maximum. One still needs a bend check (or an endpoint comparison). Skipping the bend because a budget is present is not justified, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 109,
@@ -5277,19 +7133,35 @@ Flat slope at $x=5$ recovers $y=10$ with utility level $U(5)=50$, and the downwa
     tactical_explanations: [
       `**A.** → True
 
-The shared reduction already gives output $Q(x)=10x-x^{2}$ with slope $10-2x$, so the statement is True.`,
+Substitute $y=10-x$ into output and differentiate.
+
+$$Q(x)=x(10-x)=10x-x^{2}$$
+
+$$Q^{\\prime}(x)=10-2x$$
+
+Output as a function of $x$ alone has slope $10-2x$, so the statement is True.`,
       `**B.** → True
 
-The shared critical point is $x=5$, $y=5$, with output $25$, the only positive flat-slope candidate, so the statement is True.`,
+Set the slope to zero and recover the other input and the output level.
+
+$$10-2x=0\\Rightarrow x=5$$
+
+$$y=10-5=5,\\qquad Q(5)=25$$
+
+The only positive flat-slope candidate is $x=5$, with $y=5$ and output $25$, so the statement is True.`,
       `**C.** → True
 
-The shared bend $Q^{\\prime\\prime}=-2<0$ confirms a local maximum at that split, so the statement is True.`,
+Confirm the local maximum with the second derivative.
+
+$$Q^{\\prime\\prime}(x)=-2<0$$
+
+so at that split the output curve bends downward, confirming a local maximum, so the statement is True.`,
       `**D.** → True
 
-Because $Q^{\\prime\\prime}<0$ everywhere (or by AM–GM), the shared peak $25$ is strictly larger than output at any other split on $x+y=10$, so the statement is True.`,
+Because $Q^{\\prime\\prime}<0$ everywhere, the critical point is a strict global maximum on the open segment. Equivalently, by AM–GM, $xy\\le\\left(\\dfrac{x+y}{2}\\right)^{2}=25$ with equality only at $x=y=5$. Any other split with $x+y=10$ yields strictly smaller output than $25$, so the statement is True.`,
       `**E.** → False
 
-The constraint only forces the input sum. The shared product $Q=xy$ still varies — for example $(1,9)$ gives output $9$, not $25$ — so the statement is False.`
+The constraint $x+y=10$ only forces the *sum* of the inputs; output $Q=xy$ still varies with the split. For example $(1,9)$ gives output $9$, not $25$. The constraint does not force output $25$ for every feasible pair, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 110,
@@ -5320,19 +7192,39 @@ The only positive flat-slope candidate is $x=5$, with $y=5$ and output $Q(5)=25$
     tactical_explanations: [
       `**A.** → True
 
-The shared product $R(p)=p\\cdot D(p)$ already expands to $100p-2p^{2}$, so the statement is True.`,
+Daily revenue is price times quantity demanded.
+
+$$R(p)=p\\cdot D(p)=p(100-2p)=100p-2p^{2}$$
+
+That revenue rule matches the claim, so the statement is True.`,
       `**B.** → True
 
-The shared peak sits at $p=25$ with revenue $1250$ euros, so the statement is True.`,
+Maximise revenue by setting its slope to zero, then evaluate.
+
+$$R^{\\prime}(p)=100-4p=0\\Rightarrow p=25$$
+
+$$R(25)=100\\cdot 25-2\\cdot 625=2500-1250=1250$$
+
+Revenue is maximised at $25$ euros with peak revenue $1250$ euros, so the statement is True.`,
       `**C.** → True
 
-The shared elasticity calculation gives $\\varepsilon=-1$ at $p=25$, so demand is unit elastic there, so the statement is True.`,
+Price elasticity of demand is $\\varepsilon=\\dfrac{p}{D}\\cdot D^{\\prime}(p)$. Here $D^{\\prime}(p)=-2$, so at $p=25$,
+
+$$D(25)=100-50=50$$
+
+$$\\varepsilon=\\dfrac{25}{50}\\cdot(-2)=-1$$
+
+Absolute elasticity $1$ means unit-elastic demand at the revenue peak, so the statement is True.`,
       `**D.** → True
 
-The shared slope $R^{\\prime}(20)=20>0$ means a small further price increase still raises daily revenue, so the statement is True.`,
+At $p=20$, marginal revenue with respect to price is still positive.
+
+$$R^{\\prime}(20)=100-80=20>0$$
+
+so a small further price increase still raises daily revenue (equivalently, demand is inelastic there), so the statement is True.`,
       `**E.** → False
 
-Absolute elasticity $1$ is unit elasticity, not perfect inelasticity (which would be elasticity $0$). Confusing the two is wrong, so the statement is False.`
+Absolute elasticity $1$ means *unit* elastic demand, not perfectly inelastic demand. Perfectly inelastic demand would have elasticity $0$. Confusing unit elasticity with perfect inelasticity is wrong, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 111,
@@ -5363,19 +7255,39 @@ Revenue peaks at $p=25$ with $R(25)=1250$. Price elasticity $\\varepsilon=\\dfra
     tactical_explanations: [
       `**A.** → True
 
-The shared expansion and first-order condition already give $R=120p-3p^{2}$ with flat slope at $p=20$, so the statement is True.`,
+Form ticket revenue and set its slope to zero.
+
+$$R(p)=p(120-3p)=120p-3p^{2}$$
+
+$$R^{\\prime}(p)=120-6p=0\\Rightarrow p=20$$
+
+Revenue expands as claimed and has a flat slope at $20$ euros, so the statement is True.`,
       `**B.** → True
 
-The shared elasticity at $p=20$ is $\\varepsilon=-1$, so demand is unit elastic there, so the statement is True.`,
+Compute demand elasticity at $p=20$.
+
+$$D(20)=120-60=60,\\qquad D^{\\prime}(p)=-3$$
+
+$$\\varepsilon=\\dfrac{20}{60}\\cdot(-3)=-1$$
+
+Absolute elasticity $1$ means unit-elastic demand at $20$ euros, so the statement is True.`,
       `**C.** → True
 
-The shared bend $R^{\\prime\\prime}=-6<0$ means a downward bend at $20$ euros, so that fare is a local revenue peak, so the statement is True.`,
+Read the bend of revenue at $20$ euros.
+
+$$R^{\\prime\\prime}(p)=-6<0$$
+
+so $R^{\\prime\\prime}(20)=-6<0$. A downward bend at a flat slope means a local revenue peak, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation already gives $D(20)=60$ tickets and revenue $1200$ euros, so the statement is True.`,
+At $p=20$,
+
+$$D(20)=60,\\qquad R(20)=20\\cdot 60=1200$$
+
+the theatre sells $60$ tickets and earns $1200$ euros, so the statement is True.`,
       `**E.** → False
 
-For this linear demand the shared revenue peak and unit-elastic price both land at $p=20$, so they cannot differ, so the statement is False.`
+For a linear demand curve, the revenue-maximising price is exactly where demand is unit elastic. Here both occur at $p=20$, so the price that flattens revenue cannot differ from the unit-elastic price for this demand, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 112,
@@ -5406,19 +7318,39 @@ Flat revenue at $p=20$ coincides with unit elasticity $\\varepsilon=-1$, sells $
     tactical_explanations: [
       `**A.** → True
 
-The shared evaluation already gives $Q=60$ and $\\varepsilon=-\\dfrac{2}{3}$, so demand is inelastic with that elasticity, so the statement is True.`,
+At $p=20$, quantity and elasticity are
+
+$$Q=D(20)=100-40=60$$
+
+$$\\varepsilon=\\dfrac{p}{Q}\\cdot D^{\\prime}(p)=\\dfrac{20}{60}\\cdot(-2)=-\\dfrac{2}{3}$$
+
+Absolute elasticity $\\dfrac{2}{3}<1$, so demand is inelastic with elasticity $-\\dfrac{2}{3}$, so the statement is True.`,
       `**B.** → True
 
-The shared elasticity route already produces $MR=-10$ euros per extra gadget, so the statement is True.`,
+The elasticity shortcut for marginal revenue (with respect to quantity) is
+
+$$MR=p\\left(1+\\dfrac{1}{\\varepsilon}\\right)$$
+
+$$MR=20\\left(1+\\dfrac{1}{-2/3}\\right)=20\\left(1-\\dfrac{3}{2}\\right)=20\\cdot\\left(-\\dfrac{1}{2}\\right)=-10$$
+
+so marginal revenue equals $-10$ euros per extra gadget, so the statement is True.`,
       `**C.** → True
 
-The shared direct differentiation $R^{\\prime}(60)=-10$ matches the same marginal revenue at sixty gadgets, so the statement is True.`,
+Invert demand to $p=50-\\dfrac{Q}{2}$, write revenue in quantity, and differentiate.
+
+$$R(Q)=Q\\left(50-\\dfrac{Q}{2}\\right)=50Q-\\dfrac{Q^{2}}{2}$$
+
+$$R^{\\prime}(Q)=50-Q$$
+
+$$R^{\\prime}(60)=50-60=-10$$
+
+Direct differentiation also gives marginal revenue $-10$ at sixty gadgets, so the statement is True.`,
       `**D.** → True
 
-Both shared routes produced $MR=-10$ at the same point, so the elasticity shortcut matches direct differentiation, so the statement is True.`,
+Both routes produced $MR=-10$ at the same point. The elasticity shortcut therefore matches direct differentiation of revenue with respect to quantity, so the statement is True.`,
       `**E.** → True
 
-Revenue maximisation needs $MR=0$. The shared value $MR=-10\\neq 0$ shows the $20$-euro price does not maximise revenue, so the statement is True.`
+Revenue is maximised where $MR=0$. Here $MR=-10\\neq 0$ at sixty gadgets (equivalently $R^{\\prime}(p)=100-4p$ gives $R^{\\prime}(20)=20\\neq 0$), so the $20$-euro price does not maximise revenue, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 113,
@@ -5455,19 +7387,41 @@ Because $MR\\neq 0$ at sixty gadgets, the $20$-euro price does not maximise reve
     tactical_explanations: [
       `**A.** → True
 
-The shared Cart A figures already give $60$ cups and $\\varepsilon_A=-\\dfrac{1}{3}$, so demand is inelastic with that elasticity, so the statement is True.`,
+At $p=20$ for Cart A,
+
+$$D_A(20)=80-20=60$$
+
+$$\\varepsilon_A=\\dfrac{20}{60}\\cdot(-1)=-\\dfrac{1}{3}$$
+
+Absolute elasticity $\\dfrac{1}{3}<1$, so demand is inelastic with elasticity $-\\dfrac{1}{3}$, so the statement is True.`,
       `**B.** → True
 
-The shared Cart B figures already give $80$ cups and $\\varepsilon_B=-\\dfrac{1}{2}$, so demand is inelastic with that elasticity, so the statement is True.`,
+At $p=20$ for Cart B,
+
+$$D_B(20)=120-40=80$$
+
+$$\\varepsilon_B=\\dfrac{20}{80}\\cdot(-2)=-\\dfrac{1}{2}$$
+
+Absolute elasticity $\\dfrac{1}{2}<1$, so demand is inelastic with elasticity $-\\dfrac{1}{2}$, so the statement is True.`,
       `**C.** → True
 
-Comparing the shared absolute elasticities, $|\\varepsilon_B|>|\\varepsilon_A|$, so Cart B's customers are more price-sensitive at this common price, so the statement is True.`,
+Compare absolute elasticities at the common price:
+
+$$\\lvert\\varepsilon_B\\rvert=\\dfrac{1}{2}>\\dfrac{1}{3}=\\lvert\\varepsilon_A\\rvert$$
+
+so Cart B's customers are more price-sensitive than Cart A's at $20$ euros, so the statement is True.`,
       `**D.** → True
 
-The shared slope $R_A^{\\prime}(20)>0$ means a small price increase from $20$ euros still raises Cart A's revenue, so the statement is True.`,
+For Cart A, revenue $R_A(p)=p(80-p)=80p-p^{2}$ has slope
+
+$$R_A^{\\prime}(p)=80-2p$$
+
+$$R_A^{\\prime}(20)=40>0$$
+
+so a small price increase from $20$ euros still raises Cart A's revenue (consistent with inelastic demand), so the statement is True.`,
       `**E.** → False
 
-Inelastic demand means a small price *increase* still raises revenue, so $p=20$ lies below A's revenue peak at $p=40$, not at it. Inelasticity does not mean the price already maximises revenue, so the statement is False.`
+Inelastic demand at a price means a small price *increase* still raises revenue, so that price is *below* the revenue peak, not at it. Cart A's revenue peak is where $R_A^{\\prime}(p)=0$, namely $p=40$, not $p=20$. Inelasticity does not mean the price already maximises revenue, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 114,
@@ -5500,19 +7454,43 @@ so a small price rise from $20$ still raises A's revenue. Inelastic demand means
     tactical_explanations: [
       `**A.** → True
 
-The shared substitution already produces the one-variable profit $P(x)=-2x^{2}+30x+100$, so the statement is True.`,
+Substitute $y=10-x$ into profit to obtain a one-variable rule.
+
+$$P(x)=30x+20(10-x)-x^{2}-(10-x)^{2}$$
+
+$$P(x)=30x+200-20x-x^{2}-(100-20x+x^{2})=10x+100-2x^{2}+20x$$
+
+$$P(x)=-2x^{2}+30x+100$$
+
+That is a one-variable profit in $x$, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition $-4x+30=0$ yields $x=7.5$, so the reduced profit has a flat slope there, so the statement is True.`,
+Differentiate the reduced profit and set the slope to zero.
+
+$$P^{\\prime}(x)=-4x+30=0$$
+
+$$x=\\dfrac{30}{4}=7.5$$
+
+The reduced profit has a flat slope at $x=7.5$, so the statement is True.`,
       `**C.** → True
 
-The shared recovery gives $y=2.5$ with bend $P^{\\prime\\prime}=-4<0$, confirming a local profit peak, so the statement is True.`,
+Recover $y$ and check the bend.
+
+$$y=10-7.5=2.5$$
+
+$$P^{\\prime\\prime}(x)=-4<0$$
+
+so at that candidate the profit curve bends downward, confirming a local profit peak, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation already gives maximised constrained profit $P(7.5)=212.5$, so the statement is True.`,
+Evaluate constrained profit at the peak.
+
+$$P(7.5)=-2\\cdot(7.5)^{2}+30\\cdot 7.5+100=-2\\cdot 56.25+225+100=-112.5+225+100=212.5$$
+
+The maximised constrained profit equals $212.5$, so the statement is True.`,
       `**E.** → False
 
-The shared unconstrained critical point $(15,10)$ violates $x+y=10$, so ignoring the constraint does not automatically give the same answer, so the statement is False.`
+Ignoring the constraint, unconstrained critical points solve $P_x=30-2x=0$ and $P_y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained answer is different, so ignoring the constraint does not automatically give the same answer, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 115,
@@ -5547,19 +7525,39 @@ Ignoring the constraint, unconstrained critical points solve $30-2x=0$ and $20-2
     tactical_explanations: [
       `**A.** → True
 
-The shared reduction already writes enclosed area as $A(x)=40x-2x^{2}$, a function of the perpendicular side alone, so the statement is True.`,
+With three sides fenced, $2x+y=40$, so the riverside side is $y=40-2x$ and enclosed area is
+
+$$A(x)=x(40-2x)=40x-2x^{2}$$
+
+a function of the perpendicular side alone, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition yields $x=10$, so area has a flat slope when each perpendicular side is $10$ metres, so the statement is True.`,
+Set the slope of area to zero.
+
+$$A^{\\prime}(x)=40-4x=0$$
+
+$$x=10$$
+
+Area has a flat slope when each perpendicular side is $10$ metres, so the statement is True.`,
       `**C.** → True
 
-The shared recovery gives riverside side $y=20$ with bend $A^{\\prime\\prime}<0$, so that layout maximises area locally, so the statement is True.`,
+Recover the riverside side and check the bend.
+
+$$y=40-2\\cdot 10=20$$
+
+$$A^{\\prime\\prime}(x)=-4<0$$
+
+so the riverside side is $20$ metres and the area curve bends downward, confirming a local maximum, so the statement is True.`,
       `**D.** → True
 
-The shared evaluation already gives maximal area $A(10)=200$ square metres, so the statement is True.`,
+Evaluate area at that layout.
+
+$$A(10)=10\\cdot 20=200$$
+
+Maximal area is $200$ square metres, so the statement is True.`,
       `**E.** → False
 
-Under a four-sided $40$ m fence the shared comparison shows the maximiser is the $10\\times 10$ square of area $100$, not the $10\\times 20$ riverside layout, so the statement is False.`
+If all four sides must be fenced with the same $40$ metres, the constraint becomes $2x+2y=40$, and the area-maximising rectangle is the $10\\times 10$ square with area $100$, not the $10\\times 20$ riverside layout. The same dimensions would not maximise area under a four-sided fence, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 116,
@@ -5594,19 +7592,43 @@ confirmed by the downward bend. Under a four-sided fence with the same $40$ m th
     tactical_explanations: [
       `**A.** → True
 
-The shared substitution already produces $C(x)=2x+\\dfrac{128}{x}$ for $x>0$, matching the claim, so the statement is True.`,
+From $xy=16$, substitute $y=\\dfrac{16}{x}$ into cost.
+
+$$C(x)=2x+8\\cdot\\dfrac{16}{x}=2x+\\dfrac{128}{x},\\qquad x>0$$
+
+That reduced cost matches the claim, so the statement is True.`,
       `**B.** → True
 
-The shared first-order condition yields the positive root $x=8$, so cost has a flat slope there, so the statement is True.`,
+Differentiate and set the slope to zero.
+
+$$C^{\\prime}(x)=2-\\dfrac{128}{x^{2}}=0$$
+
+$$2x^{2}=128\\Rightarrow x^{2}=64\\Rightarrow x=8$$
+
+(taking $x>0$), so cost has a flat slope at $x=8$, so the statement is True.`,
       `**C.** → True
 
-The shared recovery gives $y=2$, cost $32$, and $C^{\\prime\\prime}(8)>0$, confirming a local cost trough, so the statement is True.`,
+Recover $y$, the cost level, and the bend.
+
+$$y=\\dfrac{16}{8}=2$$
+
+$$C(8)=16+\\dfrac{128}{8}=16+16=32$$
+
+$$C^{\\prime\\prime}(x)=\\dfrac{256}{x^{3}},\\qquad C^{\\prime\\prime}(8)>0$$
+
+so total cost is $32$ and the cost curve bends upward, confirming a local cost trough, so the statement is True.`,
       `**D.** → True
 
-The shared first-order condition rearranges to $\\dfrac{w_x}{w_y}=\\dfrac{y}{x}$, which holds at the cost-minimising point $(8,2)$, so the statement is True.`,
+Along $xy=16$, the first-order condition $C^{\\prime}(x)=0$ rearranges to a price–trade-off balance. With input prices $w_x=2$ and $w_y=8$,
+
+$$2=\\dfrac{128}{x^{2}}=8\\cdot\\dfrac{y}{x}$$
+
+$$\\dfrac{w_x}{w_y}=\\dfrac{2}{8}=\\dfrac{y}{x}$$
+
+At $(x,y)=(8,2)$ one has $\\dfrac{y}{x}=\\dfrac{1}{4}=\\dfrac{w_x}{w_y}$, so the balance holds, so the statement is True.`,
       `**E.** → False
 
-Other pairs on $xy=16$ have different costs — the shared example $(4,4)$ costs $40\\neq 32$. Substitution is necessary, so the statement is False.`
+Other pairs on $xy=16$ have different costs. For example $(4,4)$ gives $C=2\\cdot 4+8\\cdot 4=40\\neq 32$. Substitution is necessary to locate the minimum, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 117,
@@ -5637,19 +7659,41 @@ Flat slope at the positive root $x=8$ recovers $y=2$, with trough cost $C(8)=32$
     tactical_explanations: [
       `**A.** → True
 
-The shared revenue peak already sits at $p=45$ with revenue $2025$ euros, matching the claim, so the statement is True.`,
+Form ticket revenue and maximise it.
+
+$$R(p)=p(90-p)=90p-p^{2}$$
+
+$$R^{\\prime}(p)=90-2p=0\\Rightarrow p=45$$
+
+$$R(45)=90\\cdot 45-2025=4050-2025=2025$$
+
+Revenue is maximised at $45$ euros with revenue $2025$ euros, so the statement is True.`,
       `**B.** → True
 
-The shared elasticity at $p=45$ is $\\varepsilon=-1$, so demand is unit elastic at that fare, so the statement is True.`,
+Compute demand elasticity at the revenue peak.
+
+$$D(45)=45,\\qquad D^{\\prime}(p)=-1$$
+
+$$\\varepsilon=\\dfrac{45}{45}\\cdot(-1)=-1$$
+
+Absolute elasticity $1$ means unit-elastic demand at the $45$-euro fare, so the statement is True.`,
       `**C.** → True
 
-The shared slope $R^{\\prime}(30)>0$ means a small fare increase from $30$ euros raises ticket revenue, so the statement is True.`,
+At $p=30$, marginal revenue with respect to fare is still positive.
+
+$$R^{\\prime}(30)=90-60=30>0$$
+
+so a small fare increase raises ticket revenue (demand is inelastic there), so the statement is True.`,
       `**D.** → True
 
-The shared slope $R^{\\prime}(60)<0$ means a small fare increase from $60$ euros lowers ticket revenue, so the statement is True.`,
+At $p=60$, marginal revenue with respect to fare is already negative.
+
+$$R^{\\prime}(60)=90-120=-30<0$$
+
+so a small fare increase lowers ticket revenue (demand is elastic there), so the statement is True.`,
       `**E.** → False
 
-Elastic demand means a fare *increase* lowers revenue, so that fare lies above the revenue peak. Maximisation occurs at unit elasticity, not wherever demand is elastic, so the statement is False.`
+Elastic demand (absolute elasticity greater than $1$) means a fare *increase* lowers revenue, so that fare lies *above* the revenue peak. Revenue maximisation occurs at unit elasticity, not wherever demand is elastic. The claim reverses the economics, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 118,
@@ -5680,19 +7724,45 @@ Revenue peaks at $p=45$ with $R(45)=2025$, where demand is unit elastic ($\\vare
     tactical_explanations: [
       `**A.** → True
 
-The shared geometry already produces volume $V(x)=x(12-2x)^{2}$, matching the claim, so the statement is True.`,
+Cutting squares of side $x$ from each corner leaves a base of side $12-2x$ and height $x$, so
+
+$$V(x)=x(12-2x)^{2}$$
+
+exactly as claimed, so the statement is True.`,
       `**B.** → True
 
-The shared expansion is cubic and its slope is the quadratic $12x^{2}-96x+144$, so the statement is True.`,
+Expand the volume and differentiate.
+
+$$V(x)=x(144-48x+4x^{2})=144x-48x^{2}+4x^{3}$$
+
+$$V^{\\prime}(x)=144-96x+12x^{2}$$
+
+The expanded volume is cubic and its slope is the quadratic $12x^{2}-96x+144$, so the statement is True.`,
       `**C.** → True
 
-The shared roots of $V^{\\prime}=0$ are $x=2$ and $x=6$; only $x=2$ lies inside $(0,6)$, so the statement is True.`,
+Set the slope to zero and restrict to $(0,6)$.
+
+$$12x^{2}-96x+144=0$$
+
+$$x^{2}-8x+12=0$$
+
+$$(x-2)(x-6)=0$$
+
+so $x=2$ or $x=6$. Only $x=2$ lies inside $(0,6)$ (the root $x=6$ is an endpoint of the open interval), so the only interior flat-slope cut is $x=2$, so the statement is True.`,
       `**D.** → True
 
-The shared bend $V^{\\prime\\prime}(2)<0$ and level $V(2)=128$ confirm that cut maximises volume locally, so the statement is True.`,
+Classify the critical cut and evaluate volume.
+
+$$V^{\\prime\\prime}(x)=-96+24x$$
+
+$$V^{\\prime\\prime}(2)=-96+48=-48<0$$
+
+$$V(2)=2\\cdot(12-4)^{2}=2\\cdot 64=128$$
+
+At $x=2$ the volume curve bends downward and volume equals $128$, so that cut maximises volume locally, so the statement is True.`,
       `**E.** → False
 
-The shared flat-slope finding only produces a candidate. Without the bend check (or endpoint comparison) one has not proved a global maximum on $(0,6)$, so the statement is False.`
+Finding the flat-slope cut only produces a candidate. Without the bend check (or a comparison with the behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not yet proved a global maximum on $(0,6)$. The flat-slope finding alone is not enough, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 119,
@@ -5723,19 +7793,39 @@ Inside $(0,6)$ the only flat-slope cut is $x=2$ (the root $x=6$ is an endpoint o
     tactical_explanations: [
       `**A.** → True
 
-From the shared reading, $f'>0$ throughout $(1,5)$ because the plotted curve sits above the axis between the marked zeros. A positive derivative means $f$ is strictly increasing on that open interval, so the statement is True.`,
+The figure plots the derivative $f'$, not $f$ itself. Between the marked zeros the curve sits clearly above the horizontal axis, so the slope of $f$ is positive on that open interval.
+
+$$f'(x)>0\\quad\\text{for }x\\in(1,5)$$
+
+A positive derivative means $f$ is strictly increasing on $(1,5)$, so the statement is True.`,
       `**B.** → True
 
-The overview records a $+$ to $-$ sign change of $f'$ at the zero $x=5$. That is exactly the first-derivative test for a local maximum of $f$ at $x=5$, so the statement is True.`,
+A local maximum of $f$ occurs at a zero of $f'$ where the sign of the derivative flips from positive to negative. On the figure, left of $x=5$ the curve is above the axis and just right of $x=5$ it drops below.
+
+$$f'(5)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=5$$
+
+That is exactly the first-derivative test for a local maximum of $f$ at $x=5$, so the statement is True.`,
       `**C.** → False
 
-The labelled peak gives $f'(3)=4\\neq 0$, so $x=3$ is not a critical point of $f$ at all. A local minimum would need $f'=0$ with a $-$ to $+$ change; a nonzero peak of $f'$ is instead where $f$ climbs most steeply, so the statement is False.`,
+A local minimum of $f$ requires a critical point $f'=0$ together with a $-$ to $+$ sign change. At the marked peak of the derivative graph one reads
+
+$$f'(3)=4\\neq 0$$
+
+so $x=3$ is not even a critical point of $f$. That nonzero peak of $f'$ is where $f$ climbs most steeply in the window, not a local minimum of $f$, so the statement is False.`,
       `**D.** → True
 
-Left of the first zero the shared sign chart has $f'<0$ on $(0,1)$. A negative derivative means $f$ is decreasing there, so the statement is True.`,
+Left of the first zero the plotted derivative lies below the axis, so the slope of $f$ is negative on that stretch.
+
+$$f'(x)<0\\quad\\text{for }x\\in(0,1)$$
+
+A negative derivative means $f$ is decreasing on $(0,1)$, so the statement is True.`,
       `**E.** → True
 
-The steepest climb of $f$ is where $f'$ attains its largest positive height. The overview marks that peak at $(3,4)$, so the steepest upward stretch of $f$ in the window is at $x=3$, and the statement is True.`
+The steepest climb of $f$ is where its slope $f'$ attains its largest positive height. On the figure that peak is marked at
+
+$$(3,4)$$
+
+so among the positive values of $f'$ in the window the maximum is $4$ at $x=3$, and that is the steepest upward stretch of $f$, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 121,
@@ -5769,19 +7859,39 @@ Hence $f$ decreases on $(0,1)$ and increases on $(1,5)$. The $+$ to $-$ crossing
     tactical_explanations: [
       `**A.** → True
 
-The shared reading records a $+$ to $-$ change of $f'$ at the zero $x=2$. By the first-derivative test that is a local maximum of $f$, so the statement is True.`,
+The figure shows $f'$ with a zero at $x=2$. Just left of that crossing the curve is above the axis, and just right it is below, so the sign of $f'$ flips from $+$ to $-$.
+
+$$f'(2)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=2$$
+
+By the first-derivative test that crossing is a local maximum of $f$, so the statement is True.`,
       `**B.** → True
 
-At $x=4$ the overview has the opposite flip: $f'$ changes $-$ to $+$. That is a local minimum of $f$ at $x=4$, so the statement is True.`,
+At the second marked zero the figure shows the opposite flip: the curve arrives from below the axis and leaves above it.
+
+$$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
+
+A $-$ to $+$ change of $f'$ is a local minimum of $f$ at $x=4$, so the statement is True.`,
       `**C.** → True
 
-Between the two zeros the sign chart has $f'<0$ on $(2,4)$, so $f$ is decreasing on that open interval, and the statement is True.`,
+Between the two zeros the plotted derivative dips below the horizontal axis, so the slope of $f$ is negative on that open interval.
+
+$$f'(x)<0\\quad\\text{for }x\\in(2,4)$$
+
+Hence $f$ is decreasing on $(2,4)$, so the statement is True.`,
       `**D.** → True
 
-The overview reads the valley of $f'$ near $x=3$ as height about $-1$, which matches the claim, so the statement is True.`,
+The valley of the $f'$ curve sits near $x=3$. Reading the vertical scale there, the height is about $-1$.
+
+$$f'(3)\\approx -1$$
+
+That matches the claim's reading of the figure, so the statement is True.`,
       `**E.** → False
 
-A local minimum of $f$ needs $f'=0$ with a $-$ to $+$ change. Here $f'(3)\\approx -1\\neq 0$, so $x=3$ is not critical for $f$; negativity of $f'$ only says $f$ is decreasing there, so the statement is False.`
+A local minimum of $f$ needs a zero of $f'$ with a $-$ to $+$ sign change. At $x=3$ the figure only shows a negative height
+
+$$f'(3)\\approx -1\\neq 0$$
+
+so $x=3$ is not a critical point of $f$ at all. Negativity of $f'$ says $f$ is decreasing there, not that a local minimum occurs, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 122,
@@ -5815,19 +7925,39 @@ That lowest point of $f'$ is not a critical point of $f$.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared reading of the graph of $f$ places a local lowest point near $x=1$, so the statement is True.`,
+Here the figure shows the level curve $f$ itself. Reading the shape, the graph bottoms out near $x=1$:
+
+$$\\text{local minimum of }f\\text{ near }x=1$$
+
+That lowest neighbourhood point is exactly a local minimum, so the statement is True.`,
       `**B.** → True
 
-The same reading places a local highest point near $x=5$, so the statement is True.`,
+On the same graph of $f$, the curve reaches a local highest point near $x=5$:
+
+$$\\text{local maximum of }f\\text{ near }x=5$$
+
+That peak in a neighbourhood is a local maximum, so the statement is True.`,
       `**C.** → True
 
-Between those turning points the overview records a steady climb of $f$, so $f$ is increasing on that stretch and the statement is True.`,
+Between the local minimum near $x=1$ and the local maximum near $x=5$, the graph of $f$ climbs steadily:
+
+$$f\\text{ increasing between those turning points}$$
+
+A rising stretch means $f$ is increasing there, so the statement is True.`,
       `**D.** → True
 
-On the rising stretch the steepest climb is where the tangent is steepest upward; the overview locates that near $x=3$, so the statement is True.`,
+On the rising stretch between the turning points, the steepest climb is where the tangent looks steepest upward. On the figure that occurs near the middle of the climb:
+
+$$\\text{steepest upward tangent near }x=3$$
+
+So the steepest upward stretch in the window is near $x=3$, and the statement is True.`,
       `**E.** → False
 
-An axis crossing is $f=0$, not $f'=0$. The overview separates roots from critical points, so the crossing near $x=0$ does not force $f'(0)=0$, and the statement is False.`
+An axis crossing of the graph of $f$ is a root, not a critical point:
+
+$$f(0)=0\\qquad\\text{does not force}\\qquad f'(0)=0$$
+
+Roots and horizontal tangents are different geometric facts, so the crossing near $x=0$ alone does not force $f'(0)=0$, and the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 123,
@@ -5860,19 +7990,39 @@ An axis crossing of $f$ near $x=0$ is only a root $f=0$. That is a different geo
     tactical_explanations: [
       `**A.** → True
 
-The shared sign chart has $P'>0$ on $(0,4)$, so a little more output raises profit there, and the statement is True.`,
+The figure shows marginal profit $P'$ as a line that crosses the axis once near $x=4.2$. On $(0,4)$, which lies entirely left of that zero, the line sits above the axis.
+
+$$P'(x)>0\\quad\\text{for }x\\in(0,4)$$
+
+Positive marginal profit means a little more output raises profit, so the statement is True.`,
       `**B.** → True
 
-Right of the zero one has $P'<0$ on $(5,6)$, so a little more output lowers profit there, and the statement is True.`,
+Right of the zero, on $(5,6)$, the same line lies below the axis.
+
+$$P'(x)<0\\quad\\text{for }x\\in(5,6)$$
+
+Negative marginal profit means a little more output lowers profit, so the statement is True.`,
       `**C.** → True
 
-The overview's $+$ to $-$ crossing of $P'$ at the marked zero is a local profit peak of $P$, so the statement is True.`,
+The marked zero of marginal profit $P'$ is where the falling line crosses the axis near $x\\approx 4.2$. Left of that zero $P'>0$ and right of it $P'<0$:
+
+$$P'\\text{ changes }+\\to-\\text{ at the marked zero}$$
+
+That first-derivative test is a local maximum of total profit $P$, so the statement is True.`,
       `**D.** → True
 
-Reading the scale at $x=1$ gives height near $1.9>1$, matching the claim, so the statement is True.`,
+At $x=1$ the line is still well above the axis. Reading the shared vertical scale, the height of $P'$ there is visibly greater than $1$.
+
+$$P'(1)>1$$
+
+so the statement is True.`,
       `**E.** → False
 
-A linear non-constant $P'$ integrates to a quadratic $P$, not a straight line, so the statement is False.`
+A non-constant linear graph of $P'$ means $P''$ is a nonzero constant, so integrating once gives a quadratic total profit:
+
+$$P'\\text{ linear and non-constant}\\implies P\\text{ quadratic}$$
+
+Profit $P$ is therefore a parabola, not a straight line, so the statement is False.`
     ],
     difficulty_level: "2/5",
     sort_order: 124,
@@ -5906,19 +8056,39 @@ A little more output therefore raises profit left of the zero and lowers profit 
     tactical_explanations: [
       `**A.** → True
 
-The shared sign chart has $f'>0$ on $(0,3)$, so $f$ is increasing there, and the statement is True.`,
+The figure is a straight-line graph of $f'$ that crosses the axis at $x=3$. Left of that zero the line sits above the axis.
+
+$$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
+
+so $f$ is increasing on $(0,3)$, and the statement is True.`,
       `**B.** → True
 
-Right of the zero one has $f'<0$ on $(3,5)$, so $f$ is decreasing there, and the statement is True.`,
+Right of the marked zero at $x=3$, the straight-line graph of $f'$ sits below the horizontal axis, so the slope of $f$ is negative on that stretch.
+
+$$f'(x)<0\\quad\\text{for }x\\in(3,5)$$
+
+A negative derivative means $f$ is decreasing on $(3,5)$, so the statement is True.`,
       `**C.** → True
 
-The overview's $+$ to $-$ change of $f'$ at $x=3$ is a local maximum of $f$, so the statement is True.`,
+The falling straight-line graph of $f'$ crosses the axis at $x=3$ from above to below:
+
+$$f'(3)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=3$$
+
+That is the first-derivative test for a local maximum of $f$ at $x=3$, so the statement is True.`,
       `**D.** → True
 
-The shared reading of the scale at $x=1$ is $f'(1)=2$, so the statement is True.`,
+The figure is a straight line for $f'$. At the abscissa $x=1$, reading the shared vertical scale gives height exactly $2$.
+
+$$f'(1)=2$$
+
+That coordinate reading matches the claim, so the statement is True.`,
       `**E.** → True
 
-A falling graph of $f'$ means $f''<0$, so $f$ is concave down throughout the window, and the statement is True.`
+The graph of $f'$ itself is a falling straight line, so its slope — the second derivative — is constantly negative:
+
+$$f''(x)<0\\quad\\text{throughout the window}$$
+
+Negative $f''$ means $f$ is concave down everywhere in view, so the statement is True.`
     ],
     difficulty_level: "2/5",
     sort_order: 125,
@@ -5952,19 +8122,39 @@ Because the graph of $f'$ itself is strictly decreasing, one has $f''<0$ through
     tactical_explanations: [
       `**A.** → True
 
-The shared reading places a local minimum of $f$ at the origin with $f(0)=0$, so the statement is True.`,
+The figure shows $f$ itself with a lowest point at the origin. At that turning point the height is zero.
+
+$$f(0)=0$$
+
+and nearby points on both sides sit higher, so $x=0$ is a local minimum of $f$, and the statement is True.`,
       `**B.** → True
 
-On $(-3,0)$ the overview records the graph falling toward the origin, so $f$ is decreasing there and the statement is True.`,
+On $(-3,0)$ the graph of $f$ falls toward the origin from the left:
+
+$$f\\text{ decreasing on }(-3,0)$$
+
+A falling stretch means $f$ is decreasing there, so the statement is True.`,
       `**C.** → True
 
-On $(0,3)$ the graph rises away from the origin, so $f$ is increasing there and the statement is True.`,
+On $(0,3)$ the graph of $f$ rises away from the origin:
+
+$$f\\text{ increasing on }(0,3)$$
+
+A rising stretch means $f$ is increasing there, so the statement is True.`,
       `**D.** → True
 
-Reading the scale at $x=2$ gives a height strictly greater than $2$, so the statement is True.`,
+At $x=2$ the curve of $f$ has already climbed past the horizontal line $y=2$ on the shared vertical scale.
+
+$$f(2)>2$$
+
+so the height is strictly greater than $2$, and the statement is True.`,
       `**E.** → False
 
-An axis crossing is a root $f=0$, not a claim that $f'=0$ for every differentiable $f$. Roots and critical points are different geometric facts, so the statement is False.`
+An axis crossing is only a root. Differentiability alone does not force a horizontal tangent at every root:
+
+$$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0\\text{ for every differentiable }f$$
+
+Roots and critical points are different geometric facts, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 126,
@@ -5994,19 +8184,39 @@ On $(-3,0)$ the graph falls toward the origin ($f$ decreasing), and on $(0,3)$ i
     tactical_explanations: [
       `**A.** → True
 
-The shared reading of $f$ places a local lowest point near $x=1$, so the statement is True.`,
+The figure shows $f$ with turning points at the critical $x$-values. Near $x=1$ the graph bottoms out:
+
+$$\\text{local minimum of }f\\text{ near }x=1$$
+
+That lowest neighbourhood point is a local minimum, so the statement is True.`,
       `**B.** → True
 
-Near $x=2.5$ the overview records a local highest point, so the statement is True.`,
+Near $x=2.5$ the graph of $f$ reaches a local highest point:
+
+$$\\text{local maximum of }f\\text{ near }x=2.5$$
+
+That peak in a neighbourhood is a local maximum, so the statement is True.`,
       `**C.** → True
 
-Near $x=5$ the graph has another local lowest point, so the statement is True.`,
+Near $x=5$ the graph of $f$ bottoms out again:
+
+$$\\text{local minimum of }f\\text{ near }x=5$$
+
+That second valley is a local minimum, so the statement is True.`,
       `**D.** → True
 
-On $(1,2.5)$ the overview has the curve rising between min and max, so $f$ is increasing there and the statement is True.`,
+Between the local minimum near $x=1$ and the local maximum near $x=2.5$, the curve of $f$ climbs:
+
+$$f\\text{ increasing on }(1,2.5)$$
+
+A rising stretch means $f$ is increasing there, so the statement is True.`,
       `**E.** → False
 
-$f(0)=0$ is a root, not a claim about the slope $f'(0)$, so the statement is False.`
+A level value $f(0)=0$ is only a root of $f$, not a claim about the slope:
+
+$$f(0)=0\\qquad\\nRightarrow\\qquad f'(0)=0$$
+
+Roots and critical points are different, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 127,
@@ -6036,19 +8246,39 @@ Reading the shape: a local minimum near $x=1$, a local maximum near $x=2.5$, and
     tactical_explanations: [
       `**A.** → True
 
-The shared reading records two axis crossings of the hill, one on each side of $x=2$, so the statement is True.`,
+The figure shows $f'$ as a single positive hill. Counting clear axis crossings gives one zero left of $x=2$ and one zero right of $x=2$:
+
+$$\\text{two zeros of }f'\\text{, one on each side of }x=2$$
+
+so the statement is True.`,
       `**B.** → True
 
-Between those zeros the overview has $f'>0$, so $f$ is increasing on the middle interval, and the statement is True.`,
+Between those two zeros the hill sits above the axis, so the slope of $f$ is positive on the middle interval.
+
+$$f'(x)>0\\quad\\text{between the two zeros}$$
+
+Hence $f$ is increasing on that middle stretch, so the statement is True.`,
       `**C.** → True
 
-Outside the two zeros the sign chart has $f'<0$, so $f$ is decreasing on those outer stretches, and the statement is True.`,
+Outside the two zeros, still inside the window, the curve of $f'$ lies below the axis.
+
+$$f'(x)<0\\quad\\text{outside the two zeros}$$
+
+so $f$ is decreasing on those outer stretches, and the statement is True.`,
       `**D.** → True
 
-The top of the hill is at $x=2$ with height near $4$, matching the claim, so the statement is True.`,
+The top of the hill is at $x=2$. Reading the vertical scale there, the height is near $4$.
+
+$$f'(2)\\approx 4$$
+
+so the maximum height of $f'$ in the window is at $x=2$ near height $4$, and the statement is True.`,
       `**E.** → False
 
-A maximum of $f'$ is the steepest climb of $f$, not a peak of $f$. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change, so the statement is False.`
+A maximum of $f'$ is where $f$ climbs most steeply, not where $f$ itself peaks. Local maxima of $f$ need zeros of $f'$ with a $+$ to $-$ change:
+
+$$\\max f'\\text{ at }x=2\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
+
+The peak of the hill is not a local maximum of $f$, so the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 128,
@@ -6082,19 +8312,39 @@ so $f$ decreases, then increases, then decreases. The maximum of $f'$ at $x=2$ i
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has $f'\\ge 0$ for $x>0$ in view, so $f$ is increasing on $(0,8)$, and the statement is True.`,
+The figure shows $f'$ starting at the origin, rising, then falling back toward the axis from above. For $x>0$ in the window the curve never goes below the axis, so
+
+$$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
+
+and $f$ is increasing on $(0,8)$, so the statement is True.`,
       `**B.** → True
 
-The steepest climb of $f$ is where $f'$ is largest; the overview places that hump near $x=2$, so the statement is True.`,
+The steepest climb of $f$ is where $f'$ attains its largest height. On the figure that hump sits near $x=2$:
+
+$$\\arg\\max f'\\approx 2$$
+
+so the steepest climb of $f$ occurs near $x=2$, and the statement is True.`,
       `**C.** → True
 
-The curve of $f'$ starts at the origin, so $f'(0)=0$, and the statement is True.`,
+At the left edge of the window the graph of $f'$ meets the origin, so its height there is zero.
+
+$$f'(0)=0$$
+
+That is exactly the reading named in the claim, so the statement is True.`,
       `**D.** → True
 
-Late in the window $f'$ approaches $0$ from above, so $f$ becomes almost flat there, and the statement is True.`,
+Late in the window the graph of $f'$ falls back toward the axis from above, so the slope of $f$ becomes small and positive:
+
+$$f'(x)\\to 0^{+}\\quad\\text{late in the window}$$
+
+A tiny positive slope means $f$ rises only gently — almost flat — so the statement is True.`,
       `**E.** → False
 
-At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing; that peak is not a local maximum of $f$, and the statement is False.`
+At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing there. A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change:
+
+$$f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
+
+so the peak of $f'$ is not a local maximum of $f$, and the statement is False.`
     ],
     difficulty_level: "3/5",
     sort_order: 129,
@@ -6124,19 +8374,39 @@ and $f$ is increasing throughout $(0,8)$. The steepest climb of $f$ is at the pe
     tactical_explanations: [
       `**A.** → True
 
-The overview records a $-$ to $+$ crossing of $f'$ at $x=4$, which is a local minimum of $f$, so the statement is True.`,
+The figure shows $f'$ touching the axis at $x=1$ and crossing at $x=4$. At $x=4$ the curve arrives from below and leaves above.
+
+$$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
+
+That is the first-derivative test for a local minimum of $f$ at $x=4$, so the statement is True.`,
       `**B.** → True
 
-On $(1,4)$ the shared sign chart has $f'<0$, so $f$ is decreasing there, and the statement is True.`,
+Between the touch at $x=1$ and the crossing at $x=4$ the curve of $f'$ lies below the axis.
+
+$$f'(x)<0\\quad\\text{for }x\\in(1,4)$$
+
+so $f$ is decreasing on $(1,4)$, and the statement is True.`,
       `**C.** → True
 
-Left of $x=1$ the curve is also below the axis (or touches at the endpoint), so there is no usual $+$ to $-$ switch of monotonicity of $f$ at $x=1$, and the statement is True.`,
+At the touch $x=1$, the curve of $f'$ stays non-positive on both sides in the window — there is no ordinary $+$ to $-$ flip:
+
+$$f'\\le 0\\text{ on both sides of }x=1\\text{ (in view)}$$
+
+Without that sign change, $f$ does not switch from increasing to decreasing at $x=1$ in the usual way, so the statement is True.`,
       `**D.** → True
 
-At $x=2$ the overview reads a negative height of $f'$, so the statement is True.`,
+The point $x=2$ lies in the open interval $(1,4)$, where the plotted derivative sits below the axis throughout.
+
+$$f'(2)<0$$
+
+so $f'$ is negative at $x=2$, and the statement is True.`,
       `**E.** → True
 
-A flat touch without a clear sign change fails the first-derivative test for a local extremum of $f$ at $x=1$, so the statement is True.`
+A flat touch of $f'$ at $x=1$ without a clear $+$ to $-$ or $-$ to $+$ change fails the first-derivative test:
+
+$$f'(1)=0\\text{ with no sign change}\\nRightarrow\\text{need not be a local extremum of }f$$
+
+so $x=1$ need not be a local extremum of $f$, and the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 130,
@@ -6166,19 +8436,39 @@ Thus $f$ decreases on $(1,4)$ and has a local minimum at $x=4$. At $x=2$ one rea
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has $C'>0$ throughout, so total cost $C$ is increasing, and the statement is True.`,
+The figure shows marginal cost $C'$. Throughout the window the curve stays above the horizontal axis.
+
+$$C'(x)>0\\quad\\text{throughout the window}$$
+
+Positive marginal cost means total cost $C$ is increasing, so the statement is True.`,
       `**B.** → True
 
-Rising $C'$ means $C''>0$, so $C$ is concave up, and the statement is True.`,
+The graph of $C'$ itself is rising as $x$ increases, so the second derivative of cost is positive.
+
+$$C''(x)>0$$
+
+Positive $C''$ means total cost $C$ is concave up, so the statement is True.`,
       `**C.** → True
 
-At $x=4$ the overview reads a height clearly above $2$, so the statement is True.`,
+At $x=4$, reading the shared vertical scale on the graph of marginal cost $C'$, the height is clearly greater than $2$.
+
+$$C'(4)>2$$
+
+so the claim's scale reading is correct, and the statement is True.`,
       `**D.** → False
 
-Positive $C'$ means cost keeps rising; there is no interior cost minimum from a sign change of $C'$ in $(0,6)$, so the statement is False.`,
+A local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:
+
+$$C'(x)>0\\quad\\text{on }(0,6)\\qquad\\Rightarrow\\qquad\\text{no critical point of }C$$
+
+Positivity of $C'$ only says cost is rising, not that a local minimum occurs, so the statement is False.`,
       `**E.** → True
 
-At the left endpoint the shared scale reading is about $0.5$, so the statement is True.`
+At the left edge $x=0$, reading the scale on the $C'$ curve gives a height of about half a unit.
+
+$$C'(0)\\approx 0.5$$
+
+so the statement matches the figure, and the statement is True.`
     ],
     difficulty_level: "3/5",
     sort_order: 131,
@@ -6208,19 +8498,39 @@ Total cost $C$ is therefore increasing and concave up. Reading the scale: at $x=
     tactical_explanations: [
       `**A.** → True
 
-Between the zeros $1$ and $2.5$ the overview has $f'>0$, and $x=2$ lies there, so $f$ is increasing at $x=2$ and the statement is True.`,
+Marked zeros of $f'$ sit at $x=1$, $2.5$, and $5$. Between $1$ and $2.5$ the curve is above the axis, and $x=2$ lies in that interval.
+
+$$f'(2)>0$$
+
+so $f$ is increasing at $x=2$, and the statement is True.`,
       `**B.** → True
 
-Between $2.5$ and $5$ one has $f'<0$, and $x=4$ is in that interval, so $f$ is decreasing at $x=4$ and the statement is True.`,
+Between the marked zeros at $x=2.5$ and $x=5$ the curve of $f'$ sits below the axis, and the sample point $x=4$ lies in that interval.
+
+$$f'(4)<0$$
+
+A negative derivative means $f$ is decreasing at $x=4$, so the statement is True.`,
       `**C.** → True
 
-The shared $+$ to $-$ change at $x=2.5$ is a local maximum of $f$, so the statement is True.`,
+At $x=2.5$ the figure shows $f'$ changing from positive (on the left) to negative (on the right).
+
+$$f'(2.5)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=2.5$$
+
+That is a local maximum of $f$ at $x=2.5$, so the statement is True.`,
       `**D.** → True
 
-The shared $-$ to $+$ change at $x=1$ is a local minimum of $f$, so the statement is True.`,
+At $x=1$ the figure shows $f'$ changing from negative to positive.
+
+$$f'(1)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=1$$
+
+That is a local minimum of $f$ at $x=1$, so the statement is True.`,
       `**E.** → False
 
-At $x=0$ the curve sits below the axis, so $f'(0)<0$, not positive, and the statement is False.`
+At the left edge of the window, left of the first zero $x=1$, the curve of $f'$ lies below the axis.
+
+$$f'(0)<0$$
+
+so $f'(0)$ is not positive, and the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 132,
@@ -6256,19 +8566,39 @@ In particular $f'(0)<0$, not positive.`,
     tactical_explanations: [
       `**A.** → True
 
-The shared sign chart has $f'>0$ on $(0,4)$, so $f$ is increasing there, and the statement is True.`,
+The figure shows $f'$ with a single positive hump left of the zero at $x=4$. On $(0,4)$ that hump sits above the axis.
+
+$$f'(x)>0\\quad\\text{for }x\\in(0,4)$$
+
+so $f$ is increasing on $(0,4)$, and the statement is True.`,
       `**B.** → True
 
-On $(4,8)$ one has $f'<0$, so $f$ is decreasing there, and the statement is True.`,
+Right of the zero at $x=4$ the skewed $f'$ curve lies below the horizontal axis, so the slope of $f$ is negative on that stretch.
+
+$$f'(x)<0\\quad\\text{for }x\\in(4,8)$$
+
+Hence $f$ is decreasing on $(4,8)$, so the statement is True.`,
       `**C.** → True
 
-The overview's $+$ to $-$ change at $x=4$ is a local maximum of $f$, so the statement is True.`,
+At $x=4$ the skewed $f'$ curve crosses from above the axis to below:
+
+$$f'(4)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=4$$
+
+That is the first-derivative test for a local maximum of $f$ at $x=4$, so the statement is True.`,
       `**D.** → True
 
-The largest $f'$ is the hump near $x=1$; at $x=4$ one has $f'=0$, so the steepest positive slope is not at $x=4$, and the statement is True.`,
+The steepest positive slope of $f$ is where $f'$ is largest among its positive values. On the figure that maximum of $f'$ sits near $x=1$, while at the critical point one has
+
+$$f'(4)=0$$
+
+so the steepest climb is near $x=1$, not at $x=4$, and the statement is True.`,
       `**E.** → True
 
-The shared scale readings give $f'(0)\\approx 4$ and $f'(6)$ negative but greater than $-1$, so the statement is True.`
+Reading the scale at the left edge, the height of $f'$ is about $4$. At $x=6$, which is right of the zero, the height is negative but greater than $-1$.
+
+$$f'(0)\\approx 4,\\qquad -1<f'(6)<0$$
+
+so both readings match the claim, and the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 133,
@@ -6300,19 +8630,39 @@ $$f'(0)\\approx 4,\\qquad f'(6)\\in(-1,0)$$`,
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has $f'(0)=0$ with a $-$ to $+$ change, which is a local minimum of $f$, so the statement is True.`,
+The figure shows $f'$ passing through the origin, negative on the left and positive on the right. At $x=0$ the height is zero and the sign flips from $-$ to $+$.
+
+$$f'(0)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=0$$
+
+That is the first-derivative test for a local minimum of $f$ at $x=0$, so the statement is True.`,
       `**B.** → True
 
-The sign chart has $f'<0$ on $(-3,0)$ and $f'>0$ on $(0,3)$, so $f$ decreases then increases, and the statement is True.`,
+On $(-3,0)$ the plotted derivative sits below the axis, and on $(0,3)$ it sits above:
+
+$$f'<0\\text{ on }(-3,0),\\qquad f'>0\\text{ on }(0,3)$$
+
+so $f$ decreases on the left and increases on the right, and the statement is True.`,
       `**C.** → True
 
-The overview reads lobe heights about $4$ in absolute value at $x=\\pm 1$, so the statement is True.`,
+The lobes of $f'$ peak near $x=\\pm 1$. Reading the shared vertical scale, the absolute height there is about $4$.
+
+$$|f'(1)|\\approx 4,\\qquad f'(-1)\\approx -4$$
+
+so both readings match the claim, and the statement is True.`,
       `**D.** → True
 
-The highest point of $f'$ on $(0,3)$ is near $x=1$, maximising the upward slope of $f$ on the right, so the statement is True.`,
+On $(0,3)$ the graph of $f'$ reaches its highest point near $x=1$:
+
+$$\\arg\\max_{x\\in(0,3)} f'(x)\\approx 1$$
+
+That largest positive height is where $f$ rises most steeply on the right, so the statement is True.`,
       `**E.** → False
 
-A zero of $f'$ with a sign change is a local extremum of $f$, not automatically an inflection. Inflections of $f$ track $f''$ (extrema of $f'$), near $\\pm 1$, so the statement is False.`
+A zero of $f'$ with a sign change is a local extremum of $f$ (here a local minimum at $x=0$). Inflection points of $f$ track sign changes of $f''$ — extrema of the graph of $f'$ — near $\\pm 1$:
+
+$$f'(0)=0\\qquad\\nRightarrow\\qquad\\text{inflection of }f\\text{ at }x=0$$
+
+so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 134,
@@ -6346,19 +8696,39 @@ The highest point of $f'$ on $(0,3)$ is near $x=1$, where $f$ rises most steeply
     tactical_explanations: [
       `**A.** → True
 
-Between $-2$ and $1$ the overview has $f'>0$, and $x=0$ lies there, so $f$ is increasing at $x=0$ and the statement is True.`,
+Zeros of $f'$ are marked at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis, and $x=0$ lies in that interval.
+
+$$f'(0)>0$$
+
+so $f$ is increasing at $x=0$, and the statement is True.`,
       `**B.** → True
 
-On $(1,2)$ the sign chart has $f'<0$, so $f$ is decreasing there, and the statement is True.`,
+Between the zeros $1$ and $2$ the curve of $f'$ dips below the axis.
+
+$$f'(x)<0\\quad\\text{for }x\\in(1,2)$$
+
+so $f$ is decreasing on $(1,2)$, and the statement is True.`,
       `**C.** → True
 
-The shared $+$ to $-$ change at $x=1$ and $-$ to $+$ at $x=2$ give a local max then a local min of $f$, so the statement is True.`,
+At $x=1$ the figure shows $f'$ changing from $+$ to $-$, which is a local maximum of $f$. At $x=2$ it changes from $-$ to $+$, which is a local minimum of $f$.
+
+$$f'\\text{ changes }+\\to-\\text{ at }x=1,\\qquad -\\to+\\text{ at }x=2$$
+
+so both classifications match the claim, and the statement is True.`,
       `**D.** → True
 
-At $x=3$ the overview reads a height greater than $4$, so the statement is True.`,
+Right of $x=2$ the curve of $f'$ rises above the axis again. Reading the vertical scale at $x=3$, the height is clearly greater than $4$.
+
+$$f'(3)>4$$
+
+so the statement is True.`,
       `**E.** → False
 
-Zeros of $f'$ are about $f$, not $f''$. Zeros of $f''$ are extrema of the graph of $f'$, so one need not have $f''=0$ at each of those three $x$-values, and the statement is False.`
+Zeros of $f'$ are critical points of $f$, not zeros of $f''$. Zeros of $f''$ line up with extrema of the graph of $f'$:
+
+$$f'(x)=0\\qquad\\nRightarrow\\qquad f''(x)=0$$
+
+Three zeros of $f'$ do not force $f''=0$ at those same abscissae, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 135,
@@ -6392,19 +8762,39 @@ At $x=3$ the scale reading is greater than $4$. Zeros of $f'$ are about extrema 
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has brown $0$ at $x=0$ and green positive near $8$, so the statement is True.`,
+Brown is $f'$ and green is $f''$ on shared axes. At $x=0$ the brown curve meets the origin while the green curve sits above the axis near height $8$.
+
+$$f'(0)=0,\\qquad f''(0)\\approx 8>0$$
+
+so both readings match the claim, and the statement is True.`,
       `**B.** → True
 
-Green positive near $x=0$ means $f''>0$, so brown ($f'$) is increasing through the origin, and the statement is True.`,
+Green is $f''$. Near $x=0$ that curve is positive, so the slope of brown is rising:
+
+$$f''(0)>0\\qquad\\Rightarrow\\qquad f'\\text{ increasing through }x=0$$
+
+Positive $f''$ means brown climbs through the origin, so the statement is True.`,
       `**C.** → True
 
-The overview aligns zeros of green near $\\pm 1$ with the peak and lowest point of brown, so the statement is True.`,
+Extrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros near $x=\\pm 1$ line up with the peak and the lowest point of brown:
+
+$$f''(\\pm 1)\\approx 0\\quad\\text{at extrema of }f'$$
+
+so the statement is True.`,
       `**D.** → True
 
-For $x>1$ green is negative, so brown is falling on $(1,3)$, and the statement is True.`,
+For $x>1$ the green curve lies below the axis, so $f''<0$ on $(1,3)$:
+
+$$f''(x)<0\\quad\\text{for }x\\in(1,3)$$
+
+Negative $f''$ means the brown graph of $f'$ is falling on that interval, so the statement is True.`,
       `**E.** → True
 
-Brown positive on $(0,3)$ means $f'>0$, so $f$ is increasing on $(0,3)$, and the statement is True.`
+On $(0,3)$ the brown curve ($f'$) stays above the axis, so the slope of $f$ is positive throughout that interval.
+
+$$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
+
+Positive $f'$ means $f$ is increasing on $(0,3)$, so the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 136,
@@ -6434,19 +8824,39 @@ so brown is increasing through the origin. Green is zero near $x=\\pm 1$, lining
     tactical_explanations: [
       `**A.** → True
 
-The shared reading places a local min of brown at $0$ with green crossing zero there, so the statement is True.`,
+Brown is $f$ and green is $f'$ on one plane. At $x=0$ the brown curve has a local lowest point of height $0$, and the green curve crosses the axis there.
+
+$$f(0)=0,\\qquad f'(0)=0$$
+
+so the local minimum of $f$ lines up with a zero of $f'$, and the statement is True.`,
       `**B.** → True
 
-On $(0,3)$ green is positive, matching a rising brown curve, so the statement is True.`,
+On $(0,3)$ the green curve ($f'$) sits above the axis:
+
+$$f'(x)>0\\quad\\text{for }x\\in(0,3)$$
+
+A positive slope matches the rising brown curve of $f$ on that stretch, so the statement is True.`,
       `**C.** → True
 
-On $(-3,0)$ green is negative, matching a falling brown curve, so the statement is True.`,
+On $(-3,0)$ the green curve ($f'$) sits below the axis:
+
+$$f'(x)<0\\quad\\text{for }x\\in(-3,0)$$
+
+A negative slope matches the falling brown curve of $f$ on that stretch, so the statement is True.`,
       `**D.** → True
 
-At $x=1$ the overview reads green near height $4$, so the slope of brown is about $4$, and the statement is True.`,
+At $x=1$ the height of the green curve is the value of $f'(1)$. Reading the shared scale there gives about $4$.
+
+$$f'(1)\\approx 4$$
+
+so the slope of brown at $x=1$ is about $4$, and the statement is True.`,
       `**E.** → False
 
-A maximum of $f'$ is the steepest climb of $f$, not a local maximum of $f$. Local maxima of $f$ need zeros of green with a $+$ to $-$ change, so the statement is False.`
+The highest point of green is a maximum of $f'$, which is where $f$ climbs most steeply — not where $f$ itself has a local maximum:
+
+$$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
+
+Local maxima of brown need zeros of green with a $+$ to $-$ change, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 137,
@@ -6476,19 +8886,39 @@ On $(0,3)$ green is positive and brown rises; on $(-3,0)$ green is negative and 
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has both curves above the axis at $x=2$, so the statement is True.`,
+Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the horizontal axis, so both derivatives are positive there.
+
+$$P'(2)>0,\\qquad Q'(2)>0$$
+
+so the statement is True.`,
       `**B.** → True
 
-Green is zero at $x=5$ while brown is negative there, matching the claim, so the statement is True.`,
+At $x=5$ the green curve meets the axis in a clear crossing, while the brown curve sits below the axis.
+
+$$Q'(5)=0,\\qquad P'(5)<0$$
+
+so green is zero and brown is negative at $x=5$, and the statement is True.`,
       `**C.** → True
 
-The overview records brown's two axis crossings — early and late — so the statement is True.`,
+Counting brown's clear axis crossings on the shared plane gives two zeros — one early in the window and one late:
+
+$$P'\\text{ has two zeros (single hump)}$$
+
+That matches the claim that brown has a single hump with two zeros, so the statement is True.`,
       `**D.** → True
 
-On $(2.5,5)$ green is negative, so $Q$ is decreasing there, and the statement is True.`,
+On $(2.5,5)$ the green curve ($Q'$) lies below the axis, so the derivative of $Q$ is negative there.
+
+$$Q'(x)<0\\quad\\text{for }x\\in(2.5,5)$$
+
+Negative $Q'$ means $Q$ is decreasing on that interval, so the statement is True.`,
       `**E.** → True
 
-On the shared scale, the higher curve at $x=2$ has the larger derivative; if brown sits above green then brown's value is larger, so the statement is True.`
+On a shared vertical scale, the higher curve at a fixed $x$ has the larger derivative value. If brown sits above green at $x=2$:
+
+$$P'(2)>Q'(2)$$
+
+so the larger of the two is brown's value, and the statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 138,
@@ -6514,19 +8944,39 @@ On the shared scale, the higher curve at $x=2$ has the larger derivative; if bro
     tactical_explanations: [
       `**A.** → True
 
-The shared reading at $x=4$ has brown positive and green negative, so the statement is True.`,
+Brown is $f'$ and green is $f''$. At $x=4$, reading both heights on the shared scale, brown sits above the axis while green sits below it.
+
+$$f'(4)>0,\\qquad f''(4)<0$$
+
+so the statement is True.`,
       `**B.** → True
 
-Green's zero at $x=3$ lines up with the peak of brown, so the statement is True.`,
+The peak of the brown curve ($f'$) lines up with a zero of the green curve ($f''$). On the figure that alignment is at $x=3$:
+
+$$f''(3)=0\\quad\\text{under }\\max f'$$
+
+so green crosses zero under the peak of brown, and the statement is True.`,
       `**C.** → True
 
-On $(3,6)$ green is negative, so brown is falling and $f$ is concave down, and the statement is True.`,
+On $(3,6)$ the green curve ($f''$) is negative:
+
+$$f''(x)<0\\quad\\text{for }x\\in(3,6)$$
+
+Negative second derivative means brown ($f'$) is falling and the level function $f$ is concave down on that stretch, so the statement is True.`,
       `**D.** → True
 
-At $x=2$ brown is positive, so $f$ is increasing there, and the statement is True.`,
+At $x=2$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.
+
+$$f'(2)>0$$
+
+Positive $f'$ means $f$ is increasing at $x=2$, so the statement is True.`,
       `**E.** → False
 
-Green being linear does not prevent brown from changing $+$ to $-$; that crossing still gives a local maximum of $f$, so the statement is False.`
+Green being a straight line only says $f''$ is linear; it does not prevent $f'$ from changing sign. On the figure brown still changes from $+$ to $-$ at a later zero near $x=5$:
+
+$$f'\\text{ changes }+\\to-\\text{ near }x=5$$
+
+so $f$ still has a local maximum there. A linear $f''$ does not rule out a local maximum of $f$, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 139,
@@ -6556,19 +9006,39 @@ so at $x=4$ brown is still positive while green is negative. On $(3,6)$ green is
     tactical_explanations: [
       `**A.** → True
 
-The shared alignment has brown near its max at $x=2$ with green about $0$, so the statement is True.`,
+Brown is $f'$ and green is $f''$. At $x=2$ the brown curve is near its maximum height, and the green curve is about zero there.
+
+$$f''(2)\\approx 0$$
+
+so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.`,
       `**B.** → True
 
-On $(0,2)$ green is positive, so brown is rising, and the statement is True.`,
+On $(0,2)$ the green curve ($f''$) sits above the axis:
+
+$$f''(x)>0\\quad\\text{for }x\\in(0,2)$$
+
+Positive $f''$ means the brown graph of $f'$ is rising on that interval, so the statement is True.`,
       `**C.** → True
 
-On $(2,5)$ green is negative, so brown is falling, and the statement is True.`,
+On $(2,5)$ the green curve ($f''$) sits below the axis:
+
+$$f''(x)<0\\quad\\text{for }x\\in(2,5)$$
+
+Negative $f''$ means the brown graph of $f'$ is falling on that interval, so the statement is True.`,
       `**D.** → True
 
-Wherever brown ($f'$) is positive, $f$ is increasing, so the statement is True.`,
+Wherever brown sits above the axis one has $f'>0$:
+
+$$f'>0\\quad\\Rightarrow\\quad f\\text{ increasing}$$
+
+A positive derivative means $f$ is increasing on that stretch, so wherever brown is positive, $f$ is increasing, and the statement is True.`,
       `**E.** → False
 
-A zero of $f''$ marks an extremum of $f'$, not a local maximum of $f$. Critical points of $f$ are zeros of brown, so the statement is False.`
+Green is $f''$. A zero of $f''$ marks an extremum of $f'$ (here the peak of brown), not a critical point of $f$:
+
+$$f''(2)=0\\qquad\\nRightarrow\\qquad\\text{local max of }f\\text{ at }x=2$$
+
+Critical points of $f$ are zeros of brown, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 140,
@@ -6598,19 +9068,39 @@ so brown rises on $(0,2)$ and falls on $(2,5)$. Wherever brown is positive, $f$ 
     tactical_explanations: [
       `**A.** → True
 
-The overview aligns the green $+$ to $-$ crossing near $x=2$ with the peak of brown, so the statement is True.`,
+Brown is $f'$ and green is $f''$. Near $x=2$ the green curve crosses from positive to negative under the peak of brown:
+
+$$f''\\text{ changes }+\\to-\\text{ near }x=2\\quad\\text{(under }\\max f'\\text{)}$$
+
+That alignment of a $+$ to $-$ change of $f''$ with a peak of $f'$ is exactly what the claim describes, so the statement is True.`,
       `**B.** → True
 
-On $(0,2)$ green is positive, so brown is rising, and the statement is True.`,
+On $(0,2)$ the green curve ($f''$) is positive:
+
+$$f''(x)>0\\quad\\text{for }x\\in(0,2)$$
+
+Positive $f''$ means brown ($f'$) is rising on that interval, climbing toward its peak near $x=2$, so the statement is True.`,
       `**C.** → True
 
-On $(2,8)$ green is negative, so brown is falling toward the axis, and the statement is True.`,
+On $(2,8)$ the green curve ($f''$) is negative:
+
+$$f''(x)<0\\quad\\text{for }x\\in(2,8)$$
+
+Negative $f''$ means brown is falling after its peak, toward the axis from above, so the statement is True.`,
       `**D.** → True
 
-At $x=6$ brown is still positive but small, so $f$ increases slowly there, and the statement is True.`,
+At $x=6$ the brown curve is still above the axis but close to it:
+
+$$f'(6)>0\\quad\\text{and small}$$
+
+A small positive slope means $f$ is still increasing, but slowly, so the statement is True.`,
       `**E.** → True
 
-Brown never goes negative in the window, so there is no $+$ to $-$ zero of $f'$ and no local max of $f$ in $(0,8)$, and the statement is True.`
+A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change. In this window brown never goes negative:
+
+$$f'(x)\\ge 0\\quad\\text{on }(0,8)$$
+
+so there is no such zero in $(0,8)$, and $f$ has no local maximum there. The statement is True.`
     ],
     difficulty_level: "4/5",
     sort_order: 141,
@@ -6636,19 +9126,39 @@ Brown never goes negative in the window, so there is no $+$ to $-$ zero of $f'$ 
     tactical_explanations: [
       `**A.** → True
 
-At $x=1$ the shared reading has brown above green, so the statement is True.`,
+Brown is marginal profit $P'$ and green is marginal cost $C'$. At $x=1$, reading the shared scale, brown sits near height $2$ while green sits near height $1$, so brown is above green.
+
+$$P'(1)>C'(1)$$
+
+and the statement is True.`,
       `**B.** → True
 
-At $x=5$ brown is below the axis while green is still positive, matching the claim, so the statement is True.`,
+At $x=5$ the brown curve has already crossed below the axis while the green curve remains above it.
+
+$$P'(5)<0,\\qquad C'(5)>0$$
+
+so brown is below the axis and green is still positive, and the statement is True.`,
       `**C.** → True
 
-Wherever brown ($P'$) is positive, expanding raises profit, so the statement is True.`,
+Wherever brown sits above the axis one has $P'>0$:
+
+$$P'>0\\quad\\Rightarrow\\quad\\text{a little more output raises profit}$$
+
+Positive marginal profit means expanding output raises profit there, so the statement is True.`,
       `**D.** → True
 
-Green positive throughout means total cost keeps rising, so the statement is True.`,
+Green staying positive throughout the window means $C'>0$ everywhere shown:
+
+$$C'(x)>0\\quad\\Rightarrow\\quad C\\text{ increasing}$$
+
+Positive marginal cost means total cost $C$ keeps rising throughout the window, so the statement is True.`,
       `**E.** → False
 
-A profit peak is where brown crosses $+$ to $-$, not where brown equals green, so the statement is False.`
+A profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:
+
+$$P'=C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-$$
+
+Meeting of the two curves is not the profit-peak test, so the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 142,
@@ -6674,19 +9184,39 @@ A profit peak is where brown crosses $+$ to $-$, not where brown equals green, s
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has both curves below the axis at $x=0$, so the statement is True.`,
+Brown is $f'$ and green is $g'$. At $x=0$ both curves sit below the horizontal axis on the shared plane.
+
+$$f'(0)<0,\\qquad g'(0)<0$$
+
+so both are negative at $x=0$, and the statement is True.`,
       `**B.** → True
 
-Counting crossings gives three zeros for brown and two for green, so the statement is True.`,
+Counting clear axis crossings on the shared plane:
+
+$$f'\\text{ has three zeros},\\qquad g'\\text{ has two zeros}$$
+
+Those counts match the claim, so the statement is True.`,
       `**C.** → True
 
-At $x=3$ brown is negative on the shared sign chart, so the statement is True.`,
+At $x=3$, between brown's middle and right zeros, the brown curve ($f'\`) sits below the axis on the shared plane.
+
+$$f'(3)<0$$
+
+so brown is negative at $x=3$, and the statement is True.`,
       `**D.** → True
 
-Negative derivatives mean both decrease; when brown is less negative than green, $f$ decreases more gently, so the statement is True.`,
+When both derivatives are negative, both $f$ and $g$ are decreasing. If brown sits above green while both are negative, then brown is less negative:
+
+$$f'<0,\\ g'<0,\\ f'>g'\\quad\\Rightarrow\\quad |f'|<|g'|$$
+
+so $f$ decreases less steeply than $g$, and the statement is True.`,
       `**E.** → False
 
-Brown has three zeros and green two, so equal numbers of turning points for $f$ and $g$ do not follow, and the statement is False.`
+Turning points of $f$ and $g$ are zeros of $f'$ and $g'$ that change sign. Brown has three zeros and green has two:
+
+$$3\\neq 2$$
+
+so the figure does not give equal numbers of turning points, and the statement is False.`
     ],
     difficulty_level: "4/5",
     sort_order: 143,
@@ -6712,19 +9242,39 @@ Brown has three zeros and green two, so equal numbers of turning points for $f$ 
     tactical_explanations: [
       `**A.** → True
 
-Four transversal zeros of $f'$ give four local extrema of $f$, so the statement is True.`,
+The figure shows $f'$ with four transversal axis crossings in $[0,6]$, near $x=0.5$, $2$, $3.5$, and $5.5$. Each sign-changing zero produces a local extremum of $f$:
+
+$$4\\text{ sign-changing zeros of }f'\\Rightarrow 4\\text{ local extrema of }f$$
+
+so the statement is True.`,
       `**B.** → True
 
-Between $x=2$ and $x=3.5$ the overview has $f'<0$, so $f$ is decreasing there, and the statement is True.`,
+Between the zeros near $x=2$ and $x=3.5$ the curve of $f'$ dips below the axis.
+
+$$f'(x)<0\\quad\\text{between those zeros}$$
+
+so $f$ is decreasing on that open interval, and the statement is True.`,
       `**C.** → True
 
-At $x=1$ the curve sits above the axis between the first two zeros, so $f'(1)>0$ and the statement is True.`,
+Between the zeros near $x=0.5$ and $x=2$ the curve of $f'$ sits above the axis, and the sample point $x=1$ lies in that interval.
+
+$$f'(1)>0$$
+
+so the derivative is positive at $x=1$, and the statement is True.`,
       `**D.** → False
 
-A lowest point of the graph of $f'$ is about $f''=0$, not a local minimum of $f$ (those need zeros of $f'$ with a $-$ to $+$ change), so the statement is False.`,
+A local minimum of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — typically an inflection story for $f$, not a local minimum of $f$:
+
+$$\\min f'\\qquad\\nRightarrow\\qquad\\min f$$
+
+Local minima of $f$ need zeros of $f'$ with a $-$ to $+$ change, so the statement is False.`,
       `**E.** → True
 
-Between consecutive zeros the sign of $f'$ cannot change, so $f$ is strictly monotonic on each such open interval, and the statement is True.`
+A continuous $f'$ cannot change sign without passing through zero. Between consecutive zeros the sign of $f'$ is therefore constant:
+
+$$f'\\text{ constant sign between consecutive zeros}$$
+
+so $f$ is strictly monotonic on each such open interval, and the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 144,
@@ -6754,19 +9304,39 @@ Each sign-changing zero gives a local extremum of $f$, so $f$ has four local ext
     tactical_explanations: [
       `**A.** → True
 
-On $(1,3)$ the shared sign chart has $f'<0$, so $f$ is decreasing there, and the statement is True.`,
+Zeros of $f'$ are marked at $x=1$ and $x=3$. Between them the curve sits below the axis.
+
+$$f'(x)<0\\quad\\text{for }x\\in(1,3)$$
+
+so $f$ is decreasing on $(1,3)$, and the statement is True.`,
       `**B.** → True
 
-At $x=1$ the overview records a $+$ to $-$ change, a local maximum of $f$, so the statement is True.`,
+Left of $x=1$ the curve is above the axis; just right of $x=1$ it is below.
+
+$$f'(1)=0,\\qquad f'\\text{ changes }+\\to-\\text{ at }x=1$$
+
+That is a local maximum of $f$ at $x=1$, so the statement is True.`,
       `**C.** → True
 
-At $x=3$ the $-$ to $+$ change is a local minimum of $f$, so the statement is True.`,
+At $x=3$ the figure shows the opposite flip: the curve arrives from below and leaves above.
+
+$$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
+
+That is a local minimum of $f$ at $x=3$, so the statement is True.`,
       `**D.** → True
 
-The decaying envelope makes $|f'(5)|$ smaller than $|f'(2)|$, so the statement is True.`,
+The envelope of the oscillation decays as $x$ grows. Comparing absolute heights, the dip near $x=2$ is larger than the height at $x=5$.
+
+$$|f'(5)|<|f'(2)|$$
+
+so $|f'(5)|$ is smaller than $|f'(2)|$, and the statement is True.`,
       `**E.** → False
 
-A sign change of $f'$ still produces a local extremum of $f$ even when $|f'|$ is smaller near $x=3$, so the statement is False.`
+A local extremum of $f$ is decided by a sign change of $f'$ at a zero, not by the size of nearby amplitudes. Even when $|f'|$ is smaller near $x=3$ than near $x=2$, the $-$ to $+$ crossing at $x=3$ still produces a local minimum of $f$:
+
+$$f'(3)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=3$$
+
+Amplitude decay does not cancel that test, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 145,
@@ -6796,19 +9366,39 @@ so $f$ has a local maximum at $x=1$ ($+$ to $-$) and a local minimum at $x=3$ ($
     tactical_explanations: [
       `**A.** → True
 
-At $x=3$ the shared reading has brown below the axis, so $f'(3)<0$ and the statement is True.`,
+Brown is $f'$ and green is $f''$ on the same plane. At $x=3$, which lies between brown's later zeros, the brown curve sits below the axis.
+
+$$f'(3)<0$$
+
+so the statement is True.`,
       `**B.** → True
 
-At $x=3$ green is also below the axis, so $f''(3)<0$ and $f$ is concave down there, and the statement is True.`,
+At the same abscissa $x=3$ the green curve also sits below the axis:
+
+$$f''(3)<0$$
+
+Negative second derivative means $f$ is concave down at $x=3$, so the statement is True.`,
       `**C.** → True
 
-Near $x=1.5$ a local max of brown aligns with green about $0$, so the statement is True.`,
+Near $x=1.5$ the brown curve has a local highest point, and the green curve is about zero there.
+
+$$f''(1.5)\\approx 0$$
+
+so the local maximum of $f'$ lines up with a zero of $f''$, and the statement is True.`,
       `**D.** → True
 
-Wherever green ($f''$) is positive, brown ($f'$) is rising, so the statement is True.`,
+Green is $f''$. Wherever green is positive one has $f''>0$:
+
+$$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising}$$
+
+so the brown graph of $f'$ is rising on that stretch, and the statement is True.`,
       `**E.** → True
 
-Counting crossings gives three zeros for brown and two for green, so the statement is True.`
+Counting clear axis crossings in the window:
+
+$$f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}$$
+
+Those counts match the claim exactly, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 146,
@@ -6838,19 +9428,39 @@ so $f$ is decreasing and concave down at $x=3$. Near $x=1.5$ brown has a local m
     tactical_explanations: [
       `**A.** → True
 
-The shared reading has brown crossing at $x=4$ and positive to the left, so the statement is True.`,
+Brown is $f'$ and green is $f''$. The brown curve crosses the axis at $x=4$, and to the left of that zero it forms a positive hump above the axis.
+
+$$f'(x)>0\\quad\\text{for }x\\in(0,4),\\qquad f'(4)=0$$
+
+so the claim's reading of the figure is correct, and the statement is True.`,
       `**B.** → True
 
-At the highest point of brown near $x=1$, green is approximately zero, so the statement is True.`,
+The highest point of brown sits near $x=1$, and there the green curve is approximately zero.
+
+$$f''(1)\\approx 0$$
+
+so the peak of $f'$ lines up with a zero of $f''$, and the statement is True.`,
       `**C.** → True
 
-For $x>2$ green is negative, so $f'$ is decreasing on $(2,8)$, and the statement is True.`,
+For $x>2$ in this window the green curve ($f''$) is negative:
+
+$$f''(x)<0\\quad\\text{for }x\\in(2,8)$$
+
+Negative $f''$ means the brown graph of $f'$ is decreasing on $(2,8)$, so the statement is True.`,
       `**D.** → True
 
-At $x=0$ the overview reads brown near $4$ and green near $-2$, so the statement is True.`,
+At the left edge, reading both heights on the shared scale, brown is near height $4$ while green is near height $-2$.
+
+$$f'(0)\\approx 4,\\qquad f''(0)\\approx -2$$
+
+so the statement is True.`,
       `**E.** → False
 
-Negative $f''$ does not force $f$ to decrease; on $(2,4)$ one still has $f'>0$, so $f$ is still increasing there, and the statement is False.`
+Negative $f''$ says $f'$ is decreasing and $f$ is concave down; it does not say $f$ itself is decreasing. On $(2,4)$ one still has $f'>0$ from the positive brown hump:
+
+$$f''<0\\text{ on }(2,8)\\quad\\text{but}\\quad f'>0\\text{ on }(2,4)$$
+
+so $f$ is still increasing on $(2,4)$. Concavity and monotonicity are different, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 147,
@@ -6884,19 +9494,39 @@ Negative $f''$ speaks to concavity of $f$ and decrease of $f'$, not to whether $
     tactical_explanations: [
       `**A.** → True
 
-The shared zero locations match $A$ near $1,3$ and $B$ near $2,5$, so the statement is True.`,
+Brown is firm A's marginal profit $P_A'$ and green is firm B's $P_B'$. Reading the axis crossings:
+
+$$P_A'\\text{ zeros near }x=1,3;\\qquad P_B'\\text{ zeros near }x=2,5$$
+
+Those four readings match the claim, so the statement is True.`,
       `**B.** → True
 
-At $x=1.5$ brown is negative and green positive, so A contracts and B expands, and the statement is True.`,
+At $x=1.5$, brown sits below the axis while green sits above it.
+
+$$P_A'(1.5)<0,\\qquad P_B'(1.5)>0$$
+
+Negative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice, so the statement is True.`,
       `**C.** → True
 
-At $x=4$ both curves are negative, so both profits decrease in output there, and the statement is True.`,
+At $x=4$ both curves sit below the axis, so both marginal profits are negative.
+
+$$P_A'(4)<0,\\qquad P_B'(4)<0$$
+
+Negative $P'$ means each firm's profit is decreasing in output there, so the statement is True.`,
       `**D.** → True
 
-Near $x=0$ both are positive with green higher than brown, so the statement is True.`,
+Near $x=0$ both curves sit above the axis, and on the shared scale green starts higher than brown.
+
+$$P_A'(0)>0,\\qquad P_B'(0)>P_A'(0)$$
+
+so both are positive and green starts higher, and the statement is True.`,
       `**E.** → False
 
-Equal zero counts do not equate maximal profit levels — $P$ itself is not on the figure — so the statement is False.`
+Having two zeros each only says each firm's marginal profit changes sign twice; it says nothing about the height of the profit level $P$ itself:
+
+$$\\#\\{P_A'=0\\}=\\#\\{P_B'=0\\}\\qquad\\nRightarrow\\qquad\\max P_A=\\max P_B$$
+
+Equal critical-point counts do not force equal maximal profit levels, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 148,
@@ -6926,19 +9556,39 @@ Near $x=0$ both curves are positive, with green starting higher than brown. At $
     tactical_explanations: [
       `**A.** → True
 
-The shared count has four zeros of brown in $[0,6]$, so the statement is True.`,
+Brown is $f'$ and green is $f''$. Counting clear axis crossings of the brown curve in $[0,6]$:
+
+$$f'\\text{ has four zeros in }[0,6]$$
+
+That count matches the claim, so the statement is True.`,
       `**B.** → True
 
-Green has three zeros in the window (one fewer than brown), so the statement is True.`,
+Counting clear axis crossings of the green curve ($f''$) in the same window:
+
+$$f''\\text{ has three zeros (one fewer than }f'\\text{)}$$
+
+That count matches the claim, so the statement is True.`,
       `**C.** → True
 
-Extrema of $f'$ occur where $f''=0$, so at a local max of brown, green crosses or touches zero, and the statement is True.`,
+Extrema of brown ($f'$) occur where green ($f''$) is zero:
+
+$$f''=0\\quad\\text{at a local max of }f'$$
+
+On the figure, at a local maximum of brown, green crosses or touches zero, so the statement is True.`,
       `**D.** → True
 
-Where green is positive, brown rises and $f$ is concave up, so the statement is True.`,
+Wherever green is positive one has $f''>0$:
+
+$$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising and }f\\text{ concave up}$$
+
+Positive $f''$ is exactly the concave-up reading for $f$, so the statement is True.`,
       `**E.** → True
 
-At $x=3$ brown is negative, so $f$ is decreasing there, and the statement is True.`
+At $x=3$ the brown curve ($f'$) sits below the axis on the shared plane, so the slope of $f$ is negative there.
+
+$$f'(3)<0$$
+
+Negative $f'$ means $f$ is decreasing at $x=3$, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 149,
@@ -6968,19 +9618,39 @@ Extrema of brown line up with zeros of green: at a local maximum of brown, green
     tactical_explanations: [
       `**A.** → True
 
-At $x=0$ the overview has brown and purple positive while green is negative, so the statement is True.`,
+Three marginal-profit curves sit on the same axes (brown, green, purple). At $x=0$, brown and purple start above the axis while green starts below it (near height $-1$).
+
+$$P_1'(0)>0,\\qquad P_3'(0)>0,\\qquad P_2'(0)<0$$
+
+so brown and purple are positive while green is negative, and the statement is True.`,
       `**B.** → False
 
-Green starts below the axis at $x=0$ (near height $-1$), so $P_2'$ is not positive there, and the statement is False.`,
+At $x=0$ the green curve $P_2'$ starts below the axis on the shared plane, near height $-1$, not above it.
+
+$$P_2'(0)<0$$
+
+so green is not positive at $x=0$, and the statement is False.`,
       `**C.** → True
 
-At $x=5$ brown is negative after its crossing near $x=4$, so firm 1's profit is decreasing in output there, and the statement is True.`,
+At $x=5$ the brown curve sits below the axis, so firm 1's marginal profit is negative.
+
+$$P_1'(5)<0$$
+
+Negative $P_1'$ means firm 1's profit is decreasing in output at $x=5$, so the statement is True.`,
       `**D.** → True
 
-Different zero locations mean the first sign-change when moving right from $x=0$ need not belong to firm 1, so the statement is True.`,
+Moving right from $x=0$, the first axis crossing among the three colours need not belong to brown:
+
+$$\\text{first zero from the left need not be }P_1'=0$$
+
+On the figure another firm's curve can meet the axis earlier than firm 1's, so the statement is True.`,
       `**E.** → True
 
-The value of $P'$ is the instantaneous rate; the higher positive curve means the larger profit gain per unit, so the statement is True.`
+On a shared vertical scale, if one curve sits above another and both are positive:
+
+$$P_i'>P_j'>0\\quad\\Rightarrow\\quad\\text{firm }i\\text{ has the larger instantaneous gain per unit}$$
+
+Height comparison of positive $P'$ values is exactly that ranking, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 150,
@@ -7010,19 +9680,39 @@ so firm 2 starts with negative marginal profit. Brown crosses near $x=4$ and is 
     tactical_explanations: [
       `**A.** → True
 
-The shared zero locations match brown at $1,3$ and green at $2,5$, so the statement is True.`,
+Brown is $f'$ and green is $g'$. Reading the marked-style crossings off the shared axis:
+
+$$f'\\text{ zeros at }x=1,3;\\qquad g'\\text{ zeros at }x=2,5$$
+
+Those four readings match the claim, so the statement is True.`,
       `**B.** → True
 
-At $x=0$ both are positive with green higher than brown, so the statement is True.`,
+At $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.
+
+$$f'(0)>0,\\qquad g'(0)>f'(0)$$
+
+so both are positive and $g'(0)>f'(0)$, and the statement is True.`,
       `**C.** → True
 
-At $x=2.5$ both curves are negative on the shared sign chart, so the statement is True.`,
+At $x=2.5$, between brown's zeros and also between green's early stretch past $x=2$, both curves sit below the axis.
+
+$$f'(2.5)<0,\\qquad g'(2.5)<0$$
+
+so both are negative at $x=2.5$, and the statement is True.`,
       `**D.** → True
 
-On $(3,5)$ brown is positive and green negative, so $f$ increases and $g$ decreases there, and the statement is True.`,
+On $(3,5)$ brown has already crossed back above the axis while green is still below it (until $x=5$).
+
+$$f'(x)>0,\\qquad g'(x)<0\\quad\\text{on }(3,5)$$
+
+so $f$ increases and $g$ decreases there, and the statement is True.`,
       `**E.** → False
 
-Equal zero counts do not equate maximal function values, so the statement is False.`
+Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same number of candidate critical points. The maximal heights are not determined by those counts:
+
+$$\\#\\{f'=0\\}=\\#\\{g'=0\\}\\qquad\\nRightarrow\\qquad\\max f=\\max g$$
+
+so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 151,
@@ -7052,19 +9742,39 @@ At $x=0$ both are positive with $g'(0)>f'(0)$. At $x=2.5$ both sit below the axi
     tactical_explanations: [
       `**A.** → True
 
-At $x=0$ the overview has brown near $4$ and green near $-4$, so the statement is True.`,
+Brown is $f'$, green is $f''$, and purple is $h'$. At $x=0$, reading the shared scale, brown is near height $4$ while green is near height $-4$.
+
+$$f'(0)\\approx 4,\\qquad f''(0)\\approx -4$$
+
+so brown is positive and green is negative at $x=0$, and the statement is True.`,
       `**B.** → True
 
-At $x=3$ brown is near $10$ above purple near $6$, so the statement is True.`,
+At $x=3$, brown is near height $10$ while purple is near height $6$, so brown lies above purple.
+
+$$f'(3)\\approx 10,\\qquad h'(3)\\approx 6$$
+
+and the statement is True.`,
       `**C.** → True
 
-Green is U-shaped and below the axis at $x=0$, so the statement is True.`,
+The green curve ($f''$) opens upward in a U-shape on the shared plane, and at $x=0$ it sits below the axis:
+
+$$f''(0)\\approx -4<0,\\qquad f''\\text{ opens upward}$$
+
+Both geometric facts match the claim, so the statement is True.`,
       `**D.** → True
 
-Wherever green ($f''$) is positive, brown ($f'$) is increasing, so the statement is True.`,
+Green is $f''$. Wherever green is positive one has $f''>0$:
+
+$$f''>0\\quad\\Rightarrow\\quad f'\\text{ increasing in }x$$
+
+so brown ($f'$) is rising on that stretch, and the statement is True.`,
       `**E.** → False
 
-A vertical shift/scaling moves which $x$ make purple zero; the zeros need not match brown's, so the statement is False.`
+A vertical shift or scaling of brown moves the heights, so purple's axis crossings need not match brown's zeros:
+
+$$h'=\\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}$$
+
+On the figure purple and brown meet the axis at different $x$-values, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 152,
@@ -7094,19 +9804,39 @@ Green opens upward (U-shaped) and is negative at $x=0$. At $x=3$ brown sits near
     tactical_explanations: [
       `**A.** → True
 
-At $x=3$ the shared reading has both $A$ and $B$ below the axis, so the statement is True.`,
+Brown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.
+
+$$A(3)<0,\\qquad B(3)<0$$
+
+so both are negative at $x=3$, and the statement is True.`,
       `**B.** → False
 
-Purple sits above brown at $x=3$ on the shared scale, not strictly below, so the statement is False.`,
+At $x=3$, compare purple ($A-B$) with brown ($A$) on the shared vertical scale. Relative height decides the claim:
+
+$$(A-B)(3)\\not< A(3)$$
+
+Purple sits above brown, not strictly below it. The claimed inequality runs the wrong way on the figure, so the statement is False.`,
       `**C.** → True
 
-Since $B=A'$, extrema of $A$ sit at zeros of $B$, so the statement is True.`,
+Because $B=A'$, zeros of green are critical points of brown. On the figure those zeros sit under a local max and a local min of $A$:
+
+$$B=0\\quad\\text{under local max/min of }A$$
+
+which is exactly the first-derivative alignment, so the statement is True.`,
       `**D.** → True
 
-Wherever $B=A'>0$, the brown curve $A$ is rising, so the statement is True.`,
+Wherever the green curve is positive one has $B=A'>0$:
+
+$$B>0\\quad\\Rightarrow\\quad A\\text{ rising}$$
+
+Positive $A'$ is exactly the increasing test for $A$, so the statement is True.`,
       `**E.** → True
 
-A zero of purple $A-B$ means $A=B$, and with $B=A'$ that is $A(x)=A'(x)$, so the statement is True.`
+Purple is $A-B$. A zero of purple means $A-B=0$, hence $A=B$ at that $x$. With $B=A'$ this is
+
+$$A(x)=A'(x)$$
+
+so the claim's reading is correct, and the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 153,
@@ -7136,19 +9866,39 @@ while purple sits above brown on the shared scale (not below). Because $B=A'$, z
     tactical_explanations: [
       `**A.** → True
 
-On $(-2,1)$ the shared sign chart has $f'>0$, so $f$ is increasing there, and the statement is True.`,
+Zeros of $f'$ are at $x=-2$, $1$, and $2$. Between $-2$ and $1$ the curve sits above the axis.
+
+$$f'(x)>0\\quad\\text{for }x\\in(-2,1)$$
+
+so $f$ is increasing on $(-2,1)$, and the statement is True.`,
       `**B.** → True
 
-At $x=-1$ the overview reads a positive height near $6$, so the statement is True.`,
+At $x=-1$, which lies in $(-2,1)$, the graph is clearly above the axis. Reading the vertical scale, the height is about $6$.
+
+$$f'(-1)\\approx 6>0$$
+
+so the statement is True.`,
       `**C.** → True
 
-On $(1,2)$ one has $f'<0$, so $f$ decreases there, and the statement is True.`,
+Between the zeros at $x=1$ and $x=2$ the curve of $f'$ dips below the axis, so the slope of $f$ is negative on that open interval.
+
+$$f'(x)<0\\quad\\text{for }x\\in(1,2)$$
+
+Hence $f$ decreases on $(1,2)$, so the statement is True.`,
       `**D.** → True
 
-The $+$ to $-$ change at $x=1$ is the local maximum of $f$ among these critical points, so the statement is True.`,
+Among the critical points, $x=1$ is where $f'$ changes from $+$ to $-$:
+
+$$f'\\text{ changes }+\\to-\\text{ at }x=1$$
+
+That is a local maximum of $f$. The other zeros give a local min (or the opposite flip), so among these critical points the local maximum of $f$ is at $x=1$, and the statement is True.`,
       `**E.** → False
 
-At $x=-2$ the change is $-$ to $+$, a local minimum of $f$, not a local maximum, so the statement is False.`
+At $x=-2$ the figure shows a $-$ to $+$ pattern (local minimum of $f$), not the claimed $+$ to $-$ flip:
+
+$$f'\\text{ changes }-\\to+\\text{ at }x=-2$$
+
+so $x=-2$ is a local minimum of $f$, not a local maximum, and the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 154,
@@ -7178,19 +9928,39 @@ So $f$ increases on $(-2,1)$ and decreases on $(1,2)$. At $x=-1$ the height is a
     tactical_explanations: [
       `**A.** → True
 
-At $x=0$ brown is below the axis and purple is even lower, so the statement is True.`,
+Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$. At $x=0$, brown sits below the axis and purple, being two units lower, sits even further below.
+
+$$f'(0)<0,\\qquad f'(0)-2<f'(0)$$
+
+so brown is below and purple is even lower, and the statement is True.`,
       `**B.** → True
 
-Zeros of green sit under extrema of brown, so the statement is True.`,
+Extrema of brown ($f'$) occur where green ($f''$) is zero. On the figure the green zeros sit under a local max and a local min of brown:
+
+$$f''=0\\quad\\text{at extrema of }f'$$
+
+so the statement is True.`,
       `**C.** → True
 
-A vertical shift moves purple's axis crossings away from brown's zeros, so the statement is True.`,
+Purple is brown shifted down by $2$, so it meets the axis where brown has height $2$:
+
+$$f'-2=0\\quad\\Leftrightarrow\\quad f'=2$$
+
+Those zeros are at different $x$-values from brown's zeros ($f'=0$), which is what the figure shows, so the statement is True.`,
       `**D.** → True
 
-Wherever green ($f''$) is positive, brown ($f'$) is rising, so the statement is True.`,
+Wherever the green curve ($f''$) is positive one has $f''>0$:
+
+$$f''>0\\quad\\Rightarrow\\quad f'\\text{ rising}$$
+
+so brown is increasing as a function of $x$, and the statement is True.`,
       `**E.** → True
 
-A vertical shift preserves the $x$-locations of local max/min of brown and purple, so the statement is True.`
+A pure vertical shift does not move peaks and valleys horizontally:
+
+$$(f'-2)'=f''$$
+
+so the $x$-coordinates of local max/min of purple match those of brown. Only the heights differ by $2$, and the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 155,
@@ -7216,19 +9986,39 @@ A vertical shift preserves the $x$-locations of local max/min of brown and purpl
     tactical_explanations: [
       `**A.** → True
 
-At $x=3$ brown and purple are above the axis while green is below, so the statement is True.`,
+Brown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.
+
+$$P_{\\text{brown}}'(3)>0,\\qquad P_{\\text{purple}}'(3)>0,\\qquad P_{\\text{green}}'(3)<0$$
+
+so the sign reading matches the claim, and the statement is True.`,
       `**B.** → True
 
-Brown's $+$ to $-$ crossing near $x=5$ is firm A's local profit peak, so the statement is True.`,
+Firm A (brown) has a local profit peak where its marginal profit changes from $+$ to $-$. On the figure that crossing occurs near $x=5$:
+
+$$P_{\\text{brown}}'\\text{ changes }+\\to-\\text{ near }x=5$$
+
+so firm A has a local profit peak near $x=5$, and the statement is True.`,
       `**C.** → False
 
-At $x=0$ brown is still below the axis; it becomes positive only after $x=1$, so the statement is False.`,
+At $x=0$ the brown curve starts at or below the axis, not already positive. Reading the left edge, brown is not above the axis at the start.
+
+$$P_{\\text{brown}}'(0)\\not>0$$
+
+so the claim that brown is already positive at $x=0$ is wrong, and the statement is False.`,
       `**D.** → True
 
-Purple falls through the axis somewhere in $(4,5)$, so the statement is True.`,
+The purple curve sits above the axis in the mid-window and then crosses below it somewhere in $(4,5)$:
+
+$$P_{\\text{purple}}'\\text{ changes }+\\to-\\text{ in }(4,5)$$
+
+That crossing is visible on the figure, so the statement is True.`,
       `**E.** → False
 
-At $x=3$ brown and purple recommend expand while green recommends contract, so the firms do not share one recommendation on $(0,6)$, and the statement is False.`
+Expand/contract advice is the sign of each firm's marginal profit. At $x=3$, brown and purple are positive while green is negative:
+
+$$\\text{signs disagree at }x=3$$
+
+so the three firms do not share the same recommendation on $(0,6)$, and the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 156,
@@ -7254,19 +10044,39 @@ At $x=3$ brown and purple recommend expand while green recommends contract, so t
     tactical_explanations: [
       `**A.** → True
 
-Turning points of brown line up with zeros of green in the shared reading, so the statement is True.`,
+Brown is $f$ and green is $f'$. Turning points of brown are critical points of $f$, which must be zeros of $f'$:
+
+$$f'=0\\quad\\text{at turning points of }f$$
+
+On the shared figure those turning points line up with the zeros of green, so the statement is True.`,
       `**B.** → True
 
-Where green is positive, brown is rising, so the statement is True.`,
+Wherever green sits above the axis one has $f'>0$:
+
+$$f'>0\\quad\\Rightarrow\\quad f\\text{ rising}$$
+
+Positive $f'$ matches a rising brown graph, so the statement is True.`,
       `**C.** → True
 
-Where green is negative, brown is falling, so the statement is True.`,
+Wherever green sits below the axis one has $f'<0$:
+
+$$f'<0\\quad\\Rightarrow\\quad f\\text{ falling}$$
+
+Negative $f'$ matches a falling brown graph, so the statement is True.`,
       `**D.** → False
 
-The highest point of green is the steepest slope of brown, not a local maximum of brown (that peak is near $x=5$ where green is $0$), so the statement is False.`,
+The highest point of green is a maximum of $f'$, which is where brown climbs most steeply — not where brown has a local maximum:
+
+$$\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f$$
+
+Local maxima of brown need zeros of green with a $+$ to $-$ change, so the statement is False.`,
       `**E.** → True
 
-At $x=3$ green near height $4$ matches the steepest climb of brown, so the statement is True.`
+At $x=3$ the green curve is near height $4$, and that is where brown's climb looks steepest in the window.
+
+$$f'(3)\\approx 4$$
+
+so the reading matches the steepest climb of brown, and the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 157,
@@ -7292,19 +10102,39 @@ At $x=3$ green near height $4$ matches the steepest climb of brown, so the state
     tactical_explanations: [
       `**A.** → True
 
-At $x=4$ the overview records brown changing from negative to positive, so the statement is True.`,
+Brown is $f'$ and green is $f''$. At $x=4$ the brown curve crosses the axis from below to above.
+
+$$f'(4)=0,\\qquad f'\\text{ changes }-\\to+\\text{ at }x=4$$
+
+so brown changes from negative to positive at $x=4$, and the statement is True.`,
       `**B.** → True
 
-Near $x=1$ brown stays non-positive on both sides, so there is no ordinary $+$ to $-$ local-max test for $f$ there, and the statement is True.`,
+Near $x=1$ brown touches the axis but stays non-positive on both sides in the window:
+
+$$f'\\le 0\\text{ on both sides of }x=1\\text{ (in view)}$$
+
+Without a clear $+$ to $-$ flip, the ordinary local-max test for $f$ does not fire at that touch, so the statement is True.`,
       `**C.** → True
 
-A lowest point of brown between $1$ and $4$ aligns with a green zero, so the statement is True.`,
+Between $x=1$ and $x=4$ the brown curve has a lowest point, and there the green curve is zero:
+
+$$f''=0\\quad\\text{at }\\min f'\\text{ between }1\\text{ and }4$$
+
+Extrema of $f'$ line up with zeros of $f''$, so the statement is True.`,
       `**D.** → True
 
-On $(4,5)$ brown is positive, so $f$ is increasing there, and the statement is True.`,
+On $(4,5)$ the brown curve sits above the axis after the crossing at $x=4$.
+
+$$f'(x)>0\\quad\\text{for }x\\in(4,5)$$
+
+so $f$ is increasing there, and the statement is True.`,
       `**E.** → False
 
-Zeros of $f''$ mark extrema of $f'$, not of $f$; extrema of $f$ need zeros of $f'$, so the statement is False.`
+A zero of green is a zero of $f''$, which marks an extremum of $f'$ (brown), not automatically a local extremum of $f$:
+
+$$f''=0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f$$
+
+Local extrema of $f$ need zeros of brown with a sign change, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 158,
@@ -7330,19 +10160,39 @@ Zeros of $f''$ mark extrema of $f'$, not of $f$; extrema of $f$ need zeros of $f
     tactical_explanations: [
       `**A.** → True
 
-Purple tracks $R'-C'$, so it is positive precisely where brown lies above green, and the statement is True.`,
+Brown is $R'$, green is $C'$, and purple is $P'=R'-C'$. Purple is positive precisely where $R'-C'>0$:
+
+$$P'>0\\quad\\Leftrightarrow\\quad R'>C'\\quad\\Leftrightarrow\\quad\\text{brown above green}$$
+
+That geometric comparison is exactly the sign of purple, so the statement is True.`,
       `**B.** → True
 
-At $x=2$ brown is high and above green, so purple is positive there, and the statement is True.`,
+At $x=2$, brown ($R'$) is near its peak and still sits above green ($C'$), so marginal revenue exceeds marginal cost and purple ($P'=R'-C'$) is positive there.
+
+$$P'(2)=R'(2)-C'(2)>0$$
+
+so the statement is True.`,
       `**C.** → True
 
-Late in the window brown falls below green while green stays positive, so purple becomes negative, and the statement is True.`,
+Late in the window green stays positive while brown falls below it, so $R'<C'$ and purple becomes negative:
+
+$$R'<C'\\quad\\Rightarrow\\quad P'<0\\text{ late in the window}$$
+
+That late crossing of purple below the axis matches the claim, so the statement is True.`,
       `**D.** → True
 
-A $+$ to $-$ crossing of purple is a local maximum of profit $P$, so the statement is True.`,
+A local profit peak occurs where marginal profit changes from $+$ to $-$:
+
+$$P'\\text{ changes }+\\to-\\quad\\Rightarrow\\quad\\text{local max of }P$$
+
+On the figure that is where purple crosses from above the axis to below it, so the statement is True.`,
       `**E.** → False
 
-Green stays positive, so cost keeps rising; there is no local cost maximum from a sign change of $C'$, and the statement is False.`
+Green never crossing the axis means $C'$ stays positive, so total cost $C$ is increasing throughout:
+
+$$C'>0\\text{ throughout}\\quad\\Rightarrow\\quad\\text{no local max of }C$$
+
+A never-zero positive $C'$ rules out a local max of $C$, so the statement is False.`
     ],
     difficulty_level: "5/5",
     sort_order: 159,
@@ -7368,19 +10218,39 @@ Green stays positive, so cost keeps rising; there is no local cost maximum from 
     tactical_explanations: [
       `**A.** → True
 
-Green is zero at $x=3$ under the lowest point of brown, so the statement is True.`,
+Brown is $f'$, green is $f''$, and purple is $h'$. At $x=3$ the green curve is zero, and that zero sits under the lowest point of the brown curve.
+
+$$f''(3)=0$$
+
+so the valley of $f'$ lines up with a zero of $f''$, and the statement is True.`,
       `**B.** → True
 
-On $(0,3)$ green is negative, so brown is falling, and the statement is True.`,
+On $(0,3)$ the green curve ($f''$) sits below the axis:
+
+$$f''(x)<0\\quad\\text{for }x\\in(0,3)$$
+
+Negative $f''$ means the brown graph of $f'$ is falling on that interval, descending toward its lowest point at $x=3$, so the statement is True.`,
       `**C.** → True
 
-Purple stays about $1$ above brown throughout the window, so the statement is True.`,
+Throughout the window the purple curve sits about one unit above the brown curve on the shared scale:
+
+$$h'(x)\\approx f'(x)+1$$
+
+so purple stays above brown by about $1$, and the statement is True.`,
       `**D.** → True
 
-At $x=1$ brown is positive, so $f$ is increasing there, and the statement is True.`,
+At $x=1$ the brown curve ($f'$) sits above the axis, so the slope of $f$ is positive there.
+
+$$f'(1)>0$$
+
+Positive $f'$ means $f$ is increasing at $x=1$, so the statement is True.`,
       `**E.** → True
 
-Purple touches zero at $x=3$ without a sign change, so the first-derivative test does not give a local extremum of $h$ there, and the statement is True.`
+Purple touches the axis at $x=3$ but does not change sign there — it stays non-negative on both sides in the window:
+
+$$h'(3)=0\\text{ with no sign change}$$
+
+Without a genuine sign change, that touch need not give a local extremum of $h$, so the statement is True.`
     ],
     difficulty_level: "5/5",
     sort_order: 160,

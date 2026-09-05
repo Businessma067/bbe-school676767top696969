@@ -2,7 +2,7 @@
   "chapter": 11,
   "subsection": "11.5",
   "title": "Exam-style tasks",
-  "explanation_style": "Chapter 7 rhythm with shared solution_overview first (common worked solution), then letter explanations that build from it.",
+  "explanation_style": "Chapter 13 tutoring: shared solution_overview; each letter **A.** → True/False — teach the idea, derive on the given numbers/figure, conclude in Ch13 voice ('..., so the statement is True/False.').",
   "tasks": [
     {
       "id": "math-11-161",
@@ -25,11 +25,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe shared profit derivative vanishes only at the positive root $Q=10$. At $Q=15$ one already has $P^{\\prime}(15)<0$, so profit is falling there rather than peaking, so the statement is False.",
-        "**B.** → True\n\nThe shared average-cost derivative is exactly $AC^{\\prime}(Q)=Q-9-\\dfrac{200}{Q^{2}}$. Evaluating at the starting output $Q_{0}$ approximates the change from one extra chair, matching the claimed expression, so the statement is True.",
-        "**C.** → True\n\nFrom the shared one-sided slopes, $T^{\\prime}(11)=11+4=15$ while $T^{\\prime}(15)=12$. Because $15>12$, build time rises more steeply at $Q=11$ than at $Q=15$, so the statement is True.",
-        "**D.** → False\n\nIntegrating $R_{e}^{\\prime}>R^{\\prime}$ from $6$ to $9$ with equal levels at $6$ forces $R_{e}(9)>R(9)$. The claim asserts the opposite inequality, so the statement is False.",
-        "**E.** → True\n\nThe shared revenue critical point is $Q=15$, and $R^{\\prime\\prime}<0$ confirms a maximum. That output exceeds $12$, so revenue is largest beyond twelve chairs, so the statement is True."
+        "**A.** → False\n\nProfit is $P=R-C=-0.5Q^{3}+6Q^{2}+30Q-200$, hence\n$$P^{\\prime}(Q)=-1.5Q^{2}+12Q+30=-1.5(Q-10)(Q+2).$$\nThe positive critical point is $Q=10$, and the derivative is already negative at $Q=15$.\n\nComparing that with the claim, the statement is False.",
+        "**B.** → True\n\nAverage cost is $AC(Q)=\\dfrac{C(Q)}{Q}=0.5Q^{2}-9Q+60+\\dfrac{200}{Q}$. Therefore\n$$AC^{\\prime}(Q)=Q-9-\\dfrac{200}{Q^{2}}.$$\nThe one-unit change is approximated by $AC^{\\prime}(Q_{0})$.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nOn the left branch, $T^{\\prime}(Q)=Q+4$, giving $T^{\\prime}(11)=15$. On the right branch $T^{\\prime}(Q)=12$, so $T^{\\prime}(15)=12$ and $15>12$.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nIntegrate the strict marginal-revenue inequality from $6$ to $9$:\n$$R_e(9)-R_e(6)>R(9)-R(6).$$\nThe equal starting revenues therefore give $R_e(9)>R(9)$, with the inequality in the opposite direction.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → True\n\nMarginal revenue is $R^{\\prime}(Q)=-6Q+90$. It vanishes at $Q=15$, and\n$$R^{\\prime\\prime}(Q)=-6<0,$$\nso this is the revenue maximum and $15>12$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 161,
@@ -57,11 +57,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared factorisation $P^{\\prime}(Q)=-(Q-10)(Q+2)$ shows that $Q=10$ is a critical point of profit, so the statement is True.",
-        "**B.** → True\n\nPlug $Q=8$ into the shared marginals: $R^{\\prime}(8)=32$ and $C^{\\prime}(8)=12$. Since $32>12$, marginal revenue exceeds marginal cost there, so the statement is True.",
-        "**C.** → True\n\nFrom the shared slopes, $H^{\\prime}(18)=20$ while $H^{\\prime}(24)=14$. Because $20>14$, hours rise more steeply at $18$ than at $24$, so the statement is True.",
-        "**D.** → True\n\nEvaluate the shared average-cost derivative at $Q=5$:\n\n$$AC^{\\prime}(5)=\\dfrac{10}{3}-\\dfrac{9}{2}-\\dfrac{80}{25}<0$$\n\nThe negative sign means average cost is decreasing at $Q=5$, so the statement is True.",
-        "**E.** → False\n\nIntegrating the smaller rival marginal revenue from $6$ to $10$ with equal levels at $6$ forces $R_{e}(10)<R(10)$, not larger. The claim reverses the inequality, so the statement is False."
+        "**A.** → True\n\nAfter subtraction, $P=-\\dfrac13Q^{3}+4Q^{2}+20Q-80$, so\n$$P^{\\prime}(Q)=-Q^{2}+8Q+20=-(Q-10)(Q+2).$$\nThus $Q=10$ is stationary.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nThe two marginal quantities are\n$$R^{\\prime}(Q)=40-Q,\\qquad C^{\\prime}(Q)=Q^{2}-9Q+20.$$\nAt $8$ they are $32$ and $12$, respectively.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nThe left staffing slope is $H^{\\prime}(Q)=Q+2$, hence $H^{\\prime}(18)=20$. The later branch has slope $H^{\\prime}(24)=14$, so the first slope is larger.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nDividing first gives $AC=\\dfrac13Q^{2}-\\dfrac92Q+20+\\dfrac{80}{Q}$, so\n$$AC^{\\prime}(Q)=\\dfrac23Q-\\dfrac92-\\dfrac{80}{Q^{2}}.$$\nAt $Q=5$ this is $\\dfrac{10}{3}-\\dfrac92-\\dfrac{80}{25}<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nA smaller marginal revenue over the interval means a smaller accumulated revenue gain:\n$$R_e(10)-R_e(6)<R(10)-R(6).$$\nEqual revenue at $6$ consequently implies lower rival revenue at $10$.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 162,
@@ -89,11 +89,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared revenue derivative vanishes at $p=15$ with $R^{\\prime\\prime}<0$, so revenue is maximised at that price, so the statement is True.",
-        "**B.** → True\n\nThe shared elasticity formula gives $\\varepsilon(15)=-1$ exactly at the revenue-maximising price, so the statement is True.",
-        "**C.** → False\n\nAt the revenue peak, marginal revenue is already $0$ while $C^{\\prime}(60)=8$. Since $MR\\neq MC$, the profit first-order condition fails there, so the statement is False.",
-        "**D.** → True\n\nFrom the shared $R^{\\prime}$, one has $R^{\\prime}(10)=40>0$. A small price increase from $10$ therefore raises revenue, so the statement is True.",
-        "**E.** → True\n\nThe shared $AC^{\\prime}(Q)=0.05>0$ for every $Q>0$, so average cost is increasing throughout the positive domain, so the statement is True."
+        "**A.** → True\n\n$R(p)=120p-4p^{2}$, so $R^{\\prime}(p)=120-8p$. Its zero is $p=15$, and $R^{\\prime\\prime}(p)=-8<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nPoint elasticity is\n$$\\varepsilon(p)=\\dfrac{D^{\\prime}(p)p}{D(p)}=\\dfrac{-4p}{120-4p}.$$\nAt $p=15$, this is $-\\dfrac{60}{60}=-1$.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\nAt $p=15$, quantity is $60$ and revenue is at its maximum, so $MR=0$. But\n$$MC=C^{\\prime}(60)=2+0.1(60)=8,$$\nwhich rules out a profit optimum there.\n\nComparing that with the claim, the statement is False.",
+        "**D.** → True\n\nThe price-side revenue derivative at $10$ is\n$$R^{\\prime}(10)=120-80=40>0.$$\nA sufficiently small increase therefore raises revenue.\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → True\n\nAverage cost simplifies to $AC(Q)=2+0.05Q$. Thus\n$$AC^{\\prime}(Q)=0.05>0$$\nthroughout the positive-output domain.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 163,
@@ -121,11 +121,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared profit derivative vanishes at $L=12$ with $\\pi^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → True\n\nAt that same $L=12$, the shared calculation gives $VMP=12$, equal to the hourly wage, so the statement is True.",
-        "**C.** → True\n\nThe shared marginal product is $Q^{\\prime}(12)=6>0$, so physical output is still rising at the profit peak, so the statement is True.",
-        "**D.** → False\n\nJust to the right of $L=12$ one has $\\pi^{\\prime}(L)<0$, so hiring a little more labour lowers profit rather than raising it, so the statement is False.",
-        "**E.** → False\n\nThe shared harvest peak is at $L=15$, later than the profit peak at $L=12$. The two optima do not coincide, so the statement is False."
+        "**A.** → True\n\nProfit is $\\pi(L)=2Q(L)-12L-40=48L-2L^{2}-40$. Therefore\n$$\\pi^{\\prime}(L)=48-4L=0$$\nat $L=12$, with $\\pi^{\\prime\\prime}=-4<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nMarginal product is $Q^{\\prime}(L)=30-2L$. At $12$ it is $6$, so\n$$VMP=2\\cdot6=12,$$\nexactly the wage.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nThe marginal product calculation gives\n$$Q^{\\prime}(12)=30-24=6>0.$$\nProfit can peak while physical output is still increasing because labour is costly.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nImmediately to the right of $12$, $\\pi^{\\prime}(L)=48-4L<0$. Extra labour then lowers, rather than raises, profit.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → False\n\nPhysical output has $Q^{\\prime}(L)=0$ at $L=15$. That output maximum is later than the profit maximum at $L=12$.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 164,
@@ -153,11 +153,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe shared one-sided slopes jump from $70$ down to $45$ at $x=25$, not upward, so the statement is False.",
-        "**B.** → True\n\nThe shared $AC^{\\prime}$ vanishes at $x=10$ and changes from negative to positive there, so average cost is minimised at $x=10$ on $x<25$, so the statement is True.",
-        "**C.** → True\n\nThe shared profit critical point on $x<25$ is exactly $x=\\dfrac{40}{3}$, so the statement is True.",
-        "**D.** → False\n\nFrom the shared $R^{\\prime}$, one has $R^{\\prime}(30)=30>0$, not negative, so the statement is False.",
-        "**E.** → False\n\nContinuity of $C$ at $x=25$ is already in the shared solution, but the one-sided derivatives $70$ and $45$ are unequal. Continuity does not force equal derivatives, so the statement is False."
+        "**A.** → False\n\nThe left marginal cost is $2x+20$, giving $C^{\\prime}_{-}(25)=70$. The right marginal cost is $45$, so the jump is from $70$ down to $45$.\n\nComparing that with the claim, the statement is False.",
+        "**B.** → True\n\nFor the first branch,\n$$AC(x)=x+20+\\dfrac{100}{x},\\qquad AC^{\\prime}(x)=1-\\dfrac{100}{x^{2}}.$$\nThe positive zero is $x=10$, and the derivative changes from negative to positive there.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nOn the first branch, $P=40x-\\dfrac32x^{2}-100$. Thus\n$$P^{\\prime}(x)=40-3x,$$\nwhose zero is $x=\\dfrac{40}{3}$.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nMarginal revenue is $R^{\\prime}(x)=60-x$. At $x=30$ this equals $30$, which is positive.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → False\n\nBoth cost formulas give $1225$ at $x=25$, establishing continuity. Their one-sided slopes are nevertheless\n$$C^{\\prime}_{-}(25)=70\\ne45=C^{\\prime}_{+}(25),$$\nso continuity alone does not give differentiability.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 165,
@@ -185,11 +185,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom the shared $V^{\\prime}(2)=24\\pi$ and $\\Delta r=0.02$, the differential is $24\\pi\\cdot 0.02=0.48\\pi$, matching the claim, so the statement is True.",
-        "**B.** → False\n\nThe shared elasticity of the cubic volume rule is $3$, not $2$, so the statement is False.",
-        "**C.** → True\n\nThe shared pre-tax revenue critical point is $Q=36$ with $R^{\\prime\\prime}<0$, so revenue is maximised there before tax, so the statement is True.",
-        "**D.** → False\n\nAfter the tax the shared critical output is $Q=33$, not $30$, so the statement is False.",
-        "**E.** → True\n\nIntegrating the larger rival marginal revenue from $10$ to $18$ with equal levels at $10$ forces $R_{e}(18)>R(18)$, so the statement is True."
+        "**A.** → True\n\nDifferentiate $V(r)=2\\pi r^{3}$:\n$$V^{\\prime}(r)=6\\pi r^{2},\\qquad V^{\\prime}(2)=24\\pi.$$\nWith $\\Delta r=0.02$, the differential estimate is $24\\pi(0.02)=0.48\\pi$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nElasticity is\n$$\\dfrac{r}{V(r)}V^{\\prime}(r)=\\dfrac{r}{2\\pi r^{3}}(6\\pi r^{2})=3.$$\nThe cubic radius relationship supplies elasticity $3$, not $2$.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\nRevenue is $R(Q)=Q(72-Q)=72Q-Q^{2}$. Since\n$$R^{\\prime}(Q)=72-2Q=0$$\nat $Q=36$ and $R^{\\prime\\prime}=-2<0$, that output maximises revenue.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nTax-adjusted revenue is $(72-Q-6)Q=66Q-Q^{2}$. Its derivative $66-2Q$ vanishes at\n$$Q=33,$$\nnot at $30$.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → True\n\nIntegrating the strict derivative inequality from $10$ to $18$ yields\n$$R_e(18)-R_e(10)>R(18)-R(10).$$\nThe equal initial revenues leave the rival strictly higher at $18$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 166,
@@ -217,11 +217,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared pre-levy critical point is $Q=\\dfrac{76}{3}$ with $P^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → False\n\nWith the levy the shared stationary output is $Q=\\dfrac{68}{3}$, not $22$, so the statement is False.",
-        "**C.** → True\n\nPlug $Q=20$ into the shared $AC^{\\prime}$: $\\dfrac{1}{4}-\\dfrac{180}{400}=-\\dfrac{1}{5}<0$, so average cost is decreasing there, so the statement is True.",
-        "**D.** → True\n\nAt the shared revenue-maximising price $p=25$, elasticity equals $-1$, so the statement is True.",
-        "**E.** → False\n\nIntegrating the lower rival marginal revenue from $10$ to $18$ with equal levels at $10$ forces lower rival revenue at $18$, not higher, so the statement is False."
+        "**A.** → True\n\nPre-tax profit is $P=38Q-\\dfrac34Q^{2}-180$, so\n$$P^{\\prime}(Q)=38-\\dfrac32Q.$$\nThe zero is $Q=\\dfrac{76}{3}$, with negative second derivative $-\\dfrac{3}{2}$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nThe levy changes profit to $P_t=34Q-\\dfrac34Q^{2}-180$. Therefore\n$$P_t^{\\prime}(Q)=34-\\dfrac32Q=0$$\nat $Q=\\dfrac{68}{3}$, not $22$.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\n$AC(Q)=\\dfrac14Q+12+\\dfrac{180}{Q}$, giving\n$$AC^{\\prime}(Q)=\\dfrac14-\\dfrac{180}{Q^{2}}.$$\nAt $20$, this is $\\dfrac{1}{4}-\\dfrac{180}{400}=-\\dfrac{1}{5}<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nDemand in price form is $Q(p)=100-2p$, and revenue is $100p-2p^{2}$. At its maximum $p=25$,\n$$\\varepsilon=\\dfrac{-2(25)}{100-2(25)}=-1.$$\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nLower marginal revenue makes the rival's accumulated gain smaller:\n$$R_e(18)-R_e(10)<R(18)-R(10).$$\nEqual revenue at $10$ therefore implies lower rival revenue at $18$.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 167,
@@ -249,11 +249,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared first-order condition gives $L=36$ with $\\pi^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → False\n\nUnder the square-root technology, doubling $L$ multiplies $Q$ by $\\sqrt{2}$, not by $2$, so the statement is False.",
-        "**C.** → True\n\nThe shared output elasticity equals $\\dfrac12$ for every $L>0$, so the statement is True.",
-        "**D.** → True\n\nAt $L=36$ the shared $VMP$ equals the wage $20$, which is exactly the profit first-order condition, so the statement is True.",
-        "**E.** → False\n\nAt that same optimum, $Q^{\\prime}(36)=\\dfrac{40}{6}>0$. Marginal product is still positive, not zero, so the statement is False."
+        "**A.** → True\n\nProfit is $\\pi(L)=240\\sqrt L-20L-200$, so\n$$\\pi^{\\prime}(L)=\\dfrac{120}{\\sqrt L}-20.$$\nIt is zero at $\\sqrt L=6$, hence $L=36$, and the derivative changes from positive to negative.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nThe output ratio is\n$$\\dfrac{Q(2L)}{Q(L)}=\\dfrac{80\\sqrt{2L}}{80\\sqrt L}=\\sqrt2.$$\nThis is less than $2$, reflecting diminishing marginal product.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\nUsing $Q(L)=80L^{\\dfrac{1}{2}}$,\n$$\\varepsilon_L=\\dfrac{LQ^{\\prime}(L)}{Q(L)}=\\dfrac12.$$\nThe exponent is the constant output elasticity.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nAt a labour optimum the value of marginal product equals the wage. With $Q(L)=80\\sqrt{L}$ and price $3$:\n\n$$Q^{\\prime}(L)=\\dfrac{40}{\\sqrt{L}}$$\n\n$$VMP(36)=3\\cdot\\dfrac{40}{6}=20$$\n\nwhich equals the hourly wage of $20$. Matching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nAt $L=36$ the marginal product is\n$$Q^{\\prime}(36)=\\dfrac{40}{6}=\\dfrac{20}{3}>0.$$\nProfit stops increasing because the value of this product equals the wage, not because output stops rising.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 168,
@@ -281,11 +281,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared factorisation shows $q=12$ is a critical point with $P^{\\prime\\prime}(12)<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → True\n\nAt that same $q=12$, the shared calculation gives $MR=MC=56$, so the statement is True.",
-        "**C.** → True\n\nThe shared left- and right-hand packing-hour values both equal $375$ at $q=15$, so packing hours are continuous there, so the statement is True.",
-        "**D.** → False\n\nThe shared one-sided slopes both equal $40$ at $q=15$, so there is no downward derivative jump, so the statement is False.",
-        "**E.** → True\n\nEvaluating the shared $AC^{\\prime}$ at $q=10$ gives a negative value, so average cost is decreasing there, so the statement is True."
+        "**A.** → True\n\n$P=R-C$ has derivative\n$$P^{\\prime}(q)=-q^{2}+8q+48=-(q-12)(q+4).$$\nAt $q=12$, $P^{\\prime\\prime}(q)=-2q+8=-16<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\n$R^{\\prime}(q)=80-2q$ and $C^{\\prime}(q)=q^{2}-10q+32$. At $12$ both calculations give\n$$R^{\\prime}(12)=56=C^{\\prime}(12).$$\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nThe two level calculations are\n$$15^{2}+10(15)=375,\\qquad40(15)-225=375.$$\nThe piecewise schedule meets without a gap.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nThe left derivative is $2q+10$, so it approaches $40$ at $15$. The right derivative is also $40$, hence\n$$H^{\\prime}_{-}(15)=H^{\\prime}_{+}(15)=40.$$\nThere is no derivative jump.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → True\n\n$AC(q)=\\dfrac13q^{2}-5q+32+\\dfrac{240}{q}$, so\n$$AC^{\\prime}(q)=\\dfrac23q-5-\\dfrac{240}{q^{2}}.$$\nAt $10$, this equals $\\dfrac{20}{3}-5-\\dfrac{12}{5}<0$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 169,
@@ -313,11 +313,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared pre-commission critical point is $Q=20$ with $P^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → False\n\nThe shared revenue peak is at $Q=30$, not at the profit peak $Q=20$, so the statement is False.",
-        "**C.** → True\n\nAt that profit-maximising $Q=20$, the shared schedules give $MR=MC=40$, so the statement is True.",
-        "**D.** → True\n\nAt the fare corresponding to $Q=20$, the shared elasticity equals $-2$, so the statement is True.",
-        "**E.** → True\n\nWith the commission the shared critical output shifts to $Q=18$, so the statement is True."
+        "**A.** → True\n\nProfit is $P=100Q-\\dfrac52Q^{2}-600$, hence\n$$P^{\\prime}(Q)=100-5Q.$$\nIts zero is $20$ and $P^{\\prime\\prime}=-5<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nRevenue is $R=120Q-2Q^{2}$, whose derivative is $120-4Q$. It vanishes at\n$$Q=30,$$\nnot at $20$.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\nAt $Q=20$,\n$$MR=R^{\\prime}(20)=120-80=40,\\qquad MC=C^{\\prime}(20)=20+20=40.$$\nThe two marginal quantities agree.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nDemand is $Q(p)=60-\\dfrac{p}{2}$. At $Q=20$, price is $80$, so\n$$\\varepsilon=\\dfrac{-1}{2}\\dfrac{80}{20}=-2.$$\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → True\n\nThe commission makes profit $P_c=90Q-\\dfrac52Q^{2}-600$. Thus\n$$P_c^{\\prime}(Q)=90-5Q=0$$\nat $Q=18$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 170,
@@ -345,11 +345,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared first-order condition gives $L=16$ with $\\pi^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → False\n\nWith capital fixed, doubling labour multiplies output by $\\sqrt{2}$, not by $2$, so the statement is False.",
-        "**C.** → True\n\nThe shared labour elasticity equals $\\dfrac12$, so the statement is True.",
-        "**D.** → True\n\nAt $L=16$ the shared $VMP$ equals the wage $30$, so the statement is True.",
-        "**E.** → False\n\nAt that optimum $Q^{\\prime}(16)=3>0$. Marginal product is still positive, not zero, so the statement is False."
+        "**A.** → True\n\nWith $K=16$, output is $Q(L)=24\\sqrt L$, so\n$$\\pi(L)=240\\sqrt L-30L-400,\\qquad \\pi^{\\prime}(L)=\\dfrac{120}{\\sqrt L}-30.$$\nThe derivative is zero at $\\sqrt L=4$, or $L=16$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nHolding capital fixed,\n$$\\dfrac{Q(2L,16)}{Q(L,16)}=2^{\\dfrac{1}{2}}=\\sqrt2.$$\nThe labour exponent prevents a doubling of output.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\nDifferentiating with respect to labour gives $Q_L=6L^{-\\dfrac{1}{2}}K^{\\dfrac{1}{4}}$. Thus\n$$\\dfrac{LQ_L}{Q}=\\dfrac12,$$\nthe exponent on $L$.\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nAt a labour optimum the value of marginal product equals the wage. With capital fixed, $Q^{\\prime}(L)=\\dfrac{12}{\\sqrt{L}}$ and price $10$:\n\n$$VMP(16)=10\\cdot\\dfrac{12}{4}=30$$\n\nwhich equals the wage of $30$. Matching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nThe marginal product at that input is\n$$Q_L(16,16)=\\dfrac{12}{4}=3>0.$$\nIt is the marginal value relative to the wage that determines profit maximisation.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 171,
@@ -377,11 +377,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared profit derivative vanishes at $m=21$ with $\\pi^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → True\n\nAt that same $m=21$, the shared $VMP$ equals the visit wage $8$, so the statement is True.",
-        "**C.** → False\n\nThe shared energy peak is at $m=25$, later than the profit peak at $m=21$, so the statement is False.",
-        "**D.** → False\n\nThe shared left- and right-hand values and slopes both agree at $m=10$, so the booking rule is continuous and differentiable there, so the statement is False.",
-        "**E.** → False\n\nFrom the shared slopes, $S^{\\prime}(8)=16<20=S^{\\prime}(12)$, so hours rise more steeply at $12$, not at $8$, so the statement is False."
+        "**A.** → True\n\nProfit is $\\pi(m)=0.5(100m-2m^{2})-8m-50=42m-m^{2}-50$. Hence\n$$\\pi^{\\prime}(m)=42-2m=0$$\nat $m=21$, with $\\pi^{\\prime\\prime}=-2<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\n$E^{\\prime}(m)=100-4m$, so at $21$ the value of marginal product is\n$$0.5E^{\\prime}(21)=0.5(16)=8.$$\nThis equals the visit wage.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\nPhysical energy is maximised when $E^{\\prime}(m)=100-4m=0$, giving\n$$m=25.$$\nThe wage makes the profit-maximising visit count lower.\n\nComparing that with the claim, the statement is False.",
+        "**D.** → False\n\nThe two levels at $10$ are both $100$. Their slopes are\n$$S^{\\prime}_{-}(10)=2(10)=20,\\qquad S^{\\prime}_{+}(10)=20,$$\nso the rule is differentiable as well as continuous.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → False\n\nOn the first branch $S^{\\prime}(8)=16$; on the second branch $S^{\\prime}(12)=20$. Since $16<20$, the claimed ordering is reversed.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 172,
@@ -409,11 +409,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared revenue critical price is $p=20$ with $R^{\\prime\\prime}<0$, so revenue is maximised there, so the statement is True.",
-        "**B.** → False\n\nThe shared pre-tax profit peak is at $Q=\\dfrac{175}{3}$, not at $Q=100$, so the statement is False.",
-        "**C.** → True\n\nAt that revenue-maximising price the shared elasticity equals $-1$, so the statement is True.",
-        "**D.** → True\n\nEvaluating the shared $AC^{\\prime}$ at $Q=50$ gives $0.1-\\dfrac{300}{2500}<0$, so average cost is decreasing there, so the statement is True.",
-        "**E.** → True\n\nIntegrating the higher rival marginal revenue from $40$ to $50$ with equal levels at $40$ forces higher rival revenue at $50$, so the statement is True."
+        "**A.** → True\n\n$R(p)=p(200-5p)=200p-5p^{2}$. Therefore\n$$R^{\\prime}(p)=200-10p=0$$\nat $p=20$, with negative second derivative.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nIn output form, $p(Q)=40-0.2Q$, so\n$$P(Q)=35Q-0.3Q^{2}-300,\\qquad P^{\\prime}(Q)=35-0.6Q.$$\nThe stationary output is $Q=\\dfrac{175}{3}$, not $100$.\n\nComparing that with the claim, the statement is False.",
+        "**C.** → True\n\nAt $p=20$, quantity is $100$. The elasticity is\n$$\\varepsilon=\\dfrac{-5(20)}{200-5(20)}=-1.$$\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → True\n\n$AC=5+0.1Q+\\dfrac{300}{Q}$, so\n$$AC^{\\prime}(Q)=0.1-\\dfrac{300}{Q^{2}}.$$\nAt $50$ it is $0.1-\\dfrac{300}{2500}=-0.02<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → True\n\nOver the interval from $40$ to $50$,\n$$R_e(50)-R_e(40)>R(50)-R(40).$$\nEqual revenue at $40$ then gives strictly higher rival revenue at $50$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 173,
@@ -441,11 +441,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared factorisation shows $x=14$ is a critical point with $P^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → True\n\nThe shared revenue peak is at $x=25$, which exceeds $20$, so the statement is True.",
-        "**C.** → False\n\nThe shared $AC^{\\prime}(10)<0$, so average cost is falling at $x=10$, not rising, so the statement is False.",
-        "**D.** → False\n\nThe shared one-sided slopes both equal $45$ at $x=20$, so there is no derivative jump, so the statement is False.",
-        "**E.** → True\n\nIntegrating the lower subcontractor marginal revenue from $10$ to $18$ with equal levels at $10$ forces lower subcontractor revenue at $18$, so the statement is True."
+        "**A.** → True\n\nProfit has derivative\n$$P^{\\prime}(x)=126+12x-1.5x^{2}=-1.5(x-14)(x+6).$$\nAt $14$, $P^{\\prime\\prime}=12-3(14)<0$.\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\n$R^{\\prime}(x)=150-6x$ vanishes at\n$$x=25,$$\nand $R^{\\prime\\prime}=-6<0$. This is above $20$.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\n$AC=0.5x^{2}-9x+24+\\dfrac{500}{x}$, hence\n$$AC^{\\prime}(x)=x-9-\\dfrac{500}{x^{2}}.$$\nAt $10$ the value is $10-9-5=-4<0$, so average cost is falling.\n\nComparing that with the claim, the statement is False.",
+        "**D.** → False\n\nBoth loading levels at $20$ are $500$. Their slopes are also equal:\n$$L^{\\prime}_{-}(20)=2(20)+5=45=L^{\\prime}_{+}(20).$$\nNo derivative jump occurs.\n\nComparing that with the claim, the statement is False.",
+        "**E.** → True\n\nLower marginal revenue accumulates to a lower increase:\n$$R_s(18)-R_s(10)<R(18)-R(10).$$\nThe equal starting revenues imply the subcontractor is lower at $18$.\n\nMatching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 174,
@@ -473,11 +473,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared pre-levy comparison gives $MR(24)=MC(24)=14$, so the statement is True.",
-        "**B.** → True\n\nWith the levy the shared first-order condition shifts to $Q=20$, so the statement is True.",
-        "**C.** → False\n\nAt $p=10$ the shared elasticity equals $-\\dfrac12$, not $-1$, so the statement is False.",
-        "**D.** → True\n\nThe shared left- and right-hand values and slopes agree at $Q=20$, so the setup rule is continuous and differentiable there, so the statement is True.",
-        "**E.** → False\n\nThe shared $AC^{\\prime}(30)>0$, so average cost is rising at $Q=30$, not falling, so the statement is False."
+        "**A.** → True\n\nBefore the levy, an interior profit candidate equates marginal revenue to marginal cost. Inverse demand $p=30-\\dfrac13 Q$ gives $MR=30-\\dfrac23 Q$, while $MC=\\dfrac13 Q+6$:\n\n$$MR(24)=30-\\dfrac23\\cdot 24=14$$\n\n$$MC(24)=\\dfrac13\\cdot 24+6=14$$\n\nThe two marginal schedules meet at $Q=24$. Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nTax-adjusted profit is\n$$P_t(Q)=20Q-\\dfrac12Q^{2}-120.$$\nThus $P_t^{\\prime}(Q)=20-Q$, which is zero at $Q=20$ with negative second derivative.\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\nAt $p=10$, demand is $Q=90-30=60$. Thus\n$$\\varepsilon=\\dfrac{-3(10)}{60}=-\\dfrac12,$$\nnot $-1$.\n\nComparing that with the claim, the statement is False.",
+        "**D.** → True\n\nAt $20$, the first formula approaches $\\dfrac12(400)+20=220$, while the second gives $420-200=220$. The one-sided slopes are\n$$20+1=21=21,$$\nso both continuity and differentiability hold.\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → False\n\n$AC=\\dfrac{Q}{6}+6+\\dfrac{120}{Q}$, hence\n$$AC^{\\prime}(Q)=\\dfrac16-\\dfrac{120}{Q^{2}}.$$\nAt $30$ this is $\\dfrac{1}{6}-\\dfrac{120}{900}=\\dfrac{1}{30}>0$, so average cost is rising.\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 175,
@@ -505,11 +505,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared first-order condition gives $a=2500$ with $\\pi^{\\prime\\prime}<0$, so profit is maximised there, so the statement is True.",
-        "**B.** → True\n\nAt that budget the shared $R^{\\prime}(2500)=1$, matching the marginal cost of one more euro spent, so the statement is True.",
-        "**C.** → False\n\nUnder the shared square-root response, $Q(100)=200$ and $Q(400)=400$: listenership doubles only when advertising is quadrupled, so the statement is False.",
-        "**D.** → True\n\nAt $a=100$ the shared $\\pi^{\\prime}(100)=4>0$, so a little more advertising still raises profit, so the statement is True.",
-        "**E.** → False\n\nA decreasing $Q^{\\prime}$ is exactly what makes $\\pi^{\\prime}$ cross zero once, producing an interior maximum rather than ruling one out, so the statement is False."
+        "**A.** → True\n\nProfit is $\\pi(a)=100\\sqrt{a}-a-40$. Differentiating,\n$$\\pi'(a)=\\dfrac{50}{\\sqrt{a}}-1.$$\nSetting $\\pi'=0$ gives $\\sqrt{a}=50$, so $a=2500$. Also $\\pi''<0$ there\n\nMatching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nMarginal revenue of advertising is $R'(a)=5Q'(a)=\\dfrac{50}{\\sqrt{a}}$. At $a=2500$ this equals $1$, matching the marginal cost of one more euro spent\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\n$Q(100)=200$ and $Q(400)=400$, so listenership doubles when advertising is multiplied by four, not by two. Under a square-root response, doubling $a$ multiplies $Q$ by $\\sqrt{2}$ only\n\nComparing that with the claim, the statement is False.",
+        "**D.** → True\n\nAt $a=100$, $\\pi'(100)=\\dfrac{50}{10}-1=4>0$, so a little more advertising still raises profit\n\nMatching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nA decreasing marginal product does not forbid an interior profit max; it is exactly what makes $\\pi'$ cross from $+$ to $-$ once\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 176,
@@ -537,11 +537,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reduction yields exactly $A(x)=120x-2x^{2}$ on $0<x<60$, so the statement is True.",
-        "**B.** → True\n\nThe shared critical point $x=30$ with $A^{\\prime\\prime}<0$ maximises area, so the statement is True.",
-        "**C.** → True\n\nAt that maximum the shared constraint gives $y=60$ metres parallel to the river, so the statement is True.",
-        "**D.** → False\n\nThe shared second derivative $A^{\\prime\\prime}(30)=-4<0$ confirms a strict local maximum; the test does not fail, so the statement is False.",
-        "**E.** → False\n\nJust left of $x=30$ the shared $A^{\\prime}$ is still positive, so using a little less width lowers area rather than raising it, so the statement is False."
+        "**A.** → True\n\nThe river supplies one long side, so the fencing constraint is $2x+y=120$. Solving for the parallel length and substituting into area $A=xy$ gives\n\n$$y=120-2x$$\n\n$$A(x)=x(120-2x)=120x-2x^{2}$$\n\non the open interval $0<x<60$ where both sides stay positive. Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nArea as a function of width is the parabola $A(x)=120x-2x^{2}$. Differentiating and solving the first-order condition yields\n\n$$A^{\\prime}(x)=120-4x=0\\implies x=30$$\n\nand $A^{\\prime\\prime}=-4<0$, so the critical point is a maximum. Matching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nAt the area-maximising width $x=30$, the fencing constraint recovers the length parallel to the river:\n\n$$y=120-2\\cdot 30=60$$\n\nmetres. Matching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nThe second-derivative test requires $A^{\\prime\\prime}\\neq 0$ at the critical point. Here\n\n$$A^{\\prime\\prime}(30)=-4<0$$\n\nso the test confirms a strict local maximum rather than failing. Comparing that with the claim, the statement is False.",
+        "**E.** → False\n\nJust left of $x=30$, $A'>0$, so decreasing the width a little lowers area rather than raising it\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 177,
@@ -569,11 +569,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared first-order condition gives the positive critical order quantity $Q=100$, so the statement is True.",
-        "**B.** → True\n\nAt that EOQ the shared balance $\\dfrac{20000}{Q^{2}}=2$ equates the absolute values of marginal ordering and holding cost, so the statement is True.",
-        "**C.** → True\n\nFrom the shared holding-cost formula, $2\\cdot 100=200$ euros per year at $Q=100$, so the statement is True.",
-        "**D.** → False\n\nThe shared comparison shows $TC(50)=500>TC(100)=400$, so halving the order raises total cost, so the statement is False.",
-        "**E.** → True\n\nThe shared $TC^{\\prime\\prime}(Q)>0$ for every $Q>0$ confirms the critical point is a minimum, so the statement is True."
+        "**A.** → True\n\nAnnual ordering-plus-holding cost is $TC(Q)=\\dfrac{20000}{Q}+2Q$. Setting the derivative to zero yields the EOQ:\n\n$$TC^{\\prime}(Q)=-\\dfrac{20000}{Q^{2}}+2=0\\implies Q^{2}=10000\\implies Q=100$$\n\n(the positive root). Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nThe two terms in $TC'$ balance when $\\dfrac{20000}{Q^{2}}=2$; that is the EOQ first-order condition equating the magnitudes of the two marginal cost pieces\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nAverage inventory in the EOQ model is $\\dfrac{Q}{2}$, so annual holding cost is $\\dfrac{hQ}{2}=2Q$. At the cost-minimising order size\n\n$$2\\cdot 100=200$$\n\neuros per year. Matching these figures to the claim, the statement is True.",
+        "**D.** → False\n\n$TC(100)=200+200=400$ while $TC(50)=400+100=500>400$, so halving the order raises total cost\n\nComparing that with the claim, the statement is False.",
+        "**E.** → True\n\nThe second derivative of total ordering-plus-holding cost is\n\n$$TC^{\\prime\\prime}(Q)=\\dfrac{40000}{Q^{3}}$$\n\nwhich is strictly positive for every $Q>0$, so the critical point is a minimum. Matching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 178,
@@ -601,15 +601,15 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared revenue critical point is $Q=6$ with $R^{\\prime\\prime}<0$, so revenue is maximised there, so the statement is True.",
-        "**B.** → True\n\nAt that same output the shared elasticity equals $-1$, so the statement is True.",
-        "**C.** → False\n\nThe shared profit peak is at $Q=5$, not at the revenue maximum $Q=6$, so the statement is False.",
-        "**D.** → True\n\nFrom the shared $R^{\\prime}$, one has $R^{\\prime}(4)=12$, so the statement is True.",
-        "**E.** → False\n\nThe shared $R^{\\prime}>0$ on $(0,6)$ means revenue is still increasing there despite a falling price, so the statement is False."
+        "**A.** → True\n\nRevenue is price times quantity under inverse demand $p=36-3Q$:\n\n$$R(Q)=36Q-3Q^{2}$$\n\n$$R^{\\prime}(Q)=36-6Q=0\\implies Q=6$$\n\nand $R^{\\prime\\prime}=-6<0$, so revenue is maximised at $Q=6$ batches. Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nDemand is $Q=\\dfrac{(36-p)}{3}$, so $D'(p)=-\\dfrac{1}{3}$. At $Q=6$ one has $p=18$, and\n$$El_{Q}(p)=\\dfrac{D'(p)\\cdot p}{Q}=\\dfrac{(-\\dfrac{1}{3})\\cdot18}{6}=-1$$\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\nProfit $P=R-6Q=30Q-3Q^{2}$ has $P'=30-6Q=0$ at $Q=5$, not at the revenue max $Q=6$\n\nComparing that with the claim, the statement is False.",
+        "**D.** → True\n\nMarginal revenue is the derivative of $R(Q)=36Q-3Q^{2}$. Evaluating at $Q=4$:\n\n$$R^{\\prime}(4)=36-6\\cdot 4=12$$\n\nexactly as claimed. Matching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nFalling price does not force falling revenue while $MR>0$; here $R'>0$ on $(0,6)$\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 179,
-      "solution_overview": "Inverse demand $p=36-3Q$ gives revenue\n\n$$R(Q)=36Q-3Q^{2}$$\n\n$$R^{\\prime}(Q)=36-6Q=0\\implies Q=6$$\n\nwith $R^{\\prime\\prime}=-6<0$. At that output $p=18$, and demand $Q=\\dfrac{36-p}{3}$ has elasticity $-1$. With unit cost $6$, profit is $P(Q)=30Q-3Q^{2}$, peaking at $Q=5$. Marginal revenue stays positive on $(0,6)$, so revenue still rises there despite a falling price.",
+      "solution_overview": "Inverse demand $p=36-3Q$ gives revenue\n\n$$R(Q)=36Q-3Q^{2}$$\n\n$$R^{\\prime}(Q)=36-6Q=0\\implies Q=6$$\n\nwith $R^{\\prime\\prime}=-6<0$. At that output $p=18$, and demand $Q=\\dfrac{36-p}{3}$ has point elasticity $-1$. With constant unit cost $6$, profit is $P(Q)=30Q-3Q^{2}$, which peaks at $Q=5$ rather than at the revenue maximum. Marginal revenue stays positive on $(0,6)$, so revenue still rises there despite a falling price.",
       "placeholder": false
     },
     {
@@ -633,11 +633,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared $U^{\\prime}(w)>0$ throughout $0<w<200$, so marginal utility stays positive on the interval, so the statement is True.",
-        "**B.** → True\n\nThe shared $U^{\\prime\\prime}=-0.1<0$ is the calculus signature of risk aversion, so the statement is True.",
-        "**C.** → False\n\nOn $(0,200)$ the shared $U^{\\prime}$ stays positive, so utility is strictly increasing and has no interior maximum at $w=200$, so the statement is False.",
-        "**D.** → True\n\nThe shared evaluation gives $U^{\\prime}(50)=15$, so the statement is True.",
-        "**E.** → False\n\nStrict concavity means a mean-preserving spread around $w=80$ lowers expected utility rather than raising it, so the statement is False."
+        "**A.** → True\n\nMarginal utility is the first derivative of $U(w)=20w-0.05w^{2}$:\n\n$$U^{\\prime}(w)=20-0.1w$$\n\nOn the open interval $0<w<200$ one has $0.1w<20$, so $U^{\\prime}(w)>0$ throughout. Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\n$U''(w)=-0.1<0$, so $U$ is strictly concave — the usual calculus signature of risk aversion\n\nMatching these figures to the claim, the statement is True.",
+        "**C.** → False\n\n$U'=0$ at $w=200$, which is the right endpoint of the open interval; on $(0,200)$ utility is still strictly increasing, so there is no interior maximum below $200$\n\nComparing that with the claim, the statement is False.",
+        "**D.** → True\n\nEvaluating marginal utility at $w=50$:\n\n$$U^{\\prime}(50)=20-0.1\\cdot 50=15$$\n\nexactly as claimed. Matching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nFor a strictly concave $U$, Jensen's inequality goes the other way: a mean-preserving spread lowers expected utility\n\nComparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 180,
@@ -665,11 +665,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reduction yields exactly $U(x)=10x-\\dfrac12 x^{2}$ on $0<x<20$, so the statement is True.",
-        "**B.** → True\n\nThe shared critical point $x=10$ with $U^{\\prime\\prime}<0$ maximises output, so the statement is True.",
-        "**C.** → True\n\nAt that optimum the shared budget relation gives $y=5$ typesetting hours, so the statement is True.",
-        "**D.** → False\n\nAt the optimum one has $\\dfrac{y}{x}=\\dfrac12=\\dfrac{p_{x}}{p_{y}}$, not $\\dfrac{p_{y}}{p_{x}}$. The claim writes the reciprocal ratio, so the statement is False.",
-        "**E.** → False\n\nSpending the entire budget on illustration alone forces $y=0$ and $U=0$, below the interior maximum of $50$, so the statement is False."
+        "**A.** → True\n\nThe budget $2x+4y=40$ solves as $y=10-\\dfrac12 x$. Substituting into $U=xy$ reduces creative output to a single-variable rule:\n\n$$U(x)=x\\left(10-\\dfrac12 x\\right)=10x-\\dfrac12 x^{2}$$\n\non $0<x<20$. Matching these figures to the claim, the statement is True.",
+        "**B.** → True\n\nDifferentiating the reduced objective $U(x)=10x-\\dfrac12 x^{2}$ and solving the first-order condition yields\n\n$$U^{\\prime}(x)=10-x=0\\implies x=10$$\n\nand $U^{\\prime\\prime}=-1<0$, so output is maximised at $10$ illustration hours. Matching these figures to the claim, the statement is True.",
+        "**C.** → True\n\nAt the optimum $x=10$, the budget relation recovers typesetting hours:\n\n$$y=10-\\dfrac12\\cdot 10=5$$\n\nMatching these figures to the claim, the statement is True.",
+        "**D.** → False\n\nAt the interior optimum the MRS–price condition equates $\\dfrac{y}{x}$ to the price ratio $\\dfrac{p_{x}}{p_{y}}$, not the reciprocal. Here\n\n$$\\dfrac{y}{x}=\\dfrac{5}{10}=\\dfrac12=\\dfrac{p_{x}}{p_{y}}$$\n\nwhile $\\dfrac{p_{y}}{p_{x}}=2$. The claim writes the wrong ratio, so the statement is False.",
+        "**E.** → False\n\nSpending the entire budget on illustration alone forces $y=0$, hence $U=xy=0$. The interior maximum is\n\n$$U(10,5)=50$$\n\nso the corner is far from optimal. Comparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 181,
@@ -697,11 +697,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom the shared sign chart, $P^{\\prime}>0$ on $(4,9)$, so the workshop should expand a little on that open interval, so the statement is True.",
-        "**B.** → False\n\nThe shared sign chart marks a local minimum at $Q=4$ and a local maximum at $Q=9$ — the reverse of the claim, so the statement is False.",
-        "**C.** → False\n\nA local maximum at $Q=9$ need not be the global maximiser on $[0,11]$ without comparing profit levels; the figure alone does not force that conclusion, so the statement is False.",
-        "**D.** → True\n\nAfter the shared $6$-unit downward shift, the old zero at $Q=4$ has new height $-6\\neq 0$, so it is no longer a zero of the post-levy marginal profit, so the statement is True.",
-        "**E.** → True\n\nThe shared reading $P^{\\prime}(6)=30$ already exceeds $15$, and after subtracting $6$ one still has $24>0$, so expansion remains profitable at $Q=6$, so the statement is True."
+        "**A.** → True\n\nThe figure plots marginal profit $P^{\\prime}$, with zeros at $Q=1$, $Q=4$, and $Q=9$. Between the last two zeros the cubic sits above the axis, so\n\n$$P^{\\prime}(Q)>0\\quad\\text{on }(4,9)$$\n\nA positive marginal profit means a little more output still raises profit on that open interval. Matching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nReading the sign chart of $P^{\\prime}$ from the figure:\n\n$$P^{\\prime}>0\\text{ on }(0,1),\\quad P^{\\prime}<0\\text{ on }(1,4),\\quad P^{\\prime}>0\\text{ on }(4,9),\\quad P^{\\prime}<0\\text{ after }9$$\n\nThe change $-$ to $+$ at $Q=4$ is a local minimum of $P$, and $+$ to $-$ at $Q=9$ is a local maximum — the reverse of the claim. Comparing that with the claim, the statement is False.",
+        "**C.** → False\n\nA local maximum at $Q=9$ need not be the global maximiser on $[0,11]$. Without comparing profit levels at the critical points and endpoints (for example $P(1)$ versus $P(9)$), the figure alone does not force $Q=9$ to be the unique global max. Comparing that with the claim, the statement is False.",
+        "**D.** → True\n\nA per-unit levy shifts the entire $P^{\\prime}$ graph down by a constant $6$. At the old zero $Q=4$ the new height is\n\n$$P^{\\prime}_{\\text{new}}(4)=0-6=-6\\neq 0$$\n\nso $Q=4$ is no longer a zero of the post-levy marginal profit. Matching these figures to the claim, the statement is True.",
+        "**E.** → True\n\nNear $Q=6$, the factored cubic reading of the figure gives\n\n$$P^{\\prime}(6)=-(6-1)(6-4)(6-9)=30$$\n\nwhich already exceeds $15$. After the $6$-unit levy one still has $30-6=24>0$, so expansion remains profitable at $Q=6$. Matching these figures to the claim, the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 182,
@@ -730,11 +730,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nJust left of the shared brown–green crossing, brown lies above green, so $MR>MC$ and expanding output raises profit, so the statement is True.",
-        "**B.** → False\n\nProfit maximisation requires brown meeting green ($MR=MC$), not purple meeting brown ($AC^{*}=MR$). That is a different and generally wrong locus, so the statement is False.",
-        "**C.** → True\n\nAt $Q=12$ green lies above brown in the shared figure logic, so $MR<MC$ and cutting output a little raises profit, so the statement is True.",
-        "**D.** → True\n\nThe shared crossing geometry — green rising through brown from below — makes $MR-MC$ change from $+$ to $-$, the signature of a local profit maximum, so the statement is True.",
-        "**E.** → False\n\nThe height of the brown–green crossing is the common marginal value, not the accumulated total profit $P(8)$, so the statement is False."
+        "**A.** → True\n\nProfit rises wherever marginal revenue exceeds marginal cost. Just left of the marked brown–green crossing at $Q=8$, the figure has brown (MR) above green (MC), so\n\n$$MR>MC\\quad\\text{for }Q\\text{ a little below }8$$\n\nand expanding output raises profit there. Matching these figures to the claim, the statement is True.",
+        "**B.** → False\n\nAn interior profit maximum requires brown meeting green — that is $MR=MC$. Purple meeting brown would be $AC^{*}=MR$, a different and generally wrong locus for profit maximisation. Comparing that with the claim, the statement is False.",
+        "**C.** → True\n\nAt $Q=12$ the figure has green (MC) above brown (MR), so\n\n$$MR<MC$$\n\nand cutting output a little raises profit. Matching these figures to the claim, the statement is True.",
+        "**D.** → True\n\nBecause green is convex and rising through the falling brown line from below at $Q=8$, the difference $MR-MC$ changes from positive to negative there. That $+$ to $-$ crossing is exactly the local signature of a profit maximum. Matching these figures to the claim, the statement is True.",
+        "**E.** → False\n\nThe height of the brown–green crossing is the common marginal value $MR=MC$ at $Q=8$. Maximised total profit $P(8)$ is an accumulated stock of surplus, not that single marginal height. Comparing that with the claim, the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 183,
@@ -763,11 +763,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nFrom the shared reading, green's $-$ to $+$ flip near $x=1$ is a local minimum of brown, and its $+$ to $-$ flip near $x=5$ is a local maximum of brown, so the statement is True.",
-        "**B.** → True\n\nThe shared solution already places purple's zero with a sign change near $x=3$, which is exactly an inflection of brown, so the statement is True.",
-        "**C.** → True\n\nBecause $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$, the shared sign reading that purple is negative right of $x=3$ forces green to be decreasing there, so the statement is True.",
-        "**D.** → False\n\nThe shared solution notes that the highest point of green is only the steepest climb of brown; brown's local maximum is the later zero of green near $x=5$, so the statement is False.",
-        "**E.** → False\n\nAt $x=3$ the shared reading has purple near zero but green still positive, so throughput is still climbing; the maximum of brown is near $x=5$, so the statement is False."
+        "**A.** → True\n\nBrown is the throughput level $f$, and green is its slope $f^{\\prime}$. Local extrema of brown therefore sit where green crosses the axis and changes sign.\n\nNear $x=1$, green passes from negative to positive, so brown bottoms out there — a local minimum.\n\nNear $x=5$, green passes from positive to negative, so brown peaks there — a local maximum.\n\nThose two turning points are exactly the ones named in the claim, so the statement is True.",
+        "**B.** → True\n\nPurple is $f^{\\prime\\prime}$, the concavity meter for brown. An inflection of $f$ is a zero of $f^{\\prime\\prime}$ where that second derivative changes sign.\n\nThe figure shows purple crossing through zero near $x=3$, switching from positive to negative.\n\nSo brown changes from concave up to concave down at that staffing intensity — precisely an inflection of $f$, so the statement is True.",
+        "**C.** → True\n\nBy definition $f^{\\prime\\prime}=(f^{\\prime})^{\\prime}$, so the sign of purple is the slope of green.\n\nWherever purple lies below the axis (right of $x=3$), green must be decreasing.\n\nThat is exactly the consistency the claim records between the two derivative curves, so the statement is True.",
+        "**D.** → False\n\nThe highest point of green is where $f^{\\prime}$ itself is largest — the steepest climb of brown — not a turning point of brown.\n\nA local maximum of brown requires green to cross through zero with a $+$ to $-$ sign change, which happens near $x=5$, not at green's peak.\n\nThe claim confuses a peak of the slope with a peak of the level, so the statement is False.",
+        "**E.** → False\n\nAt $x=3$, purple is near zero (an inflection of brown), while green is still positive, so throughput is still rising.\n\nThe staffing intensity that maximises throughput itself is where green crosses down through zero, near $x=5$.\n\nAn inflection with a still-positive slope is not a maximum of $f$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 184,
@@ -796,11 +796,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared differentiation already gives $C^{\\prime}(Q)=3Q^{2}-12Q+40$, matching the claim, so the statement is True.",
-        "**B.** → True\n\nFrom the shared second-derivative chart, $C^{\\prime\\prime}$ changes sign at $Q=2$, so $C$ has an inflection there, so the statement is True.",
-        "**C.** → True\n\nThe shared solution records $C^{\\prime\\prime}<0$ on $(0,2)$, which means marginal cost $C^{\\prime}$ is decreasing on that interval, so the statement is True.",
-        "**D.** → False\n\nThe shared overview separates the inflection $C^{\\prime\\prime}=0$ from the condition $AC=MC$; those equations need not share a root at $Q=2$, so the statement is False.",
-        "**E.** → True\n\nThe shared evaluation $C(0)=10$ is exactly the fixed cost named in the claim, so the statement is True."
+        "**A.** → True\n\nMarginal cost is the derivative of the weekly cost rule, taken term by term.\n\n$$C(Q)=Q^{3}-6Q^{2}+40Q+10$$\n\n$$C^{\\prime}(Q)=3Q^{2}-12Q+40$$\n\nThat is exactly the expression named in the claim, so the statement is True.",
+        "**B.** → True\n\nAn inflection of $C$ is a zero of the second derivative where that second derivative changes sign. Differentiate marginal cost once more.\n\n$$C^{\\prime\\prime}(Q)=6Q-12$$\n\n$$6Q-12=0$$\n\n$$Q=2$$\n\nOn $(0,2)$ one has $C^{\\prime\\prime}<0$, and on $(2,\\infty)$ one has $C^{\\prime\\prime}>0$, so the concavity of $C$ flips at $Q=2$, so the statement is True.",
+        "**C.** → True\n\nMarginal cost falls precisely where its derivative $C^{\\prime\\prime}$ is negative.\n\n$$C^{\\prime\\prime}(Q)=6Q-12$$\n\nOn the open interval $(0,2)$ this is strictly negative, so $C^{\\prime}$ is decreasing there, so the statement is True.",
+        "**D.** → False\n\nAn inflection of total cost is the condition $C^{\\prime\\prime}=0$ with a sign change. Equality of average and marginal cost is a different equation: it is the first-order condition for a critical point of $AC=\\dfrac{C}{Q}$.\n\nThose two conditions need not share the same root. At the inflection $Q=2$ there is no requirement that $AC=MC$, so the statement is False.",
+        "**E.** → True\n\nFixed cost is the cost of producing nothing — the value of $C$ at $Q=0$.\n\n$$C(0)=10$$\n\nThat matches the constant term in the cost rule, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 185,
@@ -828,11 +828,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared Newton calculation already simplifies the quotient to $2a+h-6$, so the statement is True.",
-        "**B.** → True\n\nFrom the shared derivative, $P^{\\prime}(4)=2\\cdot 4-6=2$, so the statement is True.",
-        "**C.** → False\n\nThe shared tangent at $x=4$ is $y=2x+4$, not $y=2x$, so the statement is False.",
-        "**D.** → False\n\nThe shared sign chart has $P^{\\prime}>0$ for all $x>3$, so profit is increasing there rather than decreasing, so the statement is False.",
-        "**E.** → True\n\nThe shared first- and second-derivative tests already classify $x=3$ as a local minimum of $P$, so the statement is True."
+        "**A.** → True\n\nThe Newton quotient is the average slope of profit between $a$ and $a+h$. Expand the shifted value, cancel $P(a)$, and divide by $h$.\n\n$$P(a+h)=(a+h)^{2}-6(a+h)+20$$\n\n$$P(a+h)-P(a)=(a^{2}+2ah+h^{2}-6a-6h+20)-(a^{2}-6a+20)$$\n\n$$P(a+h)-P(a)=2ah+h^{2}-6h$$\n\n$$\\dfrac{P(a+h)-P(a)}{h}=2a+h-6$$\n\nThe simplified quotient is exactly $2a+h-6$, so the statement is True.",
+        "**B.** → True\n\nDifferentiate the quadratic profit rule, or send $h\\to 0$ in the Newton quotient $2a+h-6$.\n\n$$P^{\\prime}(x)=2x-6$$\n\n$$P^{\\prime}(4)=2\\cdot 4-6=2$$\n\nThe marginal profit at four staffed hours is $2$, so the statement is True.",
+        "**C.** → False\n\nThe tangent at $x=4$ needs both the slope $P^{\\prime}(4)=2$ and the point height $P(4)$.\n\n$$P(4)=16-24+20=12$$\n\n$$y-12=2(x-4)$$\n\n$$y=2x+4$$\n\nThe claim writes $y=2x$, which misses the intercept $+4$, so the statement is False.",
+        "**D.** → False\n\nProfit falls where $P^{\\prime}<0$ and rises where $P^{\\prime}>0$.\n\n$$P^{\\prime}(x)=2x-6=2(x-3)$$\n\nSo $P^{\\prime}<0$ on $(-\\infty,3)$ and $P^{\\prime}>0$ on $(3,\\infty)$. For every $x>3$, profit is increasing, not decreasing, so the statement is False.",
+        "**E.** → True\n\nA local minimum occurs where $P^{\\prime}$ changes from negative to positive (or where $P^{\\prime}=0$ and $P^{\\prime\\prime}>0$).\n\n$$P^{\\prime}(x)=2(x-3)$$\n\n$$P^{\\prime\\prime}(x)=2>0$$\n\nAt $x=3$ the first derivative flips $-$ to $+$, and the second derivative is positive, so $x=3$ is a local minimum of $P$, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 186,
@@ -860,11 +860,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared power-rule step already yields $C^{\\prime}(Q)=\\dfrac{40}{\\sqrt{Q}}$, so the statement is True.",
-        "**B.** → True\n\nThe shared derivative $AC^{\\prime}(Q)=-40Q^{-\\frac{3}{2}}$ is negative for every $Q>0$, so average cost is decreasing throughout, so the statement is True.",
-        "**C.** → True\n\nThe shared identity $MC=\\dfrac{1}{2}AC$ holds at every $Q>0$, so the statement is True.",
-        "**D.** → False\n\nThe shared scaling $C(2Q)=\\sqrt{2}\\,C(Q)$ shows total cost rises by $\\sqrt{2}$, not by a factor of $2$, so the statement is False.",
-        "**E.** → True\n\nThe shared evaluation already gives $C^{\\prime}(16)=10$, so the statement is True."
+        "**A.** → True\n\nRewrite the square-root cost as a power and apply the power rule.\n\n$$C(Q)=80Q^{\\frac{1}{2}}$$\n\n$$C^{\\prime}(Q)=80\\cdot\\dfrac{1}{2}Q^{-\\frac{1}{2}}=\\dfrac{40}{\\sqrt{Q}}$$\n\nThat is the claimed marginal cost, so the statement is True.",
+        "**B.** → True\n\nAverage cost is total cost per release.\n\n$$AC(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{80}{\\sqrt{Q}}=80Q^{-\\frac{1}{2}}$$\n\n$$AC^{\\prime}(Q)=80\\cdot\\left(-\\dfrac{1}{2}\\right)Q^{-\\frac{3}{2}}=-40Q^{-\\frac{3}{2}}$$\n\nFor every $Q>0$ this derivative is negative, so average cost is decreasing throughout, so the statement is True.",
+        "**C.** → True\n\nCompare the two closed forms side by side.\n\n$$AC(Q)=\\dfrac{80}{\\sqrt{Q}}$$\n\n$$MC(Q)=\\dfrac{40}{\\sqrt{Q}}$$\n\n$$\\dfrac{MC}{AC}=\\dfrac{40}{80}=\\dfrac{1}{2}$$\n\nSo $MC=\\dfrac{1}{2}AC$ at every $Q>0$, so the statement is True.",
+        "**D.** → False\n\nScaling cumulative output by $2$ scales a square-root cost by $\\sqrt{2}$, not by $2$.\n\n$$C(2Q)=80\\sqrt{2Q}=\\sqrt{2}\\cdot 80\\sqrt{Q}=\\sqrt{2}\\,C(Q)$$\n\nTotal cost rises by the factor $\\sqrt{2}$, not by a factor of $2$, so the statement is False.",
+        "**E.** → True\n\nEvaluate the marginal-cost formula at the named output.\n\n$$C^{\\prime}(16)=\\dfrac{40}{\\sqrt{16}}=\\dfrac{40}{4}=10$$\n\nMarginal cost at sixteen releases is $10$, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 187,
@@ -892,11 +892,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared first- and second-derivative tests already place the profit maximum at $t=8$, so the statement is True.",
-        "**B.** → True\n\nBecause $\\pi=D-10$, the shared solution notes that $D$ and $\\pi$ share the maximiser $t=8$, so the statement is True.",
-        "**C.** → True\n\nFrom the shared sign reading, $\\pi^{\\prime}(4)=8>0$, so profit is still increasing at $t=4$, so the statement is True.",
-        "**D.** → True\n\nThe shared endpoint evaluation $\\pi(0)=-10<0$ confirms negative profit at $t=0$, so the statement is True.",
-        "**E.** → False\n\nThe shared comparison $D(8)=64>D(12)=48$ shows volume falls (and profit falls with it) when the campaign is extended from $8$ to $12$, so the statement is False."
+        "**A.** → True\n\nInterior candidates for a profit maximum solve $\\pi^{\\prime}=0$; the second derivative then classifies the critical point.\n\n$$\\pi(t)=16t-t^{2}-10$$\n\n$$\\pi^{\\prime}(t)=16-2t$$\n\n$$16-2t=0$$\n\n$$t=8$$\n\n$$\\pi^{\\prime\\prime}(t)=-2<0$$\n\nSo $t=8$ is a maximum of campaign profit, so the statement is True.",
+        "**B.** → True\n\nTicket volume and profit differ only by the constant setup cost $10$.\n\n$$\\pi(t)=D(t)-10$$\n\nDifferentiating kills the constant, so $\\pi^{\\prime}=D^{\\prime}$ and the two functions share every critical point. In particular both are maximised at the same $t=8$, so the statement is True.",
+        "**C.** → True\n\nProfit is still increasing wherever $\\pi^{\\prime}>0$.\n\n$$\\pi^{\\prime}(4)=16-2\\cdot 4=8>0$$\n\nAt four weeks the campaign profit is still climbing toward the peak at $t=8$, so the statement is True.",
+        "**D.** → True\n\nEvaluate profit at the left endpoint of the campaign window.\n\n$$\\pi(0)=16\\cdot 0-0-10=-10<0$$\n\nWith no ticket sales yet, the fixed setup leaves profit negative, so the statement is True.",
+        "**E.** → False\n\nCompare volume (and profit) at the claimed endpoints.\n\n$$D(8)=16\\cdot 8-8^{2}=64$$\n\n$$D(12)=16\\cdot 12-12^{2}=48$$\n\nVolume falls from $64$ to $48$ when the campaign is extended from $8$ to $12$ weeks. Past the shared maximiser $t=8$, profit falls as well. The claim asserts that volume rises, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 188,
@@ -924,11 +924,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading places brown's zero near $c=45$, so utility of cups keeps rising until about that count when there is no opportunity cost, so the statement is True.",
-        "**B.** → True\n\nThe shared stop rule has green crossing zero near $c=30$, which is the best cup count once the opportunity cost is accounted for, so the statement is True.",
-        "**C.** → False\n\nThe shared height reading at $c=10$ puts green at $8$, which lies below $10$, so the statement is False.",
-        "**D.** → True\n\nThe shared observation that brown is linear and falling forces $U^{\\prime\\prime}<0$, hence strict concavity of $U$, so the statement is True.",
-        "**E.** → False\n\nThe shared solution emphasises that the optimum solves green $=0$, while brown has no interior maximum at all, so the statement is False."
+        "**A.** → True\n\nWithout the opportunity cost, cups remain worthwhile while marginal utility itself stays positive — that is, while brown lies above the axis.\n\nBrown crosses zero near $c=45$, so $\\mathrm{MU}>0$ on $(0,45)$ and the subscriber's utility of cups keeps rising until about that count.\n\nThe claim records exactly that zero of brown, so the statement is True.",
+        "**B.** → True\n\nWith a constant opportunity cost of $6$, an extra cup is worthwhile only while $\\mathrm{MU}-6>0$, i.e. while green is positive.\n\nGreen crosses zero near $c=30$, which is the stop rule $\\mathrm{MU}=6$.\n\nAmong the plotted options that is the best cup count, so the statement is True.",
+        "**C.** → False\n\nRead the heights at $c=10$ carefully. Brown (marginal utility) sits at $14$ there, so green ($\\mathrm{MU}-6$) sits at\n\n$$14-6=8$$\n\nHeight $8$ lies below $10$, not above it, so the statement is False.",
+        "**D.** → True\n\nUtility $U$ has derivative $\\mathrm{MU}$ (brown). A linear falling brown curve means $U^{\\prime}$ has constant negative slope, so\n\n$$U^{\\prime\\prime}<0$$\n\nthroughout the plotted range. Strict negativity of the second derivative is strict concavity of $U$, so the statement is True.",
+        "**E.** → False\n\nGreen is a parallel downward shift of brown by the constant $6$. The optimal cup count solves green $=0$, i.e. $\\mathrm{MU}=6$.\n\nBrown itself is linear and falling on the whole window, so it has no interior maximum at all. The stop rule is the zero of green, not a peak of brown, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 189,
@@ -957,11 +957,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared factorisation already gives $S^{\\prime}(t)=3(t-1)(t-3)$, so the statement is True.",
-        "**B.** → True\n\nThe shared sign chart has a $+$ to $-$ change of $S^{\\prime}$ at $t=1$, a local maximum of spoilage, so the statement is True.",
-        "**C.** → True\n\nThe shared sign chart has a $-$ to $+$ change of $S^{\\prime}$ at $t=3$, a local minimum of spoilage, so the statement is True.",
-        "**D.** → False\n\nThe shared level comparison $S(1)=S(4)=4$ shows the global maximum on $[0,4]$ is not uniquely at $t=1$, so the statement is False.",
-        "**E.** → True\n\nThe shared second-derivative values $S^{\\prime\\prime}(1)<0$ and $S^{\\prime\\prime}(3)>0$ match the local max / local min reading, so the statement is True."
+        "**A.** → True\n\nDifferentiate the spoilage index and factor the resulting quadratic.\n\n$$S^{\\prime}(t)=3t^{2}-12t+9$$\n\n$$S^{\\prime}(t)=3(t^{2}-4t+3)$$\n\n$$S^{\\prime}(t)=3(t-1)(t-3)$$\n\nThat is the claimed factorisation, so the statement is True.",
+        "**B.** → True\n\nClassify $t=1$ by the sign chart of $S^{\\prime}=3(t-1)(t-3)$.\n\nFor $t<1$ both factors are negative, so $S^{\\prime}>0$. Between $1$ and $3$ the product is negative, so $S^{\\prime}<0$.\n\nA $+$ to $-$ change at $t=1$ is a local maximum of spoilage, so the statement is True.",
+        "**C.** → True\n\nContinue the same sign chart past $t=3$.\n\nOn $(1,3)$ one has $S^{\\prime}<0$, and for $t>3$ both factors are positive, so $S^{\\prime}>0$.\n\nA $-$ to $+$ change at $t=3$ is a local minimum of spoilage, so the statement is True.",
+        "**D.** → False\n\nA local maximum among critical points need not be the unique global maximum on a closed interval. Compare levels at the endpoints and at every critical point.\n\n$$S(0)=0$$\n\n$$S(1)=1-6+9=4$$\n\n$$S(3)=27-54+27=0$$\n\n$$S(4)=64-96+36=4$$\n\nBoth $t=1$ and $t=4$ attain height $4$, so the global maximum on $[0,4]$ is not uniquely at $t=1$, so the statement is False.",
+        "**E.** → True\n\nThe second-derivative test should match the local max / local min reading already obtained from the sign chart.\n\n$$S^{\\prime\\prime}(t)=6t-12$$\n\n$$S^{\\prime\\prime}(1)=-6<0$$\n\n$$S^{\\prime\\prime}(3)=6>0$$\n\nNegative second derivative at $t=1$ confirms a local max, and positive second derivative at $t=3$ confirms a local min, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 190,
@@ -989,11 +989,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading places brown's $+$ to $-$ crossing at $Q=6$, a local profit maximum for workshop $A$, so the statement is True.",
-        "**B.** → True\n\nThe shared figure reading has green still positive at $Q=6$, so $B$ would expand past $A$'s stationary output, so the statement is True.",
-        "**C.** → True\n\nThe shared integral comparison from matching starts with brown above green on $(0,6)$ already forces $P_A(6)>P_B(6)$, so the statement is True.",
-        "**D.** → True\n\nOn $(6,9)$ the shared signs (brown negative, green positive) say $A$ should contract while $B$ expands, so the statement is True.",
-        "**E.** → False\n\nThe shared overview notes that the brown–green meeting height is a derivative value, not the profit level $P_A(3)$, so the statement is False."
+        "**A.** → True\n\nWorkshop $A$'s marginal profit is the brown curve. A local profit maximum occurs where brown crosses from positive to negative.\n\nThat $+$ to $-$ crossing sits at $Q=6$, so workshop $A$ has a local profit maximum there, so the statement is True.",
+        "**B.** → True\n\nWorkshop $B$'s marginal profit is green. At $Q=6$, green still lies above the axis (it only reaches zero near $Q=9$).\n\nPositive marginal profit means $B$'s total profit is still rising, so $B$ would expand past $A$'s stationary output, so the statement is True.",
+        "**C.** → True\n\nBoth workshops start at profit zero. On $(0,6)$ brown lies above green, so $P_A^{\\prime}>P_B^{\\prime}$ throughout that interval.\n\nIntegrating the strict inequality from the common start yields\n\n$$P_A(6)-P_A(0)>P_B(6)-P_B(0)$$\n\nand with $P_A(0)=P_B(0)=0$ one obtains $P_A(6)>P_B(6)$, so the statement is True.",
+        "**D.** → True\n\nOn $(6,9)$ brown lies below the axis while green still lies above it.\n\nNegative marginal profit tells $A$ to contract; positive marginal profit tells $B$ to expand. Those are exactly the directions named in the claim, so the statement is True.",
+        "**E.** → False\n\nWhere brown meets green, the two workshops share a common marginal-profit value $P_A^{\\prime}=P_B^{\\prime}$.\n\nThat shared height is a value of the derivatives, not a level of total profit. In particular it is not $P_A(3)$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 191,
@@ -1022,11 +1022,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading $D(15)=30$ already gives revenue $15\\cdot 30=450$, so the statement is True.",
-        "**B.** → True\n\nThe shared elasticity calculation at $p=15$ yields $\\varepsilon=-1$, so the statement is True.",
-        "**C.** → False\n\nThe shared comparison has $MR=0$ but $C^{\\prime}(30)=7$, so $p=15$ maximises revenue rather than profit, so the statement is False.",
-        "**D.** → True\n\nThe shared evaluations $D(10)=40$, $C^{\\prime}(40)=8$, and $R^{\\prime}(10)>0$ match the claim exactly, so the statement is True.",
-        "**E.** → True\n\nThe shared derivative $AC^{\\prime}=\\dfrac{1}{20}>0$ shows average cost is increasing for every $Q>0$, so the statement is True."
+        "**A.** → True\n\nRevenue is price times quantity. The figure marks the point $(15,30)$ on the demand curve.\n\n$$D(15)=30$$\n\n$$R=15\\cdot 30=450$$\n\nRevenue at $p=15$ is $450$, so the statement is True.",
+        "**B.** → True\n\nThe figure's line is the linear demand $D=60-2p$. Point elasticity is\n\n$$\\varepsilon=\\dfrac{D^{\\prime}(p)\\,p}{D(p)}=\\dfrac{-2p}{60-2p}$$\n\nAt $p=15$,\n\n$$\\varepsilon=\\dfrac{-2\\cdot 15}{60-30}=\\dfrac{-30}{30}=-1$$\n\nUnit elasticity holds at that price, so the statement is True.",
+        "**C.** → False\n\nUnit elasticity maximises revenue ($MR=0$), not profit. At $p=15$ one has $Q=30$, and marginal cost is\n\n$$C^{\\prime}(Q)=4+\\dfrac{Q}{10}$$\n\n$$C^{\\prime}(30)=4+\\dfrac{30}{10}=7\\neq 0$$\n\nProfit maximisation requires $MR=MC$, and here $MC=7$ while $MR=0$, so $p=15$ is not a profit maximum, so the statement is False.",
+        "**D.** → True\n\nRead demand at $p=10$ from the figure, then evaluate marginal cost and the revenue derivative.\n\n$$D(10)=40$$\n\n$$C^{\\prime}(40)=4+\\dfrac{40}{10}=8$$\n\nWith $R(p)=p(60-2p)=60p-2p^{2}$,\n\n$$R^{\\prime}(p)=60-4p$$\n\n$$R^{\\prime}(10)=20>0$$\n\nSo a small price increase from $10$ still raises revenue, and $MC=8$ at that output, so the statement is True.",
+        "**E.** → True\n\nForm average cost and differentiate.\n\n$$AC(Q)=\\dfrac{C(Q)}{Q}=4+\\dfrac{Q}{20}$$\n\n$$AC^{\\prime}(Q)=\\dfrac{1}{20}>0$$\n\nAverage cost is strictly increasing for every $Q>0$, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 192,
@@ -1055,11 +1055,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading has brown above green at $Q=12$, so a small expansion raises pre-tax profit, so the statement is True.",
-        "**B.** → False\n\nThe shared crossings move from near $Q=16$ down to near $Q=\\dfrac{40}{3}$, so the tax lowers optimal output, so the statement is False.",
-        "**C.** → True\n\nThe shared post-tax FOC is exactly $MR=\\mathrm{MC}+\\mathrm{tax}$ at the purple–brown crossing, so the statement is True.",
-        "**D.** → True\n\nThe shared reading places $Q=20$ past the pre-tax green–brown meeting, with green already above brown, so the statement is True.",
-        "**E.** → False\n\nThe shared solution insists the post-tax optimum uses purple ($MR=\\mathrm{MC}+4$), not the old green FOC, so the statement is False."
+        "**A.** → True\n\nProfit rises while marginal revenue lies above marginal cost. On the figure, at $Q=12$ brown (MR) sits above green (MC).\n\nExpanding a little from that output therefore raises pre-tax profit, so the statement is True.",
+        "**B.** → False\n\nA specific tax of $4$ shifts marginal cost upward to the purple curve. The new $MR=\\mathrm{MC}+\\mathrm{tax}$ crossing is the purple–brown meeting near $Q=\\dfrac{40}{3}$.\n\nThat abscissa lies left of the pre-tax green–brown crossing near $Q=16$, so the tax lowers optimal output rather than raising it, so the statement is False.",
+        "**C.** → True\n\nPurple is the post-tax marginal cost — the old MC plus the tax of $4$. Where purple meets brown, the firm equates marginal revenue to that shifted cost.\n\n$$MR=\\mathrm{MC}+\\mathrm{tax}$$\n\nThat is precisely the post-tax first-order condition, so the statement is True.",
+        "**D.** → True\n\nThe pre-tax optimum is the green–brown crossing near $Q=16$. At $Q=20$, which lies to the right of that crossing, green already exceeds brown.\n\nMarginal cost above marginal revenue means output is past the pre-tax optimum, so the statement is True.",
+        "**E.** → False\n\nPurple is a parallel upward shift of green by $4$, so the post-tax first-order condition uses purple, not the old green curve.\n\nEquivalently the firm solves $MR=\\mathrm{MC}+4$, not $MR=\\mathrm{MC}$. Keeping the untaxed green FOC would be wrong, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 193,
@@ -1088,11 +1088,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared elimination already produces $A(x)=60x-2x^{2}$ on $0<x<30$, so the statement is True.",
-        "**B.** → True\n\nThe shared critical-point calculation maximises area at $x=15$, so the statement is True.",
-        "**C.** → True\n\nThe shared revenue derivative $R^{\\prime}(A)=24-A$ vanishes at $A=24$, so the statement is True.",
-        "**D.** → False\n\nThe shared comparison has area peaking at $A=450$ while revenue peaks at $A=24$, so the two maximisers disagree, so the statement is False.",
-        "**E.** → True\n\nThe shared elasticity evaluation at the revenue-maximising area already gives $\\varepsilon=-1$, so the statement is True."
+        "**A.** → True\n\nEliminate the parallel side from the fencing budget and write planted area in the free length $x$.\n\n$$y=60-2x$$\n\n$$A(x)=x(60-2x)=60x-2x^{2}$$\n\nThe open fencing interval is $0<x<30$, exactly as claimed, so the statement is True.",
+        "**B.** → True\n\nMaximise the concave quadratic area on that open interval.\n\n$$A^{\\prime}(x)=60-4x$$\n\n$$60-4x=0$$\n\n$$x=15$$\n\n$$A^{\\prime\\prime}(x)=-4<0$$\n\nSo area alone is maximised at $x=15$, so the statement is True.",
+        "**C.** → True\n\nRevenue as a function of planted area is the quadratic coming from inverse demand.\n\n$$R(A)=pA=\\left(24-\\dfrac{1}{2}A\\right)A=24A-\\dfrac{1}{2}A^{2}$$\n\n$$R^{\\prime}(A)=24-A$$\n\n$$24-A=0$$\n\n$$A=24$$\n\nAnd $R^{\\prime\\prime}=-1<0$, so revenue peaks at $A=24$, so the statement is True.",
+        "**D.** → False\n\nThe area-maximising layout gives a huge planted area.\n\n$$A(15)=60\\cdot 15-2\\cdot 15^{2}=450$$\n\nRevenue, however, peaks at $A=24$, far below $450$. Flooding the market with area drives price down; the two maximisers are different, so the statement is False.",
+        "**E.** → True\n\nInvert the demand rule to express quantity in terms of price, then evaluate elasticity at the revenue-maximising area.\n\n$$p=24-\\dfrac{1}{2}A\\qquad\\Rightarrow\\qquad A=48-2p$$\n\nAt $A=24$ one has $p=12$, so\n\n$$\\varepsilon=\\dfrac{-2p}{48-2p}=\\dfrac{-2\\cdot 12}{48-24}=\\dfrac{-24}{24}=-1$$\n\nUnit elasticity at the revenue peak is exactly what the claim asserts, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 194,
@@ -1120,11 +1120,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared evaluations $AC(16)=20$ and $MC(16)=10$ match the figure heights named in the claim, so the statement is True.",
-        "**B.** → True\n\nThe shared identity $MC=\\dfrac{1}{2}AC$ holds at every $Q>0$ shown, so the statement is True.",
-        "**C.** → False\n\nThe shared observation $C^{\\prime}(Q)>0$ shows total cost is increasing, not decreasing, despite falling averages, so the statement is False.",
-        "**D.** → True\n\nThe shared ratio $\\dfrac{C(18)}{C(9)}=\\sqrt{2}$ is exactly the claimed scale factor, so the statement is True.",
-        "**E.** → True\n\nThe shared derivative $AC^{\\prime}<0$ for every $Q>0$, including near $Q=25$, means a small increase in $Q$ lowers average cost, so the statement is True."
+        "**A.** → True\n\nEvaluate the closed forms at $Q=16$ and compare with the marked heights.\n\n$$\\sqrt{16}=4$$\n\n$$AC(16)=\\dfrac{80}{4}=20$$\n\n$$MC(16)=\\dfrac{40}{4}=10$$\n\nBrown at height $20$ and green at height $10$ match those formulas, so the statement is True.",
+        "**B.** → True\n\nFor square-root total cost the two curves are proportional for every $Q>0$.\n\n$$AC=\\dfrac{80}{\\sqrt{Q}},\\qquad MC=\\dfrac{40}{\\sqrt{Q}}$$\n\n$$MC=\\dfrac{1}{2}AC$$\n\nThe identity holds throughout the figure, so the statement is True.",
+        "**C.** → False\n\nFalling average and marginal cost do not make total cost fall. Marginal cost is still positive:\n\n$$C^{\\prime}(Q)=MC(Q)=\\dfrac{40}{\\sqrt{Q}}>0$$\n\nfor every $Q>0$, so $C$ itself is strictly increasing. The claim confuses falling averages with a falling total, so the statement is False.",
+        "**D.** → True\n\nThe ratio of total costs at doubled cumulative output is the square-root scale factor.\n\n$$\\dfrac{C(18)}{C(9)}=\\dfrac{80\\sqrt{18}}{80\\sqrt{9}}=\\dfrac{\\sqrt{18}}{3}=\\sqrt{2}$$\n\nDoubling output from $9$ to $18$ multiplies total cost by $\\sqrt{2}$, so the statement is True.",
+        "**E.** → True\n\nDifferentiate average cost and read the sign at $Q=25$.\n\n$$AC(Q)=80Q^{-\\frac{1}{2}}$$\n\n$$AC^{\\prime}(Q)=-40Q^{-\\frac{3}{2}}<0$$\n\nfor every $Q>0$, including $Q=25$. A small increase in output near twenty-five releases therefore still lowers average cost, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 195,
@@ -1153,11 +1153,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared Newton simplification already yields $2a+h-8$, so the statement is True.",
-        "**B.** → False\n\nThe shared differentiation shows the constant fee leaves $P^{\\prime}$ unchanged at every $x$, so the statement is False.",
-        "**C.** → True\n\nThe shared sign change of $P^{\\prime}$ at $x=4$ is a local minimum, and the fee does not move that critical point, so the statement is True.",
-        "**D.** → True\n\nThe shared ticket calculation peaks revenue at $p=20$ with $\\varepsilon=-1$, so the statement is True.",
-        "**E.** → True\n\nThe shared evaluation $P^{\\prime}(5)=2$ means one more staffed hour raises profit by about $2$ hundred euros, so the statement is True."
+        "**A.** → True\n\nExpand the shifted profit, cancel $P(a)$, and divide by the increment $h$.\n\n$$P(a+h)=(a+h)^{2}-8(a+h)+25$$\n\n$$P(a+h)-P(a)=2ah+h^{2}-8h$$\n\n$$\\dfrac{P(a+h)-P(a)}{h}=2a+h-8$$\n\nThe Newton quotient simplifies to $2a+h-8$, so the statement is True.",
+        "**B.** → False\n\nA flat licence fee subtracts the constant $6$ from profit. Constants vanish upon differentiation.\n\n$$\\dfrac{d}{dx}\\bigl(P(x)-6\\bigr)=P^{\\prime}(x)$$\n\nThe fee changes the profit level but leaves the slope $P^{\\prime}$ untouched at every $x$, so the statement is False.",
+        "**C.** → True\n\nLocate the critical point of gallery profit from the first derivative.\n\n$$P^{\\prime}(x)=2x-8=2(x-4)$$\n\nAt $x=4$ the derivative changes from negative to positive, so $x=4$ is a local minimum. Subtracting a constant fee does not alter $P^{\\prime}$, so the same minimum remains with or without the fee, so the statement is True.",
+        "**D.** → True\n\nTicket revenue is the usual downward-opening parabola in price.\n\n$$R(p)=p(40-p)=40p-p^{2}$$\n\n$$R^{\\prime}(p)=40-2p$$\n\n$$40-2p=0$$\n\n$$p=20$$\n\nAt that price, demand is $D(20)=20$ and elasticity is\n\n$$\\varepsilon=\\dfrac{-p}{40-p}=\\dfrac{-20}{20}=-1$$\n\nRevenue peaks at unit elasticity, so the statement is True.",
+        "**E.** → True\n\nPre-fee marginal profit is simply $P^{\\prime}$.\n\n$$P^{\\prime}(5)=2\\cdot 5-8=2$$\n\nStaffing one more hour near $x=5$ therefore raises profit by about $2$ hundred euros, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 196,
@@ -1185,11 +1185,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading places the inflection of $C$ at green's zero near $Q=4$, where brown is minimised, so the statement is True.",
-        "**B.** → True\n\nThe shared sign reading has green negative on $(0,4)$, so MC is decreasing and $C$ is concave down there, so the statement is True.",
-        "**C.** → False\n\nThe shared overview separates a minimum of brown ($C^{\\prime\\prime}=0$) from a minimum of $AC$ ($MC=AC$), so the statement is False.",
-        "**D.** → True\n\nThe shared figure reading at $Q=8$ has green positive near height $4$, matching a rising MC, so the statement is True.",
-        "**E.** → True\n\nBecause brown stays positive on the window, the shared conclusion is that total cost increases throughout, so the statement is True."
+        "**A.** → True\n\nBrown is $C^{\\prime}$ (marginal cost) and green is $C^{\\prime\\prime}$. An inflection of total cost is a zero of $C^{\\prime\\prime}$ with a sign change — equivalently a stationary point of MC.\n\nGreen crosses zero near $Q=4$, and that is where brown has its minimum.\n\nSo total cost has an inflection there, so the statement is True.",
+        "**B.** → True\n\nOn $(0,4)$ green lies below the axis, so $C^{\\prime\\prime}<0$.\n\nNegative $C^{\\prime\\prime}$ means marginal cost $C^{\\prime}$ is decreasing, and it also means total cost $C$ is concave down on that interval, so the statement is True.",
+        "**C.** → False\n\nAverage cost is minimised where $AC^{\\prime}=0$, which rearranges to the equality $MC=AC$.\n\nA minimum of marginal cost alone (the trough of brown) is the different condition $C^{\\prime\\prime}=0$. Those two abscissae need not coincide, so the statement is False.",
+        "**D.** → True\n\nAt $Q=8$ the figure shows green positive and about height $4$.\n\nPositive $C^{\\prime\\prime}$ means brown (marginal cost) is rising there, which matches the claimed reading, so the statement is True.",
+        "**E.** → True\n\nBrown is $C^{\\prime}$. Wherever brown stays positive, total cost is strictly increasing.\n\nOn the plotted window brown never dips below the axis, so $C$ rises throughout, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 197,
@@ -1218,11 +1218,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading has $U^{\\prime}$ crossing zero from above at $x=10$, the reduced optimum, so the statement is True.",
-        "**B.** → True\n\nThe shared budget evaluation at $x=10$ already gives $y=5$, so the statement is True.",
-        "**C.** → True\n\nOn $(0,10)$ the shared sign $U^{\\prime}>0$ means shifting a little budget toward illustration raises output, so the statement is True.",
-        "**D.** → True\n\nThe shared formulas $U(x)=10x-\\dfrac{1}{2}x^{2}$ and $U^{\\prime}(4)=6$ match the figure, so the statement is True.",
-        "**E.** → False\n\nThe shared corner evaluation $U(20)=0$ shows spending everything on $x$ minimises the product rather than maximising it, so the statement is False."
+        "**A.** → True\n\nAfter eliminating $y$ from the budget $2x+4y=40$, the reduced output $U(x)$ has derivative plotted in the figure. A maximum of reduced $U$ is a zero of $U^{\\prime}$ with a $+$ to $-$ sign change.\n\nThat crossing from above sits at $x=10$, so the reduced optimum is there, so the statement is True.",
+        "**B.** → True\n\nSolve the budget for the complementary input and evaluate at the optimum $x=10$.\n\n$$4y=40-2x\\qquad\\Rightarrow\\qquad y=10-\\dfrac{1}{2}x$$\n\n$$y=10-\\dfrac{1}{2}\\cdot 10=5$$\n\nThe matching typesetting intensity is $y=5$, so the statement is True.",
+        "**C.** → True\n\nOn $(0,10)$ the figure shows $U^{\\prime}>0$. Increasing $x$ along the budget (and cutting $y$ accordingly) therefore raises the product $U=xy$.\n\nThat is the same as shifting a little budget from typesetting toward illustration, so the statement is True.",
+        "**D.** → True\n\nThe reduced objective is the quadratic obtained by substituting $y=10-\\dfrac{1}{2}x$ into $U=xy$.\n\n$$U(x)=x\\left(10-\\dfrac{1}{2}x\\right)=10x-\\dfrac{1}{2}x^{2}$$\n\n$$U^{\\prime}(x)=10-x$$\n\n$$U^{\\prime}(4)=6$$\n\nHeight $6$ at $x=4$ matches the figure, so the statement is True.",
+        "**E.** → False\n\nSpending everything on $x$ forces $y=0$ at the right endpoint $x=20$. The product utility then collapses.\n\n$$U=x\\cdot 0=0$$\n\nThat corner is the worst product value, not a maximum. The negative $U^{\\prime}$ near the endpoint merely says one should move left, back toward the interior mix $x=10$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 198,
@@ -1251,11 +1251,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared FOC already solves $TC^{\\prime}=0$ at the EOQ $Q=100$, so the statement is True.",
-        "**B.** → True\n\nThe shared second derivative $TC^{\\prime\\prime}(Q)=\\dfrac{40000}{Q^{3}}>0$ for all $Q>0$ confirms a minimum, so the statement is True.",
-        "**C.** → True\n\nThe shared factorisation of $S^{\\prime}$ already yields a local max at $t=1$ and a local min at $t=3$, so the statement is True.",
-        "**D.** → False\n\nThe shared tie $S(1)=S(4)=4$ denies uniqueness of the closed-interval global maximum at $t=1$, so the statement is False.",
-        "**E.** → True\n\nThe shared EOQ balance already equates annual holding cost to annual ordering cost at $Q=100$, so the statement is True."
+        "**A.** → True\n\nSet the derivative of total inventory cost to zero and solve for the economic order quantity.\n\n$$TC^{\\prime}(Q)=-\\dfrac{20000}{Q^{2}}+2$$\n\n$$-\\dfrac{20000}{Q^{2}}+2=0$$\n\n$$Q^{2}=\\dfrac{20000}{2}=10000$$\n\n$$Q=100$$\n\n(taking the positive root). That is the EOQ named in the claim, so the statement is True.",
+        "**B.** → True\n\nDifferentiate once more to classify the critical point.\n\n$$TC^{\\prime\\prime}(Q)=\\dfrac{40000}{Q^{3}}$$\n\nFor every $Q>0$ this second derivative is positive, so the critical point $Q=100$ is a minimum of $TC$, so the statement is True.",
+        "**C.** → True\n\nDifferentiate the spoilage index and factor.\n\n$$S^{\\prime}(t)=3t^{2}-12t+9=3(t-1)(t-3)$$\n\nThe sign chart of that product gives a local maximum at $t=1$ ($+$ to $-$) and a local minimum at $t=3$ ($-$ to $+$), so the statement is True.",
+        "**D.** → False\n\nCompare spoilage levels at the critical points and at the endpoints of $[0,4]$.\n\n$$S(1)=4,\\qquad S(4)=4$$\n\nBoth abscissae attain the same height $4$, so the global maximum on the closed interval is not uniquely attained at $t=1$, so the statement is False.",
+        "**E.** → True\n\nAt the EOQ the two cost pieces balance. With holding rate $h=4$, the annual holding cost is $\\dfrac{hQ}{2}=2Q$, matching the rising term in $TC$.\n\n$$\\dfrac{h\\cdot 100}{2}=2\\cdot 100=200$$\n\n$$\\dfrac{20000}{100}=200$$\n\nOrdering cost equals holding cost at $Q=100$, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 199,
@@ -1283,11 +1283,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared sign changes of brown at $Q=2$ and $Q=8$ are exactly a local minimum and a local maximum of profit, so the statement is True.",
-        "**B.** → True\n\nThe shared reading has green negative on $(5,10)$, so profit is concave down there, so the statement is True.",
-        "**C.** → True\n\nThe shared alignment of brown's peak with green's zero near $Q=5$ is the steepest climb of profit, so the statement is True.",
-        "**D.** → False\n\nThe shared solution places the profit maximum at $Q=8$ where $P^{\\prime}=0$, not at the inflection $Q=5$ where $P^{\\prime\\prime}=0$, so the statement is False.",
-        "**E.** → True\n\nOn $(2,8)$ the shared reading has brown positive, so profit increases through the concavity change at $Q=5$, so the statement is True."
+        "**A.** → True\n\nBrown is $P^{\\prime}$. Local extrema of profit sit where brown crosses the axis and changes sign.\n\nAt $Q=2$, brown changes from negative to positive — a local minimum of $P$.\n\nAt $Q=8$, brown changes from positive to negative — a local maximum of $P$.\n\nThose are exactly the turns named in the claim, so the statement is True.",
+        "**B.** → True\n\nGreen is $P^{\\prime\\prime}$, the concavity meter for profit. Wherever green is negative, $P$ is concave down.\n\nOn $(5,10)$ green lies below the axis, so profit is concave down there, so the statement is True.",
+        "**C.** → True\n\nThe steepest climb of profit is the peak of $P^{\\prime}$ — the highest point of brown.\n\nThat peak lines up with the zero of green ($P^{\\prime\\prime}=0$) near $Q=5$, so the steepest climb occurs there, so the statement is True.",
+        "**D.** → False\n\nA zero of $P^{\\prime\\prime}$ marks an inflection of profit (a turn of the slope), not a maximum of the level $P$.\n\nProfit is maximised where $P^{\\prime}=0$ with a $+$ to $-$ sign change, which occurs at $Q=8$, not at the inflection $Q=5$.\n\nTreating $P^{\\prime\\prime}=0$ as a profit maximum is the wrong first-order condition, so the statement is False.",
+        "**E.** → True\n\nMonotonicity of profit is governed by the sign of $P^{\\prime}$ alone. On $(2,8)$ brown stays positive, so profit is strictly increasing on that interval.\n\nGreen changing sign at $Q=5$ only flips concavity; an inflection inside an increasing stretch is entirely allowed, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 200,
@@ -1316,11 +1316,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared chain-rule calculation already gives $R^{\\prime}(a)=60\\,a^{-\\frac{1}{4}}$, so the statement is True.",
-        "**B.** → False\n\nThe shared FOC solves $a=60^{4}$, not $a=60^{2}$, so the statement is False.",
-        "**C.** → True\n\nThe shared evaluation $R^{\\prime}(16)=30>1$ shows a little more advertising still raises profit, so the statement is True.",
-        "**D.** → True\n\nThe shared overview notes that concave $Q$ is compatible with a single crossing of $R^{\\prime}=1$, hence an interior profit maximum, so the statement is True.",
-        "**E.** → False\n\nThe shared scale factor $2^{\\frac{3}{4}}\\neq 2$ shows doubling $a$ does not double $Q$, so the statement is False."
+        "**A.** → True\n\nChain-rule marginal revenue of advertising is euros per listener times listeners per euro of spend.\n\n$$Q(a)=10a^{\\frac{3}{4}}$$\n\n$$Q^{\\prime}(a)=10\\cdot\\dfrac{3}{4}a^{-\\frac{1}{4}}=\\dfrac{15}{2}a^{-\\frac{1}{4}}$$\n\n$$R^{\\prime}(a)=8Q^{\\prime}(a)=60\\,a^{-\\frac{1}{4}}$$\n\nThat is the claimed marginal revenue, so the statement is True.",
+        "**B.** → False\n\nAn interior profit maximum sets marginal revenue of advertising equal to the marginal cost of one more euro spent, which is $1$.\n\n$$60\\,a^{-\\frac{1}{4}}=1$$\n\n$$a^{\\frac{1}{4}}=60$$\n\n$$a=60^{4}$$\n\nThe claim writes $a=60^{2}$, which understates the power, so the statement is False.",
+        "**C.** → True\n\nEvaluate marginal revenue at the named spend and compare with marginal cost $1$.\n\n$$16^{\\frac{1}{4}}=2\\qquad\\Rightarrow\\qquad a^{-\\frac{1}{4}}=\\dfrac{1}{2}$$\n\n$$R^{\\prime}(16)=60\\cdot\\dfrac{1}{2}=30>1$$\n\nSo a little more advertising still raises profit, so the statement is True.",
+        "**D.** → True\n\nConcave listenership means $Q^{\\prime\\prime}<0$, so $R^{\\prime}$ is strictly decreasing. The difference $R^{\\prime}(a)-1$ can still cross from positive to negative exactly once.\n\nThat single sign change of $\\pi^{\\prime}$ is precisely an interior profit maximum, so concavity of $Q$ is compatible with an interior max of profit, so the statement is True.",
+        "**E.** → False\n\nListenership scales with the power $\\dfrac{3}{4}$, not linearly.\n\n$$\\dfrac{Q(2a)}{Q(a)}=\\dfrac{10(2a)^{\\frac{3}{4}}}{10a^{\\frac{3}{4}}}=2^{\\frac{3}{4}}\\neq 2$$\n\nDoubling spend multiplies listenership by $2^{\\frac{3}{4}}$, not by $2$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 201,
@@ -1348,11 +1348,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe shared margin calculation at $Q=20$ gives $120$, not $150$, so the statement is False.",
-        "**B.** → True\n\nThe shared FOC is exactly $20-Q=4$ with $MR=20-Q$, so the statement is True.",
-        "**C.** → False\n\nThe shared differentiation shows the lump-sum fee leaves $MR=MC$ — and therefore optimal $Q$ — unchanged, so the statement is False.",
-        "**D.** → True\n\nThe shared solution already gives optimum $Q=16$ with price $p=12$, so the statement is True.",
-        "**E.** → True\n\nThe shared elasticity evaluation at $Q=20$ yields $\\varepsilon=-1$, so the statement is True."
+        "**A.** → False\n\nRead price at $Q=20$ from the inverse-demand figure and form the variable margin.\n\nAt $Q=20$ one has $p=10$, so\n\n$$pQ-C(Q)=20\\cdot 10-4\\cdot 20=200-80=120$$\n\nThe claim asserts $150$, which overshoots the true margin $120$, so the statement is False.",
+        "**B.** → True\n\nThe figure's inverse demand is the line $p=20-\\dfrac{1}{2}Q$, so revenue and its derivative are\n\n$$R(Q)=20Q-\\dfrac{1}{2}Q^{2}$$\n\n$$MR=R^{\\prime}(Q)=20-Q$$\n\nProfit maximisation sets $MR=MC=4$:\n\n$$20-Q=4$$\n\nwhich is exactly the claimed first-order condition, so the statement is True.",
+        "**C.** → False\n\nThe membership fee $F=50$ is a lump-sum constant in profit. Differentiating with respect to $Q$ kills it.\n\n$$\\pi(Q)=R(Q)-C(Q)+F\\qquad\\Rightarrow\\qquad \\pi^{\\prime}(Q)=MR-MC$$\n\nThe fee shifts the profit level but leaves the $MR=MC$ condition — and therefore the optimal $Q$ — unchanged, so the statement is False.",
+        "**D.** → True\n\nSolve the first-order condition from B, then read price from inverse demand.\n\n$$20-Q=4\\qquad\\Rightarrow\\qquad Q=16$$\n\n$$p=20-\\dfrac{1}{2}\\cdot 16=12$$\n\nAt the optimum, price is $12$, so the statement is True.",
+        "**E.** → True\n\nInvert demand to $Q=40-2p$ and evaluate point elasticity at $Q=20$ (where $p=10$).\n\n$$\\varepsilon=\\dfrac{-2p}{Q}=\\dfrac{-2\\cdot 10}{20}=-1$$\n\nUnit elasticity holds at that quantity, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 202,
@@ -1381,11 +1381,11 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → False\n\nThe shared correct derivative is $AC^{\\prime}(Q)=\\dfrac{2}{3}Q-4-\\dfrac{90}{Q^{2}}$, not the claimed expression, so the statement is False.",
-        "**B.** → True\n\nThe shared evaluation $AC^{\\prime}(6)<0$ shows average cost is still falling at $Q=6$, so the statement is True.",
-        "**C.** → True\n\nThe shared integral comparison from matching revenue at $Q=5$ already forces the rival higher at $Q=8$, so the statement is True.",
-        "**D.** → True\n\nThe shared quotient-rule identity equates $AC^{\\prime}=0$ with $MC=AC$ at every critical point of $AC$, so the statement is True.",
-        "**E.** → True\n\nThe shared second derivative $C^{\\prime\\prime}(Q)=2Q-8$ vanishes at the inflection $Q=4$, so the statement is True."
+        "**A.** → False\n\nForm average cost carefully before differentiating.\n\n$$AC(Q)=\\dfrac{C(Q)}{Q}=\\dfrac{1}{3}Q^{2}-4Q+30+\\dfrac{90}{Q}$$\n\n$$AC^{\\prime}(Q)=\\dfrac{2}{3}Q-4-\\dfrac{90}{Q^{2}}$$\n\nThe claim writes $Q-\\dfrac{8}{3}-\\dfrac{90}{Q^{2}}$, which mishandles the quadratic and linear coefficients, so the statement is False.",
+        "**B.** → True\n\nEvaluate the correct derivative of average cost at $Q=6$.\n\n$$AC^{\\prime}(6)=\\dfrac{2}{3}\\cdot 6-4-\\dfrac{90}{36}=4-4-\\dfrac{5}{2}=-\\dfrac{5}{2}<0$$\n\nNegative $AC^{\\prime}$ means average cost is still falling at output $6$, so the statement is True.",
+        "**C.** → True\n\nThe two mills match revenue at $Q=5$, and the rival has strictly larger marginal revenue on $[5,8]$. Integrating that strict inequality from the common start yields\n\n$$R_{\\mathrm{rival}}(8)-R_{\\mathrm{rival}}(5)>R(8)-R(5)$$\n\nand with $R_{\\mathrm{rival}}(5)=R(5)$ one obtains $R_{\\mathrm{rival}}(8)>R(8)$, so the statement is True.",
+        "**D.** → True\n\nCritical points of average cost solve $AC^{\\prime}=0$. The quotient rule rearranges that equation to\n\n$$AC^{\\prime}=0\\qquad\\Longleftrightarrow\\qquad MC=AC$$\n\nSo at every critical point of $AC$, marginal cost equals average cost, so the statement is True.",
+        "**E.** → True\n\nDifferentiate total cost twice and locate the zero.\n\n$$C^{\\prime}(Q)=Q^{2}-8Q+30$$\n\n$$C^{\\prime\\prime}(Q)=2Q-8$$\n\n$$2Q-8=0\\qquad\\Rightarrow\\qquad Q=4$$\n\nThe second derivative changes from negative to positive there, so $Q=4$ is an inflection of total cost, so the statement is True."
       ],
       "difficulty_level": "5/5",
       "sort_order": 203,
@@ -1413,11 +1413,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared reading places the revenue maximum at green's zero near $Q=10$, so the statement is True.",
-        "**B.** → True\n\nThe shared profit FOC has green meeting height $10$ near $Q=15$, so the statement is True.",
-        "**C.** → False\n\nAt the profit-maximising output the shared figure reading gives brown height $p=25$, not $p=30$, so the statement is False.",
-        "**D.** → True\n\nThe shared reading at $Q=10$ has $MR=0$ while $p=20$, so price exceeds marginal revenue, so the statement is True.",
-        "**E.** → False\n\nThe shared overview separates $MR=MC$ from the AC-minimising condition $MC=AC$, so constant MC does not make the profit $Q$ an AC minimiser, so the statement is False."
+        "**A.** → True\n\nRevenue is maximised where marginal revenue is zero — the green curve's crossing of the axis.\n\nThat zero sits near $Q=10$ on the figure, so revenue peaks there, so the statement is True.",
+        "**B.** → True\n\nProfit maximisation equates marginal revenue to marginal cost. With constant $MC=10$, that is where green meets height $10$.\n\nReading the figure, that meeting lies near $Q=15$, so profit is maximised there, so the statement is True.",
+        "**C.** → False\n\nAt the profit-maximising output near $Q=15$, read price from the brown inverse-demand curve.\n\nThe figure's brown height there is $p=25$, not $p=30$.\n\nThe claim overstates the price at the profit peak, so the statement is False.",
+        "**D.** → True\n\nAt $Q=10$ the figure shows green on the axis ($MR=0$) while brown sits at height $20$.\n\nPrice $p=20$ therefore exceeds marginal revenue $0$ at that output, so the statement is True.",
+        "**E.** → False\n\nConstant marginal cost makes the profit FOC simply $MR=10$, but a minimum of average cost is the different condition $MC=AC$.\n\nThose two equations need not share a root. Equating $MR$ to a constant $MC$ does not by itself minimise average cost, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 204,
@@ -1446,11 +1446,11 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe shared differentiation of revenue already gives pretax $MR=30-\\dfrac{2}{3}Q$, so the statement is True.",
-        "**B.** → True\n\nThe shared pretax FOC solves at $Q=15$, so the statement is True.",
-        "**C.** → True\n\nThe shared post-tax FOC equates $MR$ to $\\dfrac{4}{5}Q+13$ and yields output strictly below $15$, so the statement is True.",
-        "**D.** → True\n\nThe shared revenue peak at $Q=45$ with $\\varepsilon=-1$ matches the claim, so the statement is True.",
-        "**E.** → False\n\nThe shared overview notes that the tax leaves $MR=0$ (and the revenue-maximising $Q=45$) unchanged, so the statement is False."
+        "**A.** → True\n\nRevenue is price times quantity under the given inverse demand.\n\n$$R(Q)=\\left(30-\\dfrac{1}{3}Q\\right)Q=30Q-\\dfrac{1}{3}Q^{2}$$\n\n$$MR=R^{\\prime}(Q)=30-\\dfrac{2}{3}Q$$\n\nThat is the pretax marginal revenue named in the claim, so the statement is True.",
+        "**B.** → True\n\nPretax marginal cost comes from differentiating the quadratic cost rule.\n\n$$MC=C^{\\prime}(Q)=\\dfrac{4}{5}Q+8$$\n\nSet $MR=MC$:\n\n$$30-\\dfrac{2}{3}Q=\\dfrac{4}{5}Q+8$$\n\n$$22=\\dfrac{2}{3}Q+\\dfrac{4}{5}Q=\\dfrac{10}{15}Q+\\dfrac{12}{15}Q=\\dfrac{22}{15}Q$$\n\n$$Q=15$$\n\nPretax profit is maximised at $Q=15$, so the statement is True.",
+        "**C.** → True\n\nA unit tax of $5$ shifts marginal cost up by $5$.\n\n$$\\mathrm{MC}_{\\mathrm{tax}}=\\dfrac{4}{5}Q+8+5=\\dfrac{4}{5}Q+13$$\n\nThe new FOC is $MR=\\dfrac{4}{5}Q+13$. Compared with the pretax equation that had $+8$ on the right, the same algebra now yields a strictly smaller positive root than $15$, so optimal output falls, so the statement is True.",
+        "**D.** → True\n\nRevenue peaks where $MR=0$.\n\n$$30-\\dfrac{2}{3}Q=0\\qquad\\Rightarrow\\qquad Q=45$$\n\nAt that quantity, $p=30-\\dfrac{1}{3}\\cdot 45=15$. Inverting demand gives $Q=90-3p$, so\n\n$$\\varepsilon=\\dfrac{-3p}{Q}=\\dfrac{-3\\cdot 15}{45}=-1$$\n\nUnit elasticity marks the revenue peak at $Q=45$, so the statement is True.",
+        "**E.** → False\n\nRevenue depends only on the demand curve. A unit tax on the firm shifts marginal cost and therefore moves the profit-maximising output, but it leaves the revenue schedule — and the condition $MR=0$ — untouched.\n\nThe revenue-maximising output stays at $Q=45$ with or without the tax, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 205,
