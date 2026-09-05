@@ -169,7 +169,7 @@ def build_cont_vs_disc(v: int, want_fig: bool) -> dict[str, Any]:
             f"$${fmt(t_double,4)}{' < ' if D else ' \\ge '}40$$"
         ),
         (
-            f"The overview already recovered $f({t})\\approx{fmt(cont,4)}$ and "
+            f"From the overview, we have $f({t})\\approx{fmt(cont,4)}$ and "
             f"$g({t})\\approx{fmt(disc,4)}$. Compare those two levels directly:\n\n"
             f"$$g({t})={fmt(P0)}(1+{fmt(k)})^{{{t}}}\\approx{fmt(disc,4)}$$\n\n"
             f"$$f({t})\\approx{fmt(cont,4)}$$\n\n"
