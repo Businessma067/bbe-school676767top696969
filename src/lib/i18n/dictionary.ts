@@ -72,9 +72,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Kurs",
     "Mock exams": "Probeprüfungen",
-    "Guides, tasks, and AI explanations": "Leitfäden, Aufgaben und KI-Erklärungen",
-    "Open a chapter guide, see how many tasks sit behind it, then jump into a case. Submit your answers, scroll the explanation, and tap AI when you want a second pass on a statement.":
-      "Öffne einen Kapitel-Leitfaden, sieh, wie viele Aufgaben dahinterliegen, und spring dann in einen Fall. Reiche deine Antworten ein, scrolle die Erklärung und tippe auf KI, wenn du eine zweite Sicht auf eine Aussage willst.",
+    "Statement explanations with AI beside them": "Aussagen-Erklärungen mit KI daneben",
+    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
+      "Öffne einen Leitfaden, wähle eine Aufgabe, reiche ein und öffne die volle Lösung. Bei jeder Aussage tippst du auf KI-Erklärung und liest die taktische Analyse und den KI-Pass nebeneinander — ohne die Lösung zu verlassen.",
     "Explore Economics": "Wirtschaft entdecken",
     "Timed drills with the exam calculator": "Timed Mode mit dem Prüfungsrechner",
     "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
@@ -225,9 +225,9 @@ const baseDictionary: Record<Exclude<Lang, "en">, Record<string, string>> = {
     // How it works
     Course: "Курс",
     "Mock exams": "Пробні іспити",
-    "Guides, tasks, and AI explanations": "Гайди, завдання та пояснення ШІ",
-    "Open a chapter guide, see how many tasks sit behind it, then jump into a case. Submit your answers, scroll the explanation, and tap AI when you want a second pass on a statement.":
-      "Відкрий гайд розділу, подивись, скільки завдань за ним, і перейди до кейсу. Надішли відповіді, прогорни пояснення й натисни ШІ, якщо потрібен другий погляд на твердження.",
+    "Statement explanations with AI beside them": "Пояснення тверджень із ШІ поруч",
+    "Open a guide, pick a task, submit, then open the full solution. For any statement, tap AI explanation to read the tactical write-up and the AI pass side by side — without leaving the solution panel.":
+      "Відкрий гайд, обери завдання, надішли відповідь і відкрий повний розбір. Для будь-якого твердження натисни ШІ-пояснення — тактичний розбір і ШІ стоять поруч, без виходу з панелі розв’язку.",
     "Explore Economics": "До економіки",
     "Timed drills with the exam calculator": "Режим таймера з калькулятором іспиту",
     "Start from the guide, open a question, switch on timed mode, and use the calculator. Submit, then scroll the full solution so the method sticks.":
