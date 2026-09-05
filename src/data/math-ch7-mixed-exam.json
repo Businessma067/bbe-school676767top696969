@@ -189,7 +189,7 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nVertex form with the given turning point is $g(x)=a(x-2)^{2}-3$. Passing through $(0,5)$ fixes the unknown stretch $a$.\n\n$$g(0)=a(0-2)^{2}-3$$\n\n$$a(0-2)^{2}-3=5$$\n\n$$4a-3=5$$\n\n$$4a=8$$\n\n$$a=2$$\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe stretch factor equals $2$, so the statement is True.",
+        "**A.** → True\n\nVertex form with the given turning point is $g(x)=a(x-2)^{2}-3$. Passing through $(0,5)$ fixes the unknown stretch $a$.\n\n$$g(0)=a(0-2)^{2}-3$$\n\n$$a(0-2)^{2}-3=5$$\n\n$$4a-3=5$$\n\n$$4a=8$$\n\n$$a=2$$\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe stretch factor equals $2$, so the rebuilt rule is $2(x-2)^{2}-3$, so the statement is True.",
         "**B.** → True\n\nThe points $x=0$ and $x=4$ sit equally far from the axis $x=2$, so a parabola takes the same value at both. With stretch $a=2$ from $g(0)=5$, that common height is $5$.\n\n$$g(4)=2(4-2)^{2}-3$$\n\n$$2\\cdot 4-3=5$$\n\n$$g(0)=5$$\n\nThe last line is the whole test of the wording; nothing off-stage is needed.\n\nBoth heights equal $5$, so the statement is True.",
         "**C.** → True\n\nVertex form $g(x)=a(x-2)^{2}-3$ with $g(0)=5$ forces $a=2$. Then evaluate at $x=1$ and at the reflected input $x=3$.\n\n$$a=2$$\n\n$$g(1)=2(1)-3$$\n\n$$2(1)-3=-1$$\n\n$$g(3)=2(1)-3$$\n\n$$2(1)-3=-1$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nBoth heights equal $-1$, matching the equal distance from $x=2$, so the statement is True.",
         "**D.** → False\n\nThe vertex is the given turning point $(2,-3)$. Its height is already negative, so it does not lie above the axis, and $(2,-3)$ itself is a given point of negative height.\n\n$$g(2)=-3$$\n\n$$-3<0$$\n\nThe bookkeeping disagrees with the wording, and that is the whole verdict.\n\nThe vertex lies below the axis, and $(2,-3)$ is not of positive height, so the statement is False.",
@@ -255,9 +255,9 @@
         false
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nA product $2(x-1)(x-5)$ vanishes precisely where a factor vanishes, so the roots are $1$ and $5$ regardless of the leading $2$.\n\n$$x=1$$\n\n$$x=5$$\n\n$$1+5=6$$\n\nVieta says the same thing after expansion: the sum of the roots is $-b/a=12/2=6$.\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe sum of the roots is $6$, so the statement is True.",
-        "**B.** → True\n\nThe axis bisects the two roots.\n\n$$x=\\frac{1+5}{2}$$\n\n$$x=3$$\n\nThe last line is the whole test of the wording; nothing off-stage is needed.\n\nThe axis is $x=3$, so the statement is True.",
-        "**C.** → True\n\nEvaluate the factored form on the axis, keeping the leading $2$.\n\n$$g(3)=2(3-1)(3-5)$$\n\n$$2\\cdot 2\\cdot(-2)=-8$$\n\nDropping the leading $2$ would have produced the trap value $-4$.\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nThe vertex height is $-8$, so the statement is True.",
+        "**A.** → True\n\nA product $2(x-1)(x-5)$ vanishes precisely where a factor vanishes, so the roots are $1$ and $5$ regardless of the leading $2$.\n\n$$x=1$$\n\n$$x=5$$\n\n$$1+5=6$$\n\n$$x=\\frac{1+5}{2}$$\n\n$$\\frac{1+5}{2}=3$$\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe sum of the roots is $6$ and the axis is $x=3$, so the statement is True.",
+        "**B.** → True\n\nThe vertex sits on the axis $x=3$. Evaluate the factored form there, keeping the leading $2$.\n\n$$g(3)=2(3-1)(3-5)$$\n\n$$2\\cdot 2\\cdot(-2)=-8$$\n\nDropping the leading $2$ would have produced $-4$, half of the true height.\n\n$$-4\\\\neq -8$$\n\nThe last line is the whole test of the wording; nothing off-stage is needed.\n\nThe vertex height is $-8$, twice the dropped-leading trap, so the statement is True.",
+        "**C.** → True\n\nThe axis bisects the roots $1$ and $5$, so it is $x=3$. The inputs $0$ and $6$ sit three units on either side, hence a parabola takes the same value at both.\n\n$$g(0)=2(-1)(-5)$$\n\n$$2(-1)(-5)=10$$\n\n$$g(6)=2(5)(1)$$\n\n$$2(5)(1)=10$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nThose two heights agree, so the statement is True.",
         "**D.** → True\n\nThe constant term is the value at the origin, which the factored form gives without a full expansion.\n\n$$g(0)=2(-1)(-5)$$\n\n$$g(0)=10$$\n\nVieta's product is that constant over the leading coefficient.\n\n$$P=\\frac{10}{2}$$\n\n$$\\frac{10}{2}=5$$\n\n$$1\\cdot 5=5$$\n\nKeeping one algebraic step on each line makes the conclusion unavoidable.\n\nConstant term $10$ and product of roots $5$ both match, so the statement is True.",
         "**E.** → False\n\nExpand the inner product first, then distribute the leading $2$.\n\n$$(x-1)(x-5)=x^{2}-6x+5$$\n\n$$2(x^{2}-6x+5)=2x^{2}-12x+10$$\n\n$$-12\\neq -10$$\n\nThe trap $-10$ is what one would get from $2\\times(-5)$ if the inner sum of roots had been taken to be $5$ instead of $6$.\n\nOnce the actual value is in hand, the claimed value is visibly the wrong one.\n\nThe middle coefficient is $-12$, not $-10$, so the statement is False."
       ],
@@ -276,7 +276,7 @@
       "statements": [
         "The solid curve's two axis crossings are opposites of each other.",
         "The turning point of the solid curve lies $4$ units below the horizontal axis.",
-        "The first differences of the tabled heights are constantly $2$.",
+        "The first differences of the tabled heights are constantly $2$, and the second differences therefore vanish, so the interpolating degree is $1$.",
         "A line of slope $2$ through $(0,1)$ matches every tabled point.",
         "At the solid curve's right-hand axis crossing, the tabled height equals $5$."
       ],
@@ -290,7 +290,7 @@
       "tactical_explanations": [
         "**A.** → True\n\nCount the brown meetings with the horizontal axis and read their abscissas from the ticks.\n\n$$x=-2$$\n\n$$x=2$$\n\nThose two numbers are opposites, matching the visual symmetry of the trough about the vertical axis.\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe two axis crossings are opposites, so the statement is True.",
         "**B.** → True\n\nThe marked trough sits on the vertical axis. Its height on the vertical scale is $-4$.\n\n$$g(0)=-4$$\n\n$$-4<0$$\n\nFour units below the horizontal axis is exactly where the turning point sits.\n\nThe last line is the whole test of the wording; nothing off-stage is needed.\n\nThe turning point lies $4$ units below the axis, so the statement is True.",
-        "**C.** → True\n\nForm neighbouring gaps of the $\\ell$-row; the table does not print them.\n\n$$3-1=2$$\n\n$$5-3=2$$\n\n$$7-5=2$$\n\n$$(2,2,2)$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nThe first differences are constantly $2$, so the statement is True.",
+        "**C.** → True\n\nForm neighbouring gaps of the $\\ell$-row; the table does not print them.\n\n$$3-1=2$$\n\n$$5-3=2$$\n\n$$7-5=2$$\n\n$$(2,2,2)$$\n\n$$2-2=0$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nConstant first difference $2$ and vanishing second differences force degree $1$, so the statement is True.",
         "**D.** → True\n\nFor unit spacing, a constant first difference is the slope. The tabled height at $x=0$ is the intercept.\n\n$$m=2$$\n\n$$\\ell(0)=1$$\n\n$$\\ell(x)=2x+1$$\n\nChecking the remaining columns: $2\\cdot 1+1=3$, $2\\cdot 2+1=5$, $2\\cdot 3+1=7$. Every listed point matches.\n\nKeeping one algebraic step on each line makes the conclusion unavoidable.\n\nThat line reproduces the whole table, so the statement is True.",
         "**E.** → True\n\nThe right-hand brown axis crossing sits at $x=2$ on the figure. The same abscissa is a column of the table.\n\n$$x=2$$\n\n$$\\ell(2)=5$$\n\nThe figure supplies the abscissa; the table supplies the height at that same input.\n\nThe arithmetic does not leave a free parameter that could still flip the verdict.\n\nThe tabled height at that crossing is $5$, so the statement is True."
       ],
@@ -342,10 +342,10 @@
       "subsection": "7.5",
       "context": "A **solid brown parabola** $g$ and a **dashed green horizontal line** appear on the axes. Formulas are withheld. Reason from ticks and marked turns. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
-        "The turning point of the solid curve lies on the dashed line.",
+        "The turning point of the solid curve lies on the dashed line, and that shared point is the unique meeting of the two traces.",
         "The two axis crossings sit equally far from the turning abscissa, one unit on each side.",
         "The dashed line lies entirely above the solid curve.",
-        "The solid curve and the dashed line meet at exactly two points.",
+        "The solid curve and the dashed line meet at exactly two points, both distinct from the turning point.",
         "The midpoint of the two axis crossings is the turning abscissa of the solid curve."
       ],
       "answer_key": [
@@ -356,10 +356,10 @@
         true
       ],
       "tactical_explanations": [
-        "**A.** → True\n\nThe marked trough sits between the two axis crossings. The dashed level runs through that same lowest point and nowhere else nearby.\n\n$$g(x)=(x-1)(x-3)$$\n\n$$g(2)=-1$$\n\nThe turning point and the dashed line share the point $(2,-1)$.\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe turning point lies on the dashed line, so the statement is True.",
+        "**A.** → True\n\nThe marked trough sits between the two axis crossings. The dashed level runs through that same lowest point and nowhere else nearby.\n\n$$g(x)=(x-1)(x-3)$$\n\n$$g(2)=-1$$\n\nThe turning point and the dashed line share the point $(2,-1)$, and the difference $g+1$ is a square vanishing only there.\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe turning point is the unique meeting of the two traces, so the statement is True.",
         "**B.** → True\n\nThe two brown axis meetings sit at $x=1$ and $x=3$. Their midpoint is the marked trough at $x=2$, so each crossing is one unit from the turning abscissa.\n\n$$x=1$$\n\n$$x=3$$\n\n$$\\frac{1+3}{2}=2$$\n\nThe last line is the whole test of the wording; nothing off-stage is needed.\n\nThe crossings sit equally far from the turning abscissa, one unit on each side, so the statement is True.",
         "**C.** → False\n\nAn upward-opening parabola climbs without bound away from its trough, so it rises above any fixed horizontal line. On the figure the arms already sit above the dashed level near the window edges.\n\n$$g(0)=3>-1$$\n\n$$g(4)=3>-1$$\n\nA counter-example of this size already kills a general-sounding claim.\n\nThe dashed line is not entirely above the solid curve, so the statement is False.",
-        "**D.** → False\n\nThe dashed level cuts the trough at its lowest point and nowhere else: that is a tangency, not a pair of crossings.\n\n$$g(x)+1=(x-2)^{2}$$\n\n$$(x-2)^{2}=0$$\n\n$$x=2$$\n\nThe bookkeeping disagrees with the wording, and that is the whole verdict.\n\nThere is exactly one shared point, not two, so the statement is False.",
+        "**D.** → False\n\nThe dashed level cuts the trough at its lowest point and nowhere else: that is a tangency, not a pair of crossings.\n\n$$g(x)+1=(x-2)^{2}$$\n\n$$(x-2)^{2}=0$$\n\n$$x=2$$\n\nThe bookkeeping disagrees with the wording, and that is the whole verdict.\n\nThere is exactly one shared point, and it is the turning point, so the statement is False.",
         "**E.** → True\n\nThe axis of a parabola always bisects the two roots, so the turning abscissa is the midpoint of the two axis crossings.\n\n$$x=\\frac{1+3}{2}$$\n\n$$x=2$$\n\nThe figure agrees: the marked trough sits halfway between the two brown meetings with the horizontal axis.\n\nThe arithmetic does not leave a free parameter that could still flip the verdict.\n\nThe midpoint of the crossings is the turning abscissa, so the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -378,8 +378,8 @@
       "statements": [
         "The first differences of the $y$-row are constantly $3$, so the second differences vanish and the interpolating degree is at most $1$.",
         "The unique line through the first and last listed points has slope $2$.",
-        "Extending the pattern one step gives $y(5)=14$.",
-        "The second differences of the $y$-row all vanish.",
+        "Extending the constant-gap pattern one step past $x=4$ and one step before $x=0$ produces $y(5)=14$ and $y(-1)=-4$.",
+        "The second differences of the $y$-row all vanish, so any interpolant of degree at most two is in fact a line.",
         "A quadratic with leading coefficient $1$ cannot fit every listed point."
       ],
       "answer_key": [
@@ -392,8 +392,8 @@
       "tactical_explanations": [
         "**A.** → True\n\nForm neighbouring gaps of the $y$-row.\n\n$$2-(-1)=3$$\n\n$$5-2=3$$\n\n$$8-5=3$$\n\n$$11-8=3$$\n\n$$(3,3,3,3)$$\n\nConstant first differences force vanishing second differences, so any interpolant of degree at most two is in fact a line.\n\nOnce those coefficients sit on the page, the claim is forced rather than guessed.\n\nThe first differences are constantly $3$ and the interpolating degree is at most $1$, so the statement is True.",
         "**B.** → False\n\nThe unique line through the first and last listed points uses those two heights and the run of $4$.\n\n$$m=\\frac{11-(-1)}{4-0}$$\n\n$$m=\\frac{12}{4}$$\n\n$$\\frac{12}{4}=3$$\n\n$$3\\neq 2$$\n\nThe claimed number never appears in this computation, so the statement cannot stand.\n\nThat line has slope $3$, not $2$, so the statement is False.",
-        "**C.** → True\n\nOne more step of size $3$ continues the arithmetic sequence.\n\n$$y(5)=y(4)+3$$\n\n$$11+3=14$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nThe extrapolated value is $14$, so the statement is True.",
-        "**D.** → True\n\nSecond differences of a constant first-difference row are all zero.\n\n$$3-3=0$$\n\n$$(0,0,0)$$\n\nKeeping one algebraic step on each line makes the conclusion unavoidable.\n\nThe second differences all vanish, so the statement is True.",
+        "**C.** → True\n\nThe first-difference row is constantly $3$, so the sequence extends by the same gap in both directions.\n\n$$y(5)=11+3$$\n\n$$11+3=14$$\n\n$$y(-1)=-1-3$$\n\n$$-1-3=-4$$\n\nThat is exactly the relation the statement names, with no extra hypothesis required.\n\nThe two extrapolations are $14$ and $-4$, so the statement is True.",
+        "**D.** → True\n\nSecond differences of a constant first-difference row are all zero, so any interpolant of degree at most two has vanishing leading coefficient.\n\n$$3-3=0$$\n\n$$(0,0,0)$$\n\n$$2a=0$$\n\nKeeping one algebraic step on each line makes the conclusion unavoidable.\n\nThe interpolant of degree at most two is a line, so the statement is True.",
         "**E.** → True\n\nFor unit spacing a quadratic $x^{2}+bx+c$ would have constant second difference $2$, not $0$. The table's second differences vanish, so the leading coefficient of any interpolating polynomial of degree at most two must be $0$.\n\n$$2a=0$$\n\n$$a=0\\neq 1$$\n\nThe arithmetic does not leave a free parameter that could still flip the verdict.\n\nNo quadratic with leading coefficient $1$ can fit the table, so the statement is True."
       ],
       "difficulty_level": "5/5",
@@ -411,10 +411,10 @@
       "context": "A ball is tossed straight up. The figure shows height $h$ (metres) against time $t$ (seconds) as a **solid brown** curve; the horizontal axis is ground level. No formula is printed. Evaluate each statement. Mark it TRUE or FALSE.",
       "statements": [
         "The time of greatest height is the midpoint of the two visible ground times.",
-        "The greatest height occurs at $t=2$.",
+        "The greatest height occurs at $t=2$, which would be the midpoint of the two visible ground times.",
         "At $t=1$ the height is greater than at $t=5$.",
         "After the peak, height keeps rising.",
-        "The greatest height on the figure is $8$ metres."
+        "The greatest height on the figure is $8$ metres, matching the height at $t=4$."
       ],
       "answer_key": [
         true,
@@ -428,7 +428,7 @@
         "**B.** → False\n\nThe same midpoint computation puts the peak at $t=3$, and the figure's marked turn sits on that tick, not on $t=2$.\n\n$$t=3$$\n\n$$3\\neq 2$$\n\nThe claimed number never appears in this computation, so the statement cannot stand.\n\nThe greatest height occurs at $t=3$, not at $t=2$, so the statement is False.",
         "**C.** → False\n\nThe curve is symmetric about $t=3$, so heights equally far from the peak agree. The ticks $t=1$ and $t=5$ are such a pair.\n\n$$h(1)=5$$\n\n$$h(5)=5$$\n\nA counter-example of this size already kills a general-sounding claim.\n\nThe two heights are equal, not strictly ordered, so the statement is False.",
         "**D.** → False\n\nPast the peak the solid curve slopes down toward the second ground crossing. Compare the peak with the next integer tick.\n\n$$h(3)=9$$\n\n$$h(4)=8$$\n\n$$8<9$$\n\nThe bookkeeping disagrees with the wording, and that is the whole verdict.\n\nHeight falls after the peak, so the statement is False.",
-        "**E.** → False\n\nRead the peak height on the vertical scale, or evaluate the hidden rule at $t=3$.\n\n$$h(3)=3\\cdot 3$$\n\n$$3\\cdot 3=9$$\n\n$$9\\neq 8$$\n\nOnce the actual value is in hand, the claimed value is visibly the wrong one.\n\nThe greatest height is $9$ metres, not $8$, so the statement is False."
+        "**E.** → False\n\nThe peak sits at the midpoint $t=3$. The height there is $9$, while the neighbouring tick $t=4$ reads $8$ — a near-miss for the peak, not the peak itself.\n\n$$h(3)=9$$\n\n$$h(4)=8$$\n\n$$9\\neq 8$$\n\nOnce the actual value is in hand, the claimed value is visibly the wrong one.\n\nThe greatest height is $9$ metres, not the $8$ metres seen at $t=4$, so the statement is False."
       ],
       "difficulty_level": "5/5",
       "sort_order": 113,
