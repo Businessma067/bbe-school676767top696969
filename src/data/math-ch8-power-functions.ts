@@ -10940,7 +10940,7 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
     `**B.** → True
 
-The overview already scored the named plan. That plan sending all thirty thousand loaves to line 2 scores
+The recovered score for the named plan is already in the overview. That plan sending all thirty thousand loaves to line 2 scores
 
 $$225$$
 
@@ -10985,7 +10985,7 @@ The computed figure disagrees with the claim.
 So the statement is False.`,
     `**E.** → True
 
-The overview already scored the six-and-twenty-four bread split. That named plan scores
+The recovered score for the six-and-twenty-four bread split is already in the overview. That named plan scores
 
 $$180$$
 
