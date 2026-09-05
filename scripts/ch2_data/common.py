@@ -2,9 +2,21 @@
 
 from __future__ import annotations
 
+import re
+
 from explain import assign_profiles, generate_body
 
 LETTERS = "ABCDE"
+
+
+def statements_are_independent(context: str) -> bool:
+    """True when there is no shared stem condition — only a domain prompt."""
+    ctx = (context or "").strip()
+    if re.match(r"^Evaluate each statement\.?\s*Mark it TRUE or FALSE\.?\s*$", ctx, re.I):
+        return True
+    if ctx.startswith("Let $") and "Which of the following" in ctx:
+        return True
+    return False
 
 
 def task(
@@ -20,7 +32,7 @@ def task(
 
     ``overview`` is kept only when the stem has a shared condition that every
     claim uses. For independent statements (generic ``Let $x$…`` / ``Evaluate
-    each statement`` stems), assemble clears ``solution_overview`` so all
+    each statement`` stems), ``solution_overview`` is left empty so all
     reasoning sits in the per-statement explanations.
     """
     if len(items) != 5:
@@ -52,14 +64,17 @@ def task(
                 )
             )
 
+    ctx = context.strip()
+    overview_out = "" if statements_are_independent(ctx) else overview.strip()
+
     return {
         "title": title.strip(),
         "subsection": subsection,
         "difficulty_level": difficulty,
-        "context": context.strip(),
+        "context": ctx,
         "statements": statements,
         "answer_key": keys,
         "tactical_explanations": explanations,
-        "solution_overview": overview.strip(),
+        "solution_overview": overview_out,
         "placeholder": False,
     }
