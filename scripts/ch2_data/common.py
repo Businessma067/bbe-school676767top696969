@@ -16,6 +16,13 @@ def task(
     items: list[tuple[str, bool] | tuple[str, bool, str]],
     overview: str,
 ) -> dict:
+    """Build one Chapter 2 task.
+
+    ``overview`` is kept only when the stem has a shared condition that every
+    claim uses. For independent statements (generic ``Let $x$…`` / ``Evaluate
+    each statement`` stems), assemble clears ``solution_overview`` so all
+    reasoning sits in the per-statement explanations.
+    """
     if len(items) != 5:
         raise ValueError(f"{title}: expected 5 items, got {len(items)}")
     statements: list[str] = []

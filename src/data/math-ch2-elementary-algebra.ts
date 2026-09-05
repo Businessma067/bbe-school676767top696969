@@ -8,6 +8,8 @@
  * Explanations follow MATH 13.18: letter header bound to each statement,
  * a named rule, display algebra of mixed length (short conceptual B, or
  * stepped A/D), then the verdict. Lengths vary inside a task.
+ * Independent claims (no shared stem condition) omit solution_overview;
+ * shared-setup tasks keep one overview, then per-statement bodies.
  */
 
 import type { MathTask } from "@/data/math-chapters";
