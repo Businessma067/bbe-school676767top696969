@@ -2,7 +2,7 @@
  * Math syllabus chapters for Demo / Lite / Full practice pages.
  * Chapter task banks are loaded on demand (dynamic import) so opening a page
  * does not parse every chapter's explanations into one giant JS chunk.
- * Chapters 1–9 and 11–13 are populated; chapter 10 remains coming soon.
+ * Chapters 1–13 are populated; task banks load on demand via dynamic import.
  */
 
 export type MathTask = {
@@ -60,6 +60,7 @@ export const DEMO_MATH_SUBSECTION_FREE: Partial<
   7: { "7": 10 },
   8: { "8": 10 },
   9: { "9": 10 },
+  10: { "10.1": 10, "10.2": 5, "10.3": 5 },
   11: { "11.1": 10, "11.2": 10, "11.3": 10, "11.4": 10, "11.5": 5 },
 };
 
@@ -200,6 +201,11 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
     { id: "9", title: "Polynomial functions" },
     { id: "9.5", title: "Mixed exam" },
   ],
+  10: [
+    { id: "10.1", title: "Exponential functions" },
+    { id: "10.2", title: "Logarithmic functions" },
+    { id: "10.3", title: "Mixed exam" },
+  ],
   11: [
     { id: "11.1", title: "Differentiation rules & mechanics" },
     { id: "11.2", title: "Economic interpretation of the derivative" },
@@ -222,7 +228,7 @@ const CHAPTER_SUBSECTIONS: Partial<Record<number, readonly MathSubsection[]>> = 
 };
 
 /** Chapters with a real task bank module (loaded on demand). */
-const LOADABLE_CHAPTERS = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13]);
+const LOADABLE_CHAPTERS = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
 
 type ChapterBankModule = {
   tasks: MathTask[];
@@ -268,6 +274,10 @@ async function importChapterBank(num: number): Promise<ChapterBankModule> {
     case 9: {
       const m = await import("@/data/math-ch9-polynomials");
       return { tasks: m.MATH_CH9_POLYNOMIALS };
+    }
+    case 10: {
+      const m = await import("@/data/math-ch10-exp-log");
+      return { tasks: m.MATH_CH10_EXP_LOG };
     }
     case 11: {
       const m = await import("@/data/math-ch11-differentiation");
