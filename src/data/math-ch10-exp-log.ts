@@ -1,7 +1,6 @@
 /**
  * Chapter 10 — Exponential and logarithmic functions.
  * 10.1 Exponential (44), 10.2 Logarithmic (49), 10.3 Mixed exam (30).
- * Tasks loaded from math-ch10-exp-log.json (generated bank).
  */
 import type { MathTask } from "@/data/math-chapters";
 import ch10 from "@/data/math-ch10-exp-log.json";

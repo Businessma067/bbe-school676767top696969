@@ -20,9 +20,7 @@ TAIL = "Evaluate each statement. Mark it TRUE or FALSE."
 
 def enrich_explanation(letter: str, truth: bool, body: str, overview: str, statement: str) -> str:
     """Ensure 13.18-ish rhythm: rule, formula displays, compare, verdict."""
-    verd = "True" if truth else "False"
     body = body.strip()
-    # drop old verdict; expl() will add
     lines = body.split("\n")
     while lines and "so the statement is" in lines[-1].lower():
         lines.pop()
@@ -30,20 +28,23 @@ def enrich_explanation(letter: str, truth: bool, body: str, overview: str, state
             lines.pop()
     body = "\n".join(lines).strip()
     n_disp = body.count("$$")
-    if n_disp >= 2 and len(body) > 120:
+    if n_disp >= 2 and len(body) > 160:
         return body
-    # Prefix a calm rule sentence tied to the claim
+
+    ov_blocks = re.findall(r"\$\$(.*?)\$\$", overview, flags=re.S)
     rule = (
-        f"The claim asserts: {statement} "
-        f"Recover the shared model from the overview, then test the claim with one substitution at a time."
+        "Start from the recovered model in the overview. "
+        "Name the governing relation, substitute the concrete numbers, then compare with the claim."
     )
-    if "$$" not in body:
-        body = rule + "\n\n" + body
-        # add a trivial display of the verdict comparison marker
-        body += f"\n\n$$\\text{{claim verdict target: {verd}}}$$"
-    elif n_disp < 2:
-        body = rule + "\n\n" + body
-    return body
+    parts = [rule]
+    if ov_blocks and n_disp < 2:
+        parts.append("Shared model:")
+        parts.append("$$\n" + ov_blocks[0].strip() + "\n$$")
+    parts.append(body)
+    if n_disp < 1 and len(ov_blocks) > 1:
+        parts.append("A second recovered identity:")
+        parts.append("$$\n" + ov_blocks[1].strip() + "\n$$")
+    return "\n\n".join(parts)
 
 
 def expl(letter: str, truth: bool, body: str) -> str:
@@ -224,15 +225,15 @@ def flip_to_target(raw: dict, target: int) -> dict:
 
 def allocate_true_counts(n_tasks: int) -> list[int]:
     """Roughly uniform over {1,2,3,4,5}."""
+    # Aim for floor or ceil so totals stay within ~24–25 per bucket globally
     base = n_tasks // 5
     rem = n_tasks % 5
-    counts = []
+    counts: list[int] = []
+    # Give remainder to higher true-counts first so 5 is not starved
+    extras_order = [5, 4, 3, 2, 1]
+    bonus = set(extras_order[:rem])
     for t in range(1, 6):
-        counts.extend([t] * base)
-    # distribute remainder across middle values
-    extras = [3, 2, 4, 1, 5]
-    for i in range(rem):
-        counts.append(extras[i])
+        counts.extend([t] * (base + (1 if t in bonus else 0)))
     assert len(counts) == n_tasks
     return counts
 

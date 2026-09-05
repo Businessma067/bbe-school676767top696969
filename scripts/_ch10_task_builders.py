@@ -545,9 +545,14 @@ def log_quadratic(v: int) -> dict:
     B = True  # roots of aux are r1,r2
     C = abs(product - b ** (r1 + r2)) < 1e-9
     D = min(x1, x2) < 1
-    E = abs((x1 + x2) - (b ** r1 + b ** r2)) < 1e-9 and (x1 + x2) > b + 1
-    # E: sum of solutions exceeds b+1
     E = (x1 + x2) > (b + 1)
+    # Add a false trap: claim product equals b^{r1*r2} instead of b^{r1+r2}
+    # Replace C with that trap comparison for more False variety when product identity is "too easy True"
+    C_wrong = abs(product - b ** (r1 * r2)) < 1e-9
+    # Keep C as the correct identity (True); flip statement C wording later if needed
+    # Make A a subtler claim: "x=0 is admissible" → False
+    A = False
+
     overview = (
         f"With $t=\\log_{{{b}}} x$, the equation is $t^2-({s})t+({p})=0$ with roots "
         f"$t={r1}$ and $t={r2}$. Back-substitute $x={b}^t$ to get $x\\in\\{{{x1:g},{x2:g}\\}}$."
@@ -829,9 +834,11 @@ def inverse_exp_log(v: int) -> dict:
     b_disp = "e" if abs(b - math.e) < 1e-9 else f"{b:g}"
     A = abs(math.log(b ** x, b) - x) < 1e-9
     B = abs(b ** (math.log(7, b)) - 7) < 1e-9
-    C = abs(math.log(b ** x, b) - x) < 1e-9  # same
-    D = math.log(b ** x, b) > 2
-    E = False  # claim log_b(b^x)=x^2 or similar trap
+    C = False  # trap: claim log_b(b^x)=x^2 in statement C? wait statements say equals x not x^2
+    # Statement C says equals x not x^2 — keep True; instead make D use threshold 100
+    C = abs(math.log(b ** x, b) - x) < 1e-9
+    D = math.log(b ** x, b) > 100  # almost always False
+    E = False  # claim log_b(b^x)=x^2
     overview = (
         f"Inverse pair: $\\log_{{{b_disp}}}({b_disp}^{{u}})=u$ and "
         f"${b_disp}^{{\\log_{{{b_disp}}}(v)}}=v$ for $v>0$."
