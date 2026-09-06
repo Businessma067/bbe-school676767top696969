@@ -393,15 +393,11 @@ $$8^{\\frac{2}{3}}=\\bigl(8^{\\frac{1}{3}}\\bigr)^{2}$$
 
 $$8^{\\frac{2}{3}}$$
 
-$$8^{\\frac{2}{3}}$$
-
-$$=2^{2}$$
+$$8^{\\frac{2}{3}}=2^{2}$$
 
 $$8^{\\frac{2}{3}}$$
 
-$$8^{\\frac{2}{3}}$$
-
-$$=4$$
+$$8^{\\frac{2}{3}}=4$$
 
 $$V(8)=3\\cdot 4$$
 
@@ -477,9 +473,7 @@ Read the exponent from the overview before comparing growth rates.
 
 A staffing scale factor is fixed by the exponent alone, because $A$ cancels:
 
-$$
-\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}
-$$
+$$\\frac{Q(4s)}{Q(s)}=\\frac{A(4s)^{\\frac{1}{2}}}{A s^{\\frac{1}{2}}}$$
 
 $$\\frac{Q(4s)}{Q(s)}=4^{\\frac{1}{2}}$$
 
@@ -496,9 +490,7 @@ Start from the calibrated closed form in the overview.
 
 A doubled coefficient appears once above and once below in the ratio, so it cancels:
 
-$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}$$
-
-$$=4^{\\frac{1}{2}}$$
+$$\\frac{(2A)(4s)^{\\frac{1}{2}}}{(2A)s^{\\frac{1}{2}}}=4^{\\frac{1}{2}}$$
 
 $$=2$$
 
@@ -561,6 +553,8 @@ $$F(2)=2\\cdot 2^{2}$$
 
 $$F(2)=2\\cdot 4$$
 
+$$F(2)=2\\cdot 4$$
+
 $$F(2)=8$$
 
 $$G(2)=2^{3}$$
@@ -589,9 +583,9 @@ Read the exponent from the overview before comparing growth rates.
 
 On $0<n<2$ the overview's factor $n-2$ is negative, while $n^{2}$ is still positive, so $G-F<0$ and therefore $F(n)>G(n)$. A single interior check:
 
-$$F(1)=2, \\qquad G(1)$$
+$$F(1)=2, \$$
 
-$$F(1)=1$$
+$$G(1)=1$$
 
 The quadratic index leads throughout $0<n<2$.
 
@@ -618,6 +612,8 @@ Keep the stated domain in force while you evaluate the model.
 Substitute $n=3$ into each index:
 
 $$F(3)=2\\cdot 3^{2}$$
+
+$$F(3)=2\\cdot 9$$
 
 $$F(3)=2\\cdot 9$$
 
@@ -697,9 +693,7 @@ Read the exponent from the overview before comparing growth rates.
 
 The exponent $\\frac{1}{3}$ is an odd root, so a negative reading is allowed. Cubing gives the inverse:
 
-$$(-2)^{3}$$
-
-$$=-8$$
+$$(-2)^{3}=-8$$
 
 $$M(-8)=(-8)^{\\frac{1}{3}}$$
 
@@ -892,6 +886,8 @@ $$y(6)=5\\cdot 6^{2}$$
 
 $$y(6)=5\\cdot 36$$
 
+$$y(6)=5\\cdot 36$$
+
 $$y(6)=180$$
 
 The panel needs $180$ litres.
@@ -906,6 +902,8 @@ A fifty percent increase in radius is the width multiplier $k=1.5$. For a square
 $$\\frac{y(1.5r)}{y(r)}=\\frac{A(1.5r)^{2}}{A r^{2}}$$
 
 $$\\frac{y(1.5r)}{y(r)}=1.5^{2}$$
+
+$$\\frac{y(1.5r)}{y(r)}=1.25$$
 
 $$\\frac{y(1.5r)}{y(r)}=2.25$$
 
@@ -926,6 +924,8 @@ At a radius of one metre the square is $1$, so the requirement equals the coeffi
 
 $$y(1)=5\\cdot 1^{2}$$
 
+$$y(1)=5\\cdot 1$$
+
 $$y(1)=5$$
 
 A one-metre panel needs $5$ litres.
@@ -940,6 +940,8 @@ Halving the radius is the width multiplier
 $$k=0.5,$$ and the exponent $2$ acts on that whole factor:
 
 $$\\frac{y(0.5r)}{y(r)}=0.5^{2}$$
+
+$$\\frac{y(0.5r)}{y(r)}=0.25$$
 
 $$\\frac{y(0.5r)}{y(r)}=0.25$$
 
@@ -987,6 +989,8 @@ $$E(10)=0.5\\cdot 10^{2}$$
 
 $$E(10)=0.5\\cdot 100$$
 
+$$E(10)=0.5\\cdot 100$$
+
 $$E(10)=50$$
 
 The index at $v=10$ is $50$.
@@ -1000,9 +1004,9 @@ Form the ratio so the unknown positive coefficient cancels.
 
 Raising the speed from $10$ to $20$ is the multiplier $k=2$. The coefficient cancels in the ratio:
 
-$$
-\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}
-$$
+$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 20^{2}}{0.5\\cdot 10^{2}}$$
+
+$$\\frac{E(20)}{E(10)}=\\frac{0.5\\cdot 400}{0.5\\cdot 100}$$
 
 $$\\frac{E(20)}{E(10)}=2^{2}$$
 
@@ -1020,6 +1024,8 @@ Read the exponent from the overview before comparing growth rates.
 At the higher standard speed, square first:
 
 $$E(20)=0.5\\cdot 20^{2}$$
+
+$$E(20)=0.5\\cdot 400$$
 
 $$E(20)=0.5\\cdot 400$$
 
@@ -1050,6 +1056,8 @@ A ten percent overspeed is the speed multiplier
 $$k=1.1,$$ and the exponent acts on the whole multiplier:
 
 $$\\frac{E(1.1v)}{E(v)}=1.1^{2}$$
+
+$$\\frac{E(1.1v)}{E(v)}=1.1$$
 
 $$\\frac{E(1.1v)}{E(v)}=1.21$$
 
@@ -1356,9 +1364,7 @@ Start from the calibrated closed form in the overview.
 
 The joint flow is the sum of two powers with distinct exponents:
 
-$$
-Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}
-$$
+$$Q_{L}(d)+Q_{O}(d)=4d^{\\frac{1}{2}}+\\frac{1}{2}d^{\\frac{3}{2}}$$
 
 A sum of two powers is a power only when the exponents match. These exponents are $\\frac{1}{2}$ and $\\frac{3}{2}$.
 
@@ -1664,6 +1670,8 @@ $$L(16)=\\frac{1}{2}\\cdot 16^{2}$$
 
 $$L(16)=\\frac{1}{2}\\cdot 256$$
 
+$$L(16)=\\frac{1}{2}\\cdot 256$$
+
 $$L(16)=128$$
 
 One hundred and twenty-eight sits below $200$, so the alarm has not yet tripped.
@@ -1678,6 +1686,8 @@ Start from the calibrated closed form recovered in the overview, then substitute
 The overview recovered $L(x)=\\frac{1}{2}x^{2}$. At $10$ jobs:
 
 $$L(10)=\\frac{1}{2}\\cdot 10^{2}$$
+
+$$L(10)=\\frac{1}{2}\\cdot 100$$
 
 $$L(10)=\\frac{1}{2}\\cdot 100$$
 
@@ -1878,9 +1888,9 @@ So the statement is True.`,
 
 The overview recovered $C(n)=n^{2}$ and $D(n)=16n$. At $25$ documents:
 
-$$C(25)=625, \\qquad D(25)$$
+$$C(25)=625, \$$
 
-$$C(25)=400$$
+$$D(25)=400$$
 
 $$625-400$$
 
@@ -1902,6 +1912,8 @@ $$C(n)=n^{2}$$
 At nine documents:
 
 $$C(9)=9^{2}$$
+
+$$C(9)=81$$
 
 $$C(9)=81$$
 
@@ -2205,9 +2217,9 @@ At the recorded pair,
 
 $$q(10)=\\frac{10000}{100}$$
 
-$$q(10)=100, \\qquad q(5)$$
+$$q(10)=100, \$$
 
-$$q(10)=400$$
+$$q(5)=400$$
 
 and $100$ is a quarter of $400$, not a half. The claim is that demand halves.
 
@@ -2306,9 +2318,9 @@ $$\\frac{C(n)}{n}=\\frac{200}{n}+30 n^{-\\frac{1}{2}}$$
 
 Both leftover exponents are negative, so the average falls as the book grows. At the two invoices:
 
-$$\\frac{C(100)}{100}=5, \\qquad \\frac{C(400)}{400}$$
+$$\\frac{C(100)}{100}=5, \$$
 
-$$\\frac{C(100)}{100}=2$$
+$$\\frac{C(400)}{400}=2$$
 
 and $2<5$.
 
@@ -2441,11 +2453,11 @@ $$e(a)=120 a^{-\\frac{1}{2}}$$
 
 The exponent is negative, so intensity falls as the fleet grows. For a concrete pair:
 
-$$e(16)=30, \\qquad e(64)$$
+$$e(16)=30, \$$
 
-$$e(16)=\\frac{120}{8}$$
+$$e(64)=\\frac{120}{8}$$
 
-$$e(16)=15$$
+$$e(64)=15$$
 
 and $15<30$.
 
