@@ -8157,51 +8157,27 @@ Clue (3) is a plain assertion that Dan is guilty. Combined with uniqueness, Ann,
     tactical_explanations: [
       `**A.** → True
 
-Use contradiction elimination. Suppose X were a liar, so X’s claim “Y lies” would be false; then Y would be a truth-teller:
-
-$$\\neg x\\quad\\Longrightarrow\\quad y$$
-
-A truthful Y would make “X and I are both liars” true, forcing $\\neg x\\land\\neg y$. That gives both $y$ and $\\neg y$, an impossibility. Hence $\\neg x$ is ruled out and $x$ is true.
+If Y were a truth-teller, then “X and I are both liars” would be true, forcing Y to be a liar — contradiction. So Y is a liar. Then X’s “Y always lies” is true, so X is a truth-teller.
 
 So the statement is True.`,
       `**B.** → False
 
-From the contradiction in the X-liar branch, X must be a truth-teller. A truth-teller’s sentence is true, and X says that Y lies:
-
-$$x = \\mathrm{T} \\quad\\Longrightarrow\\quad \\neg y$$
-
-$$= \\mathrm{T}$$
-
-Therefore $y=\\mathrm{F}$: Y is a liar, not a truth-teller.
+From letter A, Y is a liar.
 
 So the statement is False.`,
       `**C.** → True
 
-The surviving types are $x=\\mathrm{T}$ and $y=\\mathrm{F}$. Evaluate Y’s sentence “X and I are both liars,” whose formula is $\\neg x\\land\\neg y$:
-
-$$\\neg x\\land\\neg y = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-That false sentence is exactly what a liar may say. Y’s statement is false.
+Y’s sentence claims both are liars, but X is a truth-teller, so the sentence is false.
 
 So the statement is True.`,
       `**D.** → False
 
-There are only two branches for X. The liar branch forces $y$ true from X’s false accusation, then forces $y$ false from truthful Y’s conjunction:
-
-$$\\neg x\\quad\\Longrightarrow\\quad y\\land\\neg y$$
-
-So that branch is inconsistent. The remaining branch gives $x=\\mathrm{T}$ and, from X’s truthful accusation, $y=\\mathrm{F}$. Exactly one assignment survives, not two.
+The unique consistent assignment is X truth-teller, Y liar.
 
 So the statement is False.`,
       `**E.** → True
 
-Assume X is a liar. X’s sentence “Y lies” must then be false, so Y is truthful. Truthful Y’s sentence “X and I are both liars” must be true, so Y must also be a liar:
-
-$$\\neg x \\quad\\Longrightarrow\\quad y \\quad\\Longrightarrow\\quad \\neg x\\land\\neg y$$
-
-In particular this gives $y\\land\\neg y$. The X-liar hypothesis forces a contradiction.
+If X were a liar, then “Y always lies” is false, so Y is a truth-teller. Then Y’s sentence is true, forcing both liars — contradiction.
 
 So the statement is True.`,
     ],
@@ -8333,73 +8309,27 @@ In Statement 1 one student must clear every exam. In Statement 2 a different stu
     tactical_explanations: [
       `**A.** → True
 
-Approval is the inclusive or of the two gates. The given votes produce $Y=2$, so gate 1 gives
-
-$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
-
-R1 is one of the two yes-votes, so both parts of gate 2 are true:
-
-$$\\mathrm{T}\\land\\mathrm{T}=\\mathrm{T}$$
-
-At least one gate is true. The candidate is approved.
+Yes votes: R1, R2 — exactly two, and R1 is among them. The tie-break clause approves.
 
 So the statement is True.`,
       `**B.** → False
 
-Approval requires at least one gate to be true. With only R2 and R3 voting yes, gate 1 gives
-
-$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
-
-R1 is not among the two yes-votes, so the second part of gate 2 is false:
-
-$$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
-
-Both gates are false. The candidate is not approved.
+Yes votes R2, R3 — exactly two, but R1 is not among them. Neither clause fires. Not approved.
 
 So the statement is False.`,
       `**C.** → True
 
-Gate 1 depends only on the number of yes-votes. With any three reviewers voting yes,
-
-$$Y=3$$
-
-and
-
-$$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
-
-Gate 1 opens without consulting the reviewers' names. The candidate is approved.
-
-That matches the claim.
+Any three yes votes meet the “at least three” clause.
 
 So the statement is True.`,
       `**D.** → False
 
-A necessary condition is disproved by one approved case in which it is absent. Let R2, R3, and R4 vote yes while R1 votes no:
-
-$$Y=3$$
-
-Gate 1 still opens:
-
-$$3\\ge3\\quad\\Longrightarrow\\quad\\mathrm{T}$$
-
-This is an approval without R1's yes-vote. R1 is not always necessary.
+Three yes votes among R2,R3,R4 approve without R1. So R1’s yes is not always necessary.
 
 So the statement is False.`,
       `**E.** → True
 
-An existential claim needs one two-vote scenario in which both approval gates fail. Let only R2 and R3 vote yes:
-
-$$Y=2$$
-
-Then gate 1 is false:
-
-$$2\\ge3\\quad\\Longrightarrow\\quad\\mathrm{F}$$
-
-R1 votes no, so gate 2 is also false:
-
-$$\\mathrm{T}\\land\\mathrm{F}=\\mathrm{F}$$
-
-This witness has exactly two yes-votes and no approval.
+The R2+R3 scenario has exactly two yes votes and no approval.
 
 So the statement is True.`,
     ],
@@ -8430,69 +8360,27 @@ The given votes are R1 yes, R2 yes, R3 no, R4 no.`,
     tactical_explanations: [
       `**A.** → True
 
-The commercial-use exception opens only when approval and annual servicing both hold. Company Z has written approval but no servicing, so
-
-$$W\\land S = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Because $C$ is true and the exception is false, the commercial-use clause voids Z's warranty.
+Commercial use with approval but no annual service fails the exception’s servicing requirement. Warranty is void.
 
 So the statement is True.`,
       `**B.** → False
 
-Sufficiency of written approval would require $W$ alone to make the exception true. Company Z supplies a counterexample:
-
-$$W = \\mathrm{T},$$
-
-$$S$$
-
-$$= \\mathrm{F}$$
-
-Therefore
-
-$$W\\land S = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The exception stays closed despite approval. Approval alone is not sufficient.
+Approval alone is not enough — annual servicing is also required.
 
 So the statement is False.`,
       `**C.** → True
 
-The exception is a conjunction, so each condition is necessary. Approval without servicing gives
-
-$$W\\land S = \\mathrm{T}\\land\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-Servicing without approval gives
-
-$$W\\land S = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-Satisfying only one condition never opens the exception.
+The exception needs both approval and annual servicing.
 
 So the statement is True.`,
       `**D.** → False
 
-The exception requires both written approval and servicing. If approval is absent but annual servicing occurs, then
-
-$$W\\land S = \\mathrm{F}\\land\\mathrm{T}$$
-
-$$= \\mathrm{F}$$
-
-The exception remains closed, and commercial use still voids the warranty.
+Without approval, commercial use voids the warranty; annual service does not replace approval.
 
 So the statement is False.`,
       `**E.** → False
 
-This is a scope question. Annual servicing is required inside the exception that rescues commercial use; it is not a global warranty condition. If Company Z never used the product commercially, then
-
-$$C=\\mathrm{F}$$
-
-and the commercial-use voiding branch is inactive. Because that branch is never entered, neither its written-approval test nor its annual-servicing test is consulted. The quoted clause does not impose servicing on noncommercial use.
+The servicing clause appears only inside the commercial-use exception. Non-commercial use does not trigger it.
 
 So the statement is False.`,
     ],
@@ -8521,43 +8409,27 @@ Company Z has $C$ true, $W$ true, and $S$ false.`,
     tactical_explanations: [
       `**A.** → True
 
-The target is that there is no smallest positive real, so the legal opening is the opposite: suppose such an $x > 0$ exists. Then $\\frac{x}{2}$ is still positive and strictly smaller than $x$, so $x$ was not smallest. The writeup opens with the negation of the target and ends in an impossibility.
+Assuming a least positive $x$ and forming $x/2$ yields a smaller positive — a correct contradiction setup.
 
 So the statement is True.`,
       `**B.** → False
 
-A contradiction proof that $\\sqrt{3}$ is irrational must assume the negation, that $\\sqrt{3}$ is rational. Opening with "assume $\\sqrt{3}$ is irrational" assumes the conclusion itself, so there is nothing left to contradict. That is not a valid proof by contradiction.
+Assuming the claim (“√3 irrational”) begs the question; contradiction proofs assume the opposite.
 
 So the statement is False.`,
       `**C.** → False
 
-The original is $(\\forall f\\, D(f)) \\land (\\forall t\\, O(t))$. Negating an and yields an or, and negating "all" yields "some not":
-
-$$\\exists f\\, \\neg D(f) \\lor \\exists t\\, \\neg O(t)$$
-
-The offered sentence keeps the conjunction and strengthens both halves. One on-time flight already falsifies the original while leaving that offered sentence false.
+Negation of $A\\wedge B$ is $\\neg A\\vee\\neg B$, not $\\neg A\\wedge\\neg B$.
 
 So the statement is False.`,
       `**D.** → False
 
-"Some employee always arrives late" is $\\exists x\\, \\forall d\\, L(x,d)$. Flip both quantifiers and negate inside:
-
-$$\\forall x\\, \\exists d\\, \\neg L(x,d)$$
-
-Every employee has at least one on-time day. "All employees are never late" is $\\forall x\\, \\forall d\\, \\neg L(x,d)$, a stronger ban.
+Negation of “some employee is always late” is “every employee is on time on some day,” not a swapped quantifier mess.
 
 So the statement is False.`,
       `**E.** → True
 
-The logical idea is the difference between an existential witness and universal generalization. For an existential, one verified value $a$ is enough:
-
-$$P(a)\\quad\\Longrightarrow\\quad\\exists x\\,P(x)$$
-
-For a universal, checking selected values is insufficient; one must begin with an arbitrary $a$ and prove $P(a)$ without using any special feature of that choice:
-
-$$a\\text{ arbitrary},\\ P(a) \\quad\\Longrightarrow\\quad \\forall x\\,P(x)$$
-
-The two proof standards in the claim are therefore correct.
+One witness proves $\\exists$; a universal needs a general argument.
 
 So the statement is True.`,
     ],
@@ -8584,71 +8456,27 @@ An existential $\\exists x\\, P(x)$ is settled by one witness. A universal $\\fo
     tactical_explanations: [
       `**A.** → True
 
-Existential instantiation lets us name the witness supplied by Premise 2. For some person $a$,
-
-$$E(a)\\land G(a)$$
-
-Hence $E(a)$ and $G(a)$. Premise 1 applies to that same person:
-
-$$E(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad H(a)$$
-
-Combining the two established properties gives
-
-$$G(a)\\land H(a)$$
-
-Thus the conclusion has a witness whenever the premises are true.
+From “all economists study behavior” and “some economists do game theory,” those game theorists study behavior. Valid.
 
 So the statement is True.`,
       `**B.** → False
 
-Invalidity is shown by one model with true premises and a false conclusion. Take a world with one person $a$ and set
-
-$$E(a) = \\mathrm{T},$$
-
-$$H(a)$$
-
-$$= \\mathrm{T},$$
-
-$$G(a)$$
-
-$$= \\mathrm{F}$$
-
-Then every economist studies human behavior, and no economist specializes in game theory. But
-
-$$\\exists x\\,(G(x)\\land H(x))$$
-
-is false because the only person has $G(a)$ false. The modified premises can be true while the conclusion is false.
+Changing Premise 2 to “no economists do game theory” removes the existential witness; the conclusion no longer follows.
 
 So the statement is False.`,
       `**C.** → True
 
-Validity is a model-by-model conditional: there may be no assignment on which all premises are true and the conclusion is false. Symbolically, validity means
-
-$$(P_1\\land P_2)\\Rightarrow C$$
-
-holds in every model. This test does not ask whether $P_1$ or $P_2$ describes the actual world. Requiring both valid form and actually true premises is soundness, not validity. The claim states the validity standard correctly.
+Validity is about form, not whether premises are true in the real world.
 
 So the statement is True.`,
       `**D.** → True
 
-The witness derivation remains valid as a piece of logic: whenever both premises hold, Premise 2 supplies an economist-game-theorist $a$, and Premise 1 gives $H(a)$. Real-world falsity of Premise 1 changes only the soundness test:
-
-$$\\mathrm{Sound} = \\mathrm{Valid} \\land \\mathrm{ActuallyTruePremises}$$
-
-If Premise 1 is actually false, the second conjunct fails while the implication from premises to conclusion remains valid. The argument could therefore be valid but unsound.
+Validity can hold with false premises; soundness would fail.
 
 So the statement is True.`,
       `**E.** → False
 
-Affirming the consequent has the invalid form
-
-$$P\\Rightarrow Q,\\quad Q\\quad\\therefore\\quad P$$
-
-The given argument instead instantiates one economist-game-theorist and applies the universal premise to that same witness:
-
-$$E(a)\\land G(a),\\quad E(a)\\Rightarrow H(a)\\quad\\Longrightarrow\\quad G(a)\\land H(a)$$
-
-No consequent is used to recover an antecedent. This is not affirming the consequent.
+This is a valid categorical syllogism, not affirming the consequent.
 
 So the statement is False.`,
     ],
@@ -8681,79 +8509,27 @@ Validity asks whether the conclusion must be true whenever the premises are true
     tactical_explanations: [
       `**A.** → True
 
-An implication is false exactly when its antecedent is true and its conclusion is false. In the reported game,
-
-$$P = \\mathrm{T},$$
-
-$$Q$$
-
-$$= \\mathrm{F}$$
-
-Therefore
-
-$$P\\Rightarrow Q = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-One game with this evaluation disproves the fan's universal rule.
+$Score>30$ and loss falsifies $Score>30\\Rightarrow Win$.
 
 So the statement is True.`,
       `**B.** → True
 
-An existential claim needs one explicit witness. Let $g_0$ be the reported game, and write $P(g)$ for “some player scores over $30$” and $Q(g)$ for “the team wins.” Then
-
-$$P(g_0) = \\mathrm{T}\\quad(35>30),$$
-
-$$Q(g_0)$$
-
-$$= \\mathrm{F}\\quad(90<95)$$
-
-Hence $P(g_0)\\land\\neg Q(g_0)$ is true, so $g_0$ witnesses $\\exists g\\,(P(g)\\land\\neg Q(g))$.
+The same game witnesses $\\exists$ (score$>30$ and not win).
 
 So the statement is True.`,
       `**C.** → True
 
-The contrapositive has the same truth value as the original implication. In the reported game, the team did not win but Player X scored over $30$, so
-
-$$\\neg Q = \\mathrm{T},$$
-
-$$\\neg P$$
-
-$$= \\mathrm{F}$$
-
-Thus
-
-$$\\neg Q\\Rightarrow\\neg P = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-The same game refutes both equivalent forms.
+A false implication has a false contrappositive as well.
 
 So the statement is True.`,
       `**D.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Converse may still be true or false independently; falsity of the original does not decide it.
 
 So the statement is False.`,
       `**E.** → True
 
-The inverse $\\neg P \\Rightarrow \\neg Q$ pairs with the converse, not with the original. It is tested by games with no $30$-point scorer. The reported game has a $35$-point scorer, so $P$ is true and the inverse is not even evaluated. Its truth value is a separate question from the fan's false rule.
+Inverse $\\Leftrightarrow$ converse, so they share a truth value.
 
 So the statement is True.`,
     ],
@@ -8782,47 +8558,27 @@ In the reported game Player X scored $35$ and the team lost $90$-$95$.`,
     tactical_explanations: [
       `**A.** → True
 
-The professor applied a curve, so the live cutoff is $s \\ge 60$. Student W scored $65$, and
-
-$$65 \\ge 60$$
-
-W receives a B or higher.
-
-That matches the claim.
+Curve applied, so threshold $60$. Score $65\\ge 60$, so W gets B or higher.
 
 So the statement is True.`,
       `**B.** → False
 
-Without a curve the live cutoff is $s \\ge 70$. Student W scored $65$, and
-
-$$65 < 70$$
-
-so the baseline biconditional denies the B. W's score sits in the band that the curve alone unlocks.
-
-That conflicts with the claim.
+Without the curve, threshold $70$. Score $65<70$, so W would not get B or higher.
 
 So the statement is False.`,
       `**C.** → True
 
-The baseline uses $70$. The curve replaces it with $60$. Compare:
-
-$$60 < 70$$
-
-Anyone with $s \\ge 70$ still has $s \\ge 60$, so a B already earned under the baseline is never taken away. The threshold moves down, not up.
-
-That matches the claim.
+The curve replaces $70$ with $60$, a strictly lower threshold.
 
 So the statement is True.`,
       `**D.** → True
 
-A score of $62$ satisfies $60 \\le 62 < 70$. Under a curve the cutoff is $60$, so $62 \\ge 60$ earns the B. Without a curve the cutoff is $70$, so $62 < 70$ denies it. The B at $62$ occurs only if the curve is applied.
-
-Record the verdict against the live claim after the calculation above is complete.
+Score $62$ is below $70$ but at least $60$, so it needs the curve.
 
 So the statement is True.`,
       `**E.** → False
 
-The baseline biconditional is a B iff $s \\ge 70$, and the unless clause replaces the cutoff by $60$ when a curve is applied. This exam used a curve, and W scored $65$, which is below $70$ and still a B. Scoring at least $70$ is not necessary in all circumstances.
+Under a curve, $70$ is no longer necessary — $60$ suffices. The iff is not absolute under all circumstances.
 
 So the statement is False.`,
     ],
@@ -8952,63 +8708,27 @@ The negation of "coprime" is that some prime divides both. Two even numbers alwa
     tactical_explanations: [
       `**A.** → True
 
-Apply the policy by cases on cancellation timing. K has $d=2$, so the early-cancellation test fails:
-
-$$d=2<3$$
-
-Therefore K enters the late branch, whose first consequence is
-
-$$d<3\\quad\\Longrightarrow\\quad \\text{renewal and charge}$$
-
-The $15\\%$ usage affects only whether a refund follows; it does not undo renewal. K’s subscription renews.
+Cancel at $2$ days $<3$, so the subscription still renews.
 
 So the statement is True.`,
       `**B.** → False
 
-K cancelled $2$ days out, so the late branch applies. A partial refund is issued if and only if $u < 10\\%$. K used $15\\%$, and
-
-$$15 < 10$$
-
-fails. The biconditional withholds the refund.
-
-That conflicts with the claim.
+Refund requires usage $<10\\%$. Usage $15\\%$ fails, so no refund.
 
 So the statement is False.`,
       `**C.** → True
 
-K still cancelled $2$ days out, so the late branch still applies. Change only the usage to $5\\%$. Then
-
-$$5 < 10$$
-
-holds, so the refund side of the biconditional opens.
-
-That matches the claim.
+With usage $5\\%<10\\%$ and late cancel, the refund biconditional pays.
 
 So the statement is True.`,
       `**D.** → True
 
-This counterfactual changes the branch selector to $d=4$. Since
-
-$$4\\ge3,$$
-
-the early-cancellation rule applies directly:
-
-$$d\\ge3 \\quad\\Longrightarrow\\quad \\text{no renewal and no charge}$$
-
-The usage test $u<10\\%$ belongs only to the late branch $d<3$, so $u=15\\%$ is not consulted here. The stated counterfactual outcome follows.
+Cancel at $4$ days $\\ge 3$: no renewal and no charge; usage is irrelevant.
 
 So the statement is True.`,
       `**E.** → False
 
-Refute “regardless of timing” with one branch counterexample. Let a subscriber cancel $4$ days before renewal and use $15\\%$ of the service. Then
-
-$$d=4\\ge3$$
-
-so the early branch settles the case as no renewal and no charge. The refund biconditional
-
-$$\\text{refund}\\Leftrightarrow u<10\\%$$
-
-is nested only under $d<3$ and is never evaluated for this subscriber. The usage condition is not timing-independent.
+The refund clause applies only to the late-cancel branch, not to early cancels.
 
 So the statement is False.`,
     ],
@@ -9039,61 +8759,27 @@ Subscriber K cancelled $2$ days before renewal and used $15\\%$.`,
     tactical_explanations: [
       `**A.** → True
 
-Treat the guideline as universal over patients. Negating the implication produces an existential counterexample:
-
-$$\\neg\\forall x\\,(P(x)\\Rightarrow Q(x)) \\equiv \\exists x\\,(P(x)\\land\\neg Q(x))$$
-
-For example, a patient $a$ with temperature $39^{\\circ}\\mathrm{C}$ and no antibiotic prescription would satisfy
-
-$$39>38,$$
-
-$$P(a) = \\mathrm{T},$$
-
-$$Q(a)$$
-
-$$= \\mathrm{F}$$
-
-Such a patient would witness exactly the quoted negation and violate the guideline.
+Negation of $F\\Rightarrow A$ is $F\\wedge\\neg A$.
 
 So the statement is True.`,
       `**B.** → False
 
-A counterexample needs $P$ true and $Q$ false. Compare $38.0$ with the recovered threshold:
-
-$$38.0 > 38$$
-
-is false, so $P$ is false. When $P$ is false the implication is idle and makes no demand about antibiotics. A missing prescription at $38.0$ is compatible with the guideline.
+Exactly $38.0$ is not above $38$, so the antecedent fails; not a counterexample.
 
 So the statement is False.`,
       `**C.** → True
 
-The inverse is $\\neg P \\Rightarrow \\neg Q$. A patient at $37.5^{\\circ}\\mathrm{C}$ with a bacterial infection who still receives antibiotics has $\\neg P$ true and $\\neg Q$ false. That is the unique failure row of the inverse. One such file shows the inverse can be false in practice.
+The inverse can fail independently of the original.
 
 So the statement is True.`,
       `**D.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+The converse is not guaranteed by the original.
 
 So the statement is False.`,
       `**E.** → True
 
-The target is that not every patient prescribed antibiotics has a fever above $38^{\\circ}\\mathrm{C}$. A proof by contradiction of that denial opens by assuming the opposite: every such patient does have a fever above $38^{\\circ}\\mathrm{C}$. A $37.5^{\\circ}\\mathrm{C}$ patient who still receives antibiotics has $Q$ true and $P$ false, so that assumption cannot stand. The opening described is the legal first line.
+Contradiction proof of “not every antibiotic patient has fever $>38$” assumes every such patient does.
 
 So the statement is True.`,
     ],
@@ -9122,87 +8808,27 @@ An implication fails only on $P \\land \\neg Q$. The inverse is $\\neg P \\Right
     tactical_explanations: [
       `**A.** → True
 
-Invalidity of a universal implication is shown by one input with true antecedent and false consequent. For the given password $w=$ “aaaaaaaaaaaa,”
-
-$$|w| = 12 \\quad\\Longrightarrow\\quad P(w)$$
-
-$$= \\mathrm{T}$$
-
-but the system rejects it for low complexity, so $Q(w)=\\mathrm{F}$. Therefore
-
-$$P(w)\\Rightarrow Q(w) = \\mathrm{T}\\Rightarrow\\mathrm{F}$$
-
-$$= \\mathrm{F}$$
-
-This concrete password is a counterexample to the absolute policy.
+Length $12$ yet not strong falsifies “length$\\ge 12\\Rightarrow$ strong.”
 
 So the statement is True.`,
       `**B.** → True
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Converse is a separate claim.
 
 So the statement is True.`,
       `**C.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+An $8$-character weak password does not touch the policy’s antecedent.
 
 So the statement is False.`,
       `**D.** → False
 
-One truth assignment separates an implication from its converse.
-
-$$(p,q)=(F,T)$$
-
-$$p\\rightarrow q$$
-
-$$= F\\rightarrow T$$
-
-$$= T$$
-
-$$q\\rightarrow p$$
-
-$$= T\\rightarrow F$$
-
-$$= F$$
-
-The two implications disagree on this assignment.
+Inverse $\\Leftrightarrow$ converse, not the original.
 
 So the statement is False.`,
       `**E.** → False
 
-"If a password is not strong, it is under $12$ characters" is $\\neg Q \\Rightarrow \\neg P$, the contrapositive of the policy. A contrapositive always shares the original's truth value. The policy is false, witnessed by "aaaaaaaaaaaa": length $12$ so $P$ is true, not classified as strong so $Q$ is false. The same password shows the contrapositive false: not strong, yet length $12$. No separate check is needed.
+Contrapositive of a false implication is also false; it is determined.
 
 So the statement is False.`,
     ],
