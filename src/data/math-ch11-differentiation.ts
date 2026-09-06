@@ -40,7 +40,11 @@ $$
 $$
 
 $$
-\\dfrac{2ah+h^{2}-4h}{h} = 2a+h-4
+\\dfrac{2ah+h^{2}-4h}{h}
+$$
+
+$$
+= 2a+h-4
 $$
 
 A common trap is dropping the $-4h$ from the linear term; keeping every contribution yields exactly the claimed simplification.
@@ -73,6 +77,18 @@ A tangent line needs one point on the curve and the slope there. First evaluate 
 
 $$
 P(3) = 9-12+7
+$$
+
+$$
+9 - 12 = -3
+$$
+
+$$
+-3 + 7 = 4
+$$
+
+$$
+P(3) = 4
 $$
 
 $$
@@ -141,6 +157,14 @@ A stationary point solves $P'(x)=0$:
 
 $$
 2x-4 = 0
+$$
+
+$$
+2x = 4
+$$
+
+$$
+x = 2
 $$
 
 $$
@@ -220,6 +244,14 @@ $$
 
 $$
 C'(100) = 12+6
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(100) = 18
 $$
 
 $$
@@ -473,6 +505,14 @@ $$
 
 $$
 R'(10) = 80-40
+$$
+
+$$
+80 - 40 = 40
+$$
+
+$$
+R'(10) = 40
 $$
 
 $$
@@ -1041,6 +1081,26 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 Revenue is the product $R(n)=(20-3n)\\sqrt{2n+1}$. Apply the product rule, then combine over the common denominator $\\sqrt{2n+1}$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+R(n) = (20-3n) \\cdot \\sqrt{2n+1}
+$$
+
+$$
+u(n) = (20-3n)
+$$
+
+$$
+v(n) = \\sqrt{2n+1}
+$$
+
+$$
+R'(n) = u'(n)\\,v(n) + u(n)\\,v'(n)
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 R'(n) = \\dfrac{-3(2n+1)+(20-3n)}{\\sqrt{2n+1}}
 $$
@@ -1142,6 +1202,32 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 Maintenance time per effective unit is the quotient $T(n)=\\dfrac{2n^{2}+8n}{n+1}$. Apply the quotient rule with numerator $u=2n^{2}+8n$ and denominator $v=n+1$:
+
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+T(n) = \\dfrac{2n^{2}+8n}{n+1}
+$$
+
+$$
+u(n) = 2n^{2}+8n
+$$
+
+$$
+v(n) = n+1
+$$
+
+$$
+u'(n) = 4 n + 8
+$$
+
+$$
+v'(n) = 1
+$$
+
+$$
+T'(n) = \\dfrac{(4 n + 8)(n+1) - (2n^{2}+8n)(1)}{(n+1)^{2}}
+$$
 
 $$
 T'(n) = \\dfrac{(4n+8)(n+1)-(2n^{2}+8n)\\cdot 1}{(n+1)^{2}}
@@ -1477,6 +1563,14 @@ R'(20) = 10
 $$
 
 $$
+50 - 40 = 10
+$$
+
+$$
+R'(20) = 10
+$$
+
+$$
 = 10
 $$
 
@@ -1501,6 +1595,14 @@ $$
 
 $$
 R(20) = 1000-400
+$$
+
+$$
+1000 - 400 = 600
+$$
+
+$$
+R(20) = 600
 $$
 
 $$
@@ -1596,6 +1698,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 The reliability score is the nested fifth power $G(x)=(3x^{2}+4)^{5}$. The chain rule multiplies the outer power by the inner derivative $6x$:
+
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+G(x) = (3x^{2}+4)^{5}
+$$
+
+$$
+\\text{outer: }w^{5}\\quad\\text{with }w = 3x^{2}+4
+$$
+
+$$
+\\dfrac{d}{dx}(3x^{2}+4) = 6 x
+$$
+
+$$
+G'(x) = 5(3x^{2}+4)^{4} \\cdot (6 x)
+$$
 
 $$
 G'(x) = 5(3x^{2}+4)^{4}\\cdot 6x
@@ -1805,6 +1925,14 @@ C''(1) = -12
 $$
 
 $$
+24 - 36 = -12
+$$
+
+$$
+C''(1) = -12
+$$
+
+$$
 = -12
 $$
 
@@ -1825,6 +1953,14 @@ Evaluate the second derivative at $q=2$:
 
 $$
 C''(2) = 48-36
+$$
+
+$$
+48 - 36 = 12
+$$
+
+$$
+C''(2) = 12
 $$
 
 $$
@@ -2022,6 +2158,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 The safety score is the nested fourth power $S(x)=(2x+5)^{4}$. The chain rule multiplies by the inner slope $2$:
+
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+S(x) = (2x+5)^{4}
+$$
+
+$$
+\\text{outer: }w^{4}\\quad\\text{with }w = 2x+5
+$$
+
+$$
+\\dfrac{d}{dx}(2x+5) = 2
+$$
+
+$$
+S'(x) = 4(2x+5)^{3} \\cdot (2)
+$$
 
 $$
 S'(x) = 4(2x+5)^{3}\\cdot 2
@@ -2391,6 +2545,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The performance index is the product $F(t)=(t^{2}+1)\\ln(t+1)$. Apply the product rule: differentiate the quadratic and the logarithm in turn,
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+F(t) = (t^{2}+1) \\cdot \\ln(t+1)
+$$
+
+$$
+u(t) = t^{2} + 1
+$$
+
+$$
+v(t) = \\ln{(t + 1 )}
+$$
+
+$$
+u'(t) = 2 t
+$$
+
+$$
+v'(t) = \\frac{1}{t + 1}
+$$
+
+$$
+F'(t) = (2 t)\\cdot(\\ln{(t + 1 )}) + (t^{2} + 1)\\cdot(\\frac{1}{t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 F'(t) = 2t\\cdot\\ln(t+1)+\\dfrac{t^{2}+1}{t+1}
 $$
@@ -2520,6 +2702,18 @@ $$
 \\pi'(1) = 0
 $$
 
+$$
+-3 + 24 = 21
+$$
+
+$$
+21 - 21 = 0
+$$
+
+$$
+\\pi'(1) = 0
+$$
+
 so the derivative vanishes at that output. The three terms cancel exactly: $-3+24=21$, then $21-21=0$.
 
 So the statement is True.`,
@@ -2544,6 +2738,14 @@ $$
 
 $$
 \\pi''(3) = -18+24
+$$
+
+$$
+-18 + 24 = 6
+$$
+
+$$
+\\pi''(3) = 6
 $$
 
 $$
@@ -2856,6 +3058,14 @@ R'(20) = 40
 $$
 
 $$
+60 - 20 = 40
+$$
+
+$$
+R'(20) = 40
+$$
+
+$$
 = 40
 $$
 
@@ -3052,6 +3262,34 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 The response score is the product $S(x)=x\\,e^{-2x}$. Apply the product rule and factor $e^{-2x}$:
+
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+S(x) = x \\cdot e^{-2x}
+$$
+
+$$
+u(x) = x
+$$
+
+$$
+v(x) = e^{- 2 x}
+$$
+
+$$
+u'(x) = 1
+$$
+
+$$
+v'(x) = - 2 e^{- 2 x}
+$$
+
+$$
+S'(x) = (1)\\cdot(e^{- 2 x}) + (x)\\cdot(- 2 e^{- 2 x})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
 
 $$
 S'(x) = e^{-2x}+x(-2)e^{-2x}
@@ -3317,6 +3555,14 @@ U'(2) = 8
 $$
 
 $$
+12 - 4 = 8
+$$
+
+$$
+U'(2) = 8
+$$
+
+$$
 = 8
 $$
 
@@ -3412,6 +3658,24 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 The quality index is the nested fifth power $G(x)=(4x+1)^{5}$. The chain rule multiplies by the inner slope $4$:
+
+Name the outer power and the inner expression, then multiply by the inner derivative before simplifying.
+
+$$
+G(x) = (4x+1)^{5}
+$$
+
+$$
+\\text{outer: }w^{5}\\quad\\text{with }w = 4x+1
+$$
+
+$$
+\\dfrac{d}{dx}(4x+1) = 4
+$$
+
+$$
+G'(x) = 5(4x+1)^{4} \\cdot (4)
+$$
 
 $$
 G'(x) = 5(4x+1)^{4}\\cdot 4
@@ -3523,6 +3787,26 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
 
 The productivity index is the product $P(x)=x^{2}\\sqrt{3x+1}$. Apply the product rule, differentiating the square and the nested root in turn:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+P(x) = x^{2} \\cdot \\sqrt{3x+1}
+$$
+
+$$
+u(x) = x^{2}
+$$
+
+$$
+v(x) = \\sqrt{3x+1}
+$$
+
+$$
+P'(x) = u'(x)\\,v(x) + u(x)\\,v'(x)
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 P'(x) = 2x\\sqrt{3x+1}+x^{2}\\cdot\\dfrac{3}{2\\sqrt{3x+1}}
 $$
@@ -3632,6 +3916,32 @@ Reuse this derivative setup for every letter: simplify first, evaluate at named 
       `**A.** → True
 
 The intensity ratio is the quotient $K(x)=\\dfrac{(2x-1)^{3}}{x+4}$. The quotient rule writes numerator derivative times denominator minus numerator times denominator derivative:
+
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+K(x) = \\dfrac{(2x-1)^{3}}{x+4}
+$$
+
+$$
+u(x) = (2x-1)^{3}
+$$
+
+$$
+v(x) = x+4
+$$
+
+$$
+u'(x) = 6 (2 x - 1)^{2}
+$$
+
+$$
+v'(x) = 1
+$$
+
+$$
+K'(x) = \\dfrac{(6 (2 x - 1)^{2})(x+4) - ((2x-1)^{3})(1)}{(x+4)^{2}}
+$$
 
 $$
 K'(x) = \\dfrac{6(2x-1)^{2}(x+4)-(2x-1)^{3}}{(x+4)^{2}}
@@ -4318,6 +4628,14 @@ C''(2) = 0
 $$
 
 $$
+12 - 12 = 0
+$$
+
+$$
+C''(2) = 0
+$$
+
+$$
 = 0
 $$
 
@@ -4338,6 +4656,14 @@ Evaluate the second derivative at $q=1$:
 
 $$
 C''(1) = 6-12
+$$
+
+$$
+6 - 12 = -6
+$$
+
+$$
+C''(1) = -6
 $$
 
 $$
@@ -4375,6 +4701,18 @@ $$
 
 $$
 C'(2) = 12-24+20
+$$
+
+$$
+12 - 24 = -12
+$$
+
+$$
+-12 + 20 = 8
+$$
+
+$$
+C'(2) = 8
 $$
 
 $$
@@ -4667,6 +5005,34 @@ The numerator $5$ of $V'$ never hits zero, so there is no critical point for $x>
 
 The engagement score is the product $Z(t)=t^{2}\\ln(2t+1)$. Apply the product rule, multiplying the logarithm's derivative by the inner slope $2$:
 
+Write the product as two factors and differentiate each factor before combining.
+
+$$
+Z(t) = t^{2} \\cdot \\ln(2t+1)
+$$
+
+$$
+u(t) = t^{2}
+$$
+
+$$
+v(t) = \\ln{(2 t + 1 )}
+$$
+
+$$
+u'(t) = 2 t
+$$
+
+$$
+v'(t) = \\frac{2}{2 t + 1}
+$$
+
+$$
+Z'(t) = (2 t)\\cdot(\\ln{(2 t + 1 )}) + (t^{2})\\cdot(\\frac{2}{2 t + 1})
+$$
+
+Only after that product-rule expansion do we simplify to the claimed form.
+
 $$
 Z'(t) = 2t\\cdot\\ln(2t+1)+t^{2}\\cdot\\dfrac{2}{2t+1}
 $$
@@ -4775,12 +5141,42 @@ The quantity that answers the management question is therefore $C^{\\prime}(Q)$,
 
 In symbols, management asks for the local rate $C^{\\prime}(Q)$ via $C(Q+\\Delta Q)-C(Q)\\approx C^{\\prime}(Q)\\,\\Delta Q$, not for the quotient $A(Q)$.
 
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
 Average cost is the quotient $A(Q)=\\dfrac{C(Q)}{Q}$, and differentiating that quotient tracks how the average itself moves with output.
 
 Marginal cost is defined as the derivative of total cost:
+
+Name the numerator and denominator, differentiate each, then apply the quotient rule before simplifying.
+
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
+$$
+u(Q) = C(Q)
+$$
+
+$$
+v(Q) = Q
+$$
+
+$$
+u'(Q) = C
+$$
+
+$$
+v'(Q) = 1
+$$
+
+$$
+A'(Q) = \\dfrac{(C)(Q) - (C(Q))(1)}{(Q)^{2}}
+$$
 
 $$
 C^{\\prime}(Q)
@@ -4837,6 +5233,14 @@ Only where average cost is minimized does $A^{\\prime}=0$ force $C^{\\prime}=A$;
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A^{\\prime} = 0
+$$
+
+$$
+C^{\\prime} = A
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "2/5",
@@ -4886,6 +5290,10 @@ Nothing in the report identifies the stock $C(50)$; a cleanup could already have
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C^{\\prime}(50) = 3
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -4923,6 +5331,10 @@ That is a convenient one-unit version of the same derivative
 It remains an approximation for a curved $C$, but it is the standard classroom translation of $C^{\\prime}(50)=3$ into a one-percentage-point story.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+\\Delta x = 1
+$$
 
 So the statement is True.`,
       `**E.** → True
@@ -4986,6 +5398,10 @@ Even the sign can disagree: $p^{\\prime}$ is typically negative along demand, wh
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p(Q)
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -4996,6 +5412,10 @@ That combined effect is exactly $R^{\\prime}(Q)$, which generally differs from $
 The gap $p(Q)-R^{\\prime}(Q)=-Q\\,p^{\\prime}(Q)$ is the revenue lost on previous cups when price is cut to sell one more.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+p(Q)-R^{\\prime}(Q) = -Q\\,p^{\\prime}(Q)
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5119,6 +5539,18 @@ A firm can have $R^{\\prime}=C^{\\prime}$ with $R>C$ (positive profit) or with $
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = C^{\\prime}(Q)
+$$
+
+$$
+R(Q) = C(Q)
+$$
+
+$$
+R^{\\prime} = C^{\\prime}
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "2/5",
@@ -5176,6 +5608,10 @@ Picture a profit hill whose peak sits at height $50$: the tangent is flat ($P^{\
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -5186,6 +5622,22 @@ The stationarity condition $P^{\\prime}(Q^{\\ast})=0$ constrains the derivatives
 Break-even is the separate level condition $P(Q^{\\ast})=0$, equivalently $R(Q^{\\ast})=C(Q^{\\ast})$ — not implied by $P^{\\prime}=0$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R(Q^{\\ast}) = C(Q^{\\ast})
+$$
+
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
+$$
+P(Q^{\\ast}) = 0
+$$
+
+$$
+P^{\\prime} = 0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -5198,6 +5650,10 @@ A flat tangent can sit at the top of a hill, at the bottom of a valley, or on a 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
+
 So the statement is True.`,
       `**E.** → True
 
@@ -5208,6 +5664,10 @@ That sign change marks a local profit maximum
 That $+\\to -$ pattern is the first-derivative test for a local max; together with $P^{\\prime}(Q^{\\ast})=0$ it settles the local classification.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime}(Q^{\\ast}) = 0
+$$
 
 So the statement is True.`
     ],
@@ -5321,6 +5781,10 @@ Mixing the two is the classic MC-versus-AC trap: one governs expand-or-not cost 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5332,6 +5796,10 @@ A standard textbook picture has the MC curve cut through the bottom of the AC cu
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = C^{\\prime}(Q)
+$$
+
 So the statement is False.`,
       `**C.** → False
 
@@ -5342,6 +5810,18 @@ Setting marginal cost to zero is a different decision problem
 Setting $C^{\\prime}=0$ would ask where total cost is locally flat, which is unrelated to minimizing cost per unit.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C^{\\prime}(Q) = A(Q)
+$$
+
+$$
+C^{\\prime}(Q) = 0
+$$
+
+$$
+C^{\\prime} = 0
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -5369,9 +5849,21 @@ Falling average cost means $A^{\\prime}(Q)<0$, which is equivalent to $C^{\\prim
 
 Marginal cost can still be positive while lying below the average; falling average cost does not force $C^{\\prime}(Q)<0$
 
-Example: $C^{\\prime}=5$ and $A=8$ gives $A^{\\prime}<0$ while cost is still rising in total; positivity of MC is compatible with falling AC.
+Example: $C^{\\prime}=5$ and $A=8$ gives
+
+$$
+A^{\\prime}<0
+$$ while cost is still rising in total; positivity of MC is compatible with falling AC.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C^{\\prime} = 5
+$$
+
+$$
+A = 8
+$$
 
 So the statement is False.`
     ],
@@ -5477,6 +5969,10 @@ Optimization conditions such as $R^{\\prime}=C^{\\prime}$ are stated with deriva
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime} = C^{\\prime}
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "3/5",
@@ -5515,6 +6011,10 @@ Reading $p(Q)$ alone would miss the inframarginal price-pressure term $Q\\,p^{\\
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p(Q)
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5548,16 +6048,28 @@ With constant $p$ one still writes $R(Q)=pQ$ and obtains $R^{\\prime}=p$; quanti
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R(Q) = Q\\cdot p
+$$
+
 So the statement is False.`,
       `**E.** → True
 
-When price must fall to sell more, the product rule generally gives $R^{\\prime}(Q)\\neq p(Q)$.
+When price must fall to sell more, the product rule generally gives
+
+$$
+R^{\\prime}(Q)\\neq p(Q)
+$$.
 
 A blanket claim that marginal revenue always equals price is therefore false in that setting
 
 The true special case where MR equals price is the flat-price (perfectly elastic) schedule $p^{\\prime}=0$, not a general law.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+p^{\\prime} = 0
+$$
 
 So the statement is True.`
     ],
@@ -5597,6 +6109,18 @@ Once profit is written out, the correct derivative is $P^{\\prime}(Q)=32-2Q$, wh
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P(Q) = Q\\cdot p(Q)-C(Q)
+$$
+
+$$
+P^{\\prime}(Q) = 32-2Q
+$$
+
+$$
+p^{\\prime} = -1
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -5635,7 +6159,11 @@ $$
 
 which is exactly the claimed revenue function
 
-Differentiating that revenue later gives $R^{\\prime}(Q)=40-2Q$, which already differs from the price $p(Q)=40-Q$.
+Differentiating that revenue later gives
+
+$$
+R^{\\prime}(Q) = 40-2Q
+$$, which already differs from the price $p(Q)=40-Q$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
@@ -5720,7 +6248,11 @@ So the statement is True.`,
 The average tax rate is the quotient of tax owed by income:
 
 $$
-\\dfrac{T(y)}{y}\\qquad(y>0)
+\\dfrac{T(y)}{y}
+$$
+
+$$
+(y>0)
 $$
 
 That is precisely the fraction of income paid in tax overall, which is a different object from the marginal rate $T^{\\prime}(y)$
@@ -5750,6 +6282,10 @@ That is about $30$ cents of each extra euro taxed away
 With $\\Delta y=1$ the approximation says about $0.30$ euros of extra tax — thirty cents of each extra euro taxed away.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+T^{\\prime}(y) = 0.3
+$$
 
 So the statement is True.`,
       `**E.** → False
@@ -5814,6 +6350,10 @@ About one fifth of a small increase in national product is therefore saved
 With $\\Delta Y=10$, about $2$ units of the extra product are saved; the fraction $0.2$ is the local saving response.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+S^{\\prime}(Y) = 0.2
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -5938,6 +6478,10 @@ A U-shaped cost curve returns to the same height on either side of its minimum w
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C(Q_a) = C(Q_b)
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "1/5",
@@ -5974,6 +6518,14 @@ If cost depends on $Q$, the zeros of $P^{\\prime}=R^{\\prime}-C^{\\prime}$ and o
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 0
+$$
+
+$$
+R^{\\prime}(Q) = 0
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -5995,6 +6547,10 @@ If cost rises with output, the revenue-maximizing output can therefore differ fr
 Typically the profit-maximizing output is smaller than the revenue-maximizing output when $C^{\\prime}>0$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -6072,6 +6628,10 @@ The negative sign records direction (outflow); the magnitude $3$ is the depletio
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+|x^{\\prime}(0)| = 3
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6093,6 +6653,14 @@ Hence $x^{\\prime}(0)=-3$ indicates that the stock of remaining oil is decreasin
 In plain language: the well is being drained at $t=0$, even though plenty of oil may still be underground.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+x^{\\prime}(0) = -3
+$$
+
+$$
+t = 0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -6132,6 +6700,10 @@ A decreasing positive quantity stays positive until it actually crosses zero —
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+t = 0
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "2/5",
@@ -6166,6 +6738,10 @@ That is the standard one-unit reading of $R^{\\prime}(80)=12$ through $R(81)-R(8
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+R^{\\prime}(80) = 12
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6176,6 +6752,10 @@ Neither of those is given by the marginal-revenue report $R^{\\prime}(80)=12$
 Under downward-sloping demand one typically has $R^{\\prime}<p$, so $12$ would understate the sticker price even if price were constant across tickets — and here price is not given at all.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(80) = 12
+$$
 
 So the statement is False.`,
       `**C.** → True
@@ -6188,6 +6768,10 @@ Many different $p(Q)$ can share the same product-rule value $R^{\\prime}(80)=12$
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(80) = 12
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -6199,6 +6783,14 @@ $$
 
 $$
 P^{\\prime}(80) = 12-15
+$$
+
+$$
+12 - 15 = -3
+$$
+
+$$
+P^{\\prime}(80) = -3
 $$
 
 $$
@@ -6226,6 +6818,14 @@ If marginal cost at $80$ tickets is $9$, then
 
 $$
 P^{\\prime}(80) = 12-9
+$$
+
+$$
+12 - 9 = 3
+$$
+
+$$
+P^{\\prime}(80) = 3
 $$
 
 $$
@@ -6292,6 +6892,10 @@ The same rule can therefore be written as: increase $Q$ a little when $P^{\\prim
 The two writings are interchangeable through $P^{\\prime}=R^{\\prime}-C^{\\prime}$; choose whichever is clearer in context.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -6370,6 +6974,10 @@ Critical points of $U$ solve $U^{\\prime}=0$; critical points of $A$ solve $U^{\
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(x) = \\dfrac{U(x)}{x}
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -6380,6 +6988,18 @@ An interior maximum of average satisfaction instead requires $U^{\\prime}(x)=A(x
 At a bliss point of total utility one may have $U^{\\prime}=0$ while $A=U/x>0$, so $A^{\\prime}\\neq 0$ and average is not maximized there.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U^{\\prime}(x) = 0
+$$
+
+$$
+U^{\\prime}(x) = A(x)
+$$
+
+$$
+U^{\\prime} = 0
+$$
 
 So the statement is False.`,
       `**C.** → True
@@ -6410,6 +7030,10 @@ Hence $U^{\\prime}(x)=0$ means a tiny change in study time leaves satisfaction l
 Through the linear approximation, $U(x+\\Delta x)-U(x)\\approx 0$ for small $\\Delta x$ — a flat spot of total satisfaction.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+U^{\\prime}(x) = 0
+$$
 
 So the statement is True.`,
       `**E.** → False
@@ -6613,6 +7237,14 @@ P^{\\prime}(Q) = 11-18
 $$
 
 $$
+11 - 18 = -7
+$$
+
+$$
+P^{\\prime}(Q) = -7
+$$
+
+$$
 = -7
 $$
 
@@ -6673,6 +7305,14 @@ P_A^{\\prime}(10) = 9-6
 $$
 
 $$
+9 - 6 = 3
+$$
+
+$$
+P_A^{\\prime}(10) = 3
+$$
+
+$$
 = 3
 $$
 
@@ -6701,6 +7341,14 @@ $$
 
 $$
 P_B^{\\prime}(10) = 5-7
+$$
+
+$$
+5 - 7 = -2
+$$
+
+$$
+P_B^{\\prime}(10) = -2
 $$
 
 $$
@@ -6772,6 +7420,14 @@ Here the larger stock belongs to the bakery with the worse (negative) marginal p
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_B(10) = 90
+$$
+
+$$
+P_B^{\\prime}(10) = -2
+$$
+
 So the statement is False.`
     ],
     difficulty_level: "4/5",
@@ -6803,7 +7459,11 @@ with stock $P_B(10)=90$. So a small extra cake raises A's profit by about $3$ eu
 On the regular-crew piece the cost rule is the straight line $C(Q)=12Q$. Differentiating that piece gives
 
 $$
-C^{\\prime}(Q) = 12\\qquad\\text{for }Q<50
+C^{\\prime}(Q) = 12
+$$
+
+$$
+\\text{for }Q<50
 $$
 
 Before overtime kicks in, each extra unit adds $12$ euros of cost
@@ -6825,7 +7485,11 @@ $$
 C(Q) = 20Q-400
 $$
 
-Differentiating the overtime piece gives $C^{\\prime}(Q)=20$ for $Q>50$. Relative to the regular-crew slope $12$,
+Differentiating the overtime piece gives
+
+$$
+C^{\\prime}(Q) = 20
+$$ for $Q>50$. Relative to the regular-crew slope $12$,
 
 $$
 20-12 = 8
@@ -6844,6 +7508,14 @@ Just above $Q=50$ the workshop is already on overtime, so $C^{\\prime}(Q)=20$. M
 
 $$
 R^{\\prime}(Q)-C^{\\prime}(Q) = 16-20
+$$
+
+$$
+16 - 20 = -4
+$$
+
+$$
+R^{\\prime}(Q)-C^{\\prime}(Q) = -4
 $$
 
 $$
@@ -6875,6 +7547,14 @@ $$
 
 $$
 P^{\\prime}(40) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\\prime}(40) = 4
 $$
 
 $$
@@ -6954,6 +7634,14 @@ R^{\\prime}(Q) = 4+11
 $$
 
 $$
+4 + 11 = 15
+$$
+
+$$
+R^{\\prime}(Q) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -6982,14 +7670,42 @@ The expand-or-not advice is immediate from the posted $P^{\\prime}=4>0$, without
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 4>0
+$$
+
+$$
+P^{\\prime} = 4>0
+$$
+
 So the statement is True.`,
       `**C.** → False
 
 The posted pair determines only $R^{\\prime}(Q)=15$; it does not determine the price schedule $p(Q)$.
 
-Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives $R^{\\prime}(Q)=p(Q)+Q\\,p^{\\prime}(Q)<p(Q)$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
+Even if someone writes $p(Q)=30-\\dfrac{Q}{10}$, under a downward-sloping price the product rule usually gives
+
+$$
+R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
+$$, and price and marginal revenue are different objects. The whiteboard does not force $p(Q)=R^{\\prime}(Q)$
 
 Even evaluating the invented $p$ at some $Q$ would generally fail to match $R^{\\prime}=15$; price and MR are different objects.
+
+$$
+R^{\\prime}(Q) = 15
+$$
+
+$$
+p(Q) = 30-\\dfrac{Q}{10}
+$$
+
+$$
+R^{\\prime}(Q) = p(Q)+Q\\,p^{\\prime}(Q)<p(Q)
+$$
+
+$$
+p(Q) = R^{\\prime}(Q)
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -7002,6 +7718,10 @@ The kiosk could be earning $2$ euros or $200$ euros of profit while the slope re
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = 4
+$$
+
 So the statement is True.`,
       `**E.** → True
 
@@ -7013,6 +7733,10 @@ $$
 
 $$
 R^{\\prime}(Q) = -4+11
+$$
+
+$$
+-4 + 11 = 7
 $$
 
 $$
@@ -7060,6 +7784,10 @@ Cinema A reports $R_A^{\\prime}(Q_A)=7$, and the extra ticket is worth about $7$
 
 The $5$-euro gap between price $12$ and extra revenue $7$ is exactly the inframarginal price-pressure effect on previous seats.
 
+$$
+R_A^{\\prime}(Q_A) = 7
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -7070,6 +7798,26 @@ Cinema B reports $R_B^{\\prime}(Q_B)=10=p_B$, which is exactly that situation
 In the product rule, $R^{\\prime}=p$ when $p^{\\prime}=0$; B's reports match that flat-price reading.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = p(Q)
+$$
+
+$$
+R_B^{\\prime}(Q_B) = 10
+$$
+
+$$
+= p_B
+$$
+
+$$
+R^{\\prime} = p
+$$
+
+$$
+p^{\\prime} = 0
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -7082,6 +7830,14 @@ $$
 
 $$
 P_A^{\\prime}(Q_A) = 7-8
+$$
+
+$$
+7 - 8 = -1
+$$
+
+$$
+P_A^{\\prime}(Q_A) = -1
 $$
 
 $$
@@ -7116,6 +7872,14 @@ P_B^{\\prime}(Q_B) = 10-8
 $$
 
 $$
+10 - 8 = 2
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2
+$$
+
+$$
 = 2
 $$
 
@@ -7143,6 +7907,14 @@ P_A^{\\prime}(Q_A) = 7-8
 $$
 
 $$
+7 - 8 = -1
+$$
+
+$$
+P_A^{\\prime}(Q_A) = -1
+$$
+
+$$
 = -1
 $$
 
@@ -7156,6 +7928,14 @@ $$
 
 $$
 P_B^{\\prime}(Q_B) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+P_B^{\\prime}(Q_B) = 2
 $$
 
 $$
@@ -7211,7 +7991,11 @@ So B should expand a little while A should not. Comparing posted prices $p_A>p_B
 On the happy-hour piece, revenue is the straight line $R(Q)=15Q$. Differentiating gives
 
 $$
-R^{\\prime}(Q) = 15\\qquad\\text{for }Q<20
+R^{\\prime}(Q) = 15
+$$
+
+$$
+\\text{for }Q<20
 $$
 
 For $Q<20$, marginal revenue is $15$
@@ -7226,10 +8010,18 @@ So the statement is True.`,
 After the twentieth drink, revenue is $R(Q)=300+8(Q-20)$, so
 
 $$
-R^{\\prime}(Q) = 8\\qquad\\text{for }Q>20
+R^{\\prime}(Q) = 8
 $$
 
-Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives $8<10$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
+$$
+\\text{for }Q>20
+$$
+
+Comparing with the constant marginal cost $C^{\\prime}(Q)=10$ gives
+
+$$
+8<10
+$$: each post-promotion drink adds only $8$ euros of revenue, already below cost at the margin
 
 Post-promotion, the expand-or-not test already fails: extra revenue $8$ lies below extra cost $10$.
 
@@ -7246,6 +8038,14 @@ $$
 
 $$
 P^{\\prime}(12) = 15-10
+$$
+
+$$
+15 - 10 = 5
+$$
+
+$$
+P^{\\prime}(12) = 5
 $$
 
 $$
@@ -7276,6 +8076,14 @@ P^{\\prime}(25) = 8-10
 $$
 
 $$
+8 - 10 = -2
+$$
+
+$$
+P^{\\prime}(25) = -2
+$$
+
+$$
 = -2
 $$
 
@@ -7298,7 +8106,11 @@ So the statement is False.`,
 
 The $15$-euro figure applies only on the happy-hour piece $Q\\le 20$.
 
-At $Q=25$ the manager's post-promotion rule already gives $R^{\\prime}(25)=8$, not $15$, and the extra drink does not bring in $15$ euros
+At $Q=25$ the manager's post-promotion rule already gives
+
+$$
+R^{\\prime}(25) = 8
+$$, not $15$, and the extra drink does not bring in $15$ euros
 
 Piecewise schedules require reading the piece that contains the named output; $Q=25$ sits on the $8$-euro piece.
 
@@ -7388,6 +8200,10 @@ Claiming $R^{\\prime}=11$ would force $P^{\\prime}=11-14=-3<0$, contradicting th
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 11
+$$
+
 So the statement is True.`
     ],
     difficulty_level: "4/5",
@@ -7420,6 +8236,14 @@ Producing the extra unit in Plant 1 adds about $R'=11$ euros of revenue and abou
 
 $$
 P^{\\prime}\\text{ via Plant 1} = 11-9
+$$
+
+$$
+11 - 9 = 2
+$$
+
+$$
+P^{\\prime}\\text{ via Plant 1} = 2
 $$
 
 $$
@@ -7467,6 +8291,14 @@ Plant 1 has $C_1^{\\prime}=9<13=C_2^{\\prime}$, and Plant 1 is preferred for tha
 With a common $R'$, minimizing marginal cost across plants is exactly the profit-maximizing assignment of the extra unit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+C_1^{\\prime} = 9<13
+$$
+
+$$
+= C_2^{\\prime}
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -7530,7 +8362,11 @@ $$8-9<0,\\qquad 8-13<0.$$ Common $R'=11$: Plant 1 ($C'=9$) raises profit, Plant 
 On the first bracket, $T(y)=\\dfrac{1}{5}y$. Differentiating gives
 
 $$
-T^{\\prime}(y) = \\dfrac{1}{5}\\qquad\\text{for }y<1000
+T^{\\prime}(y) = \\dfrac{1}{5}
+$$
+
+$$
+\\text{for }y<1000
 $$
 
 For $y<1000$ the marginal tax rate is $\\dfrac{1}{5}$
@@ -7545,7 +8381,11 @@ So the statement is True.`,
 Above $1000$ euros the tax rule is $T(y)=200+\\dfrac{2}{5}(y-1000)$, so
 
 $$
-T^{\\prime}(y) = \\dfrac{2}{5}\\qquad\\text{for }y>1000
+T^{\\prime}(y) = \\dfrac{2}{5}
+$$
+
+$$
+\\text{for }y>1000
 $$
 
 Crossing $y=1000$ therefore raises the tax on an extra euro from one fifth to two fifths
@@ -7565,6 +8405,14 @@ $$
 
 $$
 T(1500) = 200+200
+$$
+
+$$
+200 + 200 = 400
+$$
+
+$$
+T(1500) = 400
 $$
 
 $$
@@ -7604,6 +8452,22 @@ That is the one-euro reading of the second-bracket slope $T^{\\prime}(1500)=2/5$
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+y = 1500
+$$
+
+$$
+T^{\\prime}(y) = \\dfrac{2}{5}
+$$
+
+$$
+= 0.4
+$$
+
+$$
+T^{\\prime}(1500) = 2/5
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -7614,6 +8478,10 @@ It does not by itself recover the second-bracket slope $\\dfrac{2}{5}$; many sch
 The average $4/15$ is compatible with many local slopes; recovering $2/5$ needs the bracket formula, not the average alone.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+\\dfrac{T(1500)}{1500} = \\dfrac{4}{15}
+$$
 
 So the statement is False.`
     ],
@@ -7653,6 +8521,18 @@ From $A^{\\prime}=(C^{\\prime}-A)/Q$, the sign $A^{\\prime}<0$ is exactly the in
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+A(Q) = 12
+$$
+
+$$
+A^{\\prime} = (C^{\\prime}-A)/Q
+$$
+
+$$
+C^{\\prime}<A = 12
+$$
+
 So the statement is True.`,
       `**B.** → False
 
@@ -7664,6 +8544,10 @@ The open interval $(10,12)$ is still available for $C^{\\prime}$: average cost f
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 10
+$$
+
 So the statement is False.`,
       `**C.** → False
 
@@ -7672,6 +8556,10 @@ Profit rises locally only when $R^{\\prime}>C^{\\prime}$. Here $R^{\\prime}=10$ 
 If $C^{\\prime}$ lies between $10$ and $12$, then $P^{\\prime}<0$ even while average cost falls, and the reports do not already imply $P^{\\prime}(Q)>0$
 
 Falling AC is not an expand signal; only $R^{\\prime}>C^{\\prime}$ is, and that comparison is not settled by $C^{\\prime}<12$ alone.
+
+$$
+R^{\\prime} = 10
+$$
 
 So the statement is False.`,
       `**D.** → True
@@ -7684,6 +8572,26 @@ Example: $C^{\\prime}=11$ satisfies $C^{\\prime}<12=A$ (AC falling) and $C^{\\pr
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+C^{\\prime}<A = 12
+$$
+
+$$
+C^{\\prime}<R^{\\prime} = 10
+$$
+
+$$
+C^{\\prime} = 11
+$$
+
+$$
+C^{\\prime}<12 = A
+$$
+
+$$
+C^{\\prime}>10 = R^{\\prime}
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -7694,6 +8602,10 @@ Marginal cost is $C^{\\prime}(Q)$, a different object, and differentiating $A$ d
 The object $A^{\\prime}$ describes how average cost moves; marginal cost remains the separate derivative $C^{\\prime}$.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+A(Q) = \\dfrac{C(Q)}{Q}
+$$
 
 So the statement is False.`
     ],
@@ -7745,6 +8657,14 @@ P_S^{\\prime}(15) = 20-15
 $$
 
 $$
+20 - 15 = 5
+$$
+
+$$
+P_S^{\\prime}(15) = 5
+$$
+
+$$
 = 5
 $$
 
@@ -7769,6 +8689,14 @@ At $Q=25$,
 
 $$
 P_S^{\\prime}(25) = 20-25
+$$
+
+$$
+20 - 25 = -5
+$$
+
+$$
+P_S^{\\prime}(25) = -5
 $$
 
 $$
@@ -7800,6 +8728,14 @@ North's stock is $P_N(15)=12\\cdot 15-40=140$, but South's stock is unidentified
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_N(15) = 12\\cdot 15-40
+$$
+
+$$
+= 140
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -7811,6 +8747,14 @@ $$
 
 $$
 P_N^{\\prime}(Q) = 30-18
+$$
+
+$$
+30 - 18 = 12
+$$
+
+$$
+P_N^{\\prime}(Q) = 12
 $$
 
 $$
@@ -7862,7 +8806,11 @@ At $Q=15$ one has $P_S^{\\prime}(15)=5>0$ (profit still locally increasing), whi
 On the rising piece, $U(x)=10x-\\dfrac{1}{2}x^{2}$. Differentiating gives
 
 $$
-U^{\\prime}(x) = 10-x\\qquad\\text{for }x<8
+U^{\\prime}(x) = 10-x
+$$
+
+$$
+\\text{for }x<8
 $$
 
 For $x<8$, marginal utility is $U^{\\prime}(x)=10-x$
@@ -7878,6 +8826,14 @@ At $x=6$,
 
 $$
 U^{\\prime}(6) = 10-6
+$$
+
+$$
+10 - 6 = 4
+$$
+
+$$
+U^{\\prime}(6) = 4
 $$
 
 $$
@@ -7904,7 +8860,11 @@ So the statement is True.`,
 Once $x>8$, utility is the constant $U(x)=48$, so its derivative vanishes:
 
 $$
-U^{\\prime}(x) = 0\\qquad\\text{for }x>8
+U^{\\prime}(x) = 0
+$$
+
+$$
+\\text{for }x>8
 $$
 
 Marginal utility is therefore $0$ beyond eight hours
@@ -7922,6 +8882,14 @@ Approaching $x=8$ from the left,
 
 $$
 U^{\\prime}(8^{-}) = 10-8
+$$
+
+$$
+10 - 8 = 2
+$$
+
+$$
+U^{\\prime}(8^{-}) = 2
 $$
 
 $$
@@ -8021,6 +8989,14 @@ With $P^{\\prime}=-3<0$ the expand-or-not test fails: printing a little more wou
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
+$$
+P^{\\prime}(Q) = -3<0
+$$
+
+$$
+P^{\\prime} = -3<0
+$$
+
 So the statement is False.`,
       `**C.** → True
 
@@ -8028,6 +9004,14 @@ The second printer reports $R^{\\prime}(Q)=16$ and $C^{\\prime}(Q)=16$, so
 
 $$
 P^{\\prime}(Q) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P^{\\prime}(Q) = 0
 $$
 
 $$
@@ -8059,6 +9043,22 @@ Shared $R^{\\prime}$ is only one ingredient of $P^{\\prime}=R^{\\prime}-C^{\\pri
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R^{\\prime}(Q) = 16
+$$
+
+$$
+P^{\\prime} = -3
+$$
+
+$$
+P^{\\prime} = 0
+$$
+
+$$
+P^{\\prime} = R^{\\prime}-C^{\\prime}
+$$
+
 So the statement is False.`,
       `**E.** → False
 
@@ -8069,6 +9069,10 @@ The stock $P(Q)$ is a separate number and need not equal $-3$; confusing the slo
 A printer could be earning a large positive profit while sitting on a mildly negative slope of $-3$ — rate $\\neq$ level.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P^{\\prime}(Q) = -3
+$$
 
 So the statement is False.`
     ],
@@ -8109,6 +9113,14 @@ P^{\\prime}(Q) = 14-10
 $$
 
 $$
+14 - 10 = 4
+$$
+
+$$
+P^{\\prime}(Q) = 4
+$$
+
+$$
 = 4
 $$
 
@@ -8140,6 +9152,14 @@ $$
 $$
 
 $$
+10 + 5 = 15
+$$
+
+$$
+\\widetilde{C}^{\\prime}(Q) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -8168,6 +9188,14 @@ $$
 
 $$
 P^{\\prime}(Q) = 14-15
+$$
+
+$$
+14 - 15 = -1
+$$
+
+$$
+P^{\\prime}(Q) = -1
 $$
 
 $$
@@ -8264,7 +9292,11 @@ $$
 
 which matches the claim
 
-The product rule on $R=Q(40-Q)$ immediately yields $R^{\\prime}=40-2Q$ on the first piece.
+The product rule on $R=Q(40-Q)$ immediately yields
+
+$$
+R^{\\prime} = 40-2Q
+$$ on the first piece.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
 
@@ -8273,7 +9305,11 @@ So the statement is True.`,
 
 Once sales exceed $30$, price is the flat clearance price $p(Q)=10$, so revenue is $R(Q)=10Q$ on that piece.
 
-Differentiating gives $R^{\\prime}(Q)=10$: marginal revenue collapses to the flat price $10$
+Differentiating gives
+
+$$
+R^{\\prime}(Q) = 10
+$$: marginal revenue collapses to the flat price $10$
 
 With a flat clearance price there is no inframarginal penalty, so MR collapses to the clearance price itself.
 
@@ -8293,6 +9329,14 @@ R^{\\prime}(12) = 40-24
 $$
 
 $$
+40 - 24 = 16
+$$
+
+$$
+R^{\\prime}(12) = 16
+$$
+
+$$
 = 16
 $$
 
@@ -8308,6 +9352,14 @@ Compare with packing cost $C^{\\prime}=12$:
 
 $$
 P^{\\prime}(12) = 16-12
+$$
+
+$$
+16 - 12 = 4
+$$
+
+$$
+P^{\\prime}(12) = 4
 $$
 
 $$
@@ -8338,6 +9390,14 @@ R^{\\prime}(35)-C^{\\prime}(35) = 10-12
 $$
 
 $$
+10 - 12 = -2
+$$
+
+$$
+R^{\\prime}(35)-C^{\\prime}(35) = -2
+$$
+
+$$
 = -2
 $$
 
@@ -8362,6 +9422,14 @@ At $Q=12$, extra revenue is the marginal revenue $R^{\\prime}(12)=16$, while the
 
 $$
 p(12) = 40-12
+$$
+
+$$
+40 - 12 = 28
+$$
+
+$$
+p(12) = 28
 $$
 
 $$
@@ -8424,7 +9492,11 @@ $$
 
 Hence $A_A^{\\prime}(Q)<0$: A's average cost is currently falling
 
-The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives $A_A^{\\prime}<0$ precisely because $5<8$.
+The sign rule $A^{\\prime}=(C^{\\prime}-A)/Q$ gives
+
+$$
+A_A^{\\prime}<0
+$$ precisely because $5<8$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
@@ -8439,7 +9511,11 @@ $$
 
 For firm B one has $C_B^{\\prime}=9>6=A_B$, so $A_B^{\\prime}(Q)>0$: B's average cost is currently rising
 
-For B the same rule gives $A_B^{\\prime}>0$ because marginal cost $9$ sits above average cost $6$.
+For B the same rule gives
+
+$$
+A_B^{\\prime}>0
+$$ because marginal cost $9$ sits above average cost $6$.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
@@ -8449,11 +9525,19 @@ So the statement is True.`,
 The extra-unit test compares $R^{\\prime}$ with $C^{\\prime}$, not the two averages. Here
 
 $$
-7>5\\qquad\\text{at A}
+7>5
 $$
 
 $$
-7<9\\qquad\\text{at B}
+\\text{at A}
+$$
+
+$$
+7<9
+$$
+
+$$
+\\text{at B}
 $$
 
 A should take the extra delivery; B should not. Being cheaper on average does not decide the marginal comparison
@@ -8495,6 +9579,14 @@ P_A^{\\prime} = 7-5
 $$
 
 $$
+7 - 5 = 2
+$$
+
+$$
+P_A^{\\prime} = 2
+$$
+
+$$
 = 2
 $$
 
@@ -8508,6 +9600,14 @@ $$
 
 $$
 P_B^{\\prime} = 7-9
+$$
+
+$$
+7 - 9 = -2
+$$
+
+$$
+P_B^{\\prime} = -2
 $$
 
 $$
@@ -8562,6 +9662,14 @@ Studio A sits on a flat spot of the profit graph at height $50$: positive stock,
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_A(Q) = 50>0
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
 So the statement is True.`,
       `**B.** → True
 
@@ -8572,6 +9680,14 @@ Breaking even today is compatible with an upward slope: a small expansion would 
 Studio B sits at height zero on an upward slope: break-even today, but the next unit starts to create profit.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
 
 So the statement is True.`,
       `**C.** → False
@@ -8584,6 +9700,22 @@ The report $P_A^{\\prime}(Q)=0$ only says that profit is stationary at that outp
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_A(Q) = 50
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
+$$
+P_A(Q) = 0
+$$
+
+$$
+P_A^{\\prime} = 0
+$$
+
 So the statement is False.`,
       `**D.** → True
 
@@ -8595,6 +9727,22 @@ B's positive $P_B^{\\prime}$ is an expand signal; A's $P_A^{\\prime}=0$ is alrea
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
+
+$$
+P_A^{\\prime}(Q) = 0
+$$
+
+$$
+R_A^{\\prime}(Q) = C_A^{\\prime}(Q)
+$$
+
+$$
+P_A^{\\prime} = 0
+$$
+
 So the statement is True.`,
       `**E.** → False
 
@@ -8605,6 +9753,14 @@ Current break-even does not forbid a positive marginal profit
 Break-even constrains the height $P$, not the slope $P^{\\prime}$; B is the textbook counterexample.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+P_B(Q) = 0
+$$
+
+$$
+P_B^{\\prime}(Q) = 4>0
+$$
 
 So the statement is False.`
     ],
@@ -8673,6 +9829,14 @@ P^{\\prime}(Q) = 15-12
 $$
 
 $$
+15 - 12 = 3
+$$
+
+$$
+P^{\\prime}(Q) = 3
+$$
+
+$$
 = 3
 $$
 
@@ -8704,6 +9868,14 @@ P^{\\prime}(Q) = 15-20
 $$
 
 $$
+15 - 20 = -5
+$$
+
+$$
+P^{\\prime}(Q) = -5
+$$
+
+$$
 = -5
 $$
 
@@ -8731,6 +9903,10 @@ What changes is which cost schedule supplies $C^{\\prime}(Q)$: the weekday rule 
 Marginal revenue keeps the same economic meaning — extra euros from one more sale — on both kinds of day.
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = 15
+$$
 
 So the statement is True.`
     ],
@@ -8806,6 +9982,14 @@ At M, extra revenue exceeds extra cost, which is the opposite of "extra revenue 
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+R_M^{\\prime}(Q) = 9>6
+$$
+
+$$
+= C_M^{\\prime}(Q)
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -8813,6 +9997,14 @@ Shop M has
 
 $$
 P_M^{\\prime}(Q) = 9-6
+$$
+
+$$
+9 - 6 = 3
+$$
+
+$$
+P_M^{\\prime}(Q) = 3
 $$
 
 $$
@@ -8843,6 +10035,30 @@ Same extra revenue does not force the same extra cost
 Shared $R^{\\prime}=9$ with $C_L^{\\prime}=13$ versus $C_M^{\\prime}=6$ is enough to see the extra-cost figures differ.
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
+
+$$
+R^{\\prime}(Q) = 9
+$$
+
+$$
+C_L^{\\prime}(Q) = 13
+$$
+
+$$
+C_M^{\\prime}(Q) = 6
+$$
+
+$$
+R^{\\prime} = 9
+$$
+
+$$
+C_L^{\\prime} = 13
+$$
+
+$$
+C_M^{\\prime} = 6
+$$
 
 So the statement is False.`
     ],
@@ -8887,7 +10103,11 @@ P^{\\prime}(Q) = 8-\\dfrac{2}{10}Q
 $$
 
 $$
-P^{\\prime}(Q) = 8-\\dfrac{1}{5}Q\\qquad\\text{for }Q<30
+P^{\\prime}(Q) = 8-\\dfrac{1}{5}Q
+$$
+
+$$
+\\text{for }Q<30
 $$
 
 The claim matches
@@ -8907,6 +10127,14 @@ $$
 
 $$
 P^{\\prime}(20) = 8-4
+$$
+
+$$
+8 - 4 = 4
+$$
+
+$$
+P^{\\prime}(20) = 4
 $$
 
 $$
@@ -8933,7 +10161,11 @@ So the statement is True.`,
 On the outsourcing piece $P(Q)=150-4(Q-30)$ is linear with slope $-4$, so
 
 $$
-P^{\\prime}(Q) = -4\\qquad\\text{for }Q>30
+P^{\\prime}(Q) = -4
+$$
+
+$$
+\\text{for }Q>30
 $$
 
 which matches the claim
@@ -8953,6 +10185,10 @@ Just above $30$ the outsourcing piece is already in force, so the expand-or-not 
 
 Matching the claim against that reasoning confirms the verdict is False once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(Q) = -4<0
+$$
+
 So the statement is False.`,
       `**E.** → False
 
@@ -8966,6 +10202,14 @@ $$
 
 $$
 P^{\\prime}(30^{-}) = 8-6
+$$
+
+$$
+8 - 6 = 2
+$$
+
+$$
+P^{\\prime}(30^{-}) = 2
 $$
 
 $$
@@ -9046,6 +10290,14 @@ P^{\\prime}(40) = 3-5
 $$
 
 $$
+3 - 5 = -2
+$$
+
+$$
+P^{\\prime}(40) = -2
+$$
+
+$$
 = -2
 $$
 
@@ -9074,6 +10326,18 @@ Opposite signs of $P^{\\prime}$ mean opposite expand-or-not advice despite the s
 
 Matching the claim against that reasoning confirms the verdict is True once the right derivative (or the right expand-or-not comparison) is in view.
 
+$$
+P^{\\prime}(40) = 1>0
+$$
+
+$$
+P^{\\prime}(40) = -2<0
+$$
+
+$$
+R^{\\prime}(40) = 3
+$$
+
 So the statement is True.`,
       `**D.** → False
 
@@ -9095,6 +10359,10 @@ The height $P(40)$ of today's profit was never posted and need not equal $1$
 A rate of $+1$ euro of profit per extra item is compatible with any profit stock — the café never posted $P(40)$.
 
 Keep level-versus-slope discipline: stocks such as $C$, $R$, $P$, or $U$ are heights; marginal objects are slopes of those graphs.
+
+$$
+P^{\\prime}(40) = 1
+$$
 
 So the statement is False.`
     ],
@@ -9195,6 +10463,18 @@ $$
 
 $$
 P(6) = -36+72-20
+$$
+
+$$
+-36 + 72 = 36
+$$
+
+$$
+36 - 20 = 16
+$$
+
+$$
+P(6) = 16
 $$
 
 $$
@@ -9342,6 +10622,14 @@ R'(6) = 30-12
 $$
 
 $$
+30 - 12 = 18
+$$
+
+$$
+R'(6) = 18
+$$
+
+$$
 = 18
 $$
 
@@ -9351,6 +10639,14 @@ $$
 
 $$
 C'(6) = 12+6
+$$
+
+$$
+12 + 6 = 18
+$$
+
+$$
+C'(6) = 18
 $$
 
 $$
@@ -9385,11 +10681,35 @@ P(6) = -72+144-40
 $$
 
 $$
+-72 + 144 = 72
+$$
+
+$$
+72 - 40 = 32
+$$
+
+$$
+P(6) = 32
+$$
+
+$$
 P(6) = 32,
 $$
 
 $$
 C(6) = 36+36+40
+$$
+
+$$
+36 + 36 = 72
+$$
+
+$$
+72 + 40 = 112
+$$
+
+$$
+C(6) = 112
 $$
 
 $$
@@ -9505,6 +10825,18 @@ C(5) = 25-50+40
 $$
 
 $$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -9551,6 +10883,14 @@ So the statement is False.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 On $Q\\ge 0$ the parabola opens upward ($C''=2>0$) with its vertex at $Q=5\\ge 0$. For an upward-opening parabola the vertex is the global minimum on the whole real line, hence also on the restricted domain $Q\\ge 0$. The local trough is therefore also the global cost minimum: the cost-minimising fleet is five vans globally as well as locally.
+
+$$
+C'' = 2>0
+$$
+
+$$
+Q = 5\\ge 0
+$$
 
 So the statement is True.`
     ],
@@ -9725,11 +11065,27 @@ P_A'(10) = -20+20
 $$
 
 $$
+-20 + 20 = 0
+$$
+
+$$
+P_A'(10) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 P_B'(10) = 20-20
+$$
+
+$$
+20 - 20 = 0
+$$
+
+$$
+P_B'(10) = 0
 $$
 
 $$
@@ -9801,11 +11157,35 @@ P_A(10) = -100+200-50
 $$
 
 $$
+-100 + 200 = 100
+$$
+
+$$
+100 - 50 = 50
+$$
+
+$$
+P_A(10) = 50
+$$
+
+$$
 P_A(10) = 50,
 $$
 
 $$
 P_B(10) = 100-200+90
+$$
+
+$$
+100 - 200 = -100
+$$
+
+$$
+-100 + 90 = -10
+$$
+
+$$
+P_B(10) = -10
 $$
 
 $$
@@ -9910,6 +11290,14 @@ P''(1) = 6-12
 $$
 
 $$
+6 - 12 = -6
+$$
+
+$$
+P''(1) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -9923,6 +11311,14 @@ $$
 
 $$
 P''(3) = 18-12
+$$
+
+$$
+18 - 12 = 6
+$$
+
+$$
+P''(3) = 6
 $$
 
 $$
@@ -9950,6 +11346,22 @@ Evaluate profit at the two critical packs and at both endpoints — global compa
 
 $$
 P(1) = 1-6+9+10
+$$
+
+$$
+1 - 6 = -5
+$$
+
+$$
+-5 + 9 = 4
+$$
+
+$$
+4 + 10 = 14
+$$
+
+$$
+P(1) = 14
 $$
 
 $$
@@ -9986,6 +11398,22 @@ $$
 
 $$
 P(3) = 27-54+27+10
+$$
+
+$$
+27 - 54 = -27
+$$
+
+$$
+-27 + 27 = 0
+$$
+
+$$
+0 + 10 = 10
+$$
+
+$$
+P(3) = 10
 $$
 
 $$
@@ -10026,6 +11454,22 @@ $$
 
 $$
 P(5) = 125-150+45+10
+$$
+
+$$
+125 - 150 = -25
+$$
+
+$$
+-25 + 45 = 20
+$$
+
+$$
+20 + 10 = 30
+$$
+
+$$
+P(5) = 30
 $$
 
 $$
@@ -10071,6 +11515,14 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Comparing the candidate values, $P(1)=14$ is only a *local* peak. The endpoint $P(5)=30$ is strictly larger. On a closed interval the global maximum can sit at an endpoint even when an interior local peak exists. The global maximum on $[0,5]$ is therefore not at one pack.
 
+$$
+P(1) = 14
+$$
+
+$$
+P(5) = 30
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -10079,6 +11531,22 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $P(0)=10$, $P(1)=14$, $P(3)=10$, and $P(5)=30$, the largest value is $30$ at five packs. That endpoint is therefore the global profit maximum on $[0,5]$. The local peak at one pack loses the global comparison
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+P(0) = 10
+$$
+
+$$
+P(1) = 14
+$$
+
+$$
+P(3) = 10
+$$
+
+$$
+P(5) = 30
+$$
 
 So the statement is True.`
     ],
@@ -10161,6 +11629,14 @@ So the statement is True.`,
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 Because $P'(Q)>0$ throughout $[0,8]$, profit is strictly increasing on the interval. A strictly increasing continuous function on a closed bounded interval attains its maximum at the right endpoint $Q=8$ and its minimum at the left endpoint $Q=0$. No interior critical point is needed for that conclusion.
+
+$$
+Q = 8
+$$
+
+$$
+Q = 0
+$$
 
 So the statement is True.`,
       `**D.** → False
@@ -10300,6 +11776,10 @@ Around $x=3$ the same factored slope changes the other way. Just left of $3$ one
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+x = 3
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -10316,6 +11796,14 @@ B''(1) = 6-12
 $$
 
 $$
+6 - 12 = -6
+$$
+
+$$
+B''(1) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -10329,6 +11817,14 @@ $$
 
 $$
 B''(3) = 18-12
+$$
+
+$$
+18 - 12 = 6
+$$
+
+$$
+B''(3) = 6
 $$
 
 $$
@@ -10422,6 +11918,14 @@ P''(2) = -12+18
 $$
 
 $$
+-12 + 18 = 6
+$$
+
+$$
+P''(2) = 6
+$$
+
+$$
 = 6>0.
 $$
 
@@ -10438,6 +11942,14 @@ Classify four ovens the same way:
 
 $$
 P''(4) = -24+18
+$$
+
+$$
+-24 + 18 = -6
+$$
+
+$$
+P''(4) = -6
 $$
 
 $$
@@ -10464,6 +11976,22 @@ P(2) = -8+36-48+30
 $$
 
 $$
+-8 + 36 = 28
+$$
+
+$$
+28 - 48 = -20
+$$
+
+$$
+-20 + 30 = 10
+$$
+
+$$
+P(2) = 10
+$$
+
+$$
 P(2) = 10,
 $$
 
@@ -10472,11 +12000,43 @@ P(4) = -64+144-96+30
 $$
 
 $$
+-64 + 144 = 80
+$$
+
+$$
+80 - 96 = -16
+$$
+
+$$
+-16 + 30 = 14
+$$
+
+$$
+P(4) = 14
+$$
+
+$$
 P(4) = 14,
 $$
 
 $$
 P(6) = -216+324-144+30
+$$
+
+$$
+-216 + 324 = 108
+$$
+
+$$
+108 - 144 = -36
+$$
+
+$$
+-36 + 30 = -6
+$$
+
+$$
+P(6) = -6
 $$
 
 $$
@@ -10491,6 +12051,18 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs $Q=2$ and $Q=4$ only produces *candidates*. Without comparing their profit values to the endpoints — and without classifying peak versus trough — one cannot prove which point maximises profit on the closed interval. Here the endpoint $Q=0$ actually wins. Stopping at the critical-point list does not finish the proof.
+
+$$
+Q = 2
+$$
+
+$$
+Q = 4
+$$
+
+$$
+Q = 0
+$$
 
 So the statement is False.`
     ],
@@ -10580,6 +12152,14 @@ R'(6) = 40-24
 $$
 
 $$
+40 - 24 = 16
+$$
+
+$$
+R'(6) = 16
+$$
+
+$$
 = 16
 $$
 
@@ -10589,6 +12169,14 @@ $$
 
 $$
 C'(6) = 12+4
+$$
+
+$$
+12 + 4 = 16
+$$
+
+$$
+C'(6) = 16
 $$
 
 $$
@@ -10642,6 +12230,18 @@ P(6) = -108+216-10
 $$
 
 $$
+-108 + 216 = 108
+$$
+
+$$
+108 - 10 = 98
+$$
+
+$$
+P(6) = 98
+$$
+
+$$
 P(6) = 98.
 $$
 
@@ -10655,6 +12255,14 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Matching $R'=C'$ is equivalent to $P'=0$: it only finds a critical point of profit. Without a bend check (or an equivalent first-derivative sign argument), one cannot yet label that point a peak rather than a trough or a flat inflection. Skipping the second-derivative classification leaves the maximisation unfinished.
+
+$$
+R' = C'
+$$
+
+$$
+P' = 0
+$$
 
 So the statement is False.`
     ],
@@ -10709,11 +12317,27 @@ P_N'(8) = -16+16
 $$
 
 $$
+-16 + 16 = 0
+$$
+
+$$
+P_N'(8) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 P_S'(8) = 16-16
+$$
+
+$$
+16 - 16 = 0
+$$
+
+$$
+P_S'(8) = 0
 $$
 
 $$
@@ -10780,11 +12404,35 @@ P_N(8) = -64+128-30
 $$
 
 $$
+-64 + 128 = 64
+$$
+
+$$
+64 - 30 = 34
+$$
+
+$$
+P_N(8) = 34
+$$
+
+$$
 P_N(8) = 34,
 $$
 
 $$
 P_S(8) = 64-128+70
+$$
+
+$$
+64 - 128 = -64
+$$
+
+$$
+-64 + 70 = 6
+$$
+
+$$
+P_S(8) = 6
 $$
 
 $$
@@ -10885,6 +12533,14 @@ The usual sufficient test for a strict local peak asks for $L''(x^{\\ast})<0$ at
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+L''(0) = 0
+$$
+
+$$
+f'' = 0
+$$
+
 So the statement is True.`,
       `**C.** → True
 
@@ -10909,12 +12565,20 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Vanishing of the second derivative only makes the *usual sufficient bend test* fail; it does not prove there is no peak. The direct comparison $L(x)<L(0)$ for $x\\neq 0$ already shows a strict global maximum at zero. Claiming that $L''(0)=0$ forbids a local peak confuses “test inconclusive” with “no extremum,”.
 
+$$
+L''(0) = 0
+$$
+
 So the statement is False.`,
       `**E.** → True
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
 At an interior local peak a necessary condition is $L''\\le 0$ (the curve cannot bend strictly upward there). Here $L''(0)=0$, which satisfies $L''\\le 0$. The necessary condition therefore still holds, even though the stricter sufficient test $L''<0$ fails. The claim is carefully worded and correct.
+
+$$
+L''(0) = 0
+$$
 
 So the statement is True.`
     ],
@@ -11033,6 +12697,14 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Cost is minimised at $Q=4$, but profit is maximised at $Q=7$. Those are different outputs because revenue also depends on $Q$: cutting cost further can sacrifice more revenue than it saves. The cost-minimising output is *not* automatically the profit-maximising output.
 
+$$
+Q = 4
+$$
+
+$$
+Q = 7
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -11049,11 +12721,35 @@ P(7) = -98+196-30
 $$
 
 $$
+-98 + 196 = 98
+$$
+
+$$
+98 - 30 = 68
+$$
+
+$$
+P(7) = 68
+$$
+
+$$
 P(7) = 68,
 $$
 
 $$
 C(4) = 16-32+30
+$$
+
+$$
+16 - 32 = -16
+$$
+
+$$
+-16 + 30 = 14
+$$
+
+$$
+C(4) = 14
 $$
 
 $$
@@ -11133,11 +12829,27 @@ U_A'(5) = -10+10
 $$
 
 $$
+-10 + 10 = 0
+$$
+
+$$
+U_A'(5) = 0
+$$
+
+$$
 = 0
 $$
 
 $$
 U_B'(5) = 10-10
+$$
+
+$$
+10 - 10 = 0
+$$
+
+$$
+U_B'(5) = 0
 $$
 
 $$
@@ -11204,11 +12916,31 @@ U_A(5) = -25+50
 $$
 
 $$
+-25 + 50 = 25
+$$
+
+$$
+U_A(5) = 25
+$$
+
+$$
 U_A(5) = 25,
 $$
 
 $$
 U_B(5) = 25-50+30
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 30 = 5
+$$
+
+$$
+U_B(5) = 5
 $$
 
 $$
@@ -11338,6 +13070,10 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 Combine flat slopes with bend signs. At $\\pm 2$ one has $f'>0$ wait — rather $f'=0$ with $f''>0$, which is the second-derivative test for local minima (troughs). At $0$ one has $f'=0$ with $f''<0$, which is a local maximum (peak). Therefore $\\pm 2$ are local troughs and $0$ is a local peak.
 
+$$
+f' = 0
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -11351,6 +13087,18 @@ $$
 
 $$
 f(2) = 16-32+16
+$$
+
+$$
+16 - 32 = -16
+$$
+
+$$
+-16 + 16 = 0
+$$
+
+$$
+f(2) = 0
 $$
 
 $$
@@ -11387,6 +13135,10 @@ So the statement is True.`,
 Global comparison on a restricted domain needs every candidate value — interior critical points and endpoints — not just the first flat-slope output you meet.
 
 A local peak need not be global on the whole real line. As $|x|\\to\\infty$, the leading term $x^{4}$ drives $f(x)\\to\\infty$, so values far from zero eventually exceed $f(0)=16$. Intensity zero is only a local peak — the unbounded domain lets payoff grow afterward — so it is not the global maximum.
+
+$$
+f(0) = 16
+$$
 
 So the statement is False.`
     ],
@@ -11467,6 +13219,14 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 For a cost-minimisation goal, a flat slope plus an upward bend is exactly the calculus certificate of a local cost trough. Here $C'(6)=0$ and $C''(6)=4>0$, so calling six hours optimal for cost control is justified by the bend test. The statement is True
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+
+$$
+C'(6) = 0
+$$
+
+$$
+C''(6) = 4>0
+$$
 
 So the statement is True.`,
       `**D.** → True
@@ -11673,6 +13433,14 @@ f''(2) = 12-6
 $$
 
 $$
+12 - 6 = 6
+$$
+
+$$
+f''(2) = 6
+$$
+
+$$
 = 6
 $$
 
@@ -11697,12 +13465,24 @@ On the whole real line, watch the end behaviour. As $x\\to\\infty$, the cubic's 
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+f(0) = 5
+$$
+
 So the statement is True.`,
       `**E.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Listing the flat-slope outputs only produces candidates. Without classifying peak versus trough, and without checking whether a global maximum even exists on the domain, the maximisation proof is unfinished. Here $x=2$ is a trough and no global max exists on $\\mathbb{R}$. Stopping after $f'=0$ does not finish the argument.
+
+$$
+x = 2
+$$
+
+$$
+f' = 0
+$$
 
 So the statement is False.`
     ],
@@ -11786,12 +13566,32 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 
 By definition, a strict local maximum at $Q^{\\ast}=5$ means there exists a neighbourhood of five bikes in which every other feasible output $Q$ satisfies $P(Q)<P(5)$. That is exactly what “local profit peak” asserts — a local comparison, not yet a claim about the whole domain $Q>0$. The wording matches the definition.
 
+$$
+Q^{\\ast} = 5
+$$
+
 So the statement is True.`,
       `**D.** → False
 
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
-A local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives $P(5)=35\\neq 0$. Zero slope does not force zero profit.
+A local peak describes the *shape* near five bikes, not the *height* of profit. The first-order condition $P'(5)=0$ says the tangent is horizontal; it says nothing about whether $P(5)=0$. Evaluating the level gives
+
+$$
+P(5) = 35\\neq 0
+$$. Zero slope does not force zero profit.
+
+$$
+P'(5) = 0
+$$
+
+$$
+P(5) = 0
+$$
+
+$$
+P(5) = 35\\neq 0
+$$
 
 So the statement is False.`,
       `**E.** → True
@@ -11806,6 +13606,18 @@ $$
 
 $$
 P(5) = -75+150-40
+$$
+
+$$
+-75 + 150 = 75
+$$
+
+$$
+75 - 40 = 35
+$$
+
+$$
+P(5) = 35
 $$
 
 $$
@@ -11922,11 +13734,35 @@ P_W(7) = -49+98-20
 $$
 
 $$
+-49 + 98 = 49
+$$
+
+$$
+49 - 20 = 29
+$$
+
+$$
+P_W(7) = 29
+$$
+
+$$
 P_W(7) = 29,
 $$
 
 $$
 P_E(5) = 25-50+40
+$$
+
+$$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+P_E(5) = 15
 $$
 
 $$
@@ -11963,6 +13799,14 @@ So the statement is True.`,
 The wording sounds close to a standard optimisation rule, but it skips a classification step or confuses a level with a slope. Track the definitions carefully.
 
 Each plant has its own profit function and its own derivative. West's equation $P_W'=0$ and East's equation $P_E'=0$ are independent; they can (and do) have different roots without either equation being invalid. Unequal flat-slope outputs do not cast doubt on either calculation. The claim is a non sequitur.
+
+$$
+P_W' = 0
+$$
+
+$$
+P_E' = 0
+$$
 
 So the statement is False.`
     ],
@@ -12067,6 +13911,18 @@ $$
 
 $$
 P(9) = -81+162-45
+$$
+
+$$
+-81 + 162 = 81
+$$
+
+$$
+81 - 45 = 36
+$$
+
+$$
+P(9) = 36
 $$
 
 $$
@@ -12189,6 +14045,14 @@ R'(10) = 50-20
 $$
 
 $$
+50 - 20 = 30
+$$
+
+$$
+R'(10) = 30
+$$
+
+$$
 = 30
 $$
 
@@ -12198,6 +14062,14 @@ $$
 
 $$
 C'(10) = 20+10
+$$
+
+$$
+20 + 10 = 30
+$$
+
+$$
+C'(10) = 30
 $$
 
 $$
@@ -12240,6 +14112,18 @@ P(10) = -200+400-20
 $$
 
 $$
+-200 + 400 = 200
+$$
+
+$$
+200 - 20 = 180
+$$
+
+$$
+P(10) = 180
+$$
+
+$$
 P(10) = 180.
 $$
 
@@ -12259,6 +14143,14 @@ R(10) = 500-100
 $$
 
 $$
+500 - 100 = 400
+$$
+
+$$
+R(10) = 400
+$$
+
+$$
 = 400
 $$
 
@@ -12268,6 +14160,18 @@ $$
 
 $$
 C(10) = 100+100+20
+$$
+
+$$
+100 + 100 = 200
+$$
+
+$$
+200 + 20 = 220
+$$
+
+$$
+C(10) = 220
 $$
 
 $$
@@ -12391,6 +14295,18 @@ P_A(12) = -144+288-80
 $$
 
 $$
+-144 + 288 = 144
+$$
+
+$$
+144 - 80 = 64
+$$
+
+$$
+P_A(12) = 64
+$$
+
+$$
 P_A(12) = 64,
 $$
 
@@ -12400,6 +14316,18 @@ $$
 
 $$
 P_B(8) = -128+256-60
+$$
+
+$$
+-128 + 256 = 128
+$$
+
+$$
+128 - 60 = 68
+$$
+
+$$
+P_B(8) = 68
 $$
 
 $$
@@ -12417,6 +14345,14 @@ The wording sounds close to a standard optimisation rule, but it skips a classif
 
 Both trucks have a local profit peak, but the peaks sit at different quantities: $Q_A^{\\ast}=12$ versus $Q_B^{\\ast}=8$. Separate profit functions generally have separate optimisers. Sharing the *property* of having a local peak does not force sharing the same optimal quantity.
 
+$$
+Q_A^{\\ast} = 12
+$$
+
+$$
+Q_B^{\\ast} = 8
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -12425,6 +14361,14 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 Comparing the peak levels already computed, $P_B(8)=68>P_A(12)=64$. Truck B's peak profit is larger even though B's optimal meal count $8$ is smaller than A's $12$. Peak height and peak location are independent comparisons
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
+
+$$
+P_B(8) = 68>P_A(12)
+$$
+
+$$
+= 64
+$$
 
 So the statement is True.`
     ],
@@ -12490,6 +14434,14 @@ C''(2) = 12-18
 $$
 
 $$
+12 - 18 = -6
+$$
+
+$$
+C''(2) = -6
+$$
+
+$$
 = -6
 $$
 
@@ -12503,6 +14455,14 @@ $$
 
 $$
 C''(4) = 24-18
+$$
+
+$$
+24 - 18 = 6
+$$
+
+$$
+C''(4) = 6
 $$
 
 $$
@@ -12530,6 +14490,14 @@ Combine flat slopes with bend signs. Downward bend at $Q=2$ means a local cost *
 
 An interior candidate for a smooth extremum must make the first derivative vanish; that flat-slope equation only produces candidates, not finished labels.
 
+$$
+Q = 2
+$$
+
+$$
+Q = 4
+$$
+
 So the statement is True.`,
       `**D.** → True
 
@@ -12539,6 +14507,22 @@ Evaluate cost at the local trough $Q=4$:
 
 $$
 C(4) = 64-144+96+5
+$$
+
+$$
+64 - 144 = -80
+$$
+
+$$
+-80 + 96 = 16
+$$
+
+$$
+16 + 5 = 21
+$$
+
+$$
+C(4) = 21
 $$
 
 $$
@@ -12675,6 +14659,18 @@ C(5) = 25-50+40
 $$
 
 $$
+25 - 50 = -25
+$$
+
+$$
+-25 + 40 = 15
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
 = 15
 $$
 
@@ -12700,6 +14696,18 @@ $$
 
 $$
 C(8) = 64-80+40
+$$
+
+$$
+64 - 80 = -16
+$$
+
+$$
+-16 + 40 = 24
+$$
+
+$$
+C(8) = 24
 $$
 
 $$
@@ -12737,6 +14745,18 @@ Global comparison on a restricted domain needs every candidate value — interio
 
 Comparing $C(0)=40$, $C(5)=15$, and $C(8)=24$, the smallest value is $15$ at five shifts, not $24$ at eight. The endpoint of eight shifts is *not* the global cost minimum on $[0,8]$. The claim picks the wrong candidate.
 
+$$
+C(0) = 40
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
+C(8) = 24
+$$
+
 So the statement is False.`,
       `**E.** → True
 
@@ -12745,6 +14765,22 @@ Global comparison on a restricted domain needs every candidate value — interio
 Among $C(0)=40$, $C(5)=15$, and $C(8)=24$, the minimum is $15$ at the interior trough. On $[0,8]$ the global cost minimum is therefore at five shifts. The local trough wins the global comparison against both endpoints
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+C(0) = 40
+$$
+
+$$
+C(5) = 15
+$$
+
+$$
+C(8) = 24
+$$
+
+$$
+f'' = 0
+$$
 
 So the statement is True.`
     ],
@@ -12984,6 +15020,18 @@ A(6) = 40+12+12
 $$
 
 $$
+40 + 12 = 52
+$$
+
+$$
+52 + 12 = 64
+$$
+
+$$
+A(6) = 64
+$$
+
+$$
 = 64
 $$
 
@@ -13184,7 +15232,15 @@ So the statement is True.`,
 
 Name the objective, find where its slope is flat, then classify with the bend (or a sign chart) before matching the claim.
 
-At $x=5$ the budget gives $y=20-2\\cdot 5=10$, and utility is the product
+At $x=5$ the budget gives
+
+$$
+y = 20-2\\cdot 5
+$$
+
+$$
+= 10
+$$, and utility is the product
 
 $$
 U = xy
@@ -13231,6 +15287,10 @@ So the statement is True.`,
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 After substitution one still has an ordinary calculus problem: critical points must be classified. The budget constraint defines the feasible set; it does not by itself guarantee that a flat-slope bundle is a maximum rather than a minimum or saddle of the reduced utility. Skipping the bend check (here $u''=-4<0$) leaves the argument unfinished.
+
+$$
+u'' = -4<0
+$$
 
 So the statement is False.`
     ],
@@ -13356,9 +15416,29 @@ So the statement is True.`,
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives $Q=9$, while $5+5$ gives $25$. The constraint does not force output $25$ for every feasible pair
+The constraint $x+y=10$ only forces the *sum* of inputs; output $Q=xy$ still varies with the split. A $1+9$ split gives
+
+$$
+Q = 9
+$$, while $5+5$ gives
+
+$$
+25
+$$. The constraint does not force output $25$ for every feasible pair
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
+
+$$
+x+y = 10
+$$
+
+$$
+Q = xy
+$$
+
+$$
+Q = 9
+$$
 
 So the statement is False.`
     ],
@@ -13438,6 +15518,14 @@ R(25) = 2500-1250
 $$
 
 $$
+2500 - 1250 = 1250
+$$
+
+$$
+R(25) = 1250
+$$
+
+$$
 = 1250
 $$
 
@@ -13492,6 +15580,14 @@ R'(20) = 100-80
 $$
 
 $$
+100 - 80 = 20
+$$
+
+$$
+R'(20) = 20
+$$
+
+$$
 = 20
 $$
 
@@ -13511,6 +15607,22 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Unit elasticity means $|\\varepsilon|=1$, not perfect inelasticity. Perfect inelasticity would mean $\\varepsilon=0$ (quantity does not respond to price at all). At $p=25$ one has $\\varepsilon=-1$, which is the revenue-peak condition, not zero elasticity. The claim misreads $|\\varepsilon|=1$ as perfect inelasticity.
+
+$$
+|\\varepsilon| = 1
+$$
+
+$$
+\\varepsilon = 0
+$$
+
+$$
+p = 25
+$$
+
+$$
+\\varepsilon = -1
+$$
 
 So the statement is False.`
     ],
@@ -13638,6 +15750,14 @@ D(20) = 120-60
 $$
 
 $$
+120 - 60 = 60
+$$
+
+$$
+D(20) = 60
+$$
+
+$$
 = 60
 $$
 
@@ -13667,6 +15787,18 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 For this linear demand, setting $R'(p)=0$ and setting $|\\varepsilon(p)|=1$ are algebraically equivalent: both force $p=20$. The price that flattens revenue *is* the unit-elastic price; they cannot differ for this demand curve. The claim asserts they can differ.
+
+$$
+R'(p) = 0
+$$
+
+$$
+|\\varepsilon(p)| = 1
+$$
+
+$$
+p = 20
+$$
 
 So the statement is False.`
     ],
@@ -13775,6 +15907,14 @@ R'(60) = 50-60
 $$
 
 $$
+50 - 60 = -10
+$$
+
+$$
+R'(60) = -10
+$$
+
+$$
 = -10
 $$
 
@@ -13796,6 +15936,26 @@ Relate the revenue slope to demand sensitivity: unit elasticity sits at the reve
 The elasticity shortcut produced $MR=-10$, and differentiating $R(Q)$ produced $R'(60)=-10$. The two calculations agree exactly. The elasticity formula is not a different answer — it is an equivalent route to the same marginal revenue
 
 Matching $R'=C'$ is the same as $P'=0$ because $P'=R'-C'$; that finds a critical point of profit, after which the bend of $P$ still decides peak versus trough.
+
+$$
+MR = -10
+$$
+
+$$
+R'(60) = -10
+$$
+
+$$
+R' = C'
+$$
+
+$$
+P' = 0
+$$
+
+$$
+P' = R'-C'
+$$
 
 So the statement is True.`,
       `**E.** → True
@@ -13916,7 +16076,23 @@ So the statement is True.`,
 
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
-Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving $p=40$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap.
+Inelastic demand at $p=20$ means a *small* price increase raises revenue — it does not mean $p=20$ already maximises revenue. Cart A's revenue peak solves $R_A'(p)=0$, giving
+
+$$
+p = 40
+$$, not $p=20$. Confusing “inelastic, so raise price” with “already at the maximum” is the trap.
+
+$$
+p = 20
+$$
+
+$$
+R_A'(p) = 0
+$$
+
+$$
+p = 40
+$$
 
 So the statement is False.`
     ],
@@ -14044,7 +16220,35 @@ So the statement is True.`,
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
-Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving $(x,y)=(15,10)$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
+Ignoring the constraint, one would set $\\partial P/\\partial x=30-2x=0$ and $\\partial P/\\partial y=20-2y=0$, giving
+
+$$
+(x,y) = (15,10)
+$$, which violates $x+y=10$. The unconstrained critical point is not feasible, and the constrained optimum $(7.5,2.5)$ is different. Treating $x$ and $y$ as unrelated does *not* give the same answer.
+
+$$
+\\partial P/\\partial x = 30-2x
+$$
+
+$$
+= 0
+$$
+
+$$
+\\partial P/\\partial y = 20-2y
+$$
+
+$$
+= 0
+$$
+
+$$
+(x,y) = (15,10)
+$$
+
+$$
+x+y = 10
+$$
 
 So the statement is False.`
     ],
@@ -14267,6 +16471,14 @@ C(8) = 16+16
 $$
 
 $$
+16 + 16 = 32
+$$
+
+$$
+C(8) = 32
+$$
+
+$$
 = 32
 $$
 
@@ -14291,12 +16503,64 @@ Along $xy=16$, a cost-minimising interior point balances relative input prices a
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
+$$
+xy = 16
+$$
+
+$$
+C_x = 2
+$$
+
+$$
+C_y = 8
+$$
+
+$$
+C_x/C_y = 1/4
+$$
+
+$$
+y/x = 2/8
+$$
+
+$$
+= 1/4
+$$
+
+$$
+f'' = 0
+$$
+
 So the statement is True.`,
       `**E.** → False
 
 Reduce the constrained problem to one free variable, then differentiate the reduced objective exactly as in unconstrained single-variable calculus.
 
 Other pairs on $xy=16$ have different costs. For example $(4,4)$ costs $C=8+32=40>32$, and $(16,1)$ costs $32+8=40>32$. Cost is *not* constant along the isoquant, so substitution (or an equivalent method) is necessary.
+
+$$
+xy = 16
+$$
+
+$$
+C = 8+32
+$$
+
+$$
+8 + 32 = 40
+$$
+
+$$
+C = 40
+$$
+
+$$
+= 40>32
+$$
+
+$$
+32+8 = 40>32
+$$
 
 So the statement is False.`
     ],
@@ -14401,6 +16665,14 @@ R'(30) = 90-60
 $$
 
 $$
+90 - 60 = 30
+$$
+
+$$
+R'(30) = 30
+$$
+
+$$
 = 30
 $$
 
@@ -14428,6 +16700,14 @@ R'(60) = 90-120
 $$
 
 $$
+90 - 120 = -30
+$$
+
+$$
+R'(60) = -30
+$$
+
+$$
 = -30
 $$
 
@@ -14449,6 +16729,10 @@ So the statement is True.`,
 Relate the revenue slope to demand sensitivity: unit elasticity sits at the revenue peak, while inelastic demand only says a small price rise still helps revenue.
 
 Elastic demand ($|\\varepsilon|>1$) means a small price *increase* lowers revenue — equivalently, a price cut raises revenue. It does *not* mean the current fare already maximises revenue. Revenue is maximised only at unit elasticity ($|\\varepsilon|=1$). The claim reverses the meaning of elastic demand.
+
+$$
+|\\varepsilon| = 1
+$$
 
 So the statement is False.`
     ],
@@ -14483,7 +16767,11 @@ Name the objective, find where its slope is flat, then classify with the bend (o
 After cutting squares of side $x$ from each corner and folding, the box has height $x$ and square base of side $12-2x$. Volume is therefore
 
 $$
-V(x) = x(12-2x)^{2},\\qquad 0<x<6.
+V(x) = x(12-2x)^{2}
+$$
+
+$$
+0<x<6.
 $$
 
 That geometric description matches the claim exactly
@@ -14549,7 +16837,11 @@ $$
 V(2) = 128,
 $$
 
-and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives $V''(2)=-48<0$. Downward bend plus volume $128$ means that cut maximises volume locally
+and differentiating $V'(x)=12(x-2)(x-6)$ (or using $V''(x)=24x-96$) gives
+
+$$
+V''(2) = -48<0
+$$. Downward bend plus volume $128$ means that cut maximises volume locally
 
 Pause on the classification step: $f''<0$ at a critical point marks a local peak, $f''>0$ marks a local trough, and $f''=0$ makes the usual bend test inconclusive.
 
@@ -14559,6 +16851,14 @@ So the statement is True.`,
 Flat slope finds a candidate; the bend (or a sign chart) then classifies peak versus trough. Keep those two steps separate.
 
 Finding $V'(x)=0$ only produces the candidate $x=2$. Without checking the bend (or comparing with behaviour as $x\\to 0^{+}$ and $x\\to 6^{-}$), one has not proved a global maximum on $(0,6)$. The critical-point list alone does not finish the maximisation argument.
+
+$$
+V'(x) = 0
+$$
+
+$$
+x = 2
+$$
 
 So the statement is False.`
     ],
@@ -15556,7 +17856,15 @@ Easy trap: a maximum of the derivative graph is where $f$ climbs most steeply, n
 At the peak of $f'$ one still has $f'>0$, so $f$ is still increasing there. A local maximum of $f$ needs a zero of $f'$ with a $+$ to $-$ change:
 
 $$
-f'>0\\text{ at the peak of }f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+f'>0\\text{ at the peak of }f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 so the peak of $f'$ is not a local maximum of $f$, and the statement is False.
@@ -15747,11 +18055,11 @@ A local minimum of $f$ needs a critical point where $f'=0$ and the sign of $f'$ 
 A local minimum of cost needs $C'=0$ with a $-$ to $+$ sign change. Here $C'$ stays strictly positive in $(0,6)$:
 
 $$
-C'(x)>0\\quad\\text{on }(0,6)\\qquad
+C'(x)>0\\quad\\text{on }(0,6)
 $$
 
 $$
-\\qquad\\text{no critical point of }C
+\\text{no critical point of }C
 $$
 
 Positivity of $C'$ only says cost is rising, not that a local minimum occurs
@@ -15998,7 +18306,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad -1<f'(6)<0
+4
+$$
+
+$$
+-1<f'(6)<0
 $$
 
 so both readings match the claim, and the statement is True.
@@ -16062,7 +18374,11 @@ On the open interval $(-3,0)$, monotonicity of $f$ is settled by the sign of $f'
 On $(-3,0)$ the plotted derivative sits below the axis, and on $(0,3)$ it sits above:
 
 $$
-f'<0\\text{ on }(-3,0),\\qquad f'>0\\text{ on }(0,3)
+f'<0\\text{ on }(-3,0)
+$$
+
+$$
+f'>0\\text{ on }(0,3)
 $$
 
 so $f$ decreases on the left and increases on the right, and the statement is True.
@@ -16081,7 +18397,11 @@ $$
 $$
 
 $$
-4,\\qquad f'(-1)
+4
+$$
+
+$$
+f'(-1)
 $$
 
 $$
@@ -16285,7 +18605,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$ on shared axes. At $x=0$ the brown curve meets the origin while the green curve sits above the axis near height $8$.
 
 $$
-f'(0) = 0,\\qquad f''(0)
+f'(0) = 0
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -16304,11 +18628,11 @@ Where the claim says the level function is increasing, confirm that the correspo
 Green is $f''$. Near $x=0$ that curve is positive, so the slope of brown is rising:
 
 $$
-f''(0)>0\\qquad
+f''(0)>0
 $$
 
 $$
-\\qquad f'\\text{ increasing through }x = 0
+f'\\text{ increasing through }x = 0
 $$
 
 Positive $f''$ means brown climbs through the origin
@@ -16466,7 +18790,15 @@ On the shared plane, match each colour to its named derivative, then read height
 The highest point of green is a maximum of $f'$, which is where $f$ climbs most steeply — not where $f$ itself has a local maximum:
 
 $$
-\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+\\max f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 Local maxima of brown need zeros of green with a $+$ to $-$ change
@@ -16509,7 +18841,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $P'$ and green is $Q'$ on the same axes. At $x=2$ both curves sit above the horizontal axis, so both derivatives are positive there.
 
 $$
-P'(2)>0,\\qquad Q'(2)>0
+P'(2)>0
+$$
+
+$$
+Q'(2)>0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
@@ -16522,7 +18858,11 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=5$ the green curve meets the axis in a clear crossing, while the brown curve sits below the axis.
 
 $$
-Q'(5) = 0,\\qquad P'(5)<0
+Q'(5) = 0
+$$
+
+$$
+P'(5)<0
 $$
 
 so green is zero and brown is negative at $x=5$, and the statement is True.
@@ -16606,7 +18946,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$. At $x=4$, reading both heights on the shared scale, brown sits above the axis while green sits below it.
 
 $$
-f'(4)>0,\\qquad f''(4)<0
+f'(4)>0
+$$
+
+$$
+f''(4)<0
 $$
 
 Putting that figure reading next to the claim, every asserted sign, height, or classification matches what the axes show.
@@ -16938,7 +19282,11 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=5$ the brown curve has already crossed below the axis while the green curve remains above it.
 
 $$
-P'(5)<0,\\qquad C'(5)>0
+P'(5)<0
+$$
+
+$$
+C'(5)>0
 $$
 
 so brown is below the axis and green is still positive, and the statement is True.
@@ -16991,7 +19339,15 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 A profit-maximising output is where $P'$ changes from $+$ to $-$ (a zero of brown with a sign flip). The place where brown equals green is where $P'=C'$, a different event:
 
 $$
-P' = C'\\qquad\\nRightarrow\\qquad P'\\text{ changes }+\\to-
+P' = C'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+P'\\text{ changes }+\\to-
 $$
 
 Meeting of the two curves is not the profit-peak test
@@ -17030,7 +19386,11 @@ Brown is $f'$ and green is $g'$ on one shared plane. At $x=0$ compare both colou
 Both curves sit below the axis at that left-hand sample point:
 
 $$
-f'(0)<0,\\qquad g'(0)<0
+f'(0)<0
+$$
+
+$$
+g'(0)<0
 $$
 
 So brown is negative and green is also negative at $x=0$. Both $f$ and $g$ are therefore decreasing at $x=0$. The dual sign reading matches the claim.
@@ -17041,7 +19401,11 @@ So the statement is True.`,
 Count clear axis crossings of each colour separately on the shared plane. Walk along brown ($f'$) and tally every place it meets the axis in the window; then do the same for green ($g'$), careful not to double-count a single crossing or to confuse the two colours.
 
 $$
-f'\\text{ has three zeros},\\qquad g'\\text{ has two zeros}
+f'\\text{ has three zeros}
+$$
+
+$$
+g'\\text{ has two zeros}
 $$
 
 Those counts come from the figure alone — no algebra beyond the crossings. Three versus two matches the claim exactly.
@@ -17160,7 +19524,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A local minimum of the graph of $f'$ is where $f''=0$ with a local min of $f'$ — typically an inflection story for $f$, not a local minimum of $f$:
 
 $$
-\\min f'\\qquad\\nRightarrow\\qquad\\min f
+\\min f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\min f
 $$
 
 Local minima of $f$ need zeros of $f'$ with a $-$ to $+$ change
@@ -17397,7 +19769,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Counting clear axis crossings in the window:
 
 $$
-f'\\text{ has three zeros},\\qquad f''\\text{ has two zeros}
+f'\\text{ has three zeros}
+$$
+
+$$
+f''\\text{ has two zeros}
 $$
 
 Those counts match the claim exactly
@@ -17440,7 +19816,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$ and green is $f''$. The brown curve crosses the axis at $x=4$, and to the left of that zero it forms a positive hump above the axis.
 
 $$
-f'(x)>0\\quad\\text{for }x\\in(0,4),\\qquad f'(4) = 0
+f'(x)>0\\quad\\text{for }x\\in(0,4)
+$$
+
+$$
+f'(4) = 0
 $$
 
 so the claim's reading of the figure is correct, and the statement is True.
@@ -17493,7 +19873,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad f''(0)
+4
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -17574,7 +19958,11 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=1.5$, brown sits below the axis while green sits above it.
 
 $$
-P_A'(1.5)<0,\\qquad P_B'(1.5)>0
+P_A'(1.5)<0
+$$
+
+$$
+P_B'(1.5)>0
 $$
 
 Negative marginal profit means A wants to contract; positive means B wants to expand. Opposite signs give opposite advice
@@ -17589,7 +19977,11 @@ Marginal profit is the instantaneous rate of change of profit. When it is negati
 At $x=4$ both curves sit below the axis, so both marginal profits are negative.
 
 $$
-P_A'(4)<0,\\qquad P_B'(4)<0
+P_A'(4)<0
+$$
+
+$$
+P_B'(4)<0
 $$
 
 Negative $P'$ means each firm's profit is decreasing in output there
@@ -17604,7 +19996,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Near $x=0$ both curves sit above the axis, and on the shared scale green starts higher than brown.
 
 $$
-P_A'(0)>0,\\qquad P_B'(0)>P_A'(0)
+P_A'(0)>0
+$$
+
+$$
+P_B'(0)>P_A'(0)
 $$
 
 so both are positive and green starts higher, and the statement is True.
@@ -17619,20 +20015,20 @@ Count clear axis crossings of the relevant curve in the window. Each transversal
 Having two zeros each only says each firm's marginal profit changes sign twice; it says nothing about the height of the profit level $P$ itself:
 
 $$
-\\#\\{P_A'=0\\} = \\#\\{P_B'=0\\}
+\\#\\{P_A' = 0\\}
 $$
 
 $$
-\\nRightarrow
+\\#\\{P_B' = 0\\}
 $$
 
+Equal critical-point counts do not force equal maximal profit levels:
+
 $$
-\\max P_A = \\max P_B
+\\max P_A \\stackrel{?}{=} \\max P_B
 $$
 
-Equal critical-point counts do not force equal maximal profit levels
-
-Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+Once that mismatch with the figure is clear, the claim cannot stand.
 
 So the statement is False.`
     ],
@@ -17775,7 +20171,15 @@ On the shared plane, match each colour to its named derivative, then read height
 Three marginal-profit curves sit on the same axes (brown, green, purple). At $x=0$, brown and purple start above the axis while green starts below it (near height $-1$).
 
 $$
-P_1'(0)>0,\\qquad P_3'(0)>0,\\qquad P_2'(0)<0
+P_1'(0)>0
+$$
+
+$$
+P_3'(0)>0
+$$
+
+$$
+P_2'(0)<0
 $$
 
 so brown and purple are positive while green is negative, and the statement is True.
@@ -17899,7 +20303,11 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 At $x=0$ both curves sit above the axis, and green sits higher than brown on the shared scale.
 
 $$
-f'(0)>0,\\qquad g'(0)>f'(0)
+f'(0)>0
+$$
+
+$$
+g'(0)>f'(0)
 $$
 
 so both are positive and $g'(0)>f'(0)$, and the statement is True.
@@ -17914,7 +20322,11 @@ On the shared plane, match each colour to its named derivative, then read height
 At $x=2.5$, between brown's zeros and also between green's early stretch past $x=2$, both curves sit below the axis.
 
 $$
-f'(2.5)<0,\\qquad g'(2.5)<0
+f'(2.5)<0
+$$
+
+$$
+g'(2.5)<0
 $$
 
 so both are negative at $x=2.5$, and the statement is True.
@@ -17929,7 +20341,11 @@ On the shared plane, match each colour to its named derivative, then read height
 On $(3,5)$ brown has already crossed back above the axis while green is still below it (until $x=5$).
 
 $$
-f'(x)>0,\\qquad g'(x)<0\\quad\\text{on }(3,5)
+f'(x)>0
+$$
+
+$$
+g'(x)<0\\quad\\text{on }(3,5)
 $$
 
 so $f$ increases and $g$ decreases there, and the statement is True.
@@ -17944,18 +20360,20 @@ Count clear axis crossings of the relevant curve in the window. Each transversal
 Equal numbers of zeros of $f'$ and $g'$ only say $f$ and $g$ have the same number of candidate critical points. The maximal heights are not determined by those counts:
 
 $$
-\\#\\{f'=0\\} = \\#\\{g'=0\\}
+\\#\\{f' = 0\\}
 $$
 
 $$
-\\nRightarrow
+\\#\\{g' = 0\\}
 $$
 
+Equal zero counts do not force equal maxima:
+
 $$
-\\max f = \\max g
+\\max f \\stackrel{?}{=} \\max g
 $$
 
-Once that mismatch with the figure is clear, the claim cannot stand. Comparing the assertion with the axes.
+Once that mismatch with the figure is clear, the claim cannot stand.
 
 So the statement is False.`
     ],
@@ -17997,7 +20415,11 @@ f'(0)
 $$
 
 $$
-4,\\qquad f''(0)
+4
+$$
+
+$$
+f''(0)
 $$
 
 $$
@@ -18020,7 +20442,11 @@ f'(3)
 $$
 
 $$
-10,\\qquad h'(3)
+10
+$$
+
+$$
+h'(3)
 $$
 
 $$
@@ -18043,7 +20469,11 @@ f''(0)
 $$
 
 $$
--4<0,\\qquad f''\\text{ opens upward}
+-4<0
+$$
+
+$$
+f''\\text{ opens upward}
 $$
 
 Both geometric facts match the claim
@@ -18077,7 +20507,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A vertical shift or scaling of brown moves the heights, so purple's axis crossings need not match brown's zeros:
 
 $$
-h' = \\text{shift/scale of }f'\\qquad\\nRightarrow\\qquad\\text{same zero set}
+h' = \\text{shift/scale of }f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{same zero set}
 $$
 
 On the figure purple and brown meet the axis at different $x$-values
@@ -18120,7 +20558,11 @@ Compare each piece of the claim with the figure. The False verdict comes from a 
 Brown is $A$, green is $B=A'$, and purple is $A-B$. At $x=3$, reading brown and green against the horizontal axis, both sit below it.
 
 $$
-A(3)<0,\\qquad B(3)<0
+A(3)<0
+$$
+
+$$
+B(3)<0
 $$
 
 so both are negative at $x=3$, and the statement is True.
@@ -18330,7 +20772,11 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown is $f'$, green is $f''$, and purple is the vertical shift $f'-2$. At $x=0$, brown sits below the axis and purple, being two units lower, sits even further below.
 
 $$
-f'(0)<0,\\qquad f'(0)-2<f'(0)
+f'(0)<0
+$$
+
+$$
+f'(0)-2<f'(0)
 $$
 
 so brown is below and purple is even lower, and the statement is True.
@@ -18435,7 +20881,15 @@ On the shared plane, match each colour to its named derivative, then read height
 Brown, green, and purple are three firms' marginal profits. At $x=3$, brown and purple sit above the axis while green sits below it.
 
 $$
-P_{\\text{brown}}'(3)>0,\\qquad P_{\\text{purple}}'(3)>0,\\qquad P_{\\text{green}}'(3)<0
+P_{\\text{brown}}'(3)>0
+$$
+
+$$
+P_{\\text{purple}}'(3)>0
+$$
+
+$$
+P_{\\text{green}}'(3)<0
 $$
 
 so the sign reading matches the claim, and the statement is True.
@@ -18585,7 +21039,15 @@ On the shared plane, match each colour to its named derivative, then read height
 The highest point of green is a maximum of $f'$, which is where brown climbs most steeply — not where brown has a local maximum:
 
 $$
-\\max f'\\qquad\\nRightarrow\\qquad\\text{local max of }f
+\\max f'
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local max of }f
 $$
 
 Local maxima of brown need zeros of green with a $+$ to $-$ change
@@ -18707,7 +21169,15 @@ On the shared plane, match each colour to its named derivative, then read height
 A zero of green is a zero of $f''$, which marks an extremum of $f'$ (brown), not automatically a local extremum of $f$:
 
 $$
-f'' = 0\\qquad\\nRightarrow\\qquad\\text{local extremum of }f
+f'' = 0
+$$
+
+$$
+\\nRightarrow
+$$
+
+$$
+\\text{local extremum of }f
 $$
 
 Local extrema of $f$ need zeros of brown with a sign change
